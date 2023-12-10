@@ -1,3 +1,3 @@
-# Read Me
+# README for my knowledge base
 
-this is a readme for my wiki
+I'm current moving my notes here and setting things up.
