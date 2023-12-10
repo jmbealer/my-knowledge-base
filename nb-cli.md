@@ -1,11 +1,13 @@
 ---
 id: nb-cli
 aliases:
-  - nb - command line interface for notebooks
-tags: []
+  - nb - cli for notebooks
+tags:
+  - nb
+  - cli
 ---
 
-# nb - command line interface for notebooks
+# nb - cli for notebooks
 
 Adding 
 nb add (shortcut: nb a, nb +)
