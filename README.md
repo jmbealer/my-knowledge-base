@@ -2,4 +2,4 @@
 
 I'm current moving my notes here and setting things up.
 
-[Home MOC](./__Home__.md)
+[Home MOC](./0-Home.md)
