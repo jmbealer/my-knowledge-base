@@ -1,0 +1,6 @@
+* grind leetcode vs build projects
+** if you *have experience* grinding leetcode and system design is better.
+*** blind curated 75
+*** neetcode 150
+** if you *don't have experience* building project and contributing to open source is better.
+*

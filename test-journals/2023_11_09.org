@@ -1,0 +1,8 @@
+* Ipad gestures
+** close app - swipe up from bar or five finger pinch
+** switch between recent apps - swipe left or right at bottom of screen four finger swipe to left or right
+** view recent open app - swipe up and hold
+** show notifications - swipe down from top of home screen
+** show control center - swipe down from top right corner
+** show dock - swipe up a bit
+** safari g

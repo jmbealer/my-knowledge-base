@@ -1,0 +1,55 @@
+* Tridactyl: turns Firefox into a modal browser
+** Normal mode
+*** used for navigating around single pages and starting other modes.
+*** tabs usually start in this mode.
+*** hit escape to enter this mode from other modes.
+*** t: scroll up: k
+*** n: scroll down: j
+*** s: scroll left
+*** b: scroll right
+*** gg go to top
+*** G: go to bottom
+*** .: repeat last action.
+*** l: list current tabs:b
+*** w: opens URL in  new windows
+**** W: same with the current URL pasted
+*** o: opens in the current tab
+**** O: same with the current URL pasted
+*** j: opens in a new tab:t
+**** J: same with the current URL pasted
+*** h: search with search engine in the current tab:s
+*** H: search with search engine in a new tab:S
+*** S: go back history:H
+*** B: go forward history:L
+*** yy: copy the current URL to clipboard
+*** p: opens the clipboard contents as a web page
+**** ;p
+**** P
+*** zi: zoom in
+*** zo: zoom out
+*** zz: default zoom
+*** /: search text on page
+**** ctrl-g: next match
+**** ctrl-G: previous match
+** Hint mode
+*** this mode highlights elements on the web page and performs actions on those elements.
+*** mostly used for following links
+*** used f/F to enter this mode
+*** used Escape or Ctrl-[ to exit this mode
+*** hint characters are displayed as uppercase, but you should type lowercase.
+*** f: open link
+*** F: open line in background
+*** ;y: copy link location to clipbard
+*** ;p: copy element text (such as a paragraph) to clipboard
+*** ;#: copy anchor location. Useful for linking someone to a specific part of a page
+*** ;k: kill an element.
+*** ;K: kill an element. Killed elements can be restored with :elementunhide
+** Visual mode (experimental)
+*** this mode used for selecting text and copy it to the clipboard or search for it using s and S.
+*** use v to enter this mode
+** Command mode ("ex-mode")
+** Ignore mode
+*** use Shift-Insert, Ctrl-Alt-Escape, Ctrl-Alt-Backtick, or Shift-Esc.
+*** while in ignore mode, to execute a single normal mode binding by pressing Ctrl-o
+*** while in normal mode, to enter ignore mode for one keypress by pressing Ctrl-v
+**** by-passing bindings

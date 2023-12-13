@@ -1,0 +1,4 @@
+* finally got logseq working with logseq --ozone-platform=wayland --disable-gpu
+** need to alias it
+*** not running in wofi
+** check out /var/lib/flatpak/exports/share/applications/com.logseq.Logseq.desktop
