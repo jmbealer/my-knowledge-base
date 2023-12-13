@@ -61,3 +61,9 @@ What is a loop?
   what is a while loop?
   what is a nested loop?
     why would you use a nested loop?
+
+what is a function?
+  run/call/invoke/execute a function
+
+what is error handling?
+  what is a try catch block?
