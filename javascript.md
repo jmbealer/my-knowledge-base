@@ -64,6 +64,16 @@ What is a loop?
 
 what is a function?
   run/call/invoke/execute a function
+  what is a function declaration?
+  what is a function expression?
+  what is a function parameter?
+  what is a function argument?
+
+what is an array?
+what is an object literal?
+  what is dot notation?
+  what is bracket notation?
+  builtin math object
 
 what is error handling?
   what is a try catch block?
