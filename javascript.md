@@ -83,10 +83,19 @@ what is error handling?
     a bug causes a program to run in an unintended way.
   what is an error?
     an error causes a program to stop running.
+  what is a reference error?
   what is a syntax error?
   what is a type error?
+  what is a range error?
   what is a logical error?
   what is a runtime error?
+  what is a aggregate error?
+  what is a internal error?
+  what is a url error?
   what is a try catch block?
     what is a try statement?
     what is a catch statement?
+
+what is undefined?
+what is null?
+what is empty value?
