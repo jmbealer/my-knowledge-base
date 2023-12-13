@@ -114,6 +114,7 @@ what is a programming paradigm?
       inheritance
       polymorphism
     what is constructor function?
+    what is inheritance?
   what is functional programming?
     what is first class function?
       first class citizen
@@ -136,3 +137,7 @@ what is scope?
   what is lexical scope?
   what is hoisting?
   what is shadowing?
+
+what is a template literal?
+
+what is a data structure?
