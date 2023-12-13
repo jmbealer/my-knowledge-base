@@ -8,6 +8,8 @@ Why was JavaScript created?
 What is JavaScript used for?
 How to run JavaScript?
 
+ecma standard
+
 What is a variable?
 How to declare a variable?
 How to assign a variable?
@@ -20,10 +22,21 @@ What are Operators?
 
 What is a number in JavaScript?
 What is a string in JavaScript?
+  What is a string literal?
 What is a float in JavaScript?
 What is a boolean in JavaScript?
 What is a number in JavaScript?
 
 What is > called? greater than
 What is < called? less than
-What is == called? equal to
+  *=*
+What is && called? Logical AND operator
+What is || called? Logical OR operator
+What is ! called? Logical NOT operator
+What is % called? Modulus operator
+What is == called? Equality operator
+What is === called? Strict equality operator
+What is != called? Inequality operator
+What is !== called? Strict inequality operator
+What is += called? Addition assignment operator
+  What is += called? Concatenation assignment operator
