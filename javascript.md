@@ -107,3 +107,21 @@ what is a programming paradigm?
   what is procedural programming?
   what is object oriented programming?
   what is functional programming?
+    what is first class function?
+      first class citizen
+      pass to other functions
+      save in a variable
+      return from other functions
+    what is higher order function?
+      it accepts other functions as arguments
+      it returns functions when invoked
+    what is pure function? and side effect?
+
+what is scope?
+  what is global scope?
+  what is local scope?
+  what is block scope?
+  what is function scope?
+  what is lexical scope?
+  what is hoisting?
+  what is shadowing?
