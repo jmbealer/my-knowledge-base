@@ -7,3 +7,7 @@ Who created JavaScript?
 Why was JavaScript created?
 What is JavaScript used for?
 How to run JavaScript?
+
+What is a variable?
+How to declare a variable?
+How to assign a variable?
