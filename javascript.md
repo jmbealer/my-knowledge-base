@@ -68,6 +68,7 @@ what is a function?
   what is a function expression?
   what is a function parameter?
   what is a function argument?
+  what is recursion?
 
 what is an array?
   what are array methods?
@@ -99,3 +100,10 @@ what is error handling?
 what is undefined?
 what is null?
 what is empty value?
+
+what is defensive programming?
+
+what is a programming paradigm?
+  what is procedural programming?
+  what is object oriented programming?
+  what is functional programming?
