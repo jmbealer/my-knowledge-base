@@ -11,3 +11,4 @@ date +"%F" - prints the date in the format YYYY-MM-DD
 [HTML](./html.md)
 [CSS](./css.md)
 [JavaScript](./javascript.md)
+[Journals](journals/journals.md)
