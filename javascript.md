@@ -45,6 +45,15 @@ What is a conditional statement?
   what is a if statement?
   what is a if else statement?
   what is a switch statement?
+    what is a case
+    what is a break
+
 what is a statement?
 what is a expression?
+
 What is a loop?
+  what is the counter?
+    i is used as the name of the counter variable
+    i for iterator
+  what is a for loop?
+  what is a while loop?
