@@ -56,4 +56,8 @@ What is a loop?
     i is used as the name of the counter variable
     i for iterator
   what is a for loop?
+    how to increment the counter?
+    how to decrement the counter?
   what is a while loop?
+  what is a nested loop?
+    why would you use a nested loop?
