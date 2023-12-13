@@ -40,3 +40,11 @@ What is != called? Inequality operator
 What is !== called? Strict inequality operator
 What is += called? Addition assignment operator
   What is += called? Concatenation assignment operator
+
+What is a conditional statement?
+  what is a if statement?
+  what is a if else statement?
+  what is a switch statement?
+what is a statement?
+what is a expression?
+What is a loop?
