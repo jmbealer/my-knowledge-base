@@ -13,6 +13,9 @@ ecma standard
 What is a variable?
 How to declare a variable?
 How to assign a variable?
+what is let keyword?
+what is const keyword?
+what is var keyword?
 
 What is a Data Type?
 What is a data?
@@ -106,6 +109,11 @@ what is defensive programming?
 what is a programming paradigm?
   what is procedural programming?
   what is object oriented programming?
+    benefits of oop
+      encapsulation
+      inheritance
+      polymorphism
+    what is constructor function?
   what is functional programming?
     what is first class function?
       first class citizen
