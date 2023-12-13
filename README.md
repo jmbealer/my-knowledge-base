@@ -1,5 +1,10 @@
-# README for my knowledge base
+# What is My Knowledge Base?
 
-I'm current moving my notes here and setting things up.
+A place to store my knowledge for future shenanigans.
+
+## TODO
+
+* [ ] Relocate notes to here.
+* [ ] Start organizing notes.
 
 [Home MOC](./0-Home.md)
