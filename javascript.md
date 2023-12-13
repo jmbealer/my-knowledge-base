@@ -141,3 +141,6 @@ what is scope?
 what is a template literal?
 
 what is a data structure?
+
+what is the spread operator?
+what is the rest operator?
