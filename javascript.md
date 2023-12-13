@@ -11,3 +11,7 @@ How to run JavaScript?
 What is a variable?
 How to declare a variable?
 How to assign a variable?
+
+What is a Data Type?
+What is a data?
+What is a value?
