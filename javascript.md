@@ -116,6 +116,9 @@ what is a programming paradigm?
       it accepts other functions as arguments
       it returns functions when invoked
     what is pure function? and side effect?
+      changing variable values outside of the function itself, or even relying on outside variables
+      calling a Browser API(even the console itself)
+      calling Math.random() - since the value cannot be reliably repeated
 
 what is scope?
   what is global scope?
