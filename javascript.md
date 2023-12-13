@@ -23,3 +23,7 @@ What is a string in JavaScript?
 What is a float in JavaScript?
 What is a boolean in JavaScript?
 What is a number in JavaScript?
+
+What is > called? greater than
+What is < called? less than
+What is == called? equal to
