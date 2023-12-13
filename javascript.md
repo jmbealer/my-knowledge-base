@@ -70,10 +70,13 @@ what is a function?
   what is a function argument?
 
 what is an array?
+  what are array methods?
 what is an object literal?
   what is dot notation?
   what is bracket notation?
   builtin math object
+  what are object methods?
+what is iterable?
 
 what is error handling?
   what is a try catch block?
