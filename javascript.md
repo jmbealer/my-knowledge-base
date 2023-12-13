@@ -79,4 +79,11 @@ what is an object literal?
 what is iterable?
 
 what is error handling?
+  what is a bug?
+    a bug causes a program to run in an unintended way.
+  what is an error?
+    an error causes a program to stop running.
   what is a try catch block?
+  what is a syntax error?
+  what is a logical error?
+  what is a runtime error?
