@@ -144,3 +144,5 @@ what is a data structure?
 
 what is the spread operator?
 what is the rest operator?
+
+what is the dom?
