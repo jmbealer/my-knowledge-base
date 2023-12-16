@@ -1,6 +1,6 @@
 # Where am I?
 
-#home #moc #index #root #main #page #mainpage
+tags: #home #moc #index #root #main #page #mainpage
 
 Welcome, Home!
 To the start of my knowledge.

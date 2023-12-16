@@ -1,4 +1,5 @@
 # Journals
+
 [Home](../0-Home.md)
 
 [2023-12-15.md](2023-12-15.md)
