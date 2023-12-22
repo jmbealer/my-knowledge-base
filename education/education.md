@@ -26,5 +26,23 @@ Purdue University Global
   ExcelTrack BS in Cybersecurity
 Southern New Hampshire University
 Thomas Edison State University
+  BA in Computer Science
+  BA in Mathematics
+
+  BS in electronics systems engineering technology
+
+  BS in Cybersecurity
+  BS in Information Technology
+
+  BSBA in Finance
+  BSBA in Computer Information Systems
+
+  BSBA in Accounting/cpa
+  BSBA in Accounting
+
+  MS in Accounting
+  MS in Cybersecurity
+  MS in Data Science and Analytics
+  MS in Information Technology
 University of Maine at Presque Isle
 Western Governors University

@@ -1,12 +1,17 @@
+# Thomas Edison State University
+
 * Limit to 90 credits of non-RA sources such as: ACE, NCCRS, CLEP, and DSSTS
 * 114 max limit at least 24 of those credits must be from RA sources
   * haven't count RA credits
 * Two Areas of Study Within One Degree
-	* only need to complete the Area of Study requirements
-	* No more than 9 credits can overlap
-* [[General Education Requirements (45 Credits)]]
-* Area of Study
-	* II. Computer Science (45 Credits)
+  * only need to complete the Area of Study requirements
+  * No more than 9 credits can overlap
+
+## [[General Education Requirements (45 Credits)]]
+
+## Area of Study
+
+### II. Computer Science (45 Credits)
 		* A. Required Courses (18 Credits)
 			* COS-111 	Introduction to Programming	3
 				* Introduction to Java Programming sophia.org
@@ -23,7 +28,9 @@
 			* Complete 6 credits in the Natural Sciences, Math, and Computer Science areas.
 		* D. Capstone (3 Credits)
 			* LIB-495 	Liberal Arts Capstone	3
-	* II. Mathematics (45 Credits)
+
+### II. Mathematics (45 Credits)
+
 		* A. Required Courses (15 Credits)
 			* MAT-231 	Calculus I	4
 				* Calculus I sophia.org
