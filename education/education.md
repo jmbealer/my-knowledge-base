@@ -2,6 +2,9 @@
 
 tags: #education
 
+[Sophia.org](https://www.sophia.org/)
+[Sophia.org](sophia.md)
+
 ## Charter Oak State College
 
 ## Excelsior College
