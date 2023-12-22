@@ -7,8 +7,8 @@ tags: #education
 [Study.com](studycom.md)
 
 Game Plan:
-* Pierpont Community & Technical College
-* Excelsior
+* [Pierpont Community & Technical College](./pierpontCnTC.md)
+* [Excelsior](./excelsior.md)
 * Thomas Edison State University
 
 ## Pierpont Community & Technical College
