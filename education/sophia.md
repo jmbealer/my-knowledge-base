@@ -119,32 +119,36 @@ French I 3 credits
   skip
 Spanish I 3 credits
   skip
+    excelsior: Lower Level Humanities Credit
 Spanish II 3 credits
   skip
+    excelsior: Lower Level Humanities Credit
 
 ## Math
 
 Calculus I 4 credits
   tesu
-  excelsior
+  excelsior: MAT 220 Calculus I
 College Algebra 3 credits
   tesu
-  excelsior
+  excelsior: MAT 114 Intermediate Algebra
 Foundations of College Algebra (no longer offered) 0 credits
   tesu
+  excelsior: Natural Science/Math Elective
 Foundation of Statistics 2 credits
   tesu
   excelsior
 Introduction to College Mathematics 3 credits
   tesu
-  excelsior
+  excelsior: MAT 101 Math for Everyday Life
 Introduction to Statistics 3 credits
   tesu
-  excelsior
+  excelsior: MAT 201 Statistics
 Introductory Applied Math (no longer offered) 1 credits
   tesu
 Precalculus 3 credits
   maybe skip
+  excelsior: Math Requirement
 
 ## Science
 
@@ -154,19 +158,20 @@ Anatomy and Physiology I Lab 1 credits
   skip
 Environmental Science 3 credits
   tesu
-  excelsior
+  excelsior: Natural Science Elective
 Human Biology 3 credits
   tesu
-  excelsior
+  excelsior: BIO 105 Anatomy & Physiology I
 Human Biology Lab 1 credits
   skip
 Introduction to Chemistry 3 credits
   tesu
-  excelsior
+  excelsior: CHE 101 General Chemistry
 Introduction to Chemistry Lab 1 credits
   skip
 Introduction to Nutrition 3 credits
   tesu
+  excelsior: Natural Science Elective
 Microbiology 3 credits
   skip
 Microbiology Lab 1 credits
@@ -177,26 +182,27 @@ Introduction to Psychology (no longer offered) 3 credits
   excelsior
 Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   tesu
-  excelsior
+  excelsior: PSY 101 Introduction to Psychology
 Introduction to Sociology (no longer offered) 3 credits
   tesu
   excelsior
 Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
   tesu
-  excelsior
+  excelsior: SOC 101 Introduction to Sociology
 Macroeconomics 3 credits
   tesu
-  excelsior
+  excelsior: ECO 262 Macroeconomics
 Microeconomics 3 credits
   tesu
-  excelsior
-Topics in US History (Learn from the Past, Prepare for the Future) 3 credits
+  excelsior: EC2 260 Microeconomics
+Topics in US History 3 credits
   tesu
+  excelsior: Social Science/History Elective
 U.S. Government 3 credits
   tesu
 US History I 3 credits
   tesu
-  excelsior
+  excelsior: HIS 101 US History I
 US History II 3 credits
   tesu
-  excelsior
+  excelsior: HIS 102 US History II
