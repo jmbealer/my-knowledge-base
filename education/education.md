@@ -2,16 +2,39 @@
 
 tags: #education
 
-Charter Oak State College
-Excelsior College
+## Charter Oak State College
+
+## Excelsior College
+
   BS in Information Technology
+    Degree-Specific Requirements
+      IND 203 Professional Ethics
+      Communications
+      MAT 205 Discrete Mathematics
+      BUS 231 Business Data Literacy or MAT 201 Statistics
+      One additional math course at the level of College Algebra or above.
+    Information Technology Component
+      
   BS in Cybersecurity
 
   BS in Electrical Engineering Technology
   BPS in Technology Management
 
   MS in Cybersecurity
-Peirce College
+
+  general education and additional requirements 120-124 credits
+    IND 101 Cornerstone A: Foundations or IND 301 Cornerstone B: Pathways 3 credits
+    Written English Requirement 6 credits
+    Humanities 9 credits
+    Social Sciences/History 9 credits
+    Natural Scienecs 2 credits
+    Mathematics 2 credits
+    Natural Sciences or Mathematics 5 credits
+    Additional Arts and Sciences 27 credits
+    INL 102 Information Literacy 1 credits
+    Capstone 3 credits
+    Additional Collegiate-Level Study 53-57 credits
+  ## Peirce College
   BS in Information Technology
     90 credits - 121
 
@@ -20,12 +43,12 @@ Peirce College
   BS in Accounting
     90 credits - 121
 
-Purdue University Global
+## Purdue University Global
   ExcelTrack BS in Information Technology
     180 credits
   ExcelTrack BS in Cybersecurity
-Southern New Hampshire University
-Thomas Edison State University
+  ## Southern New Hampshire University
+  ## Thomas Edison State University
   BA in Computer Science
   BA in Mathematics
 
@@ -44,5 +67,5 @@ Thomas Edison State University
   MS in Cybersecurity
   MS in Data Science and Analytics
   MS in Information Technology
-University of Maine at Presque Isle
-Western Governors University
+  ## University of Maine at Presque Isle
+## Western Governors University
