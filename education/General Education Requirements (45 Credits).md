@@ -1,6 +1,7 @@
+# General Education Requirements (45 Credits)
+
 ## A. Intellectual and Practical Skills (15 Credits)
 
-[stet](https://app.sophia.org/online-courses/english-composition-i-4)
 ### Written Communication 6 ready
 
 ENC-1010: Writing for Success 3

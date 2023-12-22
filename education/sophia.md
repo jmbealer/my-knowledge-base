@@ -79,16 +79,16 @@ Conflict Resolution 3 credits
   Thomas Edison State University
   Excelsior: COMM 324 Conflict Management
 English Composition I 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: ENC 1010 Writing for Success
   Excelsior: ENG 101 English Composition I
 English Composition II 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: ENC 1020 English Composition II
   Excelsior: ENG 102 English Composition II (not applicable for BUS or TECH degrees)
 Foundations of English Composition 3 credits
   Thomas Edison State University
   Excelsior
 Public Speaking 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: COM 2090 Public Speaking
   Excelsior: COMM 125 Public Speaking
 Visual Communications 3 credits
   Thomas Edison State University
@@ -129,10 +129,10 @@ Spanish II 3 credits
 ## Math
 
 Calculus I 4 credits
-  Thomas Edison State University
+  Thomas Edison State University: MAT 2310 Calculus I
   Excelsior: MAT 220 Calculus I
 College Algebra 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: MAT 1210 College Algebra
   Excelsior: MAT 114 Intermediate Algebra
 Foundations of College Algebra (no longer offered) 0 credits
   Thomas Edison State University
@@ -141,10 +141,10 @@ Foundation of Statistics 2 credits
   Thomas Edison State University
   Excelsior
 Introduction to College Mathematics 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   Excelsior: MAT 101 Math for Everyday Life
 Introduction to Statistics 3 credits
-  Thomas Edison State University
+  Thomas Edison State University: ST0 2010 Principles of Statistics
   Excelsior: MAT 201 Statistics
 Introductory Applied Math (no longer offered) 1 credits
   Thomas Edison State University
