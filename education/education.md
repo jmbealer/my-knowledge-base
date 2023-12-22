@@ -2,7 +2,6 @@
 
 tags: #education
 
-[Sophia.org](https://www.sophia.org/)
 [Sophia.org](sophiaorg.md)
 [Study.com](studycom.md)
 
