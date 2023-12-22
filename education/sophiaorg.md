@@ -1,8 +1,9 @@
 # Sophia
 
 [Sophia.org](https://www.sophia.org/)
+[Degree Forum Wiki Sophia](https://degreeforum.miraheze.org/wiki/Sophia_Learning,_LLC)
 
-Going to do **Excelsior** first, then **Thomas Edison State University**.
+Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State University**.
 
 ## Business
 
@@ -17,21 +18,26 @@ Business Law 3 credits
 Financial Accounting 3 credits
   Thomas Edison State University
   Excelsior: ACC 211 Financial Accounting
+  Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
 Introduction to Business 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
+  Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
 Personal Finance 3 credits
   Thomas Edison State University
   Excelsior: Applied Professional/Free Elective
 Principles of Finance 3 credits
   Thomas Edison State University
   Excelsior: BUS 350 Principles of Finance
+  Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
+  It may be a good idea to wait until after taking the Micro/Macro economics courses as well.
 Principles of Management 3 credits
   Thomas Edison State University
   Excelsior: BUS 341 Management Concepts and Applications
 Project Management 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
+  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
 ## Career Success
 Career Readiness 3 credits
   Excelsior: Lower Level Applied Professional/Free Elective
@@ -40,6 +46,7 @@ College Readiness 3 credits
 Developing Effective Teams 1 credits
   Thomas Edison State University
   Excelsior: Humanities Elective
+  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
 IT Career Exploration 1 credits
   Excelsior: Applied Professional/Free Elective
 Introduction to Career Readiness 1 credits
@@ -48,6 +55,7 @@ The Essentials of Managing Conflict 1 credits
   skip
     Thomas Edison State University
     Excelsior
+  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
 Preparing for the Future of Work 3 credits
   Thomas Edison State University
 Workplace Writing I 3 credits
@@ -70,6 +78,7 @@ Introduction to Programming in Python 3 credits
 Introduction to Relational Databases 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
+  not good: Do Computer Science 303: Database Management instead
 Introduction to Web Development 3 credits
   Excelsior: Free Elective
 
@@ -78,6 +87,7 @@ Introduction to Web Development 3 credits
 Conflict Resolution 3 credits
   Thomas Edison State University
   Excelsior: COMM 324 Conflict Management
+  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
 English Composition I 3 credits
   Thomas Edison State University: ENC 1010 Writing for Success
   Excelsior: ENG 101 English Composition I
@@ -101,6 +111,7 @@ Workplace Communication 3 credits
 Ancient Greek Philosophers 3 credits
   Thomas Edison State University
   Excelsior: PHIL 20 Introduction to Philosophy
+  Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
 Approaches to Studying Religions 3 credits
   Thomas Edison State University
   Excelsior: Humanities Elective
@@ -115,6 +126,8 @@ Critical Thinking 3 credits
 Introduction to Ethics 3 credits
   Thomas Edison State University
   Excelsior: Ethics Requirement
+  Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
+  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 ## Languages
 
 French I 3 credits
@@ -182,21 +195,27 @@ Microbiology Lab 1 credits
 Introduction to Psychology (no longer offered) 3 credits
   Thomas Edison State University
   Excelsior
+  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   Thomas Edison State University
   Excelsior: PSY 101 Introduction to Psychology
+  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 Introduction to Sociology (no longer offered) 3 credits
   Thomas Edison State University
   Excelsior
+  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
   Thomas Edison State University
   Excelsior: SOC 101 Introduction to Sociology
+  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 Macroeconomics 3 credits
   Thomas Edison State University
   Excelsior: ECO 262 Macroeconomics
+  Suggested order: 1.) Microeconomics 2.) Macroeconomics
 Microeconomics 3 credits
   Thomas Edison State University
   Excelsior: EC2 260 Microeconomics
+  Suggested order: 1.) Microeconomics 2.) Macroeconomics
 Topics in US History 3 credits
   Thomas Edison State University
   Excelsior: Social Science/History Elective

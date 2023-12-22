@@ -16,6 +16,11 @@ COM 2200 - Introduction to Human Communications 3 hr(s).
 Communication at Work 3
 Visual Communication 3
 
+Workplace Communications
+English Composition I
+English Composition II
+Public Speaking
+
 ### Mathematics and/or Sciences: 6 credits
 
 ~BIOY 1101 - General Biology 4 hr(s).~
@@ -29,6 +34,9 @@ SCI 1101 - General Science 4 hr(s).
 
 College Algebra 3
 Introduction to Statistics 3
+
+Introduction to Human Biology
+Environmental Science
 
 ### Computer Literacy: 3 credits
 
@@ -49,12 +57,14 @@ US History I 3
 Psychology or Sociology 3
   probably sociology
 
+US History II
 
 ## Component II - General Electives (45 Hrs)
 
-Area of Emphasis - Information Systems
+Area of Emphasis:
+
+Information Systems
   Google Data Analytics Certificate - Coursea 12
-  Google IT Professional Certificate - Coursea 12
   Google IT Support Professional Certificate - Coursea 12
   Google UX Design Certificate - Coursea 10
   IBM Cybersecurity Analyst Professional Certificate - Coursea 10
@@ -63,3 +73,10 @@ Area of Emphasis - Information Systems
   Introduction to Web Development 3
   Introduction to Networking
   Introduction to Java Programming
+
+Mathematics:
+  College Algebra
+  Introduction to Statistics
+  Precalculus
+  Calculus I
+
