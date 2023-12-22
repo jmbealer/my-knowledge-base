@@ -6,7 +6,7 @@ Board of Governors A.A.S. (60 Hrs)
 
 ## Component I - General Education (15 Hrs)
 
-### Communications: 6 credits
+### Communications: 3 credits
 
 ~ENGL 1104 - Written English I 3-4 hr(s). (“C” or higher required for graduation)~
 ~ENGL 1108 - Written English II 3 hr(s). (“C” or higher required for graduation)~
@@ -36,7 +36,7 @@ OFAD 1150 - Computer Concepts and Applications 3 hr(s).
 
 Introduction to Information Technology
 
-### Social Sciences: 6 credits
+### Social Sciences: 3 credits
 
 ECON 2201 - Economic Principles and Problems I 3 hr(s).
 ~HST 1101 - United States History I 3 hr(s).~
