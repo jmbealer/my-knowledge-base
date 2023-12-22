@@ -20,6 +20,7 @@ Introduction to Business 3 credits
   excelsior: Free Elective
 Personal Finance 3 credits
   tesu
+  excelsior: Applied Professional/Free Elective
 Principles of Finance 3 credits
   tesu
   excelsior: BUS 350 Principles of Finance
@@ -36,7 +37,7 @@ College Readiness 3 credits
   tesu
 Developing Effective Teams 1 credits
   tesu
-  excelsior
+  excelsior: Humanities Elective
 IT Career Exploration 1 credits
   excelsior: Applied Professional/Free Elective
 Introduction to Career Readiness 1 credits
@@ -55,6 +56,7 @@ Workplace Writing II 3 credits
 ## Computer Science and IT
 Introduction to Information Technology 3 credits
   tesu
+  excelsior: IT 221 Introduction to Computers
 Introduction to Java Programming 3 credits
   tesu
   excelsior: Technology Elective
@@ -73,43 +75,44 @@ Introduction to Web Development 3 credits
 
 Conflict Resolution 3 credits
   tesu
-  excelsior
+  excelsior: COMM 324 Conflict Management
 English Composition I 3 credits
   tesu
-  excelsior
+  excelsior: ENG 101 English Composition I
 English Composition II 3 credits
   tesu
-  excelsior
+  excelsior: ENG 102 English Composition II (not applicable for BUS or TECH degrees)
 Foundations of English Composition 3 credits
   tesu
   excelsior
 Public Speaking 3 credits
   tesu
-  excelsior
+  excelsior: COMM 125 Public Speaking
 Visual Communications 3 credits
   tesu
-  excelsior
+  excelsior: Free Elective
 Workplace Communication 3 credits
   tesu
+  excelsior: Lower Level Humanities Credit
 
 ## Humanities
 Ancient Greek Philosophers 3 credits
   tesu
-  excelsior
+  excelsior: PHIL 20 Introduction to Philosophy
 Approaches to Studying Religions 3 credits
   tesu
-  excelsior
+  excelsior: Humanities Elective
 Art History I 3 credits
   tesu
-  excelsior
+  excelsior: ART 101 History of West Art: Ancient through 14th Century
 Art History II 3 credits
   tesu
-  excelsior
+  excelsior: ART 102 Since the 15th Century
 Critical Thinking 3 credits
   skip
 Introduction to Ethics 3 credits
   tesu
-  excelsior
+  excelsior: Ethics Requirement
 ## Languages
 
 French I 3 credits
