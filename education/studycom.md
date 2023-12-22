@@ -408,77 +408,7 @@ Biology 107L: Clinical Microbiology w/ Lab BIO-175 Microorganisms 4 lower
 
 Business 212: Business Statistics STA-201 Principles of Statistics 3 lower
 
-Computer Science 102: Fundamentals of Information Technology CMP-202 Foundations of Information Technology 3 lower
-
-Computer Science 103: Computer Concepts & Applications COS-101 Introduction to Computers 3 lower
-
-Computer Science 105: Introduction to Operating Systems COS-240 Operating Systems 3 lower
-
-Computer Science 109: Introduction to Programming COS-111 Introduction to Programming 3 lower
-
-Computer Science 111: Programming in C COS-116 C Programming 3 lower
-
-Computer Science 112: Programming in C++ COS-213 C++ Programming 3 lower
-
-Computer Science 113: Programming in Python COS-205 Python Programming 3 lower
-
 Computer Science 114: Programming in R COS-206 R Programming 3 lower
-
-Computer Science 115: Programming in Java COS-208 Java Programming 3 lower
-
-Computer Science 201: Data Structures & Algorithms COS-241 Data Structures 3 lower
-
-Computer Science 302: Systems Analysis & Design CIS-320 System Analysis & Design I 3 upper
-
-Computer Science 303: Database Management CIS-311 Database Management 3 upper
-
-Computer Science 304: Network System Design CMP-254 Network Technology 3 lower
-
-Computer Science 305: Operating Systems COS-240 Operating Systems 3 lower
-
-Computer Science 306: Computer Architecture COS-330 Computer Architecture 3 upper
-
-Computer Science 307: Software Engineering CIS-251 Software Engineering 3 lower
-
-Criminal Justice 101: Intro to Criminal Justice AOJ-102 Introduction to Criminal Justice 3 lower
-
-Criminal Justice 104: Introduction to Criminology SOC-291 Criminology 3 lower
-
-Criminal Justice 106: Forensic Science AOJ-280 Forensic Science 3 lower
-
-Criminal Justice 107: Criminal Law AOJ-251 Criminal Law I 3 lower
-
-Criminal Justice 301: White Collar Crime AOJ-303 White-Collar Crime 3 upper
-
-Criminal Justice 305: The Juvenile Justice System AOJ-363 American Juvenile Justice System 3 upper
-
-Criminal Justice 306: Research Methods in Criminal Justice SOS-492 Research Methods in Social Sciences 3 upper
-
-Criminal Justice 381: Victimology AOJ-381 Victimology and Criminal Behavior 3 upper
-
-Earth Science 101: Earth Science EAS-101 General Earth Science 3 lower
-
-Earth Science 104: Intro to Meteorology EAS-131 Intro to Meteorology 3 lower
-
-Economics 101: Principles of Microeconomics ECO-112 Microeconomics 3 lower
-
-Economics 102: Macroeconomics ECO-111 Macroeconomics 3 lower
-
-Education 101: Foundations of Education EDU-102 Foundations of Education (Free Elective) 3 lower
-
-Education 103: Classroom Management EDU-319 Classroom Management Techniques (Free Elective) 3 upper
-
-Education 104: Differentiated Instruction EDU-299 Special Topics in Education (Free Elective) 3 lower
-
-Education 105: Special Education History & Law SPE-200 Introduction to Special Education (Free Elective) 3 lower
-
-Education 106: Introduction to Early Childhood Education CDS-210 Intro to Early Childhood Education 3 lower
-
-Education 210: Technology in the Classroom EDU-207 Technology in the Classroom (Equivalency Only) 3 lower
-
-Education 211: Teaching Elementary Math EDU-274 Math Elementary School Teacher 3 lower
-
-English 101: English Literature LIT-199 Special Topics in Literature 3 lower
 
 English 102: American Literature LIT-205 American Literature I 3 lower
 
