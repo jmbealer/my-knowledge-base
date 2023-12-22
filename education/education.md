@@ -15,6 +15,17 @@ Degree-Specific Requirements
   BUS 231 Business Data Literacy or MAT 201 Statistics
   One additional math course at the level of College Algebra or above.
 Information Technology Component
+  IT 211 Fundamentals of Programming
+  IT 313 Intermediate Programming
+  IT 250 Business Data Communications
+  IT 361 Computer Organization and Operating Systems
+  IT 370 Database Management Systems
+
+  IT 371 Web Design and Development
+  IT 375 Human-Computer Interactive Design
+  IT 380 Overview of Computer Security
+  IT 390 Project Management
+  IT 460 Systems Administration
 
 ### BS in Cybersecurity
 
