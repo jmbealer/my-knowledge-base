@@ -3,7 +3,8 @@
 tags: #education
 
 [Sophia.org](https://www.sophia.org/)
-[Sophia.org](sophia.md)
+[Sophia.org](sophiaorg.md)
+[Study.com](studycom.md)
 
 ## Charter Oak State College
 
