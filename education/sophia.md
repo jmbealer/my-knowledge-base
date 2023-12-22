@@ -11,43 +11,40 @@ Business Ethics 3 credits
   skip
 Business Law 3 credits
   tesu
-  excelsior
+  excelsior: BUS 230 Business Law
 Financial Accounting 3 credits
   tesu
-  excelsior
+  excelsior: ACC 211 Financial Accounting
 Introduction to Business 3 credits
   tesu
-  excelsior
+  excelsior: Free Elective
 Personal Finance 3 credits
   tesu
 Principles of Finance 3 credits
   tesu
-  excelsior
+  excelsior: BUS 350 Principles of Finance
 Principles of Management 3 credits
   tesu
-  excelsior
+  excelsior: BUS 341 Management Concepts and Applications
 Project Management 3 credits
   tesu
-  excelsior
+  excelsior: Free Elective
 ## Career Success
 Career Readiness 3 credits
-  skip
+  excelsior: Lower Level Applied Professional/Free Elective
 College Readiness 3 credits
   tesu
-  excelsior
-Conflict Resolution 3 credits
-  tesu
-  excelsior
 Developing Effective Teams 1 credits
   tesu
   excelsior
 IT Career Exploration 1 credits
-  excelsior
+  excelsior: Applied Professional/Free Elective
 Introduction to Career Readiness 1 credits
   skip
 The Essentials of Managing Conflict 1 credits
-  tesu
-  excelsior
+  skip
+    tesu
+    excelsior
 Preparing for the Future of Work 3 credits
   tesu
 Workplace Writing I 3 credits
@@ -60,18 +57,23 @@ Introduction to Information Technology 3 credits
   tesu
 Introduction to Java Programming 3 credits
   tesu
+  excelsior: Technology Elective
 Introduction to Networking 3 credits
   tesu
 Introduction to Programming in Python 3 credits
   tesu
-  excelsior
+  excelsior: Free Elective
 Introduction to Relational Databases 3 credits
   tesu
-  excelsior
+  excelsior: Free Elective
 Introduction to Web Development 3 credits
-  excelsior
+  excelsior: Free Elective
 
 ## English and Communications
+
+Conflict Resolution 3 credits
+  tesu
+  excelsior
 English Composition I 3 credits
   tesu
   excelsior
@@ -109,6 +111,7 @@ Introduction to Ethics 3 credits
   tesu
   excelsior
 ## Languages
+
 French I 3 credits
   skip
 Spanish I 3 credits
@@ -117,15 +120,80 @@ Spanish II 3 credits
   skip
 
 ## Math
-Calculus I 3 credits
+
+Calculus I 4 credits
+  tesu
+  excelsior
 College Algebra 3 credits
-Foundations of College Algebra (no longer offered) 	0 	Developmental course, no credits actually awarded 	N/A 	N/A 	MAT-1XX Math Elective 	6 	2 	0 	N
-Foundation of Statistics 3 credits
+  tesu
+  excelsior
+Foundations of College Algebra (no longer offered) 0 credits
+  tesu
+Foundation of Statistics 2 credits
+  tesu
+  excelsior
 Introduction to College Mathematics 3 credits
+  tesu
+  excelsior
 Introduction to Statistics 3 credits
-Introductory Applied Math (no longer offered) 3 credits
+  tesu
+  excelsior
+Introductory Applied Math (no longer offered) 1 credits
+  tesu
 Precalculus 3 credits
+  maybe skip
 
 ## Science
 
+Anatomy and Physiology I 3 credits
+  skip
+Anatomy and Physiology I Lab 1 credits
+  skip
+Environmental Science 3 credits
+  tesu
+  excelsior
+Human Biology 3 credits
+  tesu
+  excelsior
+Human Biology Lab 1 credits
+  skip
+Introduction to Chemistry 3 credits
+  tesu
+  excelsior
+Introduction to Chemistry Lab 1 credits
+  skip
+Introduction to Nutrition 3 credits
+  tesu
+Microbiology 3 credits
+  skip
+Microbiology Lab 1 credits
+  skip
 ## Social Science
+Introduction to Psychology (no longer offered) 3 credits
+  tesu
+  excelsior
+Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
+  tesu
+  excelsior
+Introduction to Sociology (no longer offered) 3 credits
+  tesu
+  excelsior
+Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
+  tesu
+  excelsior
+Macroeconomics 3 credits
+  tesu
+  excelsior
+Microeconomics 3 credits
+  tesu
+  excelsior
+Topics in US History (Learn from the Past, Prepare for the Future) 3 credits
+  tesu
+U.S. Government 3 credits
+  tesu
+US History I 3 credits
+  tesu
+  excelsior
+US History II 3 credits
+  tesu
+  excelsior
