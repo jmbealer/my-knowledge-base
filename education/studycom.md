@@ -410,206 +410,21 @@ Business 212: Business Statistics STA-201 Principles of Statistics 3 lower
 
 Computer Science 114: Programming in R COS-206 R Programming 3 lower
 
-English 102: American Literature LIT-205 American Literature I 3 lower
-
-English 103: Analyzing and Interpreting Literature LIT-291 Analysis & Interpretation of Literature 3 lower
-
 English 104: College Composition I ENC-110 Intro to Composition I 3 lower
 
 English 105: College Composition II ENC-111 Intro to Composition II 3 lower
 
-English 204: English Composition I ENC-101 Writing for Success 3 lower
-
-English 205: English Composition II ENC-102 English Composition II 3 lower
-
 English 301: Non-Western Literature LIT-460 Non-Western World Literature 3 upper
-
-English 305: Advanced Technical Writing ENG-306 Intermediate Technical Writing/Professional Writing 3 upper
-
-English 310: Short Stories ENG-299 Special Topics in English 3 lower
-
-Environmental Science 101: Environment and Humanity ENS-200 Environmental Science 3 lower
-
-Finance 101: Principles of Finance FIN-301 Principles of Finance 3 upper
-
-Finance 102: Personal Finance BUE-101 Personal Finance (Free Elective) 3 lower
-
-Finance 104: Financial Management FIN-200 Principles of Finance 3 lower
-
-Finance 301: Corporate Finance FIN-311 Corporate Finance (Equivalency Only) 3 upper
-
-Finance 302: International Finance FIN-334 International Finance 3 upper
-
-Finance 303: Financial Institutions & Markets FIN-331 Financial Institutions and Markets 3 upper
-
-Finance 304: Security Analysis & Portfolio Management FIN-321 Security Analysis & Portfolio Management 3 upper
 
 Finance 305: Risk Management FIN-382 Risk Management 3 upper
 
-Finance 306: Small Business Finance FIN-314 Small Business Finance 3 upper
-
-Genetics 101: Intro to Genetics BIO-241 Human Genetics 3 lower
-
-Geography 101: Human & Cultural Geography GOG-120 Introduction to Human Geography 1 lower
-
-Geology 101: Physical Geology GEO-151 Physical Geology 3 lower
-
 Geometry 101: Intro to Geometry MAT-260 Geometry 3 lower
-
-Health 101: Principles of Health HEA-103 Here's To Your Health (Free Elective) 3 lower
-
-Health 103: Medical Terminology APS-100 Medical Terminology 3 lower
-
-Health 301: Ethical & Legal Issues in Healthcare HCM-308 Healthcare Legal and Ethical Considerations 3 upper
-
-Health 302: Health Services Policy PUA-303 Health Services Policy 3 upper
-
-Health 303: Healthcare Organization & Management HCM-307 Principles of Healthcare Management 3 upper
-
-Health 305: Healthcare Finance & Budgeting HCM-405 Financing/Economics of Healthcare Delivery 3 upper
-
-Health 307: Healthcare Delivery Systems HCM-306 Healthcare Delivery Systems 3 upper
-
-Health 308: Healthcare Quality & Outcome Measurement HCM-404 Healthcare Quality & Outcomes: Measurement and Management 3 upper
-
-Health 310: Human Resource Management in Healthcare HCM-406 Human Resource Management for Healthcare Organizations. 3 upper
-
-History 100: Western Civilization from Prehistory to Post-WWII HIS-109 Western Civilization From Prehistory to WWII 3 lower
-
-History 101: Western Civilization I HIS-101 Western Civilization I 3 lower
-
-History 102: Western Civilization II HIS-102 Western Civilization II 3 lower
-
-History 103: US History I HIS-113 American History I 3 lower
-
-History 104: US History II HIS-114 American History II 3 lower
-
-History 105: US History from Settlement to Present Day HIS-118 Introduction to American History (Equivalency Only) 3 lower
-
-History 106: The Civil War and Reconstruction HIS-252 Civil War and Reconstruction 3 lower
-
-History 108: History of the Vietnam War HIS-246 Intro to Vietnam War 3 lower
 
 History 301: Historiography & Historical Methods HIS-379 Historical Methods 3 upper
 
-History 306: The American Civil War Era HIS-450 The American Civil War Era 3 upper
-
-History 307: American Civil Rights Movement HIS-210 American Civil Rights Movement 3 lower
-
-History 308: Causes and Effects of the Vietnam War HIS-351 A History of Vietnam War 3 upper
-
-History 309: War & American Society HIS-106 War and American Society (Equivalency Only) 3 lower
-
-History 311: The Holocaust & World War II HIS-354 The Holocaust I 3 upper
-
-Hospitality 101: Introduction to Hospitality HMM-140 Introduction to Hospitality Industry 3 lower
-
-Hospitality 105: Introduction to the Tourism & Travel Industry BUS-200 Intro Travel &Tourism 3 lower
-
-Hospitality 301: Hospitality Marketing HMM-316 Hospitality Marketing 3 upper
-
-Hospitality 304: Hotel & Lodging Management & Operations HMM-341 Hotel/Lodging Management & Operations 3 upper
-
-Hospitality 309: Food & Beverage Service & Operations HMM-352 Food and Beverage Management. 3 upper
-
-Humanities 101: Intro to the Humanities HUM-101 Intro to Hum I: Philos Thought 3 lower
-
-Humanities 201: Critical Thinking & Analysis PHI-130 Intorduction to Critical Reasoning 3 lower
-
-Marketing 301: Marketing Research MAR-411 Marketing Research 3 upper
-
-Marketing 302: Consumer Behavior MAR-351 Comsumer Behavior (Equivalency Only) 4 upper
-
-Marketing 303: Global Marketing MAR-252 International Marketing 3 lower
-
-Marketing 306: Principles of Selling MAR-310 Principles of Sales (Equivalency Only) 3 upper
-
-Marketing 308: Applied Marketing MAR-479 Applied Marketing Practices 3 upper
-
-Math 101: College Algebra MAT-115 Intermediate Algebra 3 lower
-
-Math 102: College Mathematics MAT-105 Applied Liberal Arts Mathematics 3 lower
-
-Math 103: Precalculus MAT-129 Precalculus 3 lower
-
-Math 104: Calculus MAT-231 Calculus I 3 lower
-
-Math 105: Precalculus Algebra MAT-121 College Algebra 4 lower
-
-Math 107: Quantitative Literacy MAT-105 Applied Liberal Arts Mathematics 3 lower
-
-Math 108: Discrete Mathematics MAT-270 Discrete Mathematics 3 lower
+Humanities 201: Critical Thinking & Analysis PHI-130 Introduction to Critical Reasoning 3 lower
 
 Nursing 301: Nursing Informatics PNU-301 Fundamentals of Nursing 3 lower
-
-Nutrition 101: Science of Nutrition BIO-208 The Science of Nutrition 3 lower
-
-Philosophy 102: Ethics in America PHI-287 Ethics in America 3 lower
-
-Philosophy 103: Ethics - Theory & Practice PHI-180 Intro to Ethics 3 lower
-
-Philosophy 301: Principles of Philosophy PHI-1999 Intro to Philosophy 6 lower
-
-Physics 101: Intro to Physics PHY-101 Survey of Physics 3 lower
-
-Physics 111: Physics I PHY-111 Physics I 3 lower
-
-Physics 112: Physics II PHY-112 Physics II 3 lower
-
-Political Science 101: Intro to Political Science FEL-199 Special Topics Free Electives 3 lower
-
-Political Science 102: American Government POS-100 United States Government 3 lower
-
-Political Science 103: Comparative Politics POS-282 Intro to Comparative Politics 3 lower
-
-Psychology 101: Intro to Psychology PSY-101 Introduction to Psychology 3 lower
-
-Psychology 102: Educational Psychology PSY-230 Introduction to Educational Psychology 3 lower
-
-Psychology 104: Social Psychology PSY-237 Intro to Social Psychology I 3 lower
-
-Psychology 105: Research Methods in Psychology PSY-229 Intro to Research Methods in Psychology 3 lower
-
-Psychology 106: Abnormal Psychology PSY-235 Intro to Abnormal Psychology 3 lower
-
-Psychology 107: Life Span Developmental Psychology PSY-211 Developmental Psychology 3 lower
-
-Psychology 108: Psychology of Adulthood and Aging PSY-212 Developmental Psychology II 3 lower
-
-Psychology 301: Industrial/Organizational Psychology PSY-163 Industrial/Organizational Psychology 3 lower
-
-Psychology 302: Cognitive Psychology PSY-222 Cognition 3 lower
-
-Psychology 306: Advanced Abnormal Psychology PSY-246 Advanced Abnormal Psychology 3 lower
-
-Psychology 310: Psychology of Personality PSY-352 Psychology of Personality 3 upper
-
-Psychology 311: Physiological Psychology PSY-224 Physiological Psychology 3 lower
-
-Psychology 312: History and Systems of Psychology PSY-400 History and Systems of Psychology 3 upper
-
-Psychology 315: Psychology of Motivation PSY-251 Psychology of Learning and Motivation 3 lower
-
-Psychology 316: Advanced Social Psychology PSY-379 Social Psychology 3 upper
-
-Science 101: Intro to Life Sciences NAS-101 Natural Sciences I 3 lower
-
-Science 102: Principles of Physical Science NAS-131 Physical Science I 3 lower
-
-Social Science 108: Ethics in the Social Sciences SOS-216 Ethics in the Social Sciences 3 lower
-
-Sociology 101: Intro to Sociology SOC-101 Our Changing World: Intro to Sociology 3 lower
-
-Sociology 305: Sociology of Work SOC-362 Sociology of Work 3 upper
-
-Spanish 101: Beginning Spanish SPA-101 Elementary Spanish I 3 lower
-
-Spanish 102: Intermediate Spanish SPA-201 Intermediate Spanish I 3 lower
-
-Spanish 105: Spanish for the Workplace SPA-199 Special Topics in Spanish 3 lower
-
-Statistics 101: Principles of Statistics STA-201 Principles of Statistics 4 lower
-
 
 ## [Thomas Edison State University](https://study.com/college/school/thomas-edison-state-university.html)
 
