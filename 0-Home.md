@@ -13,5 +13,6 @@ date +"%F" - prints the date in the format YYYY-MM-DD
 [JavaScript](./javascript.md)
 [Journals](journals/journals.md)
 [Markdown](./markdown.md)
+[Education](./education/education.md)
 
 [Hyperpolyglot](https://hyperpolyglot.org)
