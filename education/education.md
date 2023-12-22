@@ -53,6 +53,12 @@ Below are Pierpont-specific courses for each General Education area; transfer wo
 Component II - General Electives (45 Hrs)
   Area of Emphasis - Information Systems
     Google Data Analytics Certificate - Coursea 12
+    Google IT Professional Certificate - Coursea 12
+    Google UX Design Certificate - Coursea 10
+    IBM Cybersecurity Analyst Professional Certificate - Coursea 10
+    Introduction to Programming with Python 3
+    Introduction to Relational Databases 3
+    Introduction to Web Development 3
 
 ## Charter Oak State College
 
