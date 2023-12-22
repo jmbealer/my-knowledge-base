@@ -33,24 +33,31 @@
 ### II. Mathematics (45 Credits)
 
 #### A. Required Courses (15 Credits)
-			* MAT-231 	Calculus I	4
+
+* MAT-231 	Calculus I	4
 				* Calculus I sophia.org
 				* Calculus I study.com
 				* Calculus I saylor
-			* MAT-232 	Calculus II	4
+* MAT-232 	Calculus II	4
 				* Calculus straighterline
-			* MAT-331 	Calculus III	3
-			* STA-201 	Principles of Statistics	3 Sophia-Introduction to Statisitcs
-			* MAT-321 	Linear Algebra	3
+* MAT-331 	Calculus III	3
+* STA-201 	Principles of Statistics	3 Sophia-Introduction to Statisitcs
+* MAT-321 	Linear Algebra	3
+
 #### B. Mathematics Electives (15 Credits)
+
 			* MAT-332 	Calculus IV	3
 			* MAT-361 	College Geometry	3
 			* MAT-301 	History of Mathematics	3
 			* MAT-401 	Mathematical Logic	3
 			* MAT-351 	Mathematical Modeling	3
+
 #### C. Natural Science and Math Electives (12 Credits)
+
 			* Natural Sciences and Mathematics Electives	12
 			* Complete 12 credits in the Natural Sciences and Math areas.
+
 #### D. Capstone (3 Credits)
+
 			* LIB-495 	Liberal Arts Capstone	3
 * III. Electives (30 Credits) not needed; being used by second area of study
