@@ -8,13 +8,13 @@ tags: #education
 
 ### BS in Information Technology
 
-    Degree-Specific Requirements
-      IND 203 Professional Ethics
-      Communications
-      MAT 205 Discrete Mathematics
-      BUS 231 Business Data Literacy or MAT 201 Statistics
-      One additional math course at the level of College Algebra or above.
-    Information Technology Component
+Degree-Specific Requirements
+  IND 203 Professional Ethics
+  Communications
+  MAT 205 Discrete Mathematics
+  BUS 231 Business Data Literacy or MAT 201 Statistics
+  One additional math course at the level of College Algebra or above.
+Information Technology Component
 
 ### BS in Cybersecurity
 
