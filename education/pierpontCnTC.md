@@ -1,6 +1,7 @@
 # Pierpont Community & Technical College
 
 [degree forum wiki Pierpont C&TC](https://degreeforum.miraheze.org/wiki/Pierpont_C%26TC)
+[sophia.org](./sophiaorg.md)
 
 Board of Governors A.A.S. (60 Hrs)
 
