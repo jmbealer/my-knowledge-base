@@ -168,6 +168,7 @@ Introduction to Ethics 3 credits
   Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
   No Touchstones
+
 ## Languages
 
 French I 3 credits
@@ -259,7 +260,7 @@ Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
 Lifespan Development 3 credits DONE
   skip
   No Touchstones
-Macroeconomics 3 credits
+Macroeconomics 3 credits DONE
   Thomas Edison State University
   Excelsior: ECO 262 Macroeconomics
   Suggested order: 1.) Microeconomics 2.) Macroeconomics
