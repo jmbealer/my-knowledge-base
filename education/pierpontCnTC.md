@@ -14,12 +14,17 @@ Board of Governors A.A.S. (60 Hrs)
 COM 2200 - Introduction to Human Communications 3 hr(s).
 
 Communication at Work 3
+  2 Touchstones
 Visual Communication 3
+  No Touchstones
 
 Workplace Communications
 English Composition I
 English Composition II
 Public Speaking
+
+Foundations Of English Composition 3
+  2 Touchstones
 
 ### Mathematics and/or Sciences: 6 credits
 
@@ -33,16 +38,21 @@ BIOY 1171 - Human Anatomy & Physiology Lab 1 hr(s).
 SCI 1101 - General Science 4 hr(s).
 
 College Algebra 3
+  No Touchstones
 Introduction to Statistics 3
+  No Touchstones
 
 Introduction to Human Biology
+  No Touchstones
 Environmental Science
+  No Touchstones
 
 ### Computer Literacy: 3 credits
 
 OFAD 1150 - Computer Concepts and Applications 3 hr(s).
 
-Introduction to Information Technology
+Introduction to Information Technology 3 DONE
+  No Touchstones
 
 ### Social Sciences: 3 credits
 
@@ -54,10 +64,14 @@ ECON 2201 - Economic Principles and Problems I 3 hr(s).
 ~PSYG 1101 - Introduction to Psychology 3 hr(s).~
 
 US History I 3
+  1 Touchstones
 Psychology or Sociology 3
   probably sociology
+  3 Touchstones
+  2 Touchstones
 
 US History II
+  1 Touchstones
 
 ## Component II - General Electives (45 Hrs)
 
@@ -65,7 +79,7 @@ Area of Emphasis:
 
 Information Systems
   Google Data Analytics Certificate - Coursea 12
-  Google IT Support Professional Certificate - Coursea 12
+  Google IT Support Professional Certificate - Coursea 12 DONE
   Google UX Design Certificate - Coursea 10
   IBM Cybersecurity Analyst Professional Certificate - Coursea 10
   Introduction to Programming with Python 3
