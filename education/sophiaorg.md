@@ -246,38 +246,41 @@ Microbiology Lab 1 credits
   skip
   2 Touchstones
 ## Social Science
-Introduction to Psychology (no longer offered) 3 credits
-  Thomas Edison State University
-  Excelsior
-  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
 Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   Thomas Edison State University
   Excelsior: PSY 101 Introduction to Psychology
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
-Introduction to Sociology (no longer offered) 3 credits
-  Thomas Edison State University
-  Excelsior
-  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
+  3 Touchstones
 Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
   Thomas Edison State University
   Excelsior: SOC 101 Introduction to Sociology
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
+  2 Touchstones
+Lifespan Development 3 credits
+  skip
+  No Touchstones
 Macroeconomics 3 credits
   Thomas Edison State University
   Excelsior: ECO 262 Macroeconomics
   Suggested order: 1.) Microeconomics 2.) Macroeconomics
+  No Touchstones
 Microeconomics 3 credits
   Thomas Edison State University
   Excelsior: EC2 260 Microeconomics
   Suggested order: 1.) Microeconomics 2.) Macroeconomics
+  No Touchstones
 Topics in US History 3 credits
   Thomas Edison State University
   Excelsior: Social Science/History Elective
+  3 Touchstones
 U.S. Government 3 credits
   Thomas Edison State University
+  2 Touchstones
 US History I 3 credits
   Thomas Edison State University
   Excelsior: HIS 101 US History I
+  1 Touchstones
 US History II 3 credits
   Thomas Edison State University
   Excelsior: HIS 102 US History II
+  1 Touchstones
