@@ -10,134 +10,177 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 Business Communication 3 credits
   Thomas Edison State University
   Excelsior
+  4 Touchstones
 Business Ethics 3 credits
   skip
+  2 Touchstones
 Business Law 3 credits
   Thomas Edison State University
   Excelsior: BUS 230 Business Law
+  1 Touchstones
 Financial Accounting 3 credits
   Thomas Edison State University
   Excelsior: ACC 211 Financial Accounting
   Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
+  No Touchstones
 Introduction to Business 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
   Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
+  No Touchstones
+Managerial Accounting 3 credits
+  skip
+  No Touchstones
 Personal Finance 3 credits
   Thomas Edison State University
   Excelsior: Applied Professional/Free Elective
+  2 Touchstones
 Principles of Finance 3 credits
   Thomas Edison State University
   Excelsior: BUS 350 Principles of Finance
   Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
   It may be a good idea to wait until after taking the Micro/Macro economics courses as well.
+  No Touchstones
 Principles of Management 3 credits
   Thomas Edison State University
   Excelsior: BUS 341 Management Concepts and Applications
+  1 Touchstones
 Project Management 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
+  No Touchstones
+
 ## Career Success
 Career Readiness 3 credits
   Excelsior: Lower Level Applied Professional/Free Elective
+  3 Touchstones
 College Readiness 3 credits
   Thomas Edison State University
+  1 Touchstones
+Conflict Resolution 3 credits
+  Thomas Edison State University
+  Excelsior: COMM 324 Conflict Management
+  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
+  No Touchstones
 Developing Effective Teams 1 credits
   Thomas Edison State University
   Excelsior: Humanities Elective
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
+  No Touchstones
 IT Career Exploration 1 credits
   Excelsior: Applied Professional/Free Elective
 Introduction to Career Readiness 1 credits
   skip
+  2 Touchstones
 The Essentials of Managing Conflict 1 credits
   skip
     Thomas Edison State University
     Excelsior
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
+  No Touchstones
 Preparing for the Future of Work 3 credits
   Thomas Edison State University
+  did not find
 Workplace Writing I 3 credits
   skip
+  5 Touchstones
 Workplace Writing II 3 credits
   skip
+  6 Touchstones
 
 ## Computer Science and IT
-Introduction to Information Technology 3 credits
+Introduction to Information Technology 3 credits DONE
   Thomas Edison State University
   Excelsior: IT 221 Introduction to Computers
+  No Touchstones
 Introduction to Java Programming 3 credits
   Thomas Edison State University
   Excelsior: Technology Elective
+  1 Touchstones
 Introduction to Networking 3 credits
   Thomas Edison State University
+  1 Touchstones
 Introduction to Programming in Python 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
+  1 Touchstones
 Introduction to Relational Databases 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
   not good: Do Computer Science 303: Database Management instead
+  No Touchstones
 Introduction to Web Development 3 credits
   Excelsior: Free Elective
+  No Touchstones
 
 ## English and Communications
 
-Conflict Resolution 3 credits
-  Thomas Edison State University
-  Excelsior: COMM 324 Conflict Management
-  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
 English Composition I 3 credits
   Thomas Edison State University: ENC 1010 Writing for Success
   Excelsior: ENG 101 English Composition I
+  5 Touchstones
 English Composition II 3 credits
   Thomas Edison State University: ENC 1020 English Composition II
   Excelsior: ENG 102 English Composition II (not applicable for BUS or TECH degrees)
+  7 Touchstones
 Foundations of English Composition 3 credits
   Thomas Edison State University
   Excelsior
+  2 Touchstones
 Public Speaking 3 credits
   Thomas Edison State University: COM 2090 Public Speaking
   Excelsior: COMM 125 Public Speaking
+  4 Touchstones
 Visual Communications 3 credits
   Thomas Edison State University
   Excelsior: Free Elective
+  No Touchstones
 Workplace Communication 3 credits
   Thomas Edison State University
   Excelsior: Lower Level Humanities Credit
+  2 Touchstones
 
 ## Humanities
 Ancient Greek Philosophers 3 credits
   Thomas Edison State University
   Excelsior: PHIL 20 Introduction to Philosophy
   Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
+  2 Touchstones
 Approaches to Studying Religions 3 credits
   Thomas Edison State University
   Excelsior: Humanities Elective
-Art History I 3 credits
+  3 Touchstones
+Art History I 3 credits DONE
   Thomas Edison State University
   Excelsior: ART 101 History of West Art: Ancient through 14th Century
-Art History II 3 credits
+  No Touchstones
+Art History II 3 credits DONE
   Thomas Edison State University
   Excelsior: ART 102 Since the 15th Century
+  No Touchstones
 Critical Thinking 3 credits
   skip
+  1 Touchstones
 Introduction to Ethics 3 credits
   Thomas Edison State University
   Excelsior: Ethics Requirement
   Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
+  No Touchstones
 ## Languages
 
 French I 3 credits
   skip
+  5 Touchstones
 Spanish I 3 credits
   skip
     Excelsior: Lower Level Humanities Credit
+  5 Touchstones
 Spanish II 3 credits
   skip
     Excelsior: Lower Level Humanities Credit
+  5 Touchstones
 
 ## Math
 
