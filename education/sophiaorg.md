@@ -196,44 +196,55 @@ Foundation of Statistics 2 credits
   Thomas Edison State University
   Excelsior
   No Touchstones
-Introduction to College Mathematics 3 credits
+Introduction to College Mathematics 3 credits TODO
   Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   Excelsior: MAT 101 Math for Everyday Life
+  No Touchstones
 Introduction to Statistics 3 credits
   Thomas Edison State University: ST0 2010 Principles of Statistics
   Excelsior: MAT 201 Statistics
-Introductory Applied Math (no longer offered) 1 credits
-  Thomas Edison State University
+  No Touchstones
 Precalculus 3 credits
   maybe skip
   Excelsior: Math Requirement
+  No Touchstones
 
 ## Science
 
 Anatomy and Physiology I 3 credits
   skip
+  No Touchstones
 Anatomy and Physiology I Lab 1 credits
   skip
+  2 Touchstones
 Environmental Science 3 credits
   Thomas Edison State University
   Excelsior: Natural Science Elective
+  No Touchstones
 Human Biology 3 credits
   Thomas Edison State University
   Excelsior: BIO 105 Anatomy & Physiology I
+  No Touchstones
 Human Biology Lab 1 credits
   skip
+  2 Touchstones
 Introduction to Chemistry 3 credits
   Thomas Edison State University
   Excelsior: CHE 101 General Chemistry
+  No Touchstones
 Introduction to Chemistry Lab 1 credits
   skip
+  2 Touchstones
 Introduction to Nutrition 3 credits
   Thomas Edison State University
   Excelsior: Natural Science Elective
+  No Touchstones
 Microbiology 3 credits
   skip
+  No Touchstones
 Microbiology Lab 1 credits
   skip
+  2 Touchstones
 ## Social Science
 Introduction to Psychology (no longer offered) 3 credits
   Thomas Edison State University
