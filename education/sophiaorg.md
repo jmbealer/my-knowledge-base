@@ -187,15 +187,15 @@ Spanish II 3 credits
 Calculus I 4 credits
   Thomas Edison State University: MAT 2310 Calculus I
   Excelsior: MAT 220 Calculus I
+  No Touchstones
 College Algebra 3 credits
   Thomas Edison State University: MAT 1210 College Algebra
   Excelsior: MAT 114 Intermediate Algebra
-Foundations of College Algebra (no longer offered) 0 credits
-  Thomas Edison State University
-  Excelsior: Natural Science/Math Elective
+  No Touchstones
 Foundation of Statistics 2 credits
   Thomas Edison State University
   Excelsior
+  No Touchstones
 Introduction to College Mathematics 3 credits
   Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   Excelsior: MAT 101 Math for Everyday Life
