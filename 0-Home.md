@@ -14,5 +14,9 @@ date +"%F" - prints the date in the format YYYY-MM-DD
 [Journals](journals/journals.md)
 [Markdown](./markdown.md)
 [Education](./education/education.md)
+  [Sophia.org](./education/sophiaorg.md)
+  [Study.com](./education/studycom.md)
+  [Pierpont Community & Technical College](./education/pierpontCnTC.md)
+  [Excelsior](./education/excelsior.md)
 
 [Hyperpolyglot](https://hyperpolyglot.org)
