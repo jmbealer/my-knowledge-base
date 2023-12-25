@@ -47,7 +47,7 @@ Introduction to Human Biology
 Environmental Science
   No Touchstones
 
-### Computer Literacy: 3 credits
+### Computer Literacy: 3 credits DONE
 
 OFAD 1150 - Computer Concepts and Applications 3 hr(s).
 
@@ -78,7 +78,7 @@ US History II
 Area of Emphasis:
 
 Information Systems
-  Google Data Analytics Certificate - Coursea 12
+  Google Data Analytics Certificate - Coursea 12 DONE
   Google IT Support Professional Certificate - Coursea 12 DONE
   Google UX Design Certificate - Coursea 10
   IBM Cybersecurity Analyst Professional Certificate - Coursea 10
