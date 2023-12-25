@@ -5,7 +5,7 @@
 
 Board of Governors A.A.S. (60 Hrs)
 
-## Component I - General Education need 15 credits - 6 credits DONE
+## Component I - General Education need 15 credits - 9 credits DONE
 
 ### Communications: 3 credits DONE
 
@@ -27,7 +27,7 @@ Public Speaking
 Foundations Of English Composition 3
   2 Touchstones
 
-### Mathematics and/or Sciences: 6 credits
+### Mathematics and/or Sciences: 6 credits 3 credits Done
 
 ~BIOY 1101 - General Biology 4 hr(s).~
 BIOY 1170 - Human Anatomy and Physiology 3 hr(s).
@@ -45,7 +45,7 @@ Introduction to Statistics 3
 
 Introduction to Human Biology
   No Touchstones
-Environmental Science
+Environmental Science 3 DONE
   No Touchstones
 
 ### Computer Literacy: 3 credits DONE
