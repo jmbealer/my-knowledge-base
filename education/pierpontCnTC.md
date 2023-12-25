@@ -4,9 +4,9 @@
 
 Board of Governors A.A.S. (60 Hrs)
 
-## Component I - General Education (15 Hrs)
+## Component I - General Education need 15 credits - 6 credits DONE
 
-### Communications: 3 credits
+### Communications: 3 credits DONE
 
 ~ENGL 1104 - Written English I 3-4 hr(s). (“C” or higher required for graduation)~
 ~ENGL 1108 - Written English II 3 hr(s). (“C” or higher required for graduation)~
@@ -15,7 +15,7 @@ COM 2200 - Introduction to Human Communications 3 hr(s).
 
 Communication at Work 3
   2 Touchstones
-Visual Communication 3
+Visual Communication 3 DONE
   No Touchstones
 
 Workplace Communications

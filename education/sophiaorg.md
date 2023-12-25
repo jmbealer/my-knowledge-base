@@ -132,7 +132,7 @@ Public Speaking 3 credits
   Thomas Edison State University: COM 2090 Public Speaking
   Excelsior: COMM 125 Public Speaking
   4 Touchstones
-Visual Communications 3 credits
+Visual Communications 3 credits DONE
   Thomas Edison State University
   Excelsior: Free Elective
   No Touchstones
