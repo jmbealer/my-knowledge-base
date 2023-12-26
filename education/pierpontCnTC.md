@@ -74,6 +74,14 @@ Psychology or Sociology 3
 US History II
   1 Touchstones
 
+Going to try:
+Lifespan Development 3 credits
+  skip
+  No Touchstones
+Microeconomics 3 credits
+Macroeconomics 3 credits
+  Suggested order: 1.) Microeconomics 2.) Macroeconomics
+
 ## Component II - General Electives (45 Hrs)
 
 Area of Emphasis:
