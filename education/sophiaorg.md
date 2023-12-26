@@ -217,7 +217,7 @@ Anatomy and Physiology I 3 credits
 Anatomy and Physiology I Lab 1 credits
   skip
   2 Touchstones
-Environmental Science 3 credits
+Environmental Science 3 credits DONE
   Thomas Edison State University
   Excelsior: Natural Science Elective
   No Touchstones
