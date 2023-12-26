@@ -20,3 +20,6 @@ date +"%F" - prints the date in the format YYYY-MM-DD
   [Excelsior](./education/excelsior.md)
 
 [Hyperpolyglot](https://hyperpolyglot.org)
+
+what are soft skills?
+what are hard skills?
