@@ -256,7 +256,7 @@ Introduction to Sociology: Embracing Diversity and Collaboration 3 credits
   Excelsior: SOC 101 Introduction to Sociology
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
   2 Touchstones
-Lifespan Development 3 credits
+Lifespan Development 3 credits DONE
   skip
   No Touchstones
 Macroeconomics 3 credits
@@ -264,7 +264,7 @@ Macroeconomics 3 credits
   Excelsior: ECO 262 Macroeconomics
   Suggested order: 1.) Microeconomics 2.) Macroeconomics
   No Touchstones
-Microeconomics 3 credits
+Microeconomics 3 credits DONE
   Thomas Edison State University
   Excelsior: EC2 260 Microeconomics
   Suggested order: 1.) Microeconomics 2.) Macroeconomics

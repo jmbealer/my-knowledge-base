@@ -5,7 +5,7 @@
 
 Board of Governors A.A.S. (60 Hrs)
 
-## Component I - General Education need 15 credits - 9 credits DONE
+## Component I - General Education need 15 credits - 9 credits DONE - Maybe 3 credits
 
 ### Communications: 3 credits DONE
 
@@ -55,7 +55,7 @@ OFAD 1150 - Computer Concepts and Applications 3 hr(s).
 Introduction to Information Technology 3 DONE
   No Touchstones
 
-### Social Sciences: 3 credits
+### Social Sciences: 3 credits Maybe 3 credits DONE
 
 ECON 2201 - Economic Principles and Problems I 3 hr(s).
 ~HST 1101 - United States History I 3 hr(s).~
