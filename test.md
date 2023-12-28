@@ -2,4 +2,3 @@ tiesta sinsat
 
 tista
 
-pteast
