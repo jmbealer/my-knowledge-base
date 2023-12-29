@@ -172,16 +172,16 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 ## Languages
 
 * French I 3 credits
-  skip
-  5 Touchstones
+  * skip
+  * **5** Touchstones
 * Spanish I 3 credits
-  skip
-    Excelsior: Lower Level Humanities Credit
-  5 Touchstones
+  * skip
+    * Excelsior: Lower Level Humanities Credit
+  * **5** Touchstones
 * Spanish II 3 credits
-  skip
-    Excelsior: Lower Level Humanities Credit
-  5 Touchstones
+  * skip
+    * Excelsior: Lower Level Humanities Credit
+  * **5** Touchstones
 
 ## Math
 
