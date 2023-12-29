@@ -22,15 +22,15 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University
   * Excelsior: ACC 211 Financial Accounting
   * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
-  * No Touchstones
+  * **No** Touchstones
 * Introduction to Business 3 credits
   * Thomas Edison State University
   * Excelsior: Free Elective
   * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
-  * No Touchstones
+  * **No** Touchstones
 * Managerial Accounting 3 credits
   * skip
-  * No Touchstones
+  * **No** Touchstones
 * Personal Finance 3 credits
   * Thomas Edison State University
   * Excelsior: Applied Professional/Free Elective
@@ -40,7 +40,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: BUS 350 Principles of Finance
   * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
   * It may be a good idea to wait until after taking the Micro/Macro economics courses as well.
-  * No Touchstones
+  * **No** Touchstones
 * Principles of Management 3 credits
   * Thomas Edison State University
   * Excelsior: BUS 341 Management Concepts and Applications
@@ -49,7 +49,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University
   * Excelsior: Free Elective
   * Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  * No Touchstones
+  * **No** Touchstones
 
 ## Career Success
 * Career Readiness 3 credits
@@ -62,12 +62,12 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   Thomas Edison State University
   Excelsior: COMM 324 Conflict Management
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  No Touchstones
+  **No** Touchstones
 * Developing Effective Teams 1 credits
   Thomas Edison State University
   Excelsior: Humanities Elective
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  No Touchstones
+  **No** Touchstones
 * IT Career Exploration 1 credits
   Excelsior: Applied Professional/Free Elective
 * Introduction to Career Readiness 1 credits
@@ -78,7 +78,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     Thomas Edison State University
     Excelsior
   Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  No Touchstones
+  **No** Touchstones
 * Preparing for the Future of Work 3 credits
   Thomas Edison State University
   did not find
@@ -93,7 +93,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Introduction to Information Technology 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: IT 221 Introduction to Computers
-  * No Touchstones
+  * **No** Touchstones
 * Introduction to Java Programming 3 credits
   * Thomas Edison State University
   * Excelsior: Technology Elective
@@ -109,10 +109,10 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University
   * Excelsior: Free Elective
   * not good: Do Computer Science 303: Database Management instead
-  * No Touchstones
+  * **No** Touchstones
 * Introduction to Web Development 3 credits **DONE**
   * Excelsior: Free Elective
-  * No Touchstones
+  * **No** Touchstones
 
 ## English and Communications
 
@@ -135,7 +135,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Visual Communications 3 credits **DONE**
   Thomas Edison State University
   Excelsior: Free Elective
-  No Touchstones
+  **No** Touchstones
 * Workplace Communication 3 credits
   Thomas Edison State University
   Excelsior: Lower Level Humanities Credit
@@ -154,11 +154,11 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Art History I 3 credits **DONE**
   Thomas Edison State University
   Excelsior: ART 101 History of West Art: Ancient through 14th Century
-  No Touchstones
+  **No** Touchstones
 * Art History II 3 credits **DONE**
   Thomas Edison State University
   Excelsior: ART 102 Since the 15th Century
-  No Touchstones
+  **No** Touchstones
 * Critical Thinking 3 credits
   skip
   1 Touchstones
@@ -167,7 +167,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   Excelsior: Ethics Requirement
   Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
   Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
-  No Touchstones
+  **No** Touchstones
 
 ## Languages
 
@@ -188,65 +188,67 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Calculus I 4 credits
   Thomas Edison State University: MAT 2310 Calculus I
   Excelsior: MAT 220 Calculus I
-  No Touchstones
+  **No** Touchstones
 * College Algebra 3 credits
   Thomas Edison State University: MAT 1210 College Algebra
   Excelsior: MAT 114 Intermediate Algebra
-  No Touchstones
+  **No** Touchstones
 * Foundation of Statistics 2 credits
   Thomas Edison State University
   Excelsior
-  No Touchstones
+  **No** Touchstones
 * Introduction to College Mathematics 3 credits TODO
   Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   Excelsior: MAT 101 Math for Everyday Life
-  No Touchstones
+  **No** Touchstones
 * Introduction to Statistics 3 credits
   Thomas Edison State University: ST0 2010 Principles of Statistics
   Excelsior: MAT 201 Statistics
-  No Touchstones
+  **No** Touchstones
 * Precalculus 3 credits
   maybe skip
   Excelsior: Math Requirement
-  No Touchstones
+  **No** Touchstones
 
 ## Science
 
 * Anatomy and Physiology I 3 credits
-  skip
-  No Touchstones
+  * skip
+  * **No** Touchstones
 * Anatomy and Physiology I Lab 1 credits
-  skip
-  2 Touchstones
+  * skip
+  * **2** Touchstones
 * Environmental Science 3 credits **DONE**
-  Thomas Edison State University
-  Excelsior: Natural Science Elective
-  No Touchstones
+  * Thomas Edison State University
+  * Excelsior: Natural Science Elective
+  * **No** Touchstones
 * Human Biology 3 credits
-  Thomas Edison State University
-  Excelsior: BIO 105 Anatomy & Physiology I
-  No Touchstones
+  * Thomas Edison State University
+  * Excelsior: BIO 105 Anatomy & Physiology I
+  * **No** Touchstones
 * Human Biology Lab 1 credits
-  skip
-  2 Touchstones
+  * skip
+  * **2** Touchstones
 * Introduction to Chemistry 3 credits
-  Thomas Edison State University
-  Excelsior: CHE 101 General Chemistry
-  No Touchstones
+  * Thomas Edison State University
+  * Excelsior: CHE 101 General Chemistry
+  * **No** Touchstones
 * Introduction to Chemistry Lab 1 credits
-  skip
-  2 Touchstones
+  * skip
+  * **2** Touchstones
 * Introduction to Nutrition 3 credits
-  Thomas Edison State University
-  Excelsior: Natural Science Elective
-  No Touchstones
+  * Thomas Edison State University
+  * Excelsior: Natural Science Elective
+  * **No** Touchstones
 * Microbiology 3 credits
-  skip
-  No Touchstones
+  * skip
+  * **No** Touchstones
 * Microbiology Lab 1 credits
-  skip
-  2 Touchstones
+  * skip
+  * **2** Touchstones
+
 ## Social Science
+
 * Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   * Thomas Edison State University
   * Excelsior: PSY 101 Introduction to Psychology
