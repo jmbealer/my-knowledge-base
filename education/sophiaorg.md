@@ -117,29 +117,29 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 ## English and Communications
 
 * English Composition I 3 credits
-  Thomas Edison State University: ENC 1010 Writing for Success
-  Excelsior: ENG 101 English Composition I
-  5 Touchstones
+  * Thomas Edison State University: ENC 1010 Writing for Success
+  * Excelsior: ENG 101 English Composition I
+  * **5** Touchstones
 * English Composition II 3 credits
-  Thomas Edison State University: ENC 1020 English Composition II
-  Excelsior: ENG 102 English Composition II (not applicable for BUS or TECH degrees)
-  7 Touchstones
+  * Thomas Edison State University: ENC 1020 English Composition II
+  * Excelsior: ENG 102 English Composition II (not applicable for BUS or TECH degrees)
+  * **7** Touchstones
 * Foundations of English Composition 3 credits
-  Thomas Edison State University
-  Excelsior
-  2 Touchstones
+  * Thomas Edison State University
+  * Excelsior
+  * **2** Touchstones
 * Public Speaking 3 credits
-  Thomas Edison State University: COM 2090 Public Speaking
-  Excelsior: COMM 125 Public Speaking
-  4 Touchstones
+  * Thomas Edison State University: COM 2090 Public Speaking
+  * Excelsior: COMM 125 Public Speaking
+  * **4** Touchstones
 * Visual Communications 3 credits **DONE**
-  Thomas Edison State University
-  Excelsior: Free Elective
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: Free Elective
+  * **No** Touchstones
 * Workplace Communication 3 credits
-  Thomas Edison State University
-  Excelsior: Lower Level Humanities Credit
-  2 Touchstones
+  * Thomas Edison State University
+  * Excelsior: Lower Level Humanities Credit
+  * **2** Touchstones
 
 ## Humanities
 
@@ -165,7 +165,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Critical Thinking 3 credits
   * skip
   * **1** Touchstones
-* Introduction to Ethics 3 credits
+* Introduction to Ethics 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: Ethics Requirement
   * Suggested order:
