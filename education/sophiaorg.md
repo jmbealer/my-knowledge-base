@@ -90,6 +90,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   6 Touchstones
 
 ## Computer Science and IT
+
 * Introduction to Information Technology 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: IT 221 Introduction to Computers
@@ -97,14 +98,14 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Introduction to Java Programming 3 credits
   * Thomas Edison State University
   * Excelsior: Technology Elective
-  * 1 Touchstones
+  * **1** Touchstones
 * Introduction to Networking 3 credits
   * Thomas Edison State University
-  * 1 Touchstones
+  * **1** Touchstones
 * Introduction to Programming in Python 3 credits
   * Thomas Edison State University
   * Excelsior: Free Elective
-  * 1 Touchstones
+  * **1** Touchstones
 * Introduction to Relational Databases 3 credits
   * Thomas Edison State University
   * Excelsior: Free Elective
