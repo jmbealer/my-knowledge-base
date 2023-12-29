@@ -186,29 +186,29 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 ## Math
 
 * Calculus I 4 credits
-  Thomas Edison State University: MAT 2310 Calculus I
-  Excelsior: MAT 220 Calculus I
-  **No** Touchstones
+  * Thomas Edison State University: MAT 2310 Calculus I
+  * Excelsior: MAT 220 Calculus I
+  * **No** Touchstones
 * College Algebra 3 credits
-  Thomas Edison State University: MAT 1210 College Algebra
-  Excelsior: MAT 114 Intermediate Algebra
-  **No** Touchstones
+  * Thomas Edison State University: MAT 1210 College Algebra
+  * Excelsior: MAT 114 Intermediate Algebra
+  * **No** Touchstones
 * Foundation of Statistics 2 credits
-  Thomas Edison State University
-  Excelsior
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior
+  * **No** Touchstones
 * Introduction to College Mathematics 3 credits TODO
-  Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
-  Excelsior: MAT 101 Math for Everyday Life
-  **No** Touchstones
+  * Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
+  * Excelsior: MAT 101 Math for Everyday Life
+  * **No** Touchstones
 * Introduction to Statistics 3 credits
-  Thomas Edison State University: ST0 2010 Principles of Statistics
-  Excelsior: MAT 201 Statistics
-  **No** Touchstones
+  * Thomas Edison State University: ST0 2010 Principles of Statistics
+  * Excelsior: MAT 201 Statistics
+  * **No** Touchstones
 * Precalculus 3 credits
-  maybe skip
-  Excelsior: Math Requirement
-  **No** Touchstones
+  * maybe skip
+  * Excelsior: Math Requirement
+  * **No** Touchstones
 
 ## Science
 
