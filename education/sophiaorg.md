@@ -10,23 +10,29 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Business Communication 3 credits
   * Thomas Edison State University
   * Excelsior
-  * 4 Touchstones
+  * **4** Touchstones
 * Business Ethics 3 credits
   * skip
-  * 2 Touchstones
+  * **2** Touchstones
 * Business Law 3 credits
   * Thomas Edison State University
   * Excelsior: BUS 230 Business Law
-  * 1 Touchstones
+  * **1** Touchstones
 * Financial Accounting 3 credits
   * Thomas Edison State University
   * Excelsior: ACC 211 Financial Accounting
-  * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
+  * Suggested order:
+    1. Introduction to Business
+    1. Accounting
+    1. Principles of Finance
   * **No** Touchstones
 * Introduction to Business 3 credits
   * Thomas Edison State University
   * Excelsior: Free Elective
-  * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
+  * Suggested order:
+    1. Introduction to Business
+    1. Accounting
+    1. Principles of Finance
   * **No** Touchstones
 * Managerial Accounting 3 credits
   * skip
@@ -34,21 +40,27 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
 * Personal Finance 3 credits
   * Thomas Edison State University
   * Excelsior: Applied Professional/Free Elective
-  * 2 Touchstones
+  * **2** Touchstones
 * Principles of Finance 3 credits
   * Thomas Edison State University
   * Excelsior: BUS 350 Principles of Finance
-  * Suggested order: 1.) Introduction to Business 2.) Accounting 3.) Principles of Finance.
-  * It may be a good idea to wait until after taking the Micro/Macro economics courses as well.
+  * Suggested order:
+    1. Introduction to Business
+    1. Accounting
+    1. Principles of Finance
   * **No** Touchstones
 * Principles of Management 3 credits
   * Thomas Edison State University
   * Excelsior: BUS 341 Management Concepts and Applications
-  * 1 Touchstones
+  * **1** Touchstones
 * Project Management 3 credits
   * Thomas Edison State University
   * Excelsior: Free Elective
-  * Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
+  * Suggested order:
+    1. The Essentials of Managing Conflict
+    1. Conflict Resolution
+    1. Developing Effective Teams
+    1. Project Management
   * **No** Touchstones
 
 ## Career Success
