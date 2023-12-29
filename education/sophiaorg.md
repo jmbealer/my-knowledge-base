@@ -142,32 +142,40 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   2 Touchstones
 
 ## Humanities
+
 * Ancient Greek Philosophers 3 credits
-  Thomas Edison State University
-  Excelsior: PHIL 20 Introduction to Philosophy
-  Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
-  2 Touchstones
+  * Thomas Edison State University
+  * Excelsior: PHIL 20 Introduction to Philosophy
+  * Suggested order:
+    1. Ancient Greek Philosophers
+    1. Introduction to Ethics
+  * **2** Touchstones
 * Approaches to Studying Religions 3 credits
-  Thomas Edison State University
-  Excelsior: Humanities Elective
-  3 Touchstones
+  * Thomas Edison State University
+  * Excelsior: Humanities Elective
+  * **3** Touchstones
 * Art History I 3 credits **DONE**
-  Thomas Edison State University
-  Excelsior: ART 101 History of West Art: Ancient through 14th Century
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: ART 101 History of West Art: Ancient through 14th Century
+  * **No** Touchstones
 * Art History II 3 credits **DONE**
-  Thomas Edison State University
-  Excelsior: ART 102 Since the 15th Century
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: ART 102 Since the 15th Century
+  * **No** Touchstones
 * Critical Thinking 3 credits
-  skip
-  1 Touchstones
+  * skip
+  * **1** Touchstones
 * Introduction to Ethics 3 credits
-  Thomas Edison State University
-  Excelsior: Ethics Requirement
-  Suggested order: 1.) Ancient Greek Philosophers 2.) Introduction to Ethics
-  Overlap with Introduction to Ethics, Introduction to Psychology and  Introduction to Sociology
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: Ethics Requirement
+  * Suggested order:
+    1. Ancient Greek Philosophers
+    1. Introduction to Ethics
+  * Overlap with:
+    1. Introduction to Ethics
+    1. Introduction to Psychology
+    1. Introduction to Sociology
+  * **No** Touchstones
 
 ## Languages
 
@@ -201,7 +209,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   * Excelsior: MAT 101 Math for Everyday Life
   * **No** Touchstones
-* Introduction to Statistics 3 credits
+* Introduction to Statistics 3 credits **DONE**
   * Thomas Edison State University: ST0 2010 Principles of Statistics
   * Excelsior: MAT 201 Statistics
   * **No** Touchstones
