@@ -52,42 +52,53 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * **No** Touchstones
 
 ## Career Success
+
 * Career Readiness 3 credits
-  Excelsior: Lower Level Applied Professional/Free Elective
-  3 Touchstones
+  * Excelsior: Lower Level Applied Professional/Free Elective
+  * **3** Touchstones
 * College Readiness 3 credits
-  Thomas Edison State University
-  1 Touchstones
+  * Thomas Edison State University
+  * **1** Touchstones
 * Conflict Resolution 3 credits
-  Thomas Edison State University
-  Excelsior: COMM 324 Conflict Management
-  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: COMM 324 Conflict Management
+  * Suggested order:
+    1. The Essentials of Managing Conflict
+    1. Conflict Resolution
+    1. Developing Effective Teams
+    1. Project Management
+  * **No** Touchstones
 * Developing Effective Teams 1 credits
-  Thomas Edison State University
-  Excelsior: Humanities Elective
-  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  **No** Touchstones
+  * Thomas Edison State University
+  * Excelsior: Humanities Elective
+  * Suggested order:
+    1. The Essentials of Managing Conflict
+    1. Conflict Resolution
+    1. Developing Effective Teams
+    1. Project Management
+  * **No** Touchstones
 * IT Career Exploration 1 credits
-  Excelsior: Applied Professional/Free Elective
+  * Excelsior: Applied Professional/Free Elective
+  * **2** Touchstones
 * Introduction to Career Readiness 1 credits
-  skip
-  2 Touchstones
+  * skip
+  * **2** Touchstones
 * The Essentials of Managing Conflict 1 credits
-  skip
-    Thomas Edison State University
-    Excelsior
-  Suggested order: 1.) The Essentials of Managing Conflict 2.) Conflict Resolution 3.) Developing Effective Teams 4.) Project Management
-  **No** Touchstones
-* Preparing for the Future of Work 3 credits
-  Thomas Edison State University
-  did not find
+  * skip
+    * Thomas Edison State University
+    * Excelsior
+  * Suggested order:
+    1. The Essentials of Managing Conflict
+    1. Conflict Resolution
+    1. Developing Effective Teams
+    1. Project Management
+  * **No** Touchstones
 * Workplace Writing I 3 credits
-  skip
-  5 Touchstones
+  * skip
+  * **5** Touchstones
 * Workplace Writing II 3 credits
-  skip
-  6 Touchstones
+  * skip
+  * **6** Touchstones
 
 ## Computer Science and IT
 
