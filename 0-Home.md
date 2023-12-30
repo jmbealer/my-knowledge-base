@@ -23,3 +23,5 @@ date +"%F" - prints the date in the format YYYY-MM-DD
 
 what are soft skills?
 what are hard skills?
+
+who what where when why how
