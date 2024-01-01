@@ -1,4 +1,3 @@
 test 
 tiesta sinsat
 
-tsetsi
