@@ -165,7 +165,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: Lower Level Humanities Credit
   * **2** Touchstones
 
-## Humanities 18 credits
+## Humanities - Total of 18 credits - 9 credits DONE
 
 * Ancient Greek Philosophers 3 credits
   * Thomas Edison State University
@@ -201,7 +201,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Introduction to Sociology
   * **No** Touchstones
 
-## Languages 9 credits
+## Languages - Total of 9 credits
 
 * French I 3 credits
   * skip
