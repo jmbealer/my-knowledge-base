@@ -112,7 +112,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * skip
   * **6** Touchstones
 
-## Computer Science and IT 18 cridits
+## Computer Science and IT - Total of 18 credits - 6 credits DONE
 
 * Introduction to Information Technology 3 credits **DONE**
   * Thomas Edison State University
@@ -138,7 +138,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: Free Elective
   * **No** Touchstones
 
-## English and Communications 18 credits
+## English and Communications - Total of 18 credits - 3 credits DONE
 
 * English Composition I 3 credits
   * Thomas Edison State University: ENC 1010 Writing for Success
