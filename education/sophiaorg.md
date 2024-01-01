@@ -5,7 +5,7 @@
 
 Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State University**.
 
-## Business
+## Business - Total of 30 credits
 
 * Business Communication 3 credits
   * Thomas Edison State University
@@ -63,7 +63,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Project Management
   * **No** Touchstones
 
-## Career Success
+## Career Success 19 credits
 
 * Career Readiness 3 credits
   * Excelsior: Lower Level Applied Professional/Free Elective
@@ -112,7 +112,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * skip
   * **6** Touchstones
 
-## Computer Science and IT
+## Computer Science and IT 18 cridits
 
 * Introduction to Information Technology 3 credits **DONE**
   * Thomas Edison State University
@@ -138,7 +138,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: Free Elective
   * **No** Touchstones
 
-## English and Communications
+## English and Communications 18 credits
 
 * English Composition I 3 credits
   * Thomas Edison State University: ENC 1010 Writing for Success
@@ -165,7 +165,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: Lower Level Humanities Credit
   * **2** Touchstones
 
-## Humanities
+## Humanities 18 credits
 
 * Ancient Greek Philosophers 3 credits
   * Thomas Edison State University
@@ -201,7 +201,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Introduction to Sociology
   * **No** Touchstones
 
-## Languages
+## Languages 9 credits
 
 * French I 3 credits
   * skip
@@ -215,7 +215,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     * Excelsior: Lower Level Humanities Credit
   * **5** Touchstones
 
-## Math
+## Math - Total of 18 credits - 3 credits DONE
 
 * Calculus I 4 credits
   * Thomas Edison State University: MAT 2310 Calculus I
@@ -242,7 +242,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Excelsior: Math Requirement
   * **No** Touchstones
 
-## Science
+## Science - Total of 22 credits - 3 credits DONE
 
 * Anatomy and Physiology I 3 credits
   * skip
@@ -279,7 +279,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * skip
   * **2** Touchstones
 
-## Social Science
+## Social Science - Total of 27 credits - 9 credits DONE
 
 * Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   * Thomas Edison State University
