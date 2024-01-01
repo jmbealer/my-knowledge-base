@@ -63,7 +63,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Project Management
   * **No** Touchstones
 
-## Career Success 19 credits
+## Career Success - Total of 19 credits
 
 * Career Readiness 3 credits
   * Excelsior: Lower Level Applied Professional/Free Elective
