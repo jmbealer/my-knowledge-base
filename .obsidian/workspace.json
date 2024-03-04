@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2023-12-15.md",
+                "file": "test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1737f0fa1b2e0f1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-03-04.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2023-12-15.md",
+                "file": "journals/2024-03-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2023-12-15.md",
+                "file": "journals/2024-03-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2023-12-15.md"
+                "file": "journals/2024-03-04.md"
               }
             }
           },
@@ -133,8 +146,12 @@
             "id": "5adcfe9392f143d3",
             "type": "leaf",
             "state": {
-              "type": "calendar",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-02-26.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -143,12 +160,22 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
+            }
+          },
+          {
+            "id": "f24677b642e6bcc2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -162,13 +189,23 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "968383a54fbd9f94",
+  "active": "1737f0fa1b2e0f1a",
   "lastOpenFiles": [
-    "journals/2023-12-14.md",
+    "journals/2024-02-28.md",
+    "journals/2024-03-04.md",
+    "journals/2024-02-26.md",
+    "clang-idioms.md",
+    "README.md",
+    "test.md",
+    "Vault/Welcome.md",
+    "Vault",
+    "journals/2024-02-25.md",
     "journals/2023-12-15.md",
+    "journals/2023-12-14.md",
     "journals/2023-12-13.md",
     "journals/2023-12-12.md",
     "journals/2023-12-11.md",
@@ -187,12 +224,8 @@
     "General Education Requirements (45 Credits).md",
     "pages/Thomas Edison State University.md",
     "General Education for TESU.md",
-    "logseq/bak/pages/Thomas Edison State University/2023-11-27T00_55_46.017Z.Desktop.md",
-    "logseq/bak/pages/Thomas Edison State University/2023-11-27T00_44_02.465Z.Desktop.md",
-    "logseq/bak/pages/Thomas Edison State University/2023-11-27T00_19_52.545Z.Desktop.md",
     "logseq/bak/pages/Thomas Edison State University",
     "logseq/bak/pages",
-    "2023-11-26.md",
     "Untitled.canvas"
   ]
 }
