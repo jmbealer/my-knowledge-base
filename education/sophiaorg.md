@@ -225,15 +225,15 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University: MAT 1210 College Algebra
   * Excelsior: MAT 114 Intermediate Algebra
   * **No** Touchstones
-* Foundation of Statistics 2 credits
+* Foundation of Statistics 2 credits **DONE**
   * Thomas Edison State University
   * Excelsior
   * **No** Touchstones
-* Introduction to College Mathematics 3 credits TODO
+* Introduction to College Mathematics 3 credits **DONE**
   * Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   * Excelsior: MAT 101 Math for Everyday Life
   * **No** Touchstones
-* Introduction to Statistics 3 credits **DONE**
+* Introduction to Statistics 3 credits **TODO**
   * Thomas Edison State University: ST0 2010 Principles of Statistics
   * Excelsior: MAT 201 Statistics
   * **No** Touchstones

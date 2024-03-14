@@ -21,6 +21,8 @@ Game Plan:
 
 ## Thomas Edison State University
 
+Only 2 degrees: either associate, baccaluaureate, or master
+
   BA in Computer Science
   BA in Mathematics
 
@@ -41,6 +43,46 @@ Game Plan:
   MS in Information Technology
 
 ## Western Governors University
+
+Technology
+
+Information Technology Bachelor's Degrees
+
+Cybersecurity and Information Assurance - B.S.
+Information Technology - B.S.
+  Accelerated Information Technology Bachelor's and Master's Degree
+
+Computer Science - B.S.
+Cloud Computing - B.S.
+Network Engineering and Security - B.S.
+Data Analytics - B.S.
+Software Engineering - B.S.
+IT Management - B.S. Business Administration
+
+Information Technology Master's Degrees
+Cybersecurity & Information Assurance - M.S.
+Information Technology Management - M.S.
+Data Analytics - M.S.
+MBA Information Technology Management
+
+Information Technology Certificates
+Web Application Deployment and Support Certificate - School of Technology
+Front End Web Development Certificate - School of Technology
+Back End Web Development Certificate - School of Technology
+
+Business
+
+Business Bachelor's Degrees
+Business Management - B.S. Business Administration
+IT Management - B.S. Business Administration
+Accounting  - B.S. Business Administration
+Finance  - B.S. Business Administration
+
+Business Master's Degrees
+Master of Business Administration
+MBA Information Technology Management
+Management and Leadership - M.S.
+Accounting - M.S.
 
 ## University of Maine at Presque Isle
 
