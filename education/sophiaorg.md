@@ -5,7 +5,7 @@
 
 Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State University**.
 
-## Business - Total of 30 credits
+## Business - Total of 30 credits - 3 credits DONE
 
 * Business Communication 3 credits
   * Thomas Edison State University
@@ -34,7 +34,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Accounting
     1. Principles of Finance
   * **No** Touchstones
-* Managerial Accounting 3 credits
+* Managerial Accounting 3 credits **DONE**
   * skip
   * **No** Touchstones
 * Personal Finance 3 credits
