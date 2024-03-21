@@ -4210,6 +4210,9 @@ var require_sax = __commonJS({
         Stream = function() {
         };
       }
+      if (!Stream)
+        Stream = function() {
+        };
       var streamWraps = sax.EVENTS.filter(function(ev) {
         return ev !== "error" && ev !== "end";
       });
@@ -5371,9 +5374,16 @@ var require_sax = __commonJS({
                   break;
               }
               if (c === ";") {
-                parser[buffer] += parseEntity(parser);
-                parser.entity = "";
-                parser.state = returnState;
+                if (parser.opt.unparsedEntities) {
+                  var parsedEntity = parseEntity(parser);
+                  parser.entity = "";
+                  parser.state = returnState;
+                  parser.write(parsedEntity);
+                } else {
+                  parser[buffer] += parseEntity(parser);
+                  parser.entity = "";
+                  parser.state = returnState;
+                }
               } else if (isMatch(parser.entity.length ? entityBody : entityStart, c)) {
                 parser.entity += c;
               } else {
@@ -5383,8 +5393,9 @@ var require_sax = __commonJS({
                 parser.state = returnState;
               }
               continue;
-            default:
+            default: {
               throw new Error(parser, "Unknown state: " + parser.state);
+            }
           }
         }
         if (parser.position >= parser.bufferCheckPosition) {
@@ -5637,7 +5648,7 @@ var require_parser = __commonJS({
           this.saxParser.onopentag = function(_this) {
             return function(node) {
               var key, newValue, obj, processedKey, ref;
-              obj = {};
+              obj = Object.create(null);
               obj[charkey] = "";
               if (!_this.options.ignoreAttrs) {
                 ref = node.attributes;
@@ -5645,7 +5656,7 @@ var require_parser = __commonJS({
                   if (!hasProp.call(ref, key))
                     continue;
                   if (!(attrkey in obj) && !_this.options.mergeAttrs) {
-                    obj[attrkey] = {};
+                    obj[attrkey] = Object.create(null);
                   }
                   newValue = _this.options.attrValueProcessors ? processItem(_this.options.attrValueProcessors, node.attributes[key], key) : node.attributes[key];
                   processedKey = _this.options.attrNameProcessors ? processItem(_this.options.attrNameProcessors, key) : key;
@@ -5695,7 +5706,11 @@ var require_parser = __commonJS({
                 }
               }
               if (isEmpty(obj)) {
-                obj = _this.options.emptyTag !== "" ? _this.options.emptyTag : emptyStr;
+                if (typeof _this.options.emptyTag === "function") {
+                  obj = _this.options.emptyTag();
+                } else {
+                  obj = _this.options.emptyTag !== "" ? _this.options.emptyTag : emptyStr;
+                }
               }
               if (_this.options.validator != null) {
                 xpath = "/" + function() {
@@ -5719,7 +5734,7 @@ var require_parser = __commonJS({
               }
               if (_this.options.explicitChildren && !_this.options.mergeAttrs && typeof obj === "object") {
                 if (!_this.options.preserveChildrenOrder) {
-                  node = {};
+                  node = Object.create(null);
                   if (_this.options.attrkey in obj) {
                     node[_this.options.attrkey] = obj[_this.options.attrkey];
                     delete obj[_this.options.attrkey];
@@ -5734,7 +5749,7 @@ var require_parser = __commonJS({
                   obj = node;
                 } else if (s) {
                   s[_this.options.childkey] = s[_this.options.childkey] || [];
-                  objClone = {};
+                  objClone = Object.create(null);
                   for (key in obj) {
                     if (!hasProp.call(obj, key))
                       continue;
@@ -5752,7 +5767,7 @@ var require_parser = __commonJS({
               } else {
                 if (_this.options.explicitRoot) {
                   old = obj;
-                  obj = {};
+                  obj = Object.create(null);
                   obj[nodeName] = old;
                 }
                 _this.resultObject = obj;
@@ -5979,7 +5994,8 @@ var require_fields = __commonJS({
       "episode",
       "image",
       "season",
-      "keywords"
+      "keywords",
+      "episodeType"
     ].map(mapItunesField);
   }
 });
@@ -6574,6 +6590,9 @@ var require_parser2 = __commonJS({
           if (item.guid._)
             item.guid = item.guid._;
         }
+        if (xmlItem.$ && xmlItem.$["rdf:about"]) {
+          item["rdf:about"] = xmlItem.$["rdf:about"];
+        }
         if (xmlItem.category)
           item.categories = xmlItem.category;
         this.setISODate(item);
@@ -6604,8 +6623,10 @@ var require_parser2 = __commonJS({
         if (channel["itunes:category"]) {
           const categoriesWithSubs = channel["itunes:category"].map((category) => {
             return {
-              name: category.$.text,
-              subs: category["itunes:category"] ? category["itunes:category"].map((subcategory) => ({ name: subcategory.$.text })) : null
+              name: category && category.$ && category.$.text,
+              subs: category["itunes:category"] ? category["itunes:category"].map((subcategory) => ({
+                name: subcategory && subcategory.$ && subcategory.$.text
+              })) : null
             };
           });
           feed.itunes.categories = categoriesWithSubs.map((category) => category.name);
@@ -6613,7 +6634,7 @@ var require_parser2 = __commonJS({
         }
         if (channel["itunes:keywords"]) {
           if (channel["itunes:keywords"].length > 1) {
-            feed.itunes.keywords = channel["itunes:keywords"].map((keyword) => keyword.$.text);
+            feed.itunes.keywords = channel["itunes:keywords"].map((keyword) => keyword && keyword.$ && keyword.$.text);
           } else {
             let keywords = channel["itunes:keywords"][0];
             if (keywords && typeof keywords._ === "string") {
@@ -10705,7 +10726,8 @@ var Body = class {
     this.book = book;
   }
   getBody() {
-    return Mustache.render(this.currentBody, this.book);
+    const render = Mustache.render(this.currentBody, this.book);
+    return render.replaceAll("&#x2F;", "/");
   }
 };
 
@@ -10760,6 +10782,7 @@ var Book = class {
     this.datePublished = this.parseDate(book.book_published);
     this.cover = book.image_url;
     this.shelves = this.getShelves(book.user_shelves, this.dateRead);
+    this.bookPage = `https://www.goodreads.com/book/show/${this.id}`;
   }
   getTitle() {
     return this.title;
@@ -11000,7 +11023,7 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
         text: "You can add custom frontmatter to your books. Please use the dropdown to choose the frontmatter you'd like to add."
       });
     }
-    new import_obsidian2.Setting(containerEl).setName("Available Fields").addDropdown((dropdown) => dropdown.addOption("", `${this.getSelectedCount()}`).addOption("id", `${this.getDisplay("id")}`).addOption("author", `${this.getDisplay("author")}`).addOption("title", `${this.getDisplay("title", "title (formatted for filenames/links)")}`).addOption("fullTitle", `${this.getDisplay("fullTitle", "fullTitle (formatted, includes subtitle)")}`).addOption("rawTitle", `${this.getDisplay("rawTitle")}`).addOption("subtitle", `${this.getDisplay("subtitle")}`).addOption("pages", `${this.getDisplay("pages")}`).addOption("series", `${this.getDisplay("series")}`).addOption("description", `${this.getDisplay("description")}`).addOption("cover", `${this.getDisplay("cover")}`).addOption("isbn", `${this.getDisplay("isbn")}`).addOption("review", `${this.getDisplay("review")}`).addOption("rating", `${this.getDisplay("rating")}`).addOption("avgRating", `${this.getDisplay("avgRating")}`).addOption("dateAdded", `${this.getDisplay("dateAdded")}`).addOption("dateRead", `${this.getDisplay("dateRead")}`).addOption("datePublished", `${this.getDisplay("datePublished")}`).addOption("shelves", `${this.getDisplay("shelves")}`).onChange((value) => __async(this, null, function* () {
+    new import_obsidian2.Setting(containerEl).setName("Available Fields").addDropdown((dropdown) => dropdown.addOption("", `${this.getSelectedCount()}`).addOption("id", `${this.getDisplay("id")}`).addOption("author", `${this.getDisplay("author")}`).addOption("title", `${this.getDisplay("title", "title (formatted for filenames/links)")}`).addOption("fullTitle", `${this.getDisplay("fullTitle", "fullTitle (formatted, includes subtitle)")}`).addOption("rawTitle", `${this.getDisplay("rawTitle")}`).addOption("subtitle", `${this.getDisplay("subtitle")}`).addOption("pages", `${this.getDisplay("pages")}`).addOption("series", `${this.getDisplay("series")}`).addOption("description", `${this.getDisplay("description")}`).addOption("cover", `${this.getDisplay("cover")}`).addOption("isbn", `${this.getDisplay("isbn")}`).addOption("review", `${this.getDisplay("review")}`).addOption("rating", `${this.getDisplay("rating")}`).addOption("avgRating", `${this.getDisplay("avgRating")}`).addOption("dateAdded", `${this.getDisplay("dateAdded")}`).addOption("dateRead", `${this.getDisplay("dateRead")}`).addOption("datePublished", `${this.getDisplay("datePublished")}`).addOption("shelves", `${this.getDisplay("shelves")}`).addOption("bookPage", `${this.getDisplay("bookPage")}`).onChange((value) => __async(this, null, function* () {
       this.optionIsSelected(value) ? delete this.currentYAML[value] : this.currentYAML[value] = value;
       yield this.plugin.saveSettings();
       this.display();

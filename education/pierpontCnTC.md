@@ -105,6 +105,6 @@ Information Systems:
 Mathematics:
 
 * College Algebra
-* Introduction to Statistics
+* Introduction to Statistics **DONE**
 * Precalculus
 * Calculus I

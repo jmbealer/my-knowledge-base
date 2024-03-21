@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "161ff7b6109f4fd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "d76f5b97a695f68c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "968383a54fbd9f94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1737f0fa1b2e0f1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-03-21.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "def948a061e659c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b94fcf6634c8280",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "961be4a7ca997dd6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ea7496301b17fc56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c69cb9e502b05093",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1ccaac18fc594545",
+    "type": "split",
+    "children": [
+      {
+        "id": "d496ec5a953eb4a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09acf0fc6ab07c3e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "journals/2024-03-21.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e4e9964c591945e7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "journals/2024-03-21.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e0f3a0ef05b07da0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7fc393207fc0242a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "journals/2024-03-21.md"
+              }
+            }
+          },
+          {
+            "id": "5adcfe9392f143d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-02-26.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "245390976a387358",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "f24677b642e6bcc2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "961be4a7ca997dd6",
+  "lastOpenFiles": [
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/html.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/pages/contents.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/test.md",
+    "programming-idioms.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/Vault2/Welcome.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/github-lists.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/anki/linux-010-160.txt",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/20230729192800-vim_motions.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.7-Summarize-application-installation-and-configuration-concepts.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/unsorted/tridactyl.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/javaScript/20220626201630-javaScript.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/20220708112542-devcollab.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/organizations/dewey-decimal-classification.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/information/My-Wants.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.2-Compare-and-contrast-features-of-Microsoft-Windows-versions.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/Doom-Emacs.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/2.3-Given-a-scenario,-install-and-configure-a-basic-wired-wireless-SOHO-network.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/education/studycom.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/anki/testing-orgTable.csv",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/mac-lea.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/EC-Council-Certifications.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/20221015154419-swe-dsa.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/education/wgu/20230103163009-wgu-c173.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/python/python-roadmap2.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/languages/00-languages-index.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/lpi-010-150/LPI.Braindumps.010-150.v2018-05-19.by.Anton.48q.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.6-Given-a-scenario,-use-Microsoft-Windows-Control-Panel-utilities.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/20220504181338-how_linux_works.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/languages/400-language.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/20221015183639-backend-dev.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/mathematics/basic-math.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/mathematics/Basic-Mathematics-Lang.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/journals/2024-02-26.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/nvim.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/4.7-Given-a-scenario,-use-proper-communication-techniques-and-professionalism.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/journals/2023-12-03.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
+    "My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
+    "My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
+    "My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
+    "My-Knowledge-Base/home/unsorted-org/org/test.png",
+    "Untitled.canvas"
+  ]
+}

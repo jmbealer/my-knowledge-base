@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "968383a54fbd9f94",
+            "id": "577cdf1863f7e93a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1737f0fa1b2e0f1a",
+            "id": "ef600881f0b61383",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "education/sophiaorg.md",
+                "file": "security-certification-roadmap.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "education/sophiaorg.md",
+                "file": "security-certification-roadmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "education/sophiaorg.md",
+                "file": "security-certification-roadmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "education/sophiaorg.md"
+                "file": "security-certification-roadmap.md"
               }
             }
           },
@@ -189,43 +189,58 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "1737f0fa1b2e0f1a",
+  "active": "ef600881f0b61383",
   "lastOpenFiles": [
-    "education/education.md",
-    "journals/2024-03-14.md",
-    "education/sophiaorg.md",
-    "education/excelsior.md",
-    "education/Thomas Edison State University.md",
-    "education/General Education Requirements (45 Credits).md",
-    "markdown.md",
-    "nb-cli.md",
-    "programming-idioms.md",
-    "README.md",
+    "security-certification-roadmap.md",
+    "untitled.md",
+    "journals/2024-03-21.md",
     "test.md",
-    "journals/2024-03-04.md",
-    "journals/2024-03-08.md",
-    "journals/2024-02-28.md",
-    "journals/2024-02-26.md",
-    "clang-idioms.md",
-    "Vault/Welcome.md",
-    "Vault",
-    "journals/2024-02-25.md",
-    "journals/2023-12-15.md",
-    "journals/2023-12-14.md",
-    "journals/2023-12-13.md",
-    "journals/2023-12-12.md",
-    "journals/2023-12-11.md",
-    "pages/contents.md",
-    "home/0-Home.md",
-    "journals",
-    "home/unsorted-org/org/software-engineering/python/Python.md",
-    "Templates",
-    "logseq/bak/pages/Thomas Edison State University",
-    "logseq/bak/pages",
+    "journals/2024-03-21.sync-conflict-20240321-074517-CZDDJ3V.md",
+    "journals/2024-03-14.sync-conflict-20240321-074517-CZDDJ3V.md",
+    "journals/2024-03-20.md",
+    "journals/2024-03-14.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/Bachelor-of-Science-in-Computer-Science-and-Engineering.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.0-Operating-Systems.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/python/python-frozenset.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/sys-pro.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/mathematics/prob-stat.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/20220814213112-text_editor_idx.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/data-structures.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/Vault2/Welcome.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/20220524233349-html.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/2.5-Summarize-the-properties-and-purposes-of-services-provided-by-networked-hosts.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/templates/testAnki.sh",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.7-Given-a-scenario,-use-methods-to-perform-mobile-device-synchronization.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/5.0-Hardware-and-Network-Troubleshooting.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/javaScript/20220708112003-nodejs.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/fitness/Lower-Limbs.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/Thomas Edison State University.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/20220516155718-cli_apps.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/studycom.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/languages/400-language.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/README.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/education/20230609152141-tesu.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/fitness/Movement-Patterns.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/excelsior.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/markdown.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/sophiaorg.md",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/lpi-010-150/LPI.Braindumps.010-150.v2018-05-19.by.Anton.48q.org",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/Sync",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/unsorted",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
+    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "Untitled.canvas"
   ]
 }

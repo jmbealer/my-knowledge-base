@@ -215,13 +215,13 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     * Excelsior: Lower Level Humanities Credit
   * **5** Touchstones
 
-## Math - Total of 18 credits - 3 credits DONE
+## Math - Total of 18 credits - 8 credits DONE
 
 * Calculus I 4 credits
   * Thomas Edison State University: MAT 2310 Calculus I
   * Excelsior: MAT 220 Calculus I
   * **No** Touchstones
-* College Algebra 3 credits
+* College Algebra 3 credits **TODO**
   * Thomas Edison State University: MAT 1210 College Algebra
   * Excelsior: MAT 114 Intermediate Algebra
   * **No** Touchstones
@@ -233,7 +233,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University: MAT 1050 Applied Liberal Arts Mathematics
   * Excelsior: MAT 101 Math for Everyday Life
   * **No** Touchstones
-* Introduction to Statistics 3 credits **TODO**
+* Introduction to Statistics 3 credits **DONE**
   * Thomas Edison State University: ST0 2010 Principles of Statistics
   * Excelsior: MAT 201 Statistics
   * **No** Touchstones
