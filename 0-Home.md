@@ -18,6 +18,8 @@ date +"%F" - prints the date in the format YYYY-MM-DD
   [Study.com](./education/studycom.md)
   [Pierpont Community & Technical College](./education/pierpontCnTC.md)
   [Excelsior](./education/excelsior.md)
+[Linux](./linux/linux-home.md)
+  [Linux Certs](./linux/linux-certs.md)
 
 [Hyperpolyglot](https://hyperpolyglot.org)
 
