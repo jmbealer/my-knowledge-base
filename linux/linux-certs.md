@@ -3,7 +3,7 @@
 Novice:
 
 - [LPI Linux Essentials](./lpi-linux-essentials.md)
-- Linux Foundation Certified IT Associate (LFCA)
+- [Linux Foundation Certified IT Associate (LFCA)](./lfca.md)
 
 Advanced Beginner:
 
