@@ -21,14 +21,80 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0-Home.md",
+                "file": "journals/2024-03-26.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "f0de9783f70809fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "education/sophiaorg.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a244fe72e5a0d92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-06-23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b7c349f10fd0f91",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "86f6699aba3bc162",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "education/wgu.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e679b12291c98417",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/lpi-lpic-3-security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8725f72091192d0b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -78,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 249.5
   },
   "right": {
     "id": "1ccaac18fc594545",
@@ -94,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Home.md",
+                "file": "linux/lpi-lpic-3-security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0-Home.md",
+                "file": "linux/lpi-lpic-3-security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0-Home.md"
+                "file": "linux/lpi-lpic-3-security.md"
               }
             }
           },
@@ -142,12 +208,8 @@
             "id": "5adcfe9392f143d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "journals/2024-02-26.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -186,47 +248,48 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "header-enhancer:Header Enhancer": false
     }
   },
-  "active": "ef600881f0b61383",
+  "active": "e679b12291c98417",
   "lastOpenFiles": [
-    "linux/linux-home.md~",
+    "linux/lpi-lpic-1.md~",
+    "linux/lpi-lpic-2.md~",
+    "linux/lpi-bsd-specialist.md~",
+    "linux/lpi-devops-tools-engineer.md~",
+    "linux/lpi-open-source-essentials.md~",
+    "linux/lpi-web-dev-essentials.md~",
+    "linux/lpi-security-essentials.md~",
+    "linux/lpi-web-dev-essentials.md",
+    "linux/lpi-open-source-essentials.md",
+    "linux/lpi-bsd-specialist.md",
+    "linux/lpi-devops-tools-engineer.md",
+    "linux/dsd",
+    "linux/dopt",
+    "linux/ose",
+    "linux/wde",
+    "linux/lpi-security-essentials.md",
+    "linux/lpi-security-essentials.md foo.md",
+    "linux/lpi-lpic-3.md",
+    "journals/2024-08-24.md",
+    "english.md",
+    "journals/2024-07-21.md",
+    "journals/2024-07-19.md",
+    "journals/2024-07-05.md",
+    "education/wgu.md",
+    "education/studycom.md",
+    "education/Thomas Edison State University.md",
+    "education/sophiaorg.sync-conflict-20240629-195938-2XWGPYO.md",
+    "journals/2024-07-04.md",
     "education/sophiaorg.md",
-    "0-Home.md",
-    "journals/2024-03-22.md",
+    "education/pierpontCnTC.md",
+    "education/General Education Requirements (45 Credits).md",
+    "education/excelsior.md",
+    "education/education.md",
+    "journals/2024-06-27.md",
     "security-certification-roadmap.md",
-    "untitled.md",
-    "journals/2024-03-21.md",
     "test.md",
-    "journals/2024-03-21.sync-conflict-20240321-074517-CZDDJ3V.md",
-    "journals/2024-03-14.sync-conflict-20240321-074517-CZDDJ3V.md",
-    "journals/2024-03-20.md",
-    "journals/2024-03-14.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/Bachelor-of-Science-in-Computer-Science-and-Engineering.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.0-Operating-Systems.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/python/python-frozenset.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/sys-pro.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/mathematics/prob-stat.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/20220814213112-text_editor_idx.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/data-structures.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/Vault2/Welcome.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/20220524233349-html.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/2.5-Summarize-the-properties-and-purposes-of-services-provided-by-networked-hosts.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/templates/testAnki.sh",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/1.7-Given-a-scenario,-use-methods-to-perform-mobile-device-synchronization.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/computing/certifications/5.0-Hardware-and-Network-Troubleshooting.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/javaScript/20220708112003-nodejs.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/fitness/Lower-Limbs.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/Thomas Edison State University.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/20220516155718-cli_apps.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/education/studycom.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/languages/400-language.md",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/README.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/education/20230609152141-tesu.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/linux/lpi-010-150/LPI.Braindumps.010-150.v2018-05-19.by.Anton.48q.org",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/Sync",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/text-editors/unsorted",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",

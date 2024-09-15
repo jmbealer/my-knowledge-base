@@ -4,11 +4,13 @@ Novice:
 
 - [LPI Linux Essentials](./lpi-linux-essentials.md)
 - [Linux Foundation Certified IT Associate (LFCA)](./lfca.md)
+  - don't do for now
 
 Advanced Beginner:
 
-- CompTIA Linux+
+- [CompTIA Linux+](./comptia-linux.md)
 - Linux Foundation Certified Cloud Technician (LFCT)
+  - don't do for now
 
 Competent:
 

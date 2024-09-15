@@ -25,14 +25,70 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "untitled.md",
+                "file": "journals/2024-03-21.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "bfe185dc84b4e9ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-04-04.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7a26c917d01f18b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-04-27.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3b1d996f09672a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journals/2024-07-07.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "418d4bdf1f2068a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "word-lists/notfound-from-ngwl-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "39b2c938af826f4c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -110,7 +166,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "untitled.md",
+            "file": "word-lists/notfound-from-ngwl-list.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -127,7 +183,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "untitled.md",
+            "file": "word-lists/notfound-from-ngwl-list.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -139,7 +195,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "untitled.md"
+            "file": "word-lists/notfound-from-ngwl-list.md"
           }
         }
       },
@@ -156,6 +212,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "header-enhancer:Header Enhancer": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -165,12 +222,43 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7da4a7ab8a075b2e",
+  "active": "418d4bdf1f2068a5",
   "lastOpenFiles": [
-    "journals/2024-03-21.md",
-    "test.md",
-    "untitled.md",
-    "0-Home.md",
-    "Vault/Welcome.md"
+    "journals/2024-07-21.md",
+    "word-lists/notfound-from-ngwl-list.md",
+    "word-lists/general-lists/gsl-added.md",
+    "word-lists/general-lists/ngsl-1.2-added.md",
+    "word-lists/general-lists/ewl-added.md",
+    "word-lists/general-lists/ice-core-added.md",
+    "word-lists/general-lists/ngsl-spoken-1.2-added.md",
+    "word-lists/domain-specific-lists/csavl-s-added.md",
+    "word-lists/general-lists/ch-hf-added.md",
+    "word-lists/notFoundFullGen.md",
+    "word-lists/general-lists/new-GSL-added.md",
+    "word-lists/general-lists/bcn-coca-added.md",
+    "word-lists/domain-specific-lists/csavl-added.md",
+    "word-lists/general-lists/ndl-1.1-added.md",
+    "word-lists/notfoundAcad.md",
+    "word-lists/domain-specific-lists/cswl-added.md",
+    "word-lists/notfoundDomCS.md",
+    "word-lists/general-lists/myGenList.md",
+    "journals/2024-07-20.md",
+    "word-lists/domain-specific-lists/myDomSpecList.md",
+    "word-lists/academic-lists/notUniqAcadList.md",
+    "word-lists/academic-lists/myAcadList.md",
+    "word-lists/general-lists/notUniqGenList.md",
+    "word-lists/domain-specific-lists/notUniqDomSpecList.md",
+    "word-lists/general-lists/ndl-1.1.md",
+    "word-lists/general-lists/ngsl-spoken-1.2.md",
+    "word-lists/general-lists/toSort.sh",
+    "word-lists/general-lists/myGenList.txt",
+    "word-lists/general-lists/notUniqGenList.txt",
+    "word-lists/academic-lists/myAcadList.txt",
+    "word-lists/academic-lists/notUniqAcadList.txt",
+    "word-lists/domain-specific-lists/notUniqDomSpecList.txt",
+    "word-lists/domain-specific-lists/BSL_1.20_stats.csv",
+    "word-lists/domain-specific-lists/FEL_1.2_stats.csv",
+    "word-lists/domain-specific-lists/myDomSpecList.txt",
+    "word-lists/domain-specific-lists/TSL_1.2_stats.csv"
   ]
 }
