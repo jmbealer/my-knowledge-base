@@ -9,5 +9,3 @@ Mind
   Career
 - get a better job
 
-test
-
