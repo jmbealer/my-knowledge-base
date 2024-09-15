@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       0e26b9f4-4a02-4e79-ae0c-d9cc4813bab1
+:mtime:    20230206181316 20220528222421
+:ctime:    20220202133423
+:END:
+#+title: clj-cheatsheets
+
+#+begin_src clojure :results output
+(println "Hello World")
+(dotimes [_ 10]
+  (println "hello"))
+(defn main- [& args]
+  (println "I got all this arguments" args " and now i'm returning nil."))
+(defn square [x]
+  (* x x))
+
+#+end_src
+
+#+RESULTS:
+| Hello World |
+| hello       |
+
+print hello world
+print hello world 10
++ dotimes
++ _ means we dont want to bind the value to a symbol.
+create a procedure
+create a function
+create a 2D point data structure

@@ -1,0 +1,113 @@
+:PROPERTIES:
+:ID:       65228ca4-89a4-4284-afc4-b2d37c10d9de
+:mtime:    20230507170358 20230507150845 20230507124740 20230402154125
+:ctime:    20230402154116
+:END:
+#+title: Web Development Foundations - C779
+
+* Unit 1: Web Development Fundamentals
+
+
+CSS stands for cascading style sheets
+  CSS are also used to format web pages, to help define text styles, table
+  sizes, and other aspects of web page design.
+
+CSV Comma separated values files
+DOM Document object model
+GUI Graphical user interface
+SGML Standard generalized markup language
+
+** Module 1: Website Fundamentals
+
+What is the internet?
+  The internet is the global network of computers, also referred to as the World
+  Wide Web (WWW).
+  The World Wide Web was started on March 12, 1989.
+
+first came url then html then css, js and php
+
+HTTP Hypertext transfer protocol
+TCP/IP Transmission control protocol/internet protocol
+URL Uniform resource locator
+W3C World wide web consortium
+
+TCP/IP is the protocol for general internet data exchange.
+HTTP allows access to hypertext documents through the use of a unique URL.
+W3C defines important technical specifications, such as; URL
+  HTTP://www.w3.org/Consortium
+    HTTP: is the protocol definition
+    //www.w3.org is the domain name: a sequence of host machine names preceded
+    by a double slash and separated by periods.
+      Domain names are not case sensitive: WWW.W3.ORG and www.w3.org are equivalent
+    /Consortium is the web page location as a filename and/or path
+
+  https://www.wgu.edu/online-it-degrees.html
+    HTTPS: is the protocol definition, the secured version of HTTP
+    www.wgu.edu is the domain address
+    online-it-degrees.html is the web page location (the .html extension means
+    that this page is a file)
+
+  http://www.lynda.com
+    http: protocol
+    //www subdomain
+    .lynda domain, resource name
+    .com top-level domain
+
+XML Extensible markup language
+eXtensible Markup Language (XML) is a format that has been widely adopted to
+exchange information between companies, documents, and programs.
+
+beginning of xml file.
+<?xml verison="1.0" encoding="utf-8">
+
+** Module 2: Hypertext Markup Language (HTML)
+
+HTML5 stands for hypertext markup language, version 5
+  hypertext refers to the hyperlinks that an HTML page may contain.
+  markup language refers to the way tags are used to define the page layout and
+  elements within the page.
+  The "5" denotes the current version of the language being used.
+
+<!DOCTYPE html>: the document type declaration is mandatory and informs the
+browser which version of HTML is being used.
+  The value "html" indicates HTML version 5.
+  A declaration is a statement that informs the browser of the information
+  needed to correctly handle the elements within.
+  In other words, the declaration tells the browser how to decode the tags that will follow.
+
+<html>: the element that encompasses the whole document
+<head>: the page header information
+<title>: that informs the page title to be used by the browser to be displayed over the window or tab displaying the web page
+<body>: the page body that encompasses the text to be displayed by the browser
+<h1>, <h2>, <h3>, <h4>, <h5>,<h6>: the headings of the web page main text that follow specific text formatting and also provide text structure
+<p>: the paragraphs of the web page text that hold the regular text
+<br>: the single tag to create a line break (remember that HTML does not take blank spaces or line breaks into account for display)
+<hr>: a tag to display a change of context, usually displayed as a horizontal line
+<strong>: a tag to modify the weight of text relative to surrounding text, which usually is equivalent to a bold font face
+
+semantic HTML refers to the names of things; they describe what they are.
+presentational HTML refers how things look: how they are aligned, which font is used
+
+** Module 3: Cascading Style Sheets (CSS)
+** Module 4: User Input
+** Module 5: Extending HTML5
+** Module 6: Importing Media
+** Module 7: Industry Standards & Best Practices
+
+short for
+
+What is the purpose of HTML?
+What is the difference between semantic and presentational HTML?
+What are different ways to divide or separate the various sections of a web page?
+
+* Unit 2: Website Development for Business
+
+** Module 8: Stages of Website Development
+** Module 9: Website Performance
+** Module 10: Technology & Strategies
+** Module 11: Web Servers
+
+* Links
+
+https://my.wgu.edu/courses/course/22560006
+https://wgu-nx.acrobatiq.com/en-us/courseware/contents/wgu_C779_web_dev_foundations_may17_1

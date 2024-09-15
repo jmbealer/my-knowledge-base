@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       8f689d2c-c85c-4020-b7da-d56d3f6a7acc
+:mtime:    20230206181451 20220528222421
+:ctime:    20220125102851
+:END:
+#+title: guile
+
+guile has a interactive mode
+guile can inerpret script files
+
+define a new variable
+(define variable-name value)
+;; single line comment
+change the value of an already exisiting variable
+(set! variable-name new-value)
+
+procedure invocation
+(procedure [arg1 [arg2 ...]])
+
+procedure call
+(procedure-name arg1 arg2 arg3)
+parentheses start and ends call
+arguments separated by spaces
+dashes can be part of names
+
+if statement
+(if
+    condition-check-procedure
+    then-procedure
+    else-procedure
+)
+#+begin_src racket
+(define x 1)
+(if (< x 3)
+  (display "small")
+  (display "big"))
+#+end_src
+
+#+RESULTS:
+: #<unspecified>

@@ -1,0 +1,31 @@
+#+BEGIN_SRC clojure :eval no-export :export both
+(println "test")
+#+END_SRC
+
+#+RESULTS:
+: Please reevaluate when nREPL is connected
+
+#+begin_src clojure :results output
+(println "foo")
+#+end_src
+
+#+RESULTS:
+: foo
+
+
+#+begin_src bash
+echo "test"
+
+#+end_src
+
+#+RESULTS:
+: test
+
+#+begin_src python :results output
+print("hello there")
+x = "well this is niece"
+
+#+end_src
+
+#+RESULTS:
+: hello there

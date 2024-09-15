@@ -1,0 +1,437 @@
+:PROPERTIES:
+:ID:       372ca3cf-4fd4-4476-8a6a-9c687305be1c
+:mtime:    20230507125344 20230206181346 20230115085705
+:ctime:    20230103163009
+:END:
+#+title: Scripting and Programming - Foundations - C173
+Time-stamp: "2023-05-07 13:02:07 jb"
+<2023-01-06 Fri>
+
+* Links
+https://my.wgu.edu/courses/course/25060007
+https://learn.zybooks.com/zybook/WGUC173v5
+
+https://srm--c.na127.visual.force.com/apex/FDP/CommonsExpandedSearch?courseCode=C173
+https://srm--c.na127.visual.force.com/apex/coursearticle?Id=kA03x000000spz1CAA
+
+* 1. Introduction
+
+** 1.1 Programming (general)
+
+program :: A computer program consists of instructions executing one at a time.
+Input :: Input: A program gets data, perhaps from a file, keyboard, touchscreen, network, etc.
+Process :: Process: A program performs computations on that data, such as adding two values like x + y.
+Output :: Output: A program puts that data somewhere, such as to a file, screen, network, etc.
+variables :: Programs use variables to refer to data, like x.
+computational thinking :: In the information age, many people believe computational thinking, or creating a sequence of instructions to solve a problem, will become increasingly important for work and everyday life.
+algorithm :: A sequence of instructions that solves a problem is called an algorithm.
+
+** 1.2 Programming basics
+
+flowchart :: A flowchart is a graphical language for creating or viewing computer programs.
+program / statement :: A program is a list of statements, each statement carrying out some action and executing one at a time.
+node :: In a Coral flowchart, each statement is in a graphical node, with different shapes for different types of statements.
+interpreter :: An interpreter runs a program's statements.
+Run / execute :: Run and execute are words for carrying out a program's statements.
+input statement :: In a Coral flowchart, a parallelogram represents an input statement, written as: variable = Get next input.
+output statement :: In a Coral flowchart, a parallelogram represents an output statement, written as: Put item to output.
+string literal :: A string literal consists of text (characters) within double quotes, as in "Go #57!".
+character :: A character includes any letter (a-z, A-Z), digit (0-9), or symbol (~, !, @, etc.).
+cursor :: A cursor indicates where the next output item will be placed in the output.
+newline :: A newline is a special two-character sequence \n whose appearance in an output string literal causes the cursor to move to the next output line.
+
+** 1.3 Comments and whitespace
+
+comment :: A comment is text a programmer adds to a program, to be read by humans to better understand the code, but ignored by the program when executing.
+Whitespace :: Whitespace refers to blank spaces (space and tab characters) between items within a statement, and to newlines.
+
+** 1.4 Brief history
+
+Moore's Law :: Engineers have reduced switch sizes by half about every 2 years, a trend known as Moore's Law.
+computer chip :: By the 1970's, an entire computer could fit on one coin-sized device known as a computer chip.
+agricultural age :: Civilization's earlier agricultural age lasted many thousands of years.
+industrial age :: The industrial age starting in the late 1700's transformed civilization towards manufacturing goods, leading to mass migration to cities, creation of strong nations, world wars, doubling of lifespans and thus dramatic world population growth (see figure below), and more.
+information age :: The information age just began in the 1990's, with human activity shifting from traditional industry to creating/managing/using computerized information.
+
+** 1.5 Computers all around us
+
+embedded computer :: An embedded computer is a computer inside another electrical device, like inside a TV, car, printer, thermostat, satellite, etc.
+
+** 1.6 Representing information as bits
+
+bit :: A single 0 or 1 is called a bit.
+byte :: Eight bits, like 11000101, are called a byte.
+character :: A character is a letter (a, b, ..., z, A, B, ..., Z), symbol (!, @, #, ...), or single-digit number (0, 1, ..., 9).
+ASCII :: ASCII is a popular code for characters.
+Unicode :: Unicode is another character encoding standard, published in 1991, whose codes can have more bits than ASCII and thus can represent over 100,000 items, such as symbols and non-English characters.
+decimal numbers :: Because early humans represented values using ten fingers, humans developed base ten numbers, known as decimal numbers ("dec" refers to ten).
+binary numbers :: Computers can only represent two values (0 or 1), so base two numbers, known as binary numbers ("bi" refers to two).
+
+** 1.7 Problem solving
+
+problem solving :: Programming is largely about problem solving: Creating a methodical solution to a given task.
+
+** 1.8 Why programming
+
+computational thinking :: The thought processes needed to build correct, precise, logical programs is sometimes called computational thinking and has benefits beyond programming.
+
+** 1.9 Why whitespace matters
+
+whitespace :: Whitespace is any blank space or newline.
+
+** 1.10 Code and pseudocode
+
+Pseudocode :: Pseudocode is text that resembles a program in a real programming language but is simplified to aid human understanding.
+Coral :: Coral: A simple language for learning to program.
+
+* 2. Variables / Assignments
+
+** 2.1 Variables and assignments (general)
+
+variable :: In a program, a variable is a named item, such as x or numPeople, used to hold a value.
+assignment statement :: An assignment statement assigns a variable with a value, such as x = 5.
+
+** 2.2 Variables (integer)
+
+variable declaration :: A variable declaration declares a new variable, specifying the variable's name and type.
+integer :: A variable of type integer can hold whole number values, like 1, 999, 0, or -25 (but not 3.5 or 0.001).
+assignment statement :: An assignment statement assigns the variable on the left-side of the = with the current value of the right-side expression.
+expression :: An expression may be a number like 80, a variable name like numApples, or a simple calculation like numApples + 1.
+
+** 2.3 Identifiers
+
+identifier :: A name created by a programmer for an item like a variable or function is called an identifier.
+_ / underscore :: _ is called an underscore.
+case sensitive :: Identifiers are case sensitive, meaning upper and lower case letters differ.
+reserved word / keyword :: A reserved word (or keyword) is a word that is part of the language, like integer, Get, or Put.
+naming conventions :: Identifier naming conventions: A set of style guidelines defined by a company, team, teacher, etc., for naming variables.
+Lower camel case :: Lower camel case abuts multiple words, capitalizing each word except the first, as in numApples or peopleOnBus.
+
+** 2.4 Arithmetic expressions (general)
+
+expression :: An expression is a combination of items, like variables, literals, operators, and parentheses, that evaluates to a value. Ex: 2 * (x + 1) is an expression. If x is 3, the expression evaluates to the value 8.
+literal :: A literal is a specific value in code, like 2.
+operator :: An operator is a symbol that performs a built-in calculation, like the operator + which performs addition.
+addition / + :: The addition operator is +, as in x + y.
+subtraction / - :: The subtraction operator is -, as in x - y.
+negation :: The - operator is for negation, as in -x + y, or x + -y.
+multiplication / * :: The multiplication operator is *, as in x * y.
+division / / :: The division operator is /, as in x / y.
+evaluates :: An expression evaluates to a value, which replaces the expression. Ex: If x is 5, then x + 1 evaluates to 6, and y = x + 1 assigns y with 6.
+precedence rules :: An expression is evaluated using the order of standard mathematics, such order known in programming as precedence rules.
+
+** 2.5 Arithmetic expressions (integer)
+
+unary minus :: Minus (-) used as negative is known as unary minus.
+
+** 2.6 Example: Health data
+
+Incremental development :: Incremental development is the process of writing, compiling, and testing a small amount of code, then writing, compiling, and testing a small amount more (an incremental amount), and so on.
+
+** 2.7 Floating-point numbers (float)
+
+floating-point number :: A floating-point number is a real number, like 98.6, 0.0001, or -666.667.
+float :: A variable declared as type float stores a floating-point number.
+floating-point literal :: A floating-point literal is a number with a fractional part, even if that fraction is 0, as in 1.0, 0.0, or 99.573.
+infinity / -infinity :: Dividing a nonzero floating-point number by zero results in infinity or -infinity, depending on the signs of the operands.
+Not a number :: Not a number indicates an unrepresentable or undefined value.
+
+** 2.8 Using math functions
+
+function / function call :: A function is a list of statements executed by invoking the function's name, with such invoking known as a function call.
+arguments :: Any function input values, or arguments, appear within ( ), and are separated by commas if more than one.
+
+** 2.9 Random numbers
+
+RandomNumber() :: The RandomNumber() function is a built-in Coral function that takes two arguments, lowValue and highValue, and returns a random integer in the range lowValue to highValue.
+seed :: For the first call to RandomNumber(), no previous random integer exists, so the function uses a built-in integer known as the seed.
+SeedRandomNumbers() :: A programmer can specify the seed using the function SeedRandomNumbers(), as in SeedRandomNumbers(10) or SeedRandomNumbers(99).
+
+** 2.10 Integer division
+
+divide-by-zero error :: A divide-by-zero error occurs at runtime if a divisor is 0, causing a program to terminate.
+
+** 2.11 Type conversions
+
+type conversion :: A type conversion is a conversion of one data type to another, such as an integer to a float.
+implicit conversion :: Coral automatically performs several common conversions between integer and float types, and such automatic conversion is known as implicit conversion.
+type cast :: A type cast converts a value of one type to another type.
+
+** 2.12 Modulo operator
+
+modulo operator / % :: The modulo operator (%) evaluates to the remainder of the division of two integer operands. Ex: 23 % 10 is 3.
+
+** 2.14 Constants
+
+constant :: A constant is a named value item that holds a value that cannot change.
+
+* 3. Branches
+
+** 3.1 Branches
+
+branch :: In a program, a branch is a sequence of statements only executed under a certain condition.
+decision :: In Coral flowcharts, a decision creates two branches: If the decision's expression is true, the first branch executes, else the second branch executes. Afterwards, the branches rejoin.
+if-else :: A decision and its two branches are often called if-else branches, because IF the decision's expression is true then the first branch executes, ELSE the second branch executes.
+if :: A decision whose false branch has no statements is often just called an if branch.
+if-elseif branches :: Commonly, a series of decisions appear cascaded in each decision's false branch, known as if-elseif branches.
+equality operator :: The equality operator == evaluates to true if the left and right sides are equal.
+
+** 3.2 More branches
+
+nested branches :: A branch's statements can include any valid statements, including another if-else branch, known as nested branches.
+multiple if branches :: In multiple if branches, each decision is independent, and thus more than one branch can execute.
+
+** 3.3 Equality and relational operators
+
+equality operator :: An equality operator checks whether two operands' values are the same (==) or different (!=).
+Boolean :: A Boolean is a type that has just two values: true or false.
+== :: A == b means a is equal to b.
+!= :: A != b means a is not equal to b.
+relational operator :: A relational operator checks how one operand's value relates to another, like being greater than.
+< :: A < b means a is less-than b.
+> :: A > b means a is greater-than b.
+<= :: A <= b means a is less-than-or-equal to b.
+>= :: A >= b means a is greater-than-or-equal to b.
+
+** 3.5 Logical operators
+
+logical operator :: A logical operator treats operands as being true or false, and evaluates to true or false. Logical operators include and, or, not.
+Logical and :: Logical and: true when both operands are true .
+Logical or :: Logical or: true when at least one of the two operands is true .
+Logical not :: Logical not: true when the one operand is false, and vice-versa.
+
+** 3.6 Order of evaluation
+
+precedence rules :: The order in which operators are evaluated in an expression are known as precedence rules.
+
+** 3.8 Floating-point comparison
+
+epsilon :: The difference threshold indicating that floating-point numbers are equal is often called the epsilon.
+
+** 3.9 Code: Branches
+
+if-else statement :: If-else statement: An if decision expression with the true branch's sub-statements, followed by an else part with any false branch sub-statements.
+if statement :: An if statement is an if decision expression followed by sub-statements, with no else part.
+if-elseif statement :: An if-elseif statement starts with an if decision expression, followed by elseif decision expressions, and ending with else; when a program reaches the statement, exactly one of those branches will execute.
+
+** 3.10 Code: More branches
+
+nested if-else statements :: A branch's statements can include any valid statements, including another if-else statement, known as nested if-else statements (or nested branches).
+
+* 4. Loops
+
+** 4.1 Loops (general)
+
+loop / loop body :: A loop is a program construct that repeatedly executes the loop's statements (known as the loop body) while the loop's expression is true; when false, execution proceeds past the loop.
+iteration :: Each time through a loop's statements is called an iteration.
+
+** 4.2 Loop basics
+
+loop / loop body :: A loop is a program construct that repeatedly executes a list of sub-statements (known as the loop body) while the loop's decision expression evaluates to true.
+iteration :: Each execution of the loop body is called an iteration.
+infinite loop :: An infinite loop is a loop that never stops iterating.
+
+** 4.3 More loop examples
+
+sentinel value :: A sentinel value is a special value indicating the end of a list, such as a list of positive integers ending with 0, as in 10 1 6 3 0.
+
+** 4.6 While and for loops
+
+while loop :: A while loop is a loop that repeatedly executes the loop body while the loop's expression evaluates to true.
+for loop :: A for loop is a loop consisting of a loop variable initialization, a loop expression, and a loop variable update that typically describes iterating for a specific number of times.
+
+** 4.7 Nested loops
+
+nested loop :: A nested loop is a loop that appears in the body of another loop.
+
+** 4.8 Code: While loops
+
+while loop :: In code, a loop can be written as a while loop: A while loop repeatedly executes the loop body while the loop's expression evaluates to true.
+
+** 4.9 Do-while loop
+
+do-while loop :: A do-while loop is a loop construct that first executes the loop body's statements, then checks the loop condition.
+do-while loop :: A do-while loop is a loop that first executes the loop body's statements, then checks the loop condition.
+
+** 4.10 Code: For loops
+
+for loop :: A for loop is a loop with three parts at the top: a loop variable initialization, a loop expression, and a loop variable update.
+
+* 5. Arrays
+
+** 5.1 Array concept (general)
+
+array :: An array is a special variable having one name, but storing a list of data items, with each item being directly accessible.
+vector :: Some languages use a construct similar to an array called a vector.
+element :: Each item in an array is known as an element.
+index :: In an array, each element's location number is called the index; myArray[2] has index 2.
+
+** 5.2 Arrays
+
+array :: An array variable is an ordered list of items of a given data type and size.
+element :: Each item in an array is called an element.
+index :: In an array access, the number in brackets is called the index of that element.
+brackets :: [ ] are brackets .
+braces :: { } are braces .
+parentheses :: ( ) are parentheses .
+scalar :: To contrast with array variables, a single-item (non-array) variable is called a scalar variable.
+size :: An array stores a size attribute, indicating the number of array elements.
+
+** 5.5 Swapping two variables (general)
+
+Swapping :: Swapping two variables x and y means to assign y's value with x, and x's value with y.
+
+* 6. User-Defined Functions
+
+** 6.1 User-defined function basics
+
+function :: A function is a named list of statements.
+function definition :: A function definition consists of the new function's name and a block of statements.
+function call :: A function call is an invocation of a function's name, causing the function's statements to execute.
+local variable :: A local variable is a variable declared in a function, which is then accessible only within that function.
+parameter :: A parameter is a function input specified in a function definition.
+argument :: An argument is a value provided to a function's parameter during a function call.
+
+** 6.2 Return
+
+return variable / return value :: A function may return one value by assigning a return variable with the return value.
+
+** 6.3 Reasons for defining functions
+
+Modular development :: Modular development is the process of dividing a program into separate modules that can be developed and tested separately and then integrated into a single program.
+Incremental development :: Incremental development is a process in which a programmer writes and tests a few statements, then writes and tests a small amount more (an incremental amount), and so on.
+function stub :: A function stub is a function definition whose statements have not yet been written.
+
+** 6.5 Code: Functions
+
+function definition :: A function definition begins with the word Function, the function's name, and a list of comma-separated parameters (if any) in parentheses, and a return indication.
+function call :: A function call consists of the function name and parentheses, within which comma-separated arguments (if any) appear.
+return statement :: In many programming languages, the return value is explicitly returned by a return statement, which returns the specified value and immediately exits the function.
+
+* 7. Algorithms
+
+** 7.1 Algorithms
+
+algorithm :: An algorithm is a sequence of steps that solves a problem, generating correct output for any valid input values.
+algorithm time efficiency :: Algorithm time efficiency: The number of calculations required to solve a problem.
+
+** 7.2 Introduction to algorithms
+
+algorithm :: An algorithm describes a sequence of steps to solve a computational problem or perform a calculation.
+computational problem :: A computational problem specifies an input, a question about the input that can be answered using a computer, and the desired output.
+NP-complete :: NP-complete problems are a set of problems for which no known efficient algorithm exists.
+
+** 7.3 Algorithm efficiency
+
+Algorithm efficiency :: Algorithm efficiency is typically measured by the algorithm's computational complexity.
+Computational complexity :: Computational complexity is the amount of resources used by the algorithm.
+runtime complexity :: An algorithm's runtime complexity is a function, T(N), that represents the number of constant time operations performed by the algorithm on an input of size N.
+best case :: An algorithm's best case is the scenario where the algorithm does the minimum possible number of operations.
+worst case :: An algorithm's worst case is the scenario where the algorithm does the maximum possible number of operations.
+space complexity :: An algorithm's space complexity is a function, S(N), that represents the number of fixed-size memory units used by the algorithm for an input of size N.
+auxiliary space complexity :: An algorithm's auxiliary space complexity is the space complexity not including the input data.
+
+** 7.4 Searching and algorithms
+
+algorithm :: An algorithm is a sequence of steps for accomplishing a task.
+Linear search :: Linear search is a search algorithm that starts from the beginning of a list, and checks each element until the search key is found or the end of the list is reached.
+runtime :: An algorithm's runtime is the time the algorithm takes to execute.
+
+** 7.5 Binary search
+
+Binary search :: Binary search is a faster algorithm for searching a list if the list's elements are sorted and directly accessible (such as an array).
+
+** 7.6 Sorting: Introduction
+
+Sorting :: Sorting is the process of converting a list of elements into ascending (or descending) order.
+
+** 7.7 Heuristics
+
+heuristic :: Heuristic: A technique that willingly accepts a non-optimal or less accurate solution in order to improve execution speed.
+heuristic algorithm :: A heuristic algorithm is an algorithm that quickly determines a near optimal or approximate solution.
+0-1 knapsack problem :: 0-1 knapsack problem: The knapsack problem with the quantity of each item limited to 1.
+
+* 8. The Design Process
+
+** 8.1 Software design processes
+
+analysis phase :: The analysis phase defines a program's goals.
+analysis :: The analysis phase determines the goals and requirements for a system.
+design phase :: The design phase defines specifics of how to build a program.
+design :: The design phase determines the specifics of how to build a system.
+implementation phase :: The implementation phase involves writing the program.
+implementation :: The implementation phases builds the system according to the design.
+SDLC / systems development life cycle :: In information systems, systems are built using a series of phases known as the systems development life cycle or SDLC.
+spiral method :: A modern approach to building information systems uses a spiral method, where each phase is done in sequence, then that sequence is repeated one or more times, with each phase done more thoroughly each time.
+testing phase :: The testing phase checks that the programs corrects meets the goals.
+testing :: The testing phase checks that the system functions properly and meets or exceeds the requirements.
+waterfall method :: Some developers build an information system via a waterfall method, where each phase is done in sequence, entirely completing one phase before moving to the next phase.
+systems development life cycle / SDLC :: A program can be built using different arrangements of phases, comprising the systems development life cycle or SDLC.
+testing phase :: The testing phase checks that the programs correctly meets the goals.
+agile approach / spiral approach :: A program can be built by doing small amounts of each SDLC phases in sequence, and then repeating, known as the agile approach (or spiral approach).
+waterfall approach :: A program can be built by carrying out the SDLC phases in sequence, known as the waterfall approach.
+
+** 8.2 Objects: Introduction
+
+object :: An object is a grouping of data (variables) and operations that can be performed on that data (functions).
+Abstraction / information hiding / encapsulation :: Abstraction means to have a user interact with an item at a high-level, with lower-level internal details hidden from the user (aka information hiding or encapsulation).
+abstract data type / ADT :: An abstract data type (ADT) is a data type whose creation and update are constrained to specific well-defined operations.
+
+** 8.3 UML
+
+Universal Modeling Language / UML :: The Universal Modeling Language (UML) is a modeling language for software design that uses different types of diagrams to visualize the structure and behavior of programs.
+structural diagram :: A structural diagram visualizes static elements of software, such as the types of variables and functions used in the program.
+behavioral diagram :: A behavioral diagram visualizes dynamic behavior of software, such as the flow of an algorithm.
+activity diagram :: A UML activity diagram is a flowchart, similar to zyFlowchart, used to describe the flow of an activity or set of activities.
+use case diagram :: A UML use case diagram is a behavioral diagram used to visually model how a user interacts with a software program.
+class diagram :: A UML class diagram is a structural diagram that can be used to visually model the classes of a computer program, including data members and functions.
+class :: A class is a code blueprint for creating an object that is composed of data members and functions that operate on those data members.
+sequence diagram :: A UML sequence diagram is a behavioral diagram that shows interaction between software components and indicates the order of events.
+
+** 8.5 Comparing the waterfall and agile approaches
+
+software requirements specification / SRS :: The analysis phase of each approach commonly produces a software requirements specification (SRS), a document describing all requirements for the software product.
+
+* 9. Software Topics
+
+** 9.1 Language survey
+
+compiled language / compiler :: A program written in a compiled language is first converted by a tool (compiler) into machine code, which can run on a particular machine.
+interpreted language / scripting language / interpreter :: An interpreted language (aka scripting language) is a language that is run one statement at a time by another program called an interpreter.
+statically typed :: Most compiled languages are statically typed, meaning each variable's type must be declared and cannot change while the program runs.
+dynamically typed :: Many interpreted languages are dynamically typed, meaning a variable's type may change while a program executes, usually based on what is assigned to the variable.
+object :: In a program, an object consists of some internal data items plus operations that can be performed on that data.
+object-oriented language :: An object-oriented language supports decomposing a program into objects.
+markup language :: A markup language allows a developer to describe a document's content, desired formatting, or other features.
+HTML :: HTML (hyper-text markup language) allows a developer to describe the text, links, images, and other features of a web page.
+
+** 9.2 Libraries
+
+library :: A library is a set of pre-written functions (and other items) that carry out common tasks, that a programmer can use to improve productivity.
+
+* 10. Troubleshooting Process
+
+** 10.1 Troubleshooting: Hypotheses and tests
+
+Troubleshooting :: Troubleshooting is a systematic process for finding and fixing a problem's cause in a (typically mechanical or electronic) system.
+hypothesis :: A hypothesis states a possible cause of a problem.
+test :: A test is a procedure whose result validates or invalidates a hypothesis.
+
+** 10.2 Logic of troubleshooting
+
+hypothesis :: When troubleshooting a problem, a hypothesis should be a statement of a possible cause, stated so as to be either true or false.
+test :: When troubleshooting, a test is a procedure typically with two possible results that either validate or invalidate a hypothesis.
+
+** 10.10 Hierarchical hypotheses
+
+Hieararchy :: Hieararchy means an object can be decomposed into sub-objects.
+Binary search :: Binary search divides an item into two halves, runs a test to decide in which half something lies, and repeats the binary search on that half.
+
+* 11. Program Debugging
+
+** 11.1 Basic debugging
+
+instructions / statements :: A program is a series of instructions (aka statements) a computer executes to perform a calculation, like a recipe is a series of instructions a chef executes to make a meal.
+bug / debugging :: In a program, a problem's cause is called a bug, and troubleshooting is called debugging.
+visual inspection :: A basic debugging process is visual inspection: Looking at each statement one-by-one to try to find a bug.
+debug output statements :: Another debugging process is to insert debug output statements whose output helps determine whether the preceding statement has the bug.

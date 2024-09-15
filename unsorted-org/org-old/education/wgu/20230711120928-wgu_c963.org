@@ -1,0 +1,91 @@
+:PROPERTIES:
+:ID:       2d781bd3-2da9-4cbb-89e0-fba5e816bc4d
+:mtime:    20230711131401 20230711120937
+:ctime:    20230711120928
+:END:
+#+title: American Politics and the US Constitution - C963
+
+* The Development of Constitutional Democracy
+
+** The Enlightenment in a Nutshell
+
+Describe the influence of Enlightenment idea on the founding documents.
+
+John Locke
+  - most influential thinker of the enlightenment
+  - Two Treatises of Government (1689)
+    - rejected rights of kings.
+    - defined what it means to be human
+    - specified the proper structure of civil society
+
+C Montesquieu
+  - The spirit of the laws (1748)
+
+Adam Smith
+  - Wealth of Nation (1776) gives definition to humans' economic lives.
+
+Key Terms:
+- *natural rights*: the rights to life, liberty and property; believed to be given
+  by God; no government may take these rights away.
+- *state of nature*: the idea of living under no government and having no rules of society
+- *due process*: the requirement that the government, when dealing with people, has
+  a fair procedure that applies equally to all.
+- *chamber*: one of the houses of a legislature (in the U.S., Congress has two
+  chambers: the House of Representatives and the Senate)
+
+** Social Contract Theory
+
+*** The Social Contract
+
+Describe the development and influence of the social contract theory.
+
+Thomas Hobbles
+  - first contribute
+  - Leviathan (1651)
+
+Key Terms
+- *social contract*: a basic agreement between people and their government in which citizens consent to be governed, as long as the government protects their natural rights; the social contract provides a definition of human nature, specifies the natural rights to be protected, and describes the shared interests of the citizens
+- *social contract theory*: the idea that society is not natural but created by the people
+- *direct democracy*: a form of democracy where people participate personally in making government decisions instead of choosing representatives to do this for them
+- *Enlightenment*:  a period of Western European history following the Middle Ages; the source of people's ideas about natural rights
+
+*** The State of Nature and Natural Rights
+
+*** Social Contract and Consensual Political Rule
+
+Key Term
+political spectrum: a way to classify political ideologies; the American political spectrum consists primarily of liberalism (left) and conservatism (right), with most Americans identifying themselves as conservative, liberal, or moderate (center); in general, people on the left prefer more governmental involvement, while those on the right prefer less
+
+*** Summary
+
+Society is not natural or God-given. It is intentionally designed to further individuals' shared interests.
+Society is defined by a social contract which is based on an understanding of what it means to be human (i.e., human nature) and of what natural rights humans possess.
+The purpose of a social contract is to enhance the potential of human nature by protecting natural rights.
+While any form of government can be used, the optimal form of government is a representative democracy (i.e., a republic).
+Social contracts require continual renegotiation to remain relevant to present-day circumstances. This renegotiation, which can cause conflict, is managed through the democratic process. Failure to renegotiate the terms of a social contract can lead to the disintegration of society.
+
+** The Founding Documents
+
+** the articles of confederation
+** problems with the articles of confederation
+** the constitutional convention
+** the new jersey and virginia plans
+** compromises at the constitutional convention
+** federalist versus anti-federalist
+** the federalist papers
+** introduction to powers, checks, and balances
+** separation of powers
+** checks and balances
+** the principles of federalism
+
+* The Structure of the United States Government
+
+* The Development of Constitutional Democracy
+
+* The Development of Constitutional Democracy
+
+* The Development of Constitutional Democracy
+
+* Links
+
+[[https:lrps.wgu.edu/provision/368342113][Course Material]]

@@ -1,0 +1,226 @@
+:PROPERTIES:
+:ID:       b3646737-953b-47da-8a3a-be049dce1c99
+:mtime:    20230206181518 20220528222421
+:ctime:    20220404145758
+:END:
+#+title: orgMode
+#+date: [2022-04-04 Mon 14:57]
+
+
+* Introduction
+Org is a mode for keeping notes, maintaining TODO lists, and doing project
+planning with a fast and effective plain-text system.
+
+* Document Structure
+Org is an outliner.
+Outlines allow a document to be organized in a hierarchical structure.
+An overview of this structure is achieved by folding; hiding large parts of the
+document to show only the general document structure and the parts currently
+being worded on.
+
+** Headlines
+Headlines define the structure of an outline tree.
+Headlines ari denoted by star (*) followed by a space.
+Headlines are also called headings
+
+org-footnote-section: Footnotes
+a subtree with this headline will be silently ignored by exporting functions
+
+** Folding
+also called visibility cycling
+org use two commands; TAB and S-TAB to change the visibility in the buffer.
+look at SPC-m
+TAB: subtree cycling: rotate current subtree among the states.
+,-> FOLDED -> CHILDREN -> SUBTREE --.
+'--------------------------------------'
+S-TAB: global cycling: rotate the entire buffer among the states.
+,-> FOLDED -> CHILDREN -> SUBTREE --.
+'--------------------------------------'
+
+when first visiting an org file the global state is set to OVERVIEW
+can be configured through the variable org-startup-folded
+or on a per-file basis by adding a 'STARTUP' keyword to 'overview', 'content',
+'showall', 'showeverthing' or 'show<n>levels'
+
+** Plain Lists
+- Unordered list items start with '-', '+', or '*' as bullets.
+- Ordered list items start wit "1." or '1)'.
+- Description list use '::' to separate the term from the description.
+
+* Tables
+any line with pipe '|' as the first non-whitespace character is considered part
+of a table.
+'|' is also the column separator.
+| this | is a  | table |
+|------+-------+-------|
+| work | stent | tto   |
+
+* Hyperlinks
+'[\[LINK][DESCRIPTION]]'
+'[[LINK]]'
+
+Internal links
+'[[#my-custom-id]]' which links to the entry with 'CUSTOM_ID' property
+'my-custom-id'.
+[[Introduction]] , [[Document Structure][test]]
+
+* Tags
+every headline can contain a list of tags; placed at the end of the headline.
+tags can contain; letters, numbers, '_', and '@'
+tags a denoted by a semicolon before and after tag; :tag:
+multiple tags: :tag1:tag2:
+
+using #+FILETAGS: :tag1:tag2: will set tags for the entire file
+
+can set the default tags for a given file using:
+'#+TAGS: :tag1:tag2:'
+
+* Getting Started with Org Mode
+Read org mode manual with M-x org-info.
+M-RET to insert new headline at current level.
+** org-toggle-heading : SPC-m-h
+** org-toggle-item : SPC-m-i
++ Unordered list item one
++ Unordered list item two
+  - You can use dash instead of +
+  - Another list item.
+    1. Ordered list item one.
+    2. Ordered list item two.
+* A new headline
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+****** Level 6
+** Rotate current subtree between states: TAB
+** Rotate entire buffer between states : S-TAB
+** close (fold) the tree : zc
+** open (unfold) the tree : zo
+** fold everything : zM
+** unfold everything : zR
+* Motion
+** move left/down/up/right : h/j/k/l
+** next/prev heading : gj/gk OR CTR-j/k
+** move parent/child element : gh/gl
+* Structure Editing
+** insert new heading/item at current level : M-RET
+** insert new heading after subtree : C-RET
+** promote/demote heading : M-h/l  OR  M-LEFT/RIGHT
+** promote/demote current subtree : M-S-h/l  OR  M-S-LEFT/RIGHT
+** move subtree/list item up/down : M-j/k
+** move list item up/down but not subtree : M-S-j/k
+* Some advanced editing thanks to Evil Mode!
+** select an element : vae
+** delete an element : dae
+** select a subtree : vaR
+** delete subtree : daR
+** yank subtree : yiR
+* Insert Snippets
+** SPACE-i-s
+** bang : #!/usr/bin/env bash
+** Insert a license : pick a free license
+** current time  : Sun Feb  9 20:06:29 2020
+** pi :
+# -*- mode: snippet -*-
+3.141592654
+* TODO Set TAGS with : SPC-m-q :TODO:
+** TODO example one
+** TODO example two : S-RIGHT
+** To remove TODO : S-LEFT
+** toggle the todo state : SPC-m-t
+** org-schedule : SPC-m-s
+SCHEDULED: <2020-02-10 Mon 14:00-15:30>
+** [#A] org-priority : SPC-m-p
+** To create checkbox : - [ ]  [1/3] [33%]
+DEADLINE: <2020-02-22 Sat 01:00-03:00>
+- [ ] eggs
+- [ ] milk
+- [X] beer : C-c C-c OR RET
+** Move this file to front of agenda : C-c-[
+** Org-agenda : SPC-o-a
+** Tag search : SPC-o-a-m
+* Tables
+** Creating a table
+*** just start typing, e.g.|Name|Phone|Age RET |- TAB
+*** convert region to table : C-c |
+*** Go to forward/backward by cell : TAB/S-TAB
+*** ...  separator at least 3 spaces : C-3 C-c |
+*** Make org table headline : SPC m b -
+*** Duplicate a field in the cell below : S-RET
+| ONE                | TWO        | THREE | FOUR     |
+|--------------------+------------+-------+----------|
+| This is a sentence | Some stuff | More  | ffffffff |
+| This is a sentence | Some stuff |       |          |
+|                    | Some stuff |       |          |
+*** Move current row UP : M-k
+*** Move current row DOWN : M-j
+*** Move current column LEFT : M-h
+*** Move current column RIGHT : M-l
+*** Insert new column : M-S-l
+*** Delete current column : M-S-h
+*** Insert new row : M-S-j
+*** Delete current row : M-S-k
+** Commands available inside tables
+The following commands work when the cursor isinside a table.
+Outside of tables, the same keys may have other functionality.
+
+
+
+
+
+
+
+
+(1) Opening Documents
+       C-x C-f for find file
+       You can type full path to a file or create a new document.
+       You could also just open the path to a directory and find the file.
+(2) C-x C-+, C-x C-- For Zoom In/Out
+(3) Basic Navigation
+       C-n, C-p, C-f, C-b
+       M-f, M-b (forward/back by words)
+       C-a, C-e (beginning/end of line)
+       M-a, M-e (backwards/forwards by sentence)
+       M-{, M-} (backwards/forwards by paragraph)
+       M-"LESS THAN", M-"GREATER THAN" (beginning/end of file)
+       M-g g (goto line number)
+       ESC-number C-n/p/f/b (perform motion that number of times)
+(4) Cut, Copy and Paste
+       C-space to select text to copy/cut
+       C-w cut highlighted
+       M-w copy highlighted
+       C-y paste
+       C-k cut to end of line?
+       C-x backspace, M-k (backwards/forwards delete the current line)
+       M-z character cuts to that character
+       ESC-number ESC-d deletes that number of words
+       C-x u undo
+       C-h v kill-ring
+       C-x 0 to close the kill-ring window
+       C-y Esc-y to cycle through kill-ring for paste
+(4) Buffers
+       C-x b select another buffer
+       C-x C-b list all buffers
+       C-x k kill a buffer
+(5) Case change
+       M-c capitalizes a word
+       M-u uppercase word
+       M-l lowercase word
+(6) Spell Check
+       M-$ check current word
+       sudo pacman -S aspell-en (for Arch users)
+(7) Query replace M-% (shift-5)
+       Will only look forward in the file!
+       RET exits the query replace
+(8) Search
+       C-s to search forward
+       C-r to search backward
+(9) Splits
+       C-x 2 Horizontal Split
+       C-x 3 Vertical Split
+       C-x 0 Close window
+       C-x 4f Opens file in other window
+       C-x o moves cursor to next frame
+(10) Save and Exit
+       C-x C-s Save
+       C-x C-c Quit

@@ -1,0 +1,9 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+bash type,0-current-using::cIdioms-wip,<b>Print Hello World</b><br>{{c1::#include &lt;stdio.h&gt;}}<br>{{c1::printf('Hello World\n');}}<br>,Print a literal string on standard output,c idioms
+bash type,0-current-using::cIdioms-wip,<b>Print Hello 10 times</b><br>{{c1::#include &lt;stdio.h&gt;}}<br>{{c1::for (int i = 0; i < 10; i++) {}}<br>&ensp;{{c1::printf('Hello\n');}}<br>{{c1::}}}<br>,Loop to execute some code a constant number of times,c idioms
+
+bash type,0-current-using::cIdioms-wip,<b>Create a procedure</b><br>{{c1::void finish(void) {}}<br>&ensp;{{c1::printf('My job here is done.\n');}}<br>{{c1::}}},Like a function which doesn't return any value&comma; thus has only side effects (e.g. Print to standard output),c idioms

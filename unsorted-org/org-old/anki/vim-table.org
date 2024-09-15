@@ -1,0 +1,137 @@
+#+title: Vim-Table
+
+* Global
+:PROPERTIES:
+:TABLE_EXPORT_FILE: vim-table-wip.csv
+:TABLE_EXPORT_FORMAT: orgtbl-to-csv
+:END:
+
+| :help keyword           | open help for keyword                                                                                           |                | vim global         |
+| :o file                 | open file                                                                                                       |                | vim global         |
+| :saveas file            | save file as                                                                                                    |                | vim global         |
+| :close                  | close current pane                                                                                              |                | vim global         |
+| s                       | move cursor left                                                                                                | h              | vim motions        |
+| t                       | move cursor down                                                                                                | j              | vim motions        |
+| n                       | move cursor up                                                                                                  | k              | vim motions        |
+| b                       | move cursor right                                                                                               | l              | vim motions        |
+| H                       | move to top of screen                                                                                           |                | vim motions        |
+| M                       | move to middle of screen                                                                                        |                | vim motions        |
+| L                       | move to bottom of screen                                                                                        |                | vim motions        |
+| w                       | jump forwards to the start of a word                                                                            |                | vim motions        |
+| W                       | jump forwards to the start of a word (words can contain punctuation)                                            |                | vim motions        |
+| e                       | jump forwards to the end of a word                                                                              |                | vim motions        |
+| E                       | jump forwards to the end of a word (words can contain punctuation)                                              |                | vim motions        |
+| 0                       | jump to the start of the line                                                                                   |                | vim motions        |
+| ^                       | jump to the first non-blank character of the line                                                               |                | vim motions        |
+| $                       | jump to the end of the line                                                                                     |                | vim motions        |
+| g_                      | jump to the last non-blank character of the line                                                                |                | vim motions        |
+| gg                      | go to the first line of the document                                                                            |                | vim motions        |
+| G                       | go to the last line of the document                                                                             |                | vim motions        |
+| 5G                      | go to line 5                                                                                                    |                | vim motions        |
+| fx                      | jump to next occurrence of character x                                                                          |                | vim motions        |
+| tx                      | jump to before next occurrence of character x                                                                   |                | vim motions        |
+| }                       | jump to next paragraph (or function/block, when editing code)                                                   |                | vim motions        |
+| {                       | jump to previous paragraph (or function/block, when editing code)                                               |                | vim motions        |
+| zz                      | center cursor on screen                                                                                         |                | vim motions        |
+| c-b                     | move back one full screen                                                                                       |                | vim motions        |
+| c-f                     | move forward one full screen                                                                                    |                | vim motions        |
+| c-d                     | move forward 1/2 a screen                                                                                       |                | vim motions        |
+| c-u                     | move back 1/2 a screen                                                                                          |                | vim motions        |
+| i                       | insert before the cursor                                                                                        |                | vim insert         |
+| I                       | insert at the beginning of the line                                                                             |                | vim insert         |
+| a                       | insert (append) after the cursor                                                                                |                | vim insert         |
+| A                       | insert (append) at the end of the line                                                                          |                | vim insert         |
+| o                       | append (open) a new line below the current line                                                                 |                | vim insert         |
+| O                       | append (open) a new line above the current line                                                                 |                | vim insert         |
+| ea                      | insert (append) at the end of the word                                                                          |                | vim insert         |
+| Esc                     | exit insert mode                                                                                                |                | vim insert         |
+| r                       | replace a single character                                                                                      |                | vim editing        |
+| J                       | join line below to the current one                                                                              |                | vim editing        |
+| cc                      | change (replace) entire line                                                                                    |                | vim editing        |
+| cw                      | change (replace) to the start of the next word                                                                  |                | vim editing        |
+| ce                      | change (replace) to the end of the next word                                                                    |                | vim editing        |
+| cb                      | change (replace) to the start of the previous word                                                              |                | vim editing        |
+| c0                      | change (replace) to the start of the line                                                                       |                | vim editing        |
+| c$                      | change (replace) to the end of the line                                                                         |                | vim editing        |
+| xp                      | transpose two letters (delete and paste)                                                                        |                | vim editing        |
+| .                       | repeat last command                                                                                             |                | vim editing        |
+| u                       | undo                                                                                                            |                | vim editing        |
+| c-r                     | redo                                                                                                            |                | vim editing        |
+| v                       | start visual mode, mark lines, then do a command (like y-yank)                                                  |                | vim visual marking |
+| V                       | start linewise visual mode                                                                                      |                | vim visual marking |
+| o                       | move to other end of marked area                                                                                |                | vim visual marking |
+| O                       | move to other corner of block                                                                                   |                | vim visual marking |
+| aw                      | mark a word                                                                                                     |                | vim visual marking |
+| ab                      | a block with ()                                                                                                 |                | vim visual marking |
+| aB                      | a block with {}                                                                                                 |                | vim visual marking |
+| ib                      | inner block with ()                                                                                             |                | vim visual marking |
+| iB                      | inner block with {}                                                                                             |                | vim visual marking |
+| Esc                     | exit visual mode                                                                                                |                | vim visual marking |
+| c-v                     | start visual block mode                                                                                         |                | vim visual marking |
+| >                       | shift text right                                                                                                |                | vim visual         |
+| <                       | shift text left                                                                                                 |                | vim visual         |
+| y                       | yank (copy) marked text                                                                                         |                | vim visual         |
+| d                       | delete marked text                                                                                              |                | vim visual         |
+| ~                       | switch case                                                                                                     |                | vim visual         |
+| yy                      | yank (copy) a line                                                                                              |                | vim paste cut      |
+| 2yy                     | yank (copy) 2 lines                                                                                             |                | vim paste cut      |
+| yw                      | yank (copy) the characters of the word from the cursor position to the start of the next word                   |                | vim paste cut      |
+| y$                      | yank (copy) to end of line                                                                                      |                | vim paste cut      |
+| p                       | put (paste) the clipboard after cursor                                                                          |                | vim paste cut      |
+| P                       | put (paste) before cursor                                                                                       |                | vim paste cut      |
+| dd                      | delete (cut) a line                                                                                             |                | vim paste cut      |
+| 2dd                     | delete (cut) 2 lines                                                                                            |                | vim paste cut      |
+| dw                      | delete (cut) the characters of the word from the cursor position to the start of the next word                  |                | vim paste cut      |
+| D                       | delete (cut) to the end of the line                                                                             |                | vim paste cut      |
+| d$                      | delete (cut) to the end of the line                                                                             |                | vim paste cut      |
+| d^                      | delete (cut) to the first non-blank character of the line                                                       |                | vim paste cut      |
+| d0                      | delete (cut) to the begining of the line                                                                        |                | vim paste cut      |
+| x                       | delete (cut) character                                                                                          |                | vim paste cut      |
+| /pattern                | search for pattern                                                                                              |                | vim search replace |
+| ?pattern                | search backward for pattern                                                                                     |                | vim search replace |
+| \vpattern               | 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed) |                | vim search replace |
+| k                       | repeat search in same direction                                                                                 | n              | vim search replace |
+| K                       | repeat search in opposite direction                                                                             | N              | vim search replace |
+| :%s/old/new/g           | replace all old with new throughout file                                                                        |                | vim search replace |
+| :%s/old/new/gc          | replace all old with new throughout file with confirmations                                                     |                | vim search replace |
+| :noh                    | remove highlighting of search matches                                                                           |                | vim search replace |
+| :vimgrep /pattern/ {file} | search for pattern in multiple files                                                                            |                | vim search files   |
+| :cn                     | jump to the next match                                                                                          |                | vim search files   |
+| :cp                     | jump to the previous match                                                                                      |                | vim search files   |
+| :copen                  | open a window containing the list of matches                                                                    |                | vim search files   |
+| :w                      | write (save) the file, but don't exit                                                                           |                | vim exiting        |
+| :w !sudo tee %          | write out the current file using sudo                                                                           |                | vim exiting        |
+| :wq                     | write (save) and quit                                                                                           | :x ZZ          | vim exiting        |
+| :q                      | quit (fails if there are unsaved changes)                                                                       |                | vim exiting        |
+| :q!                     | quit and throw away unsaved changes                                                                             | ZQ             | vim exiting        |
+| :e file                 | edit a file in a new buffer                                                                                     |                | vim multiple files |
+| :bnext                  | go to the next buffer                                                                                           | :bn            | vim multiple files |
+| :bprev                  | go to the previous buffer                                                                                       | :bp            | vim multiple files |
+| :bd                     | delete a buffer (close a file)                                                                                  |                | vim multiple files |
+| :ls                     | list all open buffers                                                                                           |                | vim multiple files |
+| :sp file                | open a file in a new buffer and split window                                                                    |                | vim multiple files |
+| :vsp file               | open a file in a new buffer and vertically split window                                                         |                | vim multiple files |
+| c-ws                    | split window                                                                                                    |                | vim multiple files |
+| c-ww                    | switch windows                                                                                                  |                | vim multiple files |
+| c-wq                    | quit a window                                                                                                   |                | vim multiple files |
+| c-wv                    | split window vertically                                                                                         |                | vim multiple files |
+| c-wh                    | move cursor to the left window (vertical split)                                                                 |                | vim multiple files |
+| c-wl                    | move cursor to the right window (vertical split)                                                                |                | vim multiple files |
+| c-wj                    | move cursor to the window below (horizontal split)                                                              |                | vim multiple files |
+| c-wk                    | move cursor to the window above (horizontal split)                                                              |                | vim multiple files |
+| :tabnew                 | open a file in a new tab                                                                                        | :tabnew file   | vim tabs           |
+| c-wT                    | move the current split window into its own tab                                                                  |                | vim tabs           |
+| gt                      | move to the next tab                                                                                            | :tabnext :tabn | vim tabs           |
+| gT                      | move to the previous tab                                                                                        | :tabprev :tabp | vim tabs           |
+| <number>gt              | move to tab <number>                                                                                            |                | vim tabs           |
+| :tabmove <number>       | move current tab to the <number>th position (indexed from 0)                                                    |                | vim tabs           |
+| :tabclose               | close the current tab and all its windows                                                                       | :tabc          | vim tabs           |
+| :tabonly                | close all tabs except for the current one                                                                       | :tabo          | vim tabs           |
+| :tabdo command          | run the command on all tabs (e.g. :tabdo q - closes all opened tabs)                                            |                | vim tabs           |
+
+
+*  Not add yet
+| b        | jump backwards to the start of a word                                 |    |
+| B        | jump backwards to the start of a word (words can contain punctuation) |    |
+| s             | delete character and substitute text                                 | s | vim editing        |
+| S             | delete line and substitute text (same as cc)                         | S | vim editing        |

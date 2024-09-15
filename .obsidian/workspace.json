@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/lpi-lpic-3-security.md",
+                "file": "journals/2024-09-15.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/lpi-lpic-3-security.md",
+                "file": "journals/2024-09-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/lpi-lpic-3-security.md",
+                "file": "journals/2024-09-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/lpi-lpic-3-security.md"
+                "file": "journals/2024-09-15.md"
               }
             }
           },
@@ -254,6 +254,8 @@
   },
   "active": "e679b12291c98417",
   "lastOpenFiles": [
+    "linux/lpi-lpic-3-security.md",
+    "journals/2024-09-15.md",
     "linux/lpi-lpic-1.md~",
     "linux/lpi-lpic-2.md~",
     "linux/lpi-bsd-specialist.md~",
@@ -268,7 +270,6 @@
     "linux/dsd",
     "linux/dopt",
     "linux/ose",
-    "linux/wde",
     "linux/lpi-security-essentials.md",
     "linux/lpi-security-essentials.md foo.md",
     "linux/lpi-lpic-3.md",
@@ -289,7 +290,6 @@
     "education/education.md",
     "journals/2024-06-27.md",
     "security-certification-roadmap.md",
-    "test.md",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",

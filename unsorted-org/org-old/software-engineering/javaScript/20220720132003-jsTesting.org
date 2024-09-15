@@ -1,0 +1,1042 @@
+:PROPERTIES:
+:ID:       074b9c13-5fdb-4378-b855-56bc8c45a903
+:mtime:    20230206181311 20220720132221
+:ctime:    20220720132003
+:END:
+#+title: jsTesting
+#+date: [2022-07-20 Wed 13:20]
+
+** Testing Basics
+*** Test-driven development
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to use the test-driven development philosophy to determine good tests for a program before you write code.
+
+Overview
+How do you know if your code is working as it should? And when you're updating code, how do you know whether your new code will work or if it will break something? Programmers use tests to verify that code is working correctly before they merge to production. Particularly in larger companies, some developers follow a process called test-driven development (TDD). In this lesson, you will learn what TDD is and how to apply it to your coding process.
+
+Key Terms
+Happy path
+The default scenario for using a function, with no edge cases or error conditions
+Tip
+Many of the assessments in this program are autograded using tests, so understanding the basics of testing will also help you throughout this program.
+
+Test-driven development
+Often, developers who prioritize building functional and robust code prioritize the test-driven development process when writing their tests.
+
+Key Term
+Test-driven development: TDD, a process of first determining what you want your code to do and writing tests that your code will need to pass, and then writing the code
+
+Key Term
+Test: Code that checks whether or not some other code works as intended
+
+Test-driven development benefits you, the developer, in the following ways:
+
+It helps you fully understand the requirements for your function, because you have to express them by writing test code. This also helps other people understand your code.
+
+It helps you relax when code doesn't work. This attitude will help you think more clearly when debugging.
+
+It helps you fearlessly refactor and improve your code when you need to, because the tests will let you know if you break anything.
+
+It helps you frequently experience the joy of working code, because getting a test to pass feels great! These repeated moments of triumph will make developing code more enjoyable.
+
+TDD often takes place at the level of individual functions. To begin applying TDD to a function, follow the process detailed below:
+
+Determine inputs, outputs, and the function name. Put another way, what does the function do?
+
+Determine the happy path. The term happy path refers to the common scenario for using a function. So determining the happy path means ignoring any exceptions or odd cases (such as a missing parameter).
+
+Write the smallest test possible. For example, you may write a test that just checks whether or not the function exists.
+
+Write code to make the test pass. If you are testing for whether or not the function exists, you may just write the function.
+
+Repeat steps three and four, updating the test to check for the next step on the road to the happy path. For example, the next test that you write may be that it returns a value.
+
+Consider alternative cases and exceptions. For example, what should happen if a parameter is missing?
+
+Repeat steps three and four with alternative cases. Essentially, you should build out the function to accommodate all kinds of possible options.
+
+TDD walk-through
+Imagine that you wish to build a function that takes in a number of scores that students received on an exam, and returns the student who received the highest score. Now, use this example to explore the TDD process step by step.
+
+Step 1: Determine inputs, outputs, and the function name
+For the input, you may decide that an array like the following makes the most sense.
+
+[
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Rebecca Mills", score: 8.7 },
+];
+The output should be a single object that represents the student with the highest score, as follows:
+
+{ name: "Shane Carey", score: 9.5 }
+Finally, you should decide on a descriptive name. In this example, highestScore() seems like a good name.
+
+Step 2: Determine the happy path
+Determining the happy path really just involves clearly stating your function's purpose.
+
+For example, in this case, you may describe the happy path as follows: "When given an array of objects that each have a name and score key, the highestScore() function should return one of those objects that has the highest score value."
+
+Notice that you are assuming that the input is an array of multiple items and that the object is of the correct shape. For now, that's okay!
+
+Step 3: Write the smallest test possible
+For a true TDD process, you would write a very small test that may not solve the entire problem but puts you on the right path. For example, the first test might look like this:
+
+if (typeof highestScore === "function") {
+  console.log("Test passed.");
+} else {
+  console.log("highestScore() is not a function.");
+}
+In this example, if the highestScore() function is defined, then typeof highestScore === "function" will evaluate to true. Then "Test passed." would be logged to the console.
+
+However, if you run the above code without having defined the function, you will receive the second "highestScore() is not a function." statement.
+
+Step 4: Write code to make your test pass
+If you wanted to pass the above test, you would only need to update your file to include the following:
+
+function highestScore() {}
+
+if (typeof highestScore === "function") {
+  console.log("Test passed.");
+} else {
+  console.log("highestScore() is not a function.");
+}
+Note that this doesn't solve the overall problem, but it does pass this test.
+
+Step 5: Repeat the steps until you have a solid test
+If you wanted to continue the TDD process, you might update your test and code to solve the following tests:
+
+Check that the function returns an object.
+
+Check that the function returns an object from the inputted array.
+
+Check that the function returns the object with the highest score.
+
+Your final function and test might look like this:
+
+// Function being tested
+function highestScore(students) {
+  let result = null;
+  let highScore = 0;
+
+  for (let i = 0; i < students.length; i++) {
+    let student = students[i];
+    if (student.score > highScore) {
+      highScore = student.score;
+      result = student;
+    }
+  }
+
+  return result;
+}
+
+// Setup phase
+const input = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Rebecca Mills", score: 8.7 },
+];
+const expected = input[0];
+
+// Run phase
+const actual = highestScore(input);
+
+// Check phase
+if (expected.name === actual.name && expected.score === actual.score) {
+  console.log("Test passed.");
+} else {
+  console.log(
+    "highestScore() did not return the student with the highest score."
+  );
+}
+Notice that this test has three phases:
+
+Setup: Where you prepare both the input data and the expected output data
+
+Run: Where you feed the input data to the function and collect the actual results
+
+Check: Where you compare the actual results to your expected results
+
+All tests have these three phases.
+
+Step 6: Consider alternative cases
+What else could happen when your function is getting used? For the highestScore() function, these are some of the additional cases that you might need to test:
+
+The list of students is undefined.
+
+The list of students is empty.
+
+There is only one person in the list.
+
+There are two students tied for the highest score.
+
+The uncommon and often tricky cases are called edge cases.
+
+Key Term
+Edge case: A problem that arises in code because of something unexpected
+
+Edge cases can include any number of scenarios that don't cover the happy path. It is easy to forget about edge cases when you are implementing your code, so it is important to cover them in the tests.
+
+Step 7: Write tests to cover edge cases
+To cover the edge cases, you would write tests for each edge case and follow the same process as you did before. By the end of your process, you may end up with the function below. This function will return null if the list of students is empty or undefined. If two students have the same score, it will return the first student.
+
+function highestScore(students) {
+  let result = null;
+  if (!students || !students.length) {
+    return result;
+  }
+
+  let highScore = 0;
+  for (let i = 0; i < students.length; i++) {
+    let student = students[i];
+    if (student.score > highScore) {
+      highScore = student.score;
+      result = student;
+    }
+  }
+
+  return result;
+}
+Notice that there isn't actually much that changed within the function. This can sometimes be the case when testing edge cases.
+
+Regardless, it's important to have tests; that way, if the function changes later, you can feel confident that you are still testing for possible edge cases.
+
+*** Unit testing with Mocha and Chai
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to write a series of unit tests using Mocha and Chai.
+
+Overview
+In the previous lesson, you wrote tests using if/else statements. But writing and running tests is much easier if you use a testing framework and assertion library instead. In this lesson, you'll learn how to do just that.
+
+Key Terms
+Unit test
+A test that checks a small piece of code, generally a single function
+Testing framework
+A program that automatically runs the tests so that you can easily run a complete set of tests whenever you update your code
+Assertion library
+A tool that will help check for equality between the actual and expected outputs from a function
+The video below provides an brief introduction to unit testing with Mocha and Chai. Start by watching the video, and then read through the rest of the lesson and complete the practice tasks. This will give you a thorough understanding of these concepts.
+
+
+Unit tests
+The tests that you will be writing are called unit tests. A unit test tests a small piece of code, generally a single function.
+
+If you have a large program, you should have unit tests for each function in your program. If you have thorough unit tests, the unit tests will point you to any functions that aren't working as expected. This makes it easy to track down where issues are.
+
+Testing framework
+In the previous lesson, you saw that you could manually call the highestScore() function and test it with if/else statements, like so:
+
+const input = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Rebecca Mills", score: 8.7 },
+];
+const expected = input[0];
+const actual = highestScore(input);
+if (expected.name === actual.name && expected.score === actual.score) {
+  console.log("Test passed.");
+} else {
+  console.log(
+    "highestScore() did not return the student with the highest score."
+  );
+}
+Although this approach works, running multiple tests requires multiple console.log() statements. This can make the test code confusing to read and the output difficult to interpret. So instead, you can use a testing framework.
+
+Key Term
+Testing framework: A program that automatically runs the tests so that you can easily run a complete set of tests whenever you update your code
+
+Mocha
+There are several testing frameworks for JavaScript. In this program, you will be using Mocha. Mocha tells you how to format your tests so that it can automatically run them. With Mocha, like with most testing frameworks, you will be writing a function for every test.
+
+Assertion library
+You will also be using an assertion library to help with testing. An assertion library is a tool that will help check for equality between the actual and expected outputs from a function. Assertion libraries are particularly useful for comparing more complex data structures, like arrays and objects.
+
+Chai
+In this program, the assertion library that you'll use is called Chai.
+
+Do this
+Function setup
+You will be creating a new function called averageScore(). This function will take an array of students with names and scores and return a number that represents the average score among all students. The following code shows the happy path for the function.
+
+const input = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Rebecca Mills", score: 8.7 },
+  { name: "Catarina Lima", score: 9.7 },
+];
+averageScore(input); //> 9.3
+Project setup
+Create a directory for this project and name it something like testing-with-mocha-chai. Then navigate to the new directory in the command line.
+
+Run npm init -y to create a package.json file with default values.
+
+Then install Mocha and Chai, as follows:
+
+npm install --save-dev mocha chai
+It's typical to include testing frameworks as a developer dependency, because testing is a process that you run in development rather than in production.
+
+Now, create a folder called src/ and create a file called main.js inside of it. You will be implementing the averageScore() function in this file.
+
+As shown below, start with an empty function stub and export the function.
+
+function averageScore(students) {
+  // TODO
+}
+
+module.exports = averageScore;
+Test files
+Generally, you will have a test file for every file in your project. Because you have the code file main.js, you will need a corresponding test file called main.test.js.
+
+Test files should have the suffix .test.js, because Mocha will be checking file names for that suffix when looking for test files to execute. It's conventional to give test files the same name as the file that they are testing, for easy reference.
+
+There are a few places where you can store test files. One option is to put them all inside of a single folder.
+
+Do this
+Create a test file
+Create the file main.test.js in a new folder called test.
+
+You will need to import the averageScore() function in order to test it, so start with this line:
+
+const averageScore = require("../src/main");
+At the end of this step, your project structure should look like the following:
+
+.
+├── node_modules
+├── package-lock.json
+├── package.json
+├── src
+│   └── main.js
+└── test
+    └── main.test.js
+Update package.json
+You need to tell Node which testing framework you are using and the command to run it. Update the package.json file to include the following script:
+
+{
+  "scripts": {
+    "test": "mocha test"
+  }
+}
+In the test script above, test references a folder named test.
+
+Run npm test
+The npm test command runs all of your tests. If you run it now, you will see the following:
+
+0 passing (1ms)
+The output shows you how many tests have passed or failed, and how long it took. This test output shows that zero tests are passing. This makes sense; you haven't written any tests yet.
+
+Writing a test
+For each test, you will call two special functions: describe() and it().
+
+The describe() function
+The describe() function allows you to describe what you are testing. This function takes in two arguments:
+
+A string message explaining what is being tested, which is often the name of the function or topic
+
+A callback function that contains a set of individual tests for the function or topic
+
+Here's an example:
+
+describe("averageScore", () => {
+  // More will go here
+});
+Think of describe() as a way to group a set of related tests together. You can optionally nest multiple describe() statements inside of each other, if it makes sense to create further subgroups for individual tests with a describe() block.
+
+The it() function
+Inside of the describe() callback function, use the it() function to define the steps for testing your function. The it() function takes in two arguments:
+
+A string message explaining a desired behavior of the function. Typically, these statements use the it() function name as part of a sentence.
+
+A callback function that defines the steps for testing the desired behavior of your function.
+
+Here's an example:
+
+describe("averageScore", () => {
+  it("should return the average score among all students", () => {
+    // More will go here
+  });
+});
+The above example is a typical test case. It reads like a sentence and describes the happy path.
+
+Do this
+Run your tests
+Copy the above JavaScript into your main.test.js file. Then, run your tests using the npm test command. You will see something like the following:
+
+averageScore
+  ✓ should return the average score among all students
+
+1 passing (3ms)
+Notice that it says that the tests are passing, but you still haven't actually written any tests.
+
+Mocha will run all of the tests. They are considered passing as long as they do not cause an error. Any tests that do cause an error will be considered to be failing.
+
+The expect() function
+In the it() function, use the expect() function to tell the test to throw an error if the result is not as expected.
+
+First, in your main.test.js file, you must require the expect() function from the Chai package:
+
+const expect = require("chai").expect;
+Then, you will be able to use the expect() function inside of the it() function.
+
+To compare if two values are the same, use the chained method to.equal() with expect(). For example, the following code checks whether 1+1 is equal to 2, and throws an error if those values aren't equal.
+
+expect(1 + 1).to.equal(2); // No error
+The following code doesn't get the expected result, so it will throw an error.
+
+expect(1 + 1).to.equal(1); // Error
+The entire passing test suite for the simple example above might look like this:
+
+const expect = require("chai").expect;
+
+describe("Checking equality", () => {
+  it("should return true if the equation is correct", () => {
+    expect(1 + 1).to.equal(2); // No error
+  });
+});
+Do this
+Add a new test
+First, include the following line at the top of your main.test.js file.
+
+const expect = require("chai").expect;
+Then, add the following inside of your it() function in the main.test.js file.
+
+const input = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Rebecca Mills", score: 8.7 },
+  { name: "Catarina Lima", score: 9.7 },
+];
+const expected = 9.3;
+const actual = averageScore(input);
+expect(actual).to.equal(expected);
+Finally, run npm test. You will see something like the following:
+
+averageScore
+  1) should return the average score among all students
+
+
+0 passing (6ms)
+1 failing
+
+1) averageScore
+      should return the average score among all students:
+    AssertionError: expected undefined to equal 9.3
+    at Context.<anonymous> (test/main.test.js:13:23)
+    at processImmediate (internal/timers.js:456:21)
+In the above output, you can see that one test is failing. It also describes why the test is failing:
+
+AssertionError: expected undefined to equal 9.3
+The undefined value is what is stored inside the actual variable in your test. This variable is undefined because the actual function hasn't been implemented!
+
+Make the test pass
+To make the test pass, you will have to implement the function in main.js:
+
+function averageScore(students) {
+  let totalScore = 0;
+  for (let i = 0; i < students.length; i++) {
+    totalScore += students[i].score;
+  }
+  return Number((totalScore / students.length).toFixed(1));
+}
+Then, run npm test. You will see something like the following:
+
+averageScore
+  ✓ should return the average score among all students
+
+
+1 passing (5ms)
+Complete example
+A completed example from this lesson can be found here:
+
+Testing basics: Unit testing with Mocha and Chai
+
+*** More with Chai
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to use different expect() methods to test your code.
+
+Overview
+The assertion library Chai includes many more ways to test your code besides to.equal(). In this lesson, you will learn different methods that you can call to more easily test your code.
+
+Start by watching the video below, which provides a brief introduction to this topic. Then, read through the rest of the lesson and complete the practice work required. This will give you a full understanding of these concepts.
+
+
+Code starters
+Download the following code to your machine, and follow the instructions to get everything running as expected.
+
+Testing: More with Chai (Starter)
+When you run npm test, you should have a single test failing.
+
+Using the documentation
+As you can see from Chai's documentation, there are many different methods that you can use for testing. In general, you should consider having the documentation open while you are learning to build your own tests.
+
+In this lesson, you will learn some of the more common methods—but don't let your learning stop there!
+
+The to.be.a() method
+One method that you can use in tests is the to.be.a() method. This method allows you to check for the expected result's data type.
+
+expect("Score").to.be.a("string");
+expect(10).to.be.a("number");
+This method is particularly useful if you are following a strict TDD process. Early on, you may just check whether or not a returned value is of a certain type, before later testing whether or not it is the right value.
+
+There is also a to.be.an() method, which works exactly the same way.
+
+expect({}).to.be.an("object");
+Do this
+Remove extraneous checks
+Although the to.be.a() method can be very useful when first writing a function, it becomes extraneous as you add more specific tests. For example, take a look at the following code from the project that you downloaded at the beginning of this lesson.
+
+const actual = medianScore(students);
+const expected = 8.4;
+expect(actual).to.be.a("number");
+expect(actual).to.equal(expected);
+In this case, the to.equal() check is more specific and covers the check for to.be.a("number").
+
+Take a moment to remove the to.be.a() statements in your test file.
+
+The to.equal() method versus the to.eql() method
+Take a look at the following code. What do you expect the output to be?
+
+[] === [];
+The above code will result to false. Despite the fact that the two arrays look the same, each of the arrays is unique and has its own reserved memory.
+
+Often, while testing, you'll want to check whether or not one object or array matches another. For example, from the project that you downloaded earlier, this test is currently failing:
+
+const actual = topScoringStudent(students);
+const expected = { name: "Riley Morgan", score: 9.8 };
+expect(actual).to.equal(expected);
+When you look at the test failure, shown below, you may be even more confused.
+
+AssertionError: expected { name: 'Riley Morgan', score: 9.8 } to equal { name: 'Riley Morgan', score: 9.8 }
+Although these objects look the same, they are different objects in memory. Instead, you can use to.eql() to check for deep equality. That is, this method will check the contents of arrays and objects to see if they are the same.
+
+expect(actual).to.eql(expected);
+Do this
+Update your tests
+Update the second test to use eql() instead of equal(). When you run the test again, all of the tests should pass.
+
+More expect() methods
+There are dozens of other methods and properties that you could use for testing. Here are some of the most common:
+
+empty
+include()
+lengthOf()
+true
+Note that it is generally preferred to use the specific methods (like to.have.lengthOf()) when possible, because it makes the code and error messages easier to understand.
+
+Complete example
+A completed example from this lesson can be found here:
+
+Testing: More with Chai
+
+*** Unit testing with Jest
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to write a series of unit tests using Jest.
+
+Overview
+In previous lessons, you saw how using a testing framework like Mocha and an assertion library like Chai can make writing tests easier. Keep in mind that a testing framework is a program that automatically runs the tests so that you can easily run a complete set of tests whenever you update your code, whereas an assertion library is a tool that will help check for equality between the actual and expected outputs from a function. In this lesson, you will learn about another popular testing tool: Jest.
+
+Jest
+Jest is a JavaScript testing framework developed by Facebook. It includes both an assertion library and a test runner. Jest is used extensively throughout the curriculum and is one of the most popular testing frameworks nowadays, so it's important to be familiar with it. Luckily, its syntax is quite similar to Mocha and Chai.
+
+Do this
+Set up the project
+Create a directory for this project and name it something like testing-with-jest. Then navigate to the new directory in the command line.
+
+Run npm init -y to create a package.json file with default values.
+
+Then install Jest as a development dependency, as follows:
+
+npm install --save-dev jest
+Now, create a folder called src/ and create a file called main.js inside of it. You will be implementing a function called findHighestScoringStudent() inside this file.
+
+Start with an empty function stub and export the function, as follows:
+
+function findHighestScoringStudent(students) {
+  // TODO
+}
+
+module.exports = findHighestScoringStudent;
+Function setup
+You will be creating a new function called findHighestScoringStudent(). This function will take an array of students with names and scores and return the student with the highest score. If there are multiple students with the same highest score, you can return any one of them. The following code shows the happy path for the function.
+
+const mathStudents = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Catarina Lima", score: 9.7 },
+  { name: "Rebecca Mills", score: 8.7 },
+];
+findHighestScoringStudent(students); //> { name: "Catarina Lima", score: 9.7 }
+Test files
+Setting up test files in Jest is similar to setting up test files for Mocha. Test files should have the suffix .test.js, because Jest will be checking file names for that suffix when looking for test files to execute.
+
+Do this
+Create a test file
+In a new folder called tests/, create the file main.test.js and import the findHighestScoringStudent() function in this file so that you can test it:
+
+const findHighestScoringStudent = require("../src/main");
+At the end of this step, your project structure should look like this:
+
+.
+├── node_modules
+├── package-lock.json
+├── package.json
+├── src
+│   └── main.js
+└── tests
+    └── main.test.js
+Update package.json
+Add the following test script to your package.json:
+
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+Run npm test
+If you run the npm test command now, the test output would show that the test suite has failed to run, because you haven't written any tests.
+
+ FAIL  tests/main.test.js
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+Writing a test
+Similar to writing a test with Mocha and Chai, you will call the describe() and it() functions for each test. Keep in mind the describe() function allows you to group a set of related tests together. The it() function, which is typically nested inside of the describe() function, describes the steps for testing your function.
+
+Here's an example:
+
+describe("findHighestScoringStudent", () => {
+  it("should return the student with the highest score", () => {
+    // Steps for testing the function
+  });
+});
+Tip
+Sometimes, instead of the it() function, you may encounter the test() function instead. Both it() and test() are exactly the same; the it() function is an alias of test().
+
+The following setup, using the test() function, is also valid:
+
+describe("findHighestScoringStudent", () => {
+  test("should return the student with the highest score", () => {
+    // Steps for testing the function
+  });
+});
+Do this
+Run your tests
+Copy the above JavaScript into your main.test.js file. Then, run your tests using the npm test command. You will see something like the following:
+
+findHighestScoringStudent
+  ✓ should return the student with the highest score
+1 passing (1ms)
+Notice that the tests are passing even though you haven't actually written any tests. Similar to Mocha, Jest considers tests to be passing as long as they don't throw an error. Any tests that do cause an error will be considered to be failing.
+
+The expect() function and Jest matchers
+Next, you will use the expect() function to tell the test to throw an error if the result isn't as expected.
+
+Keep in mind that Jest already includes an assertion library, so there's no need to install a separate assertion library. Jest's assertion library exposes an expect() function that you can use to assert values in your tests.
+
+To perform an assertion, you will call matchers on the output of the expect() function. Previously, to check whether 1 + 1 is equal to 2 using the Chai library, you used the to.equal() matcher, as follows:
+
+expect(1 + 1).to.equal(2);
+To perform the same check with Jest, you will have to use the toBe() matcher. toBe() checks for exact equality, as follows:
+
+expect(1 + 1).toBe(2);
+To compare objects, use toEqual() instead, which recursively checks every property of an object. For example, the test below checks whether or not two given person objects have the same properties and values:
+
+test("two persons have the same name", () => {
+  const personOne = { name: "Jane" };
+  const personTwo = { name: "Jane" };
+  expect(personOne).toEqual(personTwo);
+});
+Besides toBe() and toEqual(), there are dozens of other Jest methods and properties that you could use for testing.
+
+Refer to the documentation to learn about some of the most common matchers for comparing truthiness, numbers, strings, arrays, and more in a test.
+
+Do this
+Add a new test
+In your tests/main.test.js file, add the following code inside of your it() function:
+
+const mathStudents = [
+  { name: "Shane Carey", score: 9.5 },
+  { name: "Catarina Lima", score: 9.7 },
+  { name: "Rebecca Mills", score: 8.7 },
+];
+
+const expected = { name: "Catarina Lima", score: 9.7 };
+const actual = findHighestScoringStudent(mathStudents);
+
+expect(actual).toEqual(expected);
+Now, run npm test. You will see a failing test:
+
+  findHighestScoringStudent
+    ✕ should return the student with the highest score (4 ms)
+
+  ● findHighestScoringStudent › should return the student with the highest score
+
+    expect(received).toEqual(expected) // Deep equality
+
+    Expected: {"name": "Catarina Lima", "score": 9.7}
+    Received: undefined
+Make the test pass
+To make the test pass, you will have to implement the function in main.js:
+
+function findHighestScoringStudent(students) {
+  let student = students[0];
+  for (let i = 1; i < students.length; i++) {
+    if (students[i].score > student.score) {
+      student = students[i];
+    }
+  }
+  return student;
+}
+Then, run npm test. You will see the test is now passing:
+
+findHighestScoringStudent
+  ✓ should return the student with the highest score
+1 passing (1ms)
+Now you know how to write unit tests with Jest. As you can see, the process for setting up tests with Jest is largely similar to Mocha and Chai, but Jest includes a built-in assertion library and offers a slightly different and cleaner matcher syntax.
+
+Complete example
+A completed example from this lesson can be found here:
+
+Testing basics: Unit testing with Jest
+
+*** Coverage
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to use code coverage tools to identify opportunities for new tests.
+
+Overview
+How do you know if you've tested your code adequately? Although experience will help, you can also make use of code coverage tools, which will let you know which parts of your code are covered by tests. Although code coverage tools aren't perfect, they can lead you in the right direction when it comes to testing.
+
+Code starters
+In this lesson, you'll continue working with the project that you downloaded in the previous lesson. If you need to, you can download the code below. Follow the installation instructions to get everything up and running.
+
+Testing: More with Chai
+How it works
+Take a look at the following function. How many possible outcomes are there?
+
+function assignGrade(score) {
+  let result = "F";
+
+  if (score > 0.9) {
+    result = "A";
+  } else if (score > 0.8) {
+    result = "B";
+  } else if (score > 0.7) {
+    result = "C";
+  }
+
+  return result;
+}
+For the above function, the following return values are possible:
+
+A
+
+B
+
+C
+
+F
+
+When building tests for this function, you want to cover as many cases as possible, increasing your code coverage. Code coverage tools work by looking at individual lines, functions, and paths that code can take, and comparing those to what you test. The more that you've tested, the higher score you receive on your code coverage test.
+
+Installing code coverage tools
+The nyc package makes it easy to integrate code coverage tools into your workflow. After installing the package as a developer dependency, you can update your test script with the following:
+
+{
+  "scripts": {
+    "test": "nyc --reporter=text mocha test"
+  }
+}
+Now when you run your tests, you'll see something like this at the bottom of your output:
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |
+ main.js  |     100 |      100 |     100 |     100 |
+----------|---------|----------|---------|---------|-------------------
+The above output shows two lines: one for all files and another for a specific file, main.js. Each column describes a different topic that is being assessed by the tool.
+
+Stmts refers to whether or not each individual statement of code (such as let result = 10;) was executed by tests.
+
+Branch refers to whether or not each branch (for example, if/else) was executed by tests.
+
+Funcs refers to whether or not each function was executed by tests.
+
+Lines literally refers to whether or not each line of code was executed by tests.
+
+Do this
+Install nyc
+Install the nyc package as a developer dependency, as follows:
+
+$ npm install --save-dev nyc
+Then, update your script as described above.
+
+Run npm test and take a look at the test coverage for your current project. Notice that you also have a .nyc_output folder now.
+
+Respond to coverage
+As you're building functions and tests, coverage tools can guide you in the right direction when you're trying to decide what (if anything) to test next.
+
+Do this
+Create a lack of coverage
+Add the following line of JavaScript to the top of both functions in the main.js file of the current project.
+
+if (!students.length) return null;
+Then, try running npm test. Notice which values have changed and which values have stayed the same.
+
+Get to full coverage
+Write two new tests for each of the functions, increasing your coverage to 100%.
+
+Prioritize branches
+Although code coverage tools are useful, it is definitely possible to spend too much time working on reaching 100%. Instead, it's worthwhile to focus specifically on increasing coverage of the Branch statements, because this is often the code that can break or cause unintended effects.
+
+Complete example
+A completed example from this lesson can be found here:
+
+** Error handling basics
+*** Understanding errors
+1 hourAverage Reading Time
+Learning Objective
+By the end of this lesson, you will learn how to identify and interpret a variety of errors.
+
+Overview
+Earlier in this program, you learned about syntax, reference, and type errors. As you may have seen by now, these aren't the only types of errors that you will encounter when building a Node.js application. Other types of errors include user errors, system errors, and assertion errors. In this lesson, you will focus on identifying and interpreting errors for faster debugging.
+
+Understanding errors
+Knowing how to properly identify and understand errors is an essential skill that every developer must possess. You already covered some standard JavaScript errors in the Error types lesson in the JavaScript foundations module, but now you'll take a deeper look at error messages. In this lesson, you'll go back to basics with error messages so that you can better understand how to work with them.
+
+Suppose you have a notfound.js file with the following code:
+
+// Import file
+const doesNotExist = require('./does-not-exist');
+Running the code above will throw an error similar to this one:
+
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module './does-not-exist'
+Require stack:
+- /home/user/Dev/Thinkful-Ed/tmp/notfound.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/home/gabriel/Dev/Thinkful-Ed/tmp/errors.js:1:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/user/Dev/Thinkful-Ed/tmp/notfound.js' ]
+}
+What does this error say to you? The error message is very explicit in this case. It says Error: Cannot find module './does-not-exist'. A MODULE_NOT_FOUND error code is also printed in the error message. Error codes are useful when you aren't sure about the error presented. Node's documentation sometimes provides more details of the error in hand:
+
+"MODULE_NOT_FOUND: A module file could not be resolved while attempting a require() or import operation."
+
+Tip
+When you don't understand an error message, search for the error code in Node's Errors documentation. If that still doesn't help, sites like Stack Overflow may give more information on the error code.
+
+Do this
+Create a new file and run the following code:
+
+const fs = require('fs');
+fs.writeFile("/temp/test", "Hello!");
+Then consult Node's Errors documentation to learn more about this error. What does the documentation say about this error?
+
+System errors
+A system error occurs when an application breaks a constraint set by the operating system. An example of this could be opening a file that doesn't exist or the application not having the proper system permissions.
+
+Suppose you want to read a text file called idontexist.txt:
+
+// Import JavaScript's fs library (used to read and write text files)
+const fs = require('fs')
+// Attempt to read the idontexist.txt file
+const content = fs.readFileSync("idontexist.txt")
+If you run the code above, you will get an error like this one:
+
+internal/fs/utils.js:308
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, open 'idontexist.txt'
+    at Object.openSync (fs.js:476:3)
+    at Object.readFileSync (fs.js:377:35)
+    at Object.<anonymous> (/home/user/Dev/Thinkful-Ed/tmp/errors2.js:2:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: 'idontexist.txt'
+}
+Notice how this error has a few properties that the previous error didn't have. System errors may include properties such as syscall, path, and errorno. Also, did you notice which properties are present in both this error and the previous one? The essential properties that all errors need to have are the error code and the error message.
+
+What is ENOENT anyway? ENOENT stands for Error No Entity. Some of these codes come from the operating system, so they may not be as explicit as other error types. If you have a hard time understanding the error, you can always search for the error code in Node's documentation:
+
+"ENOENT (No such file or directory): Commonly raised by fs operations to indicate that a component of the specified pathname does not exist. No entity (file or directory) could be found by the given path."
+
+Tip
+Node's documentation provides a list of common system errors. Review the list and try to remember if you have encountered any of those errors.
+
+Do this
+Create a new file and run the following code:
+
+const fs = require('fs');
+fs.mkdirSync('temp_dir');
+What does Node's Errors documentation say about this error?
+
+Assertion errors
+Assertion errors indicate a failure of an assertion. These types of errors are more commonly used in testing. There are several assertion libraries, such as Chai, that use these types of errors or similar ones.
+
+The code below uses the assert module to assert that 1 === 2.
+
+const assert = require('assert');
+assert.strictEqual(1, 2);
+Obviously, this will throw the following error:
+
+assert.js:104
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1 !== 2
+
+    at Object.<anonymous> (/home/user/Dev/Thinkful-Ed/tmp/errors2.js:2:8)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 2,
+  operator: 'strictEqual'
+}
+Now, do a quick search for ERR_ASSERTION in Node's documentation:
+
+"A special type of error that can be triggered whenever Node.js detects an exceptional logic violation that should never occur. These are raised typically by the assert module."
+
+Notice how an AssertionError has different properties than other errors. Assertion errors can have actual, expected, and operator properties. The error message and the properties clearly indicate how the actual value differs from the expected value when using the strictEqual operator.
+
+Note: In Testing basics, you reviewed some of the most commonly used assertion methods in testing. Now, check out Chai's documentation to get a broader perspective of the different operators that you may encounter in tests. Becoming familiar with the assert API and the BDD API will help you better understand any assertion errors that you may encounter.
+
+*** Writing errors
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to create custom error messages.
+
+Overview
+Errors are a way of life when it comes to programming. However, errors can also be a powerful way to improve your functions and ensure that they are used correctly. In this lesson, you'll learn how to create errors to signal to yourself and other developers when something wrong is happening.
+
+Creating errors
+You encountered a few different error types and descriptions in the first part of the program. Review them briefly:
+
+ReferenceError: [name] is not defined
+
+TypeError: cannot read property '[name]' of undefined
+
+TypeError: [name] is not a function
+
+SyntaxError: Unexpected token
+
+These kinds of error messages can be more informative than a console.log() statement or a silently failing problem. So next, you're going to learn how to use the throw keyword to create your own errors like this.
+
+The throw keyword
+You can make code generate an error by using the throw keyword. Here's an example:
+
+let secret = 42;
+let guess = 55;
+
+if (guess !== secret) {
+  throw new Error("That's not the secret number!");
+}
+When JavaScript sees throw, it stops running the code (similar to return) and "unwinds" the code. Then it then prints out the error.
+
+Backtraces
+To make it easier for developers to understand what's going on, JavaScript also prints out a backtrace. Each line walks backward through the functions that were called before the error, like this:
+
+function one() {
+  two();
+}
+function two() {
+  three();
+}
+function three() {
+  throw new Error("Here's the error");
+}
+one();
+Then, the error will be as follows:
+
+Error: Here's the error
+    at three (test.js:8:9)
+    at two (test.js:5:3)
+    at one (test.js:2:3)
+First, you see the error message itself. Next, each line tells you the name of the function and which line of the program this error came from.
+
+Error values
+The new Error() syntax is a special syntax for creating objects. This syntax will not be covered in this lesson. However, you can throw anything, not just new Error('message'). Here are some examples:
+
+throw "here's what went wrong";
+throw 10;
+throw { message: "This a string in an object" };
+throw ["two", "message strings"];
+When to create errors
+Now you know how to create errors. But when should you create them?
+
+It is most useful to throw errors when a function is being used incorrectly. For example, if an essential parameter is missing, you may consider throwing an error. Here's an example:
+
+function checkSecretPassword(password) {
+  if (!password) throw "No password given!";
+  return password === "SECRET";
+}
+In the above function, if the password parameter is undefined, an error will be thrown. This will stop other members of your team (or your future self) from making the mistake of not including a password.
+
+*** Try and catch
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to handle errors by using try and catch statements.
+
+Overview
+Sometimes, you'll want your code to continue running despite an error. This can be useful in cases where you know that it's possible that your code may fail. In this lesson, you'll learn how to handle errors so that your code keeps running. However, this doesn't mean that you should use these methods on all of your code! Error-free code is still the best kind of code.
+
+The try and catch statements
+You can use try...catch statements to stop errors before they stop your whole program. To do so, wrap the code that you want to handle in a try block, and then catch any errors that happen inside the try block. The syntax looks like this:
+
+try {
+  throw new Error("Something went wrong");
+} catch (error) {
+  console.log(`We handled the error: ${error}`);
+}
+Usually, this approach is used to recover from possible errors—not ones that are guaranteed.
+
+For example, take a look at the function below. Here, an error is thrown if the number is too small. Otherwise, the number is printed without an error message. Either way, the function will continue to run and will not stop the execution of the program.
+
+function getRandomNumber() {
+  // Math.floor(Math.random() * 100) generates a random number
+  const randomNumber = Math.floor(Math.random() * 100);
+  const min = 10;
+  try {
+    if (randomNumber < min) {
+      throw `Random number is too small! ${randomNumber} is less than ${min}.`;
+    } else {
+      console.log(`The random number is: ${randomNumber}`);
+    }
+  } catch (error) {
+    console.log(`An error occurred: ${error}`);
+  }
+}
+Also, notice that the catch statement includes access to the error that was thrown. That error is exactly what was thrown.
+
+For example, in the code below, note how error is being operated on as an array, because that is what was thrown.
+
+try {
+  throw ["one", "two", "three"];
+} catch (error) {
+  const errors = error.join(", ");
+  console.log(`Multiple errors: ${errors}`);
+}

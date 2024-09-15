@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       3aebecef-3bde-4417-9ac8-4da3a8e249ca
+:mtime:    20230717155225 20230717132035 20230206181350 20221117232338
+:ctime:    20220321173315
+:END:
+#+title: english-idx
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+
+english word list
+basic englis
+
+simplified technical english
+globish
+new general service list
+[[id:d3300714-3697-443a-9405-39cf6f8c1879][ngsl words]]
+[[id:60fa282f-f313-48c6-9bab-c2a3607d6074][word-list]]
+
+[[id:7b4d2f49-59bc-49ce-a68c-6d94c4e31471][english-words]]
+
+
+New General Service List Project
+  New Dolch List
+  NGSL-Spoken
+  New General Service List (2809)
+  New Academic Word List
+  TOEIC Service List
+  Business Service List
+  Fitness English List

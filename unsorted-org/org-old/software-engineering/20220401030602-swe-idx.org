@@ -1,0 +1,85 @@
+:PROPERTIES:
+:ID:       9112127d-96f8-47f7-b359-e1ceb5056d94
+:header-args: :tangle README.org
+:auto_tangle: t
+:TOC: include all :ignore this
+:mtime:    20230711164611 20230303115433 20230206181454 20221013193133
+:ctime:    20220401030602
+:END:
+#+title: Software Engineering Index
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+
+[[id:ef3640e7-5eb4-4301-af10-2948e073cc9f][progIdioms]]
+
+[[id:b96af39a-3d47-4c7c-9da5-b3c4cbc673ad][programming]]
+
+- [[id:d8c234ae-93fa-4569-8d7b-d10ae08377a9][html]]
+  -[[id:41da1c79-4e25-489d-b6b7-7ba091e1b9b0][html-ele-refer]]
+- [[id:bbad4e71-066d-4231-953a-3b5ed0891141][css]]
+- [[id:5c4573b4-c79d-4bcd-9fb8-7f22e64f1675][clang]]
+- [[id:c4ffc59c-65b7-4f0e-b749-bcd46ef75fb0][thinkful]]
+
+[[id:1eac6cff-c4c4-4473-a181-984ebefa877c][Go Language]]
+
+assembly
+[[id:683d6936-787d-4cd0-bb00-274ac75d0fc6][taoalp]]
+
+[[id:fe411eef-058b-4fe7-909f-6c4214bcc636][algorithms idx]]
+algorithms.md
+data-structures.md
+
+[[id:dea16eb4-d34a-421b-b037-9f3e606ec001][git]]
+
+tse
+lisp
+  scheme
+    [[id:8f689d2c-c85c-4020-b7da-d56d3f6a7acc][guile]]
+    racket
+  [[id:292ecba9-bd17-40cd-b3cd-aceec77ebe6d][clojure]]
+insert snippets
+  SPC-i-s
+
+[[id:5c4573b4-c79d-4bcd-9fb8-7f22e64f1675][C Programming Language]]
+[[id:7266b338-b1ce-4beb-85c2-6c603dcd7796][C++]]
+c-cpp.md
+c-lang.md
+
+[[id:63bc8d8d-4fc8-4b34-8881-43ace1415a53][javascript]]
+
+[[id:d8c234ae-93fa-4569-8d7b-d10ae08377a9][HTML]]
+HTML.md
+
+[[id:bbad4e71-066d-4231-953a-3b5ed0891141][CSS]]
+
+[[id:250f556f-145d-41cf-9178-57d26a5a37b2][Rust]]
+[[id:7ac9fc0d-c140-4772-8df4-271cba2b68d9][Perl]]
+[[id:864a671e-e437-4c35-9fe7-a92c2daaf451][PHP]]
+
+python
+
+00-programming-idx.md
+
+
+programming.md
+prolang.md
+
+
+assembly
+scheme
+  racket
+c
+golang
+
+need fit bash in there
+vimlp
+Perl
+
+* [[file:README.org][Readme]]
+
+#+begin_src org
+,#+title: Readme for Software Engineering
+
+placeholder
+#+end_src

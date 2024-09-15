@@ -1,0 +1,1012 @@
+* guix_refer_manual
+:PROPERTIES:
+:NOTER_DOCUMENT: ../Books/00-Computing/Nix/guix_refer_manual.pdf
+:NOTER_PAGE: 42
+:END:
+** Skeleton
+*** 1 Introduction
+:PROPERTIES:
+:NOTER_PAGE: (10 . 0.090909)
+:END:
+GNU Guix is a package management tool
+Guix makes it easy for:
+unprivileged user to install, upgrade, or remove software packages
+to roll back to a previous package set
+to build packages from sources
+generally assist with the creation and maintenance of software environments
+**** Managing Software the Guix Way
+:PROPERTIES:
+:NOTER_PAGE: (10 . 0.310149)
+:END:
+**** GNU Distribution
+:PROPERTIES:
+:NOTER_PAGE: (11 . 0.189783)
+:END:
+*** 2 Installation
+:PROPERTIES:
+:NOTER_PAGE: (13 . 0.090909)
+:END:
+**** Binary Installation
+:PROPERTIES:
+:NOTER_PAGE: (13 . 0.396431)
+:END:
+**** Requirements
+:PROPERTIES:
+:NOTER_PAGE: (16 . 0.211822)
+:END:
+**** Running the Test Suite
+:PROPERTIES:
+:NOTER_PAGE: (17 . 0.288314)
+:END:
+**** Setting Up the Daemon
+:PROPERTIES:
+:NOTER_PAGE: (18 . 0.392058)
+:END:
+***** Build Environment Setup
+:PROPERTIES:
+:NOTER_PAGE: (18 . 0.584846)
+:END:
+***** Using the Offload Facility
+:PROPERTIES:
+:NOTER_PAGE: (20 . 0.090909)
+:END:
+***** SELinux Support
+:PROPERTIES:
+:NOTER_PAGE: (23 . 0.090909)
+:END:
+****** Installing the SELinux policy
+:PROPERTIES:
+:NOTER_PAGE: (23 . 0.090909)
+:END:
+****** Limitations
+:PROPERTIES:
+:NOTER_PAGE: (23 . 0.090909)
+:END:
+**** Invoking guix-daemon
+:PROPERTIES:
+:NOTER_PAGE: (24 . 0.238335)
+:END:
+**** Application Setup
+:PROPERTIES:
+:NOTER_PAGE: (28 . 0.492549)
+:END:
+***** Locales
+:PROPERTIES:
+:NOTER_PAGE: (28 . 0.090909)
+:END:
+***** Name Service Switch
+:PROPERTIES:
+:NOTER_PAGE: (29 . 0.090909)
+:END:
+***** X11 Fonts
+:PROPERTIES:
+:NOTER_PAGE: (29 . 0.090909)
+:END:
+***** X.509 Certificates
+:PROPERTIES:
+:NOTER_PAGE: (30 . 0.090909)
+:END:
+***** Emacs Packages
+:PROPERTIES:
+:NOTER_PAGE: (30 . 0.090909)
+:END:
+**** Upgrading Guix
+:PROPERTIES:
+:NOTER_PAGE: (30 . 0.671732)
+:END:
+*** 3 System Installation
+:PROPERTIES:
+:NOTER_PAGE: (31 . 0.090909)
+:END:
+**** Limitations
+:PROPERTIES:
+:NOTER_PAGE: (31 . 0.217087)
+:END:
+**** Hardware Considerations
+:PROPERTIES:
+:NOTER_PAGE: (31 . 0.474439)
+:END:
+**** USB Stick and DVD Installation
+:PROPERTIES:
+:NOTER_PAGE: (31 . 0.824694)
+:END:
+***** Copying to a USB Stick
+:PROPERTIES:
+:NOTER_PAGE: (32 . 0.090909)
+:END:
+***** Burning on a DVD
+:PROPERTIES:
+:NOTER_PAGE: (32 . 0.090909)
+:END:
+***** Booting
+:PROPERTIES:
+:NOTER_PAGE: (32 . 0.090909)
+:END:
+**** Preparing for Installation
+:PROPERTIES:
+:NOTER_PAGE: (33 . 0.090909)
+:END:
+**** Guided Graphical Installation
+:PROPERTIES:
+:NOTER_PAGE: (33 . 0.401823)
+:END:
+**** Manual Installation
+:PROPERTIES:
+:NOTER_PAGE: (35 . 0.642096)
+:END:
+***** Keyboard Layout, Networking, and Partitioning
+:PROPERTIES:
+:NOTER_PAGE: (35 . 0.845702)
+:END:
+****** Keyboard Layout
+:PROPERTIES:
+:NOTER_PAGE: (36 . 0.090909)
+:END:
+****** Networking
+:PROPERTIES:
+:NOTER_PAGE: (36 . 0.090909)
+:END:
+****** Disk Partitioning
+:PROPERTIES:
+:NOTER_PAGE: (37 . 0.090909)
+:END:
+***** Proceeding with the Installation
+:PROPERTIES:
+:NOTER_PAGE: (39 . 0.090909)
+:END:
+**** After System Installation
+:PROPERTIES:
+:NOTER_PAGE: (40 . 0.220646)
+:END:
+**** Installing Guix in a Virtual Machine
+:PROPERTIES:
+:NOTER_PAGE: (40 . 0.547069)
+:END:
+**** Building the Installation Image
+:PROPERTIES:
+:NOTER_PAGE: (41 . 0.212093)
+:END:
+**** Building the Installation Image for ARM Boards
+:PROPERTIES:
+:NOTER_PAGE: (41 . 0.090909)
+:END:
+*** 4 Getting Started
+:PROPERTIES:
+:NOTER_PAGE: (42 . 0.090909)
+:END:
+*** 5 Package Management
+:PROPERTIES:
+:NOTER_PAGE: (45 . 0.090909)
+:END:
+**** Features
+:PROPERTIES:
+:NOTER_PAGE: (45 . 0.329673)
+:END:
+**** Invoking guix package
+:PROPERTIES:
+:NOTER_PAGE: (46 . 0.50239)
+:END:
+**** Substitutes
+:PROPERTIES:
+:NOTER_PAGE: (56 . 0.090909)
+:END:
+***** Official Substitute Servers
+:PROPERTIES:
+:NOTER_PAGE: (56 . 0.295256)
+:END:
+***** Substitute Server Authorization
+:PROPERTIES:
+:NOTER_PAGE: (56 . 0.61238)
+:END:
+***** Getting Substitutes from Other Servers
+:PROPERTIES:
+:NOTER_PAGE: (57 . 0.546124)
+:END:
+***** Substitute Authentication
+:PROPERTIES:
+:NOTER_PAGE: (58 . 0.828332)
+:END:
+***** Proxy Settings
+:PROPERTIES:
+:NOTER_PAGE: (59 . 0.397949)
+:END:
+***** Substitution Failure
+:PROPERTIES:
+:NOTER_PAGE: (59 . 0.516859)
+:END:
+***** On Trusting Binaries
+:PROPERTIES:
+:NOTER_PAGE: (59 . 0.828332)
+:END:
+**** Packages with Multiple Outputs
+:PROPERTIES:
+:NOTER_PAGE: (60 . 0.391239)
+:END:
+**** Invoking guix gc
+:PROPERTIES:
+:NOTER_PAGE: (61 . 0.090909)
+:END:
+**** Invoking guix pull
+:PROPERTIES:
+:NOTER_PAGE: (63 . 0.757894)
+:END:
+**** Invoking guix time-machine
+:PROPERTIES:
+:NOTER_PAGE: (67 . 0.386817)
+:END:
+**** Inferiors
+:PROPERTIES:
+:NOTER_PAGE: (68 . 0.090909)
+:END:
+**** Invoking guix describe
+:PROPERTIES:
+:NOTER_PAGE: (70 . 0.090909)
+:END:
+**** Invoking guix archive
+:PROPERTIES:
+:NOTER_PAGE: (71 . 0.437095)
+:END:
+*** 6 Channels
+:PROPERTIES:
+:NOTER_PAGE: (74 . 0.090909)
+:END:
+**** Specifying Additional Channels
+:PROPERTIES:
+:NOTER_PAGE: (74 . 0.285951)
+:END:
+**** Using a Custom Guix Channel
+:PROPERTIES:
+:NOTER_PAGE: (74 . 0.840917)
+:END:
+**** Replicating Guix
+:PROPERTIES:
+:NOTER_PAGE: (75 . 0.313871)
+:END:
+**** Channel Authentication
+:PROPERTIES:
+:NOTER_PAGE: (75 . 0.807324)
+:END:
+**** Channels with Substitutes
+:PROPERTIES:
+:NOTER_PAGE: (76 . 0.481471)
+:END:
+**** Creating a Channel
+:PROPERTIES:
+:NOTER_PAGE: (76 . 0.771438)
+:END:
+**** Package Modules in a Sub-directory
+:PROPERTIES:
+:NOTER_PAGE: (77 . 0.76378)
+:END:
+**** Declaring Channel Dependencies
+:PROPERTIES:
+:NOTER_PAGE: (78 . 0.090909)
+:END:
+**** Specifying Channel Authorizations
+:PROPERTIES:
+:NOTER_PAGE: (78 . 0.644755)
+:END:
+**** Primary URL
+:PROPERTIES:
+:NOTER_PAGE: (80 . 0.186668)
+:END:
+**** Writing Channel News
+:PROPERTIES:
+:NOTER_PAGE: (80 . 0.422439)
+:END:
+*** 7 Development
+:PROPERTIES:
+:NOTER_PAGE: (82 . 0.090909)
+:END:
+**** Invoking guix shell
+:PROPERTIES:
+:NOTER_PAGE: (82 . 0.304621)
+:END:
+**** Invoking guix environment
+:PROPERTIES:
+:NOTER_PAGE: (87 . 0.401448)
+:END:
+**** Invoking guix pack
+:PROPERTIES:
+:NOTER_PAGE: (92 . 0.458391)
+:END:
+**** The GCC toolchain
+:PROPERTIES:
+:NOTER_PAGE: (97 . 0.677116)
+:END:
+**** Invoking guix git authenticate
+:PROPERTIES:
+:NOTER_PAGE: (98 . 0.090909)
+:END:
+*** 8 Programming Interface
+:PROPERTIES:
+:NOTER_PAGE: (99 . 0.090909)
+:END:
+**** Package Modules
+:PROPERTIES:
+:NOTER_PAGE: (99 . 0.430524)
+:END:
+**** Defining Packages
+:PROPERTIES:
+:NOTER_PAGE: (100 . 0.305659)
+:END:
+***** package Reference
+:PROPERTIES:
+:NOTER_PAGE: (103 . 0.090909)
+:END:
+***** origin Reference
+:PROPERTIES:
+:NOTER_PAGE: (107 . 0.307101)
+:END:
+**** Defining Package Variants
+:PROPERTIES:
+:NOTER_PAGE: (110 . 0.090909)
+:END:
+**** Build Systems
+:PROPERTIES:
+:NOTER_PAGE: (114 . 0.090909)
+:END:
+**** Build Phases
+:PROPERTIES:
+:NOTER_PAGE: (129 . 0.405559)
+:END:
+**** Build Utilities
+:PROPERTIES:
+:NOTER_PAGE: (132 . 0.510081)
+:END:
+***** Dealing with Store File Names
+:PROPERTIES:
+:NOTER_PAGE: (133 . 0.090909)
+:END:
+***** File Types
+:PROPERTIES:
+:NOTER_PAGE: (133 . 0.090909)
+:END:
+***** File Manipulation
+:PROPERTIES:
+:NOTER_PAGE: (133 . 0.090909)
+:END:
+***** File Search
+:PROPERTIES:
+:NOTER_PAGE: (135 . 0.090909)
+:END:
+***** Program Invocation
+:PROPERTIES:
+:NOTER_PAGE: (136 . 0.090909)
+:END:
+***** Build Phases
+:PROPERTIES:
+:NOTER_PAGE: (137 . 0.090909)
+:END:
+***** Wrappers
+:PROPERTIES:
+:NOTER_PAGE: (138 . 0.090909)
+:END:
+**** Search Paths
+:PROPERTIES:
+:NOTER_PAGE: (139 . 0.435638)
+:END:
+**** The Store
+:PROPERTIES:
+:NOTER_PAGE: (142 . 0.090909)
+:END:
+**** Derivations
+:PROPERTIES:
+:NOTER_PAGE: (144 . 0.090909)
+:END:
+**** The Store Monad
+:PROPERTIES:
+:NOTER_PAGE: (146 . 0.669429)
+:END:
+**** G-Expressions
+:PROPERTIES:
+:NOTER_PAGE: (151 . 0.265686)
+:END:
+**** Invoking guix repl
+:PROPERTIES:
+:NOTER_PAGE: (159 . 0.824312)
+:END:
+*** 9 Utilities
+:PROPERTIES:
+:NOTER_PAGE: (162 . 0.090909)
+:END:
+**** Invoking guix build
+:PROPERTIES:
+:NOTER_PAGE: (162 . 0.221997)
+:END:
+***** Common Build Options
+:PROPERTIES:
+:NOTER_PAGE: (162 . 0.657811)
+:END:
+***** Package Transformation Options
+:PROPERTIES:
+:NOTER_PAGE: (164 . 0.828332)
+:END:
+***** Additional Build Options
+:PROPERTIES:
+:NOTER_PAGE: (170 . 0.090909)
+:END:
+***** Debugging Build Failures
+:PROPERTIES:
+:NOTER_PAGE: (174 . 0.273537)
+:END:
+**** Invoking guix edit
+:PROPERTIES:
+:NOTER_PAGE: (175 . 0.295508)
+:END:
+**** Invoking guix download
+:PROPERTIES:
+:NOTER_PAGE: (175 . 0.56675)
+:END:
+**** Invoking guix hash
+:PROPERTIES:
+:NOTER_PAGE: (176 . 0.432121)
+:END:
+**** Invoking guix import
+:PROPERTIES:
+:NOTER_PAGE: (177 . 0.553107)
+:END:
+**** Invoking guix refresh
+:PROPERTIES:
+:NOTER_PAGE: (184 . 0.485947)
+:END:
+**** Invoking guix style
+:PROPERTIES:
+:NOTER_PAGE: (189 . 0.58308)
+:END:
+**** Invoking guix lint
+:PROPERTIES:
+:NOTER_PAGE: (191 . 0.385548)
+:END:
+**** Invoking guix size
+:PROPERTIES:
+:NOTER_PAGE: (193 . 0.837856)
+:END:
+**** Invoking guix graph
+:PROPERTIES:
+:NOTER_PAGE: (196 . 0.090909)
+:END:
+**** Invoking guix publish
+:PROPERTIES:
+:NOTER_PAGE: (200 . 0.518692)
+:END:
+**** Invoking guix challenge
+:PROPERTIES:
+:NOTER_PAGE: (204 . 0.30359)
+:END:
+**** Invoking guix copy
+:PROPERTIES:
+:NOTER_PAGE: (206 . 0.644122)
+:END:
+**** Invoking guix container
+:PROPERTIES:
+:NOTER_PAGE: (207 . 0.473779)
+:END:
+**** Invoking guix weather
+:PROPERTIES:
+:NOTER_PAGE: (208 . 0.090909)
+:END:
+**** Invoking guix processes
+:PROPERTIES:
+:NOTER_PAGE: (210 . 0.090909)
+:END:
+*** 10 System Configuration
+:PROPERTIES:
+:NOTER_PAGE: (212 . 0.090909)
+:END:
+**** Using the Configuration System
+:PROPERTIES:
+:NOTER_PAGE: (212 . 0.403871)
+:END:
+***** Bootloader
+:PROPERTIES:
+:NOTER_PAGE: (213 . 0.090909)
+:END:
+***** Globally-Visible Packages
+:PROPERTIES:
+:NOTER_PAGE: (214 . 0.090909)
+:END:
+***** System Services
+:PROPERTIES:
+:NOTER_PAGE: (214 . 0.090909)
+:END:
+***** Instantiating the System
+:PROPERTIES:
+:NOTER_PAGE: (219 . 0.090909)
+:END:
+***** The Programming Interface
+:PROPERTIES:
+:NOTER_PAGE: (219 . 0.090909)
+:END:
+**** operating-system Reference
+:PROPERTIES:
+:NOTER_PAGE: (220 . 0.281648)
+:END:
+**** File Systems
+:PROPERTIES:
+:NOTER_PAGE: (223 . 0.750074)
+:END:
+***** Btrfs file system
+:PROPERTIES:
+:NOTER_PAGE: (227 . 0.646039)
+:END:
+**** Mapped Devices
+:PROPERTIES:
+:NOTER_PAGE: (229 . 0.236979)
+:END:
+**** Swap Space
+:PROPERTIES:
+:NOTER_PAGE: (231 . 0.231042)
+:END:
+**** User Accounts
+:PROPERTIES:
+:NOTER_PAGE: (233 . 0.090909)
+:END:
+**** Keyboard Layout
+:PROPERTIES:
+:NOTER_PAGE: (235 . 0.517383)
+:END:
+**** Locales
+:PROPERTIES:
+:NOTER_PAGE: (237 . 0.577529)
+:END:
+***** Locale Data Compatibility Considerations
+:PROPERTIES:
+:NOTER_PAGE: (238 . 0.090909)
+:END:
+**** Services
+:PROPERTIES:
+:NOTER_PAGE: (239 . 0.41735)
+:END:
+***** Base Services
+:PROPERTIES:
+:NOTER_PAGE: (240 . 0.090909)
+:END:
+***** Scheduled Job Execution
+:PROPERTIES:
+:NOTER_PAGE: (253 . 0.555413)
+:END:
+***** Log Rotation
+:PROPERTIES:
+:NOTER_PAGE: (255 . 0.812492)
+:END:
+***** Networking Setup
+:PROPERTIES:
+:NOTER_PAGE: (257 . 0.537399)
+:END:
+***** Networking Services
+:PROPERTIES:
+:NOTER_PAGE: (263 . 0.47775)
+:END:
+***** Unattended Upgrades
+:PROPERTIES:
+:NOTER_PAGE: (285 . 0.609761)
+:END:
+***** X Window
+:PROPERTIES:
+:NOTER_PAGE: (287 . 0.642268)
+:END:
+***** Printing Services
+:PROPERTIES:
+:NOTER_PAGE: (293 . 0.681614)
+:END:
+***** Desktop Services
+:PROPERTIES:
+:NOTER_PAGE: (306 . 0.090909)
+:END:
+***** Sound Services
+:PROPERTIES:
+:NOTER_PAGE: (314 . 0.307713)
+:END:
+***** Database Services
+:PROPERTIES:
+:NOTER_PAGE: (316 . 0.338779)
+:END:
+***** Mail Services
+:PROPERTIES:
+:NOTER_PAGE: (321 . 0.343073)
+:END:
+***** Messaging Services
+:PROPERTIES:
+:NOTER_PAGE: (346 . 0.698371)
+:END:
+***** Telephony Services
+:PROPERTIES:
+:NOTER_PAGE: (354 . 0.252831)
+:END:
+***** File-Sharing Services
+:PROPERTIES:
+:NOTER_PAGE: (360 . 0.844937)
+:END:
+***** Monitoring Services
+:PROPERTIES:
+:NOTER_PAGE: (372 . 0.199309)
+:END:
+***** Kerberos Services
+:PROPERTIES:
+:NOTER_PAGE: (378 . 0.090909)
+:END:
+***** LDAP Services
+:PROPERTIES:
+:NOTER_PAGE: (379 . 0.68497)
+:END:
+***** Web Services
+:PROPERTIES:
+:NOTER_PAGE: (385 . 0.843407)
+:END:
+***** Certificate Services
+:PROPERTIES:
+:NOTER_PAGE: (404 . 0.725101)
+:END:
+***** DNS Services
+:PROPERTIES:
+:NOTER_PAGE: (407 . 0.639085)
+:END:
+***** VPN Services
+:PROPERTIES:
+:NOTER_PAGE: (419 . 0.385504)
+:END:
+***** Network File System
+:PROPERTIES:
+:NOTER_PAGE: (426 . 0.090909)
+:END:
+***** Continuous Integration
+:PROPERTIES:
+:NOTER_PAGE: (428 . 0.748942)
+:END:
+***** Power Management Services
+:PROPERTIES:
+:NOTER_PAGE: (433 . 0.302237)
+:END:
+***** Audio Services
+:PROPERTIES:
+:NOTER_PAGE: (440 . 0.627784)
+:END:
+***** Virtualization Services
+:PROPERTIES:
+:NOTER_PAGE: (442 . 0.501631)
+:END:
+***** Version Control Services
+:PROPERTIES:
+:NOTER_PAGE: (465 . 0.295326)
+:END:
+***** Game Services
+:PROPERTIES:
+:NOTER_PAGE: (483 . 0.180417)
+:END:
+***** PAM Mount Service
+:PROPERTIES:
+:NOTER_PAGE: (483 . 0.506237)
+:END:
+***** Guix Services
+:PROPERTIES:
+:NOTER_PAGE: (484 . 0.813625)
+:END:
+***** Linux Services
+:PROPERTIES:
+:NOTER_PAGE: (490 . 0.499931)
+:END:
+***** Hurd Services
+:PROPERTIES:
+:NOTER_PAGE: (493 . 0.667049)
+:END:
+***** Miscellaneous Services
+:PROPERTIES:
+:NOTER_PAGE: (494 . 0.266706)
+:END:
+**** Setuid Programs
+:PROPERTIES:
+:NOTER_PAGE: (501 . 0.090909)
+:END:
+**** X.509 Certificates
+:PROPERTIES:
+:NOTER_PAGE: (502 . 0.291545)
+:END:
+**** Name Service Switch
+:PROPERTIES:
+:NOTER_PAGE: (503 . 0.090909)
+:END:
+**** Initial RAM Disk
+:PROPERTIES:
+:NOTER_PAGE: (505 . 0.090909)
+:END:
+**** Bootloader Configuration
+:PROPERTIES:
+:NOTER_PAGE: (507 . 0.77153)
+:END:
+**** Invoking guix system
+:PROPERTIES:
+:NOTER_PAGE: (512 . 0.221727)
+:END:
+**** Invoking guix deploy
+:PROPERTIES:
+:NOTER_PAGE: (520 . 0.340641)
+:END:
+**** Running Guix in a Virtual Machine
+:PROPERTIES:
+:NOTER_PAGE: (524 . 0.090909)
+:END:
+***** Connecting Through SSH
+:PROPERTIES:
+:NOTER_PAGE: (525 . 0.090909)
+:END:
+***** Using virt-viewer with Spice
+:PROPERTIES:
+:NOTER_PAGE: (525 . 0.090909)
+:END:
+**** Defining Services
+:PROPERTIES:
+:NOTER_PAGE: (525 . 0.824694)
+:END:
+***** Service Composition
+:PROPERTIES:
+:NOTER_PAGE: (526 . 0.090909)
+:END:
+***** Service Types and Services
+:PROPERTIES:
+:NOTER_PAGE: (527 . 0.844937)
+:END:
+***** Service Reference
+:PROPERTIES:
+:NOTER_PAGE: (529 . 0.722537)
+:END:
+***** Shepherd Services
+:PROPERTIES:
+:NOTER_PAGE: (534 . 0.217383)
+:END:
+***** Complex Configurations
+:PROPERTIES:
+:NOTER_PAGE: (537 . 0.791033)
+:END:
+*** 11 Home Configuration
+:PROPERTIES:
+:NOTER_PAGE: (544 . 0.090909)
+:END:
+**** Declaring the Home Environment
+:PROPERTIES:
+:NOTER_PAGE: (544 . 0.699689)
+:END:
+**** Configuring the Shell
+:PROPERTIES:
+:NOTER_PAGE: (546 . 0.226412)
+:END:
+**** Home Services
+:PROPERTIES:
+:NOTER_PAGE: (546 . 0.719628)
+:END:
+***** Essential Home Services
+:PROPERTIES:
+:NOTER_PAGE: (547 . 0.284659)
+:END:
+***** Shells
+:PROPERTIES:
+:NOTER_PAGE: (548 . 0.723148)
+:END:
+***** Scheduled User's Job Execution
+:PROPERTIES:
+:NOTER_PAGE: (551 . 0.51201)
+:END:
+***** Managing User Daemons
+:PROPERTIES:
+:NOTER_PAGE: (552 . 0.090909)
+:END:
+***** Desktop Home Services
+:PROPERTIES:
+:NOTER_PAGE: (552 . 0.632332)
+:END:
+**** Invoking guix home
+:PROPERTIES:
+:NOTER_PAGE: (553 . 0.750629)
+:END:
+*** 12 Documentation
+:PROPERTIES:
+:NOTER_PAGE: (557 . 0.090909)
+:END:
+*** 13 Installing Debugging Files
+:PROPERTIES:
+:NOTER_PAGE: (558 . 0.090909)
+:END:
+**** Separate Debug Info
+:PROPERTIES:
+:NOTER_PAGE: (558 . 0.275763)
+:END:
+**** Rebuilding Debug Info
+:PROPERTIES:
+:NOTER_PAGE: (559 . 0.297976)
+:END:
+*** 14 Security Updates
+:PROPERTIES:
+:NOTER_PAGE: (561 . 0.090909)
+:END:
+*** 15 Bootstrapping
+:PROPERTIES:
+:NOTER_PAGE: (563 . 0.090909)
+:END:
+**** The Reduced Binary Seed Bootstrap
+:PROPERTIES:
+:NOTER_PAGE: (563 . 0.49346)
+:END:
+**** Preparing to Use the Bootstrap Binaries
+:PROPERTIES:
+:NOTER_PAGE: (565 . 0.293808)
+:END:
+**** Building the Build Tools
+:PROPERTIES:
+:NOTER_PAGE: (566 . 0.090909)
+:END:
+**** Building the Bootstrap Binaries
+:PROPERTIES:
+:NOTER_PAGE: (568 . 0.090909)
+:END:
+**** Reducing the Set of Bootstrap Binaries
+:PROPERTIES:
+:NOTER_PAGE: (568 . 0.090909)
+:END:
+*** 16 Porting to a New Platform
+:PROPERTIES:
+:NOTER_PAGE: (569 . 0.090909)
+:END:
+*** 17 Contributing
+:PROPERTIES:
+:NOTER_PAGE: (570 . 0.090909)
+:END:
+**** Building from Git
+:PROPERTIES:
+:NOTER_PAGE: (570 . 0.34367)
+:END:
+**** Running Guix Before It Is Installed
+:PROPERTIES:
+:NOTER_PAGE: (572 . 0.090909)
+:END:
+**** The Perfect Setup
+:PROPERTIES:
+:NOTER_PAGE: (573 . 0.261907)
+:END:
+**** Packaging Guidelines
+:PROPERTIES:
+:NOTER_PAGE: (574 . 0.367775)
+:END:
+***** Software Freedom
+:PROPERTIES:
+:NOTER_PAGE: (575 . 0.221423)
+:END:
+***** Package Naming
+:PROPERTIES:
+:NOTER_PAGE: (575 . 0.542247)
+:END:
+***** Version Numbers
+:PROPERTIES:
+:NOTER_PAGE: (576 . 0.090909)
+:END:
+***** Synopses and Descriptions
+:PROPERTIES:
+:NOTER_PAGE: (577 . 0.586609)
+:END:
+***** Snippets versus Phases
+:PROPERTIES:
+:NOTER_PAGE: (578 . 0.640851)
+:END:
+***** Emacs Packages
+:PROPERTIES:
+:NOTER_PAGE: (578 . 0.812492)
+:END:
+***** Python Modules
+:PROPERTIES:
+:NOTER_PAGE: (579 . 0.446431)
+:END:
+****** Specifying Dependencies
+:PROPERTIES:
+:NOTER_PAGE: (579 . 0.090909)
+:END:
+***** Perl Modules
+:PROPERTIES:
+:NOTER_PAGE: (580 . 0.396413)
+:END:
+***** Java Packages
+:PROPERTIES:
+:NOTER_PAGE: (580 . 0.54741)
+:END:
+***** Rust Crates
+:PROPERTIES:
+:NOTER_PAGE: (580 . 0.738846)
+:END:
+***** Fonts
+:PROPERTIES:
+:NOTER_PAGE: (581 . 0.344015)
+:END:
+**** Coding Style
+:PROPERTIES:
+:NOTER_PAGE: (581 . 0.748492)
+:END:
+***** Programming Paradigm
+:PROPERTIES:
+:NOTER_PAGE: (581 . 0.828332)
+:END:
+***** Modules
+:PROPERTIES:
+:NOTER_PAGE: (582 . 0.090909)
+:END:
+***** Data Types and Pattern Matching
+:PROPERTIES:
+:NOTER_PAGE: (582 . 0.24185)
+:END:
+***** Formatting Code
+:PROPERTIES:
+:NOTER_PAGE: (582 . 0.413509)
+:END:
+**** Submitting Patches
+:PROPERTIES:
+:NOTER_PAGE: (582 . 0.823929)
+:END:
+***** Configuring Git
+:PROPERTIES:
+:NOTER_PAGE: (586 . 0.090909)
+:END:
+***** Sending a Patch Series
+:PROPERTIES:
+:NOTER_PAGE: (586 . 0.090909)
+:END:
+**** Tracking Bugs and Patches
+:PROPERTIES:
+:NOTER_PAGE: (586 . 0.527905)
+:END:
+***** The Issue Tracker
+:PROPERTIES:
+:NOTER_PAGE: (586 . 0.583867)
+:END:
+***** Debbugs User Interfaces
+:PROPERTIES:
+:NOTER_PAGE: (586 . 0.702992)
+:END:
+***** Debbugs Usertags
+:PROPERTIES:
+:NOTER_PAGE: (587 . 0.251848)
+:END:
+**** Commit Access
+:PROPERTIES:
+:NOTER_PAGE: (587 . 0.729958)
+:END:
+***** Applying for Commit Access
+:PROPERTIES:
+:NOTER_PAGE: (588 . 0.090909)
+:END:
+***** Commit Policy
+:PROPERTIES:
+:NOTER_PAGE: (589 . 0.090909)
+:END:
+***** Addressing Issues
+:PROPERTIES:
+:NOTER_PAGE: (589 . 0.090909)
+:END:
+***** Commit Revocation
+:PROPERTIES:
+:NOTER_PAGE: (590 . 0.090909)
+:END:
+***** Helping Out
+:PROPERTIES:
+:NOTER_PAGE: (590 . 0.090909)
+:END:
+**** Updating the Guix Package
+:PROPERTIES:
+:NOTER_PAGE: (590 . 0.795388)
+:END:
+**** Translating Guix
+:PROPERTIES:
+:NOTER_PAGE: (591 . 0.399523)
+:END:
+*** 18 Acknowledgments
+:PROPERTIES:
+:NOTER_PAGE: (596 . 0.090909)
+:END:
+*** A GNU Free Documentation License
+:PROPERTIES:
+:NOTER_PAGE: (597 . 0.090909)
+:END:
+*** Concept Index
+:PROPERTIES:
+:NOTER_PAGE: (605 . 0.090909)
+:END:
+*** Programming Index
+:PROPERTIES:
+:NOTER_PAGE: (613 . 0.090909)
+:END:

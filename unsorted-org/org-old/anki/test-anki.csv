@@ -1,0 +1,10 @@
+s,move cursor left,h,vim,vim left-right motions
+b,move cursor right,l,vim,vim left-right motions
+0,go to the first character in the line,,vim,vim left-right motions
+^,go to the first non-blank character in the line,,vim,vim left-right motions
+$,go to the last character in the line,,vim,vim left-right motions
+s,move cursor left,h,bash,vim left-right motions
+b,move cursor right,l,bash,vim left-right motions
+0,go to the first character in the line,,bash,vim left-right motions
+^,go to the first non-blank character in the line,,bash,vim left-right motions
+$,go to the last character in the line,,bash,vim left-right motions

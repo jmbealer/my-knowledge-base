@@ -1,0 +1,11 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:4
+
+Cloze (Type Answer),testing,{{c1::c-h}} - {{c2::delete character before the cursor}},bash
+
+#separator:comma
+#html:true
+#tags column:5

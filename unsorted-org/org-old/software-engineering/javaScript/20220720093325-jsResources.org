@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       510d58f4-1bed-4300-904d-01b6c3f29159
+:mtime:    20230206181358 20220720102645
+:ctime:    20220720093325
+:END:
+#+title: jsResources
+#+date: [2022-07-20 Wed 09:33]
+
+[[https://devdocs.io/][DevDocs]]
+[[https://developer.mozilla.org/en-US/][MDN Web Doc]]
+[[https://262.ecma-international.org/][ECMAScript Language Specification]]
+
+** finish
+[[https://www.freecodecamp.org/][freeCodeCamp]]
+freeCodeCamp Basic JavaScript
+  i didn't understand recursion without loop

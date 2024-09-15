@@ -1,0 +1,171 @@
+:PROPERTIES:
+:ID:       a535a967-64fb-45fc-9fc1-3e801e441945
+:mtime:    20230206181505 20220713231230
+:ctime:    20220713212731
+:END:
+#+title: jsLexicalStructure
+#+date: [2022-07-13 Wed 21:27]
+
+The lexical structure of a programming language is the set of elementary rules
+that specifies how you write programs in that language.
+
+Lexical Structure is the lowest-level syntax of a language:
++ it specifies what variable names look like
++ the delimiter characters for comments
++ how one program statement is separated from the next
+
+the text of a javascript program
+
+JavaScript is a case-sensitive language.
+Which means that language keywords, variables, function  name, and other
+identifiers must always be type with a consistent capitalization fo letter.
+
+JavaScript ignores spaces that appear between tokens in programs.
+JavaScript ignores line breaks; but they're exceptions.
+JavaScript recognizes; as white space:
++ regular space characters (\u0020)
++ tabs
++ assorted ASCII control characters
++ various Unicode space characters
+
+JavaScript recognizes; as line terminators:
++ newlines
++ carriage returns
++ carriage returns/line feed sequence
+
+** what are javascript comments? wip
+
+Comments are ignored, and will not be executed:
+
+Comments allow you explain you code, in the code itself, without affecting your program.
+JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+Reasons to use code comments:
++ To describe and explain complicated code and create reminders for yourself and others
++ To deliberately disable sections of code
++ To improve collaboration with other developers working on the code, helping them clearly understand what needs to be added, fixed, or removed in the code
++ To add titles to the sections of long pages of code to make the pages easier to scan
++ It's important to note that HTML and CSS comments are not tags. They also are not written in the same way; they have a distinct syntax.
+
+JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+
+Single Line Comments
+Single line comments start with //.
+
+Multi-line Comments
+Multi-line comments start with /* and end with */.
+
+multi-line comments can't be nested.
+
+multi-line comment - a comment block.
+
+Block comments are often used for formal documentation.
+Using comments to prevent execution of code is suitable for code testing.
+
+*** JavaScript Comments Examples
+#+begin_src js
+// single-line comment
+/*
+  muli-line comment
+*/
+#+end_src
+
+** literals
+A literal is a data value that appear directly in a program.
+
+** identifiers and reserved words
+An identifier is simply a name.
+A identifier must begin with:
++ a letter
++ an underscore (_)
++ or a dollar sign ($)
+Subsequent characters can be: (identifiers)
++ letters
++ digits
++ underscore
++ or dollar signs
+
+Reserved words cannot be used as regular identifiers.
+
+** JavaScript Reserved Words
+In JavaScript you cannot use these reserved words as variables, labels, or function names:
+abstract 	arguments 	await* 	boolean
+break 	byte 	case 	catch
+char 	class* 	const 	continue
+debugger 	default 	delete 	do
+double 	else 	enum* 	eval
+export* 	extends* 	false 	final
+finally 	float 	for 	function
+goto 	if 	implements 	import*
+in 	instanceof 	int 	interface
+let* 	long 	native 	new
+null 	package 	private 	protected
+public 	return 	short 	static
+super* 	switch 	synchronized 	this
+throw 	throws 	transient 	true
+try 	typeof 	var 	void
+volatile 	while 	with 	yield
+Words marked with* are new in ECMAScript 5 and 6.
+
+You can read more about the different JavaScript versions in the chapter JS Versions.
+Removed Reserved Words
+The following reserved words have been removed from the ECMAScript 5/6 standard:
+abstract 	boolean 	byte 	char
+double 	final 	float 	goto
+int 	long 	native 	short
+synchronized 	throws 	transient 	volatile
+
+Do not use these words as variables. ECMAScript 5/6 does not have full support in all browsers.
+JavaScript Objects, Properties, and Methods
+You should also avoid using the name of JavaScript built-in objects, properties, and methods:
+Array 	Date 	eval 	function
+hasOwnProperty 	Infinity 	isFinite 	isNaN
+isPrototypeOf 	length 	Math 	NaN
+name 	Number 	Object 	prototype
+String 	toString 	undefined 	valueOf
+Java Reserved Words
+JavaScript is often used together with Java. You should avoid using some Java objects and properties as JavaScript identifiers:
+getClass 	java 	JavaArray 	javaClass
+JavaObject 	JavaPackage
+Other Reserved Words
+
+JavaScript can be used as the programming language in many applications.
+You should also avoid using the name of HTML and Window objects and properties:
+alert 	all 	anchor 	anchors
+area 	assign 	blur 	button
+checkbox 	clearInterval 	clearTimeout 	clientInformation
+close 	closed 	confirm 	constructor
+crypto 	decodeURI 	decodeURIComponent 	defaultStatus
+document 	element 	elements 	embed
+embeds 	encodeURI 	encodeURIComponent 	escape
+event 	fileUpload 	focus 	form
+forms 	frame 	innerHeight 	innerWidth
+layer 	layers 	link 	location
+mimeTypes 	navigate 	navigator 	frames
+frameRate 	hidden 	history 	image
+images 	offscreenBuffering 	open 	opener
+option 	outerHeight 	outerWidth 	packages
+pageXOffset 	pageYOffset 	parent 	parseFloat
+parseInt 	password 	pkcs11 	plugin
+prompt 	propertyIsEnum 	radio 	reset
+screenX 	screenY 	scroll 	secure
+select 	self 	setInterval 	setTimeout
+status 	submit 	taint 	text
+textarea 	top 	unescape 	untaint
+window
+HTML Event Handlers
+
+In addition you should avoid using the name of all HTML event handlers.
+Examples:
+onblur 	onclick 	onerror 	onfocus
+onkeydown 	onkeypress 	onkeyup 	onmouseover
+onload 	onmouseup 	onmousedown 	onsubmit
+
+** unicode
+
+** optional semicolons
+JavaScript uses the semicolon (;) to separate statements from one another.
++ statement;
++ statement; statement;
++ ;statement // is a defensive semicolon

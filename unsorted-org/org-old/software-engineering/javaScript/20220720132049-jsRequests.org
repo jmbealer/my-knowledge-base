@@ -1,0 +1,701 @@
+:PROPERTIES:
+:ID:       13806e7f-c029-483a-a383-428dc8e310ae
+:mtime:    20230206181323 20220721203952
+:ctime:    20220720132049
+:END:
+#+title: jsRequests
+#+date: [2022-07-20 Wed 13:20]
+
+** How the web works
+*** The client wip
+
+Client :: A web-accessing device or software that requests information
+
+Any kind of program that requests information from the web could be considered a client.
+
+For example, all of the following could be clients:
++ A mobile application (such as your mail application)
++ A software program running on your computer (such as Slack)
++ Your computer
+
+*** The server
+
+Server :: A device or program that receives requests from clients and responds to them, acting as the brain of the backend
+
+
+Servers expose resources to clients.
+Those resources could be general data, or they could be HTML, CSS, JavaScript, image, video, or audio files.
+Sometimes those resources are stored on the server itself, while other times, the server may request those resources from another server.
+In this way, the server can actually act as a client as well.
+
+Servers make it possible for clients to get the files, data, and other resources that they need in order to do something valuable for an end user.
+
+*** Request-response cycle
+
+In the request-response cycle:
++ the client sends a request to the server.
++ the server then processes this request and responds back to the client.
++ Often, the client will then do something with this information, such as render a web page.
+
+Request-response cycle :: The path that information takes from the client to the server and then back to the client
+
+This is how the web works:
++ When you go to a website, your browser (a client) makes a request to a server.
++ That server responds with the requested information, which your browser then transforms into a website.
++ This process can be repeated multiple times for a single view of a web page.
+
+*** URLs
+
+URL stands for uniform resource locator/indentifier
+
+URL is the way that distinct resources are identified on the web
+url is an address for a request.
+
+The server determines what information to send back, based on where the client makes the request.
+
+The server will respond to the client with information based on the requested URL.
+
+A URL contains many parts, each of which helps the server decide how to respond.
+
+The Anatomy of a URL:
++ URL :: https://www.youtube.com/results?search_query=how+the+web+works
++ Protocol :: https://
++ Subdomain :: www.
++ Domain :: youtube.com
++ Path :: /results
++ Query :: ?
++ Parameters :: search_query=how+the+web+works
+
+*** DNS and ISP
+
+IP address: A unique series of numbers that represent a device connected to the internet and allows other devices to connect to it.
+
+Domain names are simply text labels that mask an IP address underneath.
++ thinful.com
++ khanacademy.org
+
+DNS stands for Domain Name System
+A DNS is a service that acts as a lookup, it translates a domain into an actual IP address
++ turns thinkful.com into to 104.26.13.185
+
+ISP stands for Internet Service Provider
+An ISP is an entity that gives you access to the internet
+
+
+Your browser will make a request to a DNS with the domain name, which will then translate it into an IP address.
+It sends that information back to the browser, which will then make all subsequent requests to the server.
+
+*** The full trip
+
+Process of making a web request:
+1. Your client (the browser) makes a request to a specific URL.
+2. The client sends the domain name to the ISP.
+3. The ISP looks up the IP address in the DNS.
+4. The ISP sends the IP address back to the client.
+5. The client opens a connection to the server located at the IP address.
+6. The client sends a request to the server.
+7. The server sends a response.
+8. Steps six and seven repeat until the browser has all of the resources that it needs.
+
+** Postman
+
+Web developers want to understand what's happening behind the scenes and see what kind of responses are being sent back from a server.
+Fortunately, there are several tools that will allow you to do just that. In this lesson, you'll learn how to use a tool called Postman.
+
+*** What is Postman?
+
+At its most basic, Postman is a software application that allows you to make web requests without the use of a browser.
+In this program, you will use Postman to make requests and inspect the results.
+
+However, Postman can do much more than that.
+The free version of the app allows for saving collections of requests, as well as a variety of testing and logging features.
+
+*** Application overview
+
+When you open the application, you will see something like this:
+Graphical user interface of the Postman application.
+
+Take note of the following components, which are labeled in the image above.
+
+    The navigation bar at the top of Postman allows you to switch workspaces and includes the New button.
+    The sidebar allows you to filter historical requests that you've made. It also lets you create new collections for your requests.
+    The main section of the application will be where you see the requests that you make. The app typically starts up on the Launchpad screen. The New tab ➕ icon allows you to start a new request.
+
+*** Making a request
+
+To make a request with Postman, type a URL like https://thinkful.com into the location bar that's next to the drop-down menu with the word GET in it, as shown below. Then, click Send.
+
+The response section will change to include a number of tabs, including the Body tab. In it, you'll see a bunch of text—that's HTML and CSS!
+
+By default, Postman will suggest that you save your requests in case you end up using them often. In this program, you typically won't need to save them.
+
+*** Do this Make a request with Postman
+
+Follow the instructions above to make a request to https://thinkful.com. If you've visited the Thinkful website lately, you may recognize some of the content!
+Use the Preview button
+
+Click the Preview button that is within the Body section. Although it may not look quite the same, you will probably recognize some elements from the Thinkful website.
+Make a request to your running server
+
+Make sure that your Constellations server is up and running, and then make a request to the following URL:
+
+http://localhost:5000/constellations
+
+You will see something that looks like an array with a number of objects inside of it. You just made your first request to a server running on your own machine!
+
+** Headers
+
+
+Key Terms
+
+HTTP request method
+    Also called an HTTP verb, a method that indicates the desired action (such as deleting a resource) to be taken on a given resource
+Header
+    Information that is included on the request and response, and generally includes metadata such as authorization information, cookies, and when the request happened
+Request body
+    Information that is sent on a request that isn't included in the URL
+Response body
+    Information sent back from the server
+Status code
+    The part of the response that gives a quick indication as to how the request went
+
+Both requests and responses allow for additional data to be sent back and forth, and this process is invisible to most internet users.
+This metadata is generally referred to as headers.
+
+
+*** Starter code
+
+This lesson requires you to have the Constellations server GitHub repository running on your local machine. If you haven't already, fork and clone the repository. Then, follow the README file's instructions to get the server running.
+*** Diagramming a request and response
+
+As mentioned above, web requests include much more than just a URL. Take a look at the request below, which was made with Postman. Then, continue on to read the description of each section and the definitions that follow.
+A web request in Postman.
+
+    This section includes the request URL as well as the HTTP verb. In this case, the request URL is https://thinkful.com, and the HTTP verb is GET.
+
+    This section includes parts of the request headers as well as the request body sent along with the request.
+
+    This section shows the response body as well as the response headers.
+
+    This section shows the response status code and associated message.
+
+As you may have noticed, web requests have a lot of terminology associated with them. The definitions below will help you understand the web request description that you just read.
+
+    An HTTP verb, also sometimes called an HTTP request method, describes what kind of request is being made. For example, a GET request means that the client wants to "get" new information from the server.
+
+    Headers is a general term that relates to information that is included on both the request and response. Headers generally include metadata such as authorization information, cookies, and when the request happened. Request headers and response headers specify particular information that only appears on the appropriate response.
+
+    The request body is information that is sent on a request that isn't included in the URL. For example, when you sign up for a new website, your username and password are sent in the request body.
+
+    The response body is information sent back from the server. This could include the information that you've requested or an error message if something went wrong.
+
+    A status code is the part of the response that gives a quick indication as to how the request went. In the example above, 200 OK indicates that the request was successful.
+
+In the following sections, you'll explore each of the above concepts in depth.
+*** Requests
+
+Recall that requests come from a client (such as Postman) and reach some kind of server (such as where Thinkful has stored its server).
+*** HTTP verbs
+
+Each request contains an HTTP verb, also called an HTTP method. Although there are many possible verbs, there are five that are the most common. Each verb ideally describes what kind of request is being made.
+Verb
+	Description
+GET
+	Retrieve information
+POST
+	Create something new
+PUT
+	Update something
+PATCH
+	Update part of something
+DELETE
+	Destroy something
+
+By default, when you type a URL into your browser's location bar, a GET request is always performed. With a browser, there is no easy way for you to simulate the other kinds of verbs. Thankfully, this is much easier with Postman.
+*** URLs
+
+In combination, HTTP verbs and URLs are the key ways that servers begin to figure out what it is that the client wants. For example, the following three requests could all perform distinctly different actions.
+
+DELETE http://localhost:5000/constellations/abc-def
+
+POST http://localhost:5000/constellations
+
+GET http://localhost:5000/constellations
+
+The first two URLs in the above example are different, and therefore it may be obvious that they'd return a different kind of response. However, the last two URLs are the same—and yet they might return a different response because they use different HTTP verbs.
+
+This combination of HTTP verb and URL is sometimes called a route. A route is a specific combination of an HTTP verb and a URL (or part of a URL).
+
+*** Do this
+
+Use the GET verb
+
+Ensure that your Constellations server is running. Then, in Postman, make a GET request to the following URL:
+
+http://localhost:5000/constellations
+
+The output will look something like this:
+Making a GET request with Postman.
+
+Take one of the id values and make a new GET request to the following URL, replacing the :id with the actual id value from the Postman output.
+
+http://localhost:5000/constellations/:id
+
+After pressing the Send button, you will see output that shows only that single constellation, as shown below.
+Output shows the single constellation.
+
+Even though the HTTP verbs were the same for both of the requests you made, the outputs were different. This shows that the URL affected the type of information that was returned.
+Use the DELETE verb
+
+Using the same id value as before, make a new DELETE request to the following URL. Again, replace :id with the actual id value from the Postman output.
+
+http://localhost:5000/constellations/:id
+
+You will get back a response that looks like an empty object. The constellation that you just selected has been deleted from your running server!
+Selected constellation is deleted from the running server.
+
+If you want to check that the operation has taken hold, you can look at the changes in your Constellations server repository or repeat the GET requests from above. You should see that the constellation has been removed.
+
+Even though the URL is the same as before, changing the verb from GET to DELETE caused a completely different operation to happen.
+*** Body
+
+Optionally, additional data can be sent in the form of a body. A body can contain any kind of data, although the body contains JSON in many APIs.
+*** Do this
+Use the POST verb
+
+In Postman, open up the Body tab that is closest to the URL. You'll be presented with a number of radio button options. Select raw, and then paste the following content inside of it. Then, change the drop-down menu at the end of the line from Text to JSON.
+
+{
+
+  "name": "Columba",
+
+  "meaning": "Dove",
+
+  "starsWithPlanets": 3,
+
+  "quadrant": "SQ1"
+
+}
+
+Before making the request, your view should look like this:
+Before making a POST request in Postman.
+
+Then make a POST request to the following URL:
+
+http://localhost:5000/constellations
+
+This will cause the creation of a new constellation on your server. You can see this by the fact that the response now includes an ID.
+*** Other headers
+
+Other headers can sometimes be included in the request. This includes headers like the Authorization header or information about what response format is preferable. In this program, these request headers will be introduced as needed.
+*** Responses
+
+Responses come with their own structured information.
+*** Body
+
+In general, the response body is the most interesting part of the response. If you are expecting to receive data like JSON or HTML, you'll see it in the body.
+
+In all of the previous examples, the response body contained JSON. In future applications, you'll be able to use this data to present information to the user in some way.
+*** Status codes
+
+A status code is like a brief synopsis of how the request-response cycle went. Status codes have a particular numbering system and associated messages.
+Number range
+	Response type
+	Example
+200s
+	Successful
+	200 - OK
+300s
+	Redirects
+	307 - Temporary Redirect
+400s
+	Client error
+	404 - Not Found
+500s
+	Server error
+	503 - Service unavailable
+
+Status codes are useful in programs that make web requests; they enable the program to make a quick decision based on just a number.
+
+There are many status codes, and some are used much more than others. You can learn more about status codes at MDN's HTTP response status codes page.
+*** Other headers
+
+Other values can be stored inside of the response. For example, the response can store the date or even what kind of program is returning the response. In this program, you will be introduced to these response headers as needed.
+** Requests in JavaScript
+
+Starter code
+
+This lesson requires you to have the Constellations server GitHub repository running on your local machine. If you haven't already, fork and clone the repository. Then, follow the README file's instructions to get the server running.
+
+Next, create a new folder called requests-in-javascript. Inside of it, run the following:
+
+touch requests.js
+
+npm init -y
+
+npm i axios
+
+*** External request helpers
+
+Depending on your environment, there are several different tools that you can use to make external requests in JavaScript.
+For example, if you're building code that will be used on the frontend, you could use the [[https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API][Fetch API]].
+And if you're building code that will be used on the backend, you could use the built-in [[https://nodejs.org/api/http.html#http_http][Node HTTP package]].
+
+For this module, you will use a package called axios.
+The axios package can be used on both the frontend and the backend, making it a good choice for learning how to make web requests.
+It's also a promise-based library, which means that you can apply your prior knowledge of working with asynchronous code to making web requests.
+To learn more about this package, check out the [[https://www.npmjs.com/package/axios][axios documentation.]]
+
+*** Simple requests
+
+This same request written in JavaScript with the axios library would look like this:
+
+const axios = require("axios");
+
+const url = "http://localhost:5000/constellations";
+axios.get(url).then((response) => {
+  console.log(response.status);
+  console.log(response.statusText);
+  console.log(response.data);
+});
+
+The axios.get(url) command is a promise, which means that the then() method can be called on it.
+The then() callback function will provide a parameter which is an object that contains details about the response.
+
+The keys status, statusText, and data return information about the status code, the status code message, and the response body, respectively.
+
+If an error with axios occurs, you can use catch(), just like you would with other failures.
+
+axios.get("malformed url").catch((error) => {
+
+  console.log(error.message);
+
+});
+
+*** Do this Make a request with JavaScript
+
+Copy the code below into the requests.js file that you made.
+
+const axios = require("axios");
+
+const url = "http://localhost:5000/constellations";
+axios
+  .get(url)
+  .then((response) => {
+    console.log(response.status);
+    console.log(response.statusText);
+    console.log(response.data);
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });
+
+Make sure that your Constellations server is running, and then run your requests.js file. Take a look at the output and compare it with the output that you received from Postman. The response body should be the same!
+*** Manipulate the data
+
+Now that you have these responses in JavaScript, you can perform all kinds of operations on them. For example, try writing code that will print out an array of only those constellations where the starsWithPlanets value is less than 10.
+
+Try writing the code on your own before looking at the solution below.
+
+const axios = require("axios");
+
+
+const url = "http://localhost:5000/constellations";
+
+axios
+
+  .get(url)
+
+  .then((response) => {
+
+    const result = response.data.filter((constellation) => {
+
+      return constellation.starsWithPlanets < 10;
+
+    });
+
+    console.log(result);
+
+  })
+
+  .catch((error) => {
+
+    console.log(error.message);
+
+  });
+
+*** Complex requests
+
+The axios library provides different methods for common HTTP verbs such as get(), post(), put(), patch(), and delete().
+
+The second, optional argument in all of these methods is a config object, which can include information like additional headers or the request body.
+
+Most of the time, you will be providing a request body, which can be accomplished by adding an object with the request body data.
+
+const url = "http://localhost:5000/constellations";
+
+axios
+
+  .post(url, {
+
+    name: "Ara",
+
+    meaning: "Altar",
+
+    starsWithPlanets: 7,
+
+    quadrant: "SQ3",
+
+  })
+
+  .then((response) => {
+
+    console.log(response.data);
+
+  });
+
+The above request will create new data for the Ara constellation on the server. It will then return the newly created constellation with an ID.
+
+{
+
+  name: "Ara",
+
+  meaning: "Altar",
+
+  starsWithPlanets: 7,
+
+  quadrant: "SQ3",
+
+  id: "DVaSPTf",
+
+};
+
+*** Do this
+Create a new constellation
+
+Copy the code above and run it to create a new constellation on your Constellations server. Take note of the ID that it returns!
+Delete a constellation
+
+Create a new DELETE request using the axios.delete() method. Change the URL to the URL below, replacing :id with the ID from your newly created constellation.
+
+http://localhost:5000/constellations/:id
+
+Upon deletion, you will likely just see an empty object. Run your get() request again to confirm that the constellation has been deleted.
+Complete example
+
+A completed example from this lesson can be found here:
+
+    Making Requests: Requests in JavaScript
+** Testing asynchronous JavaScript
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to write automated tests for asynchronous code.
+Overview
+
+HTTP requests in JavaScript are asynchronous operations, meaning that the data for requests is returned at a later time from the server. Too many asynchronous operations in unit tests could significantly slow down development. To keep your unit tests running quickly, your unit tests should avoid accessing external resources such as remote servers and databases. So, in this lesson, you'll learn how to use Jest—specifically Jest mocks—to test asynchronous code.
+Starter code
+
+This lesson requires you to have the Testing asynchronous JavaScript GitHub repository running on your local machine. Fork and clone that repository now. Then, follow the instructions on how to get it to run.
+Unit tests
+
+Keep in mind that unit tests test a small piece of code, generally a single function. If you have thorough unit tests, the unit tests will point you to any functions that aren't working as expected, thereby making it easy to identify issues with your code. Luckily, you can also write unit tests to test asynchronous code.
+Testing asynchronous code
+
+It's common in JavaScript for code to run asynchronously. For example, while using the axios library, you've learned that methods such as axios.get() and axios.post() return a promise. The promise can be handled within the then() method if the promise resolves successfully, or within a catch() method if the promise is rejected with an error.
+
+You can use Jest to test various behaviors in your asynchronous code, including ensuring that methods are called with the correct arguments, and that any resolved or rejected promises are handled properly.
+The index() function
+
+In the src/requests.js file, the index() function makes a GET request to the URL http://localhost:5000/constellations using the axios library, as follows:
+
+function index() {
+
+  return axios
+
+    .get(`${BASE_URL}/constellations`)
+
+    .then(({ data }) => {
+
+      const result = data.filter((constellation) => {
+
+        return constellation.starsWithPlanets < 10;
+
+      });
+
+      return result;
+
+    })
+
+    .catch(({ message }) => {
+
+      console.error(message);
+
+    });
+
+}
+
+You can test the following behaviors of the index() function:
+
+    It should call axios.get() with the correct URL (which, in this case, is "http://localhost:5000/constellations") as the argument.
+
+    If the request is successful, then it should return a promise that resolves to an array of constellations where starsWithPlanets < 10.
+
+    If the request is unsuccessful, then it should return a promise that rejects with a reason that is then logged to the console.
+
+Tip
+
+For simplicity, the index() function logs the error message to the console. In a real app, you'd want to handle a failed request properly by showing an error message to let the user know what went wrong instead of just logging the error to the console.
+
+Now, you can write a unit test to test each behavior.
+Jest mocks
+
+Before you can start writing tests for asynchronous code, it's important to understand a testing technique called mocking. Mocking allows you to focus on the code being tested by controlling the behavior of any external dependencies in the code. For example, you can use mocking to configure specific return values or capture calls to a function. That way, you can isolate the code being tested and remove the effects of external dependencies (such as third-party npm packages).
+
+Often, when your code depends on an external library to work properly, it may become difficult to isolate your code for testing.
+
+For example, if the index() function internally calls the axios.get() method and a test fails, how would you know why the test is failing? Is it failing because the function is incorrectly implemented (which is what unit testing is meant to capture)? Or is it failing because of some underlying issues with the axios library (which is not what unit testing is meant to test)?
+
+To address this issue, you can mock the methods in the axios library and configure the mock functions so that they always returns specific values when called, as follows:
+
+jest.spyOn(axios, "get");
+
+axios.get.mockImplementation(() => Promise.resolve({ data: { greeting: "Hello World" } }));
+
+jest.spyOn(axios, "get"); "spies on" or tracks calls to the axios module and returns a Jest mock function for axios.get(). The Jest mock function is also known as a spy; it allows you to spy on the behavior of the function that is called indirectly by some other code.
+
+The next line calls axios.get.mockImplementation(). mockImplementation() accepts a callback that defines the implementation of the mock (that is, how it should behave under test). Here, the axios.get() mock returns a promise that always resolves to the { data: { greeting: "Hello World" } } object as the response.
+
+Now, with this setup, the mocked function will be called whenever axios.get() is invoked in the test code.
+Do this
+Verify that index() calls axios.get() with the correct arguments
+
+In the tests/requests.test.js file, add the following code:
+
+it("should make a GET request to the appropriate URL", async () => {
+
+  jest.spyOn(axios, "get");
+
+
+  await index();
+
+
+
+  const expectedURL = `${BASE_URL}/constellations`;
+
+  expect(axios.get).toHaveBeenCalledWith(expectedURL);
+
+
+  jest.clearAllMocks();
+
+});
+
+Here's a breakdown of that syntax:
+
+    jest.spyOn(axios, "get"); creates a Jest mock function for axios.get().
+
+    Next, the line await index(); invokes the index() function, which in turn calls the axios.get() mock function.
+
+    Then, assert that the axios.get() mock function was called with the expected URL.
+
+    Finally, run jest.clearAllMocks() to remove any mocks created in the current test, so that other tests won't be affected by the mocks. This step is important because it's generally a good practice to ensure that the state of one test is independent of other running tests and that the failing or passing of one test should not affect another test.
+
+Run npm test, and now you'll see one passing test.
+Verify that index() resolves correctly
+
+In the tests/requests.test.js file, add the following code:
+
+it("should return a list of constellations with fewer than 10 stars with planets", async () => {
+
+  jest.spyOn(axios, "get");
+
+  axios.get.mockImplementation(() => Promise.resolve({ data }));
+
+
+  const response = await index();
+
+
+  const expected = data.slice(0, 2);
+
+  expect(response).toEqual(expected);
+
+
+  jest.clearAllMocks();
+
+});
+
+Here, the axios.get() mock function returns a promise that resolves to an object that contains a data key, which is set to an array of constellations objects.
+
+Then await index() is called, and the result of the promise is stored in the response variable.
+
+Next, create an assertion to check the response. Keep in mind that the index() function will filter for constellations where constellation.starsWithPlanets < 10, which are the first two constellations in the data array.
+
+Finally, call jest.clearAllMocks() to remove any mocks created in the current test.
+
+Run npm test, and you will now see two passing tests.
+Verify that index() handles promise rejection
+
+In the tests/requests.test.js file, add the following code:
+
+it("should log an error to the console", async () => {
+
+  jest.spyOn(axios, "get");
+
+  axios.get.mockImplementation(() =>
+
+    Promise.reject(new Error("Request failed."))
+
+  );
+
+
+
+  jest.spyOn(console, "error");
+
+
+  await index();
+
+
+  expect(console.error).toHaveBeenCalledWith("Request failed.");
+
+
+  jest.clearAllMocks();
+
+});
+
+Here, the axios.get() mock function is configured to return a promise that rejects with an Error object containing the error message Request failed.
+
+jest.spyOn(console, "error"); creates a mock function for console.error() so that you can spy on its behavior under test.
+
+Next, await index() is called, and the test asserts that console.error() is called with the error message of Request failed.
+
+Finally, call jest.clearAllMocks() to remove any mocks created in the current test.
+
+Run npm test, and you will now see three passing tests.
+Refactor
+
+Because jest.spyOn(axios, "get") is called at the beginning of each test, you can keep your code DRY by moving this function call inside beforeEach(), like this:
+
+beforeEach(() => {
+
+  jest.spyOn(axios, "get");
+
+});
+
+And because jest.clearAllMocks() is called at the end of each test, you can move this function call inside the afterEach() function, like this:
+
+afterEach(() => {
+
+  jest.clearAllMocks();
+
+});
+
+Conclusion
+
+Now you know how to use mocks to override the behavior of external libraries and API calls in your tests so that you can better isolate your code for testing.
+
+In this lesson, you learned how to mock functions with Jest. Note that Jest also allows you to mock entire modules and even timers in your tests.
+Complete example
+
+A completed example from this lesson can be found here:
+
+    Making requests: Testing asynchronous JavaScript

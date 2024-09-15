@@ -1,0 +1,22 @@
+#separator:tab
+#html:true
+#guid column:1
+#notetype column:2
+#deck column:3
+#tags column:7
+FzvA);XDeq	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git init}} - {{c2::initialize a local repo}}			Git
+C?:Ifz-@AA	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git status}} - {{c2::list uncommitted new/modified files}}			Git
+eO6.A_G<bD	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git clone &lt;repo url&gt;}} - {{c2::clone a repo}}			Git
+be0uy(C6.U	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git diff}} - {{c2::show unstaged changes}}			Git
+ON+{TAh$f7	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git log}} - {{c2::show full change history}}			Git
+Gp;nz>d$eh	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git log -p &lt;filename&gt;}} - {{c2::show change history for a file}}			Git
+b-CWCHQD`3	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git add &lt;file&gt;}} - {{c2::stage specific files ready for commit}}			Git
+v!Py+CS5=4	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git add .}} - {{c2::stage all files}}			Git
+w`)Y(X&^Jl	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	"{{c1::git commit -m ""message""}} - {{c2::commit all staged files to local repo}}"			Git
+bQ0?:$uf8p	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	"{{c1::git commit -am ""message""}} - {{c2::add and commit all tracked files}}"			Git
+G&=.6ip?^3	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git reset &lt;file&gt;}} - {{c2::unstage files, but keep changes}} not checkout			Git
+CZ5%C5%vf=	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git checkout &lt;file&gt;}} - {{c2::unstage files, but keep changes}} not reset			Git
+zmw-Y9Q.6g	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	{{c1::git reset --hard}} - {{c2::revert everything to last commit}}			Git
+EyV-dK+yD5	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	"{{c1::git fetch}} - {{c2::fetch latest changes from ""origin""}}"			Git
+hy}rY(Qt4|	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	"{{c1::git pull}} - {{c2::fetch and merge latest changes from ""origin""}}"			Git
+lc;c^Bz^<b	Cloze (Type Answer)	9-not using::00-software eng::test-js::test-git	"{{c1::git push}} - {{c2::push local changes to ""origin""}}"			Git

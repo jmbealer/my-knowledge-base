@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7ac9fc0d-c140-4772-8df4-271cba2b68d9
+:mtime:    20230303115654
+:ctime:    20230303115627
+:END:
+#+title: Perl
+
+[[https://en.wikipedia.org/wiki/Perl][Perl - Wikipedia]]
