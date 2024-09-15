@@ -63,24 +63,16 @@
             "id": "86f6699aba3bc162",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "education/wgu.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
             "id": "e679b12291c98417",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "journals/2024-09-15.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -92,9 +84,17 @@
                 "currentVersion": "1.5.12"
               }
             }
+          },
+          {
+            "id": "9239b152d1ae73a6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -160,7 +160,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2024-09-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +176,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2024-09-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +188,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -199,9 +197,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "journals/2024-09-15.md"
-              }
+              "state": {}
             }
           },
           {
@@ -252,10 +248,17 @@
       "header-enhancer:Header Enhancer": false
     }
   },
-  "active": "e679b12291c98417",
+  "active": "9239b152d1ae73a6",
   "lastOpenFiles": [
-    "linux/lpi-lpic-3-security.md",
+    "test.md",
+    "test-old.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "education/wgu.md",
     "journals/2024-09-15.md",
+    "0-Home.md",
+    "unsorted-org/org-old/software-engineering/python/python-data-types.md",
+    "linux/lpi-lpic-3-security.md",
     "linux/lpi-lpic-1.md~",
     "linux/lpi-lpic-2.md~",
     "linux/lpi-bsd-specialist.md~",
@@ -278,18 +281,11 @@
     "journals/2024-07-21.md",
     "journals/2024-07-19.md",
     "journals/2024-07-05.md",
-    "education/wgu.md",
     "education/studycom.md",
     "education/Thomas Edison State University.md",
     "education/sophiaorg.sync-conflict-20240629-195938-2XWGPYO.md",
     "journals/2024-07-04.md",
     "education/sophiaorg.md",
-    "education/pierpontCnTC.md",
-    "education/General Education Requirements (45 Credits).md",
-    "education/excelsior.md",
-    "education/education.md",
-    "journals/2024-06-27.md",
-    "security-certification-roadmap.md",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",

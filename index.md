@@ -17,4 +17,7 @@ There many things I need to do to get this site up and running. I need to:
 
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
+
+Who, What, Where, When, Why, Which, Whom, Whose
+
 [[test.md]]
