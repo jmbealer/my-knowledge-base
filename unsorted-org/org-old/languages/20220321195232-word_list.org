@@ -1,0 +1,118 @@
+:PROPERTIES:
+:ID:       60fa282f-f313-48c6-9bab-c2a3607d6074
+:mtime:    20230206181408 20220528222421
+:ctime:    20220321195232
+:END:
+#+title: word-list
+
+Word POS BNC Rank Google Rank IPA Conjugations Synonyms English
+the art. 0 0 ðə
+of prep. 1 1 ˈʌv belonging to; native to; on, upon; characterized by; separated from; coming from (a direction)de; sur; à; pour; entre, parmi, endi; da; tipo di ...の; 属する; 中から; 点において; ...で...의, ...에 속하는; ...의 출신의;...때문에;...한; ...로 떨어져 나온; ...에서 온van; in; op de; sobre; (pertencente) aиз, для, от, о, об ,(может так же обозначать принадлежность или направление)de; en; por av; från; på; av; i (t.ex: fuska i); från (t.ex: från söder)ของ แหง, ดวย, เกี่ยวกับ, ในเรื่องnin, ın, den, li, yüzünden
+and conj. 2 2 ənd N/A
+plus
+with
+furthermore
+moreover
+also
+then
+afterward
+next واو العطف, أیضا, و 和, 与 und; auch; zusammen mitκαι with, together with; also, tooet, aussi e (cong.), anche ...と...; ...したり...したり; および; そして; すると; それで...와 ..., 또; ...을 곁들인, 과en e, junto com; tambémи, а, но con, junto; tambiénoch; även และ ยิ่งไปกวานั้น, มากไปกวานั้นve, ile, de
+a art. 3 4 ə N/A N/A N/A 一 ein, ein άριστος;ένας, μια, μία, έναfirst letter of the English alphabet; indefinite article used with nounsa, première lettre de l'alphabet; article indéfini: un, uneprima lettera dell'alfabeto; articolo indefinito inglese: un, uno, unaエー, 英語アルファベットの第１字; 名詞に用いる不定冠詞영어 알파벳의 첫번째 문자; 부정관사a ( eerste letter v.h. alfabet ); een ( onbepaald lidwoord ), gebruikt met zelfstandige naamwoordena (primeira letra do alfabeto); um, uma (artigo indefinido)первая буква английского алфавита; неопределенный артикльa, la primera letra del alfabeto; un, unaa (första bokstaven i alfabetet); före substantiv i betydelsen en eller ettN/A N/A
+in prep. 4 5 ɪn ins
+into
+fashionable
+modish
+now
+indoors
+during
+here
+trendy
+stylish
+concerning
+within
+inside
+hip
+arrived
+wearing
+happening
+inwards
+popular في, إلى داخل, في الشباك, على 在...期间, 在...之内, 处于...之中, 从事于, 按照, 穿着in, im, ins, bei, anεν, εις, σε, εντός, μέσαinto; within; inside; inwarden, à, dans, dedans, à l'intérieur; pendantin, a; di; dentro; su; con; per, da中に; 中へ; ...のために; 方へ; ...だから; 語尾が...で終わる; 調で안으로; ...안에; ...속에in; binnen; erin em, a, por, para, com, de, durante, dentro deв, во, на, через, в течение, во время, в то время как, при, по, из, у, под, сen, dentro, dentro de; hacia adentroi, på N/A de, da, içinde, içine, halinde, olarak, içeriye, içeri
+to prep. 5 3 tˈu N/A
+near
+towardإلى, حتى, ل, لدى, نحو, على, بالقیاس إلى 到, 向, 趋于 bis; auf; im Gegensatz zu, für, mitεις, προς, μέχρι, γιαtoward; for; in contrast with; in order tovers; à ; par rapport à; poura; verso; da; fino a, sino a; rispetto a; per...へ; ...まで; 至るまで; ...に; ...したことには; 前; ...のために...으로; ...때문에; ...와는 반하여; ...을 위하여aan; naar; om; ondankspara, a; em contraposição a; com o intuito deк, в, на, до, для, заa; en; hacia; hasta; paratill; åt; emot; för N/A e, ye, ya, e doğru, göre, karşı
+it n. 6 15 ˈɪt N/A N/A اللاعب المكلف بالقیام بعمل ما N/A N/A αυτό, το N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A cinsel ilişki
+for prep. 11 6 fˈɔr N/A
+representing
+pro
+proبسبب ) كذا (, إلى, في سبیل, منذ, فیما یتعلق ب, بالنسبة ل, على الرغم من, إلى مسافة معینة, مع, ب 为, 因为, 至于 für; mit; als; aus; betreffendγια, υπέρ, διά, ένεκα, χάριν, εις, επί, περίto; in order to; in favor of; about, regarding; because; during, during the span of; in consideration of; on behalf ofpour, en faveur de; afin de, pour ce qui est de; par, en raison de, à cause de; car; pendant; depuisper; a, in vista di; in modo che, affinchè, perchè; alla volta di; da; durante; adatto a; con; a favore di; nell'interesse di, per conto di...のために; 側に; ...にちなんで; 代わりに; 額の; ...と引き換えに에 대해; 을 위해; ...에 찬성하여; ..에 관해; ..때문에; ..하는 동안; ...을 대신하여voor; wegens; door; ten goede van; tijdens, gedurende; om; betreffend(e)para, com o intuito de; por; pelo; durante; apesar de; quanto a; a favor; em relação; por causa; em trocaв течение, в продолжение, вследствие; на, в, к, в направлении; для, за, от, из-за, по причине; ради; вместо, в обмен; на расстояние, противpara; por; a causa de; duranteför, till förmån för, till försvar för; till fördel för; vara för, förorda; åt; med anledning av; under, på (en månad, vecka); till ett belopp av-; tillแลกกับ için, göre, amacıyla, doğru, uygun, yönünde, yarayan, karşı, dolayı, sebebiyle
+you n. 12 14 yˈu N/A N/A N/A N/A N/A N/A N/A un uno; (fam) bel tipo, persona straordinaria; unaN/A N/A N/A N/A N/A N/A N/A N/A N/A
+he n. 13 52 hˈi N/A N/A ذكر من الإنسان 男孩, 男人, 雄性动物N/A αυτός N/A un uno; (fam) bel tipo, persona straordinaria; unaN/A N/A N/A N/A N/A N/A N/A N/A erkek
+be v. 14 18 bˈi
+am
+are
+is
+was
+were
+being
+been
+exist
+remain
+survive
+ensue
+subsist
+transpire
+happen
+occur
+live
+befall
+stay یوجد, أصبح, بقي, ذھب, كان N/A sein; existieren είναι, γίνομαι, υπάρχωexist; occur, happen; occupy a position or placeêtre; exister; se trouver; arriver, se produire, avoir lieu; occuper un poste, avoir pour fonction; se présenter (à l'esprit)essere; esistere; accadere, avere luogo; stare, trovarsi; rimanere存在する 이다, ...이 되다, 있다, 생존하다, 존재하다, 일어나다, 지속하다, 되다, ...되어 있다, ...하다, ...하고 있는 중이다, ...하기로 되어 있다, ...할 작정이다, ...해야 한다, 가령 ...이라고 하면zijn, bestaan, levenser; estar; existir; ocorrer, acontecer; ficar, ocupar um espaçoбыть, существовать, находиться, бывать, побывать; происходить, случаться; составлять, обстоять; равняться; посещать; стоитьser, constituir; existir; estar, encontrarse, hallarse, verse; estarsevara, finnas till, existeraN/A olmak, bulunmak, var olmak; anlamına gelmek; mal olmak; tutmak (para); durmak
+with prep. 15 12 wˈɪð N/A
+by
+amid
+including
+among
+through
+plus
+and مع, لدى, و, ضد, ب, عند 和...在一起, 以, 由于mit; bei; vor; auf einer bestimmten Weise; aus; aufgrund von; an; am; gegen; unter; trotzdemσυν, μετά, με, μαζίaccompanied by; having (e.g. a quality); by way of; of; in; from; due to; at; against; among; despiteavec; accompagné de, en dépit de; à l'aide de; au moyen de; chez; contre; bien que; parmi, entre;con, insieme a ...と; もって（質を）; 対して; 加えて; 理解して; 含めて; ...がありながら...와 함께; ...한 성질의; ...의 방법으로; ...의; ...이 있는; ...으로 부터; ...때문에;...에; ...에 반해;...중에; ...에도 불구하고met; behorend tot; met behulp van; door middel van; door; uit; voor; bij ; vancom; em; entre; para com; de; contra; por; com respeito aс, вместе с, от, несмотря наcon; por medio de; mediante; de; entremed; med hjälp av, genom; från; hos; för; av; mot; trotsN/A ile, birlikte, beraber, li
+on prep. 16 8 ˈɑn N/A
+proceeding
+by
+scheduled
+continuously
+happening
+arranged
+atسقط على الأرض, على الحائط, فیما یتعلق, مضرب, في, عن, من حیث المبدأ 在...之上 an; auf επί, επάνω, εις, προς, κατά, εμπρόςatop; as a part of; toward; fromsur; à; au; dessus; lesu, sopra; in; vicino a; con; per, di; fra上に; 属して; 支えとして; 所持して; 沿って; 接して; 向かって; 対して; 近づいて...위에; 한 부분으로; 앞으로; ...으로op; aan; over; langsem; sobre; no, na; por; deу, относительно, по, в, касательно, на, в течение, во время, о, об, согласно, из, после, заsobre, encima de; de; al; enpå; i; mot; över; vidN/A üstünde, üzerinde, de, e doğru, yönünde, ile, civarında, esnasında
+that art. 17 9 ðˈæt N/A to N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A
+by prep. 18 10 bˈaɪ N/A
+via
+near
+through
+with
+beside
+before
+inبواسطة, بجانب, بقرب, في إتجاه, عبر كذا, من قبل, من جانب, في 被, 经, 由, 在...之旁bei; neben; zu; auf; nachυπό, με near près de; à côté devicino a, presso; per; attraverso, via; davanti a; con; di, durante; entro; per mezzo di; a causa di; secondo; conformemente a...のそばに; 近くに; 寄りの; ...のそばを; 対して; 沿って; ...によって, ...で; ...ずつ; ...だけ...옆에 door; met, per; bijperto de при, у, около, близко к, рядом с, мимо, по, на, к, согласноcerca de; por nära, i närheten N/A yanında, kenarında, başında, yakınında, yanından, yakınından, yoluyla, yolundan, tarafından, kadar (süre), vasıtasıyla, ile, göre
+at prep. 19 21 ˈæt N/A
+on
+by عند, لدى, في, إلى, على, نحو, بسبب 在, 向, 对 am, an, auf, in εν, εις, κατά, στο, στη, στονin, on, near; indicating time or location; towardà; chez; vers; près, du côté de; enversa, in; da; di; verso, contro, addosso; attraverso, per...において; ...から; ...で; ...に...에, 에서; (시간 또는 장소)...에; ...쪽에in; bij; op; naar em; a; no, na; em casa de; porу, около, в, на, при, заen, a på; bredvid ; hos; vid (tid), iไปยัง de, da, ye, ya, e, a
+not adv. 21 16 nˈɑt N/A N/A A/N لن, لیس, للجزم nicht δεν, όχι, μη no; not even; to no degree at allne...pas; ne...point; non; même pasnon; di no; neanche, neppure...でない; ...でなく...이 ...아니다; ...지 않다niet; geen não; mesmo que nãoнет, не no inte, icke, ej; ingen; inte ensไม N/A
+this art. 22 11 ðˈɪs N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A
+but conj. 23 42 bˈʌt buts
+except
+excluding
+nevertheless
+although
+bar
+however لكن, إلا, ما عدا, إلا ھو 但是 aber, jedoch αλλά, πλην, μόλιςhowever, yet mais, cependant, pourtantma, però, tuttavia; eccetto che, eccettuato che; senza che, se non; altro cheしかし, だが, けれども, でも; ...のほかには; ではなくて그러나, 하지만 maar; doch mas, porém; senãoно, а, тем не менее, однако, впрочем, зато, чтобы не, если бы не, если не, как неpero, mas; sino men, utan N/A fakat, ama, ancak, halbuki, oysa, başka, hariç, ki
+they n. 25 50 ðˈeɪ N/A N/A N/A N/A N/A N/A N/A un uno; (fam) bel tipo, persona straordinaria; unaN/A N/A N/A N/A N/A N/A N/A N/A N/A
+his art. 26 66 hˈɪz N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A
+from prep. 27 20 frˈʌm N/A
+commencing
+starting
+beginning
+since من, منذ, حسب 从, 来自, 根据 von; aus; seit από, εκ, παρά starting in, beginning at, originating in (indicates a source); by; since; due to, caused byde, à partir de, depuis; de la part deda; a partire da; per, a causa di; proveniente da, da parte di...から; ...で; 故に...에서, ... 으로 부터; ...으로; ...한 기점으로 부터; ...때문에 야기된van, uit, door de; desde; por из, с, от, судя по de, desde, a partir defrån, ur; hemifrån; från och medจาก den, den beri, dan, beri, itibaren, yüzünden, dolayı
+she n. 29 169 ʃˈi N/A N/A الأنثى من الحیوان أو الإنسان N/A sie αυτή, εκείνη female person or animal; something considered to be femininefemelle; femme;unella, lei, essa; colei, quella;uno; (fam) bel tipo, persona straordinaria; una彼女は; それは 그 여자는, 그녀는vrouwelijk persoon; vrouwfêmea; mulher она, та mujer, hembra hona; kvinna N/A kadın
+which art. 30 56 wˈɪtʃ N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A
+or n. 31 17 ˈɔr N/A
+before
+otherwise N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A N/A
+we n. 32 30 wˈi N/A N/A N/A N/A N/A N/A N/A un uno; (fam) bel tipo, persona straordinaria; unaN/A N/A N/A N/A N/A N/A N/A N/A N/A

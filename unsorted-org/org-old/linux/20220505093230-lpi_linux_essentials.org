@@ -1,0 +1,1644 @@
+:PROPERTIES:
+:ID:       8bb1d8d1-c11d-4a09-8ab4-1a8dc5995c15
+:mtime:    20230306085924 20230306075742 20230214111714 20230206181447 20220528222421
+:ctime:    20220505093230
+:options: toc:t
+:END:
+#+title: LPI Linux Essentials Exam 010-160
+
+* Table of Contents :toc:
+- [[#topic-1-the-linux-community-and-a-career-in-open-source][Topic 1: The Linux Community and a Career in Open Source]]
+  - [[#11-linux-evolution-and-popular-operating-systems][1.1 Linux Evolution and Popular Operating Systems]]
+  - [[#12-major-open-source-applications][1.2 Major Open Source Applications]]
+  - [[#13-open-source-software-and-licensing][1.3 Open Source Software and Licensing]]
+  - [[#14-ict-skills-and-working-in-linux][1.4 ICT Skills and Working in Linux]]
+- [[#topic-2-finding-your-way-on-a-linux-system][Topic 2: Finding Your Way on a Linux System]]
+  - [[#21-command-line-basics][2.1 Command Line Basics]]
+  - [[#22-using-the-command-line-to-get-help][2.2 Using the Command Line to Get Help]]
+  - [[#23-using-directories-and-listing-files][2.3 Using Directories and Listing Files]]
+  - [[#24-creating-moving-and-deleting-files][2.4 Creating, Moving and Deleting Files]]
+- [[#topic-3-the-power-of-the-command-line][Topic 3: The Power of the Command Line]]
+  - [[#31-archiving-files-on-the-command-line][3.1 Archiving Files on the Command Line]]
+  - [[#32-searching-and-extracting-data-from-files][3.2 Searching and Extracting Data from Files]]
+  - [[#33-turning-commands-into-a-script][3.3 Turning Commands into a Script]]
+- [[#topic-4-the-linux-operating-system][Topic 4: The Linux Operating System]]
+  - [[#41-choosing-an-operating-system][4.1 Choosing an Operating System]]
+  - [[#42-understanding-computer-hardware][4.2 Understanding Computer Hardware]]
+  - [[#43-where-data-is-stored][4.3 Where Data is Stored]]
+  - [[#44-your-computer-on-the-network][4.4 Your Computer on the Network]]
+- [[#topic-5-security-and-file-permissions][Topic 5: Security and File Permissions]]
+  - [[#51-basic-security-and-identifying-user-types][5.1 Basic Security and Identifying User Types]]
+  - [[#52-creating-users-and-groups][5.2 Creating Users and Groups]]
+  - [[#53-managing-file-permissions-and-ownership][5.3 Managing File Permissions and Ownership]]
+  - [[#54-special-directories-and-files][5.4 Special Directories and Files]]
+
+* Topic 1: The Linux Community and a Career in Open Source
+** 1.1 Linux Evolution and Popular Operating Systems
+- Weight: 2
+- Description: Knowledge of Linux development and major distributions.
+- Key Knowledge Areas:
+  - Distributions
+  - Embedded Systems
+  - Linux in the Cloud
+- The following is a partial list of the used files, terms and utilities:
+  - Debian, Ubuntu (LTS)
+  - CentOS, openSUSE, Red Hat, SUSE
+  - Linux Mint, Scientific Linux
+  - Raspberry Pi, Raspbian
+  - Android
+*** Introduction
+Linux’s development started in 1991 by Linus Torvalds.\\
+Linux was inspired by Unix.
+The Unix operating system was developed in the 1970s by AT&T Laboratories.
+Linux uses the same principles and basic ideas of Unix.
+Linux doesn't contain Unix code, it an independent project.
+Linux is freely available, it can be used by anyone without restrictions.
+*** Distributions
+A Linux distribution contains a Linux kernel and a selection of applications, maintained by a company or user community.
+A distribution’s goal is to optimize the kernel and the applications, for a certain use case or user group.
+Distributions often include distribution-specific tools for software installation and system administration.
+Linux distros mainly use for desktop environments, need to be easy to use.
+Linux distros mainly use for servers, need to be efficient
+Debian based distributions use *dpkg* as the package manager
+Package managers are use to manage the software that is run on the operating system.
+Most packages installed with package manager are maintained by the community.
+deb package format use to specify how the software is installed and how it is configured by default.
+a package consist of software, configuration, and documentation; which make it easier for the user to install, update and use the software.
+Debian was launched in 1993 by Ian Murdock.
+Debian aims to provide a very reliable operating system.
+Debian does not provide any proprietary software by default.
+Ubuntu is Debian-based distribution
+Ubuntu was created in 2004 by Mark Shuttleworth.
+Ubuntu aims to provide a easy to use Linux desktop environment.
+Ubuntu has a scheduled release every six months with a long-term support release every 2 years.
+
+Red Hat is a Linux distribution developed and maintained by Red Hat Inc.
+Red Hat Inc was acquired by IBM in 2019.
+Red Hat Linux was started in 1994.
+Red Hat Linux was re-branded in 2003 to Red Hat Enterprise Linux.
+Red Hat Enterprise Linux abbreviated as RHEL.
+Red Hat aims to provided and support a reliable enterprise solution.
+Red Hat comes with software that aims to ease the use of Linux in professional server environments.
+Some of Red Hat components require fee-based subscriptions or licenses.
+CentOS uses the freely available source code of Red Hat Enterprise Linux.
+CentOS is completely free, but doesn't come with commercial support.
+Both RHEL and CentOS are optimized for use in server environments.
+Fedora was founded in 2003
+Fedora is optimized for use in desktop environments.
+Fedora is maintain by Ret Had.
+Fedora is very progressive and adopts new technologies very quickly.
+Fedora is sometimes considered a test-bed for RHEL.
+All Red Hat based distributions use the package format rpm.
+
+SUSE was founded in 1992 in Germany as a Unix service provider.
+The first version of SUSE Linux was released in 1994.
+SUSE Linux is known for its YaST configuration tool.
+YaST allows administrators to install and configure software and hardware, set up servers and networks.
+SUSE releases SUSE Linux Enterprise Server, which is their commercial edition.
+SUSE Linux Enterprise Server is less frequently released, and suitable for enterprise and production deployment.
+openSUSE was released in 2004
+The openSUSE distribution is freely available to download.
+QubesOS is a very secure desktop environment.
+Kali Linux provides an environment for exploiting software vulnerabilities.
+Kali Linux is mainly used by penetration testers.
+various super small Linux distributions are designed to specifically run in Linux containers, such as Docker.
+*** Embedded Systems
+Embedded systems are a combination of computer hardware and software designed to have a specific function within a larger system.
+Usually they are part of other devices and help to control these devices.
+Embedded systems are found in automotive, medical and even military applications.
+Due to its wide variety of applications, a variety of operating systems based on the Linux kernel was developed in order to be used in embedded systems.
+A significant part of smart devices have a Linux kernel based operating system running on it.
+Therefore, with embedded systems comes embedded software.
+The purpose of this software is to access the hardware and make it usable.
+The major advantages of Linux over any proprietary embedded software include cross vendor platform compatibility, development, support and no license fees.
+Two of the most popular embedded software projects are Android, that is mainly used on mobile phones across a variety of vendors and Raspbian, which is used mainly on Raspberry Pi.
+*** Android
+Android is mainly a mobile operating system developed by Google.
+Android Inc. was founded in 2003 in Palo Alto, California.
+The company initially created an operating system meant to run on digital cameras.
+In 2005, Google bought Android Inc. and developed it to be one of the biggest mobile operating systems.
+The base of Android is a modified version of the Linux kernel with additional open source software.
+The operating system is mainly developed for touchscreen devices, but Google has developed versions for TV and wrist watches.
+Different versions of Android have been developed for game consoles, digital cameras, as well as PCs.
+Android is freely available in open source as Android Open Source Project (AOSP).
+Google offers a series of proprietary components in addition to the open source core of Android.
+These components include applications such as Google Calendar, Google Maps, Google Mail, the Chrome browser as well as the Google Play Store which facilitates the easy installation of apps.
+Most users consider these tools an integral part of their Android experience.
+Therefore almost all mobile devices shipped with Android in Europe and America include proprietary Google software.
+Android on embedded devices has many advantages.
+The operating system is intuitive and easy to use with a graphical user interface, it has a very wide developer community, therefore it is easy to find help for development.
+It is also supported by the majority of the hardware vendors with an Android driver, therefore it is easy and cost effective to prototype an entire system.
+*** Raspbian and the Raspberry Pi
+Raspberry Pi is a low cost, credit-card sized computer that can function as a full-functionality desktop computer, but it can be used within an embedded Linux system.
+It is developed by the Raspberry Pi Foundation, which is an educational charity based in UK.
+It mainly has the purpose to teach young people to learn to program and understand the functionality of computers.
+The Raspberry Pi can be designed and programmed to perform desired tasks or operations that are part of a much more complex system.
+The specialties of the Raspberry Pi include a set of General Purpose Input-Output (GPIO) pins which can be used to attach electronic devices and extension boards.
+This allows using the Raspberry Pi as a platform for hardware development.
+Although it was intended for educational purposes, Raspberry Pis are used today in various DIY projects as well as for industrial prototyping when developing embedded systems.
+The Raspberry Pi uses ARM processors. Various operating systems, including Linux, run on the Raspberry Pi.
+Since the Raspberry Pi does not contain a hard disk, the operating system is started from an SD memory card.
+One of the most prominent Linux distributions for the Raspberry Pi is Raspbian.
+As the name suggests, it belongs to the Debian distribution family.
+It is customized to be installed on the Raspberry Pi hardware and provides more than 35000 packages optimized for this environment.
+Besides Raspbian, numerous other Linux distributions exist for the Raspberry Pi, like, for example, Kodi, which turns the Raspberry Pi into a media center.
+*** Linux and the Cloud
+The term cloud computing refers to a standardized way of consuming computing resources, either by buying them from a public cloud provider or by running a private cloud.
+As of 2017 reports, Linux runs 90% of the public cloud workload.
+Every cloud provider, from Amazon Web Services (AWS) to Google Cloud Platform (GCP), offers different forms of Linux.
+Even Microsoft, a company whose former CEO compared Linux to cancer, offers Linux-based virtual machines in their Azure cloud today.
+Linux is usually offered as part of Infrastructure as a Service (IaaS) offering.
+IaaS instances are virtual machines which are provisioned within minutes in the cloud.
+When starting an IaaS instance, an image is chosen which contains the data that is deployed to the new instance.
+Cloud providers offer various images containing ready to run installations of both popular Linux distributions as well as own versions of Linux.
+The cloud user chooses an image containing their preferred distribution and can access a cloud instance running this distribution shortly after.
+Most cloud providers add tools to their images to adjust the installation to a specific cloud instance.
+These tools can, for example, extend the file systems of the image to fit the actual hard disk of the virtual machine.
+Guided Exercises
+1. How is Debian GNU/Linux different from Ubuntu? Name two aspects.
+2. What are the most common environments/platforms Linux is used for? Name three different
+environments/platforms and name one distribution you can use for each.
+3. You are planning to install a Linux distribution in a new environment. Name four things that
+you should consider when choosing a distribution.
+4. Name three devices that the Android OS runs on, other than smartphones.
+5. Explain three major advantages of cloud computing.
+Linux Essentials (Version 1.6) | Topic 1: The Linux Community and a Career in Open Source
+8 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Explorational Exercises
+1. Considering cost and performance, which distributions are mostly suitable for a business that
+aims to reduce licensing costs, while keeping performance at its highest? Explain why.
+2. What are the major advantages of the Raspberry Pi and which functions can they take in
+business?
+3. What range of distributions does Amazon Cloud Services and Google Cloud offer? Name at least
+three common ones and two different ones.
+Linux Essentials (Version 1.6) | 1.1 Linux Evolution and Popular Operating Systems
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 9
+Summary
+In this lesson you learned:
+• What distributions does Linux have
+• What are Linux embedded systems
+• How are Linux embedded systems used
+• Different applicabilities of Android
+• Different uses of a Raspberry Pi
+• What is Cloud Computing
+• What role does Linux play in cloud computing
+** 1.2 Major Open Source Applications
+- Weight: 2
+- Description: Awareness of major applications as well as their uses and development.
+- Key Knowledge Areas:
+    Desktop applications
+    Server applications
+    Development languages
+    Package management tools and repositories
+- The following is a partial list of the used files, terms and utilities:
+    OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP
+    Nextcloud, ownCloud
+    Apache HTTPD, NGINX, MariaDB, MySQL, NFS, Samba
+    C, Java, JavaScript, Perl, shell, Python, PHP
+    dpkg, apt-get, rpm, yum
+** 1.3 Open Source Software and Licensing
+- Weight: 1
+- Description: Open communities and licensing Open Source Software for business.
+- Key Knowledge Areas:
+    Open source philosophy
+    Open source licensing
+    Free Software Foundation (FSF), Open Source Initiative (OSI)
+- The following is a partial list of the used files, terms and utilities:
+    Copyleft, Permissive
+    GPL, BSD, Creative Commons
+    Free Software, Open Source Software, FOSS, FLOSS
+    Open source business models
+** 1.4 ICT Skills and Working in Linux
+- Weight: 2
+- Description: Basic Information and Communication Technology (ICT) skills and working in Linux.
+- Key Knowledge Areas:
+    Desktop skills
+    Getting to the command line
+    Industry uses of Linux, cloud computing and virtualization
+- The following is a partial list of the used files, terms and utilities:
+    Using a browser, privacy concerns, configuration options, searching the web and saving content
+    Terminal and console
+    Password issues
+    Privacy issues and tools
+    Use of common open source applications in presentations and projects
+* Topic 2: Finding Your Way on a Linux System
+** 2.1 Command Line Basics
+- Weight: 3
+- Description: Basics of using the Linux command line.
+- Key Knowledge Areas:
+    Basic shell
+    Command line syntax
+    Variables
+    Quoting
+- The following is a partial list of the used files, terms and utilities:
+    Bash
+    echo
+    history
+    PATH environment variable
+    export
+    type
+** 2.2 Using the Command Line to Get Help
+- Weight: 2
+- Description: Running help commands and navigation of the various help systems.
+- Key Knowledge Areas:
+    Man pages
+    Info pages
+- The following is a partial list of the used files, terms and utilities:
+    man
+    info
+    /usr/share/doc/
+    locate
+** 2.3 Using Directories and Listing Files
+- Weight: 2
+- Description: Navigation of home and system directories and listing files in various locations.
+- Key Knowledge Areas:
+    Files, directories
+    Hidden files and directories
+    Home directories
+    Absolute and relative paths
+- The following is a partial list of the used files, terms and utilities:
+    Common options for ls
+    Recursive listings
+    cd
+    . and ..
+    home and ~
+** 2.4 Creating, Moving and Deleting Files
+- Weight: 2
+- Description: Create, move and delete files and directories under the home directory.
+- Key Knowledge Areas:
+    Files and directories
+    Case sensitivity
+    Simple globbing
+- The following is a partial list of the used files, terms and utilities:
+    mv, cp, rm, touch
+    mkdir, rmdir
+* Topic 3: The Power of the Command Line
+** 3.1 Archiving Files on the Command Line
+- Weight:  2
+- Description: Archiving files in the user home directory.
+- Key Knowledge Areas:
++ Files, directories
++ Archives, compression
+partial list of the used files, terms and utilities:
++ tar
++ Common tar options
++ gzip, bzip2, xz
++ zip, unzip
+Introduction
+Compression is used to reduce the amount of space a specific set of data consumes.
+Compression is commonly used for reducing the amount of space that is needed to store a file.
+Another common use is to reduce the amount of data sent over a network connection.
+Compression works by replacing repetitive patterns in data.
+Compression comes in two varieties, lossless and lossy.
+lossless algorithm allows decompressed back into their original form.
+lossy algorithm cannot be recovered.
+Lossy algorithms are often used for images, video, and audio where the quality loss is imperceptible to humans, irrelevant to the context, or the loss is worth the saved space or network throughput.
+Archiving tools are used to bundle up files and directories into a single file.
+Archiving tools commonly used for backups, bundling software source code, and data retention.
+Archive and compression are commonly used together. Some archiving tools even compress their
+contents by default. Others can optionally compress their contents. A few archive tools must be used
+in conjunction with stand-alone compression tools if you wish to compress the contents.
+The most common tool for archiving files on Linux systems is tar. Most Linux distributions ship
+with the GNU version of tar, so it is the one that will be covered in this lesson. tar on its own only
+manages the archiving of files but does not compress them.
+There are lots of compression tools available on Linux. Some common lossless ones are bzip2, gzip,
+and xz. You will find all three on most systems. You may encounter an old or very minimal system
+where xz or bzip is not installed. If you become a regular Linux user, you will likely encounter files
+compressed with all three of these. All three of them use different algorithms, so a file compressed
+with one tool can’t be decompressed by another. Compression tools have a trade off. If you want a
+high compression ratio, it will take longer to compress and decompress the file. This is because
+higher compression requires more work finding more complex patterns. All of these tools compress
+data but can not create archives containing multiple files.
+Stand-alone compression tools aren’t typically available on Windows systems. Windows archiving
+and compression tools are usually bundled together. Keep this in mind if you have Linux and
+Windows systems that need to share files.
+Linux systems also have tools for handling .zip files commonly used on Windows system. They are
+called zip and unzip. These tools are not installed by default on all systems, so if you need to use
+them you may have to install them. Fortunately, they are typically found in distributions' package
+repositories.
+Compression Tools
+How much disk space is saved by compressing files depends on a few factors. The nature of the data
+you are compressing, the algorithm used to compress the data, and the compression level. Not all
+algorithms support different compression levels.
+Let’s start with setting up some test files to compress:
+$ mkdir ~/linux_essentials-3.1
+$ cd ~/linux_essentials-3.1
+$ mkdir compression archiving
+$ cd compression
+$ cat /etc/* > bigfile 2> /dev/null
+Now we create three copies of this file:
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 169
+$ cp bigfile bigfile2
+$ cp bigfile bigfile3
+$ cp bigfile bigfile4
+$ ls -lh
+total 2.8M
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile2
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile3
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile4
+Now we are going to compress the files with each aforementioned compression tool:
+$ bzip2 bigfile2
+$ gzip bigfile3
+$ xz bigfile4
+$ ls -lh
+total 1.2M
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile
+-rw-r--r-- 1 emma emma 170K Jun 23 08:08 bigfile2.bz2
+-rw-r--r-- 1 emma emma 179K Jun 23 08:08 bigfile3.gz
+-rw-r--r-- 1 emma emma 144K Jun 23 08:08 bigfile4.xz
+Compare the sizes of the compressed files to the uncompressed file named bigfile. Also notice how
+the compression tools added extensions to the file names and removed the uncompressed files.
+Use bunzip2, gunzip, or unxz to decompress the files:
+$ bunzip2 bigfile2.bz2
+$ gunzip bigfile3.gz
+$ unxz bigfile4.xz
+$ ls -lh
+total 2.8M
+-rw-r--r-- 1 emma emma 712K Jun 23 08:20 bigfile
+-rw-r--r-- 1 emma emma 712K Jun 23 08:20 bigfile2
+-rw-r--r-- 1 emma emma 712K Jun 23 08:20 bigfile3
+-rw-r--r-- 1 emma emma 712K Jun 23 08:20 bigfile4
+Notice again that now the compressed file is deleted once it is decompressed.
+Some compression tools support different compression levels. A higher compression level usually
+requires more memory and CPU cycles, but results in a smaller compressed file. The opposite is true
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+170 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+for a lower level. Below is a demonstration with xz and gzip:
+$ cp bigfile bigfile-gz1
+$ cp bigfile bigfile-gz9
+$ gzip -1 bigfile-gz1
+$ gzip -9 bigfile-gz9
+$ cp bigfile bigfile-xz1
+$ cp bigfile bigfile-xz9
+$ xz -1 bigfile bigfile-xz1
+$ xz -9 bigfile bigfile-xz9
+$ ls -lh bigfile bigfile-* *
+total 3.5M
+-rw-r--r-- 1 emma emma 712K Jun 23 08:08 bigfile
+-rw-r--r-- 1 emma emma 205K Jun 23 13:14 bigfile-gz1.gz
+-rw-r--r-- 1 emma emma 178K Jun 23 13:14 bigfile-gz9.gz
+-rw-r--r-- 1 emma emma 156K Jun 23 08:08 bigfile-xz1.xz
+-rw-r--r-- 1 emma emma 143K Jun 23 08:08 bigfile-xz9.xz
+It is not necessary to decompress a file every time you use it. Compression tools typically come with
+special versions of common tools used to read text files. For example, gzip has a version of cat, grep,
+diff, less, more, and a few others. For gzip, the tools are prefixed with a z, while the prefix bz exists
+for bzip2 and xz exists for xz. Below is an example of using zcat to read display a file compressed
+with gzip:
+$ cp /etc/hosts ./
+$ gzip hosts
+$ zcat hosts.gz
+127.0.0.1 localhost
+# The following lines are desirable for IPv6 capable hosts
+::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Archiving Tools
+The tar program is probably the most widely used archiving tool on Linux systems. In case you are
+wondering why it is named how it is, it as an abbreviation for “tape archive”. Files created with tar
+are often called tar balls. It is very common for applications distributed as source code to be in tar
+balls.
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 171
+The GNU version of tar that Linux distributions ship with has a lot of options. This lesson is going
+to cover the most commonly used subset.
+Let’s start off by creating an archive of the files used for compression:
+$ cd ~/linux_essentials-3.1
+$ tar cf archiving/3.1.tar compression
+The c option instructs tar to create a new archive file and the f option is the name of the file to
+create. The argument immediately following the options is always going to be the name of the file to
+work on. The rest of the arguments are the paths to any files or directories you wish to add to, list,
+or extract from the file. In the example, we are adding the directory compression and all of its
+contents to the archive.
+To view the contents of a tar ball, use the t option of tar:
+$ tar -tf 3.1.tar
+compression/
+compression/bigfile-xz1.xz
+compression/bigfile-gz9.gz
+compression/hosts.gz
+compression/bigfile2
+compression/bigfile
+compression/bigfile-gz1.gz
+compression/bigfile-xz9.xz
+compression/bigfile3
+compression/bigfile4
+Notice how the options are preceded with -. Unlike most programs, with tar, the - isn’t required
+when specifying options, although it doesn’t cause any harm if it is used.
+NOTE You can use the -v option to let tar output the names of files it operates on when
+creating or extracting an archive.
+Now let’s extract the file:
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+172 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+$ cd ~/linux_essentials-3.1/archiving
+$ ls
+3.1.tar
+$ tar xf 3.1.tar
+$ ls
+3.1.tar compression
+Suppose you only need one file out of the archive. If this is the case, you can specify it after the
+archive’s file name. You can specify multiple files if necessary:
+$ cd ~/linux_essentials-3.1/archiving
+$ rm -rf compression
+$ ls
+3.1.tar
+$ tar xvf 3.1.tar compression/hosts.gz
+compression/
+compression/bigfile-xz1.xz
+compression/bigfile-gz9.gz
+compression/hosts.gz
+compression/bigfile2
+compression/bigfile
+compression/bigfile-gz1.gz
+compression/bigfile-xz9.xz
+compression/bigfile3
+compression/bigfile4
+$ ls
+3.1.tar compression
+$ ls compression
+hosts.gz
+With the exception of absolute paths (paths beginning with /), tar files preserve the entire path to
+files when they are created. Since the file 3.1.tar was created with a single directory, that directory
+will be created relative to your current working directory when extracted. Another example should
+clarify this:
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 173
+$ cd ~/linux_essentials-3.1/archiving
+$ rm -rf compression
+$ cd ../compression
+$ tar cf ../tar/3.1-nodir.tar *
+$ cd ../archiving
+$ mkdir untar
+$ cd untar
+$ tar -xf ../3.1-nodir.tar
+$ ls
+bigfile bigfile3 bigfile-gz1.gz bigfile-xz1.xz hosts.gz
+bigfile2 bigfile4 bigfile-gz9.gz bigfile-xz9.xz
+TIP If you wish to use the absolute path in a tar file, you must use the P option. Be aware
+that this may overwrite important files and might cause errors on your system.
+The tar program can also manage compression and decompression of archives on the fly. tar does
+so by calling one of the compression tools discussed earlier in this section. It is as simple as adding
+the option appropriate to the compression algorithm. The most commonly used ones are j, J, and z
+for bzip2, xz, and gzip, respectively. Below are examples using the aforementioned algorithms:
+$ cd ~/linux_essentials-3.1/compression
+$ ls
+bigfile bigfile3 bigfile-gz1.gz bigfile-xz1.xz hosts.gz
+bigfile2 bigfile4 bigfile-gz9.gz bigfile-xz9.xz
+$ tar -czf gzip.tar.gz bigfile bigfile2 bigfile3
+$ tar -cjf bzip2.tar.bz2 bigfile bigfile2 bigfile3
+$ tar -cJf xz.tar.xz bigfile bigfile2 bigfile3
+$ ls -l | grep tar
+-rw-r--r-- 1 emma emma 450202 Jun 27 05:56 bzip2.tar.bz2
+-rw-r--r-- 1 emma emma 548656 Jun 27 05:55 gzip.tar.gz
+-rw-r--r-- 1 emma emma 147068 Jun 27 05:56 xz.tar.xz
+Notice how in the example the .tar files have different sizes. This shows that they were successfully
+compressed. If you create compressed .tar archives, you should always add a second file extension
+denoting the algorithm you used. They are .xz, .bz, and .gz for xz, bzip2, and gzip, respectively.
+Sometimes shortened extensions such as .tgz are used.
+It is possible to add files to already existing uncompressed tar archives. Use the u option to do this. If
+you attempt to add to a compressed archive, you will get an error.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+174 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+$ cd ~/linux_essentials-3.1/compression
+$ ls
+bigfile bigfile3 bigfile-gz1.gz bigfile-xz1.xz bzip2.tar.bz2 hosts.gz
+bigfile2 bigfile4 bigfile-gz9.gz bigfile-xz9.xz gzip.tar.gz xz.tar.xz
+$ tar cf plain.tar bigfile bigfile2 bigfile3
+$ tar tf plain.tar
+bigfile
+bigfile2
+bigfile3
+$ tar uf plain.tar bigfile4
+$ tar tf plain.tar
+bigfile
+bigfile2
+bigfile3
+bigfile4
+$ tar uzf gzip.tar.gz bigfile4
+tar: Cannot update compressed archives
+Try 'tar --help' or 'tar --usage' for more information.
+Managing ZIP files
+Windows machines often don’t have applications to handle tar balls or many of the compression
+tools commonly found on Linux systems. If you need to interact with Windows systems, you can use
+ZIP files. A ZIP file is an archive file similar to a compressed tar file.
+The zip and unzip programs can be used to work with ZIP files on Linux systems. The example
+below should be all you need to get started using them. First we create a set of files:
+$ cd ~/linux_essentials-3.1
+$ mkdir zip
+$ cd zip/
+$ mkdir dir
+$ touch dir/file1 dir/file2
+Now we use zip to pack these files into a ZIP file:
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 175
+$ zip -r zipfile.zip dir
+adding: dir/ (stored 0%)
+adding: dir/file1 (stored 0%)
+adding: dir/file2 (stored 0%)
+$ rm -rf dir
+Finally, we unpack the ZIP file again:
+$ ls
+zipfile.zip
+$ unzip zipfile.zip
+Archive: zipfile.zip
+creating: dir/
+extracting: dir/file1
+extracting: dir/file2
+$ find
+.
+./zipfile.zip
+./dir
+./dir/file1
+./dir/file2
+When adding directories to ZIP files, the -r option causes zip to include a directory’s contents.
+Without it, you would have an empty directory in the ZIP file.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+176 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Guided Exercises
+1. According to the extensions, which of the following tools were used to create these files?
+Filename tar gzip bzip2 xz
+archive.tar
+archive.tgz
+archive.tar.xz
+2. According to the extensions, which of these files are archives and which are compressed?
+Filename Archive Compressed
+file.tar
+file.tar.bz2
+file.zip
+file.xz
+3. How would you add a file to a gzip compressed tar file?
+4. Which tar option instructs tar to include the leading / in absolute paths?
+5. Does zip support different compression levels?
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 177
+Explorational Exercises
+1. When extracting files, does tar support globs in the file list?
+2. How can you make sure a decompressed file is identical to the file before it was compressed?
+3. What happens if you try to extract a file from a tar archive that already exists on your
+filesystem?
+4. How would you extract the file archive.tgz without using the tar z option?
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+178 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Summary
+Linux systems have several compression and archiving tools available. This lesson covered the most
+common ones. The most common archiving tool is tar. If interacting with Windows systems is
+necessary, zip and unzip can create and extract ZIP files.
+The tar command has a few options that are worth memorizing. They are x for extract, c for create,
+t for view contents, and u to add or replace files. The v option lists the files which are processed by
+tar while creating or extracting an archive.
+The typical Linux distribution’s repository has many compression tools. The most common are gzip,
+bzip2, and xz. Compression algorithms often support different levels that allow you to optimize for
+speed or file size. Files can be decompressed with gunzip, bunzip2, and unxz.
+Compression tools commonly have programs that behave like common text file tools, with the
+difference being they work on compressed files. A few of them are zcat, bzcat, and xzcat.
+Compression tools typically ship with programs with the functionality of grep, more, less, diff, and
+cmp.
+Commands used in the exercises:
+bunzip2
+Decompress a bzip2 compressed file.
+bzcat
+Output the contents of a bzip compressed file.
+bzip2
+Compress files using the bzip2 algorithm and format.
+gunzip
+Decompress a gzip compressed file.
+gzip
+Compress files using the gzip algorithm and format.
+tar
+Create, update, list and extract tar archives.
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 179
+unxz
+Decompress a xz compressed file.
+unzip
+Decompress and extract content from a ZIP file.
+xz Compress files using the xz algorithm and format.
+zcat
+Output the contents of a gzip compressed file.
+zip
+Create and compress ZIP archives.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+180 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Answers to Guided Exercises
+1. According to the extensions, which of the following tools were used to create these files?
+Filename tar gzip bzip2 xz
+archive.tar X
+archive.tgz X X
+archive.tar.xz X X
+2. According to the extensions, which of these files are archives and which are compressed?
+Filename Archive Compressed
+file.tar X
+file.tar.bz2 X X
+file.zip X X
+file.xz X
+3. How would you add a file to a gzip compressed tar file?
+You would decompress the file with gunzip, add the file with tar uf, and then compress it with
+gzip
+4. Which tar option instructs tar to include the leading / in absolute paths?
+The -P option. From the man page:
+-P, --absolute-names
+Don't strip leading slashes from file names when creating archives
+5. Does zip support different compression levels?
+Yes. You would use -#, replacing # with a number from 0-9. From the man page:
+Linux Essentials (Version 1.6) | 3.1 Archiving Files on the Command Line
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 181
+-#
+(-0, -1, -2, -3, -4, -5, -6, -7, -8, -9)
+Regulate the speed of compression using the specified digit #,
+where -0 indicates no compression (store all files), -1 indi‐
+cates the fastest compression speed (less compression) and -9
+indicates the slowest compression speed (optimal compression,
+ignores the suffix list). The default compression level is -6.
+Though still being worked, the intention is this setting will
+control compression speed for all compression methods. Cur‐
+rently only deflation is controlled.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+182 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Answers to Explorational Exercises
+1. When extracting files, does tar support globs in the file list?
+Yes, you would use the --wildcards option. --wildcards must be placed right after the tar file
+when using the no dash style of options. For example:
+$ tar xf tarfile.tar --wildcards dir/file*
+$ tar --wildcards -xf tarfile.tar dir/file*
+2. How can you make sure a decompressed file is identical to the file before it was compressed?
+You don’t need to do anything with the tools covered in this lesson. All three of them include
+checksums in their file format that is verified when they are decompressed.
+3. What happens if you try to extract a file from a tar archive that already exists on your
+filesystem?
+The file on your filesystem is overwritten with the version that is in the tar file.
+4. How would you extract the file archive.tgz without using the tar z option?
+You would decompress it with gunzip first.
+$ gunzip archive.tgz
+$ tar xf archive.tar
+** 3.2 Searching and Extracting Data from Files
+- Weight: 3
+- Description: Search and extract data from files in the home directory.
+- Key Knowledge Areas:
+    Command line pipes
+    I/O redirection
+    Basic Regular Expressions using ., [ ], *, and ?
+- The following is a partial list of the used files, terms and utilities:
+    grep
+    less
+    cat, head, tail
+    sort
+    cut
+    wc
+** 3.3 Turning Commands into a Script
+- Weight: 4
+- Description: Turning repetitive commands into simple scripts.
+- Key Knowledge Areas:
++ Basic shell scripting
++ Awareness of common text editors (vi and nano)
+Partial list of the used files, terms and utilities:
++ #! (shebang)
++ /bin/bash
++ Variables
++ Arguments
++ for loops
++ echo
++ Exit status
+Introduction
+Commands can be enter into a file, and make the file executable.
+When a script is executed, the commands run one after the other.
+Executable files are called scripts
+Printing Output
+echo will print an argument to standard output.
+echo "Hello World!"
+use file redirection to send this command to a new file called new_script.
+echo 'echo "Hello World!"' > new_script
+cat new_script
+The file new_script now contains the same command as before.
+Making a Script Executable
+Let’s demonstrate some of the steps required to make this file execute the way we expect it to.
+A user’s first thought might be to simply type the name of the script, the way they might type in the name of any other command:
+$ new_script
+/bin/bash: new_script: command not found
+We can safely assume that new_script exists in our current location, but notice that the error
+message isn’t telling us that the file doesn’t exist, it is telling us that the command doesn’t exist. It
+would be useful to discuss how Linux handles commands and executables.
+Commands and PATH
+When we type the ls command into the shell, for example, we are executing a file called ls that
+exists in our filesystem. You can prove this by using which:
+when a command is used, it executes a file named after the command that exists in our filesystem
+Using a command, executes a file
+$ which ls
+/bin/ls
+It would quickly become tiresome to type in the absolute path of ls every time we wish to look at
+the contents of a directory, so Bash has an environment variable which contains all the directories
+where we might find the commands we wish to run. You can view the contents of this variable by
+using echo.
+$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/
+games:/snap/bin
+Each of these locations is where the shell expects to find a command, delimited with colons (:). You
+will notice that /bin is present, but it is safe to assume that our current location is not. The shell will
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 213
+search for new_script in each of these directories, but it will not find it and therefore will throw the
+error we saw above.
+There are three solutions to this issue: we can move new_script into one of the PATH directories, we
+can add our current directory to PATH, or we can change the way we attempt to call the script. The
+latter solution is easiest, it simply requires us to specify the current location when calling the script
+using dot slash (./).
+$ ./new_script
+/bin/bash: ./new_script: Permission denied
+The error message has changed, which indicates that we have made some progress.
+Execute Permissions
+The first investigation a user should do in this case is to use ls -l to look at the file:
+$ ls -l new_script
+-rw-rw-r-- 1 user user 20 Apr 30 12:12 new_script
+We can see that the permissions for this file are set to 664 by default. We have not set this file to
+have execute permissions yet.
+$ chmod +x new_script
+$ ls -l new_script
+-rwxrwxr-x 1 user user 20 Apr 30 12:12 new_script
+This command has given execute permissions to all users. Be aware that this might be a security
+risk, but for now this is an acceptable level of permission.
+$ ./new_script
+Hello World!
+We are now able to execute our script.
+Defining the Interpreter
+As we have demonstrated, we were able to simply enter text into a file, set it as an executable, and
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+214 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+run it. new_script is functionally still a normal text file, but we managed to have it be interpreted by
+Bash. But what if it is written in Perl, or Python?
+It is very good practice to specify the type of interpreter we want to use in the first line of a script.
+This line is called a bang line or more commonly a shebang. It indicates to the system how we want
+this file to be executed. Since we are learning Bash, we will be using the absolute path to our Bash
+executable, once again using which:
+$ which bash
+/bin/bash
+Our shebang starts with a hash sign and exclamation mark, followed by the absolute path above.
+Let’s open new_script in a text editor and insert the shebang. Let’s also take the opportunity to
+insert a comment into our script. Comments are ignored by the interpreter. They are written for the
+benefit of other users wishing to understand your script.
+#!/bin/bash
+# This is our first comment. It is also good practice to document all scripts.
+echo "Hello World!"
+We will make one additional change to the filename as well: we will save this file as new_script.sh.
+The file suffix ".sh" does not change the execution of the file in any way. It is a convention that bash
+scripts be labelled with .sh or .bash in order to identify them more easily, the same way that Python
+scripts are usually identified with the suffix .py.
+Common Text Editors
+Linux users often have to work in an environment where graphical text editors are not available. It is
+therefore highly recommended to develop at least some familiarity with editing text files from the
+command line. Two of the most common text editors are vi and nano.
+vi
+vi is a venerable text editor and is installed by default on almost every Linux system in existence. vi
+spawned a clone called vi IMproved or vim which adds some functionality but maintains the interface
+of vi. While working with vi is daunting for a new user, the editor is popular and well-loved by
+users who learn its many features.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 215
+The most important difference between vi and applications such as Notepad is that vi has three
+different modes. On startup, the keys H , J , K and L are used to navigate, not to type. In this navigation
+mode, you can press I to enter insert mode. At this point, you may type normally. To exit insert mode,
+you press Esc to return to navigation mode. From navigation mode, you can press : to enter command
+mode. From this mode, you can save, delete, quit or change options.
+While vi has a learning curve, the different modes can in time allow a savvy user to become more
+efficient than with other editors.
+nano
+nano is a newer tool, built to be simple and easier to use than vi. nano does not have different modes.
+Instead, a user on startup can begin typing, and uses Ctrl to access the tools printed at the bottom of
+the screen.
+[ Welcome to nano. For basic help, type Ctrl+G. ]
+^G Get Help ^O Write Out ^W Where Is ^K Cut Text ^J Justify ^C Cur Pos
+M-U Undo
+^X Exit ^R Read File ^\ Replace ^U Uncut Text ^T To Spell ^_ Go To Line
+M-E Redo
+Text editors are a matter of personal preference, and the editor that you choose to use will have no
+bearing on this lesson. But becoming familiar and comfortable with one or more text editors will pay
+off in the future.
+Variables
+Variables are an important part of any programming language, and Bash is no different. When you
+start a new session from the terminal, the shell already sets some variables for you. The PATH
+variable is an example of this. We call these environment variables, because they usually define
+characteristics of our shell environment. You can modify and add environment variables, but for
+now let’s focus on setting variables inside our script.
+We will modify our script to look like this:
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+216 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username=Carol
+echo "Hello $username!"
+In this case, we have created a variable called username and we have assigned it the value of Carol.
+Please note that there are no spaces between the variable name, the equals sign, or the assigned
+value.
+In the next line, we have used the echo command with the variable, but there is a dollar sign ($) in
+front of the variable name. This is important, since it indicates to the shell that we wish to treat
+username as a variable, and not just a normal word. By entering $username in our command, we
+indicate that we want to perform a substitution, replacing the name of a variable with the value
+assigned to that variable.
+Executing the new script, we get this output:
+$ ./new_script.sh
+Hello Carol!
+• Variable names must contain only alphanumeric characters or underscores, and are case
+sensitive. Username and username will be treated as separate variables.
+• Variable substitution may also have the format ${username}, with the addition of the { }. This is
+also acceptable.
+• Variables in Bash have an implicit type, and are considered strings. This means that performing
+math functions in Bash is more complicated than it would be in other programming languages
+such as C/C++:
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 217
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username=Carol
+x=2
+y=4
+z=$x+$y
+echo "Hello $username!"
+echo "$x + $y"
+echo "$z"
+$ ./new_script.sh
+Hello Carol!
+2 + 4
+2+4
+Using Quotes with Variables
+Let’s make the following change to the value of our variable username:
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username=Carol Smith
+echo "Hello $username!"
+Running this script will give us an error:
+$ ./new_script.sh
+./new_script.sh: line 5: Smith: command not found
+Hello !
+Keep in mind that Bash is an interpreter, and as such it interprets our script line-by-line. In this case,
+it correctly interprets username=Carol to be setting a variable username with the value Carol. But it
+then interprets the space as indicating the end of that assignment, and Smith as being the name of a
+command. In order to have the space and the name Smith be included as the new value of our
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+218 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+variable, we will put double quotes (") around the name.
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username="Carol Smith"
+echo "Hello $username!"
+$ ./new_script.sh
+Hello Carol Smith!
+One important thing to note in Bash is that double quotes and single quotes (') behave very
+differently. Double quotes are considered “weak”, because they allow the interpreter to perform
+substitution inside the quotes. Single quotes are considered “strong”, because they prevent any
+substitution from occurring. Consider the following example:
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username="Carol Smith"
+echo "Hello $username!"
+echo 'Hello $username!'
+$ ./new_script.sh
+Hello Carol Smith!
+Hello $username!
+In the second echo command, the interpreter has been prevented from substituting $username with
+Carol Smith, and so the output is taken literally.
+Arguments
+You are already familiar with using arguments in the Linux core utilities. For example, rm testfile
+contains both the executable rm and one argument testfile. Arguments can be passed to the script
+upon execution, and will modify how the script behaves. They are easily implemented.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 219
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username=$1
+echo "Hello $username!"
+Instead of assigning a value to username directly inside the script, we are assigning it the value of a
+new variable $1. This refers to the value of the first argument.
+$ ./new_script.sh Carol
+Hello Carol!
+The first nine arguments are handled in this way. There are ways to handle more than nine
+arguments, but that is outside the scope of this lesson. We will demonstrate an example using just
+two arguments:
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username1=$1
+username2=$2
+echo "Hello $username1 and $username2!"
+$ ./new_script.sh Carol Dave
+Hello Carol and Dave!
+There is an important consideration when using arguments: In the example above, there are two
+arguments Carol and Dave, assigned to $1 and $2 respectively. If the second argument is missing, for
+example, the shell will not throw an error. The value of $2 will simply be null, or nothing at all.
+$ ./new_script.sh Carol
+Hello Carol and !
+In our case, it would be a good idea to introduce some logic to our script so that different conditions
+will affect the output that we wish to print. We will start by introducing another helpful variable and
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+220 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+then move on to creating if statements.
+Returning the Number of Arguments
+While variables such as $1 and $2 contain the value of positional arguments, another variable $#
+contains the number of arguments.
+#!/bin/bash
+# This is our first comment. It is also good practice to comment all scripts.
+username=$1
+echo "Hello $username!"
+echo "Number of arguments: $#."
+$ ./new_script.sh Carol Dave
+Hello Carol!
+Number of arguments: 2.
+Conditional Logic
+The use of conditional logic in programming is a vast topic, and won’t be covered deeply in this
+lesson. We will focus on the syntax of conditionals in Bash, which differs from most other
+programming languages.
+Let’s begin by reviewing what we hope to achieve. We have a simple script which should be able to
+print a greeting to a single user. If there is anything other than one user, we should print an error
+message.
+• The condition we are testing is the number of users, which is contained in the variable $#. We
+would like to know if the value of $# is 1.
+• If the condition is true, the action we will take is to greet the user.
+• If the condition is false, we will print an error message.
+Now that the logic is clear, we will focus on the syntax required to implement this logic.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 221
+#!/bin/bash
+# A simple script to greet a single user.
+if [ $# -eq 1 ]
+then
+username=$1
+echo "Hello $username!"
+else
+echo "Please enter only one argument."
+fi
+echo "Number of arguments: $#."
+The conditional logic is contained between if and fi. The condition to test is located between
+square brackets [ ], and the action to take should the condition be true is indicated after then. Note
+the spaces between the square brackets and the logic contained. Omitting this space will cause
+errors.
+This script will output either our greeting, or the error message. But it will always print the Number
+of arguments line.
+$ ./new_script.sh
+Please enter only one argument.
+Number of arguments: 0.
+$ ./new_script.sh Carol
+Hello Carol!
+Number of arguments: 1.
+Take note of the if statement. We have used -eq to do a numerical comparison. In this case, we are
+testing that the value of $# is equal to one. The other comparisons we can perform are:
+-ne
+Not equal to
+-gt
+Greater than
+-ge
+Greater than or equal to
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+222 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+-lt
+Less than
+-le
+Less than or equal to
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 223
+Guided Exercises
+1. The user types the following to their shell:
+$ PATH=~/scripts
+$ ls
+Command 'ls' is available in '/bin/ls'
+The command could not be located because '/bin' is not included in the PATH
+environment variable.
+ls: command not found
+◦ What has the user done?
+◦ What command will combine the current value of PATH with the new directory ~/scripts?
+2. Consider the following script. Notice that it is using elif to check for a second condition:
+> /!bin/bash
+> fruit1 = Apples
+> fruit2 = Oranges
+if [ $1 -lt $# ]
+then
+echo "This is like comparing $fruit1 and $fruit2!"
+> elif [$1 -gt $2 ]
+then
+> echo '$fruit1 win!'
+else
+> echo "Fruit2 win!"
+> done
+◦ The lines marked with a > contain errors. Fix the errors.
+3. What will the output be in the following situations?
+$ ./guided1.sh 3 0
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+224 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+$ ./guided1.sh 2 4
+$ ./guided1.sh 0 1
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 225
+Explorational Exercises
+1. Write a simple script that will check if exactly two arguments are passed. If so, print the
+arguments in reverse order. Consider this example (note: your code may look different than this,
+but should lead to the same output):
+if [ $1 == $number ]
+then
+echo "True!"
+fi
+2. This code is correct, but it is not a number comparison. Use an internet search to discover how
+this code is different from using -eq.
+3. There is an environment variable that will print the current directory. Use env to discover the
+name of this variable.
+4. Using what you have learned in questions 2 and 3, write a short script that accepts an argument.
+If an argument is passed, check if that argument matches the name of the current directory. If so,
+print yes. Otherwise, print no.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+226 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Summary
+In this section, you learned:
+• How to create and execute simple scripts
+• How to use a shebang to specify an interpreter
+• How to set and use variables inside scripts
+• How to handle arguments in scripts
+• How to construct if statements
+• How to compare numbers using numerical operators
+Commands used in the exercises:
+echo
+Print a string to standard output.
+env
+Prints all environment variables to standard output.
+which
+Prints the absolute path of a command.
+chmod
+Changes permissions of a file.
+Special variables used in the exercises:
+$1, $2, ... $9
+Contain positional arguments passed to the script.
+$#
+Contains the number of arguments passed to the script.
+$PATH
+Contains the directories that have executables used by the system.
+Operators used in the exercises:
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 227
+-ne
+Not equal to
+-gt
+Greater than
+-ge
+Greater than or equal to
+-lt
+Less than
+-le
+Less than or equal to
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+228 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Answers to Guided Exercises
+1. The user types the following into their shell:
+$ PATH=~/scripts
+$ ls
+Command 'ls' is available in '/bin/ls'
+The command could not be located because '/bin' is not included in the PATH
+environment variable.
+ls: command not found
+◦ What has the user done?
+The user has overwritten the contents of PATH with the directory ~/scripts. The ls
+command can no longer be found, since it isn’t contained in PATH. Note that this change
+only affects the current session, logging out and back in with revert the change.
+◦ What command will combine the current value of PATH with the new directory ~/scripts?
+PATH=$PATH:~/scripts
+2. Consider the following script. Notice that it is using elif to check for a second condition:
+> /!bin/bash
+> fruit1 = Apples
+> fruit2 = Oranges
+if [ $1 -lt $# ]
+then
+echo "This is like comparing $fruit1 and $fruit2!"
+> elif [$1 -gt $2 ]
+then
+> echo '$fruit1 win!'
+else
+> echo "Fruit2 win!"
+> done
+◦ The lines marked with a > contain errors. Fix the errors.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 229
+#!/bin/bash
+fruit1=Apples
+fruit2=Oranges
+if [ $1 -lt $# ]
+then
+echo "This is like comparing $fruit1 and $fruit2!"
+elif [ $1 -gt $2 ]
+then
+echo "$fruit1 win!"
+else
+echo "$fruit2 win!"
+fi
+3. What will the output be in the following situations?
+$ ./guided1.sh 3 0
+Apples win!
+$ ./guided1.sh 2 4
+Oranges win!
+$ ./guided1.sh 0 1
+This is like comparing Apples and Oranges!
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+230 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Answers to Explorational Exercises
+1. Write a simple script that will check if exactly two arguments are passed. If so, print the
+arguments in reverse order. Consider this example (note: your code may look different than this,
+but should lead to the same output):
+if [ $1 == $number ]
+then
+echo "True!"
+fi
+#!/bin/bash
+if [ $# -ne 2 ]
+then
+echo "Error"
+else
+echo "$2 $1"
+fi
+2. This code is correct, but it is not a number comparison. Use an internet search to discover how
+this code is different from using -eq.
+Using == will compare strings. That is, if the characters of both variables match up exactly, then
+the condition is true.
+abc == abc true
+abc == ABC false
+1 == 1 true
+1+1 == 2 false
+String comparisons lead to unexpected behavior if you are testing for numbers.
+3. There is an environment variable that will print the current directory. Use env to discover the
+name of this variable.
+PWD
+4. Using what you have learned in questions 2 and 3, write a short script that accepts an argument.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 231
+If an argument is passed, check if that argument matches the name of the current directory. If so,
+print yes. Otherwise, print no.
+#!/bin/bash
+if [ "$1" == "$PWD" ]
+then
+echo "yes"
+else
+echo "no"
+fi
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+232 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+3.3 Lesson 2
+Certificate: Linux Essentials
+Version: 1.6
+Topic: 3 The Power of the Command Line
+Objective: 3.3 Turning Commands into a Script
+Lesson: 2 of 2
+Introduction
+In the last section, we used this simple example to demonstrate Bash scripting:
+#!/bin/bash
+# A simple script to greet a single user.
+if [ $# -eq 1 ]
+then
+username=$1
+echo "Hello $username!"
+else
+echo "Please enter only one argument."
+fi
+echo "Number of arguments: $#."
+• All scripts should begin with a shebang, which defines the path to the interpreter.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 233
+• All scripts should include comments to describe their use.
+• This particular script works with an argument, which is passed to the script when it is called.
+• This script contains an if statement, which tests the conditions of a built-in variable $#. This
+variable is set to the number of arguments.
+• If the number of arguments passed to the script equals 1, then the value of the first argument is
+passed to a new variable called username and the script echoes a greeting to the user. Otherwise,
+an error message is displayed.
+• Finally, the script echoes the number of arguments. This is useful for debugging.
+This is a useful example to begin explaining some of the other features of Bash scripting.
+Exit Codes
+You will notice that our script has two possible states: either it prints "Hello <user>!" or it prints an
+error message. This is quite normal for many of our core utilities. Consider cat, which you are no
+doubt becoming very familiar with.
+Let’s compare a successful use of cat with a situation where it fails. A reminder that our example
+above is a script called new_script.sh.
+$ cat -n new_script.sh
+1 #!/bin/bash
+2
+3 # A simple script to greet a single user.
+4
+5 if [ $# -eq 1 ]
+6 then
+7 username=$1
+8
+9 echo "Hello $username!"
+10 else
+11 echo "Please enter only one argument."
+12 fi
+13 echo "Number of arguments: $#."
+This command succeeds, and you will notice that the -n flag has also printed line numbers. These
+are very helpful when debugging scripts, but please note that they are not part of the script.
+Now we are going to check the value of a new built-in variable $?. For now, just notice the output:
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+234 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+$ echo $?
+0
+Now let’s consider a situation where cat will fail. First we will see an error message, and then check
+the value of $?.
+$ cat -n dummyfile.sh
+cat: dummyfile.sh: No such file or directory
+$ echo $?
+1
+The explanation for this behaviour is this: any execution of the cat utility will return an exit code.
+An exit code will tell us if the command succeeded, or experienced an error. An exit code of zero
+indicates that the command completed successfully. This is true for almost every Linux command
+that you work with. Any other exit code will indicate an error of some kind. The exit code of the last
+command to run will be stored in the variable $?.
+Exit codes are usually not seen by human users, but they are very useful when writing scripts.
+Consider a script where we may be copying files to a remote network drive. There are many ways
+that the copy task may have failed: for example our local machine might not be connected to the
+network, or the remote drive might be full. By checking the exit code of our copy utility, we can
+alert the user to problems when running the script.
+It is very good practice to implement exit codes, so we will do this now. We have two paths in our
+script, a success and a failure. Let’s use zero to indicate success, and one to indicate failure.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 235
+1 #!/bin/bash
+2
+3 # A simple script to greet a single user.
+4
+5 if [ $# -eq 1 ]
+6 then
+7 username=$1
+8
+9 echo "Hello $username!"
+10 exit 0
+11 else
+12 echo "Please enter only one argument."
+13 exit 1
+14 fi
+15 echo "Number of arguments: $#."
+$ ./new_script.sh Carol
+Hello Carol!
+$ echo $?
+0
+Notice that the echo command on line 15 was ignored entirely. Using exit will end the script
+immediately, so this line is never encountered.
+Handling Many Arguments
+So far our script can only handle a single username at a time. Any number of arguments besides one
+will cause an error. Let’s explore how we can make this script more versatile.
+A user’s first instinct might be to use more positional variables such as $2, $3 and so on.
+Unfortunately, we can’t anticipate the number of arguments that a user might choose to use. To
+solve this issue, it will be helpful to introduce more built-in variables.
+We will modify the logic of our script. Having zero arguments should cause an error, but any other
+number of arguments should be successful. This new script will be called friendly2.sh.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+236 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+1 #!/bin/bash
+2
+3 # a friendly script to greet users
+4
+5 if [ $# -eq 0 ]
+6 then
+7 echo "Please enter at least one user to greet."
+8 exit 1
+9 else
+10 echo "Hello $@!"
+11 exit 0
+12 fi
+$ ./friendly2.sh Carol Dave Henry
+Hello Carol Dave Henry!
+There are two built-in variables which contain all arguments passed to the script: $@ and $*. For the
+most part, both behave the same. Bash will parse the arguments, and separate each argument when it
+encounters a space between them. In effect, the contents of $@ look like this:
+0 1 2
+Carol Dave Henry
+If you are familiar with other programming languages, you might recognize this type of variable as
+an array. Arrays in Bash can be created simply by putting space between elements like the variable
+FILES in script arraytest below:
+FILES="/usr/sbin/accept /usr/sbin/pwck/ usr/sbin/chroot"
+It contains a list of many items. So far this isn’t very helpful, because we have not yet introduced any
+way of handling these items individually.
+For Loops
+Let’s refer to the arraytest example shown before. If you recall, in this example we are specifying
+an array of our own called FILES. What we need is a way to “unpack” this variable and access each
+individual value, one after the other. To do this, we will use a structure called a for loop, which is
+present in all programming languages. There are two variables that we will refer to: one is the range,
+and the other is for the individual value that we are currently working on. This is the script in its
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 237
+entirety:
+#!/bin/bash
+FILES="/usr/sbin/accept /usr/sbin/pwck/ usr/sbin/chroot"
+for file in $FILES
+do
+ls -lh $file
+done
+$ ./arraytest
+lrwxrwxrwx 1 root root 10 Apr 24 11:02 /usr/sbin/accept -> cupsaccept
+-rwxr-xr-x 1 root root 54K Mar 22 14:32 /usr/sbin/pwck
+-rwxr-xr-x 1 root root 43K Jan 14 07:17 /usr/sbin/chroot
+If you refer again to the friendly2.sh example above, you can see that we are working with a range
+of values contained within a single variable $@. For clarity’s sake, we will call the latter variable
+username. Our script now looks like this:
+1 #!/bin/bash
+2
+3 # a friendly script to greet users
+4
+5 if [ $# -eq 0 ]
+6 then
+7 echo "Please enter at least one user to greet."
+8 exit 1
+9 else
+10 for username in $@
+11 do
+12 echo "Hello $username!"
+13 done
+14 exit 0
+15 fi
+Remember that the variable that you define here can be named whatever you wish, and that all the
+lines inside do... done will be executing once for each element of the array. Let’s observe the output
+from our script:
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+238 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+$ ./friendly2.sh Carol Dave Henry
+Hello Carol!
+Hello Dave!
+Hello Henry!
+Now let’s assume that we want to make our output seem a little more human. We want our greeting
+to be on one line.
+1 #!/bin/bash
+2
+3 # a friendly script to greet users
+4
+5 if [ $# -eq 0 ]
+6 then
+7 echo "Please enter at least one user to greet."
+8 exit 1
+9 else
+10 echo -n "Hello $1"
+11 shift
+12 for username in $@
+13 do
+14 echo -n ", and $username"
+15 done
+16 echo "!"
+17 exit 0
+18 fi
+A couple of notes:
+• Using -n with echo will suppress the newline after printing. This means that all echoes will print
+to the same line, and the newline will be printed only after the !` on line 16.
+• The shift command will remove the first element of our array, so that this:
+0 1 2
+Carol Dave Henry
+Becomes this:
+0 1
+Dave Henry
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 239
+Let’s observe the output:
+$ ./friendly2.sh Carol
+Hello Carol!
+$ ./friendly2.sh Carol Dave Henry
+Hello Carol, and Dave, and Henry!
+Using Regular Expressions to Perform Error Checking
+It’s possible that we want to verify all arguments that the user is entering. For example, perhaps we
+want to ensure that all names passed to friendly2.sh contain only letters, and any special characters
+or numbers will cause an error. To perform this error checking, we will use grep.
+Recall that we can use regular expressions with grep.
+$ echo Animal | grep "^[A-Za-z]*$"
+Animal
+$ echo $?
+0
+$ echo 4n1ml | grep "^[A-Za-z]*$"
+$ echo $?
+1
+The ^ and the $ indicate the beginning and end of the line respectively. The [A-Za-z] indicates a
+range of letters, upper or lower case. The * is a quantifier, and modifies our range of letters so that
+we are matching zero to many letters. In summary, our grep will succeed if the input is only letters,
+and fails otherwise.
+The next thing to note is that grep is returning exit codes based on whether there was a match or
+not. A positive match returns 0, and a no match returns a 1. We can use this to test our arguments
+inside our script.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+240 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+1 #!/bin/bash
+2
+3 # a friendly script to greet users
+4
+5 if [ $# -eq 0 ]
+6 then
+7 echo "Please enter at least one user to greet."
+8 exit 1
+9 else
+10 for username in $@
+11 do
+12 echo $username | grep "^[A-Za-z]*$" > /dev/null
+13 if [ $? -eq 1 ]
+14 then
+15 echo "ERROR: Names must only contains letters."
+16 exit 2
+17 else
+18 echo "Hello $username!"
+19 fi
+20 done
+21 exit 0
+22 fi
+On line 12, we are redirecting standard output to /dev/null, which is a simple way to suppress it.
+We don’t want to see any output from the grep command, we only want to test its exit code, which
+happens on line 13. Notice also that we are using an exit code of 2 to indicate an invalid argument. It
+is generally good practice to use different exit codes to indicate different errors; in this way, a savvy
+user can use these exit codes to troubleshoot.
+$ ./friendly2.sh Carol Dave Henry
+Hello Carol!
+Hello Dave!
+Hello Henry!
+$ ./friendly2.sh 42 Carol Dave Henry
+ERROR: Names must only contains letters.
+$ echo $?
+2
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 241
+Guided Exercises
+1. Read the contents of script1.sh below:
+#!/bin/bash
+if [ $# -lt 1 ]
+then
+echo "This script requires at least 1 argument."
+exit 1
+fi
+echo $1 | grep "^[A-Z]*$" > /dev/null
+if [ $? -ne 0 ]
+then
+echo "no cake for you!"
+exit 2
+fi
+echo "here's your cake!"
+exit 0
+What is the output of these commands?
+◦ ./script1.sh
+◦ echo $?
+◦ ./script1.sh cake
+◦ echo $?
+◦ ./script1.sh CAKE
+◦ echo $?
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+242 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+2. Read the contents of file script2.sh:
+for filename in $1/*.txt
+do
+cp $filename $filename.bak
+done
+- Describe the purpose of this script as you understand it.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 243
+Explorational Exercises
+1. Create a script that will take any number of arguments from the user, and print only those
+arguments which are numbers greater than 10.
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+244 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+Summary
+In this section, you learned:
+• What exit codes are, what they mean, and how to implement them
+• How to check the exit code of a command
+• What for loops are, and how to use them with arrays
+• How to use grep, regular expressions and exit codes to check user input in scripts.
+Commands used in the exercises:
+shift
+This will remove the first element of an array.
+Special Variables:
+$?
+Contains the exit code of the last command executed.
+$@, $*
+Contain all arguments passed to the script, as an array.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 245
+Answers to Guided Exercises
+1. Read the contents of script1.sh below:
+#!/bin/bash
+if [ $# -lt 1 ]
+then
+echo "This script requires at least 1 argument."
+exit 1
+fi
+echo $1 | grep "^[A-Z]*$" > /dev/null
+if [ $? -ne 0 ]
+then
+echo "no cake for you!"
+exit 2
+fi
+echo "here's your cake!"
+exit 0
+What is the output of these commands?
+◦ Command: ./script1.sh
+Output: This script requires at least 1 argument.
+◦ Command: echo $?
+Output: 1
+◦ Command: ./script1.sh cake
+Output: no cake for you!
+◦ Command: echo $?
+Output: 2
+◦ Command: ./script1.sh CAKE
+Output: here’s your cake!
+Linux Essentials (Version 1.6) | Topic 3: The Power of the Command Line
+246 | learning.lpi.org | Licensed under CC BY-NC-ND 4.0. | Version: 2022-01-14
+◦ Command: echo $?
+Output: 0
+2. Read the contents of file script2.sh:
+for filename in $1/*.txt
+do
+cp $filename $filename.bak
+done
+- Describe the purpose of this script as you understand it.
+This script will make backup copies of all files ending with .txt in a subdirectory defined in the
+first argument.
+Linux Essentials (Version 1.6) | 3.3 Turning Commands into a Script
+Version: 2022-01-14 | Licensed under CC BY-NC-ND 4.0. | learning.lpi.org | 247
+Answers to Explorational Exercises
+1. Create a script that will take any number of arguments from the user, and print only those
+arguments that are numbers greater than 10.
+#!/bin/bash
+for i in $@
+do
+echo $i | grep "^[0-9]*$" > /dev/null
+if [ $? -eq 0 ]
+then
+if [ $i -gt 10 ]
+then
+echo -n "$i "
+fi
+fi
+done
+echo ""
+* Topic 4: The Linux Operating System
+** 4.1 Choosing an Operating System
+- Weight: 1
+- Description: Knowledge of major operating systems and Linux distributions.
+- Key Knowledge Areas:
+    Differences between Windows, OS X and Linux
+    Distribution life cycle management
+- The following is a partial list of the used files, terms and utilities:
+    GUI versus command line, desktop configuration
+    Maintenance cycles, beta and stable
+** 4.2 Understanding Computer Hardware
+- Weight: 2
+- Description: Familiarity with the components that go into building desktop and server computers.
+- Key Knowledge Areas:
+    Hardware
+- The following is a partial list of the used files, terms and utilities:
+    Motherboards, processors, power supplies, optical drives, peripherals
+    Hard drives, solid state disks and partitions, /dev/sd*
+    Drivers
+** 4.3 Where Data is Stored
+- Weight: 3
+- Description: Where various types of information are stored on a Linux system.
+- Key Knowledge Areas:
+    Programs and configuration
+    Processes
+    Memory addresses
+    System messaging
+    Logging
+- The following is a partial list of the used files, terms and utilities:
+    ps, top, free
+    syslog, dmesg
+    /etc/, /var/log/
+    /boot/, /proc/, /dev/, /sys/
+** 4.4 Your Computer on the Network
+- Weight: 2
+- Description: Querying vital networking configuration and determining the basic requirements for a computer on a Local Area Network (LAN).
+- Key Knowledge Areas:
+    Internet, network, routers
+    Querying DNS client configuration
+    Querying network configuration
+- The following is a partial list of the used files, terms and utilities:
+    route, ip route show
+    ifconfig, ip addr show
+    netstat, ss
+    /etc/resolv.conf, /etc/hosts
+    IPv4, IPv6
+    ping
+    host
+* Topic 5: Security and File Permissions
+** 5.1 Basic Security and Identifying User Types
+- Weight: 2
+- Description: Various types of users on a Linux system.
+- Key Knowledge Areas:
+    Root and standard users
+    System users
+- The following is a partial list of the used files, terms and utilities:
+    /etc/passwd, /etc/shadow, /etc/group
+    id, last, who, w
+    sudo, su
+** 5.2 Creating Users and Groups
+- Weight: 2
+- Description: Creating users and groups on a Linux system.
+- Key Knowledge Areas:
+    User and group commands
+    User IDs
+- The following is a partial list of the used files, terms and utilities:
+    /etc/passwd, /etc/shadow, /etc/group, /etc/skel/
+    useradd, groupadd
+    passwd
+** 5.3 Managing File Permissions and Ownership
+- Weight: 2
+- Description: Understanding and manipulating file permissions and ownership settings.
+- Key Knowledge Areas:
+    File and directory permissions and ownership
+- The following is a partial list of the used files, terms and utilities:
+    ls -l, ls -a
+    chmod, chown
+** 5.4 Special Directories and Files
+- Weight: 1
+- Description: Special directories and files on a Linux system including special permissions.
+- Key Knowledge Areas:
+    Using temporary files and directories
+    Symbolic links
+- The following is a partial list of the used files, terms and utilities:
+    /tmp/, /var/tmp/ and Sticky Bit
+    ls -d
+    ln -s

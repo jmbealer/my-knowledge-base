@@ -1,0 +1,606 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:8
+word type,0-current-using::ngsl-wip,{{c1::the}} - used to refer to something already mentioned,1,det,/ðiː/,the,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::be}} - To exist; to be alive; used to give information about someone or something,2,verb,/biː/,be,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::and}} - used to refer to two or more things,3,conj,/ænd/,and,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::of}} - belonging to or connected with something,4,prep,/ɑv/,of,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::to}} - move towards; in the direction of,5,prep,/tu/,to,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::a}} - one (of something),6,det,/ɛɪ/,a,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::in}} - being inside something,7,prep,/ɪn/,in,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::have}} - to own, possess, or hold something",8,aux,/hæv/,have,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::it}} - a thing that has been previously mentioned,9,pron,/ɪt/,it,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::you}} - person someone is speaking or writing to,10,pron,/ju/,you,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::he}} - object form of a male person you are talking about,11,pron,/hiː/,he,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::for}} - used to show the purpose, or need of something",12,prep,/foɚ/,for,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::they}} - used to refer to two or more people, animals, or things",13,pron,/ðɛɪ/,they,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::not}} - word indicating the negative of verbs, adjectives, etc.",14,adv,/nɑt/,not,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::that}} - used to show which person or thing we are talking about,15,pron,/ðæt/,that,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::we}} - used to refer to the speaker and other people together,16,pron,/wiː/,we,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::on}} - located on the surface of something (e.g., a table or wall)",17,prep,/ɑn/,on,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::with}} - used to express that people or things are together,18,prep,/wɪð/,with,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::this}} - person, thing, or idea near you",19,pron,/ðɪs/,this,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::I}} - the person who is speaking or writing,20,pron,/aɪ/,I,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::do}} - to act; to perform actions,21,verb,/du/,do,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::as}} - a word used to compare two equal things,22,prep,/æs/,as,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::at}} - in the place where something is,23,prep,/æt/,at,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::she}} - female person or animal mentioned before,24,pron,/ʃiː/,she,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::but}} - used before you say something different, opposite",25,conj,/bʌt/,but,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::from}} - starting at a particular place, time, or level",26,prep,/frɑm/,from,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::by}} - near; with,27,prep,/baɪ/,by,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::will}} - used with verbs to express the future,28,aux,/wɪl/,will,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::or}} - used to link alternatives, to introduce another choice",29,conj,/oɚ/,or,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::say}} - to use words to tell a message,30,verb,/sɛɪ/,say,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::go}} - to move or travel to another place,31,verb,/goʊ/,go,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::so}} - for that reason,32,conj,/soʊ/,so,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::all}} - completely; totally,33,adv,/oɚl/,all,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::if}} - introducing a condition for something to happen,34,conj,/ɪf/,if,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::one}} - number 1,35,num,/wʌn/,one,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::would}} - modal verb used to indicate possibility, request, etc.",36,aux,/wʊd/,would,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::about}} - of (a subject); concerning,37,prep,/ə•baʊt/,about,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::can}} - to be able to; have the skill to; have the time to,38,aux,/kæn/,can,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::which}} - question word to ask about a person's choice,39,adj,/wɪtʃ/,which,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::there}} - in that place or position, at that location",40,adv,/ðɛɚ/,there,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::know}} - to have knowledge of things in your mind,41,verb,/noʊ/,know,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::more}} - greater in amount, number, or size",42,adj,/moɚ/,more,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::get}} - to obtain, receive, or be given something",43,verb,/gɛt/,get,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::who}} - what or which person or people, to ask about, talking about",44,pron,/hu/,who,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::like}} - to find something pleasing; to prefer something,45,verb,/laɪk/,like,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::when}} - word you use to ask about the time or day,46,noun,/wɛn/,when,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::think}} - to have an idea, opinion, or belief about something",47,verb,/θɪŋk/,think,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::make}} - to create something by putting things together,48,verb,/mɛɪk/,make,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::time}} - something measured in minutes, hours, days, etc.",49,noun,/taɪm/,time,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::see}} - to use your eyes to look at something,50,verb,/siː/,see,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::what}} - asking for information about someone or something,51,adv,/wɑt/,what,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::up}} - move higher; raise,52,prep,/ʌp/,up,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::some}} - used to refer to a person or thing that is not known,53,adj,/sʌm/,some,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::other}} - something else; not the first one,54,adj,/ʌ•ðə/,other,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::out}} - away from the inside or center,55,prep,/aʊt/,out,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::good}} - excellent; high quality,56,adj,/gʊd/,good,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::people}} - human beings in general; plural of person,57,noun,/piː•pl/,people,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::year}} - unit of time equal to 12 months,58,noun,/jɚ/,year,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::take}} - to pick up something and go away with it,59,verb,/tɛɪk/,take,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::no}} - being none; not having or being,60,adv,/noʊ/,no,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::well}} - in a good way,61,adj,/wɛl/,well,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::because}} - for a reason,62,conj,/bɪ•kɑz/,because,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::very}} - much; great in amount,63,verb,/vɛ•rɪ/,very,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::just}} - only; a short time ago,64,adv,/dʒʌst/,just,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::come}} - to move toward someone; go with someone,65,verb,/kʌm/,come,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::could}} - used as the past form of can, to show possibility",66,verb,/kʊd/,could,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::work}} - activity you do in order to make money,67,noun,/wɚk/,work,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::use}} - to do something with, for a task or purpose",68,verb,/juz/,use,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::than}} - used when comparing two things,69,conj,/ðæn/,than,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::now}} - at the present time or moment,70,adv,/naʊ/,now,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::then}} - at that time not now,71,adv,/ðɛn/,then,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::also}} - in addition; too; in a similar way,72,adv,/oɚl•soʊ/,also,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::into}} - going inside something,73,prep,/ɪn•tʊ/,into,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::only}} - just one; just that amount or thing; not more than,74,adv,/oʊn•lɪ/,only,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::look}} - to turn your eyes in a particular direction,75,verb,/lʊk/,look,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::want}} - to desire or wish for something; hope for a thing,76,verb,/wɑnt/,want,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::give}} - to hand over or present something to someone,77,verb,/gɪv/,give,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::first}} - coming before all others in time or place,78,adj,/fɚst/,first,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::new}} - not old, recently born, built, or made",79,adj,/nju/,new,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::way}} - how something is done,80,noun,/wɛɪ/,way,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::find}} - to discover something by looking for it,81,verb,/faɪnd/,find,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::over}} - above; across; more than; on the other side,82,prep,/oʊ•və/,over,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::any}} - one (thing) of many; some (thing),83,adj,/ɛ•nɪ/,any,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::after}} - later than another time, or behind something",84,adv,/ɑɚf•tə/,after,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::day}} - a period of 24 hours,85,noun,/dɛɪ/,day,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::where}} - word you use to ask the location of something,86,noun,/wɛɚ/,where,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::thing}} - something you cannot remember the name of,87,noun,/θɪŋ/,thing,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::most}} - nearly all of something,88,pron,/moʊst/,most,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::should}} - used to indicate what is proper or reasonable,89,aux,/ʃʊd/,should,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::need}} - to be unable to manage without something; require,90,verb,/niːd/,need,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::much}} - a lot; large amount; a high degree of,91,pron,/mʌtʃ/,much,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::right}} - on side where the hand that most people write with,92,adj,/raɪt/,right,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::how}} - in what way something happens or is done,93,adv,/haʊ/,how,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::back}} - the place you were before,94,noun,/bæk/,back,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::mean}} - to have a particular meaning or value,95,verb,/miːn/,mean,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::even}} - as well; too,96,adv,/iː•vən/,even,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::may}} - used to talk about what is possible,97,aux,/mɛɪ/,may,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::here}} - in, at, or to this position or place",98,adv,/hiːɚ/,here,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::many}} - used to refer to a large number of things,99,adj,/mɛ•nɪ/,many,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::such}} - like or similar,100,adj,/sʌtʃ/,such,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::last}} - the one before,101,noun,/lɑɚst/,last,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::child}} - a very young person, between about 2 and 15",102,noun,/tʃaɪld/,child,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::tell}} - to say or communicate information to someone,103,verb,/tɛl/,tell,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::really}} - very,104,adv,/riːɚ•lɪ/,really,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::call}} - to phone someone,105,verb,/koɚl/,call,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::before}} - at a time earlier than the present; previously,106,adv,/bɪ•foɚ/,before,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::company}} - a business that sells things or provides services,107,noun,/kʌm•pə•nɪ/,company,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::through}} - from one end or side of something to the other end or side,108,adj,/θru/,through,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::down}} - going from a higher position to a lower position,109,prep,/daʊn/,down,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::show}} - to explain or teach how something is done,110,verb,/ʃoʊ/,show,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::life}} - all the living things (e.g., animals, plants, humans)",111,noun,/laɪf/,life,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::man}} - an adult male human being,112,noun,/mæn/,man,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::change}} - to make or become different, or into something else",113,verb,/tʃɛɪndʒ/,change,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::place}} - to put something in a certain location or position,114,verb,/plɛɪs/,place,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::long}} - large distance from one end to the other,115,adj,/lɑŋ/,long,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::between}} - in the space that separates two objects,116,prep,/bɪ•twiːn/,between,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::feel}} - to be aware of or experience an emotion or sensation,117,verb,/fiːl/,feel,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::too}} - say that something is more than you want,118,adv,/tu/,too,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::still}} - continuing to be the same as before,119,adv,/stɪl/,still,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::problem}} - something difficult to deal with or causes trouble,120,noun,/prɑb•ləm/,problem,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::write}} - to make letters and words on paper or a screen,121,verb,/raɪt/,write,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::same}} - identical; not different,122,det,/sɛɪm/,same,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::lot}} - a group of people or things considered together,123,noun,/lɑt/,lot,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::great}} - very good; fantastic; wonderful,124,adj,/grɛɪt/,great,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::try}} - to make an effort, to attempt to do something",125,verb,/traɪ/,try,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::leave}} - to go away from; depart,126,verb,/liːv/,leave,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::number}} - symbols such as 1, 2, 56, 793",127,noun,/nʌm•bə/,number,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::both}} - used to refer to two things at the same time,128,det,/boʊθ/,both,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::own}} - yours, his, hers, etc.; not belonging to another",129,det,/oʊn/,own,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::part}} - some, but not all of a specific thing",130,noun,/pɑɚt/,part,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::point}} - to indicate something with your finger to others,131,verb,/poɪnt/,point,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::little}} - not great in size, amount, or degree; small",132,adj,/lɪ•tl/,little,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::help}} - to act to enable a person to do something; assist,133,verb,/hɛlp/,help,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::ask}} - to say to someone that you want something,134,verb,/ɑɚsk/,ask,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::meet}} - to come together at a certain time or place,135,verb,/miːt/,meet,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::start}} - first time or place that a thing exists; beginning,136,noun,/stɑɚt/,start,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::talk}} - to say things or ideas to someone with words,137,verb,/toɚk/,talk,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::something}} - thing that is not yet known or named,138,pron,/sʌm•θɪŋ/,something,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::put}} - to move or place a thing in a particular position,139,verb,/pʌt/,put,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::another}} - one more (thing); additional (thing),140,det,/ə•nʌ•ðə/,another,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::become}} - to begin to be; grow to be; develop into,141,verb,/bɪ•kʌm/,become,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::interest}} - to make someone want to know about something,142,verb,/ɪn•trɪst/,interest,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::country}} - an area of land that is controlled by a government,143,noun,/kʌn•trɪ/,country,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::old}} - having existed for a long time, not young or new",144,adj,/oʊld/,old,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::each}} - every one of two or more things,145,det,/iːtʃ/,each,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::school}} - building where you learn in classes with a teacher,146,noun,/skul/,school,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::late}} - happening near the end of a given time,147,adj,/lɛɪt/,late,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::high}} - rising upward a great distance,148,adj,/haɪ/,high,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::different}} - not of the same kind; unlike other things,149,adj,/dɪ•frənt/,different,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::off}} - not having on; not wearing,150,adj,/oɚf/,off,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::next}} - immediately after the previous one,151,adj,/nɛkst/,next,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::end}} - a point that marks the limit of something; finish,152,noun,/ɛnd/,end,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::live}} - to be alive,153,verb,/lɪv/,live,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::why}} - for what reason or purpose,154,adv,/waɪ/,why,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::while}} - during the time that; at the same time,155,conj,/waɪl/,while,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::world}} - all the humans, events, activities on the earth",156,noun,/wɚld/,world,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::week}} - period of seven days, starts on Sunday and end on Saturday",157,noun,/wiːk/,week,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::play}} - to do or perform a game or sport,158,verb,/plɛɪ/,play,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::might}} - used to express that something could happen,159,aux,/maɪt/,might,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::must}} - used to say that something is required or necessary,160,aux,/mʌst/,must,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::home}} - place where a person or a family lives,161,noun,/hoʊm/,home,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::never}} - not ever; not at any time,162,adv,/nɛ•və/,never,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::include}} - to make someone/something part of a group,163,verb,/ɪn•klud/,include,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::course}} - route or direction that a river, etc., moves along",164,noun,/koɚs/,course,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::house}} - building in which a family, person lives",165,noun,/haʊz/,house,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::report}} - account of something which gives the necessary facts and information,166,noun,/rɪ•poɚt/,report,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::group}} - number of people or things gathered together,167,noun,/grup/,group,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::case}} - example or instance of something,168,noun,/kɛɪs/,case,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::woman}} - adult female human being,169,noun,/wʊ•mən/,woman,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::around}} - located on every side, or along something",170,adv,/ə•raʊnd/,around,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::book}} - thing made of pages with writing on that you read,171,noun,/bʊk/,book,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::family}} - a group of people who are related through blood,172,noun,/fæ•mɪ•lɪ/,family,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::seem}} - to appear to be something,173,verb,/siːm/,seem,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::let}} - to not stop someone from doing something,174,verb,/lɛt/,let,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::again}} - one more time, once more",175,adv,/ə•gɛn/,again,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::kind}} - one type of thing,176,noun,/kaɪnd/,kind,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::keep}} - to have and continue to hold something,177,verb,/kiːp/,keep,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::hear}} - to be aware of sound; to perceive with the ear,178,verb,/hiːɚ/,hear,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::system}} - set of organized, planned ideas that work together",179,noun,/sɪs•tɪm/,system,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::every}} - including each person or thing in a group,180,det,/ɛ•vrɪ/,every,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::question}} - to ask for or try to get information,181,verb,/kwɛs•tʃən/,question,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::during}} - at some point in the course of an event or thing,182,prep,/djʊə•rɪŋ/,during,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::always}} - at all times; in every situation,183,adv,/oɚ•lwəz/,always,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::big}} - large,184,adj,/bɪg/,big,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::set}} - complete group of something (e.g., a chess set)",185,noun,/sɛt/,set,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::small}} - little in size; not big,186,adj,/smoɚl/,small,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::study}} - to focus on learning something usually at school,187,verb,/stʌ•dɪ/,study,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::follow}} - to come after someone; be guided by someone,188,verb,/fɑ•loʊ/,follow,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::begin}} - to do the first part of an action; to start,189,verb,/bɪ•gɪn/,begin,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::important}} - having a big effect on (person, the future)",190,adj,/ɪm•poɚ•tənt/,important,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::since}} - from the time in the past that,191,prep,/sɪns/,since,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::run}} - to move your legs faster than walking,192,verb,/rʌn/,run,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::under}} - in the same place as another thing, but lower",193,adj,/ʌn•də/,under,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::turn}} - to change the direction of something (e.g., a car)",194,verb,/tɚn/,turn,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::few}} - not many; small in number,195,adj,/fju/,few,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::bring}} - to take or go with someone to a place,196,verb,/brɪŋ/,bring,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::early}} - happening sooner than expected,197,adj,/ɚ•lɪ/,early,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::hand}} - body part at the end of a person's arm,198,noun,/hænd/,hand,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::state}} - region within a country, with its own government",199,noun,/stɛɪt/,state,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::move}} - to cause something to change to a different place,200,verb,/muv/,move,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::money}} - coins or notes we use to pay for things,201,noun,/mʌ•nɪ/,money,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::fact}} - something that is known or proved to be true,202,noun,/fækt/,fact,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::however}} - used when you add information that is different from a previous statement,203,conj,/haʊ•ɛ•və/,however,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::area}} - a specific section or space; part of a region,204,noun,/ɛɚ•riːɚ/,area,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::provide}} - to make available; to supply for use,205,verb,/prə•vaɪd/,provide,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::name}} - what something or someone is called,206,noun,/nɛɪm/,name,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::read}} - to look at and comprehend the meaning some writing,207,verb,/rɛd/,read,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::friend}} - person who you like and enjoy being with,208,noun,/frɛnd/,friend,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::month}} - one of 12 time periods that make a year, each from 28 to 31 days long",209,noun,/mʌnθ/,month,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::large}} - big; of great size; broad, tall, wide, long, or fat",210,adj,/lɑɚdʒ/,large,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::business}} - a company formed for making profit,211,noun,/bɪ•zɪ•nɪs/,business,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::without}} - used to say you don't have something or it isn't in a place,212,prep,/wɪ•ðaʊt/,without,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::information}} - collection of facts and details about something,213,noun,/ɪn•fə•mɛɪ•ʃən/,information,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::open}} - not closed or shut,214,adj,/oʊ•pən/,open,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::order}} - to ask for something you want to buy (e.g., a meal)",215,verb,/oɚ•də/,order,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::government}} - group of people and system which rule a nation,216,noun,/gʌ•vn•mənt/,government,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::word}} - unit of language that has a meaning,217,noun,/wɚd/,word,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::issue}} - important topic discussed, debated, or argued over",218,noun,/ɪ•sju/,issue,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::market}} - public event where people sell goods on tables,219,noun,/mɑɚ•kɪt/,market,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::pay}} - to give money for goods or work done,220,verb,/pɛɪ/,pay,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::build}} - to make (e.g., a house, by putting materials together)",221,verb,/bɪld/,build,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::hold}} - to use hands or arms to carry or keep something,222,verb,/hoʊld/,hold,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::service}} - to maintain a piece of machinery so it runs well,223,verb,/sɚ•vɪs/,service,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::against}} - in opposition to; disagreeing with,224,prep,/ə•gɛnst/,against,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::believe}} - to think or accept that something is true,225,verb,/bɪ•liːv/,believe,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::second}} - 2nd; the one following first,226,adj,/sɛkənd/,second,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::though}} - although, despite the fact that",227,adv,/ðoʊ/,though,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::yes}} - way to say you agree or will do something,228,intj,/jɛs/,yes,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::love}} - to care for and like someone very strong and deeply,229,verb,/lʌv/,love,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::increase}} - to make or become something larger in size or amount,230,verb,/ɪn•kriːs/,increase,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::job}} - regular work of earning money,231,noun,/dʒɑb/,job,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::plan}} - to decide a set of actions to do something,232,verb,/plæn/,plan,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::result}} - to be the outcome of other causes and effects,233,verb,/ɹɪ•zʌlt/,result,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::away}} - not here; far from here; in a different direction,234,adv,/ə•wɛɪ/,away,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::example}} - something or someone who represents a group,235,noun,/ɪg•zɑɚm•pl/,example,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::happen}} - to take place or occur,236,verb,/hæ•pən/,happen,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::offer}} - to give the opportunity to accept something,237,verb,/ɑ•fə/,offer,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::young}} - at an early stage of existence; not mature,238,adj,/jʌŋ/,young,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::close}} - next to; only a short distance away,239,adv,/kloʊz/,close,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::program}} - planned set of actions; a schematic system,240,noun,/proʊ•græm/,program,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::lead}} - to show the way or guide others,241,verb,/liːd/,lead,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::buy}} - to get something by paying money for it,242,verb,/baɪ/,buy,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::understand}} - to know the meaning of language, what someone says",243,verb,/ʌn•də•stænd/,understand,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::thank}} - to tell someone you are grateful to them,244,verb,/θæŋk/,thank,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::far}} - a long way away,245,adj,/fɑɚ/,far,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::today}} - on this day; at the time that is happening now,246,adv,/tə•dɛɪ/,today,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::hour}} - 60 minutes; one of 24 equal units of time in a day,247,noun,/aʊ•ə/,hour,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::student}} - person studying at school,248,noun,/stju•dənt/,student,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::face}} - front part of the head where eyes, nose, and mouth are",249,noun,/fɛɪs/,face,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::hope}} - when you wish something would happen; what you wish,250,noun,/hoʊp/,hope,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::idea}} - belief, thought, suggestion, opinion, or plan",251,noun,/aɪ•diːɚ/,idea,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::cost}} - price you pay for something,252,noun,/kɑst/,cost,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::less}} - smaller in amount or degree,253,adj,/lɛs/,less,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::room}} - a part of building enclosed by walls (e.g., kitchen)",254,noun,/rʊm/,room,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::until}} - up to, to indicate a point in time when something happens",255,conj,/ən•tɪl/,until,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::reason}} - explanation for why something occurred or was done,256,noun,/riː•zn/,reason,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::form}} - visible shape or style; type; kind,257,noun,/foɚm/,form,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::spend}} - to use money to pay for something,258,verb,/spɛnd/,spend,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::head}} - top part of your body with eyes and a mouth,259,noun,/hɛd/,head,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::car}} - a vehicle with four wheels and engine that can carry things,260,noun,/kɑɚ/,car,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::learn}} - to get knowledge or skills by study or experience,261,verb,/lɚn/,learn,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::level}} - to make things flat or even,262,verb,/lɛ•vl/,level,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::person}} - man, woman, or child",263,noun,/pɚ•sn/,person,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::experience}} - knowledge gained by living life, doing new things",264,noun,/ɪks•piːɚ•riːɚns/,experience,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::once}} - one time; one instance,265,adv,/wʌns/,once,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::member}} - person or thing belonging to a group or team,266,noun,/mɛm•bə/,member,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::enough}} - equal to what is needed; as much as required,267,adj,/ɪ•nʌf/,enough,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::bad}} - not good; wrong,268,adj,/bæd/,bad,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::city}} - a heavily populated area with many buildings and roads,269,noun,/sɪ•tɪ/,city,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::night}} - time when sun does not shine,270,noun,/naɪt/,night,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::able}} - having the power, skill, knowledge, or money to do something",271,adj,/ɛɪ•bl/,able,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::support}} - to give assistance or advice to someone,272,verb,/sə•poɚt/,support,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::whether}} - if something will happen or not,273,conj,/wɛ•ðə/,whether,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::line}} - mark that is long, straight, and very thin",274,noun,/laɪn/,line,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::present}} - gift,275,noun,/prɛ•znt/,present,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::side}} - straight edge of an object,276,noun,/saɪd/,side,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::quite}} - very; in a complete or total manner,277,adv,/kwaɪt/,quite,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::although}} - despite the fact that; however,278,conj,/oɚl•ðoʊ/,although,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sure}} - having no doubts about something,279,adj,/ʃʊə/,sure,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::term}} - fixed period of weeks for learning at school,280,noun,/tɚm/,term,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::least}} - in the smallest or lowest way,281,adv,/liːst/,least,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::age}} - number of years a person has lived (also of things),282,noun,/ɛɪdʒ/,age,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::low}} - not high; being near the ground, or bottom",283,adj,/loʊ/,low,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::speak}} - to use words to tell information, express thoughts",284,verb,/spiːk/,speak,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::within}} - not beyond the limits of a particular space, time, or range",285,adv,/wɪ•ðɪn/,within,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::process}} - to adopt a set of actions that produce a particular result,286,verb,/proʊ•sɛs/,process,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::public}} - concerning society in general,287,adj,/pʌb•lɪk/,public,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::often}} - many times, frequently, on many occasions",288,adv,/oɚ•fn/,often,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::train}} - vehicle that carries people and runs on rails,289,noun,/trɛɪn/,train,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::possible}} - having a chance of happening, or being true",290,adj,/pɑ•sə•bl/,possible,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::actually}} - used to add new (often different) information,291,adv,/æktʃʊlɪ/,actually,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::rather}} - somewhat; fairly; not that much,292,adv,/rɑɚ•ðə/,rather,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::view}} - things you are able to see from a specific place,293,noun,/vju/,view,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::together}} - near close in the same place not far in a family or group,294,adv,/tə•gɛ•ðə/,together,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::consider}} - to think carefully about something,295,verb,/kən•sɪ•də/,consider,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::price}} - to determine or set the cost of something,296,verb,/praɪs/,price,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::parent}} - person's mother or father,297,noun,/pɛɚ•rənt/,parent,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::hard}} - difficult to bend, break or cut; solid",298,adj,/hɑɚd/,hard,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::party}} - social event often with food, drinks, and dancing",299,noun,/pɑɚ•tɪ/,party,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::local}} - relating or restricted to a particular area, city, or town",300,adj,/loʊ•kəl/,local,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::control}} - to direct or influence the behavior of something,301,verb,/kən•troʊl/,control,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::already}} - having happened or been done before this time,302,adv,/oɚl•rɛ•dɪ/,already,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::concern}} - feeling of worry or anxiety,303,noun,/kən•sɚn/,concern,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::product}} - item that can be bought,304,noun,/prɑ•dəkt/,product,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::lose}} - to be unable to find something you once had,305,verb,/luz/,lose,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::story}} - an account or description of how something happened,306,noun,/stoɚ•rɪ/,story,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::almost}} - only a little less than, nearly, not quite",307,adv,/oɚl•moʊst/,almost,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::continue}} - to do something without stopping, or after pausing",308,verb,/kən•tɪ•nju/,continue,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::stand}} - to be upright; not be sitting or lying down,309,verb,/stænd/,stand,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::whole}} - complete or full; all of,310,adj,/hoʊl/,whole,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::yet}} - until now; up to the present,311,adv,/jɛt/,yet,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::rate}} - speed or frequency of events over time,312,noun,/rɛɪt/,rate,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::care}} - to look after someone or something,313,verb,/kɛɚ/,care,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::expect}} - to believe something is probably going to happen,314,verb,/ɪks•pɛkt/,expect,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::effect}} - change brought about by a cause; result,315,noun,/ɪ•fɛkt/,effect,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sort}} - group or class of similar things or people,316,noun,/soɚt/,sort,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::ever}} - at any time; at all times in the future,317,adv,/ɛ•və/,ever,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::anything}} - thing of any kind; used to refer to a thing in questions,318,noun,/ɛ•nɪ•θɪŋ/,anything,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::cause}} - to make something happen; create effect or result,319,verb,/koɚz/,cause,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::fall}} - dropping from a standing position to the ground,320,noun,/foɚl/,fall,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::deal}} - to give out (cards, etc.) to; distribute",321,verb,/diːl/,deal,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::water}} - clear liquid that forms the seas, rivers, and rain",322,noun,/woɚ•tə/,water,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::send}} - to cause mail or package to go to another place,323,verb,/sɛnd/,send,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::allow}} - to let or permit someone do something,324,verb,/ə•laʊ/,allow,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::soon}} - at a time not long from now,325,adv,/sun/,soon,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::watch}} - to look at carefully to work out what is happening,326,verb,/wɑtʃ/,watch,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::base}} - origin or start from which something came,327,noun,/bɛɪs/,base,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::probably}} - likely to happen or be true,328,adv,/prɑbəblɪ/,probably,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::suggest}} - to mention something that could be done; propose,329,verb,/sə•dʒɛst/,suggest,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::past}} - the time that existed before now (e.g., long ago)",330,noun,/pɑɚst/,past,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::power}} - legal or official right to perform certain actions,331,noun,/paʊə2/,power,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::test}} - examination; questions to measure knowledge,332,noun,/tɛst/,test,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::visit}} - to go to a place for a time, usually for a reason",333,verb,/vɪ•zɪt/,visit,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::center}} - place in the middle of something,334,noun,/sɛn•tə/,center,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::grow}} - to develop and become bigger or taller over time,335,verb,/groʊ/,grow,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::nothing}} - not anything, not a single thing",336,pron,/nʌ•θɪŋ/,nothing,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::return}} - to come back to a place again,337,verb,/rɪ•tɚn/,return,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::mother}} - a female who has a child or children,338,noun,/mʌ•ðə/,mother,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::walk}} - to move with your legs at a slowish pace,339,verb,/woɚk/,walk,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::matter}} - problem or reason for concern,340,noun,/mæ•tə/,matter,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::mind}} - part of humans that allows us to think or feel,341,noun,/maɪnd/,mind,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::value}} - to say how much money something is worth,342,verb,/væ•lju/,value,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::office}} - building of set of rooms used to do business or professional activities,343,noun,/ɑ•fɪs/,office,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::record}} - being the highest or most extreme level achieved in an area,344,noun,/rɪ•koɚd/,record,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::stay}} - to spend time visiting a place or someone's home,345,verb,/stɛɪ/,stay,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::force}} - to use physical strength or violence to persuade,346,verb,/foɚs/,force,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::stop}} - to finish moving or to come to an end,347,verb,/stɑp/,stop,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::several}} - more than two but not many,348,det,/sɛ•vrəl/,several,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::light}} - not heavy; weighing only a little,349,adj,/laɪt/,light,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::develop}} - to grow bigger, more complex, or more advanced",350,verb,/dɪ•vɛ•ləp/,develop,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::remember}} - to bring a previous image or idea to your mind,351,verb,/rɪ•mɛm•bə/,remember,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::bit}} - small piece of something,352,noun,/bɪt/,bit,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::share}} - part of a company you own, shown by a certificate",353,noun,/ʃɛɚ/,share,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::real}} - actually existing or happening, not imagined",354,adj,/rɛɪ•ɑɚl/,real,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::answer}} - solution to a problem or test question,355,noun,/ɑɚn•sə/,answer,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sit}} - to be in a resting position on a chair,356,verb,/sɪt/,sit,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::figure}} - to understand after thinking; work out,357,verb,/fɪ•gə/,figure,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::letter}} - message you put in an envelope and send by post,358,noun,/lɛ•tə/,letter,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::decide}} - to make a choice about something or choose after thinking,359,verb,/dɪ•saɪd/,decide,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::language}} - words or signs used to communicate messages,360,noun,/læŋ•gwɪdʒ/,language,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::subject}} - person or thing that does the action of a verb,361,noun,/səb•dʒɛkt/,subject,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::class}} - rank or level in society, ranked from high (rich professional people) to low (ordinary people)",362,noun,/klɑɚs/,class,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::development}} - act or process of growing bigger or more advanced,363,noun,/dɪ•vɛ•ləp•mənt/,development,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::town}} - small city,364,noun,/taʊn/,town,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::half}} - the part you get when one is divided into two; ½,365,noun,/hɑɚf/,half,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::minute}} - unit of time equal to 60 seconds,366,noun,/maɪ•njut/,minute,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::food}} - what people and animals eat to live,367,noun,/fud/,food,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::break}} - to separate into pieces by force, or by dropping",368,verb,/brɛɪk/,break,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::clear}} - easy to understand; well-explained; obvious,369,adj,/kliːɚ/,clear,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::future}} - time that is to come after the present,370,noun,/fju•tʃə/,future,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::either}} - one of two (used when there is a choice of two),371,adj,/aɪ•ðə/,either,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::ago}} - at a specified length of time in the past,372,adv,/ə•goʊ/,ago,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::per}} - for each; during each,373,prep,/pɚ/,per,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::remain}} - to be left behind, to continue to exist",374,verb,/rɪ•mɛɪn/,remain,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::top}} - highest or upper part or point of something,375,noun,/tɑp/,top,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::among}} - in the center of some things; in relation to several things,376,prep,/ə•mʌŋ/,among,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::win}} - to succeed in a game or contest,377,verb,/wɪn/,win,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::color}} - the quality of things you can see (e.g., red, blue)",378,noun,/kʌ•lɚ/,color,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::involve}} - to have or be included as a part of something,379,verb,/ɪn•vɑlv/,involve,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::reach}} - to come to or arrive at a goal or destination,380,verb,/riːtʃ/,reach,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::social}} - involving activities among people especially free time activities,381,adj,/soʊ•ʃəl/,social,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::period}} - set amount of time during which events take place,382,noun,/piːɚ•riːɚd/,period,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::across}} - from one side to the other of something,383,adv,/ə•krɑs/,across,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::note}} - to make mention of something; to make a remark,384,verb,/noʊt/,note,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::history}} - study of past event,385,noun,/hɪs•tə•rɪ/,history,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::create}} - to make, cause, or bring into existence",386,verb,/kriː•ɛɪt/,create,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::drive}} - to control a vehicle so that it moves somewhere,387,verb,/draɪv/,drive,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::along}} - at a point on a line,388,prep,/ə•lɑŋ/,along,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::type}} - group of things or people sharing common features,389,noun,/taɪp/,type,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sound}} - waves traveling in air or water that can be heard,390,noun,/saʊnd/,sound,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::eye}} - part of the body that you see with,391,noun,/aɪ/,eye,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::music}} - sounds that are sung or played to give pleasure,392,noun,/mju•zɪk/,music,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::game}} - activity with rules that people play to have fun,393,noun,/gɛɪm/,game,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::political}} - concerning government or public affairs,394,adj,/pə•lɪ•tɪ•kəl/,political,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::free}} - costing no money,395,adj,/friː/,free,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::receive}} - to get something that someone has given or sent to you,396,verb,/rɪ•siːv/,receive,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::moment}} - very short or brief period of time,397,noun,/moʊ•mənt/,moment,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sale}} - giving something for money; the amount sold,398,noun,/sɛɪl/,sale,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::policy}} - course of action proposed by an organization, etc.",399,noun,/pɑ•lɪ•sɪ/,policy,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::further}} - extra; in addition,400,adj,/fɚ•ðə/,further,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::body}} - a person's physical self,401,noun,/bɑ•dɪ/,body,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::require}} - to need something, to make it necessary",402,verb,/rɪ•kwaɪ•ə/,require,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::wait}} - to spend time until an expected thing happens,403,verb,/wɛɪt/,wait,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::general}} - widespread, normal or usual",404,adj,/dʒɛ•nə•rəl/,general,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::appear}} - to be seen, become visible; come into sight",405,verb,/ə•piːɚ/,appear,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::toward}} - facing or moving in the direction of something,406,adv,/tə•woɚd/,toward,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::team}} - group of people working on a task together,407,noun,/tiːm/,team,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::easy}} - not hard to do; not difficult,408,adj,/iː•zɪ/,easy,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::individual}} - single person, looked at separately from others",409,noun,/ɪn•dɪ•vɪ•djʊəl/,individual,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::full}} - containing or holding as much as possible,410,adj,/fʊl/,full,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::black}} - color of the sky on a dark night,411,adj,/blæk/,black,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::sense}} - to perceive using sight, sound, taste touch or hearing",412,verb,/sɛns/,sense,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::perhaps}} - possibly, but not certainly; maybe",413,adv,/pɚ•hæps/,perhaps,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::add}} - to put two things or numbers together (e.g., 2+2)",414,verb,/æd/,add,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::rule}} - statement that says how things should be,415,noun,/rul/,rule,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::pass}} - to travel through or near a place,416,verb,/pɑɚs/,pass,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::produce}} - to manufacture something using machines,417,verb,/prə•djus/,produce,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sell}} - to exchange something for money,418,verb,/sɛl/,sell,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::short}} - small distance from one end to the other,419,noun,/ʃoɚt/,short,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::agree}} - to have the same opinion as someone else,420,verb,/ə•griː/,agree,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::law}} - system or rules made by the government,421,noun,/loɚ/,law,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::everything}} - all of the things mentioned,422,pron,/ɛ•vrɪ•θɪŋ/,everything,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::research}} - to carefully study to find and report new knowledge,423,verb,/rɪ•sɚtʃ/,research,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::cover}} - thing you put over something to close or hide it,424,noun,/kʌ•və/,cover,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::paper}} - pages of a book are made from this,425,noun,/pɛɪ•pə/,paper,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::position}} - specific location where someone or something is,426,noun,/pə•zɪ•ʃən/,position,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::near}} - with a small distance between things,427,adj,/niːɚ/,near,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::human}} - a person; a man, woman or child",428,noun,/hju•mən/,human,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::computer}} - a machine for storing information and accessing the internet,429,noun,/kəm•pju•tə/,computer,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::situation}} - condition, location or position",430,noun,/sɪ•tjʊ•ɛɪ•ʃən/,situation,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::staff}} - employees of a company,431,noun,/stɑɚf/,staff,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::activity}} - an action or task (e.g., sports, washing your clothes)",432,noun,/æk•tɪ•vɪ•tɪ/,activity,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::film}} - movie,433,noun,/fɪlm/,film,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::morning}} - early part of the day before 12 noon,434,noun,/moɚ•nɪŋ/,morning,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::war}} - situation where armies fight each other,435,noun,/woɚ/,war,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::account}} - arrangement with a bank to keep your money for you,436,noun,/ə•kaʊnt/,account,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::shop}} - place which sells things,437,noun,/ʃɑp/,shop,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::major}} - important, serious, or large in scope",438,adj,/mɛɪ•dʒə/,major,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::someone}} - person who is not known or named,439,pron,/sʌ•mwʌn/,someone,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::above}} - in a higher place than something else,440,adv,/ə•bʌv/,above,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::design}} - to plan in a particular way to fulfill a purpose,441,verb,/dɪ•zaɪn/,design,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::event}} - something that happens,442,noun,/ɪ•vɛnt/,event,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::special}} - different from what is usual; better or greater than normal,443,adj,/spɛ•ʃəl/,special,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::sometimes}} - only at certain times; occasionally,444,adv,/sʌm•taɪmz/,sometimes,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::condition}} - state of living you are in (e.g., good health)",445,noun,/kən•dɪ•ʃən/,condition,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::carry}} - to hold something and move it to another place,446,verb,/kæ•rɪ/,carry,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::choose}} - to select; decide between several possibilities,447,verb,/tʃuz/,choose,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::father}} - a male parent,448,noun,/fɑɚ•ðə/,father,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::decision}} - a choice you make about something after thinking about it,449,noun,/dɪ•sɪ•ʒən/,decision,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::table}} - raised flat surface,450,noun,/tɛɪ•bl/,table,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::certain}} - being sure about something; without doubt,451,adj,/sɚ•tn/,certain,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::forward}} - toward what is ahead or in front,452,adv,/foɚ•wəd/,forward,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::main}} - most important; most often used,453,adj,/mɛɪn/,main,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::die}} - to stop living,454,verb,/daɪ/,die,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::bear}} - large brown animal with fur that lives in forests,455,noun,/bɛɚ/,bear,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::cut}} - to use a knife or scissors to divide or open the surface,456,verb,/kʌt/,cut,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::describe}} - to tell someone the appearance, sound or smell of something",457,verb,/dɪs•kraɪb/,describe,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::himself}} - the same (male) person who did the action,458,pron,/hɪm•sɛlf/,himself,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::available}} - present and able to be used,459,adj,/ə•vɛɪ•lə•bl/,available,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::especially}} - more than usual; extremely,460,adv,/ɪ'spɛʃəlɪ/,especially,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::strong}} - having big muscles; physically powerful,461,adj,/strɑŋ/,strong,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::rise}} - to move from a lower position to a higher one,462,verb,/raɪz/,rise,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::girl}} - a female child,463,noun,/gɚl/,girl,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::maybe}} - possibly but not certainly; perhaps,464,adv,/mɛɪ•biː/,maybe,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::community}} - group of people who share a common idea or area,465,noun,/kə•mju•nɪ•tɪ/,community,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::else}} - otherwise; if you fail to...,466,adv,/ɛls/,else,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::particular}} - one specific (one),467,adj,/pə•tɪ•kjʊ•lə/,particular,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::role}} - character played by an actor,468,noun,/roʊl/,role,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::join}} - to bring something close to another, to become one",469,verb,/dʒoɪn/,join,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::difficult}} - hard; not easy; you need to work hard to do it,470,adj,/dɪ•fɪ•kəlt/,difficult,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::please}} - you say this when you politely ask people for things,471,adv,/pliːz/,please,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::detail}} - small part of something; tiny fact,472,noun,/diː•tɛɪl/,detail,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::difference}} - not of the same kind; unlike other things,473,noun,/dɪ•frəns/,difference,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::action}} - something that a person or thing does,474,noun,/æk•ʃən/,action,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::health}} - being in a good condition; being well,475,noun,/hɛlθ/,health,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::eat}} - to put food in your mouth,476,verb,/ɛt/,eat,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::step}} - flat horizontal piece that forms stairs,477,noun,/stɛp/,step,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::true}} - agreeing with the facts; not false; real or actual,478,adv,/tru/,true,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::phone}} - to talk to someone using a telephone,479,verb,/foʊn/,phone,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::themselves}} - reflexive form of they,480,pron,/ðəm•sɛlvz/,themselves,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::draw}} - to create an image using pen or pencil and paper,481,verb,/droɚ/,draw,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::white}} - lightest color; the color of fresh snow and milk,482,adj,/waɪt/,white,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::date}} - a day in the calendar such as January 3rd,483,noun,/dɛɪt/,date,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::practice}} - to do something many times to improve a skill,484,verb,/præk•tɪs/,practice,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::model}} - to make a small scale copy of a full original,485,adj,/mɑ•dl/,model,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::raise}} - to increase a quantity, size, intensity or price",486,verb,/rɛɪz/,raise,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::customer}} - someone who buys goods or services from a business,487,noun,/kʌs•tə•mə/,customer,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::front}} - opposite of back; the forward part of an object,488,adj,/frʌnt/,front,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::explain}} - to make clear or easy to understand by describing,489,verb,/ɪks•plɛɪn/,explain,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::door}} - you walk through this when you go in a room,490,noun,/doɚ/,door,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::outside}} - area around or near something, such as a building",491,noun,/aʊt•saɪd/,outside,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::behind}} - in or toward the back,492,adv,/bɪ•haɪnd/,behind,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::economic}} - having to do with trade, industry, and money",493,adj,/iː•kə•nɑ•mɪk/,economic,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::site}} - present, former, or future location of something, such as a building",494,noun,/saɪt/,site,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::approach}} - to get close to reaching something or somewhere,495,verb,/ə•proʊtʃ/,approach,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::teacher}} - person who teaches others, especially in a school",496,noun,/tiː•tʃə/,teacher,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::land}} - the earth; the ground,497,noun,/lænd/,land,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::charge}} - to ask for money as a price for a service or goods,498,verb,/tʃɑɚdʒ/,charge,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::finally}} - after a long time or some difficulty,499,adv,/faɪ•nə•lɪ/,finally,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::sign}} - something such as a mark or event that shows that something exists, is true, is happening or will happen",500,noun,/saɪn/,sign,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::claim}} - to say something is true when others may not agree,501,verb,/klɛɪm/,claim,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::relationship}} - manner in which people, groups or countries behave toward one another",502,noun,/rɪ•lɛɪ•ʃən•ʃɪp/,relationship,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::travel}} - to go to a place that is far away,503,verb,/træ•vl/,travel,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::enjoy}} - to take pleasure in something,504,verb,/ɪn•dʒoɪ/,enjoy,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::death}} - when someone dies; the end of life,505,noun,/dɛθ/,death,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::nice}} - good or enjoyable,506,adj,/naɪs/,nice,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::amount}} - quantity of something,507,noun,/ə•maʊnt/,amount,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::improve}} - to make, or become, something better",508,verb,/ɪm•pruv/,improve,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::picture}} - painting, drawing or photograph on paper or screen",509,noun,/pɪk•tʃə/,picture,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::boy}} - a young male person,510,noun,/boɪ/,boy,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::regard}} - to pay attention to someone or something,511,verb,/rɪ•gɑɚd/,regard,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::organization}} - formal group of people with a particular purpose,512,noun,/oɚ•gə•naɪ•zɛɪ•ʃən/,organization,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::happy}} - feeling pleasure or joy; glad,513,adj,/hæ•pɪ/,happy,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::couple}} - two of something; two people; a pair,514,noun,/kʌ•pl/,couple,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::act}} - to behave in a certain way,515,verb,/ækt/,act,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::range}} - limits within which something extends or varies,516,noun,/rɛɪndʒ/,range,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::quality}} - high level of worth or excellence,517,noun,/kwɑ•lɪ•tɪ/,quality,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::project}} - a planned piece of work for specific purpose,518,noun,/prə•dʒɛkt/,project,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::round}} - being in the shape of a circle or ball,519,adj,/raʊnd/,round,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::opportunity}} - time/situation when a thing might be done; chance,520,noun,/ɑ•pə•tju•nɪ•tɪ/,opportunity,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::road}} - long piece of hard land for cars to travel on,521,noun,/roʊd/,road,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::accord}} - agreement or harmony,522,noun,/ə•koɚd/,accord,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::list}} - series of written names, words or numbers",523,noun,/lɪst/,list,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::wish}} - to want something to happen or to become true,524,verb,/wɪʃ/,wish,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::therefore}} - for that reason,525,adv,/ðɛɚ•foɚ/,therefore,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::wear}} - to have clothes, glasses, shoes, etc., on your body",526,verb,/wɛɚ/,wear,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::fund}} - to supply money for something,527,noun,/fʌnd/,fund,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::rest}} - time when one relaxes, sleeps, or is inactive",528,noun,/rɛst/,rest,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::kid}} - informal child or young person,529,noun,/kɪd/,kid,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::industry}} - factories or businesses that make certain products,530,noun,/ɪn•dəs•trɪ/,industry,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::education}} - process of giving or receiving teaching,531,noun,/ɛ•dju•kɛɪ•ʃən/,education,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::measure}} - to calculate size, weight or temperature of",532,verb,/mɛ•ʒə/,measure,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::kill}} - to end the life of a person or other living thing,533,verb,/kɪl/,kill,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::serve}} - to give or provide something to another person,534,verb,/sɚv/,serve,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::likely}} - referring to the chance that something will actually happen,535,adj,/laɪk•lɪ/,likely,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::certainly}} - definitely true or is sure to happen,536,adv,/sɚtnlɪ/,certainly,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::national}} - concerning a nation as a whole,537,adj,/næ•ʃə•nL/,national,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::itself}} - referring to it,538,pron,/ɪt•sɛlf/,itself,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::teach}} - to help someone learn or do something,539,verb,/tiːtʃ/,teach,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::field}} - open area of land, especially without buildings",540,noun,/fiːld/,field,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::security}} - things done to protect people, buildings, a country, etc., from harm",541,noun,/sɪ•kjʊə•rɪ•tɪ/,security,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::air}} - mixture of gases around the earth that we breathe,542,noun,/ɛɚ/,air,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::benefit}} - good result or effect, something advantageous",543,noun,/bɛ•nɪ•fɪt/,benefit,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::trade}} - to buy, sell and exchange goods in business",544,verb,/trɛɪd/,trade,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::risk}} - to take the chance that you may do something dangerous,545,verb,/rɪsk/,risk,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::news}} - information about recent events,546,noun,/njuz/,news,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::standard}} - accepted level of quality; an official measurement,547,adj,/stæn•dəd/,standard,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::vote}} - to make a choice for or against, as in an election",548,verb,/voʊt/,vote,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::percent}} - one one-hundredth of a whole,549,noun,/pɚ•sɛnt/,percent,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::focus}} - main purpose or center of interest or activity,550,noun,/foʊ•kəs/,focus,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::stage}} - place where actors or musician perform for others,551,noun,/stɛɪdʒ/,stage,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::space}} - empty area with nothing in it,552,noun,/spɛɪs/,space,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::instead}} - when one thing is replaced by another,553,adv,/ɪn•stɛd/,instead,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::realize}} - to become aware of or understand mentally,554,verb,/riːɚ•laɪz/,realize,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::usually}} - normally; regularly,555,adv,/juʒəlɪ/,usually,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::data}} - facts or information used to calculate or analyze,556,noun,/dɛɪ•tə/,data,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::single}} - only, merely",557,adj,/sɪŋ•gl/,single,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::address}} - exact street location of a place,558,noun,/ə•drɛs/,address,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::performance}} - activity done to entertain an audience,559,noun,/pɚ•foɚ•məns/,performance,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::chance}} - possibility that something will happen,560,noun,/tʃɑɚns/,chance,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::accept}} - to agree to receive or take something offered,561,verb,/ək•sɛpt/,accept,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::society}} - community of people living together,562,noun,/sə•saɪ•ə•tɪ/,society,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::technology}} - use or knowledge of science in industry, engineering, etc.",563,noun,/tɛk•nɑ•lə•dʒɪ/,technology,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::mention}} - to refer to or talk or write about something,564,verb,/mɛn•ʃən/,mention,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::choice}} - decision between two or more possibilities,565,noun,/tʃoɪs/,choice,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::save}} - to rescue someone or something from a bad situation,566,verb,/sɛɪv/,save,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::common}} - typical, normal; not unusual",567,adj,/kɑ•mən/,common,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::culture}} - beliefs and customs of a particular group,568,noun,/kʌl•tʃə/,culture,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::total}} - whole number or amount of something,569,noun,/toʊ•tl/,total,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::demand}} - to strongly request someone to do something; insist,570,verb,/dɪ•mɑɚnd/,demand,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::material}} - substance from which a thing is made of,571,noun,/mə•tiːɚ•riːɚl/,material,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::limit}} - point beyond which it is not possible to go,572,noun,/lɪ•mɪt/,limit,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::listen}} - to use your ears to hear and understand things,573,verb,/lɪ•sn/,listen,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::due}} - when something is required or expected,574,adj,/dju/,due,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::wrong}} - not right, incorrect; not true; bad",575,adj,/rɑŋ/,wrong,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::foot}} - lowest part of the leg we use to stand on,576,noun,/fʊt/,foot,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::effort}} - amount of work used trying to do something,577,noun,/ɛ•fət/,effort,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::attention}} - focus of your thoughts on something,578,noun,/ə•tɛn•ʃən/,attention,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::upon}} - more formal term for on,579,prep,/ə•pɑn/,upon,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::check}} - to confirm the details of something are correct,580,verb,/tʃɛk/,check,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::complete}} - to finish or reach the end of doing something,581,verb,/kəm•pliːt/,complete,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::lie}} - to say something that you know is not true,582,verb,/laɪ/,lie,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::pick}} - to decide on a thing from various choices; select,583,verb,/pɪk/,pick,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::reduce}} - to make something smaller or use less of it,584,verb,/rɪ•djus/,reduce,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::personal}} - done by or to a particular person; individual,585,adj,/pɚs•nL/,personal,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::ground}} - solid surface of the earth that we stand on,586,verb,/graʊnd/,ground,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::animal}} - a living creature that is not a plant or person,587,noun,/æ•nɪ•məl/,animal,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::arrive}} - to reach the place you are travelling to,588,verb,/ə•raɪv/,arrive,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::patient}} - not getting annoyed when things take a long time,589,adj,/pɛɪ•ʃənt/,patient,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::current}} - happening or being in the present time,590,adj,/kʌ•rənt/,current,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::century}} - period of 100 years,591,noun,/sɛn•tʃʊ•rɪ/,century,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::evidence}} - factual proof that helps to establish the truth,592,noun,/ɛ•vɪ•dəns/,evidence,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::exist}} - to be present, alive or real",593,verb,/ɪg•zɪst/,exist,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::similar}} - nearly the same,594,adj,/sɪ•mɪ•lə/,similar,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::fight}} - act of trying to hurt someone by hitting them,595,noun,/faɪt/,fight,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::leader}} - person who is in charge of a group or task,596,noun,/liː•də/,leader,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::fine}} - good, acceptable or satisfactory",597,adj,/faɪn/,fine,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::street}} - road in a city with buildings and places to walk,598,noun,/striːt/,street,english words ngsl
+word type,0-current-using::ngsl-wip,"{{c1::former}} - being something previously, but not now",599,det,/foɚ•mə/,former,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::contact}} - to get in touch with someone,600,verb,/kən•tækt/,contact,english words ngsl
+word type,0-current-using::ngsl-wip,{{c1::particularly}} - specially; more than others,601,adv,/pə'tɪkjʊləlɪ/,particularly,english words ngsl

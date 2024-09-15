@@ -1,0 +1,601 @@
+:PROPERTIES:
+:ID:       bc9d12ba-1f84-4599-9fe3-bcba0d2f5cb4
+:mtime:    20230206181525 20220824135334
+:ctime:    20220814195019
+:END:
+#+title: React.js
+#+date: [2022-08-14 Sun 19:50]
+
+* React.js Anki syntax
+:PROPERTIES:
+:ANKI_DECK: 00-software engineering::React
+:ANKI_TAGS: React
+:END:
+** Create a React App
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660526133492
+:END:
+*** Text
+Create a React Application
+
+#+begin_src shell
+# {{c1::npx create-react-app directory-name}}
+#+end_src
+
+** Start a React App
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660525920093
+:END:
+*** Text
+Start a React Application
+#+begin_src shell
+# {{c1::npm start}}
+#+end_src
+
+** Simple React index.js
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660528927142
+:END:
+*** Text
+#+begin_src js
+// simple index.js file
+// Imports
+// going to use react
+{{c1::import React from "react";}}
+// going to manipulate dom with react
+{{c1::import ReactDOM from "react-dom/client";}}
+// importing a global css
+{{c1::import "./index.css";}}
+// importing a react component
+{{c1::import App from "./App";}}
+
+// create the root node
+{{c2::const root = ReactDOM.createRoot(document.getElementById("root"));}}
+// render to root the component in strict mode
+{{c2::root.render(}}
+  {{c2::<React.StrictMode>}}
+    {// calling the component}
+    {{c2::<App />}}
+  {{c2::</React.StrictMode>}}
+{{c2::);}}
+#+end_src
+
+** Simple React app.js
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660528927217
+:END:
+*** Text
+#+begin_src js
+// Simple React app.js; Component
+// importing css for this component
+{{c1::import "./App.css";}}
+
+{{c2::function App() {}}
+  // display Hello World! as heading 1
+  {{c2::return <h1>Hello World!</h1>}}
+{{c2::}}};}}
+
+// exporting the component
+{{c1::export default App;}}
+#+end_src
+** Simple Jsx expression
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661026104587
+:END:
+*** Text
+#+begin_src js
+// inside of myElement create paragraph element with expression 5 + 5 inside
+{{c1::const myElement = <p>{5 + 5}</p>;}}
+#+end_src
+** Simple Jsx Large Block of HTML
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661027200063
+:END:
+*** Text
+#+begin_src js
+// inside of myElement create unorder list element
+{{c1::const myElement = (}}
+    {{c1::<ul>}}
+        {{c1::<li>...</li>}}
+        ...
+    {{c1::</ul>}}
+{{c1::);}}
+#+end_src
+** Simple Jsx One Top Level Element
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661026922463
+:END:
+*** Text
+#+begin_src js
+// create the top element
+{{c1::const myElement = (}}
+    {{c1::<div>}}
+      <p>...</p>
+      <p>...</p>
+      ...
+    {{c1::</div>}}
+{{c1::);}}
+
+// can also use fragment
+{{c2::const myElement = (}}
+    {{c2::<>}}
+      <p>...</p>
+      <p>...</p>
+      ...
+    {{c2::</>}}
+{{c2::);}}
+#+end_src
+** Simple Jsx className
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661026104812
+:END:
+*** Text
+#+begin_src js
+// add class name myclass
+{{c1::const myElement = <p className="myclass">...</p>;}}
+#+end_src
+** Jsx if statements
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661026104887
+:END:
+*** Text
+#+begin_src js
+// set x to 5; readonly
+{{c1::const x = 5;}}
+// set text to Goodbye
+{{c1::let text = "Goodbye";}}
+// if x is less then 10
+{{c1::if (x < 10) {}}
+  // set text to Hello
+  {{c1::text = "Hello";}}
+{{c1::}}}
+// p element with variable text
+{{c1::const myElement = <p>{text}</p>;}}
+
+// ternary; if x is less than 10 return Hello else return Goodbye inside a p element
+{{c2::const myElement = <p>{x < 10 ? "Hello" : "Goodbye"}</p>;}}
+#+end_src
+** React list
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661135639919
+:END:
+*** Text
+#+begin_src js
+// function Car for list items brand
+function Car(props) {
+  // returns an list item with props brand inside
+  {{c1::return <li>I am a { props.brand }</li>;}}
+}
+// function for whole list
+function Garage() {
+  // the array we going to map over
+  const cars = ["Ford", "BMW", "Audi"];
+  // returns fragment with a h1 and unorder list with map
+  return (
+    <>
+      <h1>Who lives in my garage?</h1>
+      <ul>
+        {// map over cars and call Car inside without key}
+        {{c2::{cars.map((car) => <Car brand={car} />)}}}
+        {// map over cars and call Car inside with key from index}
+        {{c3::{cars.map((car, index) => <Car key={index} brand={car} />)}}}
+      </ul>
+    </>
+  );
+}
+#+end_src
+** React classes
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1661269749429
+:END:
+*** Text
+#+begin_src js
+// initialize class Car
+{{c1::class Car {}}
+  // assigned a property name for the brand
+  {{c2::constructor(name) {}}
+    {{c2::this.brand = name;}}
+  {{c2::};}}
+  // create method in a class named present;
+  {{c3::present() {}}
+    // returns I have a prop
+    {{c3::return "I have a " + this.brand;}}
+  {{c3::};}}
+{{c1::};}}
+
+// create object mycar using the Car class
+{{c4::const mycar = new Car("Ford");}}
+// use present method on mycar object
+{{c4::mycar.present();}}
+
+// Class Inheritance: create a class Model that inherit the methods for Car
+{{c1::class Model extends Car {}}
+  // assigned properties name, mode
+  {{c2::constructor(name, mod) {}}
+    {{c2::super(name);}}
+    {{c2::this.model = mod;}}
+  {{c2:};}}
+  // create method show using present method
+  {{c3::show() {}}
+    // returns method , it is a prop
+    {{c3::return this.present() + ", it is a " + this.model}}
+  {{c3:};}}
+{{c1::};}}
+
+// create object mycar using the Model class
+{{c4::const mycar = new Model("Ford", "Mustang");}}
+// use show method on object mycar;
+{{c4::mycar.show();}}
+#+end_src
+* React test this
+
+#+begin_src js
+// simple index.js file
+// importing stuff for react
+import React from "react";
+import ReactDOM from "react-dom/client";
+// importing a global css
+import "./index.css";
+// importing a react component
+import App from "./App";
+
+// setting the render to display the components
+const root = ReactDOM.createRoo(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    {// calling the component}
+    <App />
+  </React.StrictMode>
+);
+#+end_src
+
+#+begin_src js
+// importing css for this component
+import "./App.css";
+
+function App() {
+  // display Hello World! as heading 1
+  return <h1>Hello World!</h1>
+};
+
+// exporting the component
+export default App;
+#+end_src
+* what is react
+react is a javascript library for building user interfaces.
+react is used to build single-page application.
+react allows us to create reusable UI components.
+is a tool for building reusable UL components.
+create by Facebook
+
+how does react work?
+creates a virtual dom in memory
+where your dom manipulation happen before making changes in the browser dom
+only changes what needs to be changed!
+
+ReactDOM.render() - renders HTML to the web page
++ takes two arguments, HTML code and HTML element.
++ displays the HTML code inside the HTML element.
+
+the Root node
+the root node is the HTML element where you want to display the result.
+it is like a container for content managed by React.
+
+* what is jsx
+jsx stands for javascript xml.
+jsx allows us to write html in react.
+jsx makes it easier to write and add html in react
+
+jsx allows us to write html elements in javascript and place them in the dom
+without any createElement() and/or appendChild() methods.
+
+jsx converts html tags into react elements.
+
+expressions in jsx
+with jsx you can write expressions inside curly braces {}
+expressions can be:
++ react variable
++ property
++ valid javascript expressions
+
+jsx will execute the expressions and return the result
+
+use () parentheses when inserting a large html block
+
+there can be only one top element
+  use <div> or <> fragment
+
+empty elements must be close with />
+
+use className instead of class
+
+conditions - if statements
+
+react supports if statements, but not inside jsx
+can use ternary expression inside jsx
+
+* react lists
+
+#+begin_src js
+// function for list items
+function Car(props) {
+  // returns an list item with props brand inside
+  return <li>I am a { props.brand }</li>;
+}
+// function for whole list
+function Garage() {
+  // the array we going to map over
+  const cars = ["Ford", "BMW", "Audi"];
+  // returns fragment with a h1 and unorder list with map
+  return (
+    <>
+      <h1>Who lives in my garage?</h1>
+      <ul>
+        {// map over cars and call Car inside without key}
+        {cars.map((car) => <Car brand={car} />)}
+        {// map over cars and call Car inside with key from index}
+        {cars.map((car, index) => <Car key={index} brand={car} />)}
+      </ul>
+    </>
+  );
+}
+#+end_src
+
+* react es6 classes
+a class is a type of function
+it is initialize with the class keyword
+the properties assigned inside a constructor() method
+the class name must be capitalize
+class inheritance: to create use the extends keyword
+a class created with a class inheritance inherits all the methods from another class
+the super() method refers to the parent class
+  we call the parent's constructor method and gets access to the parent's
+properties and methods
+#+begin_src js
+// initialize class Car
+class Car {
+  // assigned a property name for the brand
+  constructor(name) {
+    this.brand = name;
+  };
+  // create method in a class named present;
+  present() {
+    return "I have a " + this.brand;
+  };
+};
+// create object mycar using the Car class
+const mycar = new Car("Ford");
+// use present method on mycar object
+mycar.present();
+
+// Class Inheritance: create a class Model that inherit the methods for Car
+class Model extends Car {
+  // assigned properties name, mode
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  };
+  // create method show using present method
+  show() {
+    return this.present() + ", it is a " + this.model
+  };
+};
+
+// create object mycar using the Model class
+const mycar = new Model("Ford", "Mustang");
+// use show method on object mycar;
+mycar.show();
+#+end_src
+* what is a react hook
+hooks allow function components to have access to state and other react features.
+
+hooks allow us to "hook" into react feature such as state and life-cycle methods.
+
+You must import Hooks from react.
+
+useState - keep track of the application state.
+state generally refers to application data or properties that need to be tracked.
+
+Hook Rules:
++ Hooks can only be called inside React function components.
++ Hooks can only be called at the top level of a component.
++ Hooks cannot be conditional.
+
+Hooks will not work in React class components.
+
+* what is react useState Hook?
+
+useState - keep track of the application state.
+useState - allows us to track state in a function component.
+
+state generally refers to application data or properties that need to be tracked.
+state generally refers to data or properties that need to be tracked in application
+
+useState accepts a initial state and returns two values:
++ The current state.
++ A function that updates the state.
+
+#+begin_src js
+// how to import useState?
+import { useState } from "react"
+
+// how to initialize useState?
+function FavColor() {
+  // The first value, color, is our current state
+  // The second value, setColor, is the function that is used to update our state.
+  // Set the initial state to an empty string
+  const [ color, setColor ] = useState("");
+
+  // how to read state
+  return <h1>{color}</h1>
+}
+#+end_src
+
+* 21.1 Create React App
+
+what is npx
+Use npx to run the create-react-app command.
+
+what is create react app script
+This command takes a folder name as an argument and will create the folder for you.
+
+The full command will look something like this:
+
+Create a React application
+npx create-react-app <folder-name>
+
+
+Running the React application
+npm start
+
+
+
+Standard files
+
+
+Create React App includes a few folders and several files:
+
+The files at the root level of this project typically include JavaScript
+configuration files like a package.json file and a README.md file. Make sure to
+update the README if this is a larger project!
+
+The public folder represents what is available to web browsers. This folder also
+contains the index.html file, which is the entry point to the application.
+During the build process, React inserts a script tag referencing the compiled
+code into the index.html file.
+
+The src folder is where most of your React components will be written. Only the
+files within this folder will be processed by React. This folder will commonly
+be used to also contain subdirectories for the files associated with each
+component, including images and CSS stylesheets.
+
+You won't need all of these files to get started with React. At the start of any
+Create React App project, you can usually delete the following files:
+
+public/logo192.png: Smaller PNG of the React logo
+public/logo512.png: Larger PNG of the React logo
+src/logo.svg: SVG version of the React logo
+src/App.test.js: For tests that you aren't using
+src/reportWebVitals.js: For tests that you aren't using
+src/setupTests.js: For tests that you aren't using
+
+
+How the files connect
+The index.html file
+The entry point to your application is index.html.
+
+Within the <head> element, you can always update the <title>, which will display
+at the browser title. This is the only real change you may need to make to this
+page in getting started.
+
+The <body> element will look similar to the code below:
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.  The build
+      step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.  To create a
+      production bundle, use `npm run build` or `yarn build`.
+  -->
+</body>
+
+For now, just take note that the <div> element in the <body> is given the ID
+#root. As described in that code sample's comment, the build step will
+place the JavaScript that you write into this HTML container.
+
+You don't need to make any additional changes to this HTML page, unless at some
+point you want to add HTML elements that are specific to this page and outside
+the React components that you plan to build.
+
+The index.js file
+The index.js file is your primary JavaScript file. The
+original demo code was the app with the spinning React logo that ran in your
+local server. For now, you'll be able to remove some of the original demo's
+unnecessary code to have a cleaner starting point for your own app.
+
+In the index.js file, both React and
+  ReactDOM are both imported. This use of import instead of require may be a
+  little different than what you are used to. Importing React will make sure
+  that your components are compiled properly, and ReactDOM will make sure that
+  the DOM-related methods to display the components into the browser are also
+  compiled properly.
+
+Then, the CSS stylesheet index.css will be imported. This stylesheet should
+contain any global CSS styles that can be used within the web page and aren't
+specific to any component. The App.js file will then be imported. This file will
+contain your primary component that will be displayed in the web page.
+
+React uses the render() function to display the component in the web page. The
+render() function takes two arguments: the React component to be rendered and
+the DOM container where it should be placed. The Create React App setup uses the
+root element as the DOM container, which is obtained with
+document.getElementById('root'). You can ignore the <React.StrictMode> tags for
+now because they enable more helpful warnings during development.
+
+Note that when you save this file you'll still see errors because you still need
+to update the App.js file.
+
+The App.js file
+The App.js file is for your app component. It's the main
+component in React, and it acts as a container for all other components. You'll
+override the App component with your own code.
+
+All of the code within the App component will be returned, exported, and then
+used within the index.js file as explained above.
+
+
+The first line in App.js will import the CSS stylesheet that
+should specifically be applied to the App component.
+
+Then within your App component, create a simple component that has a heading
+with the following text: "Hello World!".
+
+Notice that this code uses export default instead of module.exports to export
+the function. Although you don't need to use a named function, this can be
+useful for debugging purposes and for readability. These will be some of the
+little differences in the syntax when using React.
+
+When you save this file, you will have fixed all the code that linked to your
+recently deleted files. In the browser that is displaying your local server, you
+will see a simple web page with a large text heading that displays "Hello
+World!".
+
+Web page with a large text heading that displays "Hello World!"
+
+* 21.2
+* 21.3
+* 21.4
+* 21.5
+* 21.6
+* 21.7
+* 21.8
+* 21.9
+* 21.10
+* 21.11
+* module 22 react state management
+** 22.1
+** 22.2
+** 22.3
+** 22.4
+** 22.5
+** 22.6
+** 22.7
+** 22.8
+** 22.9

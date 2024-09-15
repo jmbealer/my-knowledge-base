@@ -1,0 +1,361 @@
+:PROPERTIES:
+:ID:       e2032316-5a2c-4f9f-b5be-5b31cc3933a4
+:mtime:    20230507115421
+:ctime:    20230507115351
+:END:
+#+title: wgu-degree_planning
+
+* general education requirements
+
+** English Composition I 3 - cs
+
+sophia *ENG1001 (SOPH-0015)
+
+** English Composition II 3 Cybersecurity
+
+sophia *ENG1002 (SOPH-0030) or ENG1020 (SOPH-0049)
+
+** Critical Thinking and Logic 3 - Software Development
+saylor academy *PHIL102 (SAYA-0045)
+
+** Technical Communication 3 - cs
+
+** Introduction to Communication 3 - cs
+sophia *COMM1002 (SOPH-0024), COMM1010 (SOPH-0034), or BUSI1025 (SOPH-0059)
+
+saylor academy *BUS210 (SAYA-0027)
+
+** Introduction to Humanities 3 - cs
+sophia *ArtHist1001 (SOPH-0006), ArtHist1002 (SOPH-0029), PHIL1001 (SOPH-0027), PHIL1002 (SOPH-0020), REL1001 (SOPH-0008), or VisComm1001 (SOPH-0009)
+
+saylor academy *ARTH101 (SAYA-0036), PHIL103 (SAYA-0011), POLSC201 (SAYA-0033), or BUS200 (SAYA-0047)
+
+** Composition: Writing with a Strategy 3 - Accelerated IT, Cloud
+sophia *ENG1001 (SOPH-0015)
+
+** Composition: Successful Self-Expression 3 - Accelerated IT
+sophia *ENG1002 (SOPH-0030) or ENG1020 (SOPH-0049)
+
+** Critical Thinking: Reason and Evidence 3 - Accelerated IT
+
+*PHIL102 (SAYA-0045)
+
+** Introduction to Systems Thinking 3 - Network Engineering
+
+** Introduction to Communication: Connecting with Others 	3 - Accelerated IT
+sophia *COMM1002 (SOPH-0024), COMM1010 (SOPH-0034), or BUSI1025 (SOPH-0059)
+saylor academy *BUS210 (SAYA-0027)
+
+** Global Arts and Humanities 3 - Accelerated IT, IT
+sophia *ArtHist1001 (SOPH-0006), ArtHist1002 (SOPH-0029), PHIL1001 (SOPH-0027), PHIL1002 (SOPH-0020), REL1001 (SOPH-0008), or VisComm1001 (SOPH-0009)
+saylor academy *ARTH101 (SAYA-0036), PHIL103 (SAYA-0011), POLSC201 (SAYA-0033), or BUS200 (SAYA-0047)
+
+** Ethics in Technology 3 - cs
+
+** American Politics and the US Constitution 3 - cs
+
+** Introduction to Physical and Human Geography 3 - Accelerated IT
+sophia *ECON1001 (SOPH-0012), ECON1002 (SOPH-0011), HIST1001 (SOPH-0022), HIST1002 (SOPH-0025), HIST1010 (SOPH-0042), PSYC1010 (SOPH-0048), or SOCI1010 (SOPH-0051)
+saylor academy *GEOG101 (SAYA-0044), POLSC101 (SAYA-0012), POLSC221 (SAYA-0029), PSYCH101 (SAYA-0007), SOC101 (SAYA-0008), ECON101 (SAYA-0005), or ECON102 (SAYA-0006)
+
+** Introduction to Geography 3 - cs
+sophia *ECON1001 (SOPH-0012), ECON1002 (SOPH-0011), HIST1001 (SOPH-0022), HIST1002 (SOPH-0025), HIST1010 (SOPH-0042), PSYC1010 (SOPH-0048), or SOCI1010 (SOPH-0051)
+
+saylor academy *GEOG101 (SAYA-0044), POLSC101 (SAYA-0012), POLSC221 (SAYA-0029), PSYCH101 (SAYA-0007), SOC101 (SAYA-0008), ECON101 (SAYA-0005), or ECON102 (SAYA-0006)
+
+** Applied Algebra 3 - Software Development
+
+sophia *CA1001 (SOPH-0001) or MATH1040 (SOPH-0060)
+saylor academy *MA005 (SAYA-0025)
+
+** Applied Probability and Statistics 	3 - cs
+sophia *STAT1001 (SOPH-0005)
+
+saylor academy *MA121 (SAYA-0032) or BUS204 (SAYA-0037)
+
+** Discrete Math: Logic 1 - Network Engineering
+
+** Discrete Math: Functions and Regluations 1 - Network Engineering
+
+** Discrete Math: Algorithms and Cryptography 1 - Network Engineering
+
+** Finite Mathematics 4 - Accelerated IT
+
+** Introduction to Biology 3 - Cloud
+
+** Integrated Physical Sciences 3 - cs
+sophia *ENVS1001 (SOPH-0016), HumBio1001 (SOPH-0002), or CHEM1001 (SOPH-0056)
+
+saylor academy *CHEM101 (SAYA-0028), PHYS101 (SAYA-0031), or PHYS102 (SAYA-0030)
+
+** Natural Science Lab 2 - cs
+
+** totals
+
+29 computer science
+33 software development
+33 cybersecurity
+39 accelerated it
+30 cloud
+30 network
+
+* core courses
+
+** Introduction to IT 	4 - cs, sd, ci, ait, cc, ne
+sophia *CS1001 (SOPH-0023)
+
+** Data Management - Foundations 	3 - cs, sd, ci, ait, cc, ne
+sophia *CS1011 (SOPH-0047)
+
+** Network and Security - Foundations 	3 - cs, sd, ci, ait, cc, ne
+saylor academy *CS402 (SAYA-0016)
+
+** Scripting and Programming - Foundations 	3 - cs, sd, ci, ait, cc, ne
+saylor academy *CS101 (SAYA-0046) or CS107 (SAYA-0017)
+
+** Web Development Foundations 	3 - cs, sd, ci, ait, cc, ne
+sophia *CS1005 (SOPH-0043)
+
+** Business of IT - Applications 	4 - cs, sd, ci, ait, cc, ne
+
+** Totals - cs
+20 cs, sd, ci, ait, cc, ne
+
+* additional courses
+
+** Calculus I 	4 - cs
+sophia *MATH1040 (SOPH-0060)
+saylor academy *MA005 (SAYA-0025)
+
+** Discrete Mathematics I 	4 - cs
+
+** Data Management - Applications 	4 - cs, sd, ci, ait, cc
+
+** Advanced Data Management 	3 - cs, sd
+
+** Web Development Applications 	6 	 - sd, ait
+
+** Data Systems Administration 3 - cc
+
+** Introduction to Python 3 - cc
+
+sophia *CS1100 (SOPH-0058)
+saylor academy *CS105 (SAYA-0048)
+
+** Linux Foundations 	3 - ait, cc
+
+** Cloud Foundations 	3 - ait, cc
+
+** Spreadsheets 	3 - ait
+
+** Organizational Behavior and Leadership 	3 - ait
+saylor academy *BUS209 (SAYA-0034)
+
+** Principles of Management 	4 - ait
+sophia *BUSI1013 (SOPH-0054)
+saylor academy *BUS208 (SAYA-0035)
+
+** Information Technology Management 	3 - ait
+
+** Current and Emerging Technology 	3 - ait
+
+** Technical Communication 	3 - ait
+
+** Project Management 	4 - ait
+
+** Scripting and Programming - Applications 	4 - cs, sd
+saylor academy *CS102 (SAYA-0015)
+
+** Data Structures and Algorithms 	4 - cs, sd
+
+** Fundamentals of Information Security 	3 - cs, ci
+
+** Operating Systems for Programmers 	3 - cs
+
+** Business of IT - Project Management 	4 - cs, sd, ci, cc
+sophia *PM1001 (SOPH-0013)
+saylor academy *BUS402 (SAYA-0039)
+
+** Cyber Defense and Countermeasures 	4 - ci
+
+** Digital Forensics in Cybersecurity 	4 - ci
+
+** Introduction to Cryptography 	4 - ci, cc
+
+** Managing Cloud Security 	4 - ci, cc
+
+** Legal Issues in Information Security 	4 - ci
+
+** Information Systems Security 	4 - ci
+
+** Emerging Technologies in Cybersecurity 	4 - ci
+
+** Managing Information Security 	6 - ci
+
+** Penetration Testing and Vulnerability Analysis 	4 - ci
+
+** Networks 	4 - ci
+
+** Network and Security - Applications  - ci
+
+** Mobile Application Developemnt 3 - sd
+
+** Organizational Behavior and Leadership 3 - sd
+
+** Computer Architecture 	3 - cs
+
+** Introduction to Artificial Intelligence 	3 - cs
+
+** IT Leadership Foundations 	3 - cs, cc
+sophia *BUSI1013 (SOPH-0054)
+saylor academy *BUS209 (SAYA-0034)
+
+** Version Control 	1 - ne
+
+** Network Analytics and Troubleshooting 	3 - ne
+
+** Telecomm and Wirless Communications 	3 - ne
+
+** Software Defined Networking 	3 - ne
+
+** Network Automation and Deployment 	3 - ne
+
+** Scripting and Automation 2 - cc
+
+** Cloud Platform Solutions 	3 	 - cc
+
+** Cloud Applications 	3 	 - cc
+
+** AWS Cloud Architecture 	3 	 - cc
+
+** Azure Fundamentals 	3 	 - cc
+
+** Azure Developer Associate 	3 	 - cc
+
+** Internet of Things (IoT) and Infrastructure 	3 - cc
+
+** Software Engineering 	4 - cs, sd
+saylor academy *BUS209 (SAYA-0034)
+
+** Software Quality Assurance 	3 - cs, sd
+
+** User Experience Design 	3 	 - sd
+
+** User Interface Design 	4 	 - sd
+
+** Software I 	6 - cs, sd
+
+** Software II 	6 - cs, sd
+
+** IT Foundations 	4 - sd, ci, ait
+
+** IT Applications 	4 - sd, ci, ait
+
+** Totals
+61 cs
+65 sd, ci
+59 ait
+67 cc
+57 ne
+
+* non-transferable courses
+
+** Discrete Mathematics II 	4 - cs
+
+** Data Structures and Algorithms II 	4 - cs
+
+** Computer Science Capstone 	4 - cs
+
+** Software Development Capstone 	4 - sd
+
+** IT Capstone Written Project 4 - ci, ait
+
+** Cloud Computing Capstone 4 - cc
+
+** BSNES Capstone Project 4 - ne
+
+** Totals
+12 cs
+4 sd, ci, ait, cc, ne
+
+
+Cybersecurity and Information Assurance
+IT Capstone 	4
+Totals 	4 				0
+
+
+Accelerated Information Technology Bachelor's and Master's Degree
+IT Capstone 	4
+Totals 	4 				0
+
+
+Cloud Computing
+IT Capstone 	4
+Totals 	4 			0
+
+
+Information Technology
+IT Capstone 	4
+Totals 	4 				0
+
+
+
+* total transfer credit
+General Education Requirements 	29 				26
+Core Courses 	20 				20
+Additional Courses 	61 				42
+Non-Transferable Courses 	12 				0
+Total 	122 				88
+
+
+Software Development
+General Education Requirements 	33 				30
+Core Courses 	20 				16
+Additional Courses 	65 				22
+Non-Transferable Courses 	4 				0
+Total 	122 				68
+
+Cybersecurity and Information Assurance
+General Education Requirements 	33 				30
+Core Courses 	20 				16
+Additional Courses 	65 				19
+Non-Transferable Courses 	4 				0
+
+
+Accelerated Information Technology Bachelor's and Master's Degree
+General Education Requirements 	39 				32
+Core Courses 	20 				20
+Additional Courses 	59 				25
+Non-Transferable Courses 	4 				0
+Total 	122 				77
+
+
+Cloud Computing
+General Education Requirements 	30 			27
+Core Courses 	20 			16
+Additional Courses 	67 			32
+Non-Transferable Courses 	4 			0
+Total 	121 			75
+
+Information technology
+general education Requirements 	42 				35
+Core Courses 	20 				20
+Additional Courses 	55 				33
+Non-Transferable Courses 	4 				0
+Total 	121 				89
+
+* others
+
+Computer Science - B.S.
+Software Development
+
+Cybersecurity and Information Assurance
+Cloud Computing
+Network Engineering and Security
+Data Management/Data Analytics
+Information Technology
+Accelerated Information Technology Bachelor's and Master's Degree
+
+Cybersecurity & Information Assurance
+Information Technology
+Data Analytics

@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       6057d229-d2f5-4785-ac38-bcf923d627bc
+:mtime:    20230615173825
+:ctime:    20230615173823
+:END:
+#+title: aleks
+
+whole numbers
+
+addition table
+associative property (of addition and of multiplication)
+decimal place
+denominator, numerator
+difference
+digit
+distributive property
+divide
+dividend, divisor
+divisibility rules
+divisible
+division
+divisors
+evaluate
+even
+even number
+expanded form
+exponent
+fact family
+factor
+greatest common factor (gcf)
+indeterminant
+inequality
+least common multiple (lcm)
+multiple
+multiplication
+multiplication table
+number line
+number of decimal places
+operation (of arithmetic)
+order of operations
+place value
+powers of ten
+prime factor
+prime factorization
+prime number
+product
+quotient
+remainder
+rounding
+simplest form (of a fraction)
+solve, solution
+subtraction
+sum
+variable
+whole number
+
+
+
+decimals
+
+geometry
+
+data analysis and statistics
+
+algebraic expressions and equations
+
+fractions
+
+ratios, proportions, and percents
+
+measurement
+
+real numbers

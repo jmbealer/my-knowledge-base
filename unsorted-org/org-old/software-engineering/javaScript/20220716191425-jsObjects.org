@@ -1,0 +1,556 @@
+:PROPERTIES:
+:ID:       75a7ea1f-4030-407b-920a-4b8b11369b93
+:mtime:    20230206181433 20220717214659
+:ctime:    20220716191425
+:END:
+#+title: jsObjects
+#+date: [2022-07-16 Sat 19:14]
+
+JavaScript objects is an unordered collection of properties.
+JavaScript object is a built-in data type for storing key-value pairs.
+
+JavaScript properties are key-value pairs of an object.
+
+Common practice to declare objects with the const keyword.
+
+A JavaScript object literal is enclosed with curly braces {}.
+Values are mapped to keys in the object with a colon (:), and the key-value pairs are separated by commas.
+All the keys are unique, but values are not.
+
+js Objects syntax:
+object = {key: value};
+object.key;
+object["key"];
+
+** object destructuring
+
+JavaScript object destructuring extract property values from objects and assign to local variable.
+JavaScript object destructuring commonly used to aid readability.
+
+Destructuring The process of unpacking the properties or values in an array or other object and assigning them into distinct variables
+When you destructure an object or array, you're unpacking the properties or values and assigning them into distinct variables.
+
+When destructuring objects; Missing keys returns undefined
+
+** object shorthand and spread thinkful
+
+Object shorthand JavaScript syntax that supports the creation of objects using values stored in variables, where the variable name becomes the key and the stored value becomes the value in the key-value pair
+Spread operator An operator that expands entries in arrays and other objects
+
+Object shorthand
+Newer versions of JavaScript have made it even easier for you to streamline your code by allowing you to create object shorthands.
+Object shorthand syntax means that you can create objects using values that you've stored in variables.
+
+Take a look:
+const title = "Infernal Devices";
+const author = "K.W. Jeter";
+const book = { title, author };
+
+Notice that in the above code, there is no colon : symbol to distinguish a key from a value. So, what are the keys and values of this object?
+
+console.log(book); //> { title: "Infernal Devices", author: "K.W. Jeter" }
+
+Here, JavaScript takes the name of the variable and sets that to be the key. It then sets the value to be whatever is stored in that variable. This works with more complicated data types, as well.
+
+const product = { book, priceInCents: 1950 };
+
+With this shorthand tool, you can write cleaner code. The above code would result in the following:
+
+{
+  book: {
+    title: "Infernal Devices",
+    author: "K.W. Jeter",
+  },
+  priceInCents: 1950,
+};
+
+The spread operator
+The spread operator allows you to easily combine arrays and objects without a lot of complicated code.
+For example, with what you know now, how would you go about combining the following two arrays?
+
+const ownedBooks = ["Infernal Devices", "Foundation"];
+const wishlist = ["Good Omens", "Guards! Guards!"];
+
+At first glance, you'd probably see that you could loop through one array and push each item into the other, or you could use the concat() method, which you can learn more about in MDN's array documentation.
+And yet, it can be even easier than that.
+
+Review the code below. What do you notice?
+
+const allBooks = [...ownedBooks, ...wishlist];
+//> [ "Infernal Devices", "Foundation", "Good Omens", "Guards! Guards!" ]
+
+Do you see the three periods ...?
+When ... is used with an existing array on the right side of the = sign, it will expand the entries inside of that array.
+In the above case, both arrays are expanded into a new array, so that all of the array elements appear next to one another.
+
+This can also be accomplished with objects, as follows:
+
+const salesTax = { state: "Washington", tax: 0.065 };
+const sale = { ...product, ...salesTax };
+/*
+  {
+    book: {
+      title: "Infernal Devices",
+      author: "K.W. Jeter",
+    },
+    priceInCents: 1950,
+    state: "Washington",
+    tax: 0.065
+  };
+*/
+
+In the example above, the product object contains the book key and the priceInCents key.
+The salesTax object contains the state and tax keys.
+Those keys are all placed into a new object in the variable sale.
+Note how the book object wasn't expanded; the spread operator expands only one level deep.
+
+You also can overwrite keys in an object where you're using shorthand. You can do this by simply using the key once again. Take a look:
+
+const sale = {
+  ...product,
+  ...salesTax,
+  priceInCents: product.priceInCents * (1 + salesTax.tax),
+};
+
+/*
+  {
+    book: {
+      title: "Infernal Devices",
+      author: "K.W. Jeter",
+    },
+    priceInCents: 2076.75,
+    state: "Washington",
+    tax: 0.065
+  };
+*/
+
+In the above example, the product and salesTax values are expanded with the spread operator, just like before. But this time, the priceInCents key is added to overwrite the priceInCents key that was stored in the product variable.
+
+
+Property value shorthand (for Objects)
+A convenient shorthand method for creating an object if your local variable name matches the new object's key
+
+// Function that returns a new 'cat' object:
+function createCat(name) {
+  const color = getRandomColor();
+
+  return {
+    eyes: 2,
+    legs: 4,
+    name,     // same as name: name
+    color,    // same as color: color
+  };
+}
+
+const myCat = createCat('tabby');
+
+example:
+{
+  eyes: 2,
+  legs: 4,
+  name: 'tabby',
+  color: 'blue'
+}
+
+
+Spread operator (...) with objects
+    Helps us manage merging objects
+    Creates a new object
+    Be aware of the order in which merging is done
+
+const littleYacht = {
+    "Dock Name": "oceania",
+    floorColor: "red",
+    christened: false,
+    hornSound: "Ride of the Walkeries",
+    playHorn() {
+        console.log(littleYacht.hornSound);
+    }
+};
+
+const littleYacht2 = {
+    roofColor: "green",  // new key, will be added
+    christened: true     // duplicate key, will be overwritten
+};
+
+const newYacht = { ...littleYacht, ...littleYacht2 };
+
+The this keyword
+    (Generally) used in methods to refer to properties of an object
+    Don't need to know the variable name of the object itself
+
+const littleYacht = {
+    hornSound: "Ride of the Walkeries",
+    playHorn: function() {
+      // Equivalent to littleYacht.hornSound
+      console.log(this.hornSound);
+    }
+};
+
+littleYacht.playHorn(); // Ride of the Walkeries
+
+
+What does this refer to?
+    this is assigned a value at the moment the method is invoked, and not when it is defined
+    this is assigned to the object to the left of the dot when the function was called
+
+const littleYacht = {
+  hornSound: "Ride of the Walkeries",
+  playHorn: function() {
+    console.log(this.hornSound);
+  }
+};
+
+littleYacht.playHorn(); // Ride of the Walkeries
+
+const biggerYacht = {
+  hornSound: "Fog Horn",
+  playHorn: littleYacht.playHorn
+};
+
+biggerYacht.playHorn(); // Fog Horn
+** objects methods
+
+Object Methods
+
+Objects can also have methods.
+
+Methods are actions that can be performed on objects.
+
+Methods are stored in properties as function definitions.
+Property 	Property Value
+firstName 	John
+lastName 	Doe
+age 	50
+eyeColor 	blue
+fullName 	function() {return this.firstName + " " + this.lastName;}
+
+A method is a function stored as a property.
+Example
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+In the example above, this refers to the person object.
+
+I.E. this.firstName means the firstName property of this.
+
+I.E. this.firstName means the firstName property of person.
+
+What is this?
+
+In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+Note
+this is not a variable. It is a keyword. You cannot change the value of this.
+See Also:
+
+The this Keyword
+
+In a function definition, this refers to the "owner" of the function.
+
+In the example above, this is the person object that "owns" the fullName function.
+
+In other words, this.firstName means the firstName property of this object.
+
+Learn more about this in The JavaScript this Tutorial.
+Accessing Object Methods
+
+You access an object method with the following syntax:
+objectName.methodName()
+Example
+name = person.fullName();
+
+If you access a method without the () parentheses, it will return the function definition:
+Example
+name = person.fullName;
+Do Not Declare Strings, Numbers, and Booleans as Objects!
+
+When a JavaScript variable is declared with the keyword "new", the variable is created as an object:
+x = new String();        // Declares x as a String object
+y = new Number();        // Declares y as a Number object
+z = new Boolean();       // Declares z as a Boolean object
+
+Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
+You will learn more about objects later in this tutorial.
+Test Yourself With Exercises
+Exercise:
+
+Alert "John" by extracting information from the person object.
+
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+alert();
+
+
+Start the Exercise
+
+Prevent Object Mutation
+
+As seen in the previous challenge, const declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides a function Object.freeze to prevent data mutation.
+
+Any attempt at changing the object will be rejected, with an error thrown if the script is running in strict mode.
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj);
+
+The obj.review and obj.newProp assignments will result in errors, because our editor runs in strict mode by default, and the console will display the value { name: "FreeCodeCamp", review: "Awesome" }.
+
+In this challenge you are going to use Object.freeze to prevent mathematical constants from changing. You need to freeze the MATH_CONSTANTS object so that no one is able to alter the value of PI, add, or delete properties.
+methods are properties of objects which are functions
+const car = {
+  make: "Toyota",
+  model: "Corolla",
+  // this is a method
+  drive() {
+    console.log("The car is driving!");
+  },
+  // it's shorthand for this
+  useHorn: function() {
+    console.log("Beep");
+  }
+}
+
+car.drive(); // Logs out "The car is driving!"
+car.useHorn(); // Logs out "Beep"
+** accessing objects
+Accessing Object Properties with Dot Notation
+There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
+Dot notation is what you use when you know the name of the property you're trying to access ahead of time.
+
+
+Accessing Object Properties with Bracket Notation
+The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
+However, you can still use bracket notation on object properties without spaces.
+
+
+Note that property names with spaces in them must be in quotes (single or double).
+Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.
+
+Accessing Object Properties with Variables
+Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
+
+
+Another way you can use this concept is when the property's name is collected dynamically during the program execution, as follows:
+const someObj = {
+  propName: "John"
+};
+function propPrefix(str) {
+  const s = "prop";
+  return s + str;
+}
+const someProp = propPrefix("Name");
+console.log(someObj[someProp]);
+someProp would have a value of the string propName, and the string John would be displayed in the console.
+Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name.
+Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
+
+
+Using Objects for Lookups
+Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch statement or an if/else chain. This is most useful when you know that your input data is limited to a certain range.
+Here is an example of a simple reverse alphabet lookup:
+const alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+  4:"W",
+  ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+alpha[2];
+alpha[24];
+const value = 2;
+alpha[value];
+alpha[2] is the string Y, alpha[24] is the string C, and alpha[value] is the string Y.
+Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+
+Manipulating Complex Objects
+Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects.
+Here's an example of a complex data structure:
+const ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [
+      "CD",
+      "Cassette",
+      "LP"
+    ],
+    "gold": true
+  }
+];
+This is an array which contains one object inside. The object has various pieces of metadata about an album. It also has a nested formats array. If you want to add more album records, you can do this by adding records to the top level array. Objects hold data in a property, which has a key-value format. In the example above, "artist": "Daft Punk" is a property that has a key of artist and a value of Daft Punk.
+Note: You will need to place a comma after every object in the array, unless it is the last object in the array.
+Add a new album to the myMusic array. Add artist and title strings, release_year number, and a formats array of strings.
+
+** objects examples
+#+begin_src js
+// create an empty object
+const object = {}; // empty object
+// create an object
+const object = {key: value};
+// create an object with multiple keys
+const object = {key1: value1, key2: value2};
+// create an object with multiple keys that span multiple lines.
+const object = {
+    key1: value1,
+    key2: value2
+};
+// create an object with nested values foo and bar
+const object = {key: ["foo", "bar"]};
+// access object property with dot notation
+object.key; // return value
+// add a new property to an object with dot notation
+object.newKey = "newValue"; // adds newKey with newValue to object.
+// update key to a new value with dot
+object.key = "newValue"; // change key to newValue in object
+// access object property with bracket notation
+object[key]; // return value
+object["key"]; // return value
+// access object property when key has spaces
+object["key two"]; // return value
+// add a new property to an object with bracket notation
+object["newKey"] = "newValue"; // adds newKey with newValue to object.
+// update key to a new value with brackets
+object["oldKey"] = "newValue"; // change key to newValue in object
+// delete key from object with dot
+delete object.key
+// delete key for object with bracket
+delete object[key]
+// access object property with variable
+let var = "oldKey";
+let var = "newValue";
+object[var]; // return oldValue
+// add new property using varable
+const newKey = object[var]; // return newValue
+// create nested object with two keys
+const object = {
+    // has one nested key
+    key1: {
+        nestedKey1: "nestedValue"
+    },
+    // has two nested keys
+    key2: {
+        // has two nested keys
+        nestedKey2: {
+            n2Key1: "n2Value1"
+            n2Key2: "n2Value2"
+        },
+        nestedKey3: "nestedValue3"
+    }
+};
+// access key1 nestedKey1
+object.key1.nestedKey1; // dot notation
+object[key1][nestedKey1]; // bracket notation
+// access key2 nestedKey2 n2Key2
+object.key2.nesteKey2.n2Key2; // dot notation
+object[key2][nestedKey2][n2Key2];
+// access key2 nestedKey3 // bracket notation
+object.key2.nestedKey3; // dot notation
+object[key2][nestedKey3]; // bracket notation
+
+// object destructuring
+// Destructure values from object
+const { key1, key2 } = object;
+// Use destructure values from object into constant var
+const var = object.key2
+// Destructure a value not from object
+const { notThere } = object // set to undefined
+const object = {
+  key1: "value1",
+  key2: {
+    nKey1: "nValue1",
+    nKey2: "nValue2",
+  },
+};
+// multiple level destructure
+const {
+  key1,
+  key2: {nKey1, nKey2}
+} = object;
+console.log(key1, nKey1, nKey2)
+console.log(key2) // returns an error
+// Destructuring parameters
+const funcName = ({key1, key2}) => {
+  ...
+}
+// create object with func key
+const object = {
+  func() {
+    ...
+  }
+}
+// the in operator check existence of a key in an object:
+"key" in object
+console.log("key" in object)
+#+end_src
+
+#+RESULTS:
+
+** Deep destructuring
+Examine the code sample below. What do you expect will happen? Make a prediction, and then run the code for yourself.
+
+const author = {
+  name: {
+    firstName: "Philip",
+    surname: "Pullman",
+  },
+  birthday: "1946-10-19",
+};
+
+const {
+  name: { firstName },
+} = author;
+console.log(firstName);
+console.log(name);
+
+In this case, firstName will be printed out as "Philip". But trying to print name will cause a ReferenceError.
+
+When you use the syntax above to do deep destructuring, you're able to dive into and unpack multiple levels of an object.
+However, you won't have access to every value along the way.
+Furthermore, deep destructuring can cause some issues if the key is missing.
+
+For example, take a look at the code below.
+
+const author = {
+  birthday: "1946-10-19",
+};
+
+const {
+  name: { firstName },
+} = author;
+
+If you run this code, you will receive the following error:
+
+Uncaught TypeError: Cannot read property 'firstName' of undefined
+
+If you use deep destructuring, you'll need to make sure that the inputted object or array is of the right shape. This will help prevent errors like this one.
+
+Deep destructuring The process of destructuring multiple levels of an array or other object

@@ -1,0 +1,499 @@
+:PROPERTIES:
+:ID:       31f5df5e-341a-4a82-851b-bf3166d97066
+:mtime:    20230729191855 20230206181340 20220816154011
+:ctime:    20220814212348
+:END:
+#+title: Vim
+#+date: [2022-08-14 Sun 21:23]
+
+
+
+'stent'
+
+
+`testa`
+
+"stnt"
+<tstost>
+{}
+{tesnat}
+stean []
+tsetn <>
+nsetan {}
+tsent (enstaan)
+""
+``
+
+Testib tesnt netstn 
+
+** Vim Motions Anki
+:PROPERTIES:
+:ANKI_DECK: 00-software engineering::Vim
+:ANKI_TAGS: Vim
+:END:
+*** Move Cursor Left
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660532520840
+:END:
+**** Text
+Action: {{c2::move cursor left}}
+
+Key: {{c1::s}}
+
+**** Extra
+Default is h
+
+*** Move Cursor Down
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660532812441
+:END:
+**** Text
+Action: {{c2::move cursor down}}
+
+Key: {{c1::t}}
+
+**** Extra
+Default is j
+
+*** Move Cursor Up
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660532812515
+:END:
+**** Text
+Action: {{c2::move cursor up}}
+
+Key: {{c1::n}}
+
+**** Extra
+Default is k
+
+*** Move Cursor Right
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660532812590
+:END:
+**** Text
+Action: {{c2::move cursor right}}
+
+Key: {{c1::b}}
+
+**** Extra
+Default is l
+
+*** Move to the first character of the line
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660533723892
+:END:
+**** Text
+Action: {{c2::move to the first character of the line}}
+
+Key: {{c1::0}}
+
+*** Move to the first non-blank character of the line
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660533723967
+:END:
+**** Text
+Action: {{c2::move to the first non-blank character of the line}}
+
+Key: {{c1::^}}
+
+*** Move to the end of the line
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660533724042
+:END:
+**** Text
+Action: {{c2::move to the end of the line}}
+
+Key: {{c1::$}}
+
+*** Move forward to the given char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660534622543
+:END:
+**** Text
+Action: {{c2::move forward to the given char}}
+
+Key: {{c1::f{char}}}
+
+*** Move backward to the given char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660534622766
+:END:
+**** Text
+Action: {{c2::move backward to the given char}}
+
+Key: {{c1::F{char}}}
+
+*** Move forward to before the given char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660534622842
+:END:
+**** Text
+Action: {{c2::move forward to before the given char}}
+
+Key: {{c1::l{char}}}
+
+**** Extra
+Default was t
+
+*** Move backward to before the given char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660534622916
+:END:
+**** Text
+Action: {{c2::move backward to before the given char}}
+
+Key: {{c1::L{char}}}
+
+**** Extra
+Default was T
+
+*** Repeat f/t
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660535475767
+:END:
+**** Text
+Action: {{c2::repeat f, t, F, T}}
+
+Key: {{c1::;}}
+
+*** Repeat f/t opposite direction
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660535475841
+:END:
+**** Text
+Action: {{c2::repeat f, t, F, T opposite direction}}
+
+Key: {{c1::,}}
+
+** Vim Text objects
+:PROPERTIES:
+:ANKI_DECK: 00-software engineering::Vim
+:ANKI_TAGS: Vim
+:END:
+*** Around word
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682081744
+:END:
+**** Text
+Action: {{c2::around word}}
+
+Key: {{c1::aw}}
+
+**** Extra
+Leading or trailing white space is included, but not counted.
+
+*** Inner word
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682081819
+:END:
+**** Text
+Action: {{c2::inner word}}
+
+Key: {{c1::iw}}
+
+**** Extra
+white space between words is counted too.
+
+*** Around WORD
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682081894
+:END:
+**** Text
+Action: {{c2::around WORD}}
+
+Key: {{c1::aW}}
+
+**** Extra
+Leading or trailing white space is included, but not counted.
+
+*** Inner WORD
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682081969
+:END:
+**** Text
+Action: {{c2::inner WORD}}
+
+Key: {{c1::iW}}
+
+**** Extra
+white space between words is counted too.
+*** Around sentence
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082019
+:END:
+**** Text
+Action: {{c2::around sentence}}
+
+Key: {{c1::as}}
+
+*** Inner sentence
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082068
+:END:
+**** Text
+Action: {{c2::inner sentence}}
+
+Key: {{c1::is}}
+
+*** Around paragraph
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082120
+:END:
+**** Text
+Action: {{c2::around paragraph}}
+
+Key: {{c1::ap}}
+
+*** Inner paragraph
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082169
+:END:
+**** Text
+Action: {{c2::inner paragraph}}
+
+Key: {{c1::ip}}
+
+*** Around () block with char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082218
+:END:
+**** Text
+Action: {{c2::around () block with char}}
+
+Key: {{c1::ab}}
+
+*** Inner () block with char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082269
+:END:
+**** Text
+Action: {{c2::inner () block with char}}
+
+Key: {{c1::ib}}
+
+*** Around [], {}, <> block with char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082319
+:END:
+**** Text
+Action: {{c2::around [], {}, <> block with char}}
+
+Key: {{c1::aB}}
+
+*** Inner [], {}, <> block with char
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082368
+:END:
+**** Text
+Action: {{c2::inner [], {}, <> block with char}}
+
+Key: {{c1::iB}}
+
+*** Around quotes
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082418
+:END:
+**** Text
+Action: {{c2::around quotes}}
+
+Key: {{c1::aq}}
+
+*** Inner quotes
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082469
+:END:
+**** Text
+Action: {{c2::inner quotes}}
+
+Key: {{c1::iq}}
+
+*** Around tag block
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082519
+:END:
+**** Text
+Action: {{c2::around tag block}}
+
+Key: {{c1::at}}
+
+*** Inner tag block
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660682082568
+:END:
+**** Text
+Action: {{c2::inner tag block}}
+
+Key: {{c1::it}}
+
+** Left-Right Motions
+
+g_ to the last non-blank character of the line and [count - 1] lines downward
+        inclusive.
+g0 or g`<Home>`
+      - to the first character of the screen line. exclusive motion.
+      - when lines wrap ('wrap' on)
+g^ to the first non-blank character of the screen line. exclusive motion.
+      - when lines wrap ('wrap' on)
+gm
+      - like "", but half a screenwidth to the right (or as much as possible).
+g$ or g`<End>`
+to the last character of the screen line and [count - 1] screen lines
+          downward inclusive.
+      - when lines wrap ('wrap' on)
+      - |
+        - to screen column [count] in the current line. exclusive motion.
+
+** Up-Down Motions
+
+gk or g`<Up>`
+gj or g`<Down>`
+ - (`<minus>`)
+ + or CTRL-M or `<CR>`
+ _ (`<underscore`)
+ G
+ `<C-End>`
+ `<C-Home>` or gg
+ :[range]
+ {count}%
+ :[range]go[to] [count] [count go] - :go :goto go
+
+** unsorted
+
+
+folding
+:previous, :next, :first, :last
+
+
+floatterm
+text-objects
+ciw
+
+Working with files
+
+Opening files
+.. vim {filename}
+.. :e {filename}
+.. current buffer
+.. :read or :r
+... :r file.txt insert the file file.txt below the cursor in current buffer
+... :0r file.txt
+... :r!sed -n 2,8p file.txt
+... :r !ls
+ID: 1618043085078
+
+
+Closing files
+Saving files
+gf - goto file
+gx - goto link browser
+undo u :u
+redo ctrl-r :redo
+:earlier :ea
+:later :lat
+g- and g+
+a buffer is the in-memory text of a file.
+a window is a viewport on a buffer.
+a tab page is a collection of windows.
+:ls to list buffer
+command that change text [operator] (operator) and a [motion] [navigation]
+d2w
+U fix a whole line.
+format for a change command is operator [number] motion
+  * operator - is what to do, such a [d] (d) for delete
+  * [number] - is an optional count to repeat the motion
+  * motion - moves over the text to opertate on
+/ search forward
+? search backward
+n next N previous
+C-o C-i
+% to find a matching ),], or }.
+substitute command :s/old/new/
+  * adding the g [flag] (:s_flags) means to substitute globally in the line,
+  change all occurrences of "old" in the line.
+  * to change every occurrence of a character string between two lines, type
+    * :#,#s/old/new/g
+      * where #,# are the line numbers of the range of lines where the
+      substitution is to be done.
+  * to change every occurrence in the whole file.
+    * :%s/old/new/g
+  * to find every occurrence in the whole file, with a prompt whether to
+    substitute or not.
+    * :%s/old/new/gc
+To substitute new for the first old in a line type
+        :s/old/new
+    To substitute new for all 'old's on a line type
+        :s/old/new/g
+    To substitute phrases between two line #'s type
+        :#,#s/old/new/g
+    To substitute all occurrences in the file type
+        :%s/old/new/g
+    To ask for confirmation each time add 'c'
+:! external command
+
+:help insert-index
+:help starting.txt
+:help user-manual
+:help mapping
+:help :verbose
+:help :noremap
+
+Spell Check
+z=
+zg
+zw
+zug
+zuw
+
+print ()
+
+.Table Title
+|===
+|Recursive |Non-recursive |Unmap |Modes
+|:map|:noremap|:unmap|normal, visual, operator-pending
+|:nmap|:nnoremap|:nunmap|normal
+|:xmap|:xnonremap|:xunmap|visual
+|:imap|:inoremap|:iunmap|insert
+|:cmap|:cnoremap|:cunmap|command-line
+|:omap|:onoremap|:ounmap|operator-pending
+|===
+
+vifm
+https://vifm.info/cheatsheets.shtml
+
+I’ve created the following list of features that I expect out of a modern editor. Standard editor features (like syntax highlighting) aren’t included.
+
+    Fuzzy File Finding — If you know the file name in the project, you should be able to open it quickly (such as — two keystrokes + minimum number of characters to unique filename).
+    File Switching — You should be able to see open files, and quickly switch between open files, both with fuzzy finding and manual browsing.
+    Linting — Code linting should be automatic and fast, and you should be able to use a code fixer.
+    Project Searching — You should be able to search for an arbitrary string, search for a symbol, find definitions, and find usages of a symbol.
+    Code Intellisense — Having your IDE provide relevant, seamless suggestions and auto-completions can be a huge boost to productivity. In my opinion, the “white whale” for most Vim users.

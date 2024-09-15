@@ -1,0 +1,1696 @@
+Number: 000-000
+Passing Score: 800
+Time Limit: 120 min
+File Version: 1.0
+010-150
+Exam 010-150
+Linux Essentials Certificate Exam,
+Title
+version 1.5
+Updated Version: 6.0
+Product
+80 Q & A
+Type
+
+* lpi linux essentials 010-150
+:PROPERTIES:
+:ANKI_DECK: lpi-linux-essentials-010-150-questions-bank
+:ANKI_TAGS: lpi linux essentials 010-150
+:END:
+** Question 1
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670046189334
+:END:
+*** Question
+Which statements are correct regarding distributions? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Programs can be installed manually and without a packet manager.
+*** Q_2
+Only commercial distributions offer regular security updates.
+*** Q_3
+To start a new distribution a Linux International license is needed.
+*** Q_4
+Distributions restrict the user to its supported program packages.
+*** Q_5
+Program packages of one distribution can be adapted for another.
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 2
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670046892082
+:END:
+*** Question
+Which of the following is a requirement of the GPL license but not the BSD license?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Users who modify and distribute the software under the GPL license, must make the modifications they made, available to the recipients under the same license.
+*** Q_2
+The GPL license forbids the removal of copyright and license notices from source code files that are distributed.
+*** Q_3
+The GPL license contains a disclaimer of warranty requiring users not to hold the software authors liable for any damages.
+*** Q_4
+The GPL license requires that any legal disputes be settled with the mediation of the Free Software Foundation.
+*** Q_5
+*** Answers
+1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 3
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670103752630
+:END:
+*** Question
+Which of the following applications are popular Open Source relational database systems? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+PostgreSQL
+*** Q_2
+NoSQL
+*** Q_3
+MySQL
+*** Q_4
+DB/2
+*** Q_5
+MongoDB
+*** Answers
+1 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: AC
+** Question 4
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670103752880
+:END:
+*** Question
+When using a web browser, what should a user do to prevent private data from being stored locally?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Browsers can be configured to use a private mode that does not store any data locally.
+*** Q_2
+Set up a second profile and use only that one to access sensitive sites.
+*** Q_3
+Delete the profile directory in the home directory and create a new one after the work is done.
+*** Q_4
+Use the secure versions of the browser available.
+*** Q_5
+There is no way to achieve that because Linux always logs network data.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 5
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670103753130
+:END:
+*** Question
+Which of the following programs is not a graphical web browser?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Konqueror
+*** Q_2
+Firefox
+*** Q_3
+Links
+*** Q_4
+Opera
+*** Q_5
+Chrome
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 6
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670105965077
+:END:
+*** Question
+What does LAMP mean?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The Linux Advanced Mode Programming Interface which gives advanced capabilities to application developers.
+*** Q_2
+The bus ID of an attached USB device that emits light.
+*** Q_3
+Short for Lightweight Access Management Protocol which synchronizes permissions in a network.
+*** Q_4
+The combination of Linux, Apache, MySQL and PHP or other programming languages.
+*** Q_5
+Short for lamport-clock which is important in distributed network computing.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 7
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670105965304
+:END:
+*** Question
+Which of the following software packages is a mail server?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Postfix
+*** Q_2
+Thunderbird
+*** Q_3
+Apache
+*** Q_4
+GIMP
+*** Q_5
+MySQL
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 8
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670105965429
+:ANKI_FAILURE_REASON: Note was not found: 1670105965429
+:END:
+*** Question
+Which of the following answers are true for cloud computing? (Choose TWO correct
+answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Cloud Computing provides new tools to manage IT resources.
+*** Q_2
+From the business perspective, Cloud Computing means outsourcing or centralization of IT operations.
+*** Q_3
+Cloud Computing is the opposite of green IT; i.e. the use of fossil, non-regenerative energy for computing.
+*** Q_4
+Cloud Computing implies sharing all information with everyone else in 'the cloud'.
+*** Q_5
+*** Answers
+1 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: AB
+** Question 9
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106244105
+:END:
+*** Question
+Which of the following possibilities is only available when using open source software?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Download of all its existing versions.
+*** Q_2
+Free use.
+*** Q_3
+Access to its detailed help manual.
+*** Q_4
+Access to its source code.
+*** Q_5
+*** Answers
+0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 10
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106244329
+:END:
+*** Question
+Which statements are true about virtualization? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Virtualization is not supported by Linux because of its permissions and multi-user requirements.
+*** Q_2
+Virtualization lets you run several operating systems on the same hardware in parallel.
+*** Q_3
+Virtualization is a proprietary technology that has additional licence costs even for Linux.
+*** Q_4
+Virtualization is a pure desktop technology that should not be used on servers.
+*** Q_5
+Virtualization allows separation of services, tasks and users in distinct virtual machines.
+*** Answers
+0 1 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: BE
+** Question 11
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106664301
+:END:
+*** Question
+Which of the following is a Linux based operating system for use on mobile devices?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+iOS
+*** Q_2
+CentOS
+*** Q_3
+Android
+*** Q_4
+Debian
+*** Q_5
+*** Answers
+0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 12
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106664604
+:END:
+*** Question
+Which of the following statements is true for a Linux distribution used in an enterprise environment?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+These distributions contain proprietary business-related software.
+*** Q_2
+These distributions contain software versions that have proven to be stable even if it is not the recent version in order to minimize problems.
+*** Q_3
+These distributions always contains the newest versions of all packages to minimize the time to market of new features.
+*** Q_4
+These distributions are only affordable by large companies.
+*** Q_5
+*** Answers
+0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 13
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106664826
+:END:
+*** Question
+Which one of the following is true about Open Source software?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Open Source software cannot be copied for free.
+*** Q_2
+Open Source software is available for commercial use.
+*** Q_3
+The freedom to redistribute copies must include binary or executable forms of the software but not the source code.
+*** Q_4
+Open Source software is not for sale.
+*** Q_5
+*** Answers
+0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 14
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106665129
+:END:
+*** Question
+Which of the following services are used for network file systems? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Rumba
+*** Q_2
+Python
+*** Q_3
+Samba
+*** Q_4
+OpenLDAP
+*** Q_5
+NFS
+*** Answers
+0 0 1 0 1
+*** Sources
+*** Extra 1
+Correct Answer: CE
+** Question 15
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670106665352
+:END:
+*** Question
+Which of the following is a valid option for a typical command to get its built-in usage information?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+-?
+*** Q_2
+-H
+*** Q_3
+help
+*** Q_4
+--manual
+*** Q_5
+--help
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 16
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670108044979
+:END:
+*** Question
+Which of the following commands will output a list of all of the file names, under your home directory and all subdirectories, which have file names ending with .pdf?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+search .pdf
+*** Q_2
+ls -name -R '*.pdf'
+*** Q_3
+find /home/*.pdf
+*** Q_4
+find ~ -name '*.pdf'
+*** Q_5
+*** Answers
+0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 17
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670108045255
+:END:
+*** Question
+Which of the following is an example of globbing?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+ls /etc/ 2> files.txt
+*** Q_2
+ls /etc/ > files.txt
+*** Q_3
+ls /etc/*.txt
+*** Q_4
+ls /etc/ | more
+*** Q_5
+*** Answers
+0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 18
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670108045555
+:ANKI_FAILURE_REASON: Note was not found: 1670108045555
+:END:
+*** Question
+Which of the following commands increases the number of elements in a directory?
+(Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+touch newfile
+*** Q_2
+create newfile
+*** Q_3
+ls newfile
+*** Q_4
+rmdir newdirectory
+*** Q_5
+mkdir newdirectory
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 19
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670108045829
+:END:
+*** Question
+Which command is used to make a shell variable known to subsequently executed programs?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+export
+*** Q_2
+announce
+*** Q_3
+env
+*** Q_4
+transfer
+*** Q_5
+mv
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** wip
+*** Question
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+*** Q_2
+*** Q_3
+*** Q_4
+*** Q_5
+*** Answers
+1 0 0 0
+*** Sources
+*** Extra 1
+** Question 20
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670108046030
+:END:
+*** Question
+Which command shows if /usr/bin is in the current shell search path?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cat PATH
+*** Q_2
+echo $PATH
+*** Q_3
+echo %PATH
+*** Q_4
+cat $PATH
+*** Q_5
+echo %PATH%
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 21
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670132965629
+:END:
+*** Question
+Which command line can be used to search help files that mention the word "copy"?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+man -k copy
+*** Q_2
+whatis copy
+*** Q_3
+man copy
+*** Q_4
+copy help
+*** Q_5
+copy help
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 22
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670132966051
+:END:
+*** Question
+When creating a new file, what can be done to make the file hidden from the default output of the ls command?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Hide the file with a name commented out with a hash sign like #foobar.txt.
+*** Q_2
+Hide the file with a name beginning with a period like .foobar.txt.
+*** Q_3
+Hide the file with chvis +h filename.
+*** Q_4
+Hide the file with chmod a+h filename.
+*** Q_5
+Hide the file with hide filename.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 23
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670132966452
+:END:
+*** Question
+While deleting all files beginning with the letter a there was still the file Access.txt left. Assuming that it had the correct ownership, why was it not deleted?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Files with extensions need a different treatment.
+*** Q_2
+rm had to be called with the option -R to delete all files.
+*** Q_3
+The file Access.txt was probably opened by another application.
+*** Q_4
+The file Access.txt was hidden.
+*** Q_5
+Linux file names are case sensitive.
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 24
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670132966851
+:END:
+*** Question
+Which of the following programs is used to search for files in a file system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+locate
+*** Q_2
+showfiles
+*** Q_3
+flocate
+*** Q_4
+search
+*** Q_5
+findfiles
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 25
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670132967283
+:END:
+*** Question
+Given a file called birthdays containing lines like:
+YYYY-MM-*** Q_4
+Name
+1983-06-02 Tim
+1995-12-17 Sue
+
+Which command would you use to output the lines belonging to all people listed whose birthday is in May or June?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+grep '[56]' birthdays
+*** Q_2
+grep 05?6? birthdays
+*** Q_3
+grep '[0-9]*-0[56]-' birthdays
+*** Q_4
+grep 06 birthdays | grep 05
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 26
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670133334680
+:END:
+*** Question
+What does the exit status 0 indicate about a process?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The process ended without any problems.
+*** Q_2
+The process was terminated by the user.
+*** Q_3
+The process couldn't finish correctly.
+*** Q_4
+The process waited for an input but got none.
+*** Q_5
+The process finished in time.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 27
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670133335079
+:END:
+*** Question
+Which character starts a comment line in a shell script file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+;
+*** Q_2
+*
+*** Q_3
+#+begin_src html
+#
+#+end_src
+*** Q_4
+/
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 28
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670133335479
+:END:
+*** Question
+What is the output of the following command?
+for token in a b c; do
+echo -n ${token};
+done
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+anbncn
+*** Q_2
+abc
+*** Q_3
+$token$token$token
+*** Q_4
+{a}{b}{c}
+*** Q_5
+a b c
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 29
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670133336005
+:END:
+*** Question
+Which of the following commands can be used to extract content from a tar file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar -xvf
+*** Q_2
+tar -vf
+*** Q_3
+tar -e
+*** Q_4
+tar -c
+*** Q_5
+tar v
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 30
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670133336430
+:END:
+*** Question
+What is the correct command to extract the contents of the archive file download.bz2?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+unpack download.bz2
+*** Q_2
+unzip2 download.bz2
+*** Q_3
+bunzip2 download.bz2
+*** Q_4
+unzip download.bz2
+*** Q_5
+uncompress download.bz2
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 31
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670134715527
+:END:
+*** Question
+Which command chain will count the number of regular files with the name of foo.txt within /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+ls -lR /home | grep foo.txt | wc -l
+*** Q_2
+find /home -type f -name foo.txt | wc -l
+*** Q_3
+find /home -name foo.txt -count
+*** Q_4
+find /home -name foo.txt | wc -l
+*** Q_5
+grep -R foo.txt /home | wc -l
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 32
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670134716255
+:END:
+*** Question
+Which of the following command sequences overwrites the file foobar.txt?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+echo "QUIDQUIDAGIS" >> foobar.txt
+*** Q_2
+echo "QUIDQUIDAGIS" < foobar.txt
+*** Q_3
+echo "QUIDQUIDAGIS" > foobar.txt
+*** Q_4
+echo "QUIDQUIDAGIS" | foobar.txt
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 33
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670134717027
+:ANKI_FAILURE_REASON: Note was not found: 1670134717027
+:END:
+*** Question
+Which of the following commands will create an archive file, named backup.tar, containing all the files from the directory /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar /home backup.tar
+*** Q_2
+tar -cf /home backup.tar
+*** Q_3
+tar -xf /home backup.tar
+*** Q_4
+tar -xf backup.tar /home
+*** Q_5
+tar -cf backup.tar /home
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 34
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670134717827
+:END:
+*** Question
+How can the normal output of a command be written to a file while discarding the error output?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+command >2>file 1&>/dev/null
+*** Q_2
+command < output > /dev/null
+*** Q_3
+command > discard-error > file
+*** Q_4
+command > /dev/null 2&>1 output
+*** Q_5
+command >file 2>/dev/null
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 35
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670134718605
+:END:
+*** Question
+How can the current directory and its subdirectories be searched for the file named MyFile.xml?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+find . -name MyFile.xml
+*** Q_2
+grep MyFile.xml | find
+*** Q_3
+grep -r MyFile.xml .
+*** Q_4
+less MyFile.xml
+*** Q_5
+search Myfile.xml ./
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+
+
+
+** Question 36
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670186712251
+:END:
+*** Question
+Which command will display the last line of the file foo.txt?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+head -n 1 foo.txt
+*** Q_2
+tail foo.txt
+*** Q_3
+last -n 1 foo.txt
+*** Q_4
+tail -n 1 foo.txt
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 37
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187005601
+:ANKI_FAILURE_REASON: Note was not found: 1670187005601
+:END:
+*** Question
+The output of the program date should be saved in the variable actdat.
+What is the correct statement?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+actdat=`date`
+*** Q_2
+set actdat='date'
+*** Q_3
+date | actdat
+*** Q_4
+date > $actdat
+*** Q_5
+actdat=date
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 38
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187005954
+:END:
+*** Question
+The script, script.sh, consists of the following lines:
+"Best Material, Great Results". www.certkingdom.com 12
+010-150
+#!/bin/bash
+echo $2 $1
+
+Which output will appear if the command, ./script.sh test1 test2, is entered?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+test1 test2
+*** Q_2
+test2 test1
+*** Q_3
+script.sh test2
+*** Q_4
+script.sh test1
+*** Q_5
+test1 script.sh
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 39 not working
+*** Question
+What two character sequence is present at the beginning of an interpreted script? (Please specify the TWO correct characters only)
+A.
+B.
+C.
+D.
+*** Answers
+0 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer:
+** Question 40
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187006428
+:END:
+*** Question
+What is the output of the following command sequence?
+
+for token in a b c; do
+echo -n "$token ";
+done
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+anbncn
+*** Q_2
+a b c
+*** Q_3
+"a " "b " "c "
+*** Q_4
+token token token
+*** Q_5
+abc
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 41
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187220354
+:END:
+*** Question
+Which of the following commands redirects the output of cmd to the file foo.txt, in which an existing file is overwritten?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cmd || foo.txt
+*** Q_2
+cmd | foo.txt
+*** Q_3
+cmd && foo.txt
+*** Q_4
+cmd >> foo.txt
+*** Q_5
+cmd > foo.txt
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 42
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187220703
+:ANKI_FAILURE_REASON: Note was not found: 1670187220703
+:END:
+*** Question
+Which of the following commands will set the variable text to olaf is home?
+(Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+text=olaf\ is\ home
+*** Q_2
+text=$olaf is home
+*** Q_3
+$text='olaf is home'
+*** Q_4
+text=='olaf is home'
+*** Q_5
+text="olaf is home"
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 43
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187221103
+:END:
+*** Question
+After installing a new package, in which directory are you most likely find its configuration file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/lib
+*** Q_2
+/conf
+*** Q_3
+/etc
+*** Q_4
+/usr
+*** Q_5
+/opt
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 44
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187221629
+:END:
+*** Question
+With which command can you determine the time of the last restart of a system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+current reboottime
+*** Q_2
+find reboot
+*** Q_3
+expect --reboot
+*** Q_4
+last | reboot
+*** Q_5
+last reboot
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 45
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187222004
+:END:
+*** Question
+Which of the following filesystems is most commonly used for Linux distributions?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+HFS+
+*** Q_2
+ext4
+*** Q_3
+FAT32
+*** Q_4
+NTFS
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 46
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187540054
+:END:
+*** Question
+What is the command that will show system boot time messages?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+dmesg
+*** Q_2
+echo
+*** Q_3
+lspci
+*** Q_4
+display system boot
+*** Q_5
+messages
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 47
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187540403
+:END:
+*** Question
+Which command will display running process information in real time?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+top
+*** Q_2
+show current
+*** Q_3
+ps current
+*** Q_4
+process
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 48
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187540778
+:END:
+*** Question
+Which files will affect the domain name resolution system on Linux? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/etc/hostname
+*** Q_2
+/etc/nameserver
+*** Q_3
+/etc/hosts
+*** Q_4
+/etc/which
+*** Q_5
+/etc/resolv.conf
+*** Answers
+0 0 1 0 1
+*** Sources
+*** Extra 1
+Correct Answer: CE
+** Question 49
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187541303
+:END:
+*** Question
+Which of the following Ubuntu releases is considered most stable and fit to use for business purposes?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+LTS
+*** Q_2
+Xubuntu
+*** Q_3
+Ubuntu Vanilla
+*** Q_4
+Kubuntu
+*** Q_5
+Server
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 50
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670187541651
+:END:
+*** Question
+Where can a boot loader be installed?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The boot ROM
+*** Q_2
+The MBR on a hard drive
+*** Q_3
+The /boot partition
+*** Q_4
+The boot RAM
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 51
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188036453
+:END:
+*** Question
+Where is the BIOS located?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+RAM
+*** Q_2
+hard drive
+*** Q_3
+motherboard
+*** Q_4
+L*** Q_3
+monitor
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 52
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188036979
+:END:
+*** Question
+Which of the following is a technology used to connect a hard drive directly to a computer's motherboard?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+PCI
+*** Q_2
+Ethernet
+*** Q_3
+DSL
+*** Q_4
+SATA
+*** Q_5
+VGA
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 53
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188037503
+:END:
+*** Question
+Which network interface always exists in a Linux system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+lo
+*** Q_2
+sit0
+*** Q_3
+wlan0
+*** Q_4
+vlan0
+*** Q_5
+eth0
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 54 copy not used
+*** Question
+Which of the following filesystems is most commonly used for Linux distributions?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+HFS+
+*** Q_2
+ext4
+*** Q_3
+FAT32
+*** Q_4
+NTFS
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 55
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188038579
+:ANKI_FAILURE_REASON: Note was not found: 1670188038579
+:END:
+*** Question
+A Linux computer has no access to the internet.
+Which command displays information about the network gateway for the system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+traceroute
+*** Q_2
+ifconfig
+*** Q_3
+gateway
+*** Q_4
+route
+*** Q_5
+ipconfig
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 56
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188411504
+:ANKI_FAILURE_REASON: Note was not found: 1670188411504
+:END:
+*** Question
+Which criteria are useful when deciding which operating system to use? (Select
+THREE answers)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+License costs.
+*** Q_2
+Ideological preferences of the system administrator.
+*** Q_3
+Linux can do everything, there is no need for further evaluation.
+*** Q_4
+Availability of mandatory applications and tools.
+*** Q_5
+Skills of the administrators and staff.
+*** Answers
+1 0 0 1 1
+*** Sources
+*** Extra 1
+Correct Answer: ADE
+** Question 57
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188412053
+:END:
+*** Question
+In which directory are system log files kept?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/log/syslog/
+*** Q_2
+/var/log/
+*** Q_3
+/sys/log/
+*** Q_4
+/var/log/sys/
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 58
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188412629
+:END:
+*** Question
+Which command shows, amongst other information, the IP address of the current DNS server for a Linux system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cat /etc/net/dns.conf
+*** Q_2
+ifconfig -v dns
+*** Q_3
+show net dns
+*** Q_4
+cat /etc/resolv.conf
+*** Q_5
+cat /etc/net/nameserver.conf
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 59
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188413204
+:END:
+*** Question
+Which of the following commands can be used to change both the owner AND group settings of a file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+chmod
+*** Q_2
+chage
+*** Q_3
+chuser
+*** Q_4
+chown
+*** Q_5
+chgrp
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 60
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188413754
+:END:
+*** Question
+Which of the following will change the group that is associated with a file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+chmod
+*** Q_2
+chmod -w
+*** Q_3
+chown
+*** Q_4
+ls -g
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 61
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188753154
+:END:
+*** Question
+Which command displays the list of groups to which a user belongs?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+whoami
+*** Q_2
+lsgroup
+*** Q_3
+who
+*** Q_4
+id
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 62
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188753903
+:END:
+*** Question
+Which of the following is the home folder for the root user?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/user/root
+*** Q_2
+/
+*** Q_3
+/root
+*** Q_4
+/home/root
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 63
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188754654
+:END:
+*** Question
+Given a directory with the following information:
+drwxrwxrwxt 12 tu tg 36864 2012-03-15 /home/directory/
+
+Which of the following statements are true? (Choose two)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Everybody can create files in the directory.
+*** Q_2
+Files in the directory are created with read, write and execute permissions for everyone.
+*** Q_3
+The directory is broken.
+*** Q_4
+Everybody can delete only his own files.
+*** Q_5
+The directory is a security risk.
+*** Answers
+1 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: AD
+** Question 64
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188755329
+:END:
+*** Question
+Which statement about users and user groups is correct?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+A group can only have one main user.
+*** Q_2
+There can be only one user group on a system.
+*** Q_3
+User do not have to belong to a user group.
+*** Q_4
+Every user belongs to a least one user group.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 65
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670188756078
+:END:
+*** Question
+Which of the following properties of a user account determines whether the user is given administrator privileges?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Its primary group ID is 0 (zero).
+*** Q_2
+It is listed first in /etc/passwd
+*** Q_3
+Its username is root.
+*** Q_4
+Its user ID is 0 (zero).
+*** Q_5
+Its GECOS (name) field is set to "System Administrator"
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 66
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670189292679
+:END:
+*** Question
+What is the command to change the password of a user?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+wpasswd
+*** Q_2
+gpasswd
+*** Q_3
+epasswd
+*** Q_4
+passwd
+*** Q_5
+password
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 67
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670189293454
+:END:
+*** Question
+What command line will create the user falco with home directory assigned to the group users as primary group?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+useradd -g users falco
+*** Q_2
+useradd -f users falco
+*** Q_3
+useradd -m -g users falco
+*** Q_4
+add user falco@users
+*** Q_5
+add -user falco -group users
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C

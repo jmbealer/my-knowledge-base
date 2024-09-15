@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       9e2337d2-4319-42c6-b312-3dde6daa6091
+:mtime:    20230507130303 20230206181459 20230117120030
+:ctime:    20230117115934
+:END:
+#+title: Introduction to Communication - C464
+
+
+This idea of planning your approach to the course before you start is called metacognition. Metacognition, or “thinking about thinking,” refers to your awareness of yourself as a learner and your ability to regulate your own learning.
+
+Metacognition involves five distinct skills:
+
+Assess the task. Get a handle on what is involved in completing a task (the steps or components required for success) and any constraints (time, resources).
+Evaluate your strengths and weaknesses — Evaluate your own skills and knowledge in relation to a task.
+Plan an approach. Take into account your assessment of the task and your evaluation of your own strengths and weaknesses in order to devise an appropriate plan.
+Apply strategies and monitor your performance. Continually monitor your progress as you are working on a task, comparing where you are to the goal you want to achieve.
+Reflect and adjust if needed. Look back on what worked and what didn't work so that you can adjust your approach next time and, if needed, start the cycle again.
+These five skills are applied over and over again in a cycle—within the same course as well as from one course to another. Mouse over each skill in the picture below for a more explicit definition.
+
+* Links
+https://my.wgu.edu/courses/course/16000045
+https://wgu-nx.acrobatiq.com/en-us/courseware/contents/wgu_comm_feb16

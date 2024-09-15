@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#tags column:5
+c-w	deletes previous word		bash	bash kill-yank
+c-x e	recall last recorded keyboard macro		bash	bash macro
+c-a	move to the beginning of line.		bash	bash left-right motions
+c-e	move to the end of line.		bash	bash left-right motions
+a-f	move forward a word.		bash	bash left-right motions
+a-b	move backward a word.		bash	bash left-right motions
+c-l	clears screen and re-display the line		bash	bash process-control
+c-c	halts the current command		bash	bash process-control
+c-g	aborts the current editing command and ring the terminal bell		bash	bash process-control
+c-j	same as <b>RETURN</b>		bash	bash process-control
+c-h	delete character before the cursor		bash	bash edit-text
+c-q	quoted insert		bash	bash edit-text
+c-k	deletes from cursor to the end of the line.		bash	bash kill-yank
+a-h	deletes previous character		bash	bash kill-yank
+c-y	retrieves (yank) last item deleted		bash	bash kill-yank
+c-x (	start recording a keyboard macro		bash	bash macro
+c-x )	finish recording a keyboard macro		bash	bash macro
+c-p	<b>previous</b> history		bash	bash history
+c-n	*next* history		bash	bash history
+c-m	go to next line		bash	bash process-control
+c-x c-e	invoke text editor on current command line then execute		bash	bash edit-text
+c-f	move forward a character.		bash	bash left-right motions
+c-b	move backward a character.		bash	bash left-right motions
+c-x x	move between previous and current cursor position		bash	bash left-right motions
+c-d	delete character at cursor; log-out current session		bash	bash edit-text
+c-r	searches backward		bash	bash history
+c-u	deletes from cursor to the start of the line.		bash	bash kill-yank

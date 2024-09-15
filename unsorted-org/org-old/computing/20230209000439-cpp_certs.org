@@ -1,0 +1,205 @@
+:PROPERTIES:
+:ID:       240c7128-6fd9-41f0-bb95-521a758ff39c
+:mtime:    20230209000446
+:ctime:    20230209000439
+:END:
+#+title: cpp-certs
+
+* CPE C++ Certified Entry-Level Programmer Certification
+
+** Skills measured
+
+Becoming CPE certified ensures that you are familiar with the universal concepts of computer programming as well as acquainted with the most essential means provided by the C++ language, which enable you to start your own studies at the next level of C programming education, and to continue your professional development.
+Skills measured
+
+** 1 Installing And Using Your Programming Environment
+
+    Introduction to IDE;
+    Online tools;
+    Edube Interactive.
+
+** 2 Absolute Basics – Introduction to Computer Programming
+
+    languages: natural and artificial;
+    machine languages;
+    high-level programming languages,
+    obtaining the machine code: compilation process;
+    variables;
+    integer values in real life and in C++;
+    integer literals;
+    characters;
+    comments;
+    the basics of flow control;
+    dealing with streams and basic I/O operations;
+    writing simple programs.
+
+** 3 Advanced flow control and data aggregates
+
+    how to control the flow of the program;
+    more data types;
+    conditional instructions: if, else, switch;
+    loops and controlling the loop execution;
+    logic, bitwise and arithmetic operators;
+    vectors, multidimensional arrays;
+    declaring and initializing structures.
+
+** 4 Extending expressive power: pointers, functions, and memory
+
+    designing, declaring, and invoking functions;
+    pointers;
+    different methods of passing parameters and their purpose;
+    default parameters;
+    inline functions;
+    overloaded functions;
+    sorting;
+    memory on demand.
+
+** 5 Accessing various data types
+
+    arrays of pointers;
+    conversions;
+    strings: declarations, initializations, assignments;
+    strings as an example of objects: (methods and properties)
+    using and declaring namespaces;
+    dealing with exceptions.
+
+* CPA C++ Certified Associate Programmer Certification
+
+A test candidate should demonstrate sufficient knowledge of the universal concepts of computer programming, developer tools, the syntax and semantics of the C++ language, data types offered by the C++ language, the principles of the object-oriented model and its implementation in the C++ language, the means useful in resolving typical implementation problems with the help of standard C++ language libraries, and writing programs using standard language infrastructure regardless of the hardware or software platform.
+
+** CPA Exam: Outline
+
+♦ Introduction to compiling and software development;
+♦ Basic scalar data types, operators, flow control, streamed input/output, conversions;
+♦ Declaring, defining and invoking functions, function overloading;
+♦ Data aggregates;
+♦ Strings processing, exceptions handling, dealing with namespaces;
+♦ Object-oriented approach and its vocabulary;
+♦ Dealing with classes and objects, class hierarchy and inheritance;
+♦ Defining overloaded operators, user-defined operators, exceptions;
+
+** Absolute basics
+ machine and high-level programming languages, compilation process,
+ obtaining the machine code: compilation process,
+ writing simple programs,
+ variables,
+ integers: values, literals, operators,
+ characters: values, literals, operators,
+ dealing with streams and basic input/output operations.
+** Flow control and more data types
+ how to control the flow of the program
+ floating point types: values, literals, operators,
+ more integer types: values and literals,
+ loops and controlling the loop execution,
+ logic, bitwise and arithmetic operators.
+** Functions
+ functions,
+ declaring and invoking functions,
+ side effects,
+ different methods of passing parameters and their purpose,
+ default parameters,
+ inline functions,
+ overloaded functions.
+** Accessing data and dealing with exceptions
+ converting values of different types,
+ strings: declarations, initializations, assignments,
+ string as an example of object: introducing methods and properties,
+ namespaces: using and declaring,
+ dealing with exceptions.
+** Fundamentals of the object-oriented approach
+ class,
+ objects,
+ class components,
+ constructors,
+ referring to objects,
+ static members,
+ classes and their friends,
+ defining and overloading operators.
+** Class hierarchy
+ base class, superclass, subclass,
+ inheritance: how it works,
+ types of inheritance,
+ inheriting different class components,
+ multiple inheritance.
+** More on classes
+ polymorphism: the notion and the purpose,
+ virtual methods: declaration and usage,
+ inheriting virtual methods,
+ abstraction and abstract classes.
+** Exceptions - dealing with expected and unexpected problems
+ what is an exception,
+ catching and throwing exceptions,
+ different classes and hierarchy of exceptions,
+ defining your own exceptions.
+
+* CPP C++ Certified Professional Programmer Certification
+
+A test candidate should demonstrate sufficient knowledge of the C++ template mechanism, reading and understanding definitions of template functions and classes, using property template classes and methods including third party templates, creating template functions and classes, C++ STL library including the IO part, and solving common programming problems with STL predefined classes and methods.
+
+** CPP Exam: Outline
+
+♦ Templates;
+♦ STL Sequential containers;
+♦ STL Associative containers;
+♦ Non-modifying STL algorithms;
+♦ Modifying STL algorithms;
+♦ Sorting STL operations;
+♦ STL merge operations;
+♦ STL utilities and functional library;
+♦ STL Advanced I/O.
+
+** Templates
+ What are templates,
+ Basic syntax,
+ Function templates,
+ Class templates,
+ When to use templates,
+ Typical problems when using templates.
+** STL Sequential containers
+ Types of sequential containers,
+ vector, deque, list and their API,
+ Sequential container adapters – stack, queue and priority queue,
+ Dealing with objects as container elements,
+ Usage – when to use what.
+** STL Associative containers
+ Types of associative containers,
+ set and multiset – behavior and API,
+ map and multimap – behavior and API,
+ Putting objects into set and map,
+ Usage – when to use what.
+** Non-modifying STL algorithms
+ Definition of a non-modifying algorithm
+ List of non-modifying algorithms: for_each, find, find_if, find_end, find_first_of,
+adjacent_find, count, count_if, mismatch, equal, search, search_n,
+ Examples,
+ Container compatibility.
+** Modifying STL algorithms
+ Definition of a modifying algorithm,
+ List of modifying algorithms: transform, copy, copy_backward, swap, swap_ranges,
+iter_swap, replace, fill, fill_n, generate, generate_n, remove, remove_if, unique,
+unique_copy, reverse, reverse_copy, rotate, partition, stable_partition
+ Examples,
+ Container compatibility.
+** Sorting STL operations
+ List of sorting algorithms: random_shuffle, sort, stable_partition, lower_bound,
+upper_bound, equal_range, binary_search,
+ Examples,
+ Containers compatibility,
+ Sorting of objects.
+** STL merge operations
+ List of merging algorithms: merge, includes, min_element, max_element,
+inplace_merge,
+ STL operations for sets,
+ Examples,
+ Container compatibility.
+** STL utilities and functional library
+ STL “small” tools,
+ List of useful functors,
+ Examples.
+** STL advanced I/O
+ Classes which provide the input and output capability,
+ Console I/O,
+ Formatting,
+ File I/O,
+ Strings I/O,
+ Examples

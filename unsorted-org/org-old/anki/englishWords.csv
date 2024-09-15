@@ -1,0 +1,101 @@
+0,1,2,3,4,5,6
+word type,0-current-using::ngsl-wip,"<b>{{c1::the}}</b> - ""used to refer to something already mentioned""",1,det,/ðiː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::be}}</b> - ""To exist; to be alive; used to give information about someone or something""",2,verb,/biː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::and}}</b> - ""used to refer to two or more things""",3,conj,/ænd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::of}}</b> - ""belonging to or connected with something""",4,prep,/ɑv/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::to}}</b> - ""move towards; in the direction of""",5,prep,/tu/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::a}}</b> - ""one (of something)""",6,det,/ɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::in}}</b> - ""being inside something""",7,prep,/ɪn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::have}}</b> - ""to own, possess, or hold something""",8,aux,/hæv/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::it}}</b> - ""a thing that has been previously mentioned""",9,pron,/ɪt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::you}}</b> - ""person someone is speaking or writing to""",10,pron,/ju/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::he}}</b> - ""object form of a male person you are talking about""",11,pron,/hiː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::for}}</b> - ""used to show the purpose, or need of something""",12,prep,/foɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::they}}</b> - ""used to refer to two or more people, animals, or things""",13,pron,/ðɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::not}}</b> - ""word indicating the negative of verbs, adjectives, etc.""",14,adv,/nɑt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::that}}</b> - ""used to show which person or thing we are talking about""",15,pron,/ðæt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::we}}</b> - ""used to refer to the speaker and other people together""",16,pron,/wiː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::on}}</b> - ""located on the surface of something (e.g., a table or wall)""",17,prep,/ɑn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::with}}</b> - ""used to express that people or things are together""",18,prep,/wɪð/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::this}}</b> - ""person, thing, or idea near you""",19,pron,/ðɪs/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::I}}</b> - ""the person who is speaking or writing""",20,pron,/aɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::do}}</b> - ""to act; to perform actions""",21,verb,/du/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::as}}</b> - ""a word used to compare two equal things""",22,prep,/æs/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::at}}</b> - ""in the place where something is""",23,prep,/æt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::she}}</b> - ""female person or animal mentioned before""",24,pron,/ʃiː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::but}}</b> - ""used before you say something different, opposite""",25,conj,/bʌt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::from}}</b> - ""starting at a particular place, time, or level""",26,prep,/frɑm/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::by}}</b> - ""near; with""",27,prep,/baɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::will}}</b> - ""used with verbs to express the future""",28,aux,/wɪl/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::or}}</b> - ""used to link alternatives, to introduce another choice""",29,conj,/oɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::say}}</b> - ""to use words to tell a message""",30,verb,/sɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::go}}</b> - ""to move or travel to another place""",31,verb,/goʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::so}}</b> - ""for that reason""",32,conj,/soʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::all}}</b> - ""completely; totally""",33,adv,/oɚl/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::if}}</b> - ""introducing a condition for something to happen""",34,conj,/ɪf/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::one}}</b> - ""number 1""",35,num,/wʌn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::would}}</b> - ""modal verb used to indicate possibility, request, etc.""",36,aux,/wʊd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::about}}</b> - ""of (a subject); concerning""",37,prep,/ə•baʊt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::can}}</b> - ""to be able to; have the skill to; have the time to""",38,aux,/kæn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::which}}</b> - ""question word to ask about a person's choice""",39,adj,/wɪtʃ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::there}}</b> - ""in that place or position, at that location""",40,adv,/ðɛɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::know}}</b> - ""to have knowledge of things in your mind""",41,verb,/noʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::more}}</b> - ""greater in amount, number, or size""",42,adj,/moɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::get}}</b> - ""to obtain, receive, or be given something""",43,verb,/gɛt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::who}}</b> - ""what or which person or people, to ask about, talking about""",44,pron,/hu/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::like}}</b> - ""to find something pleasing; to prefer something""",45,verb,/laɪk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::when}}</b> - ""word you use to ask about the time or day""",46,noun,/wɛn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::think}}</b> - ""to have an idea, opinion, or belief about something""",47,verb,/θɪŋk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::make}}</b> - ""to create something by putting things together""",48,verb,/mɛɪk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::time}}</b> - ""something measured in minutes, hours, days, etc.""",49,noun,/taɪm/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::see}}</b> - ""to use your eyes to look at something""",50,verb,/siː/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::what}}</b> - ""asking for information about someone or something""",51,adv,/wɑt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::up}}</b> - ""move higher; raise""",52,prep,/ʌp/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::some}}</b> - ""used to refer to a person or thing that is not known""",53,adj,/sʌm/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::other}}</b> - ""something else; not the first one""",54,adj,/ʌ•ðə/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::out}}</b> - ""away from the inside or center""",55,prep,/aʊt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::good}}</b> - ""excellent; high quality""",56,adj,/gʊd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::people}}</b> - ""human beings in general; plural of person""",57,noun,/piː•pl/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::year}}</b> - ""unit of time equal to 12 months""",58,noun,/jɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::take}}</b> - ""to pick up something and go away with it""",59,verb,/tɛɪk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::no}}</b> - ""being none; not having or being""",60,adv,/noʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::well}}</b> - ""in a good way""",61,adj,/wɛl/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::because}}</b> - ""for a reason""",62,conj,/bɪ•kɑz/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::very}}</b> - ""much; great in amount""",63,verb,/vɛ•rɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::just}}</b> - ""only; a short time ago""",64,adv,/dʒʌst/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::come}}</b> - ""to move toward someone; go with someone""",65,verb,/kʌm/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::could}}</b> - ""used as the past form of can, to show possibility""",66,verb,/kʊd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::work}}</b> - ""activity you do in order to make money""",67,noun,/wɚk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::use}}</b> - ""to do something with, for a task or purpose""",68,verb,/juz/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::than}}</b> - ""used when comparing two things""",69,conj,/ðæn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::now}}</b> - ""at the present time or moment""",70,adv,/naʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::then}}</b> - ""at that time not now""",71,adv,/ðɛn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::also}}</b> - ""in addition; too; in a similar way""",72,adv,/oɚl•soʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::into}}</b> - ""going inside something""",73,prep,/ɪn•tʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::only}}</b> - ""just one; just that amount or thing; not more than""",74,adv,/oʊn•lɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::look}}</b> - ""to turn your eyes in a particular direction""",75,verb,/lʊk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::want}}</b> - ""to desire or wish for something; hope for a thing""",76,verb,/wɑnt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::give}}</b> - ""to hand over or present something to someone""",77,verb,/gɪv/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::first}}</b> - ""coming before all others in time or place""",78,adj,/fɚst/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::new}}</b> - ""not old, recently born, built, or made""",79,adj,/nju/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::way}}</b> - ""how something is done""",80,noun,/wɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::find}}</b> - ""to discover something by looking for it""",81,verb,/faɪnd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::over}}</b> - ""above; across; more than; on the other side""",82,prep,/oʊ•və/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::any}}</b> - ""one (thing) of many; some (thing)""",83,adj,/ɛ•nɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::after}}</b> - ""later than another time, or behind something""",84,adv,/ɑɚf•tə/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::day}}</b> - ""a period of 24 hours""",85,noun,/dɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::where}}</b> - ""word you use to ask the location of something""",86,noun,/wɛɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::thing}}</b> - ""something you cannot remember the name of""",87,noun,/θɪŋ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::most}}</b> - ""nearly all of something""",88,pron,/moʊst/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::should}}</b> - ""used to indicate what is proper or reasonable""",89,aux,/ʃʊd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::need}}</b> - ""to be unable to manage without something; require""",90,verb,/niːd/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::much}}</b> - ""a lot; large amount; a high degree of""",91,pron,/mʌtʃ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::right}}</b> - ""on side where the hand that most people write with""",92,adj,/raɪt/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::how}}</b> - ""in what way something happens or is done""",93,adv,/haʊ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::back}}</b> - ""the place you were before""",94,noun,/bæk/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::mean}}</b> - ""to have a particular meaning or value""",95,verb,/miːn/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::even}}</b> - ""as well; too""",96,adv,/iː•vən/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::may}}</b> - ""used to talk about what is possible""",97,aux,/mɛɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::here}}</b> - ""in, at, or to this position or place""",98,adv,/hiːɚ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::many}}</b> - ""used to refer to a large number of things""",99,adj,/mɛ•nɪ/,english words ngsl
+word type,0-current-using::ngsl-wip,"<b>{{c1::such}}</b> - ""like or similar""",100,adj,/sʌtʃ/,english words ngsl

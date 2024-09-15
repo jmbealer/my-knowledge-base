@@ -1,0 +1,301 @@
+:PROPERTIES:
+:ID:       bca2713d-6311-4360-90c2-19b1007defe9
+:mtime:    20230711121134
+:ctime:    20230711121127
+:END:
+#+title: My WGU
+
+[[id:0389645f-4067-4194-8de2-15c18c508ed8][wgu-degree-plan]]
+
+* In progress
+
+[[id:2d781bd3-2da9-4cbb-89e0-fba5e816bc4d][American Politics and the US Constitution - C963]]
+
+* Next
+
+[[id:61be4349-664c-4c76-8951-3e2cbeaa16c0][Introduction to Physical and Human Geography – D199]]
+[[id:58fcc1aa-759f-4fb0-ba97-dc2bc78b24bf][Network and Security - Foundations – D315]]
+[[id:1cd26799-29e2-43df-a89c-48ac01089f0d][Data Management - Foundations – D426]]
+
+** Next Terms
+
+Term 3 |January 1, 2024 to June 30, 2024
+UNAPPROVEDTotal CU: 14 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Technical Communication – D339
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Health, Fitness, and Wellness – C458
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Hardware and Operating Systems Essentials – D386
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Data Management - Applications – D427
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 4 |July 1, 2024 to December 31, 2024
+UNAPPROVEDTotal CU: 14 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Introduction to Systems Thinking – D372
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+1
+Version Control – D197
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Cloud Foundations – D282
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Applied Probability and Statistics – C955
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Business of IT - Project Management – D324
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 5 |January 1, 2025 to June 30, 2025
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Applied Algebra – C957
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Introduction to Programming in Python – D335
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Ethics in Technology – D333
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Business of IT – Applications – D336
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 6 |July 1, 2025 to December 31, 2025
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+4
+Data Structures and Algorithms I – C949
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+IT Leadership Foundations – D370
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Front-End Web Development – D277
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+JavaScript Programming – D280
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 7 |January 1, 2026 to June 30, 2026
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+4
+Software Engineering – D284
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Java Fundamentals – D286
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Java Frameworks – D287
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+User Interface Design – D279
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 8 |July 1, 2026 to December 31, 2026
+UNAPPROVEDTotal CU: 12 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+User Experience Design – D479
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Back-End Programming – D288
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Advanced Java – D387
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Software Design and Quality Assurance – D480
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 9 |January 1, 2027 to June 30, 2027
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Advanced Data Management – D326
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Software Security and Testing – D385
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Mobile Application Development (Android) – D308
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Software Engineering Capstone – D424
+
+* Done
+- [[id:372ca3cf-4fd4-4476-8a6a-9c687305be1c][wgu-c173]]
+- [[id:9e2337d2-4319-42c6-b312-3dde6daa6091][wgu-c464]]
+- [[id:65228ca4-89a4-4284-afc4-b2d37c10d9de][wgu-c779]]
