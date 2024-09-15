@@ -1,27 +1,12 @@
-TARGET DECK: test-iPhone
-FILE TAGS: iphone test
+---
+title: Example Title
+draft: false
+tags:
+  - example-tag
+---
 
-
-test ==bar== neasnt
-<!--ID: 1708988143755-->
-
-
-
-foo ==bar== baz
-<!--ID: 1708988143780-->
-
-
-
-
-==#include== ==<stdio.h>==
-==printf==(=="Hello World\n");==
-<!--ID: 1708988143784-->
-
-
-
-
-test ==baz== bar
-<!--ID: 1708988143787-->
+The rest of your content lives here. You can use **Markdown** here :)
 
 Who, What, Where, When, Why, Which, Whom, Whose
 
+[[./index.md]]
