@@ -1,9 +1,13 @@
 Mind
-- improve english 
+
+- improve english
 - improve computer
 - improve math
-Body
-- lose weight 
-- improve strength 
-Career
+  Body
+- lose weight
+- improve strength
+  Career
 - get a better job
+
+test
+
