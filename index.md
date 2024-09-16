@@ -2,7 +2,7 @@
 title: Welcome to JB's Wiki
 draft: false
 tags:
-  - index, test
+  - index test
   - main
   - home
 ---
