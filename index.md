@@ -1,6 +1,12 @@
 ---
-title: Welcome to JB's Wiki
+title: Home Page
 draft: false
+Author: Justin Bealer
+Author Profile:
+Creation Date:
+Last Date:
+References:
+description: testing this out
 tags:
   - index
   - test
@@ -11,6 +17,8 @@ tags:
 This is the beginning of my wiki/personal-site/portfolio.
 
 There many things I need to do to get this site up and running. I need to:
+
+---
 
 - [ ] Clean up my notes.
 - [ ] Add my resume.
