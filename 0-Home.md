@@ -7,7 +7,6 @@ To the start of my knowledge.
 
 date +"%F" - prints the date in the format YYYY-MM-DD
 
-[README](./README.md)
 [[README.md]]
 [HTML](./html.md)
 [CSS](./css.md)
