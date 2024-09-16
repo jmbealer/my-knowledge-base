@@ -1,6 +1,6 @@
 ---
-title: Projects
-aliases: Projects
+title: index
+aliases: index
 ---
 
 # pro.md
