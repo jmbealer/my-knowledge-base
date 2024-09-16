@@ -22,4 +22,8 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
 Who, What, Where, When, Why, Which, Whom, Whose
 
+[[projects/index|Projects Idx]]
+
+[[work-on.md]]
+
 [[test.md]]
