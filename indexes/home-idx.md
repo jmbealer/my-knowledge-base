@@ -2,37 +2,38 @@
 title: Home Page
 author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-17, 12-26-14
+date_modified: 2024-09-17, 12-38-20
 draft: false
 reference: 
 description: Home page for Justin Bealer's knowledge base.
 aliases: 
-tags: home, moc, index,
+tags: home, moc, index
 ---
 # Where Am I? Home! Welcome Back
 
 To the start of my knowledge.
 
-[[_cult-art|Culture & the Arts]]
-[[_gen-refer|General Reference]]
-[[_geo-pla|Geography & Places]]
-[[_heal-fit|Health & Fitness]]
-[[_his-even|History & Events]]
-[[_human-act|Human Activities]]
-[[_math-log|Mathematics & Logic]]
-[[_nat-sci|Natural Sciences]]
-[[_peo-soc|People & Society]]
-[[_phi-thi|Philosophy & Thinking]]
-[[_rel-bel|Religion & Belief]]
-[[_soc-ssci|Society & Social Sciences]]
-[[_tech-app|Technology & Applied Sciences]]
+Guide Posts:
+- [[_cult-art|Culture & the Arts]]
+- [[_gen-refer|General Reference]]
+- [[_geo-pla|Geography & Places]]
+- [[_heal-fit|Health & Fitness]]
+- [[_his-even|History & Events]]
+- [[_human-act|Human Activities]]
+- [[_math-log|Mathematics & Logic]]
+- [[_nat-sci|Natural Sciences]]
+- [[_peo-soc|People & Society]]
+- [[_phi-thi|Philosophy & Thinking]]
+- [[_rel-bel|Religion & Belief]]
+- [[_soc-ssci|Society & Social Sciences]]
+- [[_tech-app|Technology & Applied Sciences]]
 
 ---
 
-[[README]]
-[[resume]]
-[[work-on]]
-[[about_me]]
+- [[README]]
+- [[resume]]
+- [[work-on]]
+- [[about_me]]
 
 date +"%F" - prints the date in the format YYYY-MM-DD
 
