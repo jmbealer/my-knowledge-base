@@ -8,5 +8,6 @@
   "settings-search",
   "templater-obsidian",
   "obsidian-to-anki-plugin",
-  "header-enhancer"
+  "header-enhancer",
+  "obsidian-linter"
 ]

@@ -89,8 +89,12 @@
             "id": "9239b152d1ae73a6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -160,6 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,6 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +203,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -229,11 +237,12 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,13 +259,20 @@
   },
   "active": "9239b152d1ae73a6",
   "lastOpenFiles": [
+    "README.md~",
+    "index.md",
+    "README.md",
+    "work-on.md",
+    "resume.md",
+    "improvement.md",
+    "0-Home.md",
+    "journals/2024-09-17.md",
     "test.md",
     "test-old.md",
     "Untitled.md",
     "Untitled 1.md",
     "education/wgu.md",
     "journals/2024-09-15.md",
-    "0-Home.md",
     "unsorted-org/org-old/software-engineering/python/python-data-types.md",
     "linux/lpi-lpic-3-security.md",
     "linux/lpi-lpic-1.md~",
@@ -272,20 +288,12 @@
     "linux/lpi-devops-tools-engineer.md",
     "linux/dsd",
     "linux/dopt",
-    "linux/ose",
     "linux/lpi-security-essentials.md",
     "linux/lpi-security-essentials.md foo.md",
     "linux/lpi-lpic-3.md",
     "journals/2024-08-24.md",
     "english.md",
     "journals/2024-07-21.md",
-    "journals/2024-07-19.md",
-    "journals/2024-07-05.md",
-    "education/studycom.md",
-    "education/Thomas Edison State University.md",
-    "education/sophiaorg.sync-conflict-20240629-195938-2XWGPYO.md",
-    "journals/2024-07-04.md",
-    "education/sophiaorg.md",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
