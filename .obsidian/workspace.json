@@ -48,45 +48,62 @@
             }
           },
           {
-            "id": "86f6699aba3bc162",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "e679b12291c98417",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
             "id": "8725f72091192d0b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.12"
-              }
-            }
-          },
-          {
-            "id": "9239b152d1ae73a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "indexes/home-idx.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
-            }
+            },
+            "group": "4cf5d733f9750286"
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
+      },
+      {
+        "id": "072d20a8365d66be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83bc8fa5dfd28d6d",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "indexes/home-idx.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "4cf5d733f9750286"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "indexes/home-idx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "indexes/home-idx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,16 +209,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "indexes/home-idx.md"
               }
-            }
-          },
-          {
-            "id": "5adcfe9392f143d3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -215,74 +224,63 @@
                 "searchQuery": ""
               }
             }
-          },
-          {
-            "id": "f24677b642e6bcc2",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 630.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "templater-obsidian:Templater": false,
-      "header-enhancer:Header Enhancer": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "961be4a7ca997dd6",
+  "active": "83bc8fa5dfd28d6d",
   "lastOpenFiles": [
-    "_technology_and_applied_science/dotfiles.md",
+    "journals/2024-09-17.md",
     "indexes/home-idx.md",
-    "_philosophy_and_thinking/improvement.md",
-    "_health_and_fitness/fitness.md",
-    "_human_activities",
-    "_history_and_events",
-    "_health_and_fitness",
-    "_geography_and_places",
-    "_general_reference/education/wgu.md",
-    "_general_reference/education/wgu-transcript.md",
-    "_general_reference/education/web-dev-career.md",
-    "_general_reference/education/studycom.md",
-    "_general_reference/education/sophiaorg.sync-conflict-20240629-195938-2XWGPYO.md",
-    "_general_reference/education/sophiaorg.md",
-    "_general_reference/education/pierpontCnTC.md",
-    "_general_reference/education/excelsior.md",
-    "_general_reference/education/education.md",
-    "_general_reference/education/bsit.md",
-    "_general_reference/education/bscsia.md",
-    "_general_reference/education/bscs.md",
-    "_general_reference/education/Thomas Edison State University.md",
-    "_general_reference/education/General Education Requirements (45 Credits).md",
-    "_general_reference/education",
-    "_general_reference",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/swl.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/svl.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/seec.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/nwl.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/notUniqDomSpecList.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/myDomSpecList.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/mawl.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/mavl.md",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/TSL_1.2_stats.csv",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/FEL_1.2_stats.csv",
-    "_culture_and_the_arts/word-lists/domain-specific-lists/BSL_1.20_stats.csv",
-    "_culture_and_the_arts/word-lists/general-lists/toSort.sh",
+    "index.md~",
+    "resume.md",
+    "_society_and_social_sciences/_soc-ssci.md",
+    "_society_and_social_sciences/_soc-ssci.md~",
+    "_religion_and_belief_systems/_rel-bel.md",
+    "_philosophy_and_thinking/_phi-thi.md",
+    "_people_and_society/_peo-soc.md",
+    "_natural_and_physical_sciences/_nat-sci.md",
+    "_mathematics_and_logic/_math-log.md",
+    "_human_activities/_human-act.md",
+    "_history_and_events/_his-even.md",
+    "_health_and_fitness/_heal-fit.md",
+    "_geography_and_places/_geo-pla.md",
+    "_general_reference/_gen-refer.md",
+    "_culture_and_the_arts/_cult-art.md",
+    "_technology_and_applied_science/_tech-app.md",
+    "work-on.md",
+    "about_me.md",
+    "_culture_and_the_arts/cult-art.md",
+    "tech-app.md~",
+    "tech-app.md",
+    "_religion_and_belief_systems/rel-bel.md",
+    "_philosophy_and_thinking/phi-thi.md",
+    "_people_and_society/peo-soc.md",
+    "_natural_and_physical_sciences/nat-sci.md",
+    "_mathematics_and_logic/math-log.md",
+    "_human_activities/human-act.md",
+    "rel-bel.md~",
+    "phi-thi.md~",
+    "peo-soc.md~",
+    "nat-sci.md~",
+    "math-log.md~",
+    "human-act.md~",
+    "his-even.md~",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",

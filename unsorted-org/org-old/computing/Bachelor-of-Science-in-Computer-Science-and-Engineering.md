@@ -2,7 +2,7 @@
 title: Bachelor of Science in Computer Science and Engineering
 author: Justin Bealer
 date_created: 2023-11-16, 04-00-38
-date_modified: 2024-09-17, 09-29-59
+date_modified: 2024-09-17, 11-01-06
 reference: 
 description: 
 aliases: 
@@ -31,7 +31,7 @@ Restricted Electives in Science and Technology (REST) 2
 Laboratory Requirement 1
 Total GIR Subjects Required for SB Degree 17
 
-## Introductory Subjects: Introduce and Teach Fundamental Skills For..
+## Introductory Subjects: Introduce and Teach Fundamental Skills For.
 
 Programming
   6.145 (Brief Introduction to Python) Prereq:None

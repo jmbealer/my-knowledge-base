@@ -2,7 +2,7 @@
 title: Dotfiles
 author: Justin Bealer
 date_created: 2024-09-16, 06-36-20
-date_modified: 2024-09-17, 09-30-01
+date_modified: 2024-09-17, 11-00-59
 reference: 
 description: 
 aliases: 

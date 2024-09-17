@@ -2,7 +2,7 @@
 title: Where Am I?
 author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-17, 09-29-38
+date_modified: 2024-09-17, 10-59-26
 draft: false
 reference: 
 description: Home page for Justin Bealer's knowledge base.
@@ -11,26 +11,28 @@ tags: home, moc, index, root, main, page, mainpage
 ---
 # Where Am I?
 
-tags: #home #moc #index #root #main #page #mainpage
-
 Welcome, Home!
 To the start of my knowledge.
 
-date +"%F" - prints the date in the format YYYY-MM-DD
+[[_cult-art|Culture & the Arts]]
+[[_gen-refer|General Reference]]
+[[_geo-pla|Geography & Places]]
+[[_heal-fit|Health & Fitness]]
+[[_his-even|History & Events]]
+[[_human-act|Human Activities]]
+[[_math-log|Mathematics & Logic]]
+[[_nat-sci|Natural Sciences]]
+[[_peo-soc|People & Society]]
+[[_phi-thi|Philosophy & Thinking]]
+[[_rel-bel|Religion & Belief]]
+[[_soc-ssci|Society & Social Sciences]]
+[[_tech-app|Technology & Applied Sciences]]
+[[README]]
+[[resume]]
+[[work-on]]
+[[about_me]]
 
-[[README.md]]
-[HTML](./html.md)
-[CSS](./css.md)
-[JavaScript](./javascript.md)
-[Journals](journals/journals.md)
-[Markdown](./markdown.md)
-[Education](./education/education.md)
-[Sophia.org](./education/sophiaorg.md)
-[Study.com](./education/studycom.md)
-[Pierpont Community & Technical College](./education/pierpontCnTC.md)
-[Excelsior](./education/excelsior.md)
-[Linux](./linux/linux-home.md)
-[Linux Certs](./linux/linux-certs.md)
+date +"%F" - prints the date in the format YYYY-MM-DD
 
 [Hyperpolyglot](https://hyperpolyglot.org)
 
@@ -56,9 +58,3 @@ There many things I need to do to get this site up and running. I need to:
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
 Who, What, Where, When, Why, Which, Whom, Whose
-
-[[projects/index|Projects Idx]]
-
-[[work-on.md]]
-
-[[test.md]]
