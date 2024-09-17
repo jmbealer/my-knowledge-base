@@ -1,3 +1,13 @@
+---
+title: What is Python Indentation? WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # What is Python Indentation? WIP
 
 Indentation refers to the spaces at the beginning of a code line.
@@ -18,9 +28,9 @@ print("Five is greater than two!")
 The number of spaces is up to you as a programmer, but it has to be at least one.
 Example
 if 5 > 2:
- print("Five is greater than two!") 
+ print("Five is greater than two!")
 if 5 > 2:
-        print("Five is greater than two!") 
+        print("Five is greater than two!")
 
 You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
 Example

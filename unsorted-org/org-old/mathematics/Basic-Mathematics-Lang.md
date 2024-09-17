@@ -1,3 +1,13 @@
+---
+title: Basic Mathematics by Serge Lang
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Basic Mathematics by Serge Lang
 
 ## Algebra
@@ -18,9 +28,9 @@ a + (-a) = 0 and -a + a = 0
 the sum and product of integers are also integers.
 
 Rules for addition:
-commutativity; 
+commutativity;
   if a, b are integers, then;
-    a + b = b + a 
+    a + b = b + a
   also holds with negative numbers
 Associativity:
   if a, b, c are integers, then;

@@ -1,3 +1,14 @@
+---
+title: CompTIA-IT-Fundamentals
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# CompTIA-IT-Fundamentals
 = CompTIA IT Fundamentals (ITF+) Exam FC0-U61
    
 == 1.0 IT Concepts and Terminology 17%

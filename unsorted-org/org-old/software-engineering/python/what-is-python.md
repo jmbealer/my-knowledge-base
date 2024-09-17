@@ -1,4 +1,14 @@
-# What is Python? wip
+---
+title: What is Python? Wip
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What is Python? Wip
 
 ---
 - Created in 1991 by Guido Van Rossum
@@ -13,7 +23,7 @@ Python **IDLE**: Integrated Development Environment
 
 is dynamically-typed, and garbage-collected language
 
-## What makes Python so powerful?
+## What Makes Python so Powerful?
 
 **PyPI**: Python Package Index
 

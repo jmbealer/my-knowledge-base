@@ -1,4 +1,14 @@
-# what are Python Variables? WIP
+---
+title: What Are Python Variables? WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What Are Python Variables? WIP
 
 A Python variable is a reserved memory location to store values. In other words, a variable in a python program gives data to the computer for processing.
 Variables are identifiers of a physical memory location, which is used to hold values temporarily during program execution.
@@ -107,7 +117,7 @@ Global variables are visible and accessible to the whole program.
 .Global Variables Example:
 x = "Global Variable"
 
-#### `<global>` keyword
+#### `<global>` Keyword
 
 `<global>` keyword: declares a global variable inside a function.
 `<global>` keyword: also changes a global variable inside a function.
@@ -143,7 +153,7 @@ def fun():
 Built-in Variables have the widest scope.
 Built-in Variables includes all the variables that get loaded when the interpreter starts.
 
-#### `<nonlocal>` keyword
+#### `<nonlocal>` Keyword
 
 `<nonlocal>` keyword: changes an enclosed variable inside a function.
 

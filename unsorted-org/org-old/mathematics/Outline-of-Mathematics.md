@@ -1,3 +1,13 @@
+---
+title: Outline of Mathematics
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Outline of Mathematics
 
 Pre-Algebra
@@ -27,8 +37,8 @@ Algebra
   Log
   Polynomials
 Geometry
-  Line 
-  Plane 
+  Line
+  Plane
   Solid
 Analytical Geometry
   Conics
@@ -43,12 +53,12 @@ Probability
   Combinatorics
   Normal Distribution
 Calculus
-  Derivatives 
+  Derivatives
   Functions
   Intergrals
   Limits
-Linear Algebra 
-  Determinants 
+Linear Algebra
+  Determinants
   Linear Programming
   Matrix
   System

@@ -1,10 +1,21 @@
+---
+title: Vim-wip
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-49
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Vim-wip
 general subjects
 
-## intro wip
+## Intro Wip
 
 vim stands for Vi IMproved.
 
-### notation wip
+### Notation Wip
 
 [] characters in square brackets are optional.
 [count] an optional number that may precede the command to multiply or
@@ -27,7 +38,7 @@ double quotes.
 <!--ID: 1639612872499-->
 
 
-### mode intro wip
+### Mode Intro Wip
 
 Vim has seven BASIC modes:
 
@@ -61,8 +72,8 @@ Terminal-Job mode
 There are seven ADDITIONAL modes. These are  variants of the BASIC
 modes:
 
-### mode switching
-### definitions
+### Mode Switching
+### Definitions
 
 basic editing
   starting vim
@@ -135,7 +146,7 @@ visual mode
 
 
 
-## cursor motions wip
+## Cursor Motions Wip
 
 word consist of a sequence of letters, digits and underscores.
 WORD consist of a sequence of non-blank character, separated with white
@@ -250,16 +261,16 @@ $ or <End>
 g_
   To the last non-blank character of the line.
   [count - 1] lines downward inclusive.
-g0 
-g^ 
-gn 
-g$ 
-| 
-f{char} 
-F{char} 
-t{char} 
-T{char} 
-; 
+g0
+g^
+gn
+g$
+|
+f{char}
+F{char}
+t{char}
+T{char}
+;
 .
 <!--ID: 1639612872511-->
 
@@ -302,11 +313,11 @@ object-motions
 
 
 
-## scrolling
-## insert
-## change
-## undo
-## repeat
-## visual
-## various
-## recover
+## Scrolling
+## Insert
+## Change
+## Undo
+## Repeat
+## Visual
+## Various
+## Recover

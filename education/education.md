@@ -1,3 +1,13 @@
+---
+title: Education
+author: Justin Bealer
+date_created: 2023-12-22, 02-39-39
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Education
 
 tags: #education

@@ -1,3 +1,14 @@
+---
+title: CompTIA-A+-Core-1v3
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# CompTIA-A+-Core-1v3
 = CompTIA A+ 220-1001 (Core 1)
 
 == 1.0 Mobile Devices 14%
@@ -61,8 +72,8 @@
 [4 0 Virtualization and Cloud Computing](4.0-Virtualization-and-Cloud-Computing.md)[== 4.0 Virtualization and Cloud Computing 12%]
 [5 0 Hardware and Network Troubleshooting](5.0-Hardware-and-Network-Troubleshooting.md)[== 5.0 Hardware and Network Troubleshooting 27%]
 
-• 
-•• 
+•
+••
 
 
 

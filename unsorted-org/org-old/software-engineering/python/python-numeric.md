@@ -1,3 +1,14 @@
+---
+title: Python-numeric
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-numeric
 Numbers
 
 Numbers are created by numeric literals. Numeric objects are immutable, which means when an object is created its value cannot be changed.
@@ -5,7 +16,7 @@ Numbers are created by numeric literals. Numeric objects are immutable, which me
 Python has three distinct numeric types: integers, floating point numbers, and complex numbers. Integers represent negative and positive integers without fractional parts whereas floating point numbers represents negative and positive numbers with fractional parts. In addition, Booleans are a subtype of plain integers. See the following statements in Python shell.
 Python integer float example
 
-built-in numeric 
+built-in numeric
 
 Mathematically, a complex number (generally used in engineering) is a number of the form A+Bi where i is the imaginary number. Complex numbers have a real and imaginary part. Python supports complex numbers either by specifying the number in (real + imagJ) or (real + imagj) form or using a built-in method complex(x, y). See the following statements in Python Shell.
 
@@ -90,7 +101,7 @@ Example
 Import the random module, and display a random number between 1 and 9:
 import random
 
-print(random.randrange(1, 10)) 
+print(random.randrange(1, 10))
 
 
 

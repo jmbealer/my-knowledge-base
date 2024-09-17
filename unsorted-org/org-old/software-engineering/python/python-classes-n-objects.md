@@ -1,3 +1,14 @@
+---
+title: Python-classes-n-objects
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-classes-n-objects
 == Python Classes and Objects WIP
 Python Classes/Objects
 
@@ -109,7 +120,7 @@ The pass Statement
 class definitions cannot be empty, but if you for some reason have a class definition with no content, put in the pass statement to avoid getting an error.
 Example
 class Person:
-  pass 
+  pass
 
 
 Classes
@@ -176,7 +187,7 @@ class Animal:
 cat = Animal('Meow')
 print(cat.voice) \# Output: Meow
 
-dog = Animal('Woof') 
+dog = Animal('Woof')
 print(dog.voice) \# Output: Woof
 Python type() function
 
@@ -238,7 +249,7 @@ class ChildClass(ParentClass):
   def print_test(self):
     print("Child Method")
     \# Calls the parent's version of print_test()
-    super().print_test() 
+    super().print_test()
           
 child_instance = ChildClass()
 child_instance.print_test()
@@ -277,10 +288,10 @@ We use them to create functionality that can’t be represented as a normal meth
 The example code block shows a class with a definition for the __init__ dunder method.
 class String:
   \# Dunder method to initialize object
-  def __init__(self, string): 
+  def __init__(self, string):
     self.string = string
           
-string1 = String("Hello World!") 
+string1 = String("Hello World!")
 print(string1.string) \# Hello World!
 Method Overriding in Python
 
@@ -318,7 +329,7 @@ Python Inheritance
 Subclassing in Python, also known as “inheritance”, allows classes to share the same attributes and methods from a parent or superclass. Inheritance in Python can be accomplished by putting the superclass name between parentheses after the subclass or child class name.
 
 In the example code block, the Dog class subclasses the Animal class, inheriting all of its attributes.
-class Animal: 
+class Animal:
   def __init__(self, name, legs):
     self.name = name
     self.legs = legs
@@ -336,9 +347,9 @@ Yoki.sound() \# Woof!
 In Python, the + operation can be defined for a user-defined class by giving that class an .__add()__ method.
 class A:
   def __init__(self, a):
-    self.a = a 
+    self.a = a
   def __add__(self, other):
-    return self.a + other.a 
+    return self.a + other.a
     
 obj1 = A(5)
 obj2 = A(10)

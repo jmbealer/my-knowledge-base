@@ -1,3 +1,14 @@
+---
+title: Python-regex
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-regex
 == Python RegEx WIP
 
 A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
@@ -31,50 +42,50 @@ Metacharacters
 
 Metacharacters are characters with a special meaning:
 Character 	Description 	Example 	Try it
-[] 	A set of characters 	"[a-m]" 	
-\ 	Signals a special sequence (can also be used to escape special characters) 	"\d" 	
-. 	Any character (except newline character) 	"he..o" 	
-^ 	Starts with 	"^hello" 	
-$ 	Ends with 	"world$" 	
-* 	Zero or more occurrences 	"aix*" 	
-+ 	One or more occurrences 	"aix+" 	
-{} 	Exactly the specified number of occurrences 	"al{2}" 	
-| 	Either or 	"falls|stays" 	
-() 	Capture and group 	  	 
+[] 	A set of characters 	"[a-m]"
+\ 	Signals a special sequence (can also be used to escape special characters) 	"\d"
+. 	Any character (except newline character) 	"he..o"
+^ 	Starts with 	"^hello"
+$ 	Ends with 	"world$"
+* 	Zero or more occurrences 	"aix*"
++ 	One or more occurrences 	"aix+"
+{} 	Exactly the specified number of occurrences 	"al{2}"
+| 	Either or 	"falls|stays"
+() 	Capture and group
 Special Sequences
 <!--ID: 1639528995128-->
 
 
 A special sequence is a \ followed by one of the characters in the list below, and has a special meaning:
 Character 	Description 	Example 	Try it
-\A 	Returns a match if the specified characters are at the beginning of the string 	"\AThe" 	
+\A 	Returns a match if the specified characters are at the beginning of the string 	"\AThe"
 \b 	Returns a match where the specified characters are at the beginning or at the end of a word
 (the "r" in the beginning is making sure that the string is being treated as a "raw string") 	r"\bain"
-r"ain\b" 	
+r"ain\b"
 
 \B 	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
 (the "r" in the beginning is making sure that the string is being treated as a "raw string") 	r"\Bain"
-r"ain\B" 	
+r"ain\B"
 
-\d 	Returns a match where the string contains digits (numbers from 0-9) 	"\d" 	
-\D 	Returns a match where the string DOES NOT contain digits 	"\D" 	
-\s 	Returns a match where the string contains a white space character 	"\s" 	
-\S 	Returns a match where the string DOES NOT contain a white space character 	"\S" 	
-\w 	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character) 	"\w" 	
-\W 	Returns a match where the string DOES NOT contain any word characters 	"\W" 	
-\Z 	Returns a match if the specified characters are at the end of the string 	"Spain\Z" 	
+\d 	Returns a match where the string contains digits (numbers from 0-9) 	"\d"
+\D 	Returns a match where the string DOES NOT contain digits 	"\D"
+\s 	Returns a match where the string contains a white space character 	"\s"
+\S 	Returns a match where the string DOES NOT contain a white space character 	"\S"
+\w 	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character) 	"\w"
+\W 	Returns a match where the string DOES NOT contain any word characters 	"\W"
+\Z 	Returns a match if the specified characters are at the end of the string 	"Spain\Z"
 Sets
 
 A set is a set of characters inside a pair of square brackets [] with a special meaning:
 Set 	Description 	Try it
-[arn] 	Returns a match where one of the specified characters (a, r, or n) are present 	
-[a-n] 	Returns a match for any lower case character, alphabetically between a and n 	
-[^arn] 	Returns a match for any character EXCEPT a, r, and n 	
-[0123] 	Returns a match where any of the specified digits (0, 1, 2, or 3) are present 	
-[0-9] 	Returns a match for any digit between 0 and 9 	
-[0-5][0-9] 	Returns a match for any two-digit numbers from 00 and 59 	
-[a-zA-Z] 	Returns a match for any character alphabetically between a and z, lower case OR upper case 	
-[+] 	In sets, +, *, ., |, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string 	
+[arn] 	Returns a match where one of the specified characters (a, r, or n) are present
+[a-n] 	Returns a match for any lower case character, alphabetically between a and n
+[^arn] 	Returns a match for any character EXCEPT a, r, and n
+[0123] 	Returns a match where any of the specified digits (0, 1, 2, or 3) are present
+[0-9] 	Returns a match for any digit between 0 and 9
+[0-5][0-9] 	Returns a match for any two-digit numbers from 00 and 59
+[a-zA-Z] 	Returns a match for any character alphabetically between a and z, lower case OR upper case
+[+] 	In sets, +, *, ., |, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string
  
 The findall() Function
 
@@ -255,7 +266,7 @@ $ 	Matches the end of the string or line. For example, /e$/ does not match the '
 {m} 	Specifies that exactly m copies of the previous RE should be matched; fewer matches cause the entire RE not to match. For example, b{5} will match exactly five 'b' characters, but not four.
 {m,n} 	Causes the resulting RE to match from m to n repetitions of the preceding RE. For example, a{2,5} will match from 2 to 5 'a' characters. Omitting m specifies a lower bound of zero, and omitting n specifies an infinite upper bound. As an example, a{4,}b will match 'aaaab' or a thousand 'a' characters followed by a 'b', but not 'aaab'.
 {m,n}? 	Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as few repetitions as possible. This is the non-greedy version of the previous qualifier. For example, on the 6-character string 'aaaaaa', a{3,5} will match 5 'a' characters, while a{3,5}? will only match 3 characters.
-\ 	
+\
 <!--ID: 1639528995148-->
 
 
@@ -277,23 +288,23 @@ Either escapes special characters (permitting you to match characters like '*', 
 (?aiLmsux) 	(One or more letters from the set 'a', 'i', 'L', 'm', 's', 'u', 'x'.) The group matches the empty string; the letters set the corresponding flags: re.A (ASCII-only matching), re.I (ignore case), re.L (locale dependent), re.M (multi-line), re.S (dot matches all), re.U (Unicode matching), and re.X (verbose), for the entire regular expression.
 (?:...) 	A non-capturing version of regular parentheses. Matches whatever regular expression is inside the parentheses, but the substring matched by the group cannot be retrieved after performing a match or referenced later in the pattern.
 (?imsx-imsx:...) 	(Zero or more letters from the set 'i', 'm', 's', 'x', optionally followed by '-' followed by one or more letters from the same set.) The letters set or removes the corresponding flags: re.I (ignore case), re.M (multi-line), re.S (dot matches all), and re.X (verbose), for the part of the expression.
-(?P<name>...) 	
+(?P<name>...)
 
 Similar to regular parentheses, but the substring matched by the group is accessible via the symbolic group name name. Group names must be valid Python identifiers, and each group name must be defined only once within a regular expression. A symbolic group is also a numbered group, just as if the group were not named.
 
 Named groups can be referenced in three contexts. If the pattern is (?P<quote>['"]).*?(?P=quote) (i.e. matching a string quoted with either single or double quotes):
 Context of reference to group “quote” 	Ways to reference it
-in the same pattern itself 	
+in the same pattern itself
 
     (?P=quote) (as shown)
     \1
 
-when processing match object m 	
+when processing match object m
 
     m.group('quote')
     m.end('quote') (etc.)
 
-in a string passed to the repl argument of re.sub() 	
+in a string passed to the repl argument of re.sub()
 
     \g<quote>
     \g<1>
@@ -303,7 +314,7 @@ in a string passed to the repl argument of re.sub()
 (?#...) 	A comment; the contents of the parentheses are simply ignored.
 (?=...) 	Matches if ... matches next, but doesn’t consume any of the string. This is called a lookahead assertion. For example, Isaac (?=Asimov) will match 'Isaac ' only if it’s followed by 'Asimov'.
 (?!...) 	Matches if ... doesn’t match next. This is a negative lookahead assertion. For example, Isaac (?!Asimov) will match 'Isaac ' only if it’s not followed by 'Asimov'.
-(?<=...) 	
+(?<=...)
 
 Matches if the current position in the string is preceded by a match for ... that ends at the current position. This is called a positive lookbehind assertion. (?<=abc)def will find a match in 'abcdef', since the lookbehind will back up 3 characters and check if the contained pattern matches.
 
@@ -322,25 +333,25 @@ This example looks for a word following a hyphen:
 (?(id/name)yes-pattern|no-pattern) 	Will try to match with yes-pattern if the group with given id or name exists, and with no-pattern if it doesn’t. no-pattern is optional and can be omitted. For example, (<)?(\[email protected]\w+(?:\.\w+)+)(?(1)>|$) is a poor email matching pattern, which will match with '<[email protected]>' as well as '[email protected]', but not with '<[email protected]' nor '[email protected]>'. The special sequences consist of '\' and a character from the list below. If the ordinary character is not an ASCII digit or an ASCII letter, then the resulting RE will match the second character. For example, \$ matches the character '$'.
 \number 	Matches the contents of the group of the same number. Groups are numbered starting from 1. For example, (.+) \1 matches 'the the' or '55 55', but not 'thethe' (note the space after the group). This special sequence can only be used to match one of the first 99 groups. If the first digit of number is 0, or number is 3 octal digits long, it will not be interpreted as a group match, but as the character with octal value number. Inside the '[' and ']' of a character class, all numeric escapes are treated as characters.
 \A 	Matches only at the start of the string.
-\b 	
+\b
 
 Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.
 \B 	Matches the empty string, but only when it is not at the beginning or end of a word. This means that r'py\B' matches 'python', 'py3', 'py2', but not 'py', 'py.', or 'py!'. \B is just the opposite of \b, so word characters in Unicode patterns are Unicode alphanumerics or the underscore, although this can be changed by using the ASCII flag. Word boundaries are determined by the current locale if the LOCALE flag is used.
-\d 	
+\d
 
 Matches any character which is a digit. Equivalent to [0-9]. For example, /\d/ or /[0-9]/ matches '2' in "E2 means second example."
 \D 	Matches any character which is not a decimal digit. This is the opposite of \d. If the ASCII flag is used this becomes the equivalent of [^0-9] (but the flag affects the entire regular expression, so in such cases using an explicit [^0-9] may be a better choice).
-\s 	
+\s
 
 Matches any white space character (including tab, new line, carriage return, form feed, vertical tab). [ \t\n\r\f\v].
 For example, /\s\w*/ matches ' apple' in "An apple."
 
 Matches characters considered whitespace in the ASCII character set; this is equivalent to [ \t\n\r\f\v].
 \S 	Matches any character which is not a whitespace character. This is the opposite of \s. If the ASCII flag is used this becomes the equivalent of [^ \t\n\r\f\v] (but the flag affects the entire regular expression, so in such cases using an explicit [^ \t\n\r\f\v] may be a better choice).
-\w 	
+\w
 
 Matches characters considered alphanumeric in the ASCII character set; this is equivalent to [a-zA-Z0-9_]. If the LOCALE flag is used, matches characters considered alphanumeric in the current locale and the underscore.
-\W 	
+\W
 
 Matches any non-word character, equivalent to [^A-Za-z0-9_]. For example, /\W/ or /[^$A-Za-z0-9_]/ matches '$' in "150$"
 \Z 	Matches only at the end of the string.

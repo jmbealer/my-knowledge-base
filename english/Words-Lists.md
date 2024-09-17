@@ -1,3 +1,13 @@
+---
+title: Word Lists
+author: Justin Bealer
+date_created: 2024-04-20, 03-49-39
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Word Lists
 
 ## General Vocabulary

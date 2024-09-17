@@ -1,3 +1,14 @@
+---
+title: Components-of-Fitness
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Components-of-Fitness
 Componets of Fitness
 
     Body Composition - refers primarily to the distribution of muscle and fat in the body. Body size such as height, lengths and girths are also grouped under this componet.

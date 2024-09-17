@@ -1,3 +1,13 @@
+---
+title: Vim Cheatsheet
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Vim Cheatsheet
 
 h[elp] {subject}
@@ -14,7 +24,7 @@ sav[eas] {file} save the current buffer under the name {file}
 :saveas file  # save file as
 :close        # close current pane
 
-## insert mode commands
+## Insert Mode Commands
 
 Insert
 i :: insert before cursor
@@ -40,9 +50,9 @@ O        # append (open) a new line above the current line
 ea       # insert (append) at the end of the word
 Esc      # exit insert mode
 
-## Cursor movement
+## Cursor Movement
 
-### motion and operators
+### Motion and Operators
 
 c change
 d delete
@@ -51,7 +61,7 @@ g~ swap case
 gu make lowercase
 gU make uppercase
 
-### left-right motions
+### Left-right Motions
 
 h [count] characters to the left. exclusive motion.
 l [count] characters to the right. exclusive motion.
@@ -90,11 +100,11 @@ Ctrl + f # move forward one full screen
 Ctrl + d # move forward 1/2 a screen
 Ctrl + u # move back 1/2 a screen
 
-## up-down motions
+## Up-down Motions
 
-## word motions
+## Word Motions
 
-## unsorted
+## Unsorted
 
 Editing
 
@@ -210,7 +220,7 @@ gT or :tabprev or :tabp # move to the previous tab
 :tabmove <number>       # move current tab to the <number>th position (indexed from 0)
 :tabclose or :tabc      # close the current tab and all its windows
 :tabonly or :tabo       # close all tabs except for the current one
-:tabdo command   
+:tabdo command
 
 
 

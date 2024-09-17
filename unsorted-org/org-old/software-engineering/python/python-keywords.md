@@ -1,3 +1,14 @@
+---
+title: Python-keywords
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-keywords
 = Python Keywords WIP
 The Python Keywords must be in your information because you can not use them as a variable name or any other identifier name.
 
@@ -12,7 +23,7 @@ elif	except	def
 global	import	for
 or	print	lambda
 with	class	try
-exec		
+exec
 
 == Python Reserve words: WIP
 

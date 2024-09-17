@@ -1,3 +1,14 @@
+---
+title: Cybrary-CompTIA-A+-Core-1
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Cybrary-CompTIA-A+-Core-1
 = CompTIA A+ 220-1001
 
 == Module 1: System Unit Hardware
@@ -27,7 +38,7 @@ thing you will see once video is activated
 * Pattern of beeps bay be a variable number of short beeps or a mixture of
   long and short beeps. (check motherboard manual)
 
-BIOS - 
+BIOS -
 
 Module 1: ​System Unit HardwareLesson 1.2:​ Basic PC OperationsSkills Learned From This Lesson: Basic PC Operations, What is POST, BIOS/ UEFI, BIOSComponents, BIOS Configuration, and Built-in DiagnosticsPC or Tower is the “System Unit”-System Unit = CPU, Hard drives, memory, motherboard, and other internalcomponents-Provides processing and storage-Basic usage involves inputting of information and its output-Everything connects to the system is a peripheral. (two types)-Input – mouse, keyboards, scanners, track pads, etc-Output – Monitors, Printers, speakers, projectors
 

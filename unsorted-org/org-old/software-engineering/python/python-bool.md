@@ -1,3 +1,14 @@
+---
+title: Python-bool
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-bool
 Boolean (bool)
 
 used to represent the truth value of an expression.
@@ -138,7 +149,7 @@ Example
 
 Check if an object is an integer or not:
 x = 200
-print(isinstance(x, int)) 
+print(isinstance(x, int))
 
 
 x = True 	bool

@@ -1,3 +1,13 @@
+---
+title: 0 Information Index
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # 0 Information Index
 
 [[00-coi/0-idx|00 Computing & Information]]

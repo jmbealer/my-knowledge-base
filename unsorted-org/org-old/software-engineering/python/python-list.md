@@ -1,3 +1,13 @@
+---
+title: Lists WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Lists WIP
 
 : is a **sequence of values**.
@@ -310,7 +320,7 @@ Python List: Cut first two items of a list
 
 See the following statements:
 
->>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements 
+>>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements
 indices start at 0 and end at 3
 >>> print(color_list[0:2]) \# cut first two items
 ['Red', 'Blue']
@@ -324,7 +334,7 @@ Python List: Cut second element from a list
 
 See the following statements:
 
->>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements 
+>>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements
 indices start at 0 and end at 3
 >>> print(color_list[1:2])
 ['Blue']
@@ -340,7 +350,7 @@ Python List: Cut second and third elements from a list
 
 See the following statements:
 
->>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements 
+>>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements
 indices start at 0 and end at 3
 >>> print(color_list[1:-1])
 ['Blue', 'Green']
@@ -354,7 +364,7 @@ Python List: First three items from a list
 
 See the following statements:
 
->>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements 
+>>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements
 indices start at 0 and end at 3
 >>> print(color_list[:3]) \# cut first three items
 ['Red', 'Blue', 'Green']
@@ -368,7 +378,7 @@ Python List: Creates copy of original list
 
 See the following statements:
 
->>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements 
+>>> color_list=["Red", "Blue", "Green", "Black"] \# The list have four elements
 indices start at 0 and end at 3
 >>> print(color_list[:]) \# Creates copy of original list
 ['Red', 'Blue', 'Green', 'Black']
@@ -677,9 +687,9 @@ Lists: Commands
 
 <list> = <list>[from_inclusive : to_exclusive : ±step_size]
 
-<list>.append(<el>)         
+<list>.append(<el>)
 `# Or: <list> += [<el>]`
-<list>.extend(<collection>) 
+<list>.extend(<collection>)
  `# Or: <list> += <collection>`
 
 <list>.sort()
@@ -701,9 +711,9 @@ list_of_chars    = list(<str>)
   index = <list>.index(<el>)
 \# Inserts item at index and moves the rest to the right.
   <list>.insert(index, <el>)
-\# Removes and returns item at index or from the end. 
+\# Removes and returns item at index or from the end.
   <el> = <list>.pop([index])
-\# Removes first occurrence of item or raises ValueError. 
+\# Removes first occurrence of item or raises ValueError.
   <list>.remove(<el>)
 \# Removes all items. Also works on dictionary and set.  
   <list>.clear()`
@@ -769,7 +779,7 @@ Copy
 [1, 2, 3, 4]  
 >>> tuplex = tuple(listx)  
 >>> print(tuplex)  
-(1, 2, 3, 4)   
+(1, 2, 3, 4)
 >>>
 
 Copy
@@ -806,7 +816,7 @@ World
 3
 >>> listx.append([True, False])		\#add new items
 >>> print(listx)
-[['Hello', 'World'], [0, 1, 2, 3, 3, 5], [True, False]]		
+[['Hello', 'World'], [0, 1, 2, 3, 3, 5], [True, False]]
 >>> listx[1][2]=4
 >>> print(listx)
 [['Hello', 'World'], [0, 1, 4, 3, 3, 5], [True, False]]		\#update value items
@@ -892,7 +902,7 @@ Program to show how to add/update single or multiple elements in a list:
 
 lst1 = ['computersc', 'IT', 'CSE'];
 
-print ("Second value of the list is:") 
+print ("Second value of the list is:")
 print (lst1[1])
 
 lst1[1] = 'Robotics'
@@ -1421,7 +1431,7 @@ Determining List Length with len()
 The Python len() function can be used to determine the number of items found in the list it accepts as an argument.
 knapsack = [2, 4, 3, 7, 10]
 size = len(knapsack)
-print(size) 
+print(size)
 \# Output: 5
 
 
@@ -1683,6 +1693,6 @@ Search the Lists and find Elements
 >>>
 
 Copy
-t the current window 
+t the current window
 
   #python #datatypes

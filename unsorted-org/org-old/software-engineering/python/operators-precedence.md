@@ -1,4 +1,14 @@
-# Operator precedence
+---
+title: Operator Precedence
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Operator Precedence
 
 Operator precedence determines how operators are parsed concerning each other. The following table summarizes the operator precedence in Python, from lowest precedence (least binding) to highest precedence (most binding). Operators in the same box have the same precedence. Unless the syntax is explicitly given, operators are binary. Operators in the same box group left to right (except for exponentiation, which groups from right to left).
 
@@ -209,7 +219,7 @@ x<(y<z)
 This expression is actually equivalent to (and this evaluates left-to-right):
 x<y and y<z
 
-  Operations uses the order of operations 
+  Operations uses the order of operations
       addition (+)
       subtraction (-)
       multiplication (*)

@@ -1,3 +1,14 @@
+---
+title: Linux-essentials
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Linux-essentials
 010-160
 
 ## Topic 1: The Linux Community and a Career in Open Source
@@ -264,7 +275,7 @@ The following is a partial list of the used files, terms and utilities:
     Drivers
 
  
-4.3 Where Data is Stored 
+4.3 Where Data is Stored
 
 Weight: 3
 

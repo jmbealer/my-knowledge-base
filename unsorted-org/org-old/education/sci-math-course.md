@@ -1,6 +1,16 @@
+---
+title: Science & Math Courses
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Science & Math Courses
 
-## List of Science & Math courses with video lectures
+## List of Science & Math Courses with Video Lectures
 
 Please note this is collection of courses on Science and math, please do not add talks to the list.
 

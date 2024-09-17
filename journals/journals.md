@@ -1,3 +1,13 @@
+---
+title: Journals
+author: Justin Bealer
+date_created: 2023-12-16, 12-34-33
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Journals
 
 [Home](../0-Home.md)

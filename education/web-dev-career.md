@@ -1,3 +1,13 @@
+---
+title: Web Developer Carrer Paths
+author: Justin Bealer
+date_created: 2024-04-27, 02-17-11
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Web Developer Carrer Paths
 
 - UI/UX Designer

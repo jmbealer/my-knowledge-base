@@ -1,3 +1,14 @@
+---
+title: C-cpp
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# C-cpp
 Cc-cpp/C++
 ==========
 
@@ -70,12 +81,12 @@ what you read and write is called source code.
 what the computer executes is called executable, object code, or machine code (a
 machine language).
 typically C++ source code file are given the suffix:
-  .cpp (ex: hello.cpp) or 
+  .cpp (ex: hello.cpp) or
   .h (ex: std_lib_facllties.h).
 source code > preprocessor >> compiler >> linker > executable
 
 Compile:
-a compiler translates the C++ program into machine language code 
+a compiler translates the C++ program into machine language code
   which it stores on the disk as a file with the extension .o(e.g. hello.o)
 a linker then links the object code with standard library routines that the
 program may use and creates an executable image which is also saved on disk,

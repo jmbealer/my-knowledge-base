@@ -1,3 +1,13 @@
+---
+title: Print the Numbers 0, 1, 2
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 = for Statements
 
 <g_var>=<value>;
@@ -200,20 +210,20 @@ The pass Statement
 for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
 Example
 for x in [0, 1, 2]:
-  pass 
+  pass
 
 You can attach an optional else clause with for statement, in this case, syntax will be -
 
 for variable_name in sequence :
-    statement_1 
+    statement_1
     statement_2
     ....
 else :
-    statement_3 
+    statement_3
     statement_4
     ....
 
-The else clause is only executed after completing the for loop. If a break statement executes in first program block and terminates the loop then the else clause does not execute. 
+The else clause is only executed after completing the for loop. If a break statement executes in first program block and terminates the loop then the else clause does not execute.
 
 
 
@@ -265,7 +275,7 @@ range(a) : Generates a sequence of numbers from 0 to a, excluding a, incrementin
 
 Syntax:
 
-for <variable> in range(<number>): 
+for <variable> in range(<number>):
 
 Example:
 
@@ -305,7 +315,7 @@ Example:
  
  2
  7
- 12 
+ 12
  17
 >>>
 
@@ -314,11 +324,11 @@ Python Loops with range().
 In Python, a for loop can be used to perform an action a specific number of times in a row.
 
 The range() function can be used to create a list that can be used to specify the number of iterations in a for loop.
-# Print the numbers 0, 1, 2:
+# Print the Numbers 0, 1, 2
 for i in range(3):
   print(i)
 
-# Print "WARNING" 3 times:
+# Print "WARNING" 3 times
 for i in range(3):
   print("WARNING")
 

@@ -1,3 +1,13 @@
+---
+title: Change
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Change
 
 change.txt    For Vim version 8.2.  Last change: 2021 Jun 23
@@ -250,7 +260,7 @@ following white space.
 blank; this is probably a bug, because "dw" deletes all the blanks; use the
 'w' flag in 'cpoptions' to make it work like Vi anyway}
 
-If you prefer "cw" to include the space after a word, use this mapping: 
+If you prefer "cw" to include the space after a word, use this mapping:
         :map cw dwi
 Or use "caw" (see aw).
 
@@ -330,7 +340,7 @@ g~~                     Switch case of current line.
 
                                                         gU uppercase
 gU{motion}              Make {motion} text uppercase.
-                        Example: 
+                        Example:
                                 :map! <C-F> <Esc>gUiw`]a
                        This works in Insert mode: press CTRL-F to make the
                         word before the cursor uppercase.  Handy to type
@@ -361,11 +371,11 @@ g?g?                                                    g?g? g??
 g??                     Rot13 encode current line.
 
 To turn one line into title caps, make every first letter of a word
-uppercase: 
+uppercase:
         :s/\v<(.)(\w*)/\u\1\L\2/g
 
 
-Adding and subtracting 
+Adding and subtracting
                                                         CTRL-A
 CTRL-A                  Add [count] to the number or alphabetic character at
                         or after the cursor.
@@ -381,16 +391,16 @@ CTRL-A                  Add [count] to the number or alphabetic character at
                         additional [count] (so effectively creating a
                         [count] incrementing sequence).
                         For Example, if you have this list of numbers:
-                                1. 
-                                1. 
-                                1. 
-                                1. 
+                                1.
+                                1.
+                                1.
+                                1.
                         Move to the second "1." and Visually select three
                         lines, pressing g CTRL-A results in:
-                                1. 
-                                2. 
-                                3. 
-                                4. 
+                                1.
+                                2.
+                                3.
+                                4.
 
                                                         CTRL-X
 CTRL-X                  Subtract [count] from the number or alphabetic
@@ -538,7 +548,7 @@ you can use ">><<" to replace <Tab>s in the indent by spaces (or use
 :retab!).
 
 To move a line several 'shiftwidth's, use Visual mode or the : commands.
-For example: 
+For example:
         Vjj4>           move three lines 4 indents to the right
         :<<<            move current line 3 indents to the left
         :>> 5           move 5 lines 2 indents to the right
@@ -583,7 +593,7 @@ comment (starting with '"') after the :! command.
                         are used when possible (on Unix).
                         When the 'R' flag is included in 'cpoptions' marks in
                         the filtered lines are deleted, unless the
-                        :keepmarks command is used.  Example: 
+                        :keepmarks command is used.  Example:
                                 :keepmarks '<,'>!sort
                        When the number of lines after filtering is less than
                         before, marks in the missing lines are deleted anyway.
@@ -684,7 +694,7 @@ The flags that you can use for the substitute commands:
 
                                                         :&&
 [&]     Must be the first one: Keep the flags from the previous substitute
-        command.  Examples: 
+        command.  Examples:
                 :&&
                 :s/this/that/&
        Note that :s and :& don't keep the flags.
@@ -751,11 +761,11 @@ The flags that you can use for the substitute commands:
         was a substitute or :global, there is no effect.  If the last
         command was a search command such as "/", use the pattern from that
         command.
-        For :s with an argument this already happens: 
+        For :s with an argument this already happens:
                 :s/blue/red/
                 /green
                 :s//red/   or  :~   or  :&r
-       The last commands will replace "green" with "red". 
+       The last commands will replace "green" with "red".
                 :s/blue/red/
                 /green
                 :&
@@ -774,7 +784,7 @@ command.
 
 If the {string} is omitted the substitute is done as if it's empty.  Thus the
 matched pattern is deleted.  The separator after {pattern} can also be left
-out then.  Example: 
+out then.  Example:
         :%s/TESTING
 This deletes "TESTING" from all lines, but only one per line.
 
@@ -784,7 +794,7 @@ For compatibility with Vi these two exceptions are allowed:
                                                 pattern-delimiter E146
 Instead of the '/' which surrounds the pattern and replacement string, you can
 use another single-byte character.  This is useful if you want to include a
-'/' in the search pattern or replacement string.  Example: 
+'/' in the search pattern or replacement string.  Example:
         :s+/+//+
 
 You can use most characters, but not an alphanumeric character, '\', '"' or
@@ -805,7 +815,7 @@ Otherwise these characters in {string} have a special meaning:
 When {string} is equal to "%" and '/' is included with the 'cpoptions' option,
 then the {string} of the previous substitute command is used, see cpo-/
 
-magic   nomagic   action    
+magic   nomagic   action
   &       \&      replaced with the whole matched pattern            s/\&
  \&        &      replaced with &
       \0          replaced with the whole matched pattern          \0 s/\0
@@ -846,7 +856,7 @@ the substitute() function with the following exceptions:
   - <CR> and \r inserts a carriage-return (CTRL-M).
   - \<CR> does not have a special meaning. It's just one of \x.
 
-Examples: 
+Examples:
   :s/a\|b/xxx\0xxx/g             modifies "a b"      to "xxxaxxx xxxbxxx"
   :s/\([abc]\)\([efg]\)/\2\1/g   modifies "af fa bg" to "fa fa gb"
   :s/abcde/abc^Mde/              modifies "abcde"    to "abc", "de" (two lines)
@@ -861,7 +871,7 @@ out the "\L". Same for "\U\l".
 Note: In previous versions CTRL-V was handled in a special way.  Since this is
 not Vi compatible, this was removed.  Use a backslash instead.
 
-command         text    result 
+command         text    result
 :s/aa/a^Ma/     aa      a<line-break>a
 :s/aa/a\^Ma/    aa      a^Ma
 :s/aa/a\\^Ma/   aa      a\<line-break>a
@@ -870,13 +880,13 @@ command         text    result
 
 The numbering of "\1", "\2" etc. is done based on which "\(" comes first in
 the pattern (going left to right).  When a parentheses group matches several
-times, the last one will be used for "\1", "\2", etc.  Example: 
+times, the last one will be used for "\1", "\2", etc.  Example:
   :s/\(\(a[a-d] \)*\)/\2/      modifies "aa ab x" to "ab x"
 The "\2" is for "\(a[a-d] \)".  At first it matches "aa ", secondly "ab ".
 
 When using parentheses in combination with '|', like in \([ab]\)\|\([cd]\),
 either the first or second pattern in parentheses did not match, so either
-\1 or \2 is empty.  Example: 
+\1 or \2 is empty.  Example:
   :s/\([ab]\)\|\([cd]\)/\1x/g   modifies "a b c d"  to "ax bx x x"
 
 
@@ -885,7 +895,7 @@ either the first or second pattern in parentheses did not match, so either
                 :sic :sIc :sie :sIe :sIg :sIl :sin :sIn :sIp
                 :sip :sIr :sir :sr :src :srg :sri :srI :srl
                 :srn :srp :substitute-repeat
-2-letter and 3-letter :substitute commands 
+2-letter and 3-letter :substitute commands
 
 These commands repeat the previous :substitute command with the given flags.
 The first letter is always "s", followed by one or two of the possible flag
@@ -944,9 +954,9 @@ Be careful: The separation character must not appear in the expression!
 Consider using a character like "@" or ":".  There is no problem if the result
 of the expression contains the separation character.
 
-Examples: 
+Examples:
         :s@\n@\="\r" . expand("$HOME") . "\r"@
-This replaces an end-of-line with a new line containing the value of $HOME. 
+This replaces an end-of-line with a new line containing the value of $HOME.
 
         s/E/\="\<Char-0x20ac>"/g
 This replaces each 'E' character with a euro sign.  Read more in <Char->.
@@ -998,7 +1008,7 @@ This replaces each 'E' character with a euro sign.  Read more in <Char->.
                                                         retab-example
 Example for using autocommands and ":retab" to edit a file which is stored
 with tabstops at 8 but edited with tabstops set at 4.  Warning: white space
-inside of strings can change!  Also see 'softtabstop' option. 
+inside of strings can change!  Also see 'softtabstop' option.
 
   :auto BufReadPost     *.xx    retab! 4
   :auto BufWritePre     *.xx    retab! 8
@@ -1024,7 +1034,7 @@ inside of strings can change!  Also see 'softtabstop' option.
 
 
 :reg[isters] {arg}      Display the contents of the numbered and named
-                        registers that are mentioned in {arg}.  For example: 
+                        registers that are mentioned in {arg}.  For example:
                                 :reg 1a
                        to display registers '1' and 'a'.  Spaces are allowed
                         in {arg}.
@@ -1092,7 +1102,7 @@ inside of strings can change!  Also see 'softtabstop' option.
                         or 'a'.
                         If you have a scrollwheel and often accidentally paste
                         text, you can use these mappings to disable the
-                        pasting with the middle mouse button: 
+                        pasting with the middle mouse button:
                                 :map <MiddleMouse> <Nop>
                                 :imap <MiddleMouse> <Nop>
                        You might want to disable the multi-click versions
@@ -1121,7 +1131,7 @@ inside of strings can change!  Also see 'softtabstop' option.
                         expression.  The expression continues until the end of
                         the command.  You need to escape the '|' and '"'
                         characters to prevent them from terminating the
-                        command.  Example: 
+                        command.  Example:
                                 :put ='path' . \",/test\"
                        If there is no expression after '=', Vim uses the
                         previous expression.  You can see it with ":dis =".
@@ -1218,7 +1228,7 @@ There are ten types of registers:               registers {register} E354
 5. Three read-only registers ":, "., "%
 6. Alternate buffer register "#
 7. The expression register "=
-8. The selection and drop registers "*, "+ and "~ 
+8. The selection and drop registers "*, "+ and "~
 9. The black hole register "_
 10. Last search pattern register "/
 
@@ -1289,13 +1299,13 @@ and ":put" commands and with CTRL-R.
 Contains the name of the alternate file for the current window.  It will
 change how the CTRL-^ command works.
 This register is writable, mainly to allow for restoring it after a plugin has
-changed it.  It accepts buffer number: 
+changed it.  It accepts buffer number:
     let altbuf = bufnr(@#)
     ...
     let @# = altbuf
 It will give error E86 if you pass buffer number and this buffer does not
 exist.
-It can also accept a match with an existing buffer name: 
+It can also accept a match with an existing buffer name:
     let @# = 'buffer_name'
 Error E93 if there is more than one buffer matching the given name or E94
 if none of buffers matches the given name.
@@ -1323,7 +1333,7 @@ If the "= register is used for the "p" command, the String is split up at <NL>
 characters.  If the String ends in a <NL>, it is regarded as a linewise
 register.
 
-8. Selection and drop registers "*, "+ and "~ 
+8. Selection and drop registers "*, "+ and "~
 Use these registers for storing and retrieving the selected text for the GUI.
 See quotestar and quoteplus.  When the clipboard is not available or not
 working, the unnamed register is used instead.  For Unix systems the clipboard
@@ -1359,7 +1369,7 @@ Note that the value is restored when returning from a function
 function-search-undo.
 
                                                         @/
-You can write to a register with a :let command :let-@.  Example: 
+You can write to a register with a :let command :let-@.  Example:
         :let @/ = "the"
 
 If you use a put command without specifying a register, Vim uses the register
@@ -1450,7 +1460,7 @@ works well with "gqj" (format current and next line) and "gq}" (format until
 end of paragraph).  Note: When 'formatprg' is set, "gq" leaves the cursor on
 the first formatted line (as with using a filter command).
 
-If you want to format the current paragraph and continue where you were, use: 
+If you want to format the current paragraph and continue where you were, use:
         gwap
 If you always want to keep paragraphs formatted you may want to add the 'a'
 flag to 'formatoptions'.  See auto-format.
@@ -1476,7 +1486,7 @@ sense to use an autoload script, so the corresponding script is only loaded
 when actually needed and the script should be called <filetype>format.vim.
 
 For example, the XML filetype plugin distributed with Vim in the $VIMRUNTIME
-directory, sets the 'formatexpr' option to: 
+directory, sets the 'formatexpr' option to:
 
    setlocal formatexpr=xmlformat#Format()
 
@@ -1485,7 +1495,7 @@ xmlformat#Format() function, in the directory:
 $VIMRUNTIME/autoload/xmlformat.vim
 
 Here is an example script that removes trailing whitespace from the selected
-text.  Put it in your autoload directory, e.g. ~/.vim/autoload/format.vim: 
+text.  Put it in your autoload directory, e.g. ~/.vim/autoload/format.vim:
 
   func! format#Format()
     " only reformat on explicit gq command
@@ -1501,7 +1511,7 @@ text.  Put it in your autoload directory, e.g. ~/.vim/autoload/format.vim:
     return 0
   endfunc
 
-You can then enable the formatting by executing: 
+You can then enable the formatting by executing:
   setlocal formatexpr=format#Format()
 
 Note: this function explicitly returns non-zero when called from insert mode
@@ -1593,11 +1603,11 @@ Any blank space in the text before and after the {string} is part of the
 required part of the comment string.
 
 When one comment leader is part of another, specify the part after the whole.
-For example, to include both "-" and "->", use 
+For example, to include both "-" and "->", use
         :set comments=f:->,f:-
 
 A three-piece comment must always be given as start,middle,end, with no other
-parts in between.  An example of a three-piece comment is 
+parts in between.  An example of a three-piece comment is
         sr:/*,mb:*,ex:*/
 for C-comments.  To avoid recognizing "*ptr" as a comment, the middle string
 includes the 'b' flag.  For three-piece comments, Vim checks the text after
@@ -1617,14 +1627,14 @@ part which is longer, the end part is used.  This makes a C style comment work
 without requiring the middle part to end with a space.
 
 Here is an example of alignment flags at work to make a comment stand out
-(kind of looks like a 1 too). Consider comment string: 
+(kind of looks like a 1 too). Consider comment string:
         :set comments=sr:/***,m:**,ex-2:******/
 
                                    /*** 
                                      **<--right aligned from "r" flag 
                                      ** 
-offset 2 spaces for the "-2" flag--->** 
-                                   ******/ 
+offset 2 spaces for the "-2" flag--->**
+                                   ******/
 In this case, the first comment was typed, then return was pressed 4 times,
 then "/" was pressed to end the comment.
 
@@ -1645,7 +1655,7 @@ for context based indenting of comments but cannot replicate many three piece
 indent alignments.  However, 'indentexpr' has the ability to work better with
 three piece comments.
 
-Other examples: 
+Other examples:
    "b:*"        Includes lines starting with "*", but not if the "*" is
                 followed by a non-blank.  This avoids a pointer dereference
                 like "*str" to be recognized as a comment.
@@ -1662,7 +1672,7 @@ You can use the 'formatoptions' option  to influence how Vim formats text.
 default setting is "tcq".  You can separate the option letters with commas for
 readability.
 
-letter   meaning when present in 'formatoptions'    
+letter   meaning when present in 'formatoptions'
                                                         fo-t
 t       Auto-wrap text using textwidth
                                                         fo-c
@@ -1694,7 +1704,7 @@ n       When formatting text, recognize numbered lists.  This actually uses
         default is to find a number, optionally followed by '.', ':', ')',
         ']' or '}'.  Note that 'autoindent' must be set too.  Doesn't work
         well together with "2".
-        Example: 
+        Example:
                 1. the first item
                    wraps
                 2. the second item
@@ -1703,7 +1713,7 @@ n       When formatting text, recognize numbered lists.  This actually uses
         for the rest of the paragraph, instead of the indent of the first
         line.  This supports paragraphs in which the first line has a
         different indent than the rest.  Note that 'autoindent' must be set
-        too.  Example: 
+        too.  Example:
                         first line of a paragraph
                 second line of the same paragraph
                 third line.
@@ -1743,20 +1753,20 @@ B       When joining lines, don't insert a space between two multibyte
                                                         fo-j
 j       Where it makes sense, remove a comment leader when joining lines.  For
         example, joining:
-                int i;   // the index 
-                         // in the list 
+                int i;   // the index
+                         // in the list
         Becomes:
-                int i;   // the index in the list 
+                int i;   // the index in the list
                                                         fo-p
 p       Don't break lines at single spaces that follow periods.  This is
         intended to complement 'joinspaces' and cpo-J, for prose with
         sentences separated by two spaces.  For example, with 'textwidth' set
-        to 28: 
+        to 28:
                 Surely you're joking, Mr. Feynman!
-       Becomes: 
+       Becomes:
                 Surely you're joking,
                 Mr. Feynman!
-       Instead of: 
+       Instead of:
                 Surely you're joking, Mr.
                 Feynman!
 
@@ -1786,9 +1796,9 @@ starting with "/*" or "*" and containing "*/", will cause no comment leader to
 be inserted, and the indent of the new line is taken from the line containing
 the start of the comment.
 E.g.:
-    /* 
-     * Your typical comment. 
-     */ 
+    /*
+     * Your typical comment.
+     */
     The indent on this line is the same as the start of the above
     comment.
 
@@ -1796,9 +1806,9 @@ All of this should be really cool, especially in conjunction with the new
 :autocmd command to prepare different settings for different types of file.
 
 Some examples:
-  for C code (only format comments): 
+  for C code (only format comments):
         :set fo=croq
- for Mail/news (format all, don't start comment with "o" command): 
+ for Mail/news (format all, don't start comment with "o" command):
         :set fo=tcrq
 
 
@@ -1831,7 +1841,7 @@ editing text paragraphs.  A few hints on how to use this:
 And a few warnings:
 
 - When part of the text is not properly separated in paragraphs, making
-  changes in this text will cause it to be formatted anyway.  Consider doing 
+  changes in this text will cause it to be formatted anyway.  Consider doing
 
         :set fo-=a
 

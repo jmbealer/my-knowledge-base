@@ -1,3 +1,13 @@
+---
+title: Membership Operators `in, not in`
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Membership Operators `in, not in`
 
   Membership operators are used to test if a sequence is presented in an object.
@@ -6,8 +16,8 @@ Python Membership Operators
 
 Membership operators are used to test if a sequence is presented in an object:
 Operator 	Description 	Example 	Try it
-in  	Returns True if a sequence with the specified value is present in the object 	x in y 	
-not in 	Returns True if a sequence with the specified value is not present in the object 	x not in y 	
+in  	Returns True if a sequence with the specified value is present in the object 	x in y
+not in 	Returns True if a sequence with the specified value is not present in the object 	x not in y
 
 Python Membership OperatorsSymbol	Operator Name	Description
 in	in	The result of this operation becomes True if it finds a value in a specified sequence & False otherwise.

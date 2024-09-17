@@ -1,6 +1,16 @@
+---
+title: The Linux Command Line
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # The Linux Command Line
 
-## learning the shell
+## Learning the Shell
 
 what is the shell
   the shell is program that take keyboard command and passe them to the
@@ -27,7 +37,7 @@ virtual terminal or virtual consoles
   access by pressing C-A-F1 through C-A-F6
   switch from one virtual console to another; A-F1 through F-F6
   
-## navigation
+## Navigation
 
 pwd - print name of current working directory
 cd - change directory

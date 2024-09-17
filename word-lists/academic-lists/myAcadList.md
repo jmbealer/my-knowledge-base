@@ -1,4 +1,15 @@
-﻿abdominal
+---
+title: myAcadList
+author: Justin Bealer
+date_created: 2024-07-20, 06-03-47
+date_modified: 2024-09-17, 09-29-48
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# myAcadList
+abdominal
 absorb
 absorption
 accelerate

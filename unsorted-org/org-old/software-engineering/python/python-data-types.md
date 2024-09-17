@@ -1,4 +1,14 @@
-# what is Data Types WIP
+---
+title: What is Data Types WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What is Data Types WIP
 
 a classification or category of various types of data, that states the possible
 values that can be taken, how they are stored, and what range of operations are
@@ -45,7 +55,7 @@ increased functionality.
 .Data Structure (Data Types in Python)
 **Immutable** Data
 : immutable objects
-: Immutable objects can be read but not modified (rewritten) after being created. 
+: Immutable objects can be read but not modified (rewritten) after being created.
 : For example, a string is immutable, so you cannot add caracters to a string without reassign the string itself.
 
 **Mutable** Data

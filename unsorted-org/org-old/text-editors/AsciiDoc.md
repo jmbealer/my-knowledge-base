@@ -1,3 +1,14 @@
+---
+title: AsciiDoc
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# AsciiDoc
 = AsciiDoc
 
 * Ascii is a markup language similar to Markdown.
@@ -28,7 +39,7 @@
 
 ** This article about chips is  going to be fun.
 * Paragraphs
-* 
+*
 == Attributes
 
 == Headers

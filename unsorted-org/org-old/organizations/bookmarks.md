@@ -1,3 +1,13 @@
+---
+title: Bookmarks
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Bookmarks
 
 ## 000::Generalities
@@ -210,7 +220,7 @@ Formal Sciences
   - Business
   - Law
 
-### 613.7::Physical Fitness gymnastics
+### 613.7::Physical Fitness Gymnastics
 <!--ID: 1639528998076-->
 
   - Exercises

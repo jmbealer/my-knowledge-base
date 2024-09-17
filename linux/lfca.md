@@ -1,3 +1,13 @@
+---
+title: Linux Foundation Certified IT Associate (LFCA)
+author: Justin Bealer
+date_created: 2024-03-22, 03-45-29
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Linux Foundation Certified IT Associate (LFCA)
 
 ## Links

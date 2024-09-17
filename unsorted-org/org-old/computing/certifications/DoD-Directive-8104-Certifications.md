@@ -1,3 +1,14 @@
+---
+title: DoD-Directive-8104-Certifications
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# DoD-Directive-8104-Certifications
 = DoD Directive 8104 Certifications
 
 == Information Assurance Technical IAT I-III

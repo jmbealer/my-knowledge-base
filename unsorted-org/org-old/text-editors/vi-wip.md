@@ -1,6 +1,17 @@
+---
+title: Vi-wip
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-49
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Vi-wip
 Symbol | Function
 
-## Cursor motions
+## Cursor Motions
 motions and operators
 c      An  operator  which changes the following object, replacing it with the following input text up to an ESC.  If more than part of a single line is affected, the text which is changed away is saved in the numeric named buffers.  If only
 part of the current line is affected, then the last character to be changed away is marked with a $.  A count causes that many objects to be affected, thus both 3c) and c3) change the following three sentences (7.4).
@@ -58,7 +69,7 @@ text object motions
 ( | Go to beginning of sentence
 ) | Go to end of sentence
 { | Go to beginning of paragraph
-} | Go to end of paragraph 
+} | Go to end of paragraph
 {      Retreats to the beginning of the beginning of the preceding paragraph.  A paragraph begins at each macro in the paragraphs option, normally `.IP', `.LP', `.PP', `.QP' and `.bp'.  A paragraph also begins after a completely empty  line,
               and at each section boundary (see [[ above) (4.2, 6.8, 7.6).
 }      Advances to the beginning of the next paragraph.  See { for the definition of paragraph (4.2, 6.8, 7.6).
@@ -73,8 +84,8 @@ M | Go to middle line of screen
 L | Go to last line of screen
 
 
-## scroll
-## insert
+## Scroll
+## Insert
 
 a      Appends arbitrary text after the current cursor position; the insert can continue onto multiple lines by using RETURN within the insert.  A count causes the inserted text to be replicated, but only if the inserted text is all  on  one
 line.  The insertion terminates with an ESC (3.1, 7.2).
@@ -85,7 +96,7 @@ o      Opens new lines below the current line; otherwise like O (3.1).
 O      Opens a new line above the current line and inputs text there up to an ESC.  A count can be used on dumb terminals to specify a number of lines to be opened; this is generally obsolete, as the slowopen option works better (3.1).
 
 
-## change
+## Change
 X      Deletes the character before the cursor.  A count repeats the effect, but only characters on the current line are deleted.
 S      Changes whole lines, a synonym for cc.  A count substitutes for that many lines.  The lines are saved in the numeric buffers, and erased on the screen before the substitution begins.
 Y      Yanks a copy of the current line into the unnamed buffer, to be put back by a later p or P; a very useful synonym for yy.  A count yanks that many lines.  May be preceded by a buffer name to put lines in that buffer (7.4).
@@ -130,7 +141,7 @@ z      Redraws  the screen with the current line placed as specified by the foll
 Interrupts the editor, returning it to command accepting state (1.6, 7.5).
 
 
-## undo
+## Undo
 
 J      Joins together lines, supplying appropriate white space: one space between words, two spaces after a ., and no spaces at all if the first character of the joined on line is ).  A count causes that many lines to be joined  rather  than
 the default two (6.5, 7.1f).
@@ -146,8 +157,8 @@ _      Unused.
 with a m command.  When used with an operator such as d, the operation takes place from the exact marked place to the current position within the line; if using ', the operation takes place over complete lines (2.2, 5.3).
 
 
-## repeat
-## visual
+## Repeat
+## Visual
 
 
 

@@ -1,8 +1,18 @@
+---
+title: General Education Requirements (45 Credits)
+author: Justin Bealer
+date_created: 2023-12-22, 12-29-32
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # General Education Requirements (45 Credits)
 
 ## A. Intellectual and Practical Skills (15 Credits)
 
-### Written Communication 6 ready
+### Written Communication 6 Ready
 
 ENC-1010: Writing for Success 3
 * [English Composition I - sophia](https://app.sophia.org/online-courses/english-composition-i-4)
@@ -14,14 +24,14 @@ ENC-1020: English Composition II 3
 * [English Composition II - sophia](https://app.sophia.org/online-courses/english-composition-ii)
         * English 205: English Composition II study.com
         * ENGL002 English Composition II saylor.org
-### Oral Communication 3 ready
+### Oral Communication 3 Ready
 
 COM-2090: Public Speaking 3
 * [Public Speaking - sophia](https://app.sophia.org/online-courses/public-speaking-4)
         * Communications 120: Presentation Skills in the Workplace
           * faster
 ENG-2020: Technical Communication
-### Quantitative Literacy 3 ready
+### Quantitative Literacy 3 Ready
 
 MAT-1210: College Algebra 3
 * [College Algebra - sophia](https://app.sophia.org/online-courses/college-algebra-3)
@@ -357,7 +367,7 @@ STA-2010: Principles of Statistics Zero Textbook Cost
     * PHY-1290: Physics II Lab
     * PSY-3740: Physiological Psychology
 
-## unadded
+## Unadded
 sophia.org
 	English and Communication
 		Visual Communications - maybe

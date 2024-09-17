@@ -1,3 +1,14 @@
+---
+title: Language
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Language
 
 Language: the method of communication, either spoken or written, consisting of the use of words in a structured and conventional way.
   
@@ -106,7 +117,7 @@ Written or compositional fluency can be measured in a variety of ways. Researche
 
 The components of speech production include:
 - phonation (producing sound)
-- resonance 
+- resonance
 - flunecy
 - intonation
 - pitch variance;

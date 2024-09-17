@@ -1,3 +1,14 @@
+---
+title: My-Vim-Cheat-list
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# My-Vim-Cheat-list
 
 ### Insert Mode Commands <inserting>
 
@@ -93,7 +104,7 @@ all be undone and repeated with the "." command.
   - when lines wrap ('wrap' on)
 - g^ to the first non-blank character of the screen line. exclusive motion.
   - when lines wrap ('wrap' on)
-- gm 
+- gm
   - like "g0", but half a screenwidth to the right (or as much as possible).
 - g$ or g`<End>`
   - to the last character of the screen line and [count - 1] screen lines
@@ -173,7 +184,7 @@ all be undone and repeated with the "." command.
   - Backward to the end of WORD [count] inclusive.
   - go backwards to the end of the previous WORD.
 
-### Unsorted Commands 
+### Unsorted Commands
 
 i insert mode
 I insert mode line
@@ -235,7 +246,7 @@ dd delete entire line
 2dd delete entire line
 U undo changes on entire line
 r replace character under cursor
-cw changes word 
+cw changes word
 c$ or C changes to end of line
 c2w change two words
 50G or :50 go to line 50
@@ -296,7 +307,7 @@ ce change rest of current word
   - verbs: the operation you want to take on the text
 - Motions provide context to your Operators. These execute the action in a
     particular way.
-  - nouns 
+  - nouns
 - Counts are optional and simply let you put a multiplier to your command and
     motion.
 

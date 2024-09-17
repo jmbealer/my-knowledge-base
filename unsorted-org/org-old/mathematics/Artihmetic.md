@@ -1,5 +1,16 @@
+---
+title: Artihmetic
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Artihmetic
 Arithmetic: is a branch of mathematics that consists of the study of numbers, especially the properties of the traditional operations on them-addition, subtraction, muliplication and division.
-an elementary part of number theory 
+an elementary part of number theory
 is an elementary branch of mathematics that is used by almost everyone for tasks ranging from simple day-to-day counting to advanced science and business calculations.
 
 
@@ -56,7 +67,7 @@ Arithmetic Operations and Related concepts
   Factoring
   Exeponentiation
   Square Root
-  Cube Root 
+  Cube Root
   Properties of Operations
 Types of Numbers
 Elementary Statistics
@@ -77,7 +88,7 @@ Fractions
 Percentage
 
 
-Whole Numbers 
+Whole Numbers
 Fractions and Mixed Numbers
 Decimals and Percents
 Ratios, Rates, Proportions, Measurement

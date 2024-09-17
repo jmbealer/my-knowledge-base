@@ -1,3 +1,13 @@
+---
+title: CompTIA IT Fundamentals FC0-U61
+author: Justin Bealer
+date_created: 2024-03-26, 04-08-53
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # CompTIA IT Fundamentals FC0-U61
 
 ## Links
@@ -5,9 +15,9 @@
 
 ## 1.0 IT Concepts and Terminology 17%
 
-Look up IT concepts and terminology 
+Look up IT concepts and terminology
 
-### 1.1 Compare and contrast notational systems.
+### 1.1 Compare and Contrast Notational Systems
 
 What are notational systems?
 
@@ -18,7 +28,7 @@ What are notational systems?
   - ASCII
   - Unicode
 
-### 1.2 Compare and contrast fundamental data types and their characteristics.
+### 1.2 Compare and Contrast Fundamental Data Types and Their Characteristics
 
 - Char
 - Strings
@@ -27,28 +37,28 @@ What are notational systems?
   - Floats
 - Boolean
 
-### 1.3 Illustrate the basics of computing and processing.
+### 1.3 Illustrate the Basics of Computing and Processing
 
 - Input
 - Output
 - Processing
 - Storage
-### 1.4 Explain the value of data and information.
+### 1.4 Explain the Value of Data and Information
 
 - Data and information as assets
 - Importance of investing in security
 - Relationship of data to creating information
 - Intellectual property
-  - Trademarks 
+  - Trademarks
   - Copyright
   - Patents
 - Digital products
 - Data-driven business decisions
-  - Data capture and collection 
+  - Data capture and collection
   - Data correlation
   - Meaningful reporting
 
-### 1.5 Compare and contrast common units of measure.
+### 1.5 Compare and Contrast Common Units of Measure
 
 - Storage unit
   - Bit
@@ -63,12 +73,12 @@ What are notational systems?
   - Kbps
   - Mbps
   - Gbps
-  - Tbps 
+  - Tbps
 - Processing speed
   - MHz
   - GHz
 
-### 1.6 Explain the troubleshooting methodology.
+### 1.6 Explain the Troubleshooting Methodology
 
 - Identify the problem
   - Gather information

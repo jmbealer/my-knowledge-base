@@ -1,3 +1,14 @@
+---
+title: Bscs
+author: Justin Bealer
+date_created: 2024-04-19, 07-05-26
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Bscs
 Introduction to IT 4 1
 Applied Probability and Statistics 3 1
 Network and Security - Foundations 3 1

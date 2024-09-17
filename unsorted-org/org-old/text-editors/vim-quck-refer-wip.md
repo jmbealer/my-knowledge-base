@@ -1,11 +1,21 @@
+---
+title: Vim Quick Reference Guide
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-49
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Vim Quick Reference Guide
 
 N is used to indicate an optional count that can be given before the
 command.
 
-## motions
+## Motions
 
-### left-right motions
+### Left-right Motions
 
 [N]h left
   [N]<Ctrl-h> left
@@ -41,7 +51,7 @@ gM
 <!--ID: 1639612872570-->
 
 
-### up-down motions
+### Up-down Motions
 
 [N]k
   up N lines
@@ -68,9 +78,9 @@ gM
   differs from j when line wraps
 
 
-### text objects motions
+### Text Objects Motions
 
-w 
+w
   N words forward
 W
   N blank-separated WORDs forward
@@ -90,14 +100,14 @@ gE
 )
 (
 
-### pattern searches
-### mark and motions
+### Pattern Searches
+### Mark and Motions
 
 scrolling
 
-## insert
+## Insert
 
-### inserting text
+### Inserting Text
 
 a
   append text after the cursor; N times
@@ -115,9 +125,9 @@ O
 `:startr[eplace][!]`
 
 ### Keys
-### Special keys
+### Special Keys
 ### Digraphs
-### Special inserts
+### Special Inserts
 
 change
 visual

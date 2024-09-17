@@ -1,3 +1,13 @@
+---
+title: Mathematics Curriculum
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Mathematics Curriculum
 
 [CS Curriculum](cs-curriculum.md)
@@ -24,11 +34,11 @@
 [Differential Equations](differential-equations.md)
 [Linear Algebra](linear-algebra.md)
 
-## unsorted
+## Unsorted
 
 [Probability & Statistics](prob-stat.md)
 
-### test
+### Test
 Complex Analysis & Variables
 Fundamentals of Complex Analysis by Saff and Snider
 Complex Variables and Applications by Brown and Churchill
@@ -81,7 +91,7 @@ Real and Complex Analysis by Rudin
 21. Introduction to Functional Analysis [MIT's 18.102](https://ocw.mit.edu/courses/mathematics/18-102-introduction-to-functional-analysis-spring-2009/syllabus/)
 
 
-### others
+### Others
 - **General (uncategorized)**
 	- [Math Foundations A (1-79) - Prof Wildberger](https://www.youtube.com/playlist?list=PL5A714C94D40392AB) ([B (80-149)](https://www.youtube.com/playlist?list=PLIljB45xT85DpiADQOPth56AVC48SrPLc), [C (150-- )](https://www.youtube.com/playlist?list=PLIljB45xT85AYIeGfDQwHM8i6PQEDnnTI) )
 	- [18.085 Computational Science and Engineering I - MIT OCW](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/)

@@ -1,4 +1,15 @@
-﻿abdominal
+---
+title: nawl-1.2-added
+author: Justin Bealer
+date_created: 2024-07-20, 05-16-32
+date_modified: 2024-09-17, 09-29-48
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# nawl-1.2-added
+abdominal
 absorb
 absorption
 accelerate

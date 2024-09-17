@@ -1,3 +1,13 @@
+---
+title: Sophia
+author: Justin Bealer
+date_created: 2024-06-29, 02-59-12
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Sophia
 
 [Sophia.org](https://www.sophia.org/)
@@ -5,7 +15,7 @@
 
 Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State University**.
 
-## Business - Total of 30 credits - 24 credits DONE
+## Business - Total of 30 Credits - 24 Credits DONE
 
 * Business Communication 3 credits
   * Thomas Edison State University
@@ -59,7 +69,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Accounting
     1. Principles of Finance
   * **No** Touchstones
-* Principles of Management 3 credits **DONE** 
+* Principles of Management 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: BUS 341 Management Concepts and Applications
   * WGU: Principles of Management
@@ -77,7 +87,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Project Management
   * **No** Touchstones
 
-## Career Success - Total of 19 credits - 2 credits DONE
+## Career Success - Total of 19 Credits - 2 Credits DONE
 
 * Career Readiness 3 credits
   * Excelsior: Lower Level Applied Professional/Free Elective
@@ -87,7 +97,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * Thomas Edison State University
   * COLLEGE1001
   * **1** Touchstones
-* Conflict Resolution 3 credits **DONE** 
+* Conflict Resolution 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: COMM 324 Conflict Management
   * ConRes1001
@@ -134,7 +144,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * ENG1020
   * **6** Touchstones
 
-## Computer Science and IT - Total of 18 credits - 12 credits DONE
+## Computer Science and IT - Total of 18 Credits - 12 Credits DONE
 
 * Introduction to Information Technology 3 credits **DONE**
   * Thomas Edison State University
@@ -142,7 +152,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * WGU: Introduction to IT
   * CS1001
   * **No** Touchstones
-* Introduction to Java Programming 3 credits **DONE** 
+* Introduction to Java Programming 3 credits **DONE**
   * Thomas Edison State University
   * Excelsior: Technology Elective
   * **1** Touchstones
@@ -169,7 +179,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * CS1005
   * **No** Touchstones
 
-## English and Communications - Total of 18 credits - 3 credits DONE
+## English and Communications - Total of 18 Credits - 3 Credits DONE
 
 * English Composition I 3 credits
   * Thomas Edison State University: ENC 1010 Writing for Success
@@ -207,7 +217,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * COMM1010
   * **2** Touchstones
 
-## Humanities - Total of 18 credits - 9 credits DONE
+## Humanities - Total of 18 Credits - 9 Credits DONE
 
 * Ancient Greek Philosophers 3 credits
   * Thomas Edison State University
@@ -253,7 +263,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
     1. Introduction to Sociology
   * **No** Touchstones
 
-## Languages - Total of 9 credits
+## Languages - Total of 9 Credits
 
 * French I 3 credits
   * skip
@@ -270,7 +280,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * SPAN1002
   * **5** Touchstones
 
-## Math - Total of 18 credits - 18 credits DONE
+## Math - Total of 18 Credits - 18 Credits DONE
 
 * Calculus I 4 credits **DONE**
   * Thomas Edison State University: MAT 2310 Calculus I
@@ -305,7 +315,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * MATH1035
   * **No** Touchstones
 
-## Science - Total of 22 credits - 3 credits DONE
+## Science - Total of 22 Credits - 3 Credits DONE
 
 * Anatomy and Physiology I 3 credits **DONE**
   * WGU: Integrated Physical Sciences
@@ -371,7 +381,7 @@ Going to do **Pierpont** and **Excelsior** first, then **Thomas Edison State Uni
   * SCIE1046
   * **2** Touchstones
 
-## Social Science - Total of 27 credits - 12 credits DONE
+## Social Science - Total of 27 Credits - 12 Credits DONE
 
 * Introduction to Psychology: Smarter Decisions Through Psychology 3 credits
   * Thomas Edison State University

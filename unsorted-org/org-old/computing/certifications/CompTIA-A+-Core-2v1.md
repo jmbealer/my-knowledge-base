@@ -1,3 +1,14 @@
+---
+title: CompTIA-A+-Core-2v1
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# CompTIA-A+-Core-2v1
 = CompTIA A+ 220-1002 (Core 2)
 
 [1 0 Operating Systems](1.0-Operating-Systems.md)[== 1.0 Operating Systems 27%]

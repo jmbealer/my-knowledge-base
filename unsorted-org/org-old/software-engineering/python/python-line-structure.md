@@ -1,3 +1,13 @@
+---
+title: "What Python Line Structure: WIP"
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # What Python Line Structure: WIP
 
 A Python program is divided into a number of logical lines and every logical line is terminated by the token NEWLINE.

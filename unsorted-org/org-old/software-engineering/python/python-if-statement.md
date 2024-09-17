@@ -1,6 +1,16 @@
+---
+title: Python if/elif/else Statement WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Python if/elif/else Statement WIP
 
-## if Statement
+## If Statement
 
 `if <expr>:
   <statement(s)>
@@ -68,7 +78,7 @@ if <expr>:
 pass statement(s); performs no action
 pass statement(s); placeholder when a statement is syntactically required
 
-## elif Statement
+## Elif Statement
 
 elif is short for else if
 elif/else statement(s) are optional
@@ -79,7 +89,7 @@ elif <expr>; allows for continued conditions after False if/elif statement(s).
 
 elif <False>; continue to an optional else statement.
 
-## else Statement
+## Else Statement
 
 if/elif <False>: else statement executes;
 if/elif <False>: if no else statement no code is executed
@@ -153,7 +163,7 @@ if s == 'JavaScript' or s == 'jQuery' or s == 'ZinoUI':
 
 Output:
 
-jQuery Tutorial 
+jQuery Tutorial
 jQuery Tutorial
 
 The Python or operator combines two Boolean expressions and evaluates to True if at least one of the expressions returns True. Otherwise, if both expressions are False, then the entire expression evaluates to False.
@@ -266,7 +276,7 @@ else:
 
 Output:
 
- 20 
+ 20
  the value of x different from 50
 
 Short Hand If ... Else
@@ -294,14 +304,14 @@ print("A") if a > b else print("=") if a == b else print("B")
 Handling Exceptions in Python
 
 A try and except block can be used to handle error in code block. Code which may raise an error can be written in the try block. During execution, if that code block raises an error, the rest of the try block will cease executing and the except code block will execute.
-def check_leap_year(year): 
+def check_leap_year(year):
   is_leap_year = False
   if year % 4 == 0:
     is_leap_year = True
 
 try:
   check_leap_year(2018)
-  print(is_leap_year) 
+  print(is_leap_year)
   \# The variable is_leap_year is declared inside the function
 except:
   print('Your code raised an error!')
@@ -312,7 +322,7 @@ or Operator
 
 2. Python Switch Case Statement
 
-Python does not have a simple switch case construct. 
+Python does not have a simple switch case construct.
 
 But Python does not have this. So, to get around this, we use Python’s built-in dictionary construct to implement cases and decided what to do when a case is met. We can also specify what to do when none is met.
 

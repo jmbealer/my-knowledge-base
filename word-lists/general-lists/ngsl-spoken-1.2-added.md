@@ -1,3 +1,14 @@
+---
+title: ngsl-spoken-1.2-added
+author: Justin Bealer
+date_created: 2024-07-20, 05-41-44
+date_modified: 2024-09-17, 09-29-42
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# ngsl-spoken-1.2-added
 be
 the
 fill

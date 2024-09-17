@@ -1,3 +1,13 @@
+---
+title: Python Tokens
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Python Tokens
 
 Tokens are very basic components of the source code.
@@ -38,7 +48,7 @@ Apart from these rules, there are a few naming conventions that you should follo
   Name a strongly private identifier with two leading underscores `( __password)`
   Special identifiers by Python end with two leading underscores.
 
-2. Ways to Define Identifiers in Python 
+2. Ways to Define Identifiers in Python
 
 We can define identifiers in Python in a few ways:
 “An identifier is a user-defined name to represent a variable, a function, a class, a module, or any other object.”

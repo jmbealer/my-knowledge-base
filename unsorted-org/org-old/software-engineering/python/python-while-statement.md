@@ -1,3 +1,14 @@
+---
+title: Python-while-statement
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-while-statement
 = Python while Statement WIP
 
 Definite iteration: the number of repetitions is determined when the loop starts.
@@ -128,7 +139,7 @@ while (x < 10):
      s = s + x
      x = x + 1
 else :
-     print('The sum of first 9 integers : ',s)    
+     print('The sum of first 9 integers : ',s)
 
 Output:
 
@@ -147,8 +158,8 @@ while (x < 10):
      if (x == 5):
           break
 else :
-     print('The sum of first 9 integers : ',s)        
-print('The sum of ',x,' numbers is :',s) 
+     print('The sum of first 9 integers : ',s)
+print('The sum of ',x,' numbers is :',s)
 
 Output:
 

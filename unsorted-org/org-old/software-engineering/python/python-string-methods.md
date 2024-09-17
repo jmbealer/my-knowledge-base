@@ -1,3 +1,13 @@
+---
+title: Python 3
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
 = Python String Methods
 
 all the string methods always return new values and do not change or manipulate
@@ -794,7 +804,7 @@ Python strings are not mutable. All string methods return a new string.
 
 Negative index counts from end, starting with -1
 
-# python 3
+# Python 3
 
 aa = "01234"
 print(aa[2:4] == "23") # True
@@ -809,7 +819,7 @@ print(cc[2:] == "cd") # True
 
 len(str) → return the number of chars in str.
 
-# python 3
+# Python 3
 
 a = "this"
 print(len(a)) # 4
@@ -818,14 +828,14 @@ print(len(a)) # 4
 
 str1 + str2 → joins two strings into one.
 
-# python 3
+# Python 3
 print("aa" + " bb")
 
 == Repeat
 
 str * n → repeat the string n times.
 
-# python 3
+# Python 3
 print("a" * 3)     # aaa
 
 == Search Substring
@@ -894,13 +904,13 @@ in the above, the start and end are optional.
     str.expandtabs() → replace tab char by space.
     str.expandtabs(tabsize) → ◇
 
-# -*- coding: utf-8 -*-
-# python 2
-# example of string ljust
+# -*- Coding: Utf-8 -*-
+# Python 2
+# Example of String Ljust
 x = """something in water"""
 y = x.ljust(30,"-")
 print y
-# something in water------------
+# Something in Water------------
 
 == String Character Encoding/Decoding, Unicode
 
@@ -954,7 +964,7 @@ Example
 Check if the phrase "ain" is NOT present in the following text:
 txt = "The rain in Spain stays mainly in the plain"
 x = "ain" not in txt
-print(x) 
+print(x)
 
 String Methods
 
@@ -1010,36 +1020,36 @@ zfill()	Fills the string with a specified number of 0 values at the beginning
 
 String: Commands
 
-# Strips all whitespace characters from both ends.
+# Strips All Whitespace Characters from both Ends
 <str>  = <str>.strip()
-# Strips all passed characters from both ends.
+# Strips All Passed Characters from both Ends
 <str>  = <str>.strip('<chars>')
 
-# Splits on one or more whitespace characters.
+# Splits on One or More Whitespace Characters
 <list> = <str>.split()
-# Splits on 'sep' str at most 'maxsplit' times.
+# Splits on 'sep' Str at Most 'maxsplit' times
 <list> = <str>.split(sep=None, maxsplit=-1)
-# Splits on line breaks. Keeps them if 'keepends'.
+# Splits on line Breaks. Keeps Them if 'keepends'
 <list> = <str>.splitlines(keepends=False)
-# Joins elements using string as separator.
+# Joins Elements Using String as Separator
 <str>  = <str>.join(<coll_of_strings>)
 
-# Checks if string contains a substring.
+# Checks if String Contains a Substring
 <bool> = <sub_str> in <str>
-# Pass tuple of strings for multiple options.
+# Pass Tuple of Strings for Multiple Options
 <bool> = <str>.startswith(<sub_str>)
-# Pass tuple of strings for multiple options.
+# Pass Tuple of Strings for Multiple Options
 <bool> = <str>.endswith(<sub_str>)
-# Returns start index of first match or -1.
+# Returns Start Index of First Match or -1
 <int>  = <str>.find(<sub_str>)
-# Same but raises ValueError if missing.
+# Same but Raises ValueError if Missing
 <int>  = <str>.index(<sub_str>)
 
-# Replaces 'old' with 'new' at most 'count' times.
+# Replaces 'old' with 'new' at Most 'count' times
 <str>  = <str>.replace(old, new [, count])
-# True if str contains only numeric characters.
+# True if Str Contains only Numeric Characters
 <bool> = <str>.isnumeric()
-# Nicely breaks string into lines.
+# Nicely Breaks String into Lines
 <list> = textwrap.wrap(<str>, width)
 
     Also: 'lstrip()', 'rstrip()'.
@@ -1047,9 +1057,9 @@ String: Commands
 
 Char
 
-# Converts int to unicode char.
+# Converts Int to Unicode Char
 <str> = chr(<int>)
-# Converts unicode char to int.
+# Converts Unicode Char to Int
 <int> = ord(<str>)
 
 >>> ord('0'), ord('9')
@@ -1205,7 +1215,7 @@ Integers:
 
 >>> '{:d}'.format(24)
 '24'
->>> 
+>>>
 <!--ID: 1639528994333-->
 
 
@@ -1290,7 +1300,7 @@ Example-1:
 >>> data = {'first': 'Place', 'last': 'Holder!'}
 >>> '{first} {last}'.format(**data)
 'Place Holder!'
->>> 
+>>>
 <!--ID: 1639528994511-->
 
 
@@ -1433,7 +1443,7 @@ String Method .title()
 
 The string method .title() returns the string in title case. With title case, the first character of each word is capitalized while the rest of the characters are lowercase.
 my_var = "dark knight"
-print(my_var.title()) 
+print(my_var.title())
 
 \# Prints: Dark Knight
 String Method .split()
@@ -1445,7 +1455,7 @@ The string method .split() splits a string into a list of items:
 
 text = "Silicon Valley"
 
-print(text.split())     
+print(text.split())
 \# Prints: ['Silicon', 'Valley']
 
 print(text.split('i'))  
@@ -1469,7 +1479,7 @@ String Method .upper()
 The string method .upper() returns the string with all lowercase characters converted to uppercase.
 dinosaur = "T-Rex"
 
-print(dinosaur.upper()) 
+print(dinosaur.upper())
 \# Prints: T-REX
 String Method .join()
 
@@ -1478,7 +1488,7 @@ The string method .join() concatenates a list of strings together to create a ne
 The .join() method is run on the delimiter and the array of strings to be concatenated together is passed in as an argument.
 x = "-".join(["Codecademy", "is", "awesome"])
 
-print(x) 
+print(x)
 \# Prints: Codecademy-is-awesome
 
 
@@ -1669,8 +1679,8 @@ center(), count(), find(), format(), isalnum(), lower(), maketrans(), replace()
 
 ## Unsorted
 Changing Case in a String with Methods - a method is an action that Python c an perform on a piece of data
-  the dot(.) in print(name.title()) \# tell Python to make the title() method act on variable 
-  every method is followed by a set of parenthesis, because methods often need additional information to do their work. that information is provided inside the parentheses 
+  the dot(.) in print(name.title()) \# tell Python to make the title() method act on variable
+  every method is followed by a set of parenthesis, because methods often need additional information to do their work. that information is provided inside the parentheses
   .title() \# changes title case to capital letters
   .upper() \# all upper case letters
   .lower() \# all lower case letters
@@ -1687,7 +1697,7 @@ F-Strings The f is for format, because Python formats the string by replacing th
 
 Whitespace refer to any nonprinting character, such as spaces, tabs, and end-of-line symbols
   Adding Whitespace to Strings with Tabs or Newlines
-      To add a tab to your text, use the character combination \t     
+      To add a tab to your text, use the character combination \t
           print("\tPython")
       To add a newline in a string, use the character combination \n
           print("Languages:\nPython\nC\nJavaScript")

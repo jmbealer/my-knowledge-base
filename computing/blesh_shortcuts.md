@@ -1,4 +1,14 @@
-# Ble.sh - Command-line editing
+---
+title: Ble.sh - Command-line Editing
+author: Justin Bealer
+date_created: 2024-08-02, 02-39-19
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Ble.sh - Command-line Editing
 
 Key combination Widget Description
 
@@ -20,7 +30,7 @@ C-w, S-delete `kill-region-or kill-backward-uword` Cut the current selection or 
 M-w (Emacs) C-insert `copy-region-or copy-backward-uword` Copy the current selection or uword (see below)
 C-y, S-insert `yank` Paste
 
-## 4.3 Characterwise movement and operation
+## 4.3 Characterwise Movement and Operation
 
 C-f, right `forward-char` Go to the next character
 C-b, left                                `backward-char`                          Go to the previous character
@@ -30,7 +40,7 @@ C-t                                                 `transpose-chars`           
 C-] (Emacs)                                         `character-search-forward`               Search a character forward
 M-C-] (Emacs)                                       `character-search-backward`              Search a character backward
 
-## 4.4 Wordwise movement and operation
+## 4.4 Wordwise Movement and Operation
 
 There are five types of words in `ble.sh`.
 `eword` is an English word consisting of alphabets and digits.
@@ -73,7 +83,7 @@ There is an operation related to the spaces as well.
 :-----------------------::--------------------------:------------------------------------------
  M-\\ (Emacs)  `delete-horizontal-space`  Delete spaces around the current position
 
-## 4.5 Linewise movement and operation
+## 4.5 Linewise Movement and Operation
 
  Key combination                           Widget                                 Description
 :----------------------------------------::--------------------------------------:------------------------------------------------------------------------
@@ -83,14 +93,14 @@ There is an operation related to the spaces as well.
  C-k                            `kill-forward-line`                    Delete the range between the current position and the end of line
  C-u                            `kill-backward-line`                   Delete the range between the current position and the beginning of line
 
-## 4.6 Beginning and end of command line
+## 4.6 Beginning and End of Command line
 
  Key combination      Widget                       Description
 :-------------------::----------------------------:-------------------------------------------
  C-home    `beginning-of-text`          Go to the beginning of text
  C-end     `end-of-text`                Go to the end of text
 
-## 4.7 Shift selection
+## 4.7 Shift Selection
 
 The selection can also be performed by the cursor movements with the shift modifier S-.
 The region selected by shift can be copied, cutted, or pasted by the same keybindings as the normal selection.
@@ -132,7 +142,7 @@ where the same keybindings as the ones to start the selection are available as f
  S-C-home                                          `beginning-of-text`            Go to the beginning of text keeping selection
  S-C-end                                           `end-of-text`                  Go to the end of text keeping selection
 
-## 4.8 Keyboard macros
+## 4.8 Keyboard Macros
 
  Key combination   Widget                  Description
 :----------------::-----------------------:------------------------------
@@ -270,7 +280,7 @@ The history entries that contain the target string may be searched using OPTS `s
   - `history-move` ... Go to the previous/next history entry without starting the `nsearch`.
     The cursor position is set to the beginning of the command line to keep the string before the cursor empty.
 
-## 4.12 Insert words in history (`lastarg`)
+## 4.12 Insert Words in History (`lastarg`)
 
  Key combination                         Widget                  Description
 :--------------------------------------::-----------------------:------------------------------------------------------
@@ -290,12 +300,12 @@ In the lastarg mode, the following bindings are available.
  C--, C-0, C-1, C-2, C-3, C-4, C-5, C-6, C-7, C-8, C-9  `append-arg-or lastarg/exit-default`  Set the argument
  -, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (Emacs)  `append-arg-or lastarg/exit-default`  Set the argument
 
-## 4.13 Prompt string
+## 4.13 Prompt String
 
 In `ble.sh`, *prompt string* can be specified for various places such as `PS1`, `PS2`, `PS0`, `bleopt prompt_rps1`, `read -p`.
 In addition to the standard Bash escape sequences of the form `\...`, there are also a few extensions.
 
-### 4.13.1 Prompt sequence `\g{[TYPE:]SPEC}` (v0.4)
+### 4.13.1 Prompt Sequence `\g{[TYPE:]SPEC}` (v0.4)
 
 Graphic attributes can be specified by the *gspec* format or the format used in `ble-face face=[TYPE:]SPEC`.
 In addition to `TYPE` accepted by `ble-face`, `face` can also be used as a synonym of `copy`.
@@ -305,7 +315,7 @@ In addition to `TYPE` accepted by `ble-face`, `face` can also be used as a synon
 PS1='[\g{bold,fg=green}\u\g{none}@\g{bold,fg=navy}\h\g{none}]\$ '
 ```
 
-### 4.13.2 User-defined prompt sequences
+### 4.13.2 User-defined Prompt Sequences
 
 ```bash
 function ble/prompt/backslash:X {
@@ -338,7 +348,7 @@ function ble/prompt/backslash:hello {
 PS1='[\q{hello $USER}]\$ '
 ```
 
-### 4.13.3 Prompt sequence `\q{row}` (v0.4)<sup><a id="backslash-row" href="#user-content-backslash-row">†</a></sup>
+### 4.13.3 Prompt Sequence `\q{row}` (v0.4)<sup><a id="backslash-row" href="#user-content-backslash-row">†</a></sup>
 
 This is expanded to the current line number in the command line.
 
@@ -346,7 +356,7 @@ This is expanded to the current line number in the command line.
 \q{row}  # Example result: 1
 ```
 
-### 4.13.4 Prompt sequence `\q{column}` (v0.4)<sup><a id="backslash-column" href="#user-content-backslash-column">†</a></sup>
+### 4.13.4 Prompt Sequence `\q{column}` (v0.4)<sup><a id="backslash-column" href="#user-content-backslash-column">†</a></sup>
 
 This is expanded to the current column number in the command line.
 
@@ -354,7 +364,7 @@ This is expanded to the current column number in the command line.
 \q{column}  # Example result: 5
 ```
 
-### 4.13.5 Prompt sequence `\q{position}` (v0.4)<sup><a id="backslash-position" href="#user-content-backslash-position">†</a></sup>
+### 4.13.5 Prompt Sequence `\q{position}` (v0.4)<sup><a id="backslash-position" href="#user-content-backslash-position">†</a></sup>
 
 This is expanded to the current line and column numbers in the command line.
 The format can be specified to the first argument as a printf format string.
@@ -364,7 +374,7 @@ The format can be specified to the first argument as a printf format string.
 \q{position line %s, column %s}  # Example result: line 1, column 5
 ```
 
-### 4.13.6 Prompt sequence `\q{point}` (v0.4)<sup><a id="backslash-point" href="#user-content-backslash-point">†</a></sup>
+### 4.13.6 Prompt Sequence `\q{point}` (v0.4)<sup><a id="backslash-point" href="#user-content-backslash-point">†</a></sup>
 
 This is expanded to the current offset of the cursor position in the command line string.
 
@@ -372,7 +382,7 @@ This is expanded to the current offset of the cursor position in the command lin
 \q{point}  # Example result: 3
 ```
 
-### 4.13.7 Prompt sequence `\q{mark}` (v0.4)<sup><a id="backslash-mark" href="#user-content-backslash-mark">†</a></sup>
+### 4.13.7 Prompt Sequence `\q{mark}` (v0.4)<sup><a id="backslash-mark" href="#user-content-backslash-mark">†</a></sup>
 
 This is expanded to the current offset of the mark position in the command line string.
 
@@ -380,7 +390,7 @@ This is expanded to the current offset of the mark position in the command line 
 \q{mark}  # Example result: 0
 ```
 
-### 4.13.8 Prompt sequence `\q{history-index}` (v0.4)<sup><a id="backslash-history-index" href="#user-content-backslash-history-index">†</a></sup>
+### 4.13.8 Prompt Sequence `\q{history-index}` (v0.4)<sup><a id="backslash-history-index" href="#user-content-backslash-history-index">†</a></sup>
 
 This is expanded to the current history index in the command history.
 
@@ -388,7 +398,7 @@ This is expanded to the current history index in the command history.
 \q{history-index}  # Example result: 0
 ```
 
-### 4.13.9 Prompt sequence `\q{history-percentile}` (v0.4)<sup><a id="backslash-history-percentile" href="#user-content-backslash-history-percentile">†</a></sup>
+### 4.13.9 Prompt Sequence `\q{history-percentile}` (v0.4)<sup><a id="backslash-history-percentile" href="#user-content-backslash-history-percentile">†</a></sup>
 
 This is expanded to the percentile position of the current history position in the command history.
 
@@ -534,7 +544,7 @@ ble-face prompt_status_line='fg=231,bg=240'
 
 This face specifies the background face of the status line.
 
-## 4.15 Settings for editing and executing commands
+## 4.15 Settings for Editing and Executing Commands
 
 ### 4.15.1 Bleopt `indent_offset` (Arithmetic) (v0.2)<sup><a id="bleopt-indent_offset" href="#user-content-bleopt-indent_offset">†</a></sup>
 
@@ -715,7 +725,7 @@ the shell will not exit with `delete-forward-char-or-exit` (defaultly to which C
 when there are remaining jobs.
 If a non-empty value is specified, the shell exits even if there are remaining jobs.
 
-### 4.15.14 Bleopt `prompt_eol_mark` (ANSI escape sequences) (v0.3)<sup><a id="bleopt-prompt_eol_mark" href="#user-content-bleopt-prompt_eol_mark">†</a></sup>
+### 4.15.14 Bleopt `prompt_eol_mark` (ANSI Escape sequences) (v0.3)<sup><a id="bleopt-prompt_eol_mark" href="#user-content-bleopt-prompt_eol_mark">†</a></sup>
 
 ```bash
 # default
@@ -724,7 +734,7 @@ bleopt prompt_eol_mark=$'\e[94m[ble: EOF]\e[m'
 
 This option specifies the string when the command did not end at the beginning of line in the terminal.
 
-### 4.15.15 Bleopt `prompt_ruler` (Empty/Enumerate/ANSI escape sequences) (v0.4)<sup><a id="bleopt-prompt_ruler" href="#user-content-bleopt-prompt_ruler">†</a></sup>
+### 4.15.15 Bleopt `prompt_ruler` (Empty/Enumerate/ANSI Escape sequences) (v0.4)<sup><a id="bleopt-prompt_ruler" href="#user-content-bleopt-prompt_ruler">†</a></sup>
 
 ```bash
 # default
@@ -762,7 +772,7 @@ If this option is set to a non-empty value,
 By default, this is turned off because it adds extra execution costs.
 The values of `PIPESTATUS` of the previous command are always available with the array `BLE_PIPESTATUS` regardless of this setting.
 
-### 4.15.18 Bleopt `edit_marker` (ANSI escape sequences) (v0.4)<sup><a id="bleopt-edit_marker" href="#user-content-bleopt-edit_marker">†</a></sup>
+### 4.15.18 Bleopt `edit_marker` (ANSI Escape sequences) (v0.4)<sup><a id="bleopt-edit_marker" href="#user-content-bleopt-edit_marker">†</a></sup>
 
 ```bash
 # default
@@ -773,7 +783,7 @@ This setting defines the default style of the markers (such as `[ble: ...]`) use
 When it is set to an empty string, the marker is disabled (unless additional information other than the marker needs to be output after the marker).
 This default style can be overridden by specific mark settings, such as `exec_elapsed_mark` and `exec_exit_mark`.
 
-### 4.15.19 Bleopt `edit_marker_error` (ANSI escape sequences) (v0.4)<sup><a id="bleopt-edit_marker_error" href="#user-content-bleopt-edit_marker_error">†</a></sup>
+### 4.15.19 Bleopt `edit_marker_error` (ANSI Escape sequences) (v0.4)<sup><a id="bleopt-edit_marker_error" href="#user-content-bleopt-edit_marker_error">†</a></sup>
 
 ```bash
 # default
@@ -784,7 +794,7 @@ This setting defines the default style of the markers (such as `[ble: ...]`) use
 When it is set to an empty string, the marker is disabled (unless additional information other than the marker needs to be output after the marker).
 This default style can be overridden by specific mark settings, such as `exec_errexit_mark`.
 
-### 4.15.20 Bleopt `exec_errexit_mark` (ANSI escape sequences) (v0.4)<sup><a id="bleopt-exec_errexit_mark" href="#user-content-bleopt-exec_errexit_mark">†</a></sup>
+### 4.15.20 Bleopt `exec_errexit_mark` (ANSI Escape sequences) (v0.4)<sup><a id="bleopt-exec_errexit_mark" href="#user-content-bleopt-exec_errexit_mark">†</a></sup>
 
 ```bash
 # default
@@ -794,7 +804,7 @@ bleopt exec_errexit_mark=$'\e[91m[ble: exit %d]\e[m'
 This option specifies the string printed when the command exited with non-zero exit status.
 When the value is empty, the exit status line will not be shown.
 
-### 4.15.21 Bleopt `exec_elapsed_mark` (ANSI escape sequences) (v0.4)<sup><a id="bleopt-exec_elapsed_mark" href="#user-content-bleopt-exec_elapsed_mark">†</a></sup>
+### 4.15.21 Bleopt `exec_elapsed_mark` (ANSI Escape sequences) (v0.4)<sup><a id="bleopt-exec_elapsed_mark" href="#user-content-bleopt-exec_elapsed_mark">†</a></sup>
 
 ```bash
 # default
@@ -820,7 +830,7 @@ The suffixes `_self` and `_child` represent the part consumed in the main shell 
 `cpu` represents the percentage of the CPU core usage in integer, which can be calculated by `(usr+sys)*100/real`.
 The other time values are all in unit of milliseconds.
 
-### 4.15.23 Bleopt `exec_exit_mark` (ANSI escape sequences) (v0.4)<sup><a id="bleopt-exec_exit_mark" href="#user-content-bleopt-exec_exit_mark">†</a></sup>
+### 4.15.23 Bleopt `exec_exit_mark` (ANSI Escape sequences) (v0.4)<sup><a id="bleopt-exec_exit_mark" href="#user-content-bleopt-exec_exit_mark">†</a></sup>
 
 ```bash
 # default

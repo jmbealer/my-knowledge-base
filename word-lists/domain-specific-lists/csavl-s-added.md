@@ -1,3 +1,14 @@
+---
+title: Csavl-s-added
+author: Justin Bealer
+date_created: 2024-07-20, 06-12-17
+date_modified: 2024-09-17, 09-29-47
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Csavl-s-added
 string
 integer
 instruction

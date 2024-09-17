@@ -1,6 +1,16 @@
+---
+title: Melvil Decimal System
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Melvil Decimal System
 
-## 000 General works, books and libraries, information sciences
+## 000 General Works, Books and Libraries, Information Sciences
   001 "Intellectual life"
   002 "Books -- History" | History of the book
   003 "System theory"
@@ -8,12 +18,12 @@
   005 "Computer programming"
   006 "Cognitive science"
    006.6 "Computer graphics"
-  #  007-009 are unassigned
-  #  a few general research periodicals in 007 at FLP.
+# 007-009 Are Unassigned
+# A Few General Research Periodicals in 007 at FLP
  010 Bibliography
   011 General bibliographies + Universal catalogs
   012 Bibliographies of individuals
-  # 013 is unassigned
+# 013 Is Unassigned
   014 "Anonyms and pseudonyms -- Bibliography" | Bibliographies of pseudonymous and anonymous works
   015 "Bibliography, national" | Bibliographies of specific countries
   016 Bibliographies of special subjects
@@ -26,13 +36,13 @@
   021 Scope, usefulness, founding, and supporting of libraries
   022 "Library architecture" + "Library buildings"
   023 "Library employees"
-  #  024 is unassigned
+# 024 Is Unassigned
   025 "Library administration" + Library departments
   026-027 Special libraries and collections; history, description and management
   026 "Special libraries"
   027 General libraries + Library reports, etc.
   028 "Books and reading"
-  #  029 is unassigned
+# 029 Is Unassigned
  030 Encyclopedias
   031 American encyclopedias
   032 British encyclopedias
@@ -43,9 +53,9 @@
   037 Slavic encyclopedias
   038 Scandinavian encyclopedias
   039 Encylopedias of other languages
- # 040s are unassigned
- # Note the 050s have general periodicals; specialized periodicals
- # appear in or near their specific subjects
+# 040s Are Unassigned
+# Note the 050s Have General Periodicals; Specialized Periodicals
+# Appear in or near Their Specific Subjects
  050 "Periodicals" | General periodicals
   051 "American periodicals"
   052 "English periodicals" + "British Periodicals"
@@ -96,11 +106,11 @@
   097 "Bookplates" + Book ownership
   098 "Prohibited books" + "Lost books" + "Imaginary books and libraries"
   099 Other book rarities + Curiosa + Minute size, etc.
-## 100 Philosophy and psychology
+## 100 Philosophy and Psychology
   101 "Philosophy -- Introductions" + "Methodology"
   102 Philosophy outlines
   103 "Philosophy --  Dictionaries" + Philosophy encyclopedias
-  # 104 is unassigned
+# 104 Is Unassigned
   105 "Philosophy -- Periodicals" + "Psychology -- Periodicals"
   106 Philosophical societies, transactions, etc.
   107 Philosophy study and teaching
@@ -108,7 +118,7 @@
   109 "Philosophy -- History" | History of philosophy
  110 "Metaphysics"
   111 "Ontology"
-  # 112 is unassigned
+# 112 Is Unassigned
   113-119 "Cosmology"
   114 "Space" (in the philosophical sense)
   115 "Time -- Philosophy"
@@ -121,19 +131,19 @@
   122 "Causation" | Cause and effect
   123 "Free will and determinism" + "Necessity (Philosophy)"
   124 "Teleology"
-  # 125 is unassigned
+# 125 Is Unassigned
   126 "Self (Philosophy)" + "Consciousness"
-  # can't find 127 being used widely; going with Dewey 1922 by default
+# Can't Find 127 Being Used Widely; Going with Dewey 1922 by Default
   127 Unconsciousness + Automata
   128 "Soul" + "Philosophical anthropology" + "Human beings"
   129 "Immortality" + "Future life" | Life after death (from philosophical or not-specifically-Christian perspectives)
  130 "Mind and body" + "Parapsychology"
   131 "Mental health"
-  # 132 is unassigned (but still heavily used at FLP)
+# 132 Is Unassigned (but Still Heavily Used at FLP)
   133 "Occultism"
-  # 134 is unassigned
+# 134 Is Unassigned
   135 "Dreams"
-  # 136 is unassigned
+# 136 Is Unassigned
   137 "Personality" + "Temperament"
   138 "Physiognomy"
   139 "Phrenology"
@@ -142,35 +152,35 @@
   142 "Criticism (Philosophy)"
   143 "Intuition" | Philosophical intuition
   144 "Empiricism" + "Humanism" + "Pragmatism"
-  # 145 very little used; going with Dewey 1922 by default
+# 145 Very Little Used; Going with Dewey 1922 by Default
   145 Sensationalism
   146 "Materialism" + "Positivism"
   147 "Pantheism" + "Monism"
-  # 148 very little used; going with Dewey 1922 by default
+# 148 Very Little Used; Going with Dewey 1922 by Default
   148 "Eclecticism"
   149 Other philosophical systems
  150 "Psychology"
-  # 151 is unassigned (but still heavily used at FLP)
+# 151 Is Unassigned (but Still Heavily Used at FLP)
   152 "Psychophysiology"
   153 "Thought and thinking"
-  154 "Subconsciousness" 
+  154 "Subconsciousness"
   155 "Creative ability" + "Imagination" + "Developmental psychology"
   156 "Psychology, Comparative"
-  # 157 is unassigned
+# 157 Is Unassigned
   158 Sensibility + Emotions + Affections
-  # 159 is unassigned
+# 159 Is Unassigned
  160 "Logic"
   161 "Induction (Logic)"
-  # 162 seems to be not usxd at FLP; going with Dewey 1922 by default
+# 162 Seems to Be not Usxd at FLP; Going with Dewey 1922 by Default
   162 Deductive logic
-  # 163 and 164 are unassigned
+# 163 And 164 Are Unassigned
   165 "Fallacies (Logic)" + "Paradox"
-  # 166 seems to be not usxd at FLP; going with Dewey 1922 by default
+# 166 Seems to Be not Usxd at FLP; Going with Dewey 1922 by Default
   166 "Syllogism" + "Enthymeme (Logic)"
-  # 167 seems to be not usxd at FLP; going with Dewey 1922 by default
+# 167 Seems to Be not Usxd at FLP; Going with Dewey 1922 by Default
   167 "Hypothesis"
   168 "Persuasion (Rhetoric)" | Argument and persuasion
-  # 169 seems to be not usxd at FLP; going with Dewey 1922 by default
+# 169 Seems to Be not Usxd at FLP; Going with Dewey 1922 by Default
   169 "Analogy"
  170 "Ethics"
   171 Theories of ethics + Philosophy of ethics
@@ -198,7 +208,7 @@
   186 "Skeptics (Greek philosophy)" + "Neoplatonism"
   187 "Epicurus" + "Epicureans (Greek philosophy)"
   188 "Stoics" | Stoicism
-  189 Early Christian philosophy + "Philosophy, Medieval" 
+  189 Early Christian philosophy + "Philosophy, Medieval"
  190 "Philosophy, Modern" + Modern philosophy
   191 "Philosophy, American"
   192 "Philosophy, British"
@@ -209,7 +219,7 @@
   197 "Philosophy, Russian" + Slavic philosophy
   198 Scandinavian philosophy
   199 Other modern philosophers
-## 200 "Religion" | Religion and theology
+## 200 "Religion" | Religion and Theology
   201 "Religion -- Philosophy" | Philosophy of religion
   202 Religious compendia + Religious outlines + Religious systems
   203 "Religion -- Dictionaries" + Religion encyclopedias
@@ -225,9 +235,9 @@
   213 "Creation" + "Evolution -- Religious aspects"
   214 "Providence and government of God" + "Theodicy" + "Fate and fatalism"
   215 "Religion and science"
-  # 216 and 217 are unassigned (though in use at FLP)
+# 216 And 217 Are Unassigned (though in Use at FLP)
   218 "Future life" + "Immortality" + "Eternity" (from Christian perspectives)
-  # 219 is unassigned
+# 219 Is Unassigned
  220 "Bible"
   221-224 "Bible. O.T." | Old Testament
   222 "Bible. O.T. Historical Books" | Historical books of the Old Testament
@@ -245,14 +255,14 @@
   234 "Salvation"
   235 "Angels" + "Devil" + "Demonology" + "Saints"
   236 "Eschatology"
-  # 237 is unassigned
+# 237 Is Unassigned
   238 "Creeds" + "Catechisms" + "Covenant theology"
   239 "Apologetics"
  240 "Devotional literature" + "Theology, Practical"
   241 "Christian ethics"
   242 "Meditations" + "Contemplation"
   243 "Conversion" + "Evangelistic work"
-  # 244 and 245 are unassigned, but used at FLP
+# 244 And 245 Are Unassigned, but Used at FLP
   246-247 "Christian art and symbolism"
   247 "Religious articles"
   248 "Christian life"
@@ -261,10 +271,10 @@
   251 "Preaching"
   252 "Sermons"
   253 "Evangelistic work" + "Clergy"
-  # check how church work is used in 254 vs. 260...
+# Check how Church Work is Used in 254 vs. 260..
   254 "Church management"
   255 "Monasticism and religious orders"
-  # 256-258 are unassigned
+# 256-258 Are Unassigned
   259 Other ministries and church work
  260 "Church" + "Church work"
   261 "Church and the world"
@@ -294,17 +304,17 @@
   285 "Reformed Church" + "Presbyterian Church" + "Congregational churches"
   286 "Baptists"
   287 "Methodism"
-  # 288 is unassigned; FLP uses for Unitarian + liberal Christian-based sects 
+# 288 Is Unassigned; FLP Uses for Unitarian + Liberal Christian-based Sects
   289 Other Christian sects
  290 "Religions" | Non-Christian religions and comparative religion
-  291 "Mythology" 
+  291 "Mythology"
   292 "Mythology, Classical"
   293 "Mythology, Germanic" + Northern European mythology and religion
   294 "Hinduism" + "Brahmanism" + "Buddhism" + "Sikhism"
   295 "Zoroastrianism"
   296 "Judaism"
   297 "Islam" + "Bahai Faith"
-  # 298 is unassigned/optional (Mormons went here)
+# 298 Is unassigned/optional (Mormons Went here)
   299 Other religions
 
 ## 300 "Social sciences"
@@ -312,25 +322,25 @@
   302 "Social psychology"
   303 "Social sciences -- Dictionaries" + Social science encyclopedias
   304 Social science essays, lectures, addresses
-   # FLP only has one 304.1 book, and it seems to be misplaced
-   304.2 "Human ecology" 
-   # FLP doesn't appear to use 304.3 or 304.4
-   304.5 "Sociobiology" 
-   304.6 "Population" 
-   # FLP doesn't appear to use 304.7
+# FLP only Has One 304.1 Book, and it Seems to Be Misplaced
+   304.2 "Human ecology"
+# FLP Doesn't Appear to Use 304.3 or 304.4
+   304.5 "Sociobiology"
+   304.6 "Population"
+# FLP Doesn't Appear to Use 304.7
    304.8 ("Emigration and immigration" + "Migration, Internal") from demographic perspectives | Migrations
   305 "Social sciences -- Periodicals"
   306 "Culture"
   307 "Social sciences -- Research" + "Social sciences -- Study and teaching" + "Cities and towns"
-  # 308 and 309 are unassigned but get used at FLP
+# 308 And 309 Are Unassigned but Get Used at FLP
  310 "Statistics"
-  # 311, 312 and 313 are unassigned, but used at FLP
+# 311, 312 And 313 Are Unassigned, but Used at FLP
   314 Europe -- Statistics
   315 Asia -- Statistics
   316 Africa -- Statistics
   317 North America -- Statistics + America -- Statistics
   318 South America -- Statistics + Latin America -- Statistics
-  # 319 not used at FLP; inferring from Dewey 1922 and 9x0 patterns
+# 319 Not Used at FLP; Inferring from Dewey 1922 and 9x0 Patterns
   319 Oceania -- Statistics + Polar regions -- Statistics
  320 "Political science"
   321 "Political science -- Philosophy" + Forms of government
@@ -341,9 +351,9 @@
   326 "Slavery" + "African Americans"
   327 "International relations" + "World politics"
   328 "Legislative bodies"
-  # 329 is unassigned
+# 329 Is Unassigned
  330 "Economics"
-  331 "Labor" + "Capital" 
+  331 "Labor" + "Capital"
   332 "Finance"
   333 "Land use"
   334 "Cooperation"
@@ -418,45 +428,45 @@
   373 "Education, Secondary" + "High schools"
   374 "Adult education" + "Continuing education"
   375 "Education -- Curricula"
-  # 376 and 377 are unassigned, but are both used by FLP
+# 376 And 377 Are Unassigned, but Are both Used by FLP
   378 "Education, Higher" + "Universities and colleges"
   379 "Education and state" + "Public schools"
- 380 "Commerce" + "Communication and traffic" 
+ 380 "Commerce" + "Communication and traffic"
   381 "Commerce"
   382 "International trade"
   383 "Postal service"
   384 "Telecommunication"
    384.1 "Telegraph"
-   # FLP has no books filed under 384.2
+# FLP Has no Books Filed under 384.2
    384.3 "Internet"
-   # FLP has 1 book filed under 384.4; inferring subject to be underwater cables
+# FLP Has 1 Book Filed under 384.4; Inferring Subject to Be Underwater Cables
    384.4 "Cables, Submarine"
    384.5 "Broadcasting" | Radio and television
    384.6 "Telephone"
-   # FLP has no books filed under 384.7
+# FLP Has no Books Filed under 384.7
    384.8 "Motion picture industry"
-   # FLP has no books filed under 384.9
+# FLP Has no Books Filed under 384.9
   385 "Railroads" (from usage perspectives)
   386 "Waterways"
   387 "Shipping"
   388 "Local transit"
   389 "Weights and measures" + "Metrology"
  390 "Ethnology" | Customs and folklore
-  391 "Costume" + "Cosmetics" + "Fashion" 
+  391 "Costume" + "Cosmetics" + "Fashion"
   392 "Families" + "Courtship" + "Marriage" + "Sex"
   393 "Death -- Social aspects" + "Funeral rites and ceremonies"
   394 "Manners and customs"
   395 "Etiquette"
-  # 396 and 397 are unassigned; FLP uses 396 for Women and 397 for Romany
+# 396 And 397 Are Unassigned; FLP Uses 396 for Women and 397 for Romany
   398 "Folklore"
   399 "Weapons" + "Armor" (personal)
-## 400 ("Philology" + "Language and languages") | Languages and linguistics
+## 400 ("Philology" + "Language And languages") | Languages and Linguistics
   401 "Language and languages -- Philosophy" + "Language and languages -- Origin"
   402 Language outlines and compendia + "Language and languages -- Vocational guidance"
   403 "Language and languages -- Dictionaries" + "Linguistics -- Dictionaries" + Language and linguistics encyclopedias
   404 Essay collections on languages and linguistics
   405 "Language and languages -- Periodicals"
-  # 406 not seen at FLP; inferring from Dewey 1922
+# 406 Not Seen at FLP; Inferring from Dewey 1922
   406 Language and linguistic societies, transactions, reports, etc.
   407 "Language and languages -- Study and teaching"
   408 Linguistics collections + "Languages, Artificial"
@@ -467,7 +477,7 @@
   413 "Language and languages -- Dictionaries" + "Lexicography"
   414 "Phonology" + "Phonetics" + "Deaf -- Means of communication"
   415 "Grammar, Comparative and general"
-  # 416 is unassigned
+# 416 Is Unassigned
   417 "Paleography" + "Inscriptions"
   418 "Language acquisition" + "Applied linguistics"
   419 "Sign language"
@@ -475,9 +485,9 @@
   421 "English language -- Orthography and spelling" + "English language -- Phonetics"
   422 "English language -- Semantics" + "English language -- Etymology"
   423 "English language -- Dictionaries" + "English language -- Lexicography"
-  # 424 is unassigned
+# 424 Is Unassigned
   425 "English language -- Grammar"
-  # 426 is unassigned
+# 426 Is Unassigned
   427 "English language -- Dialects" + "English language -- Slang" + "English language -- Jargon" + "English language -- Middle English, 1100-1500"
   428 "English language -- Study and teaching" + "English language -- Usage"
   429 "English language -- Old English, ca. 450-1100"
@@ -485,31 +495,31 @@
   431 "German language -- Orthography and spelling" + "German language -- Phonetics"
   432 "German language -- Semantics" + "German language -- Etymology"
   433 "German language -- Dictionaries" + "German language -- Lexicography"
-  # 434 is unassigned
+# 434 Is Unassigned
   435 "German language -- Grammar"
-  # 436 is unassigned
+# 436 Is Unassigned
   437 "German language -- Dialects" + "German language -- Slang" + "German language -- Jargon"
   438 "German language -- Study and teaching" + "German language -- Usage"
   439 Other Germanic, non-English languages
  440 "French language"
   441 "French language -- Orthography and spelling" + "French language -- Phonetics"
-  # 442 not used at FLP; inferred from others
+# 442 Not Used at FLP; Inferred from Others
   442 "French language -- Semantics" + "French language -- Etymology"
   443 "French language -- Dictionaries" + "French language -- Lexicography"
-  # 444 is unassigned
+# 444 Is Unassigned
   445 "French language -- Grammar"
-  # 446 is unassigned
+# 446 Is Unassigned
   447 "French language -- Dialects" + "French language -- Slang" + French language -- Jargon + "French language -- To 1300"
   448 "French language -- Study and teaching" + "French language -- Usage"
   449 "Catalan language" + "Proven&ccedil;al language"
  450 "Italian language" + "Romanian language"
-  # 451,452 not seen at FLP; inferred from others
+# 451,452 Not Seen at FLP; Inferred from Others
   451 Italian language -- Orthography and spelling + "Italian language -- Phonetics"
   452 Italian language -- Semantics + "Italian language -- Etymology"
   453 "Italian language -- Dictionaries" + Italian language -- Lexicography
-  # 454 is unassigned
+# 454 Is Unassigned
   455 "Italian language -- Grammar"
-  # 456 is unassigned
+# 456 Is Unassigned
   457 "Italian language -- Dialects" + "Italian language -- Slang"
   458 "Italian language -- Study and teaching" + "Italian language -- Usage"
   459 "Romanian language"
@@ -517,9 +527,9 @@
   461 Spanish language -- Orthography and spelling + "Spanish language -- Phonetics"
   462 "Spanish language -- Semantics" + "Spanish language -- Etymology"
   463 "Spanish language -- Dictionaries" + Spanish language -- Lexicography
-  # 464 is unassigned
+# 464 Is Unassigned
   465 Spanish language -- Grammar
-  # 466 is unassigned
+# 466 Is Unassigned
   467 "Spanish language -- Dialects" + "Spanish language -- Slang"
   468 Spanish language -- Study and teaching + "Spanish language -- Usage"
   469 "Portuguese language"
@@ -527,9 +537,9 @@
   471 Latin language -- Orthography and spelling + "Latin language -- Pronunciation"
   472 "Latin language -- Semantics" + "Latin language -- Etymology"
   473 "Latin language -- Dictionaries" + Latin language -- Lexicography
-  # 474 is unassigned
+# 474 Is Unassigned
   475 "Latin language -- Grammar"
-  # 476 is unassigned
+# 476 Is Unassigned
   477 Latin language -- Dialects + "Latin language, Medieval and modern"
   478 "Latin language -- Study and teaching" + Latin language -- Usage
   479 "Romance languages"
@@ -537,9 +547,9 @@
   481 "Greek language -- Alphabet" + "Greek language -- Pronunciation"
   482 "Greek language -- Semantics" + "Greek language -- Etymology"
   483 Greek language -- Dictionaries + Greek language -- Lexicography
-  # 484 is unassigned
+# 484 Is Unassigned
   485 "Greek language -- Grammar"
-  # 486 is unassigned
+# 486 Is Unassigned
   487 "Greek language -- Dialects" + "Greek language, Biblical"
   488 "Greek language -- Study and teaching"
   489 "Greek language, Modern"
@@ -557,7 +567,7 @@
   501 "Science -- Philosophy" | Philosophy of science
   502 Science outlines and introductions + "Science -- Vocational guidance"
   503 "Science -- Dictionaries" + "Science -- Encyclopedias"
-  # 504 is unassigned
+# 504 Is Unassigned
   505 "Science -- Periodicals"
   506 "Science -- Societies, etc."
   507 "Research" (scientific) + "Science -- Study and teaching"
@@ -570,14 +580,14 @@
   514 "Trigonometry" + "Topology"
   515 "Calculus" + "Mathematical analysis"
   516 "Geometry, Algebraic"
-  # 517 is unassigned; some calculus book linger there at FLP
+# 517 Is Unassigned; Some Calculus Book Linger there at FLP
   518 "Numerical analysis"
   519 ("Probabilities" + "Mathematical statistics") | Probability and statistics
  520 "Astronomy"
   521 Theoretical astronomy + "Celestial mechanics"
   522 "Spherical astronomy" + "Astronomy -- Observations"
   523 Descriptive astronomy + The universe and heavenly bodies
-  # 524 is unassigned
+# 524 Is Unassigned
   525 "Earth"
   526 "Geodesy"
   527 "Navigation"
@@ -586,7 +596,7 @@
  530 "Physics"
   531 "Mechanics"
   532 "Fluid mechanics"
-  533 "Gas dynamics" + "Aerodynamics" + "Pneumatics" 
+  533 "Gas dynamics" + "Aerodynamics" + "Pneumatics"
   534 "Sound"
   535 "Optics" + "Light"
   536 "Heat" + "Thermodynamics"
@@ -597,7 +607,7 @@
   541 "Chemistry, Physical and theoretical" | Physical chemistry + Theoretical chemistry
   542 "Chemical laboratories"
   543 "Chemistry, Analytic"
-  # 544 and 545 are unassigned
+# 544 And 545 Are Unassigned
   546 "Chemistry, Inorganic"
   547 "Chemistry, Organic"
   548 "Crystallography"
@@ -612,19 +622,19 @@
   557 "Geology -- North America"
   558 "Geology -- South America"
   559 Geology of Oceania, polar, and extraterrestrial regions
-   # only 559.4 and 559.9 subdivisions get used at FLP
+# Only 559.4 and 559.9 Subdivisions Get Used at FLP
    559.4 "Geology -- Australia"
    559.9 "Astrogeology"
  560 "Paleontology"
   561 "Paleobotany"
   562-565 "Invertebrates, Fossil"
-  # FLP doesn't have any 563's; going with Dewey 1922
+# FLP Doesn't Have Any 563's; Going with Dewey 1922
   563 "Protozoa, Fossil"
   564 "Mollusks, Fossil"
-  # FLP has no direct 565, but decimal expansions; extrapolating from them
+# FLP Has no Direct 565, but Decimal Expansions; Extrapolating from Them
   565 "Arthropoda, Fossil"
   566-569 "Vertebrates, Fossil"
-  # FLP has few direct 567's; going with Dewey 1922, 597 usage, and what I see
+# FLP Has Few Direct 567's; Going with Dewey 1922, 597 Usage, and what I See
   567 "Fishes, Fossil" + "Amphibians, Fossil" + "Reptiles, Fossil"
    567.9 "Dinosaurs"
   568 "Birds, Fossil"
@@ -633,7 +643,7 @@
   571 "Prehistoric peoples"
   572 "Anthropology"
   573 "Physical anthropology" + "Human evolution" + "Human beings -- Origin"
-  # 574 is unassigned
+# 574 Is Unassigned
   575 "Evolution (Biology)" + "Genetics"
   576 "Microbiology"
   577 "Life (Biology)"
@@ -648,7 +658,7 @@
   586-589 "Cryptogams"
   587 "Pteridophyta"
   588 "Bryophytes"
-  # 589 is unassigned (but has been used at FLP for lichens and fungi)
+# 589 Is Unassigned (but Has Been Used at FLP for Lichens and fungi)
  590 "Zoology"
   591 Animal physiology
   592-595 "Invertebrates"
@@ -659,7 +669,7 @@
   597 "Fishes" + "Amphibians" + "Reptiles"
   598 "Birds"
   599 "Mammals"
-## 600 "Industrial arts" + "Technology" + "Engineering" | Applied sciences and technology
+## 600 "Industrial arts" + "Technology" + "Engineering" | Applied Sciences and Technology
   601 "Technology -- Philosophy" | Philosophy of technology
   602 "Formulas, recipes, etc." | Technological recipes
   603 "Technology -- Dictionaries" + "Technology -- Encyclopedias" + Industrial arts -- Dictionaries + Engineering -- Dictionaries
@@ -676,20 +686,20 @@
    612.2 "Respiration"
    612.3 "Digestion"
    612.4 Glands
-   612.5 "Animal heat" 
+   612.5 "Animal heat"
    612.6 "Reproduction"
    612.7 "Musculoskeletal system" + "Larynx" + "Skin"
    612.8 "Nervous system"
     612.81 "Nerves, Peripheral"
     612.82 "Central nervous system" + "Brain"
-    # 612.83 not used at FLP
+# 612.83 Not Used at FLP
     612.84 "Vision"
     612.85 "Hearing"
     612.86 "Smell"
-    # 612.87 not used at FLP; assuming pattern from Dewey 1922
+# 612.87 Not Used at FLP; Assuming Pattern from Dewey 1922
     612.87 "Taste"
     612.88 "Touch"
-    # 612.89 not used at FLP; still used?
+# 612.89 Not Used at FLP; Still Used?
    612.9 Other parts of the body
   613 "Health" + "Hygiene"
   614 "Public health"
@@ -703,7 +713,7 @@
   616 "Pathology" + "Diseases" + Treatment
   617 "Surgery" + "Dentistry"
   618 "Women -- Health and hygiene" + "Children -- Health and hygiene" + "Gynecology" + "Pediatrics"
-  # 619 is unassigned, but seems to be used at FLP for veterinary medicine
+# 619 Is Unassigned, but Seems to Be Used at FLP for Veterinary Medicine
  620 "Engineering"
   621 "Mechanical engineering" + "Machinery"
    621.1 "Steam engineering"
@@ -711,16 +721,16 @@
    621.3 "Electrical engineering"
    621.4 "Heat engineering"
    621.5 "Pneumatic machinery" + "Compressed air" + "Refrigeration and refrigerating machinery"
-   621.6 "Fans (Machinery)" + "Pumping machinery" 
+   621.6 "Fans (Machinery)" + "Pumping machinery"
    621.7 "Production engineering" + "Factories" + "Machine-shop practice"
-   # 621.8 seems to be a grab bag of both general and specific ME
+# 621.8 Seems to Be a Grab Bag of both General and Specific ME
    621.8 Other mechanical engineering topics
    621.9 "Machine-tools"
   622 "Mining engineering" + "Mines and mineral resources"
   623 "Military engineering" + "Marine engineering"
   624 "Bridges" + "Roofs" + "Civil engineering"
   625 "Railroads" (from engineering perspectives) + "Roads"
-  # 626 is unassigned but gets used at FLP for canals and irrigation
+# 626 Is Unassigned but Gets Used at FLP for Canals and Irrigation
   627 "Hydraulic engineering" + "Ocean engineering" + "Rivers" + "Harbors"
   628 "Sanitary engineering" + "Sanitation" + "Water-supply"
   629 Other branches of engineering
@@ -748,9 +758,9 @@
   651 "Office management"
   652 "Business communication" + "Typewriting" + "Copying processes" + "Word processing"
   653 "Shorthand" + "Dictation (Office practice)"
-  # 654-656 are unassigned
+# 654-656 Are Unassigned
   657 "Accounting" + "Bookkeeping"
-  658 "Management" 
+  658 "Management"
   659 "Industrial publicity" + "Marketing" + other business topics
  660 "Chemistry, Technical" + "Chemical engineering"
   661 "Chemicals"
@@ -789,10 +799,10 @@
   694 "Carpentry"
   695 "Roofing"
   696 "Plumbing" + "Pipe fitting"
-  697 "Heating" + "Ventilation" + "Air conditioning" 
+  697 "Heating" + "Ventilation" + "Air conditioning"
   698 "Painting, Industrial" + "House painting" + "Paperhanging"
   699 "Railroad cars"
-## 700 "Arts" | Arts and recreation
+## 700 "Arts" | Arts and Recreation
   701 "Art -- Philosophy" + Aesthetics
   702 "Art appreciation" + "Art -- Vocational guidance" Art surveys and introductions
   703 "Art -- Dictionaries" + Art encyclopedias
@@ -842,29 +852,29 @@
   747 "Interior decoration"
   748 "Glassware" + "Glass art"
   749 Artistic furniture
- 750 "Painting" + "Art" 
+ 750 "Painting" + "Art"
   751 "Painting -- Technique" + "Artists' materials" + Methods of painting
   752 "Color in art"
-  # FLP is thin on 753; going with Dewey 1922
+# FLP is Thin on 753; Going with Dewey 1922
   753 Epic, mythic, and idealistic painting
   754 "Genre painting"
   755 "Religious art" + Religious painting
-  # FLP is thin on 756; going with Dewey 1922
+# FLP is Thin on 756; Going with Dewey 1922
   756 Painting of historical or milirary scenes
   757 "Portraits"
   758 "Landscape painting" + "Marine painting" + "Still-life painting"
   759 Painting of specific regions and artists + Schools pf painting
  760 "Engraving" + "Graphic arts"
   761 "Wood-engraving" + "Relief printing"
-  # FLP only has 1 762s; going with Dewey 1922
+# FLP only Has 1 762s; Going with Dewey 1922
   762 Cooper and steel engraving
   763 "Lithography"
   764 "Chromolithography" + "Serigraphy"
   765 Line engraving + "Stipple engraving"
-  # FLP is thin on 766s; going with Dewey 1922
+# FLP is Thin on 766s; Going with Dewey 1922
   766 "Mezzotint engraving" + "Aquatint"
   767 "Etchers" + "Etching"
-  # FLP has no 768s, and bank notes appear to be elsewhere; using Dewey 1922
+# FLP Has no 768s, and Bank Notes Appear to Be Elsewhere; Using Dewey 1922
   768 Machine engraving
   769 "Printers" + "Engravers" + Collections of engravings and printing
  770 "Photography"
@@ -886,7 +896,7 @@
   786 "Keyboard instruments"
   787 "Stringed instruments"
   788 "Wind instruments"
-  # 789 is unassigned; FLP uses it for percussion and rhythm
+# 789 Is Unassigned; FLP Uses it for Percussion and Rhythm
  790 "Amusements" + "Recreation"
   791 Public entertainment
   792 "Theater"
@@ -901,7 +911,7 @@
   801 "Literature -- Philosophy" + "Literature -- Aesthetics"
   802 Literary compendia and outlines
   803 Literature -- Dictionaries + Literary encyclopedias
-  # 804 is unassigned
+# 804 Is Unassigned
   805 "Literature -- Periodicals"
   806 "Literature -- Societies, etc."
   807 "Literature -- Research" + "Literature -- Study and teaching"
@@ -915,9 +925,9 @@
   815 "Speeches, addresses, etc., American"
   816 "American letters"
   817 "American wit and humor"
-  # 818 seems to have authors who wrote in more than one of the genres above
+# 818 Seems to Have Authors Who Wrote in More than One of the Genres above
   818 "Authors, American" + American miscellany
-  # 819 is unassigned
+# 819 Is Unassigned
  820 "English literature"
   821 "English poetry"
   822 "English drama"
@@ -926,7 +936,7 @@
   825 "Speeches, addresses, etc., English"
   826 "English letters"
   827 "English wit and humor"
-  # 828 seems to have authors who wrote in more than one of the genres above
+# 828 Seems to Have Authors Who Wrote in More than One of the Genres above
   828 "Authors, English" + English miscellany
   829 "English literature -- Old English, ca. 450-1100"
  830 "German literature"
@@ -954,7 +964,7 @@
   852 "Italian drama"
   853 "Italian fiction"
   854 "Italian essays"
-  # 855 not used at FLP; assuming pattern from Dewey 1922 and other 8?5s
+# 855 Not Used at FLP; Assuming Pattern from Dewey 1922 and other 8?5s
   855 "Speeches, addresses, etc., Italian"
   856 "Italian letters"
   857 "Italian wit and humor"
@@ -966,7 +976,7 @@
   863 "Spanish fiction"
   864 "Spanish essays"
   855 "Speeches, addresses, etc., Spanish"
-  # 866 not used at FLP; assuming pattern from Dewey 1922 and other 866s
+# 866 Not Used at FLP; Assuming Pattern from Dewey 1922 and other 866s
   866 "Spanish letters"
   857 "Spanish wit and humor"
   868 "Authors, Spanish" + Spanish miscellany
@@ -982,14 +992,14 @@
   878 "Authors, Latin" + Latin miscellany
   879 "Latin literature, Medieval and modern"
  880 "Greek literature" + "Classical literature"
-  # Classical substitutions in some 88x's inferred
+# Classical Substitutions in Some 88x's Inferred
   881 "Greek poetry" + "Classical poetry"
   882 "Greek drama" + "Classical drama"
   883 "Epic poetry, Greek" + "Epic poetry, classical"
   884 Greek and classical lyric poetry
   885 "Speeches, addresses, etc., Greek" + Classical speeches
   886 "Greek letters" + "Classical letters"
-  # 887 not in FLP; inferred from pattern
+# 887 Not in FLP; Inferred from Pattern
   887 "Greek wit and humor" + "Classical wit and humor"
   888 "Authors, Greek" + "Authors, Classical" + Greek and classical miscellany
   889 "Greek literature, Modern"
@@ -1001,7 +1011,7 @@
   895 "East Asian literature"
   896 "African literature"
   897 "Indian literature" from North America
-  # 898 not in FLP; inferred from Dewey 1922
+# 898 Not in FLP; Inferred from Dewey 1922
   898 "Indian literature" from South America
   899 "Austronesian literature" + other literatures
 ## 900 "History" + "Geography"
@@ -1025,7 +1035,7 @@
   918 "Latin America -- Description and travel" + "South America -- Description and travel"
   919 "Oceania -- Description and travel" + "Polar regions -- Discovery and exploration"
  920 "Biography"
-  # note 921-929 are optional
+# Note 921-929 Are Optional
  930 "History, Ancient" | Ancient history
   931 ("China -- History -- To 221 B.C." + "China -- History -- 221 B.C.-960 A.D." ) | Ancient China
   932 "Egypt -- History -- To 640 A.D." | Ancient Egypt
@@ -1123,7 +1133,7 @@
     976.2 "Mississippi"
     976.3 "Louisiana"
     976.4 "Texas"
-    # 976.5 unassigned
+# 976.5 Unassigned
     976.6 "Oklahoma"
     976.7 "Arkansas"
     976.8 "Tennessee"
@@ -1137,13 +1147,13 @@
     977.6 "Minnesota"
     977.7 "Iowa"
     977.8 "Missouri"
-    # 977.9 unassigned
+# 977.9 Unassigned
    978 "West (U.S.)" | Great plains and mountain west
     978.1 "Kansas"
     978.2 "Nebraska"
     978.3 "South Dakota"
     978.4 "North Dakota"
-    # 978.5 unassigned
+# 978.5 Unassigned
     978.6 "Montana"
     978.7 "Wyoming"
     978.8 "Colorado"

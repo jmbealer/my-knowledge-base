@@ -1,5 +1,16 @@
+---
+title: Css-prop-refer
+author: Justin Bealer
+date_created: 2024-04-04, 05-48-53
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Css-prop-refer
 ok this is a list of all the css properties
-format is: 
+format is:
 property description
 
 i want you to list them from most common/popular/importance to least common/popular/importance

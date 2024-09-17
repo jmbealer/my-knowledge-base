@@ -1,3 +1,13 @@
+---
+title: My Github Lists
+author: Justin Bealer
+date_created: 2023-12-10, 12-16-46
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # My Github Lists
 
 9-Unsorted

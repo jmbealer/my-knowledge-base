@@ -1,3 +1,13 @@
+---
+title: Python Roadmap
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Python Roadmap
 
 ## Beginner
@@ -62,7 +72,7 @@ Convolutional Neural Networks
 Recurrent Neural Networks
 Generative Adversarial Networks
 
-## Advanced - Full Stack Web development
+## Advanced - Full Stack Web Development
 
 Computer networks (Don't need to go into heavy detail but an understanding is necessary)
 Backend web dev tools (This is for app logic and interfacing with databases etc).

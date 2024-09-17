@@ -1,3 +1,14 @@
+---
+title: Notfound-from-ngwl-list
+author: Justin Bealer
+date_created: 2024-07-21, 11-54-22
+date_modified: 2024-09-17, 09-29-39
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Notfound-from-ngwl-list
 alright
 analyse
 april

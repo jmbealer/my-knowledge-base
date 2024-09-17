@@ -1,3 +1,14 @@
+---
+title: Clang
+author: Justin Bealer
+date_created: 2024-04-08, 03-02-05
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Clang
 C (programming language)
 
 C is a general-purpose computer programming language.

@@ -1,3 +1,13 @@
+---
+title: LPI BSD Specialist
+author: Justin Bealer
+date_created: 2024-08-30, 02-08-06
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # LPI BSD Specialist
 
 ## Links

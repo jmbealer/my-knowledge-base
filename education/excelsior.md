@@ -1,3 +1,13 @@
+---
+title: Excelsior University
+author: Justin Bealer
+date_created: 2023-12-22, 01-44-12
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Excelsior University
 
 ## BS in Information Technology
@@ -28,7 +38,7 @@ BPS in Technology Management
 
 MS in Cybersecurity
 
-## general education and additional requirements 120-124 credits
+## General Education and Additional Requirements 120-124 Credits
 
     IND 101 Cornerstone A: Foundations or IND 301 Cornerstone B: Pathways 3 credits
     Written English Requirement 6 credits

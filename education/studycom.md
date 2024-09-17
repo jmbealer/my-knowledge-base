@@ -1,3 +1,13 @@
+---
+title: Study.com
+author: Justin Bealer
+date_created: 2023-12-22, 01-18-05
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Study.com
 
 ## [Excelsior University](https://study.com/college/school/excelsior-college.html)
@@ -402,7 +412,7 @@ Spanish 105: Spanish for the Workplace (Humanities) 3 lower
 
 Statistics 101: Principles of Statistics (Mathematics) 3 lower
 
-## Only thomas edison state university
+## Only Thomas Edison State University
 
 Biology 107L: Clinical Microbiology w/ Lab BIO-175 Microorganisms 4 lower
 

@@ -1,3 +1,13 @@
+---
+title: HTML Element Reference
+author: Justin Bealer
+date_created: 2024-04-04, 05-24-29
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # HTML Element Reference
 
 ## Links

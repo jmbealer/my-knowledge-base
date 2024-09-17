@@ -1,3 +1,13 @@
+---
+title: Python Bytes, Bytearray WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Python Bytes, Bytearray WIP
 Bytes, Bytearray
 
@@ -130,13 +140,13 @@ print(x)
 
 Output:
 
-b'El ni\xc3\xb1o come camar\xc3\xb3n' 
+b'El ni\xc3\xb1o come camar\xc3\xb3n'
 
 Example-2:
 
 Code:
 
-\# create a string using the decode() method of bytes. 
+\# create a string using the decode() method of bytes.
 \#This method takes an encoding argument, such as UTF-8, and optionally an errors argument.
 x = b'El ni\xc3\xb1o come camar\xc3\xb3n'
 s = x.decode()
@@ -231,7 +241,7 @@ print(x)
 
 Output:
 
-b'Python mapping table characters' 
+b'Python mapping table characters'
 
 Example-2:
 
@@ -274,7 +284,7 @@ Convert bytes to hex in Python
 b'507974686f6e'
 >>> binascii.unhexlify(_).decode("utf8")
 'Python'
->>> 
+>>>
 
 How to get the character from the numeric code in bytes objects in Python
 
@@ -293,7 +303,7 @@ How to get the character from the numeric code in bytes objects in Python
 >>> z = bytes(y)
 >>> print(z)
 b'Foj^ed\x16_i\x16[W}\x87'
->>> 
+>>>
 
 Determine the length of a bytes object in Python
 
@@ -311,7 +321,7 @@ b'Python, Bytes'
 >>> \#know the length of the bytes object using the len() function
 >>> print(len(y))
 13
->>> 
+>>>
 
 Use the operators + and * with bytes objects in Python
 
@@ -334,7 +344,7 @@ b'Foj^ed\x16_i\x16[W}\x87Python'
 >>> x = b"Python" + b"Bytes" * 3 + b"$"
 >>> print(x)
 b'PythonBytesBytesBytes$'
->>> 
+>>>
 
 How to get a byte from a bytes object in Python?
 
@@ -360,7 +370,7 @@ h
 110
 >>> print(chr(x))
 n
->>> 
+>>>
 
 Create a bytearray object in Python
 
@@ -376,7 +386,7 @@ bytearray(b'Python Bytes')
 >>> x = bytearray([94, 91, 101, 125, 111, 35, 120, 101, 115, 101, 200])
 >>> print(x)
 bytearray(b'^[e}o#xese\xc8')
->>> 
+>>>
 
 Difference between bytes and bytearray object in Python
 
@@ -396,7 +406,7 @@ bytearray(b'Python byte object')
 >>> x.append(45)
 >>> print(x)
 bytearray(b'Python byte object-')
->>> 
+>>>
 
 Convert a bytes to bytearray
 
@@ -408,7 +418,7 @@ b'idkp\x84vkp\xc8'
 >>> x1 = bytearray(x)
 >>> print(x1)
 bytearray(b'idkp\x84vkp\xc8')
->>> 
+>>>
 
 Slice of a bytes object in Python
 
@@ -432,7 +442,7 @@ b'Pyth'
 >>> x1 = x[:]
 >>> print(x1)
 b'Python slice'
->>> 
+>>>
 
 Difference between bytes and string object
 

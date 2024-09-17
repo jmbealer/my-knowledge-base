@@ -1,3 +1,14 @@
+---
+title: Python-functions
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-functions
 == Python Functions WIP
 
 functions are action that can be performed on data types.
@@ -192,8 +203,8 @@ Parameters are variables that are defined in the function definition. They are a
 
 For example, the function definition defines parameters for a character, a setting, and a skill, which are used as inputs to write the first sentence of a book.
 def write_a_book(character, setting, special_skill):
-  print(character + " is in " + 
-        setting + " practicing her " + 
+  print(character + " is in " +
+        setting + " practicing her " +
         special_skill)
 Multiple Parameters
 
@@ -244,7 +255,7 @@ Parameters in python are variables — placeholders for the actual values the fu
 
 For example, the arguments passed into the function .sales() are the “The Farmer’s Market”, “toothpaste”, and “$1” which correspond to the parameters grocery_store, item_on_sale, and cost.
 def sales(grocery_store, item_on_sale, cost):
-  print(grocery_store + " is selling " + item_on_sale + " for " + cost) 
+  print(grocery_store + " is selling " + item_on_sale + " for " + cost)
 
 sales("The Farmer’s Market", "toothpaste", "$1")
 Function Keyword Arguments
@@ -316,7 +327,7 @@ greet("Kyla","How are you?")
 
 \# The following function definition would be incorrect
 def greet(msg = "Good morning!", name):
-  print("Hello ", name + ', ' + msg) 
+  print("Hello ", name + ', ' + msg)
 \# It would cause a "SyntaxError: non-default argument follows default argument"
 Python function default return value
 
@@ -326,7 +337,7 @@ def my_function(): pass
 
 print(my_function())
 
-\#Output 
+\#Output
 None
 Python variable None check
 
@@ -478,7 +489,7 @@ Strings can be assigned to variable say string1 and string2 which can called whe
 Example:
 
 str1 = 'Wel'
-print(str1,'come') 
+print(str1,'come')
 
 Output:
 
@@ -732,5 +743,5 @@ print("%-9.4f" % 5.1234567890)
 
 Output:
 
-5.1235   
+5.1235
 

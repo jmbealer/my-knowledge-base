@@ -1,3 +1,13 @@
+---
+title: Thomas Edison State University
+author: Justin Bealer
+date_created: 2023-12-21, 08-09-34
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Thomas Edison State University
 
 * Limit to 90 credits of non-RA sources such as: ACE, NCCRS, CLEP, and DSSTS

@@ -1,3 +1,14 @@
+---
+title: Unsorted
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Unsorted
 Learning is the process of acquiring new, or modifying existing, knowledge, behaviors, skills, values, or preferences.
 - Types
   - Non-associative learning
@@ -42,7 +53,7 @@ Learning is the process of acquiring new, or modifying existing, knowledge, beha
   - Epigenetic Factors
 
 21st Century Skills: skills that have been identified as being required for success in 21st century
-Epistemology: a branch of philosophy concerned with the nature and scope of knowledge 
+Epistemology: a branch of philosophy concerned with the nature and scope of knowledge
 Implicit Learning
 Instructional Theory: a theory that offers explicit guidance on how to better help people learn and develop
 Learning Sciences: interdisciplinary field to further scientific understanding of learning

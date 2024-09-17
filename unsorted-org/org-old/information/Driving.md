@@ -1,3 +1,14 @@
+---
+title: Driving
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Driving
 = Driving
 
 Right-of-way and Obligations
@@ -57,7 +68,7 @@ With the majority of 1-way or 2-way stops, you will have to move forward to make
 
 If two vehicles arrive at the same time while going opposite directions on the same road, follow the same rules which govern general driving. This means that if both drivers are turning right or going straight, they may proceed at the same time. If they are both turning left and do not pass the same path of travel, then they may go at the same time. If one is turning left and the other is going straight or right, then the one turning left must yield to the other driver.
 
-Oftentimes, drivers will skip the first step, and jump right to the second. Sometimes, they will do something totally different that does not make sense to anyone else involved. In cases like this, allow the other driver to go first to avoid any potential accidents. Many times, another driver will wave you on. This is either due to the fact that they are friendly or, more likely, do not know what the rules are. It is usually best to go at their direction, though the legal requirement is the steps listed above and fault may be difficult to determine if an accident occurs in this situation. 
+Oftentimes, drivers will skip the first step, and jump right to the second. Sometimes, they will do something totally different that does not make sense to anyone else involved. In cases like this, allow the other driver to go first to avoid any potential accidents. Many times, another driver will wave you on. This is either due to the fact that they are friendly or, more likely, do not know what the rules are. It is usually best to go at their direction, though the legal requirement is the steps listed above and fault may be difficult to determine if an accident occurs in this situation.
 
 
 

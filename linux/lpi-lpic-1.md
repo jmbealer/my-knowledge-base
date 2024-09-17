@@ -1,3 +1,13 @@
+---
+title: LPI LPIC-1
+author: Justin Bealer
+date_created: 2024-08-30, 02-40-34
+date_modified: 2024-09-17, 09-29-59
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # LPI LPIC-1
 
 It covers basic skills for the Linux professional that are common across all
@@ -17,7 +27,7 @@ In order to be certified LPIC-1, the candidate must pass both the 101 and 102 ex
 
 ### Topic 101: System Architecture 1-3
 
-#### 101.1 Determine and configure hardware settings Weight: 2
+#### 101.1 Determine and Configure Hardware Settings Weight: 2
 
 **Description:** Candidates should be able to determine and configure
 fundamental system hardware.
@@ -42,7 +52,7 @@ etc.).
 - lspci
 - lsusb
 
-#### 101.2 Boot the system Weight: 3
+#### 101.2 Boot the System Weight: 3
 
 **Description:** Candidates should be able to guide the system through the
 booting process.
@@ -69,7 +79,7 @@ time.
 - SysVinit
 - systemd
 
-#### 101.3 Change runlevels / boot targets and shutdown or reboot system Weight: 3
+#### 101.3 Change Runlevels / Boot Targets and Shutdown or Reboot System Weight: 3
 
 **Description:** Candidates should be able to manage the SysVinit runlevel or
 systemd boot target of the system.  This objective includes changing to single
@@ -104,7 +114,7 @@ events.
 
 ### Topic 102: Linux Installation and Package Management 1-6
 
-#### 102.1 Design hard disk layout Weight: 2
+#### 102.1 Design Hard Disk Layout Weight: 2
 
 **Description:** Candidates should be able to design a disk partitioning scheme for a Linux system.
 
@@ -126,7 +136,7 @@ events.
 - mount points
 - partitions
 
-#### 102.2 Install a boot manager Weight: 2
+#### 102.2 Install a Boot Manager Weight: 2
 
 **Description:** Candidates should be able to select, install and configure a boot manager.
 
@@ -144,7 +154,7 @@ events.
 - grub-mkconfig
 - MBR
 
-#### 102.3 Manage shared libraries Weight: 1
+#### 102.3 Manage Shared Libraries Weight: 1
 
 **Description:** Candidates should be able to determine the shared libraries that executable programs depend on and install them when necessary.
 
@@ -161,7 +171,7 @@ events.
 - /etc/ld.so.conf
 - LD_LIBRARY_PATH
 
-#### 102.4 Use Debian package management Weight: 3
+#### 102.4 Use Debian Package Management Weight: 3
 
 **Description:** Candidates should be able to perform package management using the Debian package tools.
 
@@ -180,7 +190,7 @@ events.
 - apt-get
 - apt-cache
 
-#### 102.5 Use RPM and YUM package management Weight: 3
+#### 102.5 Use RPM and YUM Package Management Weight: 3
 
 **Description:** Candidates should be able to perform package management using RPM, YUM and Zypper.
 
@@ -200,7 +210,7 @@ events.
 - yum
 - zypper
 
-#### 102.6 Linux as a virtualization guest Weight: 1
+#### 102.6 Linux as a Virtualization Guest Weight: 1
 
 **Description:** Candidates should understand the implications of virtualization and cloud computing on a Linux guest system.
 
@@ -224,7 +234,7 @@ events.
 
 ### Topic 103: GNU and Unix Commands 1-8
 
-#### 103.1 Work on the command line Weight: 4
+#### 103.1 Work on the Command line Weight: 4
 
 **Description:** Candidates should be able to interact with shells and commands using the command line. The objective assumes the Bash shell.
 
@@ -252,7 +262,7 @@ events.
 - .bash_history
 - Quoting
 
-#### 103.2 Process text streams using filters Weight: 2
+#### 103.2 Process Text Streams Using Filters Weight: 2
 
 **Description:** Candidates should should be able to apply filters to text streams.
 
@@ -283,7 +293,7 @@ events.
 - xzcat
 - zcat
 
-#### 103.3 Perform basic file management Weight: 4
+#### 103.3 Perform Basic File Management Weight: 4
 
 **Description:** Candidates should be able to use the basic Linux commands to manage files and directories.
 
@@ -318,7 +328,7 @@ events.
 - unxz
 - file globbing
 
-#### 103.4 Use streams, pipes and redirects Weight: 4
+#### 103.4 Use Streams, Pipes and Redirects Weight: 4
 
 **Description:** Candidates should be able to redirect streams and connect them in order to efficiently process textual data. Tasks include redirecting standard input, standard output and standard error, piping the output of one command to the input of another command, using the output of one command as arguments to another command and sending output to both stdout and a file.
 
@@ -334,7 +344,7 @@ events.
 - tee
 - xargs
 
-#### 103.5 Create, monitor and kill processes Weight: 4
+#### 103.5 Create, Monitor and Kill Processes Weight: 4
 
 **Description:** Candidates should be able to perform basic process management.
 
@@ -365,7 +375,7 @@ events.
 - screen
 - tmux
 
-#### 103.6 Modify process execution priorities Weight: 2
+#### 103.6 Modify Process Execution Priorities Weight: 2
 
 **Description:** Candidates should should be able to manage process execution priorities.
 
@@ -382,7 +392,7 @@ events.
 - renice
 - top
 
-#### 103.7 Search text files using regular expressions Weight: 3
+#### 103.7 Search Text Files Using Regular Expressions Weight: 3
 
 **Description:** Candidates should be able to manipulate files and text data using regular expressions. This objective includes creating simple regular expressions containing several notational elements as well as understanding the differences between basic and extended regular expressions. It also includes using regular expression tools to perform searches through a filesystem or file content.
 
@@ -402,7 +412,7 @@ events.
 - sed
 - regex(7)
 
-#### 103.8 Basic file editing Weight: 3
+#### 103.8 Basic File Editing Weight: 3
 
 **Description:** Candidates should be able to edit text files using vi. This objective includes vi navigation, vi modes, inserting, editing, deleting, copying and finding text. It also includes awareness of other common editors and setting the default editor.
 
@@ -426,7 +436,7 @@ events.
 
 ### Topic 104: Devices, Linux Filesystems, Filesystem Hierarchy Standard 1-7
 
-#### 104.1 Create partitions and filesystems Weight: 2
+#### 104.1 Create Partitions and Filesystems Weight: 2
 
 **Description:** Candidates should be able to configure disk partitions and then create filesystems on media such as hard disks. This includes the handling of swap partitions.
 
@@ -448,7 +458,7 @@ events.
 - mkfs
 - mkswap
 
-#### 104.2 Maintain the integrity of filesystems Weight: 2
+#### 104.2 Maintain the Integrity of Filesystems Weight: 2
 
 **Description:** Candidates should be able to maintain a standard filesystem, as well as the extra data associated with a journaling filesystem.
 
@@ -470,7 +480,7 @@ events.
 - xfs_fsr
 - xfs_db
 
-#### 104.3 Control mounting and unmounting of filesystems Weight: 3
+#### 104.3 Control Mounting and Unmounting of Filesystems Weight: 3
 
 **Description:** Candidates should be able to configure the mounting of a filesystem.
 
@@ -493,7 +503,7 @@ events.
 
 #### 104.4 Removed
 
-#### 104.5 Manage file permissions and ownership Weight: 3
+#### 104.5 Manage File Permissions and Ownership Weight: 3
 
 **Description:** Candidates should be able to control file access through the
 proper use of permissions and ownerships.
@@ -512,7 +522,7 @@ proper use of permissions and ownerships.
 - chown
 - chgrp
 
-#### 104.6 Create and change hard and symbolic links Weight: 2
+#### 104.6 Create and Change Hard and Symbolic Links Weight: 2
 
 **Description:** Candidates should be able to create and manage hard and
 symbolic links to a file.
@@ -529,7 +539,7 @@ symbolic links to a file.
 - ln
 - ls
 
-#### 104.7 Find system files and place files in the correct location Weight: 2
+#### 104.7 Find System Files and place Files in the Correct Location Weight: 2
 
 **Description:** Candidates should be thoroughly familiar with the Filesystem
 Hierarchy Standard (FHS), including typical file locations and directory
@@ -556,7 +566,7 @@ the FHS.
 
 ### Topic 105: Shells and Shell Scripting
 
-#### 105.1 Customize and use the shell environment Weight: 4
+#### 105.1 Customize and Use the Shell Environment Weight: 4
 
 **Description:** Candidates should be able to customize shell environments to
 meet users' needs. Candidates should be able to modify global and user profiles.
@@ -586,7 +596,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - function
 - alias
 
-#### 105.2 Customize or write simple scripts Weight: 4
+#### 105.2 Customize or Write Simple Scripts Weight: 4
 
 **Description:** Candidates should be able to customize existing scripts, or write simple new Bash scripts.
 
@@ -614,7 +624,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 
 ### Topic 106: User Interfaces and Desktops
 
-#### 106.1 Install and configure X11 Weight: 2
+#### 106.1 Install and Configure X11 Weight: 2
 
 **Description:** Candidates should be able to install and configure X11.
 
@@ -681,7 +691,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 
 ### Topic 107: Administrative Tasks
 
-#### 107.1 Manage user and group accounts and related system files Weight: 5
+#### 107.1 Manage User and Group Accounts and Related System Files Weight: 5
 
 **Description:** Candidates should be able to add, remove, suspend and change user accounts.
 
@@ -707,7 +717,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - userdel
 - usermod
 
-#### 107.2 Automate system administration tasks by scheduling jobs Weight: 4
+#### 107.2 Automate System Administration Tasks by Scheduling Jobs Weight: 4
 
 **Description:** Candidates should be able to use cron and systemd timers to run jobs at regular intervals and to use at to run jobs at a specific time.
 
@@ -733,7 +743,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - systemctl
 - systemd-run
 
-#### 107.3 Localisation and internationalisation Weight: 3
+#### 107.3 Localisation and Internationalisation Weight: 3
 
 **Description:** Candidates should be able to localize a system in a different language than English. As well, an understanding of why LANG=C is useful when scripting.
 
@@ -763,7 +773,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 
 ### Topic 108: Essential System Services
 
-#### 108.1 Maintain system time Weight: 3
+#### 108.1 Maintain System time Weight: 3
 
 **Description:** Candidates should be able to properly maintain the system time and synchronize the clock via NTP.
 
@@ -791,7 +801,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - chronyc
 - pool.ntp.org
 
-#### 108.2 System logging Weight: 4
+#### 108.2 System Logging Weight: 4
 
 **Description:** Candidates should be able to configure rsyslog. This objective also includes configuring the logging daemon to send log output to a central log server or accept log output as a central log server. Use of the systemd journal subsystem is covered. Also, awareness of syslog and syslog-ng as alternative logging systems is included.
 
@@ -821,7 +831,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - /etc/systemd/journald.conf
 - /var/log/journal/
 
-#### 108.3 Mail Transfer Agent (MTA) basics Weight: 3
+#### 108.3 Mail Transfer Agent (MTA) Basics Weight: 3
 
 **Description:** Candidates should be aware of the commonly available MTA programs and be able to perform basic forward and alias configuration on a client host. Other configuration files are not covered.
 
@@ -842,7 +852,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - sendmail
 - exim
 
-#### 108.4 Manage printers and printing Weight: 2
+#### 108.4 Manage Printers and Printing Weight: 2
 
 **Description:** Candidates should be able to manage print queues and user print jobs using CUPS and the LPD compatibility interface.
 
@@ -861,7 +871,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 
 ### Topic 109: Networking Fundamentals
 
-#### 109.1 Fundamentals of internet protocols Weight: 4
+#### 109.1 Fundamentals of Internet Protocols Weight: 4
 
 **Description:** Candidates should demonstrate a proper understanding of TCP/IP network fundamentals.
 
@@ -881,7 +891,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - Subnetting
 - TCP, UDP, ICMP
 
-#### 109.2 Persistent network configuration Weight: 4
+#### 109.2 Persistent Network Configuration Weight: 4
 
 **Description:** Candidates should be able to manage the persistent network configuration of a Linux host.
 
@@ -902,7 +912,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - ifup
 - ifdown
 
-#### 109.3 Basic network troubleshooting Weight: 4
+#### 109.3 Basic Network Troubleshooting Weight: 4
 
 **Description:** Candidates should be able to troubleshoot networking issues on client hosts.
 
@@ -929,7 +939,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - netstat
 - route
 
-#### 109.4 Configure client side DNS Weight: 2
+#### 109.4 Configure Client Side DNS Weight: 2
 
 **Description:** Candidates should be able to configure DNS on a client host.
 
@@ -952,7 +962,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 
 ### Topic 110: Security
 
-#### 110.1 Perform security administration tasks Weight: 3
+#### 110.1 Perform Security Administration Tasks Weight: 3
 
 **Description:** Candidates should know how to review system configuration to ensure host security in accordance with local security policies.
 
@@ -981,7 +991,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - ulimit
 - who, w, last
 
-#### 110.2 Setup host security Weight: 3
+#### 110.2 Setup Host Security Weight: 3
 
 **Description:** Candidates should know how to set up a basic level of host security.
 
@@ -1004,7 +1014,7 @@ meet users' needs. Candidates should be able to modify global and user profiles.
 - /etc/hosts.allow
 - /etc/hosts.deny
 
-#### 110.3 Securing data with encryption Weight: 4
+#### 110.3 Securing Data with Encryption Weight: 4
 
 **Description:** The candidate should be able to use public key techniques to secure data and communication.
 

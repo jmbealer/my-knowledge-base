@@ -1,3 +1,13 @@
+---
+title: What is Strings?
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # What is Strings?
 
 : strings == str
@@ -19,7 +29,7 @@ print ("UPDATED STRING WILL BE: " , ch [:8]+ "Python")
 
 UPDATED STRING WILL BE: Hello PyPython
 
-## Strings example
+## Strings Example
 
 'This is a String.'
 "This is a String."
@@ -180,14 +190,14 @@ while i < len(a):
 
 Output:
 
->>> 
+>>>
 S
 T
 R
 I
 N
 G
->>> 
+>>>
 
 Traversal with a for loop :
 
@@ -201,15 +211,15 @@ new=" "
 for i in range (0,len(a)):
   b=a[i]
   \# + used for concatenation
-  new = new+b 
+  new = new+b
   i = i + 1
   \# prints each char on one line
-  print(b) 
+  print(b)
   print(new)
 
 Output:
 
->>> 
+>>>
 P
  P
 y
@@ -222,7 +232,7 @@ o
  Pytho
 n
  Python
->>> 
+>>>
 
 
 
@@ -339,7 +349,7 @@ The ten subcomponents of <format_spec>:
   <fill> Specifies how to pad values that don't occupy the entire field width.
   <align> Specifies how to justify values that don't occupy the entire field width.
   <sign> Controls whether a leading sign is included for numeric values.
-  # Selects an alternate output form for certain presentation types.
+# Selects an Alternate Output Form for Certain Presentation Types
   0 Causes values to be padded on the left with zeros instead of ASCII space characters.
   <width> Specifies the minimum width of the output.
   <group> Specifies a grouping character for numeric output.
@@ -665,10 +675,10 @@ print(search("P","PYTHON"))
 
 Output:
 
->>> 
+>>>
 6
 1
->>> 
+>>>
 
     It takes a character and finds the index where that character appears in a string.
     If the character is not found, the function returns -1.
@@ -689,7 +699,7 @@ print(search("S","PYTHON"))
 
 Output:
 
->>> 
+>>>
 6
 -1
 >>>

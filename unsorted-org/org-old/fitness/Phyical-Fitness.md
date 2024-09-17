@@ -1,3 +1,14 @@
+---
+title: Phyical-Fitness
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Phyical-Fitness
 Pull
     
     Arms
@@ -134,7 +145,7 @@ Push
 
    Arms
         Scapula (Back) & Clavicle (Chest)
-            Protraction 
+            Protraction
                 Serratus Anterior (Boxers Muscle)
                 Pectoralis Minor (Lower Chest)
                 -Levator Scapulae (Upper Shoulder or Rear Neck)
@@ -167,7 +178,7 @@ Push
             Transverse Adduction
                 Pectoralis Major Sternal Head (Chest and Lower Pecs)
                 Pectoralis Major Clavicular Head (Chest and Lower Pecs)
-            Medial Rotation (Internal Rotation) 
+            Medial Rotation (Internal Rotation)
                 Pectoralis Major Sternal Head (Chest and Lower Pecs)
                 Pectoralis Major Clavicular Head (Chest and Lower Pecs)
                 Latissimus Dorsi (Lats or Middle, Outer Back)
@@ -256,191 +267,191 @@ Push
     
 
 
-Head 
+Head
 
-Eyes 
+Eyes
 
-Jaw 
+Jaw
 
-Neck  (Cervical  Spine) 
+Neck  (Cervical  Spine)
 
-Flexion 
+Flexion
 
-Extension  /  Hyperextension 
+Extension  /  Hyperextension
 
-Lateral  Flexion  (Abduction) 
+Lateral  Flexion  (Abduction)
 
-Reduction  (Adduction) 
+Reduction  (Adduction)
 
-Rotation  /  Anti-Rotation 
+Rotation  /  Anti-Rotation
 
-Trunk (Torso)  (Thoracic  -  Lumar  Spine) 
+Trunk (Torso)  (Thoracic  -  Lumar  Spine)
 
-Flexion 
+Flexion
 
-Extension  /  Hyperextension 
+Extension  /  Hyperextension
 
-Lateral  Flexion  (Abduction) 
+Lateral  Flexion  (Abduction)
 
-Reduction  (Adduction) 
+Reduction  (Adduction)
 
-Rotation  /  Anti-Rotation 
+Rotation  /  Anti-Rotation
 
-Compression 
+Compression
 
-Limbs 
+Limbs
 
-Arms (Upper  Limbs) 
+Arms (Upper  Limbs)
 
-Scapula & Clavicle  (Shoulder Blades &) 
+Scapula & Clavicle  (Shoulder Blades &)
 
-Abduction  (Protraction) 
+Abduction  (Protraction)
 
-Adduction  (Retraction) 
+Adduction  (Retraction)
 
-Depression 
+Depression
 
-Elevation 
+Elevation
 
-Rotation  Upward  (Superior  Rotation) 
+Rotation  Upward  (Superior  Rotation)
 
-Rotation  Downward  (Inferior  Rotation) 
+Rotation  Downward  (Inferior  Rotation)
 
-Shoulder 
+Shoulder
 
-Flexion 
+Flexion
 
-Extension  /  Hyperextension 
+Extension  /  Hyperextension
 
-Adduction 
+Adduction
 
 Abduction  
 
-Transverse  Adduction 
+Transverse  Adduction
 
-Transverse Flexion 
+Transverse Flexion
 
-Transverse Abduction 
+Transverse Abduction
 
-Transverse Extension 
+Transverse Extension
 
-Medial Rotation (Internal Rotation) 
+Medial Rotation (Internal Rotation)
 
-Lateral Rotation (External Rotation)       
+Lateral Rotation (External Rotation)
 
-Elbow 
-
-Flexion  
-
-Extension 
-
-Forearm (Radioulnar) 
-
-Pronation 
-
-Supination 
-
-Wrist  &  Midcarpal 
-
-Flexion 
-
-Extension  /  Hyperextension 
-
-Adduction  (Ulna  Deviation) 
-
-Abduction  (Radial  Deviation) 
-
-Hand (Thumb & Fingers) 
-
-Flexion 
-
-Extension  /  Hyperextension 
-
-Adduction 
-
-Abduction 
-
-Opposition 
-
-Legs (Lower  Limbs) 
-
-Hip 
+Elbow
 
 Flexion  
 
-Extension 
+Extension
 
-Adduction 
+Forearm (Radioulnar)
 
-Abduction 
+Pronation
 
-Transverse  Adduction 
+Supination
 
-Transverse  Abduction 
+Wrist  &  Midcarpal
 
-Medial  Rotation  (Internal  Rotation) 
+Flexion
 
-Lateral  Rotation  (External  Rotation) 
+Extension  /  Hyperextension
 
-Knee 
+Adduction  (Ulna  Deviation)
 
-Flexion 
+Abduction  (Radial  Deviation)
 
-Extension 
+Hand (Thumb & Fingers)
 
-Medial  Rotation  (Internal  Rotation) 
+Flexion
 
-Lateral  Rotation  (External  Rotation) 
+Extension  /  Hyperextension
 
-Ankle  &  Subtalar 
+Adduction
 
-Dorsi  Flexion 
+Abduction
 
-Plantar  Flexion 
+Opposition
 
-Inversion 
+Legs (Lower  Limbs)
 
-Eversion 
+Hip
 
-Toes 
+Flexion  
 
-Flexion 
+Extension
 
-Extension  /  Hyperextension 
+Adduction
 
-Adduction 
+Abduction
 
-Abduction 
+Transverse  Adduction
+
+Transverse  Abduction
+
+Medial  Rotation  (Internal  Rotation)
+
+Lateral  Rotation  (External  Rotation)
+
+Knee
+
+Flexion
+
+Extension
+
+Medial  Rotation  (Internal  Rotation)
+
+Lateral  Rotation  (External  Rotation)
+
+Ankle  &  Subtalar
+
+Dorsi  Flexion
+
+Plantar  Flexion
+
+Inversion
+
+Eversion
+
+Toes
+
+Flexion
+
+Extension  /  Hyperextension
+
+Adduction
+
+Abduction
 
  
 
-Pull  Flexion  Adduction  Medial  Rotation 
+Pull  Flexion  Adduction  Medial  Rotation
 
-Push  Extension  Abduction  Lateral  Rotation 
-
- 
-
-Ches 
-
-Arms  scapula  pull 3 push 3  shoulder  pull 3 push 3  elbow  pull 1 push 1  forearm  pull 1 push 1  wrist  pull 2 push 2 
-
-Legs  Hips 6  Knee  2(4)  Ankle  2(4) 
+Push  Extension  Abduction  Lateral  Rotation
 
  
 
-Aerobic Exercise 
+Ches
 
-Anaerobic Exercise 
+Arms  scapula  pull 3 push 3  shoulder  pull 3 push 3  elbow  pull 1 push 1  forearm  pull 1 push 1  wrist  pull 2 push 2
+
+Legs  Hips 6  Knee  2(4)  Ankle  2(4)
+
+ 
+
+Aerobic Exercise
+
+Anaerobic Exercise
 
 Mobility  
 
-Locomotion 
+Locomotion
 
 
 Strength < 6 reps (less than or equal to) 2-6 sets
 Power 1-5 reps 3-5 sets
 Hypertrophy 6-12 reps 3-6 sets
-Muscular endurance > (more than or equal to) 12 reps 2-3 sets 
+Muscular endurance > (more than or equal to) 12 reps 2-3 sets
 
  
 
@@ -453,9 +464,9 @@ HIIT Afterburn Calories 7%-14%
 
  
 
-big  muscle  groups  60-120rep  20set  shoulder  chest  back  upper  leg  abs  calves  maybe 
+big  muscle  groups  60-120rep  20set  shoulder  chest  back  upper  leg  abs  calves  maybe
 
-small  muscle  groups  30-60rep  10set  neck  biceps  triceps   
+small  muscle  groups  30-60rep  10set  neck  biceps  triceps
 
 if your weakpoints
     
@@ -464,7 +475,7 @@ if your weakpoints
     20-25 total weekly sets through out 3-6 sessions
     
 Speed Training
-    Acceleration Max Velocity Change of Direction Plyometrics 
+    Acceleration Max Velocity Change of Direction Plyometrics
     
     
 Untrained
@@ -487,8 +498,8 @@ Elite
 
 An athlete competing in strength sports. Keep in mind, the standards shown in the tables do not represent the highest level of strength performance possible.
 
-Warm-Up 
+Warm-Up
     5-10 minutes of low to moderate intensity cardio
     2-3 minutes of dynamic stretching
     
-aiming to lose around 0.7 percent of your bodyweight per week maximizes fat loss while minimizing muscle loss     
+aiming to lose around 0.7 percent of your bodyweight per week maximizes fat loss while minimizing muscle loss

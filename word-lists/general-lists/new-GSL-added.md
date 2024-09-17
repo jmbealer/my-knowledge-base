@@ -1,3 +1,14 @@
+---
+title: new-GSL-added
+author: Justin Bealer
+date_created: 2024-07-20, 04-16-00
+date_modified: 2024-09-17, 09-29-42
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# new-GSL-added
 Rank  Headword Class  Related forms
 1 the det
 2 be v is, are, was, am, were, being, been

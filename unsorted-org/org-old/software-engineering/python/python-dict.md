@@ -1,3 +1,14 @@
+---
+title: Python-dict
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-dict
 = Dictionaries WIP
 
 <dict> = {<key>:<value>, <key>:<value>}
@@ -6,9 +17,9 @@
 
 Python dictionary is a container of the unordered set of objects like lists.
 dictionaries are wrapped in curly braces {}.
-The items in a dictionary are a comma-separated list of key:value pairs where keys and values are Python data type. 
-Each object or value accessed by key and keys are unique in the dictionary. 
-As keys are used for indexing, they must be the immutable type (string, number, or tuple). 
+The items in a dictionary are a comma-separated list of key:value pairs where keys and values are Python data type.
+Each object or value accessed by key and keys are unique in the dictionary.
+As keys are used for indexing, they must be the immutable type (string, number, or tuple).
 <empty_dict> = {}
 <!--ID: 1639528995837-->
 
@@ -38,8 +49,8 @@ Use the keys() function to get a list of keys in the dictionary.
 >>> person.keys()
 dict_keys([‘city’, ‘age’])
 
-Think of a real-life dictionary. What is it used for? It holds word-meaning pairs. 
-Likewise, a Python dictionary holds key-value pairs. 
+Think of a real-life dictionary. What is it used for? It holds word-meaning pairs.
+Likewise, a Python dictionary holds key-value pairs.
 However, you may not use an unhashable item as a key.
 
 .Add item
@@ -337,10 +348,10 @@ Python allows the values in a dictionary to be any type – string, integer, a l
 
 In the example code block, you can see that the keys are strings or numbers (int or float). The values, on the other hand, are many varied data types.
 dictionary = {
-  1: 'hello', 
-  'two': True, 
-  '3': [1, 2, 3], 
-  'Four': {'fun': 'addition'}, 
+  1: 'hello',
+  'two': True,
+  '3': [1, 2, 3],
+  'Four': {'fun': 'addition'},
   5.0: 5.5
 }
 Python dictionaries

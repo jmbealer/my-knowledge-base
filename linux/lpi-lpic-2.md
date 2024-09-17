@@ -1,3 +1,13 @@
+---
+title: LPI LPIC-2
+author: Justin Bealer
+date_created: 2024-08-30, 04-14-43
+date_modified: 2024-09-17, 09-29-59
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # LPI LPIC-2
 
 These are required exams for LPI certification Level 2.
@@ -84,7 +94,7 @@ future resource needs.
 
 ### Topic 201: Linux Kernel 1-3
 
-#### 201.1 Kernel components Weight: 2
+#### 201.1 Kernel Components Weight: 2
 
 **Description:** Candidates should be able to utilise kernel components that are
 necessary to specific hardware, hardware drivers, system resources and
@@ -104,7 +114,7 @@ kernel modules.
 - bzImage
 - xz compression
 
-#### 201.2 Compiling a Linux kernel Weight: 3
+#### 201.2 Compiling a Linux Kernel Weight: 3
 
 **Description:** Candidates should be able to properly configure a kernel to
 include or disable specific features of the Linux kernel as necessary. This
@@ -141,7 +151,7 @@ deb-pkg)
 - depmod
 - dkms
 
-#### 201.3 Kernel runtime management and troubleshooting Weight: 4
+#### 201.3 Kernel Runtime Management and Troubleshooting Weight: 4
 
 **Description:** Candidates should be able to manage and/or query a 2.6.x, 3.x
 or 4.x kernel and its loadable modules. Candidates should be able to identify
@@ -186,7 +196,7 @@ kernel and kernel modules.
 
 ### Topic 202: System Startup 1-3
 
-#### 202.1 Customizing system startup Weight: 3
+#### 202.1 Customizing System Startup Weight: 3
 
 **Description:** Candidates should be able to query and modify the behaviour of
 system services at various targets / run levels. A thorough understanding of the
@@ -213,7 +223,7 @@ includes interacting with systemd targets and SysV init run levels.
 - update-rc.d
 - init and telinit
 
-#### 202.2 System recovery Weight: 4
+#### 202.2 System Recovery Weight: 4
 
 **Description:** Candidates should be able to properly manipulate a Linux system
 during both the boot process and during recovery mode. This objective includes
@@ -277,7 +287,7 @@ features.
 
 ### Topic 203: Filesystem and Devices 1-3
 
-#### 203.1 Operating the Linux filesystem Weight: 4
+#### 203.1 Operating the Linux Filesystem Weight: 4
 
 **Description:** Candidates should be able to properly configure and navigate
 the standard Linux filesystem. This objective includes configuring and mounting
@@ -301,7 +311,7 @@ various filesystem types.
 - swapon
 - swapoff
 
-#### 203.2 Maintaining a Linux filesystem Weight: 3
+#### 203.2 Maintaining a Linux Filesystem Weight: 3
 
 **Description:** Candidates should be able to properly maintain a Linux
 filesystem using system utilities. This objective includes manipulating standard
@@ -325,7 +335,7 @@ and snapshots
 - xfs_info, xfs_check, xfs_repair, xfsdump and xfsrestore
 - smartd, smartctl
 
-#### 203.3 Creating and configuring filesystem options Weight: 2
+#### 203.3 Creating and Configuring Filesystem Options Weight: 2
 
 **Description:** Candidates should be able to configure automount filesystems
 using AutoFS. This objective includes configuring automount for network and
@@ -418,7 +428,7 @@ physical volumes
 
 ### Topic 205: Networking Configuration 1-3
 
-#### 205.1 Basic networking configuration Weight: 3
+#### 205.1 Basic Networking Configuration Weight: 3
 
 **Description:** Candidates should be able to configure a network device to be
 able to connect to a local, wired or wireless, and a wide-area network. This
@@ -467,7 +477,7 @@ configuring a multi-homed network device and resolving communication problems.
 - tcpdump
 - nmap
 
-#### 205.3 Troubleshooting network issues Weight: 4
+#### 205.3 Troubleshooting Network Issues Weight: 4
 
 **Description:** Candidates should be able to identify and correct common
 network setup issues, to include knowledge of locations for basic configuration
@@ -506,7 +516,7 @@ journal
 
 ### Topic 206: System Maintenance 1-3
 
-#### 206.1 Make and install programs from source Weight: 2
+#### 206.1 Make and Install Programs from Source Weight: 2
 
 **Description:** Candidates should be able to build and install an executable
 program from source. This objective includes being able to unpack a file of
@@ -533,7 +543,7 @@ sources.
 - install
 - patch
 
-#### 206.2 Backup operations Weight: 3
+#### 206.2 Backup Operations Weight: 3
 
 **Description:** Candidates should be able to use system tools to back up
 important system data.
@@ -558,7 +568,7 @@ media
 - mt
 - rsync
 
-#### 206.3 Notify users on system-related issues Weight: 1
+#### 206.3 Notify Users on System-related Issues Weight: 1
 
 **Description:** Candidates should be able to notify the users about current
 issues related to the system.
@@ -610,7 +620,7 @@ issues related to the system.
 
 ### Topic 207: Domain Name Server 1-3
 
-#### 207.1 Basic DNS server configuration Weight: 3
+#### 207.1 Basic DNS Server Configuration Weight: 3
 
 **Description:** Candidates should be able to configure BIND to function as an
 authoritative and as a recursive, caching-only DNS server. This objective
@@ -633,7 +643,7 @@ includes the ability to manage a running server and configuring logging.
 - host
 - dig
 
-#### 207.2 Create and maintain DNS zones Weight: 3
+#### 207.2 Create and Maintain DNS Zones Weight: 3
 
 **Description:** Candidates should be able to create a zone file for a forward
 or reverse zone and hints for root level servers. This objective includes
@@ -660,7 +670,7 @@ server.
 - nslookup
 - host
 
-#### 207.3 Securing a DNS server Weight: 2
+#### 207.3 Securing a DNS Server Weight: 2
 
 **Description:** Candidates should be able to configure a DNS server to run as a
 non-root user and run in a chroot jail. This objective includes secure exchange
@@ -685,7 +695,7 @@ of data between DNS servers.
 
 ### Topic 208: HTTP Services 1-4
 
-#### 208.1 Basic Apache configuration Weight: 4
+#### 208.1 Basic Apache Configuration Weight: 4
 
 **Description:** Candidates should be able to install and configure a web
 server. This objective includes monitoring the server's load and performance,
@@ -716,7 +726,7 @@ configure a web server to use virtual hosts and customize file access.
 - apachectl, apache2ctl
 - httpd, apache2
 
-#### 208.2 Apache configuration for HTTPS Weight: 3
+#### 208.2 Apache Configuration for HTTPS Weight: 3
 
 **Description:** Candidates should be able to configure a web server to provide
 HTTPS.
@@ -740,7 +750,7 @@ HTTPS.
 - SSLCACertificateFile, SSLCACertificatePath
 - SSLProtocol, SSLCipherSuite, ServerTokens, ServerSignature, TraceEnable
 
-#### 208.3 Implementing Squid as a caching proxy Weight: 2
+#### 208.3 Implementing Squid as a Caching Proxy Weight: 2
 
 **Description:** Candidates should be able to install and configure a proxy
 server, including access policies, authentication and resource usage.
@@ -758,7 +768,7 @@ server, including access policies, authentication and resource usage.
 - acl
 - http_access
 
-#### 208.4 Implementing Nginx as a web server and a reverse proxy Weight: 2
+#### 208.4 Implementing Nginx as a Web Server and a Reverse Proxy Weight: 2
 
 **Description:** Candidates should be able to install and configure a reverse
 proxy server, Nginx. Basic configuration of Nginx as a HTTP server is included.
@@ -834,7 +844,7 @@ and securing NFS.
 
 ### Topic 210: Network Client Management 1-4
 
-#### 210.1 DHCP configuration Weight: 2
+#### 210.1 DHCP Configuration Weight: 2
 
 **Description:** Candidates should be able to configure a DHCP server. This
 objective includes setting default and per client options, adding static hosts
@@ -857,7 +867,7 @@ the DHCP server.
 - radvd
 - radvd.conf
 
-#### 210.2 PAM authentication Weight: 3
+#### 210.2 PAM Authentication Weight: 3
 
 **Description:** The candidate should be able to configure PAM to support
 authentication using various available methods. This includes basic SSSD
@@ -877,7 +887,7 @@ functionality.
 - pam_unix, pam_cracklib, pam_limits, pam_listfile, pam_sss
 - sssd.conf
 
-#### 210.3 LDAP client usage Weight: 2
+#### 210.3 LDAP Client Usage Weight: 2
 
 **Description:** Candidates should be able to perform queries and updates to an
 LDAP server. Also included is importing and adding items, as well as adding and
@@ -896,7 +906,7 @@ managing users.
 - ldapadd
 - ldapdelete
 
-#### 210.4 Configuring an OpenLDAP server Weight: 4
+#### 210.4 Configuring an OpenLDAP Server Weight: 4
 
 **Description:** Candidates should be able to configure a basic OpenLDAP server
 including knowledge of LDIF format and essential access controls.
@@ -925,7 +935,7 @@ including knowledge of LDIF format and essential access controls.
 
 ### Topic 211: E-Mail Services 1-3
 
-#### 211.1 Using e-mail servers Weight: 4
+#### 211.1 Using E-mail Servers Weight: 4
 
 **Description:** Candidates should be able to manage an e-mail server, including
 the configuration of e-mail aliases, e-mail quotas and virtual e-mail domains.
@@ -986,7 +996,7 @@ daemons.
 
 ### Topic 212: System Security 1-5
 
-#### 212.1 Configuring a router Weight: 3
+#### 212.1 Configuring a Router Weight: 3
 
 **Description:** Candidates should be able to configure a system to forward IP
 packet and perform network address translation (NAT, IP masquerading) and state
@@ -1011,7 +1021,7 @@ source or destination protocol, port and address
 - iptables
 - ip6tables
 
-#### 212.2 Managing FTP servers Weight: 2
+#### 212.2 Managing FTP Servers Weight: 2
 
 **Description:** Candidates should be able to configure an FTP server for
 anonymous downloads and uploads. This objective includes precautions to be taken
@@ -1028,7 +1038,7 @@ if anonymous uploads are permitted and configuring user access.
 - vsftpd.conf
 - important Pure-FTPd command line options
 
-#### 212.3 Secure shell (SSH) Weight: 4
+#### 212.3 Secure Shell (SSH) Weight: 4
 
 **Description:** Candidates should be able to configure and secure an SSH
 daemon. This objective includes managing keys and configuring SSH for users.
@@ -1056,7 +1066,7 @@ connection to remote host following configuration changes
 - PermitRootLogin, PubKeyAuthentication, AllowUsers, PasswordAuthentication,
 Protocol
 
-#### 212.4 Security tasks Weight: 3
+#### 212.4 Security Tasks Weight: 3
 
 **Description:** Candidates should be able to receive security alerts from
 various sources, install, configure and run intrusion detection systems and

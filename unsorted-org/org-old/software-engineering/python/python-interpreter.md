@@ -1,18 +1,28 @@
+---
+title: "-*- Coding: Encoding -*-"
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 == Python Interpreter WIP
  Python Interpreter & its Environment (Source Code Encoding)
 
 The default encoding for a Python source file is UTF-8. This is a Unicode Standard variable-width character encoding; it can encode 1,112,064 valid code points in Unicode using up to four 8-bit bytes. Using this encoding, we can use characters of most languages – we can use these in string literals, comments, and identifiers. Since the standard library makes use of ASCII characters only, you must declare the use of this encoding to your editor. This is to ensure that all such characters display without a problem. The font should be such that supports all characters in the file.
 We add this comment as the first line of the file we want to use it in-
-# -*- coding: encoding -*-
+# -*- Coding: Encoding -*-
 
 In this, encoding is a valid codec that Python supports. Similarly, when you want to use the Windows-1252 encoding, you can use this as the first line of code:
-# -*- coding: cp1252 -*-
+# -*- Coding: Cp1252 -*-
 
 However, when you want to begin code with a UNIX shebang line, you can put the comment for encoding second-
 #!/usr/bin/env python3
-# -*- coding: cp1252 -*-
+# -*- Coding: Cp1252 -*-
 
-Do you know about Python Iterables and Python Itertools 
+Do you know about Python Iterables and Python Itertools
 3. How to Invoke the Python Interpreter?
 
 On your machine, you can find your interpreter at an address like:

@@ -1,3 +1,13 @@
+---
+title: CompTIA Certifications
+author: Justin Bealer
+date_created: 2024-03-22, 04-17-54
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # CompTIA Certifications
 
 Novice:

@@ -1,3 +1,14 @@
+---
+title: Ultra-Learning
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Ultra-Learning
 Meta Learning: First Draw a Map
 Focus: Sharpen Your Knife
 Directness: Go Straight Ahead

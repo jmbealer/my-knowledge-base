@@ -1,4 +1,14 @@
-# Quick reference guide
+---
+title: Quick Reference Guide
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Quick Reference Guide
 
 quickref.txt  For Vim version 8.2.  Last change: 2021 Oct 17
 
@@ -8,7 +18,7 @@ quickref.txt  For Vim version 8.2.  Last change: 2021 Oct 17
                             Quick reference guide
 
                                                          quickref Contents
- tag      subject                        tag      subject       
+ tag      subject                        tag      subject
 Q_ct  list of help files              Q_re  Repeating commands
 Q_lr  motion: Left-right              Q_km  Key mapping
 Q_ud  motion: Up-down                 Q_ab  Abbreviations
@@ -60,7 +70,7 @@ wrap
 [N]**,** repeat the last "f", "F", "t", or "T" N times in opposite
 direction
 ------------------------------------------------------------------------------
-## Q_ud          Up-down motions
+## Q_ud Up-down Motions
 <!--ID: 1639612872517-->
 
 
@@ -79,7 +89,7 @@ N%    N  %            goto line N percentage down in the file; N must be
 gk    N  gk           up N screen lines (differs from "k" when line wraps)
 gj    N  gj           down N screen lines (differs from "j" when line wraps)
 ------------------------------------------------------------------------------
-## Q_tm          Text object motions
+## Q_tm Text Object Motions
 
 w     N  w            N words forward
 W     N  W            N blank-separated WORDs forward
@@ -111,7 +121,7 @@ gE    N  gE           backward to the end of the Nth blank-separated WORD
 [star N  [*           N times back to start of comment "/*"
 ]star N  ]*           N times forward to end of comment "*/"
 ------------------------------------------------------------------------------
-## Q_pa          Pattern searches
+## Q_pa Pattern Searches
 
 /     N  /{pattern}[/[offset]]<CR>
                         search forward for the Nth occurrence of {pattern}
@@ -122,7 +132,7 @@ gE    N  gE           backward to the end of the Nth blank-separated WORD
 n     N  n            repeat last search
 N     N  N            repeat last search, in opposite direction
 star  N  *            search forward for the identifier under the cursor
-#     N  #            search backward for the identifier under the cursor
+# N # search backward for the Identifier under the Cursor
 gstar N  g*           like "*", but also find partial matches
 g#    N  g#           like "#", but also find partial matches
 gd       gd           goto local declaration of identifier under the cursor

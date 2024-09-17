@@ -1,3 +1,13 @@
+---
+title: Apartments
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Apartments
 
 Looking for details about 1 bed 1 bath and utilities included.
@@ -6,7 +16,7 @@ Preferred Contact Method: Email
 
 extra fees
 
-## info
+## Info
 
 Pine Ridge Apartments: sent email
 Oakcreek Apartments: sent email
@@ -17,4 +27,4 @@ Park at Piney Woods Apartments: sent email
 The Abbey at Conroe: sent email
 Treehouse Apartments: sent email
 
-## visit
+## Visit

@@ -1,3 +1,13 @@
+---
+title: Library of Congress Classification (LCC)
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Library of Congress Classification (LCC)
 
 ## A::General Works
@@ -50,7 +60,7 @@
     Subclass CS – Genealogy
     Subclass CT – Biography
 
-## D::World History and History of Europe, Asia, Africa, Australia, New Zealand, etc.
+## D::World History and History of Europe, Asia, Africa, Australia, New Zealand, Etc
 <!--ID: 1639528996670-->
 
 
@@ -76,7 +86,7 @@
     Subclass DU – Oceania (South Seas)
     Subclass DX – Romanies
 
-## E::History of America
+## E::History Of America
 <!--ID: 1639528996692-->
 
 
@@ -202,7 +212,7 @@
     Subclass NK – Decorative arts
     Subclass NX – Arts in general
 
-## P::Language and Literature
+## P::Language And Literature
 <!--ID: 1639528996889-->
 
 
@@ -246,7 +256,7 @@
 ### QE::Geology
 <!--ID: 1639528997018-->
 
-### QH::Natural history – Biology
+### QH::Natural History – Biology
 <!--ID: 1639528997040-->
 
 ### QK::Botany
@@ -255,7 +265,7 @@
 ### QL::Zoology
 <!--ID: 1639528997084-->
 
-### QM::Human anatomy
+### QM::Human Anatomy
 <!--ID: 1639528997105-->
 
 ### QP::Physiology

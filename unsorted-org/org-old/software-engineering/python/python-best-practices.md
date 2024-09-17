@@ -1,3 +1,14 @@
+---
+title: Python-best-practices
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-best-practices
 == Python Best Practices – The only guide to become Python Expert
 
 Important Python Best Practices
@@ -70,7 +81,7 @@ The PEP8 holds some great community-generated proposals. PEP stands for Python E
 
 Use 4 spaces for indentation. For more conventions, refer to PEP8.
 
-For revising any python concept, refer to this free Python Tutorials Library. 
+For revising any python concept, refer to this free Python Tutorials Library.
 4. Correct Broken Code Immediately
 
 Like with the broken code theory, correct your broken code immediately. If you let it be while you work on something else, it can lead to worse problems later. This is what Microsoft does. It once had a terrible production cycle with MS Word’s first version. So now, it follows a ‘zero defects methodology’, and always corrects bugs and defects before proceeding.

@@ -1,4 +1,14 @@
-# Cursor motions cursor-motions navigation
+---
+title: Cursor Motions Cursor-motions Navigation
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-49
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Cursor Motions Cursor-motions Navigation
 
 These commands move the cursor position.
 If the new position is off of the screen, the screen is scrolled to show the cursor (see also 'scrolljump' and 'scrolloff' options).
@@ -20,7 +30,7 @@ CTRL-G or the "g CTRL-G" command g_CTRL-G.  If you set the 'ruler' option,
 the cursor position is continuously shown in the status line (which slows down
 Vim a little).
 
-## 1. Motions and operators  operator
+## 1. Motions and Operators Operator
 
 The motion commands can be used after an operator command, to have the command
 operate on the text that was moved over.  
@@ -96,9 +106,9 @@ Visual-mode.
 
 You can use a ":" command for a motion.  For example "d:call FindEnd()".
 But this can't be repeated with "." if the command is more than one line.
-This can be repeated: 
+This can be repeated:
         d:call search("f")<CR>
-This cannot be repeated: 
+This cannot be repeated:
         d:if 1<CR>
            call search("f")<CR>
         endif<CR>
@@ -109,13 +119,13 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 When a motion is not of the type you would like to use, you can force another
 type by using "v", "V" or CTRL-V just after the operator.
-Example: 
+Example:
         dj
-deletes two lines 
+deletes two lines
         dvj
-deletes from the cursor position until the character below the cursor 
+deletes from the cursor position until the character below the cursor
         d<C-V>j
-deletes the character under the cursor and the character below the cursor. 
+deletes the character under the cursor and the character below the cursor.
 
 Be careful with forcing a linewise movement to be used characterwise or
 blockwise, the column may not always be defined.
@@ -140,7 +150,7 @@ CTRL-V          When used after an operator, before the motion command: Force
                 mode selection, with the corners defined by the cursor
                 position before and after the motion.
 
-## 2. Left-Right Motions left-right-motions
+## 2. Left-Right Motions Left-right-motions
 
 These commands move the cursor to the specified column in the current line.
 They stop at the first column and at the end of the line.
@@ -159,48 +169,48 @@ Go to the first character in the line. exclusive motion.
 the first column
 move cursor to first column of current line
 
-^ 
+^
 | Go to the first non-blank character in the line. exclusive motion.
 Any count is ignored.
 
-[n]$ 
+[n]$
 Go to the last character in the line. inclusive motion.
 the last column
 [count - 1] lines downward inclusive.
 N-1 lines lower
 
-g_ 
+g_
 Go to the last non-blank character in the line.
 [count - 1] lines downward inclusive.
 
-g0 
+g0
 Go to the first character in screen line. exclusive motion.
 Differs from "0" when lines wrap
 
-g^ 
+g^
 Go to the first non-blank character in screen line. exclusive motion.
 Differs from "^" when lines wrap
 
-gm 
+gm
 Go to the middle of the screen line.
 
-[n]gM 
+[n]gM
 Go to the middle of the line.
 With a count: to this percentage of text in the line.
 
-[n]g$ 
+[n]g$
 Go to the last character in the screen line.
 Differs from "$" when lines wrap
 
-[n]| 
+[n]|
 Go to column [n]; default 1. exclusive motion.
 
-[n]f{c} 
+[n]f{c}
 Go to [N]'th occurrence of {c} to the right.
 The cursor is placed on {c} inclusive.
 {c} can be entered as a digraph digraph-arg.
 
-[n]F{c} 
+[n]F{c}
 Go to the [N]'th occurrence of {c} to the left.
 The cursor is placed on {char} exclusive.
 
@@ -209,21 +219,21 @@ Till before [N]'th occurrence of {c} to the right.
 The cursor is placed on the character left of {c} inclusive.
 remap j to t
 
-[n]J{c} 
+[n]J{c}
 Till after [N]'th occurrence of {c} to the left.
 The cursor is placed on the character right of {c} exclusive.
 remap J to T
 
-[n]; 
+[n];
 Repeat the last f, t, F or T n times.
 
-[n], 
+[n],
 Repeat the last f, t, F or T n times in opposite direction.
 
-## 3. Up-Down Motions up-down-motions
+## 3. Up-Down Motions Up-down-motions
 
 
-t <Down> CTRL-J <NL> CTRL-N 
+t <Down> CTRL-J <NL> CTRL-N
 Move down N lines; Linewise.
 Linewise; Remapped j to t
 
@@ -357,7 +367,7 @@ But when you use "2e" this does not happen.  In Vim "ee" and "2e" are the
 same, which is more logical.  However, this causes a small incompatibility
 between Vi and Vim.
 
-## 5. Text object motions                                  object-motions
+## 5. Text Object Motions Object-motions
 
 (
 [count] sentences backward.  exclusive motion.
@@ -430,7 +440,7 @@ search direction.
 
 
 If your '{' or '}' are not in the first column, and you would like to use "[["
-and "]]" anyway, try these mappings: 
+and "]]" anyway, try these mappings:
    :map [[ ?{<CR>w99[{
    :map ][ /}<CR>b99]}
    :map ]] j0[[%/{<CR>
@@ -438,7 +448,7 @@ and "]]" anyway, try these mappings:
 [type these literally, see <>]
 
 
-## 6. Text object selection                        object-select text-objects
+## 6. Text Object Selection Object-select Text-objects
                                                 v_a v_i
 
 This is a series of commands that can only be used while in Visual mode or
@@ -671,7 +681,7 @@ matching end tag.  These are ignored.
 
 The text objects are tolerant about mistakes.  Stray end tags are ignored.
 
-## 7. Marks                                        mark-motions E20 E78
+## 7. Marks Mark-motions E20 E78
 
 Jumping to a mark can be done in two ways:
 1. With ` (backtick):     The cursor is positioned at the specified location
@@ -728,7 +738,7 @@ m<  or  m>              Set the '< or '> mark.  Useful to change what the
                                                 g' g'a g` g`a
 g'{mark}  g`{mark}
                         Jump to the {mark}, but don't change the jumplist when
-                        jumping within the current buffer.  Example: 
+                        jumping within the current buffer.  Example:
                                 g`"
                        jumps to the last known position in a file.  See
                         $VIMRUNTIME/vimrc_example.vim.
@@ -745,7 +755,7 @@ g'{mark}  g`{mark}
 
                                                 E283
 :marks {arg}            List the marks that are mentioned in {arg} (not a
-                        motion command).  For example: 
+                        motion command).  For example:
                                 :marks aB
                        to list marks 'a' and 'B'.
 <!--ID: 1639981328749-->
@@ -756,7 +766,7 @@ g'{mark}  g`{mark}
                         include A-Z and 0-9.  You cannot delete the ' mark.
                         They can be specified by giving the list of mark
                         names, or with a range, separated with a dash.  Spaces
-                        are ignored.  Examples: 
+                        are ignored.  Examples:
                            :delmarks a        deletes mark a
                            :delmarks a b 1    deletes marks a, b and 1
                            :delmarks Aa       deletes marks A and a
@@ -948,7 +958,7 @@ These commands are not marks themselves, but jump to a mark:
                         Useful when making a change or inserting text
                         automatically and the user doesn't want to go to this
                         position.  E.g., when updating a "Last change"
-                        timestamp in the first line: 
+                        timestamp in the first line:
 
                                 :let lnum = line(".")
                                 :keepjumps normal gg
@@ -961,7 +971,7 @@ These commands are not marks themselves, but jump to a mark:
                         ":keepjumps exe 'command '" the "command" won't keep
                         jumps.  Instead use: ":exe 'keepjumps command'"
 
-## 8. Jumps                                        jump-motions
+## 8. Jumps Jump-motions
 
 A "jump" is a command that normally moves the cursor several lines away.  If
 you make the cursor "jump" the position of the cursor before the jump is
@@ -1005,7 +1015,7 @@ For example, after three jump commands you have this jump list:
       3   1    0 some text 
       2  70    0 another line 
       1  1154   23 end. 
-   > 
+   >
 
 The "file/text" column shows the file name, or the text at the jump if it is
 in the current file (an indent is removed and a long line is truncated to fit
@@ -1017,8 +1027,8 @@ cursor is put in line 1154.  This results in:
     jump line  col file/text 
       2   1    0 some text 
       1  70    0 another line 
-   >  0  1154   23 end. 
-      1  1167    0 foo bar 
+   >  0  1154   23 end.
+      1  1167    0 foo bar
 
 The pointer will be set at the last used jump position.  The next CTRL-O
 command will use the entry above it, the next CTRL-I command will use the
@@ -1050,7 +1060,7 @@ jump command (e.g., "G").  The jump list would then become:
       3  70    0 another line 
       2  1167    0 foo bar 
       1  1154   23 end. 
-   > 
+   >
 
 The line numbers will be adjusted for deleted and inserted lines.  This fails
 if you stop editing a file without writing, like with ":n!".
@@ -1124,7 +1134,7 @@ remembered.
                         Now you can use "g," to go to line 11 and "2g," to go
                         to line 14.
 
-## 9. Various motions                              various-motions
+## 9. Various Motions Various-motions
 
                                                         %
 %                       Find the next item in this line after or under the
@@ -1222,7 +1232,7 @@ bring you back to the switch statement.
 The above four commands assume that the file contains a class with methods.
 The class definition is surrounded in '{' and '}'.  Each method in the class
 is also surrounded with '{' and '}'.  This applies to the Java language.  The
-file looks like this: 
+file looks like this:
 <!--ID: 1639981328777-->
 
 

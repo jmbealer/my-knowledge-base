@@ -1,3 +1,13 @@
+---
+title: What is Markdown?
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # What is Markdown?
 
 
@@ -55,7 +65,7 @@ lines of text.
 ### Block-quotes
 
 - **Blockquotes** To create a blockquote, add a > in front of a paragraph.
-  > This is a Blockquote 
+  > This is a Blockquote
 - **Blockquotes with Multiple Paragraphs** Add a > on the blank lines between
 the paragraphs.
   > This is a Blockquote
@@ -150,7 +160,7 @@ Paragraph
       to create code block without indenting lines, use fenced code blocks.
   - **Horizontal Rules** To create a horizontal rule, use three or more
       asterisks (***), dashes (---), or underscores (___) on a line by
-      themselves. 
+      themselves.
     
     ***
 
@@ -186,7 +196,7 @@ Paragraph
 
     - **Formatting Links** To emphasize links, add asterisks before and after
         the brackets and parentheses. To denote links as code, add backticks in
-        the brackets. 
+        the brackets.
 
       I love supporting the **[EFF](https://eff.org>)**.
 
@@ -249,7 +259,7 @@ Paragraph
       hole, filled with the ends of worms and an oozy smell, nor yet a dry,
       bare, sandy hole with nothing in it to sit down on or to eat: it was a
       [hobbit-hole](https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit
-      lifestyles"), and that mean 
+      lifestyles"), and that mean
         
 
     Though it may point to interesting additional information, the URL as
@@ -327,7 +337,7 @@ Paragraph
         formatting.
 
         You can’t use Markdown syntax inside block-level HTML tags. For example,
-        \<p>italic and **bold**\</p> won’t work. 
+        \<p>italic and **bold**\</p> won’t work.
 
 
 ---
@@ -341,7 +351,7 @@ ___
 [This is a link](https://www.google.com "This is a link with Tile")
 
 unorder lists
-- item 
+- item
 - item
   - nested item
 

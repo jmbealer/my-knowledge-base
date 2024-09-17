@@ -1,3 +1,13 @@
+---
+title: Computing Index
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-59
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Computing Index
 
 [Programming Index](00-programming-idx.md)
@@ -15,7 +25,7 @@ CSS: Presentation
 JavaScript: Behavior
 
 PHP or similar: Backend
-CMS: Content Management 
+CMS: Content Management
 [[termianal-n-unix]]
 [Computer Science Curriculum](cs-curriculum.md)
 [Developer Roadmap](Developer-Roadmap.md)

@@ -1,3 +1,13 @@
+---
+title: Bachelor of Science in Computer Science and Engineering
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-59
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Bachelor of Science in Computer Science and Engineering
 
 ## General Institute Requirements (GIRs)
@@ -21,7 +31,7 @@ Restricted Electives in Science and Technology (REST) 2
 Laboratory Requirement 1
 Total GIR Subjects Required for SB Degree 17
 
-## Introductory Subjects: introduce and teach fundamental skills for...
+## Introductory Subjects: Introduce and Teach Fundamental Skills For..
 
 Programming
   6.145 (Brief Introduction to Python) Prereq:None
@@ -40,7 +50,7 @@ Mathematic
   18.701 (Algebra I) Prereq: 18.100B (Real Analysis)
   18.200 (Principles of Discrete Applied Mathematics) Prereq:18.022 (Calculus II), 18.701 (Algebra I)
 
-## Foundation Subjects: build on introductory material
+## Foundation Subjects: Build on Introductory Material
 
 Programming (Computer Science Subject)
   6.009 (Fundamentals of Programming) Prereq:6.0001
@@ -64,10 +74,10 @@ Circuits (Electrical Engineering Subject)
 Signals (Electrical Engineering Subject)
   6.003 (Signals and Systems) Prereq: 8.022 (Physics II), 18.032 (Differential Equations)
 
-## Header Subjects: typically rely on foundation subjects as a pre-requisite
+## Header Subjects: Typically Rely on Foundation Subjects as a Pre-requisite
 
 Programming
-  6.147 (The Battlecode Programming Competition) 
+  6.147 (The Battlecode Programming Competition)
   6.148 (Web Lab: A Web Programming Class and Competition)
   6.176 (Pokerbots Competition)
   6.170 (Software Studio) Prereq:6.006, 6.031
@@ -96,12 +106,12 @@ Networks and Optimization (Economics and Data Science Subject)
 Signals and Systems Electrical Engineering Subject)
   6.011 (Signals, Systems and Inference) Prereq:6.003, 6.008 or 18.600
 
-## Advanced Undergraduate Subjects: builds on header material; exact pre-requisite vary
+## Advanced Undergraduate Subjects: Builds on Header Material; Exact Pre-requisite Vary
 
 Programming
   6.820 (Foundations of Program Analysis) Prereq:6.035
   6.823 (Computer System Architecture) Prereq:6.004
-  6.824 (Distributed Computer Systems Engineering) Prereq:6.033 
+  6.824 (Distributed Computer Systems Engineering) Prereq:6.033
   6.826 (Principles of Computer Systems) Prereq:None
   6.828 (Operating System Engineering) Prereq:6.031, 6.033
   6.816 (Multicore Programming) Prereq: 6.006
@@ -113,7 +123,7 @@ AI and Machine Learning
   6.867 Machine Learning Prereq:6.036, 18.701, 18.600
   6.905 (Large-scale Symbolic Systems) Prereq:6.034
   6.231 (Dynamic Programming and Reinforcement Learning) Prereq:18.600, 18.100B
-  6.860J/9.520J Statistical Learning Theory and Applications Prereq:18.600, 6.867, 18.701 
+  6.860J/9.520J Statistical Learning Theory and Applications Prereq:18.600, 6.867, 18.701
 Engineer
   6.254 (Game Theory with Engineering Applications) Prereq:18.600
   6.902 Engineering Innovation and Design Prereq:None
@@ -146,10 +156,10 @@ Management
   15.301	(People, Teams, and Organizations Laboratory (CI-M)) Prereq:None
   15.7611 (Introduction to Operations Management) Prereq:18.600
 
-## Elective Subjects: usually taken in junior or senior years
+## Elective Subjects: Usually Taken in Junior or Senior Years
 
   6.UAT (Oral Communication (CI-M)) Prereq:None
-  6.UAR (Seminar in Undergraduate Advanced Research (CI-M)) 
+  6.UAR (Seminar in Undergraduate Advanced Research (CI-M))
 
 
 Departmental Program
@@ -164,7 +174,7 @@ Departmental Program
 
 Computer Science Math
 
-Tier 1: 
+Tier 1:
   (6.00) 6.0001+6.0002 Introduction to Computer Science and Programming in Python + Introduction to Computational Thinking and Data Science Prereq: None
   
 

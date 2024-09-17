@@ -1,3 +1,13 @@
+---
+title: Introduction to Computer Science & Programming
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Introduction to Computer Science & Programming
 
 - [CS50 - Introduction to Computer Science - Harvard](https://cs50.tv/)
@@ -19,7 +29,7 @@
 - Course: [Berkeley 61A (Brian Harvey)](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 - Book: [Structure and Interpretation of Computer Programs (Abelson and Sussman)](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
 
-## others
+## Others
 
 - [Python Boot Camp Fall 2016 - Berkeley Institute for Data Science (BIDS)](https://www.youtube.com/playlist?list=PLKW2Azk23ZtSeBcvJi0JnL7PapedOvwz9)
 - [CS 1301 Intro to computing - Gatech](https://www.cc.gatech.edu/classes/AY2016/cs1301c_fall/)
@@ -40,7 +50,7 @@
 - [Modern C++ Course (2018) - Bonn University](https://www.youtube.com/playlist?list=PLgnQpQtFTOGR50iIOtO36nK6aNPtVq98C)
 - [Modern C++ (Lecture & Tutorials, 2020, Vizzo & Stachniss) - University of Bonn](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRM59sr3nSL8BmeMZR9GCIA)
 
-## old
+## Old
 - [6.001 - Structure and Interpretation of Computer Programs, MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures)
 - [6.00SC - Introduction to Computer Science and Programming (Spring 2011) - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/)
 - [6.00	- Introduction to Computer Science and Programming (Fall 2008) - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/video-lectures/)

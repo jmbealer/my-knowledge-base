@@ -1,7 +1,18 @@
+---
+title: Classification
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Classification
 
 000-099 - Computer Science, Information, & General Works
 
-100-199 - Philosophy & Psychology 
+100-199 - Philosophy & Psychology
 
 200-299 - Religion
 

@@ -1,3 +1,14 @@
+---
+title: Python-casting
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-casting
 == Casting
 
 ## Type Conversion (Casting) WIP
@@ -24,7 +35,7 @@ Casting in python is done using constructor functions:
   Strings:
     x = str("s1") # x will be 's1'
     y = str(2)    # y will be '2'
-    z = str(3.0)  # z will be '3.0' 
+    z = str(3.0)  # z will be '3.0'
 
 
 Conversion
@@ -247,26 +258,26 @@ Example
 Strings:
 x = str("s1") # x will be 's1'
 y = str(2)    # y will be '2'
-z = str(3.0)  # z will be '3.0' 
+z = str(3.0)  # z will be '3.0'
 
 
 Setting the Specific Data Type
 If you want to specify the data type, you can use the following constructor functions:
 Example 	Data Type 	Try it
-x = str("Hello World") 	str 	
-x = int(20) 	int 	
-x = float(20.5) 	float 	
-x = complex(1j) 	complex 	
-x = list(("apple", "banana", "cherry")) 	list 	
-x = tuple(("apple", "banana", "cherry")) 	tuple 	
-x = range(6) 	range 	
-x = dict(name="John", age=36) 	dict 	
-x = set(("apple", "banana", "cherry")) 	set 	
-x = frozenset(("apple", "banana", "cherry")) 	frozenset 	
-x = bool(5) 	bool 	
-x = bytes(5) 	bytes 	
-x = bytearray(5) 	bytearray 	
-x = memoryview(bytes(5)) 	memoryview 	
+x = str("Hello World") 	str
+x = int(20) 	int
+x = float(20.5) 	float
+x = complex(1j) 	complex
+x = list(("apple", "banana", "cherry")) 	list
+x = tuple(("apple", "banana", "cherry")) 	tuple
+x = range(6) 	range
+x = dict(name="John", age=36) 	dict
+x = set(("apple", "banana", "cherry")) 	set
+x = frozenset(("apple", "banana", "cherry")) 	frozenset
+x = bool(5) 	bool
+x = bytes(5) 	bytes
+x = bytearray(5) 	bytearray
+x = memoryview(bytes(5)) 	memoryview
 
 Python has the capability and feature to convert within an expression containing the mixture of different types of values internally.
 
@@ -280,7 +291,7 @@ x = 10.5
 y = 5
 
 `#without type cast`
-print (x + y) 
+print (x + y)
 
 `#after type cast`
 print (int(x) + y)
@@ -288,7 +299,7 @@ print (int(x) + y)
 15.5
 15
 
-The above example shows how float converted to an integer. 
+The above example shows how float converted to an integer.
 
 
 7. Python Conversion Functions

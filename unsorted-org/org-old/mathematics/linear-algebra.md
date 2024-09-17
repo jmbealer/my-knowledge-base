@@ -1,3 +1,13 @@
+---
+title: Linear Algebra
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Linear Algebra
 
 Elementary Linear Algebra by Howard Anton
@@ -12,7 +22,7 @@ Linear Algebra by Strang
 Linear Algebra
 - Introductory Course: [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 - Course: [MIT 18.06](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
-- Book: [Introduction to Linear Algebra (Gilbert Strang)](https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang/dp/0980232775/) 
+- Book: [Introduction to Linear Algebra (Gilbert Strang)](https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang/dp/0980232775/)
 
 
 - **Linear Algebra**

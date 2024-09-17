@@ -1,3 +1,14 @@
+---
+title: CompTIA-A+-Core-1
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# CompTIA-A+-Core-1
 = CompTIA A+ 220-1001 (Core 1)
 
 == 1.0 Mobile Devices 14%
@@ -27,21 +38,21 @@ it was removed.
   A typical laptop will have five to ten different types of screws, and it might
 be difficult to tell them apart (for example a 2.5mm screw and a 3mm screw).
   It is important that the screws go back exactly where they came from.
-7. Some screws are hidden under stickers or rubber pads, especially on the bottom of the 
-34 
+7. Some screws are hidden under stickers or rubber pads, especially on the bottom of the
+34
  
-4. Check the warranty status of the laptop.  If the laptop is under warranty, you may be able to 
-obtain replacement parts and/or service at no cost. 
-5. Make sure that you have the correct tools 
-a. Screw drivers with different bits (some newer laptops contain small star-shaped 
-screws) 
-b. Spudger and guitar picks to remove plastic components 
-6. Each time you remove a screw, you should label it with the location from where it was 
-removed.  A typical laptop will have five to ten different types of screws, and it might be 
-difficult to tell them apart (for example a 2.5mm screw and a 3mm screw).  It is important that 
-the screws go back exactly where they came from. 
-7. Some screws are hidden under stickers or rubber pads, especially on the bottom of the 
-laptop. 
+4. Check the warranty status of the laptop.  If the laptop is under warranty, you may be able to
+obtain replacement parts and/or service at no cost.
+5. Make sure that you have the correct tools
+a. Screw drivers with different bits (some newer laptops contain small star-shaped
+screws)
+b. Spudger and guitar picks to remove plastic components
+6. Each time you remove a screw, you should label it with the location from where it was
+removed.  A typical laptop will have five to ten different types of screws, and it might be
+difficult to tell them apart (for example a 2.5mm screw and a 3mm screw).  It is important that
+the screws go back exactly where they came from.
+7. Some screws are hidden under stickers or rubber pads, especially on the bottom of the
+laptop.
  
 * Keyboard
 ** is usually more compacted

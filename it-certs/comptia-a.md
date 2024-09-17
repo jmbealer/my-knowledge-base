@@ -1,3 +1,13 @@
+---
+title: CompTIA A+ 220-1101 & 220-1102
+author: Justin Bealer
+date_created: 2024-03-26, 04-43-35
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # CompTIA A+ 220-1101 & 220-1102
 
 ## Links
@@ -8,7 +18,7 @@
 
 ### 1.0 Mobile Devices 15%
 
-#### 1.1 Given a scenario, install and configure laptop hardware and components.
+#### 1.1 Given a Scenario, Install and Configure Laptop Hardware and Components
 
 - Hardware/device replacement
   - Battery
@@ -22,7 +32,7 @@
   - Biometrics
   - Near-field scanner features
 
-#### 1.2 Compare and contrast the display components of mobile devices.
+#### 1.2 Compare and Contrast the Display Components of Mobile Devices
 
 - Types
   - Liquid crystal display (LCD)
@@ -38,7 +48,7 @@
 - Touch screen/digitizer
 - Inverter
 
-#### 1.3 Given a scenario, set up and configure accessories and ports of mobile devices.
+#### 1.3 Given a Scenario, Set up and Configure Accessories and Ports of Mobile Devices
 
 - Connection methods
   - Universal Serial Bus (USB)/USB-C/microUSB/miniUSB
@@ -58,7 +68,7 @@
 - Port replicator
 - Trackpad/drawing pad
 
-#### 1.4 Given a scenario, configure basic mobile-device network connectivity and application support.
+#### 1.4 Given a Scenario, Configure Basic Mobile-device Network Connectivity and Application Support
 
 - Wireless/cellular data network (enable/disable)
   - 2G/3G/4G/5G

@@ -1,3 +1,14 @@
+---
+title: Vim-User-Manual
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Vim-User-Manual
 = Vim User Manual
 
 user-manual: These files explain how to accomplish an editing task.

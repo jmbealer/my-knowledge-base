@@ -1,3 +1,14 @@
+---
+title: Python-try-except
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-51
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-try-except
 == Python Try Except WIP
 
 The try block lets you test a block of code for errors.
@@ -95,7 +106,7 @@ Raise a TypeError if x is not an integer:
 x = "hello"
 
 if not type(x) is int:
-  raise TypeError("Only integers are allowed") 
+  raise TypeError("Only integers are allowed")
 
 .Errors and Exceptions
 

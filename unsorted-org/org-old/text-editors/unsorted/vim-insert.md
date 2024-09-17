@@ -1,4 +1,14 @@
-# Inserting and replacing text
+---
+title: Inserting and Replacing Text
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Inserting and Replacing Text
 
 Most of this file is about Insert and Replace mode.  At the end are a few
 commands for inserting text in other ways.
@@ -20,7 +30,7 @@ user manual usr_24.txt.
 Also see 'virtualedit', for moving the cursor to positions where there is no
 character.  Useful for editing a table.
 
-## 1. Special keys                                         ins-special-keys
+## 1. Special Keys Ins-special-keys
 
 In Insert and Replace mode, the following characters have a special meaning;
 other characters are inserted directly.  To insert one of these special
@@ -139,7 +149,7 @@ CTRL-R CTRL-R {register}                        i_CTRL-R_CTRL-R
                 Insert the contents of a register.  Works like using a single
                 CTRL-R, but the text is inserted literally, not as if typed.
                 This differs when the register contains characters like <BS>.
-                Example, where register a contains "ab^Hc": 
+                Example, where register a contains "ab^Hc":
         CTRL-R a                results in "ac".
         CTRL-R CTRL-R a         results in "ab^Hc".
                Options 'textwidth', 'formatoptions', etc. still apply.  If
@@ -264,7 +274,7 @@ CTRL-]          Trigger abbreviation, without inserting a character.
 The effect of the <BS>, CTRL-W, and CTRL-U depend on the 'backspace' option
 (unless 'revins' is set).  This is a comma separated list of items:
 
-item        action 
+item        action
 indent      allow backspacing over autoindent
 eol         allow backspacing over end-of-line (join lines)
 start       allow backspacing over the start position of insert; CTRL-W and
@@ -285,7 +295,7 @@ With CTRL-V the decimal, octal or hexadecimal value of a character can be
 entered directly.  This way you can enter any character, except a line break
 (<NL>, value 10).  There are five ways to enter the character value:
 
-first char      mode         max nr of chars   max value 
+first char      mode         max nr of chars   max value
 (none)          decimal            3            255
 o or O          octal              3            377      (255)
 x or X          hexadecimal        2            ff       (255)
@@ -327,7 +337,7 @@ in the file.  As soon as another key is pressed, CTRL-X mode is exited and
 that key is interpreted as in Insert mode.
 
 
-## 2. Special special keys                         ins-special-special
+## 2. Special Special Keys Ins-special-special
 
 The following keys are special.  They stop the current insert, do something,
 and then restart insertion.  This means you can do something without getting
@@ -407,20 +417,20 @@ Another side effect is that a count specified before the "i" or "a" command is
 ignored.  That is because repeating the effect of the command after CTRL-O is
 too complicated.
 
-An example for using CTRL-G u: 
+An example for using CTRL-G u:
 
         :inoremap <C-H> <C-G>u<C-H>
 
 This redefines the backspace key to start a new undo sequence.  You can now
 undo the effect of the backspace key, without changing what you typed before
-that, with CTRL-O u.  Another example: 
+that, with CTRL-O u.  Another example:
 
         :inoremap <CR> <C-]><C-G>u<CR>
 
 This breaks undo at each line break.  It also expands abbreviations before
 this.
 
-An example for using CTRL-G U: 
+An example for using CTRL-G U:
 
         inoremap <Left>  <C-G>U<Left>
         inoremap <Right> <C-G>U<Right>
@@ -444,7 +454,7 @@ will be repeatable by using . to the expected
 
 Using CTRL-O splits undo: the text typed before and after it is undone
 separately.  If you want to avoid this (e.g., in a mapping) you might be able
-to use CTRL-R = i_CTRL-R.  E.g., to call a function: 
+to use CTRL-R = i_CTRL-R.  E.g., to call a function:
         :imap <F2> <C-R>=MyFunc()<CR>
 
 When the 'whichwrap' option is set appropriately, the <Left> and <Right>
@@ -452,17 +462,17 @@ keys on the first/last character in the line make the cursor wrap to the
 previous/next line.
 
 The CTRL-G j and CTRL-G k commands can be used to insert text in front of a
-column.  Example: 
+column.  Example:
    int i;
    int j;
 Position the cursor on the first "int", type "istatic <C-G>j       ".  The
-result is: 
+result is:
    static int i;
           int j;
 When inserting the same text in front of the column in every line, use the
 Visual blockwise command "I" v_b_I.
 
-## 3. 'textwidth' and 'wrapmargin' options                 ins-textwidth
+## 3. 'textwidth' and 'wrapmargin' Options Ins-textwidth
 
 The 'textwidth' option can be used to automatically break a line before it
 gets too long.  Set the 'textwidth' option to the desired maximum line
@@ -508,7 +518,7 @@ paragraph).  Alternatively, you can use "gqap", which will format the whole
 paragraph, no matter where the cursor currently is.  Or you can use Visual
 mode: hit "v", move to the end of the block, and type "gq".  See also gq.
 
-## 4. 'expandtab', 'smarttab' and 'softtabstop' options    ins-expandtab
+## 4. 'expandtab', 'smarttab' and 'softtabstop' Options Ins-expandtab
 
 If the 'expandtab' option is on, spaces will be used to fill the amount of
 whitespace of the tab.  If you want to enter a real <Tab>, type CTRL-V first
@@ -540,7 +550,7 @@ the cursor.  Otherwise you cannot always delete a single character before the
 cursor.  You will have to delete 'softtabstop' characters first, and then type
 extra spaces to get where you want to be.
 
-## 5. Replace mode                         Replace Replace-mode mode-replace
+## 5. Replace Mode Replace Replace-mode Mode-replace
 
 Enter Replace mode with the "R" command in normal mode.
 
@@ -565,7 +575,7 @@ line increases.  Backspacing will delete one space at a time.  The original
 character will be put back for only one space that you backspace over (the
 last one).
 
-## 6. Virtual Replace mode         vreplace-mode Virtual-Replace-mode
+## 6. Virtual Replace Mode Vreplace-mode Virtual-Replace-mode
 
 Enter Virtual Replace mode with the "gR" command in normal mode.
 {not available when compiled without the |+vreplace| feature}
@@ -604,7 +614,7 @@ to move.
 This mode is very useful for editing <Tab> separated columns in tables, for
 entering new data while keeping all the columns aligned.
 
-## 7. Insert mode completion                               ins-completion
+## 7. Insert Mode Completion Ins-completion
 
 In Insert and Replace mode, there are several commands to complete part of a
 keyword or line that has been typed.  This is useful if you are using
@@ -661,7 +671,7 @@ buffer text cannot be changed.  Mappings that somehow invoke ":normal i.."
 will generate an E565 error.
 
 The following mappings are suggested to make typing the completion commands
-a bit easier (although they will hide other commands): 
+a bit easier (although they will hide other commands):
     :inoremap ^] ^X^]
     :inoremap ^F ^X^F
     :inoremap ^D ^X^D
@@ -676,7 +686,7 @@ had been typed.
 
 For example, the following will map <Tab> to either actually insert a <Tab> if
 the current line is currently only whitespace, or start/continue a CTRL-N
-completion operation: 
+completion operation:
 
         function! CleverTab()
            if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
@@ -832,7 +842,7 @@ In the file used by the 'thesaurus' option each line in the file should
 contain words with similar meaning, separated by non-keyword characters (white
 space is preferred).  Maximum line length is 510 bytes.
 
-For an example, imagine the 'thesaurus' file has a line like this: 
+For an example, imagine the 'thesaurus' file has a line like this:
         angry furious mad enraged
 Placing the cursor after the letters "ang" and typing CTRL-X CTRL-T would
 complete the word "angry"; subsequent presses would change the word to
@@ -855,7 +865,7 @@ not used. See complete-functions for an explanation of how the function is
 invoked and what it should return.
 
 Here is an example that uses the "aiksaurus" command (provided by Magnus
-Groß): 
+Groß):
 
     func Thesaur(findstart, base)
       if a:findstart
@@ -1132,7 +1142,7 @@ Other items are ignored.
 For acting upon end of completion, see the CompleteDonePre and
 CompleteDone autocommand event.
 
-For example, the function can contain this: 
+For example, the function can contain this:
         let matches = ... list of words ...
         return {'words': matches, 'refresh': 'always'}
 
@@ -1186,7 +1196,7 @@ of values:
         highlight       highlight group of the popup (default is PmenuSel)
         align           "item" (default) or "menu"
         border          "on" (default) or "off"
-Example: 
+Example:
         :set completepopup=height:10,width:60,highlight:InfoPopup
 
 When the "align" value is "item" then the popup is positioned close to the
@@ -1201,7 +1211,7 @@ properties can be changed with popup_setoptions().
 If the information for the popup is obtained asynchronously, use "popuphidden"
 in 'completeopt'.  The info popup will then be initially hidden and
 popup_show() must be called once it has been filled with the info.  This can
-be done with a CompleteChanged autocommand, something like this: 
+be done with a CompleteChanged autocommand, something like this:
         set completeopt+=popuphidden
         au CompleteChanged * call UpdateCompleteInfo()
         func UpdateCompleteInfo()
@@ -1236,7 +1246,7 @@ while still searching for matches.  Stop searching when it returns non-zero.
 The function is allowed to move the cursor, it is restored afterwards.
 The function is not allowed to move to another window or delete text.
 
-An example that completes the names of the months: 
+An example that completes the names of the months:
         fun! CompleteMonths(findstart, base)
           if a:findstart
             " locate the start of the word
@@ -1259,7 +1269,7 @@ An example that completes the names of the months:
         endfun
         set completefunc=CompleteMonths
 
-The same, but now pretending searching for matches is slow: 
+The same, but now pretending searching for matches is slow:
         fun! CompleteMonths(findstart, base)
           if a:findstart
             " locate the start of the word
@@ -1317,7 +1327,7 @@ state.  This doesn't change the list of matches.
 
 When you are back at the original text then you are in the third state.  To
 get there right away you can use a mapping that uses CTRL-P right after
-starting the completion: 
+starting the completion:
         :imap <F7> <C-N><C-P>
 
                                                 popupmenu-keys
@@ -1368,11 +1378,11 @@ PmenuThumb      thumb of the scrollbar  hl-PmenuThumb
 
 There are no special mappings for when the popup menu is visible.  However,
 you can use an Insert mode mapping that checks the pumvisible() function to
-do something different.  Example: 
+do something different.  Example:
         :inoremap <Down> <C-R>=pumvisible() ? "\<lt>C-N>" : "\<lt>Down>"<CR>
 
 You can use of <expr> in mapping to have the popup menu used when typing a
-character and some condition is met.  For example, for typing a dot: 
+character and some condition is met.  For example, for typing a dot:
         inoremap <expr> . MayComplete()
         func MayComplete()
             if (can complete)
@@ -1403,9 +1413,9 @@ A compiled .exe for MS-Windows can be found at:
         https://github.com/universal-ctags/ctags-win32
 
 If you want to complete system functions you can do something like this.  Use
-ctags to generate a tags file for all the system header files: 
+ctags to generate a tags file for all the system header files:
         % ctags -R -f ~/.vim/systags /usr/include /usr/local/include
-In your vimrc file add this tags file to the 'tags' option: 
+In your vimrc file add this tags file to the 'tags' option:
         set tags+=~/.vim/systags
 
 When using CTRL-X CTRL-O after a name without any "." or "->" it is completed
@@ -1502,11 +1512,11 @@ Explorer and Mozilla Firefox. These two applications are covering over 90% of
 market. Theoretically standards are created by W3C organisation
 (http://www.w3c.org) but they are not always followed/implemented.
 
-                IE      FF      W3C  Omni completion 
-                +/-     +/-     +    +               
-                +       +       -    +               
-                +       -       -    -               
-                -       +       -    -               
+                IE      FF      W3C  Omni completion
+                +/-     +/-     +    +
+                +       +       -    +
+                +       -       -    -
+                -       +       -    -
 
 Regardless from state of implementation in browsers but if element is defined
 in standards, completion plugin will place element in suggestion list. When
@@ -1527,7 +1537,7 @@ Script completes:
     name of class
   - after "->" complete only function and variable names specific for given
     class. To find class location and contents tags file is required. Because
-    PHP isn't strongly typed language user can use @var tag to declare class: 
+    PHP isn't strongly typed language user can use @var tag to declare class:
 
         /* @var $myVar myClass */
         $myVar->
@@ -1563,7 +1573,7 @@ and modules defined in the current buffer.
 
 The completions provided by CTRL-X CTRL-O are sensitive to the context:
 
-          CONTEXT                          COMPLETIONS PROVIDED 
+          CONTEXT                          COMPLETIONS PROVIDED
 
  1. Not inside a class definition    Classes, constants and globals
 
@@ -1577,18 +1587,18 @@ The completions provided by CTRL-X CTRL-O are sensitive to the context:
 Notes:
  - Vim will load/evaluate code in order to provide completions.  This may
    cause some code execution, which may be a concern. This is no longer
-   enabled by default, to enable this feature add 
+   enabled by default, to enable this feature add
      let g:rubycomplete_buffer_loading = 1
 - In context 1 above, Vim can parse the entire buffer to add a list of
    classes to the completion results. This feature is turned off by default,
-   to enable it add 
+   to enable it add
      let g:rubycomplete_classes_in_global = 1
   to your vimrc
  - In context 2 above, anonymous classes are not supported.
  - In context 3 above, Vim will attempt to determine the methods supported by
    the object.
  - Vim can detect and load the Rails environment for files within a rails
-   project. The feature is disabled by default, to enable it add 
+   project. The feature is disabled by default, to enable it add
      let g:rubycomplete_rails = 1
   to your vimrc
 
@@ -1603,11 +1613,11 @@ does this by populating the omni completion list with the text Vim already
 knows how to color highlight.  It can be used for any filetype and provides a
 minimal language-sensitive completion.
 
-To enable syntax code completion you can run: 
+To enable syntax code completion you can run:
     setlocal omnifunc=syntaxcomplete#Complete
 
 You can automate this by placing the following in your .vimrc (after any
-":filetype" command): 
+":filetype" command):
     if has("autocmd") && exists("+omnifunc")
         autocmd Filetype *
                     \   if &omnifunc == "" |
@@ -1622,7 +1632,7 @@ Each filetype can have a wide range of syntax items.  The plugin allows you to
 customize which syntax groups to include or exclude from the list.  Let's have
 a look at the PHP filetype to see how this works.
 
-If you edit a file called, index.php, run the following command: 
+If you edit a file called, index.php, run the following command:
     syntax list
 
 The first thing you will notice is that there are many different syntax groups.
@@ -1635,17 +1645,17 @@ phpFunctions.
 If you wish non-filetype syntax items to also be included, you can use a
 regular expression syntax (added in version 13.0 of
 autoload/syntaxcomplete.vim) to add items.  Looking at the output from
-":syntax list" while editing a PHP file I can see some of these entries: 
+":syntax list" while editing a PHP file I can see some of these entries:
     htmlArg,htmlTag,htmlTagName,javaScriptStatement,javaScriptGlobalObjects
 
 To pick up any JavaScript and HTML keyword syntax groups while editing a PHP
 file, you can use 3 different regexs, one for each language.  Or you can
 simply restrict the include groups to a particular value, without using
-a regex string: 
+a regex string:
     let g:omni_syntax_group_include_php = 'php\w\+,javaScript\w\+,html\w\+'
     let g:omni_syntax_group_include_php = 'phpFunctions,phpMethods'
 
-The basic form of this variable is: 
+The basic form of this variable is:
     let g:omni_syntax_group_include_{filetype} = 'regex,comma,separated'
 
 The PHP language has an enormous number of items which it knows how to syntax
@@ -1656,12 +1666,12 @@ items.  There are two ways to prune this list (if necessary).  If you find
 certain syntax groups you do not wish displayed you can use two different
 methods to identify these groups.  The first specifically lists the syntax
 groups by name.  The second uses a regular expression to identify both
-syntax groups.  Simply add one the following to your vimrc: 
+syntax groups.  Simply add one the following to your vimrc:
     let g:omni_syntax_group_exclude_php = 'phpCoreConstant,phpConstant'
     let g:omni_syntax_group_exclude_php = 'php\w*Constant'
 
 Add as many syntax groups to this list by comma separating them.  The basic
-form of this variable is: 
+form of this variable is:
     let g:omni_syntax_group_exclude_{filetype} = 'regex,comma,separated'
 
 You can create as many of these variables as you need, varying only the
@@ -1673,40 +1683,40 @@ include the "-", call-with-output-file.  Depending on your filetype, this may
 not provide the words you are expecting.  Setting the
 g:omni_syntax_use_iskeyword option to 0 will force the syntax plugin to break
 on word characters.   This can be controlled adding the following to your
-vimrc: 
+vimrc:
     let g:omni_syntax_use_iskeyword = 0
 
 For plugin developers, the plugin exposes a public function OmniSyntaxList.
 This function can be used to request a List of syntax items.  When editing a
 SQL file (:e syntax.sql) you can use the ":syntax list" command to see the
-various groups and syntax items.  For example: 
+various groups and syntax items.  For example:
     syntax list
 
 Yields data similar to this:
-    sqlOperator    xxx some prior all like and any escape exists in is not 
-                       or intersect minus between distinct 
-                       links to Operator 
-    sqlType        xxx varbit varchar nvarchar bigint int uniqueidentifier 
-                       date money long tinyint unsigned xml text smalldate 
-                       double datetime nchar smallint numeric time bit char 
-                       varbinary binary smallmoney 
-                       image float integer timestamp real decimal 
+    sqlOperator    xxx some prior all like and any escape exists in is not
+                       or intersect minus between distinct
+                       links to Operator
+    sqlType        xxx varbit varchar nvarchar bigint int uniqueidentifier
+                       date money long tinyint unsigned xml text smalldate
+                       double datetime nchar smallint numeric time bit char
+                       varbinary binary smallmoney
+                       image float integer timestamp real decimal
 
 There are two syntax groups listed here: sqlOperator and sqlType.  To retrieve
 a List of syntax items you can call OmniSyntaxList a number of different
 ways.  To retrieve all syntax items regardless of syntax group:  
     echo OmniSyntaxList( [] )
 
-To retrieve only the syntax items for the sqlOperator syntax group: 
+To retrieve only the syntax items for the sqlOperator syntax group:
     echo OmniSyntaxList( ['sqlOperator'] )
 
-To retrieve all syntax items for both the sqlOperator and sqlType groups: 
+To retrieve all syntax items for both the sqlOperator and sqlType groups:
     echo OmniSyntaxList( ['sqlOperator', 'sqlType'] )
 
-A regular expression can also be used: 
+A regular expression can also be used:
     echo OmniSyntaxList( ['sql\w\+'] )
 
-From within a plugin, you would typically assign the output to a List: 
+From within a plugin, you would typically assign the output to a List:
     let myKeywords = []
     let myKeywords = OmniSyntaxList( ['sqlKeyword'] )
 
@@ -1761,7 +1771,7 @@ Part two must be exactly the same as name of file.
 The variable is a Dictionary.  Keys are tag names and each value is a two
 element List.  The first element of the List is also a List with the names
 of possible children.  The second element is a Dictionary with the names of
-attributes as keys and the possible values of attributes as values.  Example: 
+attributes as keys and the possible values of attributes as values.  Example:
 
     let g:xmldata_crippled = {
     \ "vimxmlentities": ["amp", "lt", "gt", "apos", "quot"],
@@ -1779,7 +1789,7 @@ attributes as keys and the possible values of attributes as values.  Example:
     \ 'attrofchild': ['Menu info', 'Long information visible in preview window']}}
 
 This example would be put in the "autoload/xml/crippled.vim" file and could
-help to write this file: 
+help to write this file:
 
     <tag1 attroftag1b="valueofattr1">
         <childoftag1a attrofchild>
@@ -1834,7 +1844,7 @@ loading of the data file and connecting data with the proper namespace use
 :XMLns command.  The first (obligatory) argument is the name of the data
 (xhtml10s, xsl).  The second argument is the code of namespace (h, xsl).  When
 used without a second argument the dialect will be used as default - without
-namespace declaration.  For example to use XML completion in .xsl files: 
+namespace declaration.  For example to use XML completion in .xsl files:
 
         :XMLns xhtml10s
         :XMLns xsl xsl
@@ -1844,18 +1854,18 @@ namespace declaration.  For example to use XML completion in .xsl files:
 
 By default entities will be completed from the data file of the default
 namespace.  The XMLent command should be used in case when there is no default
-namespace: 
+namespace:
 
         :XMLent xhtml10s
 
 Usage
 
 While used in this situation (after declarations from previous part, | is
-cursor position): 
+cursor position):
 
         <|
 
-Will complete to an appropriate XHTML tag, and in this situation: 
+Will complete to an appropriate XHTML tag, and in this situation:
 
         <xsl:|
 
@@ -1864,13 +1874,13 @@ Will complete to an appropriate XSL tag.
 
 The script xmlcomplete.vim, provided through the autoload mechanism,
 has the xmlcomplete#GetLastOpenTag() function which can be used in XML files
-to get the name of the last open tag (b:unaryTagsStack has to be defined): 
+to get the name of the last open tag (b:unaryTagsStack has to be defined):
 
         :echo xmlcomplete#GetLastOpenTag("b:unaryTagsStack")
 
 
 
-## 8. Insert mode commands inserting
+## 8. Insert Mode Commands Inserting
 
 
 The following commands can be used to insert new text into the buffer.
@@ -1929,7 +1939,7 @@ is automatically adjusted for C programs.
 too long when appending characters a line break is automatically inserted.
 
 
-## 9. Ex insert commands                                   inserting-ex
+## 9. Ex Insert Commands Inserting-ex
 
                                                         :a :append
 :{range}a[ppend][!]     Insert several lines of text below the specified
@@ -1971,7 +1981,7 @@ NOTE: These commands cannot be used with :global or :vglobal.
                                                         :stopi :stopinsert
 :stopi[nsert]           Stop Insert mode as soon as possible.  Works like
                         typing <Esc> in Insert mode.
-                        Can be used in an autocommand, example: 
+                        Can be used in an autocommand, example:
                                 :au BufEnter scratch stopinsert
 
                                         replacing-ex :startreplace
@@ -1988,7 +1998,7 @@ NOTE: These commands cannot be used with :global or :vglobal.
 :startg[replace][!]     Just like :startreplace, but use Virtual Replace
                         mode, like with gR.
 
-## 10. Inserting a file                                    inserting-file
+## 10. Inserting a File Inserting-file
 
                                                         :r :re :read
 :r[ead] [++opt] [name]
@@ -2028,7 +2038,7 @@ be switched off by removing the 'a' flag from the 'cpoptions' option.
 
 Of the [++opt] arguments one is specifically for ":read", the ++edit argument.
 This is useful when the ":read" command is actually used to read a file into
-the buffer as if editing that file.  Use this command in an empty buffer: 
+the buffer as if editing that file.  Use this command in an empty buffer:
         :read ++edit filename
 The effect is that the 'fileformat', 'fileencoding', 'bomb', etc. options are
 set to what has been detected for "filename".  Note that a single empty line
@@ -2036,7 +2046,7 @@ remains, you may want to delete it.
 
                                                         file-read
 The 'fileformat' option sets the <EOL> style for a file:
-'fileformat'    characters         name                         
+'fileformat'    characters         name
   "dos"         <CR><NL> or <NL>   DOS format
   "unix"        <NL>               Unix format
   "mac"         <CR>               Mac format
@@ -2061,7 +2071,7 @@ in Unix format.
 On non-Macintosh systems, the message "[mac format]" is shown if a file is
 read in Mac format.
 
-An example on how to use ":r !": 
+An example on how to use ":r !":
         :r !uuencode binfile binfile
 This command reads "binfile", uuencodes it and reads it into the current
 buffer.  Useful when you are editing e-mail and want to include a binary
@@ -2073,7 +2083,7 @@ file.  In the table is an explanation for some of the items.  The others are
 self explanatory.  Using the long or the short version depends on the
 'shortmess' option.
 
-        long            short           meaning 
+        long            short           meaning
         [readonly]      {RO}            the file is write protected
         [fifo/socket]                   using a stream
         [fifo]                          using a fifo stream

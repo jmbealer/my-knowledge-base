@@ -1,3 +1,14 @@
+---
+title: Vim2
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-50
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Vim2
 
     normal
     insert
@@ -12,7 +23,7 @@ i inserts before the cursor
 a inserts after the cursor
 dw delete word /#needs be at the beginning word
 d$ delete to the end fo the line
-d delete command 
+d delete command
     [number] d object OR d [number] object
         number - is how many times to execute the command (optional, default=1)
         d - is the command to delete
@@ -25,11 +36,11 @@ dd delete line
 number-command-object
 command mode
 :qa! <cr>(Enter) /#quits without saving
-:wqa <cr> /# writes and quits     
+:wqa <cr> /# writes and quits
 /#adjusting typematic delay and rate
 xset r rate 200 30
     maybe try 400 25
-tneastn 
+tneastn
 itneas tntieants ienatist inatisea
 Vim Navigation Commands
     move cursor wise
@@ -45,9 +56,9 @@ Vim Navigation Commands
        zt top screen
        zb bottom screen
 
-Vim Navigation 
+Vim Navigation
     Line navigation
-Vim Navigation 
+Vim Navigation
     Line navigation
         k - navigate upwards
         j - navigate downwards
@@ -67,7 +78,7 @@ vim --startuptime startup.txt startup.txt
 
 
 
-Basic 
+Basic
 
 | Key | Action | Followed by | New Key |
 |--- | --- | --- | --- |
@@ -129,7 +140,7 @@ Basic
 | 1-9 | numeric precursor to other commands | Followed by |
 | "Space" | move right one character | Followed by |
 | $ | move to end of line | Followed by |
-| % | match nearest [],(),{} on line, to its match (same line or others) | 
+| % | match nearest [],(),{} on line, to its match (same line or others) |
 | ^ | move to first non-whitespace character of line | Followed by |
 | ( | move to previous sentence | Followed by |
 | ) | move to next sentence | Followed by |

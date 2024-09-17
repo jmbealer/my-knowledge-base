@@ -1,3 +1,14 @@
+---
+title: Prefixes-Roots-Suffixes-List
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Prefixes-Roots-Suffixes-List
 
 ## A
 - a-, an-  not, without Greek
@@ -15,7 +26,7 @@ aer, aero: air: Greek
 ambul- walk Latin ambulance, ambulatory, preamble
 anim- breath, life, spirit Latin animal, animation, anime
 anni, annu, enni: year: Latin
-ante-, anti- before, in front of, prior to; old Latin 
+ante-, anti- before, in front of, prior to; old Latin
 ante-: in front of; before: Latin
 -ant, -ent that is or does something; a person or thing that
 anti-, ant- against, opposed to, preventive Greek
@@ -24,7 +35,7 @@ a-: on; in; to: Anglo-Saxon; Latin
 aqua: water: Latin
 archae, arche, archi: primitive; ancient: Greek
 arch: chief; ruler: Greek
--ary pertaining to Latin 
+-ary pertaining to Latin
 -ary: relating to; quality; place where; one who: Latin
 aud- audi, audio hearing, listening Latin
 aud: to hear; listen: Latin
@@ -163,7 +174,7 @@ hypo-, hyp-: below; less than normal: Greek
 -ian, -an: one having a certain skill; relating to; belonging to: Latin
 -ic: relating to; characterized by: Latin; Greek
 im-, in-, ir-, il-
-inetsa intainesat itns 
+inetsa intainesat itns
 infra beneath
 ing
 -ing action/process
@@ -338,7 +349,7 @@ sub- below
 sub under, below
 sub- under/below
 sub-: under, beneath, below; secondary: Latin
-super-: above; on top of; beyond: Latin 
+super-: above; on top of; beyond: Latin
 super- more than, above
 super, supra above
 sur- over and above

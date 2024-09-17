@@ -1,3 +1,14 @@
+---
+title: Python-namespaces
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-namespaces
 == Python Namespaces WIP
 
 Python Namespace
@@ -151,7 +162,7 @@ To func2, ‘c’ is local, ‘b’ is nonlocal, and ‘a’ is global. By nonlo
                                 c=3
                                 print(f"a={a}, b={b}, c={c}")
                 func3()
-                print(f"b={b}")              
+                print(f"b={b}")
 >>> func1()
 a=2, b=3, c=3
 b=2
@@ -172,7 +183,7 @@ To deal with this situation, we can use the ‘global’ and ‘nonlocal’ keyw
                                 c=3
                                 print(f"a={a}, b={b}, c={c}")
                 func3()
-                print(f"b={b}")              
+                print(f"b={b}")
 >>> func1()
 a=2, b=3, c=3
 b=3

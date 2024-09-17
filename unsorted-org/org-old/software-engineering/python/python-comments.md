@@ -1,4 +1,14 @@
-# what are Python Comments (#) WIP
+---
+title: What Are Python Comments (#) WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What Are Python Comments (#) WIP
 
 Python Comments begins with an octothorpe (hash, pound) character (#).
 Python Comments can't be part of a string literal.
@@ -50,7 +60,7 @@ In Python Triple double quote (""") and single quote (''') are used for Multi-li
 
 4. Python Docstrings
 
-As a comment, this Python Syntax is used to explain code. But unlike comments, they are more specific. Also, they are retained at runtime. This way, the programmer can inspect them at runtime. 
+As a comment, this Python Syntax is used to explain code. But unlike comments, they are more specific. Also, they are retained at runtime. This way, the programmer can inspect them at runtime.
 >>> """This comment
 is spanned across
 multiple lines"""
@@ -77,7 +87,7 @@ A docstring is a documentation string in Python. It is the first statement in a 
   """
   This function prints Hi
   """
-  print("Hi")             
+  print("Hi")
 >>> sayhi()
 
 Hi
@@ -86,7 +96,7 @@ To check a function’s docstring, use its __doc__ attribute.
   """
   This function prints Hi
   """
-  print("Hi")            
+  print("Hi")
 >>> sayhi.__doc__
 
 ‘\n\tThis function prints Hi\n\t’
@@ -95,7 +105,7 @@ The interpreter is unable to get the docstring to a function if it isn’t the f
   print("Hi")
   """
   This function prints Hi
-  """           
+  """
 >>> sayhi.__doc__
 >>>
 

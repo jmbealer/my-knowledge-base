@@ -1,18 +1,29 @@
+---
+title: WIP-Linux
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# WIP-Linux
 
 WIP Linux
 
 Introduction
-Linux is one of the most popular operating systems. 
-Its development was started in 1991 by Linus Torvalds. 
-The operating system was inspired by Unix, another operating system developed in the 1970s by AT&T Laboratories. 
+Linux is one of the most popular operating systems.
+Its development was started in 1991 by Linus Torvalds.
+The operating system was inspired by Unix, another operating system developed in the 1970s by AT&T Laboratories.
 
-Mostly, Linux uses the same principles and basic ideas of Unix, but Linux itself doesn’t contain Unix code, as it is an independent project. 
-Linux is not backed by an individual company but by an international community of programmers. 
+Mostly, Linux uses the same principles and basic ideas of Unix, but Linux itself doesn’t contain Unix code, as it is an independent project.
+Linux is not backed by an individual company but by an international community of programmers.
 As it is freely available, it can be used by anyone without restrictions.
 
 Distributions
 A Linux distribution is a bundle that consists of a Linux kernel and a selection of applications that are maintained by a company or user community.
-A distribution’s goal is to optimize the kernel and the applications that run on the operating system for a certain use case or user group. Distributions often include distribution-specific tools for software installation and system administration. 
+A distribution’s goal is to optimize the kernel and the applications that run on the operating system for a certain use case or user group. Distributions often include distribution-specific tools for software installation and system administration.
 This is why some distributions are mainly used for desktop environments where they need to be easy to use while others are mainly used to run on servers to use the available resources as efficient as possible.
 
 Another way to classify distributions is by referring to the distribution family they belong to. Distributions of the Debian distribution family use the package manager dpkg to manage the software that is run on the operating system. Packages that can be installed with the package manager are maintained by voluntary members of the distribution’s community. Maintainers use the deb package format to specify how the software is installed on the operating system and how it is configured by default. Just like a distribution, a package is a bundle of software and a corresponding configuration and documentation that makes it easier for the user to install, update and use the software.

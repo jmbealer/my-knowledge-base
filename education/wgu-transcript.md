@@ -1,3 +1,14 @@
+---
+title: Wgu-transcript
+author: Justin Bealer
+date_created: 2024-08-02, 03-53-37
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Wgu-transcript
 
 might be covererd by Associate
 D333 Ethics in Technology

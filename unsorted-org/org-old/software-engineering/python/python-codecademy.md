@@ -1,3 +1,13 @@
+---
+title: 'Will Print "Hello"'
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 == Codecademy WIP
 
 
@@ -64,7 +74,7 @@ Returning Value from Function
 A return keyword is used to return a value from a Python function. The value returned from a function can be assigned to a variable which can then be used in the program.
 
 In the example, the function check_leap_year returns a string which indicates if the passed parameter is a leap year or not.
-def check_leap_year(year): 
+def check_leap_year(year):
   if year % 4 == 0:
     return str(year) + " is a leap year."
   else:
@@ -83,7 +93,7 @@ a = "Hello"
 def prints_a():
   print(a)
   
-# will print "Hello"
+# Will Print "Hello"
 prints_a()
 Parameters as Local Variables
 
@@ -93,13 +103,13 @@ Like local variables, parameters cannot be referenced from outside the scope of 
 
 In the example, the parameter value is defined as part of the definition of my_function, and therefore can only be accessed within my_function. Attempting to print the contents of value from outside the function causes an error.
 def my_function(value):
-  print(value)   
+  print(value)
   
-# Pass the value 7 into the function
-my_function(7) 
+# Pass the Value 7 into the Function
+my_function(7)
 
-# Causes an error as `value` no longer exists
-print(value) 
+# Causes an Error as `value` no Longer Exists
+print(value)
 
 
 
@@ -129,7 +139,7 @@ will print only the first line in story.txt.
 Parsing JSON files to dictionary
 
 JSON format is used to store key value pairs. Python’s json module allows reading such data format and parsing it to a dictionary. The json.load function takes a file object as an argument and returns the data in a dictionary format.
-# Use json.load with an opened file object to read the contents into a Python dictionary.
+# Use json.load with an Opened File Object to Read the Contents into a Python Dictionary
 
 # Contents of file.json
 # { 'userId': 10 }
@@ -187,7 +197,7 @@ Class csv.DictWriter
 In Python, the csv module implements classes to read and write tabular data in CSV format. It has a class DictWriter which operates like a regular writer but maps a dictionary onto output rows. The keys of the dictionary are column names while values are actual data.
 
 The csv.DictWriter constructor takes two arguments. The first is the open file handler that the CSV is being written to. The second named parameter, fieldnames, is a list of field names that the CSV is going to handle.
-# An example of csv.DictWriter
+# An Example of csv.DictWriter
 import csv
 
 with open('companies.csv', 'w') as csvfile:
@@ -216,7 +226,7 @@ print(text_data)
 
 will produce a string containing the entire content of the read file:
 
-Mystery solved. 
+Mystery solved.
 Congratulations!
 
 

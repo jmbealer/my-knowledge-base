@@ -1,3 +1,14 @@
+---
+title: Ch-hf-added
+author: Justin Bealer
+date_created: 2024-07-20, 01-10-34
+date_modified: 2024-09-17, 09-29-44
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Ch-hf-added
 angry
 awesome
 crazy

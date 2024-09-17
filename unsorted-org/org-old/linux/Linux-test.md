@@ -1,3 +1,14 @@
+---
+title: Linux-test
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Linux-test
 
 
 
@@ -14,10 +25,10 @@ What is a Kernel
     root write
 /usr/lib/python3.8/site-packages/prompt_toolkit/key_binding/binding/vi.py
 xmodmap xkeycaps
- change escape key  still not working in terminal or nvim 
+ change escape key  still not working in terminal or nvim
  still need caps key
 
- create a  symbloic link in Unix 
+ create a  symbloic link in Unix
  ln s source_file my file
 c
 <leader> s --- search

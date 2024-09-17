@@ -1,3 +1,14 @@
+---
+title: Seec
+author: Justin Bealer
+date_created: 2024-07-20, 03-25-54
+date_modified: 2024-09-17, 09-29-46
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Seec
 use: 1
 force: 2
 form: 3

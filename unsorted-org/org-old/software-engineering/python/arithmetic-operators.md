@@ -1,4 +1,14 @@
-# what are Arithmetic Operators `+, -, *, /, //, %, **`
+---
+title: What Are Arithmetic Operators `+, -, *, /, //, %, **`
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What Are Arithmetic Operators `+, -, *, /, //, %, **`
 
 : used to perform mathematical operations
 

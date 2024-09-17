@@ -1,3 +1,13 @@
+---
+title: Pierpont Community & Technical College
+author: Justin Bealer
+date_created: 2024-03-16, 12-29-42
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Pierpont Community & Technical College
 
 [degree forum wiki Pierpont C&TC](https://degreeforum.miraheze.org/wiki/Pierpont_C%26TC)
@@ -6,9 +16,9 @@
 
 Board of Governors A.A.S. (60 Hrs)
 
-## Component I - General Education need 15 credits - 12 credits DONE - Maybe 9 credits
+## Component I - General Education Need 15 Credits - 12 Credits DONE - Maybe 9 Credits
 
-### Communications: 3 credits needed - 3 credits DONE
+### Communications: 3 Credits Needed - 3 Credits DONE
 
 Pierpont Classes:
 
@@ -29,7 +39,7 @@ Transfer Classes:
 
 * Foundations Of English Composition 3
 
-### Mathematics and/or Sciences: 6 credits needed - 6 credits Done
+### Mathematics and/or Sciences: 6 Credits Needed - 6 Credits Done
 
 Pierpont Classes:
 
@@ -51,7 +61,7 @@ Transfer Classes:
   * Introduction to Human Biology
   * Environmental Science 3 **DONE**
 
-### Computer Literacy: 3 credits needed - 3 credits DONE
+### Computer Literacy: 3 Credits Needed - 3 Credits DONE
 
 Pierpont Classes:
 
@@ -61,7 +71,7 @@ Transfer Classes:
 
 * Introduction to Information Technology 3 **DONE**
 
-### Social Sciences: 3 credits needed - Maybe 9 credits DONE
+### Social Sciences: 3 Credits Needed - Maybe 9 Credits DONE
 
 Pierpont Classes:
 

@@ -1,3 +1,14 @@
+---
+title: Wgu
+author: Justin Bealer
+date_created: 2024-07-05, 01-09-34
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Wgu
 
 | WGU General Education Courses                | CUV | Sophia Learning                                                     | Completion |
 | -------------------------------------------- | --- | ------------------------------------------------------------------- | ---------- |

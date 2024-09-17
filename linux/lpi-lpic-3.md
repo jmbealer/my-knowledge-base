@@ -1,3 +1,13 @@
+---
+title: LPI LPIC-3
+author: Justin Bealer
+date_created: 2024-08-24, 02-56-24
+date_modified: 2024-09-17, 09-29-59
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # LPI LPIC-3
 
 ## Exams

@@ -1,3 +1,14 @@
+---
+title: Python-iterators
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-iterators
 == Python Iterators WIP
 
 An iterator is an object that contains a countable number of values.

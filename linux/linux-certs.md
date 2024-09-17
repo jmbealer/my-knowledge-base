@@ -1,3 +1,13 @@
+---
+title: Linux Certifications
+author: Justin Bealer
+date_created: 2024-03-22, 04-43-13
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Linux Certifications
 
 Novice:
@@ -37,20 +47,20 @@ Expert:
 
 ## Lpi
 - Essentials
-  - Linux Essentials 
-  - Security Essentials 
-  - Web Essentials 
+  - Linux Essentials
+  - Security Essentials
+  - Web Essentials
 - Linux Professionals
   - LPIC-1
       https://www.lpi.org/our-certifications/lpic-1-overview
   - LPIC-2
-  - LPIC-3 Mixed Environments 
+  - LPIC-3 Mixed Environments
   - LPIC-3 Security
   - LPIC-3 Virtualization and Containerization
   - LPIC-3 High Availability and Storage Clusters
-- Open Technology 
+- Open Technology
   - DevOps Tools Engineer
-  - BSD Specialist 
+  - BSD Specialist
 
 ## The Linux Foundation
 
@@ -71,7 +81,7 @@ Certified Argo Project Associate (CAPA)
 Cilium Certified Associate (CCA)
 FinOps Certified Practitioner & FinOps Certified Professional
 
-Intermediate 
+Intermediate
 Certified Kubernetes Administrator (CKA)
 Certified Kubernetes Application Developer (CKAD)
 Certified Kubernetes Security Specialist (CKS)
@@ -79,7 +89,7 @@ Linux Foundation Certified System Administrator (LFCS)
 OpenJS Node.js Services Developer (JSNSD)
 OpenJS Node.js Application Developer (JSNAD)
 
-Advanced 
+Advanced
 
 ## Red Hat
 RHCSA

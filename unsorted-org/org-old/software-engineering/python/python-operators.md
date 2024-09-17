@@ -1,4 +1,14 @@
-# what is Python Operators WIP
+---
+title: What is Python Operators WIP
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# What is Python Operators WIP
 
 **Operators**
 : are used to perform operations on variables and values.
@@ -13,7 +23,7 @@ c = a + b:
 operands is a and b
 operator is +
 
-## Python built-in operators
+## Python Built-in Operators
 
 [Arithmetic Operators](arithmetic-operators.md) `+, -, *, /, //, %, **`
 [Assignment Operators](assignment-operators.md) `=, +=, -=, /=, //= etc.`
@@ -51,11 +61,11 @@ And then when we do this to Python list, we concatenate two lists.
 [1, 2, 3, 4, 5, 6]
 Python does this implicitly, but what for when you want to apply this operator to your own class? Can we? Let’s give it a try.
 In this python operator overloading tutorial, we take a class ‘myfloat’ to represent floating-point numbers.
->>> class myfloat:           
-      def __init__(self,whole,fraction):        
-                self.whole=whole         
-                self.fraction=fraction      
-      def shownumber(self):       
+>>> class myfloat:
+      def __init__(self,whole,fraction):
+                self.whole=whole
+                self.fraction=fraction
+      def shownumber(self):
                 print(f"I am {self.whole}.{self.fraction}")
 >>> obj1=myfloat(3,7)
 >>> obj1.shownumber()
@@ -187,14 +197,14 @@ If the interpreter cannot add left to right, it will call  __radd__() instead. H
 4. Python Operator Overloading Example
 
 To be able to add our Python objects obj1 and obj2 for class ‘myfloat’, we can do the following.
->>> class myfloat:                
+>>> class myfloat:
       def __init__(self,whole,fraction):  
-           self.whole=whole            
-           self.fraction=fraction     
-      def shownumber(self):                       
-           print(f"I am {self.whole}.{self.fraction}")   
-      def __add__(self,other):      
-           if (self.fraction+other.fraction)>9:                                        
+           self.whole=whole
+           self.fraction=fraction
+      def shownumber(self):
+           print(f"I am {self.whole}.{self.fraction}")
+      def __add__(self,other):
+           if (self.fraction+other.fraction)>9:
                 return myfloat(self.whole+other.whole+1,self.fraction+other.fraction-10)            return myfloat(self.whole+other.whole,self.fraction+other.fraction)
 <!--ID: 1639528995417-->
 
@@ -226,11 +236,11 @@ Here, the interpreter translates obj1+obj2 to obj1.__add__(obj2).
 5. More Examples of Python Operator Overloading
 
 To really understand something, once is never enough. So, let’s take another example of Operator overloading in Python.
->>> class itspower:                
-        def __init__(self,x):                  
-               self.x=x                
-        def __pow__(self,other):                               
-               return self.x**other.x             
+>>> class itspower:
+        def __init__(self,x):
+               self.x=x
+        def __pow__(self,other):
+               return self.x**other.x
 >>> a=itspower(2)
 >>> b=itspower(10)
 >>> a**b

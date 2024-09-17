@@ -1,3 +1,14 @@
+---
+title: Cswl-added
+author: Justin Bealer
+date_created: 2024-07-20, 06-13-21
+date_modified: 2024-09-17, 09-29-47
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Cswl-added
 accelerate
 activate
 acyclic

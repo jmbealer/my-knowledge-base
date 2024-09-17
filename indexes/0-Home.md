@@ -1,8 +1,15 @@
 ---
+title: Where Am I?
+author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-17, 08-42-31
+date_modified: 2024-09-17, 09-29-38
+draft: false
+reference: 
+description: Home page for Justin Bealer's knowledge base.
+aliases: 
+tags: home, moc, index, root, main, page, mainpage
 ---
-# Where am I?
+# Where Am I?
 
 tags: #home #moc #index #root #main #page #mainpage
 
@@ -31,3 +38,27 @@ what are soft skills?
 what are hard skills?
 
 who what where when why how
+
+## From Old Index
+
+This is the beginning of my wiki/personal-site/portfolio.
+
+There many things I need to do to get this site up and running. I need to:
+
+---
+
+- [ ] Clean up my notes.
+- [ ] Add my resume.
+- [ ] Add my projects.
+- [ ] Pick a color scheme.
+- [ ] Work on the design of the site.
+
+See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+
+Who, What, Where, When, Why, Which, Whom, Whose
+
+[[projects/index|Projects Idx]]
+
+[[work-on.md]]
+
+[[test.md]]

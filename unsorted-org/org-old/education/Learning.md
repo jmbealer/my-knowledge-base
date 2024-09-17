@@ -1,3 +1,14 @@
+---
+title: Learning
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Learning
 Deliberate Practice: focused practice with a certain goal in mind
   How you are doing it
   What may be going wrong

@@ -1,3 +1,14 @@
+---
+title: Python-checking-membership
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Python-checking-membership
 == Checking Membership in Python WIP
 
 In Python, we can check whether a string or character is a member of another string or not using "in" or "not in" operators.

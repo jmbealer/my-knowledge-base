@@ -1,3 +1,13 @@
+---
+title: JavaScript
+author: Justin Bealer
+date_created: 2023-12-14, 06-50-31
+date_modified: 2024-09-17, 09-30-01
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # JavaScript
 
 What is JavaScript?

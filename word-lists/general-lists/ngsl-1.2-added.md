@@ -1,3 +1,14 @@
+---
+title: ngsl-1.2-added
+author: Justin Bealer
+date_created: 2024-07-20, 01-57-00
+date_modified: 2024-09-17, 09-29-42
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# ngsl-1.2-added
 the
 be
 and

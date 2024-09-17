@@ -1,3 +1,13 @@
+---
+title: SANS GIAC Certifications
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # SANS GIAC Certifications
 
 Tracks
@@ -55,7 +65,7 @@ Cyber Security Skill Roadmap
     Core Techniques
       Security Essentials SEC401
       Hackers Techniques SEC504
-    Security Management 
+    Security Management
       Leadership Essentials MGT512
       Critical Controls SEC566
   2.Focus Job Roles

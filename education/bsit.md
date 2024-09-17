@@ -1,3 +1,14 @@
+---
+title: Bsit
+author: Justin Bealer
+date_created: 2024-04-19, 06-41-58
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Bsit
 Critical Thinking: Reason and Evidence 3 1
 Introduction to IT 4 1
 Global Arts and Humanities 3 1

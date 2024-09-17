@@ -1,3 +1,13 @@
+---
+title: Fitness
+author: Justin Bealer
+date_created: 2024-04-26, 02-03-05
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Fitness
 
 

@@ -1,3 +1,13 @@
+---
+title: Python Keywords
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Python Keywords
 
 Python has a set of keywords that are reserved words that cannot be used as variable names, function names, or any other identifiers:

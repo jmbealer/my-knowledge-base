@@ -1,3 +1,14 @@
+---
+title: Termianal-n-unix
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Termianal-n-unix
 what is terminal?
   terminal is an application that gives us a command line interface(CLI)
   faster than gui

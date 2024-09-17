@@ -1,3 +1,13 @@
+---
+title: Data Scientist
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Data Scientist
 
 [Mathematics Curriculum](mathematics-curriculum.md)
@@ -5,11 +15,11 @@
 [CS Links](cs-links.md)
 
 
-## Math for Data science
+## Math for Data Science
 
 ## Applied part
 1. Acquaintance with Numpy [Numpy Tutorial on Scipy-Lectures](http://www.scipy-lectures.org/intro/numpy/index.html)
-2. Pandas tutorial [Official tutorial](http://pandas.pydata.org/pandas-docs/stable/tutorials.html) 
+2. Pandas tutorial [Official tutorial](http://pandas.pydata.org/pandas-docs/stable/tutorials.html)
 3. Matplotlib [Intro to Matplotlib](http://www.scipy-lectures.org/intro/matplotlib/index.html)
 
 ## Machine Learning
@@ -40,7 +50,7 @@ Special courses to take listed separately:
 8. System design - engineering approach [very cool collection](https://github.com/donnemartin/system-design-primer)
 9. Learn to work with the [command line](https://github.com/jlevy/the-art-of-command-line)
 
-## Other interesting courses
+## Other Interesting Courses
 Some of the courses with the useful material to get a grasp of:
 1. Topics in Mathematics with Applications in Finance (topics include stochastic calculus, stochastic differential equations, time series analysis, and direct applications to finance) [MIT's 18.S096](https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/index.htm)
 

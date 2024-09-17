@@ -1,3 +1,13 @@
+---
+title: Computer Science Curriculum
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Computer Science Curriculum
 
 ## Table Of Content
@@ -12,7 +22,7 @@
 - High school Mathematics
 - [Introduction to Computer Science & Programming](intro-to-cs-pro.md)
 
-## unsorted
+## Unsorted
 
 [Data Structures and Algorithms](ds-algo.md)
 [Systems Programming](sys-pro.md)
@@ -276,7 +286,7 @@ Extra Step 5: Distributed Systems
 
 **Operating Systems**
 
-> [UC Berkeley CS162 Youtube](https://www.youtube.com/playlist?list=PL3A5075EC94726781&feature=plcp) 
+> [UC Berkeley CS162 Youtube](https://www.youtube.com/playlist?list=PL3A5075EC94726781&feature=plcp)
 > *or*
 > [UC Berkeley CS162 Course Pages](https://inst.eecs.berkeley.edu/~cs162/archives.html)
 > *or*  

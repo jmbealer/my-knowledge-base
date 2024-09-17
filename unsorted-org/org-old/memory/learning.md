@@ -1,3 +1,14 @@
+---
+title: Learning
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Learning
 
 ![](https://preview.redd.it/1t0q5oe7ger51.jpg?width=563&auto=webp&s=6f31b7275fbb8c1b29e2069f9e26139a2256df26)
 ![](https://preview.redd.it/8npphla3y4r51.png?width=550&auto=webp&s=f6a888ca3e7ea16168330c8464985fdf48c4cf90)

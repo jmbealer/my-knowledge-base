@@ -1,3 +1,14 @@
+---
+title: Beawl
+author: Justin Bealer
+date_created: 2024-07-20, 03-22-07
+date_modified: 2024-09-17, 09-29-47
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Beawl
 Sub-list 1:
 
 - lien

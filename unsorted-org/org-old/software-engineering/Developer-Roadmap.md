@@ -1,3 +1,13 @@
+---
+title: Developer Roadmap
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-53
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Developer Roadmap
 
 ## Computer Science
@@ -68,7 +78,7 @@ Learn about Managing Servers
 ** terminal multiplexers
 *** tmux
 *** screen
-What is and how to setup a 
+What is and how to setup a
 Learn Infrastructure as Code
 Learn how to monitor software and infrastructure
 Learn some CI/CD Tool

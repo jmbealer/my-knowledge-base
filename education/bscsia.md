@@ -1,3 +1,14 @@
+---
+title: Bscsia
+author: Justin Bealer
+date_created: 2024-04-19, 07-01-17
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Bscsia
 Critical Thinking: Reason and Evidence 3 1
 Introduction to IT 4 1
 Composition: Successful Self-Expression 3 1

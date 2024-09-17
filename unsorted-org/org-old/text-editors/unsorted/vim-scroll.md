@@ -1,3 +1,13 @@
+---
+title: Vim Scrolling
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-49
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Vim Scrolling
 
 These commands move the contents of the window.  If the cursor position is
@@ -54,7 +64,7 @@ z+                      Without [count]: Redraw with the line just below the
                         With [count]: just like "z<CR>".
 
 ==============================================================================
-2. Scrolling upwards                                    
+2. Scrolling upwards
 
 The following commands move the edit window (the part of the buffer that you
 see) upwards (this means that more lines upwards in the text buffer can be
@@ -262,7 +272,7 @@ line if the cursor line is about to be scrolled off the screen (similarly to
 how the horizontal scrollbar works).
 
 You can modify the default behavior by mapping the keys.  For example, to make
-the scroll wheel move one line or half a page in Normal mode: 
+the scroll wheel move one line or half a page in Normal mode:
    :map <ScrollWheelUp> <C-Y>
    :map <S-ScrollWheelUp> <C-U>
    :map <ScrollWheelDown> <C-E>
@@ -273,7 +283,7 @@ This only works when Vim gets the scroll wheel events, of course.  You can
 check if this works with the "xev" program.
 
 When using XFree86, the /etc/XF86Config file should have the correct entry for
-your mouse.  For FreeBSD, this entry works for a Logitech scrollmouse: 
+your mouse.  For FreeBSD, this entry works for a Logitech scrollmouse:
     Protocol     "MouseMan"
     Device       "/dev/psm0"
     ZAxisMapping 4 5
@@ -295,7 +305,7 @@ To use the mouse wheel in an older xterm you must do this:
    or <ScrollWheelUp> keys.
 
 You can do the translations by adding this to your ~.Xdefaults file (or other
-file where your X resources are kept): 
+file where your X resources are kept):
 
   XTerm*VT100.Translations:             #override \n\
                 s<Btn4Down>: string("0x9b") string("[64~") \n\
@@ -305,7 +315,7 @@ file where your X resources are kept):
                 <Btn4Up>: \n\
                 <Btn5Up>:
 
-Add these mappings to your vimrc file: 
+Add these mappings to your vimrc file:
         :map <M-Esc>[62~ <ScrollWheelUp>
         :map! <M-Esc>[62~ <ScrollWheelUp>
         :map <M-Esc>[63~ <ScrollWheelDown>

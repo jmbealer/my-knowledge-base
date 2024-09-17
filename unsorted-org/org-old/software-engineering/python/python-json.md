@@ -1,3 +1,13 @@
+---
+title: Some JSON
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-52
+reference: 
+description: 
+aliases: 
+tags: 
+---
 == Python JSON WIP
 
 JSON is a syntax for storing and exchanging data.
@@ -20,15 +30,15 @@ Example
 Convert from JSON to Python:
 import json
 
-# some JSON:
+# Some JSON
 x =  '{ "name":"John", "age":30, "city":"New York"}'
 <!--ID: 1639528995638-->
 
 
-# parse x:
+# Parse X
 y = json.loads(x)
 
-# the result is a Python dictionary:
+# The Result is a Python Dictionary
 print(y["age"])
 Convert from Python to JSON
 
@@ -38,17 +48,17 @@ Example
 Convert from Python to JSON:
 import json
 
-# a Python object (dict):
+# A Python Object (dict)
 x = {
   "name": "John",
   "age": 30,
   "city": "New York"
 }
 
-# convert into JSON:
+# Convert into JSON
 y = json.dumps(x)
 
-# the result is a JSON string:
+# The Result is a JSON String
 print(y)
 
 You can convert Python objects of the following types, into JSON strings:

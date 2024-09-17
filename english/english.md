@@ -1,3 +1,13 @@
+---
+title: English
+author: Justin Bealer
+date_created: 2024-04-26, 03-36-30
+date_modified: 2024-09-17, 09-30-00
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # English
 
 dictionaries
@@ -8,7 +18,7 @@ dictionaries
 [merrim-webster](https://www.merriam-webster.com/)
 
 
-## Learning vocabulary
+## Learning Vocabulary
 
 wordlists
 

@@ -1,3 +1,13 @@
+---
+title: Computer Organization and Architecture
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-38
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Computer Organization and Architecture
 
 ### Computer Architecture

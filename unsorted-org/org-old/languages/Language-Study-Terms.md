@@ -1,3 +1,14 @@
+---
+title: Language-Study-Terms
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Language-Study-Terms
 
 - **abbreviation** /əˌbriː.viˈeɪ.ʃən/ <u>noun</u>
   - a shortened form of a word or phrase.
@@ -123,7 +134,7 @@
   - There are hyphens in "well-to-do".
 - **idiom** /ˈɪdiəm/ <u>noun</u>
   - a phrase or expression that typically presents a figurative, non-literal
-      meaning attached to the phrase 
+      meaning attached to the phrase
   - but some phrases become figurative idiom while retaining the literal meaning
       of the phrase.
   - "Let the cat out of the bag" is an idiom meaning to tell a secret by

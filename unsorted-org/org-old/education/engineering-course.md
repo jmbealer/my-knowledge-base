@@ -1,4 +1,14 @@
-# Engineering courses with video lectures
+---
+title: Engineering Courses with Video Lectures
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Engineering Courses with Video Lectures
 
 ------------------------------
 
@@ -34,7 +44,7 @@
 
 - **Circuits**
   - [6.002 Circuits and Electronics - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/)
-  - [Circuits and Systems - Caltech](https://itunes.apple.com/us/course/circuits-and-systems/id1191494394) ([YouTube](https://www.youtube.com/playlist?list=PLc7Gz02Znph_HU1I9STgC4Nv0aG_jdb8Z)) 
+  - [Circuits and Systems - Caltech](https://itunes.apple.com/us/course/circuits-and-systems/id1191494394) ([YouTube](https://www.youtube.com/playlist?list=PLc7Gz02Znph_HU1I9STgC4Nv0aG_jdb8Z))
   - [Analog Circuit Design (By Prof. Ali Hajimiri, Caltech)](https://www.youtube.com/playlist?list=PLc7Gz02Znph8d2777p1PUrfPL-8nfj8oZ)
   
 - **Signal Processing**

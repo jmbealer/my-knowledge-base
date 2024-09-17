@@ -1,37 +1,48 @@
+---
+title: eLearnSecurity
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# eLearnSecurity
 = eLearnSecurity
 
 == Training Paths
 Enterprise Defender
-  Practical Network Defense PND 
-  Practical Web Defense PWD 
+  Practical Network Defense PND
+  Practical Web Defense PWD
   Threat Hunting Professional THP
 Network Pentester
-  Penetration Testing Student PTS 
-  Penetration Testing Professional PTP 
+  Penetration Testing Student PTS
+  Penetration Testing Professional PTP
   Penetration Testing Extreme PTX
 Purple Team Member
-  Penetration Testing Professional PTP 
+  Penetration Testing Professional PTP
   Penetration Testing Extreme PTX
   Threat Hunting Professional THP
 Incident Responder
   ARES
-      Threat Hunting Professional THP 
+      Threat Hunting Professional THP
       Digital Forensics Professional DFP
       Advanced Reverse Engineering of Software ARES
   IHRP
-      Threat Hunting Professional THP 
-      Digital Forensics Professional DFP 
+      Threat Hunting Professional THP
+      Digital Forensics Professional DFP
       Incident Handling & Response Professional IHRP
 Web Application Pentester
-  Penetration Testing Professional PTP 
-  Web Application Penetration Testing WAPT 
+  Penetration Testing Professional PTP
+  Web Application Penetration Testing WAPT
   Web Application Penetration Testing Extreme WAPTX
 Advanced Pentester
-  Penetration Testing Extreme PTX 
-  Web Application Penetration Testing Extreme WAPTX 
+  Penetration Testing Extreme PTX
+  Web Application Penetration Testing Extreme WAPTX
   Mobile Application Security and Penetration Testing MASPT
   
-== Certifications 
+== Certifications
 eCPPTv2
   PTP
 eCIR

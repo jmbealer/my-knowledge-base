@@ -1,3 +1,14 @@
+---
+title: Linux-Certifications
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-39
+date_modified: 2024-09-17, 09-29-55
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# Linux-Certifications
 = Linux Certification
 
 == CompTIA Linux+
@@ -72,7 +83,7 @@ DevOps & Site Reliability
   LFS258 Kubernetes Fundamentals
   LFS261 Implementing Continuous Delivery
   LFS458 Kubernetes Administration
-Application Development 
+Application Development
   LFD401 Developing Applications For Linux
   LFS171 Blockchain for Business – An Introduction to Hyperledger Technologies
   LFD232 Cloud Foundry for Developers

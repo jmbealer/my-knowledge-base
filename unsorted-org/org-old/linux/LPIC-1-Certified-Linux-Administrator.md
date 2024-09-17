@@ -1,3 +1,14 @@
+---
+title: LPIC-1-Certified-Linux-Administrator
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
+# LPIC-1-Certified-Linux-Administrator
 
 LPIC-1 Certified Linux Administrator Objectives
 Exam 101
@@ -30,7 +41,7 @@ Exam 101
         Create and Change Hard and Symbolic Links
         Find Systems Files and Place Files in the Correct Location
 Exam 102
-    Shells and Shell Scripting 
+    Shells and Shell Scripting
         Customize and Use the Shell Environment
         Customize or Write Simple Scripts
     User Interfaces and Desktops
@@ -53,6 +64,6 @@ Exam 102
         Configure Client Side DNS
     Security
         Perform Security Administration Tasks
-        Setup Host Security 
+        Setup Host Security
         Securing Data with Encryption
     

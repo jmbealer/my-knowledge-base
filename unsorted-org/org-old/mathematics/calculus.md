@@ -1,3 +1,13 @@
+---
+title: Calculus
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # Calculus
 
 Calculus by James Stewart
@@ -58,4 +68,4 @@ OR
 >[Calculus Revisited: Complex Variables, Differential Equations, and Linear Algebra](https://ocw.mit.edu/resources/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011) MITx
 
 
->[Calculus Online Textbook](https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/) MIT 
+>[Calculus Online Textbook](https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/) MIT

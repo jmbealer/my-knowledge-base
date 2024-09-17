@@ -1,3 +1,13 @@
+---
+title: 400 Languages Index
+author: Justin Bealer
+date_created: 2023-11-16, 04-00-30
+date_modified: 2024-09-17, 09-29-54
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # 400 Languages Index
 
 [[4-lan/40-lan/0-idx|40 Language]]
