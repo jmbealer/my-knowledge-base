@@ -1,5 +1,5 @@
 ---
-title: Where Am I?
+title: Where Am I? Home! Welcome Back!
 author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
 date_modified: 2024-09-17, 10-59-26
@@ -9,9 +9,6 @@ description: Home page for Justin Bealer's knowledge base.
 aliases: 
 tags: home, moc, index, root, main, page, mainpage
 ---
-# Where Am I?
-
-Welcome, Home!
 To the start of my knowledge.
 
 [[_cult-art|Culture & the Arts]]
@@ -27,6 +24,8 @@ To the start of my knowledge.
 [[_rel-bel|Religion & Belief]]
 [[_soc-ssci|Society & Social Sciences]]
 [[_tech-app|Technology & Applied Sciences]]
+---
+
 [[README]]
 [[resume]]
 [[work-on]]
