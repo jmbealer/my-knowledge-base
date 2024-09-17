@@ -9,6 +9,7 @@ description: Home page for Justin Bealer's knowledge base.
 aliases: 
 tags: home, moc, index, root, main, page, mainpage
 ---
+
 To the start of my knowledge.
 
 [[_cult-art|Culture & the Arts]]
@@ -24,6 +25,7 @@ To the start of my knowledge.
 [[_rel-bel|Religion & Belief]]
 [[_soc-ssci|Society & Social Sciences]]
 [[_tech-app|Technology & Applied Sciences]]
+
 ---
 
 [[README]]
