@@ -1,1 +1,1 @@
-indexes/0-Home.md
+indexes/home-idx.md
