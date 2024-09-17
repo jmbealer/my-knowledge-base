@@ -1,14 +1,15 @@
 ---
-title: Where Am I? Home! Welcome Back!
+title: Home Page
 author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-17, 10-59-26
+date_modified: 2024-09-17, 12-26-14
 draft: false
 reference: 
 description: Home page for Justin Bealer's knowledge base.
 aliases: 
-tags: home, moc, index, root, main, page, mainpage
+tags: home, moc, index,
 ---
+# Where Am I? Home! Welcome Back
 
 To the start of my knowledge.
 
