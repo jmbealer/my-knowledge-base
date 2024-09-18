@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unsorted-org/causal-analysis-essay.md",
+                "file": "unsorted-org/html-org.md",
                 "mode": "source",
                 "source": false
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unsorted-org/causal-analysis-essay.md",
+                "file": "unsorted-org/html-org.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unsorted-org/causal-analysis-essay.md",
+                "file": "unsorted-org/html-org.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "unsorted-org/causal-analysis-essay.md"
+                "file": "unsorted-org/html-org.md"
               }
             }
           },
@@ -246,11 +246,15 @@
   },
   "active": "ef600881f0b61383",
   "lastOpenFiles": [
+    "unsorted-org/html-org.md~",
+    "unsorted-org/linux_install-org.md",
+    "unsorted-org/javascript-ord.md",
+    "unsorted-org/html-org.md",
+    "unsorted-org/causal-analysis-essay.md",
+    "unsorted-org/causal-analysis-essay.md~",
     "unsorted-org/causal-analysis-essay.org",
     "journals/2024-09-18.md",
     "journals/2023-11-25.md",
-    "unsorted-org/causal-analysis-essay.md~",
-    "unsorted-org/causal-analysis-essay.md",
     "unsorted-org/causal-analysis-essay.md-old",
     "journals/2023-11-21.md",
     "journals/2023-11-20.md",
@@ -275,13 +279,9 @@
     "_technology_and_applied_science/_tech-app.md",
     "_technology_and_applied_science/anki.md",
     "journals/2024-09-17.md",
-    "resume.md",
-    "_society_and_social_sciences/_soc-ssci.md",
     "_society_and_social_sciences/_soc-ssci.md~",
-    "_religion_and_belief_systems/_rel-bel.md",
     "tech-app.md~",
     "rel-bel.md~",
-    "phi-thi.md~",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
