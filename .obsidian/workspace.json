@@ -53,7 +53,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-18.md",
                 "mode": "source",
                 "source": true
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-18.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "indexes/home-idx.md"
+                "file": "journals/2024-09-18.md"
               }
             }
           },
@@ -232,14 +232,21 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "96672dcf53ad44e7",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 630.5,
-    "collapsed": true
+    "width": 630.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,14 +259,16 @@
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "header-enhancer:Header Enhancer": false
+      "header-enhancer:Header Enhancer": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "indexes/home-idx.md",
+    "journals/2024-09-18.md",
     "index.md~",
     "about_me.md",
-    "indexes/home-idx.md",
     "_technology_and_applied_science/_tech-app.md",
     "_technology_and_applied_science/anki.md",
     "journals/2024-09-17.md",

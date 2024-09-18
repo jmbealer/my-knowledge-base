@@ -2,7 +2,7 @@
 title: Home Page
 author: Justin Bealer
 date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-17, 12-38-20
+date_modified: 2024-09-18, 02-39-25
 draft: false
 reference: 
 description: Home page for Justin Bealer's knowledge base.
@@ -14,6 +14,7 @@ tags: home, moc, index
 To the start of my knowledge.
 
 Guide Posts:
+
 - [[_cult-art|Culture & the Arts]]
 - [[_gen-refer|General Reference]]
 - [[_geo-pla|Geography & Places]]

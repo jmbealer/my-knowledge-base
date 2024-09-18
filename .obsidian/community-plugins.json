@@ -9,5 +9,6 @@
   "templater-obsidian",
   "obsidian-to-anki-plugin",
   "header-enhancer",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-git"
 ]
