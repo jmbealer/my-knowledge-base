@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "577cdf1863f7e93a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8725f72091192d0b",
             "type": "leaf",
             "state": {
@@ -140,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
+                "file": "work-on.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
+                "file": "work-on.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "unsorted-org/org-old/20230729192800-vim_motions.md"
+                "file": "work-on.md"
               }
             }
           },
@@ -235,44 +223,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "577cdf1863f7e93a",
+  "active": "8725f72091192d0b",
   "lastOpenFiles": [
-    "unsorted-org/org-old/testingPlantuml.md~",
-    "unsorted-org/org-old/20230729192800-vim_motions.md~",
-    "unsorted-org/org-old/20230729190012-vim_insert.md~",
-    "unsorted-org/org-old/20230711145335-html_ele_refer.md~",
-    "unsorted-org/org-old/20230521163228-jsreference.md~",
-    "unsorted-org/org-old/20230307073840-wikipedia_classifications.md~",
-    "unsorted-org/org-old/20230210234521-english_words_anki.md~",
-    "unsorted-org/org-old/20230209150829-typing.md~",
-    "unsorted-org/org-old/20230206121930-tridactyl.md~",
-    "unsorted-org/org-old/20221015171221-career.md~",
-    "unsorted-org/org-old/20220401030216-main-idx.md~",
-    "unsorted-org/org-old/testingPlantuml.md",
-    "unsorted-org/org-old/20230729192800-vim_motions.md",
-    "unsorted-org/org-old/20230729190012-vim_insert.md",
-    "unsorted-org/org-old/20230711145335-html_ele_refer.md",
-    "unsorted-org/org-old/20230521163228-jsreference.md",
-    "unsorted-org/org-old/20230307073840-wikipedia_classifications.md",
-    "unsorted-org/org-old/20230210234521-english_words_anki.md",
-    "unsorted-org/org-old/20230209150829-typing.md",
-    "unsorted-org/org-old/20230206121930-tridactyl.md",
-    "unsorted-org/org-old/20221015171221-career.md",
-    "unsorted-org/org-old/20220401030216-main-idx.md",
-    "unsorted-org/org-old/testingPlantuml.org.md",
-    "unsorted-org/causal-analysis-essay.md",
-    "_culture_and_the_arts/causal-analysis-essay.md",
-    "unsorted-org/html-org.md",
-    "_technology_and_applied_science/javascript-ord.md",
-    "_technology_and_applied_science/html-org.md",
-    "_technology_and_applied_science/linux_install-org.md",
-    "unsorted-org/javascript-ord.md",
-    "unsorted-org/linux_install-org.md",
-    "unsorted-org/test.md",
-    "unsorted-org/ffo.md",
-    "unsorted-org/testtt.md",
-    "journals/2024-09-18.md",
-    "journals/2023-11-25.md",
+    "_general_reference/education_1/wgu/20230711122535-wgu_d426.org",
+    "_general_reference/education_1/wgu/20230711122522-wgu_d199.org",
+    "_general_reference/education_1/wgu/20230711122508-wgu_d315.org",
+    "_general_reference/education_1/wgu/20230711121127-mywgu.org",
+    "_general_reference/education_1/wgu/20230711120928-wgu_c963.org",
+    "_general_reference/education_1/wgu/20230507130844-wgu_c455.org",
+    "_general_reference/education_1/wgu/20230507115351-wgu-degree_planning.org",
+    "_general_reference/education_1/wgu/20230402154116-wgu_c779.org",
+    "_general_reference/education_1/wgu/20230117115934-wgu_c464.org",
+    "_general_reference/education_1/wgu/20230103163009-wgu-c173.org",
+    "_general_reference/education_1/wgu/20221030132824-wgu-degree_plan.org",
+    "_general_reference/education_1/tesu-degree.md",
+    "_general_reference/education_1/sci-math-course.md",
+    "_general_reference/education_1/my-curriculum.md",
+    "_general_reference/education_1/mit-degree.md",
+    "_general_reference/education_1/engineering-course.md",
+    "_general_reference/education_1/degree.md",
+    "_general_reference/education_1/credits.md",
+    "_general_reference/education_1/book-list.md",
+    "_general_reference/education_1/Unsorted.md",
+    "_general_reference/education_1/Ultra-Learning.md",
+    "_general_reference/education_1/Test-Strategies.md",
+    "_general_reference/education_1/Study-Skills.md",
+    "_general_reference/education_1/Self-Learning.md",
+    "_general_reference/education_1/Revised-Blooms-Taxonomy-Categories.md",
+    "_general_reference/education_1/Notes-Inbox.md",
+    "_general_reference/education_1/Learning.md",
+    "_general_reference/education_1/Learn-Projects.md",
+    "_general_reference/education_1/Flash-Cards.md",
+    "_general_reference/education_1/Anki.md",
+    "_general_reference/education_1/020-Academic.md",
+    "_general_reference/education_1/00-academics-index.md",
+    "_general_reference/templates/templates.md",
+    "_general_reference/templates/add.md",
+    "_culture_and_the_arts/languages/WIP.md",
+    "_culture_and_the_arts/languages/Suffix.md",
+    "_technology_and_applied_science/software-engineering/sliding-window-2.png",
+    "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
@@ -281,8 +271,6 @@
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "Untitled.canvas"
   ]
 }
