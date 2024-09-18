@@ -1,8 +1,0 @@
----
-author: test
----
-
-
-
-tttisn
-tsnisa

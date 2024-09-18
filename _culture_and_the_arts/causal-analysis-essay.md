@@ -1,12 +1,11 @@
 ---
 author: Justin Bealer
-date_created: 2022-07-18, 04-12-44
-date_modified: 2024-09-18, 05-02-47
+date_created: 2024-09-18, 05-56-27
+date_modified: 2024-09-18, 05-56-46
 reference: 
 description: 
-aliases: []
-tags: []
-id: causal-analysis-essay
+aliases: 
+tags: 
 ---
 
 # Introduciton

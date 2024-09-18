@@ -1,13 +1,14 @@
 ---
 author: Justin Bealer
-date_created: 2024-09-18, 05-00-54
-date_modified: 2024-09-18, 05-02-55
+date_created: 2022-06-26, 05-56-07
+date_modified: 2024-09-18, 05-56-37
 reference: 
 description: 
 aliases: 
 tags: 
 ---
 # Javascript-ord
+
 [jsDataTypes](id:f3061f7f-5181-4011-b516-3100217a9a59)
 [jsFunction](id:bd8b25b9-7a35-4fe9-a0a9-854ff153e692)
 [jsOperator](id:85bb4b3e-8a1a-4ef7-9482-b867f6309760)
@@ -210,11 +211,11 @@ Fixed values are called Literals. Variable values are called Variables.
 JavaScript Literals The two most important syntax rules for fixed values
 are:
 
-1.  Numbers are written with or without decimals:
+1. Numbers are written with or without decimals:
 
 10.50 1001
 
-1.  Strings are text, written within double or single quotes:
+1. Strings are text, written within double or single quotes:
 
 "John Doe" 'John Doe'
 
@@ -2287,12 +2288,12 @@ html\> \<html\> \<body\>
 
 ### Error Types Thinkful
 
-1.  Runtime errors
+1. Runtime errors
 
     errorType: description of the error SyntaxError: function statement
     requires a name
 
-2.  Reference errors
+2. Reference errors
 
     Reference error - An error that occurs when some variable being
     referenced doesn't exist or can't be accessed
@@ -2327,7 +2328,7 @@ html\> \<html\> \<body\>
     console.log(result); //returns ReferenceError: result is not defined
     ```
 
-3.  Syntax errors
+3. Syntax errors
 
     Syntax error - An error that occurs when some part of the predefined
     JavaScript syntax is being used incorrectly
@@ -2374,7 +2375,7 @@ html\> \<html\> \<body\>
     and you'd have to do the legwork of resolving the issue. This is one
     of the many reasons that it's important to write your code legibly.
 
-4.  Type errors
+4. Type errors
 
     Type error - An error that occurs when you misuse a data type in
     JavaScript, meaning that an operation can't be performed
@@ -2404,7 +2405,7 @@ html\> \<html\> \<body\>
     fail—instead, it returns an undefined. But when you try to invoke
     the undefined property, that is when you get your error.
 
-5.  Silent errors
+5. Silent errors
 
     Silent error - An error that doesn't immediately surface when the
     code is run
