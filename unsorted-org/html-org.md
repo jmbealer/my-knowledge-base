@@ -2,7 +2,6 @@
 id: html-org
 aliases: []
 tags: []
-author: Justin Bealer
 date_created: 2022-05-24, 05-02-15
 date_modified: 2024-09-18, 05-02-49
 ---
