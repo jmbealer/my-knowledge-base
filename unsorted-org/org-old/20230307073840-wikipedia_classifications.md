@@ -1,9 +1,17 @@
 ---
+title: Wikipedia Classifications
+author: Justin Bealer
+date_created: 2024-09-18, 06-10-46
+date_modified: 2024-09-18, 06-20-44
+reference: 
+description: 
+aliases: 
+tags: 
 ctime: 20230307073840
 id: eb5ebf73-5090-454e-a8ce-340227d67fa8
 mtime: 20230307073853
-title: Wikipedia Classifications
 ---
+# 20230307073840-wikipedia_classifications
 
 Main topic articles‎
 

@@ -11,8 +11,12 @@
             "id": "577cdf1863f7e93a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -136,6 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,6 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "unsorted-org/org-old/20230729192800-vim_motions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +179,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "unsorted-org/org-old/20230729192800-vim_motions.md"
+              }
             }
           },
           {
@@ -229,6 +237,9 @@
   },
   "active": "577cdf1863f7e93a",
   "lastOpenFiles": [
+    "unsorted-org/org-old/20221015171221-career.md~",
+    "unsorted-org/org-old/20220401030216-main-idx.md~",
+    "unsorted-org/org-old/testingPlantuml.md",
     "unsorted-org/org-old/20230729192800-vim_motions.md",
     "unsorted-org/org-old/20230729190012-vim_insert.md",
     "unsorted-org/org-old/20230711145335-html_ele_refer.md",
@@ -262,9 +273,6 @@
     "unsorted-org/causal-analysis-essay.org",
     "journals/2024-09-18.md",
     "journals/2023-11-25.md",
-    "unsorted-org/causal-analysis-essay.md-old",
-    "journals/2023-11-21.md",
-    "journals/2023-11-20.md",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",

@@ -1,9 +1,16 @@
 ---
+title: english-words-anki
+author: Justin Bealer
+date_created: 2024-09-18, 06-10-46
+date_modified: 2024-09-18, 06-20-43
+reference: 
+description: 
+aliases: 
+tags: 
 ctime: 20230210234521
 id: 54f97aa4-4b45-4b8a-95e9-679f2585bf7a
 mtime: 20230307230247 20230215233815 20230212230128 20230212212830
   20230211005650 20230210234525
-title: english-words-anki
 ---
 
 Rank,Word,Pronunciation,PoS,Definition,Tags
