@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2023-11-25.md",
+                "file": "unsorted-org/causal-analysis-essay.md",
                 "mode": "source",
                 "source": false
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2023-11-25.md",
+                "file": "unsorted-org/causal-analysis-essay.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2023-11-25.md",
+                "file": "unsorted-org/causal-analysis-essay.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2023-11-25.md"
+                "file": "unsorted-org/causal-analysis-essay.md"
               }
             }
           },
@@ -246,6 +246,11 @@
   },
   "active": "ef600881f0b61383",
   "lastOpenFiles": [
+    "journals/2024-09-18.md",
+    "journals/2023-11-25.md",
+    "unsorted-org/causal-analysis-essay.md~",
+    "unsorted-org/causal-analysis-essay.md",
+    "unsorted-org/causal-analysis-essay.md-old",
     "journals/2023-11-21.md",
     "journals/2023-11-20.md",
     "journals/2023-11-11.md",
@@ -255,7 +260,6 @@
     "journals/2023-10-26.md",
     "journals/2023-10-25.md",
     "journals/2023-10-08.md",
-    "journals/2024-09-18.md",
     "journals/2023-11-02.md~",
     "journals/2023-10-26.md~",
     "journals/2024-09-18.md~",
@@ -275,13 +279,9 @@
     "_society_and_social_sciences/_soc-ssci.md~",
     "_religion_and_belief_systems/_rel-bel.md",
     "_philosophy_and_thinking/_phi-thi.md",
-    "_people_and_society/_peo-soc.md",
-    "_natural_and_physical_sciences/_nat-sci.md",
     "tech-app.md~",
     "rel-bel.md~",
     "phi-thi.md~",
-    "peo-soc.md~",
-    "nat-sci.md~",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-2.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
