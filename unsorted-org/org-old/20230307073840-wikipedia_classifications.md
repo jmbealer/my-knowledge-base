@@ -1,7 +1,7 @@
 ---
 title: Wikipedia Classifications
 author: Justin Bealer
-date_created: 2024-09-18, 06-10-46
+date_created: 2023-03-07, 06-10-46
 date_modified: 2024-09-18, 06-20-44
 reference: 
 description: 
