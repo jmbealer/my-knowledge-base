@@ -21,30 +21,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-03-26.md",
+                "file": "journals/2024-09-18.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "7a244fe72e5a0d92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "journals/2024-06-23.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3b7c349f10fd0f91",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -53,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-09-18.md",
+                "file": "work-on.md",
                 "mode": "source",
                 "source": true
               }
@@ -61,7 +41,7 @@
             "group": "4cf5d733f9750286"
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "072d20a8365d66be",
@@ -73,7 +53,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "journals/2024-09-18.md",
+                "file": "work-on.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -246,7 +226,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 630.5
+    "width": 630.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,10 +244,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8725f72091192d0b",
+  "active": "ef600881f0b61383",
   "lastOpenFiles": [
-    "indexes/home-idx.md",
+    "journals/2024-03-26.md",
     "journals/2024-09-18.md",
+    "journals/journals.md",
+    "journals/2024-04-02.md",
+    "journals/2024-06-23.md",
+    "work-on.md",
+    "indexes/home-idx.md",
     "index.md~",
     "about_me.md",
     "_technology_and_applied_science/_tech-app.md",
@@ -286,14 +272,9 @@
     "_geography_and_places/_geo-pla.md",
     "_general_reference/_gen-refer.md",
     "_culture_and_the_arts/_cult-art.md",
-    "work-on.md",
     "_culture_and_the_arts/cult-art.md",
     "tech-app.md~",
     "tech-app.md",
-    "_religion_and_belief_systems/rel-bel.md",
-    "_philosophy_and_thinking/phi-thi.md",
-    "_people_and_society/peo-soc.md",
-    "_natural_and_physical_sciences/nat-sci.md",
     "rel-bel.md~",
     "phi-thi.md~",
     "peo-soc.md~",
