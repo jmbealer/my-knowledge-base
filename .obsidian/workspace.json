@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work-on.md",
+                "file": "journals/2024-09-19.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "work-on.md",
+                "file": "journals/2024-09-19.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work-on.md",
+                "file": "journals/2024-09-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work-on.md",
+                "file": "journals/2024-09-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "work-on.md"
+                "file": "journals/2024-09-19.md"
               }
             }
           },
@@ -225,6 +225,8 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "work-on.md",
+    "journals/2024-09-19.md",
     "_general_reference/education_1/wgu/20230711122535-wgu_d426.org",
     "_general_reference/education_1/wgu/20230711122522-wgu_d199.org",
     "_general_reference/education_1/wgu/20230711122508-wgu_d315.org",
@@ -235,7 +237,6 @@
     "_general_reference/education_1/wgu/20230402154116-wgu_c779.org",
     "_general_reference/education_1/wgu/20230117115934-wgu_c464.org",
     "_general_reference/education_1/wgu/20230103163009-wgu-c173.org",
-    "_general_reference/education_1/wgu/20221030132824-wgu-degree_plan.org",
     "_general_reference/education_1/tesu-degree.md",
     "_general_reference/education_1/sci-math-course.md",
     "_general_reference/education_1/my-curriculum.md",
@@ -260,7 +261,6 @@
     "_general_reference/templates/templates.md",
     "_general_reference/templates/add.md",
     "_culture_and_the_arts/languages/WIP.md",
-    "_culture_and_the_arts/languages/Suffix.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
