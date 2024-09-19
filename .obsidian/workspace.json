@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-09-19.md",
+                "file": "indexes/home-idx.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "journals/2024-09-19.md",
+                "file": "indexes/home-idx.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2024-09-19.md",
+                "file": "indexes/home-idx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2024-09-19.md",
+                "file": "indexes/home-idx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2024-09-19.md"
+                "file": "indexes/home-idx.md"
               }
             }
           },
@@ -225,18 +225,22 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "journals/2024-09-19.md~",
     "work-on.md",
+    "resume.md",
+    "README.md",
+    "about_me.md",
+    "journals/2024-09-18.md",
     "journals/2024-09-19.md",
+    "https:/cheatography.com/lcheong/cheat-sheets/pseudocode",
+    "https:/cheatography.com/lcheong/cheat-sheets",
+    "https:/cheatography.com/lcheong",
+    "https:/cheatography.com",
+    "https:",
     "_general_reference/education_1/wgu/20230711122535-wgu_d426.org",
     "_general_reference/education_1/wgu/20230711122522-wgu_d199.org",
     "_general_reference/education_1/wgu/20230711122508-wgu_d315.org",
     "_general_reference/education_1/wgu/20230711121127-mywgu.org",
-    "_general_reference/education_1/wgu/20230711120928-wgu_c963.org",
-    "_general_reference/education_1/wgu/20230507130844-wgu_c455.org",
-    "_general_reference/education_1/wgu/20230507115351-wgu-degree_planning.org",
-    "_general_reference/education_1/wgu/20230402154116-wgu_c779.org",
-    "_general_reference/education_1/wgu/20230117115934-wgu_c464.org",
-    "_general_reference/education_1/wgu/20230103163009-wgu-c173.org",
     "_general_reference/education_1/tesu-degree.md",
     "_general_reference/education_1/sci-math-course.md",
     "_general_reference/education_1/my-curriculum.md",
@@ -256,11 +260,6 @@
     "_general_reference/education_1/Learn-Projects.md",
     "_general_reference/education_1/Flash-Cards.md",
     "_general_reference/education_1/Anki.md",
-    "_general_reference/education_1/020-Academic.md",
-    "_general_reference/education_1/00-academics-index.md",
-    "_general_reference/templates/templates.md",
-    "_general_reference/templates/add.md",
-    "_culture_and_the_arts/languages/WIP.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
