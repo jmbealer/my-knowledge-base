@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-20.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-20.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "indexes/home-idx.md",
+                "file": "journals/2024-09-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "indexes/home-idx.md"
+                "file": "journals/2024-09-20.md"
               }
             }
           },
@@ -225,13 +225,21 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "journals/2024-08-24.md",
+    "journals/2024-08-03.md",
+    "journals/2024-07-28.md",
+    "journals/2024-08-27.md",
+    "journals/2024-09-15.md",
+    "journals/2024-09-17.md",
+    "journals/2024-09-18.md",
+    "journals/2024-09-19.md",
+    "journals/2024-09-20.md",
+    "indexes/home-idx.md",
     "journals/2024-09-19.md~",
     "work-on.md",
     "resume.md",
     "README.md",
     "about_me.md",
-    "journals/2024-09-18.md",
-    "journals/2024-09-19.md",
     "https:/cheatography.com/lcheong/cheat-sheets/pseudocode",
     "https:/cheatography.com/lcheong/cheat-sheets",
     "https:/cheatography.com/lcheong",
@@ -253,13 +261,6 @@
     "_general_reference/education_1/Ultra-Learning.md",
     "_general_reference/education_1/Test-Strategies.md",
     "_general_reference/education_1/Study-Skills.md",
-    "_general_reference/education_1/Self-Learning.md",
-    "_general_reference/education_1/Revised-Blooms-Taxonomy-Categories.md",
-    "_general_reference/education_1/Notes-Inbox.md",
-    "_general_reference/education_1/Learning.md",
-    "_general_reference/education_1/Learn-Projects.md",
-    "_general_reference/education_1/Flash-Cards.md",
-    "_general_reference/education_1/Anki.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
