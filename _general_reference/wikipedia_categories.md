@@ -31,45 +31,100 @@ Reference works:
 - Trivia books
 - Web sites
 
-Further research tools and topics
-Academic disciplines Archives Books Clients Curricula Databases
-    online Distance education Grammar Government agencies Indices Information Knowledge Letters Libraries
-    digital Library cataloging and classification News agencies Periodic table Prefixes Reading Research Search engines Suffixes Universities and colleges Writing
+Further research tools and topics:
+
+- Academic disciplines
+- Archives
+- Books
+- Clients
+- Curricula
+- Databases online
+- Distance education
+- Grammar
+- Government agencies
+- Indices
+- Information
+- Knowledge
+- Letters
+- Libraries digital
+- Library cataloging and classification
+- News agencies
+- Periodic table
+- Prefixes
+- Reading
+- Research
+- Search engines
+- Suffixes
+- Universities and colleges
+- Writing
 
 ## Culture and the Arts
 
-(see in all page types)
-edit · watch
+Main categories: Culture and The arts
 
-    Main categories: Culture and The arts
+Culture and Humanities:
 
-    Culture and Humanities Classics Critical theory Cultural anthropology Clothing Folklore Food and drink culture Food and drink Language Literature Museology Mythology Philosophy Popular culture Science and culture Traditions
+- Classics
+- Critical theory
+- Cultural anthropology
+- Clothing
+- Folklore
+- Food and drink culture
+- Food and drink
+- Language
+- Literature
+- Museology
+- Mythology
+- Philosophy
+- Popular culture
+- Science and culture
+- Traditions
 
-    The arts and Entertainment Arts and crafts Celebrity Censorship in the arts Festivals Humor Literature Museums Parties Poetry
+  The arts and Entertainment:
+  - Arts and crafts
+  - Celebrity
+  - Censorship in the arts
+  - Festivals
+  - Humor
+  - Literature
+  - Museums
+  - Parties
+  - Poetry
 
-    Performing arts Circuses Dance Film Music Opera Storytelling Theatre
+    Performing arts:
+    - Circuses
+    - Dance
+    - Film
+    - Music
+    - Opera
+    - Storytelling
+    - Theatre
 
-    Visual arts Architecture Comics Crafts Design Drawing Film
-        Animation New media art Painting Photography Sculpture
+    Visual arts:
+    - Architecture
+    - Comics
+    - Crafts
+    - Design
+    - Drawing
+    - Film (Animation)
+    - New media art
+    - Painting
+    - Photography
+    - Sculpture
 
-    Games and Toys Board games Card games Dolls Puppetry Puzzles Role-playing games Video games
+  Games and Toys Board games Card games Dolls Puppetry Puzzles Role-playing games Video games
 
-    Sports and Recreation Air sports American football Association football Auto racing Baseball Basketball Boating Boxing Canoeing Cricket Cycling Exercise Fishing Golf Gymnastics Hobbies Horse racing Ice hockey Lacrosse Olympic Games Rugby league Rugby union Sailing Skiing Swimming Tennis Track and field Walking trails Water sports Whitewater sports
+  Sports and Recreation Air sports American football Association football Auto racing Baseball Basketball Boating Boxing Canoeing Cricket Cycling Exercise Fishing Golf Gymnastics Hobbies Horse racing Ice hockey Lacrosse Olympic Games Rugby league Rugby union Sailing Skiing Swimming Tennis Track and field Walking trails Water sports Whitewater sports
 
-    Mass media Broadcasting Film Internet Magazines Newspapers Publications Publishing Television Radio
+  Mass media Broadcasting Film Internet Magazines Newspapers Publications Publishing Television Radio
 
 ## Geography and Places
 
-(see in all page types)
-edit · watch
 Main categories: Geography and Places
 
     Earth World Bodies of water Cities Communities Continents Countries Deserts Lakes Landforms Mountains Navigation Oceans Populated places Protected areas Regions Rivers Subterranea Territories Towns Villages
 
 ## Health and Fitness
-
-(see in all page types)
-edit · watch
 
     Main categories: Health, Self-care, and Health care occupations
 
@@ -99,9 +154,6 @@ edit · watch
 
 ## History and Events
 
-(see in all page types)
-edit · watch
-
     Main categories: History and Events
 
     By period By topic
@@ -117,17 +169,12 @@ edit · watch
 
 ## Human Activities
 
-(see in all page types)
-edit · watch
-
     Human activities Activism Agriculture Arts Aviation Commemoration Communication Crime Design Education Entertainment Fictional activities Fishing Food and drink preparation Government Hunting Industry Leisure activities Navigation Observation Performing arts Physical exercise Planning Politics Recreation Religion Human spaceflight Sports Trade Transport Travel Underwater human activities Underwater diving War Work
 
     Impact of human activity Human impact on the environment (Climate change, Nature conservation, Deforestation, Environmentalism, Global warming, Pollution) Human overpopulation Urbanization
 
 ## Mathematics and Logic
 
-(see in all page types)
-edit · watch
 Formal sciences
 
     Mathematics Mathematics education Equations Heuristics Measurement Numbers Proofs Theorems
@@ -142,8 +189,6 @@ Formal sciences
 
 ## Natural and Physical Sciences
 
-(see in all page types)
-edit · watch
 Main categories: Science, Natural sciences and Nature
 
     Biology Botany Ecology Health sciences Medicine Neuroscience Zoology See also the Health and fitness section above
@@ -157,9 +202,6 @@ Main categories: Science, Natural sciences and Nature
     Scientific method Scientists
 
 ## People and Self
-
-(see in all page types)
-edit · watch
 
     Main categories: People, Personal life, Self and Surnames
 
@@ -177,9 +219,6 @@ edit · watch
 
 ## Philosophy and Thinking
 
-(see in all page types)
-edit · watch
-
     Main categories: Philosophy and Thought
 
     Philosophy Branches Schools and traditions Concepts Theories Arguments Philosophers Literature History By period By region Aesthetics Epistemology Ethics Logic Metaphysics Social philosophy
@@ -190,8 +229,6 @@ edit · watch
 
 ## Religion and Belief Systems
 
-(see in all page types)
-edit · watch
 Main categories: Religion and Belief
 
     Allah Bible Buddhas Deities Demons Exorcism God Jesus Mythology Occult Prayer Prophecy Quran Religious ethics Religious law Ritual Spirituality Theology
@@ -206,9 +243,6 @@ Main categories: Religion and Belief
 
 ## Society and Social Sciences
 
-(see in all page types)
-edit · watch
-
     Main categories: Society and Social sciences
 
     Society Activism Business Communication Crime Education Ethnic groups Family Finance Globalization Government Health Home Industries Infrastructure Law Mass media Military Money Organizations Peace Politics Real estate Rights War
@@ -216,9 +250,6 @@ edit · watch
     Social sciences Anthropology Archaeology Cultural studies Demographics Economics Information science International relations Linguistics Media studies Political science Psychology Public administration Sexology Social scientists Sociology Social work Systems theory
 
 ## Technology and Applied Sciences
-
-(see in all page types)
-edit · watch
 
     Main categories: Technology and Applied sciences
 
