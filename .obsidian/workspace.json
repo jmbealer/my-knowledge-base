@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-09-21.md",
+                "file": "journals/2024-09-22.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "journals/2024-09-21.md",
+                "file": "journals/2024-09-22.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2024-09-21.md",
+                "file": "journals/2024-09-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2024-09-21.md",
+                "file": "journals/2024-09-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2024-09-21.md"
+                "file": "journals/2024-09-22.md"
               }
             }
           },
@@ -225,8 +225,9 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
-    "journals/2024-09-20.md",
     "journals/2024-09-21.md",
+    "journals/2024-09-22.md",
+    "journals/2024-09-20.md",
     "journals/2024-09-20.md~",
     "journals/2024-08-24.md",
     "journals/2024-08-03.md",
@@ -260,7 +261,6 @@
     "_general_reference/education_1/book-list.md",
     "_general_reference/education_1/Unsorted.md",
     "_general_reference/education_1/Ultra-Learning.md",
-    "_general_reference/education_1/Test-Strategies.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
