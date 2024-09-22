@@ -112,11 +112,58 @@ Culture and Humanities:
     - Photography
     - Sculpture
 
-  Games and Toys Board games Card games Dolls Puppetry Puzzles Role-playing games Video games
+  Games and Toys:
+  - Board games
+  - Card games
+  - Dolls
+  - Puppetry
+  - Puzzles
+  - Role-playing games
+  - Video games
 
-  Sports and Recreation Air sports American football Association football Auto racing Baseball Basketball Boating Boxing Canoeing Cricket Cycling Exercise Fishing Golf Gymnastics Hobbies Horse racing Ice hockey Lacrosse Olympic Games Rugby league Rugby union Sailing Skiing Swimming Tennis Track and field Walking trails Water sports Whitewater sports
+  Sports and Recreation:
+  - Air sports
+  - American football
+  - Association football
+  - Auto racing
+  - Baseball
+  - Basketball
+  - Boating
+  - Boxing
+  - Canoeing
+  - Cricket
+  - Cycling
+  - Exercise
+  - Fishing
+  - Golf
+  - Gymnastics
+  - Hobbies
+  - Horse racing
+  - Ice hockey
+  - Lacrosse
+  - Olympic
+  - Games
+  - Rugby league
+  - Rugby union
+  - Sailing
+  - Skiing
+  - Swimming
+  - Tennis
+  - Track and field
+  - Walking trails
+  - Water sports
+  - Whitewater sports
 
-  Mass media Broadcasting Film Internet Magazines Newspapers Publications Publishing Television Radio
+  Mass media:
+  - Broadcasting
+  - Film
+  - Internet
+  - Magazines
+  - Newspapers
+  - Publications
+  - Publishing
+  - Television
+  - Radio
 
 ## Geography and Places
 
