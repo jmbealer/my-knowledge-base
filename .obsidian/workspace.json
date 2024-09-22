@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-09-22.md",
+                "file": "_general_reference/wikipedia_categories.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "journals/2024-09-22.md",
+                "file": "_general_reference/wikipedia_categories.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2024-09-22.md",
+                "file": "_general_reference/wikipedia_categories.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2024-09-22.md",
+                "file": "_general_reference/wikipedia_categories.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2024-09-22.md"
+                "file": "_general_reference/wikipedia_categories.md"
               }
             }
           },
@@ -225,9 +225,12 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "_general_reference/wikipedia_categories.md~",
+    "_general_reference/20230307073840-wikipedia_classifications.md",
+    "_general_reference/wikipedia_categories.md",
+    "journals/2024-09-22.md",
     "journals/2024-09-22.md~",
     "journals/2024-09-21.md",
-    "journals/2024-09-22.md",
     "journals/2024-09-20.md",
     "journals/2024-09-20.md~",
     "journals/2024-08-24.md",
@@ -250,8 +253,6 @@
     "https:/cheatography.com",
     "https:",
     "_general_reference/education_1/wgu/20230711122535-wgu_d426.org",
-    "_general_reference/education_1/wgu/20230711122522-wgu_d199.org",
-    "_general_reference/education_1/wgu/20230711122508-wgu_d315.org",
     "_general_reference/education_1/tesu-degree.md",
     "_general_reference/education_1/sci-math-course.md",
     "_general_reference/education_1/my-curriculum.md",
@@ -259,8 +260,6 @@
     "_general_reference/education_1/engineering-course.md",
     "_general_reference/education_1/degree.md",
     "_general_reference/education_1/credits.md",
-    "_general_reference/education_1/book-list.md",
-    "_general_reference/education_1/Unsorted.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
