@@ -12,7 +12,6 @@ tags:
 
 A place to store my knowledge for future shenanigans.
 
-<% tp.date.tomorrow() %>
 
 ## TODO
 
