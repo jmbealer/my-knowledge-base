@@ -62,9 +62,14 @@ What is Linux?
 - What is Unix
 - What is the operating system
 - what is a kernel
+- Is Linux a operating system?
+  No Linux is a kernel.
 
 What is the Linux Community?
 What is Open Source?
+
+What is a distribution?
+What is a distribution family?
 
 #### 1.1 Linux Evolution and Popular Operating Systems Weight: 2
 
