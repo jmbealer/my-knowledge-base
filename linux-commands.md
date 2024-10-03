@@ -41,6 +41,14 @@ help
 *locate* - find files by name, quickly
 *clear* - clear the terminal screen
 
+*who* - show who is logged on
+*whoami* - print effective user name
+*date* - print or set the system date and time
+*cal* - display a calendar
+*exit* - cause the shell to exit
+*time* - time a simple command or give resource usage
+*sudo* - execute a command as another user
+
 ## other
 
 .deb - debian package
@@ -51,3 +59,8 @@ help
 apt - package manager for debian based systems
 yum - package manager for redhat based systems
 pacman - package manager for arch based systems
+
+shell command
+starts with command name - what to do
+followed by options - how to do it
+followed by arguments - what to do it to
