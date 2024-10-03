@@ -56,8 +56,11 @@ Who, What, Where, When, Why, Which, Whom, Whose
 ### Topic 1: The Linux Community and a Career in Open Source 1-4
 
 What is Linux?
+Is a family of open-source Unix-like operating systems based on the Linux kernel.
 
-- Is an open-source Unix-like operating system
+When was Linux kernel released?
+the
+
 - Is the kernel of the operating system
 - What is Unix
 - What is the operating system
