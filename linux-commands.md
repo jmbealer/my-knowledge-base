@@ -10,11 +10,19 @@ tags:
 # Linux-commands
 
 ## help
+
 commands that give help about a given command
 
-man
+man displays a detailed manual page for of the cli command
+
+NAME: man - an inteface to the system reference manuals
+DESCRIPTION: man - is the system's manual pager
+
 help
 apropos
 whereis
 whatis
 which
+info
+
+(command) -h | --help | help : to display a brief summary of the cli command
