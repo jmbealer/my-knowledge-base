@@ -2,7 +2,7 @@
 title: LPI Linux Essentials
 author: Justin Bealer
 date_created: 2023-11-16, 04-00-30
-date_modified: 2024-09-17, 09-29-59
+date_modified: 2024-10-03, 04-26-11
 reference: 
 description: my notes on the LPI Linux Essentials exam
 aliases: 

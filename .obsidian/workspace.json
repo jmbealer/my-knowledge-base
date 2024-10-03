@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_technology_and_applied_science/linux/lpi-linux-essentials.md",
+                "file": "linux-commands.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_technology_and_applied_science/linux/lpi-linux-essentials.md",
+                "file": "linux-commands.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_technology_and_applied_science/linux/lpi-linux-essentials.md",
+                "file": "linux-commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_technology_and_applied_science/linux/lpi-linux-essentials.md",
+                "file": "linux-commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_technology_and_applied_science/linux/lpi-linux-essentials.md"
+                "file": "linux-commands.md"
               }
             }
           },
@@ -225,6 +225,11 @@
   },
   "active": "8725f72091192d0b",
   "lastOpenFiles": [
+    "linux-commands.md~",
+    "current-classes.md",
+    "linux-commands.md",
+    "journals/2024-10-03.md",
+    "_technology_and_applied_science/linux/lpi-linux-essentials.md",
     "_technology_and_applied_science/linux/lpi-linux-essentials.md~",
     "journals/2024-10-02.md",
     "_technology_and_applied_science/linux/linux-essentials.md",
@@ -256,10 +261,6 @@
     "https:/cheatography.com/lcheong",
     "https:/cheatography.com",
     "https:",
-    "_general_reference/education_1/tesu-degree.md",
-    "_general_reference/education_1/sci-math-course.md",
-    "_general_reference/education_1/my-curriculum.md",
-    "_general_reference/education_1/mit-degree.md",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",

@@ -1,6 +1,15 @@
+---
+author: Justin Bealer
+date_created: 2024-09-30, 01-52-53
+date_modified: 2024-10-03, 04-27-39
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # My Current Classes
 
-## On the board
+## On the Board
 
 D281 Linux Foundations - LPI Linux Essentials
 C484 Organizational Behavior and Leadership
