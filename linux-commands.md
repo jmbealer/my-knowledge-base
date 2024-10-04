@@ -60,14 +60,20 @@ help
 *diff* - compare files line by line
 *wc* - print newline, word, and byte counts for each file
 
-*>* – redirect standard output
-*>>* – append standard output
-*<* – redirect standard input
-*|* – pipe output to another command
-*tee* – read from standard input and write to standard output
-*tar* – an archiving utility
-*gzip* – compress or expand files
-*gunzip* – decompress(expand) files
+*>* - redirect standard output
+*>>* - append standard output
+*<* - redirect standard input
+*|* - pipe output to another command
+*tee* - read from standard input and write to standard output
+*tar* - an archiving utility
+*gzip* - compress or expand files
+*gunzip* - decompress(expand) files
+
+*zip* - package and compress (archive) files
+*unzip* - list, test and extract compressed files from ZIP archive
+*scp* - OpenSSH secure file copy
+*rsync* - a fast, versatile, remote (and local) file-copying tool
+*sftp* - OpenSSH secure file transfer
 
 ## Other
 
