@@ -75,6 +75,17 @@ help
 *rsync* - a fast, versatile, remote (and local) file-copying tool
 *sftp* - OpenSSH secure file transfer
 
+*wget* - the non-interactive network downloader
+*curl* - transfer a URL
+*chmod* - change file mode bits
+*chown* - change file owner and group
+*umask* - get or set the file mode creation mask
+*ps* - report a snapshot of the current processes
+*top* - display linux processes
+*htop* - interactive process viewer
+*kill* - terminate a process
+*pkill* - look up, signal, or wait for processes based on name and other attributes
+
 ## Other
 
 .deb - debian package
