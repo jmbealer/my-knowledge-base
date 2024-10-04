@@ -1,7 +1,7 @@
 ---
 author: Justin Bealer
 date_created: 2024-10-03, 04-27-27
-date_modified: 2024-10-03, 04-27-38
+date_modified: 2024-10-04, 03-21-22
 reference: 
 description: 
 aliases: 
@@ -9,7 +9,7 @@ tags:
 ---
 # Linux-commands
 
-## help
+## Help
 
 commands that give help about a given command
 look at tldr
@@ -60,7 +60,16 @@ help
 *diff* - compare files line by line
 *wc* - print newline, word, and byte counts for each file
 
-## other
+*>* – redirect standard output
+*>>* – append standard output
+*<* – redirect standard input
+*|* – pipe output to another command
+*tee* – read from standard input and write to standard output
+*tar* – an archiving utility
+*gzip* – compress or expand files
+*gunzip* – decompress(expand) files
+
+## Other
 
 .deb - debian package
 .rpm - redhat package manager
