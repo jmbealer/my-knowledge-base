@@ -129,7 +129,7 @@ help
 *systemctl* - control the systemd system and service manager
 
 *mount* - mount a filesystem
-*umount* - umount file systems
+*umount* - unmount filesystems
 *xargs* - build and execute command lines from standard input
 *alias* - define or display aliases
 *jobs* - display status of jobs in the current session
@@ -137,14 +137,9 @@ help
 *killall* - kill processes by name
 *history* - manipulate the history list
 *ssh* - OpenSSH remote login client
-
 *tcpdump* - dump traffic on a network
-
 *watch* - execute a program periodically, showing output fullscreen
 *tmux* - terminal multiplexer
-
-*nc* - Open TCP or UDP connections for testing and data transfer.
-
 *nmap* - network exploration tool and security/port scanner
 *strace* - trace system calls and signals
 
@@ -154,6 +149,7 @@ help
 *snap* - snappy application package manager
 *service* - run a system v init script
 *screen* - Manage multiple terminal sessions from a single window.
+*nc* - Open TCP or UDP connections for testing and data transfer.
 
 .deb - debian package
 .rpm - redhat package manager
