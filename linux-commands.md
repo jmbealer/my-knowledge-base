@@ -14,7 +14,7 @@ tags:
 commands that give help about a given command
 look at tldr
 
-*man* - an inteface to the system reference manuals
+*man* - an interface to the system reference manuals
 *man* ls - display the manual page for the item (program) ls.
 
 *apropos* - search the manual page names and descriptions
@@ -128,29 +128,32 @@ help
 *reboot* - power off, reboot, or halt the machine
 *systemctl* - control the systemd system and service manager
 
-*mount* - Mount or “attach” drives to the system.
-*umount* - Umount or “remove” drives from the system.
-*xargs* - Builds and executes commands provided through standard input.
-*alias* - Create shortcuts for long or complex commands.
-*jobs* - List programs currently running jobs in the background.
-*bg* - Resume a stopped or paused background process.
-*killall* - Terminate processes by program name rather than PID.
-*history* - Display previously used commands within the current terminal session.
-*man* - Access help manuals for commands right within the terminal.
-*screen* - Manage multiple terminal sessions from a single window.
-*ssh* - Establish secure encrypted connections to remote servers.
-*tcpdump* - Capture network traffic based on specific criteria.
-*watch* - Repeat a command at intervals and highlight output differences.
-*tmux* - Terminal multiplexer for persistent sessions and splitting.
+*mount* - mount a filesystem
+*umount* - umount file systems
+*xargs* - build and execute command lines from standard input
+*alias* - define or display aliases
+*jobs* - display status of jobs in the current session
+*bg* - run jobs in the background
+*killall* - kill processes by name
+*history* - manipulate the history list
+*ssh* - OpenSSH remote login client
+
+*tcpdump* - dump traffic on a network
+
+*watch* - execute a program periodically, showing output fullscreen
+*tmux* - terminal multiplexer
+
 *nc* - Open TCP or UDP connections for testing and data transfer.
-*nmap* - Host discovery, port scanning, and OS fingerprinting.
-*strace* - Debug processes by tracing operating system signals and calls.
+
+*nmap* - network exploration tool and security/port scanner
+*strace* - trace system calls and signals
 
 ## Other
 
 *appimage* - appimage application package manager
 *snap* - snappy application package manager
 *service* - run a system v init script
+*screen* - Manage multiple terminal sessions from a single window.
 
 .deb - debian package
 .rpm - redhat package manager
