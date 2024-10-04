@@ -102,22 +102,28 @@ help
 *ifconfig* - configure a network interfaces
 *netstat* - print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
 *ss* - another utility to investigate sockets
-*traceroute* - print the route packets trace to notwork host
+*traceroute* - print the route packets trace to network host
 *dig* - DNS lookup utility
 *nslookup* - query Internet name servers interactively
 *iptables* - administration tool for IPv4/IPv6 packet filtering and NAT
 *ip* - linux IPv4 protocol implementation
 
-*apt* - debian/ubuntu package manager
-*pacman* - arch linux package manager
-*dnf* - fedora package manager
-*yum* - red hat package manager
-*zypper* - opensuse package manager
-*flatpak* - flatpak application package manager
+*apt* - advanced package tool (Debian/Ubuntu package manager)
+
+*pacman* - Arch Linux package manager utility
+
+*dnf* - Fedora package manager
+*yum* - Red Hat package manager
+*zypper* - OpenSUSE package manager
+
+*flatpak* - bulid, install and run applications and runtimes
+
 *appimage* - appimage application package manager
 *snap* - snappy application package manager
+
 *uname* - print system information
 *hostname* - show or set the system’s host name
+
 *uptime* - how long the system has been running
 *whoami* - print active user id
 *id* - print real and effective user and group ids
