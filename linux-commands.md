@@ -113,24 +113,17 @@ help
 *dnf* - package manager utility (Fedora, CentOS, RHEL: replaces yum)
 *yum* - package manager utility (Fedora, CentOS, RHEL: older versions)
 *zypper* - package manager utility (openSUSE, SUSE)
-
-*flatpak* - bulid, install and run applications and runtimes
-
-*appimage* - appimage application package manager
-*snap* - snappy application package manager
-
+*flatpak* - build, install and run  flatpak applications and runtimes
 *uname* - print system information
 *hostname* - show or set the system’s host name
 
-*uptime* - how long the system has been running
-*whoami* - print active user id
-*id* - print real and effective user and group ids
-*lscpu* - display cpu architecture information
+*uptime* - tell how long the system has been running
+*id* - print real and effective user and group IDs
+*lscpu* - display information about the CPU architecture
 *lsblk* - list block devices
 *lsmod* - show the status of modules in the linux kernel
 *dmesg* - print or control the kernel ring buffer
-*sudo* - execute a command as another user
-*su* - change user id or become superuser
+*su* - run a command with substitute user and group ID
 *shutdown* - shutdown or restart linux
 
 *reboot* - reboot or restart system
@@ -138,6 +131,9 @@ help
 *service* - run a system v init script
 
 ## Other
+
+*appimage* - appimage application package manager
+*snap* - snappy application package manager
 
 .deb - debian package
 .rpm - redhat package manager
