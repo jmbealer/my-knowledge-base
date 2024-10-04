@@ -49,6 +49,17 @@ help
 *time* - time a simple command or give resource usage
 *sudo* - execute a command as another user
 
+*cp* - copy files and directories
+*find* - search for files in a directory hierarchy
+*du* - estimate file space usage
+*grep* - print lines that match a patterns
+*awk* - pattern scanning and processing language
+*sed* - stream editor for filtering and transforming text
+*sort* - sort lines of text files
+*uniq* - report or omit repeated lines
+*diff* - compare files line by line
+*wc* - print newline, word, and byte counts for each file
+
 ## other
 
 .deb - debian package
