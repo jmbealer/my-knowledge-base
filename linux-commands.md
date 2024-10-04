@@ -108,13 +108,11 @@ help
 *iptables* - administration tool for IPv4/IPv6 packet filtering and NAT
 *ip* - linux IPv4 protocol implementation
 
-*apt* - advanced package tool (Debian/Ubuntu package manager)
-
-*pacman* - Arch Linux package manager utility
-
-*dnf* - Fedora package manager
-*yum* - Red Hat package manager
-*zypper* - OpenSUSE package manager
+*apt* - package manager utility (Debian/Ubuntu)
+*pacman* - package manager utility (Arch Linux)
+*dnf* - package manager utility (Fedora, CentOS, RHEL: replaces yum)
+*yum* - package manager utility (Fedora, CentOS, RHEL: older versions)
+*zypper* - package manager utility (openSUSE, SUSE)
 
 *flatpak* - bulid, install and run applications and runtimes
 
