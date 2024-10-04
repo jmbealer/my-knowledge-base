@@ -86,6 +86,55 @@ help
 *kill* - terminate a process
 *pkill* - look up, signal, or wait for processes based on name and other attributes
 
+
+*nohup* - run a command immune to hangups, with output to a non-tty
+*vmstat* - report virtual memory statistics
+*iostat* - report cpu and i/o statistics for devices and partitions
+*free* - display amount of free and used memory in the system
+*df* - report file system space usage
+*sar* - collect, report, or save system activity information
+*useradd* - create a new user or update default new user information
+*usermod* - modify a user account
+*userdel* - delete a user account and related files
+*groupadd* - create a new group
+
+
+*passwd* - update user’s authentication tokens
+*ping* - send icmp echo_request to network hosts
+*ifconfig* - configure network interfaces
+*netstat* - network statistics
+*ss* - socket statistics
+*traceroute* - trace route to host
+*dig* - dns lookup
+*nslookup* - query internet name servers interactively
+*iptables* - ipv4 packet filtering and nat
+*ip* - manage network devices and routing
+
+*apt* - debian/ubuntu package manager
+*pacman* - arch linux package manager
+*dnf* - fedora package manager
+*yum* - red hat package manager
+*zypper* - opensuse package manager
+*flatpak* - flatpak application package manager
+*appimage* - appimage application package manager
+*snap* - snappy application package manager
+*uname* - print system information
+*hostname* - show or set the system’s host name
+*uptime* - how long the system has been running
+*whoami* - print active user id
+*id* - print real and effective user and group ids
+*lscpu* - display cpu architecture information
+*lsblk* - list block devices
+*lsmod* - show the status of modules in the linux kernel
+*dmesg* - print or control the kernel ring buffer
+*sudo* - execute a command as another user
+*su* - change user id or become superuser
+*shutdown* - shutdown or restart linux
+
+*reboot* - reboot or restart system
+*systemctl* - control the systemd system and service manager
+*service* - run a system v init script
+
 ## Other
 
 .deb - debian package
