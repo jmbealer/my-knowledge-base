@@ -86,7 +86,6 @@ help
 *kill* - terminate a process
 *pkill* - look up, signal, or wait for processes based on name and other attributes
 
-
 *nohup* - run a command immune to hangups, with output to a non-tty
 *vmstat* - report virtual memory statistics
 *iostat* - report cpu and i/o statistics for devices and partitions
@@ -98,17 +97,16 @@ help
 *userdel* - delete a user account and related files
 *groupadd* - create a new group
 
-
-*passwd* - update user’s authentication tokens
-*ping* - send icmp echo_request to network hosts
-*ifconfig* - configure network interfaces
-*netstat* - network statistics
-*ss* - socket statistics
-*traceroute* - trace route to host
-*dig* - dns lookup
-*nslookup* - query internet name servers interactively
-*iptables* - ipv4 packet filtering and nat
-*ip* - manage network devices and routing
+*passwd* - change user password
+*ping* - send ICMP ECHO_REQUEST to network hosts
+*ifconfig* - configure a network interfaces
+*netstat* - print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+*ss* - another utility to investigate sockets
+*traceroute* - print the route packets trace to notwork host
+*dig* - DNS lookup utility
+*nslookup* - query Internet name servers interactively
+*iptables* - administration tool for IPv4/IPv6 packet filtering and NAT
+*ip* - linux IPv4 protocol implementation
 
 *apt* - debian/ubuntu package manager
 *pacman* - arch linux package manager
