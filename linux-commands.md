@@ -124,16 +124,33 @@ help
 *lsmod* - show the status of modules in the linux kernel
 *dmesg* - print or control the kernel ring buffer
 *su* - run a command with substitute user and group ID
-*shutdown* - shutdown or restart linux
-
-*reboot* - reboot or restart system
+*shutdown* - halt, power off or reboot the machine
+*reboot* - power off, reboot, or halt the machine
 *systemctl* - control the systemd system and service manager
-*service* - run a system v init script
+
+*mount* - Mount or “attach” drives to the system.
+*umount* - Umount or “remove” drives from the system.
+*xargs* - Builds and executes commands provided through standard input.
+*alias* - Create shortcuts for long or complex commands.
+*jobs* - List programs currently running jobs in the background.
+*bg* - Resume a stopped or paused background process.
+*killall* - Terminate processes by program name rather than PID.
+*history* - Display previously used commands within the current terminal session.
+*man* - Access help manuals for commands right within the terminal.
+*screen* - Manage multiple terminal sessions from a single window.
+*ssh* - Establish secure encrypted connections to remote servers.
+*tcpdump* - Capture network traffic based on specific criteria.
+*watch* - Repeat a command at intervals and highlight output differences.
+*tmux* - Terminal multiplexer for persistent sessions and splitting.
+*nc* - Open TCP or UDP connections for testing and data transfer.
+*nmap* - Host discovery, port scanning, and OS fingerprinting.
+*strace* - Debug processes by tracing operating system signals and calls.
 
 ## Other
 
 *appimage* - appimage application package manager
 *snap* - snappy application package manager
+*service* - run a system v init script
 
 .deb - debian package
 .rpm - redhat package manager
