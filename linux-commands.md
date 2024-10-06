@@ -164,3 +164,5 @@ shell command
 starts with command name - what to do
 followed by options - how to do it
 followed by arguments - what to do it to
+
+kernel run one process /sbin/init
