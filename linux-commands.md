@@ -135,7 +135,10 @@ help
   show the kernel release(verison): uname -r
   show the (network) nodename: uname -n
   show the hardware platform: uname -i
+
   show the names of the kernel programs files: ls /boot/vmlinuz-*
+  list the names of the matching files: ls /etc/*release
+  show the name and version of this system: cat /etc/system-release
 *hostname* - show or set the system’s host name
 
 *uptime* - tell how long the system has been running
@@ -171,6 +174,7 @@ less
 head
 tail
 dd
+file
 
 ## Other
 
