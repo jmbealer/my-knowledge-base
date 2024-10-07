@@ -78,6 +78,27 @@ help
 *wget* - the non-interactive network downloader
 *curl* - transfer a URL
 *chmod* - change file mode bits
+  chmod [<set><action><permissions>]... file
+  set
+    u - user: the user who owns the file.
+    g - group: the group who owns the file.
+    o - others: anyone other than the user owner or member of the group owner.
+    a - all: refer to the user, group and others.
+  action
+    + - add the permission, if necessary.
+    = - specify the exact permission.
+    - - remove the permission, if necessary.
+  permissions
+    r - read: the file can be read.
+    w - write: the file can be written to.
+    x - execute: the file can be executed.
+    X - execute: the file can be executed if it is a directory or if any execute permission is already set.
+    s - setuid/setgid: the file is executed with the permissions of the owner/group.
+    t - sticky: the file can only be deleted by the owner.
+    u - user: the user who owns the file.
+    g - group: the group who owns the file.
+    o - others: others who are not the user or in the group.
+    a - all: all users.
 *chown* - change file owner and group
 *umask* - get or set the file mode creation mask
 *ps* - report a snapshot of the current processes
@@ -202,3 +223,8 @@ what is the permissions order? user-group-others
 what is the permission symbol for read? r
 what is the permission symbol for write? w
 what is the permission symbol for execute? x
+read (r) allows for file contents to be read or copied
+write (w) allows for file contents to be modified or overwritten.  allows for
+files to be added or removed from a directory.
+execute (x) allows for a file to be run as a process, although script file
+require read permission as well
