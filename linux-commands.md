@@ -416,3 +416,36 @@ using a browser, privacy concerns, configuration options, searching the web and 
 yum
     A front-end tool for RPM package management.
     Section 3.4.2
+
+### NDG Linux Essentials - Chapter 4 - Open Source Software and Licensing
+
+BSD
+    An open source license which states that you may redistribute the source software and binaries as long as copyright notices are maintained and there is no implication that the original creator endorses your version. Short for Berkley Software Distribution.
+    Section 4.2.2
+Creative Commons
+    An organization created to address the intentions behind FOSS licenses for non-software entities.
+    Section 4.2.3
+FLOSS
+    Free/Libre/Open Source Software (FLOSS) is a collective term for the open source community which uses the term libre to define the difference between free from restrictions on software usage (libre) and free from cost (free).
+    Section 4.2.2
+FOSS
+    An open source body called Free Open Source Software (FOSS) which consists of both Free Software and Open Source as a collective in order to downplay the differences between the two organizations.
+    Section 4.2.2
+Free Software
+    The freedom to share, study and modify the underlying source code of the software.
+    Section 4.2.1
+GPL
+    Licenses developed by FSF that are meant to be included in the source code to ensure that all future variants and modifications of the original program continue to have the same freedom of use as the original. Short for GNU General Public Licenses.
+    Section 4.2.1
+Open Source Software
+    Software that meets the OSI Open Source software guidelines where no restrictions are placed on the use of the software regardless of the intended use.
+    Section 4.2.2
+copyleft
+    A philosophy held by the Free Software Foundation (FSF) that someone who modifies free software should be required to share any changes they have made.
+    Section 4.2.1
+open source business models
+
+    Section 4.3 
+permissive
+    Open source licenses that do not contain copyleft provisions and therefore are more permissive in how they allow software to be redistributed.
+    Section 4.2.2
