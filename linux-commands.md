@@ -167,6 +167,8 @@ followed by arguments - what to do it to
 
 kernel run one process /sbin/init
 
+what are ls information fields? file type-permissions-hard link count-user owner-group owner-file size-timestamp-filename
+
 what is the symbol for directory file type? d
 what is the file type for d? directory
 what is a directory? a file used to store other files.
@@ -195,4 +197,8 @@ what is the symbol for character file type? c
 what is the file type for c? character file
 what is a character file? used to communicate with hardware.
 
-file type-permissions-hard link count-user owner-group owner-file size-timestamp-filename
+what is permissions? access control for files and directories
+what is the permissions order? user-group-others
+what is the permission symbol for read? r
+what is the permission symbol for write? w
+what is the permission symbol for execute? x
