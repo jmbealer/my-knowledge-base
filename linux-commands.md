@@ -141,6 +141,7 @@ help
 *dmesg* - print or control the kernel ring buffer
 *su* - run a command with substitute user and group ID
 *shutdown* - halt, power off or reboot the machine
+  shutdown now
 *reboot* - power off, reboot, or halt the machine
 *systemctl* - control the systemd system and service manager
 
@@ -242,3 +243,8 @@ the line to match, otherwise just a literal ^
 $ - if last character in the pattern, then pattern must be at the end of the
 line to match, otherwise just a literal $
 extended regex characters:
+* - one or more of the previous pattern
+? - the preceding pattern is optional
+{ } - specify minimum, maximum or exact matches of the previous pattern
+| - alternation - a logical "or"
+( ) used to create groups
