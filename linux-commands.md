@@ -164,6 +164,7 @@ more
 less
 head
 tail
+dd
 
 ## Other
 
@@ -229,3 +230,15 @@ write (w) allows for file contents to be modified or overwritten.  allows for
 files to be added or removed from a directory.
 execute (x) allows for a file to be run as a process, although script file
 require read permission as well
+
+regular expressions
+basic regex characters:
+. - any one single character
+[ ] - any one specified character
+[^ ] - not the one specified character
+* - zero or more of the previous character
+^ - if first character in the pattern, then pattern must be at beginning of
+the line to match, otherwise just a literal ^
+$ - if last character in the pattern, then pattern must be at the end of the
+line to match, otherwise just a literal $
+extended regex characters:
