@@ -166,3 +166,33 @@ followed by options - how to do it
 followed by arguments - what to do it to
 
 kernel run one process /sbin/init
+
+what is the symbol for directory file type? d
+what is the file type for d? directory
+what is a directory? a file used to store other files.
+
+what is the symbol for regular file type? -
+what is the file type for -? regular file
+what is a regular file? includes readable files, images files, binary files, and compressed files.
+
+what is the symbol for symbolic link file type? l
+what is the file type for l? symbolic link
+what is a symbolic link? points to another files.
+
+what is the symbol for socket file type? s
+what is the file type for s? socket
+what is a socket? allows for communication between processes.
+
+what is the symbol for pipe file type? p
+what is the file type for p? pipe
+what is a pipe? allows for communication between processes.
+
+what is the symbol for block file type? b
+what is the file type for b? block file
+what is a block file? used to communicate with hardware.
+
+what is the symbol for character file type? c
+what is the file type for c? character file
+what is a character file? used to communicate with hardware.
+
+file type-permissions-hard link count-user owner-group owner-file size-timestamp-filename
