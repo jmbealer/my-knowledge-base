@@ -89,17 +89,12 @@ help
     = - specify the exact permission.
     - - remove the permission, if necessary.
   permissions
-    r - read: the file can be read.
-    w - write: the file can be written to.
-    x - execute: the file can be executed.
-    X - execute: the file can be executed if it is a directory or if any execute permission is already set.
-    s - setuid/setgid: the file is executed with the permissions of the owner/group.
-    t - sticky: the file can only be deleted by the owner.
-    u - user: the user who owns the file.
-    g - group: the group who owns the file.
-    o - others: others who are not the user or in the group.
-    a - all: all users.
+    r - read
+    w - write
+    x - execute
+  add execute permission for the user owner: chmod u+x file
 *chown* - change file owner and group
+  change ownership to root: chown root file
 *umask* - get or set the file mode creation mask
 *ps* - report a snapshot of the current processes
 *top* - display linux processes
@@ -163,6 +158,12 @@ help
 *tmux* - terminal multiplexer
 *nmap* - network exploration tool and security/port scanner
 *strace* - trace system calls and signals
+
+cat
+more
+less
+head
+tail
 
 ## Other
 
