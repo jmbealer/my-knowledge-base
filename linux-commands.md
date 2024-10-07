@@ -131,6 +131,11 @@ help
 *zypper* - package manager utility (openSUSE, SUSE)
 *flatpak* - build, install and run  flatpak applications and runtimes
 *uname* - print system information
+  show the kernel name: uname -s
+  show the kernel release(verison): uname -r
+  show the (network) nodename: uname -n
+  show the hardware platform: uname -i
+  show the names of the kernel programs files: ls /boot/vmlinuz-*
 *hostname* - show or set the system’s host name
 
 *uptime* - tell how long the system has been running
