@@ -248,3 +248,14 @@ extended regex characters:
 { } - specify minimum, maximum or exact matches of the previous pattern
 | - alternation - a logical "or"
 ( ) used to create groups
+
+passwd field order: username:password status:change date:minimum:maximum:warn:inactive
+field: example: meaning
+user name: sysadmin: the name of the user
+password status: P: P indicates a usable password, L indicates a locked password, NP indicates no password
+change date: 03/01/2015: the date when the password was last changed
+minimum: 0: the minimum number of days that must pass before the current
+password can be changed by the user.
+maximum: 99999: the maximum number of days remaining for the password to expire.
+warn: 7: the number of days prior to password expiry that the user is warned.
+inactive: -1: the number of days after password expiry that the user account remain active.
