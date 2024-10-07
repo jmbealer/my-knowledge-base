@@ -449,3 +449,24 @@ open source business models
 permissive
     Open source licenses that do not contain copyleft provisions and therefore are more permissive in how they allow software to be redistributed.
     Section 4.2.2
+
+### NDG Linux Essentials - Chapter 5 - Command Line Skills
+
+Bash
+    The most commonly used shell for Linux distributions.
+    Section 5.2
+PATH environment variable
+    Variable containing a list that defines which directories the shell looks in for commands.
+    Section 5.4.3
+echo
+    Command that displays output in the terminal.
+    Section 5.4.1
+export
+    Command that turns a local variable into an environment variable.
+    Section 5.4.2
+history
+    Command that outputs a list of previously executed commands.
+    Section 5.3.3
+type
+    Command that determines information about command type.
+    Section 5.5
