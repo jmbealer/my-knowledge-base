@@ -444,10 +444,12 @@ What are some Enterprise Grade Linux Distributions? Red Hat Enterprise Linux, Ce
 What are some Consumer Grade Linux Distributions? Fedora, Ubuntu non-LTS and openSUSE
 What are some Experimental and Hacker Linux Distributions? Arch, Gentoo and Kali
 
-What is Enterprise Grade Linux designed for? stability, long-term support, and security
-  to be deployed within large organizations using enterprise hardware
-  what are some requirements for Enterprise Grade Linux? long-term support, stability, and security
-What is Consumer Grade Linux designed for? cutting-edge software and desktop environments
+What is Enterprise Grade Linux designed for? to be deployed within large organizations using enterprise hardware
+  What are some requirements for Enterprise Grade Linux? long-term support, stability, and security
+  what would Enterprise Grade Linux lack? cutting-edge software and desktop environments
+What is Consumer Grade Linux designed for? small business or home and hobbyist users
+  What are some requirements for Consumer Grade Linux? cutting-edge software and desktop environments
+  What would Consumer Grade Linux lack? long-term support and stability
 What is Experimental and Hacker Linux designed for? customization and security testing
 
 **Description:** Knowledge of major operating systems and Linux distributions.
