@@ -425,6 +425,8 @@ directory.
 
 ### 4.1 Choosing an Operating System Weight: 1
 
+**Description:** Knowledge of major operating systems and Linux distributions.
+
 What is an operating system?
 What does OS stand for? Operating System
 
@@ -437,6 +439,7 @@ linux distributions: ship with a Linux kernel and a collection of software
 
 How to print the kernel release? uname -r
 How to print the kernel version? uname -v
+How to print the kernel name? uname -s
 
 What are the types of Linux distributions? Linux Distributions: Enterprise Grade, Consumer Grade, and
 Experimental and Hacker
@@ -467,27 +470,21 @@ What are some Unix Operating Systems?
 
 What is macOS based on? BSD Unix
 
-How to print the kernel name? uname -s
+What is distribution life cycle management?
+It involves managing the phases of a Linux distribution's support, including releases, updates, and end-of-life.
 
-**Description:** Knowledge of major operating systems and Linux distributions.
+What does GUI stand for? Graphical User Interface
+What is GUI(Graphical User Interface)? allows users to interact with the system through graphical elements like windows and icons.
 
-**Key Knowledge Areas:**
+What is command line? A text-based interface where users input commands to interact with the operating system.
 
-- Differences between Windows, OS X and Linux
-  What are the differences between Windows, OS X and Linux?
-- Distribution life cycle management
-  What is distribution life cycle management?
+What is desktop configuration? Customizing the settings and appearance of the desktop environment to suit user preferences.
 
-**The following is a partial list of the used files, terms and utilities:**
+What are maintenance cycles? Scheduled periods during which a distribution receives updates, patches, and support.
 
-- GUI versus command line, desktop configuration
-  What is GUI?
-  What is command line?
-  What is desktop configuration?
-- Maintenance cycles, beta and stable
-  What are maintenance cycles?
-  What is beta?
-  What is stable?
+What is beta? A pre-release version of software used for testing before the final stable release.
+
+What is stable? A release version that is fully tested and considered reliable for general use.
 
 ### 4.2 Understanding Computer Hardware Weight: 2
 
