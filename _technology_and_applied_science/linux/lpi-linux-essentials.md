@@ -437,6 +437,19 @@ linux distributions: ship with a Linux kernel and a collection of software
 
 How to check the version of the Linux kernel? uname -r
 
+What are the types of Linux distributions? Linux Distributions: Enterprise Grade, Consumer Grade, and
+Experimental and Hacker
+
+What are some Enterprise Grade Linux Distributions? Red Hat Enterprise Linux, CentOS, SUSE Linux Enterprise Server, Debian GNU/Linux and Ubuntu LTS
+What are some Consumer Grade Linux Distributions? Fedora, Ubuntu non-LTS and openSUSE
+What are some Experimental and Hacker Linux Distributions? Arch, Gentoo and Kali
+
+What is Enterprise Grade Linux designed for? stability, long-term support, and security
+  to be deployed within large organizations using enterprise hardware
+  what are some requirements for Enterprise Grade Linux? long-term support, stability, and security
+What is Consumer Grade Linux designed for? cutting-edge software and desktop environments
+What is Experimental and Hacker Linux designed for? customization and security testing
+
 **Description:** Knowledge of major operating systems and Linux distributions.
 
 **Key Knowledge Areas:**
