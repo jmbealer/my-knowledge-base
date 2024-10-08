@@ -51,9 +51,7 @@ Who, What, Where, When, Why, Which, Whom, Whose
 
 ## Books
 
-## Objectives
-
-### Topic 1: The Linux Community and a Career in Open Source 1-4
+## Topic 1: The Linux Community and a Career in Open Source 1-4
 
 What is Linux?
 Is a family of open-source Unix-like operating systems based on the Linux kernel.
@@ -74,7 +72,7 @@ What is Open Source?
 What is a distribution?
 What is a distribution family?
 
-#### 1.1 Linux Evolution and Popular Operating Systems Weight: 2
+### 1.1 Linux Evolution and Popular Operating Systems Weight: 2
 
 What is Linux Evolution?
 What are the popular operating systems?
@@ -95,6 +93,7 @@ What are the popular operating systems?
 - Debian, Ubuntu (LTS)
   What is Debian?
   What is Ubuntu?
+    What is LTS?
 - CentOS, openSUSE, Red Hat, SUSE
   What is CentOS?
   What is openSUSE?
@@ -109,7 +108,7 @@ What are the popular operating systems?
 - Android
   What is Android?
 
-#### 1.2 Major Open Source Applications Weight: 2
+### 1.2 Major Open Source Applications Weight: 2
 
 **Description:** Awareness of major applications as well as their uses and
 development.
@@ -157,24 +156,38 @@ development.
   What is rpm?
   What is yum?
 
-#### 1.3 Open Source Software and Licensing Weight: 1
+### 1.3 Open Source Software and Licensing Weight: 1
 
 **Description:** Open communities and licensing Open Source Software for business.
 
 **Key Knowledge Areas:**
 
 - Open source philosophy
+  What is the open source philosophy?
 - Open source licensing
+  What is open source licensing?
 - Free Software Foundation (FSF), Open Source Initiative (OSI)
+  What is the Free Software Foundation?
+  What is the Open Source Initiative?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - Copyleft, Permissive
+  What is Copyleft?
+  What is Permissive?
 - GPL, BSD, Creative Commons
+  What is GPL?
+  What is BSD?
+  What is Creative Commons?
 - Free Software, Open Source Software, FOSS, FLOSS
+  What is Free Software?
+  What is Open Source Software?
+  What is FOSS?
+  What is FLOSS?
 - Open source business models
+  What is open source business models?
 
-#### 1.4 ICT Skills and Working in Linux Weight: 2
+### 1.4 ICT Skills and Working in Linux Weight: 2
 
 **Description:** Basic Information and Communication Technology (ICT) skills and
 working in Linux.
@@ -182,21 +195,38 @@ working in Linux.
 **Key Knowledge Areas:**
 
 - Desktop skills
+  What are desktop skills?
 - Getting to the command line
+  What is the command line?
 - Industry uses of Linux, cloud computing and virtualization
+  What are the industry uses of Linux?
+  What is cloud computing?
+  What is virtualization?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - Using a browser, privacy concerns, configuration options, searching the web
 and saving content
+  What is a browser?
+  What are privacy concerns?
+  What are configuration options?
+  What is searching the web?
+  What is saving content?
 - Terminal and console
+  What is the terminal?
+  What is the console?
+  What is the shell?
 - Password issues
+  What are password issues?
 - Privacy issues and tools
+  What are privacy issues?
+  What are privacy tools?
 - Use of common open source applications in presentations and projects
+  What are common open source applications?
 
-### Topic 2: Finding Your Way on a Linux System 1-4
+## Topic 2: Finding Your Way on a Linux System 1-4
 
-#### 2.1 Command Line Basics Weight: 3
+### 2.1 Command Line Basics Weight: 3
 
 **Description:** Basics of using the Linux command line.
 
@@ -210,29 +240,41 @@ and saving content
 **The following is a partial list of the used files, terms and utilities:**
 
 - Bash
+  What is Bash?
 - echo
+  What is echo?
 - history
+  What is history?
 - PATH environment variable
+  What is the PATH environment variable?
 - export
+  What is export?
 - type
+  What is type?
 
-#### 2.2 Using the Command Line to Get Help Weight: 2
+### 2.2 Using the Command Line to Get Help Weight: 2
 
 **Description:** Running help commands and navigation of the various help systems.
 
 **Key Knowledge Areas:**
 
 - Man pages
+  What are man pages?
 - Info pages
+  What are info pages?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - man
+  What is man?
 - info
+  What is info
 - /usr/share/doc/
+  What is /usr/share/doc/?
 - locate
+  What is locate?
 
-#### 2.3 Using Directories and Listing Files Weight: 2
+### 2.3 Using Directories and Listing Files Weight: 2
 
 **Description:** Navigation of home and system directories and listing files in
 various locations.
@@ -252,7 +294,7 @@ various locations.
 - . and ..
 - home and ~
 
-#### 2.4 Creating, Moving and Deleting Files Weight: 2
+### 2.4 Creating, Moving and Deleting Files Weight: 2
 
 **Description:** Create, move and delete files and directories under the home
 directory.
@@ -268,9 +310,9 @@ directory.
 - mv, cp, rm, touch
 - mkdir, rmdir
 
-### Topic 3: The Power of the Command Line 1-3
+## Topic 3: The Power of the Command Line 1-3
 
-#### 3.1 Archiving Files on the Command Line Weight: 2
+### 3.1 Archiving Files on the Command Line Weight: 2
 
 **Description:** Archiving files in the user home directory.
 
@@ -286,7 +328,7 @@ directory.
 - gzip, bzip2, xz
 - zip, unzip
 
-#### 3.2 Searching and Extracting Data from Files Weight: 3
+### 3.2 Searching and Extracting Data from Files Weight: 3
 
 **Description:** Search and extract data from files in the home directory.
 
@@ -305,7 +347,7 @@ directory.
 - cut
 - wc
 
-#### 3.3 Turning Commands into a Script Weight: 4
+### 3.3 Turning Commands into a Script Weight: 4
 
 **Description:** Turning repetitive commands into simple scripts.
 
@@ -324,9 +366,9 @@ directory.
 - echo
 - Exit status
 
-### Topic 4: The Linux Operating System 1-4
+## Topic 4: The Linux Operating System 1-4
 
-#### 4.1 Choosing an Operating System Weight: 1
+### 4.1 Choosing an Operating System Weight: 1
 
 **Description:** Knowledge of major operating systems and Linux distributions.
 
@@ -340,7 +382,7 @@ directory.
 - GUI versus command line, desktop configuration
 - Maintenance cycles, beta and stable
 
-#### 4.2 Understanding Computer Hardware Weight: 2
+### 4.2 Understanding Computer Hardware Weight: 2
 
 **Description:** Familiarity with the components that go into building desktop and
 server computers.
@@ -355,7 +397,7 @@ server computers.
 - Hard drives, solid state disks and partitions, /dev/sd*
 - Drivers
 
-#### 4.3 Where Data is Stored Weight: 3
+### 4.3 Where Data is Stored Weight: 3
 
 **Description:** Where various types of information are stored on a Linux system.
 
@@ -374,7 +416,7 @@ server computers.
 - /etc/, /var/log/
 - /boot/, /proc/, /dev/, /sys/
 
-#### 4.4 Your Computer on the Network Weight: 2
+### 4.4 Your Computer on the Network Weight: 2
 
 **Description:** Querying vital networking configuration and determining the basic
 requirements for a computer on a Local Area Network (LAN).
@@ -395,9 +437,9 @@ requirements for a computer on a Local Area Network (LAN).
 - ping
 - host
 
-### Topic 5: Security and File Permissions 1-4
+## Topic 5: Security and File Permissions 1-4
 
-#### 5.1 Basic Security and Identifying User Types Weight: 2
+### 5.1 Basic Security and Identifying User Types Weight: 2
 
 **Description:** Various types of users on a Linux system.
 
@@ -412,7 +454,7 @@ requirements for a computer on a Local Area Network (LAN).
 - id, last, who, w
 - sudo, su
 
-#### 5.2 Creating Users and Groups Weight: 2
+### 5.2 Creating Users and Groups Weight: 2
 
 **Description:** Creating users and groups on a Linux system.
 
@@ -427,7 +469,7 @@ requirements for a computer on a Local Area Network (LAN).
 - useradd, groupadd
 - passwd
 
-#### 5.3 Managing File Permissions and Ownership Weight: 2
+### 5.3 Managing File Permissions and Ownership Weight: 2
 
 **Description:** Understanding and manipulating file permissions and ownership
 settings.
@@ -441,7 +483,7 @@ settings.
 - ls -l, ls -a
 - chmod, chown
 
-#### 5.4 Special Directories and Files Weight: 1
+### 5.4 Special Directories and Files Weight: 1
 
 **Description:** Special directories and files on a Linux system including special
 permissions.
