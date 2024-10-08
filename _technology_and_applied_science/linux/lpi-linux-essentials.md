@@ -428,6 +428,15 @@ directory.
 What is an operating system?
 What does OS stand for? Operating System
 
+What is simplified selection of an operating systems? Linux-based, UNIX, macOS,
+Windows-based
+  What is Linux-based Operating Systems? Linux: Enterprise and Consumer
+  What is Windows-based Operating Systems? Windows: Servers and Desktops
+
+linux distributions: ship with a Linux kernel and a collection of software
+
+How to check the version of the Linux kernel? uname -r
+
 **Description:** Knowledge of major operating systems and Linux distributions.
 
 **Key Knowledge Areas:**
