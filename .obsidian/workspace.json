@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-10-06.md",
+                "file": "current-classes.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "journals/2024-10-06.md",
+                "file": "current-classes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "journals/2024-10-06.md",
+                "file": "current-classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "journals/2024-10-06.md",
+                "file": "current-classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "journals/2024-10-06.md"
+                "file": "current-classes.md"
               }
             }
           },
@@ -223,15 +223,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8725f72091192d0b",
+  "active": "961be4a7ca997dd6",
   "lastOpenFiles": [
-    "linux-commands.md~",
-    "journals/2024-10-04.md",
-    "journals/2024-10-06.md",
-    "keyboard-layouts.md~",
+    "_technology_and_applied_science/linux-commands.md",
+    "_technology_and_applied_science/keyboard-layouts.md",
+    "about_me.md",
+    "current-classes.md",
     "keyboard-layouts.md",
     "linux-commands.md",
-    "current-classes.md",
+    "README.md",
+    "resume.md",
+    "work-on.md",
+    "journals/2024-10-08.md",
+    "journals/2024-10-06.md",
+    "linux-commands.md~",
+    "journals/2024-10-04.md",
+    "keyboard-layouts.md~",
     "journals/2024-10-03.md",
     "_technology_and_applied_science/linux/lpi-linux-essentials.md",
     "_technology_and_applied_science/linux/lpi-linux-essentials.md~",
@@ -250,13 +257,7 @@
     "journals/2024-08-03.md",
     "journals/2024-07-28.md",
     "journals/2024-08-27.md",
-    "journals/2024-09-15.md",
-    "journals/2024-09-17.md",
-    "journals/2024-09-18.md",
-    "journals/2024-09-19.md",
-    "indexes/home-idx.md",
     "journals/2024-09-19.md~",
-    "work-on.md",
     "https:/cheatography.com/lcheong/cheat-sheets/pseudocode",
     "https:/cheatography.com/lcheong/cheat-sheets",
     "https:/cheatography.com/lcheong",
