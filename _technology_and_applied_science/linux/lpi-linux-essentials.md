@@ -430,12 +430,20 @@ directory.
 **Key Knowledge Areas:**
 
 - Differences between Windows, OS X and Linux
+  What are the differences between Windows, OS X and Linux?
 - Distribution life cycle management
+  What is distribution life cycle management?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - GUI versus command line, desktop configuration
+  What is GUI?
+  What is command line?
+  What is desktop configuration?
 - Maintenance cycles, beta and stable
+  What are maintenance cycles?
+  What is beta?
+  What is stable?
 
 ### 4.2 Understanding Computer Hardware Weight: 2
 
@@ -445,12 +453,23 @@ server computers.
 **Key Knowledge Areas:**
 
 - Hardware
+  What is hardware?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - Motherboards, processors, power supplies, optical drives, peripherals
+  What are motherboards?
+  What are processors?
+  What are power supplies?
+  What are optical drives?
+  What are peripherals?
 - Hard drives, solid state disks and partitions, /dev/sd*
+  What are hard drives?
+  What are solid state disks?
+  What are partitions?
+  What is /dev/sd*?
 - Drivers
+  What are drivers?
 
 ### 4.3 Where Data is Stored Weight: 3
 
@@ -459,17 +478,34 @@ server computers.
 **Key Knowledge Areas:**
 
 - Programs and configuration
+  What are programs?
+  What is configuration?
 - Processes
+  What are processes?
 - Memory addresses
+  What are memory addresses?
 - System messaging
+  What is system messaging?
 - Logging
+  What is logging
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - ps, top, free
+  What is ps?
+  What is top?
+  What is free?
 - syslog, dmesg
+  What is syslog?
+  What is dmesg?
 - /etc/, /var/log/
+  What is /etc/?
+  What is /var/log/?
 - /boot/, /proc/, /dev/, /sys/
+  What is /boot/?
+  What is /proc/?
+  What is /dev/?
+  What is /sys/?
 
 ### 4.4 Your Computer on the Network Weight: 2
 
@@ -479,18 +515,35 @@ requirements for a computer on a Local Area Network (LAN).
 **Key Knowledge Areas:**
 
 - Internet, network, routers
+  What is the internet?
+  What is a network?
+  What are routers?
 - Querying DNS client configuration
+  What is DNS?
 - Querying network configuration
+  What is network configuration?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - route, ip route show
+  What is route?
+  What is ip route show?
 - ifconfig, ip addr show
+  What is ifconfig?
+  What is ip addr show?
 - netstat, ss
+  What is netstat?
+  What is ss?
 - /etc/resolv.conf, /etc/hosts
+  What is /etc/resolv.conf?
+  What is /etc/hosts?
 - IPv4, IPv6
+  What is IPv4?
+  What is IPv6?
 - ping
+  What is ping?
 - host
+  What is host?
 
 ## Topic 5: Security and File Permissions 1-4
 
@@ -501,13 +554,25 @@ requirements for a computer on a Local Area Network (LAN).
 **Key Knowledge Areas:**
 
 - Root and standard users
+  What are root users?
+  What are standard users?
 - System users
+  What are system users?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - /etc/passwd, /etc/shadow, /etc/group
+  What is /etc/passwd?
+  What is /etc/shadow?
+  What is /etc/group?
 - id, last, who, w
+  What is id?
+  What is last?
+  What is who?
+  What is w?
 - sudo, su
+  What is sudo?
+  What is su?
 
 ### 5.2 Creating Users and Groups Weight: 2
 
@@ -516,13 +581,22 @@ requirements for a computer on a Local Area Network (LAN).
 **Key Knowledge Areas:**
 
 - User and group commands
+  What are user and group commands?
 - User IDs
+  What are user IDs?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - /etc/passwd, /etc/shadow, /etc/group, /etc/skel/
+  What is /etc/passwd?
+  What is /etc/shadow?
+  What is /etc/group?
+  What is /etc/skel/?
 - useradd, groupadd
+  What is useradd?
+  What is groupadd?
 - passwd
+  What is passwd?
 
 ### 5.3 Managing File Permissions and Ownership Weight: 2
 
@@ -532,11 +606,17 @@ settings.
 **Key Knowledge Areas:**
 
 - File and directory permissions and ownership
+  What are file and directory permissions?
+  What is ownership?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - ls -l, ls -a
+  What is ls -l?
+  What is ls -a?
 - chmod, chown
+  What is chmod?
+  What is chown?
 
 ### 5.4 Special Directories and Files Weight: 1
 
@@ -546,10 +626,17 @@ permissions.
 **Key Knowledge Areas:**
 
 - Using temporary files and directories
+  What are temporary files and directories?
 - Symbolic links
+  What are symbolic links?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - /tmp/, /var/tmp/ and Sticky Bit
+  What is /tmp/?
+  What is /var/tmp/?
+  What is the Sticky Bit?
 - ls -d
+  What is ls -d?
 - ln -s
+  What is ln -s?
