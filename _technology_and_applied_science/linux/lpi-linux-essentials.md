@@ -425,6 +425,9 @@ directory.
 
 ### 4.1 Choosing an Operating System Weight: 1
 
+What is an operating system?
+What does OS stand for? Operating System
+
 **Description:** Knowledge of major operating systems and Linux distributions.
 
 **Key Knowledge Areas:**
