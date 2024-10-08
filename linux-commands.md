@@ -175,6 +175,7 @@ head
 tail
 dd
 file
+stat
 
 ## Other
 
