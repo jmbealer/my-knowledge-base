@@ -282,17 +282,30 @@ various locations.
 **Key Knowledge Areas:**
 
 - Files, directories
+  What are files?
+  What are directories?
 - Hidden files and directories
+  What are hidden files and directories?
 - Home directories
+  What are home directories?
 - Absolute and relative paths
+  What are absolute paths?
+  What are relative paths?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - Common options for ls
+  What is ls?
 - Recursive listings
+  What is recursive listings?
 - cd
+  What is cod
 - . and ..
+  What is .?
+  What is ..?
 - home and ~
+  What is home?
+  What is ~?
 
 ### 2.4 Creating, Moving and Deleting Files Weight: 2
 
@@ -303,12 +316,20 @@ directory.
 
 - Files and directories
 - Case sensitivity
+  What is case sensitivity?
 - Simple globbing
+  What is simple globbing?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - mv, cp, rm, touch
+  What is mv?
+  What is cp?
+  What is rm?
+  What is touch?
 - mkdir, rmdir
+  What is mkdir?
+  What is rmdir?
 
 ## Topic 3: The Power of the Command Line 1-3
 
@@ -320,13 +341,22 @@ directory.
 
 - Files, directories
 - Archives, compression
+  What are archives?
+  What is compression?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - tar
+  What is tar?
 - Common tar options
+  What are common tar options?
 - gzip, bzip2, xz
+  What is gzip?
+  What is bzip2?
+  What is xz?
 - zip, unzip
+  What is zip?
+  What is unzip?
 
 ### 3.2 Searching and Extracting Data from Files Weight: 3
 
@@ -335,17 +365,32 @@ directory.
 **Key Knowledge Areas:**
 
 - Command line pipes
+  What are command line pipes?
 - I/O redirection
+  What is I/O redirection?
 - Basic Regular Expressions using ., [ ], *, and ?
+  What are basic regular expressions?
+    What is .?
+    What is []?
+    What is*?
+    What is ??
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - grep
+  What is grep?
 - less
+  What is less?
 - cat, head, tail
+  What is cat?
+  What is head?
+  What is tail?
 - sort
+  What is sort?
 - cut
+  What is cut?
 - wc
+  What is wc?
 
 ### 3.3 Turning Commands into a Script Weight: 4
 
@@ -354,17 +399,27 @@ directory.
 **Key Knowledge Areas:**
 
 - Basic shell scripting
+  What is shell scripting?
 - Awareness of common text editors (vi and nano)
+  What is vi?
+  What is nano?
 
 **The following is a partial list of the used files, terms and utilities:**
 
 - #! (shebang)
+  What is #!?
 - /bin/bash
+  What is /bin/bash?
 - Variables
+  What are variables?
 - Arguments
+  What are arguments?
 - for loops
+  What are for loops?
 - echo
+  What is echo?
 - Exit status
+  What is exit status?
 
 ## Topic 4: The Linux Operating System 1-4
 
