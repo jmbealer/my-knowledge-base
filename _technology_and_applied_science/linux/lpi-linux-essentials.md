@@ -435,7 +435,8 @@ Windows-based
 
 linux distributions: ship with a Linux kernel and a collection of software
 
-How to check the version of the Linux kernel? uname -r
+How to print the kernel release? uname -r
+How to print the kernel version? uname -v
 
 What are the types of Linux distributions? Linux Distributions: Enterprise Grade, Consumer Grade, and
 Experimental and Hacker
@@ -448,9 +449,25 @@ What is Enterprise Grade Linux designed for? to be deployed within large organiz
   What are some requirements for Enterprise Grade Linux? long-term support, stability, and security
   what would Enterprise Grade Linux lack? cutting-edge software and desktop environments
 What is Consumer Grade Linux designed for? small business or home and hobbyist users
-  What are some requirements for Consumer Grade Linux? cutting-edge software and desktop environments
+  What are some requirements for Consumer Grade Linux? latest software and desktop environments
   What would Consumer Grade Linux lack? long-term support and stability
-What is Experimental and Hacker Linux designed for? customization and security testing
+What is Experimental and Hacker Linux designed for? cutting-edge software and desktop environments
+  What release model does Experimental and Hacker Linux use? rolling release model
+
+What the Linux support lifecycle for Enterprise Grade Linux? 5-10 years
+  What is the Linux support lifecycle for Red Hat Enterprise Linux? 10 years
+What the Linux support lifecycle for Consumer Grade Linux? 9 months to 3 years
+
+What are some Unix Operating Systems?
+  AIX
+  FreeBSD, NetBSD, OpenBSD
+  HP-UX
+  Irix
+  Solaris
+
+What is macOS based on? BSD Unix
+
+How to print the kernel name? uname -s
 
 **Description:** Knowledge of major operating systems and Linux distributions.
 
