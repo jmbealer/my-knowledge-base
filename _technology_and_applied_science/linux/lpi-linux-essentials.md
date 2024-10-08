@@ -427,22 +427,21 @@ directory.
 
 **Description:** Knowledge of major operating systems and Linux distributions.
 
-What is an operating system?
 What does OS stand for? Operating System
+What is an operating system? software that manages computer hardware and software resources
 
-What is simplified selection of an operating systems? Linux-based, UNIX, macOS,
-Windows-based
+What is simplified selection of an operating systems? Linux-based, UNIX, macOS, Windows-based
   What is Linux-based Operating Systems? Linux: Enterprise and Consumer
   What is Windows-based Operating Systems? Windows: Servers and Desktops
 
-linux distributions: ship with a Linux kernel and a collection of software
+What does distro stand for? Linux distribution
+What is Linux distributions? is an operating system made from a software collection that includes the Linux kernel and often a package management system.
 
 How to print the kernel release? uname -r
 How to print the kernel version? uname -v
 How to print the kernel name? uname -s
 
-What are the types of Linux distributions? Linux Distributions: Enterprise Grade, Consumer Grade, and
-Experimental and Hacker
+What are the types of Linux distributions? Linux Distributions: Enterprise Grade, Consumer Grade, and Experimental and Hacker
 
 What are some Enterprise Grade Linux Distributions? Red Hat Enterprise Linux, CentOS, SUSE Linux Enterprise Server, Debian GNU/Linux and Ubuntu LTS
 What are some Consumer Grade Linux Distributions? Fedora, Ubuntu non-LTS and openSUSE
@@ -450,7 +449,7 @@ What are some Experimental and Hacker Linux Distributions? Arch, Gentoo and Kali
 
 What is Enterprise Grade Linux designed for? to be deployed within large organizations using enterprise hardware
   What are some requirements for Enterprise Grade Linux? long-term support, stability, and security
-  what would Enterprise Grade Linux lack? cutting-edge software and desktop environments
+  What would Enterprise Grade Linux lack? cutting-edge software and desktop environments
 What is Consumer Grade Linux designed for? small business or home and hobbyist users
   What are some requirements for Consumer Grade Linux? latest software and desktop environments
   What would Consumer Grade Linux lack? long-term support and stability
@@ -470,8 +469,7 @@ What are some Unix Operating Systems?
 
 What is macOS based on? BSD Unix
 
-What is distribution life cycle management?
-It involves managing the phases of a Linux distribution's support, including releases, updates, and end-of-life.
+What is distribution life cycle management? It involves managing the phases of a Linux distribution's support, including releases, updates, and end-of-life.
 
 What does GUI stand for? Graphical User Interface
 What is GUI(Graphical User Interface)? allows users to interact with the system through graphical elements like windows and icons.
