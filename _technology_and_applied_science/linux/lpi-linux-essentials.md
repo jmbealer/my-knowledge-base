@@ -754,9 +754,12 @@ unix filesystem hierarchy - filesystem hierarchy standard (FHS)
 Where is the root directory located? /
 What is the root directory? is where the filesystem hierarchy begins
 
-Where is essential command binaries located? /bin
+What does /bin contain? essential user command binaries (for use by all user)
+Where is essential user commands biniaries located? /bin
 
-Where is boot loader files located? /boot
+What does /boot contain? static files of the boot loader
+Where is static files of the boot loader located? /boot
+
 Where is device files located? /dev
 Where is host-specific system-wide configuration files located? /etc
 Where is configuration files for add-on packages stored in /opt? /etc/opt
