@@ -1,4 +1,15 @@
+---
+author: Justin Bealer
+date_created: 2024-10-12, 05-39-12
+date_modified: 2024-10-12, 05-39-24
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # DevOps Roadmap
+
+<https://www.webasha.com/blog/how-to-become-a-devops-engineer-a-complete-roadmap-with-learning-resources>
 
 Learn Programming Languages:
   Golang
@@ -38,9 +49,53 @@ Servers:
       MS-SQL
 
 Infrastructure as Code:
+  Configuration Management:
+    Ansible
+    Puppet
+    Chef
+    SaltStack
+  Container:
+    Docker
+    rkt
+    LXC
+  Container:
+    Kubernetes
+    Openshift
+    NoMad
+    Docker Swarm
+  Infrastructure Provisioning:
+    Terraform
+    AWS CloudFormation
+    Azure Template
+    Google Deployment Manager
 
 CI/CD:
+  Jenkins
+  TeamCity
+  Travis CI
+  AWS Code Pipeline
+  Google Cloudbuild
+  GitLab CI
+  Bitbucket Pipelines
+  GitHub Action
 
 Monitoring & Logging:
+  Monitoring:
+    Zabbix
+    Prometheus
+    Grafana
+    DataDog
+    New Relic
+    CheckMK
+  Logging:
+    ELK
+    Graylog
+    Splunk
 
 Clouds:
+  AWS
+  Azure
+  GCP
+  OpenStack
+  Alicloud
+  IBM Bluemix
