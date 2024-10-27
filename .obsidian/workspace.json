@@ -16,11 +16,28 @@
                 "file": "devops-roadmap.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "devops-roadmap"
             },
             "group": "4cf5d733f9750286"
+          },
+          {
+            "id": "fc45c8b364c9851a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "work-on.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "work-on"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "072d20a8365d66be",
@@ -58,7 +75,9 @@
                   "scale": 1,
                   "close": false
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of devops-roadmap"
             },
             "group": "4cf5d733f9750286"
           }
@@ -82,7 +101,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -97,7 +118,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -105,7 +128,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -128,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops-roadmap.md",
+                "file": "work-on.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +161,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for work-on"
             }
           },
           {
@@ -145,10 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops-roadmap.md",
+                "file": "work-on.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from work-on"
             }
           },
           {
@@ -159,7 +188,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -168,8 +199,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops-roadmap.md"
-              }
+                "file": "work-on.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of work-on"
             }
           },
           {
@@ -181,7 +214,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -189,7 +224,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -197,7 +234,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -223,43 +262,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8725f72091192d0b",
+  "active": "fc45c8b364c9851a",
   "lastOpenFiles": [
-    "devops-roadmap.md~",
-    "README.md",
-    "devops-roadmap.md",
-    "journals/2024-10-12.md",
-    "current-classes.md",
-    "_technology_and_applied_science/linux/lpi-linux-essentials.md~",
-    "_technology_and_applied_science/linux-commands.md",
-    "_technology_and_applied_science/keyboard-layouts.md",
-    "about_me.md",
-    "keyboard-layouts.md",
-    "linux-commands.md",
-    "resume.md",
-    "work-on.md",
-    "journals/2024-10-08.md",
-    "journals/2024-10-06.md",
-    "linux-commands.md~",
-    "journals/2024-10-04.md",
-    "keyboard-layouts.md~",
-    "journals/2024-10-03.md",
-    "_technology_and_applied_science/linux/lpi-linux-essentials.md",
-    "journals/2024-10-02.md",
-    "_technology_and_applied_science/linux/linux-essentials.md",
-    "_technology_and_applied_science/linux/LPI-Linux-Essentials-Exam-Objectives.md",
-    "_general_reference/wikipedia_categories.md",
-    "_general_reference/wikipedia_categories.md~",
-    "_general_reference/20230307073840-wikipedia_classifications.md",
-    "journals/2024-09-22.md",
-    "journals/2024-09-22.md~",
-    "journals/2024-09-21.md",
-    "journals/2024-09-20.md",
-    "journals/2024-09-20.md~",
-    "journals/2024-08-24.md",
-    "journals/2024-09-19.md~",
-    "https:/cheatography.com/lcheong/cheat-sheets/pseudocode",
-    "https:/cheatography.com/lcheong/cheat-sheets",
+    "journals/2024-10-26.md",
+    "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
+    "00-technology_and_applied_science/software-engineering/python/test.md",
+    "00-technology_and_applied_science/software-engineering/python/python-while-statement.md",
+    "00-technology_and_applied_science/software-engineering/python/python-venv.md",
+    "00-technology_and_applied_science/software-engineering/python/python-variables.md",
+    "00-technology_and_applied_science/software-engineering/python/python-user-input.md",
+    "00-technology_and_applied_science/software-engineering/python/python-unsorted.md",
+    "00-technology_and_applied_science/software-engineering/python/python-tuple.md",
+    "00-technology_and_applied_science/software-engineering/python/python-try-except.md",
+    "00-technology_and_applied_science/software-engineering/python/python-tokens.md",
+    "00-technology_and_applied_science/software-engineering/python/python-syntax.md",
+    "00-technology_and_applied_science/software-engineering/python/python-strings.md",
+    "00-technology_and_applied_science/software-engineering/python/python-string-methods.md",
+    "00-technology_and_applied_science/software-engineering/python/python-statements.md",
+    "00-technology_and_applied_science/software-engineering/python/python-sorting.md",
+    "00-technology_and_applied_science/software-engineering/python/python-skill.md",
+    "00-technology_and_applied_science/software-engineering/python/python-set.md",
+    "00-technology_and_applied_science/software-engineering/python/python-roadmap2.md",
+    "00-technology_and_applied_science/software-engineering/python/python-roadmap.md",
+    "00-technology_and_applied_science/software-engineering/python/python-regex.md",
+    "00-technology_and_applied_science/software-engineering/python/python-range.md",
+    "00-technology_and_applied_science/software-engineering/python/python-random-number.md",
+    "00-technology_and_applied_science/software-engineering/python/python-quotations.md",
+    "00-technology_and_applied_science/software-engineering/python/python-pip.md",
+    "00-technology_and_applied_science/software-engineering/python/python-operators.md",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220720131923-jsAsync.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220720093325-jsResources.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220716191455-jsArrays.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220716191425-jsObjects.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220713212731-jsLexicalStructure.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220712211827-jsControlFlow.org",
+    "00-technology_and_applied_science/software-engineering/javaScript/20220712211733-jsOperator.org",
+    "00-technology_and_applied_science/software-engineering/sliding-window-2.png",
+    "00-technology_and_applied_science/software-engineering/sliding-window-1.png",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
     "_technology_and_applied_science/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
@@ -268,8 +310,6 @@
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/hello-uml.png",
     "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/test.png",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
-    "My-Knowledge-Base/home/My-Knowledge-Base/home/unsorted-org/org/software-engineering/sliding-window-1.png",
     "Untitled.canvas"
   ]
 }
