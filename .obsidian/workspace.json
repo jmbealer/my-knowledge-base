@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "devops-roadmap.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work-on.md",
+                "file": "devops.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "work-on"
+              "title": "devops"
             }
           }
         ],
@@ -264,6 +264,8 @@
   },
   "active": "fc45c8b364c9851a",
   "lastOpenFiles": [
+    "work-on.md",
+    "devops.md",
     "journals/2024-10-26.md",
     "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
     "00-technology_and_applied_science/software-engineering/python/test.md",
@@ -288,8 +290,6 @@
     "00-technology_and_applied_science/software-engineering/python/python-range.md",
     "00-technology_and_applied_science/software-engineering/python/python-random-number.md",
     "00-technology_and_applied_science/software-engineering/python/python-quotations.md",
-    "00-technology_and_applied_science/software-engineering/python/python-pip.md",
-    "00-technology_and_applied_science/software-engineering/python/python-operators.md",
     "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",

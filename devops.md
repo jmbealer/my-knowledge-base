@@ -1,3 +1,12 @@
+---
+author: Justin Bealer
+date_created: 2024-10-26, 11-33-21
+date_modified: 2024-10-26, 11-35-08
+reference: 
+description: 
+aliases: 
+tags: 
+---
 # DevOps Stuff
 
 debian/ redhat
@@ -19,6 +28,6 @@ package mgmt
 bash scripting
   simple bash scripts, command substitution, loops, conditionals
 
-## not complete
+## Not Complete
 
-https://app.eraser.io/workspace/FEbewkb6UJHQ9KKjsW9S
+<https://app.eraser.io/workspace/FEbewkb6UJHQ9KKjsW9S>
