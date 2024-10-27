@@ -1,0 +1,4397 @@
+1.0 Print hello: Print a literal string on standard output--import "fmt" 
+fmt.Println("hello");;
+2.0 Print hello 10 times: Loop to execute some code a constant number of times--import "fmt"
+for i := 0; i < 10; i++ {
+ fmt.Println("hello")
+};;
+2.1 Print hello 10 times: Loop to execute some code a constant number of times--import "fmt"
+import "strings"
+fmt.Println(strings.Repeat("Hello\n", 10));;
+2.2 Print hello 10 times: Loop to execute some code a constant number of times--import "fmt"
+for range 10 {
+ fmt.Println("Hello")
+};;
+3.0 Create a procedure: Like a function which doesn't return any value, thus has only side effects (e.g. Print to standard output)-- import "fmt"
+func finish(name string) {
+  fmt.Println("foo " + name)
+}
+(There is no return type in the signature, before the { .);;
+3.1 Create a procedure: Like a function which doesn't return any value, thus has only side effects (e.g. Print to standard output)-- import "fmt"
+finish := func(name string) {
+	fmt.Println("foo" + name)
+}
+(This is a closure.)
+(finish is a variable of type func(string).);;
+4.0 Create a function: Create a function which returns the square of an integer--func square(x int) int {
+  return x*x
+}
+(The return type is after the parameter list);;
+5.0 Create a 2D Point data structure: Declare a container type for two floating-point numbers x and y--type Point struct {
+    x, y float64
+}
+;;6.0 Iterate over list values: Do something with each item x of the list (or array) items, regardless indexes.--for _, x := range items {
+    doSomething(x)
+}
+
+(You have to explicitly ignore the index loop variable, with the blank identifier _)
+;;7.0 Iterate over list indexes and values: Print each index i with its value x from an array-like collection items--import "fmt"
+
+for i, x := range items {
+    fmt.Printf("Item %d = %v \n", i, x)
+}
+
+(The range clause gives you index i and value x at the same time as loop variables)
+;;8.0 Create a map (associative array): Create a new map object x, and provide some (key, value) pairs as initial content.--x := map[string]int {"one": 1, "two": 2}
+;;9.0 Create a Binary Tree data structure: The structure must be recursive because left child and right child are binary trees too. A node has access to children nodes, but not to its parent.--type BinTree struct {
+	Label       valueType
+	Left, Right *BinTree
+}
+;;9.1 Create a Binary Tree data structure: The structure must be recursive because left child and right child are binary trees too. A node has access to children nodes, but not to its parent.-- type BinTree[L any] struct {
+	Label       L
+	Left, Right *BinTree[L]
+}
+
+(The type parameter L is for arbitrary node label data)
+	
+;;10.0 Shuffle a list: Generate a random permutation of the elements of list x--import "math/rand"
+
+for i := range x {
+	j := rand.Intn(i + 1)
+	x[i], x[j] = x[j], x[i]
+}
+
+(This alters the slice content.
+This requires no extra allocation.)
+;;10.1 Shuffle a list: Generate a random permutation of the elements of list x--import "math/rand"
+
+y := make([]T, len(x))
+perm := rand.Perm(len(x))
+for i, v := range perm {
+	y[v] = x[i]
+}
+
+(This allocates a temporary slice of int, and a new destination slice y of type T.
+x is left unchanged.)
+;;10.2 Shuffle a list: Generate a random permutation of the elements of list x--import "math/rand"
+
+rand.Shuffle(len(x), func(i, j int) {
+	x[i], x[j] = x[j], x[i]
+})
+
+(Last argument is a swap func.
+This works in Go ≥ 1.10)
+;;10.3 Shuffle a list: Generate a random permutation of the elements of list x--import "math/rand"
+
+for i := len(x) - 1; i > 0; i-- {
+	j := rand.Intn(i + 1)
+	x[i], x[j] = x[j], x[i]
+}
+
+;;10.4 Shuffle a list: Generate a random permutation of the elements of list x--import "math/rand"
+
+func shuffle[T any](x []T) {
+	rand.Shuffle(len(x), func(i, j int) {
+		x[i], x[j] = x[j], x[i]
+	})
+}
+
+(This helper function is generic, it works for any type parameter T)
+	
+;;11.0 Pick a random elements from a list: The list x must be non-empty--import "math/rand"
+
+x[rand.Intn(len(x))]
+
+Alternative implementation:
+
+import "math/rand"
+func pickT(x []T) T {
+	return x[rand.Intn(len(x))]
+}
+
+Without generics: if you decide to implement pickT, you will have to write it separately for each desired type T.
+Alternative implementation:
+
+func pick[T any](x []T) T {
+	return x[rand.Intn(len(x))]
+}
+
+This generic function works for any type parameter T
+	
+;;12.0 Mr.: 1--func Contains(list []T, x T) bool {
+	for _, item := range list {
+		if item == x {
+			return true
+		}
+	}
+	return false
+}
+
+This func works only for one type T.
+
+You may use any type T compatible with operator ==
+Alternative implementation:
+
+import "slices"
+slices.Contains(list, x)
+
+This generic func slices.Contains works for all slice types
+	
+;;13.0 Mr.: 1--import "fmt"
+
+for k, x := range mymap {
+  fmt.Println("Key =", k, ", Value =", x)
+}
+
+Do not rely on the order of the traversal ! The order is undefined and is intentionaly randomized by the Go runtime.
+	
+;;14.0 Mr.: 1--import "math/rand/v2"
+
+func pick(a, b  float64)  float64 {
+	return a + (rand.Float64() * (b-a))
+}
+
+Note that the package math/rand is not crypto-secure.
+	
+;;15.0 Mr.: 1--import "math/rand"
+
+func pick(a,b int) int {
+	return a + rand.Intn(b-a+1)
+}
+
+(b-a+1) is needed to have upper bound b included.
+Note that the package math/rand is not crypto-secure.
+Alternative implementation:
+
+import "math/rand/v2"
+func pick(a, b int) int {
+	return a + rand.IntN(b-a+1)
+}
+
+Note that the package math/rand/v2 is not crypto-secure.
+	
+;;16.0 Mr.: 1--func (bt *BinTree) Dfs(f func(*BinTree)) {
+	if bt == nil {
+		return
+	}
+	bt.Left.Dfs(f)
+	f(bt)
+	bt.Right.Dfs(f)
+}
+
+The function f is a parameter of the traversal method Dfs.
+It's legit to call a method on a nil receiver, and useful to make code more concise with less checks for nil.
+Alternative implementation:
+
+func (bt *BinTree[L]) Dfs(f func(*BinTree[L])) {
+	if bt == nil {
+		return
+	}
+	bt.Left.Dfs(f)
+	f(bt)
+	bt.Right.Dfs(f)
+}
+
+The type parameter L is for arbitrary node label data
+	
+;;17.0 Mr.: 1--type Tree struct {
+	Key keyType
+	Deco valueType
+	Children []*Tree
+}
+
+keyType should be easily comparable.
+valueType is a type of value associated with current node.
+Children is a slice of pointers.
+
+Note that in Go you can call methods of pointer type *Tree even on a nil receiver (an empty tree).
+Alternative implementation:
+
+type Tree[L any] struct {
+	Label    L
+	Children []*Tree[L]
+}
+
+The type parameter L is for arbitrary node label data.
+
+A nil *Tree denotes the empty tree.
+	
+;;18.0 Mr.: 1--func (t *Tree) Dfs(f func(*Tree)) {
+	if t == nil {
+		return
+	}
+	f(t)
+	for _, child := range t.Children {
+		child.Dfs(f)
+	}
+}
+
+The function f is a parameter of the traversal method Dfs .
+The traversal is prefix because f is applied to current node first.
+Alternative implementation:
+
+func (t *Tree[L]) Dfs(f func(*Tree[L])) {
+	if t == nil {
+		return
+	}
+	f(t)
+	for _, child := range t.Children {
+		child.Dfs(f)
+	}
+}
+
+The type parameter L is for arbitrary node label data
+	
+;;19.0 Mr.: 1--for i, j := 0, len(x)-1; i < j; i, j = i+1, j-1 {
+	x[i], x[j] = x[j], x[i]
+}
+
+This loop reverts "in-place" (in the original list, not creating a new one).
+Alternative implementation:
+
+func reverse[T any](x []T) {
+	for i, j := 0, len(x)-1; i < j; i, j = i+1, j-1 {
+		x[i], x[j] = x[j], x[i]
+	}
+}
+
+This generic function works for any type parameter T.
+
+It operates in-place.
+Alternative implementation:
+
+import "slices"
+slices.Reverse(x)
+
+	
+;;20.0 Return two values: Implement a function search which looks for item x in a 2D matrix m.-- Return indices i, j of the matching cell. Think of the most idiomatic way in the language to return the two values at the same time
+
+func search(m [][]int, x int) (bool, int, int) {
+	for i := range m {
+		for j, v := range m[i] {
+			if v == x {
+				return true, i, j
+			}
+		}
+	}
+	return false, 0, 0
+}
+
+Go functions may return multiple values.
+This function returns 3 values : one to indicate if x was found or not, and two for the coordinates.
+	
+;;21.0 Mr.: 1--a, b = b, a
+
+	
+;;22.0 Convert string to integer: Extract the integer value i from its string representation s (in radix 10)--import "strconv"
+
+i, err  := strconv.Atoi(s) 
+
+Atoi(s) is shorthand for ParseInt(s, 10, 0). It yields type int.
+Alternative implementation:
+
+import "strconv"
+i, err := strconv.ParseInt(s, 10, 0)
+
+Radix 10. The third argument 0 means "fit in implementation-specific int". But the result type is always int64.
+Don't ignore the potential error err !
+	
+;;23.0 Convert real number to string with 2 decimal places: Given a real number x, create its string representation s with 2 decimal digits following the dot.--import "fmt"
+
+s := fmt.Sprintf("%.2f", x)
+
+	
+;;24.0 Assign to string the japanese word ネコ: Declare a new string s and initialize it with the literal value "ネコ" (which means "cat" in japanese)--s := "ネコ"
+
+UTF-8 literals are valid in Go.
+
+Also the source code in Go is defined to be UTF-8 text; No other representation is allowed.
+	
+;;25.0 Send a value to another thread: Share the string value "Alan" with an existing running process which will then display "Hello, Alan"--import "fmt"
+
+go func() {
+	v := <-ch
+	fmt.Printf("Hello, %v\n", v)
+}()
+
+ch <- "Alan"
+
+The receiver goroutine blocks reading the chan string named ch.
+The current goroutine sends the value to ch.
+A goroutine is like a lightweight green thread.
+	
+;;26.0 Create a 2-dimensional array: Declare and initialize a matrix x having m rows and n columns, containing real numbers.--const m, n = 3, 4
+var x [m][n]float64
+
+m, n must be constant for this syntax to be valid.
+Here x is of type [3][4]float64, it is not a slice.
+Alternative implementation:
+
+func make2D(m, n int) [][]float64 {
+	buf := make([]float64, m*n)
+
+	x := make([][]float64, m)
+	for i := range x {
+		x[i] = buf[:n:n]
+		buf = buf[n:]
+	}
+	return x
+}
+
+This works even when m, n are not compile-time constants.
+This code allocates one big slice for the numbers, plus one slice for x itself.
+The same function would have to be rewritten, for types other than float64.
+Alternative implementation:
+
+func make2D[T any](m, n int) [][]T {
+	buf := make([]T, m*n)
+
+	x := make([][]T, m)
+	for i := range x {
+		x[i] = buf[:n:n]
+		buf = buf[n:]
+	}
+	return x
+}
+
+This generic func works for any type parameter T.
+m, n do not need to be compile-time constants.
+This code allocates one big slice for the elements, plus one slice for x itself.
+	
+;;27.0 Create a 3-dimensional array: Declare and initialize a 3D array x, having dimensions boundaries m, n, p, and containing real numbers.--const m, n, p = 2, 2, 3
+var x [m][n][p]float64
+
+m, n, p must be constant for this syntax to be valid.
+Here x is of type [2][2][3]float64, it is not a slice.
+Alternative implementation:
+
+func make3D(m, n, p int) [][][]float64 {
+	buf := make([]float64, m*n*p)
+
+	x := make([][][]float64, m)
+	for i := range x {
+		x[i] = make([][]float64, n)
+		for j := range x[i] {
+			x[i][j] = buf[:p:p]
+			buf = buf[p:]
+		}
+	}
+	return x
+}
+
+This works even when m, n, p are not compile-time constants.
+This code allocates one big slice for the numbers, then a few slices for intermediate dimensions.
+To same function would be rewritten, for types other than float64.
+Alternative implementation:
+
+func make3D[T any](m, n, p int) [][][]T {
+	buf := make([]T, m*n*p)
+
+	x := make([][][]T, m)
+	for i := range x {
+		x[i] = make([][]T, n)
+		for j := range x[i] {
+			x[i][j] = buf[:p:p]
+			buf = buf[p:]
+		}
+	}
+	return x
+}
+
+This generic func works for any type parameter T.
+m, n, p do not need to be compile-time constants.
+This code allocates one big slice for the elements, then a few slices for intermediate dimensions.
+	
+;;28.0 Sort by a property: Sort the elements of the list (or array-like collection) items in ascending order of x.p, where p is a field of the type Item of the objects in items.--import "sort"
+
+type ItemPSorter []Item
+func (s ItemPSorter) Len() int{ return len(s) }
+func (s ItemPSorter) Less(i,j int) bool{ return s[i].p<s[j].p }
+func (s ItemPSorter) Swap(i,j int) { s[i],s[j] = s[j],s[i] }
+
+func sortItems(items []Item){
+	sorter := ItemPSorter(items)
+	sort.Sort(sorter)
+}
+
+The standard way is to declare a new type ItemSorter as a slice of Item, and carefully implement method Less.
+Alternative implementation:
+
+import "sort"
+less := func(i, j int) bool {
+	return items[i].p < items[j].p
+}
+sort.Slice(items, less)
+
+This is the diomatic way since Go 1.8.
+Alternative implementation:
+
+import "slices"
+import "cmp"
+compare := func(a, b Item) int {
+	return cmp.Compare(a.p, b.p)
+}
+slices.SortFunc(items, compare)
+
+SortFunc is generic and type-safe at compile time.
+	
+;;29.0 Remove item from list, by its index: Remove i-th item from list items.-- This will alter the original list or return a new list, depending on which is more idiomatic. Note that in most languages, the smallest valid value for i is 0
+
+items = append(items[:i], items[i+1:]...)
+
+If items elements are pointers or structs with pointers, then refer to the SliceTricks page to avoid memory leaks.
+Alternative implementation:
+
+copy(items[i:], items[i+1:])
+items[len(items)-1] = nil
+items = items[:len(items)-1]
+
+This code is for pointer value type, and has no memory leak.
+Alternative implementation:
+
+import "slices"
+items = slices.Delete(items, i, i+1)
+
+This generic func slices.Delete works for all slice types.
+	
+;;30.0 Parallelize execution of 1000 independent tasks: Launch the concurrent execution of procedure f with parameter i from 1 to 1000.-- Tasks are independent and f(i) doesn't return any value. Tasks need not run all at the same time, so you may use a pool
+
+import "sync"
+wg := sync.WaitGroup{}
+wg.Add(1000)
+for i := 1; i <= 1000; i++ {
+	go func(j int) {
+          f(j)
+          wg.Done()
+        }(i)
+}
+wg.Wait()
+
+The current value of i is captured, and a goroutine is launched
+	
+;;31.0 Recursive factorial (simple): Create the recursive function f which returns the factorial of the non-negative integer i, calculated from f(i-1)--func f(i int) int {
+  if i == 0 {
+    return 1
+  }
+  return i * f(i-1)
+}
+
+	
+;;32.0 Integer exponentiation by squaring: Create function exp which calculates (fast) the value x power n.-- x and n are non-negative integers
+func exp(x, n int) int {
+	switch {
+	case n == 0:
+		return 1
+	case n == 1:
+		return x
+	case n%2 == 0:
+		return exp(x*x, n/2)
+	default:
+		return x * exp(x*x, (n-1)/2)
+	}
+}
+
+Warning: type int quickly overflows
+	
+;;33.0 Atomically read and update variable: Assign to the variable x the new value f(x), making sure that no other thread may modify x between the read and the write.--import "sync"
+
+var lock sync.Mutex
+
+lock.Lock()
+x = f(x)
+lock.Unlock()
+
+You need to lock whenever accessing x.
+	
+;;34.0 Create a set of objects: Declare and initialize a set x containing unique objects of type T.--x := make(map[T]bool)
+
+There is no built-in Set type, but you can create a Map with key type T and boolean value (which will be ignored).
+Alternative implementation:
+
+x := make(map[T]struct{})
+
+The struct{} type is space efficient because it occupies zero bytes in memory.
+	
+;;35.0 First-class function : compose: Implement a function compose (A -> C) with parameters f (A -> B) and g (B -> C), which returns the composition function g ∘ f--func compose(f func(A) B, g func(B) C) func(A) C {
+	return func(x A) C {
+		return g(f(x))
+	}
+}
+
+Functions are first-class citizens in Go. They are passed as arguments and as return values.
+	
+;;36.0 First-class function : generic composition: Implement a function compose which returns composition function g ∘ f for any functions f and g having exactly 1 parameter.--func composeIntFuncs(f func(int) int, g func(int) int) func(int) int {
+	return func(x int) int {
+		return g(f(x))
+	}
+}
+
+These specific functions take and return concrete types.
+
+It could be done with an empty interface, but that would discard static type checks (the implementations of f and g can still be type-checked, though).
+Alternative implementation:
+
+func compose[T, U, V any](f func(T) U, g func(U) V) func(T) V {
+	return func(x T) V {
+		return g(f(x))
+	}
+}
+
+compose is generic, it accepts any type parameters T, U, V.
+	
+;;37.0 Currying: Transform a function that takes multiple arguments into a function for which some of the arguments are preset.--type PayFactory func(Company, *Employee, *Employee) Payroll
+
+type CustomPayFactory func(*Employee) Payroll
+
+func CurryPayFactory(pf PayFactory,company Company, boss *Employee) CustomPayFactory {
+	return func(e *Employee) Payroll {
+		return pf(company, boss, e)
+	}
+}
+
+The currying function is not generic, it must be written for each type of currying needed.
+	
+;;38.0 Extract a substring: Find substring t consisting in characters i (included) to j (excluded) of string s.-- Character indices start at 0 unless specified otherwise. Make sure that multibyte characters are properly handled
+
+t := string([]rune(s)[i:j])
+
+convert to []rune because some characters are two or more bytes.
+	
+;;39.0 Check if string contains a word: Set the boolean ok to true if the string word is contained in string s as a substring, or to false otherwise.--import "strings"
+
+ok := strings.Contains(s, word)
+
+	
+;;40.0 Graph with adjacency lists: Declare a Graph data structure in which each Vertex has a collection of its neighbouring vertices.--type Vertex struct{
+	Id int
+	Label string
+	Neighbours map[*Vertex]bool
+}
+
+type Graph []*Vertex
+
+The map is used as a Set of Vertex pointers.
+Graph is a list of all the Vertex pointers.
+Alternative implementation:
+
+type Graph[L any] []*Vertex[L]
+
+type Vertex[L any] struct {
+	Label      L
+	Neighbours map[*Vertex[L]]bool
+}
+
+The map is used as a Set of Vertex pointers.
+Graph is a list of all the Vertex pointers.
+The type parameter L is for arbitrary node label data.
+	
+;;41.0 Mr.: 1--555
+
+-1 OR 2+900-900-1=0+0+0+1 -- 
+
+Alternative implementation:
+
+import (
+  "strings"
+  "unicode/utf8"
+)
+
+func reverse(s string) string {
+	if len(s) <= 1 {
+		return s
+	}
+	var b strings.Builder
+	b.Grow(len(s))
+	for len(s) > 0 {
+		r, l := utf8.DecodeLastRuneInString(s)
+		s = s[:len(s)-l]
+		b.WriteRune(r)
+	}
+	return b.String()
+}
+
+This version of reverse takes care of multi-byte runes, but performs a single allocation.
+Alternative implementation:
+
+import "slices"
+runes := []rune(s)
+slices.Reverse(runes)
+t := string(runes)
+
+Since Go 1.21
+	
+;;42.0 Continue outer loop: Print each item v of list a which is not contained in list b.-- For this, write an outer loop to iterate on a and an inner loop to iterate on b
+mainloop:
+	for _, v := range a {
+		for _, w := range b {
+			if v == w {
+				continue mainloop
+			}
+		}
+		fmt.Println(v)
+	}
+
+mainloop is a label used to refer to the outer loop.
+	
+;;43.0 Break outer loop: Look for a negative value v in 2D integer matrix m. Print it and stop searching.--mainloop:
+	for i, line := range m {
+		for _, v := range line {
+			if v < 0 {
+				fmt.Println(v)
+				break mainloop
+			}
+		}
+	}
+
+mainloop is a label used to refer to the outer loop.
+	
+;;44.0 Insert element in list: Insert the element x at position i in the list s. Further elements must be shifted to the right.--s = append(s, 0)
+copy(s[i+1:], s[i:])
+s[i] = x
+
+Extend slice by 1 (it may trigger a copy of the underlying array).
+Then shift elements to the right.
+Then set s[i].
+Alternative implementation:
+
+import "slices"
+s = slices.Insert(s, i, x)
+
+This generic func slices.Insert works for all slice types
+	
+;;45.0 Pause execution for 5 seconds: Sleep for 5 seconds in current thread, before proceeding with the next instructions.--import "time"
+
+time.Sleep(5 * time.Second)
+
+Unit is Duration, an alias for int64 representing a number of nanoseconds.
+The constant Second helps readability.
+	
+;;46.0 Extract beginning of string (prefix): Create the string t consisting of the 5 first characters of the string s.-- Make sure that multibyte characters are properly handled
+t := s
+r := []rune(s)
+if len(r) > 5 {
+	t = string(r[:5])
+}
+
+This incurs a run-time cost proportional to len(s).
+Alternative implementation:
+
+i := 0
+count := 0
+for i = range s {
+	if count >= 5 {
+		break
+	}
+	count++
+}
+t := s
+if count >= 5 {
+	t = s[:i]
+}
+
+This does not allocate
+	
+;;47.0 Extract string suffix: Create string t consisting in the 5 last characters of string s.-- Make sure that multibyte characters are properly handled
+t := s
+r := []rune(s)
+if len(r) > 5 {
+	t = string(r[len(r)-5:])
+}
+
+Convert to []rune because some characters are two or more bytes long.
+Alternative implementation:
+
+import "unicode/utf8"
+i := len(s)
+for j := 0; i > 0 && j < 5; j++ {
+	_, size := utf8.DecodeLastRuneInString(s[0:i])
+	i -= size
+}
+t := s[i:]
+
+	
+;;48.0 Multi-line string literal: Assign to variable s a string literal consisting in several lines of text, including newlines.--s := `Huey
+Dewey
+Louie`
+
+This is a raw string literal (not "interpreted").
+	
+;;49.0 Split a space-separated string: Build list chunks consisting in substrings of the string s, separated by one or more space characters.--import "strings"
+
+chunks := strings.Split(s, " ")
+
+chunks has type []string.
+Warning: you may get empty strings as items in chunks because of leading spaces, trailing spaces, and repeated spaces.
+Alternative implementation:
+
+import "strings"
+chunks := strings.Fields(s)
+
+chunks has type []string.
+Fields treats repeated spaces as a single separator.
+	
+;;50.0 Make an infinite loop: Write a loop that has no end clause.--for {
+	// Do something
+}
+
+No need to write loop variables nor end condition.
+	
+;;51.0 Check if map contains key: Determine whether the map m contains an entry for the key k--_, ok := m[k]
+
+ok is true if m contains a value for key k. The value itself is ignored.
+	
+;;52.0 Check if map contains value: Determine whether the map m contains an entry with the value v, for some key.--func containsValue(m map[K]T, v T) bool {
+	for _, x := range m {
+		if x == v {
+			return true
+		}
+	}
+	return false
+}
+
+You have to iterate explicitly. In this implementation, the types K, T are not generic.
+Alternative implementation:
+
+func containsValue[M ~map[K]V, K, V comparable](m M, v V) bool {
+	for _, x := range m {
+		if x == v {
+			return true
+		}
+	}
+	return false
+}
+
+This generic function works for any type parameters K, V that are comparable
+	
+;;53.0 Join a list of strings: Concatenate elements of string list x joined by the separator ", " to create a single string y.--import "strings"
+
+y := strings.Join(x, ", ")
+
+This works only if x has type []string.
+	
+;;54.0 Compute sum of integers: Calculate the sum s of the integer list or array x.--s := 0
+for _, v := range x {
+	s += v
+}
+
+Such explicit loops are idiomatic in Go.
+	
+;;55.0 Convert integer to string: Create the string representation s (in radix 10) of the integer value i.--import "strconv"
+
+s := strconv.Itoa(i)
+
+When i has type int.
+Alternative implementation:
+
+import "strconv"
+s := strconv.FormatInt(i, 10)
+
+When i has type int64.
+Alternative implementation:
+
+import "fmt"
+s := fmt.Sprintf("%d", i)
+
+This works with all types of integers.
+
+Sprintf does type assertions, and is slower than the strconv flavors
+	
+;;56.0 Launch 1000 parallel tasks and wait for completion: Fork-join : launch the concurrent execution of procedure f with parameter i from 1 to 1000.-- Tasks are independent and f(i) doesn't return any value. Tasks need not run all at the same time, so you may use a pool.Wait for the completion of the 1000 tasks and then print "Finished".
+	
+
+import "sync"
+var wg sync.WaitGroup
+wg.Add(1000)
+for i := 1; i <= 1000; i++ {
+	go func(i int) {
+		f(i)
+		wg.Done()
+	}(i)
+}
+wg.Wait()
+fmt.Println("Finished")
+
+It is necessary to capture the current value of loop variable i. See https://github.com/golang/go/wiki/CommonMistakes
+	
+;;57.0 Filter list: Create the list y containing the items from the list x that satisfy the predicate p. Respect the original ordering. Don't modify x in-place.--y := make([]T, 0, len(x))
+for _, v := range x{
+	if p(v){
+		y = append(y, v)
+	}
+}
+
+For item type T.
+Note that this allocates memory for the new slice y.
+Warning: y is allocated with as much memory as x, which may in some cases be wasteful.
+Alternative implementation:
+
+n := 0
+for _, v := range x {
+	if p(v) {
+		n++
+	}
+}
+y := make([]T, 0, n)
+for _, v := range x {
+	if p(v) {
+		y = append(y, v)
+	}
+}
+
+This makes 2 passes: one to count the number n of elements to be kept, and one to copy the elements in the target slice created with the correct size n.
+This is efficient if p is cheap and x is small.
+Alternative implementation:
+
+func filter[S ~[]T, T any](x S, p func(T) bool) S {
+	var y S
+	for _, v := range x {
+		if p(v) {
+			y = append(y, v)
+		}
+	}
+	return y
+}
+
+filter is a generic function with a type parameter T
+Alternative implementation:
+
+import "slices"
+del := func(t *T) bool { return !p(t) }
+
+y := slices.DeleteFunc(slices.Clone(x), del)
+
+Elements have type T.
+del (discard) is the opposite of the function p (keep)
+
+We must clone x before deleting some contents.
+	
+;;58.0 Extract file content to a string: Create the string lines from the content of the file with filename f.--import "os"
+
+b, err := os.ReadFile(f)
+if err != nil {
+	// Handle error...
+}
+lines := string(b)
+
+In Go it is idiomatic to inspect an error value before moving on.
+
+lines is a single string.
+	
+;;59.0 Write to standard error stream: Print the message "x is negative" to standard error (stderr), with integer x value substitution (e.g. "-2 is negative").--import "os"
+
+fmt.Fprintln(os.Stderr, x, "is negative")
+
+	
+;;60.0 Read command line argument: Assign to x the string value of the first command line parameter, after the program name.--import "os"
+
+x := os.Args[1]
+
+os.Args[0] is actually the executable name.
+	
+;;61.0 Mr.: 1--import "time"
+
+d := time.Now()
+
+The type Time wraps a timestamp with nanosecond precision.
+	
+;;62.0 Find substring position: Set i to the first position of string y inside string x, if exists.-- Specify if i should be regarded as a character index or as a byte index
+Explain the behavior when y is not contained in x.
+	
+
+import "strings"
+i := strings.Index(x, y)
+
+i is the byte index of y in x, not the character (rune) index.
+
+i will be -1 if y is not found in x.
+	
+;;63.0 Replace fragment of a string: Assign to x2 the value of string x with all occurrences of y replaced by z.-- Assume occurrences of y are not overlapping
+import "strings"
+x2 := strings.Replace(x, y, z, -1)
+
+-1 means "no limit on the number of replacements".
+This replaces non-overlapping instances of y.
+Alternative implementation:
+
+import "strings"
+x2 := strings.ReplaceAll(x, y, z)
+
+This replaces non-overlapping instances of y.
+	
+;;64.0 Big integer : value 3 power 247: Assign to x the value 3^247--import "math/big"
+
+x := new(big.Int)
+x.Exp(big.NewInt(3), big.NewInt(247), nil)
+
+The nil argument means we don't want a modulo.
+	
+;;65.0 Format decimal number: From the real value x in [0,1], create its percentage string representation s with one digit after decimal point. E.g. 0.15625 -> "15.6%"--import "fmt"
+
+s := fmt.Sprintf("%.1f%%", 100.0*x)
+
+The literal % must be doubled.
+	
+;;66.0 Big integer exponentiation: Calculate the result z of x power n, where x is a big integer and n is a positive integer.--import "math/big"
+
+nb := big.NewInt(int64(n))
+var z big.Int
+z.Exp(x, nb, nil)
+
+Exponentiation is already implemented in package math/big.
+	
+;;67.0 Binomial coefficient "n choose k": Calculate binom(n, k) = n! / (k! * (n-k)!). Use an integer type able to handle huge numbers.--import "math/big"
+
+z := new(big.Int)
+z.Binomial(n, k)
+
+	
+;;68.0 Create a bitset: Create an object x to store n bits (n being potentially large).--import "math/big"
+
+var x *big.Int = new(big.Int)
+
+big.Int type makes a decent bitset.
+It grows automatically when needed.
+Alternative implementation:
+
+x := make([]bool, n)
+
+This makes a simple fixed-size bitset.
+It uses more bits in memory than the useful size n.
+Alternative implementation:
+
+x := make([]uint64, (n+63)/64)
+
+This compact bitset requires some extra logic to implement get, set, clear (see demo).
+	
+;;69.0 Seed random generator: Use seed s to initialize a random generator.-- If s is constant, the generator output will be the same each time the program runs. If s is based on the current value of the system clock, the generator output will be different each time
+
+import "math/rand"
+r := rand.New(rand.NewSource(s))
+
+s is of type int64.
+r is of type *rand.Rand.
+Alternative implementation:
+
+import "math/rand/v2"
+r := rand.New(rand.NewPCG(s, s))
+
+The PCG source has 128 bits of internal state, thus its constructor takes 2 uint64.
+The two arguments would usually have a different value.
+	
+;;70.0 Use clock as random generator seed: Get the current datetime and provide it as a seed to a random generator. The generator sequence will be different at each run.--import "math/rand"
+import "time"
+r := rand.New(rand.NewSource(time.Now().UnixNano()))
+
+r is of type *rand.Rand.
+	
+;;71.0 Echo program implementation: Basic implementation of the Echo program: Print all arguments except the program name, separated by space, followed by newline.-- The idiom demonstrates how to skip the first argument if necessary, concatenate arguments as strings, append newline and print it to stdout
+import "fmt"
+import "os"
+import "strings"
+func main() {
+    fmt.Println(strings.Join(os.Args[1:], " "))
+}
+
+	
+;;73.0 Create a factory: Create a factory named fact for any sub class of Parent and taking exactly one string str as constructor parameter.--type ParentFactory func(string) Parent
+
+var fact ParentFactory = func(str string) Parent {
+	return Parent{
+		name: str,
+	}
+}
+
+A Factory is a function which returns an object.
+
+Go doesn't have subtyping, but Parent could be any type: struct, interface, etc.
+	
+;;74.0 Compute GCD: Compute the greatest common divisor x of big integers a and b. Use an integer type able to handle huge numbers.--import "math/big"
+
+x.GCD(nil, nil, a, b)
+
+The first two arguments can be ignored in this use case.
+
+x, a, b have pointer type *big.Int .
+	
+;;75.0 Compute LCM: Compute the least common multiple x of big integers a and b. Use an integer type able to handle huge numbers.--import "math/big"
+
+gcd.GCD(nil, nil, a, b)
+x.Div(a, gcd).Mul(x, b)
+
+LCM is not in the standard library, but can be deduced from GCD.
+
+gcd divides a, by definition.
+
+Chaining is permitted and idiomatic.
+
+a, b, gcd, x have pointer type *big.Int.
+	
+;;76.0 Binary digits from an integer: Create the string s of integer x written in base 2.-- E.g. 13 -> "1101
+
+import "strconv"
+s := strconv.FormatInt(x, 2)
+
+Here x has the type int64.
+
+For very big numbers, prefer the type *big.Int.
+Alternative implementation:
+
+import "fmt"
+import "math/big"
+s := fmt.Sprintf("%b", x)
+
+x has the type *big.Int.
+
+This works because *big.Int implements the fmt.Formatter interface.
+	
+;;77.0 Complex number: Declare a complex x and initialize it with value (3i - 2). Then multiply it by i.--x := 3i - 2
+x *= 1i
+
+complex128 is a built-in type.
+
+1i denotes the imaginary unit i.
+	
+;;78.0 Mr.: 1--for{
+   someThing()
+   someOtherThing()
+   if !c {
+     break
+   }
+}
+
+Go has no do while loop, use the for loop, instead.
+Alternative implementation:
+
+for done := false; !done; {
+	someThing()
+	someOtherThing()
+	done = !c()
+}
+
+Explicit loop variable done shows the intent.
+	
+;;79.0 Convert integer to floating point number: Declare the floating point number y and initialize it with the value of the integer x .--y := float64(x)
+
+The cast must be explicit.
+	
+;;80.0 Truncate floating point number to integer: Declare integer y and initialize it with the value of floating point number x . Ignore non-integer digits of x .-- Make sure to truncate towards zero: a negative x must yield the closest greater integer (not lesser)
+y := int(x)
+
+	
+;;81.0 Round floating point number to integer: Declare the integer y and initialize it with the rounded value of the floating point number x .-- Ties (when the fractional part of x is exactly .5) must be rounded up (to positive infinity)
+import "math"
+y := int(math.Floor(x + 0.5))
+
+	
+;;82.0 Count substring occurrences: Find how many times string s contains substring t.-- Specify if overlapping occurrences are counted
+import "strings"
+x := strings.Count(s, t)
+
+Count counts only the number of non-overlapping instances of t.
+	
+;;83.0 Regex with character repetition: Declare regular expression r matching the strings "http", "htttp", "httttp", etc.--import "regexp"
+
+r := regexp.MustCompile("htt+p")
+
+	
+;;84.0 Count bits set in integer binary representation: Count number c of 1s in the integer i in base 2.-- E.g. i=6 → c=
+
+func PopCountUInt64(i uint64) (c int) {
+	i -= (i >> 1) & 0x5555555555555555
+	i = (i>>2)&0x3333333333333333 + i&0x3333333333333333
+	i += i >> 4
+	i &= 0x0f0f0f0f0f0f0f0f
+	i *= 0x0101010101010101
+	return int(i >> 56)
+}
+
+func PopCountUInt32(i uint32) (n int) {
+	i -= (i >> 1) & 0x55555555
+	i = (i>>2)&0x33333333 + i&0x33333333
+	i += i >> 4
+	i &= 0x0f0f0f0f
+	i *= 0x01010101
+	return int(i >> 24)
+}
+
+This was useful only before go 1.9.
+See math/bits.OnesCount instead.
+Alternative implementation:
+
+import "math/bits"
+c := bits.OnesCount(i)
+
+i is a uint.
+All OnesCountX functions take unsigned integer types.
+	
+;;85.0 Check if integer addition will overflow: Write boolean function addingWillOverflow which takes two integers x, y and return true if (x+y) overflows.-- An overflow may be above the max positive value, or below the min negative value
+
+import "math"
+func addingWillOverflow(x int, y int) bool {
+	if x > 0 {
+		return y > math.MaxInt-x
+	}
+	return y < math.MinInt-x
+}
+
+	
+;;86.0 Check if integer multiplication will overflow: Write the boolean function multiplyWillOverflow which takes two integers x, y and returns true if (x*y) overflows.-- An overflow may reach above the max positive value, or below the min negative value
+
+func multiplyWillOverflow(x, y uint64) bool {
+   if x <= 1 || y <= 1 {
+     return false
+   }
+   d := x * y
+   return d/y != x
+}
+
+This holds for uint64, not for signed integers.
+Note that the multiplication is performed, then its result is checked.
+	
+;;87.0 Mr.: 1--import "os"
+
+os.Exit(0)
+
+	
+;;88.0 Allocate 1M bytes: Create a new bytes buffer buf of size 1,000,000.--buf := make([]byte, 1_000_000)
+
+This creates a slice with all values initialized at zero.
+	
+;;89.0 Handle invalid argument: You've detected that the integer value of argument x passed to the current function is invalid. Write the idiomatic way to abort the function execution and signal the problem.--return nil, fmt.Errorf("invalid value for x: %v", x)
+
+The last return parameter of the current function has type error.
+It is the caller's responsibility to check if the error is nil, before using the function's other result values.
+	
+;;90.0 Read-only outside: Expose a read-only integer x to the outside world while being writable inside a structure or a class Foo.--type Foo struct {
+	x int
+}
+
+func (f *Foo) X() int {
+	return f.x
+}
+
+x is private, because it is not capitalized.
+(*Foo).X is a public getter (a read accessor).
+	
+;;91.0 Load JSON file into object: Read from the file data.json and write its content into the object x.-- Assume the JSON data is suitable for the type of x
+import "encoding/json"
+import "os"
+buffer, err := os.ReadFile("data.json")
+if err != nil {
+	return err
+}
+err = json.Unmarshal(buffer, &x)
+if err != nil {
+	return err
+}
+
+buffer is a []byte.
+&x is the address of x.
+You must check errors after each step.
+Alternative implementation:
+
+import "encoding/json"
+r, err := os.Open(filename)
+if err != nil {
+	return err
+}
+decoder := json.NewDecoder(r)
+err = decoder.Decode(&x)
+if err != nil {
+	return err
+}
+
+Create and use a *json.Decoder
+	
+;;92.0 Save object into JSON file: Write the contents of the object x into the file data.json.--import "encoding/json"
+import "os"
+buffer, err := json.MarshalIndent(x, "", "  ")
+if err != nil {
+	return err
+}
+err = os.WriteFile("data.json", buffer, 0644)
+
+json.MarshalIndent is more human-readable than json.Marshal.
+	
+;;93.0 Pass a runnable procedure as parameter: Implement the procedure control which receives one parameter f, and runs f.--func control(f func()) {
+	f()
+}
+
+Go supports first class functions, higher-order functions, user-defined function types, function literals, and closures.
+	
+;;94.0 Print the type of a variable: Print the name of the type of x. Explain if it is a static type or dynamic type.-- This may not make sense in all languages
+
+import "reflect"
+fmt.Println(reflect.TypeOf(x))
+
+This prints the dynamic type of x.
+Alternative implementation:
+
+fmt.Printf("%T", x)
+
+This prints the dynamic type of x.
+	
+;;95.0 Get file size: Assign to variable x the length (number of bytes) of the local file at path.--import "os"
+
+info, err := os.Stat(path)
+if err != nil {
+	return err
+}
+x := info.Size()
+
+info has type os.FileInfo .
+	
+;;96.0 Check string prefix: Set the boolean b to true if string s starts with prefix prefix, false otherwise.--import "strings"
+
+b := strings.HasPrefix(s, prefix)
+
+	
+;;97.0 Check string suffix: Set boolean b to true if string s ends with string suffix, false otherwise.--import "strings"
+
+b := strings.HasSuffix(s, suffix)
+
+	
+;;98.0 Epoch seconds to date object: Convert a timestamp ts (number of seconds in epoch-time) to a date with time d. E.g. 0 -> 1970-01-01 00:00:00--import "time"
+
+d := time.Unix(ts, 0)
+
+ts has type int64.
+The second argument is nanoseconds.
+	
+;;99.0 Format date YYYY-MM-DD: Assign to the string x the value of the fields (year, month, day) of the date d, in format YYYY-MM-DD.--import "time"
+
+x := d.Format("2006-01-02")
+
+d has type time.Time.
+
+January 2, 2006 is the "reference date" used for formatting.
+	
+;;100.0 Sort by a comparator: Sort elements of array-like collection items, using a comparator c.--import "sort"
+
+type ItemCSorter []Item
+func (s ItemCSorter) Len() int           { return len(s) }
+func (s ItemCSorter) Less(i, j int) bool { return c(s[i], s[j]) }
+func (s ItemCSorter) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
+
+func sortItems(items []Item) {
+	sorter := ItemCSorter(items)
+	sort.Sort(sorter)
+}
+
+c has type func(Item, Item) bool.
+Alternative implementation:
+
+import "sort"
+type ItemsSorter struct {
+	items []Item
+	c     func(x, y Item) bool
+}
+
+func (s ItemsSorter) Len() int           { return len(s.items) }
+func (s ItemsSorter) Less(i, j int) bool { return s.c(s.items[i], s.items[j]) }
+func (s ItemsSorter) Swap(i, j int)      { s.items[i], s.items[j] = s.items[j], s.items[i] }
+
+func sortItems(items []Item, c func(x, y Item) bool) {
+	sorter := ItemsSorter{
+		items,
+		c,
+	}
+	sort.Sort(sorter)
+}
+
+ItemsSorter contains c, which can be any comparator decided at runtime.
+Alternative implementation:
+
+import "sort"
+sort.Slice(items, func(i, j int) bool {
+	return c(items[i], items[j])
+})
+
+Since Go 1.8, a single func parameter is sufficient to sort a slice.
+Alternative implementation:
+
+import "slices"
+slices.SortFunc(items, c)
+
+SortFunc is generic and type-safe at compile time.
+	
+;;101.0 Mr.: 1--import "io"
+import "net/http"
+res, err := http.Get(u)
+if err != nil {
+	return err
+}
+buffer, err := io.ReadAll(res.Body)
+res.Body.Close()
+if err != nil {
+	return err
+}
+s := string(buffer)
+
+res has type *http.Response.
+buffer has type []byte.
+It is idiomatic and strongly recommended to check errors at each step.
+	
+;;102.0 Mr.: 1--import "fmt"
+import "io"
+import "net/http"
+out, err := os.Create("result.txt")
+if err != nil {
+	return err
+}
+defer out.Close()
+
+resp, err := http.Get(u)
+if err != nil {
+	return err
+}
+defer func() {
+	io.Copy(io.Discard, resp.Body)
+	resp.Body.Close()
+}()
+if resp.StatusCode != 200 {
+	return fmt.Errorf("Status: %v", resp.Status)
+}
+
+_, err = io.Copy(out, resp.Body)
+if err != nil {
+	return err
+}
+
+resp has type *http.Response.
+It is idiomatic and strongly recommended to check errors at each step, except for the calls to Close.
+	
+;;103.0 Mr.: 1--import "encoding/xml"
+import "os"
+buffer, err := os.ReadFile("data.xml")
+if err != nil {
+	return err
+}
+err = xml.Unmarshal(buffer, &x)
+if err != nil {
+	return err
+}
+
+buffer is a []byte.
+&x is the address of x.
+You must check errors after each step.
+	
+;;104.0 Mr.: 1--import "encoding/xml"
+import "os"
+buffer, err := xml.MarshalIndent(x, "", "  ")
+if err != nil {
+	return err
+}
+err = os.WriteFile("data.xml", buffer, 0644)
+
+xml.MarshalIndent is more human-readable than xml.Marshal.
+	
+;;105.0 Current executable name: 1--import "os"
+import "path/filepath"
+path := os.Args[0]
+s = filepath.Base(path)
+
+The program path is its "0th argument".
+Alternative implementation:
+
+import (
+  "os"
+  "path/filepath"
+)
+
+path, err := os.Executable()
+if err != nil {
+  panic(err)
+}
+s = filepath.Base(path)
+
+Executable function is supported since 1.8
+	
+;;106.0 Mr.: 1--import "os"
+
+dir, err := os.Getwd()
+
+	
+;;107.0 Mr.: 1--import "os"
+import "path/filepath"
+programPath := os.Args[0]
+absolutePath, err := filepath.Abs(programPath)
+if err != nil {
+	return err
+}
+dir := filepath.Dir(absolutePath)
+
+	
+;;109.0 Mr.: 1--import "reflect"
+
+var t T
+tType := reflect.TypeOf(t)
+n := tType.Size()
+
+This run-time reflection works on a value of the type T.
+Note that the size does not include the memory indirectly taken by the reference fields: Strings, slices, etc.
+Warning: for a given program, the size of a type is not the same on a 32-bit machine or a 64-bit machine.
+	
+;;110.0 Mr.: 1--import "strings"
+
+blank := strings.TrimSpace(s) == ""
+
+Trim s, then check if empty.
+	
+;;111.0 Mr.: 1--import "os/exec"
+
+err := exec.Command("x", "a", "b").Run()
+
+x's output is ignored.
+To access it, see (*Cmd).Output, (*Cmd).StdoutPipe, etc.
+	
+;;112.0 Mr.: 1--import "fmt"
+import "sort"
+keys := make([]string, 0, len(mymap))
+for k := range mymap {
+	keys = append(keys, k)
+}
+sort.Strings(keys)
+
+for _, k := range keys {
+	x := mymap[k]
+	fmt.Println("Key =", k, ", Value =", x)
+}
+
+First extract the keys, then sort them, then iterate.
+Adapt for key types other than string.
+Alternative implementation:
+
+import "fmt"
+import "golang.org/x/exp/maps"
+import "slices"
+keys := maps.Keys(mymap)
+slices.Sort(keys)
+
+for _, k := range keys {
+	x := mymap[k]
+	fmt.Println("Key =", k, ", Value =", x)
+}
+
+This works for any map whose value type is in constraints.Ordered : integers, floats, strings
+Alternative implementation:
+
+import "fmt"
+import "golang.org/x/exp/maps"
+import "slices"
+keys := maps.Keys(mymap)
+slices.SortFunc(keys, compare)
+
+for _, k := range keys {
+	x := mymap[k]
+	fmt.Println("Key =", k, ", Value =", x)
+}
+
+compare is a custom comparator
+	
+;;113.0 Mr.: 1--import "fmt"
+import "sort"
+type entry struct {
+	key   string
+	value int
+}
+
+type entries []entry
+func (list entries) Len() int { return len(list) }
+func (list entries) Less(i, j int) bool { return list[i].value < list[j].value }
+func (list entries) Swap(i, j int) { list[i], list[j] = list[j], list[i] }
+
+entries := make(entries, 0, len(mymap))
+for k, x := range mymap {
+	entries = append(entries, entry{key: k, values: x})
+}
+sort.Sort(entries)
+
+for _, e := range entries {
+	fmt.Println("Key =", e.key, ", Value =", e.value)
+}
+
+Define custom types entry and entries.
+Then create a flat list of entries, and sort it.
+Alternative implementation:
+
+import "fmt"
+import "sort"
+type entry struct {
+	key   string
+	value int
+}
+
+entries := make([]entry, 0, len(mymap))
+for k, x := range mymap {
+	entries = append(entries, entry{key: k, value: x})
+}
+sort.Slice(entries, func(i, j int) bool {
+	return entries[i].value < entries[j].value
+})
+
+for _, e := range entries {
+	fmt.Println("Key =", e.key, ", Value =", e.value)
+}
+
+Using sort.Slice incurs slightly less boilerplate than sort.Sort.
+	
+;;114.0 Mr.: 1--import "reflect"
+
+b := reflect.DeepEqual(x, y)
+
+This uses run-time reflection.
+DeepEqual correctly handles recursive types.
+	
+;;115.0 Mr.: 1--import "time"
+
+b := d1.Before(d2)
+
+d1, d2 have type time.Time.
+	
+;;116.0 Mr.: 1--import "strings"
+
+s2 := strings.Replace(s1, w, "", -1)
+
+Replaces w with empty string. -1 means "replace all occurrences".
+Alternative implementation:
+
+import "strings"
+s2 := strings.ReplaceAll(s1, w, "")
+
+	
+;;117.0 Mr.: 1--n := len(x)
+
+x is a slice or an array.
+	
+;;118.0 Mr.: 1--y := make(map[T]struct{}, len(x))
+for _, v := range x {
+	y[v] = struct{}{}
+}
+
+Iterate to add each item to the map.
+T is the type of the items.
+Alternative implementation:
+
+func sliceToSet[T comparable](x []T) map[T]struct{} {
+	y := make(map[T]struct{}, len(x))
+	for _, v := range x {
+		y[v] = struct{}{}
+	}
+	return y
+}
+
+sliceToSet is generic. Its type parameter T has a constraint: must be comparable with ==.
+	
+;;119.0 Mr.: 1--y := make(map[T]struct{}, len(x))
+for _, v := range x {
+	y[v] = struct{}{}
+}
+x2 := make([]T, 0, len(y))
+for _, v := range x {
+	if _, ok := y[v]; ok {
+		x2 = append(x2, v)
+		delete(y, v)
+	}
+}
+x = x2
+
+Original order is preserved.
+T is the type of the items.
+Iterate twice, from list to map, then from map to list.
+
+This is O(n).
+Alternative implementation:
+
+seen := make(map[T]bool)
+j := 0
+for _, v := range x {
+	if !seen[v] {
+		x[j] = v
+		j++
+		seen[v] = true
+	}
+}
+x = x[:j]
+
+The order is preserved.
+Use this if T is not a pointer type or reference type.
+
+This is O(n).
+Alternative implementation:
+
+seen := make(map[T]bool)
+j := 0
+for _, v := range x {
+	if !seen[v] {
+		x[j] = v
+		j++
+		seen[v] = true
+	}
+}
+for i := j; i < len(x); i++ {
+	x[i] = nil
+}
+x = x[:j]
+
+Order is preserved.
+Use this if T is a pointer type or reference type.
+Discarded slots are set to nil, to avoid a memory leak.
+
+This is O(n).
+Alternative implementation:
+
+func deduplicate[S ~[]T, T comparable](x S) S {
+	seen := make(map[T]bool)
+	j := 0
+	for _, v := range x {
+		if !seen[v] {
+			x[j] = v
+			j++
+			seen[v] = true
+		}
+	}
+	var zero T
+	for i := j; i < len(x); i++ {
+		// Avoid memory leak
+		x[i] = zero
+	}
+	return x[:j]
+}
+
+deduplicate is generic. Its type parameter T has a constraint: must be comparable with ==.
+The order is preserved.
+Alternative implementation:
+
+import (
+	"fmt"
+	"slices"
+)
+
+slices.Sort(x)
+x = slices.Compact(x)
+
+Does not maintain order. Sorts the list. Type has to be comparable.
+	
+;;120.0 Mr.: 1--import "fmt"
+
+_, err := fmt.Scan(&n)
+
+Warning: if the input has a leading 0, it will be interpreted as octal!
+Alternative implementation:
+
+import "fmt"
+_, err := fmt.Scanf("%d", &n)
+
+	
+;;121.0 Mr.: 1--import (
+    "fmt"
+    "net"
+    "os"
+)
+
+ServerAddr,err := net.ResolveUDPAddr("udp",p)
+if err != nil {
+	return err
+}
+ServerConn, err := net.ListenUDP("udp", ServerAddr)
+if err != nil {
+	return err
+}
+defer ServerConn.Close()
+n,addr,err := ServerConn.ReadFromUDP(b[:1024])
+if err != nil {
+	return err
+}
+if n<1024 {
+	return fmt.Errorf("Only %d bytes could be read.", n)
+}
+
+	
+;;122.0 Mr.: 1--type Suit int
+
+const (
+  Spades Suit = iota
+  Hearts
+  Diamonds
+  Clubs
+)
+
+Go doesn't have enumerations.
+The 4 constants have values 0, 1, 2, 3.
+	
+;;123.0 Mr.: 1--if !isConsistent() {
+	panic("State consistency violated")
+}
+
+Go doesn't provide assertions.
+But it's still possible to crash when desired.
+	
+;;124.0 Mr.: 1--func binarySearch(a []T, x T) int {
+	imin, imax := 0, len(a)-1
+	for imin <= imax {
+		imid := imin + (imax-imin) / 2
+		switch {
+		case a[imid] == x:
+			return imid
+		case a[imid] < x:
+			imin = imid + 1
+		default:
+			imax = imid - 1
+		}
+	}
+	return -1
+}
+
+Iterative algorithm.
+It does not always return the smallest possible index.
+You may implement this for any element type T that is ordered.
+Alternative implementation:
+
+import "sort"
+func binarySearch(a []int, x int) int {
+	i := sort.SearchInts(a, x)
+	if i < len(a) && a[i] == x {
+		return i
+	}
+	return -1
+}
+
+If the elements have type int, then use standard library's sort.SearchInts.
+It returns the smallest matching index.
+Alternative implementation:
+
+import "sort"
+func binarySearch(a []T, x T) int {
+	f := func(i int) bool { return a[i] >= x }
+	i := sort.Search(len(a), f)
+	if i < len(a) && a[i] == x {
+		return i
+	}
+	return -1
+}
+
+This uses the standard library generic-purpose sort.Search. Read the documentation carefully.
+It returns the smallest matching index.
+Alternative implementation:
+
+import "slices"
+func binarySearch(a []T, x T) int {
+	if i, ok := slices.BinarySearch(a, x); ok {
+		return i
+	} else {
+		return -1
+	}
+}
+
+This generic func slices.BinarySearch works for all slice types
+	
+;;125.0 Mr.: 1--import "time"
+
+t1 := time.Now()
+foo()
+t := time.Since(t1)
+ns := int64(t / time.Nanosecond)
+fmt.Printf("%dns\n", ns)
+
+t1 has type time.Time.
+t has type time.Duration.
+Alternative implementation:
+
+import "time"
+t1 := time.Now()
+foo()
+t := time.Since(t1)
+ns := t.Nanoseconds()
+fmt.Printf("%dns\n", ns)
+
+t1 has type time.Time.
+t has type time.Duration.
+ns has type int64.
+	
+;;126.0 Mr.: 1--func foo() (string, bool) {
+	return "Too good to be", true
+}
+
+	
+;;127.0 Mr.: 1--import _  "embed"
+
+//go:embed foobody.txt
+var s string
+
+	
+;;128.0 Mr.: 1--func (root *Tree) Bfs(f func(*Tree)) {
+	if root == nil {
+		return
+	}
+	queue := []*Tree{root}
+	for len(queue) > 0 {
+		t := queue[0]
+		queue = queue[1:]
+		f(t)
+		queue = append(queue, t.Children...)
+	}
+}
+
+Bfs is a method of type *Tree, and takes function f as an argument.
+
+The queue grows and shrinks during traversal, until all nodes have been visited.
+	
+;;129.0 Mr.: 1--func (start *Vertex) Bfs(f func(*Vertex)) {
+	queue := []*Vertex{start}
+	seen := map[*Vertex]bool{start: true}
+	for len(queue) > 0 {
+		v := queue[0]
+		queue = queue[1:]
+		f(v)
+		for next, isEdge := range v.Neighbours {
+			if isEdge && !seen[next] {
+				queue = append(queue, next)
+				seen[next] = true
+			}
+		}
+	}
+}
+
+Bfs is a method of type *Vertex : the receiver is the start node.
+The function f is a parameter of the traversal method.
+	
+;;130.0 Mr.: 1--func (v *Vertex) Dfs(f func(*Vertex), seen map[*Vertex]bool) {
+	seen[v] = true
+	f(v)
+	for next, isEdge := range v.Neighbours {
+		if isEdge && !seen[next] {
+			next.Dfs(f, seen)
+		}
+	}
+}
+
+Dfs is a method of type *Vertex : the receiver is the start node.
+The function f is a parameter of the traversal method.
+Start with an empty map as initial seen parameter.
+Alternative implementation:
+
+func (v *Vertex[L]) Dfs(f func(*Vertex[L]), seen map[*Vertex[L]]bool) {
+	seen[v] = true
+	f(v)
+	for next, isEdge := range v.Neighbours {
+		if isEdge && !seen[next] {
+			next.Dfs(f, seen)
+		}
+	}
+}
+
+Dfs is a method of type *Vertex : the receiver is the start node.
+The function f is a parameter of the traversal method.
+Start with an empty map as initial seen parameter.
+Vertex has a type parameter L as its node label.
+	
+;;131.0 Mr.: 1--switch {
+case c1:
+	f1()
+case c2:
+	f2()
+case c3:
+	f3()
+}
+
+	
+;;132.0 Mr.: 1--import "time"
+
+func clock(f func()) time.Duration {
+	t := time.Now()
+	f()
+	return time.Since(t)
+}
+
+You may use this clock function to time any piece of code, by wrapping the code in a closure of type func().
+	
+;;133.0 Mr.: 1--import "strings"
+
+lowerS, lowerWord := strings.ToLower(s), strings.ToLower(word)
+ok := strings.Contains(lowerS, lowerWord)
+
+Package strings has no case-insensitive version of Contains, so we have to convert to lowercase (or uppercase) first.
+	
+;;134.0 Mr.: 1--items := []T{a, b, c}
+
+This creates a slice of type T.
+	
+;;135.0 Mr.: 1--for i, y := range items {
+	if y == x {
+		items = append(items[:i], items[i+1:]...)
+		break
+	}
+}
+
+First find a matching index i. Then remove at position i.
+
+Warning: you may have a memory leak at the last element of the original list, if the items have a pointer type.
+Alternative implementation:
+
+for i, y := range items {
+	if y == x {
+		copy(items[i:], items[i+1:])
+		items[len(items)-1] = nil
+		items = items[:len(items)-1]
+		break
+	}
+}
+
+First find a matching index i. Then remove at position i.
+This code is for pointer value type, and has no memory leak.
+Alternative implementation:
+
+import "slices"
+func removeFirstByValue[S ~[]T, T comparable](items *S, x T) {
+	for i, y := range *items {
+		if y == x {
+			*items = slices.Delete(*items, i, i+1)
+			return
+		}
+	}
+}
+
+removeFirstByValue is generic. Its type parameter T has a constraint: must be comparable with ==.
+Alternative implementation:
+
+import "slices"
+func removeFirstByValue[S ~[]T, T comparable](items *S, x T) {
+	if i := slices.Index(*items, x); i != -1 {
+		*items = slices.Delete(*items, i, i+1)
+	}
+}
+
+removeFirstByValue is generic. Its type parameters S, T have a constraint: T must be comparable with ==.
+	
+;;136.0 Mr.: 1--items2 := make([]T, 0, len(items))
+for _, v := range items {
+	if v != x {
+		items2 = append(items2, v)
+	}
+}
+
+This is simple and runs in linear time.
+However, it allocates memory for the new slice items2.
+T is the type of the elements.
+Alternative implementation:
+
+j := 0
+for i, v := range items {
+	if v != x {
+		items[j] = items[i]
+		j++
+	}
+}
+items = items[:j]
+
+This filters items in-place in linear time.
+But don't use it with pointer elements, because you would have a memory leak at the end of the underlying array.
+Alternative implementation:
+
+j := 0
+for i, v := range items {
+	if v != x {
+		items[j] = items[i]
+		j++
+	}
+}
+for k := j; k < len(items); k++ {
+	items[k] = nil
+}
+items = items[:j]
+
+This filters items in-place in linear time.
+The "tail" elements are set to nil to leverage garbage collection, avoiding a memory leak.
+Alternative implementation:
+
+func removeAll[S ~[]T, T comparable](items *S, x T) {
+	j := 0
+	for i, v := range *items {
+		if v != x {
+			(*items)[j] = (*items)[i]
+			j++
+		}
+	}
+	var zero T
+	for k := j; k < len(*items); k++ {
+		(*items)[k] = zero
+	}
+	*items = (*items)[:j]
+}
+
+The type parameter T has a constraint: it must be comparable with ==
+In case T contains pointers, zeroing discarded elements helps garbage collection.
+Alternative implementation:
+
+import "slices"
+items = slices.DeleteFunc(items, func(e T) bool {
+	return e == x
+})
+
+T is the type of the elements.
+	
+;;137.0 Mr.: 1--b := true
+for _, c := range s {
+	if c < '0' || c > '9' {
+		b = false
+		break
+	}
+}
+
+c has type rune.
+Alternative implementation:
+
+import "strings"
+isNotDigit := func(c rune) bool { return c < '0' || c > '9' }
+b := strings.ContainsFunc(s, isNotDigit) 
+
+	
+;;138.0 Mr.: 1--import "os"
+
+tmpfile, err := os.CreateTemp("", "")
+
+tmpfile has type *os.File.
+
+Use tmpfile.Name() if you need the path string.
+
+Consider defer os.Remove(tmpfile.Name()) for cleanup.
+	
+;;139.0 Mr.: 1--import "os"
+
+dir, err := os.MkdirTemp("", "")
+
+dir is a string.
+
+Consider defer os.RemoveAll(dir) for cleanup.
+	
+;;140.0 Mr.: 1--delete(m, k)
+
+delete is a built-in function.
+
+It's safe even if k is already absent from m.
+	
+;;141.0 Mr.: 1--for _, v := range items1 {
+	fmt.Println(v)
+}
+for _, v := range items2 {
+	fmt.Println(v)
+}
+
+No magic sugar. Write 2 loops.
+	
+;;142.0 Mr.: 1--import "strconv"
+
+s := strconv.FormatInt(x, 16)
+
+Alternative implementation:
+
+import "fmt"
+import "math/big"
+s := fmt.Sprintf("%x", x)
+
+x has type *big.Int.
+
+This works because *big.Int implements the fmt.Formatter interface.
+
+%x is the "verb" for base 16. Not to be confused with the variable name x.
+	
+;;143.0 Mr.: 1--for i := 0; i < len(items1) || i < len(items2); i++ {
+	if i < len(items1) {
+		fmt.Println(items1[i])
+	}
+	if i < len(items2) {
+		fmt.Println(items2[i])
+	}
+}
+
+Alternative implementation:
+
+import "fmt"
+for i := range min(len(items1), len(items2)) {
+	fmt.Println(items1[i])
+	fmt.Println(items2[i])
+
+}
+
+	
+;;144.0 Mr.: 1--import "os"
+
+_, err := os.Stat(fp)
+b := !os.IsNotExist(err)
+
+There's no specific existence check func in standard library, so we have to inspect an error return value.
+	
+;;145.0 Mr.: 1--import "log"
+
+log.Println(msg)
+
+This prints to os.Stderr by default, with a datetime prefix.
+	
+;;146.0 Mr.: 1--import "strconv"
+
+f, err := strconv.ParseFloat(s, 64)
+
+f has type float64.
+	
+;;147.0 Mr.: 1--import "regexp"
+
+re := regexp.MustCompile("[[:^ascii:]]")
+t := re.ReplaceAllLiteralString(s, "")
+
+Alternative implementation:
+
+import (
+	"fmt"
+	"strings"
+	"unicode"
+)
+
+t := strings.Map(func(r rune) rune {
+	if r > unicode.MaxASCII {
+		return -1
+	}
+	return r
+}, s)
+
+	
+;;148.0 Mr.: 1--import (
+	"bufio"
+	"os"
+	"strconv"
+)
+
+var ints []int
+s := bufio.NewScanner(os.Stdin)
+s.Split(bufio.ScanWords)
+for s.Scan() {
+	i, err := strconv.Atoi(s.Text())
+	if err == nil {
+		ints = append(ints, i)
+	}
+}
+if err := s.Err(); err != nil {
+	return err
+}
+
+	
+;;149.0 Rescue the princess: As an exception, this content is not under license CC BY-SA 3.0 like the rest of this website.-
+
+	
+;;150.0 Mr.: 1--import "strings"
+
+p = strings.TrimSuffix(p, "/")
+
+	
+;;151.0 Mr.: 1--import "fmt"
+import "os"
+import "strings"
+sep := fmt.Sprintf("%c", os.PathSeparator)
+p = strings.TrimSuffix(p, sep)
+
+os.PathSeparator is a rune, it must be converted to string.
+Alternative implementation:
+
+import "fmt"
+import "path/filepath"
+import "strings"
+sep := fmt.Sprintf("%c", filepath.Separator)
+p = strings.TrimSuffix(p, sep)
+
+filepath.Separator is a rune, it must be converted to string.
+	
+;;152.0 Mr.: 1--import "fmt"
+
+s := fmt.Sprintf("%c", c)
+
+	
+;;153.0 Mr.: 1--import "fmt"
+
+t := fmt.Sprintf("%s%d", s, i)
+
+Alternative implementation:
+
+import "strconv"
+t := s + strconv.Itoa(i)
+
+This is faster than fmt.Sprintf.
+	
+;;154.0 Mr.: 1--import "fmt"
+import "strconv"
+r1, _ := strconv.ParseInt(c1[1:3], 16, 0)
+r2, _ := strconv.ParseInt(c2[1:3], 16, 0)
+r := (r1 + r2) / 2
+
+g1, _ := strconv.ParseInt(c1[3:5], 16, 0)
+g2, _ := strconv.ParseInt(c2[3:5], 16, 0)
+g := (g1 + g2) / 2
+
+b1, _ := strconv.ParseInt(c1[5:7], 16, 0)
+b2, _ := strconv.ParseInt(c2[5:7], 16, 0)
+b := (b1 + b2) / 2
+
+c := fmt.Sprintf("#%02X%02X%02X", r, g, b)
+
+For conciseness this assumes that input validity has already been checked, so we omit some returned errors.
+Alternative implementation:
+
+import "fmt"
+import "strconv"
+var buf [7]byte
+buf[0] = '#'
+for i := 0; i < 3; i++ {
+	sub1 := c1[1+2*i : 3+2*i]
+	sub2 := c2[1+2*i : 3+2*i]
+	v1, _ := strconv.ParseInt(sub1, 16, 0)
+	v2, _ := strconv.ParseInt(sub2, 16, 0)
+	v := (v1 + v2) / 2
+	sub := fmt.Sprintf("%02X", v)
+	copy(buf[1+2*i:3+2*i], sub)
+}
+c := string(buf[:])
+
+Loops over each component r, g, b.
+
+For conciseness this assumes that input validity has already been checked, so we omit some returned errors.
+	
+;;155.0 Mr.: 1--import "os"
+
+err := os.Remove(filepath)
+
+	
+;;156.0 Mr.: 1--import "fmt"
+
+s := fmt.Sprintf("%03d", i)
+
+Flag 0 means "pad with zeroes, not with spaces".
+Flag 3 is the width.
+	
+;;157.0 Mr.: 1--const planet = "Earth"
+
+Type string is inferred.
+	
+;;158.0 Mr.: 1--import "math/rand"
+
+y := make([]T, k)
+perm := rand.Perm(len(x))
+for i, v := range perm[:k] {
+	y[i] = x[v]
+}
+
+Allocate a slice of T of size exactly k.
+perm is a slice of int of size len(x).
+This is O(len(x)) in space and runtime.
+
+The original ordering is not preserved.
+	
+;;159.0 Mr.: 1--type Trie struct {
+	c        rune
+	children map[rune]*Trie
+	isEntry  bool
+	value    V
+}
+
+Using type rune, multi-byte characters are correctly handled.
+V is the type of the associated values.
+	
+;;160.0 Mr.: 1--import "strconv"
+
+if strconv.IntSize==32 {
+	f32()
+}
+if strconv.IntSize==64 {
+	f64()
+}
+
+	
+;;161.0 Mr.: 1--for i := range elements {
+	elements[i] *= c
+}
+
+It is idiomatic to write this explicit loop.
+	
+;;162.0 Mr.: 1--import "flag"
+
+var b = flag.Bool("b", false, "Do bat")
+var f = flag.Bool("f", false, "Do fox")
+
+func main() {
+	flag.Parse()
+	if *b {
+		bar()
+	}
+	if *f {
+		fox()
+	}
+}
+
+It is idiomatic to use package flag, and pass options as -b -f
+(with a dash).
+	
+;;163.0 Mr.: 1--import "fmt"
+
+for i := 0; i+1 < len(list); i += 2 {
+	fmt.Println(list[i], list[i+1])
+}
+
+	
+;;164.0 Open URL in the default browser: Open the URL s in the default browser.-- Set the boolean b to indicate whether the operation was successful
+import "github.com/skratchdot/open-golang/open"
+b := open.Start(s) == nil
+
+Alternative implementation:
+
+func openbrowser(url string) {
+	var err error
+
+	switch runtime.GOOS {
+	case "linux":
+		err = exec.Command("xdg-open", url).Start()
+	case "windows":
+		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", url).Start()
+	case "darwin":
+		err = exec.Command("open", url).Start()
+	default:
+		err = fmt.Errorf("unsupported platform")
+	}
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+	
+;;165.0 Mr.: 1--x := items[len(items)-1]
+
+items is a slice.
+There is no shortcut, use len!
+Panics if the list is empty.
+	
+;;166.0 Mr.: 1--ab := append(a, b...)
+
+Warning! a and ab may or may not share the same underlying memory.
+Alternative implementation:
+
+var ab []T
+ab = append(append(ab, a...), b...)
+
+This ensures that ab is a new list (not sharing any memory with a and b).
+T is the type of the elements.
+Alternative implementation:
+
+ab := make([]T, len(a)+len(b))
+copy(ab, a)
+copy(ab[len(a):], b)
+
+	
+;;167.0 Mr.: 1--import "strings"
+
+t := strings.TrimPrefix(s, p)
+
+	
+;;168.0 Mr.: 1--import "strings"
+
+t := strings.TrimSuffix(s, w)
+
+	
+;;169.0 Mr.: 1--import "unicode/utf8"
+
+n := utf8.RuneCountInString(s)
+
+This assumes that s is encoded in UTF-8 (which is idiomatic in Go).
+	
+;;170.0 Mr.: 1--n := len(mymap)
+
+	
+;;171.0 Mr.: 1--s = append(s, x)
+
+	
+;;172.0 Mr.: 1--m[k] = v
+
+If m[k] already exists, then it is overwritten.
+	
+;;173.0 Mr.: 1--import "golang.org/x/text/language"
+import "golang.org/x/text/message"
+p := message.NewPrinter(language.English)
+s := p.Sprintf("%d\n", 1000)
+
+	
+;;174.0 Mr.: 1--import "net/http"
+
+response, err := http.Post(u, contentType, body)
+
+contentType is a string.
+body is a io.Reader which can be nil.
+Alternative implementation:
+
+import "net/http"
+import "net/url"
+response, err := http.PostForm(u, formValues)
+
+formValues has type net/url.Values
+	
+;;175.0 Mr.: 1--import "encoding/hex"
+
+s := hex.EncodeToString(a)
+
+This is faster than fmt.Sprintf
+Alternative implementation:
+
+import "fmt"
+s := fmt.Sprintf("%x", a)
+
+%x base 16, lower-case, two characters per byte.
+
+This is slower than hex.EncodeToString
+	
+;;176.0 Mr.: 1--import "encoding/hex"
+
+a, err := hex.DecodeString(s)
+if err != nil {
+	log.Fatal(err)
+}
+
+	
+;;177.0 Mr.: 1--import "path/filepath"
+import "strings"
+L := []string{}
+err := filepath.Walk(D, func(path string, info os.FileInfo, err error) error {
+	if err != nil {
+		fmt.Printf("failure accessing a path %q: %v\n", path, err)
+		return err
+	}
+	for _, ext := range []string{".jpg", ".jpeg", ".png"} {
+		if strings.HasSuffix(path, ext) {
+			L = append(L, path)
+			break
+		}
+	}
+	return nil
+})
+
+	
+;;178.0 Mr.: 1--import "image"
+
+p := image.Pt(x, y)
+r := image.Rect(x1, y1, x2, y2)
+b := p.In(r)
+
+Points on the edge of the rectangle are considered as in the rectangle.
+	
+;;179.0 Mr.: 1--import "image"
+
+c := image.Pt((x1+x2)/2, (y1+y2)/2)
+
+Implementation for x1, x2, y1 and y2 as int.
+	
+;;180.0 Mr.: 1--import "os"
+
+x, err := os.ReadDir(d)
+
+x is a slice of os.FileInfo
+	
+;;182.0 Mr.: 1--package main
+
+import "fmt"
+func main() {
+	fmt.Printf("%s%c%s%c\n", s, 0x60, s, 0x60)
+}
+
+var s = `package main
+
+import "fmt"
+func main() {
+	fmt.Printf("%s%c%s%c\n", s, 0x60, s, 0x60)
+}
+
+var s = `
+
+	
+;;183.0 Mr.: 1--import "net/http"
+
+req, err := http.NewRequest("PUT", u, body)
+if err != nil {
+	return err
+}
+req.Header.Set("Content-Type", contentType)
+req.ContentLength = contentLength
+response, err := http.DefaultClient.Do(req)
+
+This assumes you know contentLength beforehand.
+body is a io.Reader which can be nil.
+	
+;;184.0 Mr.: 1--import "time"
+
+t := time.Now().Add(24 * time.Hour).Format("2006-01-02")
+
+	
+;;185.0 Mr.: 1--import "time"
+
+timer := time.AfterFunc(
+	30*time.Second,
+	func() {
+		f(42)
+	})
+
+f is wrapped in an anonymous func having 0 arg and 0 return value.
+
+The timer instance can be used to cancel the call.
+Alternative implementation:
+
+import "time"
+go func() {
+	time.Sleep(30 * time.Second)
+	f(42)
+}()
+
+The code after the goroutine launch executes immediately.
+
+Consider adding proper synchronization where needed. Data races are forbidden!
+	
+;;186.0 Mr.: 1--import "os"
+
+os.Exit(0)
+
+Alternative implementation:
+
+import "os"
+defer os.Exit(0)
+
+defer would be used in order to run subsequent deferred statements before exiting
+	
+;;188.0 Mr.: 1--import "gonum.org/v1/gonum/mat"
+
+c := new(mat.Dense)
+c.Mul(a, b)
+
+	
+;;189.0 Mr.: 1--var y []Result
+for _, e := range x {
+	if P(e) {
+		y = append(y, T(e))
+	}
+}
+
+No functional style: just a regular loop.
+
+y is not fully allocated upfront because the number of matching elements is not known yet.
+	
+;;190.0 Mr.: 1--void foo(double *a, int n);
+// double a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+import "C"
+C.foo(C.a, 10)
+
+	
+;;191.0 Check if any value in a list is larger than a limit: Given a one-dimensional array a, check if any value is larger than x, and execute the procedure f if that is the case--for _, v := range a {
+	if v > x {
+		f()
+		break
+	}
+}
+
+Alternative implementation:
+
+import "slices"
+if slices.ContainsFunc(a, func(i int) bool {
+	return i > x
+}) {
+	f()
+}
+
+	
+;;192.0 Declare a real variable with at least 20 digits: Declare a real variable a with at least 20 digits; if the type does not exist, issue an error at compile time.--import "math/big"
+
+a, _, err := big.ParseFloat("123456789.123456789123465789", 10, 200, big.ToZero)
+
+2nd arg is the base.
+3rd arg is the precision.
+4th arg is the rounding mode.
+The precision is the maximum number of mantissa bits available to represent the value.
+	
+;;195.0 Pass a two-dimensional array: Pass an array a of real numbers to the procedure (resp. function) foo. Output the size of the array, and the sum of all its elements when each element is multiplied with the array indices i and j (assuming they start from one).--import "fmt"
+
+func foo(a [][]int) {
+	fmt.Println("array is ", len(a)[0], " x ", len(a))
+	x := 0
+	for i, v1 := range a {
+		for j, v2 := range v1 {
+			x += v2*(i+1)*(j+1)
+		}
+	}
+	fmt.Println("result: ", x)
+}
+
+	
+;;197.0 Get a list of lines from a file: Retrieve the contents of file at path into a list of strings lines, in which each element is a line of the file.--import "os"
+import "strings"
+func readLines(path string) ([]string, error) {
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+	lines := strings.Split(string(b), "\n")
+	return lines, nil
+}
+
+Alternative implementation:
+
+import "os"
+import "bytes"
+func readLines(path string) ([][]byte, error) {
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+	lines := bytes.Split(b, []byte{'\n'})
+	return lines, nil
+}
+
+This is an alternative solution, in case you prefer each line as a byte slice (instead of a string)
+	
+;;198.0 Abort program execution with error condition: Abort program execution with error condition x (where x is an integer value)--import "os"
+
+os.Exit(x)
+
+	
+;;199.0 Truncate a file at the current file position: Truncate a file F at the given file position.--import "os"
+
+err := os.Truncate(F, position)
+
+	
+;;200.0 Return hypotenuse: Compute the hypotenuse h of the triangle where the sides adjacent to the square angle have lengths x and y.--import "math"
+
+h := math.Hypot(x, y)
+
+	
+;;201.0 Euclidean norm: Calculate n, the Euclidean norm of data (an array or list of floating point values).--func Euclidean(data []float64) float64 {
+	n := 0.0
+	for _, val := range data {
+		n += val * val
+	}
+	return math.Sqrt(n)
+
+	
+;;202.0 Sum of squares: Calculate the sum of squares s of data, an array of floating point values.--import "math"
+
+var s float64
+for _, d := range data {
+	s += math.Pow(d, 2)
+}
+
+	
+;;203.0 Calculate mean and standard deviation: Calculate the mean m and the standard deviation s of the list of floating point values data.--import "github.com/gonum/stat"
+
+m, s := stat.MeanStdDev(data, nil)
+
+github.com/gonum/stat is a third party package, but well established.
+	
+;;204.0 Return fraction and exponent of a real number: Given a real number a, print the fractional part and the exponent of the internal representation of that number. For 3.14, this should print (approximately)-- 0.785 
+
+import "math"
+fmt.Println(math.Frexp(a))
+
+	
+;;205.0 Get an environment variable: Read an environment variable with the name "FOO" and assign it to the string variable foo. If it does not exist or if the system does not support environment variables, assign a value of "none".--import "os"
+
+foo, ok := os.LookupEnv("FOO")
+if !ok {
+	foo = "none"
+}
+
+Alternative implementation:
+
+import "os"
+foo := os.Getenv("FOO")
+if foo == "" {
+	foo = "none"
+}
+
+This is fine if empty string means "no value" in your use case.
+
+To distinguish between an empty value and an unset value, use os.LookupEnv.
+	
+;;206.0 Switch statement with strings: Execute different procedures foo, bar, baz and barfl if the string str contains the name of the respective procedure. Do it in a way natural to the language.--switch str {
+case "foo":
+	foo()
+case "bar":
+	bar()
+case "baz":
+	baz()
+case "barfl":
+	barfl()
+}
+
+	
+;;207.0 Allocate a list that is automatically deallocated: Allocate a list a containing n elements (n assumed to be too large for a stack) that is automatically deallocated when the program exits the scope it is declared in.--a := make([]T, n)
+
+Elements have type T.
+a is garbage-collected after the program exits its scope, unless we let it "escape" by taking its reference.
+The runtime decides if a lives in the stack on in the heap.
+	
+;;208.0 Formula with arrays: Given the arrays a,b,c,d of equal length and the scalar e, calculate a = e*(a+b*c+cos(d)).-- Store the results in a
+import "math"
+func applyFormula(a, b, c, d []float64, e float64) {
+	for i, v := range a {
+		a[i] = e * (v + b[i] + c[i] + math.Cos(d[i]))
+	}
+}
+
+	
+;;209.0 Type with automatic deep deallocation: Declare a type t which contains a string s and an integer array n with variable size, and allocate a variable v of type t. Allocate v.s and v.n and set them to the values "Hello, world!" for s and [1,4,9,16,25], respectively. Deallocate v, automatically deallocating v.s and v.n (no memory leaks).--type t struct {
+	s string
+	n []int
+}
+
+v := t{
+	s: "Hello, world!",
+	n: []int{1, 4, 9, 16, 25},
+}
+
+After v goes out of scope, v and all its fields will be garbage-collected, recursively
+	
+;;210.0 Compiler version and options: Assign, at runtime, the compiler version and the options the program was compilerd with to variables version and options, respectively, and print them. For interpreted languages, substitute the version of the interpreter.-- Example output
+GCC version 10.0.0 20190914 (experimental)
+-mtune=generic -march=x86-64
+	
+
+import "runtime"
+version := runtime.Version()
+
+	
+;;211.0 Create folder: Create the folder at path on the filesystem--import "os"
+
+err := os.Mkdir(path, os.ModeDir)
+
+This works only if path's parent already exists.
+Alternative implementation:
+
+import "os"
+err := os.MkdirAll(path, os.ModeDir)
+
+MkdirAll creates any necessary parents.
+	
+;;212.0 Check if folder exists: Set the boolean b to true if path exists on the filesystem and is a directory; false otherwise.--import "os"
+
+info, err := os.Stat(path)
+b := !os.IsNotExist(err) && info.IsDir()
+
+	
+;;214.0 Pad string on the right: Append extra character c at the end of string s to make sure its length is at least m.-- The length is the number of characters, not the number of bytes
+import "strings"
+import "utf8"
+if n := utf8.RuneCountInString(s); n < m {
+	s += strings.Repeat(c, m-n)
+}
+
+c here is a one-character string
+	
+;;215.0 Pad string on the left: Prepend extra character c at the beginning of string s to make sure its length is at least m.-- The length is the number of characters, not the number of bytes
+import "strings"
+import "utf8"
+if n := utf8.RuneCountInString(s); n < m {
+	s = strings.Repeat(c, m-n) + s
+}
+
+c here is a one-character string
+	
+;;216.0 Pad a string on both sides: Add the extra character c at the beginning and ending of string s to make sure its length is at least m.-- After the padding the original content of s should be at the center of the result. The length is the number of characters, not the number of bytes
+E.g. with s="abcd", m=10 and c="X" the result should be "XXXabcdXXX".
+	
+
+import "encoding/utf8"
+import "strings"
+n := utf8.RuneCountInString(s)
+if n < m {
+	nleft := (m - n) / 2
+	nright := (m - n) - nleft
+	left, right := strings.Repeat(string(c), nleft), strings.Repeat(string(c), nright)
+	s = left + s + right
+}
+
+c is a rune
+	
+;;217.0 Create a Zip archive: Create a zip-file with filename name and add the files listed in list to that zip-file.--import "archive/zip"
+import "bytes"
+import "os"
+import "io"
+buf := new(bytes.Buffer)
+w := zip.NewWriter(buf)
+for _, filename := range list {
+	input, err := os.Open(filename)
+	if err != nil {
+		return err
+	}
+	output, err := w.Create(filename)
+	if err != nil {
+		return err
+	}
+	_, err = io.Copy(output, input)
+	if err != nil {
+		return err
+	}
+}
+
+err := w.Close()
+if err != nil {
+	return err
+}
+
+err = os.WriteFile(name, buf.Bytes(), 0777)
+if err != nil {
+	return err
+}
+
+list contains filenames of files existing in the filesystem.
+In this example, the zip data is buffered in memory before writing to the filesystem.
+	
+;;218.0 List intersection: Create the list c containing all unique elements that are contained in both lists a and b.-- c should not contain any duplicates, even if a and b do. The order of c doesn't matter
+
+seta := make(map[T]bool, len(a))
+for _, x := range a {
+	seta[x] = true
+}
+setb := make(map[T]bool, len(a))
+for _, y := range b {
+	setb[y] = true
+}
+
+var c []T
+for x := range seta {
+	if setb[x] {
+		c = append(c, x)
+	}
+}
+
+Convert to sets, then iterate in one pass.
+The runtime cost is O(n).
+Elements have type T.
+The final order is indeterminate.
+Alternative implementation:
+
+func intersection[S ~[]T, T comparable](a, b S) S {
+	seta := make(map[T]bool, len(a))
+	for _, x := range a {
+		seta[x] = true
+	}
+	setb := make(map[T]bool, len(b))
+	for _, y := range b {
+		setb[y] = true
+	}
+
+	var c S
+	for x := range seta {
+		if setb[x] {
+			c = append(c, x)
+		}
+	}
+	return c
+}
+
+Convert to sets, then iterate in one pass.
+The runtime cost is O(n).
+The final order is indeterminate.
+Works for any type parameter T.
+Alternative implementation:
+
+func intersection[S ~[]T, T comparable](a, b S) S {
+	s, l := a, b
+	if len(b) < len(a) {
+		s, l = b, a
+	}
+
+	set := make(map[T]struct{}, len(s))
+	for _, x := range s {
+		set[x] = struct{}{}
+	}
+
+	c := make(S, 0, len(s))
+	for _, x := range l {
+		if _, found := set[x]; found {
+			c = append(c, x)
+			delete(set, x)
+		}
+	}
+	return c
+}
+
+Convert the smallest slices to a set, then iterate on the other slice to see which elements are also in the set.
+Duplicate elements are ignored.
+The final order is indeterminate.
+Works for any comparable type T.
+
+
+Complexity: O(N) [N = len(a)+len(b)]
+Memory: O(N) [N = min(len(a), len(b)]
+	
+;;219.0 Replace multiple spaces with single space: Create the string t from the value of string s with each sequence of spaces replaced by a single space.-- Explain if only the space characters will be replaced, or the other whitespaces as well: tabs, newlines
+
+import "regexp"
+whitespaces := regexp.MustCompile(`\s+`)
+t := whitespaces.ReplaceAllString(s, " ")
+
+The whitespaces regexp can be reused.
+	
+;;220.0 Create a tuple value: Create t consisting of 3 values having different types.-- Explain if the elements of t are strongly typed or not
+
+t := []any{
+	2.5,
+	"hello",
+	make(chan int),
+}
+
+A slice of empty interface may hold any values (not strongly typed).
+Alternative implementation:
+
+a, b, c := 2.5, "hello", make(chan int)
+
+a, b, c are strongly typed and could hold the multiple return values of a func.
+
+While a, b, c can most often be used like a tuple, they are technically not a tuple named t.
+	
+;;221.0 Remove all non-digits characters: Create string t from string s, keeping only digit characters 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.--import "regexp"
+
+re := regexp.MustCompile("[^\\d]")
+t := re.ReplaceAllLiteralString(s, "")
+
+	
+;;222.0 Find the first index of an element in list: Set i to the first index in list items at which the element x can be found, or -1 if items does not contain x.--i := -1
+for j, e := range items {
+	if e == x {
+		i = j
+		break
+	}
+}
+
+Explicit loop, for your own strongly typed helper func.
+Alternative implementation:
+
+import "slices"
+i := slices.Index(items, x)
+
+This generic func slices.Index works for all slice types
+	
+;;223.0 for else loop: Loop through list items checking a condition. Do something else if no matches are found.-- A typical use case is looping through a series of containers looking for one that matches a condition. If found, an item is inserted; otherwise, a new container is created
+These are mostly used as an inner nested loop, and in a location where refactoring inner logic into a separate function reduces clarity.
+	
+
+for _, item := range items {
+    if item == "baz" {
+        fmt.Println("found it")
+        goto exit
+    }
+}
+{
+    fmt.Println("not found")
+}
+exit:
+
+Go does not have a for...else construct, but a structured goto label works well.
+	
+;;224.0 Add element to the beginning of the list: Insert the element x at the beginning of the list items.--items = append([]T{x}, items...)
+
+items has type []T.
+This implementation always allocates a full new slice.
+Alternative implementation:
+
+items = append(items, x)
+copy(items[1:], items)
+items[0] = x
+
+This implementation is verbose, but it will often not allocate, when items has enough capacity.
+Alternative implementation:
+
+func prepend[S ~[]T, T any](items *S, x ...T) {
+	*items = append(x, *items...)
+}
+
+This generic func always allocates a full new slice.
+The variadic argument x accepts one or more values to be inserted at the beginning.
+Alternative implementation:
+
+func prepend[S ~[]T, T any](items *S, x ...T) {
+	*items = append(*items, x...)
+	copy((*items)[len(x):], *items)
+	copy(*items, x)
+}
+
+This generic func does not always allocate (depending on the capacity of items).
+The variadic argument x accepts one or more values to insert at the beginning.
+	
+;;225.0 Declare and use an optional argument: Declare an optional integer argument x to procedure f, printing out "Present" and its value if it is present, "Not present" otherwise--func f(x ...int) {
+	if len(x) > 0 {
+		println("Present", x[0])
+	} else {
+		println("Not present")
+	}
+}
+
+Go does not have optional arguments, but to some extend, they can be mimicked with a variadic parameter.
+x is a variadic parameter, which must be the last parameter for the function f.
+Strictly speaking, x is a list of integers, which might have more than one element. These additional elements are ignored.
+	
+;;226.0 Delete last element from list: Remove the last element from the list items.--items = items[:len(items)-1]
+
+If items is already empty, this will panic with "slice bounds out of range".
+Warning: the last element still exists beyond len(items), thus it won't be garbage collected.
+Alternative implementation:
+
+import "slices"
+items = slices.Delete(items, len(items)-1, len(items))
+
+	
+;;227.0 Copy a list: Create the new list y containing the same elements as the list x.-- Subsequent modifications of y must not affect x (except for the contents referenced by the elements themselves if they contain pointers)
+
+y := make([]T, len(x))
+copy(y, x)
+
+Elements have type T
+Note that the destination is the first argument of copy.
+Alternative implementation:
+
+import "slices"
+y := slices.Clone(x)
+
+This generic Clone func accepts x of any slice type
+	
+;;228.0 Mr.: 1--import "os"
+
+func copy(dst, src string) error {
+	data, err := os.ReadFile(src)
+	if err != nil {
+		return err
+	}
+	stat, err := os.Stat(src)
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(dst, data, stat.Mode())
+}
+
+This is fine if the file is small enough to fit in memory.
+Warning: in Unix, the destination file's mode and permission bits may be different from the source file's, because umask is applied.
+Alternative implementation:
+
+import "os"
+func copy(dst, src string) error {
+	data, err := os.ReadFile(src)
+	if err != nil {
+		return err
+	}
+	stat, err := os.Stat(src)
+	if err != nil {
+		return err
+	}
+	err = os.WriteFile(dst, data, stat.Mode())
+	if err != nil {
+		return err
+	}
+	return os.Chmod(dst, stat.Mode())
+}
+
+This is fine if the file is small enough to fit in memory.
+This preserves the source file's mode and permission bits (overriding umask in Unix).
+Alternative implementation:
+
+import "io"
+import "os"
+func copy(dst, src string) error {
+	f, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	stat, err := f.Stat()
+	if err != nil {
+		return err
+	}
+	g, err := os.OpenFile(dst, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, stat.Mode())
+	if err != nil {
+		return err
+	}
+	defer g.Close()
+	_, err = io.Copy(g, f)
+	if err != nil {
+		return err
+	}
+	return os.Chmod(dst, stat.Mode())
+}
+
+This can handle large files.
+	
+;;229.0 Cancel an operation: Interrupt an ongoing processing p.--import "context"
+
+ctx, cancel := context.WithCancel(context.Background())
+go p(ctx)
+
+somethingElse()
+
+cancel()
+
+Pass a Context to p and execute p.
+p is responsible for shutting down gracefully when ctx is canceled
+	
+;;230.0 Timeout: Cancel an ongoing processing p if it has not finished after 5s.--import "context"
+
+ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+defer cancel()
+p(ctx)
+
+p is responsible for shutting down gracefully when ctx is canceled.
+	
+;;231.0 Test if bytes are a valid UTF-8 string: Set b to true if the byte sequence s consists entirely of valid UTF-8 character code points, false otherwise.--import "unicode/utf8"
+
+b := utf8.Valid(s)
+
+s is a []byte.
+	
+;;232.0 Read a command line boolean flag: Print "verbose is true" if the flag -v was passed to the program command line, "verbose is false" otherwise.--import "flag"
+
+var verbose = flag.Bool("v", false, "verbose")
+flag.Parse()
+fmt.Println("verbose is", *verbose)
+
+verbose has pointer type *bool.
+Call Parse only once, after all flags are defined and before flags are read.
+Flags must be passed before the non-flag arguments.
+	
+;;233.0 Read a command line string flag: Print the value of the flag -country passed to the program command line, or the default value "Canada" if no such flag was passed.--import "flag"
+
+var country = flag.String("country", "Canada", "user home country")
+flag.Parse()
+fmt.Println("country is", *country)
+
+country has pointer type *string.
+Call Parse only once, after all flags are defined and before flags are read.
+Flags must be passed before the non-flag arguments.
+	
+;;234.0 Encode bytes to base64: Assign to the string s the standard base64 encoding of the byte array data, as specified by RFC 4648.--import "encoding/base64"
+
+s := base64.StdEncoding.EncodeToString(data)
+
+	
+;;235.0 Decode base64: Assign to byte array data the bytes represented by the base64 string s, as specified by RFC 4648.--import "encoding/base64"
+
+data, err := base64.StdEncoding.DecodeString(s)
+
+	
+;;236.0 Large quotient: Initialize a quotient q = a/b of arbitrary precision. a and b are large integers.--import "math/big"
+
+q := new(big.Rat)
+q.SetString(str)
+
+str is a quotient string including numerator, slash, denominator.
+Alternative implementation:
+
+import "math/big"
+q := new(big.Rat)
+q.SetFrac(a, b)
+
+a, b have type *big.Int
+Alternative implementation:
+
+import "math/big"
+q := big.NewRat(a, b)
+
+This creates a quotient from int64 values.
+Subsequent computations have arbitrary precision.
+	
+;;237.0 Xor integers: Assign to c the result of (a xor b)--c := a ^ b
+
+a, b, c have the same integer type (signed or unsigned)
+Alternative implementation:
+
+import "math/big"
+c := new(big.Int)
+c.Xor(a, b)
+
+a, b, c have big integer type *big.Int
+	
+;;238.0 Xor byte arrays: Write in a new byte array c the xor result of byte arrays a and b.-- a and b have the same size
+
+c := make([]byte, len(a))
+for i := range a {
+	c[i] = a[i] ^ b[i]
+}
+
+Byte slices []byte are more idiomatic than arrays.
+Alternative implementation:
+
+var c T
+for i := range a {
+	c[i] = a[i] ^ b[i]
+}
+
+T is a fixed-sized array type, e.g. [5]byte.
+	
+;;239.0 Find first regular expression match: Assign to string x the first word of string s consisting of exactly 3 digits, or the empty string if no such match exists.-- A word containing more digits, or 3 digits as a substring fragment, must not match
+
+import "regexp"
+re := regexp.MustCompile(`\b\d\d\d\b`)
+x := re.FindString(s)
+
+re may (and should) be reused.
+\b matches word boundaries.
+\d matches a single digit.
+	
+;;240.0 Sort 2 lists together: Lists a and b have the same length. Apply the same permutation to a and b to have them sorted based on the values of a.--import "sort"
+
+type sorter struct {
+	k []K
+	t []T
+}
+
+func (s *sorter) Len() int {
+	return len(s.k)
+}
+
+func (s *sorter) Swap(i, j int) {
+	s.k[i], s.k[j] = s.k[j], s.k[i]
+	s.t[i], s.t[j] = s.t[j], s.t[i]
+}
+
+func (s *sorter) Less(i, j int) bool {
+	return s.k[i] < s.k[j]
+}
+
+sort.Sort(&sorter{
+	k: a,
+	t: b,
+})
+
+The custom type sorter implements the 3 methods of sort.Interface.
+Swap affects the order of 2 slices at once.
+	
+;;241.0 Yield priority to other threads: Explicitly decrease the priority of the current process, so that other execution threads have a better chance to execute now. Then resume normal execution and call the function busywork.--import "runtime"
+
+runtime.Gosched()
+busywork()
+
+After Gosched, the execution of the current goroutine resumes automatically.
+	
+;;242.0 Iterate over a set: Call a function f on each element e of a set x.--for e := range x {
+	f(e)
+}
+
+x is implemented as a map whose values are ignored.
+	
+;;243.0 Print list: Print the contents of the list or array a on the standard output.--import "fmt"
+
+fmt.Println(a)
+
+a is a slice.
+This works fine for simple types and structs.
+It won't dereference pointers.
+	
+;;244.0 Print a map: Print the contents of the map m to the standard output: keys and values.--import "fmt"
+
+fmt.Println(m)
+
+This works fine for simple types of keys and values.
+It won't dereference pointers.
+Alternative implementation:
+
+import "fmt"
+fmt.Printf("%q", m)
+
+The verb %q prints strings with nice double-quotes.
+It's not the best for all types of keys and values, though.
+	
+;;245.0 Print value of custom type: Print the value of object x having custom type T, for log or debug.--import fmt;
+
+fmt.Println(x)
+
+Will be more relevant if T implements fmt.Stringer
+	
+;;246.0 Count distinct elements: Set c to the number of distinct elements in the list items.--distinct := make(map[T]bool)
+for _, v := range items {
+	distinct[v] = true
+}
+c := len(distinct)
+
+This assumes the type T is comparable with ==
+Alternative implementation:
+
+func count[T comparable](items []T) int {
+	distinct := make(map[T]bool)
+	for _, v := range items {
+		distinct[v] = true
+	}
+	return len(distinct)
+}
+
+The type parameter T has a constraint: it must be comparable with ==
+	
+;;247.0 Filter list in-place: Remove all the elements from list x that don't satisfy the predicate p, without allocating a new list.-- Keep all the elements that do satisfy p.For languages that don't have mutable lists, refer to idiom #57 instead.
+	
+
+j := 0
+for i, v := range x {
+	if p(v) {
+		x[j] = x[i]
+		j++
+	}
+}
+x = x[:j]
+
+Discarded elements are overwritten.
+x is resliced to its new length.
+If the elements of x have a pointer type, then you should take care of a potential memory leak by setting all x[j:] elements to nil.
+Alternative implementation:
+
+j := 0
+for i, v := range x {
+	if p(v) {
+		x[j] = x[i]
+		j++
+	}
+}
+for k := j; k < len(x); k++ {
+	x[k] = nil
+}
+x = x[:j]
+
+When elements of x have pointer type, it is necessary to set discarded slice elements to nil, to avoid a memory leak.
+Alternative implementation:
+
+func Filter[S ~[]T, T any](x *S, p func(T) bool) {
+	j := 0
+	for i, v := range *x {
+		if p(v) {
+			(*x)[j] = (*x)[i]
+			j++
+		}
+	}
+	var zero T
+	for k := j; k < len(*x); k++ {
+		(*x)[k] = zero
+	}
+	*x = (*x)[:j]
+}
+
+S, T are type parameters.
+In case T contains pointers, zeroing discarded elements helps garbage collection.
+Alternative implementation:
+
+import "slices"
+del := func(t *T) bool { return !p(t) }
+
+x = slices.DeleteFunc(x, del)
+
+Elements have type T.
+del (discard) is the opposite of the function p (keep)
+	
+;;248.0 Construct a 64-bit floating-point value: Construct the "double precision" (64-bit) floating point number d from the mantissa m, the exponent e and the sign flag s (true means the sign is negative).--import "math"
+
+if s {
+	m = -m
+}
+d := math.Ldexp(m, e)
+
+	
+;;249.0 Declare and assign multiple variables: Define variables a, b and c in a concise way.-- Explain if they need to have the same type
+a, b, c := 42, "hello", 5.0
+
+a, b and c may have different types.
+	
+;;250.0 Pick a random value from a map: Choose a value x from map m.-- m must not be empty. Ignore the keys
+import "math/rand"
+func pick(m map[K]V) V {
+	k := rand.Intn(len(m))
+	i := 0
+	for _, x := range m {
+		if i == k {
+			return x
+		}
+		i++
+	}
+	panic("unreachable")
+}
+
+Alternative implementation:
+
+import "math/rand"
+func pick(m map[K]V) V {
+	k := rand.Intn(len(m))
+	for _, x := range m {
+		if k == 0 {
+			return x
+		}
+		;;k-- } panic("unreachable")}
+
+Alternative implementation:
+
+func pick[K comparable, V any](m map[K]V) V {
+	k := rand.Intn(len(m))
+	i := 0
+	for _, x := range m {
+		if i == k {
+			return x
+		}
+		i++
+	}
+	panic("unreachable")
+}
+
+The type parameter K has a constraint: it must be comparable with ==
+Alternative implementation:
+
+import "sync"
+var mu sync.RWMutex
+
+func pick(m map[int]any) any {
+	mu.RLock()
+	defer mu.RUnlock()
+	for _, v := range m {
+		return v
+	}
+	return nil
+}
+
+	
+;;251.0 Parse binary digits: Extract integer value i from its binary string representation s (in radix 2)-- E.g. "1101" -> 1
+import "strconv"
+i, err := strconv.ParseInt(s, 2, 0)
+
+i has type int64
+	
+;;252.0 Conditional assignment: Assign to the variable x the string value "a" if calling the function condition returns true, or the value "b" otherwise.--if condition() {
+	x = "a"
+} else {
+	x = "b"
+}
+
+No syntactic sugar
+	
+;;253.0 Print stack trace: Print the stack frames of the current execution thread of the program.--import "runtime/debug"
+
+debug.PrintStack()
+
+Prints to standard error
+	
+;;254.0 Replace value in list: Replace all exact occurrences of "foo" with "bar" in the string list x--for i, v := range x {
+	if v == "foo" {
+		x[i] = "bar"
+	}
+}
+
+Alternative implementation:
+
+func replaceAll[T comparable](s []T, old, new T) {
+	for i, v := range s {
+		if v == old {
+			s[i] = new
+		}
+	}
+}
+
+replaceAll(x, "foo", "bar")
+
+The type parameter T has a constraint: it must be comparable with ==
+	
+;;255.0 Print a set: Print the values of the set x to the standard output.-- The order of the elements is irrelevant and is not required to remain the same next time
+import "fmt"
+for _, v := range x {
+	fmt.Println(v)
+}
+
+note that this will only print the values of the set, not the keys
+	
+;;256.0 Count backwards: Print the numbers 5, 4, ..., 0 (included), one line per number.--import "fmt"
+
+for i := 5; i >= 0; i-- {
+	fmt.Println(i)
+}
+
+	
+;;257.0 Traverse list backwards: Print each index i and value x from the list items, from the last down to the first.--import "fmt"
+
+for i := len(items) - 1; i >= 0; i-- {
+	x := items[i]
+	fmt.Printf("Item %d = %v \n", i, x)
+}
+
+	
+;;258.0 Convert list of strings to list of integers: Convert the string values from list a into a list of integers b.--import "strconv"
+
+b := make([]int, len(a))
+var err error
+for i, s := range a {
+	b[i], err = strconv.Atoi(s)
+	if err != nil {
+		return err
+	}
+}
+
+	
+;;259.0 Split on several separators: Build the list parts consisting of substrings of the input string s, separated by any of the characters ',' (comma), '-' (dash), '_' (underscore).--import "regexp"
+
+re := regexp.MustCompile("[,\\-_]")
+parts := re.Split(s, -1)
+
+Square brackets mean "match any of these characters".
+The special character dash must be escaped with a backslash.
+The backslash must be escaped with a backslash.
+	
+;;260.0 Create an empty list of strings: Declare a new list items of string elements, containing zero elements--var items []string
+
+items is nil, which is idiomatic for an empty slice
+	
+;;261.0 Format time hours-minutes-seconds: Assign to the string x the value of fields (hours, minutes, seconds) of the date d, in format HH:MM:SS.--import "time"
+
+x := d.Format("15:04:05")
+
+	
+;;262.0 Count trailing zero bits: Assign to t the number of trailing 0 bits in the binary representation of the integer n.-- E.g. for n=112, n is 1110000 in base 2 ⇒ t=
+
+import "math/bits"
+t := bits.TrailingZeros(n)
+
+n has type uint
+	
+;;266.0 Repeated string: Assign to the string s the value of the string v repeated n times, and write it out.-- E.g. v="abc", n=5 ⇒ s="abcabcabcabcabc
+
+import (
+	"fmt"
+	"strings"
+)
+
+s := strings.Repeat(v, n)
+fmt.Println(s)
+
+	
+;;267.0 Pass string to argument that can be of any type: Declare an argument x to a procedure foo that can be of any type. If the type of the argument is a string, print it, otherwise print "Nothing."-- Test by passing "Hello, world!" and 42 to the procedure
+
+import "fmt"
+func foo(x any) {
+	if s, ok := x.(string); ok {
+		fmt.Println(s)
+	} else {
+		fmt.Println("Nothing.")
+	}
+}
+
+func main() {
+	foo("Hello, world!")
+	foo(42)
+}
+
+An argument of type any may receive a value of any type.
+We convert it with a type assertion.
+	
+;;272.0 Play FizzBuzz: Fizz buzz is a children's counting game, and a trivial programming task used to affirm that a programmer knows the basics of a language: loops, conditions and I/O.-- The typical fizz buzz game is to count from 1 to 100, saying each number in turn. When the number is divisible by 3, instead say "Fizz". When the number is divisible by 5, instead say "Buzz". When the number is divisible by both 3 and 5, say "FizzBuzz
+
+import "fmt"
+import "strconv"
+for n:=1; n<=100; n++ {
+	    out:=""
+	    if n%3==0 {
+		    out=out+"Fizz"
+	    }
+	    if n%5==0 {
+		    out=out+"Buzz"
+	    }
+	    if out=="" {
+		    out=out+strconv.Itoa(n)
+	    }
+	    fmt.Println(out)
+    }
+
+	
+;;273.0 Check if folder is empty: Set the boolean b to true if the directory at filepath p is empty (i.e. doesn't contain any other files and directories)--import "os"
+
+dir, err := os.Open(p)
+if err != nil {
+	panic(err)
+}
+defer dir.Close()
+_, err = dir.Readdirnames(1)
+b := err == io.EOF
+
+Error may happen, and should be dealt with.
+
+b is set to true if EOF was encountered before reading 1 contained file name.
+	
+;;274.0 Remove all white space characters: Create the string t from the string s, removing all the spaces, newlines, tabulations, etc.--import "strings"
+import "unicode"
+t := strings.Map(func(r rune) rune {
+	if unicode.IsSpace(r) {
+		return -1
+	}
+	return r
+}, s)
+
+In this mapping, -1 means "drop this character"
+	
+;;275.0 Binary digits to byte array: From the string s consisting of 8n binary digit characters ('0' or '1'), build the equivalent array a of n bytes.-- Each chunk of 8 binary digits (2 possible values per digit) is decoded into one byte (256 possible values)
+import "strconv"
+n := len(s) / 8
+a := make([]byte, n)
+for i := range a {
+	b, err := strconv.ParseInt(s[i*8:i*8+8], 2, 0)
+	if err != nil {
+		log.Fatal(err)
+	}
+	a[i] = byte(b)
+}
+
+bytes are unsigned in Go (byte is an alias for uint8)
+
+Consider handling the error appropriately, in case s is malformed.
+	
+;;276.0 Insert an element in a set: Insert an element e into the set x.--x[e] = struct{}{}
+
+x has type map[E]struct{}
+Alternative implementation:
+
+x[e] = true
+
+x has type map[E]bool
+	
+;;277.0 Remove an element from a set: Remove the element e from the set x.-- Explains what happens if e was already absent from x
+
+delete(x, e)
+
+x has type map[E]struct{}
+
+If x is nil or there is no such element, delete is a no-op.
+Alternative implementation:
+
+delete(x, e)
+
+x has type map[E]bool
+
+If x is nil or there is no such element, delete is a no-op.
+	
+278.0 Read one line from the standard input: Read one line into the string
+    ;;line.-- Explain what happens if EOF is reached
+
+import "bufio"
+import "os"
+s := bufio.NewScanner(os.Stdin)
+if ok := s.Scan(); !ok {
+	log.Fatal(s.Err())
+}
+line := s.Text()
+
+This handles any error (including EOF) by aborting the program execution.
+
+WARNING: this works only for lines smaller than 64kB each.
+	
+;;279.0 Read list of strings from the standard input: Read all the lines (until EOF) into the list of strings lines.--import "bufio"
+import "os"
+var lines []string
+s := bufio.NewScanner(os.Stdin)
+for s.Scan() {
+	line := s.Text()
+	lines = append(lines, line)
+}
+if err := s.Err(); err != nil {
+	log.Fatal(err)
+}
+
+WARNING: this works only for lines smaller than 64kB each.
+	
+;;280.0 Filter map: Remove all the elements from the map m that don't satisfy the predicate p.-- Keep all the elements that do satisfy p.Explain if the filtering happens in-place, i.e. if m is reused or if a new map is created.
+	
+
+for k, v := range m {
+	if !p(v) {
+		delete(m, k)
+	}
+}
+
+It is safe to use delete while iterating.
+m is filtered in-place.
+Alternative implementation:
+
+import "maps"
+maps.DeleteFunc(m, func(k K, v V) bool {
+	return !p(v)
+})
+
+maps.DeleteFunc is generic and type-safe at compile time.
+
+m is filtered in-place.
+	
+;;281.0 Use a Point as a map key: You have a Point with integer coordinates x and y. Create a map m with key type Point (or equivalent) and value type string. Insert "Hello" at position (42, 5).--m := map[Point]string{}
+p := Point{x: 42, y: 5}
+m[p] = "Hello"
+
+Types comparable with == can be used as map keys.
+	
+;;282.0 Use a custom type as map key: Declare a type Foo, and create a new map with Foo as key type.-- Mention the conditions on Foo required to make it a possible map key type
+
+type Foo struct {
+	name string
+	x, y int
+}
+
+m := make(map[Foo]string)
+
+Foo can be used as a key type if all of its fields are comparable with ==
+	
+;;283.0 Split with a custom string separator: Build the list parts consisting of substrings of input string s, separated by the string sep.--import "strings"
+
+parts := strings.Split(s, sep)
+
+parts has type []string.
+	
+;;284.0 Create a zeroed list of integers: Create a new list a (or array, or slice) of size n, where all elements are integers initialized with the value 0.--a := make([]int, n)
+
+All elements have the default value 0.
+	
+;;286.0 Iterate over characters of a string: Print a line "Char i is c" for each character c of the string s, where i is the character index of c in s (not the byte index).-- Make sure that multi-byte characters are properly handled, and count for a single character
+
+i := 0
+for _, c := range s {
+	fmt.Printf("Char %d is %c\n", i, c)
+	i++
+}
+
+c is a rune.
+s is assumed encoded in UTF-8.
+
+This first range variable is ignored, as it provides positions in bytes, instead of runes count.
+	
+;;287.0 Number of bytes of a string: Assign to n the number of bytes in the string s.-- This can be different from the number of characters. If n includes more bytes than the characters per se (trailing zero, length field, etc.) then explain it. One byte is 8 bits
+
+n := len(s)
+
+len counts bytes (not runes).
+	
+;;288.0 Check if set contains a value: Set the boolean b to true if the set x contains the element e, false otherwise.--b := x[e]
+
+x has type map[E]bool
+Alternative implementation:
+
+_, b := x[e]
+
+x has type map[E]struct{}
+	
+;;289.0 Concatenate two strings: Create the string s by concatenating the strings a and b.--s := a + b
+
+	
+;;290.0 Sort sublist: Sort the part of the list items from index i (included) to index j (excluded), in place, using the comparator c.-- Elements before i and after j must remain unchanged
+
+sub := items[i:j]
+sort.Slice(sub, func(a, b int) bool {
+	return c(sub[a], sub[b])
+})
+
+A slice can be sorted in place.
+Alternative implementation:
+
+import "slices"
+slices.SortFunc(items[i:j], c)
+
+SortFunc is generic and type-safe at compile time.
+	
+;;291.0 Remove sublist: Delete all the elements from index i (included) to index j (excluded) from the list items.--copy(items[i:], items[j:])
+for k, n := len(items)-j+i, len(items); k < n; k++ {
+	items[k] = nil
+}
+items = items[:len(items)-j+i]
+
+Use this when the elements of items have a pointer type.
+
+The for loop sets unused memory to nil, to avoid a memory leak.
+Alternative implementation:
+
+items = append(items[:i], items[j:]...)
+
+Use this when the elements don't have a pointer type.
+Alternative implementation:
+
+import "slices"
+items = slices.Delete(items, i, j)
+
+This generic func slices.Delete works for all slice types.
+	
+;;292.0 Write "Ni Hao" in Chinese to standard output in UTF-8: Write "Hello World and 你好" to standard output in UTF-8.--import "fmt"
+
+fmt.Println("Hello World and 你好")
+
+Strings are UTF-8 by default.
+	
+;;293.0 Create a stack: Create a new stack s, push an element x, then pop the element into the variable y.--type Stack[T any] struct {
+	items []T
+}
+
+func (s *Stack[T]) Push(t T) {
+	s.items = append(s.items, t)
+}
+
+func (s *Stack[T]) Pop() T {
+	n := len(s.items)
+	t := s.items[n-1]
+	var zero T
+	s.items[n-1] = zero
+	s.items = s.items[:n-1]
+	return t
+}
+
+var s = new(Stack[string])
+s.Push(x)
+y := s.Pop()
+
+The generic type Stack works for any type parameter T
+	
+;;294.0 Print a comma-separated list of integers: Given an array a containing the three values 1, 12, 42, print out-- "1, 12, 42" with a comma and a space after each integer except the last one
+import "fmt"
+a := []int{1, 12, 42}
+
+for i, j := range a {
+	if i > 0 {
+		fmt.Print(", ")
+	}
+	fmt.Print(j)
+}
+
+	
+;;296.0 Replace last occurrence of substring: Assign to x2 the value of string x with the last occurrence of y replaced by z.-- If y is not contained in x, then x2 has the same value as x
+import "strings"
+func replaceLast(x, y, z string) (x2 string) {
+	i := strings.LastIndex(x, y)
+	if i == -1 {
+		return x
+	}
+	return x[:i] + z + x[i+len(y):]
+}
+
+A custom func replaceLast is appropriate here.
+	
+;;297.0 Sort a list of strings, case-insensitively: Sort the string list data in a case-insensitive manner.-- The sorting must not destroy the original casing of the strings
+
+import (
+	"sort"
+	"unicode"
+	"unicode/utf8"
+)
+
+func lessCaseInsensitive(s, t string) bool {
+	for {
+		if len(t) == 0 {
+			return false
+		}
+		if len(s) == 0 {
+			return true
+		}
+		c, sizec := utf8.DecodeRuneInString(s)
+		d, sized := utf8.DecodeRuneInString(t)
+
+		lowerc := unicode.ToLower(c)
+		lowerd := unicode.ToLower(d)
+
+		if lowerc < lowerd {
+			return true
+		}
+		if lowerc > lowerd {
+			return false
+		}
+
+		s = s[sizec:]
+		t = t[sized:]
+	}
+}
+
+sort.Slice(data, func(i, j int) bool { return lessCaseInsensitive(data[i], data[j]) })
+
+This is a verbose custom func, designed to avoid allocating memory.
+Alternative implementation:
+
+import (
+	"sort"
+	"strings"
+)
+
+sort.Slice(data, func(i, j int) bool {
+	return strings.ToLower(data[i]) < strings.ToLower(data[j])
+})
+
+This code is convenient, however ToLower allocates new strings for each comparison, which is expensive.
+Alternative implementation:
+
+import "cmp"
+import "slices"
+slices.SortFunc(data, func(a, b string) int {
+	return cmp.Compare(strings.ToLower(a), strings.ToLower(b))
+})
+
+SortFunc is generic and type-safe at compile time.
+
+ToLower allocates new strings for each comparison, which is expensive.
+	
+;;298.0 Copy a map: Create the map y by cloning the map x.-- y is a shallow copy, not a deep copy
+
+y := make(map[K]V, len(x))
+for k, v := range x {
+	y[k] = v
+}
+
+K is the key type.
+V is the value type.
+Alternative implementation:
+
+import "maps"
+y := maps.Clone(x)
+
+maps.Clone is generic and type-safe at compile time.
+	
+;;299.0 Comment out a single line: Write a line of comments.-- This line will not be compiled or executed
+
+// This is a comment
+
+	
+;;301.0 Recursive Fibonacci sequence: Compute the Fibonacci sequence of n numbers using recursion.-- Note that naive recursion is extremely inefficient for this task
+
+func fibonacci(n int) int {
+	if n <= 1 {
+		return n
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
+} 
+
+	
+;;302.0 String interpolation: Given the integer x = 8, assign to the string s the value "Our sun has 8 planets", where the number 8 was evaluated from x.--s := fmt.Sprintf("Our sun has %d planets", x)
+
+Go doesn't have string interpolation, but it does have functions of the printf family.
+	
+;;304.0 Encode string into UTF-8 bytes: Create the array of bytes data by encoding the string s in UTF-8.--data := []byte(s)
+
+In Go, it is idiomatic that strings are already encoded in UTF-8. So we can grab their raw bytes directly.
+	
+;;306.0 Ensure list capacity: Preallocate memory in the list x for a minimum total capacity of 200 elements.-- This is not possible in all languages. It is only meant as a performance optimization, should not change the length of x, and should not have any effect on correctness
+
+if cap(x) < 200 {
+	y := make([]T, len(x), 200)
+	copy(y, x)
+	x = y
+}
+
+x has type []T.
+
+x keeps the same length.
+Alternative implementation:
+
+import "slices"
+x = slices.Grow(x, 200)
+
+This generic Grow func accepts x of any slice type
+	
+;;308.0 Integer to string in base b: Create the string representation s of the integer value n in base b.-- 18 .in base 3 -> "200"26 .in base 5 -> "101"
+121 .in base 12 -> "a1"
+
+	
+
+import "strconv"
+s := strconv.FormatInt(int64(n), b)
+
+	
+;;309.0 Clone a 2D array: Create the new 2-dimensional array y containing a copy of the elements of the 2-dimensional array x.-- x and y must not share memory. Subsequent modifications of y must not affect x
+
+buf := make([]T, m*n)
+y = make([][]T, m)
+for i := range y {
+	y[i] = buf[:n:n]
+	buf = buf[n:]
+	copy(y[i], x[i])
+}
+
+Allocate a large buffer, slice it, copy the data.
+Alternative implementation:
+
+func clone2D[M ~[][]T, T any](in M) (out M) {
+	if len(in) == 0 {
+		return nil
+	}
+
+	m, n := len(in), len(in[0])
+
+	buf := make([]T, m*n)
+
+	out = make(M, m)
+	for i := range out {
+		out[i] = buf[:n:n]
+		buf = buf[n:]
+		copy(out[i], in[i])
+	}
+	return out
+}
+
+Allocate a large buffer, slice it, copy the data.
+	
+;;310.0 Fill array with random bytes: Fill the byte array a with randomly generated bytes.--import "crypto/rand"
+
+_, err := rand.Read(a)
+
+The package crypto/rand is secure (but slower than math/rand)
+	
+;;312.0 List equality: Set b to true if the lists p and q have the same size and the same elements, false otherwise.--import "slices"
+
+b := slices.Equal(p, q)
+
+slices.Equal is generic and type-safe at compile time.
+	
+;;313.0 Map equality: Set b to true if the maps m and n have the same key/value entries, false otherwise.--import "maps"
+
+b := maps.Equal(m, n)
+
+maps.Equal is generic and type-safe at compile time.
+	
+;;314.0 Fill array with value: Set all the elements in the array x to the same value v--for i := range x {
+	x[i] = v
+}
+
+Alternative implementation:
+
+func fill[T any](x []T, v T) {
+	for i := range x {
+		x[i] = v
+	}
+}
+
+fill is generic, it works for any type parameter T
+	
+;;315.0 Memoization: Given any function f, create an object or function m that stores the results of f, and calls f only on inputs for which the result is not stored yet.--func memoize[T comparable, U any](f func(T) U) func(T) U {
+	memory := make(map[T]U)
+
+	return func(t T) U {
+		if u, seen := memory[t]; seen {
+			return u
+		}
+		u := f(t)
+		memory[t] = u
+		return u
+	}
+}
+
+memoize is generic but requires that f accepts a single argument of type T and returns a single result of type U.
+	
+;;316.0 Count occurrences in a list: Determine the number c of elements in the list x that satisfy the predicate p.--c := 0
+for _, v := range x {
+	if p(v) {
+		c++
+	}
+}
+
+Alternative implementation:
+
+func count[T any](x []T, p func(T) bool) int {
+	c := 0
+	for _, v := range x {
+		if p(v) {
+			c++
+		}
+	}
+	return c
+}
+
+This generic func works for any type parameter T
+	
+;;317.0 Random string: Create a string s of n characters having uniform random values out of the 62 alphanumeric values A-Z, a-z, 0-9--import "math/rand"
+
+const alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+func randomString(n int) string {
+	a := make([]byte, n)
+	for i := range a {
+		a[i] = alphanum[rand.Intn(len(alphanum))]
+	}
+	return string(a)
+}
+
+Each of these runes fits in a single byte.
+The default RNG can be run concurrently, as it incurs the cost of a Mutex.
+Note that the package math/rand is not crypto-secure
+Alternative implementation:
+
+import "math/rand"
+const alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+func randomString(n int, rng *rand.Rand) string {
+	a := make([]byte, n)
+	for i := range a {
+		a[i] = alphanum[rng.Intn(len(alphanum))]
+	}
+	return string(a)
+}
+
+Using a custom rand.Rand instance lets you control the seed, and is also better for performance (lock-free).
+Note that the package math/rand is not crypto-secure.
+Alternative implementation:
+
+import "math/rand"
+var alphanum = []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+
+func randomString(n int, rng *rand.Rand) string {
+	a := make([]rune, n)
+	for i := range a {
+		a[i] = alphanum[rng.Intn(len(alphanum))]
+	}
+	return string(a)
+}
+
+This version is slightly more generic: it works with an alphabet of arbitrary runes, which don't need to fit in a single byte each.
+
+Note that the package math/rand is not crypto-secure.
+	
+;;318.0 Cryptographically secure random number: Assign to the integer x a random number between 0 and 17 (inclusive), from a crypto secure random number generator.--import "crypto/rand"
+import "math/big"
+bi, err := rand.Int(rand.Reader, big.NewInt(18))
+x := int(bi.Int64())
+
+crypto/rand.Int works with big ints, and the secure RNG Reader.
+	
+;;319.0 Generator function: Write a function g that behaves like an iterator.-- Explain if it can be used directly in a for loop
+func generator() chan int {
+	ch := make(chan int, 16)
+	go func() {
+		defer close(ch)
+		timeout := time.After(2 * time.Minute)
+		
+		for i := 0; i < 1024; i++ {
+			select {
+			case ch <- i:
+			case <-timeout:
+				return
+			}
+		}
+	}()
+	return ch
+}
+
+	
+;;320.0 Test if string is empty: Set b to true if the string s is empty, false otherwise--b := s == ""
+
+Strings cannot be nil
+	
+;;321.0 Access character in string, by index: Assign to c the value of the i-th character of the string s.-- Make sure to properly handle multi-byte characters. i is the character index, which may not be equal to the byte index
+
+c := []rune(s)[i]
+
+s is assumed valid UTF-8.
+Convert s to a slice of rune.
+	
+;;322.0 replace value of variable with new one and return old value:-- old, x = x, ne
+	
+;;323.0 Set HTTP request header: Make an HTTP request with method GET to the URL u, with the request header "accept-encoding: gzip", then store the body of the response in the buffer data.--import "io"
+import "net/http"
+req, err := http.NewRequest("GET", u, nil)
+if err != nil {
+	return err
+}
+req.Header.Set("accept-encoding", "gzip")
+res, err := http.DefaultClient.Do(req)
+if err != nil {
+	return err
+}
+data, err := io.ReadAll(res.Body)
+res.Body.Close()
+if err != nil {
+	return err
+}
+
+http.Request.Header is an exported field
+	
+;;324.0 Read HTTP response header: Set the string c to the (first) value of the header "cache-control" of the HTTP response res.--import "net/http"
+
+c := res.Header.Get("cache-control")
+
+http.Response.Header is an exported field
+	
+;;325.0 Create a queue: Create a new queue q, then enqueue two elements x and y, then dequeue an element into the variable z.--type Queue[T any] struct {
+	items []T
+}
+
+func (q *Queue[T]) Enqueue(t T) {
+	q.items = append(q.items, t)
+}
+
+func (q *Queue[T]) Dequeue() T {
+	t := q.items[0]
+	var zero T
+	q.items[0] = zero
+	q.items = q.items[1:]
+	return t
+}
+
+q := new(Queue[string])
+q.Enqueue(x)
+q.Enqueue(y)
+z := q.Dequeue()
+
+The generic type Queue works for any type parameter T
+	
+;;326.0 Milliseconds since Unix epoch: Assign to t the number of milliseconds elapsed since 00:00:00 UTC on 1 January 1970.--import "time"
+
+t := time.Now().UnixMilli()
+
+	
+;;327.0 Convert string to lower case: Assign to t the value of the string s, with all letters mapped to their lower case.--import "strings"
+
+t := strings.ToLower(s)
+
+	
+;;328.0 Convert string to upper case: Assign to t the value of the string s, with all letters mapped to their upper case.--import "strings"
+
+t := strings.ToUpper(s)
+
+	
+;;329.0 Read value in a map: Assign to v the value stored in the map m for the key k.-- Explain what happens if there is no entry for k in m
+
+v := m[k]
+
+If m doesn't have the key k, then v is set to the zero value of m's values type.
+Alternative implementation:
+
+v, ok := m[k]
+
+ok is set to true if m has an entry for the key k, false otherwise.
+	
+;;330.0 Map to list: Create the list a containing all the values of the map m.-- Ignore the keys of m. The order of a doesn't matter. a may contain duplicate values
+
+a := make([]V, 0, len(m))
+for _, v := range m {
+	a = append(a, v)
+}
+
+The values have type V
+Alternative implementation:
+
+import "golang.org/x/exp/maps"
+a := maps.Values(m)
+
+	
+;;331.0 Clear map: Remove all entries from the map m.-- Explain if other references to the same map now see an empty map as well
+
+clear(m)
+
+Since Go 1.21
+
+Maps are reference types, so the underlying map is cleared for all references.
+	
+;;332.0 List of the keys of a map: Create the list k containing all the keys of the map m--import "golang.org/x/exp/maps"
+
+k := maps.Keys(m)
+
+k will be in an indeterminate order
+Alternative implementation:
+
+k := make([]K, 0, len(m))
+for key := range m {
+	k = append(k, key)
+}
+
+The keys have type K
+
+k will be in an indeterminate order
+	
+;;333.0 Pretty-print object in JSON: Print the object x in human-friendly JSON format, with newlines and indentation.--import "encoding/json"
+import "fmt"
+buffer, err := json.MarshalIndent(x, "", "  ")
+if err != nil {
+	log.Fatal(err)
+}
+fmt.Println(string(buffer))
+
+Using 2 spaces as indentation
+	
+;;334.0 Combine 2 maps: Create the new map c containing all of the (key, value) entries of the two maps a and b.-- Explain what happens for keys existing in both a and b
+
+c := make(M, len(a)+len(b))
+for k, v := range a {
+	c[k] = v
+}
+for k, v := range b {
+	c[k] = v
+}
+
+M is the map type of a and b
+
+For any common key, the value from b overwrites the value from a.
+	
+;;335.0 List to map: Create the map m containing all the elements e of the list a, using as key the field e.id.--m := make(map[K]V, len(a))
+for _, e := range a {
+	m[e.id] = e
+}
+
+V is the type of the elements of a.
+K is the type of the field id.
+	
+;;337.0 Convert string to integer, explicit base: Extract the integer value i from its string representation s, in radix b--import "strconv"
+
+i, err := strconv.ParseInt(s, b, 0)
+
+	
+;;339.0 Clear a byte array: Set all the elements of the byte array a to zero--clear(a[:])
+
+a is an array (but slices are more common)
+Alternative implementation:
+
+clear(a)
+
+a is a slice
+	
+;;340.0 Last character of string: Assign to c the value of the last character of the string s.-- Explain the type of c, and what happens if s is empty
+Make sure to properly handle multi-bytes characters.
+	
+
+r := []rune(s)
+c := r[len(r)-1]
+
+c has type rune.
+
+Panics if s is empty.
+Alternative implementation:
+
+import "unicode/utf8"
+c, _ := utf8.DecodeLastRuneInString(s)
+
+c has type rune.
+
+Returns utf8.RuneError if s is empty or if the encoding of s is invalid UTF-8.
+	
+;;341.0 Find substring last position: Set i to the position of the last occurrence of the string y inside the string x, if exists.-- Specify if i should be regarded as a character index or as a byte index
+Explain the behavior when y is not contained in x.
+	
+
+import "strings"
+i := strings.LastIndex(x, y)
+
+i is the byte index of y in x, not the character (rune) index.
+
+i will be -1 if y is not found in x.
+	
+;;343.0 Rename file: Rename the file at path1 into path2--err := os.Rename(path1, path2)
+
+	
+;;344.0 Extract filename extension: Assign to ext the fragment of the string f after the last dot character, or the empty string if f does not contain a dot.-- E.g. "photo.jpg" -> "jpg
+ext must not contain the dot character.
+	
+
+import "path/filepath"
+import "strings"
+ext := strings.TrimPrefix(filepath.Ext(f), ".")
+
+filepath.Ext returns a string including the final dot of f. We remove this dot with strings.TrimPrefix.
+	
+;;345.0 Convert string to big integer: Create the integer value i initialized from its string representation s (in radix 10)-- Use an integer type that can hold huge values. Explain what happens if s cannot be parsed
+
+import "math/big"
+i := new(big.Int)
+_, ok := i.SetString(s, 10)
+
+If s cannot be parsed, then ok will be false
+	
+;;346.0 Repeated list: Create the list y from the list x repeated n times--80
+
+94102
+
+lxbfYeaa
+	
+;;347.0 Copy folder: Copy the directory path1 to path2, with all its contents--import "os"
+
+err := os.CopyFS(path2, os.DirFS(path1))
+
+1st argument is a string, for the destination folder.
+2nd argument is a fs.FS, for the source folder.
+	

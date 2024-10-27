@@ -1,0 +1,480 @@
+accept (3p)         --accept a new connection on a socket
+access (3p)         --determine accessibility of a file descriptor
+aclocal (1)         --Generate aclocal.m4 by scanning configure.ac
+acpi (1)            --Shows battery status and other ACPI information
+addr2line (1)       --convert addresses or symbol+offset into file names and line numbers
+agetty (8)          --alternative Linux getty
+alias (1p)          --define or display aliases
+apropos (1)         --search the manual page names and descriptions
+ar (1)              --create, modify, and extract from archives
+arp (8)             --manipulate the system ARP cache
+as (1)              --the portable GNU assembler.
+at (1p)             --execute commands at a later time
+autoconf (1)        --Generate configuration scripts
+autoheader (1)      --Create a template header for configure
+automake (1)        --Generate Makefile.in files for configure from Makefile.am
+autoreconf (1)      --Update generated configuration files
+autoscan (1)        --Generate a preliminary configure.ac
+autoupdate (1)      --Update a configure.ac to a newer Autoconf
+awk (1p)            --pattern scanning and processing language
+badblocks (8)       --search a device for bad blocks
+basename (1)        --strip directory and suffix from filenames
+bash (1)            --GNU Bourne-Again SHell
+batch (1p)          --schedule commands to be executed in a batch queue
+bc (1)              --an arbitrary precision calculator language
+bg (1p)             --run jobs in the background
+bind (2)            --bind a name to a socket
+bison (1)           --GNU Project parser generator (yacc replacement)
+break (1p)          --exit from for, while, or until loop
+builtin (3perl)     --Perl pragma to import built-in utility functions
+bzip2 (1)           --a block-sorting file compressor, v1.0.8
+cal (1)             --display a calendar
+case (n)            --Evaluate one of several scripts, depending on a given value
+cat (1)             --concatenate files and print on the standard output
+cd (1p)             --change the working directory
+cfdisk (8)          --display or manipulate a disk partition table
+chage (1)           --change user password expiry information
+chattr (1)          --change file attributes on a Linux file system
+chdir (2)           --change working directory
+chfn (1)            --change your finger information
+chgrp (1)           --change group ownership
+chmod (1)           --change file mode bits
+chown (1)           --change file owner and group
+chpasswd (8)        --update passwords in batch mode
+chroot (1)          --run command or interactive shell with special root directory
+chrt (1)            --manipulate the real-time attributes of a process
+chsh (1)            --change your login shell
+chvt (1)            --change foreground virtual terminal
+cksum (1)           --compute and verify file checksums
+clear (1)           --clear the terminal screen
+cmp (1)             --compare two files byte by byte
+col (1)             --filter reverse line feeds from input
+colcrt (1)          --filter nroff output for CRT previewing
+colrm (1)           --remove columns from a file
+column (1)          --columnate lists
+comm (1)            --compare two sorted files line by line
+command (1p)        --execute a simple command
+compress (1p)       --compress data
+continue (1p)       --continue for, while, or until loop
+cp (1)              --copy files and directories
+cpio (1)            --copy files to and from archives
+cpp (1)             --The C Preprocessor
+crontab (1p)        --schedule periodic background work
+csplit (1)          --split a file into sections determined by context lines
+ctags (1p)          --create a tags file (DEVELOPMENT, FORTRAN)
+curl (1)            --transfer a URL
+cut (1)             --remove sections from each line of files
+date (1)            --print or set the system date and time
+dc (1)              --an arbitrary precision calculator
+dd (1)              --convert and copy a file
+deallocvt (1)       --deallocate unused virtual consoles
+debugfs (8)         --ext2/ext3/ext4 file system debugger
+depmod (8)          --Generate modules.dep and map files.
+df (1)              --report file system space usage
+diff (1)            --compare files line by line
+diff3 (1)           --compare three files line by line
+dig (1)             --DNS lookup utility
+dir (1)             --list directory contents
+dircolors (1)       --color setup for ls
+dirname (1)         --strip last component from file name
+dmesg (1)           --print or control the kernel ring buffer
+dmidecode (8)       --DMI table decoder
+dnsdomainname (1)   --show DNS domain name
+dnssec-keygen (1)   --DNSSEC key generation tool
+dnssec-signzone (1) --DNSSEC zone signing tool
+dosfsck (8)         --check and repair MS-DOS FAT filesystems
+du (1)              --estimate file space usage
+dumpe2fs (8)        --dump ext2/ext3/ext4 file system information
+dumpkeys (1)        --dump keyboard translation tables
+e2fsck (8)          --check a Linux ext2/ext3/ext4 file system
+e2image (8)         --Save critical ext2/ext3/ext4 file system metadata to a file
+e2label (8)         --Change the label on an ext2/ext3/ext4 file system
+echo (1)            --display a line of text
+ed (1p)             --edit text
+eject (1)           --eject removable media
+Env (3perl)         --perl module that imports environment variables as scalars or arrays
+env (1)             --run a program in a modified environment
+envsubst (1)        --substitutes environment variables in shell format strings
+ethtool (8)         --query or control network driver and hardware settings
+eval (1p)           --construct command by concatenating arguments
+ex (1p)             --text editor
+exec (1p)           --execute commands and open, close, or copy file descriptors
+exit (1p)           --cause the shell to exit
+expand (1)          --convert tabs to spaces
+expect (1)          --programmed dialogue with interactive programs, Version 5
+export (1p)         --set the export attribute for variables
+expr (1)            --evaluate expressions
+factor (1)          --factor numbers
+false (1)           --do nothing, unsuccessfully
+fc (1p)             --process the command history list
+fc-cache (1)        --build font information cache files
+fc-list (1)         --list available fonts
+fdisk (8)           --manipulate disk partition table
+fg (1p)             --run jobs in the foreground
+fgconsole (1)       --print the number of the active VT.
+file (1)            --determine file type
+find (1)            --search for files in a directory hierarchy
+flex (1)            --the fast lexical analyser generator
+fmt (1)             --simple optimal text formatter
+fold (1)            --wrap each input line to fit in specified width
+for (n)             --'For' loop
+format (n)          --Format a string in the style of sprintf
+free (1)            --Display amount of free and used memory in the system
+fsck (8)            --check and repair a Linux filesystem
+ftp (1)             --File Transfer Protocol client.
+ftpd (8)            --File Transfer Protocol server.
+Fun (3o)            --Function manipulation.
+fuser (1)           --identify processes using files or sockets
+g++ (1)             --GNU project C and C++ compiler
+gawk (1)            --pattern scanning and processing language
+gcc (1)             --GNU project C and C++ compiler
+gdb (1)             --The GNU Debugger
+getent (1)          --get entries from Name Service Switch libraries
+getkeycodes (8)     --print kernel scancode-to-keycode mapping table
+getopts (1p)        --parse utility options
+gpasswd (1)         --administer /etc/group and /etc/gshadow
+gpg (1)             --OpenPGP encryption and signing tool
+gpgv (1)            --Verify OpenPGP signatures
+gpm (8)             --a cut and paste utility and mouse server for virtual consoles
+gprof (1)           --display call graph profile data
+grep (1)            --print lines that match patterns
+groff (1)           --front end to the GNU roff document formatting system
+groupadd (8)        --create a new group
+groupdel (8)        --delete a group
+groupmod (8)        --modify a group definition on the system
+groups (1)          --display current group names
+grpck (8)           --verify integrity of group files
+grpconv (8)         --convert to and from shadow passwords and groups
+gs (1)              --Ghostscript (PostScript and PDF language interpreter and previewer)
+gunzip (1)          --compress or expand files
+gzexe (1)           --compress executable files in place
+gzip (1)            --compress or expand files
+halt (8)            --Power off, reboot, or halt the machine
+hash (1p)           --remember or report utility locations
+head (1)            --output the first part of files
+hexdump (1)         --display file contents in hexadecimal, decimal, octal, or ascii
+history (n)         --Manipulate the history list
+host (1)            --DNS lookup utility
+hostid (1)          --print the numeric identifier for the current host
+hostname (1)        --show or set system host name
+hostnamectl (1)     --Control the system hostname
+htop (1)            --interactive process viewer
+hwclock (8)         --time clocks utility
+iconv (1)           --convert text from one character encoding to another
+id (1)              --print real and effective user and group IDs
+if (n)              --Execute scripts conditionally
+ifconfig (8)        --configure a network interface
+import (1)          --saves any visible window on an X server and outputs it as an image file.
+info (1)            --read Info documents
+init (1)            --systemd system and service manager
+insmod (8)          --Simple program to insert a module into the Linux Kernel
+install (1)         --copy files and set attributes
+npm-install (5)     --Download and install node and npm
+iostat (1)          --Report Central Processing Unit (CPU) statistics and input/output statistics for devices and partitions.
+iotop (8)           --simple top-like I/O monitor
+ip (8)              --show / manipulate routing, network devices, interfaces and tunnels
+ipcrm (1)           --remove certain IPC resources
+ipcs (1)            --show information on IPC facilities
+iptables (8)        --administration tool for IPv4/IPv6 packet filtering and NAT
+iptables-restore (8)--Restore IP Tables
+iptables-save (8)   --dump iptables rules
+isodump (5)         --format of IEEE 1394 isochronous packets dump file
+isosize (8)         --output the length of an iso9660 filesystem
+iwconfig (8)        --configure a wireless network interface
+jobs (1p)           --display status of jobs in the current session
+join (1)            --join lines of two files on a common field
+journalctl (1)      --Print log entries from the systemd journal
+kbd_mode (1)        --report or set the keyboard mode
+kbdrate (8)         --reset the keyboard repeat rate and delay time
+kill (1)            --terminate a process
+killall (1)         --kill processes by name
+last (1)            --show a listing of last logged in users
+lastb (1)           --show a listing of last logged in users
+lastlog (8)         --reports the most recent login of all users or of a given user
+ld (1)              --The GNU linker
+ldconfig (8)        --configure dynamic linker run-time bindings
+ldd (1)             --print shared object dependencies
+less (1)            --display the contents of a file in a terminal
+lesskey (1)         --customize key bindings for less
+link (1)            --call the link function to create a link to a file
+ln (1)              --make links between files
+loadkeys (1)        --load keyboard translation tables
+local (n)           --create an object local to a procedure
+locale (1)          --get locale-specific information
+logger (1)          --enter messages into the system log
+login (1)           --begin session on the system
+logname (1)         --print user's login name
+logout (3)          --write utmp and wtmp entries
+logrotate (8)       --rotates, compresses, and mails system logs
+look (1)            --display lines beginning with a given string
+losetup (8)         --set up and control loop devices
+ls (1)              --list directory contents
+lsattr (1)          --list ext2/ext3/ext4 file attributes
+lsblk (8)           --list block devices
+lsmod (8)           --Show the status of modules in the Linux Kernel
+lsof (8)            --list open files
+lspci (8)           --list all PCI devices
+lsusb (8)           --list USB devices
+m4 (1)              --macro processor
+make (1)            --GNU Make utility to maintain groups of programs
+man (1)             --an interface to the system reference manuals
+manpath (1)         --determine search path for manual pages
+mattrib (1)         --change MSDOS file attribute flags
+mbadblocks (1)      --tests a floppy disk, and marks the bad blocks in the FAT
+mcat (1)            --dump raw disk image
+mcd (1)             --change MSDOS directory
+mcopy (1)           --copy MSDOS files to/from Unix
+md5sum (1)          --compute and check MD5 message digest
+mdel, mdeltree
+mdir (1)            --display an MSDOS directory
+mdu (1)             --display the amount of space occupied by an MSDOS directory
+mesg (1)            --display (or do not display) messages from other users
+mformat (1)         --add an MSDOS filesystem to a low-level formatted floppy disk
+minfo (1)           --print the parameters of a MSDOS filesystem
+mkdir (1)           --make directories
+mkdosfs (8)         --create an MS-DOS FAT filesystem
+mke2fs (8)          --create an ext2/ext3/ext4 file system
+mkfifo (1)          --make FIFOs (named pipes)
+mkfs (8)            --build a Linux filesystem
+mkfs.ext3 (8)       --create an ext2/ext3/ext4 file system
+mklost+found (8)    --create a lost+found directory on a mounted ext2/ext3/ext4 file system
+mkmanifest (1)      --makes list of file names and their DOS 8+3 equivalent
+mknod (1)           --make block or character special files
+mkswap (8)          --set up a Linux swap area
+mktemp (1)          --create a temporary file or directory
+mlabel (1)          --make an MSDOS volume label
+mmd (1)             --make an MSDOS subdirectory
+mmount (1)          --mount an MSDOS disk
+mmove (1)           --move or rename an MSDOS file or subdirectory
+modinfo (8)         --Show information about a Linux Kernel module
+modprobe (8)        --Add and remove modules from the Linux Kernel
+more (1)            --display the contents of a file in a terminal
+mount (8)           --mount a filesystem
+mountd (8)          --NFS mount daemon
+mpartition (1)      --partition an MSDOS hard disk
+mpg123 (1)          --play audio MPEG 1.0/2.0/2.5 stream (layers 1, 2 and 3)
+mpstat (1)          --Report processors related statistics.
+mrd (1)             --remove an MSDOS subdirectory
+mren (1)            --rename an existing MSDOS file
+mshowfat (1)        --shows FAT clusters allocated to file
+mtools (1)          --utilities to access DOS disks in Unix.
+mtoolstest (1)      --tests and displays the configuration
+mtype (1)           --display contents of an MSDOS file
+mv (1)              --move (rename) files
+mzip (1)            --change protection mode and eject disk on Zip/Jaz drive
+named (8)           --Internet domain name server
+namei (1)           --follow a pathname until a terminal point is found
+nameif (8)          --name network interfaces based on MAC addresses
+netstat (8)         --Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+newgrp (1)          --log in to a new group
+newusers (8)        --update and create new users in batch
+nfsd (7)            --special filesystem for controlling Linux NFS server
+nfsd (8)            --NFS server process
+nfsstat (8)         --list NFS statistics
+nice (1)            --run a program with modified scheduling priority
+nl (1)              --number lines of files
+nm (1)              --list symbols from object files
+nmcli (1)           --command-line tool for controlling NetworkManager
+nohup (1)           --run a command immune to hangups, with output to a non-tty
+notify-send (1)     --a program to send desktop notifications
+nslookup (1)        --query Internet name servers interactively
+nsupdate (1)        --dynamic DNS update utility
+objcopy (1)         --copy and translate object files
+objdump (1)         --display information from object files
+od (1)              --dump files in octal and other formats
+open (n)            --Open a file-based or command pipeline channel
+openvt (1)          --start a program on a new virtual terminal (VT).
+passwd (1)          --change user password
+paste (1)           --merge lines of files
+patch (1)           --apply a diff file to an original
+pathchk (1)         --check whether file names are valid or portable
+perl (1perl)        --The Perl 5 language interpreter
+pgrep (1)           --look up, signal, or wait for processes based on name and other attributes
+pidof (1)           --find the process ID of a running program
+ping (8)            --send ICMP ECHO_REQUEST to network hosts
+pinky (1)           --lightweight finger
+pkill (1)           --look up, signal, or wait for processes based on name and other attributes
+pmap (1)            --report memory map of a process
+poweroff (8)        --Power off, reboot, or halt the machine
+pppd (8)            --Point-to-Point Protocol Daemon
+pr (1)              --convert text files for printing
+printenv (1)        --print all or part of environment
+printf (1)          --format and print data
+ps (1)              --report a snapshot of the current processes.
+ptx (1)             --produce a permuted index of file contents
+pwck (8)            --verify the integrity of password files
+pwconv (8)          --convert to and from shadow passwords and groups
+pwd (1)             --print name of current/working directory
+python (1)          --an interpreted, interactive, object-oriented programming language
+quotactl (2)        --manipulate disk quotas
+ram (4)             --ram disk device
+ranlib (1)          --generate an index to an archive
+rcp (1)             --Remote copy
+read (1p)           --read from standard input into shell variables
+readelf (1)         --display information about ELF files
+readlink (1)        --print resolved symbolic links or canonical file names
+readonly (1p)       --set the readonly attribute for variables
+reboot (8)          --Power off, reboot, or halt the machine
+rename (1)          --rename files
+renice (1)          --alter priority of running processes
+reset (1)           --initialize or reset terminal state
+resize2fs (8)       --ext2/ext3/ext4 file system resizer
+return (1p)         --return from a function or dot script
+rev (1)             --reverse lines characterwise
+rexec (3)           --return stream to a remote command
+rlogin (1)          --Remote login
+rlogind (8)         --Remote login server
+rm (1)              --remove files or directories
+rmdir (1)           --remove empty directories
+rmmod (8)           --Simple program to remove a module from the Linux Kernel
+rndc (8)            --name server control utility
+route (8)           --show / manipulate the IP routing table
+rpcinfo (8)         --report RPC information
+rsh (1)             --Remote shell client
+rshd (8)            --Remote shell server
+rsync (1)           --a fast, versatile, remote (and local) file-copying tool
+sar (1)             --Collect, report, or save system activity information.
+scp (1)             --OpenSSH secure file copy
+SCREEN (3x)         --curses data types, constants, and global variables
+script (1)          --make typescript of terminal session
+scriptreplay (1)    --play back typescripts, using timing information
+sdiff (1)           --side-by-side merge of file differences
+sed (1)             --stream editor for filtering and transforming text
+select (3p)         --synchronous I/O multiplexing
+sensors (1)         --print sensors information
+seq (1)             --print a sequence of numbers
+set (1p)            --set or unset options and positional parameters
+setkeycodes (8)     --load kernel scancode-to-keycode mapping table entries
+setleds (1)         --set the keyboard leds
+setmetamode (1)     --define the keyboard meta key handling
+setsid (1)          --run a program in a new session
+setterm (1)         --set terminal attributes
+sftp (1)            --OpenSSH secure file transfer
+sh (1p)             --shell, the standard command language interpreter
+sha1sum (1)         --compute and check SHA1 message digest
+shift (1p)          --shift positional parameters
+showkey (1)         --examine the codes sent by the keyboard
+showmount (8)       --show mount information for an NFS server
+shred (1)           --overwrite a file to hide its contents, and optionally delete it
+shutdown (8)        --Halt, power off or reboot the machine
+size (1)            --list section sizes and total size of binary files
+slabtop (1)         --display kernel slab cache information in real time
+slattach (8)        --attach a network interface to a serial line
+sleep (1)           --delay for a specified amount of time
+sort (1)            --sort lines of text files
+source (n)          --Evaluate a file or resource as a Tcl script
+split (1)           --split a file into pieces
+ss (8)              --another utility to investigate sockets
+ssh (1)             --OpenSSH remote login client
+ssh-add (1)         --adds private key identities to the OpenSSH authentication agent
+ssh-agent (1)       --OpenSSH authentication agent
+sshd (8)            --OpenSSH daemon
+ssh-keygen (1)      --OpenSSH authentication key utility
+ssh-keyscan (1)     --gather SSH public keys from servers
+stat (1)            --display file or file system status
+statd (8)           --NSM service daemon
+strace (1)          --trace system calls and signals
+strings (1)         --print the sequences of printable characters in files
+strip (1)           --discard symbols and other data from object files
+stty (1)            --change and print terminal line settings
+su (1)              --run a command with substitute user and group ID
+sudo (8)            --execute a command as another user
+sum (1)             --checksum and count the blocks in a file
+swapoff (8)         --enable/disable devices and files for paging and swapping
+swapon (8)          --enable/disable devices and files for paging and swapping
+symlink (3p)        --make a symbolic link
+sync (1)            --Synchronize cached writes to persistent storage
+sysctl (8)          --configure kernel parameters at runtime
+systemctl (1)       --Control the systemd system and service manager
+
+tac (1)             --concatenate and print files in reverse
+tail (1)            --output the last part of files
+talk (1)            --Talk client
+talkd (8)           --Talk server
+tar (1)             --an archiving utility
+taskset (1)         --set or retrieve a process's CPU affinity
+tee (1)             --read from standard input and write to standard output and files
+telnet (1)          --User interface to TELNET
+telnetd (8)         --Telnet server
+test (1)            --check file types and compare values
+time (1)            --time a simple command or give resource usage
+timeout (1)         --run a command with a time limit
+times (1p)          --write process times
+tload (1)           --graphic representation of system load average
+top (1)             --display Linux processes
+touch (1)           --change file timestamps
+tput (1)            --initialize a terminal, exercise its capabilities, or query terminfo database
+tr (1)              --translate or delete characters
+tracepath (8)       --traces path to a network host discovering MTU along this path
+traceroute (8)      --print the route packets trace to network host
+trap (1p)           --trap signals
+tree (3bsd)         --implementations of splay and red-black trees
+troff (1)           --GNU roff typesetter and document formatter
+true (1)            --do nothing, successfully
+tset (1)            --initialize or reset terminal state
+tsort (1)           --perform topological sort
+tsort (1p)          --topological sort
+tty (1)             --print the file name of the terminal connected to standard input
+tune2fs (8)         --adjust tunable file system parameters on ext2/ext3/ext4 file systems
+tunelp (8)          --set various parameters for the lp device
+type (1p)           --write a description of command type
+ul (1)              --do underlining
+ulimit (1p)         --set or report file size limit
+unimplemented (2)   --unimplemented system calls
+ulimit (3p)         --get and set process limits
+umask (1p)          --get or set the file mode creation mask
+umount (8)          --unmount filesystems
+unalias (1p)        --remove alias definitions
+uname (1)           --print system information
+uncompress (1p)     --expand compressed data
+unexpand (1)        --convert spaces to tabs
+unicode_start (1)   --put keyboard and console in unicode mode
+unicode_stop (1)    --revert keyboard and console from unicode mode
+uniq (1)            --report or omit repeated lines
+units (7)           --decimal and binary prefixes
+unset (1p)          --unset values and attributes of variables and functions
+unset (n)           --Delete variables
+uptime (1)          --Tell how long the system has been running.
+useradd (8)         --create a new user or update default new user information
+userdel (8)         --delete a user account and related files
+usermod (8)         --modify a user account
+users (1)           --print the user names of users currently logged in to the current host
+usleep (3)          --suspend execution for microsecond intervals
+uudecode (1p)       --decode a binary file
+uuencode (1p)       --encode a binary file
+uuidgen (1)         --create a new UUID value
+vdir (1)            --list directory contents
+vi (1p)             --screen-oriented (visual) display editor
+vmstat (8)          --Report virtual memory statistics
+w (1)               --Show who is logged on and what they are doing.
+wait (1p)           --await process completion
+fork (3am)          --basic process management
+wait (3p)           --wait for a child process to stop or terminate
+wall (1)            --write a message to all users
+watch (1)           --execute a program periodically, showing output fullscreen
+wc (1)              --print newline, word, and byte counts for each file
+wget (1)            --The non-interactive network downloader.
+whatis (1)          --display one-line manual page descriptions
+whereis (1)         --locate the binary, source, and manual page files for a command
+which (1)           --shows the full path of (shell) commands.
+while (n)           --Execute script repeatedly as long as a condition is met
+who (1)             --show who is logged on
+whoami (1)          --print effective user name
+whois (1)           --client for the whois directory service
+write (1)           --send a message to another user
+xargs (1)           --build and execute command lines from standard input
+xdg-open (1)        --opens a file or URL in the user's preferred application
+xz (1)              --Compress or decompress .xz and .lzma files
+yacc (1)            --GNU Project parser generator
+yes (1)             --output a string repeatedly until killed
+zcat (1)            --compress or expand files
+zcmp (1)            --compare compressed files
+zdiff (1)           --compare compressed files
+zdump (8)           --timezone dumper
+zforce (1)          --force a '.gz' extension on all gzip files
+zgrep (1)           --search possibly compressed files for a regular expression
+zic (8)             --timezone compiler
+zip (1)             --package and compress (archive) files
+zless (1)           --file perusal filter for crt viewing of compressed text
+zmore (1)           --file perusal filter for crt viewing of compressed text
+znew (1)            --recompress .Z files to .gz files

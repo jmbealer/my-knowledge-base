@@ -1,0 +1,477 @@
+what is *accton* short for --*account on*
+what is *aclocal* short for --*Autoconf local*
+what is *aconnect* short for --*Advanced Linux Sound Architecture connect*
+what is *acpi* short for --*Advanced Configuration and Power Interface*
+what is *acpi_available* short for --*Advanced Configuration and Power Interface available*
+what is *acpid* short for --*Advanced Configuration and Power Interface daemon*
+what is *addr2line* short for --*address to line*
+what is *agetty* short for --*alternative get ty(teletype)*
+what is *alsactl* short for --*Advanced Linux Sound Architecture control*
+what is *amidi* short for --*Advanced Linux Sound Architecture MIDI*
+what is *amixer* short for --*Advanced Linux Sound Architecture mixer*
+what is *anacron* short for --*anacronistic cron*
+what is *aplay* short for --*Advanced Linux Sound Architecture play*
+what is *aplaymidi* short for --*Advanced Linux Sound Architecture play MIDI*
+what is *apm* short for --*Advanced Power Management*
+what is *apmd* short for --*Advanced Power Management daemon*
+what is *apt* short for --*Advanced Package Tool*
+what is *apt-get* short for --*Advanced Package Tool get*
+what is *aptitude* short for --*Advanced Package Tool interface*
+what is *ar* short for --*archive*
+what is *arch* short for --*architecture*
+what is *arecord* short for --*Advanced Linux Sound Architecture record*
+what is *arecordmidi* short for --*Advanced Linux Sound Architecture record MIDI*
+what is *arp* short for --*Address Resolution Protocol*
+what is *as* short for --*assembler*
+what is *aspell* short for --*spell*
+what is *atd* short for --*at daemon*
+what is *atq* short for --*at queue*
+what is *atrm* short for --*at remove*
+what is *audiosend* short for --*audio send*
+what is *aumix* short for --*audio mixer*
+what is *autoconf* short for --*automatic configuration*
+what is *autoheader* short for --*automatic header*
+what is *automake* short for --*automatic makefile*
+what is *autoreconf* short for --*automatic reconfiguration*
+what is *autoscan* short for --*automatic scan*
+what is *autoupdate* short for --*automatic update*
+what is *awk* short for --*Aho, Weinberger, and Kernighan*
+what is *bash* short for --*Bourne Again SHell*
+what is *bc* short for --*basic calculator*
+what is *bg* short for --*background*
+what is *bzcmp* short for --*bzip2 compare*
+what is *bzdiff* short for --*bzip2 diff*
+what is *bzgrep* short for --*bzip2 grep*
+what is *bzip2* short for --*Burrows-Wheeler block compression*
+what is *bzless* short for --*bzip2 less*
+what is *bzmore* short for --*bzip2 more*
+
+what is *cal* short for --*calendar*
+what is *cat* short for --*concatenate*
+what is *cc* short for --*c compiler*
+what is *ccrypt* short for --*cryptography*
+what is *cd* short for --*change directory*
+what is *cdda2wav* short for --*cd digital audio to wav*
+what is *cdparanoia* short for --*cd paranoia*
+what is *cdrdao* short for --*cd disk-at-once*
+what is *cdrecord* short for --*cd record*
+what is *cfdisk* short for --*curses-based fdisk*
+what is *chage* short for --*change age*
+what is *chattr* short for --*change attributes*
+what is *chdir* short for --*change directory*
+what is *chfn* short for --*change full name*
+what is *chgrp* short for --*change group*
+what is *chkconfig* short for --*check configuration*
+what is *chmod* short for --*change mode*
+what is *chown* short for --*change owner*
+what is *chpasswd* short for --*change password*
+what is *chroot* short for --*change root*
+what is *chrt* short for --*change real-time*
+what is *chsh* short for --*change shell*
+what is *chvt* short for --*change virtual terminal*
+what is *cksum* short for --*checksum*
+what is *cmp* short for --*compare*
+what is *col* short for --*column*
+what is *colcrt* short for --*column crt*
+what is *colrm* short for --*column remove*
+what is *column* short for --*column*
+what is *comm* short for --*compare*
+what is *cp* short for --*copy*
+what is *cpio* short for --*copy in/out* 
+what is *cpp* short for --*c preprocessor* 
+what is *cron* short for --*chronograph* 
+what is *crond* short for --*cron daemon* 
+what is *crontab* short for --*cron table* 
+what is *csplit* short for --*context split* 
+what is *ctags* short for --*c tags* 
+what is *cupsd* short for --*cups daemon* 
+what is *curl* short for --*client url* 
+what is *cut* short for --*cut* 
+what is *cvs* short for --*concurrent versions system* 
+what is *dc* short for --*desk calculator* 
+what is *dd* short for --*disk dump* 
+what is *ddrescue* short for --*disk dump rescue* 
+what is *deallocvt* short for --*deallocate virtual terminal* 
+what is *debugfs* short for --*debug file system* 
+what is *depmod* short for --*dependency module* 
+what is *devdump* short for --*device dump* 
+what is *df* short for --*disk free* 
+what is *diff* short for --*difference* 
+what is *diff3* short for --*difference three* 
+what is *dig* short for --*domain information groper* 
+what is *dir* short for --*directory* 
+what is *dircolors* short for --*directory colors* 
+what is *dirname* short for --*directory name* 
+what is *dirs* short for --*directories* 
+what is *dlpsh* short for --*data link provider shell* 
+what is *dmesg* short for --*diagnostic message* 
+what is *dmidecode* short for --*desktop management interface decode* 
+what is *dnsdomainname* short for --*dns domain name* 
+what is *dnssec-keygen* short for --*dns security key generator* 
+what is *dnssec-makekeyset* short for --*dns security make key set* 
+what is *dnssec-signkey* short for --*dns security sign key* 
+what is *dnssec-signzone* short for --*dns security sign zone* 
+what is *doexec* short for --*do execute* 
+what is *domainname* short for --*domain name* 
+what is *dos2unix* short for --*dos to unix* 
+what is *dosfsck* short for --*dos file system check* 
+what is *dpkg* short for --*debian package* 
+what is *dstat* short for --*disk statistics* 
+what is *du* short for --*disk usage* 
+what is *dumpe2fs* short for --*dump ext2 file system* 
+what is *dumpkeys* short for --*dump keys* 
+what is *e2fsck* short for --*ext2 file system check* 
+what is *e2image* short for --*ext2 image* 
+what is *e2label* short for --*ext2 label* 
+what is *echo* short for --*echo* 
+what is *ed* short for --*editor* 
+what is *edquota* short for --*edit quota* 
+what is *egrep* short for --*extended grep* 
+what is *eject* short for --*eject* 
+what is *elvtune* short for --*elevator tune* 
+what is *emacs* short for --*editor macros* 
+what is *env* short for --*environment* 
+what is *envsubst* short for --*environment substitute* 
+what is *esd* short for --*enlightened sound daemon* 
+what is *esdcat* short for --*enlightened sound daemon cat* 
+what is *esd-config* short for --*enlightened sound daemon config* 
+what is *esdctl* short for --*enlightened sound daemon control* 
+what is *esddsp* short for --*enlightened sound daemon dsp* 
+what is *esdmon* short for --*enlightened sound daemon monitor* 
+what is *esdplay* short for --*enlightened sound daemon play* 
+what is *esdrec* short for --*enlightened sound daemon record* 
+what is *esdsample* short for --*enlightened sound daemon sample* 
+what is *etags* short for --*editor macros tags* 
+what is *ethtool* short for --*ethernet tool* 
+what is *eval* short for --*evaluate* 
+what is *ex* short for --*examine* 
+what is *exec* short for --*execute* 
+what is *expr* short for --*expression* 
+what is *fc* short for --*fix command* 
+what is *fc-cache* short for --*fontconfig cache* 
+what is *fc-list* short for --*fontconfig list* 
+what is *fdformat* short for --*floppy disk format* 
+what is *fdisk* short for --*fixed disk* 
+what is *fetchmail* short for --*fetch mail* 
+what is *fg* short for --*foreground* 
+what is *fgconsole* short for --*foreground console* 
+what is *fgrep* short for --*fixed-string grep* 
+what is *fingerd* short for --*finger daemon* 
+what is *flex* short for --*fast lexical analyzer* 
+what is *fmt* short for --*format* 
+what is *formail* short for --*format mail* 
+what is *fsck* short for --*file system check* 
+what is *ftp* short for --*file transfer protocol* 
+what is *ftpd* short for --*file transfer protocol daemon* 
+what is *fun* short for --*function* 
+what is *fuser* short for --*file user* 
+what is *g++* short for --*gnu c++ compiler* 
+what is *gawk* short for --*gnu awk* 
+what is *gcc* short for --*gnu c compiler* 
+what is *gdb* short for --*gnu debugger* 
+what is *getent* short for --*get entries* 
+what is *getopts* short for --*get options* 
+what is *gpasswd* short for --*group password* 
+what is *gpg* short for --*gnu privacy guard* 
+what is *gpgsplit* short for --*gnu privacy guard split* 
+what is *gpgv* short for --*gnu privacy guard verify* 
+what is *gpm* short for --*general purpose mouse* 
+what is *gprof* short for --*gnu profiler* 
+what is *grep* short for --*global regular expression print* 
+what is *groff* short for --*gnu troff* 
+what is *groffer* short for --*gnu troff offer* 
+what is *groupadd* short for --*group add* 
+what is *groupdel* short for --*group delete* 
+what is *groupmod* short for --*group modify* 
+what is *grpck* short for --*group check* 
+what is *grpconv* short for --*group convert* 
+what is *gs* short for --*ghostscript* 
+what is *gunzip* short for --*gnu unzip* 
+what is *gzexe* short for --*gzip executable* 
+what is *gzip* short for --*gnu zip* 
+what is *hdparm* short for --*hard disk parameters* 
+what is *hexdump* short for --*hexadecimal dump* 
+what is *hostid* short for --*host id* 
+what is *hostnamectl* short for --*host name control* 
+what is *htdigest* short for --*http digest* 
+what is *htop* short for --*high top* 
+what is *hwclock* short for --*hardware clock* 
+what is *iconv* short for --*internationalization conversion* 
+what is *ifconfig* short for --*interface configure* 
+what is *ifdown* short for --*interface down* 
+what is *iftop* short for --*interface top* 
+what is *ifup* short for --*interface up* 
+what is *imapd* short for --*imap daemon* 
+what is *inetd* short for --*internet daemon* 
+what is *info* short for --*information* 
+what is *init* short for --*initialize* 
+what is *insmod* short for --*insert module* 
+what is *iostat* short for --*input/output statistics* 
+what is *iotop* short for --*input/output top* 
+what is *ip* short for --*internet protocol* 
+what is *ipcrm* short for --*internet protocol remove* 
+what is *ipcs* short for --*internet protocol status* 
+what is *iptables* short for --*internet protocol tables* 
+what is *iptables-restore* short for --*internet protocol tables restore* 
+what is *iptables-save* short for --*internet protocol tables save* 
+what is *ispell* short for --*interactive spell* 
+what is *iwconfig* short for --*interface wireless configure* 
+what is *journalctl* short for --*journal control* 
+what is *kbd_mode* short for --*keyboard mode* 
+what is *kbdrate* short for --*keyboard rate* 
+what is *killall5* short for --*kill all processes in runlevel 5* 
+what is *klogd* short for --*kernel log daemon* 
+what is *lastb* short for --*last bad* 
+what is *ld* short for --*linker* 
+what is *ldconfig* short for --*linker dynamic configuration* 
+what is *ldd* short for --*list dynamic dependencies* 
+what is *lftp* short for --*linux ftp* 
+what is *lftpget* short for --*linux ftp get* 
+what is *ln* short for --*link* 
+what is *losetup* short for --*loop setup* 
+what is *lpadmin* short for --*line printer admin* 
+what is *lpc* short for --*line printer control* 
+what is *lpinfo* short for --*line printer information* 
+what is *lpmove* short for --*line printer move* 
+what is *lpq* short for --*line printer queue* 
+what is *lpr* short for --*line printer* 
+what is *lprint* short for --*line print* 
+what is *lprintd* short for --*line print daemon* 
+what is *lprintq* short for --*line print queue* 
+what is *lprm* short for --*line printer remove* 
+what is *lpstat* short for --*line printer status* 
+what is *ls* short for --*list* 
+what is *lsattr* short for --*list attributes* 
+what is *lsblk* short for --*list block* 
+what is *lshw* short for --*list hardware* 
+what is *lsmod* short for --*list modules* 
+what is *lsof* short for --*list open files* 
+what is *lspci* short for --*list pci* 
+what is *lsusb* short for --*list usb* 
+what is *m4* short for --*macro processor version 4* 
+what is *mailq* short for --*mail queue* 
+what is *mailstats* short for --*mail statistics* 
+what is *mailto* short for --*mail to* 
+what is *man* short for --*manual* 
+what is *manpath* short for --*manual path* 
+what is *md5sum* short for --*md5 checksum* 
+what is *mesg* short for --*message* 
+what is *mimencode* short for --*mime encode* 
+what is *mkdir* short for --*make directory* 
+what is *mke2fs* short for --*make ext2 file system* 
+what is *mkfifo* short for --*make fifo* 
+what is *mkfs* short for --*make file system* 
+what is *mkfs.ext3* short for --*make ext3 file system* 
+what is *mkisofs* short for --*make iso file system* 
+what is *mklost+found* short for --*make lost+found* 
+what is *mkmanifest* short for --*make manifest* 
+what is *mknod* short for --*make node* 
+what is *mkraid* short for --*make raid* 
+what is *mkswap* short for --*make swap* 
+what is *mktemp* short for --*make temp* 
+what is *mlabel* short for --*ms-dos label* 
+what is *mmv* short for --*multiple move* 
+what is *modinfo* short for --*module information* 
+what is *modprobe* short for --*module probe* 
+what is *mountd* short for --*mount daemon* 
+what is *mpstat* short for --*multiprocessor statistics* 
+what is *mt* short for --*magnetic tape* 
+what is *mtr* short for --*my traceroute* 
+what is *mv* short for --*move* 
+what is *named* short for --*name daemon* 
+what is *namei* short for --*name interpreter* 
+what is *nameif* short for --*name interface* 
+what is *nc* short for --*netcat* 
+what is *netstat* short for --*network statistics* 
+what is *newgrp* short for --*new group* 
+what is *nfsd* short for --*network file system daemon* 
+what is *nfsstat* short for --*network file system statistics* 
+what is *nl* short for --*number lines* 
+what is *nm* short for --*name mangler* 
+what is *nmcli* short for --*networkmanager command-line interface* 
+what is *nohup* short for --*no hangup* 
+what is *nslookup* short for --*name server lookup* 
+what is *nsupdate* short for --*name server update* 
+what is *objcopy* short for --*object copy* 
+what is *objdump* short for --*object dump* 
+what is *od* short for --*octal dump* 
+what is *op* short for --*operator* 
+what is *openvt* short for --*open virtual terminal* 
+what is *passwd* short for --*password* 
+what is *pathchk* short for --*path check* 
+what is *perl* short for --*practical extraction and report language* 
+what is *pgrep* short for --*process grep* 
+what is *pidof* short for --*process id of* 
+what is *ping* short for --*packet internet groper* 
+what is *pkill* short for --*process kill* 
+what is *pmap* short for --*process map* 
+what is *popd* short for --*pop directory* 
+what is *portmap* short for --*port mapper* 
+what is *poweroff* short for --*power off* 
+what is *pppd* short for --*point-to-point protocol daemon* 
+what is *pr* short for --*print* 
+what is *praliases* short for --*print aliases* 
+what is *printcap* short for --*print capability* 
+what is *printenv* short for --*print environment* 
+what is *printf* short for --*print formatted* 
+what is *ps* short for --*process status* 
+what is *ptx* short for --*permuted index* 
+what is *pushd* short for --*push directory* 
+what is *pv* short for --*pipe viewer* 
+what is *pwck* short for --*password check* 
+what is *pwconv* short for --*password convert* 
+what is *pwd* short for --*print working directory* 
+what is *quotactl* short for --*quota control* 
+what is *quotastats* short for --*quota statistics* 
+what is *ram* short for --*random access memory* 
+what is *ramsize* short for --*random access memory size* 
+what is *ranlib* short for --*random library* 
+what is *rar* short for --*roshal archive* 
+what is *rarpd* short for --*reverse arp daemon* 
+what is *rcp* short for --*remote copy* 
+what is *rdate* short for --*remote date* 
+what is *rdev* short for --*root device* 
+what is *rdist* short for --*remote distribution* 
+what is *rdistd* short for --*remote distribution daemon* 
+what is *remsync* short for --*remote sync* 
+what is *repquota* short for --*report quota* 
+what is *resize2fs* short for --*resize ext2 file system* 
+what is *rev* short for --*reverse* 
+what is *rexec* short for --*remote execute* 
+what is *rexecd* short for --*remote execute daemon* 
+what is *richtext* short for --*rich text* 
+what is *rlogin* short for --*remote login* 
+what is *rlogind* short for --*remote login daemon* 
+what is *rm* short for --*remove* 
+what is *rmail* short for --*remote mail* 
+what is *rmdir* short for --*remove directory* 
+what is *rmmod* short for --*remove module* 
+what is *rndc* short for --*remote name daemon control* 
+what is *routed* short for --*route daemon* 
+what is *rpcgen* short for --*rpc generator* 
+what is *rpcinfo* short for --*rpc information* 
+what is *rpm* short for --*rpm package manager* 
+what is *rsh* short for --*remote shell* 
+what is *rshd* short for --*remote shell daemon* 
+what is *rsync* short for --*remote sync* 
+what is *runlevel* short for --*run level* 
+what is *rup* short for --*remote uptime* 
+what is *ruptime* short for --*remote uptime* 
+what is *rusers* short for --*remote users* 
+what is *rusersd* short for --*remote users daemon* 
+what is *rwall* short for --*remote wall* 
+what is *rwho* short for --*remote who* 
+what is *rwhod* short for --*remote who daemon* 
+
+what is *sar* short for --*system activity report* 
+what is *scanadf* short for --*scan automatic document feeder* 
+what is *scanimage* short for --*scan image* 
+what is *scp* short for --*secure copy* 
+what is *sdiff* short for --*side-by-side diff* 
+what is *sed* short for --*stream editor* 
+what is *seq* short for --*sequence* 
+what is *setfdprm* short for --*set floppy disk parameters* 
+what is *setsid* short for --*set session id* 
+what is *setterm* short for --*set terminal* 
+what is *sftp* short for --*secure file transfer protocol* 
+what is *sh* short for --*shell* 
+what is *sha1sum* short for --*sha-1 checksum* 
+what is *shopt* short for --*shell options* 
+what is *skill* short for --*send kill* 
+what is *slattach* short for --*serial line attach* 
+what is *slocate* short for --*secure locate* 
+what is *snice* short for --*set nice* 
+what is *ss* short for --*socket statistics* 
+what is *ssh* short for --*secure shell* 
+what is *ssh-add* short for --*secure shell add* 
+what is *ssh-agent* short for --*secure shell agent* 
+what is *sshd* short for --*secure shell daemon* 
+what is *ssh-keygen* short for --*secure shell key generator* 
+what is *ssh-keyscan* short for --*secure shell key scan* 
+what is *stat* short for --*status* 
+what is *statd* short for --*status daemon* 
+what is *strace* short for --*system trace* 
+what is *strfile* short for --*string file* 
+what is *stty* short for --*set terminal type* 
+what is *su* short for --*substitute user* 
+what is *sudo* short for --*superuser(subsitute) do* 
+what is *sum* short for --*checksum* 
+what is *symlink* short for --*symbolic link* 
+what is *sysctl* short for --*system control* 
+what is *sysklogd* short for --*system kernel logging daemon* 
+what is *syslogd* short for --*system log daemon* 
+what is *systemctl* short for --*system control* 
+what is *tailf* short for --*tail follow* 
+what is *talkd* short for --*talk daemon* 
+what is *tar* short for --*tape archive* 
+what is *tcpd* short for --*transmission control protocol daemon* 
+what is *tcpdump* short for --*transmission control protocol dump* 
+what is *tcpslice* short for --*transmission control protocol slice* 
+what is *telinit* short for --*teletype initialize* 
+what is *telnet* short for --*teletype network* 
+what is *telnetd* short for --*teletype network daemon* 
+what is *tftp* short for --*trivial file transfer protocol* 
+what is *tftpd* short for --*trivial file transfer protocol daemon* 
+what is *tload* short for --*terminal load* 
+what is *tmpwatch* short for --*temporary watch* 
+what is *tput* short for --*terminal put* 
+what is *tr* short for --*translate* 
+what is *troff* short for --*typesetter roff* 
+what is *tset* short for --*terminal set* 
+what is *tsort* short for --*topological sort* 
+what is *tty* short for --*teletype* 
+what is *tune2fs* short for --*tune ext2 file system* 
+what is *tunelp* short for --*tune line printer* 
+what is *ul* short for --*underline* 
+what is *ulimit* short for --*user limit* 
+what is *umask* short for --*user mask* 
+what is *umount* short for --*unmount* 
+what is *uname* short for --*unix name* 
+what is *uniq* short for --*unique* 
+what is *useradd* short for --*user add* 
+what is *userdel* short for --*user delete* 
+what is *usermod* short for --*user modify* 
+what is *username* short for --*user name* 
+what is *usleep* short for --*micro-sleep* 
+what is *uudecode* short for --*unix-to-unix decode* 
+what is *uuencode* short for --*unix-to-unix encode* 
+what is *uuidgen* short for --*uuid generator* 
+what is *vdir* short for --*verbose directory* 
+what is *vi* short for --*visual* 
+what is *vidmode* short for --*video mode* 
+what is *vim* short for --*vi improved* 
+what is *vmstat* short for --*virtual memory statistics* 
+what is *vnstat* short for --*virtual network statistics* 
+what is *volname* short for --*volume name* 
+what is *w* short for --*who* 
+what is *wall* short for --*write all* 
+what is *wc* short for --*word count* 
+what is *wget* short for --*web get* 
+what is *xargs* short for --*extended arguments* 
+what is *xdg-open* short for --*x desktop group open* 
+what is *xinetd* short for --*extended internet daemon* 
+what is *xz* short for --*lzma compression* 
+what is *yacc* short for --*yet another compiler compiler* 
+what is *ypbind* short for --*yellow pages bind* 
+what is *ypcat* short for --*yellow pages cat* 
+what is *ypinit* short for --*yellow pages initialize* 
+what is *ypmatch* short for --*yellow pages match* 
+what is *yppasswd* short for --*yellow pages password* 
+what is *yppasswdd* short for --*yellow pages password daemon* 
+what is *yppoll* short for --*yellow pages poll* 
+what is *yppush* short for --*yellow pages push* 
+what is *ypserv* short for --*yellow pages server* 
+what is *ypset* short for --*yellow pages set* 
+what is *yptest* short for --*yellow pages test* 
+what is *ypwhich* short for --*yellow pages which* 
+what is *ypxfr* short for --*yellow pages transfer* 
+what is *zcat* short for --*zip cat* 
+what is *zcmp* short for --*zip compare* 
+what is *zdiff* short for --*zip diff* 
+what is *zdump* short for --*zone dump* 
+what is *zforce* short for --*zip force* 
+what is *zgrep* short for --*zip grep* 
+what is *zic* short for --*zone information compiler* 
+what is *zless* short for --*zip less* 
+what is *zmore* short for --*zip more* 
+what is *znew* short for --*zip new* 

@@ -1,0 +1,168 @@
+apropos, -a
+echo
+history 
+export
+type
+man
+info
+locate
+cd
+mv
+cp
+rm
+touch
+mkdir
+rmdir 
+tar
+gzip
+bzip2
+xz 
+zip
+unzip
+grep
+less
+cat
+head
+tail
+sort
+cut
+wc 
+ps
+top
+free
+syslog 
+dmesg 
+route
+ip route show
+ifconfig
+ip addr show
+netstat
+ss
+ping
+host
+useradd
+groupadd
+passwd
+ls
+ls -l
+ls -a
+ls -d
+chmod
+chown
+ln
+ln -s
+dpkg
+apt-get
+rpm
+yum
+pwd 
+df
+du 
+logout
+exit
+ncdu
+htop
+whereis 
+which
+whatis
+find
+ping
+wget 
+curl
+printf
+tee
+sudo 
+su
+uniq 
+sort
+diff
+cmp 
+cut
+sed 
+awk 
+ssh
+scp 
+rsync
+yes
+nohup 
+ps
+kill
+cron 
+crontab 
+pushd 
+popd 
+xdg-open
+xargs 
+who
+w
+write
+wall
+lynx
+date
+cal
+bc
+id, last, who, w
+usr/share/doc/
+Hard drives, solid state disks and partitions, /dev/sd*
+/etc/, /var/log/
+/boot/, /proc/, /dev/, /sys/
+/etc/resolv.conf, /etc/hosts
+/etc/passwd, /etc/shadow, /etc/group
+/etc/passwd, /etc/shadow, /etc/group, /etc/skel/
+/tmp/, /var/tmp/
+
+what is the file descriptor? a process-unique identifier(handle) for a file or other input/output resource, such as a pipe or network socket.
+
+what is the file descriptor name for 0? standard input
+what is the file descriptor integer value for stdin? 0
+what is the file descriptor file stream for 0? stdin
+
+what is the file descriptor name for 1? standard output
+what is the file descriptor integer value for stdout? 1
+what is the file descriptor file stream for 1? stdout
+
+what is the file descriptor name for 2? standard error
+what is the file descriptor integer value for stderr? 2
+what is the file descriptor file stream for 2? stderr
+
+| anonymous pipe
+
+run program1 stdout/stderr to terminal (default)
+program1 
+
+send stdout from program1 to stdin of program2 with anonymous pipe
+program1 | program2
+
+run program1 stdout to out.log stderr to terminal with file descriptor
+program1 1> out.log
+run program1 stdout to out.log stderr to terminal
+program1 > out.log
+
+run program1 stdout/stderr to out.log nothing to terminal with file descriptors
+program1 1> out.log 2> out.log
+run program1 stdout/stderr to out.log nothing to terminal with stderr
+program1 > out.log 2> out.log
+run program1 stdout/stderr to out.log nothing to terminal with stderr and stdout
+program1 > out.log 2>&1
+
+run program1 with input text as input, stdout/stderr to terminal with file descriptors
+program1 < input.txt 
+run program1 with input text as input, stdout/stderr to terminal with pipe
+cat input.txt | program1
+
+run program1 with input.txt to stdin, stdout to output.txt, stderr to termianl with file descriptors
+program1 < input.txt > output.txt
+run program1 with input.txt to stdin, stdout to output.txt, stderr to termianl with pipe
+cat input.txt | program1 > output.txt
+
+send stdout from program to stdin of program2 with named pipe
+mkfifo mypipe
+program1 > mypipe
+program2 < mypipe
+
+run program1, discard all output
+program1 > /dev/null/ 2>&1
+
+run program1, send fd4to out.log (see write.c)
+program1 4> out.log
+
