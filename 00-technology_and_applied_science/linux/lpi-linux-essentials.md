@@ -731,7 +731,7 @@ permissions.
 - ls -d
   What is ls -d? -d --directory list directories themselves, not their contents
 - ln -s
-  What is ln -s?
+  What is ln -s? --symbolic make symbolic links instead of hard links
 
 What are temporary files and directories?
 Files and directories used to store temporary data, often deleted after use.
