@@ -703,7 +703,9 @@ settings.
 
 - ls -l, ls -a
   What is ls -l?
+    -l use a long listing format
   What is ls -a?
+    -a, --all do not ignore entries starting with .
 - chmod, chown
   What is chmod?
   What is chown?
@@ -727,7 +729,7 @@ permissions.
   What is /var/tmp/?
   What is the Sticky Bit?
 - ls -d
-  What is ls -d?
+  What is ls -d? -d --directory list directories themselves, not their contents
 - ln -s
   What is ln -s?
 
