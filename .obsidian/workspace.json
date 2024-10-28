@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journals/2024-10-27.md",
+                "file": "00-technology_and_applied_science/00-tech-app.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2024-10-27"
+              "title": "00-tech-app"
             }
           }
         ],
@@ -244,8 +244,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 630.5,
-    "collapsed": true
+    "width": 630.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,34 +263,35 @@
   },
   "active": "fc45c8b364c9851a",
   "lastOpenFiles": [
+    "00-society_and_social_sciences/00-soc-ssci.md",
+    "00-technology_and_applied_science/00-tech-app.md",
+    "work-on.md",
+    "journals/2024-10-27.md",
+    "00-religion_and_belief_systems/00-rel-bel.md",
+    "00-philosophy_and_thinking/00-phi-thi.md",
+    "00-people_and_society/00-peo-soc.md",
+    "00-natural_and_physical_sciences/00-nat-sci.md",
+    "00-mathematics_and_logic/00-math-log.md",
+    "00-human_activities/00-human-act.md",
+    "00-history_and_events/00-his-even.md",
+    "00-health_and_fitness/00-heal-fit.md",
+    "00-geography_and_places/00-geo-pla.md",
+    "00-general_reference/00-gen-refer.md",
+    "00-culture_and_the_arts/00-cult-art.md",
+    "00-technology_and_applied_science/anki/9-not_using__00-software_eng__test-js__test-git.txt",
+    "00-technology_and_applied_science/software-engineering/python/py-built-in-functions.md",
+    "00-technology_and_applied_science/software-engineering/python/py-built-in-functions-cards.md",
     "00-technology_and_applied_science/linux_apps.md",
     "00-technology_and_applied_science/linkedin_keywords.md",
     "00-general_reference/education/Thomas_Edison_State_University.md",
     "00-general_reference/education/General_Education_Requirements_(45_Credits).md",
     "devops.md",
-    "journals/2024-10-27.md",
     "interview-questions.md~",
     "interview-questions.md",
     "00-technology_and_applied_science/linux/lpi-linux-essentials.md~",
-    "work-on.md",
     "journals/2024-10-26.md",
     "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
     "00-technology_and_applied_science/software-engineering/python/test.md",
-    "00-technology_and_applied_science/software-engineering/python/python-while-statement.md",
-    "00-technology_and_applied_science/software-engineering/python/python-venv.md",
-    "00-technology_and_applied_science/software-engineering/python/python-variables.md",
-    "00-technology_and_applied_science/software-engineering/python/python-user-input.md",
-    "00-technology_and_applied_science/software-engineering/python/python-unsorted.md",
-    "00-technology_and_applied_science/software-engineering/python/python-tuple.md",
-    "00-technology_and_applied_science/software-engineering/python/python-try-except.md",
-    "00-technology_and_applied_science/software-engineering/python/python-tokens.md",
-    "00-technology_and_applied_science/software-engineering/python/python-syntax.md",
-    "00-technology_and_applied_science/software-engineering/python/python-strings.md",
-    "00-technology_and_applied_science/software-engineering/python/python-string-methods.md",
-    "00-technology_and_applied_science/software-engineering/python/python-statements.md",
-    "00-technology_and_applied_science/software-engineering/python/python-sorting.md",
-    "00-technology_and_applied_science/software-engineering/python/python-skill.md",
-    "00-technology_and_applied_science/software-engineering/python/python-set.md",
     "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",
@@ -299,7 +299,6 @@
     "00-technology_and_applied_science/software-engineering/javaScript/20220720093325-jsResources.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220716191455-jsArrays.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220716191425-jsObjects.org",
-    "00-technology_and_applied_science/software-engineering/javaScript/20220713212731-jsLexicalStructure.org",
     "00-technology_and_applied_science/software-engineering/sliding-window-2.png",
     "00-technology_and_applied_science/software-engineering/sliding-window-1.png",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
