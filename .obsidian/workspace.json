@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-technology_and_applied_science/00-tech-app.md",
+                "file": "journals/2024-10-28.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "00-tech-app"
+              "title": "2024-10-28"
             }
           }
         ],
@@ -263,8 +263,9 @@
   },
   "active": "fc45c8b364c9851a",
   "lastOpenFiles": [
-    "00-society_and_social_sciences/00-soc-ssci.md",
     "00-technology_and_applied_science/00-tech-app.md",
+    "journals/2024-10-28.md",
+    "00-society_and_social_sciences/00-soc-ssci.md",
     "work-on.md",
     "journals/2024-10-27.md",
     "00-religion_and_belief_systems/00-rel-bel.md",
@@ -291,7 +292,6 @@
     "00-technology_and_applied_science/linux/lpi-linux-essentials.md~",
     "journals/2024-10-26.md",
     "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
-    "00-technology_and_applied_science/software-engineering/python/test.md",
     "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",
