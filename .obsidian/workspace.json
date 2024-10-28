@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops.md",
+                "file": "journals/2024-10-27.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "devops"
+              "title": "2024-10-27"
             }
           }
         ],
@@ -264,11 +264,16 @@
   },
   "active": "fc45c8b364c9851a",
   "lastOpenFiles": [
+    "00-technology_and_applied_science/linux_apps.md",
+    "00-technology_and_applied_science/linkedin_keywords.md",
+    "00-general_reference/education/Thomas_Edison_State_University.md",
+    "00-general_reference/education/General_Education_Requirements_(45_Credits).md",
+    "devops.md",
+    "journals/2024-10-27.md",
     "interview-questions.md~",
     "interview-questions.md",
     "00-technology_and_applied_science/linux/lpi-linux-essentials.md~",
     "work-on.md",
-    "devops.md",
     "journals/2024-10-26.md",
     "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
     "00-technology_and_applied_science/software-engineering/python/test.md",
@@ -287,10 +292,6 @@
     "00-technology_and_applied_science/software-engineering/python/python-sorting.md",
     "00-technology_and_applied_science/software-engineering/python/python-skill.md",
     "00-technology_and_applied_science/software-engineering/python/python-set.md",
-    "00-technology_and_applied_science/software-engineering/python/python-roadmap2.md",
-    "00-technology_and_applied_science/software-engineering/python/python-roadmap.md",
-    "00-technology_and_applied_science/software-engineering/python/python-regex.md",
-    "00-technology_and_applied_science/software-engineering/python/python-range.md",
     "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",
@@ -299,7 +300,6 @@
     "00-technology_and_applied_science/software-engineering/javaScript/20220716191455-jsArrays.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220716191425-jsObjects.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220713212731-jsLexicalStructure.org",
-    "00-technology_and_applied_science/software-engineering/javaScript/20220712211827-jsControlFlow.org",
     "00-technology_and_applied_science/software-engineering/sliding-window-2.png",
     "00-technology_and_applied_science/software-engineering/sliding-window-1.png",
     "_technology_and_applied_science/software-engineering/sliding-window-2.png",
