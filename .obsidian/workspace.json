@@ -19,69 +19,24 @@
               },
               "icon": "lucide-file",
               "title": "devops-roadmap"
-            },
-            "group": "4cf5d733f9750286"
+            }
           },
           {
-            "id": "fc45c8b364c9851a",
+            "id": "1126921667c4209a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-technology_and_applied_science/00-tech-app.md",
+                "file": "windows test.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "00-tech-app"
+              "title": "windows test"
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "072d20a8365d66be",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "83bc8fa5dfd28d6d",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "devops-roadmap.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of devops-roadmap"
-            },
-            "group": "4cf5d733f9750286"
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -172,12 +127,49 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work-on.md",
+                "file": "windows test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from work-on"
+              "title": "Outgoing links from windows test"
+            }
+          },
+          {
+            "id": "83bc8fa5dfd28d6d",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "windows test.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7631428283688881,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of windows test"
             }
           },
           {
@@ -225,8 +217,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -240,11 +232,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 630.5
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,12 +253,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fc45c8b364c9851a",
+  "active": "96672dcf53ad44e7",
   "lastOpenFiles": [
-    "00-society_and_social_sciences/00-soc-ssci.md",
-    "00-technology_and_applied_science/00-tech-app.md",
     "work-on.md",
+    "windows test.md",
+    "resume.md",
+    "devops-roadmap.md",
     "journals/2024-10-27.md",
+    "00-technology_and_applied_science/00-tech-app.md",
+    "00-society_and_social_sciences/00-soc-ssci.md",
     "00-religion_and_belief_systems/00-rel-bel.md",
     "00-philosophy_and_thinking/00-phi-thi.md",
     "00-people_and_society/00-peo-soc.md",
@@ -289,9 +284,6 @@
     "interview-questions.md~",
     "interview-questions.md",
     "00-technology_and_applied_science/linux/lpi-linux-essentials.md~",
-    "journals/2024-10-26.md",
-    "00-technology_and_applied_science/software-engineering/python/what-is-python.md",
-    "00-technology_and_applied_science/software-engineering/python/test.md",
     "00-technology_and_applied_science/software-engineering/javaScript/20220814195019-reactjs.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132049-jsRequests.org",
     "00-technology_and_applied_science/software-engineering/javaScript/20220720132003-jsTesting.org",
