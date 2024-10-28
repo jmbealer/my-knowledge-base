@@ -12,3 +12,8 @@
 # org-old/
 .stfolder/
 .stversions/
+
+# because of multiple machines
+workspace.json
+.obsidian.vimrc
+
