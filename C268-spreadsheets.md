@@ -22,30 +22,35 @@ set margins goto page layout
 column to repeat left got page layout the page setup then sheet
 sort select date to sort then goto data menu 
 filter select date goto data menu
+
+Videos:
 [Lesson 1.5 TYS Steps 1-19](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0)
-Excel Basics
 [Lesson 1.5 TYS Steps 20-32](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e)
 
 mac videos
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22d4c236-ce71-468c-a127-90dc87d025ea
 
 Lesson 2: Analyzing Data with PivotTables
-Lesson 2.2 redo
+Lesson 2.2 test your skills: pivottables
+    code: 9e1nXL-rrJcR-NiT38m
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=289af39c-6fb6-4926-9cc6-786739d4d9d4
 
 Lesson 3: Formula and Functions
-Lesson 3.5 redo
+Lesson 3.5 test your skills: formulas and functions
+    code: 9e1ne5-WEEzm-mcjDRf  
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
 
 Lesson 4: Charting
-Lesson 4.6 redo
+Lesson 4.6 test your skills: charting
+    code: 9e1ngb-yxXAh-Q9gQ34
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bff9d6cb-06ef-4f03-be1d-aa3a015e7067
 
 Lesson 5: Date, Time, and Text Functions
-Lesson 5.3 
+Lesson 5.3 test your skills: date, time, and text functions
+    code: 9e1nkC-rDM61-YiwNjU 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ea53e6-187f-4c90-8769-aa5b013cb6fd
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a75c936-4584-4391-b915-aa5b013c809c
