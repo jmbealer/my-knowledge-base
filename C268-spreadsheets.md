@@ -50,3 +50,10 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=001b1f2a-74bc-4311-8
 
 Lesson 10: Optimization Analysis
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ebfc4eb2-7c5b-4e6d-8f86-aaf700e034e5
+
+oa test
+https://drive.google.com/file/d/1JPSRWQbR6EkUJ87KcA4Cm0mxkpqN5rqV/view
+
+https://drive.google.com/drive/folders/1gQ8ZglQIMjtrV3Nyclzbh1qkFaBvRMl-
+
+https://lrps.wgu.edu/provision/527682287
