@@ -821,19 +821,19 @@ var require_XMLCharacterData = __commonJS({
         XMLCharacterData2.prototype.clone = function() {
           return Object.create(this);
         };
-        XMLCharacterData2.prototype.substringData = function(offset, count) {
+        XMLCharacterData2.prototype.substringData = function(offset2, count) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
         XMLCharacterData2.prototype.appendData = function(arg) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
-        XMLCharacterData2.prototype.insertData = function(offset, arg) {
+        XMLCharacterData2.prototype.insertData = function(offset2, arg) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
-        XMLCharacterData2.prototype.deleteData = function(offset, count) {
+        XMLCharacterData2.prototype.deleteData = function(offset2, count) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
-        XMLCharacterData2.prototype.replaceData = function(offset, count, arg) {
+        XMLCharacterData2.prototype.replaceData = function(offset2, count, arg) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
         XMLCharacterData2.prototype.isEqualNode = function(node) {
@@ -1515,7 +1515,7 @@ var require_XMLText = __commonJS({
         XMLText2.prototype.toString = function(options) {
           return this.options.writer.text(this, this.options.writer.filterOptions(options));
         };
-        XMLText2.prototype.splitText = function(offset) {
+        XMLText2.prototype.splitText = function(offset2) {
           throw new Error("This DOM method is not implemented." + this.debugInfo());
         };
         XMLText2.prototype.replaceWholeText = function(content) {
@@ -2359,9 +2359,9 @@ var require_XMLNode = __commonJS({
 var require_XMLStringifier = __commonJS({
   "node_modules/xmlbuilder/lib/XMLStringifier.js"(exports, module2) {
     (function() {
-      var XMLStringifier, bind = function(fn, me) {
+      var XMLStringifier, bind = function(fn2, me) {
         return function() {
-          return fn.apply(me, arguments);
+          return fn2.apply(me, arguments);
         };
       }, hasProp = {}.hasOwnProperty;
       module2.exports = XMLStringifier = function() {
@@ -4120,6 +4120,9 @@ var require_sax = __commonJS({
         if (parser.opt.xmlns) {
           parser.ns = Object.create(rootNS);
         }
+        if (parser.opt.unquotedAttributeValues === void 0) {
+          parser.opt.unquotedAttributeValues = !strict;
+        }
         parser.trackPosition = parser.opt.position !== false;
         if (parser.trackPosition) {
           parser.position = parser.line = parser.column = 0;
@@ -4189,9 +4192,9 @@ var require_sax = __commonJS({
       }
       SAXParser.prototype = {
         end: function() {
-          end(this);
+          end2(this);
         },
-        write,
+        write: write2,
         resume: function() {
           this.error = null;
           return this;
@@ -4654,7 +4657,7 @@ var require_sax = __commonJS({
         emit(parser, "onerror", er);
         return parser;
       }
-      function end(parser) {
+      function end2(parser) {
         if (parser.sawRoot && !parser.closedRoot)
           strictFail(parser, "Unclosed root tag");
         if (parser.state !== S.BEGIN && parser.state !== S.BEGIN_WHITESPACE && parser.state !== S.TEXT) {
@@ -4901,7 +4904,7 @@ var require_sax = __commonJS({
         }
         return result;
       }
-      function write(chunk) {
+      function write2(chunk) {
         var parser = this;
         if (this.error) {
           throw this.error;
@@ -4910,7 +4913,7 @@ var require_sax = __commonJS({
           return error(parser, "Cannot write after close. Assign an onready handler.");
         }
         if (chunk === null) {
-          return end(parser);
+          return end2(parser);
         }
         if (typeof chunk === "object") {
           chunk = chunk.toString();
@@ -5014,15 +5017,21 @@ var require_sax = __commonJS({
               }
               continue;
             case S.SGML_DECL:
-              if ((parser.sgmlDecl + c).toUpperCase() === CDATA) {
+              if (parser.sgmlDecl + c === "--") {
+                parser.state = S.COMMENT;
+                parser.comment = "";
+                parser.sgmlDecl = "";
+                continue;
+              }
+              if (parser.doctype && parser.doctype !== true && parser.sgmlDecl) {
+                parser.state = S.DOCTYPE_DTD;
+                parser.doctype += "<!" + parser.sgmlDecl + c;
+                parser.sgmlDecl = "";
+              } else if ((parser.sgmlDecl + c).toUpperCase() === CDATA) {
                 emitNode(parser, "onopencdata");
                 parser.state = S.CDATA;
                 parser.sgmlDecl = "";
                 parser.cdata = "";
-              } else if (parser.sgmlDecl + c === "--") {
-                parser.state = S.COMMENT;
-                parser.comment = "";
-                parser.sgmlDecl = "";
               } else if ((parser.sgmlDecl + c).toUpperCase() === DOCTYPE) {
                 parser.state = S.DOCTYPE;
                 if (parser.doctype || parser.sawRoot) {
@@ -5071,12 +5080,18 @@ var require_sax = __commonJS({
               }
               continue;
             case S.DOCTYPE_DTD:
-              parser.doctype += c;
               if (c === "]") {
+                parser.doctype += c;
                 parser.state = S.DOCTYPE;
+              } else if (c === "<") {
+                parser.state = S.OPEN_WAKA;
+                parser.startTagPosition = parser.position;
               } else if (isQuote(c)) {
+                parser.doctype += c;
                 parser.state = S.DOCTYPE_DTD_QUOTED;
                 parser.q = c;
+              } else {
+                parser.doctype += c;
               }
               continue;
             case S.DOCTYPE_DTD_QUOTED:
@@ -5111,6 +5126,8 @@ var require_sax = __commonJS({
                 strictFail(parser, "Malformed comment");
                 parser.comment += "--" + c;
                 parser.state = S.COMMENT;
+              } else if (parser.doctype && parser.doctype !== true) {
+                parser.state = S.DOCTYPE_DTD;
               } else {
                 parser.state = S.TEXT;
               }
@@ -5265,7 +5282,9 @@ var require_sax = __commonJS({
                 parser.q = c;
                 parser.state = S.ATTRIB_VALUE_QUOTED;
               } else {
-                strictFail(parser, "Unquoted attribute value");
+                if (!parser.opt.unquotedAttributeValues) {
+                  error(parser, "Unquoted attribute value");
+                }
                 parser.state = S.ATTRIB_VALUE_UNQUOTED;
                 parser.attribValue = c;
               }
@@ -5374,13 +5393,13 @@ var require_sax = __commonJS({
                   break;
               }
               if (c === ";") {
-                if (parser.opt.unparsedEntities) {
-                  var parsedEntity = parseEntity(parser);
+                var parsedEntity = parseEntity(parser);
+                if (parser.opt.unparsedEntities && !Object.values(sax.XML_ENTITIES).includes(parsedEntity)) {
                   parser.entity = "";
                   parser.state = returnState;
                   parser.write(parsedEntity);
                 } else {
-                  parser[buffer] += parseEntity(parser);
+                  parser[buffer] += parsedEntity;
                   parser.entity = "";
                   parser.state = returnState;
                 }
@@ -5506,9 +5525,9 @@ var require_parser = __commonJS({
   "node_modules/xml2js/lib/parser.js"(exports) {
     (function() {
       "use strict";
-      var bom, defaults, events, isEmpty, processItem, processors, sax, setImmediate, bind = function(fn, me) {
+      var bom, defaults, events, isEmpty, processItem, processors, sax, setImmediate, bind = function(fn2, me) {
         return function() {
-          return fn.apply(me, arguments);
+          return fn2.apply(me, arguments);
         };
       }, extend = function(child, parent) {
         for (var key in parent) {
@@ -6158,15 +6177,15 @@ var require_encode = __commonJS({
         }
       }
       single.sort();
-      for (var start = 0; start < single.length - 1; start++) {
-        var end = start;
-        while (end < single.length - 1 && single[end].charCodeAt(1) + 1 === single[end + 1].charCodeAt(1)) {
-          end += 1;
+      for (var start2 = 0; start2 < single.length - 1; start2++) {
+        var end2 = start2;
+        while (end2 < single.length - 1 && single[end2].charCodeAt(1) + 1 === single[end2 + 1].charCodeAt(1)) {
+          end2 += 1;
         }
-        var count = 1 + end - start;
+        var count = 1 + end2 - start2;
         if (count < 3)
           continue;
-        single.splice(start, count, single[start] + "-" + single[end]);
+        single.splice(start2, count, single[start2] + "-" + single[end2]);
       }
       multiple.unshift("[" + single.join("") + "]");
       return new RegExp(multiple.join("|"), "g");
@@ -6433,13 +6452,13 @@ var require_parser2 = __commonJS({
       }
       parseURL(feedUrl, callback, redirectCount = 0) {
         let xml = "";
-        let get = feedUrl.indexOf("https") === 0 ? https.get : http.get;
+        let get2 = feedUrl.indexOf("https") === 0 ? https.get : http.get;
         let urlParts = url.parse(feedUrl);
         let headers = Object.assign({}, DEFAULT_HEADERS, this.options.headers);
         let timeout = null;
         let prom = new Promise((resolve, reject) => {
           const requestOpts = Object.assign({ headers }, urlParts, this.options.requestOptions);
-          let req = get(requestOpts, (res) => {
+          let req = get2(requestOpts, (res) => {
             if (this.options.maxRedirects && res.statusCode >= 300 && res.statusCode < 400 && res.headers["location"]) {
               if (redirectCount === this.options.maxRedirects) {
                 return reject(new Error("Too many redirects"));
@@ -6780,9 +6799,9 @@ var require_mustache = __commonJS({
         }
         compileTags(tags || mustache.tags);
         var scanner = new Scanner(template);
-        var start, type, value, chr, token, openSection;
+        var start2, type, value, chr, token, openSection;
         while (!scanner.eos()) {
-          start = scanner.pos;
+          start2 = scanner.pos;
           value = scanner.scanUntil(openingTagRe);
           if (value) {
             for (var i = 0, valueLength = value.length; i < valueLength; ++i) {
@@ -6795,8 +6814,8 @@ var require_mustache = __commonJS({
                 lineHasNonSpace = true;
                 indentation += " ";
               }
-              tokens.push(["text", chr, start, start + 1]);
-              start += 1;
+              tokens.push(["text", chr, start2, start2 + 1]);
+              start2 += 1;
               if (chr === "\n") {
                 stripSpace();
                 indentation = "";
@@ -6825,9 +6844,9 @@ var require_mustache = __commonJS({
           if (!scanner.scan(closingTagRe))
             throw new Error("Unclosed tag at " + scanner.pos);
           if (type == ">") {
-            token = [type, value, start, scanner.pos, indentation, tagIndex, lineHasNonSpace];
+            token = [type, value, start2, scanner.pos, indentation, tagIndex, lineHasNonSpace];
           } else {
-            token = [type, value, start, scanner.pos];
+            token = [type, value, start2, scanner.pos];
           }
           tagIndex++;
           tokens.push(token);
@@ -6836,9 +6855,9 @@ var require_mustache = __commonJS({
           } else if (type === "/") {
             openSection = sections.pop();
             if (!openSection)
-              throw new Error('Unopened section "' + value + '" at ' + start);
+              throw new Error('Unopened section "' + value + '" at ' + start2);
             if (openSection[1] !== value)
-              throw new Error('Unclosed section "' + openSection[1] + '" at ' + start);
+              throw new Error('Unclosed section "' + openSection[1] + '" at ' + start2);
           } else if (type === "name" || type === "{" || type === "&") {
             nonSpace = true;
           } else if (type === "=") {
@@ -6974,7 +6993,7 @@ var require_mustache = __commonJS({
           set: function set(key, value) {
             this._cache[key] = value;
           },
-          get: function get(key) {
+          get: function get2(key) {
             return this._cache[key];
           },
           clear: function clear() {
@@ -7263,8 +7282,8 @@ var require_snippet = __commonJS({
         pos: position - lineStart + head.length
       };
     }
-    function padStart(string, max) {
-      return common.repeat(" ", max - string.length) + string;
+    function padStart(string, max2) {
+      return common.repeat(" ", max2 - string.length) + string;
     }
     function makeSnippet(mark, options) {
       options = Object.create(options || null);
@@ -7536,8 +7555,8 @@ var require_null = __commonJS({
     function resolveYamlNull(data) {
       if (data === null)
         return true;
-      var max = data.length;
-      return max === 1 && data === "~" || max === 4 && (data === "null" || data === "Null" || data === "NULL");
+      var max2 = data.length;
+      return max2 === 1 && data === "~" || max2 === 4 && (data === "null" || data === "Null" || data === "NULL");
     }
     function constructYamlNull() {
       return null;
@@ -7580,8 +7599,8 @@ var require_bool = __commonJS({
     function resolveYamlBoolean(data) {
       if (data === null)
         return false;
-      var max = data.length;
-      return max === 4 && (data === "true" || data === "True" || data === "TRUE") || max === 5 && (data === "false" || data === "False" || data === "FALSE");
+      var max2 = data.length;
+      return max2 === 4 && (data === "true" || data === "True" || data === "TRUE") || max2 === 5 && (data === "false" || data === "False" || data === "FALSE");
     }
     function constructYamlBoolean(data) {
       return data === "true" || data === "True" || data === "TRUE";
@@ -7628,20 +7647,20 @@ var require_int = __commonJS({
     function resolveYamlInteger(data) {
       if (data === null)
         return false;
-      var max = data.length, index = 0, hasDigits = false, ch;
-      if (!max)
+      var max2 = data.length, index = 0, hasDigits = false, ch;
+      if (!max2)
         return false;
       ch = data[index];
       if (ch === "-" || ch === "+") {
         ch = data[++index];
       }
       if (ch === "0") {
-        if (index + 1 === max)
+        if (index + 1 === max2)
           return true;
         ch = data[++index];
         if (ch === "b") {
           index++;
-          for (; index < max; index++) {
+          for (; index < max2; index++) {
             ch = data[index];
             if (ch === "_")
               continue;
@@ -7653,7 +7672,7 @@ var require_int = __commonJS({
         }
         if (ch === "x") {
           index++;
-          for (; index < max; index++) {
+          for (; index < max2; index++) {
             ch = data[index];
             if (ch === "_")
               continue;
@@ -7665,7 +7684,7 @@ var require_int = __commonJS({
         }
         if (ch === "o") {
           index++;
-          for (; index < max; index++) {
+          for (; index < max2; index++) {
             ch = data[index];
             if (ch === "_")
               continue;
@@ -7678,7 +7697,7 @@ var require_int = __commonJS({
       }
       if (ch === "_")
         return false;
-      for (; index < max; index++) {
+      for (; index < max2; index++) {
         ch = data[index];
         if (ch === "_")
           continue;
@@ -7938,8 +7957,8 @@ var require_binary = __commonJS({
     function resolveYamlBinary(data) {
       if (data === null)
         return false;
-      var code, idx, bitlen = 0, max = data.length, map = BASE64_MAP;
-      for (idx = 0; idx < max; idx++) {
+      var code, idx, bitlen = 0, max2 = data.length, map = BASE64_MAP;
+      for (idx = 0; idx < max2; idx++) {
         code = map.indexOf(data.charAt(idx));
         if (code > 64)
           continue;
@@ -7950,8 +7969,8 @@ var require_binary = __commonJS({
       return bitlen % 8 === 0;
     }
     function constructYamlBinary(data) {
-      var idx, tailbits, input = data.replace(/[\r\n=]/g, ""), max = input.length, map = BASE64_MAP, bits = 0, result = [];
-      for (idx = 0; idx < max; idx++) {
+      var idx, tailbits, input = data.replace(/[\r\n=]/g, ""), max2 = input.length, map = BASE64_MAP, bits = 0, result = [];
+      for (idx = 0; idx < max2; idx++) {
         if (idx % 4 === 0 && idx) {
           result.push(bits >> 16 & 255);
           result.push(bits >> 8 & 255);
@@ -7959,7 +7978,7 @@ var require_binary = __commonJS({
         }
         bits = bits << 6 | map.indexOf(input.charAt(idx));
       }
-      tailbits = max % 4 * 6;
+      tailbits = max2 % 4 * 6;
       if (tailbits === 0) {
         result.push(bits >> 16 & 255);
         result.push(bits >> 8 & 255);
@@ -7973,8 +7992,8 @@ var require_binary = __commonJS({
       return new Uint8Array(result);
     }
     function representYamlBinary(object) {
-      var result = "", bits = 0, idx, tail, max = object.length, map = BASE64_MAP;
-      for (idx = 0; idx < max; idx++) {
+      var result = "", bits = 0, idx, tail, max2 = object.length, map = BASE64_MAP;
+      for (idx = 0; idx < max2; idx++) {
         if (idx % 3 === 0 && idx) {
           result += map[bits >> 18 & 63];
           result += map[bits >> 12 & 63];
@@ -7983,7 +8002,7 @@ var require_binary = __commonJS({
         }
         bits = (bits << 8) + object[idx];
       }
-      tail = max % 3;
+      tail = max2 % 3;
       if (tail === 0) {
         result += map[bits >> 18 & 63];
         result += map[bits >> 12 & 63];
@@ -8315,10 +8334,10 @@ var require_loader = __commonJS({
         state.tagMap[handle] = prefix;
       }
     };
-    function captureSegment(state, start, end, checkJson) {
+    function captureSegment(state, start2, end2, checkJson) {
       var _position, _length, _character, _result;
-      if (start < end) {
-        _result = state.input.slice(start, end);
+      if (start2 < end2) {
+        _result = state.input.slice(start2, end2);
         if (checkJson) {
           for (_position = 0, _length = _result.length; _position < _length; _position += 1) {
             _character = _result.charCodeAt(_position);
@@ -9627,22 +9646,22 @@ var require_dumper = __commonJS({
         return line;
       var breakRe = / [^ ]/g;
       var match;
-      var start = 0, end, curr = 0, next = 0;
+      var start2 = 0, end2, curr = 0, next = 0;
       var result = "";
       while (match = breakRe.exec(line)) {
         next = match.index;
-        if (next - start > width) {
-          end = curr > start ? curr : next;
-          result += "\n" + line.slice(start, end);
-          start = end + 1;
+        if (next - start2 > width) {
+          end2 = curr > start2 ? curr : next;
+          result += "\n" + line.slice(start2, end2);
+          start2 = end2 + 1;
         }
         curr = next;
       }
       result += "\n";
-      if (line.length - start > width && curr > start) {
-        result += line.slice(start, curr) + "\n" + line.slice(curr + 1);
+      if (line.length - start2 > width && curr > start2) {
+        result += line.slice(start2, curr) + "\n" + line.slice(curr + 1);
       } else {
-        result += line.slice(start);
+        result += line.slice(start2);
       }
       return result.slice(1);
     }
@@ -10155,14 +10174,14 @@ var require_turndown_browser_cjs = __commonJS({
     rules.listItem = {
       filter: "li",
       replacement: function(content, node, options) {
-        content = content.replace(/^\n+/, "").replace(/\n+$/, "\n").replace(/\n/gm, "\n    ");
         var prefix = options.bulletListMarker + "   ";
         var parent = node.parentNode;
         if (parent.nodeName === "OL") {
-          var start = parent.getAttribute("start");
+          var start2 = parent.getAttribute("start");
           var index = Array.prototype.indexOf.call(parent.children, node);
-          prefix = (start ? Number(start) + index : index + 1) + ".  ";
+          prefix = (start2 ? Number(start2) + index : index + 1) + ".  ";
         }
+        content = content.replace(/^\n+/, "").replace(/\n+$/, "\n").replace(/\n/gm, "\n" + " ".repeat(prefix.length));
         return prefix + content + (node.nextSibling && !/\n$/.test(content) ? "\n" : "");
       }
     };
@@ -10207,9 +10226,11 @@ var require_turndown_browser_cjs = __commonJS({
       },
       replacement: function(content, node) {
         var href = node.getAttribute("href");
+        if (href)
+          href = href.replace(/([()])/g, "\\$1");
         var title = cleanAttribute(node.getAttribute("title"));
         if (title)
-          title = ' "' + title + '"';
+          title = ' "' + title.replace(/"/g, '\\"') + '"';
         return "[" + content + "](" + href + title + ")";
       }
     };
@@ -10223,22 +10244,22 @@ var require_turndown_browser_cjs = __commonJS({
         if (title)
           title = ' "' + title + '"';
         var replacement;
-        var reference;
+        var reference2;
         switch (options.linkReferenceStyle) {
           case "collapsed":
             replacement = "[" + content + "][]";
-            reference = "[" + content + "]: " + href + title;
+            reference2 = "[" + content + "]: " + href + title;
             break;
           case "shortcut":
             replacement = "[" + content + "]";
-            reference = "[" + content + "]: " + href + title;
+            reference2 = "[" + content + "]: " + href + title;
             break;
           default:
             var id = this.references.length + 1;
             replacement = "[" + content + "][" + id + "]";
-            reference = "[" + id + "]: " + href + title;
+            reference2 = "[" + id + "]: " + href + title;
         }
-        this.references.push(reference);
+        this.references.push(reference2);
         return replacement;
       },
       references: [],
@@ -10343,9 +10364,9 @@ var require_turndown_browser_cjs = __commonJS({
           return rule;
         return this.defaultRule;
       },
-      forEach: function(fn) {
+      forEach: function(fn2) {
         for (var i = 0; i < this.array.length; i++)
-          fn(this.array[i], i);
+          fn2(this.array[i], i);
       }
     };
     function findRule(rules2, node, options) {
@@ -10477,7 +10498,7 @@ var require_turndown_browser_cjs = __commonJS({
       try {
         document.implementation.createHTMLDocument("").open();
       } catch (e) {
-        if (window.ActiveXObject)
+        if (root.ActiveXObject)
           useActiveX = true;
       }
       return useActiveX;
@@ -10695,7 +10716,7 @@ var require_turndown_browser_cjs = __commonJS({
 __export(exports, {
   default: () => Booksidian
 });
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian5 = __toModule(require("obsidian"));
 
 // const/rssParser.ts
 var Parser = require_rss_parser();
@@ -10710,6 +10731,7 @@ var rssParser = new Parser({
       "average_rating",
       "user_read_at",
       "user_date_added",
+      "user_date_created",
       "book_published",
       ["book", "identifiers"],
       "user_shelves",
@@ -10750,20 +10772,60 @@ var Frontmatter = class {
       const value = this.currentYAML[key];
       const [prefix, postfix] = value.split(key);
       if (key === "shelves") {
-        output[key] = this.book.shelves.split(",").sort().map((shelf) => {
+        output[key] = this.book.shelves.sort().map((shelf) => {
           return `${prefix}${shelf}${postfix}`;
         });
       } else {
-        output[key] = `${prefix}${this.book[key]}${postfix}`;
+        if (value == `[[${key}]]` && this.book[key] == "") {
+          output[key] = "";
+        } else {
+          output[key] = `${prefix}${this.book[key]}${postfix}`;
+        }
       }
     });
     return yaml.dump(output);
   }
 };
 
-// src/Book.ts
+// src/helpers.ts
 var import_path = __toModule(require("path"));
 var nodeFs = __toModule(require("fs"));
+function writeFile2(path, content, app) {
+  return __async(this, null, function* () {
+    if ((0, import_path.isAbsolute)(path)) {
+      nodeFs.writeFile(path, content, (error) => {
+        if (error)
+          console.log(`Error writing ${path}`, error);
+      });
+    } else {
+      try {
+        const fs = app.vault.adapter;
+        yield fs.write(path, content);
+      } catch (error) {
+        console.log(`Error writing ${path}`, error);
+      }
+    }
+  });
+}
+function writeBinaryFile(path, content) {
+  return __async(this, null, function* () {
+    const filePath = (0, import_path.isAbsolute)(path) ? path : `${this.app.vault.adapter.basePath}/${path}`;
+    const directory = (0, import_path.dirname)(filePath);
+    if (!nodeFs.existsSync(directory))
+      nodeFs.mkdirSync(directory);
+    try {
+      nodeFs.writeFileSync(filePath, content, { encoding: "binary" });
+    } catch (error) {
+      console.log(`Error writing ${filePath}`, error);
+    }
+  });
+}
+function pathExist(path) {
+  const filePath = (0, import_path.isAbsolute)(path) ? path : `${this.app.vault.adapter.basePath}/${path}`;
+  return nodeFs.existsSync(filePath);
+}
+
+// src/Book.ts
 var TurndownService = require_turndown_browser_cjs();
 var Book = class {
   constructor(plugin, book) {
@@ -10780,9 +10842,11 @@ var Book = class {
     this.rating = parseInt(book.user_rating) || 0;
     this.avgRating = parseFloat(book.average_rating) || 0;
     this.dateAdded = this.parseDate(book.user_date_added);
+    this.dateCreated = this.parseDate(book.user_date_created);
     this.dateRead = this.parseDate(book.user_read_at);
     this.datePublished = this.parseDate(book.book_published);
     this.cover = book.image_url;
+    this.coverImage = book.image_path;
     this.shelves = this.getShelves(book.user_shelves, this.dateRead);
     this.bookPage = `https://www.goodreads.com/book/show/${this.id}`;
   }
@@ -10802,10 +10866,10 @@ var Book = class {
     return turndownService.turndown(html);
   }
   getShelves(shelves, dateRead) {
-    if (!shelves.split(",").includes("read") && (!shelves || dateRead)) {
-      return shelves ? `${shelves},read` : "read";
-    }
-    return shelves;
+    const outputShelves = shelves.split(",").map((shelf) => shelf.trim()).filter((shelf) => shelf);
+    if (dateRead && !outputShelves.includes("read"))
+      outputShelves.push("read");
+    return outputShelves;
   }
   getBody(currentBody) {
     return new Body(currentBody, this).getBody();
@@ -10824,23 +10888,13 @@ var Book = class {
       if (file && !this.plugin.settings.overwrite)
         return;
       const bookContent = book.getContent();
-      if ((0, import_path.isAbsolute)(fullPath)) {
-        nodeFs.writeFile(fullPath, bookContent, (error) => {
-          if (error)
-            console.log(`Error writing ${fullPath}`, error);
-        });
-      } else {
-        try {
-          const fs = this.plugin.app.vault.adapter;
-          yield fs.write(fullPath, bookContent);
-        } catch (error) {
-          console.log(`Error writing ${fullPath}`, error);
-        }
-      }
+      writeFile2(fullPath, bookContent, this.plugin.app);
     });
   }
   cleanTitle(title, full) {
     this.series = "";
+    this.seriesName = "";
+    this.seriesNumber = 0;
     this.subtitle = "";
     let series = "";
     if (title.includes("(") && title.includes("#")) {
@@ -10857,7 +10911,18 @@ var Book = class {
     return title.trim();
   }
   getSeries(title) {
-    const match = title.match(/\((.*?)\)/);
+    if (this.series) {
+      return this.series;
+    }
+    let match = title.match(/.+ \(((.+?),? #(\d+))\)/);
+    if (match) {
+      this.series = match[1].trim();
+      this.seriesName = match[2].trim();
+      this.seriesNumber = parseInt(match[3].trim(), 10);
+      return `(${match[1]})`;
+    }
+    console.log(`New get series parser failed for "${title}", falling back to legacy parser.`);
+    match = title.match(/\((.*?)\)/);
     if (match && match[1].contains("#")) {
       this.series = match[1].trim();
       return match[0];
@@ -10880,12 +10945,14 @@ var Book = class {
 var import_obsidian = __toModule(require("obsidian"));
 var nodeFs2 = __toModule(require("fs"));
 var import_path2 = __toModule(require("path"));
+var import_https = __toModule(require("https"));
 var Shelf = class {
   constructor(plugin, shelfName) {
     this.plugin = plugin;
     this.shelfName = shelfName;
     this.books = [];
-    this.path = `${plugin.settings.targetFolderPath}`;
+    const targetFolder = plugin.settings.targetFolderPath;
+    this.path = targetFolder === "" ? "./" : targetFolder;
     this.url = `${plugin.settings.goodreadsBaseUrl}${shelfName.toLocaleLowerCase()}`;
   }
   setBook(book) {
@@ -10915,14 +10982,43 @@ var Shelf = class {
   fetchGoodreadsFeed() {
     return __async(this, null, function* () {
       try {
-        const feed = yield rssParser.parseURL(this.url);
-        feed.items.forEach((_book) => __async(this, null, function* () {
-          const book = new Book(this.plugin, _book);
-          this.setBook(book);
-        }));
+        let page = 1;
+        while (true) {
+          const pagedUrl = `${this.url}&page=${page}&per_page=100`;
+          const feed = yield rssParser.parseURL(pagedUrl);
+          if (!feed.items)
+            break;
+          for (const _book of feed.items) {
+            const book = new Book(this.plugin, _book);
+            book.coverImage = yield this.fetchCoverImage(book.cover, book.id);
+            this.setBook(book);
+          }
+          page++;
+          if (!feed.items.length)
+            break;
+        }
       } catch (e) {
         console.warn(e);
       }
+    });
+  }
+  fetchCoverImage(url, title) {
+    return __async(this, null, function* () {
+      if (!this.plugin.settings.coverDownload)
+        return;
+      let coverDownloadLocation = this.plugin.settings.coverDownloadLocation;
+      if (coverDownloadLocation === "")
+        coverDownloadLocation = `${this.plugin.settings.targetFolderPath || "."}/cover`;
+      const fullPath = `${coverDownloadLocation}/${title}.jpg`;
+      if (pathExist(fullPath))
+        return fullPath;
+      (0, import_https.get)(url, (response) => {
+        response.setEncoding("binary");
+        let rawData = new Uint16Array();
+        response.on("data", (chunk) => rawData += chunk);
+        response.on("end", () => writeBinaryFile(fullPath, rawData));
+      });
+      return fullPath;
     });
   }
   createBookFiles() {
@@ -10949,9 +11045,1600 @@ var Shelf = class {
   }
 };
 
-// src/Settings.ts
+// src/settings/Settings.ts
+var import_obsidian4 = __toModule(require("obsidian"));
+
+// src/settings/suggesters/FolderSuggester.ts
+var import_obsidian3 = __toModule(require("obsidian"));
+
+// src/settings/suggesters/suggest.ts
 var import_obsidian2 = __toModule(require("obsidian"));
-var Settings = class extends import_obsidian2.PluginSettingTab {
+
+// node_modules/@popperjs/core/lib/enums.js
+var top = "top";
+var bottom = "bottom";
+var right = "right";
+var left = "left";
+var auto = "auto";
+var basePlacements = [top, bottom, right, left];
+var start = "start";
+var end = "end";
+var clippingParents = "clippingParents";
+var viewport = "viewport";
+var popper = "popper";
+var reference = "reference";
+var variationPlacements = /* @__PURE__ */ basePlacements.reduce(function(acc, placement) {
+  return acc.concat([placement + "-" + start, placement + "-" + end]);
+}, []);
+var placements = /* @__PURE__ */ [].concat(basePlacements, [auto]).reduce(function(acc, placement) {
+  return acc.concat([placement, placement + "-" + start, placement + "-" + end]);
+}, []);
+var beforeRead = "beforeRead";
+var read = "read";
+var afterRead = "afterRead";
+var beforeMain = "beforeMain";
+var main = "main";
+var afterMain = "afterMain";
+var beforeWrite = "beforeWrite";
+var write = "write";
+var afterWrite = "afterWrite";
+var modifierPhases = [beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite];
+
+// node_modules/@popperjs/core/lib/dom-utils/getNodeName.js
+function getNodeName(element) {
+  return element ? (element.nodeName || "").toLowerCase() : null;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getWindow.js
+function getWindow(node) {
+  if (node == null) {
+    return window;
+  }
+  if (node.toString() !== "[object Window]") {
+    var ownerDocument = node.ownerDocument;
+    return ownerDocument ? ownerDocument.defaultView || window : window;
+  }
+  return node;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/instanceOf.js
+function isElement(node) {
+  var OwnElement = getWindow(node).Element;
+  return node instanceof OwnElement || node instanceof Element;
+}
+function isHTMLElement(node) {
+  var OwnElement = getWindow(node).HTMLElement;
+  return node instanceof OwnElement || node instanceof HTMLElement;
+}
+function isShadowRoot(node) {
+  if (typeof ShadowRoot === "undefined") {
+    return false;
+  }
+  var OwnElement = getWindow(node).ShadowRoot;
+  return node instanceof OwnElement || node instanceof ShadowRoot;
+}
+
+// node_modules/@popperjs/core/lib/modifiers/applyStyles.js
+function applyStyles(_ref) {
+  var state = _ref.state;
+  Object.keys(state.elements).forEach(function(name) {
+    var style = state.styles[name] || {};
+    var attributes = state.attributes[name] || {};
+    var element = state.elements[name];
+    if (!isHTMLElement(element) || !getNodeName(element)) {
+      return;
+    }
+    Object.assign(element.style, style);
+    Object.keys(attributes).forEach(function(name2) {
+      var value = attributes[name2];
+      if (value === false) {
+        element.removeAttribute(name2);
+      } else {
+        element.setAttribute(name2, value === true ? "" : value);
+      }
+    });
+  });
+}
+function effect(_ref2) {
+  var state = _ref2.state;
+  var initialStyles = {
+    popper: {
+      position: state.options.strategy,
+      left: "0",
+      top: "0",
+      margin: "0"
+    },
+    arrow: {
+      position: "absolute"
+    },
+    reference: {}
+  };
+  Object.assign(state.elements.popper.style, initialStyles.popper);
+  state.styles = initialStyles;
+  if (state.elements.arrow) {
+    Object.assign(state.elements.arrow.style, initialStyles.arrow);
+  }
+  return function() {
+    Object.keys(state.elements).forEach(function(name) {
+      var element = state.elements[name];
+      var attributes = state.attributes[name] || {};
+      var styleProperties = Object.keys(state.styles.hasOwnProperty(name) ? state.styles[name] : initialStyles[name]);
+      var style = styleProperties.reduce(function(style2, property) {
+        style2[property] = "";
+        return style2;
+      }, {});
+      if (!isHTMLElement(element) || !getNodeName(element)) {
+        return;
+      }
+      Object.assign(element.style, style);
+      Object.keys(attributes).forEach(function(attribute) {
+        element.removeAttribute(attribute);
+      });
+    });
+  };
+}
+var applyStyles_default = {
+  name: "applyStyles",
+  enabled: true,
+  phase: "write",
+  fn: applyStyles,
+  effect,
+  requires: ["computeStyles"]
+};
+
+// node_modules/@popperjs/core/lib/utils/getBasePlacement.js
+function getBasePlacement(placement) {
+  return placement.split("-")[0];
+}
+
+// node_modules/@popperjs/core/lib/utils/math.js
+var max = Math.max;
+var min = Math.min;
+var round = Math.round;
+
+// node_modules/@popperjs/core/lib/utils/userAgent.js
+function getUAString() {
+  var uaData = navigator.userAgentData;
+  if (uaData != null && uaData.brands && Array.isArray(uaData.brands)) {
+    return uaData.brands.map(function(item) {
+      return item.brand + "/" + item.version;
+    }).join(" ");
+  }
+  return navigator.userAgent;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js
+function isLayoutViewport() {
+  return !/^((?!chrome|android).)*safari/i.test(getUAString());
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
+function getBoundingClientRect(element, includeScale, isFixedStrategy) {
+  if (includeScale === void 0) {
+    includeScale = false;
+  }
+  if (isFixedStrategy === void 0) {
+    isFixedStrategy = false;
+  }
+  var clientRect = element.getBoundingClientRect();
+  var scaleX = 1;
+  var scaleY = 1;
+  if (includeScale && isHTMLElement(element)) {
+    scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
+    scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
+  }
+  var _ref = isElement(element) ? getWindow(element) : window, visualViewport = _ref.visualViewport;
+  var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
+  var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+  var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+  var width = clientRect.width / scaleX;
+  var height = clientRect.height / scaleY;
+  return {
+    width,
+    height,
+    top: y,
+    right: x + width,
+    bottom: y + height,
+    left: x,
+    x,
+    y
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js
+function getLayoutRect(element) {
+  var clientRect = getBoundingClientRect(element);
+  var width = element.offsetWidth;
+  var height = element.offsetHeight;
+  if (Math.abs(clientRect.width - width) <= 1) {
+    width = clientRect.width;
+  }
+  if (Math.abs(clientRect.height - height) <= 1) {
+    height = clientRect.height;
+  }
+  return {
+    x: element.offsetLeft,
+    y: element.offsetTop,
+    width,
+    height
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/contains.js
+function contains(parent, child) {
+  var rootNode = child.getRootNode && child.getRootNode();
+  if (parent.contains(child)) {
+    return true;
+  } else if (rootNode && isShadowRoot(rootNode)) {
+    var next = child;
+    do {
+      if (next && parent.isSameNode(next)) {
+        return true;
+      }
+      next = next.parentNode || next.host;
+    } while (next);
+  }
+  return false;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js
+function getComputedStyle(element) {
+  return getWindow(element).getComputedStyle(element);
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/isTableElement.js
+function isTableElement(element) {
+  return ["table", "td", "th"].indexOf(getNodeName(element)) >= 0;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js
+function getDocumentElement(element) {
+  return ((isElement(element) ? element.ownerDocument : element.document) || window.document).documentElement;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getParentNode.js
+function getParentNode(element) {
+  if (getNodeName(element) === "html") {
+    return element;
+  }
+  return element.assignedSlot || element.parentNode || (isShadowRoot(element) ? element.host : null) || getDocumentElement(element);
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js
+function getTrueOffsetParent(element) {
+  if (!isHTMLElement(element) || getComputedStyle(element).position === "fixed") {
+    return null;
+  }
+  return element.offsetParent;
+}
+function getContainingBlock(element) {
+  var isFirefox = /firefox/i.test(getUAString());
+  var isIE = /Trident/i.test(getUAString());
+  if (isIE && isHTMLElement(element)) {
+    var elementCss = getComputedStyle(element);
+    if (elementCss.position === "fixed") {
+      return null;
+    }
+  }
+  var currentNode = getParentNode(element);
+  if (isShadowRoot(currentNode)) {
+    currentNode = currentNode.host;
+  }
+  while (isHTMLElement(currentNode) && ["html", "body"].indexOf(getNodeName(currentNode)) < 0) {
+    var css = getComputedStyle(currentNode);
+    if (css.transform !== "none" || css.perspective !== "none" || css.contain === "paint" || ["transform", "perspective"].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === "filter" || isFirefox && css.filter && css.filter !== "none") {
+      return currentNode;
+    } else {
+      currentNode = currentNode.parentNode;
+    }
+  }
+  return null;
+}
+function getOffsetParent(element) {
+  var window2 = getWindow(element);
+  var offsetParent = getTrueOffsetParent(element);
+  while (offsetParent && isTableElement(offsetParent) && getComputedStyle(offsetParent).position === "static") {
+    offsetParent = getTrueOffsetParent(offsetParent);
+  }
+  if (offsetParent && (getNodeName(offsetParent) === "html" || getNodeName(offsetParent) === "body" && getComputedStyle(offsetParent).position === "static")) {
+    return window2;
+  }
+  return offsetParent || getContainingBlock(element) || window2;
+}
+
+// node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js
+function getMainAxisFromPlacement(placement) {
+  return ["top", "bottom"].indexOf(placement) >= 0 ? "x" : "y";
+}
+
+// node_modules/@popperjs/core/lib/utils/within.js
+function within(min2, value, max2) {
+  return max(min2, min(value, max2));
+}
+function withinMaxClamp(min2, value, max2) {
+  var v = within(min2, value, max2);
+  return v > max2 ? max2 : v;
+}
+
+// node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
+function getFreshSideObject() {
+  return {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0
+  };
+}
+
+// node_modules/@popperjs/core/lib/utils/mergePaddingObject.js
+function mergePaddingObject(paddingObject) {
+  return Object.assign({}, getFreshSideObject(), paddingObject);
+}
+
+// node_modules/@popperjs/core/lib/utils/expandToHashMap.js
+function expandToHashMap(value, keys) {
+  return keys.reduce(function(hashMap, key) {
+    hashMap[key] = value;
+    return hashMap;
+  }, {});
+}
+
+// node_modules/@popperjs/core/lib/modifiers/arrow.js
+var toPaddingObject = function toPaddingObject2(padding, state) {
+  padding = typeof padding === "function" ? padding(Object.assign({}, state.rects, {
+    placement: state.placement
+  })) : padding;
+  return mergePaddingObject(typeof padding !== "number" ? padding : expandToHashMap(padding, basePlacements));
+};
+function arrow(_ref) {
+  var _state$modifiersData$;
+  var state = _ref.state, name = _ref.name, options = _ref.options;
+  var arrowElement = state.elements.arrow;
+  var popperOffsets2 = state.modifiersData.popperOffsets;
+  var basePlacement = getBasePlacement(state.placement);
+  var axis = getMainAxisFromPlacement(basePlacement);
+  var isVertical = [left, right].indexOf(basePlacement) >= 0;
+  var len = isVertical ? "height" : "width";
+  if (!arrowElement || !popperOffsets2) {
+    return;
+  }
+  var paddingObject = toPaddingObject(options.padding, state);
+  var arrowRect = getLayoutRect(arrowElement);
+  var minProp = axis === "y" ? top : left;
+  var maxProp = axis === "y" ? bottom : right;
+  var endDiff = state.rects.reference[len] + state.rects.reference[axis] - popperOffsets2[axis] - state.rects.popper[len];
+  var startDiff = popperOffsets2[axis] - state.rects.reference[axis];
+  var arrowOffsetParent = getOffsetParent(arrowElement);
+  var clientSize = arrowOffsetParent ? axis === "y" ? arrowOffsetParent.clientHeight || 0 : arrowOffsetParent.clientWidth || 0 : 0;
+  var centerToReference = endDiff / 2 - startDiff / 2;
+  var min2 = paddingObject[minProp];
+  var max2 = clientSize - arrowRect[len] - paddingObject[maxProp];
+  var center = clientSize / 2 - arrowRect[len] / 2 + centerToReference;
+  var offset2 = within(min2, center, max2);
+  var axisProp = axis;
+  state.modifiersData[name] = (_state$modifiersData$ = {}, _state$modifiersData$[axisProp] = offset2, _state$modifiersData$.centerOffset = offset2 - center, _state$modifiersData$);
+}
+function effect2(_ref2) {
+  var state = _ref2.state, options = _ref2.options;
+  var _options$element = options.element, arrowElement = _options$element === void 0 ? "[data-popper-arrow]" : _options$element;
+  if (arrowElement == null) {
+    return;
+  }
+  if (typeof arrowElement === "string") {
+    arrowElement = state.elements.popper.querySelector(arrowElement);
+    if (!arrowElement) {
+      return;
+    }
+  }
+  if (!contains(state.elements.popper, arrowElement)) {
+    return;
+  }
+  state.elements.arrow = arrowElement;
+}
+var arrow_default = {
+  name: "arrow",
+  enabled: true,
+  phase: "main",
+  fn: arrow,
+  effect: effect2,
+  requires: ["popperOffsets"],
+  requiresIfExists: ["preventOverflow"]
+};
+
+// node_modules/@popperjs/core/lib/utils/getVariation.js
+function getVariation(placement) {
+  return placement.split("-")[1];
+}
+
+// node_modules/@popperjs/core/lib/modifiers/computeStyles.js
+var unsetSides = {
+  top: "auto",
+  right: "auto",
+  bottom: "auto",
+  left: "auto"
+};
+function roundOffsetsByDPR(_ref, win) {
+  var x = _ref.x, y = _ref.y;
+  var dpr = win.devicePixelRatio || 1;
+  return {
+    x: round(x * dpr) / dpr || 0,
+    y: round(y * dpr) / dpr || 0
+  };
+}
+function mapToStyles(_ref2) {
+  var _Object$assign2;
+  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
+  var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
+  var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref3.x;
+  y = _ref3.y;
+  var hasX = offsets.hasOwnProperty("x");
+  var hasY = offsets.hasOwnProperty("y");
+  var sideX = left;
+  var sideY = top;
+  var win = window;
+  if (adaptive) {
+    var offsetParent = getOffsetParent(popper2);
+    var heightProp = "clientHeight";
+    var widthProp = "clientWidth";
+    if (offsetParent === getWindow(popper2)) {
+      offsetParent = getDocumentElement(popper2);
+      if (getComputedStyle(offsetParent).position !== "static" && position === "absolute") {
+        heightProp = "scrollHeight";
+        widthProp = "scrollWidth";
+      }
+    }
+    offsetParent = offsetParent;
+    if (placement === top || (placement === left || placement === right) && variation === end) {
+      sideY = bottom;
+      var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : offsetParent[heightProp];
+      y -= offsetY - popperRect.height;
+      y *= gpuAcceleration ? 1 : -1;
+    }
+    if (placement === left || (placement === top || placement === bottom) && variation === end) {
+      sideX = right;
+      var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : offsetParent[widthProp];
+      x -= offsetX - popperRect.width;
+      x *= gpuAcceleration ? 1 : -1;
+    }
+  }
+  var commonStyles = Object.assign({
+    position
+  }, adaptive && unsetSides);
+  var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    x,
+    y
+  }, getWindow(popper2)) : {
+    x,
+    y
+  };
+  x = _ref4.x;
+  y = _ref4.y;
+  if (gpuAcceleration) {
+    var _Object$assign;
+    return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
+  }
+  return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
+}
+function computeStyles(_ref5) {
+  var state = _ref5.state, options = _ref5.options;
+  var _options$gpuAccelerat = options.gpuAcceleration, gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat, _options$adaptive = options.adaptive, adaptive = _options$adaptive === void 0 ? true : _options$adaptive, _options$roundOffsets = options.roundOffsets, roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
+  var commonStyles = {
+    placement: getBasePlacement(state.placement),
+    variation: getVariation(state.placement),
+    popper: state.elements.popper,
+    popperRect: state.rects.popper,
+    gpuAcceleration,
+    isFixed: state.options.strategy === "fixed"
+  };
+  if (state.modifiersData.popperOffsets != null) {
+    state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
+      offsets: state.modifiersData.popperOffsets,
+      position: state.options.strategy,
+      adaptive,
+      roundOffsets
+    })));
+  }
+  if (state.modifiersData.arrow != null) {
+    state.styles.arrow = Object.assign({}, state.styles.arrow, mapToStyles(Object.assign({}, commonStyles, {
+      offsets: state.modifiersData.arrow,
+      position: "absolute",
+      adaptive: false,
+      roundOffsets
+    })));
+  }
+  state.attributes.popper = Object.assign({}, state.attributes.popper, {
+    "data-popper-placement": state.placement
+  });
+}
+var computeStyles_default = {
+  name: "computeStyles",
+  enabled: true,
+  phase: "beforeWrite",
+  fn: computeStyles,
+  data: {}
+};
+
+// node_modules/@popperjs/core/lib/modifiers/eventListeners.js
+var passive = {
+  passive: true
+};
+function effect3(_ref) {
+  var state = _ref.state, instance = _ref.instance, options = _ref.options;
+  var _options$scroll = options.scroll, scroll = _options$scroll === void 0 ? true : _options$scroll, _options$resize = options.resize, resize = _options$resize === void 0 ? true : _options$resize;
+  var window2 = getWindow(state.elements.popper);
+  var scrollParents = [].concat(state.scrollParents.reference, state.scrollParents.popper);
+  if (scroll) {
+    scrollParents.forEach(function(scrollParent) {
+      scrollParent.addEventListener("scroll", instance.update, passive);
+    });
+  }
+  if (resize) {
+    window2.addEventListener("resize", instance.update, passive);
+  }
+  return function() {
+    if (scroll) {
+      scrollParents.forEach(function(scrollParent) {
+        scrollParent.removeEventListener("scroll", instance.update, passive);
+      });
+    }
+    if (resize) {
+      window2.removeEventListener("resize", instance.update, passive);
+    }
+  };
+}
+var eventListeners_default = {
+  name: "eventListeners",
+  enabled: true,
+  phase: "write",
+  fn: function fn() {
+  },
+  effect: effect3,
+  data: {}
+};
+
+// node_modules/@popperjs/core/lib/utils/getOppositePlacement.js
+var hash = {
+  left: "right",
+  right: "left",
+  bottom: "top",
+  top: "bottom"
+};
+function getOppositePlacement(placement) {
+  return placement.replace(/left|right|bottom|top/g, function(matched) {
+    return hash[matched];
+  });
+}
+
+// node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js
+var hash2 = {
+  start: "end",
+  end: "start"
+};
+function getOppositeVariationPlacement(placement) {
+  return placement.replace(/start|end/g, function(matched) {
+    return hash2[matched];
+  });
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js
+function getWindowScroll(node) {
+  var win = getWindow(node);
+  var scrollLeft = win.pageXOffset;
+  var scrollTop = win.pageYOffset;
+  return {
+    scrollLeft,
+    scrollTop
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js
+function getWindowScrollBarX(element) {
+  return getBoundingClientRect(getDocumentElement(element)).left + getWindowScroll(element).scrollLeft;
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js
+function getViewportRect(element, strategy) {
+  var win = getWindow(element);
+  var html = getDocumentElement(element);
+  var visualViewport = win.visualViewport;
+  var width = html.clientWidth;
+  var height = html.clientHeight;
+  var x = 0;
+  var y = 0;
+  if (visualViewport) {
+    width = visualViewport.width;
+    height = visualViewport.height;
+    var layoutViewport = isLayoutViewport();
+    if (layoutViewport || !layoutViewport && strategy === "fixed") {
+      x = visualViewport.offsetLeft;
+      y = visualViewport.offsetTop;
+    }
+  }
+  return {
+    width,
+    height,
+    x: x + getWindowScrollBarX(element),
+    y
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js
+function getDocumentRect(element) {
+  var _element$ownerDocumen;
+  var html = getDocumentElement(element);
+  var winScroll = getWindowScroll(element);
+  var body = (_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body;
+  var width = max(html.scrollWidth, html.clientWidth, body ? body.scrollWidth : 0, body ? body.clientWidth : 0);
+  var height = max(html.scrollHeight, html.clientHeight, body ? body.scrollHeight : 0, body ? body.clientHeight : 0);
+  var x = -winScroll.scrollLeft + getWindowScrollBarX(element);
+  var y = -winScroll.scrollTop;
+  if (getComputedStyle(body || html).direction === "rtl") {
+    x += max(html.clientWidth, body ? body.clientWidth : 0) - width;
+  }
+  return {
+    width,
+    height,
+    x,
+    y
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js
+function isScrollParent(element) {
+  var _getComputedStyle = getComputedStyle(element), overflow = _getComputedStyle.overflow, overflowX = _getComputedStyle.overflowX, overflowY = _getComputedStyle.overflowY;
+  return /auto|scroll|overlay|hidden/.test(overflow + overflowY + overflowX);
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js
+function getScrollParent(node) {
+  if (["html", "body", "#document"].indexOf(getNodeName(node)) >= 0) {
+    return node.ownerDocument.body;
+  }
+  if (isHTMLElement(node) && isScrollParent(node)) {
+    return node;
+  }
+  return getScrollParent(getParentNode(node));
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js
+function listScrollParents(element, list) {
+  var _element$ownerDocumen;
+  if (list === void 0) {
+    list = [];
+  }
+  var scrollParent = getScrollParent(element);
+  var isBody = scrollParent === ((_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body);
+  var win = getWindow(scrollParent);
+  var target = isBody ? [win].concat(win.visualViewport || [], isScrollParent(scrollParent) ? scrollParent : []) : scrollParent;
+  var updatedList = list.concat(target);
+  return isBody ? updatedList : updatedList.concat(listScrollParents(getParentNode(target)));
+}
+
+// node_modules/@popperjs/core/lib/utils/rectToClientRect.js
+function rectToClientRect(rect) {
+  return Object.assign({}, rect, {
+    left: rect.x,
+    top: rect.y,
+    right: rect.x + rect.width,
+    bottom: rect.y + rect.height
+  });
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js
+function getInnerBoundingClientRect(element, strategy) {
+  var rect = getBoundingClientRect(element, false, strategy === "fixed");
+  rect.top = rect.top + element.clientTop;
+  rect.left = rect.left + element.clientLeft;
+  rect.bottom = rect.top + element.clientHeight;
+  rect.right = rect.left + element.clientWidth;
+  rect.width = element.clientWidth;
+  rect.height = element.clientHeight;
+  rect.x = rect.left;
+  rect.y = rect.top;
+  return rect;
+}
+function getClientRectFromMixedType(element, clippingParent, strategy) {
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+}
+function getClippingParents(element) {
+  var clippingParents2 = listScrollParents(getParentNode(element));
+  var canEscapeClipping = ["absolute", "fixed"].indexOf(getComputedStyle(element).position) >= 0;
+  var clipperElement = canEscapeClipping && isHTMLElement(element) ? getOffsetParent(element) : element;
+  if (!isElement(clipperElement)) {
+    return [];
+  }
+  return clippingParents2.filter(function(clippingParent) {
+    return isElement(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== "body";
+  });
+}
+function getClippingRect(element, boundary, rootBoundary, strategy) {
+  var mainClippingParents = boundary === "clippingParents" ? getClippingParents(element) : [].concat(boundary);
+  var clippingParents2 = [].concat(mainClippingParents, [rootBoundary]);
+  var firstClippingParent = clippingParents2[0];
+  var clippingRect = clippingParents2.reduce(function(accRect, clippingParent) {
+    var rect = getClientRectFromMixedType(element, clippingParent, strategy);
+    accRect.top = max(rect.top, accRect.top);
+    accRect.right = min(rect.right, accRect.right);
+    accRect.bottom = min(rect.bottom, accRect.bottom);
+    accRect.left = max(rect.left, accRect.left);
+    return accRect;
+  }, getClientRectFromMixedType(element, firstClippingParent, strategy));
+  clippingRect.width = clippingRect.right - clippingRect.left;
+  clippingRect.height = clippingRect.bottom - clippingRect.top;
+  clippingRect.x = clippingRect.left;
+  clippingRect.y = clippingRect.top;
+  return clippingRect;
+}
+
+// node_modules/@popperjs/core/lib/utils/computeOffsets.js
+function computeOffsets(_ref) {
+  var reference2 = _ref.reference, element = _ref.element, placement = _ref.placement;
+  var basePlacement = placement ? getBasePlacement(placement) : null;
+  var variation = placement ? getVariation(placement) : null;
+  var commonX = reference2.x + reference2.width / 2 - element.width / 2;
+  var commonY = reference2.y + reference2.height / 2 - element.height / 2;
+  var offsets;
+  switch (basePlacement) {
+    case top:
+      offsets = {
+        x: commonX,
+        y: reference2.y - element.height
+      };
+      break;
+    case bottom:
+      offsets = {
+        x: commonX,
+        y: reference2.y + reference2.height
+      };
+      break;
+    case right:
+      offsets = {
+        x: reference2.x + reference2.width,
+        y: commonY
+      };
+      break;
+    case left:
+      offsets = {
+        x: reference2.x - element.width,
+        y: commonY
+      };
+      break;
+    default:
+      offsets = {
+        x: reference2.x,
+        y: reference2.y
+      };
+  }
+  var mainAxis = basePlacement ? getMainAxisFromPlacement(basePlacement) : null;
+  if (mainAxis != null) {
+    var len = mainAxis === "y" ? "height" : "width";
+    switch (variation) {
+      case start:
+        offsets[mainAxis] = offsets[mainAxis] - (reference2[len] / 2 - element[len] / 2);
+        break;
+      case end:
+        offsets[mainAxis] = offsets[mainAxis] + (reference2[len] / 2 - element[len] / 2);
+        break;
+      default:
+    }
+  }
+  return offsets;
+}
+
+// node_modules/@popperjs/core/lib/utils/detectOverflow.js
+function detectOverflow(state, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$strategy = _options.strategy, strategy = _options$strategy === void 0 ? state.strategy : _options$strategy, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
+  var paddingObject = mergePaddingObject(typeof padding !== "number" ? padding : expandToHashMap(padding, basePlacements));
+  var altContext = elementContext === popper ? reference : popper;
+  var popperRect = state.rects.popper;
+  var element = state.elements[altBoundary ? altContext : elementContext];
+  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary, strategy);
+  var referenceClientRect = getBoundingClientRect(state.elements.reference);
+  var popperOffsets2 = computeOffsets({
+    reference: referenceClientRect,
+    element: popperRect,
+    strategy: "absolute",
+    placement
+  });
+  var popperClientRect = rectToClientRect(Object.assign({}, popperRect, popperOffsets2));
+  var elementClientRect = elementContext === popper ? popperClientRect : referenceClientRect;
+  var overflowOffsets = {
+    top: clippingClientRect.top - elementClientRect.top + paddingObject.top,
+    bottom: elementClientRect.bottom - clippingClientRect.bottom + paddingObject.bottom,
+    left: clippingClientRect.left - elementClientRect.left + paddingObject.left,
+    right: elementClientRect.right - clippingClientRect.right + paddingObject.right
+  };
+  var offsetData = state.modifiersData.offset;
+  if (elementContext === popper && offsetData) {
+    var offset2 = offsetData[placement];
+    Object.keys(overflowOffsets).forEach(function(key) {
+      var multiply = [right, bottom].indexOf(key) >= 0 ? 1 : -1;
+      var axis = [top, bottom].indexOf(key) >= 0 ? "y" : "x";
+      overflowOffsets[key] += offset2[axis] * multiply;
+    });
+  }
+  return overflowOffsets;
+}
+
+// node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js
+function computeAutoPlacement(state, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _options = options, placement = _options.placement, boundary = _options.boundary, rootBoundary = _options.rootBoundary, padding = _options.padding, flipVariations = _options.flipVariations, _options$allowedAutoP = _options.allowedAutoPlacements, allowedAutoPlacements = _options$allowedAutoP === void 0 ? placements : _options$allowedAutoP;
+  var variation = getVariation(placement);
+  var placements2 = variation ? flipVariations ? variationPlacements : variationPlacements.filter(function(placement2) {
+    return getVariation(placement2) === variation;
+  }) : basePlacements;
+  var allowedPlacements = placements2.filter(function(placement2) {
+    return allowedAutoPlacements.indexOf(placement2) >= 0;
+  });
+  if (allowedPlacements.length === 0) {
+    allowedPlacements = placements2;
+  }
+  var overflows = allowedPlacements.reduce(function(acc, placement2) {
+    acc[placement2] = detectOverflow(state, {
+      placement: placement2,
+      boundary,
+      rootBoundary,
+      padding
+    })[getBasePlacement(placement2)];
+    return acc;
+  }, {});
+  return Object.keys(overflows).sort(function(a, b) {
+    return overflows[a] - overflows[b];
+  });
+}
+
+// node_modules/@popperjs/core/lib/modifiers/flip.js
+function getExpandedFallbackPlacements(placement) {
+  if (getBasePlacement(placement) === auto) {
+    return [];
+  }
+  var oppositePlacement = getOppositePlacement(placement);
+  return [getOppositeVariationPlacement(placement), oppositePlacement, getOppositeVariationPlacement(oppositePlacement)];
+}
+function flip(_ref) {
+  var state = _ref.state, options = _ref.options, name = _ref.name;
+  if (state.modifiersData[name]._skip) {
+    return;
+  }
+  var _options$mainAxis = options.mainAxis, checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis, _options$altAxis = options.altAxis, checkAltAxis = _options$altAxis === void 0 ? true : _options$altAxis, specifiedFallbackPlacements = options.fallbackPlacements, padding = options.padding, boundary = options.boundary, rootBoundary = options.rootBoundary, altBoundary = options.altBoundary, _options$flipVariatio = options.flipVariations, flipVariations = _options$flipVariatio === void 0 ? true : _options$flipVariatio, allowedAutoPlacements = options.allowedAutoPlacements;
+  var preferredPlacement = state.options.placement;
+  var basePlacement = getBasePlacement(preferredPlacement);
+  var isBasePlacement = basePlacement === preferredPlacement;
+  var fallbackPlacements = specifiedFallbackPlacements || (isBasePlacement || !flipVariations ? [getOppositePlacement(preferredPlacement)] : getExpandedFallbackPlacements(preferredPlacement));
+  var placements2 = [preferredPlacement].concat(fallbackPlacements).reduce(function(acc, placement2) {
+    return acc.concat(getBasePlacement(placement2) === auto ? computeAutoPlacement(state, {
+      placement: placement2,
+      boundary,
+      rootBoundary,
+      padding,
+      flipVariations,
+      allowedAutoPlacements
+    }) : placement2);
+  }, []);
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var checksMap = new Map();
+  var makeFallbackChecks = true;
+  var firstFittingPlacement = placements2[0];
+  for (var i = 0; i < placements2.length; i++) {
+    var placement = placements2[i];
+    var _basePlacement = getBasePlacement(placement);
+    var isStartVariation = getVariation(placement) === start;
+    var isVertical = [top, bottom].indexOf(_basePlacement) >= 0;
+    var len = isVertical ? "width" : "height";
+    var overflow = detectOverflow(state, {
+      placement,
+      boundary,
+      rootBoundary,
+      altBoundary,
+      padding
+    });
+    var mainVariationSide = isVertical ? isStartVariation ? right : left : isStartVariation ? bottom : top;
+    if (referenceRect[len] > popperRect[len]) {
+      mainVariationSide = getOppositePlacement(mainVariationSide);
+    }
+    var altVariationSide = getOppositePlacement(mainVariationSide);
+    var checks = [];
+    if (checkMainAxis) {
+      checks.push(overflow[_basePlacement] <= 0);
+    }
+    if (checkAltAxis) {
+      checks.push(overflow[mainVariationSide] <= 0, overflow[altVariationSide] <= 0);
+    }
+    if (checks.every(function(check) {
+      return check;
+    })) {
+      firstFittingPlacement = placement;
+      makeFallbackChecks = false;
+      break;
+    }
+    checksMap.set(placement, checks);
+  }
+  if (makeFallbackChecks) {
+    var numberOfChecks = flipVariations ? 3 : 1;
+    var _loop = function _loop2(_i2) {
+      var fittingPlacement = placements2.find(function(placement2) {
+        var checks2 = checksMap.get(placement2);
+        if (checks2) {
+          return checks2.slice(0, _i2).every(function(check) {
+            return check;
+          });
+        }
+      });
+      if (fittingPlacement) {
+        firstFittingPlacement = fittingPlacement;
+        return "break";
+      }
+    };
+    for (var _i = numberOfChecks; _i > 0; _i--) {
+      var _ret = _loop(_i);
+      if (_ret === "break")
+        break;
+    }
+  }
+  if (state.placement !== firstFittingPlacement) {
+    state.modifiersData[name]._skip = true;
+    state.placement = firstFittingPlacement;
+    state.reset = true;
+  }
+}
+var flip_default = {
+  name: "flip",
+  enabled: true,
+  phase: "main",
+  fn: flip,
+  requiresIfExists: ["offset"],
+  data: {
+    _skip: false
+  }
+};
+
+// node_modules/@popperjs/core/lib/modifiers/hide.js
+function getSideOffsets(overflow, rect, preventedOffsets) {
+  if (preventedOffsets === void 0) {
+    preventedOffsets = {
+      x: 0,
+      y: 0
+    };
+  }
+  return {
+    top: overflow.top - rect.height - preventedOffsets.y,
+    right: overflow.right - rect.width + preventedOffsets.x,
+    bottom: overflow.bottom - rect.height + preventedOffsets.y,
+    left: overflow.left - rect.width - preventedOffsets.x
+  };
+}
+function isAnySideFullyClipped(overflow) {
+  return [top, right, bottom, left].some(function(side) {
+    return overflow[side] >= 0;
+  });
+}
+function hide(_ref) {
+  var state = _ref.state, name = _ref.name;
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var preventedOffsets = state.modifiersData.preventOverflow;
+  var referenceOverflow = detectOverflow(state, {
+    elementContext: "reference"
+  });
+  var popperAltOverflow = detectOverflow(state, {
+    altBoundary: true
+  });
+  var referenceClippingOffsets = getSideOffsets(referenceOverflow, referenceRect);
+  var popperEscapeOffsets = getSideOffsets(popperAltOverflow, popperRect, preventedOffsets);
+  var isReferenceHidden = isAnySideFullyClipped(referenceClippingOffsets);
+  var hasPopperEscaped = isAnySideFullyClipped(popperEscapeOffsets);
+  state.modifiersData[name] = {
+    referenceClippingOffsets,
+    popperEscapeOffsets,
+    isReferenceHidden,
+    hasPopperEscaped
+  };
+  state.attributes.popper = Object.assign({}, state.attributes.popper, {
+    "data-popper-reference-hidden": isReferenceHidden,
+    "data-popper-escaped": hasPopperEscaped
+  });
+}
+var hide_default = {
+  name: "hide",
+  enabled: true,
+  phase: "main",
+  requiresIfExists: ["preventOverflow"],
+  fn: hide
+};
+
+// node_modules/@popperjs/core/lib/modifiers/offset.js
+function distanceAndSkiddingToXY(placement, rects, offset2) {
+  var basePlacement = getBasePlacement(placement);
+  var invertDistance = [left, top].indexOf(basePlacement) >= 0 ? -1 : 1;
+  var _ref = typeof offset2 === "function" ? offset2(Object.assign({}, rects, {
+    placement
+  })) : offset2, skidding = _ref[0], distance = _ref[1];
+  skidding = skidding || 0;
+  distance = (distance || 0) * invertDistance;
+  return [left, right].indexOf(basePlacement) >= 0 ? {
+    x: distance,
+    y: skidding
+  } : {
+    x: skidding,
+    y: distance
+  };
+}
+function offset(_ref2) {
+  var state = _ref2.state, options = _ref2.options, name = _ref2.name;
+  var _options$offset = options.offset, offset2 = _options$offset === void 0 ? [0, 0] : _options$offset;
+  var data = placements.reduce(function(acc, placement) {
+    acc[placement] = distanceAndSkiddingToXY(placement, state.rects, offset2);
+    return acc;
+  }, {});
+  var _data$state$placement = data[state.placement], x = _data$state$placement.x, y = _data$state$placement.y;
+  if (state.modifiersData.popperOffsets != null) {
+    state.modifiersData.popperOffsets.x += x;
+    state.modifiersData.popperOffsets.y += y;
+  }
+  state.modifiersData[name] = data;
+}
+var offset_default = {
+  name: "offset",
+  enabled: true,
+  phase: "main",
+  requires: ["popperOffsets"],
+  fn: offset
+};
+
+// node_modules/@popperjs/core/lib/modifiers/popperOffsets.js
+function popperOffsets(_ref) {
+  var state = _ref.state, name = _ref.name;
+  state.modifiersData[name] = computeOffsets({
+    reference: state.rects.reference,
+    element: state.rects.popper,
+    strategy: "absolute",
+    placement: state.placement
+  });
+}
+var popperOffsets_default = {
+  name: "popperOffsets",
+  enabled: true,
+  phase: "read",
+  fn: popperOffsets,
+  data: {}
+};
+
+// node_modules/@popperjs/core/lib/utils/getAltAxis.js
+function getAltAxis(axis) {
+  return axis === "x" ? "y" : "x";
+}
+
+// node_modules/@popperjs/core/lib/modifiers/preventOverflow.js
+function preventOverflow(_ref) {
+  var state = _ref.state, options = _ref.options, name = _ref.name;
+  var _options$mainAxis = options.mainAxis, checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis, _options$altAxis = options.altAxis, checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis, boundary = options.boundary, rootBoundary = options.rootBoundary, altBoundary = options.altBoundary, padding = options.padding, _options$tether = options.tether, tether = _options$tether === void 0 ? true : _options$tether, _options$tetherOffset = options.tetherOffset, tetherOffset = _options$tetherOffset === void 0 ? 0 : _options$tetherOffset;
+  var overflow = detectOverflow(state, {
+    boundary,
+    rootBoundary,
+    padding,
+    altBoundary
+  });
+  var basePlacement = getBasePlacement(state.placement);
+  var variation = getVariation(state.placement);
+  var isBasePlacement = !variation;
+  var mainAxis = getMainAxisFromPlacement(basePlacement);
+  var altAxis = getAltAxis(mainAxis);
+  var popperOffsets2 = state.modifiersData.popperOffsets;
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var tetherOffsetValue = typeof tetherOffset === "function" ? tetherOffset(Object.assign({}, state.rects, {
+    placement: state.placement
+  })) : tetherOffset;
+  var normalizedTetherOffsetValue = typeof tetherOffsetValue === "number" ? {
+    mainAxis: tetherOffsetValue,
+    altAxis: tetherOffsetValue
+  } : Object.assign({
+    mainAxis: 0,
+    altAxis: 0
+  }, tetherOffsetValue);
+  var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
+  var data = {
+    x: 0,
+    y: 0
+  };
+  if (!popperOffsets2) {
+    return;
+  }
+  if (checkMainAxis) {
+    var _offsetModifierState$;
+    var mainSide = mainAxis === "y" ? top : left;
+    var altSide = mainAxis === "y" ? bottom : right;
+    var len = mainAxis === "y" ? "height" : "width";
+    var offset2 = popperOffsets2[mainAxis];
+    var min2 = offset2 + overflow[mainSide];
+    var max2 = offset2 - overflow[altSide];
+    var additive = tether ? -popperRect[len] / 2 : 0;
+    var minLen = variation === start ? referenceRect[len] : popperRect[len];
+    var maxLen = variation === start ? -popperRect[len] : -referenceRect[len];
+    var arrowElement = state.elements.arrow;
+    var arrowRect = tether && arrowElement ? getLayoutRect(arrowElement) : {
+      width: 0,
+      height: 0
+    };
+    var arrowPaddingObject = state.modifiersData["arrow#persistent"] ? state.modifiersData["arrow#persistent"].padding : getFreshSideObject();
+    var arrowPaddingMin = arrowPaddingObject[mainSide];
+    var arrowPaddingMax = arrowPaddingObject[altSide];
+    var arrowLen = within(0, referenceRect[len], arrowRect[len]);
+    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
+    var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
+    var clientOffset = arrowOffsetParent ? mainAxis === "y" ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
+    var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+    var tetherMin = offset2 + minOffset - offsetModifierValue - clientOffset;
+    var tetherMax = offset2 + maxOffset - offsetModifierValue;
+    var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
+    popperOffsets2[mainAxis] = preventedOffset;
+    data[mainAxis] = preventedOffset - offset2;
+  }
+  if (checkAltAxis) {
+    var _offsetModifierState$2;
+    var _mainSide = mainAxis === "x" ? top : left;
+    var _altSide = mainAxis === "x" ? bottom : right;
+    var _offset = popperOffsets2[altAxis];
+    var _len = altAxis === "y" ? "height" : "width";
+    var _min = _offset + overflow[_mainSide];
+    var _max = _offset - overflow[_altSide];
+    var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
+    var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+    var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
+    var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
+    var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+    popperOffsets2[altAxis] = _preventedOffset;
+    data[altAxis] = _preventedOffset - _offset;
+  }
+  state.modifiersData[name] = data;
+}
+var preventOverflow_default = {
+  name: "preventOverflow",
+  enabled: true,
+  phase: "main",
+  fn: preventOverflow,
+  requiresIfExists: ["offset"]
+};
+
+// node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js
+function getHTMLElementScroll(element) {
+  return {
+    scrollLeft: element.scrollLeft,
+    scrollTop: element.scrollTop
+  };
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js
+function getNodeScroll(node) {
+  if (node === getWindow(node) || !isHTMLElement(node)) {
+    return getWindowScroll(node);
+  } else {
+    return getHTMLElementScroll(node);
+  }
+}
+
+// node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
+function isElementScaled(element) {
+  var rect = element.getBoundingClientRect();
+  var scaleX = round(rect.width) / element.offsetWidth || 1;
+  var scaleY = round(rect.height) / element.offsetHeight || 1;
+  return scaleX !== 1 || scaleY !== 1;
+}
+function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
+  if (isFixed === void 0) {
+    isFixed = false;
+  }
+  var isOffsetParentAnElement = isHTMLElement(offsetParent);
+  var offsetParentIsScaled = isHTMLElement(offsetParent) && isElementScaled(offsetParent);
+  var documentElement = getDocumentElement(offsetParent);
+  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled, isFixed);
+  var scroll = {
+    scrollLeft: 0,
+    scrollTop: 0
+  };
+  var offsets = {
+    x: 0,
+    y: 0
+  };
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if (getNodeName(offsetParent) !== "body" || isScrollParent(documentElement)) {
+      scroll = getNodeScroll(offsetParent);
+    }
+    if (isHTMLElement(offsetParent)) {
+      offsets = getBoundingClientRect(offsetParent, true);
+      offsets.x += offsetParent.clientLeft;
+      offsets.y += offsetParent.clientTop;
+    } else if (documentElement) {
+      offsets.x = getWindowScrollBarX(documentElement);
+    }
+  }
+  return {
+    x: rect.left + scroll.scrollLeft - offsets.x,
+    y: rect.top + scroll.scrollTop - offsets.y,
+    width: rect.width,
+    height: rect.height
+  };
+}
+
+// node_modules/@popperjs/core/lib/utils/orderModifiers.js
+function order(modifiers) {
+  var map = new Map();
+  var visited = new Set();
+  var result = [];
+  modifiers.forEach(function(modifier) {
+    map.set(modifier.name, modifier);
+  });
+  function sort(modifier) {
+    visited.add(modifier.name);
+    var requires = [].concat(modifier.requires || [], modifier.requiresIfExists || []);
+    requires.forEach(function(dep) {
+      if (!visited.has(dep)) {
+        var depModifier = map.get(dep);
+        if (depModifier) {
+          sort(depModifier);
+        }
+      }
+    });
+    result.push(modifier);
+  }
+  modifiers.forEach(function(modifier) {
+    if (!visited.has(modifier.name)) {
+      sort(modifier);
+    }
+  });
+  return result;
+}
+function orderModifiers(modifiers) {
+  var orderedModifiers = order(modifiers);
+  return modifierPhases.reduce(function(acc, phase) {
+    return acc.concat(orderedModifiers.filter(function(modifier) {
+      return modifier.phase === phase;
+    }));
+  }, []);
+}
+
+// node_modules/@popperjs/core/lib/utils/debounce.js
+function debounce(fn2) {
+  var pending;
+  return function() {
+    if (!pending) {
+      pending = new Promise(function(resolve) {
+        Promise.resolve().then(function() {
+          pending = void 0;
+          resolve(fn2());
+        });
+      });
+    }
+    return pending;
+  };
+}
+
+// node_modules/@popperjs/core/lib/utils/mergeByName.js
+function mergeByName(modifiers) {
+  var merged = modifiers.reduce(function(merged2, current) {
+    var existing = merged2[current.name];
+    merged2[current.name] = existing ? Object.assign({}, existing, current, {
+      options: Object.assign({}, existing.options, current.options),
+      data: Object.assign({}, existing.data, current.data)
+    }) : current;
+    return merged2;
+  }, {});
+  return Object.keys(merged).map(function(key) {
+    return merged[key];
+  });
+}
+
+// node_modules/@popperjs/core/lib/createPopper.js
+var DEFAULT_OPTIONS = {
+  placement: "bottom",
+  modifiers: [],
+  strategy: "absolute"
+};
+function areValidElements() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+  return !args.some(function(element) {
+    return !(element && typeof element.getBoundingClientRect === "function");
+  });
+}
+function popperGenerator(generatorOptions) {
+  if (generatorOptions === void 0) {
+    generatorOptions = {};
+  }
+  var _generatorOptions = generatorOptions, _generatorOptions$def = _generatorOptions.defaultModifiers, defaultModifiers2 = _generatorOptions$def === void 0 ? [] : _generatorOptions$def, _generatorOptions$def2 = _generatorOptions.defaultOptions, defaultOptions = _generatorOptions$def2 === void 0 ? DEFAULT_OPTIONS : _generatorOptions$def2;
+  return function createPopper2(reference2, popper2, options) {
+    if (options === void 0) {
+      options = defaultOptions;
+    }
+    var state = {
+      placement: "bottom",
+      orderedModifiers: [],
+      options: Object.assign({}, DEFAULT_OPTIONS, defaultOptions),
+      modifiersData: {},
+      elements: {
+        reference: reference2,
+        popper: popper2
+      },
+      attributes: {},
+      styles: {}
+    };
+    var effectCleanupFns = [];
+    var isDestroyed = false;
+    var instance = {
+      state,
+      setOptions: function setOptions(setOptionsAction) {
+        var options2 = typeof setOptionsAction === "function" ? setOptionsAction(state.options) : setOptionsAction;
+        cleanupModifierEffects();
+        state.options = Object.assign({}, defaultOptions, state.options, options2);
+        state.scrollParents = {
+          reference: isElement(reference2) ? listScrollParents(reference2) : reference2.contextElement ? listScrollParents(reference2.contextElement) : [],
+          popper: listScrollParents(popper2)
+        };
+        var orderedModifiers = orderModifiers(mergeByName([].concat(defaultModifiers2, state.options.modifiers)));
+        state.orderedModifiers = orderedModifiers.filter(function(m) {
+          return m.enabled;
+        });
+        runModifierEffects();
+        return instance.update();
+      },
+      forceUpdate: function forceUpdate() {
+        if (isDestroyed) {
+          return;
+        }
+        var _state$elements = state.elements, reference3 = _state$elements.reference, popper3 = _state$elements.popper;
+        if (!areValidElements(reference3, popper3)) {
+          return;
+        }
+        state.rects = {
+          reference: getCompositeRect(reference3, getOffsetParent(popper3), state.options.strategy === "fixed"),
+          popper: getLayoutRect(popper3)
+        };
+        state.reset = false;
+        state.placement = state.options.placement;
+        state.orderedModifiers.forEach(function(modifier) {
+          return state.modifiersData[modifier.name] = Object.assign({}, modifier.data);
+        });
+        for (var index = 0; index < state.orderedModifiers.length; index++) {
+          if (state.reset === true) {
+            state.reset = false;
+            index = -1;
+            continue;
+          }
+          var _state$orderedModifie = state.orderedModifiers[index], fn2 = _state$orderedModifie.fn, _state$orderedModifie2 = _state$orderedModifie.options, _options = _state$orderedModifie2 === void 0 ? {} : _state$orderedModifie2, name = _state$orderedModifie.name;
+          if (typeof fn2 === "function") {
+            state = fn2({
+              state,
+              options: _options,
+              name,
+              instance
+            }) || state;
+          }
+        }
+      },
+      update: debounce(function() {
+        return new Promise(function(resolve) {
+          instance.forceUpdate();
+          resolve(state);
+        });
+      }),
+      destroy: function destroy() {
+        cleanupModifierEffects();
+        isDestroyed = true;
+      }
+    };
+    if (!areValidElements(reference2, popper2)) {
+      return instance;
+    }
+    instance.setOptions(options).then(function(state2) {
+      if (!isDestroyed && options.onFirstUpdate) {
+        options.onFirstUpdate(state2);
+      }
+    });
+    function runModifierEffects() {
+      state.orderedModifiers.forEach(function(_ref) {
+        var name = _ref.name, _ref$options = _ref.options, options2 = _ref$options === void 0 ? {} : _ref$options, effect4 = _ref.effect;
+        if (typeof effect4 === "function") {
+          var cleanupFn = effect4({
+            state,
+            name,
+            instance,
+            options: options2
+          });
+          var noopFn = function noopFn2() {
+          };
+          effectCleanupFns.push(cleanupFn || noopFn);
+        }
+      });
+    }
+    function cleanupModifierEffects() {
+      effectCleanupFns.forEach(function(fn2) {
+        return fn2();
+      });
+      effectCleanupFns = [];
+    }
+    return instance;
+  };
+}
+
+// node_modules/@popperjs/core/lib/popper.js
+var defaultModifiers = [eventListeners_default, popperOffsets_default, computeStyles_default, applyStyles_default, offset_default, flip_default, preventOverflow_default, arrow_default, hide_default];
+var createPopper = /* @__PURE__ */ popperGenerator({
+  defaultModifiers
+});
+
+// src/settings/suggesters/suggest.ts
+var wrapAround = (value, size) => {
+  return (value % size + size) % size;
+};
+var Suggest = class {
+  constructor(owner, containerEl, scope) {
+    this.owner = owner;
+    this.containerEl = containerEl;
+    containerEl.on("click", ".suggestion-item", this.onSuggestionClick.bind(this));
+    containerEl.on("mousemove", ".suggestion-item", this.onSuggestionMouseover.bind(this));
+    scope.register([], "ArrowUp", (event) => {
+      if (!event.isComposing) {
+        this.setSelectedItem(this.selectedItem - 1, true);
+        return false;
+      }
+    });
+    scope.register([], "ArrowDown", (event) => {
+      if (!event.isComposing) {
+        this.setSelectedItem(this.selectedItem + 1, true);
+        return false;
+      }
+    });
+    scope.register([], "Enter", (event) => {
+      if (!event.isComposing) {
+        this.useSelectedItem(event);
+        return false;
+      }
+    });
+  }
+  onSuggestionClick(event, el) {
+    event.preventDefault();
+    const item = this.suggestions.indexOf(el);
+    this.setSelectedItem(item, false);
+    this.useSelectedItem(event);
+  }
+  onSuggestionMouseover(_event, el) {
+    const item = this.suggestions.indexOf(el);
+    this.setSelectedItem(item, false);
+  }
+  setSuggestions(values) {
+    this.containerEl.empty();
+    const suggestionEls = [];
+    values.forEach((value) => {
+      const suggestionEl = this.containerEl.createDiv("suggestion-item");
+      this.owner.renderSuggestion(value, suggestionEl);
+      suggestionEls.push(suggestionEl);
+    });
+    this.values = values;
+    this.suggestions = suggestionEls;
+    this.setSelectedItem(0, false);
+  }
+  useSelectedItem(event) {
+    const currentValue = this.values[this.selectedItem];
+    if (currentValue) {
+      this.owner.selectSuggestion(currentValue, event);
+    }
+  }
+  setSelectedItem(selectedIndex, scrollIntoView) {
+    const normalizedIndex = wrapAround(selectedIndex, this.suggestions.length);
+    const prevSelectedSuggestion = this.suggestions[this.selectedItem];
+    const selectedSuggestion = this.suggestions[normalizedIndex];
+    prevSelectedSuggestion == null ? void 0 : prevSelectedSuggestion.removeClass("is-selected");
+    selectedSuggestion == null ? void 0 : selectedSuggestion.addClass("is-selected");
+    this.selectedItem = normalizedIndex;
+    if (scrollIntoView) {
+      selectedSuggestion.scrollIntoView(false);
+    }
+  }
+};
+var TextInputSuggest = class {
+  constructor(app, inputEl) {
+    this.app = app;
+    this.inputEl = inputEl;
+    this.scope = new import_obsidian2.Scope();
+    this.suggestEl = createDiv("suggestion-container");
+    const suggestion = this.suggestEl.createDiv("suggestion");
+    this.suggest = new Suggest(this, suggestion, this.scope);
+    this.scope.register([], "Escape", this.close.bind(this));
+    this.inputEl.addEventListener("input", this.onInputChanged.bind(this));
+    this.inputEl.addEventListener("focus", this.onInputChanged.bind(this));
+    this.inputEl.addEventListener("blur", this.close.bind(this));
+    this.suggestEl.on("mousedown", ".suggestion-container", (event) => {
+      event.preventDefault();
+    });
+  }
+  onInputChanged() {
+    const inputStr = this.inputEl.value;
+    const suggestions = this.getSuggestions(inputStr);
+    if (!suggestions) {
+      this.close();
+      return;
+    }
+    if (suggestions.length > 0) {
+      this.suggest.setSuggestions(suggestions);
+      this.open(this.app.dom.appContainerEl, this.inputEl);
+    } else {
+      this.close();
+    }
+  }
+  open(container, inputEl) {
+    this.app.keymap.pushScope(this.scope);
+    container.appendChild(this.suggestEl);
+    this.popper = createPopper(inputEl, this.suggestEl, {
+      placement: "bottom-start",
+      modifiers: [
+        {
+          name: "sameWidth",
+          enabled: true,
+          fn: ({ state, instance }) => {
+            const targetWidth = `${state.rects.reference.width}px`;
+            if (state.styles.popper.width === targetWidth) {
+              return;
+            }
+            state.styles.popper.width = targetWidth;
+            instance.update();
+          },
+          phase: "beforeWrite",
+          requires: ["computeStyles"]
+        }
+      ]
+    });
+  }
+  close() {
+    this.app.keymap.popScope(this.scope);
+    this.suggest.setSuggestions([]);
+    if (this.popper)
+      this.popper.destroy();
+    this.suggestEl.detach();
+  }
+};
+
+// src/settings/suggesters/FolderSuggester.ts
+var FolderSuggest = class extends TextInputSuggest {
+  getSuggestions(inputStr) {
+    const abstractFiles = this.app.vault.getAllLoadedFiles();
+    const folders = [];
+    const lowerCaseInputStr = inputStr.toLowerCase();
+    abstractFiles.forEach((folder) => {
+      if (folder instanceof import_obsidian3.TFolder && folder.path.toLowerCase().contains(lowerCaseInputStr)) {
+        folders.push(folder);
+      }
+    });
+    return folders;
+  }
+  renderSuggestion(file, el) {
+    el.setText(file.path);
+  }
+  selectSuggestion(file) {
+    this.inputEl.value = file.path;
+    this.inputEl.trigger("input");
+    this.close();
+  }
+};
+
+// src/settings/Settings.ts
+var debouncedSaveSettings = (0, import_obsidian4.debounce)((callback) => callback(), 500, true);
+var Settings = class extends import_obsidian4.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -10959,7 +12646,7 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
   }
   getSelectedCount() {
     const selected = Object.keys(this.getYAML()).length;
-    const total = 18;
+    const total = 20;
     return `${selected}/${total}`;
   }
   getYAML() {
@@ -10979,25 +12666,45 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("h3", { text: "Goodreads RSS Feed" });
-    containerEl.createEl("p", {
-      text: "Only the first 100 items of a shelf are added to the RSS feed. So if you have more than 100 books, you have to split them into multiple shelves."
+    new import_obsidian4.Setting(containerEl).setName("Target Folder").setDesc("Path to where to store the book notes. Can be either a relative path within the vault, or absolute outside of the vault. If you leave this empty, the books will be created in the root of the vault.").addSearch((cb) => {
+      try {
+        new FolderSuggest(this.app, cb.inputEl);
+      } catch (e) {
+        console.error(e);
+      }
+      cb.setPlaceholder("Vault root").setValue(this.plugin.settings.targetFolderPath).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.targetFolderPath = value.replace(/[\\/]+$/g, "").trim();
+        yield this.plugin.saveSettings();
+      }));
     });
-    new import_obsidian2.Setting(containerEl).setName("Target Folder").setDesc("Path to where to store the book notes. Can be either a relative path within the vault, or absolute outside of the vault. If you leave this empty, the books will be created in the root directory.").addText((text) => text.setPlaceholder("").setValue(this.plugin.settings.targetFolderPath).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.targetFolderPath = value.replace(/[\\/]+$/g, "");
-      yield this.plugin.saveSettings();
-    })));
-    new import_obsidian2.Setting(containerEl).setName("RSS Base URL").setDesc("Please add your RSS Base URL here (everything before the shelf name).").setTooltip("https://www.goodreads.com/ ... &shelf=").addText((text) => text.setValue(this.plugin.settings.goodreadsBaseUrl).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.goodreadsBaseUrl = value;
-      yield this.plugin.saveSettings();
-    })));
-    new import_obsidian2.Setting(containerEl).setName("Your Goodreads Shelves").setDesc("Here you can specify which shelves you'd like to export. Please separate the values with a comma and make sure you got the names right. ").setTooltip("You can check the proper naming in the RSS url.").addTextArea((text) => {
+    new import_obsidian4.Setting(containerEl).setName("RSS Base URL").setDesc("Please add your RSS Base URL here (everything before the shelf name).").setTooltip("https://www.goodreads.com/ ... &shelf=").addText((text) => {
+      text.setValue(this.plugin.settings.goodreadsBaseUrl).setPlaceholder("https://www.goodreads.com/ ... &shelf=").onChange((value) => __async(this, null, function* () {
+        debouncedSaveSettings(() => __async(this, null, function* () {
+          const validPattern = /^https?:\/\/.*?\/review\/list_rss\/\d+\?key=[a-zA-Z0-9-_]+&shelf=/;
+          const result = value.trim().match(validPattern);
+          if (result) {
+            this.plugin.settings.goodreadsBaseUrl = result[0];
+            text.inputEl.value = result[0];
+          } else if (value.trim().length === 0) {
+            this.plugin.settings.goodreadsBaseUrl = "";
+          } else {
+            new import_obsidian4.Notice("Booksidian: Could not parse RSS Base URL");
+            return;
+          }
+          yield this.plugin.saveSettings();
+        }));
+      }));
+      text.inputEl.style.minWidth = "18rem";
+      text.inputEl.style.maxWidth = "18rem";
+    });
+    new import_obsidian4.Setting(containerEl).setName("Your Goodreads Shelves").setDesc("Here you can specify which shelves you'd like to export. Please separate the values with a comma and make sure you got the names right. ").setTooltip("You can check the proper naming in the RSS url.").addTextArea((text) => {
       text.inputEl.rows = 6;
       text.setPlaceholder("Your Shelves").setValue(this.plugin.settings.goodreadsShelves).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.goodreadsShelves = value;
         yield this.plugin.saveSettings();
       }));
     });
-    new import_obsidian2.Setting(containerEl).setName("Configure resync frequency").setDesc("If not set to manual, Booksidian will resync with Goodreads RSS at configured interval").addDropdown((dropdown) => {
+    new import_obsidian4.Setting(containerEl).setName("Configure resync frequency").setDesc("If not set to manual, Booksidian will resync with Goodreads RSS at configured interval").addDropdown((dropdown) => {
       dropdown.addOption("0", "Manual");
       dropdown.addOption("60", "Every 1 hour");
       dropdown.addOption((12 * 60).toString(), "Every 12 hours");
@@ -11009,25 +12716,43 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
         this.plugin.configureSchedule();
       });
     });
-    new import_obsidian2.Setting(containerEl).setName("Overwrite").setDesc("When syncing with Goodreads, overwrite existing notes. Modifications to notes will be lost, but changes from Goodreads will now be picked up.").addToggle((toggle) => {
+    new import_obsidian4.Setting(containerEl).setName("Overwrite").setDesc("When syncing with Goodreads, overwrite existing notes. Modifications to notes will be lost, but changes from Goodreads will now be picked up.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.overwrite);
       toggle.onChange((newValue) => {
         this.plugin.settings.overwrite = newValue;
         this.plugin.saveSettings();
       });
     });
+    containerEl.createEl("h4", { text: "Book covers" });
+    new import_obsidian4.Setting(containerEl).setName("Download covers").setDesc("Whether the cover image for each book should be downloaded").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.coverDownload);
+      toggle.onChange((value) => __async(this, null, function* () {
+        return this.plugin.settings.coverDownload = value;
+      }));
+    });
+    new import_obsidian4.Setting(containerEl).setName("Cover download folder").setDesc('Path to where the cover images should be downloaded to. Like Target Folder, the path can be relative to the vault or absolute outside of the vault. If left empty, a folder named "cover" will be created under Target Folder.').addSearch((cb) => {
+      try {
+        new FolderSuggest(this.app, cb.inputEl);
+      } catch (e) {
+        console.error(e);
+      }
+      cb.setPlaceholder("Target Folder/cover").setValue(this.plugin.settings.coverDownloadLocation).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.coverDownloadLocation = value.trim();
+        yield this.plugin.saveSettings();
+      }));
+    });
     containerEl.createEl("h3", { text: "Body" });
     containerEl.createEl("p", {
       text: "You can specify the content of the book-note by using {{placeholders}}. You can see the full list of placeholders in the dropdown of the frontmatter. You can choose the frontmatter placeholders you'd like and apply specific formatting to each of them."
     });
-    new import_obsidian2.Setting(containerEl).setName("Naming Pattern").setTooltip("You don't need to add '.md' to the filename").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Naming Pattern").setTooltip("You don't need to add '.md' to the filename").addText((text) => {
       text.setValue(this.plugin.settings.fileName);
       text.onChange((value) => __async(this, null, function* () {
         this.plugin.settings.fileName = value;
         yield this.plugin.saveSettings();
       }));
     });
-    new import_obsidian2.Setting(containerEl).setName("Content of the book-note").setTooltip("Don't forget to wrap the placeholders in {{}}.").addTextArea((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Content of the book-note").setTooltip("Don't forget to wrap the placeholders in {{}}.").addTextArea((text) => {
       text.inputEl.rows = 6;
       text.setValue(this.plugin.settings.bodyString);
       text.onChange((value) => __async(this, null, function* () {
@@ -11041,8 +12766,15 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
         text: "You can add custom frontmatter to your books. Please use the dropdown to choose the frontmatter you'd like to add."
       });
     }
-    new import_obsidian2.Setting(containerEl).setName("Available Fields").addDropdown((dropdown) => dropdown.addOption("", `${this.getSelectedCount()}`).addOption("id", `${this.getDisplay("id")}`).addOption("author", `${this.getDisplay("author")}`).addOption("title", `${this.getDisplay("title", "title (formatted for filenames/links)")}`).addOption("fullTitle", `${this.getDisplay("fullTitle", "fullTitle (formatted, includes subtitle)")}`).addOption("rawTitle", `${this.getDisplay("rawTitle")}`).addOption("subtitle", `${this.getDisplay("subtitle")}`).addOption("pages", `${this.getDisplay("pages")}`).addOption("series", `${this.getDisplay("series")}`).addOption("description", `${this.getDisplay("description")}`).addOption("cover", `${this.getDisplay("cover")}`).addOption("isbn", `${this.getDisplay("isbn")}`).addOption("review", `${this.getDisplay("review")}`).addOption("rating", `${this.getDisplay("rating")}`).addOption("avgRating", `${this.getDisplay("avgRating")}`).addOption("dateAdded", `${this.getDisplay("dateAdded")}`).addOption("dateRead", `${this.getDisplay("dateRead")}`).addOption("datePublished", `${this.getDisplay("datePublished")}`).addOption("shelves", `${this.getDisplay("shelves")}`).addOption("bookPage", `${this.getDisplay("bookPage")}`).onChange((value) => __async(this, null, function* () {
-      this.optionIsSelected(value) ? delete this.currentYAML[value] : this.currentYAML[value] = value;
+    new import_obsidian4.Setting(containerEl).setName("Available Fields").addDropdown((dropdown) => dropdown.addOption("", `${this.getSelectedCount()}`).addOption("id", `${this.getDisplay("id")}`).addOption("author", `${this.getDisplay("author")}`).addOption("title", `${this.getDisplay("title", "title (formatted for filenames/links)")}`).addOption("fullTitle", `${this.getDisplay("fullTitle", "fullTitle (formatted, includes subtitle)")}`).addOption("rawTitle", `${this.getDisplay("rawTitle")}`).addOption("subtitle", `${this.getDisplay("subtitle")}`).addOption("pages", `${this.getDisplay("pages")}`).addOption("series", `${this.getDisplay("series")}`).addOption("seriesName", `${this.getDisplay("seriesName")}`).addOption("seriesNumber", `${this.getDisplay("seriesNumber")}`).addOption("description", `${this.getDisplay("description")}`).addOption("cover", `${this.getDisplay("cover")}`).addOption("coverImage", `${this.getDisplay("coverImage")}`).addOption("isbn", `${this.getDisplay("isbn")}`).addOption("review", `${this.getDisplay("review")}`).addOption("rating", `${this.getDisplay("rating")}`).addOption("avgRating", `${this.getDisplay("avgRating")}`).addOption("dateAdded", `${this.getDisplay("dateAdded")}`).addOption("dateCreated", `${this.getDisplay("dateCreated")}`).addOption("dateRead", `${this.getDisplay("dateRead")}`).addOption("datePublished", `${this.getDisplay("datePublished")}`).addOption("shelves", `${this.getDisplay("shelves")}`).addOption("bookPage", `${this.getDisplay("bookPage")}`).onChange((value) => __async(this, null, function* () {
+      if (this.optionIsSelected(value)) {
+        delete this.currentYAML[value];
+      } else {
+        if (value === "coverImage")
+          this.currentYAML[value] = `[[${value}]]`;
+        else
+          this.currentYAML[value] = value;
+      }
       yield this.plugin.saveSettings();
       this.display();
     }))).addExtraButton((button) => button.onClick(() => __async(this, null, function* () {
@@ -11050,7 +12782,7 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
     })).setIcon("sync").setTooltip("Refresh Previews"));
     Object.keys(this.currentYAML).forEach((key) => {
       const value = this.currentYAML[key];
-      new import_obsidian2.Setting(containerEl).setName(key + ": " + value).addExtraButton((button) => button.onClick(() => __async(this, null, function* () {
+      new import_obsidian4.Setting(containerEl).setName(key + ": " + value).addExtraButton((button) => button.setTooltip("Convert to link").onClick(() => __async(this, null, function* () {
         if (value.startsWith("[[")) {
           this.currentYAML[key] = value.replace(/[[\]]/g, "");
         } else {
@@ -11067,6 +12799,7 @@ var Settings = class extends import_obsidian2.PluginSettingTab {
         this.display();
       })).setIcon("trash").setTooltip("Remove"));
     });
+    containerEl.classList.add("booksidian-plugin__settings");
   }
 };
 
@@ -11079,11 +12812,13 @@ var DEFAULT_SETTINGS = {
   frontmatterDictionary: {},
   bodyString: "# {{title}}\n\nauthor::[[{{author}}]]",
   frequency: "0",
-  overwrite: false
+  overwrite: false,
+  coverDownload: false,
+  coverDownloadLocation: ""
 };
 
 // main.ts
-var Booksidian = class extends import_obsidian3.Plugin {
+var Booksidian = class extends import_obsidian5.Plugin {
   constructor() {
     super(...arguments);
     this.scheduleInterval = null;
@@ -11142,3 +12877,5 @@ var Booksidian = class extends import_obsidian3.Plugin {
  * http://github.com/janl/mustache.js
  */
 /*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
+
+/* nosourcemap */
