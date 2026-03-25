@@ -1,5 +1,6 @@
 Lesson 1: Excel Basics
 Lesson 1.5 tys
+    code: 9e1mfk-hqb4m-w3FfK4
 insert column 
     click column
     right click then pick insert column
@@ -18,7 +19,9 @@ fill color right click
 wrap text right click select format menu goto alignment 
 set print area goto page layout
 set margins goto page layout
-column to repeat left got page layout the page s
+column to repeat left got page layout the page setup then sheet
+sort select date to sort then goto data menu 
+filter select date goto data menu
 [Lesson 1.5 TYS Steps 1-19](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0)
 Excel Basics
 [Lesson 1.5 TYS Steps 20-32](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e)
