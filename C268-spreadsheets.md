@@ -1,6 +1,6 @@
 Lesson 1: Excel Basics
-1.5
-https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0
+Lesson 1.5 tys
+[Lesson 1.5 TYS Steps 1-19](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0)
 Excel Basics
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e
 
@@ -8,22 +8,22 @@ mac videos
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22d4c236-ce71-468c-a127-90dc87d025ea
 
 Lesson 2: Analyzing Data with PivotTables
-2.2 redo
+Lesson 2.2 redo
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=289af39c-6fb6-4926-9cc6-786739d4d9d4
 
 Lesson 3: Formula and Functions
-3.5 redo
+Lesson 3.5 redo
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
 
 Lesson 4: Charting
-4.6 redo
+Lesson 4.6 redo
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bff9d6cb-06ef-4f03-be1d-aa3a015e7067
 
 Lesson 5: Date, Time, and Text Functions
-5.3 
+Lesson 5.3 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ea53e6-187f-4c90-8769-aa5b013cb6fd
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a75c936-4584-4391-b915-aa5b013c809c
@@ -45,6 +45,17 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29641873-48fe-4e0d-a
 https://www.youtube.com/watch?v=N924D6tGOG8
 
 Lesson 8: Advanced Modeling
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c364c325-ae07-4e33-b42c-ad0b013b0052
+
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca55bfab-9678-4c68-83b3-aa46010fb69d
+
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd745298-fce4-4d23-9790-acfe0130d6e6
+
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2e4cf51e-8693-4893-9379-acf00139af83
+
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=46e2e464-1f27-4dd3-a0f6-aa46010ed318
+
+https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9f03b6ce-b0e1-4f42-9a7c-ad0e01483818
 Lesson 9: Statistics
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=001b1f2a-74bc-4311-8f35-aaf401132e5a
 
