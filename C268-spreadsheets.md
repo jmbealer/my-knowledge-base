@@ -1,8 +1,18 @@
 Lesson 1: Excel Basics
 Lesson 1.5 tys
+insert column 
+    click column
+    right click then pick insert column
+fill number
+    start pattern
+    then select cells with pattern
+    then drag down to stop
+bold right click
+center a line right click
+megre right click 
 [Lesson 1.5 TYS Steps 1-19](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0)
 Excel Basics
-https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e
+[Lesson 1.5 TYS Steps 20-32](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e)
 
 mac videos
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22d4c236-ce71-468c-a127-90dc87d025ea
