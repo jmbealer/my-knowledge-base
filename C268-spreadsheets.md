@@ -33,6 +33,19 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22d4c236-ce71-468c-a
 Lesson 2: Analyzing Data with PivotTables
 Lesson 2.2 test your skills: pivottables
     code: 9e1nXL-rrJcR-NiT38m
+employee pivottable - how many total employees
+    region as row labels
+    salary as values
+    change values to get number of employees
+experience pivottable - average work experience by position for each location
+    labels as row labels
+    position as column labels
+    experience as values
+experience pivottable
+experience pivottable
+experience pivottable
+experience pivottable
+experience pivottable
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
