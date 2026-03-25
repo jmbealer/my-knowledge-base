@@ -10,6 +10,15 @@ fill number
 bold right click
 center a line right click
 megre right click 
+short date home options
+size column select column right click
+hide column select column right click
+change border right click select border menu
+fill color right click
+wrap text right click select format menu goto alignment 
+set print area goto page layout
+set margins goto page layout
+column to repeat left got page layout the page s
 [Lesson 1.5 TYS Steps 1-19](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea16712-fc37-4fde-a955-aa4f00d505e0)
 Excel Basics
 [Lesson 1.5 TYS Steps 20-32](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f301ca5-ca33-46c7-b8ea-aa4f00f13f4e)
