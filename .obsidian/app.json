@@ -8,5 +8,6 @@
   "livePreview": false,
   "showUnsupportedFiles": true,
   "defaultViewMode": "preview",
-  "openBehavior": "daily"
+  "openBehavior": "daily",
+  "showInlineTitle": true
 }
