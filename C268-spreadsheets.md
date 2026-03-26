@@ -52,9 +52,19 @@ average salary pivottable - get average salary by gender
     gender as column labels
     salary as value
     change value to get average
-position pivottable - get percentage of employees for each type of posiit
+position pivottable - get percentage of employees for each type of positions
+    position as row labels
+    region as column labels
+    salary as value
+    change value to get percentage
 regional managers pivottable - 
-salary difference pivottable - 
+    location as row labels
+    region as column labels
+    value is the sum of experience
+    filter is position only regional managers
+salary difference pivottable - diff between salespersons and sales managers
+    position as row labels
+    column labels is 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
