@@ -64,7 +64,8 @@ regional managers pivottable -
     filter is position only regional managers
 salary difference pivottable - diff between salespersons and sales managers
     position as row labels
-    column labels is 
+    column labels is region
+    value is diff of salary
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
