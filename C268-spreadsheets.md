@@ -137,6 +137,14 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8
 Lesson 4: Charting
 Lesson 4.6 test your skills: charting
     code: 9e1ngb-yxXAh-Q9gQ34
+    
+create column chart
+    select data to make chart
+    go to insert menu and select chart
+    select in the chart then select plus for chart elements
+
+right click chart select data
+
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bff9d6cb-06ef-4f03-be1d-aa3a015e7067
 
 Lesson 5: Date, Time, and Text Functions
