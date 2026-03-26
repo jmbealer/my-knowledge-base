@@ -103,9 +103,15 @@ pmt - calc the payment amount for a loan
     =PMT(rate, nper, pv)
         rate = interest rate
         nper = number of payments to be made to pay off the loan
-        pv = original loan amount
+        pv = the current value of the investment.
     =PMT(C11/12,C12,C10)
 rate - calc the interest rate earned for an investment
+    =RATE(rate, nper, pmt)
+        nper = number of payments to be made to pay off the loan
+        pmt = the amount of the payment
+        pv = the current value of the investment.
+    =RATE(C11,C12,C10)
+        time by 12 for nominal interest rate
 nper - calc the number of payments that will be made to pay off a loan.
 pv - calc the current value of an investment (accounting for compound interest).
     =PV(rate, nper, pmt)
@@ -114,6 +120,11 @@ pv - calc the current value of an investment (accounting for compound interest).
         pmt = the amount of the payment
     =PV(C11/12,C12,C10)
 fv - calc the future value of an investment (accounting for compound interest).
+effect - calc the annual percentage rate for an interest rate.
+    =EFFECT(nominal_rate, npery)
+        nominal_rate = the nominal interest rate.
+        npery = the number of times per year that interest is charged.
+    =EFFECT(F14,12)
 
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
