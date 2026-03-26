@@ -99,6 +99,12 @@ min - return the minimum value
     =MIN(val1, [val2], ...)
     =MIN(D9:D33)
 
+pmt - calc the payment amount for a loan
+rate - calc the interest rate earned for an investment
+nper - calc the number of payments that will be made to pay off a loan.
+pv - calc the current value of an investment (accounting for compound interest).
+fv - calc the future value of an investment (accounting for compound interest).
+
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
 
