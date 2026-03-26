@@ -41,11 +41,20 @@ experience pivottable - average work experience by position for each location
     labels as row labels
     position as column labels
     experience as values
-experience pivottable
-experience pivottable
-experience pivottable
-experience pivottable
-experience pivottable
+    change value to get average
+max salary pivottable - maximum salary by gender and position
+    position as row labels
+    gender as column labels
+    salary as value
+    change value to get max
+average salary pivottable - get average salary by gender
+    position as row labels
+    gender as column labels
+    salary as value
+    change value to get average
+position pivottable - get percentage of employees for each type of posiit
+regional managers pivottable - 
+salary difference pivottable - 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77cec329-8269-430d-b3ed-abde01079300
 
 mac videos
