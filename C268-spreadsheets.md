@@ -100,9 +100,19 @@ min - return the minimum value
     =MIN(D9:D33)
 
 pmt - calc the payment amount for a loan
+    =PMT(rate, nper, pv)
+        rate = interest rate
+        nper = number of payments to be made to pay off the loan
+        pv = original loan amount
+    =PMT(C11/12,C12,C10)
 rate - calc the interest rate earned for an investment
 nper - calc the number of payments that will be made to pay off a loan.
 pv - calc the current value of an investment (accounting for compound interest).
+    =PV(rate, nper, pmt)
+        rate = interest rate
+        nper = number of payments to be made to pay off the loan
+        pmt = the amount of the payment
+    =PV(C11/12,C12,C10)
 fv - calc the future value of an investment (accounting for compound interest).
 
 
