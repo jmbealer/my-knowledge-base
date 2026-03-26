@@ -120,6 +120,11 @@ pv - calc the current value of an investment (accounting for compound interest).
         pmt = the amount of the payment
     =PV(C11/12,C12,C10)
 fv - calc the future value of an investment (accounting for compound interest).
+    =FV(rate, nper, pmt)
+        rate = interest rate
+        nper = number of payments to be made to pay off the loan
+        pmt = the amount of the payment
+    =FV(C11/12,C12,C10)
 effect - calc the annual percentage rate for an interest rate.
     =EFFECT(nominal_rate, npery)
         nominal_rate = the nominal interest rate.
