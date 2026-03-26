@@ -81,7 +81,25 @@ sum funtion - =SUM(num1, [num2], ...)
     =SUM(C11,D11) a two nums example
 product for relate cell and absolute cell
     =A1*$D$1
-add two 
+add two relate cells
+    =A1+B2
+count - counts number of cells in a range with only numbers
+    =COUNT(val1, [val2], ...)
+    =COUNT(D9:D33)
+counta - counts number of cells in a range that nonblank
+    =COUNTA(val1, [val2], ...)
+    =COUNTA(D9:D33)
+average - returns the average
+    =AVERAGE(val1, [val2], ...)
+    =AVERAGE(D9:D33)
+max - returns the maximum value
+    =MAX(val1, [val2], ...)
+    =MAX(D9:D33)
+min - return the minimum value
+    =MIN(val1, [val2], ...)
+    =MIN(D9:D33)
+
+
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
 
 Lesson 4: Charting
