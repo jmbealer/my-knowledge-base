@@ -73,7 +73,15 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=289af39c-6fb6-4926-9
 
 Lesson 3: Formula and Functions
 Lesson 3.5 test your skills: formulas and functions
-    code: 9e1ne5-WEEzm-mcjDRf  
+    code: 9e1ne5-WEEzm-mcjDRf
+look at formula bar
+absolute cell addresses - $A$1
+sum funtion - =SUM(num1, [num2], ...)
+    =SUM(E1:E33) a range example
+    =SUM(C11,D11) a two nums example
+product for relate cell and absolute cell
+    =A1*$D$1
+add two 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7c3b0b1-e3b6-41d2-8c12-aa6b0125cf6a
 
 Lesson 4: Charting
