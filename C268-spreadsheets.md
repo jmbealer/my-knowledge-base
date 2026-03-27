@@ -104,7 +104,7 @@ min - return the minimum value
     =MIN(val1, [val2], ...)
     =MIN(D9:D33)
 
-pmt - calc the payment amount for a loan
+pmt - calc the monthly payment
     =PMT(rate, nper, pv)
         rate = interest rate
         nper = number of payments to be made to pay off the loan
