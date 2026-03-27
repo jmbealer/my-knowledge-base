@@ -193,6 +193,8 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5dca5141-641f-4724-a
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae9885d3-0fa4-431d-9d1a-aa48013c7d7e
 
 Lesson 7: Modeling Basics
+
+too long way too long
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=08c9749b-9412-4689-8507-ad100110286f&start=0002
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29641873-48fe-4e0d-a581-ad0b011db491&start=0000
