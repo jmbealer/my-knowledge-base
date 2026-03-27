@@ -182,6 +182,8 @@ booleans functions
         =and(logical1, [logical2], ...)
         logical1
             c11="Yes"
+    vlookup
+        
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0a4845a-8168-4ef0-98a5-aa5400f053e6
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93fb4814-3889-4616-a662-aa480133bd65
