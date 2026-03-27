@@ -74,6 +74,11 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=289af39c-6fb6-4926-9
 Lesson 3: Formula and Functions
 Lesson 3.5 test your skills: formulas and functions
     code: 9e1ne5-WEEzm-mcjDRf
+    Formulas
+    Statistical Functions
+    Finance
+        Task 5
+        Task 8
 look at formula bar
 absolute cell addresses - $A$1
 sum funtion - =SUM(num1, [num2], ...)
