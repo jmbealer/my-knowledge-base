@@ -158,6 +158,12 @@ left - =left(text, [num_chars])
 mid - =mid(text,start,end)
     =mid(c6,c11+1,)
 right -
+hour
+minute
+second
+concatenate
+    ":",
+double click to have the formalu apply downward
 
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ea53e6-187f-4c90-8769-aa5b013cb6fd
