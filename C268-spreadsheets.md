@@ -176,6 +176,12 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ea53e6-187f-4c90-8
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a75c936-4584-4391-b915-aa5b013c809c
 
 Lesson 6: Logic and Reference Functions
+
+booleans functions
+    AND function
+        =and(logical1, [logical2], ...)
+        logical1
+            c11="Yes"
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0a4845a-8168-4ef0-98a5-aa5400f053e6
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93fb4814-3889-4616-a662-aa480133bd65
