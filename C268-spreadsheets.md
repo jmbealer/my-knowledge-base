@@ -150,6 +150,16 @@ https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bff9d6cb-06ef-4f03-b
 Lesson 5: Date, Time, and Text Functions
 Lesson 5.3 test your skills: date, time, and text functions
     code: 9e1nkC-rDM61-YiwNjU 
+len - =len(c5)
+search - =search("#",c7)
+    =search(pattern,location)
+left - =left(text, [num_chars])
+    =left(c6,c11-1)
+mid - =mid(text,start,end)
+    =mid(c6,c11+1,)
+right -
+
+
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ea53e6-187f-4c90-8769-aa5b013cb6fd
 
 https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a75c936-4584-4391-b915-aa5b013c809c
