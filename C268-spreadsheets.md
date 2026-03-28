@@ -225,3 +225,13 @@ https://drive.google.com/file/d/1JPSRWQbR6EkUJ87KcA4Cm0mxkpqN5rqV/view
 https://drive.google.com/drive/folders/1gQ8ZglQIMjtrV3Nyclzbh1qkFaBvRMl-
 
 https://lrps.wgu.edu/provision/527682287
+
+Section 1 Amortization (Loan)
+    pmt function 
+        pmt(c13/12,c12,c11)
+Section 2 Four Js
+Section 3 Google
+Section 4 Spending
+Section 5 Event Profitability
+Section 6 Pivot Table Questions
+Section 7 Bakery
