@@ -235,3 +235,10 @@ Section 4 Spending
 Section 5 Event Profitability
 Section 6 Pivot Table Questions
 Section 7 Bakery
+    open slover
+    set obj is c31
+    vari cells is c4:f5
+    constraints
+        used in less equal to available
+        produce is less equal to demand
+        produce and demand are ints
