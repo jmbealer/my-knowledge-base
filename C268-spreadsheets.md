@@ -234,6 +234,10 @@ Section 3 Google
 Section 4 Spending
 Section 5 Event Profitability
 Section 6 Pivot Table Questions
+    row input cell
+        atten
+    column input cell
+        area fee
 Section 7 Bakery
     open slover
     set obj is c31
