@@ -238,6 +238,11 @@ Section 6 Pivot Table Questions
         atten
     column input cell
         area fee
+    pt3
+        percent of column
+    pt4
+        count
+            percent of row
 Section 7 Bakery
     open slover
     set obj is c31
