@@ -1,0 +1,2487 @@
+# CompTIA Network+ N10-009 V9 Objectives
+
+About the Exam
+
+The CompTIA Network+ certification exam will certify the successful candidate
+has the knowledge and skills required to:
+
+- Establish network connectivity by deploying wired and wireless devices.
+- Explain the purpose of documentation and maintain network documentation.
+- Configure common network services.
+- Explain basic data-center, cloud, and virtual-networking concepts.
+- Monitor network activity and troubleshoot performance and availability issues.
+- Implement network security hardening techniques.
+- Manage, configure, and troubleshoot network infrastructure.
+
+## 1.0 Networking Concepts 23%
+
+### 1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model
+
+**{{Open Systems Interconnection (OSI)}}**: _Standardized seven-layer framework_
+for network communication.
+
+**Fundamental Concepts**:
+
+- **{{Interoperability}}**: Ability of _different systems and organizations_ to
+  work together.
+- **{{Abstraction}}**: _Hiding implementation details_ to simplify complex
+  systems.
+- **{{Standardization}}**: Establishing _technical criteria_ to ensure
+  uniformity (ISO, IEEE).
+- **{{Protocol}}**: Set of _rules governing data exchange_ (Syntax, Semantics,
+  Timing).
+- **{{Transmission Modes}}**: _Direction of signal flow_ (Simplex, Half-Duplex,
+  Full-Duplex).
+- **{{Connection Services}}**: _Reliability of data transfer_
+  (Connection-Oriented vs Connectionless).
+
+- **{{Protocol Data Unit (PDU)}}**: _Data block exchanged_ at specific protocol
+  layers.
+- **{{Encapsulation}}**: Process of _adding headers and trailers_ to data at
+  each layer.
+  - **{{Header}}**: _Control information_ added to beginning of data payload.
+  - **{{Trailer}}**: _Control information_ added to end of data payload.
+  - **{{Payload}}**: _Actual data_ being transmitted within a packet/frame.
+- **{{Decapsulation}}**: Process of _removing headers and trailers_ from data at
+  each layer.
+- **{{Addressing}}**: Mechanism for _identifying nodes and routing messages_
+  (MAC, IP, Port).
+- **{{Multiplexing}}**: _Combining multiple signals_ into one transmission
+  channel.
+
+- **{{Layer 1 - Physical}}**: Transmits _raw bits_ over physical medium.
+  - **PDU**: _{{Bit}}_.
+  - **Sub-concepts**: Signaling (Sync/Async), Modulation, Multiplexing
+    (TDM/FDM), Physical Topologies.
+    - **{{Attenuation}}**: _Loss of signal strength_ over distance.
+    - **{{Latency}}**: _Time delay_ for data to travel from source to
+      destination.
+    - **{{Bandwidth}}**: _Maximum rate_ of data transfer across a given path.
+  - **Devices**: Hubs, Repeaters, Cables, Transceivers, Modems.
+  - **Protocols/Standards**: Ethernet (IEEE 802.3 Physical), Wi-Fi (IEEE 802.11
+    Physical), Bluetooth, USB.
+- **{{Layer 2 - Data Link}}**: _Node-to-node data transfer_ and error handling.
+  - **PDU**: _{{Frame}}_.
+  - **Sublayers**:
+    - **{{Media Access Control (MAC)}}**: _Addressing and channel access
+      control_.
+    - **{{Logical Link Control (LLC)}}**: _Flow control, error checking_, and
+      protocol multiplexing.
+  - **Sub-concepts**: MAC Addressing, Switching, Bridging, Error Detection
+    (CRC/FCS).
+    - **{{Collision Domain}}**: Network segment where _data collisions can
+      occur_.
+    - **{{Broadcast Domain}}**: Logical division where _all nodes_ can reach
+      each other by broadcast.
+    - **{{CSMA/CD}}**: _Carrier Sense Multiple Access/Collision Detection_
+      (Ethernet access method).
+  - **Devices**: Switches, Bridges, Network Interface Cards (NICs), Wireless
+    Access Points (WAPs).
+  - **Protocols**: Ethernet, PPP, ARP, STP, VLAN (802.1Q), L2TP.
+- **{{Layer 3 - Network}}**: _Routing data packets_ between different networks.
+  - **PDU**: _{{Packet}}_.
+  - **Sub-concepts**: IP Addressing (Logical), Routing, Path Selection, Packet
+    Switching/Circuit Switching.
+    - **{{Fragmentation}}**: _Breaking packets into smaller units_ to fit MTU.
+    - **{{Time to Live (TTL)}}**: Field _limiting packet lifespan_ to prevent
+      looping.
+    - **{{Route Table}}**: _Database_ used by routers to determine where to
+      forward packets.
+  - **Devices**: Routers, Layer 3 Switches, Firewalls.
+  - **Protocols**: IP (IPv4/IPv6), ICMP, IPSec, GRE, RIP, OSPF, BGP.
+- **{{Layer 4 - Transport}}**: _Reliable end-to-end data delivery_ and flow
+  control.
+  - **PDU**: _{{Segment (TCP) / Datagram (UDP)}}_.
+  - **Sub-concepts**: Port Numbers, Segmentation, Flow Control, Error Recovery,
+    Multiplexing.
+    - **{{Windowing}}**: Controlling data flow by _limiting unacknowledged
+      segments_.
+    - **{{Acknowledgement (ACK)}}**: _Confirmation of receipt_ of data packets.
+    - **{{Three-Way Handshake}}**: Process to _establish a reliable TCP
+      connection_ (SYN, SYN-ACK, ACK).
+  - **Devices**: Load Balancers, Firewalls (Stateful).
+  - **Protocols**: TCP, UDP.
+- **{{Layer 5 - Session}}**: _Managing communication sessions_ between
+  applications.
+  - **Sub-concepts**: Dialog Control, Session ID, Setup/Teardown.
+    - **{{Synchronization}}**: _Checkpointing data stream_ to allow recovery
+      from interruption.
+    - **{{Remote Procedure Calls (RPC)}}**: _Executing code on a remote system_
+      as if local.
+  - **Protocols: SIP, RTP, RPC, NetBIOS, SMB.**
+- **{{Layer 6 - Presentation}}**: _Data translation, encryption, and
+  compression_ formatting.
+  - **Sub-concepts**: Data Formatting (ASCII/Unicode), Encryption/Decryption,
+    Compression/Decompression.
+    - **{{Character Sets}}**: _Encoding standards_ for text (ASCII, Unicode,
+      EBCDIC).
+    - **{{Serialization}}**: _Converting data structures_ into a format for
+      storage or transmission.
+  - **Protocols: SSL/TLS, JPEG, GIF, MPEG.**
+- **{{Layer 7 - Application}}**: _Interface for end-user_ network processes.
+  - **Sub-concepts**: Network Services, User Interface.
+    - **{{Application Programming Interface (API)}}**: Set of _definitions for
+      building and integrating_ application software.
+    - **{{User Agent}}**: _Software acting on behalf of a user_ (e.g., Web
+      Browser).
+  - **Devices: Application Gateways, Proxy Servers.**
+  - **Protocols: HTTP, HTTPS, FTP, DNS, SMTP, DHCP, SSH, Telnet, SNMP.**
+
+**Network Nodes**: Devices that _send, receive, and forward data_.
+
+- **{{Intermediate Nodes}}**: Devices that _forward traffic_ between other nodes
+  (routers, switches).
+- **{{End Systems (Hosts)}}**: Devices that _send and receive data_ (computers,
+  servers, phones).
+
+### 1.2 Compare and contrast networking appliances, applications, and functions.
+
+**{{Physical}}**: _Hardware-based_ network components and devices. **{{Virtual
+Appliances}}**: _Software-based_ network functions running on hypervisors.
+
+**Network Architecture Planes**:
+
+- **{{Control Plane}}**: Part of the network that _makes routing decisions_
+  (Routing Tables, OSPF, BGP).
+- **{{Data Plane (Forwarding Plane)}}**: Part of the network that _forwards data
+  packets_ based on Control Plane decisions.
+
+- **{{Router}}**: _Forwards data packets_ between computer networks (Layer 3).
+  - Uses **{{Routing Tables}}** to determine best path.
+  - Can perform **{{NAT, DHCP, and ACL filtering}}**.
+  - Connects _diverse network types_ (LAN, WAN, Copper, Fiber).
+- **{{Switch}}**: _Connects devices_ within a single network segment (Layer
+  2/Layer 3).
+  - **{{Layer 2 Switch}}**: Forwards frames based on **MAC addresses**.
+  - **{{Layer 3 Switch (Multilayer)}}**: Adds _routing functionality_ (IP-based
+    forwarding).
+  - Creates _separate collision domains_ per port (unlike Hubs).
+  - Supports **{{VLANs and Power over Ethernet (PoE)}}**.
+- **{{Firewall}}**: _Security device_ filtering network traffic rules (Layer
+  3/4/7).
+  - Filters traffic based on **{{IP, Port, and Application (NGFW)}}**.
+  - **{{Statefulness}}**: Tracks active connections (Stateful vs Stateless).
+  - Can be _physical appliance or virtual software_.
+- **{{Intrusion Detection System (IDS)}}**: _Monitors network traffic_ for
+  suspicious activity.
+- **{{Intrusion Prevention System (IPS)}}**: _Detects and blocks_ malicious
+  network activity.
+- **{{Load Balancer}}**: _Distributes network traffic_ across multiple servers.
+- **{{Proxy}}**: _Intermediary server_ handling client requests.
+- **{{Network-Attached Storage (NAS)}}**: _File-level storage_ connected to a
+  network.
+- **{{Storage Area Network (SAN)}}**: Dedicated _high-speed network_ for
+  block-level storage access.
+  - _Offloads storage traffic_ from LAN to improve performance.
+  - **Protocols**: {{Fibre Channel (FC), iSCSI, FCoE}}.
+- **{{Wireless}}**: _Communication using radio waves_ instead of cables.
+  - **{{Access Point (AP)}}**: _Bridges wireless clients_ to wired network
+    (Layer 2).
+  - **{{Wireless Controller}}**: _Central management device_ for multiple access
+    points.
+    - Centralizes configuration, security policies, and firmware updates.
+- **{{Repeater}}**: Device _regenerating signal_ to extend transmission distance
+  (Layer 1).
+- **{{Hub}}**: _Multi-port repeater_ broadcasting traffic to all ports (Layer
+  1).
+  - Creates a _single collision domain_ (inefficient).
+  - "Dumb" device with no knowledge of MAC/IP addresses.
+- **{{Bridge}}**: Device _forwarding frames_ based on MAC address (Layer 2).
+  - Connects two LAN segments.
+  - _Software-based bridging_ is often slower than hardware switching.
+- **{{Modem}}**: Device _modulating and demodulating_ signals for transmission
+  (Layer 1/2).
+  - Converts _digital signals to analog_ (and vice versa) for DSL/Cable/Fiber.
+- **{{Network Interface Controller (NIC)}}**: _Hardware connecting computer_ to
+  network media.
+
+**Functions and Applications**:
+
+- **{{Client}}**: Device _users access the network_ with (Workstation, Phone,
+  Laptop).
+- **{{Server}}**: Device _providing resources_ to the network (File, Web,
+  Email).
+- **{{Quality of Service (QoS)}}**: _Prioritizing specific traffic types_ over
+  others.
+- **{{Time to Live (TTL)}}**: _Packet lifespan limit_ to prevent looping.
+- **{{Content Delivery Network (CDN)}}**: _Distributed servers_ speeding up
+  content delivery.
+
+**Standards Organizations**:
+
+- **{{Internet Assigned Numbers Authority (IANA)}}**: Manages _global IP
+  allocation_ and DNS root.
+- **{{Internet Engineering Task Force (IETF)}}**: Develops _Internet standards
+  and protocols_ (RFCs).
+
+### 1.3 Summarize cloud concepts and connectivity options.
+
+**Cloud Models**:
+
+- **{{Infrastructure as a Service (IaaS)}}**: _Virtualized computing resources_
+  over the internet.
+
+- **{{Platform as a Service (PaaS)}}**: _Platform for developing and deploying_
+  applications.
+
+- **{{Software as a Service (SaaS)}}**: _Software delivered over internet_ via
+  subscription.
+
+**Deployment Models**:
+
+- **{{Public Cloud}}**: Cloud resources _shared by general public_.
+
+- **{{Private Cloud}}**: Cloud infrastructure _dedicated to single
+  organization_.
+
+- **{{Hybrid Cloud}}**: Environment _combining public and private_ clouds.
+
+**Cloud Connectivity**:
+
+- **{{Virtual Private Network (VPN)}}**: _Encrypted tunnel_ over a public
+  network.
+
+- **{{Direct Connect}}**: _Dedicated physical connection_ to cloud provider.
+
+**Cloud Infrastructure Concepts**:
+
+- **{{Network Functions Virtualization (NFV)}}**: _Virtualizing network
+  services_ by decoupling from hardware.
+
+  - **{{Decoupling}}**: _Separating network functions_ from proprietary
+    hardware.
+
+- **{{Virtual Private Cloud (VPC)}}**: _Isolated private network_ within a
+  public cloud.
+
+  - **{{Isolation}}**: _Segmenting resources_ for security and control.
+
+- **Cloud Gateways**: _Entry points_ connecting local networks to cloud.
+
+  - **{{Internet Gateway (IGW)}}**: _Connects VPC instances_ to the internet.
+
+  - **{{Network Address Translation (NAT) Gateway}}**: _Enables private
+    instances_ to access internet.
+
+**Security and Management**:
+
+- **{{Network Security Groups (NSG)}}**: _Virtual firewall rules_ for cloud
+  resources (Instance-level).
+
+- **{{Network Security Lists}}**: Firewall rules _applied at the subnet level_.
+
+- **{{Multitenancy}}**: _Single instance_ serving multiple distinct customers.
+
+- **{{Scalability}}**: Ability to _handle increasing workload_ growth.
+
+- **{{Elasticity}}**: _Automatically scaling_ resources up and down.
+
+### 1.4 Explain common networking ports, protocols, services, and traffic types.
+
+- **{{Protocols}}**: _Rules governing data exchange_ between network devices.
+  - **{{Connection-Oriented}}**: _Establishes session_ before data transfer
+    (Reliable).
+  - **{{Connectionless}}**: _Sends data without_ established session
+    (Unreliable/Fast).
+  - **{{Stateful}}**: _Retains information_ about session status (e.g., TCP).
+  - **{{Stateless}}**: _No session information_ retained between requests (e.g.,
+    UDP, HTTP).
+
+- **{{Ports}}**: _Logical endpoints_ for identifying specific processes.
+  - **{{Well-known Ports (0-1023)}}**: _Reserved for system services_ (HTTP,
+    FTP).
+  - **{{Registered Ports (1024-49151)}}**: _Assigned to user
+    processes_/applications.
+  - **{{Dynamic/Private Ports (49152-65535)}}**: _Ephemeral ports_ for client
+    sessions.
+
+  - **{{File Transfer Protocol (FTP)}}**: _Transfers files_ between systems
+    using ports 20/21.
+  - **{{Secure File Transfer Protocol (SFTP)}}**: _Secure file transfer_ using
+    SSH on port 22.
+  - **{{Secure Shell (SSH)}}**: _Encrypted remote_ command-line access on
+    port 22.
+  - **{{Telnet}}**: _Unencrypted remote_ command-line communication on port 23.
+  - **{{Simple Mail Transfer Protocol (SMTP)}}**: _Sends email_ messages using
+    port 25.
+  - **{{Domain Name System (DNS)}}**: _Resolves domain names_ to IP addresses
+    (port 53).
+  - **{{Dynamic Host Configuration Protocol (DHCP)}}**: _Automates IP address_
+    assignment (ports 67/68).
+  - **{{Trivial File Transfer Protocol (TFTP)}}**: _Simple file transfer_
+    without authentication (port 69).
+  - **{{Hypertext Transfer Protocol (HTTP)}}**: _Transmits unencrypted_ web data
+    on port 80.
+  - **{{Hypertext Transfer Protocol Secure (HTTPS)}}**: _Secure, encrypted_ web
+    browsing on port 443.
+  - **{{Network Time Protocol (NTP)}}**: _Synchronizes clocks_ on network
+    devices (port 123).
+  - **{{Simple Network Management Protocol (SNMP)}}**: _Monitors and manages_
+    network devices (ports 161/162).
+  - **{{Lightweight Directory Access Protocol (LDAP)}}**: _Queries and manages_
+    distributed directory information (port 389).
+  - **{{Server Message Block (SMB)}}**: Network _file and printer sharing_ (port
+    445).
+  - **{{Syslog}}**: Standard protocol for _system log messages_ (port 514).
+  - **{{Simple Mail Transfer Protocol Secure (SMTPS)}}**: _Secure email
+    submission_ using port 587.
+  - **{{Lightweight Directory Access Protocol over SSL (LDAPS)}}**: _Secure
+    directory access_ on port 636.
+  - **{{Structured Query Language (SQL Server)}}**: _Microsoft database_
+    communication using port 1433.
+  - **{{Remote Desktop Protocol (RDP)}}**: _GUI-based remote_ access on
+    port 3389.
+  - **{{Session Initiation Protocol (SIP)}}**: _Manages multimedia_
+    communication sessions (ports 5060/5061).
+    - **{{Session Management}}**: _Setup, modification, and teardown_ of calls.
+
+- **{{Internet Protocol (IP) types}}**
+  - **{{Internet Protocol (IP)}}**: _Principal protocol_ for routing and
+    addressing packets.
+  - **{{Internet Control Message Protocol (ICMP)}}**: _Reports network errors_
+    and diagnostic information.
+  - **{{Transmission Control Protocol (TCP)}}**: _Reliable, connection-oriented_
+    data delivery protocol.
+    - **{{Three-Way Handshake}}**: _SYN, SYN-ACK, ACK_ process establishing
+      connection.
+    - **{{Flow Control}}**: _Managing data rate_ to prevent overwhelming
+      receiver.
+    - **{{Sequence Numbers}}**: _Ordering packets_ to reconstruct stream at
+      destination.
+    - **{{Acknowledgments}}**: _Confirming receipt_ of data packets.
+  - **{{User Datagram Protocol (UDP)}}**: _Fast, connectionless_, best-effort
+    data transmission protocol.
+  - **{{Generic Routing Encapsulation (GRE)}}**: _Encapsulates_ various network
+    protocols within virtual tunnels.
+  - **{{Internet Protocol Security (IPsec)}}**: Suite _ensuring IP packet_
+    confidentiality and integrity.
+    - **{{Authentication Header (AH)}}**: _Verifies sender identity_ and data
+      integrity.
+    - **{{Encapsulating Security Payload (ESP)}}**: Provides _encryption,
+      authentication_, and data integrity.
+    - **{{Internet Key Exchange (IKE)}}**: _Negotiates security keys_ and
+      associations automatically.
+  - **{{Address Resolution Protocol (ARP)}}**: _Resolves IP addresses_ to MAC
+    hardware addresses.
+- **{{Traffic Types}}**: _Categories of data flow_ across a network.
+  - **{{Unicast}}**: _One-to-one_ communication between single sender and
+    receiver.
+  - **{{Multicast}}**: _One-to-many_ communication to a subscribed group.
+    - Uses 224.0.0.0/4 IPv4 range
+  - **{{Anycast}}**: _One-to-nearest_ communication within a group of nodes.
+    - Used in IPv6 and DNS
+  - **{{Broadcast}}**: _One-to-all_ communication on a network segment.
+    - Used for ARP, DHCP Discover
+
+### 1.5 Compare and contrast transmission media and transceivers.
+
+- **{{Wireless}}**: _Data transmission_ via electromagnetic radio frequencies.
+  - **{{802.11 Standards}}**: Wireless networking standards _utilizing radio
+    transmission_.
+    - **{{802.11a}}**: 54 Mbps on **5 GHz band** (Legacy).
+    - **{{802.11b}}**: 11 Mbps on **2.4 GHz band** (Legacy).
+    - **{{802.11g}}**: 54 Mbps on **2.4 GHz band** (Legacy).
+    - **{{802.11n (Wi-Fi 4)}}**: 600 Mbps on **2.4/5 GHz** (MIMO).
+    - **{{802.11ac (Wi-Fi 5)}}**: 1 Gbps+ on **5 GHz** (MU-MIMO).
+    - **{{802.11ax (Wi-Fi 6)}}**: 10 Gbps on **2.4/5/6 GHz** (OFDMA).
+  - **{{Cellular}}**: Wireless data transmission via _mobile phone networks_.
+  - **{{Satellite}}**: Internet access via _orbiting relay stations_.
+
+- **{{Wired}}**: _Data transmission_ through physical cables and wires.
+  - **{{Twisted Pair Categories}}**: _Copper cabling standards_ for Ethernet.
+    - **{{Cat 5e}}**: 1 Gbps up to **100 meters**.
+    - **{{Cat 6}}**: 10 Gbps up to **55 meters**.
+    - **{{Cat 6a}}**: 10 Gbps up to **100 meters**.
+    - **{{Cat 8}}**: 40 Gbps up to **30 meters** (Datacenter).
+  - **{{Fire Ratings}}**: _Cable jacket types_ for safety compliance.
+    - **{{Plenum}}**: _Fire-resistant, low-smoke_ for air handling spaces.
+    - **{{Riser (Non-Plenum)}}**: _Vertical runs_ between floors, less
+      fire-resistant.
+  - **{{Fiber Optic Types}}**: _Glass cabling_ using light for transmission.
+    - **{{Single-Mode Fiber (SMF)}}**: _Small core (9um)_, laser-based, long
+      distance (km).
+    - **{{Multimode Fiber (MMF)}}**: _Larger core (50um)_, LED-based, short
+      distance (m).
+  - **{{Coaxial Cable}}**: _Copper core with shielding_ for broadband/TV.
+    - **{{RG-6}}**: Standard for _modern cable TV/internet_.
+    - **{{RG-59}}**: Older standard, _higher loss_, short runs.
+  - **{{Direct Attach Copper (DAC)}}**: _Twinax copper cable_ with integrated
+    transceivers.
+
+- **{{Transceivers}}**: Devices that _both transmit and receive signals_.
+  - **{{Form Factors}}**: _Standardized physical dimensions_ and module shapes.
+    - **{{Small Form-Factor Pluggable (SFP)}}**: 1 Gbps _hot-swappable module_.
+    - **{{Enhanced SFP (SFP+)}}**: 10 Gbps version of SFP.
+    - **{{Quad SFP (QSFP)}}**: 40 Gbps module (4 channels).
+    - **{{QSFP28}}**: 100 Gbps module for _high-speed backbones_.
+  - **{{Protocol}}**: _Rules for physical data encoding_ and transmission.
+    - **{{Fiber Channel (FC)}}**: _High-speed network technology_ for storage
+      networking.
+
+- **{{Connector Types}}**: _Physical interfaces_ used for joining network
+  cables.
+  - **{{Subscriber Connector (SC)}}**: _Square push-pull_ fiber connector
+    (Datacenter/Telecom).
+  - **{{Local Connector (LC)}}**: _Small form-factor push-pull_ fiber connector
+    (High-density).
+  - **{{Straight Tip (ST)}}**: _Bayonet twist-lock_ fiber connector
+    (Legacy/Campus).
+  - **{{Multi-Fiber Push On (MPO)}}**: _High-density connector_ for 12-24
+    fibers.
+  - **{{Registered Jack (RJ)}}**: _Standard connector interface_ for
+    telecommunications.
+    - **{{RJ11}}**: 6-position, 2-4 conductor for _telephone/DSL_.
+    - **{{RJ45}}**: 8-position, 8-conductor for _Ethernet networking_.
+  - **{{F-Type Connector}}**: _Screw-on connector_ for coaxial cable (TV/Modem).
+  - **{{Bayonet Neill-Concelman (BNC)}}**: _Twist-lock connector_ for coaxial
+    cables.
+  - **{{Ultra Physical Contact (UPC)}}**: Fiber connector polish with _rounded
+    surface_.
+  - **{{Angled Physical Contact (APC)}}**: Fiber connector polish with _angled
+    surface_.
+
+### 1.6 Compare and contrast network topologies, architectures, and types.
+
+- **{{Physical Topology}}**: _Actual layout_ of hardware, cables, and devices.
+- **{{Logical Topology}}**: _Path data flows_ through the network.
+- **{{Mesh Topology}}**: Network where nodes connect to _multiple others_.
+  - **{{Full Mesh}}**: Every node connects _directly to every other_ node.
+    - **{{Fault Tolerance}}**: System _continues operating_ after component
+      failure.
+  - **{{Partial Mesh}}**: Selected nodes connect to multiple others for
+    _redundancy_.
+    - **{{Redundancy}}**: _Duplicate components or paths_ preventing system
+      failure.
+- **{{Hybrid Topology}}**: Network _mixing multiple_ topology types.
+- **{{Star Topology / Hub-and-Spoke}}**: _Central device_ connects all nodes
+  (LAN) or sites (WAN).
+  - **{{Single Point of Failure}}**: _Critical component_ whose failure stops
+    entire system.
+  - **{{Scalability}}**: Ability to _handle increasing workload_ growth.
+- **{{Spine and Leaf}}**: Datacenter topology _reducing latency_ between
+  servers.
+  - **{{Two-Layer Design}}**: Architecture _minimizing hops_ between any two
+    servers.
+  - **{{Minimizing Latency}}**: _Reducing time delay_ for data packet
+    transmission.
+- **{{Point-to-Point}}**: _Direct connection_ between two nodes.
+  - **{{Dedicated Connection}}**: Communication channel _reserved for specific
+    users_.
+  - **{{Leased Lines}}**: _Rented dedicated circuit_ between two points (T1/E1).
+- **{{Bus Topology}}**: Single _cable backbone_ connecting all network devices
+  sequentially.
+- **{{Ring Topology}}**: Network nodes connected in a _closed loop_.
+- **{{Three-Tier Hierarchical Model}}**: Design separating **Core, Distribution,
+  and Access**.
+  - **{{Core Layer}}**: _High-speed backbone_ of network hierarchy.
+    - **{{Redundancy}}**: _High availability_ through duplicate hardware and
+      paths.
+  - **{{Distribution Layer}}**: Layer _connecting access switches_ to core.
+    - **{{Policy Enforcement}}**: _Applying security, QoS, and routing_ rules.
+  - **{{Access Layer}}**: Network hierarchy tier connecting _end-user devices_.
+    - **{{Power over Ethernet (PoE)}}**: _Delivering power_ via Ethernet
+      cabling.
+- **{{Collapsed Core}}**: Topology _merging core and distribution_ layers.
+  - **{{Simplified Management}}**: _Reducing complexity_ by combining network
+    layers.
+  - **{{Cost Reduction}}**: _Lowering expenses_ by using fewer physical devices.
+- **{{Traffic Flows}}**: _Patterns of data movement_ through a network.
+  - **{{North-South Traffic}}**: Data flow _entering or leaving_ datacenter
+    (Client-to-Server).
+  - **{{East-West Traffic}}**: Data flow _between servers_ in datacenter
+    (Server-to-Server).
+- **{{Network Types}}**: Categorization of networks based on _geographic scale_.
+  - **{{Local Area Network (LAN)}}**: Network within a _limited geographic
+    area_.
+    - **{{Residential Network}}**: SOHO LAN for _home use_ with consumer-grade
+      equipment.
+    - **{{SME Network}}**: LAN for small/medium enterprises with _structured
+      cabling_.
+    - **{{Enterprise LAN}}**: Large-scale LAN with _high-performance equipment_
+      and redundancy.
+    - **{{Datacenter Network}}**: _High-speed network_ connecting servers and
+      storage.
+  - **{{Wide Area Network (WAN)}}**: Network spanning _large geographic
+    distances_.
+  - **{{Personal Area Network (PAN)}}**: _Very short range_ network (Bluetooth).
+  - **{{Metropolitan Area Network (MAN)}}**: Network spanning a _city or
+    campus_.
+    - **{{Campus Area Network (CAN)}}**: Network connecting _multiple buildings_
+      in limited geographic area.
+    - **{{Small Office/Home Office (SOHO)}}**: Small LAN using a _single
+      multifunction appliance_ for connectivity.
+    - **{{Client-Server Network}}**: Network where _dedicated servers_ provide
+      resources to client devices.
+      - **{{Server}}**: Device that _provides resources_ or services to other
+        hosts.
+      - **{{Client}}**: Device that _requests and consumes_ resources from
+        servers.
+    - **{{Peer-to-Peer Network (P2P)}}**: Network where hosts act as both
+      _clients and servers_ sharing resources.
+    - **{{Intranet}}**: _Private network_ accessible only to organization's
+      internal users.
+    - **{{Extranet}}**: Intranet allowing _controlled access_ to external
+      business partners.
+    - **{{Darknet}}**: _Overlay network_ accessible only with specific software.
+  - **{{WAN Techologies}}**
+  - **{{Multiprotocol Label Switching (MPLS)}}**: _Label-based routing_ for
+    faster, efficient network traffic flow.
+  - **{{Metro Ethernet (Metro-E)}}**: High-speed Ethernet _extension across a
+    metropolitan area_.
+  - **{{Leased Line (T1/E1)}}**: _Dedicated point-to-point_ connection with
+    guaranteed bandwidth.
+  - **{{Digital Subscriber Line (DSL)/Cable}}**: _Internet access_ via telephone
+    lines or coaxial cables.
+
+### 1.7 Given a scenario, use appropriate IPv4 network addressing.
+
+- **{{Public vs. Private}}**: _Globally routable_ versus internal-only IP
+  addresses.
+
+  - **{{Public Addresses}}**: _Globally unique_ addresses assigned by **IANA**.
+
+    - **{{Globally Unique}}**: IP addresses that are _distinctive across the
+      internet_.
+
+  - **{{Private Addresses (RFC 1918)}}**: _Non-routable_ addresses reserved for
+    internal networks.
+
+    - **{{Non-Routable}}**: Traffic _not forwarded_ by public internet routers.
+
+    - **{{Network Address Translation (NAT)}}**: Mechanism _mapping private IPs_
+      to public IPs.
+
+  - **{{Automatic Private IP Addressing (APIPA)}}**: _Self-assigned fallback IP_
+    when DHCP fails.
+
+    - **{{Self-Assignment}}**: _Automatic IP configuration_ without a DHCP
+      server.
+
+    - **{{Link-Local}}**: Communication _limited to the local network_ segment.
+
+  - **{{Loopback}}**: IP _directing traffic_ to the local host.
+
+  - **{{Localhost (127.0.0.1)}}**: Standard _hostname referring_ to the local
+    computer.
+
+- **{{Subnetting}}**: _Dividing a network_ into smaller logical segments.
+
+  - **{{Broadcast Control}}**: _Limiting unnecessary_ network traffic to
+    specific subnets.
+
+  - **{{Network vs Host Portion}}**: _Dividing bits_ between network ID and
+    device ID.
+
+  - **{{Variable Length Subnet Mask (VLSM)}}**: Subnetting using _different mask
+    lengths_ efficiently.
+
+    - **{{Arbitrary Length}}**: Masks using _non-standard bit lengths_ (0-32).
+
+  - **{{Classless Inter-Domain Routing (CIDR)}}**: _Flexible IP addressing_
+    using prefix notation.
+
+    - **{{Prefix Notation (CIDR)}}**: _Representing subnet masks_ using
+      bit-count (/XX).
+
+    | CIDR | Subnet Mask | Total IPs |
+
+    | ---- | --------------- | ---------- |
+
+    | /32 | 255.255.255.255 | 1 |
+
+    | /31 | 255.255.255.254 | 2 |
+
+    | /30 | 255.255.255.252 | 4 |
+
+    | /29 | 255.255.255.248 | 8 |
+
+    | /28 | 255.255.255.240 | 16 |
+
+    | /27 | 255.255.255.224 | 32 |
+
+    | /26 | 255.255.255.192 | 64 |
+
+    | /25 | 255.255.255.128 | 128 |
+
+    | /24 | 255.255.255.0 | 256 |
+
+    | /23 | 255.255.254.0 | 512 |
+
+    | /22 | 255.255.252.0 | 1,024 |
+
+    | /21 | 255.255.248.0 | 2,048 |
+
+    | /20 | 255.255.240.0 | 4,096 |
+
+    | /19 | 255.255.224.0 | 8,192 |
+
+    | /18 | 255.255.192.0 | 16,384 |
+
+    | /17 | 255.255.128.0 | 32,768 |
+
+    | /16 | 255.255.0.0 | 65,536 |
+
+    | /15 | 255.254.0.0 | 131,072 |
+
+    | /14 | 255.252.0.0 | 262,144 |
+
+    | /13 | 255.248.0.0 | 524,288 |
+
+    | /12 | 255.240.0.0 | 1,048,576 |
+
+    | /11 | 255.224.0.0 | 2,097,152 |
+
+    | /10 | 255.192.0.0 | 4,194,304 |
+
+    | /9 | 255.128.0.0 | 8,388,608 |
+
+    | /8 | 255.0.0.0 | 16,777,216 |
+
+  - **Decimal to Binary**
+
+    | Subnet Mask (Decimal) | Subnet Mask (Binary) | Wildcard (Decimal) |
+    Wildcard (Binary) |
+
+    | --------------------- | -------------------- | ------------------ |
+    ----------------- |
+
+    | 255 | 1111 1111 | 0 | 0000 0000 |
+
+    | 254 | 1111 1110 | 1 | 0000 0001 |
+
+    | 252 | 1111 1100 | 3 | 0000 0011 |
+
+    | 248 | 1111 1000 | 7 | 0000 0111 |
+
+    | 240 | 1111 0000 | 15 | 0000 1111 |
+
+    | 224 | 1110 0000 | 31 | 0001 1111 |
+
+    | 192 | 1100 0000 | 63 | 0011 1111 |
+
+    | 128 | 1000 0000 | 127 | 0111 1111 |
+
+    | 0 | 0000 0000 | 255 | 1111 1111 |
+
+- **{{IPv4 Address Classes}}**: _Hierarchical system_ for IP address allocation.
+
+  - **{{Default Masks}}**: Standard _subnet masks assigned_ to each class.
+
+  - **{{Host Capacity}}**: _Maximum number of devices_ supported per subnet.
+
+  - **{{Class A}}**: _Large networks_ (1.0.0.0 - 126.255.255.255) /8.
+
+  - **{{Class B}}**: _Medium networks_ (128.0.0.0 - 191.255.255.255) /16.
+
+  - **{{Class C}}**: _Small networks_ (192.0.0.0 - 223.255.255.255) /24.
+
+  - **{{Class D}}**: _Reserved for Multicast_ traffic (224.0.0.0 -
+    239.255.255.255).
+
+  - **{{Class E}}**: _Reserved for Experimental_ use (240.0.0.0 -
+    255.255.255.255).
+
+### 1.8 Summarize evolving use cases for modern network environments.
+
+- **{{Software-Defined Network (SDN)}}** and **{{Software-Defined Wide Area
+  Network (SD-WAN)}}**
+  - **{{Software-Defined Network (SDN)}}**: _Centralized software control_ of
+    network hardware.
+    - **{{Decoupling}}**: Separating _control plane from forwarding_ data plane.
+  - **{{Software-Defined Wide Area Network (SD-WAN)}}**: _Software-based
+    management_ of WAN connections.
+    - **{{Application-Aware}}**: Prioritizing traffic based on _specific
+      application type_.
+    - **{{Zero-Touch Provisioning (ZTP)}}**: _Automated device configuration_
+      upon network connection.
+    - **{{Transport Agnostic}}**: Operating across _any underlying_
+      communication medium.
+    - **{{Central Policy Management}}**: _Unified control_ of network rules from
+      one interface.
+- **{{Virtual Extensible LAN (VXLAN)}}**: Tunneling protocol _extending VLANs
+  over Layer 3_.
+  - **{{Data Center Interconnect (DCI)}}**: _Stretching Layer 2 segments_ across
+    dispersed datacenters.
+  - **{{Layer 2 Encapsulation}}**: _Wrapping Ethernet frames_ within UDP
+    packets.
+- **{{Overlay Network}}**: _Virtual network built_ on top of physical network.
+- **{{Zero Trust Architecture (ZTA)}}**: Security model _verifying every access
+  request_.
+  - **{{Policy-based Authentication}}**: Access granted via _strict identity and
+    context_ verification.
+  - **{{Authorization}}**: _Dynamic, context-aware enforcement_ of resource
+    access rights.
+  - **{{Least Privilege Access}}**: Granting _minimum permissions necessary_ for
+    specific tasks.
+- **{{Secure Access Service Edge (SASE)}}** / **{{Security Service Edge
+  (SSE)}}**
+  - **{{Secure Access Service Edge (SASE)}}**: _Converging WAN and security_
+    into cloud services.
+  - **{{Security Service Edge (SSE)}}**: _Security-only subset_ of the SASE
+    architecture.
+- **{{Infrastructure as Code (IaC)}}**: Managing infrastructure via
+  _machine-readable definition files_.
+  - **{{Automation}}**: _Scripting infrastructure tasks_ to reduce human error.
+    - **{{Playbooks}}**: _Automated scripts_ for orchestrating configuration
+      tasks.
+    - **{{Templates}}**: _Standardized files_ for consistent device deployment.
+    - **{{Configuration Drift}}**: Detecting _deviations from the intended_
+      baseline state.
+    - **{{Dynamic Inventories}}**: _Real-time discovery_ and management of
+      network resources.
+  - **{{Source Control}}**: System for _tracking and managing_ code changes.
+    - **{{Version Control}}**: _Tracking every modification_ to the
+      infrastructure code.
+    - **{{Branching}}**: Developing features _independently in parallel_ code
+      lines.
+- **{{IPv6 Addressing}}**: _128-bit addressing system_ replacing IPv4.
+  - **{{Mitigating Address Exhaustion}}**: Solving _limited IP supply_ with
+    massive space.
+  - **{{Compatibility Requirements}}**: _Bridging communications_ between IPv4
+    and IPv6.
+    - **{{Tunneling}}**: _Encapsulating IPv6 packets_ inside IPv4 packets.
+    - **{{Dual Stack}}**: Running _IPv4 and IPv6 protocols_ simultaneously.
+    - **{{NAT64}}**: _Translating traffic_ between IPv6 and IPv4 devices.
+
+## 2.0 Network Implementation 20%
+
+Goal of Domain 2:
+
+- This domain covers the actual deployment and configuration of networking
+  devices and technologies including routing, switching, wireless, and physical
+  installations.
+- It emphasizes practical implementation skills and is foundational for most
+  real-world IT tasks.
+
+Things You Must Memorize:
+
+- Differences between RIP, OSPF, BGP, EIGRP
+- VLAN and trunk configurations
+- 802.11 standards and wireless security types
+- DHCP relay and DNS record types
+- Topology definitions and diagrams
+
+### 2.1 Explain characteristics of routing technologies.
+
+**{{Static Routing}}**: _Manually configured_ routing entries by an
+administrator.
+
+- **Use Cases**: Small networks, stub networks, stable environments.
+
+- **Benefits**: Simplicity, _low overhead_, predictability, security.
+
+- **Drawbacks**: _No auto-failover_, poor scalability, high maintenance.
+
+**{{Dynamic Routing}}**: Routers _automatically exchanging_ path information.
+
+- **Use Cases**: Large networks, _changing topologies_, internet.
+
+- **Benefits**: Scalability, adaptability, _automatic failover_.
+
+- **Drawbacks**: Complexity, _resource usage_, security risks.
+
+  - **{{Border Gateway Protocol (BGP)}}**: Protocol routing between _internet
+    autonomous systems_.
+
+    - **{{Autonomous Systems (AS)}}**: _Independent networks_ under single
+      administrative control.
+
+  - **{{Enhanced Interior Gateway Routing Protocol (EIGRP)}}**: _Advanced
+    distance-vector_ protocol using multiple metrics.
+
+    - **{{Rapid Convergence}}**: _Speed_ at which routers agree on topology.
+
+  - **{{Open Shortest Path First (OSPF)}}**: _Link-state routing_ protocol using
+    Dijkstra algorithm.
+
+    - **{{Area}}**: _Logical grouping_ of routers to optimize routing.
+
+**{{Route Selection}}**: Process of _determining the best_ network path.
+
+- **{{Administrative Distance (AD)}}**: Metric ranking _trustworthiness_ of
+  routing sources.
+
+- **{{Prefix Length}}**: Number of bits _identifying the network_ portion.
+
+- **{{Metric}}**: Value used to _evaluate cost_ of path.
+
+**{{Address Translation}}**: _Mapping one IP address space_ into another.
+
+- **{{Network Address Translation (NAT)}}**: _Remapping private IP_ space to
+  public IP.
+
+- **{{Port Address Translation (PAT)}}**: _Many-to-one mapping_ using unique
+  port numbers.
+
+**{{First Hop Redundancy Protocol (FHRP)}}**: Provides _failover_ for default
+gateways.
+
+- **{{Virtual IP (VIP)}}**: _Shared IP address_ for cluster failover.
+
+- **{{Virtual Router Redundancy Protocol (VRRP)}}**: _Open standard_ for default
+  gateway redundancy.
+
+**{{Subinterfaces}}**: _Logical interfaces_ created on a single physical
+interface.
+
+- **{{Traffic Segregation}}**: _Isolating data flows_ for security or
+  management.
+
+**{{Routing Information Protocol (RIP)}}**: _Distance-vector_ routing protocol
+using hop count.
+
+### 2.2 Given a scenario, configure switching technologies and features
+
+**{{Virtual Local Area Network (VLAN)}}**: _Logical network segment_ on physical
+switch.
+
+- **{{Broadcast Domain Isolation}}**: _Segmenting network_ to limit broadcast
+  traffic spread.
+
+- **{{VLAN Database}}**: Storage file containing _VLAN configuration
+  information_.
+
+  - **{{VLAN ID}}**: _Numerical identifier_ for specific virtual networks.
+
+- **{{Switch Virtual Interface (SVI)}}**: _Logical Layer 3_ interface on a
+  switch.
+
+  - **{{Layer 3 Processing}}**: _Enabling routing_ between different virtual
+    networks.
+
+**{{Interface Configuration}}**: _Settings applied_ to individual physical or
+logical ports.
+
+- **{{Native VLAN}}**: _Default VLAN_ carrying untagged traffic on trunks.
+
+  - **{{Untagged Traffic}}**: Frames _lacking 802.1Q_ VLAN identifier tags.
+
+- **{{Voice VLAN}}**: VLAN _prioritized for real-time_ voice traffic.
+
+  - **{{VoIP Prioritization}}**: _Ensuring QoS_ for critical voice
+    communications.
+
+- **{{802.1Q Tagging (DOT1Q)}}**: Protocol _inserting VLAN identifiers_ into
+  frames.
+
+  - **{{Frame Tagging}}**: _Marking Ethernet frames_ with specific VLAN IDs.
+
+- **{{Link Aggregation (LAG)}}**: _Combining physical ports_ into one logical
+  link.
+
+  - **{{Fault Tolerance}}**: System _remains operational_ during link failure.
+
+  - **{{Increased Throughput}}**: _Aggregating bandwidth_ from multiple physical
+    connections.
+
+  - **{{Link Aggregation Control Protocol (LACP)}}**: _Dynamic negotiation_
+    protocol for bundling ports.
+
+- **{{Speed}}**: _Data transfer rate_ setting for interface.
+
+- **{{Duplex}}**: _Communication mode_ setting (Half or Full).
+
+  - **{{Full-Duplex}}**: _Simultaneous two-way_ communication without
+    collisions.
+
+**{{Spanning Tree Protocol (STP)}}**: Protocol _preventing Layer 2_ network
+loops.
+
+- **{{Loop Prevention}}**: _Blocking redundant paths_ to avoid broadcast storms.
+
+- **{{Rapid Spanning Tree Protocol (RSTP)}}**: _Faster convergence_ version of
+  Spanning Tree.
+
+**{{Maximum Transmission Unit (MTU)}}**: _Largest data packet_ size supported by
+interface.
+
+- **{{Fragmentation}}**: _Breaking packets_ to fit smaller MTU sizes.
+
+- **{{Jumbo Frames}}**: Ethernet frames _exceeding standard 1500 byte_ size.
+
+  - **{{Overhead Reduction}}**: _Increasing efficiency_ by sending more data
+    per-header.
+
+**{{Inter-VLAN Routing}}**: _Enabling traffic flow_ between different VLANs.
+
+**{{Power over Ethernet (PoE)}}**: Delivers _electrical power_ via Ethernet
+cabling.
+
+- **{{802.3af (PoE)}}**: Standard providing up to **15.4 watts**.
+
+- **{{802.3at (PoE+)}}**: Standard providing up to **25.5 watts**.
+
+- **{{802.3bt (PoE++)}}**: Standard providing up to **90 watts**.
+
+**{{Switch Stacking}}**: _Managing multiple physical_ switches as one logical
+unit.
+
+### 2.3 Given a scenario, select and configure wireless devices and technologies
+
+**{{Wireless Standards}}**: _Specifications defining_ Wi-Fi speed and frequency.
+
+- **{{802.11a}}**: 54 Mbps on **5 GHz band** (Legacy).
+
+- **{{802.11b}}**: 11 Mbps on **2.4 GHz band** (Legacy).
+
+- **{{802.11g}}**: 54 Mbps on **2.4 GHz band** (Legacy).
+
+- **{{802.11n (Wi-Fi 4)}}**: 600 Mbps on **2.4/5 GHz** (MIMO).
+
+  - **{{Multiple-Input Multiple-Output (MIMO)}}**: Using _multiple antennas_ to
+    increase throughput.
+
+- **{{802.11ac (Wi-Fi 5)}}**: 1 Gbps+ on **5 GHz** (MU-MIMO).
+
+  - **{{Multi-User MIMO (MU-MIMO)}}**: Supporting _simultaneous transmission_ to
+    multiple clients.
+
+- **{{802.11ax (Wi-Fi 6)}}**: 10 Gbps on **2.4/5/6 GHz** (OFDMA).
+
+  - **{{Orthogonal Frequency-Division Multiple Access (OFDMA)}}**: Dividing
+    channels into _sub-carriers_ for efficiency.
+
+**{{Channels}}**: Specific _frequency ranges_ for wireless communication.
+
+- **{{Channel Width}}**: _Frequency span_ used for data transmission (MHz).
+
+- **{{Non-Overlapping Channels}}**: _Adjacent channels_ that do not interfere
+  (1,6,11).
+
+- **{{Regulatory Impacts}}**: _Legal restrictions_ on wireless frequency and
+  power.
+
+- **{{802.11h}}**: Standard for _dynamic frequency selection_ and power.
+
+  - **{{Dynamic Frequency Selection (DFS)}}**: Automatically _switching
+    channels_ to avoid radar interference.
+
+**{{Frequency Options}}**: _Radio bands_ available for wireless data
+transmission.
+
+- **{{2.4GHz}}**: _Low-frequency_ band with high penetration and range.
+
+- **{{5GHz}}**: _High-frequency_ band with high speed and capacity.
+
+- **{{6GHz}}**: _Ultra-high_ frequency band for Wi-Fi 6E devices.
+
+- **{{Band Steering}}**: _Directing dual-band clients_ to optimal frequency
+  bands.
+
+**{{Service Set Identifier (SSID)}}**: _Name identifying_ a wireless network.
+
+- **{{Basic Service Set Identifier (BSSID)}}**: Unique _MAC address identifying_
+  a specific radio.
+
+- **{{Extended Service Set Identifier (ESSID)}}**: Shared _network name across_
+  multiple access points.
+
+**{{Network Types}}**: Different _configurations_ for wireless network
+connectivity.
+
+- **{{Mesh Networks}}**: _Decentralized nodes_ providing self-healing redundant
+  pathways.
+
+- **{{Ad Hoc}}**: _Peer-to-peer_ connection without central infrastructure
+  (IBSS).
+
+- **{{Point-to-Point}}**: _Direct wireless link_ between two specific locations.
+
+- **{{Infrastructure}}**: Network _managed by_ central access points (BSS).
+
+**{{Encryption}}**: _Scrambling_ wireless data to ensure privacy.
+
+- **{{Wi-Fi Protected Access 2 (WPA2)}}**: _Security standard_ using
+  **AES-CCMP** for strong encryption.
+
+- **{{Wi-Fi Protected Access 3 (WPA3)}}**: _Latest security_ using **SAE** for
+  individualized encryption.
+
+- **{{Wi-Fi Protected Access (WPA)}}**: _Legacy security_ replacing vulnerable
+  WEP standard.
+
+- **{{Wi-Fi Protected Setup (WPS)}}**: Simplified but _insecure_ device
+  connection method.
+
+**{{Guest Networks}}**: _Isolated wireless segments_ for temporary users.
+
+- **{{Captive Portal}}**: _Webpage requiring interaction_ before granting
+  network access.
+
+**{{Authentication}}**: _Verifying identity_ of wireless clients before access.
+
+- **{{Pre-Shared Key (PSK)}}**: _Shared passphrase_ used by all network users.
+
+- **{{Enterprise (802.1X)}}**: _Centralized authentication_ using individual
+  user credentials.
+
+  - **{{RADIUS}}**: Server managing _centralized authentication_ and
+    authorization.
+
+**{{Antennas}}**: Devices for _transmitting and receiving_ radio waves.
+
+- **{{Omnidirectional Antenna}}**: Radiating radio signals in _all directions
+  equally_.
+
+- **{{Directional Antenna}}**: Focusing radio signals in a _specific direction_.
+
+**{{Autonomous vs. Lightweight Access Point}}**: _Standalone_ management versus
+_controller-based_ management.
+
+- **{{Autonomous}}**: _Standalone access point_ managing all local functions.
+
+- **{{Lightweight Access Point}}**: _Controller-managed device_ offloading logic
+  to WLC.
+
+- **{{Wireless LAN Controller (WLC)}}**: _Centralized appliance_ managing
+  multiple lightweight access points.
+
+- **{{Control and Provisioning of Wireless Access Points (CAPWAP)}}**: _Protocol
+  for communication_ between APs and controllers.
+
+### 2.4 Explain important factors of physical installations
+
+**{{Important Installation Implications}}**: _Physical considerations_ for
+deploying network equipment.
+
+- **{{Locations}}**: Physical sites where network hardware is installed.
+
+  - **{{Intermediate Distribution Frame (IDF)}}**: _Secondary rack_ connecting
+    end devices to MDF.
+
+  - **{{Main Distribution Frame (MDF)}}**: _Primary central hub_ for incoming
+    service lines.
+
+- **{{Rack Size}}**: Standardized width and height units (**U**).
+
+- **{{Port-Side Exhaust/Intake}}**: _Airflow management_ strategy to prevent
+  equipment overheating.
+
+- **{{Cabling}}**: _Physical wiring_ used to interconnect network devices.
+
+  - **{{Patch Panel}}**: Hardware for _organizing and reconfiguring_ copper
+    cables.
+
+  - **{{Fiber Distribution Panel}}**: Specialized enclosure for
+    _terminating/routing_ fiber optic cables.
+
+- **{{Lockable}}**: _Physical security_ feature preventing unauthorized
+  equipment access.
+
+**{{Power}}**: _Electrical requirements_ for operating network infrastructure.
+
+- **{{Uninterruptible Power Supply (UPS)}}**: _Battery backup_ providing
+  near-instantaneous emergency power.
+
+- **{{Power Distribution Unit (PDU)}}**: Device _distributing electric power_ to
+  rack equipment.
+
+- **{{Power Load}}**: _Total electrical demand_ of all connected devices.
+
+- **{{Voltage}}**: _Potential difference_ required for device electrical
+  compatibility.
+
+**{{Environment Factors}}**: _Physical conditions_ affecting network equipment
+performance.
+
+- **{{Humidity}}**: _Moisture level management_ to prevent corrosion/static
+  buildup.
+
+- **{{Fire Suppression}}**: _Non-damaging systems_ (gas/clean agent) for
+  extinguishing fires.
+
+- **{{Temperature}}**: _Level of heat_ maintained to avoid malfunctions.
+
+## 3.0 Network Operations 19%
+
+Goal of Domain 3:
+
+- This domain covers the management, documentation, monitoring, and resilience
+  of networks.
+- It focuses on the daily processes that keep the network functional, secure,
+  and recoverable.
+
+Things You Must Memorize:
+
+- SNMP vs Syslog vs NetFlow vs SIEM
+- RPO vs RTO vs MTTR
+- VPN protocols and remote access tools
+- Change management and configuration baselines
+- Disaster recovery site types
+
+### 3.1 Explain the purpose of organizational processes and procedures
+
+**{{Documentation}}**: _Records describing_ network architecture and operational
+policies.
+
+- **{{Physical Diagram}}**: _Visual representation_ of physical connections and
+  locations.
+- **{{Logical Diagram}}**: _Visual representation_ of data flow and
+  architecture.
+- **{{Rack Diagram}}**: _Detailed view_ of equipment mounted in racks.
+- **{{Cable Map}}**: _Tracking_ of physical cable paths and terminations.
+- **{{Network Diagrams}}**: _Visualizing structure_ across different OSI layers.
+  - **{{Layer 1 Diagram}}**: _Mapping physical components_, cabling, and
+    locations.
+  - **{{Layer 2 Diagram}}**: _Illustrating VLANs_, switches, and data link
+    paths.
+  - **{{Layer 3 Diagram}}**: _Detailing IP addresses_, subnets, and routing
+    protocols.
+- **{{Asset Inventory}}**: _Detailed list_ of hardware, software, and licenses.
+  - **{{Hardware Inventory}}**: _Tracking specifications_, locations, and asset
+    conditions.
+  - **{{Software Inventory}}**: _Documenting versions_, configurations, and
+    security patches.
+  - **{{Licensing Management}}**: _Tracking usage rights_, expirations, and
+    compliance.
+  - **{{Warranty Support}}**: _Records_ of service agreements and support
+    claims.
+- **{{IP Address Management (IPAM)}}**: _Software tracking_ IP address
+  allocation network-wide.
+  - **{{Conflict Prevention}}**: _Organizing IP space_ to avoid duplicate
+    assignments.
+- **{{Service-Level Agreement (SLA)}}**: _Contract defining_ expected service
+  performance standards.
+  - **{{Performance Metrics}}**: _Agreed standards_ for uptime, latency, and
+    response.
+- **{{Wireless Survey}}**: _Assessing radio frequency_ coverage and performance.
+  - **{{Wireless Heat Map}}**: _Visualizing signal strength_ and coverage
+    intensity.
+
+**{{Life-Cycle Management}}**: Process of _managing hardware and software
+stages_.
+
+- **{{End-of-Life (EOL)}}**: Point when manufacturer _stops production and
+  sales_.
+- **{{End-of-Support (EOS)}}**: Date when manufacturer _stops providing
+  technical assistance_.
+- **{{Software Management}}**: _Overseeing updates_, versions, and optimization.
+  - **{{Patch Management}}**: _Systematic application_ of bug fixes and
+    vulnerabilities.
+  - **{{Operating System (OS) Management}}**: _Regular maintenance_ of device
+    software environments.
+  - **{{Firmware Management}}**: _Updating low-level code_ controlling hardware
+    functions.
+- **{{Decommissioning}}**: _Safe removal and disposal_ of network assets.
+
+**{{Change Management}}**: _Formal process_ for approving system modifications.
+
+- **{{Service Request}}**: _Logging and analyzing_ requests for configuration
+  changes.
+
+**{{Configuration Management}}**: Maintaining _consistent settings_ across all
+network devices.
+
+- **{{Production Configuration}}**: _Active settings_ used in live operational
+  environment.
+- **{{Backup Configuration}}**: _Stored copy_ of settings for disaster recovery.
+- **{{Baseline/Golden Configuration}}**: _Standardized template_ for consistent
+  device deployment.
+- **{{Version Control}}**: _Tracking and managing_ configuration changes over
+  time.
+
+### 3.2 Given a scenario, use network monitoring technologies
+
+**Methods**: _Techniques used_ to collect network performance data.
+
+- **{{Simple Network Management Protocol (SNMP)}}**: Protocol _monitoring and
+  managing_ network devices.
+  - **{{Trap (SNMP)}}**: _Unsolicited alert message_ sent by managed devices.
+  - **{{Management Information Base (MIB)}}**: _Hierarchical database_ defining
+    properties of managed objects.
+  - **{{SNMP v2c}}**: Version using _plain-text community strings_ for
+    authentication.
+  - **{{SNMP v3}}**: _Secure version_ providing strong encryption and
+    authentication.
+- **{{Flow Data}}**: _Statistics_ on network traffic patterns (**{{NetFlow}}**).
+  - **{{Metadata Analysis}}**: _Examining IP headers_ without capturing full
+    payloads.
+- **{{Packet Capture (PCAP)}}**: _Intercepting and logging_ data for deep
+  inspection.
+- **{{Baseline Metrics}}**: _Historical data_ representing normal network
+  performance levels.
+  - **{{Anomaly Detection}}**: _Triggering warnings_ when traffic deviates from
+    baseline.
+- **{{Log Aggregation}}**: _Consolidating log data_ from multiple network
+  sources.
+  - **{{Syslog Collector}}**: _Server gathering_ log messages from distributed
+    devices.
+  - **{{Security Information and Event Management (SIEM)}}**: _Real-time
+    correlation_ and analysis of security alerts.
+- **{{Application Programming Interface (API)}}**: _Facilitating automated
+  configuration_ and data synchronization.
+- **{{Port Mirroring (SPAN)}}**: _Copying traffic_ to a designated monitoring
+  port.
+
+**Solutions**: _Specific tools or software_ for network monitoring.
+
+- **{{Network Discovery}}**: _Identifying devices_ and mapping the network
+  structure.
+  - **{{Ad Hoc Discovery}}**: _Manual network scanning_ performed on-demand.
+  - **{{Scheduled Discovery}}**: _Automated scans_ occurring at regular
+    intervals.
+- **{{Traffic Analysis}}**: _Examining data flow_ to identify bandwidth
+  bottlenecks.
+- **{{Performance Monitoring}}**: _Tracking response times_ and throughput for
+  health.
+- **{{Availability Monitoring}}**: _Checking uptime status_ of critical network
+  components.
+- **{{Configuration Monitoring}}**: _Detecting setting changes_ to ensure
+  security compliance.
+
+### 3.3 Explain disaster recovery (DR) concepts
+
+**{{DR Metrics}}**: _Measurements used_ to evaluate disaster recovery readiness.
+
+- **{{Recovery Point Objective (RPO)}}**: _Maximum tolerable data loss_
+  following a disaster.
+  - **{{Data Age}}**: _Maximum acceptable age_ of recovered backup files.
+- **{{Recovery Time Objective (RTO)}}**: _Maximum time allowed_ to restore
+  services.
+  - **{{Downtime Limit}}**: _Targeted duration_ to resume business continuity.
+- **{{Mean Time to Repair (MTTR)}}**: _Average time to fix_ a failed device.
+  - **{{Repair Efficiency}}**: _Measure of speed_ returning system to normal.
+- **{{Mean Time Between Failures (MTBF)}}**: _Average time before_ a component
+  fails.
+  - **{{System Reliability}}**: _Calculated lifespan_ of component between
+    failure events.
+
+**{{Backup Types}}**: _Different methods_ for creating data copies.
+
+- **{{Full Backup}}**: _Complete backup_ of all data.
+- **{{Incremental Backup}}**: _Backup of data changed_ since last backup.
+- **{{Differential Backup}}**: _Backup of data changed_ since last full backup.
+- **{{Offsite Backup}}**: _Storing backups_ at a geographically separate
+  location.
+
+**{{DR Sites}}**: _Locations used_ for recovering data and operations.
+
+- **{{Disaster Recovery (DR)}}**: _Procedures for restoring_ systems after
+  failure.
+- **{{Cold Site}}**: _Empty backup facility_ requiring equipment setup.
+  - **{{Infrastructure Only}}**: _Basic power and networking_ without server
+    hardware.
+- **{{Warm Site}}**: _Partially equipped_ backup site, not fully active.
+  - **{{Partial Configuration}}**: _Pre-configured services_ with delayed
+    operational readiness.
+- **{{Hot Site}}**: _Fully operational_ backup site ready immediately.
+  - **{{Mirror Site}}**: _Real-time synchronization_ for immediate failover
+    capability.
+
+**{{High-Availability Approaches}}**: _Strategies for maintaining_ continuous
+network service availability.
+
+- **{{Active-Active}}**: _Redundant systems_ simultaneously handling network
+  traffic.
+  - **{{Load Distribution}}**: _Simultaneous operation_ maximizing throughput
+    and performance.
+- **{{Active-Passive}}**: _Backup system waiting_ until primary system fails.
+  - **{{Standby Mode}}**: _Ready system taking over_ primary roles immediately.
+- **{{Hardware Redundancy}}**: _Duplicate physical components_ preventing single
+  point failure.
+- **{{Link Redundancy}}**: _Multiple network connections_ providing failover
+  paths.
+- **{{Server Clustering}}**: _Group of servers_ working together as single
+  system.
+
+**{{Testing}}**: _Assessing effectiveness_ of disaster recovery and
+availability.
+
+- **{{Tabletop Exercises}}**: _Theoretical drills_ to test disaster response
+  plans.
+  - **{{Scenario Simulation}}**: _Discussion-based decision making_ and gap
+    identification.
+- **{{Validation Tests}}**: _Practical assessments_ confirming recovery
+  procedures work.
+  - **{{Process Execution}}**: _Actual restoration_ to verify recovery
+    objectives.
+
+### 3.4 Given a scenario, implement IPv4 and IPv6 network services
+
+**{{Dynamic Addressing}}**: _Automatic assignment_ of IP addresses to devices.
+
+- **{{Dynamic Host Configuration Protocol (DHCP)}}**: _Automates IP address
+  assignment_ to network clients.
+  - **{{DORA Process}}**: _Discover, Offer, Request, Acknowledge_ sequence for
+    assignment.
+  - **{{Reservations}}**: _Permanently assigning_ specific IP to specific MAC.
+  - **{{Scope}}**: _Defined range_ of IP addresses for distribution.
+  - **{{Lease Time}}**: _Duration_ a client can use assigned IP.
+  - **{{DHCP Options}}**: _Passing additional parameters_ like DNS or NTP.
+  - **{{Relay/IP Helper}}**: _Forwarding DHCP requests_ across different
+    subnets.
+  - **{{Exclusions}}**: _Subsets of scope_ not used for dynamic assignment.
+- **{{Stateless Address Autoconfiguration (SLAAC)}}**: _IPv6 hosts generating_
+  own addresses automatically.
+  - **{{Neighbor Discovery (ND)}}**: _IPv6 mechanism_ for finding local network
+    information.
+
+**{{Name Resolution}}**: _Process of translating_ hostnames into IP addresses.
+
+- **{{Domain Name System (DNS)}}**: _Resolves domain names_ to IP addresses.
+  - **{{DNSSEC}}**: _Digital signatures_ verifying DNS data authenticity.
+  - **{{DNS over HTTPS (DoH)}}**: _Encrypting DNS queries_ via HTTPS protocol.
+  - **{{DNS over TLS (DoT)}}**: _Encrypting DNS queries_ via TLS protocol.
+  - **{{Record Types}}**: _Different categories_ of entries within DNS
+    databases.
+    - **{{Address Record (A)}}**: _Maps domain name_ to IPv4 address.
+    - **{{IPv6 Address Record (AAAA)}}**: _Maps domain name_ to IPv6 address.
+    - **{{Canonical Name (CNAME)}}**: _Alias mapping_ one hostname to another.
+    - **{{Mail Exchange (MX)}}**: _Specifies mail servers_ for a domain.
+    - **{{Text Record (TXT)}}**: _Holds arbitrary text_ for external sources.
+    - **{{Name Server (NS)}}**: _Identifies authoritative_ DNS servers for
+      domain.
+    - **{{Pointer Record (PTR)}}**: _Maps IP address_ to domain name.
+  - **{{Zone Types}}**: _Classifications_ of DNS database segments.
+    - **{{Forward Zone}}**: _Resolving domain names_ to IP addresses.
+    - **{{Reverse Zone}}**: _Mapping IP addresses_ back to hostnames.
+    - **{{Primary Zone}}**: _Main read-write version_ of a zone file.
+    - **{{Secondary Zone}}**: _Read-only copy_ used for backup/redundancy.
+  - **{{Authoritative}}**: _Master source_ containing the original DNS records.
+  - **{{Recursive Query}}**: _Server retrieving_ full answers from other
+    servers.
+- **{{Hosts File}}**: _Local text file_ for manual DNS override.
+
+**{{Time Protocols}}**: _Standards for synchronizing_ clocks across network
+devices.
+
+- **{{Network Time Protocol (NTP)}}**: _Synchronizes clocks_ via hierarchical
+  strata system.
+  - **{{Hierarchical Strata}}**: _Levels of distance_ from reference clock
+    source.
+- **{{Precision Time Protocol (PTP)}}**: _Nanosecond-level_ clock
+  synchronization for local networks.
+- **{{Network Time Security (NTS)}}**: _Encryption and authentication_ extension
+  for NTP.
+
+**{{Start of Authority (SOA)}}**: DNS record _identifying zone's authoritative_
+source.
+
+### 3.5 Compare and contrast network access and management methods
+
+**{{Site-to-Site VPN}}**: _Connecting two entire networks_ securely.
+
+- **{{Network Interconnection}}**: _Linking geographically dispersed_ offices
+  over public internet.
+
+- **{{Virtual Private Network (VPN)}}**: _Encrypted tunnel_ over a public
+  network.
+
+**{{Client-to-Site VPN}}**: _Remote user connecting_ securely to corporate
+network.
+
+- **{{Remote Access}}**: _Individual users accessing_ internal resources via
+  internet.
+
+- **{{Clientless VPN}}**: _Secure resource access_ through a web browser.
+
+- **{{Split Tunnel}}**: _Routing only corporate_ traffic through VPN tunnel.
+
+  - **{{Path Efficiency}}**: _Local internet traffic bypasses_ the VPN gateway.
+
+- **{{Full Tunnel}}**: _Routing all user traffic_ through VPN gateway.
+
+  - **{{Complete Encryption}}**: _Ensuring all user traffic_ is secured
+    centrally.
+
+**{{Connection Methods}}**: _Techniques used_ to access and manage devices.
+
+- **{{Secure Shell (SSH)}}**: _Encrypted remote login_ replacing insecure Telnet
+  protocol.
+
+  - **{{Remote Management}}**: _Administrating network devices_ from a distance
+    securely.
+
+- **{{Graphical User Interface (GUI)}}**: _Visual dashboard_ for simplified
+  device configuration.
+
+- **{{Application Programming Interface (API)}}**: _Programmable interaction_
+  for network automation and integration.
+
+- **{{Console Connection}}**: _Direct physical access_ for initial device setup.
+
+**{{Jump Box/Host}}**: _Hardened intermediary_ for accessing sensitive zones.
+
+- **{{Security Gateway}}**: _Stepping stone_ between different network trust
+  levels.
+
+**{{In-Band vs. Out-of-Band Management}}**: _Managing via primary_ network or
+separate path.
+
+- **{{In-Band Management}}**: _Administering devices_ through the production
+  data path.
+
+- **{{Out-of-Band Management (OOB)}}**: _Dedicated management path_ independent
+  of data network.
+
+  - **{{Outage Resilience}}**: _Ensuring device access_ during primary network
+    failure.
+
+## 4.0 Network Security 14%
+
+Goal of Domain 4:
+
+- This domain focuses on identifying, preventing, and responding to security
+  threats across networks.
+- It covers foundational concepts, real-world threats, and best practices to
+  harden devices and control access.
+
+Things You Must Memorize:
+
+- Definitions of CIA, AAA, and Zero Trust
+- Malware and attack types (phishing, DoS, ARP spoofing)
+- NAC technologies (802.1X, port security)
+- Secure network protocols and their ports
+- Authentication servers: RADIUS vs TACACS+
+
+### 4.1 Explain the importance of basic network security concepts
+
+**{{Logical Security}}**: _Software and procedural measures_ protecting digital
+assets.
+
+- **{{Encryption}}**: _Scrambling data_ to prevent unauthorized access.
+
+  - **{{Data in Transit}}**: Protecting data as it _travels across networks_.
+
+    - **{{Interception Protection}}**: _Preventing eavesdropping_ on active
+      network communications.
+
+  - **{{Data at Rest}}**: Protecting data _stored on physical storage_ media.
+
+    - **{{Theft Protection}}**: _Securing stored data_ against unauthorized
+      physical retrieval.
+
+- **{{Certificates}}**: _Digital documents verifying identity_ of network
+  entities.
+
+  - **{{Public Key Infrastructure (PKI)}}**: Framework _managing digital
+    certificates_ and keys.
+
+    - **{{Trust Framework}}**: _System for issuing and validating_ digital
+      identities.
+
+  - **{{Self-Signed}}**: Certificate _signed by its creator_ rather than CA.
+
+    - **{{Internal Trust}}**: _Establishing identity_ within private, controlled
+      environments.
+
+- **{{Identity and Access Management (IAM)}}**: Framework of _policies and
+  technologies_ managing digital identities.
+
+  - **{{Authentication}}**: _Verification of user identity_ for network access.
+
+    - **{{Multi-Factor Authentication (MFA)}}**: Verification requiring _two or
+      more credential types_.
+
+    - **{{Single Sign-On (SSO)}}**: _Single login granting access_ to multiple
+      systems.
+
+    - **{{RADIUS}}**: _Centralized authentication_ for users connecting to
+      services.
+
+    - **{{LDAP}}**: Protocol for _maintaining distributed directory_ information
+      services.
+
+    - **{{SAML}}**: _XML-based standard_ for exchanging authentication data.
+
+    - **{{TACACS+}}**: Protocol for _AAA services separating core functions_.
+
+    - **{{Time-based Authentication}}**: _Security tokens that change_ at
+      regular intervals.
+
+  - **{{Authorization}}**: Process of _granting specific permissions_ to users.
+
+    - **{{Least Privilege}}**: Granting only _minimum necessary access rights_.
+
+    - **{{Role-Based Access Control (RBAC)}}**: Access rights _based on user job
+      function_.
+
+  - **{{Accounting}}**: _Logging and auditing_ user actions and resource usage.
+
+- **{{Geofencing}}**: Creating _virtual boundaries_ for geographic-based access
+  control.
+
+**{{Physical Security}}**: _Tangible barriers_ protecting hardware and facility
+access.
+
+- **{{Surveillance}}**: _Real-time monitoring_ and recording of physical
+  activities.
+
+- **{{Entrance Control}}**: _Physical mechanisms preventing_ unauthorized
+  facility entry.
+
+**{{Deception Technologies}}**: _Tools luring attackers_ into decoy
+environments.
+
+- **{{Honeypot}}**: _Decoy system luring attackers_ to detect threats.
+
+  - **{{Threat Intelligence}}**: _Gathering data_ on attacker methods and
+    behavior.
+
+- **{{Honeynet}}**: _Network of decoys_ simulating a real environment.
+
+**{{Common Security Terminology}}**: _Standard vocabulary_ describing security
+concepts.
+
+- **{{Risk}}**: _Probability of threat exploiting_ a vulnerability.
+
+- **{{Vulnerability}}**: _Security weakness susceptible_ to being exploited.
+
+- **{{Exploit}}**: _Method or code used_ to abuse vulnerability.
+
+- **{{Threat}}**: _Potential cause_ of an unwanted security incident.
+
+- **{{Mitigation}}**: _Steps taken to reduce_ risk or impact.
+
+- **{{Defense in Depth}}**: _Layered security approach_ using multiple controls.
+
+- **{{Confidentiality, Integrity, and Availability (CIA) Triad}}**: _Core
+  security model_ for protecting information.
+
+**{{Audits and Regulatory Compliance}}**: _Verifying adherence_ to security
+policies and laws.
+
+- **{{Data Locality}}**: Requirement for _data to stay in region_.
+
+- **{{Payment Card Industry Data Security Standard (PCI DSS)}}**: Standards for
+  _securing credit card transactions_.
+
+- **{{General Data Protection Regulation (GDPR)}}**: _EU regulation protecting_
+  personal data and privacy.
+
+**{{Network Segmentation Enforcement}}**: Using _boundaries to isolate_ network
+traffic segments.
+
+- **{{Internet of Things (IoT)}}** and **{{Industrial Internet of Things
+  (IIoT)}}**: _Networked physical objects_ and industrial equipment.
+
+- **{{SCADA / ICS / OT}}**: Systems _monitoring and controlling_ industrial
+  infrastructure.
+
+- **{{Guest}}**: Isolated network segment for _temporary visitors_.
+
+- **{{Bring Your Own Device (BYOD)}}**: Policy allowing _personal devices_ on
+  corporate networks.
+
+### 4.2 Summarize various types of attacks and their impact to the network
+
+**{{Denial-of-Service (DoS)}}** / **{{Distributed Denial-of-Service (DDoS)}}**
+
+- **{{Denial-of-Service (DoS)}}**: Attack _preventing legitimate access_ to
+  resources.
+
+  - **{{Traffic Overwhelming}}**: Rendering services unavailable via _excessive
+    request volume_.
+
+- **{{Distributed Denial-of-Service (DDoS)}}**: _DoS attack_ from multiple
+  sources simultaneously.
+
+  - **{{Botnet}}**: Network of _compromised computers_ performing coordinated
+    attacks.
+
+**{{VLAN Hopping}}**: Attacking by _moving between different VLANs_ illegally.
+
+- **{{Layer 2 Bypass}}**: _Circumventing network segmentation_ to reach
+  restricted zones.
+
+- **{{Switch Spoofing}}**: Attacker _manipulates switch_ into negotiating a
+  trunk link.
+
+- **{{Double Tagging}}**: Attacker _embeds second VLAN tag_ to bypass security.
+
+**{{Media Access Control (MAC) Flooding}}**: _Overwhelming switch MAC tables_
+with fake addresses.
+
+- **{{Fail-Open Mode}}**: Switch _broadcasts all traffic_ when table capacity
+  exceeded.
+
+**{{Address Resolution Protocol (ARP) Poisoning}}**: _Corrupting ARP cache_ to
+map attacker's MAC.
+
+- **{{MAC-to-IP Linking}}**: _Maliciously associating_ attacker hardware address
+  with legitimate IP.
+
+**{{ARP Spoofing}}**: Sending _fake ARP messages_ to intercept traffic.
+
+**{{DNS Poisoning}}**: Injecting _fake DNS records_ to redirect traffic.
+
+- **{{Cache Corruption}}**: _Corrupting DNS resolver data_ with fraudulent
+  entries.
+
+**{{DNS Spoofing}}**: _Redirecting users_ to malicious sites via DNS.
+
+**{{Rogue Devices and Services}}**: _Unauthorized hardware or software_ on a
+network.
+
+- **{{Rogue Devices}}**: _Unauthorized hardware_ connected to a secure network.
+
+- **{{Services}}**: _Unauthorized software-based functions_ running on a
+  network.
+
+- **{{Rogue DHCP}}**: _Unauthorized server_ distributing incorrect IP
+  configurations.
+
+- **{{Access Point (AP)}}**: Hardware device providing _wireless network
+  connectivity_.
+
+  - **{{Rogue Access Point}}**: _Unauthorized wireless access point_ on a
+    network.
+
+**{{Evil Twin}}**: _Fake access point mimicking_ a legitimate one.
+
+- **{{SSID Masquerading}}**: _Deceiving users_ via identical wireless network
+  names.
+
+**{{Man-in-the-Middle (MitM)}}**: Attacker _secretly intercepts and relays_
+communication.
+
+**{{On-Path Attack}}**: _Intercepting communication_ between two legitimate
+network nodes.
+
+- **{{Eavesdropping}}**: _Secretly monitoring_ private data exchange between
+  parties.
+
+**{{Social Engineering}}**: _Manipulating people_ into divulging confidential
+information.
+
+- **{{Human Manipulation}}**: Exploiting _psychology rather than technical
+  hacking_ methods.
+
+- **{{Phishing}}**: _Fraudulent emails_ tricking users into revealing info.
+
+- **{{Spear Phishing}}**: _Targeted phishing attack_ against specific
+  individual/group.
+
+- **{{Whaling}}**: Targeted phishing attack against _high-level executives_.
+
+- **{{Vishing}}**: _Voice phishing_ attacks conducted over phone.
+
+- **{{Smishing}}**: Phishing attacks conducted via _SMS text messages_.
+
+- **{{Pretexting}}**: _Fabricating a scenario_ to steal information.
+
+- **{{Dumpster Diving}}**: _Searching through trash_ for sensitive information.
+
+- **{{Shoulder Surfing}}**: _Watching someone enter_ passwords or sensitive
+  data.
+
+- **{{Tailgating}}**: _Following authorized personnel_ into restricted physical
+  areas.
+
+**{{Malware}}**: _Malicious software_ designed to harm systems or data.
+
+- **{{Virus}}**: _Malicious code requiring host_ file to spread.
+
+- **{{Worm}}**: _Self-replicates, spreads_ across networks without host.
+
+- **{{Trojan}}**: Malicious software _masquerading as legitimate_ application.
+
+- **{{Ransomware}}**: _Encrypts files, demands payment_ for decryption.
+
+- **{{Spyware}}**: Software _secretly recording_ user activity and data.
+
+- **{{Adware}}**: Software _automatically displaying_ unwanted advertisements.
+
+- **{{Keylogger}}**: Software _recording every keystroke_ made by user.
+
+- **{{Rootkit}}**: Malware _granting administrative control_ while hiding
+  presence.
+
+### 4.3 Given a scenario, apply network security features, defense techniques, and solutions
+
+**{{Device Hardening}}**: _Securing a system_ by reducing attack surface.
+
+- **{{Attack Surface Reduction}}**: _Minimizing vulnerability_ by disabling
+  unnecessary functions.
+
+- **{{Disable Unused Ports and Services}}**: _Closing entry points_ to minimize
+  security risks.
+
+- **{{Change Default Passwords}}**: Replacing _factory-set credentials_ with
+  secure ones.
+
+**{{Network Access Control (NAC)}}**: _Controlling device admission_ to the
+network.
+
+- **{{Port-based Network Access Control (PNAC)}}**: _Authenticating devices_ at
+  the point of connection.
+
+- **{{Port Security}}**: _Limiting network port access_ by MAC address.
+
+  - **{{MAC Limiting}}**: _Restricting number of devices_ per physical port.
+
+- **{{802.1X}}**: IEEE standard for _port-based network authentication_.
+
+- **{{MAC Filtering}}**: _Allowing or denying_ network access by MAC.
+
+**{{Key Management}}**: _Secure handling and storage_ of cryptographic keys.
+
+- **{{Key Lifecycle}}**: Managing _creation, distribution, rotation_, and
+  revocation.
+
+**{{Security Rules}}**: _Definitions controlling traffic_ flow through security
+devices.
+
+- **{{Access Control List (ACL)}}**: Rules determining _access rights_ to
+  network resources.
+
+  - **{{Traffic Filtering}}**: _Allowing or denying packets_ via
+    IP/Port/Protocol rules.
+
+- **{{Uniform Resource Locator (URL) Filtering}}**: _Restricting website access_
+  based on web addresses.
+
+- **{{Content Filtering}}**: _Blocking access_ to specific types of data.
+
+- **{{Unified Threat Management (UTM)}}**: _All-in-one security appliance_ for
+  network protection.
+
+**{{Firewall Types}}**: Hardware or software _monitoring and controlling_
+network traffic.
+
+- **{{Packet Filtering Firewall}}**: Filters traffic based on _IP headers and
+  ports_.
+
+- **{{Stateful Firewall}}**: _Tracks active connections_ to make filtering
+  decisions.
+
+- **{{Next-Generation Firewall (NGFW)}}**: _Deep packet inspection_ and
+  application-level control.
+
+- **{{Host-based Firewall}}**: _Software firewall_ running on a single device.
+
+**{{Zones}}**: _Logical network areas_ with distinct security requirements.
+
+- **{{Trust Segmentation}}**: _Isolating resources_ based on varying trust
+  levels.
+
+- **{{Trusted vs. Untrusted}}**: _Internal secure network_ versus external
+  insecure network.
+
+- **{{Screened Subnet (DMZ)}}**: _Buffer zone hosting_ public-facing services
+  securely.
+
+  - **{{Perimeter Defense}}**: _Isolating public services_ from the internal
+    network.
+
+## 5.0 Network Troubleshooting 24%
+
+Goal of Domain 5:
+
+- This domain covers how to approach, diagnose, and resolve a wide variety of
+  network issues using structured methodologies and tools. It represents the
+  largest percentage of the exam and is vital for real-world technical
+  troubleshooting.
+
+Things You Must Memorize:
+
+- The 6-step troubleshooting process
+- Common errors: CRC, colisions, flapping, duplex mismatch
+- DHCP/DNS/NAT failure symptoms and fixes
+- Wireless performance problems (interference, signal loss)
+- CLI tools and when to use them: ping, tracert, ipconfig, netstat, nslookup
+
+### 5.1 Explain the troubleshooting methodology
+
+1. **{{Identify the Problem}}**: _Gather information_, symptoms, and recent
+   changes.
+
+- **{{Gather Information}}**: _Collecting issue details_ from logs and
+  performance data.
+
+  - **{{Scope/Impact}}**: Determining the _number of systems affected_ by issue.
+
+- **{{Question Users}}**: Interviewing individuals to get _firsthand problem
+  descriptions_.
+
+  - **{{Symptom Fact-finding}}**: Gathering clues _not evident in automated_
+    system logs.
+
+- **{{Identify Symptoms}}**: Noting _specific signs and behavior_ of network
+  failure.
+
+- **{{Determine if Anything Has Changed}}**: Investigating _recent updates_ or
+  hardware modifications.
+
+- **{{Duplicate the Problem}}**, if possible: _Recreating issue_ in a controlled
+  environment for testing.
+
+- **{{Approach Multiple Problems Individually}}**: Resolving _each separate
+  issue_ one at a time.
+
+- **{{Define Scope}}**: Establishing _boundaries_ of the troubleshooting effort.
+
+2. **{{Establish a Theory of Probable Cause}}**: _Brainstorm probable causes_
+   starting with the obvious.
+
+- **{{Question the Obvious}}**: Checking for _simple, frequent oversights_ like
+  disconnected cables.
+
+  - **{{Obvious Failures}}**: Eliminating _straightforward issues_ before
+    complex diagnostic steps.
+
+- **{{Consider Multiple Approaches}}**: Keeping an _open mind_ to various
+  potential solutions.
+
+  - **{{Top-to-Bottom/Bottom-to-Top OSI Model}}**: _Systematic verification_ of
+    network layers in sequence.
+
+    - **{{Systematic Verification}}**: Ensuring _no individual layer_ is
+      overlooked during testing.
+
+    - **{{Top-to-Bottom}}**: Troubleshooting starting from **Application layer
+      down to Physical**.
+
+    - **{{Bottom-to-Top}}**: Troubleshooting starting from **Physical layer up
+      to Application**.
+
+  - **{{Divide and Conquer}}**: _Narrowing down_ problem location by bisecting
+    system.
+
+    - **{{Section Isolation}}**: _Isolating specific segments_ to identify the
+      failure point.
+
+3. **{{Test the Theory to Determine the Cause}}**: _Confirm the cause_ or
+   escalate if incorrect.
+
+- **{{Theory Validation}}**: Applying _practical methods_ to verify hypothesized
+  root cause.
+
+- **{{Escalation}}**: Referral of a problem to a _senior technician_ or third
+  party.
+
+  - **{{Escalation Criteria}}**: Identifying when problem _exceeds current
+    knowledge_ or resources.
+
+- If theory is confirmed, determine next steps to resolve problem
+
+- If theory is not confirmed, establish a new theory or escalate
+
+4. **{{Establish a Plan of Action}}**: to resolve the problem and identify
+   potential effects: _Determine steps to fix_ and assess impact.
+
+- **{{Impact Assessment}}**: Evaluating how _proposed fixes affect_ the wider
+  network.
+
+- Implement fix with _minimal disruption_
+
+- Schedule _downtime_ if needed.
+
+5. **{{Implement the Solution}}** or escalate as necessary: _Execute the fix_ or
+   escalate if needed.
+
+- **{{Disruption Mitigation}}**: _Minimizing network downtime_ during solution
+  execution.
+
+6. **{{Verify Full System Functionality}}** and implement preventive measures if
+   applicable: _Confirm system works_ and prevent recurrence.
+
+- **{{User Acceptance}}**: _Confirming with affected users_ that problem is
+  resolved.
+
+- Test full services and related systems
+
+- Confirm with user
+
+7. **{{Document Findings, Actions, Outcomes, and Lessons Learned}}** throughout
+   the process: _Record actions, outcomes_, and lessons learned.
+
+- **{{Knowledge Base}}**: Creating _visual and textual records_ for future
+  reference.
+
+- Record the problem, resolution, and timeline
+
+- Useful for _audits training_, and trend tracking
+
+**Best Practices**:
+
+- Follow **{{change control}}** if required
+
+- Use **{{rollback plan}}** in case the fix fails
+
+- Maintain **{{communication}}** with stakeholders
+
+### 5.2 Given a scenario, troubleshoot common cabling and physical interface issues
+
+**{{Cable Issues}}**: _Physical layer failures_ related to network wiring.
+
+- **{{Incorrect Cable}}**: Using the _wrong type_ of network cabling.
+
+  - **{{Category Mismatch}}**: Using cabling _unsupported_ for required network
+    speeds.
+
+  - **{{Single-Mode vs. Multimode}}**: _Long-distance laser_ vs _short-distance
+    LED_ fiber.
+
+    - **{{Signal Dispersion}}**: _Light spreading_ in multimode fiber over
+      distance.
+
+  - **{{STP vs. UTP}}**: _Shielded_ versus _unshielded_ copper network cabling.
+
+    - **{{EMI Protection}}**: _Shielding required_ in high electromagnetic
+      interference environments.
+
+- **{{Signal Degradation}}**: _Reduction in signal quality_ during transmission.
+
+  - **{{Crosstalk}}**: _Signal bleeding_ between adjacent copper wires.
+
+    - **{{NEXT / FEXT}}**: _Near-End or Far-End interference_ between pairs.
+
+  - **{{Interference (EMI/RFI)}}**: _External signals disrupting_ network
+    transmission.
+
+  - **{{Attenuation}}**: _Gradual loss of signal strength_ over distance.
+
+- **{{Improper Termination}}**: _Poorly attached connectors_ causing physical
+  layer failures.
+
+  - **{{Signal Reflection}}**: _Impedance mismatch_ causing signal to bounce
+    back.
+
+- **{{Transmitter (TX)/Receiver (RX) Transposed}}**: Sending and receiving
+  _wires swapped_ incorrectly.
+
+- **{{Open Circuit}}**: _Break in the connection_ preventing signal flow.
+
+- **{{Short Circuit}}**: _Accidental connection_ between two distinct electrical
+  paths.
+
+- **{{Incorrect Pinout}}**: Wires _connected to wrong pins_ in connector.
+
+- **{{Distance Limitation}}**: _Exceeding maximum cable length_ causes signal
+  loss.
+
+- **{{Bend Radius}}**: _Minimum curve allowed_ before damaging fiber cable.
+
+**{{Interface Issues}}**: _Failures occurring_ at the device connection point.
+
+- **{{Increasing Interface Counters}}**: Statistics tracking _errors on a
+  specific port_.
+
+  - **{{Cyclic Redundancy Check (CRC)}}**: Error-detecting code indicating
+    _corrupted data frames_.
+
+    - **{{Checksum Mismatch}}**: _Frame data changed_ during network transit.
+
+  - **{{Runts}}**: Ethernet frames _smaller than permitted_ 64 bytes.
+
+  - **{{Giants}}**: Ethernet frames _exceeding standard_ 1518 byte size.
+
+  - **{{Drops}}**: Packets _discarded_ due to congestion or errors.
+
+    - **{{Buffer Overflow}}**: Data discarded when _switch memory capacity
+      exceeded_.
+
+- **{{Port Status}}**: The _operational state_ of a network interface.
+
+  - **{{Error Disabled}}**: Port _shut down by switch_ due to errors.
+
+  - **{{Administratively Down}}**: Port _manually disabled_ by network
+    administrator.
+
+  - **{{Suspended}}**: Port _inactive_ due to protocol negotiation failure.
+
+**{{Hardware Issues}}**: _Physical component failures_ within network devices.
+
+- **{{Power over Ethernet (PoE)}}**: _Transmitting power_ over standard Ethernet
+  cabling.
+
+  - **{{Power Budget Exceeded}}**: Connected device demand _exceeding switch
+    power capacity_.
+
+  - **{{Incorrect Standard}}**: _Mismatch_ between PoE device and switch
+    requirements.
+
+- **{{Transceivers}}**: _Modular components_ for connecting to fiber networks.
+
+  - **{{Mismatch}}**: _Incompatible transceiver type_ or speed on link.
+
+  - **{{Signal Strength}}**: _Optical or electrical power level_ issues.
+
+- **{{Dirty Connector}}**: _Contaminants_ on fiber interface blocking light
+  signal.
+
+### 5.3 Given a scenario, troubleshoot common issues with network services
+
+**{{Switching Issues}}**: _Failures related_ to Layer 2 network operations.
+
+- **{{Spanning Tree Protocol (STP)}}**: Protocol _preventing Layer 2 loops_.
+
+  - **{{Network Loops}}**: _Broadcast storms_ caused by multiple active paths.
+
+  - **{{Root Bridge Selection}}**: _Electing central reference point_ via Bridge
+    ID.
+
+    - **{{Bridge Priority}}**: _Configurable value_ determining the root bridge
+      switch.
+
+  - **{{Port Roles}}**: Specific _functional assignments_ (Root, Designated,
+    Blocked).
+
+  - **{{Port States}}**: _Transition sequence_ ensuring network stability
+    (Listening, Learning).
+
+- **{{Incorrect VLAN Assignment}}**: _Misconfiguring ports_ into wrong broadcast
+  domains.
+
+  - **{{VLAN Mismatch}}**: _Inconsistent VLAN configurations_ across connected
+    switch ports.
+
+- **{{Access Control List (ACL)}}**: Rules _determining access rights_ to
+  network resources.
+
+  - **{{Policy Conflict}}**: _Misconfigured rules blocking_ legitimate network
+    traffic.
+
+**{{Route Selection}}**: Problems related to _determining data packet paths_.
+
+- **{{Routing Table}}**: _Database used_ for determining data packet paths.
+
+  - **{{Stale Routes}}**: _Invalid routing entries_ causing packet misdirection.
+
+- **{{Default Routes}}**: Path used when _no specific destination_ exists.
+
+  - **{{Missing Default Route}}**: _Dropped packets_ due to unknown destination
+    path.
+
+**{{Address Pool Exhaustion}}**: _Depletion_ of available IP addresses in scope.
+
+- **{{Over-subscription}}**: _Device count exceeding_ available DHCP pool
+  addresses.
+
+- **{{Lease Release}}**: _Mechanism_ for returning expired IPs to pool.
+
+**{{Incorrect Default Gateway}}**: _Wrong IP address_ configured for local exit.
+
+- **{{Subnet Exit Error}}**: _Gateway IP residing_ outside local subnet range.
+
+**{{Incorrect IP Address}}**: _Invalid or misconfigured_ IP on a device.
+
+- **{{Manual Configuration Errors}}**: _Typographical mistakes_ during static IP
+  assignment.
+
+- **{{Duplicate IP Address}}**: _Two devices assigned_ same IP, causing
+  conflict.
+
+**{{Incorrect Subnet Mask}}**: _Misconfigured mask_ leading to communication
+errors.
+
+- **{{Subnet Incompatibility}}**: _Devices failing communication_ due to mask
+  mismatch.
+
+- **{{Automatic Private IP Addressing (APIPA)}}**: _Self-assigned IP_ indicating
+  DHCP failure.
+
+- **{{Maximum Transmission Unit (MTU) Mismatch}}**: _Packet size mismatch_
+  causing fragmentation or drops.
+
+### 5.4 Given a scenario, troubleshoot common performance issues
+
+**{{Congestion/Contention}}**: Network slowing due to _high traffic volume_.
+
+- **{{Capacity Overload}}**: _Demand exceeding_ the available network resource
+  bandwidth.
+
+**{{Bottlenecking}}**: Point of congestion _limiting overall performance_.
+
+- **{{Device Oversubscription}}**: _Single component restricting_ the entire
+  network flow.
+
+**{{Bandwidth}}**: _Maximum data transfer rate_ of a network.
+
+- **{{Throughput}}**: Actual rate of _successful data packet delivery_.
+
+  - **{{Successful Delivery Rate}}**: _Measuring effective data transfer_ after
+    protocol overhead.
+
+**{{Latency}}**: _Time delay_ for data to reach destination.
+
+- **{{Propagation Delay}}**: _Time required_ for signal to traverse medium.
+
+**{{Packet Loss}}**: Data units _failing to reach_ their destination.
+
+- **{{Retransmission Overhead}}**: _Increased traffic caused_ by repeating lost
+  packets.
+
+**{{Jitter}}**: _Variation_ in packet arrival time.
+
+- **{{Arrival Variation}}**: _Inconsistent timing_ between packets in a stream.
+
+**Wireless performance issues** _disrupting connectivity_ and data flow.
+
+- **{{Interference}}**: _External signals disrupting_ wireless network
+  communication.
+
+  - **{{Channel Overlap}}**: Multiple access points _using identical frequency
+    ranges_.
+
+- **{{Signal Degradation or Loss}}**: _Reduction_ in wireless signal quality or
+  strength.
+
+- **{{Insufficient Wireless Coverage}}**: Areas with _weak or absent signal_.
+
+  - **{{Dead Zones}}**: _Geographic locations_ where wireless connectivity is
+    unavailable.
+
+- **{{Client Disassociation Issues}}**: Devices _repeatedly losing connection_
+  to access points.
+
+- **{{Roaming Misconfiguration}}**: Failure of clients to _switch between APs
+  smoothly_.
+
+  - **{{Handoff Failure}}**: _Interruption_ when client moves between access
+    points.
+
+- **{{Access Point (AP) Overload}}**: _Too many clients_ degrading wireless
+  performance.
+
+### 5.5 Given a scenario, use the appropriate tool or protocol to solve networking issues
+
+**{{Software Tools}}**: _Applications used_ for network analysis and
+troubleshooting.
+
+- **{{Protocol Analyzer}}**: _Captures and decodes_ network traffic for
+  analysis.
+  - **{{Packet Capture (PCAP)}}**: _Intercepting and logging data_ for deep
+    inspection.
+- **{{Command Line}}**: _Text-based interface_ for precise device management.
+  - **{{Ping}}**: Tests connectivity and measures _round-trip time_ (ICMP).
+  - **{{Traceroute}}**: Maps _path to destination_ showing every hop.
+  - **{{Nslookup}}**: _Queries DNS servers_ to resolve hostnames.
+  - **{{Tcpdump}}**: Command-line utility for _capturing and filtering_ packets.
+  - **{{Domain Information Groper (DIG)}}**: Retrieves _detailed DNS record_
+    information and diagnostics.
+  - **{{Netstat}}**: Displays _active connections_, routing tables, and
+    statistics.
+  - **{{IPConfig/Ifconfig/IP}}**: _Displays and configures_ network interface
+    settings.
+  - **{{Address Resolution Protocol (ARP)}}**: Manages _IP-to-MAC address
+    translation_ tables.
+- **{{Nmap}}**: Discovers _devices and services_ via network scanning.
+  - **{{Network Scanning}}**: _Sending packets_ to identify active network
+    nodes.
+- **{{Link Layer Discovery Protocol (LLDP)}}**: _Vendor-neutral protocol_ for
+  discovering neighboring devices.
+- **{{Cisco Discovery Protocol (CDP)}}**: Cisco-proprietary protocol for
+  _identifying directly connected_ devices.
+  - **{{Neighbor Discovery}}**: _Exchanging identity and capability_ information
+    between devices.
+- **{{Speed Tester}}**: Measures network connection _bandwidth and throughput_.
+  - **{{Performance Evaluation}}**: Identifying _bandwidth bottlenecks_,
+    latency, and jitter.
+
+**{{Hardware Tools}}**: _Physical devices_ used for network testing and
+maintenance.
+
+- **{{Toner}}**: _Traces and identifies_ wires within a bundle.
+  - **{{Tone Generator}}**: _Sends signal_ through cable for probe detection.
+- **{{Cable Tester}}**: Verifies _physical integrity_ and performance of cables.
+  - **{{Continuity Testing}}**: Checking for _shorts, opens, and
+    cross-connections_.
+- **{{Network Tap (TAP)}}**: Provides _passive access_ to network data flow.
+  - **{{Packet Mirroring}}**: _Copying traffic_ for monitoring without service
+    interruption.
+- **{{Wi-Fi Analyzer}}**: _Scans and analyzes_ wireless network signals.
+  - **{{Signal Analysis}}**: Measuring _strength, channel usage_, and
+    interference sources.
+- **{{Visual Fault Locator (VFL)}}**: Laser tool for _finding fiber optic
+  breaks_.
+- **{{Time Domain Reflectometer (TDR)}}**: _Locates breaks or faults_ in copper
+  cables.
+- **{{Optical Time Domain Reflectometer (OTDR)}}**: Locates _breaks or faults_
+  in fiber cables.
+  - **{{Fault Localization}}**: _Pinpointing cable damage_ locations via signal
+    reflection.
+- **{{Multimeter}}**: Measures _electrical properties_ like voltage and
+  resistance.
+- **{{Loopback Plug}}**: Tests _physical port transmit_ and receive
+  functionality.
+- **{{Spectrum Analyzer}}**: Visualizes _signal strength_ across frequency
+  bands.
+
+**Basic Networking Device Commands**:
+
+- **{{Show MAC-Address-Table}}**: Displays _associated MAC addresses_ and switch
+  ports.
+- **{{Show Route}}**: Displays _routing table entries_ and next-hop addresses.
+- **{{Show Interface}}**: Provides _detailed interface status_ and traffic
+  statistics.
+- **{{Show Config}}**: Displays device _running configuration_ and security
+  settings.
+- **{{Show ARP}}**: _Maps IP addresses_ to MAC addresses (Resolution).
+- **{{Show VLAN}}**: Displays _virtual network IDs_ and port assignments.
+- **{{Show Power}}**: Monitors _PoE allocation_ and device power consumption.
+
+## CompTIA Network+ N10-009 Acronym List
+
+The following is a list of acronyms that appear on the CompTIA Network+ N10-009
+exam. Candidates are encouraged to review the complete list and attain a working
+knowledge of all listed acronyms as part of a comprehensive exam preparation
+program.
+
+ACRONYM DEFINITION
+
+- A Address
+- ACL Access Control List
+- AES Advanced Encryption Standard
+- AH Authentication Header
+- AP Access Point
+- API Application Programming Interface
+- APIPA Automatic Private Internet Protocol Addressing
+- APU Audio Processing Unit
+- ARP Address Resolution Protocol
+- AUP Acceptable Use Policy
+- BCP Business Continuity Planning
+- BGP Border Gateway Protocol
+- BNC Bayonet Neill–Concelman
+- BPDU Bridge Protocol Data Unit
+- BSSID Basic Service Set Identifier
+- BYOD Bring Your Own Device
+- CAM Content-addressable Memory
+- CDN Content Delivery Network
+- CDP Cisco Discovery Protocol
+- CIA Confidentiality, Integrity, and Availability
+- CIDR Classless Inter-domain Routing
+- CLI Command-line Interface
+- CNAME Canonical Name
+- CPU Central Processing Unit
+- CRC Cyclic Redundancy Check
+- DAC Direct Attach Copper
+- DAS Direct-attached Storage
+- DCI Data Center Interconnect
+- DDoS Distributed Denial-of-service
+- DHCP Dynamic Host Configuration Protocol
+- DLP Data Loss Prevention
+- DNS Domain Name System
+- DNSSEC Domain Name System Security Extensions
+- DoH DNS over Hypertext Transfer Protocol Secure
+- DoS Denial-of-service
+- DoT DNS over Transport Layer Security
+- DR Disaster Recovery
+- EAP Extensible Authentication Protocol
+- EAPoL Extensible Authentication Protocol over LAN
+- EIGRP Enhanced Interior Gateway Routing Protocol
+- EOL End-of-life
+- EOS End-of-support
+- ESP Encapsulating Security Payload
+- ESSID Extended Service Set Identifier
+- EULA End-user License Agreement
+- FC Fibre Channel
+- FHRP First Hop Redundancy Protocol
+- FQDN Fully Qualified Domain Name
+- FTP File Transfer Protocol
+- FTPS File Transfer Protocol Secure
+- GDPR General Data Protection Regulation
+- GRE Generic Routing Encapsulation
+- GUI Graphical User Interface
+- HTTP Hypertext Transfer Protocol
+- HTTPS Hypertext Transfer Protocol Secure
+- HSRP Hot Standby Router Protocol
+- IaaS Infrastructure as a Service
+- IaC Infrastructure as Code
+- IAM Identity and Access Management
+- iBGP Internal Border Gateway Protocol
+- ICMP Internet Control Message Protocol
+- ICS Industrial Control System
+- IDF Intermediate Distribution Frame
+- IDS Intrusion Detection System
+- IGMP Internet Group Management Protocol
+- IGP Internal Gateway Protocol
+- IoT Internet of Things
+- IIoT Industrial Internet of Things
+- IIS Internet Information Services
+- IKE Internet Key Exchange
+- IP Internet Protocol
+- IPAM Internet Protocol Address Management
+- IPS Intrusion Prevention System
+- IPSec Internet Protocol Security
+- IS-IS Intermediate System to Intermediate System
+- ISP Internet Service Provider
+- LACP Link Aggregation Control Protocol
+- LAN Local Area Network
+- LC Local Connector
+- LDAP Lightweight Directory Access Protocol
+- LDAPS Lightweight Directory Access Protocol over SSL
+- LLDP Link Layer Discovery Protocol
+- LTE Long-term Evolution
+- MAC Media Access Control
+- MDF Main Distribution Frame
+- MDIX Medium Dependent Interface Crossover
+- MFA Multifactor Authentication
+- MIB Management Information Base
+- MIMO Multiple Input Multiple Output
+- MOU Memorandum of Understanding
+- MPLS Multiprotocol Label Switching
+- MPO Multifiber Push On
+- MTBF Mean Time Between Failure
+- MTTR Mean Time To Repair
+- MTU Maximum Transmission Unit
+- MX Mail Exchange
+- NaaS Network as a Service
+- NAC Network Access Control
+- NAS Network-attached Storage
+- NAT Network Address Translation
+- NDA Non-disclosure Agreement
+- NFV Network Functions Virtualization
+- NIC Network Interface Cards
+- NS Name Server
+- NTP Network Time Protocol
+- NTS Network Time Security
+- OOB Out-of-band
+- OS Operating System
+- OSPF Open Shortest Path First
+- OSI Open Systems Interconnection
+- OT Operational Technology
+- PaaS Platform as a Service
+- PAT Port Address Translation
+- PCI DSS Payment Card Industry Data Security Standards
+- PDU Power Distribution Unit
+- PKI Public Key Infrastructure
+- PoE Power over Ethernet
+- PPTP Point-to-point Tunneling Protocol
+- PSK Pre-shared Key
+- PSU Power Supply Unit
+- PTP Precision Time Protocol
+- PTR Pointer
+- QoS Quality of Service
+- QSFP Quad Small Form-factor Pluggable
+- RADIUS Remote Authentication Dial-in User Service
+- RDP Remote Desktop Protocol
+- RFID Radio Frequency Identification
+- RIP Routing Information Protocol
+- RPO Recovery Point Objective
+- RSSI Received Signal Strength Indicator
+- RSTP Rapid Spanning Tree Protocol
+- RTO Recovery Time Objective
+- RTP Real-time Transport Protocol
+- RX Receiver
+- SaaS Software as a Service
+- SAML Security Assertion Markup Language
+- SAN Storage Area Network
+- SASE Secure Access Service Edge
+- SC Subscriber Connector
+- SCADA Supervisory Control and Data Acquisition
+- SCTP Stream Control Transmission Protocol
+- SDN Software-defined Network
+- SD-WAN Software-defined Wide Area Network
+- SFP Small Form-factor Pluggable
+- SFTP Secure File Transfer Protocol
+- SIP Session Initiation Protocol
+- SIEM Security Information and Event Management
+- SLA Service-level Agreement
+- SLAAC Stateless Address Autoconfiguration
+- SMB Server Message Block
+- SMTP Simple Mail Transfer Protocol
+- SMTPS Simple Mail Transfer Protocol Secure
+- SNMP Simple Network Management Protocol
+- SOA Start of Authority
+- SPAN Switched Port Analyzer
+- SQL Structured Query Language
+- SSE Security Service Edge
+- SSH Secure Shell
+- SSID Service Set Identifier
+- SSL Secure Sockets Layer
+- SSO Single Sign-on
+- ST Straight Tip
+- STP Shielded Twisted Pair
+- SVI Switch Virtual Interface
+- TACAS+ Terminal Access Controller Access Control System Plus
+- TCP Transmission Control Protocol
+- TFTP Trivial File Transfer Protocol
+- TKIP Temporal Key Integrity Protocol
+- TLS Transport Layer Security
+- TTL Time to Live
+- TX Transmitter
+- TXT Text
+- UDP User Datagram Protocol
+- UPS Uninterruptible Power Supply
+- URL Uniform Resource Locator
+- USB Universal Serial Bus
+- UTM Unified Threat Management
+- UTP Unshielded Twisted Pair
+- VIP Virtual IP
+- VLAN Virtual Local Area Network
+- VLSM Variable Length Subnet Mask
+- VM Virtual Machine
+- VNC Virtual Network Computing
+- VoIP Voice over IP
+- VPC Virtual Private Cloud
+- VPN Virtual Private Network
+- VRF Virtual Routing and Forwarding
+- VRRP Virtual Router Redundancy Protocol
+- VTP VLAN Trunk Protocol
+- VXLAN Virtual Extensible LAN
+- WAN Wide Area Network
+- WAF Web Application Firewall
+- WAP Wireless Access Protocol
+- WEP Wired Equivalent Privacy
+- WLAN Wireless LAN
+- WPA Wi-Fi Protected Access
+- WPS Wi-Fi Protected Setup
+- XML Extensible Markup Language
+- ZTA Zero Trust Architecture
+
+## CompTIA Network+ Proposed Hardware and Software List
+
+CompTIA has included this sample list of hardware and software to assist
+candidates as they prepare for the Network+ exam. This list may also be helpful
+for training companies who wish to create a lab component to their training
+offering. The bulleted lists below each topic are a sample list and not
+exhaustive.
+
+EQUIPMENT
+
+- Optical and copper patch panels
+- Layer 3 switch/managed switch/PoE switch
+- Router
+- Firewall
+- Wireless access point (WAP)
+- Basic laptops that support virtualization
+- Voice over IP (VoIP) phone SPARE HARDWARE
+- Network interface card (NIC)
+- Power supplies
+- SFPs
+- WAP
+- UPS
+- PoE injector
+
+SPARE PARTS
+
+- Patch cables − Fiber − Copper
+- Antennas
+- Bluetooth/wireless adapters
+- Console cables [Universal Serial Bus (USB) to RS-232 serial adapter]
+- Additional NIC/USB NIC
+
+TOOLS
+
+- Cable tester
+- Tone generator
+- Optical power meter
+- PoE Tester
+
+SOFTWARE
+
+- Protocol analyzer/packet capture
+- Terminal emulation software
+- Linux/Windows OSs
+- Software firewall
+- Software IDS/IPS
+- Network mapper
+- Hypervisor software
+- IaaS cloud lab/demo accounts
+- Virtual network environment
+- Wi-Fi analyzer
+- Spectrum analyzer
+- Network monitoring tools
+- Flow data analyzer
+- TFTP server
+- Various firmware versions
+
+OTHER
+
+- Sample network documentation
+- Sample logs
+- Defective cables
+- Cloud network diagrams
+- Sample configuration playbook/runbook

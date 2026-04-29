@@ -1,0 +1,347 @@
+- Site: [Red Hat Certified Architect](https://www.redhat.com/en/services/certification/rhca)
+- Need to Pass 5
+    - [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting)
+        - ex342 rh342
+        - pluralsight
+    - [Red Hat Certified Specialist in Linux Performance Tuning](https://www.redhat.com/en/services/certification/rhcs-performance-tuning)
+        - ex442 rh442
+        - pluralsight
+    - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+        - ex403
+    - [Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
+        - ex415
+    - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+        - ex374
+    - 
+    - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+        - ex362 rh362
+    - [Red Hat Certified Specialist in High Availability Clustering](https://www.redhat.com/en/services/certification/rhcs-clustering)
+        - ex436 rh436
+    - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+        - ex467 do467
+- 
+- ## Guidance for RHCEs
+    - Red Hat Certified Engineers (RHCEs) seeking to demonstrate greater depth and breadth of knowledge and skills in Red Hat Enterprise Linux and across other Red Hat products can benefit from the RHCA credential.
+    - RHCEs are free to choose any combination of certifications within the RHCA in Infrastructure list, and earning five or more certifications from the system administrator list in the Skills tab allows candidates to become a Red Hat Certified Architect in Infrastructure.
+    - A higher level of RHCA credential can be attained by earning more than five credentials beyond the base credentials. For example, earning six credentials beyond RHCD, RHCEMD, or RHCCD earns an RHCA Level II designation as long as the six credentials remain current. If one of the credentials becomes non-current, the RHCA reverts to Level I, and if another credential becomes non-current, the RHCA status would no longer apply.
+    - Optional depth areas:
+    - ### Open hybrid cloud program
+        - We believe that the open hybrid cloud is the present and future of enterprise computing. The need for agility, flexibility, and cost containment make having options essential.
+        - Earning five of these certifications is preparation for taking organizations to the cloud in the ways that best match their business requirements:
+        - [Red Hat Certified Specialist in OpenShift Administration](https://www.redhat.com/en/services/certification/rhcs-paas)
+        - [Red Hat Certified Specialist in Cloud Infrastructure](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+        - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+        - [Red Hat Certified Specialist in Ceph Cloud Storage](https://www.redhat.com/en/services/certification/rhcs-ceph-cloud-storage)
+        - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+        - [Red Hat Certified Specialist in OpenShift Virtualization](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+        - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+        - [Red Hat Certified Specialist in Red Hat OpenShift Service on AWS (ROSA)](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa)
+    - ### DevOps, containers, and OpenShift program
+        - Containers are changing the way applications are developed, tested, and deployed, and Red Hat® OpenShift Container Platform is how Red Hat does containers.
+        - For organizations that want to speed their application development cycle, containers are a natural fit. However, creating a continuous integration/continuous delivery (CI/CD) pipeline requires more than containers—it also requires automation. DevOps offers an approach to automation that not only helps link legacy apps with newer cloud-native apps and infrastructure, but does so through fast-paced, iterative IT service delivery.
+        - Our DevOps, containers, and OpenShift recommendations cover the learning needed to succeed in today’s app-hungry world. Earning these four credentials plus one more from the system administrators list can help transform the way organizations deliver applications to their customers.
+        - **Red Hat Certified OpenShift Administrator (EX280)** 
+            - Sites: [Red Hat Certified Specialist in OpenShift Administration](https://www.redhat.com/en/services/certification/rhcs-paas) 
+            - **Study points for the exam**
+                - As with all Red Hat performance-based exams, configurations must persist after reboot without intervention.
+                    - Manage OpenShift Container Platform
+                        - Use the web console to manage and configure an OpenShift cluster
+                        - Use the command-line interface to manage and configure an OpenShift cluster
+                        - Query, format, and filter attributes of Kubernetes resources
+                        - Import, export, and configure Kubernetes resources
+                        - Locate and examine container images
+                        - Create and delete projects
+                        - Examine resources and cluster status
+                        - View logs
+                        - Monitor cluster events and alerts
+                        - Assess the health of an OpenShift cluster
+                        - Troubleshoot common container, pod, and cluster events and alerts
+                        - Use product documentation
+                    - Deploy Applications
+                        - Deploy applications from resource manifests
+                        - Use Kustomize overlays to modify application configurations
+                        - Deploy applications from images, OpenShift templates, and Helm charts
+                        - Deploy jobs to perform one-time tasks
+                        - Manage application deployments
+                        - Work with replica sets
+                        - Work with labels and selectors
+                        - Configure services
+                        - Expose both HTTP and non-HTTP applications to external access
+                        - Work with operators such as MetalLB and Multus
+                    - Manage Storage for Application Configuration and Data
+                        - Create and use secrets
+                        - Create and use configuration maps
+                        - Provision Persistent Storage volumes for block and file-based data
+                        - Use storage classes
+                        - Manage non-shared storage with StatefulSets
+                    - Configure Applications for Reliability
+                        - Configure and use health probes
+                        - Reserve and limit application compute capacity
+                        - Scale applications to meet increased demand
+                    - Manage Application Updates
+                        - Identify images using tags and digests
+                        - Roll back failed deployments
+                        - Manage image streams
+                        - Use triggers to manage images
+                    - Manage Authentication and Authorization
+                        - Configure the HTPasswd identity provider for authentication
+                        - Create and delete users
+                        - Modify user passwords
+                        - Create and manage groups
+                        - Modify user and group permissions
+                    - Configure Network Security
+                        - Configure networking components
+                        - Troubleshoot software defined networking
+                        - Create and edit external routes
+                        - Control cluster network ingress
+                        - Secure external and internal traffic using TLS certificates
+                        - Configure application network policies
+                    - Enable Developer Self-Service
+                        - Configure cluster resource quotas
+                        - Configure project quotas
+                        - Configure project resource requirements
+                        - Configure project limit ranges
+                        - Configure project templates
+                    - Manage OpenShift Operators
+                        - Install an operator
+                        - Delete an operator
+                    - Configure Application Security
+                        - Configure and manage service accounts
+                        - Run privileged applications
+                        - Create service accounts
+                        - Manage and apply permissions using security context constraints
+                        - Create and apply secrets to manage sensitive information
+                        - Configure application access to Kubernetes APIs
+                        - Configure Kubernetes CronJobs
+        - [Red Hat Certified Specialist in API Management](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+        - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+        - [Red Hat Certified Specialist in OpenShift Virtualization](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+        - **Red Hat Certified Specialist in Containers (EX188)** 
+            - Sites: [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container) 
+            -  **Study points for the exam** 
+                - To help you prepare, the exam objectives below highlight the task areas you can expect to see covered in the exam.
+                - You should be able to demonstrate these skills and abilities:
+                - **Implement images using Podman and Containerfile**
+                    - Understand how to specify the container’s base image.
+                    - Understand how to add content to the container.
+                    - Understand how to configure the container’s run time environment including user id, working directory and running arbitrary commands.
+                    - Understand when and how to expose ports from a Containerfile.
+                    - Understand how to pass environment variables and arguments to an image built from a Containerfile.
+                    - Understand how to specify the command to be run in a custom image.
+                    - Understand container volumes including sharing host data with the container.
+                    - Understand the security and permissions requirements related to host and network access from the container.
+                    - Understand container and image life cycles and how to manage them.
+                - **Manage images**
+                    - Understand private registry security.
+                    - Interact with many different registries.
+                    - Understand and use image tags
+                    - Push and pull images from and to registries.
+                    - Back up an image with its layers and meta data vs. backup a container state.
+                - **Run containers locally using Podman**
+                    - Run containers locally using Podman
+                    - Get container logs.
+                    - Listen to container events on the container host.
+                    - Use Podman inspect.
+                    - Specifying environment parameters.
+                    - Expose public applications.
+                    - Get application logs.
+                    - Inspect running applications.
+                - **Run multi-container applications with Podman**
+                    - Create application stacks
+                    - Understand container dependencies
+                    - Working with environment variables
+                    - Working with secrets
+                    - Working with volumes
+                    - Working with configuration
+                - **Troubleshoot containerized applications**
+                    - Understand the description of application resources
+                    - Get application logs
+                    - Inspect running applications
+                    - Connecting to running containers
+        - [Red Hat Certified Specialist in OpenShift Data Foundation](https://www.redhat.com/en/services/certification/certified-specialist-openshift-data-foundation)
+        - [Red Hat Certified Specialist in MultiCluster Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management)
+        - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+        - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+        - [Red Hat Certified Specialist in Microsoft Windows Automation with Ansible](https://www.redhat.com/en/services/certification/ex417-red-hat-certified-specialist-microsoft-windows-automation-ansible)
+        - [Red Hat Certified Specialist in OpenShift AI](https://www.redhat.com/en/services/certification/ex267-red-hat-certified-specialist-openshift-ai)
+    - ### Linux mastery program
+        - The reliability, scalability, performance, and manageability of Red Hat® Enterprise Linux® comprise the heart of many of Red Hat’s technologies. We do not use the term "mastery" lightly—to dig deep and focus exclusively on Linux, choose five of these certifications:
+        - **Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting** (EX342)
+            - Sites: 
+                - [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting) 
+            - Exam: EX342
+            - Course: RH342
+                - [Red Hat Enterprise Linux Diagnostics and Troubleshooting | RH342](https://www.redhat.com/en/services/training/rh342-red-hat-enterprise-linux-diagnostics-and-troubleshooting)
+            -  **Prove your skills and knowledge** 
+                - An IT professional who is a Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting is capable of performing the following tasks:
+                    - Understanding and employing general methods for troubleshooting
+                    - Diagnosing and troubleshooting system start up issues
+                    - Diagnosing and troubleshooting file system issues
+                    - Resolving package management issues
+                    - Troubleshooting and fixing network connectivity issues
+                    - Diagnosing application issues
+                    - Identifying and fixing authentication issues
+                    - Gathering information to aid third party investigation of issues
+            -  **Study points for the exam** 
+                - To help you prepare, the exam objectives highlight the task areas you can expect to see covered in the exam. Red Hat reserves the right to add, modify, and remove exam objectives. Such changes will be made public in advance.
+                - Candidates for the [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting exam](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting-160961) should be able to:
+                    - **Understand and employ general methods for troubleshooting**
+                        - Collect system information to aid in troubleshooting
+                        - Consult documentation resources to aid in troubleshooting
+                        - Monitor systems for vital characteristics
+                        - Configure systems to send log messages to a centralized host
+                    - **Diagnose and troubleshoot system start up issues**
+                        - Identify and resolve service failures affecting boot
+                        - Regain root control of a system
+                        - Troubleshoot boot issues
+                        - Identify hardware and hardware problems
+                        - Manage kernel modules and their parameters
+                    - **Diagnose and troubleshoot file system issues**
+                        - Recover corrupted file systems
+                        - Recover mis-configured or broken LVM configurations
+                        - Recover data from encrypted file systems
+                        - Identify and fix iSCSI issues
+                    - **Resolve package management issues**
+                        - Resolve package management dependency issues
+                        - Recover a corrupted RPM database
+                        - Identify and restore changed files
+                    - **Troubleshoot and fix network connectivity issues**
+                        - Use standard tools to verify network connectivity
+                        - Identify and fix network connectivity issues
+                        - Inspect network traffic to aid troubleshooting
+                    - **Diagnose application issues**
+                        - Identify library dependencies for third-party software
+                        - Identify if an application suffers from memory leaks
+                        - Use standard tools to debug an application
+                        - Identify and fix issues related to SELinux
+                    - **Identify and fix authentication issues**
+                        - Identify and fix pluggable authentication module (PAM) issues
+                        - Identify and fix LDAP and Kerberos identity management issues
+                    - **Gather information to aid third party investigation of issues**
+                        - Create kernel crashdumps
+                        - Compile and execute SystemTap modules
+        - **Red Hat Certified Specialist in Performance Tuning (EX442)** 
+            - Sites: [Red Hat Certified Specialist in Linux Performance Tuning](https://www.redhat.com/en/services/certification/rhcs-performance-tuning) 
+            -  Study points for the exam
+                - You should be able to perform the tasks listed below:
+                - ### Use utilities to analyze system behavior
+                    - Use utilities such as vmstat, iostat, mpstat, sar, gnome-system-monitor, top, powertop, and others to analyze and report system and application behavior
+                    - Use utilities such as Performance Co-Pilot (PCP) to analyze system behaviour
+                    - Use utilities such as dmesg, dmidecode, and sosreport to profile system hardware configurations
+                - ### Monitor and alter kernel behavior
+                    - Use /proc/sys, sysctl, and /sys to examine, modify, and set kernel run-time parameters
+                    - Configure kernel behavior by altering module parameters
+                - ### Analyze system and application performance
+                    - Analyze system and application behavior using tools such as ps, top, and Valgrind
+                    - Configure systems to run SystemTap scripts
+                    - Use the eBPF family of tools (e.g. syscount, gethostlatency and others) to diagnose system and application behavior
+                    - Given multiple versions of applications that perform the same or similar tasks, choose which version of the application to run on a system based on its observed performance characteristics
+                - ### Tune running systems
+                    - Alter process priorities of both new and existing processes
+                    - Select and configure tuned profiles
+                    - Manage system resource usage using control groups
+                - ### Tune memory utilization
+                    - Configure systems to support alternate page sizes for applications that use large amounts of memory
+                - ### Configure disk and file subsystems
+                    - Select proper I/O scheduling algorithm
+                    - Tune file system layout for a given use
+                - ### Tune network performance
+                    - Calculate network buffer sizes based on known quantities such as bandwidth and round-trip time
+                    - Set system buffer sizes based on those calculations
+        - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+        - [Red Hat Certified Specialist in High Availability Clustering](https://www.redhat.com/en/services/certification/rhcs-clustering)
+        - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+        - **Red Hat Certified Specialist in Security: Linux (EX415)** 
+            - Sites: [Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam) 
+            -  **Study points for the exam** 
+                - To help you study, review the following exam objectives that highlight the task areas you can expect to see covered in the exam. Red Hat reserves the right to add, modify, and remove exam objectives. Such changes will be made public in advance.
+                    - Use Red Hat Ansible^®^ Engine
+                        - Install Red Hat Ansible Engine on a control node.
+                        - Configure managed nodes.
+                        - Configure simple inventories.
+                        - Perform basic management of systems.
+                        - Run a provided playbook against specified nodes.
+                    - Implement access controls for automation controller
+                        - Create and restrict an inventory to an automation controller user
+                        - Restrict a credential and/or a project to an automation controller user
+                        - Be able to create and launch a template as an automation controller user
+                    - Configure intrusion detection
+                        - Install AIDE.
+                        - Configure AIDE to monitor critical system files.
+                    - Configure encrypted storage
+                        - Encrypt and decrypt block devices using LUKS.
+                        - Configure encrypted storage persistence using NBDE.
+                        - Change encrypted storage passphrases.
+                    - Restrict USB devices
+                        - Install USBGuard.
+                        - Write device policy rules with specific criteria to manage devices.
+                        - Manage administrative policy and daemon configuration.
+                    - Manage system login security using pluggable authentication modules (PAMs)
+                        - Configure password quality requirements.
+                        - Configure failed login policy.
+                        - Modify PAM configuration files and parameters.
+                    - Configure system auditing
+                        - Write rules to log auditable events.
+                        - Enable prepackaged rules.
+                        - Produce audit reports.
+                    - Configure SELinux
+                        - Enable SELinux on a host running a simple application.
+                        - Interpret SELinux violations and determine remedial action.
+                        - Restrict user activity with SELinux user mappings.
+                        - Analyze and correct existing SELinux configurations.
+                    - Enforce security compliance
+                        - Install OpenSCAP and OpenSCAP Workbench.
+                        - Scan hosts for security compliance
+                        - Tailor security policy
+                        - Scan individual hosts for security compliance
+                        - Generate and apply a playbook from customized XML for remediation of inventory hosts
+        - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+        - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+- ## Test your skills and knowledge
+    - The best training path for becoming an RHCA depends on the credentials you or your team want to earn. Red Hat offers multiple ways to train in courses aligned with all of its certification exams.
+    - In addition to the exam offerings below, review our full list of courses to find other training options that might best suit your certification objectives.
+- ### To attain and maintain RHCA status, an RHCE must pass at least 5 of the following exams and keep the associated certifications current:
+    - [EX188 – Red Hat Certified Specialist in Containers exam](https://www.redhat.com/en/services/training/ex188-red-hat-certified-specialist-containers-exam)
+    - [EX210 - Red Hat Certified Specialist in Cloud Infrastructure exam](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+    - [EX229 - Red Hat Certified Specialist in ROSA exam](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa)
+    - [EX240 - Red Hat Certified Specialist in API Management exam](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+    - [EX248 - Red Hat Certified Specialist in Enterprise Application Server Administration exam](https://www.redhat.com/en/services/training/ex248-red-hat-certified-jboss-administration-rhcja-exam)
+    - [EX260 - Red Hat Certified Specialist in Ceph Cloud Storage exam](https://www.redhat.com/en/services/training/ex260-red-hat-certified-specialist-in-ceph-cloud-storage-exam)
+    - [EX267 -Red Hat Certified Specialist in OpenShift AI exam](https://www.redhat.com/en/services/certification/ex267-red-hat-certified-specialist-openshift-ai)
+    - [EX280 - Red Hat Certified OpenShift Administrator exam](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
+    - [EX288 - Red Hat Certified Specialist in OpenShift Application Development exam](https://www.redhat.com/en/services/training/ex288-red-hat-certified-openshift-application-developer-exam)
+    - [EX316 - Red Hat Certified Specialist in OpenShift Virtualization Exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+    - [EX328 - Red Hat Certified Specialist in Building Resilient Microservices exam](https://www.redhat.com/en/services/training/ex328-red-hat-certified-specialist-in-building-resilient-microservices-exam)
+    - [EX342 – Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting Exam](https://www.redhat.com/en/services/training/ex342-red-hat-certified-specialist-linux-diagnostics-and-troubleshooting)
+    - [EX358 – Red Hat Certified Specialist in Services Management and Automation exam](https://www.redhat.com/en/services/training/ex358-red-hat-certified-specialist-services-management-automation-exam)
+    - [EX362 – Red Hat Certified Specialist in Identity Management Exam](https://www.redhat.com/en/services/training/ex362-red-hat-certified-specialist-identity-management-exam)
+    - [EX370 - Red Hat Certified Specialist in OpenShift Data Foundation exam](https://www.redhat.com/en/services/training/ex370-red-hat-certified-specialist-in-openshift-data-foundation-exam)
+    - [EX374 - Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-developing-automation-ansible-automation-platform-exam)
+    - [EX380 - Red Hat Certified Specialist in OpenShift Automation and Integration exam](https://www.redhat.com/en/services/training/ex380-certified-specialist-openshift-automation-exam)
+    - [EX403 – Red Hat Certified Specialist in Deployment and Systems Management exam](https://www.redhat.com/en/services/training/ex403-red-hat-certificate-expertise-deployment-systems-management-exam)
+    - [EX415 – Red Hat Certified Specialist in Security: Linux exam](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
+    - [EX417 - Red Hat Certified Specialist in Microsoft Windows Automation with Ansible exam](https://www.redhat.com/en/services/certification/ex417-red-hat-certified-specialist-microsoft-windows-automation-ansible)
+    - [EX436 – Red Hat Certified Specialist in High Availability Clustering exam](https://www.redhat.com/en/services/training/ex436-red-hat-certificate-expertise-high-availability-clustering-exam)
+    - [EX440 – Red Hat Certified Specialist in Messaging Administration exam](https://www.redhat.com/en/services/training/ex440-red-hat-certified-specialist-in-messaging-administration-exam) (Retired)
+    - [EX442 – Red Hat Certified Specialist in Linux Performance Tuning exam](https://www.redhat.com/en/services/training/ex442-exame-do-red-hat-certified-specialist-linux-performance-tuning)
+    - [EX447 – Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices exam](https://www.redhat.com/en/services/training/ex447-red-hat-certified-specialist-advanced-automation-ansible-best-practices-exam)(Retired)
+    - [EX457 – Red Hat Certified Specialist in Ansible Network Automation exam](https://www.redhat.com/en/services/training/ex457-red-hat-certified-specialist-in-ansible-network-automation-exam)
+    - [EX467 - Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/ex467-red-hat-certified-specialist-managing-automation-ansible-automation-platform-exam)
+    - [EX480 - Red Hat Certified Specialist in MultiCluster Management exam](https://www.redhat.com/en/services/training/ex480-red-hat-certified-specialist-multicluster-management-exam)
+- ### To attain and maintain RHCA status, an RHCEMD or RHCCD must pass at least 5 of the following exams and keep the associated certifications current:
+    - [EX188 – Red Hat Certified Specialist in Containers exam](https://www.redhat.com/en/services/training/ex188-red-hat-certified-specialist-containers-exam)
+    - [EX240 –Red Hat Certified Specialist in API Management exam](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+    - [EX248 – Red Hat Certified Specialist in Enterprise Application Server Administration exam](https://www.redhat.com/en/services/training/ex248-red-hat-certified-jboss-administration-rhcja-exam)
+    - [EX280 - Red Hat Certified OpenShift Administrator exam](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
+    - [EX288 –Red Hat Certified Specialist in OpenShift Application Development exam](https://www.redhat.com/en/services/training/ex288-red-hat-certified-openshift-application-developer-exam)
+    - [EX328 - Red Hat Certified Specialist in Building Resilient Microservices exam](https://www.redhat.com/en/services/training/ex328-red-hat-certified-specialist-in-building-resilient-microservices-exam)
+    - [EX374 - Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-developing-automation-ansible-automation-platform-exam)
+    - [EX378 - Red Hat Certified Cloud-native Developer exam](https://www.redhat.com/en/services/training/red-hat-certified-cloud-native-developer-exam)
+    - [EX380 - Red Hat Certified Specialist in OpenShift Automation and Integration exam](https://www.redhat.com/en/services/training/ex380-certified-specialist-openshift-automation-exam)
+    - [EX427 – Red Hat Certified Specialist in Business Process Design exam](https://www.redhat.com/en/services/training/ex427-red-hat-certificate-expertise-business-process-design-exam) (Retired)
+    - [EX440 – Red Hat Certified Specialist in Messaging Administration exam](https://www.redhat.com/en/services/training/ex440-red-hat-certified-specialist-in-messaging-administration-exam) (Retired)
+    - [EX453 – Red Hat Certified Specialist in Fast-Cache Application Development exam](https://www.redhat.com/en/services/training/ex453-retired-red-hat-certified-specialist-in-fast-cache-application-development-exam) (Retired)
+    - [EX465 – Red Hat Certified Specialist in Business Rules exam](https://www.redhat.com/en/services/training/ex465-red-hat-certificate-expertise-business-rules-exam) (Retired)
+    - [EX447 - Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices exam](https://www.redhat.com/en/services/training/ex447-red-hat-certified-specialist-advanced-automation-ansible-best-practices-exam) (Retired)
+    - [EX480- Red Hat Certified Specialist in MultiCluster Management exam](https://www.redhat.com/en/services/training/ex480-red-hat-certified-specialist-multicluster-management-exam)
+    - [EX482 - Red Hat Certified Specialist in Event-Driven Application Development exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-event-driven-application-development-exam)

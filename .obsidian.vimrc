@@ -8,25 +8,6 @@ noremap <C-p> <C-b>
 
 
 " #mappings
-noremap s b
-noremap t j
-noremap n k
-noremap b w
-
-noremap w s
-noremap j t
-noremap k n
-
-noremap S B
-noremap T }
-noremap N {
-noremap B W
-
-noremap B B
-noremap W S
-noremap J T
-noremap K N
-
 g:mapleader = " "
 noremap <leader>fs :write!<cr>
 noremap <leader>qq :quit!<cr>

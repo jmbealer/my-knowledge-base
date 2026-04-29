@@ -1,0 +1,813 @@
+# Master Acronym List
+
+- **{{Authentication, Authorization, and Accounting}} {{AAA}}**: *Framework for access control*.
+    - aplus-core1.md
+- **{{Access Control List}} {{ACL}}**: *Rules determining access rights*.
+    - aplus-core1.md
+- **{{Automatic Document Feeder}} {{ADF}}**: *Device feeding multiple pages*.
+    - aplus-core1.md
+- **{{Advanced Encryption Standard}} {{AES}}**: *Symmetric encryption algorithm*.
+    - aplus-core1.md
+- **{{Advanced Micro Devices}} {{AMD}}**: *CPU and GPU manufacturer*.
+    - aplus-core1.md
+- **{{Access Point}} {{AP}}**: *Device creating wireless network*.
+    - aplus-core1.md
+- **{{Apple File System}} {{APFS}}**: *File system for macOS/iOS*.
+    - aplus-core1.md
+- **{{Automatic Private IP Addressing}} {{APIPA}}**: *Link-local address assignment*.
+    - aplus-core1.md
+- **{{Advanced RISC Machine}} {{ARM}}**: *RISC-based processor architecture*.
+    - aplus-core1.md
+- **{{Advanced Technology Extended}} {{ATX}}**: *Standard motherboard form factor*.
+    - aplus-core1.md
+- **{{Acceptable Use Policy}} {{AUP}}**: *Rules for network usage*.
+    - aplus-core1.md
+- **{{Business Email Compromise}} {{BEC}}**: *Fraud using compromised email*.
+    - aplus-core1.md
+- **{{Basic Input/Output System}} {{BIOS}}**: *Legacy firmware interface*.
+    - aplus-core1.md
+- **{{Bayonet Neill-Concelman}} {{BNC}}**: *Connector for coaxial cable*.
+    - aplus-core1.md
+- **{{Blue Screen of Death}} {{BSOD}}**: *Windows critical error screen*.
+    - aplus-core1.md
+- **{{Bring Your Own Device}} {{BYOD}}**: *Policy for personal devices*.
+    - aplus-core1.md
+- **{{Common Access Card}} {{CAC}}**: *US DoD smart card*.
+    - aplus-core1.md
+- **{{Column Address Strobe}} {{CAS}}**: *Memory timing parameter*.
+    - aplus-core1.md
+- **{{Common Internet File System}} {{CIFS}}**: *Dialect of SMB protocol*.
+    - aplus-core1.md
+- **{{Configuration Management Database}} {{CMDB}}**: *Repository of IT assets*.
+    - aplus-core1.md
+- **{{Complementary Metal-Oxide Semiconductor}} {{CMOS}}**: *Technology for BIOS settings*.
+    - aplus-core1.md
+- **{{Canonical Name}} {{CNAME}}**: *DNS alias record*.
+    - aplus-core1.md
+- **{{Central Processing Unit}} {{CPU}}**: *Main processing chip*.
+    - aplus-core1.md
+- **{{D-subminiature 9}} {{DB-9}}**: *Connector for serial ports*.
+    - aplus-core1.md
+- **{{Distributed Denial of Service}} {{DDoS}}**: *Attack from multiple sources*.
+    - aplus-core1.md
+- **{{Double Data Rate}} {{DDR}}**: *Memory transfer technology*.
+    - aplus-core1.md
+- **{{Dynamic Host Configuration Protocol}} {{DHCP}}**: *Automated IP assignment*.
+    - aplus-core1.md
+- **{{Dual In-line Memory Module}} {{DIMM}}**: *Desktop memory module*.
+    - aplus-core1.md
+- **{{DomainKeys Identified Mail}} {{DKIM}}**: *Email authentication method*.
+    - aplus-core1.md
+- **{{Data Loss Prevention}} {{DLP}}**: *Protection against data leaks*.
+    - aplus-core1.md
+- **{{Domain-based Message Authentication, Reporting, and Conformance}} {{DMARC}}**: *Email validation policy*.
+    - aplus-core1.md
+- **{{Domain Name System}} {{DNS}}**: *Resolves hostnames to IPs*.
+    - aplus-core1.md
+- **{{Denial of Service}} {{DoS}}**: *Attack disrupting service availability*.
+    - aplus-core1.md
+- **{{Digital Rights Management}} {{DRM}}**: *Copyright protection technology*.
+    - aplus-core1.md
+- **{{Digital Subscriber Line}} {{DSL}}**: *Internet via telephone lines*.
+    - aplus-core1.md
+- **{{Digital Visual Interface}} {{DVI}}**: *Digital video connector*.
+    - aplus-core1.md
+- **{{Error Correcting Code}} {{ECC}}**: *Memory detecting/fixing errors*.
+    - aplus-core1.md
+- **{{Endpoint Detection and Response}} {{EDR}}**: *Host-based security monitoring*.
+    - aplus-core1.md
+- **{{Encrypting File System}} {{EFS}}**: *Windows file encryption*.
+    - aplus-core1.md
+- **{{End of Life}} {{EOL}}**: *Product support termination*.
+    - aplus-core1.md
+- **{{External Serial Advanced Technology Attachment}} {{eSATA}}**: *External storage interface*.
+    - aplus-core1.md
+- **{{Electrostatic Discharge}} {{ESD}}**: *Sudden flow of electricity*.
+    - aplus-core1.md
+- **{{Embedded Subscriber Identity Module}} {{eSIM}}**: *Programmable built-in SIM*.
+    - aplus-core1.md
+- **{{End User License Agreement}} {{EULA}}**: *Software usage contract*.
+    - aplus-core1.md
+- **{{Extended File Allocation Table}} {{exFAT}}**: *Optimized flash drive filesystem*.
+    - aplus-core1.md
+- **{{Function as a Service}} {{FaaS}}**: *Serverless computing model*.
+    - aplus-core1.md
+- **{{File Allocation Table 32-bit}} {{FAT32}}**: *Legacy compatible filesystem*.
+    - aplus-core1.md
+- **{{Face Recognition Technology}} {{FRT}}**: *Biometric identification using faces*.
+    - aplus-core1.md
+- **{{File Transfer Protocol}} {{FTP}}**: *Unencrypted file transfer*.
+    - aplus-core1.md
+- **{{Grandfather-Father-Son}} {{GFS}}**: *Backup rotation scheme*.
+    - aplus-core1.md
+- **{{Global Positioning System}} {{GPS}}**: *Satellite-based navigation*.
+    - aplus-core1.md
+- **{{GUID Partition Table}} {{GPT}}**: *Modern partitioning standard*.
+    - aplus-core1.md
+- **{{Graphics Processing Unit}} {{GPU}}**: *Circuit for image rendering*.
+    - aplus-core1.md
+- **{{Graphical User Interface}} {{GUI}}**: *Visual user interface*.
+    - aplus-core1.md
+- **{{Globally Unique Identifier}} {{GUID}}**: *Unique reference number*.
+    - aplus-core1.md
+- **{{High Definition}} {{HD}}**: *Video resolution of 720p/1080p*.
+    - aplus-core1.md
+- **{{Hard Disk Drive}} {{HDD}}**: *Magnetic storage device*.
+    - aplus-core1.md
+- **{{High-Definition Multimedia Interface}} {{HDMI}}**: *Digital video/audio interface*.
+    - aplus-core1.md
+- **{{Hardware Security Module}} {{HSM}}**: *Physical crypto processing device*.
+    - aplus-core1.md
+- **{{Hypertext Transfer Protocol}} {{HTTP}}**: *Unsecured web traffic protocol*.
+    - aplus-core1.md
+- **{{Hypertext Transfer Protocol Secure}} {{HTTPS}}**: *Encrypted web traffic protocol*.
+    - aplus-core1.md
+- **{{Infrastructure as a Service}} {{IaaS}}**: *Cloud virtualized hardware resources*.
+    - aplus-core1.md
+- **{{Identity and Access Management}} {{IAM}}**: *Managing user digital identities*.
+    - aplus-core1.md
+- **{{Internet Mail Access Protocol}} {{IMAP}}**: *Email retrieval with syncing*.
+    - aplus-core1.md
+- **{{Input/Output Operations Per Second}} {{IOPS}}**: *Storage performance metric*.
+    - aplus-core1.md
+- **{{Internet of Things}} {{IoT}}**: *Network of connected physical objects*.
+    - aplus-core1.md
+- **{{Internet Protocol}} {{IP}}**: *Routing packets across networks*.
+    - aplus-core1.md
+- **{{Intrusion Prevention System}} {{IPS}}**: *Active threat blocking device*.
+    - aplus-core1.md
+- **{{Infrared}} {{IR}}**: *Line-of-sight wireless communication*.
+    - aplus-core1.md
+- **{{International Organization for Standardization}} {{ISO}}**: *Global standard setting body*.
+    - aplus-core1.md
+- **{{Internet Service Provider}} {{ISP}}**: *Company providing internet access*.
+    - aplus-core1.md
+- **{{Information Technology eXtended}} {{ITX}}**: *Compact motherboard form factor*.
+    - aplus-core1.md
+- **{{Keyboard-Video-Mouse}} {{KVM}}**: *Switch controlling multiple PCs*.
+    - aplus-core1.md
+- **{{Local Area Network}} {{LAN}}**: *Network in limited area*.
+    - aplus-core1.md
+- **{{Lucent Connector}} {{LC}}**: *Small form-factor fiber connector*.
+    - aplus-core1.md
+- **{{Liquid Crystal Display}} {{LCD}}**: *Flat panel display technology*.
+    - aplus-core1.md
+- **{{Lightweight Directory Access Protocol}} {{LDAP}}**: *Directory service protocol*.
+    - aplus-core1.md
+- **{{Light Emitting Diode}} {{LED}}**: *Semiconductor light source*.
+    - aplus-core1.md
+- **{{Long Term Evolution}} {{LTE}}**: *4G mobile communication standard*.
+    - aplus-core1.md
+- **{{Media Access Control}} {{MAC}}**: *Unique physical network address*.
+    - aplus-core1.md
+- **{{Metropolitan Area Network}} {{MAN}}**: *City-wide computer network*.
+    - aplus-core1.md
+- **{{Master Boot Record}} {{MBR}}**: *Legacy boot sector standard*.
+    - aplus-core1.md
+- **{{Mobile Device Management}} {{MDM}}**: *Device administration software*.
+    - aplus-core1.md
+- **{{Managed Detection and Response}} {{MDR}}**: *Outsourced security monitoring*.
+    - aplus-core1.md
+- **{{Multifactor Authentication}} {{MFA}}**: *Using multiple auth methods*.
+    - aplus-core1.md
+- **{{Multifunction Product / Printer}} {{MFP}}**: *All-in-one printer device*.
+    - aplus-core1.md
+- **{{MultiMediaCard}} {{MMC}}**: *Flash memory card standard*.
+    - aplus-core1.md
+- **{{Mutual Non-Disclosure Agreement}} {{MNDA}}**: *Contract protecting shared secrets*.
+    - aplus-core1.md
+- **{{Mini-SATA}} {{mSATA}}**: *Small form factor SSD interface*.
+    - aplus-core1.md
+- **{{Mail Exchanger}} {{MX}}**: *DNS record for email*.
+    - aplus-core1.md
+- **{{Network Access Control}} {{NAC}}**: *Managing device network admission*.
+    - aplus-core1.md
+- **{{Network Attached Storage}} {{NAS}}**: *File-level storage server*.
+    - aplus-core1.md
+- **{{Network Address Translation}} {{NAT}}**: *Mapping private to public IPs*.
+    - aplus-core1.md
+- **{{Non-Disclosure Agreement}} {{NDA}}**: *Confidentiality contract*.
+    - aplus-core1.md
+- **{{Network Basic Input/Output System}} {{NetBIOS}}**: *Legacy local network API*.
+    - aplus-core1.md
+- **{{Near Field Communication}} {{NFC}}**: *Short-range contactless communication*.
+    - aplus-core1.md
+- **{{Network Interface Card}} {{NIC}}**: *Hardware for network connection*.
+    - aplus-core1.md
+- **{{New Technology File System}} {{NTFS}}**: *Default Windows file system*.
+    - aplus-core1.md
+- **{{Network Time Protocol}} {{NTP}}**: *Clock synchronization protocol*.
+    - aplus-core1.md
+- **{{Non-Volatile Memory Express}} {{NVMe}}**: *High-speed SSD interface*.
+    - aplus-core1.md
+- **{{Original Equipment Manufacturer}} {{OEM}}**: *Maker of components/software*.
+    - aplus-core1.md
+- **{{Organic Light Emitting Diode}} {{OLED}}**: *Display with self-lit pixels*.
+    - aplus-core1.md
+- **{{Optical Network Terminal}} {{ONT}}**: *Fiber-to-copper interface*.
+    - aplus-core1.md
+- **{{Operating System}} {{OS}}**: *System software managing hardware*.
+    - aplus-core1.md
+- **{{One-Time Password}} {{OTP}}**: *Single-use authentication code*.
+    - aplus-core1.md
+- **{{Platform as a Service}} {{PaaS}}**: *Cloud development environment*.
+    - aplus-core1.md
+- **{{Privileged Access Management}} {{PAM}}**: *Securing admin accounts*.
+    - aplus-core1.md
+- **{{Personal Area Network}} {{PAN}}**: *Device network near person*.
+    - aplus-core1.md
+- **{{Personal Computer}} {{PC}}**: *General use computer*.
+    - aplus-core1.md
+- **{{Peripheral Component Interconnect}} {{PCI}}**: *Legacy expansion bus*.
+    - aplus-core1.md
+- **{{Peripheral Component Interconnect Express}} {{PCIe}}**: *High-speed serial expansion bus*.
+    - aplus-core1.md
+- **{{Printer Control Language}} {{PCL}}**: *Standard printer page description language*.
+    - aplus-core1.md
+- **{{Personally Identifiable Information}} {{PII}}**: *Data identifying a specific individual*.
+    - aplus-core1.md
+- **{{Personal Identification Number}} {{PIN}}**: *Numeric password for authentication*.
+    - aplus-core1.md
+- **{{Personal Identity Verification}} {{PIV}}**: *US federal smart card standard*.
+    - aplus-core1.md
+- **{{PoE}}**: Power over Ethernet. *Power delivery via network cables*.
+    - aplus-core1.md
+- **{{Post Office Protocol}} {{POP}}**: *Email retrieval protocol*.
+    - aplus-core1.md
+- **{{Power-On Self-Test}} {{POST}}**: *Hardware check during startup*.
+    - aplus-core1.md
+- **{{Power Supply Unit}} {{PSU}}**: *Converts AC to DC power*.
+    - aplus-core1.md
+- **{{Potentially Unwanted Program}} {{PUP}}**: *Software installed without clear consent*.
+    - aplus-core1.md
+- **{{Preboot Execution Environment}} {{PXE}}**: *Booting OS from network*.
+    - aplus-core1.md
+- **{{Quality of Service}} {{QoS}}**: *Prioritizing network traffic*.
+    - aplus-core1.md
+- **{{Remote Authentication Dial-In User Service}} {{RADIUS}}**: *Centralized authentication protocol*.
+    - aplus-core1.md
+- **{{Redundant Array of Independent Disks}} {{RAID}}}**: *Storage performance/redundancy*.
+    - aplus-core1.md
+- **{{Random Access Memory}} {{RAM}}**: *Volatile system memory*.
+    - aplus-core1.md
+- **{{Remote Desktop Protocol}} {{RDP}}**: *GUI remote access protocol*.
+    - aplus-core1.md
+- **{{Resilient File System}} {{ReFS}}**: *Microsoft proprietary file system*.
+    - aplus-core1.md
+- **{{Radio Frequency Identification}} {{RFID}}**: *Wireless tracking technology*.
+    - aplus-core1.md
+- **{{Red-Green-Blue}} {{RGB}}**: *Color model for displays*.
+    - aplus-core1.md
+- **{{Reduced Instruction Set Computer}} {{RISC}}**: *Simplified CPU architecture*.
+    - aplus-core1.md
+- **{{Registered Jack 11}} {{RJ11}}**: *Connector for telephone lines*.
+    - aplus-core1.md
+- **{{Registered Jack 45}} {{RJ45}}**: *Connector for Ethernet cables*.
+    - aplus-core1.md
+- **{{Remote Monitoring and Management}} {{RMM}}**: *IT management software*.
+    - aplus-core1.md
+- **{{Revolutions Per Minute}} {{RPM}}**: *Hard drive speed unit*.
+    - aplus-core1.md
+- **{{Rapid Security Response}} {{RSR}}**: *Quick security updates*.
+    - aplus-core1.md
+- **{{Software as a Service}} {{SaaS}}**: *Cloud-hosted applications*.
+    - aplus-core1.md
+- **{{Security Assertions Markup Language}} {{SAML}}**: *SSO data exchange format*.
+    - aplus-core1.md
+- **{{Storage Area Network}} {{SAN}}**: *Network dedicated to storage*.
+    - aplus-core1.md
+- **{{Serial Attached SCSI}} {{SAS}}**: *Enterprise storage interface*.
+    - aplus-core1.md
+- **{{Serial Advanced Technology Attachment}} {{SATA}}**: *Computer bus interface for storage*.
+    - aplus-core1.md
+- **{{Subscriber Connector}} {{SC}}**: *Square fiber optic connector*.
+    - aplus-core1.md
+- **{{Supervisory Control and Data Acquisition}} {{SCADA}}**: *Industrial control system*.
+    - aplus-core1.md
+- **{{Small Computer System Interface}} {{SCSI}}**: *Legacy parallel interface*.
+    - aplus-core1.md
+- **{{Secure Digital}} {{SD}}**: *Memory card format*.
+    - aplus-core1.md
+- **{{Software-Defined Storage}} {{SDS}}**: *Storage managed by software*.
+    - aplus-core1.md
+- **{{Secure File Transfer Protocol}} {{SFTP}}**: *File transfer over SSH*.
+    - aplus-core1.md
+- **{{Subscriber Identity Module}} {{SIM}}**: *Card storing mobile subscriber info*.
+    - aplus-core1.md
+- **{{Service Level Agreement}} {{SLA}}**: *Contract defining service standards*.
+    - aplus-core1.md
+- **{{S.M.A.R.T}}**: Self-Monitoring, Analysis, and Reporting Technology. *Drive health monitoring*.
+    - aplus-core1.md
+- **{{Server Message Block}} {{SMB}}**: *Network file sharing protocol*.
+    - aplus-core1.md
+- **{{Short Message Service}} {{SMS}}**: *Text messaging service*.
+    - aplus-core1.md
+- **{{Simple Mail Transfer Protocol}} {{SMTP}}**: *Email sending protocol*.
+    - aplus-core1.md
+- **{{Simple Network Management Protocol}} {{SNMP}}**: *Network device monitoring*.
+    - aplus-core1.md
+- **{{Small Outline Dual In-line Memory Module}} {{SODIMM}}**: *Laptop memory form factor*.
+    - aplus-core1.md
+- **{{Small Office/Home Office}} {{SOHO}}**: *Small business network environment*.
+    - aplus-core1.md
+- **{{Standard Operating Procedure}} {{SOP}}**: *Step-by-step instructions*.
+    - aplus-core1.md
+- **{{Sender Policy Framework}} {{SPF}}**: *Email spoofing prevention*.
+    - aplus-core1.md
+- **{{Simple Protocol for Independent Computing Environments}} {{SPICE}}**: *Virtual desktop protocol*.
+    - aplus-core1.md
+- **{{Structured Query Language}} {{SQL}}**: *Database management language*.
+    - aplus-core1.md
+- **{{Solid State Drive}} {{SSD}}**: *Flash-based storage device*.
+    - aplus-core1.md
+- **{{Secure Shell}} {{SSH}}**: *Encrypted remote command interface*.
+    - aplus-core1.md
+- **{{Service Set Identifier}} {{SSID}}**: *Wireless network name*.
+    - aplus-core1.md
+- **{{Single Sign-On}} {{SSO}}**: *One login for multiple services*.
+    - aplus-core1.md
+- **{{Straight Tip}} {{ST}}**: *Bayonet fiber optic connector*.
+    - aplus-core1.md
+- **{{Terminal Access Controller Access-Control System}} {{TACACS}}**: *Authentication protocol*.
+    - aplus-core1.md
+- **{{Transmission Control Protocol}} {{TCP}}**: *Reliable connection-oriented protocol*.
+    - aplus-core1.md
+- **{{Temporal Key Integrity Protocol}} {{TKIP}}**: *Legacy WPA encryption*.
+    - aplus-core1.md
+- **{{Twisted Nematic}} {{TN}}**: *Fast LCD panel type*.
+    - aplus-core1.md
+- **{{Time-based One-Time Password}} {{TOTP}}**: *Dynamic 2FA code*.
+    - aplus-core1.md
+- **{{Trusted Platform Module}} {{TPM}}**: *Hardware security chip*.
+    - aplus-core1.md
+- **{{Text}} {{TXT}}**: *DNS record type*.
+    - aplus-core1.md
+- **{{User Account Control}} {{UAC}}**: *Windows security feature*.
+    - aplus-core1.md
+- **{{User Datagram Protocol}} {{UDP}}**: *Fast connectionless protocol*.
+    - aplus-core1.md
+- **{{Unified Extensible Firmware Interface}} {{UEFI}}**: *Modern BIOS replacement*.
+    - aplus-core1.md
+- **{{Universal Plug and Play}} {{UPnP}}**: *Automatic device discovery*.
+    - aplus-core1.md
+- **{{Uninterruptible Power Supply}} {{UPS}}**: *Battery backup power*.
+    - aplus-core1.md
+- **{{Universal Serial Bus}} {{USB}}**: *Standard peripheral interface*.
+    - aplus-core1.md
+- **{{Universal Serial Bus Type-C}} {{USB-C}}**: *Reversible USB connector*.
+    - aplus-core1.md
+- **{{Unified Threat Management}} {{UTM}}**: *All-in-one security appliance*.
+    - aplus-core1.md
+- **{{Vertical Alignment}} {{VA}}**: *High-contrast LCD panel*.
+    - aplus-core1.md
+- **{{Virtual Desktop Infrastructure}} {{VDI}}**: *Centralized desktop virtualization*.
+    - aplus-core1.md
+- **{{Video Graphics Array}} {{VGA}}**: *Legacy analog video standard*.
+    - aplus-core1.md
+- **{{Virtual Local Area Network}} {{VLAN}}**: *Logical network segmentation*.
+    - aplus-core1.md
+- **{{Virtual Machine}} {{VM}}**: *Emulated computer system*.
+    - aplus-core1.md
+- **{{Virtual Network Computing}} {{VNC}}**: *Remote desktop sharing system*.
+    - aplus-core1.md
+- **{{Voice over Internet Protocol}} {{VoIP}}**: *Voice calls over network*.
+    - aplus-core1.md
+- **{{Virtual Private Network}} {{VPN}}**: *Encrypted network tunnel*.
+    - aplus-core1.md
+- **{{Video Random Access Memory}} {{VRAM}}**: *Graphics card memory*.
+    - aplus-core1.md
+- **{{Wide Area Network}} {{WAN}}**: *Large geographic network*.
+    - aplus-core1.md
+- **{{Wireless Access Point}} {{WAP}}**: *Device creating Wi-Fi network*.
+    - aplus-core1.md
+- **{{Wired Equivalent Privacy}} {{WEP}}**: *Deprecated wireless security*.
+    - aplus-core1.md
+- **{{Windows Remote Management}} {{WinRM}}**: *Windows management protocol*.
+    - aplus-core1.md
+- **{{Wireless Internet Service Provider}} {{WISP}}**: *Internet via wireless link*.
+    - aplus-core1.md
+- **{{Wireless Local Area Network}} {{WLAN}}**: *Local network using radio*.
+    - aplus-core1.md
+- **{{Wi-Fi Protected Access}} {{WPA}}**: *Wireless security standard*.
+    - aplus-core1.md
+- **{{Wireless Wide Area Network}} {{WWAN}}**: *Cellular network data*.
+    - aplus-core1.md
+- **{{Anything as a Service}} {{XaaS}}**: *General cloud service model*.
+    - aplus-core1.md
+- **{{Extended Detection and Response}} {{XDR}}**: *Cross-platform threat detection*.
+    - aplus-core1.md
+- **{{XFS}} {{XFS}}**: *High-performance 64-bit journaling file system*.
+    - aplus-core1.md
+- **{{Cross-Site Scripting}} {{XXS (XSS)}}**: *Injection of malicious scripts*.
+    - aplus-core1.md
+
+## Unsorted
+
+- **{{Authentication, Authorization, and Accounting}} {{AAA}}**: *Framework for access control*.
+    - aplus-core2.md
+- **{{Access Control List}} {{ACL}}**: *Rules determining access rights*.
+    - aplus-core2.md
+- **{{Automatic Document Feeder}} {{ADF}}**: *Device feeding multiple pages*.
+    - aplus-core2.md
+- **{{Advanced Encryption Standard}} {{AES}}**: *Symmetric encryption algorithm*.
+    - aplus-core2.md
+- **{{Advanced Micro Devices}} {{AMD}}**: *CPU and GPU manufacturer*.
+    - aplus-core2.md
+- **{{Access Point}} {{AP}}**: *Device creating wireless network*.
+    - aplus-core2.md
+- **{{Apple File System}} {{APFS}}**: *File system for macOS/iOS*.
+    - aplus-core2.md
+- **{{Automatic Private IP Addressing}} {{APIPA}}**: *Link-local address assignment*.
+    - aplus-core2.md
+- **{{Advanced RISC Machine}} {{ARM}}**: *RISC-based processor architecture*.
+    - aplus-core2.md
+- **{{Advanced Technology Extended}} {{ATX}}**: *Standard motherboard form factor*.
+    - aplus-core2.md
+- **{{Acceptable Use Policy}} {{AUP}}**: *Rules for network usage*.
+    - aplus-core2.md
+- **{{Business Email Compromise}} {{BEC}}**: *Fraud using compromised email*.
+    - aplus-core2.md
+- **{{Basic Input/Output System}} {{BIOS}}**: *Legacy firmware interface*.
+    - aplus-core2.md
+- **{{Bayonet Neill-Concelman}} {{BNC}}**: *Connector for coaxial cable*.
+    - aplus-core2.md
+- **{{Blue Screen of Death}} {{BSOD}}**: *Windows critical error screen*.
+    - aplus-core2.md
+- **{{Bring Your Own Device}} {{BYOD}}**: *Policy for personal devices*.
+    - aplus-core2.md
+- **{{Common Access Card}} {{CAC}}**: *US DoD smart card*.
+    - aplus-core2.md
+- **{{Column Address Strobe}} {{CAS}}**: *Memory timing parameter*.
+    - aplus-core2.md
+- **{{Common Internet File System}} {{CIFS}}**: *Dialect of SMB protocol*.
+    - aplus-core2.md
+- **{{Configuration Management Database}} {{CMDB}}**: *Repository of IT assets*.
+    - aplus-core2.md
+- **{{Complementary Metal-Oxide Semiconductor}} {{CMOS}}**: *Technology for BIOS settings*.
+    - aplus-core2.md
+- **{{Canonical Name}} {{CNAME}}**: *DNS alias record*.
+    - aplus-core2.md
+- **{{Central Processing Unit}} {{CPU}}**: *Main processing chip*.
+    - aplus-core2.md
+- **{{D-subminiature 9}} {{DB-9}}**: *Connector for serial ports*.
+    - aplus-core2.md
+- **{{Distributed Denial of Service}} {{DDoS}}**: *Attack from multiple sources*.
+    - aplus-core2.md
+- **{{Double Data Rate}} {{DDR}}**: *Memory transfer technology*.
+    - aplus-core2.md
+- **{{Dynamic Host Configuration Protocol}} {{DHCP}}**: *Automated IP assignment*.
+    - aplus-core2.md
+- **{{Dual In-line Memory Module}} {{DIMM}}**: *Desktop memory module*.
+    - aplus-core2.md
+- **{{DomainKeys Identified Mail}} {{DKIM}}**: *Email authentication method*.
+    - aplus-core2.md
+- **{{Data Loss Prevention}} {{DLP}}**: *Protection against data leaks*.
+    - aplus-core2.md
+- **{{Domain-based Message Authentication, Reporting, and Conformance}} {{DMARC}}**: *Email validation policy*.
+    - aplus-core2.md
+- **{{Domain Name System}} {{DNS}}**: *Resolves hostnames to IPs*.
+    - aplus-core2.md
+- **{{Denial of Service}} {{DoS}}**: *Attack disrupting service availability*.
+    - aplus-core2.md
+- **{{Digital Rights Management}} {{DRM}}**: *Copyright protection technology*.
+    - aplus-core2.md
+- **{{Digital Subscriber Line}} {{DSL}}**: *Internet via telephone lines*.
+    - aplus-core2.md
+- **{{Digital Visual Interface}} {{DVI}}**: *Digital video connector*.
+    - aplus-core2.md
+- **{{Error Correcting Code}} {{ECC}}**: *Memory detecting/fixing errors*.
+    - aplus-core2.md
+- **{{Endpoint Detection and Response}} {{EDR}}**: *Host-based security monitoring*.
+    - aplus-core2.md
+- **{{Encrypting File System}} {{EFS}}**: *Windows file encryption*.
+    - aplus-core2.md
+- **{{End of Life}} {{EOL}}**: *Product support termination*.
+    - aplus-core2.md
+- **{{External Serial Advanced Technology Attachment}} {{eSATA}}**: *External storage interface*.
+    - aplus-core2.md
+- **{{Electrostatic Discharge}} {{ESD}}**: *Sudden flow of electricity*.
+    - aplus-core2.md
+- **{{Embedded Subscriber Identity Module}} {{eSIM}}**: *Programmable built-in SIM*.
+    - aplus-core2.md
+- **{{End User License Agreement}} {{EULA}}**: *Software usage contract*.
+    - aplus-core2.md
+- **{{Extended File Allocation Table}} {{exFAT}}**: *Optimized flash drive filesystem*.
+    - aplus-core2.md
+- **{{Function as a Service}} {{FaaS}}**: *Serverless computing model*.
+    - aplus-core2.md
+- **{{File Allocation Table 32-bit}} {{FAT32}}**: *Legacy compatible filesystem*.
+    - aplus-core2.md
+- **{{Face Recognition Technology}} {{FRT}}**: *Biometric identification using faces*.
+    - aplus-core2.md
+- **{{File Transfer Protocol}} {{FTP}}**: *Unencrypted file transfer*.
+    - aplus-core2.md
+- **{{Grandfather-Father-Son}} {{GFS}}**: *Backup rotation scheme*.
+    - aplus-core2.md
+- **{{Global Positioning System}} {{GPS}}**: *Satellite-based navigation*.
+    - aplus-core2.md
+- **{{GUID Partition Table}} {{GPT}}**: *Modern partitioning standard*.
+    - aplus-core2.md
+- **{{Graphics Processing Unit}} {{GPU}}**: *Circuit for image rendering*.
+    - aplus-core2.md
+- **{{Graphical User Interface}} {{GUI}}**: *Visual user interface*.
+    - aplus-core2.md
+- **{{Globally Unique Identifier}} {{GUID}}**: *Unique reference number*.
+    - aplus-core2.md
+- **{{High Definition}} {{HD}}**: *Video resolution of 720p/1080p*.
+    - aplus-core2.md
+- **{{Hard Disk Drive}} {{HDD}}**: *Magnetic storage device*.
+    - aplus-core2.md
+- **{{High-Definition Multimedia Interface}} {{HDMI}}**: *Digital video/audio interface*.
+    - aplus-core2.md
+- **{{Hardware Security Module}} {{HSM}}**: *Physical crypto processing device*.
+    - aplus-core2.md
+- **{{Hypertext Transfer Protocol}} {{HTTP}}**: *Unsecured web traffic protocol*.
+    - aplus-core2.md
+- **{{Hypertext Transfer Protocol Secure}} {{HTTPS}}**: *Encrypted web traffic protocol*.
+    - aplus-core2.md
+- **{{Infrastructure as a Service}} {{IaaS}}**: *Cloud virtualized hardware resources*.
+    - aplus-core2.md
+- **{{Identity and Access Management}} {{IAM}}**: *Managing user digital identities*.
+    - aplus-core2.md
+- **{{Internet Mail Access Protocol}} {{IMAP}}**: *Email retrieval with syncing*.
+    - aplus-core2.md
+- **{{Input/Output Operations Per Second}} {{IOPS}}**: *Storage performance metric*.
+    - aplus-core2.md
+- **{{Internet of Things}} {{IoT}}**: *Network of connected physical objects*.
+    - aplus-core2.md
+- **{{Internet Protocol}} {{IP}}**: *Routing packets across networks*.
+    - aplus-core2.md
+- **{{Intrusion Prevention System}} {{IPS}}**: *Active threat blocking device*.
+    - aplus-core2.md
+- **{{Infrared}} {{IR}}**: *Line-of-sight wireless communication*.
+    - aplus-core2.md
+- **{{International Organization for Standardization}} {{ISO}}**: *Global standard setting body*.
+    - aplus-core2.md
+- **{{Internet Service Provider}} {{ISP}}**: *Company providing internet access*.
+    - aplus-core2.md
+- **{{Information Technology eXtended}} {{ITX}}**: *Compact motherboard form factor*.
+    - aplus-core2.md
+- **{{Keyboard-Video-Mouse}} {{KVM}}**: *Switch controlling multiple PCs*.
+    - aplus-core2.md
+- **{{Local Area Network}} {{LAN}}**: *Network in limited area*.
+    - aplus-core2.md
+- **{{Lucent Connector}} {{LC}}**: *Small form-factor fiber connector*.
+    - aplus-core2.md
+- **{{Liquid Crystal Display}} {{LCD}}**: *Flat panel display technology*.
+    - aplus-core2.md
+- **{{Lightweight Directory Access Protocol}} {{LDAP}}**: *Directory service protocol*.
+    - aplus-core2.md
+- **{{Light Emitting Diode}} {{LED}}**: *Semiconductor light source*.
+    - aplus-core2.md
+- **{{Long Term Evolution}} {{LTE}}**: *4G mobile communication standard*.
+    - aplus-core2.md
+- **{{Media Access Control}} {{MAC}}**: *Unique physical network address*.
+    - aplus-core2.md
+- **{{Metropolitan Area Network}} {{MAN}}**: *City-wide computer network*.
+    - aplus-core2.md
+- **{{Master Boot Record}} {{MBR}}**: *Legacy boot sector standard*.
+    - aplus-core2.md
+- **{{Mobile Device Management}} {{MDM}}**: *Device administration software*.
+    - aplus-core2.md
+- **{{Managed Detection and Response}} {{MDR}}**: *Outsourced security monitoring*.
+    - aplus-core2.md
+- **{{Multifactor Authentication}} {{MFA}}**: *Using multiple auth methods*.
+    - aplus-core2.md
+- **{{Multifunction Product / Printer}} {{MFP}}**: *All-in-one printer device*.
+    - aplus-core2.md
+- **{{MMC}}**: MultiMediaCard. *Flash memory card standard*.
+    - aplus-core2.md
+- **{{Mutual Non-Disclosure Agreement}} {{MNDA}}**: *Contract protecting shared secrets*.
+    - aplus-core2.md
+- **{{Mini-SATA}} {{mSATA}}**: *Small form factor SSD interface*.
+    - aplus-core2.md
+- **{{Mail Exchanger}} {{MX}}**: *DNS record for email*.
+    - aplus-core2.md
+- **{{Network Access Control}} {{NAC}}**: *Managing device network admission*.
+    - aplus-core2.md
+- **{{Network Attached Storage}} {{NAS}}**: *File-level storage server*.
+    - aplus-core2.md
+- **{{Network Address Translation}} {{NAT}}**: *Mapping private to public IPs*.
+    - aplus-core2.md
+- **{{Non-Disclosure Agreement}} {{NDA}}**: *Confidentiality contract*.
+    - aplus-core2.md
+- **{{Network Basic Input/Output System}} {{NetBIOS}}**: *Legacy local network API*.
+    - aplus-core2.md
+- **{{Near Field Communication}} {{NFC}}**: *Short-range contactless communication*.
+    - aplus-core2.md
+- **{{Network Interface Card}} {{NIC}}**: *Hardware for network connection*.
+    - aplus-core2.md
+- **{{New Technology File System}} {{NTFS}}**: *Default Windows file system*.
+    - aplus-core2.md
+- **{{Network Time Protocol}} {{NTP}}**: *Clock synchronization protocol*.
+    - aplus-core2.md
+- **{{Non-Volatile Memory Express}} {{NVMe}}**: *High-speed SSD interface*.
+    - aplus-core2.md
+- **{{Original Equipment Manufacturer}} {{OEM}}**: *Maker of components/software*.
+    - aplus-core2.md
+- **{{Organic Light Emitting Diode}} {{OLED}}**: *Display with self-lit pixels*.
+    - aplus-core2.md
+- **{{Optical Network Terminal}} {{ONT}}**: *Fiber-to-copper interface*.
+    - aplus-core2.md
+- **{{Operating System}} {{OS}}**: *System software managing hardware*.
+    - aplus-core2.md
+- **{{One-Time Password}} {{OTP}}**: *Single-use authentication code*.
+    - aplus-core2.md
+- **{{Platform as a Service}} {{PaaS}}**: *Cloud development environment*.
+    - aplus-core2.md
+- **{{Privileged Access Management}} {{PAM}}**: *Securing admin accounts*.
+    - aplus-core2.md
+- **{{Personal Area Network}} {{PAN}}**: *Device network near person*.
+    - aplus-core2.md
+- **{{Personal Computer}} {{PC}}**: *General use computer*.
+    - aplus-core2.md
+- **{{Peripheral Component Interconnect}} {{PCI}}**: *Legacy expansion bus*.
+    - aplus-core2.md
+- **{{Peripheral Component Interconnect Express}} {{PCIe}}**: *High-speed serial expansion bus*.
+    - aplus-core2.md
+- **{{Printer Control Language}} {{PCL}}**: *Standard printer page description language*.
+    - aplus-core2.md
+- **{{Personally Identifiable Information}} {{PII}}**: *Data identifying a specific individual*.
+    - aplus-core2.md
+- **{{Personal Identification Number}} {{PIN}}**: *Numeric password for authentication*.
+    - aplus-core2.md
+- **{{Personal Identity Verification}} {{PIV}}**: *US federal smart card standard*.
+    - aplus-core2.md
+- **{{Power over Ethernet}} {{PoE}}**: *Power delivery via network cables*.
+    - aplus-core2.md
+- **{{Post Office Protocol}} {{POP}}**: *Email retrieval protocol*.
+    - aplus-core2.md
+- **{{Power-On Self-Test}} {{POST}}**: *Hardware check during startup*.
+    - aplus-core2.md
+- **{{Power Supply Unit}} {{PSU}}**: *Converts AC to DC power*.
+    - aplus-core2.md
+- **{{Potentially Unwanted Program}} {{PUP}}**: *Software installed without clear consent*.
+    - aplus-core2.md
+- **{{Preboot Execution Environment}} {{PXE}}**: *Booting OS from network*.
+    - aplus-core2.md
+- **{{Quality of Service}} {{QoS}}**: *Prioritizing network traffic*.
+    - aplus-core2.md
+- **{{Remote Authentication Dial-In User Service}} {{RADIUS}}**: *Centralized authentication protocol*.
+    - aplus-core2.md
+- **{{Redundant Array of Independent Disks}} {{RAID}}}**: *Storage performance/redundancy*.
+    - aplus-core2.md
+- **{{Random Access Memory}} {{RAM}}**: *Volatile system memory*.
+    - aplus-core2.md
+- **{{Remote Desktop Protocol}} {{RDP}}**: *GUI remote access protocol*.
+    - aplus-core2.md
+- **{{Resilient File System}} {{ReFS}}**: *Microsoft proprietary file system*.
+    - aplus-core2.md
+- **{{Radio Frequency Identification}} {{RFID}}**: *Wireless tracking technology*.
+    - aplus-core2.md
+- **{{Red-Green-Blue}} {{RGB}}**: *Color model for displays*.
+    - aplus-core2.md
+- **{{Reduced Instruction Set Computer}} {{RISC}}**: *Simplified CPU architecture*.
+    - aplus-core2.md
+- **{{Registered Jack 11}} {{RJ11}}**: *Connector for telephone lines*.
+    - aplus-core2.md
+- **{{Registered Jack 45}} {{RJ45}}**: *Connector for Ethernet cables*.
+    - aplus-core2.md
+- **{{Remote Monitoring and Management}} {{RMM}}**: *IT management software*.
+    - aplus-core2.md
+- **{{Revolutions Per Minute}} {{RPM}}**: *Hard drive speed unit*.
+    - aplus-core2.md
+- **{{Rapid Security Response}} {{RSR}}**: *Quick security updates*.
+    - aplus-core2.md
+- **{{Software as a Service}} {{SaaS}}**: *Cloud-hosted applications*.
+    - aplus-core2.md
+- **{{Security Assertions Markup Language}} {{SAML}}**: *SSO data exchange format*.
+    - aplus-core2.md
+- **{{Storage Area Network}} {{SAN}}**: *Network dedicated to storage*.
+    - aplus-core2.md
+- **{{Serial Attached SCSI}} {{SAS}}**: *Enterprise storage interface*.
+    - aplus-core2.md
+- **{{Serial Advanced Technology Attachment}} {{SATA}}**: *Computer bus interface for storage*.
+    - aplus-core2.md
+- **{{Subscriber Connector}} {{SC}}**: *Square fiber optic connector*.
+    - aplus-core2.md
+- **{{Supervisory Control and Data Acquisition}} {{SCADA}}**: *Industrial control system*.
+    - aplus-core2.md
+- **{{Small Computer System Interface}} {{SCSI}}**: *Legacy parallel interface*.
+    - aplus-core2.md
+- **{{Secure Digital}} {{SD}}**: *Memory card format*.
+    - aplus-core2.md
+- **{{Software-Defined Storage}} {{SDS}}**: *Storage managed by software*.
+    - aplus-core2.md
+- **{{Secure File Transfer Protocol}} {{SFTP}}**: *File transfer over SSH*.
+    - aplus-core2.md
+- **{{Subscriber Identity Module}} {{SIM}}**: *Card storing mobile subscriber info*.
+    - aplus-core2.md
+- **{{Service Level Agreement}} {{SLA}}**: *Contract defining service standards*.
+    - aplus-core2.md
+- **{{S.M.A.R.T}}**: Self-Monitoring, Analysis, and Reporting Technology. *Drive health monitoring*.
+    - aplus-core2.md
+- **{{Server Message Block}} {{SMB}}**: *Network file sharing protocol*.
+    - aplus-core2.md
+- **{{Short Message Service}} {{SMS}}**: *Text messaging service*.
+    - aplus-core2.md
+- **{{Simple Mail Transfer Protocol}} {{SMTP}}**: *Email sending protocol*.
+    - aplus-core2.md
+- **{{Simple Network Management Protocol}} {{SNMP}}**: *Network device monitoring*.
+    - aplus-core2.md
+- **{{Small Outline Dual In-line Memory Module}} {{SODIMM}}**: *Laptop memory form factor*.
+    - aplus-core2.md
+- **{{Small Office/Home Office}} {{SOHO}}**: *Small business network environment*.
+    - aplus-core2.md
+- **{{Standard Operating Procedure}} {{SOP}}**: *Step-by-step instructions*.
+    - aplus-core2.md
+- **{{Sender Policy Framework}} {{SPF}}**: *Email spoofing prevention*.
+    - aplus-core2.md
+- **{{Simple Protocol for Independent Computing Environments}} {{SPICE}}**: *Virtual desktop protocol*.
+    - aplus-core2.md
+- **{{Structured Query Language}} {{SQL}}**: *Database management language*.
+    - aplus-core2.md
+- **{{Solid State Drive}} {{SSD}}**: *Flash-based storage device*.
+    - aplus-core2.md
+- **{{Secure Shell}} {{SSH}}**: *Encrypted remote command interface*.
+    - aplus-core2.md
+- **{{Service Set Identifier}} {{SSID}}**: *Wireless network name*.
+    - aplus-core2.md
+- **{{Single Sign-On}} {{SSO}}**: *One login for multiple services*.
+    - aplus-core2.md
+- **{{Straight Tip}} {{ST}}**: *Bayonet fiber optic connector*.
+    - aplus-core2.md
+- **{{Terminal Access Controller Access-Control System}} {{TACACS}}**: *Authentication protocol*.
+    - aplus-core2.md
+- **{{Transmission Control Protocol}} {{TCP}}**: *Reliable connection-oriented protocol*.
+    - aplus-core2.md
+- **{{Temporal Key Integrity Protocol}} {{TKIP}}**: *Legacy WPA encryption*.
+    - aplus-core2.md
+- **{{Twisted Nematic}} {{TN}}**: *Fast LCD panel type*.
+    - aplus-core2.md
+- **{{Time-based One-Time Password}} {{TOTP}}**: *Dynamic 2FA code*.
+    - aplus-core2.md
+- **{{Trusted Platform Module}} {{TPM}}**: *Hardware security chip*.
+    - aplus-core2.md
+- **{{Text}} {{TXT}}**: *DNS record type*.
+    - aplus-core2.md
+- **{{User Account Control}} {{UAC}}**: *Windows security feature*.
+    - aplus-core2.md
+- **{{User Datagram Protocol}} {{UDP}}**: *Fast connectionless protocol*.
+    - aplus-core2.md
+- **{{Unified Extensible Firmware Interface}} {{UEFI}}**: *Modern BIOS replacement*.
+    - aplus-core2.md
+- **{{UPnP}}**: Universal Plug and Play. *Automatic device discovery*.
+    - aplus-core2.md
+- **{{Uninterruptible Power Supply}} {{UPS}}**: *Battery backup power*.
+    - aplus-core2.md
+- **{{Universal Serial Bus}} {{USB}}**: *Standard peripheral interface*.
+    - aplus-core2.md
+- **{{Universal Serial Bus Type-C}} {{USB-C}}**: *Reversible USB connector*.
+    - aplus-core2.md
+- **{{Unified Threat Management}} {{UTM}}**: *All-in-one security appliance*.
+    - aplus-core2.md
+- **{{Vertical Alignment}} {{VA}}**: *High-contrast LCD panel*.
+    - aplus-core2.md
+- **{{Virtual Desktop Infrastructure}} {{VDI}}**: *Centralized desktop virtualization*.
+    - aplus-core2.md
+- **{{Video Graphics Array}} {{VGA}}**: *Legacy analog video standard*.
+    - aplus-core2.md
+- **{{Virtual Local Area Network}} {{VLAN}}**: *Logical network segmentation*.
+    - aplus-core2.md
+- **{{Virtual Machine}} {{VM}}**: *Emulated computer system*.
+    - aplus-core2.md
+- **{{Virtual Network Computing}} {{VNC}}**: *Remote desktop sharing system*.
+    - aplus-core2.md
+- **{{Voice over Internet Protocol}} {{VoIP}}**: *Voice calls over network*.
+    - aplus-core2.md
+- **{{Virtual Private Network}} {{VPN}}**: *Encrypted network tunnel*.
+    - aplus-core2.md
+- **{{Video Random Access Memory}} {{VRAM}}**: *Graphics card memory*.
+    - aplus-core2.md
+- **{{Wide Area Network}} {{WAN}}**: *Large geographic network*.
+    - aplus-core2.md
+- **{{Wireless Access Point}} {{WAP}}**: *Device creating Wi-Fi network*.
+    - aplus-core2.md
+- **{{Wired Equivalent Privacy}} {{WEP}}**: *Deprecated wireless security*.
+    - aplus-core2.md
+- **{{Windows Remote Management}} {{WinRM}}**: *Windows management protocol*.
+    - aplus-core2.md
+- **{{Wireless Internet Service Provider}} {{WISP}}**: *Internet via wireless link*.
+    - aplus-core2.md
+- **{{Wireless Local Area Network}} {{WLAN}}**: *Local network using radio*.
+    - aplus-core2.md
+- **{{Wi-Fi Protected Access}} {{WPA}}**: *Wireless security standard*.
+    - aplus-core2.md
+- **{{Wireless Wide Area Network}} {{WWAN}}**: *Cellular network data*.
+    - aplus-core2.md
+- **{{Anything as a Service}} {{XaaS}}**: *General cloud service model*.
+    - aplus-core2.md
+- **{{Extended Detection and Response}} {{XDR}}**: *Cross-platform threat detection*.
+    - aplus-core2.md
+- **{{XFS}} {{XFS}}**: *High-performance 64-bit journaling file system*.
+    - aplus-core2.md
+- **{{XSS}}**: Cross-Site Scripting. *Injection of malicious scripts*.
+    - aplus-core2.md
+"""
+
+filename = "acronym-list.md"
+
+with open(filename, "a", encoding="utf-8") as f:
+    f.write(data)
+
+print(f"Successfully appended acronyms to {filename}")
