@@ -38,3 +38,53 @@ noremap <leader>wrb :vertical resize +2<cr>
     " # disable search highlighting with <C-L> when refreshing screen
     nnoremap <C-L> :nohl<CR><C-L>
 
+
+" Options
+set autowrite
+set clipboard=unnamedplus
+set completeopt=menu,menuone,noselect
+set conceallevel=2
+set confirm
+set cursorline
+set expandtab
+set foldlevel=99
+set foldmethod=indent
+set formatoptions=jcroqlnt
+set grepformat=%f:%l:%c:%m
+set grepprg=rg\ --vimgrep
+set ignorecase
+set laststatus=3
+set linebreak
+set list
+set mouse=a
+set number
+set pumblend=10
+set pumheight=10
+set relativenumber
+set noruler
+set scrolloff=4
+set sessionoptions=buffers,curdir,tabpages,winsize,help,globals,skiprtp,folds
+set shiftround
+set shiftwidth=2
+set shortmess+=W
+set shortmess+=I
+set shortmess+=c
+set shortmess+=C
+set noshowmode
+set sidescrolloff=8
+set signcolumn=yes
+set smartcase
+set smartindent
+set spelllang=en
+set splitbelow
+set splitright
+set tabstop=2
+set termguicolors
+set timeoutlen=300
+set undofile
+set undolevels=10000
+set updatetime=200
+set virtualedit=block
+set wildmode=longest:full,full
+set winminwidth=5
+set nowrap

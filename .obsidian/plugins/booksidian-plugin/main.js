@@ -10991,6 +10991,8 @@ var Shelf = class {
           for (const _book of feed.items) {
             const book = new Book(this.plugin, _book);
             book.coverImage = yield this.fetchCoverImage(book.cover, book.id);
+            if (this.shelfName === "read" && !book.shelves.contains("read"))
+              book.shelves.push("read");
             this.setBook(book);
           }
           page++;
