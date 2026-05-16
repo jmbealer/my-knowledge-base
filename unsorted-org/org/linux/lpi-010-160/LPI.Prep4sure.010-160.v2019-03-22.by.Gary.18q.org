@@ -1,0 +1,369 @@
+                                     010-160.18q
+
+Number: 010-160
+Passing Score: 800
+Time Limit: 120 min
+
+
+
+
+                                         010-160
+
+
+
+
+                               https://www.gratisexam.com/
+
+
+
+                      Linux Essentials Certificate Exam, version 1.6
+
+
+
+
+                               https://www.gratisexam.com/
+Exam A
+
+QUESTION 1
+What information can be displayed by top?
+
+A. Existing files, ordered by their size.
+B. Running processes, ordered by CPU or RAM consumption.
+C. User accounts, ordered by the number of logins.
+D. User groups, ordered by the number of members.
+E. User accounts, ordered by the number of files.
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 2
+Which of the following commands can be used to resolve a DNS name to an IP address?
+
+A. dnsname
+B. dns
+C. query
+D. host
+E. iplookup
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 3
+Which of the following outputs comes from the command free?
+
+
+
+
+                                                              https://www.gratisexam.com/
+                                                              https://www.gratisexam.com/
+
+A.
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+
+E.
+
+
+
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 4
+Which of the following outputs could stem from the command last?
+
+A. 1 ls
+   2 cat text.txt
+   3 logout
+
+
+
+                                                              https://www.gratisexam.com/
+B. Password for user last changed at Sat Mar 31 16:38:57 EST 2018
+C. Last login: Fri Mar 23 10:56:39 2018 from server.example.com
+D. EXT4-fs (dm-7): mounted filesystem with ordered data mode. Opts: (null)
+E. root    tty2    Wed May 17 21:11 - 21:11    (00:00)
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 5
+Which permissions are set on a regular file once the permissions have been modified with the command chmod 654 file.txt?
+
+A. drw-r-xr--
+B. d—wxr-x--
+C. –wxr-x--x
+D. –rwxrw---x
+E. -rw-r-xr--
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 6
+Which of the following permissions are set on the /tmp/ directory?
+
+A. rwxrwxrwt
+B. ------rwX
+C. rwSrw-rw-
+D. rwxrwS---
+E. r-xr-X--t
+
+Correct Answer: A
+
+
+                                                                 https://www.gratisexam.com/
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 7
+Which command adds the new user tux and creates the user’s home directory with default configuration files?
+
+A. defaultuser tux
+B. useradd –m tux
+C. usercreate tux
+D. useradd –o default tux
+E. passwd –a tux
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 8
+Which of the following commands creates an archive file work.tar from the contents of the directory ./work/?
+
+A. tar --new work.tar ./work/
+B. tar –cf work.tar ./work/
+C. tar –create work.tgz –content ./work/
+D. tar work.tar < ./work/
+E. tar work > work.tar
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 9
+
+
+                                                                https://www.gratisexam.com/
+Which of the following keys can be pressed to exit less?
+
+A. l
+B. x
+C. e
+D. q
+E. !
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 10
+The current directory contains the following file:
+
+-rwxr-xr-x 1 root root 859688 Feb 7 08:15 test.sh
+
+Given that the file is a valid shell script, how can this script be executed? (Choose two correct answers.)
+
+A. run test.sh
+B. ${test.sh}
+C. cmd ./test.sh
+D. ./test.sh
+E. bash test.sh
+
+Correct Answer: DE
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 11
+Which of the following commands sorts the output of the command export-logs?
+
+A. export-logs < sort
+
+
+                                                                     https://www.gratisexam.com/
+B. export-logs > sort
+C. export-logs & sort
+D. export-logs | sort
+E. export-logs <> sort
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 12
+Which package management tool is used in Red Hat-based Linux Systems?
+
+A. portage
+B. rpm
+C. apt-get
+D. dpkg
+E. packagectl
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 13
+Which of the following programs is a graphical editor for vector graphics?
+
+A. Python
+B. NGINX
+C. Samba
+D. Inkscape
+E. MySQL
+
+Correct Answer: D
+
+
+                                                                    https://www.gratisexam.com/
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 14
+Where is the operating system of a Raspberry Pi stored?
+
+A. On the master device attached to the Raspberry Pi’s IDE bus.
+B. On a read only partition on the Raspberry Pi’s firmware, next to the BIOS.
+C. On a removable SD card which is put into the Raspberry Pi.
+D. On a Linux extension module connected to the Raspberry Pi’s GPIO pins.
+E. On rewritable flash storage which is built into the Raspberry Pi.
+
+Correct Answer: C
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 15
+What is defined by a Free Software license?
+
+A. Details of the technical documentation each contributor has to provide.
+B. The programming languages which may be used to extend the licensed program.
+C. A complete list of libraries required to compile the licensed software.
+D. Limits on the purposes for which the licensed software may be used.
+E. Conditions for modifying and distributing the licensed software.
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 16
+
+
+                                                                   https://www.gratisexam.com/
+Why are web browser cookies considered dangerous?
+
+A. Cookies support identification and tracking of users.
+B. Cookies are always public and accessible to anyone on the internet.
+C. Cookies consume significant amounts of storage and can exhaust disk space.
+D. Cookies store critical data which is lost when a cookie is deleted.
+E. Cookies can contain and execute viruses and malware.
+
+Correct Answer: A
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 17
+Which of the following characters in a shell prompt indicates the shell is running with root privileges?
+
+A. !
+B. #
+C. *
+D. &
+E. $
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 18
+What is true about a recursive directory listing?
+
+A. It includes the content of sub-directories.
+B. It includes the permissions of the directory listed.
+C. It includes details of file system internals, such as inodes.
+D. It includes ownership information for the files.
+
+
+                                                                      https://www.gratisexam.com/
+E. It includes a preview of content for each file in the directory.
+
+Correct Answer: A
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                                      https://www.gratisexam.com/
+
+
+
+
+                                                                      https://www.gratisexam.com/

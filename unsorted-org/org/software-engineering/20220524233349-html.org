@@ -1,0 +1,1464 @@
+:PROPERTIES:
+:ID:       d8c234ae-93fa-4569-8d7b-d10ae08377a9
+:TOC: include all :ignore this
+:mtime:    20230206181553 20220814203013
+:ctime:    20220524233349
+:END:
+#+title: HTML
+#+date: [2022-05-24 Tue 23:33]
+#+FILETAGS: :html:
+
+* Testing HTML
+#+begin_src html
+<!-- single line comment -->
+
+<!--
+multiple line comment
+-->
+
+<!-- An HTML file always starts by tell the browser that the page is html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Site</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <a href="http://codepen.io/anon/pen/xwjLbZ">
+      Come look at what this shows
+    </a>
+    <p>This is paragraph.</p>
+    <p>This is another paragraph.</p>
+    <ul>
+      <li>This is an item in a non-enumerated list (bullet list)</li>
+      <li>This is another item</li>
+      <li>And this is the last item on the list</li>
+    </ul>
+  </body>
+</html>
+#+end_src
+* HTML Anki
+:PROPERTIES:
+:ANKI_DECK: 00-software engineering::HTML
+:ANKI_TAGS: HTML
+:END:
+
+*** Single-line Comment
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660416607612
+:END:
+**** Text
+Create a single line comment
+
+#+begin_src html
+{{c1::<!-- single line comment -->}}
+#+end_src
+
+*** Multiple-line Comment
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660416431787
+:END:
+**** Text
+Create a multiple line comment
+
+#+begin_src html
+{{c1::<!--}}
+{{c1::multiple line comment}}
+{{c1::-->}}
+#+end_src
+
+*** DOCTYPE
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660418428137
+:END:
+**** Text
+An HTML file always starts?
+
+#+begin_src html
+{{c1::<!DOCTYPE html>}}
+<html lang="en">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+#+end_src
+
+*** HTML element syntax
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424132413
+:END:
+**** Text
+What is an HTML element syntax
+
+{{c1::<start tag>content</end tag>}}
+{{c1::<element-name>content</element-name>}}
+
+*** HTML void element syntax
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424132463
+:END:
+**** Text
+What is an HTML void element syntax
+
+#+begin_src org
+{{c1::<start tag />}}
+{{c1::<element-name />}}
+#+end_src
+
+*** HTML start tag syntax with an attribute
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424132512
+:END:
+**** Text
+What is an HTML start tag syntax with an  attribute
+#+begin_src org
+{{c1::<element-name attribute="value">}}
+#+end_src
+
+*** HTML an html element
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424775487
+:END:
+**** Text
+Create the root element of an HTML document and set language to english
+
+#+begin_src html
+<!DOCTYPE>
+{{c1::<html lang="en">...</html>}}
+#+end_src
+
+*** HTML a head element
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424775537
+:END:
+**** Text
+Create the container for processing information and metadata for an HTML document
+
+#+begin_src html
+<html>
+  {{c1::<head>...</head>}}
+  <body>...</body>
+</html>
+#+end_src
+
+*** HTML a body element
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660424775587
+:END:
+**** Text
+Create the container for the displayable content of an HTML document
+
+#+begin_src html
+<html>
+  <head>...</head>
+  {{c1::<body>...</body>}}
+</html>
+#+end_src
+
+*** HTML a base element
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660425773862
+:END:
+**** Text
+Set the base URL to use for all relative URLs and open link in new tab
+
+#+begin_src html
+<head>
+  {{c1::<base href="https://www.example.com" target="_blank" />}}
+  ...
+</head>
+#+end_src
+
+*** HTML Link to CSS
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660427106864
+:END:
+**** Text
+Link to an external stylesheets
+
+#+begin_src html
+<head>
+  <!-- Basic way to link CSS -->
+  {{c1::<link href="style.css" rel="stylesheet" />}}
+</head>
+#+end_src
+
+*** HTML Link to alternative CSS
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660427106939
+:END:
+**** Text
+Link to alternative external stylesheets
+
+#+begin_src html
+<head>
+  <!-- Providing alternative stylesheets -->
+  {{c1::<link href="default.css" rel="stylesheet" title="Defaut Style" />}}
+  {{c1::<link href="fancy.css" rel="stylesheet" title="Fancy" />}}
+  {{c1::<link href="basic.css" rel="stylesheet" title="Basic" />}}
+</head>
+#+end_src
+
+* What is HTML?
+
+HTML stands for HyperText Markup Language
+
+HTML is a markup language used to design web pages.
+
+HTML is the combination of Hypertext and Markup language.
+Hypertext defines the link between the web pages.
+Markup language defines the text document within the tag that define the structure of web pages.
+
+A markup language is a computer language that define the structure and
+presentation of raw text.
+HyperText is text displayed on a computer
+
+
+index.html: All your HTML code will be written here.
+
+HTML is the standard markup language for creating Web pages.
+
+HTML: Structure
+CSS: Presentation
+JavaScript: Behavior
+
+PHP or similar: Backend
+CMS: Content Management
+
+* What is HTML used for?
+
+HTML is used to create the structure of web pages that are displayed on the World Wide Web (www).
+It contains Tags and Attributes that are used to design the web pages. Also, we can link multiple pages using Hyperlinks.
+
+HTML is used to create the structure and content of a webpage.
+create the structure of a web page
+
+HTML is the skeleton of all web pages.
+
+HTML describes the structure of a Web page
+
+Text: Words and written content
+Media: Images, videos, and other visual or auditory elements
+Links: Clickable paths to other places, like other websites
+Containers: Elements that are used to give web pages structure for layout purposes
+
+* html document structure elements
+
+* what is an html elements?
+
+most html elements have a start tag and an end tag, with the content in between.
+An HTML element is the opening tag, followed by content, followed by the closing tag.
+a tipical element includes a start tag with some attributes, text content, and a end tag.
+
+An HTML tag is composed of the name of the element, surrounded by angle brackets.
+An end tag also has a slash after the opening angle bracket, to distinguish it from the start tag.
+Tags are used to delimit the start and end of elements in the markup. (...) The start and end tags of certain normal elements can be omitted, (...)
+
+
+
+Elements and tags are not the same things. Tags begin or end an element in source code, whereas elements are part of the DOM, the document model for displaying the page in the browser.
+elements are not tags.
+
+html elements structure the webpage and define its content.
+
+
+
+
+
+Anatomy of an HTML element
+start tag + content + end tag
+
+html element :: a unit of content in html; formed with tags and content
+html tag :: the element name, surrounded by angle brackets.
+start tag :: first tag in the html element; can inculde attributes
+content :: the information contained between the tags
+end tag :: last tag in the html element.
+
+HTML elements can be nested inside other elements.
+The enclosed element is the child of the enclosing parent element.
+
+
+    The main parts of our element are as follows:
+
+    The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.
+    The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.
+    The content: This is the content of the element, which in this case, is just text.
+    The element: The opening tag, the closing tag, and the content together comprise the element.
+
+
+
+void elements don't require the end tag
+A typical example is the <br> (hard line-break) element.
+A void element's behavior is predefined, and it cannot contain any content or other elements.
+
+
+
+Types of HTML elements: normal elements, raw text elements, and void elements.
+
+Normal elements usually have both a start tag and an end tag;
+  a start tag (<tag>) marking the beginning of an element, which may incorporate any number of HTML attributes;
+  some amount of content, including text and other elements;
+  an end tag, in which the element name is prefixed with a slash: </tag>.
+
+Raw text elements (also known as text or text-only elements) are constructed with:
+    a start tag (in the form <tag>) marking the beginning of an element, which may incorporate any number of HTML attributes;
+    some amount of text content, but no elements (all tags, apart from the applicable end tag, will be interpreted as content);
+    an end tag, in which the element name is prefixed with a slash: </tag>. In some versions of HTML, the end tag is optional for some elements. The end tag is required in XHTML.
+An example is the <title> element, which must not contain other elements (including markup of text), only plain text.
+
+Void elements (also sometimes called empty elements, single elements or stand-alone elements) only have a start tag (in the form <tag>), which contains any HTML attributes. They may not contain any children, such as text or other elements. For compatibility with XHTML, the HTML specification allows an optional space and slash (<tag /> is permissible). The space and slash are required in XHTML and other XML applications. Two common void elements are <br /> (for a hard line-break, such as in a poem or an address) and <hr /> (for a thematic break). Other such elements are often place-holders which reference external files, such as the image (<img />) element. The attributes included in the element will then point to the external file in question. Another example of a void element is <link />, for which the syntax is:
+This <link /> element points the browser at a style sheet to use when presenting the HTML document to the user. Note that in the HTML syntax attributes don't have to be quoted if they are composed only of certain characters: letters, digits, the hyphen-minus and the period. When using the XML syntax (XHTML), on the other hand, all attributes must be quoted, and a spaced trailing slash is required before the last angle bracket:
+
+
+HTML attributes are specified inside the start tag. For example, the <abbr> element, which represents an abbreviation, expects a title attribute within its opening tag. This would be written as:
+HTML attributes define desired behavior or indicate additional element properties. Most attributes require a value. In HTML, the value can be left unquoted if it does not include spaces (attribute=value), or it can be quoted with single or double quotes (attribute='value' or attribute="value"). In XML, those quotes are required.
+Boolean attributes, on the other hand, do not require a value to be specified. An example is the checked for checkboxes:
+<input type=checkbox checked>
+
+
+
+
+#+begin_src html
+<!-- opening tag for paragraph element -->
+<p class="para">
+  <!-- content for paragraph element -->
+  Hello world!
+  <!-- closing tag for paragraph element -->
+</p>
+#+end_src
+
+Tag
+
+In HTML, a tag is used for creating an element.
+
+The name of an HTML element is the name used in angle brackets such as <p> for paragraph. Note that the end tag's name is preceded by a slash character, </p>, and that in empty elements, the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case.
+
+
+
+html is organized as a collection of family tree relationships.
+child element :: is an element nested inside another element.
+the relationship between elements and their ancestor and descendent elements is
+known as hierarchy.
+
+
+attritbutes are content added to the opening tag
+  name=value
+
+
+
+
+    Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name and editor-note is the attribute value. The class attribute allows you to give the element a non-unique identifier that can be used to target it (and any other elements with the same class value) with style information and other things.
+
+An attribute should always have the following:
+    A space between it and the element name (or the previous attribute, if the element already has one or more attributes).
+    The attribute name followed by an equal sign.
+    The attribute value wrapped by opening and closing quotation marks.
+
+Nesting elements
+You can put elements inside other elements too — this is called nesting.
+If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a <strong> element, which means that the word is to be strongly emphasized:
+<p>My cat is <strong>very</strong> grumpy.</p>
+
+
+Empty elements
+Some elements have no content and are called empty elements. Take the <img> element that we already have in our HTML page:
+<img src="images/firefox-icon.png" alt="My test image">
+This contains two attributes, but there is no closing </img> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.
+
+* What is HTML Doctype?
+
+<!DOCTYPE html> - defines the document type as html.
+<!DOCTYPE> - Defines the document type
+
+<!DOCTYPE> is not an HTML element.
+
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+* html element
+
+The html element is the root element of an HTML document.
+The <html> element will contain all of your HTML code.
+
+The root element of an HTML document; all other elements are contained in this.
+The HTML element delimits the beginning and the end of an HTML document.
+
+<html>...</html> - 	Defines an HTML document
+
+define an HTML root element with language attribute of english
+<html lang="en">
+  ...
+</html>
+
+* head element
+
+The head element contains metadata about the HTML document.
+
+An html element, as its first child.
+
+The head of an HTML file contains all of the non-visual elements that help make the page work.
+
+Defines metadata about the html document.
+<head>
+  ...
+</head>
+
+Elements that can be used inside the <head>:
+
+    <title>
+    <base>
+    <link>
+    <style>
+    <meta>
+    <script>
+    <noscript>
+    <template>
+
+    The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+The HTML <head> Element
+
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+
+HTML metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+
+A simple HTML document:
+
+The HTML <style> Element
+
+The <style> element is used to define style information for a single HTML page:
+Example
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+
+The HTML <link> Element
+
+The <link> element defines the relationship between the current document and an external resource.
+
+The <link> tag is most often used to link to external style sheets:
+Example
+<link rel="stylesheet" href="mystyle.css">
+
+Tip: To learn all about CSS, visit our CSS Tutorial.
+The HTML <meta> Element
+
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
+Examples
+
+Define the character set used:
+<meta charset="UTF-8">
+
+Define keywords for search engines:
+<meta name="keywords" content="HTML, CSS, JavaScript">
+
+Define a description of your web page:
+<meta name="description" content="Free Web tutorials">
+
+Define the author of a page:
+<meta name="author" content="John Doe">
+
+Refresh document every 30 seconds:
+<meta http-equiv="refresh" content="30">
+
+Setting the viewport to make your website look good on all devices:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Example of <meta> tags:
+Example
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+Setting The Viewport
+
+The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+
+You should include the following <meta> element in all your web pages:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+
+Tip: If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.
+
+
+
+Without the viewport meta tag
+
+
+
+With the viewport meta tag
+
+The HTML <script> Element
+
+The <script> element is used to define client-side JavaScripts.
+
+The following JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":
+Example
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+Tip: To learn all about JavaScript, visit our JavaScript Tutorial.
+The HTML <base> Element
+
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+
+The <base> tag must have either an href or a target attribute present, or both.
+
+There can only be one single <base> element in a document!
+Example
+
+Specify a default URL and a default target for all links on a page:
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+Chapter Summary
+
+    The <head> element is a container for metadata (data about data)
+    The <head> element is placed between the <html> tag and the <body> tag
+    The <title> element is required and it defines the title of the document
+    The <style> element is used to define style information for a single document
+    The <link> tag is most often used to link to external style sheets
+    The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+    The <script> element is used to define client-side JavaScripts
+    The <base> element specifies the base URL and/or target for all relative URLs in a page
+
+HTML head Elements
+Tag 	Description
+<head> 	Defines information about the document
+<title> 	Defines the title of a document
+<base> 	Defines a default address or a default target for all links on a page
+<link> 	Defines the relationship between a document and an external resource
+<meta> 	Defines metadata about an HTML document
+<script> 	Defines a client-side script
+<style> 	Defines style information for a document
+
+* title element
+
+The <title> HTML element defines the document's title that is shown in a browser's title bar or a page's tab.
+It only contains text; tags within the element are ignored.
+
+child element of head
+only includes the global attributes
+
+create a title inside of head name foo
+<head>
+  <title>foo</title>
+  ...
+</head>
+
+
+The HTML <title> Element
+
+The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
+
+The <title> element is required in HTML documents!
+
+The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+
+The <title> element:
+
+    defines a title in the browser toolbar
+    provides a title for the page when it is added to favorites
+    displays a title for the page in search engine-results
+
+So, try to make the title as accurate and meaningful as possible!
+
+* link element
+
+The link HTML element specifies relationships between the current document and an external resource.
+<link> 	Defines the relationship between a document and an external resource (most used to link to style sheets)
+
+
+This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
+
+A <link> element can occur either in the <head> or <body> element, depending on whether it has a link type that is body-ok. For example, the stylesheet link type is body-ok, and therefore <link rel="stylesheet"> is permitted in the body. However, this isn't a good practice to follow; it makes more sense to separate your <link> elements from your body content, putting them in the <head>.
+
+ element includes the global attributes.
+
+create a link to style.csss from current html document
+<link href="style.css" rel="stylesheet" type="text/css">
+
+* metadata element
+
+The <meta> HTML element represents metadata that cannot be represented by other HTML meta-related elements, like <base>, <link>, <script>, <style> or <title>.
+
+None, it is an empty element.
+Tag omission 	As it is a void element, the start tag must be present and the end tag must not be present.
+Permitted parents
+
+    <meta charset>, <meta http-equiv>: a <head> element. If the http-equiv is not an encoding declaration, it can also be inside a <noscript> element, itself inside a <head> element.
+    <meta name>: any element that accepts metadata content.
+    <meta itemprop>: any element that accepts metadata content or flow content.
+
+    The type of metadata provided by the <meta> element can be one of the following:
+
+    If the name attribute is set, the <meta> element provides document-level metadata, applying to the whole page.
+    If the http-equiv attribute is set, the <meta> element is a pragma directive, providing information equivalent to what can be given by a similarly-named HTTP header.
+    If the charset attribute is set, the <meta> element is a charset declaration, giving the character encoding in which the document is encoded.
+    If the itemprop attribute is set, the <meta> element provides user-defined metadata.
+
+Meta tags
+<meta charset="utf-8">
+The meta tag holds important information related to the data within the web page.
+The meta tag above is declaring the charset, or character set, to tell browsers how to process the characters and code within the file. What do you think this next meta tag does?
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+The meta tag in this example sets the width of the web page to follow the screen-width of whichever device a user is looking at. For instance, the width of a computer monitor will be larger than the width of a phone screen, and this meta tag ensures that the web page displays properly across both devices. This meta tag will be particularly useful when you start building web pages that are responsive to different screen-widths.
+
+
+<meta> 	Defines metadata about an HTML document
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+* body element
+
+The <body> HTML element represents the content of an HTML document.
+
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+The <body> element contains all the HTML code for the text, images, links, and containers used for the web page structure.
+Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
+
+
+There can be only one <body> element in a document.
+
+It must be the second element of an <html> element.
+The body tag follows the head tag.
+
+
+
+Body
+<body>
+  ...
+</body>
+
+
+
+
+    The <h1> element defines a large heading
+    The <p> element defines a paragraph
+
+
+
+
+
+
+    Anchor tags (<a>) are used to link to internal pages, external pages or content on the same page.
+    You can create sections on a webpage and jump to them using <a> tags and adding ids to the elements you wish to jump to.
+    Whitespace between HTML elements helps make code easier to read while not changing how elements appear in the browser.
+    Indentation also helps make code easier to read. It makes parent-child relationships visible.
+    Comments are written in HTML using the following syntax: <!-- comment -->.
+
+
+
+
+
+
+
+
+Basic HTML
+Tag 	Description
+
+<h1> to <h6> 	Defines HTML headings
+<p> 	Defines a paragraph
+<br> 	Inserts a single line break
+<hr> 	Defines a thematic change in the content
+<!--...--> 	Defines a comment
+
+As a foundational component of a website's display, HTML is a great language for adding these elements to a web page:
+
+    Text: Words and written content
+
+    Media: Images, videos, and other visual or auditory elements
+
+    Links: Clickable paths to other places, like other websites
+
+    Containers: Elements that are used to give web pages structure for layout purposes
+
+
+* HTML comments
+Comments in the HTML code are written with dashes – and an exclamation point !, all enclosed in two angle brackets <>. They're structured like this: <!-- HTML comment -->. Take a look at the example below.
+<!-- This would be an HTML comment. Useful notes can be placed here -->
+
+<!--
+  This works
+  for multiple
+  lines as well
+-->
+
+* table
+    The <table> element creates a table.
+    The <tr> element adds rows to a table.
+    To add data to a row, you can use the <td> element.
+    Table headings clarify the meaning of data. Headings are added with the <th> element.
+    Table data can span columns using the colspan attribute.
+    Table data can span rows using the rowspan attribute.
+    Tables can be split into three main sections: a head, a body, and a footer.
+    A table’s head is created with the <thead> element.
+    A table’s body is created with the <tbody> element.
+    A table’s footer is created with the <tfoot> element.
+    All the CSS properties you learned about in this course can be applied to tables and their data.
+    scope attribute
+ row - this value makes it clear that the heading is for a row.
+col - this value makes it clear that the heading is for a column
+
+
+
+HTML includes six levels of headings, which are ranked according to importance.
+These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+
+To create a horizontal line, use the <hr> tag.
+In HTML5, the <hr> tag defines a thematic break.
+
+The browser does not display comments, but they help document the HTML and add descriptions, reminders, and other notes.
+
+The <p> Element
+To create a paragraph, simply type in the <p> element with its opening and closing tags:
+Browsers automatically add an empty line before and after a paragraph.
+
+Single Line Break
+Opening the HTML file in the browser shows that a single line break has been added to the paragraph:
+The <br /> element has no end tag.
+
+
+    <section> - An element used to represent a standalone section for which a more specific element can’t be found. This usually has a heading as a child element. A section should make sense in the outline of a document, whereas <div> is used for styling. This is a semantic element you’ll learn more about in a later lesson.
+    class - A global attribute that has a list of classes pertaining to an element. You’ll see this used with <section> in the practice.
+    <hr> - An element that is used to a break between paragraph-level elements. It is displayed as a horizontal line. This is also a semantic element that you’ll learn more about in a later lesson.
+
+* forms
+    The purpose of a <form> is to allow users to input information and send it.
+    The <form>‘s action attribute determines where the form’s information goes.
+    The <form>‘s method attribute determines how the information is sent and processed.
+    To add fields for users to input information we use the <input> element and set the type attribute to a field of our choosing:
+        Setting type to "text" creates a single row field for text input.
+        Setting type to "password" creates a single row field that censors text input.
+        Setting type to "number" creates a single row field for number input.
+        Setting type to "range" creates a slider to select from a range of numbers.
+        Setting type to "checkbox" creates a single checkbox which can be paired with other checkboxes.
+        Setting type to "radio" creates a radio button that can be paired with other radio buttons.
+        Setting type to "list" will pair the <input> with a <datalist> element if the id of both are the same.
+        Setting type to "submit" creates a submit button.
+    A <select> element is populated with <option> elements and renders a dropdown list selection.
+    A <datalist> element is populated with <option> elements and works with an <input> to search through choices.
+    A <textarea> element is a text input field that has a customizable area.
+    When a <form> is submitted, the name of the fields that accept input and the value of those fields are sent as name=value pairs.
+
+Using the <form> element in conjunction with the other elements listed above allows us to create sites that take into consideration the wants and needs of our users. Take the opportunity to take what you’ve learned, and apply it!
+
+Form Validation
+Review
+
+Awesome job adding client-side validation to <form>s!
+
+Let’s quickly recap:
+
+    Client-side validations happen in the browser before information is sent to a server.
+    Adding the required attribute to an input related element will validate that the input field has information in it.
+    Assigning a value to the min attribute of a number input element will validate an acceptable minimum value.
+    Assigning a value to the max attribute of a number input element will validate an acceptable maximum value.
+    Assigning a value to the minlength attribute of a text input element will validate an acceptable minimum number of characters.
+    Assigning a value to the maxlength attribute of a text input element will validate an acceptable maximum number of characters.
+    Assigning a regex to pattern matches the input to the provided regex.
+    If validations on a <form> do not pass, the user gets a message explaining why and the <form> cannot be submitted.
+
+These quick checks help ensure that input data is correct and safe for our servers. It also helps give users immediate feedback on what they need to fix instead of having to wait for a server to send back that information.
+
+* Semantic HTML
+Review
+
+Congrats on completing this lesson on Semantic HTML! Now that you know the benefits of Semantic HTML and how to use it, you can incorporate semantic elements into your website to make it more accessible and to make the code easier to read.
+
+Let’s review some of the topics we covered throughout the lesson:
+
+    Semantic HTML introduces meaning to a page through specific elements that provide context as to what is in between the tags.
+    Semantic HTML is a modern standard and makes a website accessible for people who use screen readers to translate the webpage and improves your website’s SEO.
+    <header>, <nav> , <main> and <footer> create the basic structure of the webpage.
+    <section> defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.
+    <article> holds content that makes sense on its own such as articles, blogs, comments, etc.
+    <aside> contains information that is related to the main content, but not required in order to understand the dominant information.
+    <figure> encapsulates all types of media.
+    <figcaption> is used to describe the media in <figure>.
+    <video>, <embed>, and <audio> elements are used for media files.
+
+Now, apply this knowledge to become a better Web Developer.
+
+
+HTML element
+    A component of an HTML document
+HTML tag
+    Keywords that define how content in an HTML document appears on a web page
+HTML paragraph
+    A block of content, such as text, that is represented by a <p> element
+HTML heading
+    A title or subtitle used to break up, organize, and highlight content on a web page
+HTML attribute
+    An extra bit of information that is tied with certain elements and is written inside an opening tag
+Alternative text
+    Also called alt text, an image description that can be added as an image attribute in an HTML document
+
+
+
+HTML Headings
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading:
+Example
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+HTML Paragraphs
+
+HTML paragraphs are defined with the <p> tag:
+Example
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+HTML Links
+
+HTML links are defined with the <a> tag:
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+
+The link's destination is specified in the href attribute.
+
+Attributes are used to provide additional information about HTML elements.
+
+You will learn more about attributes in a later chapter.
+HTML Images
+
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+How to View HTML Source?
+
+Have you ever seen a Web page and wondered "Hey! How did they do that?"
+View HTML Source Code:
+
+Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.
+Inspect an HTML Element:
+
+Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.
+
+* unsorted
+
+HTML element
+A component of an HTML document
+HTML tag
+Keywords that define how content in an HTML document appears on a web page
+There are 16 elements that are self-closing, meaning they only require a single tag.
+The syntax of a self-closing tag is as follows: <element attributes />.
+HTML paragraph
+A block of content, such as text, that is represented by a <p> element
+HTML heading
+A title or subtitle used to break up, organize, and highlight content on a web page
+HTML attribute
+An extra bit of information that is tied with certain elements and is written inside an opening tag
+  attributes are always written inside the opening tag
+  attribute="value"
+Alternative text
+Also called alt text, an image description that can be added as an image attribute in an HTML document
+
+
+Steps to finding the HTML
+Follow the steps below to view the HTML on the Mend website or another website of your choosing.
+Right-click the background or text of the web page, which will reveal a drop-down menu.
+Click the View Page Source option in the drop-down.
+The next page that opens up should reveal all of the HTML code on that web page. Take a moment to look around and review the HTML code. Although you aren't expected to understand any of this yet, you may be able to make sense of some of the code.
+
+
+Unordered list
+Also called a bulleted list, a list with items that have no particular order
+Ordered list
+Also called a numbered list, a list with items that must be laid out in a specific sequence
+Horizontal rule
+Also called a page divider or a ruler, a line that separates distinct blocks of content
+
+
+
+html lists
+Lists are used to break up and organize content within a web page, making it much easier for a user to read and understand.
+
+HTML supports two kinds of lists: unordered lists, for list items that have no particular order, and ordered lists, for items that must be laid out in a specific sequence or arrangement. Unordered lists often use bullets, and ordered lists often use consecutive numbers or letters.
+
+You'll use these HTML tags to make these lists:
+
+<ul>: This stands for unordered list. You'll use the opening tag <ul> and the closing tag </ul>.
+<ol>: This stands for ordered list. You'll use the opening tag <ol> and the closing tag </ol>.
+<li>: This stands for list item. You'll use the opening tag <li> and the closing tag </li> to set off every item in a list.
+
+Check out the examples below.
+<h2>My Hobbies</h2>
+<ul>
+  <li>Skiing</li>
+  <li>Painting</li>
+  <li>Coding</li>
+</ul>
+
+<h2>My Top 3 Movies</h2>
+<ol>
+  <li>Inside Out</li>
+  <li>Up</li>
+  <li>Coco</li>
+</ol>
+
+Embedded lists
+Sometimes, however, you might have a list item that has additional list items—a list within a list. Fortunately, HTML lets you nest lists inside one another.
+
+When you nest lists in HTML, the inner list, which is the sublist, will be indented inside the outer list. An indented sublist uses a circle icon, but with a little extra customization, you can create unique embedded lists with unique icons. Take a look at the code for these embedded lists below. Can you track where and how the sublists begin?
+
+<h1>Lessons to Write Today</h1>
+<ol>
+  <li>Lesson Introduction</li>
+  <li>HTML Lists
+    <ul>
+      <li>Unordered</li>
+      <li>Ordered</li>
+    </ul>
+  </li>
+  <li>Code Comments
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </li>
+  <li>Link Breaks</li>
+  <li>RollOvers</li>
+</ol>
+
+
+Page dividers and horizontal rules
+Page dividers allow you to organize web page content by creating a separation between distinct blocks of content. In HTML, these dividers are called horizontal rules (sometimes called rulers). You'll see these written into the HTML as <hr>. Horizontal rules are self-closing; in other words, there is no closing tag.
+
+Text-formatting elements
+There are 10 formatting elements in HTML that provide a default visual style to HTML text. These all change the visual style and formatting, but some also add meaning to the content and code, which can be useful for search engines. This is called semantic coding, which you'll learn more about later. For now, it's just important to know that it relies on logical descriptive terms to make it easier for search engines (and people) to read and understand what the code is doing.
+
+<b>: Sets the text in bold.
+<strong>: Sets the text in bold and is semantically important.
+<i>: Sets the text in italics.
+<em>: Sets the text in italics and is semantically important.
+<mark>: Sets the text as highlighted.
+<small>: Sets the text as smaller than the rest of the element.
+<del>: Sets the text to display as crossed out.
+<ins>: Sets the text to display as inserted by adding an underline to the text.
+<sub>: Sets the text as subscript, which is smaller and a bit below the other text.
+<sup>: Sets the text as superscript, which is smaller and a bit above the other text.
+
+
+Line break
+At times, you may want to create a line break in your web page. A break in a line of text can be created using <br>. Like horizontal rules, line breaks are self-closing—you only need to add the single opening tag: <br>. It's worth noting that in older versions of HTML, like HTML4, line breaks were written with a forward slash, </br>. You may see this from time to time in your online research.
+
+However, this HTML element should be used only to make line breaks. Don't use <br> to separate paragraphs of text or to create space between HTML elements. If you need to create space between text or images in CSS, you should work with margins or padding. But don't worry; you'll learn more about this in upcoming lessons.
+
+
+division element <div> a container that divides the page into sections.
+  these sections are very useful for grouping elements in your html.
+
+displaying text
+paragraphs(<p>) contain a block of plain text.
+<span> contains short pieces of text or other html
+  used to separate small pieces of content that are on the same line as other content.
+
+styling text
+<em> italic emphasis.
+<strong> bold emphasis.
+
+<br> line break
+  only need opening tag
+
+<ul> unordered list
+an unordered list outlines individual list items with a bullet point.
+<li> list item tag is used to describe an item in a list.
+<ol> ordered list are like unordered list, except that each list item is numbered.
+
+<img> add image
+  is a self-closing tag.
+  required attribute src
+self-closing tags may include or omit the final slash; both will render properly.
+alt alternate text attribute bring meaning to the images
+
+<video> add video
+  required attribute src
+  width and height attributes used to set size of the video display
+  controls attribute
+
+
+
+    Headings and sub-headings, <h1> to <h6> tags, are used to provide titles for sections of content.
+    <p>, <span> and <div> tags specify text or blocks.
+    The <em> and <strong> tags are used to emphasize text.
+    Line breaks are created with the <br> tag.
+    Ordered lists (<ol>) are numbered and unordered lists (<ul>) are bulleted.
+    Images (<img>) and videos (<video>) can be added by linking to an existing source.
+
+** web page template
+
+The index
+A nice feature of Replit is that it provides the basic framework for a website built with HTML, CSS, and JavaScript. As mentioned above, this is useful because this code is used by every HTML page on the internet. In Replit, this foundational code can be found in the index.html file, or the index. This will help you get started.
+
+Screenshot of HTML code in index.html displayed in a REPL on the Replit website.
+Take a moment to explore and become familiar with the different parts of this core code. The pieces of the index are defined below.
+
+
+
+
+
+
+
+Using an external CSS page can make things easier. With a separate style.css file, you can keep all the core CSS code written in one place, and then multiple HTML pages can reference that CSS file. That way, you can update the CSS code on all your web pages simultaneously and consistently simply by changing that one CSS file. And although this link doesn't need to be in the <head> element of the HTML page, it is a best practice to put it there.
+
+The attribute rel stands for relationship—the relationship between the HTML document and the CSS file. The type specifies the media type of the linked file, and in this case, it's labeled as text/css. However, it's worth noting that the type attribute is no longer required in web pages, but it tends to stick around because, well, it doesn't hurt to have it.
+
+
+Script
+<script src="script.js"></script>
+Similar to how the <link> element connects the HTML code to the CSS file, this <script> element pulls in the JavaScript code that is written in the script.js file. And just like it's a best practice to keep your CSS file in the <head>, it's a good idea to keep the script line of code at the bottom of the HTML page, below the other HTML code but just before the closing tag of the HTML element. This will allow the web page to load first (and faster) because the (heftier) JavaScript code will load last.
+
+You won't be adding JavaScript to your HTML and CSS projects just yet. For now, you can just leave this where it is (or you can delete it).
+
+The normalize.css file
+Believe it or not, web browsers have their own default styles for displaying HTML—which can lead to some unexpected or problematic changes to your website. So an <h1> element on one page may look slightly different in Chrome and Firefox, even if they are the same code. Fortunately, there's a solution: normalize.css. Watch the video below to learn more.
+
+
+Nicolas Gallagher's normalize.css is a CSS library that sets all HTML elements to display consistently across all supported web browsers. It's a small file that styles and formats headings, paragraphs, blockquotes, and other common HTML elements so that they appear identical (or very similar) on Chrome, Firefox, Safari, and other browsers.
+
+Although you can download the normalize.css file and manage it locally, it tends to work best if you link to the file from a content delivery network, or CDN. It's a good idea to load the normalize.css file first in the code, before applying your own style rules using your own style.css file. You can see this in the code sample below.
+
+Why is it better to reference normalize.css before your style.css file? Well, CSS will apply styles in the order that they appear in the code. This means that if you add the normalize.css file last, the styles in the normalize.css file may actually overwrite your styles! This concept will be covered in more depth in a later lesson. At this point, it's just important to remember which file to put in first.
+
+One other thing to keep in mind: the only difference between a normalize.css file and a normalize.min.css file is that the .min version has all the spaces and visual formatting removed. This makes the code harder to read, but it creates a smaller file size—which is very helpful when millions of websites are referencing it.
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+
+A note on index.html files
+The index.html icon
+Return for a moment to the ever-important index.html file. The filename index.html is significant. When a web browser opens a folder with multiple HTML files, it will always display the index.html page first, without that page needing to be referenced. The video below provides a bit more information.
+
+Every website's home page will be named index.html.
+Naturally, working with multiple projects that all have the web page index.html can be confusing. This is why making a logical file organization, with proper project folder names, is essential.
+The index.html file needs to be written in lowercase letters. Web file names tend to only use lowercase letters to prevent simple mistakes.
+
+But imagine if an index.html file is missing from a web directory. In this case, two things could happen, based on the web server's preferences:
+The web page opens a 404: File not found error, as seen below.
+Screenshot of GitHub's 404: File not found page.
+The web page displays a list of all the files in that directory, as seen below. However, this can be dangerous, as any file from this directory can be viewed and then downloaded. In this situation, the web page display will depend on your web hosting provider and how they handle directories without index.html files.
+
+Tips for naming folders and files
+Avoid spaces in your filenames. Never use spaces in any web file or folder names. Every space will be converted into a %20⁠, which can make the names of your folders and files unreadable. For example, the filename bad web page.html will look like this when viewed online: http://www.example.com/bad%20web%20page.html. Without spaces, that URL could be much cleaner and clearer.
+Use hyphens to separate your words. Use hyphens - rather than spaces. Turns out, search engine optimization, or SEO, appreciates hyphens. (And SEO helps determine how websites get ranked in users' search queries.) Here's a good use of hyphens: http://www.website.com/sub-folder/file-name.html.
+Avoid underscores to separate your words. Underscores, on the other hand, aren't preferable. SEO considers filenames with underscores as one full name, so underscores are not as good as hyphens when it comes to search engine ranking. Here's an example of what not to do: http://www.website.com/sub_folder/really_bad_topic.html.
+Use only lowercase letters. Web servers are case sensitive. For this reason, it's important to write both filenames and folder names in lowercase letters; this prevents confusion regarding what is or isn't capitalized.
+Use descriptive words. Use specific, descriptive words to explain what the file is, does, or shows. Using good names helps keep you organized, too. Consider these examples:
+Bad: image1.jpg
+Good: black-lab-puppy.jpg
+Bad: page.html
+Good: contact.html
+Do not use special characters: Rely on the letters of the alphabet (A through Z), the numbers 0 through 9, and hyphens (-). But web servers will not link properly to filenames or folders with special symbols or characters. For that reason, don't use these: ; / ? : @ = + \ $ , < > # % " { } | \ ^ [ ].
+
+** links and paths
+
+URL path
+A web address that directs the computer to the precise location of an asset or file, with each necessary step in the path separated by a forward slash
+Absolute link
+A link that uses the full URL path and can link to content outside of the current website
+Relative link
+A link that uses a path that connects one file to another file on the same server
+
+anchor elements = <a></a>
+anchor elements, represented by the <a>, to wrap around text or images to create a link.
+Inside the <a> element, there is an attribute called href. The href, which stands for hypertext reference, refers to the web page that will open when the link is clicked. The web page that opens is based on the specific URL path that is provided in the href
+
+absolute link paths
+Web server name: This is the www.webserver.com in the example below.
+Names of folder or folders: The path could require multiple folders and subfolders. This is seen in the /folder/subfolder/ below.
+Filename: Finally, the path ends with the filename itself: /filename.html.
+<a href="http://www.webserver.com/folder/subfolder/filename.html">Link</a>
+
+Relative link paths
+Names of folder or folders: The path could require multiple folders and subfolders. This is seen in the /folder/subfolder/ part of the code below.
+Filename: The path ends with the filename itself: /filename.html.
+<a href="folder/subfolder/filename.html">Link</a>
+
+Relative link paths can call, or retrieve, files from within the same directory, or they can follow a more complicated route into various folders and subfolders until they connect the path to the web page or image file. Like with absolute links, the / tracks the route into multiple locations to find the desired file, even within the same website. However, relative links work differently than absolute paths. Relative links are different from absolute paths in the following ways:
+
+With relative paths, the web page and the referencing file must be within the same website structure.
+With relative paths, the paths are dependent on where the file is located in reference to the web page.
+
+Here are some examples of relative link paths:
+about.html
+contact.html
+portfolio/project1/index.html
+portfolio/project2/index.html
+
+Here are some examples of relative image paths:
+images/waterfalls/iceland-waterfall.jpg
+gallery/nature/waterfall.jpg
+
+relative link paths up ../file
+<img src="../images/logo.jpg" />
+<img src="../../images/logo.jpg" />
+
+Open links in new tabs
+<a href="http://www.website.com" target="_blank">Link</a>
+
+Contact links
+Whenever you provide an email address or phone number within your website, you can use certain HTML attributes to make the links far more user friendly. Here is the complete collection of options for your reference:
+Including a basic email link
+Including an email link with a subject
+Adding CC and BCC to an email link
+Adding body text to an email Link
+Styling email links
+Including telephone links
+Opening file links
+Downloading file links
+
+   <!-- BASIC EMAIL LINK HERE -->
+    <p><a href="mailto:hello@yoursite.com">Email Me: </a></p>
+    <hr>
+
+** html containers
+
+HTML containers
+HTML elements that wrap around web page content—namely text, images, and links—in order to help you manage the layout and positioning of that content
+Semantic code
+Code that has a specific, logical meaning that helps describe the content that it is associated with
+Semantic container
+An HTML element designed to contain images, text, and links to help with page layout and positioning
+Search engine optimization
+SEO, the process of tailoring web content so that search engines will prioritize your website in relevant search queries
+
+Introduction to HTML containers
+So, what are containers? Containers are specific HTML elements that wrap around web page content—namely text, images, and links—in order to help you manage the layout and positioning of that content. These are the most common HTML5 container tags:
+
+<header> ... </header>
+<nav> ... </nav>
+<footer> ... </footer>
+<main> ... </main>
+<article> ... </article>
+<section> ... </section>
+<div> ... </div>
+
+Before you learn about what each does, you'll need to understand how these containers are similar and why they're important. Here are the similarities:
+
+They all work the exact same way.
+They all wrap around text, images, and links.
+They all provide the same starting shape and placement within the flow of the web page.
+
+And here's why they're important and how they work within the web:
+Search engines use containers to compare content across websites. Specifically, they look at the content within web page containers in order to rank the importance of one website over another. Therefore, using these containers properly and effectively will give your web pages more clout on the web.
+Containers make it easier to read code. The containers group relevant content within it, so it's easier to find what you're looking for. For instance, if you have a logo and navigation within a header container, then you know to look first for the <header>. There, you'll find the logo and navigation.
+
+Semantic code and containers
+At its most basic level, semantics is the study of the meaning of words and phrases. It involves looking at the logic behind language. As you began to see in the previous lesson, semantics play a role in HTML coding. Semantic code is code that has a specific, logical meaning that helps describe the content that it is associated with.
+
+In code, semantic elements more clearly, simply, and (in a way) literally express what they do than non-semantic elements. They do more than provide instructions about how the code should appear or what it should do. Semantic code also has semantic significance that makes it easier for search engines, computers, and programmers to read and understand how it operates.
+
+For instance, consider the text-formatting elements you learned about: <b> and <strong>. If you wanted to make text bold on your web page, you could use either. But the <b> isn't semantic—it doesn't have any other significance other than saying that the text should be presented as bold. An alternative, and better, semantic tag for bolding is <strong>. This tag is preferable because it's actually providing a robust description.
+
+But what is a semantic container? A semantic container is an HTML element designed to contain images, text, and links to help with page layout and positioning. But because it's semantic, a semantic container also has a specific meaning for search engines and the developer. Like semantic code, it helps describe the content that it is associated with.
+
+header container
+As you build web pages, you'll find that nearly every web page that you create should have a header container, which is enclosed in <header> and </header>. A header container helps identify the topics of the content in the web page. The header container may be placed over the navigation, or it can wrap around the navigation so the navigation sits within the header.
+
+As mentioned above, containers help search engines understand and organize websites. Therefore, when used properly, these containers can help improve the search engine optimization, or SEO, of a website, which deals with how search engines rank and prioritize websites in search queries.
+
+To improve the SEO of your website, make sure that the primary header on your web page contains the name of your company or the purpose of the web page. Typically, this will be displayed as a logo in the header.
+
+Because of the hierarchy of the web page content, placing the company or business name within a <h1> heading element will tell search engines you are prioritizing this element of content. Then, within the content sections of the web page, you can use <h2> elements for the important page section titles, and you can rely on <h3> (or smaller) elements for the subheadings of smaller sections on the web page.
+
+Grouping and arranging your content like this helps keep the web page organized for you, your audience, and search engines.
+
+<header> ... </header>
+
+navigation container
+As you might've guessed, the navigation container, set off by <nav> and </nav>, holds the primary navigation links for the website. A navigation container can be used multiple times, at both the top and the bottom of a web page, and contain the main web page links that help orient and guide users through the website. And when the navigation container is placed at the top of a web page, the navigation container can be placed above, below, or within a header container.
+
+Keep in mind that the navigation container does not need to contain every link within a web page. This container is reserved for the primary navigation links, which helps you and search engines understand what links it contains. Though you may still have questions about using navigation links and navigation containers, at this stage, you only need to understand the purpose of the navigation container. The detailed CSS styles used to create that actual navigation will be covered in more detail in future lessons.
+
+<header>
+<nav>...</nav>
+</header>
+
+footer container
+The footer container, which is set off by <footer> and </footer>, sits at the bottom of the web page. It contains important contextual information, such as relevant links or legal details, about the web page content that is placed above it.
+
+Each web page should have at least one footer. This is beneficial for both SEO and accessibility. The footer can contain different kinds of information, including the following:
+
+Copyright details
+Copyright links
+Credit to the website author or designer
+Links to related documents or web pages
+
+Main container
+The main container, enclosed in <main> and </main>, groups together all the main content of a web page.
+
+Note: There can only be one main container per HTML web page. It's essential to include only one main container.
+
+The main container should not contain any content that is repeated across files, such as the following:
+
+Sidebars
+Navigation links
+Copyright information
+Website logos
+Search forms
+
+Article container
+Next up: article containers. Article containers, set off by <article> and </article>, are useful for grouping related content within the web page, generally inside the main container. The content within an article container should be cohesive or connected in some way; the content in an article container should make sense if it were read or seen independently.
+
+For example, if an article container were distributed separately from the rest of the website, it should feel like it stands alone. The emphasis on using article containers for distinct, unique content comes from the container's purpose of self-containment: an article container that holds a weather report for Denver, Colorado, could be moved from one website to another without requiring any additional content or explanation of context. Content like news articles, blog posts, or user comments might be held in article containers. However, when article containers are embedded within other article containers, they are assumed to be part of the parent container and not separate ones.
+
+An article container should always have a heading, usually a heading between the size of an <h2> and an <h6>, because the <h1> should be the primary page heading. Here are some good types of content to contain in an article container:
+
+Blog post
+Forum post
+News story
+Comment
+
+Section container
+Now, you're ready for the section container. The section container, set off by <section> and </section>, groups together certain content within a web page, and it should always have a heading, usually an <h3>,<h4>,<h5>, or <h6>. The <h1> should be the primary page heading, and <h2> should be reserved for the article container heading.
+
+Sections can be used to group related content within article containers, and they are represented by the individual parts within a larger <article>. However, often other containers are better suited to this purpose than a section container. Try to avoid using section containers if other containers, such as article or navigation containers, are more appropriate. Div containers can also be better for styling purposes. And be sure to only use a section container if there is a heading at the start of the section.
+
+div container
+The div container, set off by <div> and </div>, is the most generic container in HTML. And unlike the other containers above, it has no semantic meaning. As you learned above, this means that div containers mean nothing semantically to search engines; they don't provide any additional description about the content they contain to you or the web.
+
+The div stands for division within the web page. Div containers, often referred to as divs, are used to structure web page content in a visual way. They are frequently used to position content within a web page. For instance, divs allow you to reposition content that is by default left aligned, allowing you to center the content within those structural containers discussed above.
+
+Link to locations within a web page
+In previous lessons, you learned how to link text or an image from one page to another web page. Now, you'll learn how to create a link that navigates to another location within the same page.
+
+Imagine that you have a single-page website, with your Home, About Us, Services, and Contact Information as blocks on the web page (which you'll learn more about shortly). In this situation, it can be helpful to contain that content within article containers. That way, the user can navigate to different information, contained in article containers, on the page using anchor links.
+
+But those links need to "know" where to navigate to. To ensure that a link takes the user to the correct destination on the web page, you need to assign an id attribute to the location that you want to link to. In this case, you'll add it to the article containers, like in the examples below.
+
+<article id="home">Full Home Content Here</article>
+<article id="about">Full About Content Here</article>
+<article id="services">Full Services Content Here</article>
+<article id="contact">Full Contact Content Here</article>
+Then, when linking to an anchor's id, you'll include a hash symbol # and then the id name that you assigned, as seen here.
+
+<a href="#contact">Contact Link</a>
+This link will take you to the contact section of the web page!
+
+Remember, it's important to follow the same naming conventions for id names as you would for web files.
+
+Backgrounds: Colors and images
+Just like other HTML elements, you can style containers. Specifically, you can give them different backgrounds, like a specific color or image. There are five properties that define the backgrounds for all HTML elements, including containers:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+For now, you'll focus on learning about the first two: background-color and background-image. These are explained below. If you want to learn more, check out the MDN page on backgrounds, which provides more information about these properties.
+
+Background color
+As you may have guessed, the background-color property assigns a color to the background of an HTML element, such as a container. The color can be assigned using either a color name or a hex color code. Both of the examples below are valid.
+
+Color name: red
+Hex color code: #ff0000
+
+Background image
+The background-image property, on the other hand, assigns an image to display as the background of an HTML element. The background-image allows you to easily display an image behind the text within a container.
+
+An image in the background of an HTML element repeats by default. This means that it displays at its native size and then is duplicated, on the right and bottom of the image, to cover the entire background of the HTML element.
+
+
+
+Formatting
+
+<acronym> 	Not supported in HTML5. Use <abbr> instead.
+Defines an acronym
+<abbr> 	Defines an abbreviation or an acronym
+<address> 	Defines contact information for the author/owner of a document/article
+<b> 	Defines bold text
+<bdi> 	Isolates a part of text that might be formatted in a different direction from other text outside it
+<bdo> 	Overrides the current text direction
+<big> 	Not supported in HTML5. Use CSS instead.
+Defines big text
+<blockquote> 	Defines a section that is quoted from another source
+<center> 	Not supported in HTML5. Use CSS instead.
+Defines centered text
+<cite> 	Defines the title of a work
+<code> 	Defines a piece of computer code
+<del> 	Defines text that has been deleted from a document
+<dfn> 	Specifies a term that is going to be defined within the content
+<em> 	Defines emphasized text
+<font> 	Not supported in HTML5. Use CSS instead.
+Defines font, color, and size for text
+<i> 	Defines a part of text in an alternate voice or mood
+<ins> 	Defines a text that has been inserted into a document
+<kbd> 	Defines keyboard input
+<mark> 	Defines marked/highlighted text
+<meter> 	Defines a scalar measurement within a known range (a gauge)
+<pre> 	Defines preformatted text
+<progress> 	Represents the progress of a task
+<q> 	Defines a short quotation
+<rp> 	Defines what to show in browsers that do not support ruby annotations
+<rt> 	Defines an explanation/pronunciation of characters (for East Asian typography)
+<ruby> 	Defines a ruby annotation (for East Asian typography)
+<s> 	Defines text that is no longer correct
+<samp> 	Defines sample output from a computer program
+<small> 	Defines smaller text
+<strike> 	Not supported in HTML5. Use <del> or <s> instead.
+Defines strikethrough text
+<strong> 	Defines important text
+<sub> 	Defines subscripted text
+<sup> 	Defines superscripted text
+<template> 	Defines a container for content that should be hidden when the page loads
+<time> 	Defines a specific time (or datetime)
+<tt> 	Not supported in HTML5. Use CSS instead.
+Defines teletype text
+<u> 	Defines some text that is unarticulated and styled differently from normal text
+<var> 	Defines a variable
+<wbr> 	Defines a possible line-break
+Forms and Input
+Tag 	Description
+<form> 	Defines an HTML form for user input
+<input> 	Defines an input control
+<textarea> 	Defines a multiline input control (text area)
+<button> 	Defines a clickable button
+<select> 	Defines a drop-down list
+<optgroup> 	Defines a group of related options in a drop-down list
+<option> 	Defines an option in a drop-down list
+<label> 	Defines a label for an <input> element
+<fieldset> 	Groups related elements in a form
+<legend> 	Defines a caption for a <fieldset> element
+<datalist> 	Specifies a list of pre-defined options for input controls
+<output> 	Defines the result of a calculation
+Frames
+Tag 	Description
+<frame> 	Not supported in HTML5.
+Defines a window (a frame) in a frameset
+<frameset> 	Not supported in HTML5.
+Defines a set of frames
+<noframes> 	Not supported in HTML5.
+Defines an alternate content for users that do not support frames
+<iframe> 	Defines an inline frame
+Images
+Tag 	Description
+<img> 	Defines an image
+<map> 	Defines a client-side image map
+<area> 	Defines an area inside an image map
+<canvas> 	Used to draw graphics, on the fly, via scripting (usually JavaScript)
+<figcaption> 	Defines a caption for a <figure> element
+<figure> 	Specifies self-contained content
+<picture> 	Defines a container for multiple image resources
+<svg> 	Defines a container for SVG graphics
+Audio / Video
+Tag 	Description
+<audio> 	Defines sound content
+<source> 	Defines multiple media resources for media elements (<video>, <audio> and <picture>)
+<track> 	Defines text tracks for media elements (<video> and <audio>)
+<video> 	Defines a video or movie
+Links
+Tag 	Description
+<a> 	Defines a hyperlink
+
+<nav> 	Defines navigation links
+Lists
+Tag 	Description
+<ul> 	Defines an unordered list
+<ol> 	Defines an ordered list
+<li> 	Defines a list item
+<dir> 	Not supported in HTML5. Use <ul> instead.
+Defines a directory list
+<dl> 	Defines a description list
+<dt> 	Defines a term/name in a description list
+<dd> 	Defines a description of a term/name in a description list
+Tables
+Tag 	Description
+<table> 	Defines a table
+<caption> 	Defines a table caption
+<th> 	Defines a header cell in a table
+<tr> 	Defines a row in a table
+<td> 	Defines a cell in a table
+<thead> 	Groups the header content in a table
+<tbody> 	Groups the body content in a table
+<tfoot> 	Groups the footer content in a table
+<col> 	Specifies column properties for each column within a <colgroup> element
+<colgroup> 	Specifies a group of one or more columns in a table for formatting
+Styles and Semantics
+Tag 	Description
+<style> 	Defines style information for a document
+<div> 	Defines a section in a document
+<span> 	Defines a section in a document
+<header> 	Defines a header for a document or section
+<footer> 	Defines a footer for a document or section
+<main> 	Specifies the main content of a document
+<section> 	Defines a section in a document
+<article> 	Defines an article
+<aside> 	Defines content aside from the page content
+<details> 	Defines additional details that the user can view or hide
+<dialog> 	Defines a dialog box or window
+<summary> 	Defines a visible heading for a <details> element
+<data> 	Adds a machine-readable translation of a given content
+Meta Info
+Tag 	Description
+
+<base> 	Specifies the base URL/target for all relative URLs in a document
+<basefont> 	Not supported in HTML5. Use CSS instead.
+Specifies a default color, size, and font for all text in a document
+Programming
+Tag 	Description
+<script> 	Defines a client-side script
+<noscript> 	Defines an alternate content for users that do not support client-side scripts
+<applet> 	Not supported in HTML5. Use <embed> or <object> instead.
+Defines an embedded applet
+<embed> 	Defines a container for an external (non-HTML) application
+<object> 	Defines an embedded object
+<param> 	Defines a parameter for an object
+
+
+* base element
+
+set the base URL to use for all relative URLs

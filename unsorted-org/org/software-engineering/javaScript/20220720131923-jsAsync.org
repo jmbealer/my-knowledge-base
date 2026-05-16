@@ -1,0 +1,1254 @@
+:PROPERTIES:
+:ID:       5e1d0783-31f5-4a58-80a9-c1580e9adbf1
+:mtime:    20230206181405 20220722110412
+:ctime:    20220720131923
+:END:
+#+title: jsAsync
+#+date: [2022-07-20 Wed 13:19]
+
+** Promises
+*** Sync and async code
+**** Terminology wip
+
+Synchronous code also called sync code
+Synchronous code - executes one code instruction at a time, in the order that the instructions are given.
+Asynchronous code also called async code
+Asynchronous code - executes multiple instructions simultaneously, and the order in which the instructions complete isn't known.
+
+
+It's a lot easier to understand the difference between these two types of code with an example.
+So take a look at the code snippet below:
+
+function useSetTimeout() {
+  console.log("Start!");
+  setTimeout(() => {
+    console.log("Inside setTimeout!");
+  }, 1000);
+  console.log("End!");
+}
+useSetTimeout();
+
+The function above contains three log() statements.
+
+The second log() statement, "Inside setTimeout!", is inside of a function passed to the setTimeout() function.
+The setTimeout() function takes two arguments: a callback function and a number that represents the number of milliseconds that should elapse before firing the callback function.
+
+This leads to the following text being logged to the console.
+
+Start!
+End!
+Inside setTimeout!
+
+Despite the fact that the setTimeout() function is invoked immediately, the callback function isn't invoked until later.
+ That means that the setTimeout() function is an asynchronous operation.
+ This is visualized in the diagram below:
+setTimeout() visualization
+
+**** Event loop
+
+Knowing how setTimeout() works, the above ordering makes sense.
+
+Of course Inside setTimeout! would be printed after "End!" if it was forced to wait for one second before running.
+But take a look at the code below—this results in exactly the same output.
+
+function useSetTimeout() {
+  console.log("Start!");
+  setTimeout(() => {
+    console.log("Inside setTimeout!");
+  }, 0);
+
+  console.log("End!");
+}
+
+useSetTimeout();
+
+Notice that the setTimeout() function was told to wait for 0 milliseconds.
+So how is it possible that "End!" is still printed before "Inside setTimeout!"?
+
+Event loop - A design pattern that a program may use to prioritize certain lines of code for execution
+The reason has to do with something called the event loop.
+The event loop describes a process by which JavaScript prioritizes certain lines of code for execution.
+Asynchronous code is placed into a queue where it will always run after the synchronous lines of code in the current file.
+If the current file has two or more asynchronous operations, you cannot determine the order in which the asynchronous operations will complete.
+
+Essentially, when JavaScript is being interpreted, asynchronous operations are not executed immediately.
+Instead, they are placed into an event queue and executed later.
+Those operations will be run as soon as they can (which is always after the synchronous code has been run).
+
+
+To further reinforce how this works, take a look at another example. Can you determine the order in which the statements below will run?
+console.log("Start!"); // Synchronous code
+
+setTimeout(() => {
+  console.log("Inside first setTimeout!"); // Asynchronous code
+}, 0);
+
+setTimeout(() => {
+  console.log("Inside second setTimeout!"); // Asynchronous code
+}, 0);
+
+console.log("End!"); // Synchronous code
+
+It's important to note that each function in the above code is invoked when it is encountered.
+That is, all of the code is being invoked in the order in which it's written.
+However, the results of the asynchronous function calls aren't immediate.
+
+In the above code, the log() statements for "Start!" and "End!" are synchronous function calls, so you will see the output from those function calls immediately.
+
+However, when setTimeout() is invoked, it doesn't execute the callback immediately.
+Instead, a new event is placed on the event queue along with the callback passed to setTimeout().
+After the current file is done executing, the events in the queue are executed in order from oldest to newest (or first-in, first-out).
+As a result, the callback function passed into setTimeout() will always run after the synchronous code in the current file.
+
+So, the above code will result in the following output:
+Start!
+End!
+Inside first setTimeout!
+Inside second setTimeout!
+
+Again, this is a simplistic view of the event loop, but it demonstrates the main concept at hand.
+In short, despite the order in which the code is written, some code will take longer to run.
+
+**** Why use asynchronous JavaScript?
+
+Synchronous code will block further execution until it has finished what it's doing.
+As a result, a long-running JavaScript function will make the web page or server unresponsive until the function has finished.
+This can result in a terrible user experience.
+
+To solve this problem, JavaScript makes certain operations asynchronous.
+This way, the web page or server is responsive while waiting for long-running tasks to complete.
+
+**** Common scenarios
+
+Asynchronous code is usually preferred when one of the following conditions applies:
+    + You want the application to continue to be able to run without waiting for some process.
+    + You have no choice but to wait because the process depends on something outside of your control.
+
+***** Animations
+
+In web development, many graphical animations are powered by JavaScript using tools like setTimeout().
+This can be anything from incredible visual displays to a notification icon blinking red.
+
+Either way, timing is important for animation, as is interactivity.
+When an animation starts on a web page, you probably don't want the rest of the web page to stop running completely to wait for that animation to finish.
+Because of this, animations on the web are run asynchronously.
+
+***** External web requests
+
+When you're requesting data from an external source, you have little choice but to wait for the requested information.
+If the external source is down or having a slow day, the request will take longer.
+
+This isn't the same as depending on an external package; when you use libraries, you'll likely download them to your project so that they can be accessed quickly.
+In contrast, external web requests involve requesting data from some other website.
+
+Tip :: Intensive processes, like processing images or video files, are often put into an asynchronous function so that the long-running process doesn't slow down the main program.
+
+****** Do this :: Write an asynchronous function
+
+Now you will write code that downloads a video from a remote server and processes it after the download completes.
+However, downloading a large video from a remote server takes some time depending on the network speed and the size of the video.
+
+Note: Rather than actually downloading or processing the video, you will use the setTimeout() function to simulate the time that it takes for downloading and processing.
+
+Create a new folder on your computer, then add the following code to download-and-process-video.js:
+
+function download(url) {
+  console.log(`Start downloading video from ${url} ...`);
+
+  setTimeout(() => {
+    const fileName = url.split("/").pop();
+    console.log(`Video downloaded from ${url} to ${fileName}.`);
+  }, 2000);
+}
+
+
+function process(videoFile) {
+  console.log(`Start processing ${videoFile} ...`);
+
+
+  setTimeout(() => {
+    console.log(`Video processing complete: ${videoFile}.`);
+  }, 4000);
+}
+
+const url = "https://www.thinkful.com/sync-and-async.mov";
+
+const fileName = download(url);
+
+process(fileName);
+
+In the above code, the download() and process() functions are both synchronous functions.
+However, they both call setTimeout(), an asynchronous function.
+
+Before running the code, take a moment to write down what you think the output will be when you run the above code.
+Then run the code, using node download-and-process-video.js.
+You'll see the following output:
+
+Start downloading video from https://www.thinkful.com/sync-and-async.mov ...
+Start processing undefined ...
+Video download from https://www.thinkful.com/sync-and-async.mov to sync-and-async.mov.
+Video processing complete: undefined.
+
+As you can see from the above output, the process() function started before the download() function completed. The behavior that you want is for the code to wait for the download to complete, then call the process() function.
+
+To fix this problem, pass the process() function to the download() function as a callback, as shown below. When the download() function is complete, it will call the callback() function, passing in the filename.
+
+-function download (url) {
++function download (url, callback) {
+   console.log(`Start downloading video from ${url} ...`);
+
+   setTimeout(() => {
+     const fileName = url.split('/').pop()
+     console.log(`Video downloaded from ${url} to ${fileName}.`);
+\+    callback(fileName)
+   }, 3000);
+ }
+
+
+function process (videoFile) {
+  console.log(`Start processing ${videoFile} ...`);
+
+  setTimeout(() => {
+    console.log(`Video processing complete: ${videoFile}.`);
+  }, 4000);
+}
+
+const url = 'https://www.thinkful.com/sync-and-async.mov';
+
+-const fileName = download(url);
++download(url, process);
+
+-process(fileName);
+
+In the above code, the download() function now takes a callback function as a second parameter.
+The download() function does not know what the callback function does, only that it should be called after the download is complete.
+You have already used callback functions for the find(), filter(), map(), some(), and every() functions on an array, so this pattern will seem familiar.
+
+Now, run the code again using node download-and-process-video.js.
+You'll see the following output:
+Start downloading video from https://www.thinkful.com/sync-and-async.mov ...
+Video downloaded from https://www.thinkful.com/sync-and-async.mov to sync-and-async.mov.
+Start processing sync-and-async.mov ...
+Video processing complete: sync-and-async.mov.
+
+Now the code works as expected.
+
+Although it may seem like the code is blocked while it is waiting for the download, the code is able to execute other commands while waiting for the download.
+Add the following code to the end of the file to see that other commands are still processed while waiting for the download.
+
+setInterval(() => console.log("some other work is happening here"), 500);
+
+Now, the output will look like this:
+Start downloading video from https://www.thinkful.com/sync-and-async.mov ...
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+Video downloaded from https://www.thinkful.com/sync-and-async.mov to sync-and-async.mov.
+Start processing sync-and-async.mov ...
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+some other work is happening here
+Video processing complete: sync-and-async.mov.
+some other work is happening here
+...
+
+As you can see, asynchronous code allows the web page and server to remain responsive while waiting for long-running tasks to complete.
+
+*** Creating promises
+
+The most popular way to manage asynchronous code in JavaScript is through an object called a promise.
+A promise can run asynchronous code and provide a set of methods that allows you to extract a single result from that code.
+
+**** What's the problem?
+
+Recall that asynchronous code complicates the order in which code is run.
+
+To understand the problem a little better, you will write some code to read a text file containing quotes, then randomly select one of the quotes and print it out for the user.
+
+To begin, create a new folder named quotes to store the files.
+
+In quotes.txt, add the following:
+
+On a long enough timeline, every line of code is obsolete. - Unknown
+Deliver yesterday, code today, think tomorrow. - Unknown
+A clever person solves a problem. A wise person avoids it. - Albert Einstein
+There's no time to stop for gas, we're already late. - Karin Donke
+
+In main.js, add the following code:
+
+const fs = require("fs");
+
+let quote = null;
+
+console.log("Finding a quote...");
+
+fs.readFile("quotes.txt", (error, buffer) => {
+  if (error) {
+    throw error;
+  }
+  const lines = buffer.toString().split("\n");
+  quote = lines[Math.floor(Math.random() * lines.length)];
+});
+
+console.log(`Your quote is: ${quote}`);
+
+The above code reads the contents of quotes.txt using the asynchronous fs.readFile() function.
+In the readFile() callback function, it splits the file contents into lines and then randomly assigns one of the lines to the quote variable.
+Finally, it logs Your quote is: ${quote}.
+
+Tip - The fs module used in the code above enables interacting with the file system. The intricacies of the fs library are outside of the scope of this lesson; if you would like to know more, consult the [[https://nodejs.org/api/fs.html][fs documentation]].
+
+However, if you run the code above, you'll see that the output doesn't quite work. Take a look:
+
+node main.js
+
+Finding a quote...
+Your quote is: null
+
+Why is the quote null?
+
+Remember that any asynchronous code is not executed immediately.
+Instead, it is added to the event queue and will always run after the code in the current file.
+This means that the code inside of the fs.readFile() callback will always run after the console.log(`Your quote is: ${quote}`); statement.
+
+One way to fix this code is to move the console.log(`Your quote is: ${quote}`); inside of the fs.readFile() callback.
+
+Another way to fix this code is to use a promise.
+In JavaScript, promises are a reliable way of knowing when asynchronous code has been completed.
+
+**** Promises
+
+A promise is a type of object that wraps around asynchronous code.
+Promises won't run the callback function until needed, and they provide methods to extract the final result.
+
+Promises are an ingenious solution.
+They allow you to run asynchronous code inside an object that provides you with some functions that you can use to respond to the success or failure of the asynchronous code.
+
+To manage asynchronous code, promises have three states:
+
++ Pending: When a promise is first created, it has a status of pending.
+  + For example, with fs.readFile(), the promise would be in the pending state during the time that the file is being read.
+
++ Fulfilled: When the promise has successfully finished running, it has a status of fulfilled. This means that it is ready to pass back a value.
+  + In the fs.readFile() example, this is after the error and buffer are passed to the callback function.
+
++ Rejected: If something goes wrong, the promise changes to a status of rejected. This means that something failed.
+  + In the fs.readFile() example, if the first parameter, error, is truthy, that means that there was an error reading the file—so the promise should be rejected. The rejected status is especially likely to come up when you're making external web requests or reading files.
+
+**** Syntax
+
+Take a look at the code below, which demonstrates the creation of a promise.
+
+const newPromise = new Promise((resolve, reject) => {
+  // Your code here...
+});
+
+The code above demonstrates the following:
+
++ A new promise can be created using the new keyword with the Promise class. This will create an instance of a promise.
+
++ Promises can be assigned to variables.
+
++ The only argument to pass in to the Promise constructor is a callback function that has two parameters: resolve and reject.
+
+The following diagram shows how the resolve() and reject() methods change the state of the promise.
+A pending promise can either be fulfilled with a value or rejected with a reason
+
+As you can see in the diagram above, a pending promise can either be fulfilled with a value, or rejected with a reason (error).
+Finally, a fulfilled or rejected promise cannot transition into any other state.
+
+**** Do this :: Return a promise
+
+
+Next, you will write a function that returns a promise.
+Inside the returned promise, you will write some code that executes fs.readFile() to read the file contents.
+
+Create a file named read-file.js, and add the following code:
+
+const fs = require("fs");
+
+function readFile(fileName) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(fileName, (error, buffer) => {
+      if (error) {
+        return reject(error);
+      }
+      resolve(buffer.toString());
+    });
+  });
+}
+
+module.exports = readFile;
+
+In the code above, you can see that readFile() returns a new Promise().
+The promise takes a callback function with two parameters, resolve() and reject(), which are both functions.
+
+To fulfill the promise successfully, pass the final value that you want to extract from the promise to the resolve() function.
+In the example above, the file contents are passed into the resolve() function and the promise becomes fulfilled.
+
+The reject() function works the same way as resolve(), except that it is used when the asynchronous code has failed or gone wrong in some way.
+In the above example, if error has a truthy value, then error is passed to the reject() function and the promise becomes rejected.
+You will see more examples using reject() in the future.
+
+**** Do this :: See a promise change state
+
+Next, you will write some code that uses the readFile() function that you created earlier.
+This new code will log the promise returned by readFile() two different times, a few milliseconds apart, so that you can see the promise change state automatically when the asynchronous code inside the promise completes.
+
+Create a new file named quotes.js, and add the following code:
+
+const readFile = require("./read-file");
+
+const readFilePromise = readFile("quotes.txt");
+
+console.log(readFilePromise);
+
+setTimeout(() => {
+  console.log(readFilePromise);
+}, 500);
+
+Run the code above using node quotes.js.
+The first console.log(readFilePromise); statement will print something like this:
+
+Promise { <pending> }
+
+Then a few milliseconds later, it will log out the readFilePromise variable again.
+This time, it will look a bit different:
+
+Promise {
+  'On a long enough timeline, every line of code is obsolete. - Unknown\n' +
+    'Deliver yesterday, code today, think tomorrow. - Unknown\n' +
+    'A clever person solves a problem. A wise person avoids it. - Albert Einstein\n' +
+    "There's no time to stop for gas, we're already late - Karin Donke"
+}
+
+As you can see above, the readFilePromise variable goes from a pending state to a fulfilled state once the asynchronous code inside the promise callback calls the resolve() function.
+
+More precisely, the promise changes state when the resolve() or reject() function is called.
+
+*** Resolving promises
+By the end of this lesson, you will be able to use the then() method to extract the resolved value of a promise, and the catch() method to extract the rejected reason of a promise.
+
+In this lesson, you'll learn how to resolve promises using callback functions.
+
+Unlike other objects in JavaScript, the state of the promise, and therefore its value, can change from pending to fulfilled or rejected at any time.
+This means that you need to have a way to be notified when the state of the promise changes.
+As a result, promises use callback functions to signal the state of the promise.
+When the promise is resolved, the callback function passed to then() is called, passing in the resolved value.
+When the promise is rejected, the catch() method is called, passing in the rejected reason (error).
+
+
+
+**** The then() method
+
+The then() method accepts a callback function that is called whenever the promise is fulfilled.
+Here's an example:
+
+const welcomePromise = welcome();
+welcomePromise.then((result) => {
+  console.log("The result is:", result);
+});
+
+The above code will print the following:
+
+The result is: Provide me a question and I'll give you an answer...
+
+The callback takes a single parameter, which contains the fulfilled (resolved) value of the promise.
+
+The code above can also be written to chain directly from the promise, like so:
+
+welcome().then((result) => {
+  console.log("The result is:", result);
+});
+
+
+//> The result is: Provide me a question and I'll give you an answer...
+
+Because console.log() is a function, you can also just pass it into then() if you don't need to do anything extra. Here's an example:
+
+welcome().then(console.log);
+
+//> Provide me a question and I'll give you an answer...
+
+**** Remember, it's asynchronous!
+
+Now that you've seen how to access the result of a promise, it can be tempting to do something like this:
+
+let myString = "The result is: ";
+
+const promise = welcome();
+promise.then((result) => {
+  myString += result;
+});
+
+console.log(myString);
+
+But can you guess what the output of the code above will be? Remember, promises are asynchronous!
+
+The code above will result in the following output:
+
+//> The result is:
+
+When the console.log() function is called, the promise hasn't yet resolved.
+It's important to remember that all work on the result of the promise must be done inside of the then() callback function.
+
+**** Do this Use then()
+
+In the repository that you cloned, add the following code at the end of src/main.js:
+
+const question = "Will the weather be nice today?";
+const tellPromise = tell(question);
+
+Use a then() function to log out the fortune's result. Try it on your own before looking at the solution below.
+
+const question = "Will the weather be nice today?";
+const tellPromise = tell(question);
+tellPromise.then(console.log);
+
+***** Use external variables
+
+Although you can only access the result of a promise inside of a then() function, you can use variables outside of its scope inside of the then() callback function.
+
+To see this in action, try updating your code to this:
+
+const question = "Will the weather be nice today?";
+const tellPromise = tell(question);
+tellPromise.then((fortune) => {
+  console.log(question);
+  console.log(fortune);
+});
+
+
+//> Will the weather be nice today?
+//> Without a doubt.
+
+Did you notice the output?
+
+**** The catch() method
+
+Earlier, the method was described as a way to access the resolved value.
+That's because if a value inside of a promise is rejected with the reject() function, it will skip the then() method until it finds a catch().
+
+The catch() method is the error handler for a promise.
+Like try/catch blocks, if the catch() method doesn't throw an error, the calling method doesn't know that an error happened.
+In other words, the promise returned by the catch() method is rejected only if the catch() throws an error or returns a promise which is itself rejected; otherwise, the promise is resolved.
+
+This can be a bit confusing, so have a look at some code.
+
+For example, if no question is provided to the tell() function below, an error message will be passed into the reject() function.
+
+const tellPromise = tell()
+  .then((result) => {
+    console.log("Success:", result);
+  })
+  .catch((error) => {
+    console.log("Failure:", error);
+  });
+
+setTimeout(() => console.log(tellPromise), 500);
+
+In the above code, the tell() function has no question passed into it. Therefore, inside the tell() function, the reject() function is called with an error message.
+
+When you run the above code, the output will be the following:
+
+Failure: A question is required...
+
+Promise { undefined }
+
+When a promise's state changes from pending to rejected, it skips over any then() methods to the next catch() method.
+Notice that the "Success:" message doesn't get called at all!
+
+As you can see in the output above, the promise is in the fulfilled state with a value of undefined (the catch() callback function returned undefined).
+While this may seem counterintuitive, it is exactly the same behavior as a try/catch block inside a function.
+
+**** Do this Use catch()
+
+Include a catch() at the end of your code's current then().
+Log out the value from the callback and then run your code; you won't see the error message.
+
+Then try removing the question and running the code again.
+
+The complete code is below.
+
+const question = "Will the weather be nice today?";
+const tellPromise = tell();
+tellPromise
+  .then((fortune) => {
+    console.log(question);
+    console.log(fortune);
+  })
+  .catch(console.error);
+
+Reorder then() and catch()
+
+If a promise reaches the fulfilled state, the response goes to the next then().
+And if a promise reaches the rejected state, the response goes to the next catch().
+This is true regardless of the order.
+
+const question = "Will the weather be nice today?";
+const tellPromise = tell(question);
+tellPromise.catch(console.error).then((fortune) => {
+  console.log(question);
+  console.log(fortune);
+});
+
+The above code will work the same regardless of whether catch() comes before or after then().
+It's typical to put catch() statements at the end, but it isn't necessary.
+
+Try switching the order of your then() and catch() code to verify this assertion.
+
+**** Chain then() and catch()
+
+You can continue to chain then() and catch() statements, depending on what you want to accomplish with the return result.
+
+When chaining multiple then() calls together, the value returned from a then() callback function is passed to the next then() callback function.
+If a then() callback function returns a promise, the promise is resolved before the next then() callback function is called.
+This continues until the last then() callback function is called.
+Because of this, you don't have to place then() calls inside of another then() call.
+
+welcome()
+  .then(console.log) // Logs the result of welcome()
+  .then(() => goodbye().then(console.log)) // .then inside of another .then
+  .catch(console.error); // Logs error from welcome() or goodbye()
+
+Instead, the above code should be written as follows:
+
+welcome()
+  .then(console.log) // Logs the result of welcome()
+  .then(goodbye) // Returns promise from goodbye()
+  .then(console.log) // Logs the result of goodbye()
+  .catch(console.error); // Logs error from welcome() or goodbye()
+
+Try running the code above to see what gets outputted.
+
+However, if you want to combine the results of two or more promises, you will need to nest then() calls to have access to the results of both calls. The following code demonstrates combining the results from multiple promises.
+
+welcome()
+  .then((welcomeMessage) =>
+    goodbye().then((goodbyeMessage) => `${welcomeMessage}\n${goodbyeMessage}`)) // welcomeMessage and goodbyeMessage combined.
+  .then(console.log) // Logs combines messages
+  .catch(console.error); // Logs error from welcome() or goodbye()
+
+It's important to note that a then() or catch() will always move to the next then().
+Therefore, if you place a then() call after a catch(), the next then() will always be called.
+For example, try running the following code to see the output:
+
+welcome()
+  .then(console.log) // Logs the result of welcome()
+  .then(tell) // Calls tell, which returns a rejected promise (no question supplied).
+  .then(console.log) // Skipped because tell returned a rejected promise.
+  .catch(console.error) // Logs error from tell() or welcome()
+  .then(goodbye) // Returns promise from goodbye()
+  .then(console.log) // Logs the result from goodbye()
+  .catch(console.error); // Logs error only from goodbye()
+
+** Modern asynchronous programming
+*** Promise chaining
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to evaluate chains of then() and catch() calls. You'll also be able to return promises to flatten your code.
+Overview
+
+Promises are a powerful tool for handling asynchronous code. However, as you begin to write complex code that performs multiple asynchronous requests, your code can become a bit messy. But by choosing the correct values to return in then() and catch() statements, you can write clear and concise code that uses promises. So in this lesson, you'll learn how to do just that.
+
+The video below provides a brief introduction to promise chaining. Start by watching the video, and then read through the rest of the lesson and complete the practice work required. This will give you a full understanding of this concept.
+Starter code
+
+This lesson requires you to have the following GitHub repository running on your local machine.
+
+    Constellations Server
+
+Fork and clone the repository. Then, follow the instructions to get it to run.
+Multiple asynchronous operations
+
+It's common to need to make multiple asynchronous requests at nearly the same time. Sometimes, these requests depend on one another. For example, imagine that you wanted to create a new constellation record—but before creating the new record, you wanted to check to make sure that one with the same name didn't already exist.
+
+To solve this problem, begin by taking a look at the following code, which makes two web requests at nearly the same time.
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+const constellationsUrl = `${BASE_URL}/constellations`;
+
+
+const leo = {
+
+  name: "Leo",
+
+  meaning: "Lion",
+
+  starsWithPlanets: 19,
+
+  quadrant: "NQ2",
+
+};
+
+
+axios.get(constellationsUrl).then(({ data }) => console.log(data));
+
+axios.post(constellationsUrl, leo).then(({ data }) => console.log(data));
+
+In the above code, the GET and POST requests are fired around the same time. It is not safe to assume that the GET request will finish first. Because both of these requests are asynchronous, it is uncertain when each will finish.
+
+What if, instead of making each request separately, you wanted to order the requests? That is, what if you wanted to make sure that one request would happen after the other?
+
+You could make that happen as follows:
+
+axios.get(constellationsUrl).then(({ data }) => {
+
+  console.log(data);
+
+  axios.post(constellationsUrl, leo).then(({ data }) => console.log(data));
+
+});
+
+In the above code, you can be certain that the GET request will be logged first. However, you now end up with code that is a bit more complex. Multiple callback functions are nested inside of one another.
+
+The code below demonstrates working code that will solve the constellation problem described earlier. In this code, a request is made to check whether or not the constellation already exists. Then, if it doesn't exist, the code will then create the new constellation.
+
+axios
+
+  .get(constellationsUrl)
+
+  .then(({ data }) => {
+
+    const exists = data.find(({ name }) => name === leo.name);
+
+    if (exists) throw `Constellation "${leo.name}" already exists.`;
+
+    return axios
+
+      .post(constellationsUrl, leo)
+
+      .then(({ data }) => console.log(data));
+
+  })
+
+  .catch(console.log);
+
+Although this works, notice that the code above is a bit complex. The above code includes branching logic in addition to multiple callback functions. And just from quickly looking at the code, it's also a bit unclear what exactly the end result will be.
+
+You can clean up this code in a number of ways. In this lesson, you'll learn how to clean it up using return values inside of then() and catch().
+Do this
+Run nested promises
+
+Make sure that your Constellations server is up and running. Then, run the above code in a JavaScript file. Feel free to play around with the db.json file in the server to see a successful response and an unsuccessful response.
+Returning values
+
+The video below provides an introduction to returning values.
+
+You can make promise code simpler by returning values inside of then() and catch(), as shown below:
+
+axios
+
+  .get(constellationsUrl)
+
+  .then(({ data }) => {
+
+    return data.find(({ name }) => name === leo.name);
+
+  })
+
+  .then((exists) => {
+
+    if (exists) throw `Constellation "${leo.name}" already exists.`;
+
+    return axios
+
+      .post(constellationsUrl, leo)
+
+      .then(({ data }) => console.log(data));
+
+  })
+
+  .catch(console.log);
+
+In the above code, the search for the existing Leo constellation is separated into its own then() block. That value is then returned. The return value from the previous then() is then accessible as a parameter in subsequent then() method calls.
+
+Whenever a value is returned inside of a then() or catch(), that value will be available to the next then().
+
+Returning values allows you to make your code flatter; it reduces the number of nested callbacks needed to run your code.
+Do this
+Inspect return values
+
+In a JavaScript file, copy and paste the code below. Take a moment to read through the code and understand what is happening, and then run it a few times.
+
+new Promise((resolve, reject) => {
+
+  const random = Math.floor(Math.random() * 10);
+
+  random > 5 ? resolve(random) : reject(random);
+
+})
+
+  .then((response) => {
+
+    console.log("Resolved!", response);
+
+    return response;
+
+  })
+
+  .catch((response) => {
+
+    console.log("Rejected!", response);
+
+    return response;
+
+  })
+
+  .then((response) => {
+
+    console.log("Add 10", response + 10);
+
+  });
+
+Notice that it doesn't matter whether the random number is resolved or rejected. In both cases, the final then() is called.
+Omit returns
+
+Try removing the return values from the code above. What happens to the final "Add 10" output?
+
+You'll see that, without returning, the value that ends up in the final then() call is undefined.
+Returning promises
+
+When you return a promise, that promise is placed into the chain of events taking place with then() and catch(). If that promise resolves, it will move to the next then(). And if it rejects, it will move to the next catch().
+
+axios
+
+  .get(constellationsUrl)
+
+  .then(({ data }) => {
+
+    return data.find(({ name }) => name === leo.name);
+
+  })
+
+  .then((exists) => {
+
+    if (exists) throw `Constellation "${leo.name}" already exists.`;
+
+    return axios.post(constellationsUrl, leo);
+
+  })
+
+  .then(({ data }) => console.log(data))
+
+  .catch(console.log);
+
+The code above works as follows:
+
+    A GET request is made to the constellationsUrl. If that request fails, the entire chain of then() calls is skipped, and the console.log() statement inside of catch() is called.
+
+    The data is searched through to see whether or not there is a matching name. The record that's found is returned, or undefined is returned.
+
+    If the constellation already exists, an error is thrown, skipping ahead to the catch(). If the constellation does not exist, a POST request is created and returned. If that request fails, the next catch() is called.
+
+    The results of the POST request are logged. Specifically, the data key is logged.
+
+When a promise is returned, the correct call of then() or catch() will be called next. Because of this, you don't have to place then() calls inside of other then() calls.
+
+As shown above, the resulting code ends up being flatter as well as a bit more readable.
+Complete example
+
+A completed example from this lesson can be found here:
+
+    Making Requests: Promise Chaining
+*** Resolve and reject
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to use resolve() and reject() to return promises with specific statuses and values.
+Overview
+
+Promises include class methods such as resolve() and reject(), which allow for you to write flexible asynchronous code. As you'll explore in this lesson, using these methods will make it easier to work with functions that encapsulate promise code.
+Starter code
+
+This lesson requires you to have the following GitHub repository running on your local machine.
+
+    Constellations Server
+
+Fork and clone the repository. Then, follow the instructions to get it to run.
+Returning similar types
+
+Take a look at the following function, which returns either a promise or a boolean.
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+
+function update(id, body) {
+
+  if (!id || !body) return false;
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  return axios.put(url, body);
+
+}
+
+How might this function get used? Most likely, it will be used as shown in the code below:
+
+const hydrus = {
+
+  name: "Hydrus",
+
+  meaning: "Water Snake",
+
+  starsWithPlanets: 5,
+
+  quadrant: "SQ1",
+
+};
+
+
+update("UPtAzfV", hydrus)
+
+  .then(({ data }) => console.log(data))
+
+  .catch(console.log);
+
+This should work just fine—unless the id or body parameters are missing. Take a look:
+
+update("UPtAzfV")
+
+  .then(({ data }) => console.log(data))
+
+  .catch(console.log);
+
+//> Uncaught TypeError: false.then is not a function
+
+Because the function returns false, it isn't possible to call then() on that value. This means that the update() function now has three possible states:
+
+    An error occurs.
+
+    A boolean is returned.
+
+    A promise is returned.
+
+Ideally, functions should always return either an error or a consistent data type (such as always returning a String), regardless of any conditions. This function must include an option to return a promise. Therefore, this function should be changed so that it no longer returns a boolean.
+The resolve() and reject() methods
+
+Although there are a few ways to solve the problem described above, one of the simplest solutions involves using the class method Promise.reject().
+
+function update(id, body) {
+
+  if (!id || !body) return Promise.reject(false);
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  return axios.put(url, body);
+
+}
+
+Promise.reject() returns a promise with a status of rejected. Whatever is passed in as an argument will be what is accessible in the catch() callback function.
+
+With this update, the code would work as intended even if one of the arguments to update() was missing.
+
+update("UPtAzfV")
+
+  .then(({ data }) => console.log(data))
+
+  .catch(console.log); //> false
+
+A similar class method is Promise.resolve(). This method will return a promise with a status of resolved. The argument passed to it will be accessible in the next then() statement.
+
+Promise.resolve({ success: true }).then(console.log);
+
+//> { success: true }
+*** Promise.all
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to use Promise.all() to resolve an array of promises.
+Overview
+
+In this lesson, you'll learn how to use Promise.all() to quickly display data from multiple requests.
+
+Chaining promises lets you make a series of requests, one after another, knowing that each request will finish before the next one starts. But what if you want to make multiple requests at the same time, then wait for all of them to finish before doing something else?
+
+Promise.all() solves this problem, making it possible to send multiple requests and receive multiple responses at the same time, even if you don't know the exact number of requests ahead of time. This lets you display data from multiple requests more quickly to the user.
+Starter code
+
+This lesson requires you to have the following GitHub repository running on your local machine.
+
+    Constellations Server
+
+Fork and clone that repository. Then, follow the instructions on how to get it to run.
+Promise.all()
+
+Promise.all() takes an array of promises as an argument, and returns a single promise that resolves when all the promises passed to Promise.all() have resolved. The fact that Promise.all() returns a promise means that you can chain a then() call after Promise.all() as follows:
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+
+Promise.all([
+
+  axios.get(`${BASE_URL}/constellations/UEUrlfX`),
+
+  axios.get(`${BASE_URL}/constellations/zb8QvVt`),
+
+  axios.get(`${BASE_URL}/constellations/32TN5F8`),
+
+]).then(console.log);
+
+If you run the code above, you'll see an array of three axios response objects gets logged to the console, one for each promise passed to Promise.all(). Here is how to access the data property of each result inside that array of response objects:
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+
+Promise.all([
+
+  axios.get(`${BASE_URL}/constellations/UEUrlfX`),
+
+  axios.get(`${BASE_URL}/constellations/zb8QvVt`),
+
+  axios.get(`${BASE_URL}/constellations/32TN5F8`),
+
+]).then((results) => {
+
+  console.log(results[0].data);
+
+  console.log(results[1].data);
+
+  console.log(results[2].data);
+
+});
+
+/*
+
+  { id: 'UEUrlfX', name: 'Columba', ... }
+
+  { id: 'zb8QvVt', name: 'Crater', ... }
+
+  { id: '32TN5F8', name: 'Draco', ... }
+
+*/
+
+Note that the promise returned by Promise.all() will be rejected immediately if any one of the promises passed to Promise.all() is rejected. You can add a catch() call after then() to handle that contingency.
+Unknown number of promises
+
+What if you need to make an unknown number of requests, and wait for all of them to resolve before doing something else?
+
+For example, imagine that you want to build a function that takes in an array of IDs. For each of those IDs, a request will be made to get information about that record.
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+
+function getConstellations(ids) {
+
+  // ??
+
+}
+
+You don't know how many IDs will be passed to the getConstellations() function. However, you can use each of those IDs to create an array of promises. Then, you can pass that array of promises to Promise.all(), which returns a promise that gets returned by the getConstellations() function. So, getConstellations() returns a promise that resolves once all the requests resolve.
+
+function getConstellations(ids) {
+
+  const promises = ids.map((id) => {
+
+    const url = `${BASE_URL}/constellations/${id}`;
+
+    return axios.get(url);
+
+  });
+
+
+  return Promise.all(promises);
+
+}
+
+
+const ids = ["KGQIwSq", "32TN5F8"];
+
+getConstellations(ids).then(console.log);
+
+/*
+
+  [
+
+    { name: "Eridanus", ... },
+
+    { name: "Draco", ... }
+
+  ]
+
+*/
+
+In the code above, the following happens:
+
+    The incoming ids array is mapped over. An array of equal length is returned, with each element being a GET request.
+
+    The array of promises is passed in to Promise.all().
+
+    The return result of that value is returned. Once all of the promises have been fulfilled, the then() method will be called.
+
+Of course, as mentioned previously, if any of the asynchronous requests fail, the entire getConstellations() function call will fail.
+
+const ids = ["KGQIwSq", "32TN5F8", "wrong-id"];
+
+getConstellations(ids).then(console.log);
+
+In the code above, nothing would get logged because "wrong-id" isn't a valid ID. This means that you would lose access to all of the other responses, even if they were successful.
+
+Note that Promise.allSettled() is an alternative to Promise.all() that always returns the result of each individual promise, including whether the promise was fulfilled or rejected.
+*** Async and await
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to use async and await to write modern, synchronous-looking code.
+Overview
+
+In this lesson, you'll learn how to use the async and await keywords. These keywords use promises but will allow your asynchronous code to look more synchronous.
+
+At this point, you've learned a lot about promises. You know that promises manage asynchronous code, and you know that then() and catch() can be used to extract values from promises.
+
+You've also learned about a few different types of class methods, like Promise.resolve(), Promise.reject(), and Promise.all(). These class methods will help you write code that is cleaner and more flexible.
+
+You're now ready to learn about one of the most powerful tools that involves promises: the async and await keywords.
+The async and await keywords
+
+The async keyword is applied to a function. On its own, the async keyword transforms the function so that when the function is invoked, the return value will be wrapped in a promise, like this:
+
+const axios = require("axios");
+
+const BASE_URL = "http://localhost:5000";
+
+async function getConstellation(id) {
+
+  //> Placeholder function body
+
+  return true;
+
+}
+
+
+getConstellation().then(console.log); //> true
+
+This on its own is pretty interesting. But async also gives you the ability to use the await keyword inside of your function body. So, what does the await keyword do?
+
+Take a look at the example below and see if you can determine what's happening.
+
+async function getConstellationNameById(id) {
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  const { data } = await axios.get(url);
+
+
+  return data.name;
+
+}
+
+
+getConstellationNameById("n2OEOzp").then(console.log);
+
+//> "Libra"
+
+As you may have figured out from the above code, the await keyword allows you to treat asynchronous requests as if they were synchronous!
+
+Using the await keyword before axios.get() forces the execution of the code to pause until that asynchronous operation is finished. Once it is, you can then use the resolved response.
+
+In the case above, the object returned by axios has a data key, which you can then immediately use. You can then access it like you would any other object, without having to use then() and catch().
+
+It's important to note that whatever comes after await should be a promise. This means that await will work with class methods like Promise.all().
+Error handling
+
+When the promise that follows await is resolved, your code will end up looking like synchronous code. However, what happens when the promise is rejected?
+
+Instead of using catch(), the code will throw an error. This means that when you use async and await, you should also use try and catch, like so:
+
+async function getConstellationNameById(id) {
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  try {
+
+    const { data } = await axios.get(url);
+
+    return data.name;
+
+  } catch (error) {
+
+    throw `Constellation with id of ${id} could not be found.`;
+
+  }
+
+}
+
+If the GET request fails, the error will be caught, and a new, custom error will be thrown.
+
+And yet, the code above can be used like any other promise, as follows:
+
+getConstellationNameById("n2OEOzp").then(console.log);
+
+//> "Libra"
+
+
+getConstellationNameById("error").catch(console.log);
+
+//> Constellation with id of error could not be found.
+
+With async and await, you can update your code so that asynchronous code can look more similar to your synchronous code.
+Caveats
+
+Using async and await can feel like magic, but it really isn't. Keep in mind the following issues or misconceptions that can arise when using async and await.
+Awaiting asynchronous operations on their own
+
+You may assume that, with the await keyword, you can treat all asynchronous calls as if their values were immediately available. But this isn't quite true. Take a look at the following:
+
+async function getConstellationNameById(id) {
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  try {
+
+    return await axios.get(url).data.name;
+
+  } catch (error) {
+
+    throw `Constellation with id of ${id} could not be found.`;
+
+  }
+
+}
+
+In the above code, an assumption is made that the code will pause for axios.get(url), and only then will it evaluate data.name. This isn't true, and the operation will fail.
+Returning awaited code
+
+Although it won't cause an issue, there is no need to return an awaited response. There is no difference between returning a promise or returning an awaited promise.
+
+async function getConstellationNameById(id) {
+
+  const url = `${BASE_URL}/constellations/${id}`;
+
+  try {
+
+    return await axios.get(url);
+
+  } catch (error) {
+
+    throw `Constellation with id of ${id} could not be found.`;
+
+  }
+
+}
+
+In the above code, regardless of whether or not await is before the axios request, this function will return a promise. In fact, async is also unneeded here.
+
+The async and await keywords are useful when you want to perform additional operations on the values returned from promises. So if you don't care about the return value in a specific function, you don't really need them.

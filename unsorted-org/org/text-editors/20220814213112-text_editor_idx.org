@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       a186d3b9-2b81-4e50-8438-cf20798fa2e4
+:mtime:    20230206181501 20230206121936
+:ctime:    20220814213112
+:END:
+#+title: Text-Editor-Idx
+#+date: [2022-08-14 Sun 21:31]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+
+[[id:31f5df5e-341a-4a82-851b-bf3166d97066][Vim]]
+[[id:1bfecfad-efe8-4602-be60-168c5d3352a4][doomEmacs]]
+[[id:b3646737-953b-47da-8a3a-be049dce1c99][orgMode]]
+
+[[id:d57b7cef-6b15-4fd4-a6b3-682700278c2b][tridactyl]]
+
+need finish setting vim keymap in bash
+
+[awesome neovim plugins](https://github.com/rockerBOO/awesome-neovim)
+
+[nvim](nvim)
+[Vim Help](Vim-Help.md)
+[Vim User Manual](Vim-User-Manual.md)
+[Vim Quick Reference Guide](Vim-Quick-Reference-Guide.md)
+[Nvim Reference Manual](Nvim-Reference-Manual)
+[My Vim Cheat list](My-Vim-Cheat-list.md)
+[Vim2](Vim2.md)
+SC-IM a vim based terminal spreadsheet editor
+[Vimrc](Vimrc.md)
+[tridactyl](tridactyl.md)

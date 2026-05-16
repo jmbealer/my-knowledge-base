@@ -1,0 +1,311 @@
+:PROPERTIES:
+:ID:       0389645f-4067-4194-8de2-15c18c508ed8
+:mtime:    20230507131404 20230507120022 20230206181309 20221030171305
+:ctime:    20221030132824
+:END:
+#+title: wgu-degree-plan
+
+* Term 1 (current) January 1,2023 to June 30,2023 Total CU:12
+
+Orientation – ORA1 - 0 - 12/24/22 - Completed
+
+Scripting and Programming - Foundations – C173 - 3 - 01/08/23 - Completed
+[[id:372ca3cf-4fd4-4476-8a6a-9c687305be1c][Scripting and Programming - Foundations - C173]]
+
+Introduction to Communication – C464 - 3 - 03/30/23 - Completed
+[[id:9e2337d2-4319-42c6-b312-3dde6daa6091][Introduction to Communication - C464]]
+
+Web Development Foundations – C779 - 3 - 03/28/23–05/10/23 - Enrolled
+[[id:65228ca4-89a4-4284-afc4-b2d37c10d9de][Web Development Foundations - C779]]
+
+English Composition I – C455 - 3 - 05/10/23–06/21/23
+[[id:2571637d-9a79-4089-9c6e-046ea300c6ac][English Composition I - C455]]
+
+* Term 2 | July 1,2023 to December 31,2023 - Total CU:12
+
+UNAPPROVEDTotal CU: 12 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Technical Communication – C768
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Applied Probability and Statistics – C955
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Critical Thinking and Logic – C168
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Integrated Physical Sciences – C165
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 3 |January 1, 2024 to June 30, 2024
+UNAPPROVEDTotal CU: 14 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Network and Security - Foundations – C172
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Applied Algebra – C957
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+IT Foundations – C393
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+IT Applications – C394
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 4 |July 1, 2024 to December 31, 2024
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Data Management - Foundations – C175
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Introduction to Humanities – C100
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Business of IT - Project Management – C176
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Introduction to Geography – C255
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 5 |January 1, 2025 to June 30, 2025
+UNAPPROVEDTotal CU: 14 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+4
+Scripting and Programming - Applications – C867
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+American Politics and the US Constitution – C963
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Business of IT - Applications – C846
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Ethics in Technology – C961
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 6 |July 1, 2025 to December 31, 2025
+UNAPPROVEDTotal CU: 12 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+4
+Data Management - Applications – C170
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Data Structures and Algorithms I – C949
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Software Engineering – C188
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 7 |January 1, 2026 to June 30, 2026
+UNAPPROVEDTotal CU: 15 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Organizational Behavior and Leadership – C484
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+6
+Web Development Applications – C777
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+6
+Software I – C482
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 8 |July 1, 2026 to December 31, 2026
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+4
+User Interface Design – C773
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+User Experience Design – C856
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+6
+Software II - Advanced Java Concepts – C195
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+Term 9 |January 1, 2027 to June 30, 2027
+UNAPPROVEDTotal CU: 13 Good
+CUs
+Course/Requirement
+Assessment(s)
+Start Date – End Date
+
+3
+Software Quality Assurance – C857
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Mobile Application Development – C196
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+3
+Advanced Data Management – D191
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date
+
+4
+Software Development Capstone – C868
+Select Start Date
+Select Date
+–
+Select End Date
+Select Date

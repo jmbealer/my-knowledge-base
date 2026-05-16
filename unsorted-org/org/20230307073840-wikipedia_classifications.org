@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       eb5ebf73-5090-454e-a8ce-340227d67fa8
+:mtime:    20230307073853
+:ctime:    20230307073840
+:END:
+#+title: Wikipedia Classifications
+
+Main topic articles‎
+- A
+  - Academic disciplines‎
+- B
+  - Business‎
+- C
+  - Communication‎
+  - Concepts‎
+  - Culture‎
+- E
+  - Economy‎
+  - Education‎
+  - Energy‎
+  - Engineering‎
+  - Entertainment‎
+  - Entities
+  - Ethics‎
+- F
+  - Food and drink‎
+- G
+  - Geography‎
+  - Government‎
+- H
+  - Health‎
+  - History‎
+  - Human behavior‎
+  - Humanities‎
+- I
+  - Information‎
+  - Internet‎
+- K
+  - Knowledge‎
+- L
+  - Language‎
+  - Law‎
+  - Life‎
+- M
+  - Mass media‎
+  - Mathematics‎
+  - Military‎
+- N
+  - Nature‎
+- P
+  - People‎
+  - Philosophy‎
+  - Politics‎
+- R
+  - Religion‎
+- S
+  - Science‎
+  - Society‎
+  - Sports‎
+- T
+  - Technology‎
+  - Time‎
+- U
+  - Universe‎

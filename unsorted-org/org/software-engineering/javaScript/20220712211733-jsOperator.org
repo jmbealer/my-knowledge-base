@@ -1,0 +1,462 @@
+:PROPERTIES:
+:ID:       85bb4b3e-8a1a-4ef7-9482-b867f6309760
+:mtime:    20230206181440 20220712212030
+:ctime:    20220712211733
+:END:
+#+title: jsOperator
+#+date: [2022-07-12 Tue 21:17]
+
+** operator
+
+JavaScript Operators
+Example
+
+Assign values to variables and add them together:
+let x = 5;         // assign the value 5 to x
+let y = 2;         // assign the value 2 to y
+let z = x + y;     // assign the value 7 to z (5 + 2)
+
+The assignment operator (=) assigns a value to a variable.
+Assignment
+let x = 10;
+
+The addition operator (+) adds numbers:
+Adding
+let x = 5;
+let y = 2;
+let z = x + y;
+
+The multiplication operator (*) multiplies numbers.
+Multiplying
+let x = 5;
+let y = 2;
+let z = x * y;
+JavaScript Arithmetic Operators
+
+Arithmetic operators are used to perform arithmetic on numbers:
+Operator 	Description
++ + 	Addition
++ - 	Subtraction
++ * 	Multiplication
++ ** 	Exponentiation (ES2016)
++ / 	Division
++ % 	Modulus (Division Remainder)
++ ++ 	Increment
++ -- 	Decrement
+
+Arithmetic operators are fully described in the JS Arithmetic chapter.
+JavaScript Assignment Operators
+
+Assignment operators assign values to JavaScript variables.
+Operator 	Example 	Same As
+= 	x = y 	x = y
++= 	x += y 	x = x + y
+-= 	x -= y 	x = x - y
+*= 	x *= y 	x = x * y
+/= 	x /= y 	x = x / y
+%= 	x %= y 	x = x % y
+**= 	x **= y 	x = x ** y
+
+The addition assignment operator (+=) adds a value to a variable.
+Assignment
+let x = 10;
+x += 5;
+
+Assignment operators are fully described in the JS Assignment chapter.
+JavaScript String Operators
+
+The + operator can also be used to add (concatenate) strings.
+Example
+let text1 = "John";
+let text2 = "Doe";
+let text3 = text1 + " " + text2;
+
+The result of text3 will be:
+John Doe
+
+The += assignment operator can also be used to add (concatenate) strings:
+Example
+let text1 = "What a very ";
+text1 += "nice day";
+
+The result of text1 will be:
+What a very nice day
+
+When used on strings, the + operator is called the concatenation operator.
+Adding Strings and Numbers
+
+Adding two numbers, will return the sum, but adding a number and a string will return a string:
+Example
+let x = 5 + 5;
+let y = "5" + 5;
+let z = "Hello" + 5;
+
+The result of x, y, and z will be:
+10
+55
+Hello5
+
+If you add a number and a string, the result will be a string!
+JavaScript Comparison Operators
+Operator 	Description
+== 	equal to
+=== 	equal value and equal type
+!= 	not equal
+!== 	not equal value or not equal type
+> 	greater than
+< 	less than
+>= 	greater than or equal to
+<= 	less than or equal to
+? 	ternary operator
+
+Comparison operators are fully described in the JS Comparisons chapter.
+JavaScript Logical Operators
+Operator 	Description
+&& 	logical and
+|| 	logical or
+! 	logical not
+
+Logical operators are fully described in the JS Comparisons chapter.
+JavaScript Type Operators
+Operator 	Description
+typeof 	Returns the type of a variable
+instanceof 	Returns true if an object is an instance of an object type
+
+Type operators are fully described in the JS Type Conversion chapter.
+JavaScript Bitwise Operators
+
+Bit operators work on 32 bits numbers.
+Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+Operator 	Description 	Example 	Same as 	Result 	Decimal
+& 	AND 	5 & 1 	0101 & 0001 	0001 	 1
+| 	OR 	5 | 1 	0101 | 0001 	0101 	 5
+~ 	NOT 	~ 5 	 ~0101 	1010 	 10
+^ 	XOR 	5 ^ 1 	0101 ^ 0001 	0100 	 4
+<< 	left shift 	5 << 1 	0101 << 1 	1010 	 10
+>> 	right shift 	5 >> 1 	0101 >> 1 	0010 	  2
+>>> 	unsigned right shift 	5 >>> 1 	0101 >>> 1 	0010 	  2
+
+The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.
+Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.
+~00000000000000000000000000000101 will return 11111111111111111111111111111010
+
+Bitwise operators are fully described in the JS Bitwise chapter.
+Test Yourself With Exercises
+Exercise:
+
+Multiply 10 with 5, and alert the result.
+
+alert(10  5);
+
+
+Start the Exercise
+
+Operator
+  A symbol that performs an operation on one or more variables and values
+  operators connect pieces of codes.
+Mathematical operator
+  An operator that performs an arithmetic calculation with one or more operands
+Assignment operator
+  An operator that assigns specific values in code
+  it assigns the vaule of the right operand to the left operand.
+
+
+arithmetic expression is a combination of:
+  operands (values, variables, etc.)
+  operators (+ - * / %)
+  that can be evaluated to a value
+  ex. y = x + 5
+
+JavaScript Operators
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+(5 + 6) * 10
+JavaScript uses an assignment operator ( = ) to assign values to variables:
+let x, y;
+x = 5;
+y = 6;
+
+Add Two Numbers with JavaScript
+Number is a data type in JavaScript which represents numeric data.
+Now let's try to add two numbers using JavaScript.
+JavaScript uses the + symbol as an addition operator when placed between two numbers.
+Example:
+const myVar = 5 + 10;
+myVar now has the value 15.
+Change the 0 so that sum will equal 20.
+
+Subtract One Number from Another with JavaScript
+We can also subtract one number from another.
+JavaScript uses the - symbol for subtraction.
+Example
+const myVar = 12 - 6;
+myVar would have the value 6.
+Change the 0 so the difference is 12.
+
+Multiply Two Numbers with JavaScript
+We can also multiply one number by another.
+JavaScript uses the * symbol for multiplication of two numbers.
+Example
+const myVar = 13 * 13;
+myVar would have the value 169.
+Change the 0 so that product will equal 80.
+
+We can also divide one number by another.
+JavaScript uses the / symbol for division.
+Example
+const myVar = 16 / 2;
+myVar now has the value 8.
+Change the 0 so that the quotient is equal to 2.
+
+Increment a Number with JavaScript
+You can easily increment or add one to a variable with the ++ operator.
+i++;
+is the equivalent of
+i = i + 1;
+Note: The entire line becomes i++;, eliminating the need for the equal sign.
+Change the code to use the ++ operator on myVar.
+
+Decrement a Number with JavaScript
+You can easily decrement or decrease a variable by one with the -- operator.
+i--;
+is the equivalent of
+i = i - 1;
+Note: The entire line becomes i--;, eliminating the need for the equal sign.
+Change the code to use the -- operator on myVar.
+
+Multiply Two Decimals with JavaScript
+In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+Let's multiply two decimals together to get their product.
+
+Divide One Decimal by Another with JavaScript
+Now let's divide one decimal by another.
+Change the 0.0 so that quotient will equal to 2.2.
+
+Finding a Remainder in JavaScript
+The remainder operator % gives the remainder of the division of two numbers.
+Example
+5 % 2 = 1 because
+Math.floor(5 / 2) = 2 (Quotient)
+2 * 2 = 4
+5 - 4 = 1 (Remainder)
+Usage
+In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2.
+17 % 2 = 1 (17 is Odd)
+48 % 2 = 0 (48 is Even)
+Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.
+Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+
+Compound Assignment With Augmented Addition
+In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
+myVar = myVar + 5;
+to add 5 to myVar. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+One such operator is the += operator.
+let myVar = 1;
+myVar += 5;
+console.log(myVar);
+6 would be displayed in the console.
+Convert the assignments for a, b, and c to use the += operator.
+
+Compound Assignment With Augmented Subtraction
+Like the += operator, -= subtracts a number from a variable.
+myVar = myVar - 5;
+will subtract 5 from myVar. This can be rewritten as:
+myVar -= 5;
+Convert the assignments for a, b, and c to use the -= operator.
+
+Compound Assignment With Augmented Multiplication
+The *= operator multiplies a variable by a number.
+myVar = myVar * 5;
+will multiply myVar by 5. This can be rewritten as:
+myVar *= 5;
+Convert the assignments for a, b, and c to use the *= operator.
+
+Compound Assignment With Augmented Division
+The /= operator divides a variable by another number.
+myVar = myVar / 5;
+Will divide myVar by 5. This can be rewritten as:
+myVar /= 5;
+Convert the assignments for a, b, and c to use the /= operator.
+
+Comparison with the Equality Operator
+There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
+The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+function equalityTest(myVal) {
+  if (myVal == 10) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+If myVal is equal to 10, the equality operator returns true, so the code in the curly braces will execute, and the function will return Equal. Otherwise, the function will return Not Equal. In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. This is known as Type Coercion. Once it does, however, it can compare terms as follows:
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+Add the equality operator to the indicated line so that the function will return the string Equal when val is equivalent to 12.
+
+Comparison with the Strict Equality Operator
+Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+Examples
+3 ===  3  // true
+3 === '3' // false
+In the second example, 3 is a Number type and '3' is a String type.
+Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7.
+
+Practice comparing different values
+In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===). Let's do a quick review and practice using these operators some more.
+If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. However, the strict equality operator will compare both the data type and value as-is, without converting one type to the other.
+Examples
+3 == '3' returns true because JavaScript performs type conversion from string to number. 3 === '3' returns false because the types are different and type conversion is not performed.
+Note: In JavaScript, you can determine the type of a variable or a value with the typeof operator, as follows:
+typeof 3
+typeof '3'
+typeof 3 returns the string number, and typeof '3' returns the string string.
+The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal.
+
+Comparison with the Inequality Operator
+The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+Examples
+1 !=  2    // true
+1 != "1"   // false
+1 != '1'   // false
+1 != true  // false
+0 != false // false
+Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99.
+
+Comparison with the Strict Inequality Operator
+The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. The strict inequality operator will not convert data types.
+Examples
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
+Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17
+
+Comparison with the Greater Than Operator
+The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
+Like the equality operator, the greater than operator will convert data types of values while comparing.
+Examples
+5   >  3  // true
+7   > '3' // true
+2   >  3  // false
+'1' >  9  // false
+Add the greater than operator to the indicated lines so that the return statements make sense.
+
+Use the Conditional (Ternary) Operator
+The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
+The syntax is a ? b : c, where a is the condition, b is the code to run when the condition returns true, and c is the code to run when the condition returns false.
+The following function uses an if/else statement to check a condition:
+function findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+This can be re-written using the conditional operator:
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+Use the conditional operator in the checkEqual function to check if two numbers are equal or not. The function should return either the string Equal or the string Not Equal.
+
+Use Multiple Conditional (Ternary) Operators
+In the previous challenge, you used a single conditional operator. You can also chain them together to check for multiple conditions.
+The following function uses if, else if, and else statements to check multiple conditions:
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+The above function can be re-written using multiple conditional operators:
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal"
+    : (a > b) ? "a is greater"
+    : "b is greater";
+}
+It is considered best practice to format multiple conditional operators such that each condition is on a separate line, as shown above. Using multiple conditional operators without proper indentation may make your code hard to read. For example:
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+In the checkSign function, use multiple conditional operators - following the recommended format used in findGreaterOrEqual - to check if a number is positive, negative or zero. The function should return positive, negative or zero.
+
+Logical operators
+Operators that test whether a given condition is met
+  and &&, or ||, not !
+  && evaluates to true if the values on both sides are true.
+  || evaluates to true if either one of the values is true.
+  ! works on just one value, and gives the opposite of a value. Therefore, !true evaluates to false, and !false evaluates to true.
+  short-circuiting
+    && (and) returns the first falsy value, or the last value if no values are falsy.
+    || (or) returns the first truthy value, or the last value if no values are truthy.
+
+Comparison operators
+Mathematical symbols that compare two values
+  strict equality =====
+  loose equality ====
+  relational operators
+  greater than >
+  less than <
+  greater than >=
+  less than <=
+  not equal !==
+
+
+Storing Values with the Assignment Operator
+In JavaScript, you can store a value in a variable with the assignment operator (=).
+myVariable = 5;
+This assigns the Number value 5 to myVariable.
+If there are any calculations to the right of the = operator, those are performed before the value is assigned to the variable on the left of the operator.
+var myVar;
+myVar = 5;
+First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. Now, if myVar appears again in the code, the program will treat it as if it is 5.
+
+JavaScript Arithmetic
+JavaScript Arithmetic Operators
+
+Arithmetic operators perform arithmetic on numbers (literals or variables).
+Operator 	Description
++ 	Addition
+- 	Subtraction
+
+Use the Spread Operator to Evaluate Arrays In-Place
+ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.
+The ES5 code below uses apply() to compute the maximum value in an array:
+var arr = [6, 89, 3, 45];
+var maximus = Math.max.apply(null, arr);
+maximus would have a value of 89.
+We had to use Math.max.apply(null, arr) because Math.max(arr) returns NaN. Math.max() expects comma-separated arguments, but not an array. The spread operator makes this syntax much better to read and maintain.
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr);
+maximus would have a value of 89.
+...arr returns an unpacked array. In other words, it spreads the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. The following code will not work:
+const spreaded = ...arr;
+Copy all contents of arr1 into another array arr2 using the spread operator.
+
+Use Destructuring Assignment to Extract Values from Objects
+Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object.
+Consider the following ES5 code:
+const user = { name: 'John Doe', age: 34 };
+const name = user.name;
+const age = user.age;
+name would have a value of the string John Doe, and age would have the number 34.
+Here's an equivalent assignment statement using the ES6 destructuring syntax:
+const { name, age } = user;
+Again, name would have a value of the string John Doe, and age would have the number 34.
+Here, the name and age variables will be created and assigned the values of their respective values from the user object. You can see how much cleaner this is.
+You can extract as many or few values from the object as you want.
+Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables today and tomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
+
+Use Destructuring Assignment to Assign Variables from Objects
+Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value.
+Using the same object from the last example:
+const user = { name: 'John Doe', age: 34 };
+Here's how you can give new variable names in the assignment:
+const { name: userName, age: userAge } = user;
+You may read it as "get the value of user.name and assign it to a new variable named userName" and so on. The value of userName would be the string John Doe, and the value of userAge would be the number 34.
+Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables highToday and highTomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.

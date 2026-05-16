@@ -1,0 +1,1322 @@
+:PROPERTIES:
+:ID:       bd8b25b9-7a35-4fe9-a0a9-854ff153e692
+:mtime:    20230206181529 20220716193223
+:ctime:    20220712211357
+:END:
+#+title: jsFunctions
+#+date: [2022-07-12 Tue 21:13]
+
+** js function wip
+
+A Function is a block of code that describes a repeatable process or behavior
+
+function syntax
+
+A function delaration is a statement that creates a new named function.
+A function body is a set of instructions contained within a function.
+
+
+The function keyword defines a function
+The function identifier is the function name
+  how you refer to the function later.
+The function body goes inside curly brackets {}
+
+
+  functionDeclaration functionIdentifier(para1, para2){}
+Function body
+
+Function call runs the function; run/call/invoke the function
+  functionIdentifier();
+  functionIdentifier(arg1, arg2);
+
+
+All of the code between the curly braces will be executed every time the function is called.
+
+javascript function:
+  Reuse code
+  Transform inputs into outputs
+  Solve pieces of a problem
+
+function nameFunc(input) {
+  body;
+  return output;
+}
+
+call a function, running or invoking a function
+funcName();
+
+
+
+Input: Parameters and arguments
+
+function favFood(food) {
+  console.log(food);
+}
+favFood(pizza);
+
+multiple parameters
+function funcName(para1, para2){
+}
+funcName("foo", "bar")
+
+return
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+
+Function scope
+    The "bubble" in which a variable is accessible or visible
+
+Helper function
+A function that helps clean up code by handling a section of a larger function
+
+// create findItems takes two args items and type return an array
+function findItems(items, matchType){
+  let matches = [];
+  // check if items is empty
+  if ( items.length === 0){
+    return "Your cart does not have any items in it."
+  }
+  // matching items with type
+  for (let i = 0; i < items.length; i++){
+    if (items[i].type.includes(matchType)){
+      matches.push(items[i]);
+    }
+  }
+  // check if matches is empty
+  if ( matches.length === 0){
+    return "No items found of that type. Please search for a different item."
+  }
+  // return matches
+  return matches.length == 0 ? "No items found of that type. Please search for a
+different item" : matches
+}
+
+
+
+JavaScript Functions
+
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+JavaScript Function Syntax
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+The parentheses may include parameter names separated by commas:
+(parameter1, parameter2, ...)
+
+The code to be executed, by the function, is placed inside curly brackets: {}
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+Function parameters are listed inside the parentheses () in the function definition.
+
+Function arguments are the values received by the function when it is invoked.
+
+Inside the function, the arguments (the parameters) behave as local variables.
+
+A Function is much the same as a Procedure or a Subroutine, in other programming languages.
+
+Function Invocation
+The code inside the function will execute when "something" invokes (calls) the function:
+
+    When an event occurs (when a user clicks a button)
+    When it is invoked (called) from JavaScript code
+    Automatically (self invoked)
+
+You will learn a lot more about function invocation later in this tutorial.
+
+
+Why Functions?
+
+You can reuse code: Define the code once, and use it many times.
+
+You can use the same code many times with different arguments, to produce different results.
+Example
+
+Convert Fahrenheit to Celsius:
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+The () Operator Invokes the Function
+
+Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+
+Accessing a function without () will return the function object instead of the function result.
+Example
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+
+Functions Used as Variable Values
+
+Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+Example
+
+Instead of using a variable to store the return value of a function:
+let x = toCelsius(77);
+let text = "The temperature is " + x + " Celsius";
+
+You can use the function directly, as a variable value:
+let text = "The temperature is " + toCelsius(77) + " Celsius";
+
+You will learn a lot more about functions later in this tutorial.
+Local Variables
+
+Variables declared within a JavaScript function, become LOCAL to the function.
+
+Local variables can only be accessed from within the function.
+Example
+// code here can NOT use carName
+
+function myFunction() {
+  let carName = "Volvo";
+  // code here CAN use carName
+}
+
+// code here can NOT use carName
+
+Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+
+Local variables are created when a function starts, and deleted when the function is completed.
+Test Yourself With Exercises
+Exercise:
+
+Execute the function named myFunction.
+
+function myFunction() {
+  alert("Hello World!");
+}
+;
+
+*** js function parameters and arguments
+
+A Parameter is a placeholder variable listed in a function declaration.
+An argument is a value or other input thats passed into a called function.
+
+Parameters are the function's inputs.
+Arguments are the values inbetween the parentheses, when you invoke a function
+  its the input to function.
+  functionIdentifier(arg1, arg2);
+Call the function.
+
+Passing Values to Functions with Arguments
+Parameters are variables that act as placeholders for the values that are to be input to a function when it is called.
+The actual values that are input (or "passed") into a function when it is called are known as arguments.
+
+Here is a function with two parameters, param1 and param2:
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+Then we can call testFun like this: testFun("Hello", "World");.
+We have passed two string arguments, Hello and World.
+Inside the function, param1 will equal the string Hello and param2 will equal the string World.
+Set Default Parameters for Your Functions
+In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+Check out this code:
+const greeting = (name = "Anonymous") => "Hello " + name;
+console.log(greeting("John"));
+console.log(greeting());
+The console will display the strings Hello John and Hello Anonymous.
+The default parameter kicks in when the argument is not specified (it is undefined). As you can see in the example above, the parameter name will receive its default value Anonymous when you do not provide a value for the parameter. You can add default values for as many parameters as you want.
+Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+
+Use the Rest Parameter with Function Parameters
+In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function.
+Check out this code:
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2));
+console.log(howMany("string", null, [1, 2, 3], { }));
+The console would display the strings You have passed 3 arguments. and You have passed 4 arguments..
+The rest parameter eliminates the need to check the args array and allows us to apply map(), filter() and reduce() on the parameters array.
+Modify the function sum using the rest parameter in such a way that the function sum is able to take any number of arguments and return their sum.
+*** js function returns
+
+The return value is the value that a function outputs, as specified by the return keyword.
+
+Whenever JavaScript sees return in a function, it does the following:
++ Stops running the code in that function
++ Takes the value to the right of return
++ Swaps in the return value where the function was called
+
+A function returns undefined by default.
+A function without return keyword, returns undefined.
+A function can only return one value.
+returns keyword is use for function's output
+the function's output is what the function sends back.
+functions stop running when the see return.
+function can only return one value.
+Return a Value from a Function with Return
+We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
+Example
+function plusThree(num) {
+  return num + 3;
+}
+const answer = plusThree(5);
+answer has the value 8.
+plusThree takes an argument for num and returns a value equal to num + 3.
+Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+Understanding Undefined Value returned from a Function
+A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+Example
+let sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+addSum(3);
+addSum is a function without a return statement. The function will change the global sum variable but the returned value of the function is undefined.
+Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
+
+Assignment with a Returned Value
+If you'll recall from our discussion of Storing Values with the Assignment Operator, everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
+Assume we have pre-defined a function sum which adds two numbers together, then:
+ourSum = sum(5, 12);
+will call the sum function, which returns a value of 17 and assigns it to the ourSum variable.
+Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+Returning Boolean Values from Functions
+You may recall from Comparison with the Equality Operator that all comparison operators return a boolean true or false value.
+Sometimes people use an if/else statement to do a comparison, like this:
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+But there's a better way to do this. Since === returns true or false, we can return the result of the comparison:
+
+function isEqual(a, b) {
+  return a === b;
+}
+Fix the function isLess to remove the if/else statements.
+
+Return Early Pattern for Functions
+When a return statement is reached, the execution of the current function stops and control returns to the calling location.
+Example
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+The above will display the string Hello in the console, and return the string World. The string byebye will never display in the console, because the function exits at the return statement.
+Modify the function abTest so that if a or b are less than 0 the function will immediately exit with a value of undefined.
+Hint
+Remember that undefined is a keyword, not a string.
+Function Return
+When JavaScript reaches a return statement, the function will stop executing.
+
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+
+Functions often compute a return value. The return value is "returned" back to the "caller":
+Example
+
+Calculate the product of two numbers, and return the result:
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+The result in x will be:
+12
+*** js function example
+#+begin_src js
+let array = [1 , 2 , 3 , 4];
+// return length of an array
+function arrayLength(array){
+    return array.length;
+}
+console.log(arrayLength(array));
+
+// add numbers in array
+function arraySum(array){
+    sum = 0;
+    for (let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum;
+}
+console.log(arraySum(array));
+#+end_src
+
+function functionName() {
+  console.log("Hello World");
+}
+*** default parameter thinkful
+
+Setting defaults
+Take a look at the following function. What do you notice?
+
+function calculatePriceInDollars(priceInCents) {
+  return priceInCents / 100;
+}
+
+This simple function converts cents to dollars.
+It takes a number—in this case, a specific amount of money—and then divides it by 100.
+However, if no argument is entered when the function is called, it will result in NaN.
+This can be seen below.
+
+calculatePriceInDollars(100); //> 1  (Returns 1 because 100 cents = 1 dollar)
+calculatePriceInDollars(250); //> 2.5
+calculatePriceInDollars(); //> NaN
+
+But imagine that you want the value to be 0 instead of NaN if no argument is entered.
+In this case, you can set 0 as the default for the priceInCents parameter.
+Setting a default means that you've identified a value to be there even if a specific value is missing from the function call.
+
+function calculatePriceInDollars(priceInCents = 0) {
+  return priceInCents / 100;
+}
+
+calculatePriceInDollars(); //> 0
+
+To set a default, place an equals sign = after the parameter name, followed by whatever value you want to use as the default. This value can be anything valid in JavaScript.
+
+If the value of that parameter is undefined when the function is called, it will be replaced with the value that you've provided.
+
+Why use defaults?
+At this point, you may be wondering: instead of using default parameters, shouldn't you just make sure that your functions are always called correctly?
+Indeed, in the above example of the calculatePriceInDollars() function, it might seem like it would make more sense to just always use an argument.
+And in general, this is true—it is better to simply use your functions as intended rather than set numerous defaults.
+
+However, defaults can be particularly useful in a few circumstances:
+    If there is a typical case for your function, but you want to allow for certain options, you might use defaults.
+    If one or more of the argument values that you're using come from an outside source, you might use defaults because you won't necessarily be able to control the input values.
+
+Consider the example below.
+
+function welcomeMessage(name, isReturnCustomer = false) {
+  const message = isReturnCustomer ? "Welcome back" : "Welcome";
+  return `${message}, ${name}!`;
+}
+
+You may expect the above function to pass in only a single argument typically. However, if the customer is a returning customer, you could easily change the message by adding a second argument. In this case, the function could use defaults to allow for a typical case with some options.
+
+Object defaults
+Now, you'll investigate object defaults.
+
+Code setup
+You'll use the code below for the following examples. So take a moment to review this function and figure out how it's used.
+
+// Function definition
+function calculateTotal(products, { discountPercentage, salesTax }) {
+  let result = 0;
+  for (let i = 0; i < products.length; i++) {
+    const { priceInCents, quantity } = products[i];
+    result += priceInCents * quantity;
+  }
+
+  if (discountPercentage) result *= 1 - discountPercentage;
+  return result * (1 + salesTax);
+}
+
+// Inputs
+const products = [
+  {
+    name: "Black Longline T-Shirt",
+    priceInCents: 1500,
+    size: "M",
+    quantity: 2,
+  },
+  {
+    name: "Light Wash Stretch Skinny Jeans",
+    priceInCents: 6000,
+    size: 32,
+    quantity: 1,
+  },
+];
+const options = { discountPercentage: 0.1, salesTax: 0.0825 };
+
+// Function call
+calculateTotal(products, options); //> 8768.25
+
+The above function takes in an array of products and calculates the total. If discountPercentage is included in the options parameter, it will apply a discount. It will then add salesTax to the total.
+
+Do this
+Run calculateTotal()
+
+Copy the function above and paste it into a place or program, such as a code editor, where you can edit it and then run the function. Try changing the quantities and options to see what happens.
+Set an object as a default
+
+Now, in the case of the function above, imagine that there are no discounts, and you just want to use a standard sales tax. In this situation, you may want to just call the function without passing anything in. However, this will result in an error.
+
+calculateTotal(products);
+//> Uncaught TypeError:
+//> Cannot destructure property 'discountAmount' of 'undefined' as it is undefined.
+
+The issue above is that there is no object to destructure, so the code fails to create those variables. But just like you saw above, you can set a default parameter by adding an = sign followed by the default value.
+
+function calculateTotal(products, { discountPercentage, salesTax } = {}) {
+  // ...
+}
+
+What is happening in the function signature above? Take a look:
+    If there is an object passed in as the second argument, the code will destructure that argument and assign the discountPercentage and salesTax variables.
+    If there isn't an object passed in as the second argument, the code will default to an object. Then it will attempt to destructure that empty object. The variables will exist, but they will both be set to undefined.
+
+Update calculateTotal()
+Update the calculateTotal() function with the above code. Try running it once more, only passing in products as an argument. Is the result what you expected? Or is it different?
+
+Default key values
+If you run the function above without a second argument, it will run. But it will give you an undesirable result.
+
+calculateTotal(products); //> NaN
+
+In this case, the result will be NaN because salesTax is undefined. This problem can be solved by using more defaults.
+
+function calculateTotal(products, { discountPercentage, salesTax = 0.0825 } = {}) {
+  // ...
+}
+
+The code above sets a default value for the key in the object. If salesTax is undefined, salesTax will in fact be set to the value of 0.0825.
+Now, if you call this function with products as the only argument, it will work correctly.
+
+calculateTotal(products); //> 9742.5
+
+Do this
+Include default values
+
+Update your calculateTotal() function so that it includes a default for the salesTax value. Try running the function once again. What is the result?
+
+Setting a default array
+With this practice under your belt, you're ready for one final modification. You can update the code so that if products happens to be undefined, the function will just return 0. Specifically, you would change the function signature to look like the one below:
+
+function calculateTotal(products = [], { discountPercentage, salesTax } = {}) {
+  // ...
+}
+
+The above code sets the default for products to be an empty array. This means that the for loop will still be able to run.
+
+calculateTotal(); //> 0
+
+The entire updated function is below.
+
+function calculateTotal(products = [], { discountPercentage, salesTax = 0.0825 } = {}) {
+  let result = 0;
+  for (let i = 0; i < products.length; i++) {
+    const { priceInCents, quantity } = products[i];
+    result += priceInCents * quantity;
+  }
+
+  if (discountPercentage) result *= 1 - discountPercentage;
+  return result * (1 + salesTax);
+}
+
+
+An aside: Pass by reference or value?
+
+    Primitives (string, number, boolean) are passed by value
+    Complex data types (arrays, objects) are passed by reference
+
+let myNumber = 10;
+
+function passedPrimitive(num) {
+  num = 20;
+}
+
+passedPrimitive(myNumber);
+console.log(myNumber);   // => 10
+
+function receives a copy of the value - local scope cannot impact the original variable
+
+const mySequence = [1,2,3];
+
+function passedComplex(arr) {
+  arr.push(4);
+}
+
+passedComplex(mySequence);
+console.log(mySequence);  // => [1,2,3,4]
+
+function receives a reference to the item - the local variable assigned to this item is impacting the original item
+
+** JavaScript Arrow Function
+
+Arrow functions were introduced in ES6.
+
+Arrow functions allow us to write shorter function syntax:
+
+let myFunction = (a, b) => a * b;
+
+Before:
+hello = function() {
+  return "Hello World!";
+}
+
+With Arrow Function:
+hello = () => {
+  return "Hello World!";
+}
+
+It gets shorter! If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
+
+Arrow Functions Return Value by Default:
+hello = () => "Hello World!";
+
+Note: This works only if the function has only one statement.
+
+If you have parameters, you pass them inside the parentheses:
+
+Arrow Function With Parameters:
+hello = (val) => "Hello " + val;
+
+In fact, if you have only one parameter, you can skip the parentheses as well:
+
+Arrow Function Without Parentheses:
+hello = val => "Hello " + val;
+
+What About this?
+The handling of this is also different in arrow functions compared to regular functions.
+
+In short, with arrow functions there are no binding of this.
+
+In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+
+With arrow functions the this keyword always represents the object that defined the arrow function.
+
+Let us take a look at two examples to understand the difference.
+
+Both examples call a method twice, first when the page loads, and once again when the user clicks a button.
+
+The first example uses a regular function, and the second example uses an arrow function.
+
+The result shows that the first example returns two different objects (window and button), and the second example returns the window object twice, because the window object is the "owner" of the function.
+
+Example
+With a regular function this represents the object that calls the function:
+
+// Regular Function:
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+// The window object calls the function:
+window.addEventListener("load", hello);
+
+// A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+
+Example
+With an arrow function this represents the owner of the function:
+
+// Arrow Function:
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+
+// The window object calls the function:
+window.addEventListener("load", hello);
+
+// A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+
+Remember these differences when you are working with functions. Sometimes the behavior of regular functions is what you want, if not, use arrow functions.
+
+Browser Support
+The following table defines the first browser versions with full support for Arrow Functions in JavaScript:
+
+Chrome 45	Edge 12	Firefox 22	Safari 10	Opera 32
+Sep, 2015	Jul, 2015	May, 2013	Sep, 2016	Sep, 2015
+
+Use Arrow Functions to Write Concise Anonymous Functions
+In JavaScript, we often don't need to name our functions, especially when passing a function as an argument to another function. Instead, we create inline functions. We don't need to name these functions because we do not reuse them anywhere else.
+To achieve this, we often use the following syntax:
+const myFunc = function() {
+  const myVar = "value";
+  return myVar;
+}
+ES6 provides us with the syntactic sugar to not have to write anonymous functions this way. Instead, you can use arrow function syntax:
+const myFunc = () => {
+  const myVar = "value";
+  return myVar;
+}
+When there is no function body, and only a return value, arrow function syntax allows you to omit the keyword return as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements:
+const myFunc = () => "value";
+This code will still return the string value by default.
+Rewrite the function assigned to the variable magic which returns a new Date() to use arrow function syntax. Also, make sure nothing is defined using the keyword var.
+
+Write Arrow Functions with Parameters
+Just like a regular function, you can pass arguments into an arrow function.
+const doubler = (item) => item * 2;
+doubler(4);
+doubler(4) would return the value 8.
+If an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted.
+const doubler = item => item * 2;
+It is possible to pass more than one argument into an arrow function.
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2);
+multiplier(4, 2) would return the value 8.
+Rewrite the myConcat function which appends contents of arr2 to arr1 so that the function uses arrow function syntax.
+
+** advanced functions
+*** overview: advanced functions
+
+JavaScript allows you to pass functions as if they were objects.
+With this ability, you will learn how to implement the accumulator pattern that you learned early on, using different native array methods.
+
+*** function expressions and arrow functions
+
+Key Terms
+Function expression A function created in a place where there would otherwise be a value
+Anonymous function A function that doesn't have a name
+Arrow syntax A way to write a compact function expression by using an arrow => to define the function
+Arrow functions are shorter than the functions that you've written so far, and they can make it easier to see what's happening when there are lots of functions. They're also used frequently in higher-order functions, asynchronous code, and React. These are topics that you'll learn about later on.
+
+**** Different types of functions
+
+In JavaScript, there are two different ways to create functions:
++ function declarations
++ function expressions
+
+A function declaration (also called a function definition or function statement) is JavaScript code that creates a new function with a name.
+This is the most common way to create functions, and it's the approach that you've seen so far in this program.
+
+A function expression is a function created in a place where there would otherwise be a value.
+Functions created this way may or may not have a name.
+
+Suppose that you wish to create a function that accepts a park object in the form { name: "Biscayne", rating: 4.2 } and returns "Excellent!" if the rating was greater than 4 and "Good" otherwise. Here are three different ways to implement that same function:
+
+// Function declaration
+function ratingAsText(park) {
+  console.log("This is a function declaration.");
+  return park.rating > 4 ? "Excellent!" : "Good";
+}
+
+// Function expression
+const ratingAsTextNamed = function ratingToWord(park) {
+  console.log("This is a function expression that has a name.");
+  return park.rating > 4 ? "Excellent!" : "Good";
+};
+
+// Anonymous function expression
+const ratingAsTextAnonymous = function (park) {
+  console.log("This is an anonymous function that does not have a name.");
+  return park.rating > 4 ? "Excellent!" : "Good";
+};
+
+The first function is a function declaration.
+It is the typical way to define functions.
+If you wanted to call this function, you would use the name of the function along with the argument list.
+For example, you could call ratingAsText(park).
+
+The second function consists of two parts: the constant (ratingAsTextNamed ) and the function expression (ratingToWord(park)).
+Notice that the ratingToWord(park) function expression uses exactly the same syntax as a function declaration.
+The only difference is that the function is being assigned to a variable.
+You can call this function with ratingAsTextNamed(park).
+However, you cannot call the function using ratingToWord(park) unless the function is calling itself (you will learn more about this later).
+
+The last function does not have a name, meaning that it is an anonymous function.
+It is an expression that is assigned to the variable ratingAsTextAnonymous, and it can be called with ratingAsTextAnonymous(park).
+
+**** Arrow functions
+Now, take a look at the following function expression:
+
+const location = {
+  name: "Arches",
+  state: "Utah",
+  geo: {
+    lat: 38.68,
+    lon: -109.57,
+  },
+};
+
+const getLocationState = function (location) {
+  return location.state;
+};
+The above function will return the state value of a given location object.
+Recall the different parts of the function syntax:
+
+Labeled function syntax
+You can rewrite this function using arrow syntax, like this:
+
+Labeled arrow syntax
+Instead of using the function keyword, this syntax uses an arrow => to define the function.
+Notice that the rest of the syntax is essentially the same.
+
+const getLocationState = (location) => {
+  return location.state;
+};
+There are a couple of important facts to keep in mind when using an arrow function:
+
+If there is only one parameter, the parentheses () around the parameter are optional.
+For example, the function above accepts just one parameter, location, so you can leave out the parentheses around the parameter and write it like this:
+
+const getLocationState = location => {
+  return location.state;
+};
+
+If the function consists of just a single return statement, you can omit the curly brackets {} and just have the arrow point to the value being returned.
+For example, the body of the above function consists of just the statement return location.state, you can drop the return keyword and the {}.
+This means that you can write the function in an even more concise way:
+
+const getLocationState = location => location.state;
+Next, take a look at some more examples of arrow functions and their equivalent function declarations.
+
+Get location name
+// Arrow function
+const getLocationName = (location) => location.name;
+
+// Function declaration
+function getLocationName(location) {
+  return location.name;
+}
+Get Google Map URL
+Tip
+The return value in this function is quite long. If you still want to avoid using the return keyword, you can use parentheses.
+
+// Arrow function
+const getGoogleMapURL = ({ geo: { lat, lon } }, zoom = 10) => (
+  `https://www.google.com/maps/@${lat},${lon},${zoom}z`
+);
+
+// Function declaration
+function getLocationCoordinates({ geo: { lat, lon } }, zoom = 10) {
+  return `https://www.google.com/maps/@${lat},${lon},${zoom}z`;
+}
+
+*** higher-order functions
+
+Callback function Also called a callback, a function that is passed into another function as an argument
+
+Previously, you've learned to use loops to deal with data in arrays.
+For example, you may have looped through an array to find a particular item, or to find all the items within a particular constraint.
+
+These kinds of problems aren't unique. JavaScript has built-in array methods that can help you accomplish common data-manipulation tasks.
+
+Higher-order functions
+
+
+The built-in array methods that you will learn in this lesson and the next few are all called higher-order functions.
+
+Key Term
+Higher-order function: Any function that either accepts a function as one of its incoming arguments or returns a function
+
+Higher-order functions are incredibly powerful, and they are used a lot in JavaScript.
+Allowing for a function as an input or an output can lead to some very customizable tools.
+
+For example, suppose that you created a shop and wished to give discounts on some items. You could create a function to calculate the discounted price as follows:
+
+#+begin_src js
+// using arrow function
+// declaring constant variable with two parameters price and discount
+// then times price by discount
+const discountedPrice = (price, discount) => price * discount;
+#+end_src
+
+const discountedPrice = (price, discount) => price * discount;
+
+Then you could call the function to calculate final prices for some items with a 10% discount, like this:
+const finalPriceBed = discountedPrice(200, 0.9); // 90% of $200
+const finalPricePillow = discountedPrice(52, 0.9); // 90% of $52
+const finalPriceCurtain = discountedPrice(32, 0.9); // 90% of 32
+
+Did you notice that in each case, you are passing the same value of 0.9? Instead, you could simply make a new function that calculates the 10% discount, and then you wouldn't need to pass that argument each time. But what if you sometimes wanted to give 25% discounts? You would then need another function that calculates the 25% discount.
+
+You can use a higher-order function that generates the functions that you need. For example, consider the following function. What does it return?
+const discountedPrice = (discount) => {
+  return (price) => price * discount;
+}
+The function above returns a function that accepts a single parameter price and multiplies the price by the discount provided. You can use it to first create a function that calculates the 10% discount, and then use the generated function to calculate the discounts.
+
+const tenPercentDiscount = discountedPrice(0.9);
+const finalPriceBed = tenPercentDiscount(200); // 90% of $200
+const finalPricePillow = tenPercentDiscount(52); // 90% of $52
+const finalPriceCurtain = tenPercentDiscount(32); // 90% of 32
+And if you wanted to, you could later modify this function to calculate a 25% discount, like this:
+
+const twentyFivePercentDiscount = discountedPrice(0.75);
+const finalPriceBed = twentyFivePercentDiscount(200); // 75% of $200
+const finalPricePillow = twentyFivePercentDiscount(52); // 75% of $52
+const finalPriceCurtain = twentyFivePercentDiscount(32); // 75% of 32
+This example is quite trivial, but over time, you will encounter many examples of higher-order functions that behave in a similar manner.
+
+One final note on this example: the discountedPrice() function above was deliberately written with an explicit return statement. Because this function returns a single value, you can use a more concise syntax and drop the return statement. In other words, you could rewrite this function as follows:
+
+const discountedPrice = discount => price => price * discount;
+Despite the simple definition, higher-order functions can be difficult to understand and write. For now, you will learn about existing higher-order functions that are built into JavaScript. Later on, you will write your own.
+
+The forEach() method
+You can use the following Replit to follow along with the lesson and run code examples for the forEach() method:
+
+
+Take a look at the following array of park information:
+
+let parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+It's common to write a loop to do something for each element in an array, like this:
+
+for (let i = 0; i < parks.length; i++) {
+  console.log(parks[i].name);
+}
+// Biscayne
+// Grand Canyon
+// Gateway Arch
+// Indiana Dunes
+Because you are doing the same thing to each element of the array, you can write a function to perform that same task with each element. Then you can call that function repeatedly in the loop.
+
+const logPark = (park) => console.log(park.name);
+
+for (let i = 0; i < parks.length; i++) {
+  logPark(parks[i]);
+}
+You can think of the for loop as applying this function to each element of the array, one at a time. The function gets each item in succession. In this example, the function parameter park is called, because that's helpful for remembering what the item is.
+
+The forEach() method lets you do this without a for loop. This lets you think about the items themselves, instead of counting indexes.
+
+To see the syntax, take a look at the following example, which is equivalent to the loop above.
+
+parks.forEach(logPark);
+// Biscayne
+// Grand Canyon
+// Gateway Arch
+// Indiana Dunes
+The forEach() method accepts a function as an argument. The function that you pass to the method is referred to as a callback function. In other words, a callback function is a function that is passed into another function as an argument.
+
+How forEach() works
+Where does park come from? That is, how does forEach() know what to put there? The forEach() method is a higher-order function, in that it takes a callback function as its argument.
+
+So you provide forEach() with a callback function. Then, internally, forEach() executes that callback function once for each element of the array.
+
+In some instances, you may use an anonymous function as the callback. Take a look at the following example. This is equivalent to the code above, but it has been rewritten to use an anonymous function.
+
+parks.forEach((park) => console.log(park.name));
+// Biscayne
+// Grand Canyon
+// Gateway Arch
+// Indiana Dunes
+In the example above, you aren't passing a named function to forEach(); rather, you are defining an anonymous function in the invocation of forEach().
+
+Customizing forEach()
+Just like for any other function, you could call the argument anything that you want, and you would get the same results. You can see this in action below:
+
+parks.forEach((element) => {
+  console.log(element.name);
+});
+// Biscayne
+// Grand Canyon
+// Gateway Arch
+// Indiana Dunes
+But naming the argument after what the item means is more helpful to other developers, so the examples in this program will stick to that.
+
+The forEach() method also gives you access to other arguments that you can use in the function, including the index and the original collection.
+
+parks.forEach((park, index, collection) => {
+  console.log(`(${index + 1}/${collection.length}) ${park.name}`);
+});
+// (1/4) Biscayne
+// (2/4) Grand Canyon
+// (3/4) Gateway Arch
+// (4/4) Indiana Dunes
+In the above example, you can see that you have access to the individual element at each point in the array, the index at that point, and then the entire collection.
+
+*** find, filter, map, some, and every
+
+By the end of this lesson, you will be able to use find(), filter(), map(), some(), and every() to solve various problems.
+
+Overview
+Now that you have some understanding of how to use forEach(), you are ready to learn other array methods that work in a similar fashion. In this lesson, you'll learn how to use the built-in array methods find(), filter(), map(), some(), and every().
+
+Start by watching the video below, which provides a brief introduction to this topic. Then, read through the rest of the lesson and complete the practice work required. This will give you a full understanding of these concepts.
+
+
+The find() method
+In this lesson, you'll work with the parks data again.
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+Sometimes, you'll want to write a loop to find an item in an array. Here's an example that uses a loop to find a park that has a specific name:
+
+let found = null;
+for (let i = 0; i < parks.length; i++) {
+  const park = parks[i];
+  if (park.name === "Biscayne") found = park;
+}
+console.log(found); //> { name: "Biscayne", rating: 4.2 }
+Once again, you can extract the logic from this loop into a function. Take a look at the function below. This function, parkNameIsBiscayne(), accepts a single park object and returns true if the name of the park is "Biscayne" and false otherwise. You can then call that function in the loop.
+
+const parkNameIsBiscayne = (park) => park.name === "Biscayne";
+
+let found = null;
+for (let i = 0; i < parks.length; i++) {
+  const park = parks[i];
+  if (parkNameIsBiscayne(park)) found = park;
+}
+console.log(found); //> { name: "Biscayne", rating: 4.2 }
+Here, you are using the loop to visit each element in the array and perform a comparison. If the comparison is true, you select that item from the array. And if the comparison never returns true, you don't select anything from the array.
+
+You could also use a built-in array method to do this; the find() method encapsulates this functionality. With find(), you can provide a callback function that implements the comparison that you wish to perform. Then, find() will apply this comparison to each element of the array.
+
+Take a look at how you could perform the above task using the find() method:
+
+let found = parks.find((park) => park.name === "Biscayne");
+console.log(found); //> { name: "Biscayne", rating: 4.2 }
+The find() method uses the callback function to decide whether each item matches, and it does the rest of the work from the loop. It returns the first item that matches the condition, even if more than one item matches. If there is no match, find() returns undefined.
+
+Here's a visual summary of this method:
+
+The find() method
+The find() method operates on an array of items and returns a single item.
+
+Do this
+Use find()
+Using the above parks dataset, use the find() function to write code that finds the park with a rating of 4.1.
+
+The filter() method
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+Sometimes, you'll want to build up a new list of items that meet a particular condition. Take a look at some code that does that with a for loop:
+
+let result = [];
+for (let i = 0; i < parks.length; i++) {
+  const park = parks[i];
+  if (park.rating >= 4.5) result.push(park);
+}
+console.log(result); // [ { name: "Grand Canyon", rating: 5 }, { name: "Gateway Arch", rating: 4.5 } ]
+You can use the filter() method to achieve the same goal. This method builds a new array of only the items that match a certain condition. Take a look at the example below to see how this works. Once again, the comparison that was done in the body of the loop has been refactored into a callback function.
+
+let result = parks.filter((park) => park.rating >= 4.5);
+console.log(result); // [ { name: "Grand Canyon", rating: 5 }, { name: "Gateway Arch", rating: 4.5 } ]
+This method filters the array so that you have only some of the items. It's pretty similar to find(), except that it returns an array of all the matching items, instead of just the first match.
+
+Keep in mind that filter() returns a new array. The old array will still have the same items. It is also possible for the returned array to be empty, if no element matches the criterion that's given in the function.
+
+Here's a quick summary of this method:
+
+The filter() method
+The filter() method operates on an array of items and returns a new array of items that match the criterion.
+
+Do this
+Use filter()
+Using the above parks dataset, write code using the filter() function to find the parks with names that begin with the letter "G".
+
+The map() method
+The loop below creates a new array that just contains the names of all of the parks.
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+
+const result = [];
+for (let i = 0; i < parks.length; i++) {
+  result.push(parks[i].name);
+}
+console.log(result); // [ "Biscayne", "Grand Canyon", "Gateway Arch", "Indiana Dunes" ]
+Basically, this code processes each item in the array and creates a new value for each item in the original array. Each item in the original array maps to an item in the new array.
+
+You can achieve this same goal with the built-in map() method, as follows:
+
+const result = parks.map((park) => park.name);
+console.log(result); // [ "Biscayne", "Grand Canyon", "Gateway Arch", "Indiana Dunes" ]
+Just like the other array methods that you've been looking at, map() will run the callback function for each of the items in the array. The map() method uses the callback function to create the items for the new array. In this case, the code adds the park.name for each park to the new array.
+
+The map() method works in lots of situations—not just ones where you want to pick one value from each of a list of objects. This method works in any situation where you want to transform each value of an array into another value.
+
+Here's a quick summary of this method:
+
+The map() method
+The map() method operates on an array of items and creates a new array of items the same size as the original array.
+
+Do this
+Use map()
+Using the above parks dataset, use the map() method to write code that returns an array of strings, where each string is the name of the park next to its rating. The end result should look something like this:
+
+["Biscayne: 4.2", "Grand Canyon: 5", "Gateway Arch: 4.5", "Indiana Dunes: 4.1"];
+When you're done, compare your work to this solution:
+
+const result = parks.map((park) => `${park.name}: ${park.rating}`);
+console.log(result); // ["Biscayne: 4.2", "Grand Canyon: 5", "Gateway Arch: 4.5", "Indiana Dunes: 4.1"];
+The some() method
+Sometimes, you'll just want to check if some condition is met in your array. The following code checks whether or not any of the parks have a rating of greater than 4.
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+
+let result = false;
+for (let i = 0; i < parks.length; i++) {
+  if (parks[i].rating > 4) result = true;
+}
+console.log(result); // true
+You can achieve this same goal with the built-in some() method, like this:
+
+const result = parks.some((park) => park.rating > 4);
+console.log(result); // true
+The some() method accepts a callback function that implements a comparison that is executed for each item in the array, similar to the previous methods. If the callback function returns true for any item in the array, then the entire some() method returns true.
+
+This method is more efficient than the for loop shown above, in that it returns immediately as soon as the condition is met. The some() method is useful for quick checks like this, and it's different from the other methods in this lesson in that it returns a boolean value instead of an array.
+
+Here's a quick summary of this method:
+
+The some() method
+The some() method operates on an array of items and returns a boolean value.
+
+Do this
+Use some()
+Using the above parks dataset, use the some() function to write code that returns whether or not the "Grand Arches" park is included in the array.
+
+The every() method
+At times, you may want to check whether every item in an array matches some condition. The every() method has you covered. Take a look:
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+
+const result = parks.every((park) => park.rating > 4);
+console.log(result); // true
+The every() method works by checking the condition given against every item in the array. If that condition ever fails, it will return false. Otherwise, it will return true. Once again, the comparator is implemented in the callback function passed to the method.
+
+Here's a quick summary of this method:
+
+The every() method
+The every() method operates on an array of items and returns a boolean value.
+
+Do this
+Use every()
+Using the above parks dataset, use the every() function to write code that returns whether or not every park has a rating between 4.2 and 4.6.
+
+Iteration over objects
+Another way that you could store the parks data is with the following object:
+
+let parks = {
+  "Biscayne": 4.2,
+  "Grand Canyon": 5,
+  "Gateway Arch": 4.5,
+  "Indiana Dunes": 4.1,
+};
+How might you use the methods that you've learned with an object? If you want to get all the keys as an array, you can use the built-in JavaScript method Object.keys(), like this:
+
+Object.keys(parks); // => ["Biscayne", "Grand Canyon", "Gateway Arch", "Indiana Dunes"];
+With the keys as an array, you can use the array methods that you've learned, like this:
+
+Object.keys(parks).filter((name) => {
+  const rating = parks[name];
+  return rating >= 4.5;
+}); // => ["Grand Canyon", "Gateway Arch"]
+Note: There's also a method to get the values from an object. To learn more, check out the MDN documentation on Object.values().
+
+Don't forget to return!
+All of these methods require that you return some value inside the callback function. Not doing so could have unintended consequences, as demonstrated here:
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+
+const result = parks.map((park) => {
+  park.name; // This value isn't returned by the callback
+});
+console.log(result); // [ undefined, undefined, undefined, undefined ]
+In the above code, because park.name isn't being returned, the inner function's return value is undefined. This means that undefined will take the place of each item.
+
+So if you are seeing strange results, make sure that you are returning within the callback function.
+
+*** reduce
+
+Learning Objective
+By the end of this lesson, you will be able to use reduce() to solve different problems.
+
+Overview
+You've seen several powerful array methods so far. In this lesson, you'll learn another: reduce(). As you'll see, reduce() is a tool that generalizes the accumulator pattern that you learned earlier in this program.
+
+Overview of the reduce() method
+Start by watching the video below, which provides a brief introduction to this topic. Then, read through the rest of the lesson and complete the practice work required. This will give you a full understanding of these concepts.
+
+
+The basics of reduce()
+Earlier in this program, you learned about the accumulator pattern. In this pattern, you use a loop to build up a new value. Each step of the loop gets one item from the array and combines it with an accumulator, like a running total.
+
+Take a look at an example with a for loop:
+
+const areas = [768, 1004.2, 433.1];
+let result = 0;
+for (let i = 0; i < areas.length; i++) {
+  result += areas[i];
+}
+console.log(result); //> 2205.3
+The reduce() method is another way to express the accumulator pattern. This method turns an array of values into a single value. Like many of the other methods here, it will pass each value into a function, step by step. The reduce() method will also pass in the return value from the previous step.
+
+For example, take a look at the following code. This code uses reduce() to achieve the same results as the code above.
+
+const areas = [768, 1004.2, 433.1];
+let result = areas.reduce((total, area) => total + area);
+console.log(result); //> 2205.3
+The reduce() method takes two arguments: a function and an optional starting value. In the example above, the optional initial value isn't used. However, consider that there may be different scenarios where setting an initial value may be useful. For example, if you have an initial area that you want to add, you can simply add it as an argument, as shown below.
+
+const areas = [768, 1004.2, 433.1];
+let initialValue = 200;
+let result = areas.reduce((total, area) => total + area, initialValue);
+console.log(result); //> 2405.3
+The function passed into the reduce() function is similar to the other functions that you've seen, except that it includes an additional parameter: the initialValue. The initial value parameter represents the following:
+
+On the first iteration, the accumulator value (total in the above function) is set to the second parameter (200 in the above function).
+
+On every subsequent iteration, the accumulator value is set to whatever was returned from the previous iteration.
+
+So, the above code works as follows:
+
+The areas and initialValue values are defined.
+
+The reduce() method takes a function that adds the accumulator and the current element. The first iteration will add 200 and 768.
+
+The result of the first iteration will become the accumulator in the next iteration.
+
+Once all iterations are finished, the value is stored in the result variable.
+
+The result is logged out.
+
+Do this
+Add logging for understanding
+The reduce() method can be difficult to understand. Try running the following code, and look at the logged statements.
+
+const areas = [768, 1004.2, 433.1];
+let initialValue = 200;
+let result = areas.reduce((total, area, index) => {
+  console.log(`index: ${index}`, `total: ${total}`, `area: ${area}`);
+  return total + area;
+}, initialValue);
+console.log(result); //> 2405.3
+You will see something like this:
+
+index: 0 total: 200 area: 768
+index: 1 total: 968 area: 1004.2
+index: 2 total: 1972.2 area: 433.1
+2405.3
+As you can see above, the value of area is added to total at each step.
+
+Remove the initial value
+The second argument in reduce() is optional. So, what happens if it is removed? Try running the following code to find out.
+
+const areas = [768, 1004.2, 433.1];
+let result = areas.reduce((total, area, index) => {
+  console.log(`index: ${index}`, `total: ${total}`, `area: ${area}`);
+  return total + area;
+});
+console.log(result); //> 2205.3
+You will see something like this:
+
+index: 1 total: 768 area: 1004.2
+index: 2 total: 1772.2 area: 433.1
+2205.3
+Notice that for the first iteration, total is set to the first value of the areas array, and area is set to the second value.
+
+Complex usage
+The initial value that reduce() uses can be any data type, just like how the accumulator could be anything when you're using the accumulator pattern. This allows for some pretty powerful but complex usage of the reduce() method.
+
+For example, take a look at the code below. This code accumulates array values into an object.
+
+const parks = [
+  { name: "Acadia", areaInSquareKm: 198.6 },
+  { name: "Crater Lake", areaInSquareKm: 741.5 },
+  { name: "Kenai Fjords", areaInSquareKm: 2710 },
+  { name: "Zion", areaInSquareKm: 595.9 },
+];
+
+const parkToAreasObject = parks.reduce((result, park) => {
+  result[park.name] = park.areaInSquareKm;
+  return result;
+}, {});
+Running the code above produces the following value for the result variable:
+
+{
+  Acadia: 198.6,
+  'Crater Lake': 741.5,
+  'Kenai Fjords': 2710,
+  Zion: 595.9
+}
+At each step in the function given to reduce(), a new key is created in the given object. The value assigned to that key is the areaInSquareKm value. Then, the overall object is returned so that it can serve as the accumulator (result) in the next iteration.
+
+*** sort
+
+Learning Objective
+By the end of this lesson, you will be able to use sort() to sort arrays in various ways.
+
+Overview
+Sorting is often a starting step when you're solving other problems. But sorting can be a deep and difficult topic on its own. Until you're ready to dive into building your own sorting function, you can use JavaScript's built-in sort() method. You'll learn how to do just that in this lesson.
+
+Basics of sort()
+Start by watching the video below, which provides a brief introduction to this topic. Then, read through the rest of the lesson and complete the practice work required. This will give you a full understanding of these concepts.
+
+
+The sort() method takes a function and uses that function to sort an array based on the given criteria. For example, take a look at the function below. This function sorts the parks based on the rating of each park.
+
+const parks = [
+  { name: "Biscayne", rating: 4.2 },
+  { name: "Grand Canyon", rating: 5 },
+  { name: "Gateway Arch", rating: 4.5 },
+  { name: "Indiana Dunes", rating: 4.1 },
+];
+
+parks.sort((parkA, parkB) => (parkA.rating > parkB.rating ? 1 : -1));
+console.log(parks);
+In the above code, you can see that the function passed in to sort() has two parameters. Each parameter, on the first iteration, represents the first and second element of the array. The ratings are then compared for each park.
+
+If the number returned is negative, the first item (parkA) will be moved before the second item (parkB). The opposite is true if the number is positive. This iteration then continues, but with the second and third items.
+
+If 0 is returned, the items won't change places.
+
+You may also see code that follows the format shown below, particularly when you're sorting based on a number. The effect of this code is similar to that of the previous code sample.
+
+parks.sort((parkA, parkB) => parkA.rating - parkB.rating);
+console.log(parks);
+Sorting strings
+You can compare strings with the greater-than > and less-than < symbols in JavaScript.
+
+"Biscayne" < "Grand Canyon"; //> true
+The above code returns true because the letter B comes before the letter G. However, it isn't quite as simple as it seems. For example, look at this code:
+
+"biscayne" < "Grand Canyon"; //> false
+Strings do not get compared alphabetically; instead, they're compared based on their character value. This means that sorting strings can be a bit more unreliable than you might expect. Still, with some ingenuity, it is possible to do a passable job of sorting strings. For example, you could modify your function as follows:
+
+parks.sort((parkA, parkB) =>
+  parkA.name.toLowerCase() > parkB.name.toLowerCase() ? 1 : -1
+);
+console.log(parks);
+Caveats for using sort()
+Be careful with sort(). It has several peculiarities that can lead to bugs. Here are a few to watch out for:
+
+It expects you to return a negative number for items that should be earlier in the list, and a positive number for items that should be later in the list.
+
+It changes the array in place. In other words, it doesn't return a new array—it mutates the existing array. The parks dataset changed its order in the above example.
+
+It has a default behavior if you don't pass in a function, but this default behavior might not be what you want.
+
+For more insight into the default behavior, take a look at the following code.
+
+["Biscayne", "grand canyon", "Gateway arch"].sort();
+//> [ 'Biscayne', 'Gateway arch', 'grand canyon' ]
+This could be what you want, but it is almost always better to provide a function so that you can determine the effect of sort().
+
+*** assessment

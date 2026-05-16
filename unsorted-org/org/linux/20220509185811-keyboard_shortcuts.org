@@ -1,0 +1,1202 @@
+:PROPERTIES:
+:ID:       380c2018-8c41-49bc-8f98-f17db74a9b8d
+:mtime:    20230206181348 20221222164507
+:ctime:    20220509185811
+:END:
+#+title: keyboard shortcuts
+#+date: [2022-05-09 Mon 18:58]
+
+also known as hotkey
+is a series of one or several keys to quickly invoke a software program or
+perform a preprogrammed action.
+
+
+general shortcuts
+File menu 	Alt+F 	Meta+`, then f 	Alt+f (gvim) or Ctrl+e (vim + NERDTree)
+
+Edit menu 	Alt+E 	Meta+`, then e 	Alt+e (gvim)
+View menu 	Alt+V
+Undo the last operation 	Ctrl+Z 	Ctrl+x, then u or Ctrl+/ or Alt+_ or Undo u
+Redo the last operation 	Ctrl+⇧ Shift+Z, or Ctrl+Y 	Ctrl+r
+Cut the selection and store it in the clipboard 	Ctrl+X, or ⇧ Shift+Del 	⌘ Cmd+X 	Ctrl+X 	Ctrl+w 	x
+
+or "ax to cut in register "a" or "+x to cut in system clipboard
+	Ctrl+X
+Copy the selection into the clipboard 	Ctrl+C, or Ctrl+Ins 	⌘ Cmd+C 	Ctrl+C 	Meta+w, or Ctrl+Ins 	y
+
+or "ay or "+y
+	Ctrl+C
+Paste contents of clipboard at cursor 	Ctrl+V,or ⇧ Shift+Ins 	⌘ Cmd+V 	Ctrl+V 	Ctrl+y, or ⇧ Shift+Ins 	p
+
+or "ap to paste the content of the "a" register or "+p to paste the content of the system clipboard
+	Ctrl+V
+Paste special 	⊞ Win+V 	Shift+Opt+Cmd+V 	Ctrl+⇧ Shift+V 	Meta+y 	Ctrl+⇧ Shift+V 	Ctrl+⇧ Shift+V
+Select all in focused control or window 	Ctrl+A 	⌘ Cmd+A 	Ctrl+A 	Ctrl+x, then h 	ggVG, unlikely ever needed as most commands take an optional range parameter. % means "all in focused windows" here so e.g. to copy all the text, use :%y 	Ctrl+A
+Cycle through installed keyboard languages / input methods 	Alt+⇧ Shift, or ⊞ Win+Space
+
+The latter displays a menu with the currently selected input method highlighted, and debuted in Windows 8.
+	Cmd+Space (not MBR)
+
+Configure desired keypress in Keyboard and Mouse Preferences, Keyboard Shortcuts, Select the next source in Input menu.[1]
+	Ctrl+Alt+K via KDE Keyboard
+
+Alt+⇧ Shift in GNOME
+	Ctrl+\ 		Ctrl+Space
+Print 	Ctrl+P 	⌘ Cmd+P 	Ctrl+P 			Ctrl+P
+Open Help Menu 			F1 in GNOME 			Ctrl+Alt+/
+Windows Mobility Center 	Windows 7: ⊞ Win+x
+
+Windows 10: ⊞ Win+x > b
+
+PowerUser (WinX) Menu 	Windows 10: ⊞ Win+x
+Restart Video Driver 	Windows 10: Ctrl+⇧ Shift+⊞ Win+B[2][3]
+text editing
+browsers/go menu
+window management
+
+[[https://en.wikipedia.org/wiki/Keyboard_shortcut][Keyboard shortcut]]
+
+ctrl-c
+interrupts the running program
+ctrl-d
+sends an EOF (end of file) to close the terminal
+ctrl-z
+suspends the running program
+ctrl-s
+freezes the screen, stopping the display
+ctrl-q
+thaws out the screen and allows the screen display to continue
+ctrl-h
+deletes the last character typed
+ctrl-w
+deletes the last word typed
+deletes word backwards
+ctrl-u
+deletes the last line typed
+ctrl-r
+retrieves previously run commands so you can run them again
+ctrl-u
+removes text from the command line and places it in the clipboard
+deletes everything before the cursor
+ctrl-y
+grabs text from the clipboard and runs it
+undo
+ctrl-l
+clears the screen
+ctrl-a
+moves cursor to the beginning of the line
+ctrl-e
+moves cursor to the end of the line
+
+ctrl-f
+move cursor forward one char
+ctrl-b
+move cursor backwards one char
+alt-f
+move cursor forward one word
+alt-b
+move cursor backwards one word
+
+ctrl-k
+deletes everything after the cursor
+
+alt-d
+deletes word forwards
+
+alt-.
+
+
+
+* bash emacs
+
+8.4 Bindable Readline Commands
+This section describes Readline commands that may be bound to key sequences.
+You can list your key bindings by executing bind -P or, for a more terse format, suitable for an
+inputrc file, bind -p. (See Section 4.2 [Bash Builtins], page 51.)
+Command names without an accompanying key sequence are unbound by default.
+In the following descriptions, point refers to the current cursor position, and mark refers
+to a cursor position saved by the set-mark command.
+The text between the point and mark is referred to as the region.
+
+** Commands For Moving
+
+beginning-of-line (C-a)
+Move to the start of the current line.
+C-a beginning-of-line Move to the beginning of line.
+
+end-of-line (C-e)
+Move to the end of the line.
+C-e end-of-line Move to the end of line.
+
+forward-char (C-f)
+Move forward a character.
+C-f forward-char Move forward a character.
+
+backward-char (C-b)
+Move back a character.
+C-b backward-char Move back a character.
+
+forward-word (M-f)
+Move forward to the end of the next word. Words are composed of letters and
+digits.
+M-f forward-word Move forward a word.
+  not working in bash right now
+
+backward-word (M-b)
+Move back to the start of the current or previous word. Words are composed
+of letters and digits.
+M-b backward-word Move backward a word.
+  not working in bash right now
+
+shell-forward-word (M-C-f)
+Move forward to the end of the next word. Words are delimited by non-quoted
+shell metacharacters.
+
+shell-backward-word (M-C-b)
+Move back to the start of the current or previous word. Words are delimited
+by non-quoted shell metacharacters.
+
+previous-screen-line ()
+Attempt to move point to the same physical screen column on the previous
+physical screen line. This will not have the desired effect if the current Readline
+line does not take up more than one physical line or if point is not greater than
+the length of the prompt plus the screen width.
+
+next-screen-line ()
+Attempt to move point to the same physical screen column on the next physical
+screen line. This will not have the desired effect if the current Readline line does
+not take up more than one physical line or if the length of the current Readline
+line is not greater than the length of the prompt plus the screen width.
+
+clear-display (M-C-l)
+Clear the screen and, if possible, the terminal’s scrollback buffer, then redraw
+the current line, leaving the current line at the top of the screen.
+
+clear-screen (C-l)
+Clear the screen, then redraw the current line, leaving the current line at the
+top of the screen.
+C-l clear-screen Clear the screen leaving the current line at the top of the screen.
+  , and place current line at the top of the screen.
+
+redraw-current-line ()
+(unbound) redraw-current-line Refresh the current line.
+Refresh the current line. By default, this is unbound.
+
+** Commands For Manipulating The History
+
+accept-line (Newline or Return)
+Accept the line regardless of where the cursor is. If this line is non-empty, add it
+to the history list according to the setting of the HISTCONTROL and HISTIGNORE
+variables. If this line is a modified history line, then restore the history line to
+its original state.
+Return accept-line Accept the line regardless of where the cursor is.
+
+
+previous-history (C-p)
+Move ‘back’ through the history list, fetching the previous command.
+C-p previous-history Fetch the previous command from the history list.
+
+next-history (C-n)
+Move ‘forward’ through the history list, fetching the next command.
+C-n next-history Fetch the next command from the history list.
+
+beginning-of-history (M-<)
+Move to the first line in the history.
+M-<beginning-of-history Move to the first line in the history.
+
+end-of-history (M->)
+Move to the end of the input history, i.e., the line currently being entered.
+M-> end-of-history Move to the end of the input history (current line).
+
+reverse-search-history (C-r)
+Search backward starting at the current line and moving ‘up’ through the his-
+tory as necessary. This is an incremental search. This command sets the region
+to the matched text and activates the mark.
+C-r reverse-search-history Search backward starting at the current line (incremental).
+
+forward-search-history (C-s)
+Search forward starting at the current line and moving ‘down’ through the
+history as necessary. This is an incremental search. This command sets the
+region to the matched text and activates the mark.
+C-s forward-search-history Search forward starting at the current line (incremental).
+
+non-incremental-reverse-search-history (M-p)
+Search backward starting at the current line and moving ‘up’ through the his-
+tory as necessary using a non-incremental search for a string supplied by the
+user. The search string may match anywhere in a history line.
+M-p non-incremental-reverse-search-history Search backward using non-incremental search.
+
+non-incremental-forward-search-history (M-n)
+Search forward starting at the current line and moving ‘down’ through the
+history as necessary using a non-incremental search for a string supplied by the
+user. The search string may match anywhere in a history line.
+M-n non-incremental-forward-search-history Search forward using non-incremental search.
+
+history-search-forward ()
+Search forward through the history for the string of characters between the
+start of the current line and the point. The search string must match at the
+beginning of a history line. This is a non-incremental search. By default, this
+command is unbound.
+(unbound) history-search-forward Search backward for a string between start of line and point.
+
+history-search-backward ()
+Search backward through the history for the string of characters between the
+start of the current line and the point. The search string must match at the
+beginning of a history line. This is a non-incremental search. By default, this
+command is unbound.
+(unbound) history-search-backward Search forward for a string between start of line and point.
+
+history-substring-search-forward ()
+Search forward through the history for the string of characters between the
+start of the current line and the point. The search string may match anywhere
+in a history line. This is a non-incremental search. By default, this command
+is unbound.
+
+history-substring-search-backward ()
+Search backward through the history for the string of characters between the
+start of the current line and the point. The search string may match anywhere
+in a history line. This is a non-incremental search. By default, this command
+is unbound.
+
+yank-nth-arg (M-C-y)
+Insert the first argument to the previous command (usually the second word
+on the previous line) at point. With an argument n, insert the nth word from
+the previous command (the words in the previous command begin with word
+0). A negative argument inserts the nth word from the end of the previous
+command. Once the argument n is computed, the argument is extracted as if
+the ‘!n’ history expansion had been specified.
+M-C-y yank-nth-arg Insert the n-th argument to the previous command at point.
+
+
+yank-last-arg (M-. or M-_)
+Insert last argument to the previous command (the last word of the previous
+history entry). With a numeric argument, behave exactly like yank-nth-arg.
+Successive calls to yank-last-arg move back through the history list, inserting
+the last word (or the word specified by the argument to the first call) of each line
+in turn. Any numeric argument supplied to these successive calls determines
+the direction to move through the history. A negative argument switches the
+direction through the history (back or forward). The history expansion facilities
+are used to extract the last argument, as if the ‘!$’ history expansion had been
+specified.
+M-. or M- yank-last-arg Insert the last argument to the previous command.
+
+operate-and-get-next (C-o)
+Accept the current line for return to the calling application as if a newline had
+been entered, and fetch the next line relative to the current line from the history
+for editing. A numeric argument, if supplied, specifies the history entry to use
+instead of the current line.
+
+** Commands For Changing Text
+
+end-of-file (usually C-d)
+The character indicating end-of-file as set, for example, by stty. If this charac-
+ter is read when there are no characters on the line, and point is at the beginning
+of the line, Readline interprets it as the end of input and returns eof.
+
+delete-char (C-d)
+Delete the character at point. If this function is bound to the same character
+as the tty eof character, as C-d commonly is, see above for the effects.
+C-d delete-char Delete one character at point.
+  not working in bash right now
+
+backward-delete-char (Rubout)
+Delete the character behind the cursor. A numeric argument means to kill the
+characters instead of deleting them.
+Rubout backward-delete-char Delete one character backward.
+
+forward-backward-delete-char ()
+Delete the character under the cursor, unless the cursor is at the end of the
+line, in which case the character behind the cursor is deleted. By default, this
+is not bound to a key.
+
+quoted-insert (C-q or C-v)
+Add the next character typed to the line verbatim. This is how to insert key
+sequences like C-q, for example.
+C-q or C-v quoted-insert Quoted insert.
+
+self-insert (a, b, A, 1, !, ...)
+Insert yourself.
+
+bracketed-paste-begin ()
+This function is intended to be bound to the "bracketed paste" escape sequence
+sent by some terminals, and such a binding is assigned by default. It allows
+Readline to insert the pasted text as a single unit without treating each char-
+acter as if it had been read from the keyboard. The characters are inserted
+as if each one was bound to self-insert instead of executing any editing
+commands.
+Bracketed paste sets the region (the characters between point and the mark)
+to the inserted text. It uses the concept of an active mark: when the mark
+is active, Readline redisplay uses the terminal’s standout mode to denote the
+region.
+
+transpose-chars (C-t)
+Drag the character before the cursor forward over the character at the cursor,
+moving the cursor forward as well. If the insertion point is at the end of the
+line, then this transposes the last two characters of the line. Negative arguments
+have no effect.
+C-t transpose-chars Exchange the char before cursor with the character at cursor.
+
+transpose-words (M-t)
+Drag the word before point past the word after point, moving point past that
+word as well. If the insertion point is at the end of the line, this transposes the
+last two words on the line.
+M-t transpose-words Exchange the word before cursor with the word at cursor.
+  not working in bash right now
+
+upcase-word (M-u)
+Uppercase the current (or following) word. With a negative argument, upper-
+case the previous word, but do not move the cursor.
+M-u upcase-word Uppercase the current (or following) word.
+  not working in bash right now
+
+downcase-word (M-l)
+Lowercase the current (or following) word. With a negative argument, lowercase
+the previous word, but do not move the cursor.
+M-l downcase-word Lowercase the current (or following) word.
+  not working in bash right now
+
+capitalize-word (M-c)
+Capitalize the current (or following) word. With a negative argument, capitalize
+the previous word, but do not move the cursor.
+M-c capitalize-word Capitalize the current (or following) word.
+  not working in bash right now
+
+overwrite-mode ()
+Toggle overwrite mode. With an explicit positive numeric argument, switches
+to overwrite mode. With an explicit non-positive numeric argument, switches to
+insert mode. This command affects only emacs mode; vi mode does overwrite
+differently. Each call to readline() starts in insert mode.
+In overwrite mode, characters bound to self-insert replace the text at
+point rather than pushing the text to the right. Characters bound to
+backward-delete-char replace the character before point with a space.
+By default, this command is unbound.
+(unbound) overwrite-mode Toggle overwrite mode.
+
+M-TAB or M-C-i tab-insert Insert a tab character.
+  not working in bash right now
+
+** Killing And Yanking
+
+kill-line (C-k)
+Kill the text from point to the end of the line. With a negative numeric argu-
+ment, kill backward from the cursor to the beginning of the current line.
+C-k Kill the text from point to the end of the line. kill-line
+
+backward-kill-line (C-x Rubout)
+Kill backward from the cursor to the beginning of the current line. With a
+negative numeric argument, kill forward from the cursor to the end of the
+current line.
+C-x Rubout Kill backward to the beginning of the line. backward-kill-line
+
+unix-line-discard (C-u)
+Kill backward from the cursor to the beginning of the current line.
+C-u Kill backward from point to the beginning of the line. unix-line-discard
+
+kill-whole-line ()
+Kill all characters on the current line, no matter where point is. By default,
+this is unbound.
+(unbound) kill-whole-line Kill all characters on the current line.
+
+kill-word (M-d)
+Kill from point to the end of the current word, or if between words, to the end
+of the next word. Word boundaries are the same as forward-word.
+M-d Kill from point to the end of the current word. kill-word
+  not working in bash right now
+
+backward-kill-word (M-DEL)
+Kill the word behind point. Word boundaries are the same as backward-word.
+M-Rubout Kill the word behind point. backward-kill-word
+
+shell-kill-word (M-C-d)
+Kill from point to the end of the current word, or if between words, to the end
+of the next word. Word boundaries are the same as shell-forward-word.
+
+shell-backward-kill-word ()
+Kill the word behind point. Word boundaries are the same as shell-backward-
+word.
+
+shell-transpose-words (M-C-t)
+Drag the word before point past the word after point, moving point past that
+word as well. If the insertion point is at the end of the line, this transposes the
+last two words on the line. Word boundaries are the same as shell-forward-
+word and shell-backward-word.
+
+unix-word-rubout (C-w)
+Kill the word behind point, using white space as a word boundary. The killed
+text is saved on the kill-ring.
+C-w Kill the word behind point, using white space as a word boundary. unix-word-rubout
+
+unix-filename-rubout ()
+Kill the word behind point, using white space and the slash character as the
+word boundaries. The killed text is saved on the kill-ring.
+
+delete-horizontal-space ()
+Delete all spaces and tabs around point. By default, this is unbound.
+M-\ Delete all spaces and tabs around point. delete-horizontal-space
+
+kill-region ()
+Kill the text in the current region. By default, this command is unbound.
+(unbound) kill-region Kill the text between the point and mark.
+
+copy-region-as-kill ()
+Copy the text in the region to the kill buffer, so it can be yanked right away.
+By default, this command is unbound.
+(unbound) copy-region-as-kill Copy the text in the region to the kill buffer.
+
+copy-backward-word ()
+Copy the word before point to the kill buffer. The word boundaries are the
+same as backward-word. By default, this command is unbound.
+(unbound) copy-backward-word Copy the word before point to the kill buffer.
+
+copy-forward-word ()
+Copy the word following point to the kill buffer. The word boundaries are the
+same as forward-word. By default, this command is unbound.
+(unbound) copy-forward-word Copy the word following point to the kill buffer.
+
+yank (C-y)
+Yank the top of the kill ring into the buffer at point.
+C-y Yank the top of the kill ring into the buffer at point. yank
+
+yank-pop (M-y)
+Rotate the kill-ring, and yank the new top. You can only do this if the prior
+command is yank or yank-pop.
+M-y Rotate the kill ring, and yank the new top. yank-pop
+  not working in bash right now
+
+** Specifying Numeric Arguments
+
+digit-argument (M-0, M-1, ... M--)
+Add this digit to the argument already accumulating, or start a new argument.
+M-- starts a negative argument.
+M-0, M-1, ..., M– digit-argument Specify the digit to the argument. M– starts a negative argument.
+
+universal-argument ()
+This is another way to specify an argument. If this command is followed by one
+or more digits, optionally with a leading minus sign, those digits define the ar-
+gument. If the command is followed by digits, executing universal-argument
+again ends the numeric argument, but is otherwise ignored. As a special case,
+if this command is immediately followed by a character that is neither a digit
+nor minus sign, the argument count for the next command is multiplied by
+four. The argument count is initially one, so executing this function the first
+time makes the argument count four, a second time makes the argument count
+sixteen, and so on. By default, this is not bound to a key.
+(unbound) universal-argument Either sets argument or multiplies the current argument by 4.
+
+** Letting Readline Type For You
+
+complete (TAB)
+Attempt to perform completion on the text before point. The actual completion
+performed is application-specific. Bash attempts completion treating the text
+as a variable (if the text begins with ‘$’), username (if the text begins with
+‘~’), hostname (if the text begins with ‘@’), or command (including aliases and
+functions) in turn. If none of these produces a match, filename completion is
+attempted.
+TAB complete Attempt to perform completion on the text before point.
+
+possible-completions (M-?)
+List the possible completions of the text before point. When displaying com-
+pletions, Readline sets the number of columns used for display to the value of
+completion-display-width, the value of the environment variable COLUMNS,
+or the screen width, in that order.
+M-? possible-completions List the possible completions of the text before point.
+
+insert-completions (M-*)
+Insert all completions of the text before point that would have been generated
+by possible-completions.
+M-* insert-completions Insert all completions of the text before point generated by
+possible-completions.
+
+menu-complete ()
+Similar to complete, but replaces the word to be completed with a single match
+from the list of possible completions. Repeated execution of menu-complete
+steps through the list of possible completions, inserting each match in turn.
+At the end of the list of completions, the bell is rung (subject to the setting
+of bell-style) and the original text is restored. An argument of n moves n
+positions forward in the list of matches; a negative argument may be used to
+move backward through the list. This command is intended to be bound to
+TAB, but is unbound by default.
+(unbound) menu-complete Similar to complete but replaces the word with the first match.
+
+menu-complete-backward ()
+Identical to menu-complete, but moves backward through the list of possible
+completions, as if menu-complete had been given a negative argument.
+
+delete-char-or-list ()
+Deletes the character under the cursor if not at the beginning or end of the
+line (like delete-char). If at the end of the line, behaves identically to
+possible-completions. This command is unbound by default.
+(unbound) delete-char-or-list Deletes the car if not at the beginning of line or acts like possible-
+completions at the end of the line.
+
+
+complete-filename (M-/)
+Attempt filename completion on the text before point.
+
+possible-filename-completions (C-x /)
+List the possible completions of the text before point, treating it as a filename.
+
+complete-username (M-~)
+Attempt completion on the text before point, treating it as a username.
+
+possible-username-completions (C-x ~)
+List the possible completions of the text before point, treating it as a username.
+
+complete-variable (M-$)
+Attempt completion on the text before point, treating it as a shell variable.
+
+possible-variable-completions (C-x $)
+List the possible completions of the text before point, treating it as a shell
+variable.
+
+complete-hostname (M-@)
+Attempt completion on the text before point, treating it as a hostname.
+
+possible-hostname-completions (C-x @)
+List the possible completions of the text before point, treating it as a hostname.
+
+complete-command (M-!)
+Attempt completion on the text before point, treating it as a command name.
+Command completion attempts to match the text against aliases, reserved
+words, shell functions, shell builtins, and finally executable filenames, in that
+order.
+
+possible-command-completions (C-x !)
+List the possible completions of the text before point, treating it as a command
+name.
+
+dynamic-complete-history (M-TAB)
+Attempt completion on the text before point, comparing the text against lines
+from the history list for possible completion matches.
+
+dabbrev-expand ()
+
+Attempt menu completion on the text before point, comparing the text against
+lines from the history list for possible completion matches.
+
+complete-into-braces (M-{)
+
+Perform filename completion and insert the list of possible completions enclosed
+
+within braces so the list is available to the shell (see Section 3.5.1 [Brace Ex-
+pansion], page 23).
+
+** Keyboard Macros
+
+start-kbd-macro (C-x ()
+Begin saving the characters typed into the current keyboard macro.
+C-x ( Begin saving the chars typed into the current keyboard macro. start-kbd-macro
+
+end-kbd-macro (C-x ))
+Stop saving the characters typed into the current keyboard macro and save the
+definition.
+C-x ) End saving the chars typed into the current keyboard macro. end-kbd-macro
+
+call-last-kbd-macro (C-x e)
+Re-execute the last keyboard macro defined, by making the characters in the
+macro appear as if typed at the keyboard.
+C-x e Re-execute the last keyboard macro defined. call-last-kbd-macro
+
+print-last-kbd-macro ()
+Print the last keboard macro defined in a format suitable for the inputrc file.
+
+** Some Miscellaneous Commands
+
+re-read-init-file (C-x C-r)
+Read in the contents of the inputrc file, and incorporate any bindings or variable
+assignments found there.
+C-x C-r re-read-init-file Read and execute the contents of inputrc file.
+
+abort (C-g)
+Abort the current editing command and ring the terminal’s bell (subject to the
+setting of bell-style).
+C-g abort Abort the current editing command and ring the terminal’s bell.
+
+do-lowercase-version (M-A, M-B, M-x, ...)
+If the metafied character x is upper case, run the command that is bound to
+the corresponding metafied lower case character. The behavior is undefined if
+x is already lower case.
+M-a, M-b, M-x, ... do-uppercase-version If the metafield char x is lowercase, run the command that is
+bound to uppercase char.
+
+prefix-meta (ESC)
+Metafy the next character typed. This is for keyboards without a meta key.
+Typing ‘ESC f’ is equivalent to typing M-f.
+ESC prefix-meta Metafy the next character typed. For example, ESC-p is equiv-
+alent to Meta-p.
+
+undo (C-_ or C-x C-u)
+Incremental undo, separately remembered for each line.
+C- or C-x C-u undo Incremental undo, separately remembered for each line.
+
+revert-line (M-r)
+Undo all changes made to this line. This is like executing the undo command
+enough times to get back to the beginning.
+M-r revert-line Undo all changes made to this line.
+
+tilde-expand (M-&)
+Perform tilde expansion on the current word.
+M-& tilde-expand Perform tilde expansion on the current word.
+
+set-mark (C-@)
+Set the mark to the point. If a numeric argument is supplied, the mark is set
+to that position.
+C-@ or M-<space> set-mark Set the mark to the point.
+
+exchange-point-and-mark (C-x C-x)
+Swap the point with the mark. The current cursor position is set to the saved
+position, and the old cursor position is saved as the mark.
+C-x C-x exchange-point-and-mark Swap the point with the mark.
+
+character-search (C-])
+A character is read and point is moved to the next occurrence of that character.
+A negative count searches for previous occurrences.
+C-] character-search Move to the next occurance of current character under cursor.
+
+character-search-backward (M-C-])
+A character is read and point is moved to the previous occurrence of that
+character. A negative count searches for subsequent occurrences.
+M-C-] character-search-backward Move to the previous occurrence of current character under cursor.
+
+skip-csi-sequence ()
+Read enough characters to consume a multi-key sequence such as those defined
+for keys like Home and End. Such sequences begin with a Control Sequence
+Indicator (CSI), usually ESC-[. If this sequence is bound to "\e[", keys pro-
+ducing such sequences will have no effect unless explicitly bound to a readline
+command, instead of inserting stray characters into the editing buffer. This is
+unbound by default, but usually bound to ESC-[.
+
+insert-comment (M-#)
+Without a numeric argument, the value of the comment-begin variable is in-
+serted at the beginning of the current line. If a numeric argument is supplied,
+this command acts as a toggle: if the characters at the beginning of the line
+do not match the value of comment-begin, the value is inserted, otherwise the
+characters in comment-begin are deleted from the beginning of the line. In
+either case, the line is accepted as if a newline had been typed. The default
+value of comment-begin causes this command to make the current line a shell
+comment. If a numeric argument causes the comment character to be removed,
+the line will be executed by the shell.
+M-# insert-comment Without argument line is commented, with argument uncom-
+mented (if it was commented).
+
+dump-functions ()
+Print all of the functions and their key bindings to the Readline output stream.
+If a numeric argument is supplied, the output is formatted in such a way that
+it can be made part of an inputrc file. This command is unbound by default.
+(unbound) dump-functions Print all of the functions and their key bindings.
+
+
+dump-variables ()
+Print all of the settable variables and their values to the Readline output stream.
+If a numeric argument is supplied, the output is formatted in such a way that
+it can be made part of an inputrc file. This command is unbound by default.
+(unbound) dump-variables Print all of the settable variables and their values.
+
+dump-macros ()
+Print all of the Readline key sequences bound to macros and the strings they
+output. If a numeric argument is supplied, the output is formatted in such a
+way that it can be made part of an inputrc file. This command is unbound by
+default.
+(unbound) dump-macros Print all of the key sequences bound to macros.
+
+glob-complete-word (M-g)
+The word before point is treated as a pattern for pathname expansion, with an
+asterisk implicitly appended. This pattern is used to generate a list of matching
+file names for possible completions.
+
+glob-expand-word (C-x *)
+The word before point is treated as a pattern for pathname expansion, and
+the list of matching file names is inserted, replacing the word. If a numeric
+argument is supplied, a ‘*’ is appended before pathname expansion.
+
+glob-list-expansions (C-x g)
+The list of expansions that would have been generated by glob-expand-word
+is displayed, and the line is redrawn. If a numeric argument is supplied, a ‘*’
+is appended before pathname expansion.
+
+display-shell-version (C-x C-v)
+Display version information about the current instance of Bash.
+
+shell-expand-line (M-C-e)
+Expand the line as the shell does. This performs alias and history expansion
+as well as all of the shell word expansions (see Section 3.5 [Shell Expansions],
+page 22).
+
+history-expand-line (M-^)
+Perform history expansion on the current line.
+
+magic-space ()
+Perform history expansion on the current line and insert a space (see Section 9.3
+[History Interaction], page 149).
+
+alias-expand-line ()
+Perform alias expansion on the current line (see Section 6.6 [Aliases], page 95).
+
+history-and-alias-expand-line ()
+Perform history and alias expansion on the current line.
+
+insert-last-argument (M-. or M-_)
+A synonym for yank-last-arg.
+
+edit-and-execute-command (C-x C-e)
+Invoke an editor on the current command line, and execute the result as shell
+commands. Bash attempts to invoke $VISUAL, $EDITOR, and emacs as the
+editor, in that order.
+
+C-e emacs-editing-mode When in vi mode, switch to emacs mode.
+M-C-j vi-editing-mode When in emacs mode, switch to vi mode.
+
+* bash vi
+
+Readline VI Editing Mode Cheat Sheet
+Default Keyboard Shortcuts for Bash
+Shortcut Description
+Switching to Command Mode:
+ESC Switch to command mode.
+Commands for Entering Input mode:
+i Insert before cursor.
+a Insert after cursor.
+I Insert at the beginning of line.
+A Insert at the end of line.
+c<movement command> Change text of a movement command <movement command> (see below).
+C Change text to the end of line (equivalent to c$).
+cc or S Change current line (equivalent to 0c$).
+s Delete a single character under the cursor and enter input mode (equivalent to
+c[SPACE]) .
+r Replaces a single character under the cursor (without leaving command mode).
+R Replaces characters under the cursor.
+v Edit (and execute) the current command in a text editor (an editor in $VISUAL and
+$EDITOR variables or vi).
+Basic Movement Commands (in command mode):
+l or SPACE Move one character right.
+h Move one character left.
+w Move one word or token right.
+b Move one word or token left.
+W Move one non-blank word right.
+B Move one non-blank word left.
+e Move to the end of the current word.
+E Move to the end of the current non-blank word.
+0 Move to the beginning of line.
+ˆ Move to the first non-blank character of line.
+$ Move to the end of line.
+% Move to the corresponding opening/closing bracket (()’s, []’s and {}’s).
+Character Finding Commands (these are also Movement Commands):
+fc Move right to the next occurance of c.
+Fc Move left to the previous occurance of c.
+tc Move right to the next occurance of c, then one char backward.
+Tc Move left to the previous occurance of c, then one char forward.
+; Redo the last character finding command.
+, Redo the last character finding command in opposite direction.
+| Move to the n-th column (you may specify the argument n by typing it on number
+keys, for example, 20|).
+A cheat sheet by Peteris Krumins (peter@catonmat.net), 2008.
+http://www.catonmat.net - good coders code, great reuse
+Released under GNU Free Document License.
+Deletion Commands:
+x Delete a single character under the cursor.
+X Delete a character before the cursor.
+d<movement command> Delete text of a movement command <movement command> (see above).
+D Delete to the end of the line (equivalent to d$).
+dd Delete current line (equivalent to 0d$).
+CTRL-w Delete the previous word.
+CTRL-u Delete from the cursor to the beginning of line.
+Undo, Redo and Copy/Paste Commands:
+u Undo previous text modification.
+U Undo all previous text modifications on the line.
+. Redo the last text modification.
+y<movement command> Yank a movement into buffer (copy).
+yy Yank the whole line.
+p Insert the yanked text at the cursor (paste).
+P Insert the yanked text before the cursor.
+Commands for Command History:
+k Move backward one command in history.
+j Move forward one command in history.
+G Move to the history line n (you may specify the argument n by typing it on number
+keys, for example, 15G).
+/string or CTRL-r Search history backward for a command matching string.
+?string or CTRL-s Search history forward for a command matching string (remember that on most
+machines CTRL-s stops the output to the terminal (CTRL-q starts output) and you
+might need to change it with stty command).
+n Repeat search in the same direction as previous.
+N Repeat search in the opposite direction as previous.
+Completion Commands:
+TAB or CTRL-i or = List possible completions.
+"*" Insert all possible completions.
+Miscellaneous Commands:
+∼ Invert the case of the character under cursor, and move a character right.
+# Prepend # (comment character) to the line and send it to the history list.
+Inserts the n-th word of the previous command in the current line.
+0, 1, 2, ... Sets the numeric argument.
+CTRL-v Insert a character literally (quoted insert).
+CTRL-t Transpose (exchange) two characters.
+Examples and Tips
+• Some of the commands take a <movement command>. These commands apply the movement to themselves.
+For example, d$ would use $ as a movement, which moves the cursor to the end of the line, thus, the whole d$
+would delete text from the current cursor position to the end of the line. Another example, a command cfA would
+use fA as a movement, which finds the next occurance of the character A, thus, the whole command would change
+the line up to character A.
+• Use CTRL-v to insert character literally, for example, CTRL-v CTRL-r would insert CTRL-r in the command
+line.
+• See man bash, man readline, and built in bind command for modifying the default behavior!
+
+* unsorted
+
+ble-bind
+[[vi-wip]]
+
+## Readline VI Editing Mode Cheat Sheet
+
+Default Keyboard Shortcuts for Bash
+Shortcut | Description | Function Name
+
+Switching to Command Mode:
+ESC | Switch to command mode.
+
+motions and operators
+
+
+### Cursor Motions:
+
+left-right motions
+l or SPACE | Move one character right.
+             "l"  forward-char
+h | Move one character left.
+             "h"  backward-char
+0 | Move to the beginning of line.
+ˆ | Move to the first non-blank character of line.
+$ | Move to the end of line.
+
+fc | Move right to the next occurance of c.
+             "f"  vi-char-search
+Fc | Move left to the previous occurance of c.
+             "F"  vi-char-search
+tc | Move right to the next occurance of c, then one char backward.
+             "t"  vi-char-search
+Tc | Move left to the previous occurance of c, then one char forward.
+             "T"  vi-char-search
+; | Redo the last character finding command.
+, | Redo the last character finding command in opposite direction.
+| | Move to the n-th column (you may specify the argument n by typing it on number
+keys, for example, 20|).
+             "|"  vi-column
+ 
+up-down motions
+word motions
+w | Move one word or token right.
+             "w"  vi-next-word
+b | Move one word or token left.
+"b"  vi-prev-word
+W | Move one non-blank word right.
+             "W"  vi-next-word
+B | Move one non-blank word left.
+             "B"  vi-prev-word
+e | Move to the end of the current word.
+             "e"  vi-end-word
+E | Move to the end of the current non-blank word.
+             "E"  vi-end-word
+text object motions
+
+% | Move to the corresponding opening/closing bracket (()’s, []’s and {}’s).
+
+Character Finding Commands (these are also Movement Commands):
+
+             
+Commands for Entering Input mode:
+i | Insert before cursor.
+             "i"  vi-insertion-mode
+a | Insert after cursor.
+             "a"  vi-append-mode
+I | Insert at the beginning of line.
+             "I"  vi-insert-beg
+A | Insert at the end of line.
+             "A"  vi-append-eol
+c<movement command> | Change text of a movement command <movement command> (see below).
+             "c"  vi-change-to
+C | Change text to the end of line (equivalent to c$).
+             "C"  vi-change-to
+cc or S | Change current line (equivalent to 0c$).
+s | Delete a single character under the cursor and enter input mode (equivalent to
+c[SPACE]) .
+             "s"  vi-subst
+r | Replaces a single character under the cursor (without leaving command mode).
+             "r"  vi-change-char
+R | Replaces characters under the cursor.
+             "R"  vi-replace
+v | Edit (and execute) the current command in a text editor (an editor in $VISUAL and
+$EDITOR variables or vi).
+             
+            
+
+Deletion Commands:
+x |  Delete a single character under the cursor.
+             "x"  vi-delete
+X |  Delete a character before the cursor.
+             "X"  backward-delete-char
+d<movement command> |  Delete text of a movement command <movement command> (see above).
+"d"  vi-delete-to
+D |  Delete to the end of the line (equivalent to d$).
+             "D"  vi-delete-to
+dd |  Delete current line (equivalent to 0d$).
+CTRL-w |  Delete the previous word.
+CTRL-u |  Delete from the cursor to the beginning of line.
+
+Undo, Redo and Copy/Paste Commands:
+u |  Undo previous text modification.
+             "u"  vi-undo
+U |  Undo all previous text modifications on the line.
+. |  Redo the last text modification.
+y<movement command> |  Yank a movement into buffer (copy).
+             "y"  vi-yank-to
+yy |  Yank the whole line.
+             "Y"  vi-yank-to
+p |  Insert the yanked text at the cursor (paste).
+             "p"  vi-put
+P |  Insert the yanked text before the cursor.
+             "P"  vi-put
+
+
+Commands for Command History:
+k |  Move backward one command in history.
+             "k"  prev-history
+j |  Move forward one command in history.
+"j"  next-history
+G |  Move to the history line n (you may specify the argument n by typing it on number
+             "G"  vi-fetch-history
+keys, for example, 15G).
+/string or CTRL-r |  Search history backward for a command matching string.
+?string or CTRL-s |  Search history forward for a command matching string (remember that on most
+machines CTRL-s |  stops the output to the terminal (CTRL-q starts output) and you
+might need to change it with stty command).
+n |  Repeat search in the same direction as previous.
+             "n"  vi-search-again
+N |  Repeat search in the opposite direction as previous.
+             "N"  vi-search-again
+
+Completion Commands:
+TAB or CTRL-i or = |  List possible completions.
+* |  Insert all possible completions.
+
+Miscellaneous Commands:
+∼ | Invert the case of the character under cursor, and move a character right.
+             "~"  vi-change-case
+`# | Prepend # (comment character) to the line and send it to the history list.
+- | Inserts the n-th word of the previous command in the current line.
+0, 1, 2, ... | Sets the numeric argument.
+CTRL-v | Insert a character literally (quoted insert).
+CTRL-t | Transpose (exchange) two characters.
+
+             "m"  vi-set-mark
+             "S"  vi-subst
+             "U"  revert-line
+ 
+
+Examples and Tips
+* Some of the commands take a <movement command>. These commands apply
+  the movement to themselves.
+* Use CTRL-v to insert character literally, for example, CTRL-v CTRL-r
+  would insert CTRL-r in the command line.
+* See man bash, man readline, and built in bind command for modifying
+  the default behavior
+
+
+
+## Readline Emacs Editing Mode Cheat Sheet
+Default Keyboard Shortcuts for Bash
+
+Shortcut | Function Name | Description
+Commands for Moving:
+C-a | beginning-of-line | Move to the beginning of line.
+C-e | end-of-line | Move to the end of line.
+C-f | forward-char | Move forward a character.
+C-b | backward-char | Move back a character.
+M-f | forward-word | Move forward a word.
+M-b | backward-word | Move backward a word.
+C-l | clear-screen | Clear the screen leaving the current line at the
+top of the screen.
+(unbound) | redraw-current-line | Refresh the current line.
+
+Commands for Changing Text:
+C-d | delete-char Delete one character at point.
+Rubout | backward-delete-char Delete one character backward.
+C-q or C-v | quoted-insert Quoted insert.
+M-TAB or M-C-i | tab-insert Insert a tab character.
+a, b, A, 1, !, ... | self-insert Insert the character typed.
+C-t | transpose-chars Exchange the char before cursor with the character at cursor.
+M-t | transpose-words Exchange the word before cursor with the word at cursor.
+M-u | upcase-word Uppercase the current (or following) word.
+M-l | downcase-word Lowercase the current (or following) word.
+M-c | capitalize-word Capitalize the current (or following) word.
+(unbound) | overwrite-mode Toggle overwrite mode.
+
+Killing and Yanking:
+C-k | kill-line Kill the text from point to the end of the line.
+C-x | Rubout backward-kill-line Kill backward to the beginning of the line.
+C-u | unix-line-discard Kill backward from point to the beginning of the line.
+M-d | kill-word Kill from point to the end of the current word.
+M-Rubout | backward-kill-word Kill the word behind point.
+C-w | unix-word-rubout Kill the word behind point, using white space as a word boundary.
+M-\ | delete-horizontal-space Delete all spaces and tabs around point.
+C-y | yank Yank the top of the kill ring into the buffer at point.
+M-y | yank-pop Rotate the kill ring, and yank the new top.
+(unbound) | kill-whole-line Kill all characters on the current line.
+(unbound) | kill-region Kill the text between the point and mark.
+(unbound) | copy-region-as-kill Copy the text in the region to the kill buffer.
+(unbound) | copy-backward-word Copy the word before point to the kill buffer.
+(unbound) | copy-forward-word Copy the word following point to the kill buffer.
+
+Keyboard Macros:
+C-x ( | start-kbd-macro Begin saving the chars typed into the current keyboard macro.
+C-x ) | end-kbd-macro End saving the chars typed into the current keyboard macro.
+C-x e | call-last-kbd-macro Re-execute the last keyboard macro defined.
+
+Commands for Manipulating the History:
+Return | accept-line Accept the line regardless of where the cursor is.
+C-p | previous-history Fetch the previous command from the history list.
+C-n | next-history Fetch the next command from the history list.
+M-< | beginning-of-history Move to the first line in the history.
+M-> | end-of-history Move to the end of the input history (current line).
+C-r | reverse-search-history Search backward starting at the current line (incremental).
+C-s | forward-search-history Search forward starting at the current line (incremental).
+M-p | non-incremental-reverse-
+search-history
+| Search backward using non-incremental search.
+M-n | non-incremental-forward-
+search-history
+| Search forward using non-incremental search.
+M-C-y | yank-nth-arg Insert the n-th argument to the previous command at point.
+M-. or M- | yank-last-arg Insert the last argument to the previous command.
+(unbound) | history-search-backward Search forward for a string between start of line and point.
+(unbound) | history-search-forward Search backward for a string between start of line and point.
+Completing:
+TAB | complete Attempt to perform completion on the text before point.
+M-? | possible-completions List the possible completions of the text before point.
+M-* | insert-completions Insert all completions of the text before point generated by
+possible-completions.
+(unbound) | menu-complete Similar to complete but replaces the word with the first match.
+(unbound) | delete-char-or-list Deletes the car if not at the beginning of line or acts like possible-
+completions at the end of the line.
+Miscellaneous:
+C-x C-r | re-read-init-file Read and execute the contents of inputrc file.
+C-g | abort Abort the current editing command and ring the terminal’s bell.
+M-a, M-b, M-x, ... | do-uppercase-version If the metafield char x is lowercase, run the command that is
+bound to uppercase char.
+ESC | prefix-meta Metafy the next character typed. For example, ESC-p is equiv-
+alent to Meta-p.
+C- or C-x C-u | undo Incremental undo, separately remembered for each line.
+M-r | revert-line Undo all changes made to this line.
+M-& | tilde-expand Perform tilde expansion on the current word.
+C-@ or M-<space> | set-mark Set the mark to the point.
+C-x C-x | exchange-point-and-mark Swap the point with the mark.
+C-] | character-search Move to the next occurance of current character under cursor.
+M-C-] | character-search-
+backward
+Move to the previous occurrence of current character under cursor.
+M-# | insert-comment Without argument line is commented, with argument uncom-
+mented (if it was commented).
+C-e | emacs-editing-mode When in vi mode, switch to emacs mode.
+M-C-j | vi-editing-mode When in emacs mode, switch to vi mode.
+M-0, M-1, ..., M– | digit-argument Specify the digit to the argument. M– starts a negative argument.
+(unbound) | dump-functions Print all of the functions and their key bindings.
+(unbound) | dump-variables Print all of the settable variables and their values.
+(unbound) | dump-macros Print all of the key sequences bound to macros.
+(unbound) | universal-argument Either sets argument or multiplies the current argument by 4.
+
+using vi mode some shortcuts dont work
+
+<Ctrl-Alt-t>, <Meta-T>
+open terminal
+<Ctrl-a>
+<Alt-a>
+
+cursor movements
+<Ctrl-a>
+go to the start of the line
+<Ctrl-e>
+go to the end of the line
+<Ctrl-xx>
+move between the beginning of the line and the current position of the
+cursor
+<Alt-f>
+move cursor forward one word on the current line
+<Alt-b>
+move cursor backward one word on the current line
+<Ctrl-f>
+move cursor forward one character on the current line
+<Ctrl-b>
+move cursor backward one character on the current line
+<Ctrl><Alt-e>
+shell expand line
+
+text manipulation
+<Ctrl-u>
+cut the line from cursor position to start of the line
+<Ctrl-k>
+cut the line from cursor position to end of the line
+<Ctrl-w>
+cut the word before the cursor
+<Ctrl-y>
+paste the last cut; undo the last cut
+<Alt-t>
+swap the last two words before the cursor
+<Alt-l>
+make lowercase from cursor end of word
+<Alt-u>
+make lowercase from cursor end of word
+<Alt-c>
+capitalize to end of word tarting at cursor
+<Alt-d>
+delete to end of word starting at cursor
+<Alt-.>
+prints the last  word written in previous command
+<Ctrl-t>
+swap last two character before the cursor
+<Alt-y>
+rotate through killed text
+
+history access
+<Ctrl-r>
+<Ctrl-g>
+<Ctrl-j>
+<Alt-r>
+<Ctrl-p>
+<Ctrl-n>
+<Alt-r><Alt-.>
+use the nth word of the previous command
+!!<enter>
+execute the last command again
+
+terminal control
+<Ctrl-l>
+<Ctrl-s>
+<Ctrl-q>
+<Ctrl-c>
+stop the current job
+<Ctrl-d>
+<Ctrl-z>
+suspend the current job; send a SIGTSTP signal
+Tab
+Tab + Tab
+
+special characters
+<Ctrl-h>
+<Ctrl-j>
+<Ctrl-m>
+<Ctrl-i>
+<Ctrl-g>
+<Ctrl-@>
+esc
+
+close terminal
+<Ctrl-Shift-W>
+to close terminal tab
+<Ctrl-Shift-Q>
+to close terminal tab
+
+macros
+<Ctrl-x-(>
+start recording a macro
+<Ctrl-x-)>
+stop recording a macro
+<Ctrl-x-e>
+execute the last recorded macro
+
+

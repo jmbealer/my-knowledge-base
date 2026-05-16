@@ -1,0 +1,789 @@
+:PROPERTIES:
+:ID:       1eac6cff-c4c4-4473-a181-984ebefa877c
+:date: [2022-04-06 Wed 16:33]
+:header-args: go :results silent :package main :imports "fmt" :no-expand
+:mtime:    20230206181333 20220602205653
+:ctime:    20220406163335
+:END:
+#+title: Go Language
+
+* Intro
+
+- Every Go program is made up of packages.
+- Go programs start running in package *main*.
+
+- Imperative language.
+- Statically typed
+- Syntax similar to Java/C/C++, but less parentheses and no semicolons
+- Compiles to native code (no JVM)
+- No classes, but structs with methods
+- Interfaces
+- No implementation inheritance. There's type embedding, though
+- Functions are first class citizens
+- Functions can return multiple values
+- Has closures
+- Pointers, but not pointer arithmetic
+- Built-in concurrency primitives: Goroutines and Channels
+
+- is an open source programming language
+  - released by Google in 2009
+- a concurrent and fast compiled language with garbage collection.
+
+what is go
+- go is a cross-platform, open source programming language.
+- developed at Google in 2007
+- created by Robert Griesemer, Rob Pike, and Ken Thompson
+- syntax is similar to C
+
+what is go used for
+- web development (server-side)
+- development network-based programs.
+- developing cross-platform enterprise applications
+- cloud-native development
+
+fast run time and compile time
+garbage collection
+
+* Imports
+
+- Import path; "math/rand" = package rand.
+this is a import statement;
+  import "fmt"
+  import "rand" can write multiple statements like this, but its bad practice
+this is a factored import statement
+  import (
+    "fmt"
+    "rand"
+  )
+
+Exported names are names that begins with a capital letter, and are exported
+from an imported package.
+Any un-exported names are not accessible from outside the package.
+  math.pi = bad
+  math.Pi = good
+
+* Basic Syntax
+
+A Go file consists of the following parts:
+- package declaration
+- import packages
+- functions
+- statements and expressions
+
+file extension <file>.go
+#+begin_src go
+package main // package declaration
+import "fmt" // the imported package "fmt" contains I/O functions.
+func main(){ // define a function called main
+	fmt.Println("hello")
+}
+#+end_src
+go run <file>.go
+
+each statement does not need a semicolon to end the line.
+"{" cannot be paced on a single line; creates an run time error.
+
+fmt.Println("hello") is a statement.
+go statement are separate by hitting enter key or by a semicolon(;).
+
+* Comments
+
+a comment is a text that is ignored upon execution.
+comments can be used to explain the code, and to make it more readable.
+comments can also be used to prevent code execution when testing an alternative code.
+
+comments will not be compiled.
+the go compiler will ignore all comments.
+
+#+begin_src go
+// single-line comment
+/*
+   multi-line comment
+*/
+#+end_src
+
+* Identifier
+identifiers are used to name variables, functions, expressions, and so on.
+an identifier consists of one or more letters (A-Z and a-z), numbers (0-9) and
+an underscore, but the first character must be a letter or underscore.
+the first character of identifier cannot be a number.
+
+valid identifiers:
+  myVariable
+  _Variable
+  variable100
+invalid identifiers:
+  continue - is a keyword
+  100Variable - begin with a number
+
+* Operators
+** Arithmetic
+| Operator | Description         |
+|----------+---------------------|
+| +        | addition            |
+| -        | subtraction         |
+| *        | multiplication      |
+| /        | quotient            |
+| %        | remainder           |
+| &        | bit-wise AND        |
+| \vert        | bit-wise OR         |
+| ^        | bit-wise XOR        |
+| &^       | bit clear (AND NOT) |
+| <<       | left shift          |
+| >>       | right shift         |
+
+** Comparison
+| Operator | Description           |
+|----------+-----------------------|
+| ==       | equal                 |
+| !=       | not equal             |
+| <        | less than             |
+| <=       | less than or equal    |
+| >        | greater than          |
+| >=       | greater than or equal |
+
+** Logical
+| Operator | Description |
+|----------+-------------|
+| &&       | logical AND |
+| \vert \vert      | logical OR  |
+| !        | logical NOT |
+
+** Other
+| Operator | Description                        |
+|----------+------------------------------------|
+| &        | address of / create pointer        |
+| *        | dereference pointer                |
+| <-       | send / receive operator 'Channels' |
+
+* Declarations
+Type goes after identifier!
+#+begin_src go
+var foo int // declaration without initalization
+var foo int = 42 // declaration with initalization
+var foo, bar int = 42, 1302 // declare/init multiple vars at once
+var foo = 42 // type omitted, will be inferred
+foo := 42 // shorthand, only in func bodies, implicit type
+const constant = "This is a constant"
+#+end_src
+
+* Functions
+
+#+begin_src go
+// a simple function
+func functionName() {}
+// function with parameters (again, types go after identifiersy)
+func functionName(param1 string, param2 int) {}
+// multiple parameters of the same type
+func functionName(param1, param2 int) {}
+// return type declaration
+func functionName() int {
+	return 42
+}
+// return multiple values at once
+func returnMulti() (int, string) {
+	return 42, "foobar"
+}
+var x, str = returnMulti()
+// return multiple named results simply by return
+func returnMulti2() (n int, s string) {
+	n = 42
+	s = "foobar"
+	// n and s will be returned
+	return
+}
+var x, str = returnMulti2()
+#+end_src
+
+
+A function can take zero or more arguments.
+#+begin_src go
+// func add(x int, y int) int { // add takes two parameters to type int.
+func add(x, y int) int { // shortend
+	return x + y
+}
+func main() {
+	fmt.Println(add(42, 13))
+}
+#+end_src
+
+When two or more consecutive named function parameters share a type, you can
+omit the type from all but the last.
+
+return values may be named; variable defined at the top of the function.
+these names should be used to document the meaning of the return values.
+a return statement without arguments returns the named return values; known as a
+"naked" return.
+naked return statements should be used only in short functions; can harm
+readability in longer functions.
+
+** Functions As Values and Closures
+
+#+begin_src go
+func main() {
+	// assign a fuction to a name
+	add := func(a, b int) int {
+		return a + b
+	}
+	// use the name to call the function
+	fmt.Println(add(3, 4))
+}
+/* closures, lexically scoped: functions can access values that were in scope
+   when defining the function */
+func scope() func() int{
+	outer_var := 2
+	foo := func() int { return outer_var}
+	return foo
+}
+func another_scope() func() int {
+	// won't complie - outer_var and foo are not defined in this scope
+	outer_var = 444
+	return foo
+}
+// closures: don't mutate outer vars, instead redefine them!
+func outer() (func() int, int) {
+	outer_var := 2 // NOTE outer_var is outside inner's scope
+	inner := func() int {
+		outer_var += 99 // attempt to mutate outer_var
+		return outer_var /* 101 (but outer_var is a newly redefined variable visible
+												only inside inner) */
+	}
+	return inner, outer_var // => 101, 2 (still!)
+}
+#+end_src
+
+** Variadic Functions
+
+#+begin_src go
+func main() {
+	fmt.Println(adder(1, 2, 3))
+	fmt.Println(adder(9, 9))
+
+	nums := []int{10, 20, 30}
+	fmt.Println(adder(nums...))
+}
+/* using ... before the type name of the last parameter indicates that it take
+   zero or more of those paremters. */
+/* the function is invoked like any other fuction exceptl we can pass as many
+   arguments as we want. */
+func adder(args ...int) int {
+	total := 0
+	for _, v := range args { // Iterate ove all args
+		total += v
+	}
+	return total
+}
+#+end_src
+
+* Variables
+
+declaring (creating) variables
+- var keyword
+  use the var keyword, followed by variable name and type
+  var variableName type = value
+  can be used inside and outside of functions
+  variable declaration and value assignment can be done separately
+- := sign
+  use the := sign, followed by the variable value.
+  variableName := value
+  type is inferred: compiler decides the type of the variable, based on the value.
+  must assigin a value
+  can only be used inside functions
+  variable declaration and value assignment cannot be done separately
+
+variable declaration with inital value
+#+begin_src go
+var x string = "foo" //type is string
+var y = "bar" //type is inferred
+z := 2 //type is inferred
+#+end_src
+
+variable declaration without initial value
+- all variables are initialized
+- a variable without an initial value,will be set to the default value of its type
+
+value assignment after declaration
+varName = value
+
+multiple variable declaration
+var a, b, c int = 1, 2, 3
+if type keyword used you  can only declare one type of variable per line.
+  - if not you can declare different types of variables in the same line.
+
+#+begin_src go
+var a, b, c int = 1, 2, 3
+var a, b = 6, "hello"
+c, d := 7, "world"
+#+end_src
+
+
+the var statement declares a list of variables; as in function argument list,
+the type is last.
+type comes after the variable name
+A var statement can be at package or function level.
+#+begin_src go
+var c, python, java bool // var at the package level
+func main() {
+	var i int // var at the function level
+	fmt.Println(i, c, python, java)
+}
+#+end_src
+
+variables with initializers
+  A var declaration can include initializers, one per variable.
+  if an initializer is present, the type can be omitted; the variable will take
+  the type of the initializer.
+#+begin_src go
+var i, j int = 1, 2 //declared and initialize
+func main() {
+	var c, python, java = true, false, "no!" //declared and initialize without type
+	fmt.Println(i, j, c, python, java)
+}
+#+end_src
+
+short variable declarations
+  inside a function, the *:=* short assignment statement can be used in place of
+  a var declaration with implicit type.
+  outside a function, every statement begins with a keyword (var, func, and so
+  on) and so the := construct in not available.
+
+* Built-in Types
+
+bool
+- stores values with two states: true of false
+string
+- string - store text, such as "hello world". String values are surrounded by
+  double quotes.
+int int8 int16 int32 int64
+- int - stores integers, such as 123 or -123
+uint uint8 uint16 uint32 uint64 uintptr
+byte is alias for uint8
+rune is alias for uint32; represent a Unicode code point
+float32 float64
+- float32 - stores floating point numbers, with decimals, such as 19.99 or -19.99
+complex64 complex128
+
+the int, uint, and uintptr types are usually 32 bits wide on 32 bits wide on
+32-bit systems and 64 bits wide on 64-bit systems.
+  use int unless you have a specific reason to use a size or unsigned integer type.
+
+variable declarations may be factored int blocks, as with import statements.
+
+#+begin_src go :imports '("fmt" "math/cmplx")
+var (
+	ToBe bool = false
+	MaxInt uint64 = 1<<64 - 1
+	z complex128 = cmplx.Sqrt(-5 + 12i)
+)
+
+func main() {
+	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
+	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
+	fmt.Printf("Type: %T Value: %v\n", z, z)
+}
+#+end_src
+
+* Type Conversions
+
+#+begin_src go
+var i int = 42
+var f float64 = float64(i)
+var u uint = uint(f)
+// alternative syntax
+i := 42
+f := float64(i)
+u := uint(f)
+#+end_src
+
+* Packages
+
+- package declaration at top of every source file
+- executable are in package *main*
+- convention: package name == last name of import path
+  - (import path math/rand => package rand)
+- upper case identifier: exported (visible from other packages)
+- lower case identifier: private (not visible from other packages)
+
+* Control structures
+** If
+
+#+begin_src go
+func main() {
+	// basic one
+	if x > 0 {
+		return x
+	} else {
+		return -x
+	}
+	// you can put one statement before the condition
+	if a := b + c; a > 42 {
+		return a
+	}else {
+		return a - 42
+	}
+	// type assertion inside if
+	var val interface{}
+	val = "foo"
+	if str, ok := val.(string); ok {
+		fmt.Println(str)
+	}
+}
+#+end_src
+
+** Loops
+
+#+begin_src go
+// there's only 'for'. No 'while', no 'until'
+for i := 1; i < 10; i++ {
+}
+for ; i < 10; { //while loop
+}
+for i < 10 { // can omit semicolons if there's only a condition
+}
+for { // can omit the condition ~ while (true)
+}
+#+end_src
+
+** Switch
+
+#+begin_src go
+// switch statement
+switch operatingSystem {
+	case "darwin":
+		fmt.Println("Mac OS Hipster")
+		// cases break automatically, no fallthrough by default
+	case "linux":
+		fmt.Println("Linux Geek")
+	default:
+		//Windows, BSD, ..
+		fmt.Println("Other")
+}
+// As with for and if, an assignment statement before the switch value is allowed
+switch os := runtime.GOOS; os {
+	case "darwin": ...
+}
+#+end_src
+
+* Arrays, Slice, Ranges
+** Arrays
+
+#+begin_src go
+var a [10]int // int array with length 10. Length is part of type!
+a[3] = 42 // set elements
+i := a[3] //read elements
+// declare and initialize
+var a = [2]int{1, 2}
+a := [2]int{1, 2} // shorthand
+a := [...]int{1, 2} // elipsis -> Compiler figures out array length
+#+end_src
+
+** Slices
+#+begin_src go
+var a []int // a slice - like an array, but length is unspecified
+var a = []int {1, 2, 3, 4} /* declare and initialize a slice (backed by given
+															array implicitly) */
+a := []int{1, 2, 3, 4} // shorthand
+chars := []string{0:"a", 2:"c", 1:"b"} // ["a", "b", "c"]
+
+var b = a[lo:hi] // creates a slice (view of the array) from index lo to hi-1
+var b = a[1:4] // slice from index 1 to 3
+var b = a[:3] // missing low index implies 0
+var b = a[3:] // missing high index implies len(a)
+
+// create a slice with make
+a = make([]byte, 5, 5) // first arg length, second capacity
+a = make([]byte, 5) // capacity is optional
+
+// create a slice from an array
+x := [3]string{"foo", "bar", "buzz"}
+s := x[:] // a slice referencing the storage of x
+#+end_src
+
+** Operations on Arrays and Slices
+len(a) gives you the length of an array/a slice. It's a built-in function, not a
+attribute/method on the array.
+#+begin_src go
+// loop over an array/a slice
+for i, e := range a {
+	// i is the index, e the element
+}
+// if you only need e:
+for _, e := range a {
+	// e is the element
+}
+// ...and if you only need the index
+for i := range a {
+}
+// In Go pre-1.4, it is a compiler error to not use i and e.
+// Go 1.4 introduced a variable-free form:
+for range time.Tick(time.Second) {
+	// do it once a sec
+}
+#+end_src
+
+* Maps
+#+begin_src go
+var m map[string]int
+m = make(map[string]int)
+m["key"] = 42
+fmt.Println(m["key"])
+
+delete(m, "key")
+
+elem, ok := m["key"] // test if key "key" is present, retrieve if so
+
+// map literal
+var m = map[string]Vertex{
+	"Bell Labs": {40.68433, -74.39967}
+	"Google": {37.42202, -122.08408}
+}
+#+end_src
+
+* Structs
+there are no classes, only structs. structs can have methods.
+#+begin_src go
+// a struct is a type. it's also a collection of fields.
+
+// declaration
+type Vertex struct {
+	X, Y int
+}
+
+// creating
+var v = Vertex{1, 2}
+var v = Vertex{X:1, Y:2} // creates a struct by defining values with keys
+
+// accessing members
+v.X = 4
+
+/* you can declare methods on structs. the struct you want to declare the method
+   on (the receiving type) comes between the func keyword and the method name.
+   the struct is copied on each method call(!) */
+func (v *Vertex) add(n float64) {
+	v.X += n
+	v.Y += n
+}
+#+end_src
+
+* Anonymous structs
+cheaper and safer than using map[string]interface().
+#+begin_src go
+point := struct {
+	X, Y int
+}{1, 2}
+#+end_src
+
+* Pointers
+#+begin_src go
+p := Vertex{1, 2} // p is a Vertex
+q := &p // q is a pointer to a Vertex
+r := &Vertex{1, 2} // r is also a pointer to a Vertex
+
+// the type of a pointer to a Vertex is *Vertex
+
+var s *Vertex = new(Vertex) // create ptr to a new struct instance
+#+end_src
+
+* Interfaces
+#+begin_src go
+// interface declaration
+type Awesomizer interface {
+	Awesomize() string
+}
+
+// types do *not* declare to implement intefaces
+type Foo struc {}
+
+// instead, types implicitly satisfy an interface if they implement
+// all required methods
+func (foo Foo) Awesomize() string {
+	return "Awesome!"
+}
+#+end_src
+
+* Embedding
+There is no subclassing in Go. Instead, there is interface and struct embedding
+(composition).
+#+begin_src go
+// ReadWriter implementations must satisfy both Reader and Writer
+type ReadWriter interface {
+	Reader
+	Writer
+}
+// Server exposes all the methods that Logger has
+type Server struct {
+	Host string
+	Port int
+	,*log.Logger
+}
+// initialize the embedded type the usual way
+server := &Server{"localhost", 80, log.New(...)}
+// methods implemented on the embedded struct are passed through
+server.Log(...) // calls server.Logger.Log(...)
+// Field name of an embeeded type is its type name ('Logger' here)
+var logger *log.Logger = server.Logger
+#+end_src
+
+* Errors
+There is no exception handling. Functions that might produce an error just
+declare an additional return value of type Error. This is the Error interface:
+#+begin_src go
+type error interface {
+	Error() string
+}
+// A function that might return an error:
+func doStuff() (int, error) {
+}
+func main() {
+	result, error := doStuff()
+	if (error != nil) {
+		// handle error
+	} else {
+		// all is good, use result
+	}
+}
+#+end_src
+
+* Concurrency
+* Goroutines
+Goroutines are lightweight threads (managed by Go, not OS threads). go f(a, b)
+starts a new goroutine which runs f (given f is a function).
+#+begin_src go
+// just a function (which can be later started as a goroutine)
+func doStuff(s string) {
+}
+func main() {
+	// using a named function in a goroutine
+	go doStuff("foobar")
+	// using an anonymous inner function in a goroutine
+	go func (x int) {
+		// function body goes here
+	}(42)
+}
+#+end_src
+
+* Channels
+#+begin_src go
+ch := make(chan int) // create a channel of type int
+ch <- 42 // send a value to the channel ch.
+v := <-ch // receive a value from ch
+
+/* non-buffered channels block. read blocks when no value is available, write
+blocks if a value already has been written but not read. */
+
+/* create a buffered channel. writing to a buffered channels does not block if
+   less than <buffer size> unread values have been written. */
+ch := make(chan int, 100)
+
+close(c) // closes the channel (only sender should close)
+
+// read from channel and test if it has been closed
+// if ok is false, channel has been closed
+v, ok := <-ch
+
+// read from channel until it is closed
+for i := range ch {
+	fmt.Println(i)
+}
+
+// select blocks on multiple  channel operations.
+// if one unblocks, the corresponding case is executed
+func doStuff(channelOut, channelIn chan int) {
+	select {
+		case channelOut <- 42:
+			fmt.Println("We could write to channelOut!")
+		case x := <- channelIn:
+			fmt.Println("We could read from channelIn")
+		case <-time.After(time.Second * 1):
+			fmt.Println("timeout")
+	}
+}
+#+end_src
+
+** Channel Axioms
+#+begin_src go
+// I. A send to a nil channel blocks forever
+var c chan string
+c <- "Hello, World!"
+// fatal error: all goroutines are asleep - deadlock!
+
+// II. A receive from a nil channel blocks forever
+var c chan string
+fmt.Println(<-c)
+// fatal error: all goroutines are asleep - deadlock!
+
+// III. A send to a closed channel panics
+var c = make(chan string, 1)
+c <- "Hello, World!"
+close(c)
+c <- "Hello, Panic!"
+// panic: send on closed channel
+
+// IV. A receive from a close channel returns the zero value immediately
+var c = make(chan int, 2)
+c <- 1
+c <- 2
+close(c)
+for i := 0; i < 3; i++ {
+	fmt.Printf("%d", <-c)
+}
+// 1 2 0
+#+end_src
+
+* Snippets
+* HTTP Server
+
+#+begin_src go
+package main
+
+import (
+	"fmt"
+	"import"
+)
+
+// define a type for the response
+type Hello struct{}
+
+// let that type implement the ServeHTTP method (defined in interface http.Handler)
+func (h Hello) ServerHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "Hello!")
+}
+func main() {
+	var h hello
+	http.ListenAndServe("localhost:4000", h)
+}
+// here's the method signature of http.ServeHTTP:
+// type Handler interface {
+	// ServeHTTP(w http.ResponseWriter, r *http.Request)
+// }
+#+end_src
+
+* Keywords
+25 keywords in go language.
+keywords can't be used as a name of variable, constant and function, etc.
+
+break case chan const continue default defer else fallthrough for func go goto
+if import interface map package range return select struct switch type va
+
+* Unsorted
+
+#+begin_src go :package main :imports "fmt"
+func main() {
+	fmt.Println("hello", 1 + 1)
+	}
+#+end_src
+
+#+begin_src go
+// package main
+// import "fmt"
+
+for i := 0; i < 10; i++ {
+	fmt.Println("hello")
+}
+#+end_src
+
+#+begin_src go
+func main() {
+	fmt.Println("foobar")
+}
+#+end_src

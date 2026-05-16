@@ -1,0 +1,85 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+bash type,0-current-using::tridactyl-wip,{{c1::f}} - enter <strong>{{c2::hint}}</strong> mode.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::F}} - enter <strong>{{c2::hint}}</strong> mode; open in a background tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-a-esc}} - enter <strong>{{c2::ignore}}</strong> mode.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::S}} - move <strong>{{c2::back}}</strong> in the history.,H,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::B}} - move <strong>{{c2::forward}}</strong> in the history.,L,tridactyl
+bash type,0-current-using::tridactyl-wip,"{{c1::c-,}} - <strong>{{c2::escape hatch}}</strong>.",,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::/}} - quick <strong>{{c2::find}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-g}} - go to the <strong>{{c2::next}}</strong> search result.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-G}} - go to the <strong>{{c2::previous}}</strong> search result.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::h}} - <strong>{{c2::search}}</strong> for a domain name or URL.,s,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::H}} - <strong>{{c2::search}}</strong> current open tabs.,S,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gi}} - go to last-used <strong>{{c2::input}}</strong> on the page.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gr}} - go to <strong>{{c2::reader}}</strong> mode.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1:::bind}} - <strong>{{c2::bind}}</strong> your own commands,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::yy}} - <strong>{{c2::yank}}</strong> the current page URL.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::[[}} - move <strong>{{c2::forward}}</strong> though paginated pages.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::]]}} - move <strong>{{c2::backward}}</strong> though paginated pages.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::ZZ}} - <strong>{{c2::close all}}</strong> tabs and windows.,,tridactyl
+bash type,0-current-using::tridactyl-wip,"{{c1::c-v}} - <strong>{{c2::send}}</strong> a single keystroke to the current website, bypassing bindings.",,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-o}} - <strong>{{c2::run}}</strong> a single normal mode binding when in ignore mode.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1:::help hint}} - see all the other useful <strong>{{c2::hint}}</strong> modes.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1:::help}} &lt;keybinding&gt; - to learn more about what a specific <strong>{{c2::key}}</strong> binding does.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1:::colors}} - change Tridactyl's <strong>{{c2::theme}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::.}} - <strong>{{c2::repeat}}</strong> the last command.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1:::}} - <strong>{{c2::activate the {{c2::command line}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::t}} - scroll <strong>{{c2::down}}</strong>.,j,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::n}} - scroll <strong>{{c2::up}}</strong>.,k,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::^}} - scroll to <strong>{{c2::left}}</strong> margin.,,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::$}} - scroll to <strong>{{c2::right}}</strong> margin.,,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::gg}} - scroll to <strong>{{c2::start}}</strong> of page.,,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::G}} - scroll to <strong>{{c2::end}}</strong> of page.,,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::gF}} - <strong>{{c2::repeatedly}}</strong> open links until you press Escape.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::r}} - <strong>{{c2::reload}}</strong> page.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::R}} - <strong>{{c2::hard}}</strong> reload page.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::]c}} - <strong>{{c2::increment}}</strong> the current URL by 1.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::[c}} - <strong>{{c2::decrement}}</strong> the current URL by 1.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gu}} - go to the <strong>{{c2::parent}}</strong> of the current URL.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gU}} - go to the <strong>{{c2::root}}</strong> domain of the current URL.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::zi}} - <strong>{{c2::zoom in}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::zo}} - <strong>{{c2::zoom out}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::zz}} - <strong>{{c2::reset zoom}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-b}} - jump to the <strong>{{c2::previous}}</strong> part of the page.,,tridactyl motions
+bash type,0-current-using::tridactyl-wip,{{c1::A}} - <strong>{{c2::bookmark}}</strong> the current page.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::a}} - <strong>{{c2::bookmark}}</strong> the current page and allow the URL to be modified.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::M}}&lt;key&gt; - bind a <strong>{{c2::quickmark}}</strong> to the given key.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::go}}&lt;key&gt; - open a given quickmark in <strong>{{c2::current tab}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gn}}&lt;key&gt; - open a given quickmark in <strong>{{c2::new tab}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gw}}&lt;key&gt; - open a given quickmark in <strong>{{c2::new window}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::o}} - <strong>{{c2::open}}</strong> a URL in this tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::O}} - <strong>{{c2::open}}</strong> a pre-load current URL in this tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::j}} - open a URL in a <strong>{{c2::new tab}}</strong>.,t,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::J}} - open a pre-load current URL in a <strong>{{c2::new tab}}</strong>.,T,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::w}} - open a URL in a <strong>{{c2::new window}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::W}} - open a pre-load current URL in a <strong>{{c2::new window}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::p}} - <strong>{{c2::paste}}</strong> the clipboard contents in the current tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::d}} - <strong>{{c2::delete}}</strong> the current tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::u}} - <strong>{{c2::undo}}</strong> the last tab/window closure.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gt}} - go to the <strong>{{c2::next}}</strong> tab 2.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::T}} - move to the <strong>{{c2::next}}</strong> tab.,K,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::gT}} - go to the <strong>{{c2::previous}}</strong> tab 2.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::N}} - move to the <strong>{{c2::previous}}</strong> tab.,J,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::g^}} - go to the <strong>{{c2::first}}</strong> tab 2.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::g0}} - go to the <strong>{{c2::first}}</strong> tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::g$}} - go to the <strong>{{c2::last}}</strong> tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::ga}} - go to the tab currently playing <strong>{{c2::audio}}</strong>.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::c-^}} - move to the last <strong>{{c2::active}}</strong> tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::l}} - show a <strong>{{c2::list}}</strong> of open tabs in the current window.,b,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;i}} - open an <strong>{{c2::image}}</strong> in current tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;I}} - open an <strong>{{c2::image}}</strong> in new tab.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;s}} - <strong>{{c2::save}}</strong> the linked resource.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;a}} - <strong>{{c2::save-as}}</strong> the linked resource.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;S}} - <strong>{{c2::save}}</strong> the selected image.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;A}} - <strong>{{c2::save-as}}</strong> the selected image.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;p}} - <strong>{{c2::copy}}</strong> an element's text to the clipboard.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;P}} - <strong>{{c2::copy}}</strong> an element's text/alt text to the clipboard.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;y}} - <strong>{{c2::copy}}</strong> an element's link URL to the clipboard.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;#}} - <strong>{{c2::copy}}</strong> an element's anchor URL to the clipboard.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;r}} - <strong>{{c2::read}}</strong> the element's text with text-to-speech.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;k}} - <strong>{{c2::delete}}</strong> an element from the page.,,tridactyl
+bash type,0-current-using::tridactyl-wip,{{c1::;;}} - <strong>{{c2::focus}}</strong> an element.,,tridactyl

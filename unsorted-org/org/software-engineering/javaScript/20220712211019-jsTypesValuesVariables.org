@@ -1,0 +1,3089 @@
+:PROPERTIES:
+:ID:       f3061f7f-5181-4011-b516-3100217a9a59
+:mtime:    20230206181603 20220716191835
+:ctime:    20220712211019
+:END:
+#+title: jsTypesValuesVariables
+#+date: [2022-07-12 Tue 21:10]
+
+Computer programs work by manipulating values
+Values that can be represented and manipulated in a programming language are known as types
+types are values that can be represented and manipulated by the programming language
+Variables are assign/stored values
+Variables have name and they are, used to refer to values
+
+js types can be divided into two categories: primitive types and object types.
+js primitive types are numbers, strings, and booleans
+js special primitive values are null and undefined, they are not numbers,
+strings, or booleans.
+js special-purpose type is Symbol
+In js Symbol enables the definition of language ext
+
+any js that not a number, a string, a boolean, a symbol, null, or underined is a
+an object.
+
+an object (that is, a member of the type object) is collection of properties
+where each property has a name and a value (either a primitive value or another object)
+** javaScript data types and data structures wip
+
+what is the difference between data types and data structures
+
+Programming languages all have built-in data structures, but these often differ from one language to another.
+
+This article attempts to list the built-in data structures available in JavaScript and what properties they have.
+These can be used to build other data structures.
+Wherever possible, comparisons with other languages are drawn.
+
+Dynamic typing
+
+JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+
+let foo = 42;    // foo is now a number
+foo     = 'bar'; // foo is now a string
+foo     = true;  // foo is now a boolean
+
+JavaScript types
+The set of types in the JavaScript language consists of primitive values and objects.
+
+Primitive values (immutable datum represented directly at the lowest level of the language)
+  Boolean type
+  Null type
+  Undefined type
+  Number type
+  BigInt type
+  String type
+  Symbol type
+
+Objects (collections of properties)
+
+
+There are 7 fundamental data types in JavaScript: strings, numbers, booleans, null, undefined, symbol, and object.
+The built-in arithmetic operators include +, -, *, /, and %.
+Objects, including instances of data types, can have properties, stored information. The properties are denoted with a . after the name of the object, for example: 'Hello'.length.
+Objects, including instances of data types, can have methods which perform actions. Methods are called by appending the object or instance with a period, the method name, and parentheses. For example: 'hello'.toUpperCase().
+We can access properties and methods by using the ., dot operator.
+
+JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.
+has eight
+
+Create Decimal Numbers with JavaScript
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+Note: when you compute numbers, they are computed with finite precision. Operations using floating points may lead to different results than the desired outcome. If you are getting one of these results, open a topic on the freeCodeCamp forum.
+Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7).
+
+Data type
+The type of value that a variable can have, such as string, number, or boolean
+A data type is a value that variables can have in a given programming language
+
+  String
+  Number
+  Boolean
+  Null
+    The null data type is used to indicate that a variable has no value. Sometimes, null is used as the default value when other data isn't available.
+  Undefined
+    The undefined data type is a special value that, in a way, means exactly that—that a variable was never defined. Like null, undefined means empty. But null and undefined have a slightly different understanding of emptiness.
+    A null value means that the developer decided that the value was empty. It was a deliberate choice. An undefined value, on the other hand, means that the value was left empty, simply because nothing was ever assigned to it.
+    That means that you shouldn't assign a variable undefined, like in this command: let variable = undefined.
+
+Integer
+Also called an int, a whole number that isn't written as a fraction or with a decimal point
+Floating-point number
+Also called a float, a number that includes a decimal point
+Boolean
+A binary variable with two possible values: true and false
+  Pronounced not or bang, ! inverts a boolean value. This means that !false turns into true, and !true turns into false.
+Coercion
+The process of converting a value from one data type to another
+  Number()
+  parseInt()
+  parseFloat()
+  toString()
+
+typeof, which is a built-in operator that JavaScript provides to reveal the data type of a particular value.
+  console.log(typeof 2); // Number
+  console.log(typeof "2");
+  console.log(typeof true);
+
+
+
+Use the parseInt Function
+The parseInt() function parses a string and returns an integer. Here's an example:
+const a = parseInt("007");
+The above function converts the string 007 to the integer 7. If the first character in the string can't be converted into a number, then it returns NaN.
+Use parseInt() in the convertToInteger function so it converts the input string str into an integer, and returns it.
+
+Use the parseInt Function with a Radix
+The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
+The function call looks like:
+parseInt(string, radix);
+And here's an example:
+const a = parseInt("11", 2);
+The radix variable says that 11 is in the binary system, or base 2. This example converts the string 11 to an integer 3.
+Use parseInt() in the convertToInteger function so it converts a binary number to an integer and returns it.
+
+  Null type
+  BigInt type
+  Symbol type
+
+  JavaScript Data Types
+
+JavaScript variables can hold different data types: numbers, strings, objects and more:
+let length = 16;                               // Number
+let lastName = "Johnson";                      // String
+let x = {firstName:"John", lastName:"Doe"};    // Object
+The Concept of Data Types
+
+In programming, data types is an important concept.
+
+To be able to operate on variables, it is important to know something about the type.
+
+Without data types, a computer cannot safely solve this:
+let x = 16 + "Volvo";
+
+Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result?
+
+JavaScript will treat the example above as:
+let x = "16" + "Volvo";
+
+When adding a number and a string, JavaScript will treat the number as a string.
+Example
+let x = 16 + "Volvo";
+Example
+let x = "Volvo" + 16;
+
+JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+JavaScript:
+let x = 16 + 4 + "Volvo";
+
+Result:
+20Volvo
+JavaScript:
+let x = "Volvo" + 16 + 4;
+
+Result:
+Volvo164
+
+In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+
+In the second example, since the first operand is a string, all operands are treated as strings.
+JavaScript Types are Dynamic
+
+JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+Example
+let x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+JavaScript Strings
+
+A string (or a text string) is a series of characters like "John Doe".
+
+Strings are written with quotes. You can use single or double quotes:
+Example
+let carName1 = "Volvo XC60";   // Using double quotes
+let carName2 = 'Volvo XC60';   // Using single quotes
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+Example
+let answer1 = "It's alright";             // Single quote inside double quotes
+let answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes
+let answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes
+
+You will learn more about strings later in this tutorial.
+JavaScript Numbers
+
+JavaScript has only one type of numbers.
+
+Numbers can be written with, or without decimals:
+Example
+let x1 = 34.00;     // Written with decimals
+let x2 = 34;        // Written without decimals
+
+Extra large or extra small numbers can be written with scientific (exponential) notation:
+Example
+let y = 123e5;      // 12300000
+let z = 123e-5;     // 0.00123
+
+You will learn more about numbers later in this tutorial.
+JavaScript Booleans
+
+Booleans can only have two values: true or false.
+Example
+let x = 5;
+let y = 5;
+let z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+
+Booleans are often used in conditional testing.
+
+You will learn more about conditional testing later in this tutorial.
+JavaScript Arrays
+
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+
+The following code declares (creates) an array called cars, containing three items (car names):
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+
+Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+You will learn more about arrays later in this tutorial.
+JavaScript Objects
+
+JavaScript objects are written with curly braces {}.
+
+Object properties are written as name:value pairs, separated by commas.
+Example
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.
+
+You will learn more about objects later in this tutorial.
+The typeof Operator
+
+You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+
+The typeof operator returns the type of a variable or an expression:
+Example
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+Example
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number"
+
+You will learn more about typeof later in this tutorial.
+Undefined
+
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+Example
+let car;    // Value is undefined, type is undefined
+
+Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+Example
+car = undefined;    // Value is undefined, type is undefined
+Empty Values
+
+An empty value has nothing to do with undefined.
+
+An empty string has both a legal value and a type.
+Example
+let car = "";    // The value is "", the typeof is "string"
+Test Yourself With Exercises
+Exercise:
+
+Use comments to describe the correct data type of the following variables:
+
+let length = 16;            //
+let lastName = "Johnson";   //
+const x = {
+  firstName: "John",
+  lastName: "Doe"
+};                          //
+
+
+Start the Exercise
+
+** javascript strings wip
+
+Strings are characters wrapped in single or double quotes
+
+A sequence of letters, numerals, punctuation marks, or other characters, treated as text
+Strings are used to represent text.
+The data type is called a string because it's made up of a string of characters, such as letters, that are arranged in a line.
+
+"your name" is called a string literal.
+ string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
+
+
+Manipulate text
+
+JavaScript Strings
+
+JavaScript strings are for storing and manipulating text.
+
+A JavaScript string is zero or more characters written inside quotes.
+Example
+let text = "John Doe";
+
+You can use single or double quotes:
+Example
+let carName1 = "Volvo XC60";  // Double quotes
+let carName2 = 'Volvo XC60';  // Single quotes
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+Example
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+String Length
+
+To find the length of a string, use the built-in length property:
+Example
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+Escape Character
+
+Because strings must be written within quotes, JavaScript will misunderstand this string:
+let text = "We are the so-called "Vikings" from the north.";
+
+The string will be chopped to "We are the so-called ".
+
+The solution to avoid this problem, is to use the backslash escape character.
+
+The backslash (\) escape character turns special characters into string characters:
+Code 	Result 	Description
+\' 	' 	Single quote
+\" 	" 	Double quote
+\\ 	\ 	Backslash
+
+The sequence \"  inserts a double quote in a string:
+
+Example
+let text = "We are the so-called \"Vikings\" from the north.";
+
+The sequence \'  inserts a single quote in a string:
+
+Example
+let text= 'It\'s alright.';
+
+The sequence \\  inserts a backslash in a string:
+
+Example
+let text = "The character \\ is called backslash.";
+
+Six other escape sequences are valid in JavaScript:
+Code 	Result
+\b 	Backspace
+\f 	Form Feed
+\n 	New Line
+\r 	Carriage Return
+\t 	Horizontal Tabulator
+\v 	Vertical Tabulator
+
+The 6 escape characters above were originally designed to control typewriters, teletypes, and fax machines. They do not make any sense in HTML.
+Breaking Long Code Lines
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+Example
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+
+You can also break up a code line within a text string with a single backslash:
+Example
+document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+
+The \ method is not the preferred method. It might not have universal support.
+Some browsers do not allow spaces behind the \ character.
+
+A safer way to break up a string, is to use string addition:
+Example
+document.getElementById("demo").innerHTML = "Hello " +
+"Dolly!";
+
+You cannot break up a code line with a backslash:
+Example
+document.getElementById("demo").innerHTML = \
+"Hello Dolly!";
+JavaScript Strings as Objects
+
+Normally, JavaScript strings are primitive values, created from literals:
+let x = "John";
+
+But strings can also be defined as objects with the keyword new:
+let y = new String("John");
+Example
+let x = "John";
+let y = new String("John");
+
+Do not create Strings objects.
+
+The new keyword complicates the code and slows down execution speed.
+
+String objects can produce unexpected results:
+
+When using the == operator, x and y are equal:
+let x = "John";
+let y = new String("John");
+
+When using the === operator, x and y are not equal:
+let x = "John";
+let y = new String("John");
+
+Note the difference between (x==y) and (x===y).
+
+(x == y) true or false?
+let x = new String("John");
+let y = new String("John");
+
+(x === y) true or false?
+let x = new String("John");
+let y = new String("John");
+
+Comparing two JavaScript objects always returns false.
+Complete String Reference
+
+For a complete String reference, go to our:
+
+Complete JavaScript String Reference.
+
+The reference contains descriptions and examples of all string properties and methods.
+Test Yourself With Exercises
+Exercise:
+
+Use the length property to alert the length of txt.
+
+let txt = "Hello World!";
+let x = ;
+alert(x);
+
+*** Escape Sequences in Strings
+
+Escaping Literal Quotes in Strings with and without backslashes
+'foo\'s bar'
+"foo's bar"
+'"Thats foo bar"'
+"\"Thats foo bar \""
+
+Quotes are not the only characters that can be escaped inside a string. There are two reasons to use escaping characters:
+To allow you to use characters you may not otherwise be able to type out, such as a carriage return.
+To allow you to represent multiple quotes in a string without JavaScript misinterpreting what you mean.
+We learned this in the previous challenge.
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+Note that the backslash itself must be escaped in order to display as a backslash.
+Assign the following three lines of text into the single variable myStr using escape sequences.
+FirstLine
+    \SecondLine
+ThirdLine
+You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.
+Note: The indentation for SecondLine is achieved with the tab escape character, not spaces.
+
+*** concatenation
+
+The process of joining different values or pieces of text together
+
+Concatenating Strings with Plus Operator
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+Example
+'My name is Alan,' + ' I concatenate.'
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+Example:
+const ourStr = "I come first. " + "I come second.";
+The string I come first. I come second. would be displayed in the console.
+Build myStr from the strings This is the start. and This is the end. using the + operator. Be sure to include a space between the two strings.
+
+Concatenating Strings with the Plus Equals Operator
+We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+Example:
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+ourStr now has a value of the string I come first. I come second..
+Build myStr over several lines by concatenating these two strings: This is the first sentence. and This is the second sentence. using the += operator. Use the += operator similar to how it is shown in the example and be sure to include a space between the two strings. Start by assigning the first string to myStr, then add on the second string.
+
+Constructing Strings with Variables
+Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
+Example:
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+ourStr would have a value of the string Hello, our name is freeCodeCamp, how are you?.
+Set myName to a string equal to your name and build myStr with myName between the strings My name is and and I am well!
+
+Appending Variables to Strings
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
+Example:
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStr would have the value freeCodeCamp is awesome!.
+Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator.
+
+*** bracket Notation
+
+Use Bracket Notation to Find the First Character in a String
+Bracket notation is a way to get a character at a specific index within a string.
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing.
+For example, the character at index 0 in the word Charles is C. So if const firstName = "Charles", you can get the value of the first letter of the string by using firstName[0].
+Example:
+const firstName = "Charles";
+const firstLetter = firstName[0];
+firstLetter would have a value of the string C.
+Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
+
+Understand String Immutability
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+For example, the following code:
+let myStr = "Bob";
+myStr[0] = "J";
+cannot change the value of myStr to Job, because the contents of myStr cannot be altered. Note that this does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change myStr would be to assign it with a new string, like this:
+let myStr = "Bob";
+myStr = "Job";
+Correct the assignment to myStr so it contains the string value of Hello World using the approach shown in the example above.
+
+Use Bracket Notation to Find the Nth Character in a String
+You can also use bracket notation to get the character at other positions within a string.
+Remember that computers start counting at 0, so the first character is actually the zeroth character.
+Example:
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+secondLetterOfFirstName would have a value of the string d.
+Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
+Hint: Try looking at the example above if you get stuck.
+
+Use Bracket Notation to Find the Last Character in a String
+In order to get the last letter of a string, you can subtract one from the string's length.
+For example, if const firstName = "Ada", you can get the value of the last letter of the string by using firstName[firstName.length - 1].
+Example:
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLetter would have a value of the string a.
+Use bracket notation to find the last character in the lastName variable.
+Hint: Try looking at the example above if you get stuck.
+
+Use Bracket Notation to Find the Nth-to-Last Character in a String
+You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
+For example, you can get the value of the third-to-last letter of the const firstName = "Augusta" string by using firstName[firstName.length - 3]
+Example:
+const firstName = "Augusta";
+const thirdToLastLetter = firstName[firstName.length - 3];
+thirdToLastLetter would have a value of the string s.
+Use bracket notation to find the second-to-last character in the lastName string.
+Hint: Try looking at the example above if you get stuck.
+
+*** String methods and properties
+
+String methods help you to work with strings.
+
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+JavaScript String Methods
+
+String methods help you to work with strings.
+String Methods and Properties
+
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+JavaScript String Length
+
+The length property returns the length of a string:
+Example
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length;
+Extracting String Parts
+
+There are 3 methods for extracting a part of a string:
+
+    slice(start, end)
+    substring(start, end)
+    substr(start, length)
+
+JavaScript String slice()
+
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: the start position, and the end position (end not included).
+Example
+
+Slice out a portion of a string from position 7 to position 13 (13 not included):
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(7, 13);
+Note
+
+JavaScript counts positions from zero.
+
+First position is 0.
+
+Second position is 1.
+
+If a parameter is negative, the position is counted from the end of the string.
+
+This example slices out a portion of a string from position -12 to position -6:
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(-12, -6);
+
+If you omit the second parameter, the method will slice out the rest of the string:
+Example
+let part = str.slice(7);
+
+or, counting from the end:
+Example
+let part = str.slice(-12);
+JavaScript String substring()
+
+substring() is similar to slice().
+
+The difference is that start and end values less than 0 are treated as 0 in substring().
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+If you omit the second parameter, substring() will slice out the rest of the string.
+JavaScript String substr()
+
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+
+If you omit the second parameter, substr() will slice out the rest of the string.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7);
+
+If the first parameter is negative, the position counts from the end of the string.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(-4);
+Replacing String Content
+
+The replace() method replaces a specified value with another value in a string:
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+Note
+
+The replace() method does not change the string it is called on.
+
+The replace() method returns a new string.
+
+The replace() method replaces only the first match
+
+If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+By default, the replace() method replaces only the first match:
+Example
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+
+By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("MICROSOFT", "W3Schools");
+
+To replace case insensitive, use a regular expression with an /i flag (insensitive):
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+
+Note
+
+Regular expressions are written without quotes.
+
+To replace all matches, use a regular expression with a /g flag (global match):
+Example
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace(/Microsoft/g, "W3Schools");
+
+Note
+
+You will learn a lot more about regular expressions in the chapter JavaScript Regular Expressions.
+Converting to Upper and Lower Case
+
+A string is converted to upper case with toUpperCase():
+
+A string is converted to lower case with toLowerCase():
+JavaScript String toUpperCase()
+Example
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+JavaScript String toLowerCase()
+Example
+let text1 = "Hello World!";       // String
+let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+JavaScript String concat()
+
+concat() joins two or more strings:
+Example
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+
+The concat() method can be used instead of the plus operator. These two lines do the same:
+Example
+text = "Hello" + " " + "World!";
+text = "Hello".concat(" ", "World!");
+Note
+
+All string methods return a new string. They don't modify the original string.
+
+Formally said:
+
+Strings are immutable: Strings cannot be changed, only replaced.
+JavaScript String trim()
+
+The trim() method removes whitespace from both sides of a string:
+Example
+let text1 = "      Hello World!      ";
+let text2 = text1.trim();
+JavaScript String Padding
+
+ECMAScript 2017 added two String methods: padStart() and padEnd() to support padding at the beginning and at the end of a string.
+JavaScript String padStart()
+
+The padStart() method pads a string with another string:
+Example
+let text = "5";
+let padded = text.padStart(4,"x");
+Example
+let text = "5";
+let padded = text.padStart(4,"0");
+Note
+
+The padStart() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+See the example below.
+Example
+let numb = 5;
+let text = numb.toString();
+let padded = text.padStart(4,"0");
+Browser Support
+
+padStart() is an ECMAScript 2017 feature.
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+padStart() is not supported in Internet Explorer.
+JavaScript String padEnd()
+
+The padEnd() method pads a string with another string:
+Example
+let text = "5";
+let padded = text.padEnd(4,"x");
+Example
+let text = "5";
+let padded = text.padEnd(4,"0");
+Note
+
+The padEnd() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+See the example below.
+Example
+let numb = 5;
+let text = numb.toString();
+let padded = text.padEnd(4,"0");
+Browser Support
+
+padEnd() is an ECMAScript 2017 feature.
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+padEnd() is not supported in Internet Explorer.
+Extracting String Characters
+
+There are 3 methods for extracting string characters:
+
+    charAt(position)
+    charCodeAt(position)
+    Property access [ ]
+
+JavaScript String charAt()
+
+The charAt() method returns the character at a specified index (position) in a string:
+Example
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+JavaScript String charCodeAt()
+
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+The method returns a UTF-16 code (an integer between 0 and 65535).
+Example
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+Property Access
+
+ECMAScript 5 (2009) allows property access [ ] on strings:
+Example
+let text = "HELLO WORLD";
+let char = text[0];
+Note
+
+Property access might be a little unpredictable:
+
+    It makes strings look like arrays (but they are not)
+    If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+    It is read only. str[0] = "A" gives no error (but does not work!)
+
+Example
+let text = "HELLO WORLD";
+text[0] = "A";    // Gives no error, but does not work
+Converting a String to an Array
+
+If you want to work with a string as an array, you can convert it to an array.
+JavaScript String split()
+
+A string can be converted to an array with the split() method:
+Example
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+
+If the separator is omitted, the returned array will contain the whole string in index [0].
+
+If the separator is "", the returned array will be an array of single characters:
+Example
+text.split("")
+Complete String Reference
+
+For a complete String reference, go to our:
+
+Complete JavaScript String Reference.
+
+The reference contains descriptions and examples of all string properties and methods.
+
+
+
+
+
+Method
+A function that is attached to an object as one of the object's attributes
+
+"STR".toLowerCase();
+"str".replace("str", "Str");
+toLowerCase(): This returns a string with all the letters lowercase.
+toUpperCase(): This returns a string with all the letters capitalized.
+trim(): This removes whitespace (spaces, tabs, and so forth) at the beginning and end of a string.
+replace(): This replaces part of a string with another string
+  replace(matchingString, newString)
+
+  Extracting String Parts
+
+There are 3 methods for extracting a part of a string:
+
+    slice(start, end)
+    substring(start, end)
+    substr(start, length)
+
+JavaScript String slice()
+
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: the start position, and the end position (end not included).
+Example
+
+Slice out a portion of a string from position 7 to position 13 (13 not included):
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(7, 13);
+Note
+
+JavaScript counts positions from zero.
+
+First position is 0.
+
+Second position is 1.
+
+If a parameter is negative, the position is counted from the end of the string.
+
+This example slices out a portion of a string from position -12 to position -6:
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(-12, -6);
+
+If you omit the second parameter, the method will slice out the rest of the string:
+Example
+let part = str.slice(7);
+
+or, counting from the end:
+Example
+let part = str.slice(-12);
+JavaScript String substring()
+
+substring() is similar to slice().
+
+The difference is that start and end values less than 0 are treated as 0 in substring().
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+If you omit the second parameter, substring() will slice out the rest of the string.
+JavaScript String substr()
+
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+
+If you omit the second parameter, substr() will slice out the rest of the string.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7);
+
+If the first parameter is negative, the position counts from the end of the string.
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(-4);
+Replacing String Content
+
+The replace() method replaces a specified value with another value in a string:
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+Note
+
+The replace() method does not change the string it is called on.
+
+The replace() method returns a new string.
+
+The replace() method replaces only the first match
+
+If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+By default, the replace() method replaces only the first match:
+Example
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+
+By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("MICROSOFT", "W3Schools");
+
+To replace case insensitive, use a regular expression with an /i flag (insensitive):
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+
+Note
+
+Regular expressions are written without quotes.
+
+To replace all matches, use a regular expression with a /g flag (global match):
+Example
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace(/Microsoft/g, "W3Schools");
+
+Note
+
+You will learn a lot more about regular expressions in the chapter JavaScript Regular Expressions.
+Converting to Upper and Lower Case
+
+A string is converted to upper case with toUpperCase():
+
+A string is converted to lower case with toLowerCase():
+JavaScript String toUpperCase()
+Example
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+JavaScript String toLowerCase()
+Example
+let text1 = "Hello World!";       // String
+let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+JavaScript String concat()
+
+concat() joins two or more strings:
+Example
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+
+The concat() method can be used instead of the plus operator. These two lines do the same:
+Example
+text = "Hello" + " " + "World!";
+text = "Hello".concat(" ", "World!");
+Note
+
+All string methods return a new string. They don't modify the original string.
+
+Formally said:
+
+Strings are immutable: Strings cannot be changed, only replaced.
+JavaScript String trim()
+
+The trim() method removes whitespace from both sides of a string:
+Example
+let text1 = "      Hello World!      ";
+let text2 = text1.trim();
+JavaScript String Padding
+
+ECMAScript 2017 added two String methods: padStart() and padEnd() to support padding at the beginning and at the end of a string.
+JavaScript String padStart()
+
+The padStart() method pads a string with another string:
+Example
+let text = "5";
+let padded = text.padStart(4,"x");
+Example
+let text = "5";
+let padded = text.padStart(4,"0");
+Note
+
+The padStart() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+See the example below.
+Example
+let numb = 5;
+let text = numb.toString();
+let padded = text.padStart(4,"0");
+Browser Support
+
+padStart() is an ECMAScript 2017 feature.
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+padStart() is not supported in Internet Explorer.
+JavaScript String padEnd()
+
+The padEnd() method pads a string with another string:
+Example
+let text = "5";
+let padded = text.padEnd(4,"x");
+Example
+let text = "5";
+let padded = text.padEnd(4,"0");
+Note
+
+The padEnd() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+See the example below.
+Example
+let numb = 5;
+let text = numb.toString();
+let padded = text.padEnd(4,"0");
+Browser Support
+
+padEnd() is an ECMAScript 2017 feature.
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+padEnd() is not supported in Internet Explorer.
+Extracting String Characters
+
+There are 3 methods for extracting string characters:
+
+    charAt(position)
+    charCodeAt(position)
+    Property access [ ]
+
+JavaScript String charAt()
+
+The charAt() method returns the character at a specified index (position) in a string:
+Example
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+JavaScript String charCodeAt()
+
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+The method returns a UTF-16 code (an integer between 0 and 65535).
+Example
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+Property Access
+
+ECMAScript 5 (2009) allows property access [ ] on strings:
+Example
+let text = "HELLO WORLD";
+let char = text[0];
+Note
+
+Property access might be a little unpredictable:
+
+    It makes strings look like arrays (but they are not)
+    If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+    It is read only. str[0] = "A" gives no error (but does not work!)
+
+Example
+let text = "HELLO WORLD";
+text[0] = "A";    // Gives no error, but does not work
+Converting a String to an Array
+
+If you want to work with a string as an array, you can convert it to an array.
+JavaScript String split()
+
+A string can be converted to an array with the split() method:
+Example
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+
+If the separator is omitted, the returned array will contain the whole string in index [0].
+
+If the separator is "", the returned array will be an array of single characters:
+Example
+text.split("")
+Complete String Reference
+
+For a complete String reference, go to our:
+
+Complete JavaScript String Reference.
+
+The reference contains descriptions and examples of all string properties and methods.
+
+JavaScript String Reference
+JavaScript Strings
+
+A JavaScript string stores a series of characters like "John Doe".
+
+A string can be any text inside double or single quotes:
+let carName1 = "Volvo XC60";
+let carName2 = 'Volvo XC60';
+
+String indexes are zero-based:
+
+The first character is in position 0, the second in 1, and so on.
+
+For a tutorial about Strings, read our JavaScript String Tutorial.
+String Properties and Methods
+
+Normally, strings like "John Doe", cannot have methods or properties because they are not objects.
+
+But with JavaScript, methods and properties are also available to strings, because JavaScript treats strings as objects when executing methods and properties.
+
+JavaScript String Search
+JavaScript Search Methods
+
+    String indexOf()
+    String lastIndexOf()
+    String startsWith()
+    String endsWith()
+
+JavaScript String indexOf()
+
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+Example
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate");
+Note
+
+JavaScript counts positions from zero.
+
+0 is the first position in a string, 1 is the second, 2 is the third, ...
+JavaScript String lastIndexOf()
+
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+Example
+let str = "Please locate where 'locate' occurs!";
+str.lastIndexOf("locate");
+
+Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+Example
+let str = "Please locate where 'locate' occurs!";
+str.lastIndexOf("John");
+
+Both methods accept a second parameter as the starting position for the search:
+Example
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate", 15);
+
+The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+Example
+let str = "Please locate where 'locate' occurs!";
+str.lastIndexOf("locate", 15);
+JavaScript String search()
+
+The search() method searches a string for a specified value and returns the position of the match:
+Example
+let str = "Please locate where 'locate' occurs!";
+str.search("locate");
+Did You Notice?
+
+The two methods, indexOf() and search(), are equal?
+
+They accept the same arguments (parameters), and return the same value?
+
+The two methods are NOT equal. These are the differences:
+
+    The search() method cannot take a second start position argument.
+    The indexOf() method cannot take powerful search values (regular expressions).
+
+You will learn more about regular expressions in a later chapter.
+JavaScript String match()
+
+The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
+Example 1
+
+Search a string for "ain":
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/g);
+
+Read more about regular expressions in the chapter JS RegExp.
+Note
+
+If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string.
+Syntax
+string.match(regexp)
+regexp 	Required. The value to search for, as a regular expression.
+Returns: 	An Array, containing the matches, one item for each match, or null if no match is found
+Example 2
+
+Perform a global, case-insensitive search for "ain":
+let text = "The rain in SPAIN stays mainly in the plain";
+text.match(/ain/gi);
+JavaScript String includes()
+
+The includes() method returns true if a string contains a specified value.
+Example
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+Syntax
+string.includes(searchvalue, start)
+searchvalue 	Required. The string to search for
+start 	Optional. Default 0. Position to start the search
+Returns: 	Returns true if the string contains the value, otherwise false
+JS Version: 	ES6 (2015)
+
+Check if a string includes "world", starting the search at position 12:
+let text = "Hello world, welcome to the universe.";
+text.includes("world", 12);
+Browser Support
+
+includes() is an ES6 feature (JavaScript 2015).
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+includes() is not supported in Internet Explorer.
+JavaScript String startsWith()
+
+The startsWith() method returns true if a string begins with a specified value, otherwise false:
+Example
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("Hello");
+Syntax
+string.startsWith(searchvalue, start)
+Parameter Values
+Parameter 	Description
+searchvalue 	Required. The value to search for.
+start 	Optional. Default 0. The position to start the search.
+Examples
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("world")    // Returns false
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("world", 5)    // Returns false
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("world", 6)    // Returns true
+Note
+
+The startsWith() method is case sensitive.
+Browser Support
+
+startsWith() is an ES6 feature (JavaScript 2015).
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+startsWith() is not supported in Internet Explorer.
+JavaScript String endsWith()
+
+The endsWith() method returns true if a string ends with a specified value, otherwise false:
+Example
+
+Check if a string ends with "Doe":
+let text = "John Doe";
+text.endsWith("Doe");
+Syntax
+string.endsWith(searchvalue, length)
+Parameter Values
+Parameter 	Description
+searchvalue 	Required. The value to search for.
+length 	Optional. The length to search.
+
+Check if the 11 first characters of a string ends with "world":
+let text = "Hello world, welcome to the universe.";
+text.endsWith("world", 11);
+
+Note
+
+The endsWith() method is case sensitive.
+Browser Support
+
+endsWith() is an ES6 feature (JavaScript 2015).
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+endsWith() is not supported in Internet Explorer.
+
+
+JavaScript String Methods
+Method 	Description
+charAt() 	Returns the character at a specified index (position)
+charCodeAt() 	Returns the Unicode of the character at a specified index
+concat() 	Returns two or more joined strings
+
+endsWith() method
++ The endsWith() method returns true if a string ends with a specified value.
++ Otherwise it returns false.
++ The endsWith() method is case sensitive.
++ string.endsWith(searchvalue, length)
++ searchvalue	Required. The string to search for.
++ length	Optional. The length of the string to search. Default value is the length of the string.
++ A boolean :	true if the string ends with the value, otherwise false.
+
+#+begin_src js
+let text = "Hello world";
+// check if text ends with world
+let result = text.endsWith("world"); // returns true
+let text1 = "Hello World";
+// check if text1 ends with world
+let result1 = text1.endsWith("world"); // returns false; case sensitive
+
+let text2 = "Hello world, welcome to the universe.";
+let result2 = text2.endsWith("world", 11);
+#+end_src
+
+fromCharCode() 	Returns Unicode values as characters
+includes() 	Returns if a string contains a specified value
+indexOf() 	Returns the index (position) of the first occurrence of a value in a string
+lastIndexOf() 	Returns the index (position) of the last occurrence of a value in a string
+localeCompare() 	Compares two strings in the current locale
+match() 	Searches a string for a value, or a regular expression, and returns the matches
+repeat() 	Returns a new string with a number of copies of a string
+replace() 	Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+search() 	Searches a string for a value, or regular expression, and returns the index (position) of the match
+slice() 	Extracts a part of a string and returns a new string
+split() 	Splits a string into an array of substrings
+startsWith() 	Checks whether a string begins with specified characters
+substr() 	Extracts a number of characters from a string, from a start index (position)
+substring() 	Extracts characters from a string, between two specified indices (positions)
+toLocaleLowerCase() 	Returns a string converted to lowercase letters, using the host's locale
+toLocaleUpperCase() 	Returns a string converted to uppercase letters, using the host's locale
+toLowerCase() 	Returns a string converted to lowercase letters
+toString() 	Returns a string or a string object as a string
+toUpperCase() 	Returns a string converted to uppercase letters
+trim() 	Returns a string with removed whitespaces
+valueOf() 	Returns the primitive value of a string or a string object
+
+Note
+All string methods return a new value.
+They do not change the original variable.
+
+**** JavaScript String Properties
+
+constructor property
++ The constructor property returns the string's constructor function
++ The constructor property returns the function that created the String prototype.
++ constructor returns: function String() { [native code] }
++ string.constructor
+
+length property
++ The length property returns the length of a string
++ The length property of an empty string is 0.
++ string.length
++ return value is number that's length of the string.
+
+You can find the length of a String value by writing .length after the string variable or string literal.
+
+#+begin_src js
+let myStr = "foo"; // returns foo
+// store the length of myStr into strLength
+let strLength = myStr.length; // returns 3
+let myStr = ""; // returns empty string
+let strLength = myStr.length; // returns 0
+print to console the string buzz length
+console.log("buzz".length); // returns 4
+#+end_src
+
+The prototype property :: Allows you to add properties and methods to an object
+
+**** String HTML Wrapper Methods
+
+HTML wrapper methods return a string wrapped inside an HTML tag.
+
+These are not standard methods, and may not work as expected.
+Method 	Description
+anchor() 	Displays a string as an anchor
+big() 	Displays a string using a big font
+blink() 	Displays a blinking string
+bold() 	Displays a string in bold
+fixed() 	Displays a string using a fixed-pitch font
+fontcolor() 	Displays a string using a specified color
+fontsize() 	Displays a string using a specified size
+italics() 	Displays a string in italic
+link() 	Displays a string as a hyperlink
+small() 	Displays a string using a small font
+strike() 	Displays a string with a strikethrough
+sub() 	Displays a string as subscript text
+sup() 	Displays a string as superscript text
+
+*** JavaScript Template Literals
+
+Synonyms:
+
+    Template Literals
+    Template Strings
+    String Templates
+    Back-Tics Syntax
+
+Back-Tics Syntax
+
+Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+Example
+let text = `Hello World!`;
+
+Quotes Inside Strings
+
+With template literals, you can use both single and double quotes inside a string:
+Example
+let text = `He's often called "Johnny"`;
+
+Multiline Strings
+
+Template literals allows multiline strings:
+Example
+let text =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+Interpolation
+
+Template literals provide an easy way to interpolate variables and expressions into strings.
+
+The method is called string interpolation.
+
+The syntax is:
+${...}
+Variable Substitutions
+
+Template literals allow variables in strings:
+Example
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+Automatic replacing of variables with real values is called string interpolation.
+Expression Substitution
+
+Template literals allow expressions in strings:
+Example
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+Automatic replacing of expressions with real values is called string interpolation.
+HTML Templates
+Example
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+
+Browser Support
+
+Template Literals is an ES6 feature (JavaScript 2015).
+
+It is supported in all modern browsers:
+
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+Template Literals is not supported in Internet Explorer.
+Complete String Reference
+
+For a complete String reference, go to our:
+
+Complete JavaScript String Reference.
+
+The reference contains descriptions and examples of all string properties and methods.
+
+*** strings thinkful
+
+1.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you will be able to access parts of a string with bracket notation and methods. You'll also be able to create an array from a string, join arrays into strings, and write strings that embed expressions using template literals.
+Overview
+
+In this lesson, you'll learn more about how to write strings in JavaScript and explore new ways to access different parts of a string. You'll also learn how to transform a string into an array.
+Key Terms
+
+Template literal
+    A JavaScript feature that makes string concatenation, embedded expressions, and formatting easier
+
+Remember when you first started learning about JavaScript data types? Now that you're familiar with some of the basics, you're ready to dive deeper into one specific data type: the string.
+Accessing strings
+
+As you know, a string data type is used to represent text. Strings are set off in quotes, and they can contain a variety of characters, such as letters, numbers, and symbols. So when it comes to accessing strings, you'll essentially be targeting individual characters in order to perform a specific task.
+
+Take a look at the following string. What do you see?
+
+const pangram = "The Five Boxing Wizards Jump Quickly.";
+
+As you may have noticed, the pangram string uses every letter of the alphabet. The string is also written in Title Case—in other words, the first letter of every word is uppercase. Imagine you want to update this string so that it's in Sentence case, which means that only the first letter of the sentence is uppercase. How might you do that? You'd follow these general steps:
+
+    Make sure that the first letter of the sentence is uppercase.
+
+    Make all other letters lowercase.
+
+To do this, you'll need to access individual characters in the string.
+Characters: A refresher
+
+Before moving forward, you may need a quick refresher on characters. As mentioned above, characters in strings can be alphanumeric characters, punctuation marks, spaces between words, or other types of symbols that increase the length of the string. Consider the example from above:
+
+const pangram = "The Five Boxing Wizards Jump Quickly.";
+
+pangram.length; //> 37
+
+The pangram string is 37 characters long. That includes the period . and empty spaces between words, but not the double quotes (" and ") enclosing the string. You'll learn a bit more about how to work with quotes in strings below.
+Bracket notation
+
+Back to the task at hand: changing this string from title case into sentence case. One way that you could do this is by using bracket notation. Just like with arrays, bracket notation can be used to access individual characters at any given index of a string. Here's an example of how bracket notation can be used:
+
+const word = "Wizards";
+
+word[0]; //> "W"
+
+word[2]; //> "z"
+
+word[9]; //> undefined
+
+Now, take a look at the following function, which will solve the case problem that you've been given. What do you notice?
+
+function sentenceCase(sentence) {
+
+  const firstCharacter = sentence[0];
+
+  let result = firstCharacter.toUpperCase();
+
+
+  for (let i = 1; i < sentence.length; i++) {
+
+    const character = sentence[i];
+
+    result += character.toLowerCase();
+
+  }
+
+
+  return result;
+
+}
+
+Take a moment to walk through the above code. Here's what it's doing:
+
+    It creates a new variable called firstCharacter. It sets firstCharacter to be equal to the first character of the inputted sentence string, using bracket notation.
+
+    It creates a new variable called result. It sets that variable to be equal to the firstCharacter variable, set to uppercase with the toUpperCase() method.
+
+    It begins a for loop, which starts at an index of 1, thus skipping over the first character of the sentence.
+
+    In the for loop, the variable character is created, which is set to be equal to sentence[i]. With bracket notation, you can access each character of a string, just like you would each item of an array.
+
+    The code adds the character to the result variable, setting it to lowercase at the same time.
+
+    Finally, return result will return the result for you.
+
+The substr() method
+
+But bracket notation is just one approach. You can also solve your casing problem using a built-in JavaScript method, called the substr() method, which will actually make this process a little easier. Check out the code sample below:
+
+function sentenceCase(sentence) {
+
+  const first = sentence.substr(0, 1);
+
+  const rest = sentence.substr(1);
+
+
+  return first.toUpperCase() + rest.toLowerCase();
+
+}
+
+The substr() method, also called the substring method, allows you to extract a specific section of characters in a string. It takes two arguments:
+
+    The index of the first character to include in the substring
+
+    The number of characters to extract
+
+The above function works as follows:
+
+    It sets the first variable to be equal to only the first character. In other words, substr(0, 1) means that the substring will begin on index 0 and only include 1 character.
+
+    It sets the rest variable to be equal to every character starting from the first index. If you do not include a second argument, like in substr(1), the substring will consist of every character following the given index.
+
+    It joins the two strings together, using toUpperCase() and toLowerCase() as appropriate.
+
+Do this
+Use substr()
+
+Time to try it yourself. Take a look at the following examples of substr(). Before running the code on your own, evaluate the code in your head and predict what will happen.
+
+const title = "Guards! Guards!";
+
+// Use console.log(); to see the output
+
+title.substr(3); //> ?
+
+title.substr(6, 4); //> ?
+
+title.substr(25); //> ?
+
+Splitting and joining strings
+
+Now that you've looked at a couple of ways to access string characters, take a step back to analyze the functions at work here.
+
+As the name suggests, the sentenceCase() function could be described as one that capitalizes the first character in a string and sets all other characters to lowercase. That's what you were trying to do above. But you could also reuse this function to create a titleize() function in order to turn phrases into titles (with title case formatting). For example, you could expect the titleize() function to work like this:
+
+const title = "the light FANTASTIC";
+
+titleize(title); //> "The Light Fantastic";
+
+There are a few ways to accomplish this task. Below is one approach that makes use of the split() and join() methods, seen below.
+
+function titleize(title) {
+
+  const words = title.split(" ");
+
+  let result = [];
+
+
+  for (let i = 0; i < words.length; i++) {
+
+    const capitalized = sentenceCase(words[i]);
+
+    result.push(capitalized);
+
+  }
+
+
+  return result.join(" ");
+
+}
+
+
+titleize("the light FANTASTIC"); //> "The Light Fantastic"
+
+In the code sample above, the split() method separates the string based on the string given to it as an argument. Here's an example:
+
+const title = "the light FANTASTIC";
+
+title.split(" "); //> [ "the", "light", "FANTASTIC" ]
+
+The argument given to split() is a string with a space. Therefore, an array is created in which each new item is separated by the string. Notice that in the resulting array above, all of the spaces have been removed.
+
+Now, take a look at the join() method. The join() method is called on an array and joins all the elements in that array together with the supplied argument. In the case of the titleize() function, the join() joins all the capitalized words into a single string, separated by spaces.
+
+const result = ["The", "Light", "Fantastic"];
+
+result.join(" "); //> "The Light Fantastic";
+
+If you want to learn more, check out the Mozilla Developer Network (MDN) resources on the split() method and the join() method.
+Do this
+Use split() and join()
+
+Take a look at the following examples of split() and join(). Before running the code on your own, evaluate the code in your head and predict what will happen.
+
+const title = "Guards! Guards!";
+
+title.split("!"); //> ?
+
+title.split(""); //> ?
+
+title.split("guards"); //> ?
+
+
+const titleArr = ["The", "Light", "Fantastic"];
+
+titleArr.join("-"); //> ?
+
+titleArr.join("_-_"); //> ?
+
+titleArr.join(); //> ?
+
+Template literals
+
+Joining together multiple strings can end up looking pretty messy. Previously, you've had to concatenate multiple parts of a string with the + operator to accomplish this task. Take a look at how the following function concatenates strings.
+
+function bookSale(title, priceInCents) {
+
+  const price = (priceInCents / 100).toFixed(2);
+
+  return titleize(title) + " is on sale for $" + price + ".";
+
+}
+
+
+bookSale("the light fantastic", 950); //> "The Light Fantastic is on sale for $9.50."
+
+The above function works, but it doesn't look that great. Fortunately, JavaScript has a feature called template literals, which can help make this function look cleaner and clearer. Check it out:
+
+function bookSale(title, priceInCents) {
+
+  const price = (priceInCents / 100).toFixed(2);
+
+  return `${titleize(title)} is on sale for $${price}.`;
+
+}
+
+Template literals allow you to embed expressions and avoid using multiple + operators just to join a string. The syntax of a template literal is seen here: `${titleize(title)} is on sale for $${price}.` Here are the key pieces:
+
+    Begin and end your string using backticks, which look like this `. They are accessible on the tilde ~ key on your keyboard.
+
+    Place variables or expressions inside of curly braces {}, which should be preceded by a dollar sign $. It should look like this: ${}.
+
+Do this
+Use template literals
+
+Given the variables below, construct a string using template literals that results in the following sentence.
+
+The price of 'Interesting Times' by Terry Pratchett is $8.99.
+
+const title = "Interesting Times";
+
+const author = "Terry Pratchett";
+
+const price = 8.99;
+
+If you're having trouble, you can peek at the answer below.
+
+`The price of '${title}' by ${author} is $${price}.`;
+
+Escaping strings
+
+When reviewing older code, you may see examples like the snippet below:
+
+const firstSentence = "Will tugged at his mother's hand and said, \"Come on, come on...\"";
+
+This string was created with double quotes, but that there are also double quotes in the string. The backslash \ that you see here is used to escape the string.
+
+Escaping a string means that you're providing a backslash to allow for the following character to be seen as part of the string rather than part of the syntax. In the example above, the \ tells JavaScript that it should treat this double quote as part of the string, not as the closing quotation.
+
+The sample string above is just fine. But as you've learned, template literals offer a better way to write it:
+
+const firstSentence = `Will tugged at his mother's hand and said, "Come on, come on..."`;
+
+** js Numbers wip
+
+Numbers are any number without quotes: 23.8879
+
+JavaScript Numbers
+
+JavaScript has only one type of number. Numbers can be written with or without decimals.
+Example
+let x = 3.14;    // A number with decimals
+let y = 3;       // A number without decimals
+
+Extra large or extra small numbers can be written with scientific (exponent) notation:
+Example
+let x = 123e5;    // 12300000
+let y = 123e-5;   // 0.00123
+
+JavaScript Numbers are Always 64-bit Floating Point
+
+Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.
+
+JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.
+
+This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:
+Value (aka Fraction/Mantissa) 	Exponent 	Sign
+52 bits (0 - 51)  	11 bits (52 - 62) 	1 bit (63)
+Integer Precision
+
+Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+Example
+let x = 999999999999999;   // x will be 999999999999999
+let y = 9999999999999999;  // y will be 10000000000000000
+
+The maximum number of decimals is 17.
+Floating Precision
+
+Floating point arithmetic is not always 100% accurate:
+let x = 0.2 + 0.1;
+
+To solve the problem above, it helps to multiply and divide:
+let x = (0.2 * 10 + 0.1 * 10) / 10;
+Adding Numbers and Strings
+
+WARNING !!
+
+JavaScript uses the + operator for both addition and concatenation.
+
+Numbers are added. Strings are concatenated.
+
+If you add two numbers, the result will be a number:
+Example
+let x = 10;
+let y = 20;
+let z = x + y;
+
+If you add two strings, the result will be a string concatenation:
+Example
+let x = "10";
+let y = "20";
+let z = x + y;
+
+If you add a number and a string, the result will be a string concatenation:
+Example
+let x = 10;
+let y = "20";
+let z = x + y;
+
+If you add a string and a number, the result will be a string concatenation:
+Example
+let x = "10";
+let y = 20;
+let z = x + y;
+
+A common mistake is to expect this result to be 30:
+Example
+let x = 10;
+let y = 20;
+let z = "The result is: " + x + y;
+
+A common mistake is to expect this result to be 102030:
+Example
+let x = 10;
+let y = 20;
+let z = "30";
+let result = x + y + z;
+
+The JavaScript interpreter works from left to right.
+
+First 10 + 20 is added because x and y are both numbers.
+
+Then 30 + "30" is concatenated because z is a string.
+Numeric Strings
+
+JavaScript strings can have numeric content:
+let x = 100;         // x is a number
+
+let y = "100";       // y is a string
+
+JavaScript will try to convert strings to numbers in all numeric operations:
+
+This will work:
+let x = "100";
+let y = "10";
+let z = x / y;
+
+This will also work:
+let x = "100";
+let y = "10";
+let z = x * y;
+
+And this will work:
+let x = "100";
+let y = "10";
+let z = x - y;
+
+But this will not work:
+let x = "100";
+let y = "10";
+let z = x + y;
+
+In the last example JavaScript uses the + operator to concatenate the strings.
+NaN - Not a Number
+
+NaN is a JavaScript reserved word indicating that a number is not a legal number.
+
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+Example
+let x = 100 / "Apple";
+
+However, if the string contains a numeric value , the result will be a number:
+Example
+let x = 100 / "10";
+
+You can use the global JavaScript function isNaN() to find out if a value is a not a number:
+Example
+let x = 100 / "Apple";
+isNaN(x);
+
+Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:
+Example
+let x = NaN;
+let y = 5;
+let z = x + y;
+
+Or the result might be a concatenation like NaN5:
+Example
+let x = NaN;
+let y = "5";
+let z = x + y;
+
+NaN is a number: typeof NaN returns number:
+Example
+typeof NaN;
+Infinity
+
+Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+Example
+let myNumber = 2;
+// Execute until Infinity
+while (myNumber != Infinity) {
+  myNumber = myNumber * myNumber;
+}
+
+Division by 0 (zero) also generates Infinity:
+Example
+let x =  2 / 0;
+let y = -2 / 0;
+
+Infinity is a number: typeof Infinity returns number.
+Example
+typeof Infinity;
+Hexadecimal
+
+JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+Example
+let x = 0xFF;
+
+Never write a number with a leading zero (like 07).
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.
+
+By default, JavaScript displays numbers as base 10 decimals.
+
+But you can use the toString() method to output numbers from base 2 to base 36.
+
+Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+Example
+let myNumber = 32;
+myNumber.toString(32);
+myNumber.toString(16);
+myNumber.toString(12);
+myNumber.toString(10);
+myNumber.toString(8);
+myNumber.toString(2);
+JavaScript Numbers as Objects
+
+Normally JavaScript numbers are primitive values created from literals:
+let x = 123;
+
+But numbers can also be defined as objects with the keyword new:
+let y = new Number(123);
+Example
+let x = 123;
+let y = new Number(123);
+
+Do not create Number objects.
+
+The new keyword complicates the code and slows down execution speed.
+
+Number Objects can produce unexpected results:
+
+When using the == operator, x and y are equal:
+let x = 500;
+let y = new Number(500);
+
+When using the === operator, x and y are not equal.
+let x = 500;
+let y = new Number(500);
+
+Note the difference between (x==y) and (x===y).
+
+(x == y) true or false?
+let x = new Number(500);
+let y = new Number(500);
+
+(x === y) true or false?
+let x = new Number(500);
+let y = new Number(500);
+
+Comparing two JavaScript objects always returns false.
+Complete JavaScript Number Reference
+
+For a complete Number reference, visit our:
+
+Complete JavaScript Number Reference.
+
+The reference contains descriptions and examples of all Number properties and methods.
+
+*** JavaScript Number Methods
+
+Number methods help you work with numbers.
+Number Methods and Properties
+
+Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+The toString() Method
+
+The toString() method returns a number as a string.
+
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+Example
+let x = 123;
+x.toString();
+(123).toString();
+(100 + 23).toString();
+The toExponential() Method
+
+toExponential() returns a string, with a number rounded and written using exponential notation.
+
+A parameter defines the number of characters behind the decimal point:
+Example
+let x = 9.656;
+x.toExponential(2);
+x.toExponential(4);
+x.toExponential(6);
+
+The parameter is optional. If you don't specify it, JavaScript will not round the number.
+The toFixed() Method
+
+toFixed() returns a string, with the number written with a specified number of decimals:
+Example
+let x = 9.656;
+x.toFixed(0);
+x.toFixed(2);
+x.toFixed(4);
+x.toFixed(6);
+
+toFixed(2) is perfect for working with money.
+The toPrecision() Method
+
+toPrecision() returns a string, with a number written with a specified length:
+Example
+let x = 9.656;
+x.toPrecision();
+x.toPrecision(2);
+x.toPrecision(4);
+x.toPrecision(6);
+The valueOf() Method
+
+valueOf() returns a number as a number.
+Example
+let x = 123;
+x.valueOf();
+(123).valueOf();
+(100 + 23).valueOf();
+
+In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).
+
+The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+
+There is no reason to use it in your code.
+
+All JavaScript data types have a valueOf() and a toString() method.
+Converting Variables to Numbers
+
+There are 3 JavaScript methods that can be used to convert variables to numbers:
+
+    The Number() method
+    The parseInt() method
+    The parseFloat() method
+
+These methods are not number methods, but global JavaScript methods.
+Global JavaScript Methods
+
+JavaScript global methods can be used on all JavaScript data types.
+
+These are the most relevant methods, when working with numbers:
+Method 	Description
+Number() 	Returns a number, converted from its argument.
+parseFloat() 	Parses its argument and returns a floating point number
+parseInt() 	Parses its argument and returns an integer
+The Number() Method
+
+Number() can be used to convert JavaScript variables to numbers:
+Example
+Number(true);
+Number(false);
+Number("10");
+Number("  10");
+Number("10  ");
+Number(" 10  ");
+Number("10.33");
+Number("10,33");
+Number("10 33");
+Number("John");
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+The Number() Method Used on Dates
+
+Number() can also convert a date to a number.
+Example
+Number(new Date("1970-01-01"))
+
+The Number() method returns the number of milliseconds since 1.1.1970.
+
+The number of milliseconds between 1970-01-02 and 1970-01-01 is 86400000:
+Example
+Number(new Date("1970-01-02"))
+Example
+Number(new Date("2017-09-30"))
+The parseInt() Method
+
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+Example
+parseInt("-10");
+parseInt("-10.33");
+parseInt("10");
+parseInt("10.33");
+parseInt("10 20 30");
+parseInt("10 years");
+parseInt("years 10");
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+The parseFloat() Method
+
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+Example
+parseFloat("10");
+parseFloat("10.33");
+parseFloat("10 20 30");
+parseFloat("10 years");
+parseFloat("years 10");
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+Number Properties
+Property 	Description
+MAX_VALUE 	Returns the largest number possible in JavaScript
+MIN_VALUE 	Returns the smallest number possible in JavaScript
+POSITIVE_INFINITY 	Represents infinity (returned on overflow)
+NEGATIVE_INFINITY 	Represents negative infinity (returned on overflow)
+NaN 	Represents a "Not-a-Number" value
+JavaScript MIN_VALUE and MAX_VALUE
+
+MAX_VALUE returns the largest possible number in JavaScript.
+Example
+let x = Number.MAX_VALUE;
+
+MIN_VALUE returns the lowest possible number in JavaScript.
+Example
+let x = Number.MIN_VALUE;
+JavaScript POSITIVE_INFINITY
+Example
+let x = Number.POSITIVE_INFINITY;
+
+POSITIVE_INFINITY is returned on overflow:
+Example
+let x = 1 / 0;
+JavaScript NEGATIVE_INFINITY
+Example
+let x = Number.NEGATIVE_INFINITY;
+
+NEGATIVE_INFINITY is returned on overflow:
+Example
+let x = -1 / 0;
+JavaScript NaN - Not a Number
+Example
+let x = Number.NaN;
+
+NaN is a JavaScript reserved word indicating that a number is not a legal number.
+
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+Example
+let x = 100 / "Apple";
+
+Number Properties Cannot be Used on Variables
+
+Number properties belongs to the JavaScript's number object wrapper called Number.
+
+These properties can only be accessed as Number.MAX_VALUE.
+
+Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined:
+Example
+let x = 6;
+x.MAX_VALUE
+Complete JavaScript Number Reference
+
+For a complete Number reference, visit our:
+
+Complete JavaScript Number Reference.
+
+The reference contains descriptions and examples of all Number properties and methods.
+
+** boolean
+
+Understanding Boolean Values
+Another data type is the Boolean. Booleans may only be one of two values: true or false. They are basically little on-off switches, where true is on and false is off. These two states are mutually exclusive.
+Note: Boolean values are never written with quotes. The strings "true" and "false" are not Boolean and have no special meaning in JavaScript.
+Modify the welcomeToBooleans function so that it returns true instead of false when the run button is clicked.
+
+
+Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.
+The + operator is used to concatenate strings including string values held in variables.
+In ES6, template literals use backticks ` and ${} to interpolate values into a string.
+The typeof keyword returns the data type (as a string) of a value.
+
+JavaScript Booleans
+
+A JavaScript Boolean represents one of two values: true or false.
+Boolean Values
+
+Very often, in programming, you will need a data type that can only have one of two values, like
+
+    YES / NO
+    ON / OFF
+    TRUE / FALSE
+
+For this, JavaScript has a Boolean data type. It can only take the values true or false.
+The Boolean() Function
+
+You can use the Boolean() function to find out if an expression (or a variable) is true:
+Example
+Boolean(10 > 9)
+
+Or even easier:
+Example
+(10 > 9)
+10 > 9
+Comparisons and Conditions
+
+The chapter JS Comparisons gives a full overview of comparison operators.
+
+The chapter JS Conditions gives a full overview of conditional statements.
+
+Here are some examples:
+Operator 	Description 	Example
+== 	equal to 	if (day == "Monday")
+> 	greater than 	if (salary > 9000)
+< 	less than 	if (age < 18)
+
+The Boolean value of an expression is the basis for all JavaScript comparisons and conditions.
+Everything With a "Value" is True
+Examples
+100
+
+3.14
+
+-15
+
+"Hello"
+
+"false"
+
+7 + 1 + 3.14
+Everything Without a "Value" is False
+
+The Boolean value of 0 (zero) is false:
+let x = 0;
+Boolean(x);
+
+The Boolean value of -0 (minus zero) is false:
+let x = -0;
+Boolean(x);
+
+The Boolean value of "" (empty string) is false:
+let x = "";
+Boolean(x);
+
+The Boolean value of undefined is false:
+let x;
+Boolean(x);
+
+The Boolean value of null is false:
+let x = null;
+Boolean(x);
+
+The Boolean value of false is (you guessed it) false:
+let x = false;
+Boolean(x);
+
+The Boolean value of NaN is false:
+let x = 10 / "Hallo";
+Boolean(x);
+JavaScript Booleans as Objects
+
+Normally JavaScript booleans are primitive values created from literals:
+let x = false;
+
+But booleans can also be defined as objects with the keyword new:
+let y = new Boolean(false);
+Example
+let x = false;
+let y = new Boolean(false);
+
+// typeof x returns boolean
+// typeof y returns object
+
+Do not create Boolean objects.
+
+The new keyword complicates the code and slows down execution speed.
+
+Boolean objects can produce unexpected results:
+
+When using the == operator, x and y are equal:
+let x = false;
+let y = new Boolean(false);
+
+When using the === operator, x and y are not equal:
+let x = false;
+let y = new Boolean(false);
+
+Note the difference between (x==y) and (x===y).
+
+(x == y) true of false?
+let x = new Boolean(false);
+let y = new Boolean(false);
+
+(x === y) true of false?
+let x = new Boolean(false);
+let y = new Boolean(false);
+
+Comparing two JavaScript objects always return false.
+Complete Boolean Reference
+
+For a complete reference, go to our Complete JavaScript Boolean Reference.
+
+The reference contains descriptions and examples of all Boolean properties and methods.
+
+** Undefined
+
+** what are js variables? wip
+
+Variables are containers for storing data (storing data values).
+
+A variable behaves as if it was the value that it contains.
+
+Variables hold reusable data in a program and associate it with a name.
+
+Variables are stored in memory.
+
+
+Variables allow computers to store and manipulate data in a dynamic fashion.
+They do this by using a "label" to point to the data rather than using the data itself.
+
+In computer science, data is anything that is meaningful to the computer.
+
+Two steps:
+  Declaration (var, let, const)
+  Assignment (= assignment operator)
+
+
+
+
+An equal sign is used to assign values to variables.
+
+
+
+Declare JavaScript Variables
+Declaring a JavaScript Variable
+
+Creating a variable in JavaScript is called "declaring" a variable.
+
+JavaScript uses the keywords var, let and const to declare variables.
+
+After the declaration, the variable has no value (technically it is undefined).
+A variable declared without a value will have the value undefined.
+
+It's a good programming practice to declare all variables at the beginning of a script.
+
+
+In computer programs, variables are often declared without a value.
+The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+
+
+JavaScript Dollar Sign $
+Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:
+Example
+let $ = "Hello World";
+let $$$ = 2;
+let $myMoney = 5;
+Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.
+In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements".
+
+JavaScript Underscore (_)
+Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names:
+Example
+let _lastName = "Johnson";
+let _x = 2;
+let _100 = 5;
+Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.
+
+
+ That's where const and let can help. They prevent developers from making unintended mistakes when declaring their variables.
+
+
+What method should you use?
+
+At this point, you might be wondering which method of declaring variables you should use. Here's the process that you should follow when determining whether to use let, const, or var:
+
+    Use const primarily; this will be your go-to. Moving forward, you'll want to declare most of your variables using const.
+    Use let if you need to reassign a value. This is a common requirement during for loops and sometimes with if statements.
+    Don't use var unless necessary, like when working in a codebase that uses it. However, that will likely only happen in the distant future. As mentioned above, there are other reasons to use (and to not use) var, but those will be covered in a different lesson. For now, just avoid it.
+
+    var makes variable global even in functions
+
+Initializing Variables with the Assignment Operator
+It is common to initialize a variable to an initial value in the same line as it is declared.
+var myVar = 0;
+Creates a new variable called myVar and assigns it an initial value of 0.
+Define a variable a with var and initialize it to a value of 9.
+
+
+
+Understanding Uninitialized Variables
+When JavaScript variables are declared, they have an initial value of undefined.
+If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number".
+If you concatenate a string with an undefined variable, you will get a string of undefined.
+
+Compare Scopes of the var and let Keywords
+If you are unfamiliar with let, check out this challenge about the difference bewteen let and var.
+When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
+The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression.
+For example:
+var numArray = [];
+for (var i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Here the console will display the values [0, 1, 2] and 3.
+With the var keyword, i is declared globally. So when i++ is executed, it updates the global variable. This code is similar to the following:
+var numArray = [];
+var i;
+for (i = 0; i < 3; i++) {
+  numArray.push(i);
+}
+console.log(numArray);
+console.log(i);
+Here the console will display the values [0, 1, 2] and 3.
+This behavior will cause problems if you were to create a function and store it for later use inside a for loop that uses the i variable. This is because the stored function will always refer to the value of the updated global i variable.
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+Here the console will display the value 3.
+As you can see, printNumTwo() prints 3 and not 2. This is because the value assigned to i was updated and the printNumTwo() returns the global i and not the value i had when the function was created in the for loop. The let keyword does not follow this behavior:
+let printNumTwo;
+for (let i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+console.log(i);
+Here the console will display the value 2, and an error that i is not defined.
+i is not defined because it was not declared in the global scope. It is only declared within the for loop statement. printNumTwo() returned the correct value because three different i variables with unique values (0, 1, and 2) were created by the let keyword within the loop statement.
+
+*** var keyword
+
+var keyword isnt used anymore, and you should avoid using them.
+var variables can be re-declared and updated.
+The var keyword is used in pre-ES6 versions of JS.
+Explore Differences Between the var and let Keywords
+One of the biggest problems with declaring variables with the var keyword is that you can easily overwrite variable declarations:
+var camper = "James";
+var camper = "David";
+console.log(camper);
+In the code above, the camper variable is originally declared as James, and is then overridden to be David.
+The console then displays the string David.
+In a small application, you might not run into this type of problem.
+But as your codebase becomes larger, you might accidentally overwrite a variable that you did not intend to.
+Because this behavior does not throw an error, searching for and fixing bugs becomes more difficult.
+
+
+The var keyword
+In the past, variables were declared with the keyword var.
+Here is what var looks like in action:
+var productName = "Jogger Sweatpants";
+Just like with let, variables created with the var keyword can be reassigned.
+However, var doesn't have the same restrictions as let when it comes to declaring variables with the same name.
+See the example below:
+var productName = "Jogger Sweatpants";
+productName = "Men's Jogger Sweatpants";
+var productName = "Woman's Jogger Sweatpants";
+Because var is an older method of declaring variables, you will often see var referenced in older code.
+However, you shouldn't use var in your code unless you have a very specific reason to do so.
+
+*** let keyword
+
+let variables, however, can be updated.
+let is the preferred way to declare a variable when it can be reassigned
+A keyword called let was introduced in ES6, a major update to JavaScript, to solve this potential issue with the var keyword.
+If you replace var with let in the code above, it results in an error:
+let camper = "James";
+let camper = "David";
+The error can be seen in your browser console.
+So unlike var, when you use let, a variable with the same name can only be declared once.
+
+JavaScript Let
+
+The let keyword was introduced in ES6 (2015).
+
+Variables defined with let cannot be Redeclared.
+
+Variables defined with let must be Declared before use.
+
+Variables defined with let have Block Scope.
+Cannot be Redeclared
+
+Variables defined with let cannot be redeclared.
+
+You cannot accidentally redeclare a variable.
+
+With let you can not do this:
+Example
+let x = "John Doe";
+
+let x = 0;
+
+// SyntaxError: 'x' has already been declared
+
+With var you can:
+Example
+var x = "John Doe";
+
+var x = 0;
+Block Scope
+
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+
+ES6 introduced two important new JavaScript keywords: let and const.
+
+These two keywords provide Block Scope in JavaScript.
+
+Variables declared inside a { } block cannot be accessed from outside the block:
+Example
+{
+  let x = 2;
+}
+// x can NOT be used here
+
+Variables declared with the var keyword can NOT have block scope.
+
+Variables declared inside a { } block can be accessed from outside the block.
+Example
+{
+  var x = 2;
+}
+// x CAN be used here
+Redeclaring Variables
+
+Redeclaring a variable using the var keyword can impose problems.
+
+Redeclaring a variable inside a block will also redeclare the variable outside the block:
+Example
+var x = 10;
+// Here x is 10
+
+{
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+
+Redeclaring a variable using the let keyword can solve this problem.
+
+Redeclaring a variable inside a block will not redeclare the variable outside the block:
+Example
+let x = 10;
+// Here x is 10
+
+{
+let x = 2;
+// Here x is 2
+}
+
+// Here x is 10
+Browser Support
+
+The let keyword is not fully supported in Internet Explorer 11 or earlier.
+
+The following table defines the first browser versions with full support for the let keyword:
+
+Chrome 49 	Edge 12 	Firefox 44 	Safari 11 	Opera 36
+Mar, 2016 	Jul, 2015 	Jan, 2015 	Sep, 2017 	Mar, 2016
+Redeclaring
+
+Redeclaring a JavaScript variable with var is allowed anywhere in a program:
+Example
+var x = 2;
+// Now x is 2
+
+var x = 3;
+// Now x is 3
+
+With let, redeclaring a variable in the same block is NOT allowed:
+Example
+var x = 2;    // Allowed
+let x = 3;    // Not allowed
+
+{
+let x = 2;    // Allowed
+let x = 3     // Not allowed
+}
+
+{
+let x = 2;    // Allowed
+var x = 3     // Not allowed
+}
+
+Redeclaring a variable with let, in another block, IS allowed:
+Example
+let x = 2;    // Allowed
+
+{
+let x = 3;    // Allowed
+}
+
+{
+let x = 4;    // Allowed
+}
+Let Hoisting
+
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+Example
+
+This is OK:
+carName = "Volvo";
+var carName;
+
+If you want to learn more about hoisting, study the chapter JavaScript Hoisting.
+
+Variables defined with let are also hoisted to the top of the block, but not initialized.
+
+Meaning: Using a let variable before it is declared will result in a ReferenceError:
+Example
+carName = "Saab";
+let carName = "Volvo";
+
+
+The variable total is declared with the let keyword.
+
+This is a value that can be changed.
+Just Like Algebra
+
+Just like in algebra, variables hold values:
+let x = 5;
+let y = 6;
+
+Just like in algebra, variables are used in expressions:
+let z = x + y;
+
+From the example above, you can guess that the total is calculated to be 11.
+
+The let keyword
+As you've learned, the let keyword is used to declare variables in JavaScript. Here's some refresher code for your review:
+let price = 9.99;
+You can also reassign variables that have already been created using let. Here's an example:
+let price = 9.99;
+price = 8.5;
+However, if you declare a variable with let, you cannot use let to later define that same variable. See the error below:
+let price = 9.99;
+let price = 8.5; //> Uncaught SyntaxError: Identifier 'price' has already been declared
+This SyntaxError is pretty useful. It will stop you from accidentally recreating the same variable later on in your program when you don't intend to do so.
+
+*** const keyword
+
+const keyword stand for constants
+const keyword used to declare variables that can't be changed
+  const pi = 3.14;
+  pi = 3.1415; // This will throw an error because const variables can't be updated
+const is the preferred way to declare a variable with a constant value.
+
+
+Declare a Read-Only Variable with the const Keyword
+const has all the awesome features that let has, with the added bonus that variables declared using const are read-only.
+They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned:
+const FAV_PET = "Cats";
+FAV_PET = "Dogs";
+The console will display an error due to reassigning the value of FAV_PET.
+You should always name variables you don't want to reassign using the const keyword.
+This helps when you accidentally attempt to reassign a variable that is meant to stay constant.
+Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
+You will learn more about objects, arrays, and immutable and mutable values in later challenges.
+Also in later challenges, you will see examples of uppercase, lowercase, or camelCase variable identifiers.
+
+JavaScript Const
+
+The const keyword was introduced in ES6 (2015).
+
+Variables defined with const cannot be Redeclared.
+
+Variables defined with const cannot be Reassigned.
+
+Variables defined with const have Block Scope.
+Cannot be Reassigned
+
+A const variable cannot be reassigned:
+Example
+const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error
+Must be Assigned
+
+JavaScript const variables must be assigned a value when they are declared:
+Correct
+const PI = 3.14159265359;
+Incorrect
+const PI;
+PI = 3.14159265359;
+When to use JavaScript const?
+
+As a general rule, always declare a variable with const unless you know that the value will change.
+
+Use const when you declare:
+
+    A new Array
+    A new Object
+    A new Function
+    A new RegExp
+
+Constant Objects and Arrays
+
+The keyword const is a little misleading.
+
+It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+
+    Reassign a constant value
+    Reassign a constant array
+    Reassign a constant object
+
+    But you CAN:
+    Change the elements of constant array
+    Change the properties of constant object
+
+Constant Arrays
+
+You can change the elements of a constant array:
+Example
+// You can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+
+But you can NOT reassign the array:
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+Constant Objects
+
+You can change the properties of a constant object:
+Example
+// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson";
+
+But you can NOT reassign the object:
+Example
+const car = {type:"Fiat", model:"500", color:"white"};
+
+car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+Browser Support
+
+The const keyword is not supported in Internet Explorer 10 or earlier.
+
+The following table defines the first browser versions with full support for the const keyword:
+
+Chrome 49 	IE 11 / Edge 	Firefox 36 	Safari 10 	Opera 36
+Mar, 2016 	Oct, 2013 	Feb, 2015 	Sep, 2016 	Mar, 2016
+Block Scope
+
+Declaring a variable with const is similar to let when it comes to Block Scope.
+
+The x declared in the block, in this example, is not the same as the x declared outside the block:
+Example
+const x = 10;
+// Here x is 10
+
+{
+const x = 2;
+// Here x is 2
+}
+
+// Here x is 10
+
+You can learn more about block scope in the chapter JavaScript Scope.
+Redeclaring
+
+Redeclaring a JavaScript var variable is allowed anywhere in a program:
+Example
+var x = 2;     // Allowed
+var x = 3;     // Allowed
+x = 4;         // Allowed
+
+Redeclaring an existing var or let variable to const, in the same scope, is not allowed:
+Example
+var x = 2;     // Allowed
+const x = 2;   // Not allowed
+
+{
+let x = 2;     // Allowed
+const x = 2;   // Not allowed
+}
+
+{
+const x = 2;   // Allowed
+const x = 2;   // Not allowed
+}
+
+Reassigning an existing const variable, in the same scope, is not allowed:
+Example
+const x = 2;     // Allowed
+x = 2;           // Not allowed
+var x = 2;       // Not allowed
+let x = 2;       // Not allowed
+const x = 2;     // Not allowed
+
+{
+  const x = 2;   // Allowed
+  x = 2;         // Not allowed
+  var x = 2;     // Not allowed
+  let x = 2;     // Not allowed
+  const x = 2;   // Not allowed
+}
+
+Redeclaring a variable with const, in another scope, or in another block, is allowed:
+Example
+const x = 2;       // Allowed
+
+{
+  const x = 3;   // Allowed
+}
+
+{
+  const x = 4;   // Allowed
+}
+Const Hoisting
+
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+Example
+
+This is OK:
+carName = "Volvo";
+var carName;
+
+If you want to learn more about hoisting, study the chapter JavaScript Hoisting.
+
+Variables defined with const are also hoisted to the top, but not initialized.
+
+Meaning: Using a const variable before it is declared will result in a ReferenceError:
+Example
+alert (carName);
+const carName = "Volvo";
+
+
+When to Use JavaScript const?
+
+If you want a general rule: always declare variables with const.
+
+If you think the value of the variable can change, use let.
+
+In this example, price1, price2, and total, are variables:
+Example
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+
+The two variables price1 and price2 are declared with the const keyword.
+
+These are constant values and cannot be changed.
+
+
+The const keyword
+const size = "M";
+const size = "L"; //> Uncaught SyntaxError: Identifier 'size' has already been declared
+However, with const, you also can't reassign the value. See below:
+const size = "M";
+size = "S"; //> Uncaught TypeError: Assignment to constant variable.
+
+
+
+Warning: Using const with arrays and objects
+But const also has some other traits that are worth discussing.
+And when it comes to arrays and objects, using const can be a bit tricky.
+
+Take a look at the following code. It works as you may expect:
+const product = { priceInCents: 2100, name: "Yellow Beanie", size: "M" };
+product = { priceInCents: 2100, name: "Red Beanie", size: "L" };
+//> Uncaught TypeError: Assignment to constant variable.
+In the above case, you aren't able to reassign the value of const, as intended. The following code, on the other hand, does run.
+
+const product = { priceInCents: 2100, name: "Yellow Beanie", size: "M" };
+product.name = "Red Beanie";
+product.size = "L";
+Although you can't reassign the variable completely with const, you can change the values inside of the object. The same goes for arrays. Take a look:
+
+const sizes = [8, 10, 12, 14];
+
+sizes[4] = 16;
+
+Mutate an Array Declared with const
+
+If you are unfamiliar with const, check out this challenge about the const keyword.
+
+The const declaration has many use cases in modern JavaScript.
+
+Some developers prefer to assign all their variables using const by default, unless they know they will need to reassign the value. Only in that case, they use let.
+
+However, it is important to understand that objects (including arrays and functions) assigned to a variable using const are still mutable. Using the const declaration only prevents reassignment of the variable identifier.
+
+const s = [5, 6, 7];
+s = [1, 2, 3];
+s[2] = 45;
+console.log(s);
+
+s = [1, 2, 3] will result in an error. The console.log will display the value [5, 6, 45].
+
+As you can see, you can mutate the object [5, 6, 7] itself and the variable s will still point to the altered array [5, 6, 45]. Like all arrays, the array elements in s are mutable, but because const was used, you cannot use the variable identifier s to point to a different array using the assignment operator.
+
+An array is declared as const s = [5, 7, 2]. Change the array to [2, 5, 7] using various element assignments.
+
+*** js Variables examples
+
+#+begin_src js
+// declare a variable myVar without initial value:
+let myVar; // returns undefined
+// assign myVar with value 11:
+myVar = 11; // returns 11
+
+// declaring and initializing a variable myVar with string foo
+let myVar = "foo"; // returns foo
+
+// declare a constants variables named PI with value 3.14
+const PI = 3.14; // returns 3.14; readonly
+// updating constant variable
+PI = 11 // returns a error
+
+// var keyword is bad practice
+// declare a variable named myVar without initial value:
+var myVar; // returns undefined
+// assign myVar with value 33:
+myVar = 33; // returns 33
+// declaring and initializing a variable myVar with string foo
+var myVar = "foo"; // returns foo
+
+// Assigning the Value of One Variable to Another
+// declare variable named myStr
+let myStr; // returns undefined
+// assign myVar to myStr:
+myStr = myVar; // returns foo
+
+#+end_src
+
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+let x;
+x = 6;
+
+
+In this example, x, y, and z, are variables, declared with the var keyword:
+Example
+var x = 5;
+var y = 6;
+var z = x + y;
+
+In this example, x, y, and z, are variables, declared with the let keyword:
+Example
+let x = 5;
+let y = 6;
+let z = x + y;
+
+In this example, x, y, and z, are undeclared variables:
+Example
+x = 5;
+y = 6;
+z = x + y;
+
+From all the examples above, you can guess:
+
+    x stores the value 5
+    y stores the value 6
+    z stores the value 11
+
+You declare a JavaScript variable with the var or the let keyword:
+var carName;
+or:
+let carName;
+
+To assign a value to the variable, use the equal sign:
+carName = "Volvo";
+
+You can also assign a value to the variable when you declare it:
+let carName = "Volvo";
+
+One Statement, Many Variables
+You can declare many variables in one statement.
+
+Start the statement with let and separate the variables by comma:
+Example
+let person = "John Doe", carName = "Volvo", price = 200;
+
+A declaration can span multiple lines:
+Example
+let person = "John Doe",
+carName = "Volvo",
+price = 200;
+Value = undefined
+
+
+Re-Declaring JavaScript Variables
+If you re-declare a JavaScript variable declared with var, it will not lose its value.
+The variable carName will still have the value "Volvo" after the execution of these statements:
+Example
+var carName = "Volvo";
+var carName;
+Note
+You cannot re-declare a variable declared with let or const.
+
+This will not work:
+let carName = "Volvo";
+let carName;
