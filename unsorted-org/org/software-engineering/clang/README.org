@@ -1,0 +1,7 @@
+#+Title: C Programming Language
+
+* Internal links
+[[file:20220421000204][C Programming Language]]
+
+* External links
+[[https://en.wikipedia.org/wiki/C_(programming_language)][C Programming Language Wikipedia]]

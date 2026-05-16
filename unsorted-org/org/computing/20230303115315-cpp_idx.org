@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7266b338-b1ce-4beb-85c2-6c603dcd7796
+:mtime:    20230303115412
+:ctime:    20230303115315
+:END:
+#+title: C++
+
+[[https://en.wikipedia.org/wiki/C%2B%2B][C++ - Wikipedia]]

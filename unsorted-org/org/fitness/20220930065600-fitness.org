@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       18f0e5a4-c633-4485-aa77-fc24d6037556
+:mtime:    20230206181328 20221013192938
+:ctime:    20220930065600
+:END:
+#+title: Fitness
+#+date: [2022-09-30 Fri 06:56]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]

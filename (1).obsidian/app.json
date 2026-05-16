@@ -1,0 +1,13 @@
+{
+  "showLineNumber": true,
+  "vimMode": true,
+  "tabSize": 2,
+  "alwaysUpdateLinks": true,
+  "useTab": false,
+  "promptDelete": false,
+  "livePreview": false,
+  "showUnsupportedFiles": true,
+  "defaultViewMode": "preview",
+  "openBehavior": "daily",
+  "showInlineTitle": true
+}

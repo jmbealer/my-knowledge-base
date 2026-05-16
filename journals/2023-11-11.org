@@ -1,0 +1,5 @@
+* testing out pdf
+** [[../assets/vi-editor-pocket-reference-robbins-arnold-1-ed-pdf_1699749602331_0.pdf][vi-editor-pocket-reference-robbins-arnold-1-ed-pdf.pdf]]
+*** ((65501f7e-3c14-4f0f-80ef-79cc12462da6))
+***
+*
