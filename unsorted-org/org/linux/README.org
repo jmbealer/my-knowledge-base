@@ -1,0 +1,26 @@
+#+Title: Linux Readme
+
+[[FILE:20220503191330-linux.org][linux]]
+
+need to read/look at
+
+technical
+  rhel
+  arch
+  gentoo
+  void
+
+average
+  debian
+  opensuse
+  fedora
+
+learning
+  [[https://www.arcolinux.info/learning-path/][arcolinux]]
+
+  freebsd handbook
+
+[[https://docs.linuxserver.io/][linuxserver]]
+
+** Links
+[[https://en.wikipedia.org/wiki/Linux][Linux Wikipedia]]

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       964b711a-ab5c-4d65-971b-ff19b9ded451
+:mtime:    20230206181456 20221013193124
+:ctime:    20220516150250
+:END:
+#+title: organizationsIdx
+#+date: [2022-05-16 Mon 15:02]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+
+[[id:b0e30896-a000-48ec-a220-1a022eb43c2b][yt-playlists]]
+[[id:bf0a254b-0ae7-4366-9f63-9433db6ce761][bookmarks]]
