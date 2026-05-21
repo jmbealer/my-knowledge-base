@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       43e93100-42e8-432e-99bb-ecdd6f6b7097
+:mtime:    20230206181353 20220708113445
+:ctime:    20220708112542
+:END:
+#+title: devCollab
+#+date: [2022-07-08 Fri 11:25]
+
+**** pair programming
+
+Pair programming The practice of working on a single problem with a peer, in one shared workspace
+
+What is pair programming?
+Pair programming, also called pairing, is the practice of working on a single problem with a peer, in one shared workspace.
+Pair programming typically looks like two developers sitting down at one computer.
+One developer will have their hands on the keyboard while the other will be sitting nearby, as the two work together to solve the same problem.
+Some companies use pair programming for 100% of their work, others never use it, and still others use it for specific occasions like onboarding new developers.
+
+Why use pair programming?
+Proponents of pair programming say that there are many benefits.
+Here are some of the most commonly cited benefits:
+Increased code quality because the developers must communicate out loud as they program
+Better transfer of skills from one developer to another
+Improved resiliency to interruption or distraction, because disrupting the process means disrupting two people instead of one
+
+Despite these benefits, pair programming isn't perfect.
+This practice is often difficult, and it can turn into a negative experience for some people.
+Later on in this lesson, you'll learn about ways to create a positive pairing environment.
+
+Driving and navigating
+In pair programming, there are two distinct roles: the driver and the navigator. Both have access to a keyboard, but the driver does most of the typing. Pairs should discuss a problem and agree on a rough solution. Then the driver is responsible for implementing it.
+
+The navigator is responsible for keeping the larger picture in mind and guiding the driver in the right direction. The navigator also watches for syntax errors, thinks about solutions to the problems that the pair is solving, and researches questions in the background. If the navigator wants to type something, the best practice is to ask permission before doing so. Generally, the navigator should not dictate code word by word; instead, they should provide general directions that the driver then implements.
+
+Pairing sessions
+For most of the pairing sessions that you'll participate in during this program, you'll pair either with other students or with a mentor. Although these two scenarios will be different, there are common processes to follow throughout.
+
+Starting a pairing session
+Begin by determining who will be the driver and who will be the navigator. Clearly define a point when you will switch roles. Then discuss the tasks that you need to complete, and pick a place to start.
+
+From the very beginning, it's easy to fall into a few traps. Watch out for the following issues:
+
+The more experienced developer shouldn't take over, no matter if they are driving or navigating. The goal is to work together and share knowledge.
+
+When you're the navigator, you aren't taking a break. The role of the navigator is to catch small issues, help brainstorm solutions, and look up syntax. Regardless of your role, be an active participant.
+
+If either one of you is uncertain about where to begin or what is going on, then you should discuss the problem further. No one should be left behind.
+
+It's important to stay engaged, no matter who you're working with. Ask questions, offer to be the driver, and do your best to stay focused.
+
+During a pairing session
+Aim to switch who is driving and who is navigating about every 30 minutes, or at another reasonable stopping place. Switching roles gives you both a chance to take a step back to consider what you've done and what you'll do next. And it's a way to make sure that both members of a pair understand what you're building.
+
+If you aren't working on the same computer, the driver should push their work to GitHub when you switch, and the navigator should pull down that work. The new driver should start by reviewing what was done and discussing the plan for the next session.
+
+It's also important to be direct with your partner throughout your pairing session. Because you set a baseline at the beginning of the session for what good communication means to you, you can bring it up with your partner if things have strayed from that baseline. Make sure to communicate your thoughts if you feel that the pairing isn't working effectively, or if you're struggling to work together effectively for any significant reason.
+
+Finishing a pairing session
+Remember that one of the most valuable aspects of this program is the steady flow of feedback that you get. Take five minutes at the end of the session to debrief with your partner.
+
+You should both mention one thing that the other person did well during the session and one thing that they can improve on. Make sure to thank each other for the feedback and for working together for the session. And as you get this feedback from your partner, it's important to use this time to reflect on the feedback received and address any changes that you could implement to make future sessions more efficient.
+
+Being a great partner
+Be patient with your partner if one of you is having an easier time understanding the session's work. Don't feel too embarrassed if your partner takes on the role of teacher for the session. And if you have experience with a topic, don't work ahead if your partner doesn't understand what you're doing. At no point should either of you feel as though you aren't contributing to the project or learning something new.
+
+When you're giving feedback, choose your words with care and make sure to say what you actually mean. And when you're receiving feedback, assume the best of your partner. They almost certainly intend to help you be productive and improve your skills, though every suggestion might not come out quite right. If you feel that your partner isn't being sensitive to your needs—for example, by driving for an entire session—speak up! Your partner is learning this new skill, too. Make sure that you bring up your concerns with specific feedback.
+
+As you work, explain what you're implementing and specify why you are making each decision.
+
+Pairing remotely
+Working remotely makes it harder to understand someone, particularly if there's any subtlety to something that they're expressing. Aim to overcommunicate and be incredibly explicit about what you're doing and how you're feeling. When you're sitting next to someone, you might recognize when they're starting to get tired—but that's much harder to intuit remotely. Remember to take some short breaks if you or your partner are feeling burnt out.
+
+Make sure that you have headphones that you're comfortable wearing for long periods. Headphones will reduce audio feedback and make it easier to hear each other.

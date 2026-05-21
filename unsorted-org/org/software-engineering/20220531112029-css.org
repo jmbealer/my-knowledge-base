@@ -1,0 +1,831 @@
+:PROPERTIES:
+:ID:       bbad4e71-066d-4231-953a-3b5ed0891141
+:mtime:    20230206181522 20220814203932
+:ctime:    20220531112029
+:END:
+#+title: CSS
+#+date: [2022-05-31 Tue 11:20]
+
+** CSS Anki
+:PROPERTIES:
+:ANKI_DECK: 00-software engineering::CSS
+:ANKI_TAGS: CSS
+:END:
+
+*** Single line Comment
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660435114040
+:END:
+**** Text
+Create a single line comment
+
+#+begin_src css
+{{c1::/* single line comment */}}
+#+end_src
+
+*** Multiple line Comment
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660435114114
+:END:
+**** Text
+Create a multiple line comment
+
+#+begin_src css
+{{c1::/*}}
+{{c1::multiple line comment}}
+{{c1::*/}}
+#+end_src
+
+*** CSS Selector Syntax
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660435114189
+:END:
+**** Text
+What is the CSS Selector Syntax
+
+#+begin_src css
+{{c1::selector { property: value; } }}
+#+end_src
+
+*** CSS Universal selector
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802089
+:END:
+**** Text
+Target the Universal selector
+
+#+begin_src css
+/* Represents any element */
+{{c1::* {...} }}
+#+end_src
+
+*** CSS Type selector
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802164
+:END:
+**** Text
+Target the Type selector
+
+#+begin_src css
+/* An element of type E; E is the elementName */
+{{c1::E {...} }}
+#+end_src
+
+*** CSS Class selector
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802239
+:END:
+**** Text
+Target the Class selector
+
+#+begin_src css
+/* All elements with the className */
+{{c1::.className {...} }}
+/* All elements with the className and universal selector*/
+{{c1::*.className {...} }}
+#+end_src
+
+*** CSS Class selector with type
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660439374937
+:END:
+**** Text
+Target the Class selector with type
+
+#+begin_src css
+/* Represent element with the className */
+/* {{c1::E.className {...} }} */
+/* Represent element with the className1 and className2 */
+/* {{c1::E.className1.className2 {...} }} */
+#+end_src
+
+*** CSS ID selector
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802389
+:END:
+**** Text
+Target the ID selector
+
+#+begin_src css
+/* All elements with the idName */
+{{c1::#idName {...} }}
+/* Represent element with the idName  */
+{{c1::E.#idName {...} }}
+#+end_src
+
+*** CSS Descendant combinator
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802464
+:END:
+**** Text
+Use the Descendant combinator
+
+#+begin_src css
+/* target element2 that descendant from element1 */
+{{c1::E1 E2 {...} }}
+/* target element2 that is grandchild or later from element1 */
+{{c1::E1 * E2 {...} }}
+#+end_src
+
+*** CSS Grouping Selectors
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Cloze (Type Answer)
+:ANKI_NOTE_ID: 1660437802539
+:END:
+**** Text
+Group the selectors
+
+#+begin_src css
+/* targeting element1, element2, element3, and so on */
+{{c1::E1, E2, E3 {...} }}
+/* targeting class1, class2, class3, and so on */
+{{c1::.className1, .className2, .className3 {...} }}
+#+end_src
+
+** css unsorted
+
+css :: cascading style sheets
+
+use to style the html content.
+
+
+Cascading Style Sheets
+A programming language designed to supplement HTML by adding formatting, design, and style details to web pages
+Style sheet language
+A class of computer languages that express and explain how a markup language or other structured document content should get presented
+
+css anatomy
+Ruleset Terms:
+
+    Selector—The beginning of the ruleset used to target the element that will be styled.
+    Declaration Block—The code in-between (and including) the curly braces ({ }) that contains the CSS declaration(s).
+    Declaration—The group name for a property and value pair that applies a style to the selected element.
+    Property—The first part of the declaration that signifies what visual characteristic of the element is to be modified.
+    Value—The second part of the declaration that signifies the value of the property.
+
+Inline Style Terms:
+
+    Opening Tag—The start of an HTML element. This is the element that will be styled.
+    Attribute—The style attribute is used to add CSS inline styles to an HTML element.
+    Declaration—The group name for a property and value pair that applies a style to the selected element.
+    Property—The first part of the declaration that signifies what visual characteristic of the element is to be modified.
+    Value—The second part of the declaration that signifies the value of the property.
+
+
+
+    The basic anatomy of CSS syntax written for both inline styles and stylesheets.
+    Some commonly used CSS terms, such as ruleset, selector, and declaration.
+    CSS inline styles can be written inside the opening HTML tag using the style attribute.
+    Inline styles can be used to style HTML, but it is not the best practice.
+    An internal stylesheet is written using the <style> element inside the <head> element of an HTML file.
+    Internal stylesheets can be used to style HTML but are also not best practice.
+    An external stylesheet separates CSS code from HTML, by using the “.css”.file extension.
+    External stylesheets are the best approach when it comes to using HTML and CSS.
+    External stylesheets are linked to HTML using the <link> element.
+
+Cascading Style Sheets or CSS is a language web developers use to style the HTML
+content on a web page.
+
+inline style and internal stylesheet are not best practices
+
+etup and Syntax
+Review
+
+Great work so far! By understanding how to incorporate CSS code into your HTML file, as well as learning some of the key terms, you’re on your way to creating spectacular websites with HTML and CSS.
+
+Let’s review what you learned so far:
+
+    The basic anatomy of CSS syntax written for both inline styles and stylesheets.
+    Some commonly used CSS terms, such as ruleset, selector, and declaration.
+    CSS inline styles can be written inside the opening HTML tag using the style attribute.
+    Inline styles can be used to style HTML, but it is not the best practice.
+    An internal stylesheet is written using the <style> element inside the <head> element of an HTML file.
+    Internal stylesheets can be used to style HTML but are also not best practice.
+    An external stylesheet separates CSS code from HTML, by using the “.css”.file extension.
+    External stylesheets are the best approach when it comes to using HTML and CSS.
+    External stylesheets are linked to HTML using the <link> element.
+
+
+Selectors
+Review
+
+Throughout this lesson, you learned how to select HTML elements with CSS and apply styles to them. Let’s review what you learned:
+
+    CSS can select HTML elements by type, class, ID, and attribute.
+    All elements can be selected using the universal selector.
+    An element can have different states using the pseudo-class selector.
+    Multiple CSS classes can be applied to one HTML element.
+    Classes can be reusable, while IDs can only be used once.
+    IDs are more specific than classes, and classes are more specific than type. That means IDs will override any styles from a class, and classes will override any styles from a type selector.
+    Multiple selectors can be chained together to select an element. This raises the specificity but can be necessary.
+    Nested elements can be selected by separating selectors with a space.
+    Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
+
+Great work this lesson. With this knowledge, you’ll be able to use CSS to change the look and feel of websites to make them look great!
+
+Review Visual Rules
+
+Incredible work! You used CSS to alter text and images on a website. Throughout this lesson, you learned concepts including:
+
+    The font-family property defines the typeface of an element.
+    font-size controls the size of text displayed.
+    font-weight defines how thin or thick text is displayed.
+    The text-align property places text in the left, right, or center of its parent container.
+    Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.
+    CSS can make an element transparent with the opacity property.
+    CSS can also set the background of an element to an image with the background-image property.
+    The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
+
+Notably, CSS can add many elements to HTML, such as those listed below.
+
+    Text: CSS assigns specific fonts, text sizes, alignments, and colors to text.
+
+    Media: CSS assigns the image sizes for images on a web page, and it can add rounded corners and fancy borders to those images.
+
+    Links: CSS assigns colors to links.
+
+    Containers: CSS assigns the height and width of containers on a web page, as well as the colors or images that are used in the background to provide structure and style.
+
+CSS rule
+    Also called a ruleset, the entire block of CSS code assigned to style an HTML element
+CSS selector
+    Code that identifies what HTML element should be affected by the declaration block that follows the selector
+CSS property
+    The general category or type of stylistic change that you'd like to make
+CSS value
+    The specific change that you want to make, such as pixel size or color
+CSS declaration
+    The property and value applied to the selector
+Hex color code
+    Also called hex value, an alphanumeric code used to specify a color value
+
+CSS rulesets
+
+Like HTML, CSS has a particular syntax. To properly follow this syntax, you'll need to learn how it works.
+
+CSS is a collection of rulesets, which are commonly referred to as rules. These rules define what changes are applied to the HTML file. This image shows a single rule, which has several components: a selector, a property, a declaration, and a value.
+Labeled CSS rule with selector as well as a declaration made up of a property and a value.
+
+Here's a quick rundown based on the image above. This will give you a high-level overview before you dive deeper.
+
+    Rule or ruleset: This is the entire block of CSS code assigned to style an HTML element.
+
+    Selector: This is the name of the HTML element that will be styled.
+
+    Property: This is a set or family of attributes, or options, that you can change.
+
+    Value: This is the specific change you want to make, such as pixel size or color.
+
+    Declaration: This consists of both the property and the value assigned to the selector.
+
+Selectors and declarations
+
+A selector defines what element in the code should be affected by the declaration block that follows the selector. The selector refers to a specific HTML element, like a p element in the image above. In this case, every p element, or HTML paragraph, on the page will be styled by the information provided in the declaration block.
+
+The declaration block begins and ends with curly brackets {}. Each line inside of the {} represents a separate declaration, each of which applies a particular style or format to the referenced element. For example, the CSS code below has two declarations. What does each one do?
+
+As you can see, the declarations in the example above change the color and size of the text. Like in HTML code, spaces and hard returns in CSS code have no effect on how text is presented on a web page. But spaces and hard returns can provide visual organization in the code, which makes the code easier to read and understand.
+Properties and values
+
+Each declaration is made up of two components: a property and a value. At its most basic level, a CSS property is the general category or type of stylistic change you'd like to make. The value then specifies exactly what style you'd like to apply.
+
+There are hundreds of CSS properties and values. The CSS Properties Reference from Mozilla is a valuable resource that shares only the most common properties. And as you'll see, it's still a long list! In fact, you will regularly discover new CSS properties and values over the course of your career.
+
+In a declaration, the property is named first. It's followed by a colon :, then the value, and then a semicolon ; at the end. Structurally, declarations look like this: property: value;. One of the best ways to learn about properties and values is to see examples of how they work. Check out the one below. What do these declarations do?
+
+h1 {
+
+  color: white;
+
+  font-family: 'Times New Roman';
+
+  font-size: 16px;
+
+}
+
+As you might've guessed, the color property refers to text color, and the value white sets the color of the text to white. (It's worth noting that you'll often see hex color codes in the value position; you'll learn about those later on in this lesson.) The font-family applies a specific font to the text. Arial and Times New Roman are both common fonts found on nearly every computer. Font names with more than one word are wrapped in quotes, like 'this', to help the code read the font name properly.
+
+The font-size property refers to how big or small the text will be on the page. The px value stands for pixels, and it sets the exact text size. Pixels are a common measurement for text on the web. But as you learn more about sizing, you'll discover other measurements that are particularly useful in sizing HTML elements.
+
+    color
+
+        red
+
+        blue
+
+        green
+
+        pink
+
+        yellow
+
+        orange
+
+        black
+
+    font-family
+
+        Arial
+
+        'Arial Black'
+
+        'Comic Sans MS'
+
+        Impact
+
+        'Trebuchet MS'
+
+        'Times New Roman'
+
+        Georgia
+
+        Webdings
+
+        Wingdings
+
+    font-size
+
+        Practice using sizes that are between 8px and 108px.
+
+
+    Serif: Serif fonts are often used for headings. The letters in these fonts have little tapered ends or tails, which add a stylistic accent to text and make letters and characters more attractive at larger sizes.
+
+    Sans-serif: Sans-serif fonts are often used for paragraph text on websites. They have minimal flaring or tapering at the ends of letters, making smaller text easier to read.
+
+    Monospace: These fonts are often used for code samples, and all of the letters have the same width.
+
+    Cursive: This type of font has a playful, handwritten style, which can feel more emphatic than italics.
+
+    Fantasy: This type of font has a whimsical, decorative style. But use this as a fallback with care; it's more limited than other font groups.
+
+
+    Serif: Serif fonts are often used for headings. The letters in these fonts have little tapered ends or tails, which add a stylistic accent to text and make letters and characters more attractive at larger sizes.
+
+    Sans-serif: Sans-serif fonts are often used for paragraph text on websites. They have minimal flaring or tapering at the ends of letters, making smaller text easier to read.
+
+    Monospace: These fonts are often used for code samples, and all of the letters have the same width.
+
+    Cursive: This type of font has a playful, handwritten style, which can feel more emphatic than italics.
+
+    Fantasy: This type of font has a whimsical, decorative style. But use this as a fallback with care; it's more limited than other font groups.
+
+As you explore CSS further, you'll likely want to play around with other text-related properties. Here are some examples:
+
+    font-style: This is how you can change the stylistic formatting of the font, such as adding italics (italic or oblique).
+
+    font-weight: This is how you set the thinness or thickness of a font. There are usually values from 100 to 900 available.
+
+    letter-spacing: This is how you determine the proximity of individual letters by increasing or decreasing the space between them, measured in pixels. For example, a value of 1px is fairly normal, or a value of -3px will pull the letters closer together.
+
+    line-height: This is how you increase or decrease the space between lines of text. For example, you could apply 20px of space between lines of text.
+
+    text-align: This property allows you to realign text to be center, left, right, or justified.
+
+    text-decoration: This allows you to add additional formatting, like underline, overline (text with a horizontal line above it, often used in math notation), or line-through (also known as strikethrough).
+
+    text-transform: This allows you to change the case of the letters, such as uppercase and lowercase.
+
+style.css: All your CSS code will be written here.
+
+** CSS
+
+Notably, CSS can add many elements to HTML, such as those listed below.
+
+Text: CSS assigns specific fonts, text sizes, alignments, and colors to text.
+Media: CSS assigns the image sizes for images on a web page, and it can add rounded corners and fancy borders to those images.
+Links: CSS assigns colors to links.
+Containers: CSS assigns the height and width of containers on a web page, as well as the colors or images that are used in the background to provide structure and style.
+
+*** css basics
+
+CSS rule
+Also called a ruleset, the entire block of CSS code assigned to style an HTML element
+CSS selector
+Code that identifies what HTML element should be affected by the declaration block that follows the selector
+CSS property
+The general category or type of stylistic change that you'd like to make
+CSS value
+The specific change that you want to make, such as pixel size or color
+CSS declaration
+The property and value applied to the selector
+Hex color code
+Also called hex value, an alphanumeric code used to specify a color value
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+css rulesets
+Rule or ruleset: This is the entire block of CSS code assigned to style an HTML element.
+Selector: This is the name of the HTML element that will be styled.
+Property: This is a set or family of attributes, or options, that you can change.
+Value: This is the specific change you want to make, such as pixel size or color.
+Declaration: This consists of both the property and the value assigned to the selector.
+
+p { font-size: 16px; }
+css rule = selector { property: value; }
+  {...} = declaration
+  selector = p
+  property = font-size:
+  value = value;
+
+Selectors and declarations
+A selector defines what element in the code should be affected by the declaration block that follows the selector.
+The selector refers to a specific HTML element, like a p element in the image above.
+In this case, every p element, or HTML paragraph, on the page will be styled by the information provided in the declaration block.
+The declaration block begins and ends with curly brackets {}.
+Each line inside of the {} represents a separate declaration, each of which applies a particular style or format to the referenced element.
+
+Properties and values
+Each declaration is made up of two components: a property and a value. At its most basic level, a CSS property is the general category or type of stylistic change you'd like to make. The value then specifies exactly what style you'd like to apply.
+There are hundreds of CSS properties and values. The CSS Properties Reference from Mozilla is a valuable resource that shares only the most common properties. And as you'll see, it's still a long list! In fact, you will regularly discover new CSS properties and values over the course of your career.
+In a declaration, the property is named first. It's followed by a colon :, then the value, and then a semicolon ; at the end. Structurally, declarations look like this: property: value;. One of the best ways to learn about properties and values is to see examples of how they work. Check out the one below. What do these declarations do?
+
+colors
+black #000000
+white #ffffff
+https://htmlcolorcodes.com/color-names/
+https://coolors.co/
+
+fonts fallbacks
+This coding concept is referred to as font stacks, and it helps prevent issues if a computer or browser can't assign the requested font to the specified text. The font stack tells the code that if the first font—in this case, Arial—doesn't load properly, it should try the next font in the list. The code will try each font until it finds one that works properly. These are called font fallbacks.
+
+Generally, the last font choice should be a general category of typeface that every device can work with. It likely won't be another specific font, but a broader type of font style, like serif or sans-serif. All of the following font categories will reliably show up on every machine, and can therefore be used at the end of your font stack.
+
+Serif: Serif fonts are often used for headings. The letters in these fonts have little tapered ends or tails, which add a stylistic accent to text and make letters and characters more attractive at larger sizes.
+Sans-serif: Sans-serif fonts are often used for paragraph text on websites. They have minimal flaring or tapering at the ends of letters, making smaller text easier to read.
+Monospace: These fonts are often used for code samples, and all of the letters have the same width.
+Cursive: This type of font has a playful, handwritten style, which can feel more emphatic than italics.
+Fantasy: This type of font has a whimsical, decorative style. But use this as a fallback with care; it's more limited than other font groups.
+
+More styles for text
+As you explore CSS further, you'll likely want to play around with other text-related properties. Here are some examples:
+font-style: This is how you can change the stylistic formatting of the font, such as adding italics (italic or oblique).
+font-weight: This is how you set the thinness or thickness of a font. There are usually values from 100 to 900 available.
+letter-spacing: This is how you determine the proximity of individual letters by increasing or decreasing the space between them, measured in pixels. For example, a value of 1px is fairly normal, or a value of -3px will pull the letters closer together.
+line-height: This is how you increase or decrease the space between lines of text. For example, you could apply 20px of space between lines of text.
+text-align: This property allows you to realign text to be center, left, right, or justified.
+text-decoration: This allows you to add additional formatting, like underline, overline (text with a horizontal line above it, often used in math notation), or line-through (also known as strikethrough).
+text-transform: This allows you to change the case of the letters, such as uppercase and lowercase.
+
+** find html and css
+
+
+Steps to finding the CSS
+The CSS code of a web page is often organized in another web file, which you'll need to look for. Follow the steps below.
+Right-click the background or text of the web page, which will reveal a drop-down menu.
+Click the View Page Source option in the drop-down.
+Once you're in the page source, hit Control+F (or Command+F on a Mac) to open up the Find bar. Then, search for .css.
+Your search will likely reveal more than one CSS file. How many CSS files are linked to this HTML page?
+If you can, click one of the .css links to find the CSS.
+
+* unsorted
+Pseudo-class
+A CSS selector that selects HTML elements in a given state
+
+CSS comments
+Comments in CSS are written with asterisks * and forward slashes /. They're structured like this: /* CSS comment */. Take a look at the example below.
+
+/* Hello, commenting! */
+
+/*
+  I can also be on multiple lines!
+*/
+Any CSS code that sits between the opening /* symbol and the closing */ symbol is completely ignored by the web browser. Like in HTML and JS, CSS comments are grayed out in code editors.
+
+
+styling html list
+ul { }: This targets all unordered lists.
+ol { }: This targets all ordered lists.
+li { }: This targets all list items of both unordered and ordered lists.
+
+
+Changing the position
+You also have the ability to shift the positioning of the list using the list-style-position property. Specifically, this allows you to move bullets or numbers inside or outside (which is the default) of the list-item container (you'll learn more about containers in subsequent lessons). This technique can be particularly useful if you're assigning a background color to a list and moving the bullets within the container.
+
+Styling horizontal rules
+The horizontal rule in the REPL above was fairly simple, and generally, horizontal rules are pretty simple by default. But with a little CSS, they can be styled to display in better, more compelling ways. Here are some basic CSS styles for horizontal rules:
+height: This makes the border a certain height, in pixels (px).
+background-color: This makes the ruler a certain color inside the border.
+border: This requires three values to change the style of the border: the size in pixels, the color, and the stroke.
+margin-top: This adds empty space above the line.
+margin-bottom: This adds empty space below the line.
+
+
+styling links
+Pseudo-classes
+Okay, you're ready for the next piece of the puzzle. The interactive links of HTML are referred to as a pseudo-class. Pseudo-classes are useful in changing the state of an element when the user engages with it, like in these situations:
+
+When an element, like a text link, has the cursor roll over (or hover over) it.
+When an element, like a text link, has the cursor click it.
+
+For anchor elements, which you've already learned a bit about, there are four pseudo-class selectors:
+a:link: This is the normal state of a text link.
+a:visited: This is the state of a text link that has already been visited by the current web browser.
+a:hover: This creates the rollover state for the element, which is triggered when the user's cursor rolls over, or hovers over, a link.
+a:active: This affects the state of the link when the user is actively clicking on it.
+
+Due to the cascading aspect of CSS, the order of these pseudo-classes is very important. They must be written on CSS page in the specific sequence outlined below:
+a:link
+a:visited
+a:hover
+a:active
+
+A clever way to help you remember the order of these pseudo-class selectors is this mnemonic device: L O V E HA TE. The order of the letters can help remind you of this order: L for link, V for visited, H for hover, and A for active.
+
+y setting the border-radius to 50% on all corners, you'll end up displaying a perfectly circular image, without the need for graphic design software
+
+
+** Deeper with CSS
+
+External style sheet
+A style sheet that contains CSS rules that are applied to every HTML page that links to it
+Internal style sheet
+A style sheet that applies CSS rules within individual web pages, but those rules can only be referenced by that individual HTML page
+Inline styles
+CSS rules written alongside HTML code, thus applying the CSS rules to specific HTML elements
+Cascade
+A concept that helps determine how rules will be applied based on when they appear in the code, by giving more importance to the rules that are closer in proximity to the actual content that is being styled
+Pseudo-element
+A functionality that lets you style a specific part of the selected HTML element, such as the first letter or line, by adding a keyword to a CSS selector
+
+The cascade in CSS
+You know that CSS stands for Cascading Style Sheets. But you haven't yet explored what that really means. To better understand the possibilities presented by CSS, you first need to know where you can put it. CSS code can be placed in three locations:
+
+An external style sheet
+An internal style sheet
+Inline styles, which sit alongside HTML code
+
+External style sheets
+To use CSS to its full power, you will typically apply styles to your HTML code by linking to one or more external style sheets in your web page. An external style sheet contains style rules that are applied to every HTML page that links to it.
+
+These links are created automatically for you in Replit, but you'll need to know how to do this on your own once you start using a text editor. Take a look at the code sample below to see how to link an external style sheet.
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+It's important to note that for most of your web projects, you will use an external style sheet that contains all of the CSS rules that apply to that project. In other words, all the CSS code that you want to apply will be placed inside the single style.css file.
+
+Internal style sheets
+The second method of applying CSS styles is through an internal style sheet. This approach allows you to write CSS rules within individual web pages, but those rules can only be referenced by that individual HTML page. This can make it harder to update and apply your CSS styles to your web pages.
+
+The code below shows how internal CSS is structured.
+
+<head>
+  <style>
+    /* Internal CSS Rules go here. */
+  </style></head>
+Inline styles
+The third method, inline styles, allows you to write CSS rules on specific HTML elements. You've seen this approach a bit in previous lessons, but it's actually quite limiting in real-world programming work. Because the CSS code is written alongside the HTML element where it applies, the rule works for only that single HTML element.
+
+Check out the structure of this technique below.
+
+<body>
+  <p style="color: red; font-size: 24px;">
+    Example of an inline style.
+  </p></body>
+
+How does CSS cascade?
+Now, take a moment to focus on the keyword in CSS: cascade. What does this really mean? The concept of cascading helps determine how rules will be applied based on when they appear in the code. It helps address the issue that can occur when the same property, but with a different value, is added to a project. In this case, which style will actually be applied? That's determined by the cascade.
+
+The cascade works by giving more importance to the rules that are closer in proximity to the actual content that is being styled. In other words, if a style rule is written quite close to the HTML code where it applies, it is considered more important than a rule that is written farther away from that HTML code.
+
+Consider these examples: A CSS rule at the bottom of an external style sheet has more importance than one at the top of that same style sheet. A rule in an internal style sheet has more importance than any rule in an external style sheet. And an inline style has more importance than a rule in an internal style sheet.
+
+Tip
+Are you beginning to see the hierarchy? Here it is laid out: External > Internal > Inline.
+
+An inline style rule is the most specific and closest to the code, and will therefore override a rule from an internal style sheet. And an internal style sheet rule is more specific and closer than an external rule, so it will override a rule from an external style sheet.
+
+For obvious reasons, the styles on smaller websites are far easier to maintain. But in large, complex websites—especially those with many contributors—you often end up with multiple style rules coming from multiple places, all targeting a specific element. If there are conflicts for a given property, the browser will choose the rule with higher specificity, following the cascade above.
+
+At some point in the future, you'll find yourself debugging a style setting, certain that a rule you wrote should be causing the style of an element to change. But if you find that the change isn't happening (or another change is happening instead), it's often a sign that a higher-priority rule is overriding the one you're working with at the moment.
+
+
+The !important option
+Take a moment to revisit the word important from the definition of cascade. Even with the hierarchy outlined above, there's a way to circumvent it if absolutely necessary. CSS allows you to supply the keyword !important in order to make a rule that overrides others.
+
+By inserting !important, you're telling the code that this rule, which might otherwise be low priority in the cascade, should override other rules. Here's an example:
+
+p {
+  color: red !important;
+}
+A quick disclaimer: You should know about !important and how to use it, but try to avoid using it in your CSS. There are, of course, rare occasions in which it's the right move. But typically, if you have to use !important, it's a sign that there are problems with the application of your style rules. For example, you may just need to use a more specific selector.
+
+CSS classes
+But what if you want to style certain paragraphs and headings in different ways? In this case, you'll use a CSS class. Classes allow you to apply CSS properties to any HTML element and as many times as needed throughout a web page. Classes are very useful because they offer a convenient way to diversify your styles.
+
+Class syntax
+Reviewing the code sample above, you probably noticed a few things: In the CSS in the style.css file, a class is written much like other CSS rules are written, but with a key difference: the class is identified by a period .. That period is very important; every CSS class requires that period. Here it is in action: .align-right.
+
+When you worked with HTML elements, such as <p>, <h1>, or <ul>, you had to assign CSS to style a specific HTML element name. But here, the class names can be anything you want them to be.
+
+It helps to give each class a name that is descriptive and informative, such as .large-text. You don't want a class name to be so specific that it wouldn't get reused, such as .font-size-72-pixels. Once you have your descriptive class name, you can add an attribute to the element.
+
+<p class="large-text">This text is large!</p>
+Tip
+Note that there is no period . written in the index.html file. The . shows up only in the CSS, not in the HTML.
+
+Multiple classes
+You can add as many CSS classes to an HTML element as you'd like. This allows you to build classes that have multiple utilities and are not overly specific. For example, take a look at the following two classes:
+
+.warning {
+  color: red;
+}
+
+.large {
+  font-size: 35px;
+}
+In this case, you could apply each class individually to give a particular element one style, such as just red text or just large text. But you can also apply both classes together to give an element both styles, creating text that is red and large. The resulting HTML code would look like this:
+
+<p class="warning large">Internal server error.</p>
+
+Specific classes
+When assigning CSS rules to HTML, you can assign classes to specific HTML elements using a combination selector. With the combination selector, a class will only be assigned if it follows the specific rules. This can help you avoid mistakes because the classes will not be assigned if they don't follow the specific rules.
+
+Take a look at the example below. What do you think this is doing?
+
+p.center {
+  text-align: center;
+}
+In this example, the .center class applies only to paragraphs. In fact, because of the p. in p.center, this class will not center any text other than paragraphs, even if this class is assigned to other HTML elements.
+
+Use the following Replit to explore this further. What happens when you change the p to h1?
+
+Grouping CSS selectors
+When multiple CSS classes share the same properties, they can be grouped together. To group them together, you simply need to separate them with a comma ,. This technique can simplify your code quite a bit, as you can see below.
+
+The following code does not have grouped classes.
+
+h1 {
+  color: green;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: green;
+  font-family: Arial, sans-serif;
+}
+
+.green-text {
+  color: green;
+  font-family: Arial, sans-serif;
+}
+But the code below does! See how much cleaner that is?
+
+h1, h2, .green-text {
+  color: green;
+  font-family: Arial, sans-serif;
+}
+
+Nesting CSS selectors
+Now, you're ready for another technique: nesting CSS. Nesting CSS selectors is extremely useful when you want different sections of your website to style common HTML elements in different ways. Rather than assigning classes that would then need to be assigned to specific HTML elements, CSS can be nested to target certain HTML elements within other HTML elements.
+
+As you may have noticed by this point, one of the keys to writing code is writing the least amount of code possible. Using nested CSS selectors, you have a lot of control over how you style your page without having to add unique classes.
+
+Take a look at the example below. What do you notice?
+
+/* All paragraphs within <main> are black. */
+main p {
+  color: black;
+}
+
+/* All paragraphs within <footer> are white. */
+footer p {
+  color: white;
+}
+The styles assigned in this code sample will be applied to any paragraphs inside of the main container or footer container, regardless of whether they are inside additional containers.
+
+If you wanted to get more specific, you could use a descendant selector to target only sectors that are immediately within a parent element, as seen below. (This will b ceovered in more depth later on.)
+
+main > p {
+  color: white;
+}
+<main>
+  <p>
+    This text should be white because it is directly within the main container.
+  </p>
+  <div class="group">
+    <p>
+      This text will not be targeted because it isn't directly within the main
+      container.
+    </p>
+  </div>
+</main>
+
+Pseudo-elements: ::before and ::after
+You're ready for another concept: pseudo-elements. A pseudo-element lets you style a specific part of the selected HTML element, such as the first letter or line. It involves adding a keyword to a CSS selector, and takes the following structure: selector::pseudo-element. Here, you'll learn about two specific pseudo-elements: ::before and ::after.
+
+The ::before and ::after pseudo-elements allow you to add content to an HTML element either just before or just after the content of the element. This technique is great for adding certain types of content, such as creating smart quotes around blockquotes. And more broadly, writing ::before and ::after style rules can be a good way to handle repeated visual content that surrounds an element.
+
+Check out the examples below.
+
+div::before {
+  content: "before";
+}
+
+div::after {
+  content: "after";
+}
+<div>
+  before
+  <!-- Rest of stuff inside the div -->
+  after
+</div>
+Keep in mind this added content is still inside the specified element. The names ::before and ::after sound a bit like the pseudo-elements would add content outside of the element, either before or after. But actually, they add content before or after the content of the element. The new content is still inside the element itself.
+
+The box model
+You're getting good! Next up, there's the box model. The box model is one of the most important methods of controlling the space and borders around an HTML element.
+
+Every HTML element is considered to be a box. Additionally, each element has these four parts:
+
+Content: This is the area in each element where the text, links, and images appear.
+Padding: This is the space between the border and the content. It takes on the background color assigned to the element.
+Border: This is like a frame around the element. Every element can have a visible border, and borders can be styled in various ways.
+Margin: This is the space outside of the border. The margin is transparent, displaying any colors or images behind it.
+
+
+A note on borders
+A border can be added to every element. Borders require three values:
+
+width: The border width is typically set in pixels (px).
+
+style: Technically, borders can have a variety of different border styles. But be careful: From a design perspective, styled borders are pretty out of date. These styles can make your web page look antiquated and even ugly. It's often best to just stick with the default or solid border style.
+
+color: The border color can be assigned using any color technique you prefer. You're already familiar with a couple of the color techniques listed below.
+
+HTML color name: red
+Hex: #ff0000
+RGB: rgb(255,0,0)
+HSL: hsl(0, 100%, 50%)
+
+When it comes to borders, the order of the values isn't important. See the example below.
+
+any-element {
+  border: 1px solid #000;
+}
+The Replit below displays the eight basic HTML border styles for you to review. When used properly, borders can look fresh and modern. But if you don't use them properly, you might build a website that looks tacky, unattractive, and outdated.
+
+The box-sizing property
+Now, back to the boxes. The box-sizing property allows you to include both the padding and the border within the total width and height of an element. But you have to be deliberate about it, because the default doesn't include them.
+
+There are two different ways to set box-sizing, but the second is what you want to work with:
+
+box-sizing: content-box;: This is the older, default setting.
+box-sizing: border-box;: This is the newer, CSS3 setting.
+
+Take a moment to consider these options. If you apply box-sizing: border-box; to an element, the padding and border are included in the width and height of that element. You know what dimensions it will have.
+
+By comparison, the old method—box-sizing: content-box;—was a mathematical pain. With that approach, a 400px box would actually display as 460px, as you can see in both the image and the Replit below. This is why you want to assign box-sizing: border-box; for every HTML element in each new website that you develop.
+
+Because this is just an overview, keep it simple for now. Just add the following code to the top of your CSS page for every project that you work on so that your page doesn't default to the old method of box-sizing.
+
+/* Set ALL HTML elements with border-box sizing */* {
+  box-sizing: border-box;
+}
+If you'd like to read more about box-sizing in CSS, this CSS-Tricks post is an excellent starting point, as is this MDN Web Docs article.
+
+This box-sizing approach will work for most of the projects that you complete during the program. However, as your apps become more complex, you might find it helpful to add inheritance. This concept will be covered in more depth later on, but if you're interested, you can get a head start by checking out CSS-Trick's Inheriting box-sizing, which explains the benefits of inheriting box-sizing.
+
+Assigning margins and padding
+There are a few different ways to assign values to margins and padding. And with a little practice, you'll find this pretty easy.
+
+Assigning a single value
+When a single value is applied to the margin or padding of a box, the code will apply that value (measured in px) to all four sides of the HTML element: the top, right, bottom, and left sides. Here are some example values:
+
+margin: 25px;
+padding: 25px;
+
+Assigning specific values
+But you don't have to set one value; you can also apply a specific value to each side. When you need to set a specific value to a specific side, you can do so like this:
+
+margin-top: 25px;
+margin-right: 15px;
+margin-bottom: 20px;
+margin-left: 12px;
+padding-top: 25px;
+padding-right: 15px;
+padding-bottom: 20px;
+padding-left: 12px;
+
+Assigning two values
+Or maybe you've provided only two values. In this case, the code will apply the values to the two pairs of sides as follows: The first value will apply to the top and bottom sides. And the second value will apply to the left and right sides.
+
+margin: 25px 15px;
+padding: 25px 15px;
+
+Assigning four values
+And finally, when four values are provided, they will always apply to each side of the box in this specific order: The first value will apply to the top side. The second value will apply to the right side. The third value will apply to the bottom side. And the fourth value will apply to the left side.
+
+margin: 25px 15px 20px 12px;
+padding: 25px 15px 20px 12px;
+
+Browser defaults versus normalize.css
+And there you have it—you've learned several challenging CSS concepts in this lesson. The final point that's worth reiterating here is the issue of browser style defaults. As you learned earlier in this module, web browsers don't have the exact same settings for the default styles of CSS. But there is a popular and easy-to-implement solution: normalize.css. With this small CSS file, you can guarantee cross-browser consistency for default styles. You can revisit the Web page template lesson to learn more.

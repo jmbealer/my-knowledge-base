@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       cda1f280-927a-4814-8f56-cf7f630a77e6
+:mtime:    20230625193839
+:ctime:    20230625193814
+:END:
+#+title: sophiaOrg
+
+Business
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Business Communication 	3 	COM-202 Introduction to Business Communications 	BUS*222 Business Comm 		PCJ-215 Business Communication 	13 	4 	4 	N
+Business Law 	3 	LAW-201 Business Law 	BUS*230 Business Law 		BUS-350 Business Law I 	11 	3 	1 	Y
+Financial Accounting 	3 	ACC-101 Principles of Financial Accounting 	LD - Accounting/Finance Core 	Free Elective 	BUS-150 Intro to Financial Accounting 	9 	4 	0 	Y
+Introduction to Business 	3 	BUS-101 Introduction to Business 	Lower Division - Elective 	Free Elective 	BUS-101 Introduction to Business 	12 	4 	0 	Y
+Personal Finance
+Previously: Taking Charge of Your Economic Future 	3 	BUE-101 Personal Finance 	Free elective 		ECO-1XX Economics Elective 	12 	4 	2 	N
+Principles of Finance 	3 	FIN-200 Principles of Finance 			BUS-1XX Business Elective 	15 	4 	0 	Y
+Principles of Management 	3 	MAN-301 Principles of Management 	BUS*341 Management Concepts & Applications 		BUS-101 Introduction to Business
+Introduction to Business + Principles of Management = BUS-101 & BUS-1XX Business Elective 	16 	4 	1 	N
+Project Management 	3 	MAN-235 Intro to Project Management 	Lower Division - Business/Project Management 	MGT750 Project Management (LL) 	BUS-141 Intro to Project Mgmt/MS Projects 	8 	4 	0 	N
+
+Career Success
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Conflict Resolution 	3 	COM-299 Special Topics Communication 	Communication (GEN ED) 	Free Elective 	BUS-210 Organizational Communication 	17 	6 	0 	N
+Developing Effective Teams 	1 	HRM-215 Leadership or HRM-299 Special Topics in HRM 	Applied professional credit 	Accepted: Free Elective 	BUS-1XX Business Elective 	3 	1 	0 	N
+IT Career Exploration 	1 	N/A 	Free Elective 		COS-1XX CS Elective or General Elective 	7 	1 	2 	Y
+The Essentials of Managing Conflict 	1 	SOS-240 Conflict Resolution 	Communication (GEN ED) 	N/A 	BUS-1XX Business Elective 	3 	1 	0 	N
+Introduction to Career Readiness 	1 				GEL-1XX General Elective 	4 	1 	2 	N
+Preparing for the Future of Work 	3 	FEL-199 Special Topics Free Electives 			BUS-1XX Business Elective 	12 	4 	2 	N
+Workplace Writing I 	3 					12 	0 	5 	N
+Workplace Writing II 	3 					10 	0 	6 	N
+Computer Science and IT
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Introduction to Information Technology 	3 	CIS-107 Computer Concepts and Applications 			COS-103 Intro to Information Tech 	12 	4 	0 	N
+Introduction to Java Programming 	3 	COS-111 Introduction to Programming 				11 	3 	1 	N
+Introduction to Programming in Python 	3 	ITS-150 Computer Programming I (get this pre-planned to confirm) 	IT*211 Fundamentals of Programming 		COS-1XX Computer Science Elective 	11 	3 	1 	N
+Introduction to Relational Databases 	3 	ITS-130 Database Fundamentals 	IT*370 Database Management Systems 		COS-1XX Computer Science Elective 	19 	5 	0† 	Y
+Introduction to Web Development 	3 	N/A 	IT*371 Web Design and Development 		COS-200 Introduction to Web Design or COS-100 Comp Sci Elective 	9 	3 	0 	N
+
+† Introduction to Relational Databases does not have a Touchstone because the entire course can be considered to be a Touchstone. Almost every question requires students to query the sample database. While not especially difficult, this can be tedious and time-consuming. Students who are searching for a quick and easy class may want to consider a different source.
+
+Introduction to Web Development is accepted by WGU as C779. The WGU version of this course has historically been reported to be more difficult than the Sophia version.
+English and Communication
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+English Composition I 	3 	ENC-101 English Composition I 	Language Arts (GEN ED) 	ENG 101 English Composition 1 	ENG-101 College Composition 	15 	5 	5 	N
+English Composition II 	3 	ENC-102 English Composition II 	Language Arts (GEN ED) 	Reportedly accepted, even though it's not on the official Sophia.org page 	ENG-121 College Composition II 	9 	0 	7 	N
+Foundations of English Composition 	3 	Developmental course, no credits actually awarded 	Lower Division (GEN ED) 	N/A 	ENG-1XX English Elective 	8 	2 	2 	N
+Public Speaking 	3 	COM-209 Public Speaking 	Communication (GEN ED) 	Oral Communication Requirement 	COM-210 Organizational Communication 	12 	4 	4 	N
+Visual Communications 	3 	COM-231 Two-Dimensional Design 	Communication (GEN ED) 	Fine Art Elective 	COM-1XX General Elective 	9 	4 	0 	N
+Workplace Communication 	3 	COM-199 Special Topics in Communications 			BUS 210 Organizational Communication 	12 	3 	1 	N
+Humanities
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Ancient Greek Philosophers 	3 	PHI-226 Ancient Greek Philosophy 	Philosopy or Humanities (GEN ED) 	PHL230 Ancient Greek Philosophers (LA Elective) 	PHI-1XX Philosophy Elective 	4 	1 	1 	N
+Approaches to Studying Religions 	3 	REL-100 Introduction to Religion 	Humanities (GEN ED) 	World Religion (Global Elective) 	ANT-1XX Anthropology Elective 	15 	3 	3 	N
+Art History I 	3 	ART-166 History of Western Art I 	Humanities (GEN ED) 	FAR112 Art History I Fine Art (GenEd/Elective) 	ART-211 Art History I 	15 	3 	0 	N
+Art History II 	3 	ART-167 History of Western Art II 	Humanities (GEN ED) 	Fine Art General Education 	ART-212 Art History II 	11 	3 	0 	N
+Critical Thinking 	3 				HUM-103 Creative Decision Making 	13 	4 	1 	Y
+Introduction to Ethics 	3 	PHI-180 Introduction to Ethics 	Humanities (GEN ED) 	PHL201 Introduction to Ethics (Liberal Arts Ethics) 	PHI-152 Introduction to Ethics 	11 	4 	0 	N
+Language
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Spanish I 	3 				SPA-101 Elementary Spanish I 	9 	3 	5 	Y
+Spanish II 	3 				SPA-102 Elementary Spanish II 	9 	3 	5 	Y
+Math
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Calculus I 	4 	MAT-231 Calculus I 	MAT*220 Calculus I 		MAT-131 Calculus I 	21 	6 	0 	Y
+Foundations of College Algebra 	0 	Developmental course, no credits actually awarded 	N/A 	N/A 	MAT-1XX Math Elective 	6 	2 	0 	N
+Foundation of Statistics 	2 	Developmental course, no credits actually awarded 	Natural Science/Math (GEN ED) 	N/A 	MAT-1XX Math Elective 	5 	2 	0 	N
+Introduction to College Mathematics 	3 	MAT-105 Applied Liberal Arts Mathematics 	MAT*101 Math for Everyday Life 		MAT-1XX Math Elective 	15 	5 	0 	Y
+Introduction to Statistics 	3 	STA-201 Principles of Statistics 	Natural Science/Math (GEN ED) 	MAT 105 Principles of Statistics 	MAT-101 Basic Statistics 	18 	6 	0 	Y
+Introductory Applied Math 	1 	Developmental course, no credits actually awarded 			MAT-1XX Math Elective 	13 	4 	0 	Y
+Precalculus 	3 				MAT 121 Pre-Calculus 	17 	6 	0 	Y
+
+Science
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Environmental Science 	3 	ENS-200 Environmental Science 	Natural Science/Math (GEN ED) 	ENV-110 Environmental Science 	SCI 201 Environmental Science 	10 	4 	0 	Y
+Human Biology 	3 	BIO-101 Introduction to Biology 	Natural Science/Math (GEN ED) 	Biology Elective (No Lab) 	BIO-103 Human Biology 	19 	6 	0 	N
+Introduction to Chemistry 	3 	CHE-199 Special Topics in Chemistry 	CHEM*1001 Natural Science 		CHY-1XX Chemistry Elective 	12 	5 	0 	Y
+Introduction to Chemistry Lab 	1 				CHY-1XX Chemistry Elective 	15* 	0 	2 	N
+Introduction to Nutrition 	3 	NUT-101 Human Nutrition 			BIO-104 Intro to Human Nutrition 	17 	4 	0 	Y
+
+(*) Intro to Chemistry Lab has Labster activities, rather than traditional Sophia challenges. The Labster activities are included at no additional cost to the student.
+Social Science
+Sophia Course 	Credits 	TESU Equivalent 	Excelsior 	Charter Oak 	UMPI 	Challenges 	Milestones 	Touchstones 	Final counts?
+Introduction to Psychology (no longer offered) 	3 	PSY-101 Introduction to Psychology 	Social Sciences (GEN ED) 	PSY 101 Psychology 	PSY-100 General Psychology 	18 	6 	0 	N
+Introduction to Psychology: Smarter Decisions Through Psychology 	3 	FEL-199 Special Topics Free Elective 	Social Sciences (GEN ED) 		PSY-1XX Psychology Elective 	13 	4 	3 	N
+Introduction to Sociology (no longer offered) 	3 	SOC-101 Introduction to Sociology 	Social Sciences (GEN ED) 	SOC 101 Introduction to Sociology 	SOC-100 Introduction to Sociology 	15 	5 	0 	Y
+Introduction to Sociology: Embracing Diversity and Collaboration 	3 	SOC-101 Introduction to Sociology 	Social Sciences (GEN ED) 	SOC 101 Introduction to Sociology 	SOC-100 Introduction to Sociology 	12 	6 	2 	Y
+Macroeconomics 	3 	ECO-111 Macroeconomics 	Social Sciences (GEN ED) 	ECO 103 Macroeconomics 	ECO-1XX Economics Elective
+Must also take Microeconomics 	9 	4 	0 	Y
+Microeconomics 	3 	ECO-112 Microeconomics 	Social Sciences (GEN ED) 	ECO 104 Microeconomics 	ECO-207 Macro & Micro Economics
+Must also take Macroeconomics 	9 	4 	0 	Y
+Topics in US History (Learn from the Past, Prepare for the Future) 	3 	HIS-199 Special Topics in History 			HTY-1XX History Elective 	10 	3 	3 	N
+U.S. Government 	3 	POS-110 American Government 			POS-101 American Government 	17 	4 	2 	Y
+US History I 	3 	HIS-113 American History I 	Social Sciences (GEN ED) 	HIS101 US History I General Education Requirement 	HTY-161 United States History I 	12 	4 	1 	N
+US History II 	3 	HIS-114 American History II 	Social Sciences (GEN ED) 	HIS102 US History II General Education Requirement 	HTY-162 United States History II 	16 	4 	1 	N

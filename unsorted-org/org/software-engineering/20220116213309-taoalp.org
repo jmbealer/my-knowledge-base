@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       683d6936-787d-4cd0-bb00-274ac75d0fc6
+:mtime:    20230206181417 20220528222421
+:ctime:    20220116213309
+:END:
+#+title: The Art of Assembly Language Programming
+
+HLA high level assembly

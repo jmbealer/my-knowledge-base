@@ -1,0 +1,39 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::s}} - <i>move</i> cursor <b>{{c2::left}}</b>.,h,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::b}} - <i>move</i> cursor <b>{{c2::right}}</b>.,l,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::0}} - <i>move</i> to the <b>{{c2::first}}</b> character in the line.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::^}} - <i>move</i> to the <b>{{c2::first}} non-blank</b> character in the line.,,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::$}} - <i>move</i> to the <b>{{c2::next EOL}}</b> (end of line) position.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::g_}} - <i>go to</i> the <b>{{c2::last}} non-blank</b> character in the line.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::g0}} - <i>go to</i> <b>{{c2::first}}</b> character in screen line.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::g^}} - <i>go to</i> <b>{{c2::first}} non-blank</b> character in screen line.,,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::g$}} - <i>go to</i> <b>{{c2::last}}</b> character in screen line.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::gm}} - <i>go to</i> <b>{{c2::middle}}</b> of the screen line.,,vim left-right motions
+bash type,0-current-using::vim-wip,{{c1::gM}} - <i>go to</i> <b>{{c2::middle}}</b> of the line.,,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::fx}} - <i>jump</i> to Nth occurrence of x to the <b>{{c2::right}}</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::Fx}} - <i>jump</i> to Nth occurrence of x to the <b>{{c2::left}}</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::jx}} - <i>jump till</i> before the Nth occurrence of x to the <b>{{c2::right}}</b>.,tx,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::Jx}} - <i>jump till</i> before the Nth occurrence of x to the <b>{{c2::left}}</b>.,Tx,vim left-right motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::;}} - <b>{{c2::repeat}}</b> the last ""f"", ""F"", ""j"", or ""J"" N times.",,vim left-right motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::,}} - <b>{{c2::repeat}}</b> the last ""f"", ""F"", ""j"", or ""J"" N times in <i>opposite direction</i>.",,vim left-right motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::n}} - move {{c2::up}}</b> N lines.,k,vim up-down motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::t}} - move {{c2::down}}</b> N lines.,j,vim up-down motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::-}} - move <b>{{c2::up}}</b> N lines, on the first non-blank character.",,vim up-down motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::+}} - move <b>{{c2::down}}</b> N lines, on the first non-blank character.",,vim up-down motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::_}} - move <b>{{c2::down}}</b> N-1 lines, on the first non-blank character.",,vim up-down motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::G}} - go to line N: default: <b>{{c2::last}}</b> line, on the first non-blank character.",,vim up-down motions
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::gg}} - go to line N; default: <b>{{c2::first}}</b> line, on the first non-blank character.",,vim up-down motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::%}} - move to line N <b>{{c2::percentage down}}</b> in the file. N must be given.,,vim up-down motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::gk}} - go <b>{{c2::up}}</b> N <i>screen lines</i>.,,vim up-down motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::gj}} - go <b>{{c2::down}}</b> N <i>screen lines</i>.,,vim up-down motions
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::a}} - <b>{{c2::append}}</b> text <i>after the cursor</i>. (N times),,vim insert text
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::A}} - <b>{{c2::append}}</b> text at the <i>end of the line</i>. (N times),,vim insert text
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::i}} - <b>{{c2::insert}}</b> text <i>before the cursor</i>.,,vim insert text
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::I}} - <b>{{c2::insert}}</b> text at the <i>first non-blank in the line</i>. (N times),,vim insert text
+bash type,0-current-using::vim-wip,<i>N</i>{{c1::gI}} - <b>{{c2::go insert}}</b> text in <i>column 1</i>. (N times),,vim insert text
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::o}} - <b>{{c2::open}}</b> a new line <i>below the current line</i>, append text. (N times)",,vim insert text
+bash type,0-current-using::vim-wip,"<i>N</i>{{c1::O}} - <b>{{c2::open}}</b> a new line <i>above the current line</i>, append text. (N times)",,vim insert text

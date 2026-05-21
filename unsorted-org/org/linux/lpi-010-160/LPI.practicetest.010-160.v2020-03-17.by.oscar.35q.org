@@ -1,0 +1,692 @@
+                                           010-160
+
+Number: 010-160
+Passing Score: 800
+Time Limit: 120 min
+File Version: 1
+
+
+                                            010-160
+
+
+
+
+                                   https://www.gratisexam.com/
+
+
+
+
+                                   https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Exam A
+
+QUESTION 1
+What are the differences between hard disk drives and solid state disks? (Choose two.)
+
+
+
+
+                                                                    https://www.gratisexam.com/
+
+A. Hard disks have a motor and moving parts, solid state disks do not.
+B. Hard disks can fail due to physical damage, while solid state disks cannot fail.
+C. Solid state disks can store many times as much data as hard disk drives.
+D. /dev/sda is a hard disk device while /dev/ssda is a solid state disk.
+E. Solid state disks provide faster access to stored data than hard disks.
+
+Correct Answer: AE
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 2
+Which of the following types of bus can connect hard disk drives with the motherboard?
+
+A. The RAM bus
+B. The NUMA bus
+C. The CPU bus
+D. The SATA bus
+E. The Auto bus
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+                                                                     https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+QUESTION 3
+Members of a team already have experience using Red Hat Enterprise Linux. For a small hobby project, the team wants to set up a Linux server without paying for
+a subscription. Which of the following Linux distributions allows the team members to apply as much of their Red Hat Enterprise Linux knowledge as possible?
+
+A. Ubuntu Linux LTS
+B. Raspbian
+C. Debian GNU/Linux
+D. CentOS
+E. openSUSE
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 4
+Which of the following outputs comes from the command free?
+
+A.
+
+B.
+
+
+
+
+C.
+
+
+
+
+D.
+
+E.
+
+
+
+
+                                                                  https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 5
+Which of the following outputs could stem from the command last?
+
+A. 1 ls
+   2 cat text.txt
+   3 logout
+B. Password for user last changed at Sat Mar 31 16:38:57 EST 2018
+C. Last login: Fri Mar 23 10:56:39 2018 from server.example.com
+D. EXT4-fs (dm-7): mounted filesystem with ordered data mode. Opts: (null)
+E. root     tty2   Wed May 17 21:11 - 21:11    (00:00)
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 6
+What is the UID of the user root?
+
+A. 1
+B. -1
+C. 255
+D. 65536
+E. 0
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+
+                                                              https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Explanation/Reference:
+
+
+QUESTION 7
+Which permissions are set on a regular file once the permissions have been modified with the command chmod 654 file.txt?
+
+A. drw-r-xr--
+B. d—wxr-x--
+C. –wxr-x--x
+D. –rwxrw---x
+E. -rw-r-xr--
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 8
+Which command adds the new user tux and creates the user’s home directory with default configuration files?
+
+A. defaultuser tux
+B. useradd –m tux
+C. usercreate tux
+D. useradd –o default tux
+E. passwd –a tux
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 9
+Which of the following keys can be pressed to exit less?
+
+A. l
+
+                                                                https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+B. x
+C. e
+D. q
+E. !
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 10
+The current directory contains the following file:
+
+-rwxr-xr-x 1 root root 859688 Feb 7 08:15 test.sh
+
+Given that the file is a valid shell script, how can this script be executed? (Choose two.)
+
+A. run test.sh
+B. ${test.sh}
+C. cmd ./test.sh
+D. ./test.sh
+E. bash test.sh
+
+Correct Answer: DE
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 11
+A directory contains the following files:
+
+
+
+
+                                                                      https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+What would be the output of the following shell script?
+for file in *.txt
+
+
+
+
+A. *.txt
+B. a b
+C. c.cav
+D. a.txt
+E. a. txt
+   b. txt
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 12
+Which of the following commands will search for the file foo.txt under the directory /home?
+
+A. search /home –file foo.txt
+B. search /home foo. txt
+C. find /home – file foo.txt
+
+
+                                                                 https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+D. find /home –name foo.txt
+E. find /home foo.txt
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 13
+The current directory contains the following file:
+
+-rw-r—r— 1 root exec 24551 Apr 2 12:36 test.sh
+
+The file contains a valid shell script, but executing this file using ./test.sh leads to this error:
+
+bash: ./test.sh: Permission denied
+
+What should be done in order to successfully execute the script?
+
+A. The file’s extension should be changed from .sh to .bin.
+B. The execute bit should be set in the file’s permissions.
+C. The user executing the script should be added to the exec group.
+D. The SetUID bit should be set in the file’s permissions
+E. The script should be run using #!./test. sh instead of ./test.sh.
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 14
+What is a Linux distribution?
+
+A. The Linux file system as seen from the root account after mounting all file systems.
+B. A bundling of the Linux kernel, system utilities and other software.
+
+                                                                       https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+C. The set of rules which governs the distribution of Linux kernel source code.
+D. An operating system based on Linux but incompatible to the regular Linux kernel.
+E. A set of changes to Linux which enable Linux to run on another processor architecture.
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 15
+Which package management tool is used in Red Hat-based Linux Systems?
+
+A. portage
+B. rpm
+C. apt-get
+D. dpkg
+E. packagectl
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 16
+Where is the operating system of a Raspberry Pi stored?
+
+A. On the master device attached to the Raspberry Pi’s IDE bus.
+B. On a read only partition on the Raspberry Pi’s firmware, next to the BIOS.
+C. On a removable SD card which is put into the Raspberry Pi.
+
+
+
+
+                                                                   https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+                                                                        https://www.gratisexam.com/
+
+D. On a Linux extension module connected to the Raspberry Pi’s GPIO pins.
+E. On rewritable flash storage which is built into the Raspberry Pi.
+
+Correct Answer: C
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 17
+Why are web browser cookies considered dangerous?
+
+A. Cookies support identification and tracking of users.
+B. Cookies are always public and accessible to anyone on the internet.
+C. Cookies consume significant amounts of storage and can exhaust disk space.
+D. Cookies store critical data which is lost when a cookie is deleted.
+E. Cookies can contain and execute viruses and malware.
+
+Correct Answer: A
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 18
+Which of the following characters in a shell prompt indicates the shell is running with root privileges?
+
+A. !
+B. #
+C. *
+D. &
+E. $
+
+Correct Answer: B
+
+                                                                      https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 19
+Which of the following commands are used to get information on the proper use of ls? (Choose two.)
+
+A. option ls
+B. usage ls
+C. manual ls
+D. man ls
+E. info ls
+
+Correct Answer: DE
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 20
+A user is currently in the directory /home/user/Downloads/ and runs the command
+
+ls ../Documents/
+
+Assuming it exists, which directory’s content is displayed?
+
+A. /home/user/Documents/
+B. /home/user/Documents/Downloads/
+C. /home/user/Downloads/Documents/
+D. /Documents/
+E. /home/Documents
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+
+                                                                 https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Explanation/Reference:
+
+
+QUESTION 21
+A directory contains the following three files:
+
+texts 1.txt
+texts 2.txt
+texts 3.csv
+
+Which command copies the two files ending in .txt to the /tmp/ directory?
+
+A. cp ??.txt /tmp/
+B. cp *.txt /tmp/
+C. cp. \.txt /tmp/
+D. cp ?.txt /tmp/
+E. cp $?.txt /tmp/
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 22
+Which of the following DNS record types hold an IP address? (Choose two.)
+
+A. NS
+B. AAAA
+C. MX
+D. A
+E. CNAME
+
+Correct Answer: CD
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+                                                                https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+QUESTION 23
+Which of the following values could be a process ID on Linux?
+
+A. /bin/bash
+B. 60b503cd-019e-4300-a7be-922f074ef5ce
+C. /sys/pid/9a14
+D. fff3
+E. 21398
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 24
+Which of the following is a protocol used for automatic IP address configuration?
+
+A. NFS
+B. LDAP
+C. SMTP
+D. DNS
+E. DHCP
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 25
+Which of the following statements regarding Linux hardware drivers is correct?
+
+A. Drivers are regular Linux programs which have to be run by the user who wants to use a device.
+B. Drivers are not used by Linux because the BIOS handles all access to hardware on behalf of Linux.
+
+                                                                   https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+C. Drivers are stored on their devices and are copied by the Linux kernel when a new device is attached
+D. Drivers are downloaded from the vendor's driver repository when a new device is attached.
+E. Drivers are either compiled into the Linux kernel or are loaded as kernel modules.
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 26
+What can be found in the /proc/ directory?
+
+A. One directory per installed program.
+B. One device file per hardware device.
+C. One file per existing user account.
+D. One directory per running process.
+E. One log file per running service.
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 27
+Which of the following directories must be mounted with read and write access if it resides on its own dedicated file system?
+
+A. /opt
+B. /lib
+C. /etc
+D. /var
+E. /usr
+
+Correct Answer: D
+Section: (none)
+
+                                                                    https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 28
+Which files are the source of the information in the following output? (Choose two.)
+uid=1000 (bob) gid=1000 (bob) groups=1000 (bob), 10 (wheel), 150 (wireshark), 989 (docker), 1001 (libvirt)
+
+A. /etc/id
+B. /etc/passwd
+C. /etc/group
+D. /home/index
+E. /var/db/users
+
+Correct Answer: BC
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 29
+Which of the following commands shows the absolute path to the current working directory?
+
+A. who
+B. cd ..
+C. pwd
+D. ls -l
+E. cd ~/home
+
+Correct Answer: C
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 30
+
+                                                                 https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+Which of the following commands output the content of the file Texts 2.txt? (Choose two.)
+
+A. cat 'Texts 2.txt’
+B. cat -- Texts 2.txt
+C. cat |Texts 2.txt|
+D. cat 'Texts\ 2.txt’
+E. cat Texts\ 2.txt
+
+Correct Answer: AB
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 31
+Which of the following commands puts the lines of the file data.csv into alphabetical order?
+
+A. a..z data.csv
+B. sort data.csv
+C. abc data.csv
+D. wc -s data.csv
+E. grep --sort data.csv
+
+Correct Answer: B
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 32
+Which of the following commands creates the ZIP archive poems.zip containing all files in the current directory whose names end in .txt?
+
+A. zip *.txt > poems.zip
+B. zcat *.txt poems.zip
+C. zip poems.zip *.txt
+D. zip cfz poems.zip *.txt
+
+                                                                  https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+E. cat *.txt | zip poems.zip
+
+Correct Answer: C
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 33
+Which one of the following statements concerning Linux passwords is true?
+
+A. All passwords can be decrypted using the system administrator's master password.
+B. Passwords may never start with a non-letter.
+C. Users cannot change their password once it has been set.
+D. Passwords are only stored in hashed form.
+E. Passwords may be at most six characters long.
+
+Correct Answer: D
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 34
+Which of the following Linux Distributions is derived from Red Hat Enterprise Linux?
+
+A. Raspbian
+B. openSUSE
+C. Debian
+D. Ubuntu
+E. CentOS
+
+Correct Answer: E
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+                                                                   https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2
+QUESTION 35
+What are the differences between a private web browser window and a regular web browser window? (Choose three.)
+
+A. Private web browser windows do not allow printing or storing websites.
+B. Private web browser windows do not store cookies persistently.
+C. Private web browser windows do not support logins into websites.
+D. Private web browser windows do not keep records in the browser history.
+E. Private web browser windows do not send regular stored cookies.
+
+Correct Answer: BDE
+Section: (none)
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                                https://www.gratisexam.com/
+
+
+
+
+                                                                 https://www.gratisexam.com/
+885CB989129A5F974833949052CFB2F2

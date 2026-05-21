@@ -1,0 +1,382 @@
+:PROPERTIES:
+:ID:       aba4c4fe-deb5-4f35-8099-264cb2217536
+:mtime:    20230209000312 20230206181508 20221106195818
+:ctime:    20220510203508
+:END:
+#+title: clang-certs
+#+date: [2022-05-10 Tue 20:35]
+
+* CLE - C Certified Entry-Level Programmer Certification
+
+A test candidate should demonstrate sufficient knowledge of the following concepts:
+
+♦ the universal concepts of computer programming and developer tools;
+♦ the fundamentals of the C language syntax and semantics;
+♦ control and evaluations, data aggregates, functions, pointers, and memory management;
+♦ writing and debugging simple programs using standard language infrastructure.
+
+Skills measured
+
+Becoming CLE certified ensures that you are familiar with the universal concepts of computer programming as well as acquainted with the most essential means provided by the C language, which enable you to start your own studies at the next level of C programming education, and to continue your professional development.
+
+    Basic concepts
+        Installing and using your programming environment
+        Introduction to IDE
+        Compilation
+        Machine, natural, artificial languges
+        Variables
+        Comments
+        Portability
+    Basic data types, operations, and flow control (decision-making statements)
+        primary and derived data types
+        arithmetic, logical, and bitwise operators
+        priority and binding
+        pre-, post-incrementation, decrementation
+        basic library functions
+        computations
+        conditional execution and the if, else if, else keywords
+    Flow control (loops), int and float types, typecasting, and computer logic
+        conditional execution, nested conditions and loops
+        type conversions, typecast and its operators
+        the while, do…while, and the for loops
+        controlling the loop execution: break and continue
+        sorting
+    Switch, arrays, pointers, and the basics of strings
+        switch, case, default, control instructions
+        arrays (vectors)
+        initiators
+        pointers, the NULL pointer, pointer arithmetic
+        addresses, references, dereferences, the sizeof operator
+        pointers vs. arrays
+        strings and string manipulation
+    Advanced operations on arrays and pointers, memory management, and the basics of functions
+        array indexing, multidimensional arrays
+        arrays of pointers
+        the void type
+        memory allocation and deallocation: the malloc() and free() functions
+        functions, parameters, definitions, declarations, invocations
+        creating user-defined functions
+        using selected C library functions
+
+** Exam block #1: Basic Concepts (13.25%)
+
+Objectives covered by the block (4 exam items)
+
+    fundamental concepts: compilation and the compiler, IDE, language elements, lexis, syntax and semantics, C keywords, instructions, machine/natural/artificial languages, portability
+    literals: char; integer, floating-point, and double type numbers; scientific notations, strings
+    comments
+    the printf() and puts() functions
+    the return keyword
+    the main() function
+    numeral systems (binary, octal, decimal, hexadecimal)
+    basic operators:  * / % / + – =
+    variables
+
+** Exam block #2: Data Types, Evaluations, and Basic I/O Operations (13.25%)
+
+Objectives covered by the block (4 exam items)
+
+    primary and derived data types, modifiers
+    type casting and conversions
+    declaring variables, assigning values to variables
+    defining constants,
+    accuracy of floating-point numbers
+    basic input and output operations using the scanf(), puts(), printf() functions
+    formatting output, format specifiers
+    type casting
+    header files
+    basic calculations
+
+** Exam block #3: Arithmetic, logical, and bitwise operators (13.25%)
+
+Objectives covered by the block (4 exam items)
+
+    operators: unary and binary, priorities and binding
+    basic calculations
+    incrementation and decrementation operators
+    shortcut operators
+    rounding the numbers
+    bitwise shifts (>> and <<)
+    logical operations: and, or, not
+    the truth table
+
+** Exam block #4: Flow control: decision-making statements (13.25%)
+
+Objectives covered by the block (4 exam items)
+
+    conditional statements: if, if-else, if-else if, if-else if-else
+    multiple conditional statements
+    nested conditions
+    switch and case
+    the default keyword
+    control instructions
+
+** Exam block #5: Flow control: loops (16.50%)
+
+Objectives covered by the block (5 exam items)
+
+    building loops: while, for, do…while
+    iterating through sequences
+    infinite loops
+    loop elements, and loop execution
+    nesting loops
+    controlling loop execution: break, continue
+
+** Exam block #6: Arrays, pointers, and memory management (16.50%)
+
+Objectives covered by the block (5 exam items)
+
+    creating and initializing arrays
+    indexing and manipulating arrays
+    sorting data in arrays
+    initiators
+    pointers, the NULL pointer, pointer arithmetic
+    addresses, references, dereferences, the sizeof operator
+    pointers vs. arrays
+    multidimensional arrays
+    arrays of pointers
+    the void type
+    memory allocation and deallocation: the malloc() and free() functions
+
+** Exam block #7: String manipulation (7%)
+
+Objectives covered by the block (2 exam items)
+
+    character arrays, the ASCII code,
+    string initialization
+    string functions: strcpy, strlen, strcat
+    processing strings
+    string header files
+
+** Exam block #8: The Basics of Functions (7%)
+
+Objectives covered by the block (2 exam items)
+
+    functions, parameters, definitions, declarations, invocations
+    creating user-defined functions
+    using selected C library functions
+
+* CLA - C Certified Associate Programmer Certification
+
+Absolute basics
+ languages: natural and artificial,
+ machine languages,
+ high-level programming languages,
+ obtaining the machine code: compilation process,
+ writing simple programs,
+ variables,
+ integer values in real life and in C,
+ integer literals.
+
+Data types
+ floating point values in real life and in C,
+ float literals,
+ arithmetic operators,
+ priority and binding,
+ post- and pre-incrementation and decrementation,
+ operators of type op=,
+ char type and ASCII code,
+ char literals,
+ equivalence of int and char data,
+ comparison operators,
+ conditional execution and if keyword,
+ printf() and scanf() functions.
+
+Flow control
+ conditional execution: the “else” branch,
+ integer and float types,
+ conversions,
+ typecast and its operators,
+ loops – while, do and for,
+ controlling the loop execution – break and continue,
+ logical and bitwise operators.
+
+Arrays
+ switch: different faces of ‘if’,
+ arrays (vectors),
+ sorting in real life and in a computer memory,
+ initiators,
+ pointers,
+ an address, a reference, a dereference and the sizeof operator,
+ simple pointer and pointer to nothing (NULL),
+ & operator,
+ pointers arithmetic,
+ pointers vs. arrays: different forms of the same phenomenon,
+ using strings,
+ basic functions dedicated to string manipulation.
+
+Memory management and structures
+ array indexing,
+ the usage of pointers: perils and disadvantages,
+ void type,
+ arrays of arrays and multidimensional arrays,
+ memory allocation and deallocation: malloc() and free() functions,
+ arrays of pointers vs. multidimensional arrays,
+ structures,
+ declaring, using and initializing structures,
+ pointers to structures and arrays of structures,
+ basics of recursive data collections.
+
+Functions
+ functions,
+ how to declare, define and invoke a function,
+ variables’ scope, local variables and function parameters,
+ pointers, arrays and structures as function parameters,
+ function result and return statement,
+ void as a parameter, pointer and result,
+ parameterizing the main function,
+ external function and the extern declarator,
+ header files and their role.
+
+Files and streams
+ files vs. streams,
+ header files needed for stream operations,
+ FILE structure,
+ opening and closing a stream, open modes, errno variable,
+ reading and writing to/from a stream,
+ predefined streams: stdin, stdout and stderr,
+ stream manipulation: fgetc(), fputc(), fgets() and fputs() functions,
+ raw input/output: fread() and fwrite() functions.
+
+Preprocessor and complex declarations
+ preprocessor,
+ #include: how to make use of a header file,
+ #define: simple and parameterized macros,
+ #undef directive,
+ predefined preprocessor symbols,
+ macrooperators: # and ##,
+ conditional compilation: #if and #ifdef directives,
+ avoiding multiple compilations of the same header files,
+ scopes of declarations, storage classes,
+ user –defined types,
+ pointers to functions,
+ analyzing and creating complex declarations.
+
+* CLP - C Certified Professional Programmer Certification
+
+evolution of c - from past to eternity
+handling variable number of parameters (<stdarg.h>)
+low level io (<unistd.h>)
+memory and strings (<string.h> et al.)
+processes and threads
+floats and ints once again (<math.h>, <fenv.h>, <inttypes.h> et al.)
+network sockets - the absolute basics
+miscellaneous
+
+1. Evolution of C – from past to eternity
+ milestones: ANSI C, C89, C95, C99, C11
+ obsolete (but still valid) language elements
+ how have function declarations changed over time?
+ trigraphs and digraphs
+ new C11 keywords:
+  _Noreturn
+  _Alignof and _Alignas
+  _Bool
+  _Exit
+  __Complex
+  __Pragma, _ _func_ _
+  _Generic
+
+2. Handling variable number of parameters (<stdarg.h>)
+ calling conventions, passing parameters, stack usage, stack
+  frame, returning a value, recursion
+ va_start()
+ va_arg()
+ va_end()
+ va_copy()
+ vsprintf(), vprintf(), vfprintf()
+ vscanf(), vsscanf(), vfscanf()
+ (_ _VA_ARGS_ _)
+
+3. Low level IO (<unistd.h>)
+ POSIX, API, ABI, WINAPI, etc.
+ access()
+ open()
+ errno
+ close()
+ read()
+ write()
+ lseek()
+ dprintf()
+ stat()
+ symlink(), link()
+ readlink()
+ unlink()
+ fcntl(), ioctl()
+
+4. Memory and strings (<string.h> et al.)
+ manipulating memory blocks
+ string manipulation: strchr(), strrchr(), strstr(), strtok()
+ qsort(), bsearch()
+ aligned_alloc(), calloc(), malloc(), and realloc()
+ bcopy()
+ memcpy()
+ memccpy()
+ memmove()
+ bzero()
+ memset()
+ memcmp()
+ Internationalization I18N
+  Unicode, UCS, UTF-8 – how to deal with a multilingual
+    environment?
+  universal character names
+  wide characters supported in different C dialects (<wchar.h>,
+    <wctype.h>, ...)
+  strcoll() and wcscoll()
+
+5. Processes and threads
+ definitions, implementations and history
+ thread safety
+ system(), getenv(), setenv()
+ processes – the Unix way:
+  fork()
+  exit()
+  execxx()
+  wait() and waitpid()
+ processes – the MS Windows way:
+  CreateProcess()
+  WaitForSingleObject()
+ POSIX threads
+ MS Windows threads
+ C11 threads (<thread.h>)
+
+6. Floats and ints once again (<math.h>, <fenv.h>, <inttypes.h> et
+al.)
+IEEE-754: a different universe
+ NaN, infinity, zero
+ floats and doubles – should we trust them?
+ numerical anomalies vs precision
+ ULP
+ what is a pragma?
+ FENV_ACCESS pragma
+ floating-point exceptions
+ rounding
+ multi-precision libraries (GMP, MPFR, MPIR)
+
+7. Network sockets – the absolute basics
+ what is a socket? what is a network socket?
+ TCP/IP protocol stack, UDP
+ connection and connectionless data transmissions
+ servers and clients
+ big- and little-endians and why you should be aware of them
+ socket addressing: IPv4, IPv6, service numbers
+ getaddrinfo()
+ socket()
+ connect()
+ bind()
+ listen()
+ accept()
+ send() and recv()
+ a simple example of client–server communication
+ a simple example of peer-to-peer communication
+
+8. Miscellaneous
+ const variables vs. volatile variables
+ goto – why and why not, advantages, disadvantages and
+  limitations
+ long (non-local) jumps: setjmp() and longjmp()
+ static array indices, designated initializers, compound literals,
+  variable-length arrays, flexible array members, restrict keyword
+ sequence points: why ++/-- may sometimes make you crazy
+ the asm keyword
+ portability issues and undefined behaviors

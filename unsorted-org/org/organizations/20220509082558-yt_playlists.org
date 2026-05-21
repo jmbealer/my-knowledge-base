@@ -1,0 +1,319 @@
+:PROPERTIES:
+:ID:       b0e30896-a000-48ec-a220-1a022eb43c2b
+:mtime:    20230716113008 20230416023011 20230206181513 20220904184139
+:ctime:    20220509082558
+:END:
+#+title: yt-playlists
+#+date: [2022-05-09 Mon 08:25]
+
++ 11:Computing:COM
+  + 55:Computer Engineering:CE
+    + iPad:Tablet
+    + 3d-Printing
+    + Mouse
+    + Keyboard
+    + Mobile
+  + 11:Computer Science:CS
+    + 11:CS:DSA
+  + CyberSecurity:CYBER
+    + Hacking
+    + Privacy
+  + 55:Data Science:DS
+  data-analyst = data science ds
+  + Information Systems
+  information systems not used
+  + 11:Information Technology:IT
+    + 55:IT:Devops
+    + 55:IT:Certifications
+    + 55:IT:Computer Networking
+    + 11:IT:Git
+    it certs
+    virt
+    certs
+  + Software Engineering:SE
+    + SE-html-css
+    + 00:SE:Javascript
+      + 01:JS:React.js
+      + 01:JS:Express.js
+    + 11:SE:Web-Development
+    + 11:SE-Clang
+    + 11:SE:Debugger
+    + 11:SE:Regex
+    + 55:SE-Assembly
+    + 55:SE-Golang
+    + 55:SE-Rust
+    + 55:SE-Database
+    + 55:SE-Workflow
+    + 55:SE-Functional
+    + SE-Lisp
+    + SE-Books
+    + Software
+    + Site
+    + Python::Programming
+    + Python::Pro::L
+  + Linux:LNX
+    + 11:LNX:Text Processing
+    + 11:LNX:Nixos
+    + 11:LNX:Bspwm
+    + 11:LNX:Cli
+    + 55:LNX:Apps
+    + 11:LNX:Dotfiles
+    + LNX:Dwm
+    + LNX:Arch
+    + LNX:gentoo
+    + LNX:Guix
+    + LNX:Virt
+  + 55:Text Editor:TE
+    11:TE:Vim
+    11:TE:Emacs
++ 00-math
+  + 01-math-books
+  + 02-math-others
+  + math-arithmetic
+  + math-lectures
+  + math-problems
+
+
+55:Career
+
+0 Information
+
+
+
+1 Philosophy & Psychology
+
+- 153 Cognition & Memory
+  - 153.1 Learning, Memory and Motivation
+153 Mental Proc & Intel
+
+2 Religions
+
+3 Social Sciences; social skills
+- communication
+- body language-training
+  370 Edu
+  - tests
+  - note-taking
+    -anki
+
+
+4 Language
+
+5 Natural Sciences & Mathematics
+- Gen Sci
+- Math
+
+6 Technology & Applied Sciences
+3.71 Fitness
+
+7 Arts & Recreation
+drawing comics
+unsorted drawing
+unsorted art
+
+basketball-highlights
+basketball-shooting form
+
+8 Literature & Rhetoric
+
+9 History & Geography
+
+# Youtube Playlists
+
+Self Education
+  Tests
+  Math
+  Science
+  Learning
+  note-taking
+Anki
+
+
+Fitness
+
+  Training-Info
+
+  Resistance Band
+  Strength Training
+  Facial-Training
+  Jump Rope-Routine
+  Calisthenics
+  Agility-Training
+  Pull-Training
+  Push-Training
+
+  Upper Limbs
+    Scapula & Clavicle
+    Shoulders
+    Elbow
+    Forearm
+    Wrist & Midcarpals
+    Hand
+  Lower Limbs
+    Hip
+    Knee
+    Foot
+    Ankle
+
+  Spine
+  Eyes-Training
+  Warm Ups
+  Mobility
+  Locomotion
+  Posture
+  Neck
+  Abdomen
+  Controlled Articular Rotation
+
+  Balance
+  Walking
+  Preventing Injuries
+  Jumping
+  Running
+  Parkour
+  Throwing
+  Swimming
+  Conditioning
+
+Self-Defense
+  Krav Maga
+  Combatives
+  Hybrid
+  Armed
+  Firearms
+  Grappling
+  Systema
+  Striking
+  Weapons
+  Swordmenship
+  Vehicle
+
+Interactive
+  Video Games
+Football Manager
+  Chess
+
+Arts
+  Unsorted Art
+  Unsorted Drawing
+  Drawing Comics
+  Drawing WarmUp
+Literature
+  Handwriting
+  Reading
+  Writing
+  Manga
+Audio
+  Music
+  Headphone
+  Speaker
+  study music
+Video
+  Film
+  Anime
+  Animation
+Sport
+  Basketball
+      Basketball-Footwork
+      Basketball-Passing
+      Basketball-Offense
+      Basketball-Defense
+      Basketball-Finishing
+      Basketball-Post Play
+      Basketball-Workouts
+      Basketball-Ball Handling
+      Basketball-Shooting Form
+      Basketball-Highlights
+  NFL
+Mental
+  Meditation
+Social
+  Social Skills
+  Communication
+  Body Language-Training
+Survival
+  Survival Skills
+  Prepping
+Driving    
+Grooming
+  Dental Hygiene
+  Men’s Grooming Essentials
+  Haircuts
+Food
+  Cooking
+  Nutrition
+Clothes
+  Style
+Animals
+  Dogs
+Subliminals
+  Longer Skills Subliminals
+  Longer Mentality Subliminals
+  Longer Intelligence Subliminals
+  Longer Body Subliminals
+  Longer Artistic Subliminals
+  Longer Height Subliminals
+  Unused Intelligence Subliminals
+  Unused Eye Subliminals
+  Unused Height Subliminals
+  Body Subliminals
+  Art Subliminals
+  Hair Removal Subliminals
+  Teeth Subliminals
+  Memory Subliminals
+  Eyes Subliminals
+  Intelligence Subliminals
+  Looks Subliminals
+  Height Subliminals
+  Unsorted Subliminals
+  Longer Unsorted Subliminals & Binaural Beats
+
+Finance
+
+UnSorted Playlists
+
+transcript
+Free
+    Comments
+    Privacy
+    Sites
+    Ergonomics
+    Workflow
+    Iphone
+    Digital Information
+    Packing
+    Space
+    Liked videos
+    Engineering
+    Physics
+    Productivity
+    Organizing
+    Adulting
+    Business
+    Housing
+    Podcast
+    DIY
+    Memory
+    Comments
+    News
+    
+    Motivation
+    Military
+    More You Know
+    Law
+    Bulidings
+    Fantasy
+    Gear
+    Armours
+    Interviews
+    Science Fiction
+    Language
+    Police
+    Chiropractic
+    Horror
+    Foosball
+    Breath-Training
+    Vocal-Training
+    Sleep
+    EveryDay
+

@@ -1,0 +1,1068 @@
+:PROPERTIES:
+:ID:       292ecba9-bd17-40cd-b3cd-aceec77ebe6d
+:mtime:    20230206181335 20220528222421
+:ctime:    20220129131526
+:END:
+#+title: clojure
+
+[[id:0e26b9f4-4a02-4e79-ae0c-d9cc4813bab1][clj-cheatsheets]]
+
+* intro overview
+clojure is a high level, dynamic functional programming language
+based on lisp
+compiles to java, javascript
+immuability; should not make any changes to objects which are created in place
+supports concurrency
+clojure evaluate forms from right-to-left
++ a "form" is something that is handed to the clojure parser (reader)
+  + a form could be a string or a symbol, or even a function (which contains
+    forms inside it)
+functional, emphasis on immutability, a language for data manipulation
+
+extensible data notation (edn)
+extensible data format for the conveyance of values
+clojure programs are expressed in edn; serializable form of clojure
+
+** what is clojure
+clojure is a functional, symbiotic and homoiconic programming language.
+functional: where functions are first-class citizens and mutating 'state' is
+frowned upon.
+symbiotic: the language is intended to be run atop of a host environment
+homoiconic: "code is data" - this helps facilitate a macro system for rewriting
+the language
+
+clojure supports the JVM (Java Virtual Machine)
++ which execute java
+clojure also supports Common language runtime (clr)
++ which execute Microsoft's .NET Framework.
+clojurescript supports javascript
++ which execute javascript
+
+clojure is also a lisp
+lisp stands for "LISt Processing"
+list are fundamental part of the language design
+all lisps, clojure included, empoly prefix notation
++ means the operator always comes first in an expression.
+
+invented by Rich Hickey
+there a distinction between the Clojure language and the Clojure compiler
++ clojure language and clojure compiler are separate things
+clojure language is a lisp dialect with a functional emphasis whose syntax and
+semantics are independent of any implementation
+clojure compiler is and executable JAR file
+clojure.jar which takes code written in the clojure language and compiles it to
+Java Virtual Machine (JVM) bytecode.
+clojure is a hosted language
++ means clojure programs are executed within a JVM and rely on it for core
+  features like threading and grabage collection.
++ also targets JavaScript and the Microsoft Common Language Runtime (CLR)
+
+JVM main concepts:
+JVM processes execute Java bytecode.
+usually, the Java Compiler produces Java bytecode from Java source code.
+JAR files are collections of Java bytecode.
+Java programs are usually distributed as JAR files.
+The Java program clojure.jar reads Clojure source code and produces Java
+bytecode.
+That Java bytecode is then executed by the same JVM process already running
+clojure.jar.
+
+* environment
+leiningen create, build and automate clojure projects
+leiningen is a complete project automation and build tool for clojure
+
+java -version: check version
+download latest Java Runtime Environment (JRE)
+install leiningen; it automatically downloads the Clojure compiler; clojure.jar
+
+creating a new clojure project
+lein new app clojure-noob; creates a project skeleton named clojure-noob
+this project skeleton isn't inherently special or Clojure-y
++ convention used by leiningen
+project.clj: which is a configuration file for leiningen
++ tell leiningen what dependencies the project has
++ and when this clojure program runs, what function to run first
++ in general save your source code in src/<project_name>
+  + src/clojure_noob/core.clj: where you write code
++ test directory: contains test
++ resources: is where you store assets like images.
+
+running the clojure project
+(ns clojure-noob.core
+  (:gen-class)) ; declare a namespace
+(defn -main ; is the entry point to your program
+  "I don't do a whole lot...yet."
+  [& args]
+  (println "hello, world!"))
+lein run: in program directory
++ -main function: runs when you execute lein run at cli
+
+building the clojure project
+lein uberjar: create a stand-alone file that anyone with Java installed can
+execute.
++ creates the file target/uberjar/clojure-noob-0.1.0-SNAPSHOT-standalone.jar
+java -jar: executes the jar file
++ java -jar target/uberjar/clojure-noob-0.1.0-SNAPSHOT-standalone.jar
+
+
+** repl
+using the repl
+is a tool for experimenting with code
++ it does this by presenting you with a prompt where you can enter code.
++ it then reads your input, evaluates it, prints the result, and loops
++ presenting you with a prompt again.
+enables a quick feedback cycle
+lein repl: starts a repl
+conceptually the repl is similar to secrue shell (ssh)
++ the same way SSH to interact with a remote server; Clojure repl interact with
+  a running clojure process.
++ you can even attach a repl to a live production app and modify your program as
+  it runs.
+
+
+is an acronym for "read eval print loop"
+read-eval-print loop
+tool for experimenting with code
+lein repl command to start a repl seesion
+repl is a way for you to execute arbitrary pieces of code and to see the
+results.
+'user=>' indicates the namespace your code is going to be running within will be
+the user namespace.
+clojure allows you to segregate your code up into namespaces to help isolate
+specific functionality (similar files in separate folders)
+
+** emac
+peredit
+  (u () testing ) peredit-wrap-round
+* basic syntax
+file type .clj
+(operator operand operand)
+namespace is used to define a logical boundary between modules defined in
+Clojure
+current namespace defines the current namespace in which the current clojure
+code resides in.
++ *ns*
+
+forms: clojure recognizes two kinds of structures
++ literal representations of data structures
+  + number, strings, maps, and vectors
++ operations
+form refers to valid code
++ expression refers to Clojure forms
+clojure evaluates every form to produce a value
+rarely use free-floating literals
++ instead you use literals in operations
+operations: are how you do things
++ operations takes the from of
+  + opening parenthesis, operator, operands, closing parenthesis
+  + (operator operand1 operand2 ... operandn)
+clojure uses whitespace to separate operands
++ treats commas as whitespace
+clojure structure stays the same no matter what operator you use or what data
+you're operating on
+
+#+begin_src clojure :results output
+;; semantics: println is a function call, "hello" is a argument
+(println "hello World")
+;; structure: () is a list, println is a symbol, "hello" is a string
+#+end_src
+
+#+RESULTS:
+: hello World
+
+
+** Control Flow
+basic control flow operators
+if, do, and when
+general structure for an if expression
++ (if boolean-form
+    then-form
+    optional-else-form)
+boolean form: is a form the evaluate to a truthy of falsey value
+(if true/false
+  (println "prints if true")
+  (println "prints if false") ; if omitted returns nil
+  )
+  (if false ; returns nil
+    (println "prints if true")
+    )
+if uses the operand position to associate operands with the then and else
+branches:
++ first operand is the then branch
++ second operand is the (optional) else branch
++ each branch can have only one form
+do operator allows you to wrap up multiple forms with parenthesis and run each
+of them.
++ let do multiple things in each of the if expression's branches
+(if true
+  (do (println "true")
+      "true return value") ; return value of the only expression
+  (do (println "false")
+      "false return value")
+      )
+when operator is like a combination of if and do, but no else branch
+(when true
+  (println "true")
+  "return value"
+  )
+use when if you want to do multiple thing when some condition is true and you
+always want to return nil when the condition is false.
+boolean values true, false
+nil indicate no value
++ nil? check if value is nil
+nil and false represent logical falsiness
+all other values are logically truthy
+truthy and falsey refer to how a values is treated in a Boolean expression
++ like the first expression passed to if
+clojure's equality operator is =
++ can compare value of different types
+  + works with clojure built-in data structures
+boolean operators: or, and
++ or returns either the first truthy value, or the last value
+  + (or false nil "return me" "never looked here")
+  + (or (= 0 1) (= "yes" "no"))
+  + (or nil)
++ and return the first falsey value, or if no value are falsey then the
+  last truthy value
+  + (and "true but not last" "middle" "return me")
+  + (and "true but not last" false nil)
+** def
+def: bind a name to a value
++ treat def as if it's defining constants
+other languages say you're assigning a value to a variable
+changing the name associated with a name, makes it harder to understand your
+program's behavior
++ because harder to know which value is associate to the name
++ or why that value might have changed
+in clojure you'll rarely need to alter a name/value association
+(defn foo
+  [x]
+  (str "testing "
+  (if (= x true)
+    "true"
+    "false"))
+  )
++ create a function, foo
++ accepts a single argument, x
++ uses that to determine which string to return
+
+** require statement
+clojure code is pakaged in lbraries
+each clojure library belongs to a namespace, which is analogous to a Java package.
+you can load a clojure library with the require statement
+(require quoted-namespace-symbol)
+(require "clojure.java.io")
+
+** comments
+comment are used to document your code
+single line comments are denote by ;; at beginning of the line
+inline comment are denote by ; after code
+
+** delimiters
+statements can be split or delimited
+
+** whitespaces
+used to split different components of a statement of better clarity
+
+** symbols
+symbols are equivalent to identifiers
+the compiler sees symbol as actual string values
+can only contain alphanumeric charcaters and '*+!/.:-_?' but must not begin with
+a numeral or colon.
+
+* data types
+integers
++ decimal integers (short, long and int) used to represent whole numbers.
+  + short represent a short number
+  + int represent whole numbers
+  + long represent a long number
++ octal numbers used to represent numbers in octal representation
++ hexadecimal numbers used to represent numbers in hexadecimal representation
++ radix numbers used to represent numbers in radix representation
+floating point
++ used to represent 32-bit floating point numbers
++ other representation is the scientific notation.
+
+numbers: integer, float, ratio
++ 111 1.11 1/11
+
+char
++ defines a single character literal
++ denote by backlash, ex: /e
+boolean
++ represent a boolean value; true or false
+string
++ text literals and represented in the form of chain of characters
++ text literals which are represented in the form of chain of characters
+
+strings represent text.
+only allows double quotes to delineate strings
+doesn't have string interpolation
+only allows concatenation via str function
+
+nil
++ represent a NULL value
+atom
++ provide a way to manage shared, synchronous, independent state.
++ are a reference type life refs and vars.
+
+** bound values
+all datatypes are inherited for java
+literals 	Ranges
+Short 	-32,768 to 32,767
+int 	-2,147,483,648 to 2,147,483,647
+long 	-9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+float 	1.40129846432481707e-45 to 3.40282346638528860e+38
+double 	4.94065645841246544e-324d to 1.79769313486231570e+308d
+
+** class numeirc types
+object types also called wrapper types
+java.lang.Byte
+java.lang.Short
+java.lang.Integer
+java.lang.Long
+java.lang.Float
+java.lang.Double
+
+* variables
+variables are defined by the def keyword.
+a value is bound to a variable
+variables are immutable
+to change variable; it needs to be destroyed and recreated again
+variable declarations
+(def var-name var-value)
+var-name is the name of the variable
+var-value is the value bound to the variable
+naming variable
+can be composed of letters, digits, and the underscore character.
+must begin with either a letter or an underscore.
+clojure is case-sensitive
+
+what a symbol
+in its simplest form, is a reference to some other value
++ it's an identity of sorts
+what a variable
+is a mutable storage location
+when creating a variable, it is created within the current namespace
++ this prevents conflicts with other namespaces
+def function: create a variable
+(def foo "hello")
++ called the def function and passed the symbol foo and the string "hello" as
+  arguments.
++ def function associates the symbol foo with the string "hello"
++ when i call the symbol foo it returns the value associated with it "hello"
+variable are not available within other namespaces unless the are "interned"
+into them.
++ find variable x within this current namespace; and if it doesn't exist then
+  create it
++ can also "intern" variables from another namespace using the :refer feature of
+  the ns macro
+
+variables don't just contain single values (strings or data structures etc)
+they can also be assigned functions
+
+(def foo ; defined a foo variable
+(fn ; create an anonymous function
+[p] ; that take p as an argument
+(prn ; prints out a message
+(str "hi " p "!")))) ;
+clojure parser evaluates the str function and passes the result to the prn
+function
+
+
+the syntax structure of a function definition:
+(fn [arg1 arg2 arg3 ...] (fn-body...))
+anonymous function shorthand
+#(...)
+can pass arguments using the syntax %1, %2
+(map #(+ (+ 2 %1) 2) [1 2 3])
+
+the same as (foo)
+(defn foo
+  prn
+    (str "Hi " p "!"))
+
+** pre and post conditions
+execute code just before and just after the function body itself
+to validate the function arguments as they come in as well validate the result
+of the function is as expected
+
+we provide a map data structure just before the function body which contains
+:pre and : post keys (both are optional).
+each key is assigned a vector of functions which will be executed either
+directly before the function body, or just after it; and they should return a
+boolean true|false value.
++ you can refer to the function parameters within the :pre and :post functions,
+  as well as refer to the function body's result in the :post functions by
+  referencing %
+(defn <fn-name> [<args>]
+  {:pre [<fn1>, <fn2>, ...]
+  :post [<fn1>, <fn2>, ...]}
+  (<fn-body>))
+(defn my-sum [f g]
+  {:pre [(integer? f) (integer? g)]
+    :post [(integer? %)]}
+  (+ f g)
+  )
+(my-sum 2 5)
+(my-sum "2" 4)
+
+temp variables
+let function: define local variables
+let function: use a binding
+binding: assign a value to a symbol
++ that symbol exists only while the let block is executed, after which it
+  disappears.
+(let [foo "hi"]
+  (prn foo)) ; prints "hi" as a side effect, and returns nil
+  bind the value "hi" the a temp symbol foo
+  then use the foo symbol to print out the value.
+local variables created via let aren't really variables; their values cannot be
+changed once set
+
+dynamic variables
+when creating variables, the are binded to the current namespace and are marked
+as "static".
+but variables can be dynamically changed; for a temporary period of time.
+binding macro: allows a current thread to manipulate the value of a variable
+while execution is happening within its block
++ similar to let function
+(def ^:dynamic my-name "Mark")
+(prn my-name)
+(binding [my-name "Bob"]
+  (prn my-name))
+added the metadata ^:dynamic
+now when using the binding form we can dynamically change the variable's value
+temporarily.
+it reverts back once the block has finished.
+
+useful for testing purposes: remember functions can be assigned to variables too
+could dynamically swap out the function implementation
++ with-redefs and with-redefs-fn
++ can provide aspect-oriented programming
+
+
+* operators
+an operator is a symbol that tells the compiler to perform specific mathematical
+or logical manipulations.
+types of operators:
++ arithmetic operators
++ relational operators
++ logical operators
++ bitwise operators
+(operator operand1 operand2 operandn)
+
+** arithmetic operators
+(+) addition of two operands
+(-) subtracts second operand from the first
+(*) multiplication of both operands
+(/) division of numerator by denominator
+(inc) increment the value of an operand by 1
+(max) returns the largest of its arguments
+(min) returns the smallest of its arguments
+(rem) remainder of dividing the first number by the second
+** relational operators
+** logical operators
+** bitwise operators
+
+Simple Values
+Numbers
+
+Arithmetic
+add + return the sum of nums. (+) return 0. Does not auto-promote longs, will
+throw on overflow.
+#+begin_src clojure
+(+)
+(+ 1)
+(+ -10)
+(+ 1 2)
+(+ 1 2 3)
+(+ 1/2 1/2)
+(apply +(range 1 10))
+
+(apply + (range 10000000000000 10000000001000))
+;; ArithmeticException: integer overflow
+
+(apply +' (range 10000000000000 10000000001000))
+;;=> 1000000000499500
+
+#+end_src
+
+(+')
+
+sub
+(- x) (- x y) (- x y & more)
+returns the subtraction of nums.
+if no second
+
+muti
+div
+
+vector enclosed in brackets for defining local bindings
+write its own data structures; homoiconicity
+scalar data types; numbers, strings, and floats; symbols, keywords, regexes
+(regular expressions), vars, atoms, and volatiles
+clojure code is made of s-expressions and s-expressions are just lists.
+two data types in clojure: scalar and collections
+scalars: primitive types
++ strings "this is a string" a string of characters
++ boolean true false literal boolean values
++ character \c \u0045 character values are java.lang.Character can define
+unicode characters
++ keywords :key :sample :some-keyword
+  + they evaluate themselves and the are often used as keys
+collection data types: sequential and associative collections
+sequential are things you can iterate, such as list
+associative are maps, set, and things you can access by certain index
+clojure collections are  immutable
+list vector set map
+namespaces (ns)
+:import
++ (:import java.util.List)
++ (:import [java.util ArrayList HashMap])
+:require
++ (:require [some.package :refer [a-function another-function]])
++ (:require [some.package :refer [:all]])
++ (:require [some.package :as s])
+  + (s/a-function 5)
++ (:require [some.package :as s :refer [a-function]])
+
+functions
+anonymous function
+(fn [parameters] (code))
+((fn [para] (code)) call)
+def, defn
+multi-arity functions
+(defn name
+([] (runs with no parameters))
+([para] (runs with a parameter))
+([para para2] (runs with parameters))
+)
+variadic funcitions
+
+* data structures
+list: (1 2 3)
+vector: [1 2 3]
+map: {:foo "bar"}
+set: #{1 2 3}
+
+there are no delimeters between individual elements
++ means , are not need to separate elements in a sequence
+
+all data structures can be mixed and nested
++ [1 2 [3 {:name "mark"}]]
+can refer to all these data structures as "sequences"
+sequences offer the ability to share functionality
+
+many more functions for working with sequences/-collections and because of the
+sequence abstraction that clojure implements we can utilize these functions
+across different data structures
+Sequence Abstraction
+
+all clojure data structures are immutable
++ meaning you can't change them in place.
+
+** list
+list are similar to vectors
++ linear collections of values
++ differences can't use get on lists
+list: '(1 2 3)
+nth function retrieve an element form a list
++ (nth '(val val1 val2) val3)
+performance tip:
++ nth is slow than get
+  + clojure has to traverse all n elements of a list to get to the nth
+  + whereas clojure can access a vector by its index
+list values can be any type
+list function can create a list
+(list 1 "two" {3 4})
+when should you use a list and when should you use a vector
++ should use a list
+  + if you need to easily add items to the beginning of sequence
+  + if you're writing a macro
++ otherwise use vector
+
+
+list uses parentheses as its surrounding delimiters
++ empty list ()
++ list with elements ("a" "b" "c")
+lisp language api utilize the same syntax as the underlying data structures it
+manipulates.
+which allow the language to rewrite itself and implement additional features not
+initially designed for; using macro
+lisp base language uses the same syntax as the underlying data structures
+syntax for executing a function same as list data structures
++ (+ 1 2) is a function call which produces the result of 1 + 2
++ and also a list with an function (+) and to arguments (1 2)
+(fn arg1 arg2 arg3) ;; syntax structure for calling a function
+in a list clojure expects the first element to be function
+and the remaining elements to be arguments that are passed to the function.
+
+in clojure a list is implemented as a linked list
++ which means if you want to loop through its contents you'll have to start from
+  the beginning of the list and move next, until you reach the end of the list.
++ a list very efficient at putting new elements onto the beginning of itself
++ but not at putting new elements onto the end of itself
+  + because it could take some time to step through each elemnet in the list
+    trying to find the end.
+
+add a value onto a linked-list data structure:
++ cons function: will insert your value at the beginning of the list
+  + (cons 4 '(1 2 3)) ; => (4 1 2 3)
++ conj function: will pick the correct method for inserting the new value
+  depending on the underlying data structure.
+  + (conj (1 2 3) 4) ; => (4 1 2 3) ; for list will place value at start
+  + (conj [1 2 3] 4) ; => [1 2 3 4] ; for vector will place value at the end
+
+(list ): create list
+'(): prevents clojure from evaluating the list as a function; instead treat it
+as an actual list data structure.
+
+other abstraction functions (like conj); which help to determine the right
+'process' for the data structures they're being applied to
++ handle things differently depending on the data structure being provided.
+  + it know that a list is a linked list and so it handles things from the
+    beginning of the data structure
+  + it know a vector has "index access" and so it's more performant at working
+    from the end of the data structure.
++ (peek [1 2 3]) ; => 3
++ (peek '(1 2 3)) ; => 1
++ (pop [1 2 3]) ; => [1 2]
++ (pop '(1 2 3)) ; => (2 3)
+
+** vector
+vectors is similar to an array
++ 0-indexed collection
++ (get [val val2 val3] 0)
+vectors can be any type
++ can mix types
+vector function: create a vector
++ (vector val val1 val2)
+conj function: add additional element to the vector
++ to the end of vector
++ (conj [1 2 3] 4)
+
+vectors resembles an array
++ there are subtle and semantic differences
++ and this allows you to have index access to any element within the data
+  structure.
+vector are zero-indexed
++ means they start at zero
+get function: allow retrieve an element; works across all types of collections (
+inc. maps and sets )
++ (get [1 2 3 4 5] 3) ;; => 4
+nth function: same as get but only works on vectors and lists.
+assoc function: can modify the vector
++ an abbreviation of "associate"
++ (assoc [arg1 arg2 arg3] index new-value)
++ (assoc [1 2 3 4 5] 5 6) ;; => [1 2 3 4 5 6]
+pop function: return a copy of the vector but with the last element removed
++ (pop [1 2 3 4 5]) ;; => [1 2 3 4]
+
+remove elemnets from the middle of a vector
++ its complex with a Lisp
++ vector aren't the best to use; use a hash map instead
++ can use subvec function
+  + grab a slice
+  + (subvec [1 2 3 4 5] 1 3) ; => [2 3]
++ can do something more automated
+  (vec => [1 2 4 5]
+    (concat ; => (1 2 4 5)
+    (subvec [1 2 3 4 5] 0 2) ; => [1 2]
+    (subvec [1 2 3 4 5] 3) ; => [4 5]
+    ))
+** map
+maps are similar to dictionaries or hashes in other languages.
+associating some value with some other value.
+two types: hash maps and sorted maps.
+{} empty map
+{:keyword value}
+{:keyword function}
++ associate with a function
+{:keyword {:keyword value :keyword value ...}}
++ nested map
+map values can be any types
++ strings, numbers, maps, vectors, functions
+hash-map function: create a map
++ {hash-map :keyword value}
+get function: look up values
++ (get {:keyword value} :keyword)
++ (get {:keyword value :nested {:keyword value}} nested)
++ (get {:keyword value} :not-there) ; returns nil
++ (get {:keyword value} :not-there default-val) ; returns default-val
+get-in function: look up nested values
++ (get-in {:keyword value :nested {:keyword value}} [:nested :keyword])
+can treat the map like a function
+  + and use the key as argument
+  + to look up a value
+({:keyword value} :keyword)
+
+map data structure goes by many different names: hash, hash map, dictionary
+a map is a key/value lookup
+you provide a key and associate a value with that key
+the colon prefixing the key; indicates that the key is a "keyword"
+{:my-key "my value"}
+(get {:my-key "this is my value'} :my-key) ; => "this is my value"
+(:my-key {:my-key "my value"})
+(find {:a 1 :b 2} :a) ; => [:a 1]
+(assoc {:foo "bar"} :bar "qux") ; => add a key/value pair
+(dissoc {:foo "bar" :baz "qux"} :baz) ; => remove a key/value pair
+select-keys function: return a new map consisting of a specific key
+(select-keys {:name "Mark" :age 33 :location "London"} [:name :location])
+
+if you create a key using a string, every time reference that key you'll be
+recreating it in memory.
++ created in memory over and over
+where as referencing a key, via a keyword, is only done once; in memory
++ created only once in memory and reused
+
+keyword function: convert string into a keyword
+(keyword "my-str")
+name function: convert keyword into a string
+(name :my-str)
+
+if you use keys inside a map then the keyword acts like a get function
+
+(contains? {:foo "bar" :baz "qux"} :foo) ;; => true
+
+keys function: returns all the keys
+vals function: returns all the values
+
+replace function: create new vector with values extract from a map
+(replace {:a 1 :b 2 :c 3} [:c :b :a]) ; => [3 2 1]
+also work on vectors; using index values rather than keys
+
+structs
+are a simple way to generate maps from a predefined structure
+
+create-struct function: create a struct
+(def person (create-struct :name :age :sex))
+(defstruct person :name :age :sex)
+struct function
+(struct person "Mark" 33 "Male")
+
+** Set
+set are collections of unique values
+two kinds of sets: hash sets and sorted sets
+hash set:
++ #{"str" 1 :key}
++ hash-set function: create a set
+  + (hast-set 1 1 2 2)
+    + multiple instances of a value become one unique value in the set
+  + (conj #{1 2 3} 3)
+    + will ignore same value
++ set function creates a set from existing vectors and lists
+  + (set [1 2 3 4 4])
+  + (set (1 2 3 4 4))
+check membership: contain?, get, :keyword
+(contain? #{1 2 3 4} 4)
+  + returns true or false
+(:key #{:key :key1 :key2})
+  + returns value if it exist
+(get #{1 2 3 4} 4)
+  + returns value if it exist
+
+
+set is a data structure made up of unique values.
+#{1 2 3 :a :b :c} ; => #{1 :c 3 2 :b :a}
+the order of a set is not guaranteed
+sorted-set function: create sorted sets
++ (sorted-set 3 1 2) ; => #{1 2 3}
++ with a sorted you can't have mixed types
+apply function:
++ which works for any collections: vectors, maps, and sets
++ (apply sorted-set #{3 1 2}) #{1 2 3}
+conj function: add a new value to the set
++ (conj #{1 2 3} 4) ; => #{1 4 3 2}
+if value already exists; then it'll be quietly ignored
+  + (conj #{1 2 3} 3) ; => #{1 2 3}
+helpful when you filter out duplicates
+(set [1 1 2 2 3 3 4 5 6 6])
+(apply sorted-set [1 1 2 2 3 3 4 5 6 6])
+
+It is better to have 100 functions operate on one data structure than 10
+function on 10 data structures.
+-- Alan Perlis
+
+** keywords
+use keywords as functions to look up their values
+(:keyword {:keyword value})
+can provide a default value
+(:not-there {:keyword value} default-val)
+
+* functional programming
+
+clojure is a functional language; functional programming features
+immutability
+referential transparency
+first-class functions
+partial application (and currying)
+recursive iteration
+composability
+
+immutability: avoids mutating state.
+if you have state and it can change, then once your application becomes
+distributed and concurrent (i.e. multi-threaded)
+bad; when many different threads can start manipulating your data at
+non-deterministic times.
+can cause your application to fail at any given moment and become very hard to
+debug and reason about.
+immutability: can side step this problem
++ every time you manipulate a data structure you are returned not a mutated
+  version of the original but a whole new copy with your changes applied.
+
+referential transparency: is when an expression can be replaced by its value
+without changing the behavior of a program.
++ it's when you define a function that takes an argument and always returns the
+  same value when given the same argument
++ (defn sum [x y]
+    (+ x y))
+   (sum 1 1)
++ the above function sum  is referentially transparent.
++ no matter what happens, if i provide the same set of arguments, i'll always
+  get back the same result.
+object-oriented language (oop) is more about encapsulating data/state and
+providing controlled access via object methos
+functional programming is about the flow of a software system, in that data is
+passed through a set of functions that manipulate the data as it makes it way
+through and out to the end user (i.e. the data is filtered)
+every program needs state of some sort and so that's why clojure is not a
+"strict" FP language like maybe haskell
+clojure's philosophy is to strive for being functional and referentially
+transparency whenever possible.
+
+
+first-class functions: needs to be able to store off functions and to pass
+functions around as if they were values
+passing functions around as values is also possible within clojure and that
+ability help to promote "higher-order functions"
+higher-order functions: is one that can either take or return a function as a
+value.
++ map, reduce, comp, apply, partial, filter
+(:require clojure.string)
+(defn cap [s]
+  (clojure.string/upper-case s))
+(defn greeting [c s]
+  (prn (c s)))
+(greeting cap "foo bar")
++ defined a cap function and passing it to a greeting function
++ demonstrates how functions can be passed around as if they were values
+  + is the first half of the "first-class function" requirement
++ clojure.string/upper-case is a "fully qualified" function
+  + fully qualified function: means we give an explicit/direct path to where the
+    function can be located.
+  + found within the clojure.string namespace
+first-class function; the other half is the ability to return a function from a
+function.
++ as apposed to returning a value from a function
+partial function: doesn't return a value but another function
+(defn sum [x y]
+  (+ x y))
+(def add-on-five (partial sum 5))
+(add-on-five 10)
+demostrating first-class functions:
+complement function: takes in a predicate and return a predicate
++ return reverse boolean
++ predicate is what you call a function if it return a Boolean value
++ suffix a question mark onto the name of predicates
+  + empty?
+((complement empty?) "")
+((complement not-empty) "')
++ pass an empty string into our new predicate function
++ return reverse boolean
+apply function:
+(apply str ["a" "b" "c"])
++ takes a function str
+  + str which concatenates string together
++ and a collection and then pass each element in the collection to the specified
+  functions.
+(apply str ["a" "b" "c"])
++ similar to (str "a" "b" "c"), but we used collection instead
+map function:
+(map inc [1 2 3])
++ using map to apply a function "inc" to a collection "[1 2 3]"
+  + increment each value in the collection by one.
+if map over a map data structure, you'll get back a list data structure
++ and not in the order you expected
+(map
+  (fn [[k v]] (inc v))
+    {:a 1 :b 2 :c 3})
+construct the returning data structure; resembles key/value structure
+(map
+  (fn [[k v]] [k (inc v)])
+  {:a 1 :b 2 :c 3})
+convert our key/value structure (the list of sub vector) back into a map for a
+  list:
+(into {}
+  (map
+  (fn [[k v]] [k (inc v)])
+  {:a 1 :b 2 :c 3}))
+reduce function:
+(reduce + [1 2 3])
+  + add 1 and 2; accumulated
+  + add 3 and 3; return result
++ reduce require an accumulator
++ accumulator is passed through each iteration
+  + you can provide an initial value for an iterator
+    + if not then first two elements in the collection are used
+a more explicit example:
+(reduce
+  (fn [acc element]
+    (assoc acc (first element) (last element)))
+  {}
+  [[:a :b] [:c :d]])
+  + anonymous function; help visually highlight how the accumulator is being
+    modified and passed back into the function for each iteration.
+  + initial value {}; which is what we're reducing down to.
+  + taking a set of nested vectors and generating a single level map
+    + from the contents of the vector
+whatever is the last expression; or the thing that is returned at the end of the
+function
++ is what will be used as the accumulator on the next iteration.
+filter function:
+(filter even? (range 10))
++ executing a predicate function against each element in the collection
++ and subsequently returning a new collection made from the elements that
+  returned true when passed the predicate
++ create a collection using range function
++ each element in that list is passed to even?
+  + even?: returns true if number even or false otherwise
+filter: returns a list
+filterv: returns a vector
+comp function:
+
+partial application (and currying)
+recursive iteration
+composability
+
+
+* functions
+calling functions
++ opening parentheses, operator, operands, closing parenthesis
++ function call
+  + an operation where the operator is a function
+  + a function expression (an expression that returns a function)
+  + are expressions that have a function expression as the operator.
+(or + -) ; an function expression
++ return first truthy value in a string representation
+  + addition function as a string representation
+((or + -) 1 2 3) ; an function expression with an function operator nested
+inside
++ return first truthy value; which is addition
++ then evaluate addition function with arguments
+  + (+ 1 2 3)
+((and (= 1 1) +) 1 2 3)
++ (= 1 1) return true
++ (and true +) returns first falsey value or last truthy value; +
++ (+ 1 2 3) returns 6
+((first [+ 0]) 1 2 3)
++ (first [+ 0]) returns first element in collection; +
++ (+ 1 2 3) returns 6
+numbers and string aren't functions
+functions can take any expressions as arguments
++ included other functions
+higher-order functions: functions that take either a function as an argument or
+return a function
+first-class function: are function treat as values
++ found in language's with higher-order functions
+inc function: increments a number by 1
++ (inc 1)
+map function: creates a new list by applying a function to each member of a
+collection
++ (map inc [0 1 2 3])
++ map allow you to generalize the process of transforming a collection by
+  applying .function--any function--over any collection.
+other languages
++ for example, the + function abstracts addition over any specific numbers
+clojure (and all lisp)
++ allows you to create functions that generalize over processes.
+about function calls: evaluates all function argument recursively before passing
+them to the function
++ (+ (inc 199) (/ 100 (- 7 2)))
+  + (+ 200 (/ 100 (- 7 2))); evaluate (inc 199)
+  + (+ 200 (/ 100 5)) ; evaluated (- 7 2)
+  + (+ 200 20) ; evaluated (/ 100 5)
+  + 220; final evaluation
+
+macro calls, special forms
+special forms:
++ definitions and if expressions
++ unlike function calls, they don't always evaluate all of their operands
++ in general can't use them as arguments to functions
+marco calls:
++ macros are similar to special forms in that they evaluate their operands
+  differently from function calls
++ and they can't be passed as arguments to functions
+
+defining functions
+function definitions are composed of five main parts
++ defn
++ function name
++ a docstring describing the function (optional)
++ parameters listed in brackets
++ function body
++ (defn function-name
+    "docstring"
+    [parameters]
+    (function-body)
+    )
+the docstring: is a useful way to describe and document your code.
++ doc function: show the docstring for a function
+  + (doc fn-name)
++ when you use a tool to generate documentation for your code.
+  + docstrings are used
+parameters and arity:
++ clojure functions can be defined with zero or more parameters.
++ the values you pass to functions are called arguments
+  + the argument can be of any type
++ the number of parameter is the function's arity
++ (defn one-params ; 0-arity function
+    []
+    "no parameters")
++ (defn one-params ; 1-arity function
+    [x]
+    "one parameter")
++ (defn two-params ; 2-arity function
+    [x y]
+    "two parameters")
++ arity overloading: means defining a function so a different function body will
+  run depending on the arity.
+the general form of a multiple-arity function definition
++ each arity definition is enclosed in parentheses and has an argument list
+  + (defn multi-arity
+      ;; 3-arity arguments and body
+      ([first-arg second-arg third-arg]
+        (do-things first-arg second-arg third-arg))
+      ;; 2-arity arguments and body
+      ([first-arg second-arg]
+        (do-things first-arg second-arg))
+      ;; 1-arity arguments and body
+      ([first-arg]
+        (do-things first-arg)))
++ (defn greet
+  "this is a greeting"
+  ([name age]
+  (str "Hi " name " you are " age " old"))
+  ([name]
+    (greet name "way too"))
+  ([]
+    (greet "John" 21)))
+  (greet "jb" 30)
+  (greet "john")
++ rest parameter: allows you to define variable-arity functions
+  + indicated by an ampersand (&)
+  + put the rest of these arguments in a list with the following name
+  + argument in variable-arity functions are treated as a list
+  + (defn non-rest
+      [non-r]
+      (str "foo barr " non-r))
+    (defn rest
+      [& resty]
+      (map non-rest resty))
+    (rest "te" "est")
+  + you can mix rest parameters with normal parameters, but rest parameters must
+    come last
+    + (defn testing
+        [x & y]
+        (str "foo " x " bar: " (clojure.string/join ", " y)))
+      (testing "i'm x" "i'm" "y" "plus" "friends")

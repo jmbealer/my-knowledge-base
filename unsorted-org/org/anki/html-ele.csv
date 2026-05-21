@@ -1,0 +1,18 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+
+html type,0-current-using::html-elements-wip,{{c1::&lt;!doctype&gt;}},Defines the document type,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;html&gt;}},Defines an HTML document,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;title&gt;}},Defines a title for the document,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;body&gt;}},Defines the document's body,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;h1&gt; to &lt;h6&gt;}},Defines HTML headings,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;p&gt;}},Defines a paragraph,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;br&gt;}},Inserts a single line break,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;hr&gt;}},Defines a thematic change in the content,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;!--...--&gt;}},Defines a comment,html basic
+html type,0-current-using::html-elements-wip,{{c1::&lt;head&gt;}},Defines information about the document,html meta info
+html type:0-current-using::html-elements-wip,{{c1::&lt;meta&gt;}},Defines metadata about an HTML document,html meta info
+html type:0-current-using::html-elements-wip,{{c1::&lt;base&gt;}},Specifies the base URL/target for all relative URLs in a document,html meta info

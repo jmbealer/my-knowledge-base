@@ -1,0 +1,665 @@
+:PROPERTIES:
+:ID:       c1cbc82c-ad99-4ae6-80a8-a9d83d2e71b8
+:mtime:    20230206181537 20220716191000
+:ctime:    20220716171946
+:END:
+#+title: Career Networking
+#+date: [2022-07-16 Sat 17:19]
+
+What is networking?
+Networking is the practice of making new friends and acquaintances and nurturing the relationships that you already have.
+
+** Telling your story
+*** Brainstorming your professional narrative
+
+All varieties of networking include meeting and introducing yourself to new people.
+Sometimes this happens in a group setting, while other times it's one on one.
+Sometimes you have two minutes to pitch yourself, and other times you have an hour.
+
+A good introduction should clearly articulate your selling points and goals in the event that the conversation can move you one step closer to your next job.
+To ensure that every introduction is a success, spend some time thinking about how you want to introduce yourself before you start networking.
+The first thing to do is determine what and how much you should say about yourself.
+
+Unlike casual introductions, your professional narrative (sometimes referred to as an elevator pitch) should be a minute-long summary of your professional experience and career goals.
+It should answer the following questions:
++ Who are you?
++ What do you do?
++ Why are you at Thinkful?
++ What relevant skills do you have?
++ What are your career goals?
+
+*** Making a list
+
+First, open a blank document on your computer and set a timer for 10 minutes.
+Start listing everything that you can think of about your past work and education.
+
+Include the jobs that you've had, courses that you've taken, organizations that you've volunteered with, and awards and honors that you've received.
+Remember to include your Thinkful program!
+
+*** Identifying transferable skills
+
+Using the list that you just brainstormed, write down every transferable skill that you gained in those roles and experiences.
+Transferable skills are skills and abilities that can be used in a variety of jobs.
+
+For example, someone who has worked as a barista could include teamwork and customer service as transferable skills, because most jobs require those skills.
+
+To help with this exercise, here's a list of common transferable skills:
+List of common transferable skills.
+
+*** Identifying relevant skills
+
+After you list all of your transferable skills, spend some time identifying the skills that are especially relevant to the jobs that you're interested in.
+Also, consider the skills that aren't necessarily required for the jobs that you want, but could set you apart from other candidates.
+Some examples are management experience or particularly strong design or writing skills.
+
+*** Identifying what you're most excited about
+
+Hard skills are important, but keep in mind that the most compelling job candidates are those who are genuinely excited about the industry that they're in.
+Spend some time thinking about what you like best about the work that you're doing in your Thinkful program.
+
+Reflect on why you decided to make this life-changing commitment, what you're most excited about doing when you get a job, and what parts of the job you could do for hours for pure enjoyment.
+Write them down.
+
+*** Identifying what makes you unique
+Look at everything that you've written down so far.
+What makes you positively unique as a candidate?
+Is it a past experience or a rare combination of skills?
+
+These are your selling points; these are what make you special and particularly compelling to employers.
+
+*** Identifying your career goals
+
+Finally, take a moment to clearly articulate where you want to take your career.
+What do you want your next job to be? Why? What sorts of companies and teams appeal to you? What kind of work do you find rewarding?
+
+Including your immediate career goals in your professional narrative helps employers learn what you're interested in.
+It also helps people understand how to connect you with others.
+
+*** Writing your professional narrative
+
+Once you're done brainstorming the parts of your professional narrative, it's time to write it out from start to finish.
+You can do this by writing out a complete paragraph or by making a list of bullet points.
+
+Although you eventually want to memorize your professional narrative, it's handy to also have a written copy available to refer to.
+Remember, your professional narrative should include each of these elements:
++ Who you are
++ What you do
++ Why you're at Thinkful
++ Your relevant skills
++ Your career goals
+
+*** Crafting your personal narrative: Examples by industry
+
+Your professional narrative might look something like the examples below:
+
+Software engineering
+Hi, I’m Ari.
+I'm currently studying software engineering at Thinkful.
+Specifically, I'm working with HTML, CSS, and JavaScript.
+I've always really loved design and have enjoyed being a graphic designer, but I
+wanted to move to a medium that gave me more creative freedom.
+My hope is to transition into a frontend development role when I graduate in three months.
+
+Or, as a bulleted list, that last example might look like this:
+    Ari
+    Graphic designer
+    Studying software engineering
+    HTML, CSS, JavaScript
+    Wanted more creative freedom
+    Interested in frontend development
+
+However you end up conveying these points, aim to communicate in a way that seems natural and not robotic.
+You want the listener to feel like they're having a fun conversation, and not like they're on the receiving end of a prescripted speech (even if they are).
+
+*** Telling your professional narrative
+
+So that you can tell your professional narrative naturally and confidently, practice saying it aloud—a lot.
+Rehearse it to yourself, to friends, to a pet.
+This also helps you memorize your talking points.
+Following are a few best practices.
+
+*** Being concise
+
+Remember, you should be able to tell your professional narrative in about a minute.
+This ensures that you give the listener a clear idea of who you are, without monopolizing the conversation.
+
+Time yourself when you practice telling your professional narrative.
+If you finish in less than 30 seconds, you probably have room to add more details.
+If you're over 90 seconds, think about what you can remove.
+And don't worry—you can always share more details later in the conversation.
+
+*** Being flexible
+
+Every interaction is different, so it's good to be flexible in how you tell your story.
+You don't need to share every detail, in the same order, using the same words every time.
+Just become familiar with your main talking points and see where the conversation takes you.
+
+*** Being critical
+
+Ask your family and friends to give you constructive feedback on your professional narrative.
+Record yourself and pay attention to your tone and cadence.
+
+Do you sound confident and friendly, or aggressive and salesy?
+Do you share too much or not enough?
+Keep practicing and refining your professional narrative until it's just right.
+
+*** Engaging the listener
+
+Ideally, your professional narrative is the start of a two-way conversation.
+Unless the person you're talking to needs to leave, you should end your introduction by asking them a question to keep the conversation going.
+Here are some examples:
+    What about you? What field do you work in?
+    How did you get started in this role?
+    Let me know if you have any tips or know of any companies that I should talk to.
+
+All this might seem like a lot of effort, but a thoughtful introduction can open a lot of doors for you.
+And one of those doors might lead to your next job.
+
+*** Supplementary resources
+    Transferable skills worksheet
+https://assets.ctfassets.net/c7lxnbtvvcxm/5Snu2lDZkP72sz2GuN8uUx/dd4834c9dfb56700358c8f9cf2023287/Careers_-_Transferable_SkillsUpdated.pdf
+
+** Leveraging your network
+*** Identifying your network
+
+First things first—take some time to identify who is in your current network. Think about everyone you're connected to: your family, your friends, your current and former coworkers and classmates, your acquaintances, your social media connections, and that person you always see at your favorite coffee shop. This is your current network, and it can help you in your job search.
+
+Although it's always helpful to grow your network, you can first focus on contacts you already have. (Plus, if you're nervous about networking with strangers, it can be nice to start by engaging your current network.) You probably already know someone who works in your desired field, or you may know someone who knows someone who works in your desired field.
+
+Make a list of everyone you know who might be able to boost your job search. This list will also be handy for future networking lessons.
+
+Here are some people to consider:
+
+    People in your desired field: Who in your network works in your desired field? Add them to your list.
+
+    People at companies that you might like to work at: What companies or types of companies interest you? If you know people who work at these companies, add them to your list. Even if they don't have the specific job that you want, they probably know or could easily find someone at the company who does.
+
+    People who know someone in your desired field: Who do you know who knows someone who works in your desired field or at a company that interests you? Add them to your list. People are generally happy to make an introduction for you or share any wisdom that they've gained.
+
+    People who orbit around you: Who do you need to reach out to? Who are the people you see or interact with regularly—the people who could be in your network if you'd just introduce yourself? You never know if your barista, the people who share your coworking space, or the stranger in line next to you at the grocery store is the key to your next networking revelation. So, get in the habit of starting casual conversations with the people around you, and see where it takes you.
+
+*** Engaging your network
+
+When you have a robust list of people at your fingertips, it's time to start engaging.
+
+In-person meetings tend to get the most positive responses, but even a short video chat, email, or social media message is a good place to start.
+
+For everyone who you reach out to, do the following:
+
+    Tell them your career goals.
+
+    Tell them how they can help you. This could include sharing their personal experience with you, connecting you with someone in their network, keeping you in mind for job opportunities, or sharing your resume with their hiring managers.
+
+    Tell them how much you appreciate them. No one likes feeling used. Be kind, personable, and gracious to everyone who takes the time to talk to you.
+
+You may be surprised to learn how willing and eager people are to help you—they just need to know how.
+
+If you want more information about how to specifically use Slack to help make connections, see the Slack for networking lesson.
+*** Supplementary resources
+in-person meeting
+https://www.entrepreneur.com/article/296590
+
+    LinkedIn-friendly cold outreach messages
+https://assets.ctfassets.net/c7lxnbtvvcxm/6ev4z2Lb7ItC60XWWXlifW/a30d3a87b1f9f101c799a398aab9c8a8/Careers_-_LinkedIn_Friendly_Cold_Outreach_Templates.docx
+    Networking message format
+    https://assets.ctfassets.net/c7lxnbtvvcxm/4GD8YQnsWcETYhbHg5LtAu/fe973ce7e121059a581ae71d6c55af7e/Careers_-_Networking_message_format_and_sample.docx
+** Conducting informational interviews
+***  What are informational interviews?
+
+An informational interview is a one-on-one conversation with someone who has a job that you might like, who works within an industry you might want to enter, or who is employed by a specific company that you're interested in learning about.
+Essentially, it's getting coffee with someone whose knowledge or experience can benefit you.
+
+Informational interviews can grow your network, connect you to people who work at companies or in jobs that interest you, and pair you with a mentor.
+They can also provide valuable information about how you can refine your job search and prepare for an interview.
+
+Most people are more than happy to share their insights, tips, and connections with you.
+You just need to make the effort to set up a meeting and ask the right questions.
+
+***  Setting up an informational interview
+
+Setting up an informational interview is easier than you think.
+All you need to do is determine who you want to meet and then extend an invitation.
+Here are a few tips.
+
+*** Determining who you should interview
+
+Informational interviews are an opportunity for you to glean insights and tips from industry experts—people who work in a job, company, or industry that interests you.
+They can be people who are already in your network (or your network's network) or complete strangers.
+
+Utilizing your network
+When thinking about who you want to conduct an informational interview with, it's easiest to start by considering your network.
+Your family, your current and past friends, classmates, and coworkers, as well as their friends and family, and so on.
+
+Who among this group works in a job or at a company that interests you? Those are good people to interview.
+
+Utilizing strangers
+While it's nice if there are already people in your network who you can interview, there's no need to limit yourself.
+It's perfectly okay—and encouraged—to conduct informational interviews with complete strangers.
+Most strangers are happy to share their knowledge and advice with you.
+You just need to ask politely.
+
+Think about it.
+If a stranger told you that they're considering enrolling in your same Thinkful program, but wanted to first hear what someone in the program thought of it, you'd probably be willing to indulge them, right?
+
+You can find these friendly strangers by browsing the team pages of company websites.
+You can also search LinkedIn for people who work in roles at companies that interest you.
+
+*** Requesting an informational interview
+
+Direct outreach
+If you want to conduct an informational interview with someone in your personal network, like a friend or former coworker, just call, text, or email the person and ask if they're willing to chat about their experience.
+
+Warm outreach
+If the person you want to connect with is a stranger to you but is connected to someone in your network, ask your common connection if they're willing to make an email introduction, and then go from there.
+
+Cold outreach
+If the person is a complete stranger with no common connections, like someone you discovered on LinkedIn, you can send them a message on LinkedIn. Otherwise, email them if you have their email address.
+
+Whichever method you choose, your message should start with your request. Be brief, be personalized, be respectful, and provide context.
+
+Also, make your request one that's easy for the person to say yes to. While in-person hangouts are best for establishing a relationship, be okay with talking over the phone or via a virtual hangout if that's better for the person you're interviewing.
+
+Suggest meeting in a location that's easy for the person to get to, like their office or favorite coffee shop. Offer to pay for their coffee (and actually do). Request meeting for 30 minutes instead of an hour.
+
+Here's an example of how you might ask a stranger to conduct an informational interview with you:
+Hi, Luis,
+Would you be willing to get coffee with me in the next month? My treat, and I promise to only take 30 minutes of your time!
+My name is Taylor and I'm currently studying product management, with the goal of applying those skills to the medical industry.
+Because I'm new to this, I'm hoping to connect with some seasoned professionals in my area who would be willing to share some of their experience and advice—the things you maybe would have benefited from knowing when you started out.
+I'm particularly interested in talking to you, since you're a product manager at Seattle Cancer Care Alliance, and because I'm a fan of your Medium posts (my favorite is the one about agile methodologies).
+Thank you, and I hope to chat more soon! Taylor
+
+If two weeks pass and the person hasn't responded, it's okay to check back in. It's possible that they didn't see or forgot to respond to your message. Here's an example of a good follow up:
+Hey, Sofia,
+Just in case you missed my last message, I wanted to circle back and see if you're able to talk sometime in the next few weeks. If coffee doesn't work, a quick phone call or Google Hangout would be great too.
+Hope you're having a nice week!
+Respectfully, Sam
+
+If the person responds and says that they're willing to meet, it's your job to coordinate the details of the meeting and accommodate their schedule. Respond by thanking them in advance for their time.
+
+Suggest possible times to meet (ideally within the next week so that you're not forgotten). Emphasize your flexibility and willingness to accommodate their schedule and preferences.
+
+Finally, express enthusiasm for when the chat does happen. Here's an example of how to do that:
+Thanks so much for agreeing to this! I can't wait!
+Are you available any morning or evening next week at a coffee shop near your office—or any other time and place that's convenient for you?
+Gratefully, Orly
+
+To stay organized and effective, keep track of the names and dates of the people you reach out to so that you know when to follow up. Pay attention to which styles of messages get the most positive responses and adjust your future messages accordingly.
+
+If at first you don't succeed, try again. The worst-case scenario is that someone says no. That's okay. Someone else—multiple people, even—will say yes.
+
+*** Preparing for an informational interview
+After you schedule an informational interview, you should do two things: research the person you're interviewing and make a list of questions to ask them during the interview.
+*** Researching the person you're interviewing
+
+Spend some time researching the person you're going to conduct an informational interview with, as well as the company that they work for.
+This helps you determine what questions you should ask during your interview.
+It also gives you casual topics to connect on.
+
+For example, "I saw that you have a degree in anthropology. How did you make the transition to software development?" or, "I was checking out your LinkedIn profile and saw that you spent some time studying abroad. Do you miss Prague?"
+
+To learn about the person you're interviewing, look at their LinkedIn profile and their personal website or blog (if they have one). Also, familiarize yourself with a general idea of their current company's products and services.
+
+*** Preparing a list of questions for your informational interview
+
+When you invite someone to meet with you for an informal interview, it's your job to drive the interview.
+This means coming prepared with questions to ask.
+
+The important thing to remember is that you're conducting this interview to get information—not a job.
+This means that, while most work-related questions are acceptable, some questions are inappropriate to ask.
+
+Following are a few ideas of the types of questions that are okay to ask, as well as the types of questions that you should avoid.
+
+Good questions to ask during an informational interview
++ How did you get into this industry?
+  +  Is there anything that you'd do differently if you were in my place?
++ How do you spend your time most days?
++ Can you tell me about some of the projects that you've gotten to work on?
++ What do you like and dislike about your job?
++ What resources do you use to stay sharp?
++ Do you attend any meetups or associations that you like?
++ What tips do you have for someone starting out in this field?
++ If you were hiring, what would you look for in a candidate?
+  + What would differentiate a good candidate and an outstanding candidate on paper or during interviews?
++ What type of questions do you usually ask during interviews?
++ Is there anyone in your network who I should connect with?
++ What companies should I look into?
++ Would it be okay if I reached out again in the future if I have more questions?
+
+Tip
+Don't just think about the questions that you want to ask; actually write them down. This helps you stay organized and appear professional, and it also facilitates a natural conclusion to the meeting. For instance, you could say, "You've answered all of my questions. Thank you so much for taking the time to talk to me."
+
+Bad questions to ask during an informational interview
+    Will you hire me?
+    Will you refer me for this position at your company?
+    Will you give me an internship?
+    How much do you get paid?
+If the informational interview goes well and you make a good impression, the person might offer you this help or information. However, you should not be the one to ask for it.
+
+*** Conducting an informational interview
+
+Being punctual
+The person you're talking to is doing you a favor.
+Don't waste their time.
+This means arriving five minutes early if you're meeting in person, or exactly on time if you're meeting over the phone or virtually.
+
+And it means ending the meeting when you said you would, even if you're not finished with your questions.
+(It's okay if you end up talking longer, but only if the person is given the option to leave and chooses to stay.)
+
+Being professional
+Even though it's not a job interview, dress and act the part of the role that you want.
+Additionally, have a pen and paper or computer ready to take notes on.
+
+Showing gratitude
+Thank the person you're talking to at the beginning and end of your meeting for taking time out of their busy schedule to meet with you and sharing their wisdom.
+
+If you meet at a coffee shop or something similar, you should offer to pay for the person's order.
+Most of the time they'll insist on paying for themselves, but it's a nice gesture on your part.
+
+Following up
+After the informational interview, send an additional thank you email or message within 24 hours.
+Ask if the person is open to staying in touch.
+If they are, check in every few weeks whenever you have updates or can share how the person's advice has benefited you.
+
+Also, follow up with any referrals or contacts that the person recommends.
+
+*** Supplementary resources
+    Designing Your Career: The Informational Interview
+https://youtu.be/m6Pa4ZB4mvQ
+    6 Ways to Get Me to Email You Back
+https://www.linkedin.com/pulse/20130624114114-69244073-6-ways-to-get-me-to-email-you-back/
+    Example Questions to Ask During Informational Interviews
+https://assets.ctfassets.net/c7lxnbtvvcxm/2RsT1eI4KqHSQB3y85LzyM/a403c6deced2a912bd0f7fcbbfa2e357/Careers_-_Example_questions_to_ask_during_informational_interviews.docx
+    Informational Interviews
+https://assets.ctfassets.net/c7lxnbtvvcxm/6RL7uBBjC7kUCf7aicOoCy/add3040f2e85550595fd7035ff3112df/Careers_-_Informational_Interviews.docx
+
+** Informational interview project
+
+Your summary must include the following information:
+    The first name, last name, and title of the person you interviewed
+    The questions that you asked during your interview
+    What you learned
+    How you will apply what you learned
+
+Exemplary submission
+The sample summary below is an exemplary submission for this project.
+I conducted my informational interview with Paul Pepper, who's a software engineer at Amazon. I asked him the following questions:
+
+    How did you become a software engineer?
+
+    What are your daily and weekly responsibilities as a software engineer?
+
+    What are the best and worst parts of being a software engineer?
+
+    What are the best and worst parts of working at Amazon?
+
+    What advice do you have for someone starting their career in web development?
+
+    What do you wish that you had done differently when starting your career?
+
+    Are there any resources that you recommend—books that I should read, blogs that I should follow, or meetups that I should attend?
+
+I learned that it would be good for me to go as deep as I can in one language, rather than trying to immediately learn another language. This is what I plan to apply; instead of trying to learn Python too, I'm going to stick with JavaScript until I’m more proficient. He also recommends that I go through the book Cracking the Coding Interview to prepare for upcoming interviews, which I'll do.
+
+** Attending meetups and job fairs
+2.5 hoursAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you should understand how to attend events specific to your desired industry.
+Overview
+
+The more people you know, the more people there are to help you with your job search. And different people can provide different types of help, from providing an internal referral, to making an introduction, to sharing industry-specific insights. This lesson discusses a variety of industry-specific events, like meetups and job fairs, which can help you meet people who are connected to your new industry. You will learn what these events are, what to expect, and how to find such events in your area or online.
+Key Terms
+
+Meetups
+    Groups for people who have a similar interest or demographic
+Job fairs
+    Events where a large number of companies gather to promote job openings at their company and meet potential candidates
+
+Meetups
+
+Meetups are like clubs for people who have a similar interest or demographic, like speaking French, being a woman in tech, or bird-watching. And there are lots of meetups dedicated to a specific profession, including the one that you're studying. Most are free to attend.
+
+Every meetup is different. Some meetups are focused on talking and socializing; others are centered around an activity, like a speaker or workshop. Some are formal; others are casual. Some have 100+ regular attendees; others have 10.
+
+In every scenario, meetup attendees are excited about meeting new people and making connections, so you'll be received well.
+Finding a meetup
+
+To find a meetup in your area, check out these websites:
+
+    Meetup
+
+    Eventbrite
+
+    Facebook Groups
+
+On these websites, you can search for meetups in your city. You can use keywords like marketing, tech, or JavaScript, and look for study groups, workshops, and presentations.
+
+You may also see meetups posted in your local Slack community. If Meetup is new to you, you can watch a brief tutorial here.
+Best practices for meetups
+
+Like everything else in your job search, it's important to set some goals for yourself before attending a meetup. Below, you'll learn some quick tips and best practices to keep in mind when attending a meetup.
+Focusing on quality, not quantity
+
+When you attend a meetup, don't feel the need to introduce yourself to absolutely everyone there. On the other hand, don't feel like you should only make connections with employers or people who can immediately advance your career.
+
+Instead, aim to make between one and three new connections with people you enjoy and would be happy to stay in touch with.
+Preparing talking points
+
+It can be helpful to prepare some talking points to use when you meet new people. Although introducing yourself to a stranger can be uncomfortable, you can easily navigate the ensuing conversation by asking good questions. Here are some good questions to keep in mind:
+
+    What do you do? This question can lead to many others, and it can make it easier to find the person on social media later if you'd like to stay connected.
+
+    Have you been in this industry for a while? This question also sets you up for follow-up questions. For example, you can ask them how they broke into the industry, how they decided what to specialize in, or if they have any tips for someone like you who's getting started in the industry.
+
+    What do you like to do? This is a good way to discover other common interests.
+
+    Can I find you on LinkedIn? This question makes more sense after you've been talking for a while, but it's essential if you'd like to follow up in the future.
+
+Finally, make an effort to be and appear approachable. This can be as simple as smiling and having good posture.
+Finding ways to add value
+
+Relationships work best when they're mutually beneficial.
+
+When you attend a meetup, it's probably because you want to get something, such as connections, information, entertainment, or free food. But it's also important to think about what you can offer the other attendees. Find ways to share your connections, make recommendations, show interest, and show appreciation.
+Following up after a meetup
+
+The goal of every meetup is to make new connections. Maintaining those connections requires following up with them after the meetup. Here are a few tips:
+
+    Follow up as soon as possible. This ensures that you'll be remembered.
+
+    In your follow-up, remind the person of who you are and how you met. Help the person you're talking to remember who you are; mention your name and where you met or what you talked about. For example, you could say, "I had a nice time chatting with you about design principles and cats at yesterday's UX meetup."
+
+    End your follow-up by requesting another opportunity to connect. Ask if the person would like to attend another meetup with you. Also, you can invite them for a casual coffee or an informational interview (which you learned about in the last lesson).
+
+If the person you're trying to connect with doesn't respond within a week, follow up once more; it's possible that they didn't see your message.
+Job fairs
+
+Job fairs are events where a large number of companies gather to promote job openings at their company and meet potential candidates. Typically, each company is assigned a booth where they promote their company. Plus, job seekers walk from booth to booth to learn about the various job openings and employers.
+
+Unlike other events, job fairs are explicitly about hiring—so they're perfect for anyone who's actively looking for a job. There isn't usually a lot of casual peer-to-peer networking. However, you do have the opportunity to meet and practice pitching yourself to lots of employers in your area, which could lead to an interview or job.
+Finding a job fair
+
+To find a job fair in your area, check out these websites:
+
+    BuiltIn
+
+    Eventbrite
+
+Alternatively, use Google search for "job fair" with your industry and location. For example, you could search "job fair tech Seattle" or "job fair marketing New York."
+Job fair best practices
+
+As you start finding job fairs that you'd like to attend, here are some best practices to keep in mind.
+Researching the job fair
+
+Every job fair is different. To make the best use of your time, try to attend job fairs that are targeted for people in your desired industry. But if there aren't any, that's fine too; general job fairs can also be worthwhile.
+
+Additionally, always research the companies that are registered for a job fair. Go online and see what they do and if there are any relevant job listings posted on their website. Then make a list of the companies that you're most interested in talking to. This helps you manage your time when you're at the job fair.
+Preparing questions
+
+One of the best ways to make a good impression at a job fair is to come prepared. After you determine which companies you want to talk to, write down a few questions that you can ask the employers at those companies.
+
+A good rule is to prepare a mix of questions that show that you've done your research. You can ask about a specific role that you saw posted on their website, a recent product or blog post that they released, or something related to one of their company values, like their volunteer program.
+Practice your pitch
+
+When you're at a job fair, you're probably going to be making a lot of introductions and having a lot of short conversations. Recruiters and employers may ask you to tell them about yourself.
+
+To make a good impression, practice your pitch before every job fair. Use the techniques that you learned in the Telling your story lesson. The key is to be confident and friendly, and then identify your relevant and transferable strengths. Show how those strengths can benefit the company of the employer that you're talking to.
+Dressing for success
+
+Job fairs might not be formal interviews, but you're still being evaluated. This means that you should dress as if you were going to an interview. This shows employers that you're a professional and that you're taking the event and their time seriously.
+Trading contact information
+
+While it's recommended to have copies of your resume or business cards to give to employers at job fairs, it's also your job to follow up.
+
+If you're interested in a company, be sure to get the contact information of the employer who you're talking to. If an employer offers you a general business card for the company, politely ask them if they're willing to provide you with their name and email address. This allows you to follow up with an actual human instead of the company's general inbox—which may or may not be forwarded to the right person.
+Following up after a job fair
+
+Within 24 hours of attending a job fair, send follow-up emails to everyone who you connected with. Be sure to mention the name of the event, attach your resume (if it's updated), and mention something specific about your conversation to help them remember who you were.
+
+Here's an example of a strong follow-up email:
+
+Hello, John!
+
+Thank you again for taking the time to chat with me about Google at the Mountain View Job Fair earlier today. It was really great to learn more about the work that you're doing and to hear that you place such an emphasis on collaboration—something that's important to me too.
+
+I gave you a copy of my resume at the event, but, in case it's helpful, attached is a digital version as well. While I have your attention, I thought I'd also mention that I applied for the Data Scientist II role that we talked about. It looks like a great fit for me, and I look forward to the opportunity to cross paths again in the near future.
+
+Regards,
+
+Lucy
+Picking the right events
+
+Because your time is limited, it's important to pick the networking events that are most likely to further your goals. To help you pick the right events, here are a few details to pay attention to:
+
+    Number of attendees: Based on the registration list, are there enough people registered for the event to make it worth your time?
+
+    Types of attendees: Based on the registration list, are there people who can help you move closer to a potential employer? Are there people who would be valuable to connect with?
+
+    Topic: Is the event topic interesting to you? Could you see yourself going to this event regularly?
+
+    Cost: If the event requires money, is it worth the investment?
+
+    Reviews: Do you know anyone who has attended this event in the past? Are there reviews online?
+
+Ultimately, all networking is good networking. You either make new connections who can help you move closer to your career goals, or you learn from what went poorly so that you can have a better experience at the next event.
+** Meetup project
+5 hoursAverage Reading Time
+Project instructions
+
+Using the best practices that you learned in the Attending Meetups and Job Fairs lesson, attend a meetup or event in your desired industry. Then, submit a summary of your experience.
+
+Your summary must include the following:
+
+    A link to the specific meetup or event that you attended
+
+    The first and last name of someone you talked to, and if you're going to follow up with that person—why or why not
+
+    What you learned
+
+Exemplary submission
+
+The sample summary below is an exemplary submission for this project.
+
+I attended the meetup "The New Rules of Influencer Marketing with Pinterest, Edelman, SAP and more." Here is the link to the event: https://www.meetup.com/BrainStation-Seattle-Tech-Skills-and-Careers/events/273931241/.
+
+The event was online, so I didn't get to mingle with the other attendees, but I did get to interact with one of the speakers, Alexandra Nikolajev, the Global Creator Inclusion Lead at Pinterest. I asked her if it was better to work with micro- or macro-influencers. After the event, I sent her a message on LinkedIn thanking her for her time. I learned how to integrate social media influencers into my future marketing strategies, that I should pay more attention to how many people engage with an influencer's posts rather than how many followers they have, and that micro-influencers tend to be less expensive and have more engaged followers.
+One final note...
+
+Remember, this is a graded lesson. That means that someone from the Thinkful team will review your work using the criteria outlined in the grading rubric below.
+
+All questions use a yes–no framework unless otherwise indicated. Keep this information on hand as you work, and good luck!
+Grading rubric
+
+    Question 1
+
+    The student attended a meetup or event in their desired industry. (Note: Virtual events are okay.)
+        Yes
+        No
+
+    Question 2
+
+    They wrote and submitted a summary of their meetup/event experience.
+        Yes
+        No
+
+    Question 3
+
+    Their summary includes a link to the specific meetup/event that they attended.
+        Yes
+        No
+
+    Question 4
+
+    Their summary includes the first and last name of someone they talked to at the meetup/event, if they plan to follow up with this person, and why or why not.
+        Yes
+        No
+
+    Question 5
+
+    Their summary includes what they learned at the meetup/event.
+        Yes
+        No
+
+    Question 6
+
+    What did the student do well? What could the student improve? Please add feedback.
+        Your grader may leave additional feedback on your submission once it's reviewed.
+** Networking when you're shy
+15 minutesAverage Reading Time
+Learning Objective
+
+By the end of this lesson, you should be able to identify strategies for shy networkers.
+Overview
+
+If you're apprehensive about meeting and connecting with new people, you're not alone. This lesson will teach you some of the strategies that you can use to make networking easier—and even fun.
+Using the buddy system
+
+Sometimes all you need is a buddy. You can either bring one or become one.
+Bringing a buddy
+
+If you're shy, invite an outgoing friend to attend events with you. They can start conversations with other attendees, allowing you to jump in when you feel comfortable.
+
+However, this is only a good strategy if you do mingle with other attendees. If bringing a friend means that you'll be tempted to talk to only that friend, then it's better to force yourself to attend events alone.
+Becoming a buddy to solo networkers
+
+Here's an alternative to bringing a friend: When you arrive at an event, scan the room and look for people who are sitting or standing alone. Start conversations with these people; they're probably just as uncomfortable as you are and will be grateful that you made the first move.
+
+Plus, because you'll be chatting one on one, you'll have the opportunity to have a deeper conversation than if you tried to jump into an already formed group.
+Picking the right event for you
+
+Here's some good news: you don't need to enjoy and participate in every style of networking. Just find the styles that you do like—or at least, like more than the others—and then do those.
+Informational interviews
+
+If large groups of people intimidate or overwhelm you, that's okay. Your preferred method of networking might be informational interviews, because they're one on one and are more structured than casual conversations. You learned about informational interviews in a previous lesson in this module.
+Task-focused events
+
+Or maybe you're fine with big groups, but you just don't like the forced mingling. In that case, opt for events that are task-focused, like hackathons or meetups where you listen to speakers or work on personal projects. That way, you'll still be surrounded by like-minded people, but the conversation will flow naturally while you work on something else.
+Tip
+
+You can volunteer to help at any event. Just email the organizer ahead of time. This will give you a job to do, which means that no one will expect you to mingle—and it can get you free admission to the event. It will also impress the event's organizers, who are often the best-connected people at the event.
+
+Trying the notice technique
+
+Sometimes, the hardest part of talking to strangers is knowing how to start the conversation. If that's you, try the notice technique. This technique is simple—just notice something about the person you want to talk to or your surroundings, and then comment on it. Here are a few examples:
+
+    Hi, I'm Jamie. How long have you been coming to this event?
+
+    I like your Amazon swag; do you work there?
+
+    Ooh, the new iPhone! Is the camera really as good as the ads say?
+
+    Have you tried any of these appetizers?
+
+    I love your glasses; would you mind sharing where you got them?
+
+Generally, it's okay to comment on a person's property, like a backpack. But it's best to avoid commenting on a person's physical features. That can be considered inappropriate or offensive, even if your comment is positive.
+Asking questions
+
+When you're in the middle of a conversation, it's a good strategy to ask (relevant) questions. This takes the spotlight off of you. And it shows that you're curious about the person you're talking to, which is usually appreciated.
+Networking until it feels natural
+
+Becoming comfortable with networking is a lot like building muscles. Even if you're not great at networking right now, you will get better and more natural at it—and therefore enjoy it more—the more that you do it. You just need to be willing to push through the initial awkwardness.
+Supplementary resources
+
+    Secrets to Networking for Introverts

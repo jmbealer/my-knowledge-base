@@ -1,0 +1,157 @@
+:PROPERTIES:
+:ID:       8c3f7496-e06a-451f-a6b3-6111eb884ffd
+:mtime:    20230206181449 20220528222421
+:ctime:    20220205191126
+:END:
+#+title: mental-math
+
+digit sum
+ds method of checking
+rules to calculate digit sum
++ the sum of all digits in a number
+  + 213 = 2 + 1 + 3 = 6
++ the digit sum should be a single digit number
+  + 2134 = 2 + 1 + 3 + 4 = 10 = 1
++ ignore the number nine when adding across (casting out 9?)
+  + 909 = 0
++ can also ignore number that add up to nine
+  + 1802 = 2
+    + 1802 = 1 + 8 + 0 + 2 = 1 + 1 = 2
+  + because digit sum will remain the same when you add any number to nine
++ decimals work the same
+  + decimals point doesn't affect the digit sum.
+
++ do the same operation; when ds checking
++ the digit sums of the answer and numbers in the problem; should be the same
++ checking additon
+  + 85 + 45 = 130 = 4
+  + 8 + 5 + 4 + 5 = 1 + 3 = 4
++ checking subtraction
+  + 85 - 45 = 40 = 4
+  + (8 + 5) - (4 + 5) = 1 + 3 = 4
+  + when ds is negative; add nine to the negative number
+    + 23 - 17 = 6
+      + (2 + 3) - (1 + 7) = 5 - 8 = -3 + 9 = 6
+    + 32 - 17 = 15 = 6
+      + 5 - 8 = -3 + 9 = 6
++ checking multiplication
+  + 93 * 11 = 1023 = 6
+    + 3 * (1 + 1) = 6
++ checking division
+  + 110 / 11 = 10 = 1
+    + (1 + 1) / (1 + 1) = 2 / 2 = 1
+
+multiplicand & multiplier
++ 43 + 23
++ 43 is the multiplicand.
+  + is the number being multiplied.
++ 23 is the multiplier.
+  + is the number which is multiplying the first number.
+
+multiplication by 11
++ 423 * 11
++ the first number of multiplicand (number multiplied) is put down as the
+  left-hand number of the answer.
+  + = 4
++ each successive number of the multiplicand as added to its neighbor to the left
+  + = 4 ( 4 + 2 ) ( 2 + 3 )
+    + = 465
+  + if the resulting addition has two digits; carry the one to the right
++ the last number of the multiplicand becomes the last number of the answer
+  + = 4653
+
+lr method
+left to right method
+rounding up
++ should only be done when you have to carry over a lot of numbers
++ last digit add up to 10
++ the remaining digits add up to 9
+addition with rounding up
++ round up a number
+  + 9981 + 1234
+  + 10000 + 1234 = x + 19
++ add
+  + 11234 = x + 19
++ subtract the amount you rounded up from the sum
+  + x = 11234 - 19 = 11215
+subtraction with rounding up
++ should only be done when you have to borrow a lot of numbers
++ round up the second number
+  + 4530 - (3898 + 102)
++ subtract
+  + 4530 - 4000 = 530
++ add the amount you rounded up from the subtracted amount
+  + 530 + 102 = 632
+one digit multiplier with rounding up
++ best with numbers end in 7, 8 or 9
++ round up the number
+  (68 + 2) * 3 = -(2 * 3)
++ multiply from left to right
+  210 = -6
++ multiply the amount you rounded up
+  = 204
+two digit multiplier
++ break the multiplier
+  + 36 * (30 + 2)
++ multiply for left to right
+  + 9180 + 72
++ add the individual answers together
+  + 9252
+two digit multiplier with rounding up
++ best with 7, 8, 9
++ round up a number
+  87 * (99 + 1) = -(1 * 87)
++ multiply
+  8700 = -87
++ subtract
+  = 8613
+multiplication after factoring
++ factor one of the numbers
+  45 * 22 = 45 * 11 * 2
++ multiply the number with first factor
+  = 495 * 2
++ multiply the product with second factor
+  = 990
+
+squaring
+numbers ending with 5
++ multiply the first digit with the next higher digit
+  + 65 ^ 2 = 42
++ attach 25 to the end
+  + 65 ^ 2 = 4225
+any number
++ round the number up or down to the nearest multiple of 10
+  + 23^2 = 23 - 3 = 20
+  + 48^2 = 48 + 2 = 50
++ if rounded down subtract; if rounded up add
+  + (23 + 3) * (23 - 3)
+  + (48 - 2) * (48 + 2)
++ multiply the number form the previous two
+  + 26 * 20 = 520
+  + 46 * 50 = 2300
++ square the amount you rounded up/down and add it to the number from the
+  previous step
+  + 520 + (3 * 3)= 529
+  + 2300 + (2 * 2) = 2304
+
+bridge method
++ 32 * 13 = 3
++ 323 * 13 = 3
++ 323 * 132 = 3
+
++ 32 * 13 = 3(3 * 3)+(2 * 1)
+  + = 41
++ 323 * 13 = 3(3 * 3)+(2 *1)
+  + 323 * 13 = 41(2 * 3)+(3 * 1)
+  + =419
++ 323 * 132 = 3(3 * 3)+(2 * 1)
+  + 323 * 132 = 41(3 * 2)+(2 * 3)+(3 * 1)
+  + 323 * 132 = 425(2 * 2)+(3 * 3)
+    + = 4263
+
++ 32 * 13 = 41(2*3)
+  + = 416
++ 323 * 13 = 419(3 * 3)
+  + = 4199
++ 323 * 132 = 4263(3 * 2)
+  + = 42636

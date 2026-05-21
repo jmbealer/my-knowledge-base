@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6c5c4054-b96f-41b9-b6b7-d016752cfe29
+:mtime:    20230206181423 20221030132845
+:ctime:    20220930065538
+:END:
+#+title: Education
+#+date: [2022-09-30 Fri 06:55]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+- [[id:bf0b716d-2624-4e94-acc3-f8e4453d0a0b][degree-plan]]
+- [[id:0389645f-4067-4194-8de2-15c18c508ed8][wgu-degree-plan]]

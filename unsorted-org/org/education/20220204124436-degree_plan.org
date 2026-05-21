@@ -1,0 +1,180 @@
+:PROPERTIES:
+:ID:       bf0b716d-2624-4e94-acc3-f8e4453d0a0b
+:mtime:    20230609174624 20230609152039 20230206181534 20220528222421
+:ctime:    20220204124436
+:END:
+#+title: degree-plan
+
+[[id:0c7b547b-31d7-46f2-ad16-531585578257][Thomas Edison State University]]
+
+
+tesu: 114 transfer max
+  BA in computer science
+  BA in mathematics
+
+  BS in electronics systems engineering technology
+
+  BS in Cybersecurity
+  BS in Information Technology
+
+  BSBA in Finance
+  BSBA in Computer Information Systems
+
+  BSBA in Accounting/cpa
+  BSBA in Accounting
+
+  MS in Accounting
+  MS in Cybersecurity
+  MS in Data Science and Analytics
+  MS in Information Technology
+
+excelsior: 113 transfer max
+  BS in Cybersecurity
+  BS in Electrical Engineering Technology
+  BS in Information Technology
+
+  MS in Cybersecurity
+
+wgu: 90 transfer max
+  BS in Computer Science
+  BS in Software Development
+  BS in Information Technology
+  BS in Cybersecurity and Information assurance
+
+  BSBA in Accounting
+
+  MS in Cyber-Security and Information Assurance
+
+snhu: 90 transfer max
+  BS in Computer Science
+  BS in Information Technology
+  BS in Computer Information System
+  BS in Cybersecurity
+  BA in Mathematics
+
+  MS in Cybersecurity
+  MS in Information technology
+
+pug:
+  BS in Cybersecurity
+  BS in Information Technology
+
+  BS in Analytics
+  BS in Cloud Computing and Solutions
+  BS in Accounting
+  BS in Business Administration
+  BS in Finance
+
+  MS in Information Technology
+  MS in Cybersecurity Management
+
+  MS in Finance
+  MS in Accounting
+
+thomas edison state university
+award of degrees policy:
++ only two per: associate, baccalaureate or master
+two areas of study within one degree
++ only two areas of study
++ award one degree
++ only 9 credits can be shared
++ 24 credits must be different in the second degree's core/area of study
+
+  general education 45 shared
+  first degree area of study 45
+  first degree electives + second degree area of study
+  + 30 - 45
+degrees interested in
+BA in Computer Science
+BA in Mathematics
+
+BS in Electronics Systems Engineering Technology
+BS in Data Science and Analytics
+BS in Cybersecurity
+
+need at least 30 RA credits
++ 6 will come from TESU: capstone and cornerstone
+
+* General Education (45 Credits)
+
+A. Intellectual and Practical Skills (15 Credits)
+ENC-101 	English Composition I	3
+ENC-102 	English Composition II	3
+
+COM-209 	Public Speaking	3
+sophia
+
+MAT-121 	College Algebra	3
+ra
+SOS-110 	Critical Information Literacy	3
+ra
+
+B. Civic and Global Leadership (9 Credits)
+SOC-101 	Introduction to Sociology	3
+ETH-230 	Ethics in the Digital Age	3
+POS-110 	American Government	3
+
+C. Knowledge of Human Cultures (15 Credits)
+SOC-210 	Marriage and the Family	3
+HIS-113 	American History I	3
+FIL-110 	American Cinema	3
+
+Select two featured courses from the list below
+SOC-291 	Criminology	3
+HIS-114 	American History II	3
+HIS-121 	Introduction to World History I	3
+HUM-103 	Introduction to the Humanities III: Music	3
+PHI-130 	Introduction to Critical Reasoning	3
+
+D. Scientific Knowledge (6 Credits)
+EAS-101 	General Earth Science	3
+BIO-208 	The Science of Nutrition	3
+
+* Area of Study (45 + 45 Credits)
+Computer Science
+A. Required Courses (18 Credits)
+COS-111 	Introduction to Programming	3
+COS-241 	Data Structures	3
+MAT-231 	Calculus I	4
+MAT-270 	Discrete Mathematics	3
+COS-240 	Operating Systems	3
+COS-330 	Computer Architecture	3
+
+B. Computer Science Electives (18 Credits)
+COS-205 	Python Programming	3
+COS-206 	R Programming	3
+COS-231 	Assembly Language	3
+COS-451 	Artificial Intelligence	3
+CIS-301 	Management Information Systems	3
+CIS-351 	Software Engineering	3
+
+
+C. Natural Sciences, Math, and Computer Science Electives (6 Credits)
+-	Natural Sciences Math and Computer Science Electives	6
+Complete 6 credits in the Natural Sciences, Math, and Computer Science areas.
+
+D. Capstone (3 Credits)
+LIB-495 	Liberal Arts Capstone	3
+III. Electives (30 Credits) covered by aos math
+
+Mathematics
+A. Required Courses (15 Credits)
+MAT-231 	Calculus I	4
+MAT-232 	Calculus II	4
+MAT-331 	Calculus III	3
+STA-201 	Principles of Statistics	3
+MAT-321 	Linear Algebra	3
+
+B. Mathematics Electives (15 Credits)
+MAT-332 	Calculus IV	3
+MAT-361 	College Geometry	3
+MAT-301 	History of Mathematics	3
+MAT-401 	Mathematical Logic	3
+MAT-351 	Mathematical Modeling	3
+
+C. Natural Science and Math Electives (12 Credits)
+-	Natural Sciences and Mathematics Electives	12
+Complete 12 credits in the Natural Sciences and Math areas.
+
+D. Capstone (3 Credits)
+LIB-495 	Liberal Arts Capstone	3 don't have to take twice

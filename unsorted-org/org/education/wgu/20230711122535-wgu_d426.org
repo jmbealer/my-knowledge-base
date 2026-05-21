@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1cd26799-29e2-43df-a89c-48ac01089f0d
+:mtime:    20230711122536
+:ctime:    20230711122535
+:END:
+#+title: Data Management - Foundations – D426

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       89601283-3f61-4e49-9490-5a75d471bb6d
+:mtime:    20230206181442 20220528222421
+:ctime:    20220504181338
+:END:
+#+title: How Linux Works Notes
+#+date: [2022-05-04 Wed 18:13]
+
+* the big picture
+applications are on the top layer
+operating system are on the middle layer
+hardware are on the bottom layer
+
+* basic commands and directory hierarchy
+* devices
+* disks and filesystems
+* how the linux kernel boots
+* how user space starts
+* system configuration: logging, system time, batch jobs, and users
+* a closer look at processes and resource utilization
+* understanding your network and its configuration
+* network applications and services
+* introduction to shell scripts
+* network file transfer and sharing
+* user environments
+* a brief survey of the linux desktop and printing
+* development tools
+* introduction to compiling software from c source code
+* virtualization

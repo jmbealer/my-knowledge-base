@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       3fb74550-ee9b-4f47-9b9b-397272216d75
+:mtime:    20230625193616
+:ctime:    20230625193559
+:END:
+#+title: Saylor.org
+
+left over courses
+
+Saylor Academy Course - TESU Equivalent
+BUS101: Introduction to Business - BUS-101
+BUS103: Introduction to Financial Accounting - ACC-101
+BUS203: Principles of Marketing - Credit in business department MAR-301 Introduction to Marketing
+BUS204: Business Statistics - Credit in business department OPM-351 Business Statistics
+BUS205: Business Law - Credit in business department LAW-201 (School of Business and Technology)
+BUS208: Principles of Management - Credit in business department MAN-301 Introduction to Management
+BUS210: Corporate Communication - Credit in the lower division baccalaureate degree category in business COM-373 Managerial Communications (equivalent) MAN-373 and HRM-373 (substitute)
+CHEM101: General Chemistry I - CHE-104 Introductory Chemistry
+POLSC201: Intro to Western Political Thought - POS-299 (generic lower division political science) Can also satisfy the Political Theory requirement
+
+
+TESU Courses - Saylor Open Course
+ACC-101 Principles of Financial Accounting 	BUS103 Introduction to Financial Accounting 	TECEP: ACC-101 or Ace Credit
+ACC-102 Principles of Managerial Accounting 	BUS105 Managerial Accounting 	TECEP: ACC-102
+LAW-201 Business Law 	BUS205 Business Law and Ethics 	Portfolio, CLEP, NCCRS or Ace Credit
+MAN-301 Principles of Management 	BUS208 Principles of Management 	Portfolio, NCCRS or Ace Credit
+MAR-301 Principles of Marketing 	BUS203 Principles of Marketing 	Portfolio, NCCRS or Ace Credit
+OPM-351 Business Statistics 	BUS204 Business Statistics 	NCCRS or Ace Credit
+MAN-432 Small Business Management 	BUS305 Small Business Management 	Portfolio
+MAN-435 Project Management 	BUS402 Project Management 	Portfolio
+COM-202 Intro to Business Communications 	BUS210 Corporate Communications 	Portfolio, NCCRS or Ace Credit
+CMP-354 Network Technology 	CS402 Computer Communications and Networks 	TECEP: CMP-354
+NEG-401 Negotiations and Conflict Management 	BUS403 Business Negotiations and Conflict Management 	TECEP: NEG-401

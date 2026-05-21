@@ -1,0 +1,1283 @@
+:PROPERTIES:
+:ID:       dea16eb4-d34a-421b-b037-9f3e606ec001
+:mtime:    20230206181555 20220708123854
+:ctime:    20220401155153
+:END:
+#+title: git
+
+
+** What is version control?
+
+Version control The process of managing changes to code
+Version control refers to the process of managing changes to code, and it's a critical part of modern web development.
+
+Version control systems Systems for managing changes to files, software, websites, and other computer or web-based programs
+
+A version control system (VCS) makes it easy to switch between past and current versions of the same code.
+
+Version control is important for a few reasons:
+If you introduce a bug, you might want to roll back to a previous version of the code that does not include the bug.
+As the size of an application grows, it can be challenging to keep all developers up to date. A good version control system makes it easy to know how far behind or ahead your code is.
+If each version of code is being stored, it becomes simple to compare two snapshots of the code. This makes reviewing changes to code much simpler.
+
+Snapshot A view of code taken at a specific time
+
+** Why do you need version control?
+
+Developing complex software, like the website that you are using right now, is impossible without a version control system.
+Version control tracks every change to the source code. It is an essential tool to ensure the integrity of the codebase.
+
+** What is Git?
+
+Git is a powerful but complex command-line tool that allows you to track changes to a project on your local machine.
+
+Git repository A container for tracking all changes for a specific project
+
+A Git commit is a bundle of changes packaged together.
+A repository will have multiple commits saved on it that make up the entire project history.
+
+Git manages local version control.
+
+**  What is GitHub?
+
+GitHub provides free online hosting of both public and private Git repositories.
+
+
+
+GitHub is important for a few reasons:
+By looking at your public GitHub repositories, prospective employers can get a better sense of how you write code and solve problems than they can from your resume.
+The visual display of your public commits shows your enthusiasm for writing code.
+With GitHub, you can back up your Git repository for free. If anything happens to your local version, you'll be able to pull a copy from GitHub.
+GitHub makes it much easier to collaborate over the internet.
+GitHub provides many tools that benefit developers, such as pull requests, issue tracking, profile creation, and more.
+GitHub makes it easier to contribute to open-source projects hosted on GitHub. Contributing to open-source projects is a great way to impress prospective employers.
+
+
+GitHub hosts Git repositories on the web.
+With that said, using both Git and GitHub allows you to sync local repositories with repositories on GitHub (known as remote repositories).
+Git and GitHub are almost always used together, although they don't have to be.
+
+Remote repository Also called the remote repo, the GitHub project folder that is stored on the GitHub.com website
+
+** Git basics
+
+
+Main branch The default branch that is always created when a new repository is made
+Staging a file Adding a file by moving it to a staging area
+Staging area A place for changes that are ready to be committed
+Untracked One of the four possible states of a file in a Git repository. An untracked file is not part of the Git repository
+Staged One of the four possible states of a file in a Git repository. A staged file is one that is ready to be committed
+Unmodified One of the four possible states of a file in a Git repository. An unmodified file is one that has not been changed since the last commit
+Modified One of the four possible states of a file in a Git repository. A modified file is one that has been changed since the last commit
+SHA A 40-character checksum hash that identifies the commit
+
+Getting started
+A Git repository is just a folder, but it can track every file in the folder, including every file in every subfolder.
+What makes it special is that it has the .git folder inside of it.
+
+A good rule to remember is that you don't need to put a Git repository inside of another Git repository.
+
+
+git init - initialize, or create, a new repository inside of the current folder.
+
+Delete the .git folder
+Now, go ahead and delete the .git folder in your getting-started-with-git folder. Then, run git init once more.
+
+git status will be a useful command to know. This command will display information about what is currently happening in your Git repository. When you first run git status in an empty repository, you'll get a message like the following:
+
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+The above output tells you the following information:
+
+You are currently on the main branch. (If you haven't changed your default, this may be called the master branch). This is the default branch that is always created when a new repository is created. You'll learn more about branches later on.
+
+There haven't been any commits. You'll do that soon!
+
+There haven't been any changes in the repository since you ran git init. Note that the output also provides a helpful hint about what you might do next.
+
+Tip
+The git status command is always good to run if you're a bit confused about what is happening with Git.
+
+Do this
+Create a file
+In the getting-started-with-git folder, create a new file called teams.txt. Then, run git status. You will see something like the following outputted to your terminal:
+
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	teams.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Notice that the message has changed.
+
+The Untracked files section of the message tells you which files are in the folder but aren't tracked by Git. The untracked state is one of the four possible states of a file in a Git repository. An untracked file isn't part of the Git repository.
+
+Staging files
+Once you've made changes to a file, or just created a new one, you can then add the file. Adding a file is also sometimes called staging a file, because that file is moved to a staging area. The staging area represents changes that are ready to be committed, as opposed to the untracked files, which aren't yet ready to be committed.
+
+To summarize, there are four possible statuses for a change:
+
+Untracked
+
+Staged
+
+Unmodified
+
+Modified
+
+The following diagram shows how files transition between the possible statuses:
+
+A diagram of how Git commits work
+If you want to move a file from untracked to staged, you can run the add command, which you can see below:
+
+git add teams.txt
+As you might have noticed, this is the syntax that was suggested in the output from git status.
+
+Do this
+Stage files
+Stage your file by running the git add command above. Then, type git status. You will see something like the following code:
+
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   teams.txt
+As you can see above, the output provides instructions on how to unstage the teams.txt file if you choose—which implies that the teams.txt file is now staged. In fact, all files listed in the Changes to be committed section are staged.
+
+Awesome job on making it this far in the lesson! So far, you've learned the how to create new repositories with git init, stage new files or changes to existing files with git add, and check the status of a repo with git status.
+
+Before continuing on, feel free to take a quick break. In the remainder of this lesson, you will learn how to commit changes with git commit.
+
+Making commits
+Each commit bundles together all staged changes and saves them, along with a helpful message and meta information about those changes.
+
+The more commits that you make, the easier it is to get a detailed history of what happened. And, as you'll learn later, having more commits gives you more checkpoints that you can return to if something goes wrong.
+
+Tip
+The best developers commit often. This ensures that their work is recorded, labeled, and backed up.
+
+Do this
+Make a commit
+At this point, your changes are staged and you're ready to make your first commit. To do so, run this command:
+
+git commit -m "Adding the teams.txt file"
+The git commit command saves whatever is staged, packaging the changes into a single commit. The -m flag allows you to add a message and provide context to your commit.
+
+If you run git status again, you will see something like the following:
+
+On branch main
+nothing to commit, working tree clean
+Check your history
+How do you know if your commit worked? One way is to use the git log command, which will show you the history for your entire repository.
+
+Try running the git log command. Your output will look something like this:
+
+commit 8529743e386b193450baab116e5a0e81a0b5ea9f (HEAD -> main)
+Author: Author Name <email@thinkful.com>
+Date:   Thu Jul 2 10:35:33 2020 -0700
+
+    Adding the teams.txt file
+Tip
+Remember that you can type Q or q if you want to get out of the reader.
+
+The output shown is a single commit! In this commit, you can see the following information:
+
+A commit SHA, which represents the commit's unique ID (in this case,
+
+85297...)
+
+Who made the commit and what time it was committed
+
+The commit message
+
+For now, you can ignore the (HEAD -> main) part of the commit message. This will be covered later in the module.
+
+What makes a good commit?
+Git is very flexible and makes it easy to commit to the repository. In fact, there are only two constraints when making a commit:
+
+You need to include at least one staged change.
+
+You need to include a commit message.
+
+Recent versions of Git allow you to commit without a message. But just because you can do this doesn't mean that you should. There are two qualities to keep in mind when making a commit:
+
+The size of your commit
+
+The message of your commit
+
+You'll explore both of these qualities below.
+
+Commit size
+It's better to make many small commits rather than one big commit. With many small commits, you end up with multiple descriptive messages that make it easy for a collaborator (or your future self) to understand what happened.
+
+It also makes it easier to return to a particular point in your project. If you only have two commits, and their commit messages are Initial commit and Project completed, there's no way to return to a version of your project that's between those two points.
+
+Additionally, it's ideal to group files that are related to each other in the same commit. For example, say that you made changes to the following files:
+
+teams.txt
+players.txt
+configuration.txt
+You may want to make two commits:
+
+Your first commit might be to add configuration.txt.
+
+Your second commit might be to add teams.txt and players.txt.
+
+Why should you separate the commits in this way? The configuration.txt file may not actually be related to the teams.txt and players.txt files. So, creating a separate commit can help emphasize that the configuration.txt file is for a different purpose.
+
+It isn't always possible to split content up like this. However, the best developers strive to use their commits to create a coherent narrative for their projects.
+
+Commit message
+Another important component of commits is the actual message itself. Although figuring out the right size of commit takes some practice, writing a good commit message is far easier.
+
+Your commit message should do the following:
+
+Describe why you are making the change
+
+Use proper spelling
+
+Take a look at the following two commit messages:
+
+"Updated files"
+
+"Added new players and team names"
+
+Is it clear to you which one is better? The second message actually gives some information as to what was added, whereas the first one tells you nothing. And you can be even clearer if you give some context as to why the changes occurred. For example, take a look at this commit message:
+
+"New season started: Added new players and teams."
+
+It's possible to get really detailed with your commit messages; you can even make multi-line commits. For now, it's sufficient to just give a short contextual summary of the code changes.
+
+Do this
+Make more changes
+Add the following text to your teams.txt file.
+
+Hopper Hawks
+The Lovelace Lynxs
+Turing's Tigers
+View the changes
+It is often useful to view the changes that you made before you stage them. You can do so with the git diff command.
+
+Try running git diff. You will see something like the output below.
+
+diff --git a/teams.txt b/teams.txt
+index e69de29..eea9eae 100644
+--- a/teams.txt
++++ b/teams.txt
+@@ -0,0 +1,3 @@
++Hopper Hawks
++The Lovelace Lynxs
++Turing's Tigers
+Tip
+Remember that you can type Q or q if you want to get out of the reader.
+
+The above code shows the following information:
+
+The content at the top indicates that this is comparing an older version of the teams.txt file to the current, changed version.
+
+Any line with a plus sign + in front of it shows what is added. Any removed line will be shown with a minus sign - in front of it.
+
+The git diff command is a powerful tool to help you make the most out of your commits and to confirm what is being changed.
+
+Tip
+You can only use git diff to compare changes that haven't been staged.
+
+Add all changes
+Add your changes to the staging area with the following command:
+
+git add -A
+The -A flag will add all changes to the staging area, including new files. Since you just checked the diff between the history and the current changes, you know that adding everything now will make a fine commit.
+
+If you make a number of changes to a project and haven't committed for a while, consider not using the -A flag. Instead, add files individually so that you can make multiple commits.
+
+Get out of vi
+Now, try running the following command. Note that this command is missing the -m flag!
+
+git commit
+Depending on your operating system, it is likely that you may enter into a terminal editor called vi. The vi editor isn't really that scary, but it can seem overwhelming if you haven't seen it before.
+
+A screenshot of the Vi editor
+For now, you should just plan to quit vi if you accidentally get into it. To do so, type :q!. Then, press Enter.
+
+A screenshot of how to exit the Vi editor
+Quitting the vi editor will bring you back to your terminal, but you won't have made a commit. So try again to make your commit. This time, use the -m flag, and make sure to include a commit message.
+
+When changes aren't committed
+At this point, the repository shouldn't have any uncommitted changes, and running git status should display the following:
+
+On branch main
+nothing to commit, working tree clean
+It is possible to have one file that has both some staged changes and some changes that aren't staged. When this happens and you commit, you might be surprised to see that some changes aren't included in the commit.
+
+Tip
+The git commit command only commits staged changes.
+
+Do this
+Try committing with unstaged changes
+Now, give it a try. Add the following text to your teams.txt file:
+
+Torvald's Tornados
+Stage your changes with the following command:
+
+git add -A
+Now, run git diff. The changes are staged, so git diff should show no differences.
+
+Add the following text to your teams.txt file:
+
+Page Panthers
+Now, run git status. You'll see something like the code below:
+
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   teams.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   teams.txt
+Note that modified: teams.txt appears under both Changes to be committed: and Changes not staged for commit:.
+
+What happens if you commit now? Remember, Git only commits changes that are staged. And you staged only one of the changes, so you can conclude that only the addition of Torvald's Tornados will be included in the commit.
+
+Give it a try. Run git commit -m "add new team: Torvald's Tornados".
+
+Now, run git diff again. You'll be able to see that the addition of Page Panthers, which isn't yet staged, wasn't included in the commit.
+
+** Pushing and pulling
+
+Local repository Also called the local repo, the project folder that is stored on your computer
+Remote repository Also called the remote repo, the GitHub project folder that is stored on the GitHub.com website
+Pulling changes Copying commits from the remote repository that are not yet in your local repository
+Pushing changes To move the commits that you've made from your local machine up to a GitHub repository
+
+***** Pushing
+Pushing changes to GitHub means to move the commits that you've made from your local machine up to a GitHub repository.
+
+Note that only your commits will be pushed. If you have files or changes that haven't been committed, they will not make their way to GitHub.
+
+To push to GitHub, you'll do the following three steps:
+
+Create a repository on GitHub.
+
+Use commands provided by GitHub to link the two.
+
+Use commands provided by GitHub to push your code.
+
+Moving forward, Git repositories on your local computer will be described as local repositories, while GitHub repositories on the web will be described as remote repositories.
+
+A local repository is a repository created on your machine; this is what is created when you run git init. And a remote repository is a repository that is created on the web, with a website like GitHub. These repositories can be synced with each other, but they don't necessarily have to be.
+
+Remote repositories will require authentication. Authentication confirms your credentials and will allow you to securely access your account's resources. You can access repositories from the command line in two ways: SSH and HTTPS. GitHub recommends using the HTTPS method and provides detailed instructions on how to set a personal access token.
+
+Do this
+Create a new remote repository
+Go to GitHub's website and create a new repository. The way that you do this will depend on the interface that you're looking at. Either click the New button, or select the ➕ icon next to your profile picture. Then, in the drop-down menu, click New repository.
+
+You will then be presented with a screen that looks similar to this:
+
+A screenshot of the Create a new repository page in GitHub
+On this page, fill in a repository name. It's a good idea to have your repository name match the folder that you created on your local machine, but it isn't a requirement.
+
+Make sure that the Initialize this repository with a README checkbox is cleared. Then click Create repository.
+
+Next, you'll see something like this page:
+
+A screenshot of the GitHub setup page
+Connect your local and remote repositories
+The page pictured above describes how you can connect your local and remote repositories. Focus on the following section:
+
+A screenshot of a portion of the Getting started page on GitHub
+Normally, you would run both lines of code to push your repository. But for now, you'll run them one by one.
+
+First, run the following line in your local repository:
+
+git remote add origin <your-url>
+The above command adds a new remote repository (git remote add) with the name origin and a URL pointing towards the URL that you just created. You can name your remote repository whatever you like, although origin is standard.
+
+When you run this command on the command line, you won't see any output. But you can check for all your remote repositories by running git remote -v. That will return an output like this:
+
+origin	https://github.com/thinkful/getting-started-with-git.git (fetch)
+origin	https://github.com/thinkful/getting-started-with-git.git (push)
+The output above shows that there is a remote called origin at the given URL. (Don't worry about the duplicate listing.)
+
+Sync through pushing
+The second line of code shown on GitHub is the branch command.
+
+git branch -M main
+Note: You will learn more about branches later in this program. But for now, you just need to know that this command will rename the master branch to main. Since October 2020, GitHub has stopped using the master terminology.
+
+The third line of code shown on GitHub is the push command.
+
+git push -u origin main
+This command uses git push to push your commits to the remote origin on the main branch. The -u flag sets the default upstream reference. This essentially means that for all future times that you want to push, you can just type git push.
+
+After running the above command, you will see an output in your terminal. Try refreshing the page on GitHub, and you will see your newly committed files up on GitHub.
+
+Practice with git push
+Try running git push again. Do you see the following message?
+
+Everything up-to-date
+If you ever see this message, it means that there are no new commits to be pushed.
+
+Now, try making a new file called README.md. Don't add any content to it. Then, try running git push again, as follows:
+
+touch readme.md
+git push
+You will see the "Everything up-to-date" message once again. This is because, while you have new files, you haven't actually made a new commit.
+
+Add and commit the file (with a valid commit message!), and then try pushing once again. You can use the following code:
+
+git add README.md
+git commit -m "add readme file"
+git push
+
+***** Pulling
+When you're collaborating with another person, they might be pushing to the same repository that you are. That means that it's possible for the remote repository to have commits that you do not have on your local repository.
+
+The way to fix this is to pull down changes. Pulling changes means copying commits from the remote repository that are not yet in your local repository.
+
+Do this
+Make changes on GitHub
+Instead of working with another person, you can simulate the experience by editing your files directly on GitHub. From your remote repository's page, click the README.md file. Clicking the filename will bring you to that specific file.
+
+This file should be empty. Click the Edit ✎ icon so that you can edit the file.
+
+The GitHub edit icon
+This will bring you to a text editor on GitHub. Make some changes to the file, and then scroll to the bottom of the page.
+
+The Commit changes screen on GitHub
+Click the Commit changes button. The commit message will be something like "Update README.md."
+
+You've now made a commit on GitHub!
+
+Pull changes
+Your local repository is now out of date with the remote repository. To fix this, you can run the git pull command:
+
+git pull
+Tip
+The full command is git pull origin main, but you only need to type git pull. This is because you included the -u flag when you set up the repository.
+
+After running the command, you will see some output in your terminal that shows your new commits being pulled to your local repository. When you check the README.md file, you will see the content that you added to the file.
+
+** Forking and cloning
+
+1.5 hoursAverage Reading Time
+
+Learning Objective
+By the end of this lesson, you will be able to fork copies of repositories to your own GitHub account and clone repositories from GitHub to your local machine.
+
+Overview
+Now that you know how to push and pull, you're ready to use Git and GitHub to work on projects on your own and sync those projects to GitHub. For this program, you may also want to occasionally pull down some code that already exists. And once you start your career as a professional developer, you will often need to clone the work that your company has done on an already existing repository. This lesson will provide an overview of how to perform these tasks.
+
+Key Terms
+Forking
+The process of copying a remote repository from a different user to your own account
+Cloning
+The process of copying any remote repository to your computer
+Forking
+Forking is a word that GitHub uses to describe the process of copying another user's remote repository to a new remote repository under your own account. Forking is popular among open-source projects, because it allows you to copy over an entire project and make minor tweaks. You can also use forking as a tool for collaboration, which will be discussed later on.
+
+In this program, you'll use forking to get copies of starter code on your own account. This way, as you work on the starter code, you can push that code up to your own account and maintain it.
+
+Do this
+Fork a repository
+Go to Jenny Thinkful's GitHub profile, and click the pizza repository. You will arrive at a page that looks like the image below:
+
+A screenshot of the pizza repository
+Click the Fork button in the top-right corner. Then, select your user account. You will see an image like the one below:
+
+An image of the GitHub page that occurs when you try to fork something.
+When this is completed, you'll have a copy of the pizza repository on your account. To confirm that you're looking at the repository on your account, take a look at the top-left corner of the page. You will see something like the following (except with your username in place of thinkful):
+
+thinkful / pizza
+forked from jennythinkful/pizza
+If you see that, you have successfully copied the repository to your own account! Notice that you can still see Jenny's last commit and her profile image.
+
+Cloning
+Cloning a repository refers to copying the commits from the remote repository to a local version. Cloning is essentially a way to download the contents of a remote repository through the command line.
+
+When you use git clone to clone a repository, the command will do the following:
+
+Create a new directory with the name of the repository.
+
+Create a link in the new directory to the remote repository.
+
+Download the contents of the repository to your computer, in the new directory.
+
+Because cloning will create a .git folder, it is very important that you don't clone inside an existing repository. You always want to be in a directory that isn't a Git repository.
+
+Do you need to fork before cloning?
+Forking and cloning are two separate processes that can go together but don't have to. Forking is the process of copying a remote repository from a different user to your own account. And cloning is the process of copying any remote repository to your computer.
+
+You can just fork, just clone, or do both.
+
+Do this
+Clone a repository
+Go to the pizza repository that you forked earlier:
+
+A screenshot of the GitHub pizza repo
+Click the Code button in the top-right corner. Then, copy the URL. It will look like this:
+
+https://github.com/jennythinkful/pizza.git
+Notice that it's essentially the URL in the location bar, except with .git at the end.
+
+On your command line, go into a directory that isn't a Git repository. Remember, it's very important that you do not run the following command inside of a Git repository. If you do, you will end up with nested local repositories.
+
+Once you're in a directory that isn't a Git repository, run the following command:
+
+git clone https://github.com/jennythinkful/pizza.git
+You will see that some files are being downloaded. You'll also notice that you have a new folder, called pizza.
+
+Go into that folder and type ls -la. You will see something like the following:
+
+drwxr-xr-x   7 wesreid  staff  224 Jul  2 17:21 .
+drwx------@ 11 wesreid  staff  352 Jul  2 17:21 ..
+drwxr-xr-x  12 wesreid  staff  384 Jul  2 17:21 .git
+-rw-r--r--   1 wesreid  staff    8 Jul  2 17:21 README.md
+drwxr-xr-x   3 wesreid  staff   96 Jul  2 17:21 images
+-rw-r--r--   1 wesreid  staff  646 Jul  2 17:21 index.html
+-rw-r--r--   1 wesreid  staff  921 Jul  2 17:21 style.css
+As you can see, the files were downloaded and a repository was created.
+
+Check the remotes
+Cloning creates a link between the remote repository that you cloned and your local repository. You can see this if you run git remote -v.
+
+You will see that the origin is pointing toward the repository that you cloned.
+
+** GitHub projects and issues
+***** Kanban boards
+
+Kanban board An agile scheduling and workflow system where tasks are separated into individual cards, which are then organized into columns that indicate their status
+
+A Kanban board is a system where tasks are separated into individual cards, which are then organized into columns that indicate their status.
+The most common columns are To do, In progress, and Done.
+
+In Japanese, the word Kanban translates generally as a visual signal.
+Accordingly, it's important to keep each distinct task visible and separate from the others.
+The term Kanban has a rich history from manufacturing.
+
+
+Kanban cards
+
+Card A visual representation of a task to be completed on a Kanban board
+
+Each task to be completed is called a card when it's placed on a Kanban board.
+Ultimately, it is up to you and your team to determine how to write cards.
+Typically, it's best to write small cards that can be completed in full.
+
+For example, cards for households chores might look like this:
+Clean the microwave
+Mop the kitchen floor
+Go grocery shopping
+
+These cards are succinct and specific.
+Contrast this with a card that says "Clean the house."
+Cleaning the house isn't a very specific task, so this task should be broken down further.
+
+With practice, you'll be able to better define the right size for cards.
+In general, don't write cards that are so big that they can't be completed in a day—and don't write cards that are so small that they can be completed in only a few minutes.
+
+
+Kanban columns
+
+Columns on a Kanban board help organize your cards in different states.
+Together, they should represent the progression of a task from incomplete to complete.
+
+Here are a few of the most common columns for Kanban boards:
+Upcoming (or To do): These are the cards that you've prioritized to work on next.
+In progress (or Doing): These are the cards that you're currently working on. If you have to stop working on a particular card, it should be moved back to Upcoming.
+Completed (or Done): These are cards that have been completed in full.
+
+The steps above are usually placed in order, from left to right.
+This represents the progression of a card from To do to In progress to Done.
+
+The columns above are the most common, but there are others that you might see, particularly as part of a development process.
+Here are some other common columns:
+Backlog: This column goes before the To do column. This is for cards that you need to get to eventually, but that are not the top priority at the moment.
+Reviewed (or Ready): This column typically goes right before the Done column. If a card involves something that needs to be deployed or reviewed by someone before the card can be considered done, it might be moved to this column while waiting for that action.
+
+***** GitHub projects
+
+
+Creating GitHub issues
+The Issues tab, shown below, allows you and other developers to propose tasks that need to be completed.
+
+The Issues tab in GitHub
+
+Issues Tasks that need to be completed, which include chores, bugs, and feature requests
+
+GitHub issues generally encompass three different types of activities: chores, bugs, and feature requests.
+
+Chores
+Chores are tasks that need to get done but may not require any real creative or thoughtful work.
+This could be tasks like updating the version of a node package or fixing a misspelling.
+
+Bugs
+Bugs are problems that occurred with an application.
+These could be overt problems, like the application crashing.
+Or they could be quality issues, such as a certain page taking too long to run.
+
+When you add a bug as an issue, it's important to be detailed about where and how the bug occurs.
+
+Feature requests
+Feature requests are issues that request the addition of some new or improved functionality.
+These could be crucial features, or they could be quality-of-life features, like allowing for changing a color scheme.
+
+It's natural for some features to be a higher priority than others.
+
+Issue options
+Each issue has a number of components.
+It's important to be able to understand different aspects of an issue so that you can create new ones and reference them.
+To explore these components, take a look at the labeled image above.
+
+Then read more about each section below:
+The issue heading contains the name of an individual issue as well as a number. You can link back to this issue by referencing that number in your projects or pull requests.
+The description section of the issue allows the creator to describe what the issue is and give as much context as they like. In this section, you can also see a timeline of what has occurred related to the issue.
+The sidebar contains a number of ways to categorize the issue. You can assign an issue to a particular person, or give it a label to help organize it further. You can also associate the issue with a specific project, milestone, or pull request.
+The comments section provides a space to add additional comments. These comments could detail your progress on the issue, or they could be a way to ask questions about an issue that someone else made.
+
+**  writing user stories
+
+User story An application or product feature written from the perspective of a particular user
+
+Introduction to user stories
+Feature requests are different from other types of cards that you might write because they often don't include implementation details.
+That is, whereas a chore or bug might have exact steps, a feature requires a certain amount of creativity on your part as a developer.
+Because of this, feature requests are written a bit differently than other cards.
+One way to write feature requests is to write them as user stories, from the perspective of a user rather than a developer.
+
+What is a user story?
+A user story is an application or product feature written from the perspective of a particular user.
+User stories are the first attempt that a developer makes at trying to determine what the product needs to be in its purest form.
+A complete and full list of user stories should fully describe the application—without describing the implementation.
+
+These constraints are important for a couple of reasons:
+Well-written user stories keep the focus on the user and their needs, as opposed to the developer's limitations.
+With the end goal defined but not the implementation, teams can come up with creative and collaborative solutions as they work.
+
+Take a look at an example. A user story might be written as follows:
+As a new user, I want to be able to view and compare subscription pricing so that I can decide which plan is best for me.
+
+Below is a breakdown of what this user story does:
+It describes the feature from the perspective of a particular type of user, including what they want to be able to do and why they want to be able to do it.
+It uses specific verbs (view and compare) that describe what needs to be accomplished.
+It doesn't describe how the feature needs to be implemented.
+
+To accomplish this user story, you could create a separate page, a dialog, or something else. Typically, the actual implementation details are decided in collaboration with other people on the team.
+
+User story format
+User stories usually follow a consistent pattern.
+As a [type of user], I want [to accomplish or solve something] so that [reason behind the feature].
+Each of the sections between the brackets [] are important, and they're worth defining precisely and concisely.
+
+Types of users
+One of the most significant oversights that can happen at this stage of the design process is to assume that your perspective on a product is the only possible perspective.
+
+In fact, all projects must consider at least the following three types of users:
+New users
+Returning users
+Administrators
+
+The first two are easy to understand, but be aware that there can be multiple variants of each new and returning user type. Meanwhile, administrators tend to represent the company paying you to do the work. Administrators may spend more time interacting with your product each day than all the other users combined.
+
+Feature descriptions
+The "I want" part of a user story typically needs to involve one or two verbs that describe an action that someone wants to take. For example, "As a new user, I want a free account" is not an actionable user story; it only describes a want.
+
+Instead, focus on picking precise actions for your user stories. You can also include a constraint to help describe a feature. For example, "I want to be able to buy a product" is different than "I want to be able to buy a product in as few clicks as possible."
+
+Here are a few examples of feature descriptions:
+I want to be able to sort my contacts by first and last name.
+I want to be able to purchase a product in as few clicks as possible.
+I want to be able to use keyboard shortcuts to navigate around my dashboard.
+
+Purpose-driven features
+When developers create a product, they sometimes neglect to consider why a feature is important; the developers may just focus on the feature itself. However, clearly defining the reason why a feature exists is often the best way to come up with more creative and successful solutions.
+
+Take a look at the following user story:
+As a frequent user, I want to be able to sign up for a newsletter so that I can stay up to date on what new content is being posted to the website.
+This user story is well written and fits the defined format. But do you notice how the first part of the story is in conflict with the last part? If a user is frequently reading the website, why would they want more updates on what content is available?
+Writing the "why" often leads to conversations like this. It doesn't mean that the story is wrong; instead, it means it might need clarification or further research.
+Perhaps the development team completing this feature would decide that frequent users don't need to sign up for content updates, but instead should see a reminder of a paid service. Or, maybe the development team would tweak the message specifically for frequent users.
+
+Compare the story above to the same story without the "why" behind it:
+As a frequent user, I want to be able to sign up for a newsletter.
+
+This user story feels different; here, a task is being given without much context. As a developer, you might just complete the task and move on—without addressing the actual needs of the user.
+
+
+
+*** module 9
+** Branches
+***** What is a branch?
+A branch is a collection of ordered commits.
+Different branches can have the same commit history, or they can diverge.
+The main branch is the first and only branch that is created when you initialize a new Git repository.
+
+Moving forward, you should consider the main branch to be the most recent and correct version of your code.
+That is, the main branch should contain code that is working and ready to be shared with the world.
+This is useful when you're working individually; you'll always know that at least one branch has working code, even if you're working on a new feature and introduce a bug.
+And reserving the main branch for production-ready code is a practice that only becomes more important as more people begin working on a project.
+
+***** Creating branches
+You can create a new branch with the git branch command, supplying the name of the branch as an argument.
+
+git branch <branch-name>
+
+This command will create a new branch in your local Git repository.
+It's important to note that this will not make any changes on GitHub if your local repository is synced to a remote one.
+
+Although you can name your branch anything that you want, many teams create naming conventions.
+One common convention is to include your initials, followed by two dashes --, and then a descriptive but concise branch name. For example, recall Bill P.'s name for the new branch:
+
+git branch bp--save-artist
+
+After running this command, you can run the git branch command without any arguments.
+This will show you what branches are available and which branch you are currently on.
+The output will look something like this:
+  bp--save-artist
+  `* main`
+In this output, two branches are listed: bp--save-artist and main. The asterisk * in front of main means that you're currently on that branch.
+
+***** The checkout command
+To switch to a new branch, you can use the git checkout command with the branch name, as shown below:
+
+git checkout bp--save-artist
+If you run git branch again, you'll see that the * has moved.
+
+`* bp--save-artist`
+  main
+
+A note on checkout
+The git checkout command is a bit overused.
+Although it can be used for switching between branches, it can also be used to go back to an earlier commit as well as undo changes to a file.
+
+***** Merging
+
+Merging a branch The process of taking commits from one branch and adding them to another
+Merging a branch refers to the process of taking commits from one branch and adding them to another.
+
+You can do this with the git merge command. Here's an example:
+
+git merge bp--save-artist
+Note that where you run this command is important.
+When you run the git merge command, you should be in the branch where you want the new commits.
+For example, if you want to merge your new branch into the main branch, you must be in the main branch.
+
+Do this
+Merge a branch
+Switch back to your main branch. Then, merge your newly created branch into main.
+
+git merge bp--save-artist
+You will see something like the output below:
+
+Updating 199740a..1561e97
+Fast-forward
+ adventure.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+Check your adventure.txt file again. You will see the content that you added to the branch.
+
+Use git log to check your history. You will see the commit that you added on the other branch, but that commit is now on the main branch.
+
+** Feature branch workflow and pull requests
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to create pull requests on GitHub.
+
+Overview
+In this lesson, you will get an overview of how to collaborate with other developers on GitHub using the feature branch workflow. You will then practice creating pull requests.
+
+Key Terms
+Feature branch workflow
+A process for developers to build, review, and integrate new features
+Pull request
+A tool that allows for a visual comparison between two branches, which lets collaborators see what changes are being made and provides an interface for code review
+Starter code
+To get started, you will need a local repository with at least one commit. If you don't already have one from a previous lesson, you can follow the steps below:
+
+Create a new folder called git-branch-practice.
+
+Inside of that folder, create a new file called adventure.txt.
+
+Initialize the directory as a Git repository.
+
+Add the adventure.txt file and commit it.
+
+Feature branch workflow
+Git and GitHub are powerful tools for collaboration between developers. In general, developers have settled on the feature branch workflow as a way to collaborate on repositories. This workflow makes use of a main branch, feature branches, and pull requests.
+
+The feature branch workflow gives developers a process to build, review, and integrate new features. To follow the feature branch workflow, developers create a feature branch, share that branch on a remote repository, and then merge it back into the main branch after review.
+
+This process also makes use of another feature that GitHub provides: pull requests. Pull requests allow for a visual comparison between two branches, which lets collaborators see what changes are being made and provides an interface for code review.
+
+In general, the feature branch workflow looks like this:
+
+On the main branch, run git pull so that you have the most up-to-date version.
+
+Create a new feature branch from the main branch.
+
+Create new commits on your new branch.
+
+Push your new branch up to GitHub.
+
+Create a pull request and have it reviewed.
+
+After making any requested changes, merge the pull request, bringing the new commits into the main branch.
+
+Once the pull request is merged, you can repeat the above process for the next feature.
+
+An example
+Imagine that two developers, Bill P. and Ted L., are working on the same music application. They've just gotten started, and each is working on new features.
+
+Bill is satisfied with his work, so he pushes his branch, bp--save-artist, up to a remote branch on GitHub and creates a pull request. The pull request allows Ted to review Bill's code. Together, they work to add another commit to the feature.
+
+Once Ted finds the code acceptable, he merges Bill's work. That brings Bill's new commits into the main branch on the remote repository.
+
+Do this
+Create a remote repository
+Complete the following steps to sync your local and remote repositories.
+
+Create a new GitHub repository.
+
+Add a new remote (using git remote add origin <url>).
+
+Push your local main branch up to your remote repository (using git push -u origin main).
+
+Remember that you can always check your remotes by using git remote -v.
+
+Change your repository permissions
+In this lesson, you'll be working on your own. But, if you were working with another developer, you might need to change the permissions on your repository to allow them to push to your repository.
+
+To change the permissions, go to the Settings tab on the GitHub repository. You will end up on a screen with a menu like the one below:
+
+A screenshot of the Settings menu in GitHub
+Click Manage access, and you should see the following screen:
+
+A screenshot of the GitHub access screen
+Click the Invite a collaborator button, and you'll be prompted to enter a GitHub username. You don't need to enter one right now; just know that this dialog exists.
+
+Entering a username would bring you to a new view that displays the user's username and shows that their invitation is pending. If the user doesn't see their invitation, you can always copy the link (by clicking the Copy 📋 icon shown below) and send the link to them directly.
+
+The screen for inviting a collaborator
+This will allow the user to push to your repository.
+
+Create a feature branch
+Create a new feature branch called <initials>--favorite-tracks. Then, create a new file called tracks.txt.
+
+Add some of your favorite songs into the file:
+
+"Father Time" by Shark Island
+"Breakaway" by Big Pig
+"Walk Away" by Bricklin
+Add the changes and create a new commit on your feature branch.
+
+Push up your feature branch
+Although your main branch has been pushed to the remote repository, your feature branch has not. To push your feature branch up, follow the same convention as before:
+
+git push origin <initials>--favorite-tracks
+Back on your GitHub repository, you will see a notice pop up. The notice will look something like the image below:
+
+A notification to push a branch up to GitHub
+Pull requests
+As previously mentioned, pull requests are a tool provided by GitHub to allow for comparison between two branches.
+
+Do this
+Create a pull request
+Click the Compare & pull request button that appeared after you pushed up your feature branch. If you've refreshed the page or the notice has disappeared, you can click the Pull requests tab on your GitHub repository and then click New pull request.
+
+At the top of the page, you'll see something like this image:
+
+A screenshot of a GitHub pull request
+As you can see, the branch bp--favorite-tracks is being compared to the main branch. If the pull request is successful, your feature branch will be merged into the main branch.
+
+You can use the drop-down boxes to change which branches are being compared.
+
+Below that, you'll see a section where you can add a title and a description to the pull request. You can also add labels and make different assignments, like who should review the pull request. If you're interested, feel free to play around with those options on your own.
+
+An options page for a GitHub pull request
+Finally, click the Create pull request button.
+
+Reviewing code
+Pull requests do more than maintain a record of the changes that you've made in your remote repository. They also allow for you to comment on code and merge your code.
+
+Your view of a pull request will look something like the screen below:
+
+A view of a pull request
+As you can see, this view includes four tabs. Each of these sections can be useful in the review process, so explore them below:
+
+The Conversation tab will show all comments made for this pull request. This can provide a useful overview of the entire pull request.
+
+The Commits tab will highlight all of the new commits made, and it will display them in comparison to the main branch. This is one of the reasons why you should write descriptive commit messages. This tab is a valuable place where you can examine the process for creating the code.
+
+The Checks tab is related to running automated builds and testing. This feature is powerful but is beyond the scope of this lesson.
+
+The Files changed tab will show you the exact changes made to the file.
+
+Under the Files changed tab, you can control how the changes are shown; to change the display, click the Settings ⚙️ icon and switch between Unified and Split.
+
+A screenshot of the Files Changed tab on GitHub
+You can also add comments to an individual line by holding your cursor over one of the lines and clicking the blue Comment ➕ icon that appears.
+
+A screenshot of the Files changed tab with the Comment icon visible.
+A text box will drop down, allowing you to add a single comment or start a review.
+
+Do this
+Make a comment on your code
+Click one of the lines of your code under the Files changed tab. Then, add a comment and click the Add single comment button.
+
+If you return to the Conversation tab, you will see your comment.
+
+Merge your pull request
+Once you're happy with your code, return to the Conversation tab and click Merge pull request. Afterward, you can click Delete branch to remove the branch from your remote repository.
+
+Locally, return to your main branch and run git pull. Then, run git log to see your main branch's history and view your commit.
+
+What is the additional commit?
+You may have noticed an additional commit that you didn't explicitly create. This commit is created by GitHub when you click Merge pull request. Don't worry; no additional changes have been added. This commit simply marks that a pull request was merged.
+
+** Merge conflicts
+1.5 hoursAverage Reading Time
+Learning Objective
+By the end of this lesson, you will be able to solve merge conflicts both in your local Git repository and through the GitHub interface.
+
+Overview
+In this lesson, you will learn about problems known as merge conflicts, which occur when you and another developer make changes that affect the same code. You will learn how to resolve these conflicts and some best practices for avoiding them in GitHub.
+
+Key Terms
+Merge conflict
+A problem that occurs when Git attempts to resolve changes to a specific line in a file, but that file has been changed in a different way through another commit
+Starter code
+To get started, you will need a local repository with at least one commit. Your repository should be synced and pushed up to a remote repository on GitHub. If you don't already have one from a previous lesson, you can follow the steps below:
+
+Create a new folder called git-branch-practice.
+
+Inside of that folder, create a new file called adventure.txt.
+
+Initialize the directory as a Git repository.
+
+Add the adventure.txt file and commit it.
+
+Create a new GitHub repository and sync the two repositories.
+
+What is a merge conflict?
+Git and GitHub are very clever when it comes to managing changes to multiple files made by multiple different people. If you and another developer are working on different parts of the codebase, Git will typically solve your issues without any problems.
+
+But, what happens if you and another developer make changes that affect the same code? The result will be a merge conflict, and that's a problem that will need to be solved by a human.
+
+A merge conflict occurs when Git attempts to resolve changes to a specific line in a file, but that file has been changed in a different way through another commit. Essentially, Git isn't sure which change you want to keep, so it asks you to choose one. Git does this by editing the file that contains the conflict and adding a separator between the conflicting lines within the < and > angle brackets.
+
+function playSong (lyrics) {
+  for (let i = 0; i < lyrics.length; i++) {
+    let casing;
+<<<<<<< HEAD
+    if (!!(i % 4)) {
+      casing = lyrics[i].toUpperCase();
+    } else {
+      casing = lyrics[i].toLowerCase();
+    }
+=======
+    let lyric = lyrics[i];
+    casing = !!(i % 0) ? lyric.toUpperCase() : lyric.toLowerCase();
+>>>>>>> bp--code-refactor
+  }
+}
+In the above code, the two conflicting changes are between the < and > symbols and are separated by a line with multiple equals signs (=). In this case, Git requires you to decide whether you want to keep the code changes in lines 5-9 or the code changes in lines 11 and 12.
+
+Merge conflicts occur during the middle of a merge process. As you merge the code, the merge process will stop and require you to choose one of the two versions (or combine them).
+
+As you'll see below, there are two different ways of solving a merge conflict: remotely and locally. You'll learn how to do both in this lesson.
+
+An example
+Imagine that two developers, Bill P. and Tracy L., are working on the same music application. They've been working for some time, and the application is starting to come together.
+
+In the morning, both developers sync their local repositories with the remote repository. Tracy has a bit of free time, so she makes what she considers a small change to one file, songs.js. Meanwhile, Bill is working across a number of files, making small code quality changes. In doing this work, Bill just so happens to edit the same line of code.
+
+Tracy pushes up her work first and then goes for lunch. Bill continues working. He pushes up his feature branch and then notices that GitHub is prompting him to solve a conflict that has arisen.
+
+Using the GitHub UI, Bill needs to decide which changes to keep to ensure that the file continues working. He resolves the conflict and uses the UI to merge his code successfully.
+
+Solving conflicts through GitHub
+GitHub provides a tool to solve merge conflicts on its website. If you choose to solve a problem on GitHub, remember that merging creates a new commit. If you want to return later and complete more work on that same branch, you will need to pull from that branch before you continue.
+
+Do this
+Create a conflict on GitHub
+Typically, conflicts arise when working with other team members. But in this case, you will fabricate your own conflict.
+
+In your repository, create a new branch with your initials and the branch name adventure-update. For example, here's what Bill P. would call the branch:
+
+bp--adventure-update
+Then, go to your remote GitHub repository. On GitHub, edit the first line of the adventure.txt file. You can make changes directly by clicking the filename and then clicking the Edit ✏️ icon in the top-right corner.
+
+The edit icon on GitHub highlighted
+Make a change to the first line, and then click Commit change.
+
+Back in your local repository, on your new branch, make a different change to the first line of the same file. Add and commit your changes. Then, push up your feature branch to GitHub.
+
+Next, return to GitHub and create a new pull request with your newly created feature branch. When you create the pull request, you'll see a message that says something like this:
+
+Can't automatically merge. Don't worry, you can still create the pull request.
+Finally, click Create pull request.
+
+Solve a remote conflict
+You now have a merge conflict, because the same line was edited in two different places. The main branch has a commit that shows one change (the one that you made from GitHub), while your branch includes a different change in the same place.
+
+Importantly, your new feature branch does not have the same commit that the main branch does.
+
+A screenshot of a conflict error on GitHub
+GitHub will allow you to solve merge conflicts through its UI. Just click the Resolve conflicts button, and GitHub will display any conflicting files.
+
+The GitHub interface when there is a conflict
+As you can see above, the conflicts are highlighted for you. The content above the = symbols is what was added in the new branch (bp--adventure-update). And the content below the = symbols is what conflicts with the main branch.
+
+To solve the merge conflict, correct the file in whatever way you like. But make sure to delete the lines that contain the <, >, and = symbols; these are the lines that GitHub added.
+
+A screenshot of resolving a conflict on GitHub
+In the above example, all of the changes were kept.
+
+Click the Mark as resolved button and then the resulting Commit merge button. You will now see that your pull request can be merged.
+
+Local conflicts
+Remember that you can merge branches locally as well, using the git merge command. Most often, you will merge locally when you want to make sure that your feature branch is up to date.
+
+For example, you might take a few days to work on a new feature on your new branch. Then, you would go to the main branch, use git pull to receive any new changes, and then return to your feature branch. On your feature branch, you would then run the following code to merge main into it, updating your code.
+
+git merge main
+During this process, you may end up with a merge conflict. If that happens, you'll need to manage the conflict locally.
+
+Do this
+Create a local conflict
+Begin in your local repository. Switch back to your main branch and sync with the remote repository.
+
+git checkout main
+git pull origin main
+Then, create a new branch called adventure-restart with your initials (you can see the branch below uses Bill's initials):
+
+bp--adventure-restart
+Switch back to main. Create a new commit where you change the first line of the adventure.txt file. You can change this line to whatever you want.
+
+Tip
+In general, you shouldn't be committing to the main branch. However, you can make an exception here in the interest of time.
+
+Switch back to your adventure-restart branch. Create a new commit where you remove all of the contents of the adventure.txt file. Make sure not to delete the file, just remove the contents.
+
+Once you've made your commit, run the following command on your adventure-restart branch:
+
+git merge main
+In your terminal window, you'll see something like the following:
+
+Auto-merging adventure.txt
+CONFLICT (content): Merge conflict in adventure.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Solve a local conflict
+You are now in the middle of a merge conflict. You can see that this is the case by running git status in your terminal. You'll see something like the following output:
+
+On branch bp--adventure-restart
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   adventure.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Git provides some useful instructions above. Your next steps are as follows:
+
+Fix conflicts.
+
+Run git add and then git commit.
+
+First, open up the adventure.txt file. You will see something like the following:
+
+<<<<<<< HEAD
+=======
+Billy the Kid
+Joan of Arc
+Abraham Lincoln
+>>>>>>> main
+Here, you can see that the changes from your feature branch are above the = symbols. And the changes from the main branch are below the = symbols.
+
+Go ahead and make whatever changes you like. Just make sure to remove the <, >, and = symbols.
+
+Tip
+If you are in VSCode, you'll notice that VSCode highlights the two sections and provides in-line links that will allow you to choose one section or the other. You can either use this feature or ignore it.
+
+Whatever changes you make, run the following commands when you are done:
+
+git add adventure.txt
+git commit
+Notice that you aren't including the -m flag in this commit.
+
+When you run git commit, you'll be brought back into the vi editor. At the top, you'll notice a message similar to the one that you saw when you merged your pull request on GitHub.
+
+An example of an error message on the terminal for a merge conflict
+The hash symbols # in this message represent comments. You do not need to change this message at all. Instead, you can type :x and then press Enter. This will save and quit the editor.
+
+Once you are done, you will see a message like this:
+
+[bp--adventure-restart aec1828] Merge branch 'main' into bp--adventure-restart
+If you run git log, you will see your commit from main, as well as the commit that describes the merge.
+
+Avoiding conflicts
+It is important to note that having a merge conflict is quite common. Particularly on large projects, it can be difficult to avoid modifying a file that someone else is working on. It is more important to be able to resolve merge conflicts than it is to avoid them completely.
+
+With that said, there are some steps that you can take to reduce the number of merge conflicts that you have. Here are some best practices to keep in mind:
+
+Communicate often with other developers working on the same codebase. If you are working on the same part of the codebase, consider working together on that feature or fix until it is complete.
+
+Avoid making commits directly to the main branch or on GitHub. Stick with the feature branch workflow as much as possible.
+
+Use code formatters like PrettierJS in your code. This will avoid small conflicts, like added line spacing or errant commas.
+
+** git intro
+what is git?
++ distributed version control system
++ replaced svn and cvs; which were centralized systems
++ a place where all code is stored is called a repository
+created by Linus Torvalds in 2005; and maintained by Junio Hamano since then.
+
+it is used for:
+tracking code changes
+tracking who made changes
+coding collaboration
+
+what does git do
+  manage projects with Repositories
+  Clone a project to work on a local copy
+  Control and track changes with Staging and Committing
+  Branch and Merge to allow for work on different parts and versions of a project
+  Pull the latest version of the project to a local copy
+  Push local updates to the main project
+
+Working with Git
+  Initialize Git on a folder, making it a Repository
+  Git now creates a hidden folder to keep track of changes in that folder
+  When a file is changed, added or deleted, it is considered modified
+  You select the modified files you want to Stage
+  The Staged files are Committed, which prompts Git to store a permanent snapshot
+  of the files
+  Git allows you to see the full history of every commit.
+  You can revert back to any previous commit.
+  Git does not store a separate copy of every file in every commit, but keeps
+  track of changes made in each commit!
+
+why Git
+developers can work together from anywhere in the world.
+developers can see the full history of the project.
+developers can revert to earlier versions of a project.
+
+what is GitHub
+git is not the same as github
+github makes tools that use git
+
+check if git is properly install
+by using the git --version command
+should show git version X.Y
+
+git configuration
+need to set name and email
+git config --global user.name "Name"
+git config --global user.email "Email"
+--global flag is using to change every repository on your computer
+  not using flag effects only current repository
+
+git init; creates a git repository
+
+files in a git repository are in one of two states
+tracked - files that git knows about and are added to the repository
+untracked - files that are in your working directory, but not added to the
+repository
+
+git staging environment
+staged files are files that are ready to be commmitted to the repository you are
+working on.
+git add: adds files to the staging enviroment
+  using --all instead of individual filenames will stage all changes (new,
+modified, and deleted) files.
+    git add -A: same
+
+why is it needed
+installation/usage
+role of gitlab/github/bitbucket
+
+cloning and pulling
+git clone <url>
+git status
+git pull
+
+creating repos
+git init: used on a existing repository
+git init <directory name>: creates a blank git repository
+
+common usage:
+git clone, remote
+  git remote -v
+git status
+  stage
+git add, commit
+git push, pull, fetch
+git branch, checkout
+git merge
+git log
+git diff
+
+** Intro to GitHub
+
+Version control systems
+Systems for managing changes to files, software, websites, and other computer or web-based programs
+Local repository
+Also called the local repo, the project folder that is stored on your computer
+Remote repository
+Also called the remote repo, the GitHub project folder that is stored on the GitHub.com website
+Owner
+The person who creates a repo, determines if it is public or private, and determines how code that is submitted to a project from others is managed
+Collaborator
+A person who has been invited by the repository owner to contribute to a project, and who has the ability to edit the code in that repo
+Commit
+Saving new changes to a version of a file, typically in a version control program like GitHub
+
+Version control: Version control allows many people to make and save changes for multiple versions of a project or program. This means you and other developers can experiment, make mistakes, and revert back to an earlier version if necessary.
+One safe place: These services securely store your projects in one safe place on the web. You can work locally and on more than one computer, but you always have an online backup. This one location makes storage easy and convenient.
+Collaboration: More often than not, coding projects require multiple people to work nearly simultaneously. Version control systems allow many different contributors to edit and change the same set of files at the same time.
+
+The GitHub language
+As you get started with GitHub, you'll need to learn the lingo. Here are some new GitHub terms and concepts that will prove useful to you in your time at Thinkful and in your career.
+Git: This is the open-source system used for version control. It's used by many companies, but GitHub is the most popular.
+GitHub.com: The website where users can store and manage versions of their code projects online.
+GitHub.io: The website that displays websites that are stored on GitHub.com online, for all users to view.
+GitHub Desktop: A free app that is installed locally on your computer. It makes it easy to update code projects from your computer to GitHub.com.
+Repository: This is a project's folder that contains all of the files for the project, as well as each file's revision history. This is commonly called a repo. There are local repositories, which are on your computer, and remote repositories, which are on GitHub.com. These will be explained in more depth below.
+Public repo: These are publicly accessible repositories. GitHub provides free access to any public repo.
+Private repo: This is a repo that only you (or others who you give access to) can see. GitHub also makes it free to store private repos; however, to access most of the functionality of a private repo, you'll need to pay a monthly fee.
+Owner: The person who creates a repo and therefore determines if it is public or private. They determine how code that is submitted to a project from others is managed.
+Collaborator: A person who has been invited by the repository owner to contribute to a project. They have been granted access to a repo, and they have the ability to edit the code in that repo.
+Commit: A fancy technical term that's used to refer to saving new changes to a version of a file.
+
+As noted above, when using GitHub for a project, you'll be working with two repos: a local repository and a remote repository. For any given project, these two repos would be the same. The difference is where you're making changes to the files.
+
+The local repository, or local repo, is the project folder that is stored on your computer. It's the local (in other words, not web-based) folder that contains all the files for the project. Edits can be made to any of these files, even if you're offline. When you're online, you can upload those changes to the files that are on GitHub.com.
+The remote repository, or remote repo, is the GitHub project folder that is stored on the GitHub.com website. If the remote repo is a public repo, anyone can view the code and the organization of those files. If it's a private repo, only people who are invited can view the code and files. These repos can be downloaded onto any computer and synced with changes made by any team members.
+
+More on custom domain names
+As noted briefly above, you can buy a custom domain name (URL) that can easily showcase your projects by pointing to your GitHub.io website. In fact, a domain name can be used to point to your GitHub account or any of the projects that are hosted on GitHub.io. When you're ready to purchase a custom domain name, follow the directions below. These are the two primary steps:
+
+Purchase your domain name and point the domain to GitHub.
+
+Update GitHub to point to the domain, too.
+
+A domain name usually costs around $10 for yearly access. (So, if Jenny were to create her web portfolio and host it publicly on GitHub, then she could run http://www.jennythinkful.com for around $10 per year!) Three popular domain sites are listed below:
+
+GoDaddy: The cost of a domain name is about $12 per year. Check out this tutorial to learn more.
+Name.com: The cost of a domain name is about $11 per year. Check out this tutorial to learn more.
+Namecheap: The cost of a domain name is about $10 per year. Check out this tutorial to learn more.

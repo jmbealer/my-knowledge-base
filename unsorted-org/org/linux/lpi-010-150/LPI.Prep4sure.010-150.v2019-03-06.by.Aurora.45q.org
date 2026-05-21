@@ -1,0 +1,839 @@
+                                                                    010-150.45q
+
+Number: 010-150
+Passing Score: 800
+Time Limit: 120 min
+
+
+
+
+                                                              https://www.gratisexam.com/
+
+
+
+                                                                        010-150
+
+
+
+
+                                                     Linux Essentials Certificate Exam, version 1.5
+
+
+
+
+Sections
+1. The Linux Community and a Career in Open Source
+2. Finding Your Way on a Linux System
+3. The Power of the Command Line
+4. The Linux Operating System
+5. Security and File Permissions
+
+
+
+
+                                                              https://www.gratisexam.com/
+Exam A
+
+QUESTION 1
+Which Linux distribution is used as a basis for the creation of Ubuntu Linux?
+
+A. Red Hat Linux
+B. Arch Linux
+C. SUSE Linux
+D. Gentoo Linux
+E. Debian Linux
+
+Correct Answer: E
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 2
+Which of the following programs is not a graphical web browser?
+
+
+
+
+                                                                   https://www.gratisexam.com/
+
+A. Konqueror
+B. Firefox
+C. Links
+D. Opera
+E. Chrome
+
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+
+                                                                    https://www.gratisexam.com/
+QUESTION 3
+What does LAMP mean?
+
+A. The Linux Advanced Mode Programming Interface which gives advanced capabilities to application developers.
+B. The bus ID of an attached USB device that emits light.
+C. Short for Lightweight Access Management Protocol which synchronizes permissions in a network.
+D. The combination of Linux, Apache, MySQL and PHP or other programming languages.
+E. Short for lamport-clock which is important in distributed network computing.
+
+Correct Answer: D
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 4
+Which of the following answers are true for cloud computing? (Choose TWO correct answers.)
+
+A. Cloud Computing provides new tools to manage IT resources.
+B. From the business perspective, Cloud Computing means outsourcing or centralization of IT operations.
+C. Cloud Computing is the opposite of green IT; i.e. the use of fossil, non-regenerative energy for computing.
+D. Cloud Computing implies sharing all information with everyone else in 'the cloud'.
+
+Correct Answer: AB
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 5
+Which of the following is a Linux based operating system for use on mobile devices?
+
+A. iOS
+B. CentOS
+C. Android
+
+
+
+                                                                   https://www.gratisexam.com/
+D. Debian
+
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 6
+Which one of the following is true about Open Source software?
+
+A. Open Source software can not be copied for free.
+B. Open Source software is available for commercial use.
+C. The freedom to redistribute copies must include binary or executable forms of the software but not the source code.
+D. Open Source software is not for sale.
+
+Correct Answer: B
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 7
+What is the first character for file or directory names if they should not be displayed by commands such as ls unless specifically requested?
+
+A. \ (backslash)
+B. . (dot)
+C. - (minus)
+D. _ (underscore)
+
+Correct Answer: B
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                                    https://www.gratisexam.com/
+QUESTION 8
+Which of the following commands moves the directory ~/summer-vacation and its content to ~/vacation/2011?
+
+A. mv ~/vacation/2011 ~/summer-vacation
+B. move -R ~/summer-vacation ~/vacation/2011
+C. mv /home/summer-vacation /home/vacation/2011
+D. mv ~/summer-vacation ~/vacation/2011
+E. mv -R ~/summer-vacation ~/vacation/2011
+
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 9
+Which of the following commands can be used to create a file?
+
+
+
+
+                                                                https://www.gratisexam.com/
+
+A. touch
+B. build
+C. nico
+D. create
+E. mkfile
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 10
+
+
+                                                                https://www.gratisexam.com/
+Which option will cause the echo command NOT to output a trailing newline?
+
+A. -e
+B. -p
+C. -n
+D. -s
+
+Correct Answer: C
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 11
+Which commands provide help for a specific Linux command? (Choose TWO correct answers.)
+
+A. info
+B. man
+C. helpme
+D. ask
+E. whatdoes
+
+Correct Answer: AB
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 12
+SIMULATION
+When typing a long command line at the shell, what single character can be used to split a command across multiple lines?
+
+Correct Answer: \
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+                                                                  https://www.gratisexam.com/
+QUESTION 13
+Which of the following are correct commands for changing the current directory to the user's home? (Choose TWO answers)
+
+A. cd /home
+B. cd ~
+C. cd ..
+D. cd
+E. cd /
+
+Correct Answer: BD
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 14
+Which command line can be used to search help files that mention the word "copy"?
+
+A. man -k copy
+B. whatis copy
+C. man copy
+D. copy help
+E. copy –help
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 15
+Which command is used to make a shell variable known to subsequently executed programs?
+
+A. export
+B. announce
+
+
+                                                                https://www.gratisexam.com/
+C. env
+D. transfer
+E. mv
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 16
+Which command lists all files in the current directory that start with a capital letter?
+
+A. ls [A-Z]*
+B. ls A-Z
+C. ls A-Z*
+D. ls --uppercasefiles
+E. list-uppercase-files
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 17
+Which command shows if /usr/bin is in the current shell search path?
+
+A. cat PATH
+B. echo $PATH
+C. echo %PATH
+D. cat $PATH
+E. echo %PATH%
+
+Correct Answer: B
+Section: Finding Your Way on a Linux System
+
+
+
+                                                                        https://www.gratisexam.com/
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 18
+Which of the following commands will display a list of all files in the current directory, including those that may be hidden?
+
+A. ls -a
+B. ls --hidden
+C. ls -h
+D. ls –a
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 19
+Which of the following commands increases the number of elements in a directory? (Choose TWO answers)
+
+A. touch newfile
+B. create newfile
+C. ls newfile
+D. rmdir newdirectory
+E. mkdir newdirectory
+
+Correct Answer: AE
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 20
+What command would you use to get comprehensive documentation about any command in Linux?
+
+
+
+
+                                                                      https://www.gratisexam.com/
+                                                                      https://www.gratisexam.com/
+
+A. help command
+B. echo command
+C. locate command
+D. man command
+E. get command
+
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 21
+How is it possible to determine if an executable file is a shell script which is read by Bash?
+
+A. The r bit is set.
+B. The file must end with .sh.
+C. The first line starts with #!/bin/bash.
+D. /bin/bash has to be run in debug mode.
+E. Scripts are never executable files.
+
+Correct Answer: C
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 22
+What is the output of the following command?
+
+
+
+                                                                      https://www.gratisexam.com/
+ tail -n 20 test.txt
+
+A. The first 20 lines of test.txt.
+B. The last 20 lines of test.txt omitting the blank lines.
+C. The last 20 lines of test.txt with line numbers.
+D. The last 20 lines of test.txt including blank lines.
+
+Correct Answer: D
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 23
+Which commands will archive /home and its content to /mnt/backup? (Choose TWO correct answers.)
+
+A. cp -ar /home /mnt/backup
+B. mv /home /mnt/backup
+C. sync -r /home /mnt/backup
+D. tar -cf /mnt/backup/archive.tar /home
+E. copy -r /home /mnt/backup
+
+Correct Answer: AD
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 24
+Why is the file data.txt empty after executing sort data.txt > data.txt?
+
+A. Because, if data.txt is empty now, it must have been empty before.
+B. Because sort cannot sort text files, only binary files.
+C. Because sort detects that both files are the same.
+D. Because the file gets truncated before sort is executed.
+
+
+
+
+                                                                       https://www.gratisexam.com/
+Correct Answer: D
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 25
+What keyword is missing from the following segment of the shell script?
+
+  for i in *; _____
+     cat $i
+  done
+
+A. do
+B. then
+C. enod
+D. fi
+E. run
+
+Correct Answer: A
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 26
+Which of the following statements may be used to access the second command line argument to a script?
+
+A. "$ARG2"
+B. $1
+C. "$2"
+D. "$1"
+E. '$2'
+
+Correct Answer: C
+Section: The Power of the Command Line
+Explanation
+
+
+                                                                  https://www.gratisexam.com/
+Explanation/Reference:
+
+
+QUESTION 27
+Which of the following commands will output all of the lines that contain either the string Fred or fred? (Choose TWO correct answers.)
+
+A. grep -v fred data_file
+B. grep '[f]red' data_file
+C. egrep fred data_file
+D. grep '[Ff]red' data_file
+E. grep -i fred data_file
+
+Correct Answer: DE
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 28
+The output of the program date should be saved in the variable actdat. What is the correct statement?
+
+A. actdat=`date`
+B. set actdat='date'
+C. date | actdat
+D. date > $actdat
+E. actdat=date
+
+Correct Answer: A
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 29
+How can the current directory and its subdirectories be searched for the file named MyFile.xml?
+
+
+
+                                                                   https://www.gratisexam.com/
+A. find . -name MyFile.xml
+B. grep MyFile.xml | find
+C. grep -r MyFile.xml .
+D. less MyFile.xml
+E. search Myfile.xml ./
+
+Correct Answer: A
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 30
+Which of the following commands will set the variable text to olaf is home? (Select TWO answers)
+
+A. text=olaf\ is\ home
+B. text=$olaf is home
+C. $text='olaf is home'
+D. text=='olaf is home'
+E. text="olaf is home"
+
+Correct Answer: AE
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 31
+Which of the following commands will create an archive file, named backup.tar, containing all the files from the directory /home?
+
+A. tar /home backup.tar
+B. tar -cf /home backup.tar
+C. tar -xf /home backup.tar
+D. tar -xf backup.tar /home
+E. tar -cf backup.tar /home
+
+
+
+                                                                    https://www.gratisexam.com/
+Correct Answer: E
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 32
+What is the output of the following command?
+
+ for token in a b c; do
+  echo -n ${token};
+ done
+
+A. anbncn
+B. abc
+C. $token$token$token
+D. {a}{b}{c}
+E. a b c
+
+Correct Answer: B
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 33
+Which command will display the last line of the file foo.txt?
+
+A. head -n 1 foo.txt
+B. tail foo.txt
+C. last -n 1 foo.txt
+D. tail -n 1 foo.txt
+
+Correct Answer: D
+Section: The Power of the Command Line
+Explanation
+
+
+
+
+                                                                https://www.gratisexam.com/
+Explanation/Reference:
+
+
+QUESTION 34
+How can the normal output of a command be written to a file while discarding the error output?
+
+A. command >2>file 1&>/dev/null
+B. command < output > /dev/null
+C. command > discard-error > file
+D. command > /dev/null 2&>1 output
+E. command >file 2>/dev/null
+
+Correct Answer: E
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 35
+Which criteria are useful when deciding which operating system to use? (Choose THREE correct answers.)
+
+A. License costs.
+B. Ideological preferences of the system administrator.
+C. Linux can do everything, there is no need for further evaluation.
+D. Availability of mandatory applications and tools.
+E. Skills of the administrators and staff.
+
+Correct Answer: ADE
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 36
+Which of the following directories is often used to store log files?
+
+A. /home
+
+
+                                                                       https://www.gratisexam.com/
+B. /var
+C. /temp
+D. /dev
+E. /usr
+
+Correct Answer: B
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 37
+Identify the proper device for the third partition, on the second hard disk, on the first IDE controller on a PC system.
+
+
+
+
+                                                                      https://www.gratisexam.com/
+
+A. /dev/hdb3
+B. /dev/hd1b3
+C. /dev/hdc1d2p3
+D. dev/hdc1a3
+E. dev/hdc1b3
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 38
+A Linux computer has no access to the internet. Which command displays information about the network gateway for the system?
+
+A. traceroute
+
+
+
+                                                                      https://www.gratisexam.com/
+B. ifconfig
+C. gateway
+D. route
+E. ipconfig
+
+Correct Answer: D
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 39
+Which network interface always exists in a Linux system?
+
+A. lo
+B. sit0
+C. wlan0
+D. vlan0
+E. eth0
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 40
+Which command will display running process information in real time?
+
+A. top
+B. show current
+C. ps current
+D. process
+
+Correct Answer: A
+Section: The Linux Operating System
+
+
+
+                                                                 https://www.gratisexam.com/
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 41
+After installing a new package, in which directory are you most likely find its configuration file?
+
+A. /lib
+B. /conf
+C. /etc
+D. /usr
+E. /opt
+
+Correct Answer: C
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 42
+Which of the following commands can be used to determine the time of the last login of a given user?
+
+A. showlog
+B. recent
+C. last
+D. history
+E. login
+
+Correct Answer: C
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 43
+What permissions are set on a file with the command chmod 654 file.txt?
+
+
+                                                                       https://www.gratisexam.com/
+A. drw-r-xr--
+B. d--wxr-x--
+C. --wxr-x--x
+D. -rwxrw---x
+E. -rw-r-xr—
+
+Correct Answer: E
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 44
+Which statements about the directory /etc/skel are correct? (Choose TWO answers)
+
+A. The personal settings of root are in this directory.
+B. The files from the directory are copied to the home directory of the new user when starting the system.
+C. The files from the directory are copied to the home directory of a new user when the account is created.
+D. The directory contains a default set of configuration files used by the useradd command.
+E. The directory contains the global settings for the Linux system.
+
+Correct Answer: CD
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 45
+Given the following directory permissions:
+
+  drwxrwxrwt 14 root root 36864 2012-03-02 11:17 /tmp
+
+What does the letter t at the end of drwxrwxrwt indicate?
+
+A. It is the sticky bit that causes all commands in this directory to be launched as root.
+B. It means that even though the directory is globally writable only the owner can delete their own files.
+
+
+                                                                     https://www.gratisexam.com/
+C. It makes the directory accessible for everybody.
+D. It indicates that this directory contains only temporary files that may be deleted.
+E. It is a temporary bit that prevents launching commands in this directory.
+
+Correct Answer: B
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                                      https://www.gratisexam.com/
+
+
+
+
+                                                                      https://www.gratisexam.com/

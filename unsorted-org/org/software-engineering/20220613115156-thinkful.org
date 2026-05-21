@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       c4ffc59c-65b7-4f0e-b749-bcd46ef75fb0
+:mtime:    20230206181541 20221015184505
+:ctime:    20220613115156
+:END:
+#+title: thinkful
+#+date: [2022-06-13 Mon 11:51]
+
+these are my notes on the thinkful program
+this is a staging area for my notes need to summarize and move to a better place
+
+[[id:63bc8d8d-4fc8-4b34-8881-43ace1415a53][JavaScript]]
+[[id:6df2c337-4b01-470f-9028-d0745498f8a6][devWorkflow]]
+[[id:dea16eb4-d34a-421b-b037-9f3e606ec001][git]]
+[[id:43e93100-42e8-432e-99bb-ecdd6f6b7097][devCollab]]
+[[id:a3333ce5-86aa-4729-af16-cd8dafd42149][Node.js]]
+[[id:0b027db0-6cea-4c7a-81fa-05115bd10590][problemSolving]]
+[[id:bc9d12ba-1f84-4599-9fe3-bcba0d2f5cb4][reactjs]]
+[[id:d3374c8f-56bd-4dee-ad16-e9f4a8492999][swe-dsa]]
+[[id:6d754801-89a1-41ec-a8ce-47fbc3e24adf][career]]
+[[id:c3bb3e82-784a-4c8b-beaf-e3c9e1552ee5][frontend-dev]]
+[[id:55632b72-6ba7-4571-a9ff-06c45a197471][backend-dev]]
+
+* unsorted
+
+Content delivery network
+Also known as a CDN, a network of servers that helps web page content to load more quickly
+
+different type data type
+loop over objects
+destructing
+rest
+scope
+array method
+arrows function
+git, github
+
+
+html boilerplate

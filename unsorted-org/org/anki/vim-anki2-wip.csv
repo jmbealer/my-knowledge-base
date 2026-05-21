@@ -1,0 +1,111 @@
+#separator:comma
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:5
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::s}}</b> :: Go Nth characters to the <b>left</b>.,h,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::b}}</b> :: Go Nth characters to the <b>right</b>.,l,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::0}}</b> :: Go to the <b>first character</b> in the line.,,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::^}}</b> :: Go to the <b>first non-blank character</b> in the line.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::$}}</b> :: Go to the <b>last character</b> in the line. N-1 lines lower.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::g_}}</b> :: Go to the <b>last non-blank character</b> in the line and [count - 1] lines downward.,,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::g0}}</b> :: Go to <b>first character</b> in screen line. Differs from "0" when lines wrap.,,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::g^}}</b> :: Go to <b>first non-blank character</b> in screen line. Differs from "^" when lines wrap.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::g$}}</b> :: Go to <b>last character</b> of the screen line  and [count -1] screen lines downward. Differs from "$" when lines wrap.,,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::gm}}</b> :: Go to <b>middle</b> of the <b>screen line</b>.,,vim left-right motions
+bash type,0-currents-using::vim-wip2,<b>{{c1::gM}}</b> :: Go to <b>middle</b> of the <b>line</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::|}}</b> :: Go to <b>screen column</b> [count] in the current line. exclusive motion. Default: 1.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::fx}}</b> :: Go to the Nth occurrence of {x} to the <b>right</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::Fx}}</b> :: Go to the Nth occurrence of {x} to the <b>left</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::jx}}</b> :: Go <b>till before</b> the Nth occurrence of {x} to the <b>right</b>.,tx,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::Jx}}</b> :: Go <b>till before</b> the Nth occurrence of {x} to the <b>left</b>.,Tx,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::;}}</b> :: repeat the last "f"&comma; "F"&comma; "t"&comma; or "T" N times.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::&comma;}}</b> :: repeat the last "f"&comma; "F"&comma; "t"&comma; or "T" N times in <b>opposite direction</b>.,,vim left-right motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::n}}</b> :: Go Nth lines <b>upward</b>.,k,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::t}}</b> :: Go Nth lines <b>downward</b>.,j,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::-}}</b> :: Go Nth lines <b>upward</b>&comma; on the <b>first non-blank character</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::+}}</b> :: Go Nth lines <b>downward</b>&comma; on the <b>first non-blank character</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::_}}</b> :: Go Nth - 1 lines <b>downward</b>&comma; on the <b>first non-blank character</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::G}}</b> :: Go to line N&comma; default: <b>last line</b>&comma; on the <b>first non-blank character</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::gg}}</b> :: Go to line N&comma; default: <b>first line</b>&comma; on the <b>first non-blank character</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<b>{{c1:::}}</b><i>N</i> :: set the cursor on the last line number in <b>[range]</b>.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::%}}</b> :: Go to Nth <b>percentage</b> in the file&comma; on the first non-blank in the line.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::gk}}</b> :: Go Nth <b>display lines upward</b>. Differs from 'k' when lines wrap.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::gj}}</b> :: Go Nth <b>display lines downward</b>. Differs from 'j' when lines wrap.,,vim up-down motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::w}}</b> :: <i>Go</i> N <b>words</b> <b>forward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::W}}</b> :: <i>Go</i> N <b>blank</b>-<b>separated</b> <b>WORDs</b> <b>forward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::e}}</b> :: <i>Go</i> <b>forward</b> to the <b>end</b> of the N <b>word</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::E}}</b> :: <i>Go</i> <b>forward</b> to the <b>end</b> of the N <b>blank</b>-<b>separated</b> <b>WORD</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::l}}</b> :: <i>Go</i> N <b>words</b> <b>backward</b>.,b,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::L}}</b> :: <i>Go</i> N <b>blank</b>-<b>separated</b> <b>WORDs</b> <b>backward</b>.,B,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::ge}}</b> :: <i>Go</i> <b>backward</b> to the <b>end</b> of the N <b>word</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::gE}}</b> :: <i>Go</i> <b>backward</b> to the <b>end</b> of the N <b>blank</b>-<b>separated</b> <b>WORD</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::)}}</b> :: <i>Go</i> N <b>sentences</b> <b>forward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::(}}</b> :: <i>Go</i> N <b>sentences</b> <b>backward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::}}}</b> :: <i>Go</i> N <b>paragraphs</b> <b>forward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::{}}</b> :: <i>Go</i> N <b>paragraphs</b> <b>backward</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]]}}</b> :: <i>Go</i> N <b>sections</b> <b>forward</b>&comma; at <b>start</b> of <b>section</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[[}}</b> :: <i>Go</i> N <b>sections</b> <b>backward</b>&comma; at <b>start</b> of <b>section</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::][}}</b> :: <i>Go</i> N <b>sections</b> <b>forward</b>&comma; at <b>end</b> of <b>section</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[]}}</b> :: <i>Go</i> N <b>sections</b> <b>backward</b>&comma; at <b>end</b> of <b>section</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[(}}</b> :: <i>Go</i> N times <b>back</b> to unclosed <b>'('</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[{}}</b> :: <i>Go</i> N times <b>back</b> to unclosed <b>'{'</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[m}}</b> :: <i>Go</i> N times <b>back</b> to <b>start</b> of <b>method</b> (for Java).,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[M}}</b> :: <i>Go</i> N times <b>back</b> to <b>end</b> of <b>method</b> (for Java).,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::])}}</b> :: <i>Go</i> N times <b>forward</b> to unclosed <b>')'</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]} }}</b> :: <i>Go</i> N times <b>forward</b> to unclosed <b>'}'</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]m}}</b> :: <i>Go</i> N times <b>forward</b> to <b>start</b> of <b>method</b> (for Java).,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]M}}</b> :: <i>Go</i> N times <b>forward</b> to <b>end</b> of <b>method</b> (for Java).,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[#}}</b> :: <i>Go</i> N times <b>back</b> to unclosed <b>"#if" or "#else"</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]#}}</b> :: <i>Go</i> N times <b>forward</b> to unclosed <b>"#else" or "#endif"</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::[*}}</b> :: <i>Go</i> N times <b>back</b> to <b>start</b> of <b>comment "/*"</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::]*}}</b> :: <i>Go</i> N times <b>forward</b> to <b>end</b> of <b>comment "*/"</b>.,,vim text-object motions
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::/}}</b>{pattern}[<b>/</b>[offset]]<CR> :: <b>search</b> <b>forward</b> for the N occurrence of {pattern}.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::?}}</b>{pattern}[?[offset]]<CR> :: <b>search</b> <b>backward</b> for the N occurrence of {pattern}.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::/}}</b><CR> :: <b>repeat</b> last <b>search</b>&comma; in the <b>forward</b> direction.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::?}}</b><CR> :: <b>repeat</b> last <b>search</b>&comma; in the <b>backward</b> direction.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::k}}</b> :: <b>repeat</b> last <b>search</b>.,n,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::K}}</b> :: <b>repeat</b> last <b>search</b>&comma; in <b>opposite</b> direction.,N,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::*}}</b> :: <b>search</b> <b>forward</b> for the <b>identifier</b> under the <b>cursor</b>.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::#}}</b> :: <b>search</b> <b>backward</b> for the <b>identifier</b> under the <b>cursor</b>.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::g*}}</b> :: like <b>"*"</b>&comma; but also find <b>partial</b> matches.,,vim patterns search
+bash type,0-current-using::vim-wip2,<i>N</i> <b>{{c1::g#}}</b> :: like <b>"#"</b>&comma; but also find <b>partial</b> matches.,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::gd}}</b> :: <b>goto</b> <b>local</b> declaration of <b>identifier</b> under the <b>cursor</b>.,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::gD}}</b> :: <b>goto</b> <b>global</b> declaration of <b>identifier</b> under the <b>cursor</b>.,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::^}}</b> :: <b>start</b> of <b>line</b> (at <b>start</b> of pattern),,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\_^}}</b> :: <b>start</b> of <b>line</b> <b>(used</b> anywhere),,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::$}}</b> :: <b>end</b> of <b>line</b> (at <b>start</b> of pattern),,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\_$}}</b> :: <b>end</b> of <b>line</b> (used <b>anywhere)</b>,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::.}}</b> :: <b>any</b> single <b>character</b> (<b>not</b> an end of line),,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\_.}}</b> :: <b>any</b> single <b>character</b> <b>or</b> end of line,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\<}}</b> :: <b>start</b> of <b>word</b>,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\>}}</b> :: <b>end</b> of <b>word</b>,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::[a-z]}}</b> :: <b>single</b> <b>character</b> from the <b>range</b>,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::[^a-z]}}</b> :: <b>single</b> <b>character</b> <b>not</b> in the <b>range</b>,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\i}}</b> :: <b>identifier</b> character,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\I}}</b> :: like <b>"\i"&comma;</b> but <b>excluding</b> digits,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\k}}</b> :: <b>keyword</b> character,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\K}}</b> :: like <b>"\k"&comma;</b> but <b>excluding</b> digits,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\f}}</b> :: <b>file</b> <b>name</b> character,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\F}}</b> :: like <b>"\f"&comma;</b> but <b>excluding</b> digits,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\p}}</b> :: <b>printable</b> character,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\P}}</b> :: like <b>"\p"&comma;</b> but <b>excluding</b> digits,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\s}}</b> :: <b>white</b> <b>space</b> character: &lt;Space&gt; and &lt;Tab&gt;,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\S}}</b> :: <b>non-white</b> <b>space</b> character; <b>opposite</b> of \s,,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\d}}</b> :: <b>digit:</b> [0-9],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\D}}</b> :: <b>non-digit:</b> [^0-9],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\x}}</b> :: <b>hex</b> <b>digit:</b> [0-9A-Fa-f],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\X}}</b> :: <b>non-hex</b> digit: [^0-9A-Fa-f],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\o}}</b> :: <b>octal</b> digit: [0-7],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\O}}</b> :: <b>non-octal</b> digit: [^0-7],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\w}}</b> :: <b>word</b> character: [0-9A-Za-z_],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\W}}</b> :: <b>non-word</b> character:	[^0-9A-Za-z_],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\h}}</b> :: <b>head</b> of <b>word</b> character:	[A-Za-z_],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\H}}</b> :: <b>non-head</b> of <b>word</b> character:	[^A-Za-z_],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\a}}</b> :: <b>alphabetic</b> character:	[A-Za-z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\A}}</b> :: <b>non-alphabetic</b> character:	[^A-Za-z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\l}}</b> :: <b>lowercase</b> character: [a-z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\L}}</b> :: <b>non-lowercase</b> character: [^a-z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\u}}</b> :: <b>uppercase</b> character: [A-Z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\U}}</b> :: <b>non-uppercase</b> character: [^A-Z],,vim patterns search
+bash type,0-current-using::vim-wip2,<b>{{c1::\_x}}</b> :: where <b>x</b> is any of the characters above: character class with end-of-line included,,vim patterns search

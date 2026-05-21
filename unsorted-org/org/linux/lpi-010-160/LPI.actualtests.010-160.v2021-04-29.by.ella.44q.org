@@ -1,0 +1,1133 @@
+                                           010-160
+Number: 010-160
+Passing Score: 800
+Time Limit: 120 min
+File Version: 1
+                                            010-160
+* lpi linux essentials 010-160
+:PROPERTIES:
+:ANKI_DECK: lpi-linux-essentials-010-160-questions-bank
+:ANKI_TAGS: lpi linux essentials 010-160
+:END:
+** Question 1
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130450958
+:END:
+*** Question
+What are the differences between hard disk drives and solid state disks? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Hard disks have a motor and moving parts, solid state disks do not.
+*** Q_2
+Hard disks can fail due to physical damage, while solid state disks cannot fail.
+*** Q_3
+Solid state disks can store many times as much data as hard disk drives.
+*** Q_4
+/dev/sda is a hard disk device while /dev/ssda is a solid state disk.
+*** Q_5
+Solid state disks provide faster access to stored data than hard disks.
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 2
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670208995378
+:END:
+*** Question
+Reverse DNS assigns hostnames to IP addresses. How is the name of the IP address 198.51.100.165 stored on a DNS server?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+In the A record for 165.100.51.198.ipv4.arpa.
+*** Q_2
+In the PTR record for 165.100.51.198.in-addr.arpa.
+*** Q_3
+In the RNAME record for 198-51-100-165.rev.arpa.
+*** Q_4
+In the ARPA record for 165.100.51.198.rev.
+*** Q_5
+In the REV record for arpa.in-addr.198.51.100.165.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 3
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130451151
+:END:
+*** Question
+What information can be displayed by top?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Existing files, ordered by their size.
+*** Q_2
+Running processes, ordered by CPU or RAM consumption.
+*** Q_3
+User accounts, ordered by the number of logins.
+*** Q_4
+User groups, ordered by the number of members.
+*** Q_5
+User accounts, ordered by the number of files.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 4
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130451479
+:END:
+*** Question
+Which of the following commands can be used to resolve a DNS name to an IP address?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+dnsname
+*** Q_2
+dns
+*** Q_3
+query
+*** Q_4
+host
+*** Q_5
+iplookup
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+
+** Question 5 not working
+*** Question
+Which of the following outputs comes from the command free?
+A.
+
+885CB989129A5F974833949052CFB2F2
+B.
+C.
+D.
+E.
+*** Answers
+0 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: E
+
+** Question 6
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130451802
+:END:
+*** Question
+What is the UID of the user root?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+1
+*** Q_2
+-1
+*** Q_3
+255
+*** Q_4
+65536
+*** Q_5
+0
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 7
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130451976
+:END:
+*** Question
+What is true about the owner of a file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Each file is owned by exactly one user and one group.
+*** Q_2
+The owner of a file always has full permissions when accessing the file.
+*** Q_3
+The user owning a file must be a member of the file’s group.
+*** Q_4
+When a user is deleted, all files owned by the user disappear.
+*** Q_5
+The owner of a file cannot be changed once it is assigned to an owner.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 8
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130452280
+:END:
+*** Question
+What information is stored in /etc/passwd? (Choose three.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The user’s storage space limit
+*** Q_2
+The numerical user ID
+*** Q_3
+The username
+*** Q_4
+The encrypted password
+*** Q_5
+The user\s default shell
+*** Answers
+0 1 1 0 1
+*** Sources
+*** Extra 1
+Correct Answer: BCE
+** Question 9
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130452579
+:END:
+*** Question
+Which of the following tar options handle compression? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+-bz
+*** Q_2
+-z
+*** Q_3
+-g
+*** Q_4
+-j
+*** Q_5
+-z2
+*** Answers
+0 1 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: BD
+** Question 10
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130452754
+:END:
+*** Question
+Which of the following keys can be pressed to exit less?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+l
+*** Q_2
+x
+*** Q_3
+e
+*** Q_4
+q
+*** Q_5
+!
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 11
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130453054
+:END:
+*** Question
+Which of the following commands sorts the output of the command export-logs?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+export-logs < sort
+*** Q_2
+export-logs > sort
+*** Q_3
+export-logs & sort
+*** Q_4
+export-logs | sort
+*** Q_5
+export-logs <> sort
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+
+885CB989129A5F974833949052CFB2F2
+** Question 12
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130453355
+:END:
+*** Question
+A directory contains the following files:
+  a.txt
+  b.txt
+  c.cav
+What would be the output of the following shell script?
+for file in *.txt
+  do
+    echo $file
+  done
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+**.txt
+*** Q_2
+a b
+*** Q_3
+c.cav
+*** Q_4
+a.txt
+*** Q_5
+a. txt
+b. txt
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 13
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130453655
+:END:
+*** Question
+Which of the following commands will search for the file foo.txt under the directory /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+search /home –file foo.txt
+*** Q_2
+search /home foo. txt
+*** Q_3
+find /home – file foo.txt
+*** Q_4
+find /home –name foo.txt
+*** Q_5
+find /home foo.txt
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 14
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130453830
+:END:
+*** Question
+The current directory contains the following file:
+-rw-r—r— 1 root exec 24551 Apr 2 12:36 test.sh
+
+The file contains a valid shell script, but executing this file using ./test.sh leads to this error:
+bash: ./test.sh: Permission denied
+
+What should be done in order to successfully execute the script?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The file’s extension should be changed from .sh to .bin.
+*** Q_2
+The execute bit should be set in the file’s permissions.
+*** Q_3
+The user executing the script should be added to the exec group.
+*** Q_4
+The SetUID bit should be set in the file’s permissions
+*** Q_5
+The script should be run using #!./test. sh instead of ./test.sh.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 15
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130454130
+:END:
+*** Question
+What is a Linux distribution?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The Linux file system as seen from the root account after mounting all file systems.
+*** Q_2
+A bundling of the Linux kernel, system utilities and other software.
+*** Q_3
+The set of rules which governs the distribution of Linux kernel source code.
+*** Q_4
+An operating system based on Linux but incompatible to the regular Linux kernel.
+*** Q_5
+A set of changes to Linux which enable Linux to run on another processor architecture.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 16
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130454452
+:END:
+*** Question
+Which package management tool is used in Red Hat-based Linux Systems?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+portage
+*** Q_2
+rpm
+*** Q_3
+apt-get
+*** Q_4
+dpkg
+*** Q_5
+packagectl
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 17
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670209024351
+:END:
+*** Question
+Why are web browser cookies considered dangerous?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Cookies support identification and tracking of users.
+*** Q_2
+Cookies are always public and accessible to anyone on the internet.
+*** Q_3
+Cookies consume significant amounts of storage and can exhaust disk space.
+*** Q_4
+Cookies store critical data which is lost when a cookie is deleted.
+*** Q_5
+Cookies can contain and execute viruses and malware.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 18
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130454629
+:END:
+*** Question
+Which of the following are typical services offered by public cloud providers? (Choose three.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Platform as a Service(PaaS)
+*** Q_2
+Infrastructure as a Service(IaaS)
+*** Q_3
+Internet as a Service(IaaS)
+*** Q_4
+Graphics as a Service (GaaS)
+*** Q_5
+Software as a Service (SaaS)
+*** Answers
+1 1 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: ABE
+** Question 19
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130454929
+:END:
+*** Question
+Which of the following characters in a shell prompt indicates the shell is running with root privileges?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+!
+*** Q_2
+#+begin_src html
+#
+#+end_src
+*** Q_3
+*
+*** Q_4
+&
+*** Q_5
+$
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 20
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130455229
+:END:
+*** Question
+What is true about a recursive directory listing?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+It includes the content of sub-directories.
+*** Q_2
+It includes the permissions of the directory listed.
+*** Q_3
+It includes details of file system internals, such as inodes.
+*** Q_4
+It includes ownership information for the files.
+*** Q_5
+It includes a preview of content for each file in the directory.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 21
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130455554
+:END:
+*** Question
+Which of the following directories contains information, documentation and example configuration files for installed software packages?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/usr/share/doc/
+*** Q_2
+/etc/defaults/
+*** Q_3
+/var/info/
+*** Q_4
+/doc/
+*** Q_5
+/usr/examples/
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 22
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130455754
+:END:
+*** Question
+Which of the following commands adds the directory /new/dir/ to the PATH environment variable?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+$PATH=/new/dir: $PATH
+*** Q_2
+PATH=/new/dir: PATH
+*** Q_3
+export PATH=/new/dir: PATH
+*** Q_4
+export $PATH=/new/dir: $PATH
+*** Q_5
+export PATH=/new/dir: $PATH
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 23
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670209037354
+:END:
+*** Question
+A user is currently in the directory /home/user/Downloads/ and runs the command
+ls ../Documents/
+Assuming it exists, which directory’s content is displayed?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/home/user/Documents/
+*** Q_2
+/home/user/Documents/Downloads/
+*** Q_3
+/home/user/Downloads/Documents/
+*** Q_4
+/Documents/
+*** Q_5
+/home/Documents
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 24
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130456079
+:END:
+*** Question
+Which of the following is a protocol used for automatic IP address configuration?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+NFS
+*** Q_2
+LDAP
+*** Q_3
+SMTP
+*** Q_4
+DNS
+*** Q_5
+DHCP
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 25
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130456401
+:END:
+*** Question
+Which of the following devices represents a hard disk partition?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/dev/ttyS0
+*** Q_2
+/dev/sata0
+*** Q_3
+/dev/part0
+*** Q_4
+/dev/sda2
+*** Q_5
+/dev/sda/p2
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 26
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130456604
+:END:
+*** Question
+What can be found in the /proc/ directory?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+One directory per installed program.
+*** Q_2
+One device file per hardware device.
+*** Q_3
+One file per existing user account.
+*** Q_4
+One directory per running process.
+*** Q_5
+One log file per running service.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 27
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130456980
+:END:
+*** Question
+A new server needs to be installed to host services for a period of several years. Throughout this time, the server should receive important security updates from its
+Linux distribution.
+
+Which of the following Linux distributions meet these requirements? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Ubuntu Linux LTS
+*** Q_2
+Fedora Linux
+*** Q_3
+Debian GNU/Linux Unstable
+*** Q_4
+Ubuntu Linux non-LTS
+*** Q_5
+Red Hat Enterprise Linux
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 28
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130457330
+:END:
+*** Question
+Which of the following directories must be mounted with read and write access if it resides on its own dedicated file system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/opt
+*** Q_2
+/lib
+*** Q_3
+/etc
+*** Q_4
+/var
+*** Q_5
+/usr
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 29
+ :PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130457530
+:END:
+*** Question
+The ownership of the file doku.odt should be changed. The new owner is named tux. Which command accomplishes this change?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+chmod u=tux doku.odt
+*** Q_2
+newuser doku.odt tux
+*** Q_3
+chown tux doku.odt
+*** Q_4
+transfer tux: doku.odt
+*** Q_5
+passwd doku.odt:tux
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 30
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130457880
+:END:
+*** Question
+What happens to a file residing outside the home directory when the file owner's account is deleted? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+During a file system check, the file is moved to /lost +found.
+*** Q_2
+The file is removed from the file system.
+*** Q_3
+The UID of the former owner is shown when listing the file's details.
+*** Q_4
+The user root is set as the new owner of the file.
+*** Q_5
+Ownership and permissions of the file remain unchanged.
+*** Answers
+0 0 1 0 1
+*** Sources
+*** Extra 1
+Correct Answer: CE
+** Question 31
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130458230
+:END:
+*** Question
+What is true about links in a Linux file system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+A symbolic link can only point to a file and not to a directory.
+*** Q_2
+A hard link can only point to a directory and never to a file.
+*** Q_3
+When the target of the symbolic link is moved, the link is automatically updated.
+*** Q_4
+A symbolic link can point to a file on another file system.
+*** Q_5
+Only the root user can create hard links.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 32
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130458580
+:END:
+*** Question
+Which files are the source of the information in the following output? (Choose two.)
+uid=1000 (bob) gid=1000 (bob) groups=1000 (bob), 10 (wheel), 150 (wireshark), 989 (docker), 1001 (libvirt)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+/etc/id
+*** Q_2
+/etc/passwd
+*** Q_3
+/etc/group
+*** Q_4
+/home/index
+*** Q_5
+/var/db/users
+*** Answers
+0 1 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: BC
+** Question 33
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130458779
+:END:
+*** Question
+Which of the following tasks can the command passwd accomplish? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Change a user's username.
+*** Q_2
+Change a user's password.
+*** Q_3
+Create a new user account.
+*** Q_4
+Create a new user group.
+*** Q_5
+Lock a user account.
+*** Answers
+0 0 1 0 1
+*** Sources
+*** Extra 1
+Correct Answer: CE
+** Question 34
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130459130
+:END:
+*** Question
+Which command displays file names only and no additional information?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+ls -a
+*** Q_2
+ls -lh
+*** Q_3
+ls -l
+*** Q_4
+ls -alh
+*** Q_5
+ls -nl
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 35
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130459479
+:END:
+*** Question
+Which of the following commands puts the lines of the file data.csv into alphabetical order?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+a..z data.csv
+*** Q_2
+sort data.csv
+*** Q_3
+abc data.csv
+*** Q_4
+wc -s data.csv
+*** Q_5
+grep --sort data.csv
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 36
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130459679
+:END:
+*** Question
+Which of the following examples shows the general structure of a for loop in a shell script?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+for *.txt as file => echo $file
+*** Q_2
+for *.txt ( echo $i )
+*** Q_3
+for file in *.txt
+   do
+      echo $i
+   done
+*** Q_4
+for ls *.txt exec {} \;
+*** Q_5
+foreach @{file} {
+      echo $i
+   }
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 37
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130460030
+:END:
+*** Question
+What is the return value of a shell script after successful execution?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+1
+*** Q_2
+0
+*** Q_3
+-1
+*** Q_4
+-255
+*** Q_5
+255
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 38
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130460381
+:END:
+*** Question
+Which of the following statements are true regarding a typical shell script? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+It has the executable permission bit set.
+*** Q_2
+It starts with the two character sequence #!.
+*** Q_3
+It is located in /usr/local/scripts/.
+*** Q_4
+It is located in /etc/bash/scripts/.
+*** Q_5
+It is compiled into a binary file compatible with the current machine architecture.
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 39
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130460580
+:END:
+*** Question
+Which of the following commands extracts the contents of the compressed archive file1.tar.gz?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar -czf file1.tar.gz
+*** Q_2
+ztar file1.tar.gz
+*** Q_3
+tar -xzf file1.tar.gz
+*** Q_4
+tar --extract file1.tar.gz
+*** Q_5
+detar file1.tar.gz
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 40
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130460930
+:END:
+*** Question
+Which of the following commands finds all lines in the file operating-systems.txt which contain the term linux, regardless of the case?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+igrep linux operating-systems.txt
+*** Q_2
+less -i linux operating-systems.txt
+*** Q_3
+grep -i linux operating-systems.txt
+*** Q_4
+cut linux operating-systems.txt
+*** Q_5
+cut [Ll] [Ii] [Nn] [Uu] [Xx] operating-systems.txt
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 41
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130461279
+:END:
+*** Question
+Which of the following programs are web servers? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Apache HTTPD
+*** Q_2
+Postfix
+*** Q_3
+Curl
+*** Q_4
+Dovecot
+*** Q_5
+NGINX
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 42
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130461632
+:END:
+*** Question
+Which of the following Linux Distributions is derived from Red Hat Enterprise Linux?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Raspbian
+*** Q_2
+openSUSE
+*** Q_3
+Debian
+*** Q_4
+Ubuntu
+*** Q_5
+CentOS
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 43
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130461830
+:END:
+*** Question
+What are the differences between a private web browser window and a regular web browser window? (Choose three.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Private web browser windows do not allow printing or storing websites.
+*** Q_2
+Private web browser windows do not store cookies persistently.
+*** Q_3
+Private web browser windows do not support logins into websites.
+*** Q_4
+Private web browser windows do not keep records in the browser history.
+*** Q_5
+Private web browser windows do not send regular stored cookies.
+*** Answers
+0 1 0 1 1
+*** Sources
+*** Extra 1
+Correct Answer: BDE
+** Question 44
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670130462179
+:END:
+*** Question
+What is the preferred source for the installation of new applications in a Linux based operating system?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The vendor's version management system
+*** Q_2
+A CD-ROM disk
+*** Q_3
+The distribution's package repository
+*** Q_4
+The vendor's website
+*** Q_5
+A retail store
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C

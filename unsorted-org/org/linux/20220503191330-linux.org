@@ -1,0 +1,807 @@
+:PROPERTIES:
+:ID:       7c74d046-30f1-4eac-b49f-5ea691ef5b76
+:mtime:    20230226215138 20230216000938 20230214112912 20230206181438 20221222165420
+:ctime:    20220503191330
+:END:
+#+title: Linux
+#+date: [2022-05-03 Tue 19:13]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+[[id:331bdd81-1b06-419d-8765-313282b832ec][linux foundation]]
+[[id:d5b9d454-d594-40fd-b3b8-230c0a4e1388][redhat-certs]]
+[[id:d7371bae-be68-4439-b06d-b0e536d7e031][Linux Professional Institute - LPI]]
+ [[id:8bb1d8d1-c11d-4a09-8ab4-1a8dc5995c15][LPI Linux Essentials Exam 010]]
+[[id:adb127ea-0c62-4193-bec9-92f90f549fe8][cli]]
+  [[id:380c2018-8c41-49bc-8f98-f17db74a9b8d][cli-shortcuts]]
+[[id:324faad9-bae1-4f60-ab3c-288034ed73b1][linux-install]]
+[[id:bd5737f0-dc66-4868-b607-8156becf8a0e][guix]]
+
+[[id:b242dcc5-4af4-462a-85fb-96d3fb1b5805][chezmoi]]
+
+man whatis tldr
+
+* Linux Certs
+
+elementary
+- [[id:8bb1d8d1-c11d-4a09-8ab4-1a8dc5995c15][LPI Linux Essentials Exam 010]]
+- Linux Foundation Certified IT Associate (LFCA)
+- CompTIA Linux+
+- LPI LPIC-1
+
+intermediate
+- LPI LPIC-2
+- Red Hat Certified System Administrator
+- Linux Foundation Certified System Administrator (LFCS)
+
+advanced
+- LPI LPIC-3 Security
+- LPI LPIC-3 Mixed Environments
+- LPI LPIC-3 Virtualization and Containerization
+- LPI LPIC-3 High Availability and Storage Cluster
+- Red Hat Certified Engineer (RHCE)
+- Red Hat Certified Architect (RHCA)
+
+* unsorted books notes
+
+[[id:89601283-3f61-4e49-9490-5a75d471bb6d][how-linux-works]]
+
+make notes about chezmoi as my dotfile manager
+  chezmoi.io
+
+
+need scratchpad for bspwm
+-----
+
+** linux productivity tools
+*** Basics
+anatomy of a typical command
+ls -lh /etc | grep 'conf'
+<command> = ls
+<options> = lh
+<pipe> = |
+<command> = grep
+<argument> = 'conf'
+**** Know the System
++ id: know yourself
++ w: who is logged in (-f to find where they are logging in from)
++ lsblk: list block storage devices
++ lscpu: display info about the CPUs
++ lstopo: display hardware topology (need hwloc, hwloc-gui packages)
++ free: free and used memory (try free -g)
++ lsb_release: distribution info (try -a)
+
+PS0: Use ctrl-c to kill stuck commands or long running ones
+PS1: Some commands may not be available: which <cmdname> to verify
+**** Know the Processes
++ List the processes by name, pid etc: ps (commonly used flags: aux)
++ ps implementations: POSIX, GNU and BSD!
+  + implementations differ in behavior
+  + determined by style of options: POSIX (-), GNU (--), BSD (no dash) before
+    options
++ Display processes: top, htop, atop
++ Be nice and fly under the radar, eg.:
+  + nice -n 19 tar cvzf archive.tgz large_dir
++ Kill a process: kill <pid>
+  + to kill zombie processes
+  + hung sessions
+**** Many ways to get help
++ man nano
+  + Manual pages
+  + Organized section-wise -- one page for each section (if exists)
++ wget --help
+  + Handy for quick syntax reference
++ info curl
+  + Modern
++ Browse /usr/share/doc
+  + Usually a README file has info and examples
+  + Browse with a web-browser
+**** Working with Files
++ cat for relatively short files
+  cat states.txt
++ less is more than more for long files
+  less /etc/ntp.conf
++ tail -f to watch a file growing live
++ What can you do about binary files? (not much)
+  + strings will print the printable strings of file
+  + od will print file in octal format
+  + cmp will compare them byte by byte
++ Compare text files with
+  + comm sorted files line by line
+  + diff differences line by line -- used most frequently, rich options set, see
+    man
+**** Internet on command line
++ curl is commonly used as command to download from the web:
+  curl -O http://www.gutenberg.org/files/4300/4300-0.txt
+  curl ifconfig.me #quickly find my IP
++ wget is similar:
+  wget http://www.gutenberg.org/files/4300/4300-0.txt
+  wget https://kubernetespodcast.com/episodes/KPfGep{001..062}.mp3
+
++ lynx can be a useful text-based browser:
+  + avoid pesky ads
+  + when internet is slow / only care about text eg. lynx text.npr.org
+  + read local html pages, eg. those found in /usr/share/doc
+  + w3m and links are other text-based browsers
+**** wildcards: characters that expand at runtime
++ * any number of characters:
+  ls -lh /etc/*.conf
++ ? expands to one character:
+  ls -ld ? ?? ???
++ Negation (!) eg. ls -ld [!0-9]*
+
++ Escaping and quoting
+  + \ for escaping a wildcard
+                                prevent expansion
+  + ' for quoting a wildcard
+**** Quick and Useful Tricks
++ !! repeats the last command
++ !$ change command keep last argument:
+  + cat states.txt # file too long to fit screen
+  + less !$ #reopen it with less
++ !* change command keep all arguments:
+  + head states.txt | grep '^Al' #should be tail
+  + tail !* #no need to type the rest of the command
+
++ alt-. #paste last argument of previous command
++ alt-<n>-alt-. #paste nth argument of previous command
+**** More Tricks
++ >x.txt #create an empty file / "zero" a large file
++ cmd #tag to tag a hard to remember command
++ ctrl-l #clear terminal
++ cd - #change to previous dir
++ cd #change to homedir
++ ctrl-r #recall from history
++ ctrl-d #logout from terminal
+*** Streams, pipe and redirections
+Terminal I/O Streams and Redirection
+• Three I/O streams on terminal:
+  standard input (stdin), standard output (stdout) and standard error
+  (stderr)
+• Represented by "file descriptors" (think of them as ids):
+  0 for stdin, 1 for stdout, 2 for stderr
+• Angle brackets are used for redirection to/from commands:
+  • > to send to a stream
+  • < to receive from a stream
+  • >> to append to a stream
+  • << to in-place append (used in "heredoc")
+  • <<< is used in "herestring" (not covering today)
+• & is used to "write into" a stream, eg. &1 to write into stdout
+
+Anatomy of a redirection using streams
+npm install -g tldr > out.txt 2 > err.txt
+command = npm install -g tldr
+send = >
+stderr = out.txt 2
+send = >
+
+More Redirection Examples
+• Send stdout and stderr to same file:
+  pip install rtv > stdouterr.txt 2>&1
+  ac -pd &> stdouterr.txt #short form (bash v4+)
+• Disregard both stdout and stderr:
+  wget imgs.xkcd.com/comics/command_line_fu.png &> /dev/null
+
+• Read from stdin as output of a command
+  diff <(ls dirA) <(ls dirB)
+
+• Append stdout to a log file:
+  sudo yum -y update >> yum_update.log
+
+The pipe: run second command using output of first!
+• A pipe is a Linux concept that automates redirecting the output of one
+  command as input to a next command.
+• Use of pipe leads to powerful combinations of independent commands. eg.:
+find .| less #read long list of files page wise
+head prose.txt | grep -i 'little'
+echo $PATH | tr ':' '\n' #translate : to newline
+history | tail #last 10 commands
+free -m|grep Mem:|awk '{print $4}' #available memory
+du -s *|sort -n|tail #10 biggest files/dirs in pwd
+
+Demystifying and debugging piped commands
+free -m|grep Mem:|awk '{print $4}'
+is equivalent to running the following 4 commands:
+free -m > tmp1.txt
+grep Mem: tmp1.txt > tmp2.txt
+awk '{print $4}' tmp2.txt
+rm tmp1.txt tmp2.txt
+Reducing the piped stages is often efficient and easier to debug. For instance, the above
+pipeline may be reduced like so:
+free -m|awk '/Mem:/{print $4}' #more on awk later
+
+More pipe examples
+#get pdf of a man page
+man -t diff | ps2pdf - diffhelp.pdf
+
+#get today's files
+ls -al --time-style=+%D | grep `date +%D`
+
+#top 10 most frequently used commands
+history | awk '{a[$2]++}END{for(i in a){print
+a[i] " " i}}' | sort -rn | head
+
+Commands that only accept literal args
+• Most commands receive input from stdin (so, pipe) and file, eg.
+  wc < states.txt #ok
+  wc states.txt #ok
+• There are some exceptions though
+• Some receive input only from stdin and not from file, eg.
+  • tr 'N' 'n’ states.txt #(strangely) NOT OK
+  • tr 'N' 'n’ < states.txt #ok
+• Some receive input neither from stdin nor from file, eg.
+  • echo < states.txt #NOT OK (assuming want to print file contents)
+  • echo states.txt #NOT OK (assuming want to print file contents)
+  • echo "Hello miss, howdy? " #ok, takes literal args
+  • cp, touch, rm, chmod are other examples
+
+xargs: When pipe is not enough!
+• Some commands do not read from standard input, pipe or file; they
+  need arguments
+• Additionally, some systems limit on number of arguments on
+  command line
+  • for example: rm tmpdir/*.log will fail if there are too many .log files
+• xargs fixes both problems
+  • Converts standard input to commands into literal args
+  • Partitions the args to a permitted number and runs the command over them
+  repeatedly
+• For instance, create files with names on the somelist.txt file:
+  xargs touch < somelist.txt
+
+GNU Parallel
+• Run tasks in parallel from command-line
+• Similar to xargs in syntax
+• Treats parameters as independent arguments to command and runs
+  command on them in parallel
+• Synchronized output -- as if commands were run sequentially
+• Configurable number of parallel jobs
+• Well suited to run simple commands or scripts on compute nodes to
+  leverage multicore architectures
+• May need to install as not available by default :
+  www.gnu.org/software/parallel
+
+GNU Parallel Examples*
+- Find all html files and move them to a directory
+find . -name '*.html' | parallel mv {} web/
+
+- Delete pict0000.jpg to pict9999.jpg files (16 parallel jobs)
+seq -w 0 9999 | parallel -j 16 rm pict{}.jpg
+
+- Create thumbnails for all picture files (imagemagick software needed)
+ls *.jpg | parallel convert -geometry 120 {} thumb_{}
+
+- Download from a list of urls and report failed downloads
+cat urlfile | parallel "wget {} 2>errors.txt"
+*** classic tools: find, grep, awk, sed
+find: search files based on criteria
+find /opt -name "README*" -exec wc -l {} +
+path = /opt
+criteria (optional) = -name "README*"
+action (optional) = -exec wc -l {} +
+
+Features of find
+• path: may have multiple paths, eg. find /usr /opt -iname "*.so"
+• criteria
+  • -name, -iname, -type (f,d,l), -inum <n>
+  • -user <uname>, -group <gname>, -perm (ugo)
+  • -size +x[c], -empty, -newer <fname>
+  • -atime +x, -amin +x, -mmin -x, -mtime -x
+  • criteria may be combined with logical and (-a) and or (-o)
+• action
+  • -print : default action, display
+  • -ls : run ls -lids command on each resulting file
+  • -exec cmd : execute command
+  • -ok cmd like exec except that command executed after user confirmation
+
+find Examples
+• find . -type f -name "*.txt" #all text files
+  in current dir
+• find . -maxdepth 1 #equivalent to ls
+• find ./somedir -type f -size +512M -print #all
+  files larger than 512M in ./somedir
+• find . \( -name “*.c” -o -name “*.h” \) #all
+  files that have either .c or .h extension
+
+grep: Search for patterns in text
+• grep originally was a command "global regular expression print" or
+  'g/re/p' in the ed text editor
+
+• It was so useful that a separate utility called grep was developed
+
+• grep will fetch lines from a text that has a match for a specific pattern
+
+• Useful to find lines with a specific pattern in a large body of text, eg.:
+  • look for a process in a list of processes
+  • spot check a large number of files for occurrence of a pattern
+  • exclude some text from a large body of text
+
+Anatomy of grep
+grep -i -n 'col' states.txt
+options = -i -n
+regular expression = 'col'
+input file = states.txt
+
+Useful grep Options
+
+• -i: ignore case
+• -n: display line numbers along with lines
+• -v: print inverse ie. lines that do not match the regular expression
+• -c: print a count of lines of matches
+• -A<n>: include n lines after the match
+• -B<n>: include n lines before the match
+• -o: print only the matched expression (not the whole line)
+• -E: allows "extended" regular expressions that includes (more later)
+
+
+Regular Expressions
+
+• A regular expression (regex) is an expression that matches a pattern.
+• Example pattern ........
+
+• regex: è no match
+• regex: è one match è "Linux is fun."
+• regex: è two matches è "Linux is fun." and "So is music."
+• regex: è one match è "So is music."
+• regex: è one match è "So is music."
+
+
+f u
+
+^Linux is fun.$
+^So is music.$
+^Traffic not so much.$
+
+n
+b a r
+
+i s
+^ S o
+i c . $
+
+Regular Expressions-contd.
+
+• . is a Special character; will match any character (except newline)
+• Character class: one of the items in the [] will match, sequences
+allowed
+• '[Cc]at' will match Cat and cat
+• '[f-h]ate' will match fate, gate, hate
+• 'b[^eo]at' will match brat but not boat or beat
+• Extended regular expressions (use with egrep or grep -E)
+• '*' matches zero or more, '+' matches one or more, '?' matches zero or one
+occurrence of the previous character
+• '|' is a delimiter for multiple patterns, '(' and ')' let you group patterns
+• {} may be used to specify a repetition range
+
+
+grep Examples
+
+• Lines that end with two vowels:
+grep '[aeiou][aeiou]$' prose.txt
+
+• Check 5 lines before and after the line where term 'little' occurs:
+grep -A5 -B5 'little' prose.txt
+
+• Comment commands and search later from history
+some -hard 'to' \remember --complex=command #success
+history | grep '#success'
+
+• find+grep is one very useful combination
+find . -iname "*.py" -exec grep 'add[_-]item' {} +
+
+
+awk: Extract and Manipulate Data
+
+• A programmable filter that reads and processes input line by line
+• Rich built-in features:
+• explicit fields ($1 ... $NF) & records management
+• functions (math, string manipulation, etc.)
+• regular expressions parsing and filtering
+
+• Features like variables, loops, conditionals, associative arrays, user-
+defined functions
+
+Highly recommended book: The awk programming language by Aho, Kernighan
+and Weinberger, ia802309.us.archive.org/25/items/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf
+
+Anatomy of an awk program
+
+
+BEGIN{actions} #run one time before input data is read
+/pattern or condition/ {actions} #run for each line of input
+END{actions} #run one time after input processing
+
+At least one of the BEGIN, /pattern or condition/, {}, END section needed
+
+Often used as one-line idiom of the form:
+awk 'awk_prog' file.txt
+
+OR
+
+command | awk 'awk_prog'
+
+where awk_prog is:
+
+awk patterns and actions
+
+• A pattern is a regex that matches (or not) to an input line, eg.
+/New/ # any line that contains ‘New’
+/^[0-9]+ / # beginning with numbers
+/(POST|PUT|DELETE)/ # has specific words
+
+• An action is a sequence of ops, eg.
+{print $1, $NF} #print first and last field/col
+{print log($2)} #get log of second field/col
+{for (i=1;i<x;i++){sum += $3}} #get cumulative sum
+
+• User defined functions may be defined in any action block
+
+
+awk Examples
+
+• awk '{print $1}' states.txt
+• awk '/New/{print $1}' states.txt
+• awk NF>0 prose.txt #skip blank lines
+• awk '{print NF, $0}' states.txt #num fields
+• awk '{print length($0)}' states.txt #num chars
+• awk 'BEGIN{print substr("New York",5)}' #York
+
+
+sed: parse and transform text
+
+• sed is a stream editor
+• Looks for a pattern in text and applies changes (edits) to them
+• A batch or non-interactive editor
+• Reads from file or stdin (so, pipes are good) one line at a time
+• The original input file is unchanged (sed is also a filter), results are
+sent to standard output
+
+• Most frequently used idiom is for text substitution
+
+
+Anatomy of sed
+
+sed 's/New/Old/g' states.txt
+
+
+delim input file
+regex replace
+
+modifier command
+
+Options
+• address: may be a line number or a range, defaults to whole file
+• command: s:substitute, p:print, d:delete, a:append, i:insert, q:quit
+• regex: A regular expression
+• delimiter: Does not have to be /, can be | or : or any other
+character
+• modifier: may be a number n which means apply the command to nth
+occurrence, g means apply globally in the line
+• Common sed flags: -n (no print), -e (multiple ops), -f (read sed
+from file), -i (in place edit [careful])
+
+Useful sed Examples
+• sed -n '5,9p' states.txt #print lines 5 through 9
+• sed -n '$p' states.txt #print last line
+
+• sed '1,3d' states.txt #delete first 3 lines
+• sed '/^$/d' states.txt #delete all blank lines
+
+• sed '/York/!s/New/Old/' states.txt #substitute except York
+
+• kubectl -n kube-system get configmap/kube-dns -o yaml | sed
+'s/8.8.8.8/1.1.1.1/' | kubectl replace -f -
+
+*** session management: tmux
+*** ssh: config and tunneling
+*** bash tools
+*** miscellaneous utilities
+*** summary
+*** practice and exercises
+
+* unsorted
+** unix/linux fundamentals and shell scripting
+Introduction to UNIX
++ design philosophy
++ system components
++ the shell and command entry
++ documentation
+Basic User Commands
++ logging in and logging out
++ command line editing
++ navigating the file system
++ viewing and copying files
++ controlling the terminal
++ sending and receiving mail
+Text Editing
++ types of editors
++ from ed to ex to vi
++ basic editor tasks with vi
++ editing multiple files
++ named buffers
++ vi startup file
+The File System
++ file system organization
++ file types
++ file and directory naming rules and conventions
++ commands for navigating the file system
++ introduction to inodes
++ ownership, permissions, and dates
++ manipulating files and links
++ manipulating directories
++ determining disk usage
++ other file system utilities
+UNIX Processes
++ the unix process model
++ process states
++ monitoring and controlling processes
+Introduction to Shell Syntax
++ shell functions
++ I/O redirection and pipes
++ command separation and grouping
++ background execution
++ filename expansion
++ shell variables
++ command substitution
++ quoting and escaping metacharacters
++ bash shell features
++ korn shell features
++ command execution
++ startup files
++ customizing the user environment
+Printing
++ printing under at&t unix
++ printing under bsd unix
+Multitasking and Batch Processing
++ multitasking
++ scheduled execution using cron
++ the at and batch commands
+Shell Programming
++ shell script features and capabilities
++ creating and running a script
++ working with variables
++ environment variables
++ working with data types
+  + formatting
+  + base conversion
+  + setting special attributes
++ input/output techniques
++ conditional constructs
+  + if/then
+  + else/elif
++ looping constructs
+  + for, while, until
++ math operators
+Advanced Shell Features
++ manipulating string
++ writing and calling
++ controlling process priorities
++ interpreting command line arguments
++ making script interactive
++ special shell variables
++ advanced I/O with streams
++ improving performance of scripts
+Text Manipulation Utilities
++ editing a file from a script
++ scripting with ed or sed
++ unix and linux utilities to manipulate files
++ regular expressions
++ grep and egrep
++ the stream editor sed
++ sorting in scripts
++ generating reports with awk
++ splitting large files
++ counting words, lines, and characters
++ transforming file contents
++ extracting text strings
+File Processing Utilities
++ examining and comparing files
++ reporting difference between files
++ comparing files of any format
++ displaying data in octal and hex
++ compressing data
++ converting file formats
+Backing Up Files
++ backup Media
++ unix device names
++ tar and cpio
++ file transport and conversion with dd
+Networking Commands
++ unix network applications
+  + remote execution commands
+  + remote activity reporting
+  + communicating with remote users
++ internet applications
+  + ftp, tftp, telnet
++ remote access control mechanisms
++ using the secure shell(ssh)
+
+** linux system administration
+System Administration Overview
+
+    UNIX, Linux and Open Source
+    Duties of the System Administrator
+    Superusers and the Root Login
+    Sharing Superuser Privileges with Others (su and sudo Commands)
+    TCP/IP Networking Fundamentals
+    Online Help
+
+	Installation and Configuration
+
+    Planning: Hardware and Software Considerations
+    Site Planning
+    Installation Methods and Types
+    Installation Classes
+    Partitions
+    Logical Volume Manager - LVM
+    File System Overview
+    Swap Partition Considerations
+    Other Partition Considerations
+    The Linux Boot Loader: grub
+    Software Package Selection
+    Adding and Configuring Peripherals
+    Printers
+    Graphics Controllers
+    Basic Networking Configuration
+    Booting to Recovery Mode
+
+Booting and Shutting Down Linux
+
+    Boot Sequence
+    The systemd Daemon
+    The systemctl Command
+    Targets vs. Run Levels
+    Modifying a Target
+    Service Unit Scripts
+    Changing System States
+    Booting into Rescue Mode
+    Shutdown Commands
+
+	Managing Software and Devices
+
+    Identifying Software Packages
+    Using rpm to Manage Software
+    Using yum to Manage Software
+    Installing and Removing Software
+    Identifying Devices
+    Displaying Device and System Information (PCI, USB)
+    Plug and Play Devices
+    Device Configuration Tools
+
+Managing Users and Groups
+
+    Setting Policies
+    User File Management
+    The /etc/passwd file
+    The /etc/shadow file
+    The /etc/group file
+    The /etc/gshadow file
+    Adding Users
+    Modifying User Accounts
+    Deleting User Accounts
+    Working with Groups
+    Setting User Environments
+    Login Configuration Files
+
+	The Linux File System
+
+    Filesystem Types
+    Conventional Directory Structure
+    Mounting a File System
+    The /etc/fstab File
+    Special Files (Device Files)
+    Inodes
+    Hard File Links
+    Soft File Links
+    Creating New File Systems with mkfs
+    The lost+found Directory
+    Repairing File Systems with fsck
+    The Journaling Attribute
+    File and Disk Management Tools
+
+Linux File Security
+
+    File Permissions
+    Directory Permissions
+    Octal Representation
+    Changing Permissions
+    Setting Default Permissions
+    Access Control Lists (ACLs)
+    The getfacl and setfacl commands
+    SUID Bit
+    SGID Bit
+    The Sticky Bit
+
+	Controlling Processes
+
+    Characteristics of Processes
+    Parent-Child Relationship
+    Examining Running Processes
+    Background Processes
+    Controlling Processes
+    Signaling Processes
+    Killing Processes
+    Automating Processes
+    cron and crontab
+    at and batch
+    System Processes (Daemons)
+
+Working with the Linux Kernel
+
+    Linux Kernel Components
+    Types of Kernels
+    Kernel Configuration Options
+    Recompiling the Kernel
+
+	Shell Scripting Overview
+
+    Shell Script Fundamentals
+    Bash Shell Syntax Overview
+    Shell Script Examples
+
+System Backups
+
+    Backup Concepts and Strategies
+    User Backups with the tar Command
+    System Backup Options
+    The xfsdump and xfsrestore Commands
+
+	Troubleshooting the System
+
+    Common Problems and Symptoms
+    Troubleshooting Steps
+    Repairing General Boot Problems
+    Repairing the GRUB 2 Boot Loader
+    Hard Drive Problems
+    Restoring Shared Libraries
+    System Logs and rsyslogd
+
+Basic Networking
+
+    Networking Services Overview
+    NetworkManager Introduction
+    Network Configuration Files Locations and Formats
+    Enabling and Restarting Network Services with systemtcl
+    Configuring Basic Networking Manually
+    Configuring Basic Networking with NetworkManager
+
+	LAMP Server Basics
+
+    LAMP Overview
+    Configuring the Apache Web Server
+    Common Directives
+    Apache Virtual Hosting
+    Configuring an Open Source Database
+        MySQL
+        MariaDB
+    PHP Basics
+    Perl CGI Scripting
+
+Introduction to System Security
+
+    Security Overview
+    Maintaining System Security
+    Server Access
+    Physical Security
+    Network Security
+    Security Tools
+    Port Probing with nmap
+    Intrusion Detection and Prevention
+    PAM Security Modules
+    Scanning the System
+    Maintaining File Integrity
+    Using Firewalls
+    Introduction to firewalld
+
+	The Samba File Sharing Facility
+
+    Configure Samba for Linux to Linux/UNIX File Sharing
+    Configure Samba for Linux to Windows File Sharing
+    Use the smbclient Utility to Transfer Files
+    Mount/Connect Samba Shares to Linux and Windows Clients
+
+Networked File Systems (NFS)
+
+    Using NFS to Access Remote File Systems
+    Configuring the NFS Server
+    Configuring the NFS Client
+    Exporting File Systems from the NFS Server to the NFS Client

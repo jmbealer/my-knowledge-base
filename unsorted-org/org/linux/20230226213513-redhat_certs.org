@@ -1,0 +1,83 @@
+:PROPERTIES:
+:ID:       d5b9d454-d594-40fd-b3b8-230c0a4e1388
+:mtime:    20230226223607 20230226213515
+:ctime:    20230226213513
+:END:
+#+title: Red Hat Certifications
+
+
+* Platforms
+
+    [[id:5fb4d887-777d-4add-809a-1393d61f570a][Red Hat Certified System Administrator (RHCSA)]]
+    [[id:60673bf7-81d9-44b2-938b-82c370ed4544][Red Hat Certified Engineer (RHCE)]]
+    Red Hat Certified Specialist in Services Management and Automation
+    Red Hat Certified Specialist in Deployment and Systems Management
+    Red Hat Certified Specialist in Security: Linux
+    Red Hat Certified Specialist in High Availability Clustering
+    Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting
+    Red Hat Certified Specialist in Linux Performance Tuning
+    Red Hat Certified Specialist in OpenShift Administration
+    Red Hat Certified Specialist in Identity Management
+    Red Hat Certified Specialist in Cloud Infrastructure
+    Red Hat Certified Specialist in Virtualization
+
+* Cloud computing
+
+    Red Hat Certified Specialist in Event-Driven Development with Kafka
+    Red Hat Certified Specialist in Cloud Infrastructure
+    Red Hat Certified Specialist in Camel Development
+    Red Hat Certified Cloud-Native Developer
+    Red Hat Certified Specialist in OpenShift Application Development
+    Red Hat Certified Specialist in OpenShift Administration
+    Red Hat Certified Specialist in Messaging Administration
+    Red Hat Certified Specialist in OpenShift Automation and Integration
+    Red Hat Certified Specialist in Cloud-native Integration
+    Red Hat Certified Specialist in MultiCluster Management
+    Red Hat Certified Specialist in Containers
+
+* Data services
+
+    Red Hat Certified Specialist in Ceph Cloud Storage
+    Red Hat Certified Specialist in OpenShift Data Foundations
+
+* Application Services
+
+    Red Hat Certified Cloud-Native Developer
+    Red Hat Certified Enterprise Application Developer
+    Red Hat Certified Enterprise Microservices Developer
+    Red Hat Certified Specialist in API Management
+    Red Hat Certified Specialist in Building Resilient Microservices
+    Red Hat Certified Specialist in Business Process Design
+    Red Hat Certified Specialist in Camel Development
+    Red Hat Certified Specialist in Decision Management
+    Red Hat Certified Specialist in Enterprise Application Server Administration
+    Red Hat Certified Specialist in Event-Driven Development with Kafka
+    Red Hat Certified Specialist in Messaging Administration
+    Red Hat Certified Specialist in OpenShift Application Development
+    Red Hat Certified Specialist in Cloud-native Integration
+
+* Automation and management
+
+    Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform
+    Red Hat Certified Specialist in API Management
+    Red Hat Certified Specialist in Services Management and Automation
+    Red Hat Certified Specialist in Ansible Network Automation
+    Red Hat Certified Specialist in Business Process Design
+    Red Hat Certified Specialist in Decision Management
+    Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices
+    Red Hat Certified Specialist in Ansible Network Automation
+    Red Hat Certified Specialist in OpenShift Automation and Integration
+
+* Application Development
+
+    Red Hat Certified Cloud-Native Developer
+    Red Hat Certified Enterprise Application Developer
+    Red Hat Certified Specialist in API Management
+    Red Hat Certified Specialist in Building Resilient Microservices
+    Red Hat Certified Specialist in Business Process Design
+    Red Hat Certified Specialist in Business Rules
+    Red Hat Certified Specialist in Decision Management
+    Red Hat Certified Specialist in OpenShift Application Development
+    Red Hat Certified Specialist in Camel Development
+    Red Hat Certified Specialist in Event-Driven Development with Kafka
+    Red Hat Certified Specialist in Cloud-native Integration

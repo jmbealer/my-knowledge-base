@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bd5737f0-dc66-4868-b607-8156becf8a0e
+:mtime:    20230206181527 20220528222421
+:ctime:    20220210174212
+:END:
+#+title: guix

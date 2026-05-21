@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       18810b42-f2d3-4e7a-86b1-a61c42a4e735
+:mtime:    20230206181325 20220528222421
+:ctime:    20220516155718
+:END:
+#+title: cli-apps
+#+date: [2022-05-16 Mon 15:57]
+# Cli Apps
+
+du alternatives dust
+time alternatives hyperfine
+grep alternatives rga (ripgrep)
+
+rust
+  starship: terminal prompt
+  lsd: ls alt
+  ripgrep: grep alt
+  bat: cat alt
+  fd: find alt
+  mcfly: history alt use with ctrl-r
+
+## Entertainment
+- Music
+- Social Media
+- Video
+  - youtube-dl
+  - mpv
+- Movies
+- Games
+- Books
+
+## Development
+- Text Editors
+- Web Development
+- Mobile Development
+- Database
+- Devops
+- Release
+- Npm
+- Boilerplate
+
+## Productivity
+- Time Tracking
+- Note Taking and Lists
+- Finance
+- Presentations
+- Calenders
+
+## Utilities
+- macOS
+- Terminal Sharing Utilities
+- Network Utilities
+- Theming and Customization
+- Shell Utilities
+- System Interaction Utilities
+
+## Data Manipulation
+Processors
+JSON
+Columns
+Text
+
+## File and Directories
+
+File Managers
+- vifm
+Deleting, Copying, and Renaming
+Files
+Directory Listing
+Directory Navigation
+Search
+
+## Version Control
+Git
+
+## Images
+Gif Creation
+Image Conversion
+SVG
+
+## Screen-savers
+
+## Graphics
+
