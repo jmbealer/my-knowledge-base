@@ -51,7 +51,7 @@ set foldlevel=99
 set foldmethod=indent
 set formatoptions=jcroqlnt
 set grepformat=%f:%l:%c:%m
-set grepprg=rg\ --vimgrep
+"set grepprg=rg\ --vimgrep
 set ignorecase
 set laststatus=3
 set linebreak
