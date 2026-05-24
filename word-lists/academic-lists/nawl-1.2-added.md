@@ -1,4 +1,4 @@
-﻿abdominal
+abdominal
 absorb
 absorption
 accelerate
