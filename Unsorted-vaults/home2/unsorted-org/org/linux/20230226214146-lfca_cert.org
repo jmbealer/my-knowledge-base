@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       0ae5d3c6-9178-444d-9ec9-4fe6b7ee2321
+:mtime:    20230226214150
+:ctime:    20230226214146
+:END:
+#+title: Linux Foundation Certified IT Associate (LFCA)
+
+* Domains & Competencies
+[[https://training.linuxfoundation.org/certification/certified-it-associate/][LFCA link]]
+
+** Linux Fundamentals20%
+Linux Operating System
+File Management Commands
+System Commands
+General Networking Commands
+
+** System Administration Fundamentals20%
+System Administration Tasks
+Networking
+Troubleshooting
+
+** Cloud Computing Fundamentals20%
+Cloud Computing Fundamentals
+Performance / Availability
+Serverless
+Cloud Costs and Budgeting
+
+** Security Fundamentals16%
+Security Basics
+Data Security
+Network Security
+System Security
+
+** DevOps Fundamentals16%
+DevOps Basics
+Containers
+Deployment Environments
+Git Concepts
+
+** Supporting Applications and Developers8%
+Software Project Management
+Software Application Architecture
+Functional Analysis
+Open-source Software and Licensing

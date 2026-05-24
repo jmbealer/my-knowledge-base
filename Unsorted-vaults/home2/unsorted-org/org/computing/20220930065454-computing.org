@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       e4cb556a-1a38-428a-b220-f8f536de1513
+:mtime:    20230710090000 20230206181559 20221013192811
+:ctime:    20220930065454
+:END:
+#+title: Computing
+#+date: [2022-09-30 Fri 06:54]
+#+filetags: :MOC:
+
+-[[id:8feb359d-2df0-42c1-8136-19d4a02b4384][ Main Index]]
+
+
+css
+width and height: The width and height of the content area.
+padding: The amount of space between the content area and the border.
+border: The thickness and style of the border surrounding the content area and padding.
+margin: The amount of space between the border and the outside edge of the element.
