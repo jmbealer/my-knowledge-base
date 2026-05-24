@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       58fcc1aa-759f-4fb0-ba97-dc2bc78b24bf
+:mtime:    20230711122510
+:ctime:    20230711122508
+:END:
+#+title: Network and Security - Foundations – D315

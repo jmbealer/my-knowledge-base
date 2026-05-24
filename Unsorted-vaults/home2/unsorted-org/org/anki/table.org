@@ -1,0 +1,12 @@
+#+title: Table
+
+* Section with table
+:PROPERTIES:
+:TABLE_EXPORT_FILE: testing-orgTable.csv
+:TABLE_EXPORT_FORMAT: orgtbl-to-csv
+:END:
+
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |
