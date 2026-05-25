@@ -9,7 +9,7 @@ Brock - Rock Type Gym - Level Cap 14
         caterpie
         weedle
         pikachu
-Brock - Rock Type Gym - Level Cap 11
+Misty - Water Type Gym - Level Cap 21
     route 3
         jigglypuff
         nidoran (m)
@@ -28,4 +28,19 @@ Brock - Rock Type Gym - Level Cap 11
         abra
         bellsprout (lg)
         oddish (fr)
-        
+Surge - Electric Type Gym - Level Cap 24
+    route 5/6
+        meowth
+    route 11
+        drowzee
+Surge - Electric Type Gym - Level Cap 24
+    route 9
+        no new pokemon
+    route 10
+        voltorb
+    rock tunnel
+        machop
+        onix
+    route 8
+        vulpix (lg)
+        growlithe (fr)
