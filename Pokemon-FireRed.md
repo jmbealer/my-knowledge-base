@@ -5,7 +5,7 @@ Brock - Rock Type Gym - Level Cap 14
         rattate
     route 22
         spearow
-    viridian forest
+    viridian forest (route 2)
         caterpie
         weedle
         pikachu
@@ -33,6 +33,8 @@ Surge - Electric Type Gym - Level Cap 24
         meowth
     route 11
         drowzee
+    diglett cave
+        diglett
 Erika - Grass Type Gym - Level Cap 29
     route 9
         no new pokemon
