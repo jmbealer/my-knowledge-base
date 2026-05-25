@@ -66,7 +66,33 @@ Norman - Normal Type - Level Cap 31
         cacnea
         sandshrew
         trapinch
-Norman - Normal Type - Level Cap 31
+Winona - Flying Type - Level Cap 33
     route 105
         tentacool
+    route 110
+        magnemite
+        voltorb
+    route 118
+        kecleon
+    route 119
+        tropius
+        oddish
+    weather institute
+        castform
+    route 120
+        absol
+Winona - Flying Type - Level Cap 33
+    route 121
+        shuppet
+    safari zone - entrace
+        girafarig
+        natu
+        wobbuffet
+        pikachu
+        doduo
+    safari zone - southwestern
+        nothing new
+    safari zone - northwestern
+        rhyhorn
+        pinsir
         
