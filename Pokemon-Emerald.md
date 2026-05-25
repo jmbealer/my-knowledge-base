@@ -81,7 +81,7 @@ Winona - Flying Type - Level Cap 33
         castform
     route 120
         absol
-Winona - Flying Type - Level Cap 33
+Tate and Liza - Psychic Type - Level Cap 42
     route 121
         shuppet
     safari zone - entrace
@@ -92,7 +92,28 @@ Winona - Flying Type - Level Cap 33
         doduo
     safari zone - southwestern
         nothing new
-    safari zone - northwestern
+    safari zone - northwestern (mach bike)
         rhyhorn
         pinsir
-        
+    safari zone - northwestern (arco bike)
+        heracross
+        phanpy
+    mt. pyre
+        duskull 
+        vulpix
+        chimecho
+Juan  - Psychic Type - Level Cap 42
+    route 129
+        wailord
+    route 130
+        wynaut
+    desert ruins
+        regirock
+    island cave
+        regice
+    ancient tomb
+        registeel
+    shoal cave (route 125)
+        snorunt
+        spheal
+    
