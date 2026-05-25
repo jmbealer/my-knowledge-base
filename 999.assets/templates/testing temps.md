@@ -1,4 +1,4 @@
-[[Unsorted-vaults/home2/templates/testing temps]]
+[[999.assets/templates/testing temps]]
 
 ---
 **Created**: `=dateformat(this.file.ctime, "yyyy-MM-dd-EEEE, HH:mm")`   
