@@ -3,6 +3,17 @@ i would like your help to improve it
 
 we are trying to cature and evolve every pokemon before level cap
 
+only add first apparrence of pokemon in lowest evolve form
+
+when add pokemon also add evolve forms including what to evolution or item/action need to evolve
+
+lets brake availbe pokemon section into three parts grass, surf and fishing
+
+you dont need add surf and fishing until able to surf and fishing rod is gained
+
+last section will be evolvutions this where pokemon that can evolve before level cap
+
+those are the guidelines and this is what i have already
 
 Brock - Rock Type Gym - Level Cap 14 - Weakness
     route 1
