@@ -1,10 +1,10 @@
 Generation 3
-  Pokemon FireRed
-  Pokemon Emerald
+  [[Pokemon-FireRed]]
+  [[Pokemon-Emerald]]
 Generation 4
-  Pokemon HeartGold
+  [[Pokemon-HeartGold]]
     Johto region
-  Pokemon Platinum
+  Pokemon-Platinum
     Sinnoh region
 Generation 5
   Pokemon Black and White
