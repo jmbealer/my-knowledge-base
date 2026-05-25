@@ -1,5 +1,10 @@
+this is a concise guide on what pokemon i should have caught and evolve before each gym
+i would like your help to improve it
 
-Brock - Rock Type Gym - Level Cap 14
+we are trying to cature and evolve every pokemon before level cap
+
+
+Brock - Rock Type Gym - Level Cap 14 - Weakness
     route 1
         pidgey
         rattate
@@ -9,7 +14,7 @@ Brock - Rock Type Gym - Level Cap 14
         caterpie
         weedle
         pikachu
-Misty - Water Type Gym - Level Cap 21
+Misty - Water Type Gym - Level Cap 21 - Weakness
     route 3
         jigglypuff
         nidoran (m)
@@ -28,14 +33,14 @@ Misty - Water Type Gym - Level Cap 21
         abra
         bellsprout (lg)
         oddish (fr)
-Surge - Electric Type Gym - Level Cap 24
+Surge - Electric Type Gym - Level Cap 24 - Weakness
     route 5/6
         meowth
     route 11
         drowzee
     diglett cave
         diglett
-Erika - Grass Type Gym - Level Cap 29
+Erika - Grass Type Gym - Level Cap 29 - Weakness
     route 9
         no new pokemon
     route 10
@@ -49,7 +54,10 @@ Erika - Grass Type Gym - Level Cap 29
     game freak pokemon mansion
         eevee
     game corner
-Koga - Poison Type Gym - Level Cap 43
+        dratini
+        scyther
+        porygon
+Koga - Poison Type Gym - Level Cap 43 - Weakness
     pokemon tower
         gastly
         cubone
@@ -70,17 +78,17 @@ Koga - Poison Type Gym - Level Cap 43
         no new pokemon
     safari zone - area 3
         tauros
-Sabrina - Psychic Type Gym - Level Cap 43
+Sabrina - Psychic Type Gym - Level Cap 43 - Weakness
     fighting gym
         hitmonlee
         hitmonchan
-Blaine - Fire Type Gym - Level Cap 47
+Blaine - Fire Type Gym - Level Cap 47 - Weakness
     pokemon mansion
         koffing
         grimer
-Giovanni - Ground Type Gym - Level Cap 50
+Giovanni - Ground Type Gym - Level Cap 50 - Weakness
 
-Final 4
+Final 4 - Weakness
     Lorelei - Ice Type
     Bruno - Fighting and Rock Type
     Agatha - Ghost Type
