@@ -34,10 +34,39 @@ Brawly - Fighting Type - Level Cap 19
         sableye
     granite cave - b2f
         nothing new
-Brawly - Fighting Type - Level Cap 19
+Wattson - Electric Type - Level Cap 24
     route 110
         gulpin
         oddish
         electrike
         plusle
+        minun
+Flannery - Fire Type - Level Cap 29
+    route 117
+        volbeat
+        illumise
+    route 112
+        numel
+    fiery path
+        slugma
+        torkoal
+        koffing
+        machop
+    route 113
+        spinda
+        skarmory
+    route 114
+        seviper
+        swablu
+    meteor falls
+        solrock
+Norman - Normal Type - Level Cap 31
+    route 111
+        baltoy
+        cacnea
+        sandshrew
+        trapinch
+Norman - Normal Type - Level Cap 31
+    route 105
+        tentacool
         
