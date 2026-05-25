@@ -76,4 +76,10 @@ Blaine - Fire Type Gym - Level Cap 47
     pokemon mansion
         koffing
         grimer
-Giovanni - Ground Type Gym - Level Cap 47
+Giovanni - Ground Type Gym - Level Cap 50
+
+Final 4
+    Lorelei - Ice Type
+    Bruno - Fighting and Rock Type
+    Agatha - Ghost Type
+    Lance - Dragon Type
