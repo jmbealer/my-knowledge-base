@@ -1,3 +1,0 @@
-# Fitness Index
-
-physical fitness

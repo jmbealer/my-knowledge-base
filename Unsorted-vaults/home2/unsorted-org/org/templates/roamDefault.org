@@ -1,4 +1,0 @@
-Testing
-#+Title: ${title}
-#+date: %U
-:head "#+TITLE: ${title}\nTime-stamp: <>\n"

@@ -1,4 +1,0 @@
-Calories
-Proteins
-Carbs 
-Fats
