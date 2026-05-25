@@ -102,7 +102,7 @@ Tate and Liza - Psychic Type - Level Cap 42
         duskull 
         vulpix
         chimecho
-Juan  - Psychic Type - Level Cap 42
+Juan - Water Type - Level Cap 46
     route 129
         wailord
     route 130
@@ -116,4 +116,9 @@ Juan  - Psychic Type - Level Cap 42
     shoal cave (route 125)
         snorunt
         spheal
-    
+Pokemon League
+    Sydney - Dark Type - Level Cap 49
+    Phoebe - Ghost Type - Level Cap 51
+    Glacia - Ice Type - Level Cap 53
+    Drake - Dragon Type - Level Cap 55
+    Wallace - Water Type - Level Cap 58
