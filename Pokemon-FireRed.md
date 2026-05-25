@@ -47,7 +47,7 @@ Erika - Grass Type Gym - Level Cap 29
     game freak pokemon mansion
         eevee
     game corner
-Erika - Grass Type Gym - Level Cap 29
+Koga - Poison Type Gym - Level Cap 43
     pokemon tower
         gastly
         cubone
@@ -60,4 +60,20 @@ Erika - Grass Type Gym - Level Cap 29
         rhyhorn
         exeggcute
         chansey
-    safari zone - center
+    safari zone - area 1
+        pinsir (lg)
+        scyther (fr)
+        kangaskhan
+    safari zone - area 2
+        no new pokemon
+    safari zone - area 3
+        tauros
+Sabrina - Psychic Type Gym - Level Cap 43
+    fighting gym
+        hitmonlee
+        hitmonchan
+Blaine - Fire Type Gym - Level Cap 47
+    pokemon mansion
+        koffing
+        grimer
+Giovanni - Ground Type Gym - Level Cap 47
