@@ -1,3 +1,0 @@
-- Sort Order
-    - ASC
-    - DESC

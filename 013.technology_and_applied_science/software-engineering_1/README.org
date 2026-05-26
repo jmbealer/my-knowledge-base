@@ -1,3 +1,0 @@
-#+title: Readme for Software Engineering
-
-placeholder
