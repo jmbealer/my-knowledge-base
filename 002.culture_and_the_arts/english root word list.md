@@ -1,0 +1,265 @@
+- **A. Core Existence, Nature, Life**
+    - bio↔life
+    - viv / vit→live
+    - anim←life, spirit
+    - nat↔birth
+    - gen←birth, origin
+    - mort↔death
+    - nec↔death 2
+    - eco↔home
+    - terr↔earth 2
+    - aqua↔water
+    - hydr↔water 2
+    - ign↔fire
+    - aer↔air
+    - atmo↔vapor
+    - geo↔earth
+    - cosm↔universe
+- **B. Human, Body, Health**
+- 
+- 
+- anthrop<>human
+- corp<>body
+- som<>body
+- cardi<>heart
+- derm<>skin
+- dent<>tooth
+- oste<>bone
+- muscul<>muscle
+- neur<>nerve
+- path<>disease, feeling
+- psych<>mind
+- viscer<>organ
+- cran<>skull
+- ocular / ocul<>eye
+- aur<>ear
+- 
+- 
+- 
+- 
+- **C. Mind, Knowledge, Thought**
+- 
+- 
+- cogn<>know
+- sci<>know
+- gnos<>know
+- ide<>idea
+- ment<>mind
+- memor<>remember
+- intellect<>understand
+- sense / sent<>feel
+- opinion<>belief
+- not<>know
+- sap<>wise
+- 
+- 
+- 
+- 
+- **D. Seeing, Hearing, Perceiving**
+- 
+- 
+- vid / vis<>see
+- spec<>look
+- spect<>observe
+- aud<>hear
+- phon<>sound
+- son<>sound
+- clar<>clear
+- luc<>light
+- opt<>see
+- 
+- 
+- 
+- 
+- **E. Language, Writing, Communication**
+- 
+- 
+- dict<>say
+- dic<>say
+- loqu / locut<>speak
+- scrib / script<>write
+- gram<>letter
+- lingu<>language
+- voc<>voice
+- verb<>word
+- lex<>word, law
+- gloss<>word
+- 
+- 
+- 
+- 
+- **F. Belief, Truth, Judgment**
+- 
+- 
+- cred<>believe
+- fid<>trust
+- ver<>truth
+- jud<>judge
+- test<>witness
+- cert<>sure
+- prob<>prove
+- evid<>clear
+- 
+- 
+- 
+- 
+- **G. Time, Order, Change**
+    - temp<>time
+    - chron<>time
+    - prim<>first
+    - nov<>new
+    - neo<>new
+    - sen<>old
+    - mut<>change
+    - vari<>change
+    - grad<>step
+    - evol<>unfold
+- **H. Movement, Direction, Position**
+    - mov / mot<>move
+    - gress / grad<>step
+    - port<>carry
+    - fer<>carry
+    - duc<>lead
+    - tract<>pull
+    - vert<>turn
+    - loc<>place
+    - pon<>place
+    - sta<>stand
+    - sed<>sit
+- **I. Making, Doing, Acting**
+    - act<>do
+    - ag<>do
+    - fac / fic<>make
+    - oper<>work
+    - labor<>work
+    - cre<>create
+    - us<>use
+    - ply<>fold
+- **J. Structure, Form, Shape**
+    - struct<>build
+    - form<>shape
+    - figur<>shape
+    - organ<>tool
+    - part<>part
+    - sect<>cut
+    - fragment<>break
+    - schema<>plan
+- **K. Power, Force, Control**
+    - pot<>power
+    - dyn<>power
+    - domin<>rule
+    - reg<>rule
+    - press<>push
+    - strain<>tight
+    - force<>strength
+    - govern<>steer
+- **L. Size, Degree, Quantity**
+    - magn<>large
+    - macro<>large
+    - micro<>small
+    - min<>small
+    - quant<>amount
+    - plen<>full
+    - limit<>boundary
+    - scalar<>scale
+- **M. Number & Measure**
+    - numer<>number
+    - uni<>one
+    - mono<>one
+    - bi<>two
+    - tri<>three
+    - poly<>many
+    - multi<>many
+    - cent<>hundred
+    - metr<>measure
+    - log<>ratio
+- **N. Relation, Comparison**
+    - simil<>same
+    - par<>equal
+    - equ<>equal
+    - alter<>other
+    - inter<>between
+    - contra<>against
+    - relat<>connect
+    - analog<>proportion
+- **O. Cause, Effect, Process**
+    - caus<>cause
+    - fact<>done
+    - prod<>bring forth
+    - event<>outcome
+    - process<>advance
+    - result<>outcome
+    - affect<>influence
+- **P. Logic, Reasoning, Proof**
+    - log<>reason
+    - ratio<>reason
+    - deduc<>lead down
+    - induc<>lead into
+    - infer<>bring out
+    - demonstr<>show
+    - axi<>worthy
+    - postul<>assume
+- **Q. Science, Method, Study**
+    - theor<>view
+    - analys<>break apart
+    - synth<>put together
+    - method<>path
+    - hypo<>under
+    - thesis<>position
+    - empir<>experience
+- **R. Mathematics**
+    - numer<>number
+    - equ<>equal
+    - ratio<>proportion
+    - func<>perform
+    - vector<>carry
+    - scalar<>scale
+    - matrix<>womb
+    - stat<>stand
+- **S. Social, Political, Legal**
+    - soci<>group
+    - civ<>citizen
+    - polit<>city
+    - leg<>law
+    - jur<>law
+    - econom<>household
+    - public<>people
+    - admin<>manage
+- **T. Emotion, Value, Evaluation**
+    - am / amor<>love
+    - phil<>love
+    - od<>hate
+    - val<>worth
+    - estim<>value
+    - prefer<>choose
+    - eth<>custom
+- **U. Technology, Systems, Computing**
+    - techn<>skill
+    - mechan<>machine
+    - autom<>self
+    - comput<>calculate
+    - digit<>finger
+    - crypt<>hidden
+    - net<>network
+    - system<>arrangement
+    - data<>given
+    - code<>rule
+- **V. Common Abstract Roots**
+    - norm<>rule
+    - typ<>model
+    - model<>pattern
+    - standard<>standing rule
+    - concept<>take together
+    - category<>class
+    - princip<>first
+    - thema<>subject
+- **W. High-Value Germanic Roots**
+    - work<>labor
+    - think<>consider
+    - stand<>position
+    - hold<>keep
+    - break<>separate
+    - build<>construct
+    - bring<>carry
+    - find<>discover
+    - make<>create

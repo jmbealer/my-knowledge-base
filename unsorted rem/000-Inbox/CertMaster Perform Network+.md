@@ -1,0 +1,759 @@
+- 1.0 Explaining Network Topologies 1.2 1.6 1.1 5.1 Lab-Done Quiz-Done
+    - ## 1.0 Introduction
+        - The Open Systems Interconnection (OSI) model is used to try to simplify some of this complexity. 
+            - It divides network technologies among seven functional layers. 
+            - This makes it easier to separate and focus on individual concepts and technologies while retaining an understanding of relationships between functions of technologies placed in other layers.
+        - This module uses the OSI model to give you an overview of the technologies that you will be studying in the rest of the course.
+        - You will compare the functions of these layers in the OSI model and apply those concepts to the installation and configuration of a small office/home office network.
+        - ## Module Objectives
+            - [Size]();-[H2]()
+            - In this lesson, you will do the following:
+                - Explain network types and characteristics.
+                - Compare and contrast OSI model layers.
+                - Configure SOHO networks.
+                - Explain CompTIA's troubleshooting methodology.
+        - [Size]();-[H2]()
+    - ## 1.1 Networking Overview 1.2 1.6
+        - ## Exam Objectives Covered
+            -  *1.2 Compare and contrast networking appliances, applications, and functions.* 
+            -  *1.6 Compare and contrast network topologies, architectures, and types.* 
+            - [Size]();-[H2]()
+        - {{Network types and topologies}} determine the scale and flow of data through a network. 
+        - Identifying the different topologies is essential to designing or troubleshooting a network. 
+        - No matter what your specific role in network implementation and management, you will need to understand the characteristics of the network topology you are working with and identify how the topology affects network design, performance, and troubleshooting.
+        - As you study this lesson, answer the following questions:
+            - Why is it useful to categorize network types, appliances, applications, functions, and topologies?
+            - What are the advantages of a client-server network  compared to a peer-to-peer network?
+            - How does a logical topology differ from a physical topology?
+            - What do diagrams of point to point, star, and mesh topologies look like?
+        - [Size]();-[H2]()
+        - ## 1.1.1 Networking Concepts
+            - A {{network}} is two or more computer systems that are linked by a transmission medium and share one or more protocols that enable them to exchange data. 
+            - You can think of any network in terms of {{nodes and links}}. 
+                - {{Nodes}} are devices that send, receive, and forward data, 
+                - {{Links}} are the communications pathways between nodes.
+            - There are two general kinds of nodes: {{intermediate}} nodes and {{end systems}}.
+                - {{Intermediate nodes}} perform a forwarding function, 
+                - while {{end system nodes}} are those that send and receive data traffic. 
+                    - {{End systems}} are often also referred to as {{hosts}}.
+            - ## Client-Server vs. Peer-to-Peer Networks
+                - [Size]();-[H2]()
+                - End system nodes can be classified as either {{clients or servers}}:
+                    - A {{server}} makes network applications and resources available to other hosts.
+                    - A {{client}} consumes the services provided by servers.
+                - A {{**client-server**}}{{ }}network is one where some nodes, such as {{PCs, laptops, and smartphones}}, act mostly as clients. 
+                    - The servers are more powerful computers. 
+                    - Application services and resources are centrally provisioned, managed, and secured.
+                - A {{**peer-to-peer**}} network is one where each host acts as both client and server. 
+                    - This is a decentralized model where provision, management, and security of services and data are distributed around the network. 
+                    - A small peer-to-peer network can also be referred to as a workgroup.
+                - Business and enterprise networks are typically {{client-server}}, while residential networks are more often {{peer-to-peer.}} 
+                    - However, note that in a client-server network, often, hosts will function as both clients and servers at the same time. 
+                    - For example, a computer hosting a web application acts as a server to browser clients but is itself a client of database services running on other server computers. 
+                    - It is the centrally administered nature of the network that really defines it as client-server.
+            - ## Appliances, Applications, and Functions
+                - [Size]();-[H2]()
+                - You can also think of a network as having {{appliances, applications, and functions}}:
+                    - {{**Appliances**}} - Networks make use of many types of specialized platforms. 
+                        - Unlike general-purpose Windows or macOS computers and servers, an appliance is a computer with an operating system and software designed to perform a particular network role. 
+                        - Examples of these roles include the{{ switches, routers}}, and {{wireless access points}} that forward data, the {{firewalls}} and {{intrusion detection systems}} that enforce security rules, and the load balancers and proxies that improve network performance.
+                - An appliance can be deployed as {{**physical hardware**}}, meaning that the appliance OS/software runs on its own CPU, memory, storage, and network interfaces.
+                    - It is also possible to deploy {{**virtual appliances**}}. This means that the appliance OS is deployed as a virtual machine running on a hypervisor computing platform. 
+                        - The same hypervisor computer could run multiple virtual appliances.
+                    - {{**Applications**}} - The nodes and links of networking infrastructure are deployed to run services. 
+                        - Services are shared applications that allow the network to do useful work, such as sharing files or allowing employees to send email.
+                    - {{**Functions**}} - Networks can be configured with additional properties to perform different functions. 
+                        - For example, the security properties of a virtual private network allow devices to join a local network from across the Internet. 
+                        - As another example, quality of service functionality allows optimization of a network to suit a particularly time-sensitive application, such as voice or video.
+            - [Size]();-[H2]()
+        - ## 1.1.2 Network Types
+            - A {{network type}} refers primarily to its {{size and scope}}. 
+                - The size of a network can be measured as the number of nodes, 
+                - while the scope refers to the area over which nodes sharing the same network address are distributed.
+            - ## Local Area Networks
+                - [Size]();-[H2]()
+                - A {{**local area network (LAN)**}}{{ }}is confined to a single geographical location. In a LAN, all nodes and segments are directly connected with cables or short-range wireless technologies. Most of the network infrastructure in a LAN would be directly owned and managed by a single organization. 
+                - Some examples of LANs include the following:
+                    - {{**Home/residential network**}} - With an Internet router and a few computers, plus mobile devices, gaming consoles, and printers.
+                    - {{**Small office/home office (SOHO) network**}} - A business-oriented network possibly using a centralized server in addition to client devices and printers, but often still using a single Internet router/switch/access point to provide connectivity.
+                    - {{**Small and medium-sized enterprise (SME) Network**}} - A network supporting dozens of users. Such networks would use structured cabling and multiple switches and routers to provide connectivity.
+                    - {{**Enterprise LAN**}} - A larger network with hundreds or thousands of servers and clients. Such networks would require multiple enterprise-class switch and router appliances to maintain performance levels.
+                    - {{**Datacenter**}} - A network that hosts only servers and storage, not end user client devices.
+            - ## Wide Area Networks
+                - [Size]();-[H2]()
+                - A {{**wide area network (WAN)**}} is a network of networks, connected by long-distance links. 
+                    - A typical enterprise WAN would connect a main office site with multiple branch office sites, possibly in different countries. 
+                    - A WAN could link two or more large LANs or could be used for remote workers connecting to an enterprise network via a public network such as the Internet. 
+                    - WAN links are also used to connect datacenters to one another. 
+                    - WANs are likely to use leased network devices and links, operated and managed by a service provider.
+            - [Size]();-[H2]()
+        - ## 1.1.3 Network Topology
+            - Where the type defines the network scope, the {{**topology**}}** **describes the physical or logical structure of the network in terms of nodes and links.
+            - A network's {{physical topology}} describes the placement of nodes and how they are connected by the transmission media. 
+                - For example, in one network, nodes might be directly connected via a single cable; in another network, each node might connect to a switching appliance via separate cables. 
+                - These two networks have different physical topologies.
+            - The {{logical topology}} describes the flow of data through the network. 
+                - For       example, given the different physical network topologies described       previously, if in each case the nodes can send messages to one another,       the logical topology is the same. 
+                - The different physical       implementations - directly connected via a cable versus connected to the       same switch - achieve the same logical layout.
+            - In the simplest type of topology, a single link is established between       two nodes. This is called a {{**point to point**}} link. 
+                - Because only two devices share the connection, they are guaranteed a level of {{**bandwidth**}}**.** 
+            - ![](https://remnote-user-data.s3.amazonaws.com/b4hM0pGe7TjiXvSmBAwGoIbZ01n7ir1MHE362vPtJcH6yZo0UwdNXM0Hd0r8FLRbw8D9TFC-BEomI1IZ9uYEKiVLBenSMO56xxLCfJMAKrcE1qqghqaccXxkiWEhkD8M.png)
+                - Description
+                    - The steps are as follows.
+                        - 1. In a point-to-point (or duplex) network, only two nodes are           connected to the network media.
+                        - 2. When the network media is half-duplex, a node cannot transmit and           receive at the same time.
+                        - 3. When the network media is full-duplex, nodes can transmit and           receive simultaneously.
+                        -  *Physical point to point topologies using different media types for           half-duplex and duplex communications.* 
+            - A point to point link can be a {{physical or logical }}topology. 
+                - For example,       on a WAN, two router appliances might be physically linked via multiple       intermediate networks and physical devices but still share a logical point       to point link, where each can address only the other router. 
+                - With either a       physical or logical topology, it is the 1:1 relationship that defines a       point to point link.
+            - [Size]();-[H2]()
+        - ## 1.1.4 Star Topology
+            - In a {{**star topology**}} each endpoint node is connected to a central forwarding appliance, such as a {{switch or router.}} 
+            - The {{central}} node mediates communications between the endpoints. 
+            - The {{star}} topology is the most widely used physical topology. 
+            - For example, a typical SOHO network is based around a single Internet router appliance that clients can connect to with a cable or wirelessly. 
+            - The star topology is easy to reconfigure and easy to troubleshoot because all data goes through a central point, which can be used to monitor and manage the network. 
+            - {{Faults}} are automatically isolated to the media, node (network card), or the switch, router, or wireless access point at the center of the star.
+            - ![](https://remnote-user-data.s3.amazonaws.com/1JcC7QqjA660RhuYRIKhmdnr5BFp5wIuym_FPlXAkSSdUUTc9x-C-uS9wh0iNJQDBnbrZN_H4UcSAlMR805E2Iwu23cZZxaXgTS8CslJwJV3pSfnnCf1_QSyEFV8JIUx.png)
+                - Description
+                    - The steps are as follows.
+                        - 1.In a star topology, each node is connected to a concentrator over dedicated network media.
+                        - 2.When a node transmits, the signal is sent over the network media to the concentrator.
+                        - 3.The concentrator forwards signals to other nodes. It may do this by repeating the signal to all nodes, working as logical bus topology (implemented as an Ethernet hub).
+                        - 4.More commonly, the concentrator tracks node addresses and selectively switches communication paths to establish point-to-point links.
+                        - 5.The concentrator is a single point of failure. Also each node must be within the media’s maximum transmission distance of the concentrator or must use a repeater to overcome the distance limitation.
+            - [Size]();-[H2]()
+            -  *Star topologies using different types of concentrators.* 
+            - You may also encounter the {{**hub-and-spoke**}} topology, which has the same physical layout as a star topology but is primarily used in a different context. 
+            - While the star topology is often seen in local area networks (LANs), the hub-and-spoke topology is more commonly applied to wide area networks (WANs) with remote sites.
+        - ## 1.1.5 Mesh Topology
+            - A {{**mesh topology**}}{{ }}is commonly used in WANs, especially public networks such as the Internet. 
+            - A full mesh network requires that each device has a point to point link with every other device on the network. 
+            - This approach is normally impractical, however.
+            - The number of links required by a full mesh is expressed as  *n* ( *n* –1)/2, where  *n*  is the number of nodes. 
+            - For example, a network of just four nodes would require six links, while a network of 40 nodes would need 780 links!
+            - Consequently, a hybrid approach is often used, with only the most important devices interconnected in the mesh, perhaps with extra links for fault tolerance and redundancy. 
+            - This type of topology is referred to as a partial mesh.
+            - ![](https://remnote-user-data.s3.amazonaws.com/Oij-yjIB9FlPK0JMqNAUkki-A5WCF0lgZbnCDAKvThEKfrtrgmk4XC2RkZ6cQqn5gLYPLdI4HZx5r2HUWOT7VzdKxrp4Fao4PyVDutRTuH9qkCEnzEDh4CNG57vgQOCW.png)
+            - [Size]();-[H2]()
+            - Description
+                - The steps are as follows.
+                    - 1.In a fully connected mesh network, each node has a point-to-point link with every other node. This requires exponentially more link as nodes are added: n times (n minus 1) over 2.
+                    - 2.Provisioning so many interface and link is difficult, so partial mesh networks are often preferred, in a partial mesh, nodes can forward packets to a destination by learning the network topology.
+                    - 3.Packets can take multiple routes through the network, providing resilience if some nodes or links fail.
+            -  *Fully connected and partial mesh topology examples.* 
+            - {{Mesh}} networks provide excellent redundancy, because other routes, via intermediary devices, are available between locations if a link failure occurs.
+    - ## 1.2 OSI Model Concepts 1.1
+        - ## Exam Objectives Covered
+            -  *1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model.* 
+            - [Size]();-[H2]()
+        - Networks are built on common standards and models that describe how devices and protocols interconnect. 
+        - In this lesson, you will identify how the implementation and support of these systems refer to an important common reference model: the Open Systems Interconnection (OSI) model. 
+        - The OSI model breaks the data communication process into discrete layers. 
+        - Being able to identify the OSI layers and compare the functions of devices and protocols working at each layer will help you to implement and troubleshoot networks.
+        - As you study this lesson, answer the following questions:
+            - Why are protocols important for networking?
+            - What is the OSI model? Why is it important for understanding networking?
+            - At which OSI model layer do common network appliances, applications, and functions work?
+            - How does data encapsulation facilitate data transmission? How does encapsulation relate to frames, datagrams, segments, and ports?
+        - [Size]();-[H2]()
+        - ## 1.2.1 Open Systems Interconnection Model
+            - The International Organization for Standardization (ISO) developed the **Open Systems Interconnection (OSI) reference model** 
+            - to promote understanding of how components in a network system work. 
+            - It does this by separating the functions of hardware and software components into seven discrete layers. 
+            - Each layer performs a different group of tasks required for network communication.
+            - ![](https://remnote-user-data.s3.amazonaws.com/6b-iK7oPDigdD7ROHTsGmS5xibbGz862UdTVDFRWvp-DNBgq-2yeNzhC0hycZuneGOROZ8WipPu53FAlMbKuDRZOtICDdzGIAVCxbXj8THIo95euXcsdDYPVokLPpqFV.png)
+            - [Size]();-[H2]()
+            - Although not all network systems implement layers using this precise structure, they all implement each task in some way. 
+            - The OSI model is not a standard or a specification; it serves as a functional guideline for designing network protocols, software, and appliances and for troubleshooting networks.
+        - ## 1.2.2 Data Encapsulation and Decapsulation
+            - A {{**network protocol**}} is a set of rules for exchanging data in a structured format. 
+                - A network protocol has two principal functions:
+                    - {{**Addressing**}} - Describing where data messages should go. 
+                        - At each OSI model layer, there are different mechanisms for identifying nodes and rules for how they can send and receive messages.
+                    - {{**Encapsulation**}} - Describing how data messages should be packaged for transmission. 
+                        - {{Encapsulation}} is like an envelope for a letter, with the distinction that each layer requires its own envelope. 
+                        - At each layer, the protocol adds fields in a {{header}} to whatever payload data it receives from an application or other protocol.
+            - A network will involve the use of many different protocols operating at different layers of the OSI model. 
+            - At each layer, for two nodes to communicate they must be running the same protocol. 
+            - The protocol running at each layer communicates with its peer layer on the other node. 
+            - This communication  *between * nodes at the same layer is described as a {{same layer interaction}}. 
+            - To transmit or receive a communication,  *on * each node, each layer provides services for the layer above and uses the services of the layer below. This is referred to as {{adjacent layer interaction}}.
+            - ![](https://remnote-user-data.s3.amazonaws.com/RgV9h5rNo3MIrQ7EFD4OuBhQn0HTwMp9k7WfTwfxNRCldHINoZjILAlvZIz61ZCYTCl5eAruYQdjAzlEHlN5CeBGxJrEV3WCqUblOuPwGPEGvds-xJs1FtbdyMGW2eLd.png)
+            - [Size]();-[H2]()
+            - When a message is sent from one node to another, it travels down the stack of layers on the sending node, reaches the receiving node using the transmission media, and then passes up the stack on that node. At each level (except the Physical layer), the sending node adds a header to the data payload, forming a “chunk” of data called a **protocol data unit (PDU)**. This is the process of encapsulation.
+                - For example, on the sending node, data is generated by an application, such as the HyperText Transfer Protocol (HTTP), which will include its own application header. At the Transport layer, a Transmission Control Protocol (TCP) header is added to this application data. At the Network layer, the TCP segment is wrapped in an Internet Protocol (IP) header. The IP packet is encapsulated in an Ethernet frame at the Data Link layer, then the stream of bits making up the frame is transmitted over the network at the Physical layer as a modulated electrical signal.
+                - The receiving node performs the reverse process, referred to as decapsulation. It receives the stream of bits arriving at the Physical layer and decodes an Ethernet frame. It extracts the IP packet from this frame and resolves the information in the IP header, then does the same for the TCP and Application headers, eventually extracting the HTTP application data for processing by a software program, such as a web browser or web server.
+                - You might notice that this example seems to omit some OSI layers. This is because "real-world" protocols do not conform exactly to the OSI model.
+        - ## 1.2.3 Layer 1 - Physical
+            - The **Physical layer (PHY)** of the OSI model is defined as layer 1. The Physical layer is responsible for the transmission and receipt of the signals that represent bits of data. Transmission media can be classified as cabled or wireless:
+                - {{**Cabled**}} - A physical signal conductor is provided between two nodes. Examples include copper or fiber optic cable types. Cabled media can also be described as bounded media.
+                - {{**Wireless**}} - Uses free space between nodes, such as microwave radio. Wireless media can also be described as unbounded media.
+            - The Physical layer specifies the following:
+                - {{**Physical topology**}} - The layout of nodes and links as established by the transmission media. An area of a larger network is called a segment. A network is typically divided into segments to cope with the physical restrictions of the network media used, to improve performance, or to improve security. At the Physical layer, a segment is where all the nodes share access to the same media.
+                - {{**Physical interface**}} - Mechanical specifications for the network medium. For cabled media, this means the construction of the cable, the interface/connector form factor, and the number and functions of the pins in a connector. For wireless media, it means radio transceiver and antenna specifications.
+                - {{**Signaling**}} - The process of transmitting and receiving encoded data over the network medium. A modulation scheme describes how electrical, light, or radio signals represent bits. Timing and synchronization schemes ensure senders and receivers can identify groups of signals as a chunk or frame of data.
+            - Devices that operate at the Physical layer include the following:
+                - {{**Transceiver**}} - The part of a network interface that sends and receives signals over the network media.
+                - {{**Repeater**}} - A device that amplifies an electronic signal to extend the maximum allowable distance for a media type.
+                - {{**Hub**}} - A multiport repeater, deployed as the central point of connection for nodes.
+                - {{**Media converter**}} - A device that converts one media signaling type to another.
+            - [Size]();-[H2]()
+        - ## 1.2.4 Layer 2 - Data Link
+            - Layer 2 is referred to as the **Data Link layer**. 
+            - It is responsible for transferring data between nodes on the same logical segment. 
+            - At the {{Data Link layer}}, a segment is one where all nodes can send traffic to one another using hardware addresses, regardless of whether they share access to the same media. 
+            - A layer 2 segment might include multiple physical segments. This is referred to as a {{logical}} topology.
+            - Local networks do not typically connect hosts directly with point to       point or mesh links. 
+            - To reduce cabling and interface costs, each host is connected to a central node, such as a switch or a wireless access point. 
+            - The central node provides a forwarding function, receiving the communication from one node and sending it to another. 
+            - To do this, each node interface must have a Data Link layer address. 
+            - The addresses of interfaces within the same layer 2 segment are described as local addresses or hardware addresses.
+            - The Data Link layer also performs an encapsulation function.
+            - It organizes the stream of bits arriving from the Physical layer into structured units called {{**frames**}}. 
+            - Each frame contains a Network layer packet as its {{payload}}. 
+            - The Data Link layer adds control information to the payload in the form of header fields. 
+            - These fields include source and destination hardware addresses, plus a basic error check to test if the frame was received intact.
+            - ![](https://remnote-user-data.s3.amazonaws.com/k3LpOLLwvjPp9nFMNoCPBJ0PDapYGHYZZwITP9S3PDbIg1dRIEkXMMyXk10z0p6CIxAKdT8MZbAqlNm5Q2Dg3og7sLqyZGUP0WnBhLK8IkhDXBIN0Peuf4REyFB2UAvL.png)
+            - Devices that operate at the Data Link layer include the following:
+                - {{**Network adapter or network interface card (NIC)**}} - joins an end system host to network media (cabling or wireless) and enables it to communicate over the network by assembling and disassembling frames.
+                - {{**Bridge**}} - an intermediate system that joins physical network segments while minimizing the performance reduction of having more nodes on the same network. A bridge has multiple ports, each of which functions as a network interface.
+                - {{**Switch**}} - An advanced type of bridge with many ports. A switch creates links between large numbers of nodes more efficiently.
+                - {{**Wireless access point (AP)**}} - allows nodes with wireless network cards to communicate and creates a bridge between wireless networks and wired ones.
+            - [Size]();-[H2]()
+        - ## 1.2.5 Layer 3 - Network
+            - Layer 3 is the **Network layer**. 
+            - This layer is responsible for moving data around a network of networks, known as an {{internetwork}}. 
+            - While the Data Link layer is capable of forwarding data by using hardware addresses within a single segment, the Network layer moves information around an internetwork by using logical network and host IDs. 
+            - The networks are often heterogeneous; that is, they use a variety of Physical layer media and Data Link protocols. 
+            - The main appliance working at layer 3 is the {{**router**}}.
+            - ![](https://remnote-user-data.s3.amazonaws.com/3oA_CdzSWuSOBb4aTiEKbPEtTV_iLvyGEdYsXfIsN3Zxu-6WakjZxQ45avRiR5G5PvbSA-_glJ--52sTOjovk-ddP6Hg3VmrVRd8pk6kYI3yZPW71yppf5G1ej1raYKf.png)
+            - [Size]();-[H2]()
+            - At layer 3, each {{packet}} is given a {{destination}} network address.
+            - {{Routers}} are configured with information about how to reach these different logical networks. 
+            - The packet is forwarded, router by router (or hop by hop), through the internetwork to the target network. 
+            - Once it has reached the destination network, the hardware address can be used to deliver the packet to the target node.
+            - The general convention is to describe PDUs packaged at the Network layer as {{packets or datagrams }} 
+            - and messages packaged at the Data Link layer as {{frames}}. 
+            - {{Packet}} is often used to describe PDUs at any layer, however.
+            - It is usually important for traffic passing between networks to be filtered.
+            - A basic {{**firewall**}} operates at layer 3 to enforce an **a**{{**ccess control list (ACL)**}}. 
+            - A network {{ACL}} is a list of the addresses and types of traffic that are permitted or blocked.
+        - ## 1.2.6 Layer 4 - Transport
+            - The first three layers of the OSI model are primarily concerned with moving frames and datagrams between nodes and networks. 
+            - At the {{**Transport laye**}}**r** - also known as the end-to-end or host-to-host layer - the content of the packets becomes significant. 
+            - Any given host on a network will be communicating with many other hosts using many different types of networking data. 
+            - One of the functions of the Transport layer is to identify each type of network application by assigning it a port number. 
+            - For example, data requested from an HTTP web application can be identified as port 80, while data sent to an email server can be identified as port 25.
+            - At the Transport layer, on the sending host, data from the upper layers is packaged as a series of layer 4 PDUs, referred to as segments. Each segment is tagged with the application's port number. The segment is then passed to the Network layer for delivery. Many different hosts could be transmitting multiple HTTP and email packets at the same time. These are multiplexed using the port numbers along with the source and destination network addresses onto the same link.
+            - ![](https://remnote-user-data.s3.amazonaws.com/FKAbspKEnId_UyLNP3Pg2RJYbKsx1QSCrOm_cF7l8zB7iXk4ZOiN7xVk4_gulsInMjo5oIOi8YPjAJpk4u_yrMu2mCYpMTioncNBIbb5evBXclbqN6jw0zoKlBIxH2SZ.png)
+            - [Size]();-[H2]()
+            - At the Network and Data Link layers, the port number is ignored - it becomes part of the data payload and is invisible to the routers and switches that implement the addressing and forwarding functions of these layers. At the receiving host, each segment is decapsulated, identified by its port number, and passed to the relevant handler at the Application layer. Put another way, the traffic stream is de-multiplexed.
+                - The Transport layer can also implement reliable data delivery mechanisms, should the application require it. Reliable delivery means that any lost or damaged packets are resent.
+                - Devices working at the Transport layer include multilayer switches - usually working as load balancers - and many types of security appliances, such as more advanced firewalls and intrusion detection systems (IDSs).
+        - ## 1.2.7 Upper Layers
+            - The upper layers of the OSI model are less clearly associated with distinct real-world protocols. These layers collect various functions that provide useful interfaces between {{software applications}} and the Transport layer.
+            - ## Layer 5 - Session
+                - [Size]();-[H2]()
+                - Most application protocols require the exchange of multiple messages between the client and server. 
+                - This exchange of such a sequence of messages is called a session or dialog. 
+                - The {{**Session layer (layer 5)**}} represents functions that administer the process of establishing a dialog, managing data transfer, and then ending (or tearing down) the session.
+            - ## Layer 6 - Presentation
+                - [Size]();-[H2]()
+                - The {{**Presentation layer (layer 6)**}} transforms data between the format required for the network and the format required for the application. For example, the Presentation layer is used for character set conversion, such as between American Standard Code for Information Interchange (ASCII) and Unicode.
+                - The Presentation layer can also be conceived as supporting data compression and encryption. However, in practical terms,       encryption is implemented by devices and protocols running at lower layers of the stack or simply within a homogenous Application layer.
+            - ## Layer 7 - Application
+                - [Size]();-[H2]()
+                - The {{**Application layer (layer 7)**}} is at the top of the OSI stack. An Application layer protocol doesn't encapsulate any other protocols or provide services to any protocol. Application layer protocols provide an interface for software programs on network hosts that have established a communications channel through the lower-level protocols to exchange data.
+                - More widely, upper-layer protocols provide most of the services that make a network useful, rather than just functional, including web browsing, email and communications, directory lookup, remote printing, and database services.
+            - [Size]();-[H2]()
+        - ## 1.2.8 OSI Model Summary
+            - The following image summarizes the OSI model, listing the PDUs at each layer, along with the types of devices that work at each layer.
+            - ![](https://remnote-user-data.s3.amazonaws.com/8M0HkeYQ60Vc34h8yEUGdahOTyxYwEP7T7bLzFkX0d9OdaqiHq3BCyrmxsB7pAHyZs5rU4pbseySyNvNCKQw9kDHrumaPvib1FjEACglJZEM_PoyfM4GPNjYqeeGAYGt.jpeg)
+            - [Size]();-[H2]()
+    - ## 1.3 SOHO Networks 1.1
+        - ## Exam Objectives Covered
+            -  *1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model.* 
+            - [Size]();-[H2]()
+        - The OSI model involves quite a lot of abstraction. As a practical example, it is worth examining how a basic network is implemented. In this topic, you will describe the connection and configuration options for components within a typical small office/home office (SOHO) router. You will also explore some of the organizations responsible for managing the Internet and the various numbering schemes used for network address notation.
+        - As you study this lesson, answer the following questions:
+            - What separate functions are packed into a typical SOHO router appliance?
+            - How are Internet services provisioned and managed?
+            - What types of numbering schemes are used to represent network addresses?
+        - [Size]();-[H2]()
+        - ## 1.3.1 SOHO Routers
+            - Networks of different sizes are classified in different ways. A network in a single location is often described as a local area network (LAN). This definition encompasses many different sizes of networks with widely varying functions and capabilities. It can include both residential networks with a couple of computers and enterprise networks with hundreds of servers and thousands of workstations.
+            - Small office/home office (SOHO) is a category of LAN with a small number of computing hosts that typically rely on a single integrated appliance for local and Internet connectivity.
+            - Networks such as the Internet that are located in different geographic regions but with shared links are called wide area networks (WANs). The intermediate system powering SOHO networks is usually described as a SOHO router because one of its primary functions is to forward traffic between the LAN and the WAN. However, routing is actually just one of its functions. We can use the OSI model to analyze each of these in turn.
+            - [Size]();-[H2]()
+        - ## 1.3.2 Physical Layer Functions
+            - Starting at layer 1, the SOHO router provides the following physical interfaces:
+                - A number of RJ45 ports (usually four) to implement a local cabled network. These are typically labeled as the LAN ports.
+                - Radio antennae to transmit and receive wireless signals.
+                - A type of modem to connect to the **Internet service provider's (ISP's)** network. This is typically labeled as the WAN port. In the example in the diagram, the WAN interface is another RJ45 port designed to connect to a fiber to the premise's Internet service using the same Ethernet technology as the local network. On other SOHO routers, there may be a different type of WAN modem, such as an RJ11 port to connect to a digital subscriber line (DSL) service, or a F-connector coax jack to connect to a cable service.
+            - ![](https://remnote-user-data.s3.amazonaws.com/0wTKJW0OEFmbCtp9jH2LexGGhp_ZZ5eoxFJr2jSYZlIqIORl_pQLSTYiMWPDYJA_NqIis49JHw4FICXDqpLKBlB1NgWyehnque7PiYfAdEUcABn2nIS2GZiYdAHNIGG0.png)
+                - Description
+                - The options are as follows.
+                - 1. R J-45 ports to connect hosts on the local network via cables.
+                - 2. Radio antennas to send and receive wireless signals.
+                - 3. W A N port to connect to the Internet Service Provider (I S P) network.
+                -  *Physical layer connectivity options on a SOHO router.* 
+            - [Size]();-[H2]()
+        - ## 1.3.3 Data Link Layer Functions
+            - At layer 2, the SOHO router implements the following functions to make use of its Physical layer adapters:
+                - **Ethernet switch** - The RJ45 jacks are connected internally by an Ethernet switch.
+                - **Wireless access point** - The radio antennae implement some version of the Wi-Fi standard. The access point functions as a wireless hub, allowing stations (PCs, tablets, smartphones, and printers) to form a wireless network. The access point is also wired to the Ethernet switch via an internal port. This forms a bridge between the cabled and wireless segments, creating a single logical Data Link network.
+            - ![](https://remnote-user-data.s3.amazonaws.com/QiJX9YGHlWAUtgtCZVokeNZffu6ajMRZKDN6t47qLzU2K-9_LH0lglI2NjadDc-VioKWfV5Fm4H0L-ilHpl3pFgNj_iVqKthSOQ-cEo122mM5bgrhyWUr9-Cw0ukDeO7.png)
+                - Description
+                - The steps are as follows.
+                - 1. Access point is internally wired to a switch port.
+                - 2. Cabled and wireless hosts are all on the same layer 2 local network.
+                -  *Data Link layer local network segment. (Images © 123RF.com.)* 
+                - At this layer, each host interface is identified by a media access control (MAC) address. For example, each NIC port in the computers and each radio in the mobile devices has a unique MAC address.
+            - [Size]();-[H2]()
+        - ## 1.3.4 Network Layer Functions
+            - At layer 3, the Network layer, the routing part of the SOHO router makes forwarding decisions between the local private network and public Internet. These zones are distinguished by Internet Protocol (IP) addresses. The local network uses a private IP address range, such as `192.168.1.0/24`. The SOHO router itself is identified by an address in this range, such as `192.168.1.1` or `192.168.1.254`.
+            - ![](https://remnote-user-data.s3.amazonaws.com/LseUqPbiEYUoxgk-UoPl6o6COUPlOwzw9zcuvRtv0fMNwlucR3Ij2trYLj70zCUwt11xnkTAxg2_G5UAyfJGKaOM0OXnhF7NLO7V4M4OkDZqQnR1KZ6DzPsXTCnlwaJF.png)
+            - [Size]();-[H2]()
+            - Description
+            - The steps are as follows.
+            - 1. Hosts attached to a switch port or connected to the access point are on the same layer 3 network (192.168.1.0 slash 24).
+            - 2. Any communications for other networks must be forwarded via the router.
+            -  *Network layer private and public segments. (Images © 123RF.com.)* 
+            - The router runs a Dynamic Host Configuration Protocol (DHCP) server to allocate a unique address to each host that connects to it over either an Ethernet port or via the wireless access point. The addresses assigned to clients use the same first three octets as the router's address: `192.168.1`. The last octet can be any value from 1 to 254, excluding whichever value is used by the router.
+            - ![](https://remnote-user-data.s3.amazonaws.com/RxS_S3WlPrel_7WtTEB2XEJY_ZTklIN7N5VaN6R1Pw_x-tjSWXeTWn2gqGJSk1nbN_dODBqLPuF_bAqeSeHwklUnLtJeGFN44OXbsBlWIz0zRdfNZNHecEnL4FjXBSQl.png)
+            - Description
+            - Three tabs, Quick Setup, Basic, and Advanced are at the top, from which the Advanced tab is selected. The network option on the left pane is expanded to list several options from which the L A N settings option is selected. The right pane shows the settings of the D H C P server. It provides data on I P version, M A C address, I P address, subnet mask, I G M P snooping, D H C P, I P address pool, address lease time, default gateway, default domain, primary D N S, and secondary D N S. Save button is at the bottom-right.
+            -  *Configuring the LAN addresses using DHCP on a wireless router. (Screenshot courtesy of TP-Link Technologies Co., Ltd.)* 
+            - The SOHO router's WAN interface is allocated a public IP address, for example `203.0.113.1`, by the Internet service provider. When a host on the local network tries to access any valid IP address outside the `192.168.1.0/24` range, the router forwards that packet over its WAN interface and directs any replies back to the host on the LAN.
+            - ![](https://remnote-user-data.s3.amazonaws.com/0ZLE2H3sFGlKK-5ON7LRb_4kJkp-JqBJx-zsli-EciTlQhA1C0GisVy34SR3Qz7teAohyDdTWnwE1rk7A8-PLCH84Xo6odpGc1csPQ4nnCFFbcPaODTNZrVaZJ9qMQ6g.png)
+            - Description
+            - Three tabs, Quick Setup, Basic, and Advanced are at the top, from which the Advanced tab is selected. The network option on the left pane is expanded to list several options from which the Internet option is selected. The right pane shows the settings of the W A N interface. It provides data on connection type, I P v 4, I P address, subnet mask, default gateway, primary D N S, secondary D N S, and I P v 6. The save button is at the bottom-right.
+            -  *Configuring the WAN (Internet) interface on a wireless router. These parameters are supplied by the ISP. Many ISP services use DHCP to allocate a dynamic WAN address, but some offer static addressing. (Screenshot courtesy of TP-Link Technologies Co., Ltd.)* 
+        - ## 1.3.5 Transport and Application Layer and Security Functions
+            - There is no separate OSI model layer for security. Instead, security issues can arise, and solutions are needed at every layer. Network security is essentially a matter of allowing or preventing devices, users, and services (applications) from using the network. The WAN interface is the network perimeter. The SOHO router can apply filtering rules to traffic sent between the public and private zones, implementing a firewall. The firewall can be configured to block traffic based on source or destination IP addresses and also on the type of application.
+            - At layer 4, each application is identified by a port number, such as 80 for Hypertext Transfer Protocol (HTTP) web traffic or 25 for Simple Mail Transfer Protocol (SMTP) email traffic.
+            - The firewall in the router can be configured with rules specifying behavior for each port. For example, computers on the network might use the Server Message Block (SMB) protocol to share files. It would not be appropriate for hosts on the Internet to be able to access these shared files, so the SMB port would be blocked by default on the WAN interface but allowed on the LAN and WLAN interfaces.
+            - Any host can connect to the RJ45 ports on the router and join the network. The wireless network is usually protected by an encryption system that requires each station to be configured with a passphrase-based key to join the network.
+            - Access to the router's management interface and its configuration settings is protected by an administrative account passphrase. As the router is connected to the Internet, it is critical to configure a strong passphrase.
+            - ![](https://remnote-user-data.s3.amazonaws.com/MItN6L6IJ5yFmrqcp1V_YX3ITn0WDFT3vcG3uJY_Pjjv5LComYYjPM-TYGd0mbwUGAT7W8tlHHelhPfBsBP8C6vxjcrg-FPMkSYy4F4u0Ohlc82oYkRZsHHNVaVEZbrl.png)
+            - [Size]();-[H2]()
+            - Description
+            - Three tabs, Quick Setup, Basic, and Advanced are at the top, from which Advanced tab is selected. System Tools option on the left pane is expanded to list several options from which Administrator is selected. The right pane has three sections: Account Management, Local Management, and Remote Management. Account Management section has fields for old password, new password, and confirm new password along with a save button. Local Management section has fields for port and I P or M A C address along with a save button. Remote management has fields for remote management, port, and I P or M A C address along with a save button.
+            -  *Configuring a management interface on a wireless router. (Screenshot courtesy of TP-Link Technologies Co., Ltd.)* 
+        - ## 1.3.6 The Internet
+            - The WAN interface of the router connects the SOHO network to the Internet.
+            - ## The Public Switched Telephone Network
+                - [Size]();-[H2]()
+            - Most SOHO subscriber Internet access is facilitated through various modern methods such as DSL, cable, fiber optics, cellular, and satellite services, although some legacy systems may still use the public switched telephone network (PSTN). The SOHO router is described as customer premises equipment (CPE). More widely, this is any termination and routing equipment placed at the customer site. Some of this equipment may be owned or leased from the telecommunications company (or telco); some may be owned by the customer.
+            - The CPE is connected via its modem and WAN port to the local loop. This is cabling from the customer premises to the local exchange. The point at which the telco's cabling enters the customer premises is referred to as the demarcation point (often shortened to demarc).
+            - ## Internet Service Providers
+                - [Size]();-[H2]()
+            - The major infrastructure of the Internet consists of high-bandwidth trunks connecting Internet eXchange Points (IXPs). Within an IXP datacenter, ISPs establish links between their networks, using transit and peering arrangements to carry traffic to and from parts of the Internet they do not physically own. There is a tiered hierarchy of ISPs that reflects to what extent they depend on transit arrangements with other ISPs.
+            - ## Internet Standards
+                - [Size]();-[H2]()
+            - Although no single organization owns the Internet or its technologies, several organizations are responsible for the development of the Internet and on the agreement of common standards and protocols.
+                - **Internet Assigned Numbers Authority (IANA) (**[**iana.org**](https://www.iana.org/)**)** - Manages allocation of IP addresses and maintenance of the top-level domain space. IANA is currently run by Internet Corporation for Assigned Names and Numbers (ICANN). IANA allocates addresses to regional registries that then allocate them to local registries or ISPs.
+                - **Internet Engineering Task Force (IETF) (**[**ietf.org**](https://www.ietf.org/)**)** - Focuses on solutions to Internet problems and the adoption of new standards, published as Requests for Comments (RFCs). Some RFCs describe network services or protocols and their implementation, while others summarize policies. An older RFC is never updated. If changes are required, a new RFC is published with a new number. Not all RFCs describe standards. Some are designated informational, while others are experimental. The official repository for RFCs is at [rfc-editor.org](https://www.rfc-editor.org/).
+            - References to RFCs in this course are for your information should you want to read more. You do not need to learn them for the certification exam.
+            - 
+            - The OSI model has a stricter definition of the Session, Presentation, and Application layers than is typical of actual protocols used on networks. The Internet model (tools.ietf.org/html/rfc1122) uses a simpler four-layer hierarchy, with a Link layer representing OSI layers 1 and 2, layer 3 referred to as the Internet layer, a Transport layer mapping approximately to layers 4 and 5, and an Application layer corresponding to layers 6 and 7.
+            - [Size]();-[H2]()
+        - 1.3.7 Binary and Hexadecimal
+            - Play Video
+            - Video Previous Segment
+            - Video Control Resume Play
+            - Video Next Segment
+            - 00:00
+            - 1. Understanding Computer Language
+            - CC
+            - 1.0x
+            - Volume Control
+            - Interactive Script
+            - Theater Mode
+            - Full Screen
+            - 
+            - To interpret network addresses, you must understand the concept of base numbering systems. To start with the familiar; decimal numbering is also referred to as base 10. Base 10 means that each digit can have one of ten possible values (0 through 9). A digit positioned to the left of another has 10 times the value of the digit to the right. For example, the number 255 can be written out as follows:
+            - 
+            - (2x10x10)+(5x10)+5
+            - 
+            - Binary is base 2, so a digit in any given position can only have one of two values (0 or 1), and each place position is the next power of 2. The binary value 11111111 can be converted to the decimal value 255 by the following sum:
+            - 
+            - (1x2x2x2x2x2x2x2)+(1x2x2x2x2x2x2)+(1x2x2x2x2x2)+(1x2x2x2x2)+(1x2x2x2)+(1x2x2)+(1x2)+1
+            - 
+            - As you can see, it takes eight binary digits to represent a decimal value up to 255. An 8-bit value is called a byte or an octet. While computers process everything in binary, the values make for very long strings if they have to be written out or entered into configuration dialogs. An IPv4 address can be expressed as decimal octets. The four decimal numbers in the SOHO router's WAN IP address 203.0.113.1 are octets.
+            - 
+            - Hexadecimal notation (or hex) is a convenient way of referring to the long sequences of bytes used in some other types of network addresses, such as hardware MAC addresses. Hex is base 16 with the possible values of each digit represented by the numerals 0 through 9 and the characters A, B, C, D, E, and F.
+            - 
+            - Use the following table to help to convert between decimal, binary, and hexadecimal values.
+            - 
+            - Decimal
+            - 
+            - 
+            - 
+            - Hexadecimal
+            - 
+            - 
+            - 
+            - Binary
+            - 
+            - 
+            - 
+            - 
+            - 0
+            - 
+            - 
+            - 
+            - 0
+            - 
+            - 
+            - 
+            - 0000
+            - 
+            - 
+            - 
+            - 
+            - 1
+            - 
+            - 
+            - 
+            - 1
+            - 
+            - 
+            - 
+            - 0001
+            - 
+            - 
+            - 
+            - 
+            - 2
+            - 
+            - 
+            - 
+            - 2
+            - 
+            - 
+            - 
+            - 0010
+            - 
+            - 
+            - 
+            - 
+            - 3
+            - 
+            - 
+            - 
+            - 3
+            - 
+            - 
+            - 
+            - 0011
+            - 
+            - 
+            - 
+            - 
+            - 4
+            - 
+            - 
+            - 
+            - 4
+            - 
+            - 
+            - 
+            - 0100
+            - 
+            - 
+            - 
+            - 
+            - 5
+            - 
+            - 
+            - 
+            - 5
+            - 
+            - 
+            - 
+            - 0101
+            - 
+            - 
+            - 
+            - 
+            - 6
+            - 
+            - 
+            - 
+            - 6
+            - 
+            - 
+            - 
+            - 0110
+            - 
+            - 
+            - 
+            - 
+            - 7
+            - 
+            - 
+            - 
+            - 7
+            - 
+            - 
+            - 
+            - 0111
+            - 
+            - 
+            - 
+            - 
+            - 8
+            - 
+            - 
+            - 
+            - 8
+            - 
+            - 
+            - 
+            - 1000
+            - 
+            - 
+            - 
+            - 
+            - 9
+            - 
+            - 
+            - 
+            - 9
+            - 
+            - 
+            - 
+            - 1001
+            - 
+            - 
+            - 
+            - 
+            - 10
+            - 
+            - 
+            - 
+            - A
+            - 
+            - 
+            - 
+            - 1010
+            - 
+            - 
+            - 
+            - 
+            - 11
+            - 
+            - 
+            - 
+            - B
+            - 
+            - 
+            - 
+            - 1011
+            - 
+            - 
+            - 
+            - 
+            - 12
+            - 
+            - 
+            - 
+            - C
+            - 
+            - 
+            - 
+            - 1100
+            - 
+            - 
+            - 
+            - 
+            - 13
+            - 
+            - 
+            - 
+            - D
+            - 
+            - 
+            - 
+            - 1101
+            - 
+            - 
+            - 
+            - 
+            - 14
+            - 
+            - 
+            - 
+            - E
+            - 
+            - 
+            - 
+            - 1110
+            - 
+            - 
+            - 
+            - 
+            - 15
+            - 
+            - 
+            - 
+            - F
+            - 
+            - 
+            - 
+            - 1111
+            - 
+            - As you can see from the table, every hex digit lines up neatly with four binary digits (a nibble). Each byte or octet can be expressed as two hex digits. For example, the decimal value 255 is FF in hex. This would sometimes be written as 0xFF for clarity.
+    - ## 1.4 Troubleshooting Methodology 5.1
+        - ## Exam Objectives Covered
+            -  *5.1 Explain the troubleshooting methodology.* 
+            - [Size]();-[H2]()
+        - Network problems can arise from a variety of sources outside your control. As a network professional, your users, your managers, and your colleagues will all look to you to identify and resolve those problems efficiently. To do that, you will need a strong fundamental understanding of the tools and processes involved in troubleshooting a network. Being able to resolve problems in these areas is a crucial skill for keeping your network running smoothly.
+        - Troubleshooting requires a best practice approach to both problem-solving and customer/client communication. A troubleshooting model provides you with proven processes on which to base your techniques and approach.
+        - As you study this lesson, answer the following questions:
+            - What are the advantages of applying a structured methodology to troubleshooting?
+            - What is the sequence of steps in CompTIA's troubleshooting methodology?
+            - What activities are performed at each step?
+        - [Size]();-[H2]()
+        - ## 1.4.1 Network Troubleshooting Methodology
+            - When you encounter a network problem, you must try to get it resolved as quickly as you reasonably can. However, you must also take enough time to determine what has caused the problem so that you can avoid a recurrence.
+            - You should make sure you familiarize yourself with the order of the steps in the CompTIA Network+ **troubleshooting methodology**. These steps are explained in more detail in the following topics.
+                1. Identify the problem:
+                - Gather information.
+                - Question users.
+                - Identify symptoms.
+                - Determine if anything has changed.
+                - Duplicate the problem, if possible.
+                - Approach multiple problems individually.
+                1. Establish a theory of probable cause:
+                - Question the obvious.
+                - Consider multiple approaches:
+                - Top-to-bottom/bottom-to-top OSI model.
+                - Divide and conquer.
+                1. Test the theory to determine cause:
+                - If theory is confirmed, determine next steps to resolve problem.
+                - If theory is not confirmed, establish new theory or escalate.
+                1. Establish a plan of action to resolve the problem and identify potential effects.
+                2. Implement the solution or escalate as necessary.
+                3. Verify full system functionality and implement preventive measures if applicable.
+                4. Document findings, actions, outcomes, and lessons learned throughout the process.
+            - [Size]();-[H2]()
+        - ## 1.4.2 Identify the Problem
+            - The first step in the troubleshooting process is to identify the problem. There are several techniques and approaches that can assist with this step.
+            - Troubleshooting is usually managed by a ticket system. A problem is reported to a help desk, and that report, with the user's initial description of the problem, becomes the basis for the ticket. Tickets could also be generated automatically by monitoring and alerting systems.
+            - ## Gather Information
+                - [Size]();-[H2]()
+            - To start troubleshooting a ticket, identify the location and scope of the problem. Scope means the area or number of systems affected. This is helpful in two ways. First, a problem that is small in scope might not be a priority in relation to other incidents. Secondly, establishing the scope can help to identify the source of the problem.
+            - If the description in the ticket is unclear or incomplete, to assist with identifying the precise nature of a problem, consider what indirect sources of information there may be:
+                - Check the system documentation, such as installation or maintenance logs, for useful information.
+                - Check recent job logs or consult any other technicians who might have worked on the system recently or might be working on some related issue.
+                - Use vendor support sites (knowledge bases) and forums.
+            - ![](https://remnote-user-data.s3.amazonaws.com/cngAYENRY0Op06N41IA6XCp2UMXhd0LHXAcdocHrLoOtRWuUH6SkxkcEkaQCyXKW08iZ98j8DM6kZCWFCZylOIPobTdG-1sTuekTA4wWgCjzZrApnydgUVEbRO8CRnoh.jpeg)
+            -  *Information gathering is the first step in troubleshooting. (Image by rawpixel © 123RF.com.)* 
+            - [Size]();-[H2]()
+            - ## Question Users
+                - You will often need to contact users to establish more facts about the problem. The basis of getting troubleshooting information from users is asking good questions. Questions are commonly divided into two types:
+                    - Open questions invite someone to explain in their own words. Examples are: "What is the problem?" or "What happens when you try to switch the computer on?" Open questions are good to start with, as they help to avoid making your own assumptions about what is wrong, and they encourage the user to give you all the information they can.
+                    - Closed questions invite a Yes/No answer or a fixed response. Examples include: "Can you see any text on the screen?" or "What does the error message say?" Closed questions can be used to drill down into the nature of the problem and guide a user toward giving you information that is useful.
+                - [Size]();-[H2]()
+        - ## 1.4.3 Identify Problem Symptoms
+            - If you cannot identify the problem from user responses, there are additional techniques that you can use to diagnose the issue.
+            - ## Identify Symptoms and Duplicate the Problem
+                - [Size]();-[H2]()
+            - Symptoms are facts and clues in the affected system that can be correlated with known causes and issues. To identify symptoms, complete the following tests:
+                - Make a physical inspection; look for something out of the ordinary.
+                - Check system logs or diagnostic software for information.
+                - Duplicate the problem on the user's system or a test system. You will need to try to follow the same steps as the user. Issues that are transitory or difficult to reproduce are often the hardest to troubleshoot.
+            - ## Determine If Anything Has Changed
+                - [Size]();-[H2]()
+            - There are two key questions to ask when trying to identify the cause of a problem:
+                - Did it ever work? Hopefully, your users will answer the question truthfully, because the correct answer is important - two different approaches are required. If the system worked before 9:00 a.m., you must ask what happened at 9:00 a.m. If the system never worked, then you are not looking for something that stopped working, but for something which was never working in the first place.
+                - What has changed since it was last working? The change that caused the problem may not be obvious. Maybe the window cleaners were in the building, and one of them tripped over a cable and now the user can't log in. Maybe someone has moved the user's workstation from one end of their desk to another and plugged the cable into a different port. Check for documented changes using the system inventory, but if this does not reveal anything, look for undocumented changes in the local area of the incident.
+            - ## Approach Multiple Problems Individually
+                - [Size]();-[H2]()
+            - When you start to investigate symptoms, you might discover symptoms of more than one problem. Perhaps a user has reported that a machine has lost Internet connectivity, and you discover that it has also not been receiving maintenance updates. The issues could be related, or one might be incidental to the other.
+            - If the problems do not seem to be related, treat each issue as a separate case. If they seem to be related, check for outstanding support or maintenance tickets that might indicate existing problems.
+            - It may also be the case that a user reports two different problems at the same time, often preceded by "While you're on the line . . ." sort of statements. Treat each problem as a separate case. In most cases, you should advise the user to initiate a separate support ticket.
+            - [Size]();-[H2]()
+        - ## 1.4.4 Establish a Theory of Probable Cause
+            - If you obtain accurate answers to your initial questions, you will have determined the location, scope, and severity of the problem, and whether to look for a recent change or an oversight in configuration.
+            - You diagnose a problem by identifying the symptoms. From knowing what causes such symptoms, you can test each possible cause until you find the right one. Sometimes symptoms derive from more than one cause; while this type of problem is rarer, it is much harder to troubleshoot.
+            - A network system comprises many components. Fault finding needs to identify which component is causing the issue. For difficult problems, be prepared to consider multiple approaches. If one approach does not identify the problem, use a different one. For example, you could consider two different styles of approaching troubleshooting:
+                - Question the obvious. Step through what should happen and identify the point at which there is a failure or error. This approach can quickly identify obvious oversights, such as a network cable not being plugged in.
+                - Methodically prove the functionality of each component in sequence. This approach is more time consuming but may be necessary for a difficult problem.
+            - ## Top-to-Bottom/Bottom-to-Top OSI Model Approach
+                - [Size]();-[H2]()
+            - Methodical validation of network components can be approached by testing at each layer of the OSI model in sequence. There are many components which go to make up a network.
+            - ![](https://remnote-user-data.s3.amazonaws.com/oI8GdBIzCUuzW1OBgYgM2e74QoNcxZBOt1KOpUGYy0M5y0VMuil8hS5yRSwGDN0vSayqlQl0D__XD4IyRMEpakxz-1hxRt1qxVALrlaWxMIBIySz4QzuDzqOuO2OwbG1.png)
+            - [Size]();-[H2]()
+            - Description
+            - The seven layers from bottom to top are as follows. 1. Physical. 2. Data link. 3. Network. 4. Transport. 5. Session. 6. Presentation. 7. Application. The physical layer has transceiver, cable, media converter, and hub. The data link layer has network adapter, access point, M A C address or E U I, bridge, and switch. Network layer has I P address, basic firewall, and router. The session, presentation, and application layers have application protocols (web, email, file transfer), stateful or application layer security appliances, and multilayer switch. Above the layers, operating system and applications software are present. Above this, end users are present.
+            -  *Troubleshooting top-to-bottom or bottom-to-top using the OSI model.* 
+            - Some, or several, of these components may be at fault when a problem is reported to you. It is important that you tackle the problem logically and methodically. Unless a problem is trivial, break the troubleshooting process into compartments or categories, using the OSI model as a guide. Start from either the top or bottom and only move up or down when you have discounted a layer as the source of the problem. For example, when troubleshooting a client workstation, you might work as follows:
+                1. Decide whether the problem is hardware or software related (hardware).
+                2. Decide which hardware subsystem is affected (NIC or cable).
+                3. Decide whether the problem is in the NIC adapter or connectors and cabling (cabling).
+                4. Test your theory (replace the cable with a known good one).
+                - When you have drilled down like this, the problem should become obvious. Of course, you could have made the wrong choice at any point, so you must be prepared to go back and follow a different path.
+                - If you are really unlucky, two (or more) components may be faulty. Another difficulty lies in assessing whether a component itself is faulty or if it is not working because a related component is broken.
+                - ## Divide and Conquer Approach
+                    - [Size]();-[H2]()
+                - In a divide and conquer approach, rather than starting at the top or bottom, you start with the layer most likely to be causing the problem and then work either down or up depending on what your tests reveal. For example, if you start diagnosis at layer 3 and cannot identify a problem, you would then test at layer 4. Conversely, if you discovered a problem at layer 3, you would first test layer 2. If there is no problem at layer 2, you can return to layer 3 and work from there up.
+        - ## 1.4.5 Test the Theory to Determine the Cause
+            - By questioning the obvious or by using one or more methodical diagnostic approaches, hopefully you will have gathered enough data to come to an initial theory about the probable cause. Remember that you might be wrong! Without jumping to conclusions, set out to prove or disprove your suspicions by using your troubleshooting skills and toolkit.
+            - If you cannot prove the cause of the problem, you will either need to develop and test a new theory or decide to escalate the problem. **Escalation** means referring the problem to a senior technician, manager, or third party. You may need to escalate a problem for any of these reasons:
+                - The problem is beyond your knowledge or ability to troubleshoot.
+                - The problem falls under a system warranty and would be better dealt with by the supplier.
+                - The scope of the problem is very large and/or the solution requires some major reconfiguration of the network.
+                - A customer becomes difficult or abusive or demands help on an unsupported item.
+            - Some of the alternatives for escalation include the following:
+                - Senior staff, knowledge experts, subject matter experts, technical staff, developers, programmers, and administrators within your company.
+                - Suppliers and manufacturers.
+                - Other support contractors/consultants.
+            - When you escalate a problem, you should have established the basic facts, such as the scope of the problem and its likely cause, and be able to communicate these clearly to the person to whom you are referring the incident.
+            - If you can prove the cause of the problem, you can start to determine the next steps to resolve the problem.
+            - [Size]();-[H2]()
+        - ## 1.4.6 Establish a Plan of Action
+            - Assuming you choose not to escalate the issue, the next step in the troubleshooting process is to establish an action plan. An action plan sets out the steps you will take to solve the problem. There are typically three solutions to any problem:
+                - **Repair** - You need to determine whether the cost of repair/time taken to reconfigure something makes this the best option.
+                - **Replace** - Often, this is more expensive and may be time consuming if a part is not available. There may also be an opportunity to upgrade the device or software.
+            - A basic technique when you are troubleshooting a cable, connector, or device is to have a known good duplicate on hand (that is, another copy of the same cable or device that you know works) and to test by substitution.
+                - **Accept** - Not all problems are critical. If neither repair nor replace is cost-effective, it may be best either to find a workaround or to document the issue and move on.
+            - When you consider solutions, you must assess the cost and time required. Another consideration is potential effects on the rest of the system. A typical example is applying a software patch, which might fix a given problem but cause other programs not to work. Up-to-date configuration management documentation and standard operating procedures should help you to understand how different systems are interconnected and cause you to seek the proper authorization for your plan.
+            - [Size]();-[H2]()
+        - ## 1.4.7 Implement the Solution
+            - The solution to a problem might just involve resetting a system to its baseline configuration. Perhaps a user installed some unauthorized software, disabled a necessary service, or unplugged a cable. If you are reverting to a known good configuration, you may be able to implement the solution directly. If the solution requires a change to the system or the network environment, you are likely to have to follow a change management plan.
+            - If you do not have authorization to implement a solution, you will need to escalate the problem to more senior personnel. If applying the solution is disruptive to the wider network, you also need to consider the most appropriate time to schedule the reconfiguration work and plan how to notify other network users. When you change a system as part of implementing a solution, make sure you have a data and configuration backup before proceeding and test after each change. If the change does not fix the problem, reverse it and then try something else. If you make a series of changes without recording what you have done, you could turn a minor problem into a major one.
+            - Virtualization and the cloud provide the means to trial changes before updating the production environment. They allow the rapid creation of sandbox environments that simulate the production one.
+            - [Size]();-[H2]()
+        - ## 1.4.8 Verify the Solution
+            - When you apply a solution, validate that it fixes the reported problem and that the system as a whole continues to function normally. In other words, identify the results and effects of the solution. Ensure that you were right and that the problem is resolved. Can the user now log in properly? Is there any way you can induce the problem again?
+            - Before you can consider a problem closed, you should be satisfied in your own mind that you have resolved it, and you should get the customer's acceptance that it has been fixed. Restate what the problem was and how it was resolved, then confirm with the customer that the incident log can be closed.
+            - To fully solve a problem, you should try to eliminate any factors that may cause the problem to recur. For example, if a user plugs their laptop into the wrong network jack, ensure that the jacks are clearly labeled to help users in the future. If a faulty server induces hours of network downtime, consider implementing failover services to minimize the impact of the next incident.
+            - [Size]();-[H2]()
+        - ## 1.4.9 Document Findings, Actions, and Outcomes
+            - Most troubleshooting takes place within the context of a ticket system. This shows who is responsible for any given problem and what its status is. This gives you the opportunity to add a complete description of the problem and its solution, including findings, actions, and outcomes.
+            - This is very useful for future troubleshooting, as problems fitting into the same category can be reviewed to see if the same solution applies. It also helps to analyze IT infrastructure by gathering statistics on what type of problems occur and how frequently. Analyzing support incidents in a lessons learned process can be used to improve network design, adjust standard procedures, and guide investments in appliance and infrastructure upgrades.
+            - ![](https://remnote-user-data.s3.amazonaws.com/wdrtRREH4GWD9Tl6OWxisr6PQIX5jg1I2ZgoWQaJt83ll1mM2wf8sIdE6EqoZhm4RFJDWPeI1WgAiemJn6tDsZbLgJQmaZztPYko_nA0BRy1J8zrp9axJ1-nfQ3lx5ME.png)
+            - [Size]();-[H2]()
+            - Description
+            - The dialog box shows fields for contact, related to, summary, description, assigned to, C C users, due date, due time, priority, category, and attachment. Contact: James Pengelly. Assigned to: unassigned. Due date: tomorrow, Friday, next week. Due time: 5 P M, 18:00, etc. Priority: medium. Save and Cancel buttons are at the bottom.
+            -  *Creating a ticket in the Spiceworks IT Support management tool. (Screenshot courtesy of Spiceworks.)* 
+            - When you complete a problem log, remember that people other than you may come to rely on it. Also, logs may be presented to customers as proof of troubleshooting activity. Write clearly and concisely, checking for spelling and grammar errors.
+- 2.0 Supporting Cabling and Physical Installations 1.5 2.4 5.2 5.5 
+- 3.0 Configuring Interfaces and Switches 1.5 5.2 1.2 2.2 5.3 5.5 
+- 4.0 Configuring Network Addressing 1.4 1.7 5.5 1.8 5.3
+- 5.0 Configuring Routing and Advanced Switching 1.2 2.1 5.5 1.6 2.2 5.3
+- 6.0 Implementing Network Services 1.4 5.5 3.4 1.7 5.3
+- 7.0 Explaining Application Services 1.4 3.4 1.2 2.1 3.3
+- 8.0 Supporting Network Management 3.1 3.2 5.5 1.4 1.2 5.4
+- 9.0 Explaining Network Security Concepts 4.1 4.2 
+- 10.0 Applying Network Security Features 4.1 4.3 1.4 1.2 4.3 
+- 11.0 Supporting Network Security Design 4.3 4.1 
+- 12.0 Configuring Wireless Networks 1.5 2.3 1.2 3.1 4.1 4.2 5.4 5.5
+- 13.0 Comparing Remote Access Methods 1.2 1.4 3.5
+- 14.0 Summarizing Cloud Concepts 1.2 1.5 1.6 1.3  1.8
+- 

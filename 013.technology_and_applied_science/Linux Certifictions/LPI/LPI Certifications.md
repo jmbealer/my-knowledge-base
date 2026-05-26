@@ -1,0 +1,139 @@
+- [LPIC-1 - 101-500 and 102-500](../LPI/LPIC-1%20-%20101-500%20and%20102-500.md)
+- Linux Professional Institute (LPI) is committed to the development of a global standard in Linux and Open Source certification.
+- ## Essentials
+    - [Size]();-[H2]()
+    - The Essentials certificates were created for candidates who are starting a career in open source or who wish to demonstrate their abilities.
+    - Linux Professional Institute Linux Essentials exam tests the candidate’s ability to use a basic command-line editor and demonstrate an understanding of processes, programs and components of the Linux operating system.
+        - **Prerequisites:** There are no prerequisites for this certificate.
+        - **Requirements:** Passing the Linux Essentials 010 exam. The Linux Essentials exam contains 40 questions and must be completed within 60-minutes.
+        - **Languages:** English, French, German, Japanese, Portuguese (Brazilian), Spanish
+        - **Validity period:** Lifetime
+        - [Exam Objectives](https://www.lpi.org/our-certifications/exam-010-objectives)
+        - [Learning Materials](https://learning.lpi.org/en/learning-materials/010-160/)
+        - [Learn more](https://www.lpi.org/our-certifications/linux-essentials-overview/)
+        - [Cost by country](https://www.lpi.org/exam-pricing/)
+        - [Purchase voucher](https://us.lpimarketplace.com/shop/linux-essentials)
+    - IT security is absolutely crucial for individuals and organizations in today’s digital world. The Security Essentials exam covers preliminary knowledge in all important fields of IT security.
+        - **Prerequisites:** There are no prerequisites for this certification.
+        - **Requirements:** Passing the Security Essentials 020 exam. The Security Essentials exam contains 40 questions and must be completed within 60-minutes.
+        - **Languages:** English, Japanese
+        - **Validity period:** Lifetime
+        - [Exam Objectives](https://www.lpi.org/our-certifications/exam-020-objectives)
+        - [Learning Materials](https://learning.lpi.org/en/learning-materials/020-100/)
+        - [Learn more](https://www.lpi.org/our-certifications/security-essentials-overview/)
+        - [Cost by country](https://www.lpi.org/exam-pricing/)
+        - [Purchase voucher](https://us.lpimarketplace.com/)
+- ![](https://remnote-user-data.s3.amazonaws.com/LojvZK6PRsLiMFMX8qarg7Je-V5HS4A41wsr1ymrjQjF92nG-mckb-aSZsEwpKb5h-iIamfKlaeCChKI3ucgTQW7eCcox4fIWn7ZGVxa4qJ-kQcuX14Mk3Yi5w7SPZqp.jpeg)
+- Modern software applications are commonly developed for the Web. The Linux Professional Institute (LPI) Web Development Essentials program supports your first steps in software development.
+    - **Prerequisites:** There are no prerequisites for this certification.
+    - **Requirements:** Passing the Web Development Essentials 030 exam. The Web Development Essentials exam contains 40 questions and must be completed within 60-minutes.
+    - **Languages:** English, Japanese
+    - **Validity period:** Lifetime
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-030-objectives)
+    - [Learning Materials](https://learning.lpi.org/en/learning-materials/030-100/)
+    - [Learn more](https://www.lpi.org/our-certifications/web-development-essentials-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/)
+- ![](https://remnote-user-data.s3.amazonaws.com/Zl3jNm3j0e1Bu6RXffdB9Dvvysj6g0Z_4j_UXVc7v7oygEi6PL01BLFW_TCbjUujlzgtr-zxKonEba2bK_lpdty7qw175ibF1YaeTyHQj8g6l_yPbnGGetZ4s81qddyg.jpeg)
+- The Linux Professional Institute (LPI) Open Source Essentials program covers the common knowledge that anyone who is professionally involved with open source should have.
+    - **Prerequisites:** There are no prerequisites for this certification.
+    - **Requirements:** Passing the Web Development Essentials 050 exam. The Open Source Essentials exam contains 40 questions and must be completed within 60-minutes.
+    - **Languages:** English
+    - **Validity period:** Lifetime
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-050-objectives/)
+    - [Learning Materials](https://learning.lpi.org/en/learning-materials/050-100/)
+    - [Learn more](https://www.lpi.org/our-certifications/open-source-essentials/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://global1.lpimarketplace.com/shop/open-source-essentials)
+- ## Linux Professional
+    - [Size]();-[H2]()
+- Linux Professional Institute‘s Linux Professional Track is designed to evaluate the knowledge and skills of Linux systems administrators. To keep pace with evolving technology, the exam objectives are updated on average every three years and Linux Professional Institute certifications are valid for five years before you must recertify or certify at a higher level.
+- Although the exams may be taken in any order, lower level certifications must be achieved before higher-level certifications can be awarded.
+- ![](https://remnote-user-data.s3.amazonaws.com/s3waBUhGfeDM-nYEg3Ow4tUSVPxnnUGFQIlwDtvXSRN9q4UADeTTyGKnl_r52TN9iMfozrpCo67o9lcjP6JTqas6pvkusZ73-DWyCRzZJgGSjmMj4Csij4RwebwvYkNt.png)
+- Linux Professional Institute LPIC-1 tests ability to perform maintenance tasks with the command line, install and configure a computer running Linux and be able to configure basic networking.
+    - **Prerequisites:** There are no prerequisites for this certification.
+    - **Requirements:** Passing the 101 and 102 exams. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+    - **Languages:** English, German, Japanese, Portuguese (Brazilian), Chinese (Simplified), Chinese (Traditional), Spanish (Modern)
+    - **Validity period:** 5 years unless retaken or higher level is achieved.
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-101-102-objectives/)
+    - [Learning Materials](https://learning.lpi.org/en/learning-materials/101-500/)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-1-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/shop/lpic-1)
+- ![](https://remnote-user-data.s3.amazonaws.com/sNIPsz8UDZNmLFFeK0dthXBJq-JquFqrNjpXpmiZinombJP3YesD2KAzwPsx3h-FWrMRRnwxokINdUQPk_6bEbl7N_HsWulXO9A5wpC6bdFP00N3nQ07QQYTeDbr3_sM.png)
+- Linux Professional Institute LPIC-2 tests ability to administer small to medium–sized mixed networks.
+    - **Prerequisites:** An active LPIC-1 certification.
+    - **Requirements:** Passing exams 201 and 202. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+    - **Languages:** English, German, Japanese, Portuguese (Brazilian)
+    - **Validity period:** 5​ years unless retaken or higher level is achieved.
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-201-202-objectives/)
+    - [Learning Materials](https://learning.lpi.org/en/learning-materials/all-materials/)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-2-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/shop/lpic-2)
+- ![](https://remnote-user-data.s3.amazonaws.com/0asfa7igm3CxxjV6mQgtqHPuBSfrY7m94CyLXzQjx4jwiO3yFwjPA29pTW-PIhd_ZlK5EZ47G5gRR549HPC9pYVSsybo_1ulwSomduJvGgHDKrBYnCjFqgw9Teqlk8o6.jpeg)
+- Linux Professional Institute LPIC-3 Mixed Environments tests ability to integrate Linux services in an enterprise-wide mixed environment.
+    - **Prerequisites:** An active LPIC-2 certification.
+    - **Requirements:** Passing the 300 exam. The 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+    - **Languages:** English, Japanese
+    - **Validity period:** 5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-300-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-3-300-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-300-voucher/p/LPI-300)
+- ![](https://remnote-user-data.s3.amazonaws.com/62EP7FL8Gk58t68lUttPym8AP34rfewITQzR9n_l35qF7rJDCBum6OXTY4qdx7itb9mMYylbKNAfcCBP5rOf-f1JtVaHQ-_MY-pucU7zFzZnl4d-7YtLMN1vaJ1h3YXI.jpeg)
+- Linux Professional Institute LPIC-3 Security tests ability to secure and harden Linux-based servers, services and networks enterprise-wide.
+    - **Prerequisites: **An active LPIC-2 certification.
+    - **Requirements:** Passing the 303 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+    - **Languages:** English, Japanese
+    - **Validity period:** 5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-303-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-3-303-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-303-voucher/p/LPI-303)
+- ![](https://remnote-user-data.s3.amazonaws.com/cF3J2Uw-Ys5RelNbzx97U55jcySRoIBchqGrLGZcXSSHI9MuyTaI_9nRCzvcukzmKMOGFGmLSgCT0iksv52Lw7Za8wYAKXrcokww4AyGiKvFQjKUVkl3LMGk6Z00s-XT.jpeg)
+- Linux Professional Institute LPIC-3 Virtualization and Containerization covers the administration of Linux systems enterprise-wide with an emphasis on Virtualization & Containerization.
+    - **Prerequisites:** An active LPIC-2 certification.
+    - **Requirements:** Passing the 305 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+    - **Languages:** English, Japanese
+    - **Validity period: **5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-305-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-3-305-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-305-voucher/p/LPI-305)
+- ![](https://remnote-user-data.s3.amazonaws.com/zt72PQAsPgndMcIIGhLAt__8sFXFFAgyGWlsjsq_6-v1-uLwOcU8Qm3MdHLDBVff-AUnfb1aKn56S1ffEUR8RQUL9xS0-GMmrvbybSoaEukAC14gbEA0gsoEjJsav1Y6.jpeg)
+- Linux Professional Institute LPIC-3 High Availability and Storage Clusters covers the administration of Linux systems enterprise-wide with an emphasis on high availability systems and storage.
+    - **Prerequisites:** An active LPIC-2 certification.
+    - **Requirements:** Passing the 306 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+    - **Languages:** English, Japanese
+    - **Validity period: **5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-306-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/lpic-3-306-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-306-voucher/p/LPI-306)
+- ## Open Technology
+    - [Size]();-[H2]()
+- The Open Technology professional certifications are designed to evaluate the knowledge and skills of open technology tools, such as DevOps tools and BSD Specialist. To keep pace with evolving technologies, open technology track exam objectives are updated on average every three years and certifications are valid for five years before you must recertify or certify at a higher level.
+- For Open Technology certifications, single exam is awarded with certification, and there are no prerequisites for the exams.
+- ![](https://remnote-user-data.s3.amazonaws.com/tlESmd42KXsc-WGjYLmcUJk4vQvh-uZ47aZyBJoZaDG9JHBdaEnWjx-Fj0b_ScC5Yj6R45LnDxbRnRUtwQTCba7SfHqSLfP-pb6XX-sRjzTTwS0viXSPxPSW8Y6S0taY.png)
+- Certified DevOps Tools Engineer should have a working knowledge of DevOps-related domains such as Software Engineering and Architecture, Container and Machine Deployment, Configuration Management and Monitoring.
+    - **Prerequisites:** There are no prerequisites for this certification. However, an additional certification in the candidate’s primary area of expertise, such as LPIC-1 or a developer certification, is strongly recommended.
+    - **Requirements: **Passing the 701 exam. The 90 minute exam is 60 multiple choice and fill-in-the-blank questions.
+    - **Languages:** English, Japanese
+    - **Validity period: **5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-701-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/devops-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+    - [Purchase voucher](https://us.lpimarketplace.com/p/701-100)
+- ![](https://remnote-user-data.s3.amazonaws.com/gS36t1H3eIwsCf0GrI0euQeTu_drdE2Tfk2VF6UY1FFV4ph-vyTFWxcRqosQJO8yy3nNIGHFE1IYdbucVhdq7uSB7V61Afq1WeVpVRMHXtbSEEZcu28OMpzrr2Ddt-Q1.png)
+- The BSD Specialist certificate requires passing a single exam. This exam tests skills in administering FreeBSD, NetBSD, and OpenBSD systems. Covering the three major BSD systems ensures that the certification holder is comfortable working in BSD-based environments of any kind.
+    - **Prerequisites: **There are no prerequisites for this certification. However, it is strongly recommended that a candidate has more than a year of experience in administering BSD systems of various kinds.
+    - **Requirements: **Passing the 702 exam. The 90 minute exam is 60 multiple choice and fill-in-the-blank questions.
+    - **Language:** English
+    - **Validity period:** 5 years
+    - [Exam Objectives](https://www.lpi.org/our-certifications/exam-702-objectives)
+    - [Learn more](https://www.lpi.org/our-certifications/bsd-overview/)
+    - [Cost by country](https://www.lpi.org/exam-pricing/)
+- --------------------- Portal ---------------------query:[LPI Certifications](LPI%20Certifications.md)
+    - --------------------- Portal ---------------------
+        - Linux Certifictions #linux

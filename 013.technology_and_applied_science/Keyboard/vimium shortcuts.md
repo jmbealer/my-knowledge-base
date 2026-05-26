@@ -1,0 +1,68 @@
+- "Description","Keys","Context","Category","Conf.","Actions"
+- Navigating the page
+    - {{Scroll down}},{{j or ctrl+e}}
+    - {{Scroll up}},{{k or ctrl+y}}
+    - {{Scroll to the top of the page}},{{gg}}
+    - {{Scroll to the bottom of the page}},{{shift+g}}
+    - {{Scroll a half page down}},{{d}}
+    - {{Scroll a half page up}},{{u}}
+    - {{Scroll left}},{{h}}
+    - {{Scroll right}},{{l}}
+    - {{Scroll all the way to the left}},{{zH}}
+    - {{Scroll all the way to the right}},{{zL}}
+    - {{Reload the page}},{{r}}
+    - {{Copy the current URL to the clipboard}},{{yy}}
+    - {{Open the clipboard's URL in the current tab}},{{p}}
+    - {{Open the clipboard's URL in a new tab}},{{shift+p}}
+    - {{Go up the URL hierarchy}},{{gu}}
+    - {{Go to root of current URL hierarchy}},{{gU}}
+    - {{Enter insert mode}},{{i}}
+    - {{Enter visual mode}},{{v}}
+    - {{Enter visual line mode}},{{shift+v}}
+    - {{Focus the first text input on the page}},{{gi}}
+    - {{Open a link in the current tab}},{{f}}
+    - {{Open a link in a new tab}},{{shift+f}}
+    - {{Open multiple links in a new tab}},{{alt+f}}
+    - {{Copy a link URL to the clipboard}},{{yf}}
+    - {{Follow the link labeled previous or <}},{{[[}}
+    - {{Follow the link labeled next or >}},{{]]}}
+    - {{Select the next frame on the page}},{{gf}}
+    - {{Select the page's main/top frame}},{{gF}}
+    - {{Create a new mark}},{{m}}
+    - {{Go to a mark}},{{`}}
+- Using the vomnibar
+    - {{Open URL, bookmark or history entry}},{{o}}
+    - {{Open URL, bookmark or history entry in a new tab}},{{shift+o}}
+    - {{Open a bookmark}},{{b}}
+    - {{Open a bookmark in a new tab}},{{shift+b}}
+    - {{Search through your open tabs}},{{shift+t}}
+    - {{Edit the current URL}},{{ge}}
+    - {{Edit the current URL and open in a new tab}},{{gE}}
+- Using find
+    - {{Enter find mode}},{{/}}
+    - {{Cycle forward to the next find match}},{{n}}
+    - {{Cycle backward to the previous find match}},{{shift+n}}
+- Navigating history
+    - {{Go back in history}},{{shift+h}}
+    - {{Go forward in history}},{{shift+l}}
+- Manipulating tabs
+    - {{Create new tab}},{{t}}
+    - {{Go one tab left}},{{shift+j}}
+    - {{Go one tab right}},{{k}}
+    - {{Go to previously-visited tab}},{{^}}
+    - {{Go to the first tab}},{{g0}}
+    - {{Go to the last tab}},{{g$}}
+    - {{Duplicate current tab}},{{yt}}
+    - {{Pin or unpin current tab}},{{alt+p}}
+    - {{Mute or unmute current tab}},{{alt+m}}
+    - {{Close current tab}},{{x}}
+    - {{Restore closed tab}},{{shift+x}}
+    - {{Move tab to new window}},{{shift+w}}
+    - {{Move tab to the left}},→
+    - {{Move tab to the right}},
+    - "Move tab to the left","""←"""
+    - "Move tab to the right","""→"""
+- Miscellaneous
+    - {{Show help}},{{?}}
+    - {{View page source}},{{gs}}
+    - 

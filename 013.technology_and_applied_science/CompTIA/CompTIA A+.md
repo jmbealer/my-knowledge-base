@@ -1,0 +1,7893 @@
+- CompTIA  A+ 220-1101 (Core 1) Exam Objectives (Domains):
+    - Covers mobile devices, networking technology, hardware, virtualization and cloud computing.
+    - 1.0 Mobile Devices 15%
+        - what are mobile device?
+            - a piece of portable electronic equipment that can connect to the internet, especially a smartphone or tablet computer.
+        - what is the first domain for A+ core?
+            - mobile devices
+        - 1.1 Given a scenario, install and configure laptop hardware and components.
+            - Hardware/device replacement
+                - Battery
+                - Keyboard/keys
+                - Random-access memory (RAM)
+                - Hard disk drive (HDD)/solid-state drive (SSD) migration
+                - HDD/SSD replacement
+                - Wireless cards
+            - Physical privacy and security components
+                - Biometrics
+                - Near-field scanner features
+            - Security Components !
+                - o Biometric Sensor
+                    - Allows users to create a template of a feature of the laptop’s body (fingerprint, facial scan, or voice recognition)
+                - o Near-Field Communication Scanner (NFC scanner)
+                    - Used to pair peripheral devices to a smartphone or tablet
+                - o Kensington Lock (K-Slot/ Kensington Security Slot)
+                    - Small port on the side of a laptop that able to connect a metal braided cable to lock
+            - Replacing the Keyboard !
+                - o Entire keyboard
+                - o Particular key
+                - o Touch pad
+                - o When replacing the keyboard or touch pad, use one from the manufacturer
+        - 1.2 Compare and contrast the display components of mobile devices.
+            - Types
+                - Liquid crystal display (LCD)
+                    - Don’t produce light
+                    - Uses a backlight
+                        - Cold cathode Fluorescent Lamp (CCFL)
+                        - Can use Streps of LED Lights
+                    - In-plane switching (IPS)
+                        - Great Color
+                        - Good Viewing Angles
+                        - Little lag
+                    - Twisted nematic (TN)
+                        - Very old
+                        - Good repones Time 
+                        - Very little lag, high refresh rate, 240 Hz
+                        - Bad Color
+                    - Vertical alignment (VA)
+                        - Great color
+                        - Okay response
+                - Organic light-emitting diode (OLED)
+                    - Light-emitting compound
+                    - There is no need for a backlight,
+                    - Contrast ratio of OLED displays exceeds that of LCD panels
+                    - OLED are the highest-quality
+                    - OLED is found in smaller devices such as smartphones
+            - Mobile display components
+            - WiFi antenna connector/placement
+            - Camera/webcam
+            - Microphone
+            - Touch screen/digitizer
+                - A device that can be written and the
+                - content will be converted from
+                - analog input to digital images on the
+                - computer.
+            - Inverter
+                - Converts DC to AC for the backlight
+                - If there is problems with flickering or dimness it might be the inverter
+            - Mobile Devices !
+                - o Mobile Device
+                    - Any device that makes it portable and easy to use
+            - Mobile Display Types !
+                - o Capacitive Touch Screen
+                - ▪
+                - Any touchscreen that works by seeing the distortion in an electrostatic
+                - field
+                - ▪
+                - A single tactile input is one touch at a time
+                - o Multi-Touch Screen
+                - ▪
+                - Can process two or more contact points simultaneously
+                - o Liquid-Crystal Display (LCD)
+                - ▪
+                - Uses liquid crystal where the properties can change with the application
+                - of voltage
+                - o Pixel (Picture Element)
+                - ▪
+                - Individual point on a screen inside of a display
+                - ▪
+                - A thin-film transistor (TFT) is referred to as an LCD panel
+                - o Twisted Nematic (TN)
+                - ▪
+                - Contains crystals that twist or untwist in response to the voltage being
+                - applied or removed
+                - ▪
+                - TN supports fast response time in comparison to other TFT technologies
+                - and displays
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 98 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o In-Plane Switching (IPS)
+                - ▪
+                - Uses crystals that rotate to be able to deliver color
+                - ▪
+                - IPS panels can support 178° horizontal and vertical viewing angles
+                - o Vertical Alignment (VA)
+                - ▪
+                - Crystals are tilted to be able to deliver color
+                - ▪
+                - A VA display has a contrast ratio of two to three times better than a
+                - standard IPS display
+                - o Cold Cathode Fluorescent Lamp (CCFL)
+                - ▪
+                - Lamp that sits behind the display and lights up the liquid crystal display to
+                - show the colors and images properly on the screen
+                - ▪
+                - CCFL requires AC voltage
+                - o Light-Emitting Diode (LED)
+                - ▪
+                - Newer form of light that uses direct current (DC)
+                - ▪
+                - The use of LEDs uses less power, leading to longer battery life and better
+                - performance
+                - o Organic LED (OLED)
+                - ▪
+                - Each pixel has its own separate LED that provides the light
+                - ▪
+                - OLEDs can be made from plastic
+                - ▪
+                - OLEDs can be folded, rolled up, or manipulated to create different shapes
+                - and sizes of displays
+            - Mobile Device Components !
+                - o Digitizer
+                - ▪
+                - Layer sandwiched between a layer of protective glass and the display
+                - panel inside of a touchscreen display
+                - ▪
+                - Haptic feedback provides a form of touch responsiveness from the
+                - display back to the end-user
+                - o Accelerometer
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 99 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Combination device that uses hardware and software to measure the
+                - velocity, rotation, and shaking of a mobile device
+                - ▪
+                - The accelerometer works when dealing with the X (horizontal) and Y
+                - (vertical) axis
+                - o Gyroscope
+                - ▪
+                - An improved version of the basic accelerometer
+                - Detects pitch (Y), roll (X), and yaw (Z)
+                - Performs actions
+                - Stabilizes images
+        - 1.3 Given a scenario, set up and configure accessories and ports of mobile devices.
+            - Connection methods
+                - Universal Serial Bus (USB)/USB-C/microUSB/miniUSB
+                - Lightning
+                - Serial interfaces
+                - Near-field communication (NFC)
+                - Bluetooth
+                - Hotspot
+            - Accessories
+                - Touch pens
+                - Headsets
+                - Speakers
+                - Webcam
+            - Mobile Device Accessories !
+                - o Track Pad
+                - ▪
+                - Device that can be used to manipulate the cursor on the screen
+                - o Drawing Pad
+                - ▪
+                - Large format touch device attached as a peripheral to a laptop,
+                - smartphone, or tablet
+                - ▪
+                - A drawing pad uses a touch pen
+                - o Microphone
+                - ▪
+                - Any device used to record audio or capture voice when making a phone
+                - call
+                - o Speaker
+                - ▪
+                - Allows to hear things that are coming out from devices, such as music or
+                - videos
+                - o Headset
+                - ▪
+                - Combines both the microphone and speaker into one device
+                - o Digital Camera
+                - ▪
+                - Provides the ability to capture a live image in a still format
+            - Docking station
+            - Port replicator
+            - Port Replicators & Docking Stations !
+                - o Port Replicator
+                - ▪
+                - Uses the exact same features as a laptop
+                - ▪
+                - Port replicator makes life easier by providing easier access to all the ports
+                - o Docking Station
+                - ▪
+                - Advanced type of port replicator that provides all the capabilities and
+                - features of a laptop
+                - Port Replicator
+                - o Port mirror
+                - Docking Station
+                - o Additional ports
+            - Trackpad/drawing pad
+        - 1.4 Given a scenario, configure basic mobile-device network connectivity and application support.
+            - Wireless/cellular data network (enable/disable)
+                - 2G/3G/4G/5G
+                - Hotspot
+                - Global System for Mobile Communications (GSM) vs. code-division multiple access (CDMA)
+                - Preferred Roaming List (PRL) updates
+            - Mobile Device Wireless Connectivity !
+                - o Wi-Fi (Wireless Network)
+                - ▪
+                - Comes in different types of Wi-Fi, including wireless a, b, g, n, ac, and ax
+                - ▪
+                - Wireless connectivity on smaller devices is slower than it is on larger
+                - devices
+                - ▪
+                - Larger antennas pick up signals with more strength and faster speeds
+                - o Cellular
+                - ▪
+                - Network that allows to connect to the Internet using cellular radio inside
+                - the handset and connect to a network service provider
+                - o Global System for Mobile Communication (GSM)
+                - ▪
+                - Cellular technology that takes the voice during a call and converts it into a
+                - digital format
+                - o Code-Division Multiple Access (CDMA)
+                - ▪
+                - Cellular technology that uses code division to split up the channel
+                - ▪
+                - CDMA is a more powerful and flexible technology than GSM
+                - W-CDMA
+                - o Wideband CDMA
+                - UMTS
+                - o Universal Mobile Telecommunications System
+                - ▪
+                - An electronic SIM is a cheaper way of getting a data service when
+                - overseas
+                - o Preferred Roaming List (PRL)
+                - ▪
+                - Contains all the information about different cellular towers
+                - ▪
+                - Restrictions vary from model to model and depends on the device’s
+                - country of origin
+                - o Bluetooth
+                - ▪
+                - Used as a short-range point-to-point network connection between a
+                - mobile device and an accessory
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 101 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Near-Field Communication (NFC)
+                - ▪
+                - Allows a device to receive and send information in the NFC format
+                - ▪
+                - The pairing process can be done automatically by using NFC connection
+            - Mobile Device Wired Connectivity !
+                - o Lightning Cable
+                - ▪
+                - Proprietary cable that is only used by Apple devices
+                - o USB-C
+                - ▪
+                - Modern version of USB that operates at USB 3.0 speeds and can provide
+                - data
+                - o DB9 Cable
+                - ▪
+                - D-shaped connector with 9 pins that is used to connect external serial
+                - devices like modems
+                - o Universal Asynchronous Receiver-Transmitter (UART)
+                - ▪
+                - Device that allows to connect to a device and get information from it
+            - Bluetooth
+                - Enable Bluetooth
+                - Enable pairing
+                - Find a device for pairing
+                - Enter the appropriate PIN code
+                - Test connectivity
+            - Location services
+                - Global Positioning System (GPS) services
+                - Cellular location services
+            - Mobile device management (MDM)/mobile application management (MAM)
+                - Corporate email configuration
+                - Two-factor authentication
+                - Corporate applications
+            - Mobile device synchronization
+                - Account setup
+                    - Microsoft 365
+                    - Google Workspace
+                    - iCloud
+                - Data to synchronize
+                    - Mail
+                    - Photos
+                    - Calendar
+                    - Contacts
+                    - Recognizing data caps
+            - Mobile Applications !
+                - o Mobile Applications
+                    - Used to provide different features and functionality to a mobile device
+            - Mobile Device Synchronization !
+                - o Android
+                - ▪
+                - Offers an open-source code base
+                - o iOS
+                - ▪
+                - Developed by Apple for use on iPhones and iPads
+                - ▪
+                - iOS relies on closed-source code
+                - o Open-Source
+                - ▪
+                - The software and the original source code are available to download,
+                - modify, and redistribute
+                - ▪
+                - Android OS has a lower cost of services by using an open-source platform
+                - as a code base
+                - o Closed-Source Software
+                - ▪
+                - Proprietary software that is licensed under the exclusive legal rights of
+                - the copyright holder
+                - Open-Source Software
+                - o Creativity and change
+                - Closed-Source Software
+                - o Change is not allowed
+                - o App Store
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 103 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Application on an iOS device to access a store to purchase and download
+                - applications
+                - iOS Application
+                - o Swift and Xcode
+                - Android Application
+                - o Java and Android Studio
+                - o Microsoft 365
+                - ▪
+                - Provides the ability to have office productivity software and a large
+                - amount of storage space in the cloud (OneDrive)
+            - Data for Synchronization !
+                - o Mobile Device Synchronization/Sync
+                - ▪
+                - Act of copying data back and forth between different devices
+                - o Contact
+                - ▪
+                - Record inside of an address book that contains fields of names,
+                - addresses, emails, phone numbers, notes, etc.
+                - o vCard
+                - ▪
+                - Standard format and is widely supported by most address books and
+                - software applications
+                - o Calendar Information
+                - ▪
+                - Any record with fields for appointments or tasks with their corresponding
+                - subject, date, location, and attendees
+                - ▪
+                - Cloud-based service is easier and more synchronized
+                - o POP3
+                - ▪
+                - Oldest format and does not support the synchronization across devices
+                - o IMAP and Exchange can manage the state of an email
+                - o When buying an application, consider what apps are supported on which devices
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 104 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Third-party password managers provide the ability to generate strong, random
+                - passwords when signing up for a new account
+            - Synchronization Methods !
+                - o Synchronization to the Cloud
+                    - Provides the access to the cloud from all devices and becomes the central repository of all data
+                    - Encrypted data that is stored in the cloud is relatively safe
+                    - Synchronization to the cloud requires a large amount of data
+                - o Synchronization to the Computer
+                    - Synchronizes directly to the desktop or laptop using a USB or Bluetooth connection
+                    - Install the iTunes app on the Windows PC to transfer the data from the iPhone
+                - o Synchronization with the automobile
+            - MDM and MAM !
+                - o Enterprise Mobility Management (EMM)
+                - ▪
+                - Class of software designed to apply security policies for use on mobile
+                - devices
+                - o Mobile Device Management (MDM)
+                - ▪
+                - Sets device-level policies for authentication, feature use, and conductivity
+                - ▪
+                - MDM is a type of software that allows to control the device
+                - o Mobile Application Management (MAM)
+                - ▪
+                - Sets forth policies for apps that can process corporate data and prevent
+                - data transfer to personal apps
+                - o Sandbox Solution
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 105 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Configures an enterprise-managed container or workspace where the
+                - company’s data is stored
+                - o Data Loss Prevention (DLP)
+                - ▪
+                - Detects when data is being taken from a device, ensuring it’s only being
+                - used in the proper way
+                - o Apple Business Manager (ABM)
+                - ▪
+                - MAM suite that allows applications from a private repository to devices
+                - that are part of the corporate network
+                - o Managed Google Play
+                - ▪
+                - Managed version of the Google Play store that contains apps that are
+                - distributed to employees’ devices
+            - Multifactor Authentication (MFA) !
+                - o Knowledge Factor
+                - ▪
+                - Simplest form of authentication and refers to something you know
+                - o Possession Factor
+                - ▪
+                - Refers to something you have
+                - o Inherence Factor
+                - ▪
+                - Refers to something you are
+                - o Behavior Factor
+                - ▪
+                - Refers as something you do
+                - ▪
+                - Voice recognition systems are not looking at what is said, but at how it is
+                - said
+                - o Location Factor
+                - ▪
+                - Refers to somewhere you are
+                - o Authenticator
+                - ▪
+                - Application that serves as a possession factor inside of a mobile device
+                - o Multi-factor authentication has two or more factors
+            - Location Services !
+                - o Course Positioning
+                - ▪
+                - Oldest method of positioning using mobile phones
+                - o Global Positioning System (GPS)
+                - ▪
+                - Space-based radio navigation system, consisting of satellites and
+                - networks of ground stations
+                - o Indoor Positioning System (IPS)
+                - ▪
+                - Allows a device to be used indoors to figure out the location
+                - o Change the location service as a privacy aspect
+                - o Geo-Tracking
+                - ▪
+                - Tracking of a location for a given amount of time
+                - ▪
+                - Disable GPS and IPS to block geo-tracking
+                - ▪
+                - Geotagging is the GPS coordinates inside photos
+            - Corporate Email Configuration !
+                - o Configure SSL or TLS when connecting to the email servers
+                - o POP3/IMAP
+                - Receiving email/Inbound mail
+                - o STMP
+                - Sending/Outbound mail
+                - Major providers like Gmail, Outlook, or Yahoo use auto configuration
+                - Small or medium-sized businesses use their own institutional email server
+                - o Transport Layer Security (TLS)
+                - New and advanced secure version of encryption
+        - What is a laptop
+            - A laptop is a portable computer with a built-­ in display that folds on top of the base unit. 
+        - What is the difference between laptop and desktop components?
+            - a laptop has the same categories of components but in a smaller form factor for portability.
+    - 2.0 Networking 20%
+        1. the linking of computers to allow them to operate interactively.
+        - 2.1 Compare and contrast Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) ports, protocols, and their purposes.
+            - Ports and protocols
+                - 20/21 – File Transfer Protocol (FTP)
+                - 22 – Secure Shell (SSH)
+                - 23 – Telnet
+                - 25 – Simple Mail Transfer Protocol (SMTP)
+                - 53 – Domain Name System (DNS)
+                - 67/68 – Dynamic Host Configuration Protocol (DHCP)
+                - 80 – Hypertext Transfer Protocol (HTTP)
+                - 110 – Post Office Protocol 3 (POP3)
+                - 137/139 – Network Basic Input/Output System (NetBIOS)/NetBIOS over TCP/IP (NetBT)
+                - 143 – Internet Mail Access Protocol (IMAP)
+                - 161/162 – Simple Network Management Protocol (SNMP)
+                - 389 – Lightweight Directory Access Protocol (LDAP)
+                - 443 – Hypertext Transfer Protocol Secure (HTTPS)
+                - 445 – Server Message Block (SMB)/Common Internet File System (CIFS)
+                - 3389 – Remote Desktop Protocol (RDP)
+            - Ports and Protocols !
+                - o Port
+                - ▪
+                - Logical communication endpoint that exists on a computer or server
+                - o Inbound Port
+                - ▪
+                - Logical communication opening on a server that is listening for a
+                - connection from a client
+                - o Outbound Port
+                - ▪
+                - Logical communication opening created on a client to call out to a server
+                - that is listening for a connection
+                - o Ports can be any number between 0 and 65,535
+                - o Well-Known Ports
+                - ▪
+                - Ports 0 to 1023 are considered well-known and are assigned by the
+                - Internet Assigned Numbers Authority (IANA)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 81 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Registered Ports
+                - ▪
+                - Ports 1024 to 49151 are considered registered and are usually assigned
+                - to proprietary protocols
+                - o Dynamic or Private Ports
+                - ▪
+                - Ports 49152 to 65535 can be used by any application without being
+                - registered with IANA
+                - ▪
+                - Dynamic or Private Ports are commonly used for gaming, instant
+                - messaging, and chat
+                - File Transfer Protocol (FTP)
+                - o Ports 20, 21
+                - o Provides insecure file transfers
+                - Secure Shell (SSH)
+                - o Port 22
+                - o Provides secure remote control of another machine using
+                - a text-based environment
+                - Secure File Transfer Protocol (SFTP)
+                - o Port 22
+                - o Provides secure file transfers
+                - Telnet
+                - o Port 23
+                - o Provides insecure remote control of another machine
+                - using a text-based environment
+                - Simple Mail Transfer Protocol (SMTP)
+                - o Port 25
+                - o Provides the ability to send emails over the network
+                - Domain Name Service (DNS)
+                - o Port 53
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 82 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Converts domain names to IP addresses, and IP address
+                - to domain names
+                - Dynamic Host Control Protocol (DHCP)
+                - o Ports 67, 68
+                - o Automatically provides network parameters such as
+                - assigned IP address, subnet mask, default gateway, and
+                - the DNS server
+                - Hypertext Transfer Protocol (HTTP)
+                - o Port 80
+                - o Used for insecure web browsing
+                - Post Office Protocol Version Three (POP3)
+                - o Port 110
+                - o Used for receiving incoming emails
+                - Network Basic Input/Output System (NetBIOS)
+                - o Ports 137, 139
+                - o Used for file or printer sharing in a Windows network
+                - Internet Mail Application Protocol (IMAP)
+                - o Port 143
+                - o A newer method of retrieving incoming emails which
+                - improves upon the older POP3
+                - Simple Network Management Protocol (SNMP)
+                - o Ports 161, 162
+                - o Used to collect data about network devices and monitor
+                - their status
+                - Lightweight Directory Access Protocol (LDAP)
+                - o Port 389
+                - o Used to provide directory services to your network
+                - Hypertext Transfer Protocol – Secure (HTTPS)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 83 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Port 443
+                - o Used as a secure and encrypted version of web browsing
+                - ▪
+                - SSL (Secure Socket Layer)
+                - ▪
+                - TLS (Transport Layer Security)
+                - Server Message Block (SMB)
+                - o Port 445
+                - o Used for Windows file and printer sharing services
+                - Remote Desktop Protocol (RDP)
+                - o Port 3389
+                - o Provides graphical remote control of another client or
+                - server
+                - o RDP provides a full graphical user interface
+            - TCP vs. UDP
+                - Connectionless
+                    - DHCP
+                    - Trivial File Transfer Protocol (TFTP)
+                - Connection-oriented
+                    - HTTPS
+                    - SSH
+            - TCP Versus UDP !
+                - o Transmission Control Protocol (TCP)
+                - ▪
+                - Connection-oriented protocol, which means it’s a reliable way to
+                - transport segments across the network
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 84 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o User Datagram Protocol (UDP)
+                - ▪
+                - Unreliable and it transmits segments called data grams
+                - TCP (Connection-Oriented)
+                - o SSH, HTTP or HTTPS
+                - UDP (Connectionless)
+                - o Audio, video streaming, DHCP, and TFTP
+                - ▪
+                - Dynamic Host Control Protocol (DHCP)
+                - Ports 67, 68
+                - Automatically provides network parameters
+                - such as assigned IP address, subnet mask,
+                - default gateway, and the DNS server
+                - ▪
+                - Trivial File Transfer Protocol (TFTP)
+                - Ports 69
+                - a connectionless protocol that uses UDP as
+                - its transport
+            - Network Configurations !
+                - o Link/Network Interface Layer
+                - ▪
+                - Responsible for putting frames in the physical network’s transmission
+                - media
+                - ▪
+                - In the link/network interface layer, the data can only travel through the
+                - local area network
+                - o Internet Layer
+                - ▪
+                - Used to address packets and route them across the network
+                - o Transport Layer
+                - ▪
+                - Shows how to send the packets
+                - TCP
+                - o Transmission Control Protocol
+                - UDP
+                - o User Datagram Protocol
+                - o Application Layer
+                - ▪
+                - Contains all the protocols that perform higher-level functions
+        - 2.2 Compare and contrast common networking hardware.
+            - Routers
+            - Switches
+                - Managed
+                - Unmanaged
+            - Access points
+            - Patch panel
+            - Firewall
+            - Power over Ethernet (PoE)
+                - Injectors
+                - Switch
+                - PoE standards
+            - Hub
+            - Cable modem
+            - Digital subscriber line (DSL)
+            - Optical network terminal (ONT)
+            - Network interface card (NIC)
+            - Software-defined networking (SDN)
+            - Networking Hardware !
+                - o Network Interface Card (NIC)
+                - ▪
+                - Provides an ethernet connection to the network
+                - o Hub
+                - ▪
+                - Has several different ports between 4 and 48 ports
+                - o Switches
+                - ▪
+                - Smart hubs that remember the ports that are connected to them
+                - Switches can have multiple people talking at one time
+                - o Unmanaged Switch
+                - ▪
+                - Performs its functions without requiring a configuration
+                - o Managed Switch
+                - ▪
+                - Performs its functions with configuration
+                - o Wireless Access Point
+                - ▪
+                - Device that allows wireless devices to connect to a wired network
+                - o Router
+                - ▪
+                - Used to connect different networks together
+                - o Firewall
+                - ▪
+                - Scans and blocks traffic that enters or leaves a network
+                - Unified threat management (UTM) contains firewall features
+                - o Patch Panel
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 51 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Device that allows cable network jacks from a wall into a central area
+                - o Power Over Ethernet (PoE)
+                - ▪
+                - Supplies electrical power from a switch port over an ordinary data cable
+                - to a power device
+                - o Power Injector
+                - ▪
+                - Plugs into a wall outlet to get power
+                - o Cable Modem
+                - ▪
+                - Device that translates coaxial cable signals into radio frequency waves
+                - o Digital Subscriber Line (DSL modem)
+                - ▪
+                - Device that translates coaxial cable signals into phone lines
+                - o Optical Network Terminal (ONT)
+                - ▪
+                - Terminates fiber connection
+                - o Software Defined Networking (SDN)
+                - ▪
+                - Way of virtualizing the network hardware
+            - Wireless Frequencies !
+                - o Direct-Sequence Spread Spectrum (DSSS)
+                - ▪
+                - Modulates data over an entire range of frequencies using a series of
+                - signals known as chips
+                - o Frequency-Hopping Spread Spectrum (FHSS)
+                - ▪
+                - Allows devices to hop between predetermined frequencies
+                - o Orthogonal Frequency Division Multiplexing (OFDM)
+                - ▪
+                - Uses a slow modulation rate with simultaneous transmissions over 52
+                - different data streams
+                - o Each band has specific frequencies/channels to avoid overlapping with other
+                - signals
+                - o Channel
+                - ▪
+                - A virtual medium through which wireless networks can send and receive
+                - data
+                - For the 2.4 GHz spectrum, there can be 11 or 14 channels
+                - Channels 1, 6, and 11 avoid overlapping frequencies in the 2.4
+                - GHz band
+                - We can use 5.725-5.875 GHz to run our wireless networks in the 5
+                - GHz band
+                - There are 24 non-overlapping channels in the 5 GHz band
+                - o Channel Bonding
+                - ▪
+                - Allows for the creation of a wider channel by merging neighboring
+                - channels into one
+                - The standard channel size for both 2.4 GHz and 5 GHz networks is
+                - 20 MHz
+            - Wireless Standards !
+                - o Multiple-Input and Multiple-Output (MIMO)
+                - ▪
+                - Uses multiple antennas to send and receive data than it could with a
+                - single antenna
+                - o Multiple User Multiple Input Multiple Output (MU-MIMO)
+                - ▪
+                - Allows multiple users to access the wireless network and access point at
+                - the same time
+                - o Radio Frequency Interference (RFI)
+                - ▪
+                - Occurs when there are similar frequencies to wireless networks in the
+                - area
+                - o As signal decreases in strength or interference increases, the signal-to-noise ratio
+                - worsens
+            - Wireless Security !
+                - o Pre-Shared Key
+                - ▪
+                - Both the access point and the client use the same encryption key
+                - ▪
+                - It’s not a good idea to use pre-shared keys in large environments
+                - o Wired Equivalent Privacy (WEP)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 60 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Original 802.11 wireless security standard which is an insecure security
+                - protocol
+                - ▪
+                - WEP uses 24-bit Initialization Vector (IV) sent in clear text
+                - o Wi-Fi Protected Access (WPA)
+                - ▪
+                - Replaced WEP and follows the Temporal Key Integrity Protocol (TKIP)
+                - ▪
+                - WPA uses 48-bit Initialization Vector (IV) instead of 24-bit
+                - Rivest Cipher 4 (RC4)
+                - o For encryption
+                - Message Integrity Check (MIC)
+                - o To confirm data was not modified in transit
+                - Enterprise Mode
+                - o To authenticate users before exchanging keys
+                - o Wi-Fi Protected Access 2 (WPA2)
+                - ▪
+                - Created as part of IEEE 802.11i standard and requires stronger encryption
+                - and integrity checking through CCMP
+                - Advanced Encryption Standard (AES)
+                - o To provide additional security by using a 128-bit key or
+                - higher
+                - Personal Mode
+                - o Pre-shared key
+                - Enterprise Mode
+                - o Centralized authentication
+                - o MAC Address Filtering
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 61 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Configures an access point with a listing of permitted MAC addresses (like
+                - an ACL)
+                - o Disabling SSID Broadcast
+                - ▪
+                - Configures an access point not to broadcast the name of the wireless LAN
+            - Fixed Wireless !
+                - o Wi-Fi (802.11)
+                - ▪
+                - Creates point to point connections from one building to another over a
+                - relatively short distance
+                - o Cellular
+                - ▪
+                - Uses a larger antenna and a larger hotspot powered by a power outlet
+                - within an office or home
+                - o Microwave
+                - ▪
+                - Creates point to point connection between two or more buildings that
+                - have longer distances
+                - ▪
+                - A traditional microwave link can cover about 40 miles of distance
+                - o Satellite
+                - ▪
+                - A long range and fixed wireless solution that can go for miles
+                - Low Earth Orbit
+                - o Requires more satellites to cover the entire planet but
+                - gives lower latency speeds
+                - Geosynchronous Orbit
+                - o One satellite can cover a large portion of the Earth
+                - o Geosynchronous orbit gives higher latency and lower
+                - quality
+            - NFC, RFID, IR, and Bluetooth !
+                - o Near Field Communication (NFC)
+                - Uses radio frequency to send electromagnetic charge containing the
+                - transaction data over a short distance
+                - o Radio Frequency dentification (RFID)
+                - ▪
+                - A form of radio frequency transmission modified for use in authentication
+                - systems
+                - o Infrared Data (IrDA)
+                - ▪
+                - Allows two devices to communicate using line of sight communication
+                - in the infrared spectrum
+                - o Bluetooth
+                - ▪
+                - Creates a personal area network over 2.4 GHz to allow for wireless
+                - connectivity
+                - Bluejacking
+                - o Sending unsolicited messages to a Bluetooth device
+                - Bluesnarfing
+                - o Making unauthorized access to a device via Bluetooth
+                - connection
+                - BlueBorne
+                - o Allows the attacker to gain complete control over a device
+                - without even being connected to the target device
+                - o Tethering
+                - ▪
+                - Sharing cellular data Internet connection from a smartphone
+                - to multiple other devices
+                - ▪
+                - Only connect to trusted wireless networks
+        - 2.3 Compare and contrast protocols for wireless networking.
+            - Frequencies
+                - 2.4GHz
+                - 5GHz
+            - Channels
+                - Regulations
+                - 2.4GHz vs. 5GHz
+            - Bluetooth
+            - 802.11
+                - a
+                - b
+                - g
+                - n
+                - ac (WiFi 5)
+                - ax (WiFi 6)
+            - Long-range fixed wireless
+                - Licensed
+                - Unlicensed
+                - Power
+                - Regulatory requirements for wireless power
+            - NFC
+            - Radio-frequency identification (RFID)
+        - 2.4 Summarize services provided by networked hosts.
+            - Server roles
+                - DNS
+                - DHCP
+                - Fileshare
+                - Print servers
+                - Mail servers
+                - Syslog
+                - Web servers
+                - Authentication, authorization, and accounting (AAA)
+            - Internet appliances
+                - Spam gateways
+                - Unified threat management (UTM)
+                - Load balancers
+                - Proxy servers
+            - Legacy/embedded systems
+                - Supervisory control and data acquisition (SCADA)
+            - Internet of Things (IoT) devices
+            - Internet of Things !
+                - o Internet of Things
+                    - A global network of appliances and personal devices that have been equipped with sensors, software, and network connectivity to report state and configuration
+                        - Segregation of IoT devices is critically important for the business network’s security
+            - File and Print Servers !
+                - o Server
+                - ▪
+                - Can be configured to allow the clients on the network to access the
+                - network and be able to read and write to its disk (file share)
+                - o Print Server
+                - ▪
+                - Another server that could be a physical workstation or network
+                - infrastructure that provides printing functionality
+                - o Windows-based file and print server
+                - ▪
+                - Relies on the NetBIOS protocol or SMB
+                - Network Basic Input/Output System (NetBIOS)
+                - o Ports 137, 139
+                - o Used for file or printer sharing in a Windows network
+                - Server Message Block (SMB)
+                - o Port 445
+                - o Used for Windows file and printer sharing services
+                - o Samba
+                - ▪
+                - Provides the ability for a Linux or Unix server to be able to host files or
+                - printers that can then be used by Windows clients running the SMB
+                - protocol
+                - o Linux or Unix-based file and print server
+                - ▪
+                - Supports windows machines known as Samba
+                - File Transfer Protocol (FTP)
+                - o Ports 20, 21
+                - ▪
+                - Provides insecure file transfers
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 86 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o IP-based File and Print Server / Cloud Printing
+                - ▪
+                - Allows for printing anywhere in the world
+            - Web Servers !
+                - o Web Servers
+                - ▪
+                - Any server that provides access to a website
+                - HTTP
+                - o Port 80
+                - HTTPS
+                - o Port 443
+                - o Internet Information Services (IIS)
+                - ▪
+                - Extensible web server software, created by Microsoft (HTTP, HTTP/2, and
+                - HTTPS)
+                - o Apache
+                - ▪
+                - Most popular way to run a web server these days
+                - o NGINX
+                - ▪
+                - Reverse proxy, load balancer, mail proxy, and HTTP cache
+                - o Uniform Resource Locator (URL)
+                - ▪
+                - Combines the fully qualified domain name with a protocol at the
+                - beginning
+                - o When a web browser connects to a server, it will be able to see a digital
+                - certificate to create a random code
+            - Email Servers !
+                - o Email Server
+                - ▪
+                - Servers that are set up to compose a message and send it to another user
+                - Simple Mail Transfer Protocol (SMTP)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 87 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Specifies how emails should be delivered from one mail
+                - domain to another
+                - o Send mail transfer protocol
+                - o SMTP operates over port 25
+                - Post Office Protocol 3 (POP3)
+                - o Older email protocol which operates over port 110
+                - Internet Message Access Protocol (IMAP)
+                - o Mail retrieval protocol
+                - o IMAP operates over port 143 and can connect to a server
+                - and receive and read messages
+                - Microsoft Exchange
+                - o Mailbox server environment designed for Windows-based
+                - domain environments
+                - o Microsoft Exchange Server is widely used in many
+                - corporate environments
+            - AAA Servers !
+                - o 802.1x
+                - ▪
+                - Standardized framework used for port-based authentication on wired
+                - and wireless networks
+                - o Authentication
+                - ▪
+                - Occurs when a person’s identity is established with proof and is
+                - confirmed by the system
+                - Something you know
+                - Something you are
+                - Something you have
+                - Something you do
+                - Somewhere you are
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 88 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Lightweight Directory Access Protocol (LDAP)
+                - ▪
+                - A database used to centralize information about clients and objects on
+                - the network
+                - o Active Directory (AD)
+                - ▪
+                - Used to organize and manage the network, including clients, servers,
+                - devices, users, and groups
+                - o Remote Authentication Dial-In User Service (RADIUS)
+                - ▪
+                - Provides centralized administration of dial-up, VPN, and wireless
+                - authentication services for 802.1x and the EAP
+                - RADIUS operates at the application layer
+                - RADIUS utilizes UDP for making connections
+                - o Terminal Access Controller Access-Control System Plus (TACACS+)
+                - ▪
+                - Proprietary version of RADIUS that can perform the role of an
+                - authenticator in 802.1x networks
+                - o Authorization
+                - ▪
+                - Occurs when a user is given access to a certain piece of data or certain
+                - areas of a building
+                - o Kerberos
+                - ▪
+                - Authentication protocol used by Windows to provide for two-way
+                - (mutual) authentication using a system of tickets
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 89 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - A domain controller can be a single point of failure for Kerberos
+                - o Accounting
+                - ▪
+                - Ensures the tracking of data, computer usage, and network resources is
+                - maintained
+                - o Non-repudiation
+                - ▪
+                - Occurs when you have proof that someone has taken an action
+            - Remote Access Servers !
+                - o Telnet Port 23
+                - ▪
+                - Sends text-based commands to remote devices and is a very old
+                - networking protocol
+                - ▪
+                - Telnet should never be used to connect to secure devices
+                - o Secure Shell (SSH) Port 22
+                - ▪
+                - Encrypts everything that is being sent and received between the
+                - client and the server
+                - o Remote Desktop Protocol (RDP) Port 3389
+                - ▪
+                - Provides graphical interface to connect to another computer over a
+                - network connection
+                - ▪
+                - Remote desktop gateway (RDG) creates a secure connection to tunnel
+                - into the RDP
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 90 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Virtual Network Computing (VNC) Port 5900
+                - ▪
+                - Designed for thin client architectures
+                - o Terminal Emulator (TTY)
+                - ▪
+                - Any kind of software that replicates the TTY I/O functionality to remotely
+                - connect to a device
+                - ▪
+                - TTY is the terminal or end point of the communication between the
+                - computer and the end-user
+            - Network Monitoring Servers !
+                - o Syslog
+                - ▪
+                - Enables different appliances and software applications to transmit logs to
+                - a centralized server
+                - ▪
+                - Syslog is the de facto standard for logging events
+                - PRI code (Priority code)
+                - Header
+                - Message
+                - o Simple Network Management Protocol (SNMP)
+                - ▪
+                - TCP/IP protocol that aids in monitoring network-attached devices and
+                - computers
+                - o Managed Devices
+                - ▪
+                - Computers and other network-attached devices monitored using agents
+                - by a network management system
+                - o Agents
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 91 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Software that is loaded on a managed device to redirect information to
+                - the network management system
+                - o Network Management System (NMS)
+                - ▪
+                - Software running on one or more servers to control the monitoring of
+                - network-attached devices and computers
+                - o Management should be conducted on an out-of-band network to increase
+                - security
+            - Proxy Servers !
+                - o Proxy Server
+                    - Devices that create a network connection between an end user’s client machine and a remote resource (web server)
+                        - Increased network speed and efficiency
+                        - Increased security
+                        - Additional auditing capabilities
+            - Load Balancers !
+                - o Load Balancer/ Content Switch
+                - ▪
+                - Distributes incoming requests across several servers inside a server farm
+                - or a cloud infrastructure
+                - ▪
+                - A load balancer is one of the key things to help defend against a DoS
+                - attack or a DDoS attack
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 92 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Denial of Service (DoS)
+                - o Involves a continual flooding of victim systems with
+                - requests for services, causing the system to crash (single
+                - attacker)
+                - Distributed Denial of Service (DDoS)
+                - o Multiple machines simultaneously launch attacks on the
+                - server to force it offline (multiple attackers)
+                - Blackholing/Sinkholing
+                - o Identifies any attacking IP addresses and routes their
+                - traffic through a null interface
+                - Intrusion Prevention System (IPS)
+                - o Works for small-scale attacks against DoS
+                - Elastic Cloud
+                - o Allows to scale up the demand as needed
+            - Unified Threat Management !
+                - o Access Control List (ACL)
+                - ▪
+                - Rule sets placed on the firewalls, routers, and other network devices that
+                - permit or allow traffic through a particular interface
+                - ▪
+                - The actions are performed top-down inside of an ACL
+                - Top
+                - o Specific rules
+                - Bottom
+                - o Generic rules
+                - o Firewall
+                - ▪
+                - Inspects and controls the traffic that is trying to enter or leave a
+                - network’s boundary
+                - Packet-filtering
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 93 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Stateful
+                - Proxy
+                - Dynamic packet-filtering
+                - Kernel proxy
+                - o Unified Threat Management (UTM)
+                - ▪
+                - Provides the ability to conduct security functions within a single device or
+                - network appliance
+            - ICS/SCADA !
+                - o Information Technology (IT)
+                - ▪
+                - Includes computers, servers, networks, and cloud platforms
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 94 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Operational Technology (OT)
+                - ▪
+                - Communications network designed to implement an ICS
+                - ▪
+                - Technology that interacts with the real world
+                - o Industrial Control System (ICS)
+                - ▪
+                - Provides the mechanisms for workflow and process automation by
+                - controlling machinery using embedded devices
+                - ▪
+                - Multiple ICSs can create a distributed control system (DCS)
+                - o Fieldbus
+                - ▪
+                - Digital serial data communication protocol used in OT networks
+                - to link different PLCs
+                - o Programmable Logic Controller (PLC)
+                - ▪
+                - Type of digital computer used in industrial settings that enables
+                - automation and assembly lines, autonomous field operations, robotics,
+                - and other applications
+                - o Human-Machine Interface (HMI)
+                - ▪
+                - Can be a local control panel or software that runs on a computer
+                - o Supervisory Control and Data Acquisition (SCADA)
+                - ▪
+                - Type of ICS used to manage large scale multi-site devices and equipment
+                - in a geographic region from a host computer
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 95 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Cellular
+                - Microwave
+                - Satellite
+                - Fiber
+                - VPN-based LAN
+            - Embedded Systems !
+                - o Embedded Systems
+                - ▪
+                - Computer system that is designed to perform specific and dedicated
+                - functions
+                - ▪
+                - These systems are considered static environments, where frequent
+                - changes are not allowed
+                - o Programmable Logic Controller (PLC)
+                - ▪
+                - Type of digital computer used in industrial or outdoor settings
+                - ▪
+                - The PLC patch is every six months or two years
+                - o Real-time Operating System (RTOS)
+                - ▪
+                - Type of OS that prioritizes deterministic execution of operations that
+                - ensure consistent response for time-critical tasks
+                - ▪
+                - Embedded systems in critical applications
+                - o System-on-a-Chip
+                - ▪
+                - Processor integrates the platform functionality of multiple logical
+                - controllers onto a single chip
+                - Processor
+                - Memory
+                - Storage
+                - Graphics processor
+                - Peripherals
+            - Legacy Systems !
+                - o Legacy System
+                - ▪
+                - Computer system that is no longer supported by its vendor and no longer
+                - provided with security updates and patches
+                - ▪
+                - Identify legacy systems and put mitigations in place to keep operating
+                - such systems
+                - o Proprietary System
+                - ▪
+                - System that is owned by its developer or vendor
+        - 2.5 Given a scenario, install and configure basic wired/wireless small office/home office (SOHO) networks.
+            - Internet Protocol (IP) addressing
+                - IPv4
+                    - Private addresses
+                    - Public addresses
+                    - IPv4 ! 
+                        - 10
+                        - 1
+                        - 2
+                        - 3
+                        - 172
+                        - 21
+                        - 243
+                        - 67
+                        - o Multicast Address
+                        - ▪
+                        - A logical identifier for a group of hosts in a computer network
+                        - o Classful Mask
+                        - ▪
+                        - Default subnet mask for a given class of IP addresses
+                        - CompTIA A+ Core 1
+                        - Study Notes
+                        - 70 -
+                        - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                        - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                        - V1.0
+                        - o Classless Inter-Domain Routing (CIDR)
+                        - ▪
+                        - Allows for borrowing some of the host bits and reassigning them to the
+                        - network portion
+                        - o Public (Routable)
+                        - ▪
+                        - Can be accessed over the Internet and is assigned to the network by an
+                        - Internet service provider
+                        - o Private (Non-Routable)
+                        - ▪
+                        - Can be used by anyone any time, but only within their own local area
+                        - network
+                        - ▪
+                        - Private IP ranges include those that start with either 10, 172, or 192
+                        - o Network Address Translation (NAT) allows for routing of private IPs through a
+                        - public IP
+                        - o Loopback Address (127.0.0.1)
+                        - ▪
+                        - Creates a loopback to the host and is often used in troubleshooting and
+                        - testing network protocols on a system
+                        - o Automatic Private IP Addresses (APIPA)
+                        - CompTIA A+ Core 1
+                        - Study Notes
+                        - 71 -
+                        - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                        - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                        - V1.0
+                        - ▪
+                        - Used when a device does not have a static IP address or cannot reach a
+                        - DHCP server
+                        - 169.254.0.0 to 169.254.255.255
+                        - D iscover
+                        - O ffer
+                        - R equest
+                        - A cknowledge
+                        - Assigning IPv4 Addresses
+                        - o Static Assignment
+                        - ▪
+                        - Manually type the IP address for the host, its subnet mask, default
+                        - gateway, and DNS server
+                        - ▪
+                        - Static assignment of IP addresses is impractical on large enterprise
+                        - networks
+                        - o Dynamic Assignment
+                        - ▪
+                        - Dynamic allocation of IP addresses
+                        - o Domain Name System (DNS)
+                        - ▪
+                        - Converts the domain names used by a website to the IP address of its
+                        - server
+                        - ▪
+                        - DNS is the internet version of a phone book
+                        - o Windows Internet Name Service (WINS)
+                        - ▪
+                        - Identifies NetBIOS systems on a TCP/IP network and converts those
+                        - NetBIOS names to IP addresses
+                        - o Bootstrap Protocol (BOOTP)
+                        - ▪
+                        - Dynamically assigns IP addresses and allows a workstation to load a copy
+                        - of boot image to the network
+                        - o Dynamic Host Control Protocol (DHCP)
+                        - CompTIA A+ Core 1
+                        - Study Notes
+                        - 72 -
+                        - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                        - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                        - V1.0
+                        - ▪
+                        - Assigns an IP based on an assignable scope or addresses and provides the
+                        - ability to configure other options
+                        - ▪
+                        - 192.168.1.100 through 192.168.1.200
+                        - Each IP is leased for a period of time and returns to the pool when
+                        - the lease expires
+                        - o IP Address Management
+                        - ▪
+                        - Manages the IPs being assigned and returned over time
+                        - o DHCP is the modern implementation of BOOTP
+                        - o Automatic Private IP Addressing (APIPA)
+                        - ▪
+                        - Used when a device does not have a static IP address or cannot reach a
+                        - DHCP server
+                        - ▪
+                        - Allows for the quick configuration of a LAN without the need for a DHCP
+                        - server
+                        - ▪
+                        - APIPA-assigned devices cannot communicate outside the LAN
+                        - or with non-APIPA devices
+                        - o Zero Configuration (ZeroConf)
+                        - ▪
+                        - New technology that provides the same features as APIPA
+                        - ▪
+                        - Assign an IPv4 link-local address to a client
+                        - ▪
+                        - Resolve computer names to IP addresses without the need for DNS by
+                        - using mDNS (multicast domain name service)
+                        - ▪
+                        - Perform service discovery on a network
+                        - Windows
+                        - o Link-Local Multicast Name Resolution (LLMNR)
+                        - Linux
+                        - o SystemD
+                - IPv6
+                - IPv6 !
+                    - o IPv4 = 2³²
+                    - ▪
+                    - 4.2 billion addresses
+                    - o Address Exhaustion
+                    - ▪
+                    - Running out of network addresses in IPv4
+                    - IPv4 = 2³²
+                    - o 4.2 billion addresses
+                    - IPv6 = 2128
+                    - o 340 undecillion addresses
+                    - o IPv5 was an experimental protocol but some of its concepts have been
+                    - incorporated into IPv6
+                    - Larger address space
+                    - No broadcasts
+                    - No fragmentation
+                    - Can coexist with IPv4
+                    - Simplified header
+                    - o Dual Stack
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 79 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Simultaneously runs both the IPv4 and IPv6 protocols on the same
+                    - network devices
+                    - o Tunneling
+                    - ▪
+                    - Allows an existing IPv4 router to carry IPv6 traffic
+                    - o An IPv6 address uses hexadecimal digits and allows the use of shorthand
+                    - notation
+                    - o Unicast Address
+                    - ▪
+                    - Used to identify a single interface
+                    - Globally Routed
+                    - o Like IPv4’s unicast class A, B, and C addresses
+                    - and begins with 2000-3999
+                    - Link-Local/Local Use
+                    - o Used like a private IP in IPv4 that can only be used on the
+                    - local area network and begins with FE80
+                    - o Stateless Address Autoconfiguration (SLAAC)
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 80 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Eliminates the need to obtain addresses or other configuration
+                    - information from a central server
+                    - o Multicast Address
+                    - ▪
+                    - Used to identify a set of interfaces and begins with FF
+                    - o Anycast Address
+                    - ▪
+                    - Used to identify a set of interfaces so that a packet can be sent to any
+                    - member of a set
+                    - o Extended Unique Identifier (EUI)
+                    - ▪
+                    - Allows a host to assign itself a unique 64-bit IPv6 interface identifier
+                    - called EUI-64
+                    - o DHCPv6 Protocol
+                    - ▪
+                    - Allows DHCP to automatically assign addresses from a DHCPv6 server
+                    - o Neighbor Discovery Protocol (NDP)
+                    - ▪
+                    - Used to determine the Layer 2 addresses that are on a given network
+                - Static
+                - Dynamic
+                - Gateway
+                - Automatic Private IP Addressing (APIPA)
+        - 2.6 Compare and contrast common network configuration concepts.
+            - DNS
+                - Address
+                    - A
+                    - AAAA
+                - Mail exchanger (MX)
+                - Text (TXT)
+                    - M Spam management
+                        - (i) DomainKeys Identified Mail (DKIM)
+                        - (ii) Sender Policy Framework (SPF)
+                        - (iii) Domain-based Message Authentication, Reporting, and Conformance (DMARC)
+                - DNS !
+                    - o Domain Name System (DNS)
+                    - ▪
+                    - Helps network clients find a website using human-readable hostnames
+                    - instead of numeric IP addresses
+                    - o Fully Qualified Domain Name (FQDN)
+                    - ▪
+                    - Domain name under a top-level provider
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 74 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o Uniform Resource Locator (URL)
+                    - ▪
+                    - Contains the FQDN with the method of accessing information
+                    - o CNAME records can only be used to point to another domain or subdomain, not
+                    - to an IP address
+                    - o Sender Policy Framework (SPF)
+                    - ▪
+                    - DNS record that identifies the host authorized to send mail for the
+                    - domain
+                    - o DomainKeys Identified Mail (DKIM)
+                    - ▪
+                    - provides the cryptographic authentication mechanism for mail using a
+                    - public key published as a DNS record
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 75 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o Domain-based Message Authentication, Reporting & Conformance (DMARC)
+                    - ▪
+                    - Framework that is used for proper application of SPF and DKIM, utilizing a
+                    - policy that’s published as a DNS record
+                    - o Nameserver
+                    - ▪
+                    - Type of DNS server that stores all the DNS records for a given domain
+                    - o Internal DNS
+                    - ▪
+                    - Allows cloud instances on the same network access each other using
+                    - internal DNS names
+                    - o External DNS
+                    - ▪
+                    - Records created around the domain names from a central authority and
+                    - used on the public Internet
+                    - o Time to Live (TTL)
+                    - ▪
+                    - Tells the DNS resolver how long to cache a query before requesting a new
+                    - one
+                    - o DNS Resolver/DNS Cache
+                    - ▪
+                    - Makes a local copy of every DNS entry it resolves as connected to
+                    - websites
+                    - o Recursive Lookup
+                    - ▪
+                    - DNA server communicates with several other DNS servers to hunt down
+                    - the IP address and return to the client
+                    - o Iterative Lookup
+                    - ▪
+                    - Each DNS server responds directly to the client with an address for
+                    - another DNS server that may have the correct IP address
+            - DHCP
+                - Leases
+                - Reservations
+                - Scope
+                - DHCP !
+                    - o Dynamic Host Configuration Protocol (DHCP)
+                        - Provides an IP address to every machine on the network and eliminates configuration errors
+                    - o Scope
+                        - List of valid IP addresses available for assignment or lease to a client computer or endpoint device on a given subnet
+                        - 254 available Ips
+                    - o DHCP Reservation
+                        - Excludes some IP addresses from being handed to devices unless they meet a certain condition
+                            - Discover
+                            - Offer
+                            - Request
+                            - Acknowledge
+                    - o IP addresses can also be statically assigned
+            - Virtual LAN (VLAN)
+            - Virtual private network (VPN)
+            - VLAN !
+                - o Virtual Local Area Network (VLAN)
+                - ▪
+                - Allows different logical networks to share the same physical hardware
+                - and provides added security and efficiency
+                - o 4-byte Identifier
+                - ▪
+                - Tag Protocol Identifier (TPI)
+                - ▪
+                - Tag Control Identifier (TCI)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 77 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+            - VPN !
+                - o Virtual Private Network (VPN)
+                - ▪
+                - Extends a private network across a public network and enables sending
+                - and receiving data across shared or public networks
+                - o Full Tunnel VPN
+                - ▪
+                - Routes and encrypts all network requests through the VPN connection
+                - back to the headquarters
+                - o Split Tunnel VPN
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 78 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Routes and encrypts only the traffic bound for the headquarters over the
+                - VPN, and sends the rest of the traffic to the regular Internet
+                - o Clientless VPN
+                - ▪
+                - Creates a secure remote-access VPN tunnel using a web browser without
+                - requiring a software or hardware client
+                - o Secure Socket Layer (SSL)
+                - ▪
+                - Provides cryptography and reliability using the upper layers of the OSI
+                - model (Layers 5, 6, and 7)
+                - o Transport Layer Security (TLS)
+                - ▪
+                - Provides secure web browsing over HTTPS
+        - 2.7 Compare and contrast Internet connection types, network types, and their features.
+            - Internet connection types
+                - Satellite
+                - Fiber
+                - Cable
+                - DSL
+                - Cellular
+                - Wireless Internet service provider (WISP)
+                - Twisted Pair Cables !
+                    - o STP and UTP operate about the same
+                    - o Keep cable runs under 70 meters from the IDF to the office
+                    - o Registered Jack (RJ)
+                    - ▪
+                    - Carries voice or data which specifies the standards a device needs to
+                    - meet to connect to the phone or data network
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 53 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o Bandwidth
+                    - ▪
+                    - The theoretical measure of how much data could be transferred from a
+                    - source to its destination
+                    - o Throughput
+                    - ▪
+                    - The actual measure of how much data is successfully transferred from a
+                    - source to its destination
+                    - o Ethernet Standard
+                    - ▪
+                    - A designation given to a particular category that provides the ability to
+                    - understand the bandwidth and the cable type to be used
+                    - o Straight-Through Cable (Patch Cable)
+                    - ▪
+                    - Contains the exact same pinouts on both ends of the cable
+                    - o 568b
+                    - ▪
+                    - The standard that's preferred when wiring jacks inside of buildings
+                    - o Crossover Cable
+                    - ▪
+                    - The ability to take send and receive pins from one cable and swap those
+                    - on the other end
+                    - o MDIX
+                    - ▪
+                    - A medium dependent interface crossover (MDIX) is an automated way to
+                    - electronically simulate using a crossover cable
+                    - o Direct Burial
+                    - ▪
+                    - A cable rating that specifies that a cable has a stronger sheathing and
+                    - jacket that can withstand more extreme weather conditions
+                    - A plenum rated cable is more fire resistant and it minimizes the
+                    - amount of dangerous fumes that are released
+                - Optical Cabling !
+                    - o Fiber Optic Cable
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 54 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Uses light from an LED or laser to transmit information through a thin
+                    - glass fiber
+                    - Greater usable range
+                    - Greater data capacity
+                    - o Switches, routers, and end-user devices can become a limitation
+                    - o Single Mode Fiber (SMF)
+                    - ▪
+                    - Used for longer distances and has smaller core size which allows for only
+                    - a single mode of travel for the light signal
+                    - SMF’s core size is 8.3-10µ in diameter
+                    - o Multimode Fiber (MMF)
+                    - ▪
+                    - Used for shorter distances and has larger core size which allows for
+                    - multiple modes of travel for the light signal
+                    - MMF’s core size is 50-100µ in diameter
+                    - Up to 2 kilometers or less
+                    - Coaxial Cabling
+                    - o Coaxial Cable (Coax)
+                    - ▪
+                    - One of the oldest categories of copper media that is still used in
+                    - networking today
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 55 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o Twinaxial Cable
+                    - ▪
+                    - Like coaxial cable but uses two inner conductors to carry the data instead
+                    - of just one
+            - Network types
+                - Local area network (LAN)
+                - Wide area network (WAN)
+                - Personal area network (PAN)
+                - Metropolitan area network (MAN)
+                - Storage area network (SAN)
+                - Wireless local area network (WLAN)
+            - Network Types !
+                - o Personal Area Network (PAN)
+                - ▪
+                - Smallest type of wired or wireless network and covers
+                - the least amount of area
+                - o Local Area Network (LAN)
+                - ▪
+                - Connects components within a limited distance
+                - Up to a few hundred feet
+                - o Campus Area Network (CAN)
+                - ▪
+                - Connects LANs that are building-centric across a university, industrial
+                - park, or business park
+                - Up to a few miles
+                - o Metropolitan Area Network (MAN)
+                - ▪
+                - Connects scattered locations across a city or metro area
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 52 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Up to about 25 miles
+                - o Wide Area Network (WAN)
+                - ▪
+                - Connects geographically disparate internal networks and consists of
+                - leased lines or VPNs
+                - Worldwide coverage
+                - o Wireless Local Area Network (WLAN)
+                - ▪
+                - A wireless distribution method for two or more devices that creates a
+                - local area network using wireless frequencies
+                - o Storage Area Network (SAN)
+                - ▪
+                - Provisions access to configurable pools of storage devices that can be
+                - used by application servers
+                - o Small Office, Home Office (SoHo) LAN
+                - ▪
+                - Uses a centralized server or simply provides clients access to local
+                - devices like printers, file storage, or the Internet
+            - Internet Connections !
+                - o Internet Service Provider (ISP)
+                    - Establishes high speed links between their network and clients
+            - Dial-up and DSL !
+                - o Plain Old Telephone Service (POTS)
+                - ▪
+                - Runs as a dial-up connection and is used on the public switched
+                - telephone network (PSTN)
+                - ▪
+                - Analog connections can be voice or data converted from ones and zeros
+                - ▪
+                - Dial-up modems have a maximum bandwidth of 53.3 kb/s
+                - o Legacy System
+                - ▪
+                - Old system that is still used in some critical functions
+                - o Integrated Services Digital Network (ISDN)
+                - ▪
+                - Supports multiple 64 Kbps channels
+                - ▪
+                - ISDN is an older technology designed to carry voice, video, or data over B
+                - (bearer) channels
+                - o Asymmetric DSL (ADSL)
+                - ▪
+                - Has different speeds of download and upload
+                - Maximum Download Speed
+                - o 8 Mbps
+                - Maximum Upload Speed
+                - o 1.544 Mbps
+                - ▪
+                - ADSL maximizes the download and minimizes the uploads
+                - o Symmetric DSL (SDSL)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 64 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Has equal speeds of download and upload
+                - o Very High Bit-Rate DSL (VDSL)
+                - ▪
+                - Has high speeds of download and upload
+                - Download Speed
+                - o 50 Mbps or more
+                - Upload Speed
+                - o 10 Mbps or more
+                - ▪
+                - ADSL Maximum Distance to DSLAM
+                - 18,000 ft.
+                - ▪
+                - VDSL Maximum Distance to DSLAM
+                - 4,000 ft.
+            - Cable Connections !
+                - o Cable Modems
+                - ▪
+                - Uses a cable TV network that is made up of a hybrid fiber-coaxial (HFC)
+                - distribution network
+                - o Data-O ver-Cable Service Interface Specifications (DOCSIS)
+                - ▪
+                - Specific frequency ranges used for upstream and downstream
+                - transmissions
+                - Upstream
+                - o 5 MHz to 42 MHz
+                - Downstream
+                - o 50 MHz to 860 MHz
+                - o Cable modems transmit and receive over cable television infrastructure
+            - Fiber Connections !
+                - o Fiber To The Curb (FTTC)
+                - ▪
+                - Runs a fiber optic cable from an internet provider access point to a curb
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 65 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Fiber To The Premises (FTTP)
+                - ▪
+                - Fiber optic that connects directly to a building and connects to an optical
+                - network terminal (ONT)
+                - o Optical Network Terminal (ONT)
+                - ▪
+                - Physical devices that convert optical signals to electrical signals
+            - Cellular Connections !
+                - o The G refers to the generation of cellular technology being used
+                - ▪
+                - SMS and text messaging
+                - ▪
+                - International roaming
+                - ▪
+                - Conference calling
+                - ▪
+                - Use of internet
+                - ▪
+                - Introduction to EDGE
+                - o Wideband Code Division Multiple Access (WCDMA)
+                - ▪
+                - Used by the UMTS standard and could reach data speeds of up to 2 Mbps
+                - o High Speed Packet Access (HSPA)
+                - ▪
+                - Reaches speeds of up to 14.4 Mbps and is sometimes referred to as 3.5G
+                - o High Speed Packet Access Evolution (HSPA+)
+                - ▪
+                - Reaches speeds of up to 50 Mbps and is sometimes referred to as 3.75G
+                - o 4G Long-term Evolution (4G LTE)
+                - ▪
+                - 100 Mbps
+                - o LTE Advanced (LTE-A)
+                - ▪
+                - 1 Gbps
+                - o Frequencies are operated in the millimeter wave band
+                - o The higher the G, the newer standard, it has increased in speeds
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 66 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+            - WISP Connections !
+                - o Microwave
+                - ▪
+                - Uses a beam of radio waves in the microwave frequency range to
+                - transmit information between two fixed locations
+                - Ultra-high frequency (UHF)
+                - Super high frequency (SHF)
+                - Extremely high frequency (EHF)
+                - ▪
+                - Both antennas must maintain a line of sight
+            - Satellite Connections !
+                - o Satellite
+                - ▪
+                - A method of using communication satellites located in space to connect a
+                - user to the Internet
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 67 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Slow
+                - Expensive
+                - High latency
+        - 2.8 Given a scenario, use networking tools.
+            - Crimper
+            - Cable stripper
+            - WiFi analyzer
+            - Toner probe
+            - Punchdown tool
+            - Cable tester
+            - Loopback plug
+            - Network tap
+            - Networking Tools !
+                - o Snip/Cutter
+                - ▪
+                - Used to cut a piece of cable off a larger spool or run of cable
+                - o Cable Stripper
+                - ▪
+                - Used to strip off the end of the cable and prepare it for attachment to a
+                - connector
+                - o Cable Crimper
+                - ▪
+                - Used to attach the connector to the end of the cable
+                - o Wire Mapping Tool
+                - ▪
+                - Works like a cable tester, but specifically for twisted pair ethernet cables
+                - RG-6
+                - RG-59
+                - F-type
+                - BNC
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 56 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Cable Certifier
+                - ▪
+                - Used to determine a cable’s category or data throughput
+                - o Punch-Down Block
+                - ▪
+                - Terminates the wires and strips off excess installation and extra wires
+                - that are no longer needed
+                - o Tone Generator/Toner Probe
+                - ▪
+                - Used to generate a tone on one end of the connection and use the probe
+                - to audibly detect the wire connected on the other side
+                - o Loopback Adapter/Device
+                - ▪
+                - Facilitates the testing of simple networking issues
+                - o Tap
+                - ▪
+                - Connects directly to the cable infrastructure and splits or copies those
+                - packets for analysis, security, or general network management
+                - o Wireless Analyzer
+                    - Ensures proper coverage and prevents overlap between wireless access point coverage zones and channels
+    - 3.0 Hardware 25%
+        1. the machines, wiring, and other physical components of a computer or other electronic system.
+        - 3.1 Explain basic cable types and their connectors, features, and purposes.
+            - what are the basic cable types?
+                - network cables 
+                - peripheral cables 
+                - video cables 
+                - hard drive cables
+            - Network cables
+                - what are the basic network cables?
+                    - Copper
+                    - Plenum
+                    - Optical
+                    - T568A/T568B
+                - Copper
+                    - Cat 5
+                    - Cat 5e
+                    - Cat 6
+                    - Cat 6a
+                    - Coaxial
+                    - Shielded twisted pair
+                        - (i) Direct burial
+                    - Unshielded twisted pair
+                - Plenum
+                - Optical
+                    - Fiber
+                - T568A/T568B
+            - Peripheral cables
+                - what are the basic types of peripheral cables?
+                - What are the two things need to connect a device to the PC?
+                    - port
+                    - cable
+                - USB 2.0
+                - USB 3.0
+                - Serial
+                - Thunderbolt
+            - Video cables
+                - what are the basic network cables?
+                - High-Definition Multimedia Interface (HDMI)
+                - DisplayPort
+                - Digital Visual Interface (DVI)
+                - Video Graphics Array (VGA)
+            - Hard drive cables
+                - what are the basic network cables?
+                - Serial Advanced Technology Attachment (SATA)
+                - Small Computer System Interface (SCSI)
+                - External SATA (eSATA)
+                - Integrated Drive Electronics (IDE)
+            - Adapters
+            - Connector types
+                - RJ11
+                -  RJ45
+                - F type
+                - Straight tip (ST)
+                - Subscriber connector (SC)
+                - Lucent connector (LC)
+                - Punchdown block
+                - microUSB
+                - miniUSB
+                - USB-C
+                - Molex
+                - Lightning port
+                - DB9
+            - Common measurements !
+                - A single “bit” can store one of two values: 1 or 0
+                - “Nibble” is 4 bits
+                - “Byte” is 8 bits
+                - 1000 bits
+                    - 1Kilobit (1Kb)
+                - 1Kbps
+                    - (8bits per byte)
+                    - 125Bps
+                - b = bits
+                - B = bytes
+                - 1,000,000 bits = 1 Megabit (Mb)
+                - 1,000,000 bytes = 1 Megabyte (MB)
+                - 1,000,000,000 bits = 1 Gigabit (Gb)
+                - 1,000,000,000 bytes = 1 Gigabyte (GB)
+                - 1,000,000,000,000 bits = 1 Terabit (Tb)
+                - 1,000,000,000,000 bytes = 1 Terabyte (TB)
+            - Exterior of a PC !
+                - o CD Drive
+                    - The ability to read and write information to the system using an optical device
+                - o Power Button
+                    - A physical button, that when pushed, sends an electrical signal from a cable directly to the motherboard that tells the computer to turn on
+                - o Audio Jack
+                    - Used to connect headphones and microphones to the computer using a 1/8th inch Mini-Jack
+                - o SuperSpeed USB Connectors
+                    - Used to connect other peripherals, like a mouse, a keyboard, a webcam, a printer, or other devices to a computer
+                - o Cooling Fan
+                    - Blows hot air out of the CPU, the motherboard, and the case which expels the extra heat out of the system to keep the component insides cool
+                - o HDMI Connector
+                    - Used to connect a monitor, TV, or another device for a video output display
+                - o RJ 45 Connector
+                    - Provides net access to local area networks over a wired connection
+                - o SPDIF Connector
+                    - An optical connector that allows high quality audio to a surround sound system
+                    - USB 2.0 speeds are good for a microphone, a mouse, or a keyboard
+                - o Kensington Lock
+                    - Allows the ability to place a metal cable from the desk to the computer tower to ensure the computer tower is not stolen
+            - USB Cables !
+                - o DB 25 Connector
+                    - A D-shaped sub miniature pin that goes into the back of a computer and has two thumb screws on the side
+                - o Serial Cable
+                    - A cable that sends data in ones and zeros in a straight line, but it can only send one bit at a time, which is measured at the speed of cables in bits per second
+                - o DB9 Connector
+                    - A slow speed connection for much older mice keyboards and other external modems
+                    - A USB 1 and a USB 2 run at a much slower speed and should be split across a hub
+                    - A USB 1.0 has the slowest speed out of a USB with a maximum speed of 1.5 megabits per second
+                - o USB 1.1
+                    - Known as full speed and runs at 12 megabits per second
+                - o USB 2.0
+                    - Known as high speed and runs at 480 megabits per second
+                - o USB 3.0
+                    - Known as super speed and is at least 5 gigabits per second
+                - o USB 3.1 Gen One
+                    - Runs at 5 gigabits per second
+                - o USB 3.1 Gen Two
+                    - Runs at 10 gigabits per second
+                - o USB 3.2 Gen 2x2
+                    - Runs at 20 gigabits per second
+                - o USB 4
+                    - The most modern version of USB and can run at 40 gigabits per second
+                    - A USB 4 and a USB 3.2 gen 2x2 must have a shorter cable because that is going to give the best performance
+                    - The longer a cable, the more likelihood that the cable would not work as efficiently, or even at all
+                        - Type A
+                        - Type C
+                        - Type B
+                        - Type B Mini
+                        - Type B Micro
+            - Video Cables !
+                - o HDMI
+                    - Known as high-definition multimedia interface and it is the most widely used video interface in the world
+                    - Lower resolution HDMI can support HD standard, but higher resolution HDMI can support up to 4k
+                        - Full-Size (Type A Connector)
+                        - Mini Connector (Type C)
+                        - Micro Connector (Type D)
+                    - Category 1
+                        - The standard HDMI that is used for video content
+                    - Category 2
+                        - The high-speed HDMI that uses higher resolutions
+                - o HDMI Version 2
+                    - Higher speeds that are specified for data transfer using HDMI
+                - o Display Port Interface
+                    - Used for digital displays with a high-performance replacement
+                        - Full-Size Display Port
+                        - Mini Display Port
+                    - Display Ports can support high speed data transfer over its cables starting off with 2.7 gigabits per second, but can go up to 20 gigabits per second
+                - o DVI
+                    - Used to support both analog and digital outputs
+                        - DVI A
+                        - DVI D
+                        - DVI I
+                    - DVI A only supports analog signals, DVI D only supports digital signals, and DVI I support both signals
+                - o VGA
+                    - The graphic standard that used a 15-pin standard analog video interface port that would connect to the computer
+                - o Thunderbolt
+                    - A display interface that is used for data transfer
+                        - Thunderbolt version 1 and 2 used a physical connector that were backwards compatible
+                        - All thunderbolt version 3 will support USB-C, but not all USB-C we'll support Thunderbolt 3
+            - Storage Cables !
+                - o Thunderbolt
+                    - Supports speeds of up to 40 gigabits per second for data transfer over cables
+                - o Lightning Cable
+                    - A specific proprietary connector that was created by apple their mobile devices
+                - o SATA Cable
+                    - The standard cables that are the main method of connecting a storage device to a motherboard inside of a desktop computer
+                    - The SATA cable has two cables, one is a seven-pin data cable, which does not supply any power, and the other is a 15-pin SATA power connector to provide the power to the device
+                    - SATA version 1 can support speeds of up to 1.5 gigabits per second, version 2 can support speeds of up 3 gigabits per second, and version 3 can support speeds of up to 6 gigabits per second
+                - o External SATA
+                    - A SATA cable on the outside of the case
+                - o PATA
+                    - The old IDE connectors with the exact same cables and connectors and standards but renamed for branding
+                    - Parallel devices have each cable support up to two devices and they both can communicate at the same time
+                - o Molex Power Connector
+                    - A 4-pin connector that would attach from the power supply directly to a device
+                - o SCIS
+                    - A legacy parallel bus connector that allows multiple devices to be Daisy chained together
+                    - A narrow SCIS can support up to 7 devices, but a wide SCIS can support up to 15 devices
+            - A hardware port is the external connection point for a particular type of bus interface. 
+            - A bus allows the transfer of data to and from devices. 
+            - The connector is the part of a peripheral cable that can be inserted into a port with the same shape or form factor.
+            - Each binary digit or bit (b) can have the value one or zero. Storage is often measured in multiples of eight bits, referred to as a byte (B). A lowercase “b” unit refers to a bit, while uppercase means a byte.
+            - Transfer rates are expressed in units per second of the following multiples of bits and bytes:
+            - 1000—Kilobits (Kb/s or Kbps) and kilobytes (KB/s and KBps).
+            - 1000x1000—Megabits (Mb/s) or megabytes (MB/s).
+            - 1000x1000x1000—Gigabits (Gb/s) and gigabytes (GB/s).
+        - 3.2 Given a scenario, install the appropriate RAM.
+            - RAM types
+                - Virtual RAM
+                - Small outline dual inline memory module (SODIMM)
+                - Double Data Rate 3 (DDR3)
+                - Double Data Rate 4 (DDR4)
+                - Double Data Rate 5 (DDR5)
+                - Error correction code (ECC) RAM
+            - Single-channel
+            - Dual-channel
+            - Triple-channel
+            - Quad-channel
+            - System Memory !
+                - o Random Access Memory (RAM)
+                    - Used to load applications and files into a non-persistent and fast storage area
+            - Addressing Memory !
+                - o Cache
+                - ▪
+                - High-speed memory
+                - o Storage
+                - ▪
+                - Mass storage device that holds more data but is slower than a cache
+                - o Mass Storage Devices
+                - ▪
+                - Permanent storage area
+                - o Random Access Memory (RAM) / System Memory
+                - ▪
+                - Temporary storage area/non-persistent storage
+                - o Disk Cache
+                - ▪
+                - Pulls the files from the disc into memory and replaces the old file
+                - o Mechanical system
+                - ▪
+                - Uses an electronic system that can access the RAM with instant speed
+                - o Addressing Memory
+                - ▪
+                - Processor reaching the files inside RAM
+                - Single Channel Memory Controller
+                - o 32 or 64 bits
+                - x86
+                - o 32-bit
+                - x64
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 26 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o 64-bit
+                - ▪
+                - An x86 or 32-bit processor can address a maximum
+                - of 4 GB of RAM
+                - ▪
+                - An x64 or 64-bit processor can access more than 4
+                - GB of RAM (8, 16, 32, or 64 GB)
+            - Memory Modules !
+                - o Single Bank
+                - ▪
+                - Can put any size of module in any slot
+                - Dual Inline Memory Module (DIMM)
+                - o With 240 or 184-pin connector
+                - o Dual Data Rate (DDR)
+                - ▪
+                - Most common type of memory
+                - PC133
+                - o 133 MHz
+                - o Throughput
+                - ▪
+                - Calculated based on the bus speed and the width of the data bus
+                - o Dynamic RAM (DRAM)
+                - ▪
+                - Oldest type of memory that requires frequent refreshing
+                - DRAM storage cell is dynamic
+                - o Synchronous DRAM (SDRAM)
+                - ▪
+                - First memory module that operates at the same speed as the
+                - motherboard bus (168-pin connector)
+                - PC66 (66 MHz bus)
+                - PC133 (133 MHz bus)
+                - PC266 (266 MHz bus)
+                - o Double Data Rate Synchronous Dynamic Random-Access Memory (DDR SDRAM)
+                - ▪
+                - Doubles the transfer speed of an SRAM module (184-pin connector)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 27 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Double Data Rate 2 Synchronous Dynamic Random-Access Memory (DDR2
+                - SDRAM)
+                - ▪
+                - Higher latency and has faster access to the external bus (240-pin
+                - connector)
+                - PC2-4200
+                - o 4200 MB/s or 4.2 GB/s
+                - o Double Data Rate 3 Synchronous Dynamic Random-Access Memory (DDR3
+                - SDRAM)
+                - ▪
+                - Runs at a lower voltage and at a higher speed than DDR2 (240 keyed pin
+                - connector)
+                - PC3-10600
+                - o 10600 MB/s or 10.6 GB/s
+                - ▪
+                - DDR3 throughput is 6.4 to 17 GB/s with a maximum module size of 8GB
+                - per memory module
+                - o Small Outline Dual In-line Memory Module (SODIMM)
+                - ▪
+                - Classified as DDR3, DDR4, or DDR5
+            - Multi-Channel Memory !
+                - o Multi-Channel Memory
+                - ▪
+                - Uses two different memory modules to increase the performance and
+                - throughput
+                - Single-channel Memory
+                - o 64-bit data bus
+                - Dual-channel Memory
+                - o 128-bit data bus
+                - ▪
+                - Interleaving
+                - Provides increased performance
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 28 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - In multi-channel configurations, use the same model, speed, and
+                - throughput of memory
+                - ▪
+                - Single-Channel
+                - Uses one memory module on one bus (64-bit data bus)
+                - ▪
+                - Dual-Channel
+                - Requires two memory modules and two memory slots on the
+                - motherboard (128-bit data bus)
+                - ▪
+                - Triple-Channel
+                - Uses three memory modules and three memory slots (192-bit
+                - data bus)
+                - ▪
+                - Quad-Channel
+                - Uses four memory modules and four memory slots (256-bit data
+                - bus)
+                - ▪
+                - Multiple modules
+                - Give faster speeds and add memory for storage
+            - ECC Memory !
+                - o Non-Parity Memory
+                - ▪
+                - Standard memory that does not check for errors and allows data to be
+                - put in or taken out
+                - o Parity Memory
+                - ▪
+                - Performs basic error checking and ensures the memory contents are
+                - reliable
+                - A parity check does basic calculation
+                - o Every bit has an associated parity bit
+                - ▪
+                - Bits can only be a zero or one
+                - o Error Correcting Code (ECC)
+                - ▪
+                - Detects and corrects an error
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 29 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Buffered / Registered Memory
+                - ▪
+                - Additional hardware (register) between memory and CPU
+                - The system requires buffering or registering the data to reduce
+                - the electrical load
+                - o Motherboard
+                - ▪
+                - Supports ECC modules
+                - o DDR5
+                - ▪
+                - Has an internal error checking for its modules
+                - DDR5 modules can still be sold as ECC or non-ECC modules
+            - Virtual Memory !
+                - o Virtual Memory/Page File
+                    - Space on a hard drive that is allocated by the OS and pretends to be memory
+                        - Check the available memory and the free memory
+                - o Page File or Swap Space
+                    - A file that is hidden on a storage device and pretend as system memory
+        - 3.3 Given a scenario, select and install storage devices.
+            - Hard drives
+                - Speeds
+                    - 5,400rpm
+                    - 7,200rpm
+                    - 10,000rpm
+                    - 15,000rpm
+                - Form factor
+                    - 2.5
+                    - 3.5
+            - SSDs
+                - Communications interfaces
+                    - Non-volatile Memory Express (NVMe)
+                    - SATA
+                    - Peripheral Component Interconnect Express (PCIe)
+                - Form factors
+                    - M.2
+                    - mSATA
+            - Drive configurations
+                - Redundant Array of Independent (or Inexpensive) Disks (RAID) 0, 1, 5, 10
+            - Removable storage
+                - Flash drives
+                - Memory cards
+                - Optical drives
+            - Hard Disk Drive (HDD) !
+                - o Hard Disk Drive (HDD)
+                - ▪ Form of mass storage device
+                - o Mass Storage Device
+                - ▪ Non-volatile storage device that holds the data when the system
+                - is powered down (GB or TB)
+                - o Internal Device
+                - ▪ Device that is placed inside the computer case or tower
+                - o External Device
+                - ▪ Device that is placed outside the computer case or tower and connected
+                - to an external port
+            - ● Solid State Drive (SSD) !
+                - o Solid State Drive
+                - ▪ Uses flash memory technology to implement mass storage
+                - ▪ Faster and more durable
+                - o Main Form Factors
+                - ▪ 2.5 inch
+                - ● Used when replacing an HDD inside a laptop or a small desktop
+                - ▪ 1.8 inch
+                - ● Used inside of small laptops
+                - ▪ M2
+                - ● Like a memory chip, small, sleek, and light
+                - ● Used in a laptops
+                - o Connections
+                - ▪ Older SSDs rely on SATA connectors (7+15 pin SATA)
+                - - 35 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0**CompTIA A+ Core 1**
+                - Study Notes
+                - ● Used in both 2.5- and 1.8-inch SSDs
+                - ▪ mSATA
+                - ● Allows the SSD to be used as an adapter card that can be plugged
+                - into a combined data and power port on the motherboard
+                - ● SSDs are faster than SATA speeds
+                - ▪ NVMe (Non-Volatile Memory Express)
+                - ● A communication protocol used with the M2 form factor to plug
+                - directly into the motherboard
+                - ▪ PCIe (Peripheral Component Interconnect Express)
+                - ● Use PCIe slots on the motherboard
+                - o A combination of SSDs and HDDs can be advantageous
+                - ▪ Higher speed from the SSD
+                - ▪ Larger and cheaper storage from the HDD
+                - o Hybrid Drive
+                - ▪ Created as a transitional technology
+                - ▪ Less common today
+                - ▪ Looks like a hard drive (2.5-inch form factor)
+                - ▪ Has both an SSD and an HDD in it
+            - ● RAID !
+                - o Redundant Array of Independent Disks (RAID)
+                - ▪ Combination of multiple physical hard disks that is recognized by the
+                - operating system
+                - ● RAID 0
+                - o RAID 0 is great for speed but provides no data redundancy
+                - o RAID 0 has no loss of space on the disks
+                - ● RAID 1
+                - o RAID 1 provides full redundancy
+                - - 36 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0**CompTIA A+ Core 1**
+                - Study Notes
+                - ● RAID 5
+                - ● RAID 6
+                - ● RAID 10
+                - o Striping with parity
+                - o One disk can be lost without losing any data
+                - o Double striping with parity
+                - o Two disks can be lost without losing any data
+                - o Redundancy and performance
+                - o Failure Resistant
+                - ▪ Protection against the loss of erased data (RAID 1/RAID 5)
+                - o Fault Tolerant
+                - ▪ Raid can function even when a component fails (RAID 1/RAID 5/RAID 6)
+                - o Disaster Tolerant
+                - ▪ RAID with two independent zones with full data access (RAID 10)
+                - ▪ RAIDs provide redundancy and high availability
+            - ● Removable Storage !
+                - o Hot-Swappable
+                - ▪ Capable of being removed or replaced without disruption or powering off
+                - the device
+                - ▪ Hot-swappable drives are safe to remove without losing the data
+                - ● This feature gives the ability to add/remove additional storage
+                - o Advanced Host Controller Interface (AHCI)
+                - ▪ Technical standard developed by Intel that allows hot-swappable
+                - capability with SATA devices
+                - o SATA was developed as a replacement for PATA as an internal connector
+                - o The newest versions of USB have speeds of 10, 20, or 40 Gbps
+                - o Drive Enclosure
+                - - 37 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0**CompTIA A+ Core 1**
+                - Study Notes
+                - ▪ Takes an internal hard drive and puts it in an enclosure
+                - ● Memory Stick
+                - o Proprietary protocol that is used on Sony devices
+                - ● The original secure digital (SD) cards had a maximum capacity of 2
+                - GB
+                - o Original (Up to 25 MB/s)
+                - o UHS-1 (Up to 108 MB/s)
+                - o UHS-2 (Up to 312 MB/s)
+                - o UHS-3 (Up to 624 MB/s)
+                - ● A tape drive uses a magnetic tape and is placed into a reader
+                - o Standard Tape
+                - ▪ 140 GB data
+                - o LTO Ultrium Tape
+                - ▪ 3 TB data
+                - o A removable mass storage device is any device that can store data and can be
+                - carried
+                - o An external hard drive or SSD is the same type of device that is used inside a
+                - system
+            - ● Optical Drives !
+                - o CD (Compact Disc)
+                - ▪ Oldest form of optical drive that stores 74 to 80 minutes of music (650-
+                - 700 MB)
+                - o DVD (Digital Versatile Disc)
+                - ▪ Stores 4.7 GB or 8.4 GB (DL)
+                - o BD (Blu-ray Disc)
+                - ▪ Stores 25 GB or 50 GB (DL)
+                - o Categories of Optical Drives
+                - - 38 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0**CompTIA A+ Core 1**
+                - Study Notes
+                - ▪ Read-only (ROM)
+                - ▪ Write-once (R)
+                - ▪ Write-many/Erasable (RW/RAM/RE)
+                - ▪ The CD-ROM, DVD-ROM, or BD-ROM is a read-only disc
+                - ● Write-once (R)
+                - o Writing that cannot be erased (CD-R, DVD-R, DVD+R, and
+                - BD-R)
+                - ▪ CD-RW allows to write and erase the file to create a new one
+                - ● DVD-RW versions are like the CD-RW versions
+                - ● The DVD-RAM discs are like DVD-RW but have a different type of
+                - form factor
+                - ● Blu-ray Disc (BD-RE)
+                - o Has write-many type of disc called erasable disc
+                - o BD-RE is like CD-RW or DVD-RW
+                - o The optical drive speeds are measured using the X-rating
+                - ▪ CD (1X = 150 KB/s)
+                - ● 1X = Music
+                - ● 2X/44X/16X/24X =Data
+                - ● 52X drive is 150 KB/s multiplied by 52 (7800 KB/s or 7.6 MB/s)
+                - ▪ DVD (1X = 1.385 MB/s)
+                - ▪ Blu-ray (1X = 4.5 MB/s)
+        - 3.4 Given a scenario, install and configure motherboards, central processing units (CPUs), and add-on cards.
+            - what is a motherboard 
+            - what is a form factor
+            - Motherboards !
+                - o Motherboard
+                    - Printed circuit board that contains computer components and provides connectors
+                - o Input
+                    - Process of accepting data in a form that the computer can use
+                - o Output
+                    - Process of displaying the processed data or information
+                - o Processing
+                    - Actions performed by the CPU when receiving information
+                    - Processing is conducted by the CPU or GPU
+                - o Storage
+                    - Process of saving or retaining digital data, temporarily or permanently
+                        - Temporary storage
+                            - o Non-persistent
+                        - Permanent storage
+                            - o Persistent
+                    - Data transferred across the motherboard measures the speed of data in MHz or GHz
+                    - Volatile storage
+                        - o Speed is fast
+                    - Non-volatile storage
+                        - o Speed decreases rapidly
+            - Form Factors !
+                - o Advanced Technology eXtended (ATX)
+                    - Full-size motherboard and measures 12” x 9.6” in size (305mm x 244 mm)
+                - o Mini-ATX
+                    - Smaller than ATX but contains the same features (11.2” x 8.2” / 284mm x 208 mm)
+                - o Micro-ATX (mATX)
+                    - Measures 9.6 inches squared (244mm x 244mm)
+                    - Micro-ATX is the same as ATX but only has 4 expansion card slots
+                - o Information Technology eXtended (ITX)
+                    - Designed as a replacement for the ATX but never produced
+                - o Mini-ITX
+                    - Measures 6.7” x 6.7” with only one expansion slot (170 x 170mm squared)
+                        - Nano-ITX
+                        - Pico-ITX
+                        - Mobile-ITX
+                - o Form Factor
+                    - Shape, layout, and type of case in a power supply
+                    - ATX
+                        - o Full-size ATX
+                        - o Mini-ATX
+                        - o Micro-ATX
+                    - ITX
+                        - o Mini-ITX
+            - Motherboard form factor
+                - Advanced Technology eXtended (ATX)
+                - Information Technology eXtended (ITX)
+            - Motherboard connector types
+                - Peripheral Component Interconnect (PCI)
+                - PCI Express (PCIe)
+                - Power connectors
+                - SATA
+                - eSATA
+                - Headers
+                - M.2
+            - Motherboard compatibility
+                - CPU sockets
+                    - M Advanced Micro Devices, Inc. (AMD)
+                    - M Intel
+                - Server
+                - Multisocket
+                - Desktop
+                - Mobile
+            - Basic Input/Output System (BIOS)/Unified Extensible Firmware Interface (UEFI) settings
+                - Boot options
+                - USB permissions
+                - Trusted Platform Module (TPM) security features
+                - Fan considerations
+                - Secure Boot
+                - Boot password
+            - Encryption
+                - TPM
+                - Hardware security module (HSM)
+            - CPU architecture
+                - x64/x86
+                - Advanced RISC Machine (ARM)
+                - Single-core
+                - Multicore
+                - Multithreading
+                - Virtualization support
+            - Expansion cards
+                - Sound card
+                - Video card
+                - Capture card
+                - NIC
+            - Cooling
+                - Fans
+                - Heat sink
+                - Thermal paste/pads
+                - Liquid
+            - CPU Architecture !
+                - o CPU
+                - The brains of the computer that execute the different programing codes
+                - in the software and firmware
+                - ▪
+                - The CPU is performing the basic operations for every instruction in the
+                - computer
+                - ▪
+                - Once the processor has done the execution of the instruction, it will send
+                - that information back to the memory so that it can be stored and used
+                - for later use
+                - o X86
+                - ▪
+                - Can support a maximum of 4 gigabytes of Ram
+                - o X64
+                - ▪
+                - An extension of the X86 instruction set to be able to support 64-bit
+                - operations
+                - ▪
+                - 32-bit systems can only run 32-bit programs, but 64-bit processors can
+                - run 64-bit programs and 32-bit programs because they are fully
+                - backwards compatible
+                - o Advanced RISC Machine (ARM)
+                - ▪
+                - Used for low-power devices (tablets and cell phones)
+                - Extended battery life
+                - Produces less heat
+                - ▪
+                - RISC systems use code to do tasks
+            - CPU Sockets !
+                - o ZIF
+                - ▪
+                - The ability to insert the CPU without pressing down and applying
+                - pressure to it
+                - ▪
+                - If you bend, snap, or break a pin from a processor, the entire processor is
+                - no longer functional
+                - o LGA Socket
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 15 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - A form factor that positions all the pins to be able to connect the CPU
+                - processor into the socket
+                - o PGA Form Factor
+                - ▪
+                - The processor has the pins and the socket have holes which allows the
+                - holes to align when installing the processor
+                - o Multi-Socket
+                - ▪
+                - Multiple CPU's or processors installed on a motherboard
+                - ▪
+                - You cannot upgrade or change out the processor on a mobile device
+                - ▪
+                - The two main types of CPU sockets are LGA, which is made by Intel, and
+                - we have PGA, which has made by AMD.
+            - CPU Features !
+                - o Simultaneous Multithreading (SMT) / Hyper-threading
+                - ▪
+                - Single stream of instructions is being sent by a software application to a
+                - processor
+                - ▪
+                - Manufacturers developed a way to allow software to run multiple parallel
+                - threads at the same time
+                - o Symmetric Multiprocessing (SMP)
+                - ▪
+                - Traditional workstation and servers have multiple processors
+                - o Multi-core Processors
+                - ▪
+                - Single CPU with multiple processors inside
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 16 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Multiple processors have multiple cores inside the CPU
+                - o Dual-core Processor
+                - ▪
+                - Two CPUs inside a single chip
+                - o Quad-core Processor
+                - ▪
+                - Four CPUs inside a single chip
+                - o Hexa-core Processor
+                - ▪
+                - Six CPUs inside a single chip
+                - o Octa-core Processor
+                - ▪
+                - Eight CPUs inside a single chip
+                - Hyper-threading / SMT
+                - Symmetric Multiprocessing
+                - Multi-core Processors
+                - Virtualization
+                - o VT and AMD-V provide processor extensions to support virtualization
+                - o Virtualization allows running multiple systems on a single physical host
+                - ▪
+                - Extended Page Table (EPT)
+                - Intel
+                - ▪
+                - Rapid Virtualization Indexing (RVI)
+                - AMD
+                - o Second Level Address Translation (SLAT)
+                - ▪
+                - Features of software virtualization are underlying and supported by the
+                - hardware processor
+            - Installing the Motherboard & CPU !
+                - 1. Review the motherboard’s documentation
+                - 2. Place the motherboard aligned at the rear of the case
+                - 3. Insert standoffs that match the hole in the motherboard
+                - 4. Install the processor and memory modules before installing the motherboard
+                - 5. Verify the standoffs are properly aligned prior to installing the motherboard
+                - 6. Secure the standoffs using the appropriate screw type
+                - 7. Install the power supply, disk drives, and add-on cards
+            - Expansion Cards !
+                - o PCI
+                - ▪
+                - 32-bit expansion card
+                - PCI 32-bit cards support only a maximum bus speed of 33 MHz or
+                - 133 MBps
+                - o PCI-X
+                - ▪
+                - 64-bit expansion card (133 MHz)
+                - o PCI-X 2.0
+                - ▪
+                - 266 MHz up to 533 MHz
+                - PCI and PCI-X are used for networking cards and audio cards
+                - o Accelerated Graphics Port (AGP)
+                - ▪
+                - Used for video graphics cards
+                - AGP 1x
+                - AGP 2x
+                - AGP 4x
+                - AGP 8x
+                - o PCIe (PCI Express) replaces PCI, PCI-X, and AGP
+                - ▪
+                - PCIe x1
+                - ▪
+                - PCIe x4
+                - ▪
+                - PCIe x8
+                - ▪
+                - PCIe x16
+                - PCIe x1 is used for modems, network cards, wireless cards,
+                - input/output devices, and audio cards
+                - PCIe x16 is used for graphics cards
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 18 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Peripheral Component Interconnect Express (PCIe)
+                - ▪
+                - Connects to the bus to get data to and from the motherboard for
+                - external devices
+                - ▪
+                - PCIe bus is determined by the motherboard and its form factor
+                - 16 PCIe lanes
+                - 24 PCIe lanes
+                - 32 PCIe lanes
+                - ▪
+                - PCIe x16 and PCIe x1 maximize the number of lanes used on a
+                - motherboard
+                - PCIe 1.0
+                - PCIe 2.0
+                - PCIe 3.0
+                - PCIe 4.0
+                - PCIe 5.0
+                - ▪
+                - All PCIe slots provide 25 watts of power
+                - ▪
+                - PCIe x16 card slot provides up to 75 watts of power
+                - Up-plugging
+                - o Putting smaller card in a larger slot
+                - Down-plugging
+                - o Putting larger card in a smaller slot
+                - o Mini PCIe
+                - ▪
+                - Standard PCIe card with smaller form factor
+                - ▪
+                - Mini PCIe cards are used inside of laptops, specifically for wireless
+                - networking
+                - PCIe x1
+                - o Modems
+                - o Networking cards
+                - o Wireless cards
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 19 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Audio cards
+                - PCIe x16
+                - o Graphics and video cards (3D)
+                - o Gaming systems
+            - Expansion Card Types !
+                - o Video Card/Graphic Adapter
+                - ▪
+                - Gives quality signal for monitors
+                - o Graphics Processing Unit (GPU)
+                - ▪
+                - A specialized processor designed to accelerate graphics rendering
+                - o High Speed Memory
+                - ▪
+                - Embeds the memory to give additional capability to offload from the
+                - system
+                - o Graphical Ports
+                - ▪
+                - Installed outside of the card (Thunderbolt, DisplayPort, and HDMI)
+                - o Video Capture Card
+                - ▪
+                - Takes video signals and processes them inside the computer
+                - ▪
+                - used for recording footage and for security devices
+                - o TV Capture Card
+                - ▪
+                - Cables are plugged into a computer to get all cable TV channels
+                - o Sound/Audio Card
+                - ▪
+                - Gives better output through audio
+                - RJ45 Port
+                - o 1 Gbps
+                - Install NIC into PCIe x1 slot
+                - o 10 Gbps
+                - ST / SC / MT-RJ connector
+                - o Supports fiber card
+                - o Riser Card
+                - ▪
+                - Special type of expansion card on a motherboard
+            - Cooling and Power !
+                - OBJ 3.4: Given a scenario, install and configure motherboards, central processing units
+                - (CPUs), and add-on cards
+                - OBJ 3.5: Given a scenario, install or replace the appropriate power supply
+                - Cooling the System
+                - o Thermal Load
+                - ▪
+                - Heat from different components inside the computer
+                - o Passive Cooling
+                - ▪
+                - Type of cooling that doesn’t rely on moving parts or power
+                - o Heat Sink
+                - ▪
+                - Finned metal device that radiates heat away from the processor
+                - o Thermal Paste
+                - ▪
+                - Compound that ensures heat transfer by eliminating air gaps
+                - Passive cooling requires no power to operate and is silent when
+                - operating
+                - o Active Cooling
+                - ▪
+                - Uses a fan to cool down the heat from the device
+                - Liquid Cooling
+                - o Closed Loop System
+                - ▪
+                - Cooling of a single component
+                - o Open Loop System
+                - ▪
+                - Liquid cooling-based system of different components
+                - o Liquid Cooling
+                - ▪
+                - High performance systems
+            - BIOS and UEFI !
+                - o Basic Input/Output System (BIOS)
+                - ▪
+                - Program that a CPU uses to start the computer system
+                - ▪
+                - BIOS serves as a method of configuring the motherboard using a text-
+                - based interface
+                - o Firmware
+                - ▪
+                - Software on a chip and contains BIOS program code in the flash memory
+                - of a motherboard
+                - o Unified Extensible Firmware Interface (UEFI)
+                - ▪
+                - Supports 64-bit processors and provides a GUI
+            - Boot Options !
+                - o Basic Input/Output System (BIOS)
+                - ▪
+                - Program a computer’s microprocessor uses to start and boot after being
+                - turned on
+                - ▪
+                - BIOS is an example of firmware
+                - Power-on self-test
+                - Hardware configuration
+                - Boot order setup
+                - o Read-Only Memory (ROM)
+                - ▪
+                - Type of chip embedded in the motherboard and can be upgraded
+                - through flashing
+                - o The new CMOS uses an internal lithium-ion battery that can last up to 10 years
+                - o Power-On Self-Test (POST)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 31 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Diagnostic testing sequence to check the computer’s basic input/output
+                - system
+                - o Variable beeps are used to tell what is wrong with the system
+                - ▪
+                - Keyboard is not detected
+                - Two short beeps and one long beep
+                - o The BIOS has a low-level OS which allows to take input and give output to
+                - the basic components
+                - ▪
+                - To configure the settings inside CMOS, enter the BIOS configuration
+                - environment
+                - ▪
+                - BIOS relied on a text-based menu system and a keyboard as its system of
+                - input
+                - o Unified Extensible Firmware Interface (UEFI)
+                - ▪
+                - Updated form of BIOS that allows keyboard and mouse as input and
+                - provides a GUI
+                - Supports 64-bit systems
+                - Supports larger HDDs and SSDs (9.4 zettabytes ~ 9.4 x 10^21
+                - bytes)
+                - Supports the new GUID Partition Table (GPT) format
+                - Faster boot-up system
+                - Uses a larger ROM size
+                - ▪
+                - Disable booting from an optical drive or USB drive
+                - ▪
+                - Configure the system to boot from the installed hard drive using the
+                - installed OS
+                - ▪
+                - Boot the OS using PXE as the primary option
+                - o Flashing
+                - ▪
+                - Performed during upgrades, security fixes, or feature improvements
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 32 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Back up the configuration and information
+                - Use a USB flash drive to flash the firmware
+                - The BIOS or UEFI will copy the firmware to the system and
+                - overwrite the old code
+            - BIOS/UEFI Security !
+                - o BIOS and UEFI are used during loading and booting up the OS
+                - o Computers that rely on BIOS use MBR to hold the boot information
+                - o Computers that rely on UEFI use GPT to hold the boot information
+                - o Supervisor/Administrator/Setup Password
+                    - Used to protect access to the BIOS or UEFI configuration program and prevents access from unauthorized users
+                - o User/System Password
+                    - Used to lock access to the computer
+                - o Storage/Hard Drive Password
+                    - Password that locks access to a hard drive connected to the system and requires the end user’s password
+                - o Secure Boot
+                    - Enabled in the UEFI interface and settings and is not supported by BIOS
+                - o Root kit
+                    - a special type of malware
+                - o Modern systems are configured to enable or disable the USB ports on the motherboard
+                - o Disable the ability of USB to read and write from mass storage devices
+                    - Set passwords
+                    - Enable secure boot
+                    - Restrict or disable USB ports
+            - TPM and HSM !
+                - o Hardware RoT is the foundation of all secure operations of a computing system
+                - o Hardware Root of Trust (RoT)
+                    - Cryptographic module embedded in a computer system that endorses trusted execution and attests to boot settings and metrics
+                - o A hardware RoT is used to scan the boot metrics in the OS files to verify signatures and then use them to sign the report
+                - o Trusted Platform Module (TPM)
+                    - Specification for hardware-based storage of digital certificates, keys, hashed passwords, and other user and platform identification information
+                        - TPM is a hardware RoT
+                        - Secured boot-up
+                        - Provides encryption
+                - A TPM can be managed in Windows via tpm.msc console or through group policy
+                - o Hardware Security Module (HSM)
+                    - Appliance for generating and storing cryptographic keys that is less susceptible to tampering and insider threats
+            - BIOS/UEFI Cooling Options !
+                - o BIOS and UEFI can configure fans
+                - ▪ Quiet mode
+                - ● Reduces the fan speed and allows higher temperatures to occur
+                - ▪ Balanced mode
+                - ● Normal setting on most computers by default
+                - ▪ Cool mode
+                - ● Able to run the fans harder and faster to create more air flow
+                - o Overclocking the processor generates excess heat
+                - o The motherboard has built-in temperature sensors
+                - ▪ Temperature is rising
+                - ● Speed up
+                - ▪ Temperature is lower than set point
+                - ● Turn off or slow down
+        - 3.5 Given a scenario, install or replace the appropriate power supply.
+            - Input 110-120 VAC vs. 220-240 VAC
+            - Output 3.3V vs. 5V vs. 12V
+            - 20-pin to 24-pin motherboard adapter
+            - Redundant power supply
+            - Modular power supply
+            - Wattage rating
+            - Power Supply Unit (PSU) !
+                - o Alternating current (AC)
+                    - Cycled between positives and negatives repeatedly
+                - o The main purpose of power supply is to deliver DC to all components inside the PC when receiving an AC power supply
+                - o Modular PSU / Modular Power Supply Unit
+                    - Allows to unhook the connectors and detach from the unit
+                    - Modular power supply frees up space inside of the computer
+            - Power Supply Connectors !
+                - o Main Board / Motherboard Adapter
+                - ▪
+                - Provides power to the motherboard
+                - ATX Standard
+                - o 20-pin connector
+                - ATX 12V
+                - o 24-pin connector
+                - 20+4 Pin
+                - o Two connectors are coupled together before plugging into
+                - a 24-pin connector
+                - o Processor Power/ CPU Power
+                - ▪
+                - Has a four, six, or eight-pin connector
+                - o Molex Connector
+                - ▪
+                - Used for IDE and PATA hard disks, CDs, and DVD drives
+                - o Y Connector
+                - ▪
+                - One connector that can support multiple devices
+            - Input and Output Voltages !
+                - o 120V AC (Low Line Power)
+                - ▪
+                - US-based power supply
+                - o 230V AC (High Line Power)
+                - ▪
+                - Europe and Asia power supply
+                - o Most power supplies will support multi-voltage outputs
+                - o Voltage Sensing / Dual Voltage Power Supplies
+                - ▪
+                - Detects the outlet and converts it into the voltage of DC
+                - o Rail
+                - ▪
+                - Wire that provides current at a particular voltage
+                - 12 VDC Rail
+                - o Cable or wire that provides 12 VDC
+                - o The 12 VDC rail is the most used voltage in the PC
+            - Wattage Rating !
+                - o Wattage Rating
+                - ▪
+                - Power supply’s output capacity or capability
+                - ▪
+                - The devices inside a computer require power from a power supply
+                - o Amperage to Wattage
+                - ▪
+                - A x V
+                - ▪
+                - I x V
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 24 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o The power supply has increments of 50 or 100 Watts
+                - ▪
+                - Buy a power supply that is bigger than calculated
+                - o How much power is being drawn out of a wall outlet?
+                - ▪
+                - A 500-watt power supply that is 70% efficient will draw 714 watts
+                - ▪
+                - A 500-watt power supply that is 80% efficient will draw 625 watts
+        - 3.6 Given a scenario, deploy and configure multifunction devices/printers and settings.
+            - Properly unboxing a device – setup location considerations
+            - Use appropriate drivers for a given OS
+                - Printer Control Language (PCL) vs. PostScript
+            - Device connectivity
+                - USB
+                - Ethernet
+                - Wireless
+            - Public/shared devices
+                - Printer share
+                - Print server
+            - Configuration settings
+                - Duplex
+                - Orientation
+                - Tray settings
+                - Quality
+            - Security
+                - User authentication
+                - Badging
+                - Audit logs
+                - Secured prints
+            - Network scan services
+                - Email
+                - SMB
+                - Cloud services
+            - Automatic document feeder (ADF)/flatbed scanner
+            - Unboxing and Setup !
+                - o Check the manufacturer’s instructions before starting the process
+                - o During the unboxing, look for extra pieces, cables, documentation, or driver disks
+                    - Printhead
+                        - Inkjet printer
+                    - Drum and toner cartridges
+                        - Laser printer
+                - o The hot temperature causes condensation and moisture inside the printer
+                - o The location of the printer should be well-ventilated
+                - o The location of the printer should be convenient
+                    - Print queuing system
+                    - Print authentication system
+            - Printer Connectivity !
+                - o USB Connection
+                - ▪
+                - Found in a home environment
+                - ▪
+                - Windows has the ability to detect a printer using plug and play
+                - o Ethernet Connection
+                - ▪
+                - Network cable that uses an RJ45 port
+                - ▪
+                - A printer with Ethernet capability supports DHCP
+                - o Wireless Connection
+                - ▪
+                - Comes with either Wi-Fi or Bluetooth
+                - Infrastructure Mode
+                - o Printer is connected to the access point
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 110 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - Wi-Fi Direct Mode
+                - o Allows the printer to act as an access point
+                - o Bluetooth
+                - ▪
+                - Uses a wireless point-to-point connection from the printer
+                - to the computer
+            - Printer Drivers !
+                - o Printer
+                - ▪
+                - Program that controls physical printers
+                - o Printer Driver
+                - ▪
+                - Integrated into a printer
+                - ▪
+                - You must have administrative rights to install print drivers
+                - o Windows 11
+                - ▪
+                - Start > Settings > Bluetooth & devices > Printers & scanners
+                - o Windows 10
+                - ▪
+                - Start > Settings > Devices > Printers & scanners
+                - o MacOS
+                - ▪
+                - Settings > Printers & scanners
+                - o Page Description Language (PDL)
+                - ▪
+                - Used to create a raster file from the print commands that are sent by a
+                - software application
+                - o Scalable Font
+                - ▪
+                - Capable of being resized to any size
+                - o Vector Graphic
+                - ▪
+                - Size can be changed before printing
+                - Bitmap
+                - o Distorted
+                - Vector
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 111 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Clear
+                - Additive
+                - o Display
+                - Subtractive
+                - o Printer
+                - o Printer Control Language (PCL)
+                - ▪
+                - Developed by HP and is closely tied to the features of different printer
+                - models
+                - o Postscript
+                - ▪
+                - Created by Adobe and is designed to be a device-independent PDL
+                - o XML Paper Specification (XPS)
+                - ▪
+                - Microsoft’s page description language (PDL)
+                - o Portable Document Format (PDF)
+                - ▪
+                - Created by Adobe which keeps a file’s original look when viewed or
+                - printed on different systems
+                - ▪
+                - PDF is larger in size than XPS format files
+                - 1. When installing a printer, also install the appropriate driver
+                - 2. Two generic formats: PCL and Postscript
+                - 3. Virtual printers: XPS and PDF
+            - Sharing Print Devices !
+                - o Print Server
+                - ▪
+                - Software application or hardware device that manages print requests and
+                - printer queue status information
+                - ▪
+                - Centralized print server allows to control, to configure, and to
+                - troubleshoot the devices remotely from a network
+                - ▪
+                - Print servers are suitable for small and home offices with up to fifty
+                - servers
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 112 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Embedded print servers support one printer
+                - o Microsoft Management Console (MMC)
+                - ▪
+                - Allows to share network printers and centralize the print server from the
+                - centralized window server
+                - o Printer Share
+                - ▪
+                - Allows to connect a printer using Bluetooth or USB
+                - o Print Spooler
+                - ▪
+                - Service built into the Windows OS and exists to help print jobs
+            - Securing Print Devices !
+                - o User Authentication
+                    - Sets permissions for the printer that require a log in with a username or password
+                - o Audit Log
+                    - Record of jobs that have been sent and printed on a particular device
+                - o Secured Print
+                    - Device held on the printer until the user’s authentication
+            - Scanning Services !
+                - o Scanning
+                    - Allows the printer to be used as a copy machine or a scanner
+                - o Scanner
+                    - Digital imaging device
+                - o Optical Character Recognition (OCR)
+                    - Convert scanned text into digital documents that can be manipulated using a word processing program
+        - 3.7 Given a scenario, install and replace printer consumables.
+            - Laser
+                - Imaging drum, fuser assembly, transfer belt, transfer roller, pickup rollers, separation pads, duplexing assembly
+                - Maintenance: Replace toner, apply maintenance kit, calibrate, clean
+                - Imaging process: processing, charging, exposing, developing, transferring, fusing, and cleaning
+            - Inkjet
+                - Ink cartridge, print head, roller, feeder, duplexing assembly, carriage belt
+                - Calibration
+                - Maintenance: Clean heads, replace cartridges, calibrate, clear jams
+            - Thermal
+                - Feed assembly, heating element
+                - Special thermal paper
+                - Maintenance: Replace paper, clean heating element, remove debris
+                - Heat sensitivity of paper
+            - Impact
+                - Print head, ribbon, tractor feed
+                - Impact paper
+                - Maintenance: Replace ribbon, replace print head, replace paper
+            - 3-D printer
+                - Filament
+                - Resin
+                - Print bed
+            - Laser Printers !
+                - o Laser Printer
+                - ▪
+                - Creates an entire page at one time during the printing process
+                - o Image Drum
+                - ▪
+                - Main component that creates the image to be applied to the paper
+                - o Fuser Assembly
+                - ▪
+                - Heats up and melts the toner onto the page to adhere properly to the
+                - page
+                - o Transfer Belt/Roller
+                - ▪
+                - Used to transfer the image from the image drum and become fused
+                - o Pickup Roller
+                - ▪
+                - Used to pick up the paper from the feed tray and feed it through the
+                - system
+                - o Paper Separation Pad
+                - ▪
+                - Helps the pickup rollers to ensure they only pick up a single piece of
+                - paper at a time
+                - o Duplexing Assembly
+                - ▪
+                - Moves the paper from the front to the back
+                - o A toner cartridge is a plastic housing that contains toner powder
+                - o The drums last longer than the toner
+                - o Processing
+                - ▪
+                - The OS uses a print driver to translate what’s on the screen to print
+                - o Most laser printers support memory upgrading using a SODIMM module
+                - o Charging
+                - ▪
+                - The imaging drum is conditioned with the primary charge roller
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 114 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Exposing
+                - ▪
+                - The surface coding of the photosensitive imaging drum is losing its charge
+                - when exposed to light
+                - o Developing
+                - ▪
+                - The laser printer takes the toner and applies it to a developer roller
+                - o Transferring
+                - ▪
+                - Moving the toner from the imaging drum into the print media
+                - o Fusing
+                - ▪
+                - The fuser squeezes the paper between a hot roller and a pressure roller
+                - o Cleaning
+                - ▪
+                - The photosensitive drum needed to be cleaned and get all the remaining
+                - toner particles cleaned off
+                - o Charging voltage is -600 VDC (negative 600 volts DC)
+                - o Most laser printers have a duplexing assembly installed
+            - Laser Printer Maintenance !
+                - o Turn off the laser printer and allow it to cool down
+                - o Loading paper
+                - ▪
+                - Buy laser paper that is rated for the type of printer
+                - ▪
+                - Store the paper in a nice dry area that does not have high humidity or
+                - excessive dust
+                - o Toner cartridges replacement
+                - ▪
+                - Standard toner cartridge has 2500 pages
+                - ▪
+                - High-yield cartridge has 6000 pages
+                - o Use of maintenance kit
+                - ▪
+                - Feed rollers pull up one sheet at a time and feed it through the system
+                - ▪
+                - Transfer rollers are used to take the toner off the imaging drum and
+                - apply it to the paper
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 115 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Fuser unit is responsible for heating up the toner and making it bond to
+                - the page
+                - ▪
+                - Page count indicates when to change the feed roller, transfer roller, or
+                - the fuse unit
+                - o Calibration
+                - ▪
+                - Process by which the printer determines the print density or color
+                - balance to use
+                - o Cleaning the printer
+                - ▪
+                - If toner gets on the skin, wash it with cold water
+                - ▪
+                - Do not use compressed air
+                - ▪
+                - Some printers with filters must be kept free from dust and dirt
+            - Inkjet Printers !
+                - o Inkjet printer creates an image on the paper through a nozzle or jet on a print
+                - head onto the paper
+                - o High-end inkjet printers have seven different cartridges
+                - o Printhead
+                - ▪
+                - Device that takes the droplets of ink and directs into the paper
+                - o Piezoelectric/Charge Method
+                - ▪
+                - Uses a nozzle that reacts to changes in voltage
+                - o Thermal Method
+                - ▪
+                - Used by HP, Canon, and Lexmark printers, and relies on heating up the
+                - ink in the nozzle of the printhead
+                - o Thermal method replaces the printhead when replacing
+                - the ink cartridge
+                - o Piezoelectric method does not require to replace the printhead when replacing
+                - the ink cartridge
+                - o Roller
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 116 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Responsible for advancing the paper through the inkjet printer
+                - o Feeder
+                - ▪
+                - Allows multiple pieces of paper in a tray to be selected one piece of
+                - paper at a time and passes it to the roller
+                - o Duplexing Assembly
+                - ▪
+                - Allows an inkjet printer to print on both sides of a piece of paper
+                - o Carriage Belt/Carriage System
+                - ▪
+                - Allows the printhead to move back and forth across the page
+                - o Unidirectional Printing
+                - ▪
+                - Printhead will only apply ink from left to right
+                - o Bi-directional Printing/Two-Directional Printing
+                - ▪
+                - Apply ink from left to right and from right to left
+            - Thermal Printers !
+                - o Thermal Printer
+                - ▪
+                - Type of printer that uses a heating element to create an image
+                - o Thermal paper works in high-speed environments
+                - o Thermal ribbon has a mixture of colors (CMYK) and is used to create the heat
+                - transfer
+                - o The number of pins on the thermal printhead determines the quality of the
+                - printout
+                - ▪
+                - Laser Printer
+                - 300 - 600 dpi
+                - ▪
+                - Thermal Printer
+                - 100 - 300 dpi
+                - o Color Thermal Printer
+                - ▪
+                - Uses thermal ribbon to create images
+                - o Replacing the paper
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 117 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Open the printer case
+                - ▪
+                - Insert the role (shiny part facing outward)
+                - ▪
+                - Place the end of the paper by the printhead and close again
+                - o Cleaning the heating element
+                - ▪
+                - Use isopropyl alcohol with cotton swab to clean the printhead
+                - o Removing debris
+                - ▪
+                - Unplug the thermal printer
+                - ▪
+                - Take out the paper role
+                - ▪
+                - Clean the feed mechanism
+            - Impact Printers !
+                - o Impact printers are measured based on the quality of the dots
+                - o Impact printer has the highest resolution of 240 dpi
+                - o Tracks
+                - ▪
+                - Series of holes going down the side of the paper with a perforation
+                - between the regular paper and tracks
+                - o Printhead
+                - ▪
+                - Device that has a series of pins that make up the dot matrix that forms
+                - the image
+                - o Ribbon
+                - ▪
+                - Fabric or material held within a plastic housing in front of the printhead
+                - o Tractor Feed
+                - ▪
+                - Exists on both sides of the printer and pulls the paper through the printer
+                - using tractor fed paper
+                - o Power off the printer and let it cool down for 30 to 60 minutes
+            - 3-D Printers !
+                - o 3D Printer
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 118 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Type of printer that creates images in three dimensions (height, width,
+                - and depth)
+                - o A slice is one layer of the overall 3D model
+                - o Print bed/Build plate
+                - ▪
+                - Flat plate where the material will be extruded and built
+                - o Bed/Build Surface
+                - ▪
+                - Sheet placed on top of the base plate that hold the object into position
+                - while printing
+                - o Extruder
+                - ▪
+                - Printhead for 3D printers
+                - o Fan
+                - ▪
+                - Helps to cool down the melted filament to retain the consistency
+                - o Filament
+                - ▪
+                - Ink for 3D printers (1.75 mm or 3 mm)
+    - 4.0 Virtualization and Cloud Computing 11%
+        1. Creating a [virtual](https://en.m.wiktionary.org/wiki/virtual) version of common computing [hardware](https://en.m.wiktionary.org/wiki/hardware) at the same abstraction level.
+        2. the practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer.
+        - 4.1 Summarize cloud-computing concepts.
+            - Common cloud models
+                - Private cloud
+                - Public cloud
+                - Hybrid cloud
+                - Community cloud
+                - Infrastructure as a service (IaaS)
+                - Software as a service (SaaS)
+                - Platform as a service (PaaS)
+            - Cloud characteristics
+                - Shared resources
+                - Metered utilization
+                - Rapid elasticity
+                - High availability
+                - File synchronization
+            - Desktop virtualization
+                - Virtual desktop infrastructure (VDI) on premises
+                - VDI in the cloud
+            - Cloud Computing !
+                - o Cloud Computing
+                - The practice of using a network of remote servers hosted on the Internet
+            - Characteristics of the Cloud !
+                - o High Availability
+                - ▪
+                - Services experience very little downtime when using the cloud
+                - ▪
+                - Availability is the percentage of uptime versus downtime
+                - o Scalability
+                - ▪
+                - Ability to increase the number of items in a system at a linear rate or less
+                - than a linear rate
+                - o Vertical Scaling (Scaling Up)
+                - ▪
+                - Increasing the power of the existing resources in the working
+                - environment
+                - o Horizontal Scaling (Scaling Out)
+                - ▪
+                - Adding additional resources to help handle the extra load being
+                - experienced
+                - o Rapid Elasticity
+                - ▪
+                - The ability to quickly scale up or down
+                - Elasticity is the system’s ability to handle changes to demand in
+                - real time
+                - o Metered Utilization
+                - ▪
+                - Being charged for a service on a pay per use basis
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 46 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - The benefit of using the cloud is that most things are done on a metered
+                - basis
+                - o Measured Services
+                - ▪
+                - Charging is based upon the actual usage of the service being consumed
+                - ▪
+                - Measured services are charged based on the actual usage of the service
+                - being consumed
+                - o Shared Resources
+                - ▪
+                - The ability to minimize the costs by putting VMs on other servers
+                - ▪
+                - Shared resources is pooling together all the hardware to make a cloud
+                - provider
+                - o File Synchronization
+                - ▪
+                - The ability to store data that can spread to other places depending on the
+                - configuration
+            - Cloud Deployment Models !
+                - o Public Cloud
+                - ▪
+                - Systems and users interact with devices on public networks, such as the
+                - Internet and other clouds
+                - o Private Cloud
+                - ▪
+                - Systems and users that only have access with other devices inside the
+                - same private cloud or system
+                - o Hybrid Cloud
+                - ▪
+                - Combination of private and public clouds
+                - o Community Cloud
+                - ▪
+                - Collaborative effort where infrastructure is shared between several
+                - organizations from a specific community with common concerns
+                - o Multitenancy
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 47 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - The ability for customers to share computing resources in a public or
+                - private cloud
+                - o Single-Tenancy
+                - ▪
+                - Assigns a particular resource to a single organization
+            - Cloud Service Models !
+                - o On-Premise Solution
+                - ▪
+                - The need to procure hardware, software, and personnel necessary to run
+                - the organization’s cloud
+                - ▪
+                - On-premise solution allows the ability to control all the physical and
+                - logical access to servers
+                - o Hosted Solution
+                - ▪
+                - Third-party service provider that provides all the hardware and facilities
+                - needed to maintain a cloud solution
+            - Virtual Desktop Infrastructure (VDI) !
+                - o Virtual Desktop Infrastructure (VDI)
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 48 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Hosts desktop OSs within a virtualized environment hosted by a
+                - centralized server or server farm
+                - o Server
+                - ▪
+                - Performs all the application processing and data storage
+                - o Centralized Model
+                - ▪
+                - Hosts all the desktop instances on a single server or server farm
+                - o Hosted Model/ Desktop as a Service (DAAS)
+                - ▪
+                - Maintained by a service provider and provided to the end user as a
+                - service
+                - o Remote Virtual Desktop Model
+                - ▪
+                - Copies the desktop image to a local machine prior to being used by the
+                - end user
+            - Cloud Storage Services !
+                - o Cloud Storage Application
+                - ▪
+                - Amount of space on a cloud-based server as file storage
+                - o File Synchronization
+                - ▪
+                - The ability to synchronize from different devices using a single account
+                - o Content Delivery Network (CDN)
+                - ▪
+                - Network of servers that locates the nearest server to minimize delay or
+                - download time
+            - Software Defined Network (SDN) !
+                - o Software-Defined Networking (SDN)
+                - ▪
+                - Enables the network to be intelligently and centrally controlled, or
+                - programmed, using software applications
+                - Can be changed automatically by the network itself using
+                - automation and orchestration
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 49 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Application Layer
+                - ▪
+                - Focuses on the communication resource requests or information about
+                - the network as a whole
+                - o Control Layer
+                - ▪
+                - Uses the information from the applications and decides how to route a
+                - data packet on the network
+                - o Infrastructure Layer
+                - ▪
+                - Contains the network devices that receive information about where to
+                - move the data
+                - o Management Plane
+                - ▪
+                - Used to monitor traffic conditions and the status of the network
+                - Provides a layer of abstraction between the devices and the
+                - control and data flow that happen on the network
+        - 4.2 Summarize aspects of client-side virtualization.
+            - Purpose of virtual machines
+                - Sandbox
+                - Test development
+                - Application virtualization
+                    - M Legacy software/OS
+                    - M Cross-platform virtualization
+            - Resource requirements
+            - Security requirements
+            - Virtualization !
+                - o Virtualization
+                - ▪
+                - Host computer installed with a hypervisor that can be used to install and
+                - manage multiple guest operating systems or virtual machines (VMs)
+                - Type I Hypervisor (Bare Metal)
+                - o Runs directly on the host hardware and functions as the
+                - operating system
+                - Type II Hypervisor
+                - o Runs within the normal operating system
+                - ▪
+                - Ensure that each virtual machine runs its own copy of an operating
+                - system
+                - Server-based (Terminal services)
+                - o Server-based solution that runs the application on servers
+                - in a centralized location
+                - Client-based (Application streaming)
+                - o Client-based solution that allows an application to be
+                - packaged up and streamed directly to a user’s PC
+            - Containerization !
+                - o Containerization
+                - ▪
+                - Type of virtualization applied by a host operating system to provision an
+                - isolated execution environment for an application
+                - Docker
+                - Parallels Virtuozzo
+                - OpenVZ
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 41 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - 1. When a physical server crashes, all the organizations hosted on that same server
+                - are affected
+                - 2. An organization’s failure to secure the virtual environments hosted on a shared
+                - server poses a security risk for the other organizations
+                - ▪
+                - Set up virtual servers in the cloud with proper failover, redundancy, and
+                - elasticity
+                - ▪
+                - Hosting all VMs on the same type of hypervisor can also be exploited
+                - Proper configurations
+                - Patched and up-to-date hypervisor
+                - Tight access control
+            - Purposes of VMs !
+                - o Hypervisor
+                - ▪
+                - Manages the distribution of the physical resources of a server to the VMs
+                - Type I
+                - o Bare metal
+                - Type II
+                - o Hosted
+                - o Container-Based Virtualization (Containerization)
+                - ▪
+                - Each container relies on a common host OS as the base for each
+                - container
+                - ▪
+                - Container-based virtualization has less resources because it doesn’t
+                - require its own copy of the OS for individual container
+                - o Hyperconverged Infrastructure
+                - ▪
+                - Allows for the full integration of the storage, network, and servers
+                - without hardware changes
+                - o Application Virtualization
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 42 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - ▪
+                - Encapsulates computer programs from the underlying OS on which they
+                - are executed
+                - o Virtual Desktop Infrastructure (VDI)
+                - ▪
+                - Hosts desktop OSs within a virtualized environment hosted by a
+                - centralized server or server farm
+                - o Sandbox
+                - ▪
+                - An isolated environment for analyzing pieces of malware
+                - o Cross-Platform Virtualization
+                - ▪
+                - Allows for the testing and running of software applications for different
+                - operating systems
+                - Emulation
+                - o System imitation
+                - Virtualization
+                - o New “physical” machine
+            - Resource Requirements !
+                - o Second Level Address Translation (SLAT)
+                - ▪
+                - Improves the performance of virtual memory when running multiple
+                - virtual machines on a single physical host
+                - Intel
+                - o Extended Page Table (EPT)
+                - AMD
+                - o Rapid Virtualization Indexing (RVI)
+                - ▪
+                - x86
+                - 32-bit processor
+                - 32-bit operating system can only access 4GB of RAM
+                - ▪
+                - x64
+                - 16 exabytes of RAM
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 43 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - 32-bit processor cannot run a 64-bit application
+                - o ARM
+                - ▪
+                - Reduced instruction set and computer architecture in a computer
+                - processor
+                - o System Memory
+                - ▪
+                - Amount of physical memory installed on a physical server
+                - ▪
+                - Barebones Windows installation takes 20-50 gigabytes of space
+                - ▪
+                - Linux installation takes 4-8 gigabytes of space
+                - ▪
+                - Mac environment takes 20-40 gigabytes of space
+                - o NIC teaming configuration allows multiple cards for higher speeds
+                - ▪
+                - CPU, processor, and capabilities
+                - ▪
+                - System memory
+                - ▪
+                - Networking
+                - ▪
+                - Storage
+            - Security Requirements !
+                - o VM Escape
+                - ▪
+                - Threat attempts to get out of an isolated VM and send commands to the
+                - underlying hypervisor
+                - ▪
+                - VM escape is easier to perform on a Type II hypervisor than a Type I
+                - hypervisor
+                - Patched
+                - Up to date
+                - o VM Hopping
+                - ▪
+                - Threat attempts to move from one VM to another on the same host
+                - VM Hopping
+                - o VM to VM
+                - VM Escape
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 44 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o VM to hypervisor or host OS
+                - ▪
+                - Up to date
+                - ▪
+                - Patched
+                - ▪
+                - Securely configured
+                - o Sandbox
+                - ▪
+                - Separates running processes and programs to mitigate system failures or
+                - software vulnerabilities
+                - o Sandbox Escape
+                - ▪
+                - Occurs when an attacker circumvents sandbox protections to gain access
+                - to the protected OS or other privileged processes
+                - o Patched
+                - o Up to date
+                - o Strong endpoint software protection
+                - o Limited extensions or add-ons
+                - o Live Migration
+                - ▪
+                - Migrates the virtual machine from one host to another while it is running
+                - ▪
+                - Ensure that live migration only occurs on a trusted network or utilizes
+                - encryption
+                - o Data Remnants
+                - ▪
+                - Leftover pieces of data that may exist in the hard drive which are no
+                - longer needed
+                - Encrypt virtual machine storage location
+                - Destroy encryption key
+                - o VM Sprawl
+                - ▪
+                - Uncontrolled deployment of virtual machines
+    - 5.0 Hardware and Network Troubleshooting 29%
+        - 5.1 Given a scenario, apply the best practice methodology to resolve problems.
+            - Always consider corporate policies, procedures, and impacts before implementing changes
+                - 1. Identify the problem 
+                    - Gather information from the user, identify user changes, and, if applicable, perform backups before making changes
+                    - Inquire regarding environmental or infrastructure changes
+                - 2. Establish a theory of probable cause (question the obvious)
+                    - If necessary, conduct external or internal research based on symptoms
+                - 3. Test the theory to determine the cause
+                    - Once the theory is confirmed, determine the next steps to resolve the problem
+                    - If the theory is not confirmed, re-establish a new theory or escalate
+                - 4. Establish a plan of action to resolve the problem and implement the solution
+                    - Refer to the vendor’s instructions for guidance
+                - 5. Verify full system functionality and, if applicable, implement preventive measures
+                - 6. Document the findings, actions, and outcomes
+            - Personal Computers !
+                - o Workstation
+                    - Computer desk
+                - o Server
+                    - Used to host a file and print sharing server
+                - o Laptop
+                    - Mobile version of a workstation
+                - o Tablet
+                    - Portable computer that consists of a touchscreen and computing hardware
+                - o Smartphone
+                    - Smaller version of tablets
+                - o Smart Device
+                    - Device that can compute
+                - o Internet Of Things (IOT) Devices
+                    - Devices that connect to a network
+                - o Hardware
+                    - Parts of the computer that can be picked up, moved around, opened, and closed
+                - o Storage
+                    - Saving the data for future use
+                - o Software
+                    - Provides the instructions for the hardware
+                - o Operating System
+                    - Provides a method for saving, retrieving, changing, printing, and transmitting information
+                - o Application System
+                    - Used to create, store, modify, and view information or data
+                - o Driver
+                    - Used to translate commands from the operating system to hardware
+                - o Firmware
+                    - Specialized type of software on a chip
+            - Safety Procedures !
+                - o Personal Safety
+                    - Trip hazard avoidance
+                    - Proper lifting techniques
+                    - Safety gear usage
+                        - Trip hazard occurs when there is an object where people walk
+                - o Component Safety
+                    - Actions taken to prevent damage to components
+                        - Electrostatic discharge (ESD) occurs when electrons rush from the body to a component
+                            - o Antistatic bag
+                            - o ESD wrist strap
+                            - o ESD mat
+                - o Electrical Safety
+                - o Chemical Safety
+                    - Chemical safety includes proper handling and disposal of hazardous materials and chemicals
+            - Troubleshooting Methodology !
+                - o Use these six steps to answer the questions on test day
+                    - Identify the problem
+                    - Establish a theory of probable cause
+                    - Test the theory to determine the cause
+                        - If the theory is not confirmed, re-establish a new theory
+                    - Establish a plan of action to resolve the problem and implement the solution
+                    - Verify full system functionality
+                    - Document the findings, actions, and outcome
+            - Troubleshooting Methodology !!
+                - 1. Identify the problem
+                - 2. Establish a theory of probable cause
+                - 3. Test the theory to determine the cause
+                - 4. Establish a plan of action to resolve the problem and implement the solution
+                - 5. Verify full system functionality
+                - 6. Document the findings, actions, and outcome
+            - Identify the Problem !
+                - o What happened?
+                - o What was the status before?
+                - o What is the status after that?
+                - o Are there any changes in the system?
+            - Establish a Theory !
+                - o Probable Cause
+                - ▪
+                - Different possible causes that may have happened
+                - o Burning smell
+                - ▪
+                - Damaged processor or motherboard components
+                - o Clicking or grinding sound
+                - ▪
+                - Hard drive
+                - o No spinning fan
+                - ▪
+                - Power issue or broken fan
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 120 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+            - Test the Theory !
+                - o Theory is confirmed
+                - o Theory is not confirmed
+                - o Lack skills or authority
+                - o Unable to solve
+                - o Escalate when there is an issue
+            - Establish a Plan of Action !
+                - o Repair
+                - o Replace
+                - o Workaround
+                - o How many are the resources
+                - o How much time does it take
+                - o How much is the cost
+                - o Impact on the users and system
+                - o A change of plan needs to get the authorization again
+            - Verify System Functionality !
+                - o Identify the problem
+                - o Establish a theory
+                - o Test the theory
+                - o Establish a plan of action
+                - o Verify system functionality
+                - o Check that the problem has been solved
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 121 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Inspect the other components to ensure nothing else is damaged, broken, or
+                - disconnected
+                - o Check the logs and diagnostic tools to confirm everything is working the way
+                - they should
+                - o Verify system functionality
+                - o Implement preventative measures
+            - Documentation !
+                - o Documentation
+                    - Document the findings, actions, and outcomes
+                - o The trouble ticketing system allows to do the trend analysis
+                - o The trouble ticketing system can document the amount of work
+        - 5.2 Given a scenario, troubleshoot problems related to motherboards, RAM, CPU, and power.
+            - Common symptoms
+                - Power-on self-test (POST) beeps
+                - Proprietary crash screens (blue screen of death [BSOD]/pinwheel)
+                - Black screen
+                - No power
+                - Sluggish performance
+                - Overheating
+                - Burning smell
+                - Intermittent shutdown
+                - Application crashes
+                - Grinding noise
+                - Capacitor swelling
+                - Inaccurate system date/time
+            - Power Issues !
+                - o Power button is not connected properly to the motherboard
+                - o Wall outlet is faulty
+                - ▪
+                - Use a multimeter or voltmeter to test the power outlet
+                - 110-120V/60Hz
+                - US or Canada
+                - 220-240V/50Hz
+                - Europe or Asia
+                - o Power cable to the computer is faulty
+                - ▪
+                - Positive pin
+                - ▪
+                - Negative pin
+                - ▪
+                - Grounding pin
+                - o Power supply is faulty
+                - ▪
+                - 12V DC
+                - ▪
+                - 5V DC
+                - ▪
+                - 3.3V DC
+                - ▪
+                - A power supply tester has a small variation or tolerance
+                - Bottom
+                - Largest connector
+                - Top
+                - 4,6,8 Pin connectors/SATA/Molex
+                - o Power cables from power supply to components are faulty
+                - ▪
+                - When testing detachable cables, check each pin on each side of the cable
+                - to verify full continuity
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 123 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o Incorrect voltage setting on power supply unit
+            - POST Issues !
+                - o Power-On Self-Test (POST)
+                - ▪
+                - Diagnostic program inside the system firmware
+                - ▪
+                - POST beep codes are specific to the motherboard’s manufacturer
+                - ▪
+                - POST-test expansion card identifies which component on the
+                - motherboard is faulty and needs to be replaced
+            - Crash Screens !
+                - o Crash Screen
+                - ▪
+                - Displays an error whenever the operating system has issue
+                - Windows
+                - o Blue Screen of Death (BSOD)
+                - ▪
+                - Indicates that there is a problem with the
+                - underlying hardware that Windows cannot solve
+                - CRITICAL_PROCESS_DIED
+                - SYSTEM_THREAD_EXCEPTION_NOT_HANDL
+                - ED
+                - IRQL_NOT_LESS_OR_EQUAL
+                - VIDEO_TDR_TIMEOUT_DETECTED
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 124 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - PAGE_FAULT_IN_NONPAGED_AREA
+                - SYSTEM_SERVICE_EXCEPTION
+                - DPC_WATCHDOG_VIOLATION
+                - MAC
+                - o Pinwheel of Death
+                - ▪
+                - macOS (OS X)
+                - Made by Apple and it runs on Apple
+                - hardware (desktops and laptops)
+                - Linux
+                - o Kernel Panic
+                - ▪
+                - In kernel panic, the system display gives an exit
+                - code
+            - Cooling Issues !
+                - o When the system is operating, all the components are generating heat that
+                - builds up a thermal load
+                - o When it comes to cooling, make sure that all cooling components are working
+                - 1. Shut down the system
+                - 2. Boot into the UEFI or BIOS
+                - o In UEFI or BIOS, look at the temperature sensors inside of the system
+                - o A thermal issue causes intermittent shutdowns or continual rebooting
+            - Physical Component Damage !
+                - o Excessive exposure to thermal loads can cause permanent damage
+                - o Plugging or unplugging cables can cause wearing out, and pins getting bent or
+                - damaged
+                - o The rancid smell comes from a blown or burst capacitor
+                - CompTIA A+ Core 1
+                - Study Notes
+                - 125 -
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - V1.0
+                - o When a capacitor starts emitting internal chemicals, it loses the ability to
+                - regulate electricity
+            - Performance Issues !
+                - o Modern systems can protect against overheating
+                - o Overheating systems could reboot or shut down
+                - o Increasing the page size in Windows or the swap space in Linux
+            - Inaccurate System Date/Time !
+                - o Motherboards have a battery to keep the real-time clock (RTC) in sync
+                - o Most modern operating systems set the date and time automatically
+                - ▪
+                - Complementary Metal–Oxide–Semiconductor (CMOS)
+                - Non-volatile type of memory that stores the BIOS settings and is
+                - built into the motherboard
+                - ▪
+                - Non-Volatile RAM (NVRAM)
+                - Stores data without being constantly refreshed
+                - o CMOS
+                - o Real-time clock
+        - 5.3 Given a scenario, troubleshoot and diagnose problems with storage drives and RAID arrays.
+            - Common symptoms
+                - Light-emitting diode (LED) status indicators
+                - Grinding noises
+                - Clicking sounds
+                - Bootable device not found
+                - Data loss/corruption
+                - RAID failure
+                - Self-monitoring, Analysis, and Reporting Technology (S.M.A.R.T.) failure
+                - Extended read/write times
+                - Input/output operations per second (IOPS)
+                - Missing drives in OS
+                - Boot Issues !
+                    - o SSD/Hard drive
+                    - o Removable media
+                    - o Network
+                    - o Master Boot Record (MBR)
+                    - ▪
+                    - Legacy method of providing the boot information
+                    - ▪
+                    - A partition on a storage device is the logical part of an entire drive
+                    - Windows
+                    - Single partition
+                    - Linux
+                    - Multiple partitions
+                    - Boot Configuration Data (BCD)
+                    - Windows
+                    - GRUB/LILO
+                    - Linux
+                    - o GUID Partition Table (GPT)
+                    - ▪
+                    - Specialized boot scheme with modern advantages
+                    - ▪
+                    - Inability to find a bootable device indicates a problem with MBR or GPT
+                    - Bootable device not found
+                    - Operating system not found
+                    - Invalid drive specification
+                    - ▪
+                    - The UEFI and BIOS set prioritized boot order based on their
+                    - configurations
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 127 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Check if the internal storage device is working properly by looking,
+                    - listening, and feeling
+                - Storage Device Issues !
+                    - o Hard Disk Drive (HDD)
+                    - ▪
+                    - Older storage devices that spin and move the read/write head across the
+                    - platter
+                    - ▪
+                    - Low-cost, slower speed
+                    - o Solid-State Device
+                    - ▪
+                    - Non-volatile memory that stores data and can access data from the
+                    - device
+                    - ▪
+                    - High cost, less storage, faster speed
+                    - ▪
+                    - Solid-state devices have a limit on the amount of time to read and write
+                    - data
+                    - o Clicking sounds or grinding noises are signs of a hard disk drive mechanical
+                    - problem
+                    - o The light is not blinking during read or write from the device
+                    - ▪
+                    - The LED activity light is constantly blinking
+                    - o Adding physical memory will stop the disk from being used as a swap file or page
+                    - file
+                    - o Use disk management tools to see if the device is detected
+                    - o Sector
+                    - ▪
+                    - Allows to read and write on the hard drive by identifying the sector
+                    - ▪
+                    - Use disk utility to identify which sectors are bad and try to recover them
+                    - Sectors
+                    - Windows/Linux
+                    - Blocks
+                    - Solid-state device
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 128 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o It is always a best practice to have a good backup drive
+                - Drive Performance Issues !
+                    - o Self-Monitoring, Analysis, and Reporting Technology (SMART)
+                    - ▪
+                    - Self-diagnostic program that alerts the OS if there is a failure
+                    - ▪
+                    - SMART monitors the hard drive and understands the health status of the
+                    - drive
+                    - Read Error Rate
+                    - Spin-Up Time
+                    - Reallocated Sector Count
+                    - Seek Error Rate
+                    - Power-On Hours
+                    - Temperature
+                    - ▪
+                    - SMART utility is monitoring input/output operations per second (IOPS)
+                    - A hard disk drive has a lower IOPS than a solid-state device
+                    - Cloud can measure performance by using IOPS
+                    - Low IOPS can be an issue with the hardware or the software
+                    - ▪
+                    - The defragmentation tool can put files back together and reduce read
+                    - and write times
+                    - Deleting and rewriting causes fragmentation
+                - Issues with RAIDs !
+                    - o RAID protects data against the risk of data loss
+                    - o Single disk failure
+                        - If a RAID loses a disk, it will continue to operate as normal but at a slower speed
+                        - RAID rebuild is the utility used to rebuild the RAID
+                    - o Full Raid Failure
+                        - Entire array or volume stops working
+                        - When the RAID fails, restore from backup, reconfigure, and rebuild using new disks
+        - 5.4 Given a scenario, troubleshoot video, projector, and display issues.
+            - Common symptoms
+                - Incorrect data source
+                - Physical cabling issues
+                - Burned-out bulb
+                - Fuzzy image
+                - Display burn-in
+                - Dead pixels
+                - Flashing screen
+                - Incorrect color display
+                - Audio issues
+                - Dim image
+                - Intermittent projector shutdown
+                - Physical Cabling and Source Selection !
+                    - o Physical Cables That Carry Digital Signals
+                    - ▪
+                    - HDMI
+                    - ▪
+                    - DisplayPort
+                    - ▪
+                    - Thunderbolt
+                    - ▪
+                    - DVI-D
+                    - ▪
+                    - DVI-I
+                    - o Broken cable
+                    - o Cables are not properly inserted
+                    - ▪
+                    - Check both ends of the cable are properly connected
+                    - o Cheap cable
+                    - ▪
+                    - Use high-speed rated HDMI cable that supports higher bandwidth
+                    - ▪
+                    - HDMI, DisplayPort, and Thunderbolt carry audio
+                    - ▪
+                    - VGA or DVI cables do not carry sound
+                    - o Incorrect data source selected
+                    - o HDMI device issue
+                    - o High-Bandwidth Digital Content Protection (HDCP)
+                    - ▪
+                    - Protects the audio and video signals between the systems over HDMI and
+                    - DisplayPort
+                    - ▪
+                    - Upgrade the quality of the HDMI cable
+                - Projector Issues !
+                    - o Dim images
+                    - o No images
+                    - o Shut down or restart
+                    - o Burned-out bulb is when the projector bulb has no light and cannot send an image
+                    - o Projector bulb has a lifespan of about 500-2000 hours
+                    - o Use gloves to protect the life of the bulb
+                    - o Cool down the projector for 15 to 30 minutes before removing the bulb
+                    - o The projector without the source input will shut down
+                - Video Quality Issues !
+                    - o Dim images
+                    - ▪
+                    - Dim image occurs when there is no brightness or color contrast control
+                    - set for displays
+                    - o Fuzzy images
+                    - ▪
+                    - Fuzzy image occurs when the output resolution from the computer is
+                    - lower
+                    - o Flashing screens
+                    - ▪
+                    - Flashing screen means the cable is not properly connected
+                    - o Dead pixels
+                    - ▪
+                    - There is no fix for a dead pixel
+                    - o Burn-in
+                    - ▪
+                    - Burn-in occurs when the same static picture is displayed on a screen for a
+                    - long time
+                    - ▪
+                    - Animated screensaver
+                    - ▪
+                    - Turn on inactivity
+                    - o Color Bit
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 132 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Actual number of colors displayed
+                    - 8-bit color palette
+                    - o (256 color variations)
+                    - 16-bit color palette
+                    - o (32,768 color variations)
+                    - 24-bit color palette
+                    - o (True color display)
+                    - o (16,777,216 color variations)
+                    - 32-bit color palette
+                    - o (Deep color display)
+                    - o (1B color variations)
+                    - Adobe RGB
+                    - sRGB IEC
+                    - Display P3
+        - 5.5 Given a scenario, troubleshoot common issues with mobile devices.
+            - Common symptoms
+                - Poor battery health
+                - Swollen battery
+                - Broken screen
+                - Improper charging
+                - Poor/no connectivity
+                - Liquid damage
+                - Overheating
+                - Digitizer issues
+                - Physically damaged ports
+                - Malware
+                - Cursor drift/touch calibration
+                - Mobile Power Issues !
+                    - o Poor battery health
+                    - o Charging issues
+                    - o Swollen batteries
+                    - o As batteries age, the maximum charge they can hold decreases
+                    - o Swollen batteries are caused by overcharging
+                - Mobile Hardware Issues !
+                    - o Overheating damage
+                        - Any device that’s unable to properly cool itself down
+                    - o Liquid damage
+                        - Dry off excess liquid
+                        - Power off the device
+                        - Disassemble the device
+                        - Clean the circuit boards and contacts
+                        - Replace the battery
+                    - o Physical port damage
+                        - To fix the damaged port is to remove the port and replace it
+                - Mobile Display Issues !
+                    - o Broken screens
+                        - Glass
+                        - Digitizer
+                        - Screen
+                        - Backlight
+                    - o Dim images
+                        - Backlight
+                        - Inverter
+                    - o Digitizer issues
+                        - Digitizer
+                            - Device underneath the glass that responds to the input of the user
+                        - The digitizers fail because of shock damage from dropping or liquid damage
+                    - o Calibration issues
+                        - When troubleshooting a cursor issue, check the touch pad sensitivity and observe the user
+                - Mobile Connectivity Issues !
+                    - o Physical issues
+                        - Connected to the right SSID
+                        - Connected using the right password
+                        - Move closer to the wireless access point
+                        - Put the higher gain antenna on
+                        - Operate 30 to 50 meters away from the wireless access point to maintain a good connection
+                    - o Software configuration issues
+                        - Bluetooth enabled
+                        - Properly paired
+                        - Adequate battery
+                        - Right range
+                        - Bluetooth is a personal area network and used at up to 10 meters
+                        - The wireless NIC is properly connected to the antennas
+                - Mobile Malware Infections !
+                    - o Antivirus or anti-malware solution
+                    - o Excessive power drain
+                    - o Significant data transmission
+                    - o Camera and microphone
+                    - o Asking for additional permissions
+                    - o Back up the data
+                    - o Format the device and re-install the base operating system
+        - 5.6 Given a scenario, troubleshoot and resolve printer issues.
+            - Common symptoms
+                - Lines down the printed pages
+                - Garbled print
+                - Toner not fusing to paper
+                - Paper jams
+                - Faded print
+                - Incorrect paper size
+                - Paper not feeding
+                - Multipage misfeed
+                - Multiple prints pending in queue
+                - Speckling on printed pages
+                - Double/echo images on the print
+                - Incorrect color settings
+                - Grinding noise
+                - Finishing issues
+                    - Staple jams
+                    - Hole punch
+                - Incorrect page orientation
+                - Printer Connectivity Issues !
+                    - o Locally connected printer
+                    - o Printer not found
+                    - o Printer has an online or offline status
+                    - o Assign the printer a valid IP address, subnet mask, gateway, and DNS server
+                    - o Use the right SSID and password to ensure the printer joins the correct network
+                    - o To bring the printer back online, turn off the printer, wait ten seconds, and power it on again
+                    - o Power Cycling
+                        - Printer is turned on and off to release printing memory
+                            - Local connections
+                            - Wired connections
+                            - Wireless connections
+                - Print Feed Issues !
+                    - o Paper jam
+                    - o Grinding noise
+                    - o Check the printer for debris and paper tracks
+                    - o Inkjet and dot matrix printers are easier to detect a jam
+                    - o Paper feed issue is when the printer selects more than one piece of paper through the printer
+                        - Thin Paper - Low weight
+                        - Thick Paper - High weight
+                    - o The pickup rollers are designed to pick up one piece of paper at a time
+                    - o Carriage mechanism brings the printhead across the page in an inkjet or impact printer
+                        - Toner cartridge
+                        - Fuser
+                        - Gears and rollers
+                - Print Quality Issues !
+                    - o Faded printout
+                    - ▪
+                    - Draft output mode uses less ink and toner
+                    - ▪
+                    - Faded printout is caused by the running out of ink inside of a printer ink
+                    - cartridge or toner
+                    - o Blank pages
+                    - ▪
+                    - Blank page is caused by a software issue
+                    - o White stripes
+                    - ▪
+                    - White stripes in laser printers are caused by an issue with the toner
+                    - cartridge or the drum
+                    - ▪
+                    - The uniform white stripe on the page indicates a problem with the drum
+                    - o Black stripes
+                    - ▪
+                    - Indicates the primary charge roller is dirty or damaged, or the high
+                    - voltage power supply to the developer unit is malfunctioning
+                    - ▪
+                    - To fix the black stripes issue, troubleshoot the corona wire
+                    - or replace the drum and the toner cartridge
+                    - o Speckling output
+                    - ▪
+                    - Clean the printer using an approved toner vacuum
+                    - o Vertical or horizontal lines
+                    - ▪
+                    - The vertical or horizontal line is caused by dirty feed rollers
+                    - ▪
+                    - Dirty photosensitive drum can create vertical or horizontal lines
+                    - o Toner does not fuse
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 142 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - ▪
+                    - Check the voltage of the fuser and get the proper input voltage
+                    - o Double or echo image
+                    - ▪
+                    - A double/echo/ghost/shadow image indicates a drum issue
+                    - o Incorrect chroma display
+                    - ▪
+                    - Software or printer driver issue could be causing the incorrect color
+                    - o Missing color
+                    - ▪
+                    - Use rubbing alcohol to clean the contacts between the printer and the
+                    - cartridge
+                    - ▪
+                    - Consistent white line indicates a blocked or clogged inkjet nozzle
+                    - ▪
+                    - Replace the printhead and this will replace the dots inside of it
+                    - ▪
+                    - Platen adjusts the gap between the paper and the printhead
+                    - to different paper sizes
+                - Print Finishing Issues !
+                    - o Incorrect page sizes
+                    - o Incorrect page orientations
+                    - o Issues with stapling
+                    - o Issues with hole punching
+                    - o Use the right paper size to print
+                    - o Word processor sets portrait as the default
+                    - o Slide presentation sets landscape as the default
+                    - o To solve staple jams, remove the staple cartridge and replace it
+                - Print Job Issues !
+                    - o Print monitor
+                        - Software program used to transmit the print job and provide status information
+                        - Print monitors look at toner and ink cartridge levels and notify when they get low
+                    - o Print queue
+                        - Software that collects all the print jobs and manages them
+                    - o Print spooler
+                        - Manages the paper printing jobs sent from a computer or a printer server
+                        - Print Queue
+                            - Pending
+                        - Print Spooler
+                            - Active
+                    - o Print driver
+                        - Garbled Print Job
+                            - Any output that is scrambled or encrypted
+                            - Garbled printouts are a driver issue
+                            - A font can cause a garbled printout
+        - 5.7 Given a scenario, troubleshoot problems with wired and wireless networks.
+            - Common symptoms
+                - Intermittent wireless connectivity
+                - Slow network speeds
+                - Limited connectivity
+                - Jitter
+                - Poor Voice over Internet
+                - Protocol (VoIP) quality
+                - Port flapping
+                - High latency
+                - External interference
+                - Wired Connectivity Issues !
+                    - o Physical connection
+                    - o Cable length
+                    - o Interference
+                    - o Port flapping
+                    - o The link light shows a valid link
+                    - o The activity light blinks when sending or receiving data
+                    - ▪
+                    - 10 Mbps (Off)
+                    - ▪
+                    - 100 Mbps (Orange)
+                    - ▪
+                    - 1000 Mbps (Green)
+                    - o A repeater is used to increase the connectivity signal
+                    - o Interference with wired connections is coming from an external interference
+                    - source
+                    - ▪
+                    - Power lines
+                    - ▪
+                    - Fluorescent lighting
+                    - ▪
+                    - Motors
+                    - ▪
+                    - Generators
+                    - o The network cables near power lines use fiber optic connections
+                    - o Port Flapping
+                    - ▪
+                    - Caused by an intermittent connectivity issue between the client and the
+                    - network switch
+                    - ▪
+                    - Port flapping status is from upstate to downstate
+                - Network Performance Issues !
+                    - o Network Performance Issues
+                    - Manifesting the slowdown of network
+                    - o Half Duplex
+                    - ▪
+                    - Network that sends or receives information
+                    - ▪
+                    - Half duplex is the standard in hubs and network
+                    - o Full Duplex
+                    - ▪
+                    - Network that sends or receives information at the same time
+                    - ▪
+                    - Network interface cards are set to auto negotiation
+                    - o Data exfiltration is sending data in the background without the user seeing it
+                    - 1. Mismatch in the duplex setting
+                    - 2. Mismatch in the speed setting
+                    - 3. Network adapter drivers are out of date
+                    - 4. Malware infection
+                - Wireless Connectivity Issues !
+                    - o Intermittent wireless connectivity
+                    - o Signal interference
+                    - o Low signal strength
+                    - o Standards mismatch
+                    - ▪
+                    - Intermittent Wireless Connectivity
+                    - Connected or disconnected network
+                    - ▪
+                    - Intermittent Wired Connectivity
+                    - Upstate to a downstate of switch port
+                    - o Signal interference is causing signal issues
+                    - o Channels 1, 6, and 11 spread out the network and avoid interference
+                    - o Wireless a, n, ac, and ax are less prone to signal interference
+                    - o Received Signal Strength Indicator (RSSI)
+                    - ▪
+                    - Used to measure the signal strength based on an index level and gives a
+                    - value in decibels (dB)
+                    - CompTIA A+ Core 1
+                    - Study Notes
+                    - 135 -
+                    - [https://www.DionTraining.com](https://www.DionTraining.com) © 2021
+                    - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                    - V1.0
+                    - o RSSI is displayed in negative decibels
+                    - ▪
+                    - Increase the power of transmission
+                    - ▪
+                    - Increase the antenna size
+                    - ▪
+                    - Move closer to the source
+                    - ▪
+                    - Wireless a, n, ac, and ax
+                    - 5 GHz
+                    - ▪
+                    - Wireless b, g, or n
+                    - 2.4 GHz
+                    - o What frequency is being used?
+                    - o What is the maximum speed of that frequency?
+                    - o Which versions of wireless networking are being used?
+                    - o Configure the wireless access points to support the modern versions of the
+                    - protocols
+                - VoIP Issues !
+                    - o Voice Over Internet Protocol (VoIP)
+                        - Set of protocols that are used to send streaming voice and video in real time
+                    - o Latency
+                        - Time it takes for a signal to reach the intended client
+                        - Keep latency under 50 to 100 milliseconds
+                    - o Jitter
+                        - Measurement of the variation in delay over time
+                        - When latency increases by up to 30-50 milliseconds, it starts to have jitter
+                        - Increase network performance
+                        - Implement quality of service
+                    - o The set settings for quality of service only affect things inside the network
+                    - o Setting the quality of service (QoS) allows prioritization of voice traffic
+                - Limited Connectivity Issues !
+                    - o Limited Connectivity
+                        - Specialized message to receive within the operating system
+                    - 1. Affects one network client
+                    - 2. VLAN is properly configured
+                    - o Limited connectivity issue is having a DHCP issue
+                        - IP address
+                        - Subnet
+                        - Default gateway
+                        - DNS server IPs
+- CompTIA  A+ 220-1102 (Core 2) Exam Objectives (Domains):
+    - Covers operating systems, security, software and operational procedures.
+    - 1.0 Operating Systems 31%
+        - 1.1 Identify basic features of Microsoft Windows editions.
+            - Windows 10 editions
+                - Home
+                - Pro
+                - Pro for Workstations
+                - Enterprise
+            - Feature differences
+                - Domain access vs. workgroup
+                - Desktop styles/user interface
+                - Availability of Remote Desktop Protocol (RDP)
+                - Random-access memory (RAM) support limitations
+                - BitLocker
+                - gpedit.msc
+            - Upgrade paths
+                - In-place upgrade
+            - 64-bit vs 32-bit !
+                - ○ Windows support
+                - ■ Windows 11
+                - 64-bit version
+                - ■ Windows 10
+                - 32-bit or 64-bit version
+                - ■ 32-bit Version
+                - 32-bit programs
+                - ■ 64-bit Version
+                - 32-bit or 64-bit programs
+                - ■ Each piece of hardware will be 32-bit or 64-bit based on the processor
+                - ○ Choose the version of the operating system that will align with your processor
+                - ■ 32-bit version of Windows has lower memory requirements
+                - ■ Have a minimum of 4 GB of RAM to run Windows
+                - ■ Check if your processor can support 32-bit or 64-bit operations
+            - ○ Windows Home !
+                - ■ Basic edition of the Windows operating system
+                - Not designed to be used in a business environment
+                - Upgrade to Windows Pro or Windows Enterprise for additional
+                - business features
+                - 
+                - ■ Storage device encryption (not Bitlocker)
+                - ■ Windows 11 Home edition is only in 64-bit version
+                - ■ Windows Home edition support multi-core processors
+                - ■ A multi-core processor has 2, 4, 6, 8, or even up to 64 cores
+                - ■ It does support hyper-threading
+                - ■ 64-bit can support large amounts of memory
+                - OEM
+                - ○ The OEM license is used by the original manufacturers
+                - Retail
+                - ■ You can move up from Windows 10 to 11 using the same edition
+                - 
+            - ○ Windows Pro !
+                - ■ Windows operating system that focuses on business use
+                - ■ Windows Pro can be used in a domain environment
+                - ■ BitLocker
+                - Full disk drive encryption schema that is provided inside of Windows
+                - Pro and Windows Enterprise editions
+                - 
+                - ■ Group Policy Editor
+                - Creates and applies operating system and software application
+                - settings across all the users
+                - The group policy editor is not available within the Home edition
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 13 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - ■ Remote Desktop Protocol (RDP)
+                - Remotely connect to your Windows Pro machine from anywhere in
+                - the world
+                - 
+                - ■ Windows Information Protection (WIP)
+                - Helps identify and protect against potential data leakage or data
+                - exfiltration
+                - 
+                - ■ OEM is the original equipment manufacturer license
+                - ■ Retail license allows you to buy one license for one piece of hardware
+                - ■ Windows Pro is designed to be used by small and medium-sized businesses
+                - ■ Windows Pro for Workstations is an improved version of the Windows Pro
+                - edition
+                - It provides support for additional hardware
+                - Windows Pro for Workstations can support up to four-way
+                - multiprocessing
+                - 
+            - ○ Windows Enterprise and Education !
+                - ■ Windows Enterprise is a fully featured version of Windows
+                - ■ Enterprise edition can only use volume licensing
+                - ■ Application virtualization under a tool known as App-V
+                - App-V protects the rest of the operating system from any kind of
+                - malware
+                - 
+                - ■ UE-V is used to capture, save, and manage Windows 10 operating system
+                - ■ Allows multiple people to use the same machine but separates all their
+                - settings
+                - ■ Direct access is used to allow connectivity for remote users without the use
+                - of a VPN
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 14 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - ■ Credential guard allows for virtualization-based security and only grants
+                - access to privileged systems
+                - ■ Windows To Go creates an image version of a corporate Windows 10
+                - environment that can be run on a user's personal computer
+                - ■ Windows Enterprise edition has a limit of 6 TB of memory
+                - ■ Windows Enterprise supports up to 4 physical processors
+                - ■ Both are only going to be using a volume licensing
+                - ■ Windows Education and Windows Pro Education are the same as Windows
+                - Enterprise and Windows Pro editions
+                - 
+            - ○ Upgrading Windows !
+                - ■ In-place upgrade means the setup program for the new version will be
+                - launched within the current operating system
+                - ■ Verify the system meets the minimum requirements for the new operating
+                - system
+                - ■ Download the Windows 11 installation media and place it on a USB drive
+                - ■ Launch the setup program from that USB within Windows 10 and then
+                - perform a full upgrade
+                - ■ Data-only upgrade keeps all personal files, but not any applications or
+                - settings
+                - ■ Clean install will delete all personal settings, files, and folders
+        - 1.2 Given a scenario, use the appropriate Microsoft command-line tool.
+            - Navigation
+                - cd
+                - dir
+                - md
+                - rmdir
+                - Drive navigation inputs:
+                    - C: or D: or x:
+            - Command-line tools
+                - ipconfig
+                - ping
+                - hostname
+                - netstat
+                - nslookup
+                - chkdsk
+                - net user
+                - net use
+                - tracert
+                - format
+                - xcopy
+                - copy
+                - robocopy
+                - gpupdate
+                - gpresult
+                - shutdown
+                - sfc
+                - [command name] /?
+                - diskpart
+                - pathping
+                - winver
+        - 1.3 Given a scenario, use features and tools of the Microsoft Windows 10 operating system (OS).
+            - Task Manager
+                - Services
+                - Startup
+                - Performance
+                - Processes
+                - Users
+            - Microsoft Management Console (MMC) snap-in
+                - Event Viewer (eventvwr.msc)
+                - Disk Management (diskmgmt.msc)
+                - Task Scheduler (taskschd.msc)
+                - Device Manager (devmgmt.msc)
+                - Certificate Manager (certmgr.msc)
+                - Local Users and Groups (lusrmgr.msc)
+                - Performance Monitor (perfmon.msc)
+                - Group Policy Editor (gpedit.msc)
+            - Additional tools
+                - System Information (msinfo32.exe)
+                - Resource Monitor (resmon.exe)
+                - System Configuration (msconfig.exe)
+                - Disk Cleanup (cleanmgr.exe)
+                - Disk Defragment (dfrgui.exe)
+                - Registry Editor (regedit.exe)
+        - 1.4 Given a scenario, use the appropriate Microsoft Windows 10 Control Panel utility.
+            - Internet Options
+            - Devices and Printers
+            - Programs and Features
+            - Network and Sharing Center
+            - System
+            - Windows Defender Firewall
+            - Mail
+            - Sound
+            - User Accounts
+            - Device Manager
+            - Indexing Options
+            - Administrative Tools
+            - File Explorer Options
+                - Show hidden files
+                - Hide extensions
+                - General options
+                - View options
+            - Power Options
+                - Hibernate
+                - Power plans
+                - Sleep/suspend
+                - Standby
+                - Choose what closing the lid does
+                - Turn on fast startup
+                - Universal Serial Bus (USB) selective suspend
+            - Ease of Access
+        - 1.5 Given a scenario, use the appropriate Windows settings.
+            - Time and Language
+            - Update and Security
+            - Personalization
+            - Apps
+            - Privacy
+            - System
+            - Devices
+            - Network and Internet
+            - Gaming
+            - Accounts
+        - 1.6 Given a scenario, configure Microsoft Windows networking features on a client/desktop.
+            - Workgroup vs. domain setup
+                - Shared resources
+                - Printers
+                - File servers
+                - Mapped drives
+            - Local OS firewall settings
+                - Application restrictions and
+                - exceptions
+                - Configuration
+            - Client network configuration
+                - Internet Protocol (IP) addressing scheme
+                - Domain Name System (DNS) settings
+                - Subnet mask
+                - Gateway
+                - Static vs. dynamic
+            - Establish network connections
+                - Virtual private network (VPN)
+                - Wireless
+                - Wired
+                - Wireless wide area network (WWAN)
+            - Proxy settings
+            - Public network vs. private network
+            - File Explorer navigation – network paths
+            - Metered connections and limitations
+        - 1.7 Given a scenario, apply application installation and configuration concepts.
+            - System requirements for applications
+                - 32-bit vs. 64-bit dependent application requirements
+                - Dedicated graphics card vs. integrated
+                - Video random-access memory (VRAM) requirements
+                - RAM requirements
+                - Central processing unit (CPU) requirements
+                - External hardware tokens
+                - Storage requirements
+            - OS requirements for applications
+                - Application to OS compatibility
+                - 32-bit vs. 64-bit OS
+            - Distribution methods
+                - Physical media vs. downloadable
+                - ISO mountable
+            - Other considerations for new applications
+                - Impact to device
+                - Impact to network
+                - Impact to operation
+                - Impact to business
+        - 1.8 Explain common OS types and their purposes.
+            - Workstation OSs
+                - Windows
+                - Linux
+                - macOS
+                - Chrome OS
+            - Cell phone/tablet OSs
+                - iPadOS
+                - iOS
+                - Android
+            - Various filesystem types
+                - New Technology File System (NTFS)
+                - File Allocation Table 32 (FAT32)
+                - Third extended filesystem (ext3)
+                - Fourth extended filesystem (ext4)
+                - Apple File System (APFS)
+                - Extensible File Allocation Table (exFAT)
+            - Vendor life-cycle limitations
+                - End-of-life (EOL)
+                - Update limitations
+            - Compatibility concerns between OSs
+            - Windows !
+                - ○ Windows
+                - ■ A graphical operating system developed and published by Microsoft
+                - ■ One of the most popular operating systems in the world
+                - ○ Versions
+                - ■ Windows 1.01
+                - ■ Windows 2.01
+                - ■ Windows 3.01
+                - ■ Windows 95
+                - ■ Windows 98
+                - ■ Windows 2000
+                - ■ Windows Me
+                - ■ Windows XP
+                - ■ Windows Vista
+                - ■ Windows 7
+                - ■ Windows 8
+                - ■ Windows 8.1
+                - ■ Windows 10
+                - ■ Windows 11
+                - ○ The oldest one that we're going to support is known as windows 8.1
+                - ○ Currently supported versions
+                - ■ Windows 10 support is going to continue to operate until October of
+                - 2025
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 4 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - ■ Windows server 2016 will be supported by Microsoft up until January of
+                - 2027
+                - ■ Windows server 2019 will be supported all the way up through January of
+                - 2029
+                - ■ Windows server 2022 will be supported all the way up until October of
+                - 2031
+                - 
+                - ○ Windows used to have a 90% market share when it came to home computer
+                - operating systems
+                - 
+            - Linux !
+                - ○ Linux
+                - ■ Made by lots and lots of different companies, organizations, and
+                - individual people
+                - ○ An open-source operating system
+                - ■ You have access to all the underlying code, and you can make any
+                - changes you want
+                - 
+                - ○ Some distributions use a subscription-based model with they only give you
+                - access to their code
+                - ■ Ubuntu
+                - A free software you can install on your desktop or your server
+                - ■ Fedora, Debian, Mint, Arch, or CentOS
+                - Community supported distributions
+                - ○ Two different formats for lifecycle support
+                - ■ Standard release model
+                - A version number associated with
+                - ■ Rolling release model
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 5 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - There is no long-term support version and there's no version
+                - numbers at all because you're dealing with this constant update Android
+            - Android !
+                - ○ Android operating system
+                - ■ A specific operating system that was designed to be able to support the
+                - smartphone and tablet market
+                - ■ Originally released by the open handset Alliance, which is primarily
+                - backed and driven by Google
+                - 
+                - ○ Uses a much shorter lifecycle than does desktop or server environments
+                - ○ Older devices can't necessarily support the newer operating systems
+                - ■ Android is based on Linux
+                - ■ Each manufacturer can make their own version of Android
+            - Chrome !
+                - ○ Chrome OS
+                - ■ Proprietary operating system developed by Google
+                - ■ Developed to run specifically on laptops and desktop hardware created
+                - by Google
+                - ■ This hardware was designed to keep costs very low
+                - ○ Chrome OS devices have built-in virus protection and firewalls
+                - ■ Chrome OS is extremely safe and secure
+                - ○ Automatic updates
+                - ○ Proprietary operating system created by Google
+                - ■ Designed to run on specific hardware
+                - ■ Stripped down operating system
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 6 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - ■ Primarily uses web applications and supports Android apps
+                - 
+            - macOS !
+                - ○ macOS
+                    - ■ Operating system used on Mac computers, built by Apple
+                        - iMac
+                        - Mac desktop
+                        - MacBook
+                - ○ macOS was previously called OSX
+                - ○ Desktop operating system that only operates on Apple devices
+            - iOS and iPadOS !
+                - ○ iOS and iPad iOS
+                - ■ Developed by apple for their smartphones and tablets
+                - iOS operating system
+                - ○ Developed as a closed source operating system
+                - ○ Have a very high percentage of total market share for
+                - mobile devices
+                - iPad iOS
+                - ○ Developed as a fork of the mean iOS branch
+            - Filesystem Types !
+                - ○ Organize data and information on a hard drive, solid state drive, or other storage
+                - device
+                - ○ File systems must be created before you can install an operating system or
+                - storage device like a hard disk drive
+                - ○ Types supported by operating systems
+                - ■ Windows operating systems use NTFS, FAT32, or exFAT
+                - ■ Linux will use ext3, ext4, or exFAT for your filesystem
+                - ■ macOS uses the Apple file system known as APFS
+                - ○ New Technology Filesystem (NFTS)
+                - ■ Linux and macOS cannot read NTFS by default, you would have to use
+                - third party utilities to read and write NTFS
+                - ■ A 64-bit filesystem that allows for large volumes and very large file sizes
+                - ■ Has a lot of key features such as journaling, snapshots, security, POSIX
+                - compliance, indexing, and dynamic discsJournaling allows for faster
+                - recovery from power outages and crashes
+                - Snapshots allow you to make a read-only copy of a file, even if it is
+                - already locked
+                - 
+                - ■ NTFS has a higher security level and allows you access to audit trails,
+                - quota management, and an encrypting filesystem
+                - Each file can be protected against unauthorized access
+                - ■ POSIX supports Unix and Linux compatibility between NTFS and a Unix or
+                - Linux filesystem
+                - ■ Windows and NTFS are not case sensitive
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 8 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - JASON and jason would be the same file to NTFS
+                - Windows doesn't rely on case sensitivity when reading NTFS, but
+                - Linux and Unix will
+                - 
+                - ■ Indexing is a catalog of file and folder locations to help speed up searches
+                - ■ Dynamic discs can combine physical discs into one larger disc that is
+                - understood by the operating system
+                - ○ File allocation table 32, also known as FAT32
+                - ■ You can only have a total drive size of up to 2 TB and the maximum file
+                - size is 4 GB
+                - ■ FAT is limited due to it being a 32-bit allocation table, where the
+                - maximum file size is around 4.2 billion bytes or 4 GB
+                - ■ FAT is supported by Windows, Unix, Linux, and macOS
+                - ■ FAT32 is usually used on removable drives like external hard drives or
+                - USB flash drives
+                - 
+                - ○ Extended file type system, also known as ext3 and ext4
+                - ■ These are supported by Linux and Unix systems, but not by Windows or
+                - macOS by default
+                - ■ ext3 has a maximum volume size of 32 TB and maximum file size of 2 TB
+                - ■ ext4 has a maximum volume size of 1 EB and maximum file size of 16 TB
+                - ○ Apple file system or APFS
+                - ■ APFS has been the default file system of macOS since 2018
+                - ■ APFS is considered a journaled filesystem, and provides same journaling
+                - benefits as in NTFS
+                - ■ APFS has a higher level of performance when dealing with SSD than a
+                - traditional HDD
+                - 
+                - ○ Extensible file allocation table, also known as exFAT
+                - 
+                - CompTIA A+ Core 2
+                - Study Notes
+                - 
+                - 9 -
+                - 
+                - [https://www.DionTraining.com](https://www.DionTraining.com) © 2022
+                - 
+                - Dion Training Solutions, LLC is a Platinum Delivery Partner for CompTIA. CompTIA ® is a registered trademark of the Computer and Computing Technology Industry Association. All rights reserved.
+                - 
+                - V1.0
+                - 
+                - ■ exFAT supports large volumes of up to 128 PB in size and file sizes of up
+                - to 16 EB
+                - ■ exFAT is considered cross platform capable and can be used on Windows,
+                - Unix, Linux, or macOS
+                - Windows
+                - ○ NTFS
+                - Linux
+                - ○ ext4
+                - macOS
+                - ○ APFS
+                - ○
+            - Compatibility Concerns !
+                - ○ Every software application is coded to run on a specific operating system
+                - ○ Devices that are running different operating systems can communicate on the same data network
+                - ○ Most computers can talk the same language using TCP/IP
+                - ○ The ability of end users to use different operating systems
+                - ○ A traditional user may be used to work with just one or two operating systems
+                - ○ Train users to understand how to use your operating system
+        - 1.9 Given a scenario, perform OS installations and upgrades in a diverse OS environment.
+            - Boot methods
+                - USB
+                - Optical media
+                - Network
+                - Solid-state/flash drives
+                - Internet-based
+                - External/hot-swappable drive
+                - Internal hard drive (partition)
+            - Types of installations
+                - Upgrade
+                - Recovery partition
+                - Clean install
+                - Image deployment
+                - Repair installation
+                - Remote network installation
+                - Other considerations
+                    - Third-party drivers
+            - Partitioning
+                - GUID [globally unique identifier] Partition Table (GPT)
+                - Master boot record (MBR)
+            - Drive format
+            - Upgrade considerations
+                - Backup files and user preferences
+                - Application and driver support/backward compatibility
+                - Hardware compatibility
+            - Feature updates
+                - Product life cycle
+        - 1.10 Identify common features and tools of the macOS/desktop OS.
+            - Installation and uninstallation of applications
+                - File types
+                    - .dmg
+                    - .pkg
+                    - .app
+                - App Store
+                - Uninstallation process
+            - Apple ID and corporate restrictions
+            - Best practices
+                - Backups
+                - Antivirus
+                - Updates/patches
+            - System Preferences
+                - Displays
+                - Networks
+                - Printers
+                - Scanners
+                - Privacy
+                - Accessibility
+                - Time Machine
+            - Features
+                - Multiple desktops
+                - Mission Control
+                - Keychain
+                - Spotlight
+                - iCloud
+                - Gestures
+                - Finder
+                - Remote Disc
+                - Dock
+            - Disk Utility
+            - FileVault
+            - Terminal
+            - Force Quit
+        - 1.11 Identify common features and tools of the Linux client/desktop OS.
+            - Common commands
+                - ls
+                - pwd
+                - mv
+                - cp
+                - rm
+                - chmod
+                - chown
+                - su/sudo
+                - apt-get
+                - yum
+                - ip
+                - df
+                - grep
+                - ps
+                - man
+                - top
+                - find
+                - dig
+                - cat
+                - nano
+            - Best practices
+                - Backups
+                - Antivirus
+                - Updates/patches
+            - Tools
+                - Shell/terminal
+                - Samba
+    - 2.0 Security 25%
+        - 2.1 Summarize various security measures and their purposes.
+            - Physical security
+                - Access control vestibule
+                - Badge reader
+                - Video surveillance
+                - Alarm systems
+                - Motion sensors
+                - Door locks
+                - Equipment locks
+                - Guards
+                - Bollards
+                - Fences
+            - Physical security for staff
+                - Key fobs
+                - Smart cards
+                - Keys
+                - Biometrics
+                    - Retina scanner
+                    - Fingerprint scanner
+                    - Palmprint scanner
+                - Lighting
+                - Magnetometers
+            - Logical security
+                - Principle of least privilege
+                - Access control lists (ACLs)
+                - Multifactor authentication (MFA)
+                - Email
+                - Hard token
+                - Soft token
+                - Short message service (SMS)
+                - Voice call
+                - Authenticator application
+            - Mobile device management (MDM)
+            - Active Directory
+                - Login script
+                - Domain
+                - Group Policy/updates
+                - Organizational units
+                - Home folder
+                - Folder redirection
+                - Security groups
+        - 2.2 Compare and contrast wireless security protocols and authentication methods.
+            - Protocols and encryption
+                - WiFi Protected Access 2 (WPA2)
+                - WPA3
+                - Temporal Key Integrity Protocol (TKIP)
+                - Advanced Encryption Standard (AES)
+            - Authentication
+                - Remote Authentication Dial-In User Service (RADIUS)
+                - Terminal Access Controller Access-Control System (TACACS+)
+                - Kerberos
+                - Multifactor
+        - 2.3 Given a scenario, detect, remove, and prevent malware using the appropriate tools and methods.
+            - Malware
+                - Trojan
+                - Rootkit
+                - Virus
+                - Spyware
+                - Ransomware
+                - Keylogger
+                - Boot sector virus
+                - Cryptominers
+            - Tools and methods
+                - Recovery mode
+                - Antivirus
+                - Anti-malware
+                - Software firewalls
+                - Anti-phishing training
+                - User education regarding common threats
+                - OS reinstallation
+        - 2.4 Explain common social-engineering attacks, threats, and vulnerabilities.
+            - Social engineering
+                - Phishing
+                - Vishing
+                - Shoulder surfing
+                - Whaling
+                - Tailgating
+                - Impersonation
+                - Dumpster diving
+                - Evil twin
+            - Threats
+                - Distributed denial of service (DDoS)
+                - Denial of service (DoS)
+                - Zero-day attack
+                - Spoofing
+                - On-path attack
+                - Brute-force attack
+                - Dictionary attack
+                - Insider threat
+                - Structured Query Language (SQL) injection
+                - Cross-site scripting (XSS)
+            - Vulnerabilities
+                - Non-compliant systems
+                - Unpatched systems
+                - Unprotected systems (missing antivirus/missing firewall)
+                - EOL OSs
+                - Bring your own device (BYOD)
+        - 2.5 Given a scenario, manage and configure basic security settings in the Microsoft Windows OS.
+            - Defender Antivirus
+                - Activate/deactivate
+                - Updated definitions
+            - Firewall
+                - Activate/deactivate
+                - Port security
+                - Application security
+            - Users and groups
+                - Local vs. Microsoft account
+                - Standard account
+                - Administrator
+                - Guest user
+                - Power user
+            - Login OS options
+                - Username and password
+                - Personal identification number (PIN)
+                - Fingerprint
+                - Facial recognition
+                - Single sign-on (SSO)
+            - NTFS vs. share permissions
+                - File and folder attributes
+                - Inheritance
+            - Run as administrator vs. standard user
+                - User Account Control (UAC)
+            - BitLocker
+            - BitLocker To Go
+            - Encrypting File System (EFS)
+        - 2.6 Given a scenario, configure a workstation to meet best practices for security.
+            - Data-at-rest encryption
+            - Password best practices
+                - Complexity requirements
+                    - Length
+                    - Character types
+                - Expiration requirements
+                - Basic input/output system (BIOS)/Unified Extensible Firmware Interface (UEFI) passwords
+            - End-user best practices
+                - Use screensaver locks
+                - Log off when not in use
+                - Secure/protect critical hardware (e.g., laptops)
+                - Secure personally identifiable information (PII) and passwords
+            - Account management
+                - Restrict user permissions
+                - Restrict login times
+                - Disable guest account
+                - Use failed attempts lockout
+                - Use timeout/screen lock
+            - Change default administrator’s user account/password
+            - Disable AutoRun
+            - Disable AutoPlay
+        - 2.7 Explain common methods for securing mobile and embedded devices.
+            - Screen locks
+                - Facial recognition
+                - PIN codes
+                - Fingerprint
+                - Pattern
+                - Swipe
+            - Remote wipes
+            - Locator applications
+            - OS updates
+            - Device encryption
+            - Remote backup applications
+            - Failed login attempts restrictions
+            - Antivirus/anti-malware
+            - Firewalls
+            - Policies and procedures
+                - BYOD vs. corporate owned
+                - Profile security requirements
+            - Internet of Things (IoT)
+        - 2.8 Given a scenario, use common data destruction and disposal methods.
+            - Physical destruction
+                - Drilling
+                - Shredding
+                - Degaussing
+                - Incinerating
+            - Recycling or repurposing best practices
+                - Erasing/wiping
+                - Low-level formatting
+                - Standard formatting
+            - Outsourcing concepts
+                - Third-party vendor
+                - Certification of destruction/recycling
+        - 2.9 Given a scenario, configure appropriate security settings on small office/home office (SOHO) wireless and wired networks.
+            - Home router settings
+                - Change default passwords
+                - IP filtering
+                - Firmware updates
+                - Content filtering
+                - Physical placement/secure locations
+                - Dynamic Host Configuration Protocol (DHCP) reservations
+                - Static wide-area network (WAN) IP
+                - Universal Plug and Play (UPnP)
+                - Screened subnet
+            - Wireless specific
+                - Changing the service set identifier (SSID)
+                - Disabling SSID broadcast
+                - Encryption settings
+                - Disabling guest access
+                - Changing channels
+            - Firewall settings
+                - Disabling unused ports
+                - Port forwarding/mapping
+        - 2.10 Given a scenario, install and configure browsers and relevant security settings.
+            - Browser download/installation
+                - Trusted sources
+                    - Hashing
+                - Untrusted sources
+            - Extensions and plug-ins
+                - Trusted sources
+                - Untrusted sources
+            - Password managers
+            - Secure connections/sites – valid certificates
+            - Settings
+                - Pop-up blocker
+                - Clearing browsing data
+                - Clearing cache
+                - Private-browsing mode
+                - Sign-in/browser data
+                - synchronization
+                - Ad blockers
+    - 3.0 Software Troubleshooting 22%
+        - 3.1 Given a scenario, troubleshoot common Windows OS problems.
+            - Common symptoms
+                - Blue screen of death (BSOD)
+                - Sluggish performance
+                - Boot problems
+                - Frequent shutdowns
+                - Services not starting
+                - Applications crashing
+                - Low memory warnings
+                - USB controller resource warnings
+                - System instability
+                - No OS found
+                - Slow profile load
+                - Time drift
+            - Common troubleshooting steps
+                - Reboot
+                - Restart services
+                - Uninstall/reinstall/update
+                - applications
+                - Add resources
+                - Verify requirements
+                - System file check
+                - Repair Windows
+                - Restore
+                - Reimage
+                - Roll back updates
+                - Rebuild Windows profiles
+        - 3.2 Given a scenario, troubleshoot common personal computer (PC) security issues.
+            - Common symptoms
+                - Unable to access the network
+                - Desktop alerts
+                - False alerts regarding antivirus protection
+                - Altered system or personal files
+                    - Missing/renamed files
+                - Unwanted notifications within the OS
+                - OS update failures
+            - Browser-related symptoms
+                - Random/frequent pop-ups
+                - Certificate warnings
+                - Redirection
+        - 3.3 Given a scenario, use best practice procedures for malware removal.
+            - 1. Investigate and verify malware symptoms
+            - 2. Quarantine infected systems
+            - 3. Disable System Restore in Windows
+            - 4. Remediate infected systems
+                - a. Update anti-malware software
+                - b. Scanning and removal techniques (e.g., safe mode, preinstallation environment)
+            - 5. Schedule scans and run updates
+            - 6. Enable System Restore and create a restore point in Windows
+            - 7. Educate the end user
+        - 3.4 Given a scenario, troubleshoot common mobile OS and application issues.
+            - Common symptoms
+                - Application fails to launch
+                - Application fails to close/crashes
+                - Application fails to update
+                - Slow to respond
+                - OS fails to update
+                - Battery life issues
+                - Randomly reboots
+                - Connectivity issues
+                    - Bluetooth
+                    - WiFi
+                    - Near-field communication (NFC)
+                    - AirDrop
+                - Screen does not autorotate
+        - 3.5 Given a scenario, troubleshoot common mobile OS and application security issues.
+            - Security concerns
+                - Android package (APK) source
+                - Developer mode
+                - Root access/jailbreak
+                - Bootleg/malicious application
+                    - Application spoofing
+            - Common symptoms
+                - High network traffic
+                - Sluggish response time
+                - Data-usage limit notification
+                - Limited Internet connectivity
+                - No Internet connectivity
+                - High number of ads
+                - Fake security warnings
+                - Unexpected application behavior
+                - Leaked personal files/data
+    - 4.0 Operational Procedures 22%
+        - 4.1 Given a scenario, implement best practices associated with documentation and support systems information management.
+            - Ticketing systems
+                - User information
+                - Device information
+                - Description of problems
+                - Categories
+                - Severity
+                - Escalation levels
+                - Clear, concise written communication
+                    - Problem description
+                    - Progress notes
+                    - Problem resolution
+            - Asset management
+                - Inventory lists
+                - Database system
+                - Asset tags and IDs
+                - Procurement life cycle
+                - Warranty and licensing
+                - Assigned users
+            - Types of documents
+                - Acceptable use policy (AUP)
+                - Network topology diagram
+                - Regulatory compliance requirements
+                    - Splash screens
+                - Incident reports
+                - Standard operating procedures
+                    - Procedures for custom installation of software package
+                - New-user setup checklist
+                - End-user termination checklist
+            - Knowledge base/articles
+        - 4.2 Explain basic change-management best practices.
+            - Documented business processes
+                - Rollback plan
+                - Sandbox testing
+                - Responsible staff member
+            - Change management
+                - Request forms
+                - Purpose of the change
+                - Scope of the change
+                - Date and time of the change
+                - Affected systems/impact
+                - Risk analysis
+                    - Risk level
+                - Change board approvals
+                - End-user acceptance
+        - 4.3 Given a scenario, implement workstation backup and recovery methods.
+            - Backup and recovery
+                - Full
+                - Incremental
+                - Differential
+                - Synthetic
+            - Backup testing
+                - Frequency
+            - Backup rotation schemes
+                - On site vs. off site
+                - Grandfather-father-son (GFS)
+                - 3-2-1 backup rule
+        - 4.4 Given a scenario, use common safety procedures.
+            - Electrostatic discharge (ESD) straps
+            - ESD mats
+            - Equipment grounding
+            - Proper power handling
+            - Proper component handling and storage
+            - Antistatic bags
+            - Compliance with government regulations
+            - Personal safety
+                - Disconnect power before repairing PC
+                - Lifting techniques
+                - Electrical fire safety
+                - Safety goggles
+                - Air filtration mask
+        - 4.5 Summarize environmental impacts and local environmental controls.
+            - Material safety data sheet (MSDS)/documentation for handling and disposal
+                - Proper battery disposal
+                - Proper toner disposal
+                - Proper disposal of other devices and assets
+            - Temperature, humidity-level awareness, and proper ventilation
+                - Location/equipment placement
+                - Dust cleanup
+                - Compressed air/vacuums
+            - Power surges, under-voltage events, and power failures
+                - Battery backup
+                - Surge suppressor
+        - 4.6 Explain the importance of prohibited content/activity and privacy, licensing, and policy concepts.
+            - Incident response
+                - Chain of custody
+                - Inform management/law enforcement as necessary
+                - Copy of drive (data integrity and preservation)
+                - Documentation of incident
+            - Licensing/digital rights management (DRM)/end-user license agreement (EULA)
+                - Valid licenses
+                - Non-expired licenses
+                - Personal use license vs. corporate use license
+                - Open-source license
+            - Regulated data
+                - Credit card transactions
+                - Personal government-issued information
+                - PII
+                - Healthcare data
+                - Data retention requirements
+        - 4.7 Given a scenario, use proper communication techniques and professionalism.
+            - Professional appearance and attire
+                - Match the required attire of the given environment
+                    - Formal
+                    - Business casual
+            - Use proper language and avoid jargon, acronyms, and slang, when applicable
+            - Maintain a positive attitude/project confidence
+            - Actively listen, take notes, and avoid interrupting the customer
+            - Be culturally sensitive
+                - Use appropriate professional titles, when applicable
+            - Be on time (if late, contact the customer)
+            - Avoid distractions
+                - Personal calls
+                - Texting/social media sites
+                - Personal interruptions
+            - Dealing with difficult customers or situations
+                - Do not argue with customers or be defensive
+                - Avoid dismissing customer problems
+                - Avoid being judgmental
+                - Clarify customer statements (ask open-ended questions to narrow the scope of the problem, restate the issue, or question to verify understanding)
+                - Do not disclose experience via social media outlets
+            - Set and meet expectations/time line and communicate status with the customer
+                - Offer repair/replacement options, as needed
+                - Provide proper documentation on the services provided
+                - Follow up with customer/user at a later date to verify satisfaction
+            - Deal appropriately with customers’ confidential and private materials
+                - Located on a computer, desktop, printer, etc.
+        - 4.8 Identify the basics of scripting.
+            - Script file types
+                - .bat
+                - .ps1
+                - .vbs
+                - .sh
+                - .js
+                - .py
+            - Use cases for scripting
+                - Basic automation
+                - Restarting machines
+                - Remapping network drives
+                - Installation of applications
+                - Automated backups
+                - Gathering of information/data
+                - Initiating updates
+            - Other considerations when using scripts
+                - Unintentionally introducing malware
+                - Inadvertently changing system settings
+                - Browser or system crashes due to mishandling of resources
+        - 4.9 Given a scenario, use remote access technologies.
+            - Methods/tools
+                - RDP
+                - VPN
+                - Virtual network computer (VNC)
+                - Secure Shell (SSH)
+                - Remote monitoring and management (RMM)
+                - Microsoft Remote Assistance (MSRA)
+                - Third-party tools
+                    - Screen-sharing software
+                    - Video-conferencing software
+                    - File transfer software
+                    - Desktop management software
+            - Security considerations of each access method
+- CompTIA A+ 220-1201
+    - Covers mobile devices, networking technology, hardware, virtualization and cloud computing.
+    - TROUBLESHOOTING METHODOLOGY KNOWLEDGE
+        - During the job task analysis workshop for the A+ 220-1200 series, subject matter experts deemed the troubleshooting methodology an effective best practice that new job incumbents should be aware of and leverage as they engage in troubleshooting new issues on the job. 
+        - However, while this methodology is practical, the decision was made to not include it in the exam. 
+        - While the methodology itself will not be tested, there remains an emphasis on troubleshooting within the job role context. 
+        - Therefore, the troubleshooting methodology section appears here as part of this “competency standard” but does not constitute a formal objective or part of the A+ certification exam.
+        - Training institutions that prepare individuals with very little technical knowledge and experience are encouraged to leverage this methodology, especially when such individuals might be applying for their first IT job.
+        - The troubleshooting methodology includes the following steps:
+            - Identify the problem.
+            - Establish a theory of probable cause (question the obvious).
+                - Research knowledge base/internet, if applicable.
+            - Test the theory to determine the cause.
+            - Establish a plan of action to resolve the problem and implement the solution.
+            - Verify full system functionality and, if applicable, implement preventive measures.
+            - Document findings/lessons learned, actions, and outcomes.
+    - 1.0 Mobile Devices
+        - 1.1 Given a scenario, monitor mobile device hardware and use appropriate replacement techniques.
+            - Battery
+            - Keyboard/keys
+            - Random-access memory (RAM)
+            - Hard disk drive (HDD)/solid-state drive (SSD)
+            - Wireless cards
+            - Physical privacy and security components
+                - − Biometrics
+                - − Near-field scanner features
+            - Wi-Fi antenna connector/placement
+            - Camera/webcam
+            - Microphone
+        - 1.2 Compare and contrast accessories and connectivity options for mobile devices.
+            - Connection methods
+                - − Universal Serial Bus (USB)/USB-C/microUSB/miniUSB
+                - − Lightning
+                - − Near-field communication (NFC)
+                - − Bluetooth
+                - − Tethering/hotspot
+            - Accessories
+                - − Stylus
+                - − Headsets
+                - − Speakers
+                - − Webcam
+            - Docking station
+            - Port replicator
+            - Trackpad/drawing pad/track points
+        - 1.3 Given a scenario, configure basic mobile device network connectivity and provide application support.
+            - Wireless/cellular data network (enable/disable)
+                - − 3G/4G/5G
+                - − Hotspot
+                - − Wi-Fi
+                - − Subscriber Identity
+            - Module (SIM)/eSIM
+            - Bluetooth
+                - − Enable Bluetooth
+                - − Enable pairing
+                - − Find a device for pairing
+                - − Enter the appropriate personal identification number (PIN) code
+                - − Test connectivity
+            - Location services
+                - − Global positioning system (GPS) services
+                - − Cellular location services
+            - Mobile device management (MDM)
+                - − Device configurations
+                    - ◦ Corporate
+                    - ◦ Bring your own device (BYOD)
+                - − Policy enforcement
+                - − Corporate applications
+            - Mobile device synchronization
+                - − Recognizing data caps
+                - − Calendar
+                - − Contacts
+                - − Business applications
+                    - ◦ Mail
+                    - ◦ Cloud storage
+    - 2.0 Networking
+        - 2.1 Compare and contrast Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) ports, protocols, and their purposes.
+            - Ports and protocols
+                - − 20-21 – File Transfer Protocol (FTP)
+                - − 22 – Secure Shell (SSH)
+                - − 23 – Telnet
+                - − 25 – Simple Mail Transfer Protocol (SMTP)
+                - − 53 – Domain Name System (DNS)
+                - − 67/68 – Dynamic Host Configuration Protocol (DHCP)
+                - − 80 – Hypertext Transfer Protocol (HTTP)
+                - − 110 – Post Office Protocol 3 (POP3)
+                - − 143 – Internet Mail Access Protocol (IMAP)
+                - − 137-139 Network Basic Input/Output System (NetBIOS)/NetBIOS over TCP/IP (NetBT)
+                - − 389 – Lightweight Directory Access Protocol (LDAP)
+                - − 443 – Hypertext Transfer Protocol Secure (HTTPS)
+                - − 445 – Server Message Block (SMB)/Common Internet File System (CIFS)
+                - − 3389 – Remote Desktop Protocol (RDP)
+            - TCP vs. UDP
+        - 2.2 Explain wireless networking technologies.
+            - Frequencies
+                - − 2.4GHz
+                - − 5GHz
+                - − 6GHz
+            - Channels
+                - − Regulations
+                - − Channel selection
+                    - ◦ Widths
+                    - ◦ Frequencies
+                    - ◦ Bands
+            - Bluetooth
+            - 802.11 standards
+            - NFC
+            - Radio-frequency identification (RFID)
+        - 2.3 Summarize services provided by networked hosts.
+            - Server roles
+                - − DNS
+                - − DHCP
+                - − Fileshare
+                - − Print servers
+                - − Mail servers
+                - − Syslog
+                - − Web servers
+                - − Authentication, Authorization, and Accounting (AAA)
+                - − Database servers
+                - − Network Time Protocol (NTP)
+            - Internet appliances
+                - − Spam gateways
+                - − Unified threat management (UTM)
+                - − Load balancers
+                - − Proxy servers
+            - Legacy/embedded systems
+                - − Supervisory control and data acquisition (SCADA)
+            - Internet of Things (IoT) devices
+        - 2.4 Explain common network configuration concepts.
+            - DNS
+                - − A
+                - − AAAA
+                - − Canonical Name (CNAME)
+                - − Mail exchanger (MX)
+                - − Text (TXT)
+                    - ◦ Spam management
+                        - ը DomainKeys Identified Mail (DKIM)
+                        - Sender Policy Framework (SPF)
+                        - Domain-based Message Authentication, Reporting, and Conformance (DMARC)
+            - DHCP
+                - − Leases
+                - − Reservations
+                - − Scope
+                - − Exclusions
+            - Virtual LAN [local area network] (VLAN)
+            - Virtual private network (VPN)
+        - 2.5 Compare and contrast common networking hardware devices.
+            - Routers
+            - Switches
+                - − Managed
+                - − Unmanaged
+            - Access points
+            - Patch panel
+            - Firewall
+            - Power over Ethernet (PoE)
+                - − Injectors
+                - − Switch
+                - − PoE standards
+            - Cable modem
+            - Digital subscriber line (DSL)
+            - Optical network terminal (ONT)
+            - Network interface card (NIC)
+                - − Physical media access control (MAC) address
+        - 2.6 Given a scenario, configure basic wired/wireless small office/home office (SOHO) networks.
+            - Internet Protocol (IP) addressing
+                - − IPv4
+                    - ◦ Private addresses
+                    - ◦ Public addresses
+                - − IPv6
+                - − Automatic Private IP Addressing (APIPA)
+                - − Static
+                - − Dynamic
+                - − Subnet mask
+                - − Gateway
+        - 2.7 Compare and contrast internet connection types, network types, and their characteristics.
+            - Internet connection types
+                - − Satellite
+                - − Fiber
+                - − Cable
+                - − DSL
+                - − Cellular
+                - − Wireless internet service provider (WISP)
+            - Network types
+                - − LAN
+                - − Wide area network (WAN)
+                - − Personal area network (PAN)
+                - − Metropolitan area network (MAN)
+                - − Storage area network (SAN)
+                - − Wireless local area network (WLAN)
+        - 2.8 Explain networking tools and their purposes.
+            - Crimper
+            - Cable stripper
+            - Wi-Fi analyzer
+            - Toner probe
+            - Punchdown tool
+            - Cable tester
+            - Loopback plug
+            - Network tap
+        - 
+    - 3.0 Hardware
+        - 3.1 Compare and contrast display components and attributes.
+            - Types
+                - − Liquid crystal display (LCD)
+                    - ◦ In-plane switching (IPS)
+                    - ◦ Twisted nematic (TN)
+                    - ◦ Vertical alignment (VA)
+                - − Organic light-emitting diode (OLED)
+                - − Mini light-emitting diode (Mini-LED)
+            - Touch screen/digitizer
+            - Inverter
+            - Attributes
+                - − Pixel density
+                - − Refresh rates
+                - − Screen resolution
+                - − Color gamut
+        - 3.2 Summarize basic cable types and their connectors, features, and purposes.
+            - Network cables
+                - − Copper
+                    - ◦ Categories
+                        - ը T568A/T568B standards
+                    - ◦ Coaxial
+                    - ◦ Shielded twisted pair
+                        - ը Direct burial
+                    - ◦ Unshielded twisted pair
+                - − Plenum-rated
+                - − Optical
+                    - ◦ Single-mode
+                    - ◦ Multimode
+                - Peripheral cables
+                - − USB 2.0
+                - − USB 3.0
+                - − Serial
+                - − Thunderbolt
+            - Video cables
+                - − High-definition Multimedia
+            - Interface (HDMI)
+                - − DisplayPort
+                - − Digital Visual Interface (DVI)
+                - − Video Graphics Array (VGA)
+                - − USB-C
+            - Hard drive cables
+                - − Serial Advanced Technology Attachment (SATA)
+                    - − External SATA (eSATA)
+            - Adapters
+            - Connector types
+                - − RJ11
+                - − RJ45
+                - − F-type
+                - − Straight tip (ST)
+                - − Subscriber connector (SC)
+                - − Lucent connector (LC)
+                - − Punchdown block
+                - − MicroUSB
+                - − MiniUSB
+                - − USB-C
+                - − Molex
+                - − Lightning
+                - − DB9
+        - 3.3 Compare and contrast RAM characteristics.
+            - Form factors
+                - − Small Outline Dual In-line Memory Module (SODIMM)
+                - − Dual In-line Memory Module (DIMM)
+            - Double Data Rate (DDR) iterations
+            - Error-correcting code (ECC) vs. non-ECC RAM
+            - Channel configurations
+        - 3.4 Compare and contrast storage devices.
+            - Hard drives
+                - − Spindle speeds
+                - − Form factors
+                    - ◦ 2.5-inch
+                    - ◦ 3.5-inch
+            - Solid-state drives
+                - − Communications interfaces
+                    - ◦ Non-volatile Memory Express (NVMe)
+                    - ◦ SATA
+                    - ◦ Peripheral Component Interconnect Express (PCIe)
+                    - ◦ Serial Attached SCSI [Small Computer System Interface] (SAS)
+                - − Form factors
+                    - ◦ M.2
+                    - ◦ Mini-serial Advanced Technology Attachment (mSATA)
+            - Drive configurations
+                - − Redundant Array of Independent Disks (RAID) 0, 1, 5, 6, 10
+            - Removable storage
+                - − Flash drives
+                - − Memory cards
+            - Optical drives
+        - 3.5 Given a scenario, install and configure motherboards, central processing units (CPUs), and add-on cards.
+            - Motherboard form factors
+                - − Advanced Technology Extended (ATX)
+                - − microATX
+                - − Information Technology eXtended (ITX)
+            - Motherboard connector types
+                - − Peripheral Component Interconnect (PCI)
+                - − PCIe
+                - − Power connectors
+                - − SATA
+                - − eSATA
+                - − Headers
+                - − M.2
+            - Motherboard compatibility
+                - − CPU socket types
+                    - ◦ Advanced Micro Devices, Inc. (AMD)
+                    - ◦ Intel
+                - − Multisocket
+            - BIOS/Unified Extensible Firmware Interface (UEFI) settings
+                - − Boot options
+                - − USB permissions
+                - − Trusted Platform Module (TPM) security features
+                - − Fan considerations
+                - − Secure Boot
+                - − Boot password
+                - − BIOS password
+                - − Temperature monitoring
+            - Virtualization support 
+            - Encryption
+                - − TPM
+                - − Hardware security module (HSM)
+            - CPU architecture
+                - − x86/x64
+                - − Advanced RISC [Reduced Instruction Set Computer] Machine (ARM)
+                - − Core configurations
+            - Expansion cards
+                - − Sound card
+                - − Video card
+                - − Capture card
+                - − Network interface card
+            - Cooling
+                - − Fans
+                - − Heat sink
+                - − Thermal paste/pads
+                - − Liquid
+        - 3.6 Given a scenario, install the appropriate power supply.
+            - Input 110–120 VAC vs. 220–240 VAC
+            - Output 3.3V vs. 5V vs. 12V
+            - 20+4 pin motherboard connector
+            - Redundant power supply
+            - Modular power supply
+            - Wattage rating
+            - Energy efficiency
+        - 3.7 Given a scenario, deploy and configure multifunction devices/printers and settings.
+            - Properly unbox device and consider set-up location
+            - Use appropriate drivers for a given operating system
+                - − Printer Control Language (PCL) vs. postscript
+            - Firmware
+            - Device connectivity
+                - − USB
+                - − Ethernet
+                - − Wireless
+            - Public/shared devices
+                - − Printer share
+                - − Print server
+            - Configuration settings
+                - − Duplex
+                - − Orientation
+                - − Tray settings
+                - − Quality
+            - Security
+                - − User authentication
+                - − Badging
+                - − Audit logs
+                - − Secured prints
+            - Network scan services
+                - − Email
+                - − SMB
+                - − Cloud services
+            - Automatic document feeder (ADF)/flatbed scanner
+        - 3.8 Given a scenario, perform appropriate printer maintenance.
+        - Laser
+            - − Maintenance: Replace toner, apply maintenance kit, calibrate, and clean
+        - Inkjet
+            - − Ink cartridge, printhead, roller, and feeder
+            - − Maintenance: Clean printheads, replace cartridges, calibrate, and clear jams
+        - Thermal
+            - − Feed assembly
+            - − Special thermal paper
+            - − Maintenance: Replace paper, clean heating element, and remove debris
+        - Impact
+            - − Multipart paper
+            - − Maintenance: Replace ribbon, printhead, and paper
+    - 4.0 Virtualization and Cloud Computing
+        - 4.1 Explain virtualization concepts.
+            - Purpose of virtual machines
+                - − Sandbox
+                - − Test development
+                - − Application virtualization
+                    - ◦ Legacy software/OS
+                    - ◦ Cross-platform virtualization
+            - Requirements
+                - − Security
+                - − Network
+                - − Storage
+            - Desktop virtualization
+                - − Virtual Desktop Infrastructure (VDI)
+            - Containers
+            - Hypervisors
+                - − Type 1
+                - − Type 2
+        - 4.2 Summarize cloud computing concepts.
+            - Common cloud models
+                - − Private cloud
+                - − Public cloud
+                - − Hybrid cloud
+                - − Community cloud
+                - − Infrastructure as a service (IaaS)
+                - − Software as a service (SaaS)
+                - − Platform as a service (PaaS)
+            - Cloud characteristics
+                - − Shared resources vs. dedicated resources
+                - − Metered utilization
+                    - ◦ Ingress/egress
+                - − Elasticity
+                - − Availability
+                - − File synchronization
+                - − Multitenancy
+    - 5.0 Hardware and Network Troubleshooting
+        - 5.1 Given a scenario, troubleshoot motherboards, RAM, CPUs, and power.
+            - Common symptoms
+                - − Power-on self-test (POST) beeps
+                - − Proprietary crash screens
+                - − Blank screen
+                - − No power
+                - − Sluggish performance
+                - − Overheating
+                - − Burning smell
+                - − Random shutdown
+                - − Application crashes
+                - − Unusual noise
+                - − Capacitor swelling
+                - − Inaccurate system date/time
+        - 5.2 Given a scenario, troubleshoot drive and RAID issues.
+            - Common symptoms
+                - − Light-emitting diode (LED) status indicators
+                - − Grinding noises
+                - − Clicking sounds
+                - − Bootable device not found
+                - − Data loss/corruption
+                - − RAID failure
+                - − Self-monitoring and Reporting Technology (S.M.A.R.T.) failure
+                - − Extended read/write times
+                - − Low performance input/output operations per second (IOPS)
+                - − Missing drives in OS
+                - − Array missing
+                - − Audible alarms
+        - 5.2 Given a scenario, troubleshoot video, projector, and display issues.
+            - Common symptoms
+                - − Incorrect input source
+                - − Physical cabling issues
+                - − Burnt-out bulb
+                - − Fuzzy image
+                - − Display burn-in
+                - − Dead pixels
+                - − Flashing screen
+                - − Incorrect color display
+                - − Audio issues
+                - − Dim image
+                - − Intermittent projector shutdown
+                - − Sizing issues
+                - − Distorted image
+        - 5.4Given a scenario, troubleshoot common mobile device issues.
+            - Common symptoms
+                - − Poor battery health
+                - − Swollen battery
+                - − Broken screen
+                - − Improper charging
+                - − Poor/no connectivity
+                - − Liquid damage
+                - − Overheating
+                - − Digitizer issues
+                - − Physically damaged ports
+                - − Malware
+                - − Cursor drift/touch calibration
+                - − Unable to install new applications
+                - − Stylus does not work
+                - − Degraded performance
+        - 5.5 Given a scenario, troubleshoot network issues.
+            - Common symptoms
+                - − Intermittent wireless connectivity
+                - − Slow network speeds
+                - − Limited connectivity
+                - − Jitter
+                - − Poor Voice over Internet
+                - Protocol (VoIP) quality
+                - − Port flapping
+                - − High latency
+                - − External interference
+                - − Authentication failures
+                - − Intermittent internet connectivity
+        - 5.6 Given a scenario, troubleshoot printer issues.
+            - Lines down the printed pages
+            - Garbled print
+            - Paper jams
+            - Faded prints
+            - Paper not feeding
+            - Multipage misfeed
+            - Multiple prints pending in queue
+            - Speckling on printed pages
+            - Double/echo images on the print
+            - Grinding noise
+            - Finishing issues
+                - − Staple jams
+                - − Hole punch
+            - Incorrect page orientation
+            - Tray not recognized
+            - Connectivity issues
+            - Frozen print queue
+    - CompTIA A+ Core 1 (220-1201) Acronym List
+        - The following is a list of acronyms that appears on the CompTIA Core 1
+        - (220-1201) exam. Candidates are encouraged to review the complete
+        - list and attain a working knowledge of all listed acronyms as part of a
+        - comprehensive exam preparation program.
+        - ACRONYM - DEFINITION
+        - AAA - Authentication, Authorization, and Accounting
+        - AAAA - Authentication, Authorization, Accounting, and Auditing
+        - ACL - Access Control List
+        - ADF - Automatic Document Feeder
+        - AES - Advanced Encryption Standard
+        - AMD - Advanced Micro Devices, Inc.
+        - APFS - Apple File System
+        - APIPA - Automatic Private Internet Protocol Addressing
+        - ARM - Advanced RISC [Reduced Instruction Set Computer] Machine
+        - ATX - Advanced Technology Extended
+        - BEC - Business Email Compromise
+        - BIOS - Basic Input/Output System
+        - BSOD - Blue Screen of Death
+        - BYOD - Bring Your Own Device
+        - CAC - Calling-card Authorization Computer
+        - CIFS - Common Internet File System
+        - CMDB - Configuration Management Database
+        - CNAME - Canonical Name
+        - CPU - Central Processing Unit
+        - DB-9 - Serial Communications D-Shell Connector, 9 pins
+        - DDoS - Distributed Denial of Service
+        - DDR - Double Data Rate
+        - DHCP - Dynamic Host Configuration Protocol
+        - DIMM - Dual In-line Memory Module
+        - DKIM - DomainKeys Identified Mail
+        - DLP - Data Loss Prevention
+        - DMARC - Domain-based Message Authentication, Reporting, and Conformance
+        - DNS - Domain Name System
+        - DoS - Denial of Service
+        - DRM - Digital Rights Management
+        - DSL - Digital Subscriber Line
+        - DVI - Digital Visual Interface
+        - ECC - Error-correcting Code
+        - EDR - Endpoint Detection and Response
+        - EFS - Encrypting File System
+        - EOL - End-of-life
+        - eSATA - External Serial Advanced Technology Attachment
+        - ESD - Electrostatic Discharge
+        - EULA - End-user License Agreement
+        - exFAT - Extended File Allocation Table
+        - FAT32 - 32-bit File Allocation Table
+        - FRT - Facial Recognition Technology
+        - FTP - File Transfer Protocol
+        - GFS - Grandfather-Father-Son
+        - GPS - Global Positioning System
+        - GPT - GUID [Globally Unique Identifier] Partition Table
+        - GUID - Globally Unique Identifier
+        - HDD - Hard Disk Drive
+        - HDMI - High-definition Media Interface
+        - HSM - Hardware Security Module
+        - HTTP - Hypertext Transfer Protocol
+        - HTTPS - Hypertext Transfer Protocol Secure
+        - IaaS - Infrastructure as a Service
+        - IAM - Identity and Access Management
+        - IMAP - Internet Mail Access Protocol
+        - IOPS - Input/Output Operations Per Second
+        - IoT - Internet of Things
+        - IP - Internet Protocol
+        - IPS - In-plane Switching
+        - ISO - International Organization for Standardization
+        - ITX - Information Technology eXtended
+        - KVM - Keyboard-Video-Mouse
+        - LAN - Local Area Network
+        - LC - Lucent Connector
+        - LCD - Liquid Crystal Display
+        - LDAP - Lightweight Directory Access Protocol
+        - LED - Light-emitting Diode
+        - MAC - Media Access Control
+        - MAN - Metropolitan Area Network
+        - MBR - Master Boot Record
+        - MDM - Mobile Device Management
+        - MDR - Managed Detection and Response
+        - MFA - Multifactor Authentication
+        - MMC - Microsoft Management Console
+        - MNDA - Mutual Non-disclosure Agreement
+        - mSATA - Mini-serial Advanced Technology Attachment
+        - MSDS - Material Safety Data Sheet
+        - MX - Mail Exchange
+        - NDA - Non-disclosure Agreement
+        - NetBIOS - Network Basic Input/Output System
+        - NFC - Near-field Communication
+        - NIC - Network Interface Card
+        - NTFS - New Technology File System
+        - NTP - Network Time Protocol
+        - NVMe - Non-volatile Memory Express
+        - OLED - Organic Light-emitting Diode
+        - ONT - Optical Network Terminal
+        - OS - Operating System
+        - OTP - One-time Password (or Passcode)
+        - PaaS - Platform as a Service
+        - PAM - Privileged Access Management
+        - PAN - Personal Area Network
+        - PC - Personal Computer
+        - PCI - Peripheral Component Interconnect
+        - PCIe - Peripheral Component Interconnect Express
+        - PII - Personally Identifiable Information
+        - PIN - Personal Identification Number
+        - PIV - Personal Identity Verification
+        - PoE - Power over Ethernet
+        - POP - Post Office Protocol
+        - POST - Power-on Self-test
+        - PUP - Potentially Unwanted Program
+        - RADIUS - Remote Authentication Dial-in User Server
+        - RAID - Redundant Array of Independent Disks
+        - RAM - Random-access Memory
+        - RDP - Remote Desktop Protocol
+        - ReFS - Resilient File System
+        - RFID - Radio-frequency Identification
+        - RJ11 - Registered Jack Function 11
+        - RJ45 - Registered Jack Function 45
+        - RMM - Remote Monitoring and Management
+        - RSR - Rapid Security Response
+        - SaaS - Software as a Service
+        - SAN - Storage Area Network
+        - SAML - Security Assertions Markup Language
+        - SAS - Serial Attached SCSI [Small Computer System Interface]
+        - SATA - Serial Advanced Technology Attachment
+        - SC - Subscriber Connector
+        - SCADA - Supervisory Control and Data Acquisition
+        - SCSI - Small Computer System Interface
+        - SIM - Subscriber Identity Module
+        - SLA - Service-level Agreement
+        - S.M.A.R.T - Self-monitoring Analysis and Reporting Technology
+        - SMB - Server Message Block
+        - SMS - Short Message Service
+        - SMTP - Simple Mail Transfer Protocol
+        - SODIMM - Small Outline Dual In-line Memory Module
+        - SOHO - Small Office/Home Office
+        - SOP - Standard Operating Procedure
+        - SPF - Sender Policy Framework
+        - SPICE - Software Process Improvement and Capability Determination
+        - SQL - Structured Query Language
+        - SSD - Solid-state Drive
+        - SSH - Secure Shell
+        - SSID - Service Set Identifier
+        - SSO - Single Sign-on
+        - ST - Straight Tip
+        - TACACS - Terminal Access Controller Access-control System
+        - TCP - Transmission Control Protocol
+        - TKIP - Temporal Key Integrity Protocol
+        - TN - Twisted Nematic
+        - TOTP - Time-based One-time Password
+        - TPM - Trusted Platform Module
+        - UAC - User Account Control
+        - UDP - User Datagram Protocol
+        - UEFI - Unified Extensible Firmware Interface
+        - UPnP - Universal Plug and Play
+        - UPS - Uninterruptible Power Supply
+        - USB - Universal Serial Bus
+        - UTM - Unified Threat Management
+        - VA - Vertical Alignment
+        - VDI - Virtual Desktop Infrastructure
+        - VGA - Video Graphics Array
+        - VLAN - Virtual LAN [Local Area Network]
+        - VNC - Virtual Network Computer
+        - VoIP - Voice over Internet Protocol
+        - VPN - Virtual Private Network
+        - VRAM - Video Random-access Memory
+        - WAN - Wide Area Network
+        - WinRM - Windows Remote Management
+        - WISP - Written Internet Service Provider
+        - WLAN - Wireless LAN [Local Area Network]
+        - WPA - Wi-Fi Protected Access
+        - WWAN - Wireless Wide Area Network
+        - XDR - Extended Detection and Response
+        - XFS - Extended File System
+        - XXS - Cross-site Scripting
+    - CompTIA A+ Core 1 (220-1201) Hardware and  Software List  
+        - CompTIA has included this sample list of hardware and software  to assist candidates as they prepare for the A+ Core 1 (220-1201)  certification exam. This list may also be helpful for training companies  that wish to create a lab component for their training offering. The  bulleted lists below each topic are sample lists and are not exhaustive.
+        - EQUIPMENT
+            - Apple tablet/smartphone
+            - Android tablet/smartphone
+            - Windows tablet
+            - Chromebook
+            - Windows laptop/Mac laptop/
+            - Linux laptop
+            - Windows desktop/Mac desktop/Linux desktop
+            - Windows server with Active Directory and Print Manager
+            - Monitors
+            - Projectors
+            - SOHO router/switch
+            - Access point
+            - VoIP phone
+            - Printer
+                - Laser/inkjet
+                - Wireless
+                - 3-D printer
+                - Thermal
+            - Surge suppressor
+            - UPS
+            - Smart devices (IoT devices)
+            - Server with a hypervisor
+            - Punchdown block
+            - Patch panel
+            - Webcams
+            - Speakers
+            - Microphones
+        - SPARE PARTS/HARDWARE
+            - Motherboards
+            - RAM
+            - Hard drives
+            - Power supplies
+            - Video cards
+            - Sounds cards
+            - Network cards
+            - Wireless NICs
+            - Fans/cooling devices/heat sink
+            - CPUs
+            - Assorted connectors/cables
+                - USB
+                - HDMI
+                - DisplayPort
+                - DVI
+                - VGA
+            - Adapters
+                - Bluetooth adapter
+            - Network cables
+            - Unterminated network cable/connectors
+            - AC adapters
+            - Optical drives
+            - Screws/stand-offs
+            - Cases
+            - Maintenance kit
+            - Mice/keyboards
+            - Keyboard-Video-Mouse (KVM)
+            - Console cable
+            - SSD
+        - TOOLS
+            - Screwdrivers
+            - Multimeter
+            - Wire cutters
+            - Punchdown tool
+            - Crimper
+            - Power supply tester
+            - Cable stripper
+            - Standard technician toolkit
+            - Electrostatic discharge (ESD) strap
+            - Thermal paste
+            - Cable tester
+            - Cable toner
+            - Wi-Fi analyzer
+            - Serial Advanced Technology Attachment (SATA) to USB connectors
+        - SOFTWARE
+            - Operating systems
+                - Linux
+- CompTIA A+ 220-1202
+    - Covers operating systems, security, software and operational procedures.
+    - A+
+        - CERTIFICATION
+        - Plus Series
+        - CompTIA A+
+    - Certification Exam
+        - Objectives
+        - EXAM NUMBER: CORE 2 (220-1202)
+    - About the Exam
+        - Candidates are encouraged to use this document to help prepare for the CompTIA A+ 220-1202 certification
+    - exam. In order to receive the CompTIA A+ certification, you must pass two exams: Core 1 (220-1201) and Core 2
+    - (220-1202). The CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) certification exams will verify the
+    - successful candidate has the knowledge and skills required to:
+    - Install, configure, and maintain computer equipment, mobile devices, and software for end users.
+        - Service components based on customer requirements.
+        - Understand networking basics and apply basic cybersecurity methods to mitigate threats.
+        - Properly and safely diagnose, resolve, and document common hardware and software issues.
+        - Apply troubleshooting skills and provide customer support using appropriate communication skills.
+        - Understand the basics of scripting, cloud technologies, virtualization, and multi-OS deployments in corporate
+    - environments.
+        - EXAM ACCREDITATION
+        - The CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) exams are accredited by ANSI to show compliance
+    - with the ISO 17024 standard and, as such, undergo regular reviews and updates to the exam objectives.
+        - EXAM DEVELOPMENT
+    - CompTIA exams result from subject matter expert workshops and industry-wide survey results regarding the
+    - skills and knowledge required of an IT professional.
+        - COMPTIA AUTHORIZED MATERIALS USE POLICY
+    - CompTIA Certifications, LLC is not affiliated with and does not authorize, endorse, or condone utilizing any
+    - content provided by unauthorized third-party training sites (aka “brain dumps”). Individuals who utilize such materials
+    - in preparation for any CompTIA examination will have their certifications revoked and be suspended
+    - from future testing in accordance with the CompTIA Candidate Agreement. In an effort to more clearly communicate
+    - CompTIA’s exam policies on use of unauthorized study materials, CompTIA directs all certification candidates to
+    - the CompTIA Certification Exam Policies. Please review all CompTIA policies before beginning the study process
+    - for any CompTIA exam. Candidates will be required to abide by the CompTIA Candidate Agreement. If a candidate
+    - has a question as to whether study materials are considered unauthorized (aka “brain dumps”), they should contact
+    - CompTIA at examsecurity@comptia.org to confirm.
+    - PLEASE NOTE
+    - The lists of examples provided in bulleted format are not exhaustive lists. Other examples of technologies, processes,
+    - or tasks pertaining to each objective may also be included on the exam, although not listed or covered in this
+    - objectives document. CompTIA is constantly reviewing the content of our exams and updating test questions to be
+    - sure our exams are current, and the security of the questions is protected. When necessary, we will publish updated
+    - exams based on existing exam objectives. Please know that all related exam preparation materials will still be valid.
+    - 
+    - TEST DETAILS
+        - Required exam
+    - Number of questions
+    - Types of questions
+    - Length of test
+    - Recommended experience
+    - Passing Score
+    - EXAM OBJECTIVES (DOMAINS)
+        - A+ Core 2 (220-1202)
+        - Maximum of 90
+        - Multiple-choice and performance-based
+        - 90 minutes
+        - 12 months of hands-on experience in an IT support specialist job role
+        - 700 (on a scale of 100–900)
+        - The table below lists the domains measured by this examination and the extent to which they are represented.
+        - DOMAIN
+    - PERCENTAGE OF EXAMINATION
+        - 1.0
+    - 2.0
+    - 3.0
+    - 4.0
+    - Total
+    - Operating Systems
+    - Security
+    - Software Troubleshooting
+    - Operational Procedures
+    - NOTE ON WINDOWS 11
+        - 28%
+        - 28%
+        - 23%
+        - 21%
+        - 100%
+    - Versions of Microsoft® Windows® that are not end of Mainstream Support (as determined by
+    - Microsoft), up to and including Windows 11, are intended content areas of the certification. As such,
+    - objectives in which a specific version of Microsoft Windows is not indicated in the main objective
+    - title can include content related to Windows 10 and Windows 11, as it relates to the job role.
+    - 
+    - 
+        - 1.0 Operating Systems
+        - Explain common operating system (OS) types and their purposes.
+        - Workstation systems (OSs)
+        - −Windows
+        - −Linux
+        - −macOS
+        - −Chrome OS
+        - Mobile OSs
+        - −iPadOS
+        - −iOS
+        - −Android
+        - Various filesystem types
+        - −New Technology File System (NTFS)
+        - −Resilient File System (ReFS)
+        - −File Allocation Table 32 (FAT32)
+        - −Fourth extended filesystem (ext4)
+        - −Extended filesystem (XFS)
+        - −Apple File System (APFS)
+        - −Extensible File Allocation
+    - Table (exFAT)
+        - Vendor life-cycle limitations
+        - −End-of-life (EOL)
+        - −Update limitations
+        - Compatibility concerns
+    - between operating systems
+        - 1.1
+        - Given a scenario, perform OS installations and upgrades in a diverse environment.
+        - Boot methods
+        - −Universal Serial Bus (USB)
+        - −Network
+        - −Solid-state/flash drives
+        - −Internet-based
+        - −External/hot-swappable drive
+        - −Internal hard drive (partition)
+        - −Multiboot
+    - Types of installations
+        - −Clean install
+        - −Upgrade
+        - −Image deployment
+        - −Remote network installation
+        - −Zero-touch deployment
+        - −Recovery partition
+        - −Repair installation
+        - −Other considerations
+        - գThird-party drivers
+        - Partitioning
+        - −GUID [globally unique identifier]
+    - Partition Table (GPT)
+        - −Master boot record (MBR)
+        - Drive format
+        - Upgrade considerations
+        - −Backup files and user preferences
+        - −Application and driver support/
+        - backward compatibility
+        - −Hardware compatibility
+        - Feature updates
+        - −Product life cycle
+        - 1.2
+        - Compare and contrast basic features of Microsoft Windows editions.
+    - Windows 10 editions
+        - −Home
+        - −Pro
+        - −Pro for Workstations
+        - −Enterprise
+        - Windows 11 editions
+        - −Home
+        - −Pro
+        - −Enterprise
+        - N versions
+        - Feature differences
+        - −Domain vs. workgroup
+        - −Desktop styles/user interface
+        - −Availability of Remote
+    - Desktop Protocol (RDP)
+        - −Random-access memory
+    - (RAM) support limitations
+        - −BitLocker
+        - −gpedit.msc
+        - Upgrade paths
+        - −In-place upgrade
+        - −Clean install
+        - Hardware requirements
+        - −Trusted Platform Module (TPM)
+        - −Unified Extensible Firmware
+    - Interface (UEFI)
+        - 1.3
+    - 
+        - Given a scenario, use Microsoft Windows operating system features and tools.
+    - Task Manager
+        - −Services
+        - −Startup
+        - −Performance
+        - −Processes
+        - −Users
+        - Microsoft Management
+    - Console (MMC) snap-in
+        - −Event Viewer (eventvwr.msc)
+        - −Disk Management (diskmgmt.msc)
+        - −Task Scheduler (taskschd.msc)
+        - −Device Manager (devmgmt.msc)
+        - −Certificate Manager (certmgr.msc)
+        - −Local User and Groups
+    - (lusrmgr.msc)
+        - −Performance Monitor (perfmon.msc)
+        - −Group Policy Editor (gpedit.msc)
+        - Additional tools
+        - −System Information (msinfo32. exe)
+        - −Resource Monitor (resmon.exe)
+        - −System Configuration
+    - (msconfig. exe)
+        - −Disk Cleanup (cleanmgr.exe)
+        - −Disk Defragment (dfrgui.exe)
+        - −Registry Editor (regedit.exe)
+        - 1.4
+        - 1.0  |  Operating Systems
+        - Given a scenario, use the appropriate Microsoft command-line tools.
+    - Navigation
+        - −cd
+        - −dir
+    - Network
+        - −ipconfig
+        - −ping
+        - −netstat
+        - −nslookup
+        - −net use
+        - −tracert
+        - −pathping
+        - Disk management
+        - −chkdsk
+        - −format
+        - −diskpart
+        - File management
+        - −md
+        - −rmdir
+        - −robocopy
+        - Informational
+        - −hostname
+        - −net user
+        - −winver
+        - −whoami
+        - −[command name] /?
+        - OS management
+        - −gpupdate
+        - −gpresult
+        - −sfc
+        - 1.5
+        - Given a scenario, configure Microsoft Windows settings.
+    - Internet Options
+        - Devices and Printers
+        - Program and Features
+        - Network and Sharing Center
+        - System
+        - Windows Defender Firewall
+        - Mail
+        - Sound
+        - Device Manager
+        - Indexing Options
+        - Administrative Tools
+        - File Explorer Options
+        - −View hidden files
+        - −Hide extensions
+        - −General options
+        - −View options
+        - Power Options
+        - −Hibernate
+        - −Power plans
+        - −Sleep/suspend
+        - −Standby
+        - −Choose what closing the lid does
+        - −Turn on fast startup
+        - −USB selective suspend
+        - Ease of Access
+        - Time and Language
+        - Update and Security
+        - Personalization
+        - Apps
+        - Privacy
+        - Devices
+        - Network and Internet
+        - Gaming
+        - Accounts
+        - 1.6
+    - 
+        - Given a scenario, configure Microsoft Windows networking features on a client/desktop.
+    - Domain joined vs. workgroup
+        - −Shared resources
+        - −Printers
+        - −File servers
+        - −Mapped drives
+        - Local OS firewall settings
+        - −Application restrictions and exceptions
+        - −Configuration
+        - Client network configuration
+        - −Internet Protocol (IP) addressing scheme
+        - −Domain Name System (DNS) settings
+        - −Subnet mask
+        - −Gateway
+        - −Static vs. dynamic
+        - Establish network connections
+        - −Virtual private network (VPN)
+        - −Wireless
+        - −Wired
+        - −Wireless wide area network (WWAN)/cellular network
+        - Proxy settings
+        - Public network vs. private network
+        - File Explorer navigation–network paths
+        - Metered connections and limitations
+        - Explain common features and tools of the macOS/desktop operating system.
+    - Installation and uninstallation
+    - of applications
+        - −File types
+        - գ .dmg
+        - գ .pkg
+        - գ .app
+        - −App Store
+        - −Uninstallation process
+        - System folders
+        - −/Applications
+        - −/Users
+        - −/Library
+        - −/System
+        - −/Users/Library
+        - Apple ID and corporate restrictions
+        - Best practices
+        - −Backups
+        - −Antivirus
+        - −Updates/patches
+        - −Rapid Security Response (RSR)
+        - System Settings
+        - −Displays
+        - −Networks
+        - −Printers
+        - −Scanners
+        - −Privacy
+        - −Accessibility
+        - −Time Machine
+        - Features
+        - −Multiple desktops
+        - −Mission Control
+        - −Keychain
+        - −Spotlight
+        - −iCloud
+        - գ iMessage
+        - գFaceTime
+        - գDrive
+        - −Gestures
+        - −Finder
+        - −Dock
+        - −Continuity
+        - Disk Utility
+        - FileVault
+        - Terminal
+        - Force Quit
+        - 1.7
+        - 1.8
+        - 1.0  |  Operating Systems
+    - 
+        - Identify common features and tools of the Linux client/desktop operating system.
+    - File management
+        - −ls
+        - −pwd
+        - −mv
+        - −cp
+        - −rm
+        - −chmod
+        - −chown
+        - −grep
+        - −find
+        - Filesystem management
+        - −fsck
+        - −mount
+        - Administrative
+        - −su
+        - −sudo
+        - Package management
+        - −apt
+        - −dnf
+        - Network
+        - −ip
+        - −ping
+        - −curl
+        - −dig
+        - −traceroute
+        - Informational
+        - −man
+        - −cat
+        - −top
+        - −ps
+        - −du
+        - −df
+        - Text editors
+        - −nano
+        - Common configuration files
+        - −/etc/passwd
+        - −/etc/shadow
+        - −/etc/hosts
+        - −/etc/fstab
+        - −/etc/resolv.conf
+        - OS components
+        - −systemd
+        - −kernel
+        - −bootloader
+        - Root account
+        - Given a scenario, install applications according to requirements.  .
+        - System requirements
+    - for applications
+        - −32-bit vs. 64-bit dependent
+    - application requirements
+        - −Dedicated vs. integrated
+    - graphics card
+        - −Video random-access memory
+    - (VRAM) requirements
+        - −RAM requirements
+        - −Central processing unit
+    - (CPU) requirements
+        - −External hardware tokens
+        - −Storage requirements
+        - −Application to OS compatibility
+        - Distribution methods
+        - −Physical media vs.
+    - mountable ISO file
+        - −Downloadable package
+        - −Image deployment
+        - Impact considerations
+    - for new applications
+        - −Device
+        - −Network
+        - −Operation
+        - −Business
+        - 1.9
+        - 1.10
+        - 1.0  |  Operating Systems
+        - Given a scenario, install and configure cloud-based productivity tools.     .
+        - Email systems
+        - Storage
+        - −Sync/folder settings
+        - Collaboration tools
+        - −Spreadsheets
+        - −Videoconferencing
+        - −Presentation tools
+        - −Word processing tools
+        - −Instant messaging
+        - Identity synchronization
+        - Licensing assignment
+        - 1.11
+    - 
+        - Summarize various security measures and their purposes.
+    - Physical security
+        - −Bollards
+        - −Access control vestibule
+        - −Badge reader
+        - −Video surveillance
+        - −Alarm systems
+        - −Motion sensors
+        - −Door locks
+        - −Equipment locks
+        - −Security guards
+        - −Fences
+        - Physical access security
+        - −Key fobs
+        - −Smart cards
+        - −Mobile digital key
+        - −Keys
+        - −Biometrics
+        - գRetina scanner
+        - գFingerprint scanner
+        - գPalm print scanner
+        - գFacial recognition
+    - technology (FRT)
+        - գVoice recognition technology
+        - −Lighting
+        - −Magnetometers
+        - Logical security
+        - −Principle of least privilege
+        - −Zero Trust model
+        - −Access control lists (ACLs)
+        - −Multifactor authentication (MFA)
+        - գEmail
+        - գHardware token
+        - գAuthenticator application
+        - գ Short Message Service (SMS)
+        - գVoice call
+        - գTime-based one-time
+    - password (TOTP)
+        - գOne-time password/
+        - passcode (OTP)
+        - −Security Assertions Markup
+    - Language (SAML)
+        - −Single sign-on (SSO)
+        - −Just-in-time access
+        - գPrivileged access
+    - management (PAM)
+        - −Mobile device management (MDM)
+        - −Data loss prevention (DLP)
+        - −Identity access management (IAM)
+        - −Directory services
+        - Given a scenario, configure and apply basic Microsoft Windows OS security settings.
+    - Defender Antivirus
+        - −Activate/deactivate
+        - −Update definitions
+        - Firewall
+        - −Activate/deactivate
+        - −Port security
+        - −Application security
+        - User and groups
+        - −Local vs. Microsoft account
+        - −Standard account
+        - −Administrator
+        - −Guest user
+        - −Power user
+        - Log-in OS options
+        - −Username and password
+        - −Personal identification number (PIN)
+        - −Fingerprint
+        - −Facial recognition
+        - −SSO
+        - −Passwordless/Windows Hello
+        - NTFS vs. share permissions
+        - −File and folder attributes
+        - −Inheritance
+        - Run as administrator
+    - vs. standard user
+        - User Account Control (UAC)
+        - BitLocker
+        - BitLocker-To-Go
+        - Encrypting File System (EFS)
+        - Active Directory
+        - −Joining domain
+        - −Assigning log-in script
+        - −Moving objects within
+    - organizational units
+        - −Assigning home folders
+        - −Applying Group Policy
+        - −Selecting security groups
+        - −Configuring folder redirection
+        - 2.1
+        - 2.2
+        - 2.0 Security
+    - 
+        - Compare and contrast wireless security protocols and authentication methods.
+        - Protocols and encryption
+        - −Wi-Fi Protected Access 2 (WPA2)
+        - −WPA3
+        - −Temporal Key Integrity
+    - Protocol (TKIP)
+        - −Advanced Encryption
+    - Standard (AES)
+        - Authentication
+        - −Remote Authentication Dial
+    - in User Service (RADIUS)
+        - −Terminal Access Controller Access
+    - control System (TACACS+)
+        - −Kerberos
+        - −Multifactor
+        - Summarize types of malware and tools/methods for detection, removal, and prevention.
+    - Malware
+        - −Trojan
+        - −Rootkit
+        - −Virus
+        - −Spyware
+        - −Ransomware
+        - −Keylogger
+        - −Boot sector virus
+        - −Cryptominer
+        - −Stalkerware
+        - −Fileless
+        - Adware
+        - −Potentially unwanted program (PUP)
+        - Tools and methods
+        - −Recovery Console/
+        - environment/modes
+        - −Endpoint detection and
+    - response (EDR)
+        - −Managed detection and
+    - response (MDR)
+        - −Extended detection and
+    - response (XDR)
+        - −Antivirus
+        - −Anti-malware
+        - −Email security gateway
+        - −Software firewalls
+        - −User education regarding
+    - common threats
+        - գAntiphishing training
+        - −OS reinstallation
+        - Compare and contrast common social engineering attacks, threats, and vulnerabilities.
+    - Social engineering
+        - −Phishing
+        - գVishing
+        - գSmishing
+        - գ QR code phishing
+        - գSpear phishing
+        - գ Whaling
+        - −Shoulder surfing
+        - −Tailgating
+        - −Impersonation
+        - −Dumpster diving
+    - Threats
+        - −Denial of service (DoS)
+        - −Distributed denial of service (DDoS)
+        - −Evil twin
+        - −Zero-day attack
+        - −Spoofing
+        - −On-path attack
+        - −Brute-force attack
+        - −Dictionary attack
+        - −Insider threat
+        - −Structured Query Language
+    - (SQL) injection
+        - −Cross-site scripting (XSS)
+        - −Business email compromise (BEC)
+        - −Supply chain/pipeline attack
+        - Vulnerabilities
+        - −Non-compliant systems
+        - −Unpatched systems
+        - −Unprotected systems (missing
+    - antivirus/missing firewall)
+        - −EOL
+        - −Bring your own device (BYOD)
+        - 2.0  |  Security
+        - 2.3
+        - 2.4
+        - 2.5
+    - 
+        - Given a scenario, implement procedures for basic small office/home office (SOHO) malware
+    - removal.
+        - 1.  Investigate and verify
+    - malware symptoms.
+        - 2. Quarantine infected system.
+        - 3. Disable System Restore in Windows
+    - Home.
+    - 4. Remediate infected systems.
+        - 5. Update anti-malware software.
+        - 6. Scan and removal techniques
+    - (e.g., safe mode, preinstallation
+    - environment)
+        - 7. Reimage/reinstall.
+        - 8. Schedule scans and run updates.
+        - 9. Enable System Restore and create
+    - a restore point in Windows Home.
+        - 10. Educate the end user.
+        - Given a scenario, apply workstation security options and hardening techniques.
+    - Data-at-rest encryption
+        - Password considerations
+        - −Length
+        - −Character types
+        - −Uniqueness
+        - −Complexity
+        - −Expiration
+    - Basic input/output system (BIOS)/
+    - Unified Extensible Firmware
+    - Interface (UEFI) passwords
+        - End-user best practices
+        - −Use screensaver locks
+        - −Log off when not in use
+        - −Secure/protect critical
+    - hardware (e.g., laptops)
+        - −Secure personally identifiable
+    - information (PII) and passwords
+        - −Use password managers
+        - Account management
+        - −Restrict user permissions
+        - −Restrict log-in times
+        - −Disable guest account
+        - −Use failed attempts lockout
+        - −Use timeout/screen lock
+        - −Apply account expiration dates
+        - Change default administrator’s
+    - user account/password
+        - Disable AutoRun
+        - Disable unused services
+        - Given a scenario, apply common methods for securing mobile devices.
+    - Hardening techniques
+        - −Device encryption
+        - −Screen locks
+        - գ Facial recognition
+        - գPIN codes
+        - գ Fingerprint
+        - գPattern
+        - գ Swipe
+        - −Configuration profiles
+        - Patch management
+        - −OS updates
+        - −Application updates
+        - Endpoint security software
+        - −Antivirus
+        - −Anti-malware
+        - −Content filtering
+        - Locator applications
+        - Remote wipes
+        - Remote backup applications
+        - Failed log-in attempts restrictions
+        - Policies and procedures
+        - −MDM
+        - −BYOD vs. corporate-owned devices
+        - −Profile security requirements
+        - Compare and contrast common data destruction and disposal methods.
+    - Physical destruction of hard drives
+        - −Drilling
+        - −Shredding
+        - −Degaussing
+        - −Incineration
+        - Recycling or repurposing
+    - best practices
+        - −Erasing/wiping
+        - −Low-level formatting
+        - −Standard formatting
+        - Outsourcing concepts
+        - −Third-party vendor
+        - −Certification of destruction/recycling
+        - Regulatory and environmental
+    - requirements
+        - 2.6
+        - 2.7
+        - 2.8
+        - 2.9
+        - 2.0  |  Security
+    - 2.0  |  Security
+        - 2.10
+        - 2.11
+        - Given a scenario, apply security settings on SOHO wireless and wired networks.
+    - Router settings
+        - − Change default passwords
+        - − IP filtering
+        - − Firmware updates
+        - − Content filtering
+        - − Physical placement/secure locations
+        - − Universal Plug and Play (UPnP)
+        - − Screened subnet
+        - − Configure secure
+    - management access
+        - Wireless specific
+        - − Changing the service
+    - set identifier (SSID)
+        - − Disabling SSID broadcast
+        - − Encryption settings
+        - − Configuring guest access
+        - Firewall settings
+        - − Disabling unused ports
+        - − Port forwarding/mapping
+        - Given a scenario, configure relevant security settings in a browser.
+    - Browser download/installation
+        - − Trusted sources
+        - գ Hashing
+        - − Untrusted sources
+        - Browser patching
+        - Extensions and plug-ins
+        - − Trusted sources
+        - − Untrusted sources
+        - Password managers
+        - Secure connections/
+        - sites–valid certificates
+    - Settings
+        - − Pop-up blocker
+        - − Clearing browsing data
+        - − Clearing cache
+        - − Private-browsing mode
+        - − Sign-in/browser data
+    - synchronization
+    - 
+        - − Ad blockers
+        - − Proxy
+        - − Secure DNS
+        - Browser feature management
+        - − Enable/disable
+        - գ Plug-ins
+        - գ Extensions
+        - գ Features
+    - 
+        - Given a scenario, troubleshoot common Windows OS issues.
+    - Blue screen of death (BSOD)
+        - Degraded performance
+        - Boot issues
+        - Frequent shutdowns
+        - Services not starting
+        - Applications crashing
+        - Low memory warnings
+        - USB controller resource warnings
+        - System instability
+        - No OS found
+        - Slow profile load
+        - Time drift
+        - Given a scenario, troubleshoot common mobile OS and application issues.
+    - Application fails to launch
+        - Application fails to close/crashes
+        - Application fails to update
+        - Application fails to install
+        - Slow to respond
+        - OS fails to update
+        - Battery life issues
+        - Random reboots
+        - Connectivity issues
+        - −Bluetooth
+        - −Wi-Fi
+        - −Near-field communication (NFC)
+        - Screen does not autorotate
+        - 3.0 Software Troubleshooting
+        - Given a scenario, troubleshoot common mobile OS and application security issues.
+    - Security concerns
+        - −Application source/unofficial
+    - application stores
+        - −Developer mode
+        - −Root access/jailbreak
+        - −Unauthorized/malicious application
+        - գApplication spoofing
+        - Common symptoms
+        - −High network traffic
+        - −Degraded response time
+        - −Data-usage limit notification
+        - −Limited internet connectivity
+        - −No internet connectivity
+        - −High number of ads
+        - −Fake security warnings
+        - −Unexpected application behavior
+        - −Leaked personal files/data
+        - 3.1
+        - 3.3
+        - 3.2
+        - Given a scenario, troubleshoot common personal computer (PC) security issues.
+    - Common symptoms
+        - −Unable to access the network
+        - −Desktop alerts
+        - −False alerts regarding
+    - antivirus protection
+        - −Altered system or personal files
+        - գ Missing/renamed files
+        - գ Inability to access files
+        - −Unwanted notifications
+    - within the OS
+        - −OS updates failures
+        - Browser-related symptoms
+        - −Random/frequent pop-ups
+        - −Certificate warnings
+        - −Redirection
+        - −Degraded browser performance
+        - 3.4
+    - 
+        - Given a scenario, implement best practices associated with documentation and support
+    - systems information management.
+        - Ticketing systems
+        - −User information
+        - −Device information
+        - −Description of issues
+        - −Categories
+        - −Severity
+        - −Escalation levels
+        - −Clear, concise written
+    - communication
+        - գ Issue description
+        - գProgress notes
+        - գ Issue resolution
+        - Asset management
+        - −Inventory lists
+        - −Configuration management
+    - database (CMDB)
+        - −Asset tags and IDs
+        - −Procurement life cycle
+        - −Warranty and licensing
+        - −Assigned users
+        - Types of documents
+        - −Incident reports
+        - −Standard operating
+    - procedures (SOPs)
+        - գ Software package custom
+    - installation procedure
+        - −New user/onboarding
+    - setup checklist
+        - −User off-boarding checklist
+        - −Service-level agreements (SLAs)
+        - գ Internal
+        - գExternal/third-party
+        - −Knowledge base/articles
+        - Given a scenario, apply change management procedures.
+        - Documented business processes
+        - −Rollback plan
+        - −Backup plan
+        - −Sandbox testing
+        - −Responsible staff members
+        - Change management
+        - −Request forms
+        - −Purpose of the change
+        - −Scope of the change
+        - −Change type
+        - գStandard change
+        - գNormal change
+        - գEmergency change
+        - −Date and time of change
+        - գChange freeze
+        - գMaintenance windows
+        - −Affected systems/impact
+        - −Risk analysis
+        - գRisk level
+        - −Change board approvals
+        - −Implementation
+        - −Peer review
+        - −End-user acceptance
+        - 4.0 Operational Procedures
+        - 4.1
+        - 4.2
+        - Given a scenario, implement workstation backup and recovery methods.
+    - Backup
+        - −Full
+        - −Incremental
+        - −Differential
+        - −Synthetic full
+        - Recovery
+        - −In-place/overwrite
+        - −Alternative location
+        - Backup testing
+        - −Frequency
+        - Backup rotation schemes
+        - −Onsite vs. offsite
+        - −Grandfather-father-son (GFS)
+        - −3-2-1 backup rule
+        - 4.3
+    - 4.0  |  Operational Procedures
+        - 4.4
+        - 4.5
+        - 4.6
+        - Given a scenario, use common safety procedures.
+        - Electrostatic discharge (ESD) straps
+        - ESD mats
+        - Electrical safety
+        - − Equipment grounding
+    - Proper component
+    - handling and storage
+        - Cable management
+        - Antistatic bags
+        - Compliance with
+    - government regulations
+        - Personal safety
+        - − Disconnect power
+    - before repairing PC
+        - − Lifting techniques
+        - − Fire safety
+        - − Safety goggles
+        - − Air filter mask
+        - Summarize environmental impacts and local environment controls.
+    - Material safety data sheet (MSDS)
+    - documentation for handling and disposal
+        - − Proper battery disposal
+        - − Proper toner disposal
+        - − Proper disposal of other devices and assets
+        - Temperature, humidity-level awareness,
+    - and proper ventilation
+        - − Location/equipment placement
+    - − Dust cleanup
+    - − Compressed air/vacuums
+        - Power surges, under-voltage events, and power losses
+        - − Uninterruptible power supply (UPS)
+        - − Surge suppressor
+        - Explain the importance of prohibited content/activity and privacy, licensing, and policy concepts.
+        - Incident response
+        - − Chain of custody
+        - − Informing management/law enforcement as necessary
+        - − Copy of drive (data integrity and preservation)
+        - − Incident documentation
+    - − Order of volatility
+        - Licensing/digital rights management (DRM)/
+        - end-user license agreement (EULA)
+        - − Valid licenses
+        - − Perpetual license agreement
+        - − Personal-use license vs. corporate-use license
+        - − Open-source license
+    - 
+        - Non-disclosure agreement (NDA)/mutual
+    - non-disclosure agreement (MNDA)
+        - Regulated data
+        - − Credit card payment information
+        - − Personal government-issued information
+        - − PII
+        - − Healthcare data
+        - − Data retention requirements
+        - Acceptable use policy (AUP)
+        - Regulatory and business compliance requirements
+        - − Splash screens
+    - 
+        - Given a scenario, use proper communication techniques and professionalism.
+        - Present a professional appearance
+    - and wear appropriate attire.
+        - −Match the required attire of
+    - the given environment.
+        - գ Formal
+        - գBusiness casual
+        - Use proper language and
+    - avoid jargon, acronyms, and
+    - slang, when applicable.
+        - Maintain a positive attitude/
+        - project confidence.
+        - Actively listen and avoid
+    - interrupting the customer.
+        - Be culturally sensitive.
+        - −Use appropriate professional titles
+    - and designations, when applicable.
+        - Be on time (if late, contact
+    - the customer).
+        - Avoid distractions.
+        - −Personal calls
+        - −Texting/social media sites
+        - −Personal interruptions
+        - Appropriately deal with difficult
+    - customers or situations.
+        - −Do not argue with customer
+    - and/or be defensive.
+        - −Avoid dismissing customer issues.
+        - −Avoid being judgmental.
+        - −Clarify customer statements (i.e.,
+    - ask open-ended questions to
+    - narrow the scope of the issue,
+    - restate the issue, or question
+    - to verify understanding).
+        - −Use discretion and
+    - professionalism when discussing
+    - experiences/encounters.
+        - Set and meet expectations/
+        - timeline and communicate
+    - status with the customer.
+        - −Offer repair/replacement
+    - options, as needed.
+        - −Provide proper documentation
+    - on the services provided.
+        - −Follow up with customer/user at a
+    - later date to verify satisfaction.
+        - Appropriately handle customers’
+    - confidential and private materials.
+        - −Located on a computer,
+    - desktop, printer, etc.
+        - Explain the basics of scripting.
+    - Script file types
+        - −.bat
+        - −.ps1
+        - −.vbs
+        - −.sh
+        - −.js
+        - −.py
+        - Use cases for scripting
+        - −Basic automation
+        - −Restarting machines
+        - −Remapping network drives
+        - −Installation of applications
+        - −Automated backups
+        - −Gathering of information/data
+        - −Initiating updates
+        - Other considerations
+    - when using scripts
+        - −Unintentionally introducing malware
+        - −Inadvertently changing
+    - system settings
+        - −Browser or system crashes due
+    - to mishandling of resources
+        - Given a scenario, use remote access technologies.
+    - Methods/tools
+        - −RDP
+        - −VPN
+        - −Virtual network computer (VNC)
+        - −Secure Shell (SSH)
+        - −Remote monitoring and
+    - management (RMM)
+        - −Simple Protocol for Independent
+    - Computing Environments (SPICE)
+        - −Windows Remote
+    - Management (WinRM)
+        - −Third-party tools
+        - գ Screen-sharing software
+        - գVideoconferencing software
+        - գ File transfer software
+        - գ Desktop management software
+        - Security considerations of
+    - each access method
+        - 4.7
+        - 4.8
+        - 4.9
+        - 4.0  |  Operational Procedures
+        - Explain basic concepts related to artificial intelligence (AI).
+    - Application integration
+    - Policy
+        - −Appropriate use
+        - −Plagiarism
+        - Limitations
+        - −Bias
+        - −Hallucinations
+        - −Accuracy
+        - Private vs. public
+        - −Data security
+        - −Data source
+        - −Data privacy
+        - 4.10
+    - CompTIA A+ Core 2 (220-1202) Acronym List
+        - The following is a list of acronyms that appears on the CompTIA A+ Core 2 (220 1202) exam. Candidates are encouraged to review the complete list and attain a working knowledge of all listed acronyms as part of a comprehensive exam preparation program.
+        - ACRONYM - DEFINITION
+        - AAA - Authentication, Authorization, and Accounting
+        - ACL - Access Control List
+        - ADF - Automatic Document Feeder
+        - AES - Advanced Encryption Standard
+        - AMD - Advanced Micro Devices, Inc.
+        - AP - Access Point
+        - APFS - Apple File System
+        - APIPA - Automatic Private Internet Protocol Addressing
+        - ARM - Advanced RISC [Reduced Instruction Set Computer] Machine
+        - ATX - Advanced Technology Extended
+        - AUP - Acceptable Use Policy
+        - BEC - Business Email Compromise
+        - BIOS - Basic Input/Output System
+        - BNC - Bayonet Neill-Concelman
+        - BSOD - Blue Screen of Death
+        - BYOD - Bring Your Own Device
+        - CAC - Calling-card Authorization Computer
+        - CIFS - Common Internet File System
+        - CMDB - Configuration Management Database
+        - CNAME - Canonical Name
+        - CPU - Central Processing Unit
+        - DB-9 - Serial Communications D-Shell Connector, 9 pins
+        - DDoS - Distributed Denial of Service
+        - DDR - Double Data Rate
+        - DHCP - Dynamic Host Configuration Protocol
+        - DIMM - Dual In-line Memory Module
+        - DKIM - DomainKeys Identified Mail
+        - DLP - Data Loss Prevention
+        - DMARC - Domain-based Message Authentication, Reporting, and Conformance
+        - DNS - Domain Name System
+        - DoS - Denial of Service
+        - DRM - Digital Rights Management
+        - DSL - Digital Subscriber Line
+        - DVI - Digital Visual Interface
+        - ECC - Error-correcting Code
+        - EDR - Endpoint Detection and Response
+        - EFS - Encrypting File System
+        - EOL - End-of-life
+        - eSATA - External Serial Advanced Technology Attachment
+        - ESD - Electrostatic Discharge
+        - EULA - End-user License Agreement
+        - exFAT - Extended File Allocation Table
+        - FAT - File Allocation Table
+        - FRT - Facial Recognition Technology
+        - FTP - File Transfer Protocol
+        - GFS - Grandfather-Father-Son
+        - GPS - Global Positioning System
+        - GPT - GUID [Globally Unique Identifier] Partition Table
+        - GUID - Globally Unique Identifier
+        - HDD - Hard Disk Drive
+        - HDMI - High-definition Media Interface
+        - HSM - Hardware Security Module
+        - HTTP - Hypertext Transfer Protocol
+        - HTTPS - Hypertext Transfer Protocol Secure
+        - IaaS - Infrastructure as a Service
+        - IAM - Identity Access Management
+        - IMAP - Internet Mail Access Protocol
+        - IOPS - Input/Output Operations Per Second
+        - IoT - Internet of Things
+        - IP - Internet Protocol
+        - IPS - In-plane Switching
+        - ISO - International Organization for Standardization
+        - ITX - Information Technology eXtended
+        - KVM - Keyboard-Video-Mouse
+        - LAN - Local Area Network
+        - LC - Lucent Connector
+        - LCD - Liquid Crystal Display
+        - LDAP - Lightweight Directory Access Protocol
+        - LED - Light-emitting Diode
+        - MAC - Media Access Control
+        - MAN - Metropolitan Area Network
+        - MBR - Master Boot Record
+        - MDM - Mobile Device Management
+        - MDR - Managed Detection and Response
+        - MFA - Multifactor Authentication
+        - MMC - Microsoft Management Console
+        - MNDA - Mutual Non-Disclosure Agreement
+        - mSATA - Mini-serial Advanced Technology Attachment
+        - MSDS - Material Safety Data Sheet
+        - MX - Mail Exchange
+        - NDA - Non-Disclosure Agreement
+        - NetBIOS - Network Basic Input/Output System
+        - NFC - Near-field Communication
+        - NIC - Network Interface Card
+        - NTFS - New Technology File System
+        - NTP - Network Time Protocol
+        - NVMe - Non-volatile Memory Express
+        - OLED - Organic Light-emitting Diode
+        - ONT - Optical Network Terminal
+        - OS - Operating System
+        - OTP - One-time Password/Passcode
+        - PaaS - Platform as a Service
+        - PAM - Privileged Access Management
+        - PAN - Personal Area Network
+        - PC - Personal Computer
+        - PCI - Peripheral Component Interconnect
+        - PCIe - Peripheral Component Interconnect Express
+        - PII - Personally Identifiable Information
+        - PIN - Personal Identification Number
+        - PIV - Personal Identity Verification
+        - PoE - Power over Ethernet
+        - POP - Post Office Protocol
+        - POST - Power-on Self-test
+        - PUP - Potentially Unwanted Program
+        - RADIUS - Remote Authentication Dial-in User Server
+        - RAID - Redundant Array of Independent  Disks
+        - RAM - Random-access Memory
+        - RDP - Remote Desktop Protocol
+        - ReFS - Resilient File System
+        - RFID - Radio-frequency Identification
+        - RJ11 - Registered Jack Function 11
+        - RJ45 - Registered Jack Function 45
+        - RMM - Remote Monitoring and Management
+        - RSR - Rapid Security Response
+        - SaaS - Software as a Service
+        - SAML - Security Assertions Markup Language
+        - SAN - Storage Area Network
+        - SAS - Serial Attached SCSI [Small Computer System Interface]
+        - SATA - Serial Advanced Technology Attachment
+        - SC - Subscriber Connector
+        - SCADA - Supervisory Control and Data Acquisition
+        - SCSI - Small Computer System Interface
+        - SIM - Subscriber Identity Module
+        - SLA - Service-level Agreement
+        - S.M.A.R.T - Self-monitoring Analysis and Reporting Technology
+        - SMB - Server Message Block
+        - SMS - Short Message Service
+        - SMTP - Simple Mail Transfer Protocol
+        - SODIMM - Small Outline Dual In-line Memory Module
+        - SOHO - Small Office/Home Office
+        - SOP - Standard Operating Procedure
+        - SPF - Sender Policy Framework
+        - SPICE - Simple Protocol for Independent Computing Environments
+        - SQL - Structured Query Language
+        - SSD - Solid-state Drive
+        - SSH - Secure Shell
+        - SSID - Service Set Identifier
+        - SSO - Single Sign-on
+        - ST - Straight Tip
+        - TACACS - Terminal Access Controller Access-control System
+        - TCP - Transmission Control Protocol
+        - TKIP - Temporal Key Integrity Protocol
+        - TN - Twisted Nematic
+        - TOTP - Time-based One-time Password
+        - TPM - Trusted Platform Module
+        - UAC - User Account Control
+        - UDP - User Datagram Protocol
+        - UEFI - Unified Extensible Firmware Interface
+        - UPnP - Universal Plug and Play
+        - UPS - Uninterruptible Power Supply
+        - USB - Universal Serial Bus
+        - UTM - Unified Threat Management
+        - VA - Vertical Alignment
+        - VDI - Virtual Desktop Infrastructure
+        - VGA - Video Graphics Array
+        - VLAN - Virtual LAN [Local Area Network]
+        - VNC - Virtual Network Computer
+        - VoIP - Voice over Internet Protocol
+        - VPN - Virtual Private Network
+        - VRAM - Video Random-access Memory
+        - WAN - Wide Area Network
+        - WAP - Wireless Access Point
+        - WinRM - Windows Remote Management
+        - WISP - Written Internet Service Provider
+        - WLAN - Wireless LAN [Local Area Network]
+        - WPA - Wi-Fi Protected Access
+        - WWAN - Wireless Wide Area Network
+        - XDR - Extended Detection and Response
+        - XFS - Extended File System
+        - XSS - Cross-site Scripting
+    - CompTIA A+ Core 2 (220-1202) Hardware and  Software List 
+        - CompTIA has included this sample list of hardware and software  to assist candidates as they prepare for the A+ Core 2 (220-1202)  certification exam. This list may also be helpful for training companies  that wish to create a lab component for their training offering. The  bulleted lists below each topic are sample lists and are not exhaustive .
+        - EQUIPMENT
+            - Apple tablet/smartphone
+            - Android tablet/smartphone
+            - Windows tablet
+            - Chromebook
+            - Windows laptop/Mac laptop/
+            - Linux laptop
+            - Windows desktop/Mac desktop/
+            - Linux desktop
+            - Windows server with Active
+            - Directory and Print Manager
+            - Monitors
+            - Projectors
+            - SOHO router/switch
+            - Access point (AP)
+            - Voice over Internet Protocol (VoIP)
+            - phone
+            - Printer
+                - −Laser/inkjet
+                - −Wireless
+                - −3-D printer
+                - −Thermal
+            - Surge suppressor
+            - UPS
+            - Smart devices [Internet of Things
+            - (IoT) devices]
+            - Server with a hypervisor
+            - Punchdown block
+            - Patch panel
+            - Webcams
+            - Speakers
+            - Microphones
+        - SPARE PARTS/HARDWARE
+            - Motherboards
+            - RAM
+            - Hard drives
+            - Power supplies
+            - Video cards
+            - Sounds cards
+            - Network cards
+            - Wireless network interface cards (NICs)
+            - Fans/cooling devices/heat sink
+            - CPUs
+            - Assorted connectors/cables
+                - −USB
+                - −High-Definition Multimedia Interface (HDMI)
+                - −DisplayPort
+                - −Digital Visual Interface (DVI)
+                - −Video Graphics Array (VGA)
+            - Adapters
+                - −Bluetooth adapter
+            - Network cables
+            - Unterminated network
+            - cable/connectors
+            - AC adapters
+            - Optical drives
+            - Screws/stand-offs
+            - Cases
+            - Maintenance kit
+            - Mice/keyboards
+            - Keyboard-Video-Mouse (KVM)
+            - Console cable
+            - Solid-state drive (SSD)
+        - TOOLS
+            - Screwdrivers
+            - Multimeter
+            - Wire cutters
+            - Punchdown tool
+            - Crimper
+            - Power supply tester
+            - Cable stripper
+            - Standard technician toolkit
+            - ESD strap
+            - Thermal paste
+            - Cable tester
+            - Cable toner
+            - Wi-Fi analyzer
+            - Serial Advanced Technology Attachment (SATA) to USB connectors
+        - SOFTWARE
+            - Operating systems
+                - −Linux
+- Sources for Notes:
+    - Core 1 1101 Course Note
+        - Andrew Ramdayal
+        - Technical Institute of America
+        - www.tiaedu.com
+- **Exam Codes**
+    - CompTIA A+ 220-1101 (Core 1) and 220-1102 (Core 2)
+- **Exam Description**
+    - CompTIA A+ 220-1101 covers mobile devices, networking technology, hardware, virtualization and cloud computing.
+    - CompTIA A+ 220-1102 covers operating systems, security, software and operational procedures.
+- **Number of Questions**
+    - Maximum of 90 questions per exam
+- **Type of Questions**
+    - Multiple choice questions (single and multiple response), 
+    - drag and drops
+    - performance-based 
+- **Length of Test**
+    - 90 Minutes per exam
+- **Passing Score**
+    - [220-1101](tel:220-1101): 675 (on a scale of 900)
+    - [220-1102](tel:220-1102): 700 (on a scale of 900)
+- **DoD 8140 Approved Work Roles**
+    - Technical Support Specialist, System Administrator, Cyber Defense Infrastructure Support Specialist | For more information, [click here](https://www.comptia.org/content/tools/comptia-and-dodm-8140).
+- Core 1 Courses
+    - CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam by Jason Dion
+    - CompTIA A+ 220-1101 Core 1 Hands-On Course - Full Training by Andrew Ramdayal
+    - CompTIA A+ Core 1 (220-1101) & Core 2 (220-1102) by IT Cert Doctor
+    - CompTIA A+ CompTIA A+ 220-1101, CompTIA A+ 220-1102 Prep Lab by Oak Academy
+    - TOTAL: CompTIA A+ Core 1 (220-1101) Course + Exam
+- Links:
+    - [Course |](https://apps.cgp-oex.wgu.edu/wgulearning/course/course-v1:WGUx+OEX0080+v01/block-v1:WGUx+OEX0080+v01+type@sequential+block@8b4e6a6bf5d14d9ca12e2f1dec5a7f51/block-v1:WGUx+OEX0080+v01+type@vertical+block@e25e8e1fad26428fafea4b156021b2fb)
+    - [learn.comptia.org/app/certmaster learn for a core 1 exams 220 1101#home](https://learn.comptia.org/app/certmaster-learn-for-a-core-1-exams-220-1101#home)
+    - [Click Provider Link](https://my.wgu.edu/redirect?vendomatic=true&ssoId=201&assessmentCode=XLHV&pidm=10702658)
+    - [lrps.wgu.edu/provision/302451029](https://lrps.wgu.edu/provision/302451029)
+- 

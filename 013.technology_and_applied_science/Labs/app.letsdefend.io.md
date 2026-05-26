@@ -1,0 +1,31 @@
+- Paths
+    - Beginner
+        - Career Switch to Cybersecurity - Path
+            - [^^^**Network Fundamentals**^^^](https://app.letsdefend.io/training/lessons/network-fundamentals) **9 Lesson, 16 Question, 1 Quiz** 
+            - [^^^**Network Fundamentals II**^^^](https://app.letsdefend.io/training/lessons/network-fundamentals-ii) **11 Lesson, 25 Question, 1 Quiz** 
+            - [^^^**Windows Fundamentals**^^^](https://app.letsdefend.io/training/lessons/windows-fundamentals) **14 Lesson, 32 Question, 1 Quiz** 
+            - [^^^**Linux for Blue Team**^^^](https://app.letsdefend.io/training/lessons/linux-for-blue-team) **13 Lesson, 21 Question, 1 Quiz** 
+            - [^^^**Network Protocols**^^^](https://app.letsdefend.io/training/lessons/network-protocols) **7 Lesson, 20 Question, 1 Quiz** 
+            - [^^^**Network Protocols - 2**^^^](https://app.letsdefend.io/training/lessons/network-protocols-2) **7 Lesson, 20 Question, 1 Quiz** 
+            - [^^^**Introduction to Cryptology**^^^](https://app.letsdefend.io/training/lessons/introduction-to-cryptography) **12 Lesson, 20 Question, 1 Quiz** 
+            - [^^^**Malware Analysis Fundamentals**^^^](https://app.letsdefend.io/training/lessons/malware-analysis-fundamentals) **7 Lesson, 13 Question, 3 Challenge, 1 Quiz, 4 Alert** 
+            - [^^^**Malware Traffic Analysis with Wireshark**^^^](https://app.letsdefend.io/training/lessons/malware-traffic-analysis-with-wireshark) **4 Lesson, 5 Question, 2 Challenge** 
+            - [^^^**Dynamic Malware Analysis**^^^](https://app.letsdefend.io/training/lessons/dynamic-malware-analysis) **9 Lesson, 17 Question, 2 Challenge, 1 Quiz, 3 Alert** 
+            - [^^^**How to Investigate a SIEM Alert?**^^^](https://app.letsdefend.io/training/lessons/how-to-investigate-a-siem-alert) **7 Lesson, 20 Question** 
+            - [^^^**Job Hunting**^^^](https://app.letsdefend.io/training/lessons/job-hunting) **6 Lesson, 5 Question** done
+        - Cybersecurity for Students - Path
+    - Easy
+    - Medium
+        - Information Security Specialist Career- Path
+        - Web Attack Detection and Analysis - Path
+        - SIEM Engineer Career - Path
+        - Google Cybersecurity Certificate Preparation
+        - CompTIA CySA+ Preparation - Path
+        - Malware Analysis Skill - Path
+        - SOC Analysis Learning - Path
+    - Hard
+        - DFIR Learning - Path
+        - AWS Security Learning - Path
+        - Programming for Cybersecurity - Path
+        - Detection Engineering  - Path
+        - Incident Responder - Path

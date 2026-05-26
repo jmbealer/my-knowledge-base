@@ -1,0 +1,24 @@
+- bash
+- go
+- rust
+- lua
+- perl
+- 
+- Python
+    - C C++
+    - PHP
+    - Javascript
+    - Powershell
+    - Bash
+    - Assembly
+    - Java
+    - 
+- Web Hacking
+    - HTML
+    - Javascript
+    - PHP
+    - SQL
+- Exploit Writing
+    - Python
+    - Ruby
+    - Perl

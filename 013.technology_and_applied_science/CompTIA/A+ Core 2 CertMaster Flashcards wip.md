@@ -1,0 +1,1617 @@
+- Instant Search ‒ Windows feature allowing rapid search of apps, data folders, messages, and the web.
+- Windows Settings ‒ Touch-enabled interface for managing user and system settings in Windows.
+- Control Panel ‒ Legacy management interface for configuring user and system settings in Windows.
+- Microsoft account ‒ Cloud-based SSO service allowing users to synchronize settings between multiple Windows devices.
+- Account Settings ‒ Windows Settings pages relating to user account creation and maintenance.
+- User Accounts applet ‒ Control Panel app relating to user account creation and maintenance.
+- Privacy settings ‒ Windows Settings pages related to personal data collection and use.
+- Time & Language settings  ‒ Windows Settings pages allowing configuration of default data formats (date, currency, and so on), location information, and keyboard input locale.
+- Personalization settings ‒ Windows Settings pages related to customizing the appearance of the desktop using themes.
+- Ease of Access ‒ Windows Settings pages related to desktop and input/output device accessibility configuration.
+- OneDrive ‒ Cloud storage service operated by Microsoft and closely integrated with Windows.
+- This PC ‒ File system object representing a Windows computer and the disk drives installed to it.
+- Recycle Bin ‒ When files are deleted from a local hard disk, they are stored in the Recycle Bin. They can be recovered from here if so desired.
+- File Explorer Options ‒ Control Panel app related to view and browsing settings for File Explorer.
+- Indexing Options ‒ Control Panel app related to search database maintenance.
+- System Settings ‒ Windows Settings pages relating to basic and advanced system settings.
+- Update & Security settings ‒ Windows Settings pages related to configuring automatic patching, deploying feature updates, and managing security features.
+- Windows Security ‒ Touch-enabled app for configuring features such as firewall and antivirus.
+- Devices setting ‒ Windows Settings pages for using and configuring attached hardware.
+- Phone setting ‒ Windows Settings pages for associating a smartphone with Windows.
+- Devices and Printers ‒ Control Panel app for using and configuring attached hardware.
+- Device Manager ‒ Primary interface for configuring and managing hardware devices in Windows. Device Manager enables the administrator to disable and remove devices, view hardware properties and system resources, and update device drivers.
+- Sound applet ‒ Control Panel applet related to speaker and microphone configuration plus Windows sound events and notifications.
+- Standby ‒ Power-saving mode where power to all compatible components except system memory is cut. Note that systems on standby still consume some electricity.
+- Hibernate ‒ Power-saving state where the contents of memory are saved to hard disk (hiberfil.sys) and the computer is powered off. Restarting the computer restores the desktop.
+- Sleep ‒ Power-saving mode in Windows. On a laptop, this functions much like standby, but on a desktop, the system also creates a hibernation file before entering the standby state.
+- Power Option ‒ Control Panel app related to configuring power button/lid events and power-saving modes.
+- Fast Startup ‒ Power-saving option allowing swift resume from sleep via an image of system memory contents saved to a hibernation file.
+- Apps ‒ Windows Settings pages relating to configuration of Windows Features and third-party software apps.
+- Programs and Features ‒ Control Panel applet allowing management of Windows Features and third-party software.
+- Mail applet ‒ Control Panel applet related to configuration of Microsoft Outlook email accounts and storage files.
+- Gaming setting ‒ Windows Settings pages related to game mode settings and Xbox integration.
+- Network & Internet ‒ Windows Settings pages related to interface configuration, network profiles, and proxy configuration.
+- Network and Sharing Center ‒ Control Panel related to interface configuration, network profiles, and discovery/file sharing settings.
+- Windows Defender Firewall ‒ Built-in, host-based filtering of network connections.
+- Internet Options ‒ Control Panel applet allowing configuration of the Internet Explorer web browser.
+- Administrative Tools ‒ Folder in Control Panel containing default Microsoft management consoles used to configure the local system.
+- WinX menu ‒ Start button shortcut menu with quick access to principal configuration and management utilities.
+- Run dialog ‒ Windows interface for executing commands.
+- Disk Management (diskmgmt.msc) ‒ Console related to initializing, partitioning, and formatting disk drives.
+- 
+- 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 W WinX menu inX menu Run dialog Run dialog Disk Management (diskmgmt.msc) Disk Management (diskmgmt.msc) Storage Spaces Storage Spaces Defragment and Optimize Drives tool (dfr Defragment and Optimize Drives tool (dfrgui.exe) gui.exe) Disk Clean-up (cleanmgr Disk Clean-up (cleanmgr.exe) .exe) T Task Scheduler (tasksch.msc) ask Scheduler (tasksch.msc) Local Users and Groups (lusrmgr Local Users and Groups (lusrmgr.msc) .msc) Certificate Manager console (certmgr Certificate Manager console (certmgr.msc) .msc) Group Policy Editor (gpedit.msc) Group Policy Editor (gpedit.msc) Registry Editor (regedit.exe) Registry Editor (regedit.exe) registry registry hives hives Microsoft Management Console (MMC) Microsoft Management Console (MMC) System Information (msinfo32.exe) System Information (msinfo32.exe) Event V Event Viewer (eventvwr iewer (eventvwr.msc) .msc) T Task Manager (taskmgr ask Manager (taskmgr.exe) .exe) process process Startup Startup 
+- 
+- 
+- Windows feature for creating a single storage resource from multiple devices. Data can be protected against
+- device failure by RAID-like mirroring or parity.
+- Fragmentation occurs when a data file is not saved to contiguous sectors on an HDD and reduces performance.
+- The defragmenter mitigates this and can also perform optimization operations for SSDs.
+- Windows utility for removing temporary files to reclaim disk space.
+- Enables execution of an action (such as running a program or a script) automatically at a pre-set time or in
+- response to some sort of trigger.
+- Console for creating and managing user and group accounts with the authentication and permissions scope of
+- the local system.
+- Console related to managing digital certificates for the current user and trusted root certification authority
+- certificates.
+- Console related to configuring detailed user and system registry settings via policies.
+- Tool for making direct edits to the registry database, such as adding or modifying keys or values. The Registry
+- Editor can be used to make backups of the registry.
+- In the Windows registry, a key is analogous to a folder on the file system. Keys are used to group like settings
+- together in a hierarchy that is logical to navigate.
+- File storing configuration data corresponding to a section of the Windows registry.
+- Utility allowing Windows administrative tools to be added as snap-ins to a single interface.
+- Utility that provides a report of the PC's hardware and software configuration.
+- Windows console related to viewing and exporting events in the Windows logging file format.
+- Windows utility used to monitor and manage process execution, resource utilization, user sessions, startup
+- settings, and service configuration.
+- Software program that has been executed and is running in system memory.
+- Apps and scripts set to run when the computer starts or when the user signs in. Startup items can be configured
+- as shortcuts, registry entries, or Task Scheduler triggers.57 Services (services.msc) Services (services.msc) 58 Resource Monitor (resmon.exe) Resource Monitor (resmon.exe) 59 Performance Monitor (perfmon.msc) Performance Monitor (perfmon.msc) 60 System Configuration Utility (msconfig.exe) System Configuration Utility (msconfig.exe) 61 cmd.exe cmd.exe 62 Run as administrator Run as administrator 63 directory directory 64 dir command dir command 65 cd command cd command 66 move command move command 67 copy command copy command 68 xcopy command xcopy command 69 robocopy command robocopy command 70 md command md command 71 rmdir rmdir 72 diskpart diskpart 73 format command format command 74 X: X: 75 chkdsk chkdsk 76 shutdown command shutdown command Windows machines run services to provide functions; for example, Plug-and-Play, the print spooler, DHCP
+- client, and so on. These services can be viewed, configured, and started/stopped via the Services console. You
+- can also configure which services run at startup using msconfig. You can view background services (as well as
+- applications) using the Processes tab in Task Manager.
+- Console for live monitoring of resource utilization data for the CPU and GPU, system memory, disk/file
+- system, and network.
+- Console for reporting and recording resource utilization via counter data for object instances.
+- Utility for configuring Windows startup settings.
+- Basic shell interpreter for Windows.
+- Windows feature that requires a task to be explicitly launched with elevated privileges and consented to via
+- UAC.
+- File system object used to organize other file system objects into containers.
+- Command-line utility that displays information about the contents of the current directory.
+- Command-line tool used to navigate the directory structure.
+- Command-line tool for moving files.
+- Command-line tool for copying files.
+- Command-line directory and file copy utility offering improved functionality compared to the basic copy
+- command.
+- Command-line file copy utility recommended for use over the older xcopy.
+- Command-line tool for creating directories.
+- Command-line tool for deleting directories. The /s switch enables the deletion of non-empty directories.
+- Command-line utility used to configure disk partitions.
+- Command-line utility for creating a file system on a partition.
+- Command-line utility used to select the working drive.
+- Command-line tool that verifies the integrity of a disk's file system.
+- shutdown command ‒ Command-line tool for shutting down or restarting the computer. The command is supported by Windows and Linux, though with different syntax.
+- 
+- 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 System File Checker System File Checker winver command winver command W Windows indows macOS macOS UNIX UNIX Linux Linux Chrome OS Chrome OS iPadOS iPadOS iOS iOS update limitations update limitations Android Android file system file system New T New Technology File System (NTFS) echnology File System (NTFS) F FA AT32 T32 exF exFA AT T ext3 ext3 Command-line utility that checks the integrity of system and device driver files.
+- Command-line tool for reporting Windows version information.
+- Windows started as version 3.1 for 16-bit computers. A workgroup version provided rudimentary network
+- facilities. Windows NT 4 workstations and servers (introduced in 1993) provided reliable 32-bit operation and
+- secure network facilities, based around domains. The Windows 9x clients (Windows 95, 98, and Me) had far-
+- lower reliability and support only for workgroups but were still hugely popular as home and business
+- machines. Windows 2000 and Windows XP workstations married the hardware flexibility and user interface of
+- Windows 9x to the reliability and security of Windows NT, while the server versions saw the introduction of
+- Active Directory for managing network objects. The subsequent client releases of Windows (Vista/7/8/8.1)
+- feature a substantially different interface (Aero) with 3D features as well as security improvements. The latest
+- client versions—Windows 10 and Windows 11—are designed for use with touch-screen devices.
+- Proprietary OS designed by Apple for their range of iMac computers, Mac workstations, and MacBook
+- portables.
+- UNIX is a family of more than 20 related operating systems that are produced by various companies. It can run
+- on a wide variety of platforms. UNIX offers a multitude of file systems in addition to its native system. UNIX
+- remains widely deployed in enterprise data centers to run mission-critical applications and infrastructure.
+- Open-source OS packaged in distributions supported by a wide range of hardware and software vendors.
+- Proprietary OS developed by Google to run on specific laptop (chromebooks) and PC (chromeboxes)
+- hardware.
+- OS for some models of the Apple iPad tablet.
+- OS for Apple's iPhone smartphone and most iPad tablet models.
+- Product life cycle and procurement consideration where a device or product no longer receives a full range of
+- updates or support from its vendor.
+- Cell phone/smartphone/tablet OS developed by the Open Handset Alliance (primarily driven by Google).
+- Unlike iOS, it is an open-source OS, based on Linux.
+- Structure for file data indexing and storage created by a process of formatting a partition that allows an OS to
+- make use of a mass storage device, such as an HDD, SSD, or thumb drive.
+- 64-bit default file system for Windows, with file-by-file compression and RAID support as well as advanced
+- file attribute management tools, encryption, and disk quotas.
+- 32-bit file system used principally for system partitions and removable media.
+- 64-bit version of the FAT file system with support for larger partition and file sizes.
+- Standard Linux file system that includes journaling and has since been replaced with ext4.93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 Apple File System (APFS) Apple File System (APFS) Compatibility concerns Compatibility concerns end of life (EOL) end of life (EOL) desktop desktop 32-bit (x86) or 64-bit (x64) 32-bit (x86) or 64-bit (x64) W Windows editions indows editions feature updates feature updates original equipment manufacturer (OEM) original equipment manufacturer (OEM) BitLocker BitLocker Remote Desktop Protocol (RDP) Remote Desktop Protocol (RDP) upgrade path upgrade path Clean install Clean install In-place upgrade In-place upgrade Hardware Compatibility List (HCL) Hardware Compatibility List (HCL) unattended installations unattended installations image deployment image deployment Default file system for macOS-based computers and laptops.
+- Considerations that must be made when using an app in an environment with multiple device and OS
+- platforms.
+- Product life-cycle phase where mainstream vendor support is no longer available.
+- Graphical OS interface that allows programs to run within window containers. Desktop styles include tools for
+- launching apps, such as the Windows Start Menu, and managing apps, such as the Windows taskbar. Changes
+- to the desktop style over the course of version and feature updates can be confusing for users.
+- Processing modes referring to the size of each instruction processed by the CPU. 32-bit CPUs replaced earlier
+- 16-bit CPUs and were used through the 1990s to the present day, though most PC and laptop CPUs now work
+- in 64-bit mode. The main 64-bit platform is called AMD64 or EM64T (by Intel). Software can be compiled as
+- 32-bit or 64-bit. 64-bit CPUs can run most 32-bit software, but a 32-bit CPU cannot execute 64-bit software.
+- Feature restrictions applied to Windows to distinguish different markets, pricing, and licensing models, such as
+- home versus professional versus enterprise.
+- Release paradigm introduced for Windows 10 where significant changes and new features are distributed via
+- Windows Update on a semiannual schedule.
+- In PC terms, companies that sell Windows co-branded under their own logo. OEM Windows licenses are valid
+- only on the system that the software was installed on, and the OEM must provide support.
+- Feature of Windows allowing for encryption of NTFS-formatted drives. The encryption key can be stored in a
+- TPM chip on the computer or on a USB drive.
+- Application protocol for operating remote connections to a host using a graphical interface. The protocol sends
+- screen data from the remote host to the client and transfers mouse and keyboard input from the client to the
+- remote host. It uses TCP port 3389.
+- Earlier versions of an OS that support an in-place upgrade to a newer version, retaining settings, third-party
+- apps, and user data files.
+- OS setup method where the target disk is repartitioned and formatted, removing any existing OS and/or data
+- files.
+- OS installation method where the setup program is launched from an existing OS. This can typically retain
+- user data files, settings, and third-party apps.
+- Before installing an OS, it is vital to check that all the PC components have been tested for compatibility with
+- the OS (that they are on the Hardware Compatibility List [HCL] or Windows Logo'd Product List).
+- Incompatible hardware may not work or may even prevent the installation from completing successfully.
+- Deployment method where installation choices are saved in an answer file or script so that the setup program
+- executes without manual intervention.
+- Deployment method where the target disk is written with an image of the new OS.109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 boot media boot media Device used to start the setup program and hold source files for installing or upgrading an OS.
+- Preboot eXecution Environment (PXE) Preboot eXecution Environment (PXE) Feature of a network adapter that allows the computer to boot by contacting a suitably configured server over
+- the network.
+- master boot record (MBR) master boot record (MBR) Sector on a mass storage device that holds information about partitions and the OS boot loader.
+- globally unique identifier(GUID) partition table globally unique identifier(GUID) partition table
+- Modern disk partitioning system allowing large numbers of partitions and very large partition sizes.
+- (GPT) (GPT)
+- recovery partition recovery partition OEM recovery media enabling the user to reset the system to its factory configuration.
+- System requirements System requirements Minimum specifications for CPU speed, memory, and disk capacity for installing an OS or app.
+- distribution method distribution method Formats for provisioning application installation files, such as via optical discs, downloads, and image files.
+- potential impacts potential impacts Considerations that should be made when planning the installation or upgrade of new apps.
+- Safe Mode Safe Mode Troubleshooting startup mode that loads a limited selection of drivers and services.
+- Startup Repair Startup Repair Troubleshooting boot options that allow use of tools such as safe mode and recovery discs.
+- W Windows Recovery Environment (W indows Recovery Environment (WinRE) inRE) Windows troubleshooting feature that installs a command shell environment to a recovery partition to
+- remediate boot issues.
+- System Restore System Restore Windows System Protection feature that allows the configuration to be reverted to a restore point.
+- Roll Back Driver Roll Back Driver Windows troubleshooting feature that allows removal of an update or reversion to a previous driver version.
+- Reset this PC Reset this PC Windows feature to attempt system recovery by reinstalling Windows from source.
+- fixboot fixboot Windows command in Windows allowing for the repair (or attempted repair) of the boot manager and boot
+- loader.
+- blue screen of death (BSoD) blue screen of death (BSoD) Microsoft status screen that indicates an error from which the system cannot recover (also called a stop error).
+- Blue screens are usually caused by bad driver software or hardware faults (memory or disk). Other operating
+- systems use similar crash indicators, such as Apple's pinwheel and Linux's kernel panic message.
+- drifting out of sync drifting out of sync Situation where hosts on a network are not closely synchronized to the same date/time source.
+- network interface card (NIC) network interface card (NIC) Adapter card that provides one or more Ethernet ports for connecting hosts to a network so that they can
+- exchange data over a link.
+- subnet mask subnet mask Number of bits applied to an IP address to mask the network ID portion from the host/interface ID portion.
+- Internet Protocol (IP) Internet Protocol (IP) Network (Internet) layer protocol in the TCP/IP suite providing packet addressing and routing for all higher-
+- level protocols in the suite.129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 Domain Name System (DNS) Domain Name System (DNS) Service that maps fully qualified domain name labels to IP addresses on most TCP/IP networks, including the
+- Internet.
+- Dynamic Host Configuration Protocol (DHCP) Dynamic Host Configuration Protocol (DHCP) Protocol used to automatically assign IP addressing information to hosts that have not been configured
+- manually.
+- Network Location A Network Location Awareness (NLA) wareness (NLA) Windows feature that categorizes network profile as public or private. Each profile can have a different firewall
+- configuration, with public network types being more restricted, by default.
+- virtual private network (VPN) virtual private network (VPN) Secure tunnel created between two endpoints connected via an unsecure transport network (typically the
+- Internet).
+- W Wireless W ireless Wide Area Network (WW ide Area Network (WWAN) AN) Network covering a large area using wireless technologies, such as a cellular radio data network or line-of-
+- sight microwave transmission.
+- metered metered Windows feature for indicating that network data transfer is billable and for setting warnings and caps to avoid
+- unexpected charges from the provider.
+- proxy server proxy server Server that mediates the communications between a client and another server. It can filter and often modify
+- communications as well as provide caching services to improve performance.
+- ipconfig command ipconfig command Command tool used to gather information about the IP configuration of a Windows host.
+- ping command ping command Cross-platform command tool for testing IP packet transmission.
+- tracert command tracert command Diagnostic utilities that trace the route taken by a packet as it "hops" to the destination host on a remote
+- network. tracert is the Windows implementation, while traceroute runs on Linux.
+- pathping command pathping command Windows utility for measuring latency and packet loss across an internetwork.
+- nslookup command nslookup command Cross-platform command tool for querying DNS resource records.
+- netstat command netstat command Cross-platform command tool to show network information on a machine running TCP/IP, notably active
+- connections, and the routing table.
+- access control list (ACL) access control list (ACL) Collection of access control entries (ACEs) that determines which subjects (user accounts, host IP addresses,
+- and so on) are allowed or denied access to the object and the privileges given (read-only, read/write, and so
+- on).
+- Implicit deny Implicit deny Basic principle of security stating that unless something has explicitly been granted access, it should be denied
+- access.
+- least privilege least privilege Basic principle of security stating that something should be allocated the minimum necessary rights, privileges,
+- or information to perform its role.
+- local account local account User account that can be authenticated again and allocated permissions for the computer that hosts the account
+- only.
+- security group security group Access control feature that allows permissions to be allocated to multiple users more efficiently.147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 Administrators Administrators standard account standard account Guest Guest Power Users Power Users User Account Control (UAC) User Account Control (UAC) Multifactor authentication (MF Multifactor authentication (MFA) A) 2-step verification 2-step verification soft token soft token short message service (SMS) short message service (SMS) authenticator application authenticator application hard token hard token W Windows Hello indows Hello T Trusted Platform Module (TPM) rusted Platform Module (TPM) Fingerprint Fingerprint Facial recognition Facial recognition Single sign-On (SSO) Single sign-On (SSO) domain domain Privileged user account that has been granted memberships of the Administrators security group. There is also
+- an account named Administrator, but this is usually disabled by default.
+- Non-privileged user account in Windows that typically has membership of the Users security group only.
+- Non-privileged account that is permitted to access the computer/network without authenticating.
+- One of the default Windows group accounts. Its use is deprecated, but it is still included with Windows to
+- support legacy applications.
+- Windows feature designed to mitigate abuse of administrative accounts by requiring explicit consent to use
+- privileges.
+- Authentication scheme that requires the user to present at least two different factors as credentials; for
+- example, something you know, something you have, something you are, something you do, and somewhere
+- you are. Specifying two factors is known as 2FA.
+- Authentication mechanism that uses a separate channel to authorize a sign-on attempt or to transmit an
+- additional credential. This can use a registered email account or a contact phone number for an SMS or voice
+- call.
+- Either an additional code to use for 2-step verification, such as a one-time password, or authorization data that
+- can be presented as evidence of authentication in an SSO system.
+- System for sending text messages between cell phones.
+- Software that allows a smartphone to operate as a second authentication factor or as a trusted channel for
+- 2-step verification.
+- USB storage key or smart card with a cryptographic module that can hold authenticating encryption keys
+- securely.
+- Feature that supports passwordless sign-in for Windows.
+- Specification for secure hardware-based storage of encryption keys, hashed passwords, and other user- and
+- platform-identification information.
+- Biometric authentication device that can produce a template signature of a user's fingerprint and then
+- subsequently compare the template to the digit submitted for authentication.
+- Biometric authentication mechanism that uses an infrared camera to verify that the user's face matches a 3D
+- model recorded at enrollment.
+- Authentication technology that enables a user to authenticate once and receive authorizations for multiple
+- services.
+- Group of hosts that is within the same namespace and administered by the same authority.164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 Active Directory (AD) Active Directory (AD) member server member server or organizational unit (OU) ganizational unit (OU) group policy objects (GPOs) group policy objects (GPOs) gpupdate gpupdate login script login script Mobile Device Management (MDM) Mobile Device Management (MDM) workgroup workgroup network discovery network discovery file sharing file sharing mapped drive mapped drive NTFS permissions NTFS permissions inheritance inheritance Everyone Everyone home folder home folder Roaming profiles Roaming profiles Folder redirection Folder redirection shell shell Bash Bash Network directory service for Microsoft Windows domain networks that facilitates authentication and
+- authorization of user and computer accounts.
+- Any application server computer that has joined a domain but does not maintain a copy of the Active Directory
+- database.
+- Structural feature of a network directory that can be used to group objects that should share a common
+- configuration or organizing principle, such as accounts within the same business department.
+- On a Windows domain, a way to deploy per-user and per-computer settings such as password policy, account
+- restrictions, firewall status, and so on.
+- Command-line tools to apply and analyze group policies. Group policies are a means of configuring registry
+- settings.
+- Code that performs a series of tasks automatically when a user account is authenticated.
+- Process and supporting technologies for tracking, controlling, and securing the organization's mobile
+- infrastructure.
+- Group of network hosts that shares resources in a peer-to-peer fashion. No one computer provides a centralized
+- directory.
+- Windows firewall configuration that makes a host visible to network browsers.
+- Windows firewall configuration that opens the network ports required to operate as a file/print server.
+- Windows mechanism for navigating shared network folders by assigning them with drive letters.
+- ACL that mediates local and network access to a file system object under Windows when the volume is
+- formatted with NTFS.
+- File system access-control-concept where child objects are automatically assigned the same permissions as
+- their parent object.
+- System security group that represents any account, including unauthenticated users.
+- Default local or network folder for users to save data files to.
+- Configuring a network share to hold user profile data. The data is copied to and from the share at logon and
+- logoff.
+- In Windows, redirecting an individual user profile folder, such as Documents or Pictures, to a network share.
+- System component providing a command interpreter by which the user can use a kernel interface and operate
+- the OS.
+- Command interpreter and scripting language for Unix-like systems.183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 terminal terminal consoles consoles Nano Nano vi or vim vi or vim pwd pwd ls ls cat cat find command find command grep grep cp cp mv command mv command rm command rm command df and du commands df and du commands su su sudo sudo symbolic symbolic chmod command chmod command octal notation octal notation chown chown apt-get apt-get yum yum Software that implements input and output for a command shell.
+- Device that implements input and output for a command shell. In Linux, multiple virtual consoles support use
+- of a single host by multiple user sessions simultaneously.
+- Command-line text editor operated by CTRL key combinations.
+- Command-line text editor that extends the original vi software. Vim uses a command mode for file operations
+- and an insert mode for editing.
+- Linux command for showing the current directory ("Print Working Directory").
+- Linux command for listing file system objects.
+- Linux command to view and combine (concatenate) files.
+- Command-line Linux tool used to search the file system.
+- Linux command for searching and filtering input. This can be used as a file search tool when combined with ls.
+- Command-line tool for copying files in Linux.
+- Command-line tool for moving files in Linux.
+- Command-line tool for deleting file system objects in Linux.
+- Command-line tools used to report storage usage in Linux.
+- Linux commands allowing a user to use the root account or execute commands restricted to privileged users.
+- Linux commands allowing a user to use the root account or execute commands restricted to privileged users.
+- Syntax for setting Linux permissions that uses characters to represent permissions values.
+- Linux command for managing file permissions.
+- Linux file-permission mode that uses numeric values to represent permissions.
+- Linux command for managing the account owner for files and directories.
+- One of the package management tools available in Linux for installing and updating software.
+- Package manager for installing, maintaining, inventorying, and removing software from the Red Hat family of
+- Linux distributions.204 ps command ps command 205 top command top command 206 ifconfig ifconfig 207 ip command ip command 208 dig dig 209 Samba Samba 210 cron cron 211 dock dock 212 Spotlight Search Spotlight Search 213 Mission Control Mission Control 214 System Preferences System Preferences 215 Magic Mouse Magic Mouse 216 Accessibility prefpane Accessibility prefpane 217 Apple ID Apple ID 218 keychain keychain 219 FileV FileVault ault 220 Finder Finder 221 iCloud iCloud 222 DMG DMG 223 PKG PKG 224 .APP .APP Linux command for retrieving process information.
+- Interactive Linux command for monitoring process information.
+- Deprecated Linux command tool used to gather information about the IP configuration of the network adapter
+- or to configure the network adapter.
+- Linux command tool used to gather information about the IP configuration of the network adapter or to
+- configure the network adapter.
+- Utility to query a DNS server and return information about a particular domain name or resource record.
+- Linux software package that implements Server Message Block (SMB) file/print sharing, primarily to support
+- integration with Windows hosts.
+- Scheduled task that is managed by the Linux cron daemon.
+- macOS feature for managing applications from the desktop; similar to the Windows taskbar.
+- macOS file system search tool.
+- App facilitating multiple desktops in macOS.
+- macOS control panel hosting multiple prefpane configuration utilities.
+- Touch-enabled mouse and trackpad hardware for Apple computers.
+- macOS utility related to desktop and input/output device accessibility configuration.
+- Cloud-based service allowing users to synchronize settings and manage apps, file sharing, and backups
+- between multiple Apple devices.
+- macOS app for managing passwords cached by the OS and supported browser/web applications.
+- macOS disk encryption product.
+- File management app in macOS.
+- Mobile/cloud computing office-productivity and data-storage suite operated by Apple and closely integrated
+- with macOS and iOS.
+- macOS installer format that can be copied directly to the Applications folder.
+- macOS installer format that supports complex setup tasks.
+- Default extension for a macOS app subdirectory when installed to the Applications folder.225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 Disk Utility Disk Utility macOS tool for disk and file system support tasks.
+- Remote Disc Remote Disc macOS tool for sharing an optical drive over the network.
+- T Time Machine ime Machine App facilitating backup operations in macOS.
+- spinning wait cursor spinning wait cursor macOS indicator that a process is busy and is not able to accept input.
+- Force Quit Force Quit macOS tool for halting a process; equivalent to the process management functionality in Task Manager.
+- confidentiality confidentiality, integrity , integrity, and availability (CIA triad) , and availability (CIA triad) Three principles of security control and management. Also known as the information security triad. Also
+- referred to in reverse order as the AIC triad.
+- cybersecurity cybersecurity Protection of computer systems and digital information resources from unauthorized access, attack, theft, or
+- data damage.
+- threat actor threat actor Person or entity responsible for an event that has been identified as a security incident or as a risk.
+- Risk Risk Likelihood and impact (or consequence) of a threat actor exercising a vulnerability.
+- vulnerability vulnerability Weakness that could be triggered accidentally or exploited intentionally to cause a security breach.
+- non-compliant system non-compliant system System whose configuration is different from its secure baseline.
+- unprotected system unprotected system System where one or more required security controls (antivirus or firewall, for example) is missing or
+- misconfigured.
+- exploit exploit Specific method by which malware code infects a target host, often via some vulnerability in a software
+- process.
+- zero-day zero-day Vulnerability in software that is unpatched by the developer or an attack that exploits such a vulnerability.
+- Bring your own device (BYOD) Bring your own device (BYOD) Security framework and tools to facilitate use of personally-owned devices to access corporate networks and
+- data.
+- Social engineering Social engineering Using persuasion, manipulation, or intimidation to make the victim violate a security policy. The goal of social
+- engineering might be to gain access to an account, gain access to physical premises, or gather information.
+- Impersonation Impersonation Social engineering attack where an attacker pretends to be someone they are not.
+- pretexting pretexting Social engineering tactic where a team will communicate, whether directly or indirectly, a lie or half-truth in
+- order to get someone to believe a falsehood
+- Dumpster diving Dumpster diving The social engineering technique of discovering things about an organization (or person) based on what it
+- throws away.
+- shoulder surfing shoulder surfing Social engineering tactic to obtain someone's password or PIN by observing him or her as he or she types it in.245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 T Tailgating ailgating Piggybacking Piggybacking Phishing Phishing Spear phishing Spear phishing Whaling Whaling V Vishing ishing evil twin evil twin threats threats insider threat insider threat Footprinting Footprinting spoofing spoofing on-path on-path denial of service (DoS) denial of service (DoS) distributed DoS (DDoS) distributed DoS (DDoS) botnet botnet password password Dictionary Dictionary Brute force Brute force cross-site scripting (XSS) cross-site scripting (XSS) Social engineering technique to gain access to a building by following someone who is unaware of their
+- presence.
+- Allowing a threat actor to enter a site or controlled location without authorization.
+- Email-based social engineering attack, in which the attacker sends email from a supposedly reputable source,
+- such as a bank, to try to elicit private information from the victim.
+- Email-based or web-based form of phishing which targets specific individuals.
+- An email-based or web-based form of phishing which targets senior executives or wealthy individuals.
+- Social engineering attack where the threat actor extracts information while speaking over the phone or
+- leveraging IP-based voice messaging services (VoIP).
+- Wireless access point that deceives users into believing that it is a legitimate network access point.
+- Potential for an entity to exercise a vulnerability (that is, to breach security).
+- Type of threat actor who is assigned privileges on the system that cause an intentional or unintentional
+- incident.
+- The phase in an attack or penetration test in which the attacker or tester gathers information about the target
+- before attacking it.
+- Attack technique where the threat actor disguises their identity or impersonates another user or resource.
+- Attack where the threat actor makes an independent connection between two victims and is able to read and
+- possibly modify traffic.
+- Any type of physical, application, or network attack that affects the availability of a managed resource.
+- An attack that uses multiple compromised hosts (a botnet) to overwhelm a service with request or response
+- traffic.
+- Group of hosts or devices that have been infected by a control program called a bot that enables attackers to
+- exploit the hosts to mount attacks.
+- Any attack where the attacker tries to gain unauthorized access to and use of passwords.
+- Type of password attack that compares encrypted passwords against a predetermined list of possible password
+- values.
+- Type of password attack where an attacker uses an application to exhaustively try every possible alphanumeric
+- combination to crack encrypted passwords.
+- Malicious script hosted on the attacker's site or coded in a link injected onto a trusted site designed to
+- compromise clients browsing the trusted site, circumventing the browser's security model of trusted zones.264 SQL injection SQL injection Attack that injects a database query into the input data directed at a server by accessing the client side of the
+- application.
+- 265 hash hash Function that converts an arbitrary length string input to a fixed length string output. A cryptographic hash
+- function does this in a way that reduces the chance of collisions, where two different inputs produce the same
+- output.
+- 266 symmetric encryption symmetric encryption Two-way encryption scheme in which encryption and decryption are both performed by the same key. Also
+- known as shared-key encryption.
+- 267 asymmetric encryption cipher asymmetric encryption cipher Cipher that uses public and private keys. The keys are mathematically linked, using either Rivel, Shamir,
+- Adleman (RSA) or elliptic curve cryptography (ECC) alogrithms, but the private key is not derivable from the
+- public one. An asymmetric key cannot reverse the operation it performs, so the public key cannot decrypt what
+- it has encrypted, for example.
+- 268 private key private key In asymmetric encryption, the private key is known only to the holder and is linked to, but not derivable from,
+- a public key distributed to those with which the holder wants to communicate securely. A private key can be
+- used to encrypt data that can be decrypted by the linked public key or vice versa.
+- 269 public key public key During asymmetric encryption, this key is freely distributed and can be used to perform the reverse encryption
+- or decryption operation of the linked private key in the pair.
+- 270 digital signature digital signature Message digest encrypted using the sender's private key that is appended to a message to authenticate the
+- sender and prove message integrity.
+- 271 Key exchange Key exchange Any method by which cryptographic keys are transferred among users, thus enabling the use of a
+- cryptographic algorithm.
+- 272 W Wi-Fi Protected Access (WP i-Fi Protected Access (WPA) A) Standards for authenticating and encrypting access to Wi-Fi networks.
+- 273 T Temporal Key Integrity Protocol (TKIP) emporal Key Integrity Protocol (TKIP) Mechanism used in the first version of WPA to improve the security of wireless encryption mechanisms,
+- compared to the flawed WEP standard.
+- 274 Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) Symmetric 128-, 192-, or 256-bit block cipher used for bulk encryption in modern security standards, such as
+- WPA2, WPA3, and TLS.
+- 275 Counter Mode with Cipher Block Chaining Message Counter Mode with Cipher Block Chaining Message
+- Encryption protocol used for wireless LANs that addresses the vulnerabilities of the WEP protocol.
+- Authentication Code Protocol (CCMP) Authentication Code Protocol (CCMP)
+- 276 simultaneous authentication of equals (SAE) simultaneous authentication of equals (SAE) Personal authentication mechanism for Wi-Fi networks introduced with WPA3 to address vulnerabilities in the
+- WPA-PSK method.
+- 277 pre-shared key (PSK) pre-shared key (PSK) Wireless network authentication mode where a passphrase-based mechanism is used to allow group
+- authentication to a wireless network. The passphrase is used to derive an encryption key.
+- 278 802.1X 802.1X Standard for encapsulating EAP communications over a LAN (EAPoL) or WLAN (EAPoW) to implement
+- port-based authentication.279 Extensible Authentication Protocol (EAP) Extensible Authentication Protocol (EAP) Framework for negotiating authentication methods that enables systems to use hardware-based identifiers, such
+- as fingerprint scanners or smart card readers, for authentication, and establish secure tunnels through which to
+- submit credentials.
+- 280 Authentication, Authorization, and Accounting Authentication, Authorization, and Accounting
+- Security concept where a centralized platform verifies subject identification, ensures the subject is assigned
+- (AAA) (AAA)
+- relevant permissions, and then logs these actions to create an audit trail.
+- 281 Remote Authentication Dial-in User Service Remote Authentication Dial-in User Service
+- AAA protocol used to manage remote and wireless authentication infrastructures.
+- (RADIUS) (RADIUS)
+- 282 T Terminal Access Controller Access Control System erminal Access Controller Access Control System
+- It is an AAA protocol that was developed by Cisco and used by numerous third-party implementations that is
+- Plus (T Plus (TACACS+) ACACS+)
+- used in authenticating administrative access to routers and switches.
+- 283 Kerberos Kerberos Single sign-on authentication and authorization service that is based on a time-sensitive, ticket-granting
+- system.
+- 284 home router home router SOHO device providing Internet routing via a full fiber, DSL, cable, or satellite link. These appliances also
+- provide a 4-port LAN switch and Wi-Fi plus a firewall.
+- 285 physical placement physical placement Considerations for installation location for PC and network devices to ensure reliable and secure operation.
+- 286 firmware firmware Software instructions embedded on a hardware device such as a computer motherboard. Modern types of
+- firmware are stored in flash memory and can be updated more easily than legacy programmable read-only
+- memory (ROM) types.
+- 287 service set ID (SSID) service set ID (SSID) Character string that identifies a particular wireless LAN (WLAN).
+- 288 content filtering content filtering Security measure performed on email and Internet traffic to identify and block suspicious, malicious and/or
+- inappropriate content in accordance with an organization’s policies.
+- 289 reservation (DHCP) reservation (DHCP) DHCP configuration that assigns either a prereserved or persistent IP address to a given host, based on its
+- hardware address or other ID.
+- 290 port forwarding port forwarding Process in which a router takes requests from the Internet for a particular application (such as HTTP) and sends
+- them to a designated host on the LAN.
+- 291 port mapping port mapping Type of port forwarding where the external port is forwarded to a different internal port on the LAN host.
+- 292 Port triggering Port triggering Mechanism to configure access through a firewall for applications that require more than one port. Basically,
+- when the firewall detects activity on outbound port A destined for a given external IP address, it opens inbound
+- access for the external IP address on port B for a set period.
+- 293 Universal Plug-and-Play (UPnP) Universal Plug-and-Play (UPnP) Protocol framework allowing network devices to autoconfigure services, such as allowing a games console to
+- request appropriate settings from a firewall.
+- 294 screened subnet screened subnet Segment isolated from the rest of a private network by one or more firewalls that accepts connections from the
+- Internet over designated ports.295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 DMZ host DMZ host bollards bollards fencing fencing access control vestibule access control vestibule magnetometer magnetometer Badge reader Badge reader smart card smart card Palmprint scanner Palmprint scanner Retina scanner Retina scanner equipment locks equipment locks alarm system alarm system Motion sensors Motion sensors V Video surveillance ideo surveillance lighting lighting complexity requirements complexity requirements expiration requirement expiration requirement BIOS/UEFI Passwords BIOS/UEFI Passwords lunchtime attack lunchtime attack screensavers screensavers Home router implementation of DMZ where all ports with no existing forwarding rules are opened and
+- directed to a single LAN host.
+- Sturdy vertical post installed to control road traffic or designed to prevent ram-raiding and vehicle-ramming
+- attacks.
+- Security barrier designed to prevent unauthorized access to a site perimeter.
+- Secure entry system with two gateways, only one of which is open at any one time.
+- Hand-held or walkthrough metal detector designed to detect concealed weapons.
+- Authentication mechanism that allows a user to present a smartcard to operate an entry system.
+- Security device similar to a credit card that can store authentication information, such as a user's private key,
+- on an embedded cryptoprocessor.
+- Biometric camera-based scanner that uses unique features of a palm shown by visible and infrared light.
+- Biometric scanner based on analysis of the unique pattern of blood vessels at the back of the eye.
+- Physical security device that restricts access to ports and internal components to key holders.
+- Physical intrusion detection and warning that can use circuit, motion, proximity, and duress triggers.
+- Alarm system triggered by movement as detected by microwave radio reflection or passive infrared sensors.
+- Physical security control that uses cameras and recording devices to visually monitor the activity in a certain
+- area.
+- Physical security mechanisms that ensure a site is sufficiently illuminated for employees and guests to feel safe
+- and for camera-based surveillance systems to work well.
+- Rules designed to enforce best-practice password selection, such as minimum length and use of multiple
+- character types.
+- Rules designed to enforce best-practice password use by forcing regular selection of new passwords.
+- This type of firmware-configured password is shared by all users and consequently is very rarely used. It might
+- be used to provide extra security on a standalone computer that does not often require interactive logon, such
+- as a computer used to manage embedded systems.
+- Where a threat actor exploits an unlocked and unattended desktop or mobile device to gain unauthorized
+- access.
+- Security mechanism that locks the desktop after a period of inactivity and requires user to authenticate to
+- resume.314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 personally identifiable information (PII) personally identifiable information (PII) Data that can be used to identify or contact an individual (or in the case of identity theft, to impersonate them).
+- Execution control Execution control Process of determining what additional software may be installed on a client or server beyond its baseline to
+- prevent the use of unauthorized software.
+- AutoPlay AutoPlay Windows mechanisms for automatic actions to occur when a peripheral storage device is attached.
+- W Windows Defender Antivirus indows Defender Antivirus Security scanner installed and enabled by default in Windows that provides protection against general malware
+- types.
+- Definition/pattern updates Definition/pattern updates Information about new viruses and other malware used to update antivirus scanners.
+- Encrypting File System (EFS) Encrypting File System (EFS) Microsoft's file-level encryption feature available for use on NTFS.
+- trusted source trusted source Installer package that can be verified by a digital signature or cryptographic hash.
+- untrusted source untrusted source Installer package whose authenticity and integrity cannot be verified.
+- Extensions Extensions Add-on that uses the browser API to implement new functionality.
+- Plug-ins Plug-ins Software installed to a web browser to handle multimedia objects embedded in web pages. Use of most plug-in
+- types is now deprecated.
+- digital certificates digital certificates Identification and authentication information presented in the X.509 format and issued by a Certificate
+- Authority (CA) as a guarantee that a key pair (as identified by the public key embedded in the certificate) is
+- valid for a particular subject (user or host).
+- secure connection secure connection Using HTTPS to browse a site where the host has presented a valid digital certificate issued by a CA that is
+- trusted by the browser. A padlock icon is shown to indicate the secure status of the connection.
+- Pop-up blockers Pop-up blockers Browser feature or extension that prevents sites from creating new browser windows.
+- Ad blockers Ad blockers Browser feature or add-in that prevents third-party content from being displayed when visiting a site.
+- cache cache Cookies, site files, form data, passwords, and other information stored by a browser. Caching behavior can be
+- enabled or disabled and data can be cleared manually.
+- Private/incognito browsing mode Private/incognito browsing mode Browser mode in which all session data and cache is discarded and tracking protection features are enabled by
+- default.
+- V Viruses iruses Malicious code inserted into an executable file image. The malicious code is executed when the file is run and
+- can deliver a payload, such as attempting to infect other files.
+- Boot sector viruses Boot sector viruses Malicious code inserted into the boot sector code or partition table of a storage device that attempts to execute
+- when the device is attached.
+- T Trojans rojans Malicious software program hidden within an innocuous-seeming piece of software. Usually, the Trojan is
+- used to try to compromise the security of the target computer.333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 W Worms orms Fileless malware Fileless malware backdoor backdoor remote access T remote access Trojan (RA rojan (RAT) T) command and control (C2 or C&C) command and control (C2 or C&C) Spyware Spyware keylogger keylogger rootkit rootkit Ransomware Ransomware cryptominer cryptominer antivirus scan antivirus scan Rogue antivirus Rogue antivirus Redirection Redirection certificate warnings certificate warnings quarantine quarantine sandbox sandbox screen lock screen lock swipe swipe Personal identification number (PIN) Personal identification number (PIN) Type of malware that replicates between processes in system memory and can spread over client/server
+- network connections.
+- Exploit techniques that use the host's scripting environment to create malicious processes.
+- Mechanism for gaining access to a computer that bypasses or subverts the normal method of authentication.
+- Malware that creates a backdoor remote administration channel to allow a threat actor to access and control the
+- infected host.
+- Infrastructure of hosts and services with which attackers direct, distribute, and control malware over botnets.
+- Software that records information about a PC and its users, often installed without the user's consent.
+- Malicious software or hardware that can record user keystrokes.
+- Class of malware that modifies system files, often at the kernel level, to conceal its presence.
+- Malware that tries to extort money from the victim by blocking normal operation of a computer and/or
+- encrypting the victim’s files and demanding payment.
+- Malware that hijacks computer resources to create cryptocurrency.
+- Software capable of detecting and removing virus infections and (in most cases) other types of malware, such
+- as worms, Trojans, rootkits, adware, spyware, password crackers, network mappers, DoS tools, and so on.
+- Spoofed desktop notifications and browser ads designed to alarm users and promote installation of Trojan
+- malware.
+- Consequence of malware infection where DNS and/or search results are corrupted to redirect requests from
+- legitimate site hosts to spoofed sites or ads.
+- Browser indication that a site connection is not secure because the certificate is invalid or the issuing CA is not
+- trusted.
+- The process of isolating a file, computer system, or computer network to prevent the spread of a virus or
+- another cybersecurity incident.
+- Computing environment that is isolated from a host system to guarantee that the environment runs in a
+- controlled, secure fashion. Communication links between the sandbox and the host are usually completely
+- prohibited so that malware or faulty software can be analyzed in isolation and without risk to the host.
+- Mobile device mechanism that locks the screen after a period of inactivity.
+- Mobile gesture that unlocks the screen without requiring authentication.
+- Number used in conjunction with authentication devices such as smart cards; as the PIN should be known only
+- to the user, loss of the smart card should not represent a security risk.352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 Fingerprint Fingerprint Pattern Pattern failed login attempts failed login attempts locator application locator application remote wipe remote wipe device wipe device wipe enterprise wipe enterprise wipe Internet of Things (IoT) Internet of Things (IoT) factory reset factory reset AirDrop AirDrop Nearby Share Nearby Share Root access Root access Jailbreak Jailbreak developer mode developer mode .APK .APK bootleg app bootleg app V Virtual Network Computing (VNC) irtual Network Computing (VNC) Microsoft Remote Assistance (MSRA) Microsoft Remote Assistance (MSRA) Quick Assist Quick Assist Mobile device bio gesture authentication mechanism that requires the user to scan their fingerprint to unlock
+- the device.
+- Mobile device authentication mechanism that requires the user to input a join the dots pattern to unlock the
+- device.
+- Mobile device authentication mechanism that progressively delays or blocks unlock attempts after multiple
+- failures.
+- Cloud app that uses mobile device location service to identify its current position on a map and enable security
+- features to mitigate theft or loss.
+- Software that allows deletion of data and settings on a mobile device to be initiated from a remote server.
+- Remote-initiated factory reset of a mobile device that removes all user data and settings.
+- Remote-initiated wipe of a mobile device that removes corporate apps and data only.
+- Devices that can report state and configuration data and be remotely managed over IP networks.
+- Standard routine created by manufacturer that can be invoked to restore an appliance to its shipped state,
+- clearing any user customization, configuration, or modification.
+- iOS feature for simple file sharing via Bluetooth.
+- Android feature for simple file sharing via Bluetooth.
+- Gaining superuser level access over an Android-based mobile device.
+- Removes the protective seal and any OS specific restrictions to give users greater control over the device.
+- Mobile device feature designed for testing apps during development that may weaken corporate security
+- protections if misused.
+- Android app package format used when sideloading software from a source other than a trusted store.
+- Software that illegally copies or imitates a commercial product or brand.
+- Remote access tool and protocol. VNC is the basis of macOS screen-sharing.
+- Windows remote-support feature allowing a user to invite a technical support professional to provide
+- assistance over a network using chat. The user can also grant the support professional control over his or her
+- desktop. Remote Assistance uses the same RDP protocol as Remote Desktop.
+- Windows support feature allowing remote screen-sharing over the Internet.371 Secure Shell (SSH) Secure Shell (SSH) Application protocol supporting secure tunneling and remote terminal emulation and file copy. SSH runs over
+- TCP port 22.
+- 372 Remote monitoring and management (RMM) Remote monitoring and management (RMM) Category of support software designed for outsourced management of client networks by MSPs.
+- 373 Desktop management or unified endpoint Desktop management or unified endpoint
+- Enterprise software for controlling device settings, apps, and corporate data storage on all types of fixed,
+- management (UEM) management (UEM)
+- mobile, and IoT computing devices.
+- 374 endpoint detection and response (EDR) endpoint detection and response (EDR) Software agent that collects system data and logs for analysis by a monitoring system to provide early
+- detection of threats.
+- 375 screen-sharing screen-sharing Software that allows clients to view and control the desktop over a network or the Internet.
+- 376 video-conferencing video-conferencing Software that allows users to configure virtual meeting rooms, with options for voice, video, instant messaging,
+- and screen-sharing.
+- 377 Backups Backups Security copy of production data made to removable media, typically according to a regular schedule.
+- Different backup types (full, incremental, or differential) balance media capacity, time required to backup, and
+- time required to restore.
+- 378 recovery recovery Operation to recover system functionality and/or data integrity using backup media.
+- 379 File History File History Windows feature for backing up user data.
+- 380 Retention Retention Process an organization uses to maintain the existence of and control over certain data in order to comply with
+- business policies and/or applicable laws and regulations.
+- 381 backup chain backup chain Sequence of jobs starting with a full backup and followed by either incremental or differential backups to
+- implement a media rotation scheme.
+- 382 full backup full backup Job type in which all selected files, regardless of prior state, are backed up.
+- 383 dif differential ferential Job type in which all selected files that have changed since the last full backup are backed up.
+- 384 synthetic full backup synthetic full backup Job type that combines incremental backup jobs to synthesize a full backup job. Synthetic full backups have
+- the advantage of being easy to restore from while also being easy on bandwidth across the network as only
+- changes are transmitted.
+- 385 grandfather grandfather-father -father-son (GFS) -son (GFS) Media rotation scheme that labels tapes/devices used for backup jobs in generations, with the youngest
+- generation having a shorter retention period than the oldest.
+- 386 Incremental backups Incremental backups Job type in which all selected files that have changed since the last full or incremental backup (whichever was
+- most recent) are backed up.
+- 387 Of Off site backup storage f site backup storage Media rotation scheme that ensures at least one copy of data is held at a different location to mitigate the risk
+- of a disaster that destroys all storage at a single site.388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 3-2-1 backup rule 3-2-1 backup rule Regulated data Regulated data Personal Government-issued Information Personal Government-issued Information Healthcare data Healthcare data credit card transactions credit card transactions prohibited content prohibited content end-user license agreement (EULA) end-user license agreement (EULA) open-source open-source digital rights management (DRM) digital rights management (DRM) incident response plan (IRP) incident response plan (IRP) Computer Security Incident Response T Computer Security Incident Response Team (CSIR eam (CSIRT) T) Digital forensics Digital forensics chain of custody chain of custody sanitization sanitization standard formatting standard formatting erasing/wiping erasing/wiping low level format low level format Best practice maxim stating that at any given time there should be at least three copies of data stored on two
+- media types, with one copy held off site.
+- Information that has storage- and handling-compliance requirements defined by national and state legislation
+- and/or industry regulations.
+- Data related to identity documents issued by governments, such as passports, social security IDs, and driving
+- licenses, that is liable to be subject to strict legal and regulatory compliance requirements.
+- Data that can be used to identify an individual and includes information about past, present, or future health as
+- well as related payments and data used in the operation of a healthcare business.
+- Regulated data related to processing financial transactions.
+- Data found on a computer system that is not permitted by policy or that is not compliant with relevant
+- legislation or regulations.
+- Contract governing the installation and use of software.
+- Licensing model that grants permissive rights to end-users, such as to install, use, modify, and distribute a
+- software product and its source code, as long as redistribution permits the same rights.
+- Copyright protection technologies for digital media. DRM solutions usually try to restrict the number of
+- devices allowed for playback of a licensed digital file, such as a music track or ebook.
+- Procedures and guidelines covering appropriate priorities, actions, and responsibilities in the event of security
+- incidents, divided into preparation, detection/analysis, containment, eradication/recovery, and post-incident
+- stages.
+- Team with responsibility for incident response. The CSIRT must have expertise across a number of business
+- domains (IT, HR, legal, and marketing, for instance).
+- Process of gathering and submitting computer evidence to trial. Digital evidence is latent, meaning that it must
+- be interpreted. This means that great care must be taken to prove that the evidence has not been tampered with
+- or falsified.
+- Record of evidence-handling from collection to presentation in court to disposal.
+- Process of thoroughly and completely removing data from a storage medium so that file remnants cannot be
+- recovered.
+- Using a vendor tool to delete the file system and/or partition table on storage media before recycling or
+- repurposing. This method carries the greatest risk of leaving persistent data remnants.
+- Using a third-party tool to fully erase storage media before recycling or repurposing, minimizing the risk of
+- leaving persistent data remnants.
+- Using a vendor tool to fully erase storage media before recycling or repurposing, minimizing the risk of
+- leaving persistent data remnants.405 Secure Erase (SE) Secure Erase (SE) 406 Instant Secure Erase (ISE) Instant Secure Erase (ISE) 407 physical destruction physical destruction 408 certificate of destruction certificate of destruction 409 script script 410 .SH .SH 411 variable variable 412 branch branch 413 loop loop 414 operators operators 415 PowerShell (PS) PowerShell (PS) 416 .PS1 .PS1 417 VBScript VBScript 418 .VBS .VBS 419 .BA .BAT T 420 JavaScript JavaScript 421 .JS .JS 422 automation automation 423 Python Python Method of sanitizing a drive using the ATA command set.
+- Media sanitization command built into HDDs and SSDs that are self-encrypting that works by erasing the
+- encryption key, leaving remnants unrecoverable.
+- Using drilling, shredding, incineration, or degaussing of storage media before recycling or repurposing to
+- minimize the risk of leaving persistent data remnants.
+- Validation from an outsourcing provider of recycling/repurposing services that media has been destroyed or
+- sanitized to the agreed standard.
+- Series of simple or complex commands, parameters, variables, and other components stored in a text file and
+- processed by a shell interpreter.
+- Extension for a Linux shell script file format. The shebang in the first line of the script identifies the shell type
+- (Bash, for instance).
+- Identifier for a value that can change during program execution. Variables are usually declared with a particular
+- data type.
+- In scripting and programming, control statement that uses a condition to determine which code block to
+- execute next.
+- In scripting and programming, control statement that executes code repeatedly based on a condition.
+- Programming object that can resolve the truth value of a condition, such as whether one variable is equal to
+- another.
+- Command shell and scripting language built on the .NET Framework that use cmdlets for Windows
+- automation.
+- Extension for the PowerShell script format.
+- A command shell and scripting language built on the .NET Framework, which allows the administrator to
+- automate and manage computing tasks.
+- Extension for the Visual Basic Script file format.
+- Extension for the batch file format that is used to execute a series of Windows CMD shell commands.
+- Scripting language used to add interactivity to web pages and HTML-format email.
+- Extension for the JavaScript file format.
+- Use of scripts to perform configuration steps without requiring manual intervention.
+- High-level programming language that is widely used for automation.424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 .PY .PY Extension for a script written in the Python programming language.
+- application programming interface (API) application programming interface (API) Methods exposed by a script or program that allow other scripts or programs to use it. For example, an API
+- enables software developers to access functions of the TCP/IP network stack under a particular operating
+- system.
+- standard operating procedure (SOP) standard operating procedure (SOP) Documentation of best practice and work instructions to use to perform a common administrative task.
+- ticketing system ticketing system Database software designed to implement a structured support process by identifying each case with a unique
+- job ticket ID and with descriptive fields to record how the issue was resolved.
+- asset asset Thing of economic value. For accounting purposes, assets are classified in different ways, such as tangible and
+- intangible or short term and long term. Asset management means identifying each asset and recording its
+- location, attributes, and value in a database.
+- Escalation Escalation In the context of support procedures, incident response, and breach-reporting, escalation is the process of
+- involving expert and senior staff to assist in problem management.
+- incident report incident report An analysis of events that can provide insight into how to improve response and support processes in the
+- future.
+- asset tag asset tag Practice of assigning an ID to assets to associate them with entries in an inventory database.
+- network topology diagram network topology diagram Documentation showing how network nodes are connected by cabling or how they are logically identified and
+- connected, such as in IP networks.
+- knowledge base (KB) knowledge base (KB) Searchable database of product FAQs (Frequently Asked Questions), advice, and known troubleshooting
+- issues. The Microsoft KB is found at support.microsoft.com.
+- Change management Change management Process through which changes to the configuration of information systems are implemented as part of the
+- organization's overall configuration management efforts.
+- configuration management configuration management Process through which an organization's information systems components are kept in a controlled state that
+- meets the organization's requirements, including those for security and compliance.
+- risk analysis risk analysis Process for qualifying or quantifying the likelihood and impact of a factor.
+- acceptable use policy (AUP) acceptable use policy (AUP) Policy that governs employees' use of company equipment and Internet services. ISPs may also apply AUPs to
+- their customers.
+- splash screen splash screen Displaying terms of use or other restrictions before use of a computer or app is allowed.
+- Active listening Active listening Communication technique to ensure that you capture all the information that the other person is "transmitting,"
+- including nonverbal cues such as tone of voice or gestures. There are various active-listening techniques for
+- ensuring that you are "getting the right message," such as summarizing, reflecting (matching the speaker's
+- communication style), interpreting, and verbal attends (such as "Uh-huh." or "I see.").
+- fuse fuse Circuit breaker designed to protect the device and users of the device from faulty wiring or supply of power
+- (overcurrent protection).441 grounded grounded Wire that provides a return path for electrical current as a safety feature; if an electrical connection short
+- circuits into the metal chassis, a ground wire ensures that the current flows to ground rather than electrocuting
+- someone handling the faulty device.
+- 442 Electrostatic dischar Electrostatic discharge (ESD) ge (ESD) Metal and plastic surfaces can allow a charge to build up. This can discharge if a potential difference is formed
+- between the charged object and an oppositely charged conductive object. This electrical discharge can damage
+- silicon chips and computer components if they are exposed to it.
+- 443 Under Under-voltage event -voltage event When the power that is supplied by the electrical wall socket is insufficient to allow the computer to function
+- correctly. Under-voltage events are long sags in power output that are often caused by overloaded or faulty grid
+- distribution circuits or by a failure in the supply route from electrical power station to a building.
+- 444 Power failure Power failure Complete loss of building power.
+- 445 sur surge suppressor ge suppressor Device that protects electrical devices against the damaging effects of a power surge or spike.
+- 446 uninterruptible power supply (UPS) uninterruptible power supply (UPS) Battery-powered device that supplies AC power that an electronic device can use in the event of power failure.
+- 447 material safety data sheet (MSDS) material safety data sheet (MSDS) Information sheet accompanying hazardous products or substances that explains the proper procedures for
+- handling and disposal.
+- 448 Y You are developing a Bash script to test whether a ou are developing a Bash script to test whether a
+- $1 will refer to the first positional argument.
+- given host is up. Users will run the script in the given host is up. Users will run the script in the
+- following format: following format:
+- ./ping.sh 192.168.1.1 ./ping.sh 192.168.1.1
+- W Within the code, what identifier can you use to refer ithin the code, what identifier can you use to refer
+- to the IP address passed to the script as an ar to the IP address passed to the script as an argument? gument?
+- 449 Y You are auditing a file system for the presence of any ou are auditing a file system for the presence of any
+- .PS1 for PowerShell scripts, .VBS for VBScript, and .BAT for cmd batch files.
+- unauthorized W unauthorized Windows shell script files. Which three indows shell script files. Which three
+- extensions should you scan for? extensions should you scan for?
+- 450 What type of cryptographic key is delivered in a What type of cryptographic key is delivered in a
+- A digital certificate is a wrapper for a subject's public key. The public and private keys in an asymmetric cipher
+- digital certificate? digital certificate?
+- are paired. If one key is used to encrypt a message, only the other key can then decrypt it.
+- 451 What is the purpose of a KB? What is the purpose of a KB? A knowledge base (KB) is a reference to assist with installing, configuring, and troubleshooting hardware and
+- software. KBs might be created by vendors to support their products. A company might also create an internal
+- KB, populated with guidelines, procedures, information from service tickets, and answers to frequently asked
+- questions (FAQs).
+- 452 The building will house a number of servers The building will house a number of servers
+- A lockable faceplate controls who can access the power button, external ports, and internal components. This
+- contained within a secure room and network racks. contained within a secure room and network racks.
+- mitigates the risk of someone gaining access to the server room via social engineering. It also mitigates risks
+- Y You have recommended that the provisioning ou have recommended that the provisioning
+- from insider threat by rogue administrators, though to a lesser extent (each request for a chassis key would
+- requirement includes key-operated chassis faceplates. requirement includes key-operated chassis faceplates.
+- need to be approved and logged).
+- What threats will this mitigate? What threats will this mitigate?
+- 453 What type of account management policy can protect What type of account management policy can protect
+- A lockout policy disables the account after a number of incorrect sign-in attempts.against password-guessing attacks? against password-guessing attacks?454 When might you need to consult SDS documentation? When might you need to consult SDS documentation? A Safety Data Sheet (SDS), previously known as a Material Safety Data Sheet (MSDS), should be consulted
+- when introducing a new product or substance to the workplace. Subsequently, you should refer to it in case of
+- an accident involving the substance or when you need to dispose of it.
+- 455 A threat actor crafts an email addressed to a senior A threat actor crafts an email addressed to a senior
+- A phishing attack tries to make users authenticate with a fake resource, such as a website. Phishing emails are
+- support technician and part-time football coach support technician and part-time football coach
+- often sent in mass as spam. This is a variant of phishing called spear phishing because it is specifically targeted
+- inviting him to register for free football coaching inviting him to register for free football coaching
+- at a single person, using personal information known about the subject (his or her football-coaching volunteer
+- work).
+- advice. The website contains password-stealing advice. The website contains password-stealing
+- malware. What is the name of this type of attack? malware. What is the name of this type of attack?
+- 456 What backup issue does the synthetic job type What backup issue does the synthetic job type
+- A synthetic full backup reduces data transfer requirements and, therefore, backup job time by synthesizing a
+- address? address?
+- full backup from previous incremental backups rather than directly from the source data.
+- 457 In AAA architecture, what type of device might a In AAA architecture, what type of device might a
+- AAA refers to Authentication, Authorization, and Accounting and the Remote Access Dial-in User Service
+- RADIUS client be? RADIUS client be?
+- (RADIUS) protocol is one way of implementing this architecture. The RADIUS server is positioned on the
+- internal network and processes authentication and authorization requests. The RADIUS client is the access
+- point, and it must be configured with the IP address of the server plus a shared secret passphrase. The access
+- point forwards authentication traffic between the end-user device (a supplicant) and the RADIUS server but
+- cannot inspect the traffic.
+- 458 Y You are trying to troubleshoot a problem over the ou are trying to troubleshoot a problem over the
+- Advise the customer that you will put him or her on hold while you speak to someone else, or arrange to call
+- phone and need to get advice from your manager phone and need to get advice from your manager..
+- the customer back.
+- How should you handle this with the customer? How should you handle this with the customer?
+- 459 What role do barcodes play in managing inventory? What role do barcodes play in managing inventory? An inventory is a list of assets stored as database records. You must be able to correlate each physical device
+- with an asset record by labeling it. A barcode label is a good way of doing this.
+- 460 How do you perform a scan to identify file system How do you perform a scan to identify file system
+- At a command prompt, run chkdsk without any switches. Note that sfc is not the correct answer as this verifies
+- errors in read-only mode? errors in read-only mode?
+- the integrity of protected system files rather than checks the file system on a drive.
+- 461 Confidentiality and integrity are two important Confidentiality and integrity are two important
+- Availability—information that is inaccessible is not of much use to authorized users. For example, a secure
+- properties of information stored in a secure retrieval properties of information stored in a secure retrieval
+- system must protect against denial of service (DoS) attacks.
+- system. What is the third property? system. What is the third property?
+- 462 Katie works in a high-security government facility Katie works in a high-security government facility..
+- Biometric authentication deployed as part of a building's entry-control system.
+- When she comes to work in the morning, she places When she comes to work in the morning, she places
+- her hand on a scanning device installed at a turnstile her hand on a scanning device installed at a turnstile
+- in the building lobby in the building lobby. The scanner reads her palmprint . The scanner reads her palmprint
+- and compares it to a master record of her palmprint in and compares it to a master record of her palmprint in
+- a database to verify her identity a database to verify her identity. What type of security . What type of security
+- control is this? control is this?
+- 463 A computer is caught in a reboot loop. It starts, shows A computer is caught in a reboot loop. It starts, shows
+- Boot using a recovery tool, such as the product disc, and attempt startup repair and/or repair of the Windows
+- a BSoD, and then reboots. What should you do? a BSoD, and then reboots. What should you do?
+- installation using sfc or Windows reset.464 A threat actor recovers some documents via dumpster A threat actor recovers some documents via dumpster
+- Brute force attacks are effective against short passwords. Dictionary attacks depend on users choosing ordinary
+- diving and learns that the system policy causes diving and learns that the system policy causes
+- words or phrases in a password.
+- passwords to be configured with a random mix of passwords to be configured with a random mix of
+- dif different characters that are only five characters in ferent characters that are only five characters in
+- length. T length. To what type of password cracking attack is o what type of password cracking attack is
+- this vulnerable? this vulnerable?
+- 465 Y You have selected a secure location for a new home ou have selected a secure location for a new home
+- Check for a firmware update. Using the latest firmware is important to mitigate risks from software
+- vulnerabilities.
+- router router, changed the default password, and verified the , changed the default password, and verified the
+- W WAN IP address and Internet link. What next step AN IP address and Internet link. What next step
+- should you perform before configuring wireless should you perform before configuring wireless
+- settings? settings?
+- 466 Y You are troubleshooting a user device that keeps ou are troubleshooting a user device that keeps
+- Check that the device has sufficient spare storage, and check for updates. If you can’t identify a device-wide
+- powering of powering off unexpectedly f unexpectedly. Y . You run hardware ou run hardware
+- fault, test to see whether the issue is associated with use of a single app.
+- diagnostics and confirm there is no component fault diagnostics and confirm there is no component fault
+- or overheating issue. What should your next or overheating issue. What should your next
+- troubleshooting step be? troubleshooting step be?
+- 467 Y You are writing some work instructions to assist ou are writing some work instructions to assist
+- Cloning refers to the image deployment installation method. An image is a copy of an existing installation
+- technicians with deploying new user desktops via technicians with deploying new user desktops via
+- saved as a single file. Image deployment could use USB boot media (or even optical discs), but network boot is
+- cloning. What type of installation and boot method is cloning. What type of installation and boot method is
+- more likely. Network boot requires a PXE-compatible network adapter and motherboard in the computer and
+- this process most likely to use, and what are the boot this process most likely to use, and what are the boot
+- the boot device priority set to network/PXE. The network requires a Dynamic Host Configuration Protocol
+- requirements? requirements?
+- (DHCP) server plus a remote network installation server to run unattended setup and apply the image.
+- 468 How do you activate Spotlight Search using the How do you activate Spotlight Search using the
+- COMMAND+SPACEBAR.
+- keyboard? keyboard?
+- 469 Why is DNS configuration a step in the malware Why is DNS configuration a step in the malware
+- Compromising domain-name resolution is a very effective means of redirecting users to malicious websites.
+- remediation process? remediation process?
+- Following malware infection, it is important to ensure that DNS is being performed by valid servers.
+- 470 Users working from home need to be able to access a Users working from home need to be able to access a
+- Configure a virtual private network (VPN) so that remote users can connect to the corporate LAN and then
+- PC on the corporate network via RDP PC on the corporate network via RDP. What . What
+- launch the remote desktop protocol (RDP) client to connect to the office PC.
+- technology will enable this without having to open the technology will enable this without having to open the
+- RDP port to Internet access? RDP port to Internet access?
+- 471 A company wants to minimize the number of devices A company wants to minimize the number of devices
+- Corporate owned, personally enabled (COPE) will allow standardization to a single device and OS. As the
+- and mobile OS versions that it must support but allow and mobile OS versions that it must support but allow
+- requirement does not specify a single device and OS, choose your own device (CYOD) would also fit.use of a device by employees for personal email and use of a device by employees for personal email and
+- social networking. What mobile deployment model is social networking. What mobile deployment model is
+- the best fit for these requirements? the best fit for these requirements?472 Y You are completing a checklist of security features for ou are completing a checklist of security features for
+- Data-at-rest encryption. In Windows, this can be configured at file level via the Encrypting File System (EFS)
+- workstation deployments. Following the CompTIA workstation deployments. Following the CompTIA
+- or at disk level via BitLocker.
+- A+ objectives, what additional item should you add to A+ objectives, what additional item should you add to
+- the following list, and what recommendation for a the following list, and what recommendation for a
+- built-in W built-in Windows feature or features can you indows feature or features can you
+- recommend be used to implement it? recommend be used to implement it?
+- Password best practices Password best practices
+- End-user best practices End-user best practices
+- Account management Account management
+- Change default administrator Change default administrator’ ’s user s user
+- account/password account/password
+- Disable AutoRun/AutoPlay Disable AutoRun/AutoPlay
+- Enable W Enable Windows Update, W indows Update, Windows indows
+- Defender Antivirus, and W Defender Antivirus, and Windows indows
+- Defender Firewall Defender Firewall
+- 473 When you arrive at a customer location to service a When you arrive at a customer location to service a
+- Demonstrate empathy with the customer's situation, use active listening skills to show that you understand the
+- network printer network printer, the user is upset because the printer is , the user is upset because the printer is
+- importance of the issue, and make the customer confident that you can help. Then use closed-questioning
+- not working and therefore he cannot submit his not working and therefore he cannot submit his
+- techniques to start to diagnose the problem.
+- reports on time. How should you approach this user? reports on time. How should you approach this user?
+- 474 Y You are assisting with the configuration of MDM ou are assisting with the configuration of MDM
+- Devices that are jailbroken or rooted allow the owner account complete control. Devices that allow installation
+- software. One concern is to deny access to devices software. One concern is to deny access to devices
+- of apps from untrusted sources, such as by sideloading APK packages or via developer mode, could also have
+- that might be able to run apps that could be used to that might be able to run apps that could be used to
+- weakened permissions.
+- circumvent the access controls enforced by MDM. circumvent the access controls enforced by MDM.
+- What types of configurations are of concern? What types of configurations are of concern?
+- 475 Why are the actions of a first responder critical in the Why are the actions of a first responder critical in the
+- Digital evidence is difficult to capture in a form that demonstrates that it has not been tampered with.
+- context of a forensic investigation? context of a forensic investigation?
+- Documentation of the scene and proper procedures are crucial.
+- 476 Y You are reviewing a secure deployment checklist for ou are reviewing a secure deployment checklist for
+- Disabling guest access. It might be appropriate to allow a guest network depending on the circumstances, but
+- home router wireless configuration. Following the home router wireless configuration. Following the
+- the general principle is that services and access methods that are not required should be disabled.
+- CompTIA A+ objectives, what additional setting CompTIA A+ objectives, what additional setting
+- should be considered along with the following four should be considered along with the following four
+- settings? settings?
+- Changing the service set identifier (SSID) Changing the service set identifier (SSID)
+- Disabling SSID broadcast Disabling SSID broadcast
+- Encryption settings Encryption settings
+- Changing channels Changing channels
+- 477 Y You are working on the training documentation for ou are working on the training documentation for
+- Do not argue with customers and/or be defensive. Avoid dismissing customer problems, and do not be
+- help-desk agents. What should you include for help-desk agents. What should you include for
+- judgmental. Try to calm the customer and move the support call toward positive troubleshooting diagnosis and
+- dealing with difficult situations? dealing with difficult situations?
+- activity, emphasizing a collaborative approach. Do not disclose experiences via social media outlets.
+- 478 In which atmospheric conditions is the risk of ESD In which atmospheric conditions is the risk of ESD
+- During cool, dry conditions when humidity is low. When humidity is high, the static electricity can dissipate
+- highest? highest?
+- through the moisture present in the air.479 A command has generated a lar A command has generated a large amount of data on ge amount of data on
+- Either | more or | less.
+- the screen. What could you add to the command to the screen. What could you add to the command to
+- make the output more readable? make the output more readable?
+- 480 What two factors must a user present to authenticate What two factors must a user present to authenticate
+- 1. A digital certificate and its associated private key are installed on the wireless station.
+- to a wireless network secured using EAP-TLS? to a wireless network secured using EAP-TLS?
+- 2. Device authentication, typically via a password, PIN, or biometric gesture, permits access to the private key.
+- 481 T True or false? An or rue or false? An organization should rely on ganization should rely on
+- False. A lunchtime attack is where a threat actor gains access to a signed-in user account because the desktop
+- automatic screen savers to prevent lunchtime attacks. automatic screen savers to prevent lunchtime attacks.
+- has not locked. While an automatic screensaver lock provides some protection, there may still be a window of
+- opportunity for a threat actor between the user leaving the workstation unattended and the screensaver
+- activating. Users must lock the workstation manually when leaving it unattended.
+- 482 T True or false? The level of risk from zero-day attacks rue or false? The level of risk from zero-day attacks
+- False. A zero-day is a vulnerability that is unknown to the product vendor and means that no patch is available
+- is only significant with respect to EOL systems. is only significant with respect to EOL systems.
+- to mitigate it. This can affect currently supported as well as unsupported end-of-life (EOL) systems. The main
+- difference is that there is a good chance of a patch being developed if the system is still supported, but almost
+- no chance if it is EOL.
+- 483 T True or false. TKIP represents the best available rue or false. TKIP represents the best available
+- False. Advanced Encryption Standard (AES) provides stronger encryption and is enabled by selecting Wi-Fi
+- wireless encryption and should be configured in place wireless encryption and should be configured in place
+- Protected Access (WPA) version 2 with AES/CCMP or WPA3 encryption mode. The Temporal Key Integrity
+- of AES if supported. of AES if supported.
+- Protocol (TKIP) attempts to fix problems with the older RC4 cipher used by the first version of WPA. TKIP
+- and WPA1 are now deprecated.
+- 484 T True or false? Updates are not necessary for iOS rue or false? Updates are not necessary for iOS
+- False. Closed source just means that the vendor controls development of the OS. It is still subject to updates to
+- devices because the OS is closed source. devices because the OS is closed source.
+- fix problems and introduce new features.
+- 485 T True or false? Using a browser rue or false? Using a browser’ ’s incognito mode will s incognito mode will
+- False. Incognito mode can prevent the use of cookies but cannot conceal the user’s source IP address. You do
+- prevent sites from recording the user prevent sites from recording the user’ ’s IP address. s IP address.
+- not need to include this in your answer, but the main way to conceal the source IP address is to connect to sites
+- via a virtual private network (VPN).
+- 486 T True or false? W rue or false? Windows Defender Firewall cannot be indows Defender Firewall cannot be
+- False. It is not usually a good idea to do so, but it can be disabled via Security Center or the Control Panel
+- disabled. disabled.
+- applet.
+- 487 T True or false? A factory reset preserves the user's rue or false? A factory reset preserves the user's
+- False. Restoring to factory settings means removing all user data and settings.
+- personal data. personal data.
+- 488 T True or False? Y rue or False? You should fit an antistatic wrist strap ou should fit an antistatic wrist strap
+- False. The conductive path will occur through your fingers as you touch electronic components. The stud in the
+- over your clothing as this is most likely to retain a over your clothing as this is most likely to retain a
+- wrist strap must make contact with your skin to drain the charge.
+- char charge. ge.
+- 489 T True or false? Under default settings, the user account rue or false? Under default settings, the user account
+- False. User Account Control (UAC) is designed to prevent misuse of accounts with administrative privileges.
+- added during setup is not af added during setup is not affected by User Account fected by User Account
+- Use of such privileges requires the user to approve a consent dialog or to enter the credentials of an
+- Control. Control.
+- administrator account. This system can be disabled via UAC settings, but it is enabled by default.
+- 490 T True or False: SSDs cannot benefit from occasional rue or False: SSDs cannot benefit from occasional
+- False: With flash drives and SSDs, while seek time is not a performance factor, the file system can still benefit
+- defragmentation or optimization. defragmentation or optimization.
+- from occasional defragmentation or optimization. There are several things to consider, including the lifespan of
+- the SSD. You can read more about the technical considerations in optimizing SSDs at
+- hanselman.com/blog/TheRealAndCompleteStoryDoesW hanselman.com/blog/TheRealAndCompleteStoryDoesWindowsDefragmentY indowsDefragmentYourSSD.aspx ourSSD.aspx.
+- 491 What two types of biometric authentication What two types of biometric authentication
+- Fingerprint recognition and facial recognition.mechanism are supported on smartphones? mechanism are supported on smartphones?492 A user is assigned Read NTFS permissions to a A user is assigned Read NTFS permissions to a
+- Full control—the most effective permissions are applied.
+- resource via his user account and Full Control via resource via his user account and Full Control via
+- membership of a group. What ef membership of a group. What effective NTFS fective NTFS
+- permissions does the user have for the resource? permissions does the user have for the resource?
+- 493 Y You are writing a tech note to guide new technicians ou are writing a tech note to guide new technicians
+- gpupdate is used to refresh local policy settings with updates or changes from the policy template. gpresult is
+- on operational procedures for working with Active on operational procedures for working with Active
+- used to identify the Resultant Set of Policies (RSoP) for a given computer and/or user account.
+- Directory Directory. As part of this note, what is the dif . As part of this note, what is the difference ference
+- between the gpupdate and gpresult commands? between the gpupdate and gpresult commands?
+- 494 Y You are updating a deployment checklist for installing ou are updating a deployment checklist for installing
+- Heat and direct sunlight, excessive dust and liquids, and very low or high humidity. Equipment should also be
+- new workstation PCs. What are the principal new workstation PCs. What are the principal
+- installed so as not to pose a topple or trip hazard.
+- environmental hazards to consider when choosing a environmental hazards to consider when choosing a
+- location? location?
+- 495 Y You receive a support call from a user who is "stuck" ou receive a support call from a user who is "stuck"
+- If it only occurs on certain sites, it is probably part of the site design. A script running on the site can prevent
+- on a web page. She is trying to use the Back button to on a web page. She is trying to use the Back button to
+- use of the Back button. It could also be a sign of adware or spyware though, so it would be safest to scan the
+- return to her search results, but the page just displays return to her search results, but the page just displays
+- computer using up-to-date anti-malware software.
+- again with a pop-up message. Is her computer again with a pop-up message. Is her computer
+- infected with malware? infected with malware?
+- 496 Why might a PC infected with malware display no Why might a PC infected with malware display no
+- If the malware is used with the intent to steal information or record behavior, it will not try to make its
+- obvious symptoms? obvious symptoms?
+- presence obvious. A rootkit may be very hard to detect even when a rigorous investigation is made.
+- 497 While troubleshooting an issue with a graphics card in While troubleshooting an issue with a graphics card in
+- In the Settings app, select Update & Security. Under Windows Update, select "View optional updates." If a
+- W Windows 10, you discover that the driver version is indows 10, you discover that the driver version is
+- graphics driver update is not listed here, check the vendor’s site for driver installation software.
+- not up to date. What first step could you perform to not up to date. What first step could you perform to
+- install the latest driver? install the latest driver?
+- 498 Where would you look for the option to view and Where would you look for the option to view and
+- In the Status menu on the Menu bar, in the top-right of the screen, or in the Network prefpane.
+- configure wireless adapter status in macOS? configure wireless adapter status in macOS?
+- 499 ipconfig /renew
+- A DHCP server has been reconfigured to use a new A DHCP server has been reconfigured to use a new
+- network address scheme following a network network address scheme following a network
+- problem. What command would you use to refresh the problem. What command would you use to refresh the
+- IP configuration on W IP configuration on Windows client workstations? indows client workstations?
+- 500 Early in the day Early in the day, a user called the help desk saying , a user called the help desk saying
+- It is certainly possible. Software updates are often applied when a computer is started in the morning, so that is
+- that his computer is running slowly and freezing up. that his computer is running slowly and freezing up.
+- another potential cause, but you should investigate and log a warning so that all support staff are alerted. It is
+- Shortly after this user called, other help desk Shortly after this user called, other help desk
+- very difficult to categorize malware when the only symptom is performance issues. However, performance
+- technicians who overheard your call also received technicians who overheard your call also received
+- issues could be a result of a badly written Trojan, or a Trojan/backdoor application might be using resources
+- calls from users who report similar symptoms. Is this calls from users who report similar symptoms. Is this
+- maliciously (for DDoS, Bitcoin mining, spam, and so on).
+- likely to be a malware infection? likely to be a malware infection?
+- 501 Y You are documenting workstation backup and ou are documenting workstation backup and
+- It states that you should have three copies of your data across two media types, with one copy held offline and
+- recovery methods and want to include the 3-2-1 recovery methods and want to include the 3-2-1
+- offsite. The production data counts as one copy.backup rule. What is this rule? backup rule. What is this rule?502 Another user calls to say he is trying to sign-on to his Another user calls to say he is trying to sign-on to his
+- It would be highly unlikely for a commercial bank to allow its website certificates to run out of date or
+- online banking service, but the browser reports that online banking service, but the browser reports that
+- otherwise be misconfigured. You should strongly suspect redirection by malware or a phishing/pharming scam.
+- the certificate is invalid. Should the bank update its the certificate is invalid. Should the bank update its
+- certificate, or do you suspect another cause? certificate, or do you suspect another cause?
+- 503 What feature of modern file systems assists recovery What feature of modern file systems assists recovery
+- Journaling means that the file system keeps a log of updates that it can use to recover damaged data. The OS
+- after power outages or OS crash events? after power outages or OS crash events?
+- might also make use of snapshot capability to maintain a file-version history or perform continuous backups.
+- 504 Advanced malware can operate covertly with no Advanced malware can operate covertly with no
+- Leaked data files or personal information such as passwords.
+- easily detectable symptoms that can be obtained by easily detectable symptoms that can be obtained by
+- scanning the device itself. What other type of scanning the device itself. What other type of
+- symptom could provide evidence of compromise in symptom could provide evidence of compromise in
+- this scenario? this scenario?
+- 505 ls -la
+- Which Linux command will display detailed Which Linux command will display detailed
+- information about all files and directories in the information about all files and directories in the
+- current directory current directory, including system files? , including system files?
+- 506
+- Mobile device management (MDM) is being used to mediate network access. The device must be enrolled
+- Angel unboxed a new tablet that his company just Angel unboxed a new tablet that his company just
+- with the MDM software before it can join the network.
+- purchased and tried to connect to the corporate purchased and tried to connect to the corporate
+- network. He knows the SSID of the wireless network network. He knows the SSID of the wireless network
+- and the password used to access the wireless network. and the password used to access the wireless network.
+- He was denied access, and an enrollment warning He was denied access, and an enrollment warning
+- message was displayed that he must contact the IT message was displayed that he must contact the IT
+- Department immediately Department immediately. What happened, and why . What happened, and why
+- did he receive the message? did he receive the message?
+- 507 What command could you use to move a file What command could you use to move a file
+- mv names.doc /mnt/usb
+- names.doc from your current directory to the USB names.doc from your current directory to the USB
+- stick linked to folder /mnt/usb? stick linked to folder /mnt/usb?
+- 508 A security consultant has recommended blocking end- A security consultant has recommended blocking end-
+- No. The chrome://flags page is for advanced configuration settings. General user, security, and privacy settings
+- user access to the chrome://flags browser page. Does user access to the chrome://flags browser page. Does
+- are configured via chrome://settings.
+- this prevent a user from changing any browser this prevent a user from changing any browser
+- settings? settings?
+- 509 Y You are pinging a host at 192.168.0.99 from a host at ou are pinging a host at 192.168.0.99 from a host at
+- No. The hosts are on the same IP network (192.168.0.0/24). This means that 192.168.0.200 does not try to use
+- 192.168.0.200. The response is “Reply from 192.168.0.200. The response is “Reply from
+- a router (the gateway) to send the probes. 192.168.0.200 uses address resolution protocol (ARP) to find the
+- 192.168.0.200: Destination host unreachable.” The 192.168.0.200: Destination host unreachable.” The
+- host with the IP 192.168.0.99. The host unreachable message indicates that there was no response, but the
+- hosts use the subnet mask 255.255.255.0. Does the hosts use the subnet mask 255.255.255.0. Does the
+- problem will be an issue such as the host being disconnected from the network or configured to block
+- ping output indicate a problem with the default ping output indicate a problem with the default
+- discovery rather than a gateway issue.
+- gateway? gateway?
+- 510 An employee has a private license for a graphics An employee has a private license for a graphics
+- No. The license is likely to permit installation to only one computer at a time. It might or might not prohibit
+- editing application that was bundled with the purchase editing application that was bundled with the purchase
+- commercial use, but regardless of the license terms, any installation of software must be managed by the IT
+- of a digital camera. The employee needs to use this of a digital camera. The employee needs to use this
+- department.temporarily for a project and installs it on her temporarily for a project and installs it on her
+- computer at work. Is this a valid use of the license? computer at work. Is this a valid use of the license?511 Y You are supporting a home user with upgrading a ou are supporting a home user with upgrading a
+- No. You must backup user data and settings first. A backup is essential as a security precaution.
+- computer from W computer from Windows 10 to W indows 10 to Windows 1 indows 11. Y 1. You ou
+- have run Microsoft’ have run Microsoft’s PC Health Check tool, and it s PC Health Check tool, and it
+- verifies that the computer meets the hardware verifies that the computer meets the hardware
+- requirements. Should you now proceed with the in- requirements. Should you now proceed with the in-
+- place upgrade? place upgrade?
+- 512 Y You are monitoring system performance and notice ou are monitoring system performance and notice
+- No—it shows the system is using the pagefile intensively and could benefit from more system RAM being
+- installed.
+- that a substantial number of page faults are occurring. that a substantial number of page faults are occurring.
+- Does this indicate that a memory module is faulty? Does this indicate that a memory module is faulty?
+- 513 Y You are attempting to run a command but receive the ou are attempting to run a command but receive the
+- Open a new command prompt window with sufficient privileges. You can right-click the Command Prompt
+- message “The requested operation requires message “The requested operation requires
+- icon and select Run as administrator or press CTRL+SHIFT+ENTER to execute the icon or cmd.exe
+- command.
+- elevation.” What must you do to run the command? elevation.” What must you do to run the command?
+- 514 Y You are supporting a user who has installed a vendor ou are supporting a user who has installed a vendor
+- Open Device Manager from the WinX menu, Instant Search, or the Computer Management console. Expand
+- keyboard driver keyboard driver. The keyboard no longer functions . The keyboard no longer functions
+- Keyboards, then right-click the device and select Properties. On the Driver tab, select Roll Back Driver.
+- correctly correctly. Under W . Under Windows 10, what are the steps to indows 10, what are the steps to
+- revert to the previous driver? revert to the previous driver?
+- 515 How would you update an app purchased from the How would you update an app purchased from the
+- Open the Mac App Store and select the Updates button.
+- Mac App Store? Mac App Store?
+- 516 Y You are assisting a user over the phone and need to ou are assisting a user over the phone and need to
+- Open the Settings app, and then select System. Select the About section, and read the text next to Edition under
+- identify the edition of W identify the edition of Windows that is installed. What indows that is installed. What
+- the Windows specifications heading.
+- step instructions must you give for the user to report step instructions must you give for the user to report
+- this information to you? this information to you?
+- 517 Y You are checking that a remote W ou are checking that a remote Windows workstation indows workstation
+- pathping measures latency over a longer period and so will return a more accurate measurement than the
+- will be able to dial into a web conference with good will be able to dial into a web conference with good
+- individual round trip time (RTT) values returned by ping or tracert.
+- quality audio/video. What is the best tool to use to quality audio/video. What is the best tool to use to
+- measure latency between the workstation’ measure latency between the workstation’s network s network
+- and the web conferencing server? and the web conferencing server?
+- 518 Y You are updating data handling guidance to help ou are updating data handling guidance to help
+- Personal healthcare data is medical records, insurance forms, hospital/laboratory test results, and so on.
+- employees recognize dif employees recognize different types of regulated data. ferent types of regulated data.
+- Healthcare information is also present in de-identified or anonymized data sets.
+- What examples could you add to help identify What examples could you add to help identify
+- healthcare data? healthcare data?
+- 519 A dif A different user wants to configure a multiplayer ferent user wants to configure a multiplayer
+- Probably not. Using a home router’s “demilitarized zone” or DMZ host option forwards traffic for all ports not
+- game server by using the DMZ feature of the router game server by using the DMZ feature of the router..
+- covered by specific port-forwarding rules to the host. It is possible to achieve a secure configuration with this
+- Is this the best configuration option? Is this the best configuration option?
+- option by blocking unauthorized ports and protecting the host using a personal firewall, but using specific port-
+- forwarding/mapping rules is better practice. The most secure solution is to isolate the game server in a
+- screened subnet so that is separated from other LAN hosts, but this typically requires multiple router/firewalls.
+- 520 Y You are monitoring CPU Usage and notice that it ou are monitoring CPU Usage and notice that it
+- Probably not—CPU Usage usually peaks and falls. If it stays over 80–90%, the system could require a faster
+- often jumps to 100% and then falls back. Does this often jumps to 100% and then falls back. Does this
+- CPU, or if it spikes continually, there could be a faulty application.indicate a problem? indicate a problem?521 Read-only.
+- A file is secured with the numeric permissions 0774. A file is secured with the numeric permissions 0774.
+- What rights does another user account have over the What rights does another user account have over the
+- file? file?
+- 522 A user calls saying that their screen occasionally goes A user calls saying that their screen occasionally goes
+- Record ST Record STOP Error Information OP Error Information: Ask the user to take note of the STOP error code and any error messages that
+- blue, and the system shuts down. What should you blue, and the system shuts down. What should you
+- appear on the blue screen when the system crashes. The STOP error code, also known as the "Blue Screen of
+- advise the user to do? advise the user to do?
+- Death" (BSOD) code, can provide valuable clues about the cause of the issue.
+- 523 Y You are joining a new startup business that will ou are joining a new startup business that will
+- Remote monitoring and management (RMM) tools are principally designed for use by managed service
+- perform outsourced IT management for client firms. perform outsourced IT management for client firms.
+- providers (MSPs). As well as remote access and monitoring, this class of tools supports management of
+- Y You have been asked to identify an appropriate ou have been asked to identify an appropriate
+- multiple client accounts and billing/reporting.
+- software solution for of software solution for off-site support and to ensure f-site support and to ensure
+- that service level agreement (SLA) metrics for that service level agreement (SLA) metrics for
+- downtime incidents are adhered to. What general downtime incidents are adhered to. What general
+- class of remote access technology will be most class of remote access technology will be most
+- suitable? suitable?
+- 524 What command would allow you to delete the What command would allow you to delete the
+- rm -r /home/jaime/junk
+- contents of the folder /home/jaime/junk and all its contents of the folder /home/jaime/junk and all its
+- subdirectories? subdirectories?
+- 525 If you suspect improper handling during installation If you suspect improper handling during installation
+- Run a Memory Diagnostic. Because this tests each RAM cell, it should uncover any fault.
+- has caused damage to a RAM module, how could you has caused damage to a RAM module, how could you
+- test that suspicion? test that suspicion?
+- 526 Y You are troubleshooting a print problem, which turned ou are troubleshooting a print problem, which turned
+- Run through the print process step-by-step to show that it works. It is very important to get a customer's
+- out to be caused by user error out to be caused by user error. The user is not . The user is not
+- acceptance that a problem is closed.
+- confident that the problem is solved and wants more confident that the problem is solved and wants more
+- reassurance. Y reassurance. You have already explained what the ou have already explained what the
+- user was doing wrong in some detail. What should user was doing wrong in some detail. What should
+- you do? you do?
+- 527 Y You have a computer with two SA ou have a computer with two SAT TA disks. Y A disks. You want ou want
+- Select the Physical Disk object, select the counter, and then select the 0 C: instance. Counters that are useful
+- to evaluate the performance of the primary disk. How to evaluate the performance of the primary disk. How
+- for evaluating performance include % Disk Time and Average Disk Queue Length.
+- would you select this in Performance Monitor would you select this in Performance Monitor, and , and
+- what might be appropriate counters to use? what might be appropriate counters to use?
+- 528 Y You are writing work instructions for third-party app ou are writing work instructions for third-party app
+- Storage requirements. Each app takes up a certain amount of space when installed to the fixed disk. Also, you
+- deployments using the CompTIA A+ objectives to deployments using the CompTIA A+ objectives to
+- must plan for user-generated file storage, temp files, log files, and other data generated through use of the app.guide you. In the section on system requirements for guide you. In the section on system requirements for
+- applications, you have covered the following topics: applications, you have covered the following topics:
+- 32-bit- vs. 64-bit-dependent Operating 32-bit- vs. 64-bit-dependent Operating
+- System requirements System requirements
+- Dedicated graphics card vs. integrated Dedicated graphics card vs. integrated
+- (VRAM requirements) (VRAM requirements)
+- RAM requirements RAM requirements
+- CPU requirements CPU requirements
+- External hardware tokens External hardware tokens
+- What additional topic should you include, if any? What additional topic should you include, if any?529 sudo
+- Which Linux command allows a user to run a specific Which Linux command allows a user to run a specific
+- command or program with superuser/root privileges? command or program with superuser/root privileges?
+- 530 In terms of system hardware, what is the main In terms of system hardware, what is the main
+- Support for more than 4 GB RAM.
+- advantage of a 64-bit version of W advantage of a 64-bit version of Windows? indows?
+- 531 Y You are assisting with the development of end-user ou are assisting with the development of end-user
+- Tailgating means following someone else through a door or gateway to enter premises without authorization.
+- security awareness documentation. What is the security awareness documentation. What is the
+- Shoulder surfing means covertly observing someone type a PIN or password or other confidential data.
+- dif difference between tailgating and shoulder surfing? ference between tailgating and shoulder surfing?
+- 532 A security consultant has recommended more A security consultant has recommended more
+- That the antivirus is enabled, is up to date with scan engine components and definitions, and has only
+- frequent monitoring of the antivirus software on frequent monitoring of the antivirus software on
+- authorized exclusions configured.
+- workstations. What sort of checks should this workstations. What sort of checks should this
+- monitoring perform? monitoring perform?
+- 533 What primary indicator must be verified in the What primary indicator must be verified in the
+- That the browser address bar displays the lock icon to indicate that the site uses a trusted certificate. This
+- browser before using a web form? browser before using a web form?
+- validates the site identity and protects information submitted via the form from interception.
+- 534 What are the prerequisites for joining a computer to a What are the prerequisites for joining a computer to a
+- The computer must be running a supported edition of Windows (Pro, Enterprise, or Education). The PC must
+- domain? domain?
+- be configured with an appropriate IP address and have access to the domain DNS servers. An account with
+- domain administrative credentials must be used to authorize the join operation.
+- 535 What are the requirements for configuring fingerprint What are the requirements for configuring fingerprint
+- The computer must have a fingerprint reader and a trusted platform module (TPM). Windows Hello must first
+- authentication via W authentication via Windows Hello? indows Hello?
+- be configured with a personal identification number (PIN) as a backup method.
+- 536 Y Your company is replacing its W our company is replacing its Windows desktops with indows desktops with
+- The Finder.
+- Mac workstations, and you need to assist users with Mac workstations, and you need to assist users with
+- the transition. What is the equivalent of File Explorer the transition. What is the equivalent of File Explorer
+- in macOS? in macOS?
+- 537 Y You are troubleshooting an issue with a wireless ou are troubleshooting an issue with a wireless
+- The icon indicates that the device has been disabled. It could be that there was a fault, or there may be a
+- adapter adapter. When you open Device Manager . When you open Device Manager, you find , you find
+- network configuration or security reason for disabling the adapter. In this sort of situation, use incident logs
+- the device's icon is shown with a down arrow the device's icon is shown with a down arrow
+- and device documentation to establish the reason behind the configuration change.
+- superimposed. What does this mean, and why might superimposed. What does this mean, and why might
+- this configuration have been imposed? this configuration have been imposed?
+- 538 A customer asks whether an iOS app that your A customer asks whether an iOS app that your
+- The issue here is compatibility between different operating systems. Even though both are produced by Apple,
+- company developed will also work on her Apple company developed will also work on her Apple
+- iOS and macOS use different environments, so the iOS app cannot necessarily be installed directly. Your
+- macOS computer macOS computer. What issue does this raise, and . What issue does this raise, and
+- company might make a macOS version. However (do not worry if you did not include this in your answer),
+- what answer might you give? what answer might you give?
+- with the latest versions of macOS, there is support for native iOS apps, so this might be something you can
+- offer.
+- 539 For which backup/restore issue is a cloud-based For which backup/restore issue is a cloud-based
+- The issue of provisioning an off-site copy of a backup. Cloud storage can also provide extra capacity.
+- backup service an ef backup service an effective solution? fective solution?
+- 540 What care should you take when lifting a heavy What care should you take when lifting a heavy
+- The main concern is damaging your back. Lift slowly and use your legs for power, not your back muscles.
+- object? object?541 Y You are assisting another user who is trying to ou are assisting another user who is trying to
+- The Network & Internet settings Edit IP settings dialog can be used. 255.255.255.0 is the subnet mask in
+- configure a static IP on a W configure a static IP on a Windows workstation. The indows workstation. The
+- dotted decimal format. The dialog just requires the number of mask bits. Each “255” in a dotted decimal mask
+- user says that 255.255.255.0 is not being accepted in user says that 255.255.255.0 is not being accepted in
+- represents 8 bits, so the user should enter 24.
+- the prefix length box. Should the user open a dif the prefix length box. Should the user open a different ferent
+- dialog to complete the configuration or enter a dialog to complete the configuration or enter a
+- dif different value? ferent value?
+- 542 Apart from W Apart from Windows and macOS, what operating indows and macOS, what operating
+- The other main choice is one of the distributions of Linux. A company might also use some sort of UNIX.
+- system options are there for client PCs installed to a system options are there for client PCs installed to a
+- Finally, Chrome OS is installed on Chromebox PCs. These are often used by educational institutions and
+- local network? local network?
+- businesses that rely primarily on web applications rather than locally installed desktop software.
+- 543 A company must deploy custom browser software to A company must deploy custom browser software to
+- The package can be signed using a developer certificate issued by a trusted certificate authority. Alternatively, a
+- employees’ workstations. What method can be used employees’ workstations. What method can be used
+- cryptographic hash of the installer can be made, and this value can be given to each support technician. When
+- to validate the download and installation of this to validate the download and installation of this
+- installing the software, the technician can make his or her own hash of the downloaded installer and compare it
+- custom software? custom software?
+- to the reference hash.
+- 544 Y You are repurposing an old computer ou are repurposing an old computer. Y . You perform a ou perform a
+- The PC is set to boot using the legacy BIOS method. This is not compatible with GPT-style partitioning. If
+- clean OS install using optical media. During setup, clean OS install using optical media. During setup,
+- supported by system firmware setup, switch to UEFI boot. If the firmware is BIOS only, change the boot
+- you configured the partition manager to apply GPT you configured the partition manager to apply GPT
+- method back to optical disc, run setup again, and choose MBR partitioning.
+- style. After the file copy stage, the new installation style. After the file copy stage, the new installation
+- fails to boot. What is the likely cause? fails to boot. What is the likely cause?
+- 545 While you are assigning privileges to the accounting While you are assigning privileges to the accounting
+- The principle of least privilege.
+- department in your or department in your organization, Cindy ganization, Cindy, a human , a human
+- resource administrative assistant, insists that she resource administrative assistant, insists that she
+- needs access to the employee records database so that needs access to the employee records database so that
+- she can fulfill change of address requests from she can fulfill change of address requests from
+- employees. After checking with her manager and employees. After checking with her manager and
+- referring to the or referring to the organization's access control security ganization's access control security
+- policy policy, you discover that Cindy's job role does not fall , you discover that Cindy's job role does not fall
+- into the authorized category for access to that into the authorized category for access to that
+- database. What security concept are you practicing in database. What security concept are you practicing in
+- this scenario? this scenario?
+- 546 Y You take a support call where the user doesn't ou take a support call where the user doesn't
+- The program has added a registry entry to run at startup. You could check this (and optionally disable the
+- understand why a program runs at startup when the understand why a program runs at startup when the
+- program) by using Task Manager.
+- Startup folder is empty Startup folder is empty. What is the likely cause, and . What is the likely cause, and
+- how could you verify this? how could you verify this?
+- 547 Which W Which Windows command is probably best suited for indows command is probably best suited for
+- The robocopy command offers more options than those offered by the xcopy command, so it will usually be
+- scripting file backup operations? scripting file backup operations?
+- the better choice. The copy command is quite basic and probably not suitable.
+- 548 What is the significance of a $ symbol at the end of a What is the significance of a $ symbol at the end of a
+- The share is hidden from the file browser. It can be accessed by typing a UNC. The default administrative
+- share name? share name?
+- shares are all configured as hidden.
+- 549 In W In Windows, what is the dif indows, what is the difference between the boot ference between the boot
+- The boot volume contains the boot files; the system volume contains the system root (OS files). The boot
+- volume and the system volume? volume and the system volume?
+- volume is not normally assigned a drive letter. The system volume is normally allocated the drive letter C:.550 Y You receive a call from a user trying to save a file and ou receive a call from a user trying to save a file and
+- The user does not have "Write" or "Modify" permission to that folder. If there is no configuration issue, you
+- receiving an "Access Denied" error receiving an "Access Denied" error. Assuming a . Assuming a
+- should advise the user about the storage locations permitted for user-generated files. If there were a
+- normal configuration with no underlying file normal configuration with no underlying file
+- configuration issue, you would investigate why the user had not been granted the correct permissions for the
+- target folder.
+- corruption, encryption, or malware issue, what is the corruption, encryption, or malware issue, what is the
+- cause and what do you suggest? cause and what do you suggest?
+- 551 Assuming default Explorer view settings are Assuming default Explorer view settings are
+- The user must first show file extensions, using theV View iewtab in theFile Explorer Options File Explorer Optionsapplet (you might also
+- configured, what steps should the user take to get configured, what steps should the user take to get
+- note that this can be done via a check box on theV View iewmenu ribbon of File Explorer).
+- better context of files? better context of files?
+- 552 Y You are assisting a user with configuring a static IP ou are assisting a user with configuring a static IP
+- There is a configuration problem. 192.168.1.0 is not a host address. With the subnet mask 255.255.255.0, it
+- address. The user has entered the following address. The user has entered the following
+- identifies the network range as 192.168.1.0/24. The gateway is usually configured as the first available host
+- configuration values and now cannot access the configuration values and now cannot access the
+- address in this range: 192.168.1.1. The DNS server should also be set to 192.168.1.1.The client IP should be
+- Internet. Is there a configuration issue or a dif Internet. Is there a configuration issue or a different ferent
+- set to any other available value, such as 192.168.1.100.
+- problem? problem?
+- IP: 192.168.1.1 IP: 192.168.1.1
+- Mask: 255.255.255.0 Mask: 255.255.255.0
+- Gateway: 192.168.1.0 Gateway: 192.168.1.0
+- DNS: 192.168.1.0 DNS: 192.168.1.0
+- 553 Y You are assisting with the design of a new campus ou are assisting with the design of a new campus
+- These bollards are designed to prevent vehicles from crashing into the building lobby as part of a terrorist or
+- building for a multinational firm. On the building for a multinational firm. On the
+- criminal attack. The security consultant should only recommend the control if the risk of this type of attack
+- recommendation of a security consultant, the architect recommendation of a security consultant, the architect
+- justifies the expense.
+- has added closely spaced sculpted stone posts with has added closely spaced sculpted stone posts with
+- reinforced steel cores that surround the area between reinforced steel cores that surround the area between
+- the building entrance and the street. At the most the building entrance and the street. At the most
+- recent client meeting, the building owner has queried recent client meeting, the building owner has queried
+- the cost of these. Can you explain their purpose? the cost of these. Can you explain their purpose?
+- 554 When you set NTFS permissions on a folder When you set NTFS permissions on a folder, what , what
+- They inherit the parent folder's permissions.
+- happens to the files and subfolders by default? happens to the files and subfolders by default?
+- 555 What are the principal characteristics of a sur What are the principal characteristics of a surge ge
+- This is a circuit designed to protect connected devices from the effect of sudden increases or spikes in the
+- protector? protector?
+- supply voltage and/or current. Surge protectors are rated by clamping voltage (low values are better), joules
+- rating (higher values are better), and amperage (the maximum current that can be carried).
+- 556 Y You discover that a threat actor has been able to ou discover that a threat actor has been able to
+- This is an evil twin attack where the threat actor uses social engineering techniques to persuade users to
+- harvest credentials from some visitors connecting to harvest credentials from some visitors connecting to
+- connect to an access point that spoofs a legitimate guest network service.the company’ the company’s wireless network from the lobby s wireless network from the lobby. The . The
+- visitors had connected to a network named “Internet” visitors had connected to a network named “Internet”
+- and were presented with a web page requesting an and were presented with a web page requesting an
+- email address and password to enable guest access. email address and password to enable guest access.
+- The company’ The company’s access point had been disconnected s access point had been disconnected
+- from the cabled network. What type of attack has from the cabled network. What type of attack has
+- been perpetrated? been perpetrated?557 A computer cannot connect to the network. The A computer cannot connect to the network. The
+- This is an irregular state for a Windows PC. If a DHCP server cannot be contacted, the machine should default
+- machine is configured to obtain a TCP/IP machine is configured to obtain a TCP/IP
+- to using an APIPA address (169.254.x.y). As it has not done this, something is wrong with the networking
+- configuration automatically configuration automatically. Y . You use ipconfig to ou use ipconfig to
+- software installed on the machine. The best option is probably to perform a network reset via the Settings >
+- determine the IP address and it returns 0.0.0.0. What determine the IP address and it returns 0.0.0.0. What
+- Network & Internet > Status page.
+- does this tell you? does this tell you?
+- 558 Y You are advising a customer with an older ou are advising a customer with an older-model -model
+- This is an issue with update limitations. Android is quite a fragmented market, and customers must depend on
+- Android smartphone. The customer wants to update to Android smartphone. The customer wants to update to
+- the handset vendor to implement OS updates for a particular model. The customer can only check the handset
+- the latest version of Android, but using the update the latest version of Android, but using the update
+- vendor's website or helpline to find out if a version update will ever be supported for that model.
+- option results in a "No updates available" message. option results in a "No updates available" message.
+- What type of issue is this, and what advice can you What type of issue is this, and what advice can you
+- provide? provide?
+- 559 A user reports that a new device is not sustaining a A user reports that a new device is not sustaining a
+- This is most characteristic of cryptomining malware as that explicitly hijacks the computer resources of a
+- battery char battery charge for more than a couple of hours. What ge for more than a couple of hours. What
+- device to perform the intensive calculations required to mineblockchain currency.
+- type of malware could this be a symptom of? type of malware could this be a symptom of?
+- 560 Y You are writing a proposal to improve a company’ ou are writing a proposal to improve a company’s s
+- This list contains no means of recording the severity of the ticket. This field is important for prioritizing issues.
+- current support procedures with a ticketing system. current support procedures with a ticketing system.
+- Y You have identified the following requirements for ou have identified the following requirements for
+- information that each ticket should capture. Following information that each ticket should capture. Following
+- the CompTIA A+ objectives, what additional field or the CompTIA A+ objectives, what additional field or
+- data point should be captured? data point should be captured?
+- User information User information
+- Device information Device information
+- Problem description/Progress notes/ Problem description/Progress notes/
+- Problem resolution Problem resolution
+- Categories Categories
+- Escalation levels Escalation levels
+- 561 If a single physical disk is divided into three partitions If a single physical disk is divided into three partitions
+- Three—each partition can use a different file system.
+- in a non-W in a non-Windows environment, how many dif indows environment, how many different ferent
+- file systems can be supported? file systems can be supported?
+- 562 Time Machine.
+- What is the name of Apple's backup software for What is the name of Apple's backup software for
+- macOS? macOS?
+- 563 Y You are writing guidance for departmental managers ou are writing guidance for departmental managers
+- To consider licensing requirements, such as number of users or devices. There also needs to be a system for
+- to request new software installs. Y to request new software installs. You want each ou want each
+- monitoring license compliance and ensuring there are no unauthorized installs.
+- manager to consider impacts to the business, manager to consider impacts to the business,
+- operation, network, and devices as part of their operation, network, and devices as part of their
+- request. In terms of impacts to business, you have request. In terms of impacts to business, you have
+- written guidance to consider support and training written guidance to consider support and training
+- requirements. What other topic should you include? requirements. What other topic should you include?
+- 564 Why might you run the shutdown command with the Why might you run the shutdown command with the
+- To specify a delay between running the command and shutdown starting. You might do this to give users a
+- /t switch? /t switch?
+- chance to save work or to ensure that a computer is restarted overnight.565 True.
+- T True or false? If you want the same policy to apply to rue or false? If you want the same policy to apply to
+- a number of computers within a domain, you could a number of computers within a domain, you could
+- add the computers to the same Or add the computers to the same Organizational Unit ganizational Unit
+- (OU) and apply the policy to the OU. (OU) and apply the policy to the OU.
+- 566 T True or false? Y rue or false? You can configure a web server running ou can configure a web server running
+- True. This can be configured using public key authentication with the Secure Shell (SSH) protocol. The server
+- on Linux to accept remote terminal connections from on Linux to accept remote terminal connections from
+- can be installed with the public keys of authorized users.
+- clients without using passwords. clients without using passwords.
+- 567 T True or false? WP rue or false? WPA3 personal mode is configured by A3 personal mode is configured by
+- True. WPA3-Personal uses group authentication via a shared passphrase. The simultaneous authentication of
+- selecting a passphrase shared between all users who selecting a passphrase shared between all users who
+- equals (SAE) mechanism by which this passphrase is used to generate network encryption keys is improved
+- are permitted to connect to the network. are permitted to connect to the network.
+- compared to the older WPA2 protocol, however.
+- 568 A program is continually using 99–100% of processor A program is continually using 99–100% of processor
+- Try to end the application or the process using Task Manager, and then contact the application vendor to find
+- time. What should you do? time. What should you do?
+- out why the problem is occurring.
+- 569 Y You are developing a script to ensure that the M: drive ou are developing a script to ensure that the M: drive
+- Use a conditional block (If statement) to check for an existing mapping, and remove it before applying the
+- is mapped consistently to the same network folder on is mapped consistently to the same network folder on
+- correct mapping.
+- all client workstations. What type of construct might all client workstations. What type of construct might
+- you use to ensure the script runs without errors? you use to ensure the script runs without errors?
+- 570 Y You are updating an internal support knowledge base ou are updating an internal support knowledge base
+- Use force stop if available and/or reboot the device.
+- with advice for troubleshooting mobile devices. What with advice for troubleshooting mobile devices. What
+- is the first step to take if a user reports that an app will is the first step to take if a user reports that an app will
+- not close? not close?
+- 571 Y You are supporting a user who has just replaced a ou are supporting a user who has just replaced a
+- Use Network & Internet to check the network profile type. When the network changed, the user probably
+- wireless router wireless router. The user has joined the new wireless . The user has joined the new wireless
+- selected the wrong option at the prompt to allow the PC to be discoverable, and the profile is probably set to
+- network successfully but can no longer find other network successfully but can no longer find other
+- Public. Change the type Private.
+- computers on the network. What should you check computers on the network. What should you check
+- first? first?
+- 572 A W A Windows user is trying to join a video conference indows user is trying to join a video conference
+- Use the Sound settings app or Control Panel applet to check the volume setting and that the headset is
+- and cannot hear any sound from her headset. Which and cannot hear any sound from her headset. Which
+- configured as the input and output device. If the headset is not listed, check the USB or Bluetooth connection.
+- tool can you suggest using to try to remedy the fault? tool can you suggest using to try to remedy the fault?
+- 573 Which three principal user security groups are created Which three principal user security groups are created
+- Users, Administrators, and Guests. You might also include Power Users, though use of this group is
+- when W when Windows is installed? indows is installed?
+- deprecated. Going beyond the account types listed in the exam objectives, you might include groups such as
+- Remote Desktop Users, Remote Management Users, or Backup Operators. There are also system groups, such
+- as Everyone, but users cannot be assigned manually to these.
+- 574 Y Your or our organization is donating workstations to a local ganization is donating workstations to a local
+- Using standard formatting tools will leave data remnants that could be recovered in some circumstances. This
+- college. The workstations have a mix of HDD and college. The workstations have a mix of HDD and
+- might not be considered high risk, but it would be safer to use a vendor low-level format tool with support for
+- SSD fixed disks. There is a proposal to use a SSD fixed disks. There is a proposal to use a
+- Secure Erase or Crypto Erase.W Windows boot disk to delete the partition information indows boot disk to delete the partition information
+- for each disk. What factors must be considered before for each disk. What factors must be considered before
+- proceeding with this method? proceeding with this method?575 Y You have downloaded an installer for a third-party ou have downloaded an installer for a third-party
+- Verify the integrity of the download using a hash value or the vendor’s digital certificate.
+- app from the vendor app from the vendor’ ’s website. What should you do s website. What should you do
+- before proceeding with setup? before proceeding with setup?
+- 576 A user calls to say that he clicked Y A user calls to say that he clicked Yes to a prompt to es to a prompt to
+- Via the App permissions section under Privacy settings. You might also note that most browser software can be
+- allow the browser to access the computer allow the browser to access the computer’ ’s location s location
+- configured to only allow location information on a per-site basis.
+- service while using a particular site and is now service while using a particular site and is now
+- worried about personal information being tracked by worried about personal information being tracked by
+- other sites. How can the user adjust the app other sites. How can the user adjust the app
+- permission in W permission in Windows? indows?
+- 577 Y You are updating a procedure that lists security ou are updating a procedure that lists security
+- Virtual Network Computing (VNC) uses TCP port 5900 by default.
+- considerations for remote access technologies. One of considerations for remote access technologies. One of
+- the precautions is to check that remote access ports the precautions is to check that remote access ports
+- have not been opened on the firewall without have not been opened on the firewall without
+- authorization. Which default port for VNC needs to authorization. Which default port for VNC needs to
+- be monitored? be monitored?
+- 578 A user works on a document and leaves the file open A user works on a document and leaves the file open
+- When a computer goes into a power-saving mode, it will either maintain a small amount of power to the
+- for lunch. for lunch. Upon the user's return, the computer is in Upon the user's return, the computer is in
+- memory modules or write the contents of memory to a hibernation file on disk. Consequently, the user should
+- power power-saving mode. How do you reassure the user -saving mode. How do you reassure the user
+- be able to start the laptop again, and the desktop will resume with the open file still there. You should advise
+- and advise on the status of the file? and advise on the status of the file?
+- the customer to save changes to files regularly, however.
+- 579 Y You are developing a script to scan server hosts to ou are developing a script to scan server hosts to
+- While the risk is low, scanning activity could cause problems with the target and possibly even crash it. Test
+- discover which ports are open and to identify which discover which ports are open and to identify which
+- the script in a sandbox environment before deploying it. Security software might block the operation of this
+- server software is operating the port. What server software is operating the port. What
+- script, and there is some risk from the script or its output being misused. Make sure that use of the script and
+- considerations should you make before deploying this considerations should you make before deploying this
+- its output are subject to access controls and that any system reconfiguration is properly change-managed.
+- script? script?
+- 580 What does chain-of-custody documentation prove? What does chain-of-custody documentation prove? Who has had access to evidence collected from a crime scene and where and how it has been stored.
+- 581 Y You are advising a business that needs to provision ou are advising a business that needs to provision
+- Windows Pro for Workstations supports 4-way multiprocessing (four CPUs installed to separate sockets) and
+- video-editing workstations with 4-way video-editing workstations with 4-way
+- up to 6 TB RAM. Windows Enterprise has the same hardware limits but is not available via a retail channel.
+- multiprocessing. Which retail W multiprocessing. Which retail Windows edition will indows edition will
+- allow them to make full use of this hardware? allow them to make full use of this hardware?
+- 582 Y You are advising a customer whose business is ou are advising a customer whose business is
+- Without a domain, accounts must be configured on each computer individually. With more than 30 computers
+- expanding. The business owner needs to provision an expanding. The business owner needs to provision an
+- to manage at two locations, this would be a substantial task, so switching to a domain network, where the
+- additional 30 desktop computers, some of which will additional 30 desktop computers, some of which will
+- accounts can be configured on the server, is likely to save costs in the long term. You can suggest either
+- be installed at a second office location. The business be installed at a second office location. The business
+- Windows 10 Pro or Windows 10 Enterprise for use on a domain.is currently run with a workgroup network of five is currently run with a workgroup network of five
+- W Windows 10 indows 10Home Premium desktop computers and Home Premium desktop computers and
+- one file server one file server. Why might you suggest licenses for an . Why might you suggest licenses for an
+- edition of W edition of Windows 10 that supports corporate needs indows 10 that supports corporate needs
+- for the new computers and has upgrades for the old for the new computers and has upgrades for the old
+- computers? Which specific edition(s) could you computers? Which specific edition(s) could you
+- recommend? recommend?583 If a user obtains Read permissions from a share and If a user obtains Read permissions from a share and
+- Yes (but he or she cannot create files).
+- Deny W Deny Write from NTFS permissions, can the user rite from NTFS permissions, can the user
+- view files in the folder over the network? view files in the folder over the network?
+- 584 Is the command format d: /fs:exfat /q valid? If so, Is the command format d: /fs:exfat /q valid? If so,
+- Yes, it is valid. It formats drive D with the exFAT file system by using a quick format (does not scan for bad
+- what is its ef what is its effect, and what precaution might you need fect, and what precaution might you need
+- sectors). This will delete the file table on the drive so existing data files can be overwritten—the formatted
+- to take before running it? to take before running it?
+- drive will appear to be empty in Explorer. If there are existing files that need to be preserved, they should be
+- backed up before running the format command.
+- 585 Y You are assisting a home user who wants her spouse ou are assisting a home user who wants her spouse
+- Yes, while there are varying methods in accomplishing this task, this can be done via the Accounts settings
+- to be able to sign in to a new W to be able to sign in to a new Windows laptop using a indows laptop using a
+- app. You can also use the legacy control panel on both Windows 10 and 11.
+- Microsoft account. Is this possible, and if so, which Microsoft account. Is this possible, and if so, which
+- management interface is used? management interface is used?
+- 586 The marketing department has refitted a kitchen area The marketing department has refitted a kitchen area
+- Yes. Uncontrolled deployment of network-enabled devices is referred as shadow IT. The devices could
+- and provisioned several smart appliances for and provisioned several smart appliances for
+- increase the network attack surface and expose it to vulnerabilities. The devices must be deployed in a secure
+- employee use. Should the IT department have been employee use. Should the IT department have been
+- configuration and monitored for security advisories and updates.
+- consulted first? consulted first?
+- 587 Y You are assisting a user with setting up Internet access ou are assisting a user with setting up Internet access
+- Yes. You need to configure a port-mapping rule so that the router takes requests arriving at its WAN IP for
+- to a web server on a home network. Y to a web server on a home network. You want to ou want to
+- TCP/443 and forwards them to the server’s IP address on TCP/8080. Using a known IP address for the server
+- configure a DHCP reservation to set the web server configure a DHCP reservation to set the web server’ ’s s
+- by configuring a Dynamic Host Configuration Protocol (DHCP) reservation simplifies this configuration. The
+- IP address, allow external clients to connect to the IP address, allow external clients to connect to the
+- home router’s DHCP server must be configured with the media access control (MAC) address or hardware
+- secure port TCP/443, but configure the web server to secure port TCP/443, but configure the web server to
+- identifier of the web server.
+- listen on port TCP/8080. Is this configuration possible listen on port TCP/8080. Is this configuration possible
+- on a typical home router? on a typical home router?
+- 588 What tool would you use to add a user to a local What tool would you use to add a user to a local
+- You can change the account type between Standard and Administrator via Control Panel, but the Local Users
+- security group? security group?
+- and Groups management console is the tool to use for a custom security group. You could also use the net
+- localgroup command.
+- 589 What are the two main types of network topology What are the two main types of network topology
+- You can create diagrams to show the physical topology or the logical topology. The physical topology shows
+- diagrams? diagrams?
+- how nodes are connected by cabling. The logical topology shows IP addresses and subnets/VLANs. There are
+- lots of other types of network topology diagrams, of course, but physical and logical are the two basic
+- distinctions you can make. It is best practice not to try to create a diagram that shows both as this is likely to
+- reduce clarity.
+- 590 What frequent tests should you perform to ensure the What frequent tests should you perform to ensure the
+- You can perform a test restore and validate the files. You can run an integrity check on the media by using, for
+- integrity of backup settings and media? integrity of backup settings and media?
+- example, chkdsk on a hard drive used for backup. Backup software can often be configured to perform an
+- integrity check on each file during a backup operation. You can also perform an audit of files included in a
+- backup against a list of source files to ensure that everything has been included.
+- 591 Y You want to execute a block of statements based on ou want to execute a block of statements based on
+- You can use any type of loop to iterate through the items in a list or collection, but a For loop is probably the
+- simplest.
+- the contents of an inventory list. What type of code the contents of an inventory list. What type of code
+- construct is best suited to this task? construct is best suited to this task?
+- 592 Why might you need to use a virus encyclopedia? Why might you need to use a virus encyclopedia? You might need to verify symptoms of infection. Also, if a virus cannot be removed automatically, you might
+- want to find a manual removal method. You might also want to identify the consequences of
+- infection—whether the virus might have stolen passwords, and so on.593 Y You need to set up a VPN connection on a user ou need to set up a VPN connection on a user’ ’s s
+- You must also input the fully qualified domain name (FQDN) or IP address of the remote access VPN server.
+- W Windows laptop. The VPN type is IKEv2. What other indows laptop. The VPN type is IKEv2. What other
+- information, if any information, if any, do you need to configure the , do you need to configure the
+- connection? connection?
+- 594 The contract ended recently for several workers who The contract ended recently for several workers who
+- You need to create an incident report, remove or disable the login accounts, isolate the infected server and
+- were hired for a specific project. The IT department were hired for a specific project. The IT department
+- possibly any user computers that communicate with the server, and remove the rootkit from the server. In terms
+- has not yet removed those employees' login accounts. has not yet removed those employees' login accounts.
+- of wider security policies, investigate why the temporary accounts were not disabled on completion of the
+- It appears that one of the accounts has been used to It appears that one of the accounts has been used to
+- project.
+- access the network, and a rootkit was installed on a access the network, and a rootkit was installed on a
+- server server. Y . You immediately contact the agency the ou immediately contact the agency the
+- employee was hired through and learn that the employee was hired through and learn that the
+- employee is out of the country employee is out of the country, so it is unlikely that , so it is unlikely that
+- this person caused the problem. What actions do you this person caused the problem. What actions do you
+- need to take? need to take?
+- 595 Identify how to open the tool shown in this exhibit. Identify how to open the tool shown in this exhibit.
+- Run the System Information tool using the msinfo32 command (Msinfo32.exe). This tool produces a
+- What single word command can you use to open the What single word command can you use to open the
+- comprehensive hardware and software inventory report. This configuration and version information will be
+- tool shown in the exhibit? How can this tool assist tool shown in the exhibit? How can this tool assist
+- useful for many troubleshooting tasks.
+- with troubleshooting? with troubleshooting?
+- (Screenshot courtesy of Microsoft.) (Screenshot courtesy of Microsoft.)
+- 596 Y You are assisting a user whose application is in the ou are assisting a user whose application is in the
+- The user will be concerned about losing any unsaved work. Ask the user to describe what he or she was doing
+- state shown in the exhibit. How would you state shown in the exhibit. How would you
+- at the time of the crash to try to diagnose what might have caused it. Give the program a few minutes to finish
+- troubleshoot this problem? troubleshoot this problem?
+- processing—check Task Manager for ongoing disk activity. If the application does not start responding, check
+- autosave and temp folders for a recent copy of the file data. Use Task Manager to end the process. Restart the
+- application, and try to open any file data you might have recovered. Check the log files and online resources to
+- try to diagnose the cause of the crash. If the problem persists, consider solutions such as disabling add-ons or
+- reinstalling. Demonstrate to the user how to set up autosave (if it is not already configured) and how to save
+- regularly.
+- (Screenshot courtesy of Microsoft). (Screenshot courtesy of Microsoft).597 Which command produces the output shown in this Which command produces the output shown in this
+- This is output from netstat. The -n switch has been used to show ports in numeric format and the -o switch to
+- screenshot? screenshot?
+- show the PID of the process that opened the port.
+- Exhibit (Screenshot courtesy of Microsoft.) Exhibit (Screenshot courtesy of Microsoft.)

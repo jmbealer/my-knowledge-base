@@ -1,0 +1,92 @@
+- Description Keys
+- General
+    - Start a new tmux session tmux
+    - Detach from current session tmux detach
+    - Attach to last used session tmux attach
+    - Show every session, window, pane, etc. tmux info
+    - Send the prefix key ctrl + b  ctrl + b
+    - Describe key binding ctrl + b  /
+    - Prompt for a command ctrl + b  :
+    - List key bindings ctrl + b  ?
+    - Show a clock ctrl + b  t
+    - Show messages ctrl + b  ~
+    - Delete the most recent paste buffer ctrl + b  -
+    - Choose a paste buffer from a list ctrl + b  =
+    - List all paste buffers ctrl + b  #
+    - Enter copy mode ctrl + b  [
+    - Enter copy mode and scroll up ctrl + b  pageup
+    - Paste the most recent paste buffer ctrl + b  ]
+- Windows
+    - Split window vertically ctrl + b  "
+    - Split window horizontally ctrl + b  %
+    - Kill current window ctrl + b  &
+    - Prompt for window index to select ctrl + b  '
+    - Rename current window ctrl + b  ,
+    - Move the current window ctrl + b  .
+    - Select window 0 ctrl + b  0
+    - Select window 1 ctrl + b  1
+    - Select window 2 ctrl + b  2
+    - Select window 3 ctrl + b  3
+    - Select window 4 ctrl + b  4
+    - Select window 5 ctrl + b  5
+    - Select window 6 ctrl + b  6
+    - Select window 7 ctrl + b  7
+    - Select window 8 ctrl + b  8
+    - Select window 9 ctrl + b  9
+    - Display window information ctrl + b  i
+    - Create a new window ctrl + b  c
+    - Select the next window ctrl + b  n
+    - Move the visible part of the window up ctrl + b  shift + up
+    - Move the visible part of the window down ctrl + b  shift + down
+    - Move the visible part of the window left ctrl + b  shift + left
+    - Move the visible part of the window right ctrl + b  shift + right
+    - Select the next window with an alert ctrl + b  alt + n
+    - Select the previous window with an alert ctrl + b  alt + p
+    - Choose a window from a list ctrl + b  w
+    - Select the previously current window ctrl + b  l
+- Panes
+    - Break pane to a new window ctrl + b  !
+    - Rotate through the panes ctrl + b  ctrl + o
+    - Select the pane above the active pane ctrl + b  up
+    - Select the pane below the active pane ctrl + b  down
+    - Select the pane to the left of the active pane ctrl + b  left
+    - Select the pane to the right of the active pane ctrl + b  right
+    - Move to the previously active pane ctrl + b  ;
+    - Clear the marked pane ctrl + b  m
+    - Search for a pane ctrl + b  f
+    - Kill the active pane ctrl + b  x
+    - Zoom the active pane ctrl + b  z
+    - Swap the active pane with the pane above ctrl + b  {
+    - Swap the active pane with the pane below ctrl + b  }
+    - Rotate through the panes in reverse ctrl + b  alt + o
+    - Spread panes out evenly ctrl + b  e
+    - Toggle the marked pane ctrl + b  m
+    - Select the next pane ctrl + b  o
+    - Select the previous pane ctrl + b  p
+    - Display pane numbers ctrl + b  q
+- Sessions
+    - List all sessions tmux ls
+    - Choose a session from a list ctrl + b  s
+    - Rename current session ctrl + b  $
+    - Switch to previous client ctrl + b  (
+    - Switch to next client ctrl + b  )
+    - Switch to the last client ctrl + b  l
+    - Detach the current client ctrl + b  d
+    - Suspend the current client ctrl + b  ctrl + z
+    - Redraw the current client ctrl + b  r
+    - Choose a client from a list ctrl + b  d
+- Layout
+    - Set the even-horizontal layout ctrl + b  alt + 1
+    - Set the even-vertical layout ctrl + b  alt + 2
+    - Set the main-horizontal layout ctrl + b  alt + 3
+    - Set the main-vertical layout ctrl + b  alt + 4
+    - Select the tiled layout ctrl + b  alt + 5
+    - Resize the pane up by 5 ctrl + b  alt + up
+    - Resize the pane down by 5 ctrl + b  alt + down
+    - Resize the pane left by 5 ctrl + b  alt + left
+    - Resize the pane right by 5 ctrl + b  alt + right
+    - Resize the pane up ctrl + b  ctrl + up
+    - Resize the pane down ctrl + b  ctrl + down
+    - Resize the pane left ctrl + b  ctrl + left
+    - Resize the pane right ctrl + b  ctrl + right
+    - Select next layout ctrl + b  space

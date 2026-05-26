@@ -1,0 +1,2 @@
+- --------------------- Portal ---------------------query:#[Mysql Sql](Mysql%20Sql.md)
+    -  **Quick Start with MySQL - **17 labs #MySQL #linux #SQL #Database

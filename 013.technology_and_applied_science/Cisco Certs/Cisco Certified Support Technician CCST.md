@@ -1,0 +1,281 @@
+- Cisco Certified Support Technician CCST IT Support Exam 100-140 CCST
+    - --------------------- Portal ---------------------query:[Cisco Certified Support Technician CCST IT Support Exam 100-140 CCST](Cisco%20Certified%20Support%20Technician%20CCST/Cisco%20Certified%20Support%20Technician%20CCST%20IT%20Support%20Exam%20100-140%20CCST.md)
+        - --------------------- Portal ---------------------
+            - Cisco Certs
+    - Cisco Certified Support Technician: IT Support
+        - Cisco Certified Support Technician (CCST) IT Support is a 50-minute exam that tests an entry-level candidate's foundational knowledge and skills related to IT support tasks, including queue and time management, documentation, troubleshooting, assisting end users, managing computer components, and identifying security threats.
+        - By passing this exam, you earn the CCST IT Support certification.
+        - Interpersonal skills
+            - Although not specifically tested as discrete objectives, this certification expects candidates to perform their jobs using the following interpersonal best practices:
+                - - Demonstrate professional communication skills when interacting with users
+                - - Demonstrate active listening
+                - - Express technical concepts to a non-technical audience
+                - - Communicate effectively using vocabulary appropriate to the situation
+            - Some scenarios on the test require understanding these best practices.
+        - 1. IT Support Job Tasks and Responsibilities
+            - 1.1. Define key help desk concepts.
+                - - Queue management, time management, ticketing systems, service level agreement (SLA), key performance indicators (KPIs)
+            - 1.2. Prepare documentation to summarize a customer interaction.
+                - - Creating a clear, concise, factual, and comprehensive description of the problem, the troubleshooting steps, and the results obtained
+                - - Documenting in such a way that the documentation is useful for future interactions
+            - 1.3. Describe the problem solving process.
+                - - Define the problem
+                - - Gather detailed information
+                - - Identify a probable cause of the failure
+                - - Devise a plan to resolve the problem
+                - - Make necessary changes to implement the plan
+                - - Observe the results the changes
+                - - If the problem is not resolved, repeat the process
+                - - Document the changes made to resolve the problem
+        - 2. Hardware Issues
+            - 2.1. Demonstrate how to follow basic safety procedures.
+                - - Electrical shock, ESD, fire, and personal safety
+            - 2.2. Assist end users in using tools to locate information about their device.
+                - - Information: host name, hardware (processor, memory, disk space), operating system version, IPv4 address, IPv6 address, MAC address
+                - - Windows tools: Task Manager, System Information, Event Viewer, ipconfig
+                - - MacOS tools: Activity Monitor, About This Mac, System Settings, Console, ifconfig
+            - 2.3. Assist end users in locating, identifying, and understanding the characteristics of various ports and cables.
+                - - Video ports: HDMI, USB-C, DVI, DisplayPort, VGA
+                - - USB-A, USB-B, USB-C, Micro USB
+                - - Serial ports
+                - - RJ-45, UTP, STP
+                - - Common types of power cables (desktop, laptop, mobile)
+                - - Thunderbolt 3/4 (USB-C)
+                - - Converters
+            - 2.4. Identify, install and upgrade various components in a desktop computer.
+                - - Identifying the processor and motherboard
+                - - Identifying, installing, and upgrading RAM, peripherals (graphics cards, wireless cards, Bluetooth cards), and internal storage devices (SATA, SSD, NVMe, M2)
+                - - Interfaces and expansion card compatibility
+                - - Using Device Manager to manage drivers
+                - - E-waste best practices for disposing of components 
+            - 2.5. Investigate commonly encountered hardware issues.
+                - - Basic troubleshooting: plug in, connected to power, powered on
+                - - Application compatibility requirements: processor architecture, RAM requirements, GPU requirements, disk space
+                - - Using Device Manager to identify issues with hardware
+                - - Device status indicators
+                - - Awareness of firmware updates (benefits and dangers)
+        - 3. Connectivity and Resource Access Issues
+            - 3.1. Assist users with establishing access to network-based resources.
+                - - Basic knowledge of common directory services: Active Directory, Cloud-based access management (Entra ID and AWS IAM)
+                - - Multifactor Authentication (authenticator apps and other methods)
+                - - Mapping a shared drive, including SMB and cloud drive (S3 bucket, OneDrive, GoogleDrive, Dropbox, Box, etc.)
+                - - Using Gpupdate/adgpupdate to force a group policy update
+                - - Resetting passwords
+                - - Checking membership in security and distribution groups to determine whether there is an issue
+                - - Verifying permissions
+            - 3.2. Troubleshoot commonly encountered connectivity issues with peripherals.
+                - - Printers: connectivity to printer, assisting a user in using a multifunction device, loading paper, fixing a paper jam, clearing print queue, swapping toner
+                - - Fax
+                - - Headphones
+                - - Microphones
+                - - External drives
+                - - Scanners
+                - - Webcams
+                - - Keyboard, mouse, pointing devices (wired and wireless)
+                - - Tactile/interactive input devices (flat panels)
+                - - Teleconferencing devices (Webex Desk Pro screens)
+            - 3.3. Examine basic end-device connectivity to the network.
+                - - LAN (wired) access vs. WLAN
+                - - Purpose of DNS
+                - - Purpose of DHCP, recognizing self-assigned IP addresses (APIPA)
+                - - Purpose of DHCPv6 (recognizing a link-local address instead of a global address)
+                - - IP address ranges (is it in the right subnet, public and private)
+                - - Default gateway
+                - - WLAN SSID
+                - - Using the following commands to verify connectivity
+                    - o Ipconfig/Ifconfig
+                    - o Traceroute/tracert
+                    - o Ping
+                    - o Nslookup
+                    - o Netstat
+                    - o Ping6
+                    - o Traceroute6
+                    - o Iproute2 (ip add, ss)
+                - - Purpose of a firewall and how it might impact connectivity
+        - 4. Operating System and Application Issues
+            - 4.1. Assist users in resolving Windows operating system issues.
+                - - Display settings, multiple displays, brightness
+                - - BitLocker codes
+                - - Windows and application updates
+                - - Clearing the browser cache
+                - - Terminating processes with Task Manager
+                - - Assisting the customer in backing up and restoring personal data with cloud-based tools (OneDrive)
+                - - Boot sequence, booting to safe mode
+                - - Power management
+                - - Accessibility features
+            - 4.2. Assist users in resolving MacOS operating system issues.
+                - - Display settings, multiple displays, brightness
+                - - Allowing applications the necessary permissions
+                - - Mounting external drives
+                - - Clearing the browser cache
+                - - AirDrop
+                - - Terminating processes with Activity Monitor
+                - - Assisting the customer in backing up and restoring personal data with cloud-based tools (iCloud and Time Machine)
+                - - Power management
+                - - Accessibility features
+            - 4.3. Assist users in resolving mobile device issues.
+                - - Restarting the phone, phone not charging, connectivity, email setup, mobile apps, collaboration software, basic understanding of MDM
+                - - Device OS: iOS, Android
+            - 4.4. Describe virtualization and cloud terminology.
+                - - Cloud providers - Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP)
+                - - Virtual machines and hypervisors
+                - - Recognizing cloud models in order to direct the incident to the right team
+            - 4.5. Assist users in resolving common application issues.
+                - - Marketplace or approved application installation
+                    - o Untrusted/unknown sources
+                - - Email, collaboration, productivity applications
+        - 5. Common Threats and Preventions
+            - 5.1. Describe security threats to the end user, perform basic investigation, and escalate to the appropriate team.
+                - - Threats: phishing, malware, spam, unauthorized access attempts, spoofing
+                - - Helping the user run a malware scan
+                - - Strong passwords and good password practices
+            - 5.2. Recognize how to avoid becoming a victim of social engineering attacks.
+                - - Awareness that a help desk technician is a prime target for social engineering attacks
+                - - Phishing, impersonation, etc.
+            - 5.3. Recognize how company policies and confidentiality guidelines protect user data.
+                - - Identifying confidential, propriety, and personally identifiable information (PII) data
+        - 6. Job Tools
+            - 6.1. Use remote access software to connect to end user devices and perform remote support tasks.
+                - - Remote Desktop, Remote Assistance, Cisco Webex, Remote Management, TeamViewer, Virtual Network Computing (VNC), PC Anywhere
+            - 6.2. Use appropriate troubleshooting tools to research an issue and update internal documentation with findings.
+                - - AI: query AI to research an issue, limitations of AI, ethical considerations for AI, privacy and security risks, difference between predictive and generative AI
+                - - Using search engine results
+                - - Technical forums
+                - - Knowledge base articles (industry and internal)
+- Cisco Certified Support Technician CCST Networking Exam 100-150 CCST
+    - --------------------- Portal ---------------------query:[Cisco Certified Support Technician CCST Networking Exam 100-150 CCST](Cisco%20Certified%20Support%20Technician%20CCST/Cisco%20Certified%20Support%20Technician%20CCST%20Networking%20Exam%20100-150%20CCST.md)
+        - --------------------- Portal ---------------------
+            - Cisco Certs
+    - Cisco Certified Support Technician Networking
+        - The successful candidate has the foundational knowledge and skills necessary to demonstrate how networks operate, including the devices, media, and protocols that enable network communication. 
+        - This test will be an entry point into the Cisco certification program. 
+        - The next certification in the pathway is CCNA.
+        - This is a certification for entry-level network technicians, networking students, interns, etc. 
+        - The exam targets secondary and immediate post-secondary students, and entry-level IT and Networking
+        - professionals. 
+        - The successful candidates are qualified entry-level network technicians and customer support technicians, students, and interns with at least 150 hours of instruction and hands-on experience.
+        - Objectives
+        - 1. Standards and Concepts
+            - 1.1. Identify the fundamental conceptual building blocks of networks.
+                - • TCP/IP model, OSI model, frames and packets, addressing
+            - 1.2. Differentiate between bandwidth and throughput.
+                - • Latency, delay, speed test vs. Iperf
+            - 1.3. Differentiate between LAN, WAN, MAN, CAN, PAN, and WLAN.
+                - • Identify and illustrate common physical and logical network topologies.
+            - 1.4. Compare and contrast cloud and on-premises applications and services.
+                - • Public, private, hybrid, SaaS, PaaS, IaaS, remote work/hybrid work
+            - 1.5. Describe common network applications and protocols.
+                - • TCP vs. UDP (connection-oriented vs. connectionless), FTP, SFTP, TFTP, HTTP, HTTPS, DHCP, DNS, ICMP, NTP
+        - 2. Addressing and Subnet Formats
+            - 2.1. Compare and contrast private addresses and public addresses.
+                - • Address classes, NAT concepts
+            - 2.2. Identify IPv4 addresses and subnet formats.
+                - • Subnet concepts, Subnet Calculator, slash notation, and subnet mask; broadcast domain
+            - 2.3. Identify IPv6 addresses and prefix formats.
+                - • Types of addresses, prefix concepts
+        - 3. Endpoints and Media Types
+            - 3.1. Identify cables and connectors commonly used in local area networks.
+                - • Cable types: fiber, copper, twisted pair; Connector types: coax, RJ-45, RJ-11, fiber connector types
+            - 3.2. Differentiate between Wi-Fi, cellular, and wired network technologies.
+                - • Copper, including sources of interference; fiber; wireless, including 802.11 (unlicensed, 2.4GHz, 5GHz, 6GHz), cellular (licensed), sources of interference
+            - 3.3. Describe endpoint devices.
+                - • Internet of Things (IoT) devices, computers, mobile devices, IP Phone, printer, server
+            - 3.4. Demonstrate how to set up and check network connectivity on Windows, Linux, Mac OS, Android, and Apple iOS.
+                - • Networking utilities on Windows, Linux, Android, and Apple operating systems; how to run troubleshooting commands; wireless client settings (SSID, authentication, WPA mode)
+        - 4. Infrastructure
+            - 4.1. Identify the status lights on a Cisco device when given instruction by an engineer.
+                - • Link light color and status (blinking or solid)
+            - 4.2. Use a network diagram provided by an engineer to attach the appropriate cables.
+                - • Patch cables, switches and routers, small topologies, power, rack layout
+            - 4.3. Identify the various ports on network devices.
+                - • Console port, serial port, fiber port, Ethernet ports, SFPs, USB port, PoE
+            - 4.4. Explain basic routing concepts.
+                - • Default gateway, layer 2 vs. layer 3 switches, local network vs. remote network
+            - 4.5. Explain basic switching concepts.
+                - • MAC address tables, MAC address filtering, VLAN
+        - 5. Diagnosing Problems
+            - 5.1. Demonstrate effective troubleshooting methodologies and help desk best practices, including ticketing, documentation, and information gathering.
+                - • Policies and procedures, accurate and complete documentation, prioritization
+            - 5.2. Perform a packet capture with Wireshark and save it to a file.
+                - • Purpose of using a packet analyzer, saving and opening a .pcap file
+            - 5.3. Run basic diagnostic commands and interpret the results.
+                - • ping, ipconfig/ifconfig/ip, tracert/traceroute, nslookup; recognize how firewalls can influence the result
+            - 5.4. Differentiate between different ways to access and collect data about network devices.
+                - • Remote access (RDP, SSH, telnet), VPN, terminal emulators, Console, Network Management Systems, cloud-managed network (Meraki), scripts
+            - 5.5. Run basic show commands on a Cisco network device.
+                - • show run, show cdp neighbors, show ip interface brief, show ip route, show version, show inventory, show switch, show mac address-table, show interface, show interface x, show interface status; privilege levels; command help and auto-complete
+        - 6. Security
+            - 6.1. Describe how firewalls operate to filter traffic.
+                - • Firewalls (blocked ports and protocols); rules deny or permit access
+            - 6.2. Describe foundational security concepts.
+                - • Confidentiality, integrity, and availability (CIA); authentication, authorization, and accounting (AAA); Multifactor Authentication (MFA); encryption, certificates, and password complexity; identity stores/databases (Active Directory); threats and vulnerabilities; spam, phishing, malware, and denial of service
+            - 6.3. Configure basic wireless security on a home router (WPAx).
+                - • WPA, WPA2, WPA3; choosing between Personal and Enterprise; wireless security concepts
+    - Sites:
+        - [Cisco Networking Academy](https://www.netacad.com/career-paths/network-technician?courseLang=en-US)
+- Cisco Certified Support Technician CCST Cybersecurity Exam 100-160 CCST
+    - --------------------- Portal ---------------------query:[Cisco Certified Support Technician CCST Cybersecurity Exam 100-160 CCST](Cisco%20Certified%20Support%20Technician%20CCST/Cisco%20Certified%20Support%20Technician%20CCST%20Cybersecurity%20Exam%20100-160%20CCST.md)
+        - --------------------- Portal ---------------------
+            - Cisco Certs
+    - Cisco Certified Support Technician: Cybersecurity Objective Domains
+        - The successful candidate has the foundational knowledge and skills necessary to demonstrate cybersecurity skills. 
+        - This test will be an entry point into the Cisco Certified program. 
+        - The next certification in the pathway is Cisco’s CyberOps.
+        - This is a certification for entry-level cybersecurity technicians, students, interns, etc. 
+        - The exam targets secondary and immediate post-secondary students, including entry-level IT and cybersecurity professionals. 
+        - The successful candidates are qualified work-ready cybersecurity technicians with at least 150 hours of instruction and hands-on experience.
+        - Objectives: CCST Cybersecurity
+        - 1. Essential Security Principles
+            - 1.1. Define essential security principles
+                - • Vulnerabilities, threats, exploits, and risks; attack vectors; hardening; defense-in-depth; confidentiality, integrity, and availability (CIA); types of attackers; reasons for attacks; code of ethics
+            - 1.2. Explain common threats and vulnerabilities
+                - • Malware, ransomware, denial of service, botnets, social engineering attacks (tailgating, spear phishing, phishing, vishing, smishing, etc.), physical attacks, man in the middle, IoT vulnerabilities, insider threats, Advanced Persistent Threat (APT)
+            - 1.3. Explain access management principles
+                - • Authentication, authorization, and accounting (AAA); RADIUS; multifactor authentication (MFA); password policies
+            - 1.4. Explain encryption methods and applications
+                - • Types of encryption, hashing, certificates, public key infrastructure (PKI); strong vs. weak encryption algorithms; states of data and appropriate encryption (data in transit, data at rest, data in use); protocols that use encryption
+        - 2. Basic Network Security Concepts
+            - 2.1. Describe TCP/IP protocol vulnerabilities
+                - • TCP, UDP, HTTP, ARP, ICMP, DHCP, DNS
+            - 2.2. Explain how network addresses impact network security
+                - • IPv4 and IPv6 addresses, MAC addresses, network segmentation, CIDR notation, NAT, public vs. private networks
+            - 2.3. Describe network infrastructure and technologies
+                - • Network security architecture, DMZ, virtualization, cloud, honeypot, proxy server, IDS, IPS
+            - 2.4. Set up a secure wireless SoHo network
+                - • MAC address filtering, encryption standards and protocols, SSID
+            - 2.5. Implement secure access technologies
+                - • ACL, firewall, VPN, NAC
+        - 3. Endpoint Security Concepts
+            - 3.1. Describe operating system security concepts
+                - • Windows, macOS, and Linux; security features, including Windows Defender and host-based firewalls; CLI and PowerShell; file and directory permissions; privilege escalation
+            - 3.2. Demonstrate familiarity with appropriate endpoint tools that gather security assessment information
+                - • netstat, nslookup, tcpdump
+            - 3.3. Verify that endpoint systems meet security policies and standards
+                - • Hardware inventory (asset management), software inventory, program deployment, data backups, regulatory compliance (PCI DSS, HIPAA, GDPR), BYOD (device management, data encryption, app distribution, configuration management)
+            - 3.4. Implement software and hardware updates
+                - • Windows Update, application updates, device drivers, firmware, patching
+            - 3.5. Interpret system logs
+                - • Event Viewer, audit logs, system and application logs, syslog, identification of anomalies
+            - 3.6. Demonstrate familiarity with malware removal
+                - • Scanning systems, reviewing scan logs, malware remediation
+        - 4. Vulnerability Assessment and Risk Management
+            - 4.1. Explain vulnerability management
+                - • Vulnerability identification, management, and mitigation; active and passive reconnaissance; testing (port scanning, automation)
+            - 4.2. Use threat intelligence techniques to identify potential network vulnerabilities
+                - • Uses and limitations of vulnerability databases; industry-standard tools used to assess vulnerabilities and make recommendations, policies, and reports; Common Vulnerabilities and Exposures (CVEs), cybersecurity reports, cybersecurity news, subscription services, and collective intelligence; ad hoc and automated threat intelligence; the importance of updating documentation and other forms of communication proactively before, during, and after cybersecurity incidents; how to secure, share and update documentation
+            - 4.3. Explain risk management
+                - • Vulnerability vs. risk, ranking risks, approaches to risk management, risk mitigation strategies, levels of risk (low, medium, high, extremely high), risks associated with specific types of data and data classifications, security assessments of IT systems (information security, change management, computer operations, information assurance)
+            - 4.4. Explain the importance of disaster recovery and business continuity planning
+                - • Natural and human-caused disasters, features of disaster recovery plans (DRP) and business continuity plans (BCP), backup, disaster recovery controls (detective, preventive, and corrective)
+        - 5. Incident Handling
+            - 5.1. Monitor security events and know when escalation is required
+                - • Role of SIEM and SOAR, monitoring network data to identify security incidents (packet captures, various log file entries, etc.), identifying suspicious events as they occur
+            - 5.2. Explain digital forensics and attack attribution processes
+                - • Cyber Kill Chain, MITRE ATT&CK Matrix, and Diamond Model; Tactics, Techniques, and Procedures (TTP); sources of evidence (artifacts); evidence handling (preserving digital evidence, chain of custody)
+            - 5.3. Explain the impact of compliance frameworks on incident handling
+                - • Compliance frameworks (GDPR, HIPAA, PCI-DSS, FERPA, FISMA), reporting and notification requirements
+            - 5.4. Describe the elements of cybersecurity incident response
+                - • Policy, plan, and procedure elements; incident response lifecycle stages (NIST Special Publication 800-61 sections 2.3, 3.1-3.4)
+    - Sites:
+        - [Free Cybersecurity Training by Cisco | Cyber Career Pathway](https://www.netacad.com/career-paths/cybersecurity?userLang=en-US&courseLang=en-US)
+- 

@@ -1,0 +1,153 @@
+- You used `cat` to view the entire contents of a file.
+1. You learned how to use `cat -n` to view file contents with line numbers.
+2. You used `head` to view the beginning of a file, both by lines and by bytes.
+3. You used `tail` to view the end of a file, both by lines and by bytes.
+4. You learned how to use `diff` to compare the contents of files.
+5. Finally, you used `diff -r` to compare entire directories.
+- 
+- `-rw-rw-r-- 1 labex labex 0 Jul 29 15:11 example.txt` Explain Code
+- Let's break down this output:
+    1. `-rw-rw-r--` represents the file permissions (we'll explore this more in Step 4). The first character indicates the file type ( `-` for a regular file, `d` for directory, etc.). The remaining characters represent read, write, and execute permissions for the owner, group, and others.
+    2. The first `labex` is the current owner of the file. This is the username that owns the file.
+    3. The second `labex` is the current group of the file. A group is a collection of users that can share permissions.
+    4. `0` is the file size in bytes. Since the file is empty, its size is zero.
+    5. `Jul 29 15:11` is the last modified date and time.
+    6. `example.txt` is the file name.
+- --------------------- Portal ---------------------query:#[linux](linux.md)
+    - Linux Certifictions #linux
+        - Linux Certifications Roadmap #linux
+        - LPI #linux
+            - LPI Linux Essentials - 010-160 #linux
+            - LPIC-1 - 101-500 and 102-500 #LPI #linux
+            - LPI Certifications #LPI #linux
+            - LPIC-2 - 201-450 and 202-450 #LPI #linux
+            - LPIC-3 Mixed Environments #LPI #linux
+            - LPIC-3 Security  #LPI #linux
+            - LPIC-3 Virtualization and Containerization #LPI #linux
+            - LPIC-3 High Availability and Storage Clusters #LPI #linux
+            - LPI DevOps Tools Engineer #LPI #linux
+            - LPI BSD Specialist #LPI #linux
+            - LPI Security Essentials  #LPI #linux
+            - LPI Web Development Essentials #LPI #linux
+            - LPI Open Source Essentials #LPI #linux
+            - LPI #linux
+        - RedHat #linux
+            - Red Hat Certified Engineer (RHCE) #linux
+            - Red Hat Certified Architect (RHCA) #linux
+        - Linux Foundation #linux
+            - Linux Foundation Certified IT Associate (LFCA) #linux
+            - Linux Foundation Certified System Administrator (LFCS) #linux
+        - SUSE #linux
+            - SUSE Certified Administrator (SCA) #linux
+            - SUSE Certified Engineer (SCE) #linux
+ -- Avoided infinite recursion --     - bash #linux
+    - SUSE Certified Administrator (SCA) #linux
+    - Linux Certifications Roadmap #linux
+    - linux lab set up #linux
+    - Linux Foundation Certified IT Associate (LFCA) #linux
+    - LPI #linux
+        - LPI Linux Essentials - 010-160 #linux
+        - LPIC-1 - 101-500 and 102-500 #LPI #linux
+        - LPI Certifications #LPI #linux
+        - LPIC-2 - 201-450 and 202-450 #LPI #linux
+        - LPIC-3 Mixed Environments #LPI #linux
+        - LPIC-3 Security  #LPI #linux
+        - LPIC-3 Virtualization and Containerization #LPI #linux
+        - LPIC-3 High Availability and Storage Clusters #LPI #linux
+        - LPI DevOps Tools Engineer #LPI #linux
+        - LPI BSD Specialist #LPI #linux
+        - LPI Security Essentials  #LPI #linux
+        - LPI Web Development Essentials #LPI #linux
+        - LPI Open Source Essentials #LPI #linux
+        - LPI #linux
+    - SUSE Certified Engineer (SCE) #linux
+    - Linux Foundation Certified System Administrator (LFCS) #linux
+    - Red Hat Certified Engineer (RHCE) #linux
+    - Red Hat Certified Architect (RHCA) #linux
+    - LPI Linux Essentials - 010-160 #linux
+    - RedHat #linux
+        - Red Hat Certified Engineer (RHCE) #linux
+        - Red Hat Certified Architect (RHCA) #linux
+    - LPIC-1 - 101-500 and 102-500 #LPI #linux
+    - less keys #linux
+    - Linux Foundation #linux
+        - Linux Foundation Certified IT Associate (LFCA) #linux
+        - Linux Foundation Certified System Administrator (LFCS) #linux
+    - LPI Certifications #LPI #linux
+    - tmux key #linux
+    - LPIC-2 - 201-450 and 202-450 #LPI #linux
+    - LPIC-3 Mixed Environments #LPI #linux
+    - LPIC-3 Security  #LPI #linux
+    - LPIC-3 Virtualization and Containerization #LPI #linux
+    - Pacman #linux
+    - LPIC-3 High Availability and Storage Clusters #LPI #linux
+    - LPI DevOps Tools Engineer #LPI #linux
+    - LPI BSD Specialist #LPI #linux
+    - LPI Security Essentials  #LPI #linux
+    - LPI Web Development Essentials #LPI #linux
+    - LPI Open Source Essentials #LPI #linux
+    - LPI #linux
+    - SUSE #linux
+        - SUSE Certified Administrator (SCA) #linux
+        - SUSE Certified Engineer (SCE) #linux
+- 
+- The `-rw-rw-r--` part represents the file permissions. This is where the numeric and symbolic notations come in. Let's break it down:
+    - The first character (`-`) indicates this is a regular file. Other common indicators are `d` for directory and `l` for symbolic link.
+    - The next three characters (`rw-`) represent the owner's permissions (read and write, but not execute).
+        - `r` stands for read permission: The owner can open and read the file.
+        - `w` stands for write permission: The owner can modify the file.
+        - `x` stands for execute permission: The owner can run the file (if it's a program or script). A `-` means the permission is denied.
+    - The next three (`rw-`) are for the group. They have the same meaning as above, but apply to members of the file's group.
+    - The last three (`r--`) are for others (everyone else). They also have the same meaning, but apply to users who are neither the owner nor members of the file's group.
+- Now, let's change these permissions using the `chmod` command. `chmod` stands for "change mode," and it allows you to modify these permissions. We'll start with the **numeric notation**.
+- `sudo chmod 700 example.txt` Explain Code
+- In this command:
+    - `700` is a numeric representation of permissions:
+        - The first digit (`7`) represents the owner's permissions.
+        - The second digit (`0`) represents the group's permissions.
+        - The third digit (`0`) represents the others' permissions.
+- Each digit is a number from 0 to 7, calculated by adding the values for read (4), write (2), and execute (1) permissions:
+    - `4`: Read permission
+    - `2`: Write permission
+    - `1`: Execute permission
+    - `0`: No permission
+- So, `7` (first digit) gives the owner read (4), write (2), and execute (1) permissions: 4+2+1=7
+- 
+- `0` (second digit) gives the group no permissions (0+0+0=0).
+- 
+- `0` (third digit) gives others no permissions (0+0+0=0).
+- Therefore, `700` means: Owner: read, write, execute. Group: none. Others: none.
+- 
+- `drwx------ 2 labex labex 4096 Jul 29 15:45 /home/labex/test-dir` Explain Code
+- The `d` at the beginning indicates that it's a directory. The `rwx------` indicates that the owner has read, write, and execute permissions, while the group and others have no permissions. For directories:
+    - Read permission (`r`) allows you to list the contents of the directory using `ls`.
+    - Write permission (`w`) allows you to create new files and subdirectories within the directory.
+    - Execute permission (`x`) allows you to access files and subdirectories within the directory (i.e., `cd` into it).
+- 
+- This command does two things:
+    1. It creates a new file named `script.sh`. The `.sh` extension is commonly used for shell scripts. shell scripts are executable files that contain a series of commands that are executed in sequence.
+    2. It writes two lines into this file:
+        - `#!/bin/bash` (called a shebang) tells the system this is a bash script. The shebang line specifies the interpreter that should be used to execute the script. In this case, it's `/bin/bash`, which is the path to the Bash interpreter.
+        - `echo "Hello, World"` is a command that will print "Hello, World" when the script runs. The `echo` command simply displays the text that follows it.
+        - `\n` is a newline character, ensuring the commands are on separate lines in the file.
+- Now, let's check its initial permissions:
+- `ls -l script.sh` Explain Code
+- You should see something like:
+- `-rw-rw-r-- 1 labex labex 32 Jul 29 16:30 script.sh` Explain Code
+- As you can see, initially, the script only has read and write permissions for the owner and group, and read permission for others. It doesn't have execute permission, which is required to run it as a program.
+- Let's try to run the script:
+- `./script.sh` Explain Code
+- You should see a "Permission denied" error because the script doesn't have execute permissions yet. The `./` part tells the shell to execute the script located in the current directory.
+- Now, let's add execute permission for the owner using **symbolic notation**:
+- `chmod u+x script.sh` Explain Code
+- In this command:
+    - `u` refers to the user (owner). Other options are `g` for group, `o` for others, and `a` for all (user, group, and others).
+    - `+x` adds execute permission. The `+` symbol adds a permission, while the `-` symbol removes a permission.
+- So, `u+x` means "add execute permission for the owner."
+- 
+- **Linux File System**: Think of this as a tree-like structure for organizing all the files on your computer. Unlike Windows with its drive letters (C:, D:, etc.), Linux has a single root directory (/) from which everything else branches out.
+- **Directory**: This is the Linux term for what you might know as a "folder" in other operating systems. It's a container for files and other directories.
+- **File**: In Linux, almost everything is a file! Regular documents, directories, even hardware devices are treated as files. This unified approach simplifies many operations.
+- **Path**: This is like an address for a file or directory. We'll learn about absolute paths (which start from the root directory) and relative paths (which start from your current location).
+- **Terminal**: This is your command center for interacting with Linux. It might look intimidating at first, but you'll soon find it's a powerful tool for managing your system.
+- **File Search**: Linux provides powerful tools for finding files across the system. We'll explore commands like `find` and `which` to help you quickly locate files and executables.

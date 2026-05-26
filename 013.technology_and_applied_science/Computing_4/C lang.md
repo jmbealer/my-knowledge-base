@@ -1,0 +1,277 @@
+- labex.io courses
+    - ### **C Programming for Beginners**
+        - [Size]();-[H3]()
+        - Create "Hello World" In CStart Lab
+            - Review C Program Structure (Headers And Main)
+            - Install GCC Compiler On Your System
+            - Write A Basic "Hello World" Program
+        - Craft Your First C Greeting
+            - Craft Your First C Greeting
+        - Declare Variables And Data Types In C
+            - Discuss Common C Data Types (int, float, char)
+            - Initialize Variables In Main Function
+            - Use "printf" With Format Specifiers
+            - Read User Input With "scanf"
+        - Build Student Information Tracker
+            - Build Student Information Tracker
+        - Use Basic Operators In C
+            - Introduce C Operators
+            - Write Sample Arithmetic Operations (Add, Sub, Mul, Div)
+            - Relational Operators For Comparison (>, <,→)
+            - Implement Logical Operators (And, Or, Not)
+            - Build a Simple Calculator Program
+        - Create a Temperature Converter
+            - Build a Temperature Conversion Tool
+        - Implement Conditionals In C
+            - Understanding If Syntax (if, else if, else)
+            - Write A Simple If Statement For Comparison
+            - Add Else Clause For Alternate Flow
+            - Use Else If For Multiple Conditions
+            - Nested If Statements
+        - Classify Student Grades
+            - Classify Student Grades
+        - Implement Loops In C
+            - Discuss For, While, And Do While Loop Syntax
+            - Write A For Loop To Print Numbers
+            - Use While Loop For Repeated Tasks
+            - Implement A Do While Loop Example
+            - Extend Do-While Loop Example
+        - Generate Multiplication Tables
+            - Generate Multiplication Tables
+        - Handle Arrays In C
+            - Introduce Array Declaration Syntax
+            - Initialize An Integer Array With Values
+            - Access Array Elements Using Indices
+            - Print Elements In A For Loop
+            - Advanced Array Operations
+        - Analyze Temperature Array
+            - Analyze Temperature Array
+        - Build Functions In C
+            - Explain Purpose And Syntax Of Functions
+            - Define A Function Prototype
+            - Implement Function Logic In Source File
+            - Call The Function From Main
+        - Create Even Number Validator Function
+            - Create Even Number Validator Function
+        - Manage Projects With Make In C
+            - What Is A Makefile And Why Use It?
+            - Explain Basic Makefile Structure (Targets, Dependencies)
+        - Create a Modular Makefile
+            - Create a Basic Makefile
+    - ### **Quick Start with C**
+        - [Size]();-[H3]()
+        - 16 labs
+        - Create Your First C Program in LabExStart Lab
+        - Personalized C Greeting
+        - Create User Input Program in C
+        - Basic Arithmetic Operations in C
+        - Manipulate Array Elements in C
+        - Create Two-Dimensional Arrays in C
+        - Decision Making Structures in C
+        - Strings and Manipulate Them in C
+        - Create Factorial Calculator in C
+        - Conditional Loops in C
+        - Create Functions in C
+        - Parse Command-Line Arguments in C
+        - Create String Comparison Functions in C
+        - Create String Array Iterators in C
+        - Create Even Numbers List in C
+        - Create a Rectangle Area Calculator in C
+    - ### **Building Flappy Bird Using C**
+        - [Size]();-[H3]()
+        - Building Flappy Bird Using CStart Lab
+            - Basic Knowledge
+            - Define Constants
+            - Timing Issue
+            - main() Function
+            - Compilation and Running
+    - ### **Making a Simple Calculator Using C**
+        - [Size]();-[H3]()
+        - Making a Simple Calculator Using CStart Lab
+            - Get User Input
+            - Checking the Format and Performing Calculations
+            - Compiling and Running Files
+    - ### **Creating a Gomoku Game in C**
+        - [Size]();-[H3]()
+        - Creating a Gomoku Game in CStart Lab
+            - Create Project Files
+            - Designing a Chessboard
+            - main Function
+            - initGame Function
+            - Function printChessboard
+            - playChess Function
+            - judge Function
+            - My Chess Piece was 'Eaten'
+            - Why can't I Win Forever?
+            - Compilation and Running
+    - ### **Creating a Snake Game in C**
+        - [Size]();-[H3]()
+        - Creating a Snake Game in CStart Lab
+            - Basic Knowledge
+            - Define Constants
+            - Main Function
+            - Window Mechanism
+            - Display Game Information
+            - Initializing the Snake Queue
+            - Display the Snake on the Game Window
+            - Write the Core of the Game
+            - The Movement of the Greedy Snake
+            - Lengthening the Snake Body
+            - The Location of Food Production
+            - Boundary Detection
+            - Game Over
+            - Compilation and Execution
+    - ### **File Type Statistics Using C**
+        - [Size]();-[H3]()
+        - File Type Statistics Using CStart Lab
+            - Basic Knowledge and Creating Project Files
+            - Design the main function
+            - Design the myftw function
+            - Design 'dopath' function
+            - Design the myfunc function
+            - Compile and test
+    - ### **Typing Practice Program Using C**
+        - [Size]();-[H3]()
+        - Typing Practice Program Using CStart Lab
+            - Project Environment
+            - Enter a Character
+            - Eliminating Entered Characters
+            - Input Multiple Strings
+            - Shuffle the Order of the Questions (Method 1)
+            - Shuffle Question Order (Method 2)
+            - Keyboard Layout Associative Typing
+            - Code and Running Result
+    - ### **Creating a 2048 Game in C**
+        - [Size]();-[H3]()
+        - Creating a 2048 Game in CStart Lab
+            - Create the Project Files
+            - Define Constants
+            - main Function
+            - Initialize the Game Board
+            - Implement Functions to Check Game State
+            - Create the Logic for Moving Tiles
+            - Display the Game Board
+            - Compile and Test
+    - ### **Creating a Code Rain in C Using Ncurses**
+        - [Size]();-[H3]()
+        - Creating Terminal Code Rain with C and NcursesStart Lab
+            - Create the Project Files
+            - Define Constants
+            - Initializing Colors
+            - Implementing the Main Function
+            - Initializing Raindrop Parameters
+            - Implementing the Animation Loop
+            - Compilation and Running
+    - ### **Creating a Simple Tic-Tac-Toe Game in C**
+        - [Size]();-[H3]()
+        - Creating a Simple Tic-Tac-Toe Game in CStart Lab
+            - Create the Project Files
+            - Define Constants
+            - Initialize the Game Board
+            - Clear the Screen After Each Turn
+            - Display the Game Board
+            - Check if the Game is Over
+            - Determine the Winner
+            - Implement the Main Game Loop
+            - Compile and Run the Project
+    - ### **Create a Simple Stopwatch App Using GTK**
+        - [Size]();-[H3]()
+        - Create a Simple Stopwatch App Using GTKStart Lab
+            - Create the Project Files
+            - Include GTK Headers and Define Variables
+            - Create the Timer Callback Function
+            - Implement Button Click Callbacks
+            - Create the Main Function and UI Elements
+            - Compile and Run the Project
+    - ### **Creating a Simple Clock Animation Using OpenGL**
+        - [Size]();-[H3]()
+        - Creating a Simple Clock Animation Using OpenGLStart Lab
+            - Create the Project Files
+            - Include Headers and Define Variables
+            - Set Up the Window and Initialize OpenGL
+            - Draw the Clock Background
+            - Rotate the Clock
+            - Draw the Clock's Outline
+            - Get Current Time and Calculate Clock Hands' Positions
+            - Draw the Hour Hand
+            - Draw the Minute Hand
+            - Draw the Second Hand
+            - Window Reshape and Real-time Display
+            - Compile and Run the Project
+    - ### **Creating a Dynamic Heart Animation With C**
+        - [Size]();-[H3]()
+        - Creating a Dynamic Heart Animation with CStart Lab
+            - Create the Project Files
+            - Define Necessary Variables
+            - Implement Screen Coordinate Functions
+            - Implement Random Number Generator Function
+            - Initialize and Generate Heart-Shaped Point Sets:
+            - Color Points to Generate Animation
+            - Animation Generation and Update
+            - Create X Window and Initialize
+            - Initializes Data and Creates Point Groups
+            - Animation Main Loop
+            - Compile and Run the Project
+    - ### **Implementing Callback Functions in C**
+        - [Size]();-[H3]()
+        - Implementing Callback Functions in CStart Lab
+    - ### **Synchronize Multithreaded Printing with Mutex**
+        - [Size]();-[H3]()
+        - Synchronize Multithreaded Printing with MutexStart Lab
+    - ### **Parsing Command Line Arguments in C**
+        - [Size]();-[H3]()
+        - Parsing Command Line Arguments in CStart Lab
+    - ### **Implementing Doubly Linked List in C**
+        - [Size]();-[H3]()
+        - Implementing Doubly Linked List in CStart Lab
+    - ### **Implementing Queue Data Structure in C**
+        - [Size]();-[H3]()
+        - Implementing Queue Data Structure in CStart Lab
+    - ### **Sorting Courses with Bubble Sort**
+        - [Size]();-[H3]()
+        - Sorting Courses with Bubble Sort
+- 
+- `#include <stdio.h>` includes the standard input/output library
+- `int main()` is the main function where the program starts
+- `printf()` prints text to the screen
+- `\n` creates a new line after printing
+- `return 0;` indicates the program completed successfully
+- Compiling transforms your human-readable code into instructions that a computer can understand.
+- 
+- `int`:
+    - Used for whole numbers
+    - Typically 4 bytes in size
+    - Can store positive and negative whole numbers
+    - Example: `age = 25`
+1. `float`:
+    - Used for decimal numbers
+    - Stores floating-point (real) numbers
+    - Provides decimal precision
+    - Example: `height = 1.75`
+2. `char`:
+    - Used for single characters
+    - Enclosed in single quotes
+    - Typically 1 byte in size
+    - Example: `initial = 'A'`
+- 
+- The format specifiers used in `printf()` are important:
+    - `%d` for integers
+    - `%f` for floating-point numbers
+    - `%c` for characters
+- These specifiers tell the `printf()` function exactly how to interpret and display the data stored in your variables. They are like translators that help convert your program's internal data representation into human-readable text.
+- 
+- 
+- Let's break down the variable initialization techniques. Each method has its own use case and can be helpful in different programming scenarios.
+    1. Direct Initialization:
+        - Declare and assign a value in one step
+        - Example: `int studentCount = 25;`
+    2. Separate Declaration and Initialization:
+        - Declare variable first, then assign value later
+        - Example: `float averageScore; averageScore = 85.5;`
+    3. Multiple Variable Initialization:
+        - Initialize multiple variables in one line
+        - Example: `int x = 10, y = 20, sum;`
+    4. Constant Variables:
+        - Use `const` keyword to create unchangeable variables
+        - Example: `const float PI = 3.14159`
+- 

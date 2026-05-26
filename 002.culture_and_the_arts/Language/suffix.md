@@ -1,0 +1,120 @@
+- now lets do prefix
+- Perfect. Prefixes are where **word-decoding really clicks**, especially for academic, math, CS, and linguistics reading.
+    - Below is a **master prefix list (~180 prefixes)** — compact, high-yield, and actually useful.
+    - This covers **Latin + Greek + high-value Germanic prefixes** you’ll see everywhere.
+    - 
+- lets do suffix next
+- Perfect — suffixes are the **grammar + meaning finishers**.
+    - This is the **master suffix list** to pair with your **roots + prefixes**, giving you full word-decoding power.
+    - Below is a **high-yield master list (~180 suffixes)**, organized by **function**, not trivia.
+    - 
+    - # 📘 Master English Suffix List (Essential)
+    - 
+    - ## A. Noun-Forming Suffixes (Things, Concepts, States)
+        - **-tion / -sion** — act, process
+        - **-ment** — result, state
+        - **-ness** — quality, condition
+        - **-ity / -ty** — state, quality
+        - **-ance / -ence** — state, action
+        - **-al** — thing related to
+        - **-ure** — result, process
+        - **-ship** — status, role
+        - **-dom** — domain, state
+        - **-hood** — condition
+        - **-ism** — belief, system
+        - **-ist** — person practicing
+        - **-age** — collection, result
+        - **-ery / -ry** — activity, place
+        - **-acy** — state, quality
+    - 
+    - ## B. Person / Agent Suffixes
+        - **-er** — one who does
+        - **-or** — one who does
+        - **-ant / -ent** — acting person
+        - **-ee** — receiver
+        - **-ary** — person related to
+        - **-ian** — specialist
+        - **-ist** — practitioner
+    - 
+    - ## C. Verb-Forming Suffixes
+        - **-ize / -ise** — make, cause
+        - **-ify** — make, become
+        - **-ate** — act upon
+        - **-en** — cause to be
+        - **-ish** — act like
+    - 
+    - ## D. Adjective-Forming Suffixes (Descriptive Power)
+        - **-al** — relating to
+        - **-ic / -ical** — pertaining to
+        - **-ous** — full of
+        - **-ive** — having nature of
+        - **-able / -ible** — capable of
+        - **-less** — without
+        - **-ful** — full of
+        - **-ary** — related to
+        - **-ent / -ant** — being
+        - **-ish** — somewhat
+    - 
+    - ## E. Adverb-Forming Suffixes
+        - **-ly** — manner
+        - **-ward / -wards** — direction
+        - **-wise** — in manner of
+    - 
+    - ## F. Comparison & Degree
+        - **-er** — comparative
+        - **-est** — superlative
+    - 
+    - ## G. Plural & Quantity
+        - **-s / -es** — plural
+        - **-en** — plural (oxen)
+    - 
+    - ## H. Verb Tense & Aspect (Inflectional)
+        - **-ed** — past tense
+        - **-ing** — ongoing action
+        - **-s** — third person singular
+    - 
+    - ## I. Abstract / Academic High-ROI Suffixes
+        - **-ology** — study of
+        - **-graphy** — writing, recording
+        - **-nomy** — system, law
+        - **-metry** — measurement
+        - **-phobia** — fear
+        - **-philia** — love
+        - **-cracy** — rule by
+        - **-archy** — leadership
+    - 
+    - ## J. Science, Math, CS, Engineering
+        - **-ics** — field of study
+        - **-ware** — software category
+        - **-scope** — viewing instrument
+        - **-type** — model, form
+        - **-logy** — study
+        - **-oid** — resembling
+        - **-form** — shape
+    - 
+    - ## K. Condition, Disease, Medical
+        - **-osis** — condition
+        - **-itis** — inflammation
+        - **-oma** — tumor
+        - **-pathy** — disease
+        - **-emia** — blood condition
+    - 
+    - ## L. State, Process, Result (Very Common)
+        - **-al** — result
+        - **-tion** — process
+        - **-ing** — action
+        - **-ment** — outcome
+        - **-ance** — state
+    - 
+    - ## M. Diminutive & Informal
+        - **-let** — small
+        - **-ette** — small
+        - **-ling** — small or young
+    - 
+    - ## N. Gender / Social (Limited but Seen)
+        - **-ess** — female
+        - **-ette** — diminutive
+    - 
+    - ## O. Direction & Position
+        - **-ward** — direction
+        - **-wise** — manner

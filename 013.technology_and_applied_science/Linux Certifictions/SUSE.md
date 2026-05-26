@@ -1,0 +1,164 @@
+- SUSE Certified Administrator (SCA) #linux
+    - --------------------- Portal ---------------------query:[SUSE Certified Administrator (SCA)](SUSE/SUSE%20Certified%20Administrator%20(SCA).md)
+        - --------------------- Portal ---------------------
+            - Linux Certifictions #linux
+    - Site: [SUSE Certified Administrator in SUSE Linux Enterprise Server 15 | SUSE](https://www.suse.com/training/exam/sca-sles-15/)
+    - ## Additional Resources
+        - [Size]();-[H2]()
+        - ### Courses
+            - [A Cloud Guru: Becoming Familiar with SUSE Linux Enterprise](https://learn.acloud.guru/course/387f3e9a-112e-474d-92c4-57148a293750)
+            - [A Cloud Guru: Configuring SUSE Linux Enterprise](https://learn.acloud.guru/course/caca25dd-24c5-4dbc-9833-50c5f0d4c3c3)
+            - [A Cloud Guru: Managing SUSE Linux Enterprise](https://learn.acloud.guru/course/ecc3903d-02c3-4b78-a9f9-c180c545d578)
+            - [A Cloud Guru: SUSE Linux Enterprise Admin Review and Exam Prep](https://learn.acloud.guru/course/10bd7c49-a743-4acc-81d3-d8eefd53eeac)
+            - [Udemy: Administer Linux with YaST & Use Help Resources](https://www.udemy.com/course/suse-administer-linux-with-yast-use-help-resources)
+            - [Size]();-[H3]()
+        - ### Practice Exams
+            -  *None Found* 
+            - [Size]();-[H3]()
+        - ### Sources
+            -  *None Found* 
+            - [Size]();-[H3]()
+        - ### Time Spent
+            -  *8 - 12 hours* 
+            - [Size]();-[H3]()
+    - # SCA in SUSE Linux Enterprise Server 15 (2025 Update)
+        - [Size]();-[H1]()
+        - The SUSE Certified Administrator (SCA) in SUSE Linux Enterprise Server 15 certification is designed for SUSE Linux Enterprise system administrators who have become familiar with the SLES operating system. 
+        - This certification validates your fundamental knowledge of the Linux operating system and your ability to properly administer SLES 15 at a standard sysadmin level.
+    - ### How to Earn the Certification
+        - [Size]();-[H3]()
+        - Candidates can earn the SCA in SUSE Linux Enterprise Server 15 by passing the core SCA in SUSE Linux Enterprise Server 15 (2025 Update) exam. The 2025 Update exam aligns with the new SLE201v15: SUSE Linux Enterprise Server Operations course and is targeted to be released in January 2025. There are no prerequisites to attain the certification.
+        - If you achieved the SCA in SUSE Linux Enterprise Server already by passing the other exam, there is no need to recertify! Both exams lead to the same certification.
+        - The previous version of the exam that aligns with the SLE201v15: SUSE Linux Enterprise Server Operations course will be retired on 30 April 2025 to give those already working through that course time to complete it.
+        - The option to update from version 12 to version 15 was retired 30 April 2024.
+    - ## Core Exam Information
+        - [Size]();-[H2]()
+    - ### Study Options
+        - [Course SLE201v15 - SUSE Linux Enterprise Server 15 Operations](https://www.suse.com/training/course/sle201v15/)
+        - [Size]();-[H3]()
+        - As with all SUSE certifications, course work is not required. You need to pass this certification exam and meet the prerequisites in order to achieve the certification. We highly recommend you study the objectives and prepare for the exam.
+    - ### Detailed Objectives
+        - The Command Line
+            - Bash shell
+            - Commonly Used Commands
+            - Stream Redirection and Piping
+        - The Linux filesystem
+            - Linux Filesystem Structure
+            - Linux file Types
+        - VIM
+        - Manage users and groups from command line and YaST
+        - File and Directory Permissions
+            - File System Permissions
+            - Special File and Directory Modes
+            - Extended Access Control Lists
+        - Process Management
+            - Signals and Process Termination
+            - Process Priority
+            - Foreground and Background Processes
+        - System and Service Management
+            - Manage Services with systemd
+            - Configure systemd Targets
+        - Task Scheduling
+            - Schedule Recurring Jobs
+            - Schedule One Time Jobs
+            - Schedule Jobs Using Systemd Timers
+        - Privilege Delegation
+            - Effective User and Group Identifier
+            - Modifying User and Group Identifier
+            - Manage Privilege Escalation Using Sudo
+        - Remote Administration
+            - Remote Administration Using SSH
+            - Configure Key Based Authentication for SSH
+            - Remote Administration Using VNC
+            - Remote Administration Using RDP
+        - Storage Management Fundamentals
+            - Disk Partitioning
+            - Linux File Systems
+            - Mount Volumes into the Linux File System Hierarchy
+            - Storage Management with YaST
+            - Manage Storage Space
+        - Logical Volume Manager
+            - LVM Configuration File and Services
+            - LVM Configuration from the Command Line
+            - Managing LVM from the Command Line
+            - LVM Snapshots
+            - LVM Configuration Using YaST
+        - Btrfs Management
+            - Creating and Managing Btrfs File Systems from the Command Line
+            - Managing Btrfs Using YaST
+            - Introduction to Btrfs Snapshots
+        - Network Management Fundamentals
+            - Physical Network Interface Naming
+            - Managing Network Configuration
+            - Test Network Configuration
+            - Network Management Using Wicked
+            - Name Resolution
+            - Network Management Using YaST
+        - Software Management
+            - Working With RPM
+            - Introduction to Zypper
+            - Zypper Repository Management
+            - Zypper Package Management
+            - Using YaST to Manage Software
+        - System Logging
+            - Kernel Log Messages
+            - The System Logging Daemon
+            - Log Rotation
+            - Systemd Logging
+            - Supportconfig
+        - [Size]();-[H3]()
+- SUSE Certified Engineer (SCE) #linux
+    - --------------------- Portal ---------------------query:[SUSE Certified Engineer (SCE)](SUSE/SUSE%20Certified%20Engineer%20(SCE).md)
+        - --------------------- Portal ---------------------
+            - Linux Certifictions #linux
+    - Site: [ SUSE Certified Engineer in SUSE Linux Enterprise Server 15 | SUSE](https://www.suse.com/training/exam/sce-sles-15/)
+    - # SCE in SUSE Linux Enterprise Server 15
+        - [Size]();-[H1]()
+        - The SUSE Certified Engineer (SCE) in SUSE Linux Enterprise Server 15 is targeted at advanced system operators and consultants. The certification validates knowledge in topics which are either more advanced than those covered in the SCA or less commonly used. These topics focus on how to design and manage complex configurations which are considered beyond the scope of typical ongoing operational usage.
+    - ### How to Earn the Certification
+        - [Size]();-[H3]()
+        - Candidates can earn the SCE in SUSE Linux Enterprise Server 15 by passing the core SCE in SUSE Linux Enterprise Server 15 exam.
+        - Details for the Core SCE in SUSE Linux Enterprise 15 exam are below.  In addition to the core SCE in SUSE Linux Enterprise Server 15 exam, the SCA in SUSE Linux Enterprise Server version 12 or 15 certification is a prerequisite for this engineer level certification.
+    - ## Core Exam Information
+        - [Size]();-[H2]()
+    - ### Study Options
+        - [Size]();-[H3]()
+        - Candidates who do not hold the SCE in SUSE Linux Enterprise Server 12 certification would benefit from the following course:
+            - [SLE301v15 – SUSE Linux Enterprise 15 Advanced Administration](https://www.suse.com/training/course/sle301v15/)
+        - As with all SUSE certifications, course work is not required. You need to pass this certification exam and meet the prerequisites in order to achieve the certification. We highly recommend you study the objectives and prepare for the exam.
+    - ### Detailed Objectives
+        - [Size]();-[H3]()
+        - In addition to the objectives below, this exam may also cover objectives from the [SUSE Certified Administrator in Enterprise Linux 15](https://www.suse.com/training/exam/sca-sles-15) exam.
+        - Advanced System Administration
+            - YaST Security Module
+            - Backup and Recovery
+            - Software Libraries
+            - General Server Health
+            - Monitoring Overview
+            - Control Groups
+        - Encryption
+            - SSL/TLS
+            - GPG
+        - Shell Scripting
+        - Hardware
+            - Hardware Information
+            - Drivers
+        - Advanced Networking
+            - Advanced Network Interface Types
+            - Network Namespaces
+            - IPv6
+        - Advanced Storage Administration
+            - iSCSI
+            - Multipath IO
+        - Centralized Authentication
+            - PAM
+            - SSSD
+        - Advanced Software Management
+            - RPM
+            - Repositories
+            - RMT
+        - Configuration Management with Salt
+            - Salt Overview
+            - Install and Configure Salt
+            - Salt Execution Modules
+            - The Salt State System

@@ -1,0 +1,534 @@
+- **Acronym - Spelled Out** 
+- AES-256::Advanced Encryption Standards 256-bit
+    - AES‐256 (Advanced Encryp�on Standards 256‐bit): A version of the AES using a 256‐bit key size for
+    - encryp�on, providing a higher level of security.
+- AIS::Automated Indicator Sharing
+    - AIS (Automated Indicator Sharing): A system that allows the exchange of cyber threat indicators
+    - between the public and private sectors.
+- ALE::Annualized Loss Expectancy
+    - ALE (Annualized Loss Expectancy): A risk management concept to es�mate the monetary loss that can
+    - be expected for an asset due to a risk over a year.
+- APT::Advanced Persistent Threat
+    - APT (Advanced Persistent Threat): A prolonged and targeted cybera�ack in which an intruder gains
+    - access to a network and remains undetected for an extended period.
+- ARO::Annualized Rate of Occurrence
+    - ARO (Annualized Rate of Occurrence): The expected frequency with which a specific event is likely to
+    - occur annually.
+- ASLR::Address Space Layout Randomization
+    - ASLR (Address Space Layout Randomiza�on): A computer security technique involved in preven�ng
+    - exploita�on of memory corrup�on vulnerabili�es.
+- ATT&CK::Adversarial Tactics, Techniques, and Common Knowledge
+    - ATT&CK (Adversarial Tac�cs, Techniques, and Common Knowledge): A knowledge base maintained by
+    - MITRE for lis�ng and explaining cyber adversary behavior.
+- AV::Antivirus
+    - AV (An�virus): So�ware designed to detect and destroy computer viruses.
+- 
+- BASH::Bourne Again Shell
+    - BASH (Bourne Again Shell): A Unix shell and command language.
+- BCP::Business Continuity Planning
+    - BCP (Business Con�nuity Planning): The process involved in crea�ng a system of preven�on and
+    - recovery from poten�al threats to a company.
+- BIA::Business Impact Analysis
+    - BIA (Business Impact Analysis): A process that iden�fies and evaluates the poten�al effects of natural
+    - and man‐made events on business opera�ons.
+- BPA::Business Partners Agreement
+    - BPA (Business Partners Agreement): A contract between par�es who have agreed to share resources to
+    - undertake a specific, mutually beneficial project.
+- BPDU::Bridge Protocol Data Unit
+    - BPDU (Bridge Protocol Data Unit): A type of network message that is transmi�ed by a local area
+    - network (LAN) bridge.
+- 
+- CA::Certificate Authority
+    - CA (Cer�ficate Authority): An en�ty that issues digital cer�ficates for use by other par�es.
+- CAR::Corrective Action Report
+    - CAR (Correc�ve Ac�on Report): A report that outlines the correc�ve ac�ons necessary to rec�fy a
+    - detected non‐conformance.
+- CASB::Cloud Access Security Broker
+    - CASB (Cloud Access Security Broker): On‐premises or cloud‐based security policy enforcement points
+    - placed between cloud service consumers and cloud service providers.
+- CBC::Cipher Block Chaining
+    - CBC (Cipher Block Chaining): A mode of opera�on for a block cipher that provides confiden�ality but not
+    - message integrity.
+- CCMP::Counter Mode/CBC-MAC Protocol
+    - CCMP (Counter Mode/CBC‐MAC Protocol): An encryp�on protocol used in Wi‐Fi networks.
+- CCTV::Closed-circuit Television
+    - CCTV (Closed‐circuit Television): A TV system in which signals are not publicly distributed but are
+    - monitored, primarily for surveillance and security purposes.
+- CFB::Cipher Feedback
+    - CFB (Cipher Feedback): A mode of opera�on for a block cipher.
+- CHAP::Challenge Handshake Authentication Protocol
+    - CHAP (Challenge Handshake Authen�ca�on Protocol): A type of authen�ca�on protocol used primarily
+    - to authen�cate a user or network host to an authen�ca�ng en�ty.
+- CIO::Chief Information Officer
+    - CIO (Chief Informa�on Officer): A job �tle commonly given to the most senior execu�ve in an enterprise
+    - responsible for the informa�on technology and computer systems that support enterprise goals.
+- CIRT::Computer Incident Response Team
+    - CIRT (Computer Incident Response Team): A service organiza�on that is contacted when a security
+    - breach or other computer‐related emergency occurs.
+- CMS::Content Management System
+    - CMS (Content Management System): So�ware that helps users create, manage, and modify content on
+    - a website without the need for specialized technical knowledge.
+- COOP::Continuity of Operation Planning
+    - COOP (Con�nuity of Opera�on Planning): A process by government agencies to ensure that cri�cal
+    - func�ons con�nue during a wide range of emergencies, including localized acts of nature, accidents, and
+    - technological or a�ack‐related emergencies.
+- COPE::Corporate Owned, Personally Enabled
+    - COPE (Corporate Owned, Personally Enabled): A business strategy for managing mobile devices that
+    - allows employees to use corporate‐owned IT devices for personal use.
+- CP::Contingency Planning
+    - CP (Con�ngency Planning): A course of ac�on designed to help an organiza�on respond effec�vely to a
+    - significant future event or situa�on that may or may not happen.
+- CSO::Chief Security Officer
+    - CSO (Chief Security Officer): A company execu�ve responsible for the security of personnel, physical
+    - assets, and informa�on in both physical and digital form.
+- CSP::Cloud Service Provider
+    - CSP (Cloud Service Provider): A company that offers some component of cloud compu�ng – typically
+    - Infrastructure as a Service (IaaS), So�ware as a Service (SaaS) or Pla�orm as a Service (PaaS) – to other
+    - businesses or individuals.
+- CSR::Certificate Signing Request
+    - CSR (Cer�ficate Signing Request): A message sent from an applicant to a cer�ficate authority in order to
+    - apply for a digital iden�ty cer�ficate.
+- CSRF::Cross-site Request Forgery
+    - CSRF (Cross‐site Request Forgery): A type of malicious exploit of a website where unauthorized
+    - commands are transmi�ed from a user that the web applica�on trusts.
+- CSU::Channel Service Unit
+    - CSU (Channel Service Unit): A device used in digital data transmission for interfacing a digital data
+    - terminal with a digital transmission medium.
+- CTM::Counter Mode
+    - CTM (Counter Mode): A mode of opera�on in cryptography for block ciphers.
+- CTO::Chief Technology Officer
+    - CTO (Chief Technology Officer): An execu�ve‐level posi�on in a company or other en�ty whose
+    - occupant is focused on scien�fic and technological issues within an organiza�on.
+- CVE::Common Vulnerability Enumeration
+    - CVE (Common Vulnerability Enumera�on): A list of publicly disclosed cybersecurity vulnerabili�es.
+- CVSS::Common Vulnerability Scoring System
+    - CVSS (Common Vulnerability Scoring System): A free and open industry standard for assessing the
+    - severity of computer system security vulnerabili�es.
+- CYOD::Choose Your Own Device
+    - CYOD (Choose Your Own Device): A corporate policy that permits employees to choose which devices
+    - they use for work purposes.
+- 
+- DAC 2::Discretionary Access Control
+    - DAC (Discre�onary Access Control): A type of access control defined by the Access Control List (ACL)
+    - where access rights are assigned to users by the system (or system's administrators).
+- DBA::Database Administrator
+    - DBA (Database Administrator): A person who uses specialized so�ware to store and organize data.
+- DEP::Data Execution Prevention
+    - DEP (Data Execu�on Preven�on): A security feature that can help prevent damage to your computer
+    - from viruses and other security threats.
+- DES::Digital Encryption Standard
+    - DES (Digital Encryp�on Standard): A previously dominant algorithm for the encryp�on of electronic
+    - data.
+- DHE::Diffie-Hellman Ephemeral
+    - DHE (Diffie‐Hellman Ephemeral): A method of securely exchanging cryptographic keys over a public
+    - channel.
+- DNAT::Destination Network Address Translation
+    - DNAT (Des�na�on Network Address Transla�on): A technique for transparently changing the
+    - des�na�on IP address of an end route packet and performing the inverse func�on for any replies.
+- DPO::Data Privacy Officer
+    - DPO (Data Privacy Officer): A role within a company or organiza�on responsible for ensuring that the
+    - company complies with data protec�on laws.
+- DRP::Disaster Recovery Plan
+    - DRP (Disaster Recovery Plan): A structured approach with policies and procedures for responding to an
+    - unplanned incident and recovering cri�cal systems.
+- DSA::Digital Signature Algorithm
+    - DSA (Digital Signature Algorithm): A standard for digital signatures.
+- 
+- EAP::Extensible Authentication Protocol
+    - EAP (Extensible Authen�ca�on Protocol): An authen�ca�on framework frequently used in wireless
+    - networks and Point‐to‐Point connec�ons.
+- ECB::Electronic Code Book
+    - ECB (Electronic Code Book): A mode of opera�on for a block cipher, with the characteris�c that each
+    - possible block of plaintext has a defined corresponding ciphertext value.
+- ECC 2::Elliptic Curve Cryptography
+    - ECC (Ellip�c Curve Cryptography): An approach to public‐key cryptography based on the algebraic
+    - structure of ellip�c curves over finite fields.
+- ECDHE::Elliptic Curve Diffie-Hellman Ephemeral
+    - ECDHE (Ellip�c Curve Diffie‐Hellman Ephemeral): A variant of the Diffie‐Hellman algorithm that uses
+    - ellip�c curve cryptography.
+- ECDSA::Elliptic Curve Digital Signature Algorithm
+    - ECDSA (Ellip�c Curve Digital Signature Algorithm): A cryptographic algorithm used by Bitcoin to ensure
+    - that funds can only be spent by their righ�ul owners.
+- ERP::Enterprise Resource Planning
+    - ERP (Enterprise Resource Planning): Business process management so�ware that allows an organiza�on
+    - to use a system of integrated applica�ons to manage the business and automate many back office
+    - func�ons.
+- ESN::Electronic Serial Number
+    - ESN (Electronic Serial Number): A unique iden�fica�on number embedded by manufacturers on a
+    - microchip in wireless phones.
+- 
+- FACL::File System Access Control List
+    - FACL (File System Access Control List): A data structure, most o�en associated with Microso� Windows
+    - and NTFS, that controls access to files and folders.
+- FDE::Full Disk Encryption
+    - FDE (Full Disk Encryp�on): Encryp�on at the hardware level.
+- FIM::File Integrity Management
+    - FIM (File Integrity Management): A technology that monitors and reports changes in files, o�en used in
+    - IT security.
+- FPGA::Field Programmable Gate Array
+    - FPGA (Field Programmable Gate Array): An integrated circuit designed to be configured by a customer
+    - or a designer a�er manufacturing – hence "field‐programmable".
+- FRR::False Rejection Rate
+    - FRR (False Rejec�on Rate): In biometric security systems, the measure of the likelihood that the
+    - biometric security system will incorrectly reject an access a�empt by an authorized user.
+- 
+- GCM::Galois Counter Mode
+    - GCM (Galois Counter Mode): A mode of opera�on for symmetric key cryptographic block ciphers that
+    - has been widely adopted because of its efficiency and performance.
+- GPG::Gnu Privacy Guard
+    - GPG (Gnu Privacy Guard): A free so�ware re‐implementa�on of the OpenPGP standard as defined by
+    - RFC4880, which allows you to encrypt and sign your data and communica�ons.
+- GPO::Group Policy Object
+    - GPO (Group Policy Object): A feature of Windows that provides centralized management and
+    - configura�on of opera�ng systems, applica�ons, and users' se�ngs in an Ac�ve Directory environment.
+- 
+- HA::High Availability
+    - HA (High Availability): Refers to systems that are durable and likely to operate con�nuously without
+    - failure for a long �me.
+- HIDS::Host-based Intrusion Detection System
+    - HIDS (Host‐based Intrusion Detec�on System): A system that monitors important opera�ng system files.
+- HIPS::Host-based Intrusion Prevention System
+    - HIPS (Host‐based Intrusion Preven�on System): An installed so�ware package which monitors a single
+    - host for suspicious ac�vity by analyzing events occurring within that host.
+- HMAC::Hashed Message Authentication Code
+    - HMAC (Hashed Message Authen�ca�on Code): A specific type of message authen�ca�on code
+    - involving a cryptographic hash func�on and a secret cryptographic key.
+- HOTP::HMAC-based One-time Password
+    - HOTP (HMAC‐based One‐�me Password): A one‐�me password algorithm based on hash‐based
+    - message authen�ca�on codes.
+- HVAC::Heating, Ventilation, Air Conditioning
+    - HVAC (Hea�ng, Ven�la�on, and Air Condi�oning): Technology of indoor and vehicular environmental
+    - comfort.
+- 
+- IDEA::International Data Encryption Algorithm
+    - IDEA (Interna�onal Data Encryp�on Algorithm): A symmetric key block cipher.
+- IdP::Identity Provider
+    - IdP (Iden�ty Provider): A system en�ty that creates, maintains, and manages iden�ty informa�on for
+    - principals and provides principal authen�ca�on to other service providers within a federa�on or
+    - distributed network.
+- IM::Instant Messaging
+    - IM (Instant Messaging): A type of online chat that offers real‐�me text transmission over the internet.
+- IoC::Indicators of Compromise
+    - IoC (Indicators of Compromise): Ar�facts observed on a network or in an opera�ng system that with
+    - high confidence indicate a computer intrusion.
+- IR 2::Incident Response
+    - IR (Incident Response): An organized approach to addressing and managing the a�ermath of a security
+    - breach or cybera�ack.
+- IRC::Internet Relay Chat
+    - IRC (Internet Relay Chat): An applica�on layer protocol that facilitates communica�on in the form of
+    - text.
+- ISSO::Information Systems Security Officer
+    - ISSO (Informa�on Systems Security Officer): A person responsible for ensuring the appropriate
+    - opera�onal security posture is maintained for an informa�on system.
+- IV::Initialization Vector
+    - IV (Ini�aliza�on Vector): A fixed‐size input to a cryptographic primi�ve that is typically required to be
+    - random or pseudorandom.
+- 
+- KDC::Key Distribution Center
+    - KDC (Key Distribu�on Center): Part of a cryptosystem intended to reduce the risks inherent in
+    - exchanging keys.
+- KEK::Key Encryption Key
+    - KEK (Key Encryp�on Key): A key used to encrypt other keys.
+- 
+- L2TP::Layer 2 Tunneling Protocol
+    - L2TP (Layer 2 Tunneling Protocol): A tunneling protocol used to support virtual private networks (VPNs).
+- LEAP::Lightweight Extensible Authentication Protocol
+    - LEAP (Lightweight Extensible Authen�ca�on Protocol): A proprietary wireless LAN authen�ca�on
+    - method developed by Cisco Systems.
+- 
+- MaaS::Monitoring as a Service
+    - MaaS (Monitoring as a Service): A type of cloud service that involves the use of remote monitoring tools
+    - to manage and monitor the infrastructure of a company.
+- MAC 2::Mandatory Access Control
+    - MAC (Mandatory Access Control): A type of access control in which the opera�ng system constrains the
+    - ability of a subject or ini�ator to access or generally perform some sort of opera�on on an object or
+    - target.
+- MAC 3::Message Authentication Code
+    - MAC (Message Authen�ca�on Code): A short piece of informa�on used to authen�cate a message and
+    - to provide integrity and authen�city assurances on the message.
+- MD5::Message Digest 5
+    - MD5 (Message Digest 5): A widely used cryptographic hash func�on that produces a 128‐bit (16‐byte)
+    - hash value.
+- ML::Machine Learning
+    - ML (Machine Learning): A type of ar�ficial intelligence that allows so�ware applica�ons to become
+    - more accurate at predic�ng outcomes without being explicitly programmed to do so.
+- MMS::Multimedia Message Service
+    - MMS (Mul�media Message Service): A standard way to send messages that include mul�media content
+    - to and from a mobile phone over a cellular network.
+- MOA::Memorandum of Agreement
+    - MOA (Memorandum of Agreement): A document wri�en between par�es to coopera�vely work
+    - together on an agreed‐upon project or meet an agreed‐upon objec�ve.
+- MPLS::Multi-protocol Label Switching
+    - MPLS (Mul�‐protocol Label Switching): A type of data‐carrying technique for high‐performance
+    - telecommunica�ons networks.
+- MSA::Master Service Agreement
+    - MSA (Master Service Agreement): A contract reached between par�es, in which the par�es agree to
+    - most of the terms that will govern future transac�ons or future agreements.
+- MSCHAP::Microsoft Challenge Handshake Authentication Protocol
+    - MSCHAP (Microso� Challenge Handshake Authen�ca�on Protocol): A Microso� proprietary version of
+    - the Challenge Handshake Authen�ca�on Protocol (CHAP) used by Windows NT.
+- MSP::Managed Service Provider
+    - MSP (Managed Service Provider): A company that remotely manages a customer's IT infrastructure
+    - and/or end‐user systems, typically on a proac�ve basis and under a subscrip�on model.
+- MSSP::Managed Security Service Provider
+    - MSSP (Managed Security Service Provider): A type of IT service company that provides organiza�ons
+    - with some amount of cybersecurity monitoring and management.
+- MTTF::Mean Time to Failure
+    - MTTF (Mean Time to Failure): The length of �me a device or other product is expected to last in
+    - opera�on.
+- MTTR 2::Mean Time to Recover
+    - MTTR (Mean Time to Recover): The average �me that a device will take to recover from any failure.
+- 
+- NGFW::Next-generation Firewall
+    - NGFW (Next‐genera�on Firewall): A part of the third genera�on of firewall technology that combines a
+    - tradi�onal firewall with other network device filtering func�onali�es.
+- NIDS::Network-based Intrusion Detection System
+    - NIDS (Network‐based Intrusion Detec�on System): A system that analyzes incoming network traffic.
+- NIPS::Network-based Intrusion Prevention System
+    - NIPS (Network‐based Intrusion Preven�on System): A system that monitors a network for malicious
+    - ac�vi�es such as security threats or policy viola�ons.
+- NIST::National Institute of Standards & Technology
+    - NIST (Na�onal Ins�tute of Standards & Technology): A physical sciences laboratory and a non‐
+    - regulatory agency of the United States Department of Commerce.
+- NTLM::New Technology LAN Manager
+    - NTLM (New Technology LAN Manager): A suite of Microso� security protocols that provides
+    - authen�ca�on, integrity, and confiden�ality to users.
+- 
+- OAUTH::Open Authorization
+    - OAuth (Open Authoriza�on): An open standard for access delega�on, commonly used as a way for
+    - Internet users to grant websites or applica�ons access to their informa�on on other websites but
+    - without giving them the passwords.
+- OCSP::Online Certificate Status Protocol
+    - OCSP (Online Cer�ficate Status Protocol): An internet protocol used for obtaining the revoca�on status
+    - of an X.509 digital cer�ficate.
+- OID::Object Identifier
+    - OID (Object Iden�fier): An iden�fier used to name an object (a set of data) in a globally unique way.
+- OSINT::Open-source Intelligence
+    - OSINT (Open‐source Intelligence): Intelligence collected from publicly available sources.
+- OTA::Over the Air
+    - OTA (Over the Air): Wireless transmission of data or so�ware updates to mobile devices.
+- OVAL::Open Vulnerability Assessment Language
+    - OVAL (Open Vulnerability Assessment Language): An informa�on security community standard to
+    - promote open and publicly available security content.
+- 
+- P12::PKCS #12
+    - P12 (PKCS #12): A portable format for storing or transpor�ng a user's private keys, cer�ficates, and
+    - miscellaneous secrets.
+- P2P::Peer to Peer
+    - P2P (Peer to Peer): A decentralized communica�ons model in which each party has the same capabili�es
+    - and either party can ini�ate a communica�on session.
+- PAC::Proxy Auto Configuration
+    - PAC (Proxy Auto Configura�on): A method used by web browsers to select an appropriate proxy server
+    - automa�cally.
+- PAM 2::Pluggable Authentication Modules
+    - PAM (Pluggable Authen�ca�on Modules): A mechanism to integrate mul�ple low‐level authen�ca�on
+    - schemes into a high‐level applica�on programming interface (API).
+- PAP::Password Authentication Protocol
+    - PAP (Password Authen�ca�on Protocol): A simple, plaintext password authen�ca�on protocol.
+- PBKDF2::Password-based Key Derivation Function 2
+    - PBKDF2 (Password‐based Key Deriva�on Func�on 2): A key deriva�on func�on that is part of RSA
+- PBX::Private Branch Exchange
+    - PBX (Private Branch Exchange): A private telephone network used within a company or organiza�on.
+- PCAP::Packet Capture
+    - PCAP (Packet Capture): The act of capturing data packets crossing a specific segment of a network.
+- PEAP::Protected Extensible Authentication Protocol
+    - PEAP (Protected Extensible Authen�ca�on Protocol): A method to securely transmit authen�ca�on
+    - informa�on, including passwords, over wireless networks.
+- PED::Personal Electronic Device
+    - PED (Personal Electronic Device): A small electronic device typically used for personal tasks such as
+    - communica�on, data management, and recrea�on.
+- PEM::Privacy Enhanced Mail
+    - PEM (Privacy Enhanced Mail): A de facto standard for secure email in the Internet community.
+- PFS::Perfect Forward Secrecy
+    - PFS (Perfect Forward Secrecy): A property of secure communica�on protocols in which compromise of
+    - long‐term keys does not compromise past session keys.
+- PGP::Pretty Good Privacy
+    - PGP (Pre�y Good Privacy): An encryp�on program that provides cryptographic privacy and
+    - authen�ca�on for data communica�on.
+- PKCS::Public Key Cryptography Standards
+    - PKCS (Public Key Cryptography Standards): A set of standards for public‐key cryptography that were
+    - established by RSA Data Security, Inc.
+- POTS::Plain Old Telephone Service
+    - POTS (Plain Old Telephone Service): The voice‐grade telephone service that remains the basic form of
+    - residen�al and small business service connec�on to the telephone network in most parts of the world.
+- PPTP::Point-to-Point Tunneling Protocol
+    - PPTP (Point‐to‐Point Tunneling Protocol): A method for implemen�ng virtual private networks.
+- PTZ::Pan-tilt-zoom
+    - PTZ (Pan‐�lt‐zoom): A type of camera that is capable of remote direc�onal and zoom control.
+- 
+- RA::Recovery Agent
+    - RA (Recovery Agent): An en�ty that has the ability to recover a key, cer�ficate, or encrypted data.
+- RA 2::Registration Authority
+    - RA (Registra�on Authority): An authority in a network that verifies user requests for a digital cer�ficate
+- RACE::Research and Development in Advanced Communications Technologies in Europe
+    - RACE (Research and Development in Advanced Communica�ons Technologies in Europe): A former
+    - European Union research and development program focused on developing advanced
+    - telecommunica�ons networks.
+- RAD::Rapid Application Development
+    - RAD (Rapid Applica�on Development): A type of so�ware development methodology that priori�zes
+    - rapid prototype releases and itera�ons.
+- RAS::Remote Access Server
+    - RAS (Remote Access Server): A server that provides a remote access service to users or client
+    - computers.
+- RAT::Remote Access Trojan
+    - RAT (Remote Access Trojan): A malware program that includes a back door for administra�ve control
+    - over the target computer.
+- RBAC::Role-based Access Control
+    - RBAC (Role‐based Access Control): An approach to restric�ng system access to authorized users based
+    - on their role within an organiza�on.
+    - RBAC (Rule‐based Access Control): A policy‐neutral access control mechanism defined around roles and
+- RC4::Rivest Cipher version 4
+    - RC4 (Rivest Cipher version 4): A stream cipher that is simple and fast but has vulnerabili�es and is
+    - considered insecure.
+- RIPEMD::RACE Integrity Primitives Evaluation Message Digest
+    - RIPEMD (RACE Integrity Primi�ves Evalua�on Message Digest): A family of cryptographic hash func�ons
+    - developed in Belgium.
+- ROI::Return on Investment
+    - ROI (Return on Investment): A measure used to evaluate the efficiency of an investment or compare the
+    - efficiency of a number of different investments.
+- RSA::Rivest, Shamir, & Adleman
+    - RSA (Rivest, Shamir, & Adleman): One of the first public‐key cryptosystems and is widely used for secure
+    - data transmission.
+- RTBH::Remotely Triggered Black Hole
+    - RTBH (Remotely Triggered Black Hole): A technique used to block denial‐of‐service a�acks in IP
+    - networks.
+- RTOS::Real-time Operating System
+    - RTOS (Real‐�me Opera�ng System): An opera�ng system intended to serve real‐�me applica�on
+    - process data as it comes in, typically without buffering delays.
+- RTP::Real-time Transport Protocol
+    - RTP (Real‐�me Transport Protocol): A network protocol for delivering audio and video over IP networks.
+- 
+- S/MIME::Secure/Multipurpose Internet Mail Extensions
+    - S/MIME (Secure/Mul�purpose Internet Mail Extensions): A standard for public key encryp�on and
+    - signing of MIME data.
+- SAE::Simultaneous Authentication of Equals
+    - SAE (Simultaneous Authen�ca�on of Equals): A security protocol used in Wi‐Fi networks.
+- SAN 2::Subject Alternative Name
+    - SAN (Subject Alterna�ve Name): An extension to X.509 specifica�on that allows users to specify
+    - addi�onal host names for a single SSL cer�ficate.
+- SCAP::Security Content Automation Protocol
+    - SCAP (Security Content Automa�on Protocol): A method for using specific standards to enable
+    - automated vulnerability management, measurement, and policy compliance evalua�on.
+- SCEP::Simple Certificate Enrollment Protocol
+    - SCEP (Simple Cer�ficate Enrollment Protocol): A protocol used for the secure issuance of digital
+    - cer�ficates.
+- SDK::Software Development Kit
+    - SDK (So�ware Development Kit): A collec�on of so�ware development tools in one installable package.
+- SDLC::Software Development Lifecycle
+    - SDLC (So�ware Development Lifecycle): A process for planning, crea�ng, tes�ng, and deploying an
+    - informa�on system.
+- SDLM::Software Development Lifecycle Methodology
+    - SDLM (So�ware Development Lifecycle Methodology): A framework that describes the stages involved
+    - in the development of so�ware, from ini�al feasibility study through maintenance of the completed
+    - applica�on.
+- SE Linux::Security-enhanced Linux
+    - SE Linux (Security‐enhanced Linux): A set of kernel modifica�ons and user‐space tools that have been
+    - added to various Linux distribu�ons. Its purpose is to enhance Linux system security by enforcing
+    - mandatory access control policies.
+- SED::Self-encrypting Drives
+    - SED (Self‐encryp�ng Drives): Storage drives (usually hard drives or solid‐state drives) that automa�cally
+    - and con�nuously encrypt the data on the drive without any user interac�on.
+- SEH::Structured Exception Handler
+    - SEH (Structured Excep�on Handler): A mechanism in Microso� Windows for handling both hardware
+    - and so�ware excep�ons.
+- SHA::Secure Hashing Algorithm
+    - SHA (Secure Hashing Algorithm): A family of cryptographic hash func�ons published by the Na�onal
+    - Ins�tute of Standards and Technology as a U.S. Federal Informa�on Processing Standard.
+- SHTTP::Secure Hypertext Transfer Protocol
+    - SHTTP (Secure Hypertext Transfer Protocol): An obsolete alterna�ve to HTTPS for encryp�ng web
+    - communica�ons carried over HTTP.
+- SLE::Single Loss Expectancy
+    - SLE (Single Loss Expectancy): A term used in risk management referring to the monetary value expected
+    - from the occurrence of a risk on an asset.
+- SOAP::Simple Object Access Protocol
+    - SOAP (Simple Object Access Protocol): A messaging protocol specifica�on for exchanging structured
+    - informa�on in the implementa�on of web services in computer networks.
+- SOAR::Security Orchestration, Automation, Response
+    - SOAR (Security Orchestra�on, Automa�on, and Response): Technologies that enable organiza�ons to
+    - collect inputs monitored by the security opera�ons center (SOC).
+- SoC::System on Chip
+    - SoC (System on Chip): An integrated circuit that integrates all components of a computer or other
+    - electronic systems into a single chip.
+- SOC::Security Operations Center
+    - SOC (Security Opera�ons Center): A centralized unit that deals with security issues on an organiza�onal
+    - and technical level.
+- SOW::Statement of Work
+    - SOW (Statement of Work): A document rou�nely employed in the field of project management. It
+    - defines project‐specific ac�vi�es, deliverables, and �melines for a vendor providing services to the client.
+- SPIM::Spam over Internet Messaging
+    - SPIM (Spam over Internet Messaging): Unsolicited messages sent via an instant messaging (IM) system.
+- SQLi::SQL Injection
+    - SQLi (SQL Injec�on): A code injec�on technique used to a�ack data‐driven applica�ons, in which
+    - malicious SQL statements are inserted into an entry field for execu�on.
+- SRTP::Secure Real-Time Protocol
+    - SRTP (Secure Real‐Time Protocol): A profile of the Real‐Time Transport Protocol (RTP) intended to
+    - provide encryp�on, message authen�ca�on, and integrity, and replay protec�on to the RTP data in both
+    - unicast and mul�cast applica�ons.
+- STIX::Structured Threat Information eXchange
+    - STIX (Structured Threat Informa�on eXchange): A language and serializa�on format used to exchange
+    - cyber threat intelligence.
+- SWG::Secure Web Gateway
+    - SWG (Secure Web Gateway): Solu�ons that filter unwanted so�ware/malware from user‐ini�ated
+    - web/internet traffic and enforce corporate and regulatory policy compliance.
+- 
+- TAXII::Trusted Automated eXchange of Indicator Information
+    - TAXII (Trusted Automated eXchange of Indicator Informa�on): An applica�on layer protocol for the
+    - communica�on of cyber threat informa�on in a simple and scalable manner.
+- TGT::Ticket Granting Ticket
+    - TGT (Ticket Gran�ng Ticket): A part of the Kerberos protocol used for authen�ca�ng requests for service
+    - �ckets within the network.
+- TOC::Time-of-check
+    - TOC (Time‐of‐check): Refers to a problem where the state of a system can change between the �me it is
+    - checked and the �me it is used.
+- TOU::Time-of-use
+    - TOU (Time‐of‐use): Refers to the varying price of electricity or other resources depending on the �me
+    - when it is used.
+- TTP::Tactics, Techniques, and Procedures
+    - TTP (Tac�cs, Techniques, and Procedures): Describes the behavior or modus operandi of cyber a�ackers
+    - in terms of the tac�cs they use, the techniques they employ, and the procedures they follow to execute
+    - an a�ack.
+- TSIG::Transaction Signature
+    - TSIG (Transac�on Signature): A protocol used for securing updates to DNS, which is based on shared
+    - secret key cryptography.
+- 
+- UAT::User Acceptance Testing
+    - UAT (User Acceptance Tes�ng): The last phase of the so�ware tes�ng process, where actual so�ware
+    - users test the so�ware to make sure it can handle required tasks in real‐world scenarios.
+- UAV::Unmanned Aerial Vehicle
+    - UAV (Unmanned Aerial Vehicle): An aircra� without a human pilot aboard, also known as a drone.
+- UEM::Unified Endpoint Management
+    - UEM (Unified Endpoint Management): A class of so�ware tools that provide a single management
+    - interface for mobile, PC, and other devices.
+- URI::Uniform Resource Identifier
+    - URI (Uniform Resource Iden�fier): A string of characters used to iden�fy a name or a resource on the
+    - Internet.
+- USB OTG::USB On the Go
+    - USB OTG (USB On‐The‐Go): A standard that enables mobile devices to talk to one another.
+- 
+- VBA::Visual Basic
+    - VBA (Visual Basic for Applica�ons): An implementa�on of Microso�'s event‐driven programming
+    - language Visual Basic 6 and its associated integrated development environment (IDE).
+- VDE::Virtual Desktop Environment
+    - VDE (Virtual Desktop Environment): A virtual machine that provides a user with a graphical interface
+    - similar to that of a physical desktop.
+- VTC::Video Teleconferencing
+    - VTC (Video Teleconferencing): A technology that allows users in different loca�ons to hold face‐to‐face
+    - mee�ngs without having to move to a single loca�on together.
+- 
+- WAF::Web Application Firewall
+    - WAF (Web Applica�on Firewall): A specific form of applica�on firewall that filters, monitors, and blocks
+    - HTTP traffic to and from a web service.
+- WAP::Wireless Access Point
+    - WAP (Wireless Access Point): A networking hardware device that allows a Wi‐Fi device to connect to a
+    - wired network.
+- WIDS::Wireless Intrusion Detection System
+    - WIDS (Wireless Intrusion Detec�on System): A system designed to detect the presence
+- WIPS::Wireless Intrusion Prevention System
+- WO::Work Order
+- WTLS::Wireless TLS
+- 
+- XDR::Extended Detection and Response
+- XML::Extensible Markup Language
+- XOR::Exclusive Or
+- XSRF::Cross-site Request Forgery
+- 

@@ -1,0 +1,54 @@
+- --------------------- Portal ---------------------query:[SUSE Certified Engineer (SCE)](SUSE%20Certified%20Engineer%20(SCE).md)
+    - --------------------- Portal ---------------------
+        - Linux Certifictions #linux
+- Site: [ SUSE Certified Engineer in SUSE Linux Enterprise Server 15 | SUSE](https://www.suse.com/training/exam/sce-sles-15/)
+- # SCE in SUSE Linux Enterprise Server 15
+    - [Size]();-[H1]()
+    - The SUSE Certified Engineer (SCE) in SUSE Linux Enterprise Server 15 is targeted at advanced system operators and consultants. The certification validates knowledge in topics which are either more advanced than those covered in the SCA or less commonly used. These topics focus on how to design and manage complex configurations which are considered beyond the scope of typical ongoing operational usage.
+- ### How to Earn the Certification
+    - [Size]();-[H3]()
+    - Candidates can earn the SCE in SUSE Linux Enterprise Server 15 by passing the core SCE in SUSE Linux Enterprise Server 15 exam.
+    - Details for the Core SCE in SUSE Linux Enterprise 15 exam are below.  In addition to the core SCE in SUSE Linux Enterprise Server 15 exam, the SCA in SUSE Linux Enterprise Server version 12 or 15 certification is a prerequisite for this engineer level certification.
+- ## Core Exam Information
+    - [Size]();-[H2]()
+- ### Study Options
+    - [Size]();-[H3]()
+    - Candidates who do not hold the SCE in SUSE Linux Enterprise Server 12 certification would benefit from the following course:
+        - [SLE301v15 – SUSE Linux Enterprise 15 Advanced Administration](https://www.suse.com/training/course/sle301v15/)
+    - As with all SUSE certifications, course work is not required. You need to pass this certification exam and meet the prerequisites in order to achieve the certification. We highly recommend you study the objectives and prepare for the exam.
+- ### Detailed Objectives
+    - [Size]();-[H3]()
+    - In addition to the objectives below, this exam may also cover objectives from the [SUSE Certified Administrator in Enterprise Linux 15](https://www.suse.com/training/exam/sca-sles-15) exam.
+    - Advanced System Administration
+        - YaST Security Module
+        - Backup and Recovery
+        - Software Libraries
+        - General Server Health
+        - Monitoring Overview
+        - Control Groups
+    - Encryption
+        - SSL/TLS
+        - GPG
+    - Shell Scripting
+    - Hardware
+        - Hardware Information
+        - Drivers
+    - Advanced Networking
+        - Advanced Network Interface Types
+        - Network Namespaces
+        - IPv6
+    - Advanced Storage Administration
+        - iSCSI
+        - Multipath IO
+    - Centralized Authentication
+        - PAM
+        - SSSD
+    - Advanced Software Management
+        - RPM
+        - Repositories
+        - RMT
+    - Configuration Management with Salt
+        - Salt Overview
+        - Install and Configure Salt
+        - Salt Execution Modules
+        - The Salt State System

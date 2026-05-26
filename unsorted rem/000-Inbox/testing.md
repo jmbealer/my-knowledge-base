@@ -1,0 +1,82 @@
+- {{AC (Alternating Current)}} - Reversing electrical current flow
+- {{DC (Direct Current)}} - One-directional electrical current
+- {{Electrical signal}} - Voltage level representing data
+- {{Transistor}} - Electronic switch for binary logic
+- {{Logic gate}} - Performs binary operations (AND, OR)
+- {{Power supply (PSU)}} - Converts AC to DC power
+- {{Heat sink}} - Dissipates heat from components
+- {{Bit}} - Smallest data unit: 0 or 1
+- {{Byte}} - Group of 8 bits
+- {{Char}} - Single character of text
+- {{Integer}} - Whole number value
+- {{Float}} - Decimal/fractional number
+- {{Boolean}} - True or false value
+- {{AIO (All-in-One)}} - Combined PC with screen/components
+- {{ARM (Advanced RISC Machines)}} - Efficient CPU architecture for devices
+- {{CPU (Central Processing Unit)}} - Executes program instructions
+- {{GPU (Graphics Processing Unit)}} - Renders images, video, and animation
+- {{RAM (Random-access Memory)}} - Temporary working system memory
+- {{ROM (Read-only Memory)}} - Permanent non-editable memory
+- {{vCPU (Virtual CPU)}} - Software-emulated processor core
+- {{vRAM (Virtual RAM)}} - Emulated volatile memory for VMs
+- {{HDD (Hard Disk Drive)}} - Magnetic storage with moving parts
+- {{SSD (Solid State Drive)}} - Fast flash-based data storage
+- {{vHDD (Virtual Hard Drive)}} - Software-based storage disk
+- {{Flash drive}} - Portable USB solid-state storage
+- {{SD card (Secure Digital Card)}} - Small removable flash memory
+- {{DIMM (Dual Inline Memory Module)}} - RAM stick for motherboards
+- {{SATA (Serial ATA)}} - Interface for storage devices
+- {{NVMe (Non-Volatile Memory Express)}} - High-speed PCIe SSD protocol
+- {{SFP (Small Form-factor Pluggable)}} - Pluggable fiber/Ethernet connector module
+- {{eSATA (External SATA)}} - External storage connection interface
+- {{Motherboard}} - Main board connecting all components
+- {{NIC (Network Interface Card)}} - Hardware enabling network connectivity
+- {{vNIC (Virtual NIC)}} - Software-defined network interface
+- {{USB (Universal Serial Bus)}} - Universal data/power port
+- {{USB-A}} - Standard rectangular USB connector
+- {{USB-C}} - Reversible, multi-use USB connector
+- {{Thunderbolt}} - High-speed data/display cable interface
+- {{HDMI (High-Definition Multimedia Interface)}} - Audio-video output interface
+- {{DVI (Digital Visual Interface)}} - Digital video output port
+- {{VGA (Video Graphics Array)}} - Analog video display interface
+- {{RJ (Registered Jack)}} - Telecom/data cable connector standard
+- {{RJ11}} - Phone line connector
+- {{RJ45}} - Ethernet cable connector
+- {{Cable}} - Physical wired data connection
+- {{Wireless}} - Radio-based data transmission method
+- {{Bluetooth}} - Short-range wireless communication
+- {{NFC (Near Field Communication)}} - Contact-based wireless data transfer
+- {{IR (Infrared)}} - Light-based short-range communication
+- {{Monitor}} - Displays system video output
+- {{Keyboard}} - Inputs typed text/data
+- {{Mouse}} - Controls on-screen pointer
+- {{Speakers}} - Outputs sound from device
+- {{Scanner}} - Converts images to digital format
+- {{Printer}} - Produces physical document output
+- {{Projector}} - Projects video onto surface
+- {{Webcam}} - Captures video input
+- {{UPS (Uninterruptible Power Supply)}} - Backup power during outage
+- 
+- {{Binary}} - Base-2 numeral system (0, 1)
+- {{Decimal}} - Base-10 numeral system
+- {{Octal}} - Base-8 numeral system
+- {{Hexadecimal}} - Base-16 numeral system
+- {{ASCII (American Standard Code for Information Interchange)}} - Character encoding standard
+- {{Unicode}} - Universal encoding for all characters
+- {{Encoding}} - Converts data into a readable format
+- {{String}} - Sequence of characters
+- {{Array}} - Ordered list of elements
+- {{Table}} - Organized rows and columns of data
+- {{Record}} - One complete row of data
+- {{Row}} - Horizontal line of related data
+- {{Field}} - Vertical column representing an attribute
+- {{Primary key}} - Uniquely identifies a table row
+- {{Foreign key}} - Links to primary key in another table
+- {{Schema}} - Database’s structural design
+- {{Index}} - Speeds up data lookups
+- {{Key/value}} - Pair of identifier and stored value
+- {{Document database}} - Stores structured JSON-like documents
+- {{Structured data}} - Organized in defined schema/tables
+- {{Semi-structured data}} - Partially organized with tags or keys
+- {{Unstructured data}} - No fixed schema or format
+- {{Data structure}} - Organized data storage method

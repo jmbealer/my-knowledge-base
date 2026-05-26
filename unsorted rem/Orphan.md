@@ -1,0 +1,1145 @@
+- Orphans Discovered November 27th, 2025 #Orphan
+    - Parent 1
+        - ### [quotes](https://www.youtube.com/watch?v=LDOzvjAPC0M&list=PLXxRr65QMmRL9j5x1T7DuEijkEG8jaylD&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRL9j5x1T7DuEijkEG8jaylD)
+        - 
+        - 
+        - 
+        - 5 videos
+        - ### [Organizing](https://www.youtube.com/watch?v=y-LeibeXAog&list=PLXxRr65QMmRJnoQg4BpLvAMlHgSaf5APk&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJnoQg4BpLvAMlHgSaf5APk)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [Podcast](https://www.youtube.com/watch?v=_t9Zknmdkuk&list=PLXxRr65QMmRKBTzJBNmoyBzUU5y7SQCtP&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKBTzJBNmoyBzUU5y7SQCtP)
+        - 
+        - 
+        - 
+        - 2 videos
+        - ### [Motivation](https://www.youtube.com/watch?v=PX5-XyBNi00&list=PLXxRr65QMmRIhP1D_XvpgSn2uLLDmojmI&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIhP1D_XvpgSn2uLLDmojmI)
+        - 
+        - 
+        - 
+        - 4 videos
+        - ### [News](https://www.youtube.com/watch?v=VpAfQUIWGhg&list=PLXxRr65QMmRIAFjRjwWAwEBoAzQYC_l0n&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIAFjRjwWAwEBoAzQYC_l0n)
+        - 
+        - 
+        - 
+        - 6 videos
+        - ### [Massages](https://www.youtube.com/watch?v=m4Hmg0dW0eo&list=PLXxRr65QMmRLryw_WcIn5CjB3EZ80uaKB&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLryw_WcIn5CjB3EZ80uaKB)
+        - 
+        - 
+        - 
+        - 9 videos
+        - ### [Ergonomics](https://www.youtube.com/watch?v=Ov9uD0xteMI&list=PLXxRr65QMmRJW3d5jiKQaDOuietd6e27u&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJW3d5jiKQaDOuietd6e27u)
+        - 
+        - 
+        - 
+        - 3 videos
+        - ### [Info](https://www.youtube.com/watch?v=tGnf8G8A8qU&list=PLXxRr65QMmRKIn8DWmXZVwwSOLXgAc-6E&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKIn8DWmXZVwwSOLXgAc-6E)
+        - 
+        - 
+        - 
+        - 18 videos
+        - ### [Housing](https://www.youtube.com/watch?v=v_8W58LMHrs&list=PLXxRr65QMmRKR7sz97kDzlLrQ0OSrUwfT&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKR7sz97kDzlLrQ0OSrUwfT)
+        - 
+        - 
+        - 
+        - 10 videos
+        - ### [Dog](https://www.youtube.com/watch?v=WtgrUwkAy8E&list=PLXxRr65QMmRL1bHiKuGU2a9skuYF1URPP&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRL1bHiKuGU2a9skuYF1URPP)
+        - 
+        - 
+        - 
+        - 13 videos
+        - ### [EDC](https://www.youtube.com/watch?v=AYhpD0HkoHY&list=PLXxRr65QMmRJ0ckfRyQgCJRi1CC528ol4&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJ0ckfRyQgCJRi1CC528ol4)
+        - 
+        - 
+        - 
+        - 1 video
+        - ### [DIY](https://www.youtube.com/watch?v=E5G8NY74Orc&list=PLXxRr65QMmRLVjDuhZ-r12DmlehpS-zuZ&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLVjDuhZ-r12DmlehpS-zuZ)
+        - 
+        - 
+        - 
+        - 34 videos
+        - ### [Communication](https://www.youtube.com/watch?v=btBw70HAys4&list=PLXxRr65QMmRIpw2jcS5Ef1zzakjI5HYpi&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIpw2jcS5Ef1zzakjI5HYpi)
+        - 
+        - 
+        - 
+        - 5 videos
+        - ### [Comments](https://www.youtube.com/watch?v=Z9sHUVdw1b4&list=PLXxRr65QMmRLcxZ10qntmswRO5IaDTHFE&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLcxZ10qntmswRO5IaDTHFE)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [Animal](https://www.youtube.com/watch?v=Jvcn3XnZLOo&list=PLXxRr65QMmRJF3KsLFfIT67rl1ZZVFAMa&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJF3KsLFfIT67rl1ZZVFAMa)
+        - 
+        - 
+        - 
+        - 10 videos
+        - ### [Body Language-Training](https://www.youtube.com/watch?v=EF8AjVQJoas&list=PLXxRr65QMmRJ6bO_mqhPIHVDJUuwZZTPA&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJ6bO_mqhPIHVDJUuwZZTPA)
+        - 
+        - 
+        - 
+        - 63 videos
+        - ### [SE:Lisp](https://www.youtube.com/watch?v=ciGyHkDuPAE&list=PLXxRr65QMmRLHFzmG8ddHcr63MR2DjDym&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLHFzmG8ddHcr63MR2DjDym)
+        - 
+        - 
+        - 
+        - 314 videos
+        - ### [Chess course from beginner to master level | Learn how to play Chess the right way](https://www.youtube.com/watch?v=AshEhLcPHqU&list=PLQKBpQZcRycrvUUxLdVmlfMChJS0S5Zw0)
+            - [Size]();-[H3]()
+        - [NM Robert Ramirez](https://www.youtube.com/@NMRobertRamirez)•[Playlist](https://www.youtube.com/@NMRobertRamirez)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLQKBpQZcRycrvUUxLdVmlfMChJS0S5Zw0)
+        - 
+        - 
+        - 
+        - 16 videos
+        - ### [C Programming Tutorials](https://www.youtube.com/watch?v=gSitgqAJn_I&list=PL_rcwK265X9egWCUbZs1iBRnSbHR0jCF3)
+            - [Size]();-[H3]()
+        - [ADV. LEARNING](https://www.youtube.com/@ADVLEARNING)•[Playlist](https://www.youtube.com/@ADVLEARNING)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL_rcwK265X9egWCUbZs1iBRnSbHR0jCF3)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [C Programming Projects / Mini Projects](https://www.youtube.com/watch?v=N2BwLm3mTAE&list=PL3F9Hs9aMou0og6Dzfwx__h1jjb8e81vR)
+            - [Size]();-[H3]()
+        - [The Tech Machine](https://www.youtube.com/@thetechmachine5446)•[Playlist](https://www.youtube.com/@thetechmachine5446)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL3F9Hs9aMou0og6Dzfwx__h1jjb8e81vR)
+        - 
+        - 
+        - 
+        - 187 videos
+        - ### [Prealgebra Playlist 1](https://www.youtube.com/watch?v=hnpPEzE4urU&list=PL7D04E9B9C4C01309)
+            - [Size]();-[H3]()
+        - [Professor Leonard](https://www.youtube.com/@ProfessorLeonard)•[Playlist](https://www.youtube.com/@ProfessorLeonard)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL7D04E9B9C4C01309)
+        - 
+        - 
+        - 
+        - 18 videos
+        - ### [Haircuts](https://www.youtube.com/watch?v=lBUOZc6dmNw&list=PLXxRr65QMmRIqLUUT2mgK2GLrGFlwOeMv&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIqLUUT2mgK2GLrGFlwOeMv)
+        - 
+        - 
+        - 
+        - 20 lessons
+        - ### [MIT Calculus Revisited: Calculus of Complex Variables](https://www.youtube.com/watch?v=BOx8LRyr8mU&list=PLD971E94905A70448)
+            - [Size]();-[H3]()
+        - [MIT OpenCourseWare](https://www.youtube.com/@mitocw)•[Course](https://www.youtube.com/@mitocw)
+        - [View full course](https://www.youtube.com/playlist?list=PLD971E94905A70448)
+        - 
+        - 
+        - 
+        - 26 lessons
+        - ### [MIT Calculus Revisited: Multivariable Calculus](https://www.youtube.com/watch?v=wsOoClvZmic&list=PL1C22D4DED943EF7B)
+            - [Size]();-[H3]()
+        - [MIT OpenCourseWare](https://www.youtube.com/@mitocw)•[Course](https://www.youtube.com/@mitocw)
+        - [View full course](https://www.youtube.com/playlist?list=PL1C22D4DED943EF7B)
+        - 
+        - 
+        - 
+        - 38 lessons
+        - ### [MIT Calculus Revisited: Single Variable Calculus](https://www.youtube.com/watch?v=MFRWDuduuSw&list=PL3B08AE665AB9002A)
+            - [Size]();-[H3]()
+        - [MIT OpenCourseWare](https://www.youtube.com/@mitocw)•[Course](https://www.youtube.com/@mitocw)
+        - [View full course](https://www.youtube.com/playlist?list=PL3B08AE665AB9002A)
+        - 
+        - 
+        - 
+        - 18 lessons
+        - ### [Highlights of Calculus](https://www.youtube.com/watch?v=X9t-u87df3o&list=PLBE9407EA64E2C318&pp=iAQB)
+            - [Size]();-[H3]()
+        - [MIT OpenCourseWare](https://www.youtube.com/@mitocw)•[Course](https://www.youtube.com/@mitocw)
+        - [View full course](https://www.youtube.com/playlist?list=PLBE9407EA64E2C318)
+        - 
+        - 
+        - 
+        - 33 lessons
+        - ### [Abstract Algebra](https://www.youtube.com/watch?v=IP7nW_hKB7I&list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6&pp=iAQB)
+            - [Size]();-[H3]()
+        - [Socratica](https://www.youtube.com/@Socratica)•[Course](https://www.youtube.com/@Socratica)
+        - [View full course](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)
+        - 
+        - 
+        - 
+        - 72 videos
+        - ### [Google IT Support Certificate](https://www.youtube.com/watch?v=lJC_sJ6jhDo&list=PLTZYG7bZ1u6o9sREwhYa0v1Ten-XMKXlL)
+            - [Size]();-[H3]()
+        - [Google Career Certificates](https://www.youtube.com/@GoogleCareerCertificates)•[Playlist](https://www.youtube.com/@GoogleCareerCertificates)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLTZYG7bZ1u6o9sREwhYa0v1Ten-XMKXlL)
+        - 
+        - 
+        - 
+        - 39 lessons
+        - ### [Google Cybersecurity Certificate](https://www.youtube.com/watch?v=_DVVNOGYtmU&list=PLTZYG7bZ1u6ocTMdhDwwmfjaNv134KcWn)
+            - [Size]();-[H3]()
+        - [Google Career Certificates](https://www.youtube.com/@GoogleCareerCertificates)•[Course](https://www.youtube.com/@GoogleCareerCertificates)
+        - [View full course](https://www.youtube.com/playlist?list=PLTZYG7bZ1u6ocTMdhDwwmfjaNv134KcWn)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [How do Computers Work?](https://www.youtube.com/watch?v=wtdnatmVdIg&list=PL6rx9p3tbsMsZ9hUvU-kDOXc8Fot04Hhu)
+            - [Size]();-[H3]()
+        - [Branch Education](https://www.youtube.com/@BranchEducation)•[Playlist](https://www.youtube.com/@BranchEducation)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL6rx9p3tbsMsZ9hUvU-kDOXc8Fot04Hhu)
+        - 
+        - 
+        - 
+        - 9 videos
+        - ### [Perl](https://www.youtube.com/watch?v=74_7LrRe5DI&list=PLXxRr65QMmRKAHfE3Lw-_Kc8ACpBMAYml&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKAHfE3Lw-_Kc8ACpBMAYml)
+        - 
+        - 
+        - 
+        - 77 videos
+        - ### [55:LNX:Apps](https://www.youtube.com/watch?v=MGN5JcpC7e0&list=PLXxRr65QMmRKxqlRyU99x_Uy1yyES2BUf&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKxqlRyU99x_Uy1yyES2BUf)
+        - 
+        - 
+        - 
+        - 44 videos
+        - ### [Eyes-Training](https://www.youtube.com/watch?v=8cZN3ESTzOI&list=PLXxRr65QMmRJgne_azVI-SQHuDb_-R9f3&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJgne_azVI-SQHuDb_-R9f3)
+        - 
+        - 
+        - 
+        - 46 videos
+        - ### [LNX:Dwm](https://www.youtube.com/watch?v=xnREqY-oyzM&list=PLXxRr65QMmRKmJjtZDHAfCwC6SO-f2Z6w&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKmJjtZDHAfCwC6SO-f2Z6w)
+        - 
+        - 
+        - 
+        - 53 videos
+        - ### [CE:iPad](https://www.youtube.com/watch?v=zpIXDlrabgg&list=PLXxRr65QMmRJCbPKylOKmmAtz1HnGpqQi&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJCbPKylOKmmAtz1HnGpqQi)
+        - 
+        - 
+        - 
+        - 46 videos
+        - ### [Intermediate Algebra (Full Length Videos)](https://www.youtube.com/watch?v=0EnklHkVKXI&list=PLC292123722B1B450)
+            - [Size]();-[H3]()
+        - [Professor Leonard](https://www.youtube.com/@ProfessorLeonard)•[Playlist](https://www.youtube.com/@ProfessorLeonard)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLC292123722B1B450)
+        - 
+        - 
+        - 
+        - 44 videos
+        - ### [Prealgebra (Full Length Videos)](https://www.youtube.com/watch?v=cC7n_ZyVUns&list=PL4C9296DF81B9EF13)
+            - [Size]();-[H3]()
+        - [Professor Leonard](https://www.youtube.com/@ProfessorLeonard)•[Playlist](https://www.youtube.com/@ProfessorLeonard)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL4C9296DF81B9EF13)
+        - 
+        - 
+        - 
+        - 56 videos
+        - ### [Intermediate Algebra Course](https://www.youtube.com/watch?v=G9BpXki19O0&list=PLm2VEQtiYjhoEvVOJzs8jrgFc1zXQVMiQ)
+            - [Size]();-[H3]()
+        - [The College Prep School](https://www.youtube.com/@thecollegeprepschool4486)•[Playlist](https://www.youtube.com/@thecollegeprepschool4486)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLm2VEQtiYjhoEvVOJzs8jrgFc1zXQVMiQ)
+        - 
+        - 
+        - 
+        - 50 videos
+        - ### [Geometry Course](https://www.youtube.com/watch?v=HgboXTwnimI&list=PLm2VEQtiYjhoXTFAF8nuN5YrAl2Muh4Nw)
+            - [Size]();-[H3]()
+        - [The College Prep School](https://www.youtube.com/@thecollegeprepschool4486)•[Playlist](https://www.youtube.com/@thecollegeprepschool4486)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLm2VEQtiYjhoXTFAF8nuN5YrAl2Muh4Nw)
+        - 
+        - 
+        - 
+        - 38 videos
+        - ### [Beginning Algebra Course](https://www.youtube.com/watch?v=mM3ZQJhjQrQ&list=PLm2VEQtiYjhpXDka_1Q6m0x1rL5GRPMX8)
+            - [Size]();-[H3]()
+        - [The College Prep School](https://www.youtube.com/@thecollegeprepschool4486)•[Playlist](https://www.youtube.com/@thecollegeprepschool4486)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLm2VEQtiYjhpXDka_1Q6m0x1rL5GRPMX8)
+        - 
+        - 
+        - 
+        - 28 videos
+        - ### [Pre-Algebra Course](https://www.youtube.com/watch?v=1Sx5iW00fFQ&list=PLm2VEQtiYjhoZuRqvrC_dxSrwr0uexm4l)
+            - [Size]();-[H3]()
+        - [The College Prep School](https://www.youtube.com/@thecollegeprepschool4486)•[Playlist](https://www.youtube.com/@thecollegeprepschool4486)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLm2VEQtiYjhoZuRqvrC_dxSrwr0uexm4l)
+        - 
+        - 
+        - 
+        - 47 videos
+        - ### [math-problems](https://www.youtube.com/watch?v=naGkELTaSuQ&list=PLXxRr65QMmRLVzcnethmbAOB6qfBtMVSe&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLVzcnethmbAOB6qfBtMVSe)
+        - 
+        - 
+        - 
+        - 69 videos
+        - ### [math-lectures](https://www.youtube.com/watch?v=txEWtgII2Bk&list=PLXxRr65QMmRLF_abvgtJKJr0aWk2YLzCA&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLF_abvgtJKJr0aWk2YLzCA)
+        - 
+        - 
+        - 
+        - 17 videos
+        - ### [02-math-others](https://www.youtube.com/watch?v=5tHpDzXP-lg&list=PLXxRr65QMmRLJla3NYmPJVhsqjHfdH2qM&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLJla3NYmPJVhsqjHfdH2qM)
+        - 
+        - 
+        - 
+        - 44 videos
+        - ### [01-math-books](https://www.youtube.com/watch?v=pTnEG_WGd2Q&list=PLXxRr65QMmRJ56Um6PhnRCanIWw-HpCF_&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJ56Um6PhnRCanIWw-HpCF_)
+        - 
+        - 
+        - 
+        - 65 videos
+        - ### [Software](https://www.youtube.com/watch?v=DIDq1IsZkc0&list=PLXxRr65QMmRL0U4QjAT_WE5QP3RK5qjJI&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRL0U4QjAT_WE5QP3RK5qjJI)
+        - 
+        - 
+        - 
+        - 29 videos
+        - ### [Stanford University - C programming](https://www.youtube.com/watch?v=Ps8jOj7diA0&list=PLjn3WmBeabPOUzxcCkzk4jYMGRZMZ6ylF)
+            - [Size]();-[H3]()
+        - [Ryan55171](https://www.youtube.com/@Ryan55171)•[Playlist](https://www.youtube.com/@Ryan55171)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLjn3WmBeabPOUzxcCkzk4jYMGRZMZ6ylF)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [Film](https://www.youtube.com/watch?v=hEgsIV98ZmU&list=PLXxRr65QMmRKi-PHTubSCm3o3YW6QanBa&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKi-PHTubSCm3o3YW6QanBa)
+        - 
+        - 
+        - 
+        - 15 videos
+        - ### [acronyms](https://www.youtube.com/watch?v=GBHim0-CyzU&list=PLXxRr65QMmRITjzl0w1LWplkKjlXKYXBn&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRITjzl0w1LWplkKjlXKYXBn)
+        - 
+        - 
+        - 
+        - 28 videos
+        - ### [11:LNX:Bspwm](https://www.youtube.com/watch?v=7lLa4IoVdCo&list=PLXxRr65QMmRLjKqbMxWqvrbLdC3CMaE6c&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLjKqbMxWqvrbLdC3CMaE6c)
+        - 
+        - 
+        - 
+        - 189 videos
+        - ### [Basketball-Highlights](https://www.youtube.com/watch?v=E1pFzwBKEkA&list=PL190B559DBF50A06F&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PL190B559DBF50A06F)
+        - 
+        - 
+        - 
+        - 15 videos
+        - ### [SAT/ACT Prep Videos](https://www.youtube.com/watch?v=5YcXk1SnRSw&list=PL9cqK-GYp2U7cS6IRPGNafOQGK-0XtsKH)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U7cS6IRPGNafOQGK-0XtsKH)
+        - 
+        - 
+        - 
+        - 17 videos
+        - ### [Geometry Lessons Playlist](https://www.youtube.com/watch?v=2ue9IAk2cCE&list=PL9cqK-GYp2U48cXe7YR4LLUeshCfzgHQA)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U48cXe7YR4LLUeshCfzgHQA)
+        - 
+        - 
+        - 
+        - 31 videos
+        - ### [Calculus Lessons Playlist](https://www.youtube.com/watch?v=HbcEy9PDN38&list=PL9cqK-GYp2U4iZAwAWBlosuUSsk5jJzN_)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U4iZAwAWBlosuUSsk5jJzN_)
+        - 
+        - 
+        - 
+        - 68 videos
+        - ### [Pre-Calculus Lessons Playlist](https://www.youtube.com/watch?v=UXPCqhRd1YU&list=PL9cqK-GYp2U5iFJ2VGoEuAEZBkssmcQ2o)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U5iFJ2VGoEuAEZBkssmcQ2o)
+        - 
+        - 
+        - 
+        - 95 videos
+        - ### [Algebra 2 Lessons Playlist](https://www.youtube.com/watch?v=UXPCqhRd1YU&list=PL9cqK-GYp2U7_jtGLbHmKGteOY-9T2KQq)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U7_jtGLbHmKGteOY-9T2KQq)
+        - 
+        - 
+        - 
+        - 109 videos
+        - ### [Algebra 1 Lessons Playlist](https://www.youtube.com/watch?v=vTV76cFkmws&list=PL9cqK-GYp2U4bHEr5PhAaHT430Tz6htJx)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U4bHEr5PhAaHT430Tz6htJx)
+        - 
+        - 
+        - 
+        - 15 videos
+        - ### [Neck](https://www.youtube.com/watch?v=VXUeH4XM-iM&list=PLXxRr65QMmRIeM8SDocgCwbnFdR-zvoNj&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIeM8SDocgCwbnFdR-zvoNj)
+        - 
+        - 
+        - 
+        - 30 videos
+        - ### [From NAND To Tetris](https://www.youtube.com/watch?v=tRT1O6mLTZw&list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH)
+            - [Size]();-[H3]()
+        - [Tea Leaves](https://www.youtube.com/@TeaLeavesProgramming)•[Playlist](https://www.youtube.com/@TeaLeavesProgramming)
+        - Updated today
+        - [View full playlist](https://www.youtube.com/playlist?list=PLu6SHDdOToSdD4-c9nZX2Qu3ZXnNFocOH)
+        - 
+        - 
+        - 
+        - 20 videos
+        - ### [Bash for Beginners](https://www.youtube.com/watch?v=nrfwcbYJZfc&list=PLlrxD0HtieHh9ZhrnEbZKhzk0cetzuX7l)
+            - [Size]();-[H3]()
+        - [Microsoft Developer](https://www.youtube.com/@MicrosoftDeveloper)•[Playlist](https://www.youtube.com/@MicrosoftDeveloper)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlrxD0HtieHh9ZhrnEbZKhzk0cetzuX7l)
+        - 
+        - 
+        - 
+        - 17 videos
+        - ### [Progressive Web Apps (PWA) for Beginners](https://www.youtube.com/watch?v=BByUknfLTuA&list=PLlrxD0HtieHjqO1pNqScMngrV7oFro-TY)
+            - [Size]();-[H3]()
+        - [Microsoft Developer](https://www.youtube.com/@MicrosoftDeveloper)•[Playlist](https://www.youtube.com/@MicrosoftDeveloper)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlrxD0HtieHjqO1pNqScMngrV7oFro-TY)
+        - 
+        - 
+        - 
+        - 23 videos
+        - ### [Java for Beginners](https://www.youtube.com/watch?v=LQbfmH8gTZo&list=PLlrxD0HtieHgX3ExVDMlKjdN8LJsks2CM)
+            - [Size]();-[H3]()
+        - [Microsoft Developer](https://www.youtube.com/@MicrosoftDeveloper)•[Playlist](https://www.youtube.com/@MicrosoftDeveloper)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlrxD0HtieHgX3ExVDMlKjdN8LJsks2CM)
+        - 
+        - 
+        - 
+        - 31 lessons
+        - ### [CompTIA 220-1101 A+ Study Groups](https://www.youtube.com/watch?v=uOC1efUubnU&list=PLG49S3nxzAnne-KIkeFM1A-Plur1ggHCG)
+            - [Size]();-[H3]()
+        - [Professor Messer](https://www.youtube.com/@professormesser)•[Course](https://www.youtube.com/@professormesser)
+        - Updated today
+        - [View full course](https://www.youtube.com/playlist?list=PLG49S3nxzAnne-KIkeFM1A-Plur1ggHCG)
+        - 
+        - 
+        - 
+        - 177 lessons
+        - ### [CompTIA Security+ SY0-601 Training Course](https://www.youtube.com/watch?v=9NE33fpQuw8&list=PLG49S3nxzAnkL2ulFS3132mOVKuzzBxA8)
+            - [Size]();-[H3]()
+        - [Professor Messer](https://www.youtube.com/@professormesser)•[Course](https://www.youtube.com/@professormesser)
+        - [View full course](https://www.youtube.com/playlist?list=PLG49S3nxzAnkL2ulFS3132mOVKuzzBxA8)
+        - 
+        - 
+        - 
+        - 93 lessons
+        - ### [CompTIA N10-008 Network+ Training Course](https://www.youtube.com/watch?v=As6g6IXcVa4&list=PLG49S3nxzAnlCJiCrOYuRYb6cne864a7G)
+            - [Size]();-[H3]()
+        - [Professor Messer](https://www.youtube.com/@professormesser)•[Course](https://www.youtube.com/@professormesser)
+        - [View full course](https://www.youtube.com/playlist?list=PLG49S3nxzAnlCJiCrOYuRYb6cne864a7G)
+        - 
+        - 
+        - 
+        - 69 lessons
+        - ### [CompTIA 220-1102 A+ Training Course](https://www.youtube.com/watch?v=3MHDU4kFChU&list=PLG49S3nxzAnna96gzhJrzkii4hH_mgW4b)
+            - [Size]();-[H3]()
+        - [Professor Messer](https://www.youtube.com/@professormesser)•[Course](https://www.youtube.com/@professormesser)
+        - [View full course](https://www.youtube.com/playlist?list=PLG49S3nxzAnna96gzhJrzkii4hH_mgW4b)
+        - 
+        - 
+        - 
+        - 85 videos
+        - ### [55:Data Science](https://www.youtube.com/watch?v=aqRxZSrJLEc&list=PLXxRr65QMmRIiGD4HDXZzEuTbFhaQONdf&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIiGD4HDXZzEuTbFhaQONdf)
+        - 
+        - 
+        - 
+        - 38 videos
+        - ### [Hand](https://www.youtube.com/watch?v=wt4aQQJDJPg&list=PLXxRr65QMmRILRTGAIHdgSzApl43JjYBR&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRILRTGAIHdgSzApl43JjYBR)
+        - 
+        - 
+        - 
+        - 19 videos
+        - ### [Free Full Length Courses](https://www.youtube.com/watch?v=FNHS6EFXahI&list=PLa7A07--U4H0M51ekZgMMd-kyCupsWTfm)
+            - [Size]();-[H3]()
+        - [Timothy Kenny](https://www.youtube.com/@timothykenny)•[Playlist](https://www.youtube.com/@timothykenny)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLa7A07--U4H0M51ekZgMMd-kyCupsWTfm)
+        - 
+        - 
+        - 
+        - 179 videos
+        - ### [Unix and Linux tips](https://www.youtube.com/watch?v=FjbGC2o5tZM&list=PL7hhhG5qUoXk_NqrZZipMvM-O2ALE6AsL)
+            - [Size]();-[H3]()
+        - [NapoleonWils0n](https://www.youtube.com/@NapoleonWils0n)•[Playlist](https://www.youtube.com/@NapoleonWils0n)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL7hhhG5qUoXk_NqrZZipMvM-O2ALE6AsL)
+        - 
+        - 
+        - 
+        - 16 videos
+        - ### [Walking](https://www.youtube.com/watch?v=wG5kZ8SCBrg&list=PLXxRr65QMmRLXL4t4EslKFUIS0PSNmLN8&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRLXL4t4EslKFUIS0PSNmLN8)
+        - 
+        - 
+        - 
+        - 3 videos
+        - ### [Jump Rope-Routine](https://www.youtube.com/watch?v=ln9NeisDnFU&list=PLXxRr65QMmRIY_YdrGTKLUvLOMy-pojw-&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIY_YdrGTKLUvLOMy-pojw-)
+        - 
+        - 
+        - 
+        - 4 videos
+        - ### [Phil & Psyc](https://www.youtube.com/watch?v=l0TzeH6Zmog&list=PLXxRr65QMmRJhbim1KVPRNLFcw2R4JxXu&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJhbim1KVPRNLFcw2R4JxXu)
+        - 
+        - 
+        - 
+        - 185 videos
+        - ### [Running](https://www.youtube.com/watch?v=YegIaB6_ZjU&list=PLXxRr65QMmRIPUXRUuKBGNA2jRfAIDs4G&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIPUXRUuKBGNA2jRfAIDs4G)
+        - 
+        - 
+        - 
+        - 13 videos
+        - ### [What You Didn't Learn In School | Learn with Dr G](https://www.youtube.com/watch?v=cbIsxKEQZ7Y&list=PLjoGSbuzyErh7ffELeKxeCtgIBK1n1q9A)
+            - [Size]();-[H3]()
+        - [Dr Guthals](https://www.youtube.com/@DrGuthals)•[Playlist](https://www.youtube.com/@DrGuthals)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLjoGSbuzyErh7ffELeKxeCtgIBK1n1q9A)
+        - 
+        - 
+        - 
+        - 314 lessons
+        - ### [C Programming & Data Structures](https://www.youtube.com/watch?v=4OGMB4Fhh50&list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM)
+            - [Size]();-[H3]()
+        - [Neso Academy](https://www.youtube.com/@nesoacademy)•[Course](https://www.youtube.com/@nesoacademy)
+        - [View full course](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM)
+        - 
+        - 
+        - 
+        - 55 videos
+        - ### [Introduction to Programming in C](https://www.youtube.com/watch?v=XTiIiI-LOY8&list=PLJ5C_6qdAvBG6v-afxpegn8VdILsS3x8o)
+            - [Size]();-[H3]()
+        - [Computer Science and Engineering](https://www.youtube.com/@computerscienceandengineer429)•[Playlist](https://www.youtube.com/@computerscienceandengineer429)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLJ5C_6qdAvBG6v-afxpegn8VdILsS3x8o)
+        - 
+        - 
+        - 
+        - 55 videos
+        - ### [Introduction to Programming in C - Satyadev Nandakumar | IIT Kanpur: NPTEL](https://www.youtube.com/watch?v=XTiIiI-LOY8&list=PLEAYkSg4uSQ2k6GwNhpgSHodGT8wfvgwu)
+            - [Size]();-[H3]()
+        - [Rahul Madhavan](https://www.youtube.com/@RahulMadhavan)•[Playlist](https://www.youtube.com/@RahulMadhavan)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ2k6GwNhpgSHodGT8wfvgwu)
+        - 
+        - 
+        - 
+        - 285 videos
+        - ### [C Programming Examples](https://www.youtube.com/watch?v=sepK5w4Uep0&list=PLA1FTfKBAEX6dPcQitk_7uL3OwDdjMn90)
+            - [Size]();-[H3]()
+        - [Portfolio Courses](https://www.youtube.com/@PortfolioCourses)•[Playlist](https://www.youtube.com/@PortfolioCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLA1FTfKBAEX6dPcQitk_7uL3OwDdjMn90)
+        - 
+        - 
+        - 
+        - 115 videos
+        - ### [Precalculus - College Algebra/Trigonometry](https://www.youtube.com/watch?v=9OOrhA2iKak&list=PLDesaqWTN6ESsmwELdrzhcGiRhk5DjwLP)
+            - [Size]();-[H3]()
+        - [Professor Leonard](https://www.youtube.com/@ProfessorLeonard)•[Playlist](https://www.youtube.com/@ProfessorLeonard)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLDesaqWTN6ESsmwELdrzhcGiRhk5DjwLP)
+        - 
+        - 
+        - 
+        - 42 videos
+        - ### [Emacs stuff](https://www.youtube.com/watch?v=GK3fij-D1G8&list=PLQDX2YKerS-CLmssjbbbBPTyd8X6HZfAJ)
+            - [Size]();-[H3]()
+        - [Kristofer Andersson](https://www.youtube.com/@trisk3lion)•[Playlist](https://www.youtube.com/@trisk3lion)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLQDX2YKerS-CLmssjbbbBPTyd8X6HZfAJ)
+        - 
+        - 
+        - 
+        - 26 videos
+        - ### [emacs](https://www.youtube.com/watch?v=FtieBc3KptU&list=PLOZMBaHtz9PdEI4u-dKsAANExpO2wtQR_)
+            - [Size]();-[H3]()
+        - [xiaocong zhang](https://www.youtube.com/@xiaocongzhang2343)•[Playlist](https://www.youtube.com/@xiaocongzhang2343)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLOZMBaHtz9PdEI4u-dKsAANExpO2wtQR_)
+        - 
+        - 
+        - 
+        - No videos
+        - ### [Meta Social Media Marketing Professional Certificate](https://www.youtube.com/playlist?list=PLqX4M0x0p9ckcuztaSn4XOkTWzqcEieLa)
+            - [Size]();-[H3]()
+        - [Self Taught Courses](https://www.youtube.com/@SelfTaughtCourses)•[Playlist](https://www.youtube.com/@SelfTaughtCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLqX4M0x0p9ckcuztaSn4XOkTWzqcEieLa)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [Front-End Developer Professional Certificate](https://www.youtube.com/watch?v=WlqoPe8-Wi0&list=PLqX4M0x0p9cnPwKtIT3ghqYYiqD8uludA)
+            - [Size]();-[H3]()
+        - [Self Taught Courses](https://www.youtube.com/@SelfTaughtCourses)•[Playlist](https://www.youtube.com/@SelfTaughtCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLqX4M0x0p9cnPwKtIT3ghqYYiqD8uludA)
+        - 
+        - 
+        - 
+        - 3 videos
+        - ### [Database Engineer Professional Certificate](https://www.youtube.com/watch?v=CZAxsNEHhhM&list=PLqX4M0x0p9ckk-8b_24XbpTj-3sIX5yQ0)
+            - [Size]();-[H3]()
+        - [Self Taught Courses](https://www.youtube.com/@SelfTaughtCourses)•[Playlist](https://www.youtube.com/@SelfTaughtCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLqX4M0x0p9ckk-8b_24XbpTj-3sIX5yQ0)
+        - 
+        - 
+        - 
+        - 5 videos
+        - ### [iOS Developer Professional Certificate](https://www.youtube.com/watch?v=WABsLK9W7vM&list=PLqX4M0x0p9cns5wV1Nv54jcJhxAVxC8qf)
+            - [Size]();-[H3]()
+        - [Self Taught Courses](https://www.youtube.com/@SelfTaughtCourses)•[Playlist](https://www.youtube.com/@SelfTaughtCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLqX4M0x0p9cns5wV1Nv54jcJhxAVxC8qf)
+        - 
+        - 
+        - 
+        - 8 videos
+        - ### [Meta Back-End Developer Professional Certificate](https://www.youtube.com/watch?v=WN5onNWfNc8&list=PLqX4M0x0p9ck3OfyL14-MISy6_-4oH9fK)
+            - [Size]();-[H3]()
+        - [Self Taught Courses](https://www.youtube.com/@SelfTaughtCourses)•[Playlist](https://www.youtube.com/@SelfTaughtCourses)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLqX4M0x0p9ck3OfyL14-MISy6_-4oH9fK)
+        - 
+        - 
+        - 
+        - 16 videos
+        - ### [Dental Hygiene](https://www.youtube.com/watch?v=Ot2Cwtqwht0&list=PLXxRr65QMmRKTMmFAKjcYR9Pkm-ZA31Od&pp=gAQB)
+            - [Size]();-[H3]()
+        - Unlisted•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKTMmFAKjcYR9Pkm-ZA31Od)
+        - 
+        - 
+        - 
+        - 17 videos
+        - ### [LNX:Virt](https://www.youtube.com/watch?v=BDilFZ9C9mw&list=PLXxRr65QMmRJbXiHn5TyYW-ACOz64uayO&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJbXiHn5TyYW-ACOz64uayO)
+        - 
+        - 
+        - 
+        - 6 videos
+        - ### [ALL sumo's 82 techniques explained + video examples](https://www.youtube.com/watch?v=XYQhO68kbA8&list=PLy-Zr4Stcz6IoaqcCIzC-xZh4A5cc606W)
+            - [Size]();-[H3]()
+        - [Chris Sumo](https://www.youtube.com/@chrissumo69)•[Playlist](https://www.youtube.com/@chrissumo69)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLy-Zr4Stcz6IoaqcCIzC-xZh4A5cc606W)
+        - 
+        - 
+        - 
+        - 17 videos
+        - ### [Coast Guard Fitness](https://www.youtube.com/watch?v=iqvHCI9bMc4&list=PLgOje37c-b1NS_SdxXXAOAZD7u8XQ4I_K)
+            - [Size]();-[H3]()
+        - [U.S. Coast Guard](https://www.youtube.com/@U.S.CoastGuard)•[Playlist](https://www.youtube.com/@U.S.CoastGuard)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLgOje37c-b1NS_SdxXXAOAZD7u8XQ4I_K)
+        - 
+        - 
+        - 
+        - 20 videos
+        - ### [Military Motivation](https://www.youtube.com/watch?v=WDZG8Zyf5bQ&list=PLaYuk1r_2Jx7YAio8D2N4H05YrlJkPU5y)
+            - [Size]();-[H3]()
+        - [J Barnum](https://www.youtube.com/@1974TypeLTCamaro)•[Playlist](https://www.youtube.com/@1974TypeLTCamaro)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLaYuk1r_2Jx7YAio8D2N4H05YrlJkPU5y)
+        - 
+        - 
+        - 
+        - 40 videos
+        - ### [PHP / MySQL - Database Applications](https://www.youtube.com/watch?v=FC0DydeeTTk&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu)
+            - [Size]();-[H3]()
+        - [Chuck Severance](https://www.youtube.com/@ChuckSeverance)•[Playlist](https://www.youtube.com/@ChuckSeverance)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu)
+        - 
+        - 
+        - 
+        - 81 videos
+        - ### [Web Applications for Everybody (WA4E)](https://www.youtube.com/watch?v=tuXySrvw8TE&list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX)
+            - [Size]();-[H3]()
+        - [Chuck Severance](https://www.youtube.com/@ChuckSeverance)•[Playlist](https://www.youtube.com/@ChuckSeverance)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX)
+        - 
+        - 
+        - 
+        - 56 videos
+        - ### [PostgreSQL for Everybody](https://www.youtube.com/watch?v=flRUuodVPq0&list=PLlRFEj9H3Oj7Oj3ndXmNS1FFOUyQP-gEa)
+            - [Size]();-[H3]()
+        - [Chuck Severance](https://www.youtube.com/@ChuckSeverance)•[Playlist](https://www.youtube.com/@ChuckSeverance)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7Oj3ndXmNS1FFOUyQP-gEa)
+        - 
+        - 
+        - 
+        - 15 videos
+        - ### [UML Diagrams for Beginners](https://www.youtube.com/watch?v=hF4yg1yFrdU&list=PLJlDQmEdjHZYrtdwL0SHZseRSp_F0oOPN)
+            - [Size]();-[H3]()
+        - [Ave Coders](https://www.youtube.com/@AveCoders)•[Playlist](https://www.youtube.com/@AveCoders)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLJlDQmEdjHZYrtdwL0SHZseRSp_F0oOPN)
+        - 
+        - 
+        - 
+        - 22 videos
+        - ### [Beginners Guide for PC Water Cooling - Tips and Tricks](https://www.youtube.com/watch?v=iocWiugvZqU&list=PLPA7gJAs-tKmJBlASLP3SKevFRe97_CJJ)
+            - [Size]();-[H3]()
+        - [Designs By IFR](https://www.youtube.com/@DesignsByIFR)•[Playlist](https://www.youtube.com/@DesignsByIFR)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLPA7gJAs-tKmJBlASLP3SKevFRe97_CJJ)
+        - 
+        - 
+        - 
+        - 68 videos
+        - ### [Math Full Courses](https://www.youtube.com/watch?v=NWXezo9YFfY&list=PLgIi4lM74yW0ChmzTdT1w5ruCnqP0bv3J)
+            - [Size]();-[H3]()
+        - [GreeneMath.com](https://www.youtube.com/@Greenemath)•[Playlist](https://www.youtube.com/@Greenemath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLgIi4lM74yW0ChmzTdT1w5ruCnqP0bv3J)
+        - 
+        - 
+        - 
+        - 40 videos
+        - ### [Arithmetic Course](https://www.youtube.com/watch?v=UJMcCgl1VTo&list=PLm2VEQtiYjhpTTgxTVCXVcpYWDUqiewiQ)
+            - [Size]();-[H3]()
+        - [The College Prep School](https://www.youtube.com/@thecollegeprepschool4486)•[Playlist](https://www.youtube.com/@thecollegeprepschool4486)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLm2VEQtiYjhpTTgxTVCXVcpYWDUqiewiQ)
+        - 
+        - 
+        - 
+        - 4 videos
+        - ### [simplee quadratics](https://www.youtube.com/watch?v=bB-kDWDOnMs&list=PL9cqK-GYp2U5fTZELy-SoNlwGNkCFxrsk)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U5fTZELy-SoNlwGNkCFxrsk)
+        - 
+        - 
+        - 
+        - 164 videos
+        - ### [Pre-Algebra Lessons Playlist](https://www.youtube.com/watch?v=R7PGBUV2ZHM&list=PL9cqK-GYp2U7Cyc-swY_MT_AzNngusSmY)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - Updated 4 days ago
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U7Cyc-swY_MT_AzNngusSmY)
+        - 
+        - 
+        - 
+        - 57 videos
+        - ### [simplee practice](https://www.youtube.com/watch?v=AjF71YbUskU&list=PL9cqK-GYp2U5r0qJDRq3oOA8m337Hbl9_)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U5r0qJDRq3oOA8m337Hbl9_)
+        - 
+        - 
+        - 
+        - 36 videos
+        - ### [simplee pre-algebra](https://www.youtube.com/watch?v=PhI9jOTZEp0&list=PL9cqK-GYp2U5ocQB6DCpwYMNe1h1glDQu)
+            - [Size]();-[H3]()
+        - [SimpLEEfied](https://www.youtube.com/@SimpLEEfiedmath)•[Playlist](https://www.youtube.com/@SimpLEEfiedmath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9cqK-GYp2U5ocQB6DCpwYMNe1h1glDQu)
+        - 
+        - 
+        - 
+        - 21 videos
+        - ### [Basic Math (Pre-Algebra) Videos](https://www.youtube.com/watch?v=yT3jh2aZN68&list=PL2CC06557AC6512FD&pp=iAQB)
+            - [Size]();-[H3]()
+        - [The Video Math Tutor](https://www.youtube.com/@VideoMathTutor)•[Playlist](https://www.youtube.com/@VideoMathTutor)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL2CC06557AC6512FD)
+        - 
+        - 
+        - 
+        - 63 videos
+        - ### [MATH085 Pre-Algebra](https://www.youtube.com/watch?v=fO1eA2Shl6I&list=PL9dj44OpeMZe_qNgDt_lqqnRjvGNkePq7)
+            - [Size]();-[H3]()
+        - [BayCollegeOnlineMath](https://www.youtube.com/@BayCollegeOnlineMath)•[Playlist](https://www.youtube.com/@BayCollegeOnlineMath)
+        - [View full playlist](https://www.youtube.com/playlist?list=PL9dj44OpeMZe_qNgDt_lqqnRjvGNkePq7)
+        - 
+        - 
+        - 
+        - 7 videos
+        - ### [DarkWeb](https://www.youtube.com/watch?v=-5ckuMKkq8w&list=PLXxRr65QMmRKBNAZbkhuQf938TxTY81ia&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRKBNAZbkhuQf938TxTY81ia)
+        - 
+        - 
+        - 
+        - 26 videos
+        - ### [Coding a Rogue/Nethack RPG in C](https://www.youtube.com/watch?v=ipQPEoGztAM&list=PLkTXsX7igf8erbWGYT4iSAhpnJLJ0Nk5G)
+            - [Size]();-[H3]()
+        - [badcodinghabits](https://www.youtube.com/@badcodinghabits)•[Playlist](https://www.youtube.com/@badcodinghabits)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLkTXsX7igf8erbWGYT4iSAhpnJLJ0Nk5G)
+        - 
+        - 
+        - 
+        - 69 videos
+        - ### [Basketball-Workouts](https://www.youtube.com/watch?v=aeQQ8HssOag&list=PLXxRr65QMmRIZ3JnCgZ4_kPxQXb3W96YW&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIZ3JnCgZ4_kPxQXb3W96YW)
+        - 
+        - 
+        - 
+        - 21 videos
+        - ### [01:JS:Express.js](https://www.youtube.com/watch?v=JlgKybraoy4&list=PLXxRr65QMmRJqLjBAEbxHDF_qy43rPmjZ&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJqLjBAEbxHDF_qy43rPmjZ)
+        - 
+        - 
+        - 
+        - 31 videos
+        - ### [11:LNX:Nixos](https://www.youtube.com/watch?v=AGVXJ-TIv3Y&list=PLXxRr65QMmRIakmm8kqpXwBIIZNNb9Seh&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRIakmm8kqpXwBIIZNNb9Seh)
+        - 
+        - 
+        - 
+        - 6 videos
+        - ### [Engineering](https://www.youtube.com/watch?v=cKBcRy_aXsI&list=PLXxRr65QMmRJMk5mhBoMOCps2mCXSaJdB&pp=gAQB)
+            - [Size]();-[H3]()
+        - Private•Playlist
+        - [View full playlist](https://www.youtube.com/playlist?list=PLXxRr65QMmRJMk5mhBoMOCps2mCXSaJdB)
+        - 
+        - 
+        - 
+        - 64 videos
+        - ### [Vimscript Tutorial](https://www.youtube.com/watch?v=cg2ShY5cUZc&list=PLOe6AggsTaVv_IQsADuzhOzepA_tSAagN)
+            - [Size]();-[H3]()
+        - [Yuki Uthman](https://www.youtube.com/@yukiuthman8358)•[Playlist](https://www.youtube.com/@yukiuthman8358)
+        - [View full playlist](https://www.youtube.com/playlist?list=PLOe6AggsTaVv_IQsADuzhOzepA_tSAagN)
+    - Parent 2
+        - 
+        - Perhaps a bit too easy to use
+        - – Social engineering can be an issue
+        - Third-party tools
+        - 
+        - Screen-sharing
+        - – See and control a remote device
+        - – GoToMyPC, TeamViewer
+        - 
+        - Video-conferencing
+        - – Multi-user meetings with video and audio
+        - – Zoom, WebEx
+        - 
+        - File transfer
+        - – Store and share documents in the cloud
+        - – Dropbox, Box.com, Google Drive
+        - 
+        - Desktop management
+        - – Manage end-user devices and operating systems
+        - – Citrix Endpoint Management, ManageEngine
+        - Desktop Central
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 57
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - Continue your journey on
+        - ProfessorMesser.com:
+        - Professor Messer's Free
+        - CompTIA A+ Training Courses
+        - Monthly A+ Study Group Live Streams
+        - 24 x 7 Live Discord Chat
+        - Professor Messer's
+        - CompTIA A+ Success Bundle
+        - Voucher Discounts
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+    - Parent 3
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#answerQ405
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 4
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#answerQ402
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 5
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#collapse_414
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 6
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#collapse_403
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 7
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#answerQ403
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 8
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#collapse_405
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 9
+        - [Aliases]()
+            1. https://free-braindumps.com/comptia/free-220-1102-braindumps/page-42#collapse_402
+        - [Title]();-
+	Free 220-1102 Exam Questions & Answers  from CompTIA  - Page: 41
+
+    - Parent 10
+        - [Primary Column Name]();-Specification
+    - Parent 11
+        - [Primary Column Name]();-
+    - Parent 12
+        - [Primary Column Name]();-
+    - Parent 13
+        - [Primary Column Name]();-
+    - Parent 14
+        - [Primary Column Name]();-
+    - Parent 15
+        - [Primary Column Name]();-
+    - Parent 16
+        - [Primary Column Name]();-
+    - Parent 17
+        - [Primary Column Name]();-
+    - Parent 18
+        - [Primary Column Name]();-
+    - Parent 19
+        - [Primary Column Name]();-
+    - Parent 20
+        - [Primary Column Name]();-
+    - Parent 21
+        - [Primary Column Name]()
+    - Parent 22
+        - [Primary Column Name]()
+    - Parent 23
+        - [Primary Column Name]()
+    - Parent 24
+        - [Primary Column Name]()
+    - Parent 25
+        - [Primary Column Name]()
+    - Parent 26
+        - [Primary Column Name]()
+    - Parent 27
+        - [Primary Column Name]();-Device/Standard
+    - Parent 28
+        - [Primary Column Name]();-Connector
+    - Parent 29
+        - [Primary Column Name]();-Term
+    - Parent 30
+        - [Primary Column Name]();-Term
+    - Parent 31
+        - [Primary Column Name]();-Architecture
+    - Parent 32
+        - [Primary Column Name]();-Type
+    - Parent 33
+        - [Primary Column Name]();-Topology
+    - Parent 34
+        - [Primary Column Name]();-Topology
+    - Parent 35
+        - [Primary Column Name]();-Type
+    - Parent 36
+        - [Primary Column Name]();-Flow
+    - Parent 37
+        - [Primary Column Name]();-Architecture
+    - Parent 38
+        - [Primary Column Name]();-
+    - Parent 39
+        - [Primary Column Name]();-
+    - Parent 40
+        - [Primary Column Name]();-
+    - Parent 41
+        - [Primary Column Name]();-
+    - Parent 42
+        - [Primary Column Name]();-
+    - Parent 43
+        - [Primary Column Name]();-
+    - Parent 44
+        - [Primary Column Name]();-
+    - Parent 45
+        - [Primary Column Name]();-
+    - Parent 46
+        - [Primary Column Name]();-
+    - Parent 47
+        - [Primary Column Name]();-
+    - Parent 48
+        - [Primary Column Name]();-
+    - Parent 49
+        - [Primary Column Name]();-
+    - Parent 50
+        - [Primary Column Name]();-
+    - Parent 51
+        - [Primary Column Name]();-
+    - Parent 52
+        - [Primary Column Name]();-Flag
+    - Parent 53
+        - [Primary Column Name]();-
+    - Parent 54
+        - [Primary Column Name]();-
+    - Parent 55
+        - [Primary Column Name]();-
+    - Parent 56
+        - [Primary Column Name]();-
+    - Parent 57
+        - [Primary Column Name]();-
+    - Parent 58
+        - [Primary Column Name]();-
+    - Parent 59
+        - [Primary Column Name]();-
+    - Parent 60
+        - [Primary Column Name]();-
+    - Parent 61
+        - [Primary Column Name]();-
+    - Parent 62
+        - [Primary Column Name]();-
+    - Parent 63
+        - [Primary Column Name]();-
+    - Parent 64
+        - [Primary Column Name]();-
+    - Parent 65
+        - [Primary Column Name]();-
+    - Parent 66
+        - [Primary Column Name]();-
+    - Parent 67
+        - [Primary Column Name]();-
+    - Parent 68
+        - [Primary Column Name]();-
+    - Parent 69
+        - [Primary Column Name]();-
+    - Parent 70
+        - [Primary Column Name]();-
+    - Parent 71
+        - [Primary Column Name]();-
+    - Parent 72
+        - [Primary Column Name]();-
+    - Parent 73
+        - [Primary Column Name]();-
+    - Parent 74
+        - [Primary Column Name]();-
+    - Parent 75
+        - [Primary Column Name]();-
+    - Parent 76
+        - [Primary Column Name]();-
+    - Parent 77
+        - [Primary Column Name]();-
+    - Parent 78
+        - [Primary Column Name]();-
+    - Parent 79
+        - [Primary Column Name]();-
+    - Parent 80
+        - [Primary Column Name]();-
+    - Parent 81
+        - [Primary Column Name]();-
+    - Parent 82
+        - [Primary Column Name]();-
+    - Parent 83
+        - [Primary Column Name]();-
+    - Parent 84
+        - [Primary Column Name]();-Syntax
+    - Parent 85
+        - [Primary Column Name]();-Syntax
+    - Parent 86
+        - [Primary Column Name]();-Syntax
+    - Parent 87
+        - [Primary Column Name]();-Syntax
+    - Parent 88
+        - [Primary Column Name]();-
+    - Parent 89
+        - [Primary Column Name]();-
+    - Parent 90
+        - [Primary Column Name]();-
+    - Parent 91
+        - [Primary Column Name]();-Description
+    - Parent 92
+        - [Primary Column Name]();-Aspect
+    - Parent 93
+        - [Primary Column Name]();-Aspect
+    - Parent 94
+        - [Primary Column Name]();-Aspect
+    - Parent 95
+        - [Primary Column Name]();-

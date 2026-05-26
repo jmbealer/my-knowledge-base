@@ -1,0 +1,19 @@
+- File Management
+    - {{Open File...}}- {{control o}} 
+    - {{Save}}- {{control s}} 
+    - {{Save As...}}- {{control shift s}} 
+- General
+    - {{Print}}- {{control p}} 
+    - {{Select all}}- {{control a}} 
+    - {{Search}}- {{control f}} 
+- Basic Editing
+    - {{Cut selection}}- {{control x}} 
+    - {{Copy selection}}- {{control c}} 
+    - {{Paste}}- {{control v}} 
+    - {{Replace}}- {{control h}} 
+    - {{Paste without formatting}}- {{control shift v}} 
+    - {{Undo}}- {{control z}} 
+    - {{Redo}}- {{control y}} 
+- 
+- 
+- 

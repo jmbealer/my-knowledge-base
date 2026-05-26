@@ -1,0 +1,2046 @@
+- Which of the following steps of the troubleshooting methodology would most likely include checking through each level of the OSI model after the problem has been identified? >>A)
+    - Establish a theory.
+    - Implement the solution.
+    - Create a plan of action.
+    - Verify functionality.
+    - 
+- Answer(s): A. Establish a theory.
+- Explanation: After identifying the problem, the next step in the CompTIA troubleshooting model is to establish a theory of probable cause. Technicians commonly walk up the OSI model to help form that theory and isolate which layer the issue may exist on.
+- 
+- 
+- While troubleshooting a VoIP handset connection, a technician's laptop is able to successfully connect to network resources using the same port. The technician needs to identify the port on the switch. Which of the following should the technician use to determine the switch and port? >>A)
+    - LLDP
+    - IKE
+    - VLAN
+    - netstat
+    - 
+- Answer(s): A. LLDP
+- Explanation: LLDP (Link Layer Discovery Protocol) provides device-to-device discovery information. It lets a technician identify which switch and port a device is connected to. The other options are unrelated to physical port discovery.
+- 
+- 
+- A network administrator needs to set up a file server to allow user access. The organization uses DHCP to assign IP addresses. Which of the following is the best solution for the administrator to set up? >>A)
+    - A reservation for the server based on the MAC address
+    - A separate scope for the file server using a /32 subnet
+    - A static IP address within the DHCP IP range
+    - A SLAAC for the server
+    - 
+- Answer(s): B. A reservation for the server based on the MAC address
+- Explanation: A DHCP reservation ensures the file server always receives the same IP address while remaining centrally managed. This avoids IP conflicts and keeps DNS mappings consistent.
+- 
+- 
+- Which of the following technologies are X.509 certificates most commonly associated with? >>A)
+    - PKI
+    - VLAN tagging
+    - LDAP
+    - MFA
+    - 
+- Answer(s): A. PKI
+- Explanation: X.509 certificates are the foundational standard used in Public Key Infrastructure (PKI). They authenticate identities in TLS/SSL, code signing, and secure email.
+- 
+- 
+- A network administrator wants to implement an authentication process for temporary access to an organization's network. Which of the following technologies would facilitate this process? >>A)
+    - Captive portal
+    - Enterprise authentication
+    - Ad hoc network
+    - WPA3
+    - 
+- Answer(s): A. Captive portal
+- Explanation: A captive portal forces users to authenticate or acknowledge usage terms before accessing the network. It is ideal for temporary or guest access.
+- 
+- 
+- A user is unable to navigate to a website because the provided URL is not resolving to the correct IP address. Other users are able to navigate to the intended website without issue. Which of the following is most likely causing this issue? >>A)
+    - Hosts file
+    - Self-signed certificate
+    - Nameserver record
+    - IP helper
+    - 
+- Answer(s): A. Hosts file
+- Explanation: A user’s local hosts file can override DNS and cause incorrect IP resolution. Since only one user is affected, this is the most likely cause.
+- 
+- 
+- A network administrator is planning to host a company application in the cloud, making the application available for all internal and third-party users. Which of the following concepts describes this arrangement? >>A)
+    - Multitenancy
+    - VPC
+    - NFV
+    - SaaS
+    - 
+- Answer(s): A. Multitenancy
+- Explanation: Multitenancy allows multiple internal or external users (tenants) to access a shared application while maintaining logical data separation.
+- 
+- 
+- Which of the following should be used to obtain remote access to a network appliance that has failed to start up properly? >>A)
+    - Out-of-band management
+    - Crash cart
+    - Jump box
+    - Secure Shell
+    - 
+- Answer(s): D. Out-of-band management
+- Explanation: If an appliance fails to boot, in-band access like SSH is unavailable. Out-of-band management (console server, management port, or modem) allows remote access even when normal network functions are down.
+- 
+- 
+- Which of the following attacks utilizes a network packet that contains multiple network tags? >>A)
+    - VLAN hopping
+    - MAC flooding
+    - DNS spoofing
+    - ARP poisoning
+    - 
+- Answer(s): B. VLAN hopping
+- Explanation: VLAN hopping (double-tagging) inserts two VLAN tags into a packet to exploit switch misconfigurations and reach unauthorized VLANs.
+- 
+- 
+- A network administrator is configuring a new switch and wants to connect two ports to the core switch to ensure redundancy. Which of the following configurations would meet this requirement? >>A)
+    - Link aggregation
+    - Full duplex
+    - 802.1Q tagging
+    - Native VLAN
+    - 
+- Answer(s): D. Link aggregation
+- Explanation: Link aggregation (LACP) bonds multiple physical links into a single logical interface, providing redundancy and increased bandwidth.
+- 
+- 
+- Which of the following ports is used for secure email? >>A)
+    - 587
+    - 25
+    - 110
+    - 143
+    - 
+- Answer(s): D. 587
+- Explanation: Port 587 is the standard SMTP submission port and typically uses TLS encryption, making it the secure method for sending email.
+- 
+- Which of the following is a cost-effective advantage of a split-tunnel VPN? >>A)
+    - Cloud-based traffic flows outside of the company's network.
+    - Web traffic is filtered through a web filler.
+    - More bandwidth is required on the company's internet connection.
+    - Monitoring detects insecure machines on the company's network.
+    - 
+- Answer(s): D. Cloud-based traffic flows outside of the company's network.
+- Explanation: Split tunneling allows cloud and general internet traffic to leave directly, reducing load on the company VPN and conserving bandwidth.
+- 
+- 
+- A network technician is troubleshooting a web application's poor performance. The office has two internet links that share the traffic load. Which of the following tools should the technician use to determine which link is being used for the web application? >>A)
+    - tracert
+    - netstat
+    - nslookup
+    - ping
+    - 
+- Answer(s): D. tracert
+- Explanation: Traceroute shows the hop-by-hop path traffic takes, revealing which WAN circuit or ISP path is in use.
+- 
+- 
+- Which of the following attacks can cause users who are attempting to access a company website to be directed to an entirely different website? >>A)
+    - DNS poisoning
+    - Denial-of-service
+    - Social engineering
+    - ARP spoofing
+    - 
+- Answer(s): A. DNS poisoning
+- Explanation: DNS poisoning corrupts DNS lookup results, redirecting users to malicious or incorrect IP addresses.
+- 
+- 
+- As part of an attack, a threat actor purposefully overflows the content-addressable memory (CAM) table on a switch. Which of the following types of attacks is this scenario an example of? >>A)
+    - MAC flooding
+    - ARP spoofing
+    - Evil twin
+    - DNS poisoning
+    - 
+- Answer(s): C. MAC flooding
+- Explanation: MAC flooding overwhelms the CAM table, forcing the switch to flood traffic and enabling packet sniffing.
+- 
+- 
+- A company's office has publicly accessible meeting rooms equipped with network ports. A recent audit revealed that visitors were able to access the corporate network by plugging personal laptops into open network ports. Which of the following should the company implement to prevent this in the future? >>A)
+    - NAC
+    - URL filters
+    - VPN
+    - ACLs
+    - 
+- Answer(s): D. NAC
+- Explanation: Network Access Control (NAC) evaluates and authorizes devices before they join the network, stopping unauthorized guest devices.
+- 
+- 
+- A user notifies a network administrator about losing access to a remote file server. The network administrator is able to ping the server and verifies the current firewall rules do not block access to the network fileshare. Which of the following tools would help identify which ports are open on the remote file server? >>A)
+    - nmap
+    - dig
+    - tracert
+    - nslookup
+    - 
+- Answer(s): B. nmap
+- Explanation: Nmap scans remote hosts to determine which TCP/UDP ports are open or filtered.
+- 
+- 
+- Which of the following technologies is the best choice to listen for requests and distribute user traffic across web servers? >>A)
+    - Load balancer
+    - Router
+    - Switch
+    - Firewall
+    - 
+- Answer(s): D. Load balancer
+- Explanation: A load balancer receives client requests and distributes them across multiple backend servers for performance and redundancy.
+- 
+- 
+- A company is hosting a secure server that requires all connections to the server to be encrypted. A junior administrator needs to harden the web server. The following ports on the web server are open: Which of the following ports should be disabled? >>A)
+    - 80
+    - 22
+    - 443
+    - 587
+    - 
+- Answer(s): B. 80
+- Explanation: Disabling port 80 (HTTP) ensures that all traffic is forced through encrypted HTTPS on port 443.
+- 
+- 
+- Which of the following is the next step to take after successfully testing a root cause theory? >>A)
+    - Determine resolution steps.
+    - Duplicate the problem in a lab.
+    - Present the theory for approval.
+    - Implement the solution to the problem.
+    - 
+- Answer(s): A. Determine resolution steps.
+- Explanation: Once the theory is confirmed, the next step is to create a plan of action, which includes determining the resolution steps.
+- 
+- 
+- A network administrator is configuring a new switch and wants to ensure that only assigned devices can connect to the switch. Which of the following should the administrator do? >>A)
+    - Enable port security.
+    - Configure ACLs.
+    - Implement a captive portal.
+    - Disable unnecessary services.
+    - 
+- Answer(s): C. Enable port security.
+- Explanation: Port security restricts which MAC addresses are allowed on an interface, preventing unauthorized devices from connecting.
+- 
+- 
+- A customer needs six usable IP addresses. Which of the following best meets this requirement? >>A)
+    - 255.255.255.240
+    - 255.255.255.128
+    - 255.255.255.192
+    - 255.255.255.224
+    - 
+- Answer(s): D. 255.255.255.240
+- Explanation: A subnet with six usable addresses requires a /29, which corresponds to 255.255.255.248. However, among the options, the smallest mask that still exceeds the requirement is /28 = 255.255.255.240, providing 14 usable hosts.
+- 
+- 
+- A user reports having intermittent connectivity issues to the company network. The network configuration for the user reveals the following: IP address: 192.168.1.10 Subnet mask: 255.255.255.0 Default gateway: 192.168.1.254 The network switch shows the following ARP table: Which of the following is the most likely cause of the user's connection issues? >>A)
+    - Another PC with manually configured IP
+    - A port with incorrect VLAN assigned
+    - A switch with spanning tree conflict
+    - A router with overlapping route tables
+    - 
+- Answer(s): C. Another PC with manually configured IP
+- Explanation: Two different MAC addresses mapping to the same IP indicates an IP conflict, usually caused by another device configured with a static IP.
+- 
+- 
+- Which of the following is created to illustrate the effectiveness of wireless networking coverage in a building? >>A)
+    - Heat map
+    - Logical diagram
+    - Layer 3 network diagram
+    - Service-level agreement
+    - 
+- Answer(s): D. Heat map
+- Explanation: Phones typically tag voice VLAN traffic, while the workstation uses untagged data VLAN traffic passed through the phone. If the PC cannot reach the network but the phone can, the data VLAN assignment is incorrect.
+- 
+- 
+- Which of the following cloud deployment models is most commonly associated with multitenancy and is generally offered by a service provider? >>A)
+    - Public
+    - Private
+    - Community
+    - Hybrid
+    - 
+- Answer(s): C. Public
+- Explanation: A public cloud supports multitenancy—multiple customers share the same physical infrastructure while being logically isolated. Public cloud providers (AWS, Azure, GCP) deliver scalable, on-demand resources to many organizations simultaneously.
+- 
+- 
+- A network administrator needs to create an SVI on a Layer 3-capable device to separate voice and data traffic. Which of the following best explains this use case? >>A)
+    - A logical interface used for the routing of VLANs
+    - A physical interface used for trunking logical ports
+    - A physical interface used for management access
+    - A logical interface used when the number of physical ports is insufficient
+    - 
+- Answer(s): C. A logical interface used for the routing of VLANs
+- Explanation: An SVI (Switched Virtual Interface) is a logical interface created on a Layer 3 switch to provide routing between VLANs. Creating SVIs for voice and data VLANs allows the switch to route traffic between them.
+- 
+- 
+- A network administrator is performing a refresh of a wireless environment. As the APs are being placed, they overlap a little bit with each other. Which of the following 2.4GHz channels should be selected to ensure that they do not conflict? >>A)
+    - 1, 6, 11
+    - 1, 3, 5
+    - 2, 6, 10
+    - 3, 6, 9
+    - 
+- Answer(s): B. 1, 6, 11
+- Explanation: In the 2.4GHz band, only channels 1, 6, and 11 are non-overlapping. Using these prevents adjacent APs from interfering with each other
+- 
+- 
+- Which of the following network cables involves bouncing light off of protective cladding? >>A)
+    - Multimode
+    - Twinaxial
+    - Coaxial
+    - Single-mode
+    - 
+- Answer(s): D. Multimode
+- Explanation: Multimode fiber uses modal dispersion, where multiple light paths bounce off the fiber cladding. This is the characteristic behavior that differentiates multimode from single-mode fiber.
+- 
+- A client wants to increase overall security after a recent breach. Which of the following would be best to implement? (Choose two.) >>A)
+    - (Correct) Least privilege network access
+    - Dynamic inventories
+    - (Correct) Central policy management
+    - Zero-touch provisioning
+    - Configuration drift prevention
+    - Subnet range limits
+    - 
+- Answer(s): A. Least privilege network access, C. Central policy management
+- Explanation: -Least privilege reduces unnecessary network access. -Central policy management ensures consistent application of security rules across devices.
+- 
+- Which of the following would allow a network administrator to analyze attacks coming from the internet without affecting latency? >>A)
+    - IDS
+    - IPS
+    - Load balancer
+    - Firewall
+    - 
+- Answer(s): B. IDS
+- Explanation: An IDS (Intrusion Detection System) inspects mirrored traffic passively and does not sit inline, so it adds no latency. IPS and firewalls sit inline and can add delay.
+- 
+- 
+- A technician is troubleshooting wireless connectivity near a break room. Whenever a user turns on the microwave, connectivity to the user's laptop is lost. Which of the following frequency bands is the laptop most likely using? >>A)
+    - 2.4GHz
+    - 5GHz
+    - 6GHz
+    - 900MHz
+    - 
+- Answer(s): A. 2.4GHz
+- Explanation: Microwaves emit interference around 2.4GHz, the same frequency used by many Wi-Fi devices. Devices on 5GHz or 6GHz would not be affected.
+- 
+- 
+- A network administrator needs to implement routing capabilities in a hypervisor. Which of the following should the administrator most likely implement? >>A)
+    - NFV
+    - VPC
+    - Firewall
+    - IaaS
+    - 
+- Answer(s): C. NFV
+- Explanation: NFV (Network Function Virtualization) virtualizes network appliances—including routers—inside a hypervisor. This allows routing, switching, and firewalling to be deployed as software.
+- 
+- 
+- A network technician needs to install patch cords from the UTP patch panel to the access switch for a newly occupied set of offices. The patch panel is not labeled for easy jack identification. Which of the following tools provides the easiest way to identify the appropriate patch panel port? >>A)
+    - Toner
+    - Laptop
+    - Cable tester
+    - Visual fault locator
+    - 
+- Answer(s): A. Toner
+- Explanation: A toner and probe lets you send a signal down a cable and quickly trace it to the correct port on the patch panel, making identification simple.
+- 
+- 
+- A network administrator received complaints of intermittent network connectivity issues. The administrator investigates and finds that the network design contains potential loop scenarios. Which of the following should the administrator do? >>A)
+    - Enable spanning tree.
+    - Configure port security.
+    - Change switch port speed limits.
+    - Enforce 802.1Q tagging.
+    - 
+- Answer(s): A. Enable spanning tree.
+- Explanation: STP (Spanning Tree Protocol) prevents network loops by blocking redundant links. Without STP, loops cause broadcast storms and intermittent connectivity.
+- 
+- 
+- Which of the following routing technologies uses a successor and a feasible successor? >>A)
+    - EIGRP
+    - IS-IS
+    - OSPF
+    - BGP
+    - 
+- Answer(s): D. EIGRP
+- Explanation: EIGRP maintains both a successor (primary route) and a feasible successor (backup route) using the DUAL algorithm. No other routing protocol uses this terminology.
+- 
+- 
+- Which of the following best describes what an organization would use port address translation for? >>A)
+    - Non-routable address on the perimeter router
+    - VLANs on the perimeter
+    - Public address on the perimeter router
+    - Servers on the perimeter
+    - 
+- Answer(s): C. Non-routable address on the perimeter router
+- Explanation: PAT (Port Address Translation) allows many internal non-routable private IPs to share a single public IP by translating port numbers. It is used specifically to allow private networks to communicate externally.
+- 
+- 
+- A company is implementing a wireless solution in a high-density environment. Which of the following 802.11 standards is used when a company is concerned about device saturation and coverage? >>A)
+    - 802.11ax
+    - 802.11ac
+    - 802.11g
+    - 802.11n
+    - 
+- Answer(s): B. 802.11ax
+- Explanation: 802.11ax (Wi-Fi 6) is designed specifically for high-density environments. It improves performance when many devices compete for airtime by using OFDMA, better scheduling, and improved throughput efficiency.
+- 
+- 
+- Which of the following network traffic types is sent to all nodes on the network? >>A)
+    - Broadcast
+    - Unicast
+    - Multicast
+    - Anycast
+    - 
+- Answer(s): B. Broadcast
+- Explanation: A broadcast packet is delivered to all devices within the broadcast domain. Unicast is one-to-one, multicast is one-to-many (subscribed devices), and anycast delivers to the nearest of many possible receivers.
+- 
+- 
+- Which of the following cable types provides the highest possible transmission speed? >>A)
+    - Fiber-optic
+    - Plenum
+    - Ethernet
+    - DAC
+    - 
+- Answer(s): C. Fiber-optic
+- Explanation: Fiber-optic cabling supports the highest bandwidth and distance capabilities, far exceeding copper, DAC, or plenum-rated cables. Fiber can reach multi-gigabit and long-distance links reliably.
+- 
+- 
+- Which of the following layers of the OSI model is responsible for end-to-end encryption? >>A)
+    - Presentation
+    - Application
+    - Session
+    - Transport
+    - 
+- Answer(s): A. Presentation
+- Explanation: The Presentation layer (Layer 6) handles data formatting, compression, and encryption. TLS/SSL operations conceptually fall here, even though implementations span layers.
+- 
+- 
+- A network security administrator needs to monitor the contents of data sent between a secure network and the rest of the company. Which of the following monitoring methods will accomplish this task? >>A)
+    - Port mirroring
+    - Flow data
+    - Syslog entries
+    - SNMP traps
+    - 
+- Answer(s): A. Port mirroring
+- Explanation: Port mirroring (SPAN) replicates packet contents for analysis. Flow data does not include payload, and syslog provides only device logs. Availability monitoring tracks uptime—not traffic inspection.
+- 
+- 
+- Which of the following does a full-tunnel VPN provide? >>A)
+    - Corporate inspection of all network traffic
+    - Lower bandwidth requirements
+    - The ability to reset local computer passwords
+    - Access to blocked sites
+    - 
+- Answer(s): C. Corporate inspection of all network traffic
+- Explanation: A full-tunnel VPN forces all user traffic — internet and internal — through the organization’s VPN concentrator, allowing the company to inspect, filter, and log all traffic.
+- 
+- 
+- Which of the following does a hash provide? >>A)
+    - Integrity
+    - Non-repudiation
+    - Confidentiality
+    - Availability
+    - 
+- Answer(s): B. Integrity
+- Explanation: A hash verifies integrity, ensuring data has not been altered. It does not encrypt (confidentiality) or authenticate the sender (non-repudiation).
+- 
+- 
+- A company wants to implement a disaster recovery site for non-critical applications, which can tolerate a short period of downtime. Which of the following types of sites should the company implement to achieve this goal? >>A)
+    - Warm
+    - Hot
+    - Cold
+    - Passive
+    - 
+- Answer(s): C. Warm
+- Explanation: A warm site contains partially pre-configured systems and up-to-date backups, allowing faster recovery than a cold site but not as immediate as a hot site.
+- 
+- 
+- Which of the following is an XML-based security concept that works by passing sensitive information about users, such as log-in information and attributes, to providers? >>A)
+    - SAML
+    - IAM
+    - MFA
+    - RADIUS
+    - 
+- Answer(s): D. SAML
+- Explanation: SAML is an XML-based framework used for SSO and federated authentication, passing user identity information securely between providers.
+- 
+- 
+- Which of the following routing technologies uses unequal cost load balancing and port 88? >>A)
+    - EIGRP
+    - BGP
+    - RIP
+    - OSPF
+    - 
+- Answer(s): A. EIGRP
+- Explanation: EIGRP supports unequal-cost load balancing using its variance feature and uses protocol port 88. No other protocol in the list uses these characteristics.
+- 
+- 
+- A wireless network consultant is deploying a large number of WAPs and wants to centrally control them from one wireless LAN controller. Which of the following network types should the consultant employ? >>A)
+    - Infrastructure
+    - Mesh
+    - Point-to-point
+    - Ad hoc
+    - 
+- Answer(s): B. Infrastructure
+- Explanation: An infrastructure WLAN uses lightweight APs managed centrally by a WLC (wireless LAN controller), allowing configuration, monitoring, and RF management from a single point.
+- 
+- 
+- Which of the following network topologies involves sending all traffic through a single point? >>A)
+    - Hub-and-spoke
+    - Mesh
+    - Hybrid
+    - Point-to-point
+    - 
+- Answer(s): C. Hub-and-spoke
+- Explanation: In a hub-and-spoke topology, every remote node (spoke) communicates through a central device (hub). This single hub becomes the relay point for all traffic. This design simplifies management but introduces a single point of failure and potential bottlenecks.
+- 
+- 
+- Which of the following functions is used to prioritize network traffic based on the type of traffic? >>A)
+    - QoS
+    - VPN
+    - CDN
+    - TTL
+    - 
+- Answer(s): A. QoS
+- Explanation: Quality of Service (QoS) classifies and prioritizes network traffic. It ensures critical services—such as VoIP, video, or real-time apps—receive bandwidth and low latency even when networks are congested.
+- 
+- 
+- Which of the following most likely determines the size of a rack for installation? (Choose two.) >>A)
+    - (Correct) Switch depth
+    - (Correct) Server height
+    - KVM size
+    - Hard drive size
+    - Cooling fan speed
+    - Outlet amperage
+    - 
+- Answer(s): B. Switch depth, F. Server height
+- Explanation: Rack installation depends heavily on: Switch depth – Racks must be deep enough to accommodate network switches and allow room for cabling. Server height – Measured in rack units (U), this determines how many devices fit vertically in a rack. Other options do not directly define rack size requirements.
+- 
+- Which of the following are environmental factors that should be considered when installing equipment in a building? (Choose two.) >>A)
+    - (Correct) Fire suppression system
+    - (Correct) Proximity to nearest MDF
+    - UPS location
+    - Humidity control
+    - Power load
+    - Floor construction type
+    - 
+- Answer(s): A. Fire suppression system, F. Proximity to nearest MDF
+- Explanation: Fire suppression systems must be designed for electronics (Halon-type or inert gas systems). Humidity control prevents static discharge and condensation, both of which can damage network equipment. These are direct environmental requirements for safe equipment operation.
+- 
+- 
+- 
+- 
+- 
+- A network administrator is planning to implement device monitoring to enhance network visibility. The security team requires that the solution provides authentication and encryption. Which of the following meets these requirements? >>A)
+    - SNMPv3
+    - SIEM
+    - Syslog
+    - NetFlow
+    - 
+- Answer(s): D. SNMPv3
+- Explanation: SNMPv3 is the only version of SNMP that provides: Authentication Encryption Integrity checking SNMPv1/v2 lack security, and the other options do not offer encrypted device polling.
+- 
+- 
+- A network administrator needs to change where the outside DNS records are hosted. Which of the following records should the administrator change at the registrar to accomplish this task? >>A)
+    - NS
+    - SOA
+    - PTR
+    - CNAME
+    - 
+- Answer(s): A. NS
+- Explanation: NS (Name Server) records at the registrar define which DNS servers host a domain’s authoritative zone. Changing the NS records moves DNS hosting to a different provider.
+- 
+- 
+- A support agent receives a report that a remote user's wired devices are constantly disconnecting and have slow speeds. Upon inspection, the support agent sees that the user's coaxial modem has a signal power of - 97dB. Which of the following should the support agent recommend to troubleshoot the issue? >>A)
+    - Removing any splitters connected to the line
+    - Switching the devices to wireless
+
+    - Moving the devices closer to the modem
+    - Lowering the network speed
+    - 
+- Answer(s): A. Removing any splitters connected to the line
+- Explanation: A signal power of –97 dB indicates severe signal attenuation. Splitters degrade coax signal strength significantly. Removing splitters helps restore acceptable signal levels for stable wired connectivity.
+- 
+- 
+- Which of the following does OSPF use to communicate routing updates? >>A)
+    - Multicast
+    - Unicast
+    - Anycast
+    - Broadcast
+    - 
+- Answer(s): C. Multicast
+- Explanation: OSPF routers use multicast addresses (224.0.0.5 and 224.0.0.6) to send LSAs and hello packets to neighbors, instead of sending separate unicasts or generic broadcasts.
+- 
+- 
+- A storage network requires reduced overhead and increased efficiency for the amount of data being sent. Which of the following should an engineer most likely configure to meet these requirements? >>A)
+    - Jumbo frames
+    - Link speed
+    - QoS
+    - 802.1q tagging
+    - 
+- Answer(s): B. Jumbo frames
+- Explanation: Jumbo frames increase the Ethernet MTU (for example, to 9000 bytes), which reduces header overhead per byte of data and improves efficiency for large storage transfers (SAN, iSCSI, etc.).
+- 
+- 
+- A security administrator is creating a new firewall object for a device with IP address 192.168.100.1/25. However, the firewall software only uses dotted decimal notation in configuration fields. Which of the following is the correct subnet mask to use? >>A)
+    - 255.255.255.128
+    - 255.255.254.0
+    - 255.255.255.1
+    - 255.255.255.192
+    - 
+- Answer(s): C. 255.255.255.128
+- Explanation: A /25 prefix means 25 bits of 1s in the mask: 11111111.11111111.11111111.10000000―255.255.255.128 So /25 corresponds to 255.255.255.128.
+- 
+- 
+- Which of the following disaster recovery metrics describes the average length of time a piece of equipment can be expected to operate normally? >>A)
+    - MTBF
+    - RPO
+    - RTO
+    - MTTR
+    - 
+- Answer(s): D. MTBF
+- Explanation: MTBF (Mean Time Between Failures) is the predicted average time that a device operates correctly between failures. It describes expected uptime/operating life, which is exactly what the question asks.
+- 
+- 
+- A network administrator logs on to a router and sees an interface with an IP address of 10.61.52.34 255.255.255.252. Which of the following best describes how this interface IP address is being used? >>A)
+    - As a point-to-point connection
+    - To connect to the internet
+    - As a virtual address for redundancy
+    - For out-of-band management
+    - 
+- Answer(s): A. As a point-to-point connection
+- Explanation: A subnet mask of 255.255.255.252 (/30) provides 4 addresses total (2 usable hosts). This /30 is typically used on point-to-point links between two routers, which matches option A.
+- 
+- 
+- A network technician is troubleshooting a faulty NIC and tests the theory. Which of the following should the technician do next? >>A)
+    - Establish a plan of action.
+    - Develop a theory.
+    - Implement the solution.
+    - Document the findings.
+    - 
+- Answer(s): B. Establish a plan of action.
+- Explanation: After confirming the theory, the next troubleshooting step is to establish a plan of action before implementing the fix.
+- 
+- 
+- A network administrator is configuring access points for installation in a dense environment where coverage is often overlapping. Which of the following channel widths should the administrator choose to help minimize interference in the 2.4GHz spectrum? >>A)
+    - 20MHz
+    - 11MHz
+    - 40MHz
+    - 80MHz 160MHz
+    - 
+- Answer(s): B. 20MHz
+- Explanation: Only 20MHz channels should be used in 2.4GHz deployments, because the band has limited spectrum and only three non-overlapping channels. Wider channels cause severe interference.
+- 
+- 
+- A network manager wants to view network traffic for devices connected to a switch. A network engineer connects an appliance to a free port on the switch and needs to configure the switch port connected to the appliance. Which of the following is the best option for the engineer to enable? >>A)
+    - Port mirroring
+    - Trunking
+    - Full duplex
+    - SNMP
+    - 
+- Answer(s): B. Port mirroring
+- Explanation: Port mirroring (SPAN) duplicates traffic from selected ports or VLANs and sends it to a monitoring port for analysis by IDS/IPS or packet analyzers.
+- 
+- 
+- A network administrator is in the process of installing 35 PoE security cameras. After the administrator installed and tested the new cables, the administrator installed the cameras. However, a small number of the cameras do not work. Which of the following is the most likely reason? >>A)
+    - Power budget exceeded
+    - Incorrect wiring standard
+    - Signal attenuation
+    - Wrong voltage
+    - 
+- Answer(s): B. Power budget exceeded
+- Explanation: PoE switches have a fixed power budget. If the total wattage of all connected devices exceeds this limit, additional devices will fail to power up.
+- 
+- 
+- A network administrator is troubleshooting an application issue after a firewall change. The administrator has confirmed that the port and protocol are accessible to the user, but the application is still having issues. Which of the following tools allows the administrator to look at traffic on the application layer of the OSI model? >>A)
+    - tcpdump
+    - ifconfig
+    - nslookup
+    - traceroute
+    - 
+- Answer(s): B. tcpdump
+- Explanation: tcpdump can capture packets including layer 7 (application layer) data. It's used to analyze whether proper traffic is flowing after a firewall rule change.
+- 
+- 
+- Which of the following ports should a network administrator enable for encrypted log-in to a network switch? >>A)
+    - 22
+    - 23
+    - 80
+    - 123
+    - 
+- Answer(s): A. 22
+- Explanation: Port 22 is SSH, which provides secure encrypted remote management. Telnet (port 23) is not encrypted.
+- 
+- 
+- Which of the following is used to stage copies of a website closer to geographically dispersed users? >>A)
+    - CDN
+    - VPN
+    - SAN
+    - SDN
+    - 
+- Answer(s): B. CDN
+- Explanation: A CDN caches and distributes website content from geographically distributed edge servers to reduce latency and improve performance.
+- 
+- 
+- Which of the following appliances provides users with an extended footprint that allows connections from multiple devices within a designated WLAN? >>A)
+    - Access point
+    - Router
+    - Switch
+    - Firewall
+    - 
+- Answer(s): C. Access point
+- Explanation: An access point extends wireless coverage and allows multiple clients to connect to the WLAN.
+- 
+- 
+- An administrator is configuring a switch that will be placed in an area of the office that is accessible to customers. Which of the following is the best way for the administrator to mitigate unknown devices from connecting to the network? >>A)
+    - 802.1X
+    - SSE
+    - ACL
+    - Perimeter network
+    - 
+- Answer(s): D. 802.1X
+- Explanation: 802.1X provides port-based authentication. Devices cannot join the network unless authenticated, even if they plug into an exposed port.
+- 
+- 
+- Which of the following diagrams would most likely include specifications about fiber connector types? >>A)
+    - Physical
+    - Logical
+    - Rack
+    - Routing
+    - 
+- Answer(s): B. Physical
+- Explanation: A physical diagram shows cabling types, connector types (LC, SC, ST), and physical layout of devices and wiring.
+- 
+- 
+- Which of the following is the most likely reason an insurance brokerage would enforce VPN usage? >>A)
+    - To encrypt sensitive data in transit
+    - To secure the endpoints
+    - To maintain contractual agreements
+    - To comply with data retention requirements
+    - 
+- Answer(s): A. To encrypt sensitive data in transit
+- Explanation: Insurance data often includes PII. VPNs encrypt all data in transit, protecting it from interception.
+- 
+- 
+- An organization moved its DNS servers to new IP addresses. After this move, customers are no longer able to access the organization's website. Which of the following DNS entries should be updated? >>A)
+    - NS
+    - AAA
+    - CNAME
+    - MX
+    - 
+- Answer(s): D. NS
+- Explanation: NS (Name Server) records specify which DNS servers are authoritative for the domain. If the DNS servers' IPs change, you must update the NS records at the registrar, or no outside client will know where the domain’s authoritative DNS now resides.
+- 
+- 
+- A customer lost the connection to the telephone system. The administration console is configured with multiple network interfaces and is connected to multiple switches. The network administrator troubleshoots and verifies the following: The support team is able to connect remotely to the administration console. Rebooting the switch shows solid link and activity lights even on unused ports. Rebooting the telephone system does not bring the system back online. The console is able to connect directly to individual modules successfully. Which of the following is the most likely reason the customer lost the connection? >>A)
+    - A module failed.
+    - A switch failed.
+    - The console software needs to be reinstalled.
+    - The cables to the modules need to be replaced.
+    - 
+- Answer(s): D. A module failed.
+- Explanation: All troubleshooting indicators point to only one module not responding, while the administration console and switches operate normally. The console connects successfully to individual modules, indicating the telephone system module itself has failed.
+- 
+- 
+- A systems administrator is configuring a new device to be added to the network. The administrator is planning to perform device hardening prior to connecting the device. Which of the following should the administrator do first? >>A)
+    - Change the default admin passwords.
+    - Update the network ACLs.
+    - Place the device in a screened subnet.
+    - Enable content filtering.
+    - 
+- Answer(s): D. Change the default admin passwords.
+- Explanation: The first step in hardening any new device is changing default credentials. Leaving default passwords in place is a major security risk since they are publicly known.
+- 
+- 
+- A network administrator needs to connect two network closets that are 492ft (150m) away from each other. Which of the following cable types should the administrator install between the closets? >>A)
+    - Single-mode fiber
+    - Coaxial
+    - DAC
+    - STP
+    - 
+- Answer(s): A. Single-mode fiber
+- Explanation: 492 ft / 150 m exceeds copper Ethernet limits unless specialized extended-reach technologies are used. Single-mode fiber is appropriate for long-distance backbone links and supports high bandwidth reliably.
+- 
+- 
+- An IT manager needs to connect ten sites in a mesh network. Each needs to be secured with reduced provisioning time. Which of the following technologies will best meet this requirement? >>A)
+    - SD-WAN
+    - VXLAN
+    - VPN
+    - NFV
+    - 
+- Answer(s): A. SD-WAN
+- Explanation: SD-WAN is designed for quickly deploying secure, scalable WAN connections across many sites. It simplifies provisioning compared to traditional VPN mesh builds and automates security and routing policies across all locations.
+- 
+- 
+- Which of the following is most likely responsible for the security and handling of personal data in Europe? >>A)
+    - GDPR
+    - SCADA
+    - SAML
+    - PCI DSS
+    - 
+- Answer(s): A. GDPR
+- Explanation: GDPR (General Data Protection Regulation) is the legislation that governs how organizations must protect and handle personal data belonging to EU residents. The other options are technologies or frameworks, not legal data-protection requirements.
+- 
+- 
+- An organization has a security requirement that all network connections can be traced back to a user. A network administrator needs to identify a solution to implement on the wireless network. Which of the following is the best solution? >>A)
+    - Implementing enterprise authentication
+    - Requiring the use of PSKs
+    - Configuring a captive portal for users
+    - Enforcing wired equivalent protection
+    - 
+- Answer(s): A. Implementing enterprise authentication
+- Explanation: Enterprise authentication (802.1X + RADIUS) provides per-user credentials, making every wireless connection uniquely identifiable. PSKs cannot identify individual users, captive portals authenticate only at login (not per packet), and WEP is obsolete and insecure.
+- 
+- 
+- A customer is adding fiber connectivity between adjacent buildings. A technician terminates the multimode cable to the fiber patch panel. After the technician connects the fiber patch cable, the indicator light does not tum on. Which of the following should a technician try first to troubleshoot this issue? >>A)
+    - Reverse the fibers.
+    - Reterminate the fibers.
+    - Verify the fiber size.
+    - Examine the cable runs for visual faults.
+    - 
+- Answer(s): A. Reverse the fibers.
+- Explanation: On duplex fiber links, TX must connect to RX on the other side. If the indicator light does not turn on, the most common cause is reversed fiber polarity. Swapping the two strands is the fastest and correct first troubleshooting step.
+- 
+- 
+- Users cannot connect to an internal website with an IP address 10.249.3.76. A network administrator runs a command and receives the following output: ![](https://remnote-user-data.s3.amazonaws.com/HRhcxUYoOZJxNmn3xnYXjzmGoEuX0NQbmLHEV6VwmA_Kengq7UK3j-FYIWxDZqRp33THJU2fPm0ANjRpLUQoS0M3V-92A6tdDKYE9TdHYmM8xAMDoTbTneiZUiY11epk.jpeg) Which of the following command-line tools is the network administrator using? >>A)
+    - tracert
+    - netstat
+    - tcpdump
+    - nmap
+    - 
+- Answer(s): A. tracert
+- Explanation: A traceroute/tracert command shows the path packets take to a destination, displaying each hop along the route. The hop-by-hop output referenced in the scenario matches traceroute behavior.
+- 
+- 
+- After running a Cat 8 cable using passthrough plugs, an electrician notices that connected cables are experiencing a lot of cross talk. Which of the following troubleshooting steps should the electrician take first? >>A)
+    - Inspect the connectors for any wires that are touching or exposed.
+    - Restore default settings on the connected devices.
+    - Terminate the connections again.
+    - Check for radio frequency interference in the area.
+    - 
+- Answer(s): A. Inspect the connectors for any wires that are touching or exposed.
+- Explanation: Exposed, uneven, or touching wire pairs at the connector termination are the most common cause of excessive crosstalk when using passthrough plugs. The first step is to inspect the connector for improper wire alignment or exposed copper.
+- 
+- 
+- A technician is troubleshooting a user's laptop that is unable to connect to a corporate server. The technician thinks the issue pertains to routing. Which of the following commands should the technician use to identify the issue? >>A)
+    - tracert
+    - tcpdump
+    - dig
+    - arp
+    - 
+- Answer(s): C. tracert
+- Explanation: Tracert identifies routing failures by showing each hop from the source to the destination. It reveals where packets stop or are misrouted.
+- 
+- 
+- After installing a series of Cat 8 keystones, a data center architect notices higher than normal interference during tests. Which of the following steps should the architect take to troubleshoot the issue? >>A)
+    - Check to see if the end connections were wrapped in copper tape before terminating.
+    - Use passthrough modular crimping plugs instead of traditional crimping plugs.
+    - Connect the RX/TX wires to different pins.
+    - Run a speed test on a device that can only achieve 100Mbps speeds.
+    - 
+- Answer(s): A. Check to see if the end connections were wrapped in copper tape before terminating.
+- Explanation: Cat 8 cabling requires proper shield continuity. Keystones must be wrapped with shielding copper tape before termination to prevent EMI leakage and interference.
+- 
+- 
+- A small business is deploying new phones, and some of the phones have full HD videoconferencing features. The Chief Information Officer is concerned that the network might not be able to handle the traffic if the traffic reaches a certain threshold. Which of the following can the network engineer configure to help ease these concerns? >>A)
+    - A VLAN with 100Mbps speed limits
+    - An IP helper to direct VoIP traffic
+    - A smaller subnet mask
+    - Full duplex on all user ports
+    - 
+- Answer(s): A. A VLAN with 100Mbps speed limits
+- Explanation: Applying rate limiting on a VLAN prevents VoIP/video endpoints from consuming excessive bandwidth. HD video conferencing can saturate links, so capping bandwidth ensures stability for other services.
+- 
+- 
+- A virtual machine has the following configuration: IPv4 address: 169.254.10.10 Subnet mask: 255.255.0.0 The virtual machine can reach collocated systems but cannot reach external addresses on the internet. Which of the following is most likely the root cause? >>A)
+    - The DHCP server is offline.
+    - The subnet mask is incorrect.
+    - The IP address is an RFC1918 private address.
+    - The DNS server is unreachable.
+    - 
+- Answer(s): B. The DHCP server is offline.
+- Explanation: A 169.254.x.x APIPA address indicates DHCP failed. Without a valid DHCP lease, the VM cannot reach networks beyond the local link.
+- 
+- 
+- Which of the following is used to estimate the average life span of a device? >>A)
+    - MTBF
+    - RPO
+    - RTO
+    - MTTR
+    - 
+- Answer(s): D. MTBF
+- Explanation: MTBF (Mean Time Between Failures) represents expected operational lifespan and overall reliability of hardware components.
+- 
+- 
+- Which of the following is the most secure way to provide site-to-site connectivity? >>A)
+    - IPSec
+    - VXLAN
+    - IKE
+    - GRE
+    - 
+- Answer(s): D. IPSec
+- Explanation: IPSec provides encrypted, authenticated tunnels with integrity and confidentiality, making it the most secure site-to-site method listed.
+- 
+- 
+- A network technician is terminating a cable to a fiber patch panel in the MDF. Which of the following connector types is most likely in use? >>A)
+    - SC
+    - F-type
+    - RJ11
+    - BNC
+    - 
+- Answer(s): D. SC
+- Explanation: SC connectors are commonly used in enterprise-grade fiber patch panels because of their robust push-pull locking mechanism.
+- 
+- 
+- A network administrator is connecting two Layer 2 switches in a network. These switches must transfer data in multiple networks. Which of the following would fulfill this requirement? >>A)
+    - 802.1Q tagging
+    - Jumbo frames
+    - Native VLAN
+    - Link aggregation
+    - 
+- Answer(s): B. 802.1Q tagging
+- Explanation: To carry multiple VLANs between two Layer 2 switches, the link must be configured as a trunk, which uses 802.1Q tagging. This tagging inserts a VLAN ID into each Ethernet frame, allowing several networks (VLANs) to travel over the same physical connection. Jumbo frames = increases MTU size, not related to VLAN transport Native VLAN = designates untagged traffic, but does not carry multiple VLANs by itself Link aggregation = increases bandwidth, but without tagging it cannot transport multiple VLANs 802.1Q is the required technology to allow multiple VLANs across a switch-to-switch link.
+- 
+- 
+- A network administrator wants users to be able to authenticate to the corporate network using a port-based authentication framework when accessing both wired and wireless devices. Which of the following is the best security feature to accomplish this task? >>A)
+    - 802.1X
+    - Access control list
+    - Port security
+    - MAC filtering
+    - 
+- Answer(s): A. 802.1X
+- Explanation: 802.1X provides centralized port-based authentication using RADIUS for both wired and wireless clients.
+- 
+- 
+- Which of the following is most closely associated with a dedicated link to a cloud environment and may not include encryption? >>A)
+    - Direct Connect
+    - Internet gateway
+    - Captive portal
+    - VPN
+    - 
+- Answer(s): A. Direct Connect
+- Explanation: AWS Direct Connect (and similar private cloud links) provide dedicated Layer 2 connectivity but do not encrypt traffic by default. Encryption must be added separately.
+- 
+- 
+- A systems administrator is investigating why users cannot reach a Linux web server with a browser but can ping the server IP. The server is online, the web server process is running, and the link to the switch is up. Which of the following commands should the administrator run on the server first? >>A)
+    - netstat
+    - traceroute
+    - tcpdump
+    - arp
+    - 
+- Answer(s): B. netstat
+- Explanation: netstat verifies whether the web server is listening on port 80/443 and whether inbound connection attempts are reaching the service.
+- 
+- 
+- Which of the following devices can operate in multiple layers of the OSI model? >>A)
+    - Switch
+    - Hub
+    - Transceiver
+    - Modem
+    - 
+- Answer(s): B. Switch
+- Explanation: Modern switches operate at Layer 2, and multilayer switches additionally perform Layer 3 routing, making them multi-layer devices.
+- 
+- 
+- Before using a guest network, an administrator requires users to accept the terms of use. Which of the following is the best way to accomplish this goal? >>A)
+    - Captive portal
+    - Pre-shared key
+    - Autonomous access point
+    - WPA2 encryption
+    - 
+- Answer(s): C. Captive portal
+- Explanation: A captive portal forces users to a web page where they must accept terms or authenticate before being granted network access. This is standard for guest networks.
+- 
+- 
+- A network administrator for a small office is adding a passive IDS to its network switch for the purpose of inspecting network traffic. Which of the following should the administrator use? >>A)
+    - Port mirroring
+    - SNMP trap
+    - Syslog collection
+    - API integration
+    - 
+- Answer(s): B. Port mirroring
+- Explanation: A passive IDS requires a copy of network traffic. Port mirroring sends duplicated traffic from selected ports/VLANs to the IDS for analysis.
+- 
+- 
+- Which of the following most likely requires the use of subinterfaces? >>A)
+    - A router with only one available LAN port
+    - A firewall performing deep packet inspection
+    - A hub utilizing jumbo frames
+    - A switch using Spanning Tree Protocol
+    - 
+- Answer(s): A. A router with only one available LAN port
+- Explanation: Routers often use subinterfaces to handle multiple VLANs across a single physical interface (router-on-a-stick). This is needed when LAN ports are limited.
+- 
+- 
+- A company receives a cease-and-desist order from its ISP regarding prohibited torrent activity. Which of the following should be implemented to comply with the cease-and-desist order? >>A)
+    - Content filtering
+    - MAC security
+    - Screened subnet
+    - Perimeter network
+    - 
+- Answer(s): B. Content filtering
+- Explanation: Content filtering blocks unauthorized application types (like torrent traffic), preventing violations of ISP acceptable-use policies.
+- 
+- 
+- Which of the following requires network devices to be managed using a different set of IP addresses? >>A)
+    - Out of band
+    - Console
+    - Split tunnel
+    - Jump box
+    - 
+- Answer(s): D. Out of band
+- Explanation: Out-of-band management uses a dedicated, isolated management network with its own IP addressing, separate from production traffic.
+- 
+- 
+- A network administrator wants to configure a backup route in case the primary route fails. A dynamic routing protocol is not installed on the router. Which of the following routing features should the administrator choose to accomplish this task? >>A)
+    - Administrative distance
+    - Neighbor adjacency
+    - Link state flooding
+    - Hop count
+    - 
+- Answer(s): C. Administrative distance
+- Explanation: Routers choose routes based on administrative distance. Adding a static route with a higher distance creates a backup route that activates only if the primary fails.
+- 
+- 
+- Which of the following steps of the troubleshooting methodology should a technician take to confirm a theory? >>A)
+    - Duplicate the problem.
+    - Identify the symptoms.
+    - Gather information.
+    - Determine any changes.
+    - 
+- Answer(s): A. Duplicate the problem.
+- Explanation: To confirm a theory, you must reproduce the issue in a controlled or repeated way. “Duplicate the problem” validates whether the suspected cause aligns with observed behavior.
+- 
+- 
+- A network administrator is deploying a new switch and wants to make sure that the default priority value was set for a spanning tree. Which of the following values would the network administrator expect to see? >>A)
+    - 32768
+    - 4096
+    - 8192
+    - 36684
+    - 
+- Answer(s): C. 32768
+- Explanation: Default Spanning Tree Protocol bridge priority is 32768. Devices with lower priority become preferred STP root bridges.
+- 
+- 
+- A network administrator is configuring a wireless network with an ESSID. Which of the following is a user benefit of ESSID compared to SSID? >>A)
+    - Roaming between access points
+    - Stronger wireless connection
+    - Advanced security
+    - Increased throughput
+    - 
+- Answer(s): B. Roaming between access points
+- Explanation: An ESSID spans multiple access points, allowing clients to roam seamlessly between them while staying connected to the same wireless network name.
+- 
+- 
+- A network administrator needs to connect two routers in a point-to-point configuration and conserve IP space. Which of the following subnets should the administrator use? >>A)
+    - /30
+    - /24
+    - /26
+    - /28
+    - 
+- Answer(s): D. /30
+- Explanation: A /30 network provides exactly 2 usable IPs—perfect for point-to-point router links with minimal address wastage.
+- 
+- 
+- An attacker follows an employee through a badge-secured door before the door closes. Which of the following types of attacks is occurring? >>A)
+    - Tailgating
+    - Shoulder surfing
+    - Phishing
+    - On-path
+    - 
+- Answer(s): B. Tailgating
+- Explanation: Tailgating (piggybacking) occurs when an unauthorized person gains physical access by following someone through a secure entry point.
+- 
+- 
+- A research facility is expecting to see an exponential increase in global network traffic in the near future. The offices are equipped with 2.5Gbps fiber connections from the ISP, but the facility is currently only utilizing 1Gbps connections. Which of the following would need to be configured in order to use the ISP's connection speed? >>A)
+    - Link aggregation
+    - 802.1Q tagging
+    - Network address translation
+    - Port duplex
+    - 
+- Answer(s): D. Link aggregation
+- Explanation: To exceed 1Gbps per path, multiple switch ports must be combined using link aggregation (LACP), allowing throughput beyond a single interface’s capacity.
+- 
+- 
+- A VoIP phone is plugged in to a port but cannot receive calls. Which of the following needs to be done on the port to address the issue? >>A)
+    - Tag the traffic to voice VLAN.
+    - Trunk all VLANs on the port.
+    - Configure the native VLAN.
+    - Disable VLANs.
+    - 
+- Answer(s): C. Tag the traffic to voice VLAN.
+- Explanation: VoIP phones often send traffic on a tagged voice VLAN. If tagging is not correctly configured, signaling and call control traffic will fail.
+- 
+- 
+- Which of the following can support a jumbo frame? >>A)
+    - Switch
+    - Access point
+    - Bridge
+    - Hub
+    - 
+- Answer(s): D. Switch
+- Explanation: Switches commonly support jumbo frames (9000-byte MTU), especially in data-intensive environments. Hubs and APs do not.
+- 
+- 
+- A network manager wants to implement a SIEM system to correlate system events. Which of the following protocols should the network manager verify? >>A)
+    - NTP
+    - DNS
+    - LDAP
+    - DHCP
+    - 
+- Answer(s): A. NTP
+- Explanation: A SIEM requires accurate timestamps to correlate logs. NTP synchronizes time across devices, making correct event ordering possible.
+- 
+- 
+- A network engineer is designing a secure communication link between two sites. The entire data stream needs to remain confidential. Which of the following will achieve this goal? >>A)
+    - ESP
+    - GRE
+    - IKE
+    - AH
+    - 
+- Answer(s): C. ESP
+- Explanation: IPSec ESP (Encapsulating Security Payload) provides encryption, integrity, authentication, and anti-replay protection—ensuring confidentiality.
+- 
+- 
+- Which of the following protocols has a default administrative distance value of 90? >>A)
+    - EIGRP
+    - RIP
+    - OSPF
+    - BGP
+    - 
+- Answer(s): B. EIGRP
+- Explanation: EIGRP uses a default administrative distance of 90 for internal routes, making it preferred over many other dynamic protocols when equal routing paths exist.
+- 
+- 
+- An office is experiencing intermittent connection issues. A network engineer identifies that the issue occurs whenever someone uses the fax machine that is connected to a switch. Which of the following should the engineer do first to resolve the issue? >>A)
+    - Configure a VLAN.
+    - Run a new Cat 5 line.
+    - Enable 802.1Q tagging.
+    - Change the MTU.
+    - 
+- Answer(s): D. Configure a VLAN.
+- Explanation: Fax machines using VoIP adapters or analog gateways can send broadcast or disruptive traffic. Placing them in a separate VLAN isolates their traffic and prevents interference.
+- 
+- 
+- A network engineer receives a vendor alert regarding a vulnerability in a router CPU. Which of the following should the engineer do to resolve the issue? >>A)
+    - Update the firmware.
+    - Replace the system board.
+    - Patch the OS.
+    - Isolate the system.
+    - 
+- Answer(s): A. Update the firmware.
+- Explanation: Hardware-level vulnerabilities in routers are normally addressed through firmware updates, which include vendor-supplied microcode fixes and security patches. Updating the firmware is the manufacturer’s intended remediation path and is the correct action.
+- 
+- 
+- Which of the following fiber connector types is the most likely to be used on a network interface card? >>A)
+    - LC
+    - SC
+    - ST
+    - MPO
+    - 
+- Answer(s): A. LC
+- Explanation: LC connectors are the most common connectors used on modern NICs and SFP/SFP+ modules because they are small-form-factor and designed for high-density environments.
+- 
+- 
+- Which of the following connectors provides console access to a switch? >>A)
+    - RJ45
+    - ST
+    - BNC
+    - SFP
+    - 
+- Answer(s): B. RJ45
+- Explanation: Most switch console ports use an RJ45 console interface for serial management access (often via rollover cable).
+- 
+- 
+- A network administrator notices interference with industrial equipment in the 2.4GHz range. Which of the following technologies would most likely mitigate this issue? (Choose two.) >>A)
+    - (Correct) 5GHz frequency
+    - (Correct) Non-overlapping channel
+    - Mesh network
+    - Omnidirectional antenna
+    - Captive portal
+    - Ad hoc network
+    - 
+- Answer(s): B. 5GHz frequency, D. Non-overlapping channel
+- Explanation: Industrial equipment frequently interferes with the 2.4GHz band, so moving clients to 5GHz avoids that interference entirely. Additionally, configuring non-overlapping channels (1, 6, 11) minimizes co-channel interference in 2.4GHz deployments.
+- 
+- 
+- 
+- Which of the following network topologies contains a direct connection between every node in the network? >>A)
+    - Mesh
+    - Star
+    - Hub-and-spoke
+    - Point-to-point
+    - 
+- Answer(s): A. Mesh
+- Explanation: A full mesh topology provides a direct physical or logical link between every pair of nodes, maximizing redundancy and fault tolerance.
+- 
+- 
+- A network architect needs to create a wireless field network to provide reliable service to public safety vehicles. Which of the following types of networks is the best solution? >>A)
+    - Mesh
+    - Ad hoc
+    - Point-to-point
+    - Infrastructure
+    - 
+- Answer(s): A. Mesh
+- Explanation: A wireless mesh network is ideal for mobile public-safety operations because each node can route traffic dynamically, providing resilience and wide-area coverage even if individual nodes move or fail.
+- 
+- 
+- A manager is evaluating the environmental design of a data center. Which of the following setups should the manager implement if the maximum thermal dissipation is the highest concern? >>A)
+    - A hot-cold
+    - A blue-green
+    - An east-west
+    - An active-passive
+    - 
+- Answer(s): B. A hot-cold
+- Explanation: A hot-aisle / cold-aisle design improves airflow efficiency and maximizes heat dissipation by separating hot exhaust air from cold intake paths.
+- 
+- 
+- A network administrator configured a router interface as 10.0.0.95 255.255.255.240. The administrator discovers that the router is not routing packets to a web server with IP 10.0.0.81/28. Which of the following is the best explanation? >>A)
+    - The router interface is a broadcast address.
+    - The web server is in a different subnet.
+    - The IP address space is a class A network.
+    - The subnet is in a private address space.
+    - 
+- Answer(s): B. The router interface is a broadcast address.
+- Explanation: In the 10.0.0.80/28 subnet, the address 10.0.0.95 is the broadcast address, so the router cannot use it as an interface IP. Because the router is configured with an invalid (broadcast) address, it cannot route packets.
+- 
+- 
+- A network administrator is notified that a user cannot access resources on the network. The network administrator checks the physical connections to the workstation labeled User 3 and sees the Ethernet is properly connected. However, the network interface's indicator lights are not blinking on either the computer or the switch. Which of the following is the most likely cause? >>A)
+    - The port is shut down.
+    - The switch failed.
+    - The default gateway is wrong.
+    - The VLAN assignment is incorrect.
+    - 
+- Answer(s): C. The port is shut down.
+- Explanation: In the 10.0.0.80/28 subnet, the address 10.0.0.95 is the broadcast address, so the router cannot use it as an interface IP. Because the router is configured with an invalid (broadcast) address, it cannot route packets.
+- 
+- 
+- Which of the following internal routing protocols is best characterized as having fast convergence and being loop-free? >>A)
+    - OSPF
+    - BGP
+    - STP
+    - RIP
+    - 
+- Answer(s): C. OSPF
+- Explanation: OSPF, a link-state protocol, converges rapidly and uses the Dijkstra SPF algorithm, which builds loop-free routing trees.
+- 
+- 
+- An administrator is setting up an SNMP server for use in the enterprise network and needs to create device IDs within a MIB. Which of the following describes the function of a MIB? >>A)
+    - Definition file for event translation
+    - DHCP relay device
+    - Policy enforcement point
+    - Network access controller
+    - 
+- Answer(s): C. Definition file for event translation
+- Explanation: In SNMP, the Management Information Base (MIB) acts as a definition file that describes all managed objects, their OIDs, and how events/values should be interpreted. It translates device data into a standardized structure that SNMP managers can read.
+- 
+- 
+- A critical infrastructure switch is identified as end-of-support. Which of the following is the best next step to ensure security? >>A)
+    - Decommission and replace the switch.
+    - Apply the latest patches and bug fixes.
+    - Ensure the current firmware has no issues.
+    - Isolate the switch from the network.
+    - 
+- Answer(s): B. Decommission and replace the switch.
+- Explanation: End-of-support hardware no longer receives security patches, making it a long-term vulnerability. The only correct mitigation is to decommission and replace the switch with supported hardware.
+- 
+- 
+- A company's marketing team created a new application and would like to create a DNS record for newapplication.comptia.org that always resolves to the same address as wwww.comptia.org. Which of the following records should the administrator use? >>A)
+    - CNAME
+    - SOA
+    - MX
+    - NS
+    - 
+- Answer(s): C. CNAME
+- Explanation: A CNAME (canonical name) record maps one domain name to another. It ensures that newapplication.comptia.org always resolves to the same address as www.comptia.org , automatically inheriting any changes.
+- 
+- 
+- A network administrator wants to implement security zones in the corporate network to control access to only individuals inside of the corporation. Which of the following security zones is the best solution? >>A)
+    - Trusted
+    - Extranet
+    - VPN
+    - Public
+    - 
+- Answer(s): B. Trusted
+- Explanation: A Trusted zone contains internal systems accessible only by internal or authenticated corporate users. It is specifically meant to restrict access to authorized individuals within the organization. Exams QUESTION: 131 Which of the following network devices converts wireless signals to electronic signals? A. Router B. Firewall C. Access point D. Load balancer Answer(s): C Explanation: An access point performs radio-to-electrical signal conversion to bridge wireless clients onto the wired Ethernet network.
+- 
+- 
+- A network administrator deployed wireless networking in the office area. When users visit the outdoor patio and try to download emails with large attachments or stream training videos, they notice buffering issues. Which of the following is the most likely cause? >>A)
+    - Signal degradation
+    - Network congestion
+    - Wireless interference
+    - Client disassociation
+    - 
+- Answer(s): C. Signal degradation
+- Explanation: As users move farther from the AP and outdoors, RF signal strength naturally drops. This signal degradation reduces throughput and causes buffering during high-bandwidth activities.
+- 
+- 
+- Which of the following activities would have groups from different departments evaluate the disaster recovery process? >>A)
+    - Tabletop exercises
+    - Validation test
+    - SLA alignment
+    - Active-active approach
+    - 
+- Answer(s): C. Tabletop exercises
+- Explanation: Tabletop exercises simulate disaster scenarios and bring together multiple departments to walk through roles, responsibilities, and outcomes. This is the collaborative evaluation method referenced in the question.
+- 
+- 
+- Which of the following routing protocols uses an autonomous system number? >>A)
+    - BGP
+    - IS-IS
+    - OSPF
+    - EIGRP
+    - 
+- Answer(s): C. BGP
+- Explanation: BGP (Border Gateway Protocol) is an exterior gateway protocol that relies on Autonomous System Numbers (ASNs) to exchange routing information between independent networks.
+- 
+- 
+- Which of the following is a characteristic of the application layer? >>A)
+    - It relies upon other layers for packet delivery.
+    - It checks independently for packet loss.
+    - It encrypts data in transit.
+    - It performs address translation.
+    - 
+- Answer(s): A. It relies upon other layers for packet delivery.
+- Explanation: The application layer provides network services to applications but relies on lower layers (transport, network, data link) to handle delivery, addressing, and transmission reliability.
+- 
+- 
+- Which of the following IP transmission types encrypts all of the transmitted data? >>A)
+    - ESP
+    - AH
+    - GRE
+    - UDP
+    - TCP
+    - 
+- Answer(s): A. ESP
+- Explanation: IPsec ESP (Encapsulating Security Payload) provides full encryption of packet contents. By contrast, AH provides no encryption, and GRE/TCP/UDP are not encryption mechanisms.
+- 
+- 
+- Which of the following should be configured so users can authenticate to a wireless network using company credentials? >>A)
+    - RADIUS
+    - SSO
+    - SAML
+    - MFA
+    - 
+- Answer(s): D. RADIUS
+- Explanation: Enterprise Wi-Fi uses 802.1X with a RADIUS server to authenticate users with corporate credentials (e.g., Active Directory). SAML/SSO apply to web authentication, not Wi-Fi.
+- 
+- 
+- A network engineer performed a migration to a new mail server. The engineer changed the MX record, verified the change was accurate, and confirmed the new mail server was reachable via the IP address in the A record. However, users are not receiving email. Which of the following should the engineer have done to prevent the issue from occurring? >>A)
+    - Reduce the TTL record prior to the MX record change.
+    - Change the email client configuration to match the MX record.
+    - Perform a DNS zone transfer prior to the MX record change.
+    - Update the NS record to reflect the IP address change.
+    - 
+- Answer(s): B. Reduce the TTL record prior to the MX record change.
+- Explanation: DNS records—especially MX records—may be cached for the full duration of their TTL (Time To Live). If the TTL was high before the migration, external mail servers may continue using the old MX record for hours or days. Reducing the TTL before changing MX ensures the update propagates quickly. Reference: [https://perfectmail.com/kb/changing_dns_records](https://perfectmail.com/kb/changing_dns_records)
+- 
+- Which of the following should a network administrator configure when adding OT devices to an organization's architecture? >>A)
+    - Network segmentation
+    - Honeynet
+    - Data-at-rest encryption
+    - Time-based authentication
+    - 
+- Answer(s): D. Network segmentation
+- Explanation: Operational Technology (OT) systems such as PLCs and SCADA controllers are highly sensitive and must be isolated from corporate IT networks. Network segmentation protects OT devices by minimizing attack surface, preventing lateral movement, and enforcing strict control over communications between IT and OT environments. Reference: [https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/cybersecurity/how-to-](https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/cybersecurity/how-to-) enhance-the-cybersecurity-of-operational-technology-environments
+- 
+- 
+- To reduce costs and increase mobility, a Chief Technology Officer (CTO) wants to adopt cloud services for the organization and its affiliates. To reduce the impact for users, the CTO wants key services to run from the on- site data center and enterprise services to run in the cloud. Which of the following deployment models is the best choice for the organization? >>A)
+    - Hybrid
+    - Public
+    - SaaS
+    - Private
+    - 
+- Answer(s): B. Hybrid
+- Explanation: A hybrid cloud deployment blends on-premises resources with cloud-based services, allowing the organization to keep essential workloads local while moving enterprise services into the cloud for flexibility and scalability. Reference: [https://www.cloudwards.net/cloud-deployment-models/](https://www.cloudwards.net/cloud-deployment-models/)
+- 
+- 
+- Which of the following is used to describe the average duration of an outage for a specific service? >>A)
+    - MTTR
+    - RPO
+    - RTO
+    - MTBF
+    - 
+- Answer(s): B. MTTR
+- Explanation: MTTR (Mean Time To Repair) measures the average time required to restore a service after a failure. It reflects operational responsiveness and recovery effectiveness.
+- 
+- 
+- A network engineer is setting up a new VoIP network for a customer. The current network is segmented only for computers and servers. No additional switch ports can be used in the new network. Which of the following does the engineer need to do to configure the network correctly? (Choose two.) >>A)
+    - (Correct) Enable 802.1Q.
+    - (Correct) Reconfigure the DNS.
+    - Change network translation definitions.
+    - Implement a routing protocol.
+    - Set up voice VLANs.
+    - Place devices in the perimeter network.
+    - 
+- Answer(s): B. Enable 802.1Q., E. Reconfigure the DNS.
+- Explanation: 802.1Q is the standard for VLAN tagging in Ethernet frames, which allows for the use of multiple VLANs on a single switch port. Enabling 802.1Q is necessary to segment voice traffic and data traffic on the same physical infrastructure. Setting up voice VLANs helps prioritize voice traffic over data traffic to ensure better Quality of Service (QoS) for VoIP communications. This creates a separate VLAN specifically for voice, improving performance and reducing interference from data traffic.
+- 
+- 
+- A network rack has four servers and four switches with dual power supplies. Only one intelligent PDU is installed in the rack. Which of the following is the reason to add a second PDU? >>A)
+    - Power redundancy
+    - Failed PSU monitoring
+    - Surge protection
+    - Electricity conservation
+    - 
+- Answer(s): A. Power redundancy
+- Explanation: Adding a second Power Distribution Unit (PDU) provides power redundancy, ensuring that if one PDU or power source fails, the other can continue supplying power to critical devices like servers and switches. This is important for maintaining uptime and preventing service outages in case of power issues.
+- 
+- 
+- Which of the following allows a user to connect to an isolated device on a stand-alone network? >>A)
+    - Jump box
+    - API gateway
+    - Secure Shell
+    - Clientless VPN
+    - 
+- Answer(s): A. Jump box
+- Explanation: A jump box (or jump server) is a secure device that allows a user to access and connect to an isolated network or device that is otherwise inaccessible. It serves as an intermediary between the user and the isolated device, ensuring security and control when managing or troubleshooting devices in a stand-alone or restricted network.
+- 
+- 
+- Early in the morning, an administrator installs a new DHCP server. In the afternoon, some users report they are experiencing network outages. Which of the following is the most likely issue? >>A)
+    - The administrator did not provision enough IP addresses.
+    - The administrator configured an incorrect default gateway.
+    - The administrator did not provision enough routes.
+    - The administrator did not provision enough MAC addresses.
+    - 
+- Answer(s): A. The administrator did not provision enough IP addresses.
+- Explanation: If a new DHCP server is installed and some users are experiencing network outages later, it is most likely that the DHCP server did not have enough IP addresses in its pool to assign to all devices. Once the available IP addresses are exhausted, new devices cannot obtain an IP address, leading to network connectivity issues.
+- 
+- 
+- A company is implementing a policy that will not allow employees to bring personal devices to the office and connect to the wireless network. Which of the following is the best way to enforce this policy? >>A)
+    - 802.1X
+    - MAC filtering
+    - Port security
+    - ACL
+    - 
+- Answer(s): B. 802.1X
+- Explanation: 802.1X is a network access control protocol that provides authentication to devices trying to connect to the network. By using 802.1X, the company can enforce a policy that requires only authorized devices (such as company-provided devices) to authenticate before being granted access to the network, effectively preventing personal devices from connecting. This is the best way to enforce such a policy because it allows for strong security and authentication at the network access level. Other methods like MAC filtering or ACLs can be bypassed more easily, and port security is generally more applicable to wired networks.
+- 
+- 
+- A network engineer is troubleshooting an issue with a VoIP network. After performing analysis, the engineer found that when users upload large files, voice quality is severely degraded. When no other traffic is on the network, voice quality is fine. Which of the following should the engineer do to most likely resolve the issue? >>A)
+    - Configure QoS on the router.
+    - Enable MAC filtering.
+    - Reduce the VLAN database.
+    - Implement ACLs.
+    - 
+- Answer(s): C. Configure QoS on the router.
+- Explanation: Quality of Service (QoS) prioritizes certain types of traffic over others. In this case, configuring QoS on the router would prioritize voice traffic over data traffic (such as large file uploads), ensuring that VoIP calls maintain high quality even when the network is under heavy load. This prevents the voice traffic from being affected by bandwidth-heavy activities like file uploads.
+- 
+- 
+- Which of the following disaster recovery metrics is used to describe the amount of data that is lost since the last backup? >>A)
+    - RPO
+    - MTTR
+    - RTO
+    - MTBF
+    - 
+- Answer(s): C. RPO
+- Explanation: RPO refers to the maximum acceptable amount of data loss measured in time. It indicates the point in time to which data must be recovered after a disaster (e.g., how much data can be lost since the last backup). It helps organizations determine how frequently backups should occur to meet their disaster recovery goals.
+- 
+- 
+- A network administrator needs to improve network monitoring. Which of the following should the administrator do first? >>A)
+    - Establish baseline metrics.
+    - Implement a SIEM.
+    - Perform regular packet captures.
+    - Conduct availability monitoring.
+    - 
+- Answer(s): A. Establish baseline metrics.
+- Explanation: Before improving network monitoring, it is important to establish baseline metrics. This involves measuring the normal performance and behavior of the network, such as bandwidth usage, latency, packet loss, and other key indicators. Having a baseline allows the administrator to detect anomalies, identify performance issues, and measure the impact of any changes made to the network.
+- 
+- 
+- A network administrator is troubleshooting issues with a DHCP server at a university. More students have recently arrived on campus, and the users are unable to obtain an IP address. Which of the following should the administrator do to address the issue? >>A)
+    - Increase the scope size.
+    - Enable IP helper.
+    - Change the subnet mask.
+    - Add address exclusions.
+    - 
+- Answer(s): C. Increase the scope size.
+- Explanation: When more students have arrived and users are unable to obtain an IP address, it typically means the DHCP server's available pool of IP addresses has been exhausted. Increasing the scope size on the DHCP server will expand the range of available IP addresses, allowing more devices to obtain an IP address and connect to the network.
+- 
+- 
+- Which of the following is designed to distribute network traffic among devices based on the quantity of traffic? >>A)
+    - Load balancer
+    - Router
+    - Proxy
+    - Switch
+    - 
+- Answer(s): A. Load balancer
+- Explanation: A load balancer is designed to distribute network traffic among multiple devices (such as servers) based on factors like the quantity of traffic or server load. This helps ensure efficient use of resources, prevents any one device from being overwhelmed, and improves the overall performance and reliability of the network.
+- 
+- 
+- A user recently moved a workstation to a different part of the office. The user is able to access the internet and print but is unable to access server resources. Which of the following is the most likely cause of the issue? >>A)
+    - Wrong VLAN assignment
+    - Incorrect default gateway
+    - Error-disabled port
+    - Duplicate IP address
+    - 
+- Answer(s): B. Wrong VLAN assignment
+- Explanation: If the user can access the internet and print but is unable to access server resources, the most likely issue is that the workstation is assigned to the wrong VLAN. VLANs are used to segment network traffic, and if the workstation is in a different VLAN than the servers, it won't be able to access those resources unless proper routing is configured between the VLANs.
+- 
+- 
+- A technician is planning an equipment installation into a rack in a data center that practices hot aisle/cold aisle ventilation. Which of the following directions should the equipment exhaust face when installed in the rack? >>A)
+    - Rear
+    - Sides
+    - Top
+    - Front
+    - 
+- Answer(s): D. Rear
+- Explanation: In a data center with hot aisle/cold aisle ventilation, equipment is typically installed so that cool air is pulled in from the front (facing the cold aisle) and warm air is exhausted out the rear (facing the hot aisle). This arrangement helps maintain proper airflow and cooling efficiency in the data center.
+- 
+- 
+- A network administrator needs to add 255 useable IP addresses to the network. A /24 is currently in use. Which of the following prefixes would fulfill this need? >>A)
+    - /23
+    - /25
+    - /29
+    - /32
+    - 
+- Answer(s): A. /23
+- Explanation: A /23 subnet provides 512 total IP addresses, with 510 usable IP addresses (after accounting for the network and broadcast addresses). This would satisfy the need for 255 usable IP addresses. The current /24 subnet provides 256 total IP addresses, with 254 usable addresses, so moving to a /23 subnet will double the number of available IP addresses.
+- 
+- 
+- Which of the following allows an organization to map multiple internal devices to a single external-facing IP address? >>A)
+    - NAT
+    - BGP
+    - OSPF
+    - FHRP
+    - 
+- Answer(s): A. NAT
+- Explanation: NAT allows an organization to map multiple internal devices, which have private IP addresses, to a single external-facing public IP address. This process helps conserve public IP addresses and enables devices on a private network to communicate with external networks, such as the internet, using a single IP address.
+- 
+- 
+- Which of the following steps in the troubleshooting methodology includes checking logs for recent changes? >>A)
+    - Identify the problem.
+    - Document the findings and outcomes.
+    - Test the theory to determine cause.
+    - Establish a plan of action.
+    - 
+- Answer(s): A. Identify the problem.
+- Explanation: During the Identify the problem step of the troubleshooting methodology, checking logs for recent changes is a key part of gathering information to help understand the issue. This helps determine if any recent configurations, updates, or changes could be related to the problem.
+- 
+- 
+- Which of the following configurations exempts traffic to the internet from traversing a VPN? >>A)
+    - Split-tunnel
+    - Client-to-site
+    - Active-passive
+    - Out-of-band
+    - 
+- Answer(s): C. Split-tunnel
+- Explanation: A split-tunnel configuration allows certain traffic, such as traffic destined for the internet, to bypass the VPN and go directly to its destination without traversing the VPN tunnel. This helps reduce the load on the VPN by only routing traffic that is meant for the internal network through the tunnel, while internet traffic goes directly to the internet.
+- 
+- 
+- Which of the following ports creates a secure connection to a directory service? >>A)
+    - 636
+    - 22
+    - 389
+    - 445
+    - 
+- Answer(s): D. 636
+- Explanation: Port 636 is used for LDAPS (LDAP Secure), which creates a secure, encrypted connection to a directory service using SSL/TLS. This is the secure version of the LDAP protocol, which typically operates on port 389 without encryption.
+- 
+- 
+- A network engineer configures a new switch and connects it to an existing switch for expansion and redundancy. Users immediately lose connectivity to the network. The network engineer notes the following spanning tree information from both switches. ![](https://remnote-user-data.s3.amazonaws.com/wbA6tu4G2rxzuvMQU5PJY7dLHfvMFegwWGQqSzwuf3snguLqEV_m8M4JuOXPo5F4n_0G_maJoZmXYLc1YRgOn0hZt_vaDmFgjIiT5eo53lYV8QNvTbeyikh4zPaFsksG.jpeg) Which of the following best describes the issue? >>A)
+    - The switch should be configured for RSTP.
+    - The port cost should not be equal.
+    - The ports should use link aggregation.
+    - A root bridge needs to be identified.
+    - 
+- Answer(s): D. The switch should be configured for RSTP.
+- Explanation: RSTP (802.1w) would provide faster convergence and help prevent loops in the network. With traditional STP, both switches may be incorrectly forwarding on all ports due to slow convergence or misconfiguration, which leads to a broadcast storm or looping issue. RSTP can quickly resolve this by identifying which port should block traffic to prevent loops.
+- 
+- 
+- A network administrator is implementing security zones for each department. Which of the following should the administrator use to accomplish this task? >>A)
+    - ACLs
+    - Port security
+    - Content filtering
+    - NAC
+    - 
+- Answer(s): A. ACLs
+- Explanation: Access Control Lists (ACLs) are used to define rules that allow or deny traffic between different network zones. By implementing ACLs on network devices such as routers or firewalls, a network administrator can control the traffic flow between departments or zones, enforcing security policies and isolating departments as needed.
+- 
+- 
+- Which of the following protocols is used to route traffic on the public internet? >>A)
+    - BGP
+    - OSPF
+    - EIGRP
+    - RIP
+    - 
+- Answer(s): A. BGP
+- Explanation: Border Gateway Protocol (BGP) is the protocol used to route traffic between different autonomous systems (AS) on the public internet. It determines the best path for data packets across multiple networks based on various attributes such as path length, policies, and network reliability. BGP is the backbone of internet routing and ensures that data can traverse between different networks globally.
+- 
+- 
+- Which of the following protocols provides remote access utilizing port 22? >>A)
+    - SSH
+    - Telnet
+    - TLS
+    - RDP
+    - 
+- Answer(s): A. SSH
+- Explanation: SSH (Secure Shell) is a protocol that provides secure remote access to devices over a network. It uses port 22 by default and encrypts the connection, ensuring secure data transmission. SSH is commonly used by network administrators for securely managing servers and other network devices remotely.
+- 
+- 
+- After changes were made to a firewall, users are no longer able to access a web server. A network administrator wants to ensure that ports 80 and 443 on the web server are still accessible from the user IP space. Which of the following commands is best suited to perform this testing? >>A)
+    - nmap
+    - dig
+    - ifconfig
+    - ping
+    - 
+- Answer(s): D. nmap
+- Explanation: nmap (Network Mapper) is the best tool for testing whether specific ports (e.g., 80 for HTTP and 443 for HTTPS) are open and accessible on a web server. It is commonly used for network discovery and security auditing and allows the network administrator to scan a target system to determine the status of specific ports. For example, the administrator can run the following command: nmap -p 80,443 <web_server_IP> This command will check whether ports 80 and 443 are open on the specified web server.
+- 
+- 
+- Which of the following attacks would most likely cause duplicate IP addresses in a network? >>A)
+    - Rogue DHCP server
+    - DNS poisoning
+    - Social engineering
+    - Denial-of-service
+    - 
+- Answer(s): A. Rogue DHCP server
+- Explanation: A rogue DHCP server can cause duplicate IP addresses on a network by assigning conflicting IP addresses to devices. When an unauthorized DHCP server operates in a network, it may offer IP configurations that overlap with those assigned by the legitimate DHCP server. This results in duplicate IP address assignments, leading to connectivity issues for affected devices.
+- 
+- 
+- An organization wants better network visibility. The organization's requirements include: Multivendor/OS-monitoring capabilities Real-time collection Data correlation Which of the following meets these requirements? >>A)
+    - SIEM
+    - SNMP
+    - Nmap
+    - Syslog
+    - 
+- Answer(s): B. SIEM
+- Explanation: SIEM (Security Information and Event Management) systems provide the capabilities required for better network visibility, as described in the organization's requirements. SIEM solutions: 1. Multivendor/OS Monitoring Capabilities: Collect and process data from multiple sources, including diverse vendors and operating systems. 2. Real-time Collection: Offer real-time monitoring and logging of events across the network. 3. Data Correlation: Analyze and correlate data from various devices and systems to identify patterns, anomalies, or security events. 32 33 34 35 36
+- 
+- 
+- An administrator is evaluating the use of authentication within SNMP. Which of the following is the most secure way of authenticating devices using only SNMP? >>A)
+    - Use version 3 of SNMP and set up trap messages for critical events on the network
+    - Use version 1 of SNMP and use a community string to serve as a PSK
+    - Use version 2c of SNMP and use informs to validate device authentication
+    - Use version 2u of SNMP to authenticate devices for network monitoring
+    - 
+- Answer(s): B. Use version 3 of SNMP and set up trap messages for critical events on the network
+- Explanation: SNMP version 3 (SNMPv3) provides the most secure way to authenticate devices and manage network monitoring. Unlike earlier versions (SNMPv1 and SNMPv2c), SNMPv3 includes robust security features such as: 1. Authentication: Supports authentication using user-based security models (USM), ensuring only authorized users can access SNMP data. 2. Encryption: Provides encryption for SNMP messages, preventing data from being intercepted or tampered with. 3. Trap Messages: Allows configuring trap messages for critical events, enabling real-time alerts for network administrators.
+- 
+- 
+- A company has observed increased user traffic to gambling websites and would like to limit this behavior on work computers. Which of the following should the company most likely implement? >>A)
+    - Content filter
+    - ACLS
+    - Port security
+    - Screened subnet
+    - 
+- Answer(s): B. Content filter
+- Explanation: A content filter is the most appropriate solution for restricting access to gambling websites and other unwanted online content. Content filtering works by analyzing and blocking access to specific websites or categories of content based on predefined rules or policies. It can be implemented at the firewall, proxy server, or through specialized filtering software.
+- 
+- 
+- Following a fire in a data center, the cabling was replaced. Soon after an administrator notices network issues. Which of the following are the most likely causes of the network issues? (Choose two.) >>A)
+    - (Correct) The RJ45 cables were replaced with unshielded cables
+    - The switches are not the correct voltage
+    - The HVAC system was not verified as fully functional after the fire
+    - The VLAN database was not deleted before the equipment was brought back online
+    - (Correct) The wrong transceiver type was used for the new termination
+    - The new RJ45 cables are a higher category than the old ones
+    - 
+- Answer(s): D. The RJ45 cables were replaced with unshielded cables, E. The wrong transceiver type was used for the new termination
+- Explanation: The RJ45 cables were replaced with unshielded cables Unshielded cables (e.g., UTP) can cause network issues in environments with high electromagnetic interference (EMI), such as data centers. Shielded cables (e.g., STP or FTP) are typically used in such environments to minimize interference and ensure reliable communication. The wrong transceiver type was used for the new termination Using the wrong transceiver (e.g., mismatched single-mode vs. multimode fiber, or incorrect connector type) can cause connectivity issues, such as failure to establish a link or poor signal quality. This is especially common when cables are replaced without verifying compatibility with the transceivers and switches.
+- 
+- 
+- Cloud computing has the capability to meet increased and decreased demands for computing infrastructure for a short period of time. Which of the following best describes this characteristic? >>A)
+    - Elasticity
+    - Efficiency
+    - Multitenancy
+    - Scalability
+    - 
+- Answer(s): B. Elasticity
+- Explanation: Elasticity in cloud computing refers to the ability of the system to automatically scale resources up or down based on demand. This capability allows organizations to handle short-term fluctuations in workload without over-provisioning or underutilizing resources. For example, during a high-traffic event, the cloud can add resources temporarily, and once the demand decreases, it scales them back down.
+- 
+- 
+- Which of the following can also provide a security feature when implemented? >>A)
+    - NAT
+    - BGP
+    - FHRP
+    - EIGRP
+    - 
+- Answer(s): A. NAT
+- Explanation: Network Address Translation (NAT) can provide a security feature by hiding the internal IP addresses of a network from external entities. NAT translates private IP addresses into a public IP address (or a smaller pool of public IPs) for internet access. This makes it harder for external attackers to directly target internal devices since their private IPs are not exposed.
+- 
+- 
+- Which of the following best describes the transmission format that occurs at the transport layer over connectionless communication? >>A)
+    - Datagram
+    - Segment
+    - Frames
+    - Packets
+    - 
+- Answer(s): A. Datagram
+- Explanation: At the transport layer, connectionless communication (as used by protocols like UDP - User Datagram Protocol) operates with data units called datagrams. Datagrams are self-contained, independent packets that carry enough information for routing from the source to the destination without the need for an established connection.
+- 
+- 
+- Which of the following is most likely to work with an FC connection and offers more scalability? >>A)
+    - SAN
+    - DAS
+    - SSE
+    - NAS
+    - 
+- Answer(s): B. SAN
+- Explanation: SAN (Storage Area Network) is most likely to work with an FC (Fibre Channel) connection and offers greater scalability. SANs use high-speed networks, often employing Fibre Channel, to provide block-level storage to servers. This setup is highly scalable, allowing organizations to add more storage capacity or devices as needed while maintaining performance and flexibility.
+- 
+- 
+- A company is moving to a hybrid cloud model. As part of this move the mail server will be moved to the cloud. The systems administrator needs to ensure the mail server continues to receive email. Which of the following types of DNS records should the systems administrator update? >>A)
+    - MX
+    - NS
+    - PTR
+    - A
+    - 
+- Answer(s): C. MX
+- Explanation: MX (Mail Exchange) records in DNS specify the mail servers responsible for receiving emails for a domain. When moving the mail server to the cloud, the systems administrator must update the MX record to point to the new mail server's hostname or IP address in the cloud. This ensures that email traffic is routed correctly to the new server.
+- 
+- 
+- A network engineer is configuring network ports in a public office. To increase security, the engineer wants the ports to allow network connections only after authentication. Which of the following security features should the engineer use? >>A)
+    - 802.1X
+    - Port security
+    - MAC filtering
+    - Access control list
+    - 
+- Answer(s): B. 802.1X
+- Explanation: 802.1X is a network access control protocol that provides port-based authentication. It ensures that only authenticated devices can connect to the network through a switch or access point. When implemented, 802.1X requires devices to authenticate using credentials, such as usernames and passwords, or certificates before granting access to the network.
+- 
+- 
+- A network administrator is expanding a network and wants to ensure no unauthorized redundant links are present. Which of the following should the administrator use to identify and block redundant links? >>A)
+    - STP
+    - SDN
+    - LLDP
+    - OSPF
+    - 
+- Answer(s): B. STP
+- Explanation: Spanning Tree Protocol (STP) is specifically designed to prevent loops in a network with redundant links. It identifies redundant paths and places them into a blocking state, ensuring only one active path is used at a time. This prevents network issues such as broadcast storms caused by loops.
+- 
+- 
+- A network administrator notices uncommon communication between VMs on ephemeral ports on the same subnet. The administrator is concerned about that traffic moving laterally within the network. Which of the following describes the type of traffic flow the administrator is analyzing? >>A)
+    - East-west
+    - Point-to-point
+    - Horizontal-scaling
+    - Hub-and-spoke
+    - 
+- Answer(s): A. East-west
+- Explanation: East-west traffic refers to the communication that occurs between devices or systems within the same data center or subnet, such as virtual machines (VMs) communicating with each other. This type of traffic is distinct from north-south traffic, which involves communication between internal systems and external networks or clients. The administrator's concern about traffic moving laterally aligns with the concept of east-west traffic, as it involves internal, intra-network communication.
+- 
+- 
+- Which of the following would be violated if an employee accidentally deleted a customer's data? >>A)
+    - Integrity
+    - Confidentiality
+    - Vulnerability
+    - Availability
+    - 
+- Answer(s): A. Integrity
+- Explanation: The integrity of data ensures that the information remains accurate, complete, and unaltered unless explicitly modified by authorized personnel. If an employee accidentally deletes customer data, the data's integrity is violated because the original data is no longer accurate or complete. This type of incident directly impacts the trustworthiness of the data within the system.
+- 
+- 
+- A network engineer is now in charge of all SNMP management in the organization. The engineer must use a SNMP version that does not utilize plaintext data. Which of the following is the minimum version of SNMP that supports this requirement? >>A)
+    - v3
+    - v1
+    - v2c
+    - v2u
+    - 
+- Answer(s): D. v3
+- Explanation: SNMPv3 is the minimum version of SNMP that provides enhanced security features, including support for authentication and encryption. Unlike SNMPv1 and SNMPv2c, which transmit data (including community strings) in plaintext, SNMPv3 allows for the use of encrypted communication, ensuring data confidentiality and protection against interception. This makes it the suitable choice for environments requiring secure SNMP management.
+- 
+- 
+- A company recently acquired a number of sites and no documentation was provided. A network administrator needs to identify and document all of the digital assets in use. Which of the following is the best method for the administrator to use? >>A)
+    - Network discovery
+    - Availability monitoring
+    - Packet capture
+    - Physical inventory
+    - 
+- Answer(s): D. Network discovery
+- Explanation: Network discovery is the best method for identifying and documenting all digital assets in use. It involves using tools and techniques to scan and identify devices, services, and resources connected to the network. These tools can detect IP addresses, open ports, operating systems, and other network details, helping the administrator to create an inventory of digital assets efficiently and accurately. Other options like physical inventory may miss devices or services not physically visible, and packet capture is more focused on analyzing traffic rather than discovering assets.
+- 
+- 
+- A network administrator recently upgraded a wireless infrastructure with new APs. Users are reporting that, when stationary, the wireless connection drops and reconnects after 20 to 30 seconds. While reviewing the logs, the administrator notices that the APs are changing channels. Which of the following is the most likely reason for the service interruptions? >>A)
+    - Channel interference
+    - Roaming misconfiguration
+    - Network congestion
+    - Insufficient wireless coverage
+    - 
+- Answer(s): A. Channel interference
+- Explanation: The most likely reason for the service interruptions is channel interference. Wireless Access Points (APs) use a feature called Dynamic Frequency Selection (DFS) or automatic channel selection to switch to less congested channels when interference is detected. However, when the APs change channels, there is a brief service disruption for connected devices. This is often noticed when the devices are stationary, as they remain connected to the same AP, but the channel change interrupts the connection temporarily. Addressing channel interference, such as using non-overlapping channels and optimizing AP placement, can reduce these disruptions.
+- 
+- 
+- A network administrator needs to set up a multicast network for audio and video broadcasting. Which of the following networks would be the most appropriate for this application? >>A)
+    - 224.0.0.0/24
+    - 172.16.0.0/24
+    - 192.168.0.0/24
+    - 240.0.0.0/24
+    - 
+- Answer(s): C. 224.0.0.0/24
+- Explanation: The IP address range 224.0.0.0 to 239.255.255.255 is reserved for multicast traffic. Multicast is used for applications such as audio and video broadcasting, where data is sent from one source to multiple recipients efficiently. The 224.0.0.0/24 range is specifically reserved for local network multicast (e.g., routing protocol updates). For broader multicast applications, addresses in the 224.0.1.0 to 239.255.255.255 range would be used. This makes the 224.0.0.0/24 network the most appropriate choice for setting up a multicast network.
+- 
+- 
+- A user connects to a corporate VPN via a web browser and is able to use TLS to access the internal financial system to input a time card. Which of the following best describes how the VPN is being used? >>A)
+    - Clientless
+    - Client-to-site
+    - Full tunnel
+    - Site-to-site
+    - 
+- Answer(s): A. Clientless
+- Explanation: The term "clientless" VPN refers to a VPN connection that does not require the user to install specialized software or a VPN client. Instead, the user connects through a web browser, typically using SSL/TLS protocols (often referred to as SSL VPN). In this case, the user accesses the corporate VPN and is able to use TLS to access internal resources, which indicates a clientless VPN solution. Other options like client-to-site and full tunnel would require dedicated VPN client software, and site-to-site refers to VPN connections between two network locations, not individual users.
+- 
+- 
+- A network administrator needs to fail over services to an off-site environment. This process will take four weeks to become fully operational. Which of the following DR concepts does this describe? >>A)
+    - Warm site
+    - Hot site
+    - Cold site
+    - Active-active approach
+    - 
+- Answer(s): B. Warm site
+- Explanation: A warm site is a disaster recovery (DR) concept where the off-site environment is partially configured and can be brought online within a relatively short time (typically a few days to a few weeks). In this scenario, the process will take four weeks to become fully operational, which aligns with the characteristics of a warm site. A hot site would be fully operational and ready to use immediately, while a cold site would require the longest recovery time, as it would need to be completely set up from scratch. An active-active approach involves running services in multiple locations simultaneously, which is not the case here.
+- 
+- 
+- A security analyst wants to control internet access based on site reputation and categorization. The analyst needs a solution that does not require traffic flow changes. Which of the following solutions would most likely meet these requirements? >>A)
+    - DNS filtering
+    - Proxy
+    - Router ACL
+    - Load balancer
+    - 
+- Answer(s): B. DNS filtering
+- Explanation: DNS filtering allows for the control of internet access based on site reputation and categorization by filtering DNS requests. This approach does not require any changes to traffic flow, as it works by intercepting and blocking or allowing DNS requests based on predefined rules for site reputation and categorization. The user's requests to access websites are filtered at the DNS level before any traffic flows to the site.
+- 
+- 
+- A wireless technician wants to implement a technology that will allow user devices to automatically navigate to the best available frequency standard. Which of the following technologies should the technician use? >>A)
+    - Band steering
+    - Wireless LAN controller
+    - Directional antenna
+    - Autonomous access point
+    - 
+- Answer(s): A. Band steering
+- Explanation: Band steering is a technology used in wireless networks to automatically guide devices to the most appropriate frequency band, typically 2.4 GHz or 5 GHz. This ensures that devices are directed to the best available band based on factors like network congestion and signal strength, thereby optimizing the user experience. The other options do not directly relate to automatic navigation to the best frequency band: a wireless LAN controller manages network configuration but does not directly steer devices, a directional antenna focuses signal direction but does not manage frequency bands, and an autonomous access point operates independently but does not perform band steering.
+- 
+- 
+- A user called the help desk after business hours to complain that files on a device are inaccessible and the wallpaper was changed. The network administrator thinks that this issue is an isolated incident, but the security analyst thinks the issue might be a ransomware attack. Which of the following troubleshooting steps should be taken first? >>A)
+    - Identify the problem.
+    - Establish a theory.
+    - Document findings.
+    - Create a plan of action.
+    - 
+- Answer(s): A. Identify the problem.
+- Explanation: The first step in troubleshooting is to identify the problem. Before jumping to conclusions or forming theories, it's essential to gather all available information about the issue. In this case, understanding whether the issue is indeed related to a ransomware attack or if it's an isolated incident requires careful investigation. This step will help clarify the symptoms and lead to a more informed diagnosis. Once the problem is identified, the next steps (like establishing a theory or creating a plan of action) can be undertaken based on the findings.
+- 
+- 
+- A data center interconnect using a VXLAN was recently implemented. A network engineer observes slow performance and fragmentation on the interconnect. Which of the following technologies will resolve the issue? >>A)
+    - Jumbo frames
+    - 802.1Q tagging
+    - Spanning tree
+    - Link aggregation
+    - 
+- Answer(s): D. Jumbo frames
+- Explanation: VXLAN (Virtual Extensible LAN) encapsulates Ethernet frames in UDP packets, which can lead to fragmentation if the maximum transmission unit (MTU) size is not properly configured. Jumbo frames are Ethernet frames that exceed the standard MTU of 1500 bytes, allowing larger payloads to be transmitted without fragmentation. Enabling jumbo frames on the interconnect will allow the VXLAN traffic to pass without fragmentation, improving performance. The other options are not directly related to resolving fragmentation issues with VXLAN: 802.1Q tagging is used for VLAN tagging, spanning tree manages network loops, and link aggregation increases bandwidth but does not address fragmentation.
+- 
+- 
+- A new server is deployed in a trusted zone and is validated to be online with all appropriate services running. However, users in a perimeter network cannot access the server. Which of the following should a network administrator do to resolve the reported issue? >>A)
+    - Update the firewall ACL to allow access to the new server.
+    - Create a TXT record on the DNS server for the new server.
+    - Configure a static route for the user VLAN to the new server.
+    - Insert a static ARP entry for the new server on the Layer 3 switch.
+    - 
+- Answer(s): B. Update the firewall ACL to allow access to the new server.
+- Explanation: Since the server is deployed in a trusted zone and is running properly, the most likely cause of the issue is a firewall or access control list (ACL) blocking traffic from the perimeter network to the server. Updating the firewall ACL to allow access from the perimeter network to the server will resolve the issue and ensure that the appropriate traffic can flow through the firewall.
+- 
+- 
+- Network administrators are using the Telnet protocol to administer network devices that are on the 192.168.1.0/24 subnet. Which of the following tools should the administrator use to best identify the devices? >>A)
+    - nmap
+    - dig
+    - tracert
+    - telnet
+    - 
+- Answer(s): B. nmap
+- Explanation: nmap is a powerful network scanning tool that can be used to discover devices on a network, identify open ports, and gather information about the devices, including which services are running. This makes it ideal for identifying devices on the 192.168.1.0/24 subnet, which is the goal in this scenario.
+- 
+- 
+- A network administrator recently updated configurations on a Layer 3 switch. Following the updates, users report being unable to reach a specific file server. Which of the following is the most likely cause? >>A)
+    - Incorrect ACLs
+    - Switching loop
+    - Duplicate IP addresses
+    - Wrong default route
+    - 
+- Answer(s): A. Incorrect ACLs
+- Explanation: The most likely cause of the issue is incorrect ACLs (Access Control Lists). ACLs control the traffic that is allowed or denied between devices on a network, and if they were misconfigured during the update to the Layer 3 switch, they could block access to the file server. This is a common issue when ACLs are not properly adjusted after configuration changes, leading to connectivity problems.
+- 
+- 
+- A network engineer wants to implement a solution where all web servers will send event data over port 514. Which of the following services will accomplish this task? >>A)
+    - Syslog
+    - SMTP
+    - DNS
+    - DHCP
+    - 
+- Answer(s): A. Syslog
+- Explanation: Syslog is a standard protocol used for sending log or event data from devices, including web servers, to a centralized logging server. Port 514 is the default port used for Syslog communication. This protocol is commonly used for collecting and managing log data, which fits the requirement for the web servers to send event data over this specific port.
+- 
+- 
+- A security administrator wants to discover zero-day attacks before they can be used on the company's network. Which of the following can the administrator use to accomplish this task? >>A)
+    - Honeypot
+    - Central repository
+    - Next-generation firewall
+    - Evil twin
+    - 
+- Answer(s): B. Honeypot
+- Explanation: A honeypot is a security mechanism designed to attract and trap potential attackers by simulating vulnerable systems or services. By deploying a honeypot, a security administrator can observe attack techniques and behaviors, including zero-day attacks, in a controlled environment. This allows the administrator to discover and analyze new threats before they can be used on the company's actual network.
+- 
+- 
+- Users at a satellite office are experiencing issues when using videoconferencing. Which of the following should a technician focus on first to rectify these issues? >>A)
+    - Quality of service
+    - Network signal
+    - Time to live
+    - Load balancing
+    - 
+- Answer(s): A. Quality of service
+- Explanation: Quality of Service (QoS) should be the focus first because it is specifically designed to prioritize certain types of traffic, such as videoconferencing, over other types of traffic on the network. Videoconferencing requires consistent bandwidth and low latency for smooth performance. If QoS is not properly configured, video and audio packets might be delayed or dropped, leading to poor videoconferencing experiences.
+- 
+- 
+- A network administrator is trying to locate the switch interface a PC is connected to. The administrator accesses the local switch, pings the PC IP address, and then uses the command show arp. Which of the following commands should the administrator use next? >>A)
+    - show mac-address-table
+    - show route
+    - show vlan
+    - show interface
+    - 
+- Answer(s): B. show mac-address-table
+- Explanation: After using the show arp command to identify the IP address-to-MAC address mapping, the next step is to find which switch interface the PC is connected to. The show mac-address-table command will display the MAC address table of the switch, which contains the MAC addresses of devices connected to each interface. The administrator can then locate the MAC address of the PC in the table and identify the corresponding switch interface.
+- 
+- 
+- A user attempts to log in to a corporate website by utilizing a shortcut. The shortcut has been used many times before. The user then notices some discrepancies on the company website. Which of the following is most likely the reason for this issue? >>A)
+    - DNS poisoning
+    - VLAN hopping
+    - ARP spoofing
+    - MAC flooding
+    - 
+- Answer(s): C. DNS poisoning
+- Explanation: DNS poisoning occurs when a malicious actor manipulates the DNS cache to redirect a user's traffic to a fraudulent website, often one that appears similar to the legitimate site. In this case, the user is trying to log in using a shortcut, and the discrepancies on the company website suggest that the traffic might have been redirected to a malicious site. DNS poisoning can result in the user being unknowingly directed to a fake website, where they may encounter altered content or be vulnerable to phishing attacks.
+- 
+- 
+- Which of the following is the correct order of components in a bottom-up approach for the three-tier hierarchical model? >>A)
+    - Access, distribution, and core
+    - Core, root, and distribution
+    - Core, spine, and leaf
+    - Access, core, and root
+    - 
+- Answer(s): A. Access, distribution, and core
+- Explanation: In the bottom-up approach of the three-tier hierarchical model, the components are ordered as follows: 1. Access layer ­ This is the layer where end devices (like computers, printers, etc.) connect to the network. 2. Distribution layer ­ This layer aggregates the traffic from the access layer and provides policy-based connectivity and routing between different segments of the network. 3. Core layer ­ The core layer is responsible for high-speed, high-performance routing between different distribution layers and networks. This model ensures scalability, redundancy, and efficient traffic management in large networks.
+- 
+- 
+- A client with a 2.4GHz wireless network has stated that the entire office is experiencing intermittent issues with laptops after the WAP was moved. Which of the following is the most likely reason for these issues? >>A)
+    - The network has excessive noise.
+    - The network uses a non-overlapping channel.
+    - The signal is reflecting too much.
+    - A microwave is in the office.
+    - 
+- Answer(s): C. The network has excessive noise.
+- Explanation: The most likely reason for the intermittent wireless issues in this scenario is excessive noise on the 2.4GHz band. The 2.4GHz frequency range is commonly used by various devices like microwaves, Bluetooth devices, and other electronics, which can cause interference and disrupt the wireless signal. When the wireless access point (WAP) was moved, it could have been positioned closer to sources of interference, leading to noise and signal degradation, which causes connectivity issues.
+- 
+- 
+- Which of the following SD-WAN features allows a router to be shipped directly to the installation site and does not require site-level configuration? >>A)
+    - Zero-touch provisioning
+    - Application aware
+    - Transport agnostic
+    - Central policy management
+    - 
+- Answer(s): A. Zero-touch provisioning
+- Explanation: Zero-touch provisioning (ZTP) is a feature that allows a router or device to be shipped directly to the installation site, where it automatically configures itself without requiring manual site-level configuration. The device will retrieve its configuration from a centralized server or management system as soon as it connects to the network, simplifying deployment and reducing the need for on-site IT resources.
+- 
+- 
+- A network technician is troubleshooting network latency and has determined the issue to be occurring between two network switches (Switch10 and Switch11). Symptoms reported include poor video performance and slow file copying. Given the following information: ![](https://remnote-user-data.s3.amazonaws.com/hqo_N2HA0wwpQIltqTfsR05AYQPwCyG2mXni_5nRFjOJWkN-bMPiOidXMZ_Pf_WT0XNnXYnYxLuaKXYqJRyugfE6Oy4TP-ZRlw3VOUAXrtCbLbjrjFMySczqvS4YX01t.jpeg) Which of the following should the technician most likely do to resolve the issue? >>A)
+    - Modify Switch10 MTU value to 1500.
+    - Disable automatic negotiation on Switch11.
+    - Configure STP on both switches.
+    - Change the native VLAN on the ports.
+    - 
+- Answer(s): B. Modify Switch10 MTU value to 1500.
+- Explanation: Based on the output from the switches, we can see that Switch10 has an MTU value of 1600 bytes, while Switch11 has an MTU value of 1500 bytes. A mismatch in the MTU value between the two switches can cause fragmentation, which leads to performance issues, such as slow file transfers and poor video performance. To resolve this issue, the MTU value on Switch10 should be modified to match the 1500-byte MTU setting on Switch11. Ensuring the MTU values match across the network will prevent fragmentation and improve performance.
+- 
+- 
+- Which of the following types of routes will take precedence when building a routing table for a given subnet? >>A)
+    - Static
+    - BGP
+    - OSPF
+    - Default
+    - 
+- Answer(s): A. Static
+- Explanation: When building a routing table, static routes take precedence over dynamic routing protocols like BGP (Border Gateway Protocol), OSPF (Open Shortest Path First), and default routes. Static routes are manually configured by a network administrator and have a higher administrative distance than dynamic routes, meaning they will be preferred when both static and dynamic routes exist for the same destination.
+- 
+- 
+- Which of the following steps in the troubleshooting methodology comes after using a top-to-bottom examination of the OSI model to determine cause? >>A)
+    - Test the theory.
+    - Establish a plan of action.
+    - Verify full system functionality.
+    - Identify the problem.
+    - 
+- Answer(s): A. Test the theory.
+- Explanation: After using a top-to-bottom examination of the OSI model to determine the cause of a network issue, the next step in the troubleshooting methodology is to test the theory. This involves validating the hypothesis made about the problem's cause and verifying if the identified issue is indeed the root cause.
+- 
+- 
+- Which of the following would an adversary do while conducting an evil twin attack? >>A)
+    - Trick users into using an AP with an SSID that is identical to a legitimate network.
+    - Manipulate address resolution to point devices to a malicious endpoint.
+    - Present an identical MAC to gain unauthorized access to network resources.
+    - Capture data in transit between two legitimate endpoints to steal data.
+    - 
+- Answer(s): A. Trick users into using an AP with an SSID that is identical to a legitimate network.
+- Explanation: An evil twin attack involves an adversary setting up a rogue access point (AP) with the same SSID as a legitimate wireless network. The goal is to trick users into connecting to the malicious AP, thereby intercepting and potentially manipulating the data transmitted between the users and the network. Once connected to the rogue AP, the attacker may capture sensitive data or launch additional attacks, such as man-in-the-middle attacks.
+- 
+- 
+- An ISP provided a company with an IP range of 98.174.235.142/28. A network technician configured a router with a subnet mask of 255.255.255.224 and default gateway of 98.174.235.129. After the configuration was set up. the company is unable to connect to the ISP. Which of the following would resolve this issue? >>A)
+    - Change the static IP to 98.174.235.128/28.
+    - Change the subnet mask to .240.
+    - Change the Ethernet cable from the external interface to the modem.
+    - Change the CIDR to /29.
+    - 
+- Answer(s): D. Change the static IP to 98.174.235.128/28.
+- Explanation: The IP range provided by the ISP is 98.174.235.142/28, which gives a subnet with the network address of 98.174.235.128 and a range of IPs from 98.174.235.128 to 98.174.235.143 (usable IPs: 98.174.235.129 to 98.174.235.142). The router should be configured with an IP address in this range. The issue in this case is that the static IP address on the router is set to 98.174.235.129, which is the default gateway in the configuration, but this IP should not be used as the router's own IP. The router should have an IP address from the valid range of 98.174.235.128/28 that isn't used for the gateway (which is 98.174.235.129), so the correct IP would be 98.174.235.130 or any other available address in the range.
+- 
+- 
+- A network administrator is troubleshooting a connection between two switches that is experiencing intermittent errors. The administrator needs to determine which port on the remote switch the faulty cable is connected to. Which of the following is the best tool to use to identify the error? >>A)
+    - LLDP run
+    - tracert
+    - nmap
+    - ping
+    - 
+- Answer(s): B. LLDP run
+- Explanation: LLDP (Link Layer Discovery Protocol) is the best tool for identifying which port on the remote switch the faulty cable is connected to. LLDP is a Layer 2 protocol used by network devices to advertise their identity, capabilities, and neighbors. By using LLDP, a network administrator can discover information about the devices connected to a switch port, including the port number on the remote switch.
+- 
+- 
+- Which of the following is a difference between EOL and EOS? >>A)
+    - EOL discontinues the product but may offer support.
+    - EOS replaces free support with a subscription model.
+    - EOS only applies to physical products.
+    - EOL still guarantees warranty service.
+    - 
+- Answer(s): A. EOL discontinues the product but may offer support.
+- Explanation: EOL (End of Life) and EOS (End of Support) are terms used in the lifecycle of a product, and they represent different stages: EOL (End of Life) refers to when a product is officially discontinued, meaning the manufacturer will no longer produce or sell the product. However, it may still offer support services such as software updates or security patches for a limited time. EOS (End of Support) refers to when the manufacturer stops offering any support for the product, including technical support, updates, or bug fixes. This typically happens after EOL.
+- 
+- 
+- A network architect is implementing an off-premises computing facility and needs to ensure that operation will not be impacted by major outages. Which of the following should the architect consider? >>A)
+    - Hot site
+    - DCI
+    - Direct Connect
+    - Active-passive approach
+    - 
+- Answer(s): A. Hot site
+- Explanation: A hot site is an off-premises computing facility that is fully equipped and can take over operations immediately in the event of a disaster or major outage. It typically includes all necessary hardware, software, and data to ensure business continuity without any downtime. This option would ensure that operations are not impacted by major outages, as the hot site can provide immediate failover.
+- 
+- 
+- A network engineer is testing a website to ensure it is compatible with IPv6. After attempting to ping the website by its IPv6 address, the engineer determines that the DNS has not been set up properly. Which of the following should the network engineer complete to resolve this issue? >>A)
+    - Add a new AAA record.
+    - Enable a PTR record.
+    - Update the existing TXT record.
+    - Configure a secondary NS record.
+    - 
+- Answer(s): C. Add a new AAA record.
+- Explanation: In IPv6, the AAAA record is used to map a domain name to its corresponding IPv6 address. If the network engineer is unable to ping the website by its IPv6 address and determines that the DNS is not set up properly, it is likely because the AAAA record, which links the domain to the IPv6 address, is missing or incorrectly configured.
+- 
+- 
+- A small coffee shop wants to set up multiple 2.4GHz wireless access points. The access points will support a large number of users, and the network technician wants to mitigate interference as much as possible. Which of the following is the number of 22MHz channels that the equipment can support? >>A)
+    - 3
+    - 1
+    - 2
+    - 4
+    - 
+- Answer(s): C. 3
+- Explanation: In the 2.4GHz frequency band, there are 11 or 13 channels available, depending on the country. However, these channels overlap significantly, especially when using standard 20MHz channel widths. To minimize interference and maximize the number of non-overlapping channels, the 2.4GHz band can only support 3 non- overlapping channels when using 22MHz channel width. The non-overlapping channels in the 2.4GHz band are typically: Channel 1 (center frequency at 2412 MHz) Channel 6 (center frequency at 2437 MHz) Channel 11 (center frequency at 2462 MHz) Using these three channels (1, 6, and 11) allows you to avoid interference between channels. Increasing the number of channels or overlapping channels would result in interference and poor performance for wireless clients. Thus, 3 non-overlapping 22MHz channels are available in the 2.4GHz band.
+- 
+- 
+- A company is purchasing a 40Gbps broadband connection service from an ISP. Which of the following should most likely be configured on the 10G switch to take advantage of the new service? >>A)
+    - Link aggregation
+    - 802.11Q tagging
+    - Jumbo frames
+    - Half duplex
+    - 
+- Answer(s): D. Link aggregation
+- Explanation: To take full advantage of a 40Gbps broadband connection, the 10G switch will need to combine multiple 10Gbps links into a single logical connection, which can be achieved by link aggregation. Link aggregation allows multiple physical links to act as a single logical link, increasing bandwidth and providing redundancy. With a 40Gbps connection, the 10G switch would aggregate multiple 10Gbps links (e.g., 4x10Gbps) to meet the required speed.
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Question 300
+- 
+- A company experiences an incident involving a user who connects an unmanaged switch to the network. Which of the following technologies should the company implement to help avoid similar incidents without conducting an asset inventory? >>A)
+    - Port security
+    - Screened subnet
+    - 802.1X
+    - MAC filtering
+    - Explanation: Port security restricts how many MAC addresses can be learned on a switch port. When an unmanaged switch is connected, multiple new MAC addresses appear on the port, causing a violation. The port can then shut down or block traffic. This prevents unauthorized devices from expanding the network without requiring an asset inventory.  

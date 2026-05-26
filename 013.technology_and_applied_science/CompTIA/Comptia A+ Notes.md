@@ -1,0 +1,11162 @@
+- Sources
+    - CompTIA A+ Core 1 (220-1101) & Core 2 (220-1102) - 2025 IT Cert Doctor
+- Core 1 (220-1101)
+    - ### **Section 1: Pre-requisites**
+        - [Size]();-[H3]()
+        - 0 / 20 | 1hr 18min0 of 20 lectures completed1hr 18min
+    - ### **Section 2: CORE 1: PC Components**
+        - [Size]();-[H3]()
+        - 21. PC Components Overview
+            - what is a synonym
+            - what are the common PC components?→cpu, motherboard, hard drive, ram, power supply unit, gpu, and heat sink
+            - {{CPU}} aka {{Central Processing Unit}} aka P{{rocessor}} 
+            - {{CPU}} is {{brain}} of the computer
+            - {{CPU}} does the {{calculations}} of computer 
+            - {{CPU}} performs {{decision making}} 
+            - {{processor is working}} {{when you open}} 
+                - an app
+                - an email 
+                - a website
+            - {{Mobo}} aka {{Motherboard}} 
+            - {{Motherboard}} is the {{body}} of the computer 
+            - {{Every component of the }}computer{{ connects to the motherboard}} 
+            - {{Hard drives saves}} {{the data of the computer}} 
+                - There are several different types.
+            - {{Hard drives}} are {{Non-volatile memory}} 
+            - {{Ram}} aka {{memory}} 
+            - {{RAM}} {{copies data}} from the {{hard drive}} 
+            - {{RAM data}} {{currently being worked}} on by the {{CPU}} 
+                - {{Hard drive data}} is {{only updated}} {{when data is saved}} 
+            - {{RAM}} is {{Volatile memory}} 
+            - {{PSU}} aka {{Power supply unit}} 
+            - {{PSU provides power}} to {{all the components of the computer}} 
+            - {{GPU}} aka {{graphics processing unit}} 
+            - {{GPU Helps}} the {{CPU by processing images}} 
+            - {{Cheaper models}} have {{integrated into the CPU}} 
+            - CommonCommon uses
+                - Gaming PCs
+                - CAD (computed aided design) for engineers
+                - Video Editing
+                - ML (machine learning)
+            - {{Heat Sink}} {{takes the heat away}} from {{a component}} 
+        - 22. Motherboard in Depth
+            - Form factor is the physical shape of a thing
+                - Some things that has a form factor
+                    - Hahard drives
+                    - Ram
+                    - CPU
+                    - motherboards
+                - Avoid memorizing numbers
+                - Know the size order from largest to smallest: 
+                    - ATX
+                    - Micro-ATX
+                    - Mini-ATX
+                    - Nano-ITX
+                    - Pico-ITX
+            - Firmware is software that never or almost never updates
+                - Typically on hardware
+                    - Not on operating systems
+                - How to update
+                    - Unique from manufacturer to manufacturer
+                    - Consult documentation
+                - Do not turn off while updating
+            - Post stands for power on self test
+                - Verifies electrical-mechanical failures on the PC
+                    - motherboard 
+                    - CPU
+                    - Ram
+                    - Hard drive
+                    - Not operating systems
+                - What happens if POST finds something wrong?
+                    - Beep codes or display codes
+                    - Which are manufacturer specific
+                        - Consult the documentation
+            - BIOS/UEFI
+                - Is the firmware for the motherboard
+                - bios is old
+                - uefi new
+                - Responsible for booting into the operating system
+                - Somesome hardware configuration
+                    - FanFan speed
+                    - Hypervisor
+                    - IntrusionIntrusion detection
+                    - Disabledisable ports
+            - BIOS/UEFI Functions
+                - Boot sequence
+                    - Determines what device to boot the operating system from
+                        - USB
+                        - Hard drive
+                        - PXE - booting over the network
+                - Password can lock down your motherboard 
+            - Secure boot
+                - UEFI only feature
+                - Checks for malicious operating systems when booting
+            - Lojack
+                - UEFI only feature
+                - Allows GPS tracking on laptops
+                - Lock certain folders/file
+                - Hard drive encryption
+            - TPM
+                - Encryption ROM (aka firmware) chip on motherboard 
+                - Allows for hard drive encryption
+                - Hard drive is tied to the motherboard
+                    - Removing hard drive from motherboard requires a password
+                    - Without password hard drive is permanently encrypted
+                - Coupled with operating system services
+                    - BitLocker for windows 
+            - HSM aka hardware security module
+                - Hard drive encryption without TPM
+                - Is an external device, i.e. USB to encrypt hard drive
+            - CMOS Battery
+                - Keeps time when powered off
+                - Stores motherboard firmware, BIOS/UEFI settings
+            - CMOS Battery Problems 
+                - If time in operating system systems reset
+                    - CMOS is going bad. Replace it
+                - If you need to reset BIOS/UEFI
+                    - Reseat CMOS battery
+            - Expansion slots
+                - Where PC add-ons are put
+                - Add-on examples
+                    - Graphics card
+                    - Wi-Fi card
+                    - Hard drive card
+                - Form factors
+                    - PCI is Legacy
+                    - PCIe is modern
+                    - not cross compatible 
+            - Adapter cards, a.k.a. expansion cards
+                - Added into PCIe slots
+                - Various types
+                    - Wi-Fi cards
+                    - Sound cards
+                    - Fiber cards 
+                    - Ethernet cards
+                    - USB cards
+                - Each required drivers
+            - Difference between PCI and PCIe
+                - PCIPCI is largely replaced
+                    - AvoidAvoid memorizing speed - Hundreds of megabytes
+                - PCIEPCIE has several form factor
+                    - x1 x2 x4 x8 x16 x32
+                    - TheThe number represents lanes
+                        - x2 = 2 lanes = 2x speed
+                    - Speeds 
+                        - Gen 1 = 250 MBps per lane
+                        - Gen 2 = 500 MBps per lane
+                        - Gen 3 = 1 GBps per lane
+                        - Gen 4 = 2 GBps per lane
+                        - Gen 5 = 4 GBps per lane
+                    - Speed Example 
+                        - You have a PCIe card that is Gen 4 and x
+                        - 8
+                        - 2 GBps x 8 lanes = 16 GBps total bandwidth 
+            - PCIe uppluggin
+                - Is ability to plug a PCIe card into a bigger slot
+            - Riser cards
+                - Typical found in servers
+                - Add more expansion slots via an expansion slot
+                - Necessary due to the odd shape of servers
+            - Motherboard headers
+                - Connect directly to motherboard from chassis
+                - Example of motherboard headers
+                    - Reset button
+                    - Power button
+                    - Drive activity light
+                    - Audio Jack
+                    - USB ports
+            - Motherboard test tips
+                - Not really covered
+                    - Bus architecture
+                    - Caches
+                        - L1, L2
+                    - Motherboard headers
+                    - Chipsets
+                    - Frontside bus/backside bus 
+                        - FSB/BSB
+                    - Northbridge
+                    - Southbridge
+        - 29. HOW TO: install a Motherboard
+        - 24. CPU in Brief
+        - 25. HOW TO: Install CPU
+        - 26. PSU in Brief
+        - 27. HOW TO: Install PSU
+        - 28. RAM in Depth
+        - 29. HOW TO: Install RAM
+        - 30. Hard Drives in Depth
+        - 31. HOW TO: Install Various Hard Drives
+        - 32. GPU in Brief & HOW TO: Install GPU
+        - 33. HOW TO: Update Motherboard Firmware
+        - 34. Mobile Devices Overview
+        - 35. HOW TO: install Expansion Card
+        - 36. HOW TO: install SODIMM into Laptop
+        - 37. HOW TO: Configure Page File on Windows
+        - 38. HOW TO: Clean Thermal Paste off of CPU
+        - 39. HOW TO: Change Boot Sequence
+        - 40. HOW TO: set Password on Motherboard
+        - 41. HOW TO: use Secure Boot
+        - 42. HOW TO: Install CMOS Battery
+        - 43. HOW TO: Connect Headers
+        - 44. HOW TO: Install Heat Sink
+        - 45. HOW TO: PCIe Up-Plug
+    - ### **Section 3: CORE 1: PC Peripherals**
+        - [Size]();-[H3]()
+        - 46. Video Cables
+        - 47. Hard Drive Cables
+        - 48. USB Cables
+        - 49. Misc. Cables
+        - 50. Monitors & Projectors
+        - 51. HOW TO: Use a Docking Station/Port Replicator
+        - 52. HOW TO: Use a Rollover Cable
+    - ### **Section 4: CORE 1: Networking Fundamentals**
+        - [Size]();-[H3]()
+        - 53. Networking Hardware
+        - 54. Networking Tools
+        - 55. Network Types & Topologies
+        - 56. OSI & DoD Networking Models
+        - 57. Networking Cables & Connectors
+        - 58. TCP/IP Overview
+        - 59. Layer 2 Concepts in Depth
+        - 60. Layer 3 Concepts in Depth
+        - 61. Layer 4 Concepts in Depth
+        - 62. WiFi in Depth
+        - 63. Firewall and Misc. Networking
+        - 64. HOW TO: install an Unmanaged Switch
+        - 65. HOW TO: Install Fiber & Ethernet into PCs
+        - 66. HOW TO: Install WiFi NIC in PC
+        - 67. HOW TO: use a USB Network Adapter
+        - 68. HOW TO: Configure NAT
+        - 69. HOW TO: Configure Static IP in Windows
+        - 70. HOW TO: Configure DHCP Server
+        - 71. HOW TO: Change WiFi Encryption Method
+        - 72. HOW TO: Hide SSID
+        - 73. HOW TO: Purchase a DNS Name from GoDaddy
+        - 74. HOW TO: Configure Small Business Network
+        - 75. HOW TO: Use a WiFi Analyzer
+        - 76. HOW TO: Use Ethernet over Power
+        - 77. HOW TO: Use a Crimper
+        - 78. HOW TO: Use a Toner Probe
+        - 79. HOW TO: Use a Punch-Down Tool
+        - 80. HOW TO: Use a Cable Tester
+        - 81. HOW TO: Use a Loopback Plug
+        - 82. HOW TO: Install Fiberglass into Networking Devices
+    - ### **Section 5: CORE 1: Networking Ports & Protocols**
+        - [Size]();-[H3]()
+        - 83. Overview of Ports & Protocols
+        - 84. HACKING HOW TO: FTP: Ports 20 & 21
+        - 85. HOW TO: SSH: Port 22
+        - 86. HACKING HOW TO: Telnet: Port 23
+        - 87. HOW TO: DNS: Port 53
+        - 88. HOW TO: DHCP: Ports 67 & 68
+        - 89. HACKING HOW TO: HTTP: Port 80
+        - 90. HOW TO: NBTStat: Ports 137, 138, & 139
+        - 91. HOW TO: HTTPS: Port 443
+        - 92. HOW TO: SMB: Port 445 & HOW TO: Create an Administrative Share
+        - 93. HOW TO: RDP: Port 3389
+        - 94. Misc Ports
+        - 95. How to Change Port/Protocol Assignment
+    - ### **Section 6: CORE 1: Virtualization and Cloud**
+        - [Size]();-[H3]()
+        - 96. Cloud Fundamentals
+        - 97. Virtualization Fundamentals
+        - 98. HOW TO: How to Enable Type 2 Hypervisor
+    - ### **Section 7: CORE 1: Printers**
+        - [Size]();-[H3]()
+        - 99. Printers in Depth
+        - 100. HOW TO: Install Ink in Inkjet Printer
+        - 101. HOW TO: Perform Printer Sharing
+        - 102. HOW TO: Clear Printer Spooler
+        - 103. HOW TO: Print a Test Page from the Printer
+        - 104. HOW TO: Print a Test Page from Windows
+        - 105. HOW TO: Properly Install Paper
+        - 106. HOW TO: Perform Printer Self-Clean
+    - ### **Section 8: CORE 1 & CORE 2: Troubleshooting**
+        - [Size]();-[H3]()
+        - 107. Troubleshooting Methodology
+        - 108. Troubleshooting Hardware
+        - 109. Troubleshooting Windows
+        - 110. Troubleshooting Network
+        - 111. Troubleshooting Printers
+        - 112. HOW TO: Check Event Viewer
+    - ### **Section 9: CORE 1 & CORE 2: RAID**
+        - [Size]();-[H3]()
+        - 113. RAID Overview
+        - 114. Backup Types
+        - 115. HOW TO: RAID Configuration: Windows OS Example
+        - 116. HOW TO: RAID Configuration: DAS Example
+    - 1.0 - Mobile Devices 1
+        - 1.1 - Laptop Hardware 1
+            - Laptop hardware
+                - Engineered to precise specifications
+                - – A challenging repair
+                - Some laptops are easier to fix than others
+                - – An ongoing learning process
+                - Understand the process
+                - – The details will vary between laptop manufacturers
+                - Laptop batteries
+                - The power source when unplugged
+                - – May be easily replaced or require a tear down
+                - – Five minutes vs. one hour
+                - Lithium-Ion (Li-ion) and
+                - – Lithium-Ion polymer (LiPo) are common
+                - – No “memory effect”
+                - – Charging the battery diminishes capacity
+                - Different form factor for each laptop
+                - – Battery types and styles can vary
+                - – Battery technology is changing constantly
+                - Laptop keyboard
+                - The most-used component of the laptop
+                - – Can be easy to replace
+                - – A few screws and a single ribbon cable
+                - – May not always be this simple
+                - Or connect an external USB keyboard
+                - – Not very portable, but works in a pinch
+                - Laptop keys
+                - Some repairs might require the removal or
+                - replacement of a key cap
+                - – This can be a delicate procedure
+                - Check with the manufacturer’s instructions
+                - – It’s very easy to accidentally break the key cap
+                - or the components underneath
+                - Laptop memory
+                - Small Outline Dual In-line Memory Module (SO-DIMM)
+                - Memory used in laptops and mobile devices
+                - – Often easy to install and replace
+                - Some laptop memory is soldered to the system board
+                - – No upgrade available
+                - – Requires a full system board replacement
+                - Laptop storage
+                - Magnetic disk
+                - – Traditional spinning drive platters
+                - – 2.5 form factors (3.5 inch for desktops)
+                - SSD (Solid-state drive)
+                - – All memory, no moving parts
+                - – Silent, fast access time, less latency
+                - – 2.5 inch form factors
+                - M.2
+                - – Smaller form factor
+                - – No SATA data or power cables
+                - – Easy to install and replace
+                - Replacing laptop storage
+                - All internal
+                - – Open a cover on the back
+                - – Open the entire laptop
+                - Can be very modular
+                - – Two screws and the drive slides out
+                - M.2 drives are even easier
+                - – One screw - similar to RAM installation
+                - Migrating from HDD to SSD
+                - An impressive upgrade
+                - – Move from spinning mechanical drive to
+                - solid state memory
+                - – It’s almost like getting a new laptop
+                - Install an OS on the SSD
+                - – Move user documents between drives
+                - – Install any required applications
+                - – Can be time consuming
+                - Image/clone the HDD
+                - – No OS installation required
+                - – Move everything from one to the other
+                - Imaging software needed
+                - – Sometimes included with the SSD
+                - – Many commercial and open source options
+                - Create an image file - One drive at a time
+                - Drive-to-drive image
+                - – Image directly from one drive to the other
+                - 802.11 wireless and Bluetooth
+                - Wireless network connectivity
+                - – Connect without wires
+                - 802.11
+                - – Local area network (LAN)
+                - – High speed, Internet access
+                - Bluetooth
+                - – Personal area network (PAN) - Short range
+                - – Connect peripherals and other nearby devices
+                - Biometrics
+                    - Sign in or unlock your laptop with a
+                    - fingerprint reader or face recognition
+                    - – Something you are
+                    - Requires additional configuration in the OS
+                    - – Hardware required for most options
+                    - Relatively secure
+                    - – Faces and fingerprints are quite unique
+                    - Near-field communication (NFC)
+                    - Short-distance networking
+                    - – 4 centimeters or less
+                    - – Data transfers or authentication
+                    - Common on mobile phones and smart watches
+                    - – Payment method on your wrist
+                    - Use it for authentication without typing a password
+                    - – Hospital workstations, warehouses, man
+        - 1.2 - Laptop Displays 2
+            - Portable LCD
+                - Liquid crystal display
+                - – Light shines through liquid crystals
+                - Advantages
+                - – Lightweight
+                - – Relatively low power
+                - – Relatively inexpensive
+                - Disadvantages
+                - – Black levels are a challenge
+                - – Requires separate backlight
+                - – Florescent, LED, etc.
+                - – Lights are difficult to replace
+                - LCD technologies
+                - TN (Twisted Nematic) LCD
+                - – The original LCD technology
+                - – Fast response times (gaming!)
+                - – Poor viewing angles - color shifts
+                - IPS (In Plane Switching) LCD
+                - – Excellent color representation
+                - – More expensive to produce than TN
+                - VA (Vertical Alignment) LCD
+                - – A good compromise between TN and IPS
+                - – Good color representation
+                - – Slower response times than TN
+                - OLED
+                - Organic Light Emitting Diode
+                - – Organic compound emits light when
+                - receiving an electric current
+                - Thinner and lighter
+                - – Flexible and mobile - no glass needed
+                - No backlight
+                - – The organic compound provides the light
+                - Tablets, phones, smart watches
+                - – Very accurate color representation
+                - – A bit higher cost than LCD
+                - Wi-Fi antennas
+                - Multiple antennas
+                - – WiFi main and aux / Bluetooth
+                - Antenna wires wrap around the laptop screen
+                - – It’s up high!
+                - Webcam
+                - Video capture - Built-in camera and microphone
+                - Usually includes both audio and video
+                - – Specialized drivers and software
+                - Microphone
+                - Built-in to the laptop display
+                - – Useful for video calls
+                - Not good for non-casual use
+                - – Analog or USB microphones can help
+                - Fluorescent vs. LED backlighting
+                - LED-backlit LCD display
+                - – Backlight is LEDs instead of florescent
+                - – LEDs around the edge of the screen
+                - – An array of LEDs behind the screen
+                - – The latest laptops are LED-backlit
+                - CCFL - Cold Cathode
+                - – Fluorescent Lamp
+                - – Higher voltage and power needed
+                - – Added thickness to the display
+                - – No longer a common backlight
+                - – Older laptops will use these
+                - Backlight and inverter
+                - LCD displays need a backlight
+                - – Florescent lamp/LED to LCD display to your eyes
+                - Some laptops have inverters - Turn DC into AC
+                - Verify backlight
+                - – Look closely and use a flashlight
+                - May need to replace the LCD inverter or display
+                - – Choose carefully
+                - Digitizer
+                - Use a pen-like device as input
+                - – Stylus input - Useful for graphical input
+                - Used commonly on laptop / tablets
+                - – Or hybrid devices
+                - Touchscreen
+                - Merge laptop and tablet input
+                - – Digitizer responds to touch - No keyboard required
+                - But often still available
+                - – Many options for input - Use the best one for the job
+        - 1.3 - Connecting Mobile Devices 3
+            - Connecting mobile devices
+                - Phones and tablets
+                - – Many different ways to connect
+                - Wired and wireless connectivity
+                - – Standards and options change
+                - through the years
+                - Used for synchronization, connectivity,
+                - backup, and identification
+                - – Sometimes simultaneously
+                - USB
+                - Universal Serial Bus
+                - – High-speed wired communication
+                - – Used for charging and data transfers
+                - Micro-USB
+                - – A smaller USB connection
+                - – Common now worldwide
+                - Older devices may use Mini-USB
+                - – Slightly larger
+                - USB-C
+                - 24-pin double-sided USB connector
+                - – Used for both hosts and devices
+                - Acts as a USB 2.0/3.0/3.1/4 connection
+                - – Different signals can use the same connector
+                - Can transmit other signals
+                - – DisplayPort, HDMI, Thunderbolt
+                - Lightning
+                - Apple proprietary
+                - – 8-pin digital signals
+                - – iPhone and iPad devices
+                - Some advantages over Micro-USB
+                - – Higher power output for phones and tablets
+                - – Can be inserted either way
+                - – Simpler design
+                - Serial interfaces
+                - DB-9 - also called DE-9
+                - Commonly used for RS-232 signals
+                - – Recommended Standard 232
+                - – An industry standard since 1969
+                - Serial communications standard
+                - – Traditionally used for modem connections
+                - Now used as a configuration port
+                - – Switches, routers, firewalls, etc
+                - – Use a USB to DB-9 converter cable
+                - Micro-B plug
+                - Mini-B plug
+                - Type A plug
+                - NFC
+                - Near Field Communication
+                - – Send small amounts of data wirelessly
+                - over a limited area
+                - Built into your phone
+                - – Payment systems, transportation,in-person
+                - information exchange
+                - Access token, identity “card”
+                - – Short range with encryption support
+                - Bluetooth
+                - High speed communication over short distances
+                - – PAN (Personal Area Network)
+                - Connects our mobile devices
+                - – Smartphones
+                - – Tethering
+                - – Headsets and headphones
+                - – Health monitors
+                - – Automobile and phone integration
+                - – Smartwatches
+                - – External speakers
+                - Hotspot
+                - Turn your phone into a WiFi hotspot
+                - – Your own personal wireless router
+                - – Extend the cellular data network
+                - to all of your devices
+                - Dependent on phone type and provider
+                - – May require additional charges and data costs
+        - 1.3 - Mobile Device Accessories 4
+            - Touch pens
+                - Touchscreen pen / touch screen stylus / capacitive stylus
+                - – Activate the interface without actually touching it
+                - Handwriting
+                - – Note taking, signatures
+                - Precise selection
+                - – Easier to see the screen
+                - Active stylus
+                - Digital stylus
+                - – A more advanced writing tool
+                - The stylus communicates directly to the device
+                - – Pressure sensitivity, programmable buttons, etc.
+                - Must be compatible with the tablet
+                - – e.g., Apple iPad uses an Apple Pencil
+                - Drawing pad
+                - Use an active stylus with an external digitizer
+                - – Very precise input
+                - Trackpad
+                - Replace the mouse
+                - – Useful in tight working areas
+                - – Common on laptops
+                - External options
+                - – Battery powered
+                - – Bluetooth connected
+                - Drag and tap
+                - – Or use multiple finger input for right-clicking, zooming,
+                - and window control
+                - Enable and disable
+                - – Avoid inadvertent mouse clicks and movements
+                - Headsets
+                - Hands-free audio - Earphones and microphone
+                - Wired
+                - – USB connections are common on laptops
+                - – Connects to 3.5 mm
+                - TRRS (tip-ring-ring-sleeve) connector
+                - – Analog audio jack
+                - – iPhone can use Lightning port
+                - Wireless - Bluetooth headsets
+                - Speakers
+                - Mobile audio - Battery powered
+                - Wireless connection - Bluetooth link
+                - Stereo sound - Small package
+                - Camera / webcam
+                - Internal or external
+                - – Commonly external on desktops,
+                - internal on laptops/tablets/phones
+                - Accessible from multimedia applications,
+                - photo utilities,and video conferencing
+                - – Real-time video communication
+                - Docking station
+                - Docking station
+                - – Use external keyboard and mouse
+                - – Extend existing laptop interfaces
+                - – Add additional functionality
+                - – Desktop adapter cards
+                - – Avoid cable issues
+                - Port replicator
+                - Port replicator
+                - – Similar to a docking station
+                - – Does not commonly have an expansion card option
+                - – Usually connects using USB
+        - 1.4 - Cellular Standards 4
+            - Cellular networks
+                - Mobile devices
+                - – “Cell” phones
+                - Separate land into “cells”
+                - – Antenna coverages a cell with certain frequencies
+                - 2G networks
+                - – GSM - Global System for Mobile Communications
+                - – CDMA - Code Division Multiple Access
+                - Poor data support
+                - – Originally used circuit-switching
+                - – Minor upgrades for some packet-switching
+                - GSM
+                - Global System for Mobile Communications
+                - – Mobile networking standard
+                - 90% of the market
+                - – Originally an EU standard
+                - – Worldwide coverage
+                - Used by AT&T and T-Mobile in the United States
+                - – Move your SIM card (Subscriber Identity Module) from
+                - phone to phone
+                - Original GSM standard used multiplexing
+                - – Everyone gets a little slice of time
+                - CDMA
+                - Code Division Multiple Access
+                - – Everyone communicates at the same time
+                - – Each call uses a different code
+                - – The codes are used to filter each call on the receiving side
+                - Used by Verizon and Sprint
+                - – Handsets are controlled by the network provider
+                - – Not much adoption elsewhere
+                - 3G technology
+                    - 3rd Generation
+                    - – Introduced in 1998
+                    - Upgraded data connectivity over 2G
+                    - – Incremental 3G updates improved speeds
+                    - – Usually several megabits per second
+                    - Bandwidth improvement allowed new functionality
+                    - – GPS
+                    - – Mobile television
+                    - – Video on demand
+                    - – Video conferencing
+                    - 4G and LTE
+                    - Long Term Evolution (LTE)
+                    - – A “4G” technology
+                    - – Converged standard (GSM and CDMA providers)
+                    - – Based on GSM and EDGE
+                    - (Enhanced Data Rates for GSM Evolution)
+                    - – Standard supports download rates of 150 Mbit/s
+                    - LTE Advanced (LTE-A)
+                    - – Standard supports download rates of 300 Mbit/s
+                    - 5G
+                        - Fifth generation cellular networking
+                        - – Launched worldwide in 2020
+                        - Significant performance improvements
+                        - – At higher frequencies
+                        - – Eventually 10 gigabits per second
+                        - – Slower speeds from 100-900 Mbit/s
+                        - Significant IoT impact
+                        - – Bandwidth becomes less of a constraint
+                        - – Larger data transfers
+                        - – Faster monitoring and notification
+                        - – Additional cloud processing
+                        - Updates
+                        - PRL (Preferred Roaming List) updates
+                        - – CDMA networks (i.e., Verizon, Sprint)
+                        - Allows your phone to connect to the right tower
+                        - – Can be updated over the air (OTA)
+                        - Hotspot
+                        - Turn your phone into a WiFi hotspot
+                        - – Your own personal wireless router
+                        - – Extend the cellular data network to all of your devices
+                        - Dependent on phone type and provider
+                        - – May require additional charges and data costs
+        - 1.4 - Mobile Device Connectivity 5
+            - Bluetooth pairing
+                - Connect a Bluetooth device
+                - – Built-in security - Use or verify a PIN
+                - Pair the devices one time
+                - – Future connections should be automatic
+                - Check with the manufacturer
+                - – May prefer a specific sequence
+                - – Discoverable mode isn’t always obvious
+                - Bluetooth pairing process
+                - Enable Bluetooth on both devices
+                - – Android and iOS: Settings / Bluetooth
+                - Set devices to discoverable mode
+                - – May require key sequence on Bluetooth device
+                - Select discovered device
+                - – Many devices may appear!
+                - Enter or confirm PIN
+                - – Should be the same on both devices
+                - Test connectivity
+                - – Devices should now communicate
+                - GPS (Global Positioning System)
+                - Created by the U.S. Department of Defense
+                - – Over 30 satellites currently in orbit
+                - Precise navigation - Need to see at least 4 satellites
+                - Determines location based on timing differences
+                - – Longitude, latitude, altitude
+            - Mobile device location services and geotracking
+                - – Maps, directions
+                - – Determine physical location based on
+                - GPS, WiFi, and cellular towers
+                - MDM (Mobile Device Management)
+                - Manage company-owned and user-owned mobile devices
+                - – BYOD - Bring Your Own Device
+                - Centralized management of the mobile devices
+                - – Specialized functionality
+                - Set policies on apps, data, camera, etc.
+                - – Control the remote device
+                - – The entire device or a “partition”
+                - Manage access control
+                - – Force screen locks and PINs on these single user devices
+                - MDM configurations
+                - Corporate email configuration
+                - – User does not need to configure anything
+                - – The MDM makes the changes on the device
+                - – Account details, server address, communication method
+                - Two-factor authentication
+                - – Require specific authentication types
+                - – Biometrics, pseudo-random authentication app
+                - Corporate applications
+                - – Allow or restrict app installation
+                - – Prevent unauthorized app usage
+        - 1.4 - Mobile Device Configurations 6
+            - Configuring a mobile device
+                - Many settings are preconfigured
+                - – Telephone / Text messaging
+                - Email
+                - – Everyone handles email services differently
+                - – Corporate email configurations can vary
+                - Data synchronization
+                - – Based on data rates and speeds
+                - – Important for backup and recovery
+                - Microsoft 365
+                - Outlook, Exchange
+                - – Microsoft’s email service
+                - – Usually the same for Hotmail and Outlook.com
+                - Authenticate to Microsoft 365
+                - – Username, password
+                - Select the items to synchronize
+                - – Changes in Outlook will appear on the mobile device
+                - Same process for Google Workspace
+                - – Formerly known as G Suite
+            - iCloud
+                - Integrated into iOS and iPadOS
+                - – Provide an iCloud username and password
+                - Select synchronization options
+                - – Extensive customization
+                - Synchronize to macOS
+                - – Use your desktop, laptop, or mobile device
+                - Synchronizing data
+                - Data types
+                - – Mail
+                - – Pictures, music, video
+                - – Calendar
+                - – Contacts
+                - Data caps and transfer costs
+                - – Cellular vs 802.11
+                - – Enable or disable network connections
+                - – Control the use of cellular downloads
+    - 2.0 - Networking 6
+        - 2.1 - Introduction to IP  6
+            - A series of moving vans
+                - Efficiently move large amounts of data
+                - – Use a shipping truck
+                - The network topology is the road
+                - – Ethernet, DSL, cable system
+                - The truck is the Internet Protocol (IP)
+                - – We’ve designed the roads for this truck
+                - The boxes hold your data
+                - – Boxes of TCP and UDP
+                - Inside the boxes are more things
+                - – Application information
+                - Client
+                - Server
+                - Ethernet
+                - Header Ethernet Payload Ethernet
+                - Trailer
+                - Ethernet
+                - Header IP IP Payload Ethernet
+                - Trailer
+                - Ethernet
+                - Header IP TCP TCP Payload Ethernet
+                - Trailer
+                - Ethernet
+                - Header IP TCP HTTP data Ethernet
+                - Trailer
+                - TCP and UDP
+                - Transported inside of IP
+                - – Encapsulated by the IP protocol
+                - Two ways to move data from place to place
+                - – Different features for different applications
+                - OSI Layer 4
+                - – The transport layer
+                - Multiplexing
+                - – Use many different applications at the same time
+                - – TCP and UDP
+            - TCP - Transmission Control Protocol Communication
+                - TCP – Transmission Control Protocol
+                - Connection-oriented
+                - – A formal connection setup and close
+                - “Reliable” delivery
+                - – Recovery from errors
+                - – Can manage out-of-order messages or retransmissions
+                - Flow control
+                - – The receiver can manage how much data is sent
+                - UDP – User Datagram Protocol
+                - Connectionless - No formal open/close to the connection
+                - “Unreliable” delivery
+                - – No error recovery
+                - – No reordering of data or retransmissions
+                - No flow control
+                - – Sender determines the amount of data transmitted
+                - UDP - User Datagram Protocol Communication
+            - Why would you ever use UDP?
+                - Real-time communication
+                - – There’s no way to stop and resend the data
+                - – Time doesn’t stop for your network
+                - Connectionless protocols
+                - – DHCP (Dynamic Host Configuration Protocol)
+                - – TFTP (Trivial File Transfer Protocol)
+                - Communication using TCP
+                - Connection-oriented protocols prefer a “return receipt”
+                - – HTTPS (Hypertext Transfer Protocol Secure)
+                - – SSH (Secure Shell)
+                - The application doesn’t worry about out of order
+                - frames or missing data
+                - – TCP handles all of the communication overhead
+                - – The application has one job
+                - Speedy delivery
+                - The IP delivery truck delivers from one (IP) address to
+                - another (IP) address
+                - – Every house has an address, every computer
+                - has an IP address
+                - Boxes arrive at the house / IP address
+                - – Where do the boxes go?
+                - – Each box has a room name
+                - Port is written on the outside of the box
+                - – Drop the box into the right room
+                - Lots of ports
+                - IPv4 sockets
+                - – Server IP address, protocol,
+                - server application port number
+                - – Client IP address, protocol, client port number
+                - Non-ephemeral ports – permanent port numbers
+                - – Ports 0 through 1,023
+                - – Usually on a server or service
+                - Ephemeral ports – temporary port numbers
+                - – Ports 1,024 through 65,535
+                - – Determined in real-time by the client
+                - Port numbers
+                - TCP and UDP ports can be any number between
+                - 0 and 65,535
+                - Most servers (services) use non-ephemeral
+                - (not-temporary) port numbers
+                - – This isn’t always the case
+                - – It’s just a number.
+                - Port numbers are for communication, not security
+                - Service port numbers need to be “well known”
+                - TCP port numbers aren’t the same as UDP port numbers
+        - 2.1 - Common Network Ports 7
+            - Port numbers
+                - Well-known port number
+                - – Client and server need to match
+                - Important for firewall rules - Port-based security
+                - A bit of rote memorization
+                - – Becomes second nature after a while
+                - Make sure you know port number, protocol,
+                - and how the protocol is used
+            - {{FTP}} - {{File Transfer Protocol}} 
+                - {{tcp/20}} (active mode data), {{tcp/21}} (control)
+                    - – {{Transfers files}} between systems
+                - Authenticates with a username and password
+                    - – Some systems use a generic/anonymous login
+                - Full-featured functionality - List, add, delete, etc.
+            - {{SSH}} - {{Secure Shell}} 
+                - {{Encrypted communication}} link - {{tcp/22}} 
+                - Looks and acts the same as Telnet
+            - {{Telnet}} – {{Telecommunication Network}} - {{tcp/23}} 
+                - Login to devices remotely
+                    - – Console access
+                - In-the-clear communication
+                    - – Not the best choice for production systems
+            - {{SMTP}} - {{Simple Mail Transfer Protocol}} 
+                - SMTP - Simple Mail Transfer Protocol
+                - – Server to server email transfer - {{tcp/25}} 
+                - Also used to send mail from a device to a mail server
+                - – Commonly configured on mobile devices and email clients
+                - Other protocols are used for clients to receive email
+                - – IMAP, POP3
+            - {{DNS}} - {{Domain Name System}} 
+                - Converts names to IP addresses - {{udp/53}} 
+                - – www.professormesser.com = 162.159.246.164
+                - These are very critical resources
+                - – Usually multiple DNS servers are in production
+            - {{DHCP}} - {{Dynamic Host Configuration Protocol}} 
+                - Automated configuration of IP address, subnet mask and
+                - other options -{{ udp/67}}, {{udp/68}} 
+                - – Requires a DHCP server
+                - – Server, appliance, integrated into a SOHO router, etc.
+                - Dynamic / pooled
+                - – IP addresses are assigned in real-time from a pool
+                - – Each system is given a lease and must renew at set intervals
+                - DHCP reservation
+                - – Addresses are assigned by MAC address in the DHCP server
+                - – Manage addresses from one location
+            - HTTP and HTTPS
+                - Hypertext Transfer Protocol
+                - – Communication in the browser
+                - – And by other applications
+                - In the clear or encrypted
+                - – Supported by nearly all web servers and clients
+                - http {{tcp/80}} https {{tcp/443}} 
+            - POP3 / IMAP
+                - Receive emails from an email server
+                - – Authenticate and transfer
+                - {{POP3}} - {{Post office Protocol version 3}} 
+                - – {{tcp/110}} 
+                - – Basic mail transfer functionality
+                - {{IMAP4}} - {{Internet Message Access Protocol v4}} 
+                - – {{tcp/143}} 
+                - – Includes email inbox management from multiple clients
+            - {{SMB}} - {{Server Message Block}} 
+                - Protocol used by Microsoft Windows
+                    - – File sharing, printer sharing
+                    - – Also called CIFS (Common Internet File System)
+                - Using NetBIOS over TCP/IP (Network Basic Input/Output System)
+                    - – udp/137 - NetBIOS name services (nbname)
+                    - – tcp/139 - NetBIOS session service (nbsession)
+                - Direct over {{tcp/445 }}(NetBIOS-less)
+                    - – Direct SMB communication over TCP without the NetBIOS transport
+            - {{SNMP}} - {{Simple Network Management Protocol}} 
+                - Gather statistics from network devices
+                    - – Queries: {{udp/161}} 
+                    - – Traps: {{udp/162}} 
+                - v1 – The original
+                    - – Structured tables
+                    - – In-the-clear
+                - v2 – A good step ahead
+                    - – Data type enhancements
+                    - – Bulk transfers
+                    - – Still in-the-clear
+                - v3 – A secure standard
+                    - – Message integrity
+                    - – Authentication
+                    - – Encryption
+            - {{LDAP}} ({{Lightweight Directory Access Protocol}}) - {{tcp/389}} 
+                - Store and retrieve information in a network directory
+                    - – Commonly used in Microsoft Active Directory
+            - {{RDP}} - {{Remote Desktop Protocol}} 
+                - Share a desktop from a remote location over {{tcp/3389}} 
+                - Remote Desktop Services on many Windows versions
+                - Can connect to an entire desktop or just an application
+                - Clients for Windows, macOS, Linux, Unix, iPhone, Android, and others
+        - 2.2 - Network Devices 9
+            - Network devices
+                - Many different devices and components
+                - – All have different roles
+                - Some of these functions are combined together
+                - – Wireless router/switch/firewall
+                - Compare different devices
+                - – Understand when they should be used
+                - Routers
+                - Routes traffic between IP subnets
+                - – Makes forwarding decisions based on IP address
+                - – Routers inside of switches sometimes called
+                - “layer 3 switches”
+                - Often connects diverse network types
+                - – LAN, WAN, copper, fiber
+                - Switches
+                - Bridging done in hardware
+                - – Application-specific integrated circuit (ASIC)
+                - – Forwards traffic based on data link address
+                - Many ports and features
+                - – The core of an enterprise network
+                - – May provide Power over Ethernet (PoE)
+                - Multilayer switch
+                - – Includes routing functionality
+                - Unmanaged switches
+                - Very few configuration options
+                - – Plug and play
+                - Fixed configuration
+                - – No VLANs
+                - Very little integration with other devices
+                - – No management protocols
+                - Low price point
+                - – Simple is less expensive
+                - Managed switches
+                - VLAN support
+                - – Interconnect with other switches via 802.1Q
+                - Traffic prioritization
+                - – Voice traffic gets a higher priority
+                - Redundancy support
+                - – Spanning Tree Protocol (STP)
+                - Port mirroring
+                - – Capture packets
+                - External management
+                - – Simple Network Management Protocol (SNMP)
+                - Access point
+                - Not a wireless router
+                - – A wireless router is a router and an access point
+                - in a single device
+                - An access point is a bridge
+                - – Extends the wired network onto the wireless network
+                - – Makes forwarding decisions based on MAC address
+                - Patch Panels
+                - Combination of punch-down blocks and
+                - RJ-45 connectors
+                - Runs from desks are made once
+                - – Permanently punched down to patch panel
+                - Patch panel to switch can be easily changed
+                - – No special tools
+                - – Use existing cables
+                - Firewalls
+                - Filters traffic by port number
+                - – OSI layer 4 (TCP/UDP)
+                - – Some firewalls can filter based on the application
+                - Can encrypt traffic into/out of the network
+                - – Protect your traffic between sites
+                - Can proxy traffic
+                - – A common security technique
+                - Most firewalls can be layer 3 devices (routers)
+                - – Usually sits on the ingress/egress of the network
+                - Power over Ethernet (PoE)
+                - Power provided on an Ethernet cable
+                - – One wire for both network and electricity
+                - – Phones, cameras, wireless access points
+                - – Useful in difficult-to-power areas
+                - Power provided at the switch
+                - – Built-in power - Endspans
+                - – In-line power injector - Midspans
+                - PoE switch
+                - Power over Ethernet
+                - – Commonly marked on the switch or interfaces
+                - PoE, PoE+, PoE++
+                - PoE: IEEE 802.3af-2003
+                - – The original PoE specification
+                - – Now part of the 802.3 standard
+                - – 15.4 watts DC power, 350 mA max current
+                - PoE+: IEEE 802.3at-2009
+                - – Now also part of the 802.3 standard
+                - – 25.5 watts DC power, 600 mA max current
+                - PoE++: IEEE 802.3bt-2018
+                - – 51 W (Type 3), 600 mA max current
+                - – 71.3 W (Type 4), 960 mA max current
+                - – PoE with 10GBASE-T
+                - Hub
+                - “Multi-port repeater”
+                - – Traffic going in one port is repeated to
+                - every other port
+                - Everything is half-duplex
+                - Becomes less efficient as network traffic increases
+                - 10 megabit / 100 megabit
+                - Difficult to find today
+            - Cable modem
+                - Broadband
+                - – Transmission across multiple frequencies
+                - – Different traffic types
+                - Data on the “cable” network
+                - – DOCSIS (Data Over Cable Service Interface Specification)
+                - High-speed networking
+                - – Speeds up to 1 Gigabit/s are available
+                - Multiple services
+                - – Data, voice, video
+                - DSL modem
+                - ADSL (Asymmetric Digital Subscriber Line)
+                - – Uses telephone lines
+                - Download speed is faster than the upload
+                - speed (asymmetric)
+                - – ~10,000 foot limitation from the central office (CO)
+                - – 52 Mbit/s downstream / 16 Mbit/s upstream are
+                - common
+                - – Faster speeds may be possible if closer to the CO
+                - ONT
+                - Optical network terminal
+                - – Fiber to the premises
+                - Connect the ISP fiber network to the copper network
+                - – Demarcation point (demarc) in the data center
+                - – Terminal box on the side of the building
+                - Line of responsibility
+                - – One side of the box is the ISP
+                - – Other side of the box is your network
+                - Network Interface Card (NIC)
+                - The fundamental network device
+                - – Every device on the network has a NIC
+                - – Computers, servers, printers, routers, switches,
+                - phones, tablets, cameras, etc.
+                - Specific to the network type
+                - – Ethernet, WAN, wireless, etc.
+                - Often built-in to the motherboard
+                - – Or added as an expansion card
+                - Many options - Single port, multi-port, copper, fiber
+        - 2.2 - Software Defined Networking 10
+            - SDN (Software Defined Networking)
+                - Networking devices have different functional
+                - planes of operation
+                - – Data, control, and management planes
+                - Split the functions into separate logical units
+                - – Extend the functionality and management
+                - of a single device
+                - – Perfectly built for the cloud
+                - Infrastructure layer / Data plane
+                - – Process the network frames and packets
+                - – Forwarding, trunking, encrypting, NAT
+                - Control layer / Control plane
+                - – Manages the actions of the data plane
+                - – Routing tables, session tables, NAT tables
+                - – Dynamic routing protocol updates
+                - Application layer / Management plane
+                - – Configure and manage the device
+                - – SSH, browser, API
+                - SDN data flows
+        - 2.3 - Wireless Network Standards 11
+            - Wireless standards
+                - Wireless networking (802.11)
+                - – Managed by the IEEE LAN/MAN
+                - Standards Committee (IEEE 802)
+                - Many updates over time
+                - – Check with IEEE for the latest
+                - The Wi-Fi trademark
+                - – Wi-Fi Alliance handles interoperability testing
+                - 802.11a
+                - One of the original 802.11 wireless standards
+                - – October 1999
+                - Operates in the 5 GHz range
+                - – Or other frequencies with special licensing
+                - 54 megabits per second (Mbit/s)
+                - Smaller range than 802.11b
+                - – Higher frequency is absorbed by objects in the way
+                - Not commonly seen today
+                - 802.11b
+                - Also an original 802.11 standard - October 1999
+                - Operates in the 2.4 GHz range
+                - 11 megabits per second (Mbit/s)
+                - Better range than 802.11a, less absorption problems
+                - More frequency conflict
+                - – Baby monitors, cordless phones,
+                - microwave ovens, Bluetooth
+                - Not commonly seen today
+                - 802.11g
+                - An “upgrade” to 802.11b - June 2003
+                - Operates in the 2.4 GHz range
+                - 54 megabits per second (Mbit/s) - Similar to 802.11a
+                - Backwards-compatible with 802.11b
+                - Same 2.4 GHz frequency conflict problems as 802.11b
+                - 802.11n (Wi-Fi 4)
+                - The update to 802.11g, 802.11b, and 802.11a
+                - – October 2009
+                - Operates at 5 GHz and/or 2.4 GHz
+                - – 40 MHz channel widths
+                - 600 megabits per second (Mbit/s)
+                - – 40 MHz mode and 4 antennas
+                - 802.11n uses MIMO
+                - – Multiple-input multiple-output
+                - – Multiple transmit and receive antennas
+                - 802.11ac (Wi-Fi 5)
+                - Approved in January 2014
+                - – Significant improvements over 802.11n
+                - Operates in the 5 GHz band
+                - – Less crowded, more frequencies (up to 160 MHz
+                - channel bandwidth)
+                - Increased channel bonding - Larger bandwidth usage
+                - Denser signaling modulation
+                - – Faster data transfers
+                - Eight MU-MIMO downlink streams
+                - – Twice as many streams as 802.11n
+                - – Nearly 7 gigabits per second
+                - 802.11ax (Wi-Fi 6)
+                - Approved in February 2021
+                - – The successor to 802.11ac/Wi-Fi 5
+                - Operates at 5 GHz and/or 2.4 GHz
+                - – 20, 40, 80, and 160 MHz channel widths
+                - 1,201 megabits per second per channel
+                - – A relatively small increase in throughput
+                - – Eight bi-directional MU-MIMO streams
+                - Orthogonal frequency-division multiple access (OFDMA)
+                - – Works similar to cellular communication
+                - – Improves high-density installations
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 11
+                - [https://www.ProfessorMess](https://www.ProfessorMess) 
+            - Long-range fixed wireless
+                - Wireless access point in a house with the stock antennas
+                - – You might get a range of 40 to 50 meters
+                - Try connecting two buildings located miles from each other
+                - – Fixed directional antennas and increased signal strength
+                - Outdoors
+                - – Minimal signal absorption or bounce
+                - Directional antennas
+                - – Focused, point-to-point connection
+                - Wireless regulations are complex
+                - – Refer to your country’s regulatory agency
+                - Frequency use
+                - – Unlicensed 2.4 GHz or 5 GHz frequencies
+                - – Additional frequencies may be available
+                - – Additional licensing may be required
+                - Signal strength
+                - – Indoor and outdoor power is usually regulated
+                - Outdoor antenna installation is not trivial
+                - – Get an expert, be safe
+                - RFID (Radio-frequency identification)
+                - It’s everywhere
+                - – Access badges
+                - – Inventory/Assembly line tracking
+                - – Pet/Animal identification
+                - – Anything that needs to be tracked
+                - Radar technology
+                - – Radio energy transmitted to the tag
+                - – RF powers the tag, ID is transmitted back
+                - – Bidirectional communication
+                - – Some tag formats can be active/powered
+                - NFC (Near field communication)
+                - Two-way wireless communication
+                - – Builds on RFID, which is mostly one-way
+                - Payment systems
+                - – Major credit cards, online wallets
+                - Bootstrap for other wireless
+                - – NFC helps with Bluetooth pairing
+                - Access token, identity “card”
+                - – Short range with encryption support
+        - 2.3 - Wireless Network Technologies 12
+            - 802.11 technologies
+                - Frequency
+                - – 2.4 GHz or 5 GHz
+                - – And sometimes both
+                - Channels
+                - – Groups of frequencies, numbered by the IEEE
+                - – Non-overlapping channels would be ideal
+                - Regulations
+                - – Most countries have regulations to
+                - manage frequency use
+                - – Spectrum use, power output,
+                - interference requirements, etc.
+                - Bluetooth
+                - Remove the wires
+                - – Headsets, speakers, keyboards / mice
+                - Uses the 2.4 GHz range
+                - – Unlicensed ISM
+                - (Industrial, Scientific and Medical) band
+                - – Same as 802.11
+                - Short-range
+                - – Most consumer devices operate
+                - to about 10 meters
+                - – Industrial Bluetooth devices can communicate
+                - over 100 meters
+                - 2.4 GHz Spectrum for 802.11 - North America
+                - IEEE Channel # 1 6 11
+                - 20 MHz
+                - 2412 MHz 2482 MHz
+                - 5 GHz Spectrum for 802.11 - North America
+                - IEEE Channel # 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96
+                - 100 104 108 112 116 120 124 128 132 136 140 144 149 153 157 161 165 169 173 177
+                - 20 MHz
+                - 40 MHz
+                - 80 MHz
+                - 160 MHz
+                - UNII-1 UNII-2
+                - UNII-2 UNII-3
+                - 5150 MHz 5250 MHz 5350 MHz 5470 MHz 5725 MHz 5825 MHz 5925 MHz
+                - Available channels
+                - New channels added in April 2014
+                - Previously indoor channels, usable outdoors aFer April 2014
+                - Frequencies not available for 802.11
+        - 2.4 - Network Services 13
+            - DNS server
+                - Domain Name System
+                - – Convert names to IP addresses
+                - – And vice versa
+                - Distributed naming system
+                - – The load is balanced across many different servers
+                - Usually managed by the ISP or IT department
+                - – A critical resource
+                - DHCP server
+                - Dynamic Host Configuration Protocol
+                - – Automatic IP address configuration
+                - Very common service
+                - – Available on most home routers
+                - Enterprise DHCP will be redundant
+                - – Usually running on central servers
+                - File server
+                - Centralized storage of documents,spreadsheets,
+                - videos, pictures, and any other files
+                - – A fileshare
+                - Standard system of file management
+                - – SMB (Server Message Block),
+                - Apple Filing Protocol (AFP), etc.
+                - The front-end hides the protocol
+                - – Copy, delete, rename, etc.
+                - Print server
+                - Connect a printer to the network
+                - – Provide printing services for all network devices
+                - May be software in a computer
+                - – Computer is connected to the printer
+                - May be built-in to the printer
+                - – Network adapter and software
+                - Uses standard printing protocols
+                - – SMB (Server Message Block), IPP (Internet
+                - Printing Protocol), LPD (Line Printer Daemon)
+                - Mail server
+                - Store your incoming mail
+                - – Send your outgoing mail
+                - Usually managed by the ISP or the IT department
+                - – A complex set of requirements
+                - Usually one of the most important services
+                - – 24 x 7 support
+                - Syslog
+                - Standard for message logging
+                - – Diverse systems, consolidated log
+                - Usually a central logging receiver
+                - – Integrated into the SIEM
+                - You’re going to need a lot of disk space
+                - – No, more. More than that.
+                - Web server
+                - Respond to browser requests
+                - – Using standard web browsing protocols - HTTP/HTTPS
+                - – Pages are built with HTML, HTML5
+                - Web pages are stored on the server
+                - – Downloaded to the browser
+                - – Static pages or built dynamically in real-time
+                - Authentication server
+                - Login authentication to resources
+                - – Centralized management
+                - Almost always an enterprise service
+                - – Not required on a home network
+                - Usually a set of redundant servers
+                - – Always available
+                - – Extremely important service
+                - Spam
+                - Unsolicited messages
+                - – Email, forums, etc.
+                - Various content
+                - – Commercial advertising
+                - – Non-commercial proselytizing
+                - – Phishing attempts
+                - Significant technology issue
+                - – Security concerns, resource utilization,
+                - storage costs, managing the spam
+                - Spam gateways
+                - Unsolicited email
+                - – Stop it at the gateway before it reaches the user
+                - – On-site or cloud-based
+                - All-in-one security appliance
+                - Next-generation firewall, Unified Threat
+                - Management (UTM) / Web security gateway
+                - URL filter / Content inspection
+                - Malware inspection
+                - Spam filter
+                - CSU/DSU
+                - Router, Switch
+                - Firewall
+                - IDS/IPS
+                - Bandwidth shaper
+                - VPN endpoint
+                - Load balancers
+                - Distribute the load
+                - – Multiple servers
+                - – Invisible to the end-user
+                - Large-scale implementations
+                - – Web server farms, database farms
+                - Fault tolerance
+                - – Server outages have no effect - Very fast convergence
+            - Load balancer features
+                - Configurable load - Manage across servers
+                - TCP offload - Protocol overhead
+                - SSL offload - Encryption/Decryption
+                - Caching - Fast response
+                - Prioritization - QoS
+                - Content switching - Application-centric balancing
+                - Proxy server
+                - An intermediate server
+                - – Client makes the request to the proxy
+                - – The proxy performs the actual request
+                - – The proxy provides results back to the client
+                - Useful features
+                - – Access control, caching, URL filtering, content scanning
+                - SCADA / ICS
+                - Supervisory Control and Data Acquisition System
+                - – Large-scale, multi-site Industrial Control Systems (ICS)
+                - PC manages equipment
+                - – Power generation, refining,
+                - manufacturing equipment
+                - – Facilities, industrial, energy, logistics
+                - Distributed control systems
+                - – Real-time information
+                - – System control
+                - – Requires extensive segmentation
+                - – No access from the outside
+            - Legacy and embedded systems
+                - Legacy systems
+                - – Another expression for “really old”
+                - – May also be “really important”
+                - – Learning old things can be just as important as
+                - learning the new things
+                - Embedded systems
+                - – Purpose-built device
+                - – Not usual to have direct access to
+                - the operating system
+                - – Alarm system, door security, time card system
+                - IoT (Internet of Things) devices
+                - Appliances
+                - – Refrigerators
+                - Smart devices
+                - – Smart speakers respond to voice commands
+                - Air control
+                - – Thermostats, temperature control
+                - Access
+                - – Smart doorbells
+                - May require a segmented network
+                - – Limit any security breaches
+        - 2.5 - IPv4 and IPv6 14
+            - IP addressing
+                - IPv4 is the primary protocol for everything we do
+                - – You probably won’t configure anything else
+                - IPv6 is now part of all major operating systems
+                - – And the backbone of our Internet infrastructure
+                - IPv4 addresses
+                - Internet Protocol version 4
+                - – OSI Layer 3 address
+                - IPv6 addresses
+                - Internet Protocol v6 - 128-bit address
+                - – 340,282,366,920,938,463,463,374,607,431,768,211,456
+                - addresses (340 undecillion)
+                - – 6.8 billion people could each have
+                - 5,000,000,000,000,000,000,000,000,000 addresses
+                - Networking with IPv4
+                - IP Address, e.g., 192.168.1.165
+                - – Every device needs a unique IP address
+                - Subnet mask, e.g., 255.255.255.0
+                - – Used by the local device to determine its subnet
+                - – The subnet mask isn’t (usually) transmitted
+                - across the network
+            - Default gateway, e.g., 192.168.1.1
+                - – The router that allows you to communicate
+                - outside of your local subnet
+                - – The default gateway must be an IP address
+                - on the local subnet
+                - DNS servers
+                - We remember names
+                - – professormesser.com, google.com, youtube.com
+                - Internet routers don’t know names
+                - – Routers only know IP addresses
+                - Something has to translate between
+                - names and IP addresses
+                - – Domain Name Services
+                - You configure two DNS servers in
+                - your IP configuration
+                - – That’s how important it is
+            - IPv4 addresses format
+                - 192
+                - .
+                - 168
+                - .
+                - 1
+                - .
+                - 131
+                - 11000000
+                - .
+                - 10101000 .
+                - 00000001
+                - .
+                - 10000011
+                - =
+                - 8)bits 1)byte
+                - =
+                - 1)octet
+                - 32)bits)=)4)bytes
+                - IPv6 addresses format
+                - fe80::5d18:652:cﬀd:8f52
+                - fe80:0000:0000:0000:5d18:0652:cﬀd:8f52
+                - fe80
+                - 1111111010000000
+                - :
+                - 0000
+                - :
+                - 0000000000000000
+                - :
+                - 0000
+                - :
+                - 0000000000000000
+                - :
+                - 0000
+                - :
+                - 0000000000000000
+                - :
+                - 5d18
+                - :
+                - 0101110100011000
+                - :
+                - 0652
+                - :
+                - 0000011001010010
+                - :
+                - :
+                - cﬀd
+                - 1100111111111101
+                - :
+                - :
+                - 8f52
+                - 1000111101010010
+                - =
+                - 16-bits 2-bytes
+                - =
+                - 2-octets
+                - 128-bits-―16-bytes
+        - 2.5 - Assigning IP Addresses 15
+            - DHCP
+                - IPv4 address configuration used to be manual
+                - – IP address, subnet mask, gateway,
+                - DNS servers, NTP servers, etc.
+                - October 1993 - The bootstrap protocol (BOOTP)
+                - BOOTP didn’t automatically define everything
+                - – Some manual configurations were still required
+                - – BOOTP also didn’t know when an
+                - IP address might be available again
+                - Dynamic Host Configuration Protocol (DHCP)
+                - – Initially released in 1997,
+                - updated through the years
+                - – Provides automatic address / IP configuration
+                - for almost all devices
+                - The DHCP Process (DORA)
+                - Step 1: Discover - Client to DHCP Server
+                - – Find all of the available DHCP Servers
+                - Step 2: Offer - DHCP Server to client
+                - – Send some IP address options to the client
+                - Step 3: Request - Client to DHCP Server
+                - – Client chooses an offer and makes a formal request
+                - Step 4: Acknowledgment - DHCP Server to client
+                - – DHCP server sends an acknowledgment to the client
+                - Turning dynamic into static
+                - DHCP assigns an IP address from the first available from a
+                - large pool of addresses
+                - – Your IP address will occasionally change
+                - You may not want your IP address to change
+                - – Server, printer, or personal preference
+                - Disable DHCP on the device
+                - – Configure the IP address information manually
+                - – Requires additional administration
+                - Better: Configure an IP reservation on the DHCP server
+                - – Associate a specific MAC address with an IP address
+                - Avoid manual configurations
+                - No DHCP server reservation
+                - – You configure the IP address manually
+                - Difficult to change later - You must visit the device again
+                - A DHCP reservation is preferable
+                - – Change the IP address from the DHCP server
+                - Automatic Private IP Addressing (APIPA)
+                - A link-local address - No forwarding by routers
+                - IETF has reserved 169.254.0.0 through 169.254.255.255
+                - – First and last 256 addresses are reserved
+                - – Functional block of169.254.1.0 through 169.254.254.255
+                - Automatically assigned
+                - – Uses ARP to confirm the address isn’t currently in use
+        - 2.6 - DNS Configuration 16
+            - Domain Name System
+                - Translates human-readable names
+                - into computer-readable IP addresses
+                - – You only need to remember
+                - www.ProfessorMesser.com
+                - Hierarchical
+                - – Follow the path
+                - Distributed database
+                - – Many DNS servers
+                - – 13 root server clusters (over 1,000 actual servers)
+                - – Hundreds of generic top-level domains (gTLDs) -
+                - .com, .org, .net, etc.
+                - – Over 275 country code top-level domains (ccTLDs) -
+                - .us, .ca, .uk, etc.
+                - DNS lookup
+                - professor@Odyssey ~ % **dig www.professormesser.com**
+                - ; <<→DiG 9.10.6 <<↔ www.professormesser.com
+                - ;;global options: +cmd
+                - ;;Got answer:
+                - ;;->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58050
+                - ;;flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+                - ;;OPT PSEUDOSECTION:
+                - ; EDNS: version: 0, flags:; udp: 512
+                - ;;QUESTION SECTION:
+                - ;www.professormesser.com. IN A
+                - ;;ANSWER SECTION:
+                - www.professormesser.com. 300 IN A 104.22.72.108
+                - www.professormesser.com. 300 IN A 172.67.41.114
+                - www.professormesser.com. 300 IN A 104.22.73.108
+                - ;;Query time: 42 msec
+                - ;;SERVER: 9.9.9.9#53(9.9.9.9)
+                - ;;WHEN: Thu Jun 17 09:17:26 EDT 2021
+                - ;;MSG SIZE rcvd: 100
+                - The DNS hierarchy
+                - .
+                - .com
+                - .net .edu .org
+                - .professormesser
+                - www live mail
+                - east
+                - west
+                - trey
+                - ka5e
+                - ethan judy
+                - DNS records
+                - Resource Records (RR)
+                - – The database records of domain name services
+                - Over 30 record types
+                - – IP addresses, certificates, host alias names, etc.
+                - These are important and critical configurations
+                - – Make sure to check your settings, backup, and test!
+                - Address records (A) (AAAA)
+                - Defines the IP address of a host
+                - – This is the most popular query
+                - A records are for IPv4 addresses
+                - – Modify the A record to change the
+                - host name to IP address resolution
+                - AAAA records are for IPv6 addresses
+                - – The same DNS server, different records
+                - **www.professormesser.com. IN A 162.159.246.164 ; Professor Messer** 
+            - Mail exchanger record (MX)
+                - Determines the host name for the mail server - this isn’t an IP address; it’s a name
+                - ; This is the mail-exchanger. You can list more than one (if
+                - ; applicable), with the integer field indicating priority (lowest
+                - ; being a higher priority)
+                - **IN MX mail.mydomain.name.**
+                - ; A list of machine names & addresses
+                - **jack.mydomain.name. IN A 123.12.41.40 ; Windows 10**
+                - **mail.mydomain.name. IN A 123.12.41.41 ; Linux (main server)**
+                - **sam.mydomain.name. IN A 123.12.41.42 ; Windows 11**
+                - Text records (TXT)
+                - Human-readable text information
+                - – Useful public information
+                - – Was originally designed for
+                - informal information
+                - Can be used for verification purposes
+                - – If you have access to the DNS,
+                - then you must be the administrator
+                - of the domain name
+                - Commonly used for email security
+                - – External email servers validate
+                - information from your DNS
+                - Viewing TXT records with nslookup
+                - professor@Odyssey ~ % **nslookup -type=txt google.com**
+                - ;;Truncated, retrying in TCP mode.
+                - Server: 9.9.9.9
+                - Address: 9.9.9.9#53
+                - Non-authoritative answer:
+                - google.com text = “docusign=1b0a6754-49b1-4db5-8540-d2c12664b289”
+                - google.com text = “v=spf1 include:_spf.google.com ~all”
+                - google.com text = “apple-domain-verification=30afIBcvSuDV2PLX”
+                - google.com text = “globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=”
+                - google.com text = “facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95”
+                - google.com text = “google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ”
+                - google.com text = “MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB”
+                - google.com text = “docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e”
+                - google.com text = “google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o”
+                - Sender Policy Framework (SPF)
+                - SPF protocol
+                - – A list of all servers authorized to send emails
+                - for this domain
+                - – Prevent mail spoofing
+                - – Mail servers perform a check to see if incoming mail
+                - really did come from an authorized host
+                - Domain Keys Identified Mail (DKIM)
+                - Digitally sign a domain’s outgoing mail
+                - – Validated by mail servers, not usually
+                - seen by the end user
+                - – The public key is in the DKIM TXT record
+                - ; DKIM TXT records
+                - ; owner class ttl TXT “attribute-name=attribute value”
+                - **1517680427.professormesser._domainkey.professormesser.com. IN 300 TXT**
+                - **(“v=DKIM1;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqCUQ5dpKOtwQdE2k8HaCQqV+f”**
+                - **“3y30BCzNz75IffEXtk+sTBiDcGWIcapUzkgC4tN0boHBw57APzNInmjH9yZn15TB”**
+                - **“TfTavC44nXidUZ8LzsJGWVvYYxoFR5DuBoi/zIO0Hv6YDUpDxJa9knZABTOWLS2F”**
+                - **“YtK9dWAMaOZdtTBOhQIDAQAB”)**
+                - DMARC
+                - Domain-based Message Authentication, Reporting,
+                - and Conformance (DMARC)
+                - – Prevent unauthorized email use (spoofing)
+                - – An extension of SPF and DKIM
+                - You decide what external email servers should do with
+                - emails that don’t validate through SPF or DKIM
+                - – That policy is written into a DMARC TXT record
+                - – Accept all, send to spam, or reject the email
+                - – Compliance reports can be sent to the email administrator
+        - 2.6  - DHCP Configuration 18 
+            - Scope properties
+                - IP address range
+                - – And excluded addresses
+                - Subnet mask
+                - Lease durations
+                - Other scope options
+                - – DNS server
+                - – Default gateway
+                - – VOIP servers
+                - DHCP pools
+                - Grouping of IP addresses
+                - – Each subnet has its own scope
+                - – 192.168.1.0/24
+                - – 192.168.2.0/24
+                - – 192.168.3.0/24
+                - –
+                - ...
+                - A scope is generally a single contiguous
+                - pool of IP addresses
+                - – DHCP exceptions can be made inside of the scope
+                - DHCP address assignment
+                - Dynamic assignment
+                - – DHCP server has a big pool of addresses to give out
+                - – Addresses are reclaimed after a lease period
+                - Automatic assignment
+                - – Similar to dynamic allocation
+                - – DHCP server keeps a list of past assignments
+                - – You’ll always get the same IP address
+                - The DHCP lease process
+                - Normal
+                - Opera*on
+                - Renewal
+                - Period
+                - Rebinding
+                - Period
+                - Lease Time: 8 days
+                - Renewal Timer (T1): 4 days (50%)
+                - Rebinding Timer (T2): 7 days (87.5%)
+                - Normal
+                - Opera*on
+                - DHCP address allocation
+                - Address reservation
+                - – Administratively configured
+                - Table of MAC addresses
+                - – Each MAC address has a matching IP address
+                - Other names
+                - – Static DHCP Assignment, Static DHCP,
+                - Static Assignment, IP Reservation
+                - DHCP leases
+                - Leasing your address
+                - – It’s only temporary
+                - – But it can seem permanent
+                - Allocation
+                - – Assigned a lease time by the DHCP server
+                - – Administratively configured
+                - Reallocation
+                - – Reboot your computer
+                - – Confirms the lease
+                - Workstation can also manually release the IP address
+                - – Moving to another subnet
+                - DHCP renewal
+                - T1 timer
+                - – Check in with the lending DHCP server to renew
+                - the IP address
+                - – 50% of the lease time (by default)
+                - T2 timer
+                - – If the original DHCP server is down, try rebinding
+                - with any DHCP server
+                - – 87.5% of the lease time (7/8ths)
+                - Renewal
+                - Period
+                - Rebinding
+                - Period
+                - Normal
+                - Opera*on
+                - Renewal
+                - Period
+                - Rebinding
+                - Period
+        - 2.6 - VLANs and VPNs 19
+            - LANs
+                - Local Area Networks
+                - A group of devices in the same broadcast domain
+                - Virtual LANs
+                - Virtual Local Area Networks
+                - A group of devices in the same broadcast domain
+                - Separated logically instead of physically
+                - Configuring VLANs
+                - Virtual Local Area Networks
+                - – A group of devices in
+                - the same broadcast domain
+            - VPNs
+                - Virtual Private Networks
+                - – Encrypted (private) data traversing a public network
+                - Concentrator
+                - – Encryption/decryption access device
+                - – Often integrated into a firewall
+                - Many deployment options
+                - – Specialized cryptographic hardware
+                - – Software-based options available
+                - Used with client software
+                - – Sometimes built into the OS
+                - Client-to-Site VPNs
+                - On-demand access from a remote device
+                - – Software connects to a VPN concentrator
+                - Some software can be configured as always-on
+        - 2.7 - Internet Connection Types 20
+            - Satellite networking
+                - Communication to a satellite
+                - – Non-terrestrial communication
+                - High cost relative to terrestrial networking
+                - – 50 Mbit/s down, 3 Mbit/s up are common
+                - – Remote sites, difficult-to-network sites
+                - High latency
+                - – 250 ms up, 250 ms down
+                - – Starlink advertises 40 ms and is working on 20 ms
+                - High frequencies - 2 GHz
+                - – Line of sight, rain fade
+                - Fiber
+                - High speed data communication
+                - – Frequencies of light
+                - Higher installation cost than copper
+                - – Equipment is more costly
+                - – More difficult to repair
+                - – Communicate over long distances
+                - Large installation in the WAN core
+                - – Supports very high data rates
+                - – SONET, wavelength division multiplexing
+                - Fiber is slowly approaching the premises
+                - – Business and home use
+                - Cable broadband
+                - Broadband
+                - – Transmission across multiple frequencies
+                - – Different traffic types
+                - Data on the “cable” network
+                - – DOCSIS (Data Over Cable Service Interface
+                - Specification)
+                - High-speed networking
+                - – 50 Mbits/s through 1,000+ Mbit/s are common
+                - Multiple services
+                - – Data, voice, video
+                - DSL
+                - ADSL (Asymmetric Digital Subscriber Line)
+                - – Uses telephone lines
+                - Download speed is faster than the upload speed
+                - (asymmetric)
+                - – 200 Mbit/s downstream / 20 Mbit/s upstream
+                - are common
+                - – ~10,000 foot limitation from the central office (CO)
+                - – Faster speeds may be possible if closer to the CO
+            - Cellular networks
+                - Mobile devices
+                - – “Cell” phones
+                - Separate land into “cells”
+                - – Antenna coverages a cell with certain frequencies
+                - Tethering
+                - – Turn your phone into a wireless router
+                - Mobile hotspot
+                - – Standalone devices
+                - – Use your phone for other things
+                - WISP
+                - Wireless Internet Service Provider
+                - – Terrestrial internet access using wireless
+                - Connect rural or remote locations
+                - – Internet access for everyone
+                - Many different deployment technologies
+                - – Meshed 802.11
+                - – 5G home internet
+                - – Proprietary wireless
+                - Need an outdoor antenna
+                - – Speeds can range from ~ 10 to 1,000 megabits per second
+        - 2.8 - Network Types 21
+            - LAN
+                - Local Area Network
+                - – Local is relative
+                - A building or group of buildings
+                - – High-speed connectivity
+                - Ethernet and 802.11 wireless
+                - – Any slower and it isn’t “local”
+                - WAN
+                - Wide Area Network
+                - – Spanning the globe
+                - Generally connects LANs across a distance
+                - – And generally much slower than the LAN
+                - Many different WAN technologies
+                - – Point-to-point serial, MPLS, etc.
+                - – Terrestrial and non-terrestrial
+                - PAN
+                - Personal Area Network
+                - – Your own private network
+                - – Bluetooth, IR, NFC
+                - Automobile
+                - – Audio output
+                - – Integrate with phone
+                - Mobile phone - Wireless headset
+                - Health
+                - – Workout telemetry, daily reports
+                - MAN
+                - Metropolitan Area Network
+                - – A network in your city
+                - – Larger than a LAN, often smaller than a WAN
+                - Historically MAN-specific topologies
+                - – Metro Ethernet
+                - Common to see government ownership
+                - – They “own” the right-of-way
+                - SAN
+                - Storage Area Network (SAN)
+                - – Looks and feels like a local storage device
+                - – Block-level access
+                - – Very efficient reading and writing
+                - Requires a lot of bandwidth
+                - – May use an isolated network and high-speed
+                - network technologies
+                - WLAN
+                - Wireless LAN
+                - – 802.11 technologies
+                - Mobility
+                - – Within a building
+                - – In a limited geographical area
+                - Expand coverage with additional access points
+                - – Downtown area
+                - – Large campus
+        - 2.8 - Network Tools 21
+            - Cable crimper
+                - “Pinch” the connector onto a wire
+                - – Coaxial, twisted pair, fiber
+                - Connect the modular connector to
+                - the Ethernet cable
+                - – The final step of the process
+                - Metal prongs are pushed through the insulation
+                - – The plug is also permanently pressed
+                - onto the cable sheath
+                - Crimping best practices
+                - Get a good crimper
+                - – And a good pair of electrician’s scissors / cable snips
+                - – And a good wire stripper
+                - Make sure you use the correct modular connectors
+                - – Differences between wire types
+                - Practice, practice, practice
+                - – It won’t take long to become proficient
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 21
+                - [https://www.ProfessorMesser.com2.8](https://www.ProfessorMesser.com2.8) - Network Tools (continued)
+                - WiFi analyzer
+                - Wireless networks are
+                - incredibly easy to monitor
+                - – Everyone “hears” everything
+                - Purpose-built hardware or
+                - mobile device add-on
+                - – Specializes in 802.11 analysis
+                - Identify errors and interference
+                - – Validate antenna location and installation
+                - Tone generator
+                - Where does that wire go?
+                - – Follow the tone
+                - Tone generator
+                - – Puts an analog sound on the wire
+                - Inductive probe
+                - – Doesn’t need to touch the copper
+                - – Hear through a small speaker
+                - Using the tone generator and probe
+                - Easy wire tracing
+                - – Even in complex environments
+                - Connect the tone generator to the wire
+                - – Modular jack, coax, punch down connectors
+                - Use the probe to locate the sound
+                - – The two-tone sound is easy to find
+                - Punch-down tools
+                - “Punch” a wire into a wiring block
+                - – 66 block, 110 block, and others
+                - Can be tedious
+                - – Every wire must be
+                - individually punched
+                - Trims the wires during the punch
+                - – Very efficient process
+                - Punch-down best-practices
+                - Organization is key
+                - – Lots of wires,
+                - – Cable management
+                - Maintain your twists
+                - – Your Category 6A cable will thank you later
+                - Document everything
+                - – Written documentation, tags, graffiti
+                - Cable testers
+                - Relatively simple
+                - – Continuity test
+                - Can identify missing pins
+                - – Or crossed wires
+                - Not usually used for frequency testing
+                - – Crosstalk, signal loss, etc.
+                - Loopback plugs
+                - Useful for testing physical ports
+                - – Or fooling your applications
+                - Serial / RS-232 (9 pin or 25 pin)
+                - Network connections
+                - – Ethernet, T1, Fiber
+                - These are not cross-over cables
+                - Taps and Port Mirrors
+                - Intercept network traffic
+                - – Send a copy to a packet capture device
+                - Physical taps
+                - – Disconnect the link, put a tap in the middle
+                - – Can be an active or passive tap
+                - Port mirror
+                - – Port redirection, SPAN (Switched Port ANalyzer)
+                - – Software-based tap
+                - – Limited functionality, but can work well in a pinch
+    - 3.0 - Hardware 22
+        - 3.1 - Network Cables 22
+            - The importance of cable
+                - Fundamental to network communication
+                - – Incredibly important foundation
+                - Usually only get one good opportunity at
+                - building your cabling infrastructure - Make it good!
+                - The vast majority of wireless communication uses cables
+                - – It has to plug in somewhere
+                - Twisted pair copper cabling
+                - Balanced pair operation
+                - – Two wires with equal and opposite signals
+                - – Transmit+, Transmit- / Receive+, Receive-
+                - The twist is the secret!
+                - – Keeps a single wire constantly moving
+                - away from the interference
+                - – The opposite signals are compared on the other end
+                - Pairs in the same cable have different twist rates
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 22
+                - [https://www.ProfessorMesser.com3.1](https://www.ProfessorMesser.com3.1) - Network Cables (continued)
+                - Coaxial cables
+                - Two or more forms share a common axis
+                - RG-6 used in television/digital cable
+                - – And high-speed Internet over cable
+                - Plenum-rated cable
+                - Traditional cable jacket - Polyvinyl chloride (PVC)
+                - Fire-rated cable jacket
+                - – Fluorinated ethylene polymer (FEP) or
+                - low-smoke polyvinyl chloride (PVC)
+                - Plenum-rated cable may not be as flexible
+                - – May not have the same bend radius
+                - Worst-case planning
+                - – Important concerns for any structure
+                - Unshielded and shielded cable
+                - UTP (Unshielded Twisted Pair)
+                - – No additional shielding
+                - – The most common twisted pair cabling
+                - STP (Shielded Twisted Pair)
+                - – Additional shielding protects against interference
+                - – Shield each pair and/or the overall cable
+                - – Requires the cable to be grounded
+                - Abbreviations
+                - – U = Unshielded
+                - – S = Braided shielding
+                - – F = Foil shielding
+                - (Overall cable) / (individual pairs)TP
+                - – Braided shielding around the entire cable and
+                - foil around the pairs is S/FTP
+                - – Foil around the cable and no shielding around
+                - the pairs is F/UTP
+                - Direct burial STP
+                - Overhead cable isn’t always a good option
+                - – Put the cable in the ground
+                - Provides protection from the elements
+                - – Designed to be waterproof
+                - – Often filled with gel to repel water
+                - – Conduit may not be needed
+                - Shielded twisted pair
+                - – Provides grounding, adds strength
+                - – Protects against signal interference
+        - 3.1 - Optical Fiber 23
+            - Optical fiber communication
+                - Transmission by light
+                - – The visible spectrum
+                - No RF signal
+                - – Very difficult to monitor or tap
+                - Signal slow to degrade
+                - – Transmission over long distances
+                - Immune to radio interference - There’s no RF
+                - Multimode fiber
+                - Short-range communication
+                - – Up to 2 km
+                - Relatively inexpensive light source
+                - – i.e., LED
+                - Mul$%mode*Fiber
+                - Single-mode fiber
+                - Long-range communication
+                - – Up to 100 km without processing
+                - Expensive light source
+                - – Commonly uses lasers
+                - Mul$%mode*Fiber
+                - Short%range*communica$on,*up*to*2*km
+                - Short%range*communica$on,*up*to*2*km
+                - © 2022 Messer Studios, LLC Single%mode*Fiber
+        - 3.1 - 568A and 568B Colors 24
+            - Structured cabling standards
+                - International ISO/IEC 11801 cabling standards
+                - – Defines classes of networking standards
+                - Telecommunications Industry Association (TIA)
+                - – Standards, market analysis, trade shows,
+                - government affairs, etc.
+                - – ANSI/TIA-568: Commercial Building
+                - Telecommunications Cabling Standard
+                - – [http://www.tiaonline.org](http://www.tiaonline.org)
+                - Commonly referenced for pin and pair assignments of
+                - eight-conductor 100-ohm balanced twisted pair cabling
+                - – T568A and T568B
+                - T568A and T568B termination
+                - Pin assignments from T568-B standard
+                - – Eight conductor 100-ohm balanced twisted-pair cabling
+                - T568A and T568B are different pin assignments for
+                - 8P8C connectors
+                - – Assigns the T568A pin-out to horizontal cabling
+                - Many organizations traditionally use 568B
+                - – Difficult to change in mid-stream
+                - You can’t terminate one side of the cable with
+                - 568A and the other with 568B
+                - – This has never been the definition of a
+                - Gigabit Ethernet crossover cable
+                - TIA/EIA&568A
+                - TIA/EIA&568B
+                - 1
+                - 2
+                - 3
+                - 4
+                - 5
+                - 6
+                - 7
+                - 8
+                - White&and&Green
+                - Green
+                - White&and&Orange
+                - Blue
+                - White&and&Blue
+                - Orange
+                - White&and&Brown
+                - Brown
+                - 1
+                - 2
+                - 3
+                - 4
+                - 5
+                - 6
+                - 7
+                - 8
+                - White&and&Orange
+                - Orange
+                - White&and&Green
+                - Blue
+                - White&and&Blue
+                - Green
+                - White&and&Brown
+                - Brown
+        - 3.1 - Peripheral Cables 24
+            - USB (Universal Serial Bus)
+                - Simplify connections - Printers, storage devices,
+                - keyboard, mouse
+                - USB 1.1
+                - – Low speed: {{1.5 megabits}} per second, {{3 }}meters
+                - – Full speed: {{12 megabits}} per second, {{5 }}meters
+                - USB 2.0 - {{480 megabits}} per second, {{5}} meters
+                - USB 3.0 - SuperSpeed
+                - – {{5 gigabits}} per second, ~{{3}} meters
+                - – Standard does not specify a cable length
+            - USB-C
+                - USB has a lot of different connectors
+                - – And they have changed over time
+                - Can be annoying to connect USB-A
+                - – Third time’s the charm
+                - USB-C replaces all of these
+                - – One connector to rule them all
+                - USB-C describes the physical connector
+                - – It doesn’t describe the signal
+            - USB versions and naming
+                - There’s a lot to keep track of
+                - – The names keep changing
+                - The standard doesn’t change
+                - – Just the names
+            - USB 3.1
+                - Released July 2013
+                - – Doubled the throughput over USB 3.0
+                - USB 3.0 is USB 3.1 Gen 1
+                - – SuperSpeed USB - {{5 Gbit}}/sec
+                - USB 3.1 is USB 3.1 Gen 2 - SuperSpeed+
+                - – Twice the rate of USB 3.0/USB 3.1 Gen 1
+            - USB 3.2
+                - USB 3.2
+                - – Released September 2017
+                - – Bandwidth can double with USB-C cables
+                - – Uses an extra “lane” of communication
+                - associated with the flip-flop wires in USB-C
+                - USB 3.0 -> 3.1 Gen 1 -> USB 3.2 Gen 1
+                - – SuperSpeed USB {{5 Gbps}} (single lane)
+                - USB 3.1 -> 3.1 Gen 2 -> USB 3.2 Gen 2
+                - – SuperSpeed USB {{10 Gbps }}(single lane)
+            - Thunderbolt
+                - High-speed serial connector
+                - – Data and power on the same cable
+                - – Based on Mini DisplayPort (MDP) standard
+                - Thunderbolt v1
+                - – Two channels
+                - – {{10 Gbit/s }}per channel, {{20 Gbit/s}} total throughput
+                - – Mini DisplayPort connector
+                - Thunderbolt v2
+                - – {{20 Gbit/s}} aggregated channels
+                - – Mini DisplayPort connector
+                - Thunderbolt v3
+                - – {{40 Gbit/s}} aggregated throughput - USB-C connector
+                - Maximum 3 meters (copper)
+                - – 60 meters (optical)
+                - – Daisy-chain up to 6 devices
+            - Serial console cables
+                - ![](https://remnote-user-data.s3.amazonaws.com/iHIlL6GWRayBHlAuW8PylH97JkiObBr8JQfCquhZxFPx6y5uaIqltj5ZXrfRBJLWZB2oQ5qp4pM2oNbVT0V7KXvyaTjoqwvfoqwFi7P4PZu7tlHIg7BL0BeavomQ5tjF.png)
+                - D-subminiature or D-sub
+                - – The letter refers to the connector size
+                - Commonly used for RS-232
+                - – Recommended Standard 232
+                - – An industry standard since 1969
+                - Serial communications standard
+                - – Built for modem communication
+                - – Used for modems, printers, mice, networking
+                - Now used as a configuration port
+        - 3.1 - Video Cables 26
+            - VGA (Video Graphics Array)
+                - DB-15 connector
+                - – More accurately called DE-15
+                - Blue color
+                - – PC System Design Guide
+                - Analog signal
+                - – No digital
+                - – Image degrades after 5 to 10 meters
+                - HDMI (High-Definition Multimedia Interface)
+                - Video and audio stream
+                - – All digital, no analog
+                - – ~ 20 meter distance before losing too much signal
+                - 19-pin (Type A) connector
+                - – Proprietary connector
+                - DisplayPort
+                - Digital information sent in packetized form
+                - – Like Ethernet and PCI Express
+                - – Carries both audio and video
+                - Compatible with HDMI and DVI
+                - – Passive adapter
+                - – DisplayPort -> HDMI
+                - – DisplayPort -> DVI
+                - DVI (Digital Visual Interface)
+                - Single and dual link
+                - – Single link; 3.7 Gbps (HDTV at 60 fps)
+                - – Dual link; 7.4 Gbps (HDTV at 85 fps)
+                - – No audio support
+                - DVI-A
+                - – Analog signals
+                - DVI-D
+                - – Digital signals
+                - DVI-I
+                - – Integrated
+                - – Digital and analog in the same connector
+                - VGA
+                - HDMI
+                - DisplayPort
+                - Mini DisplayPort
+                - DVI (Digital Visual Interface)
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 26
+                - https:/
+        - 3.1 - SATA Device Cables 27
+            - SATA (Serial AT Attachment)
+                - SATA Revision 1.0 - SATA 1.5 Gbit/s, 1 meter
+                - SATA Revision 2.0 - SATA 3.0 Gbit/s, 1 meter
+                - SATA Revision 3.0 - SATA 6.0 Gbit/s, 1 meter
+                - SATA Revision 3.2 - SATA 16 Gbit/s, 1 meter
+                - eSATA (external SATA)
+                - – Matches the SATA version - 2 meters
+            - SATA
+                - One power cable and data cable per device
+                - – One-to-one
+                - eSATA cable
+                - External device connections
+                - – Uses the SATA standard
+                - Similar in size to SATA
+                - – Connectors are physically differen
+        - 3.1 - SCSI Device Cables 27
+            - The SCSI standard
+                - Small Computer Systems Interface
+                - – Not really “small” any longer
+                - Originally designed to string many peripherals
+                - together onto a single cable/controller
+                - – Up to 16 devices in a SCSI “chain”
+                - Many different formats
+                - – Fast SCSI, Ultra SCSI, Ultra Wide SCSI, Ultra2 SCSI,
+                - – Ultra3 SCSI, Ultra-320 SCSI, Ultra-640 SCSI,
+                - – iSCSI (SCSI over IP)
+                - Parallel and serial options
+                - SCSI advantages
+                - Not just for hard drives
+                - – Scanners, tape drives, CD-ROM drives
+                - Many devices on a single bus
+                - – 8 on narrow bus, 16 on wide bus
+            - Very intelligent interface functionality
+                - – Much of the difficult configuration work is done
+                - between the SCSI devices
+                - Industry longevity
+                - – Well supported in the enterprise
+                - – A standard drive for virtual systems
+                - SCSI ID and logical unit (LUN)
+                - Every SCSI device on a single bus is
+                - assigned a separate ID number
+                - – SCSI ID 0 (SCSI controller), ID 2 (hard drive), ID 3 (CD-ROM)
+                - Logical units (LUNs) are defined within each SCSI ID
+                - – Separate drives in a storage array or virtual machine
+                - The signal at the “end” of a physical SCSI bus is terminated
+                - – Can be internal to the device or a
+                - separate termination device
+                - Serial attached SCSI (SAS) devices have no
+                - jumpers, terminators, or settings.
+            - Serial attached SCSI
+                - Move from parallel to serial
+                - – Increased throughput
+                - – Similar to the move from PATA to SATA
+                - Point-to-point connection
+                - – No more daisy chains
+                - No termination required
+                - – The bus has two devices on it
+                - The control and management of SCSI
+                - – The speed of a serial connection
+        - 3.1 - PATA Drive Cables 29
+            - The PATA Standard
+                - Parallel AT Attachment
+                - – Remember the PC/AT?
+                - An evolutionary process
+                - – Circa 1999
+                - Originally called Integrated
+                - Drive Electronics (IDE)
+                - – A Western Digital invention
+                - – 2nd generation called EIDE (Enhanced IDE)
+                - The evolution
+                - – Promised faster speeds
+                - – From 16 MB/s through 133 MB/s
+                - – Additional devices
+                - Now called Parallel ATA (PATA)
+        - 3.1 - Adapters and Converters 29
+            - Adapters and converters
+                - The best laid plans…
+                - – Need an adapter
+                - Convert between different connectors
+                - – Electrically compatible
+                - Convert from one format to another
+                - – You need Ethernet but you only have USB
+                - A good temporary fix
+                - – Or a good permanent one
+                - DVI to HDMI
+                - DVI-D and HDMI are electrically compatible
+                - – HDMI is backward-compatible with DVI-D
+                - – No signal conversion required
+                - – No loss of video quality
+                - DVI to VGA
+                - DVI-A includes analog signals
+                - – Backward compatible with VGA
+                - – Only 640 x 480 is officially supported
+                - May only need an adapter - Analog to analog
+                - VGA to DVI digital will need a converter
+                - – Check your interface specifications
+                - USB to Ethernet
+                - Some laptops don’t have an Ethernet connection
+                - USB-C to USB-A
+                - Merge the new with the old- Use your older peripherals
+                - USB hub
+                - – Connect many devices - High speed USB connectivity
+        - 3.1 - Copper Connectors 30
+            - RJ11 connector
+                - 6 position, 2 conductor (6P2C)
+                - – Some cables will wire additional conductors
+                - – Telephone or DSL connection
+                - RJ45 connector
+                - Registered Jack type 45
+                - 8 position, 8 conductor (8P8C)
+                - – Modular connector - Ethernet
+                - F-connector
+                - Cable television
+                - – Cable modem
+                - – DOCSIS
+                - (Data Over Cable Service Interface Specification)
+                - RG-6 cable - Threaded connector
+                - Punchdown block
+                - Wire-to-wire patch panel
+                - – No intermediate interface required
+                - Wires are “punched” into the block
+                - – Connecting block is on top
+                - Additional wires punched into connecting block
+                - – Patch the top to the bottom
+            - USB-C
+                - 24-pin double-sided USB connector
+                - – Used for both hosts and devices
+                - Used for USB, Thunderbolt
+                - – Interface is the same, signal can vary
+                - Molex connector
+                - 4-pin peripheral power connector
+                - – Molex Connector Company
+                - – AMP MATE-N-LOK
+                - – Provides +12 V and +5 V
+                - Power for many devices in the computer case
+                - – Storage devices
+                - – Optical drives
+                - – Fans
+                - – Other peripherals
+                - Lightning
+                - Apple proprietary
+                - – 8-pin digital signals
+                - – iPhone, iPad, iPod devices
+                - Some advantages over Micro-USB
+                - – Higher power output for phones and tablets
+                - – Can be inserted either way
+                - DB-9
+                - D-subminiature or D-sub
+                - – The letter refers to the connector size
+                - Commonly used for RS-232
+                - – Recommended Standard 232
+                - – An industry standard since 1969
+                - Serial communications standard
+                - – Built for modem communication
+                - – Used for modems, printers, mice, networking
+                - Now used as a configuration port
+                - – Management or Console port
+        - 3.1 - Fiber Connectors 31
+        - 3.2 - An Overview of Memory 31
+            - What is memory?
+                - Random Access Memory (RAM)is the most common
+                - – But it’s not the only kind of memory
+                - RAM is not referring to hard drive or SSD storage
+                - – Don’t mix the two terms
+                - – Data is stored permanently on the drive
+                - Data and programs can only be used when moved to RAM
+                - RAM (Random Access Memory) slots
+                - Memory types have changed through the years
+                - – Driven by standardization and technology
+                - One of the most important components of your computer
+                - – Speed, speed, speed
+                - Every motherboard is different
+                - – Check your documentation
+                - DIMM
+                - DIMM - Dual inline memory module
+                - – Electrical contacts are different on each side
+                - 64 bit data width
+                - SO-DIMM
+                - Small Outline Dual In-line Memory Module
+                - – About half the width as a DIMM
+                - Used in laptops and mobile devices
+                - Dynamic Random Access Memory (DRAM)
+                - The memory on the DIMM
+                - Dynamic
+                - – Needs constant refreshing
+                - – Without refreshing, the data in memory disappears
+                - Random access
+                - – Any storage location can be accessed directly
+                - – Unlike magnetic tape
+                - SDRAM
+                - Synchronous DRAM (SDRAM)
+                - SDRAM is synchronous with the common system clock
+                - – Queue up one process while waiting for another
+                - – Classic DRAM didn’t wait for a clock signal
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 31
+                - [https://www.ProfessorMesser.com3.2](https://www.ProfessorMesser.com3.2) - An Overview of Memory (continued)
+                - Double Data Rate 3 (DDR3) SDRAM
+                - Twice the data rate of DDR2
+                - – Larger chip capacities - Maximum 16 GB per DIMM
+                - No backwards compatibility
+                - – Speed brings sacrifice
+                - Double Data Rate 4 (DDR4) SDRAM
+                - Speed increases over DDR3
+                - – Faster frequencies
+                - – Maximum 64 GB per DIMM
+                - Again, no backwards compatibility
+                - Double Data Rate 5 (DDR5) SDRAM
+                - Faster data transfers between the memory module and
+                - motherboard
+                - – Maximum of 64 GB per DIMM
+                - The key has moved - No backwards compatibility
+        - 3.2 - Memory Technologies 33
+            - Virtual memory
+                - Different names - Virtual RAM, swap file, etc.
+                - Swap currently unused application data to storage
+                - – Free up space for other applications
+                - Managed automatically by the operating system
+                - – Some configuration settings are available
+                - Multi-channel memory
+                - Dual-channel, triple-channel, or quad-channel
+                - Memory combinations should match
+                - – Exact matches are best
+                - Memory module slots are often colored differently
+            - Memory that checks itself
+                - Used on critical computer systems
+                - – VM servers, database servers, any server
+                - Parity memory
+                - – Adds an additional parity bit
+                - – Won’t always detect an error
+                - – Can’t correct an error
+                - Error Correcting Code (ECC)
+                - – Detects errors and corrects on the fly
+                - – Not all systems use ECC
+                - – It looks the same as non-ECC memory
+        - 3.3  - Storage Devices 33
+            - Hard disk drives (HDD)
+                - Non-volatile magnetic storage - rapidly rotating platters
+                - Random-access
+                - – Retrieve data from any part of the drive at any time
+                - Moving parts
+                - – Spinning platters, moving actuator arm
+                - – Mechanical components limit the access speed
+                - – Mechanical components can also break
+                - Solid-state drives (SSD)
+                - Non-volatile memory - No moving parts
+                - Very fast performance - No spinning drive delays
+                - mSATA (Mini-SATA)
+                - Shrink the SATA drive into smaller devices
+                - – Same data, different form factor
+                - – Great for laptops and mobile devices
+                - Smaller than 2.5” SATA drives
+                - – No spinning drive
+                - – Allows for different form factors
+                - Was used briefly - Quickly replaced by the m.2
+                - AHCI vs. NVMe
+                - SATA was designed for hard drives
+                - – Uses AHCI (Advanced Host Controller Interface) to
+                - move drive data to RAM
+                - – SATA revision 3 throughput up to 600 MB/s
+                - – SSDs need a faster communication method
+                - NVMe (Non-volatile Memory Express)
+                - – Designed for SSD speeds
+                - – Lower latency, supports higher throughputs
+                - – Take advantage of NVMe with an M.2 interface
+                - M.2 interface
+                - Smaller form factor - No SATA data or power cables
+                - Can use a PCI Express bus connection
+                - – 4 GB/second throughput or faster
+                - when using NVMe PCIe x4
+                - Different connector types
+                - – Needs to be compatible with the slot key/spacer
+                - – B key, M key, or B and M key
+                - – Some M.2 drives will support both
+            - B-key and M-key
+                - M.2 doesn’t guarantee NVMe
+                - – Your M.2 interface may be using AHCI
+                - – Check your documentation
+                - Your motherboard may only support
+                - one type of M.2 key
+                - – Check the documentation again
+                - Flash drives
+                - Flash memory
+                - – EEPROM (Electrically erasable programmable
+                - read-only memory)
+                - – Non-volatile memory - No power required to retain data
+                - Limited number of writes
+                - – Can still read the data
+                - Not designed for archival storage
+                - – Easy to lose or damage - Always have a backup
+                - – Flash memory
+                - Optical drives
+                - Small bumps read with a laser beam
+                - – Microscopic binary storage
+                - Relatively slow
+                - – Archival media
+                - Many different formats - CD-ROM, DVD-ROM, Blu-ray
+                - Internal and external drives
+                - – For those uncommon application installations
+        - 3.3 - RAID 34
+            - Data redundancy
+                - Hard drives store huge amounts of important data
+                - Hard drives are moving components
+                - – They will eventually break
+                - What happens to the data when the drive fails?
+                - – You can prepare for that
+                - – Use an array of drives
+                - RAID is not backup
+                - RAID
+                - Redundant Array of Independent Disks
+                - – They’re also inexpensive disks.
+                - Different RAID levels - Some redundant, some not
+                - RAID 0 – Striping
+                - RAID 1 - Mirroring
+                - RAID 5 – Striping with Parity
+                - Nested RAID - RAID 1+0 (a.k.a. RAID 10) - A stripe of mirrors
+                - RAID 0 - Striping
+                - File blocks are split between
+                - two or more physical drives
+                - – High performance
+                - – Data written quickly
+                - No redundancy
+                - – A drive failure breaks the array
+                - – Raid 0 is zero redundancy
+                - RAID 1 - Mirroring
+                - File blocks are duplicated between
+                - two or more physical drives
+                - High disk utilization
+                - – Every file is duplicated
+                - – Required disk space is doubled
+                - High redundancy
+                - – Drive failure does not affect data availability
+        - 3.4 - Motherboard Form Factors 35
+            - Motherboard form factors
+                - Physical size - Case sizing
+                - Basic layout - Room for small changes
+                - Power - Standard connectors
+                - Airflow - Increasingly important
+                - Wikipedia: There are 40 different motherboard
+                - types categorized!
+                - What you need to know
+                - CompTIA exam objectives:
+                - – “3.4 - Given a scenario, install and configure
+                - motherboards, central processing units (CPUs),
+                - and add-on cards.”
+                - Focus on which motherboard would be
+                - the best choice for a scenario
+                - – Memorizing the dimensions of the motherboard
+                - probably isn’t the most important thing
+                - – ATX or ITX
+                - Which motherboard would you choose?
+                - – Media center, video editing, thin client, etc.
+                - ATX form factor
+                - Advanced Technology Extended
+                - Standardized by Intel in 1995
+                - – Seen many updates over the years
+                - Power
+                - – 20 pin connector
+                - – 24 pin connector, additional 4/8 pin connector
+                - ITX form factor
+                - A series of low-power motherboards
+                - – Developed by VIA Technologies in 2001
+                - – Small form factor
+                - Mini-ITX is screw-compatible with ATX
+                - – Fits almost any enclosure
+                - Small form factor uses
+                - – Single-purpose computing, i.e., streaming media
+        - 3.4 - Motherboard Expansion Slots 35
+            - A computer bus
+                - Communication path - A city of technology
+                - Internal PC growth - Independent pathways
+                - System expansion - Additional capabilities
+                - Conventional PCI
+                - Peripheral Component Interconnect
+                - – Created in 1994
+                - Many expansion options
+                - – 32-bit and 64-bit bus width
+                - – Parallel communication
+                - A common expansion interface on previous
+                - computer generations
+                - – PCI Express is the newer technology
+                - PCI Express
+                - Also known as PCIe - Replaces the older PCI standard
+                - Communicates serially - Unidirectional serial “lanes”
+                - – Slower devices don’t slow down everyone
+                - One, two, four, eight, sixteen, or thirty-two full-duplex lanes
+                - – x1, x2, x4, x8, x16, x32
+                - – “x” is pronounced “by” (“by 4,” “by 16”)
+        - 3.4 - Motherboard Connectors 36
+            - 24-pin motherboard power
+                - Main motherboard power
+                - – Provides +3.3 V, +/-5 V, and +/- 12 V
+                - 20 pin connector was the original ATX standard
+                - – 24 pin was added for PCI Express power
+                - You can connect a 24-pin connector to a 20-pin
+                - motherboard
+                - – Some cables are 20-pin + 4-pin
+                - 4-pin ATX
+                - 4-pin ATX +12 V power
+                - – ATX12V Advanced Technology Extended motherboards
+                - Additional 12 volt power for older motherboards
+                - – Used primarily for CPU
+                - May be labeled ATX12V, P4, or CPU
+                - – And keyed for the appropriate connector
+                - Headers
+                - A pin header
+                - – A simple electrical interface
+                - – The connector is attached to the header
+                - Many different uses
+                - – Power, peripheral connections, lights, and buttons
+        - 3.4 - Motherboard Compatibility 36
+            - Intel and AMD
+                - Two solid CPU manufacturers
+                - – The differences are subtle
+                - Cost
+                - – AMD tends to be a bit less expensive
+                - Different sockets
+                - – The motherboard is designed for a particular CPU
+                - Choosing a side
+                - – Historically, AMD is value and Intel is performance
+                - – This is a dynamic technology segment
+                - Server motherboards
+                - Multisocket
+                - – Supports multiple physical CPU packages
+                - – Split the load
+                - Memory slots - Supports 4+ modules
+                - Expansion slots
+                - – Many slots and different sizes
+                - Overall size
+                - – Designed for a rack-mounted system
+                - – Larger ATX-sized system
+                - Desktop motherboards
+                - Can range from full-size motherboards to compact or
+                - monitor-only systems
+                - – We can do a lot with increasingly smaller systems
+                - Single CPU - Reduces cost and complexity
+                - Memory slots - Usually two or four
+                - Expansion slots - May have limited options
+                - Mobile motherboards
+                - Laptops - Small and light
+                - CPUs - Limited in speed - Thermal throttling
+                - Limited system modification
+                - – Memory, CPU, functionality
+                - Portability - Smaller devices
+                - – Low power consumption
+                - System board
+                - Proprietary - Built to fit
+                - Replacement isn’t easy
+                - – Swap the entire board
+                - – Most components are on the system board
+        - 3.4 - The BIOS 36
+            - BIOS - Basic Input/Output System
+                - The software used to start your computer
+                - – The firmware - System BIOS, ROM BIOS
+                - – ROM or flash memory
+                - Initializes CPU and memory - Build the workspace
+                - POST - Power-On Self-Test
+                - Look for a boot loader - Start the operating system
+                - Legacy BIOS
+                - The original / traditional BIOS
+                - – It’s been around for more than 25 years
+                - Older operating systems talked to hardware through the BIOS
+                - – Instead of accessing hardware directly
+                - Limited hardware support
+                - – No drivers for modern network, video, and storage devices
+                - UEFI BIOS
+                - Unified Extensible Firmware Interface
+                - – Based on Intel’s EFI (Extensible Firmware Interface)
+                - A defined standard - Implemented by the manufacturers
+                - Designed to replace the legacy BIOS
+                - – Need a modern BIOS for modern computers
+                - – Graphical and text-based
+        - 3.4 - BIOS Settings 37 
+            - The secret button(s)
+                - Launching the system setup
+                - – Del, F1, F2, Ctrl-S, Ctrl-Alt-S
+                - Hyper-V (Windows 8/10/11)
+                - – Turn Windows features on and off
+                - VMware Workstation Player
+                - – [http://www.vmware.com/products/player/](http://www.vmware.com/products/player/)
+                - But not VirtualBox
+                - – [http://www.virtualbox.org](http://www.virtualbox.org)
+                - Many simulators online
+                - – Search for “UEFI BIOS simulator”
+                - Fast startup
+                - Windows 8, 10, and 11
+                - – Doesn’t actually shut down all the way
+                - – Starts up so quickly, you can’t open the BIOS
+                - configuration
+                - From the Windows desktop
+                - – Hold down shift when clicking Restart
+                - – Settings / Update & Security / Recovery / Advanced
+                - startup / Restart now
+                - – System Configuration (msconfig)
+                - Interrupt normal boot three times
+                - – Presents the boot option screen
+                - Important tips
+                - Make a backup of yourBIOS configuration
+                - – Write detailed notes
+                - – Take a picture
+                - Don’t make a change unless you’re certain of the setting
+                - – It’s difficult to leave it alone
+                - Did I mention the backup?
+                - – It can save a lot of time!
+                - Boot options
+                - What happens when you power on?
+                - – The BIOS knows
+                - Disable hardware
+                - – Unavailable to the operating system
+                - Modify the boot order
+                - – Which boots first?
+                - – Move to the next in order
+                - – USB drive, SSD, hard drive
+                - USB permissions
+                - A security challenge
+                - – Very small storage devices
+                - – Very large capacities
+                - USB connections
+                - – Convenient
+                - – High speed
+                - US Department of Defense banned
+                - USB flash media for 15 months in 2008
+                - – SillyFDC worm
+                - Fans
+                - Computing power creates heat
+                - – A lot of heat
+                - Many different cooling fans
+                - – CPU fan
+                - – Chassis fans
+                - Motherboards often include an integrated fan controller
+                - – And temperature sensors
+                - – The motherboard increases and
+                - decreases the fan speeds
+                - Secure Boot
+                - Malicious software can “own” your system
+                - – Malicious drivers or OS software
+                - Secure boot
+                - – Part of the UEFI specification
+                - Digitally sign known-good software
+                - – Cryptographically secure
+                - – Software won’t run without the proper signature
+                - Support in many different operating systems
+                - – Windows and Linux support
+                - UEFI BIOS Secure Boot
+                - UEFI BIOS protections
+                - – BIOS includes the manufacturer’s public key
+                - – Digital signature is checked during a BIOS update
+                - – BIOS prevents unauthorized writes to the flash
+                - Secure Boot verifies the bootloader
+                - – Checks the OS bootloader’s digital signature
+                - – Bootloader must be signed with a trusted certificate
+                - – Or a manually approved digital signature
+                - Boot password management
+                - BIOS Password / User Password
+                - – System won’t start
+                - – Need the password to start the operating system
+                - Supervisor Password
+                - – Restrict BIOS changes
+                - – Must use supervisor password to change
+                - any BIOS configurations
+                - Remember your password!
+                - – Must reset the BIOS to recover
+                - – Usually a jumper
+                - Clearing a boot password
+                - Store the BIOS configuration - Your settings
+                - Complementary metal-oxide semiconductor (CMOS)
+                - – A type of memory
+                - – May be backed up with a battery
+                - Usually flash memory these days
+                - – Easily stored and accessed
+                - Reset with a jumper
+                - – Short (connect) two pins on the motherboard
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 37
+                - [https://www.ProfessorMesser.com3.4](https://www.ProfessorMesser.com3.4) - BIOS Settings (continued)
+                - The “CMOS” battery
+                - Not needed for today’s flash-based storage
+                - – Maintains older BIOS configurations
+                - – May only be used to maintain date/time
+                - A bad battery will require a BIOS configuration or
+                - date/time configuration on every boot
+                - On older systems, can reset the BIOS configuration
+                - by removing the battery
+                - – Newer computers use a jumper
+                - Trusted Platform Module (TPM)
+                - A specification for cryptographic functions
+                - – Hardware to help with encryption functions
+                - Cryptographic processor
+                - – Random number generator, key generators
+                - Persistent memory
+                - – Comes with unique keys burned in during production
+                - Versatile memory
+                - – Storage keys, hardware configuration information
+                - – Password protected / No dictionary attacks
+                - Hardware Security Module (HSM)
+                - Often used in large environments (Clusters, redundant power)
+                - High-end cryptographic hardware
+                - – Plug-in card or separate hardware device
+                - Key backup - Secured storage for servers
+                - – Lightweight HSMs for personal use
+                - (Smart card, USB, flash memory)
+                - Cryptographic accelerators
+                - – Offload that CPU overhead from other devices
+        - 3.4 - CPU Features 38
+            - Operating system technologies
+                - 32-bit vs. 64-bit - Processor specific
+                - 32-bit processors = 232 = 4,294,967,296 values
+                - 64-bit processors = 264 = 18,446,744,073,709,551,616 values
+                - – 4 GB vs. 17 billion GB
+                - – The OS has a maximum supported value
+                - Operating system technologies
+                - Hardware drivers are specific to the OS version (32-bit / 64-bit)
+                - – 32-bit (x86), 64-bit (x64)
+                - 32-bit OS cannot run 64-bit apps
+                - – But 64-bit OS can run 32-bit apps
+                - Apps in a 64-bit Windows OS
+                - – 32-bit apps: \Program Files (x86)
+                - – 64-bit apps: \Program Files
+                - Advanced RISC Machine (ARM)
+                - CPU architecture developed by Arm Ltd.
+                - – They design the chip, others license and build
+                - Simplified instruction set
+                - – Efficient and fast processing
+                - – Less power
+                - – Less heat
+                - Traditionally used for mobile and IoT devices
+                - – The lines are constantly blurring
+                - Processor cores
+                - Dual-core / Quad-core / Octa-core / Multi-core
+                - Multiple cores
+                - – Each core has its own cache
+                - – The entire chip may have a shared cache
+                - Multithreading
+                - Hyper-Threading Technology (HTT)
+                - One CPU, acts like two
+                - Doesn’t actually work as fast as two
+                - – 15% to 30% performance improvement
+                - Operating system must be written for HTT
+                - – Windows XP and later (any modern OS)
+                - Virtualization support
+                - Run other operating systems within a single
+                - hardware platform
+                - – Multiple operating systems share physical
+                - hardware components
+                - Virtualization in software was limited
+                - – Performance and hardware
+                - management challenges
+                - Virtualization added to the processor
+                - – Hardware is faster and easier to manage
+                - – Intel Virtualization Technology (VT)
+                - – AMD Virtualization (AMD-V)
+        - 3.4 - Expansion Cards 38
+            - Expansion cards
+                - Extend the functionality of your computer
+                - – You may need more than the motherboard
+                - provides
+                - Relatively simple process
+                - – Designed for end-user installation
+                - Install hardware - Add a card
+                - Install a driver - Software for the operating system
+                - Sound card
+                - Output
+                - – High-end audio
+                - – Advanced headphone amp
+                - – Home theater, Dolby decoding
+                - Multiple inputs
+                - – Music capture
+                - – Podcasting
+                - – Microphone
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 38
+                - [https://www.ProfessorMesser.com3.4](https://www.ProfessorMesser.com3.4) - Expansion Cards (continued)
+                - Video card
+                - Many CPUs include an integrated GPU
+                - – Video functionality is built into the CPU package
+                - Discrete graphics
+                - – The GPU is not part of the CPU
+                - Separate interface card - High performance
+                - Capture card
+                - Video as an input
+                - – Video capture, live streaming, external cameras
+                - High performance
+                - – Video bandwidths can be quite high
+                - – PCI Express connection
+                - Network Interface Card (NIC)
+                - Ethernet connection
+                - – Motherboard may not include a NIC
+                - – Onboard NIC may not be working
+                - Additional connections
+                - – Servers, routers, security devices
+            - Documentation
+                - Check the motherboard documentation
+                - – Number and type of slots
+                - Check the adapter card documentation
+                - – Minimum requirements - Hardware, software
+                - – Knowledge base - Any “gotchas?”
+                - – Support forums - What are other people saying?
+                - You may need to perform a driver installation before
+                - installing hardware
+                - Driver installation
+                - You checked the documentation first, right?
+                - Check the web for the latest version
+                - Uninstall previous drivers through Windows Device
+                - Manager
+                - Manufacturer provided setup program
+                - Manual installation through Windows Device Manager
+                - Check the Device Manager for the status - Does it work?
+        - 3.4 - Cooling 39
+            - Case fans
+                - Cool air is pulled through a personal computer
+                - – Always check for good airflow
+                - Motherboard layout becomes important
+                - Component location is key
+                - – Devices, wiring, power
+                - Many different sizes and styles
+                - – And volume levels
+                - On-board fans
+                - Designed to cool an entire adapter card
+                - Can be bulky
+                - – May take additional adapter card space
+                - Usually seen on high-end graphics cards
+                - Fan specifications
+                - Standard sizes
+                - – 80 mm, 120 mm, 200 mm, etc.
+                - Different speeds
+                - – Variable speed
+                - Different noise levels
+                - – Not all fans sound the same
+                - Heat sink
+                - Dissipate heat through thermal conduction
+                - – Copper or aluminum alloy
+                - Fins/grid increase surface area
+                - – Heat is then transferred to the cooler air
+                - They get HOT – don’t touch them!
+                - Thermal paste creates a good contact between the
+                - chip and the heat sink
+            - Fanless / passive cooling
+                - No fans, no noise - Silent operation
+                - Specialized functions
+                - – Video servers, TV set top box,
+                - satellite receiver, media server
+                - Functions are very controlled
+                - – Carefully measured thermal tests
+                - Low-power components - Heat sinks
+                - Thermal paste
+                - Thermal grease, conductive grease
+                - – Thermally conductive adhesive
+                - Place between the heat sink and the component
+                - – Improves thermal conductivity
+                - – Moves the heat away from the component
+                - A little bit goes a long way
+                - – Pea-sized application
+                - Thermal pad
+                - Conduct heat without the mess - Cut to size and install
+                - Easy to use - Won’t leak and damage components
+                - Almost as effective as thermal paste
+                - – But still very good
+                - Not reusable - Remove and replace
+                - Liquid cooling
+                - Coolant is circulated through a computer
+                - – Not a new concept
+                - – Automobiles, mainframe computers
+                - High-end systems
+                - Gaming, graphics
+                - Overclocking
+        - 3.5 - Computer Power 40
+            - WARNING
+                - Always disconnect from the power source when
+                - working on a device
+                - – Always. Seriously.
+                - – Some devices store a charge in capacitors
+                - – Know how to discharge before touching
+                - Never connect your body to any part
+                - of an electrical system
+                - – Do not connect yourself to the
+                - ground wire of an electrical system
+                - Respect electricity
+                - – It does not respect you
+                - Computer power supply
+                - Computer uses DC voltage
+                - – Most power sources provide AC voltage
+                - Convert 120 V AC or 240 V AC
+                - – To 3.3 V DC, 5 V DC, and 12 V DC
+                - You’ll know when this isn’t working
+                - – An important component
+                - Amp and volt
+                - Ampere (amp, A) – The rate of electron flow
+                - past a point in one second
+                - – The diameter of the hose
+                - Voltage (volt, V)Electrical “pressure”
+                - pushing the electrons
+                - – How open the faucet is
+                - Power
+                - Watt (W) – Measurement of real power use
+                - – volts * amps = watts
+                - – 120V * 0.5A = 60W
+                - Current
+                - Alternating current (AC)
+                - – Direction of current constantly reverses
+                - – Distributes electricity efficiently over long distances
+                - – Frequency of this cycle is important
+                - – US/Canada – 110 to 120 volts of AC (VAC), 60 hertz (Hz)
+                - – Europe – 220-240 VAC, 50 Hz
+                - Direct current (DC)
+                - – Current moves in one direction with a constant voltage
+                - Dual-voltage input options
+                - Voltage varies by country
+                - – US/Canada – 120 volts of AC (VAC), 60 hertz (Hz)
+                - – Europe – 230 VAC, 50 Hz
+                - Manually switch between 120 V and 230 V
+                - – Get your meter!
+                - – Or use an auto-switching power supply
+                - Don’t plug a 120 V power supply into
+                - a 230 V power source!
+                - Power supply output
+                - Different voltages
+                - – For different components
+                - Positive and negative voltage
+                - – Voltage is a difference in potential
+                - – The electrical ground is a common reference point
+                - – Depends on where you measure from
+                - At the front door of your house
+                - – The second floor is +10 feet
+                - – The basement is -10 feet
+                - +12 V
+                - – PCIe adapters, hard drive motors, cooling fans,
+                - most modern components
+                - +5 V
+                - – Some motherboard components
+                - – Many components are now using +3.3 V
+                - +3.3 V
+                - – M.2 slots, RAM slots, motherboard logic circuits
+                - +5 VSB
+                - – Standby voltage
+                - 12 V
+                - – Integrated LAN
+                - – Older serial ports
+                - – Some PCI cards
+                - -5 V
+                - – Available for ISA adapter cards
+                - – Most cards didn’t use it
+                - – Today’s motherboards
+                - don’t have ISA slots
+                - 24-pin motherboard power
+                - Main motherboard power
+                - – Provides +3.3 V, +/-5 V, and +/- 12 V
+                - 20 pin connector was the original ATX standard
+                - – 24 pin was added for PCI Express power
+                - You can connect a 24-pin connector to
+                - a 20-pin motherboard
+                - – Some cables are 20-pin + 4-pin
+                - Redundant power supplies
+                - Two (or more) power supplies
+                - – Internal to the server
+                - Each power supply can handle 100% of the load
+                - – Would normally run at 50% of the load
+                - Hot-swappable
+                - – Replace a faulty power supply without
+                - powering down
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 40
+                - [https://www.ProfessorMesser.com3.5](https://www.ProfessorMesser.com3.5) - Computer Power (continued)
+                - Power supply connectors
+                - Fixed connectors
+                - – Connected to the power supply
+                - – May have too many connectors
+                - – May not have enough
+                - Modular
+                - – Add cables as needed
+                - – Fewer leftover wires,better airflow
+                - – A bit more expensive
+                - Sizing a power supply
+                - Power supplies are rated by watts
+                - – Overall and by individual voltages
+            - Bigger isn’t necessarily better
+                - – More expensive
+                - – Doesn’t speed up your computer
+                - Physical size is relatively standard
+                - – Older cases and systems may have proprietary sizes
+                - Calculate the watts required for all components
+                - – CPU, storage devices, video adapter
+                - – Many online calculators
+                - Video adapters are usually the largest power draw
+                - – Many video card specifications list a recommended
+                - power supply wattage
+                - 50% capacity is a good rule of thumb
+                - – Power supply runs efficiently and there’s room to grow
+        - 3.6 - Multifunction Devices 41
+            - Multifunction devices (MFD)
+                - Some MFDs:
+                    - Printer
+                    - Scanner
+                    - Fax (yes, really)
+                    - Network connection
+                    - Phone line connection
+                    - Print from web
+                - There are a lot of things that can go wrong
+                    - – You’re going to fix them
+            - Unboxing a device
+                - These can be large devices
+                - – Make sure you have enough room
+                - – Stay out of walkways
+                - Check the area
+                - – Power
+                - – Network
+                - – Accessibility
+            - Printer drivers
+                - Specific to a printer model
+                - Get this exactly right
+                - Get the right operating system drivers
+                - – Windows 10, Windows 11
+                - – Get the right version of the operating system
+                - – 32-bit drivers are very different than 64-bit drivers
+                - You can’t mix and match drivers
+                - – It’s a very specific task
+            - PCL or PostScript
+                - PCL (Printer Command Language)
+                - – Created by Hewlett-Packard
+                - – Commonly used across the industry
+                - PostScript
+                - – Created by Adobe Systems
+                - – Popular with high end printers
+                - Make sure the drivers match the printer
+                - – PCL printer, PCL driver
+                - – PostScript printer, PostScript driver
+                - – Wired device sharing
+                - USB type B
+                - – The most common connector
+                - – USB Type B on the printer,
+                - USB Type A on the computer
+                - Ethernet - RJ45 connector
+                - May include more than one option
+            - Wireless device sharing
+                - Bluetooth
+                - – Limited range
+                - 802.11 Infrastructure mode
+                - – Many devices using an access point
+                - 802.11 Ad hoc mode
+                - – No access point
+                - – Direct link between wireless devices
+            - Sharing the printer
+                - Printer share
+                - – Printer is connected to a computer
+                - – The computer shares the printer
+                - – Computer needs to be running
+                - Print server
+                - – Print directly to the printer
+                - – Jobs are queued on the printer
+                - – Jobs are managed on the printer
+                - – Web-based front-end
+                - – Client utility
+            - Configuration settings
+                - Duplex
+                - – Save paper
+                - – Print on both sides of the page without manually
+                - flipping over the paper
+                - – Not all printers can do this
+                - Orientation
+                - – Portrait vs. Landscape
+                - – The paper doesn’t rotate
+                - – The printer compensates
+                - Tray settings
+                - – Printers can have multiple trays
+                - – Plain paper, letterhead, etc.
+                - – Choose the correct tray in the print dialog
+                - Quality
+                - – Resolution / Color, greyscale / Color saving
+            - Printer security
+                - User authentication
+                - – Everyone can print
+                - – Set rights and permissions
+                - – Printing vs. managing the printer
+                - Badging
+                - – Authenticate when using the printer
+                - – Your job doesn’t print until you use
+                - your employee badge
+                - – Quick and easy
+                - Audit logs
+                - – Cost management
+                - – Security monitoring
+                - – Event Viewer / System Events
+                - – May be built into the printer or print server
+                - Secured prints
+                - – Printer must support secure printing
+                - – Define a passcode
+                - – Use the passcode at the printer
+            - Flatbed scanner
+                - Different form factors
+                - – All-in-one multifunction device
+                - – Standalone flatbed
+                - May include an ADF
+                - – Automatic Document Feeder
+                - – Multiple pages
+            - Network scan services
+                - Scan to email
+                - – Scans are sent to your inbox
+                - – Large scans can fill up your mailbox
+                - Scan to folder
+                - – Using SMB (Server Message Block)
+                - – Send to a Microsoft share
+                - Scan to cloud
+                - – Cloud storage account
+                - – Google Drive, Dropbox, etc.
+        - 3.7 - Laser Printers 42
+            - Laser printer
+                - Combine a laser, high voltage, charged ions,
+                - powdered ink, heat, and paper
+                - Very high quality
+                - Fast printing speeds
+                - Very complex, many moving parts, requires on-printer
+                - memory and messy on the inside
+            - Imaging drum
+                - Image is drawn onto a photosensitive drum
+                - – “Painted” with a laser
+                - Picks up toner - Transfers toner to the paper
+                - Can be separate from the toner cartridge or combined
+            - Fuser assembly
+                - Heat and pressure - Melt plastic toner powder
+                - – Permanently bond toner to paper
+            - Transfer belt and roller
+                - Color laser printers
+                - – Cyan, yellow, magenta, black
+                - Four separate toner cartridges
+                - Image is transferred from all cartridges to the single belt
+                - – And then to a single transfer roller
+            - Pickup rollers
+                - Pickup paper - Should be a single page at a time
+                - – Problems if no paper is picked up
+                - or multiple sheets are picked
+                - Should be periodically cleaned or replaced
+            - Separation pad
+                - Pull just the top sheet from the paper tray
+                - – Not multiple sheets
+                - Small and inexpensive - Easy to clean or replace
+            - Duplexing assembly
+                - Printers usually print on a single side
+                - – Not both sides simultaneously
+                - Printing on both sides is a two step process
+                - – Print side one, print side two
+                - You need mechanisms to “flip” the page
+                - – Automatically
+                - Can be built-in to the printer
+                - Or available as an add-on
+            - Step 1: Processing
+                - Build the entire page in memory
+            - Step 2: Charging
+                - Prepare the drum with a negative electrostatic charge
+            - Step 3: Exposing
+                - Write the image with the laser
+            - Step 4: Developing
+                - Add toner to the charged areas of the imaging drum
+            - Step 5: Transferring
+                - Move the toner from the drum to the paper
+            - Step 6: Fusing
+                - Heat and pressure
+            - Step 7: Cleaning
+                - Remove excess toner
+        - 3.7 - Laser Printer Maintenance 43
+            - Replacing the toner cartridge
+                - Look for the messages
+                - – Low doesn’t mean empty
+                - The toner can also contain the OPC drum
+                - – Organic Photoconductor drum
+                - – Sensitive to light; keep it in the bag
+                - Power down the printer
+                - – Safety first
+                - Remove packing strips from the new drum
+                - – Replace it with the old
+            - Laser printer maintenance kit
+                - Laser printers wear out
+                - – All those moving parts
+                - – Heat and pressure
+                - Standard maintenance kits
+                - – Replacement feed rollers, new fuser unit, etc.
+                - When to perform maintenance?
+                - – Check the printer’s page counter
+                - Power down and replace the components
+                - – Fuser units are HOT
+                - Reset the page counter when you’re done!
+            - Replacing the toner cartridge
+                - Look for the messages
+                - – Low doesn’t mean empty
+                - The toner can also contain the OPC drum
+                - – Organic Photoconductor drum
+                - – Sensitive to light; keep it in the bag
+                - Power down the printer - Safety first
+                - Remove packing strips from the new drum
+                - – Replace it with the old
+            - Laser printer maintenance kit
+                - Laser printers wear out
+                - – All those moving parts
+                - – Heat and pressure
+                - Standard maintenance kits
+                - – Replacement feed rollers, new fuser unit, etc.
+                - When to perform maintenance?
+                - – Check the printer’s page counter
+                - Power down and replace the components
+                - – Fuser units are HOT
+                - Reset the page counter when you’re done!
+            - Laser printer calibration
+                - Different toner cartridges print with different densities
+                - – Some dark, some light
+                - Laser printer calibration can adjust the density
+                - – Makes it looks perfect
+                - Can be automated or a manual process
+                - – Every printer is different
+                - – Check the printer manual
+            - Laser printer cleaning
+                - Laser printers are dirty - All that toner and paper dust
+                - Check the manufacturer’s recommendations
+                - – Water, isopropyl alcohol (IPA)
+                - – Don’t use harsh chemicals!
+                - Outside - Damp cloth
+                - Inside - Wipe dust away
+                - – Don’t use a normal vacuum cleaner or compressed air
+                - – Wash off skin with cold water
+                - – Clean rollers with IPA
+        - 3.7 - Inkjet Printers 44
+            - Inkjet (ink-dispersion) printer
+                - Relatively inexpensive technology
+                - Quiet
+                - High-resolution
+                - Expensive ink
+                - – Proprietary
+                - Eventually fades
+                - Clogs easily
+            - Ink cartridge
+                - Place drops of ink onto a page
+                - – Pulled from a set of cartridges
+                - CMYK - Cyan, Magenta, Yellow, Key (black)
+            - Print head
+                - Some consumer printers integrate the print head
+                - into the ink cartridge
+                - – Change the cartridge, get a new print head
+                - Others separate the ink cartridge from the print head
+            - Feed rollers
+                - Pick up and feed paper through the printer
+                - – Must be clean and not worn
+                - Duplexing
+                - – Print on both sides of the paper
+                - – Included with some printers
+            - Carriage and belt
+                - Ink cartridges are moved over the paper
+                - – Carriage may include its own print head
+                - Belt moves the carriage back and forth
+                - – Another moving part
+            - Inkjet printer calibration
+                - Align nozzles to the paper
+                - – Lines should be crisp
+                - – Colors should align
+                - Printer includes a calibration option
+                - – May need to make minor adjustments
+        - 3.7 - Inkjet Printer Maintenance 44
+            - Cleaning print heads
+                - Small droplets of ink - And small holes in a print head
+                - Clogged heads is a big issue
+                - – Many printers automatically clean every day
+                - – Output has streaks or sections of missing color
+                - Cleaning process can be started manually
+                - – Only takes a few minutes
+                - Some print heads/cartridges can be removed
+                - – Manually cleaning may help
+            - Replacing inkjet cartridges
+                - Usually separate colors
+                - – Cyan, Magenta, Yellow, and Key (CMYK)
+                - – Some cartridges will combine these
+                - Takes seconds to replace
+                - – Takes a few minutes to calibrate and
+                - prepare the cartridge
+                - Recycle the empty cartridge - All plastic
+            - Inkjet printer calibration
+                - Align nozzles to the paper
+                - – Lines should be crisp
+                - – Colors should not overlap
+                - Printer includes a calibration option
+                - – May need to make minor adjustments
+            - Clearing jams
+                - Lots of turns and twists
+                - – A jam is inevitable
+                - Remove tray paper
+                - – Any loose paper
+                - Remove paper from the path
+                - – Firm pressure, don’t rip
+                - Check for any scraps of paper
+                - Remove all loose paper
+        - 3.7 - Thermal Printers 44
+            - Thermal printer
+                - White paper
+                - – Turns black when heated
+                - – No ink!
+                - VERY quiet
+                - – Almost silent
+                - Paper is sensitive to light and heat
+                - – And clear tape
+            - Feed assembly
+                - Pull paper through the printer
+                - – Relatively small paper path
+            - Heating element
+                - Full-length heating element
+                - – No moving print head
+            - Thermal paper
+                - Paper covered with a chemical
+                - – Changes color when heated
+                - Cash registers, credit card terminals
+                - – And quiet areas
+                - Looks like normal paper
+                - – Feels a bit different
+        - 3.7 - Thermal Printer Maintenance 45
+            - Thermal paper replacement
+                - Relatively inexpensive
+                - – But impossible to substitute
+                - Different sizes
+                - – Not like laser printer paper - Keep a list
+                - Actual replacement process is easy
+                - – Simple paper feed
+                - – Small device
+            - Cleaning the heating element
+                - Liquid cleaner
+                - – Isopropyl alcohol (IPA)
+                - – Get a cleaning pen
+                - – Check manufacturer’s recommendations
+                - Swab gently - Usually small areas
+                - Use a cleaning card
+                - – Cleans the head and paper pathways
+            - Removing debris
+                - Relatively small amount
+                - – Paper bits and dust
+                - – No toner!
+                - Blow out the printer
+                - – Take it outside
+                - Wipe it out
+                - – Damp cloth
+                - Avoid using a vacuum
+                - – Unless it’s designed for computers
+                - – Resists static buildup/discharge
+        - 3.7 - Impact Printers 45
+            - Dot-matrix (impact) printers
+                - Print head with a small matrix of pins
+                - – Presses against a ribbon to make a mark on paper
+                - Good for carbon/multiple copies
+                - Low cost per page
+                - NOISY
+                - Poor graphics
+                - Relatively niche use cases
+            - Dot-matrix printer head
+                - Moves back and forth
+                - – Pins hit ribbon and paper
+                - One matrix - Must move across the page to print
+            - Printer ribbon
+                - Fabric
+                - – One long ribbon - Never ending circle
+                - Easy to replace - Once single unit
+                - Proprietary size - Specific to printer model
+            - Tractor feed
+                - Paper pulled through with holes on the side of the paper
+                - – Instead of using friction
+                - Continuous paper feed
+                - – Perforations between pages
+                - Holes have to line up perfectly
+                - – Tractor paper can be perforated to remove holes
+        - 3.7 - Impact Printer Maintenance 45
+            - Printer ribbon replacement
+                - Single ribbon - Self-contained - One long circle
+                - Replace when ink becomes too light
+                - – Ink is eventually consumed
+                - Designed to be modular - Replace in less than a minute
+            - Print head replacement
+                - Takes a lot of abuse - Directly hits the ribbon and paper
+                - Gets hot - Watch your fingers
+                - – Another modular part - Look for a release lever or bar
+                - Replace with the ribbon for the best effect
+                - – The output should look perfect
+            - Printer ribbon replacement
+                - Single ribbon
+                - – Self-contained - One long circle
+                - Replace when ink becomes too light
+                - – Ink is eventually consumed
+                - Designed to be modular - Replace in less than a minute
+            - Print head replacement
+                - Takes a lot of abuse
+                - – Directly hits the ribbon and paper
+                - Gets hot - Watch your fingers
+                - – Another modular part
+                - – Look for a release lever or bar
+                - Replace with the ribbon for the best effect
+                - – The output should look perfect
+            - Replacing paper
+                - Not as easy as a laser printer
+                - – Paper must feed perfectly into holes
+                - – Tractor feed
+                - Forms must be positioned correctly
+                - – Text needs to fit a predefined space
+                - Paper must feed without constraint
+                - Make sure nothing is in the way
+        - 3.7 - 3D Printers 46
+            - 3D printers
+                - “Print” in three dimensions
+                - – Create a 3D item based on an electronic model
+                - Additive manufacturing
+                - – Build in layers to create the object
+                - – No machining process required
+                - Rapid prototyping
+                - – Design and create relatively quickly and inexpensively
+                - Deploy designs anywhere in the world
+                - – Or into space
+                - Filament printing
+                - Fused Deposition Modeling (FDM)
+                - – Melt filament to print 3D objects
+                - – This is probably the printing type you’ve seen
+                - Print a layer, move up,print another layer
+                - – Watch the printer create the object
+                - Good all-around printer
+                - – Larger print bed than resin printers
+                - – Easy to manage filament
+                - – Minimum of mess
+                - – Fewer disposal issues
+                - Resin printing
+                - Stereolithography (SLA) 3D Printing
+                - – Smooth and finely detailed 3D prints
+                - Resin is hardened using a light source
+                - – Ultraviolet light or a laser
+                - – Layers are added to the bottom
+                - – Entire print hangs from the build platform
+                - Resin must be handled properly
+                - – Wear protective gear
+                - – Take unused resin to your local
+                - hazardous materials disposal
+                - The print bed
+                - A flat adhesive surface
+                - – The foundation of a 3D print
+                - – Everything builds on that first layer
+                - Needs to be level and clean
+                - – Prints “stick” to the bed
+                - Filament printing
+                - – The print bed is the printing surface
+                - – Many different print bed options
+                - Resin printing
+                - – The “bed” is the location where the resin is
+                - hardened by the UV light
+    - 4.0 - Virtualization and Cloud Computing 46
+        - 4.1 - Cloud Models 46
+        - 4.1 - Cloud Characteristics 47
+        - 4.2 - Client-side Virtualization 47
+    - 5.0 - Hardware and Network Troubleshooting 48
+        - 5.1 - How to Troubleshoot 48
+            - {{Change}} management 
+                - 5.1.1.1 - {{Change}} control 
+                    - 5.1.1.2.1 A {{formal process}} for {{managing change}} 
+                    - 5.1.1.2.2 Avoid {{downtime, confusion, and mistakes}} 
+                    - 5.1.1.2.3 Corporate {{policy and procedures}} 
+                - 5.1.1.2 - {{Nothing changes}} without the {{process}} 
+                    - – Plan for a {{change}} 
+                    - – {{Estimate the risk}} associated with the change
+                    - – Have a {{recovery plan}} if the change doesn’t work
+                    - – {{Test before }}making the change
+                    - –{{ Document }}all of this and get approval
+                    - – {{Make}} the change
+            - {{Identify}} the {{problem}} 
+                - {{Information}} gathering
+                    - – Get as many details as possible
+                    - – Duplicate the issue, if possible
+                - {{Identify}} symptoms
+                    - – May be more than a single symptom
+                - {{Question}} users
+                    - – Your best source of details
+                - {{Determine}} if anything has changed
+                    - – Who’s in the wiring closet?
+                - Approach {{multiple problems}} individually 
+                    - – Break problems into {{smaller pieces}} 
+                - {{Backup}} everything
+                    - – You’re going to make some changes
+                    - – You should always have a {{rollback plan}} 
+                - What else has {{changed}}?
+                    - – The user may not be aware
+                    - – Environmental changes
+                    - – Infrastructure changes
+                - There may be some {{clues}} 
+                    - – Check {{OS log}} files
+                    - – Applications may have {{log information}} 
+            - {{Establish}} a theory
+                - {{Start with the obvious}} - Occam’s razor applies
+                - {{Consider everything}} - Even the not-so-obvious
+                - {{Make a list }}of all possible causes
+                    - – Start with the easy theories
+                    - – And the least difficult to test
+                - {{Research}} the symptoms
+                    - – Internal knowledge base
+                    - – Google searches
+            - {{Test}} the theory
+                - {{Confirm}} the theory
+                    - – Determine next steps to resolve problem
+                - Theory didn’t work?
+                    - – Re-establish new theory or escalate
+                    - – Call an expert
+                - The theory worked!
+                    - – Make a plan…
+            - {{Create}} a plan of action
+                - {{Build}} the plan
+                    - Correct the issue with a minimum of impact
+                - Refer to vendor{{ instructions}} 
+                    - Knowledge base, support articles
+                    - Documentation and manuals
+                - Identify potential {{effects}} 
+                    - Every plan can go bad
+                    - Have a plan B
+                    - And a plan C
+            - {{Implement}} the solution
+                - {{Fix}} the issue
+                    - Implement during the change control window
+                - {{Escalate}} as necessary
+                    - You may need help from a 3rd party
+            - {{Verify}} full system functionality
+                - It’s{{ not fixed }}until it’s really fixed
+                    - The test should be part of your plan
+                    - Have your customer confirm the fix
+                - Implement {{preventative}} measures
+                    - Let’s avoid this issue in the future
+            - {{Document}} findings
+                - It’s not over until you build the knowledge base
+                    - Don’t lose valuable knowledge!
+                - What action did {{you take}}?
+                    - What outcome did it have?
+                - Consider a formal database
+                    - Help desk case notes
+                    - Searchable database
+        - 5.2 - Troubleshooting Common Hardware Problems 50
+            - POST ({{Power On Self Test}})
+                - {{Test major system components}} before booting the operating system
+                    - – Main systems (CPU, CMOS, etc.)
+                    - – Video
+                    - – Memory
+                - Failures are usually noted with {{beeps and/or codes}} 
+                    - – BIOS versions can differ, check your documentation
+                - Don’t bother memorizing the beep codes
+                    - – They’re all different between manufacturers
+                    - – Know what to do when you hear them
+            - POST and boot
+                - Blank screen on boot
+                    - – Listen for {{beeps}} 
+                    - – Bad {{video, bad RAM, bad CPU}} 
+                    - – {{BIOS}} configuration issue
+                - BIOS time and setting
+                    - – Maintained with the motherboard {{battery}} 
+                    - – Replace the {{battery}} 
+                - Attempts to boot to {{incorrect device}} 
+                    - – Set boot order in BIOS configuration
+                    - – Confirm that the startup device has a valid operating system
+                    - – Check for media in a startup device
+            - Crash screens
+                - {{Windows Stop Error}} or{{ Blue Screen of Death}} 
+                - Contains important information
+                    - – Also written to {{event log}} 
+                - Useful when tracking down problems
+                    - – Sometimes more useful for manufacturer support
+            - Bluescreens and spontaneous shutdowns
+                - Startup and shutdown BSOD
+                    - – Bad hardware, bad drivers, bad application
+                - Use Last Known Good, System Restore, or Rollback Driver
+                    - – Try Safe Mode
+                - Reseat or remove the hardware - If possible
+                - Run hardware diagnostics
+                    - – Provided by the manufacturer
+                    - – BIOS may have hardware diagnostics
+            - The spinning ball of death
+                - The macOS {{X Spinning Wait Cursor}} 
+                    - – Feedback that something is happening
+                - The spin starts, but it never stops
+                    - – You never get back control of your computer
+                - Many possible reasons
+                    - – Application bug
+                    - – Bad hardware
+                    - – Slow paging to disk
+                - Restart the computer
+                    - – There may be details in the console logs
+            - Black screen
+                - Is the monitor {{connected}}?
+                    - – We wouldn’t ask if it wasn’t a common solution
+                    - – Check both {{power and signal}} cable
+                - Input selection on monitor - HDMI, DVI, VGA, etc.
+                - Image is dim - Check {{brightness controls}} 
+                - Swap the monitor
+                    - – Try the monitor on another computer
+                - No video after Windows loads
+                    - – Use VGA mode (F8)
+            - No power
+                - No power
+                    - – No power at the source
+                    - – No power from the power supply
+                    - – Get out your {{multimeter}} 
+                - Fans spin - no power to other devices
+                    - – Where is your fan power connected?
+                    - – No POST - bad {{motherboard}}?
+                    - – Case fans have lower voltage requirements
+                    - – Check the power supply output
+            - Sluggish performance
+                - {{Task Manager }}– Check for high CPU utilization and I/O
+                - {{Windows Update }}– Latest patches and drivers
+                - {{Disk space}} – Check for available space and defrag
+                - Laptops may be using {{power-saving mode}} – Throttles the CPU
+                - Anti-virus and anti-malware – {{Scan for bad guys}} 
+            - Overheating
+                - Heat generation
+                    - – CPUs, video adapters, memory
+                - Cooling systems
+                    - – Fans and airflow
+                    - – Heat sinks
+                    - – Clean and clear
+                - Verify with monitoring software
+                    - – Built into the BIOS
+                    - – Try HWMonitor
+                    - – [http://www.cpuid.com/](http://www.cpuid.com/)
+            - Smoke and burning smell
+                - {{Electrical}} problems
+                    - – The smoke makes everything work
+                - {{Always}} disconnect power
+                    - – There should never be a burned odor
+                - {{Locate }}bad components
+                    - – Even after the system has cooled down
+                    - – Replace all damaged components
+            - Intermittent shutdown
+                - No warning, {{black screen}} 
+                    - – May have some details in your {{Event Viewer}} 
+                - {{Heat}}-related issue
+                    - – High CPU or graphics, gaming
+                    - – Check all fans and heat sinks
+                    - – BIOS may show fan status and temperatures
+                - Failing {{hardware}} 
+                    - – Has anything changed?
+                    - – Check Device Manager, run diagnostics
+                - Could be anything
+                    - – Eliminate what’s working
+            - Application crashes
+                - Application stops working
+                    - – May provide an error message
+                    - – May just disappear
+                - Check the Event Log
+                    - – Often includes useful reconnaissance
+                - Check the {{Reliability}} Monitor
+                    - – A history of application problems
+                    - – Checks for resolutions
+                - Reinstall the application
+                    - – Contact application support
+            - Grinding noises
+                - Computers should {{hum, not grind}} 
+                - Rattling - {{Loose components}} 
+                - Scraping - {{Hard drive issues}} 
+                - Clicking - {{Fan problems}} 
+                - Pop - {{Blown capacitor}} 
+            - Lockups
+                - System completely stops
+                    - – Completely. Usually not much in the event log
+                    - – Similar to unexpected shutdowns
+                - Check for any activity
+                    - – Hard drive, status lights, try Ctrl-Alt-Del
+                - Update drivers and software patches
+                    - – Has this been done recently?
+                - Low resources - RAM, storage
+                - Hardware diagnostics may be helpful
+            - Continuous reboots
+                - How far does the boot go before rebooting?
+                    - – BIOS only? OS splash screen?
+                - Bad driver or configuration
+                    - – F8, “Boot from last known working configuration”
+                - Try F8, Safe Mode
+                    - – If system starts, disable automatic restarts in System Properties
+                - Bad hardware
+                    - – Try removing or replacing devices
+                    - – Check connections and reseat
+            - Inaccurate system date/time
+                - Bad motherboard battery
+                    - – Often a “button” style battery
+                - A bad battery will require a BIOS configuration or date/time configuration on every boot
+                - On older systems, can reset the BIOS configuration by removing the battery
+                    - – Newer computers use a jumper
+        - 5.3 -  Troubleshooting Storage Devices 51
+            - Storage failure symptoms
+                - Read/write failure
+                    - – “Cannot read from the source disk”
+                - Slow performance
+                    - – Constant LED activity - Retry...retry...retry
+                - Loud clicking noise
+                    - – The click of death
+                    - – May also include grinding and scraping
+                - Troubleshooting disk failures
+                    - Get a backup - First thing - a bad drive is bad
+                    - Check for loose or damaged cables
+                    - Check for overheating
+                        - – Especially if problems occur after startup
+                    - Check power supply
+                        - – Especially if new devices were added
+                    - Run hard drive diagnostics
+                        - – From the drive or computer manufacturer
+                        - – Preferably on a known-good computer
+                - Boot failure symptoms
+                    - Drive not recognized, Boot Device Not Found
+                        - {{Lights (or no lights)}}, {{Beeps}}, {{Error messages}} 
+                    - Operating system not found
+                        - – The {{drive}} is there
+                        - – Windows is {{not}} 
+                - Troubleshooting boot failures
+                    - Check your {{cables}} – {{Physical problem}} 
+                    - Check boot sequence in {{BIOS}} 
+                        - – Check for removable disks (especially USB)
+                        - – Check for disabled storage interfaces
+                    - For new installation, check hardware configuration
+                        - – Data and power cables
+                        - – Try different SATA interfaces
+                    - Try the drive in a different computer
+            - 5.3 - Troubleshooting Storage Devices (continued)
+                - Data loss/corruption
+                    - Hard drives are mechanical devices
+                        - – They will {{eventually fail}} 
+                    - Repairs are difficult and expensive
+                        - – Dust-free environment
+                        - – Not always successful
+                    - An SSD may simply stop working
+                        - – Sometimes can read but not write
+                    - Data becomes unavailable or corrupted
+                        - – Can be impossible to recover
+                    - ALWAYS HAVE A {{BACKUP}} 
+                - {{RAID not found}} - Missing or faulty {{RAID controller}} 
+                - RAID stops working
+                    - Each RAID is different
+                        - – Don’t start pulling drives until you check the console!
+                - {{S.M.A.R.T.}} {{Self-Monitoring, Analysis, and Reporting Technology}} 
+                    - – Use third-party utilities
+                    - Avoid {{hardware failure}} - Look for {{warning signs}} 
+                    - Schedule disk checks - Built-in to most drive arrays
+                    - Warning signs - Replace a drive
+                - Extended read/write times
+                    - A lot happens when reading or writing data
+                        - – Memory access, communication across the bus, spinning drive access, writing or reading the data to the storage device, etc.
+                    - Delays can occur anywhere along the way
+                        - – Need a way to measure storage device access
+                    - Input/output operations per second (IOPS)
+                        - – A broad metric of maximum performance
+                    - Useful for comparing storage devices
+                        - – Hard drive: 200 IOPS
+                        - – SSD: 1,000,000 IOPS
+                - Missing drives in OS
+                    - OS boots normally – Other drives not shown - Check the {{BIOS}} 
+                    - {{Internal drives}} – {{Bad drive}} or {{disconnected cable}} 
+                    - {{External drives}} – {{No power to the drive}} or {{bad cable connection}} 
+                    - Network shares
+                        - – Shared drives can be connected during startup
+                        - – Option to reconnect at sign-in
+                        - – Connected with login script
+        - 5.4 - Troubleshooting Video and Display Issues 52
+            - No video image
+                - Is it connected?
+                - – We wouldn’t ask if it wasn’t a real solution
+                - – Check both power and signal cable
+                - Input selection on monitor
+                - – HDMI, DVI, VGA, etc.
+                - Image is dim
+                - – Check brightness controls
+                - Swap the monitor
+                - – Try the monitor on another computer
+                - No video after Windows loads
+                - – Use VGA mode (F8)
+                - Image quality problems
+                - Flickering, color patterns incorrect
+                - – You can almost work with this
+                - Check the cable pins
+                - – Especially if missing a color
+                - Distorted image and geometry
+                - – Check the OS refresh rate and resolution settings
+                - – Need to match the display specifications
+                - – Check or replace cable
+                - Disable hardware acceleration
+                - – Troubleshoot with the software drivers
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 52
+                - [https://www.ProfessorMesser.com5.4](https://www.ProfessorMesser.com5.4) - Troubleshooting Video and Display Issues (continued)
+                - Native resolution
+                - An LCD display is fixed
+                - – The number of pixels doesn’t change
+                - A display looks best when the video settings match
+                - a display’s native resolution
+                - – A mismatch can cause distortion
+                - If changing the display resolution,try using a multiple
+                - of the native resolution
+                - – 2560 x 1600 is the same ratio as 1920 x 1200
+                - Burn-in
+                - A problem across all monitor types
+                - – Some displays will pixel-shift
+                - – You probably won’t notice it
+                - LCDs have “image sticking”
+                - – Try to remove by displaying a white screen for an
+                - extended period
+                - Dead pixels
+                - Always black
+                - – A manufacturing defect
+                - This probably isn’t a problem on your side
+                - – Not a cable or power issue
+                - Clean the monitor screen
+                - – Damp cloth
+                - You’ll have to replace the monitor
+                - – No other option
+                - Flashing screen
+                - Check the video cable connections
+                - – A loose cable will cause loss of signal
+                - Replace the video cable
+                - – Usually a quick fix
+                - The problem could be with the monitor
+                - – Try switching the display
+                - Confirm the display settings in the operating system
+                - – May not match the monitor
+                - Incorrect color display
+                - Colors may not be properly represented
+                - – Too much red, green, blue, yellow, etc.
+                - Monitor settings
+                - – Tint
+                - – Custom color presets
+                - – Factory Reset
+                - Driver configuration
+                - – Color tint
+                - OS configuration - Very blue
+                - – Night light settings
+                - Audio issues
+                - Many monitors include speakers
+                - – No sound, low volume
+                - Monitor may have audio controls
+                - – Check volume levels and mute status
+                - Confirm audio input over HDMI, DisplayPort, or
+                - Thunderbolt
+                - – Check the HDMI audio output in the OS
+                - The monitor may support other audio input interfaces
+                - – Check for audio jacks
+                - Dim image
+                - Monitor video settings
+                - – Brightness
+                - – Contrast
+                - Check the OS
+                - – Auto-dimming
+                - – Dim on battery power
+                - – Driver settings
+                - Backlight failure
+                - – Some or all of the light
+                - – May only be a section of the screen
+                - LCD projector troubleshooting
+                - Large screen projection
+                - – Conference rooms, large gatherings
+                - Not always LCD
+                - – But common to see LCD
+                - Metal-halide lamp
+                - – Very bright (very hot) light
+                - – Relatively expensive
+                - – (~ $35 to $350+ US)
+                - Always let bulbs cool
+                - – Fan will run after shutting off
+                - – Keep it plugged in
+                - Intermittent projector shutdown
+                - – No light output
+                - – Fans may continue to run
+                - Cooling issue
+                - – Fans constantly cool the bulb
+                - – Shuts down if temperatures are high
+                - Check the airflow
+                - – Remove any blockages
+                - – Clean dust from the air filters and external
+                - air input/output
+        - 5.5 - Troubleshooting Mobile Devices 54
+            - Poor battery health
+                - Replace aging battery
+                - – There’s only so many recharges
+                - Bad reception
+                - – Always searching for signal
+                - – Airplane mode on the ground
+                - Disable unnecessary features
+                - – 802.11 wireless, Bluetooth, GPS
+                - Check application battery usage
+                - – iOS and iPadOS: Settings/Battery
+                - – Android: Settings/Battery
+                - Swollen battery
+                - Buildup of gas
+                - – Designed to self-contain
+                - – Do NOT open the battery packet/container
+                - – Significant fire risk
+                - – You’ll be sorry
+                - Faulty battery
+                - – Stop using immediately
+                - – Dispose of properly
+                - Device can be damaged
+                - – Better than having a fire
+                - Broken screen
+                - Time for a backup - Do this first!
+                - Replace the screen - No easy fixes
+                - The glass is sharp
+                - – Screen protectors can help
+                - – Use clear tape until repaired
+                - Improper charging
+                - Check everything in the charging process
+                - – Cables, interfaces
+                - Check the cable interface
+                - – Remove any obstructions
+                - Check the cable
+                - – Don’t use frayed or damaged cables
+                - – Try a known-good cable
+                - Verify the power adapter
+                - – Check with a multimeter
+                - Poor or no connectivity
+                - Cellular or Wi-Fi
+                - – Location, location, location
+                - Cellular
+                - – Signal strength
+                - – Location matters
+                - – Outdoor connectivity may be better
+                - Wi-Fi
+                - – Limited range
+                - – Interference can limit throughput
+                - – May need a channel/frequency configuration change
+                - Liquid damage
+                - Many phones have a Liquid Contact Indicator (LCI)
+                - – Turns color when liquid has been present
+                - Power down the phone
+                - – Don’t power it back on. Don’t do it.
+                - Remove the case, cards, back, and battery
+                - – If possible
+                - Putting the phone in a bag of rice doesn’t
+                - actually work very well
+                - – Silica gel is better
+                - Leave it alone
+                - – Don’t turn it on
+                - – Do not charge the phone
+                - – Don’t connect it to power
+                - – Don’t press any keys
+                - – Don’t heat the phone
+                - – Don’t move it around
+                - Wait at least a day
+                - – Or until the phone appears to be dry
+                - – And then perhaps a few hours after that
+                - Once you’re sure, power it on
+                - – Hope for the best
+                - Overheating
+                - Phone will automatically shut down
+                - – Avoid overheating damage
+                - Charging/discharging the battery, CPU usage,
+                - display light
+                - – All of these create heat
+                - Check app usage
+                - – Some apps can use a lot of CPU
+                - Avoid direct sunlight
+                - – Quickly overheats
+                - Digitizer issues
+                - Touchscreen completely black or
+                - not responding to input
+                - – Screen presses do not register
+                - Apple iOS reset
+                - – Press power button, slide to power off,
+                - press power button
+                - – Hold down power button and Home|Volume
+                - for 10 seconds
+                - Android device restart
+                - – Remove battery, put back in, power on
+                - – Hold down power and volume down until restart
+                - – Some phones have different key combinations
+                - – Some phones do not have a key-based reset
+                - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1101 A+ Course Notes - Page 54
+                - [https://www.ProfessorMesser.com5.5](https://www.ProfessorMesser.com5.5) - Troubleshooting Mobile Devices (continued)
+                - Physically damaged ports
+                - External interface - Charging and data transfer
+                - Rough handling and accidents
+                - – Damages the interface
+                - Not charging - Look closely
+                - Not modular - Requires a system board replacement
+                - Malware
+                - Always a concern
+                - – Even on mobile devices
+                - – The device type doesn’t matter
+                - Look for symptoms
+                - – Unusual apps, large data transfers, pop up messages,
+                - high CPU usage, device overheating, excessive
+                - battery use
+                - Try a security app or scanner
+                - – Identify malware infections
+                - Cursor drift
+                - Random input or cursor moves without
+                - touching the device
+                - – Common on older screens
+                - Use a touch calibration app
+                - – Requires user input
+                - – Touch certain areas of the screen
+                - The system will adjust to the new calibration parameters
+                - – No more drift
+        - 5.6 - Troubleshooting Printers 55
+            - Testing the printer
+                - Print or scan a {{test page}} 
+                    - – Built into Windows, not the application
+                - Use diagnostic tools
+                    - – Web-based utilities built into the printer
+                    - – Vendor specific
+                    - – Generic utilities
+            - Bad output
+                - {{Lines}} down the printed page
+                    - – {{Inkjet}}: {{Clean}} print{{ heads}} 
+                    - – {{Laser}}: {{Check}} for {{scratched}} photosensitive {{drum}} 
+                - {{Faded}} prints, {{blank}} pages - Low {{toner or ink}} 
+                - Double/echo images or speckling
+                    - – {{Laser}} printer optical {{drum}} {{not cleaned properly}} 
+                    - – {{Ghost or “shadow”}} from previous {{drum}} rotation
+            - Garbled print
+                - Bad printer {{driver }}/ wrong {{model}} 
+                    - – Incorrect page description language (PCL or PostScript?)
+                - Verify the printer functionality
+                    - – Check with a test page
+                - Bad application
+                    - – Check the output
+                    - – Upgrade the application
+            - {{Toner}} not sticking to the paper
+                - {{Laser}} printer output {{smudges}} everywhere
+                    - – Toner sticks to everything
+                - Toner not fused to the paper
+                    - – Toner should be permanently melted and pressed
+                    - – May not be hot
+                - {{Fuser }}problem{{ - Replace the fuser}} assembly
+            - Incorrect paper size
+                - Print a letter size page
+                    - – Accidentally send it to a legal size paper tray
+                - Printer stops and shows a message
+                    - – Gives you a chance to fix the issue
+                - Tray selection is provided during the printing process
+                    - – Try printing again
+                    - – Change the defaults in the printer configuration
+            - Paper jam
+                - Careful when removing
+                    - – Don’t rip the paper
+                    - – Don’t damage internal components
+                - Paper not feeding or misfeeds multiple pages
+                    - – Check the {{tray}} 
+                    - – {{Pickup rollers}} are part of a {{laser printer maintenance}} kit
+                - Creased paper
+                    - – Problems in the paper path
+                    - – Check the paper weight
+            - Multiple prints pending in queue
+                - Corrupted print jobs
+                    - – Print spooler will crash
+                    - – Most spooler configuration will automatically restart
+                - Problems are logged
+                    - – Windows Event Viewer,Windows-PrintService
+                - One job may be causing the issue
+                    - – Monitor the queue for details
+            - Incorrect color settings
+                - The output colors aren’t the same as the display
+                    - – Important for publishing and color printing
+                - Calibrate the monitor
+                    - – A third-party calibration tool will help
+                - Check the paper
+                    - – Bright white paper provides good color representation
+                - Calibrate the printer
+                    - – The proper amount of ink and toner
+            - Grinding noises
+                - Never a good sound from your printer
+                    - – The ink is already manufactured
+                - Something is not operating properly
+                    - – {{Paper jam}} - {{Carriage}} is stalled or jammed
+                - Each printer has a different process
+                    - – Check the manuals for removing paper jams
+                    - – Some inkjet printers have a particular process
+                - May require additional maintenance
+                    - – Or replace the printer
+            - Finishing issues
+                - Finishing happens after the ink or toner has been applied
+                    - – Collate, binding, etc.
+                - Staple jams
+                    - – Larger printers will collate and staple groups of papers
+                    - – Each printer manufacturer has a different removal process
+                - Incorrect hole punch location
+                    - – Verify with the printer driver
+                    - – May require a driver update
+            - Incorrect page orientation
+                - Print a portrait page - Get a landscape print
+                - Check the settings when printing
+                    - – Controlled by the print driver
+                    - – May require a driver update
+                - The printer also has a default setting
+                    - – Check the settings on the printer console
+        - 5.7 - Troubleshooting Networks 57
+            - No network connectivity
+                - Do you have a {{link}} light?
+                    - – Is it {{plugged}} in?
+                - Ping {{loopback}} ({{127.0.0.1}})
+                    - – Is the protocol stack working?
+                    - – Availability and intermittent connectivity
+                - Ping {{local IP}} address
+                    - – Checks {{local configuration}}, {{adapter}}, and {{link signal}} 
+                - Ping {{default}} gateway
+                    - – Connectivity on the {{local network}} 
+                - Ping devices on router’s other side
+                    - – 8.8.8.8 or 9.9.9.9
+            - Intermittent wireless connectivity
+                - {{Interference}} 
+                    - – Something else is using our frequency
+                - {{Signal }}strength
+                    - – Transmitting signal, transmitting antenna, receiving antenna, etc.
+                - Incorrect channel
+                    - – Usually automatic; look for manual tuning
+                - Bounce and latency
+                    - – Multipath interference; flat surfaces
+                - Incorrect access point placement
+                    - – Locate close to the users
+            - Wireless interference
+                - Predictable
+                    - – Fluorescent lights
+                    - – Microwave ovens
+                    - – Cordless telephones
+                    - – High-power sources
+                - Unpredictable
+                    - – Multi-tenant building
+                - Measurements
+                    - – Signal to noise ratio (SNR)
+                    - – Performance Monitor
+            - Signal to noise ratio (SNR)
+                - Signal
+                    - – What you want
+                - Noise
+                    - – What you don’t want
+                    - – Interference from other networks and devices
+                - You want a very large ratio
+                    - – The same amount of signal to noise (1:1) would be bad
+            - Limited or no connectivity
+                - Windows alert in the system tray
+                    - – “Limited or No connectivity”
+                    - – “No Internet Access”
+                - Check the local IP address
+                    - – An {{APIPA }}address will only have {{local }} connectivity
+                - If {{DHCP}} address is obtained, perform the {{ping}} tests
+                    - – Local gateway, remote IP address
+            - Jitter
+                - Most real-time media is sensitive to delay
+                    - – Data should arrive at regular intervals
+                    - – Voice communication, live video
+                - If you miss a packet, there’s no retransmission
+                    - – There’s no time to “rewind” your phone call
+                - Jitter is the time between frames
+                    - – Excessive jitter can cause you to miss information, “choppy” voice calls
+            - Poor VoIP quality
+                - High speed and low latency
+                    - – Real-time applications are demanding
+                - Check the Internet connection
+                    - – A speed test can identify slow links
+                - Verify the local networking equipment
+                    - – An old router can cause significant problems
+                - View the network performance
+                    - – A packet capture would be useful
+            - Latency
+                - A delay between the request and the response
+                    - – Waiting time
+                - Some latency is expected and normal
+                    - – Laws of physics apply
+                - Examine the response times at every step along the way
+                    - – This may require multiple measurement tools
+                - {{Packet captures}} can provide detailed analysis
+                    - – Microsecond granularity
+                    - – Get captures from both sides
+            - Port flapping
+                - Network interface goes up and down
+                    - – Over and over again
+                - Verify the cable
+                    - – Check the wiring
+                - Move between switch interfaces
+                    - – Is the flapping associated with the switch interface or the device?
+                - Replace bad hardware or cables
+                    - – May require additional purchases
+- Core 2 (220-1102)
+    - 1.0 - Operating Systems - 31% 1p
+        - 1.1 - An Overview of Windows
+            - Windows on the Core 2 exam
+            - 
+            - 220-1102 exam released in January 2022
+            - – Two Windows versions available
+            - – Windows 10 and Windows 11
+            - 
+            - 
+            - 
+            - CompTIA considers all in-support Windows versions to
+            - be in scope for the exam
+            - – Mainstream support is 5 years after release
+            - Windows versions are listed in the objectives
+            - – Everything else includes both Windows 10 and 11
+            - Fortunately, these are remarkably similar
+            - – Once you know one, you effectively know the other!
+            - Windows 10
+            - 
+            - Released on July 29, 2015 - We skipped Windows 9
+            - 
+            - A single platform
+            - – Desktops, laptops, tablets, phones, all-in-one devices
+            - 
+            - Ongoing updates
+            - – More than twelve different released versions
+            - – November 2021 (Version 21H2)
+            - Windows 10 Home
+            - 
+            - Home user - Retail sales
+            - 
+            - 
+            - Integration with Microsoft account
+            - – Microsoft OneDrive backup
+            - Windows Defender
+            - – Anti-virus and anti-malware
+            - 
+            - Cortana - Talk to your operating system
+            - Windows 10 Pro
+            - 
+            - The business version of Windows
+            - – Additional management features
+            - 
+            - Remote Desktop host
+            - – Remote control each computer
+            - 
+            - BitLocker - Full disk encryption (FDE)
+            - 
+            - Join a Windows domain
+            - – Group Policy management
+            - Windows 10 Pro for Workstations
+            - 
+            - An edition for high-end desktops
+            - – Enhanced performance and storage options
+            - 
+            - More physical CPUs - Up to four
+            - 
+            - High maximum RAM - Supports up to 6 TB
+            - 
+            - Support for ReFS - Resilient File System
+            - – Same as Windows Server
+            - Windows 10 Enterprise
+            - 
+            - Built for large implementations
+            - – Volume licensing
+            - 
+            - AppLocker - Control what applications can run
+            - 
+            - BranchCache - Remote site file caching
+            - 
+            - Granular User Experience (UX) control
+            - – Define the user environment
+            - – Useful for kiosk and workstation customization
+        - 1.1 - Windows Features
+            - Windows at work
+            - 
+            - Large-scale support
+            - – Thousands of devices
+            - 
+            - 
+            - 
+            - Security concerns
+            - – Mobile devices with important data
+            - – Local file shares
+            - Working on a spreadsheet
+            - – Watching a movie
+            - Geographical sprawl - Cache data between sites
+            - Domain Services
+            - 
+            - Active Directory Domain Services
+            - – Large database of your network
+            - 
+            - Distributed architecture
+            - – Many servers - Not suitable for home use
+            - 
+            - Everything documented in one place
+            - – User accounts, servers, volumes, printers
+            - 
+            - Many different uses
+            - – Authentication, centralized management
+            - Organizing network devices
+            - 
+            - Windows Workgroups
+            - – Logical groups of network devices
+            - – Each device is a standalone system, everyone is a peer
+            - 
+            - Windows Domain
+            - – Business network
+            - – Centralized authentication and device access
+            - – Supports thousands of devices across many networks
+            - Desktop styles
+            - 
+            - Your computer has many different uses
+            - – Those change depending on where you are
+            - 
+            - Work
+            - – Standard desktop
+            - – Common user interface
+            - – Customization very limited
+            - – You can work at any computer
+            - 
+            - Home
+            - – Complete flexibility
+            - – Background photos, colors, UI sizing
+            - – Centralized authentication and device access
+            - – Supports thousands of devices across many networks
+            - Availability of RDP
+            - 
+            - Remote Desktop Protocol
+            - – View and control the desktop of a remote device
+            - 
+            - RDP client
+            - – Connects to a Remote Desktop Service
+            - – Clients available for almost any operating system
+            - 
+            - Remote Desktop Service
+            - – Provides access for the RDP client
+            - – Available in Windows 10 Pro and Enteprise
+            - – Not available in Windows 10 Home
+        - 1.1 - Windows Upgrades
+            - Why upgrade?
+            - 
+            - Upgrade vs. Install
+            - – Upgrade - Keep files in place
+            - – Install - Start over completely fresh
+            - 
+            - Maintain consistency
+            - – Customized configurations
+            - – Multiple local user accounts
+            - 
+            - Upgrades save hours of time
+            - – Avoid application reinstall
+            - – Keep user data intact
+            - – Get up and running quickly
+            - Upgrade methods
+            - 
+            - In-place
+            - – Upgrade the existing OS
+            - – Keeps all applications, documentations, and settings
+            - – Start the setup from inside the existing OS
+            - RAM support limitations
+            - 
+            - RAM support varies between editions
+            - – More advanced editions allow additional RAM
+            - BitLocker and EFS
+            - 
+            - Data confidentiality
+            - – Encrypt important information
+            - 
+            - Encrypting File System
+            - – Protect individual files and folders
+            - – Built-in to the NTFS file system
+            - 
+            - BitLocker
+            - – Full Disk Encryption (FDE)
+            - – Everything on the drive is encrypted
+            - – Even the operating system
+            - 
+            - Home and business use
+            - – Especially on mobile devices
+            - Group Policy editor
+            - 
+            - Centrally manage users and systems
+            - – Policies can be part of Active Directory or
+            - a local system
+            - 
+            - Local Group Policy
+            - – Manages the local device
+            - – gpedit.msc
+            - 
+            - Group Policy Management Console
+            - – Integrated with Active Directory
+            - – Powerful system management
+            - – gpmc.msc
+            - 
+            - Clean install
+            - – Wipe everything and reload
+            - – Backup your files
+            - – Start the setup by booting from the installation
+            - media
+            - Upgrading Windows
+            - 
+            - Upgrade from the Windows installation media
+            - – Downloadable versions are available from Microsoft
+            - – Includes a media creation tool
+            - 
+            - You cannot upgrade x86 to x64
+            - – Or x64 to x86
+            - – Applies to all Windows versions
+            - – You’ll have to migrate instead
+            - Upgrade paths
+            - 
+            - Many upgrades are between similar editions
+            - – Or higher-level Windows editions
+            - 
+            - In-place upgrade paths to Windows 10
+            - – Windows 7, Windows 8.1 (not Windows 8.0)
+            - 
+            - In-place upgrade paths to Windows 11
+            - – Windows 10
+            - Post-installation
+            - 
+            - Does it work?
+            - – If it doesn’t boot, there are bigger problems
+            - 
+            - Some testing is useful for unknown hardware configurations
+            - – Start > Settings > System > Recovery > Go back
+            - 
+            - Additional installations
+            - – Service packs, security patches, security applications,
+            - driver updates, application updates
+        - 1.2 - Windows Command Line Tools
+            - Privileges
+            - 
+            - Not all users can run all commands
+            - – Some tasks are for the administrator only
+            - 
+            - Standard privileges
+            - – Run applications as normal user
+            - – This works fine for many commands
+            - 
+            - Administrative/elevated privileges
+            - – You must be a member of the Administrators group
+            - – Right-click Command Prompt,
+            - choose Run as Administrator
+            - – cmd, Ctrl+Shift+Enter
+            - Command line troubleshooting
+            - 
+            - Use “help” if you’re not sure
+            - > help dir
+            - > help chkdsk
+            - 
+            - Also use:
+            - [command] /?
+            - – Close the prompt with exit
+            - File management
+            - 
+            - dir
+            - – List files and directories
+            - 
+            - cd / chdir
+            - – Change working directory
+            - – Use backslash \ to specify volume or folder name
+            - 
+            - ..
+            - – Two dots/periods
+            - – The folder above the current folder
+            - 
+            - md / mkdir
+            - – Make a directory
+            - 
+            - rd / rmdir
+            - – Remove directory
+            - Drive letters
+            - 
+            - Each partitions is assigned a letter
+            - – Primary storage drive is usually C
+            - 
+            - Reference the drive with the letter and a colon
+            - – C:
+            - 
+            - Combine with the folder
+            - – Folder names are separated with backslashes
+            - – C:\Users\professor
+            - hostname
+            - 
+            - View the name of the device
+            - – This is very useful when there are 10 different
+            - terminal screen tabs in use
+            - 
+            - This is the Windows Device name
+            - – Name can be changed in the System settings
+            - format
+            - 
+            - Formats a disk for use with Windows
+            - 
+            - format c:
+            - copy (/v, /y)
+            - 
+            - Copy files from one location to another
+            - /v - Verifies that new files are written correctly
+            - /y - Suppresses prompting to confirm you want to
+            - overwrite an existing destination file
+            - xcopy
+            - 
+            - Copies files and directory trees
+            - xcopy /s Documents m:\backups
+            - Robust Copy
+            - 
+            - robocopy
+            - – A better Xcopy
+            - – Included with Windows 10 and 11
+            - Managing Group Policy
+            - 
+            - Group Policy
+            - – Manage computers in an Active Directory Domain
+            - – Group Policy is usually updated at login
+            - 
+            - gpupdate
+            - – Force a Group Policy update
+            - – gpupdate /target:{computer|user} /
+            - force
+            - – gpupdate /target:professor /force
+            - 
+            - gpresult
+            - – Verify policy settings for a computer or user
+            - – gpresult /r
+            - – gpresult /user sgc/professor /v
+            - shutdown
+            - 
+            - Shutdown a computer
+            - – And optionally restart
+            - 
+            - shutdown /s /t nn
+            - – Wait nn seconds, then shutdown
+            - 
+            - shutdown /r /t nn
+            - – Shutdown and restart after nn seconds
+            - 
+            - shutdown /a
+            - – Abort the countdown!
+            - sfc
+            - 
+            - System File Checker
+            - – Scan integrity of all protected system files
+            - 
+            - sfc /scannow
+            - Check Disk
+            - 
+            - chkdsk /f
+            - – Fixes logical file system errors on the disk
+            - 
+            - chkdsk /r
+            - – Locates bad sectors and recovers readable information
+            - – Implies /f
+            - 
+            - If volume is locked, run during startup
+            - DiskPart
+            - 
+            - Manage disk configurations
+            - – diskpart - start the DiskPart command interpreter
+            - winver
+            - 
+            - View the About Windows dialog
+            - – A quick check
+            - 
+            - Useful when troubleshooting
+            - – Are you running the latest version?
+        - 1.2 - The Windows Network Command Line
+            - ipconfig
+            - 
+            - Most of your troubleshooting starts with your IP address
+            - – Ping your local router/gateway
+            - 
+            - Determine TCP/IP and network adapter information
+            - – And some additional IP details
+            - 
+            - View additional configuration details
+            - – DNS servers, DHCP server, etc.
+            - ping
+            - 
+            - Test reachability
+            - – Determine round-trip time
+            - – Uses Internet Control Message Protocol (ICMP)
+            - 
+            - One of your primary troubleshooting tools
+            - – Can you ping the host?
+            - netstat
+            - 
+            - Network statistics
+            - – Many different operating systems
+            - 
+            - netstat -a
+            - – Show all active connections
+            - 
+            - 
+            - netstat -b
+            - – Show binaries (Windows)
+            - netstat -n
+            - – Do not resolve names
+            - nslookup
+            - 
+            - Lookup information from DNS servers
+            - – Canonical names, IP addresses, cache timers, etc.
+            - 
+            - Lookup names and IP addresses
+            - – Many different options
+            - net
+            - 
+            - Windows network commands
+            - 
+            - 
+            - 
+            - View network resources
+            - – net view \\<servername>
+            - – net view /workgroup:<workgroupname>
+            - Map a network share to a drive letter
+            - – net use h: \\<servername>\<sharename>
+            - View user account information and reset passwords
+            - – net user <username>
+            - – net user <username> * /domain
+            - tracert
+            - 
+            - Determine the route a packet takes to a destination
+            - – Map the entire path
+            - 
+            - Takes advantage of ICMP Time to Live Exceeded
+            - message
+            - – The time in TTL refers to hops, not
+            - seconds or minutes
+            - – TTL=1 is the first router, TTL=2 is
+            - the second router, etc.
+            - 
+            - Not all devices will reply with ICMP Time Exceeded
+            - – Some firewalls filter ICMP
+            - – ICMP is low-priority for many devices
+            - Flavors of traceroute
+            - 
+            - Not all traceroutes are the same
+            - – Minor differences in the transmitted payload
+            - 
+            - Windows commonly sends ICMP echo requests
+            - – Receives ICMP time exceeded messages
+            - – And an ICMP echo reply from the
+            - final/destination device
+            - – Unfortunately, outgoing ICMP is commonly filtered
+            - 
+            - 
+            - Some operating systems allow you to specify the
+            - protocol Linux, Unix, macOS, etc.
+            - IOS devices send UDP datagrams over port 33434
+            - – The port number can be changed with
+            - extended options
+            - – The mechanics of traceroute
+            - pathping
+            - 
+            - Combine ping and traceroute
+            - – Included with Windows NT and later
+            - 
+            - First phase runs a traceroute
+            - – Build a map
+            - 
+            - Second phase
+            - – Measure round trip time and packet loss at each hop
+        - 1.3 - Task Manager
+            - Task Manager
+            - 
+            - Real-time system statistics
+            - – CPU, memory, disk access, etc.
+            - 
+            - Starting the Task Manager
+            - – Ctrl-Alt-Del, select Task Manager
+            - – Right mouse click the taskbar and
+            - select Task Manager
+            - – Ctrl-Shift-Esc
+            - Services
+            - 
+            - Non-interactive applications
+            - – Hundreds of background processes
+            - 
+            - Manage from one screen
+            - – Start, stop, restart
+            - Startup
+            - 
+            - Manage which programs start with
+            - a Windows login
+            - – Easily toggle on and off
+            - 
+            - Multiple reboots
+            - – Enable and disable
+            - – You’ll find it
+            - Processes
+            - 
+            - View all running processes
+            - – Interactive and system tray apps
+            - – View processes from other accounts
+            - 
+            - Manage the view
+            - – Move columns, add metrics
+            - 
+            - Combine all apps, processes, and services into a single tab
+            - – Easy to view and sort
+            - Performance
+            - 
+            - What’s happening? - CPU, memory, etc.
+            - 
+            - Statistical views - Historical, real-time
+            - 
+            - Newer versions include CPU, memory, disk,
+            - Bluetooth, and network in the Performance tab
+            - Networking
+            - 
+            - Network performance
+            - – Integrated into the Performance tab
+            - 
+            - View utilization, link speeds, and
+            - interface connection state
+            - Users
+            - 
+            - Who is connected? What are they doing?
+            - 
+            - Other options
+            - – Disconnect a user, manage user accounts
+        - 1.3 - The Microsoft Management Console
+            - Task Manager
+            - 
+            - Build your own console
+            - – mmc.exe
+            - 
+            - A handy starting point
+            - – Event Viewer
+            - – Local Users and Groups
+            - – Disk management
+            - – Task Scheduler
+            - – And more!
+            - Event Viewer
+            - 
+            - Central event consolidation
+            - – What happened?
+            - 
+            - Application, Security, Setup, System
+            - 
+            - Information, Warning, Error, Critical, Successful
+            - Audit, Failure Audit
+            - 
+            - eventvwr.msc
+            - Disk Management
+            - 
+            - Manage disk operations
+            - – Individual computers and file servers
+            - 
+            - diskmgmt.msc
+            - 
+            - WARNING
+            - – YOU CAN ERASE DATA
+            - – ALWAYS HAVE A BACKUP
+            - Task Scheduler
+            - 
+            - Schedule an application or script
+            - – Plan your future
+            - 
+            - Includes predefined schedules
+            - – Click and go
+            - 
+            - Organize
+            - – Manage with folders
+            - 
+            - taskschd.msc
+            - Device Manager
+            - 
+            - The OS doesn’t know how to talk directly
+            - to most hardware
+            - 
+            - Device drivers are hardware specific and
+            - operating system specific
+            - – Older device drivers may not necessarily work in
+            - Windows 10 or 11
+            - 
+            - devmgmt.msc
+            - Certificate Manager
+            - 
+            - View user and trusted certs
+            - – Add and remove
+            - 
+            - certmgr.msc
+            - Local users and groups
+            - 
+            - Users
+            - – Administrator - the Windows super-user
+            - – Guest -Limited access
+            - – “Regular” Users
+            - 
+            - Groups
+            - – Administrators, Users, Backup Operators,
+            - Power Users, etc.
+            - 
+            - lusrmgr.msc
+            - Performance Monitor
+            - 
+            - Gather long-term statistics
+            - – perfmon.msc
+            - 
+            - OS metrics
+            - – Disk, memory, CPU, etc.
+            - 
+            - Set alerts and automated actions
+            - – Monitor and act
+            - 
+            - 
+            - Store statistics
+            - – Analyze long-term trends
+            - Built-in reports
+            - – View the data
+            - Group Policy Editor
+            - 
+            - Centrally manage users and systems
+            - – Policies can be part of Active Directory or a local system
+            - 
+            - Local Group Policy Editor
+            - – Manages the local device
+            - – gpedit.msc
+            - 
+            - Group Policy Management Console
+            - – Integrated with Active Directory
+            - – Powerful system management
+            - – gpmc.msc
+        - 1.3 - Additional Windows Tools
+            - System Information
+            - 
+            - System overview
+            - – msinfo32.exe
+            - 
+            - Hardware Resources
+            - – Memory, DMA, IRQs, conflicts
+            - 
+            - Components
+            - – Multimedia, display, input, network
+            - 
+            - Software Environment
+            - – Drivers, print jobs, running tasks
+            - Resource Monitor
+            - 
+            - Detailed real-time view of performance
+            - – Separated by category
+            - 
+            - Categories
+            - – Overview, CPU, Memory,
+            - – Disk, and Network
+            - 
+            - resmon.exe
+            - System Configuration
+            - 
+            - Manage boot processes, startup, services, etc.
+            - – One-stop shop
+            - 
+            - msconfig.exe
+            - Disk Cleanup
+            - 
+            - Find unused or unneeded files
+            - – A quick way to free up space
+            - 
+            - Select the categories
+            - – Click the button
+            - 
+            - cleanmgr.exe
+            - defrag
+            - 
+            - Disk defragmentation
+            - – Moves file fragments so they are contiguous
+            - – Improves read and write time
+            - 
+            - Not necessary for solid state drives
+            - – Windows won’t defrag an SSD
+            - 
+            - Graphical version in the drive properties
+            - 
+            - Requires elevated permissions
+            - – Command line:
+            - – defrag <volume>
+            - – defrag C:
+            - regedit.exe
+            - 
+            - The Windows Registry Editor
+            - – The big huge master database
+            - – Hierarchical structure
+            - 
+            - Used by almost everything
+            - – Kernel, Device drivers
+            - – Services
+            - – Security Account Manager (SAM)
+            - – User Interface, Applications
+            - 
+            - Backup your registry!
+            - – Built into regedit
+        - 1.4 - The Windows Control Panel
+            - Internet Options
+            - 
+            - General - Basic display
+            - 
+            - Security - Different access based on site location
+            - 
+            - Privacy - Cookies, pop-up blocker, InPrivate browsing
+            - 
+            - Content - Certificates and auto-complete
+            - 
+            - Connections - VPN and proxy settings
+            - 
+            - Programs - Default browser, plugins, etc.
+            - 
+            - Advanced - Detailed configuration options (and reset!)
+            - Devices and Printers
+            - 
+            - Everything on the network
+            - – Desktops, laptops, printers, multimedia devices, storage
+            - 
+            - Quick and easy access
+            - – Much less complex than Device Manager
+            - – Properties, device configurations
+            - Programs and Features
+            - 
+            - Installed applications - Uninstall, size, version
+            - 
+            - Windows features - Enable and disable
+            - Network and Sharing Center
+            - 
+            - All network adapters - Wired, wireless, etc.
+            - 
+            - All network configs
+            - – Adapter settings, network addressing
+            - System
+            - 
+            - Computer information - Including version and edition
+            - 
+            - Performance - Virtual memory
+            - 
+            - Remote settings
+            - 
+            - System protection
+            - Windows Defender Firewall
+            - 
+            - Protect from attacks - Scans, malicious software
+            - 
+            - Integrated into the operating system
+            - 
+            - Control Panel > Windows Firewall
+            - Mail
+            - 
+            - Icon does not appear unless a mail client,
+            - e.g., Outlook, is installed
+            - – Otherwise not an option
+            - 
+            - Access to local mail configuration
+            - – Account information, data files
+            - Sound
+            - 
+            - Output options - Multiple sound devices may be available
+            - 
+            - Set levels for output and input
+            - – Speakers and microphone
+            - User Accounts
+            - 
+            - Local user accounts
+            - – Domains accounts are stored elsewhere
+            - 
+            - 
+            - 
+            - 
+            - Account name and type
+            - Change password
+            - Change picture
+            - Certificate information
+            - Device Manager
+            - 
+            - The OS doesn’t know how to talk directly
+            - to most hardware - You need drivers
+            - 
+            - Manage devices - Add, remove, disable
+            - 
+            - First place to go when hardware isn’t working
+            - – Instant feedback
+            - Indexing Options
+            - 
+            - Speed up the search process
+            - – Constantly updates an index
+            - 
+            - Searches browser history and user folders
+            - – Good default options
+            - 
+            - Add other locations
+            - – Modify to include other folders
+            - File Explorer Options
+            - 
+            - Manage Windows Explorer - Many options
+            - 
+            - General - Windows, expand folders
+            - 
+            - View - View hidden files, hide extensions
+            - 
+            - Search
+            - – Disable index searches, search non-indexed areas
+            - Administrative Tools
+            - 
+            - Not commonly used utilities
+            - – Used for system administration
+            - 
+            - Useful system tools
+            - – Often used options for system
+            - administrators and technicians
+            - Power Options
+            - 
+            - Hibernate
+            - – Open docs and apps are saved to disk
+            - – Common on laptops - Used by Fast Startup
+            - 
+            - Power plans
+            - – Customize power usage
+            - 
+            - Sleep (standby)
+            - – Open apps are stored in memory
+            - – Save power, startup quickly
+            - – Switches to hibernate if power is low
+            - 
+            - Choose what closing the lid does
+            - – Useful for docking stations
+            - 
+            - USB selective suspend
+            - – Disable individual USB devices
+            - – Save power
+            - – Fingerprint readers, biometrics
+            - 
+            - Fast startup
+            - – Enable or disable - Useful for troubleshooting
+            - Ease of Access Center
+            - 
+            - Usability enhancements - Useful for everyone
+            - 
+            - Change display, keyboard, mouse, and other
+            - input/output options
+            - – Use Windows without a display
+            - – Change the mouse pointers
+        - 1.5 - Windows Settings
+            - Settings
+            - 
+            - An updated interface
+            - – A migration from the Control Panel
+            - 
+            - One place for most configuration settings
+            - – A common UI
+            - 
+            - Search for “Settings”, Or scroll down to “S”
+            - Time and Language
+            - 
+            - Windows can automatically set the time
+            - – Active Domain is very sensitive to synchronized clocks
+            - – Five minutes of tolerance by default
+            - 
+            - Windows can speak many different languages
+            - – Change or add a language
+            - Update and Security
+            - 
+            - Keep your OS up to date - Security patches, bug fixes
+            - 
+            - Automatic installation - Updates are always installed
+            - 
+            - Active hours - You control the update time
+            - Personalization
+            - 
+            - Change the way Windows looks and feels
+            - – Colors, wallpaper, lock screen
+            - 
+            - Extensive customization - Make Windows your own
+            - Apps
+            - 
+            - Manage installed applications
+            - – Uninstall or modify an existing app
+            - 
+            - Add Windows features
+            - – Fonts for other languages
+            - – OpenSSH Server
+            - – SNMP support
+            - Privacy
+            - 
+            - Share app activity - Customized advertising
+            - 
+            - Share your language - Website content
+            - 
+            - Speech recognition - Sends audio to an online service
+            - System
+            - 
+            - Change display settings
+            - – Night light, scaling, resolution
+            - 
+            - Audio settings
+            - – Input and output
+            - 
+            - Notifications
+            - – Enable/disable
+            - – Show on lock screen
+            - Devices
+            - 
+            - Manage devices
+            - – Bluetooth, printers, etc.
+            - 
+            - Mouse settings
+            - – Button and wheel options
+            - 
+            - Typing and writing
+            - – Keyboard and pen
+            - Network and Internet
+            - 
+            - Network settings
+            - – Internet connectivity
+            - 
+            - View Internet status
+            - – Up or down?
+            - 
+            - Change IP settings
+            - – Modify address information
+            - Gaming
+            - 
+            - Xbox Game Bar - Xbox gaming network
+            - 
+            - Chat, join games - Look for friends
+            - Accounts
+            - 
+            - Manage login account information
+            - – Microsoft account or local account
+            - 
+            - Email configuration - Specify an email app
+            - 
+            - Sign-in options - PIN, password, security key, etc.
+        - 1.6 - Windows Network Technologies
+            - Shared resources
+            - 
+            - Make a folder or printer available on the network
+            - – “Share” with others, view in Windows Explorer
+            - 
+            - Assign (map) a drive letter to a share
+            - – Access a file server
+            - – Reconnect automatically
+            - 
+            - Shares ending with a dollar sign ($) are “hidden”
+            - – Not a security feature
+            - 
+            - Administrative Tools > Computer Management
+            - Mapping drives
+            - 
+            - Access a share
+            - – This PC / Map network drive
+            - 
+            - Local drive letter and share name
+            - – May require additional authentication
+            - 
+            - Or use the command line:
+            - net use h: “\\Daedalus\Gate Room”
+            - Sharing printers
+            - 
+            - Similar to sharing a folder
+            - – But it’s a printer instead
+            - 
+            - Printer Properties
+            - – Access through Windows Explorer, the Settings app,
+            - or any other Printer Properties
+            - – Share an existing printer
+            - Using a shared printer
+            - 
+            - Similar to sharing a folder
+            - – But it’s a printer instead
+            - 
+            - Add a printer
+            - – Windows Explorer
+            - – Settings app
+        - 1.6 - Configuring Windows Firewall
+            - Windows Defender Firewall
+            - 
+            - Your firewall should always be enabled
+            - – Sometimes you need to troubleshoot
+            - 
+            - Temporarily disable from the main screen
+            - – Turn Windows Firewall on or off
+            - – Requires elevated permissions
+            - 
+            - Different settings for each network type
+            - – Public / Private
+            - Windows Firewall configuration
+            - 
+            - Block all incoming connections
+            - – Ignores your exception list
+            - – Useful when you need the most security
+            - 
+            - Modify notification
+            - – App blocking
+            - Proxy Settings
+            - 
+            - Change the traffic flow
+            - – An Internet go-between
+            - 
+            - Settings > Network and Internet
+            - – Or use Control Panel > Internet Options >
+            - Connections > LAN settings
+            - 
+            - Define address and exceptions
+            - – Proxies don’t work for everything
+            - Network locations
+            - 
+            - Private
+            - – Share and connect to devices
+            - – Home or work network
+            - 
+            - Public
+            - – No sharing or connectivity
+            - – Public Wi-Fi
+            - 
+            - Customize security settings
+            - – Profile is determined automatically
+            - – Change the settings at any time
+            - Network paths
+            - 
+            - View network paths in File Explorer
+            - – Server and share name
+            - 
+            - Map network drive
+            - – Add a drive letter
+            - 
+            - Disconnect
+            - – Toolbar - Right-click the drive
+            - Metered connections
+            - 
+            - Reduce data usage
+            - – Slow network links
+            - – Limited bandwidth
+            - – Usage-based billing
+            - 
+            - Can modify application communication
+            - – Windows Updates
+            - – OneDrive sync
+            - Creating a firewall exception
+            - 
+            - Allow an app or feature
+            - through Windows Firewall
+            - – The more secure exception
+            - 
+            - Port number
+            - – Block or allow
+            - 
+            - Predefined exceptions
+            - – List of common exceptions
+            - 
+            - Custom rule
+            - – Every firewall option
+        - 1.6 - Windows IP Address Configuration
+            - How Windows gets an IP address
+            - 
+            - DHCP (Dynamic Host Configuration Protocol)
+            - – Automatic IP addressing
+            - – This is the default
+            - 
+            - APIPA (Automatic Private IP Addressing)
+            - – There’s no static address or DHCP server
+            - – Communicate locally (link-local address)
+            - – Assigns 169.254.1.0 to 169.254.254.255
+            - – No Internet connectivity
+            - 
+            - Static address
+            - – Assign all IP address parameters manually
+            - – You need to know very specific details
+            - TCP/IP host addresses
+            - 
+            - IP Address – Unique identifier
+            - Subnet mask – Identifies the subnet
+            - Gateway – The route off the subnet to the rest of the world
+            - 
+            - DNS – Domain Name Services
+            - – Converts domain names to IP addresses
+            - 
+            - DHCP – Dynamic Host Configuration Protocol
+            - – Automates the IP address configuration process
+            - – Addresses can be dynamic or static
+            - 
+            - Loopback address - 127.0.0.1 - It’s always there!
+            - A backup for the DHCP server
+            - 
+            - Multiple DHCP servers should be configured for
+            - redundancy
+            - – There will always be one available
+            - 
+            - If a DHCP server isn’t available, Windows uses the
+            - Alternate Configuration
+            - – The default is APIPA addressing
+            - 
+            - You can also configure a static IP address
+            - – Keep working normally
+        - 1.6 - Windows Network Connections
+            - Network setup
+            - 
+            - Control Panel
+            - – Network and Sharing Center
+            - – Set up a new connection or network
+            - 
+            - Step-by-step wizard
+            - – Confirmation during the process
+            - 
+            - Many different connections
+            - – Direct, VPN, dial-up, etc.
+            - VPN connections
+            - 
+            - Built-in VPN client
+            - – Included with Windows
+            - – Connect to a workplace
+            - 
+            - Integrate a smart card
+            - – Multi-factor authentication
+            - – Something you know
+            - – Something you have
+            - – Something you are
+            - 
+            - Connect from the network status icon
+            - – Click and provide credentials
+            - Wireless connections
+            - 
+            - Network name - SSID (Service Set Identification)
+            - 
+            - Security type - Encryption method
+            - 
+            - Encryption type - TKIP, AES
+            - 
+            - Security key
+            - – WPA2-Personal - Pre-shared key
+            - – WPA2-Enterprise - 802.1X authentication
+            - Wired connections
+            - 
+            - Ethernet cable - Direct connection
+            - 
+            - 
+            - Fastest connection is the default - Ethernet, Wireless, WWAN
+            - Alternate configurations - When DHCP isn’t available
+            - WWAN connections
+            - 
+            - Wireless Wide Area Network
+            - – Built-in mobile technology
+            - 
+            - Hardware adapter - Antenna connections
+            - 
+            - USB connected or 802.11 wireless - Tether or hotspot
+            - 
+            - Requires third-party software - Each provider is different
+        - 1.7 - Installing Applications
+            - Installing applications
+            - 
+            - Extend the functionality of your operating system
+            - – Specialized applications
+            - 
+            - Available everywhere
+            - – Find the application you need
+            - – Install on your operating system
+            - 
+            - Not every computer can run every application
+            - – Some simple checks can help manage your desktop
+            - Operating system platform
+            - 
+            - 32-bit vs. 64-bit
+            - – Processor specific
+            - 
+            - 32-bit processors can store
+            - 232 = 4,294,967,296 values
+            - 
+            - 64-bit processors can store
+            - 264 = 18,446,744,073,709,551,616 values
+            - – 4 GB vs. 17 billion GB
+            - – The OS has a maximum supported value
+            - 
+            - Hardware drivers are specific to the OS version
+            - – 32-bit (x86), 64-bit (x64)
+            - 
+            - 32-bit OS cannot run 64-bit apps
+            - – But 64-bit OS can run 32-bit apps
+            - 
+            - Apps in a 64-bit Windows OS
+            - – 32-bit apps: \Program Files (x86)
+            - – 64-bit apps: \Program Files
+            - Graphics requirements
+            - 
+            - Integrated graphics
+            - – CPU and GPU are the same chip
+            - – Uses system memory for graphics
+            - – Common in laptops
+            - 
+            - Dedicated graphics card
+            - – Also called a discrete graphics card
+            - – Uses its own VRAM (Video RAM)
+            - – High-end graphics requirements
+            - 
+            - Check the application
+            - – Integrated or dedicated
+            - – VRAM requirements
+            - RAM requirements
+            - 
+            - Random Access Memory
+            - – Memory modules
+            - 
+            - A critical specification
+            - – Application may perform poorly
+            - – Or not at all
+            - 
+            - This would be above and beyond the OS requirements
+            - – Dependent on the application
+            - – Consider all of the other running applications
+            - CPU requirements
+            - 
+            - Central Processing Unit
+            - – Processing speed
+            - – Usually measured in gigahertz (GHz)
+            - 
+            - A broad measurement
+            - – Higher numbers are faster CPUs
+            - 
+            - Application requirements vary
+            - – Word processing vs. video editing
+            - External hardware tokens
+            - 
+            - Manage application usage
+            - – Limit access to authorized users
+            - 
+            - Application will only operate with the
+            - hardware token connected
+            - – Commonly a USB device
+            - – Can be a challenge to manage
+            - 
+            - Often used with high-end software
+            - – High per-seat licensing costs
+            - Storage requirements
+            - 
+            - Drive space concerns
+            - – Initial installation space requirement
+            - – Application use requirement
+            - 
+            - Some applications use a LOT of storage space
+            - after installation
+            - – The initial install requirements may not be the most
+            - important specification
+            - Distribution methods
+            - 
+            - Physical media
+            - – Optical media, USB drive, etc.
+            - – Increasingly rare
+            - 
+            - Downloadable
+            - – Direct from the manufacturer
+            - – Centralized app store
+            - – Avoid 3rd-party downloads
+            - ISO files
+            - 
+            - Optical disk image
+            - – A single ISO file / ISO image
+            - – Files and folders
+            - 
+            - Sector by sector copy of the data on an optical disc
+            - – ISO 9660 file system
+            - 
+            - Mount in the OS
+            - – Appears as a separate drive
+            - Installation considerations
+            - 
+            - There’s a reason we are careful when
+            - installing applications
+            - – Applications have the same rights and permissions
+            - as the user
+            - – An unknown application can cause significant issues
+            - 
+            - Impact to device
+            - – Application upgrade stops working
+            - – Slowdowns
+            - – Deleted files
+            - 
+            - Impact to network
+            - – Access to internal services
+            - – Rights and permissions to file shares
+            - 
+            - Impact to operation
+            - – Many jobs are time-sensitive
+            - – An updated application may require a change
+            - to the workflow
+            - – Or may not work at all
+            - 
+            - Impact to the business
+            - – Critical processes are sensitive to downtime
+            - and outages
+            - – A change to an application can create significant issues
+            - – Other parts of the business rely on your results
+        - 1.8 - Operating System Overview
+            - Why do you need an OS?
+            - 
+            - Control interaction between components
+            - – Memory, hard drives, keyboard, CPU
+            - 
+            - A common platform for applications
+            - – You’re going to do some work, right?
+            - 
+            - Humans need a way to interact with the machine
+            - – The “user interface” - Hardware can’t do everything!
+            - Standard OS features
+            - 
+            - File management
+            - – Add, delete, rename
+            - 
+            - Application support
+            - – Memory management, swap file management
+            - 
+            - Input and Output support
+            - – Printers, keyboards, hard drives, USB drives
+            - 
+            - Operating system configuration and management tools
+            - Microsoft Windows
+            - 
+            - Major market presence
+            - – Many different versions
+            - – Windows 10, Windows 11, Windows Server
+            - 
+            - Advantages
+            - – Large industry support
+            - – Broad selection of OS options
+            - – Wide variety of software support
+            - 
+            - Disadvantages
+            - – Large install base provides a big target for
+            - security exploitation
+            - – Large hardware support can create challenging
+            - integration exercises
+            - Linux
+            - 
+            - Free Unix-compatible software system
+            - – Unix-like, but not Unix
+            - 
+            - Many (many) different distributions
+            - – Ubuntu, Debian, Red Hat / Fedora
+            - 
+            - Advantages
+            - – Cost. Free!
+            - – Works on wide variety of hardware
+            - – Passionate and active user community
+            - 
+            - Disadvantages
+            - – Limited driver support, especially with laptops
+            - – Limited support options
+            - Apple macOS
+            - 
+            - macOS - Desktop OS running on Apple hardware
+            - 
+            - Advantages
+            - – Easy to use
+            - – Extremely compatible
+            - – Relatively fewer security concerns
+            - 
+            - Disadvantages
+            - – Requires Apple hardware
+            - – Less industry support than the PC platform
+            - – Higher initial hardware cost
+            - Chrome OS
+            - 
+            - Google’s operating system
+            - – Based on the Linux kernel
+            - 
+            - Centers around Chrome web browser
+            - – Most apps are web-based
+            - 
+            - Many different manufacturers
+            - – Relatively less expensive
+            - 
+            - Relies on the cloud - Connect to the Internet
+            - Apple iPadOS
+            - 
+            - Operating system for Apple’s iPad tablets
+            - – A variant of Apple’s phone iOS
+            - 
+            - Tablet features
+            - – Desktop browser (Safari)
+            - – Second monitor (Sidecar)
+            - – Keyboard support
+            - – Multitasking
+            - Apple iOS
+            - 
+            - Apple iOS
+            - – Apple iPhones
+            - – Based on Unix
+            - – Closed-source - No access to source code
+            - – Exclusive to Apple products
+            - 
+            - iOS Apps
+            - – Apps are developed with iOS SDK on macOS
+            - – Apps must be approved by Apple before release
+            - – Apps are available to users in the Apple App Store
+            - Google Android
+            - 
+            - Google Android
+            - – Open Handset Alliance
+            - – Open-source OS, based on Linux
+            - – Supported on many different manufacturer’s devices
+            - 
+            - Android Apps
+            - – Apps are developed on Windows, macOS, and
+            - – Linux with the Android SDK
+            - – Apps available from Google Play
+            - – Apps also available from third-party sites
+            - (i.e., Amazon Appstore)
+            - Vendor-specific limitations
+            - 
+            - End-of-life
+            - – Different companies set their own EOL policies
+            - 
+            - Updating
+            - – iOS, Android, and Windows check and
+            - prompt for updates
+            - – Chrome OS will update automatically
+            - 
+            - Compatibility between operating systems
+            - – Some movies and music can be shared
+            - 
+            - Almost no direct application compatibility
+            - – Fortunately, many apps have been built to run on
+            - different OSes
+            - – Some data files can be moved across systems
+            - – Web-based apps have potential
+        - 1.8 - Filesystems
+            - File systems
+            - 
+            - Before data can be written to the partition,
+            - it must be formatted
+            - – Build the foundation
+            - 
+            - Operating systems expect data to be written
+            - in a particular format
+            - – FAT32 and NTFS are popular
+            - 
+            - Many operating systems can read
+            - (and perhaps write) multiple file system types
+            - – FAT, FAT32, NTFS, exFAT, etc.
+            - FAT
+            - 
+            - FAT - File Allocation Table
+            - – One of the first PC-based file systems (circa 1980)
+            - 
+            - FAT32 - File Allocation Table
+            - – Larger (2 terabyte) volume sizes
+            - – Maximum file size of 4 gigabytes
+            - 
+            - exFAT - Extended File Allocation Table
+            - – Microsoft flash drive file system
+            - – Files can be larger than 4 gigabytes
+            - – Compatible across many operating systems
+            - – Windows, Linux, macOS
+        - 1.9 - Installing Operating Systems
+            - Boot methods
+            - 
+            - USB storage
+            - – USB must be bootable
+            - – Computer must support booting from USB
+            - 
+            - Optical media
+            - – CD-ROM and DVD-ROM
+            - 
+            - 
+            - 
+            - 
+            - 
+            - PXE (“Pixie”) - Preboot eXecution Environment
+            - – Perform a remote network installation
+            - – Computer must support booting with PXE
+            - Solid state drives / hard drives
+            - – Store many OS installation files
+            - Internet-based
+            - – Linux distributions, macOS Recovery installation,
+            - Windows updates
+            - External / hot swappable drive
+            - – Some external drives can mount an
+            - ISO image (optical drive image)
+            - – Boot from USB
+            - Internal hard drive
+            - – Install and boot from separate drive
+            - – Create and boot from new partition
+            - NTFS
+            - 
+            - NTFS – NT File System
+            - – Extensive improvements over FAT32
+            - – Quotas, file compression, encryption, symbolic links,
+            - large file support, security, recoverability
+            - 
+            - Not very compatible across operating systems
+            - – Many OSes will read NTFS (but not write)
+            - – Some have limited write functionality to
+            - an NTFS file system
+            - Other file systems
+            - 
+            - ext3 - Third extended file system
+            - – Commonly used by the Linux OS
+            - 
+            - ext4 - Fourth extended file system
+            - – An update to ext3
+            - – Commonly seen in Linux and Android OS
+            - APFS
+            - 
+            - Apple File System (APFS)
+            - – Added to macOS High Sierra (10.12.4)
+            - – Also included with iOS and iPadOS
+            - 
+            - Optimized for solid-state storage
+            - – Encryption, snapshots, increased data integrity
+            - Types of installations
+            - 
+            - In-place upgrade - Maintain existing applications and data
+            - 
+            - Recovery partition
+            - – Hidden partition with installation files
+            - 
+            - Clean install
+            - – Wipe the slate clean and reinstall
+            - – Migration tool can help
+            - 
+            - Image deployment
+            - – Deploy a clone on every computer
+            - – Relatively quick
+            - – Can be completely automated
+            - 
+            - Repair installation
+            - – Fix problems with the Windows OS
+            - – Does not modify user files
+            - 
+            - Remote network installation
+            - – Local server or shared drive
+            - – Install across the Internet
+            - 
+            - Load alternate third party drivers when necessary
+            - – Disk controller drivers, etc.
+            - The disk partition
+            - 
+            - Separates the physical drive into logical pieces
+            - – Useful to keep data separated
+            - – Multiple partitions are not always necessary
+            - 
+            - Useful for maintaining separate operating systems
+            - – Windows, Linux, etc.
+            - 
+            - Formatted partitions are called volumes
+            - – Microsoft’s nomenclature
+            - GPT partition style
+            - 
+            - GPT (GUID Partition Table)
+            - – Globally Unique Identifier
+            - – The latest partition format standard
+            - 
+            - Requires a UEFI BIOS
+            - – Can have up to 128 partitions
+            - – Maximum partition size is over 9 billion TB
+            - – Windows max partition is currently 256 TB
+            - 
+            - No need for extended partitions or logical drives
+            - MBR partition style
+            - 
+            - MBR (Master Boot Record)
+            - – The old standby, with all of the old limitations
+            - – Maximum partition size of 2 TB
+            - 
+            - Primary
+            - – Bootable partitions
+            - – Maximum of four primary partitions per hard disk
+            - – One of the primary partitions can be marked as Active
+            - 
+            - Extended
+            - – Used for extending the maximum number of partitions
+            - – One extended partition per hard disk (optional)
+            - – Contains additional logical partitions
+            - – Logical partitions inside an extended partition
+            - are not bootable
+            - Disk partitioning
+            - 
+            - The first step when preparing disks
+            - – May already be partitioned
+            - – Existing partitions may not always be compatible
+            - with your new operating system
+            - 
+            - An MBR-style hard disk can have up to four partitions
+            - 
+            - GUID partition tables support up to 128 partitions
+            - – Requires UEFI BIOS or BIOS-compatibility mode
+            - – BIOS-compatibility mode disables UEFI SecureBoot
+            - 
+            - BE CAREFUL!
+            - – Serious potential for data loss
+            - – This is not an everyday occurrence
+            - Quick format vs. full format
+            - 
+            - Quick format
+            - – Creates a new file table
+            - – Looks like data is erased, but it’s not
+            - – No additional checks
+            - 
+            - Quick format the default during installation in
+            - Windows 10 and 11
+            - – Use diskpart for a full format
+            - 
+            - Full format
+            - – Writes zeros to the whole disk
+            - – Your data is unrecoverable
+            - – Checks the disk for bad sectors (time consuming)
+        - 1.9 - Upgrading Windows
+            - Why upgrade?
+            - 
+            - Upgrade vs. Install
+            - – Upgrade - Keep files in place
+            - – Install - Start over completely fresh
+            - 
+            - Maintain consistency
+            - – Customized configurations
+            - – Multiple local user accounts
+            - 
+            - Upgrades save hours of time
+            - – Avoid application reinstall
+            - – Keep user data intact
+            - – Keep user settings
+            - – Get up and running quickly
+            - Upgrade methods
+            - 
+            - In-place upgrade
+            - – Upgrade the existing OS
+            - – Keeps all applications, documents,
+            - and settings
+            - – Start the setup from inside
+            - the existing OS
+            - 
+            - Clean install
+            - – Wipe everything and reload
+            - – Backup your files
+            - – Start the setup by booting
+            - from the installation media
+            - Prepare the boot drive
+            - 
+            - Know your drive
+            - – Is data on the drive?
+            - – Has the drive been formatted?
+            - – What partitions are on the drive?
+            - 
+            - Backup any old data
+            - – You may need that data again someday
+            - – Save user preferences
+            - 
+            - Most partitioning and formatting can be completed
+            - during the installation
+            - – Clear the drive and start fresh
+            - Before the installation
+            - 
+            - Check minimum OS requirements
+            - – Memory, disk space, etc.
+            - – And the recommended requirements
+            - 
+            - Run a hardware compatibility check
+            - – Runs when you perform an upgrade
+            - – Run manually from the Windows setup screen
+            - – Windows 10 Upgrade Checker,
+            - PC Health Check for Windows 11
+            - 
+            - Plan for installation questions
+            - – Drive/partition configuration, license keys, etc.
+            - 
+            - Application and driver compatibility
+            - – Check with the app developer and
+            - hardware manufacturer
+        - 1.10 - macOS Overview
+            - File types
+            - 
+            - .dmg
+            - – Apple Disk Image
+            - – Mountable as a drive in Finder
+            - 
+            - .pkg
+            - – Installer Package
+            - – Used to distribute software
+            - – Runs through an installer script
+            - 
+            - .app
+            - – Application bundle
+            - – Contains the necessary files to use the application
+            - – “View Package Contents” from the Finder
+            - App store
+            - 
+            - Centralized updates and patches
+            - – For both OS and apps
+            - 
+            - App Store application
+            - – The “Updates” option
+            - 
+            - Automatic updates
+            - – Or manual install
+            - 
+            - Patch management
+            - – Install and view previous updates
+            - Uninstallation process
+            - – Move the .app file to the Trash
+            - – The .app package contains all of the application files
+            - – Quick and easy
+            - 
+            - Some applications include a separate uninstall program
+            - – Usually included in the Application folder
+            - Windows product life cycle
+            - 
+            - Quality updates
+            - – Monthly security updates and bug fixes
+            - 
+            - Feature updates
+            - – Annual update with new features
+            - – Used to occur every three to five years
+            - 
+            - Support is provided after the release
+            - – 18 to 36 months
+            - – Dependent on the Windows version and edition
+            - 
+            - Also called the Modern Lifecycle Policy
+            - – For continuously supported products
+            - Apple ID and corporate restrictions
+            - 
+            - Personal Apple products use a personal Apple ID
+            - – Associated with personal data and digital purchases
+            - 
+            - Companies use Managed Apple IDs using
+            - Apple Business Manager
+            - – Integrate with Active Directory
+            - – Connect with an existing
+            - – MDM (Mobile Device Manager)
+            - – Assign and move apps and digital content
+            - to selected users
+            - Backups
+            - 
+            - Time Machine - Included with macOS
+            - 
+            - Hourly backups - The past 24 hours
+            - 
+            - Daily backups - The past month
+            - 
+            - Weekly backups - All previous months
+            - 
+            - Starts deleting oldest information when disk is full
+            - Anti-virus
+            - 
+            - macOS does not include anti-virus
+            - – Or anti-malware
+            - 
+            - Many 3rd-party options
+            - – From the usual companies
+            - 
+            - An emerging threat
+            - – Still doesn’t approach Windows
+            - – It’s all about the number of desktops
+            - 
+            - Automate your signature updates
+            - – New updates every hour / day
+        - 1.10 - macos System Preferences
+            - System Preferences
+            - 
+            - The macOS version of the Windows Control Panel
+            - – A close comparison
+            - 
+            - Access to most customization and personalization options
+            - – Includes important configuration utilities
+            - 
+            - A good place to start
+            - – It’s probably in here
+            - Displays
+            - 
+            - Configure the location of multiple displays
+            - – Side by side, top to bottom
+            - 
+            - Menu bar can be moved to any display
+            - – Doesn’t have to be the primary
+            - 
+            - Modify individual display settings
+            - – Resolution, brightness, colors
+            - Networks
+            - 
+            - Configure network interfaces - Wired, wireless
+            - 
+            - IPv4 and IPv6 - Manual and automatic (DHCP)
+            - 
+            - Detailed network settings - IP, DNS, 802.1X, etc.
+            - Printers & Scanners
+            - 
+            - Add and remove printers and scanners
+            - – Configure individual settings
+            - 
+            - Share printers and scanners
+            - – Configure rights and permissions
+            - 
+            - View status - Ink and toner levels, scanning status
+            - Privacy
+            - 
+            - Limit application access to private data
+            - – Location services, photos, calendars
+            - 
+            - Control access to cameras and microphones
+            - – Enable on a per-app basis
+            - 
+            - Unauthorized apps can’t view your private data
+            - – Malware, other apps
+            - Accessibility
+            - 
+            - Allow apps to use system input
+            - – Keyboard, mouse, audio, video
+            - 
+            - Scripting and automation
+            - – Requires access for input
+            - 
+            - Limits third-party applications
+            - – Can’t take over the keyboard
+            - Time Machine
+            - 
+            - Automated backups
+            - – Included with macOS
+            - 
+            - Hourly backups
+            - – The past 24 hours
+            - 
+            - Daily backups
+            - – The past month
+            - 
+            - Weekly backups
+            - – All previous months
+            - 
+            - Starts deleting oldest information when disk is full
+        - 1.10 - macos Features
+            - Mission Control and Spaces
+            - 
+            - Quickly view everything that’s running
+            - – Spread out the desktop into a viewable area
+            - – Swipe upwards with three fingers or
+            - – Control-Up arrow
+            - 
+            - Spaces
+            - – Multiple desktops
+            - – Add Spaces inside of
+            - – Mission Control
+            - Keychain
+            - 
+            - Password management
+            - – Passwords, notes, certificates, etc.
+            - 
+            - Integrated into the OS - Keychain Access
+            - 
+            - Passwords and Secure Notes are encrypted
+            - – Login password is the key
+            - Spotlight
+            - 
+            - Find files, apps, images, etc.
+            - – Similar to Windows search
+            - 
+            - Magnifying glass in upper right
+            - 
+            - Or press Command-Space
+            - 
+            - Type anything in - See what you find
+            - 
+            - Define search categories in System Preferences / Spotlight
+            - – Enable/disable categories
+            - iCloud
+            - 
+            - Integrates Apple technologies
+            - – macOS, iOS
+            - 
+            - Share across systems
+            - – Calendars, photos, documents, contacts, etc.
+            - 
+            - Backup iOS devices
+            - – Never lose data again
+            - 
+            - Store files in an iCloud drive
+            - – Similar to Google Drive, Dropbox
+            - – Integrated into the operating systems
+            - Gestures
+            - 
+            - You can do more than just point and click
+            - – Extend the capabilities of your trackpad
+            - 
+            - Use one, two, three fingers
+            - – Swipe, pinch, click
+            - 
+            - Customization
+            - – Enable/disable
+            - – System Preferences / Trackpad
+            - Finder
+            - 
+            - The central OS file manager
+            - – Compare with Windows Explorer
+            - 
+            - File management
+            - – Launch, delete, rename, etc.
+            - 
+            - Integrated access to other devices
+            - – File servers
+            - – Remote storage
+            - – Screen sharing
+            - Remote Disc
+            - 
+            - Use an optical drive from another computer
+            - – Has become more important over time
+            - – Designed for copying files
+            - – Will not work with audio CDs or video DVDs
+            - 
+            - Set up sharing in System Preferences
+            - – Sharing options
+            - – Appears in the Finder
+            - Dock
+            - 
+            - Fast access to apps
+            - – Quickly launch programs
+            - 
+            - View running applications
+            - – Dot underneath the icon
+            - 
+            - Keep folders in the dock
+            - – Easy access to files
+            - 
+            - Move to different sides of the screen
+            - – Auto-hide or always display
+        - 1.11 - Linux Commands
+            - Linux commands
+            - 
+            - The command line - Terminal, XTerm, or similar
+            - 
+            - Commands are similar in both Linux and macOS
+            - – Mac OS derived from
+            - BSD (Berkeley Software Distribution) Unix
+            - – This section is specific to Linux
+            - 
+            - Download a Live CD or install a virtual machine
+            - – Many pre-made Linux distributions are available
+            - – I’m using Ubuntu in a virtual machine
+            - 
+            - Use the man command for help
+            - – An online manual
+            - > man grep
+            - ls
+            - 
+            - List directory contents
+            - – Similar to the dir command in Windows
+            - 
+            - 
+            - Lists files, directories
+            - – May support color coding;
+            - – Blue is a directory, red is an archive file, etc.
+            - For long output, pipe through more:
+            - > ls -l | more
+            - (use q or Ctrl-c to exit)
+            - Disk Utility
+            - 
+            - Manage disks and images - Resolve issues
+            - 
+            - File system utilities
+            - – Verify and repair file systems
+            - – Modify partition details
+            - – Erase disks
+            - 
+            - Create, convert, and restore images - Manage disk images
+            - FileVault
+            - 
+            - Full Disk Encryption (FDE) for macOS
+            - – Decryption uses a local key or iCloud authentication
+            - 
+            - Proper authentication is required before macOS can start
+            - – Data is unavailable to others
+            - 
+            - Available in System Preferences
+            - – Security & Privacy > FileVault
+            - Terminal
+            - 
+            - Command line access to the operating system
+            - – Manage the OS without a graphical interface
+            - 
+            - OS access
+            - – Run scripts, manage files
+            - – Configure OS and application settings
+            - Force Quit
+            - 
+            - Stop an application from executing
+            - – Some applications are badly written
+            - 
+            - Command-Option-Escape - List application to quit
+            - 
+            - Hold the option key when right-clicking the
+            - app icon in the dock
+            - – Choose Force Quit
+            - pwd
+            - 
+            - Print Working Directory
+            - – Displays the current working directory path
+            - – Useful when changing directories often
+            - mv
+            - 
+            - Move a file
+            - – Rename a file
+            - 
+            - mv SOURCE DEST
+            - > mv first.txt second.txt
+            - cp
+            - 
+            - 
+            - Copy a file
+            - – Duplicate files or directories
+            - cp SOURCE DEST
+            - > cp first.txt second.txt
+            - rm
+            - 
+            - 
+            - Remove files or directories
+            - – Deletes the files
+            - Does not remove directories by default
+            - – Directories must be empty to be removed or
+            - must be removed with -r
+            - chmod
+            - 
+            - Change mode of a file system object
+            - – r=read, w=write, x=execute
+            - – Can also use octal notation
+            - – Set for the file owner (u), the group(g),
+            - others(o), or all(a)
+            - 
+            - chmod mode FILE
+            - > chmod 744 script.sh
+            - 
+            - chmod 744 first.txt
+            - – User; read, write execute
+            - – Group; read only
+            - – Other; read only
+            - 
+            - chmod a-w first.txt
+            - – All users, no writing to first.txt
+            - 
+            - chmod u+x script.sh
+            - – The owner of script.sh can execute the file
+            - chown
+            - 
+            - Change file owner and group
+            - – Modify file settings
+            - 
+            - sudo chown [OWNER:GROUP] file
+            - > sudo chown professor script.sh
+            - su / sudo
+            - 
+            - Some command require elevated rights
+            - – There are some things normal users can’t do
+            - 
+            - su
+            - – Become super user or change to a different user
+            - – You continue to be that user until you exit
+            - 
+            - sudo
+            - – Execute a command as the super user or user ID
+            - – Only that command executes as the super user
+            - apt-get
+            - 
+            - Advanced Packaging Tool
+            - – Handles the management of application packages
+            - – Applications and utilities
+            - 
+            - Install, update, remove
+            - > sudo apt-get install wireshark
+            - yum
+            - 
+            - Yellowdog Updater, Modified (yum) - Install, delete, update
+            - 
+            - Manages RPM packages
+            - – Red Hat Package Manager - RPM Package Manager
+            - – A Linux distribution will commonly use either
+            - yum or apt-get
+            - ip
+            - 
+            - Manage the network interfaces
+            - – Enable, disable, configure addresses, manage routes,
+            - ARP cache, etc.
+            - 
+            - ip address
+            - – View interface addresses
+            - 
+            - 
+            - ip route
+            - – View the IP routing table
+            - sudo ip address add 192.168.121.241/24 dev eth0
+            - – Configure the IP address of an interface
+            - df
+            - 
+            - 
+            - df
+            - Disk Free - View file systems and free space
+            - – View number of blocks
+            - 
+            - df -h
+            - – View human-readable sizes
+            - grep
+            - 
+            - Find text in a file
+            - – Search through many files at a time
+            - grep PATTERN [FILE]
+            - > grep failed auth.log
+            - find
+            - 
+            - 
+            - Find a file by name or extension
+            - – Search through any or all directories
+            - Find files with a specific extension
+            - > find . -name “*.txt”
+            - dig
+            - 
+            - Lookup information from DNS servers
+            - – Canonical names, IP addresses, cache timers, etc.
+            - 
+            - dig (Domain Information Groper)
+            - – Detailed domain information
+            - – Add dig to Windows: - [http://www.isc.org/downloads/bind/](http://www.isc.org/downloads/bind/)
+            - cat
+            - 
+            - 
+            - Concatenate - Link together in a series
+            - Copy a file/files to the screen
+            - cat file1.txt file2.txt
+            - 
+            - Copy a file/files to another file
+            - cat file1.txt file2.txt > both.txt
+            - nano
+            - 
+            - Full-screen text editor - Easy to edit
+            - 
+            - Included with many Linux distributions - Easy to install
+            - 
+            - Select, mark, copy/cut, and paste text
+            - – Similar features to graphical-based editors
+        - 1.11 - Linux Features
+            - Backups
+            - 
+            - Many options
+            - – Command line and graphical
+            - – May be included with the distribution
+            - 
+            - tar
+            - – Tape Archive
+            - – Easy to script into
+            - – a backup schedule
+            - 
+            - 
+            - 
+            - 
+            - 
+            - rsync
+            - – Sync files between storage devices
+            - – Instant synchronization or scheduled
+            - Command line tools
+            - apt-get, yum
+            - Graphical update managers
+            - – Software updater
+            - Patch management
+            - – Updates can be scheduled
+            - Software center
+            - – The Linux “App Store”
+    - 2.0 - Security - 25% 19p
+        - 2.1 - Physical Security
+        - Access control vestibule
+        - 
+        - All doors normally unlocked
+        - – Opening one door causes others to lock
+        - 
+        - All doors normally locked
+        - – Unlocking one door prevents others
+        - from being unlocked
+        - 
+        - One door open / other locked
+        - – When one is open, the other cannot be unlocked
+        - 
+        - One at a time, controlled groups
+        - – Managed control through an area
+        - Badge reader
+        - 
+        - Magnetic swipe, RFID, or NFC
+        - – Many different identification methods
+        - 
+        - Different applications
+        - – Time clocks
+        - – Security guard patrols
+        - – Door access
+        - Video surveillance
+        - 
+        - CCTV (Closed circuit television)
+        - – Can replace physical guards
+        - 
+        - Camera features are important
+        - – Object detection can identify a license plate or
+        - person’s face
+        - 
+        - Often many different cameras
+        - – Networked together and recorded over time
+        - 
+        - Motion detection
+        - – Radio reflection or passive infrared
+        - – Useful in areas not often in use
+        - Anti-Virus / Anti-malware
+        - 
+        - Relatively few viruses and malware for Linux
+        - – Still important to keep updated
+        - 
+        - Clam Antivirus
+        - – Open source antivirus engine
+        - 
+        - Same best practice as any other OS
+        - – Always update signature database
+        - – Always use real-time scanning
+        - Shell/Terminal
+        - 
+        - Command line access to the operating system
+        - – Common to manage in Linux
+        - 
+        - OS maintenance
+        - – Run scripts, manage files
+        - – Configure OS and application settings
+        - Samba
+        - 
+        - Add SMB (Server Message Block) to Linux
+        - – File and print sharing
+        - – Active Directory integration
+        - 
+        - Integrate Linux into a Windows environment
+        - – Linux becomes a Windows file server
+        - Alarm systems
+        - 
+        - Circuit-based
+        - – Circuit is opened or closed
+        - – Door, window, fence
+        - – Useful on the perimeter
+        - 
+        - Motion detection
+        - – Identify motion without a camera
+        - 
+        - Duress
+        - – Triggered by a person
+        - – The big red button
+        - Door locks
+        - 
+        - Conventional - Lock and key
+        - 
+        - Deadbolt - Physical bolt
+        - 
+        - Electronic - Keyless, PIN
+        - 
+        - Token-based - RFID badge, magnetic swipe card, or key fob
+        - 
+        - Biometric - Hand, fingers or retina
+        - 
+        - Multi-factor - Smart card and PIN
+        - Equipment locks
+        - 
+        - Data center hardware is usually managed by different
+        - groups
+        - – Responsibility lies with the owner
+        - 
+        - Racks can be installed together
+        - – Side-to-side
+        - 
+        - Enclosed cabinets with locks
+        - – Ventilation on front, back, top, and bottom
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 19
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.1 - Physical Security (continued)
+        - Guards and access lists
+        - 
+        - Security guard
+        - – Physical protection at the reception area of a facility
+        - – Validates identification of existing employees
+        - – Provides guest access
+        - 
+        - ID badge
+        - – Picture, name, other details
+        - – Must be worn at all times
+        - 
+        - Access list
+        - – Physical list of names
+        - – Enforced by security guard
+        - 
+        - Maintains a visitor log
+        - Barricades / bollards
+        - 
+        - Prevent access
+        - – There are limits to the prevention
+        - 
+        - Channel people through a specific access point
+        - – And keep out other things
+        - – Allow people, prevent cars and trucks
+        - 
+        - Identify safety concerns
+        - – And prevent injuries
+        - 
+        - Can be used to an extreme
+        - – Concrete barriers / bollards
+        - – Moats
+        - Fences
+        - 
+        - Build a perimeter
+        - – Usually very obvious
+        - – May not be what you’re looking for
+        - 
+        - Transparent or opaque
+        - – See through the fence (or not)
+        - 
+        - Robust
+        - – Difficult to cut the fence
+        - 
+        - Prevent climbing
+        - – Razor wire
+        - – Build it high
+        - 2.1 - Physical Security for Staff
+        - Key fobs
+        - 
+        - Small RFID key
+        - – Add to physical keychain
+        - 
+        - Replaces a physical key
+        - – Commonly used for door locks
+        - – Proximity operation and contactless
+        - Smart cards
+        - 
+        - Certificate-based authentication
+        - – Something you have
+        - – Usually requires additional factors
+        - 
+        - Integrated card reader
+        - – Built into the laptop
+        - 
+        - External reader
+        - – USB connected
+        - Keys
+        - 
+        - Some doors may not have an electronic lock
+        - – Rarely used
+        - – Standalone locks
+        - – Safe, storage bin, cabinet
+        - 
+        - Use a key cabinet
+        - – Formal check in/check out
+        - – Well-defined storage location
+        - – Allows for auditing and timestamps
+        - Biometrics
+        - 
+        - Biometric authentication
+        - – Usually stores a mathematical representation of your
+        - biometric
+        - – Your actual fingerprint isn’t usually saved
+        - 
+        - Difficult to change
+        - – You can change your password
+        - – You can’t change your fingerprint
+        - 
+        - Used in very specific situations
+        - – Not foolproof
+        - Biometric factors
+        - 
+        - Retina scanner
+        - – Unique capillary structure in the back of the eye
+        - 
+        - Fingerprint scanner - Phones, laptops, door access
+        - 
+        - Palmprint scanner - Shape of the hand and fingers
+        - Lighting
+        - 
+        - More light means more security
+        - – Attackers avoid the light
+        - – Easier to see when lit
+        - – Non IR cameras can see better
+        - 
+        - Specialized design
+        - – Consider overall light levels
+        - – Lighting angles may be important
+        - – Facial recognition
+        - – Avoid shadows and glare
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 20
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.1 - Physical Security for Staff (continued)
+        - Magnetometers
+        - 
+        - Passive scanning - Detect metal objects
+        - 
+        - Not useful for non-metal objectives
+        - – Won’t identify ceramic or plastic
+        - Mobile Device Management (MDM)
+        - 
+        - Manage company-owned and
+        - user-owned mobile devices
+        - – BYOD - Bring Your Own Device
+        - 
+        - Centralized management of the mobile devices
+        - – Specialized functionality
+        - 
+        - Set policies on apps, data, camera, etc.
+        - – Control the remote device
+        - – The entire device or a “partition”
+        - 
+        - Manage access control
+        - – Force screen locks and PINs on
+        - these single user devices
+        - 2.1 - Logical Security
+        - Least privilege
+        - 
+        - Rights and permissions should be set to the bare
+        - minimum
+        - – You only get exactly what’s needed to
+        - complete your objective
+        - 
+        - All user accounts must be limited
+        - – Applications should run with minimal privileges
+        - 
+        - Don’t allow users to run with administrative privileges
+        - – Limits the scope of malicious behavior
+        - Access Control Lists (ACLs)
+        - 
+        - Used to allow or deny traffic
+        - – Also used for NAT, QoS, etc.
+        - – Commonly used on the ingress or egress of
+        - a router interface
+        - 
+        - ACLs evaluate on certain criteria
+        - – Source IP, Destination IP,
+        - – TCP port numbers, UDP port numbers, ICMP
+        - 
+        - Deny or permit
+        - – What happens when an ACL matches the traffic?
+        - 
+        - Also used in operating systems
+        - – Allow or deny access to the filesystem
+        - Multi-factor authentication
+        - 
+        - More than one factor
+        - – Something you are, something you have,
+        - something you know, somewhere you are,
+        - something you do
+        - 
+        - Can be expensive
+        - – Separate hardware tokens
+        - Software tokens
+        - 
+        - Authenticator application
+        - – Pseudo-random number generator
+        - – Can’t guess it
+        - – Changes constantly
+        - 
+        - Saves money
+        - – Free smartphone applications
+        - – No separate device to lose
+        - Short message service (SMS)
+        - 
+        - Text messaging
+        - – Includes more than text these days
+        - 
+        - Login factor can be sent via SMS to a
+        - predefined phone number
+        - – Provide username and password
+        - – Phone receives an SMS
+        - – Input the SMS code into the login form
+        - 
+        - Security issues exist
+        - – Phone number can be reassigned to
+        - a different phone
+        - – SMS messages can be intercepted
+        - – SMS spoofing
+        - Voice call
+        - 
+        - A phone call provides the token
+        - – The computer is talking to you
+        - – “Your code is 1-6-2-5-1-7.”
+        - 
+        - Similar disadvantages to SMS
+        - – Phone call can be intercepted or forwarded
+        - – Phone number can be added to another phone
+        - Email filtering
+        - 
+        - Unsolicited email
+        - – Stop it at the gateway before it reaches the user
+        - – On-site or cloud-based
+        - 
+        - Scan and block malicious software
+        - – Executables, known vulnerabilities
+        - – Phishing attempts
+        - – Other unwanted content
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 21
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.1 - Active Directory
+        - Active Directory
+        - 
+        - A database of everything on the network
+        - – Computers, user accounts, file shares,
+        - printers, groups, and more
+        - 
+        - Manage authentication
+        - – Users login using their AD credentials
+        - 
+        - Centralized access control
+        - – Determine which users can access resources
+        - 
+        - Commonly used by the help desk
+        - – Reset passwords
+        - – Add and remove accounts
+        - Domain
+        - 
+        - The name associated with this related
+        - group of users, computers, and resources
+        - – Each domain has a name
+        - 
+        - Domain controllers store this central domain database
+        - – Active Directory is the service that
+        - manages this directory
+        - 
+        - Often referenced when troubleshooting
+        - – Is this computer on the domain?
+        - – Can you reset the domain password?
+        - Organizational units (OU)
+        - 
+        - Keep the (very large) database organized
+        - – Users, Computers
+        - 
+        - Create your own hierarchy
+        - – Countries, states, buildings, departments, etc.
+        - 
+        - Apply policies to an OU
+        - – Can be very large:
+        - – Domain Users
+        - – Can be for a specific group:
+        - – Marketing, North America,
+        - – Pegasus galaxy
+        - Login script
+        - 
+        - Automate a series of tasks during login
+        - – Assign a script to a specific user, group, or OU
+        - 
+        - Associate the script with a Group Policy
+        - – User Configuration > Policies >
+        - – Windows Settings > Scripts
+        - 
+        - Create different login scripts for different OUs
+        - – Customize based on your needs
+        - Group Policy/updates
+        - 
+        - Manage the computers or users with Group Policies
+        - – Local and Domain policies
+        - – Group Policy Management Editor
+        - 
+        - A central console
+        - – Login scripts
+        - – Network configurations (QoS)
+        - – Security parameters
+        - Update a client with the gpupdate utility:
+        - > gpupdate /force
+        - Home folder
+        - 
+        - Assign a user Home folder to a network folder
+        - – Manage and backup files from the network
+        - – Avoid storing files on the local computer
+        - 
+        - When added to the user profile, the directories
+        - are automatically created
+        - – And proper permissions are assigned
+        - 
+        - Requires some training
+        - – Encourage users to store files on the
+        - network Home folder
+        - Folder redirection
+        - 
+        - Some users and applications use the
+        - Windows Library folders
+        - – Desktop, Downloads,
+        - – Music, Documents, etc.
+        - 
+        - Redirect the folders to a network share
+        - – Group Policy > User Configuration >
+        - – Windows settings > Folder Redirection
+        - 
+        - This is often paired with the Offline Files feature
+        - – You’re not always connected
+        - Security groups
+        - 
+        - Create a group
+        - – Assign permissions to the group
+        - 
+        - Set the rights and permissions to the group
+        - – Add users to the group
+        - 
+        - Some built-in groups
+        - – Users, guests
+        - – Remote management users
+        - – Event Log Readers
+        - 
+        - Save time
+        - – Avoid confusion and mistakes
+        - Group Policy and login scripts
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 22
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.2 - Wireless Encryption
+        - Securing a wireless network
+        - 
+        - An organization’s wireless network can contain
+        - confidential information
+        - – Not everyone is allowed access
+        - 
+        - Authenticate the users before granting access
+        - – Who gets access to the wireless network?
+        - – Username, password, multi-factor authentication
+        - 
+        - Ensure that all communication is confidential
+        - – Encrypt the wireless data
+        - 
+        - Verify the integrity of all communication
+        - – The received data should be identical to
+        - the original sent data
+        - – A message integrity check (MIC)
+        - WPA (Wi-Fi Protected Access)
+        - 
+        - 2002: WPA was the replacement for serious
+        - cryptographic weaknesses in
+        - WEP (Wired Equivalent Privacy)
+        - – Don’t use WEP
+        - 
+        - Needed a short-term bridge between WEP and
+        - whatever would be the successor
+        - – Run on existing hardware
+        - 
+        - WPA: RC4 with TKIP (Temporal Key Integrity Protocol)
+        - – Initialization Vector (IV) is larger and an encrypted hash
+        - – Every packet gets a unique 128-bit encryption key
+        - Wireless encryption
+        - 
+        - All wireless computers are
+        - radio transmitters and receivers
+        - – Anyone can listen in
+        - 
+        - Solution: Encrypt the data
+        - – Everyone has an encryption key
+        - 
+        - Only people with the right key can transmit and listen
+        - – WPA2 and WPA3
+        - WPA2 and CCMP
+        - 
+        - Wi-Fi Protected Access II (WPA2)
+        - – WPA2 certification began in 2004
+        - 
+        - CCMP block cipher mode
+        - – Counter Mode with Cipher Block Chaining Message
+        - Authentication Code Protocol, or
+        - Counter/CBC-MAC Protocol
+        - 
+        - CCMP security services
+        - – Data confidentiality with AES encryption
+        - – Message Integrity Check (MIC) with CBC-MAC
+        - WPA3 and GCMP
+        - 
+        - Wi-Fi Protected Access 3 (WPA3)
+        - – Introduced in 2018
+        - 
+        - GCMP block cipher mode
+        - – Galois/Counter Mode Protocol
+        - – A stronger encryption than WPA2
+        - 
+        - GCMP security services
+        - – Data confidentiality with AES
+        - – Message Integrity Check (MIC) with
+        - – Galois Message Authentication Code (GMAC)
+        - The WPA2 PSK problem
+        - 
+        - WPA2 has a PSK brute-force problem
+        - – Listen to the four-way handshake
+        - – Some methods can derive the PSK hash
+        - without the handshake
+        - – Capture the hash
+        - 
+        - With the hash, attackers can brute force the
+        - pre-shared key (PSK)
+        - 
+        - This has become easier as technology improves
+        - – A weak PSK is easier to brute force
+        - – GPU processing speeds
+        - – Cloud-based password cracking
+        - 
+        - Once you have the PSK, you have everyone’s
+        - wireless key
+        - – There’s no forward secrecy
+        - SAE
+        - 
+        - WPA3 changes the PSK authentication process
+        - – Includes mutual authentication
+        - – Creates a shared session key without sending
+        - that key across the network
+        - – No more four-way handshakes, no hashes,
+        - no brute force attacks
+        - – Adds perfect forward secrecy
+        - 
+        - Simultaneous Authentication of Equals (SAE)
+        - – A Diffie-Hellman derived key exchange with
+        - an authentication component
+        - – Everyone uses a different session key, even with
+        - the same PSK
+        - – An IEEE standard - the dragonfly handshake
+        - Wireless security modes
+        - 
+        - Configure the authentication on your
+        - wireless access point / wireless router
+        - 
+        - Open System
+        - – No authentication password is required
+        - 
+        - WPA/2/3-Personal / WPA/2/3-PSK
+        - – WPA2 or WPA3 with a pre-shared key
+        - – Everyone uses the same 256-bit key
+        - 
+        - WPA/2/3-Enterprise / WPA/2/3-802.1X
+        - – Authenticates users individually with an
+        - authentication server (i.e., RADIUS)
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 23
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.2 - Authentication Methods
+        - RADIUS (Remote Authentication Dial-in User Service)
+        - 
+        - One of the more common AAA protocols
+        - – Supported on a wide variety of platforms and devices
+        - – Not just for dial-in
+        - 
+        - Centralize authentication for users
+        - – Routers, switches, firewalls
+        - – Server authentication
+        - – Remote VPN access
+        - – 802.1X network access
+        - 
+        - RADIUS services available on almost any server
+        - operating system
+        - TACACS
+        - 
+        - Terminal Access Controller
+        - – Access-Control System
+        - – Remote authentication protocol
+        - – Created to control access to dial-up lines to ARPANET
+        - 
+        - TACACS+
+        - – The latest version of TACACS
+        - – More authentication requests and response codes
+        - – Released as an open standard in 1993
+        - Kerberos
+        - 
+        - Network authentication protocol
+        - – Authenticate once, trusted by the system
+        - – No need to re-authenticate to everything
+        - – Mutual authentication - the client and the server
+        - – Protect against on-path or replay attacks
+        - 
+        - Standard since the 1980s
+        - – Developed by the Massachusetts Institute of
+        - Technology (MIT)
+        - 
+        - Microsoft starting using Kerberos in Windows 2000
+        - – Based on Kerberos 5.0 open standard
+        - – Compatible with other operating systems and devices
+        - 2.3 - Malware
+        - Malware
+        - 
+        - Malicious software - These can be very bad
+        - 
+        - Gather information - Keystrokes
+        - 
+        - Participate in a group - Controlled over the ‘net
+        - 
+        - Show you advertising - Big money
+        - 
+        - Viruses and worms
+        - – Encrypt your data and ruin your day
+        - Malware types and methods
+        - 
+        - Trojan Horse
+        - 
+        - Rootkit
+        - 
+        - Viruses
+        - 
+        - Spyware
+        - 
+        - Ransomware
+        - 
+        - 
+        - Keylogger
+        - Boot sector virus
+        - 
+        - Cryptominers
+        - SSO with Kerberos
+        - 
+        - Authenticate one time
+        - – Lots of backend ticketing
+        - – Cryptographic tickets
+        - 
+        - No constant username and password input!
+        - – Save time
+        - 
+        - Only works with Kerberos
+        - – Not everything is Kerberos-friendly
+        - 
+        - There are many other SSO methods
+        - – Smart-cards, SAML, etc.
+        - Which method to use?
+        - 
+        - Many different ways to communicate to an
+        - authentication server
+        - – More than a simple login process
+        - 
+        - Often determined by what is at hand
+        - – VPN concentrator can talk to a RADIUS server
+        - – We have a RADIUS server
+        - 
+        - TACACS+
+        - – Probably a Cisco device
+        - 
+        - Kerberos - Probably a Microsoft network
+        - Multi-factor authentication
+        - 
+        - More than one factor
+        - – Something you are
+        - – Something you have
+        - – Something you know
+        - – Somewhere you are
+        - – Something you do
+        - 
+        - Can be expensive
+        - – Separate hardware tokens
+        - – Specialized scanning equipment
+        - 
+        - Can be inexpensive - Free smartphone applications
+        - How you get malware
+        - 
+        - These all work together
+        - – Malicious software takes advantage of a vulnerability
+        - – Installs malware that includes a remote access backdoor
+        - – Bot may be installed later
+        - 
+        - Your computer must run a program
+        - – Email link - Don’t click links
+        - – Web page pop-up
+        - – Drive-by download
+        - – Worm
+        - 
+        - Your computer is vulnerable
+        - – Operating system - Keep your OS updated!
+        - – Applications - Check with the publisher
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 24
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.3 - Malware (continued)
+        - Trojan horse
+        - 
+        - Used by the Greeks to capture Troy from the Trojans
+        - – A digital wooden horse
+        - 
+        - Software that pretends to be something else
+        - – So it can conquer your computer
+        - – Doesn’t really care much about replicating
+        - 
+        - Circumvents your existing security
+        - – Anti-virus may catch it when it runs
+        - – The better Trojans are built to avoid and disable AV
+        - 
+        - Once it’s inside it has free reign
+        - – And it may open the gates for other programs
+        - Rootkits
+        - 
+        - Originally a Unix technique
+        - – The “root” in rootkit
+        - 
+        - Modifies core system files
+        - – Part of the kernel
+        - 
+        - Can be invisible to the operating system
+        - – Won’t see it in Task Manager
+        - 
+        - Also invisible to traditional anti-virus utilities
+        - – If you can’t see it, you can’t stop it
+        - – Finding and removing rootkits
+        - 
+        - Look for the unusual
+        - – Anti-malware scans
+        - 
+        - Use a remover specific to the rootkit
+        - – Usually built after the rootkit is discovered
+        - 
+        - Secure boot with UEFI
+        - – Security in the BIOS
+        - Virus
+        - 
+        - Malware that can reproduce itself
+        - – It needs you to execute a program
+        - 
+        - Reproduces through file systems or the network
+        - – Just running a program can spread a virus
+        - 
+        - May or may not cause problems
+        - – Some viruses are invisible, some are annoying
+        - 
+        - Anti-virus is very common
+        - – Thousands of new viruses every week
+        - – Is your signature file updated?
+        - – Boot sector virus
+        - 
+        - Most viruses run after the OS is loaded
+        - – Like most applications
+        - 
+        - Some boot loaders can be modified to run malware
+        - – Runs every time you start your computer
+        - 
+        - Modern UEFI BIOS includes Secure Boot
+        - – Prevent unsigned software from running during the
+        - boot process
+        - Spyware
+        - 
+        - Malware that spies on you
+        - – Advertising, identity theft, affiliate fraud
+        - 
+        - Can trick you into installing
+        - – Peer to peer, fake security software
+        - 
+        - Browser monitoring - Capture surfing habits
+        - 
+        - Keyloggers
+        - – Capture every keystroke
+        - – Send it back to the mother ship
+        - Ransomware
+        - 
+        - A particularly nasty malware
+        - – Your data is unavailable until you provide cash
+        - 
+        - Malware encrypts your data files
+        - – Pictures, documents, music, movies, etc.
+        - – Your OS remains available
+        - – They want you running, but not working
+        - 
+        - You must pay the bad guys to obtain the decryption key
+        - – Untraceable payment system
+        - – An unfortunate use of public-key cryptography
+        - Keyloggers
+        - 
+        - Your keystrokes contain valuable information
+        - – Web site login URLs, passwords, email messages
+        - 
+        - Save all of your input
+        - – Send it to the bad guys
+        - 
+        - Circumvents encryption protections
+        - – Your keystrokes are in the clear
+        - 
+        - Other data logging
+        - – Clipboard logging, screen logging,
+        - instant messaging, search engine queries
+        - Cryptominers
+        - 
+        - Some cryptocurrency mining requires “proof of work”
+        - – Usually consists of a difficult math problem
+        - – Answer the problem and earn some currency
+        - 
+        - This requires extensive CPU processing
+        - – One CPU isn’t enough
+        - – Attackers want to use your CPU
+        - 
+        - May appear in different ways
+        - – Visit a website and CPU utilization spikes
+        - – Malware is installed and mining is always occurring
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 25
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.3 - Anti-Malware Tools
+        - Windows Recovery Environment
+        - 
+        - Very powerful
+        - 
+        - Very dangerous
+        - – Last resort
+        - 
+        - Complete control
+        - – Fix your problems before the system starts
+        - – Remove malicious software
+        - 
+        - Requires additional information
+        - – Use, copy, rename, or replace operating system files
+        - and folders
+        - – Enable or disable service or device startup
+        - – Repair the file system boot sector or the
+        - master boot record (MBR)
+        - Starting the console
+        - 
+        - All Windows versions
+        - – Hold Shift key while clicking Restart
+        - – Or boot from installation media
+        - 
+        - 
+        - 
+        - Windows 10
+        - – Settings > Update and Security > Recovery >
+        - Advanced startup
+        - Windows 11
+        - – System > Recovery > Advanced startup > Restart now
+        - After rebooting
+        - – Troubleshoot > Advanced Options > Command Prompt
+        - Anti-virus and anti-malware
+        - 
+        - You need both
+        - – Often included together
+        - 
+        - Real-time options
+        - – Not just an on-demand scan
+        - 
+        - Modern anti-malware recognizes malicious activity
+        - – Doesn’t require a specific set of signatures
+        - Software firewalls
+        - 
+        - Monitor the local computer
+        - – Alert on unknown or unauthorized
+        - network communication
+        - 2.4 - Social Engineering
+        - Effective social engineering
+        - 
+        - Constantly changing - You never know what they’ll use next
+        - 
+        - May involve multiple people
+        - – And multiple organizations
+        - – There are ties connecting many organizations
+        - 
+        - May be in person or electronic
+        - – Phone calls from aggressive “customers”
+        - – Emailed funeral notifications of a friend or associate
+        - 
+        - Prevent malware communication
+        - – Downloads after infection
+        - – Botnet communication
+        - 
+        - Use Windows Firewall - At a minimum
+        - 
+        - Runs by default
+        - – Constantly monitoring
+        - – Any network connection
+        - Anti-phishing training
+        - 
+        - No single technology can stop social engineering
+        - – Don’t give away private information
+        - – The user is the best anti-phishing
+        - 
+        - Extensive training - Avoid becoming a victim
+        - 
+        - Test the users
+        - – Send a phishing email
+        - – Find out who clicks and gives up information
+        - 
+        - Train again
+        - End user education
+        - 
+        - One on one - Personal training
+        - 
+        - Posters and signs - High visibility
+        - 
+        - Message board posting - The real kind
+        - 
+        - Login message - These become invisible
+        - 
+        - Intranet page - Always available
+        - OS reinstallation
+        - 
+        - Only one way to guarantee malware removal
+        - – Delete everything
+        - – Install from scratch
+        - 
+        - 
+        - Restore from backup (fast)
+        - – As long as the backup is not also infected
+        - Manual installation (slowest)
+        - – Backup data files
+        - – Install Windows from installation media
+        - 
+        - Image the system (fastest)
+        - – User’s data files are on a network share
+        - – Recover from a prebuilt image
+        - Phishing
+        - 
+        - Social engineering with a touch of spoofing
+        - – Often delivered by email, text, etc.
+        - 
+        - Don’t be fooled - Check the URL
+        - 
+        - Usually there’s something not quite right
+        - – Spelling, fonts, graphics
+        - 
+        - Vishing (Voice phishing) is done over
+        - the phone or voicemail
+        - – Caller ID spoofing is common
+        - – Fake security checks or bank updates
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 26
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.4 - Social Engineering (continued)
+        - Shoulder surfing
+        - 
+        - You have access to important information
+        - – Many people want to see
+        - – Curiosity, industrial espionage, competitive advantage
+        - 
+        - This is surprisingly easy
+        - – Airports / Flights, hallway-facing monitors,
+        - or coffee shops
+        - 
+        - Surf from afar
+        - – Binoculars / Telescopes (easy in the big city)
+        - – Webcam monitoring
+        - Preventing shoulder surfing
+        - 
+        - Control your input
+        - – Be aware of your surroundings
+        - 
+        - Use privacy filters
+        - – It’s amazing how well they work
+        - 
+        - Keep your monitor out of sight
+        - – Away from windows and hallways
+        - 
+        - Don’t sit in front of me on your flight
+        - – I can’t help myself
+        - Spear phishing
+        - 
+        - Targeted phishing with inside information
+        - – Makes the attack more believable
+        - 
+        - Spear phishing the CEO is “whaling”
+        - – Targeted phishing with the possibility of a large catch
+        - – The CFO (Chief Financial Officer) is commonly speared
+        - 
+        - These executives have direct access to the corporate
+        - bank account
+        - – The attackers would love to have those credentials
+        - Tailgating and piggybacking
+        - 
+        - Tailgating uses an authorized person to gain
+        - unauthorized access to a building
+        - – The attacker does not have consent
+        - – Sneaks through when nobody is looking
+        - 
+        - Piggybacking follows the same process, but the
+        - authorized person is giving consent
+        - – Hold the door, my hands are full of donut boxes
+        - – Sometimes you shouldn’t be polite
+        - 
+        - Once inside, there’s little to stop you
+        - – Most security stops at the border
+        - Watching for tailgating
+        - 
+        - Policy for visitors - You should be able to identify
+        - anyone
+        - 
+        - One scan, one person
+        - – A matter of policy or mechanically required
+        - 
+        - Access Control Vestibule / Airlock
+        - – You don’t have a choice
+        - 
+        - Don’t be afraid to ask
+        - – Who are you and why are you here?
+        - Impersonation
+        - 
+        - Pretend to be someone you aren’t
+        - – Halloween for the fraudsters
+        - 
+        - Use some of those details you got from the dumpster
+        - – You can trust me, I’m with your help desk
+        - 
+        - Attack the victim as someone higher in rank
+        - – Office of the Vice President for Scamming
+        - 
+        - Throw tons of technical details around
+        - – Catastrophic feedback due to the
+        - depolarization of the differential magnetometer
+        - 
+        - Be a buddy
+        - – How about those Cubs?
+        - Dumpster diving
+        - 
+        - Mobile garbage bin
+        - – United States brand name “Dumpster”
+        - – Similar to a rubbish skip
+        - 
+        - Important information thrown out with the trash
+        - – Thanks for bagging your garbage for me!
+        - 
+        - Gather details that can be used for a different attack
+        - – Impersonate names, use phone numbers
+        - 
+        - Timing is important
+        - – Just after end of month, end of quarter
+        - – Based on pickup schedule
+        - Wireless evil twins
+        - 
+        - Looks legitimate, but actually malicious
+        - – The wireless version of phishing
+        - 
+        - Configure an access point to look like
+        - an existing network
+        - – Same (or similar) SSID and security
+        - settings/captive portal
+        - 
+        - Overpower the existing access points
+        - – May not require the same physical location
+        - 
+        - WiFi hotspots (and users) are easy to fool
+        - – And they’re wide open
+        - 
+        - You encrypt your communication, right?
+        - – Use HTTPS and a VPN
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 27
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.4 - Denial of Service
+        - Denial of service
+        - 
+        - Force a service to fail
+        - – Overload the service
+        - 
+        - 
+        - 
+        - 
+        - Take advantage of a design failure or vulnerability
+        - – Keep your systems patched!
+        - Cause a system to be unavailable
+        - – Competitive advantage
+        - Create a smokescreen for some other exploit
+        - – Precursor to a DNS spoofing attack
+        - Doesn’t have to be complicated
+        - – Turn off the power
+        - A “friendly” DoS
+        - 
+        - Unintentional DoSing
+        - – It’s not always a ne’er-do-well
+        - 
+        - Network DoS
+        - – Layer 2 loop without STP
+        - 
+        - Bandwidth DoS
+        - – Downloading multi-gigabyte Linux distributions
+        - over a DSL line
+        - 
+        - The water line breaks
+        - – Get a good shop vacuum
+        - 2.4 - Zero-Day Attacks
+        - Zero-day attacks
+        - 
+        - Many applications have vulnerabilities
+        - – We’ve just not found them yet
+        - 
+        - Someone is working hard to find the
+        - next big vulnerability
+        - – The good guys share these with developers
+        - 
+        - Attackers keep these yet-to-be-discovered
+        - holes to themselves
+        - – They want to use these vulnerabilities for personal gain
+        - 
+        - Zero-day
+        - – The vulnerability has not been detected or published
+        - – Zero-day exploits are increasingly common
+        - 
+        - Common Vulnerabilities and Exposures (CVE)
+        - – [https://cve.mitre.org/](https://cve.mitre.org/)
+        - 2.4 - On-Path Attacks
+        - On-path network attack
+        - 
+        - How can an attacker watch without you knowing?
+        - – Formerly known as man-in-the-middle
+        - 
+        - Redirects your traffic
+        - – Then passes it on to the destination
+        - – You never know your traffic was redirected
+        - 
+        - ARP poisoning
+        - – On-path attack on the local IP subnet
+        - – ARP has no security
+        - – ARP poisoning (spoofing)
+        - Distributed Denial of Service (DDoS)
+        - 
+        - Launch an army of computers to bring down a service
+        - – Use all the bandwidth or resources - traffic spike
+        - 
+        - This is why the bad guys have botnets
+        - – Thousands or millions of computers at your command
+        - – At its peak, Zeus botnet infected over 3.6 million PCs
+        - – Coordinated attack
+        - 
+        - The attackers are zombies
+        - – Many people have no idea they are participating
+        - in a botnet
+        - Mitigating DDoS attacks
+        - 
+        - May be able to filter out traffic patterns
+        - – Stop the traffic at your firewall
+        - 
+        - Internet service provider may have anti-DDoS systems
+        - – These can help “turn down” the DDoS volume
+        - 
+        - Third-party technologies
+        - – CloudFlare, etc.
+        - Zero-day vulnerabilities
+        - 
+        - December 9, 2021 - Log4j remote code execution
+        - – Java-based logging utility provided as
+        - an Apache service
+        - – Installed on millions of servers
+        - – Vulnerability introduced on September 14th, 2013
+        - 
+        - December 14th - Fix is released
+        - – Extensive patching
+        - 
+        - December 17th -
+        - – Two new issues fixed
+        - – Everyone is looking for bugs
+        - On-path browser attack
+        - 
+        - What if the middleman was on the same
+        - computer as the victim?
+        - – Malware/Trojan does all of the proxy work
+        - – Formerly known as man-in-the-browser
+        - 
+        - Huge advantages for the attackers
+        - – Relatively easy to proxy encrypted traffic
+        - – Everything looks normal to the victim
+        - 
+        - The malware in your browser waits for you
+        - to login to your bank
+        - – And cleans you out
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 28
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.4 - On-Path Attacks (continued)
+        - ARP poisoning (spoofing)
+        - 1
+        - A legitimate response to
+        - an ARP request is received
+        - from the default gateway.
+        - The ARP response is
+        - cached on the local device.
+        - ARP Response: I am 192.168.1.1
+        - My MAC address is 11:22:33:44:55:66
+        - 192.168.1.9
+        - c8:bc:c8:a7:38:d5
+        - 192.168.1.1
+        - 11:22:33:44:55:66
+        - ARP Cache
+        - 192.168.1.1 = 11:22:33:44:55:66
+        - 2
+        - An attacker sends an ARP
+        - response that spoofs the IP
+        - address of the router and
+        - includes the attacker’s MAC
+        - address.
+        - The malicious ARP information
+        - replaces the cached record,
+        - completing the ARP poisoning.
+        - 192.168.1.9
+        - c8:bc:c8:a7:38:d5
+        - ARP Response: I am 192.168.1.1
+        - My MAC address is aa:bb:cc:dd:ee:ﬀ
+        - ARP Cache
+        - 192.168.1.1 = 11:22:33:44:55:66
+        - 192.168.1.1 = aa:bb:cc:dd:ee:ﬀ
+        - 192.168.1.1
+        - 11:22:33:44:55:66
+        - 192.168.1.4
+        - aa:bb:cc:dd:ee:ﬀ
+        - 2.4 - Password Attacks
+        - Plaintext / unencrypted passwords
+        - 
+        - Some applications store passwords “in the clear”
+        - – No encryption. You can read the stored password.
+        - – This is rare, thankfully
+        - 
+        - Do not store passwords as plaintext
+        - – Anyone with access to the password file or
+        - database has every credential
+        - 
+        - What to do if your application saves passwords
+        - as plaintext:
+        - – Get a better application
+        - Hashing a password
+        - 
+        - Hashes represent data as a fixed-length string of text
+        - – A message digest, or “fingerprint”
+        - 
+        - Will not have a collision (hopefully)
+        - – Different inputs will not have the same hash
+        - 
+        - One-way trip
+        - – Impossible to recover the original message
+        - from the digest
+        - – A common way to store passwords
+        - The password file
+        - 
+        - Different across operating systems and applications
+        - – Different hash algorithms
+        - Brute force
+        - 
+        - Try every possible password combination
+        - until the hash is matched
+        - 
+        - This might take some time
+        - – A strong hashing algorithm slows things down
+        - 
+        - Brute force attacks - Online
+        - – Keep trying the login process
+        - – Very slow
+        - – Most accounts will lockout after a number of
+        - failed attempts
+        - 
+        - Brute force the hash - Offline
+        - – Obtain the list of users and hashes
+        - – Calculate a password hash, compare it to a stored
+        - hash
+        - – Large computational resource requirement
+        - Dictionary attacks
+        - 
+        - Use a dictionary to find common words
+        - – Passwords are created by humans
+        - 
+        - Many common wordlists available on the ‘net
+        - – Some are customized by language or line of work
+        - 
+        - The password crackers can substitute letters
+        - – p&ssw0rd
+        - 
+        - This takes time
+        - – Distributed cracking and GPU cracking is common
+        - 
+        - Discover passwords for common words
+        - – This won’t discover random character passwords
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 29
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.4 - Insider Threats
+        - Insider threats
+        - 
+        - More than just passwords on sticky notes
+        - – Some insiders are out for no good
+        - 
+        - Sophistication may not be advanced, but the insider
+        - has institutional knowledge
+        - – Attacks can be directed at vulnerable systems
+        - – The insider knows what to hit
+        - 
+        - Extensive resources
+        - – Eating away from the inside
+        - Recruiting insiders
+        - 
+        - We’re getting better with protecting the network perimeter
+        - – It’s an ongoing race
+        - 
+        - Ransomware actors are targeting insiders
+        - – Offering Bitcoin in exchange for access
+        - – One ransomware infection can earn millions
+        - for an attacker
+        - 
+        - Keep aware
+        - – Maintain good security fundamentals
+        - – Always have backups
+        - 2.4 - SQL Injection
+        - Code injection
+        - 
+        - Code injection
+        - – Adding your own information into a data stream
+        - 
+        - Enabled because of bad programming
+        - – The application should properly handle input
+        - and output
+        - 
+        - So many different data types
+        - – HTML, SQL, XML, LDAP, etc.
+        - SQL injection
+        - 
+        - SQL - Structured Query Language
+        - – The most common relational database management
+        - system language
+        - 
+        - SQL Injection
+        - – Modify SQL requests (Your application shouldn’t allow this)
+        - 
+        - If you can manipulate the database,
+        - then you control the application
+        - – A significant vulnerability
+        - 2.4 - Cross-site Scripting
+        - Cross-site scripting
+        - 
+        - XSS
+        - – Cascading Style Sheets (CSS) are
+        - something else entirely
+        - 
+        - Originally called cross-site because of
+        - browser security flaws
+        - – Information from one site could be
+        - shared with another
+        - 
+        - One of the most common web application
+        - development errors
+        - – Takes advantage of the trust a user has for a site
+        - – Complex and varied
+        - 
+        - Malware that uses JavaScript
+        - – Do you allow scripts? Me too.
+        - Non-persistent (reflected) XSS attack
+        - 
+        - Web site allows scripts to run in user input
+        - – Search box is a common source
+        - 
+        - Attacker emails a link that takes advantage of
+        - this vulnerability
+        - – Runs a script that sends credentials /
+        - session IDs / cookies to the attacker
+        - 
+        - Script embedded in URL executes in
+        - the victim’s browser
+        - – As if it came from the server
+        - 
+        - Attacker uses credentials/session IDs/ cookies to
+        - steal victim’s information without their knowledge
+        - – Very sneaky
+        - Persistent (stored) XSS attack
+        - 
+        - Attacker posts a message to a social network
+        - – Includes the malicious payload
+        - 
+        - It’s now “persistent”- Everyone gets the payload
+        - 
+        - No specific target - All viewers to the page
+        - 
+        - For social networking, this can spread quickly
+        - – Everyone who views the message can have it
+        - posted to their page
+        - – Where someone else can view it and propagate it further...
+        - Hacking a Subaru
+        - 
+        - June 2017, Aaron Guzman - Security researcher
+        - 
+        - When authenticating with Subaru, users get a token
+        - – This token never expires (bad!)
+        - 
+        - A valid token allowed any service request
+        - – Even adding your email address to someone else’s account
+        - – Now you have full access to someone else’s car
+        - 
+        - Web front-end included an XSS vulnerability
+        - – A user clicks a malicious link, and you have their token
+        - Protecting against XSS
+        - 
+        - Be careful when clicking untrusted links
+        - – Never blindly click in your email inbox. Never.
+        - 
+        - Consider disabling JavaScript
+        - – Or control with an extension
+        - – This offers limited protection
+        - 
+        - Keep your browser and applications updated
+        - – Avoid the nasty browser vulnerabilities
+        - 
+        - Validate input
+        - – Don’t allow users to add their own scripts to an input field
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 30
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.4 - Security Vulnerabilities
+        - Non-compliant systems
+        - 
+        - A constant challenge
+        - – There are always changes and updates
+        - 
+        - Standard operating environments (SOE)
+        - – A set of tested and approved
+        - hardware/software systems
+        - – Often a standard operating system image
+        - 
+        - Operating system and application updates
+        - – Must have patches to be in compliance
+        - – OS updates, anti-virus signatures
+        - – Can be checked and verified before access is given
+        - Protecting against non-compliant systems
+        - 
+        - Operating system control
+        - – Apply policies that will prevent
+        - non-compliant software
+        - 
+        - Monitor the network for application traffic
+        - – Next-generation firewalls with application visibility
+        - 
+        - Perform periodic scans
+        - – Login systems can scan for non-compliance
+        - – Require correction before the system is given access
+        - Unpatched systems
+        - 
+        - Microsoft Patch Tuesday
+        - – Second Tuesday of each month (10:00 AM PST)
+        - 
+        - Suddenly, systems are vulnerable to security flaws
+        - – Patch the operating system and applications
+        - 
+        - An organization might have thousands of systems
+        - – Some of those are major services
+        - 
+        - One forgotten system may be the weakest link
+        - – This happens quite a bit
+        - 
+        - Patch management is a critical practice
+        - – Test, prioritize, and deploy
+        - 2.5 - Defender Antivirus
+        - Microsoft Defender Antivirus
+        - 
+        - Built-in antivirus for Windows 10 and 11
+        - – No additional third-party products required
+        - 
+        - Included in the Windows Security app
+        - – Virus & threat protection
+        - 
+        - May not specifically display “Defender Antivirus”
+        - – The name has changed over time
+        - – Windows Defender
+        - – Microsoft Defender Antivirus
+        - Activate or deactivate
+        - 
+        - Don’t disable your security protection
+        - – This is for temporary troubleshooting
+        - – This will increase risk
+        - – Make sure you know what you’re doing
+        - Unprotected systems
+        - 
+        - Security issues are often roadblocks
+        - – Applications may not work properly without
+        - additional configurations
+        - 
+        - Some troubleshooting tasks can be insecure
+        - – Disable antivirus and try again
+        - – Disable the firewall and try again
+        - 
+        - Permanently disabling security isn’t the answer
+        - – You don’t fix a bad door lock by removing the door
+        - – Become an expert in application troubleshooting
+        - Product support lifetime
+        - 
+        - End of life (EOL) operating systems
+        - – Manufacturer stops selling an OS
+        - – May continue supporting the OS
+        - – Important for security patches and updates
+        - 
+        - End of service life (EOSL)
+        - – Manufacturer stops selling an OS
+        - – Support is no longer available
+        - – No ongoing security patches or updates
+        - – May have a premium-cost support option
+        - 
+        - Technology EOSL is a significant concern
+        - – Security patches are part of normal operation
+        - BYOD
+        - 
+        - Bring Your Own Device / Bring Your Own Technology
+        - 
+        - Employee owns the device
+        - – Need to meet the company’s requirements
+        - 
+        - Difficult to secure
+        - – It’s both a home device and a work device
+        - – How is data protected?
+        - – What happens to the data when a device is
+        - sold or traded in?
+        - – An infected device could disclose proprietary
+        - company information
+        - 
+        - Defender Antivirus operates in real-time
+        - – Enable or disable this feature
+        - 
+        - Windows Security app
+        - – Virus & threat protection settings >
+        - – Manage settings > Real-time protection
+        - Updated definitions
+        - 
+        - Antivirus is only as good as the latest signatures
+        - – It’s important to stay up to date
+        - 
+        - Virus & threat protection updates
+        - – Check for updates
+        - 
+        - Click the “Check for updates” button
+        - – Automatic updates are normally configured
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 31
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.5 - Windows Firewall
+        - Enabling and disabling Windows Firewall
+        - 
+        - Your firewall should always be enabled
+        - – Sometimes you need to troubleshoot
+        - 
+        - Temporarily disable from the Control Panel or
+        - from Windows Security
+        - – Turn Windows Firewall on or off
+        - – Requires elevated permissions
+        - 
+        - Different settings for each network type
+        - – Public / Private
+        - Windows Firewall configuration
+        - 
+        - Block all incoming connections
+        - – Ignores your exception list
+        - – Useful when you need security
+        - 
+        - Modify notification - App blocking
+        - 2.5 - Windows Security Settings
+        - Windows authentication
+        - 
+        - Login to the Windows desktop
+        - – And access network resources
+        - 
+        - 
+        - 
+        - Local accounts
+        - – Only associated with a specific Windows device
+        - Microsoft accounts
+        - – Sync settings between devices, integrate applications
+        - (Skype, Office) with OneDrive, and more
+        - Windows Domain accounts
+        - – Centrally managed from Active Directory
+        - Users and groups
+        - 
+        - Users
+        - – Administrator
+        - – The Windows super-user
+        - – Guest (Limited access)
+        - – Standard Users
+        - 
+        - Groups
+        - – Power Users
+        - – Not much more control than a regular user
+        - – Permissions removed in Windows Vista and later
+        - Login options
+        - 
+        - Username / password
+        - – Common authentication credentials
+        - 
+        - Personal Identification Number (PIN)
+        - – A local access code
+        - 
+        - 
+        - Biometrics
+        - – Fingerprint, facial recognition
+        - Single sign-on (SSO)
+        - – Windows Domain credentials
+        - – Sign in one time
+        - Creating a firewall exception
+        - 
+        - Allow an app or feature through Windows Firewall
+        - – The more secure exception
+        - 
+        - Port number
+        - – Block or allow
+        - 
+        - Predefined exceptions
+        - – List of common exceptions
+        - – Custom rule
+        - – Every firewall option
+        - NTFS vs. Share permissions
+        - 
+        - NTFS permissions apply from local and
+        - network connections
+        - 
+        - Share permissions only apply to connections
+        - over the network
+        - – A “network share”
+        - 
+        - The most restrictive setting wins
+        - – Deny beats allow
+        - 
+        - NTFS permissions are inherited from
+        - the parent object
+        - – Unless you move to a different folder
+        - on the same volume
+        - Explicit and inherited permissions
+        - 
+        - Explicit permissions
+        - – Set default permissions for a share
+        - 
+        - Inherited permissions
+        - – Propagated from the parent object to
+        - the child object
+        - – Set a permission once, it applies to
+        - everything underneath
+        - 
+        - Explicit permissions take precedence over
+        - inherited permissions
+        - – Even inherited deny permissions
+        - Run as administrator
+        - 
+        - Administrators have special rights and permissions
+        - – Editing system files, installing services
+        - 
+        - Use rights and permissions of the administrator
+        - – You don’t get these by default, even if you’re in
+        - the Administrators group
+        - 
+        - Right-click the application
+        - – Run as administrator
+        - – Or search and click “Run as administrator”
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 32
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.5 - Windows Security Settings (continued)
+        - UAC (User Account Control)
+        - 
+        - Limit software access - Protect your computer
+        - 
+        - Standard users
+        - – Use the network or change your password
+        - 
+        - Administrators
+        - – Install applications or configure Remote Desktop
+        - 
+        - Secure Desktop - Limits automated access
+        - BitLocker
+        - 
+        - Encrypt an entire volume
+        - – Protects all of your data, including the OS
+        - – Support for all Windows editions except Home
+        - 
+        - Lose your laptop? - Doesn’t matter without the password
+        - 
+        - Data is always protected
+        - – Even if the physical drive is moved to another computer
+        - 
+        - BitLocker To Go - Encrypt removable USB flash drives
+        - EFS
+        - 
+        - 
+        - 
+        - Encrypting File System
+        - – Encrypt at the file system level
+        - – Requires the NTFS file system
+        - OS support
+        - – Support for all Windows editions except Home
+        - Uses password and username to encrypt the key
+        - – Administrative resets will cause EFS files to be
+        - inaccessible
+        - 2.6 - Security Best Practices
+        - Data encryption
+        - 
+        - Full-disk encryption
+        - – Encrypt data-at-rest
+        - 
+        - File system encryption
+        - – Individual files and folders
+        - 
+        - Removable media
+        - – Protect those USB flash drives
+        - 
+        - Key backups are critical
+        - – You always need to have a copy
+        - – This may be integrated into Active Directory
+        - – You’ll want to keep the key handy
+        - Password complexity and length
+        - 
+        - Make your password strong
+        - – Resist guessing or brute-force attack
+        - 
+        - Increase password entropy
+        - – No single words, no obvious passwords
+        - – Mix upper and lower case and use special characters
+        - 
+        - Stronger passwords are at least 8 characters
+        - – Consider a phrase or set of words
+        - Password expiration and recovery
+        - 
+        - All passwords should expire
+        - – Change every 30 days, 60 days, 90 days
+        - – System remembers password history,
+        - requires unique passwords
+        - 
+        - Critical systems might change more frequently
+        - – Every 15 days or every week
+        - 
+        - The recovery process should not be trivial!
+        - – Some organizations have a very formal process
+        - Password best practices
+        - 
+        - Changing default usernames/passwords
+        - – All devices have defaults
+        - – There are many web sites that document these
+        - 
+        - BIOS/UEFI passwords
+        - – Supervisor/Administrator password:
+        - Prevent BIOS changes
+        - – User password: Prevent booting
+        - 
+        - Requiring passwords
+        - – Always require passwords
+        - – No blank passwords
+        - – No automated logins
+        - End-user best practices
+        - 
+        - Require a screensaver password
+        - – Integrate with login credentials
+        - – Can be administratively enforced
+        - 
+        - Does not require user intervention
+        - – Automatically locks after non-use or timeout
+        - 
+        - Secure critical hardware
+        - – Laptops can easily walk away -
+        - – Lock them down
+        - Securing PII and passwords
+        - 
+        - Personally identifiable information
+        - – Name, address, social security number, etc.
+        - 
+        - Control your input
+        - – Be aware of your surroundings
+        - 
+        - Use privacy filters
+        - – It’s amazing how well they work
+        - 
+        - Keep your monitor out of sight
+        - – Away from windows and hallways
+        - 
+        - Don’t sit in front of me on your flight
+        - – I can’t help myself
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 33
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.6 - Security Best Practices (continued)
+        - Account management
+        - 
+        - User permissions
+        - – Everyone isn’t an Administrator
+        - – Assign proper rights and permissions
+        - – This may be an involved audit
+        - 
+        - Assign rights based on groups
+        - – More difficult to manage per-user rights
+        - – Becomes more useful as you grow
+        - 
+        - Login time restrictions
+        - – Only login during working hours
+        - – Restrict after-hours activities
+        - Disabling unnecessary accounts
+        - 
+        - All operating systems include other accounts
+        - – Guest, root, mail, etc.
+        - 
+        - Not all accounts are necessary
+        - – Disable/remove the unnecessary
+        - – Disable the guest account
+        - 
+        - Disable interactive logins
+        - – Not all accounts need to login
+        - 
+        - Change the default usernames
+        - – User:admin Password:admin
+        - – Helps with brute-force attacks
+        - Locking the desktop
+        - 
+        - Failed password attempts
+        - – Should lock the account and/or reboot after
+        - a certain threshold
+        - – Prevents online brute force attacks
+        - 
+        - Automatically lock the system
+        - – After a certain amount of inactivity
+        - – Or when you walk away
+        - AutoRun and AutoPlay
+        - 
+        - Disable AutoRun on older OSes
+        - – autorun.inf in Vista
+        - – No Autorun in Windows 7, 8/8.1, 10, or 11
+        - – Disabled through the registry
+        - 
+        - Disable AutoPlay
+        - – Configure in Settings >
+        - Bluetooth & devices >
+        - AutoPlay
+        - 
+        - Get the latest security patches
+        - – Updates to autorun.inf and AutoPlay
+        - 2.7 - Mobile Device Security
+        - Screen locks
+        - 
+        - Restrict access to the device
+        - – You’re going to leave it somewhere
+        - 
+        - Facial recognition
+        - – Unlock with your face
+        - 
+        - PIN
+        - – Choose a personal identification number
+        - 
+        - Fingerprint
+        - – Built-in fingerprint reader
+        - 
+        - Swipe
+        - – Choose a pattern
+        - 
+        - Failed attempts
+        - – iOS: Erase everything after 10 failed attempts
+        - – Android: Lock the device and require a
+        - Google login or wipe the device
+        - Locator applications and remote wipe
+        - 
+        - Built-in GPS
+        - – And location “helpers”
+        - 
+        - Find your phone
+        - – On a map.
+        - 
+        - Control from afar
+        - – Make a sound
+        - – Display a message
+        - 
+        - Wipe everything
+        - – At least your data is safe
+        - Patching/OS updates
+        - 
+        - All devices need updates - Even mobile devices
+        - 
+        - Device patches - Security updates
+        - 
+        - Operating system updates
+        - – New features, bug fixes
+        - 
+        - Don’t get behind!
+        - – Avoid security problems
+        - Full device encryption
+        - 
+        - Encrypt all device data
+        - – Phone keeps the key
+        - 
+        - iOS 8 and later
+        - – Personal data is encrypted with your passcode
+        - 
+        - Android
+        - – Version 5.0 and later is probably already encrypted
+        - Remote backup
+        - 
+        - Difficult to backup something that’s always moving
+        - – Backup to the cloud
+        - 
+        - Constant backup
+        - – No manual process
+        - 
+        - Backup without wires
+        - – Use the existing network
+        - 
+        - Restore with one click
+        - – Restores everything
+        - – Authenticate and wait
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 34
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.7 - Mobile Device Security (continued)
+        - Anti-virus and anti-malware
+        - 
+        - Apple iOS
+        - – Closed environment, tightly regulated
+        - – Malware has to find a vulnerability
+        - 
+        - Android
+        - – More open, apps can be installed from anywhere
+        - – Easier for malware to find its way in
+        - 
+        - Apps run in a “sandbox”
+        - – You control what data an app can view
+        - 
+        - Third-party virus and malware protection
+        - – Available from the usual providers
+        - Firewalls
+        - 
+        - Mobile phones don’t include a firewall
+        - – Most activity initiates outbound, not inbound
+        - 
+        - Some mobile firewall apps are available
+        - – Most for Android
+        - – None seem to be widely used
+        - 
+        - Enterprise environments can control mobile apps
+        - – Firewalls can allow or disallow access
+        - Policies and procedures
+        - 
+        - Manage company-owned and user-owned
+        - mobile devices
+        - – BYOD - Bring Your Own Device
+        - 
+        - Centralized management of the mobile devices
+        - – Specialized functionality /
+        - Mobile Device Manager (MDM)
+        - 
+        - Set policies on apps, data, camera, etc.
+        - – Control the remote device
+        - – The entire device or a “partition”
+        - 
+        - Manage access control
+        - – Force screen locks and PINs on these single user devices
+        - IoT (Internet of Things)
+        - 
+        - Sensors - Heating and cooling, lighting
+        - 
+        - Smart devices - Home automation, video doorbells
+        - 
+        - Wearable technology - Watches, health monitors
+        - 
+        - Facility automation - Temperature, air quality, lighting
+        - 
+        - Weak defaults
+        - – IoT manufacturers are not security professionals
+        - – Consider isolating IoT devices on their own network
+        - 2.8 - Data Destruction
+        - Physical destruction
+        - 
+        - Shredder
+        - – Heavy machinery - complete destruction
+        - 
+        - Drill / Hammer
+        - – Quick and easy - Platters, all the way through
+        - 
+        - Electromagnetic (degaussing)
+        - – Remove the magnetic field
+        - – Destroys the drive data and the electronics
+        - 
+        - Incineration - Fire hot.
+        - Certificate of destruction
+        - 
+        - Destruction is often done by a 3rd party
+        - – How many drills and degaussers do you have?
+        - 
+        - Need confirmation that your data is destroyed
+        - – Service should include a certificate
+        - 
+        - A paper trail of broken data
+        - – You know exactly what happened
+        - Disk formatting
+        - 
+        - Low-level formatting
+        - – Provided at the factory
+        - – Not recommended for the user
+        - 
+        - Standard formatting / Quick format
+        - – Sets up the file system, installs a boot sector
+        - – Clears the master file table but not the data
+        - – Can be recovered with the right software
+        - 
+        - Standard formatting / Regular format
+        - – Overwrites every sector with zeros
+        - – Default for Windows Vista and later
+        - – Can’t recover the data
+        - Erasing data
+        - 
+        - File level overwriting
+        - – Sdelete – Windows Sysinternals
+        - – Remaining files are still available
+        - 
+        - Whole drive wipe secure data removal
+        - – DBAN - Darik’s Boot and Nuke
+        - – Removes all data on the drive
+        - – Use the drive again
+        - 
+        - Physical drive destruction
+        - – One-off or industrial removal and destroy
+        - – Drive is no longer usable
+        - Hard drive security
+        - 
+        - 2019 study from Blancco and Ontrack
+        - – 159 storage drives from eBay
+        - – 42% of the used drives contain sensitive data
+        - 
+        - Different data types
+        - – 66 drives had data, 25 drives with PII
+        - 
+        - Varied data sources
+        - – Travel company email archive
+        - – Freight company shipping details
+        - – University student papers
+        - – Audio, video, and other personal files
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 35
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.9 - Securing a SOHO Network
+        - Change default passwords
+        - 
+        - All access points have default usernames and passwords
+        - – Change yours!
+        - 
+        - The right credentials provide full control
+        - – Administrator access
+        - 
+        - Very easy to find the defaults for your
+        - access point or router
+        - – [https://www.routerpasswords.com](https://www.routerpasswords.com)
+        - Firmware updates
+        - 
+        - Small office / home office appliances
+        - – Appliance are usually a closed architecture
+        - – Updates are provided by the manufacturer
+        - 
+        - Updates may address different requirements
+        - – Bug fixes
+        - – New features
+        - – Security patches
+        - 
+        - Install the latest software
+        - – Update and upgrade the firmware
+        - – Firewalls, routers, switches, etc.
+        - IP address filtering
+        - 
+        - Content filtering, IP address ranges
+        - – Or a combination
+        - 
+        - Allow list
+        - – Nothing pass through the firewall unless it’s approved
+        - – Very restrictive
+        - 
+        - Deny list
+        - – Nothing on the “bad list” is allowed
+        - – Specific URLs
+        - – Domains
+        - – IP addresses
+        - Content filtering
+        - 
+        - Control traffic based on data within the content
+        - – URL filtering, website category filtering
+        - 
+        - Corporate control of outbound and inbound data
+        - – Sensitive materials
+        - 
+        - Control of inappropriate content
+        - – Not safe for work
+        - – Parental controls
+        - 
+        - Protection against evil
+        - – Anti-virus, anti-malware
+        - Physical placement
+        - 
+        - Often a single device
+        - – Router, switch, access point, firewall, etc.
+        - 
+        - Location may be restricted to a secure room
+        - – Prevent access to servers and network devices
+        - – For wireless, location becomes more important
+        - – Above ceiling tiles or another high point
+        - – This may cause problems for power cycling
+        - 
+        - Plan before the installation
+        - – May require additional setup time
+        - IP addressing
+        - 
+        - DHCP (automatic) IP addressing vs.
+        - manual IP addressing
+        - 
+        - IP addresses are easy to see in
+        - an unencrypted network
+        - 
+        - If the encryption is broken, the IP addresses
+        - will be obvious
+        - 
+        - Configuring a static IP address is not
+        - a security technique
+        - – Security through obscurity
+        - DHCP reservations
+        - 
+        - Address reservation
+        - – Administratively configured
+        - 
+        - Table of MAC addresses
+        - – Each MAC address has a matching IP address
+        - 
+        - Other names
+        - – Static DHCP Assignment
+        - – Static DHCP
+        - – Static Assignment
+        - – IP Reservation
+        - Static WAN IP
+        - 
+        - Wide area network / Internet link
+        - – External IP address
+        - 
+        - Many ISPs dynamically allocate WAN addresses
+        - – The default for most ISPs
+        - 
+        - It’s easier to manage if the IP address is static
+        - – The IT team always knows the IP address
+        - – A SOHO might provide a service
+        - 
+        - This may be an additional cost
+        - – Contact the ISP for options
+        - UPnP (Universal Plug and Play)
+        - 
+        - Allows network devices to automatically configure
+        - and find other network devices
+        - – Zero-configuration
+        - 
+        - Applications on the internal network can open
+        - inbound ports using UPnP
+        - – No approval needed
+        - – Used for many peer-to-peer (P2P) applications
+        - 
+        - Best practice would be to disable UPnP
+        - – Only enable if the application requires it
+        - – And maybe not even then
+        - Screened subnet
+        - 
+        - Previously known as the demilitarized zone (DMZ)
+        - – An additional layer of security between
+        - the Internet and you
+        - – Public access to public resources
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 36
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.9 - Securing a SOHO Network (continued)
+        - SSID management
+        - 
+        - Service Set Identifier
+        - – Name of the wireless network
+        - – LINKSYS, DEFAULT, NETGEAR
+        - 
+        - Change the SSID to something not-so obvious
+        - 
+        - Disable SSID broadcasting?
+        - – SSID is easily determined through wireless
+        - network analysis
+        - – Security through obscurity
+        - Wireless channels and encryption
+        - 
+        - Open System
+        - – No authentication password is required
+        - 
+        - WPA/2/3-Personal / WPA/2/3-PSK
+        - – WPA2 or WPA3 with a pre-shared key
+        - – Everyone uses the same 256-bit key
+        - 
+        - WPA/2/3-Enterprise / WPA/2/3-802.1X
+        - – Authenticates users individually with an
+        - authentication server (i.e., RADIUS, LDAP, etc.)
+        - 
+        - Use an open frequency
+        - – Some access points will automatically find
+        - good frequencies
+        - Disable guest networks
+        - 
+        - Limit access to outsiders
+        - – Guest networks are often enabled by default
+        - 
+        - Some guest networks can be used for other
+        - connections
+        - – Internet of Things
+        - – Lab networks
+        - 
+        - Don’t enable without security
+        - – WPA2 or WPA3
+        - Disabling ports
+        - 
+        - Enabled physical ports
+        - – Conference rooms
+        - – Break rooms
+        - 
+        - Administratively disable unused ports
+        - – More to maintain, but more secure
+        - 
+        - Network Access Control (NAC)
+        - – 802.1X controls
+        - – You can’t communicate unless you are authenticated
+        - Port forwarding
+        - 
+        - 24x7 access to a service hosted internally
+        - – Web server, gaming server, security system, etc.
+        - 
+        - External IP/port number maps to an internal IP/port
+        - – Does not have to be the same port number
+        - 
+        - Also called Destination NAT or Static NAT
+        - – Destination address is translated from a public IP to
+        - a private IP
+        - – Does not expire or timeout
+        - Screened Subnet
+        - Screened Subnet
+        - Switch
+        - Internal Network
+        - Internet
+        - Internal Network
+        - Switch
+        - Firewall
+        - 2.10 - Browser Security
+        - Browser download and installation
+        - 
+        - Always use trusted sources
+        - – Attackers want you to install the malware for them
+        - – No fancy exploit required
+        - 
+        - Avoid untrusted third-party sites
+        - – Don’t click links in emails
+        - – Don’t follow links from other websites
+        - – Always visit a browser site directly
+        - 
+        - Use hashes to verify the download
+        - – Confirm the downloaded file matches the
+        - version on the server
+        - Hash verification
+        - 
+        - Install a hash checking application
+        - – Available for command line and GUI
+        - – Options available in the Microsoft Store
+        - 
+        - Hash values may be available on the download site
+        - – Usually includes a digital signature for verification
+        - 
+        - Verify the downloaded file
+        - – Compare the downloaded file hash with the posted hash value
+        - Extensions and plug-ins
+        - 
+        - Trusted sources
+        - – Official browser extension library
+        - – Chrome Web Store
+        - – Microsoft Store
+        - – Known-good websites
+        - 
+        - Untrusted sources
+        - – Random or unfamiliar websites
+        - – Installed by malware
+        - 
+        - This is a significant attack vector
+        - – Almost everything we do is in our browser
+        - Malicious browser extensions
+        - 
+        - March 2021
+        - – More than 24 malicious
+        - – Google Chrome extensions identified
+        - – Includes 40 malicious domains
+        - – Not identified by security technologies
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 37
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 2.10 - Browser Security (continued)
+        - 
+        - Malicious activity identified
+        - – Credential theft
+        - – Screenshots and keylogging
+        - – Data exfiltration
+        - 
+        - Don’t trust any software - Always have backups
+        - Password managers
+        - 
+        - Password vaults
+        - – All passwords in one location
+        - – A database of credentials
+        - 
+        - Secure storage
+        - – All credentials are encrypted
+        - – Cloud-based synchronization options
+        - 
+        - Create unique passwords
+        - – Passwords are not the same across sites
+        - 
+        - Personal and enterprise options
+        - – Corporate access
+        - Secure connections
+        - 
+        - Security alerts and invalid certificates
+        - – Something isn’t quite right
+        - – Should raise your interest
+        - 
+        - Look at the certificate details
+        - – May be expired or the wrong domain name
+        - – The certificate may not be properly signed
+        - (untrusted certificate authority)
+        - – Correct time and date is important
+        - Enable pop-up blockers
+        - 
+        - Pop-up blocker
+        - – Prevent unwanted notification windows
+        - 
+        - Enable or disable
+        - – Should usually be enabled
+        - – Disable temporarily when troubleshooting
+        - 
+        - Block and allow
+        - – Control pop-up blocking on certain websites
+    - 3.0 - Software Troubleshooting - 22% 38p
+        - 3.1 - Troubleshooting Windows
+        - Bluescreens and frequent shutdowns
+        - 
+        - Startup and shutdown BSOD
+        - – Bad hardware, bad drivers, bad application
+        - 
+        - Use Last Known Good, System Restore,
+        - or Rollback Driver
+        - – Try Safe mode
+        - 
+        - Reseat or remove the hardware
+        - – If possible
+        - 
+        - Run hardware diagnostics
+        - – Provided by the manufacturer
+        - – BIOS may have hardware diagnostics
+        - Sluggish performance
+        - 
+        - Task Manager
+        - – Check for high CPU utilization and I/O
+        - 
+        - Windows Update - Latest patches and drivers
+        - Clearing private data
+        - 
+        - Clear browsing data
+        - – History
+        - – Saved passwords
+        - – List of downloaded files
+        - 
+        - Clear cache
+        - – Parts of a website are stored locally
+        - – Remove all local data
+        - Private browsing mode
+        - 
+        - Don’t store information from a browsing session
+        - – Good for privacy
+        - – Useful when testing or troubleshooting
+        - 
+        - Removes the information when the browser is closed
+        - – No history tracking
+        - – No download file list
+        - – Cached information is deleted
+        - Browser data synchronization
+        - 
+        - Share browsing data across multiple systems
+        - – Sign in to the browser
+        - 
+        - Use with other computers, tablets, and mobile devices
+        - – Browsing history
+        - – Favorites
+        - – Installed extensions
+        - – Other settings
+        - Ad blockers
+        - 
+        - Some browsers can block advertising
+        - – This isn’t always an option
+        - 
+        - Many sites will track visits
+        - – And recognize a return visit
+        - 
+        - Difficult to always recognize an advertisement
+        - – You can control the security level
+        - 
+        - 
+        - 
+        - Disk space - Check for available space and defrag
+        - Laptops may be using power-saving mode
+        - – Throttles the CPU
+        - Anti-virus and anti-malware - Scan for attackers
+        - Boot errors
+        - 
+        - Can’t find operating system
+        - – “Operating system not found”, “Missing operating system”
+        - 
+        - Boot loader replaced or changed
+        - – Multiple operating systems installed
+        - 
+        - Check boot drives - Remove any media
+        - 
+        - Startup Repair
+        - 
+        - Modify the Windows Boot Configuration Database (BCD)
+        - – Formerly boot.ini
+        - – Recovery Console: bootrec /rebuildbcd
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 38
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.1 - Troubleshooting Windows (continued)
+        - Startup Repair
+        - 
+        - Missing NTLDR
+        - – The main Windows boot loader is missing
+        - – Run Startup Repair or replace manually
+        - and reboot
+        - – Disconnect removable media
+        - 
+        - Missing operating system
+        - – Boot Configuration Data may be incorrect
+        - – Run Startup Repair or manually configure
+        - BCD store
+        - 
+        - Boots to Safe Mode
+        - – Windows is not starting normally
+        - – Run Startup Repair
+        - Starting the system
+        - 
+        - Device not starting
+        - – Check Device Manager and Event Viewer
+        - – Often a bad driver
+        - – Remove or replace driver
+        - 
+        - “One or more services failed to start”
+        - – Bad/incorrect driver, bad hardware
+        - – Try starting manually
+        - – Check account permissions
+        - – Confirm service dependencies
+        - – Windows service; check system files
+        - – Application service; reinstall application
+        - Applications crashing
+        - 
+        - Application stops working
+        - – May provide an error message
+        - – May just disappear
+        - 
+        - Check the Event Log
+        - – Often includes useful reconnaissance
+        - 
+        - Check the Reliability Monitor
+        - – A history of application problems
+        - – Checks for resolutions
+        - 
+        - Reinstall the application
+        - – Contact application support
+        - Low memory warnings
+        - 
+        - Your computer is low on memory
+        - – Applications need RAM to run
+        - – More applications need more RAM
+        - 
+        - Close large-memory processes
+        - – Check Task Manager
+        - 
+        - Increase virtual memory
+        - – More room for swapping applications
+        - – System > About > Advanced system settings >
+        - Performance > Settings > Virtual memory
+        - USB controller resource warnings
+        - 
+        - USB devices contain buffers called “endpoints”
+        - – Different USB controllers support a different
+        - number of endpoints
+        - – (96 endpoints, 254 endpoints, etc.)
+        - 
+        - Different devices require a different number of endpoints
+        - – Exceed the number of endpoints and you
+        - run out of resources
+        - – It’s difficult to determine the number of
+        - endpoints used by a device
+        - 
+        - The controller does not have enough resources
+        - for this device.
+        - – The endpoints are these resources
+        - 
+        - Move the device to a different USB interface
+        - – USB 2.0 interfaces might support a larger
+        - number of endpoints
+        - 
+        - Match the USB interface to the device capabilities
+        - – USB 2.X devices or USB 3.X devices
+        - – More endpoints for all devices
+        - System instability
+        - 
+        - General system failures
+        - – Software errors, system hangs, application failures
+        - 
+        - Time for a full diagnostic - This could be anything
+        - 
+        - Hardware diagnostic
+        - – Most systems include manufacturer diagnostics
+        - – Also run storage and memory checks
+        - 
+        - Check the operating system
+        - – Run SFC (System File Checker)
+        - – Perform an anti-malware scan
+        - Slow profile load
+        - 
+        - Roaming user profile
+        - – Your desktop follows you to any computer
+        - – Changes are synchronized
+        - 
+        - Network latency to the domain controller
+        - – Slows login script transfers
+        - – Slow to apply computer and user policies
+        - – May require many hundreds (or thousands) of LDAP
+        - queries
+        - 
+        - Client workstation picks a remote domain controller
+        - instead of local DC
+        - – Problems with local infrastructure
+        - Time drift
+        - 
+        - A computer’s internal clock will drift over time
+        - – Computers aren’t great timekeepers
+        - 
+        - The solution is to fix the symptom
+        - – Fixing the problem would require changing the design
+        - of every computer
+        - 
+        - Enable automatic time setting
+        - – Settings > Time & language > Date & time
+        - – Time zone may need to be configured manually if
+        - privacy settings are enabled
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 39
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.1 - Troubleshooting Solutions
+        - Reboot
+        - 
+        - Have you tried turning it off and on again?
+        - – There’s a reason it works
+        - 
+        - Bug in your router software - Reboot the router
+        - 
+        - Application is using too many resources
+        - – Stops the app
+        - 
+        - Memory leak slowly consumes all available RAM
+        - – Clears the RAM and starts again
+        - Restart services
+        - 
+        - Services
+        - – Applications that run in the background
+        - – No user interaction
+        - 
+        - Similar issues as a normal process
+        - – Resource utilization
+        - – Memory leaks
+        - – Crashes
+        - 
+        - View status in Task Manager
+        - – Services tab
+        - – Right-click to start, stop, or restart
+        - Uninstall/reinstall/update applications
+        - 
+        - Application issues
+        - – Problems with the application files or configurations
+        - 
+        - Settings > Apps > Apps & features
+        - – Repair, reset, or uninstall
+        - 
+        - Some options in the Control Panel
+        - – Programs and Features
+        - 
+        - Run the application setup again
+        - – Other options may be available from the setup
+        - program
+        - 
+        - Repair
+        - – Install missing files
+        - – Replace corrupted files
+        - – Fix application shortcuts
+        - – Repair registry entries
+        - – Update or reconfigure drivers
+        - 
+        - Reset
+        - – Remove all application data
+        - – A factory reset / original install
+        - 
+        - Uninstall - Remove the application
+        - Verify requirements
+        - 
+        - Every operating system and application publishes
+        - a set of requirements
+        - – These are commonly the bare minimums
+        - 
+        - Check with the manufacturer
+        - – Get the official requirements
+        - 
+        - Hardware and software resources
+        - – CPU speed, total RAM, video options,
+        - device drivers, runtime libraries
+        - 
+        - Use System Information
+        - – View the current configuration
+        - Add resources
+        - 
+        - Check resource utilization
+        - – Task Manager
+        - 
+        - Consider a long-term analysis
+        - – Performance Monitor
+        - 
+        - Compare existing resources with manufacturer
+        - requirements
+        - – Add or replace hardware (CPU, SSD, RAM)
+        - 
+        - Free drive space
+        - – Disk Cleanup
+        - System file checker
+        - 
+        - Verify the integrity of the operating system
+        - – Check every important system file with sfc
+        - Startup Repair
+        - 
+        - Start from Settings
+        - – Settings > System > Recovery
+        - 
+        - Also available from the
+        - – Advanced Boot Options
+        - – Repair Windows
+        - Windows Restore
+        - 
+        - Start the System Restore application
+        - – System > About > System Protection
+        - – This assumes you’ve not disabled restore points
+        - 
+        - Pick a restore point and let the system reboot
+        - – The operating system configuration will revert to
+        - the previous date and time
+        - – User data will not be modified
+        - Reimage or reload OS
+        - 
+        - Windows is big
+        - – And complex
+        - 
+        - Spend time trying to find the needle
+        - – Or simply build a new haystack
+        - 
+        - Many organizations have prebuilt images
+        - – Don’t waste time researching issues
+        - 
+        - Windows includes a reset option
+        - – Windows 10: Settings >
+        - Update & Security > Recovery
+        - – Windows 11: Settings > System > Recovery
+        - Update and patch
+        - 
+        - Windows Update
+        - – Centralized OS and driver updates
+        - 
+        - Lots of flexibility
+        - – Change active hours
+        - – Manage metered connections
+        - 
+        - Applications must be patched
+        - – Security issues don’t stop at the OS
+        - – Download from the publisher
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 40
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.1 - Troubleshooting Solutions (continued)
+        - Roll back updates
+        - 
+        - Updates are installed automatically by default
+        - – Important security patches
+        - 
+        - View the history
+        - – Windows 10:
+        - – Settings > Update & Security >
+        - – Windows Update
+        - – Windows 11:
+        - – Settings > Windows Update
+        - Rebuild Windows profiles
+        - 
+        - Profiles can become corrupted
+        - – The User Profile Service failed the logon.
+        - – User Profile cannot be loaded.
+        - – User documents may be “missing”
+        - 
+        - If a profile doesn’t exist, it’s recreated
+        - – We’re going to delete the profile and force
+        - the rebuilding process
+        - Deleting Windows profiles
+        - 
+        - Login to the computer with Domain Administrator rights
+        - 
+        - Rename the \Users\name folder - This will save important files
+        - 
+        - Backup the user’s registry
+        - – HKLM\SOFTWARE\Microsoft\Windows NT\
+        - CurrentVersion\ProfileList
+        - – Right-click / Export
+        - 
+        - Delete the registry entry
+        - – You have a backup - Restart the computer
+        - Reconstructing Windows profiles
+        - 
+        - Login to the computer with the user account
+        - – The profile will be rebuilt
+        - – This will recreate the \Users\name folder
+        - 
+        - Login as Domain Administrator
+        - – Copy over any important files from the old profile
+        - 
+        - Do not copy the entire profile
+        - – Corrupted files might exist in the old profile
+        - 
+        - Logout as Domain Administrator, login with the user account
+        - 3.2 - Troubleshooting Security Issues
+        - Unable to access the network
+        - 
+        - Slow performance, lock-up
+        - – Malware isn’t the best written code
+        - 
+        - Internet connectivity issues
+        - – Malware likes to control everything
+        - – You go where it wants you to go
+        - – You can’t protect yourself if you can’t download
+        - 
+        - OS updates failures
+        - – Malware keeps you vulnerable
+        - – Some malware uses multiple communication paths
+        - 
+        - Reload or clean
+        - – Malware cleaner or recover from known good backup
+        - Desktop alerts
+        - 
+        - Browser push notification messages
+        - – Pretends to be a malware infection
+        - – Actual notifications come from your antivirus utility
+        - 
+        - Disable browser notifications
+        - – Create an allow list of legit sites
+        - 
+        - Scan for malware
+        - – Consider a cleaning
+        - – Rebuild from scratch or known good backup to
+        - guarantee removal
+        - False antivirus alerts
+        - 
+        - False antivirus message
+        - 
+        - May include recognizable logos and language
+        - – May require money to “unlock” your PC
+        - – Or to “subscribe” to their service
+        - 
+        - Often requires a specific anti-malware removal
+        - utility or technique
+        - – The attackers are very, very good
+        - Altered system or personal files
+        - 
+        - Renamed system files - Won’t need that anymore
+        - 
+        - Files disappearing - Or encrypted
+        - 
+        - File permission changes - Protections are modified
+        - 
+        - Access denied
+        - – Malware locks itself away
+        - – It doesn’t leave easily
+        - 
+        - Use a malware cleaner or
+        - restore from known good backup
+        - – Some malware is exceptionally difficult to remove
+        - Browser security alerts
+        - 
+        - Security alerts and invalid certificates
+        - – Something isn’t quite right
+        - – Should raise your interest
+        - 
+        - Look at the certificate details
+        - – Click the lock icon
+        - – May be expired or the wrong domain name
+        - – The certificate may not be properly signed
+        - (untrusted certificate authority)
+        - – Correct time and date is important
+        - Browser redirection
+        - 
+        - Instead of your Google result,
+        - your browser goes somewhere else
+        - – This shouldn’t ever happen
+        - 
+        - Malware is the most common cause
+        - – Makes money for the bad guys
+        - 
+        - Use an anti-malware/anti-virus cleaner
+        - – This is not the best option
+        - 
+        - Restore from a good known backup
+        - – The only way to guarantee removal
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 41
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.3 - Removing Malware
+        - Malware removal
+        - 
+        - This is almost never the best practice
+        - – It’s impossible to know if all of the malware
+        - has been removed
+        - 
+        - Ideally, you should delete everything and start over
+        - – Restore from a known-good backup
+        - – Install from the original media
+        - 
+        - There are reasons to remediate
+        - – Important user documents may need to be recovered
+        - – Get the system running well enough to
+        - backup certain files
+        - 1. Verify malware symptoms
+        - 
+        - Odd error messages
+        - – Application failures, security alerts
+        - 
+        - System performance issues
+        - – Slow boot, slow applications
+        - 
+        - Research the malware
+        - – Know what you’re dealing with
+        - 2. Quarantine infected systems
+        - 
+        - Disconnect from the network
+        - – Keep it contained
+        - 
+        - Isolate all removable media
+        - – Everything should be contained
+        - 
+        - Prevent the spread
+        - – Don’t transfer files, don’t try to backup
+        - – That ship sailed
+        - 3. Disable System Restore
+        - 
+        - Restore points make it easy to rewind
+        - – Malware infects restore points
+        - 
+        - Disable System Protection
+        - – No reason to save an infected config
+        - 
+        - Delete all restore points
+        - – Remove all infection locations
+        - 4a. Remediate: Update anti-virus
+        - 
+        - Signature and engine updates
+        - – The active anti-virus engine
+        - – Signature updates
+        - – A very, very tiny shelf life
+        - 
+        - Automatic vs. manual
+        - – Manual updates are almost pointless
+        - 
+        - Your malware may prevent the update process
+        - – Copy from another computer
+        - 4b. Remediate: Scan and remove
+        - 
+        - Microsoft and others - The big anti-virus apps
+        - 
+        - Malware-specific -
+        - – Scan and remove difficult malware
+        - 
+        - Stand-alone removal apps
+        - – Check with your anti-virus company
+        - 
+        - There’s really no way to know if it’s really gone
+        - – Delete and rebuild
+        - 4b. Remediate: Scan and remove
+        - 
+        - Safe mode
+        - – Load the bare minimum operating system
+        - – Just enough to get the OS running
+        - – Can also prevent the bad stuff from running
+        - 
+        - Pre-installation environment (WinPE)
+        - – Recovery Console, bootable CD/DVDs/USBs
+        - – Build your own from the Windows
+        - – Assessment and Deployment Kit (ADK)
+        - 
+        - May require the repair of boot records and sectors
+        - 5. Schedule scans and run updates
+        - 
+        - Built into the antivirus software
+        - – Automated signature updates and scans
+        - 
+        - Task scheduler
+        - – Run any task
+        - 
+        - Operating system updates
+        - – Make sure its enabled and working
+        - 6. Enable System Protection
+        - 
+        - Now you’re clean
+        - – Put things as they were
+        - 
+        - Create a restore point
+        - – Start populating again
+        - 7. Educate the end user
+        - 
+        - One on one
+        - – Personal training
+        - 
+        - Posters and signs
+        - – High visibility
+        - 
+        - Message board posting
+        - – The real kind
+        - 
+        - Login message
+        - – These become invisible
+        - 
+        - Intranet page
+        - – Always available
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 42
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.4 - Troubleshooting Mobile Devices
+        - App issues
+        - 
+        - Problematic apps
+        - – Apps not loading
+        - – Slow app performance
+        - 
+        - Restart the phone
+        - – Hold power button, power off
+        - 
+        - Stop the app and restart
+        - – iPhone: Double-tap home|slide up, slide app up
+        - – Android: Settings/Apps, select app, Force stop
+        - 
+        - Update the app - Get the latest version
+        - App fails to close or crashes
+        - 
+        - App hangs
+        - – But other apps are still working
+        - 
+        - App crashes
+        - – May provide an error message, or just disappear
+        - 
+        - Restart the device
+        - – Clear the slate, try the app again
+        - 
+        - Update the app
+        - – A bug fix might resolve the issue
+        - 
+        - Delete and reinstall the app
+        - – Be careful not to remove important app data
+        - App fails to update
+        - 
+        - App does not update to a new version
+        - – But other apps are still working
+        - 
+        - Check the Store to manually upgrade
+        - – Force the upgrade process
+        - – Some stores require a valid method of payment on file
+        - 
+        - Restart the device
+        - – Try the update process again
+        - OS fails to update
+        - 
+        - Device operating system will not update
+        - – New features, bug fixes, security updates
+        - 
+        - Check available storage
+        - – Remove unused documents and apps
+        - 
+        - Check download bandwidth
+        - – Connect to Wi-Fi
+        - 
+        - Try a different network connection
+        - – Update server may not be accessible
+        - 
+        - Reboot - Always a good idea
+        - Battery life issues
+        - 
+        - Bad reception
+        - – Always searching for signal
+        - – Airplane mode on the ground
+        - 
+        - Aging battery
+        - – There’s only so many recharges
+        - 
+        - Disable unnecessary features
+        - – 802.11 wireless, Bluetooth, GPS
+        - 
+        - Check application battery usage
+        - – iOS: Settings/Battery
+        - – Android: Settings/Battery
+        - Random reboots
+        - 
+        - A device reboots during normal operation
+        - – May occur randomly
+        - 
+        - Check the OS and app versions
+        - – Keep everything up to date
+        - 
+        - Perform a hardware check
+        - – Check the battery health
+        - – Not many diagnostics options
+        - 
+        - Contact Tech Support for options
+        - – Crash logs should be on the device
+        - Connectivity issues
+        - 
+        - Intermittent connectivity
+        - – Move closer to access point
+        - – Try a different access point
+        - 
+        - No WiFi connectivity
+        - – Check/Enable WiFi
+        - – Check security key configuration
+        - – Hard reset can restart wireless subsystem
+        - 
+        - No Bluetooth connectivity
+        - – Check/Enable Bluetooth
+        - – Check/Pair Bluetooth component
+        - – Hard reset to restart Bluetooth subsystem
+        - 
+        - NFC not working
+        - – Limited troubleshooting options
+        - – Device may allow disable/enable of NFC
+        - – Reset the device
+        - – If payment related, remove and add the card again
+        - 
+        - AirDrop not working
+        - – Distance between devices < 30 feet
+        - – Turn on Wi-Fi and Bluetooth
+        - – Check AirDrop discovery options
+        - – “Allow me to be discovered by”
+        - Screen does not autorotate
+        - 
+        - Turning the device doesn’t rotate the view
+        - – It should know which way is up
+        - 
+        - Disable rotation lock
+        - – Prevents autorotation when enabled
+        - 
+        - Restart the app
+        - – The device might be working properly
+        - 
+        - Restart the device
+        - – Perhaps the device isn’t working properly
+        - 
+        - Contact device support
+        - – If nothing rotates, you could have a sensor issue
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 43
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.5 - Troubleshooting Mobile Device Security
+        - Android package source
+        - 
+        - Once malware is on a phone, it has a huge amount of access
+        - – Don’t install APK files from an untrusted source
+        - 
+        - iOS
+        - – All apps are curated by Apple
+        - 
+        - Android
+        - – Apps can be downloaded from Google Play or sideloaded
+        - – This is where problems can occur
+        - Developer mode
+        - 
+        - Enables developer-specific settings
+        - – USB debugging
+        - – Memory statistics
+        - – Demo mode settings
+        - 
+        - iOS and iPadOS
+        - – Enable using Xcode
+        - – Must use macOS
+        - 
+        - Android
+        - – Enabled from Settings > About Phone
+        - – Tap the build number seven times
+        - Root access/jailbreaking
+        - 
+        - Mobile devices are purpose-built systems
+        - – You don’t need direct access to the operating system
+        - 
+        - Gaining access
+        - – Android - Rooting
+        - – Apple iOS - Jailbreaking
+        - 
+        - Install custom firmware
+        - – Replaces the existing operating system
+        - 
+        - Uncontrolled access
+        - – Circumvent security features, sideload apps without
+        - using an app store
+        - – The MDM becomes relatively useless
+        - Application spoofing
+        - 
+        - Install what appears to be a legitimate app
+        - – Actually a bootleg or malicious application
+        - 
+        - Google removed 150 apps from the store in 2021
+        - – Photo editing, camera filters, games, QR code scanners
+        - – UltimaSMS app tried to subscribe users to
+        - $40/month SMS service
+        - 
+        - Infect the application used to build the apps
+        - – A malicious version of Xcode: XcodeGhost malware
+        - 
+        - Always check the source of a download
+        - – And the legitimacy of the app
+        - – You are giving this app permissions and control
+        - High network traffic
+        - 
+        - Higher than normal network use
+        - – May indicate installed malware
+        - – Command & control
+        - – Proxy network use
+        - 
+        - Check built-in data use reports
+        - – Some of these are quite detailed
+        - 
+        - Use a third-party reporting app
+        - – Use a trusted source
+        - 
+        - Run a malware scan
+        - – Always a good precaution
+        - Data-usage limit notification
+        - 
+        - Built-in Android feature
+        - – Not native in iOS
+        - 
+        - Set a warning and limit
+        - – Get notification when traffic is excessive
+        - 
+        - 
+        - Can indicate a malware infection
+        - – Drill-down on individual app usage
+        - Run a malware scan
+        - – Find the problem app
+        - Sluggish response time
+        - 
+        - Running slowly
+        - – Screen lags, poor input response time
+        - 
+        - Restart
+        - – Clear the slate
+        - 
+        - 
+        - 
+        - Check for OS and app updates
+        - – Fix the buggy code
+        - Close apps that are not in use
+        - – Less resources to manage
+        - Factory reset
+        - – A last chance to resolve the problem
+        - Limited or no Internet connectivity
+        - 
+        - Malware doesn’t want to be removed
+        - – It will prevent access to network resources
+        - 
+        - Disable and enable Wi-Fi
+        - – Or enable/disable airplane mode
+        - 
+        - Restart the device
+        - – Clear memory and reload drivers
+        - 
+        - Perform a malware scan
+        - – Find and remove
+        - High number of ads
+        - 
+        - Malware wants to show you advertising
+        - – Revenue for each view and click
+        - 
+        - May be difficult to find
+        - – 2019: Ads Blocker for Android promised to
+        - remove ads
+        - – Actually did the opposite
+        - – Once installed, wasn’t listed in available apps
+        - – FakeAdsBlock malware strain
+        - 
+        - Run anti-malware utility
+        - – Remove the adware
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 44
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 3.5 - Troubleshooting Mobile Device Security (continued)
+        - Fake security warnings
+        - 
+        - The easiest way to get on a phone
+        - – Have the user install their own malware
+        - 
+        - The warnings seem legitimate
+        - – They are not actual security issues
+        - – Do not install any software
+        - 
+        - Malware can directly access user data
+        - – Steals credit card details, stored passwords,
+        - browsing history, text messages
+        - 
+        - Don’t click - If you click, run a malware removal tool
+        - Unexpected application behavior
+        - 
+        - Apps unexpectedly close - Or have excessive delays
+        - 
+        - App doesn’t seem to have all of the normal features
+        - – Or included features are not working
+        - 
+        - High battery utilization
+        - – Only when this application is running
+        - 
+        - Update the app - Get the latest version
+        - Leaked personal files
+        - 
+        - Unauthorized account access
+        - – Unauthorized root access
+        - – Leaked personal files and data
+        - 
+        - Determine cause of data breach
+        - – Perform an app scan, run anti-malware scan
+        - 
+        - Factory reset and clean install
+        - – This is obviously a huge issue
+        - 
+        - Check online data sources
+        - – Apple iCloud/Apple Configurator, Google Workspace,
+        - Microsoft OneDrive
+        - – Change passwords
+    - 4.0 - Operational Procedures - 22% 45p
+        - 4.1 - Ticketing Systems
+        - Ticketing systems
+        - 
+        - The best way to manage support requests
+        - – Document, assign, resolve, report
+        - 
+        - Usually a responsibility of the help desk
+        - – Take the calls and triage
+        - 
+        - Determine the best next step
+        - – Assign the ticket and monitor
+        - 
+        - There are many different ticketing systems
+        - – They’re all very similar in function
+        - Managing a support ticket
+        - 
+        - Information gathering
+        - – User and device information
+        - – Problem description
+        - 
+        - Applying context
+        - – Categorization of the problem
+        - – Assign severity
+        - – Determine if escalation is required
+        - 
+        - Clear and concise communication
+        - – Problem description, progress notes,
+        - resolution details
+        - User information
+        - 
+        - You can’t address a person’s problem unless
+        - you know who has the issue
+        - – Add the name of the person reporting the problem
+        - 
+        - Usually integrated into a name service
+        - – Active Directory or similar
+        - 
+        - May be added automatically
+        - – Many issues arrive from a portal or email gateway
+        - 
+        - Always confirm the contact information
+        - – The database may not be up to date
+        - Device and description
+        - 
+        - Device information
+        - – Laptop, printer, conference room projector, etc.
+        - 
+        - Description
+        - – One of the most important fields in the ticket
+        - – Make the description clear and concise
+        - 
+        - The description determines the next step
+        - – Call back for more information
+        - – Associate with another event
+        - – Assign to another person
+        - Categorization and escalation
+        - 
+        - Categories
+        - – Broad description
+        - – Change request, hardware request,
+        - problem investigation, hardware failure,
+        - onboarding/offboarding, etc.
+        - 
+        - Severity
+        - – Often an established set of standards
+        - – Low, medium, high, critical
+        - 
+        - Escalation levels
+        - – Difficult problems can be handled by a specialist
+        - – Escalate to a new tier or to a specific group
+        - Resolving the issue
+        - 
+        - Progress notes
+        - – Many people may read and/or work on a single ticket
+        - – Keep the progress information concise
+        - – Document any changes or additional information
+        - 
+        - Problem resolution
+        - – Document the solution
+        - – May be referenced later by others with the same problem
+        - – A “live” knowledgebase of issues and resolutions
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 45
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.1 - Asset Management
+        - Asset management
+        - 
+        - A record of every asset
+        - – Laptops, desktops, servers, routers, switches, cables,
+        - fiber modules, tablets, etc.
+        - 
+        - Associate a support ticket with a device make and model
+        - – Can be more detailed than a user’s description
+        - 
+        - Financial records, audits, depreciation
+        - – Make/model, configuration, purchase date, location,
+        - etc.
+        - 
+        - Add an asset tag
+        - – Barcode, RFID, visible tracking number,
+        - organization name
+        - Asset database
+        - 
+        - A central asset tracking system
+        - – Used by different parts of the organization
+        - 
+        - Assigned users
+        - – Associate a person with an asset
+        - – Useful for tracking a system
+        - 4.1 - Document Types
+        - Acceptable use policies (AUP)
+        - 
+        - What is acceptable use of company assets?
+        - – Detailed documentation
+        - – May be documented in the Rules of Behavior
+        - 
+        - Covers many topics
+        - – Internet use, telephones, computers, mobile devices, etc.
+        - 
+        - Used by an organization to limit legal liability
+        - – If someone is dismissed, these are the
+        - well-documented reasons why
+        - Network topology diagram
+        - 
+        - Describes the network layout
+        - – May be a logical diagram
+        - – Can include physical rack locations
+        - Compliance
+        - 
+        - Compliance
+        - – Meeting the standards of laws, policies, and regulations
+        - 
+        - A healthy catalog of rules
+        - – Across many aspects of business and life
+        - – Many are industry-specific or situational
+        - 
+        - Penalties - Fines, loss of employment, incarceration
+        - 
+        - Scope - Domestic and international requirements
+        - Splash screens
+        - 
+        - A message, logo, or graphic shown during startup or login
+        - – Can be used for branding or to require compliance
+        - 
+        - Can be informational
+        - – Maintenance notifications or system changes
+        - 
+        - May be required for legal or administrative purposes
+        - – Warnings about system misuse
+        - – Information about relying on application data
+        - 
+        - Warranty
+        - – A different process if out of warranty
+        - 
+        - Licensing
+        - – Software costs
+        - – Ongoing renewal deadlines
+        - Procurement life cycle
+        - 
+        - The purchasing process
+        - – Multi-step process for requesting and obtaining
+        - goods and services
+        - 
+        - Start with a request from the user
+        - – Usually includes budgeting information and formal
+        - approvals
+        - 
+        - Negotiate with suppliers
+        - – Terms and conditions
+        - – Purchase, invoice, and payment
+        - – The money part
+        - Incident reports
+        - 
+        - Security policy
+        - – An ongoing challenge
+        - – Documentation must be available
+        - – No questions
+        - 
+        - Incidents are ongoing
+        - – Organizations have formal incident plans
+        - 
+        - Reports and documentation
+        - – Details of any security incident
+        - – Create a reference for future incidents
+        - Standard operating procedures
+        - 
+        - Organizations have different business objectives
+        - – Processes and procedures
+        - 
+        - Operational procedures
+        - – Downtime notifications, facilities issues
+        - 
+        - Software installation and upgrades
+        - – Custom installation of a software package
+        - – Testing, change control
+        - 
+        - Documentation is the key
+        - – Everyone can review and understand the policies
+        - On-boarding
+        - 
+        - Bring a new person into the organization
+        - – New user setup checklist
+        - 
+        - IT agreements need to be signed
+        - – May be part of the employee handbook or
+        - a separate AUP
+        - 
+        - Create accounts
+        - – Associate the user with groups and departments
+        - 
+        - Provide required IT hardware
+        - – Laptops, tablets, etc.
+        - – Preconfigured and ready to go
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 46
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.1 - Document Types (continued)
+        - Off-boarding
+        - 
+        - All good things…
+        - – End-user termination checklist
+        - 
+        - This process should be predefined
+        - – You don’t want to decide how to do things at this point
+        - 
+        - What happens to the hardware?
+        - 
+        - What happens to the data?
+        - 
+        - Account information is usually deactivated
+        - – But not always deleted
+        - 4.2 - Change Management
+        - Change management
+        - 
+        - How to make a change
+        - – Upgrade software, patch an application, change firewall
+        - configuration, modify switch ports
+        - 
+        - One of the most common risks in the enterprise
+        - – Occurs very frequently
+        - 
+        - Often overlooked or ignored
+        - – Did you feel that bite?
+        - 
+        - Have clear policies
+        - – Frequency, duration, installation process, rollback
+        - procedures
+        - 
+        - Sometimes extremely difficult to implement
+        - – It’s hard to change corporate culture
+        - Rollback plan
+        - 
+        - The change will work perfectly and nothing will ever go bad
+        - – Of course it will
+        - 
+        - You should always have a way to revert your changes
+        - – Prepare for the worst, hope for the best
+        - 
+        - This isn’t as easy as it sounds
+        - – Some changes are difficult to revert
+        - 
+        - Always have backups
+        - Sandbox testing
+        - 
+        - Isolated testing environment
+        - – No connection to the real world or production system
+        - – A technological safe space
+        - 
+        - Use before making a change to production
+        - – Try the upgrade, apply the patch
+        - – Test and confirm before deployment
+        - 
+        - Confirm the rollback plan
+        - – Move everything back to the original
+        - – A sandbox can’t consider every possibility
+        - Responsible staff members
+        - 
+        - A team effort - Many different parts of the organization
+        - 
+        - IT team - Implements the change
+        - 
+        - Business customer - The user of the technology or software
+        - 
+        - Organization sponsor
+        - – Someone’s budget is responsible for the process
+        - – Or responsible for the profit
+        - Knowledge base and articles
+        - 
+        - External sources
+        - – Manufacturer knowledge base
+        - – Internet communities
+        - 
+        - 
+        - Internal documentation
+        - – Institutional knowledge
+        - – Usually part of help desk software
+        - Find the solution quickly
+        - – Searchable archive
+        - – Automatic searches with helpdesk ticket keywords
+        - Change management process
+        - 
+        - A formal process for managing change
+        - – Avoid downtime, confusion, and mistakes
+        - 
+        - Nothing changes without the process
+        - – Complete the request forms
+        - – Determine the purpose of the change
+        - – Identify the scope of the change
+        - – Schedule a date and time of the change
+        - – Determine affected systems and the impact
+        - – Analyze the risk associated with the change
+        - – Get approval from the change control board
+        - – Get end-user acceptance after the change is
+        - complete
+        - Change request forms
+        - 
+        - A formal process always seems to include a bit of
+        - paperwork
+        - – This is usually an online system
+        - 
+        - Nothing gets missed
+        - – Easy to manage
+        - – Create detailed reports and statistics
+        - 
+        - Usually a transparent process
+        - – Many different groups and people are usually
+        - involved
+        - Purpose of the change
+        - 
+        - Why are we doing this?
+        - – There needs to be a compelling reason
+        - 
+        - Application upgrades
+        - – New features
+        - – Bug fixes
+        - – Performance enhancements
+        - 
+        - Security fixes
+        - – Monthly patches and vulnerability fixes
+        - 
+        - There needs to be a good reason
+        - – Changes are costly
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 47
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.2 - Change Management (continued)
+        - Scope of the change
+        - 
+        - Determine the effect of the change
+        - – May be limited to a single server
+        - – Or an entire site
+        - 
+        - A single change can be far reaching
+        - – Multiple applications, Internet connectivity,
+        - remote site access, external customer access
+        - 
+        - How long will this take?
+        - – Specific date and time for the change
+        - – May have no impact, could have hours of downtime
+        - Risk analysis
+        - 
+        - Determine a risk value - i.e., high, medium, low
+        - 
+        - The risks can be minor or far-reaching
+        - – The “fix” doesn’t actually fix anything
+        - – The fix breaks something else
+        - – Operating system failures
+        - – Data corruption
+        - 
+        - What’s the risk with NOT making the change?
+        - – Security or application vulnerability
+        - – Unexpected downtime to other services
+        - 4.3 - Managing Backups
+        - Backups
+        - 
+        - Incredibly important
+        - – Recover important and valuable data
+        - – Plan for disaster
+        - Full Backup
+        - 
+        - Backup everything
+        - – All operating system and user files
+        - 
+        - This is usually the longest
+        - backup process
+        - – It’s everything in one backup
+        - 
+        - Might be impractical every day
+        - – Long backup times
+        - – Lots of storage space
+        - Full
+        - Backup
+        - Monday Incremental Backup
+        - 
+        - A full backup is taken first
+        - 
+        - Subsequent backups contain
+        - data changed since the last full
+        - backup and last incremental backup
+        - – These are usually smaller
+        - than the full backup
+        - 
+        - A restoration requires the full backup
+        - and all of the incremental backups
+        - Full
+        - Backup
+        - Monday Change board and approvals
+        - 
+        - Go or no go
+        - – Lots of discussion
+        - 
+        - All important parts of the organization are represented
+        - – Potential changes can affect the entire company
+        - 
+        - Some changes have priority
+        - – The change board makes the schedule
+        - – Some changes happen quickly, some take time
+        - 
+        - This is the last step
+        - – The actual work comes next
+        - End-user acceptance
+        - 
+        - Nothing happens without a sign-off
+        - – The end users of the application / network
+        - 
+        - One of your jobs is to make them successful
+        - – They ultimately decide if a change is worth it to them
+        - 
+        - Ideally, this is a formality
+        - – Of course, they have been involved
+        - throughout this entire process
+        - – There’s constant communication before and after
+        - 
+        - Many different implementations
+        - – Total amount of data
+        - – Type of backup
+        - – Backup media
+        - – Storage location
+        - – Backup and recovery software
+        - – Day of the week
+        - Full
+        - Backup
+        - Full
+        - Backup
+        - Full
+        - Backup
+        - Full
+        - Backup
+        - Tuesday Wednesday Thursday Recovery
+        - Incremental
+        - Incremental Incremental
+        - Incremental
+        - Incremental
+        - Incremental
+        - Full
+        - Backup
+        - Tuesday Wednesday Thursday Recovery
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 48
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.3 - Managing Backups (continued)
+        - Differential backup
+        - 
+        - A full backup is taken first
+        - – Subsequent backups contain data
+        - changed since the last full backup
+        - – These usually grow larger as
+        - data is changed
+        - 
+        - A restoration requires the full backup
+        - and the last differential backup
+        - 
+        - 
+        - 
+        - 
+        - 
+        - Synthetic backup
+        - Create a full backup
+        - – Without actually performing a full backup
+        - Synthetic backup
+        - – The first full backup copies every file
+        - – Subsequent full backups are created from
+        - previous backups
+        - Can be faster and less bandwidth intensive
+        - – The advantage of a full backup
+        - – The efficiency of an incremental backup
+        - Backup testing
+        - Grandfather-father-son (GFS)
+        - It’s not enough to perform the backup
+        - 
+        - Three separate backup rotations
+        - – You have to be able to restore
+        - – Monthly, weekly, daily
+        - Disaster recovery testing
+        - 
+        - – Simulate a disaster situation
+        - – Restore from backup
+        - Confirm the restoration
+        - – Test the restored application and data
+        - Perform periodic audits
+        - – Always have a good backup
+        - – Weekly, monthly, quarterly checks
+        - On site vs. off site backups
+        - On site backups
+        - – No Internet link required
+        - – Data is immediately available
+        - – Generally less expensive than off site
+        - Off site backups
+        - – Transfer data over Internet or WAN link
+        - – Data is available after a disaster
+        - – Restoration can be performed from anywhere
+        - Organizations often use both
+        - – More copies of the data
+        - – More options when restoring
+        - – Offsite storage, cloud backup
+        - Twelve monthly full backups (grandfather)
+        - – A good choice for offsite storage
+        - 
+        - Four (or five) weekly full backups (father)
+        - – Depends on which day of the month is selected
+        - 
+        - Thirty-one daily incremental or differential backups (son)
+        - – Backup any daily changes
+        - GFS backup schedule
+        - 
+        - Choose a rotation
+        - – Every organization is different
+        - 
+        - Grandfather
+        - – Last day of every month
+        - 
+        - Father
+        - – Every Monday
+        - 
+        - Son
+        - – Monday through Friday
+        - 3-2-1 backup rule
+        - 
+        - A popular and effective backup strategy
+        - – For business or home use
+        - 
+        - 3 copies of data should always be available
+        - – One primary copy and two backups
+        - 
+        - 2 different types of media should be used
+        - – Local drive, tape backup, NAS
+        - 
+        - 1 copy of the backup should be offsite
+        - 
+        - 
+        - 
+        - 
+        - 
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 49
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.4 - Managing Electrostatic Discharge
+        - What is electrostatic discharge?
+        - 
+        - Static electricity
+        - – Electricity that doesn’t move
+        - 
+        - Static electricity isn’t harmful to computers
+        - – It’s the discharge that gets them
+        - 
+        - ESD can be very damaging to computer components
+        - – Silicon is very sensitive to high voltages
+        - 
+        - Feel static discharge: ~3,500 volts
+        - – Damage an electronic component: 100 volts or less
+        - Controlling ESD
+        - 
+        - Humidity over 60% helps control ESD
+        - – Won’t prevent all possible ESD
+        - – Keeping an air conditioned room at 60% humidity
+        - isn’t very practical
+        - 
+        - Use your hand to “self-ground”
+        - – Touch the exposed metal chassis before
+        - touching a component
+        - – You’ll want to unplug the power connection
+        - – Always. Really.
+        - 
+        - Do not connect yourself to the ground
+        - of an electrical system!
+        - Preventing static discharge
+        - 
+        - Anti-static strap
+        - – Connect your wrist to a metal part of the computer
+        - 
+        - Anti-static pad
+        - – A workspace for the computer
+        - 
+        - Anti-static mat
+        - – A mat for standing or sitting
+        - 
+        - Anti-static bag
+        - – Safely move or ship components
+        - Component handling and storage
+        - 
+        - Try not to touch components directly
+        - – Card edges only
+        - 
+        - Store in an HVAC regulated environment
+        - – Between 50 and 80 degrees Fahrenheit
+        - or 10 to 27 degrees Celsius
+        - 
+        - Avoid high humidity
+        - – Silica gel packets can help control humidity
+        - 
+        - Store in the original padded box
+        - – Bubble wrap can be a good alternative
+        - 4.4 - Safety Procedures
+        - WARNING
+        - 
+        - Power is dangerous
+        - 
+        - Remove all power sources before working
+        - 
+        - Don’t touch ANYTHING if you aren’t sure
+        - 
+        - Replace entire power supply units
+        - – Don’t repair internal components
+        - 
+        - High voltage
+        - – Power supplies, displays, laser printers
+        - Equipment grounding
+        - 
+        - Most computer products connect to ground
+        - – Divert any electrical faults away from people
+        - 
+        - Also applies to equipment racks
+        - – Large ground wire
+        - 
+        - Don’t remove the ground connection
+        - – It’s there to protect you
+        - 
+        - Never connect yourself to the ground of an electrical system
+        - – This is not a way to prevent ESD
+        - Personal safety
+        - 
+        - Lifting technique
+        - – Lift with your legs, keep your back straight
+        - – Don’t carry overweight items
+        - – You can get equipment to lift
+        - 
+        - Electrical fire safety
+        - – Don’t use water or foam
+        - – Use carbon dioxide, FM-200,
+        - or other dry chemicals
+        - – Remove the power source
+        - 
+        - Safety goggles
+        - – Useful when working with chemicals
+        - – Printer repair, toner, batteries
+        - 
+        - Air filter mask
+        - – Dusty computers
+        - – Printer toner
+        - Local government regulations
+        - 
+        - Health and safety laws
+        - – Vary widely depending on your location
+        - – Keep the workplace hazard-free
+        - 
+        - Building codes
+        - – Fire prevention, electrical codes
+        - 
+        - Environmental regulation
+        - – High-tech waste disposal
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 50
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.5 - Environmental Impacts
+        - Disposal procedures
+        - 
+        - Read your Material Safety Data Sheets (MSDS)
+        - – United States Department of Labor,
+        - – Occupational Safety and Health Administration (OSHA)
+        - – [https://www.osha.gov,](https://www.osha.gov,) Index page
+        - 
+        - Provides information for all hazardous chemicals
+        - – Batteries, display devices / CRTs,
+        - chemical solvents and cans, toner and ink cartridges
+        - 
+        - Sometimes abbreviated as Safety Data Sheet (SDS)
+        - – Different names in each country
+        - MSDS info
+        - 
+        - Product and company information
+        - 
+        - Composition / ingredients
+        - 
+        - Hazard information
+        - 
+        - First aid measures
+        - 
+        - 
+        - 
+        - 
+        - Fire-fighting measures
+        - Accidental release / leaking
+        - Handling and Storage
+        - Much more
+        - Handling toxic waste
+        - 
+        - Batteries
+        - – Uninterruptible Power Supplies
+        - – Dispose at your local hazardous waste facility
+        - 
+        - Toner
+        - – Recycle and reuse
+        - – Many printer manufacturers provide a return box
+        - – Some office supply companies will provide a discount
+        - for each cartridge
+        - 
+        - Other devices and assets
+        - – Refer to the MSDS
+        - – Don’t throw out without clear directions
+        - Room control
+        - 
+        - Temperature
+        - – Devices need constant cooling
+        - – So do humans
+        - 4.6 - Privacy, Licensing, and Policies
+        - Incident response: Chain of custody
+        - 
+        - Control evidence - Maintain integrity
+        - 
+        - Everyone who contacts the evidence
+        - – Avoid tampering, use hashes
+        - 
+        - Label and catalog everything
+        - – Seal, store, and protect - Use digital signatures
+        - Incident response: First response
+        - 
+        - Identify the issue - Logs, in person, monitoring data
+        - 
+        - Report to proper channels
+        - – Don’t delay
+        - – May include internal management and law enforcement
+        - 
+        - Collect and protect information relating to an event
+        - – Many different data sources and protection mechanisms
+        - 
+        - Humidity level
+        - – High humidity promotes condensation
+        - – Low humidity promotes static discharges
+        - – 50% is a good number
+        - 
+        - Proper ventilation
+        - – Computers generate heat
+        - – Don’t put everything in a closet
+        - Battery backup
+        - 
+        - Uninterruptible Power Supply
+        - – Backup power
+        - – Power failures, under-voltage events, surges
+        - 
+        - UPS types
+        - – Standby UPS
+        - – Line-interactive UPS
+        - – On-line UPS
+        - 
+        - Features
+        - – Auto shutdown, battery capacity, outlets,
+        - phone line suppression
+        - Surge suppressor
+        - 
+        - Not all power is “clean”
+        - – Self-inflicted power spikes and noise
+        - – Storms, power grid changes
+        - 
+        - Spikes are diverted to ground
+        - 
+        - Noise filters remove line noise
+        - – Decibel (Db) levels at a specified frequency
+        - – Higher Db is better
+        - Surge suppressor specs
+        - 
+        - Joule ratings
+        - – Surge absorption
+        - – 200=good, 400=better
+        - – Look for over 600 joules of protection
+        - 
+        - Surge amp ratings
+        - – Higher is better
+        - 
+        - UL 1449 voltage let-through ratings
+        - – Ratings at 500, 400, and 330 volts
+        - – Lower is better
+        - Incident response: Copy of drive
+        - 
+        - Copy the contents of a disk
+        - – Bit-for-bit, byte-for-byte
+        - 
+        - Remove the physical drive
+        - – Use a hardware write-blocker
+        - – Preserve the data
+        - 
+        - 
+        - Software imaging tools
+        - – Use a bootable device
+        - Use hashes for data integrity
+        - – Drive image is hashed to ensure
+        - that data has not been modified
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 51
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.6 - Privacy, Licensing, and Policies (continued)
+        - Incident response: Documentation
+        - 
+        - Document the findings
+        - – For Internal use, legal proceedings, etc.
+        - 
+        - Summary information
+        - – Overview of the security event
+        - 
+        - Detailed explanation of data acquisition
+        - – Step-by-step method of the process
+        - 
+        - The findings - An analysis of the data
+        - 
+        - Conclusion - Professional results, given the analysis
+        - Software licenses
+        - 
+        - Most software includes a license
+        - – Terms and conditions
+        - – Overall use, number of copies, and backup options
+        - 
+        - Valid licenses
+        - – Per-seat or concurrent
+        - 
+        - Non-expired licenses
+        - – Ongoing Subscriptions
+        - – Annual, three-year, etc.
+        - – Use the software until the expiration date
+        - Licenses
+        - 
+        - Personal license
+        - – Designed for the home user
+        - – Usually associated with a single device
+        - – Or small group of devices owned
+        - by the same person
+        - – Perpetual (one time) purchase
+        - 
+        - Corporate use license
+        - – Per-seat purchase / Site license
+        - – The software may be installed everywhere
+        - – Annual renewals
+        - Open source license
+        - 
+        - Free and Open Source (FOSS)
+        - – Source code is freely available
+        - – End user can compile their own executable
+        - 
+        - Closed source / Commercial
+        - – Source code is private
+        - – End user gets compiled executable
+        - 
+        - End User Licensing Agreement (EULA)
+        - – Determines how the software can be used
+        - Regulating credit card data
+        - 
+        - Payment Card Industry
+        - – Data Security Standard (PCI DSS)
+        - – A standard for protecting credit cards
+        - 
+        - Six control objectives
+        - – Build and Maintain a Secure Network and Systems
+        - – Protect Cardholder Data
+        - – Maintain a Vulnerability Management Program
+        - – Implement Strong Access Control Measures
+        - – Regularly Monitor and Test Networks
+        - – Maintain an Information Security Policy
+        - Personal government-issued information
+        - 
+        - Used for government services and documentation
+        - – Social security number, driver license
+        - 
+        - There may be restrictions on collecting or storing
+        - government information - Check your local regulations
+        - 
+        - U.S. Office of Personnel Management (OPM)
+        - – Compromised personal identifiable information
+        - – Personnel file information; name, SSN, date of birth,
+        - job assignments, etc.
+        - – July 2015 - Affected ~21.5 million people
+        - PII - Personally identifiable information
+        - 
+        - Any data that can identify an individual
+        - – Part of your privacy policy - How will you handle PII?
+        - 
+        - Not everyone realizes the importance of this data
+        - – It becomes a “normal” part of the day
+        - – It can be easy to forget its importance
+        - 
+        - Attackers use PII to gain access or impersonate
+        - – Bank account information
+        - – Answer badly-written password-reset questions
+        - GDPR - General Data Protection Regulation
+        - 
+        - European Union regulation
+        - – Data protection and privacy for individuals in the EU
+        - – Name, address, photo, email address, bank details,
+        - posts on social networking websites, medical information,
+        - a computer’s IP address, etc.
+        - 
+        - Controls export of personal data
+        - – Users can decide where their data goes
+        - 
+        - Gives individuals control of their personal data
+        - – A right to be forgotten, right of erasure
+        - 
+        - Site privacy policy
+        - – Details all of the privacy rights for a user
+        - PHI - Protected Health Information
+        - 
+        - Health information associated with an individual
+        - – Health status, health care records, payments for
+        - health care, and much more
+        - 
+        - Data between providers
+        - – Must maintain similar security requirements
+        - 
+        - HIPAA regulations
+        - – Health Insurance Portability and Accountability Act of 1996
+        - Data retention requirements
+        - 
+        - Keep files that change frequently for version control
+        - – Files change often - Keep at least a week, perhaps more
+        - 
+        - Recover from virus infection
+        - – Infection may not be identified immediately
+        - – May need to retain 30 days of backups
+        - 
+        - Often legal requirements for data retention
+        - – Email storage may be required over years
+        - – Some industries must legally store certain data types
+        - – Different data types have different storage requirements
+        - – Corporate tax information, customer PII, tape backups, etc.
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 52
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.7 - Communication
+        - Communication skills
+        - 
+        - One of the most useful skills for the troubleshooter
+        - 
+        - One of the most difficult skills to master
+        - 
+        - A skilled communicator is incredibly marketable
+        - Avoid jargon
+        - 
+        - Abbreviations and TLAs
+        - – Three Letter Acronyms
+        - 
+        - Avoid acronyms and slang
+        - – Be the translator
+        - 
+        - 
+        - Communicate in terms that everyone can understand
+        - – Normal conversation puts everyone at ease
+        - – Decisions are based on what you say
+        - These are the easiest problems to avoid
+        - Maintain a positive attitude
+        - 
+        - Positive tone of voice
+        - – Partner with your customer
+        - – Project confidence
+        - 
+        - Problems can’t always be fixed
+        - – Do your best
+        - – Provide helpful options
+        - 
+        - Your attitude has a direct impact on the
+        - overall customer experience
+        - Avoid interrupting
+        - 
+        - But I know the answer!
+        - 
+        - Why do we interrupt?
+        - – We want to solve problems quickly
+        - – We want to show how smart we are
+        - 4.7 - Professionalism
+        - Professional appearance
+        - 
+        - Match the attire of the current environment
+        - – Everyone should feel comfortable about their dress
+        - 
+        - Formal
+        - – Some organizations have specific requirements
+        - 
+        - Business casual
+        - – A more relaxed style
+        - 
+        - Find the right balance
+        - – Follow the organization’s lead
+        - Avoid being judgmental
+        - 
+        - Cultural sensitivity
+        - – Use appropriate professional titles
+        - 
+        - You’re the teacher
+        - – Not the warden
+        - – Leave insults on the playground
+        - 
+        - Make people smarter
+        - – They’ll be better technologists
+        - 
+        - You’re going to make some BIG mistakes
+        - – Remember them.
+        - 
+        - Actively listen, take notes
+        - – Build a relationship with the customer
+        - – They’ll need help again someday
+        - – Don’t miss a key piece of information
+        - – Especially useful on the phone
+        - 
+        - This skill takes time to perfect
+        - – The better you are, the more time you’ll save later
+        - Clarify customer statements
+        - 
+        - Ask pertinent questions
+        - – Drill-down into the details
+        - – Avoid an argument
+        - – Avoid being judgmental
+        - 
+        - Repeat your understanding of the problem
+        - back to the customer
+        - – Did I understand you correctly?
+        - 
+        - Keep an open mind
+        - – Ask clarifying questions, even if the issue
+        - seems obvious
+        - – Never make assumptions
+        - Setting expectations
+        - 
+        - Offer different options
+        - – Repair or replace
+        - 
+        - Document everything
+        - – No room for questions
+        - 
+        - Keep everyone informed
+        - – Even if the status is unchanged
+        - 
+        - Follow up afterwards
+        - – Verify satisfaction
+        - Be on time and avoid distractions
+        - 
+        - Don’t allow interruptions
+        - – No personal calls, no texting, no Twitter
+        - – Don’t talk to co-workers
+        - 
+        - Apologize for delays and unintended distractions
+        - – Create an environment for conversation
+        - – In person
+        - 
+        - Open and inviting
+        - – Candy bowl can be magical
+        - – On the phone
+        - – Quiet background, clear audio
+        - – Stay off the speakerphone
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 53
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.7 - Professionalism (continued)
+        - Difficult situations
+        - 
+        - Technical problems can be stressful
+        - 
+        - Don’t argue or be defensive
+        - – Don’t dismiss
+        - – Don’t contradict
+        - 
+        - 
+        - 
+        - Diffuse a difficult situation with listening and questions
+        - – Relationship-building
+        - Communicate
+        - – Even if there’s no update
+        - Never take the situation to social media
+        - Maintain confidentiality
+        - 
+        - Privacy concerns
+        - – Sensitive information
+        - – Both professional and private
+        - – On the computer, desktop, or printer
+        - 
+        - Professional responsibilities
+        - – IT professionals have access to a lot of corporate
+        - data
+        - 
+        - Personal respect
+        - – Treat people as you would want to be treated
+        - 4.8 - Scripting Languages
+        - Scripting languages
+        - 
+        - Automate with the right tools
+        - – The script should match the requirement
+        - 
+        - May be specific to a task or operating system
+        - – Your choices may already be limited
+        - 
+        - You will probably learn more than one of these
+        - – An important skill for any technician
+        - Batch files
+        - 
+        - .bat file extension
+        - – Scripting for Windows at the command line
+        - – Legacy goes back to DOS and OS/2
+        - Windows PowerShell
+        - 
+        - Command line for system administrators
+        - – .ps1 file extension
+        - – Included with Windows 8/8.1 and 10
+        - 
+        - Extend command-line functions
+        - – Uses cmdlets (command-lets)
+        - – PowerShell scripts and functions
+        - – Standalone executables
+        - 
+        - Automate and integrate
+        - – System administration
+        - – Active Domain administration
+        - Microsoft Visual Basic Scripting Edition
+        - 
+        - VBScript
+        - – .vbs file extension
+        - 
+        - General purpose scripting in Windows
+        - – Back-end web server scripting
+        - – Scripting on the Windows desktop
+        - – Scripting inside of
+        - Microsoft Office applications
+        - Shell script
+        - 
+        - Scripting the Unix/Linux shell
+        - – Automate and extend the command line
+        - 
+        - Starts with a shebang or hash-bang #!
+        - – Often has a .sh file extension
+        - JavaScript
+        - 
+        - Scripting inside of your browser
+        - – .js file extension
+        - 
+        - Adds interactivity to HTML and CSS
+        - – Used on almost every web site
+        - 
+        - JavaScript is not Java
+        - – Different developers and origins
+        - – Very different use and implementation
+        - Python
+        - 
+        - General-purpose scripting language
+        - – .py file extension
+        - 
+        - Popular in many technologies
+        - – Broad appeal and support
+        - #!/bin/sh
+        - // Add the first input string
+        - INPUT_STRING=hello
+        - // Keep looping if the string isn’t equal to bye
+        - while [ “$INPUT_STRING” != “bye” ]
+        - do
+        - echo “Please type something in (bye to quit)”
+        - read INPUT_STRING
+        - echo “You typed: $INPUT_STRING”
+        - done
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 54
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.8 - Scripting Use Cases
+        - Basic automation
+        - 
+        - Automate tasks
+        - – You don’t have to be there
+        - – Solve problems in your sleep
+        - – Monitor and resolve problems before they happen
+        - 
+        - The need for speed
+        - – The script is as fast as the computer
+        - – No typing or delays
+        - – No human error
+        - 
+        - Automate mundane tasks
+        - – You can do something more creative
+        - Restarting machines
+        - 
+        - Turning it off and back on again
+        - – An important task
+        - 
+        - Application updates
+        - – Some apps require a system restart
+        - 
+        - Security patches
+        - – Deploy overnight and reboot the system
+        - 
+        - Troubleshooting
+        - – The once-a-day restart
+        - – You may not have physical access
+        - Remapping network drives
+        - 
+        - Shared network drives
+        - – The link between the user and their data
+        - 
+        - A common task during startup
+        - – Login scripts provide the connection
+        - 
+        - Automate software changes
+        - – Map a drive to the repository
+        - 
+        - Add or move user data
+        - – Automate the process
+        - Application installations
+        - 
+        - Install applications automatically
+        - – Don’t walk a flash drive to every computer
+        - – Many applications have an automated
+        - installation process
+        - – Scripting can turn this into a hands-off process
+        - 
+        - On-demand or automatic installation scripts
+        - – Map the application installation drive
+        - – Install the application without user prompts
+        - – Disconnect the drive
+        - – Restart the system
+        - Automated backups
+        - 
+        - Usually performed at night or during off-hours
+        - – Get a copy of all important data
+        - 
+        - Time consuming
+        - – File systems, network connections
+        - 
+        - Script an automated backup process
+        - – Works while you sleep
+        - – Don’t have to think about it
+        - Information gathering
+        - 
+        - Get specific information from a remote device
+        - – Monitoring and reporting
+        - 
+        - Performance monitoring
+        - – Confirm proper operation of a device
+        - 
+        - Inventory management
+        - – Check the hardware or software configuration
+        - 
+        - Security and vulnerability checks
+        - – Check for certain application or library versions
+        - – Plan for the latest patches
+        - Initiating updates
+        - 
+        - Nothing ever stays the same
+        - – Constant changes and updates
+        - 
+        - Operating systems
+        - – New features
+        - – Security patches
+        - 
+        - Device drivers
+        - – Bug fixes
+        - – New hardware or OS support
+        - 
+        - Applications
+        - – New version rollouts
+        - Other scripting considerations
+        - 
+        - Unintentionally introducing malware
+        - – Make sure you know what you’re installing
+        - 
+        - Inadvertently changing system settings
+        - – Test all updates
+        - – Track the file and registry changes
+        - 
+        - Browser or system crashes
+        - – Mishandling of resources
+        - – A single character in a script can have
+        - unintended consequences
+        - – Always have a backup
+        - – Always test before deployment
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 55
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.9 - Remote Access
+        - Remote desktop connections
+        - 
+        - Share a desktop from a remote location
+        - – It’s like you’re right there
+        - 
+        - RDP (Microsoft Remote Desktop Protocol)
+        - – Clients for Mac OS, Linux, and others as well
+        - 
+        - VNC (Virtual Network Computing)
+        - – Remote Frame Buffer (RFB) protocol
+        - – Clients for many operating systems
+        - – Many are open source
+        - 
+        - Commonly used for technical support
+        - – And for scammers
+        - Remote desktop security
+        - 
+        - Microsoft Remote Desktop
+        - – An open port of tcp/3389 is a big tell
+        - – Brute force attack is common
+        - 
+        - Third-party remote desktops
+        - – Often secured with just a username and password
+        - – There’s a LOT of username/password re-use
+        - 
+        - Once you’re in, you’re in
+        - – The desktop is all yours
+        - – Easy to jump to other systems
+        - – Obtain personal information, bank details
+        - – Make purchases from the user’s browser
+        - VPNs
+        - 
+        - Virtual Private Networks
+        - – Encrypted (private) data traversing a public network
+        - 
+        - Concentrator
+        - – Encryption/decryption access device
+        - – Often integrated into a firewall
+        - 
+        - Many deployment options
+        - – Specialized cryptographic hardware
+        - – Software-based options available
+        - 
+        - Used with client software
+        - – Sometimes built into the OS
+        - Client-to-site VPN
+        - 
+        - On-demand access from a remote device
+        - – Software connects to a VPN concentrator
+        - 
+        - Some software can be configured as always-on
+        - VPN security
+        - 
+        - VPN data on the network is very secure
+        - – The best encryption technologies
+        - 
+        - Authentication is critical
+        - – An attacker with the right credentials can gain access
+        - 
+        - Almost always includes
+        - multi-factor authentication (MFA)
+        - – Require more than just a username and password
+        - SSH (Secure Shell)
+        - 
+        - Encrypted console communication - tcp/22
+        - 
+        - Looks and acts the same as Telnet - tcp/23
+        - SSH security
+        - 
+        - The network traffic is encrypted
+        - – Nothing to see in the packets
+        - 
+        - Authentication is a concern
+        - – SSH supports public/private key pair authentication
+        - 
+        - Certain accounts should be disabled in SSH
+        - – For example, root
+        - – Consider removing all
+        - password-based authentication
+        - 
+        - Limit access to SSH by IP address
+        - – Configure a local firewall or network filter
+        - RMM
+        - 
+        - Managed Service Providers (MSP)
+        - – Many customers and systems to monitor
+        - – Many different service levels
+        - 
+        - Remote Monitoring and Management (RMM)
+        - – Manage a system from a remote location
+        - 
+        - Many features
+        - – Patch operating systems
+        - – Remote login
+        - – Anomaly monitoring
+        - – Hardware/software inventory
+        - Corporate
+        - Network
+        - Internet
+        - VPN Concentrator Remote User
+        - © 2022 Messer Studios, LLC Professor Messer’s CompTIA 220-1102 A+ Course Notes - Page 56
+        - [https://www.ProfessorMesser.com](https://www.ProfessorMesser.com)
+        - 4.9 - Remote Access (continued)
+        - RMM security
+        - 
+        - A popular attack point
+        - 
+        - The RMM has a great deal of information and control
+        - 
+        - Access should be limited
+        - – Don’t allow everyone to connect to
+        - the RMM service
+        - 
+        - Auditing is important
+        - – Know who’s connecting to which devices and
+        - what they’re doing
+        - Microsoft Remote Assistance (MSRA)
+        - 
+        - Get access to a remote user’s desktop
+        - – No firewall configurations or port forwarding required
+        - 
+        - User makes a request
+        - – Sends an invitation with the details
+        - 
+        - Technician connects
+        - – Uses the password in the request
+        - 
+        - Replaced by Quick Assist in Windows 10
+        - – The latest version of MSRA
+        - MSRA/Quick Assist security
+        - 
+        - No ongoing Remote Desktop service required
+        - – Avoids unintended access
+        - – No port forwarding
+        - 
+        - Email with invitation details is always a concern
+        - – Consider using voice communication
+    - ### **Section 10: CORE 2: Operating Systems**
+        - [Size]();-[H3]()
+        - 117. Linux
+        - 118. macOS
+        - 119. Windows Fundamentals
+        - 120. Windows Commands part 1
+        - 121. Windows Command part 2
+        - 122. HOW TO: Format a Hard Drive
+        - 123. HOW TO: Shrink and Grow Partitions in Windows
+        - 124. HOW TO: Create MBR Extended Partition
+        - 125. HOW TO: Repair Windows 10 OS (WinRE)
+        - 126. HOW TO: Install Windows from USB
+        - 127. HOW TO: Enable BitLocker
+        - 128. HOW TO: Why BitLocker is Important
+        - 129. HOW TO: Use EFS
+        - 130. HOW TO: Use the Registry
+        - 131. HOW TO: Configure Wake on LAN
+        - 132. HOW TO: Enable Compatibility Mode
+        - 133. HOW TO: Use Services
+        - 134. HOW TO: Use Task Manager
+        - 135. HOW TO: Configure UAC
+        - 136. HOW TO: Create a New Local User
+        - 137. HOW TO: Edit a Group Policy
+        - 138. HOW TO: Change Power Options
+        - 139. HOW TO: Do Folder Redirection
+        - 140. HOW TO: Boot to Safe Mode
+        - 141. HOW TO: Roll Back a Driver
+        - 142. HOW TO: Change Startup Applications
+        - 143. HOW TO: Use Biometric Authentication
+        - 144. HOW TO: Use Task Scheduler
+        - 145. HOW TO: Adjust UAC (User Access Control)
+        - 146. HOW TO: Use the Run Command
+        - 147. HOW TO: Use the MMC
+        - 148. HOW TO: Repair MBR
+        - 149. HOW TO: Configure AutoPlay
+        - 150. HOW TO: Disable USB Ports
+        - 151. HOW TO: Configure Failed Logins (Lockout Threshold)
+        - 152. HOW TO: Configure Active Directory
+    - ### **Section 11: CORE 2: CyberSecurity**
+        - [Size]();-[H3]()
+        - 153. Authentication Methods 
+        - 154. Malware Types
+        - 155. Social Engineering
+        - 156. Threats and Vulnerabilities
+        - 157. Windows & Desktop Security
+        - 158. Networking Security
+        - 159. Data Destruction Methods
+        - 160. AAA, RADIUS & TACACS+
+        - 161. HOW TO: Disable WPS1
+        - 162. HOW TO: Configure WPA
+        - 163. HOW TO: Configure Windows-based Firewall
+        - 164. Troubleshooting Security Symptoms
+        - 165. HOW TO: Perform MAC Filtering on SOHO Router
+        - 166. HACKING HOW TO: Hack MAC Address
+    - ### **Section 12: CORE 2: Scripting**
+        - [Size]();-[H3]()
+        - 167. Scripting Overview
+        - 168. HOW TO: Batch Scripts (.bat)
+        - 169. HOW TO: VisualBasic Scripts (.vbs)
+        - 170. HOW TO: PowerShell Scripts (.ps1)
+        - 171. HOW TO: JavaScript Scripts (.js)
+        - 172. HOW TO: Bash Scripts (.sh)
+        - 173. HOW TO: Python Scripts (.py)
+        - 174. Scripting Conclusion
+    - ### **Section 13: CORE 2: Miscellaneous**
+        - [Size]();-[H3]()
+        - 175. Policies and Practices
+        - 176. Safety
+        - 177. Professionalism
+        - 178. HOW TO: Use a UPS

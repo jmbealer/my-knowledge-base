@@ -1,0 +1,32 @@
+- January 30th, 2026
+    - cloud
+iam identity access management 
+  iam analyst 
+  cyberark defender access
+    - portfolio
+    - job titles 
+        - soc analyst
+        - grc analyst 
+        - cloud security associate 
+        - security analyst 
+        - iam analyst 
+    - linux tools
+        - lynis
+    - cyber tools
+        - nmap 
+        - burp suite
+        - wireshark
+        - hydra
+        - john the ripper
+        - hashcat 
+        - sqlmap 
+        - gobust 
+        - nikto 
+        - bloodhound
+        - crackmapexec
+        - impacket 
+    - obsidian markmind 
+    - windows
+        - winutil 
+        - crapfixer 
+        - tiny11builder

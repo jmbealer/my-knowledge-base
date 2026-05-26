@@ -1,0 +1,161 @@
+- create the shebang that goes on the first line of every Bash script→#!/bin/bash
+- Create alternative (and better) shebang→#!/usr/bin/env bash
+- Create comment→#
+- chmod +x script.sh←Make **script** executable
+- ./script.sh←Execute **script** 
+- $#←Stores the number of arguments passed to the Bash script
+- $1, $2, $3←Variables that store the values passed as arguments to the Bash script
+- exit←Exit from the Bash script, optionally add an error code
+- $( )←Execute a command inside of a subshell
+- sleep←Pause for a specified number of seconds, minutes, hours, or days
+- arithmetic expression `((...))` 
+    - if the value the expression is non-zero, the return status is 0; otherwise the return status is 1.
+- conditional expression `[[ ... ]]` 
+- 
+- Quoting
+    - create string with no expansion→'string'
+    - create string with expansion→"string"
+- Variables
+    - assign **val** to variable **var**→var=val
+    - assign {{1}} to **var**→declare -i var ; var=1
+    - **append** to var→var+=val
+    - assign foo and bar to **array** var→var=(foo bar)
+    - append baz and qux to array var→var+=(baz qux)
+    - print var→echo $var
+    - print whole array var→echo ${var[*]}
+    - check if **var** is set if not **use** val→${var:-val}
+        - [**default value parameter expansion**](https://wiki.bash-hackers.org/syntax/pe#use_a_default_value).  
+    - check if **var** is set if not **use** and **assign** val→${var:=val}
+    - 
+- Command Parameters
+    - Command parameters, also known as arguments, are used when invoking a Bash script.
+    - $0←Name of the script itself
+    - $1 ... $9←Parameter 1 ... 9
+    - ${10} ... ${nn} Positional parameter 10 or greater
+    - $* Expands to the positional parameters, starting from one
+    - $- Current options
+    - $_ Contains the absolute file name of the shell or script being executed
+    - $$←Process id of the shell
+    - $? Exit status of the most recently executed command
+    - $@←All arguments as separate words
+    - $#←Number of arguments
+    - $! PID of most recently backgrounded process
+- Conditional statements
+    - Conditional statements with if or case allow for us to check if a certain condition is true or not. Depending on the answer, the script can proceed different ways.
+    - if then fi←Test a condition and execute the then clause if it is true
+    - if then else fi←Execute the then clause if the condition is true, otherwise execute the else clause
+    - if then elif else fi←Test multiple conditions and execute whichever clause is true
+        - {{if condition; then}}
+  {{statements}}
+{{elif}}
+  statements
+{{else}}
+  statements
+{{fi}} 
+    - For case statements it is best to just see a basic example:
+        - #!/bin/bash
+        - 
+        - day=$(date +"%a")
+        - 
+        - case $day in
+        - 
+            - Mon | Tue | Wed | Thu | Fri)
+                - echo "today is a weekday"
+                - →
+                - 
+            - Sat | Sun)
+                - echo "today is the weekend"
+                - →
+                - 
+            - )
+                - echo "date not recognized"
+                - →
+        - esac
+    - Basic if example script:
+        - #!/bin/bash
+        - if [ $1 -eq $2 ]; then
+            - echo "they are equal"
+        - else
+            - echo "they are NOT equal"
+        - fi
+- Bash Loops
+    - Bash loops allow the script to continue executing a set of instructions as long as a condition continues to evaluate to true.
+    - for do done←Continue to loop for a predetermined number of lines, files, etc
+        - C-like for loop
+{{for ((i = 0; i < 10; i}}{{++)); do}}
+  echo "$i"
+{{done}} 
+    - until do done←Continue to loop until a certain condition is met
+    - while do done←Continue to loop as long as a certain condition is true
+    - break←Exit the loop and continue to the next part of the Bash script
+    - continue←Exit the current iteration of the loop but continue to run the loop
+- Read User Input
+    - Prompt the user for information to enter by using read command:
+    - 
+    - #!/bin/bash
+    - 
+    - read -p "What is your name? " name
+    - 
+    - echo "Enjoy this tutorial, $name"
+    - Parse input given as arguments to the Bash script:
+    - 
+    - #!/bin/bash
+    - 
+    - if [ $# -ne 2 ]; then
+        - echo "wrong number of arguments entered. please enter two."
+        - exit 1
+    - fi
+    - 
+    - echo You have entered $1 and $2.
+- Arithmetic Operators
+    - Arithmetic operators in Bash give us the ability to do things like addition, subtraction, multiplication, division, and other basic arithmetic inside of a Bash script.
+    - +←Addition
+    - -←Subtraction
+    - *←Multiplication
+    - /←Division
+    - %←Modulus
+    - **←Raise to a power
+    - ((i++))←Increment a variable
+    - ((i--))←Decrement a variable
+- Arithmetic Conditional Operators
+    - Arithmetic conditional operators are usually used on two numbers to determine if a certain condition is true or false.
+    - lt←less then <
+    - le←less then or equal ⇐
+    - eq←equal =
+    - ne←not equal ≠
+    - ge←greater then or equal ≥
+    - gt←greater then >
+    - Note that the operators in the left column will work with single brackets [ ] or double brackets [[ ]], whereas the operators in the right column will work only with double brackets.
+- String Comparison Operators
+    - We can use string comparison operators to determine if a string is empty or not, and to check if a string is equal, less, or greater in length to another string.
+    - 
+    - = equal
+    - != not equal
+    - < less then
+    - > greater then
+    - -n s1←string s1 is not empty
+    - -z s1←string s1 is empty
+- Bash File Testing Operators
+    - In Bash, we can test to see different characteristics about a file or directory.
+    - 
+    - b filename Block special file
+    - c filename Special character file
+    - d directoryname Check for directory existence
+    - e filename Check for file existence
+    - f filename Check for regular file existence not a directory
+    - G filename Check if file exists and is owned by effective group ID.
+    - g filename true if file exists and is set-group-id.
+    - k filename Sticky bit
+    - L filename Symbolic link
+    - O filename True if file exists and is owned by the effective user id.
+    - r filename Check if file is a readable
+    - S filename Check if file is socket
+    - s filename Check if file is nonzero size
+    - u filename Check if file set-ser-id bit is set
+    - w filename Check if file is writable
+    - x filename Check if file is executable
+- Boolean Operators
+    - Boolean operators include and &&, or || and not equal to !. These operators allow us to test if two or more conditions are true or not.
+    - &&←Logical AND operator
+    - ||←Logical OR operator
+    - !←NOT equal to operator

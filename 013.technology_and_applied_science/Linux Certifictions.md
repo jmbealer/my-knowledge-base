@@ -1,0 +1,5625 @@
+- Linux Certifications Roadmap #linux
+    - 0
+        - [LPI Linux Essentials - 010-160](Linux%20Certifictions/LPI/LPI%20Linux%20Essentials%20-%20010-160.md)
+    - 1
+        - [Linux Foundation Certified IT Associate (LFCA)](Linux%20Certifictions/Linux%20Foundation/Linux%20Foundation%20Certified%20IT%20Associate%20(LFCA).md)
+        - [LPIC-1 - 101-500 and 102-500](Linux%20Certifictions/LPI/LPIC-1%20-%20101-500%20and%20102-500.md)
+        - [SUSE Certified Administrator (SCA)](Linux%20Certifictions/SUSE/SUSE%20Certified%20Administrator%20(SCA).md)
+    - 2
+        - [LPIC-2 - 201-450 and 202-450](Linux%20Certifictions/LPI/LPIC-2%20-%20201-450%20and%20202-450.md)
+        - [Red Hat Certified System Administrator (RHCSA)](Linux%20Certifictions/RedHat/Red%20Hat%20Certified%20System%20Administrator%20(RHCSA).md)
+        - [Linux Foundation Certified System Administrator (LFCS)](Linux%20Certifictions/Linux%20Foundation/Linux%20Foundation%20Certified%20System%20Administrator%20(LFCS).md)
+    - 3
+        - [SUSE Certified Engineer (SCE)](Linux%20Certifictions/SUSE/SUSE%20Certified%20Engineer%20(SCE).md)
+        - [LPIC-3 Mixed Environments](Linux%20Certifictions/LPI/LPIC-3%20Mixed%20Environments.md)
+        - [LPIC-3 Security ](Linux%20Certifictions/LPI/LPIC-3%20Security.md)
+        - [LPIC-3 Virtualization and Containerization](Linux%20Certifictions/LPI/LPIC-3%20Virtualization%20and%20Containerization.md)
+        - [LPIC-3 High Availability and Storage Clusters](Linux%20Certifictions/LPI/LPIC-3%20High%20Availability%20and%20Storage%20Clusters.md)
+        - [Red Hat Certified Engineer (RHCE)](Linux%20Certifictions/RedHat/Red%20Hat%20Certified%20Engineer%20(RHCE).md)
+    - 4
+        - [Red Hat Certified Architect (RHCA)](Linux%20Certifictions/RedHat/Red%20Hat%20Certified%20Architect%20(RHCA).md)
+    - Unsorted
+        - [LPI Certifications](Linux%20Certifictions/LPI/LPI%20Certifications.md)
+            - [LPI DevOps Tools Engineer](Linux%20Certifictions/LPI/LPI%20DevOps%20Tools%20Engineer.md)
+            - [LPI BSD Specialist](Linux%20Certifictions/LPI/LPI%20BSD%20Specialist.md)
+            - [LPI Security Essentials ](Linux%20Certifictions/LPI/LPI%20Security%20Essentials.md)
+            - [LPI Web Development Essentials](Linux%20Certifictions/LPI/LPI%20Web%20Development%20Essentials.md)
+            - [LPI Open Source Essentials](Linux%20Certifictions/LPI/LPI%20Open%20Source%20Essentials.md)
+        - The Linux Foundation
+        - SUSE
+        - Red Hat Certifications
+            - ### Administrators
+                - [Size]();-[H3]()
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Services Management and Automation](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-services-management-automation)
+                - [Red Hat Certified System Administrator (RHCSA)](https://www.redhat.com/en/services/certification/rhcsa)
+                - [Red Hat Certified Engineer (RHCE)](https://www.redhat.com/en/services/certification/rhce)
+                - [Red Hat Certified OpenShift Administrator](https://www.redhat.com/en/services/certification/rhcs-paas)
+                - [Red Hat Certified Specialist in Cloud Infrastructure](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+                - [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting)
+                - [Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/certification/rhcs-security-linux)
+                - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+                - [Red Hat Certified Specialist in Enterprise Application Server Administration](https://www.redhat.com/en/services/certification/rhcs-app-server-admin)
+                - [Red Hat Certified Specialist in Containers and Kubernetes](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers-and-kubernetes)
+                - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+                - [Red Hat Certified Specialist in MultiCluster Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management)
+                - [Red Hat Certified Specialist in Cloud-native Integration](https://www.redhat.com/en/services/certification/rhcs-cloud-native-integration)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+            - ### Architects
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Event-Driven Development with Kafka](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-event-driven-development-kafka)
+                - [Red Hat Certified Specialist in Services Management and Automation](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-services-management-automation)
+                - [Red Hat Certified Specialist in Linux Performance Tuning](https://www.redhat.com/en/services/certification/rhcs-performance-tuning)
+                - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+                - [Red Hat Certified OpenShift Application Developer](https://www.redhat.com/en/services/certification/rhcs-openshift-application-development)
+                - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+                - [Red Hat Certified Specialist in Cloud-native Integration](https://www.redhat.com/en/services/certification/rhcs-cloud-native-integration)
+                - [Red Hat Certified Specialist in MultiCluster Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+                - [Size]();-[H3]()
+            - ### Developers
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Event-Driven Development with Kafka](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-event-driven-development-kafka)
+                - [Red Hat Certified System Administrator (RHCSA)](https://www.redhat.com/en/services/certification/rhcsa)
+                - [Red Hat Certified OpenShift Application Developer](https://www.redhat.com/en/services/certification/rhcs-openshift-application-development)
+                - [Red Hat Certified Enterprise Application Developer](https://www.redhat.com/en/services/certification/red-hat-certified-enterprise-application-developer)
+                - [Red Hat Certified Specialist in Business Rules](https://www.redhat.com/en/services/certification/rhcs-business-rules)
+                - [Red Hat Certified Specialist in Camel Development](https://www.redhat.com/en/services/certification/rhcs-camel-development)
+                - [Red Hat Certified Cloud-Native Developer](https://www.redhat.com/en/services/certification/red-hat-certified-cloud-native-developer)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+                - [Size]();-[H3]()
+            - ### Operators
+                - [Red Hat Certified Specialist in Services Management and Automation](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-services-management-automation)
+                - [Red Hat Certified Specialist in Cloud Infrastructure](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+                - [Size]();-[H3]()
+            - ### Engineers
+                - [Red Hat Certified Specialist in Services Management and Automation](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-services-management-automation)
+                - [Red Hat Certified Engineer (RHCE)](https://www.redhat.com/en/services/certification/rhce)
+                - [Red Hat Certified Specialist in MultiCluster Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management)
+                - [Red Hat Certified Specialist in Cloud-native Integration](https://www.redhat.com/en/services/certification/rhcs-cloud-native-integration)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+                - [Size]();-[H3]()
+- LPI #linux
+    - LPI Linux Essentials - 010-160 #linux
+        -  **010-160 Objectives 1-5**
+            - [Size]();-[H0]()
+            -  **The Linux Community and a Career in Open Source 1-4**
+                - [Size]();-[H0]()
+                - What is Linux?
+                - Is an open-source Unix-like operating system
+                - Is the kernel of the operating system
+                - What is Unix
+                - What is the operating system
+                - what is a kernel
+                - What is the Linux Community?
+                - What is Open Source?
+                - 1.1 Linux Evolution and Popular Operating Systems Weight: 2
+                    - What is Linux Evolution?
+                    - What are the popular operating systems?
+                    - **Description:** Knowledge of Linux development and major distributions.
+                    - **Key Knowledge Areas:**
+                    - Distributions
+                        - What are Linux distributions?
+                    - Embedded Systems
+                        - What are embedded systems?
+                    - Linux in the Cloud
+                        - What is linux in the cloud?
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - Debian, Ubuntu (LTS)
+                        - What is Debian?
+                        - What is Ubuntu?
+                    - CentOS, openSUSE, Red Hat, SUSE
+                        - What is CentOS?
+                        - What is openSUSE?
+                        - What is Red Hat?
+                        - What is SUSE?
+                    - Linux Mint, Scientific Linux
+                        - What is Linux Mint?
+                        - What is Scientific Linux?
+                    - Raspberry Pi, Raspbian
+                        - What is Raspberry Pi?
+                        - What is Raspbian?
+                    - Android
+                        - What is Android?
+                - 1.2 Major Open Source Applications Weight: 2
+                    - 
+                    - **Description:** Awareness of major applications as well as their uses and
+                    - development.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Desktop applications
+                        - What are desktop applications?
+                    - Server applications
+                        - What are server applications?
+                    - Development languages
+                        - What are development languages?
+                    - Package management tools and repositories
+                        - What are package management tools and repositories?
+                        - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP
+                        - What is OpenOffice.org?
+                        - What is LibreOffice?
+                        - What is Thunderbird?
+                        - What is Firefox?
+                        - What is GIMP?
+                    - Nextcloud, ownCloud
+                        - What is Nextcloud?
+                        - What is ownCloud?
+                    - Apache HTTPD, NGINX, MariaDB, MySQL, NFS, Samba
+                        - What is Apache HTTPD?
+                        - What is NGINX?
+                        - What is MariaDB?
+                        - What is MySQL?
+                        - What is NFS?
+                        - What is Samba?
+                    - C, Java, JavaScript, Perl, shell, Python, PHP
+                        - What is C?
+                        - What is Java?
+                        - What is JavaScript?
+                        - What is Perl?
+                        - What is shell?
+                        - What is Python?
+                        - What is PHP?
+                    - dpkg, apt-get, rpm, yum
+                        - What is dpkg?
+                        - What is apt-get?
+                        - What is rpm?
+                        - What is yum?
+                        - 
+                - 1.3 Open Source Software and Licensing Weight: 1
+                    - 
+                    - **Description:** Open communities and licensing Open Source Software for business.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Open source philosophy
+                    - Open source licensing
+                    - Free Software Foundation (FSF), Open Source Initiative (OSI)
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - Copyleft, Permissive
+                    - GPL, BSD, Creative Commons
+                    - Free Software, Open Source Software, FOSS, FLOSS
+                    - Open source business models
+                - 1.4 ICT Skills and Working in Linux Weight: 2
+                    - 
+                    - **Description:** Basic Information and Communication Technology (ICT) skills and
+                    - working in Linux.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Desktop skills
+                    - Getting to the command line
+                    - Industry uses of Linux, cloud computing and virtualization
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - Using a browser, privacy concerns, configuration options, searching the web
+                    - and saving content
+                    - Terminal and console
+                    - Password issues
+                    - Privacy issues and tools
+                    - Use of common open source applications in presentations and projects
+            -  **Finding Your Way on a Linux System 1-4**
+                - [Size]();-[H0]()
+                - 
+                - 2.1 Command Line Basics Weight: 3
+                    - 
+                    - **Description:** Basics of using the Linux command line.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Basic shell
+                    - Command line syntax
+                    - Variables
+                    - Quoting
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - Bash
+                    - echo
+                    - history
+                    - PATH environment variable
+                    - export
+                    - type
+                - 
+                - 2.2 Using the Command Line to Get Help Weight: 2
+                - 
+                    - **Description:** Running help commands and navigation of the various help systems.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Man pages
+                    - Info pages
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - man
+                    - info
+                    - /usr/share/doc/
+                    - locate
+                    - 
+                - 2.3 Using Directories and Listing Files Weight: 2
+                - 
+                    - **Description:** Navigation of home and system directories and listing files in
+                    - various locations.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Files, directories
+                    - Hidden files and directories
+                    - Home directories
+                    - Absolute and relative paths
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - Common options for ls
+                    - Recursive listings
+                    - cd
+                    - . and ..
+                    - home and ~
+                    - 
+                - 2.4 Creating, Moving and Deleting Files Weight: 2
+                    - 
+                    - **Description:** Create, move and delete files and directories under the home
+                    - directory.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Files and directories
+                    - Case sensitivity
+                    - Simple globbing
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - mv, cp, rm, touch
+                    - mkdir, rmdir
+            -  **The Power of the Command Line 1-3**
+                - [Size]();-[H0]()
+                - 
+                - 3.1 Archiving Files on the Command Line Weight: 2
+                    - 
+                    - **Description:** Archiving files in the user home directory.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Files, directories
+                    - Archives, compression
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - tar
+                    - Common tar options
+                    - gzip, bzip2, xz
+                    - zip, unzip
+                    - 
+                - 3.2 Searching and Extracting Data from Files Weight: 3
+                    - 
+                    - **Description:** Search and extract data from files in the home directory.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Command line pipes
+                    - I/O redirection
+                    - Basic Regular Expressions using ., [ ], *, and ?
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - grep
+                    - less
+                    - cat, head, tail
+                    - sort
+                    - cut
+                    - wc
+                - 
+                - 3.3 Turning Commands into a Script Weight: 4
+                    - 
+                    - **Description:** Turning repetitive commands into simple scripts.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Basic shell scripting
+                    - Awareness of common text editors (vi and nano)
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - #! (shebang)
+                    - /bin/bash
+                    - Variables
+                    - Arguments
+                    - for loops
+                    - echo
+                    - Exit status
+                - 
+            -  **The Linux Operating System 1-4**
+                - [Size]();-[H0]()
+                - 
+                - 4.1 Choosing an Operating System Weight: 1
+                - 
+                    - **Description:** Knowledge of major operating systems and Linux distributions.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Differences between Windows, OS X and Linux
+                    - Distribution life cycle management
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - GUI versus command line, desktop configuration
+                    - Maintenance cycles, beta and stable
+                    - 
+                - 4.2 Understanding Computer Hardware Weight: 2
+                    - 
+                    - **Description:** Familiarity with the components that go into building desktop and
+                    - server computers.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Hardware
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - Motherboards, processors, power supplies, optical drives, peripherals
+                    - Hard drives, solid state disks and partitions, /dev/sd*
+                    - Drivers
+                    - 
+                - 4.3 Where Data is Stored Weight: 3
+                    - 
+                    - **Description:** Where various types of information are stored on a Linux system.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Programs and configuration
+                    - Processes
+                    - Memory addresses
+                    - System messaging
+                    - Logging
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - ps, top, free
+                    - syslog, dmesg
+                    - /etc/, /var/log/
+                    - /boot/, /proc/, /dev/, /sys/
+                - 
+                - 4.4 Your Computer on the Network Weight: 2
+                - 
+                    - **Description:** Querying vital networking configuration and determining the basic
+                    - requirements for a computer on a Local Area Network (LAN).
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Internet, network, routers
+                    - Querying DNS client configuration
+                    - Querying network configuration
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - route, ip route show
+                    - ifconfig, ip addr show
+                    - netstat, ss
+                    - /etc/resolv.conf, /etc/hosts
+                    - IPv4, IPv6
+                    - ping
+                    - host
+            -  **Security and File Permissions 1-4**
+                - [Size]();-[H0]()
+                - 
+                - 5.1 Basic Security and Identifying User Types Weight: 2
+                    - 
+                    - **Description:** Various types of users on a Linux system.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Root and standard users
+                    - System users
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - /etc/passwd, /etc/shadow, /etc/group
+                    - id, last, who, w
+                    - sudo, su
+                - 
+                - 5.2 Creating Users and Groups Weight: 2
+                    - 
+                    - **Description:** Creating users and groups on a Linux system.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - User and group commands
+                    - User IDs
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - /etc/passwd, /etc/shadow, /etc/group, /etc/skel/
+                    - useradd, groupadd
+                    - passwd
+                    - 
+                - 5.3 Managing File Permissions and Ownership Weight: 2
+                    - 
+                    - **Description:** Understanding and manipulating file permissions and ownership
+                    - settings.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - File and directory permissions and ownership
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - ls -l, ls -a
+                    - chmod, chown
+                    - 
+                - 5.4 Special Directories and Files Weight: 1
+                    - 
+                    - **Description:** Special directories and files on a Linux system including special
+                    - permissions.
+                    - 
+                    - **Key Knowledge Areas:**
+                    - 
+                    - Using temporary files and directories
+                    - Symbolic links
+                    - 
+                    - **The following is a partial list of the used files, terms and utilities:**
+                    - 
+                    - /tmp/, /var/tmp/ and Sticky Bit
+                    - ls -d
+                    - ln -s
+        -  Who, What, Where, When, Why, Which, Whom, Whose
+            - [Size]();-[H0]()
+        -  Introduction
+            - [Size]();-[H0]()
+            - The purpose of the Linux Essentials Certificate is to define the basic knowledge required to competently use a desktop or mobile device using a Linux Operating System.
+        -  Links
+            - [Size]();-[H0]()
+            - [Linux Essentials Overviews](https://www.lpi.org/our-certifications/linux-essentials-overview/)
+            - [Linux Essentials Exam 010 Objectives](https://www.lpi.org/our-certifications/exam-010-objectives)
+        -  Books
+            - [Size]();-[H0]()
+        - --------------------- Portal ---------------------query:[LPI Linux Essentials - 010-160](Linux%20Certifictions/LPI/LPI%20Linux%20Essentials%20-%20010-160.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - 
+    - LPIC-1 - 101-500 and 102-500 #LPI #linux
+        - 
+        -  LPIC-1 101-500 Objectives 1-4
+            - [Size]();-[H0]()
+            -   *101.0 System Architecture*  1-3
+                - [Size]();-[H0]()
+                - 101.1 Determine and configure hardware settings
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to determine and configure fundamental system hardware.
+                    - **Key Knowledge Areas:**
+                        - Enable and disable integrated peripherals.
+                        - Differentiate between the various types of mass storage devices.
+                        - Determine hardware resources for devices.
+                        - Tools and utilities to list various hardware information (e.g. lsusb, lspci, etc.).
+                        - Tools and utilities to manipulate USB devices.
+                        - Conceptual understanding of sysfs, udev and dbus.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /sys/
+                        - /proc/
+                        - /dev/
+                        - modprobe
+                        - lsmod
+                        - lspci
+                        - lsusb
+                - 101.2 Boot the system
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to guide the system through the booting process.
+                    - **Key Knowledge Areas:**
+                        - Provide common commands to the boot loader and options to the kernel at boot time.
+                        - Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion.
+                        - Understanding of SysVinit and systemd.
+                        - Awareness of Upstart.
+                        - Check boot events in the log files.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - dmesg
+                        - journalctl
+                        - BIOS
+                        - UEFI
+                        - bootloader
+                        - kernel
+                        - initramfs
+                        - init
+                        - SysVinit
+                        - systemd
+                    - 
+                - 101.3 Change runlevels / boot targets and shutdown or reboot system
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to manage the SysVinit runlevel or systemd boot target of the system. This objective includes changing to single user mode, shutdown or rebooting the system. Candidates should be able to alert users before switching runlevels / boot targets and properly terminate processes. This objective also includes setting the default SysVinit runlevel or systemd boot target. It also includes awareness of Upstart as an alternative to SysVinit or systemd.
+                    - **Key Knowledge Areas:**
+                        - Set the default runlevel or boot target.
+                        - Change between runlevels / boot targets including single user mode.
+                        - Shutdown and reboot from the command line.
+                        - Alert users before switching runlevels / boot targets or other major system events.
+                        - Properly terminate processes.
+                        - Awareness of acpid.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/inittab
+                        - shutdown
+                        - init
+                        - /etc/init.d/
+                        - telinit
+                        - systemd
+                        - systemctl
+                        - /etc/systemd/
+                        - /usr/lib/systemd/
+                        - wall
+            -   *102.0 Linux Installation and Package Management*  1-6
+                - [Size]();-[H0]()
+                - 102.1 Design hard disk layout
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to design a disk partitioning scheme for a Linux system.
+                    - **Key Knowledge Areas:**
+                        - Allocate filesystems and swap space to separate partitions or disks.
+                        - Tailor the design to the intended use of the system.
+                        - Ensure the /boot partition conforms to the hardware architecture requirements for booting.
+                        - Knowledge of basic features of LVM.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - / (root) filesystem
+                        - /var filesystem
+                        - /home filesystem
+                        - /boot filesystem
+                        - EFI System Partition (ESP)
+                        - swap space
+                        - mount points
+                        - partitions
+                - 
+                - 102.2 Install a boot manager
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to select, install and configure a boot manager.
+                    - **Key Knowledge Areas:**
+                        - Providing alternative boot locations and backup boot options.
+                        - Install and configure a boot loader such as GRUB Legacy.
+                        - Perform basic configuration changes for GRUB 2.
+                        - Interact with the boot loader.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - menu.lst, grub.cfg and grub.conf
+                        - grub-install
+                        - grub-mkconfig
+                        - MBR
+                - 
+                - 102.3 Manage shared libraries
+                    - **Weight**
+                        - 1
+                    - **Description**
+                        - Candidates should be able to determine the shared libraries that executable programs depend on and install them when necessary.
+                    - **Key Knowledge Areas:**
+                        - Identify shared libraries.
+                        - Identify the typical locations of system libraries.
+                        - Load shared libraries.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ldd
+                        - ldconfig
+                        - /etc/ld.so.conf
+                        - LD_LIBRARY_PATH
+                - 
+                - 102.4 Use Debian package management
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to perform package management using the Debian package tools.
+                    - **Key Knowledge Areas:**
+                        - Install, upgrade and uninstall Debian binary packages.
+                        - Find packages containing specific files or libraries which may or may not be installed.
+                        - Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed).
+                        - Awareness of apt.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/apt/sources.list
+                        - dpkg
+                        - dpkg-reconfigure
+                        - apt-get
+                        - apt-cache
+                - 
+                - 102.5 Use RPM and YUM package management
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to perform package management using RPM, YUM and Zypper.
+                    - **Key Knowledge Areas:**
+                        - Install, re-install, upgrade and remove packages using RPM, YUM and Zypper.
+                        - Obtain information on RPM packages such as version, status, dependencies, integrity and signatures.
+                        - Determine what files a package provides, as well as find which package a specific file comes from.
+                        - Awareness of dnf.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - rpm
+                        - rpm2cpio
+                        - /etc/yum.conf
+                        - /etc/yum.repos.d/
+                        - yum
+                        - zypper
+                - 
+                - 102.6 Linux as a virtualization guest
+                    - **Weight**
+                        - 1
+                    - **Description**
+                        - Candidates should understand the implications of virtualization and cloud computing on a Linux guest system.
+                    - **Key Knowledge Areas:**
+                        - Understand the general concept of virtual machines and containers
+                        - Understand common elements virtual machines in an IaaS cloud, such as computing instances, block storage and networking
+                        - Understand unique properties of a Linux system which have to changed when a system is cloned or used as a template
+                        - Understand how system images are used to deploy virtual machines, cloud instances and containers
+                        - Understand Linux extensions which integrate Linux with a virtualization product
+                        - Awareness of cloud-init
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - Virtual machine
+                        - Linux container
+                        - Application container
+                        - Guest drivers
+                        - SSH host keys
+                        - D-Bus machine id
+            -   *103.0 GNU and Unix Commands*  1-8
+                - [Size]();-[H0]()
+                - 103.1 Work on the command line
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to interact with shells and commands using the command line. The objective assumes the Bash shell.
+                    - **Key Knowledge Areas:**
+                        - Use single shell commands and one line command sequences to perform basic tasks on the command line.
+                        - Use and modify the shell environment including defining, referencing and exporting environment variables.
+                        - Use and edit command history.
+                        - Invoke commands inside and outside the defined path.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - bash
+                        - echo
+                        - env
+                        - export
+                        - pwd
+                        - set
+                        - unset
+                        - type
+                        - which
+                        - man
+                        - uname
+                        - history
+                        - .bash_history
+                        - Quoting
+                - 
+                - 103.2 Process text streams using filters
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should should be able to apply filters to text streams.
+                    - **Key Knowledge Areas:**
+                        - Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - bzcat
+                        - cat
+                        - cut
+                        - head
+                        - less
+                        - md5sum
+                        - nl
+                        - od
+                        - paste
+                        - sed
+                        - sha256sum
+                        - sha512sum
+                        - sort
+                        - split
+                        - tail
+                        - tr
+                        - uniq
+                        - wc
+                        - xzcat
+                        - zcat
+                - 
+                - 103.3 Perform basic file management
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to use the basic Linux commands to manage files and directories.
+                    - **Key Knowledge Areas:**
+                        - Copy, move and remove files and directories individually.
+                        - Copy multiple files and directories recursively.
+                        - Remove files and directories recursively.
+                        - Use simple and advanced wildcard specifications in commands.
+                        - Using find to locate and act on files based on type, size, or time.
+                        - Usage of tar, cpio and dd.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - cp
+                        - find
+                        - mkdir
+                        - mv
+                        - ls
+                        - rm
+                        - rmdir
+                        - touch
+                        - tar
+                        - cpio
+                        - dd
+                        - file
+                        - gzip
+                        - gunzip
+                        - bzip2
+                        - bunzip2
+                        - xz
+                        - unxz
+                        - file globbing
+                - 
+                - 103.4 Use streams, pipes and redirects
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to redirect streams and connect them in order to efficiently process textual data. Tasks include redirecting standard input, standard output and standard error, piping the output of one command to the input of another command, using the output of one command as arguments to another command and sending output to both stdout and a file.
+                    - **Key Knowledge Areas:**
+                        - Redirecting standard input, standard output and standard error.
+                        - Pipe the output of one command to the input of another command.
+                        - Use the output of one command as arguments to another command.
+                        - Send output to both stdout and a file.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - tee
+                        - xargs
+                - 
+                - 103.5 Create, monitor and kill processes
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to perform basic process management.
+                    - **Key Knowledge Areas:**
+                        - Run jobs in the foreground and background.
+                        - Signal a program to continue running after logout.
+                        - Monitor active processes.
+                        - Select and sort processes for display.
+                        - Send signals to processes.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - &
+                        - bg
+                        - fg
+                        - jobs
+                        - kill
+                        - nohup
+                        - ps
+                        - top
+                        - free
+                        - uptime
+                        - pgrep
+                        - pkill
+                        - killall
+                        - watch
+                        - screen
+                        - tmux
+                - 
+                - 103.6 Modify process execution priorities
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should should be able to manage process execution priorities.
+                    - **Key Knowledge Areas:**
+                        - Know the default priority of a job that is created.
+                        - Run a program with higher or lower priority than the default.
+                        - Change the priority of a running process.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - nice
+                        - ps
+                        - renice
+                        - top
+                - 
+                - 103.7 Search text files using regular expressions
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to manipulate files and text data using regular expressions. This objective includes creating simple regular expressions containing several notational elements as well as understanding the differences between basic and extended regular expressions. It also includes using regular expression tools to perform searches through a filesystem or file content.
+                    - **Key Knowledge Areas:**
+                        - Create simple regular expressions containing several notational elements.
+                        - Understand the differences between basic and extended regular expressions.
+                        - Understand the concepts of special characters, character classes, quantifiers and anchors.
+                        - Use regular expression tools to perform searches through a filesystem or file content.
+                        - Use regular expressions to delete, change and substitute text.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - grep
+                        - egrep
+                        - fgrep
+                        - sed
+                        - regex(7)
+                - 
+                - 103.8 Basic file editing
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to edit text files using vi. This objective includes vi navigation, vi modes, inserting, editing, deleting, copying and finding text. It also includes awareness of other common editors and setting the default editor.
+                    - **Key Knowledge Areas:**
+                        - Navigate a document using vi.
+                        - Understand and use vi modes.
+                        - Insert, edit, delete, copy and find text in vi.
+                        - Awareness of Emacs, nano and vim.
+                        - Configure the standard editor.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - vi
+                        - /, ?
+                        - h,j,k,l
+                        - i, o, a
+                        - d, p, y, dd, yy
+                        - ZZ, :w!, :q!
+                        - EDITOR
+            -   *104.0 Devices, Linux Filesystems, Filesystem Hierarchy Standard*  1-7
+                - [Size]();-[H0]()
+                - 104.1 Create partitions and filesystems
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure disk partitions and then create filesystems on media such as hard disks. This includes the handling of swap partitions.
+                    - **Key Knowledge Areas:**
+                        - Manage MBR and GPT partition tables
+                        - Use various mkfs commands to create various filesystems such as:
+                            - ext2/ext3/ext4
+                            - XFS
+                            - VFAT
+                            - exFAT
+                        - Basic feature knowledge of Btrfs, including multi-device filesystems, compression and subvolumes.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - fdisk
+                        - gdisk
+                        - parted
+                        - mkfs
+                        - mkswap
+                - 
+                - 104.2 Maintain the integrity of filesystems
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to maintain a standard filesystem, as well as the extra data associated with a journaling filesystem.
+                    - **Key Knowledge Areas:**
+                        - Verify the integrity of filesystems.
+                        - Monitor free space and inodes.
+                        - Repair simple filesystem problems.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - du
+                        - df
+                        - fsck
+                        - e2fsck
+                        - mke2fs
+                        - tune2fs
+                        - xfs_repair
+                        - xfs_fsr
+                        - xfs_db
+                - 
+                - 104.3 Control mounting and unmounting of filesystems
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure the mounting of a filesystem.
+                    - **Key Knowledge Areas:**
+                        - Manually mount and unmount filesystems.
+                        - Configure filesystem mounting on bootup.
+                        - Configure user mountable removable filesystems.
+                        - Use of labels and UUIDs for identifying and mounting file systems.
+                        - Awareness of systemd mount units.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/fstab
+                        - /media/
+                        - mount
+                        - umount
+                        - blkid
+                        - lsblk
+                - 
+                - 104.4 Removed
+                - 
+                - 104.5 Manage file permissions and ownership
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to control file access through the proper use of permissions and ownerships.
+                    - **Key Knowledge Areas:**
+                        - Manage access permissions on regular and special files as well as directories.
+                        - Use access modes such as suid, sgid and the sticky bit to maintain security.
+                        - Know how to change the file creation mask.
+                        - Use the group field to grant file access to group members.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - chmod
+                        - umask
+                        - chown
+                        - chgrp
+                - 
+                - 104.6 Create and change hard and symbolic links
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to create and manage hard and symbolic links to a file.
+                    - **Key Knowledge Areas:**
+                        - Create links.
+                        - Identify hard and/or soft links.
+                        - Copying versus linking files.
+                        - Use links to support system administration tasks.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ln
+                        - ls
+                - 
+                - 104.7 Find system files and place files in the correct location
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be thoroughly familiar with the Filesystem Hierarchy Standard (FHS), including typical file locations and directory classifications.
+                    - **Key Knowledge Areas:**
+                        - Understand the correct locations of files under the FHS.
+                        - Find files and commands on a Linux system.
+                        - Know the location and purpose of important file and directories as defined in the FHS.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - find
+                        - locate
+                        - updatedb
+                        - whereis
+                        - which
+                        - type
+                        - /etc/updatedb.conf
+        -  LPIC-1 102-500 Objectives 5-10
+            -   *105. Shells and Shell Scripting*  1-2
+                - [Size]();-[H0]()
+                - 105.1 Customize and use the shell environment
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to customize shell environments to meet users' needs. Candidates should be able to modify global and user profiles.
+                    - **Key Knowledge Areas:**
+                        - Set environment variables (e.g. PATH) at login or when spawning a new shell.
+                        - Write Bash functions for frequently used sequences of commands.
+                        - Maintain skeleton directories for new user accounts.
+                        - Set command search path with the proper directory.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - .
+                        - source
+                        - /etc/bash.bashrc
+                        - /etc/profile
+                        - env
+                        - export
+                        - set
+                        - unset
+                        - ~/.bash_profile
+                        - ~/.bash_login
+                        - ~/.profile
+                        - ~/.bashrc
+                        - ~/.bash_logout
+                        - function
+                        - alias
+                - 
+                - 105.2 Customize or write simple scripts
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to customize existing scripts, or write simple new Bash scripts.
+                    - **Key Knowledge Areas:**
+                        - Use standard sh syntax (loops, tests).
+                        - Use command substitution.
+                        - Test return values for success or failure or other information provided by a command.
+                        - Execute chained commands.
+                        - Perform conditional mailing to the superuser.
+                        - Correctly select the script interpreter through the shebang (#!) line.
+                        - Manage the location, ownership, execution and suid-rights of scripts.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - for
+                        - while
+                        - test
+                        - if
+                        - read
+                        - seq
+                        - exec
+                        - ||
+                        - &&
+            - [Size]();-[H0]()
+            -   *106. User Interfaces and Desktops*  1-3
+                - [Size]();-[H0]()
+                - 106.1 Install and configure X11
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to install and configure X11.
+                    - **Key Knowledge Areas:**
+                        - Understanding of the X11 architecture.
+                        - Basic understanding and knowledge of the X Window configuration file.
+                        - Overwrite specific aspects of Xorg configuration, such as keyboard layout.
+                        - Understand the components of desktop environments, such as display managers and window managers.
+                        - Manage access to the X server and display applications on remote X servers.
+                        - Awareness of Wayland.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/X11/xorg.conf
+                        - /etc/X11/xorg.conf.d/
+                        - ~/.xsession-errors
+                        - xhost
+                        - xauth
+                        - DISPLAY
+                        - X
+                - 
+                - 106.2 Graphical Desktops
+                    - **Weight**
+                        - 1
+                    - **Description**
+                        - Candidates should be aware of major Linux desktops. Furthermore, candidates should be aware of protocols used to access remote desktop sessions.
+                    - **Key Knowledge Areas:**
+                        - Awareness of major desktop environments
+                        - Awareness of protocols to access remote desktop sessions
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - KDE
+                        - Gnome
+                        - Xfce
+                        - X11
+                        - XDMCP
+                        - VNC
+                        - Spice
+                        - RDP
+                - 
+                - 106.3 Accessibility
+                    - **Weight**
+                        - 1
+                    - **Description**
+                        - Demonstrate knowledge and awareness of accessibility technologies.
+                    - **Key Knowledge Areas:**
+                        - Basic knowledge of visual settings and themes.
+                        - Basic knowledge of assistive technology.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - High Contrast/Large Print Desktop Themes.
+                        - Screen Reader.
+                        - Braille Display.
+                        - Screen Magnifier.
+                        - On-Screen Keyboard.
+                        - Sticky/Repeat keys.
+                        - Slow/Bounce/Toggle keys.
+                        - Mouse keys.
+                        - Gestures.
+                        - Voice recognition.
+            -   *107.0 Administrative Tasks*  1-3
+                - [Size]();-[H0]()
+                - 107.1 Manage user and group accounts and related system files
+                    - **Weight**
+                        - 5
+                    - **Description**
+                        - Candidates should be able to add, remove, suspend and change user accounts.
+                    - **Key Knowledge Areas:**
+                        - Add, modify and remove users and groups.
+                        - Manage user/group info in password/group databases.
+                        - Create and manage special purpose and limited accounts.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/passwd
+                        - /etc/shadow
+                        - /etc/group
+                        - /etc/skel/
+                        - chage
+                        - getent
+                        - groupadd
+                        - groupdel
+                        - groupmod
+                        - passwd
+                        - useradd
+                        - userdel
+                        - usermod
+                - 
+                - 107.2 Automate system administration tasks by scheduling jobs
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to use cron and systemd timers to run jobs at regular intervals and to use at to run jobs at a specific time.
+                    - **Key Knowledge Areas:**
+                        - Manage cron and at jobs.
+                        - Configure user access to cron and at services.
+                        - Understand systemd timer units.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/cron.{d,daily,hourly,monthly,weekly}/
+                        - /etc/at.deny
+                        - /etc/at.allow
+                        - /etc/crontab
+                        - /etc/cron.allow
+                        - /etc/cron.deny
+                        - /var/spool/cron/
+                        - crontab
+                        - at
+                        - atq
+                        - atrm
+                        - systemctl
+                        - systemd-run
+                - 
+                - 107.3 Localisation and internationalisation
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to localize a system in a different language than English. As well, an understanding of why LANG=C is useful when scripting.
+                    - **Key Knowledge Areas:**
+                        - Configure locale settings and environment variables.
+                        - Configure timezone settings and environment variables.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/timezone
+                        - /etc/localtime
+                        - /usr/share/zoneinfo/
+                        - LC_*
+                        - LC_ALL
+                        - LANG
+                        - TZ
+                        - /usr/bin/locale
+                        - tzselect
+                        - timedatectl
+                        - date
+                        - iconv
+                        - UTF-8
+                        - ISO-8859
+                        - ASCII
+                        - Unicode
+            -   *108.0 Essential System Services*  1-4
+                - [Size]();-[H0]()
+                - 108.1 Maintain system time
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to properly maintain the system time and synchronize the clock via NTP.
+                    - **Key Knowledge Areas:**
+                        - Set the system date and time.
+                        - Set the hardware clock to the correct time in UTC.
+                        - Configure the correct timezone.
+                        - Basic NTP configuration using ntpd and chrony.
+                        - Knowledge of using the pool.ntp.org service.
+                        - Awareness of the ntpq command.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /usr/share/zoneinfo/
+                        - /etc/timezone
+                        - /etc/localtime
+                        - /etc/ntp.conf
+                        - /etc/chrony.conf
+                        - date
+                        - hwclock
+                        - timedatectl
+                        - ntpd
+                        - ntpdate
+                        - chronyc
+                        - pool.ntp.org
+                - 
+                - 108.2 System logging
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to configure rsyslog. This objective also includes configuring the logging daemon to send log output to a central log server or accept log output as a central log server. Use of the systemd journal subsystem is covered. Also, awareness of syslog and syslog-ng as alternative logging systems is included.
+                    - **Key Knowledge Areas:**
+                        - Basic configuration of rsyslog.
+                        - Understanding of standard facilities, priorities and actions.
+                        - Query the systemd journal.
+                        - Filter systemd journal data by criteria such as date, service or priority
+                        - Configure persistent systemd journal storage and journal size
+                        - Delete old systemd journal data
+                        - Retrieve systemd journal data from a rescue system or file system copy
+                        - Understand interaction of rsyslog with systemd-journald
+                        - Configuration of logrotate.
+                        - Awareness of syslog and syslog-ng.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/rsyslog.conf
+                        - /var/log/
+                        - logger
+                        - logrotate
+                        - /etc/logrotate.conf
+                        - /etc/logrotate.d/
+                        - journalctl
+                        - systemd-cat
+                        - /etc/systemd/journald.conf
+                        - /var/log/journal/
+                - 
+                - 108.3 Mail Transfer Agent (MTA) basics
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be aware of the commonly available MTA programs and be able to perform basic forward and alias configuration on a client host. Other configuration files are not covered.
+                    - **Key Knowledge Areas:**
+                        - Create e-mail aliases.
+                        - Configure e-mail forwarding.
+                        - Knowledge of commonly available MTA programs (postfix, sendmail, exim) (no configuration)
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ~/.forward
+                        - sendmail emulation layer commands
+                        - newaliases
+                        - mail
+                        - mailq
+                        - postfix
+                        - sendmail
+                        - exim
+                    - 
+                - 108.4 Manage printers and printing
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to manage print queues and user print jobs using CUPS and the LPD compatibility interface.
+                    - **Key Knowledge Areas:**
+                        - Basic CUPS configuration (for local and remote printers).
+                        - Manage user print queues.
+                        - Troubleshoot general printing problems.
+                        - Add and remove jobs from configured printer queues.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - CUPS configuration files, tools and utilities
+                        - /etc/cups/
+                        - lpd legacy interface (lpr, lprm, lpq)
+            -   *109.0 Networking Fundamentals*  1-4
+                - [Size]();-[H0]()
+                - 109.1 Fundamentals of internet protocols
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should demonstrate a proper understanding of TCP/IP network fundamentals.
+                    - **Key Knowledge Areas:**
+                        - Demonstrate an understanding of network masks and CIDR notation.
+                        - Knowledge of the differences between private and public "dotted quad" IP addresses.
+                        - Knowledge about common TCP and UDP ports and services (20, 21, 22, 23, 25, 53, 80, 110, 123, 139, 143, 161, 162, 389, 443, 465, 514, 636, 993, 995).
+                        - Knowledge about the differences and major features of UDP, TCP and ICMP.
+                        - Knowledge of the major differences between IPv4 and IPv6.
+                        - Knowledge of the basic features of IPv6.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/services
+                        - IPv4, IPv6
+                        - Subnetting
+                        - TCP, UDP, ICMP
+                - 
+                - 109.2 Persistent network configuration
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to manage the persistent network configuration of a Linux host.
+                    - **Key Knowledge Areas:**
+                        - Understand basic TCP/IP host configuration
+                        - Configure ethernet and wi-fi network configuration using NetworkManager
+                        - Awareness of systemd-networkd
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/hostname
+                        - /etc/hosts
+                        - /etc/nsswitch.conf
+                        - /etc/resolv.conf
+                        - nmcli
+                        - hostnamectl
+                        - ifup
+                        - ifdown
+                - 
+                - 109.3 Basic network troubleshooting
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to troubleshoot networking issues on client hosts.
+                    - **Key Knowledge Areas:**
+                        - Manually configure network interfaces, including viewing and changing the configuration of network interfaces using iproute2.
+                        - Manually configure routing, including viewing and changing routing tables and setting the default route using iproute2.
+                        - Debug problems associated with the network configuration.
+                        - Awareness of legacy net-tools commands.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ip
+                        - hostname
+                        - ss
+                        - ping
+                        - ping6
+                        - traceroute
+                        - traceroute6
+                        - tracepath
+                        - tracepath6
+                        - netcat
+                        - ifconfig
+                        - netstat
+                        - route
+                - 
+                - 109.4 Configure client side DNS
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure DNS on a client host.
+                    - **Key Knowledge Areas:**
+                        - Query remote DNS servers.
+                        - Configure local name resolution and use remote DNS servers.
+                        - Modify the order in which name resolution is done.
+                        - Debug errors related to name resolution.
+                        - Awareness of systemd-resolved
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/hosts
+                        - /etc/resolv.conf
+                        - /etc/nsswitch.conf
+                        - host
+                        - dig
+                        - getent
+            -   *110.0 Security*  1-3
+                - [Size]();-[H0]()
+                - 110.1 Perform security administration tasks
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should know how to review system configuration to ensure host security in accordance with local security policies.
+                    - **Key Knowledge Areas:**
+                        - Audit a system to find files with the suid/sgid bit set.
+                        - Set or change user passwords and password aging information.
+                        - Being able to use nmap and netstat to discover open ports on a system.
+                        - Set up limits on user logins, processes and memory usage.
+                        - Determine which users have logged in to the system or are currently logged in.
+                        - Basic sudo configuration and usage.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - find
+                        - passwd
+                        - fuser
+                        - lsof
+                        - nmap
+                        - chage
+                        - netstat
+                        - sudo
+                        - /etc/sudoers
+                        - su
+                        - usermod
+                        - ulimit
+                        - who, w, last
+                - 
+                - 110.2 Setup host security
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should know how to set up a basic level of host security.
+                    - **Key Knowledge Areas:**
+                        - Awareness of shadow passwords and how they work.
+                        - Turn off network services not in use.
+                        - Understand the role of TCP wrappers.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/nologin
+                        - /etc/passwd
+                        - /etc/shadow
+                        - /etc/xinetd.d/
+                        - /etc/xinetd.conf
+                        - systemd.socket
+                        - /etc/inittab
+                        - /etc/init.d/
+                        - /etc/hosts.allow
+                        - /etc/hosts.deny
+                - 
+                - 110.3 Securing data with encryption
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - The candidate should be able to use public key techniques to secure data and communication.
+                    - **Key Knowledge Areas:**
+                        - Perform basic OpenSSH 2 client configuration and usage.
+                        - Understand the role of OpenSSH 2 server host keys.
+                        - Perform basic GnuPG configuration, usage and revocation.
+                        - Use GPG to encrypt, decrypt, sign and verify files.
+                        - Understand SSH port tunnels (including X11 tunnels).
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ssh
+                        - ssh-keygen
+                        - ssh-agent
+                        - ssh-add
+                        - ~/.ssh/id_rsa and id_rsa.pub
+                        - ~/.ssh/id_dsa and id_dsa.pub
+                        - ~/.ssh/id_ecdsa and id_ecdsa.pub
+                        - ~/.ssh/id_ed25519 and id_ed25519.pub
+                        - /etc/ssh/ssh_host_rsa_key and ssh_host_rsa_key.pub
+                        - /etc/ssh/ssh_host_dsa_key and ssh_host_dsa_key.pub
+                        - /etc/ssh/ssh_host_ecdsa_key and ssh_host_ecdsa_key.pub
+                        - /etc/ssh/ssh_host_ed25519_key and ssh_host_ed25519_key.pub
+                        - ~/.ssh/authorized_keys
+                        - ssh_known_hosts
+                        - gpg
+                        - gpg-agent
+                        - ~/.gnupg/
+        - --------------------- Portal ---------------------query:[LPIC-1 - 101-500 and 102-500](Linux%20Certifictions/LPI/LPIC-1%20-%20101-500%20and%20102-500.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --             - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - 
+    - LPI Certifications #LPI #linux
+        - [LPIC-1 - 101-500 and 102-500](Linux%20Certifictions/LPI/LPIC-1%20-%20101-500%20and%20102-500.md)
+        - Linux Professional Institute (LPI) is committed to the development of a global standard in Linux and Open Source certification.
+        - ## Essentials
+            - [Size]();-[H2]()
+            - The Essentials certificates were created for candidates who are starting a career in open source or who wish to demonstrate their abilities.
+            - Linux Professional Institute Linux Essentials exam tests the candidate’s ability to use a basic command-line editor and demonstrate an understanding of processes, programs and components of the Linux operating system.
+                - **Prerequisites:** There are no prerequisites for this certificate.
+                - **Requirements:** Passing the Linux Essentials 010 exam. The Linux Essentials exam contains 40 questions and must be completed within 60-minutes.
+                - **Languages:** English, French, German, Japanese, Portuguese (Brazilian), Spanish
+                - **Validity period:** Lifetime
+                - [Exam Objectives](https://www.lpi.org/our-certifications/exam-010-objectives)
+                - [Learning Materials](https://learning.lpi.org/en/learning-materials/010-160/)
+                - [Learn more](https://www.lpi.org/our-certifications/linux-essentials-overview/)
+                - [Cost by country](https://www.lpi.org/exam-pricing/)
+                - [Purchase voucher](https://us.lpimarketplace.com/shop/linux-essentials)
+            - IT security is absolutely crucial for individuals and organizations in today’s digital world. The Security Essentials exam covers preliminary knowledge in all important fields of IT security.
+                - **Prerequisites:** There are no prerequisites for this certification.
+                - **Requirements:** Passing the Security Essentials 020 exam. The Security Essentials exam contains 40 questions and must be completed within 60-minutes.
+                - **Languages:** English, Japanese
+                - **Validity period:** Lifetime
+                - [Exam Objectives](https://www.lpi.org/our-certifications/exam-020-objectives)
+                - [Learning Materials](https://learning.lpi.org/en/learning-materials/020-100/)
+                - [Learn more](https://www.lpi.org/our-certifications/security-essentials-overview/)
+                - [Cost by country](https://www.lpi.org/exam-pricing/)
+                - [Purchase voucher](https://us.lpimarketplace.com/)
+        - ![](https://remnote-user-data.s3.amazonaws.com/LojvZK6PRsLiMFMX8qarg7Je-V5HS4A41wsr1ymrjQjF92nG-mckb-aSZsEwpKb5h-iIamfKlaeCChKI3ucgTQW7eCcox4fIWn7ZGVxa4qJ-kQcuX14Mk3Yi5w7SPZqp.jpeg)
+        - Modern software applications are commonly developed for the Web. The Linux Professional Institute (LPI) Web Development Essentials program supports your first steps in software development.
+            - **Prerequisites:** There are no prerequisites for this certification.
+            - **Requirements:** Passing the Web Development Essentials 030 exam. The Web Development Essentials exam contains 40 questions and must be completed within 60-minutes.
+            - **Languages:** English, Japanese
+            - **Validity period:** Lifetime
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-030-objectives)
+            - [Learning Materials](https://learning.lpi.org/en/learning-materials/030-100/)
+            - [Learn more](https://www.lpi.org/our-certifications/web-development-essentials-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/)
+        - ![](https://remnote-user-data.s3.amazonaws.com/Zl3jNm3j0e1Bu6RXffdB9Dvvysj6g0Z_4j_UXVc7v7oygEi6PL01BLFW_TCbjUujlzgtr-zxKonEba2bK_lpdty7qw175ibF1YaeTyHQj8g6l_yPbnGGetZ4s81qddyg.jpeg)
+        - The Linux Professional Institute (LPI) Open Source Essentials program covers the common knowledge that anyone who is professionally involved with open source should have.
+            - **Prerequisites:** There are no prerequisites for this certification.
+            - **Requirements:** Passing the Web Development Essentials 050 exam. The Open Source Essentials exam contains 40 questions and must be completed within 60-minutes.
+            - **Languages:** English
+            - **Validity period:** Lifetime
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-050-objectives/)
+            - [Learning Materials](https://learning.lpi.org/en/learning-materials/050-100/)
+            - [Learn more](https://www.lpi.org/our-certifications/open-source-essentials/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://global1.lpimarketplace.com/shop/open-source-essentials)
+        - ## Linux Professional
+            - [Size]();-[H2]()
+        - Linux Professional Institute‘s Linux Professional Track is designed to evaluate the knowledge and skills of Linux systems administrators. To keep pace with evolving technology, the exam objectives are updated on average every three years and Linux Professional Institute certifications are valid for five years before you must recertify or certify at a higher level.
+        - Although the exams may be taken in any order, lower level certifications must be achieved before higher-level certifications can be awarded.
+        - ![](https://remnote-user-data.s3.amazonaws.com/s3waBUhGfeDM-nYEg3Ow4tUSVPxnnUGFQIlwDtvXSRN9q4UADeTTyGKnl_r52TN9iMfozrpCo67o9lcjP6JTqas6pvkusZ73-DWyCRzZJgGSjmMj4Csij4RwebwvYkNt.png)
+        - Linux Professional Institute LPIC-1 tests ability to perform maintenance tasks with the command line, install and configure a computer running Linux and be able to configure basic networking.
+            - **Prerequisites:** There are no prerequisites for this certification.
+            - **Requirements:** Passing the 101 and 102 exams. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+            - **Languages:** English, German, Japanese, Portuguese (Brazilian), Chinese (Simplified), Chinese (Traditional), Spanish (Modern)
+            - **Validity period:** 5 years unless retaken or higher level is achieved.
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-101-102-objectives/)
+            - [Learning Materials](https://learning.lpi.org/en/learning-materials/101-500/)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-1-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/shop/lpic-1)
+        - ![](https://remnote-user-data.s3.amazonaws.com/sNIPsz8UDZNmLFFeK0dthXBJq-JquFqrNjpXpmiZinombJP3YesD2KAzwPsx3h-FWrMRRnwxokINdUQPk_6bEbl7N_HsWulXO9A5wpC6bdFP00N3nQ07QQYTeDbr3_sM.png)
+        - Linux Professional Institute LPIC-2 tests ability to administer small to medium–sized mixed networks.
+            - **Prerequisites:** An active LPIC-1 certification.
+            - **Requirements:** Passing exams 201 and 202. Each 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+            - **Languages:** English, German, Japanese, Portuguese (Brazilian)
+            - **Validity period:** 5​ years unless retaken or higher level is achieved.
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-201-202-objectives/)
+            - [Learning Materials](https://learning.lpi.org/en/learning-materials/all-materials/)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-2-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/shop/lpic-2)
+        - ![](https://remnote-user-data.s3.amazonaws.com/0asfa7igm3CxxjV6mQgtqHPuBSfrY7m94CyLXzQjx4jwiO3yFwjPA29pTW-PIhd_ZlK5EZ47G5gRR549HPC9pYVSsybo_1ulwSomduJvGgHDKrBYnCjFqgw9Teqlk8o6.jpeg)
+        - Linux Professional Institute LPIC-3 Mixed Environments tests ability to integrate Linux services in an enterprise-wide mixed environment.
+            - **Prerequisites:** An active LPIC-2 certification.
+            - **Requirements:** Passing the 300 exam. The 90-minute exam is 60 multiple-choice and fill-in-the-blank questions.
+            - **Languages:** English, Japanese
+            - **Validity period:** 5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-300-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-3-300-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-300-voucher/p/LPI-300)
+        - ![](https://remnote-user-data.s3.amazonaws.com/62EP7FL8Gk58t68lUttPym8AP34rfewITQzR9n_l35qF7rJDCBum6OXTY4qdx7itb9mMYylbKNAfcCBP5rOf-f1JtVaHQ-_MY-pucU7zFzZnl4d-7YtLMN1vaJ1h3YXI.jpeg)
+        - Linux Professional Institute LPIC-3 Security tests ability to secure and harden Linux-based servers, services and networks enterprise-wide.
+            - **Prerequisites: **An active LPIC-2 certification.
+            - **Requirements:** Passing the 303 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+            - **Languages:** English, Japanese
+            - **Validity period:** 5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-303-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-3-303-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-303-voucher/p/LPI-303)
+        - ![](https://remnote-user-data.s3.amazonaws.com/cF3J2Uw-Ys5RelNbzx97U55jcySRoIBchqGrLGZcXSSHI9MuyTaI_9nRCzvcukzmKMOGFGmLSgCT0iksv52Lw7Za8wYAKXrcokww4AyGiKvFQjKUVkl3LMGk6Z00s-XT.jpeg)
+        - Linux Professional Institute LPIC-3 Virtualization and Containerization covers the administration of Linux systems enterprise-wide with an emphasis on Virtualization & Containerization.
+            - **Prerequisites:** An active LPIC-2 certification.
+            - **Requirements:** Passing the 305 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+            - **Languages:** English, Japanese
+            - **Validity period: **5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-305-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-3-305-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-305-voucher/p/LPI-305)
+        - ![](https://remnote-user-data.s3.amazonaws.com/zt72PQAsPgndMcIIGhLAt__8sFXFFAgyGWlsjsq_6-v1-uLwOcU8Qm3MdHLDBVff-AUnfb1aKn56S1ffEUR8RQUL9xS0-GMmrvbybSoaEukAC14gbEA0gsoEjJsav1Y6.jpeg)
+        - Linux Professional Institute LPIC-3 High Availability and Storage Clusters covers the administration of Linux systems enterprise-wide with an emphasis on high availability systems and storage.
+            - **Prerequisites:** An active LPIC-2 certification.
+            - **Requirements:** Passing the 306 exam. The 90-minute exam is 60 multiple-choice and fill in the blank questions.
+            - **Languages:** English, Japanese
+            - **Validity period: **5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-306-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/lpic-3-306-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/lpi-level-3-exam-306-voucher/p/LPI-306)
+        - ## Open Technology
+            - [Size]();-[H2]()
+        - The Open Technology professional certifications are designed to evaluate the knowledge and skills of open technology tools, such as DevOps tools and BSD Specialist. To keep pace with evolving technologies, open technology track exam objectives are updated on average every three years and certifications are valid for five years before you must recertify or certify at a higher level.
+        - For Open Technology certifications, single exam is awarded with certification, and there are no prerequisites for the exams.
+        - ![](https://remnote-user-data.s3.amazonaws.com/tlESmd42KXsc-WGjYLmcUJk4vQvh-uZ47aZyBJoZaDG9JHBdaEnWjx-Fj0b_ScC5Yj6R45LnDxbRnRUtwQTCba7SfHqSLfP-pb6XX-sRjzTTwS0viXSPxPSW8Y6S0taY.png)
+        - Certified DevOps Tools Engineer should have a working knowledge of DevOps-related domains such as Software Engineering and Architecture, Container and Machine Deployment, Configuration Management and Monitoring.
+            - **Prerequisites:** There are no prerequisites for this certification. However, an additional certification in the candidate’s primary area of expertise, such as LPIC-1 or a developer certification, is strongly recommended.
+            - **Requirements: **Passing the 701 exam. The 90 minute exam is 60 multiple choice and fill-in-the-blank questions.
+            - **Languages:** English, Japanese
+            - **Validity period: **5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-701-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/devops-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+            - [Purchase voucher](https://us.lpimarketplace.com/p/701-100)
+        - ![](https://remnote-user-data.s3.amazonaws.com/gS36t1H3eIwsCf0GrI0euQeTu_drdE2Tfk2VF6UY1FFV4ph-vyTFWxcRqosQJO8yy3nNIGHFE1IYdbucVhdq7uSB7V61Afq1WeVpVRMHXtbSEEZcu28OMpzrr2Ddt-Q1.png)
+        - The BSD Specialist certificate requires passing a single exam. This exam tests skills in administering FreeBSD, NetBSD, and OpenBSD systems. Covering the three major BSD systems ensures that the certification holder is comfortable working in BSD-based environments of any kind.
+            - **Prerequisites: **There are no prerequisites for this certification. However, it is strongly recommended that a candidate has more than a year of experience in administering BSD systems of various kinds.
+            - **Requirements: **Passing the 702 exam. The 90 minute exam is 60 multiple choice and fill-in-the-blank questions.
+            - **Language:** English
+            - **Validity period:** 5 years
+            - [Exam Objectives](https://www.lpi.org/our-certifications/exam-702-objectives)
+            - [Learn more](https://www.lpi.org/our-certifications/bsd-overview/)
+            - [Cost by country](https://www.lpi.org/exam-pricing/)
+        - --------------------- Portal ---------------------query:[LPI Certifications](Linux%20Certifictions/LPI/LPI%20Certifications.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPIC-2 - 201-450 and 202-450 #LPI #linux
+        - 
+        -  LPIC-2 201-450 Objectives 1-6
+            -   *200 Capacity Planning 1-2*  
+                - [Size]();-[H0]()
+                - 200.1 Measure and Troubleshoot Resource Usage (weight: 6)
+                    - **Weight**
+                        - 6
+                    - **Description**
+                        - Candidates should be able to measure hardware resource and network bandwidth, identify and troubleshoot resource problems.
+                    - **Key Knowledge Areas:**
+                        - Measure CPU usage.
+                        - Measure memory usage.
+                        - Measure disk I/O.
+                        - Measure network I/O.
+                        - Measure firewalling and routing throughput.
+                        - Map client bandwidth usage.
+                        - Match / correlate system symptoms with likely problems.
+                        - Estimate throughput and identify bottlenecks in a system including networking.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - iostat
+                        - iotop
+                        - vmstat
+                        - netstat
+                        - ss
+                        - iptraf
+                        - pstree, ps
+                        - w
+                        - lsof
+                        - top
+                        - htop
+                        - uptime
+                        - sar
+                        - swap
+                        - processes blocked on I/O
+                        - blocks in
+                        - blocks out
+                - 200.2 Predict Future Resource Needs (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to monitor resource usage to predict future resource needs.
+                    - **Key Knowledge Areas:**
+                        - Use monitoring and measurement tools to monitor IT infrastructure usage.
+                        - Predict capacity break point of a configuration.
+                        - Observe growth rate of capacity usage.
+                        - Graph the trend of capacity usage.
+                        - Awareness of monitoring solutions such as Icinga2, Nagios, collectd, MRTG and Cacti
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - diagnose
+                        - predict growth
+                        - resource exhaustion
+            - [Size]();-[H0]()
+            -   *201 Linux Kernel*  1-3
+                - [Size]();-[H0]()
+                - 201.1 Kernel components (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to utilise kernel components that are necessary to specific hardware, hardware drivers, system resources and requirements. This objective includes implementing different types of kernel images, understanding stable and longterm kernels and patches, as well as using kernel modules.
+                    - **Key Knowledge Areas:**
+                        - Kernel 2.6.x, 3.x and 4.x documentation
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /usr/src/linux/
+                        - /usr/src/linux/Documentation/
+                        - zImage
+                        - bzImage
+                        - xz compression
+                - 201.2 Compiling a Linux kernel (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to properly configure a kernel to include or disable specific features of the Linux kernel as necessary. This objective includes compiling and recompiling the Linux kernel as needed, updating and noting changes in a new kernel, creating an initrd image and installing new kernels.
+                    - **Key Knowledge Areas:**
+                        - /usr/src/linux/
+                        - Kernel Makefiles
+                        - Kernel 2.6.x, 3.x and 4.x make targets
+                        - Customize the current kernel configuration.
+                        - Build a new kernel and appropriate kernel modules.
+                        - Install a new kernel and any modules.
+                        - Ensure that the boot manager can locate the new kernel and associated files.
+                        - Module configuration files
+                        - Use DKMS to compile kernel modules.
+                        - Awareness of dracut
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - mkinitrd
+                        - mkinitramfs
+                        - make
+                        - make targets (all, config, xconfig, menuconfig, gconfig, oldconfig, mrproper, zImage, bzImage, modules, modules_install, rpm-pkg, binrpm-pkg, deb-pkg)
+                        - gzip
+                        - bzip2
+                        - module tools
+                        - /usr/src/linux/.config
+                        - /lib/modules/kernel-version/
+                        - depmod
+                        - dkms
+                - 201.3 Kernel runtime management and troubleshooting (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to manage and/or query a 2.6.x, 3.x or 4.x kernel and its loadable modules. Candidates should be able to identify and correct common boot and run time issues. Candidates should understand device detection and management using udev. This objective includes troubleshooting udev rules.
+                    - **Key Knowledge Areas:**
+                        - Use command-line utilities to get information about the currently running kernel and kernel modules.
+                        - Manually load and unload kernel modules.
+                        - Determine when modules can be unloaded.
+                        - Determine what parameters a module accepts.
+                        - Configure the system to load modules by names other than their file name.
+                        - /proc filesystem
+                        - Content of /, /boot/ , and /lib/modules/
+                        - Tools and utilities to analyse information about the available hardware
+                        - udev rules
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /lib/modules/kernel-version/modules.dep
+                        - module configuration files in /etc/
+                        - /proc/sys/kernel/
+                        - /sbin/depmod
+                        - /sbin/rmmod
+                        - /sbin/modinfo
+                        - /bin/dmesg
+                        - /sbin/lspci
+                        - /usr/bin/lsdev
+                        - /sbin/lsmod
+                        - /sbin/modprobe
+                        - /sbin/insmod
+                        - /bin/uname
+                        - /usr/bin/lsusb
+                        - /etc/sysctl.conf, /etc/sysctl.d/
+                        - /sbin/sysctl
+                        - udevmonitor
+                        - udevadm monitor
+                        - /etc/udev/
+            -   *202 System Startup*  1-3
+                - [Size]();-[H0]()
+                - 202.1 Customizing system startup (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to query and modify the behaviour of system services at various targets / run levels. A thorough understanding of the systemd, SysV Init and the Linux boot process is required. This objective includes interacting with systemd targets and SysV init run levels.
+                    - **Key Knowledge Areas:**
+                        - Systemd
+                        - SysV init
+                        - Linux Standard Base Specification (LSB)
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /usr/lib/systemd/
+                        - /etc/systemd/
+                        - /run/systemd/
+                        - systemctl
+                        - systemd-delta
+                        - /etc/inittab
+                        - /etc/init.d/
+                        - /etc/rc.d/
+                        - chkconfig
+                        - update-rc.d
+                        - init and telinit
+                - 202.2 System recovery (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to properly manipulate a Linux system during both the boot process and during recovery mode. This objective includes using both the init utility and init-related kernel options. Candidates should be able to determine the cause of errors in loading and usage of bootloaders. GRUB version 2 and GRUB Legacy are the bootloaders of interest. Both BIOS and UEFI systems are covered.
+                    - **Key Knowledge Areas:**
+                        - BIOS and UEFI
+                        - NVMe booting
+                        - GRUB version 2 and Legacy
+                        - grub shell
+                        - boot loader start and hand off to kernel
+                        - kernel loading
+                        - hardware initialisation and setup
+                        - daemon/service initialisation and setup
+                        - Know the different boot loader install locations on a hard disk or removable device.
+                        - Overwrite standard boot loader options and using boot loader shells.
+                        - Use systemd rescue and emergency modes.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - mount
+                        - fsck
+                        - inittab, telinit and init with SysV init
+                        - The contents of /boot/, /boot/grub/ and /boot/efi/
+                        - EFI System Partition (ESP)
+                        - GRUB
+                        - grub-install
+                        - efibootmgr
+                        - UEFI shell
+                        - initrd, initramfs
+                        - Master boot record
+                        - systemctl
+                - 202.3 Alternate Bootloaders (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be aware of other bootloaders and their major features.
+                    - **Key Knowledge Areas:**
+                        - SYSLINUX, ISOLINUX, PXELINUX
+                        - Understanding of PXE for both BIOS and UEFI
+                        - Awareness of systemd-boot and U-Boot
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - syslinux
+                        - extlinux
+                        - isolinux.bin
+                        - isolinux.cfg
+                        - isohdpfx.bin
+                        - efiboot.img
+                        - pxelinux.0
+                        - pxelinux.cfg/
+                        - uefi/shim.efi
+                        - uefi/grubx64.efi
+            -   *203 Filesystem and Devices * 1-3
+                - [Size]();-[H0]()
+                - 203.1 Operating the Linux filesystem (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to properly configure and navigate the standard Linux filesystem. This objective includes configuring and mounting various filesystem types.
+                    - **Key Knowledge Areas:**
+                        - The concept of the fstab configuration
+                        - Tools and utilities for handling swap partitions and files
+                        - Use of UUIDs for identifying and mounting file systems
+                        - Understanding of systemd mount units
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/fstab
+                        - /etc/mtab
+                        - /proc/mounts
+                        - mount and umount
+                        - blkid
+                        - sync
+                        - swapon
+                        - swapoff
+                - 203.2 Maintaining a Linux filesystem (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to properly maintain a Linux filesystem using system utilities. This objective includes manipulating standard filesystems and monitoring SMART devices.
+                    - **Key Knowledge Areas:**
+                        - Tools and utilities to manipulate and ext2, ext3 and ext4
+                        - Tools and utilities to perform basic Btrfs operations, including subvolumes and snapshots
+                        - Tools and utilities to manipulate XFS
+                        - Awareness of ZFS
+                        - **The following is a partial list of the used files, terms and utilities:**
+                            - mkfs (mkfs.*)
+                            - mkswap
+                            - fsck (fsck.*)
+                            - tune2fs, dumpe2fs and debugfs
+                            - btrfs, btrfs-convert
+                            - xfs_info, xfs_check, xfs_repair, xfsdump and xfsrestore
+                            - smartd, smartctl
+                - 203.3 Creating and configuring filesystem options (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure automount filesystems using AutoFS. This objective includes configuring automount for network and device filesystems. Also included is creating filesystems for devices such as CD-ROMs and a basic feature knowledge of encrypted filesystems.
+                    - **Key Knowledge Areas:**
+                        - autofs configuration files
+                        - Understanding of automount units
+                        - UDF and ISO9660 tools and utilities
+                        - Awareness of other CD-ROM filesystems (HFS)
+                        - Awareness of CD-ROM filesystem extensions (Joliet, Rock Ridge, El Torito)
+                        - Basic feature knowledge of data encryption (dm-crypt / LUKS)
+                        - **The following is a partial list of the used files, terms and utilities:**
+                            - /etc/auto.master
+                            - /etc/auto.[dir]
+                            - mkisofs
+                            - cryptsetup
+            -   *204Advanced Storage Device Administration*  1-3
+                - [Size]();-[H0]()
+                - 204.1 Configuring RAID (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure and implement software RAID. This objective includes using and configuring RAID 0, 1 and 5.
+                    - **Key Knowledge Areas:**
+                        - Software RAID configuration files and utilities
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - mdadm.conf
+                        - mdadm
+                        - /proc/mdstat
+                        - partition type 0xFD
+                - 204.2 Adjusting Storage Device Access (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure kernel options to support various drives. This objective includes software tools to view & modify hard disk settings including iSCSI devices.
+                    - **Key Knowledge Areas:**
+                        - Tools and utilities to configure DMA for IDE devices including ATAPI and SATA
+                        - Tools and utilities to configure Solid State Drives including AHCI and NVMe
+                        - Tools and utilities to manipulate or analyse system resources (e.g. interrupts)
+                        - Awareness of sdparm command and its uses
+                        - Tools and utilities for iSCSI
+                        - Awareness of SAN, including relevant protocols (AoE, FCoE)
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - hdparm, sdparm
+                        - nvme
+                        - tune2fs
+                        - fstrim
+                        - sysctl
+                        - /dev/hd*, /dev/sd*, /dev/nvme*
+                        - iscsiadm, scsi_id, iscsid and iscsid.conf
+                        - WWID, WWN, LUN numbers
+                - 204.3 Logical Volume Manager (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to create and remove logical volumes, volume groups, and physical volumes. This objective includes snapshots and resizing logical volumes.
+                    - **Key Knowledge Areas:**
+                        - Tools in the LVM suite
+                        - Resizing, renaming, creating, and removing logical volumes, volume groups, and physical volumes
+                        - Creating and maintaining snapshots
+                        - Activating volume groups
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /sbin/pv*
+                        - /sbin/lv*
+                        - /sbin/vg*
+                        - mount
+                        - /dev/mapper/
+                        - lvm.conf
+            -   *205 Networking Configuration*  1-3
+                - [Size]();-[H0]()
+                - 205.1 Basic networking configuration (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure a network device to be able to connect to a local, wired or wireless, and a wide-area network. This objective includes being able to communicate between various subnets within a single network including both IPv4 and IPv6 networks.
+                    - **Key Knowledge Areas:**
+                        - Utilities to configure and manipulate ethernet network interfaces
+                        - Configuring basic access to wireless networks
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ip
+                        - ifconfig
+                        - route
+                        - arp
+                        - iw
+                        - iwconfig
+                        - iwlist
+                - 
+                - 205.2 Advanced Network Configuration (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to configure a network device to implement various network authentication schemes. This objective includes configuring a multi-homed network device and resolving communication problems.
+                    - **Key Knowledge Areas:**
+                        - Utilities to manipulate routing tables
+                        - Utilities to configure and manipulate ethernet network interfaces
+                        - Utilities to analyse the status of the network devices
+                        - Utilities to monitor and analyse the TCP/IP traffic
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ip
+                        - ifconfig
+                        - route
+                        - arp
+                        - ss
+                        - netstat
+                        - lsof
+                        - ping, ping6
+                        - nc
+                        - tcpdump
+                        - nmap
+                - 
+                - 205.3 Troubleshooting network issues (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to identify and correct common network setup issues, to include knowledge of locations for basic configuration files and commands.
+                    - **Key Knowledge Areas:**
+                        - Location and content of access restriction files
+                        - Utilities to configure and manipulate ethernet network interfaces
+                        - Utilities to manage routing tables
+                        - Utilities to list network states.
+                        - Utilities to gain information about the network configuration
+                        - Methods of information about the recognised and used hardware devices
+                        - System initialisation files and their contents (Systemd and SysV init)
+                        - Awareness of NetworkManager and its impact on network configuration
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ip
+                        - ifconfig
+                        - route
+                        - ss
+                        - netstat
+                        - /etc/network/, /etc/sysconfig/network-scripts/
+                        - ping, ping6
+                        - traceroute, traceroute6
+                        - mtr
+                        - hostname
+                        - System log files such as /var/log/syslog, /var/log/messages and the systemd journal
+                        - dmesg
+                        - /etc/resolv.conf
+                        - /etc/hosts
+                        - /etc/hostname, /etc/HOSTNAME
+                        - /etc/hosts.allow, /etc/hosts.deny
+            -   *206 System Maintenance*  1-3
+                - [Size]();-[H0]()
+                - 206.1 Make and install programs from source (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to build and install an executable program from source. This objective includes being able to unpack a file of sources.
+                    - **Key Knowledge Areas:**
+                        - Unpack source code using common compression and archive utilities.
+                        - Understand basics of invoking make to compile programs.
+                        - Apply parameters to a configure script.
+                        - Know where sources are stored by default.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /usr/src/
+                        - gunzip
+                        - gzip
+                        - bzip2
+                        - xz
+                        - tar
+                        - configure
+                        - make
+                        - uname
+                        - install
+                        - patch
+                - 206.2 Backup operations (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to use system tools to back up important system data.
+                    - **Key Knowledge Areas:**
+                        - Knowledge about directories that have to be included in backups
+                        - Awareness of network backup solutions such as Amanda, Bacula, Bareos and BackupPC
+                        - Knowledge of the benefits and drawbacks of tapes, CDR, disk or other backup media
+                        - Perform partial and manual backups.
+                        - Verify the integrity of backup files.
+                        - Partially or fully restore backups.
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /bin/sh
+                        - dd
+                        - tar
+                        - /dev/st* and /dev/nst*
+                        - mt
+                        - rsync
+                - 206.3 Notify users on system-related issues (weight: 1)
+                    - **Weight**
+                        - 1
+                    - **Description**
+                        - Candidates should be able to notify the users about current issues related to the system.
+                    - **Key Knowledge Areas:**
+                        - Automate communication with users through logon messages.
+                        - Inform active users of system maintenance
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/issue
+                        - /etc/issue.net
+                        - /etc/motd
+                        - wall
+                        - shutdown
+                        - systemctl
+        -  LPIC-2 202-450 Objectives 6-12
+            -   *207 Domain Name Server*  1-3
+                - [Size]();-[H0]()
+                - 207.1 Basic DNS server configuration (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure BIND to function as an authoritative and as a recursive, caching-only DNS server. This objective includes the ability to manage a running server and configuring logging.
+                    - **Key Knowledge Areas:**
+                        - BIND 9.x configuration files, terms and utilities
+                        - Defining the location of the BIND zone files in BIND configuration files
+                        - Reloading modified configuration and zone files
+                        - Awareness of dnsmasq, djbdns and PowerDNS as alternate name servers
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/named.conf
+                        - /var/named/
+                        - rndc
+                        - named-checkconf
+                        - kill
+                        - host
+                        - dig
+                - 207.2 Create and maintain DNS zones (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to create a zone file for a forward or reverse zone and hints for root level servers. This objective includes setting appropriate values for records, adding hosts in zones and adding zones to the DNS. A candidate should also be able to delegate zones to another DNS server.
+                    - **Key Knowledge Areas:**
+                        - BIND 9 configuration files, terms and utilities
+                        - Utilities to request information from the DNS server
+                        - Layout, content and file location of the BIND zone files
+                        - Various methods to add a new host in the zone files, including reverse zones
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /var/named/
+                        - zone file syntax
+                        - resource record formats
+                        - named-checkzone
+                        - named-compilezone
+                        - masterfile-format
+                        - dig
+                        - nslookup
+                        - host
+                - 207.3 Securing a DNS server (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure a DNS server to run as a non-root user and run in a chroot jail. This objective includes secure exchange of data between DNS servers.
+                    - **Key Knowledge Areas:**
+                        - BIND 9 configuration files
+                        - Configuring BIND to run in a chroot jail
+                        - Split configuration of BIND using the forwarders statement
+                        - Configuring and using transaction signatures (TSIG)
+                        - Awareness of DNSSEC and basic tools
+                        - Awareness of DANE and related records
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/named.conf
+                        - /etc/passwd
+                        - DNSSEC
+                        - dnssec-keygen
+                        - dnssec-signzone
+            - [Size]();-[H0]()
+            -   *208 HTTP Services*  1-4
+                - [Size]();-[H0]()
+                - 208.1 Basic Apache configuration (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to install and configure a web server. This objective includes monitoring the server's load and performance, restricting client user access, configuring support for scripting languages as modules and setting up client user authentication. Also included is configuring server options to restrict usage of resources. Candidates should be able to configure a web server to use virtual hosts and customize file access.
+                    - **Key Knowledge Areas:**
+                        - Apache 2.4 configuration files, terms and utilities
+                        - Apache log files configuration and content
+                        - Access restriction methods and files
+                        - mod_perl and PHP configuration
+                        - Client user authentication files and utilities
+                        - Configuration of maximum requests, minimum and maximum servers and clients
+                        - Apache 2.4 virtual host implementation (with and without dedicated IP addresses)
+                        - Using redirect statements in Apache's configuration files to customize file access
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - access logs and error logs
+                        - .htaccess
+                        - httpd.conf
+                        - mod_auth_basic, mod_authz_host and mod_access_compat
+                        - htpasswd
+                        - AuthUserFile, AuthGroupFile
+                        - apachectl, apache2ctl
+                        - httpd, apache2
+                - 208.2 Apache configuration for HTTPS (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure a web server to provide HTTPS.
+                    - **Key Knowledge Areas:**
+                        - SSL configuration files, tools and utilities
+                        - Generate a server private key and CSR for a commercial CA
+                        - Generate a self-signed Certificate
+                        - Install the key and certificate, including intermediate CAs
+                        - Configure Virtual Hosting using SNI
+                        - Awareness of the issues with Virtual Hosting and use of SSL
+                        - Security issues in SSL use, disable insecure protocols and ciphers
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - Apache2 configuration files
+                        - /etc/ssl/, /etc/pki/
+                        - openssl, CA.pl
+                        - SSLEngine, SSLCertificateKeyFile, SSLCertificateFile
+                        - SSLCACertificateFile, SSLCACertificatePath
+                        - SSLProtocol, SSLCipherSuite, ServerTokens, ServerSignature, TraceEnable
+                - 208.3 Implementing Squid as a caching proxy (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to install and configure a proxy server, including access policies, authentication and resource usage.
+                    - **Key Knowledge Areas:**
+                        - Squid 3.x configuration files, terms and utilities
+                        - Access restriction methods
+                        - Client user authentication methods
+                        - Layout and content of ACL in the Squid configuration files
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - squid.conf
+                        - acl
+                        - http_access
+                - 208.4 Implementing Nginx as a web server and a reverse proxy (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to install and configure a reverse proxy server, Nginx. Basic configuration of Nginx as a HTTP server is included.
+                    - **Key Knowledge Areas:**
+                        - Nginx
+                        - Reverse Proxy
+                        - Basic Web Server
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/nginx/
+                        - nginx
+            -   *209 File Sharing*  1-2
+                - [Size]();-[H0]()
+                - 209.1 Samba Server Configuration (weight: 5)
+                    - **Weight**
+                        - 5
+                    - **Description**
+                        - Candidates should be able to set up a Samba server for various clients. This objective includes setting up Samba as a standalone server as well as integrating Samba as a member in an Active Directory. Furthermore, the configuration of simple CIFS and printer shares is covered. Also covered is a configuring a Linux client to use a Samba server. Troubleshooting installations is also tested.
+                    - **Key Knowledge Areas:**
+                        - Samba 4 documentation
+                        - Samba 4 configuration files
+                        - Samba 4 tools and utilities and daemons
+                        - Mounting CIFS shares on Linux
+                        - Mapping Windows user names to Linux user names
+                        - User-Level, Share-Level and AD security
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - smbd, nmbd, winbindd
+                        - smbcontrol, smbstatus, testparm, smbpasswd, nmblookup
+                        - samba-tool
+                        - net
+                        - smbclient
+                        - mount.cifs
+                        - /etc/samba/
+                        - /var/log/samba/
+                - 209.2 NFS Server Configuration (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to export filesystems using NFS. This objective includes access restrictions, mounting an NFS filesystem on a client and securing NFS.
+                    - **Key Knowledge Areas:**
+                        - NFS version 3 configuration files
+                        - NFS tools and utilities
+                        - Access restrictions to certain hosts and/or subnets
+                        - Mount options on server and client
+                        - TCP Wrappers
+                        - Awareness of NFSv4
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/exports
+                        - exportfs
+                        - showmount
+                        - nfsstat
+                        - /proc/mounts
+                        - /etc/fstab
+                        - rpcinfo
+                        - mountd
+                        - portmapper
+            -   *210 Network Client Management*  1-4
+                - [Size]();-[H0]()
+                - 210.1 DHCP configuration (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure a DHCP server. This objective includes setting default and per client options, adding static hosts and BOOTP hosts. Also included is configuring a DHCP relay agent and maintaining the DHCP server.
+                    - **Key Knowledge Areas:**
+                        - DHCP configuration files, terms and utilities
+                        - Subnet and dynamically-allocated range setup
+                        - Awareness of DHCPv6 and IPv6 Router Advertisements
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - dhcpd.conf
+                        - dhcpd.leases
+                        - DHCP Log messages in syslog or systemd journal
+                        - arp
+                        - dhcpd
+                        - radvd
+                        - radvd.conf
+                - 210.2 PAM authentication (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - The candidate should be able to configure PAM to support authentication using various available methods. This includes basic SSSD functionality.
+                    - **Key Knowledge Areas:**
+                        - PAM configuration files, terms and utilities
+                        - passwd and shadow passwords
+                        - Use sssd for LDAP authentication
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/pam.d/
+                        - pam.conf
+                        - nsswitch.conf
+                        - pam_unix, pam_cracklib, pam_limits, pam_listfile, pam_sss
+                        - sssd.conf
+                - 210.3 LDAP client usage (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to perform queries and updates to an LDAP server. Also included is importing and adding items, as well as adding and managing users.
+                    - **Key Knowledge Areas:**
+                        - LDAP utilities for data management and queries
+                        - Change user passwords
+                        - Querying the LDAP directory
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ldapsearch
+                        - ldappasswd
+                        - ldapadd
+                        - ldapdelete
+                - 210.4 Configuring an OpenLDAP server (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to configure a basic OpenLDAP server including knowledge of LDIF format and essential access controls.
+                    - **Key Knowledge Areas:**
+                        - OpenLDAP
+                        - Directory based configuration
+                        - Access Control
+                        - Distinguished Names
+                        - Changetype Operations
+                        - Schemas and Whitepages
+                        - Directories
+                        - Object IDs, Attributes and Classes
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - slapd
+                        - slapd-config
+                        - LDIF
+                        - slapadd
+                        - slapcat
+                        - slapindex
+                        - /var/lib/ldap/
+                        - loglevel
+            -   *211 E-Mail Services*  1-3
+                - [Size]();-[H0]()
+                - 211.1 Using e-mail servers (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to manage an e-mail server, including the configuration of e-mail aliases, e-mail quotas and virtual e-mail domains. This objective includes configuring internal e-mail relays and monitoring e-mail servers.
+                    - **Key Knowledge Areas:**
+                        - Configuration files for postfix
+                        - Basic TLS configuration for postfix
+                        - Basic knowledge of the SMTP protocol
+                        - Awareness of sendmail and exim
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - Configuration files and commands for postfix
+                        - /etc/postfix/
+                        - /var/spool/postfix/
+                        - sendmail emulation layer commands
+                        - /etc/aliases
+                        - mail-related logs in /var/log/
+                - 211.2 Managing E-Mail Delivery (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to implement client e-mail management software to filter, sort and monitor incoming user e-mail.
+                    - **Key Knowledge Areas:**
+                        - Understanding of Sieve functionality, syntax and operators
+                        - Use Sieve to filter and sort mail with respect to sender, recipient(s), headers and size
+                        - Awareness of procmail
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - Conditions and comparison operators
+                        - keep, fileinto, redirect, reject, discard, stop
+                        - Dovecot vacation extension
+                - 211.3 Managing Mailbox Access (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to install and configure POP and IMAP daemons.
+                    - **Key Knowledge Areas:**
+                        - Dovecot IMAP and POP3 configuration and administration
+                        - Basic TLS configuration for Dovecot
+                        - Awareness of Courier
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/dovecot/
+                        - dovecot.conf
+                        - doveconf
+                        - doveadm
+            -   *212 System Security*  1-5
+                - [Size]();-[H0]()
+                - 212.1 Configuring a router (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to configure a system to forward IP packet and perform network address translation (NAT, IP masquerading) and state its significance in protecting a network. This objective includes configuring port redirection, managing filter rules and averting attacks.
+                    - **Key Knowledge Areas:**
+                        - iptables and ip6tables configuration files, tools and utilities
+                        - Tools, commands and utilities to manage routing tables.
+                        - Private address ranges (IPv4) and Unique Local Addresses as well as Link Local Addresses (IPv6)
+                        - Port redirection and IP forwarding
+                        - List and write filtering and rules that accept or block IP packets based on source or destination protocol, port and address
+                        - Save and reload filtering configurations
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /proc/sys/net/ipv4/
+                        - /proc/sys/net/ipv6/
+                        - /etc/services
+                        - iptables
+                        - ip6tables
+                - 212.2 Managing FTP servers (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure an FTP server for anonymous downloads and uploads. This objective includes precautions to be taken if anonymous uploads are permitted and configuring user access.
+                    - **Key Knowledge Areas:**
+                        - Configuration files, tools and utilities for Pure-FTPd and vsftpd
+                        - Awareness of ProFTPd
+                        - Understanding of passive vs. active FTP connections
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - vsftpd.conf
+                        - important Pure-FTPd command line options
+                - 212.3 Secure shell (SSH) (weight: 4)
+                    - **Weight**
+                        - 4
+                    - **Description**
+                        - Candidates should be able to configure and secure an SSH daemon. This objective includes managing keys and configuring SSH for users. Candidates should also be able to forward an application protocol over SSH and manage the SSH login.
+                    - **Key Knowledge Areas:**
+                        - OpenSSH configuration files, tools and utilities
+                        - Login restrictions for the superuser and the normal users
+                        - Managing and using server and client keys to login with and without password
+                        - Usage of multiple connections from multiple hosts to guard against loss of connection to remote host following configuration changes
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - ssh
+                        - sshd
+                        - /etc/ssh/sshd_config
+                        - /etc/ssh/
+                        - Private and public key files
+                        - PermitRootLogin, PubKeyAuthentication, AllowUsers, PasswordAuthentication, Protocol
+                - 212.4 Security tasks (weight: 3)
+                    - **Weight**
+                        - 3
+                    - **Description**
+                        - Candidates should be able to receive security alerts from various sources, install, configure and run intrusion detection systems and apply security patches and bugfixes.
+                    - **Key Knowledge Areas:**
+                        - Tools and utilities to scan and test ports on a server
+                        - Locations and organisations that report security alerts as Bugtraq, CERT or other sources
+                        - Tools and utilities to implement an intrusion detection system (IDS)
+                        - Awareness of OpenVAS and Snort
+                    - **The following is a partial list of the used files, terms and utilities:** 
+                        - telnet
+                        - nmap
+                        - fail2ban
+                        - nc
+                        - iptables
+                - 212.5 OpenVPN (weight: 2)
+                    - **Weight**
+                        - 2
+                    - **Description**
+                        - Candidates should be able to configure a VPN (Virtual Private Network) and create secure point-to-point or site-to-site connections.
+                    - **Key Knowledge Areas:**
+                        - OpenVPN
+                    - **The following is a partial list of the used files, terms and utilities:**
+                        - /etc/openvpn/
+                        - openvpn
+        - ## **LPIC-2 Exam 201 and 202 Objectives**
+            - [Size]();-[H2]()
+        - 
+        - **Exam Objectives Version:** 4.5
+        - **Exam Code:** 201-450, 202-450
+        - **About Objective Weights:** Each objective is assigned a weighting value. The weights indicate the relative importance of each objective on the exam. Objectives with higher weights will be covered in the exam with more questions.
+        - ## Overview of Tasks
+            - [Size]();-[H2]()
+        - These are required exams for LPI certification Level 2. It covers advanced skills for the Linux professional that are common across all distributions of Linux. Also, [LPIC-1](https://wiki.lpi.org/wiki/LPIC-1_Objectives) must be obtained in order to receive the certification. Exams may be taken in any order but all of the requirements must be met.
+        - To pass LPIC-2, the candidate should be able to:
+            - Administer a small to medium-sized site.
+            - Plan, implement, maintain, keep consistent, secure, and troubleshoot a small mixed (MS, Linux) network, including a:
+                - LAN server (Samba, NFS, DNS, DHCP, client management).
+                - Internet Gateway (firewall, VPN, SSH, web cache/proxy, mail).
+                - Internet Server (web server and reverse proxy, FTP server).
+            - Supervise assistants.
+            - Advise management on automation and purchases.
+        - 
+        - ## Exams
+            - [Size]();-[H2]()
+        - In order to be certified [LPIC-2](https://wiki.lpi.org/wiki/LPIC-2), the candidate must pass both the [201](https://www.lpi.org/our-certifications/exam-201-202-objectives/#Objectives:_Exam_201) and [202](https://www.lpi.org/our-certifications/exam-201-202-objectives/#Objectives:_Exam_202) exams and be a holder of an active [LPIC-1](https://wiki.lpi.org/wiki/LPIC-1) certification.
+            - [201](https://www.lpi.org/our-certifications/exam-201-202-objectives/#Objectives:_Exam_201)
+            - [202](https://www.lpi.org/our-certifications/exam-201-202-objectives/#Objectives:_Exam_202)
+        - 
+        - ## Version Information
+            - [Size]();-[H2]()
+        - These objectives are version 4.5.0. This version is to go live on February 13th, 2017.
+        - This is also a [summary and detailed information](https://wiki.lpi.org/wiki/LPIC-2_Summary_Version_4.0_To_4.5) on the changes from version 4.0.x to 4.5.0 of the objectives.
+        - The [version 4.0 of the LPIC-2 Objectives](https://wiki.lpi.org/wiki/LPIC-2_Objectives_V4) are still online.
+        -  
+            - [Size]();-[H0]()
+        - --------------------- Portal ---------------------query:[LPIC-2 - 201-450 and 202-450](Linux%20Certifictions/LPI/LPIC-2%20-%20201-450%20and%20202-450.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPIC-3 Mixed Environments #LPI #linux
+        - --------------------- Portal ---------------------query:[LPIC-3 Mixed Environments](Linux%20Certifictions/LPI/LPIC-3%20Mixed%20Environments.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPIC-3 Security  #LPI #linux
+        - 
+        - --------------------- Portal ---------------------query:[LPIC-3 Security ](Linux%20Certifictions/LPI/LPIC-3%20Security.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPIC-3 Virtualization and Containerization #LPI #linux
+        - 
+        - --------------------- Portal ---------------------query:[LPIC-3 Virtualization and Containerization](Linux%20Certifictions/LPI/LPIC-3%20Virtualization%20and%20Containerization.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPIC-3 High Availability and Storage Clusters #LPI #linux
+        - 
+        - --------------------- Portal ---------------------query:[LPIC-3 High Availability and Storage Clusters](Linux%20Certifictions/LPI/LPIC-3%20High%20Availability%20and%20Storage%20Clusters.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPI DevOps Tools Engineer #LPI #linux
+        - ###  *701 Software Engineering* 
+            - [Size]();-[H3]()
+        - 701.1 Modern Software Development (weight: 6)
+            - **Weight**
+                - 6
+            - **Description**
+                - Candidates should be able to design software solutions suitable for modern runtime environments. Candidates should understand how services handle data persistence, sessions, status information, transactions, concurrency, security, performance, availability, scaling, load balancing, messaging, monitoring and APIs. Furthermore, candidates should understand the implications of agile and DevOps on software development.
+        - **Key Knowledge Areas:**
+            - Understand and design service based applications
+            - Understand common API concepts and standards
+            - Understand aspects of data storage, service status and session handling
+            - Design software to be run in containers
+            - Design software to be deployed to cloud services
+            - Awareness of risks in the migration and integration of monolithic legacy software
+            - Understand common application security risks and ways to mitigate them
+            - Understand the concept of agile software development
+            - Understand the concept of DevOps and its implications to software developers and operators
+        - **The following is a partial list of the used files, terms and utilities:**
+            - REST, JSON
+            - Service Orientated Architectures (SOA)
+            - Microservices
+            - Immutable servers
+            - Loose coupling
+            - Cross site scripting, SQL injections, verbose error reports, API authentication, consistent enforcement of transport encryption
+            - CORS headers and CSRF tokens
+            - ACID properties and CAP theorem
+        - 
+        - 701.2 Standard Components and Platforms for Software (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - Candidates should understand services offered by common cloud platforms. They should be able to include these services in their application architectures and deployment toolchains and understand the required service configurations. OpenStack service components are used as a reference implementation.
+        - **Key Knowledge Areas:**
+            - Features and concepts of object storage
+            - Features and concepts of relational and NoSQL databases
+            - Features and concepts of message brokers and message queues
+            - Features and concepts of big data services
+            - Features and concepts of application runtimes / PaaS
+            - Features and concepts of content delivery networks
+        - **The following is a partial list of the used files, terms and utilities:**
+            - OpenStack Swift
+            - OpenStack Trove
+            - OpenStack Zaqar
+            - CloudFoundry
+            - OpenShift
+        - 
+        - 701.3 Source Code Management (weight: 5)
+            - **Weight**
+                - 5
+            - **Description**
+                - Candidates should be able to use Git to manage and share source code. This includes creating and contributing to a repository as well as the usage of tags, branches and remote repositories. Furthermore, the candidate should be able to merge files and resolve merging conflicts.
+        - **Key Knowledge Areas:**
+            - Understand Git concepts and repository structure
+            - Manage files within a Git repository
+            - Manage branches and tags
+            - Work with remote repositories and branches as well as submodules
+            - Merge files and branches
+            - Awareness of SVN and CVS, including concepts of centralized and distributed SCM solutions
+        - **The following is a partial list of the used files, terms and utilities:**
+            - git
+            - .gitignore
+        - 
+        - 701.4 Continuous Integration and Continuous Delivery (weight: 5)
+            - **Weight**
+                - 5
+            - **Description**
+                - Candidates should understand the principles and components of a continuous integration and continuous delivery pipeline. Candidates should be able to implement a CI/CD pipeline using Jenkins, including triggering the CI/CD pipeline, running unit, integration and acceptance tests, packaging software and handling the deployment of tested software artifacts. This objective covers the feature set of Jenkins version 2.0 or later.
+        - **Key Knowledge Areas:**
+            - Understand the concepts of Continuous Integration and Continuous Delivery
+            - Understand the components of a CI/CD pipeline, including builds, unit, integration and acceptance tests, artifact management, delivery and deployment
+            - Understand deployment best practices
+            - Understand the architecture and features of Jenkins, including Jenkins Plugins, Jenkins API, notifications and distributed builds
+            - Define and run jobs in Jenkins, including parameter handling
+            - Fingerprinting, artifacts and artifact repositories
+            - Understand how Jenkins models continuous delivery pipelines and implement a declarative continuous delivery pipeline in Jenkins
+            - Awareness of possible authentication and authorization models
+            - Understanding of the Pipeline Plugin
+            - Understand the features of important Jenkins modules such as Copy Artifact Plugin, Fingerprint Plugin, Docker Pipeline, Docker Build and Publish plugin, Git Plugin, Credentials Plugin
+            - Awareness of Artifactory and Nexus
+        - **The following is a partial list of the used files, terms and utilities:**
+            - Step, Node, Stage
+            - Jenkins DSL
+            - Jenkinsfile
+            - Declarative Pipeline
+            - Blue-green and canary deployment
+        - ###  *702 Container Management* 
+            - [Size]();-[H3]()
+        - 702.1 Container Usage (weight: 7)
+            - **Weight**
+                - 7
+            - **Description**
+                - Candidates should be able to build, share and operate Docker containers. This includes creating Dockerfiles, using a Docker registry, creating and interacting with containers as well as connecting containers to networks and storage volumes. This objective covers the feature set of Docker version 17.06 or later.
+        - **Key Knowledge Areas:**
+            - Understand the Docker architecture
+            - Use existing Docker images from a Docker registry
+            - Create Dockerfiles and build images from Dockerfiles
+            - Upload images to a Docker registry
+            - Operate and access Docker containers
+            - Connect container to Docker networks
+            - Use Docker volumes for shared and persistent container storage
+        - **The following is a partial list of the used files, terms and utilities:**
+            - docker
+            - Dockerfile
+            - .dockerignore
+        - 
+        - 702.2 Container Deployment and Orchestration (weight: 5)
+            - **Weight**
+                - 5
+            - **Description**
+                - Candidates should be able to run and manage multiple containers that work together to provide a service. This includes the orchestration of Docker containers using Docker Compose in conjunction with an existing Docker Swarm cluster as well as using an existing Kubernetes cluster. This objective covers the feature sets of Docker Compose version 1.14 or later, Docker Swarm included in Docker 17.06 or later and Kubernetes 1.6 or later.
+        - **Key Knowledge Areas:**
+            - Understand the application model of Docker Compose
+            - Create and run Docker Compose Files (version 3 or later)
+            - Understand the architecture and functionality of Docker Swarm mode
+            - Run containers in a Docker Swarm, including the definition of services, stacks and the usage of secrets
+            - Understand the architecture and application model Kubernetes
+            - Define and manage a container-based application for Kubernetes, including the definition of Deployments, Services, ReplicaSets and Pods
+        - **The following is a partial list of the used files, terms and utilities:**
+            - docker-compose
+            - docker
+            - kubectl
+        - 
+        - 702.3 Container Infrastructure (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - Candidates should be able to set up a runtime environment for containers. This includes running containers on a local workstation as well as setting up a dedicated container host. Furthermore, candidates should be aware of other container infrastructures, storage, networking and container specific security aspects. This objective covers the feature set of Docker version 17.06 or later and Docker Machine 0.12 or later.
+        - **Key Knowledge Areas:**
+            - Use Docker Machine to setup a Docker host
+            - Understand Docker networking concepts, including overlay networks
+            - Create and manage Docker networks
+            - Understand Docker storage concepts
+            - Create and manage Docker volumes
+            - Awareness of Flocker and flannel
+            - Understand the concepts of service discovery
+            - Basic feature knowledge of CoreOS Container Linux, rkt and etcd
+            - Understand security risks of container virtualization and container images and how to mitigate them
+        - **The following is a partial list of the used files, terms and utilities:**
+            - docker-machine
+        - ###  *703 Machine Deployment* 
+            - [Size]();-[H3]()
+        - 703.1 Virtual Machine Deployment (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - Candidates should be able to automate the deployment of a virtual machine with an operating system and a specific set of configuration files and software.
+        - **Key Knowledge Areas:**
+            - Understand Vagrant architecture and concepts, including storage and networking
+            - Retrieve and use boxes from Atlas
+            - Create and run Vagrantfiles
+            - Access Vagrant virtual machines
+            - Share and synchronize folder between a Vagrant virtual machine and the host system
+            - Understand Vagrant provisioning, including File, Shell, Ansible and Docker
+            - Understand multi-machine setup
+        - **The following is a partial list of the used files, terms and utilities:**
+            - vagrant
+            - Vagrantfile
+        - 
+        - 703.2 Cloud Deployment (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - Candidates should be able to configure IaaS cloud instances and adjust them to match their available hardware resources, specifically, disk space and volumes. Additionally, candidates should be able to configure instances to allow secure SSH logins and prepare the instances to be ready for a configuration management tool such as Ansible.
+        - **Key Knowledge Areas:**
+            - Understanding the features and concepts of cloud-init, including user-data and initializing and configuring cloud-init
+            - Use cloud-init to create, resize and mount file systems, configure user accounts, including login credentials such as SSH keys and install software packages from the distribution’s repository
+            - Understand the features and implications of IaaS clouds and virtualization for a computing instance, such as snapshotting, pausing, cloning and resource limits.
+        - 
+        - 703.3 System Image Creation (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - Candidates should be able to create images for containers, virtual machines and IaaS cloud instances.
+        - **Key Knowledge Areas:**
+            - Understand the functionality and features of Packer
+            - Create and maintain template files
+            - Build images from template files using different builders
+        - **The following is a partial list of the used files, terms and utilities:**
+            - packer
+        - ###  *704 Configuration Management* 
+            - [Size]();-[H3]()
+        - 704.1 Ansible (weight: 8)
+            - **Weight**
+                - 8
+            - **Description**
+                - Candidates should be able to use Ansible to ensure a target server is in a specific state regarding its configuration and installed software. This objective covers the feature set of Ansible version 2.2 or later.
+        - **Key Knowledge Areas:**
+            - Understand the principles of automated system configuration and software installation
+            - Create and maintain inventory files
+            - Understand how Ansible interacts with remote systems
+            - Manage SSH login credentials for Ansible, including using unprivileged login accounts
+            - Create, maintain and run Ansible playbooks, including tasks, handlers, conditionals, loops and registers
+            - Set and use variables
+            - Maintain secrets using Ansible vaults
+            - Write Jinja2 templates, including using common filters, loops and conditionals
+            - Understand and use Ansible roles and install Ansible roles from Ansible Galaxy
+            - Understand and use important Ansible tasks, including file, copy, template, ini_file, lineinfile, patch, replace, user, group, command, shell, service, systemd, cron, apt, debconf, yum, git, and debug
+            - Awareness of dynamic inventory
+            - Awareness of Ansibles features for non-Linux systems
+            - Awareness of Ansible containers
+        - **The following is a partial list of the used files, terms and utilities:**
+            - ansible.cfg
+            - ansible-playbook
+            - ansible-vault
+            - ansible-galaxy
+            - ansible-doc
+        - 
+        - 704.2 Other Configuration Management Tools (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - Candidates should understand the main features and principles of important configuration management tools other than Ansible.
+        - **Key Knowledge Areas:**
+            - Basic feature and architecture knowledge of Puppet.
+            - Basic feature and architecture knowledge of Chef.
+        - **The following is a partial list of the used files, terms and utilities:**
+            - Manifest, Class, Recipe, Cookbook
+            - puppet
+            - chef
+            - chef-solo
+            - chef-client
+            - chef-server-ctl
+            - knife
+        - ###  *705 Service Operations* 
+            - [Size]();-[H3]()
+        - 705.1 IT Operations and Monitoring (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - Candidates should understand how IT infrastructure is involved in delivering a service. This includes knowledge about the major goals of IT operations, understanding functional and nonfunctional properties of an IT services and ways to monitor and measure them using Prometheus. Furthermore candidates should understand major security risks in IT infrastructure. This objective covers the feature set of Prometheus 1.7 or later.
+        - **Key Knowledge Areas:**
+            - Understand goals of IT operations and service provisioning, including nonfunctional properties such as availability, latency, responsiveness
+            - Understand and identify metrics and indicators to monitor and measure the technical functionality of a service
+            - Understand and identify metrics and indicators to monitor and measure the logical functionality of a service
+            - Understand the architecture of Prometheus, including Exporters, Pushgateway, Alertmanager and Grafana
+            - Monitor containers and microservices using Prometheus
+            - Understand the principles of IT attacks against IT infrastructure
+            - Understand the principles of the most important ways to protect IT infrastructure
+            - Understand core IT infrastructure components and their role in deployment
+        - **The following is a partial list of the used files, terms and utilities:**
+            - Prometheus, Node exporter, Pushgateway, Altermanager, Grafana
+            - Service exploits, brute force attacks, and denial of service attacks
+            - Security updates, packet filtering and application gateways
+            - Virtualization hosts, DNS and load balancers
+        - 
+        - 705.2 Log Management and Analysis (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - Candidates should understand the role of log files in operations and troubleshooting. They should be able to set up centralized logging infrastructure based on Logstash to collect and normalize log data. Furthermore, candidates should understand how Elasticsearch and Kibana help to store and access log data.
+        - **Key Knowledge Areas:**
+            - Understand how application and system logging works
+            - Understand the architecture and functionality of Logstash, including the lifecycle of a log message and Logstash plugins
+            - Understand the architecture and functionality of Elasticsearch and Kibana in the context of log data management (Elastic Stack)
+            - Configure Logstash to collect, normalize, transform and ship log data
+            - Configure syslog and Filebeat to send log data to Logstash
+            - Configure Logstash to send email alerts
+            - Understand application support for log management
+        - **The following is a partial list of the used files, terms and utilities:**
+            - logstash
+            - input, filter, output
+            - grok filter
+            - Log files, metrics
+            - syslog.conf
+            - /etc/logstash/logstash.yml
+            - /etc/filebeat/filebeat.yml
+        - 
+        - 
+        - ## Future Change Considerations
+            - [Size]();-[H2]()
+        - Future changes to the objective will/may include:
+            - 701.2: Remove the OpenStack examples and focus on the general features
+            - 702.2: Reconsider Swarm and potentially increase Kubernetes
+            - 703.1: Reconsider Vagrant (or its weight)
+        - --------------------- Portal ---------------------query:[LPI DevOps Tools Engineer](Linux%20Certifictions/LPI/LPI%20DevOps%20Tools%20Engineer.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPI BSD Specialist #LPI #linux
+        - LPI BSD Specialist
+        - 
+        - ## Links
+            - [Size]();-[H2]()
+        - 
+        - ## Books
+            - [Size]();-[H2]()
+        - 
+        - ## Objectives
+            - [Size]();-[H2]()
+        - 
+            - 7.1 Topic 711: BSD Installation and Software Management
+                - 7.1.1 711.1 BSD Operating System Installation (weight: 3)
+                - 7.1.2 711.2 BSD Software and Package Management (weight: 4)
+                - 7.1.3 711.3 BSD System Startup Configuration (weight: 3)
+                - 7.1.4 711.4 Hardware Configuration (weight: 2)
+                - 7.1.5 711.5 BSD Kernel Parameters and System Security Level (weight: 2)
+            - 7.2 Topic 712: Storage Devices and BSD Filesystems
+                - 7.2.1 712.1 BSD Partitioning and Disk Labels (weight: 2)
+                - 7.2.2 712.2 Create File Systems and Maintain their Integrity (weight: 1)
+                - 7.2.3 712.3 Control Mounting and Unmounting of File Systems (weight: 2)
+                - 7.2.4 712.4 Manage File Permissions and Ownership (weight: 3)
+                - 7.2.5 712.5 Create and Change Hard and Symbolic Links (weight: 1)
+                - 7.2.6 712.6 Find Files and BSD Directory Layout (weight: 2)
+            - 7.3 Topic 713: Basic BSD System Administration
+                - 7.3.1 713.1 Manage User Accounts and Groups (weight: 3)
+                - 7.3.2 713.2 Automate System Administration Tasks by Scheduling Jobs (weight: 2)
+                - 7.3.3 713.3 Maintain System Time (weight: 1)
+                - 7.3.4 713.4 System Logging (weight: 2)
+                - 7.3.5 713.5 Mail Transfer Agents (MTA) Basics (weight: 1)
+                - 7.3.6 713.6 Manage Printing and Print Jobs (weight: 1)
+                - 7.3.7 713.7 Manage User Sessions (weight: 1)
+            - 7.4 Topic 714: Basic BSD Network Administration
+                - 7.4.1 714.1 Fundamentals of Internet Protocols (weight: 2)
+                - 7.4.2 714.2 Basic network configuration (weight: 3)
+                - 7.4.3 714.3 Basic network troubleshooting (weight: 3)
+                - 7.4.4 714.4 Configure Client Side DNS (weight: 2)
+            - 7.5 Topic 715: Basic Unix Skills
+                - 7.5.1 715.1 Use the Shell and Work on the Command Line (weight: 2)
+                - 7.5.2 715.2 Perform basic file management (weight: 3)
+                - 7.5.3 715.3 Create, Monitor and Kill Processes (weight: 3)
+                - 7.5.4 715.4 Use Simple Regular Expressions (weight: 2)
+                - 7.5.5 715.5 Perform basic file editing operations (weight: 2)
+                - 7.5.6 715.6 Customize or write simple scripts (weight: 2)
+            - 8 Future Change Considerations
+            - 
+        - Introduction
+        - 
+        - This is a required exam for the Linux Professional Institute BSD Specialist certification. It covers basic skills in installing and administering a BSD system.
+        - 
+        - This page IS A DRAFT for for the Linux Professional Institute BSD Specialist certification.
+        - 
+        - Candidate Description
+        - 
+        - The certification holder is a BSD system administrator. The certification holder has a solid understanding of the architecture of the BSD operating systems. This includes the ability to manage various aspects of a BSD installation, including user accounts and groups, processes, file systems, installed software and client networking configuration. Furthermore, the candidate is experienced in using standard BSD and Unix tools on the command line. The certification holder is able to apply these skills on FreeBSD, OpenBSD and NetBSD.
+        - 
+        - Version Information
+        - 
+        - These objectives are for version 1.0.0.
+        - 
+        - Translations of Objectives
+        - 
+        - The following translations of the objectives are available on this wiki:
+        - 
+            - English
+            - Japanese
+            - 
+        - Exams and Requirements
+        - 
+        - The Linux Professional Institute BSD Specialist certification is awarded after passing this exam. There is no requirement to posses another certifications.
+        - 
+        - Hint on BSD Operating Systems
+        - 
+        - These objectives contain command and file names which might be relevant within the exam. Candidates should be aware that the exam covers three different BSD operating systems. Commands and files with the same name might exist on all or some of these systems and still differ in their behavior or content. This might be the case even when the command or file name is listed in the ‘common’ section of the objectives. Candidates are expected to be able to use the files and commands on all BSD operating systems mentioned in the objectives. Where appropriate, the exam will be specific which BSD operating system is covered.
+        - 
+        - Objectives
+        - Topic 711: BSD Installation and Software Management
+        - 711.1 BSD Operating System Installation (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - The candidate should be able to install FreeBSD, NetBSD, and OpenBSD. Furthermore, candidates should be able to upgrade an existing BSD installation.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Install the FreeBSD, NetBSD, and OpenBSD operating systems using default options.
+            - Upgrade an existing FreeBSD, NetBSD or OpenBSD operating system installation.
+            - Determine the type and version of the operating system installed.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - uname
+            - FreeBSD:
+                - bsdinstall
+                - freebsd-update
+            - NetBSD:
+                - sysinst
+            - OpenBSD:
+                - bsd.rd
+                - 
+        - 711.2 BSD Software and Package Management (weight: 4)
+        - 
+        - Weight
+            - 4
+            - 
+        - Description
+        - 
+        - Candidates should be able to install, manage, and update software on a BSD system. This includes using pre-compiled binary software using a package manager as well as compiling software from source code and using ports.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Candidates should understand software management mechanisms on BSD systems.
+            - Install, query, and uninstall pre-compiled binary packages.
+            - Use ports to compile software.
+            - Determine which installed software has pending upgrades or outstanding security vulnerabilities and install available upgrades.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - make
+            - FreeBSD:
+                - pkg install
+                - pkg delete
+                - pkg info
+                - pkg upgrade
+            - NetBSD:
+                - pkg_admin
+                - pkg_add
+                - pkg_delete
+                - pkg_info
+            - OpenBSD:
+                - pkg_add
+                - pkg_delete
+                - pkg_info
+                - 
+        - 711.3 BSD System Startup Configuration (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should understand the BSD boot process and be able to manage services, including configuring which services are started at boot time. Furthermore, candidates should be able to start and restart a BSD system.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the boot process of each BSD operating system.
+            - Understand the role and principles of a bootloader, including BSD bootloader stages.
+            - Use rc startup scripts to start, stop, restart, and check the status of services.
+            - Configure services to be started at boot time.
+            - Start and restart a BSD system.
+            - Put a BSD system in single-user mode.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - boot(8)
+                - rc
+                - /etc/rc.conf
+                - /etc/rc.d/
+                - inetd
+                - shutdown
+            - FreeBSD:
+                - service
+            - NetBSD:
+                - service
+            - OpenBSD:
+                - rcctl
+                - 
+        - 711.4 Hardware Configuration (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to investigate a system’s hardware and configure how BSD handles hardware devices. This includes understanding the role of kernel modules and loading and managing existing kernel modules.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Determine what hardware is installed on a system.
+            - Determine which hardware was probed at boot time.
+            - BSD-specific utilities which can be used to troubleshoot and manipulate PCI, ATA, and SCSI devices.
+            - View, load, and unload kernel modules.
+            - Availability of kernel modules in different BSD operating systems.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - dmesg
+                - /boot/loader.conf
+            - FreeBSD:
+                - camcontrol
+                - devinfo
+                - pciconf
+                - kldstat
+                - kldload
+                - kldunload
+            - NetBSD:
+                - atactl
+                - pcictl
+                - scsictl
+                - modstat
+                - modload
+                - modunload
+            - OpenBSD:
+                - atactl
+                - scsi
+                - 
+        - 711.5 BSD Kernel Parameters and System Security Level (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidate should understand configurable kernel parameters (MIBs) and should be able to view and set kernel parameters. This includes understanding and setting BSD securelevels.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the concept of kernel MIBs.
+            - View MIBs and modify MIBs at run-time and permanently.
+            - Understand the concept and restrictions of BSD securelevels.
+            - Understand under which circumstances a securelevel can be raised or lowered.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - init
+                - sysctl
+                - /etc/sysctl.conf
+            - OpenBSD:
+                - config
+                - /etc/boot.conf
+                - 
+        - Topic 712: Storage Devices and BSD Filesystems
+        - 712.1 BSD Partitioning and Disk Labels (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should understand the concepts of disk slice tables and disk labels and be able to view, create, and modify the layout of a hard disk.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the concepts of disk slice tables and disk labels.
+            - View, create, or edit the disk slice table, master boot record, or disk label.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - fdisk
+                - disklabel
+            - OpenBSD:
+                - installboot
+                - 
+        - 712.2 Create File Systems and Maintain their Integrity (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should be able to create file systems and check their integrity. This includes identifying files which consume the most disk space.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Create UFS and ZFS file systems.
+            - Determine disk space usage and available space.
+            - Check the consistency of a UFS filesystem or health of a ZFS pool.
+            - Awareness of ZFS snapshots.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - newfs
+                - fsck
+                - du
+                - df
+            - FreeBSD:
+                - zpool
+            - NetBSD:
+                - zpool
+                - 
+        - 712.3 Control Mounting and Unmounting of File Systems (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to view mounted file systems, mount or unmount file systems, and determine which file systems will mount at boot.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Determine which local file systems are currently mounted.
+            - Mount and unmount UFS or ZFS file systems.
+            - Configure which file systems are mounted at boot time.
+            - Resolve mount errors.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - mount
+                - umount
+                - /etc/fstab
+                - df
+            - FreeBSD
+                - zfs
+            - NetBSD
+                - zfs
+                - 
+        - 712.4 Manage File Permissions and Ownership (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should understand and be able to manage file ownership and permissions.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand traditional Unix permissions.
+            - View and modify permissions using both symbolic and octal mode.
+            - Understand and use the SUID bit, SGID bit, and sticky bit.
+            - Set the default file and directory permissions.
+            - View and modify ownership of files and directories.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - chown
+                - chgrp
+                - ls
+                - chmod
+                - umask
+                - 
+        - 712.5 Create and Change Hard and Symbolic Links (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should be able to manage symbolic and hard links.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the difference between symbolic and hard links.
+            - Create, view, and remove both types of links.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - ln
+                - ls
+                - rm(1)
+                - 
+        - 712.6 Find Files and BSD Directory Layout (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should understand the BSD directory layout and be able to find files according to different search criteria.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the directory layout used by BSD systems.
+            - Know which utilities can be used to find binaries, source, manpages, and files.
+            - Update the locate database.
+            - Use find to locate files, including using search criteria such as last modification time, size, type, file flags, UID or GID, permissions, or by a text pattern.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - whatis
+                - whereis
+                - which
+                - locate
+                - locate.updatedb
+                - find
+                - hier(7)
+                - 
+        - Topic 713: Basic BSD System Administration
+        - 713.1 Manage User Accounts and Groups (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should be able to create and manage user and system accounts as well as groups and group membership.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Create, modify, and remove user and system accounts as well as groups.
+            - Manage group membership.
+            - Lock and unlock accounts.
+            - Change user passwords.
+            - Change a user's properties, such as the default shell.
+            - Control which files are copied to a new user's home directory during account creation.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - adduser
+                - passwd
+                - chpass
+                - chfn
+                - chsh
+                - vipw
+                - nologin
+                - id
+                - groups
+                - who
+                - whoami
+                - su(1)
+                - /usr/share/skel/
+            - FreeBSD:
+                - pw
+                - rmuser
+            - NetBSD:
+                - user
+                - useradd
+                - userinfo
+                - usermod
+                - userdel
+            - OpenBSD:
+                - user
+                - useradd
+                - userinfo
+                - usermod
+                - userdel
+                - rmuser
+                - 
+        - 713.2 Automate System Administration Tasks by Scheduling Jobs (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should understand the location of the periodic system scripts and be able to schedule automated execution of their own commands using cron.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the periodic system scripts.
+            - Configure which periodic system scripts are run daily, weekly and monthly.
+            - Manually run a periodic system script.
+            - Understand the difference between the system crontab and user crontabs, including all available fields.
+            - Use the crontab editor to create or edit a user crontab.
+            - Control which users can create their own crontabs.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - crontab
+                - cron
+                - crontab
+                - /var/cron/allow
+                - /var/cron/deny
+            - FreeBSD:
+                - /etc/defaults/periodic.conf
+                - periodic
+            - NetBSD:
+                - /etc/daily.conf
+                - /etc/weekly.conf
+                - /etc/monthly.conf
+                - /etc/security.conf
+            - OpenBSD:
+                - daily
+                - weekly
+                - monthly
+                - 
+        - 713.3 Maintain System Time (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should be able to set the system time and use NTP for time synchronization.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the concepts of NTP.
+            - Configure NTP and manually synchronize with a time server.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - ntpd
+                - /etc/rc.conf
+                - date
+            - FreeBSD:
+                - /etc/ntp.conf
+                - ntpq
+            - NetBSD:
+                - /etc/ntp.conf
+                - ntpq
+            - OpenBSD:
+                - /etc/ntpd.conf
+                - 
+        - 713.4 System Logging (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to review system log files and configure log file rotation.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand system logging and location of log files.
+            - View log files, including ongoing and compressed logs.
+            - Configure log rotation by either time or size.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - newsyslog
+                - /etc/newsyslog.conf
+                - /etc/syslog.conf
+                - tail
+                - grep
+                - zgrep
+                - zless
+                - zmore
+                - dmesg
+            - FreeBSD:
+                - bzcat
+            - NetBSD:
+                - bzcat
+                - 
+        - 713.5 Mail Transfer Agents (MTA) Basics (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should understand the role of a Mail Transfer Agent and configure aliases and mail forwarding on their local MTA as well as outgoing email using a relay.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the role of a Mail Transfer Agent (MTA).
+            - Determine which MTA is used on the system.
+            - Create an email alias for both Sendmail and Postfix.
+            - Configure Sendmail and Postfix to use a relay for outgoing mail.
+            - View and flush the mail queue.
+            - Understand the difference between the mbox and maildir mail destination file format type.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - /etc/mail/aliases
+                - newaliases
+            - FreeBSD:
+                - /etc/mail/mailer.conf
+                - mailq
+            - NetBSD:
+                - /etc/mailer.conf
+                - postalias
+                - mailq
+                - postqueue
+            - OpenBSD:
+                - /etc/mailer.conf
+                - smtpctl
+                - 
+        - 713.6 Manage Printing and Print Jobs (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should understand how printing on a BSD system works and should be able to review the printing queue and manipulate print jobs.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the BSD lpr printing system.
+            - Understand the meaning of /etc/printcap entries.
+            - View the print queue and manipulate the jobs within the queue.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - lpc
+                - lpq
+                - lprm
+                - printcap
+                - 
+        - 713.7 Manage User Sessions (weight: 1)
+        - 
+        - Weight
+            - 1
+            - 
+        - Description
+        - 
+        - Candidates should be able to identify which users are currently logged in to a system and review the history of user logins.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Determine who is currently on the system.
+            - Determine the last time a user was on the system.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - w
+                - who
+                - last
+                - users
+            - FreeBSD:
+                - lastlogin
+            - NetBSD:
+                - lastlogin
+                - /var/log/lastlog
+            - OpenBSD:
+                - /var/log/lastlog
+                - 
+        - Topic 714: Basic BSD Network Administration
+        - 714.1 Fundamentals of Internet Protocols (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should understand important network protocols as well as basic IPv4 and IPv6 addressing and subnetting.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand IPv4 addressing and subnetting.
+            - Understand basic IPv6 addressing and subnetting.
+            - Convert a subnet mask between dotted decimal, hexadecimal, or CIDR notation.
+            - Determine valid host addresses as well as the subnet address and, for IPv4, the broadcast address of a given network.
+            - Understand the key features of TCP, UDP and ICMP.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - CIDR
+                - Prefix and Interface Identifier
+                - 
+        - 714.2 Basic network configuration (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should be able to configure the IP settings of network interfaces.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Configure IP settings both temporarily and permanently.
+            - Demonstrate a basic understanding of DHCP leases.
+            - View the current DHCP lease, release it, and renew a lease.
+            - Configure a DHCP client to override the settings received from a DHCP server.
+            - Understand and configure interface aliases.
+            - Understand IPv6 auto configuration using SLAAC and DHCPv6.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - ifconfig
+                - route
+                - hostname
+                - /etc/hosts
+                - dhclient
+                - /etc/dhclient.conf
+                - /var/db/dhclient.leases
+                - /etc/rc.conf
+            - NetBSD:
+                - /etc/ifconfig.if
+                - /etc/ifaliases
+            - OpenBSD:
+                - netstart
+                - /etc/hostname.if
+                - /etc/myname
+                - /etc/mygate
+                - 
+        - 714.3 Basic network troubleshooting (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should be able to analyze and resolve simple network connectivity problems.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Determine the current IP configuration of a system.
+            - Troubleshoot IPv4 and IPv6 connectivity.
+            - Determine which TCP or UDP ports are open on a system.
+            - Verify the availability of a TCP/IP service.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - ifconfig
+                - netstat
+                - route
+                - ping
+                - ping6
+                - traceroute
+                - /etc/services
+                - telnet
+                - nmap
+                - nc
+            - FreeBSD:
+                - sockstat
+                - rtsol
+            - NetBSD:
+                - sockstat
+                - rtsol
+            - OpenBSD:
+                - /etc/hostname.if
+                - 
+        - 714.4 Configure Client Side DNS (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should understand the basics of DNS and be able to configure host name resolution.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand basic DNS theory, including types of resource records, reverse lookups, and types of DNS servers.
+            - Query a DNS server for a particular type of resource record.
+            - Configure name resolution, including the order of host name resolution and recursive DNS server.
+            - Troubleshoot DNS problems.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - host
+                - hostname
+                - /etc/resolv.conf
+            - FreeBSD:
+                - drill
+                - /etc/nsswitch.conf
+            - NetBSD:
+                - dig
+                - nslookup
+                - /etc/nsswitch.conf
+            - OpenBSD:
+                - dig
+                - nslookup
+                - 
+        - Topic 715: Basic Unix Skills
+        - 715.1 Use the Shell and Work on the Command Line (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to use and customize a shell and understand the differences between the different shells offered on a BSD system. Candidates should also be able to use manpages.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the differences between the standard shells on BSD systems.
+            - Be comfortable using the sh, csh, or tcsh shells.
+            - View and modify environmental variables, both temporarily and permanently.
+            - Redirect input and output to/from files and commands.
+            - Use simple and advanced wildcard specifications in commands.
+            - Understand the manpage sections and use manpages.
+            - Modify shell behavior both temporarily and permanently, including preventing the shell from clobbering existing files and using history substitution.
+            - Set command aliases and temporarily bypass a command alias.
+            - Run a command multiple times with different arguments for each call.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - sh
+                - csh
+                - tcsh
+                - <
+                - >
+                - |
+                - >&
+                - |&
+                - tee
+                - env
+                - file globbing
+                    - ?
+                - 
+                - man
+                - intro
+                - less
+                    - !
+                    - !!
+                - $
+                - xargs
+                - 
+        - 715.2 Perform basic file management (weight: 3)
+        - 
+        - Weight
+            - 3
+            - 
+        - Description
+        - 
+        - Candidates should be able to handle files on a BSD system. This includes identifying the type of files and creating archives of files.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Copy, move, and remove files and directories.
+            - Recursively copy multiple files and directories.
+            - Remove files and directories recursively.
+            - Determine if a file is a binary, text, or data file.
+            - Using common Unix command line backup utilities.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - cp
+                - mkdir
+                - mv
+                - ls
+                - rm
+                - rmdir
+                - touch
+                - dd
+                - tar
+                - cpio
+                - pax
+                - cp
+                - file
+                - 
+        - 715.3 Create, Monitor and Kill Processes (weight: 3)
+        - 
+        - Weight
+        - 
+        - Description
+        - 
+        - Candidates should be able to manage processes, including identifying processes with extensive resource usage, prioritizing, and terminating processes.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Monitor the system's workload over the last 1, 5 and 15 minutes.
+            - Monitor the virtual memory system, including monitoring swapping and paging activity.
+            - View active processes and recognize inordinate CPU usage.
+            - Understand the most commonly used Unix signals, including their names.
+            - Understand the difference between SIGTERM and SIGKILL.
+            - Send a signal to an active process.
+            - End a process or change its priority.
+            - Start a process in the background, place an existing process into the background, verify if any jobs are currently running in the background, and return a background process to the foreground.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - top
+                - ps
+                - pgrep
+                - pstat
+                - systat
+                - nice
+                - renice
+                - kill
+                - pkill
+                - swapctl
+                - uptime
+                - w
+                - vmstat
+                - Shell built-in commands: &, ^Z, jobs, bg, fg, and kill
+            - FreeBSD:
+                - killall
+                - 
+        - 715.4 Use Simple Regular Expressions (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to use simple regular expressions and wildcards to search text in files and streams.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Match text patterns when analyzing program output or searching through files.
+            - Specify a range of characters within [], specify a literal, use a repetition operator, recognize a metacharacter, and create an inverse filter.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - grep
+                - egrep
+                - fgrep
+                - re_format(7)
+                - 
+        - 715.5 Perform basic file editing operations (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidates should be able to use the vi editor for basic file editing.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Edit files using the vi editor.
+            - Modify a read-only file or exit vi without saving any edits to the file.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - vi
+                    - :w
+                    - :wq
+                    - :wq!
+                    - :q!
+                - Dd
+                - Y
+                - P
+                - X
+                - I
+                - A
+                - /
+                - ZZ
+                    - :set number
+                    - :set list
+                    - 
+        - 715.6 Customize or write simple scripts (weight: 2)
+        - 
+        - Weight
+            - 2
+            - 
+        - Description
+        - 
+        - Candidate should understand the concept of shell scripting and be able to write simple Bourne shell scripts.
+        - 
+        - **Key Knowledge Areas:**
+        - 
+            - Understand the advantages and disadvantages of using a Bourne shell script rather than a csh or bash shell script.
+            - Understand the shebang, comments, and script permissions.
+            - Use positional parameters, special parameters, and wildcards.
+            - Use quotes and backslashes.
+            - Use conditions and loops.
+            - Troubleshoot a script.
+            - 
+        - **The following is a partial list of the used files, terms and utilities:**
+        - 
+            - Common:
+                - chmod
+                - stdin
+                - stdout
+                - stderr
+                - for
+                - while
+                - if
+                - case
+                - exec
+                - 
+        - Future Change Considerations
+        - 
+        - Future changes to the objective may include:
+        - 
+            - 712.1: Add gdisk and reconsider fdisk, disklabel and installboot
+            - 
+        - Navigation menu
+        - 
+            - Page Discussion View source History
+            - 
+            - Log in
+            - 
+        - Exam Objectives
+        - 
+            - Linux Essentials v1.6
+            - Security Essentials v1.0
+            - Web Development Essentials v1.0
+            - Open Source Essentials v1.0
+            - LPIC-1 v5.0
+            - LPIC-2 v4.5
+            - 300 Objectives v3.0
+            - 303 Objectives v3.0
+            - 305 Objectives v3.0
+            - 306 Objectives v3.0
+            - DevOps Tools Engineer Objectives v1.0
+            - BSD Specialist Objectives v1.0
+            - 
+        - Search
+        - 
+        - Navigation
+        - 
+            - Main page
+            - Recent changes
+            - LPI Website
+            - 
+        - Tools
+        - 
+            - What links here
+            - Related changes
+            - Special pages
+            - Printable version
+            - Permanent link
+            - Page information
+            - 
+        - Powered by MediaWiki
+        - 
+            - This page was last modified on 16 February 2021, at 16:22. About LPI Wiki
+            - 
+        - --------------------- Portal ---------------------query:[LPI BSD Specialist](Linux%20Certifictions/LPI/LPI%20BSD%20Specialist.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPI Security Essentials  #LPI #linux
+        - ###  *021 Security Concepts* 
+            - [Size]();-[H3]()
+        - 021.1 Goals, Roles and Actors (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should understand the importance of IT security. This includes understanding of essential security goals as well as understanding various actors and roles in the field of IT security.
+        - **Key Knowledge Areas:**
+            - Understanding of the importance of IT security
+            - Understanding of common security goals
+            - Understanding of common roles in security
+            - Understanding of common goals of attacks against IT systems and devices
+            - Understanding of the concept of attribution and related issues
+        - **Partial list of the used files, terms, and utilities:**
+            - Confidentiality, integrity, availability, non-repudiation
+            - Hackers, crackers, script kiddies
+            - Black hat and white hat hackers
+            - Accessing, manipulating or deleting data
+            - Interrupting services, extorting ransom
+            - Industrial espionage
+        - 
+        - 021.2 Risk Assessment and Management (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand how to find and interpret relevant security information. This includes understanding the risk of a security vulnerability and determining the need and urgency for a reaction.
+        - **Key Knowledge Areas:**
+            - Know common sources for security information
+            - Understanding of security incident classification schema and important types of security vulnerabilities
+            - Understanding of the concepts of security assessments and IT forensics
+            - Awareness of Information Security Management Systems (ISMS) and Information Security Incident Response Plans and Teams
+        - **Partial list of the used files, terms, and utilities:**
+            - Common Vulnerabilities and Exposures (CVE)
+            - CVE ID
+            - Computer Emergency Response Team (CERT)
+            - Penetration testing
+            - Untargeted attacks and Advanced Persistent Threats (APT)
+            - Zero-day security vulnerabilities
+            - Remote execution and explication of security vulnerabilities
+            - Privilege escalation due to security vulnerabilities
+        - 
+        - 021.3 Ethical Behavior (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the technical, financial, and legal implications of their behavior when using digital infrastructure. This includes understanding the potential harm caused by using security tools. Furthermore, the candidate should understand common concepts in copyright and privacy laws.
+        - **Key Knowledge Areas:**
+            - Understanding the implications for others of actions taken related to security
+            - Handling information about security vulnerabilities responsibly
+            - Handling confidential information responsibly
+            - Awareness of personal, financial, ecological, and social implication of errors and outages in information technology services
+            - Awareness of legal implications of security scans, assessments, and attacks
+        - **Partial list of the used files, terms, and utilities:**
+            - Responsible Disclosure and Full Disclosure
+            - Bug Bounty programs
+            - Public and private law
+            - Penal law, privacy law, copyright law
+            - Liability, financial compensation claims
+        - ###  *022 Encryption* 
+            - [Size]();-[H3]()
+        - 022.1 Cryptography and Public Key Infrastructure (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand the concepts of symmetric and asymmetric encryption as well as other types of commonly used cryptographic algorithms. Furthermore, the candidate should understand how digital certificates are used to associate cryptographic keys with individual persons and organizations.
+        - **Key Knowledge Areas:**
+            - Understanding of the concepts of symmetric, asymmetric, and hybrid cryptography
+            - Understanding of the concept of Perfect Forward Secrecy
+            - Understanding of the concepts of hash functions, ciphers, and key exchange algorithms
+            - Understanding of the differences between end-to-end encryption and transport encryption
+            - Understanding of the concepts of Public Key Infrastructures (PKI), Certificate Authorities, and Trusted Root-CAs
+            - Understanding of the concepts X.509 certificates
+            - Understanding of how X.509 certificates are requested and issued
+            - Awareness of certificate revocation
+            - Awareness of Let’s Encrypt
+            - Awareness of important cryptographic algorithms
+        - **Partial list of the used files, terms, and utilities:**
+            - Public Key Infrastructures (PKI)
+            - Certificate Authorities
+            - Trusted Root-CAs
+            - Certificate Signing Requests (CSR) and certificates
+            - X.509 certificate fields: Subject, Issuer, Validity
+            - RSA, AES, MD5, SHA-256, Diffie–Hellman key exchange, Elliptic Curve Cryptography
+        - 
+        - 022.2 Web Encryption (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the concepts of HTTPS. This includes verifying the identity of web servers and understanding common browser error messages related to security.
+        - **Key Knowledge Areas:**
+            - Understanding of the major differences between plain text protocols and transport encryption
+            - Understanding of the concepts of HTTPS
+            - Understanding of important fields in X.509 certificates for the use with HTTPS
+            - Understanding of how X.509 certificates are associated with a specific web site
+            - Understanding of the validity checks web browsers perform on X.509 certificates
+            - Determining whether or not a website is encrypted, including common browser messages
+        - **Partial list of the used files, terms, and utilities:**
+            - HTTPS, TLS, SSL
+            - X.509 certificate fields: subject, Validity, subjectAltName
+        - 
+        - 022.3 Email Encryption (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the concepts of OpenPGP and S/MIME for email encryption. This includes handling OpenPGP keys and S/MIME certificates as well as sending and receiving encrypted emails.
+        - **Key Knowledge Areas:**
+            - Understanding of email encryption and email signatures
+            - Understanding of OpenPGP
+            - Understanding of S/MIME
+            - Understanding of the role of OpenPGP key servers
+            - Understanding of the role of certificates for S/MIME
+            - Understanding of how PGP keys and S/MIME certificates are associated with an email address
+            - Using Mozilla Thunderbird to send and receive encrypted email using OpenPGP and S/MIME
+        - **Partial list of the used files, terms, and utilities:**
+            - GnuPGP, GPG keys, key servers
+            - S/MIME and S/MIME certificates
+        - 
+        - 022.4 Data Storage Encryption (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the concepts of file encryption and storage device encryption. Furthermore, the candidate should be able to encrypt data stored on local storage devices and in the cloud.
+        - **Key Knowledge Areas:**
+            - Understanding of the concepts of data, file, and storage device encryption
+            - Using VeraCrypt to store data in an encrypted container or an encrypted storage devices
+            - Understanding the core features of BitLocker
+            - Using Cryptomator to encrypt files stored in file storage cloud services
+        - **Partial list of used files, terms, and utilities:**
+            - VeraCrypt
+            - BitLocker
+            - Cryptomator
+        - ###  *023 Device and Storage Security* 
+            - [Size]();-[H3]()
+        - 023.1 Hardware Security (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand security aspects of hardware. This includes understanding the various types of computer devices as well as their major components. Furthermore, the candidate should understand the security implications of various devices that interact with a computer as well as the security implications of physical access to a device.
+        - **Key Knowledge Areas:**
+            - Understanding of the major components of a computer
+            - Understanding of the smart devices and the Internet of Things (IoT)
+            - Understanding of the security implications of physical access to a computer
+            - Understanding of USB devices devices types, connections, and security aspects
+            - Understanding of Bluetooth devices types, connections, and security aspects
+            - Understanding of RFID devices types, connections, and security aspects
+            - Awareness of Trusted Computing
+        - **Partial list of used files, terms, and utilities:**
+            - Processors, memory, storage, network adapters
+            - Tablets, smartphones, smart tvs, routers, printers smart home, alarm, IoT devices (e.g. light bulbs, thermostats, TVs)
+            - USB
+            - Bluetooth
+            - RFID
+        - 
+        - 023.2 Application Security (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the security aspects of software. This includes securely installing software, managing software updates, and protecting software from unintended network connections.
+        - **Key Knowledge Areas:**
+            - Understanding of common types of software
+            - Understanding of various sources for applications and ways to securely procure and install software
+            - Understanding of updates for firmware, operating systems, and applications
+            - Understanding of sources for mobile applications
+            - Understanding of common security vulnerabilities in software
+            - Understanding of the concepts of local protective software
+        - **Partial list of used files, terms, and utilities:**
+            - Firmware, operating systems, applications
+            - App stores
+            - Local packet filters, endpoint firewalls, application layer firewalls
+            - Buffer overflows, SQL injections
+        - 
+        - 023.3 Malware (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand the various types of malware. This includes understanding of how they are installed on a device, what effects they cause, and how to protect against malware.
+        - **Key Knowledge Areas:**
+            - Understanding of common types of malware
+            - Understanding of the concepts of rootkit and remote access
+            - Understanding of virus and malware scanners
+            - Awareness of the risk of malware used for spying, data exfiltration, and address books copies
+        - **Partial list of used files, terms, and utilities:**
+            - Viruses, ransomware, trojan malware, adware, cryptominers
+            - Backdoors and remote access
+            - File copying, keylogging, camera, microphone hijacking
+        - 
+        - 023.4 Data Availability (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand how to ensure the availability of their data. This includes storing data on appropriate devices and services as well as creating backups.
+        - **Key Knowledge Areas:**
+            - Understanding of the importance of backups
+            - Understanding of common backup types and strategies
+            - Understanding of the security implications of backups
+            - Creating and securely storing backups
+            - Understanding of data storage, access, and sharing in cloud services
+            - Understanding of the security implications of cloud storage and shared access in the cloud
+            - Awareness of the dependence on Internet connection and the synchronization of data between cloud services and local storage
+        - **Partial list of used files, terms, and utilities**
+            - Full, differential and incremental backups
+            - Backup retention
+            - File sharing cloud services
+        - ###  *024 Network and Service Security* 
+            - [Size]();-[H3]()
+        - 024.1 Networks, Network Services and the Internet (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - The candidate should understand the concepts of computer networks and the Internet. This includes basic knowledge of various network media types, addressing, routing, and packet forwarding as well as understanding of the most important protocols used in the Internet.
+        - **Key Knowledge Areas:**
+            - Understanding of the various types of network media and network devices
+            - Understanding of the concepts of IP networks and the Internet
+            - Understanding of the concepts of routing and Internet Service Providers (ISPs)
+            - Understanding of the concepts of MAC and link-layer addresses, IP addresses, TCP and UDP ports, and DNS
+            - Understanding of the concepts of cloud computing
+        - **Partial list of used files, terms, and utilities:**
+            - Wired networks, WiFi networks, cellular networks
+            - Switches, Routers, Access Points
+            - Default Router
+            - Internet Service Provider
+            - IPv4, IPv6
+            - TCP, UDP, ICMP, DHCP
+            - DNS, DNS host names, forward DNS, reverse DNS
+            - Cloud computing
+            - Infrastructure as a Service (IaaS)
+            - Platform as a Service (PaaS)
+            - Software as a Service (SaaS)
+        - 
+        - 024.2 Network and Internet Security (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand common security aspects of using networks and the Internet. This includes understanding of common security threats against networks and networked computers, approaches for mitigation, as well as the ability to securely connect to a wired or wireless network.
+        - **Key Knowledge Areas:**
+            - Understanding of the implications of link layer access
+            - Understanding of the risks and secure use of WiFi networks
+            - Understanding of the concepts of traffic interception
+            - Understanding of common security threats in the Internet along with approaches of mitigation
+        - **Partial list of the used files, terms, and utilities:**
+            - Link layer
+            - Unencrypted and public WiFi
+            - WiFi security and encryption
+            - WEP, WPA, WPA2
+            - Traffic interception
+            - Man in the Middle attacks
+            - DoS and DDoS attacks
+            - Botnets
+            - Packet filters
+        - 
+        - 024.3 Network Encryption and Anonymity (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand the concepts of virtual private networks (VPN). This includes using a VPN provider to encrypt transmitted data. Candidates should understand recognition and anonymity concepts when using the Internet as well as anonymization tools, such as TOR.
+        - **Key Knowledge Areas:**
+            - Understanding of virtual private networks (VPN)
+            - Understanding of the concepts of end-to-end encryption
+            - Understanding anonymity and recognition in the Internet
+            - Identification due to link layer addresses and IP addresses
+            - Understanding of the concepts of proxy servers
+            - Understanding of the concepts of TOR
+            - Awareness of the Darknet
+            - Awareness of cryptocurrencies and their anonymity aspects
+        - **Partial list of used files, terms, and utilities:**
+            - Virtual Private Network (VPN)
+            - Public VPN providers
+            - Organization-specific VPN (e.g. company or university VPNs)
+            - End-to-end encryption
+            - Transfer encryption
+            - Anonymity
+            - Proxy servers
+            - TOR
+            - Hidden service
+            - .onion
+            - Blockchain
+        - ###  *025 Identity and Privacy* 
+            - [Size]();-[H3]()
+        - 025.1 Identity and Authentication (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand common concepts on how to prove their identity when using online services. This includes using a password manager, multi-factor authentication, and single sign-on, as well as being aware of common security threats regarding individual identities.
+        - **Key Knowledge Areas:**
+            - Understanding of the concepts of digital identities.
+            - Understanding of the concepts of authentication, authorization, and accounting
+            - Understanding of the characteristics of secure password (e.g. length, special characters, change frequencies, complexity)
+            - Using a password manager
+            - Understanding of the concepts of security questions and account recovery tools
+            - Understanding of the concepts of multi-factor authentication (MFA), including common factors
+            - Understanding of the concepts of single sign-on (SSO) and social media logins
+            - Understanding of the role of email accounts for IT security
+            - Understanding of how passwords are stored in online services
+            - Understanding of common attacks against passwords
+            - Monitoring personal accounts for password leaks (e.g. search engine alerts for usernames and password leak checkers)
+            - Understanding of the security aspects of online banking and credit cards
+        - **Partial list of used files, terms, and utilities:**
+            - Online and offline password managers
+            - keepass2
+            - Single sign-on (SSO)
+            - Two-factor authentication (2FA) and multi-factor authentication (MFA)
+            - One-time passwords (OTP), time-based one-time passwords (TOTP)
+            - Authenticator applications
+            - Password hashing and salting
+            - Brute force attacks, directory attacks, rainbow table attacks
+        - 
+        - 025.2 Information Confidentiality and Secure Communication (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand how to keep confidential information secret and ensure the confidentiality of digital communication. This includes recognizing attempts of phishing and social engineering, as well as using secure means of communication.
+        - **Key Knowledge Areas:**
+            - Understanding the implications and risks of data leaks and intercepted communication
+            - Understanding of phishing and social engineering and scamming
+            - Understanding the concepts of email spam filters
+            - Securely handling of received email attachments
+            - Sharing information securely and responsibly using email cloud shares and messaging services
+            - Using encrypted instant messaging
+        - **Partial list of the used files, terms, and utilities:**
+            - Phishing and social engineering
+            - Identity theft
+            - Scamming and scareware
+            - Email spam, email spam filtering
+            - Non-disclosure agreements (NDA)
+            - Information classification
+        - 
+        - 025.3 Privacy Protection (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the importance of the confidentiality of personal information. This includes managing privacy settings in various online services and social media as well as being aware of common security threats regarding personal information.
+        - **Key Knowledge Areas:**
+            - Understanding of the importance of personal information
+            - Understanding of how personal information can be used for a malicious purpose
+            - Understanding of the concepts of information gathering, profiling, and user tracking
+            - Managing profile privacy settings on social media platforms and online services
+            - Understanding of the risk of publishing personal information
+            - Understanding of the rights regarding personal information (e.g. GDPR)
+        - **Partial list of the used files, terms, and utilities:**
+            - Stalking and cybermobbing
+            - HTTP cookies, browser fingerprinting, user tracking
+            - Script blockers and ad blockers in web browsers
+            - Profiles in online services and social media
+            - Contacts and privacy settings in social media
+    - LPI Web Development Essentials #LPI #linux
+        - ###  *031 Software Development and Web Technologies* 
+            - [Size]();-[H3]()
+        - 031.1 Software Development Basics (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should be familiar with the most essential concepts of software development and be aware of important programming languages.
+        - **Key Knowledge Areas:**
+            - Understand what source code is
+            - Understand the principles of compilers and interpreters
+            - Understand the concept of libraries
+            - Understand the concepts of functional, procedural and object-oriented programming
+            - Awareness of common features of source code editors and integrated development environments (IDE)
+            - Awareness of version control systems
+            - Awareness of software testing
+            - Awareness of important programming languages (C, C++, C#, Java, JavaScript, Python, PHP)
+        - 
+        - 031.2 Web Application Architecture (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand common standards in web development technology and architecture.
+        - **Key Knowledge Areas:**
+            - Understand the principle of client and server computing
+            - Understand the role of web browsers and be aware of commonly used web browsers
+            - Understand the role of web servers and application servers
+            - Understand common web development technologies and standards
+            - Understand the principles of APIs
+            - Understand the principle of relational and non-relational (NoSQL) databases
+            - Awareness of commonly used open source database management systems
+            - Awareness of REST and GraphQL
+            - Awareness of single-page applications
+            - Awareness of web application packaging
+            - Awareness of WebAssembly
+            - Awareness of content management systems
+        - **Files, terms, and utilities:**
+            - Chrome, Edge, Firefox, Safari, Internet Explorer
+            - HTML, CSS, JavaScript
+            - SQLite, MySQL, MariaDB, PostgreSQL
+            - MongoDB, CouchDB, Redis
+        - 
+        - 031.3 HTTP Basics (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should be familiar with the basics of HTTP. This includes understanding HTTP headers, content types, caching, and status codes. Furthermore, the candidate should understand the principles of cookies and their role for session handling and be aware of advanced HTTP features.
+        - **Key Knowledge Areas:**
+            - Understand HTTP GET and POST methods, status codes, headers and content types
+            - Understand the difference between static and dynamic content
+            - Understand HTTP URLs
+            - Understand how HTTP URLs are mapped to file system paths
+            - Upload files to a web server's document root
+            - Understand caching
+            - Understand cookies
+            - Awareness of sessions and session hijacking
+            - Awareness of commonly used HTTP servers
+            - Awareness of HTTPS and TLS
+            - Awareness of web sockets
+            - Awareness of virtual hosts
+            - Awareness of common HTTP servers
+            - Awareness of network bandwidth and latency requirements and limitations
+        - **Files, terms, and utilities:**
+            - GET, POST
+            - 200, 301, 302, 401, 403, 404, 500
+            - Apache HTTP Server ("httpd"), NGINX
+        - ###  *032 HTML Document Markup* 
+            - [Size]();-[H3]()
+        - 032.1 HTML Document Anatomy (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the anatomy and syntax of an HTML document. This includes creating basic HTML documents.
+        - **Key Knowledge Areas:**
+            - Create a simple HTML document
+            - Understand the role of HTML
+            - Understand the HTML skeleton
+            - Understand the HTML syntax (tags, attributes, comments)
+            - Understand the HTML head
+            - Understand meta tags
+            - Understand character encoding
+        - **Files, terms, and utilities:**
+            - <!DOCTYPE html>
+            - <html>
+            - <head>
+            - <body>
+            - <meta>, including the charset (UTF-8), name and content attributes
+        - 
+        - 032.2 HTML Semantics and Document Hierarchy (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should be able to create HTML documents with a semantic structure.
+        - **Key Knowledge Areas:**
+            - Create markup for contents in an HTML document
+            - Understand the hierarchical HTML text structure
+            - Differentiate between block and inline HTML elements
+            - Understand important semantic structural HTML elements
+        - **Files, terms, and utilities:**
+            - <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+            - <p>
+            - <ul>, <ol>, <li>
+            - <dl>, <dt>, <dd>
+            - <pre>
+            - <blockquote>
+            - <strong>, <em>, <code>
+            - <b>, <i>, <u>
+            - <span>
+            - <div>
+            - <main>, <header>, <nav>, <section>, <footer>
+        - 
+        - 032.3 HTML References and Embedded Resources (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should be able to link an HTML document with other documents and embed external content, such as images, videos and audio in an HTML document.
+        - **Key Knowledge Areas:**
+            - Create links to external resources and page anchors
+            - Add images to HTML documents
+            - Understand key properties of common media file formats, inlcuding PNG, JPG and SVG
+            - Awareness of iframes
+        - **Files, terms, and utilities:**
+            - id attribute
+            - <a>, including the href and target (_blank, _self, _parent, _top) attributes
+            - <img>, including the src and alt attributes
+        - 
+        - 032.4 HTML Forms (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should be able to create simple HTML forms containing input elements of various types.
+        - **Key Knowledge Areas:**
+            - Create simple HTML forms
+            - Understand HTML form methods
+            - Understand HTML input elements and types
+        - **Files, terms, and utilities:**
+            - <form>, including the method (get, post), action, and enctype attributes
+            - <input>, including the type (text, email, password, number, date, file, range, radio, checkbox, hidden) attribute
+            - <button>, including the type (submit, reset, hidden, button) attribute
+            - <textarea>
+            - common form element attributes (name, value, id)
+            - <label>, including the for attribute
+        - ###  *033 CSS Content Styling* 
+            - [Size]();-[H3]()
+        - 033.1 CSS Basics (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should understand the various ways to style an HTML document using CSS. This includes the structure and syntax of CSS rules.
+        - **Key Knowledge Areas:**
+            - Embedding CSS within an HTML document
+            - Understand the CSS syntax
+            - Add comments to CSS
+            - Awareness of accessibility features and requirements
+        - **Files, terms, and utilities:**
+            - HTML style and type (text/css) attributes
+            - <style>
+            - <link>, including the rel (stylesheet), type (text/css) and src attributes
+            - ;
+            - /*,*/
+        - 
+        - 033.2 CSS Selectors and Style Application (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should be able to use selectors in CSS and understand how CSS rules are applied to elements within an HTML document.
+        - **Key Knowledge Areas:**
+            - Use selectors to apply CSS rules to elements
+            - Understand CSS pseudo-classes
+            - Understand rule order and precedence in CSS
+            - Understand inheritance in CSS
+        - **Files, terms, and utilities:**
+            - element; .class; #id
+            - a, b; a.class; a b;
+            - :hover, :focus
+            - !important
+        - 
+        - 033.3 CSS Styling (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should use CSS to add simple styles to the elements of an HTML document.
+        - **Key Knowledge Areas:**
+            - Understand fundamental CSS properties
+            - Understand units commonly used in CSS
+        - **Files, terms, and utilities:**
+            - px, %, em, rem, vw, vh
+            - color, background, background-*, font, font-*, text-*, list-style, line-height
+        - 
+        - 033.4 CSS Box Model and Layout (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the CSS box model. This includes defining the position of elements on a website. Additionally, the candidate should understand the document flow.
+        - **Key Knowledge Areas:**
+            - Define the dimension, position and alignment of elements in a CSS layout
+            - Specify how text flows around other elements
+            - Understand the document flow
+            - Awareness of the CSS grid
+            - Awareness of responsive web design
+            - Awareness of CSS media queries
+        - **Files, terms, and utilities:**
+            - width, height, padding, padding-*, margin, margin-*, border, border-*
+            - top, left, right, bottom
+            - display: block | inline | flex | inline-flex | none
+            - position: static | relative | absolute | fixed | sticky
+            - float: left | right | none
+            - clear: left | right | both | none
+        - ###  *034 JavaScript Programming* 
+            - [Size]();-[H3]()
+        - 034.1 JavaScript Execution and Syntax (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should be able to execute JavaScript files and inline code from an HTML document and understand basic JavaScript syntax.
+        - **Key Knowledge Areas:**
+            - Run JavaScript within an HTML document
+            - Understand the JavaScript syntax
+            - Add comments to JavaScript code
+            - Access the JavaScript console
+            - Write to the JavaScript console
+        - **Files, terms, and utilities:**
+            - <script>, including the type (text/javascript) and src attributes
+            - ;
+            - //, /* */
+            - console.log
+        - 
+        - 034.2 JavaScript Data Structures (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should be able to use variables in JavaScript code. This includes understanding values and data types. Furthermore, the candidate should understand assignment operators and type conversion and be aware of variable scope.
+        - **Key Knowledge Areas:**
+            - Define and use variables and constants
+            - Understand data types
+            - Understand type conversion/coercion
+            - Understand arrays and objects
+            - Awareness of the variable scope
+        - **Files, terms, and utilities:**
+            - =, +, -, *, /, %, --, ++, +=, -=, *=, /=
+            - var, let, const
+            - boolean, number, string, symbol
+            - array, object
+            - undefined, null, NaN
+        - 
+        - 034.3 JavaScript Control Structures and Functions (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - The candidate should be able to use control structures in JavaScript code. This includes using comparison operators. Furthermore, the candidate should be able to write simple functions and understand function parameters and return values.
+        - **Key Knowledge Areas:**
+            - Understand truthy and falsy values
+            - Understand comparison operators
+            - Understand the difference between loose and strict comparison
+            - Use conditionals
+            - Use loops
+            - Define custom functions
+        - **Files, terms, and utilities:**
+            - if, else if, else
+            - switch, case, break
+            - for, while, break, continue
+            - function, return
+            - →, !=, <, <=, >, >=
+            - →=, !↔
+        - 
+        - 034.4 JavaScript Manipulation of Website Content and Styling (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the HTML DOM. This includes manipulating HTML elements and CSS properties through the DOM using JavaScript as well as using DOM events in simple scenarios.
+        - **Key Knowledge Areas:**
+            - Understand the concept and structure of the DOM
+            - Change the contents and properties of HTML elements through the DOM
+            - Change the CSS styling of HTML elements through the DOM
+            - Trigger JavaScript functions from HTML elements
+        - **Files, terms, and utilities:**
+            - document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(),document.querySelector(), document.querySelectorAll()
+            - innerHTML, setAttribute(), removeAttribute() properties and methods of DOM elements
+            - classList, classList.add(), classList.remove(), classList.toggle() properties and methods of DOM elements
+            - onClick, onMouseOver, onMouseOut attributes of HTML elements
+        - ###  *035 NodeJS Server Programming* 
+            - [Size]();-[H3]()
+        - 035.1 NodeJS Basics (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should understand the basics of NodeJS. This includes running a local development server as well as understanding the concept of NPM modules.
+        - **Key Knowledge Areas:**
+            - Understand the concepts of Node.js
+            - Run a NodeJS application
+            - Install NPM packages
+        - **Files, terms, and utilities:**
+            - node [file.js]
+            - npm init
+            - npm install [module_name]
+            - package.json
+            - node_modules
+        - 
+        - 035.2 NodeJS Express Basics (weight: 4)
+            - **Weight**
+                - 4
+            - **Description**
+                - The candidate should be able to create a simple dynamic website with the Express web framework. This includes defining simple Express routes as well as serving dynamic files through the template engine EJS.
+        - **Key Knowledge Areas:**
+            - Define routes to static files and EJS templates
+            - Serve static files through Express
+            - Serve EJS templates through Express
+            - Create simple, non-nested EJS templates
+            - Use the request object to access HTTP GET and POST parameters and process data submitted through HTML forms
+            - Awareness of user input validation
+            - Awareness of cross-site Scripting (XSS)
+            - Awareness of cross-site request forgery (CSRF)
+        - **Files, terms, and utilities:**
+            - express and body-parser node module
+            - Express app object
+            - app.get(), app.post()
+            - res.query, res.body
+            - ejs node module
+            - res.render()
+            - <% … %>, <%= … %>, <%# … %>, <%- … %>
+            - views/
+        - 
+        - 035.3 SQL Basics (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should be able to create individual tables in an SQLite database and add, modify and delete data using SQL. Furthermore, the candidate should be able to retrieve data from individual tables and execute SQL queries from NodeJS. This does not include referencing or combining data between multiple tables.
+        - **Key Knowledge Areas:**
+            - Establish a database connection from NodeJS
+            - Retrieve data from the database in NodeJS
+            - Execute SQL queries from NodeJS
+            - Create simple SQL queries excluding joins
+            - Understand primary keys
+            - Escape variables used in SQL queries
+            - Awareness of SQL injections
+        - **Files, terms, and utilities:**
+            - sqlite3 NPM module
+            - Database.run(), Database.close(), Database.all(), Database.get(), Database.each()
+            - CREATE TABLE
+            - INSERT, SELECT, DELETE, UPDATE
+        - --------------------- Portal ---------------------query:[LPI Web Development Essentials](Linux%20Certifictions/LPI/LPI%20Web%20Development%20Essentials.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPI Open Source Essentials #LPI #linux
+        - ###  *051 Software Fundamentals* 
+            - [Size]();-[H3]()
+        - 051.1 Software Components (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the main characteristics of software. This includes the distinction between hardware and software, the role of source code, as well as the concepts of libraries, static and dynamic linking, and compiling and interpreting source code.
+        - **Key Knowledge Areas:**
+            - Understanding the concept of source code and code execution
+            - Understanding the concept of compilers and interpreters
+            - Understanding the concept of software libraries
+        - **Partial list of the used files, terms, and utilities:**
+            - Source code
+            - Executable programs
+            - Byte code
+            - Machine code
+            - Compiler
+            - Linker
+            - Interpreter
+            - Runtime virtual machine
+            - Algorithm
+            - Software libraries
+            - Static and dynamic linking
+        - 
+        - 051.2 Software Architecture (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the main aspects of common software architectures. This includes understanding the concept of client and server computing, thin and fat clients as well as the role of web applications, single-page applications and application programming interfaces.
+        - **Key Knowledge Areas:**
+            - Understanding the concepts of client and server computing
+            - Understanding the concepts of thin and fat clients
+            - Understanding the concepts of monoliths and microservices and their main differences
+            - Understanding the concepts of Application Programming Interfaces (APIs)
+            - Understanding the concept of software components and their integration or separation (services, modules, APIs)
+        - **Partial list of the used files, terms, and utilities:**
+            - Clients and servers
+            - Thin clients and fat clients
+            - Web applications
+            - Single-page applications
+            - Monolithic architectures
+            - Microservice architectures
+            - Application Programming Interfaces (APIs)
+            - RESTful APIs
+        - 
+        - 051.3 On-Premises and Cloud Computing (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should understand the main options for running software. This includes the distinction between software run on-premise and software run remotely, as well as the various kinds of cloud computing.
+        - **Key Knowledge Areas:**
+            - Understanding the concepts of on-premise and cloud computing
+            - Understanding common cloud operation models
+            - Understanding common types of cloud services
+            - Understanding the major benefits and risks of cloud computing and on-premise IT infrastructure
+        - **Partial list of the used files, terms, and utilities:**
+            - Cloud computing
+            - On-premises IT infrastructure
+            - Data center
+            - Public, private and hybrid cloud
+            - Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS)
+            - Cost models
+            - Security
+            - Data ownership
+            - Service availability
+        - ###  *052 Open Source Software Licenses* 
+            - [Size]();-[H3]()
+        - 052.1 Concepts of Open Source Software Licenses (weight: 3)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the principle and philosophy underlying open source software. This includes understanding the concepts of software licenses, as well as the history of open source and the various usages of software that may be affected by different software licenses.
+        - **Key Knowledge Areas:**
+            - Understanding the definitions of open source software and free software
+            - Awareness of other kinds of monetarily-free software
+            - Awareness of important events in the history of open source
+            - Understanding what a license is and what rights licenses commonly manage
+            - Understanding how existing software can be used to create derivative works
+            - Understanding license compatibilities and incompatibilities
+            - Understanding dual licensing and conditional licensing
+            - Understanding consequences of license violations
+            - Understanding the principles of copyright law and patent law and how they are affected by open source software licenses
+        - **Partial list of the used files, terms, and utilities:**
+            - Free Software Foundation (FSF) free software definition
+            - Open Source Initiative (OSI) open source software definition
+            - Licenses
+            - Contracts
+            - Public domain software
+            - Freeware
+            - Shareware
+            - License stewards
+            - Permissions to use, modify and distribute code and software
+            - Derivative works and code reuse
+            - Closed source / proprietary software
+            - Paid distribution
+            - Modified and unmodified software distribution
+            - Hosting software as a paid service
+            - License compatibility
+            - Dual and multi licensing
+            - Conditional licensing
+            - Software patents
+            - Explicit and implicit patent license grants
+        - 
+        - 052.2 Copyleft Software Licenses (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand important properties of commonly used copyleft software licenses. This includes understanding the permissions granted and obligations imposed by the licenses, as well as license compatibility.
+        - **Key Knowledge Areas:**
+            - Understanding the concept of copyleft software licenses
+            - Understanding the rights granted by copyleft software licenses
+            - Understanding the obligations created by copyleft software licenses
+            - Understanding the main properties of common copyleft software licenses
+            - Understanding the compatibility of copyleft software licenses with other software licenses
+            - Awareness of the terms 'reciprocal license' and 'restrictive license'
+        - **Partial list of the used files, terms, and utilities:**
+            - Copyleft
+            - Distributing
+            - Conveying
+            - Tivoisierung
+            - GNU General Public License, version 2.0 (GPLv2)
+            - GNU General Public License, version 3.0 (GPLv3)
+            - GNU Lesser General Public License, Version 2 (LGPLv2)
+            - GNU Lesser General Public License, Version 3 (LGPLv3)
+            - GNU Affero General Public License, Version 3 (AGPLv3)
+            - Eclipse Public License (EPL), version 1.0
+            - Eclipse Public License (EPL), version 2.0
+            - Mozilla Public Licence (MPL)
+        - 
+        - 052.3 Permissive Software Licenses (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand important properties of commonly used permissive software licenses. This includes understanding the permissions granted and obligations imposed by the licenses, as well as license compatibility.
+        - **Key Knowledge Areas:**
+            - Understanding the concept of permissive software licenses
+            - Understanding the rights granted by permissive software licenses
+            - Understanding the obligations created by permissive software licenses
+            - Understanding the main properties of common permissive software licenses
+            - Understanding the compatibility of permissive software licenses with other licenses
+        - **Partial list of the used files, terms, and utilities:**
+            - 2-Clause BSD License
+            - 3-Clause BSD License
+            - MIT License
+            - Apache License, version 2.0
+        - ###  *053 Open Content Licenses* 
+            - [Size]();-[H3]()
+        - 053.1 Concepts of Open Content Licenses (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important aspects of open content licenses. This includes the various kinds of consent, as well as the principles of existing open content licenses.
+        - **Key Knowledge Areas:**
+            - Understanding types of open content
+            - Understanding what constitutes content that is subject to copyright
+            - Understanding derivative works of copyrighted materials
+            - Understanding the need for open content licenses
+            - Awareness of trademarks
+        - **Partial list of the used files, terms, and utilities:**
+            - Documentation
+            - Images
+            - Artwork
+            - Maps
+            - Music
+            - Videos
+            - Hardware designs and specifications
+            - Databases
+            - Data streams
+            - Data feeds
+        - 
+        - 053.2 Creative Commons Licenses (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important properties of Creative Commons licenses. This includes understanding the permissions granted and obligations imposed by the licenses, as well as license compatibility.
+        - **Key Knowledge Areas:**
+            - Understanding the concept of Creative Commons licenses
+            - Understand the Creative Commons license types and their combinations
+            - Understanding the rights granted by Creative Commons licenses
+            - Understanding the obligations created by Creative Commons licenses
+        - **Partial list of the used files, terms, and utilities:**
+            - Public Domain Dedication (CC0)
+            - Creative Commons Attribution (CC BY)
+            - Creative Commons Attribution-ShareAlike (CC BY-SA)
+            - Creative Commons Attribution-NonCommercial (CC BY-NC)
+            - Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)
+            - Creative Commons Attribution-NoDerivatives (CC BY-ND)
+            - Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)
+        - 
+        - 053.3 Other Open Content Licenses (weight: 1)
+            - **Weight**
+                - 1
+            - **Description**
+                - The candidate should understand important properties of open content licenses other than Creative Commons. This includes understanding the permissions granted and obligations imposed by the licenses, as well as license compatibility.
+        - **Key Knowledge Areas:**
+            - Understanding licensing for documentation
+            - Understanding licensing for data sets and databases
+            - Understanding the rights granted by open content licenses
+            - Understanding the obligations created by open content licenses
+        - **Partial list of the used files, terms, and utilities:**
+            - GNU Free Documentation License, version 1.3 (GFDL)
+            - Open Data Commons Open Database License (ODbL)
+            - Community Data License Agreement – Permissive, version 1.0 (CDLA)
+            - Community Data License Agreement – Sharing, version 1.0 (CDLA)
+            - Open Access
+        - ###  *Topic 054 Open Source Business Models (weight: 7)* 
+            - [Size]();-[H3]()
+        - 054.1 Software Development Business Models (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important aspects of software development business models related to open source software.
+        - **Key Knowledge Areas:**
+            - Understanding goals and reasons to release software or content under an open license
+            - Understanding common business models and revenue streams for organizations developing open source software and open content
+            - Understanding the implications of using open source software as components in larger technology products and services
+            - Understanding the impact licenses have on a software development business models
+            - Understanding considerations of open source software from a client's perspective
+            - Awareness of cost structures and investments needed for open source software development business models
+        - **Partial list of the used files, terms, and utilities:**
+            - Paid development
+            - Open-core and paid add-ons
+            - Freemium
+            - Enterprise and community versions
+            - Self-hosted distribution
+            - Subscriptions
+            - Customer support
+        - 
+        - 054.2 Service Provider Business Models (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important aspects of service provider business models related to open source software.
+        - **Key Knowledge Areas:**
+            - Understanding common business models and revenue streams for organizations providing services related to open source software and open content
+            - Understanding the impact licenses have on a service provider business models
+            - Understanding service level objectives and service level agreements
+            - Understanding the need for security and privacy protection
+            - Awareness of cost structures and investments needed for open source software service business models
+        - **Partial list of the used files, terms, and utilities:**
+            - Hosted services
+            - Clouds
+            - Consulting
+            - Training
+            - Hardware sales
+            - User support
+            - Terms of Service (ToS)
+            - Service Level Objectives (SLO)
+            - Service Level Agreements (SLA)
+            - Data processing agreements
+        - 
+        - 054.3 Compliance and Risk Mitigation (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand important legal aspects of developing and using open source software in a professional environment. This includes license compliance, legal compliance, asset protection, privacy law and aspects related to entrepreneurship.
+        - **Key Knowledge Areas:**
+            - Understanding how to ensure license compliance
+            - Understanding how to maintain information about licenses
+            - Understanding the concept of Open Source Program Offices
+            - Understanding the implications of copyright, patents and trademarks on open source business models
+            - Awareness of legal risks related to open source business models
+            - Awareness of financial risks related to open source business models
+        - **Partial list of the used files, terms, and utilities:**
+            - Software Composition Analysis (SCA)
+            - Software Bill Of Materials (SBOM)
+            - Software Package Data Exchange (SPDX)
+            - OWASP CycloneDX
+            - Open Source Program Offices (OSPO)
+            - Product warranty
+            - Product liability
+            - Export regulations
+            - Impact of mergers and acquisitions
+        - ###  *055 Project Management* 
+            - [Size]();-[H3]()
+        - 055.1 Software Development Models (weight: 3)
+            - **Weight**
+                - 3
+            - **Description**
+                - The candidate should understand important aspects of managing an open source software development project. This includes common project management methodologies for software development, including project roles.
+        - **Key Knowledge Areas:**
+            - Understanding the relevance and goals of project management in software development
+            - Basic understanding of waterfall software development
+            - Basic understanding of agile software development, including Scrum and Kanban
+            - Understanding the concept of DevOps
+        - **Partial list of the used files, terms, and utilities:**
+            - Phases in waterfall projects (requirement engineering, business analysis, software design, development, testing, operations)
+            - Roles in waterfall projects (project managers, business analysts, software architects, developers, testers)
+            - Organization of Scrum projects (sprints and sprint planning, product and sprint backlog, daily scrums, sprint review and sprint retrospective)
+            - Roles in Scrum projects (product owners, developers, scrum masters)
+            - Organization of Kanban projects (Kanban boards)
+        - 
+        - 055.2 Product Management / Release Management (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important aspects of managing an open source software project. This includes defining milestones, releases and versioning.
+        - **Key Knowledge Areas:**
+            - Understanding common release types
+            - Understanding software versioning and reasons for major or minor releases
+            - Understanding the lifecycle of a software product, from its planning, development and release to its retirement
+            - Understanding the documentation for product versions
+        - **Partial list of the used files, terms, and utilities:**
+            - Alpha and beta versions
+            - Release candidates
+            - Feature freeze
+            - Major and minor releases
+            - Semantic versioning
+            - Roadmaps and milestones
+            - Changelogs
+            - Long Term Support (LTS)
+            - End of Life (EOL)
+            - Backward compatibility
+        - 
+        - 055.3 Community Management (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand important aspects of open source communities. This includes common roles, procedures and documents used to organize open source software development projects.
+        - **Key Knowledge Areas:**
+            - Understanding roles in open source projects
+            - Understanding common tasks in open source projects
+            - Understanding the various kinds of contributions to open source projects
+            - Understanding the various kinds of contributors to open source projects
+            - Understanding the role of organizations in maintaining open source projects
+            - Understanding the transfer of rights from individuals to an organization maintaining a project
+            - Understanding rules and policies in open source projects
+            - Understanding attribution and transparency on contributions
+            - Understanding aspects of diversity, equity, inclusivity and non-discrimination
+        - **Partial list of the used files, terms, and utilities:**
+            - Software development
+            - Documentation
+            - Designs and artwork
+            - User support
+            - Developers
+            - Release managers
+            - Users
+            - Project leads and benevolent dictators
+            - Individuals and corporations
+            - Enthusiasts and professionals
+            - Core team members and occasional contributors
+            - Code and documentation contributions
+            - Bug reporting
+            - Forks
+            - Foundations and sponsors
+            - Contribution agreements
+            - Developer Certificates of Origin (DCO)
+            - Coding guidelines
+            - Codes of conduct
+        - ###  *056 Collaboration and Communication* 
+            - [Size]();-[H3]()
+        - 056.1 Development Tools (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the main categories and features of tools commonly used to develop software.
+        - **Key Knowledge Areas:**
+            - Understanding common software development tools
+            - Understanding common deployment environments
+            - Understanding common types of software testing
+            - Understanding the concepts of Continuous Integration and Continuous Delivery (CI/CD)
+        - **Partial list of the used files, terms, and utilities:**
+            - Integrated Development Environments (IDEs)
+            - Linters
+            - Compilers
+            - Debuggers
+            - Reverse Engineering
+            - Refactoring
+            - Unit testing
+            - Integration testing
+            - Acceptance testing
+            - Performance testing
+            - Smoke testing
+            - Regression testing
+            - Production, staging and development systems
+            - Local development systems
+            - Remote development systems
+            - CI/CD pipelines
+        - 
+        - 056.2 Source Code Management (weight: 3)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the main concepts of source code management. This includes the concept of source code repositories as well as branches, tags, forks and merges.
+        - **Key Knowledge Areas:**
+            - Understanding source code repositories (public and private)
+            - Understanding the principles of source code management and repository organization
+            - Awareness of common SCM systems (Git, Subversion, CVS)
+            - Awareness of the terms Version Control System (VCS), Revision Control System and Source Code Management systems (SCM)
+        - **Partial list of the used files, terms, and utilities:**
+            - Source code repositories
+            - Commits, Branches and Tags
+            - Feature, development and release branches
+            - Subrepositories
+            - Code merges
+        - 
+        - 056.3 Communication and Collaboration Tools (weight: 2)
+            - **Weight**
+                - 2
+            - **Description**
+                - The candidate should understand the main categories and features of tools commonly used for communication and collaboration in software development projects.
+        - **Key Knowledge Areas:**
+            - Understanding common tools for communication
+            - Understanding common ways to capture and secure knowledge
+            - Understanding common tools for information management and publication
+            - Understanding common types of documentation
+            - Understanding common collaboration features of source code management platforms
+            - Understanding the concepts of stand-alone, federated and centralized managed applications and platforms
+        - **Partial list of the used files, terms, and utilities:**
+            - Instant messengers
+            - Chat platforms
+            - Mailing lists
+            - Newsletters
+            - Issue trackers and bug trackers
+            - Bug reports
+            - Merge requests and pull requests
+            - Helpdesk and ticketing systems
+            - Wikis
+            - Document Management Systems (DMS)
+            - Documentation websites
+            - Product websites
+            - Content Management Systems (CMS)
+            - Architecture documentation
+            - User documentation
+            - Administrator documentation
+            - Developer documentation
+        - --------------------- Portal ---------------------query:[LPI Open Source Essentials](Linux%20Certifictions/LPI/LPI%20Open%20Source%20Essentials.md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - LPI #linux
+        - --------------------- Portal ---------------------query:#[LPI](Linux%20Certifictions/LPI/LPI.md)
+            - LPIC-1 - 101-500 and 102-500 #LPI #linux
+            - LPI Certifications #LPI #linux
+            - LPIC-2 - 201-450 and 202-450 #LPI #linux
+            - LPIC-3 Mixed Environments #LPI #linux
+            - LPIC-3 Security  #LPI #linux
+            - LPIC-3 Virtualization and Containerization #LPI #linux
+            - LPIC-3 High Availability and Storage Clusters #LPI #linux
+            - LPI DevOps Tools Engineer #LPI #linux
+            - LPI BSD Specialist #LPI #linux
+            - LPI Security Essentials  #LPI #linux
+            - LPI Web Development Essentials #LPI #linux
+            - LPI Open Source Essentials #LPI #linux
+- RedHat #linux
+    - Red Hat Certified System Administrator (RHCSA)
+        - Site: [Red Hat Certified System Administrator (RHCSA)](https://www.redhat.com/en/services/certification/rhcsa) 
+        - Overview:
+            - An IT professional who has earned the Red Hat Certified System Administrator (RHCSA®) is able to perform the core system administration skills required in Red Hat Enterprise Linux environments. The credential is earned after successfully passing the Red Hat Certified System Administrator (RHCSA) Exam (EX200).
+        - Skills
+            - ## Prove your skills and knowledge
+                - [Size]();-[H2]()
+            - A Red Hat® Certified System Administrator (RHCSA) is able to perform the following tasks:
+                - Understand and use essential tools for handling files, directories, command-line environments, and documentation
+                - Create simple shell scripts
+                - Operate running systems, including booting into different run levels, identifying processes, starting and stopping virtual machines, and controlling services
+                - Configure local storage using partitions and logical volumes
+                - Create and configure file systems and file system attributes, such as permissions, encryption, access control lists, and network file systems
+                - Deploy, configure, and maintain systems, including software installation, update, and core services
+                - Manage users and groups
+                - Manage security, including basic firewall and SELinux configuration
+                - Perform basic container management
+        - Exams
+            - ## Test your skills and knowledge
+                - [Size]();-[H2]()
+            - [EX200 - Red Hat Certified System Administrator (RHCSA) exam](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam)
+            - The performance-based Red Hat Certified System Administrator (RHCSA) exam (EX200) tests your knowledge and skill in areas of system administration common across a wide range of environments and deployment scenarios. You must be an RHCSA to earn a [Red Hat Certified Engineer (RHCE®)](https://www.redhat.com/en/services/certification/rhce) certification.
+        - Training
+            - ## The best way to learn is to do
+                - [Size]();-[H2]()
+            - We recommend these courses to help you prepare to become a Red Hat Certified System Administrator.
+            - **For Windows system administrators or candidates with minimal experience with Red Hat Enterprise Linux:**
+                - [Running Containers with Red Hat Technical Overview (RH065)](https://www.redhat.com/en/services/training/rh065-running-containers-red-hat-technical-overview)
+                - [Red Hat System Administration I (RH124)](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i)
+                - [Red Hat System Administration II (RH134)](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii)
+            - **For Linux or UNIX administrators:**
+                - [RHCSA Rapid Track course with exam (RH200)](https://www.redhat.com/en/services/training/rh200-red-hat-certified-system-administrator-rapid-track-course-exam)
+            - **For candidates seeking an introductory course on container management:**
+                - [Running Containers with Red Hat Technical Overview (RH065)](https://www.redhat.com/en/services/training/rh065-running-containers-red-hat-technical-overview)
+        - EX200 Objectives:
+            - ## Study points for the exam
+                - [Size]();-[H2]()
+                - RHCSA exam candidates should be able to accomplish the tasks below without assistance. These have been grouped into several categories.
+            - **Understand and use essential tools**
+                - Access a shell prompt and issue commands with correct syntax
+                - Use input-output redirection 
+                    - (>, > >, |, 2>, etc)
+                    - need to fix
+                - Use grep and regular expressions to analyze text
+                - Access remote systems using SSH
+                - Log in and switch users in multiuser targets
+                - Archive, compress, unpack, and uncompress files using tar, gzip, and bzip2
+                - Create and edit text files
+                - Create, delete, copy, and move files and directories
+                - Create hard and soft links
+                - List, set, and change standard ugo/rwx permissions
+                - Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+            - **Create simple shell scripts**
+                - Conditionally execute code (use of: if, test, [], etc.)
+                - Use Looping constructs (for, etc.) to process file, command line input
+                - Process script inputs ($1, $2, etc.)
+                - Processing output of shell commands within a script
+            - **Operate running systems**
+                - Boot, reboot, and shut down a system normally
+                - Boot systems into different targets manually
+                - Interrupt the boot process in order to gain access to a system
+                - Identify CPU/memory intensive processes and kill processes
+                - Adjust process scheduling
+                - Manage tuning profiles
+                - Locate and interpret system log files and journals
+                - Preserve system journals
+                - Start, stop, and check the status of network services
+                - Securely transfer files between systems
+            - **Configure local storage**
+                - List, create, delete partitions on MBR and GPT disks
+                - Create and remove physical volumes
+                - Assign physical volumes to volume groups
+                - Create and delete logical volumes
+                - Configure systems to mount file systems at boot by universally unique ID (UUID) or label
+                - Add new partitions and logical volumes, and swap to a system non-destructively
+            - **Create and configure file systems**
+                - Create, mount, unmount, and use vfat, ext4, and xfs file systems
+                - Mount and unmount network file systems using NFS
+                - Configure autofs
+                - Extend existing logical volumes
+                - Create and configure set-GID directories for collaboration
+                - Diagnose and correct file permission problems
+            - **Deploy, configure, and maintain systems**
+                - Schedule tasks using at and cron
+                - Start and stop services and configure services to start automatically at boot
+                - Configure systems to boot into a specific target automatically
+                - Configure time service clients
+                - Install and update software packages from Red Hat Network, a remote repository, or from the local file system
+                - Modify the system bootloader
+            - **Manage basic networking**
+                - Configure IPv4 and IPv6 addresses
+                - Configure hostname resolution
+                - Configure network services to start automatically at boot
+                - Restrict network access using firewall-cmd/firewall
+            - **Manage users and groups**
+                - Create, delete, and modify local user accounts
+                - Change passwords and adjust password aging for local user accounts
+                - Create, delete, and modify local groups and group memberships
+                - Configure superuser access
+            - **Manage security**
+                - Configure firewall settings using firewall-cmd/firewalld
+                - Manage default file permissions
+                - Configure key-based authentication for SSH
+                - Set enforcing and permissive modes for SELinux
+                - List and identify SELinux file and process context
+                - Restore default file contexts
+                - Manage SELinux port labels
+                - Use boolean settings to modify system SELinux settings
+                - Diagnose and address routine SELinux policy violations
+            - **Manage containers**
+                - Find and retrieve container images from a remote registry
+                - Inspect container images
+                - Perform container management using commands such as podman and skopeo
+                - Perform basic container management such as running, starting, stopping, and listing running containers
+                - Run a service inside a container
+                - Configure a container to start automatically as a systemd service
+                - Attach persistent storage to a container
+        - --------------------- Portal ---------------------query:[Red Hat Certified System Administrator (RHCSA)](Linux%20Certifictions/RedHat/Red%20Hat%20Certified%20System%20Administrator%20(RHCSA).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --     - Red Hat Certified Engineer (RHCE) #linux
+        - Site: [Red Hat Certified Engineer (RHCE)](https://www.redhat.com/en/services/certification/rhce) 
+        - A Red Hat® Certified Engineer (RHCE®) is a [Red Hat Certified System Administrator (RHCSA)](https://www.redhat.com/en/services/certification/rhcsa) who is ready to automate Red Hat® Enterprise Linux® tasks, integrate Red Hat emerging technologies, and apply automation for efficiency and innovation.
+        - Overview:
+            - ### Validate your Linux automation skills
+                - [Size]();-[H3]()
+                - As teams and organizations pursue digital transformation, the Red Hat Certified Engineer (RHCE) credential helps you to demonstrate skills critical to managing systems in a DevOps environment. One of the key tenets of DevOps is automation and the RHCE is an extension of the knowledge required to automate the deployment, management, and support of multi-system environments — making your credential even more valuable and relevant. By developing automation skills to complement your deployment and configuration expertise, you will show your understanding of how Ansible Automation interacts with other Red Hat technologies.
+        - For existing or former RHCEs:
+            - ### Add automation skills to your toolset
+                - [Size]();-[H3]()
+            - If you are certified on Red Hat Enterprise Linux 7 or were certified on an earlier version of Red Hat Enterprise Linux you can grow your automation skills in a container-based infrastructure by recertifying your credential with the [Red Hat Certified Engineer (RHCE) exam (EX294)](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-9). The automation skills covered by the RHCE credential are the foundation for building and operating automation across an organization and are critical to scaling a wide range of Red Hat technologies. While you are not required to recertify on the new version, the changes we have made to the RHCE credential offer unique opportunities for you to expand your knowledge. The RHCE credential also applies toward becoming a [Red Hat Certified Architect in Infrastructure](https://www.redhat.com/en/services/certification/rhca). You can also apply the following exam towards your RHCA credential once you’re an RHCE:
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform exam (EX374)](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Managing Automation with Ansbile Automation Platform exam (EX467)](https://www.redhat.com/en/services/training/ex467-red-hat-certified-specialist-managing-automation-ansible-automation-platform-exam)
+        - For current RHCSAs or future candidates  
+            - ### Expand your knowledge with new options
+                - [Size]();-[H3]()
+            - If you are a [Red Hat Certified System Administrator](https://www.redhat.com/en/services/certification/rhcsa) and would like to become a Red Hat Certified Engineer, you must complete the [Red Hat Certified Engineer (RHCE) exam (EX294)](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-9), which emphasizes automation skills and is based on Red Hat Enterprise Linux 8. To help you prepare, we recommend taking our [Red Hat Enterprise Linux Automation with Ansible (RH294)](https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible) course before attempting the associated exam.
+            - If you’re not yet an RHCSA, you can start your journey by getting certified. By learning Linux system administration skills, you will develop a foundation that builds on your automation knowledge if you choose to pursue the RHCE credential. The Red Hat Certified System Administrator track includes:
+                - [Red Hat Enterprise Linux Technical Overview (RH024)](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview)
+                - [Red Hat System Administration I (RH124)](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) and [Red Hat System Administration II (RH134)](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii) or [RHCSA Rapid Track Course (RH199)](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course)
+                - [Red Hat Certified System Administrator (RHCSA) exam (EX200)](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam)
+        - --------------------- Portal ---------------------query:[Red Hat Certified Engineer (RHCE)](Linux%20Certifictions/RedHat/Red%20Hat%20Certified%20Engineer%20(RHCE).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - EX294 Objectives
+            - ## Study points for the exam
+                - [Size]();-[H2]()
+            - As an RHCE exam candidate, you should be able to handle all responsibilities expected of a Red Hat Certified System Administrator, including these tasks:
+            - **Be able to perform all tasks expected of a Red Hat Certified System Administrator**
+                - Understand and use essential tools
+                - Operate running systems
+                - Configure local storage
+                - Create and configure file systems
+                - Deploy, configure, and maintain systems
+                - Manage users and groups
+                - Manage security
+            - **Understand core components of Ansible**
+                - Inventories
+                - Modules
+                - Variables
+                - Facts
+                - Loops
+                - Conditional tasks
+                - Plays
+                - Handling task failure
+                - Playbooks
+                - Configuration files
+                - Roles
+                - Use provided documentation to look up specific information about Ansible modules and commands
+            - **Use roles and Ansible Content Collections**
+                - Create and work with roles
+                - Install roles and use them in playbooks
+                - Install Content Collections and use them in playbooks
+                - Obtain a set of related roles, supplementary modules, and other content from content collections, and use them in a playbook.
+            - **Install and configure an Ansible control node**
+                - Install required packages
+                - Create a static host inventory file
+                - Create a configuration file
+                - Create and use static inventories to define groups of hosts
+            - **Configure Ansible managed nodes**
+                - Create and distribute SSH keys to managed nodes
+                - Configure privilege escalation on managed nodes
+                - Deploy files to managed nodes
+                - Be able to analyze simple shell scripts and convert them to playbooks
+            - **Run playbooks with Automation content navigator**
+                - Know how to run playbooks with Automation content navigator
+                - Use Automation content navigator to find new modules in available Ansible Content Collections and use them
+                - Use Automation content navigator to create inventories and configure the Ansible environment
+            - **Create Ansible plays and playbooks**
+                - Know how to work with commonly used Ansible modules
+                - Use variables to retrieve the results of running a command
+                - Use conditionals to control play execution
+                - Configure error handling
+                - Create playbooks to configure systems to a specified state
+            - **Automate standard RHCSA tasks using Ansible modules that work with:**
+                - Software packages and repositories
+                - Services
+                - Firewall rules
+                - File systems
+                - Storage devices
+                - File content
+                - Archiving
+                - Task scheduling
+                - Security
+                - Users and groups
+            - **Manage content**
+                - Create and use templates to create customized configuration files
+                - Use Ansible Vault in playbooks to protect sensitive data
+    - Red Hat Certified Architect (RHCA) #linux
+        - Site: [Red Hat Certified Architect](https://www.redhat.com/en/services/certification/rhca)
+        - Need to Pass 5
+            - [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting)
+                - ex342 rh342
+                - pluralsight
+            - [Red Hat Certified Specialist in Linux Performance Tuning](https://www.redhat.com/en/services/certification/rhcs-performance-tuning)
+                - ex442 rh442
+                - pluralsight
+            - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+                - ex403
+            - [Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
+                - ex415
+            - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - ex374
+            - 
+            - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+                - ex362 rh362
+            - [Red Hat Certified Specialist in High Availability Clustering](https://www.redhat.com/en/services/certification/rhcs-clustering)
+                - ex436 rh436
+            - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+                - ex467 do467
+        - 
+        - ## Guidance for RHCEs
+            - Red Hat Certified Engineers (RHCEs) seeking to demonstrate greater depth and breadth of knowledge and skills in Red Hat Enterprise Linux and across other Red Hat products can benefit from the RHCA credential.
+            - RHCEs are free to choose any combination of certifications within the RHCA in Infrastructure list, and earning five or more certifications from the system administrator list in the Skills tab allows candidates to become a Red Hat Certified Architect in Infrastructure.
+            - A higher level of RHCA credential can be attained by earning more than five credentials beyond the base credentials. For example, earning six credentials beyond RHCD, RHCEMD, or RHCCD earns an RHCA Level II designation as long as the six credentials remain current. If one of the credentials becomes non-current, the RHCA reverts to Level I, and if another credential becomes non-current, the RHCA status would no longer apply.
+            - Optional depth areas:
+            - ### Open hybrid cloud program
+                - We believe that the open hybrid cloud is the present and future of enterprise computing. The need for agility, flexibility, and cost containment make having options essential.
+                - Earning five of these certifications is preparation for taking organizations to the cloud in the ways that best match their business requirements:
+                - [Red Hat Certified Specialist in OpenShift Administration](https://www.redhat.com/en/services/certification/rhcs-paas)
+                - [Red Hat Certified Specialist in Cloud Infrastructure](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+                - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+                - [Red Hat Certified Specialist in Ceph Cloud Storage](https://www.redhat.com/en/services/certification/rhcs-ceph-cloud-storage)
+                - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+                - [Red Hat Certified Specialist in OpenShift Virtualization](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+                - [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container)
+                - [Red Hat Certified Specialist in Red Hat OpenShift Service on AWS (ROSA)](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa)
+            - ### DevOps, containers, and OpenShift program
+                - Containers are changing the way applications are developed, tested, and deployed, and Red Hat® OpenShift Container Platform is how Red Hat does containers.
+                - For organizations that want to speed their application development cycle, containers are a natural fit. However, creating a continuous integration/continuous delivery (CI/CD) pipeline requires more than containers—it also requires automation. DevOps offers an approach to automation that not only helps link legacy apps with newer cloud-native apps and infrastructure, but does so through fast-paced, iterative IT service delivery.
+                - Our DevOps, containers, and OpenShift recommendations cover the learning needed to succeed in today’s app-hungry world. Earning these four credentials plus one more from the system administrators list can help transform the way organizations deliver applications to their customers.
+                - **Red Hat Certified OpenShift Administrator (EX280)** 
+                    - Sites: [Red Hat Certified Specialist in OpenShift Administration](https://www.redhat.com/en/services/certification/rhcs-paas) 
+                    - **Study points for the exam**
+                        - As with all Red Hat performance-based exams, configurations must persist after reboot without intervention.
+                            - Manage OpenShift Container Platform
+                                - Use the web console to manage and configure an OpenShift cluster
+                                - Use the command-line interface to manage and configure an OpenShift cluster
+                                - Query, format, and filter attributes of Kubernetes resources
+                                - Import, export, and configure Kubernetes resources
+                                - Locate and examine container images
+                                - Create and delete projects
+                                - Examine resources and cluster status
+                                - View logs
+                                - Monitor cluster events and alerts
+                                - Assess the health of an OpenShift cluster
+                                - Troubleshoot common container, pod, and cluster events and alerts
+                                - Use product documentation
+                            - Deploy Applications
+                                - Deploy applications from resource manifests
+                                - Use Kustomize overlays to modify application configurations
+                                - Deploy applications from images, OpenShift templates, and Helm charts
+                                - Deploy jobs to perform one-time tasks
+                                - Manage application deployments
+                                - Work with replica sets
+                                - Work with labels and selectors
+                                - Configure services
+                                - Expose both HTTP and non-HTTP applications to external access
+                                - Work with operators such as MetalLB and Multus
+                            - Manage Storage for Application Configuration and Data
+                                - Create and use secrets
+                                - Create and use configuration maps
+                                - Provision Persistent Storage volumes for block and file-based data
+                                - Use storage classes
+                                - Manage non-shared storage with StatefulSets
+                            - Configure Applications for Reliability
+                                - Configure and use health probes
+                                - Reserve and limit application compute capacity
+                                - Scale applications to meet increased demand
+                            - Manage Application Updates
+                                - Identify images using tags and digests
+                                - Roll back failed deployments
+                                - Manage image streams
+                                - Use triggers to manage images
+                            - Manage Authentication and Authorization
+                                - Configure the HTPasswd identity provider for authentication
+                                - Create and delete users
+                                - Modify user passwords
+                                - Create and manage groups
+                                - Modify user and group permissions
+                            - Configure Network Security
+                                - Configure networking components
+                                - Troubleshoot software defined networking
+                                - Create and edit external routes
+                                - Control cluster network ingress
+                                - Secure external and internal traffic using TLS certificates
+                                - Configure application network policies
+                            - Enable Developer Self-Service
+                                - Configure cluster resource quotas
+                                - Configure project quotas
+                                - Configure project resource requirements
+                                - Configure project limit ranges
+                                - Configure project templates
+                            - Manage OpenShift Operators
+                                - Install an operator
+                                - Delete an operator
+                            - Configure Application Security
+                                - Configure and manage service accounts
+                                - Run privileged applications
+                                - Create service accounts
+                                - Manage and apply permissions using security context constraints
+                                - Create and apply secrets to manage sensitive information
+                                - Configure application access to Kubernetes APIs
+                                - Configure Kubernetes CronJobs
+                - [Red Hat Certified Specialist in API Management](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+                - [Red Hat Certified Specialist in OpenShift Automation and Integration](https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration)
+                - [Red Hat Certified Specialist in OpenShift Virtualization](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+                - **Red Hat Certified Specialist in Containers (EX188)** 
+                    - Sites: [Red Hat Certified Specialist in Containers](https://www.redhat.com/en/services/certification/rhcs-container) 
+                    -  **Study points for the exam** 
+                        - To help you prepare, the exam objectives below highlight the task areas you can expect to see covered in the exam.
+                        - You should be able to demonstrate these skills and abilities:
+                        - **Implement images using Podman and Containerfile**
+                            - Understand how to specify the container’s base image.
+                            - Understand how to add content to the container.
+                            - Understand how to configure the container’s run time environment including user id, working directory and running arbitrary commands.
+                            - Understand when and how to expose ports from a Containerfile.
+                            - Understand how to pass environment variables and arguments to an image built from a Containerfile.
+                            - Understand how to specify the command to be run in a custom image.
+                            - Understand container volumes including sharing host data with the container.
+                            - Understand the security and permissions requirements related to host and network access from the container.
+                            - Understand container and image life cycles and how to manage them.
+                        - **Manage images**
+                            - Understand private registry security.
+                            - Interact with many different registries.
+                            - Understand and use image tags
+                            - Push and pull images from and to registries.
+                            - Back up an image with its layers and meta data vs. backup a container state.
+                        - **Run containers locally using Podman**
+                            - Run containers locally using Podman
+                            - Get container logs.
+                            - Listen to container events on the container host.
+                            - Use Podman inspect.
+                            - Specifying environment parameters.
+                            - Expose public applications.
+                            - Get application logs.
+                            - Inspect running applications.
+                        - **Run multi-container applications with Podman**
+                            - Create application stacks
+                            - Understand container dependencies
+                            - Working with environment variables
+                            - Working with secrets
+                            - Working with volumes
+                            - Working with configuration
+                        - **Troubleshoot containerized applications**
+                            - Understand the description of application resources
+                            - Get application logs
+                            - Inspect running applications
+                            - Connecting to running containers
+                - [Red Hat Certified Specialist in OpenShift Data Foundation](https://www.redhat.com/en/services/certification/certified-specialist-openshift-data-foundation)
+                - [Red Hat Certified Specialist in MultiCluster Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management)
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+                - [Red Hat Certified Specialist in Microsoft Windows Automation with Ansible](https://www.redhat.com/en/services/certification/ex417-red-hat-certified-specialist-microsoft-windows-automation-ansible)
+                - [Red Hat Certified Specialist in OpenShift AI](https://www.redhat.com/en/services/certification/ex267-red-hat-certified-specialist-openshift-ai)
+            - ### Linux mastery program
+                - The reliability, scalability, performance, and manageability of Red Hat® Enterprise Linux® comprise the heart of many of Red Hat’s technologies. We do not use the term "mastery" lightly—to dig deep and focus exclusively on Linux, choose five of these certifications:
+                - **Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting** (EX342)
+                    - Sites: 
+                        - [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting) 
+                    - Exam: EX342
+                    - Course: RH342
+                        - [Red Hat Enterprise Linux Diagnostics and Troubleshooting | RH342](https://www.redhat.com/en/services/training/rh342-red-hat-enterprise-linux-diagnostics-and-troubleshooting)
+                    -  **Prove your skills and knowledge** 
+                        - An IT professional who is a Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting is capable of performing the following tasks:
+                            - Understanding and employing general methods for troubleshooting
+                            - Diagnosing and troubleshooting system start up issues
+                            - Diagnosing and troubleshooting file system issues
+                            - Resolving package management issues
+                            - Troubleshooting and fixing network connectivity issues
+                            - Diagnosing application issues
+                            - Identifying and fixing authentication issues
+                            - Gathering information to aid third party investigation of issues
+                    -  **Study points for the exam** 
+                        - To help you prepare, the exam objectives highlight the task areas you can expect to see covered in the exam. Red Hat reserves the right to add, modify, and remove exam objectives. Such changes will be made public in advance.
+                        - Candidates for the [Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting exam](https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting-160961) should be able to:
+                            - **Understand and employ general methods for troubleshooting**
+                                - Collect system information to aid in troubleshooting
+                                - Consult documentation resources to aid in troubleshooting
+                                - Monitor systems for vital characteristics
+                                - Configure systems to send log messages to a centralized host
+                            - **Diagnose and troubleshoot system start up issues**
+                                - Identify and resolve service failures affecting boot
+                                - Regain root control of a system
+                                - Troubleshoot boot issues
+                                - Identify hardware and hardware problems
+                                - Manage kernel modules and their parameters
+                            - **Diagnose and troubleshoot file system issues**
+                                - Recover corrupted file systems
+                                - Recover mis-configured or broken LVM configurations
+                                - Recover data from encrypted file systems
+                                - Identify and fix iSCSI issues
+                            - **Resolve package management issues**
+                                - Resolve package management dependency issues
+                                - Recover a corrupted RPM database
+                                - Identify and restore changed files
+                            - **Troubleshoot and fix network connectivity issues**
+                                - Use standard tools to verify network connectivity
+                                - Identify and fix network connectivity issues
+                                - Inspect network traffic to aid troubleshooting
+                            - **Diagnose application issues**
+                                - Identify library dependencies for third-party software
+                                - Identify if an application suffers from memory leaks
+                                - Use standard tools to debug an application
+                                - Identify and fix issues related to SELinux
+                            - **Identify and fix authentication issues**
+                                - Identify and fix pluggable authentication module (PAM) issues
+                                - Identify and fix LDAP and Kerberos identity management issues
+                            - **Gather information to aid third party investigation of issues**
+                                - Create kernel crashdumps
+                                - Compile and execute SystemTap modules
+                - **Red Hat Certified Specialist in Performance Tuning (EX442)** 
+                    - Sites: [Red Hat Certified Specialist in Linux Performance Tuning](https://www.redhat.com/en/services/certification/rhcs-performance-tuning) 
+                    -  Study points for the exam
+                        - You should be able to perform the tasks listed below:
+                        - ### Use utilities to analyze system behavior
+                            - Use utilities such as vmstat, iostat, mpstat, sar, gnome-system-monitor, top, powertop, and others to analyze and report system and application behavior
+                            - Use utilities such as Performance Co-Pilot (PCP) to analyze system behaviour
+                            - Use utilities such as dmesg, dmidecode, and sosreport to profile system hardware configurations
+                        - ### Monitor and alter kernel behavior
+                            - Use /proc/sys, sysctl, and /sys to examine, modify, and set kernel run-time parameters
+                            - Configure kernel behavior by altering module parameters
+                        - ### Analyze system and application performance
+                            - Analyze system and application behavior using tools such as ps, top, and Valgrind
+                            - Configure systems to run SystemTap scripts
+                            - Use the eBPF family of tools (e.g. syscount, gethostlatency and others) to diagnose system and application behavior
+                            - Given multiple versions of applications that perform the same or similar tasks, choose which version of the application to run on a system based on its observed performance characteristics
+                        - ### Tune running systems
+                            - Alter process priorities of both new and existing processes
+                            - Select and configure tuned profiles
+                            - Manage system resource usage using control groups
+                        - ### Tune memory utilization
+                            - Configure systems to support alternate page sizes for applications that use large amounts of memory
+                        - ### Configure disk and file subsystems
+                            - Select proper I/O scheduling algorithm
+                            - Tune file system layout for a given use
+                        - ### Tune network performance
+                            - Calculate network buffer sizes based on known quantities such as bandwidth and round-trip time
+                            - Set system buffer sizes based on those calculations
+                - [Red Hat Certified Specialist in Identity Management](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management)
+                - [Red Hat Certified Specialist in High Availability Clustering](https://www.redhat.com/en/services/certification/rhcs-clustering)
+                - [Red Hat Certified Specialist in Deployment and Systems Management](https://www.redhat.com/en/services/certification/rhcs-deployment-systems-management)
+                - **Red Hat Certified Specialist in Security: Linux (EX415)** 
+                    - Sites: [Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam) 
+                    -  **Study points for the exam** 
+                        - To help you study, review the following exam objectives that highlight the task areas you can expect to see covered in the exam. Red Hat reserves the right to add, modify, and remove exam objectives. Such changes will be made public in advance.
+                            - Use Red Hat Ansible^®^ Engine
+                                - Install Red Hat Ansible Engine on a control node.
+                                - Configure managed nodes.
+                                - Configure simple inventories.
+                                - Perform basic management of systems.
+                                - Run a provided playbook against specified nodes.
+                            - Implement access controls for automation controller
+                                - Create and restrict an inventory to an automation controller user
+                                - Restrict a credential and/or a project to an automation controller user
+                                - Be able to create and launch a template as an automation controller user
+                            - Configure intrusion detection
+                                - Install AIDE.
+                                - Configure AIDE to monitor critical system files.
+                            - Configure encrypted storage
+                                - Encrypt and decrypt block devices using LUKS.
+                                - Configure encrypted storage persistence using NBDE.
+                                - Change encrypted storage passphrases.
+                            - Restrict USB devices
+                                - Install USBGuard.
+                                - Write device policy rules with specific criteria to manage devices.
+                                - Manage administrative policy and daemon configuration.
+                            - Manage system login security using pluggable authentication modules (PAMs)
+                                - Configure password quality requirements.
+                                - Configure failed login policy.
+                                - Modify PAM configuration files and parameters.
+                            - Configure system auditing
+                                - Write rules to log auditable events.
+                                - Enable prepackaged rules.
+                                - Produce audit reports.
+                            - Configure SELinux
+                                - Enable SELinux on a host running a simple application.
+                                - Interpret SELinux violations and determine remedial action.
+                                - Restrict user activity with SELinux user mappings.
+                                - Analyze and correct existing SELinux configurations.
+                            - Enforce security compliance
+                                - Install OpenSCAP and OpenSCAP Workbench.
+                                - Scan hosts for security compliance
+                                - Tailor security policy
+                                - Scan individual hosts for security compliance
+                                - Generate and apply a playbook from customized XML for remediation of inventory hosts
+                - [Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible)
+                - [Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform)
+        - ## Test your skills and knowledge
+            - The best training path for becoming an RHCA depends on the credentials you or your team want to earn. Red Hat offers multiple ways to train in courses aligned with all of its certification exams.
+            - In addition to the exam offerings below, review our full list of courses to find other training options that might best suit your certification objectives.
+        - ### To attain and maintain RHCA status, an RHCE must pass at least 5 of the following exams and keep the associated certifications current:
+            - [EX188 – Red Hat Certified Specialist in Containers exam](https://www.redhat.com/en/services/training/ex188-red-hat-certified-specialist-containers-exam)
+            - [EX210 - Red Hat Certified Specialist in Cloud Infrastructure exam](https://www.redhat.com/en/services/certification/rhcsa-rhos)
+            - [EX229 - Red Hat Certified Specialist in ROSA exam](https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa)
+            - [EX240 - Red Hat Certified Specialist in API Management exam](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+            - [EX248 - Red Hat Certified Specialist in Enterprise Application Server Administration exam](https://www.redhat.com/en/services/training/ex248-red-hat-certified-jboss-administration-rhcja-exam)
+            - [EX260 - Red Hat Certified Specialist in Ceph Cloud Storage exam](https://www.redhat.com/en/services/training/ex260-red-hat-certified-specialist-in-ceph-cloud-storage-exam)
+            - [EX267 -Red Hat Certified Specialist in OpenShift AI exam](https://www.redhat.com/en/services/certification/ex267-red-hat-certified-specialist-openshift-ai)
+            - [EX280 - Red Hat Certified OpenShift Administrator exam](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
+            - [EX288 - Red Hat Certified Specialist in OpenShift Application Development exam](https://www.redhat.com/en/services/training/ex288-red-hat-certified-openshift-application-developer-exam)
+            - [EX316 - Red Hat Certified Specialist in OpenShift Virtualization Exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-openshift-virtualization-ex316)
+            - [EX328 - Red Hat Certified Specialist in Building Resilient Microservices exam](https://www.redhat.com/en/services/training/ex328-red-hat-certified-specialist-in-building-resilient-microservices-exam)
+            - [EX342 – Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting Exam](https://www.redhat.com/en/services/training/ex342-red-hat-certified-specialist-linux-diagnostics-and-troubleshooting)
+            - [EX358 – Red Hat Certified Specialist in Services Management and Automation exam](https://www.redhat.com/en/services/training/ex358-red-hat-certified-specialist-services-management-automation-exam)
+            - [EX362 – Red Hat Certified Specialist in Identity Management Exam](https://www.redhat.com/en/services/training/ex362-red-hat-certified-specialist-identity-management-exam)
+            - [EX370 - Red Hat Certified Specialist in OpenShift Data Foundation exam](https://www.redhat.com/en/services/training/ex370-red-hat-certified-specialist-in-openshift-data-foundation-exam)
+            - [EX374 - Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-developing-automation-ansible-automation-platform-exam)
+            - [EX380 - Red Hat Certified Specialist in OpenShift Automation and Integration exam](https://www.redhat.com/en/services/training/ex380-certified-specialist-openshift-automation-exam)
+            - [EX403 – Red Hat Certified Specialist in Deployment and Systems Management exam](https://www.redhat.com/en/services/training/ex403-red-hat-certificate-expertise-deployment-systems-management-exam)
+            - [EX415 – Red Hat Certified Specialist in Security: Linux exam](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
+            - [EX417 - Red Hat Certified Specialist in Microsoft Windows Automation with Ansible exam](https://www.redhat.com/en/services/certification/ex417-red-hat-certified-specialist-microsoft-windows-automation-ansible)
+            - [EX436 – Red Hat Certified Specialist in High Availability Clustering exam](https://www.redhat.com/en/services/training/ex436-red-hat-certificate-expertise-high-availability-clustering-exam)
+            - [EX440 – Red Hat Certified Specialist in Messaging Administration exam](https://www.redhat.com/en/services/training/ex440-red-hat-certified-specialist-in-messaging-administration-exam) (Retired)
+            - [EX442 – Red Hat Certified Specialist in Linux Performance Tuning exam](https://www.redhat.com/en/services/training/ex442-exame-do-red-hat-certified-specialist-linux-performance-tuning)
+            - [EX447 – Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices exam](https://www.redhat.com/en/services/training/ex447-red-hat-certified-specialist-advanced-automation-ansible-best-practices-exam)(Retired)
+            - [EX457 – Red Hat Certified Specialist in Ansible Network Automation exam](https://www.redhat.com/en/services/training/ex457-red-hat-certified-specialist-in-ansible-network-automation-exam)
+            - [EX467 - Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/ex467-red-hat-certified-specialist-managing-automation-ansible-automation-platform-exam)
+            - [EX480 - Red Hat Certified Specialist in MultiCluster Management exam](https://www.redhat.com/en/services/training/ex480-red-hat-certified-specialist-multicluster-management-exam)
+        - ### To attain and maintain RHCA status, an RHCEMD or RHCCD must pass at least 5 of the following exams and keep the associated certifications current:
+            - [EX188 – Red Hat Certified Specialist in Containers exam](https://www.redhat.com/en/services/training/ex188-red-hat-certified-specialist-containers-exam)
+            - [EX240 –Red Hat Certified Specialist in API Management exam](https://www.redhat.com/en/services/training/ex240-red-hat-certified-specialist-api-management-exam)
+            - [EX248 – Red Hat Certified Specialist in Enterprise Application Server Administration exam](https://www.redhat.com/en/services/training/ex248-red-hat-certified-jboss-administration-rhcja-exam)
+            - [EX280 - Red Hat Certified OpenShift Administrator exam](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
+            - [EX288 –Red Hat Certified Specialist in OpenShift Application Development exam](https://www.redhat.com/en/services/training/ex288-red-hat-certified-openshift-application-developer-exam)
+            - [EX328 - Red Hat Certified Specialist in Building Resilient Microservices exam](https://www.redhat.com/en/services/training/ex328-red-hat-certified-specialist-in-building-resilient-microservices-exam)
+            - [EX374 - Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-developing-automation-ansible-automation-platform-exam)
+            - [EX378 - Red Hat Certified Cloud-native Developer exam](https://www.redhat.com/en/services/training/red-hat-certified-cloud-native-developer-exam)
+            - [EX380 - Red Hat Certified Specialist in OpenShift Automation and Integration exam](https://www.redhat.com/en/services/training/ex380-certified-specialist-openshift-automation-exam)
+            - [EX427 – Red Hat Certified Specialist in Business Process Design exam](https://www.redhat.com/en/services/training/ex427-red-hat-certificate-expertise-business-process-design-exam) (Retired)
+            - [EX440 – Red Hat Certified Specialist in Messaging Administration exam](https://www.redhat.com/en/services/training/ex440-red-hat-certified-specialist-in-messaging-administration-exam) (Retired)
+            - [EX453 – Red Hat Certified Specialist in Fast-Cache Application Development exam](https://www.redhat.com/en/services/training/ex453-retired-red-hat-certified-specialist-in-fast-cache-application-development-exam) (Retired)
+            - [EX465 – Red Hat Certified Specialist in Business Rules exam](https://www.redhat.com/en/services/training/ex465-red-hat-certificate-expertise-business-rules-exam) (Retired)
+            - [EX447 - Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices exam](https://www.redhat.com/en/services/training/ex447-red-hat-certified-specialist-advanced-automation-ansible-best-practices-exam) (Retired)
+            - [EX480- Red Hat Certified Specialist in MultiCluster Management exam](https://www.redhat.com/en/services/training/ex480-red-hat-certified-specialist-multicluster-management-exam)
+            - [EX482 - Red Hat Certified Specialist in Event-Driven Application Development exam](https://www.redhat.com/en/services/training/red-hat-certified-specialist-event-driven-application-development-exam)
+- Linux Foundation #linux
+    - Linux Foundation Certified IT Associate (LFCA) #linux
+        - --------------------- Portal ---------------------query:[Linux Foundation Certified IT Associate (LFCA)](Linux%20Certifictions/Linux%20Foundation/Linux%20Foundation%20Certified%20IT%20Associate%20(LFCA).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - Site: [Linux Foundation Certified IT Associate (LFCA) - Linux Foundation - Education](https://training.linuxfoundation.org/certification/certified-it-associate/)
+        - Domains & Competencies
+            - Linux Fundamentals 20%
+                - Linux Operating System
+                - File Management Commands
+                - System Commands
+                - General Networking Commands
+            - System Administration Fundamentals 20%
+                - System Administration Tasks
+                - Networking
+                - Troubleshooting
+            - Cloud Computing Fundamentals 20%
+                - Cloud Computing Fundamentals
+                - Performance / Availability
+                - Serverless
+                - Cloud Costs and Budgeting
+            - Security Fundamentals 16%
+                - Security Basics
+                - Data Security
+                - Network Security
+                - System Security
+            - DevOps Fundamentals 16%
+                - DevOps Basics
+                - Containers
+                - Deployment Environments
+                - Git Concepts
+            - Supporting Applications and Developers 8%
+                - Software Project Management
+                - Software Application Architecture
+                - Functional Analysis
+                - Open-source Software and Licensing
+        - 
+    - Linux Foundation Certified System Administrator (LFCS) #linux
+        - --------------------- Portal ---------------------query:[Linux Foundation Certified System Administrator (LFCS)](Linux%20Certifictions/Linux%20Foundation/Linux%20Foundation%20Certified%20System%20Administrator%20(LFCS).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - Site: [Linux Foundation Certified System Administrator (LFCS) - Linux Foundation - Education](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/)
+        - **Domains & Competencies**
+            - Operations Deployment 25%
+                - Configure kernel parameters, persistent and non-persistent
+                - Diagnose, identify, manage, and troubleshoot processes and services
+                - Manage or schedule jobs for executing commands
+                - Search for, install, validate, and maintain software packages or repositories
+                - Recover from hardware, operating system, or filesystem failures
+                - Manage Virtual Machines (libvirt)
+                - Configure container engines, create and manage containers
+                - Create and enforce MAC using SELinux
+            - Networking 25%
+                - Configure IPv4 and IPv6 networking and hostname resolution
+                - Set and synchronize system time using time servers
+                - Monitor and troubleshoot networking
+                - Configure the OpenSSH server and client
+                - Configure packet filtering, port redirection, and NAT
+                - Configure static routing
+                - Configure bridge and bonding devices
+                - Implement reverse proxies and load balancers
+            - Storage 20%
+                - Configure and manage LVM storage
+                - Manage and configure the virtual file system
+                - Create, manage, and troubleshoot filesystems
+                - Use remote filesystems and network block devices
+                - Configure and manage swap space
+                - Configure filesystem automounters
+                - Monitor storage performance
+            - Essential Commands 20%
+                - Basic Git Operations
+                - Create, configure, and troubleshoot services
+                - Monitor and troubleshoot system performance and services
+                - Determine application and service specific constraints
+                - Troubleshoot diskspace issues
+                - Work with SSL certificates
+            - Users and Groups 10%
+                - Create and manage local user and group accounts
+                - Manage personal and system-wide environment profiles
+                - Configure user resource limits
+                - Configure and manage ACLs
+                - Configure the system to use LDAP user and group accounts
+- SUSE #linux
+    - SUSE Certified Administrator (SCA) #linux
+        - --------------------- Portal ---------------------query:[SUSE Certified Administrator (SCA)](Linux%20Certifictions/SUSE/SUSE%20Certified%20Administrator%20(SCA).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - Site: [SUSE Certified Administrator in SUSE Linux Enterprise Server 15 | SUSE](https://www.suse.com/training/exam/sca-sles-15/)
+        - ## Additional Resources
+            - [Size]();-[H2]()
+            - ### Courses
+                - [A Cloud Guru: Becoming Familiar with SUSE Linux Enterprise](https://learn.acloud.guru/course/387f3e9a-112e-474d-92c4-57148a293750)
+                - [A Cloud Guru: Configuring SUSE Linux Enterprise](https://learn.acloud.guru/course/caca25dd-24c5-4dbc-9833-50c5f0d4c3c3)
+                - [A Cloud Guru: Managing SUSE Linux Enterprise](https://learn.acloud.guru/course/ecc3903d-02c3-4b78-a9f9-c180c545d578)
+                - [A Cloud Guru: SUSE Linux Enterprise Admin Review and Exam Prep](https://learn.acloud.guru/course/10bd7c49-a743-4acc-81d3-d8eefd53eeac)
+                - [Udemy: Administer Linux with YaST & Use Help Resources](https://www.udemy.com/course/suse-administer-linux-with-yast-use-help-resources)
+                - [Size]();-[H3]()
+            - ### Practice Exams
+                -  *None Found* 
+                - [Size]();-[H3]()
+            - ### Sources
+                -  *None Found* 
+                - [Size]();-[H3]()
+            - ### Time Spent
+                -  *8 - 12 hours* 
+                - [Size]();-[H3]()
+        - # SCA in SUSE Linux Enterprise Server 15 (2025 Update)
+            - [Size]();-[H1]()
+            - The SUSE Certified Administrator (SCA) in SUSE Linux Enterprise Server 15 certification is designed for SUSE Linux Enterprise system administrators who have become familiar with the SLES operating system. 
+            - This certification validates your fundamental knowledge of the Linux operating system and your ability to properly administer SLES 15 at a standard sysadmin level.
+        - ### How to Earn the Certification
+            - [Size]();-[H3]()
+            - Candidates can earn the SCA in SUSE Linux Enterprise Server 15 by passing the core SCA in SUSE Linux Enterprise Server 15 (2025 Update) exam. The 2025 Update exam aligns with the new SLE201v15: SUSE Linux Enterprise Server Operations course and is targeted to be released in January 2025. There are no prerequisites to attain the certification.
+            - If you achieved the SCA in SUSE Linux Enterprise Server already by passing the other exam, there is no need to recertify! Both exams lead to the same certification.
+            - The previous version of the exam that aligns with the SLE201v15: SUSE Linux Enterprise Server Operations course will be retired on 30 April 2025 to give those already working through that course time to complete it.
+            - The option to update from version 12 to version 15 was retired 30 April 2024.
+        - ## Core Exam Information
+            - [Size]();-[H2]()
+        - ### Study Options
+            - [Course SLE201v15 - SUSE Linux Enterprise Server 15 Operations](https://www.suse.com/training/course/sle201v15/)
+            - [Size]();-[H3]()
+            - As with all SUSE certifications, course work is not required. You need to pass this certification exam and meet the prerequisites in order to achieve the certification. We highly recommend you study the objectives and prepare for the exam.
+        - ### Detailed Objectives
+            - The Command Line
+                - Bash shell
+                - Commonly Used Commands
+                - Stream Redirection and Piping
+            - The Linux filesystem
+                - Linux Filesystem Structure
+                - Linux file Types
+            - VIM
+            - Manage users and groups from command line and YaST
+            - File and Directory Permissions
+                - File System Permissions
+                - Special File and Directory Modes
+                - Extended Access Control Lists
+            - Process Management
+                - Signals and Process Termination
+                - Process Priority
+                - Foreground and Background Processes
+            - System and Service Management
+                - Manage Services with systemd
+                - Configure systemd Targets
+            - Task Scheduling
+                - Schedule Recurring Jobs
+                - Schedule One Time Jobs
+                - Schedule Jobs Using Systemd Timers
+            - Privilege Delegation
+                - Effective User and Group Identifier
+                - Modifying User and Group Identifier
+                - Manage Privilege Escalation Using Sudo
+            - Remote Administration
+                - Remote Administration Using SSH
+                - Configure Key Based Authentication for SSH
+                - Remote Administration Using VNC
+                - Remote Administration Using RDP
+            - Storage Management Fundamentals
+                - Disk Partitioning
+                - Linux File Systems
+                - Mount Volumes into the Linux File System Hierarchy
+                - Storage Management with YaST
+                - Manage Storage Space
+            - Logical Volume Manager
+                - LVM Configuration File and Services
+                - LVM Configuration from the Command Line
+                - Managing LVM from the Command Line
+                - LVM Snapshots
+                - LVM Configuration Using YaST
+            - Btrfs Management
+                - Creating and Managing Btrfs File Systems from the Command Line
+                - Managing Btrfs Using YaST
+                - Introduction to Btrfs Snapshots
+            - Network Management Fundamentals
+                - Physical Network Interface Naming
+                - Managing Network Configuration
+                - Test Network Configuration
+                - Network Management Using Wicked
+                - Name Resolution
+                - Network Management Using YaST
+            - Software Management
+                - Working With RPM
+                - Introduction to Zypper
+                - Zypper Repository Management
+                - Zypper Package Management
+                - Using YaST to Manage Software
+            - System Logging
+                - Kernel Log Messages
+                - The System Logging Daemon
+                - Log Rotation
+                - Systemd Logging
+                - Supportconfig
+            - [Size]();-[H3]()
+    - SUSE Certified Engineer (SCE) #linux
+        - --------------------- Portal ---------------------query:[SUSE Certified Engineer (SCE)](Linux%20Certifictions/SUSE/SUSE%20Certified%20Engineer%20(SCE).md)
+            - --------------------- Portal ---------------------
+ -- Avoided infinite recursion --         - Site: [ SUSE Certified Engineer in SUSE Linux Enterprise Server 15 | SUSE](https://www.suse.com/training/exam/sce-sles-15/)
+        - # SCE in SUSE Linux Enterprise Server 15
+            - [Size]();-[H1]()
+            - The SUSE Certified Engineer (SCE) in SUSE Linux Enterprise Server 15 is targeted at advanced system operators and consultants. The certification validates knowledge in topics which are either more advanced than those covered in the SCA or less commonly used. These topics focus on how to design and manage complex configurations which are considered beyond the scope of typical ongoing operational usage.
+        - ### How to Earn the Certification
+            - [Size]();-[H3]()
+            - Candidates can earn the SCE in SUSE Linux Enterprise Server 15 by passing the core SCE in SUSE Linux Enterprise Server 15 exam.
+            - Details for the Core SCE in SUSE Linux Enterprise 15 exam are below.  In addition to the core SCE in SUSE Linux Enterprise Server 15 exam, the SCA in SUSE Linux Enterprise Server version 12 or 15 certification is a prerequisite for this engineer level certification.
+        - ## Core Exam Information
+            - [Size]();-[H2]()
+        - ### Study Options
+            - [Size]();-[H3]()
+            - Candidates who do not hold the SCE in SUSE Linux Enterprise Server 12 certification would benefit from the following course:
+                - [SLE301v15 – SUSE Linux Enterprise 15 Advanced Administration](https://www.suse.com/training/course/sle301v15/)
+            - As with all SUSE certifications, course work is not required. You need to pass this certification exam and meet the prerequisites in order to achieve the certification. We highly recommend you study the objectives and prepare for the exam.
+        - ### Detailed Objectives
+            - [Size]();-[H3]()
+            - In addition to the objectives below, this exam may also cover objectives from the [SUSE Certified Administrator in Enterprise Linux 15](https://www.suse.com/training/exam/sca-sles-15) exam.
+            - Advanced System Administration
+                - YaST Security Module
+                - Backup and Recovery
+                - Software Libraries
+                - General Server Health
+                - Monitoring Overview
+                - Control Groups
+            - Encryption
+                - SSL/TLS
+                - GPG
+            - Shell Scripting
+            - Hardware
+                - Hardware Information
+                - Drivers
+            - Advanced Networking
+                - Advanced Network Interface Types
+                - Network Namespaces
+                - IPv6
+            - Advanced Storage Administration
+                - iSCSI
+                - Multipath IO
+            - Centralized Authentication
+                - PAM
+                - SSSD
+            - Advanced Software Management
+                - RPM
+                - Repositories
+                - RMT
+            - Configuration Management with Salt
+                - Salt Overview
+                - Install and Configure Salt
+                - Salt Execution Modules
+                - The Salt State System

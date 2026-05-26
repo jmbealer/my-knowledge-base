@@ -1,0 +1,12352 @@
+- linux #linux
+    - You used `cat` to view the entire contents of a file.
+    1. You learned how to use `cat -n` to view file contents with line numbers.
+    2. You used `head` to view the beginning of a file, both by lines and by bytes.
+    3. You used `tail` to view the end of a file, both by lines and by bytes.
+    4. You learned how to use `diff` to compare the contents of files.
+    5. Finally, you used `diff -r` to compare entire directories.
+    - 
+    - `-rw-rw-r-- 1 labex labex 0 Jul 29 15:11 example.txt` Explain Code
+    - Let's break down this output:
+        1. `-rw-rw-r--` represents the file permissions (we'll explore this more in Step 4). The first character indicates the file type ( `-` for a regular file, `d` for directory, etc.). The remaining characters represent read, write, and execute permissions for the owner, group, and others.
+        2. The first `labex` is the current owner of the file. This is the username that owns the file.
+        3. The second `labex` is the current group of the file. A group is a collection of users that can share permissions.
+        4. `0` is the file size in bytes. Since the file is empty, its size is zero.
+        5. `Jul 29 15:11` is the last modified date and time.
+        6. `example.txt` is the file name.
+    - --------------------- Portal ---------------------query:#[linux](Computing/linux.md)
+        - Linux Certifictions #linux
+            - Linux Certifications Roadmap #linux
+            - LPI #linux
+                - LPI Linux Essentials - 010-160 #linux
+                - LPIC-1 - 101-500 and 102-500 #LPI #linux
+                - LPI Certifications #LPI #linux
+                - LPIC-2 - 201-450 and 202-450 #LPI #linux
+                - LPIC-3 Mixed Environments #LPI #linux
+                - LPIC-3 Security  #LPI #linux
+                - LPIC-3 Virtualization and Containerization #LPI #linux
+                - LPIC-3 High Availability and Storage Clusters #LPI #linux
+                - LPI DevOps Tools Engineer #LPI #linux
+                - LPI BSD Specialist #LPI #linux
+                - LPI Security Essentials  #LPI #linux
+                - LPI Web Development Essentials #LPI #linux
+                - LPI Open Source Essentials #LPI #linux
+                - LPI #linux
+            - RedHat #linux
+                - Red Hat Certified Engineer (RHCE) #linux
+                - Red Hat Certified Architect (RHCA) #linux
+            - Linux Foundation #linux
+                - Linux Foundation Certified IT Associate (LFCA) #linux
+                - Linux Foundation Certified System Administrator (LFCS) #linux
+            - SUSE #linux
+                - SUSE Certified Administrator (SCA) #linux
+                - SUSE Certified Engineer (SCE) #linux
+ -- Avoided infinite recursion --         - bash #linux
+        - SUSE Certified Administrator (SCA) #linux
+        - Linux Certifications Roadmap #linux
+        - linux lab set up #linux
+        - Linux Foundation Certified IT Associate (LFCA) #linux
+        - LPI #linux
+            - LPI Linux Essentials - 010-160 #linux
+            - LPIC-1 - 101-500 and 102-500 #LPI #linux
+            - LPI Certifications #LPI #linux
+            - LPIC-2 - 201-450 and 202-450 #LPI #linux
+            - LPIC-3 Mixed Environments #LPI #linux
+            - LPIC-3 Security  #LPI #linux
+            - LPIC-3 Virtualization and Containerization #LPI #linux
+            - LPIC-3 High Availability and Storage Clusters #LPI #linux
+            - LPI DevOps Tools Engineer #LPI #linux
+            - LPI BSD Specialist #LPI #linux
+            - LPI Security Essentials  #LPI #linux
+            - LPI Web Development Essentials #LPI #linux
+            - LPI Open Source Essentials #LPI #linux
+            - LPI #linux
+        - SUSE Certified Engineer (SCE) #linux
+        - Linux Foundation Certified System Administrator (LFCS) #linux
+        - Red Hat Certified Engineer (RHCE) #linux
+        - Red Hat Certified Architect (RHCA) #linux
+        - LPI Linux Essentials - 010-160 #linux
+        - RedHat #linux
+            - Red Hat Certified Engineer (RHCE) #linux
+            - Red Hat Certified Architect (RHCA) #linux
+        - LPIC-1 - 101-500 and 102-500 #LPI #linux
+        - less keys #linux
+        - Linux Foundation #linux
+            - Linux Foundation Certified IT Associate (LFCA) #linux
+            - Linux Foundation Certified System Administrator (LFCS) #linux
+        - LPI Certifications #LPI #linux
+        - tmux key #linux
+        - LPIC-2 - 201-450 and 202-450 #LPI #linux
+        - LPIC-3 Mixed Environments #LPI #linux
+        - LPIC-3 Security  #LPI #linux
+        - LPIC-3 Virtualization and Containerization #LPI #linux
+        - Pacman #linux
+        - LPIC-3 High Availability and Storage Clusters #LPI #linux
+        - LPI DevOps Tools Engineer #LPI #linux
+        - LPI BSD Specialist #LPI #linux
+        - LPI Security Essentials  #LPI #linux
+        - LPI Web Development Essentials #LPI #linux
+        - LPI Open Source Essentials #LPI #linux
+        - LPI #linux
+        - SUSE #linux
+            - SUSE Certified Administrator (SCA) #linux
+            - SUSE Certified Engineer (SCE) #linux
+    - 
+    - The `-rw-rw-r--` part represents the file permissions. This is where the numeric and symbolic notations come in. Let's break it down:
+        - The first character (`-`) indicates this is a regular file. Other common indicators are `d` for directory and `l` for symbolic link.
+        - The next three characters (`rw-`) represent the owner's permissions (read and write, but not execute).
+            - `r` stands for read permission: The owner can open and read the file.
+            - `w` stands for write permission: The owner can modify the file.
+            - `x` stands for execute permission: The owner can run the file (if it's a program or script). A `-` means the permission is denied.
+        - The next three (`rw-`) are for the group. They have the same meaning as above, but apply to members of the file's group.
+        - The last three (`r--`) are for others (everyone else). They also have the same meaning, but apply to users who are neither the owner nor members of the file's group.
+    - Now, let's change these permissions using the `chmod` command. `chmod` stands for "change mode," and it allows you to modify these permissions. We'll start with the **numeric notation**.
+    - `sudo chmod 700 example.txt` Explain Code
+    - In this command:
+        - `700` is a numeric representation of permissions:
+            - The first digit (`7`) represents the owner's permissions.
+            - The second digit (`0`) represents the group's permissions.
+            - The third digit (`0`) represents the others' permissions.
+    - Each digit is a number from 0 to 7, calculated by adding the values for read (4), write (2), and execute (1) permissions:
+        - `4`: Read permission
+        - `2`: Write permission
+        - `1`: Execute permission
+        - `0`: No permission
+    - So, `7` (first digit) gives the owner read (4), write (2), and execute (1) permissions: 4+2+1=7
+    - 
+    - `0` (second digit) gives the group no permissions (0+0+0=0).
+    - 
+    - `0` (third digit) gives others no permissions (0+0+0=0).
+    - Therefore, `700` means: Owner: read, write, execute. Group: none. Others: none.
+    - 
+    - `drwx------ 2 labex labex 4096 Jul 29 15:45 /home/labex/test-dir` Explain Code
+    - The `d` at the beginning indicates that it's a directory. The `rwx------` indicates that the owner has read, write, and execute permissions, while the group and others have no permissions. For directories:
+        - Read permission (`r`) allows you to list the contents of the directory using `ls`.
+        - Write permission (`w`) allows you to create new files and subdirectories within the directory.
+        - Execute permission (`x`) allows you to access files and subdirectories within the directory (i.e., `cd` into it).
+    - 
+    - This command does two things:
+        1. It creates a new file named `script.sh`. The `.sh` extension is commonly used for shell scripts. shell scripts are executable files that contain a series of commands that are executed in sequence.
+        2. It writes two lines into this file:
+            - `#!/bin/bash` (called a shebang) tells the system this is a bash script. The shebang line specifies the interpreter that should be used to execute the script. In this case, it's `/bin/bash`, which is the path to the Bash interpreter.
+            - `echo "Hello, World"` is a command that will print "Hello, World" when the script runs. The `echo` command simply displays the text that follows it.
+            - `\n` is a newline character, ensuring the commands are on separate lines in the file.
+    - Now, let's check its initial permissions:
+    - `ls -l script.sh` Explain Code
+    - You should see something like:
+    - `-rw-rw-r-- 1 labex labex 32 Jul 29 16:30 script.sh` Explain Code
+    - As you can see, initially, the script only has read and write permissions for the owner and group, and read permission for others. It doesn't have execute permission, which is required to run it as a program.
+    - Let's try to run the script:
+    - `./script.sh` Explain Code
+    - You should see a "Permission denied" error because the script doesn't have execute permissions yet. The `./` part tells the shell to execute the script located in the current directory.
+    - Now, let's add execute permission for the owner using **symbolic notation**:
+    - `chmod u+x script.sh` Explain Code
+    - In this command:
+        - `u` refers to the user (owner). Other options are `g` for group, `o` for others, and `a` for all (user, group, and others).
+        - `+x` adds execute permission. The `+` symbol adds a permission, while the `-` symbol removes a permission.
+    - So, `u+x` means "add execute permission for the owner."
+    - 
+    - **Linux File System**: Think of this as a tree-like structure for organizing all the files on your computer. Unlike Windows with its drive letters (C:, D:, etc.), Linux has a single root directory (/) from which everything else branches out.
+    - **Directory**: This is the Linux term for what you might know as a "folder" in other operating systems. It's a container for files and other directories.
+    - **File**: In Linux, almost everything is a file! Regular documents, directories, even hardware devices are treated as files. This unified approach simplifies many operations.
+    - **Path**: This is like an address for a file or directory. We'll learn about absolute paths (which start from the root directory) and relative paths (which start from your current location).
+    - **Terminal**: This is your command center for interacting with Linux. It might look intimidating at first, but you'll soon find it's a powerful tool for managing your system.
+    - **File Search**: Linux provides powerful tools for finding files across the system. We'll explore commands like `find` and `which` to help you quickly locate files and executables.
+- bash #linux
+    -  ^^^**Bash**^^^ ^^^^^short for "^^^^^^^^ *Bourne Again SHell* ^^^^^^^^"^^^^^ 
+        - [Size]();-[H0]()
+        - sh
+        - shell
+    - ^^^^^is an^^^^^ [interactive](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Human%E2%80%93computer_interaction)^^^^^command interpreter and command programming language^^^^^ 
+        - interactive command interpreter 
+        - command programming language
+    - ^^^^^ developed for^^^^^ [UNIX](https://en.wikipedia.org/api/rest_v1/page/mobile-html/UNIX)^^^^^-like operating systems.^^^^^
+        - unix
+        - operating systems 
+    - ^^^^^Created in 1989^^^^^^[[8]](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Bash_%28Unix_shell%29#cite_note-BashBeta-8)^ ^^^^^by Brian Fox ^^^^^ 
+    - unix shell
+    - terminal 
+    - 
+    - ^^^^^As a^^^^^ [command-line interface](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Command-line_interface) ^^^^^(CLI), Bash operates within a terminal emulator, or^^^^^ [text window](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Terminal_emulator)^^^^^, where users input commands to execute various tasks. ^^^^^
+    - ^^^^^It also supports the execution of commands from files, known as^^^^^ [shell scripts](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Shell_script)^^^^^, facilitating^^^^^ [automation](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Automation)^^^^^. ^^^^^
+    - ^^^^^In keeping with Unix shell conventions, Bash incorporates a rich set of features. ^^^^^
+    - ^^^^^The^^^^^ [keywords](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Keyword_%28computer_programming%29)^^^^^,^^^^^ [syntax](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Syntax_%28programming_languages%29)^^^^^,^^^^^ [dynamically scoped](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Scope_%28computer_science%29#Dynamic_scoping) ^^^^^variables, and other basic features of the^^^^^ [language](https://en.wikipedia.org/api/rest_v1/page/mobile-html/Formal_language) ^^^^^are all copied from the Bourne shell, (^^^^^`^^^sh^^^(#f8f9fa)`^^^^^). ^^^^^ 
+    - 
+    - 
+    - #!/bin/bash - This is called a "shebang" line. It tells the system which interpreter should be used to run this script. In this case, we're specifying the Bash shell.
+    - echo 'Hello, World!' - This line uses the echo command to print the text "Hello, World!" to the screen.
+    - 
+    - `chmod` is the command to change file permissions
+    - `+x` means "add execute permission"
+    - `hello.sh` is the name of our file
+    - 
+    - labex.io courses
+        - **Quick Start with Shell** 
+            - Hello, Bash!
+                - Bash (Bourne Again SHell) is the most common and widely used shell in Unix-like systems. 
+                - Zsh (Z Shell) is an extended version of Bash with some improvements and features.
+                - For the purposes of this lab, the differences won't affect our work, as our scripts will explicitly use Bash through the shebang line (`#!/bin/bash`).
+                - `labex:project/ $` 
+                    - This indicates that you're logged in as the user `labex`, and your current directory is `~/project` (which is shorthand for `/home/labex/project`).
+                - This lab will guide you through creating a simple shell script that prints the classic "Hello, World!" message. 
+                - You will learn the fundamentals of shell programming using the Bash shell, 
+                - 
+                - `touch hello.sh` Explain Code
+                - This command creates an empty file named `hello.sh` in your current directory. 
+                - The `.sh` extension is commonly used for shell scripts, but it's not mandatory.
+                - ![](https://remnote-user-data.s3.amazonaws.com/Q1yiPx0PdfdQTJUD8p8zZT5yMDj9gH1kiZgbKUY3OHH9487MlJnXVAMX5elAu1H882JGuyeS10ylKFsbD29OQBcps52fh60OOhU3uBZXyIdAZhAs0Sysj-bAiFXU08II.png)
+                - In the editor, type the following two lines exactly as shown:
+                - ```
+#!/bin/bash
+echo 'Hello, World!'
+``` Explain Code
+                - Let's break down what these lines mean:
+                    1. `#!/bin/bash` - This is called a "shebang" line. It tells the system which interpreter should be used to run this script. In this case, we're specifying the Bash shell.
+                    2. `echo 'Hello, World!'` - This line uses the `echo` command to print the text "Hello, World!" to the screen.
+                - 
+                - # **Make the Script Executable**
+                    - [Size]();-[H1]()
+                - Before we can run our script, we need to make it executable. In Unix-like systems, files have permissions that control who can read, write, or execute them. By default, new files are not executable.
+                - To make our script executable, we use the `chmod` command (which stands for "change mode"). Type the following command in the terminal and press Enter:
+                - `chmod +x hello.sh` Explain Code
+                - Here's what this command does:
+                    - `chmod` is the command to change file permissions
+                    - `+x` means "add execute permission"
+                    - `hello.sh` is the name of our file
+                - You won't see any output from this command if it's successful.
+                - ![](https://remnote-user-data.s3.amazonaws.com/RTc7sgP4r4My86JRjPhAg74dxfIaiSfUf28TCZnIOnR2g54NqxdeiT5A-z6O2UjPc_DJwA70k700RYrPVTlnY0TFhv4NTPghaQD-ryDGYCStytNznFTvAZjLB9GRqMlL.png)**Labby** 
+                - 
+                - # **Execute the Script**
+                    - [Size]();-[H1]()
+                - Now that our script is executable, we can run it. To run a script in the current directory, we use `./` before the script name. This `./` tells the system to look for the script in the current directory.
+                - Type the following command in the terminal and press Enter:
+                - `./hello.sh` Explain Code
+                - If everything has been done correctly, you should see the output:
+                - `Hello, World!` Explain Code
+                - ![](https://remnote-user-data.s3.amazonaws.com/kDpOMtcymRJu7R3RxqMfIXk8ggJ4osFNhkw6ioz3HETCvMSs1ZiH5m9bY-Layaqb0QslM1ChFl7NRcZBZSMYuOYJZ7e8P1Pk4ctAlQht0g-lhtw4XCgoQwErgKTLSo0S.png)
+                - Congratulations! You've just run your first shell script.
+                - ![](https://remnote-user-data.s3.amazonaws.com/60sMZq3dTbBo8TABiI0GpDgcfJgqc3FiGl3NIMg7Vhv_uL3C9Qm19QqO-MuOSEVvOgDZ_mLKLqR5Fq6pVBM0mKykFSgATt098pNpqcciag_bVKkDZIh5dStAAJL8-wg_.png)**Labby** 
+                - 
+                - # **View the Script Contents**
+                    - [Size]();-[H1]()
+                - As a final step, let's view the contents of our script file to confirm everything is correct. We can do this using the `cat` command, which displays the contents of a file in the terminal.
+                - Type the following command in the terminal and press Enter:
+                - `cat hello.sh` Explain Code
+                - You should see the contents of your script displayed:
+                - ```
+#!/bin/bash
+echo 'Hello, World!'
+``` Explain Code
+                - This is a good habit to get into when working with scripts – always double-check your work!
+                - ![](https://remnote-user-data.s3.amazonaws.com/YsdL7_XhI6BiHNlCYH7skMsXX3R788Ez_PWZSGaYaza8cUYj-ic3smtYROTArLAP17ZPP5hO8VVMT4pk5Fp9bNG5_ogaFFM-4pvvWPAwsf_ivEgsiC3rr9SirxhZCUiY.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you have successfully created and executed a simple Bash shell script. You've learned how to:
+                    1. Navigate the WebIDE and use its integrated terminal
+                    2. Create a new script file using either the `touch` command or the WebIDE interface
+                    3. Edit a file using the WebIDE's built-in editor
+                    4. Understand the purpose of the shebang line in shell scripts
+                    5. Use the `echo` command to print text
+                    6. Make a script executable using the `chmod` command
+                    7. Run a shell script from the command line
+                    8. View the contents of a file using the `cat` command
+                - These fundamental skills form the basis for more advanced shell scripting and automation tasks in Unix-like environments. As you continue to learn, you'll discover how powerful and flexible shell scripting can be for managing systems and automating tasks.
+                - Remember, practice is key in programming. Try modifying the script to print different messages or create new scripts to perform other simple tasks. Don't be afraid to experiment – that's how you learn!
+            - Working with Shell Variables
+                - # **Create Shell Variables**
+                    - [Size]();-[H1]()
+                - Shell variables are created by assigning a value to them using the `=` sign. Let's start by creating a simple shell script that defines some variables.
+                    1. Open a terminal in your WebIDE (VS Code).
+                    2. Create a new file named `variables.sh` in the `/home/labex/project` directory:
+                        - `touch /home/labex/project/variables.sh` Explain Code
+                    3. Open the `variables.sh` file in the WebIDE and add the following content:
+                        - ```
+#!/bin/bash
+
+PRICE_PER_APPLE=5
+MyFirstLetters=ABC
+greeting='Hello        world!'
+
+echo "Price per apple: $PRICE_PER_APPLE"
+echo "My first letters: $MyFirstLetters"
+echo "Greeting: $greeting"
+``` Explain Code
+                        - In this script, we've created three variables:
+                            - `PRICE_PER_APPLE`: An integer variable
+                            - `MyFirstLetters`: A string variable
+                            - `greeting`: A string variable with multiple spaces
+                    4. Save the file.
+                    5. Make the script executable:
+                        - `chmod +x /home/labex/project/variables.sh` Explain Code
+                    6. Run the script:
+                        - `./variables.sh` Explain Code
+                        - You should see the following output:
+                        - ```
+Price per apple: 5
+My first letters: ABC
+Greeting: Hello        world!
+``` Explain Code
+                        - Notice that the extra spaces in the `greeting` variable are preserved in the output when using single quotes to define the variable and not using quotes in the echo statement.
+                - ![](https://remnote-user-data.s3.amazonaws.com/1CrguFXhTy7YVcQ2jq9feLnnOD5d7oG5QU9tCQ-ldlYe2qxxbeAxOowj-FzB7622uu7AFMnQ7cxrbFeHarI9XdgXza5VslFlalEXEptkLYVjGTyk88SlOl9Zc5v27WBO.png)**Labby** 
+                - 
+                - # **Referencing Shell Variables**
+                    - [Size]();-[H1]()
+                - When referencing shell variables, there are a few scenarios where you need to use special syntax. Let's explore these cases.
+                    1. Open the `variables.sh` file in the WebIDE.
+                    2. Replace the content of the file with the following:
+                        - ```
+#!/bin/bash
+
+PRICE_PER_APPLE=5
+MyFirstLetters=ABC
+greeting='Hello        world!'
+
+# Escaping special characters
+echo "The price of an Apple today is: \$HK $PRICE_PER_APPLE"
+
+# Avoiding ambiguity
+echo "The first 10 letters in the alphabet are: ${MyFirstLetters}DEFGHIJ"
+
+# Preserving whitespace
+echo $greeting
+echo "$greeting"
+``` Explain Code
+                    3. Save the file.
+                    4. Run the script:
+                        - `./variables.sh` Explain Code
+                        - You should see the following output:
+                        - ```
+The price of an Apple today is: $HK 5
+The first 10 letters in the alphabet are: ABCDEFGHIJ
+Hello world!
+Hello        world!
+``` Explain Code
+                        - Note the differences:
+                            - The `$` sign is escaped in the first line to print it literally.
+                            - Curly braces `{}` are used to clearly define the variable name in the second line.
+                            - The last two lines show the difference between using quotes and not using quotes when referencing a variable with whitespace.
+                - ![](https://remnote-user-data.s3.amazonaws.com/CQV-xEUIbzbvnSemYm_55ryEaaJ-TQYFEW0dsxIv9MY3vJugRa0AdJqr84d-bPhd385L6Kutg53MijJL0-Gp300tBoHMKSdv6hURRprVsC_k42VrjS-_SYQPzBp4M3tD.png)**Labby** 
+                - 
+                - # **Command Substitution**
+                    - [Size]();-[H1]()
+                - Command substitution allows you to use the output of a command as the value of a variable. This is done by enclosing the command with `$()` or backticks (``).
+                    1. Open the `variables.sh` file in the WebIDE.
+                    2. Add the following content to the end of the file:
+                        - ```
+# Command substitution
+CURRENT_DATE=$(date +"%Y-%m-%d")
+echo "Today's date is: $CURRENT_DATE"
+
+FILES_IN_DIR=$(ls)
+echo "Files in the current directory:"
+echo "$FILES_IN_DIR"
+
+UPTIME=$(uptime -p)
+echo "System uptime: $UPTIME"
+``` Explain Code
+                    3. Save the file.
+                    4. Run the script:
+                        - `./variables.sh` Explain Code
+                        - You should see output similar to this (the actual values will depend on your system):
+                        - ```
+Today's date is: 2023-08-16
+Files in the current directory:
+variables.sh
+System uptime: up 2 hours, 15 minutes
+``` Explain Code
+                        - In this example:
+                            - `$(date +"%Y-%m-%d")` runs the `date` command and captures its output.
+                            - `$(ls)` runs the `ls` command and captures its output.
+                            - `$(uptime -p)` runs the `uptime` command with the `-p` option and captures its output.
+                - ![](https://remnote-user-data.s3.amazonaws.com/uf91fWIQnvzVoPkcLxcHzdR4D4_UAunbnfcfOIixXq51WJVlIrdRh9GoHbcYJCND8TPcU9rnVVbbiydED5lk7mMiicEo3tNwEbAv1SU2kljmyHNbBqnkJtdeVw0zNucX.png)**Labby** 
+                - 
+                - # **Arithmetic Operations**
+                    - [Size]();-[H1]()
+                - Shell variables can also be used in arithmetic operations. Bash provides the `$((expression))` syntax for performing arithmetic.
+                    1. Create a new file named `arithmetic.sh` in the `/home/labex/project` directory:
+                        - `touch /home/labex/project/arithmetic.sh` Explain Code
+                    2. Open the `arithmetic.sh` file in the WebIDE and add the following content:
+                        - ```
+#!/bin/bash
+
+X=10
+Y=5
+
+# Addition
+SUM=$((X + Y))
+echo "Sum of $X and $Y is: $SUM"
+
+# Subtraction
+DIFF=$((X - Y))
+echo "Difference between $X and $Y is: $DIFF"
+
+# Multiplication
+PRODUCT=$((X * Y))
+echo "Product of $X and $Y is: $PRODUCT"
+
+# Division
+QUOTIENT=$((X / Y))
+echo "Quotient of $X divided by $Y is: $QUOTIENT"
+
+# Modulus (remainder)
+REMAINDER=$((X % Y))
+echo "Remainder of $X divided by $Y is: $REMAINDER"
+
+# Increment
+X=$((X + 1))
+echo "After incrementing, X is now: $X"
+
+# Decrement
+Y=$((Y - 1))
+echo "After decrementing, Y is now: $Y"
+``` Explain Code
+                    3. Save the file.
+                    4. Make the script executable:
+                        - `chmod +x /home/labex/project/arithmetic.sh` Explain Code
+                    5. Run the script:
+                        - `./arithmetic.sh` Explain Code
+                        - You should see the following output:
+                        - ```
+Sum of 10 and 5 is: 15
+Difference between 10 and 5 is: 5
+Product of 10 and 5 is: 50
+Quotient of 10 divided by 5 is: 2
+Remainder of 10 divided by 5 is: 0
+After incrementing, X is now: 11
+After decrementing, Y is now: 4
+``` Explain Code
+                        - This script demonstrates various arithmetic operations using shell variables.
+                - ![](https://remnote-user-data.s3.amazonaws.com/wZ33oUSp1K9mB0kyr855NmVwMl0Hgr3b6XQILFIV7e_DqChjUCptzWrAvgW4XYQuSZ7DBxGBnDrOcFGLwUd3IVX7eQRGJ0SOmAewRusXymX8Tt9KVZbX-vWMnpcZUUmo.png)**Labby** 
+                - 
+                - # **Using Environment Variables**
+                    - [Size]();-[H1]()
+                - Environment variables are a type of variable that is available to all processes running in the current shell session. Let's explore some common environment variables and how to create our own.
+                    1. Create a new file named `environment.sh` in the `/home/labex/project` directory:
+                        - `touch /home/labex/project/environment.sh` Explain Code
+                    2. Open the `environment.sh` file in the WebIDE and add the following content:
+                        - ```
+#!/bin/bash
+
+# Displaying some common environment variables
+echo "Home directory: $HOME"
+echo "Current user: $LOGNAME"
+echo "Shell being used: $SHELL"
+echo "Current PATH: $PATH"
+
+# Creating a new environment variable
+export MY_VARIABLE="Hello from my variable"
+
+# Displaying the new variable
+echo "My new variable: $MY_VARIABLE"
+
+# Creating a child process to demonstrate variable scope
+bash -c 'echo "MY_VARIABLE in child process: $MY_VARIABLE"'
+
+# Removing the environment variable
+unset MY_VARIABLE
+
+# Verifying the variable is unset
+echo "MY_VARIABLE after unsetting: $MY_VARIABLE"
+``` Explain Code
+                    3. Save the file.
+                    4. Make the script executable:
+                        - `chmod +x /home/labex/project/environment.sh` Explain Code
+                    5. Run the script:
+                        - `./environment.sh` Explain Code
+                        - You should see output similar to this (the actual values will depend on your system):
+                        - ```
+Home directory: /home/labex
+Current user: labex
+Shell being used: /bin/zsh
+Current PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+My new variable: Hello from my variable
+MY_VARIABLE in child process: Hello from my variable
+MY_VARIABLE after unsetting:
+``` Explain Code
+                        - This script demonstrates how to access existing environment variables, create new ones, and remove them.
+                - ![](https://remnote-user-data.s3.amazonaws.com/bNvLe8QTfD5T585QQZeWhJoFnFRmG5vORyHwGnGKoKiwWgSalZJRc3kIjz53QTafZygt9fZhCsr9s6emqyjeJFWJKAlyRAuR24rtMqfT4K-3wf6zTthMqlVTLzoSb0EX.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you learned how to work with shell variables in Linux. You explored creating and referencing variables, using command substitution to assign command outputs to variables, performing arithmetic operations with variables, and working with environment variables. These skills form a crucial foundation for shell scripting and will be invaluable as you continue to work with Linux systems.
+                - Key takeaways from this lab include:
+                    - Creating and referencing shell variables
+                    - Using special syntax for variable referencing in different scenarios
+                    - Utilizing command substitution to capture command outputs
+                    - Performing arithmetic operations with shell variables
+                    - Working with environment variables
+                - As you continue your journey in Linux and shell scripting, remember that variables are powerful tools for storing and manipulating data. Practice using them in your scripts to make your code more flexible and reusable.
+            - Finding the Pirate's Treasure
+                - # **Decoding the Treasure Map**
+                    - [Size]();-[H1]()
+                - The treasure map has been encoded into a shell script that needs to be completed. The script uses basic arithmetic operations to convert the initial coordinates into the final location. Your task is to fill in the missing values and calculations to reveal where the treasure is buried.
+                - ## **Tasks**
+                    - [Size]();-[H2]()
+                - Complete the `treasure_map.sh` script in the `/home/labex/project` directory by:
+                    - Assigning the correct initial values to the `LATITUDE` and `LONGITUDE` variables.
+                    - Implementing arithmetic operations to calculate `PACES_NORTH` and `PACES_EAST`.
+                - ## **Requirements**
+                    1. The shell script `treasure_map.sh` is located in `/home/labex/project` with the following code structure:
+                    - [Size]();-[H2]()
+                - ```
+#!/bin/bash
+
+# Assign the correct values to these variables
+LATITUDE=
+LONGITUDE=
+
+# Calculate the paces using arithmetic operations
+PACES_NORTH=
+PACES_EAST=
+
+# Don't modify the line below
+echo "The treasure is buried $PACES_NORTH paces north and $PACES_EAST paces east from the old oak tree."
+``` Explain Code
+                    1. Use these values and calculations:
+                        - Set `LATITUDE` to `15`.
+                        - Set `LONGITUDE` to `25`.
+                        - Calculate `PACES_NORTH` as latitude multiplied by 2.
+                        - Calculate `PACES_EAST` as longitude divided by 5.
+                    2. The script will output the treasure location in this format:
+                - `The treasure is buried X paces north and Y paces east from the old oak tree.` Explain Code
+                - Where X and Y are the calculated values.
+                - ## **Example Output**
+                    - [Size]();-[H2]()
+                - `The treasure is buried 30 paces north and 5 paces east from the old oak tree.` Explain Code
+                - ## **Hints**
+                    - Make sure the script is executable by using `chmod +x`.
+                    - [Size]();-[H2]()
+                - ![](https://remnote-user-data.s3.amazonaws.com/PymJCTz9syE_W_GCzSxu0iFI7Y9e0MMRE6Oj5WCn0GglJC7YGtmQirU2gdGcOgYe-S8gNpBZh_gweg9gcSY2-IghaD5o6APZkKEKrboT6T10eDv7lzqbpn-SObtDNBEH.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this challenge, you have learned the fundamentals of shell scripting:
+                    - Assigning values to variables.
+                    - Performing arithmetic operations in shell scripts.
+                    - Executing scripts and formatting output.
+                - These skills are foundational for more complex shell scripting tasks.
+            - Passing Arguments to the Script
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - In Shell programming, the ability to pass arguments to a script is a fundamental and powerful feature. It allows scripts to be more flexible and reusable by accepting input from the command line. This lab will guide you through the process of creating a Shell script that can accept and use command-line arguments. You will learn how to access these arguments within your script, handle multiple arguments, and use special variables to process them efficiently.
+                - ![](https://remnote-user-data.s3.amazonaws.com/lQMnQr_f44K1Bw_De0tYmv6PKIYCmuQ-sCBlZIP3ZNWuCk9z3WJVjuDmI_V80IC-ECZKoDP9-n_28P2FDnDJao3-ydHxHXV8uuMibjgBi87hPMgOMKOm7v3AOIMn9rWd.png)**Labby** 
+                - 
+                - # **Create a new script file**
+                    - [Size]();-[H1]()
+                - Let's start by creating a new script file. We'll use the WebIDE (VS Code) for this lab.
+                    1. Open the WebIDE if it's not already open.
+                    2. In the file explorer on the left, navigate to the `/home/labex/project` directory.
+                    3. Right-click in the file explorer and select "New File".
+                    4. Name the new file `arguments.sh`.
+                - Now that we have created the file, let's add the basic structure of our script:
+                - ```
+#!/bin/bash
+
+# Your code will go here
+``` Explain Code
+                - The first line is called the "shebang" or "hashbang". It tells the system which interpreter to use to execute the script. In this case, we're using bash.
+                - For beginners: The shebang line is important because it allows you to run the script directly (like `./arguments.sh`) instead of having to type `bash arguments.sh` every time. It's a small detail, but it makes your scripts more convenient to use.
+                - ![](https://remnote-user-data.s3.amazonaws.com/ZqVQqJkkmUTqrwnG8snbmr4bj0YiPmggP4hmI9O3RUgFxxzNy6DuTqchSsYLd3UXIOZ1_K29bgS2nQRSWGlmn3NnkeB4ZpDFHEJ2dMCTP0v-F8BrLr02B1kag4pbgfl1.png)**Labby** 
+                - 
+                - # **Access script arguments**
+                    - [Size]();-[H1]()
+                - Now, let's modify our script to access and display the arguments passed to it. In Shell scripting, special variables are used to access command-line arguments:
+                    - `$0` represents the name of the script itself
+                    - `$1`, `$2`, `$3`, etc., represent the first, second, third arguments, and so on
+                - Add the following code to your `arguments.sh` file:
+                - ```
+#!/bin/bash
+
+echo "Script name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+echo "Third argument: $3"
+``` Explain Code
+                - This script will display the script name and the first three arguments passed to it.
+                - For beginners:
+                    - The `$` symbol is used to reference variables in bash.
+                    - `$0`, `$1`, `$2`, etc., are special variables that bash automatically sets for you when you run a script with arguments.
+                    - If you run the script without any arguments, `$1`, `$2`, and `$3` will be empty, but the script will still run without errors.
+                - ![](https://remnote-user-data.s3.amazonaws.com/Lm-1aBXtG9BlxKt3V3Lefq-Ui_5D4dL3m4f4htxhTgyFjremsWieQ5h_2yKC083xm7hIPptk_qb4GCPz80wnHO_ri558RFIE145tFLq6FY_oVNCZnCSaU2v2mJz0awj-.png)**Labby** 
+                - 
+                - # **Make the script executable**
+                    - [Size]();-[H1]()
+                - Before we can run our script, we need to make it executable. This is done using the `chmod` command. In the terminal, navigate to the project directory and run the following command:
+                - ```
+cd /home/labex/project
+chmod +x arguments.sh
+``` Explain Code
+                - The `chmod +x` command adds execute permissions to the file, allowing it to be run as a script.
+                - For beginners:
+                    - `chmod` stands for "change mode". It's used to change the permissions of a file or directory.
+                    - The `+x` option adds the execute permission. This is necessary for bash to be able to run the file as a script.
+                    - If you forget this step, you'll get a "permission denied" error when trying to run your script.
+                - ![](https://remnote-user-data.s3.amazonaws.com/KZP0Fz-P7AaCoZnv6BWA7FAOXVBZO56sQcxJyOSxslMw1HCwTW-ACfjhlzXo4Ga1e2cQyc2OvYqMrrVrKtd7kmILR6FvWRAncWYpv-beeI-wI4Vw3XvkWTSUfHWORbXg.png)**Labby** 
+                - 
+                - # **Execute the script with arguments**
+                    - [Size]();-[H1]()
+                - Now that our script is executable, let's run it with some arguments. In the terminal, execute the following command:
+                - `./arguments.sh hello world example` Explain Code
+                - You should see output similar to this:
+                - ```
+Script name: ./arguments.sh
+First argument: hello
+Second argument: world
+Third argument: example
+``` Explain Code
+                - This output shows that our script successfully accessed and displayed the command-line arguments.
+                - For beginners:
+                    - The `./` before the script name tells bash to look for the script in the current directory.
+                    - Each word after the script name becomes a separate argument. In this case, "hello" is the first argument, "world" is the second, and "example" is the third.
+                    - If you want to pass an argument with spaces, you need to use quotes, like this: `./arguments.sh "hello world" example`
+                - ![](https://remnote-user-data.s3.amazonaws.com/A4OO2-3sNArDxWpXdryW8Apq6tnIzbe-yRc0oVUrOKMAXlqXBrmjXHpHmnrOlNZqTvZJI-KNNxNTEzigJblsqk3xwAqnXXL2HdAzzQ0oBHOqjaLLQzS9_cm1M4V3LKVb.png)**Labby** 
+                - 
+                - # **Handle the number of arguments**
+                    - [Size]();-[H1]()
+                - Let's modify our script to handle different numbers of arguments. We'll use the `$#` special variable, which holds the number of arguments passed to the script.
+                - Update your `arguments.sh` file with the following content:
+                - ```
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+  echo "No arguments provided."
+elif [ $# -eq 1 ]; then
+  echo "One argument provided: $1"
+elif [ $# -eq 2 ]; then
+  echo "Two arguments provided: $1 and $2"
+else
+  echo "More than two arguments provided:"
+  echo "First argument: $1"
+  echo "Second argument: $2"
+  echo "Third argument: $3"
+  echo "Total number of arguments: $#"
+fi
+``` Explain Code
+                - This script uses conditional statements to handle different numbers of arguments.
+                - For beginners:
+                    - `$#` is a special variable that contains the number of arguments passed to the script.
+                    - `[ $# -eq 0 ]` is a condition that checks if the number of arguments is equal to 0.
+                    - `elif` is short for "else if". It allows you to check multiple conditions in sequence.
+                    - The `-eq` operator means "equal to". There are other operators like `-lt` (less than), `-gt` (greater than), etc.
+                - ![](https://remnote-user-data.s3.amazonaws.com/-1GlftKX-g0btGjHScQOitn1E5xRCm3SLd1bVVeIN_zMwcv04Y3ofG4zgbuo4jMtaeunUSHY4I-npwmnvidXrkmp_QWF12hXAIXfa0tuoSWAnP8pwFjJiVfl4Nq9FAQn.png)**Labby** 
+                - 
+                - # **Test the updated script**
+                    - [Size]();-[H1]()
+                - Now, let's test our updated script with different numbers of arguments:
+                - ```
+./arguments.sh
+./arguments.sh one
+./arguments.sh one two
+./arguments.sh one two three four
+``` Explain Code
+                - You should see different outputs based on the number of arguments provided.
+                - For beginners:
+                    - Running the script without any arguments (`./arguments.sh`) will trigger the first condition in our script.
+                    - Each subsequent command adds more arguments, demonstrating how our script handles different cases.
+                    - Notice how the script's behavior changes based on the number of arguments. This kind of flexibility is very useful in real-world scripts.
+                - ![](https://remnote-user-data.s3.amazonaws.com/NWq_bFPv8PqkIWn9YJcrE-WaHY7qPNzuLzb6isIrvr_OhLXMsRSPlzcz0AxU0olMuH_OEKTIOT00X2LI07Od6eY78hgIuua2r-YGFOL0z8APSzz2AK963pLkMSvkSY3_.png)**Labby** 
+                - 
+                - # **Loop through all arguments**
+                    - [Size]();-[H1]()
+                - Finally, let's modify our script to loop through all provided arguments using the `$@` special variable, which represents all command-line arguments.
+                - Update your `arguments.sh` file with the following content:
+                - ```
+#!/bin/bash
+
+echo "Total number of arguments: $#"
+echo "All arguments:"
+
+count=1
+for arg in "$@"; do
+  echo "Argument $count: $arg"
+  count=$((count + 1))
+done
+``` Explain Code
+                - This script uses a `for` loop to iterate through all arguments and display them with their position.
+                - For beginners:
+                    - `$@` is a special variable that contains all the arguments passed to the script.
+                    - The `for` loop is used to iterate over a list of items. In this case, it's iterating over all the arguments.
+                    - `$((count + 1))` is arithmetic expansion in bash. It's used to increment the count variable.
+                    - This script will work with any number of arguments, making it more flexible than our previous versions.
+                - ![](https://remnote-user-data.s3.amazonaws.com/RlcYXjNaBkIIp3PRRvrDPPaUT3bgU3zSSJBE9dvkx9qotU8mQNuIwgMijVylO3dYXQHxRgi9kUgOOE_o-D9munIe0Dc3Kjj4wZi-ofdjDHw6j6QYI-dda3Qt2tR5ns2r.png)**Labby** 
+                - 
+                - # **Test the final script**
+                    - [Size]();-[H1]()
+                - Let's test our final script with multiple arguments:
+                - `./arguments.sh apple banana cherry date` Explain Code
+                - You should see output similar to this:
+                - ```
+Total number of arguments: 4
+All arguments:
+Argument 1: apple
+Argument 2: banana
+Argument 3: cherry
+Argument 4: date
+``` Explain Code
+                - This demonstrates that our script can now handle any number of arguments and display them all.
+                - For beginners:
+                    - This final version of the script is much more flexible than our earlier versions.
+                    - It can handle any number of arguments, from zero to many.
+                    - The script now numbers each argument, which can be very useful in more complex scripts.
+                    - Try running the script with different numbers of arguments to see how it behaves.
+                - ![](https://remnote-user-data.s3.amazonaws.com/WQQJkRejkZYT2DWkvKF42MohmHpwp3bzen5Nr3V8mFU4EkQ7zgFwemTt7VCSxskG3fGXQ1q8GEOSCxCwPs4M4WYm6d7DyyJ6BK-TNN1E5XNVBc75ckpv-n-EtNV8saGF.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you have learned how to create a Shell script that can accept and process command-line arguments. You've explored several key concepts:
+                    1. Creating and making a script executable
+                    2. Accessing individual arguments using special variables ($1, $2, etc.)
+                    3. Using the $# variable to determine the number of arguments
+                    4. Implementing conditional logic to handle different numbers of arguments
+                    5. Using the $@ variable to loop through all provided arguments
+                - These skills are fundamental in Shell scripting and will allow you to create more flexible and powerful scripts that can adapt to different inputs. As you continue to develop your Shell scripting skills, you'll find that the ability to handle command-line arguments is crucial for creating versatile and reusable scripts for various tasks in system administration and automation.
+            - Shell Arrays
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - In this lab, you will learn how to work with arrays in shell programming. Arrays are data structures that allow you to store multiple values under a single name, making it easier to organize and manipulate data. You will learn how to initialize arrays, add elements to them, access elements by their index, and determine the number of elements in an array. This knowledge is fundamental for more advanced shell scripting and data manipulation tasks.
+                - ![](https://remnote-user-data.s3.amazonaws.com/Z9USG1SD6KG7H5zKCovQ_TmSaMuirmEJ8V3U2BDHUvaw5jtXGededfyOsYRH7_moo7w9nTegs_V1iXoA6F3G-5j7zMcuMXidH3mJN_NE-hAjIXx_CwfMOI26pNNXO1aa.png)**Labby** 
+                - 
+                - # **Create a new shell script file**
+                    - [Size]();-[H1]()
+                - Let's start by creating a new shell script file where we'll write our array operations.
+                    1. Open your terminal in the WebIDE.
+                    2. Navigate to the project directory:
+                        - `cd ~/project` Explain Code
+                    3. Create a new file named `arrays.sh` using the touch command:
+                        - `touch arrays.sh` Explain Code
+                    4. Open the `arrays.sh` file in the WebIDE.
+                - ![](https://remnote-user-data.s3.amazonaws.com/wv-LOTitj_Pw455tCqeNHEVH0K7IKSR4Ukzih88tCIHJtrvFOns3QtbX6HAPb41W_WiAsHY0gfA6BOSr4WVRXLgxyoyCOdn_e9rg4bYZHS8jCnve7Pkmq0EewGW9MYZY.png)**Labby** 
+                - 
+                - # **Initialize empty arrays**
+                    - [Size]();-[H1]()
+                - Now that we have our script file, let's start by initializing three empty arrays.
+                - Add the following code to your `arrays.sh` file:
+                - ```
+#!/bin/bash
+
+# Initialize empty arrays
+NUMBERS=()
+STRINGS=()
+NAMES=()
+``` Explain Code
+                - Let's break down what this code does:
+                    - The first line `#!/bin/bash` is called a shebang. It tells the system that this script should be executed by the Bash shell.
+                    - We're creating three empty arrays: `NUMBERS`, `STRINGS`, and `NAMES`.
+                    - The `()` syntax initializes an empty array.
+                - ![](https://remnote-user-data.s3.amazonaws.com/G8bOOBz0OhFC06lgR0RZKRsDoFKhAOipVpp4_lAnhi8OYYftP1wgiO-OQUzFS-OLF1vz6tjMAxfURqn1GzcCjlB98fp6qqhQTM96bZGqvpR-fpSf8OPuOjYKNrbcQM4j.png)**Labby** 
+                - 
+                - # **Add elements to the arrays**
+                    - [Size]();-[H1]()
+                - Now that we have our empty arrays, let's add some elements to them.
+                - Add the following code to your `arrays.sh` file, below the array initializations:
+                - ```
+# Add elements to NUMBERS array
+NUMBERS+=(1)
+NUMBERS+=(2)
+NUMBERS+=(3)
+
+# Add elements to STRINGS array
+STRINGS+=("hello")
+STRINGS+=("world")
+
+# Add elements to NAMES array
+NAMES+=("John")
+NAMES+=("Eric")
+NAMES+=("Jessica")
+``` Explain Code
+                - Here's what this code does:
+                    - We use the `+=` operator to append elements to our arrays.
+                    - For `NUMBERS`, we're adding the integers 1, 2, and 3.
+                    - For `STRINGS`, we're adding the words "hello" and "world".
+                    - For `NAMES`, we're adding three names: "John", "Eric", and "Jessica".
+                    - Note that we enclose string elements in quotes, but numbers don't need quotes.
+                - ![](https://remnote-user-data.s3.amazonaws.com/VTMbHI0Yfkja0dZrMZyRt79TshvAD0wil-9xDE0CSDSvNYAbl4upI92TR-j0vCdOhZrSW3plW346_zfor_cGC9OVbvUBmhk99Xm4otJ7PG93rcYXL9MXj6-h0V6liidP.png)**Labby** 
+                - 
+                - # **Determine the number of elements in an array**
+                    - [Size]();-[H1]()
+                - One common operation with arrays is finding out how many elements they contain. Let's do this for our `NAMES` array.
+                - Add the following code to your `arrays.sh` file:
+                - ```
+# Get the number of elements in the NAMES array
+NumberOfNames=${#NAMES[@]}
+``` Explain Code
+                - This line does the following:
+                    - `${#NAMES[@]}` gives us the number of elements in the `NAMES` array.
+                    - We store this value in a variable called `NumberOfNames`.
+                    - The `@` symbol inside the brackets refers to all elements of the array.
+                    - The `#` symbol before `NAMES` tells the shell to count the elements.
+                - ![](https://remnote-user-data.s3.amazonaws.com/_mVglPeeav85gtfpAyje8imKB0T60U3I-MZD7wu-OCkoP4Dpaf6ak7TOJklNWsJUpKgg7LoszriTORSXqqyyWkFfFGlyl75kxsJTjd-zZb6r_tNYb27HzzfChzTqpIrY.png)**Labby** 
+                - 
+                - # **Access a specific element in an array**
+                    - [Size]();-[H1]()
+                - Now, let's access a specific element in our `NAMES` array. We'll get the second name.
+                - Add this code to your `arrays.sh` file:
+                - ```
+# Access the second name in the NAMES array
+second_name=${NAMES[1]}
+``` Explain Code
+                - Here's what this code does:
+                    - We're accessing the second element of the `NAMES` array with `${NAMES[1]}`.
+                    - Remember, array indices in Bash start at 0, so `[1]` gives us the second element.
+                    - We store this value in a variable called `second_name`.
+                - ![](https://remnote-user-data.s3.amazonaws.com/vXJhhPexMNP36xXgdzyuol3gyO-HDAeaCYM2SiwGnXiyh7NcoQGN9FDCt-08o4WW3xUDiNEINLVvQh6vOOS5c0KNKKMAn_K7299Jqu-u5zh3Jzm7ZJArAh1iZqPkQHDe.png)**Labby** 
+                - 
+                - # **Print the arrays and variables**
+                    - [Size]();-[H1]()
+                - Finally, let's add some code to print out our arrays and variables to see the results of our operations.
+                - Add the following code to the end of your `arrays.sh` file:
+                - ```
+# Print the arrays and variables
+echo "NUMBERS array: ${NUMBERS[@]}"
+echo "STRINGS array: ${STRINGS[@]}"
+echo "The number of names listed in the NAMES array: $NumberOfNames"
+echo "The second name on the NAMES list is: $second_name"
+``` Explain Code
+                - This code does the following:
+                    - We use `echo` to print strings to the console.
+                    - `${NUMBERS[@]}` and `${STRINGS[@]}` print all elements of these arrays.
+                    - We print the `NumberOfNames` and `second_name` variables we created earlier.
+                - ![](https://remnote-user-data.s3.amazonaws.com/lT5QHPwwwz5Uh-QAUCBb80WVQVbN15uXix9BbH2mdQ99d8dVKiTcZ8vMj-B8vDjSuzZU7A64I3aObPm3VHn5iAw0wW05t3lHafL19VpXEfk4yZ7Caw3zPx4g15Pvv2ir.png)**Labby** 
+                - 
+                - # **Run the script**
+                    - [Size]();-[H1]()
+                - Now that we've written our script, it's time to run it and see the results.
+                    1. In your terminal, make sure you're in the correct directory:
+                        - `cd ~/project` Explain Code
+                    2. Make the script executable:
+                        - `chmod +x arrays.sh` Explain Code
+                    3. Run the script:
+                        - `./arrays.sh` Explain Code
+                - You should see output similar to this:
+                - ```
+NUMBERS array: 1 2 3
+STRINGS array: hello world
+The number of names listed in the NAMES array: 3
+The second name on the NAMES list is: Eric
+``` Explain Code
+                - This output shows that our array operations were successful:
+                    - The `NUMBERS` array contains 1, 2, and 3.
+                    - The `STRINGS` array contains "hello" and "world".
+                    - We correctly counted 3 names in the `NAMES` array.
+                    - We successfully retrieved "Eric" as the second name.
+                - ![](https://remnote-user-data.s3.amazonaws.com/onGgYqWmwn3O7atcGkx1wXFy6sT77j-CphcYYcxuGXaxaxY3354ikROmLtY7rS4eHaD4PzipbJBqiFu10ZU4rpmhjqu7wWsr-_WR5De184lK6qMnelG_InTnGsH3IU9P.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you've learned the fundamentals of working with arrays in shell scripting. You've practiced initializing arrays, adding elements to them, accessing specific elements, and determining the number of elements in an array. These skills are crucial for more advanced shell scripting tasks, especially when dealing with lists of data or when you need to perform operations on multiple items. Arrays provide a powerful way to organize and manipulate data in your shell scripts, making your code more efficient and easier to manage.
+            - Interstellar Cargo Manifest
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - Welcome, space cadet! You're training to become a cargo officer on the interstellar ship "Nebula Nomad." Your first task is to create a simple inventory system for the ship's three cargo bays. You'll use shell arrays to store the inventory and accept a command-line argument to display the contents of a specific cargo bay.
+                - This is a Challenge, which differs from a Guided Lab in that you need to try to complete the challenge task independently, rather than following the steps of a lab to learn. Challenges are usually a bit difficult. If you find it difficult, you can discuss with Labby or check the solution. Historical data shows that this is a beginner level challenge with a 94.77% pass rate.
+                - ![](https://remnote-user-data.s3.amazonaws.com/kOhqDNJ-A1t-kR6aR8zo2e3wwipMgPCZV3Ar6V2-ogpWBOUm8QjqpOtsRS-M3Y-_o-rSl04vAgxBbqiHbcWxgm_xvycBYDEFoVfK08bBDUQEY7w06SJynBBPoghqWuwH.png)**Labby** 
+                - 
+                - # **Creating the Cargo Manifest Script**
+                    - [Size]();-[H1]()
+                - ## **Tasks**
+                    1. Open the existing shell script named `cargo_manifest.sh` in the `/home/labex/project` directory.
+                    2. Complete the script by filling in the missing parts to create and display the ship's cargo inventory.
+                    3. Run the script with different arguments to display each cargo bay's inventory.
+                    - [Size]();-[H2]()
+                - ## **Requirements**
+                    1. The script `cargo_manifest.sh` is already created in the `/home/labex/project` directory with a code framework.
+                    2. Complete the script by:
+                        - Creating three arrays named `forward_bay`, `midship_bay`, and `aft_bay`.
+                        - Each array should contain exactly 3 items (strings) representing cargo items.
+                        - Use the `$1` variable to check which cargo bay inventory to display.
+                        - Display the inventory of the requested cargo bay using `echo` statements.
+                    3. The script should accept one argument: either "forward", "midship", or "aft".
+                    4. If no argument is provided, the script should display: "Please specify a cargo bay: forward, midship, or aft"
+                    5. If an invalid argument is provided, the script should display: "Invalid cargo bay. Choose forward, midship, or aft."
+                    - [Size]();-[H2]()
+                - ## **Example**
+                    - [Size]();-[H2]()
+                - After completing the script, running it should produce output similar to this:
+                - ```
+$ ./cargo_manifest.sh forward
+Forward Bay Inventory:
+1. Space Suits
+2. Oxygen Tanks
+3. Repair Kits
+
+$ ./cargo_manifest.sh midship
+Midship Bay Inventory:
+1. Food Supplies
+2. Water Containers
+3. Medical Equipment
+
+$ ./cargo_manifest.sh aft
+Aft Bay Inventory:
+1. Spare Parts
+2. Fuel Cells
+3. Scientific Instruments
+
+$ ./cargo_manifest.sh
+Please specify a cargo bay: forward, midship, or aft
+
+$ ./cargo_manifest.sh engine
+Invalid cargo bay. Choose forward, midship, or aft.
+``` Explain Code
+                - The script's strings must reference the examples and remain unchanged to prevent test failures.
+                - ![](https://remnote-user-data.s3.amazonaws.com/zmsbHQvO7WtTN7D_UDj3wdICPZmbjJf4Nhzwp5JQ9zxW6Yx5fI_pz93gy6bDtVYgHiOhuEm9m1ZCUBCNpI1a19ekBeIBY-pLr2Se_AYgiRqy0ce_tjbeYVkJjeSTqjJV.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this challenge, you've created a simple inventory management system using shell arrays and basic command-line argument handling. You've practiced defining arrays, accessing array elements, and using if statements to process command-line inputs. These fundamental skills are important for shell scripting and will help you in more advanced scripting tasks. Keep practicing, and you'll be ready to manage real interstellar cargo inventories in no time!
+            - Arithmetic Operations in Shell
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - In this lab, you will learn how to perform basic arithmetic operations in Shell programming. You'll create a simple script to calculate the total cost of a fruit basket, demonstrating the use of variables and arithmetic expressions in Bash. This lab is designed for beginners, so we'll explain each step in detail.
+                - ![](https://remnote-user-data.s3.amazonaws.com/3CCYBo74OA5UrarwQH-deR7GduODDJNM7KKM8FoKtbgILC98d6C0DSMZp3w5RurxXy01k7sCTOXNL0z_h5GKipTJa5HaE5_r_9vEq71-RL5kibDA-s2sovavBYrMBUBj.png)**Labby** 
+                - 
+                - # **Create a new Bash script**
+                    - [Size]();-[H1]()
+                - Let's start by creating a new Bash script file.
+                    1. Open your terminal in the WebIDE. You should see a command prompt, which might look something like this: `labex@ubuntu:~/project$`.
+                    2. We'll create our script in the `project` directory. You're already in this directory by default, but let's make sure by using the `cd` command:
+                        - `cd ~/project` Explain Code
+                        - This command changes the current directory to `/home/labex/project`.
+                    3. Now, let's create a new file named `fruit_basket.sh`. We'll use the `touch` command, which creates an empty file:
+                        - `touch fruit_basket.sh` Explain Code
+                    4. Open the `fruit_basket.sh` file in the WebIDE editor. You can do this by clicking on the file name in the file explorer on the left side of the WebIDE.
+                    5. Every Bash script should start with a "shebang" line. This line tells the system which interpreter to use to run the script. Add the following line at the beginning of the file:
+                        - `#!/bin/bash` Explain Code
+                        - This line specifies that the script should be run with the Bash interpreter.
+                - ![](https://remnote-user-data.s3.amazonaws.com/UBUfH3TldXOLOsnL6BKYVy0PanagxMucWi3nCcYRp_M7wEKH6_WjhcN3bUGlb3edH2JXnUQ3tBqWphooF02roUb5vPb13GP8kYZV7F0vHyoCZcBkfSJHO4KWB7XiPAL8.png)**Labby** 
+                - 
+                - # **Define variables for fruit costs**
+                    - [Size]();-[H1]()
+                - Now that we have our script file, let's define some variables to store the costs of different fruits and the basket.
+                - Add the following lines to your `fruit_basket.sh` file:
+                - ```
+#!/bin/bash
+
+# Define costs
+COST_PINEAPPLE=50
+COST_BANANA=4
+COST_WATERMELON=23
+COST_BASKET=1
+``` Explain Code
+                - Let's break this down:
+                    - In Bash, we don't need to declare variables before using them. We simply assign a value to a variable name.
+                    - Variable names are case-sensitive. By convention, we often use uppercase for constants (values that won't change).
+                    - There should be no spaces around the `=` sign when assigning values.
+                    - These values represent the cost in cents. For example, `COST_PINEAPPLE=50` means a pineapple costs 50 cents.
+                    - We don't need to specify a data type. Bash treats these as strings by default, but will handle them as numbers when we perform arithmetic operations.
+                - ![](https://remnote-user-data.s3.amazonaws.com/ecuK5v-G5weN9ejEAi1FwaelTClz_MFF40XzPSa0GtOb-_GOx_ZYWZFLo3-VN7ryrsl_UrIdQDK5yxLUV4PTyudbCE9FgBeODX4h632nwMODp6GTEZp8BAZiljWg-_ZW.png)**Labby** 
+                - 
+                - # **Calculate the total cost**
+                    - [Size]();-[H1]()
+                - Now that we have our costs defined, let's calculate the total cost of a fruit basket containing 1 pineapple, 2 bananas, and 3 watermelons.
+                - Add the following line to your `fruit_basket.sh` file:
+                - ```
+#!/bin/bash
+
+# Define costs
+COST_PINEAPPLE=50
+COST_BANANA=4
+COST_WATERMELON=23
+COST_BASKET=1
+
+# Calculate total cost
+TOTAL=$((COST_PINEAPPLE + (COST_BANANA * 2) + (COST_WATERMELON * 3) + COST_BASKET))
+``` Explain Code
+                - Let's examine this new line:
+                    - `$(( ))` is Bash's syntax for arithmetic operations. Anything inside these double parentheses is treated as an arithmetic expression.
+                    - Inside the arithmetic expression, we don't need to use `$` before variable names.
+                    - We're performing several operations:
+                        - `COST_PINEAPPLE`: The cost of 1 pineapple
+                        - `(COST_BANANA * 2)`: The cost of 2 bananas
+                        - `(COST_WATERMELON * 3)`: The cost of 3 watermelons
+                        - `COST_BASKET`: The cost of the basket itself
+                    - These values are all added together, and the result is stored in the `TOTAL` variable.
+                - Note: Bash only handles integer arithmetic. If we were dealing with dollars and cents, we'd need to use a tool like `bc` for floating-point arithmetic.
+                - ![](https://remnote-user-data.s3.amazonaws.com/SdFw-4JtAWskD4r_RFY6hoL13kcpDKclC6k09gK3VU14Vv58RyI0m_-5EXiZdV4XEVTMAYJW-XHAhSE-x95dPGj6MBNvremf6Oaj-gb8zwayY0e7QREpRxSMqHHiE4CJ.png)**Labby** 
+                - 
+                - # **Display the total cost**
+                    - [Size]();-[H1]()
+                - To see the result of our calculation, we need to print the total cost. Add the following line to your `fruit_basket.sh` file:
+                - ```
+#!/bin/bash
+
+# Define costs
+COST_PINEAPPLE=50
+COST_BANANA=4
+COST_WATERMELON=23
+COST_BASKET=1
+
+# Calculate total cost
+TOTAL=$((COST_PINEAPPLE + (COST_BANANA * 2) + (COST_WATERMELON * 3) + COST_BASKET))
+
+# Display the total cost
+echo "Total Cost is $TOTAL cents"
+``` Explain Code
+                - Let's break down this new line:
+                    - `echo` is a command that prints text to the terminal.
+                    - The text in quotes will be printed as-is, except for the `$TOTAL` part.
+                    - When a variable name is preceded by `$` inside a string, Bash replaces it with the variable's value. This is called variable expansion.
+                    - So if `TOTAL` is 128, the output will be "Total Cost is 128 cents".
+                - ![](https://remnote-user-data.s3.amazonaws.com/QgfZYohTpDwqlemJWUa_KI6u7FT7E9TpdnkwPGkFKLJws0gH3czWzaj3VfTrc4QaHfw6hCkNG1mReOfZUNvaIjRFyBT_m0efkhoK_CHnSldIh9_sDsgDpyrtta-0d8fo.png)**Labby** 
+                - 
+                - # **Make the script executable and run it**
+                    - [Size]();-[H1]()
+                - Now that our script is complete, we need to make it executable and then run it.
+                    1. In the terminal, make the script executable with the `chmod` command:
+                        - `chmod +x ~/project/fruit_basket.sh` Explain Code
+                        - This command changes the mode of the file, adding execute (`x`) permission for the user.
+                    2. Now, let's run the script:
+                        - `~/project/fruit_basket.sh` Explain Code
+                        - This command tells Bash to execute our script. The `~/project/` part specifies the path to our script.
+                - You should see output similar to:
+                - `Total Cost is 128 cents` Explain Code
+                - This output shows that the total cost of our fruit basket (1 pineapple, 2 bananas, 3 watermelons, and the basket itself) is 128 cents.
+                - ![](https://remnote-user-data.s3.amazonaws.com/o7WZSk1sOIPG884EwHBf4zi30ColoeyFyF2Bo8oIxLrKH6BMZ7EkyWlb-FT7FmkCtkNJiV3-zORBQL0vl1iliIQAYLw7OUj3QtmOGu1dZtMoFFSlMCAJgnOu7hoY8sZR.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you learned how to perform arithmetic operations using basic operators in Shell programming. You created a Bash script that calculates the total cost of a fruit basket by defining variables for individual costs and using arithmetic expressions to compute the total. You also learned how to make a script executable and run it from the command line.
+                - Key points to remember:
+                    1. Bash scripts start with a shebang line (`#!/bin/bash`).
+                    2. Variables in Bash are assigned without spaces around the `=` sign.
+                    3. Arithmetic operations in Bash are performed inside `$(( ))`.
+                    4. The `echo` command is used to print output.
+                    5. Scripts need to be made executable with `chmod +x` before they can be run.
+                - These skills form the foundation for more complex shell scripting tasks and can be applied to various scenarios where you need to perform calculations within your scripts.
+            - Basic String Operations
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - In this lab, you will learn about fundamental string operations in shell scripting. String operations are essential for manipulating and extracting data from text in various scripting tasks. You will explore concepts such as determining string length, finding character positions, extracting substrings, and replacing parts of strings. These skills are crucial for effective text processing in shell scripts.
+                - ## **Quick Reference Guide**
+                    - [Size]();-[H2]()
+                - Here's a quick overview of the string operations we'll cover in this lab:
+                - --------------------- Portal ---------------------Operation
+                    - String Length #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${#string}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Calculates the number of characters in a string
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${#"hello"} returns 5
+                    - Find Character Position #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―$(expr index "$string" "$char")
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Finds the position of a character in a string (1-indexed)
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―$(expr index "abcdef" "c") returns 3
+                    - Extract Substring #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${string:start:length}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Extracts a portion of a string (0-indexed)
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${"hello":1:3} returns ell
+                    - Replace First Occurrence #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${string/pattern/replacement}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Replaces the first occurrence of a pattern
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${"hello"/l/L} returns heLlo
+                    - Replace All Occurrences #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${string//pattern/replacement}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Replaces all occurrences of a pattern
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${"hello"//l/L} returns heLLo
+                    - Replace at Beginning #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${string/#pattern/replacement}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Replaces pattern only if at beginning of string
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${"hello"/#he/HE} returns HEllo
+                    - Replace at End #Operation
+                        - [Syntax](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Syntax.md)―${string/%pattern/replacement}
+                        - [Description](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Description.md)―Replaces pattern only if at end of string
+                        - [Example](Computing/bash/labex.io%20courses/Quick%20Start%20with%20Shell/Basic%20String%20Operations/Operation/Operation/Example.md)―${"hello"/%lo/LO} returns helLO
+                - ![](https://remnote-user-data.s3.amazonaws.com/cOgoZGdnFJx-H7-irL4HgsxUL5wQZEnXJ0A583IlSKb_UV-302pzF4Ryi62s21mePE4Dhh5loQ8FYpMKcEZpiI-nqA3iJPBdUWwQsbQTJyjCKhpdbJhzXVfArviJwpvN.png)**Labby** 
+                - 
+                - # **Creating a Script File**
+                    - [Size]();-[H1]()
+                - Let's start by creating a script file where we'll write our string operations.
+                    1. Open your terminal in the WebIDE. The terminal is where you'll type commands to interact with the Linux system.
+                    2. Navigate to the project directory:
+                        - `cd ~/project` Explain Code
+                        - This command changes your current directory to `~/project`. The `~` symbol represents your home directory, so `~/project` is a folder named "project" in your home directory.
+                    3. Create a new file named `string_operations.sh`:
+                        - `touch string_operations.sh` Explain Code
+                        - The `touch` command creates a new, empty file. If the file already exists, it updates the file's timestamp.
+                    4. Open the file in the WebIDE editor. You can do this by clicking on the file name in the file explorer on the left side of your WebIDE.
+                    5. Add the following shebang line at the top of the file to specify the interpreter:
+                        - `#!/bin/bash` Explain Code
+                        - This line, called a "shebang", tells the system to use the Bash shell to interpret this script. It's always the first line of a shell script.
+                - ![](https://remnote-user-data.s3.amazonaws.com/CeYwpf2UkHMdXBbzy6giWQnu1bBwyCuS5KBN1LiE2zIQUY-Y2BofhHw8i4w0ORrqLd7TTKxecUsKew7z8dd3DzGkOGZQgpasADgGCQ2W4yH1bka79InMCQSHszDPlxe8.png)**Labby** 
+                - 
+                - # **String Length**
+                    - [Size]();-[H1]()
+                - Now, let's learn how to determine the length of a string.
+                    1. Add the following code to your `string_operations.sh` file:
+                        - ```
+echo "Step 2: String Length"
+
+STRING="Hello, World!"
+LENGTH=${#STRING}
+
+echo "The string is: $STRING"
+echo "Its length is: $LENGTH"
+``` Explain Code
+                        - Let's break this down step by step:
+                            - First, we add an echo command to display a header for this section.
+                                - `echo "Step 2: String Length"` Explain Code
+                            - Next, we define a variable called `STRING` and assign it the value "Hello, World!".
+                                - `STRING="Hello, World!"` Explain Code
+                                - In Bash, we don't need to use any special keywords to define variables. We simply write the variable name, followed by the equals sign, followed by the value.
+                            - Then, we calculate the length of the string using the `${#variable}` syntax and store it in a variable called `LENGTH`.
+                                - `LENGTH=${#STRING}` Explain Code
+                                - The `${#variable}` is a special shell parameter expansion that returns the number of characters in the string stored in the variable.
+                            - Finally, we display both the original string and its length.
+                                - ```
+echo "The string is: $STRING"
+echo "Its length is: $LENGTH"
+``` Explain Code
+                                - The `$` symbol before a variable name tells Bash to replace it with the variable's value.
+                    2. Save the file. In most editors, you can do this by pressing Ctrl+S (or Cmd+S on Mac).
+                    3. Make the script executable:
+                        - `chmod +x string_operations.sh` Explain Code
+                        - This command changes the permissions of the file to make it executable:
+                            - `chmod` stands for "change mode"
+                            - `+x` means "add execute permission"
+                            - Without this step, the system wouldn't know that this file should be treated as a program.
+                    4. Run the script:
+                        - `./string_operations.sh` Explain Code
+                        - The `./` prefix tells the shell to look for the script in the current directory. Without it, the shell would only look in directories listed in your PATH environment variable.
+                - You should see output similar to:
+                - ```
+Step 2: String Length
+The string is: Hello, World!
+Its length is: 13
+``` Explain Code
+                - If you don't see this output, double-check that you've saved the file and made it executable.
+                - ![](https://remnote-user-data.s3.amazonaws.com/e-Z0XN3FeFxCh-2ArQqxJmsMiwvcJM5ELQbFJPAQXDai6orI2BsPUY-16A16JLSc0dsRTGW0Z2sLioFSXc48J2gQ55LktmQU_FbdNCnx1b9LFewc6pdoG2wKHhuS8ZoF.png)**Labby** 
+                - 
+                - # **Finding Character Position**
+                    - [Size]();-[H1]()
+                - Next, we'll learn how to find the position of a character in a string.
+                    1. Add the following code to your `string_operations.sh` file:
+                        - ```
+echo -e "\nStep 3: Finding Character Position"
+
+STRING="abcdefghijklmnopqrstuvwxyz"
+CHAR="j"
+
+POSITION=$(expr index "$STRING" "$CHAR")
+
+echo "The string is: $STRING"
+echo "We're looking for the character: $CHAR"
+echo "It is at position: $POSITION"
+``` Explain Code
+                        - Let's examine this code in detail:
+                            - We start with an echo command that includes the `-e` option and a `\n` escape sequence.
+                                - `echo -e "\nStep 3: Finding Character Position"` Explain Code
+                                    - The `-e` option enables interpretation of escape sequences.
+                                    - The `\n` escape sequence adds a newline before the text, creating a visual separation from the previous section.
+                            - Next, we define two variables:
+                                - ```
+STRING="abcdefghijklmnopqrstuvwxyz"
+CHAR="j"
+``` Explain Code
+                                    - `STRING` contains the entire lowercase alphabet.
+                                    - `CHAR` contains the character "j" that we'll search for.
+                            - We use the `expr index` command to find the position of the character:
+                                - `POSITION=$(expr index "$STRING" "$CHAR")` Explain Code
+                                    - `expr` is a utility for evaluating expressions.
+                                    - The `index` operation searches for characters in a string.
+                                    - The `$()` syntax captures the output of the command and assigns it to the `POSITION` variable.
+                                    - We enclose the variables in double quotes (`"$STRING"`) to prevent issues with special characters.
+                                    - **Important**: This command returns positions starting from 1 (not 0).
+                            - Finally, we print out the results:
+                                - ```
+echo "The string is: $STRING"
+echo "We're looking for the character: $CHAR"
+echo "It is at position: $POSITION"
+``` Explain Code
+                    2. Save the file and run the script again:
+                        - `./string_operations.sh` Explain Code
+                - You should see additional output similar to:
+                - ```
+Step 3: Finding Character Position
+The string is: abcdefghijklmnopqrstuvwxyz
+We're looking for the character: j
+It is at position: 10
+``` Explain Code
+                - Note that the position is 1-indexed, meaning the first character is at position 1, not 0. This is different from many programming languages where indexing typically starts at 0.
+                - ![](https://remnote-user-data.s3.amazonaws.com/CblC_66jU04qQXFP64YzoW-NVQKtqXNaeZlm7bMkhnyTopS57rsT_nrcow7Z1g3fPceWBOiEu4zmdd0wT4nMyTG1jsCcd81iD8OrSTLOsnIV7p800cnk_mHO4nUaAR1C.png)**Labby** 
+                - 
+                - # **Substring Extraction**
+                    - [Size]();-[H1]()
+                - Now, let's learn how to extract a portion of a string.
+                    1. Add the following code to your `string_operations.sh` file:
+                        - ```
+echo -e "\nStep 4: Substring Extraction"
+
+STRING="The quick brown fox jumps over the lazy dog"
+START=10
+LENGTH=5
+
+SUBSTRING=${STRING:$START:$LENGTH}
+
+echo "The original string is: $STRING"
+echo "Extracting 5 characters starting from position 10:"
+echo "The substring is: $SUBSTRING"
+``` Explain Code
+                        - Let's analyze this code piece by piece:
+                            - First, we add a header with a newline for visual separation:
+                                - `echo -e "\nStep 4: Substring Extraction"` Explain Code
+                            - Next, we define our variables:
+                                - ```
+STRING="The quick brown fox jumps over the lazy dog"
+START=10
+LENGTH=5
+``` Explain Code
+                                    - `STRING` contains a sample sentence.
+                                    - `START` is the position where we want to start extracting (position 10).
+                                    - `LENGTH` is how many characters we want to extract (5 characters).
+                            - We use Bash's substring extraction syntax to get a portion of the string:
+                                - `SUBSTRING=${STRING:$START:$LENGTH}` Explain Code
+                                    - The syntax is `${variable:start_position:length}`
+                                    - `$START` and `$LENGTH` are variables containing the values 10 and 5.
+                                    - **Important**: Unlike the `expr index` command, the positions here are 0-indexed, meaning the first character is at position 0.
+                            - Finally, we display the results:
+                                - ```
+echo "The original string is: $STRING"
+echo "Extracting 5 characters starting from position 10:"
+echo "The substring is: $SUBSTRING"
+``` Explain Code
+                    2. Save the file and run the script again:
+                        - `./string_operations.sh` Explain Code
+                - You should see additional output similar to:
+                - ```
+Step 4: Substring Extraction
+The original string is: The quick brown fox jumps over the lazy dog
+Extracting 5 characters starting from position 10:
+The substring is: brown
+``` Explain Code
+                - In the string "The quick brown fox...", position 10 (when counting from 0) is the 'b' in "brown", and the next 5 characters are "brown". This is why our extracted substring is "brown".
+                - Keep in mind that the indexing is different from what we saw in the previous step:
+                    - In `expr index` (Step 3), positions start at 1 (first character is at position 1).
+                    - In substring extraction `${STRING:position:length}` (Step 4), positions start at 0 (first character is at position 0).
+                - This is a common source of confusion in shell scripting, so it's important to remember which operations use which indexing system.
+                - ![](https://remnote-user-data.s3.amazonaws.com/qXDQFoqVp_5iMnwRcjQZbgFUR0-gu6OzsRaCfIGAjSBdBELDqIvePC8CDPdj3nJXZSha9F7sow0FQzNo-2y_M6KrTArHsQvOyBS2H6lbSZgmA5nQj76a51JpjImyuY2Z.png)**Labby** 
+                - 
+                - # **String Replacement**
+                    - [Size]();-[H1]()
+                - Finally, let's learn how to replace parts of a string.
+                    1. Add the following code to your `string_operations.sh` file:
+                        - ```
+echo -e "\nStep 5: String Replacement"
+
+STRING="The quick brown fox jumps over the lazy dog"
+echo "Original string: $STRING"
+
+# Replace the first occurrence of 'o' with 'O'
+NEW_STRING=${STRING/o/O}
+echo "Replacing first 'o' with 'O': $NEW_STRING"
+
+# Replace all occurrences of 'o' with 'O'
+NEW_STRING=${STRING//o/O}
+echo "Replacing all 'o' with 'O': $NEW_STRING"
+
+# Replace 'The quick' with 'The slow' if it's at the beginning of the string
+NEW_STRING=${STRING/#The quick/The slow}
+echo "Replacing 'The quick' with 'The slow' at the beginning: $NEW_STRING"
+
+# Replace 'dog' with 'cat' if it's at the end of the string
+NEW_STRING=${STRING/%dog/cat}
+echo "Replacing 'dog' with 'cat' at the end: $NEW_STRING"
+``` Explain Code
+                        - Let's go through each string replacement operation:
+                            - First, we print a header and show the original string:
+                                - ```
+echo -e "\nStep 5: String Replacement"
+STRING="The quick brown fox jumps over the lazy dog"
+echo "Original string: $STRING"
+``` Explain Code
+                            - Replace the first occurrence of a character:
+                                - ```
+# Replace the first occurrence of 'o' with 'O'
+NEW_STRING=${STRING/o/O}
+echo "Replacing first 'o' with 'O': $NEW_STRING"
+``` Explain Code
+                                    - The syntax is `${variable/pattern/replacement}`
+                                    - This will find the first occurrence of 'o' and replace it with 'O'
+                                    - Only the first 'o' in "brown" will be replaced, leaving the others unchanged.
+                            - Replace all occurrences of a character:
+                                - ```
+# Replace all occurrences of 'o' with 'O'
+NEW_STRING=${STRING//o/O}
+echo "Replacing all 'o' with 'O': $NEW_STRING"
+``` Explain Code
+                                    - The syntax is `${variable//pattern/replacement}` (note the double slash)
+                                    - The double slash tells Bash to replace ALL occurrences of the pattern
+                                    - All 'o's in the entire string will be replaced with 'O's.
+                            - Replace a pattern at the beginning of a string:
+                                - ```
+# Replace 'The quick' with 'The slow' if it's at the beginning of the string
+NEW_STRING=${STRING/#The quick/The slow}
+echo "Replacing 'The quick' with 'The slow' at the beginning: $NEW_STRING"
+``` Explain Code
+                                    - The syntax is `${variable/#pattern/replacement}`
+                                    - The `#` symbol specifies that the pattern must be at the beginning of the string
+                                    - This will only replace 'The quick' if it appears at the start of the string.
+                            - Replace a pattern at the end of a string:
+                                - ```
+# Replace 'dog' with 'cat' if it's at the end of the string
+NEW_STRING=${STRING/%dog/cat}
+echo "Replacing 'dog' with 'cat' at the end: $NEW_STRING"
+``` Explain Code
+                                    - The syntax is `${variable/%pattern/replacement}`
+                                    - The `%` symbol specifies that the pattern must be at the end of the string
+                                    - This will only replace 'dog' if it appears at the end of the string.
+                    2. Save the file and run the script again:
+                        - `./string_operations.sh` Explain Code
+                - You should see additional output similar to:
+                - ```
+Step 5: String Replacement
+Original string: The quick brown fox jumps over the lazy dog
+Replacing first 'o' with 'O': The quick brOwn fox jumps over the lazy dog
+Replacing all 'o' with 'O': The quick brOwn fOx jumps Over the lazy dOg
+Replacing 'The quick' with 'The slow' at the beginning: The slow brown fox jumps over the lazy dog
+Replacing 'dog' with 'cat' at the end: The quick brown fox jumps over the lazy cat
+``` Explain Code
+                - These string replacement operations are powerful tools for manipulating text in shell scripts. They allow you to perform targeted replacements based on patterns and positions, which is especially useful for tasks like data processing, text formatting, or file content manipulation.
+                - ![](https://remnote-user-data.s3.amazonaws.com/2Xn31vfC2WDcug5Pc7UDq1uq2-u6If-nifMxY0ll_VKhrvYxcsaKdAgKq2DhPDcIH3ZFzsTPCunvq603ZQ8tpil4UKE5Ny4rnYpr16aF6O6-IuQhal2u8F8mUT7bYnZl.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you have learned and practiced several fundamental string operations in shell scripting:
+                    1. Creating and executing a shell script.
+                    2. Calculating the length of a string using `${#string}`.
+                    3. Finding the position of a character in a string using `$(expr index "$string" "$char")`.
+                    4. Extracting a substring from a larger string using `${string:start:length}`.
+                    5. Performing various string replacement operations using:
+                        - `${string/pattern/replacement}` - Replace first occurrence
+                        - `${string//pattern/replacement}` - Replace all occurrences
+                        - `${string/#pattern/replacement}` - Replace at beginning of string
+                        - `${string/%pattern/replacement}` - Replace at end of string
+                - These skills form the foundation for more complex text processing tasks in shell scripting. As you continue to work with shell scripts, you'll find these string operations invaluable for manipulating and analyzing text data in your projects. Remember, practice is key to mastering these concepts, so don't hesitate to experiment with different strings and operations!
+            - Conditional Statements in Shell
+                - # **Introduction**
+                    - [Size]();-[H1]()
+                - In this lab, you will learn how to use conditional statements in shell programming to make logical decisions. We will cover the basic syntax of if-else statements, as well as how to use numeric and string comparisons to evaluate conditions. By the end of this lab, you will be able to write shell scripts that can make decisions based on various conditions.
+                - ![](https://remnote-user-data.s3.amazonaws.com/wcFfNehOgDnMRa3P3R9AIEMG4t32_IZ8zpCIbIj9ShzcUVbXvAKc8rgwd__jvo7uwF1N6amiFJUijABu0rF0UD9PzSfCuDZ89bUO-Ab9jsOnDDbiuhUD4fwSrROtDll0.png)**Labby** 
+                - 
+                - # **Create Your First If Statement**
+                    - [Size]();-[H1]()
+                - Let's start by creating a simple if statement that checks if a variable called `NAME` is equal to "John".
+                - First, open a terminal in the WebIDE. You should be in the `/home/labex/project` directory by default. If you're not sure, you can always check your current directory with the `pwd` command.
+                - Create a new file called `if.sh` using the following command:
+                - `touch if.sh` Explain Code
+                - This command creates an empty file named `if.sh` in your current directory.
+                - Now, open the `if.sh` file in the WebIDE. You can do this by clicking on the file in the file explorer on the left side of the WebIDE.
+                - Add the following content to the file:
+                - ```
+#!/bin/bash
+
+NAME="John"
+if [ "$NAME" = "John" ]; then
+  echo "The name is John"
+fi
+``` Explain Code
+                - Let's break down this script:
+                    1. `#!/bin/bash`: This is called a "shebang" line. It tells the system which interpreter to use to run the script. In this case, we're using Bash.
+                    2. `NAME="John"`: This line creates a variable called `NAME` and assigns it the value "John".
+                    3. `if [ "$NAME" = "John" ]; then`: This is the start of our if statement. It checks if the value of `NAME` is equal to "John".
+                        - The square brackets `[ ]` are actually a command in Bash, equivalent to the `test` command.
+                        - We put `"$NAME"` in quotes to handle cases where `NAME` might be empty or contain spaces.
+                        - The semicolon and `then` are part of the if statement syntax in Bash.
+                    4. `echo "The name is John"`: This line will be executed if the condition is true.
+                    5. `fi`: This marks the end of the if statement. It's "if" spelled backwards!
+                - Save the file after adding this content.
+                - Now, we need to make the script executable. In Unix-like systems, files aren't executable by default for security reasons. We can change this using the `chmod` command:
+                - `chmod +x if.sh` Explain Code
+                - This command adds the execute permission to the file. The `+x` means "add execute permission".
+                - Now, run the script:
+                - `./if.sh` Explain Code
+                - The `./` tells the shell to look for the script in the current directory.
+                - You should see the output: `The name is John`
+                - If you don't see this output, double-check that you've saved the file with the correct content and that you've made it executable.
+                - ![](https://remnote-user-data.s3.amazonaws.com/5RRCb1zZjPtXdMlMGRgSpoXMQ8acWwqTS4rqeIvGyMZBPLFhkDR2BPR8zDz8HFA0oJi6LLqKrPX3_9Z1PsqHufmVblHuj5wWE6Q3WIrZkZWYoOpP_cwxl9wtUDMGnskz.png)**Labby** 
+                - 
+                - # **Add an Else Clause**
+                    - [Size]();-[H1]()
+                - Now, let's expand our if statement to include an else clause. This allows us to specify what should happen when the condition is false.
+                - Open the `if.sh` file in the WebIDE again and modify it as follows:
+                - ```
+#!/bin/bash
+
+NAME="Alice"
+if [ "$NAME" = "John" ]; then
+  echo "The name is John"
+else
+  echo "The name is not John"
+fi
+``` Explain Code
+                - Let's go through the changes:
+                    1. We've changed the `NAME` variable to "Alice". This is to demonstrate what happens when the condition is false.
+                    2. We've added an `else` clause. This clause specifies what should happen if the condition in the if statement is false.
+                    3. After the `else`, we've added another `echo` command that will run if `NAME` is not "John".
+                - The `else` clause is optional in if statements, but it's very useful when you want to do something specific when the condition is false, rather than just doing nothing.
+                - Save the file with these changes.
+                - Now, run the script again:
+                - `./if.sh` Explain Code
+                - This time, you should see the output: `The name is not John`
+                - This is because `NAME` is now "Alice", so the condition `[ "$NAME" = "John" ]` is false, and the code in the `else` block is executed.
+                - Try changing the `NAME` variable back to "John" and run the script again. What output do you get? This is a good way to test that your if-else statement is working correctly for both cases.
+                - ![](https://remnote-user-data.s3.amazonaws.com/frnSmjkan0GckGAs43oXuO2tfaVbL_wzHIsi87zdQs4Np2w7l9VBSvVYo58BdQhHPEf9ome8KGWbnb9mwAJx5OwjCmbGCeU9TjqGO4vAddxmr-rkHd65H-0MKq5g6kNV.png)**Labby** 
+                - 
+                - # **Introducing Elif**
+                    - [Size]();-[H1]()
+                - Sometimes, we want to check multiple conditions. This is where the `elif` (else if) clause comes in handy. Let's modify our script to handle multiple names.
+                - Update the `if.sh` file with the following content:
+                - ```
+#!/bin/bash
+
+NAME="George"
+if [ "$NAME" = "John" ]; then
+  echo "John Lennon"
+elif [ "$NAME" = "Paul" ]; then
+  echo "Paul McCartney"
+elif [ "$NAME" = "George" ]; then
+  echo "George Harrison"
+elif [ "$NAME" = "Ringo" ]; then
+  echo "Ringo Starr"
+else
+  echo "Unknown member"
+fi
+``` Explain Code
+                - Let's break down this script:
+                    1. We start with `NAME="George"`. This will be the name we're checking.
+                    2. The first `if` statement checks if the name is "John".
+                    3. If it's not "John", we move to the first `elif` (else if) statement, which checks if the name is "Paul".
+                    4. If it's not "Paul", we move to the next `elif`, checking for "George".
+                    5. If it's not "George", we check for "Ringo".
+                    6. If none of these conditions are true, we fall through to the `else` clause, which will echo "Unknown member".
+                - The `elif` clause allows you to check multiple conditions in sequence. You can have as many `elif` clauses as you need. The conditions are checked in order, and the first one that's true will have its corresponding code block executed.
+                - Save the file with these changes.
+                - Now, run the script:
+                - `./if.sh` Explain Code
+                - You should see the output: `George Harrison`
+                - Try changing the `NAME` variable to different values ("John", "Paul", "Ringo", or something else entirely) and run the script each time. Observe how the output changes based on the value of `NAME`.
+                - ![](https://remnote-user-data.s3.amazonaws.com/RXXR1w_f_x_I0ZbecZMbF9tLr3m58fDblUh4mHfxFbYdK3uYVfSSlL0XccTEuWtOnfwXuY3EhAfIoPfIgrTG8r0BkdesJBCGAVA6txVJ5PQWM1Usd3Z5XBrsOsaBYDvc.png)**Labby** 
+                - 
+                - # **Numeric Comparisons**
+                    - [Size]();-[H1]()
+                - Shell scripts can also compare numbers. Let's create a new script to demonstrate numeric comparisons.
+                - Create a new file called `numeric.sh`:
+                - `touch numeric.sh` Explain Code
+                - Open `numeric.sh` in the WebIDE and add the following content:
+                - ```
+#!/bin/bash
+
+NUMBER=10
+
+if [ $NUMBER -lt 5 ]; then
+  echo "The number is less than 5"
+elif [ $NUMBER -eq 10 ]; then
+  echo "The number is exactly 10"
+elif [ $NUMBER -gt 15 ]; then
+  echo "The number is greater than 15"
+else
+  echo "The number is between 5 and 15, but not 10"
+fi
+``` Explain Code
+                - This script introduces numeric comparison operators:
+                    - `-lt`: less than
+                    - `-eq`: equal to
+                    - `-gt`: greater than
+                - There are also others you can use:
+                    - `-le`: less than or equal to
+                    - `-ge`: greater than or equal to
+                    - `-ne`: not equal to
+                - Notice that we use these special operators instead of symbols like `<` or `>`. This is because in Bash, `<` and `>` are used for input/output redirection, not for numeric comparison.
+                - Now, let's make the script executable and run it:
+                - ```
+chmod +x numeric.sh
+./numeric.sh
+``` Explain Code
+                - You should see the output: `The number is exactly 10`
+                - Try changing the `NUMBER` variable to different values and run the script again. See how the output changes based on the value you set.
+                - For example, if you change `NUMBER` to 20, you should get "The number is greater than 15". If you change it to 7, you should get "The number is between 5 and 15, but not 10".
+                - ![](https://remnote-user-data.s3.amazonaws.com/dMdZCxaQLm3_UehJu4U_rUku0-hbzLb3yWqiZa_OmPwspdfOpx697uYIK6E5yKlph7if8TYJgzgiZKZCf-Fe3y5uwvJk9nrBOJBk2fHOwZchzJVBPcv4HKVJBCVDr3Ky.png)**Labby** 
+                - 
+                - # **String Comparisons and Logical Operators**
+                    - [Size]();-[H1]()
+                - Lastly, let's explore string comparisons and logical operators. Create a new file called `string_logic.sh`:
+                - `touch string_logic.sh` Explain Code
+                - Open `string_logic.sh` in the WebIDE and add the following content:
+                - ```
+#!/bin/bash
+
+STRING1="hello"
+STRING2="world"
+NUMBER1=5
+NUMBER2=10
+
+if [ "$STRING1" = "hello" ] && [ "$STRING2" = "world" ]; then
+  echo "Both strings match"
+fi
+
+if [ $NUMBER1 -lt 10 ] || [ $NUMBER2 -gt 5 ]; then
+  echo "At least one of the number conditions is true"
+fi
+
+if [[ "$STRING1" != "$STRING2" ]]; then
+  echo "The strings are different"
+fi
+
+if [[ -z "$STRING3" ]]; then
+  echo "STRING3 is empty or not set"
+fi
+``` Explain Code
+                - This script demonstrates several new concepts:
+                    1. String equality comparison (`=`): This checks if two strings are exactly the same.
+                    2. Logical AND (`&&`): This operator allows you to combine two conditions. Both conditions must be true for the overall expression to be true.
+                    3. Logical OR (`||`): This operator also combines two conditions, but only one needs to be true for the overall expression to be true.
+                    4. String inequality comparison (`!=`): This checks if two strings are different.
+                    5. Checking if a string is empty (`-z`): This is true if the string is empty (has zero length).
+                - Also, notice the use of double square brackets `[[ ]]` in some of the if statements. These are an enhanced version of the single square brackets and are preferred in Bash scripts when possible. They allow for more complex expressions and have fewer surprises with regard to word splitting and pathname expansion.
+                - Make the script executable and run it:
+                - ```
+chmod +x string_logic.sh
+./string_logic.sh
+``` Explain Code
+                - You should see all four echo statements printed, because all the conditions in the script are true.
+                - ```
+Both strings match
+At least one of the number conditions is true
+The strings are different
+STRING3 is empty or not se
+``` Explain Code
+                - Try changing some of the values (like setting `STRING1` to something other than "hello") and see how it affects the output.
+                - ![](https://remnote-user-data.s3.amazonaws.com/YM43nXHjaEPT_ll3N51E1wn3Ql7gxr6DQ2r9SN6dbJnooBoQDIeytTsDzUMGljkHCvkLcy1bdIGiE2LhUA4EW_I5kANdtKHGNpNyBtf5B83K-Ndfy9hAkmTrVkpy9GNk.png)**Labby** 
+                - 
+                - # **Summary**
+                    - [Size]();-[H1]()
+                - In this lab, you have learned how to use conditional statements in shell programming. You have practiced using if-else statements, elif clauses, numeric comparisons, string comparisons, and logical operators. These tools allow you to create more complex and decision-based shell scripts.
+                - Key takeaways:
+                    - The basic structure of if-else statements in shell scripts
+                    - How to use elif for multiple conditions
+                    - Numeric comparison operators (-lt, -gt, -eq, etc.)
+                    - String comparison and logical operators
+                    - The importance of making scripts executable with chmod
+                - Remember, practice is key to becoming proficient in shell scripting. Try creating your own scripts that use these concepts in different ways. As you advance, you'll find these conditional statements essential for creating more sophisticated and useful scripts.
+            - Weather Advisory System
+            - Bash Scripting Loops
+            - Comparing Arrays in Shell
+            - Shell Functions
+            - Four Function Calculator
+            - Special Variables in Shell
+            - Bash Trap Command
+            - File System Operations in Shell
+            - File System Explorer
+        -  **Build a Linux System Monitor Using Bash**
+            - [Size]();-[H0]()
+        -  **Build a Task Scheduler Using Bash**
+            - [Size]();-[H0]()
+        -  **Building Flappy Bird Using C**
+            - [Size]();-[H0]()
+        -  **Creating a Typing Game Using Bash**
+            - [Size]();-[H0]()
+        -  **Chess Board in Terminal**
+            - [Size]();-[H0]()
+        -  **Implement Custom Trash-Enabled Command**
+            - [Size]();-[H0]()
+        -  **Users and Groups Creation and Deletion Batch**
+            - [Size]();-[H0]()
+        -  **Collect Files From Specified Time**
+            - [Size]();-[H0]()
+        -  **Copy Large Files with Preserved Structure**
+            - [Size]();-[H0]()
+        -  **Customizing Linux File Listing**
+            - [Size]();-[H0]()
+        -  **Extracting Information From Text**
+            - [Size]();-[H0]()
+        -  **Extracting Link Information From Text**
+            - [Size]();-[H0]()
+        -  **Get Program That Satisfies the Condition**
+            - [Size]();-[H0]()
+        -  **Linux Server Information Retrieval**
+            - [Size]();-[H0]()
+        -  **Nginx Log Analysis and Optimization**
+            - [Size]();-[H0]()
+        -  **Automated Daily System Log Backup**
+            - [Size]();-[H0]()
+        -  **Network Data Packet Statistics**
+            - [Size]();-[H0]()
+        -  **Random Password Generator Development**
+            - [Size]();-[H0]()
+        -  **Searching for Specific Files**
+            - [Size]();-[H0]()
+        -  **Samba File Sharing on Linux**
+            - [Size]();-[H0]()
+        -  **Shell Practice Challenges**
+            - [Size]();-[H0]()
+- Go Programming Language
+    - 
+    - 
+    - Declare the first line→package main
+    - Import fmt package→import ("fmt")
+    - Create the main function→func main() {}
+    - Use the println function from fmt package→fmt.Println()
+    - Statements are separated by newline and→;
+    - 
+    - How to check if Go is set up go version
+    - 
+    - labex.io courses
+        -  Quick Start with Golang 
+            -  Beginner's Guide to Go Programming 
+                - ^^^**Knowledge Points:**^^^
+                    - ^^^Standard output statement^^^
+                    - ^^^Code structure^^^
+                    - ^^^Running a program^^^
+                    - ^^^Common functions in the^^^ `fmt` ^^^package^^^ 
+                - what in the fmt package 
+                - how to find packages
+                - what is the file extension? {{.go}} 
+                - print hello
+                    - package main
+import "fmt"
+func main() {
+  fmt.Println("hello")
+}
+                - ^^^The first line, ^^^{{`package main`}}^^^, indicates that this program belongs to the^^^ `main` ^^^package. ^^^ 
+                    - declare main package
+                - ^^^The second line,^^^ {{`import "fmt"`}}^^^, imports the Go^^^ `fmt` ^^^package^^^ 
+                    - ^^^which allows us to format text input and output.^^^ 
+                    - import fmt package
+                - ^^^ The^^^ `main` ^^^function is where the program starts execution, and inside it,^^^ `fmt.Println("hello, world")` ^^^will print^^^ `hello, world` ^^^to the terminal.^^^
+                - ^^^To run the program, open the terminal and enter the following command:^^^
+                    - run hello.go : {{go run hello.go }} 
+                - # ^^^**Program Structure and Syntax**^^^
+                    - ^^^In Go, a package is the basic unit of code management. ^^^
+                    - ^^^Every Go program begins with a^^^ `package` ^^^declaration. ^^^
+                    - ^^^In this case,^^^ `package main` ^^^tells Go that the code is part of the main program that will be executed.^^^
+                    - ^^^The^^^ `import "fmt"` ^^^statement imports the Go^^^ `fmt` ^^^package, which is used for input and output. ^^^
+                    - ^^^Go has a rich standard library, which allows us to perform many tasks with ease. ^^^
+                    - ^^^The^^^ `fmt` ^^^package is used to format text output, as we saw in the previous step.^^^
+                    - define the main function
+                        - {{func main}}() {
+}
+                    - ^^^In Go, all functions must begin with^^^ `func`^^^. ^^^
+                    - ^^^Notice that the opening brace^^^ `{` ^^^is placed at the end of the line. ^^^
+                    - ^^^This is a Go convention, and it’s different from other programming languages that might place the opening brace on a new line.^^^ 
+                    - ^^^This is because Go expects the opening brace to be directly on the same line.^^^
+                    - ^^^The key statement in the program is^^^ `fmt.Println("hello, world")``(#3ba9ff)`^^^, which calls the^^^ `fmt``(#3ba9ff)` ^^^package's^^^ `Println``(#3ba9ff)` ^^^function to print the string^^^ `"hello, world"``(#3ba9ff)` ^^^to the console. ^^^
+                    - ^^^This function automatically adds a newline character at the end of the string.^^^ 
+                - # ^^^**Running the Program**^^^
+                    - ^^^Go is a compiled language, but when we use the^^^ `go run` ^^^command, Go first compiles the source code and then runs the resulting executable. So, the command:^^^
+                    - `go run helloWorld.go` 
+                    - ^^^is equivalent to running these two commands:^^^
+                        - `# Compile the program(#aca397)
+go build helloWorld.go
+
+# Execute the compiled program(#aca397)
+./helloWorld` 
+                    - compile hello.go : go build hello.go
+                    - run the compiled executable (hello) : ./hello
+                - # ^^^**Common Functions in the**^^^ `**fmt**` ^^^**Package**^^^
+                    - ^^^Here are three common output functions:^^^
+                        1. {{`fmt.Print()`}} ^^^– Outputs the text without a newline.^^^ 
+                        2. {{`fmt.Println()`}} ^^^– Outputs the text with a newline.^^^ 
+                        3. {{`fmt.Printf()`}} ^^^– Outputs formatted text.^^^ 
+                    - print hello without newline
+                        - fmt.Print("hello")
+                    - print hello with newline
+                        - fmt.Println("hello")
+                    - print hello with a placeholder and newline
+                        - {{fmt.Printf("%s\n", "hello"}})
+                        - what is %s
+                    - ^^^The^^^ `fmt` ^^^package also provides other functions for reading input, error handling, and more, which will be covered in later exercises.^^^
+            - GOPATH and Module
+                - # ^^^**Introduction**^^^
+                    - ^^^In this lab, we will learn about two different ways of managing dependencies in Go: GOPATH and Go Modules. ^^^
+                    - ^^^These are essential concepts for organizing and managing Go projects effectively.^^^
+                    - ^^^**Knowledge Points:**^^^
+                        - ^^^GOPATH^^^
+                        - ^^^GOROOT^^^
+                        - ^^^Go Modules^^^
+                - # ^^^**Basic Module GOPATH**^^^
+                    - ^^^Before Go 1.11, Go used a specific workspace called^^^ `GOPATH` ^^^to store all Go code. In this step, we'll understand how the GOPATH works.^^^
+                        1. `GOROOT` ^^^is the directory where Go is installed, including its tools and standard library packages.^^^
+                        2. `GOPATH` ^^^is where your personal Go code resides, and it contains three directories:^^^
+                            - ^^^**src**^^^^^^: Stores your project source code.^^^
+                            - ^^^**bin**^^^^^^: Stores compiled executable files.^^^
+                            - ^^^**pkg**^^^^^^: Stores compiled packages that are not executable.^^^
+                    - ^^^To check the current^^^ `GOPATH` ^^^and^^^ `GOROOT`^^^, run the following commands:^^^
+                    - check the current GOPATH : go env | grep GOPATH
+                    - check the current GOROOT : go env | grep GOROOT
+                    - ^^^These commands will display the paths for^^^ `GOPATH` ^^^and^^^ `GOROOT` ^^^on your machine.^^^
+                - # ^^^**Initialize mod**^^^
+                    - ^^^Go Modules, introduced in Go 1.11 and enabled by default in Go 1.13, aim to solve two major issues:^^^
+                        - ^^^**Over-reliance on GOPATH**^^^^^^: ^^^
+                            - ^^^Before Go Modules, code had to be stored inside the^^^ `GOPATH/src` ^^^directory. ^^^
+                            - ^^^With Go Modules, you can store your code anywhere on your system.^^^
+                        - ^^^**Version dependency issues**^^^^^^: ^^^
+                            - ^^^Go Modules allow projects to manage and track dependencies with specific versions, making it easier to work with multiple versions of the same package.^^^
+                    - initialize go module for directory foo : go mod init foo
+                - # ^^^**Importing other packages with mod**^^^
+                    - ^^^In this step, we will demonstrate how to import and use other modules in your Go project.^^^
+                    - ^^^The^^^ `helloWorld` ^^^package in the^^^ `helloWorld` ^^^folder has been initialized with Go Modules. Similarly, the^^^ `test` ^^^package, which also uses Go Modules, imports the^^^ `Say` ^^^function from the^^^ `helloWorld` ^^^package.^^^
+                    - ^^^To explore this, run the following command:^^^
+                        1. ^^^First, look at the structure of the^^^ `helloWorld` ^^^and^^^ `test` ^^^directories:^^^
+                            - ```
+helloWorld
+├── go.mod
+└── helloWorld.go
+
+``````
+test
+``````
+
+├── go.mod
+└── test.go
+```^^^ Explain Code^^^
+                        2. ^^^Next, open the^^^ `test/go.mod` ^^^file. You should see the following:^^^
+                            - ```
+module test
+
+
+``````
+go
+``````
+(#cd77e6) 
+``````
+1.15
+``````
+(#dba16b)
+
+require 
+``````
+"helloWorld"
+``````
+(#9fcc7e) v0
+``````
+.0
+``````
+(#dba16b)
+``````
+.1
+``````
+(#dba16b)
+replace 
+``````
+"helloWorld"
+``````
+(#9fcc7e) => 
+``````
+"../helloWorld"
+``````
+(#9fcc7e)
+```^^^ Explain Code^^^
+                    - ^^^The^^^ `replace` ^^^directive tells Go to use the local path^^^ `../helloWorld` ^^^instead of fetching it from an external repository. The^^^ `require` ^^^directive specifies that the^^^ `test` ^^^package depends on version^^^ `v0.0.1` ^^^of the^^^ `helloWorld` ^^^package.^^^
+                    - --------------------- Portal ---------------------Parameter
+                        - module #Parameter
+                            - [Description](Computing/Go%20Programming%20Language/labex.io%20courses/Quick%20Start%20with%20Golang/GOPATH%20and%20Module/Importing%20other%20packages%20with%20mod/Parameter/Parameter/Description.md)―Specifies the package
+                        - require #Parameter
+                            - [Description](Computing/Go%20Programming%20Language/labex.io%20courses/Quick%20Start%20with%20Golang/GOPATH%20and%20Module/Importing%20other%20packages%20with%20mod/Parameter/Parameter/Description.md)―Specifies dependencies
+                        - replace #Parameter
+                            - [Description](Computing/Go%20Programming%20Language/labex.io%20courses/Quick%20Start%20with%20Golang/GOPATH%20and%20Module/Importing%20other%20packages%20with%20mod/Parameter/Parameter/Description.md)―Replaces dependencies
+                        - exclude #Parameter
+                            - [Description](Computing/Go%20Programming%20Language/labex.io%20courses/Quick%20Start%20with%20Golang/GOPATH%20and%20Module/Importing%20other%20packages%20with%20mod/Parameter/Parameter/Description.md)―Excludes dependencies
+                    - ^^^To run the^^^ `test.go` ^^^file in the^^^ `test` ^^^package:^^^
+                    - ```
+cd
+``````
+ ~/project/test
+go run test.go
+```^^^ Explain Code^^^
+                    - ^^^The output should be:^^^
+                    - `hello, world``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                - # ^^^**Importing Remote Packages**^^^
+                    - ^^^In Go, you can easily import remote packages. Let's demonstrate this by using a remote package from GitHub.^^^
+                        1. ^^^Create a directory^^^ `remoteModule`^^^:^^^
+                            - ```
+cd
+``````
+ ~/project
+
+``````
+mkdir
+``````
+ remoteModule
+
+``````
+cd
+``````
+ remoteModule
+```^^^ Explain Code^^^
+                        2. ^^^Initialize the Go Module:^^^
+                            - `go mod init remoteModule``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                        3. ^^^Create a file^^^ `remote.go` ^^^inside the^^^ `remoteModule` ^^^folder with the following content:^^^
+                            - `touch``(#161a21)`` remote.go``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                            - ```
+package
+``````
+(#cd77e6) main
+
+
+``````
+import
+``````
+(#cd77e6) (
+    
+``````
+"github.com/labex-labs/golang-dev-code/chap02module"
+``````
+(#9fcc7e)
+)
+
+
+``````
+func
+``````
+(#cd77e6) 
+``````
+main
+``````
+(#5fb7f9)() {
+    chap02module.StringTobase64(
+``````
+"miiy"
+``````
+(#9fcc7e))
+}
+```^^^ Explain Code^^^
+                            - ^^^This program imports the^^^ `chap02module` ^^^package from GitHub and uses its^^^ `StringTobase64` ^^^function.^^^
+                        4. ^^^Run the^^^ `remote.go` ^^^file using the following commands:^^^
+                            - ```go
+get github.com/labex-labs/golang-dev-code/chap02module
+go run -v remote.go
+```^^^ Explain Code^^^
+                            - > ^^^^^Tips: Free user can't access the internet, so you can't run this command.^^^^^ [^^^^^Upgrade to the Pro plan^^^^^](https://labex.io/pricing?utm_source=labby) ^^^^^to get access to the internet.^^^^^
+                    - ^^^The^^^ `go get` ^^^command will download the^^^ `chap02module` ^^^package from GitHub and place it in your module cache. Once that's done, the^^^ `go run` ^^^command will execute your program.^^^
+                - # ^^^**Mini Test**^^^
+                    - ^^^In this step, we will test our knowledge by creating a new file that uses the^^^ `Hello` ^^^function from the remote module.^^^
+                        1. ^^^Create a folder^^^ `remoteModule2`^^^:^^^
+                            - ```
+cd
+``````
+ ~/project
+
+``````
+mkdir
+``````
+ remoteModule2
+
+``````
+cd
+``````
+ remoteModule2
+```^^^ Explain Code^^^
+                        2. ^^^Initialize the Go Module:^^^
+                            - `go mod init remoteModule2``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                        3. ^^^Create a file^^^ `remote2.go` ^^^with the following content:^^^
+                            - `touch``(#161a21)`` remote2.go``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                            - ```
+package
+``````
+(#cd77e6) main
+
+
+``````
+import
+``````
+(#cd77e6) (
+    
+``````
+"github.com/labex-labs/golang-dev-code/chap02module"
+``````
+(#9fcc7e)
+)
+
+
+``````
+func
+``````
+(#cd77e6) 
+``````
+main
+``````
+(#5fb7f9)() {
+    chap02module.Hello()
+}
+```^^^ Explain Code^^^
+                        4. ^^^Run the program:^^^
+                            - ```go
+get github.com/labex-labs/golang-dev-code/chap02module
+go run remote2.go
+```^^^ Explain Code^^^
+                            - ^^^The output should be:^^^
+                            - `hello``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+            - Build a Modular Go Project 
+                - # ^^^**Introduction**^^^
+                    - [Size]();-[H1]()
+                - ^^^In this challenge, you'll demonstrate your understanding of Go Modules by creating a modular project that showcases package management skills for a small utility library. The challenge involves creating a utility package with a function that converts a string to uppercase, and a main package that imports and uses the utility package's function. You'll also need to initialize Go Modules for both packages and ensure the main package successfully runs and prints the converted string.^^^
+                - ^^^This is a Challenge, which differs from a Guided Lab in that you need to try to complete the challenge task independently, rather than following the steps of a lab to learn. Challenges are usually a bit difficult. If you find it difficult, you can discuss with Labby or check the solution. Historical data shows that this is a^^^ ^^^beginner^^^ ^^^level challenge with a^^^ ^^^97.37%^^^ ^^^pass rate.^^^
+                - ![](https://remnote-user-data.s3.amazonaws.com/e3JqVP7SH64pzgNFUfRbmMd6TfX-76n15dTnQVXQT-MJDgB5vRABdnoKflmUhpG2WbEFD1X8DASg4NzhltKsvdija2X3Mi3tEohWtsTjMIMkKCwDioC-v1OhKYnsVHSV.png)^^^^^**Labby**^^^^^ 
+                - 
+                - # ^^^**Build a Modular Go Project**^^^
+                    - [Size]();-[H1]()
+                - ^^^In this challenge, you'll demonstrate your understanding of Go Modules by creating a modular project that showcases package management skills for a small utility library. To simplify the process, we've provided a setup script that initializes the project structure and pre-fills the basic code framework. Your task is to complete the^^^ `TODO` ^^^sections in the code.^^^
+                - ## ^^^**Tasks**^^^
+                    1. ^^^Navigate to^^^ `~/project/utility/helper.go` ^^^and complete the^^^ `TODO` ^^^section:^^^
+                        - `// ``(#aca397)``(#161a21)``TODO:``(#cd77e6)``(#161a21)`` Implement the ToUpperCase function using strings.ToUpper``(#aca397)``(#161a21)`^^^ Explain Code^^^
+                    2. ^^^Navigate to^^^ `~/project/main/main.go` ^^^and complete the^^^ `TODO` ^^^sections:^^^
+                        - ```
+// 
+``````
+(#aca397)
+``````
+TODO:
+``````
+(#cd77e6)
+``````
+ Call the utility.ToUpperCase function
+``````
+(#aca397)
+
+``````
+// 
+``````
+(#aca397)
+``````
+TODO:
+``````
+(#cd77e6)
+``````
+ Print the result using fmt.Println
+``````
+(#aca397)
+```^^^ Explain Code^^^
+                    - [Size]();-[H2]()
+                - ## ^^^**Requirements**^^^
+                    - ^^^Complete the provided^^^ `~/project/utility/helper.go` ^^^and^^^ `~/project/main/main.go` ^^^files by filling in the^^^ `TODO` ^^^sections.^^^
+                    - ^^^The utility package should define a function named^^^ `ToUpperCase` ^^^that converts a string to uppercase.^^^
+                    - ^^^The main package should call the^^^ `ToUpperCase` ^^^function and print its result.^^^
+                    - [Size]();-[H2]()
+                - ## ^^^**Examples**^^^
+                    - [Size]();-[H2]()
+                - ^^^After completing the^^^ `TODO` ^^^sections, your project structure should look like this:^^^
+                - ```
+~/project/
+├── utility/
+│   ├── 
+``````
+go
+``````
+(#cd77e6).mod
+│   └── helper.
+``````
+go
+``````
+(#cd77e6)
+└── main/
+    ├── 
+``````
+go
+``````
+(#cd77e6).mod
+    └── main.
+``````
+go
+``````
+(#cd77e6)
+```^^^ Explain Code^^^
+                - ^^^When you run the main package, the output should be:^^^
+                - ```
+cd
+``````
+ ~/project/main
+go get utility
+go run main.go
+```^^^ Explain Code^^^
+                - `HELLO, WORLD``(#c1bab0)``(#161a21)`^^^ Explain Code^^^
+                - ## ^^^**Hints**^^^
+                    - ^^^The^^^ `strings.ToUpper` ^^^function from the standard library can help you convert a string to uppercase.^^^
+                    - ^^^Use^^^ `go mod init` ^^^to initialize Go Modules. (It's already done for you)^^^
+                    - ^^^Use^^^ `go get utility` ^^^to import the local utility package in the main package.^^^
+                    - [Size]();-[H2]()
+                - ![](https://remnote-user-data.s3.amazonaws.com/1YJunwo8JoRRUEb1lICcXboPRTYdfnIGB5worlrNhL__p8OT73Fi_0P_OR-Jy5uNwOnvsLV1NADao-jO_FCHlWB8u3xyS5bJZD8kRdHeDMUP-Pqchduxb86esSl24ct0.png)^^^^^**Labby**^^^^^ 
+                - 
+                - # ^^^**Summary**^^^
+                    - [Size]();-[H1]()
+                - ^^^In summary, this challenge requires you to create a modular Go project that demonstrates your understanding of Go Modules and package management. You'll need to develop a utility package with a function to convert a string to uppercase, and a main package that imports and uses the utility package's function. The challenge also involves initializing Go Modules for both packages and ensuring the main package runs successfully and prints the converted string.^^^
+            - Creating and Importing Go Packages 
+                - ^^^^^Declaring and Defining Packages^^^^^
+                - ^^^^^Single-Item Import^^^^^
+                - ^^^^^Grouped Imports^^^^^
+                - ^^^^^Dot Import^^^^^
+                - ^^^^^Alias Import^^^^^
+                - ^^^^^Anonymous Import^^^^^
+                - ^^^^^Understanding the init() Function^^^^^
+            - ^^^^^Build a Math Utility Package^^^^^
+                - ^^^^^Import and Use the mathutil Package^^^^^
+            - ^^^^^Introduction to Go Variables^^^^^
+                - ^^^^^What is a Variable?^^^^^
+                - ^^^^^General Declaration Method^^^^^
+                - ^^^^^Batch Declaration Method^^^^^
+                - ^^^^^Default Initialization^^^^^
+                - ^^^^^Standard Initialization^^^^^
+                - ^^^^^Type Declaration by Inference^^^^^
+                - ^^^^^Variable Scope^^^^^
+                - ^^^^^Variable Lifetime^^^^^
+                - ^^^^^Constants^^^^^
+            - ^^^^^Craft Book Inventory Variables^^^^^
+                - ^^^^^Craft Book Inventory Variables^^^^^
+            - ^^^^^Data Processing with Operators in Golang^^^^^
+                - ^^^^^Basic Form^^^^^
+                - ^^^^^Increment and Decrement Operators^^^^^
+                - ^^^^^Relational Operators^^^^^
+                - ^^^^^Logical Operators^^^^^
+                - ^^^^^Execution Order of Logical Operators^^^^^
+                - ^^^^^Assignment Operators^^^^^
+            - ^^^^^Calculate Product Discount Price^^^^^
+                - ^^^^^Calculate Product Discount Price^^^^^
+            - ^^^^^Numerical Types in Golang^^^^^
+                - ^^^^^Integers^^^^^
+                - ^^^^^Floating-Point Numbers^^^^^
+                - ^^^^^Boolean Types^^^^^
+                - ^^^^^Complex Numbers^^^^^
+                - ^^^^^Literal Value Syntax^^^^^
+            - ^^^^^Convert and Calculate Numeric Types^^^^^
+                - ^^^^^Convert and Calculate Numeric Types^^^^^
+            - ^^^^^Character Types in Golang^^^^^
+                - ^^^^^ASCII Encoding^^^^^
+                - ^^^^^Unicode Character Set^^^^^
+                - ^^^^^UTF-8 Encoding^^^^^
+                - ^^^^^byte and rune^^^^^
+                - ^^^^^Quiz^^^^^
+            - ^^^^^Decode Unicode Emojis^^^^^
+                - ^^^^^Decode Unicode Emojis^^^^^
+            - ^^^^^Go String Fundamentals^^^^^
+                - ^^^^^What is a String^^^^^
+                - ^^^^^Creating a String^^^^^
+                - ^^^^^Declaring a String^^^^^
+                - ^^^^^Getting the Length of a String^^^^^
+                - ^^^^^Accessing String Elements^^^^^
+                - ^^^^^Converting Strings and Integers^^^^^
+                - ^^^^^Concatenating Strings^^^^^
+                - ^^^^^Removing Leading and Trailing Spaces from a String^^^^^
+            - ^^^^^Process User Registration Strings^^^^^
+                - ^^^^^Process User Registration Strings^^^^^
+            - ^^^^^Go Constants Fundamentals^^^^^
+                - ^^^^^What Are Constants?^^^^^
+                - ^^^^^Declaring Constants^^^^^
+                - ^^^^^The iota Constant Generator^^^^^
+                - ^^^^^Quiz^^^^^
+            - ^^^^^Define Server Size Constants^^^^^
+                - ^^^^^Define Server Size Constants^^^^^
+            - ^^^^^If Branch Statement in Golang^^^^^
+                - ^^^^^if statement^^^^^
+                - ^^^^^if else statement^^^^^
+                - ^^^^^else if statement^^^^^
+                - ^^^^^Initialization Statement in the if Statement^^^^^
+            - ^^^^^Sort Tasks with Conditional Logic^^^^^
+                - ^^^^^Sort Tasks with Conditional Logic^^^^^
+            - ^^^^^Switch-Case Branch Statements in Golang^^^^^
+                - ^^^^^Basic Syntax^^^^^
+                - ^^^^^Multiple Values in a Branch^^^^^
+                - ^^^^^switch Statements with No Conditional Variable^^^^^
+                - ^^^^^fallthrough Statement^^^^^
+                - ^^^^^Initialization Statement in switch^^^^^
+            - ^^^^^Implement Weather Advice Switch^^^^^
+                - ^^^^^Implement the Weather Advice Function^^^^^
+            - ^^^^^For Loops in Golang^^^^^
+                - ^^^^^Characters in a String^^^^^
+                - ^^^^^For Loop Syntax^^^^^
+                - ^^^^^Using the For Loop^^^^^
+                - ^^^^^The "break" Keyword^^^^^
+                - ^^^^^The "continue" Keyword^^^^^
+            - ^^^^^Reverse String with Go Loop^^^^^
+                - ^^^^^Reverse String with Go Loop^^^^^
+            - ^^^^^Goto Statement Usage^^^^^
+                - ^^^^^Understanding the Syntax of goto^^^^^
+                - ^^^^^Replacing break with goto^^^^^
+                - ^^^^^Implementing a for Loop Using goto^^^^^
+                - ^^^^^Exiting Nested Loops with goto^^^^^
+            - ^^^^^Solve Nested Loop Complexity with Goto^^^^^
+                - ^^^^^Solve Nested Loop Complexity with Goto^^^^^
+            - ^^^^^Array Operations in Golang^^^^^
+                - ^^^^^Array Definition^^^^^
+                - ^^^^^Initialization List^^^^^
+                - ^^^^^Inferred Length Initialization^^^^^
+                - ^^^^^Initialization with Specified Indices^^^^^
+                - ^^^^^Array Traversal^^^^^
+                - ^^^^^Accessing Array Elements^^^^^
+                - ^^^^^Value Type of Arrays^^^^^
+            - ^^^^^Initialize Employee Names Array^^^^^
+                - ^^^^^Initialize Employee Names Array^^^^^
+            - ^^^^^Multidimensional Arrays in Golang^^^^^
+                - ^^^^^Definition of a Two-Dimensional Array^^^^^
+                - ^^^^^Initialization of a Two-Dimensional Array^^^^^
+                - ^^^^^Initialization of a Two-Dimensional Array Using an Initialization List^^^^^
+                - ^^^^^Initialization of a Two-Dimensional Array with Inferred Length^^^^^
+                - ^^^^^Initializing a Two-Dimensional Array with Specified Index Values^^^^^
+                - ^^^^^Traversing a Two-Dimensional Array^^^^^
+                - ^^^^^Practical Uses of Arrays^^^^^
+                - ^^^^^Upscaling a Two-Dimensional Array^^^^^
+            - ^^^^^Design a Student Grade Tracker^^^^^
+                - ^^^^^Design a Student Grade Tracker^^^^^
+            - ^^^^^Golang Slice Data Structures^^^^^
+                - ^^^^^What is a Slice^^^^^
+                - ^^^^^Define a Slice^^^^^
+                - ^^^^^A Slice is a Reference to an Array^^^^^
+                - ^^^^^Data Structure of a Slice^^^^^
+                - ^^^^^Operations on Slices: Add, Delete, Modify, and Search^^^^^
+                - ^^^^^Expanding Slices^^^^^
+                - ^^^^^Copying Slices^^^^^
+                - ^^^^^Traversing Slices^^^^^
+            - ^^^^^Slice Log Filter Challenge^^^^^
+                - ^^^^^Implement Slice Log Filter Function^^^^^
+            - ^^^^^Go Dictionary Fundamentals^^^^^
+                - ^^^^^Introduction to Dictionaries^^^^^
+                - ^^^^^Declaration of Maps^^^^^
+                - ^^^^^The Initial Value nil^^^^^
+                - ^^^^^Declaration with the make Keyword^^^^^
+                - ^^^^^Manually Initializing an Empty Map^^^^^
+                - ^^^^^Actually Initializing the Dictionary^^^^^
+                - ^^^^^Adding and Updating Dictionary Elements^^^^^
+                - ^^^^^Deleting Dictionary Elements^^^^^
+                - ^^^^^Searching for Dictionary Elements^^^^^
+                - ^^^^^Iterating Over Dictionaries^^^^^
+            - ^^^^^Manage Student Grades with Go Maps^^^^^
+                - ^^^^^Manage Student Grades with Go Maps^^^^^
+            - ^^^^^Sorting Go Dictionaries^^^^^
+                - ^^^^^Sorting Dictionaries^^^^^
+                - ^^^^^Sort by Key^^^^^
+                - ^^^^^Swapping Keys and Values in a Dictionary^^^^^
+                - ^^^^^Sort by Value^^^^^
+                - ^^^^^Sorted by sort.Slice^^^^^
+                - ^^^^^Little Test^^^^^
+                - ^^^^^Slices of Dictionaries^^^^^
+                - ^^^^^Dictionaries with Slices as Values^^^^^
+                - ^^^^^Reference Type Characteristics of Dictionaries^^^^^
+            - ^^^^^Sort Student Grades Dynamically^^^^^
+                - ^^^^^Sort Student Grades Dynamically^^^^^
+            - ^^^^^Channel Primitives in Golang^^^^^
+                - ^^^^^Overview of Channels^^^^^
+                - ^^^^^Channel Types and Declaration^^^^^
+                - ^^^^^Channel Initialization^^^^^
+                - ^^^^^Channel Operations^^^^^
+                - ^^^^^Channel Blocking^^^^^
+                - ^^^^^Unidirectional Channels^^^^^
+            - ^^^^^Build a Simple Channel Data Pipeline^^^^^
+                - ^^^^^Build a Simple Channel Data Pipeline^^^^^
+            - ^^^^^Structures in Golang^^^^^
+                - ^^^^^Definition of Structure^^^^^
+                - ^^^^^Instantiation using var^^^^^
+                - ^^^^^Initial Value of a Structure^^^^^
+                - ^^^^^Instantiation using new^^^^^
+                - ^^^^^Instantiation using :=^^^^^
+            - ^^^^^Design Student Struct in Go^^^^^
+                - ^^^^^Design Student Struct in Go^^^^^
+            - ^^^^^Functions in Golang^^^^^
+                - ^^^^^Creating and Running a Basic Program^^^^^
+                - ^^^^^Function Declaration^^^^^
+                - ^^^^^Using the init Function^^^^^
+                - ^^^^^Returning Multiple Values from a Function^^^^^
+                - ^^^^^Working with Variadic Parameters^^^^^
+            - ^^^^^Design Flexible Math Function^^^^^
+                - ^^^^^Design Flexible Math Function^^^^^
+            - ^^^^^Anonymous Functions in Golang^^^^^
+                - ^^^^^Understanding Anonymous Functions^^^^^
+                - ^^^^^Creating an Anonymous Function without Parameters^^^^^
+                - ^^^^^Using Parameters in Anonymous Functions^^^^^
+                - ^^^^^Returning Values from Anonymous Functions^^^^^
+                - ^^^^^Declaring and Calling Anonymous Functions Immediately^^^^^
+                - ^^^^^Using Anonymous Functions as Callback Functions^^^^^
+            - ^^^^^Design Flexible Math Transformations^^^^^
+                - ^^^^^Design Flexible Math Transformations^^^^^
+        -  ^^^^^**What Day Is It Today?**^^^^^
+            - ^^^^^What Day Is It Today?^^^^^
+        -  ^^^^^**Development of Golang Caching Component**^^^^^
+            - ^^^^^Development of Golang Caching Component^^^^^
+                - ^^^^^What Is a Cache?^^^^^
+                - ^^^^^Design of Cache System^^^^^
+                - ^^^^^Development Preparation^^^^^
+                - ^^^^^Basic Structure of a Cache System^^^^^
+                - ^^^^^Implementing CRUD Interface for Cache System^^^^^
+                - ^^^^^Import and Export of Cache System^^^^^
+                - ^^^^^Other Interfaces of the Cache System^^^^^
+                - ^^^^^Testing the Cache System^^^^^
+        -  ^^^^^**Cache Request Execution Results**^^^^^
+            - ^^^^^Cache Request Execution Results^^^^^
+        -  ^^^^^**Implement JSON Comment Interpreter**^^^^^
+            - ^^^^^Implement JSON Comment Interpreter^^^^^
+        -  ^^^^^**Transparent Modification of HTTP Requests**^^^^^
+            - ^^^^^Transparent Modification of HTTP Requests^^^^^
+        - 
+- C lang
+    - labex.io courses
+        - ### **C Programming for Beginners**
+            - [Size]();-[H3]()
+            - Create "Hello World" In CStart Lab
+                - Review C Program Structure (Headers And Main)
+                - Install GCC Compiler On Your System
+                - Write A Basic "Hello World" Program
+            - Craft Your First C Greeting
+                - Craft Your First C Greeting
+            - Declare Variables And Data Types In C
+                - Discuss Common C Data Types (int, float, char)
+                - Initialize Variables In Main Function
+                - Use "printf" With Format Specifiers
+                - Read User Input With "scanf"
+            - Build Student Information Tracker
+                - Build Student Information Tracker
+            - Use Basic Operators In C
+                - Introduce C Operators
+                - Write Sample Arithmetic Operations (Add, Sub, Mul, Div)
+                - Relational Operators For Comparison (>, <,→)
+                - Implement Logical Operators (And, Or, Not)
+                - Build a Simple Calculator Program
+            - Create a Temperature Converter
+                - Build a Temperature Conversion Tool
+            - Implement Conditionals In C
+                - Understanding If Syntax (if, else if, else)
+                - Write A Simple If Statement For Comparison
+                - Add Else Clause For Alternate Flow
+                - Use Else If For Multiple Conditions
+                - Nested If Statements
+            - Classify Student Grades
+                - Classify Student Grades
+            - Implement Loops In C
+                - Discuss For, While, And Do While Loop Syntax
+                - Write A For Loop To Print Numbers
+                - Use While Loop For Repeated Tasks
+                - Implement A Do While Loop Example
+                - Extend Do-While Loop Example
+            - Generate Multiplication Tables
+                - Generate Multiplication Tables
+            - Handle Arrays In C
+                - Introduce Array Declaration Syntax
+                - Initialize An Integer Array With Values
+                - Access Array Elements Using Indices
+                - Print Elements In A For Loop
+                - Advanced Array Operations
+            - Analyze Temperature Array
+                - Analyze Temperature Array
+            - Build Functions In C
+                - Explain Purpose And Syntax Of Functions
+                - Define A Function Prototype
+                - Implement Function Logic In Source File
+                - Call The Function From Main
+            - Create Even Number Validator Function
+                - Create Even Number Validator Function
+            - Manage Projects With Make In C
+                - What Is A Makefile And Why Use It?
+                - Explain Basic Makefile Structure (Targets, Dependencies)
+            - Create a Modular Makefile
+                - Create a Basic Makefile
+        - ### **Quick Start with C**
+            - [Size]();-[H3]()
+            - 16 labs
+            - Create Your First C Program in LabExStart Lab
+            - Personalized C Greeting
+            - Create User Input Program in C
+            - Basic Arithmetic Operations in C
+            - Manipulate Array Elements in C
+            - Create Two-Dimensional Arrays in C
+            - Decision Making Structures in C
+            - Strings and Manipulate Them in C
+            - Create Factorial Calculator in C
+            - Conditional Loops in C
+            - Create Functions in C
+            - Parse Command-Line Arguments in C
+            - Create String Comparison Functions in C
+            - Create String Array Iterators in C
+            - Create Even Numbers List in C
+            - Create a Rectangle Area Calculator in C
+        - ### **Building Flappy Bird Using C**
+            - [Size]();-[H3]()
+            - Building Flappy Bird Using CStart Lab
+                - Basic Knowledge
+                - Define Constants
+                - Timing Issue
+                - main() Function
+                - Compilation and Running
+        - ### **Making a Simple Calculator Using C**
+            - [Size]();-[H3]()
+            - Making a Simple Calculator Using CStart Lab
+                - Get User Input
+                - Checking the Format and Performing Calculations
+                - Compiling and Running Files
+        - ### **Creating a Gomoku Game in C**
+            - [Size]();-[H3]()
+            - Creating a Gomoku Game in CStart Lab
+                - Create Project Files
+                - Designing a Chessboard
+                - main Function
+                - initGame Function
+                - Function printChessboard
+                - playChess Function
+                - judge Function
+                - My Chess Piece was 'Eaten'
+                - Why can't I Win Forever?
+                - Compilation and Running
+        - ### **Creating a Snake Game in C**
+            - [Size]();-[H3]()
+            - Creating a Snake Game in CStart Lab
+                - Basic Knowledge
+                - Define Constants
+                - Main Function
+                - Window Mechanism
+                - Display Game Information
+                - Initializing the Snake Queue
+                - Display the Snake on the Game Window
+                - Write the Core of the Game
+                - The Movement of the Greedy Snake
+                - Lengthening the Snake Body
+                - The Location of Food Production
+                - Boundary Detection
+                - Game Over
+                - Compilation and Execution
+        - ### **File Type Statistics Using C**
+            - [Size]();-[H3]()
+            - File Type Statistics Using CStart Lab
+                - Basic Knowledge and Creating Project Files
+                - Design the main function
+                - Design the myftw function
+                - Design 'dopath' function
+                - Design the myfunc function
+                - Compile and test
+        - ### **Typing Practice Program Using C**
+            - [Size]();-[H3]()
+            - Typing Practice Program Using CStart Lab
+                - Project Environment
+                - Enter a Character
+                - Eliminating Entered Characters
+                - Input Multiple Strings
+                - Shuffle the Order of the Questions (Method 1)
+                - Shuffle Question Order (Method 2)
+                - Keyboard Layout Associative Typing
+                - Code and Running Result
+        - ### **Creating a 2048 Game in C**
+            - [Size]();-[H3]()
+            - Creating a 2048 Game in CStart Lab
+                - Create the Project Files
+                - Define Constants
+                - main Function
+                - Initialize the Game Board
+                - Implement Functions to Check Game State
+                - Create the Logic for Moving Tiles
+                - Display the Game Board
+                - Compile and Test
+        - ### **Creating a Code Rain in C Using Ncurses**
+            - [Size]();-[H3]()
+            - Creating Terminal Code Rain with C and NcursesStart Lab
+                - Create the Project Files
+                - Define Constants
+                - Initializing Colors
+                - Implementing the Main Function
+                - Initializing Raindrop Parameters
+                - Implementing the Animation Loop
+                - Compilation and Running
+        - ### **Creating a Simple Tic-Tac-Toe Game in C**
+            - [Size]();-[H3]()
+            - Creating a Simple Tic-Tac-Toe Game in CStart Lab
+                - Create the Project Files
+                - Define Constants
+                - Initialize the Game Board
+                - Clear the Screen After Each Turn
+                - Display the Game Board
+                - Check if the Game is Over
+                - Determine the Winner
+                - Implement the Main Game Loop
+                - Compile and Run the Project
+        - ### **Create a Simple Stopwatch App Using GTK**
+            - [Size]();-[H3]()
+            - Create a Simple Stopwatch App Using GTKStart Lab
+                - Create the Project Files
+                - Include GTK Headers and Define Variables
+                - Create the Timer Callback Function
+                - Implement Button Click Callbacks
+                - Create the Main Function and UI Elements
+                - Compile and Run the Project
+        - ### **Creating a Simple Clock Animation Using OpenGL**
+            - [Size]();-[H3]()
+            - Creating a Simple Clock Animation Using OpenGLStart Lab
+                - Create the Project Files
+                - Include Headers and Define Variables
+                - Set Up the Window and Initialize OpenGL
+                - Draw the Clock Background
+                - Rotate the Clock
+                - Draw the Clock's Outline
+                - Get Current Time and Calculate Clock Hands' Positions
+                - Draw the Hour Hand
+                - Draw the Minute Hand
+                - Draw the Second Hand
+                - Window Reshape and Real-time Display
+                - Compile and Run the Project
+        - ### **Creating a Dynamic Heart Animation With C**
+            - [Size]();-[H3]()
+            - Creating a Dynamic Heart Animation with CStart Lab
+                - Create the Project Files
+                - Define Necessary Variables
+                - Implement Screen Coordinate Functions
+                - Implement Random Number Generator Function
+                - Initialize and Generate Heart-Shaped Point Sets:
+                - Color Points to Generate Animation
+                - Animation Generation and Update
+                - Create X Window and Initialize
+                - Initializes Data and Creates Point Groups
+                - Animation Main Loop
+                - Compile and Run the Project
+        - ### **Implementing Callback Functions in C**
+            - [Size]();-[H3]()
+            - Implementing Callback Functions in CStart Lab
+        - ### **Synchronize Multithreaded Printing with Mutex**
+            - [Size]();-[H3]()
+            - Synchronize Multithreaded Printing with MutexStart Lab
+        - ### **Parsing Command Line Arguments in C**
+            - [Size]();-[H3]()
+            - Parsing Command Line Arguments in CStart Lab
+        - ### **Implementing Doubly Linked List in C**
+            - [Size]();-[H3]()
+            - Implementing Doubly Linked List in CStart Lab
+        - ### **Implementing Queue Data Structure in C**
+            - [Size]();-[H3]()
+            - Implementing Queue Data Structure in CStart Lab
+        - ### **Sorting Courses with Bubble Sort**
+            - [Size]();-[H3]()
+            - Sorting Courses with Bubble Sort
+    - 
+    - `#include <stdio.h>` includes the standard input/output library
+    - `int main()` is the main function where the program starts
+    - `printf()` prints text to the screen
+    - `\n` creates a new line after printing
+    - `return 0;` indicates the program completed successfully
+    - Compiling transforms your human-readable code into instructions that a computer can understand.
+    - 
+    - `int`:
+        - Used for whole numbers
+        - Typically 4 bytes in size
+        - Can store positive and negative whole numbers
+        - Example: `age = 25`
+    1. `float`:
+        - Used for decimal numbers
+        - Stores floating-point (real) numbers
+        - Provides decimal precision
+        - Example: `height = 1.75`
+    2. `char`:
+        - Used for single characters
+        - Enclosed in single quotes
+        - Typically 1 byte in size
+        - Example: `initial = 'A'`
+    - 
+    - The format specifiers used in `printf()` are important:
+        - `%d` for integers
+        - `%f` for floating-point numbers
+        - `%c` for characters
+    - These specifiers tell the `printf()` function exactly how to interpret and display the data stored in your variables. They are like translators that help convert your program's internal data representation into human-readable text.
+    - 
+    - 
+    - Let's break down the variable initialization techniques. Each method has its own use case and can be helpful in different programming scenarios.
+        1. Direct Initialization:
+            - Declare and assign a value in one step
+            - Example: `int studentCount = 25;`
+        2. Separate Declaration and Initialization:
+            - Declare variable first, then assign value later
+            - Example: `float averageScore; averageScore = 85.5;`
+        3. Multiple Variable Initialization:
+            - Initialize multiple variables in one line
+            - Example: `int x = 10, y = 20, sum;`
+        4. Constant Variables:
+            - Use `const` keyword to create unchangeable variables
+            - Example: `const float PI = 3.14159`
+    - 
+- MySQL
+    - Quick Start with MySQL
+        - Installation and Basic Configuration of MySQL
+            - ^^^MySQL, one of the most popular open-source relational database management systems (RDBMS). ^^^
+            - ^^^MySQL is widely used in many database-driven web applications and popular websites. ^^^
+            - check if mysql is install
+            - check the current state of mysql - {{sudo service mysql status}} 
+            - start mysql service - {{sudo service mysql start}} 
+            - access mysql shell as root - {{sudo mysql -u root}} 
+            - ^^^This command uses^^^ `^^^sudo^^^(#3594f7)` ^^^to run with administrative privileges, which is often required for system-level operations. The^^^ `^^^mysql^^^(#3594f7)` ^^^command is used to access the MySQL shell, and the^^^ `^^^-u root^^^(#3594f7)` ^^^flag specifies that you're connecting as the^^^ `^^^root^^^(#3594f7)` ^^^user.^^^
+            - ^^^The^^^ `^^^MariaDB [(none)]>^^^(#3594f7)` ^^^prompt indicates that you're connected to MariaDB (a fork of MySQL) and not currently using any specific database.^^^
+            - ^^^It's important to note that you're seeing MariaDB instead of MySQL. Don't worry - this won't affect your ability to complete this lab or learn MySQL commands. Here's why:^^^
+                1. ^^^MariaDB is a fork of MySQL, created by the original developers of MySQL. It's designed to be a drop-in replacement for MySQL, meaning it's fully compatible with MySQL syntax and operations.^^^
+                2. ^^^MariaDB was created to ensure that a truly open-source version of MySQL would always be available. It maintains high compatibility with MySQL while also offering some unique features and improvements.^^^
+                3. ^^^For the purposes of this lab and most basic to intermediate MySQL operations, you can treat MariaDB exactly as you would MySQL. All the commands we'll use in this lab work identically in both MariaDB and MySQL.^^^
+                4. ^^^MariaDB is often considered more lightweight and faster than MySQL, which makes it an excellent choice for learning environments like this lab. You might notice quicker response times, which can make your learning experience smoother.^^^
+                5. ^^^Many Linux distributions, including some versions of Ubuntu, now use MariaDB as their default MySQL-compatible database system due to its open-source nature and performance benefits.^^^
+            - ^^^So, when you see "MariaDB" in the prompt or output, just remember that for the purposes of this lab, you can think of it as MySQL. All the skills you learn here will be directly applicable to both MariaDB and MySQL in real-world scenarios.^^^
+            - list all the databases - {{show databases;}} 
+            - ^^^Let's break down what these databases are:^^^
+                - `information_schema`^^^: This is a database that provides access to database metadata.^^^ 
+                - `mysql`^^^: This database contains information required by the MySQL server for its operation.^^^ 
+                - `performance_schema`^^^: This database provides a way to inspect internal execution of the server at runtime.^^^ 
+                - `sys`^^^: This database contains a set of objects that help DBAs and developers interpret data collected by the performance_schema.^^^ 
+            - go to mysql database - {{use mysql;}} 
+            - print tables in the database - {{show tables;}} 
+            - show all the columns in foo table - {{describe foo;}} 
+            - show columns bar, baz, qux from foo table - {{select bar, baz, qux from foo;}} 
+            - quit from the mysql shell - {{exit;}} 
+        - Explore MySQL System Tables
+            - Start MySQL and Explore System Tables
+        - Database Management Fundamentals with MySQL
+            - Creating and Listing Databases
+            - Creating Databases Using mysqladmin
+            - Dropping Databases
+            - Selecting and Using Databases
+            - Retrieving MySQL Metadata
+        - Create Your First MySQL Database
+            - Create a Database in MySQL
+        - MySQL Table Structure and Data Types
+            - Understanding MySQL Data Types
+            - Creating Tables with Constraints
+            - Modifying Table Structure
+            - Working with Table Information
+            - Dropping Tables and Cleanup
+        - Create a Product Catalog Table
+            - Create the Books Table
+        - MySQL Basic Data Manipulation
+            - Basic Data Insertion
+            - Basic SELECT Queries
+            - Updating Data
+            - Deleting Data
+        - Record Movie Data Challenge
+            - Insert Movie Records
+        - MySQL Data Filtering and Sorting
+            - Basic Data Filtering with WHERE
+            - Pattern Matching with LIKE
+            - Sorting Results with ORDER BY
+            - Limiting Results with LIMIT
+        - Book Search Challenge
+            - Find Technical Books
+        - MySQL Multi-Table Operations
+            - Understanding Table Relationships
+            - Basic INNER JOIN Operations
+            - LEFT JOIN Operations
+            - Multiple Table Joins
+            - Working with Foreign Key Constraints
+        - Author Book Information Challenge
+            - Create a Combined Author-Book Report
+        - MySQL Data Aggregation and Grouping
+            - Basic Aggregate Functions
+            - Grouping Data with GROUP BY
+            - Filtering Grouped Data with HAVING
+            - Advanced Aggregation Techniques
+        - MySQL Sales Data Analysis Challenge
+            - Calculate Category Performance
+        - MySQL User and Privileges Management
+            - Creating and Managing User Accounts
+            - Assigning Privileges
+        - MySQL Database Access Challenge
+            - Create Marketing Analyst Access
+        - Make Database More Secure
+            - Make Database More Secure
+    - Advanced MySQL Practical Labs
+        - MySQL Indexes and Performance OptimizationComing Soon
+            - Create a Single-Column Index on a Table
+            - Analyze a Query Plan Using EXPLAIN
+            - Add a Composite Index for Multi-Column Queries
+            - Remove an Unused Index
+        - 
+        - MySQL Views and Virtual TablesComing Soon
+            - Create a View from a SELECT Query
+            - Update the View Definition with ALTER VIEW
+            - Query Data Using the View
+            - Drop the View to Clean Up
+        - 
+        - MySQL Stored Procedures BasicsComing Soon
+            - Write a Procedure to Insert Data
+            - Call the Procedure with CALL Statement
+            - Add an Input Parameter to the Procedure
+            - Drop the Procedure
+        - 
+        - MySQL Functions and Custom LogicComing Soon
+            - Create a Function to Calculate a Value
+            - Use the Function in a SELECT Query
+            - Test Function Output with Sample Data
+            - Drop the Function
+        - 
+        - MySQL Triggers for AutomationComing Soon
+            - Create a Trigger to Log Inserts
+            - Insert Data to Test the Trigger
+            - Update the Trigger Logic
+            - Drop the Trigger
+        - 
+        - MySQL Transactions and Data IntegrityComing Soon
+            - Start a Transaction with BEGIN
+            - Insert Data and Commit the Transaction
+            - Roll Back a Failed Update
+            - Use a Savepoint for Partial Rollback
+        - 
+        - MySQL Subqueries and Nested OperationsComing Soon
+            - Write a Subquery in a WHERE Clause
+            - Use EXISTS with a Subquery
+            - Test a Correlated Subquery
+            - Compare Subquery Performance
+        - 
+        - MySQL Temporary Tables and Session DataComing Soon
+            - Create a Temporary Table for Session Use
+            - Insert and Query Temporary Table Data
+            - Verify Temporary Table Scope
+            - Drop the Temporary Table
+        - 
+        - MySQL Partitioning for Large DatasetsComing Soon
+            - Partition a Table by Range
+            - Query Data from a Specific Partition
+            - Reorganize Partitions with ALTER TABLE
+            - Check Partition Impact on Query Speed
+        - 
+        - MySQL Full-Text Search CapabilitiesComing Soon
+            - Add a Full-Text Index to a Table
+            - Search with MATCH AGAINST
+            - Use Boolean Mode for Advanced Search
+            - Test Full-Text Query Results
+        - 
+        - MySQL Replication BasicsComing Soon
+            - Configure a Master Server with Binary Logging
+            - Set Up a Slave Server to Replicate Data
+            - Verify Replication with SHOW SLAVE STATUS
+            - Simulate a Replication Error and Fix It
+        - 
+        - MySQL Backup and RecoveryComing Soon
+            - Export a Database with mysqldump
+            - Back Up a Single Table
+            - Restore a Database from a Dump File
+            - Check Restored Data Accuracy
+        - 
+        - MySQL Configuration and TuningComing Soon
+            - View Current Configuration with SHOW VARIABLES
+            - Adjust InnoDB Buffer Pool Size
+            - Monitor Query Performance Post-Tuning
+            - Save Configuration Changes
+        - 
+        - MySQL Security Best PracticesComing Soon
+            - Change the Root User Password
+            - Enable SSL for Secure Connections
+            - Revoke Excess Privileges from a User
+            - Remove Anonymous User Accounts
+        - 
+        - MySQL JSON Data HandlingComing Soon
+            - Insert JSON Data into a Column
+            - Query JSON with JSON_EXTRACT
+            - Update a JSON Field Value
+            - Create an Index on a JSON Property
+        - 
+        - MySQL Window FunctionsComing Soon
+            - Assign Row Numbers with ROW_NUMBER
+            - Compute a Running Total with SUM OVER
+            - Use PARTITION BY for Grouped Calculations
+            - Compare Rows with LAG
+        - 
+        - MySQL Common Table Expressions (CTEs)Coming Soon
+            - Define a Simple CTE with WITH Clause
+            - Write a Recursive CTE for Hierarchical Data
+            - Join a CTE with a Table
+            - Test CTE Query Output
+        - 
+        - MySQL Error Handling and LoggingComing Soon
+            - Enable General Query Logging
+            - Add Error Handling to a Stored Procedure
+            - Raise a Custom Error with SIGNAL
+            - Review Error Log Entries
+        - 
+        - MySQL Event SchedulerComing Soon
+            - Enable the Event Scheduler
+            - Create an Event to Update Data Periodically
+            - Check Event Execution Status
+            - Drop the Event
+        - 
+        - MySQL Import and Export OperationsComing Soon
+            - Import CSV Data with LOAD DATA INFILE
+            - Export a Query Result to CSV
+            - Fix Encoding Issues in Imports
+            - Validate Imported Data
+    - Creating Secure MySQL User Accounts
+        - Creating Secure MySQL User AccountsStart Lab
+    - Accessing MySQL Database and SQL Querying
+        - Accessing MySQL Database and SQL QueryingStart Lab
+    - Comprehensive Challenge of This Section
+        - Comprehensive SQL Query ChallengeStart Lab
+    - Creating Stored Procedures for Course Data Retrieval
+        - Creating Stored Procedures for Course Data RetrievalStart Lab
+    - Creating and Updating Database Views
+        - Creating and Updating Database ViewsStart Lab
+    - Exploring MySQL User Permissions
+        - Exploring MySQL User PermissionsStart Lab
+    - Identify MVP Recipient in Game
+        - Identify MVP Recipient in GameStart Lab
+    - MySQL Database Management Fundamentals
+        - MySQL Database Management FundamentalsStart Lab
+    - Stored Procedure Cursor Database Retrieval
+        - Stored Procedure Cursor Database RetrievalStart Lab
+    - Top 5 Countries by Land Area
+        - Top 5 Countries by Land AreaStart Lab
+    - Updating Student GPA in MySQL Database
+        - Updating Student GPA in MySQL DatabaseStart Lab
+    - Wuxu Reform Duration Calculation
+        - Wuxu Reform Duration Calculation
+- linux lab set up #linux
+    - vmware
+    - virtualbox
+        - machine new
+        - username: usr1
+        - password: 1234
+        - root password: 56789
+        - hostname: rhel9-vm1
+        - domain name: myguest.virtualbox.org
+        - for internet: go settings network bridged adapter
+        - 
+    - 
+- Command Line Lists
+    - command description
+    - working on
+        - ### 🌐 **User Environment & Shell**
+            - `.bashrc`, `.bash_profile` 
+            - [Size]();-[H3]()
+    -  Shell Built-ins and Scripting
+        -  {{echo}} - {{display a line of text}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - Built-in in most shells and also a standalone binary.
+            - **Synopsis**
+                - `echo [OPTION]... [STRING]...`
+            - **Description**
+                - Outputs text or variables to the terminal.
+            - **When to Use It**
+                - Use to print messages, variables, or script output.
+            - **Common Flags**
+                - `-n` - Do not output the trailing newline
+                - `-e` - Enable interpretation of backslash escapes
+            - **Examples**
+                - `echo "Hello"`
+                - `echo -e "Line1\nLine2"`
+            - **Notes / Gotchas**
+                - Behavior may vary between shell built-in and `/bin/echo`.
+        -  {{grep}} - {{print lines that match patterns}} 
+            - **Platforms**
+                - Debian, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `grep [OPTIONS] PATTERN [FILE]...`
+            - **Description**
+                - Searches for matching lines using regular expressions.
+            - **When to Use It**
+                - Use to find strings or patterns in files or command output.
+            - **Common Flags**
+                - `-i` - Ignore case
+                - `-r` - Recursive search in directories
+                - `-v` - Invert match
+                - `-n` - Show line numbers
+            - **Examples**
+                - `grep "main" *.c`
+                - `grep -r "password" /etc/`
+            - **Notes / Gotchas**
+                - Use `grep -E` for extended regex.
+            - [Size]();-[H0]()
+        -  {{f}}{{ind}} - {{search }}{{f}}{{or }}{{f}}{{iles}} in {{directory hierarchy}} 
+            - **Platforms**
+                - Debian, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `find [path] [expression]`
+            - **Description**
+                - Recursively searches directories for files matching conditions.
+            - **When to Use It**
+                - Use to locate files by name, size, time, permissions, etc.
+            - **Common Flags**
+                - `-name` - Match filename
+                - `-type` - File type (`f`, `d`)
+                - `-exec` - Execute command on result
+                - `-mtime` - Modified N days ago
+            - **Examples**
+                - `find . -name "*.sh"`
+                - `find /var -type f -mtime -1`
+                - `find . -type f -exec chmod 644 {} +`
+            - **Notes / Gotchas**
+                - Use quotes to avoid shell globbing.
+            - [Size]();-[H0]()
+        -  {{read}} - {{read from standard}} {{input into shell variables}} 
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Shell built-in (`bash`, `sh`).
+            - **Synopsis**
+                - `read [options] variable`
+            - **Description**
+                - Reads user input into a shell variable.
+            - **When to Use It**
+                - Use in interactive scripts to accept input.
+            - **Common Flags**
+                - `-p` - Prompt before reading (bash only)
+                - `-r` - Raw mode (don’t interpret backslashes)
+            - **Examples**
+                - `read name`
+                - `read -p "Enter name: " name`
+            - **Notes / Gotchas**
+                - Not a standalone command—must be used within a shell.
+            - [Size]();-[H0]()
+        -  {{sed}} - {{stream editor}} for {{filtering and transforming text}} 
+            - **Platforms**
+                - Debian, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `sed [OPTION]... 'script' [FILE]...`
+            - **Description**
+                - Performs text transformations on input streams or files.
+            - **When to Use It**
+                - Use to replace, delete, or modify lines in text.
+            - **Common Flags**
+                - `-e` - Add a script
+                - `-i` - Edit files in place
+                - `-n` - Suppress automatic printing
+            - **Examples**
+                - `sed 's/foo/bar/g' file.txt`
+                - `sed -i 's/root/admin/' /etc/passwd`
+            - **Notes / Gotchas**
+                - Use `-r` for extended regex (`-E` in modern versions).
+            - [Size]();-[H0]()
+        -  {{sh}} - POSIX shell interpreter *
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Often symlinked to `dash` or `bash`.
+            - **Synopsis**
+                - `sh [SCRIPT]`
+            - **Description**
+                - Executes shell scripts using the POSIX shell.
+            - **When to Use It**
+                - Use to run scripts in a POSIX-compliant environment.
+            - **Common Flags**
+                - `-c` - Pass command string
+                - `-e` - Exit on error
+                - `-x` - Print commands before executing
+            - **Examples**
+                - `sh myscript.sh`
+                - `sh -c "echo hello"`
+            - **Notes / Gotchas**
+                - Use for portability across UNIX systems.
+                - Not as feature-rich as `bash`.
+            - [Size]();-[H0]()
+        -  {{test}} - check file types and compare values
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - Built-in in many shells; `[ ]` is a synonym.
+            - **Synopsis**
+                - `test EXPRESSION` or `[ EXPRESSION ]`
+            - **Description**
+                - Evaluates conditional expressions for scripts.
+            - **When to Use It**
+                - Use in scripts for logic checks.
+            - **Common Flags**
+                - `-f` - File exists and is regular
+                - `-d` - Directory exists
+                - `-z` - String is empty
+                - `=`, `!=` - String comparison
+            - **Examples**
+                - `test -f file.txt && echo exists`
+                - `[ "$USER" = "root" ] && echo admin`
+            - **Notes / Gotchas**
+                - Don’t forget spacing around brackets (`[ ]`).
+            - [Size]();-[H0]()
+        -  {{nano}} - {{Nano's ANOther editor,}} inspired by Pico
+            - **Platforms**
+                - Debian, RHEL, Editor
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `nano [FILE]`
+            - **Description**
+                - Terminal-based text editor that is simple and user-friendly.
+            - **When to Use It**
+                - Use to quickly edit files from the command line.
+            - **Common Flags**
+                - `-m` - Enable mouse support
+                - `-l` - Enable line numbers
+                - `-c` - Constant cursor position display
+            - **Examples**
+                - `nano myfile.txt`
+                - `nano -l script.sh`
+            - **Notes / Gotchas**
+                - Easier for beginners than `vi` or `vim`.
+                - Key combos shown at bottom (`^` = Ctrl).
+            - [Size]();-[H0]()
+        -  {{vim}} - {{Vi IMproved,}} {{a programmer's text editor}} 
+            - **Platforms**
+                - Debian, RHEL, Editor
+            - **Synonyms/Aliases**
+                - May be aliased as `vi` depending on system.
+            - **Synopsis**
+                - `vim [FILE]`
+            - **Description**
+                - Highly configurable text editor for programmers and power users.
+            - **When to Use It**
+                - Use for powerful file editing, scripting, and macros.
+            - **Common Flags**
+                - `-u NONE` - Start without config
+                - `-R` - Read-only mode
+                - `+NUM` - Start at line number
+            - **Examples**
+                - `vim config.txt`
+                - `vim +10 error.log`
+            - **Notes / Gotchas**
+                - Has a learning curve (normal, insert, visual modes).
+                - Use `:q`, `:wq`, `:help` to start learning.
+            - [Size]();-[H0]()
+        -  {{vi}} - {{screen-oriented (visual)}} {{display editor}} 
+            - [Size]();-[H0]()
+        -  {{.(dot)}} - source and execute a script in the current shell *
+            - **Platforms**
+                - Unclassified (Shell Built-in; POSIX shells)
+            - **Synonyms/Aliases**
+                - Equivalent to `source` in many shells.
+            - **Synopsis**
+                - `. FILE`
+            - **Description**
+                - Executes a script in the current shell environment.
+            - **When to Use It**
+                - Use to apply environment changes without starting a subshell.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `. ./envsetup.sh`
+            - **Notes / Gotchas**
+                - Must be used in a shell context, not as a standalone command.
+                - A space after `.` is required.
+            - [Size]();-[H0]()
+        -  {{alias}} - {{define or display aliases}} 
+            - **Platforms**
+                - Debian, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - Built-in to most shells.
+            - **Synopsis**
+                - `alias [name='value']`
+            - **Description**
+                - Creates or lists shortcuts for commands.
+            - **When to Use It**
+                - Use to shorten frequently used or complex commands.
+            - **Common Flags**
+                - None (but can be combined with `unalias` to remove)
+            - **Examples**
+                - `alias ll='ls -l'`
+                - `alias`
+            - **Notes / Gotchas**
+                - Only lasts for the current shell session unless added to `.bashrc`.
+            - [Size]();-[H0]()
+        -  {{apropos}} - {{search the manual page}} {{names and descriptions}} 
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - Related to `man -k`.
+            - **Synopsis**
+                - `apropos keyword`
+            - **Description**
+                - Searches the manual page names and descriptions for a keyword.
+            - **When to Use It**
+                - Use to discover relevant commands when unsure of the exact name.
+            - **Common Flags**
+                - `-e` - Use exact match
+                - `-a` - Match all keywords
+            - **Examples**
+                - `apropos network`
+                - `apropos compress`
+            - **Notes / Gotchas**
+                - Requires updated man database (may need `mandb`).
+            - [Size]();-[H0]()
+        -  basename - strip directory and suffix from file path *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `basename NAME [SUFFIX]`
+            - **Description**
+                - Prints file name portion of a path, optionally removing suffix.
+            - **When to Use It**
+                - Use in scripts to extract file names.
+            - **Common Flags**
+                - None commonly used
+            - **Examples**
+                - `basename /usr/bin/sort`to `sort` 
+                - `basename file.txt .txt`to `file` 
+            - **Notes / Gotchas**
+                - Often used with `dirname`.
+            - [Size]();-[H0]()
+        -  {{cut}} - {{remove sections}} from {{each line of files}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `cut OPTION... [FILE]...`
+            - **Description**
+                - Extracts specific bytes, characters, or fields from lines.
+            - **When to Use It**
+                - Use to isolate columns in delimited data (e.g., CSV).
+            - **Common Flags**
+                - `-d` - Set delimiter
+                - `-f` - Select fields
+                - `-b` - Select bytes
+                - `-c` - Select characters
+            - **Examples**
+                - `cut -d':' -f1 /etc/passwd`
+                - `cut -c1-5 file.txt`
+            - **Notes / Gotchas**
+                - Doesn't handle multiline fields or quoted delimiters well.
+            - [Size]();-[H0]()
+        -  dirname - strip last component from file path *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `dirname NAME`
+            - **Description**
+                - Prints the directory path portion of a file path.
+            - **When to Use It**
+                - Use in scripts to isolate directory paths.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `dirname /usr/local/bin/file`to `/usr/local/bin` 
+            - **Notes / Gotchas**
+                - Use with `basename` to split paths cleanly.
+            - [Size]();-[H0]()
+        -  egrep - extended grep using ERE (extended regex) *
+            - **Platforms**
+                - BSD, POSIX
+            - **Synonyms/Aliases**
+                - Equivalent to `grep -E`.
+            - **Synopsis**
+                - `egrep [OPTIONS] PATTERN [FILE]...`
+            - **Description**
+                - Grep using extended regular expressions.
+            - **When to Use It**
+                - Use when you need extended regex syntax (e.g., `+`, `?`, `|`).
+            - **Common Flags**
+                - `-i` - Ignore case
+                - `-r` - Recursive search
+                - `-n` - Show line numbers
+            - **Examples**
+                - `egrep 'foo|bar' file.txt`
+                - `egrep -i 'error|fail' /var/log/syslog`
+            - **Notes / Gotchas**
+                - Deprecated on some systems in favor of `grep -E`.
+            - [Size]();-[H0]()
+        -  {{emacs}} - extensible, customizable text editor *
+            - **Platforms**
+                - Editor (Debian, RHEL)
+            - **Synonyms/Aliases**
+                - No standard aliases (some use `e`).
+            - **Synopsis**
+                - `emacs [FILE]`
+            - **Description**
+                - Full-featured text editor often used by developers and sysadmins.
+            - **When to Use It**
+                - Use for advanced text editing, scripting, and integrated development.
+            - **Common Flags**
+                - `-nw` - No window; run in terminal
+                - `+LINE` - Start at a specific line
+            - **Examples**
+                - `emacs file.txt`
+                - `emacs -nw script.sh`
+            - **Notes / Gotchas**
+                - Large learning curve.
+                - Supports plugins, macros, and scripting with Emacs Lisp.
+            - [Size]();-[H0]()
+        -  {{env}} - {{run a program}} in a {{modified environment}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]`
+            - **Description**
+                - Displays or runs a command with custom environment variables.
+            - **When to Use It**
+                - Use to temporarily set environment variables for a single command.
+            - **Common Flags**
+                - `-i` - Start with empty environment
+                - `-u` - Unset a variable
+            - **Examples**
+                - `env`
+                - `env VAR=value command`
+                - `env -i bash`
+            - **Notes / Gotchas**
+                - Often used in scripts and shebangs for portability (`#!/usr/bin/env bash`).
+        -  envsubst - substitute environment variables in strings *
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `envsubst [OPTION] [SHELL-FORMAT]`
+            - **Description**
+                - Replaces environment variables in a string or input stream.
+            - **When to Use It**
+                - Use to inject environment variables into config templates.
+            - **Common Flags**
+                - None commonly used
+            - **Examples**
+                - `echo "Hello $USER" | envsubst`
+                - `envsubst < template.conf > output.conf`
+            - **Notes / Gotchas**
+                - Only replaces variables in `$VAR` format—not `${VAR}` by default.
+            - [Size]();-[H0]()
+        -  eval - evaluate arguments as a shell command *
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Built-in in most shells.
+            - **Synopsis**
+                - `eval [ARG]...`
+            - **Description**
+                - Concatenates and executes arguments as a single shell command.
+            - **When to Use It**
+                - Use when dynamic construction of commands is needed in scripts.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `eval "ls -l $1"`
+                - `cmd="echo hi"; eval $cmd`
+            - **Notes / Gotchas**
+                - Can be dangerous—executes arbitrary code. Use cautiously.
+            - [Size]();-[H0]()
+        -  ex - line-based interface to `vi` editor *
+            - **Platforms**
+                - BSD
+            - **Synonyms/Aliases**
+                - `vi` in line-editing mode.
+            - **Synopsis**
+                - `ex [file]`
+            - **Description**
+                - Provides command-line editing interface for `vi`.
+            - **When to Use It**
+                - Use for scripted or batch file editing via `vi`.
+            - **Common Flags**
+                - `-s` - Silent (batch/script mode)
+            - **Examples**
+                - `ex file.txt`
+                - `ex -s +'%s/foo/bar/g|x' file.txt`
+            - **Notes / Gotchas**
+                - Starts in command mode; not user-friendly for beginners.
+            - [Size]();-[H0]()
+        -  exec - replace the shell with another command *
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Shell built-in.
+            - **Synopsis**
+                - `exec [COMMAND [ARG]...]`
+            - **Description**
+                - Replaces the current shell with a new command process.
+            - **When to Use It**
+                - Use in scripts when no further shell processing is needed.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `exec bash`
+                - `exec 1>output.log` (redirect STDOUT)
+            - **Notes / Gotchas**
+                - Does not return to the original shell—it replaces it.
+            - [Size]();-[H0]()
+        -  {{exit}} - {{cause normal}} {{process termination}} 
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Built-in in all shells.
+            - **Synopsis**
+                - `exit [n]`
+            - **Description**
+                - Ends the current shell or script with optional status code.
+            - **When to Use It**
+                - Use to end shell sessions or return status from scripts.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `exit`
+                - `exit 0`
+                - `exit 1`
+            - **Notes / Gotchas**
+                - `0` = success; any non-zero = error or failure.
+            - [Size]();-[H0]()
+        -  expand - convert tabs to spaces *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `expand [OPTION]... [FILE]...`
+            - **Description**
+                - Converts tab characters to spaces in file or input.
+            - **When to Use It**
+                - Use to normalize indentation for consistent formatting.
+            - **Common Flags**
+                - `-t N` - Set tab width (default is 8)
+            - **Examples**
+                - `expand file.txt`
+                - `expand -t 4 source.py`
+            - **Notes / Gotchas**
+                - Does not modify file unless redirected to a new output.
+            - [Size]();-[H0]()
+        -  {{export}} - {{set the export}} {{attribute for variables}} 
+            - **Platforms**
+                - Unclassified (Shell Built-in; POSIX)
+            - **Synonyms/Aliases**
+                - Built-in in all POSIX shells.
+            - **Synopsis**
+                - `export VAR[=VALUE]`
+            - **Description**
+                - Makes shell variables available to subprocesses.
+            - **When to Use It**
+                - Use when setting environment variables in a session or script.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `export PATH=$PATH:/new/path`
+                - `export EDITOR=nano`
+            - **Notes / Gotchas**
+                - Only affects processes started  *after*  the export.
+            - [Size]();-[H0]()
+        -  expr - evaluate expressions *
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `expr EXPRESSION`
+            - **Description**
+                - Evaluates arithmetic and string expressions.
+            - **When to Use It**
+                - Use in scripts for simple math or comparisons.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `expr 1 + 2`
+                - `expr "$a" : '.*'` (string length)
+            - **Notes / Gotchas**
+                - Operators and operands must be space-separated.
+                - Quoting is often necessary in scripts.
+        -  fgrep - fixed-string grep (no regex) *
+            - **Platforms**
+                - BSD
+            - **Synonyms/Aliases**
+                - Equivalent to `grep -F`.
+            - **Synopsis**
+                - `fgrep [OPTIONS] PATTERN [FILE]...`
+            - **Description**
+                - Searches for exact strings (not patterns).
+            - **When to Use It**
+                - Use for literal text search without regex interpretation.
+            - **Common Flags**
+                - `-i` - Ignore case
+                - `-r` - Recursive
+                - `-n` - Line numbers
+            - **Examples**
+                - `fgrep "example.com" hosts.txt`
+            - **Notes / Gotchas**
+                - Deprecated on some systems—use `grep -F`.
+            - [Size]();-[H0]()
+        -  fmt - format text for readability *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `fmt [OPTION]... [FILE]...`
+            - **Description**
+                - Reformats paragraphs to a uniform width.
+            - **When to Use It**
+                - Use to clean up plain-text blocks or emails.
+            - **Common Flags**
+                - `-w` - Line width (default: 75)
+                - `-u` - Uniform spacing
+            - **Examples**
+                - `fmt README.txt`
+                - `fmt -w 50 input.txt`
+            - **Notes / Gotchas**
+                - Operates on paragraph-style input; not good for code.
+            - [Size]();-[H0]()
+        -  fold - wrap long lines to fit terminal *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `fold [OPTION]... [FILE]...`
+            - **Description**
+                - Wraps each line of input to a specified width.
+            - **When to Use It**
+                - Use to break long lines without affecting paragraph structure.
+            - **Common Flags**
+                - `-w` - Line width
+                - `-s` - Break at spaces
+            - **Examples**
+                - `fold -w 80 input.txt`
+                - `fold -s file.txt`
+            - **Notes / Gotchas**
+                - Differs from `fmt`—preserves individual lines.
+            - [Size]();-[H0]()
+        -  {{awk}} - {{pattern scanning}} and {{processing language}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - Often aliased to `gawk` (GNU Awk)
+            - **Synopsis**
+                - `awk 'program' FILE...`
+            - **Description**
+                - Processes structured text by pattern-action logic.
+            - **When to Use It**
+                - Use for field-based parsing, data extraction, or inline logic.
+            - **Common Flags**
+                - `-F` - Field delimiter
+                - `-v` - Define variable
+            - **Examples**
+                - `awk '{ print $1 }' file.txt`
+                - `awk -F':' '$3 > 1000' /etc/passwd`
+            - **Notes / Gotchas**
+                - Powerful for scripting but more complex than `cut`.
+        -  gawk - GNU version of AWK pattern scanning *
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - Often aliased as `awk`.
+            - **Synopsis**
+                - `gawk [OPTION]... 'program' FILE...`
+            - **Description**
+                - Processes text using patterns and actions.
+            - **When to Use It**
+                - Use for advanced text parsing, transformation, or reporting.
+            - **Common Flags**
+                - `-F` - Field separator
+                - `-v var=value` - Set variable
+            - **Examples**
+                - `gawk '{ print $1 }' data.txt`
+                - `gawk -F: '$3 > 1000 { print $1 }' /etc/passwd`
+            - **Notes / Gotchas**
+                - Supports associative arrays and user-defined functions.
+            - [Size]();-[H0]()
+        -  getopts - parse positional script options *
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Shell built-in in `sh`, `bash`, etc.
+            - **Synopsis**
+                - `getopts optstring name [args]`
+            - **Description**
+                - Parses options and arguments in shell scripts.
+            - **When to Use It**
+                - Use in scripts to handle `-f`, `-v`, etc. flags.
+            - **Common Flags**
+                - `:` - Leading colon in `optstring` to suppress error messages
+            - **Examples**
+                - `while getopts "f:v" opt; do ... done`
+            - **Notes / Gotchas**
+                - Different from `getopt` (external command).
+            - [Size]();-[H0]()
+        -  groff - GNU text formatting system (man pages, PDFs) *
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - Wrapper for `troff`.
+            - **Synopsis**
+                - `groff [OPTION]... [FILES]`
+            - **Description**
+                - Formats text using troff macros (used for man pages, typesetting).
+            - **When to Use It**
+                - Use to format man pages or convert `.man`/`.ms` to PDF/PS.
+            - **Common Flags**
+                - `-T` - Output device (e.g., `ascii`, `pdf`)
+                - `-m` - Macro package (`man`, `ms`)
+            - **Examples**
+                - `groff -man mypage.1`
+                - `groff -ms -Tpdf paper.ms > paper.pdf`
+            - **Notes / Gotchas**
+                - Complex but powerful; used behind the scenes by `man`.
+            - [Size]();-[H0]()
+        -  ispell - interactive spell checker *
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - Replaced in many systems by `aspell`, `hunspell`.
+            - **Synopsis**
+                - `ispell [OPTIONS]... [FILES]`
+            - **Description**
+                - Checks spelling in plain-text files interactively.
+            - **When to Use It**
+                - Use to find and correct typos in text documents.
+            - **Common Flags**
+                - `-l` - List misspelled words only
+                - `-d` - Specify dictionary
+            - **Examples**
+                - `ispell myfile.txt`
+                - `ispell -l < draft.txt`
+            - **Notes / Gotchas**
+                - May not be pre-installed.
+                - More modern alternatives are often preferred.
+            - [Size]();-[H0]()
+        -  join - join lines of two files on a common field *
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `join [OPTION]... FILE1 FILE2`
+            - **Description**
+                - Joins lines from two sorted files based on a common field.
+            - **When to Use It**
+                - Use to merge related data from different files (like a database join).
+            - **Common Flags**
+                - `-1` - Join field from file 1
+                - `-2` - Join field from file 2
+                - `-t` - Set delimiter
+            - **Examples**
+                - `join file1.txt file2.txt`
+                - `join -1 2 -2 1 file1.txt file2.txt`
+            - **Notes / Gotchas**
+                - Files must be sorted on the join field.
+        -  {{locate}} - {{find files by name}} 
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `locate [OPTION]... PATTERN`
+            - **Description**
+                - Quickly searches a cached database of filenames.
+            - **When to Use It**
+                - Use to find files faster than `find`.
+            - **Common Flags**
+                - `-i` - Case-insensitive
+                - `-c` - Count matches
+                - `-r` - Use regular expressions
+            - **Examples**
+                - `locate passwd`
+                - `locate -i vimrc`
+            - **Notes / Gotchas**
+                - Database must be updated periodically using `updatedb`.
+            - [Size]();-[H0]()
+        -  look - search sorted file for matching lines *
+            - **Platforms**
+                - Unclassified
+            - **Synonyms/Aliases**
+                - Often used with `/usr/share/dict/words`.
+            - **Synopsis**
+                - `look STRING [FILE]`
+            - **Description**
+                - Displays lines in a sorted file that begin with a given string.
+            - **When to Use It**
+                - Use for prefix-based word lookup or command suggestions.
+            - **Common Flags**
+                - `-f` - Ignore case
+                - `-d` - Ignore non-alphanumeric characters
+            - **Examples**
+                - `look net`
+                - `look -f com`
+            - **Notes / Gotchas**
+                - File must be sorted or results may be incorrect.
+            - [Size]();-[H0]()
+        -  mlocate - fast file locator using updated database *
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - Modern version of `locate`.
+            - **Synopsis**
+                - `mlocate [OPTION]... PATTERN`
+            - **Description**
+                - Searches for files in a database updated by `updatedb`.
+            - **When to Use It**
+                - Use for fast searches across the filesystem.
+            - **Common Flags**
+                - Same as `locate`.
+            - **Examples**
+                - `mlocate myfile.txt`
+            - **Notes / Gotchas**
+                - May restrict search results by user permissions.
+            - [Size]();-[H0]()
+        -  nl - number lines of a file *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `nl [OPTION]... [FILE]`
+            - **Description**
+                - Adds line numbers to a file’s content.
+            - **When to Use It**
+                - Use to number output while preserving formatting.
+            - **Common Flags**
+                - `-b` - Numbering style (e.g., `a`, `t`, `n`)
+                - `-n` - Number format
+                - `-s` - Separator string
+            - **Examples**
+                - `nl script.sh`
+                - `nl -n ln -s ": " file.txt`
+            - **Notes / Gotchas**
+                - Different from `cat -n`; better formatting control.
+            - [Size]();-[H0]()
+        -  paste - merge lines of files *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `paste [OPTION]... [FILE]...`
+            - **Description**
+                - Joins corresponding lines from multiple files with tabs or delimiters.
+            - **When to Use It**
+                - Use to combine columns from different files line-by-line.
+            - **Common Flags**
+                - `-d` - Specify delimiter
+                - `-s` - Serial mode (combine all lines of each file)
+            - **Examples**
+                - `paste file1.txt file2.txt`
+                - `paste -d ',' col1 col2`
+            - **Notes / Gotchas**
+                - Files must have the same number of lines for clean output.
+            - [Size]();-[H0]()
+        -  printenv - print environment variables *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - Similar to `env`.
+            - **Synopsis**
+                - `printenv [VARIABLE]...`
+            - **Description**
+                - Displays current environment variables.
+            - **When to Use It**
+                - Use to check or debug environment variables in the shell.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `printenv`
+                - `printenv PATH`
+            - **Notes / Gotchas**
+                - Outputs only exported variables (visible to child processes).
+            - [Size]();-[H0]()
+        -  printf - format and print data *
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases. Also a shell built-in.
+            - **Synopsis**
+                - `printf FORMAT [ARGUMENT]...`
+            - **Description**
+                - Prints formatted output, similar to C's `printf`.
+            - **When to Use It**
+                - Use when precise formatting of output is needed in scripts.
+            - **Common Flags**
+                - None (formatting uses escape sequences like `\n`, `\t`, etc.)
+            - **Examples**
+                - `printf "%s\n" "Hello"`
+                - `printf "Hex: %x\n" 255`
+            - **Notes / Gotchas**
+                - Does not automatically append a newline.
+        -  readonly - mark variables as read-only *
+            - **Platforms**
+                - Unclassified (shell built-in, POSIX)
+            - **Synonyms/Aliases**
+                - Built-in in most POSIX-compliant shells.
+            - **Synopsis**
+                - `readonly NAME[=VALUE]`
+            - **Description**
+                - Declares a variable that cannot be changed or unset.
+            - **When to Use It**
+                - Use to protect variables from accidental modification.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `readonly HOME_DIR="/home/user"`
+            - **Notes / Gotchas**
+                - Once set, cannot be unset during that shell session.
+            - [Size]();-[H0]()
+        -  rev - reverse lines character by character *
+            - **Platforms**
+                - BSD
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `rev [FILE]...`
+            - **Description**
+                - Reverses the order of characters in each line of input.
+            - **When to Use It**
+                - Use for playful formatting, palindromes, or column manipulation.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `echo "Hello" | rev`―`olleH`
+                - `rev file.txt`
+            - **Notes / Gotchas**
+                - Works line-by-line, not word-by-word.
+            - [Size]();-[H0]()
+        -  seq - generate a sequence of numbers *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `seq [OPTION]... LAST`
+                - `seq [OPTION]... FIRST LAST`
+                - `seq [OPTION]... FIRST INCREMENT LAST`
+            - **Description**
+                - Outputs a sequence of numbers, one per line.
+            - **When to Use It**
+                - Use to generate numbers for loops or file generation.
+            - **Common Flags**
+                - `-f` - Custom format
+                - `-s` - Custom separator
+            - **Examples**
+                - `seq 5`
+                - `seq 1 2 10`
+                - `seq -s ', ' 1 5`
+            - **Notes / Gotchas**
+                - Can be replaced by brace expansion in bash (`{1..5}`).
+            - [Size]();-[H0]()
+        -  sleep - delay for a specified amount of time *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `sleep NUMBER[SUFFIX]...`
+            - **Description**
+                - Pauses execution for the given amount of time.
+            - **When to Use It**
+                - Use to delay commands or pause in scripts.
+            - **Common Flags**
+                - No flags, but supports `s`, `m`, `h`, `d` suffixes.
+            - **Examples**
+                - `sleep 5`
+                - `sleep 1m`
+            - **Notes / Gotchas**
+                - Accepts floating-point values on most systems.
+            - [Size]();-[H0]()
+        -  slocate - secure locate (now superseded by `mlocate`) *
+            - **Platforms**
+                - GNU
+            - **Synonyms/Aliases**
+                - Replaced by `mlocate`.
+            - **Synopsis**
+                - `slocate [OPTIONS] PATTERN`
+            - **Description**
+                - Searches a filename database, filtering results by user permissions.
+            - **When to Use It**
+                - Use to find files quickly while respecting access permissions.
+            - **Common Flags**
+                - Similar to `locate`: `-i`, `-c`, `-r`
+            - **Examples**
+                - `slocate .bashrc`
+            - **Notes / Gotchas**
+                - Usually replaced by `mlocate` on modern systems.
+            - [Size]();-[H0]()
+        -  {{sort}} - {{sort lines of text files}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `sort [OPTION]... [FILE]...`
+            - **Description**
+                - Sorts lines alphabetically or numerically.
+            - **When to Use It**
+                - Use to organize file contents or prepare data.
+            - **Common Flags**
+                - `-n` - Numeric sort
+                - `-r` - Reverse order
+                - `-u` - Unique lines only
+                - `-k` - Sort by specific field
+            - **Examples**
+                - `sort file.txt`
+                - `sort -nr values.txt`
+            - **Notes / Gotchas**
+                - Combine with `uniq` for deduplication.
+            - [Size]();-[H0]()
+        -  {{source}} - execute a script in the current shell *
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Unclassified (Shell built-in, POSIX in practice)
+            - **Synonyms/Aliases**
+                - Equivalent to `.` (dot command) in POSIX shells.
+            - **Synopsis**
+                - `source FILENAME`
+            - **Description**
+                - Runs a script in the current shell without starting a subshell.
+            - **When to Use It**
+                - Use to apply environment changes or define functions in the current session.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `source ~/.bashrc`
+                - `source ./env.sh`
+            - **Notes / Gotchas**
+                - Not part of POSIX but widely supported in `bash`, `zsh`.
+        -  stdbuf - modify buffering of command output *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `stdbuf OPTION... COMMAND`
+            - **Description**
+                - Alters buffering behavior (line, block, or none) for commands.
+            - **When to Use It**
+                - Use when command output buffering interferes with piping or real-time output.
+            - **Common Flags**
+                - `-o` - STDOUT buffering
+                - `-e` - STDERR buffering
+                - `-i` - STDIN buffering
+            - **Examples**
+                - `stdbuf -oL tail -f logfile`
+            - **Notes / Gotchas**
+                - Not all commands support buffer manipulation.
+            - [Size]();-[H0]()
+        -  strings - extract printable strings from binary files *
+            - **Platforms**
+                - BSD
+            - **Synonyms/Aliases**
+                - Often used with `grep`.
+            - **Synopsis**
+                - `strings [OPTIONS] FILE...`
+            - **Description**
+                - Searches binary files and extracts sequences of printable characters.
+            - **When to Use It**
+                - Use to analyze executables or memory dumps for readable content.
+            - **Common Flags**
+                - `-n` - Minimum string length
+            - **Examples**
+                - `strings a.out`
+                - `strings -n 8 binary.img`
+            - **Notes / Gotchas**
+                - Often used in reverse engineering or debugging.
+            - [Size]();-[H0]()
+        -  stty - change and print terminal line settings *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `stty [SETTING]...`
+            - **Description**
+                - Configures terminal line control settings (e.g., input modes, control chars).
+            - **When to Use It**
+                - Use to manipulate terminal I/O behavior.
+            - **Common Flags**
+                - `-a` - Print all settings
+                - `-g` - Print settings in storable format
+            - **Examples**
+                - `stty -a`
+                - `stty sane`
+            - **Notes / Gotchas**
+                - Changes only apply to the current terminal session.
+            - [Size]();-[H0]()
+        -  {{tee}} - {{read from standard input}} and {{write to standard output and files}} 
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `tee [OPTION]... [FILE]...`
+            - **Description**
+                - Splits input: shows it and saves it to file(s).
+            - **When to Use It**
+                - Use to log output while still seeing it in the terminal.
+            - **Common Flags**
+                - `-a` - Append instead of overwrite
+                - `-i` - Ignore interrupts
+            - **Examples**
+                - `command | tee output.log`
+                - `echo "test" | tee -a file.txt`
+            - **Notes / Gotchas**
+                - Can write to multiple files at once.
+            - [Size]();-[H0]()
+        -  tr - translate or delete characters *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `tr [OPTION]... SET1 [SET2]`
+            - **Description**
+                - Substitutes or removes characters in the input stream.
+            - **When to Use It**
+                - Use for character-level transformations (e.g., lowercase to uppercase).
+            - **Common Flags**
+                - `-d` - Delete characters
+                - `-s` - Squeeze repeated characters
+            - **Examples**
+                - `tr a-z A-Z`
+                - `tr -d '\r' < file.txt`
+            - **Notes / Gotchas**
+                - Works only on character streams (not files directly).
+            - [Size]();-[H0]()
+        -  tty - print terminal name *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `tty [OPTION]`
+            - **Description**
+                - Prints the file name of the terminal connected to stdin.
+            - **When to Use It**
+                - Use in scripts to check if input is from a terminal or pipe.
+            - **Common Flags**
+                - `-s` - Silent (return exit status only)
+            - **Examples**
+                - `tty`
+                - `tty -s && echo "Interactive"`
+            - **Notes / Gotchas**
+                - Useful for detecting interactive shells.
+            - [Size]();-[H0]()
+        -  {{unalias}} - {{remove alias definitions}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Debian, RHEL (Shell built-in)
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `unalias NAME [NAME...]`
+            - **Description**
+                - Removes previously defined shell aliases.
+            - **When to Use It**
+                - Use to restore original command behavior or clean up custom aliases.
+            - **Common Flags**
+                - `-a` - Remove all aliases
+            - **Examples**
+                - `unalias ll`
+                - `unalias -a`
+            - **Notes / Gotchas**
+                - Affects only the current shell session unless in startup files.
+        -  unexpand - convert spaces to tabs *
+            - **Platforms**
+                - GNU Coreutils
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `unexpand [OPTION]... [FILE]...`
+            - **Description**
+                - Converts sequences of spaces into tabs.
+            - **When to Use It**
+                - Use to reduce file size or reverse output of `expand`.
+            - **Common Flags**
+                - `-a` - Convert all space sequences
+                - `-t` - Set tab width
+            - **Examples**
+                - `unexpand -a file.txt`
+                - `unexpand -t 4 input.txt`
+            - **Notes / Gotchas**
+                - Does not modify the file unless redirected.
+            - [Size]();-[H0]()
+        -  {{uniq}} - {{report or omit repeated lines}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `uniq [OPTION]... [INPUT [OUTPUT]]`
+            - **Description**
+                - Filters adjacent matching lines from input.
+            - **When to Use It**
+                - Use to eliminate or count duplicates in sorted data.
+            - **Common Flags**
+                - `-c` - Count occurrences
+                - `-d` - Show only duplicates
+                - `-u` - Show only unique lines
+            - **Examples**
+                - `sort file.txt | uniq`
+                - `uniq -c sorted.txt`
+            - **Notes / Gotchas**
+                - Requires sorted input to be effective.
+            - [Size]();-[H0]()
+        -  updatedb - update the file search database *
+            - **Platforms**
+                - Unclassified (part of `mlocate` or `slocate`)
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `updatedb [OPTION]...`
+            - **Description**
+                - Regenerates the locate database for fast file searching.
+            - **When to Use It**
+                - Use after adding/removing files to keep `locate` accurate.
+            - **Common Flags**
+                - `--prunepaths` - Skip paths
+                - `--output` - Specify database location
+            - **Examples**
+                - `sudo updatedb`
+            - **Notes / Gotchas**
+                - Typically run by cron/`systemd` timer; requires root.
+            - [Size]();-[H0]()
+        -  {{whereis}} - {{locate binary, source}}, and {{manual page files for a command}} 
+            - **Platforms**
+                - Unclassified (Available in most Linux distros)
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `whereis [OPTIONS] COMMAND...`
+            - **Description**
+                - Finds location(s) of binary, source, and man files.
+            - **When to Use It**
+                - Use to check whether and where a command is installed.
+            - **Common Flags**
+                - `-b` - Search for binaries only
+                - `-m` - Search for man pages only
+                - `-s` - Search for source files only
+            - **Examples**
+                - `whereis bash`
+                - `whereis -b python3`
+            - **Notes / Gotchas**
+                - Does not rely on `PATH`; searches standard locations.
+            - [Size]();-[H0]()
+        -  {{which}} - {{shows the full path}} {{of (shell) commands}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Unclassified (common in Linux, BSD, macOS)
+            - **Synonyms/Aliases**
+                - Similar in purpose to `type` and `command -v`.
+            - **Synopsis**
+                - `which [OPTIONS] COMMAND...`
+            - **Description**
+                - Shows the full path of a command found in the user’s `$PATH`.
+            - **When to Use It**
+                - Use to verify which executable will run when a command is typed.
+            - **Common Flags**
+                - `-a` - Show all matching paths
+            - **Examples**
+                - `which python3`
+                - `which -a bash`
+            - **Notes / Gotchas**
+                - May be a shell alias; behavior varies slightly by system.
+                - Not part of POSIX—`command -v` is more portable.
+        -  {{xargs}} - {{build and execute command}}{{ lines from standard input}} 
+            - **Platforms**
+                - POSIX
+            - **Synonyms/Aliases**
+                - Often used with `find`, `echo`, `printf`.
+            - **Synopsis**
+                - `xargs [OPTIONS] [COMMAND]`
+            - **Description**
+                - Constructs command lines from input and executes them.
+            - **When to Use It**
+                - Use when you need to pass many arguments to a command from standard input.
+            - **Common Flags**
+                - `-n` - Max arguments per command line
+                - `-d` - Input delimiter
+                - `-0` - Null-terminated input (for use with `find -print0`)
+                - `-I {}` - Replace token with input
+            - **Examples**
+                - `echo file1 file2 | xargs rm`
+                - `find . -name "*.log" -print0 | xargs -0 rm`
+            - **Notes / Gotchas**
+                - Handles argument limits better than backticks or `$()` in scripts.
+            - [Size]();-[H0]()
+        -  yes - repeatedly output a string until killed *
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `yes [STRING]...`
+            - **Description**
+                - Outputs a string (or "y" by default) repeatedly to stdout.
+            - **When to Use It**
+                - Use for automated confirmation or stress testing.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `yes`―prints `y` continuously
+                - `yes | apt install foo`
+                - `yes "OK"`
+            - **Notes / Gotchas**
+                - Can consume CPU rapidly if not controlled with `head`, `sleep`, etc.
+            - [Size]();-[H0]()
+    -  File and Directory Management
+        -  {{cd}} - {{change the working directory}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Debian, POSIX, RHEL (Shell Built-in)
+            - **Synonyms/Aliases**
+                - Built-in command in most shells.
+            - **Synopsis**
+                - `cd [DIRECTORY]`
+            - **Description**
+                - Changes the shell's current working directory.
+            - **When to Use It**
+                - Use to navigate into different directories.
+            - **Common Flags**
+                - No flags; behavior depends on arguments.
+            - **Examples**
+                - `cd /home/user`
+                - `cd ..`
+                - `cd ~`
+            - **Notes / Gotchas**
+                - `cd -` returns to the previous directory.
+                - `cd` with no argument goes to the home directory.
+        -  {{ls}} - {{list directory contents}} 
+            - [Size]();-[H0]()
+            - Synonyms/Aliases
+                - No standard aliases (but ll is often aliased to ls -l in many systems like Ubuntu or Fedora).
+            - Synopsis
+                - ls [OPTION]... [FILE]...
+            - Description
+                - Lists information about the files and directories in the specified location. If no path is given, it defaults to the current directory.
+            - When to Use It
+                - Use ls when you want to view the contents of a directory, inspect file names, or get metadata about files (e.g., size, permissions, timestamps).
+            - Common Flags
+                - -l - Long listing format - To view file details (size, perms, time)
+                - -a - Show all files including hidden - To include dotfiles like .bashrc
+                - -h - Human-readable sizes (with -l) - To see sizes like 1K, 2M, etc.
+                - -R - Recursive listing - To list all subdirectories recursively
+                - -S - Sort by file size - To find large files
+                - -t - Sort by modification time - To see recently modified files first
+            - Examples
+                - ls -l         # detailed list of files in current dir
+                - ls -la        # show all files including hidden ones
+                - ls /etc       # list contents of /etc directory
+                - ls -lh        # long listing with human-readable sizes
+                - ls -lS        # long listing sorted by size
+            - Notes / Gotchas
+                - Colors and formatting may vary depending on your terminal emulator or shell configuration.
+                - ls does not recursively list subdirectory contents unless you use -R.
+                - Using wildcards like ls *.txt will only show matching files—quoting patterns disables wildcard expansion.
+        -  {{cat}} - {{concatenate}} and {{print files}} 
+            - [Size]();-[H0]()
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `cat [OPTION]... [FILE]...`
+            - **Description**
+                - Reads files sequentially and writes them to standard output.
+            - **When to Use It**
+                - Use `cat` to display file contents, combine files, or redirect output.
+            - **Common Flags**
+                - `-n` - Number all output lines - When you want line numbers
+                - `-b` - Number non-blank lines - To ignore empty lines when numbering
+                - `-s` - Suppress repeated empty output lines - To condense multiple blank lines into one
+                - `-E` - Display `$` at end of each line - To visualize line endings
+            - **Examples**
+                - `cat file.txt`
+                - `cat file1.txt file2.txt > combined.txt`
+                - `cat -n file.txt`
+            - **Notes / Gotchas**
+                - `cat` is not suitable for viewing large files—use `less` instead.
+                - Use redirection (`>`) to write output to a file.
+        -  {{cp}} - {{copy files}} and {{directories}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `cp [OPTION]... SOURCE DEST`
+            - **Description**
+                - Copies files or directories to another location.
+            - **When to Use It**
+                - Use to duplicate files or backup content.
+            - **Common Flags**
+                - `-r` - Recursive - For directories
+                - `-i` - Prompt before overwrite
+                - `-f` - Force overwrite
+                - `-u` - Copy only if source is newer
+            - **Examples**
+                - `cp file.txt /tmp/`
+                - `cp -r dir1/ dir2/`
+            - **Notes / Gotchas**
+                - Use `-p` to preserve timestamps and permissions.
+            - [Size]();-[H0]()
+        -  {{mv}} - {{move (rename) files}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `mv [OPTION]... SOURCE DEST`
+            - **Description**
+                - Moves or renames files and directories.
+            - **When to Use It**
+                - Use to rename or relocate files.
+            - **Common Flags**
+                - `-i` - Prompt before overwrite
+                - `-f` - Force overwrite
+                - `-n` - No overwrite
+                - `-v` - Verbose
+            - **Examples**
+                - `mv file1.txt file2.txt`
+                - `mv *.txt archive/`
+            - **Notes / Gotchas**
+                - Moving across devices may be a copy + delete operation.
+            - [Size]();-[H0]()
+        -  {{rm}} - {{remove files}} or {{directories}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `rm [OPTION]... FILE...`
+            - **Description**
+                - Deletes files and directories.
+            - **When to Use It**
+                - Use to clean up unneeded files or folders.
+            - **Common Flags**
+                - `-r` - Recursive
+                - `-f` - Force deletion without prompt
+                - `-i` - Interactive prompt
+                - `-v` - Verbose
+            - **Examples**
+                - `rm file.txt`
+                - `rm -rf old_dir/`
+            - **Notes / Gotchas**
+                - `rm -rf /` is extremely dangerous. Use caution.
+            - [Size]();-[H0]()
+        -  {{tar}} - {{an archiving utility}} 
+            - **Platforms**
+                - Debian, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `tar [OPTION]... [FILE]...`
+            - **Description**
+                - Archives and extracts files (optionally compressed).
+            - **When to Use It**
+                - Use to bundle multiple files/folders or compress backups.
+            - **Common Flags**
+                - `-c` - Create archive
+                - `-x` - Extract archive
+                - `-v` - Verbose
+                - `-f` - Specify archive file
+                - `-z` - Compress with gzip
+            - **Examples**
+                - `tar -czvf backup.tar.gz folder/`
+                - `tar -xvzf archive.tar.gz`
+            - **Notes / Gotchas**
+                - The order of flags matters in short form (e.g., `-czvf`).
+                - Use `-C` to extract to a specific directory.
+            - [Size]();-[H0]()
+        -  {{touch}} - {{change file timestamps}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `touch [OPTION]... FILE...`
+            - **Description**
+                - Creates empty files or updates the access/modification times of existing files.
+            - **When to Use It**
+                - Use to create files or reset timestamps.
+            - **Common Flags**
+                - `-c` - Do not create files
+                - `-t` - Set timestamp manually
+                - `-r` - Use timestamp from reference file
+            - **Examples**
+                - `touch file.txt`
+                - `touch -t 202501011200.00 file.txt`
+            - **Notes / Gotchas**
+                - If the file exists, it only updates its timestamp.
+        -  {{gunzip}} - {{compress or expand files}} (.gz)
+            - **Platforms**
+                - Debian, RHEL
+            - **Synonyms/Aliases**
+                - Often a symlink to `gzip -d`.
+            - **Synopsis**
+                - `gunzip [OPTION]... FILE...`
+            - **Description**
+                - Decompresses `.gz` files, restoring the original content.
+            - **When to Use It**
+                - Use to extract compressed files created by `gzip`.
+            - **Common Flags**
+                - `-k` - Keep original `.gz` file
+                - `-v` - Verbose output
+            - **Examples**
+                - `gunzip archive.gz`
+                - `gunzip -k archive.gz`
+            - **Notes / Gotchas**
+                - Removes the `.gz` file by default unless `-k` is used.
+            - [Size]();-[H0]()
+        -  {{gzip}} - {{compress or expand files}} (GNU zip)
+            - **Platforms**
+                - Debian, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `gzip [OPTION]... FILE...`
+            - **Description**
+                - Compresses files using the DEFLATE algorithm, producing `.gz` files.
+            - **When to Use It**
+                - Use to reduce file size for storage or transfer.
+            - **Common Flags**
+                - `-k` - Keep original file
+                - `-v` - Verbose output
+                - `-r` - Recursively compress directories
+            - **Examples**
+                - `gzip file.txt`
+                - `gzip -k report.txt`
+            - **Notes / Gotchas**
+                - Removes the original file unless `-k` is used.
+                - Only compresses individual files, not folders.
+            - [Size]();-[H0]()
+        -  {{mkdir}} - {{make directories}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `mkdir [OPTION]... DIRECTORY...`
+            - **Description**
+                - Creates one or more new directories.
+            - **When to Use It**
+                - Use to create new directories in a filesystem.
+            - **Common Flags**
+                - `-p` - Make parent directories as needed
+                - `-v` - Verbose output
+            - **Examples**
+                - `mkdir myfolder`
+                - `mkdir -p /tmp/project/src`
+            - **Notes / Gotchas**
+                - `-p` suppresses errors if the directory already exists.
+            - [Size]();-[H0]()
+        -  {{unzip}} - {{list, test and extract compressed}} {{files in a ZIP archive}} 
+            - **Platforms**
+                - Debian, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `unzip [OPTION]... FILE.zip`
+            - **Description**
+                - Extracts files from `.zip` archives.
+            - **When to Use It**
+                - Use to unpack zipped content on Unix-like systems.
+            - **Common Flags**
+                - `-l` - List archive contents
+                - `-d DIR` - Extract to specified directory
+                - `-o` - Overwrite existing files
+            - **Examples**
+                - `unzip archive.zip`
+                - `unzip archive.zip -d /tmp/extracted/`
+            - **Notes / Gotchas**
+                - May need to install separately (`unzip` package).
+                - Does not preserve UNIX permissions.
+            - [Size]();-[H0]()
+        -  {{zip}} - {{package and compress}} {{(archive) files}} 
+            - **Platforms**
+                - Debian, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `zip [OPTION]... ARCHIVE FILE...`
+            - **Description**
+                - Compresses files into a `.zip` archive.
+            - **When to Use It**
+                - Use to bundle and compress files for portability.
+            - **Common Flags**
+                - `-r` - Recursive (include subdirectories)
+                - `-9` - Maximum compression
+                - `-q` - Quiet mode
+            - **Examples**
+                - `zip files.zip file1.txt file2.txt`
+                - `zip -r project.zip myproject/`
+            - **Notes / Gotchas**
+                - Use `-r` to archive directories.
+                - Does not compress symlinks as links by default.
+            - [Size]();-[H0]()
+        -  {{rmdir}} - {{remove empty directories}} 
+            - **Platforms**
+                - Debian, GNU Coreutils, POSIX, RHEL
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `rmdir [OPTION]... DIRECTORY...`
+            - **Description**
+                - Deletes directories, but only if they are empty.
+            - **When to Use It**
+                - Use to clean up unused, empty folders.
+            - **Common Flags**
+                - `-p` - Remove parent directories as well
+                - `--ignore-fail-on-non-empty` - Suppress errors for non-empty dirs
+            - **Examples**
+                - `rmdir emptydir`
+                - `rmdir -p path/to/empty/dir`
+            - **Notes / Gotchas**
+                - Will fail if the directory has contents.
+                - Use `rm -r` for non-empty directories.
+            - [Size]();-[H0]()
+        -  borg (Unclassified)
+            - [Size]();-[H0]()
+        -  bunzip2 (Debian, RHEL)
+            - [Size]();-[H0]()
+        -  {{bzip2}} -{{ a block-sorting}} {{file compressor}}, v1.0.8
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX-compatible
+            - **Synonyms/Aliases**
+                - `bunzip2` (for decompression), `bzcat` (view without extracting)
+            - **Synopsis**
+                - `bzip2 [OPTIONS] FILE...`
+            - **Description**
+                - Compresses files to `.bz2` format using block-sorting text compression.
+            - **When to Use It**
+                - Use for high-ratio file compression.
+            - **Common Flags**
+                - `-d` - Decompress
+                - `-k` - Keep original file
+                - `-v` - Verbose output
+            - **Examples**
+                - `bzip2 file.txt`―`file.txt.bz2`
+                - `bzip2 -dk archive.bz2`
+            - **Notes / Gotchas**
+                - Slower than gzip, but often achieves better compression ratios.
+        -  {{chgrp}} - {{change}} {{group ownership}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `chgrp [OPTION]... GROUP FILE...`
+            - **Description**
+                - Changes the group ownership of one or more files.
+            - **When to Use It**
+                - Use when you want to assign a file to a different group.
+            - **Common Flags**
+                - `-R` - Operate on files and directories recursively - To change ownership in subdirectories
+                - `-v` - Output a diagnostic for every file processed - For verbose output
+            - **Examples**
+                - `chgrp staff file.txt`
+                - `chgrp -R developers project_folder/`
+            - **Notes / Gotchas**
+                - You must belong to the group or be root to change group ownership.
+            - [Size]();-[H0]()
+        -  {{chsh}} - {{change your}} {{login shell}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `chsh [OPTION]... [LOGIN]`
+            - **Description**
+                - Changes the default login shell for a user.
+            - **When to Use It**
+                - Use to set your preferred shell (e.g., bash, zsh).
+            - **Common Flags**
+                - `-s SHELL` - Specify a new login shell - To explicitly set a shell like `/bin/zsh`
+                - `-l` - List available shells - To see which shells can be set
+            - **Examples**
+                - `chsh -s /bin/bash`
+                - `chsh -s /usr/bin/zsh`
+            - **Notes / Gotchas**
+                - User must specify a valid shell from `/etc/shells`.
+                - May require logout/login to take effect.
+            - [Size]();-[H0]()
+        -  cmp (POSIX)
+            - [Size]();-[H0]()
+        -  comm (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  cpio (Unclassified)
+            - [Size]();-[H0]()
+        -  csplit (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  dd (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  {{diff}} - {{compare two files}} 
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `diff [OPTIONS] FILE1 FILE2`
+            - **Description**
+                - Outputs line differences between files.
+            - **When to Use It**
+                - Use to see textual differences between two files.
+            - **Common Flags**
+                - `-u` - Unified diff (common for patches)
+                - `-r` - Compare directories recursively
+                - `-q` - Brief output (only whether files differ)
+            - **Examples**
+                - `diff file1.txt file2.txt`
+                - `diff -u old.c new.c`
+            - **Notes / Gotchas**
+                - Works only on text; for binaries use `cmp`.
+            - [Size]();-[H0]()
+        -  dir (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  dircolors (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  dump (Unclassified)
+            - [Size]();-[H0]()
+        -  duplicity (Unclassified)
+            - [Size]();-[H0]()
+        -  {{file}} - {{determine file type}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `file [OPTION]... FILE...`
+            - **Description**
+                - Examines file content to guess its type (text, binary, image, etc.).
+            - **When to Use It**
+                - Use to identify unknown or misnamed files.
+            - **Common Flags**
+                - `-i` - Show MIME type
+                - `-b` - Brief output (omit filename)
+            - **Examples**
+                - `file mydoc`
+                - `file -i image.png`
+            - **Notes / Gotchas**
+                - Uses a magic number database to identify types.
+        -  install (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  link (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  {{ln}} - {{make links}} {{between files}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `ln [OPTIONS] TARGET [LINK_NAME]`
+            - **Description**
+                - Creates hard links (default) or symbolic links (`-s`).
+            - **When to Use It**
+                - Use to link files/directories without duplication.
+            - **Common Flags**
+                - `-s` - Create symbolic (soft) link
+                - `-f` - Force overwrite
+                - `-v` - Verbose output
+            - **Examples**
+                - `ln file.txt link.txt` (hard link)
+                - `ln -s /var/www html` (symbolic link)
+            - **Notes / Gotchas**
+                - Hard links can't span filesystems; symlinks can.
+        -  lsof (Unclassified)
+            - [Size]();-[H0]()
+        -  md5sum (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  mkfifo (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  mknod (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  mktemp (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  {{more}} - {{display files on}}{{ a page-by-page basis}} (older pager utility)
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - Older alternative to `less`
+            - **Synopsis**
+                - `more [OPTIONS] FILE`
+            - **Description**
+                - Displays text one screen at a time, forward-only.
+            - **When to Use It**
+                - Use when `less` is unavailable.
+            - **Common Flags**
+                - `-d` - Prompt message at end of screen
+            - **Examples**
+                - `more file.txt`
+                - `command | more`
+            - **Notes / Gotchas**
+                - Cannot scroll backward.
+        -  newgrp (Unclassified)
+            - [Size]();-[H0]()
+        -  {{pwd}} - {{print working directory}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux (built-in in most shells)
+            - **Synopsis**
+                - `pwd`
+            - **Description**
+                - Prints the absolute path of the current directory.
+            - **When to Use It**
+                - Use to check or display your current location in the filesystem.
+            - **Common Flags**
+                - `-L` - Show logical path (follows symlinks)
+                - `-P` - Show physical path (resolves symlinks)
+            - **Examples**
+                - `pwd`
+                - `pwd -P`
+            - **Notes / Gotchas**
+                - `pwd` is often a shell built-in (`bash`, `zsh`, etc.).
+        -  rdiff-backup (Unclassified)
+            - [Size]();-[H0]()
+        -  readlink (Common Linux, GNU Coreutils)
+            - [Size]();-[H0]()
+        -  realpath (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  restic (Unclassified)
+            - [Size]();-[H0]()
+        -  restore (Unclassified)
+            - [Size]();-[H0]()
+        -  rsnapshot (Unclassified)
+            - [Size]();-[H0]()
+        -  rsync - fast, remote, and incremental file sync
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `rsync [OPTIONS] SRC DEST`
+            - **Description**
+                - Efficiently copies and syncs files locally or over SSH.
+            - **When to Use It**
+                - Use for backups, mirrors, or large transfers.
+            - **Common Flags**
+                - `-a` - Archive (recursive, preserve metadata)
+                - `-v` - Verbose
+                - `-z` - Compress during transfer
+                - `--delete` - Remove files not in source
+            - **Examples**
+                - `rsync -avz dir/ user@host:/data/`
+            - **Notes / Gotchas**
+                - Resumes interrupted transfers better than `scp`.
+        -  sha1sum (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  split (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  {{stat}} - {{display file}} or {{file system status}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `stat [OPTION]... FILE...`
+            - **Description**
+                - Displays metadata about files (size, permissions, timestamps, etc.).
+            - **When to Use It**
+                - Use to inspect file details beyond `ls -l`.
+            - **Common Flags**
+                - `-c` - Custom output format
+                - `-f` - Show filesystem status
+            - **Examples**
+                - `stat myfile.txt`
+                - `stat -c "%s %y" myfile.txt`
+            - **Notes / Gotchas**
+                - Returns inode info, last access/change times, and mode bits.
+        -  tac (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  truncate (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  uncompress (POSIX)
+            - [Size]();-[H0]()
+        -  unlink (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  unxz (Debian, RHEL)
+            - [Size]();-[H0]()
+        -  vdir (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  {{wc}} - {{word, line,  and byte}} or {{character counter}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `wc [OPTIONS] [FILE]...`
+            - **Description**
+                - Counts lines, words, and bytes in input or files.
+            - **When to Use It**
+                - Use to measure file size, length, or complexity.
+            - **Common Flags**
+                - `-l` - Count lines
+                - `-w` - Count words
+                - `-c` - Count bytes
+                - `-m` - Count characters
+            - **Examples**
+                - `wc file.txt`
+                - `wc -l *.log`
+            - **Notes / Gotchas**
+                - Output includes filename unless piped input.
+        -  {{xz}} - {{compress or decompress}} {{.xz and .lzma files}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX-compatible
+            - **Synonyms/Aliases**
+                - `unxz`, `xzcat`
+            - **Synopsis**
+                - `xz [OPTIONS] FILE...`
+            - **Description**
+                - Compresses files to `.xz` format using LZMA2 compression.
+            - **When to Use It**
+                - Use for maximum compression efficiency (better than gzip/bzip2).
+            - **Common Flags**
+                - `-d` - Decompress
+                - `-k` - Keep original
+                - `-T` - Multithreading (e.g., `-T0` = use all cores)
+            - **Examples**
+                - `xz file.txt`―`file.txt.xz`
+                - `xz -dk bigfile.xz`
+            - **Notes / Gotchas**
+                - Excellent compression, but slower and higher memory usage.
+        -  zforce (Unclassified)
+            - [Size]();-[H0]()
+    -  User and Group Management
+        -  {{useradd}} - {{create a new user}} or {{update default new user information}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux (Debian, RHEL, etc.)
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `useradd [OPTIONS] USERNAME`
+            - **Description**
+                - Creates a new user account and sets default files/UID.
+            - **When to Use It**
+                - Use to add system or human users.
+            - **Common Flags**
+                - `-m` - Create home directory
+                - `-s` - Set shell
+                - `-G` - Add to supplementary groups
+                - `-u` - Specify UID
+            - **Examples**
+                - `useradd -m -s /bin/bash alice`
+            - **Notes / Gotchas**
+                - Password must be set separately with `passwd`.
+        -  {{su}} - {{run a command}} with {{substitute user and group ID}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - Short for “substitute user”
+            - **Synopsis**
+                - `su [OPTIONS] [USERNAME]`
+            - **Description**
+                - Starts a shell as another user (default: root).
+            - **When to Use It**
+                - Use to temporarily become another user or root.
+            - **Common Flags**
+                - `-` - Start login shell (load user environment)
+                - `-c` - Run a command as another user
+            - **Examples**
+                - `su`
+                - `su - alice`
+                - `su -c "apt update"`
+            - **Notes / Gotchas**
+                - Requires root password unless configured with sudoers.
+        -  {{usermod}} - {{modify a user account }} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `usermod [OPTIONS] USERNAME`
+            - **Description**
+                - Changes user settings like name, group, shell.
+            - **When to Use It**
+                - Use to update account details after creation.
+            - **Common Flags**
+                - `-l` - Change login name
+                - `-G` - Change groups
+                - `-s` - Change shell
+                - `-L/-U` - Lock/unlock account
+            - **Examples**
+                - `usermod -G sudo,wheel alice`
+            - **Notes / Gotchas**
+                - Must ensure user is not logged in for some changes.
+        -  adduser (Debian)
+            - [Size]();-[H0]()
+        -  {{chage}} - {{change user password}} {{expiry information}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `chage [OPTIONS] USERNAME`
+            - **Description**
+                - Sets password aging and expiration policy.
+            - **When to Use It**
+                - Use to enforce password renewal.
+            - **Common Flags**
+                - `-l` - List account aging info
+                - `-E` - Account expiration date
+                - `-M` - Max days between password changes
+            - **Examples**
+                - `chage -l alice`
+                - `chage -M 90 bob`
+            - **Notes / Gotchas**
+                - Useful for compliance/security environments.
+        -  chpasswd (Unclassified)
+            - [Size]();-[H0]()
+        -  deluser (Debian)
+            - [Size]();-[H0]()
+        -  {{groupadd}} - {{create a new group }} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `groupadd [OPTIONS] GROUPNAME`
+            - **Description**
+                - Adds a new group to the system.
+            - **When to Use It**
+                - Use to create roles or permission sets.
+            - **Common Flags**
+                - `-g` - Specify GID
+            - **Examples**
+                - `groupadd developers`
+            - **Notes / Gotchas**
+                - Use with `usermod -aG` to assign users.
+        -  {{groupmod}} - {{modify a group}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `groupmod [OPTIONS] GROUPNAME`
+            - **Description**
+                - Changes group name or GID.
+            - **When to Use It**
+                - Use to rename groups or fix IDs.
+            - **Common Flags**
+                - `-n` - New group name
+                - `-g` - New GID
+            - **Examples**
+                - `groupmod -n devs developers`
+            - **Notes / Gotchas**
+                - Affects file permissions tied to group ID.
+        -  {{groupdel}} - {{delete a group }} 
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `groupdel GROUPNAME`
+            - **Description**
+                - Removes a group from the system.
+            - **When to Use It**
+                - Use to clean up unused or obsolete groups.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `groupdel devs`
+            - **Notes / Gotchas**
+                - Does not remove group entries from files.
+            - [Size]();-[H0]()
+        -  {{groups}} - {{print the groups }} a {{user is in}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `groups [USERNAME]`
+            - **Description**
+                - Lists the groups a user belongs to.
+            - **When to Use It**
+                - Use to check access permissions.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `groups`
+                - `groups bob`
+            - **Notes / Gotchas**
+                - Lists both primary and supplementary groups.
+        -  grpck (Unclassified)
+            - [Size]();-[H0]()
+        -  grpconv (Unclassified)
+            - [Size]();-[H0]()
+        -  {{id}} - {{display user ID and group info }} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `id [USERNAME]`
+            - **Description**
+                - Shows UID, GID, and group memberships.
+            - **When to Use It**
+                - Use to verify user identity or permissions.
+            - **Common Flags**
+                - `-u` - Show only UID
+                - `-g` - Show only GID
+                - `-G` - Show all group IDs
+            - **Examples**
+                - `id`
+                - `id bob`
+            - **Notes / Gotchas**
+                - Helpful for debugging file permission issues.
+        -  lastlog (Unclassified)
+            - [Size]();-[H0]()
+        -  logname (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  newusers (Unclassified)
+            - [Size]();-[H0]()
+        -  pink (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  pwck (Unclassified)
+            - [Size]();-[H0]()
+        -  pwconv (Unclassified)
+            - [Size]();-[H0]()
+        -  ruptime (Unclassified)
+            - [Size]();-[H0]()
+        -  rusers (Unclassified)
+            - [Size]();-[H0]()
+        -  {{userdel}} - {{delete a user account}}  and {{related files}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `userdel [OPTIONS] USERNAME`
+            - **Description**
+                - Removes a user account from the system.
+            - **When to Use It**
+                - Use to clean up inactive accounts.
+            - **Common Flags**
+                - `-r` - Remove home directory and mail spool
+            - **Examples**
+                - `userdel -r alice`
+            - **Notes / Gotchas**
+                - Doesn’t remove files owned by the user elsewhere.
+        -  {{user}} - display current username *
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux (part of GNU Coreutils)
+            - **Synonyms/Aliases**
+                - Equivalent to `whoami`
+            - **Synopsis**
+                - `user`
+            - **Description**
+                - Prints the name of the current logged-in user.
+            - **When to Use It**
+                - Use to quickly identify user without extra info.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `user`
+            - **Notes / Gotchas**
+                - Rarely used; `whoami` or `id -un` is more common and portable.
+        - {{users}} - {{print the user names}} of {{users currently logged}} in to the {{current host}} 
+        -  {{who}} - {{show who is logged in}} 
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `who [OPTIONS]`
+            - **Description**
+                - Lists users currently logged in, along with session info.
+            - **When to Use It**
+                - Use to check active users and login times.
+            - **Common Flags**
+                - `-a` - Show all info
+                - `-q` - Quick list of usernames
+            - **Examples**
+                - `who`
+                - `who -a`
+            - **Notes / Gotchas**
+                - Shows info from `/var/run/utmp`—might differ from `w`.
+            - [Size]();-[H0]()
+        -  {{whoami}} - {{display current userid}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - Equivalent to `id -un`
+            - **Synopsis**
+                - `whoami`
+            - **Description**
+                - Prints the username associated with the current session.
+            - **When to Use It**
+                - Use in scripts or checks for user identity.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `whoami`
+            - **Notes / Gotchas**
+                - Simple and safe to use.
+        -  {{gpasswd}} - {{administer}} {{`/etc/group`}}{{ and  }}{{`/etc/gshadow`}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `gpasswd [OPTIONS] GROUP`
+            - **Description**
+                - Administers group membership and passwords.
+            - **When to Use It**
+                - Use to manage shared access to groups.
+            - **Common Flags**
+                - `-a` - Add user to group
+                - `-d` - Remove user from group
+                - `-A` - Set group administrators
+            - **Examples**
+                - `gpasswd -a bob devs`
+                - `gpasswd -d bob devs`
+            - **Notes / Gotchas**
+                - Can also assign passwords for group-based logins (rare use).
+        -  {{groupmems}} - {{administer members}} of a {{user's primary group}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux (usually from `shadow-utils`)
+            - **Synonyms/Aliases**
+                - Administers group membership directly via CLI
+            - **Synopsis**
+                - `groupmems [OPTIONS]`
+            - **Description**
+                - Adds or removes users from a group.
+            - **When to Use It**
+                - Use to manage group membership when using shadow groups.
+            - **Common Flags**
+                - `-a` - Add user
+                - `-d` - Delete user
+                - `-g` - Specify group
+            - **Examples**
+                - `groupmems -g devs -a alice`
+                - `groupmems -g devs -d bob`
+            - **Notes / Gotchas**
+                - Must be run as group admin or root.
+                - Not available on all systems by default.
+        -  {{last}} - {{show login history}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `last [OPTIONS] [USER]`
+            - **Description**
+                - Displays a list of last logins from `/var/log/wtmp`.
+            - **When to Use It**
+                - Use to audit user sessions and shutdown history.
+            - **Common Flags**
+                - `-n N` - Show last N entries
+                - `-x` - Show system shutdown, runlevel, reboot events
+            - **Examples**
+                - `last`
+                - `last -x`
+            - **Notes / Gotchas**
+                - Only as accurate as the `wtmp` log file; it may be rotated or cleared.
+    -  Package and Software Management
+        -  apt (Debian)
+            - [Size]();-[H0]()
+        -  {{dnf}} - {{DNF Command Reference}} (YUM replacement)
+            - [Size]();-[H0]()
+            - **Platforms**
+                - RHEL, Fedora, CentOS, AlmaLinux, Rocky Linux
+            - **Synopsis**
+                - `dnf [OPTIONS] COMMAND [PACKAGE]`
+            - **Description**
+                - Handles installation, updating, and removal of software packages.
+            - **When to Use It**
+                - Use for managing software on RPM-based distributions.
+            - Key Commands
+                - **dnf install** - Install a new package
+                    - `dnf install nginx`
+                - **dnf remove** - Uninstall a package
+                    - `dnf remove httpd`
+                - **dnf update** - Update all or specific packages
+                    - `dnf update` or `dnf update bash`
+                - **dnf search** - Search for packages by name/description
+                    - `dnf search firewall`
+                - **dnf info** - Show details of a package
+                    - `dnf info vim`
+                - **dnf provides** - Find which package owns a file
+                    - `dnf provides /usr/bin/top`
+                - **dnf history** - Show transaction history
+                    - `dnf history`
+                - **dnf list** - List available, installed, or updates
+                    - `dnf list installed`
+                    - `dnf list available`
+            - Notes / Gotchas
+                - `sudo` is required for install/remove/update actions
+                - Replaces `yum` on most newer RHEL-based systems
+        -  dpkg (Debian)
+            - [Size]();-[H0]()
+        -  {{yum}} - {{redirecting to DNF Command Reference}} 
+            - [Size]();-[H0]()
+        -  apt-cache (Debian)
+            - [Size]();-[H0]()
+        -  apt-get (Debian)
+            - [Size]();-[H0]()
+        -  cmake (Unclassified)
+            - [Size]();-[H0]()
+        -  cpp (Unclassified)
+            - [Size]();-[H0]()
+        -  dpkg-query (Debian)
+            - [Size]();-[H0]()
+        -  flex (Unclassified)
+            - [Size]();-[H0]()
+        -  g++ (Unclassified)
+            - [Size]();-[H0]()
+        -  gcc (Unclassified)
+            - [Size]();-[H0]()
+        -  gdb (Unclassified)
+            - [Size]();-[H0]()
+        -  gprof (Unclassified)
+            - [Size]();-[H0]()
+        -  ldd (Unclassified)
+            - [Size]();-[H0]()
+        -  ltrace (Unclassified)
+            - [Size]();-[H0]()
+        -  {{make}} - maintain, update, and regenerate groups of programs (DEVELOPMENT)
+            - [Size]();-[H0]()
+        -  nm (Unclassified)
+            - [Size]();-[H0]()
+        -  pacman (Unclassified)
+            - [Size]();-[H0]()
+        -  patch (Unclassified)
+            - [Size]();-[H0]()
+        -  ranlib (Unclassified)
+            - [Size]();-[H0]()
+        -  {{rpm}} - {{RPM Package Manager}} 
+            - **Platforms**
+                - RHEL, Fedora, CentOS, openSUSE, etc.
+            - **Synopsis**
+                - `rpm [OPTIONS] PACKAGE/FILE`
+            - **Description**
+                - Installs, queries, and verifies RPM packages directly.
+            - **When to Use It**
+                - Use for scripting, diagnostics, or when `dnf` is unavailable.
+            - [Size]();-[H0]()
+            - Key Commands
+                - **rpm -q** - Query installed package
+                    - `rpm -q bash`
+                - **rpm -i** - Install a package
+                    - `rpm -i package.rpm`
+                - **rpm -e** - Erase (uninstall) a package
+                    - `rpm -e nano`
+                - **rpm -V** - Verify package integrity
+                    - `rpm -V coreutils`
+            - Notes / Gotchas
+                - Does not resolve dependencies (use `dnf` for that)
+                - Useful for checking package metadata and troubleshooting
+        -  snap (Unclassified)
+            - [Size]();-[H0]()
+        -  strace (Unclassified)
+            - [Size]();-[H0]()
+        -  subscription-manager (RHEL)
+            - [Size]();-[H0]()
+        -  zypper (Unclassified)
+            - [Size]();-[H0]()
+    -  System Monitoring and Performance
+        -  {{hostname}} - {{show or set the system hostname}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `hostname [NEW_NAME]`
+            - **Description**
+                - Gets or sets the system's network name.
+            - **When to Use It**
+                - Use to identify or change system name.
+            - **Common Flags**
+                - `-f` - FQDN
+                - `-i` - IP address
+            - **Examples**
+                - `hostname`
+                - `sudo hostname myserver`
+            - **Notes / Gotchas**
+                - Change may not persist unless also updated in `/etc/hostname`.
+        -  {{uname}} - {{print system information}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `uname [OPTION]...`
+            - **Description**
+                - Displays information about the system, kernel, and architecture.
+            - **When to Use It**
+                - Use to check OS, kernel version, or hardware platform.
+            - **Common Flags**
+                - `-a` - All info - Shows full system summary
+                - `-r` - Kernel release - For checking kernel version
+                - `-m` - Machine type - For hardware platform (like `arch`)
+                - `-n` - Node name (hostname)
+                - `-s` - Kernel name (usually “Linux”)
+            - **Examples**
+                - `uname -a`
+                - `uname -r`
+                - `uname -m`
+            - **Notes / Gotchas**
+                - Output is useful for troubleshooting and logging.
+                - `uname -a` includes most available system info in one call.
+            - [Size]();-[H0]()
+        -  {{uptime}} - {{tell how long the system}} {{has been running}} 
+            - [Size]();-[H0]()
+        -  {{free}} - {{display amount of free }}and {{used memory in the system}} 
+            - [Size]();-[H0]()
+        -  {{hostnamectl}} - {{control the system hostname}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Systemd-based Linux
+            - **Synopsis**
+                - `hostnamectl [OPTIONS]`
+            - **Description**
+                - Sets or displays the system hostname and related info.
+            - **When to Use It**
+                - Use to change static, transient, or pretty hostname.
+            - **Common Flags**
+                - `set-hostname` - Set hostname
+                - `--transient` or `--pretty` - Optional hostname types
+            - **Examples**
+                - `hostnamectl`
+                - `sudo hostnamectl set-hostname server1`
+            - **Notes / Gotchas**
+                - Persists changes across reboots (unlike `hostname`).
+        -  {{arch}} - {{display machine architecture}} 
+            - [Size]();-[H0]()
+            - **Synonyms/Aliases**
+                - Often a symlink to `uname -m`.
+            - **Synopsis**
+                - `arch`
+            - **Description**
+                - Prints the machine hardware name (e.g., `x86_64`, `aarch64`).
+            - **When to Use It**
+                - Use to identify CPU architecture for package compatibility or scripts.
+            - **Common Flags**
+                - No common flags; simple standalone command.
+            - **Examples**
+                - `arch`
+            - **Notes / Gotchas**
+                - Equivalent to `uname -m` on most systems.
+                - Output depends on actual kernel architecture.
+        -  htop (Debian, RHEL)
+            - [Size]();-[H0]()
+        -  {{domainname}} -{{ show or set the system's }}{{NIS/YP domain name}} 
+            - **Synonyms/Aliases**
+                - Related to `hostname`; not the DNS domain.
+            - **Synopsis**
+                - `domainname [name]`
+            - **Description**
+                - Displays or sets the system's NIS (Network Information Service) domain name.
+            - **When to Use It**
+                - Rarely used unless working with NIS-based networks.
+            - **Common Flags**
+                - None commonly used
+            - **Examples**
+                - `domainname`
+                - `sudo domainname exampledomain`
+            - **Notes / Gotchas**
+                - Does not affect DNS; sets only NIS name.
+                - Typically empty or unused in most modern setups.
+            - [Size]();-[H0]()
+        -  dstat (Unclassified)
+            - [Size]();-[H0]()
+        -  glances (Unclassified)
+            - [Size]();-[H0]()
+        -  {{host}} - {{DNS lookup utility}} 
+            - **Synonyms/Aliases**
+                - Alternative to `dig` and `nslookup`.
+            - **Synopsis**
+                - `host [options] name [server]`
+            - **Description**
+                - Performs DNS lookups to resolve names to IPs or vice versa.
+            - **When to Use It**
+                - Use to troubleshoot or inspect DNS resolution.
+            - **Common Flags**
+                - `-t TYPE` - Specify record type (A, MX, NS) - For specific DNS record queries
+                - `-a` - All records - To query all types of records
+                - `-v` - Verbose mode - To increase detail
+            - **Examples**
+                - `host google.com`
+                - `host -t MX gmail.com`
+                - `host example.com 1.1.1.1`
+            - **Notes / Gotchas**
+                - Faster and simpler than `dig` for basic lookups.
+                - May not be installed by default on minimal systems.
+            - [Size]();-[H0]()
+        -  {{hostid}} - {{print the numeric identifier}} {{for the current host}} 
+            - [Size]();-[H0]()
+        - {{hosts}} - {{static table lookup}} for {{hostnames}} 
+        -  iotop (Unclassified)
+            - [Size]();-[H0]()
+        -  lsb_release (Unclassified)
+            - [Size]();-[H0]()
+        -  {{lscpu}} - display information about the CPU architecture  
+            - [Size]();-[H0]()
+        -  {{lsmem}} - list the ranges of available memory with their online status
+            - [Size]();-[H0]()
+        -  ncdu (Common Linux)
+            - [Size]();-[H0]()
+        -  nmon (Unclassified)
+            - [Size]();-[H0]()
+        -  {{nproc}} - report virtual memory statistics
+            - [Size]();-[H0]()
+        -  vmstat (RHEL)
+            - [Size]();-[H0]()
+        -  {{w}} - {{show who is logged in}} and {{what they are doing}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `w [OPTIONS]`
+            - **Description**
+                - Displays users currently logged in and their activity.
+            - **When to Use It**
+                - Use to monitor interactive users and terminal activity.
+            - **Common Flags**
+                - `-h` - Hide header
+                - `-s` - Short format
+            - **Examples**
+                - `w`
+                - `w -s`
+            - **Notes / Gotchas**
+                - Useful for spotting idle users or long sessions.
+    -  Networking and Connectivity
+        -  {{curl}} - {{transfer a URL}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `curl [OPTIONS] URL`
+            - **Description**
+                - Transfers data using HTTP, FTP, etc., supports uploads and APIs.
+            - **When to Use It**
+                - Use to interact with web APIs or download files.
+            - **Common Flags**
+                - `-O` - Save to file
+                - `-L` - Follow redirects
+                - `-d` - Send POST data
+                - `-H` - Set headers
+            - **Examples**
+                - `curl -O https://example.com/file.txt`
+                - `curl -X POST -d "a=1" https://api.example.com`
+            - **Notes / Gotchas**
+                - Can simulate browsers or automate API tasks.
+        -  {{ip}} -{{ show/manipulate routing}}, {{network devices, interfaces and tunnels}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - POSIX, Common Linux (iproute2 package)
+            - **Synopsis**
+                - `ip [OBJECT] [COMMAND]`
+            - **Description**
+                - Replaces older `ifconfig`, `route`, `netstat`.
+            - **When to Use It**
+                - Use to manage IPs, routes, links, and more.
+            - **Common Flags**
+                - `addr`, `link`, `route`, `neigh`, `a`, `r`, `l`
+            - **Examples**
+                - `ip addr show`
+                - `ip route add default via 192.168.1.1`
+            - **Notes / Gotchas**
+                - Often requires `sudo` for changes.
+        -  {{ping}} - {{send ICMP ECHO_REQUEST }}{{to network hosts}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `ping [options] destination`
+            - **Description**
+                - Tests connectivity to a host by sending ICMP echo requests.
+            - **When to Use It**
+                - Use to test whether a host is reachable and how long it takes.
+            - **Common Flags**
+                - `-c` - Number of packets to send - To limit how many pings to send
+                - `-i` - Interval between packets - To wait between pings
+                - `-t` - Set time-to-live - To limit number of hops
+            - **Examples**
+                - `ping google.com`
+                - `ping -c 4 8.8.8.8`
+                - `ping -i 2 github.com`
+            - **Notes / Gotchas**
+                - May be blocked by firewalls.
+                - Works with IPv4 and IPv6.
+            - [Size]();-[H0]()
+        -  {{wget}} - {{non-interactive}} {{file downloader}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synopsis**
+                - `wget [OPTIONS] URL`
+            - **Description**
+                - Retrieves content from web/FTP sites and saves locally.
+            - **When to Use It**
+                - Use for downloading large files or recursive sites.
+            - **Common Flags**
+                - `-O` - Output file
+                - `-r` - Recursive
+                - `-c` - Resume downloads
+                - `--limit-rate` - Throttle speed
+            - **Examples**
+                - `wget https://example.com/file.iso`
+                - `wget -r https://example.com/docs/`
+            - **Notes / Gotchas**
+                - More suited for file downloads than APIs.
+        -  {{ifconfig}} - {{configure network interfaces}} 
+            - [Size]();-[H0]()
+            - **Synonyms/Aliases**
+                - Deprecated in favor of `ip` on modern systems.
+            - **Synopsis**
+                - `ifconfig [interface] [options]`
+            - **Description**
+                - Displays or configures a network interface (IP, MAC, etc.).
+            - **When to Use It**
+                - Use for checking or configuring older network interfaces.
+            - **Common Flags**
+                - `up` - Enable the interface - To activate a network interface
+                - `down` - Disable the interface - To deactivate an interface
+                - `inet addr` - Set IP address - To manually assign an IP
+            - **Examples**
+                - `ifconfig`
+                - `ifconfig eth0`
+                - `ifconfig eth0 up`
+                - `ifconfig eth0 192.168.1.10 netmask 255.255.255.0`
+            - **Notes / Gotchas**
+                - Use `ip addr` instead on newer systems.
+                - May not be installed by default.
+        -  {{ss}} - {{another utility}} to {{investigate sockets}} 
+            - **Synonyms/Aliases**
+                - Replacement for `netstat`.
+            - **Synopsis**
+                - `ss [options]`
+            - **Description**
+                - Shows detailed socket statistics including TCP/UDP connections.
+            - **When to Use It**
+                - Use to inspect active or listening network sockets quickly.
+            - **Common Flags**
+                - `-t` - Show TCP sockets - To limit to TCP
+                - `-u` - Show UDP sockets - To view UDP-only
+                - `-l` - Listening sockets - To see what is accepting connections
+                - `-n` - Don't resolve names - For faster output
+                - `-p` - Show process info - To identify what app owns a socket
+            - **Examples**
+                - `ss -tuln`
+                - `ss -p state listening`
+                - `ss -an`
+            - **Notes / Gotchas**
+                - Faster and more accurate than `netstat`.
+                - Available by default on most modern distros.
+            - [Size]();-[H0]()
+        -  {{traceroute}} - print the route packets take to a network host *
+            - **Synonyms/Aliases**
+                - On some systems, replaced by `tracepath`.
+            - **Synopsis**
+                - `traceroute [options] destination`
+            - **Description**
+                - Displays the route packets take to a host across a network.
+            - **When to Use It**
+                - Use to identify each hop and latency between you and a destination.
+            - **Common Flags**
+                - `-m` - Set max hops - To limit how far packets can go
+                - `-n` - Don’t resolve hostnames - To speed up output
+                - `-w` - Set wait time - To handle slow networks
+            - **Examples**
+                - `traceroute google.com`
+                - `traceroute -n github.com`
+                - `traceroute -m 20 example.com`
+            - **Notes / Gotchas**
+                - May require root on some systems.
+                - Some routers may not respond to traceroute packets.
+            - [Size]();-[H0]()
+        -  ethtool (Unclassified)
+            - [Size]();-[H0]()
+        -  {{iptables}} - {{administration tool for IPv4/IPv6}} {{packet filtering and NAT}} 
+            - **Synonyms/Aliases**
+                - Replaced by `nftables` on many systems.
+            - **Synopsis**
+                - `iptables [-t table] COMMAND [chain] [options]`
+            - **Description**
+                - Sets up, maintains, and inspects the IP packet filter rules.
+            - **When to Use It**
+                - Use to control network traffic and firewall rules.
+            - **Common Flags**
+                - `-A` - Append a rule - To add a new rule to a chain
+                - `-D` - Delete a rule - To remove a rule from a chain
+                - `-L` - List rules - To see current rules
+                - `-F` - Flush rules - To remove all rules
+            - **Examples**
+                - `iptables -L`
+                - `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
+                - `iptables -F`
+            - **Notes / Gotchas**
+                - Requires root privileges.
+                - Changes are not persistent—use `iptables-persistent` or a startup script.
+            - [Size]();-[H0]()
+        -  iwconfig (Unclassified)
+            - [Size]();-[H0]()
+        -  mail (Unclassified)
+            - [Size]();-[H0]()
+        -  mailx (POSIX)
+            - [Size]();-[H0]()
+        -  makemap (Unclassified)
+            - [Size]();-[H0]()
+        -  {{nc}} - {{concatenate and redirect sockets}} 
+            - **Synonyms/Aliases**
+                - Also known as `netcat`.
+            - **Synopsis**
+                - `nc [options] host port`
+            - **Description**
+                - Reads and writes data across network connections using TCP or UDP.
+            - **When to Use It**
+                - Use for testing ports, setting up ad-hoc listeners, or transferring files.
+            - **Common Flags**
+                - `-l` - Listen mode - To create a simple server socket
+                - `-u` - UDP mode - To use UDP instead of TCP
+                - `-z` - Zero-I/O mode - For port scanning
+                - `-v` - Verbose - For connection feedback
+            - **Examples**
+                - `nc -zv 192.168.1.1 22-80`
+                - `nc -l 1234`
+                - `nc example.com 80`
+            - **Notes / Gotchas**
+                - Powerful and sometimes misused in exploits; may be blocked by security tools.
+                - Different versions exist (`openbsd-netcat`, `gnu-netcat`, etc.).
+            - [Size]();-[H0]()
+        -  {{netstat}} - {{print network connections, routing tables}}, {{interface statistics, masquerade connections}}, and {{multicast memberships}} 
+            - **Synonyms/Aliases**
+                - Replaced by `ss` and `ip route` on newer systems.
+            - **Synopsis**
+                - `netstat [options]`
+            - **Description**
+                - Displays open sockets, routing tables, interface stats, and more.
+            - **When to Use It**
+                - Use to inspect network status and active connections.
+            - **Common Flags**
+                - `-t` - Show TCP connections - To focus on TCP only
+                - `-u` - Show UDP connections - To see UDP sockets
+                - `-l` - Show only listening sockets - To check open ports
+                - `-r` - Show routing table - To view current routing info
+                - `-n` - Show numeric addresses - To avoid hostname lookups
+            - **Examples**
+                - `netstat -tuln`
+                - `netstat -r`
+                - `netstat -anp`
+            - **Notes / Gotchas**
+                - Use `ss` or `ip` for modern replacements.
+                - Some options may vary by distribution.
+            - [Size]();-[H0]()
+        -  newaliases (Unclassified)
+            - [Size]();-[H0]()
+        -  {{nmcli}} - {{command-line tool}} for {{controlling NetworkManager}} 
+            - **Platforms**
+                - Common Linux (NetworkManager required)
+            - **Synopsis**
+                - `nmcli [OPTIONS] OBJECT COMMAND`
+            - **Description**
+                - Used to configure and view network settings via CLI.
+            - **When to Use It**
+                - Use to manage interfaces, Wi-Fi, VPNs, and connections.
+            - **Common Flags**
+                - `device`, `connection`, `wifi`, `general`
+            - **Examples**
+                - `nmcli device status`
+                - `nmcli connection up id "Home Wi-Fi"`
+            - **Notes / Gotchas**
+                - More powerful and scriptable than `nmtui`.
+            - [Size]();-[H0]()
+        -  {{nmtui}} - {{text user interface}} for {{controlling NetworkManager}} 
+            - **Platforms**
+                - Common Linux (NetworkManager required)
+            - **Synopsis**
+                - `nmtui`
+            - **Description**
+                - A text-based, interactive tool for managing network settings.
+            - **When to Use It**
+                - Use for configuring network when GUI is unavailable.
+            - **Examples**
+                - `nmtui`
+            - **Notes / Gotchas**
+                - Easier for beginners than `nmcli`, runs in terminal.
+            - [Size]();-[H0]()
+        -  {{nslookup}} - {{query Internet name}} {{servers interactively}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `nslookup [host] [server]`
+            - **Description**
+                - Performs DNS lookups for hostnames or IP addresses.
+            - **When to Use It**
+                - Use to troubleshoot DNS issues or find IP/domain info.
+            - **Common Flags**
+                - `-type=TYPE` - Specify query type - To search for `A`, `MX`, `NS`, etc.
+                - `server NAME` - Use a specific DNS server - To test against custom resolvers
+            - **Examples**
+                - `nslookup google.com`
+                - `nslookup -type=MX gmail.com`
+                - `nslookup example.com 8.8.8.8`
+            - **Notes / Gotchas**
+                - Being phased out in favor of `dig` and `host`.
+                - Behavior may differ slightly on Windows vs Linux.
+            - [Size]();-[H0]()
+        -  postfix (Unclassified)
+            - [Size]();-[H0]()
+        -  procmail (Unclassified)
+            - [Size]();-[H0]()
+        -  {{tcpdump }}- {{dump traffic on a network}} 
+            - [Size]();-[H0]()
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `tcpdump [options] [expression]`
+            - **Description**
+                - Captures and displays packets on a network interface.
+            - **When to Use It**
+                - Use to inspect live network traffic for analysis or debugging.
+            - **Common Flags**
+                - `-i` - Interface - To specify which interface to capture from
+                - `-n` - Don’t resolve hostnames - To improve performance
+                - `-v`, `-vv`, `-vvv` - Verbose output - For more packet details
+                - `-c` - Packet count - To stop after a number of packets
+                - `-w` - Write to file - To save output for later analysis
+            - **Examples**
+                - `tcpdump -i eth0`
+                - `tcpdump -n -c 10 port 80`
+                - `tcpdump -w capture.pcap`
+            - **Notes / Gotchas**
+                - Requires root privileges.
+                - Can generate large output; use filters to narrow data.
+    -  Security and Permissions
+        -  {{chm}}{{od}} - {{change file modes (permissions) }} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `chmod [OPTION]... MODE[,MODE]... FILE...`
+            - **Description**
+                - Changes the read, write, and execute permissions on a file or directory.
+            - **When to Use It**
+                - Use to adjust who can read, write, or execute a file.
+            - **Common Flags**
+                - `-R` - Change files and directories recursively - To update an entire folder
+                - `--reference=RFILE` - Use RFILE's mode - To match permissions to another file
+            - **Examples**
+                - `chmod 755 script.sh`
+                - `chmod -R 644 *.txt`
+                - `chmod u+x runme.sh`
+            - **Notes / Gotchas**
+                - Use symbolic (`u+x`) or numeric (`755`) notation.
+                - Be careful when changing permissions on system files.
+        -  {{chown}} - {{change file owner and group }} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `chown [OPTION]... [OWNER][:[GROUP]] FILE...`
+            - **Description**
+                - Changes the owner and optionally the group of each file.
+            - **When to Use It**
+                - Use when you want to transfer file ownership.
+            - **Common Flags**
+                - `-R` - Operate recursively - To change ownership in directories and subdirectories
+                - `--reference=RFILE` - Use RFILE’s owner/group - To copy ownership from another file
+            - **Examples**
+                - `chown user1 file.txt`
+                - `chown user1:group1 file.txt`
+                - `chown -R user1 dir/`
+            - **Notes / Gotchas**
+                - Requires root privileges.
+                - Ownership change can affect file access.
+        -  auditctl (Unclassified)
+        -  ausearch (Unclassified)
+        -  badblocks (Unclassified)
+        -  {{chattr}} - {{change file attributes}} on a {{Linux file system}} 
+            - **Synonyms/Aliases**
+                - No standard aliases.
+            - **Synopsis**
+                - `chattr [OPTIONS] OPERATOR ATTRIBUTES FILE`
+            - **Description**
+                - Changes special file attributes on ext2/ext3/ext4 file systems.
+            - **When to Use It**
+                - Use to protect files from accidental modification or deletion.
+            - **Common Flags**
+                - `+i` - Set immutable flag - To prevent any modifications to the file
+                - `-i` - Clear immutable flag - To allow changes to a protected file
+                - `+a` - Set append-only flag - To allow appending only (e.g., logs)
+            - **Examples**
+                - `chattr +i important.txt`
+                - `chattr -i important.txt`
+                - `chattr +a logfile.txt`
+            - **Notes / Gotchas**
+                - Must be run as root or with `sudo`.
+                - Not all file systems support `chattr`.
+        -  {{chcon}} - change SELinux context manually
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `chcon [OPTIONS] CONTEXT FILE`
+            - **Description**
+                - Temporarily changes file context (not persistent).
+            - **When to Use It**
+                - Use for quick testing or non-permanent overrides.
+            - **Examples**
+                - `chcon -t httpd_sys_content_t index.html`
+            - **Notes / Gotchas**
+                - Overwritten by `restorecon` or relabeling events.
+        -  {{chr}}{{oot}} - {{change root directory}} 
+        -  {{firewall-cmd}} - manage firewalld rules
+            - **Platforms**
+                - RHEL, Fedora, other firewalld-enabled systems
+            - **Synopsis**
+                - `firewall-cmd [OPTIONS]`
+            - **Description**
+                - CLI interface for dynamic firewall configuration via firewalld.
+            - **When to Use It**
+                - Use to add/remove services or ports, reload zones, etc.
+            - Key Commands
+                - **--get-active-zones** - Show zones in use
+                    - `firewall-cmd --get-active-zones`
+                - **--add-port=PORT/PROTO** - Allow port access
+                    - `firewall-cmd --add-port=8080/tcp`
+                - **--add-service=NAME** - Allow a named service
+                    - `firewall-cmd --add-service=http`
+                - **--permanent** - Make the change persist after reboot
+                    - `firewall-cmd --permanent --add-service=ssh`
+                - **--reload** - Apply permanent changes
+                    - `firewall-cmd --reload`
+            - Notes / Gotchas
+                - Always use `--permanent` with `--reload` to persist changes.
+                - `firewalld` must be running (`systemctl status firewalld`).
+        -  {{getenforce}} - get current SELinux mode
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `getenforce`
+            - **Description**
+                - Prints current SELinux mode (`Enforcing`, `Permissive`, or `Disabled`).
+            - **When to Use It**
+                - Use to check if SELinux is actively enforcing policies.
+            - **Examples**
+                - `getenforce`
+            - **Notes / Gotchas**
+                - Does not show detailed status (use `sestatus` for that).
+        -  {{getfa}}{{cl}} - get file access control list (ACL)
+            - **Platforms**
+                - Common Linux (requires ACL support)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `getfacl [OPTIONS] FILE...`
+            - **Description**
+                - Displays file permissions including extended ACLs.
+            - **When to Use It**
+                - Use to inspect complex file permissions beyond `ls -l`.
+            - **Common Flags**
+                - `-n` - Show numeric UID/GID
+                - `-R` - Recursively list ACLs
+            - **Examples**
+                - `getfacl file.txt`
+            - **Notes / Gotchas**
+                - Requires filesystem and mount to support ACLs.
+        -  {{restorecon}} - apply SELinux file contexts
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `restorecon [OPTIONS] FILE`
+            - **Description**
+                - Restores default SELinux context labels from policy.
+            - **When to Use It**
+                - Use after moving or modifying files.
+            - **Common Flags**
+                - `-R` - Recursive
+            - **Examples**
+                - `restorecon -Rv /web`
+            - **Notes / Gotchas**
+                - Requires policy definitions (see `semanage`).
+        -  runcon (GNU Coreutils)
+        -  {{semanage}} - configure SELinux policy settings
+            - **Platforms**
+                - RHEL-based, with `policycoreutils-python` or `python3-libsemanage`
+            - **Synopsis**
+                - `semanage [OBJECT] -[op] ARGUMENTS`
+            - **Description**
+                - Manages SELinux contexts, booleans, ports, and more.
+            - **When to Use It**
+                - Use to permanently set SELinux rules and labels.
+            - **Common Flags**
+                - `semanage fcontext`, `port`, `boolean`, `login`
+            - **Examples**
+                - `semanage port -l`
+                - `semanage fcontext -a -t httpd_sys_content_t "/web(/.*)?"`
+            - **Notes / Gotchas**
+                - Changes usually require `restorecon` to apply.
+        -  {{sete}}{{nforce}} - set SELinux mode
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `setenforce [0|1]`
+            - **Description**
+                - Temporarily sets SELinux to `Permissive (0)` or `Enforcing (1)`.
+            - **When to Use It**
+                - Use for troubleshooting or allowing temporary policy violations.
+            - **Examples**
+                - `setenforce 0`
+            - **Notes / Gotchas**
+                - Doesn’t persist across reboots—edit `/etc/selinux/config` for permanence.
+        -  {{setfacl}} - set file access control list (ACL)
+            - **Platforms**
+                - Common Linux (with ACL support)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `setfacl [OPTIONS] ACL_SPEC FILE...`
+            - **Description**
+                - Modifies ACL entries on files/directories.
+            - **When to Use It**
+                - Use to set per-user/group permissions beyond basic chmod.
+            - **Common Flags**
+                - `-m` - Modify ACL entry
+                - `-x` - Remove ACL entry
+                - `-b` - Remove all ACLs
+            - **Examples**
+                - `setfacl -m u:bob:rw file.txt`
+                - `setfacl -x u:bob file.txt`
+            - **Notes / Gotchas**
+                - Inherited ACLs can override basic permission bits.
+        -  shred (GNU Coreutils)
+        -  {{sestatus}} - show detailed SELinux status
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `sestatus`
+            - **Description**
+                - Displays status, policy, mode, and context information.
+            - **When to Use It**
+                - Use for a complete SELinux overview.
+            - **Examples**
+                - `sestatus`
+            - **Notes / Gotchas**
+                - Useful for checking loaded policies and file contexts.
+        -  {{matchpathcon}} - show expected SELinux context
+            - **Platforms**
+                - RHEL-based, SELinux-enabled systems
+            - **Synopsis**
+                - `matchpathcon FILE`
+            - **Description**
+                - Displays what SELinux context  *should*  be applied.
+            - **When to Use It**
+                - Use to troubleshoot incorrect labels.
+            - **Examples**
+                - `matchpathcon /var/www/html/index.html`
+            - **Notes / Gotchas**
+                - Doesn’t modify anything—use with `restorecon`.
+    -  Process and Job Control
+        -  {{ps}} - report current processes
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `ps [OPTIONS]`
+            - **Description**
+                - Lists currently running processes.
+            - **When to Use It**
+                - Use to monitor or search for processes.
+            - **Common Flags**
+                - `-e` - Show all processes
+                - `-f` - Full-format listing
+                - `-u USER` - Filter by user
+                - `aux` - BSD-style, all processes
+            - **Examples**
+                - `ps aux`
+                - `ps -ef | grep apache`
+            - **Notes / Gotchas**
+                - Output formatting varies by flags and system.
+        -  {{top}} - display linux processes
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `top`
+            - **Description**
+                - Continuously shows system processes and resource usage.
+            - **When to Use It**
+                - Use to monitor system activity live.
+            - **Common Flags**
+                - `-u USER` - Filter by user
+                - `-n N` - Number of iterations
+            - **Examples**
+                - `top`
+                - `top -u root`
+            - **Notes / Gotchas**
+                - Press `q` to quit, `h` for help, `k` to kill.
+        -  {{kill}} - send signals to processes
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `kill [OPTIONS] PID...`
+            - **Description**
+                - Sends a signal (default: TERM) to process(es).
+            - **When to Use It**
+                - Use to terminate or control processes.
+            - **Common Flags**
+                - `-9` - SIGKILL (force kill)
+                - `-15` - SIGTERM (default)
+            - **Examples**
+                - `kill 1234`
+                - `kill -9 5678`
+            - **Notes / Gotchas**
+                - Use `ps` or `pgrep` to find PIDs.
+        -  {{killall}} - send signals to processes by name
+            - **Platforms**
+                - Common Linux (not POSIX)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `killall [OPTIONS] NAME`
+            - **Description**
+                - Kills all processes matching a name.
+            - **When to Use It**
+                - Use to end all instances of a command.
+            - **Common Flags**
+                - `-9` - Force kill
+                - `-u USER` - Match processes by user
+            - **Examples**
+                - `killall firefox`
+                - `killall -9 python3`
+            - **Notes / Gotchas**
+                - Name must match the command exactly.
+        -  {{bg}} - resume a suspended job in the background
+            - **Platforms**
+                - POSIX (shell built-in)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `bg [JOB]`
+            - **Description**
+                - Resumes a paused job to run in the background.
+            - **When to Use It**
+                - Use to continue a suspended task without blocking the terminal.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `bg %1`
+            - **Notes / Gotchas**
+                - Use with `jobs` to get job IDs.
+        -  {{fg}} - bring a job to the foreground
+            - **Platforms**
+                - POSIX (shell built-in)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `fg [JOB]`
+            - **Description**
+                - Resumes a job in the foreground.
+            - **When to Use It**
+                - Use to regain control of a background or suspended job.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `fg %1`
+            - **Notes / Gotchas**
+                - Suspended jobs must be resumed via `fg` or `bg`.
+        -  fuser (Unclassified)
+        -  jobs (Unclassified)
+        -  {{jobs}} - list active jobs in the shell
+            - **Platforms**
+                - POSIX (shell built-in)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `jobs [OPTIONS]`
+            - **Description**
+                - Displays background or suspended jobs in the current shell.
+            - **When to Use It**
+                - Use to manage background tasks.
+            - **Common Flags**
+                - `-l` - Show PID
+            - **Examples**
+                - `jobs`
+            - **Notes / Gotchas**
+                - Only works in the current shell session.
+        -  {{nice}} - run a program with adjusted priority
+            - **Platforms**
+                - POSIX, GNU Coreutils
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `nice [-n ADJUSTMENT] COMMAND`
+            - **Description**
+                - Runs a command with a specified niceness (priority).
+            - **When to Use It**
+                - Use to reduce CPU priority of long-running tasks.
+            - **Common Flags**
+                - `-n` - Niceness value (default: 10)
+            - **Examples**
+                - `nice -n 15 ./backup.sh`
+            - **Notes / Gotchas**
+                - Lower value = higher priority (range: -20 to 19).
+        -  nohup (GNU Coreutils)
+        -  pstree (Unclassified)
+        -  {{renice}} - change priority of a running process
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `renice [OPTIONS] priority -p PID`
+            - **Description**
+                - Adjusts niceness of an already running process.
+            - **When to Use It**
+                - Use to dynamically reprioritize processes.
+            - **Common Flags**
+                - `-p` - Target by PID
+                - `-u` - Target by user
+            - **Examples**
+                - `renice -n 5 -p 1234`
+            - **Notes / Gotchas**
+                - Only root can increase priority (lower niceness).
+        -  timeout (GNU Coreutils)
+        -  wait (POSIX)
+    -  System Initialization and Service Management
+        -  {{systemctl}} - manage systemd services and units
+            - **Platforms**
+                - Systemd-based Linux (Debian, RHEL, etc.)
+            - **Synopsis**
+                - `systemctl [OPTIONS] COMMAND UNIT`
+            - **Description**
+                - Controls system services, targets, and other systemd units.
+            - **When to Use It**
+                - Use to start/stop services, manage boot behavior.
+            - **Common Flags**
+                - `start`, `stop`, `status`, `enable`, `disable`, `restart`
+            - **Examples**
+                - `systemctl status sshd`
+                - `systemctl enable cron`
+            - **Notes / Gotchas**
+                - Requires `sudo` for most service changes.
+            - systemctl enable, start, stop, status, disable, mask  
+            - ### systemctl enable cron - enable cron service on boot
+                - [Size]();-[H3]()
+                - **Platforms**
+                    - Systemd-based Linux (Debian, Ubuntu, etc.)
+                - **Synonyms/Aliases**
+                    - May also be `crond` on some systems (e.g., RHEL)
+                - **Synopsis**
+                    - `systemctl enable cron`
+                - **Description**
+                    - Enables the cron daemon to start automatically at boot.
+                - **When to Use It**
+                    - Use to activate recurring task support system-wide.
+                - **Common Flags**
+                    - `start`, `stop`, `status`, `restart` (cron control)
+                - **Examples**
+                    - `sudo systemctl start cron`
+                    - `sudo systemctl enable cron`
+                - **Notes / Gotchas**
+                    - On RHEL/Fedora: `crond` replaces `cron` (`systemctl enable crond`)
+        -  {{journalctl}} - query systemd journal logs
+            - **Platforms**
+                - Systemd-based Linux distros (e.g., Debian, RHEL)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `journalctl [OPTIONS]`
+            - **Description**
+                - Shows detailed system logs collected by `systemd-journald`.
+            - **When to Use It**
+                - Use to view persistent, searchable logs across boots.
+            - **Common Flags**
+                - `-b` - Logs since last boot
+                - `-u UNIT` - Logs for a service
+                - `-f` - Follow (like `tail -f`)
+            - **Examples**
+                - `journalctl -b`
+                - `journalctl -u sshd`
+            - **Notes / Gotchas**
+                - Requires `root` for full access.
+        -  anacron (Unclassified)
+        -  atrun (Unclassified)
+        -  chkconfig (Unclassified)
+        -  {{dmesg}} - print kernel ring buffer messages
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `dmesg [OPTIONS]`
+            - **Description**
+                - Displays system messages from the kernel log buffer.
+            - **When to Use It**
+                - Use to debug boot issues, hardware events, or drivers.
+            - **Common Flags**
+                - `-T` - Human-readable timestamps
+                - `-H` - Interactive (scrollable) mode
+                - `-k` - Kernel-only messages
+            - **Examples**
+                - `dmesg | grep usb`
+                - `dmesg -T`
+            - **Notes / Gotchas**
+                - Output is cleared on reboot; for persistent logs, use `journalctl`.
+        -  halt (Unclassified)
+        -  initctl (Unclassified)
+        -  {{logger}} - add messages to the system log
+            - **Platforms**
+                - Common Linux (uses `syslog`)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `logger [OPTIONS] MESSAGE`
+            - **Description**
+                - Writes a message to `/var/log/syslog` or system journal.
+            - **When to Use It**
+                - Use to log custom messages from scripts or manual events.
+            - **Common Flags**
+                - `-p` - Set priority (e.g., `user.notice`)
+                - `-t` - Tag message
+            - **Examples**
+                - `logger "Backup completed"`
+                - `logger -t myscript -p user.warn "Disk full"`
+            - **Notes / Gotchas**
+                - Messages are usually stored in `/var/log/syslog` or accessible via `journalctl`.
+        -  logrotate (Unclassified)
+        -  {{reboot}} - reboot the system immediately
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `reboot`
+            - **Description**
+                - Reboots the system now (same as `shutdown -r now`).
+            - **When to Use It**
+                - Use for immediate restarts.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `reboot`
+            - **Notes / Gotchas**
+                - May require `sudo`; invokes systemd’s `reboot.target` if present.
+        -  run-parts (Unclassified)
+        -  runlevel (Unclassified)
+        -  service (Debian)
+        -  {{shut}}{{down}} - schedule system shutdown or reboot
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `shutdown [OPTIONS] TIME [MESSAGE]`
+            - **Description**
+                - Schedules a system shutdown, reboot, or halt.
+            - **When to Use It**
+                - Use for planned shutdowns with warning.
+            - **Common Flags**
+                - `-r` - Reboot
+                - `-h` - Halt/poweroff
+                - `now` - Immediate shutdown
+            - **Examples**
+                - `shutdown -h now`
+                - `shutdown -r +10 "Reboot in 10 minutes"`
+            - **Notes / Gotchas**
+                - Use `shutdown -c` to cancel.
+        -  {{poweroff}} - shut down and power off the system
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `poweroff`
+            - **Description**
+                - Powers down the system (same as `shutdown -h now`).
+            - **When to Use It**
+                - Use for clean shutdowns from CLI.
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `poweroff`
+            - **Notes / Gotchas**
+                - Controlled by `systemd` or `SysV` depending on distro.
+        -  telinit (Unclassified)
+        -  update-rc.d (Unclassified)
+        -  grub2-editenv - manage GRUB environment block
+            - **Platforms**
+                - RHEL, Fedora, and other GRUB2-based systems
+            - **Synopsis**
+                - `grub2-editenv FILE CMD`
+            - **Description**
+                - Sets or unsets GRUB environment variables.
+            - **When to Use It**
+                - Use to control GRUB boot behavior (e.g., next boot entry).
+            - **Common Flags**
+                - `list` - View contents
+                - `set` - Define GRUB environment variable
+            - **Examples**
+                - `grub2-editenv list`
+                - `grub2-editenv /boot/grub2/grubenv set next_entry=1`
+            - **Notes / Gotchas**
+                - Works with `/boot/grub2/grubenv`, not `grub.cfg`.
+        -  grub2-mkconfig - generate GRUB2 config file
+            - **Platforms**
+                - RHEL, Fedora, and most GRUB2-based systems
+            - **Synopsis**
+                - `grub2-mkconfig -o FILE`
+            - **Description**
+                - Regenerates the GRUB2 config file (`grub.cfg`) based on scripts and system state.
+            - **When to Use It**
+                - Use after kernel or bootloader changes.
+            - **Common Flags**
+                - `-o` - Output file (usually `/boot/grub2/grub.cfg`)
+            - **Examples**
+                - `grub2-mkconfig -o /boot/grub2/grub.cfg`
+            - **Notes / Gotchas**
+                - May differ by distro (`update-grub` on Debian).
+    -  File Viewing and Text Utilities
+        -  tldr (Common Linux)
+        -  b2sum (Unclassified)
+        -  bat (Common Linux)
+        -  cksum (GNU Coreutils)
+        -  fzf (Common Linux)
+        -  {{head}} - {{display the beginning of files}} 
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `head [OPTIONS] FILE`
+            - **Description**
+                - Prints the first N lines of a file (default: 10).
+            - **When to Use It**
+                - Use to preview content or check logs.
+            - **Common Flags**
+                - `-n` - Number of lines to print
+                - `-c` - Print N bytes
+            - **Examples**
+                - `head file.txt`
+                - `head -n 20 log.txt`
+            - **Notes / Gotchas**
+                - Combine with `tail` for partial views.
+        -  hexdump (Unclassified)
+        -  {{less}} - {{view file content}} {{one screen at a time}} 
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `less [OPTIONS] FILE`
+            - **Description**
+                - Opens a file or input for scrollable viewing (forward/backward).
+            - **When to Use It**
+                - Use for large files or paginated output.
+            - **Common Flags**
+                - `-N` - Show line numbers
+                - `-S` - Chop long lines (no wrap)
+                - `+F` - Follow file (like `tail -f`)
+            - **Examples**
+                - `less /var/log/syslog`
+                - `command | less`
+            - **Notes / Gotchas**
+                - Use `q` to quit, `/` to search, `n` for next result.
+        -  merge (Unclassified)
+        -  numfmt (GNU Coreutils)
+        -  od (GNU Coreutils)
+        -  pr (GNU Coreutils)
+        -  ptx (GNU Coreutils)
+        -  sha224sum (GNU Coreutils)
+        -  sha256sum (GNU Coreutils)
+        -  sha384sum (GNU Coreutils)
+        -  sha512sum (GNU Coreutils)
+        -  shuf (GNU Coreutils)
+        -  sum (GNU Coreutils)
+        -  {{tail}} - {{display the end of files}} 
+            - **Platforms**
+                - GNU Coreutils, POSIX
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `tail [OPTIONS] FILE`
+            - **Description**
+                - Prints the last N lines of a file (default: 10).
+            - **When to Use It**
+                - Use to check recent log entries or updates.
+            - **Common Flags**
+                - `-n` - Number of lines
+                - `-f` - Follow file (watch new lines live)
+            - **Examples**
+                - `tail -n 50 logfile.log`
+                - `tail -f /var/log/syslog`
+            - **Notes / Gotchas**
+                - Useful for monitoring logs in real time.
+        -  tailf (Unclassified)
+        -  tsort (GNU Coreutils)
+    -  Time and Date Utilities
+        -  {{at}} - schedule a command to run once at a specific time
+            - **Platforms**
+                - Common Linux (requires `atd` service)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `at TIME`
+            - **Description**
+                - Queues a command to run once at a specific time.
+            - **When to Use It**
+                - Use for one-time future tasks.
+            - **Common Flags**
+                - `-l` - List scheduled jobs (`atq`)
+                - `-r` - Remove job (`atrm`)
+            - **Examples**
+                - `echo "backup.sh" | at 03:00`
+                - `at now + 5 minutes`
+            - **Notes / Gotchas**
+                - Requires `atd` service to be running.
+        -  atq (Unclassified)
+        -  atrm (Unclassified)
+        -  cal (Debian, RHEL)
+        -  chronyc (Unclassified)
+        -  cron (Unclassified) *
+        -  {{cron}}{{tab}} - manage cron jobs for user
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `crontab [OPTION]`
+            - **Description**
+                - Installs, lists, or removes a user’s cron table (scheduled jobs).
+            - **When to Use It**
+                - Use to schedule recurring tasks (daily, weekly, etc.).
+            - **Common Flags**
+                - `-e` - Edit the current user’s crontab
+                - `-l` - List current user’s crontab
+                - `-r` - Remove current crontab
+            - **Examples**
+                - `crontab -e`
+                - `crontab -l`
+                - `crontab -r`
+            - **Notes / Gotchas**
+                - Syntax: `* * * * * command` (min hour day month weekday)
+                - Environment variables (e.g., `PATH`) may differ inside cron jobs
+        -  crontab -e - edit user’s crontab
+            - **Platforms**
+                - Common Linux
+            - **Description**
+                - Opens the user’s cron table in the default editor.
+            - **When to Use It**
+                - Use to create or modify recurring tasks.
+            - **Examples**
+                - `crontab -e`
+            - **Notes / Gotchas**
+                - May prompt for editor selection on first use.
+        -  crontab -l - list user’s crontab entries
+            - **Platforms**
+                - Common Linux
+            - **Description**
+                - Displays current user’s scheduled cron jobs.
+            - **When to Use It**
+                - Use to review scheduled tasks.
+            - **Examples**
+                - `crontab -l`
+            - **Notes / Gotchas**
+                - Returns nothing if no crontab is installed.
+        -  date (Debian, GNU Coreutils, POSIX, RHEL)
+        -  hwclock (Unclassified)
+        -  ntpdate (Unclassified)
+        -  rdate (Unclassified)
+        -  time (POSIX)
+        -  timedatectl (Unclassified)
+    -  Kernel and Module Management
+        -  {{blkid}} - locate/print block device attributes
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `blkid [DEVICE]`
+            - **Description**
+                - Displays UUID, filesystem type, and labels.
+            - **Examples**
+                - `blkid /dev/sda1`
+        -  depmod (Unclassified)
+        -  {{lsblk}} - list block devices
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `lsblk [OPTIONS]`
+            - **Description**
+                - Shows tree view of block devices and mount points.
+            - **Examples**
+                - `lsblk -f`
+        -  lsinitrd (Unclassified)
+        -  lsmod (Unclassified)
+        -  modinfo (Unclassified)
+        -  modprobe (Unclassified)
+        -  sysctl (Unclassified)
+    -  Remote Access and File Transfer
+        -  {{dig}} - {{DNS lookup utility}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux (dnsutils or bind-utils package)
+            - **Synopsis**
+                - `dig [@SERVER] NAME [TYPE]`
+            - **Description**
+                - Queries DNS servers for name resolution and record info.
+            - **When to Use It**
+                - Use to troubleshoot DNS issues or inspect records.
+            - **Common Flags**
+                - `+short`, `+trace`, `+noall +answer`
+            - **Examples**
+                - `dig example.com`
+                - `dig +short mx google.com`
+            - **Notes / Gotchas**
+                - Often more informative than `nslookup`.
+        -  login (Unclassified)
+            - [Size]();-[H0]()
+        -  {{scp}} - OpenSSH secure file copy
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux, POSIX
+            - **Synopsis**
+                - `scp [OPTIONS] SRC DEST`
+            - **Description**
+                - Securely transfers files between systems over SSH.
+            - **When to Use It**
+                - Use to copy files across machines securely.
+            - **Common Flags**
+                - `-r` - Recursive
+                - `-P` - Port
+                - `-i` - Identity file
+            - **Examples**
+                - `scp file.txt user@host:/tmp/`
+                - `scp -r dir user@host:~/backup`
+            - **Notes / Gotchas**
+                - Deprecated in favor of `sftp` or `rsync` in some contexts.
+        -  {{sftp}} - OpenSSH secure file transfer
+            - [Size]();-[H0]()
+        -  {{ssh}} - {{OpenSSH remote login client}} 
+            - [Size]();-[H0]()
+    -  Disk and Filesystem Management
+        -  {{df}} - show disk space usage
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `df [OPTIONS]`
+            - **Description**
+                - Reports available and used disk space on filesystems.
+            - **Examples**
+                - `df -h`
+        -  {{du}} - show file/directory space usage
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `du [OPTIONS] PATH`
+            - **Description**
+                - Displays disk usage for files/directories.
+            - **Examples**
+                - `du -sh /home/user`
+        -  debugfs (Unclassified)
+        -  dosfsck (Unclassified)
+        -  dumpe2fs (Unclassified)
+        -  e2fsck (Unclassified)
+        -  e2image (Unclassified)
+        -  {{e2label}} - set or get ext2/ext3/ext4 filesystem label
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `e2label DEVICE [NEW_LABEL]`
+            - **Description**
+                - Reads or writes volume labels.
+            - **Examples**
+                - `e2label /dev/sda1 backup_drive`
+        -  {{quot}}{{a}} - show disk usage and limits
+            - **Platforms**
+                - Common Linux (with quota enabled)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `quota [OPTIONS] [USER]`
+            - **Description**
+                - Displays user or group disk space and inode usage.
+            - **When to Use It**
+                - Use to check disk limits enforced by the system.
+            - **Common Flags**
+                - `-u` - Show user quotas (default)
+                - `-g` - Show group quotas
+                - `-s` - Human-readable units
+            - **Examples**
+                - `quota`
+                - `quota -g`
+            - **Notes / Gotchas**
+                - Requires quota system to be active on the filesystem.
+        -  {{ed}}{{quot}}{{a}} - edit user quotas
+            - **Platforms**
+                - Common Linux (admin tool)
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `edquota [OPTIONS] USER`
+            - **Description**
+                - Opens a text editor to modify user disk quota settings.
+            - **When to Use It**
+                - Use to set or change soft/hard disk limits.
+            - **Common Flags**
+                - `-u` - Edit user quotas (default)
+                - `-g` - Edit group quotas
+            - **Examples**
+                - `edquota bob`
+            - **Notes / Gotchas**
+                - Must be run as root; edits affect active usage limits.
+        -  {{rep}}{{quot}}{{a}} - generate quota reports
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - None
+            - **Synopsis**
+                - `repquota [OPTIONS] MOUNTPOINT`
+            - **Description**
+                - Reports quota usage for users or groups on a filesystem.
+            - **When to Use It**
+                - Use to audit quota usage across users or groups.
+            - **Common Flags**
+                - `-a` - All filesystems with quotas
+                - `-u` - Show user usage
+                - `-g` - Show group usage
+            - **Examples**
+                - `repquota -a`
+            - **Notes / Gotchas**
+                - Output includes soft/hard limits and grace period data.
+        -  fdformat (Unclassified)
+        -  {{fdisk}} - partition table editor for MBR disks
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `fdisk DEVICE`
+            - **Description**
+                - Interactive tool to manage MBR partitions.
+            - **Examples**
+                - `fdisk /dev/sda`
+        -  fsck (Unclassified)
+        -  fsck.ext2 (Unclassified)
+        -  mke2fs (Unclassified)
+        -  {{mkfs}} - create a filesystem
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `mkfs -t TYPE DEVICE`
+            - **Description**
+                - Formats a device with a specific filesystem.
+            - **Examples**
+                - `mkfs.ext4 /dev/sdb1`
+        -  mkfs.ext2 (Unclassified)
+        -  mkfs.ext3 (Unclassified)
+        -  mklost+found (Unclassified)
+        -  mkraid (Unclassified)
+        -  mkswap (Unclassified)
+        -  {{mou}}{{nt}} - attach a filesystem
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `mount [OPTIONS] DEVICE MOUNTPOINT`
+            - **Description**
+                - Mounts a device or filesystem to a directory.
+            - **When to Use It**
+                - Use to access partitions or filesystems.
+            - **Examples**
+                - `mount /dev/sda1 /mnt`
+        -  {{parted}} - create/modify partitions (MBR/GPT)
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `parted DEVICE`
+            - **Description**
+                - Interactive or scriptable partition editor.
+            - **Examples**
+                - `parted /dev/sdb`
+        -  pathchk (GNU Coreutils, POSIX)
+        -  pax (Unclassified)
+        -  quotacheck (Unclassified)
+        -  quotaoff (Unclassified)
+        -  quotaon (Unclassified)
+        -  quotastats (Unclassified)
+        -  rdev (Unclassified)
+        -  resize2fs (Unclassified)
+        -  rootflags (Unclassified)
+        -  setquota (Unclassified)
+        -  showmount (Unclassified)
+        -  {{swapon}} - enable swap space
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `swapon [DEVICE]`
+            - **Description**
+                - Activates swap space.
+            - **Examples**
+                - `swapon /dev/sda2`
+        -  {{swapoff}} - disable swap space
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `swapoff [DEVICE]`
+            - **Description**
+                - Deactivates swap space.
+            - **Examples**
+                - `swapoff /dev/sda2`
+        -  sync (GNU Coreutils)
+        -  {{tune2fs}} - adjust ext2/ext3/ext4 filesystem parameters
+            - **Platforms**
+                - Common Linux
+            - **Synopsis**
+                - `tune2fs [OPTIONS] DEVICE`
+            - **Description**
+                - Modifies features like labels, checks, etc.
+            - **Examples**
+                - `tune2fs -L mydata /dev/sda1`
+        -  {{umask}} - {{set default file}} {{creation permissions}} 
+            - **Platforms**
+                - POSIX (Shell built-in)
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `umask [VALUE]`
+            - **Description**
+                - Sets the default permission mask for new files and directories.
+            - **When to Use It**
+                - Use to control default file access (e.g., make files private).
+            - **Common Flags**
+                - None
+            - **Examples**
+                - `umask` (show current value)
+                - `umask 027` (deny write to group/others)
+            - **Notes / Gotchas**
+                - Affects new files only; use `chmod` for existing ones.
+                - Calculated as: permissions = base - umask
+        -  {{umount}} - detach a filesystem
+            - **Platforms**
+                - POSIX, Common Linux
+            - **Synopsis**
+                - `umount [OPTIONS] TARGET`
+            - **Description**
+                - Unmounts a mounted filesystem.
+            - **When to Use It**
+                - Use to safely detach devices.
+            - **Examples**
+                - `umount /mnt`
+        -  warnquota (Unclassified)
+        -  {{xfs_growfs}} - expand an XFS filesystem
+            - **Platforms**
+                - RHEL-based, with XFS tools
+            - **Synopsis**
+                - `xfs_growfs MOUNTPOINT`
+            - **Description**
+                - Grows a mounted XFS filesystem.
+            - **Examples**
+                - `xfs_growfs /data`
+        -  {{xfs_admin}} - manage XFS filesystem metadata
+            - **Platforms**
+                - RHEL-based with XFS
+            - **Synopsis**
+                - `xfs_admin [OPTIONS] DEVICE`
+            - **Description**
+                - Changes UUID or label for XFS volumes.
+            - **Examples**
+                - `xfs_admin -L data /dev/sdb1`
+    -  LVM (Logical Volume Manager) Commands
+        - ### pvcreate - create physical volume
+            - **Examples**: `pvcreate /dev/sdb1`
+            - [Size]();-[H3]()
+        - ### vgcreate - create volume group
+            - **Examples**: `vgcreate vgdata /dev/sdb1`
+            - [Size]();-[H3]()
+        - ### lvcreate - create logical volume
+            - **Examples**: `lvcreate -L 10G -n lvbackup vgdata`
+            - [Size]();-[H3]()
+        - ### lvextend - grow a logical volume
+            - **Examples**: `lvextend -L +5G /dev/vgdata/lvbackup`
+            - [Size]();-[H3]()
+        - ### lvremove - delete a logical volume
+            - **Examples**: `lvremove /dev/vgdata/lvbackup`
+            - [Size]();-[H3]()
+        - ### vgextend - add PV to volume group
+            - **Examples**: `vgextend vgdata /dev/sdc1`
+            - [Size]();-[H3]()
+        - ### vgreduce - remove PV from volume group
+            - **Examples**: `vgreduce vgdata /dev/sdc1`
+            - [Size]();-[H3]()
+        - ### lvs - show logical volumes
+            - **Examples**: `lvs`
+            - [Size]();-[H3]()
+        - ### vgs - show volume groups
+            - **Examples**: `vgs`
+            - [Size]();-[H3]()
+        - ### pvs - show physical volumes
+            - **Examples**: `pvs`
+            - [Size]();-[H3]()
+    -  Network Services and Daemons
+        -  apmd (Unclassified)
+            - [Size]();-[H0]()
+        -  atd (Unclassified)
+            - [Size]();-[H0]()
+        -  bootpd (Unclassified)
+            - [Size]();-[H0]()
+        -  cupsd (Unclassified)
+            - [Size]();-[H0]()
+        -  klogd (Unclassified)
+            - [Size]();-[H0]()
+        -  {{named}} - DNS server daemon (BIND) *
+            - **Synonyms/Aliases**
+                - Also called BIND (Berkeley Internet Name Domain).
+            - **Synopsis**
+                - `named [-c configfile] [-d debuglevel] [-f]`
+            - **Description**
+                - Runs a DNS server for name resolution on the network.
+            - **When to Use It**
+                - Use to provide DNS service for local or external clients.
+            - **Common Flags**
+                - `-c` - Specify config file - To run with a custom `named.conf`
+                - `-d` - Set debug level - To increase log verbosity
+                - `-f` - Run in foreground - Useful for debugging
+            - **Examples**
+                - `named -c /etc/named.conf`
+                - `named -d 3`
+                - `named -f`
+            - **Notes / Gotchas**
+                - Configuration is complex; typically used on servers.
+                - Requires root or system privileges to bind to port 53.
+            - [Size]();-[H0]()
+        -  nfsd (Unclassified)
+            - [Size]();-[H0]()
+        -  pppd (Unclassified)
+            - [Size]();-[H0]()
+        -  routed (Unclassified)
+            - [Size]();-[H0]()
+        -  rpc.rusersd (Unclassified)
+            - [Size]();-[H0]()
+        -  rpc.statd (Unclassified)
+            - [Size]();-[H0]()
+        -  rsyslogd (Unclassified)
+            - [Size]();-[H0]()
+        -  rwhod (Unclassified)
+            - [Size]();-[H0]()
+        -  sshd (Unclassified)
+            - [Size]();-[H0]()
+        -  syslogd (Unclassified)
+            - [Size]();-[H0]()
+        -  vsftpd (Unclassified)
+            - [Size]();-[H0]()
+        -  xinetd (Unclassified)
+            - [Size]();-[H0]()
+    -  Miscellaneous Utilities
+        -  {{**man**}}** **-** an **{{**interface**}}** to the **{{**system reference **}}{{**man**}}{{**uals **}} 
+            - [Size]();-[H0]()
+            - **Synonyms/Aliases**
+                - No standard aliases. Sometimes wrapped in functions or scripts (e.g., `tldr`, `help` in some shells for alternatives).
+            - **Synopsis**
+                - `man [SECTION] PAGE`
+            - **Description**
+                - Displays the manual page for a given command or system topic. The manual is divided into sections (e.g., commands, system calls, library functions).
+            - **When to Use It**
+                - Use `man` when you want detailed information on how a command works, its flags, syntax, and behavior from the official system documentation.
+            - **Common Flags**
+                - `-k` - Search for keywords in man pages - Use when unsure of exact command
+                - `-f` - Show a short description - Use to check what a command does
+                - `-a` - Show all matching man pages - Use when multiple entries exist (like `printf`)
+                - `-P` - Specify a pager (e.g., `less`, `more`) - Use to customize display
+            - **Examples**
+                - `man ls`         # View the manual page for `ls`
+                - `man -k copy`    # Search all man pages for the keyword "copy"
+                - `man 5 passwd`   # View the section 5 page for `passwd` file format
+                - `man -f mv`      # Show what the `mv` command does (like `whatis`)
+            - **Notes / Gotchas**
+                - The manual is split into numbered sections; use `man 2 open` vs `man 3 open` for different meanings of the same name.
+                - Some systems may require updating the `man` database with `mandb` to ensure `-k` and `-f` work correctly.
+                - Output is usually viewed through `less` (press `q` to quit, `/` to search).
+                - If no result appears, the command may not be installed, or the man page might be missing for it.
+        -  {{pass}}{{wd}} - {{change user }}{{pass}}{{word}} 
+            - [Size]();-[H0]()
+            - **Platforms**
+                - Common Linux
+            - **Synonyms/Aliases**
+                - No standard aliases
+            - **Synopsis**
+                - `passwd [USERNAME]`
+            - **Description**
+                - Changes the current or specified user’s password.
+            - **When to Use It**
+                - Use to set or reset user passwords.
+            - **Common Flags**
+                - `-l` - Lock account
+                - `-u` - Unlock account
+                - `-e` - Expire password
+            - **Examples**
+                - `passwd` (self)
+                - `sudo passwd bob`
+            - **Notes / Gotchas**
+                - Requires root for changing other users' passwords.
+        -  {{sudo}} - {{execute a command}} as {{another user}} 
+            - [Size]();-[H0]()
+        - {{chacl}} - {{change the access control list}} of a {{file or directory}} 
+        - {{chcpu}} - {{configure CPUs}} 
+        - {{chfn}} - {{change your finger information}} 
+        - {{chgpasswd}} - {{update group passwords}} in {{batch mode}} 
+        - {{chmem}} - {{configure memory}} 
+        -  false (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  true (GNU Coreutils, POSIX)
+            - [Size]();-[H0]()
+        -  accept (Unclassified)
+            - [Size]();-[H0]()
+        -  aclocal (Unclassified)
+            - [Size]();-[H0]()
+        -  acpi (Unclassified)
+            - [Size]();-[H0]()
+        -  acpid (Unclassified)
+            - [Size]();-[H0]()
+        -  addr2line (Unclassified)
+            - [Size]();-[H0]()
+        -  agetty (Unclassified)
+            - [Size]();-[H0]()
+        -  autoconf (Unclassified)
+            - [Size]();-[H0]()
+        -  autoheader (Unclassified)
+            - [Size]();-[H0]()
+        -  autoscan (Unclassified)
+            - [Size]();-[H0]()
+        -  autoupdate (Unclassified)
+            - [Size]();-[H0]()
+        -  base64 (Unclassified)
+            - [Size]();-[H0]()
+        -  bc (Unclassified)
+            - [Size]();-[H0]()
+        -  bison (Unclassified)
+            - [Size]();-[H0]()
+        -  bzcmp (Unclassified)
+            - [Size]();-[H0]()
+        -  bzdiff (Unclassified)
+            - [Size]();-[H0]()
+        -  bzmore (Unclassified)
+            - [Size]();-[H0]()
+        -  c++ (Unclassified)
+            - [Size]();-[H0]()
+        -  cdda2wav (Unclassified)
+            - [Size]();-[H0]()
+        -  clear (Unclassified)
+            - [Size]();-[H0]()
+        -  column (Unclassified)
+            - [Size]();-[H0]()
+        -  cupsctl (Unclassified)
+            - [Size]();-[H0]()
+        -  dvdrecord (Unclassified)
+            - [Size]();-[H0]()
+        -  enable (Unclassified) *
+            - [Size]();-[H0]()
+        -  factor (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  fc (Unclassified)
+            - [Size]();-[H0]()
+        -  fgconsole (Unclassified)
+            - [Size]();-[H0]()
+        -  gpgv (Unclassified)
+            - [Size]();-[H0]()
+        -  info (Debian)
+            - [Size]();-[H0]()
+        -  lp (Unclassified)
+            - [Size]();-[H0]()
+        -  lpadmin (Unclassified)
+            - [Size]();-[H0]()
+        -  lpinfo (Unclassified)
+            - [Size]();-[H0]()
+        -  lpmove (Unclassified)
+            - [Size]();-[H0]()
+        -  lpstat (Unclassified)
+            - [Size]();-[H0]()
+        -  nameif (Unclassified)
+            - [Size]();-[H0]()
+        -  nfsstat (Unclassified)
+            - [Size]();-[H0]()
+        -  nsupdate (Unclassified)
+            - [Size]();-[H0]()
+        -  reject (Unclassified)
+            - [Size]();-[H0]()
+        -  reset (Unclassified)
+            - [Size]();-[H0]()
+        -  rndc (Unclassified)
+            - [Size]();-[H0]()
+        -  shar (Unclassified)
+            - [Size]();-[H0]()
+        -  tree (Unclassified)
+            - [Size]();-[H0]()
+        -  watch (Unclassified)
+            - [Size]();-[H0]()
+        -  wdiff (Unclassified)
+            - [Size]();-[H0]()
+        -  ytree (Unclassified)
+            - [Size]();-[H0]()
+        -  zcat (GNU Coreutils)
+            - [Size]();-[H0]()
+        -  zdiff (Unclassified)
+            - [Size]();-[H0]()
+        -  zebra (Unclassified)
+            - [Size]();-[H0]()
+    -  Graphics and Image Processing
+        -  cjpeg (Unclassified)
+            - [Size]();-[H0]()
+        -  convert (Unclassified)
+            - [Size]();-[H0]()
+        -  display (Unclassified)
+            - [Size]();-[H0]()
+        -  eog (Unclassified)
+            - [Size]();-[H0]()
+        -  feh (Unclassified)
+            - [Size]();-[H0]()
+        -  giftrans (Unclassified)
+            - [Size]();-[H0]()
+        -  gimp (Unclassified)
+            - [Size]();-[H0]()
+        -  gs (Unclassified)
+            - [Size]();-[H0]()
+        -  gv (X11)
+            - [Size]();-[H0]()
+        -  gwenview (Unclassified)
+            - [Size]();-[H0]()
+        -  montage (Unclassified)
+            - [Size]();-[H0]()
+        -  ristretto (Unclassified)
+            - [Size]();-[H0]()
+        -  scanimage (Unclassified)
+            - [Size]();-[H0]()
+        -  shotwell (Unclassified)
+            - [Size]();-[H0]()
+        -  transfig (Unclassified)
+            - [Size]();-[H0]()
+        -  xpaint (Unclassified)
+            - [Size]();-[H0]()
+    -  X Window System Utilities
+        -  imake (Unclassified)
+            - [Size]();-[H0]()
+        -  xcal (Unclassified)
+            - [Size]();-[H0]()
+        -  xcalc (Unclassified)
+            - [Size]();-[H0]()
+        -  xclock (X11)
+            - [Size]();-[H0]()
+        -  xhost (Unclassified)
+            - [Size]();-[H0]()
+        -  xinput (Unclassified)
+            - [Size]();-[H0]()
+        -  xmodmap (Unclassified)
+            - [Size]();-[H0]()
+        -  xpdf (Unclassified)
+            - [Size]();-[H0]()
+        -  xprop (Unclassified)
+            - [Size]();-[H0]()
+        -  xrandr (Unclassified)
+            - [Size]();-[H0]()
+        -  xrdb (Unclassified)
+            - [Size]();-[H0]()
+        -  xset (Unclassified)
+            - [Size]();-[H0]()
+        -  xsetroot (Unclassified)
+            - [Size]();-[H0]()
+        -  xterm (X11)
+            - [Size]();-[H0]()
+    -  Media and Sound Tools
+        -  alsactl (Unclassified)
+            - [Size]();-[H0]()
+        -  alsamixer (Unclassified)
+            - [Size]();-[H0]()
+        -  amidi (Unclassified)
+            - [Size]();-[H0]()
+        -  amixer (Unclassified)
+            - [Size]();-[H0]()
+        -  aplay (Unclassified)
+            - [Size]();-[H0]()
+        -  arecord (Unclassified)
+            - [Size]();-[H0]()
+        -  arecordmidi (Unclassified)
+            - [Size]();-[H0]()
+        -  cdparanoia (Unclassified)
+            - [Size]();-[H0]()
+        -  cdrdao (Unclassified)
+            - [Size]();-[H0]()
+        -  eject (Unclassified)
+            - [Size]();-[H0]()
+        -  genisoimage (Unclassified)
+            - [Size]();-[H0]()
+        -  icedax (Unclassified)
+            - [Size]();-[H0]()
+        -  pactl (Unclassified)
+            - [Size]();-[H0]()
+        -  pulseaudio (Unclassified)
+            - [Size]();-[H0]()
+        -  readom (Unclassified)
+            - [Size]();-[H0]()
+        -  volname (Unclassified)
+            - [Size]();-[H0]()
+        -  wodim (Unclassified)
+            - [Size]();-[H0]()
+    -  Marked for Review
+        -  c++filt (Unclassified)
+            - [Size]();-[H0]()
+        -  doexec (Unclassified)
+            - [Size]();-[H0]()
+        -  formail (Unclassified)
+            - [Size]();-[H0]()
+        -  from (Unclassified)
+            - [Size]();-[H0]()
+        -  ftp (Unclassified)
+            - [Size]();-[H0]()
+        -  gpgsplit (Unclassified)
+            - [Size]();-[H0]()
+        -  mountd (Unclassified)
+            - [Size]();-[H0]()
+        -  mutt (Unclassified)
+            - [Size]();-[H0]()
+        -  pine (Unclassified)
+            - [Size]();-[H0]()
+        -  ps2pdf (Unclassified)
+            - [Size]();-[H0]()
+        -  rlogin (Unclassified)
+            - [Size]();-[H0]()
+        -  rpcbind (Unclassified)
+            - [Size]();-[H0]()
+        -  rpcinfo (Unclassified)
+            - [Size]();-[H0]()
+        -  sendmail (Unclassified)
+            - [Size]();-[H0]()
+        -  tcsh (Unclassified)
+            - [Size]();-[H0]()
+        -  tkdesk (Unclassified)
+            - [Size]();-[H0]()
+        -  tunelp (Unclassified)
+            - [Size]();-[H0]()
+        -  vacation (Unclassified)
+            - [Size]();-[H0]()
+        -  workman (Unclassified)
+            - [Size]();-[H0]()
+        -  xmcpustate (Unclassified)
+            - [Size]();-[H0]()
+        -  xsysinfo (Unclassified)
+            - [Size]();-[H0]()
+    -  Deprecated or Obsolete Commands
+        -  colcrt (Unclassified)
+            - [Size]();-[H0]()
+        -  colrm (Unclassified)
+            - [Size]();-[H0]()
+        -  ctrlaltdel (Unclassified)
+            - [Size]();-[H0]()
+        -  elvtune (Unclassified)
+            - [Size]();-[H0]()
+        -  ftpd (Unclassified)
+            - [Size]();-[H0]()
+        -  imapd (Unclassified)
+            - [Size]();-[H0]()
+        -  inetd (Unclassified)
+            - [Size]();-[H0]()
+        -  lpq (Unclassified)
+            - [Size]();-[H0]()
+        -  lpr (Unclassified)
+            - [Size]();-[H0]()
+        -  lprm (Unclassified)
+            - [Size]();-[H0]()
+        -  mailq (Unclassified)
+            - [Size]();-[H0]()
+        -  rarp (Unclassified)
+            - [Size]();-[H0]()
+        -  rdistd (Unclassified)
+            - [Size]();-[H0]()
+        -  rexecd (Unclassified)
+            - [Size]();-[H0]()
+        -  rlogind (Unclassified)
+            - [Size]();-[H0]()
+        -  rmail (Unclassified)
+            - [Size]();-[H0]()
+        -  rsh (Unclassified)
+            - [Size]();-[H0]()
+        -  rshd (Unclassified)
+            - [Size]();-[H0]()
+        -  rwall (Unclassified)
+            - [Size]();-[H0]()
+        -  telnet (Unclassified)
+            - [Size]();-[H0]()
+        -  vlock (Unclassified)
+            - [Size]();-[H0]()
+        -  wall (Unclassified)
+            - [Size]();-[H0]()
+        -  write (Unclassified)
+            - [Size]();-[H0]()
+        -  xcolors (Unclassified)
+            - [Size]();-[H0]()
+        -  xlock (Unclassified)
+            - [Size]();-[H0]()
+        -  xman (X11)
+            - [Size]();-[H0]()
+        -  ypbind (Unclassified)
+            - [Size]();-[H0]()
+        -  yppasswdd (Unclassified)
+            - [Size]();-[H0]()
+        -  ypserv (Unclassified)
+            - [Size]();-[H0]()
+    -  
+    -  linux file management 11
+        - cp
+        - csplit
+        - dd file
+        - head
+        - hexdump
+        - less
+        - ln
+        - md5sum
+        - merge
+        - mkdir more
+        - mv
+        - newgrp
+        - pwd
+        - od
+        - rm
+        - rmdir
+        -  sha1sum
+            - [Size]();-[H0]()
+        - shred split
+        - tac
+        - tail
+        - tailf
+        - touch
+        - wc
+        - lsof
+    -  2. Linux Communication Commands 11
+        - dig
+        - ftp
+        - login
+        -  rsync scp
+            - [Size]();-[H0]()
+        - ssh
+        - sftp
+    -  3. Linux Commands on Comparisons 11
+        - cmp
+        - comm
+        - diff diff3
+        -  sdiff
+            - [Size]();-[H0]()
+    -  4. Linux Commands on Installation 11
+        - cpio
+        - install rdist
+        - tar
+    -  5. Linux Commands on Security and System Integrity 11
+        - badblocks
+        - chroot
+        - chkconfig
+        - halt reboot
+        -  shutdown
+            - [Size]();-[H0]()
+        - vmstat
+    -  6. Linux User Commands 11
+        - w
+        - whoami
+        - chpasswd
+        - groupadd
+        - groupdel
+        - groupmod
+        - grpck
+        - grpconv
+        - lastlog newusers
+        - pwck
+        - pwconv
+        - rusers
+        - rwall
+        - useradd
+        - userdel
+        - usermod
+        - wall id
+        - chage
+        - users
+        - ruptime
+    -  7. Linux Commands on Daemons 11
+        - apmd
+        - atd
+        - bootpd
+        - cupsd
+        - ftpd
+        - imapd
+        - klogd
+        - mountd
+        - nfsd
+        - pppd
+        - rdistd
+        - rexecd
+        - rlogind
+        - routed
+        - rpc.rusersd
+        -  rpc.statd
+            - [Size]();-[H0]()
+        - rshd rsyslogd
+        - rwhod
+        - sshd
+        - syslogd
+        - xinetd
+        - ypbind
+        - yppasswdd
+        - ypserv
+    -  8. Linux Commands on Hardware 11
+        - agetty
+        - arp
+        - fdisk
+        - hdparm kbdrate
+        - ramsize
+        -  setkeycodes
+            - [Size]();-[H0]()
+        - slattach
+    -  9. Linux Commands on Host Information 11
+    -  10. Linux Commands on Mail 11
+        - formail
+        - mailq
+        - makemap
+        - newaliases
+        -  rmail sendmail
+            - [Size]();-[H0]()
+        - from
+        - mutt
+        - pine
+    -  11. Linux Commands on Managing Filesystems 11
+        - debugfs
+        - dosfsck
+        - dump
+        - dumpe2fs
+        - e2fsck
+        - e2image
+        - e2label
+        - edquota
+        - fdformat fsck
+        - fsck.ext2
+        - mke2fs
+        - mkfs
+        - mkfs.ext2
+        - mkfs.ext3
+        - mklost+found
+        - mkraid
+        - mkswap mount
+        - quotacheck
+        - quotaon
+        - quotaoff
+        - quotastats
+        - rdev
+        - repquota
+        - resize2fs
+        - restore rootflags
+        -  setquota
+            - [Size]();-[H0]()
+        - showmount
+        - swapoff
+        - swapon
+        - sync
+        - tune2fs
+        - umount
+        - warnquota
+    -  12. Linux Commands on Managing the Kernel 11
+        - depmod
+        - lsmod
+        - modinfo modprobe
+        -  sysctl
+            - [Size]();-[H0]()
+    -  13. Linux Printing Commands 11
+        - accept
+        - lpadmin
+        - lpinfo lpmove
+        - reject
+        - tunelp
+    -  14. Process Management Commands in Linux 11
+        - fuser
+        - renice vmstat
+        - pstree
+    -  15. Linux Commands on NFS and NIS Administration 11
+        - makedbm
+        - rpcbind
+        - portmap
+        - rpcinfo
+        - ypbind
+        - ypcat
+        - ypinit
+        - ypmatch yppasswdd
+        - yppoll
+        - yppush
+        - ypserv
+        - ypset
+        - yptest
+        - ypwhich
+        - ypxfr
+    -  16. Linux Basic Commands on Media 11
+        - cdparanoia
+        - cdrdao
+        - eject
+        - genisoimage icedax
+        - readom
+        - volname
+        - wodim
+    -  17. Linux Commands on TeX, LaTeX AND TYPESETTING 11
+        - AMSTeX
+        - AMSLaTeX
+        - bibtool
+        - latex
+        - latex2html evince
+        - pdflatex
+        - pdftex
+        - TeX
+        - untex
+    -  18. Linux Basic Commands on Graphics 11
+        - cjpeg
+        - convert
+        - gimp
+        - giftrans
+        - gs
+        - gv montage
+        - scanimage
+        - tkdesk
+        - transfig
+        - xpaint
+    -  19. Linux Commands on X-WINDOWS PROGRAMS with Examples 11
+        - imake
+        - xcal
+        - xcalc
+        - xclock
+        - xcolors
+        - xhost
+        - xlock xman
+        - xmcpustate
+        - xpdf
+        - xset
+        - xsysinfo
+        - xterm
+    -  20. Linux Commands on Miscellaneous 11
+        - bc
+        - bg
+        - fg
+        - clear
+        - passwd
+        - sudo
+        - tee
+        - time
+        - nameif
+        - nfsstat
+        - nsupdate
+        - rarp
+        - rndc
+        - rpcbind
+        - rpcinfo
+        - ctrlaltdel
+        - initctl
+        - runlevel
+        - telinit
+        - uptime
+        - anacron
+        - atrun
+        - cron
+        - dmesg ldconfig
+        - logger
+        - logrotate
+        - run-parts
+        - telnetd
+        - tftpd
+        - zebra
+        - aclocal
+        - aconnect
+        - acpi
+        - acpid
+        - addr2line
+        - agetty
+        - alsactl
+        - alsamixer
+        - amidi
+        - amixer
+        - anacron
+        - aplay
+        - arecordmidi
+        - at
+        - autoconf
+        - autoheader
+        - autoscan autoupdate
+        - base64
+        - bison
+        - bzcmp
+        - bzdiff
+        - bzdiff
+        - bzmore
+        - c++
+        - c++filt
+        - cdda2wav
+        - cdparanoia
+        - cdrdao
+        - chage
+        - colcrt
+        - colrm
+        - column
+        - doexec
+        - dosfsck
+        - dvdrecord
+        - edquota
+        - elvtune
+        - enable
+        - false
+        - true fc
+        - fc
+        - fgconsole
+        - fmt
+        - fold
+        - formail
+        - tree
+        - alias
+        - unalias
+        - gpgsplit
+        - gpgv
+        - gprof
+        - ps2pdf
+        - shar
+        - tcsh
+        - wdiff
+        - workman
+        - vlock
+        - ytree
+        - zcat
+        - zdiff
+        - vacation
+    -  21. Linux Networking Commands 11
+    -  22. Linux Commands on Program Maintenance 11
+        - ctags
+        - etags
+        - gdb
+        - git
+        - gprof
+        - make
+        - nm objcopy
+        - objdump
+        - patch
+        - pmap
+        - size
+        - svn
+    -  23. Linux Commands on Searching 11
+        - apropos
+        - egrep
+        - fgrep
+        - find
+        - grep
+        - locate look
+        - strings
+        - updatedb
+        - whereis
+        - which
+    -  24. Linux Shell Commands 11
+        - basename
+        - echo
+        - envsubst
+        - expr
+        - mktemp printf
+        - sleep
+        - test
+        - xargs
+    -  25. Linux Storage Commands with Examples 11
+        - bunzip2
+        - bzip2
+        - gunzip gzip
+        - zforce
+    -  26. Linux Commands on System Status 11
+        - at
+        - atq
+        - atrm
+        - crontab
+        - date
+        - df
+        - du
+        - env
+        - finger
+        - free
+        - hostname kill
+        - killall
+        - printenv
+        - ps
+        - dstat
+        - quota
+        - stat
+        - stty
+        - top
+        - tty
+        - who
+    -  27. Linux Text Processing Commands 11
+        - cut
+        - emacs
+        - ex
+        - expand
+        - unexpand
+        - fmt
+        - fold
+        - gawk
+        - groff
+        - gs ispell
+        - join
+        - paste
+        - rev
+        - sed
+        - sort
+        - tr
+        - uniq
+        - nl
+        - vim
+    -  28. Linux Programming Commands 11
+        - cpp
+        - flex
+        - ldd make
+        - ranlib
+    -  29. Linux Basic Commands on Clocks 11
+        - hwclock 
+        - rdate
+- Cybersecurity Resources
+    - Tryhackme
+    - Cyberdefenders
+    - Blue team level one
+    - Hackthebox
+    - Letsdefend
+    - Xintra Labs
+    - TCM Security
+    - CompTIA
+    - Microsoft
+    - 
+    - testout $4 July 4
+    - Red Hat Academy
+- set up vm
+    - red hat enterprise linux
+    - suse linux enterprise server
+    - debian
+    - kali
+    - ubuntu lts 
+- yt playlist
+    - 001.General References
+        - a reference work is a compendium of information, usually of a specific type, compiled in a book for ease of reference.
+    - 002.Culture and the Arts
+        - in general, culture refers to human activity; different definitions of culture reflect different theories for understanding, or criteria for valuing human activity.
+        - art is the expression of creativity or imagination.
+    - 003.Geography and Places
+        - is the study of the earth and its features, inhabitants, and phenomena.
+    - 004.Health and Fitness
+        - health is the level of functional or metabolic efficiency of a living organism.
+    - 005.History and Events
+        - history is the interpretation of past events, societies and civilizations.
+    - 006.Human Activities
+        - are the various actions for recreation, living, or necessity done by people.
+    - 007.Mathematics and Logic
+        - mathematics is the study of topics such as quantity (number), structure, space, and change.
+        - logic is the study of the principles and criteria of valid inference and demonstration.
+    - 008.Natural and Physical Sciences
+        - Natural Science refer to a rational approach to the study of the universe
+        - Physical Science study of non-living systems
+    - 009.People and Self
+        - 
+    - 010.Philosophy and Thinking
+        - Thought or thinking is a mental process which allows beings to model the world, and so to deal with it effectively according to their goals, plans, ends and desires.
+    - 011.Religion and Belief Systems
+    - 012.Society and Social Sciences
+    - 013.Technology and Applied Sciences
+        - 13.Information Technology 664
+            - 13.Browser 16
+            - 13.Sites 12
+            - 13.search 7
+            - 13.DarkWeb 7
+            - 13.SE:Workflow 10
+            - 13.se-diagram 24
+            - 13.SE:Interview 62
+            - 13.Software 65
+            - 13.Privacy 36
+            - 13.IT.Cloud 38
+            - 13.Windows 36
+            - 13.IT.Networking 116
+            - 13.IT.Git 147
+            - 13.IT.Devops 145
+            - 13.IT.Certification 68
+        - 13.Linux 721
+            - 13.lnx-fedora 11
+            - 13.lnx-gaming 10
+            - 13.Wayland 18
+            - 13.LNX:Virt 17
+            - 13.LNX:Gentoo 28
+            - 13.LNX:Bspwm 28
+            - 13.LNX:Cli  941
+            - 13.LNX:Apps 77
+            - 13.LNX:Dotfiles 55
+            - 13.Ansible 51
+            - 13.LNX-Text-Processing 49
+            - 13.LNX:Dwm 46
+            - 13.LNX:Arch 31
+            - 13.LNX:Guix 31
+            - 13.LNX:Nixos 31
+        - 13.Software Engineering 881 168
+            - 13.SE:TypeScript 22
+            - 13.JS:Express.js 21
+            - 13.SE:Rust 73
+            - 13.SE-Cpp 36
+            - 13.Perl 32
+            - 13.se:java 28
+            - 13.SE:Clang 696
+            - 13.SE:Web-Development 607
+            - 13.Python 515
+            - 13.SE:Javascript 355
+            - 13.SE:HTML-CSS 294
+            - 13.JS:React 161
+            - 13.DB:SQL 108
+            - 13.SE:Portfolio-Projects 126
+            - 13.SE:Lisp 107
+            - 13.SE:Golang 106
+            - 13.SE:Database 97
+            - 13.SE:Assembly 46
+            - 13.SE:Regex 41
+            - 13.SE:Functional 40
+            - 13.SE:Debugger 54
+            - 13.PHP 46
+        - 13.Text Editor 76
+            - 13.Markdown 12
+            - 13.TE:Vim 708
+            - 13.TE:Emacs 306
+        - 13.Computer Science 305
+            - 13.CS:DSA 602
+            - 13.Ai 192
+            - 13.Data Science 85
+        - 13.CyberSecurity 568
+            - 13.Hacking 545
+        - 13.Computer Engineering 505
+            - 13.CE:Audio 14
+            - 13.CE:Mouse 11
+            - 13.CE:Mobile 181
+            - 13.CE:Keyboard 103
+            - 13.CE:iPad 53
+        - 13.Gear 481
+            - 13.EDC 13
+        - 13.Engineering 137
+            - 13.CE:3d-Printing 10
+        - 13.Vehicle 80
+            - 13.Driving 371
+        - 13.ITAS.Books 5
+    - 
+- Pacman #linux
+    - arch wiki
+        - pacman 
+        - pacman/rosetta
+    - update mirrors
+        - reflector
+    - -S
+    - -Syu
+    - -Syyu
+    - -R
+    - -Rns
+    - -Ss
+    - -Q
+    - -Qs
+    - -Qq
+    - -Qi
+    - -Qe
+    - -Ql
+    - -Qdt
+        - -Qqdt | -Rns -
+    - -Scc
+    - 
+    - Package
+        - downgrade
+        - paccache-hook
+    - 
+    - 
+    - 
+    - 
+- Security Certification Roadmap
+    - Communication and Network Security
+    - IAM
+    - Security Architecture and Engineering
+    - Asset Security
+    - Security and Risk Management 
+    - Security Assessment and Testing
+    - Software Security
+    - Security Operations 
+- linux directories and files
+    - {{/}} - Root of the entire filesystem.
+    - {{/boot}} - Stores the Linux kernel, GRUB files, and initramfs.
+    - {{/etc}} - Contains system-wide configuration files.
+    - {{/home}} - User home directories.
+    - {{/root}} - Home directory for the root user.
+    - {{/var}} - Variable data like logs, mail, and spool files.
+    - {{/tmp}} - Temporary files cleared on reboot.
+    - {{/usr}} - Secondary hierarchy for user utilities and applications.
+    - {{/opt}} - Optional software and third-party packages.
+    - {{/srv}} - Data provided by services like FTP or web servers.
+    - {{/dev}} - Virtual device files for hardware and pseudo-devices.
+    - {{/proc}} - Virtual files exposing process and kernel information.
+    - {{/sys}} - Kernel object and device configuration interface.
+    - {{/run}} - Stores transient runtime data for services and processes.
+    - {{/lib}}, {{/lib64}} - Essential shared libraries for binaries in /bin and /sbin.
+    - name 
+    - {{/bin}} - Binary (essential user binaries)
+    - {{/boot}} - Boot (boot loader files)
+    - {{/dev}} - Device (hardware device files)
+    - {{/etc}} - Et cetera (system configuration files — legacy Unix name)
+    - {{/home}} - Home (user home directories)
+    - {{/lib}} - Library (essential shared libraries)
+    - {{/lib64}} - Library 64-bit (64-bit shared libraries)
+    - {{/mnt}} - Mount (temporary mount point)
+    - {{/opt}} - Optional (add-on application software packages)
+    - {{/proc}} - Process (virtual filesystem for processes and kernel info)
+    - {{/root}} - Root user home (not the filesystem root)
+    - {{/run}} - Runtime (volatile runtime data)
+    - {{/sbin}} - System binary (essential system binaries)
+    - {{/srv}} - Service (data for services like HTTP, FTP)
+    - {{/sys}} - System (kernel and hardware interface)
+    - {{/tmp}} - Temporary (temporary files, cleared on reboot)
+    - {{/usr}} - Unix System Resources (secondary hierarchy for user programs)
+    - {{/var}} - Variable (variable data like logs, mail, etc.)
+- it glossary
+    - itf
+    - itf acr
+    - a+
+    - net+
+    - security+
+    - 
+- Tech+ Glossary
+    - Core Physical & Hardware Concepts
+    - {{AC (Alternating Current)}} - Reversing electrical current flow
+    - {{DC (Direct Current)}} - One-directional electrical current
+    - {{Electrical signal}} - Voltage level representing data
+    - {{Transistor}} - Electronic switch for binary logic
+    - {{Logic gate}} - Performs binary operations (AND, OR)
+    - {{Power supply}} (PSU) - Converts AC to DC power
+    - {{Heat sink}} - Dissipates heat from components
+    - {{Bit}} - Smallest data unit: 0 or 1
+    - {{Byte}} - Group of 8 bits
+    - {{Char}} - Single character of text
+    - {{Integer}} - Whole number value
+    - {{Float}} - Decimal/fractional number
+    - {{Boolean}} - True or false value
+    - {{AIO (All-in-One)}} - Combined PC with screen/components
+    - {{ARM (Advanced RISC Machines)}} - Efficient CPU architecture for devices
+    - {{CPU (Central Processing Unit)}} - Executes program instructions
+    - {{GPU (Graphics Processing Unit)}} - Renders images, video, and animation
+    - {{RAM (Random-access Memory)}} - Temporary working system memory
+    - {{ROM (Read-only Memory)}} - Permanent non-editable memory
+    - {{vCPU (Virtual CPU)}} - Software-emulated processor core
+    - {{vRAM (Virtual RAM)}} - Emulated volatile memory for VMs
+    - {{HDD (Hard Disk Drive)}} - Magnetic storage with moving parts
+    - {{SSD (Solid State Drive)}} - Fast flash-based data storage
+    - {{vHDD (Virtual Hard Drive)}} - Software-based storage disk
+    - {{Flash drive}} - Portable USB solid-state storage
+    - {{SD card (Secure Digital Card)}} - Small removable flash memory
+    - {{DIMM (Dual Inline Memory Module)}} - RAM stick for motherboards
+    - {{SATA (Serial ATA)}} - Interface for storage devices
+    - {{NVMe (Non-Volatile Memory Express)}} - High-speed PCIe SSD protocol
+    - {{SFP (Small Form-factor Pluggable)}} - Pluggable fiber/Ethernet connector module
+    - {{eSATA (External SATA)}} - External storage connection interface
+    - {{Motherboard}} - Main board connecting all components
+    - {{NIC (Network Interface Card)}} - Hardware enabling network connectivity
+    - {{vNIC (Virtual NIC)}} - Software-defined network interface
+    - {{USB (Universal Serial Bus)}} - Universal data/power port
+    - {{USB-A}} - Standard rectangular USB connector
+    - {{USB-C}} - Reversible, multi-use USB connector
+    - {{Thunderbolt}} - High-speed data/display cable interface
+    - {{HDMI (High-Definition Multimedia Interface)}} - Audio-video output interface
+    - {{DVI (Digital Visual Interface)}} - Digital video output port
+    - {{VGA (Video Graphics Array)}} - Analog video display interface
+    - {{RJ (Registered Jack)}} - Telecom/data cable connector standard
+    - {{RJ11}} - Phone line connector
+    - {{RJ45}} - Ethernet cable connector
+    - {{Cable}} - Physical wired data connection
+    - {{Wireless}} - Radio-based data transmission method
+    - {{Bluetooth}} - Short-range wireless communication
+    - {{NFC (Near Field Communication)}} - Contact-based wireless data transfer
+    - {{IR (Infrared)}} - Light-based short-range communication
+    - {{Monitor}} - Displays system video output
+    - {{Keyboard}} - Inputs typed text/data
+    - {{Mouse}} - Controls on-screen pointer
+    - {{Speakers}} - Outputs sound from device
+    - {{Scanner}} - Converts images to digital format
+    - {{Printer}} - Produces physical document output
+    - {{Projector}} - Projects video onto surface
+    - {{Webcam}} - Captures video input
+    - {{UPS (Uninterruptible Power Supply)}} - Backup power during outage
+    - 
+    - 
+- programming lang
+    - bash
+    - go
+    - rust
+    - lua
+    - perl
+    - 
+    - Python
+        - C C++
+        - PHP
+        - Javascript
+        - Powershell
+        - Bash
+        - Assembly
+        - Java
+        - 
+    - Web Hacking
+        - HTML
+        - Javascript
+        - PHP
+        - SQL
+    - Exploit Writing
+        - Python
+        - Ruby
+        - Perl
+- bash note
+    - create the shebang that goes on the first line of every Bash script→#!/bin/bash
+    - Create alternative (and better) shebang→#!/usr/bin/env bash
+    - Create comment→#
+    - chmod +x script.sh←Make **script** executable
+    - ./script.sh←Execute **script** 
+    - $#←Stores the number of arguments passed to the Bash script
+    - $1, $2, $3←Variables that store the values passed as arguments to the Bash script
+    - exit←Exit from the Bash script, optionally add an error code
+    - $( )←Execute a command inside of a subshell
+    - sleep←Pause for a specified number of seconds, minutes, hours, or days
+    - arithmetic expression `((...))` 
+        - if the value the expression is non-zero, the return status is 0; otherwise the return status is 1.
+    - conditional expression `[[ ... ]]` 
+    - 
+    - Quoting
+        - create string with no expansion→'string'
+        - create string with expansion→"string"
+    - Variables
+        - assign **val** to variable **var**→var=val
+        - assign {{1}} to **var**→declare -i var ; var=1
+        - **append** to var→var+=val
+        - assign foo and bar to **array** var→var=(foo bar)
+        - append baz and qux to array var→var+=(baz qux)
+        - print var→echo $var
+        - print whole array var→echo ${var[*]}
+        - check if **var** is set if not **use** val→${var:-val}
+            - [**default value parameter expansion**](https://wiki.bash-hackers.org/syntax/pe#use_a_default_value).  
+        - check if **var** is set if not **use** and **assign** val→${var:=val}
+        - 
+    - Command Parameters
+        - Command parameters, also known as arguments, are used when invoking a Bash script.
+        - $0←Name of the script itself
+        - $1 ... $9←Parameter 1 ... 9
+        - ${10} ... ${nn} Positional parameter 10 or greater
+        - $* Expands to the positional parameters, starting from one
+        - $- Current options
+        - $_ Contains the absolute file name of the shell or script being executed
+        - $$←Process id of the shell
+        - $? Exit status of the most recently executed command
+        - $@←All arguments as separate words
+        - $#←Number of arguments
+        - $! PID of most recently backgrounded process
+    - Conditional statements
+        - Conditional statements with if or case allow for us to check if a certain condition is true or not. Depending on the answer, the script can proceed different ways.
+        - if then fi←Test a condition and execute the then clause if it is true
+        - if then else fi←Execute the then clause if the condition is true, otherwise execute the else clause
+        - if then elif else fi←Test multiple conditions and execute whichever clause is true
+            - {{if condition; then}}
+  {{statements}}
+{{elif}}
+  statements
+{{else}}
+  statements
+{{fi}} 
+        - For case statements it is best to just see a basic example:
+            - #!/bin/bash
+            - 
+            - day=$(date +"%a")
+            - 
+            - case $day in
+            - 
+                - Mon | Tue | Wed | Thu | Fri)
+                    - echo "today is a weekday"
+                    - →
+                    - 
+                - Sat | Sun)
+                    - echo "today is the weekend"
+                    - →
+                    - 
+                - )
+                    - echo "date not recognized"
+                    - →
+            - esac
+        - Basic if example script:
+            - #!/bin/bash
+            - if [ $1 -eq $2 ]; then
+                - echo "they are equal"
+            - else
+                - echo "they are NOT equal"
+            - fi
+    - Bash Loops
+        - Bash loops allow the script to continue executing a set of instructions as long as a condition continues to evaluate to true.
+        - for do done←Continue to loop for a predetermined number of lines, files, etc
+            - C-like for loop
+{{for ((i = 0; i < 10; i}}{{++)); do}}
+  echo "$i"
+{{done}} 
+        - until do done←Continue to loop until a certain condition is met
+        - while do done←Continue to loop as long as a certain condition is true
+        - break←Exit the loop and continue to the next part of the Bash script
+        - continue←Exit the current iteration of the loop but continue to run the loop
+    - Read User Input
+        - Prompt the user for information to enter by using read command:
+        - 
+        - #!/bin/bash
+        - 
+        - read -p "What is your name? " name
+        - 
+        - echo "Enjoy this tutorial, $name"
+        - Parse input given as arguments to the Bash script:
+        - 
+        - #!/bin/bash
+        - 
+        - if [ $# -ne 2 ]; then
+            - echo "wrong number of arguments entered. please enter two."
+            - exit 1
+        - fi
+        - 
+        - echo You have entered $1 and $2.
+    - Arithmetic Operators
+        - Arithmetic operators in Bash give us the ability to do things like addition, subtraction, multiplication, division, and other basic arithmetic inside of a Bash script.
+        - +←Addition
+        - -←Subtraction
+        - *←Multiplication
+        - /←Division
+        - %←Modulus
+        - **←Raise to a power
+        - ((i++))←Increment a variable
+        - ((i--))←Decrement a variable
+    - Arithmetic Conditional Operators
+        - Arithmetic conditional operators are usually used on two numbers to determine if a certain condition is true or false.
+        - lt←less then <
+        - le←less then or equal ⇐
+        - eq←equal =
+        - ne←not equal ≠
+        - ge←greater then or equal ≥
+        - gt←greater then >
+        - Note that the operators in the left column will work with single brackets [ ] or double brackets [[ ]], whereas the operators in the right column will work only with double brackets.
+    - String Comparison Operators
+        - We can use string comparison operators to determine if a string is empty or not, and to check if a string is equal, less, or greater in length to another string.
+        - 
+        - = equal
+        - != not equal
+        - < less then
+        - > greater then
+        - -n s1←string s1 is not empty
+        - -z s1←string s1 is empty
+    - Bash File Testing Operators
+        - In Bash, we can test to see different characteristics about a file or directory.
+        - 
+        - b filename Block special file
+        - c filename Special character file
+        - d directoryname Check for directory existence
+        - e filename Check for file existence
+        - f filename Check for regular file existence not a directory
+        - G filename Check if file exists and is owned by effective group ID.
+        - g filename true if file exists and is set-group-id.
+        - k filename Sticky bit
+        - L filename Symbolic link
+        - O filename True if file exists and is owned by the effective user id.
+        - r filename Check if file is a readable
+        - S filename Check if file is socket
+        - s filename Check if file is nonzero size
+        - u filename Check if file set-ser-id bit is set
+        - w filename Check if file is writable
+        - x filename Check if file is executable
+    - Boolean Operators
+        - Boolean operators include and &&, or || and not equal to !. These operators allow us to test if two or more conditions are true or not.
+        - &&←Logical AND operator
+        - ||←Logical OR operator
+        - !←NOT equal to operator
+- go idioms
+    - 1 Print Hello
+        - Print a literal string on standard output
+        - {{import "fmt"}}  first line 
+{{fmt.Println("Hello")}} print hello
+    - 2 Print Hello 10 times
+        - Loop to execute some code a constant number of times
+        - import "fmt"
+
+{{for i := 0; i < 10; i++}} {
+     fmt.Println("Hello")
+}
+        - Alternative implementation: 1
+        - import "fmt"
+        - import "strings"
+        - fmt.Println(strings.Repeat("Hello\n", 10))
+        - Alternative implementation: 2
+        - import "fmt"
+        - for range 10 {
+            - fmt.Println("Hello")
+        - }
+    - 3
+        - Create a procedure
+        - Like a function which doesn't return any value, thus has only side effects (e.g. Print to standard output)
+        - import "fmt"
+        - func finish(name string) {
+            - fmt.Println("My job here is done. Good bye " + name)
+        - }
+        - There is no return type in the signature, before the { .
+        - Alternative implementation:
+        - import "fmt"
+        - finish := func(name string) {
+            - fmt.Println("My job here is done. Good bye " + name)
+        - }
+        - This is a closure.
+        - 
+        - finish is a variable of type func(string).
+    - 4
+        - Create a function
+        - Create a function which returns the square of an integer
+        - func square(x int) int {
+            - return x*x
+        - }
+        - The return type is after the parameter list
+    - 5
+        - Create a 2D Point data structure
+        - Declare a container type for two floating-point numbers x and y
+        - type Point struct {
+            - x, y float64
+        - }
+    - 6
+        - Iterate over list values
+        - Do something with each item x of the list (or array) items, regardless indexes.
+        - for _, x := range items {
+            - doSomething(x)
+        - }
+        - You have to explicitly ignore the index loop variable, with the blank identifier _
+    - 7
+        - Iterate over list indexes and values
+        - Print each index i with its value x from an array-like collection items
+        - import "fmt"
+        - for i, x := range items {
+            - fmt.Printf("Item %d = %v \n", i, x)
+        - }
+        - The range clause gives you index i and value x at the same time as loop variables
+    - 8
+        - Create a map (associative array)
+        - Create a new map object x, and provide some (key, value) pairs as initial content.
+        - x := map[string]int {"one": 1, "two": 2}
+    - 9
+        - Create a Binary Tree data structure
+        - The structure must be recursive because left child and right child are binary trees too. A node has access to children nodes, but not to its parent.
+        - type BinTree struct {
+            - Label       valueType
+            - Left, Right *BinTree
+        - }
+        - Alternative implementation:
+        - type BinTree[L any] struct {
+            - Label       L
+            - Left, Right *BinTree[L]
+        - }
+        - The type parameter L is for arbitrary node label data
+    - 10
+        - Shuffle a list
+        - Generate a random permutation of the elements of list x
+        - import "math/rand"
+        - for i := range x {
+            - j := rand.Intn(i + 1)
+            - x[i], x[j] = x[j], x[i]
+        - }
+        - This alters the slice content.
+        - This requires no extra allocation.
+        - Alternative implementation:
+        - import "math/rand"
+        - y := make([]T, len(x))
+        - perm := rand.Perm(len(x))
+        - for i, v := range perm {
+            - y[v] = x[i]
+        - }
+        - This allocates a temporary slice of int, and a new destination slice y of type T.
+        - x is left unchanged.
+        - Alternative implementation:
+        - import "math/rand"
+        - rand.Shuffle(len(x), func(i, j int) {
+            - x[i], x[j] = x[j], x[i]
+        - })
+        - Last argument is a swap func.
+        - 
+        - This works in Go ≥ 1.10
+        - Alternative implementation:
+        - import "math/rand"
+        - for i := len(x) - 1; i > 0; i-- {
+            - j := rand.Intn(i + 1)
+            - x[i], x[j] = x[j], x[i]
+        - }
+        - Alternative implementation:
+        - import "math/rand"
+        - func shuffle[T any](x []T) {
+            - rand.Shuffle(len(x), func(i, j int) {
+                - x[i], x[j] = x[j], x[i]
+            - })
+        - }
+        - This helper function is generic, it works for any type parameter T
+    - 11
+    - Pick a random element from a list
+    - The list x must be non-empty.
+    - import "math/rand"
+    - x[rand.Intn(len(x))]
+    - Alternative implementation:
+    - import "math/rand"
+    - func pickT(x []T) T {
+        - return x[rand.Intn(len(x))]
+    - }
+    - Without generics: if you decide to implement pickT, you will have to write it separately for each desired type T.
+    - Alternative implementation:
+    - func pick[T any](x []T) T {
+        - return x[rand.Intn(len(x))]
+    - }
+    - This generic function works for any type parameter T
+    - 12
+    - Check if list contains a value
+    - Check if the list contains the value x.
+    - list is an iterable finite container.
+    - func Contains(list []T, x T) bool {
+        - for _, item := range list {
+            - if item―x {
+                - return true
+            - }
+        - }
+        - return false
+    - }
+    - This func works only for one type T.
+    - 
+    - You may use any type T compatible with operator→
+    - Alternative implementation:
+    - import "slices"
+    - slices.Contains(list, x)
+    - This generic func slices.Contains works for all slice types
+    - 13
+    - Iterate over map keys and values
+    - Access each key k with its value x from an associative array mymap, and print them.
+    - import "fmt"
+    - for k, x := range mymap {
+        - fmt.Println("Key =", k, ", Value =", x)
+    - }
+    - Do not rely on the order of the traversal ! The order is undefined and is intentionaly randomized by the Go runtime.
+    - 14
+    - Pick uniformly a random floating point number in [a..b)
+    - Pick a random number greater than or equals to a, strictly inferior to b. Precondition : a < b.
+    - import "math/rand/v2"
+    - func pick(a, b  float64)  float64 {
+        - return a + (rand.Float64() * (b-a))
+    - }
+    - Note that the package math/rand is not crypto-secure.
+    - 15
+    - Pick uniformly a random integer in [a..b]
+    - Pick a random integer greater than or equals to a, inferior or equals to b. Precondition : a < b.
+    - import "math/rand"
+    - func pick(a,b int) int {
+        - return a + rand.Intn(b-a+1)
+    - }
+    - (b-a+1) is needed to have upper bound b included.
+    - Note that the package math/rand is not crypto-secure.
+    - Alternative implementation:
+    - import "math/rand/v2"
+    - func pick(a, b int) int {
+        - return a + rand.IntN(b-a+1)
+    - }
+    - Note that the package math/rand/v2 is not crypto-secure.
+    - 16
+    - Depth-first traversal of a binary tree
+    - Call a function f on every node of binary tree bt, in depth-first infix order
+    - func (bt *BinTree) Dfs(f func(*BinTree)) {
+        - if bt―nil {
+            - return
+        - }
+        - bt.Left.Dfs(f)
+        - f(bt)
+        - bt.Right.Dfs(f)
+    - }
+    - The function f is a parameter of the traversal method Dfs.
+    - It's legit to call a method on a nil receiver, and useful to make code more concise with less checks for nil.
+    - Alternative implementation:
+    - func (bt *BinTree[L]) Dfs(f func(*BinTree[L])) {
+        - if bt―nil {
+            - return
+        - }
+        - bt.Left.Dfs(f)
+        - f(bt)
+        - bt.Right.Dfs(f)
+    - }
+    - The type parameter L is for arbitrary node label data
+    - 17
+    - Create a Tree data structure
+    - The structure must be recursive. A node may have zero or more children. A node has access to its children nodes, but not to its parent.
+    - type Tree struct {
+        - Key keyType
+        - Deco valueType
+        - Children []*Tree
+    - }
+    - keyType should be easily comparable.
+    - valueType is a type of value associated with current node.
+    - Children is a slice of pointers.
+    - 
+    - Note that in Go you can call methods of pointer type *Tree even on a nil receiver (an empty tree).
+    - Alternative implementation:
+    - type Tree[L any] struct {
+        - Label    L
+        - Children []*Tree[L]
+    - }
+    - The type parameter L is for arbitrary node label data.
+    - 
+    - A nil *Tree denotes the empty tree.
+    - 18
+    - Depth-first traversal of a tree
+    - Call a function f on every node of a tree, in depth-first prefix order
+    - func (t *Tree) Dfs(f func(*Tree)) {
+        - if t―nil {
+            - return
+        - }
+        - f(t)
+        - for _, child := range t.Children {
+            - child.Dfs(f)
+        - }
+    - }
+    - The function f is a parameter of the traversal method Dfs .
+    - The traversal is prefix because f is applied to current node first.
+    - Alternative implementation:
+    - func (t *Tree[L]) Dfs(f func(*Tree[L])) {
+        - if t―nil {
+            - return
+        - }
+        - f(t)
+        - for _, child := range t.Children {
+            - child.Dfs(f)
+        - }
+    - }
+    - The type parameter L is for arbitrary node label data
+    - 19
+    - Reverse a list
+    - Reverse the order of the elements of the list x.
+    - This may reverse "in-place" and destroy the original ordering.
+    - for i, j := 0, len(x)-1; i < j; i, j = i+1, j-1 {
+        - x[i], x[j] = x[j], x[i]
+    - }
+    - This loop reverts "in-place" (in the original list, not creating a new one).
+    - Alternative implementation:
+    - func reverse[T any](x []T) {
+        - for i, j := 0, len(x)-1; i < j; i, j = i+1, j-1 {
+            - x[i], x[j] = x[j], x[i]
+        - }
+    - }
+    - This generic function works for any type parameter T.
+    - 
+    - It operates in-place.
+    - Alternative implementation:
+    - import "slices"
+    - slices.Reverse(x)
+    - 20
+    - Return two values
+    - Implement a function search which looks for item x in a 2D matrix m.
+    - Return indices i, j of the matching cell.
+    - Think of the most idiomatic way in the language to return the two values at the same time.
+    - func search(m [][]int, x int) (bool, int, int) {
+        - for i := range m {
+            - for j, v := range m[i] {
+                - if v―x {
+                    - return true, i, j
+                - }
+            - }
+        - }
+        - return false, 0, 0
+    - }
+    - Go functions may return multiple values.
+    - This function returns 3 values : one to indicate if x was found or not, and two for the coordinates.
+    - 21
+    - Swap values
+    - Swap the values of the variables a and b
+    - a, b = b, a
+    - 22
+    - Convert string to integer
+    - Extract the integer value i from its string representation s (in radix 10)
+    - import "strconv"
+    - i, err  := strconv.Atoi(s)
+    - Atoi(s) is shorthand for ParseInt(s, 10, 0). It yields type int.
+    - Alternative implementation:
+    - import "strconv"
+    - i, err := strconv.ParseInt(s, 10, 0)
+    - Radix 10. The third argument 0 means "fit in implementation-specific int". But the result type is always int64.
+    - Don't ignore the potential error err !
+    - 23
+    - Convert real number to string with 2 decimal places
+    - Given a real number x, create its string representation s with 2 decimal digits following the dot.
+    - import "fmt"
+    - s := fmt.Sprintf("%.2f", x)
+    - 24
+    - Assign to string the japanese word ネコ
+    - Declare a new string s and initialize it with the literal value "ネコ" (which means "cat" in japanese)
+    - s := "ネコ"
+    - UTF-8 literals are valid in Go.
+    - 
+    - Also the source code in Go is defined to be UTF-8 text; No other representation is allowed.
+    - 25
+    - Send a value to another thread
+    - Share the string value "Alan" with an existing running process which will then display "Hello, Alan"
+    - import "fmt"
+    - go func() {
+        - v := <-ch
+        - fmt.Printf("Hello, %v\n", v)
+    - }()
+    - 
+    - ch <- "Alan"
+    - The receiver goroutine blocks reading the chan string named ch.
+    - The current goroutine sends the value to ch.
+    - A goroutine is like a lightweight green thread.
+    - 26
+    - Create a 2-dimensional array
+    - Declare and initialize a matrix x having m rows and n columns, containing real numbers.
+    - const m, n = 3, 4
+    - var x [m][n]float64
+    - m, n must be constant for this syntax to be valid.
+    - Here x is of type [3][4]float64, it is not a slice.
+    - Alternative implementation:
+    - func make2D(m, n int) [][]float64 {
+        - buf := make([]float64, m*n)
+        - 
+        - x := make([][]float64, m)
+        - for i := range x {
+            - x[i] = buf[:n:n]
+            - buf = buf[n:]
+        - }
+        - return x
+    - }
+    - This works even when m, n are not compile-time constants.
+    - This code allocates one big slice for the numbers, plus one slice for x itself.
+    - The same function would have to be rewritten, for types other than float64.
+    - Alternative implementation:
+    - func make2D[T any](m, n int) [][]T {
+        - buf := make([]T, m*n)
+        - 
+        - x := make([][]T, m)
+        - for i := range x {
+            - x[i] = buf[:n:n]
+            - buf = buf[n:]
+        - }
+        - return x
+    - }
+    - This generic func works for any type parameter T.
+    - m, n do not need to be compile-time constants.
+    - This code allocates one big slice for the elements, plus one slice for x itself.
+    - 27
+    - Create a 3-dimensional array
+    - Declare and initialize a 3D array x, having dimensions boundaries m, n, p, and containing real numbers.
+    - const m, n, p = 2, 2, 3
+    - var x [m][n][p]float64
+    - m, n, p must be constant for this syntax to be valid.
+    - Here x is of type [2][2][3]float64, it is not a slice.
+    - Alternative implementation:
+    - func make3D(m, n, p int) [][][]float64 {
+        - buf := make([]float64, m*n*p)
+        - 
+        - x := make([][][]float64, m)
+        - for i := range x {
+            - x[i] = make([][]float64, n)
+            - for j := range x[i] {
+                - x[i][j] = buf[:p:p]
+                - buf = buf[p:]
+            - }
+        - }
+        - return x
+    - }
+    - This works even when m, n, p are not compile-time constants.
+    - This code allocates one big slice for the numbers, then a few slices for intermediate dimensions.
+    - To same function would be rewritten, for types other than float64.
+    - Alternative implementation:
+    - func make3D[T any](m, n, p int) [][][]T {
+        - buf := make([]T, m*n*p)
+        - 
+        - x := make([][][]T, m)
+        - for i := range x {
+            - x[i] = make([][]T, n)
+            - for j := range x[i] {
+                - x[i][j] = buf[:p:p]
+                - buf = buf[p:]
+            - }
+        - }
+        - return x
+    - }
+    - This generic func works for any type parameter T.
+    - m, n, p do not need to be compile-time constants.
+    - This code allocates one big slice for the elements, then a few slices for intermediate dimensions.
+    - 28
+    - Sort by a property
+    - Sort the elements of the list (or array-like collection) items in ascending order of x.p, where p is a field of the type Item of the objects in items.
+    - import "sort"
+    - type ItemPSorter []Item
+    - func (s ItemPSorter) Len() int{ return len(s) }
+    - func (s ItemPSorter) Less(i,j int) bool{ return s[i].p<s[j].p }
+    - func (s ItemPSorter) Swap(i,j int) { s[i],s[j] = s[j],s[i] }
+    - 
+    - func sortItems(items []Item){
+        - sorter := ItemPSorter(items)
+        - sort.Sort(sorter)
+    - }
+    - The standard way is to declare a new type ItemSorter as a slice of Item, and carefully implement method Less.
+    - Alternative implementation:
+    - import "sort"
+    - less := func(i, j int) bool {
+        - return items[i].p < items[j].p
+    - }
+    - sort.Slice(items, less)
+    - This is the diomatic way since Go 1.8.
+    - Alternative implementation:
+    - import "slices"
+    - import "cmp"
+    - compare := func(a, b Item) int {
+        - return cmp.Compare(a.p, b.p)
+    - }
+    - slices.SortFunc(items, compare)
+    - SortFunc is generic and type-safe at compile time.
+    - 29
+    - Remove item from list, by its index
+    - Remove i-th item from list items.
+    - This will alter the original list or return a new list, depending on which is more idiomatic.
+    - Note that in most languages, the smallest valid value for i is 0.
+    - items = append(items[:i], items[i+1:]...)
+    - If items elements are pointers or structs with pointers, then refer to the SliceTricks page to avoid memory leaks.
+    - Alternative implementation:
+    - copy(items[i:], items[i+1:])
+    - items[len(items)-1] = nil
+    - items = items[:len(items)-1]
+    - This code is for pointer value type, and has no memory leak.
+    - Alternative implementation:
+    - import "slices"
+    - items = slices.Delete(items, i, i+1)
+    - This generic func slices.Delete works for all slice types.
+    - 30
+    - Parallelize execution of 1000 independent tasks
+    - Launch the concurrent execution of the procedure f with parameter i from 1 to 1000.
+    - Tasks are independent and f(i) doesn't return any value.
+    - Tasks need not run all at the same time, so you may use a pool.
+    - for i := range 1_000 {
+        - go f(i)
+    - }
+    - 1,000 goroutines
+    - 31
+    - Recursive factorial (simple)
+    - Create the recursive function f which returns the factorial of the non-negative integer i, calculated from f(i-1)
+    - func f(i int) int {
+        - if i―0 {
+            - return 1
+        - }
+        - return i * f(i-1)
+    - }
+    - 32
+    - Integer exponentiation by squaring
+    - Create function exp which calculates (fast) the value x power n.
+    - x and n are non-negative integers.
+    - func exp(x, n int) int {
+        - switch {
+        - case n―0:
+            - return 1
+        - case n―1:
+            - return x
+        - case n%2―0:
+            - return exp(x*x, n/2)
+        - default:
+            - return x * exp(x*x, (n-1)/2)
+        - }
+    - }
+    - Warning: type int quickly overflows
+    - 33
+    - Atomically read and update variable
+    - Assign to the variable x the new value f(x), making sure that no other thread may modify x between the read and the write.
+    - import "sync"
+    - var lock sync.Mutex
+    - 
+    - lock.Lock()
+    - x = f(x)
+    - lock.Unlock()
+    - You need to lock whenever accessing x.
+    - 34
+    - Create a set of objects
+    - Declare and initialize a set x containing unique objects of type T.
+    - x := make(map[T]bool)
+    - There is no built-in Set type, but you can create a Map with key type T and boolean value (which will be ignored).
+    - Alternative implementation:
+    - x := make(map[T]struct{})
+    - The struct{} type is space efficient because it occupies zero bytes in memory.
+    - 35
+    - First-class function : compose
+    - Implement a function compose (A -> C) with parameters f (A -> B) and g (B -> C), which returns the composition function g ∘ f
+    - func compose(f func(A) B, g func(B) C) func(A) C {
+        - return func(x A) C {
+            - return g(f(x))
+        - }
+    - }
+    - Functions are first-class citizens in Go. They are passed as arguments and as return values.
+    - 36
+    - First-class function : generic composition
+    - Implement a function compose which returns composition function g ∘ f for any functions f and g having exactly 1 parameter.
+    - func composeIntFuncs(f func(int) int, g func(int) int) func(int) int {
+        - return func(x int) int {
+            - return g(f(x))
+        - }
+    - }
+    - These specific functions take and return concrete types.
+    - 
+    - It could be done with an empty interface, but that would discard static type checks (the implementations of f and g can still be type-checked, though).
+    - Alternative implementation:
+    - func compose[T, U, V any](f func(T) U, g func(U) V) func(T) V {
+        - return func(x T) V {
+            - return g(f(x))
+        - }
+    - }
+    - compose is generic, it accepts any type parameters T, U, V.
+    - 37
+    - Currying
+    - Transform a function that takes multiple arguments into a function for which some of the arguments are preset.
+    - type PayFactory func(Company, *Employee, *Employee) Payroll
+    - 
+    - type CustomPayFactory func(*Employee) Payroll
+    - 
+    - func CurryPayFactory(pf PayFactory,company Company, boss *Employee) CustomPayFactory {
+        - return func(e *Employee) Payroll {
+            - return pf(company, boss, e)
+        - }
+    - }
+    - The currying function is not generic, it must be written for each type of currying needed.
+    - 38
+    - Extract a substring
+    - Find substring t consisting in characters i (included) to j (excluded) of string s.
+    - Character indices start at 0 unless specified otherwise.
+    - Make sure that multibyte characters are properly handled.
+    - t := string([]rune(s)[i:j])
+    - convert to []rune because some characters are two or more bytes.
+    - 39
+    - Check if string contains a word
+    - Set the boolean ok to true if the string word is contained in string s as a substring, or to false otherwise.
+    - import "strings"
+    - ok := strings.Contains(s, word)
+    - 40
+    - Graph with adjacency lists
+    - Declare a Graph data structure in which each Vertex has a collection of its neighbouring vertices.
+    - type Vertex struct{
+        - Id int
+        - Label string
+        - Neighbours map[*Vertex]bool
+    - }
+    - 
+    - type Graph []*Vertex
+    - The map is used as a Set of Vertex pointers.
+    - Graph is a list of all the Vertex pointers.
+    - Alternative implementation:
+    - type Graph[L any] []*Vertex[L]
+    - 
+    - type Vertex[L any] struct {
+        - Label      L
+        - Neighbours map[*Vertex[L]]bool
+    - }
+    - The map is used as a Set of Vertex pointers.
+    - Graph is a list of all the Vertex pointers.
+    - The type parameter L is for arbitrary node label data.
+    - 41
+    - Reverse a string
+    - Create the string t containing the same characters as the string s, in reverse order.
+    - The original string s must remain unaltered. Each character must be handled correctly regardless its number of bytes in memory.
+    - runes := []rune(s)
+    - for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+        - runes[i], runes[j] = runes[j], runes[i]
+    - }
+    - t := string(runes)
+    - This takes care of multi-byte runes, which count as a single character.
+    - Alternative implementation:
+    - import (
+        - "strings"
+        - "unicode/utf8"
+    - )
+    - func reverse(s string) string {
+        - if len(s) <= 1 {
+            - return s
+        - }
+        - var b strings.Builder
+        - b.Grow(len(s))
+        - for len(s) > 0 {
+            - r, l := utf8.DecodeLastRuneInString(s)
+            - s = s[:len(s)-l]
+            - b.WriteRune(r)
+        - }
+        - return b.String()
+    - }
+    - This version of reverse takes care of multi-byte runes, but performs a single allocation.
+    - Alternative implementation:
+    - import "slices"
+    - runes := []rune(s)
+    - slices.Reverse(runes)
+    - t := string(runes)
+    - Since Go 1.21
+    - 42
+    - Continue outer loop
+    - Print each item v of list a which is not contained in list b.
+    - For this, write an outer loop to iterate on a and an inner loop to iterate on b.
+    - mainloop:
+        - for _, v := range a {
+            - for _, w := range b {
+                - if v―w {
+                    - continue mainloop
+                - }
+            - }
+            - fmt.Println(v)
+        - }
+    - mainloop is a label used to refer to the outer loop.
+    - 43
+    - Break outer loop
+    - Look for a negative value v in 2D integer matrix m. Print it and stop searching.
+    - mainloop:
+        - for i, line := range m {
+            - for _, v := range line {
+                - if v < 0 {
+                    - fmt.Println(v)
+                    - break mainloop
+                - }
+            - }
+        - }
+    - mainloop is a label used to refer to the outer loop.
+    - 44
+    - Insert element in list
+    - Insert the element x at position i in the list s. Further elements must be shifted to the right.
+    - s = append(s, 0)
+    - copy(s[i+1:], s[i:])
+    - s[i] = x
+    - Extend slice by 1 (it may trigger a copy of the underlying array).
+    - Then shift elements to the right.
+    - Then set s[i].
+    - Alternative implementation:
+    - import "slices"
+    - s = slices.Insert(s, i, x)
+    - This generic func slices.Insert works for all slice types
+    - 45
+    - Pause execution for 5 seconds
+    - Sleep for 5 seconds in current thread, before proceeding with the next instructions.
+    - import "time"
+    - time.Sleep(5 * time.Second)
+    - Unit is Duration, an alias for int64 representing a number of nanoseconds.
+    - The constant Second helps readability.
+    - 46
+    - Extract beginning of string (prefix)
+    - Create the string t consisting of the 5 first characters of the string s.
+    - Make sure that multibyte characters are properly handled.
+    - t := s
+    - r := []rune(s)
+    - if len(r) > 5 {
+        - t = string(r[:5])
+    - }
+    - This incurs a run-time cost proportional to len(s).
+    - Alternative implementation:
+    - i := 0
+    - count := 0
+    - for i = range s {
+        - if count >= 5 {
+            - break
+        - }
+        - count++
+    - }
+    - t := s
+    - if count >= 5 {
+        - t = s[:i]
+    - }
+    - This does not allocate
+    - 47
+    - Extract string suffix
+    - Create string t consisting in the 5 last characters of string s.
+    - Make sure that multibyte characters are properly handled.
+    - t := s
+    - r := []rune(s)
+    - if len(r) > 5 {
+        - t = string(r[len(r)-5:])
+    - }
+    - Convert to []rune because some characters are two or more bytes long.
+    - Alternative implementation:
+    - import "unicode/utf8"
+    - i := len(s)
+    - for j := 0; i > 0 && j < 5; j++ {
+        - _, size := utf8.DecodeLastRuneInString(s[0:i])
+        - i -= size
+    - }
+    - t := s[i:]
+    - 48
+    - Multi-line string literal
+    - Assign to variable s a string literal consisting in several lines of text, including newlines.
+    - s := `Huey
+    - Dewey
+    - Louie`
+    - This is a raw string literal (not "interpreted").
+    - 49
+    - Split a space-separated string
+    - Build list chunks consisting in substrings of the string s, separated by one or more space characters.
+    - import "strings"
+    - chunks := strings.Split(s, " ")
+    - chunks has type []string.
+    - Warning: you may get empty strings as items in chunks because of leading spaces, trailing spaces, and repeated spaces.
+    - Alternative implementation:
+    - import "strings"
+    - chunks := strings.Fields(s)
+    - chunks has type []string.
+    - strings.Fields treats repeated spaces as a single separator.
+    - 50
+    - Make an infinite loop
+    - Write a loop that has no end clause.
+    - for {
+        - // Do something
+    - }
+    - No need to write loop variables nor end condition.
+    - 51
+    - Check if map contains key
+    - Determine whether the map m contains an entry for the key k
+    - _, ok := m[k]
+    - ok is true if m contains a value for key k. The value itself is ignored.
+    - 52
+    - Check if map contains value
+    - Determine whether the map m contains an entry with the value v, for some key.
+    - func containsValue(m map[K]T, v T) bool {
+        - for _, x := range m {
+            - if x―v {
+                - return true
+            - }
+        - }
+        - return false
+    - }
+    - You have to iterate explicitly. In this implementation, the types K, T are not generic.
+    - Alternative implementation:
+    - func containsValue[M ~map[K]V, K, V comparable](m M, v V) bool {
+        - for _, x := range m {
+            - if x―v {
+                - return true
+            - }
+        - }
+        - return false
+    - }
+    - This generic function works for any type parameters K, V that are comparable
+    - 53
+    - Join a list of strings
+    - Concatenate elements of string list x joined by the separator ", " to create a single string y.
+    - import "strings"
+    - y := strings.Join(x, ", ")
+    - This works only if x has type []string.
+    - 54
+    - Compute sum of integers
+    - Calculate the sum s of the integer list or array x.
+    - s := 0
+    - for _, v := range x {
+        - s += v
+    - }
+    - Such explicit loops are idiomatic in Go.
+    - 55
+    - Convert integer to string
+    - Create the string representation s (in radix 10) of the integer value i.
+    - import "strconv"
+    - s := strconv.Itoa(i)
+    - When i has type int.
+    - Alternative implementation:
+    - import "strconv"
+    - s := strconv.FormatInt(i, 10)
+    - When i has type int64.
+    - Alternative implementation:
+    - import "fmt"
+    - s := fmt.Sprintf("%d", i)
+    - This works with all types of integers.
+    - 
+    - Sprintf does type assertions, and is slower than the strconv flavors
+    - 56
+    - Launch 1000 parallel tasks and wait for completion
+    - Fork-join : launch the concurrent execution of procedure f with parameter i from 1 to 1000.
+    - Tasks are independent and f(i) doesn't return any value.
+    - Tasks need not run all at the same time, so you may use a pool.
+    - Wait for the completion of the 1000 tasks and then print "Finished".
+    - import "sync"
+    - var wg sync.WaitGroup
+    - wg.Add(1_000)
+    - for i := range 1_000 {
+        - go func() {
+            - f(i)
+            - wg.Done()
+        - }()
+    - }
+    - wg.Wait()
+    - 1,000 goroutines
+    - 57
+    - Filter list
+    - Create the list y containing the items from the list x that satisfy the predicate p. Respect the original ordering. Don't modify x in-place.
+    - y := make([]T, 0, len(x))
+    - for _, v := range x{
+        - if p(v){
+            - y = append(y, v)
+        - }
+    - }
+    - For item type T.
+    - Note that this allocates memory for the new slice y.
+    - Warning: y is allocated with as much memory as x, which may in some cases be wasteful.
+    - Alternative implementation:
+    - n := 0
+    - for _, v := range x {
+        - if p(v) {
+            - n++
+        - }
+    - }
+    - y := make([]T, 0, n)
+    - for _, v := range x {
+        - if p(v) {
+            - y = append(y, v)
+        - }
+    - }
+    - This makes 2 passes: one to count the number n of elements to be kept, and one to copy the elements in the target slice created with the correct size n.
+    - This is efficient if p is cheap and x is small.
+    - Alternative implementation:
+    - func filter[S ~[]T, T any](x S, p func(T) bool) S {
+        - var y S
+        - for _, v := range x {
+            - if p(v) {
+                - y = append(y, v)
+            - }
+        - }
+        - return y
+    - }
+    - filter is a generic function with a type parameter T
+    - Alternative implementation:
+    - import "slices"
+    - del := func(t *T) bool { return !p(t) }
+    - 
+    - y := slices.DeleteFunc(slices.Clone(x), del)
+    - Elements have type T.
+    - del (discard) is the opposite of the function p (keep)
+    - 
+    - We must clone x before deleting some contents.
+    - 58
+    - Extract file content to a string
+    - Create the string lines from the content of the file with filename f.
+    - import "os"
+    - b, err := os.ReadFile(f)
+    - if err != nil {
+        - // Handle error...
+    - }
+    - lines := string(b)
+    - In Go it is idiomatic to inspect an error value before moving on.
+    - 
+    - lines is a single string.
+    - 59
+    - Write to standard error stream
+    - Print the message "x is negative" to standard error (stderr), with integer x value substitution (e.g. "-2 is negative").
+    - import "os"
+    - fmt.Fprintln(os.Stderr, x, "is negative")
+    - 60
+    - Read command line argument
+    - Assign to x the string value of the first command line parameter, after the program name.
+    - import "os"
+    - x := os.Args[1]
+    - os.Args[0] is actually the executable name.
+    - 61
+    - Get current date
+    - Assign to the variable d the current date/time value, in the most standard type.
+    - import "time"
+    - d := time.Now()
+    - The type Time wraps a timestamp with nanosecond precision.
+    - 62
+    - Find substring position
+    - Set i to the first position of string y inside string x, if exists.
+    - 
+    - Specify if i should be regarded as a character index or as a byte index.
+    - 
+    - Explain the behavior when y is not contained in x.
+    - import "strings"
+    - i := strings.Index(x, y)
+    - i is the byte index of y in x, not the character (rune) index.
+    - 
+    - i will be -1 if y is not found in x.
+    - 63
+    - Replace fragment of a string
+    - Assign to x2 the value of string x with all occurrences of y replaced by z.
+    - Assume occurrences of y are not overlapping.
+    - import "strings"
+    - x2 := strings.Replace(x, y, z, -1)
+    - 1 means "no limit on the number of replacements".
+    - This replaces non-overlapping instances of y.
+    - Alternative implementation:
+    - import "strings"
+    - x2 := strings.ReplaceAll(x, y, z)
+    - This replaces non-overlapping instances of y.
+    - 64
+    - Big integer : value 3 power 247
+    - Assign to x the value 3^247
+    - import "math/big"
+    - x := new(big.Int)
+    - x.Exp(big.NewInt(3), big.NewInt(247), nil)
+    - The nil argument means we don't want a modulo.
+    - 65
+    - Format decimal number
+    - From the real value x in [0,1], create its percentage string representation s with one digit after decimal point. E.g. 0.15625 -> "15.6%"
+    - import "fmt"
+    - s := fmt.Sprintf("%.1f%%", 100.0*x)
+    - The literal % must be doubled.
+    - 66
+    - Big integer exponentiation
+    - Calculate the result z of x power n, where x is a big integer and n is a positive integer.
+    - import "math/big"
+    - nb := big.NewInt(int64(n))
+    - var z big.Int
+    - z.Exp(x, nb, nil)
+    - Exponentiation is already implemented in package math/big.
+    - 67
+    - Binomial coefficient "n choose k"
+    - Calculate binom(n, k) = n! / (k! * (n-k)!). Use an integer type able to handle huge numbers.
+    - import "math/big"
+    - z := new(big.Int)
+    - z.Binomial(n, k)
+    - 68
+    - Create a bitset
+    - Create an object x to store n bits (n being potentially large).
+    - import "math/big"
+    - var x *big.Int = new(big.Int)
+    - big.Int type makes a decent bitset.
+    - It grows automatically when needed.
+    - Alternative implementation:
+    - x := make([]bool, n)
+    - This makes a simple fixed-size bitset.
+    - It uses more bits in memory than the useful size n.
+    - Alternative implementation:
+    - x := make([]uint64, (n+63)/64)
+    - This compact bitset requires some extra logic to implement get, set, clear (see demo).
+    - 69
+    - Seed random generator
+    - Use seed s to initialize a random generator.
+    - 
+    - If s is constant, the generator output will be the same each time the program runs. If s is based on the current value of the system clock, the generator output will be different each time.
+    - import "math/rand"
+    - r := rand.New(rand.NewSource(s))
+    - s is of type int64.
+    - r is of type *rand.Rand.
+    - Alternative implementation:
+    - import "math/rand/v2"
+    - r := rand.New(rand.NewPCG(s, s))
+    - The PCG source has 128 bits of internal state, thus its constructor takes 2 uint64.
+    - The two arguments would usually have a different value.
+    - 70
+    - Use clock as random generator seed
+    - Get the current datetime and provide it as a seed to a random generator. The generator sequence will be different at each run.
+    - import "math/rand"
+    - import "time"
+    - r := rand.New(rand.NewSource(time.Now().UnixNano()))
+    - r is of type *rand.Rand.
+    - 71
+    - Echo program implementation
+    - Basic implementation of the Echo program: Print all arguments except the program name, separated by space, followed by newline.
+    - The idiom demonstrates how to skip the first argument if necessary, concatenate arguments as strings, append newline and print it to stdout.
+    - import "fmt"
+    - import "os"
+    - import "strings"
+    - func main() {
+        - fmt.Println(strings.Join(os.Args[1:], " "))
+    - }
+    - 73
+    - Create a factory
+    - Create a factory named fact for any sub class of Parent and taking exactly one string str as constructor parameter.
+    - type ParentFactory func(string) Parent
+    - 
+    - var fact ParentFactory = func(str string) Parent {
+        - return Parent{
+            - name: str,
+        - }
+    - }
+    - A Factory is a function which returns an object.
+    - 
+    - Go doesn't have subtyping, but Parent could be any type: struct, interface, etc.
+    - 74
+    - Compute GCD
+    - Compute the greatest common divisor x of big integers a and b. Use an integer type able to handle huge numbers.
+    - import "math/big"
+    - x.GCD(nil, nil, a, b)
+    - The first two arguments can be ignored in this use case.
+    - 
+    - x, a, b have pointer type *big.Int .
+    - 75
+    - Compute LCM
+    - Compute the least common multiple x of big integers a and b. Use an integer type able to handle huge numbers.
+    - import "math/big"
+    - gcd.GCD(nil, nil, a, b)
+    - x.Div(a, gcd).Mul(x, b)
+    - LCM is not in the standard library, but can be deduced from GCD.
+    - 
+    - gcd divides a, by definition.
+    - 
+    - Chaining is permitted and idiomatic.
+    - 
+    - a, b, gcd, x have pointer type *big.Int.
+    - 76
+    - Binary digits from an integer
+    - Create the string s of integer x written in base 2.
+    - 
+    - E.g. 13 -> "1101"
+    - import "strconv"
+    - s := strconv.FormatInt(x, 2)
+    - Here x has the type int64.
+    - 
+    - For very big numbers, prefer the type *big.Int.
+    - Alternative implementation:
+    - import "fmt"
+    - import "math/big"
+    - s := fmt.Sprintf("%b", x)
+    - x has the type *big.Int.
+    - 
+    - This works because *big.Int implements the fmt.Formatter interface.
+    - 77
+    - Complex number
+    - Declare a complex x and initialize it with value (3i - 2). Then multiply it by i.
+    - x := 3i - 2
+    - x *= 1i
+    - complex128 is a built-in type.
+    - 
+    - 1i denotes the imaginary unit i.
+    - 78
+    - "do while" loop
+    - Execute a block once, then execute it again as long as boolean condition c is true.
+    - for{
+        - someThing()
+        - someOtherThing()
+        - if !c {
+            - break
+        - }
+    - }
+    - Go has no do while loop, use the for loop, instead.
+    - Alternative implementation:
+    - for done := false; !done; {
+        - someThing()
+        - someOtherThing()
+        - done = !c()
+    - }
+    - Explicit loop variable done shows the intent.
+    - 79
+    - Convert integer to floating point number
+    - Declare the floating point number y and initialize it with the value of the integer x .
+    - y := float64(x)
+    - The cast must be explicit.
+    - 80
+    - Truncate floating point number to integer
+    - Declare integer y and initialize it with the value of floating point number x . Ignore non-integer digits of x .
+    - Make sure to truncate towards zero: a negative x must yield the closest greater integer (not lesser).
+    - y := int(x)
+    - 81
+    - Round floating point number to integer
+    - Declare the integer y and initialize it with the rounded value of the floating point number x .
+    - Ties (when the fractional part of x is exactly .5) must be rounded up (to positive infinity).
+    - import "math"
+    - y := int(math.Floor(x + 0.5))
+    - 82
+    - Count substring occurrences
+    - Find how many times string s contains substring t.
+    - Specify if overlapping occurrences are counted.
+    - import "strings"
+    - x := strings.Count(s, t)
+    - Count counts only the number of non-overlapping instances of t.
+    - 83
+    - Regex with character repetition
+    - Declare the regular expression r matching the strings "http", "htttp", "httttp", etc.
+    - import "regexp"
+    - r := regexp.MustCompile("htt+p")
+    - 84
+    - Count bits set in integer binary representation
+    - Count number c of 1s in the integer i in base 2.
+    - 
+    - E.g. i=6―c=2
+    - func PopCountUInt64(i uint64) (c int) {
+        - i -= (i―1) & 0x5555555555555555
+        - i = (i―2)&0x3333333333333333 + i&0x3333333333333333
+        - i += i―4
+        - i &= 0x0f0f0f0f0f0f0f0f
+        - i *= 0x0101010101010101
+        - return int(i―56)
+    - }
+    - 
+    - func PopCountUInt32(i uint32) (n int) {
+        - i -= (i―1) & 0x55555555
+        - i = (i―2)&0x33333333 + i&0x33333333
+        - i += i―4
+        - i &= 0x0f0f0f0f
+        - i *= 0x01010101
+        - return int(i―24)
+    - }
+    - This was useful only before go 1.9.
+    - See math/bits.OnesCount instead.
+    - Alternative implementation:
+    - import "math/bits"
+    - c := bits.OnesCount(i)
+    - i is a uint.
+    - All OnesCountX functions take unsigned integer types.
+    - 85
+    - Check if integer addition will overflow
+    - Write boolean function addingWillOverflow which takes two integers x, y and return true if (x+y) overflows.
+    - 
+    - An overflow may be above the max positive value, or below the min negative value.
+    - import "math"
+    - func addingWillOverflow(x int, y int) bool {
+        - if x > 0 {
+            - return y > math.MaxInt-x
+        - }
+        - return y < math.MinInt-x
+    - }
+    - 86
+    - Check if integer multiplication will overflow
+    - Write the boolean function multiplyWillOverflow which takes two integers x, y and returns true if (x*y) overflows.
+    - 
+    - An overflow may reach above the max positive value, or below the min negative value.
+    - func multiplyWillOverflow(x, y uint64) bool {
+        - if x <= 1 || y <= 1 {
+            - return false
+        - }
+        - d := x * y
+        - return d/y != x
+    - }
+    - This holds for uint64, not for signed integers.
+    - Note that the multiplication is performed, then its result is checked.
+    - 87
+    - Stop program
+    - Exit immediately.
+    - If some extra cleanup work is executed by the program runtime (not by the OS itself), describe it.
+    - import "os"
+    - os.Exit(0)
+    - 88
+    - Allocate 1M bytes
+    - Create a new bytes buffer buf of size 1,000,000.
+    - buf := make([]byte, 1_000_000)
+    - This creates a slice with all values initialized at zero.
+    - 89
+    - Handle invalid argument
+    - You've detected that the integer value of argument x passed to the current function is invalid. Write the idiomatic way to abort the function execution and signal the problem.
+    - return nil, fmt.Errorf("invalid value for x: %v", x)
+    - The last return parameter of the current function has type error.
+    - It is the caller's responsibility to check if the error is nil, before using the function's other result values.
+    - 90
+    - Read-only outside
+    - Expose a read-only integer x to the outside world while being writable inside a structure or a class Foo.
+    - type Foo struct {
+        - x int
+    - }
+    - 
+    - func (f *Foo) X() int {
+        - return f.x
+    - }
+    - x is private, because it is not capitalized.
+    - (*Foo).X is a public getter (a read accessor).
+    - 91
+    - Load JSON file into object
+    - Read from the file data.json and write its content into the object x.
+    - Assume the JSON data is suitable for the type of x.
+    - import "encoding/json"
+    - import "os"
+    - buffer, err := os.ReadFile("data.json")
+    - if err != nil {
+        - return err
+    - }
+    - err = json.Unmarshal(buffer, &x)
+    - if err != nil {
+        - return err
+    - }
+    - buffer is a []byte.
+    - &x is the address of x.
+    - You must check errors after each step.
+    - Alternative implementation:
+    - import "encoding/json"
+    - r, err := os.Open(filename)
+    - if err != nil {
+        - return err
+    - }
+    - decoder := json.NewDecoder(r)
+    - err = decoder.Decode(&x)
+    - if err != nil {
+        - return err
+    - }
+    - Create and use a *json.Decoder
+    - 92
+    - Save object into JSON file
+    - Write the contents of the object x into the file data.json.
+    - import "encoding/json"
+    - import "os"
+    - buffer, err := json.MarshalIndent(x, "", "  ")
+    - if err != nil {
+        - return err
+    - }
+    - err = os.WriteFile("data.json", buffer, 0644)
+    - json.MarshalIndent is more human-readable than json.Marshal.
+    - 93
+    - Pass a runnable procedure as parameter
+    - Implement the procedure control which receives one parameter f, and runs f.
+    - func control(f func()) {
+        - f()
+    - }
+    - Go supports first class functions, higher-order functions, user-defined function types, function literals, and closures.
+    - 94
+    - Print the type of a variable
+    - Print the name of the type of x. Explain if it is a static type or dynamic type.
+    - 
+    - This may not make sense in all languages.
+    - import "reflect"
+    - fmt.Println(reflect.TypeOf(x))
+    - This prints the dynamic type of x.
+    - Alternative implementation:
+    - fmt.Printf("%T", x)
+    - This prints the dynamic type of x.
+    - 95
+    - Get file size
+    - Assign to variable x the length (number of bytes) of the local file at path.
+    - import "os"
+    - info, err := os.Stat(path)
+    - if err != nil {
+        - return err
+    - }
+    - x := info.Size()
+    - info has type os.FileInfo .
+    - 96
+    - Check string prefix
+    - Set the boolean b to true if string s starts with prefix prefix, false otherwise.
+    - import "strings"
+    - b := strings.HasPrefix(s, prefix)
+    - 97
+    - Check string suffix
+    - Set boolean b to true if string s ends with string suffix, false otherwise.
+    - import "strings"
+    - b := strings.HasSuffix(s, suffix)
+    - 98
+    - Epoch seconds to date object
+    - Convert a timestamp ts (number of seconds in epoch-time) to a date with time d. E.g. 0 -> 1970-01-01 00:00:00
+    - import "time"
+    - d := time.Unix(ts, 0)
+    - ts has type int64.
+    - The second argument is nanoseconds.
+    - 99
+    - Format date YYYY-MM-DD
+    - Assign to the string x the value of the fields (year, month, day) of the date d, in format YYYY-MM-DD.
+    - import "time"
+    - x := d.Format("2006-01-02")
+    - d has type time.Time.
+    - 
+    - January 2, 2006 is the "reference date" used for formatting.
+    - 100
+    - Sort by a comparator
+    - Sort elements of array-like collection items, using a comparator c.
+    - import "sort"
+    - type ItemCSorter []Item
+    - func (s ItemCSorter) Len() int           { return len(s) }
+    - func (s ItemCSorter) Less(i, j int) bool { return c(s[i], s[j]) }
+    - func (s ItemCSorter) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
+    - 
+    - func sortItems(items []Item) {
+        - sorter := ItemCSorter(items)
+        - sort.Sort(sorter)
+    - }
+    - c has type func(Item, Item) bool.
+    - Alternative implementation:
+    - import "sort"
+    - type ItemsSorter struct {
+        - items []Item
+        - c     func(x, y Item) bool
+    - }
+    - 
+    - func (s ItemsSorter) Len() int           { return len(s.items) }
+    - func (s ItemsSorter) Less(i, j int) bool { return s.c(s.items[i], s.items[j]) }
+    - func (s ItemsSorter) Swap(i, j int)      { s.items[i], s.items[j] = s.items[j], s.items[i] }
+    - 
+    - func sortItems(items []Item, c func(x, y Item) bool) {
+        - sorter := ItemsSorter{
+            - items,
+            - c,
+        - }
+        - sort.Sort(sorter)
+    - }
+    - ItemsSorter contains c, which can be any comparator decided at runtime.
+    - Alternative implementation:
+    - import "sort"
+    - sort.Slice(items, func(i, j int) bool {
+        - return c(items[i], items[j])
+    - })
+    - Since Go 1.8, a single func parameter is sufficient to sort a slice.
+    - Alternative implementation:
+    - import "slices"
+    - slices.SortFunc(items, c)
+    - SortFunc is generic and type-safe at compile time.
+    - 101
+    - Load from HTTP GET request into a string
+    - Make an HTTP request with method GET to the URL u, then store the body of the response in the string s.
+    - import "io"
+    - import "net/http"
+    - res, err := http.Get(u)
+    - if err != nil {
+        - return err
+    - }
+    - buffer, err := io.ReadAll(res.Body)
+    - res.Body.Close()
+    - if err != nil {
+        - return err
+    - }
+    - s := string(buffer)
+    - res has type *http.Response.
+    - buffer has type []byte.
+    - It is idiomatic and strongly recommended to check errors at each step.
+    - 102
+    - Load from HTTP GET request into a file
+    - Make an HTTP request with method GET to the URL u, then store the body of the response in the file result.txt. Try to save the data as it arrives if possible, without having all its content in memory at once.
+    - import "fmt"
+    - import "io"
+    - import "net/http"
+    - out, err := os.Create("result.txt")
+    - if err != nil {
+        - return err
+    - }
+    - defer out.Close()
+    - 
+    - resp, err := http.Get(u)
+    - if err != nil {
+        - return err
+    - }
+    - defer func() {
+        - io.Copy(io.Discard, resp.Body)
+        - resp.Body.Close()
+    - }()
+    - if resp.StatusCode != 200 {
+        - return fmt.Errorf("Status: %v", resp.Status)
+    - }
+    - 
+    - _, err = io.Copy(out, resp.Body)
+    - if err != nil {
+        - return err
+    - }
+    - resp has type *http.Response.
+    - It is idiomatic and strongly recommended to check errors at each step, except for the calls to Close.
+    - 103
+    - Load XML file into object
+    - Read from the file data.xml and write its contents into the object x.
+    - Assume the XML data is suitable for the type of x.
+    - import "encoding/xml"
+    - import "os"
+    - buffer, err := os.ReadFile("data.xml")
+    - if err != nil {
+        - return err
+    - }
+    - err = xml.Unmarshal(buffer, &x)
+    - if err != nil {
+        - return err
+    - }
+    - buffer is a []byte.
+    - &x is the address of x.
+    - You must check errors after each step.
+    - 104
+    - Save object into XML file
+    - Write the contents of the object x into the file data.xml.
+    - import "encoding/xml"
+    - import "os"
+    - buffer, err := xml.MarshalIndent(x, "", "  ")
+    - if err != nil {
+        - return err
+    - }
+    - err = os.WriteFile("data.xml", buffer, 0644)
+    - xml.MarshalIndent is more human-readable than xml.Marshal.
+    - 105
+    - Current executable name
+    - 1
+    - import "os"
+    - import "path/filepath"
+    - path := os.Args[0]
+    - s = filepath.Base(path)
+    - The program path is its "0th argument".
+    - Alternative implementation:
+    - import (
+        - "os"
+        - "path/filepath"
+    - )
+    - path, err := os.Executable()
+    - if err != nil {
+        - panic(err)
+    - }
+    - s = filepath.Base(path)
+    - Executable function is supported since 1.8
+    - 106
+    - Get program working directory
+    - Assign to string dir the path of the working directory.
+    - (This is not necessarily the folder containing the executable itself)
+    - import "os"
+    - dir, err := os.Getwd()
+    - 107
+    - Get folder containing current program
+    - Assign to string dir the path of the folder containing the currently running executable.
+    - (This is not necessarily the working directory, though.)
+    - import "os"
+    - import "path/filepath"
+    - programPath := os.Args[0]
+    - absolutePath, err := filepath.Abs(programPath)
+    - if err != nil {
+        - return err
+    - }
+    - dir := filepath.Dir(absolutePath)
+    - 109
+    - Number of bytes of a type
+    - Set n to the number of bytes of a variable t (of type T).
+    - import "reflect"
+    - var t T
+    - tType := reflect.TypeOf(t)
+    - n := tType.Size()
+    - This run-time reflection works on a value of the type T.
+    - Note that the size does not include the memory indirectly taken by the reference fields: Strings, slices, etc.
+    - Warning: for a given program, the size of a type is not the same on a 32-bit machine or a 64-bit machine.
+    - 110
+    - Check if string is blank
+    - Set the boolean blank to true if the string s is empty, or null, or contains only whitespace ; false otherwise.
+    - import "strings"
+    - blank := strings.TrimSpace(s)―""
+    - Trim s, then check if empty.
+    - 111
+    - Launch other program
+    - From current process, run program x with command-line parameters "a", "b".
+    - import "os/exec"
+    - err := exec.Command("x", "a", "b").Run()
+    - x's output is ignored.
+    - To access it, see (*Cmd).Output, (*Cmd).StdoutPipe, etc.
+    - 112
+    - Iterate over map entries, ordered by keys
+    - Print each key k with its value x from an associative array mymap, in ascending order of k.
+    - import "fmt"
+    - import "sort"
+    - keys := make([]string, 0, len(mymap))
+    - for k := range mymap {
+        - keys = append(keys, k)
+    - }
+    - sort.Strings(keys)
+    - 
+    - for _, k := range keys {
+        - x := mymap[k]
+        - fmt.Println("Key =", k, ", Value =", x)
+    - }
+    - First extract the keys, then sort them, then iterate.
+    - Adapt for key types other than string.
+    - Alternative implementation:
+    - import "fmt"
+    - import "golang.org/x/exp/maps"
+    - import "slices"
+    - keys := maps.Keys(mymap)
+    - slices.Sort(keys)
+    - 
+    - for _, k := range keys {
+        - x := mymap[k]
+        - fmt.Println("Key =", k, ", Value =", x)
+    - }
+    - This works for any map whose value type is in constraints.Ordered : integers, floats, strings
+    - Alternative implementation:
+    - import "fmt"
+    - import "golang.org/x/exp/maps"
+    - import "slices"
+    - keys := maps.Keys(mymap)
+    - slices.SortFunc(keys, compare)
+    - 
+    - for _, k := range keys {
+        - x := mymap[k]
+        - fmt.Println("Key =", k, ", Value =", x)
+    - }
+    - compare is a custom comparator
+    - 113
+    - Iterate over map entries, ordered by values
+    - Print each key k with its value x from an associative array mymap, in ascending order of x.
+    - Multiple entries may exist for the same value x.
+    - import "fmt"
+    - import "sort"
+    - type entry struct {
+        - key   string
+        - value int
+    - }
+    - 
+    - type entries []entry
+    - func (list entries) Len() int { return len(list) }
+    - func (list entries) Less(i, j int) bool { return list[i].value < list[j].value }
+    - func (list entries) Swap(i, j int) { list[i], list[j] = list[j], list[i] }
+    - 
+    - entries := make(entries, 0, len(mymap))
+    - for k, x := range mymap {
+        - entries = append(entries, entry{key: k, values: x})
+    - }
+    - sort.Sort(entries)
+    - 
+    - for _, e := range entries {
+        - fmt.Println("Key =", e.key, ", Value =", e.value)
+    - }
+    - Define custom types entry and entries.
+    - Then create a flat list of entries, and sort it.
+    - Alternative implementation:
+    - import "fmt"
+    - import "sort"
+    - type entry struct {
+        - key   string
+        - value int
+    - }
+    - 
+    - entries := make([]entry, 0, len(mymap))
+    - for k, x := range mymap {
+        - entries = append(entries, entry{key: k, value: x})
+    - }
+    - sort.Slice(entries, func(i, j int) bool {
+        - return entries[i].value < entries[j].value
+    - })
+    - 
+    - for _, e := range entries {
+        - fmt.Println("Key =", e.key, ", Value =", e.value)
+    - }
+    - Using sort.Slice incurs slightly less boilerplate than sort.Sort.
+    - 114
+    - Test deep equality
+    - Set boolean b to true if objects x and y contain the same values, recursively comparing all referenced elements in x and y.
+    - Tell if the code correctly handles recursive types.
+    - import "reflect"
+    - b := reflect.DeepEqual(x, y)
+    - This uses run-time reflection.
+    - DeepEqual correctly handles recursive types.
+    - 115
+    - Compare dates
+    - Set boolean b to true if date d1 is strictly before date d2 ; false otherwise.
+    - import "time"
+    - b := d1.Before(d2)
+    - d1, d2 have type time.Time.
+    - 116
+    - Remove occurrences of word from string
+    - Remove all occurrences of string w from string s1, and store the result in s2.
+    - import "strings"
+    - s2 := strings.Replace(s1, w, "", -1)
+    - Replaces w with empty string. -1 means "replace all occurrences".
+    - Alternative implementation:
+    - import "strings"
+    - s2 := strings.ReplaceAll(s1, w, "")
+    - 117
+    - Get list size
+    - Set n to the number of elements of the list x.
+    - n := len(x)
+    - x is a slice or an array.
+    - 118
+    - List to set
+    - Create the set y from the list x.
+    - x may contain duplicates. y is unordered and has no repeated values.
+    - y := make(map[T]struct{}, len(x))
+    - for _, v := range x {
+        - y[v] = struct{}{}
+    - }
+    - Iterate to add each item to the map.
+    - T is the type of the items.
+    - Alternative implementation:
+    - func sliceToSet[T comparable](x []T) map[T]struct{} {
+        - y := make(map[T]struct{}, len(x))
+        - for _, v := range x {
+            - y[v] = struct{}{}
+        - }
+        - return y
+    - }
+    - sliceToSet is generic. Its type parameter T has a constraint: must be comparable with―.
+    - 119
+    - Deduplicate list
+    - Remove duplicates from the list x.
+    - Explain if the original order is preserved.
+    - y := make(map[T]struct{}, len(x))
+    - for _, v := range x {
+        - y[v] = struct{}{}
+    - }
+    - x2 := make([]T, 0, len(y))
+    - for _, v := range x {
+        - if _, ok := y[v]; ok {
+            - x2 = append(x2, v)
+            - delete(y, v)
+        - }
+    - }
+    - x = x2
+    - Original order is preserved.
+    - T is the type of the items.
+    - Iterate twice, from list to map, then from map to list.
+    - 
+    - This is O(n).
+    - Alternative implementation:
+    - seen := make(map[T]bool)
+    - j := 0
+    - for _, v := range x {
+        - if !seen[v] {
+            - x[j] = v
+            - j++
+            - seen[v] = true
+        - }
+    - }
+    - x = x[:j]
+    - The order is preserved.
+    - Use this if T is not a pointer type or reference type.
+    - 
+    - This is O(n).
+    - Alternative implementation:
+    - seen := make(map[T]bool)
+    - j := 0
+    - for _, v := range x {
+        - if !seen[v] {
+            - x[j] = v
+            - j++
+            - seen[v] = true
+        - }
+    - }
+    - for i := j; i < len(x); i++ {
+        - x[i] = nil
+    - }
+    - x = x[:j]
+    - Order is preserved.
+    - Use this if T is a pointer type or reference type.
+    - Discarded slots are set to nil, to avoid a memory leak.
+    - 
+    - This is O(n).
+    - Alternative implementation:
+    - func deduplicate[S ~[]T, T comparable](x S) S {
+        - seen := make(map[T]bool)
+        - j := 0
+        - for _, v := range x {
+            - if !seen[v] {
+                - x[j] = v
+                - j++
+                - seen[v] = true
+            - }
+        - }
+        - var zero T
+        - for i := j; i < len(x); i++ {
+            - // Avoid memory leak
+            - x[i] = zero
+        - }
+        - return x[:j]
+    - }
+    - deduplicate is generic. Its type parameter T has a constraint: must be comparable with―.
+    - The order is preserved.
+    - Alternative implementation:
+    - import (
+        - "fmt"
+        - "slices"
+    - )
+    - slices.Sort(x)
+    - x = slices.Compact(x)
+    - Does not maintain order. Sorts the list. Type has to be comparable.
+    - 120
+    - Read integer from stdin
+    - Read an integer value from the standard input into the variable n
+    - import "fmt"
+    - _, err := fmt.Scan(&n)
+    - Warning: if the input has a leading 0, it will be interpreted as octal!
+    - Alternative implementation:
+    - import "fmt"
+    - _, err := fmt.Scanf("%d", &n)
+    - 121
+    - UDP listen and read
+    - Listen UDP traffic on port p and read 1024 bytes into the buffer b.
+    - import (
+        - "fmt"
+        - "net"
+        - "os"
+    - )
+    - ServerAddr,err := net.ResolveUDPAddr("udp",p)
+    - if err != nil {
+        - return err
+    - }
+    - ServerConn, err := net.ListenUDP("udp", ServerAddr)
+    - if err != nil {
+        - return err
+    - }
+    - defer ServerConn.Close()
+    - n,addr,err := ServerConn.ReadFromUDP(b[:1024])
+    - if err != nil {
+        - return err
+    - }
+    - if n<1024 {
+        - return fmt.Errorf("Only %d bytes could be read.", n)
+    - }
+    - 122
+    - Declare an enumeration
+    - Create an enumerated type Suit with 4 possible values SPADES, HEARTS, DIAMONDS, CLUBS.
+    - type Suit int
+    - 
+    - const (
+        - Spades Suit = iota
+        - Hearts
+        - Diamonds
+        - Clubs
+    - )
+    - Go doesn't have enumerations.
+    - The 4 constants have values 0, 1, 2, 3.
+    - 123
+    - Assert condition
+    - Verify that predicate isConsistent returns true, otherwise report assertion violation.
+    - Explain if the assertion is executed even in production environment or not.
+    - if !isConsistent() {
+        - panic("State consistency violated")
+    - }
+    - Go doesn't provide assertions.
+    - But it's still possible to crash when desired.
+    - 124
+    - Binary search for a value in sorted array
+    - Write the function binarySearch which returns the index of an element having the value x in the sorted array a, or -1 if no such element exists.
+    - func binarySearch(a []T, x T) int {
+        - imin, imax := 0, len(a)-1
+        - for imin <= imax {
+            - imid := imin + (imax-imin) / 2
+            - switch {
+            - case a[imid]―x:
+                - return imid
+            - case a[imid] < x:
+                - imin = imid + 1
+            - default:
+                - imax = imid - 1
+            - }
+        - }
+        - return -1
+    - }
+    - Iterative algorithm.
+    - It does not always return the smallest possible index.
+    - You may implement this for any element type T that is ordered.
+    - Alternative implementation:
+    - import "sort"
+    - func binarySearch(a []int, x int) int {
+        - i := sort.SearchInts(a, x)
+        - if i < len(a) && a[i]―x {
+            - return i
+        - }
+        - return -1
+    - }
+    - If the elements have type int, then use standard library's sort.SearchInts.
+    - It returns the smallest matching index.
+    - Alternative implementation:
+    - import "sort"
+    - func binarySearch(a []T, x T) int {
+        - f := func(i int) bool { return a[i] >= x }
+        - i := sort.Search(len(a), f)
+        - if i < len(a) && a[i]―x {
+            - return i
+        - }
+        - return -1
+    - }
+    - This uses the standard library generic-purpose sort.Search. Read the documentation carefully.
+    - It returns the smallest matching index.
+    - Alternative implementation:
+    - import "slices"
+    - func binarySearch(a []T, x T) int {
+        - if i, ok := slices.BinarySearch(a, x); ok {
+            - return i
+        - } else {
+            - return -1
+        - }
+    - }
+    - This generic func slices.BinarySearch works for all slice types
+    - 125
+    - Measure function call duration
+    - measure the duration t, in nanoseconds, of a call to the function foo. Print this duration.
+    - import "time"
+    - t1 := time.Now()
+    - foo()
+    - t := time.Since(t1)
+    - ns := int64(t / time.Nanosecond)
+    - fmt.Printf("%dns\n", ns)
+    - t1 has type time.Time.
+    - t has type time.Duration.
+    - Alternative implementation:
+    - import "time"
+    - t1 := time.Now()
+    - foo()
+    - t := time.Since(t1)
+    - ns := t.Nanoseconds()
+    - fmt.Printf("%dns\n", ns)
+    - t1 has type time.Time.
+    - t has type time.Duration.
+    - ns has type int64.
+    - 126
+    - Multiple return values
+    - Write a function foo that returns a string and a boolean value.
+    - func foo() (string, bool) {
+        - return "Too good to be", true
+    - }
+    - 127
+    - Source code inclusion
+    - Import the source code for the function foo body from a file "foobody.txt".
+    - import _  "embed"
+    - //go:embed foobody.txt
+    - var s string
+    - 
+    - 128
+    - Breadth-first traversing of a tree
+    - Call a function f on every node of a tree, in breadth-first prefix order
+    - func (root *Tree) Bfs(f func(*Tree)) {
+        - if root―nil {
+            - return
+        - }
+        - queue := []*Tree{root}
+        - for len(queue) > 0 {
+            - t := queue[0]
+            - queue = queue[1:]
+            - f(t)
+            - queue = append(queue, t.Children...)
+        - }
+    - }
+    - Bfs is a method of type *Tree, and takes function f as an argument.
+    - 
+    - The queue grows and shrinks during traversal, until all nodes have been visited.
+    - 129
+    - Breadth-first traversal in a graph
+    - Call the function f on every vertex accessible from the vertex start, in breadth-first prefix order
+    - func (start *Vertex) Bfs(f func(*Vertex)) {
+        - queue := []*Vertex{start}
+        - seen := map[*Vertex]bool{start: true}
+        - for len(queue) > 0 {
+            - v := queue[0]
+            - queue = queue[1:]
+            - f(v)
+            - for next, isEdge := range v.Neighbours {
+                - if isEdge && !seen[next] {
+                    - queue = append(queue, next)
+                    - seen[next] = true
+                - }
+            - }
+        - }
+    - }
+    - Bfs is a method of type *Vertex : the receiver is the start node.
+    - The function f is a parameter of the traversal method.
+    - 130
+    - Depth-first traversal in a graph
+    - Call th function f on every vertex accessible from the vertex v, in depth-first prefix order
+    - func (v *Vertex) Dfs(f func(*Vertex), seen map[*Vertex]bool) {
+        - seen[v] = true
+        - f(v)
+        - for next, isEdge := range v.Neighbours {
+            - if isEdge && !seen[next] {
+                - next.Dfs(f, seen)
+            - }
+        - }
+    - }
+    - Dfs is a method of type *Vertex : the receiver is the start node.
+    - The function f is a parameter of the traversal method.
+    - Start with an empty map as initial seen parameter.
+    - Alternative implementation:
+    - func (v *Vertex[L]) Dfs(f func(*Vertex[L]), seen map[*Vertex[L]]bool) {
+        - seen[v] = true
+        - f(v)
+        - for next, isEdge := range v.Neighbours {
+            - if isEdge && !seen[next] {
+                - next.Dfs(f, seen)
+            - }
+        - }
+    - }
+    - Dfs is a method of type *Vertex : the receiver is the start node.
+    - The function f is a parameter of the traversal method.
+    - Start with an empty map as initial seen parameter.
+    - Vertex has a type parameter L as its node label.
+    - 131
+    - Successive conditions
+    - Execute f1 if condition c1 is true, or else f2 if condition c2 is true, or else f3 if condition c3 is true.
+    - Don't evaluate a condition when a previous condition was true.
+    - switch {
+    - case c1:
+        - f1()
+    - case c2:
+        - f2()
+    - case c3:
+        - f3()
+    - }
+    - 132
+    - Measure duration of procedure execution
+    - Run the procedure f, and return the duration of the execution of f.
+    - import "time"
+    - func clock(f func()) time.Duration {
+        - t := time.Now()
+        - f()
+        - return time.Since(t)
+    - }
+    - You may use this clock function to time any piece of code, by wrapping the code in a closure of type func().
+    - 133
+    - Case-insensitive string contains
+    - Set boolean ok to true if string word is contained in string s as a substring, even if the case doesn't match, or to false otherwise.
+    - import "strings"
+    - lowerS, lowerWord := strings.ToLower(s), strings.ToLower(word)
+    - ok := strings.Contains(lowerS, lowerWord)
+    - Package strings has no case-insensitive version of Contains, so we have to convert to lowercase (or uppercase) first.
+    - 134
+    - Create a new list
+    - Declare and initialize a new list items, containing 3 elements a, b, c.
+    - items := []T{a, b, c}
+    - This creates a slice of type T.
+    - 135
+    - Remove item from list, by its value
+    - Remove at most 1 item from list items, having the value x.
+    - This will alter the original list or return a new list, depending on which is more idiomatic.
+    - If there are several occurrences of x in items, remove only one of them. If x is absent, keep items unchanged.
+    - for i, y := range items {
+        - if y―x {
+            - items = append(items[:i], items[i+1:]...)
+            - break
+        - }
+    - }
+    - First find a matching index i. Then remove at position i.
+    - 
+    - Warning: you may have a memory leak at the last element of the original list, if the items have a pointer type.
+    - Alternative implementation:
+    - for i, y := range items {
+        - if y―x {
+            - copy(items[i:], items[i+1:])
+            - items[len(items)-1] = nil
+            - items = items[:len(items)-1]
+            - break
+        - }
+    - }
+    - First find a matching index i. Then remove at position i.
+    - This code is for pointer value type, and has no memory leak.
+    - Alternative implementation:
+    - import "slices"
+    - func removeFirstByValue[S ~[]T, T comparable](items *S, x T) {
+        - for i, y := range *items {
+            - if y―x {
+                - items = slices.Delete(*items, i, i+1)
+                - return
+            - }
+        - }
+    - }
+    - removeFirstByValue is generic. Its type parameter T has a constraint: must be comparable with―.
+    - Alternative implementation:
+    - import "slices"
+    - func removeFirstByValue[S ~[]T, T comparable](items *S, x T) {
+        - if i := slices.Index(*items, x); i != -1 {
+            - items = slices.Delete(*items, i, i+1)
+        - }
+    - }
+    - removeFirstByValue is generic. Its type parameters S, T have a constraint: T must be comparable with―.
+    - 136
+    - Remove all occurrences of a value from a list
+    - Remove all occurrences of the value x from list items.
+    - This will alter the original list or return a new list, depending on which is more idiomatic.
+    - items2 := make([]T, 0, len(items))
+    - for _, v := range items {
+        - if v != x {
+            - items2 = append(items2, v)
+        - }
+    - }
+    - This is simple and runs in linear time.
+    - However, it allocates memory for the new slice items2.
+    - T is the type of the elements.
+    - Alternative implementation:
+    - j := 0
+    - for i, v := range items {
+        - if v != x {
+            - items[j] = items[i]
+            - j++
+        - }
+    - }
+    - items = items[:j]
+    - This filters items in-place in linear time.
+    - But don't use it with pointer elements, because you would have a memory leak at the end of the underlying array.
+    - Alternative implementation:
+    - j := 0
+    - for i, v := range items {
+        - if v != x {
+            - items[j] = items[i]
+            - j++
+        - }
+    - }
+    - for k := j; k < len(items); k++ {
+        - items[k] = nil
+    - }
+    - items = items[:j]
+    - This filters items in-place in linear time.
+    - The "tail" elements are set to nil to leverage garbage collection, avoiding a memory leak.
+    - Alternative implementation:
+    - func removeAll[S ~[]T, T comparable](items *S, x T) {
+        - j := 0
+        - for i, v := range *items {
+            - if v != x {
+                - (*items)[j] = (*items)[i]
+                - j++
+            - }
+        - }
+        - var zero T
+        - for k := j; k < len(*items); k++ {
+            - (*items)[k] = zero
+        - }
+        - items = (*items)[:j]
+    - }
+    - The type parameter T has a constraint: it must be comparable with→
+    - In case T contains pointers, zeroing discarded elements helps garbage collection.
+    - Alternative implementation:
+    - import "slices"
+    - items = slices.DeleteFunc(items, func(e T) bool {
+        - return e―x
+    - })
+    - T is the type of the elements.
+    - 137
+    - Check if string contains only digits
+    - Set the boolean b to true if the string s contains only characters in the range '0'..'9', false otherwise.
+    - b := true
+    - for _, c := range s {
+        - if c < '0' || c > '9' {
+            - b = false
+            - break
+        - }
+    - }
+    - c has type rune.
+    - Alternative implementation:
+    - import "strings"
+    - isNotDigit := func(c rune) bool { return c < '0' || c > '9' }
+    - b := strings.ContainsFunc(s, isNotDigit)
+    - 138
+    - Create temp file
+    - Create a new temporary file on the filesystem.
+    - import "os"
+    - tmpfile, err := os.CreateTemp("", "")
+    - tmpfile has type *os.File.
+    - 
+    - Use tmpfile.Name() if you need the path string.
+    - 
+    - Consider defer os.Remove(tmpfile.Name()) for cleanup.
+    - 139
+    - Create temp directory
+    - Create a new temporary folder on filesystem, for writing.
+    - import "os"
+    - dir, err := os.MkdirTemp("", "")
+    - dir is a string.
+    - 
+    - Consider defer os.RemoveAll(dir) for cleanup.
+    - 140
+    - Delete map entry
+    - Delete from map m the entry having key k.
+    - 
+    - Explain what happens if k is not an existing key in m.
+    - delete(m, k)
+    - delete is a built-in function.
+    - 
+    - It's safe even if k is already absent from m.
+    - 141
+    - Iterate in sequence over two lists
+    - Iterate in sequence over the elements of the list items1 then items2. For each iteration print the element.
+    - for _, v := range items1 {
+        - fmt.Println(v)
+    - }
+    - for _, v := range items2 {
+        - fmt.Println(v)
+    - }
+    - No magic sugar. Write 2 loops.
+    - 142
+    - Hexadecimal digits of an integer
+    - Assign to string s the hexadecimal representation (base 16) of integer x.
+    - 
+    - E.g. 999 -> "3e7"
+    - import "strconv"
+    - s := strconv.FormatInt(x, 16)
+    - Alternative implementation:
+    - import "fmt"
+    - import "math/big"
+    - s := fmt.Sprintf("%x", x)
+    - x has type *big.Int.
+    - 
+    - This works because *big.Int implements the fmt.Formatter interface.
+    - 
+    - %x is the "verb" for base 16. Not to be confused with the variable name x.
+    - 143
+    - Iterate alternatively over two lists
+    - Iterate alternatively over the elements of the lists items1 and items2. For each iteration, print the element.
+    - 
+    - Explain what happens if items1 and items2 have different size.
+    - for i := 0; i < len(items1) || i < len(items2); i++ {
+        - if i < len(items1) {
+            - fmt.Println(items1[i])
+        - }
+        - if i < len(items2) {
+            - fmt.Println(items2[i])
+        - }
+    - }
+    - Alternative implementation:
+    - import "fmt"
+    - for i := range min(len(items1), len(items2)) {
+        - fmt.Println(items1[i])
+        - fmt.Println(items2[i])
+        - 
+    - }
+    - 144
+    - Check if file exists
+    - Set boolean b to true if file at path fp exists on filesystem; false otherwise.
+    - 
+    - Beware that you should not do this and then in the next instruction assume the result is still valid, this is a race condition on any multitasking OS.
+    - import "os"
+    - _, err := os.Stat(fp)
+    - b := !os.IsNotExist(err)
+    - There's no specific existence check func in standard library, so we have to inspect an error return value.
+    - 145
+    - Print log line with datetime
+    - Print message msg, prepended by current date and time.
+    - 
+    - Explain what behavior is idiomatic: to stdout or stderr, and what the date format is.
+    - import "log"
+    - log.Println(msg)
+    - This prints to os.Stderr by default, with a datetime prefix.
+    - 146
+    - Convert string to floating point number
+    - Extract floating point value f from its string representation s
+    - import "strconv"
+    - f, err := strconv.ParseFloat(s, 64)
+    - f has type float64.
+    - 147
+    - Remove all non-ASCII characters
+    - Create string t from string s, keeping only ASCII characters
+    - import "regexp"
+    - re := regexp.MustCompile("[[:^ascii:]]")
+    - t := re.ReplaceAllLiteralString(s, "")
+    - Alternative implementation:
+    - import (
+        - "fmt"
+        - "strings"
+        - "unicode"
+    - )
+    - t := strings.Map(func(r rune) rune {
+        - if r > unicode.MaxASCII {
+            - return -1
+        - }
+        - return r
+    - }, s)
+    - 148
+    - Read list of integers from stdin
+    - Read a list of integer numbers from the standard input, until EOF.
+    - import (
+        - "bufio"
+        - "os"
+        - "strconv"
+    - )
+    - var ints []int
+    - s := bufio.NewScanner(os.Stdin)
+    - s.Split(bufio.ScanWords)
+    - for s.Scan() {
+        - i, err := strconv.Atoi(s.Text())
+        - if err―nil {
+            - ints = append(ints, i)
+        - }
+    - }
+    - if err := s.Err(); err != nil {
+        - return err
+    - }
+    - 149
+    - Rescue the princess
+    - As an exception, this content is not under license CC BY-SA 3.0 like the rest of this website.
+    - 
+    - 150
+    - Remove trailing slash
+    - Remove the last character from the string p, if this character is a forward slash /
+    - import "strings"
+    - p = strings.TrimSuffix(p, "/")
+    - 151
+    - Remove string trailing path separator
+    - Remove last character from string p, if this character is the file path separator of current platform.
+    - 
+    - Note that this also transforms unix root path "/" into the empty string!
+    - import "fmt"
+    - import "os"
+    - import "strings"
+    - sep := fmt.Sprintf("%c", os.PathSeparator)
+    - p = strings.TrimSuffix(p, sep)
+    - os.PathSeparator is a rune, it must be converted to string.
+    - Alternative implementation:
+    - import "fmt"
+    - import "path/filepath"
+    - import "strings"
+    - sep := fmt.Sprintf("%c", filepath.Separator)
+    - p = strings.TrimSuffix(p, sep)
+    - filepath.Separator is a rune, it must be converted to string.
+    - 152
+    - Turn a character into a string
+    - Create string s containing only the character c.
+    - import "fmt"
+    - s := fmt.Sprintf("%c", c)
+    - 153
+    - Concatenate string with integer
+    - Create the string t as the concatenation of the string s and the integer i.
+    - import "fmt"
+    - t := fmt.Sprintf("%s%d", s, i)
+    - Alternative implementation:
+    - import "strconv"
+    - t := s + strconv.Itoa(i)
+    - This is faster than fmt.Sprintf.
+    - 154
+    - Halfway between two hex color codes
+    - Find color c, the average between colors c1, c2.
+    - 
+    - c, c1, c2 are strings of hex color codes: 7 chars, beginning with a number sign # .
+    - Assume linear computations, ignore gamma corrections.
+    - import "fmt"
+    - import "strconv"
+    - r1, _ := strconv.ParseInt(c1[1:3], 16, 0)
+    - r2, _ := strconv.ParseInt(c2[1:3], 16, 0)
+    - r := (r1 + r2) / 2
+    - 
+    - g1, _ := strconv.ParseInt(c1[3:5], 16, 0)
+    - g2, _ := strconv.ParseInt(c2[3:5], 16, 0)
+    - g := (g1 + g2) / 2
+    - 
+    - b1, _ := strconv.ParseInt(c1[5:7], 16, 0)
+    - b2, _ := strconv.ParseInt(c2[5:7], 16, 0)
+    - b := (b1 + b2) / 2
+    - 
+    - c := fmt.Sprintf("#%02X%02X%02X", r, g, b)
+    - For conciseness this assumes that input validity has already been checked, so we omit some returned errors.
+    - Alternative implementation:
+    - import "fmt"
+    - import "strconv"
+    - var buf [7]byte
+    - buf[0] = '#'
+    - for i := 0; i < 3; i++ {
+        - sub1 := c1[1+2*i : 3+2*i]
+        - sub2 := c2[1+2*i : 3+2*i]
+        - v1, _ := strconv.ParseInt(sub1, 16, 0)
+        - v2, _ := strconv.ParseInt(sub2, 16, 0)
+        - v := (v1 + v2) / 2
+        - sub := fmt.Sprintf("%02X", v)
+        - copy(buf[1+2*i:3+2*i], sub)
+    - }
+    - c := string(buf[:])
+    - Loops over each component r, g, b.
+    - 
+    - For conciseness this assumes that input validity has already been checked, so we omit some returned errors.
+    - 155
+    - Delete file
+    - Delete from filesystem the file having path filepath.
+    - import "os"
+    - err := os.Remove(filepath)
+    - 156
+    - Format integer with zero-padding
+    - Assign to the string s the value of the integer i in 3 decimal digits. Pad with zeros if i < 100. Keep all digits if i ≥ 1000.
+    - import "fmt"
+    - s := fmt.Sprintf("%03d", i)
+    - Flag 0 means "pad with zeroes, not with spaces".
+    - Flag 3 is the width.
+    - 157
+    - Declare constant string
+    - Initialize a constant planet with string value "Earth".
+    - const planet = "Earth"
+    - Type string is inferred.
+    - 158
+    - Random sublist
+    - Create a new list y from randomly picking exactly k elements from list x.
+    - 
+    - It is assumed that x has at least k elements.
+    - Each element must have same probability to be picked.
+    - Each element from x must be picked at most once.
+    - Explain if the original ordering is preserved or not.
+    - import "math/rand"
+    - y := make([]T, k)
+    - perm := rand.Perm(len(x))
+    - for i, v := range perm[:k] {
+        - y[i] = x[v]
+    - }
+    - Allocate a slice of T of size exactly k.
+    - perm is a slice of int of size len(x).
+    - This is O(len(x)) in space and runtime.
+    - 
+    - The original ordering is not preserved.
+    - 159
+    - Trie
+    - Define a Trie data structure, where entries have an associated value.
+    - (Not all nodes are entries)
+    - type Trie struct {
+        - c        rune
+        - children map[rune]*Trie
+        - isEntry  bool
+        - value    V
+    - }
+    - Using type rune, multi-byte characters are correctly handled.
+    - V is the type of the associated values.
+    - 160
+    - Detect if 32-bit or 64-bit architecture
+    - Execute f32() if platform is 32-bit, or f64() if platform is 64-bit.
+    - This can be either a compile-time condition (depending on target) or a runtime detection.
+    - import "strconv"
+    - if strconv.IntSize―32 {
+        - f32()
+    - }
+    - if strconv.IntSize―64 {
+        - f64()
+    - }
+    - 161
+    - Multiply all the elements of a list
+    - Multiply all the elements of the list elements by a constant c
+    - for i := range elements {
+        - elements[i] *= c
+    - }
+    - It is idiomatic to write this explicit loop.
+    - 162
+    - Execute procedures depending on options
+    - execute bat if b is a program option and fox if f is a program option.
+    - import "flag"
+    - var b = flag.Bool("b", false, "Do bat")
+    - var f = flag.Bool("f", false, "Do fox")
+    - 
+    - func main() {
+        - flag.Parse()
+        - if *b {
+            - bar()
+        - }
+        - if *f {
+            - fox()
+        - }
+    - }
+    - It is idiomatic to use package flag, and pass options as -b -f
+    - (with a dash).
+    - 163
+    - Print list elements by group of 2
+    - Print all the list elements, two by two, assuming list length is even.
+    - import "fmt"
+    - for i := 0; i+1 < len(list); i += 2 {
+        - fmt.Println(list[i], list[i+1])
+    - }
+    - 164
+    - Open URL in the default browser
+    - Open the URL s in the default browser.
+    - Set the boolean b to indicate whether the operation was successful.
+    - import "github.com/skratchdot/open-golang/open"
+    - b := open.Start(s)―nil
+    - Alternative implementation:
+    - var err error
+    - switch runtime.GOOS {
+    - case "linux":
+        - err = exec.Command("xdg-open", s).Start()
+    - case "windows":
+        - err = exec.Command("rundll32", "url.dll,FileProtocolHandler", s).Start()
+    - case "darwin":
+        - err = exec.Command("open", s).Start()
+    - default:
+        - err = fmt.Errorf("unsupported platform")
+    - }
+    - b := err―nil
+    - 165
+    - Last element of list
+    - Assign to the variable x the last element of the list items.
+    - x := items[len(items)-1]
+    - items is a slice.
+    - There is no shortcut, use len!
+    - Panics if the list is empty.
+    - 166
+    - Concatenate two lists
+    - Create the list ab containing all the elements of the list a, followed by all the elements of the list b.
+    - ab := append(a, b...)
+    - Warning! a and ab may or may not share the same underlying memory.
+    - Alternative implementation:
+    - var ab []T
+    - ab = append(append(ab, a...), b...)
+    - This ensures that ab is a new list (not sharing any memory with a and b).
+    - T is the type of the elements.
+    - Alternative implementation:
+    - ab := make([]T, len(a)+len(b))
+    - copy(ab, a)
+    - copy(ab[len(a):], b)
+    - 167
+    - Trim prefix
+    - Create the string t consisting of the string s with its prefix p removed (if s starts with p).
+    - import "strings"
+    - t := strings.TrimPrefix(s, p)
+    - 168
+    - Trim suffix
+    - Create string t consisting of string s with its suffix w removed (if s ends with w).
+    - import "strings"
+    - t := strings.TrimSuffix(s, w)
+    - 169
+    - String length
+    - Assign to the integer n the number of characters of the string s.
+    - Make sure that multibyte characters are properly handled.
+    - n can be different from the number of bytes of s.
+    - import "unicode/utf8"
+    - n := utf8.RuneCountInString(s)
+    - This assumes that s is encoded in UTF-8 (which is idiomatic in Go).
+    - 170
+    - Get map size
+    - Set n to the number of elements stored in mymap.
+    - 
+    - This is not always equal to the map capacity.
+    - n := len(mymap)
+    - 171
+    - Add an element at the end of a list
+    - Append the element x to the list s.
+    - s = append(s, x)
+    - 172
+    - Insert an entry in a map
+    - Insert value v for key k in map m.
+    - m[k] = v
+    - If m[k] already exists, then it is overwritten.
+    - 173
+    - Format a number with grouped thousands
+    - Number will be formatted with a comma separator between every group of thousands.
+    - import "golang.org/x/text/language"
+    - import "golang.org/x/text/message"
+    - p := message.NewPrinter(language.English)
+    - s := p.Sprintf("%d\n", 1000)
+    - 174
+    - Make HTTP POST request
+    - Make a HTTP request with method POST to the URL u
+    - import "net/http"
+    - response, err := http.Post(u, contentType, body)
+    - contentType is a string.
+    - body is a io.Reader which can be nil.
+    - Alternative implementation:
+    - import "net/http"
+    - import "net/url"
+    - response, err := http.PostForm(u, formValues)
+    - formValues has type net/url.Values
+    - 175
+    - Bytes to hex string
+    - From the array a of n bytes, build the equivalent hex string s of 2n digits.
+    - Each byte (256 possible values) is encoded as two hexadecimal characters (16 possible values per digit).
+    - import "encoding/hex"
+    - s := hex.EncodeToString(a)
+    - This is faster than fmt.Sprintf
+    - Alternative implementation:
+    - import "fmt"
+    - s := fmt.Sprintf("%x", a)
+    - %x base 16, lower-case, two characters per byte.
+    - 
+    - This is slower than hex.EncodeToString
+    - 176
+    - Hex string to byte array
+    - From hex string s of 2n digits, build the equivalent array a of n bytes.
+    - Each pair of hexadecimal characters (16 possible values per digit) is decoded into one byte (256 possible values).
+    - import "encoding/hex"
+    - a, err := hex.DecodeString(s)
+    - if err != nil {
+        - log.Fatal(err)
+    - }
+    - 177
+    - Find files for a list of filename extensions
+    - Construct a list L that contains all filenames that have the extension ".jpg" , ".jpeg" or ".png" in directory D and all its subdirectories.
+    - import "path/filepath"
+    - import "strings"
+    - L := []string{}
+    - err := filepath.Walk(D, func(path string, info os.FileInfo, err error) error {
+        - if err != nil {
+            - fmt.Printf("failure accessing a path %q: %v\n", path, err)
+            - return err
+        - }
+        - for _, ext := range []string{".jpg", ".jpeg", ".png"} {
+            - if strings.HasSuffix(path, ext) {
+                - L = append(L, path)
+                - break
+            - }
+        - }
+        - return nil
+    - })
+    - 178
+    - Check if point is inside rectangle
+    - Set boolean b to true if if the point with coordinates (x,y) is inside the rectangle with coordinates (x1,y1,x2,y2) , or to false otherwise.
+    - Describe if the edges are considered to be inside the rectangle.
+    - import "image"
+    - p := image.Pt(x, y)
+    - r := image.Rect(x1, y1, x2, y2)
+    - b := p.In(r)
+    - Points on the edge of the rectangle are considered as in the rectangle.
+    - 179
+    - Get center of a rectangle
+    - Return the center c of the rectangle with coördinates(x1,y1,x2,y2)
+    - import "image"
+    - c := image.Pt((x1+x2)/2, (y1+y2)/2)
+    - Implementation for x1, x2, y1 and y2 as int.
+    - 180
+    - List files in directory
+    - Create the list x containing the contents of the directory d.
+    - 
+    - x may contain files and subfolders.
+    - No recursive subfolder listing.
+    - import "os"
+    - x, err := os.ReadDir(d)
+    - x is a slice of os.FileInfo
+    - 182
+    - Quine program
+    - Output the source of the current program. A quine is a computer program that takes no input and produces a copy of its own source code as its only output.
+    - 
+    - Reading the source file from disk is cheating.
+    - package main
+    - 
+    - import "fmt"
+    - 
+    - func main() {
+        - fmt.Printf("%s%c%s%c\n", s, 0x60, s, 0x60)
+    - }
+    - 
+    - var s = `package main
+    - 
+    - import "fmt"
+    - 
+    - func main() {
+        - fmt.Printf("%s%c%s%c\n", s, 0x60, s, 0x60)
+    - }
+    - 
+    - var s = `
+    - 183
+    - Make HTTP PUT request
+    - Make a HTTP request with method PUT to the URL u
+    - import "net/http"
+    - req, err := http.NewRequest("PUT", u, body)
+    - if err != nil {
+        - return err
+    - }
+    - req.Header.Set("Content-Type", contentType)
+    - req.ContentLength = contentLength
+    - response, err := http.DefaultClient.Do(req)
+    - This assumes you know contentLength beforehand.
+    - body is a io.Reader which can be nil.
+    - 184
+    - Tomorrow
+    - Assign to t a string representing the day, month and year of the day after the current date.
+    - import "time"
+    - t := time.Now().Add(24 * time.Hour).Format("2006-01-02")
+    - 185
+    - Execute function in 30 seconds
+    - Schedule the execution of f(42) in 30 seconds.
+    - import "time"
+    - timer := time.AfterFunc(
+        - 30*time.Second,
+        - func() {
+            - f(42)
+        - })
+    - f is wrapped in an anonymous func having 0 arg and 0 return value.
+    - 
+    - The timer instance can be used to cancel the call.
+    - Alternative implementation:
+    - import "time"
+    - go func() {
+        - time.Sleep(30 * time.Second)
+        - f(42)
+    - }()
+    - The code after the goroutine launch executes immediately.
+    - 
+    - Consider adding proper synchronization where needed. Data races are forbidden!
+    - 186
+    - Exit program cleanly
+    - Exit a program cleanly indicating no error to OS
+    - import "os"
+    - os.Exit(0)
+    - Alternative implementation:
+    - import "os"
+    - defer os.Exit(0)
+    - defer would be used in order to run subsequent deferred statements before exiting
+    - 188
+    - Matrix multiplication
+    - Perform matrix multiplication of a real matrix a with nx rows and ny columns, a real matrix b with ny rows and nz columns and assign the value to a real matrix c with nx rows and nz columns.
+    - import "gonum.org/v1/gonum/mat"
+    - c := new(mat.Dense)
+    - c.Mul(a, b)
+    - 189
+    - Filter and transform list
+    - Produce a new list y containing the result of the function T applied to all elements e of the list x that match the predicate P.
+    - var y []Result
+    - for _, e := range x {
+        - if P(e) {
+            - y = append(y, T(e))
+        - }
+    - }
+    - No functional style: just a regular loop.
+    - 
+    - y is not fully allocated upfront because the number of matching elements is not known yet.
+    - 190
+    - Call an external C function
+    - Declare an external C function with the prototype
+    - 
+    - void foo(double *a, int n);
+    - 
+    - and call it, passing an array (or a list) of size 10 to a and 10 to n.
+    - 
+    - Use only standard features of your language.
+    - // void foo(double *a, int n);
+    - // double a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    - import "C"
+    - 
+    - C.foo(C.a, 10)
+    - 191
+    - Check if any value in a list is larger than a limit
+    - Given a one-dimensional array a, check if any value is larger than x, and execute the procedure f if that is the case
+    - for _, v := range a {
+        - if v > x {
+            - f()
+            - break
+        - }
+    - }
+    - Alternative implementation:
+    - import "slices"
+    - if slices.ContainsFunc(a, func(i int) bool {
+        - return i > x
+    - }) {
+        - f()
+    - }
+    - 192
+    - Declare a real variable with at least 20 digits
+    - Declare a real variable a with at least 20 digits; if the type does not exist, issue an error at compile time.
+    - import "math/big"
+    - a, _, err := big.ParseFloat("123456789.123456789123465789", 10, 200, big.ToZero)
+    - 2nd arg is the base.
+    - 3rd arg is the precision.
+    - 4th arg is the rounding mode.
+    - The precision is the maximum number of mantissa bits available to represent the value.
+    - 195
+    - Pass a two-dimensional array
+    - Pass an array a of real numbers to the procedure (resp. function) foo. Output the size of the array, and the sum of all its elements when each element is multiplied with the array indices i and j (assuming they start from one).
+    - import "fmt"
+    - func foo(a [][]int) {
+        - fmt.Println("array is ", len(a)[0], " x ", len(a))
+        - x := 0
+        - for i, v1 := range a {
+            - for j, v2 := range v1 {
+                - x += v2*(i+1)*(j+1)
+            - }
+        - }
+        - fmt.Println("result: ", x)
+    - }
+    - 196
+    - Pass a sub-array
+    - Given an integer array a of size n, pass the first, third, fifth and seventh, ... up to the m th element to a routine foo which sets all these elements to 42.
+    - func foo(a []int, m int) {
+        - n := len(a)
+        - for i := 0; i < m && i < n; i += 2 {
+            - a[i] = 42
+        - }
+    - }
+    - 197
+    - Get a list of lines from a file
+    - Retrieve the contents of file at path into a list of strings lines, in which each element is a line of the file.
+    - import "os"
+    - import "strings"
+    - func readLines(path string) ([]string, error) {
+        - b, err := os.ReadFile(path)
+        - if err != nil {
+            - return nil, err
+        - }
+        - lines := strings.Split(string(b), "\n")
+        - return lines, nil
+    - }
+    - Alternative implementation:
+    - import "os"
+    - import "bytes"
+    - func readLines(path string) ([][]byte, error) {
+        - b, err := os.ReadFile(path)
+        - if err != nil {
+            - return nil, err
+        - }
+        - lines := bytes.Split(b, []byte{'\n'})
+        - return lines, nil
+    - }
+    - This is an alternative solution, in case you prefer each line as a byte slice (instead of a string)
+    - Alternative implementation:
+    - import "os"
+    - import "slices"
+    - import "strings"
+    - func readLines(path string) ([]string, error) {
+        - b, err := os.ReadFile(path)
+        - if err != nil {
+            - return nil, err
+        - }
+        - lines := slices.Collect(strings.Lines(string(b)))
+        - return lines, nil
+    - }
+    - strings.Lines returns an iterator.
+    - 
+    - Warning: each line contains its original terminating newline.
+    - 198
+    - Abort program execution with error condition
+    - Abort program execution with error condition x (where x is an integer value)
+    - import "os"
+    - os.Exit(x)
+    - 199
+    - Truncate a file at the current file position
+    - Truncate a file F at the given file position.
+    - import "os"
+    - err := os.Truncate(F, position)
+    - 200
+    - Return hypotenuse
+    - Compute the hypotenuse h of the triangle where the sides adjacent to the square angle have lengths x and y.
+    - import "math"
+    - h := math.Hypot(x, y)
+    - 201
+    - Euclidean norm
+    - Calculate n, the Euclidean norm of data, where data is a list of floating point values.
+    - func Euclidean(data []float64) float64 {
+        - n := 0.0
+        - for _, val := range data {
+            - n += val * val
+        - }
+        - return math.Sqrt(n)
+    - 202
+    - Sum of squares
+    - Calculate the sum of squares s of data, an array of floating point values.
+    - import "math"
+    - var s float64
+    - for _, d := range data {
+        - s += math.Pow(d, 2)
+    - }
+    - 203
+    - Calculate mean and standard deviation
+    - Calculate the mean m and the standard deviation s of the list of floating point values data.
+    - import "github.com/gonum/stat"
+    - m, s := stat.MeanStdDev(data, nil)
+    - github.com/gonum/stat is a third party package, but well established.
+    - 204
+    - Return fraction and exponent of a real number
+    - Given a real number a, print the fractional part and the exponent of the internal representation of that number. For 3.14, this should print (approximately)
+    - 
+    - 0.785 2
+    - import "math"
+    - fmt.Println(math.Frexp(a))
+    - 205
+    - Get an environment variable
+    - Read an environment variable with the name "FOO" and assign it to the string variable foo. If it does not exist or if the system does not support environment variables, assign a value of "none".
+    - import "os"
+    - foo, ok := os.LookupEnv("FOO")
+    - if !ok {
+        - foo = "none"
+    - }
+    - Alternative implementation:
+    - import "os"
+    - foo := os.Getenv("FOO")
+    - if foo―"" {
+        - foo = "none"
+    - }
+    - This is fine if empty string means "no value" in your use case.
+    - 
+    - To distinguish between an empty value and an unset value, use os.LookupEnv.
+    - Alternative implementation:
+    - import "cmp"
+    - import "os"
+    - foo := cmp.Or(os.Getenv("FOO"), "none")
+    - 206
+    - Switch statement with strings
+    - Execute different procedures foo, bar, baz and barfl if the string str contains the name of the respective procedure. Do it in a way natural to the language.
+    - switch str {
+    - case "foo":
+        - foo()
+    - case "bar":
+        - bar()
+    - case "baz":
+        - baz()
+    - case "barfl":
+        - barfl()
+    - }
+    - 207
+    - Allocate a list that is automatically deallocated
+    - Allocate a list a containing n elements (n assumed to be too large for a stack) that is automatically deallocated when the program exits the scope it is declared in.
+    - a := make([]T, n)
+    - Elements have type T.
+    - a is garbage-collected after the program exits its scope, unless we let it "escape" by taking its reference.
+    - The runtime decides if a lives in the stack on in the heap.
+    - 208
+    - Formula with arrays
+    - Given the arrays a,b,c,d of equal length and the scalar e, calculate a = e*(a+b*c+cos(d)).
+    - Store the results in a.
+    - import "math"
+    - func applyFormula(a, b, c, d []float64, e float64) {
+        - for i, v := range a {
+            - a[i] = e * (v + b[i] + c[i] + math.Cos(d[i]))
+        - }
+    - }
+    - 209
+    - Type with automatic deep deallocation
+    - Declare a type t which contains a string s and an integer array n with variable size, and allocate a variable v of type t. Allocate v.s and v.n and set them to the values "Hello, world!" for s and [1,4,9,16,25], respectively. Deallocate v, automatically deallocating v.s and v.n (no memory leaks).
+    - type t struct {
+        - s string
+        - n []int
+    - }
+    - 
+    - v := t{
+        - s: "Hello, world!",
+        - n: []int{1, 4, 9, 16, 25},
+    - }
+    - After v goes out of scope, v and all its fields will be garbage-collected, recursively
+    - 210
+    - Compiler version and options
+    - Assign, at runtime, the compiler version and the options the program was compiled with to variables version and options, respectively, and print them. For interpreted languages, substitute the version of the interpreter.
+    - 
+    - Example output:
+    - 
+    - GCC version 10.0.0 20190914 (experimental)
+    - mtune=generic -march=x86-64
+    - import "runtime"
+    - version := runtime.Version()
+    - 211
+    - Create folder
+    - Create the folder at path on the filesystem
+    - import "os"
+    - err := os.Mkdir(path, os.ModeDir)
+    - This works only if path's parent already exists.
+    - Alternative implementation:
+    - import "os"
+    - err := os.MkdirAll(path, os.ModeDir)
+    - MkdirAll creates any necessary parents.
+    - 212
+    - Check if folder exists
+    - Set the boolean b to true if path exists on the filesystem and is a directory; false otherwise.
+    - import "os"
+    - info, err := os.Stat(path)
+    - b := !os.IsNotExist(err) && info.IsDir()
+    - 214
+    - Pad string on the right
+    - Append extra character c at the end of string s to make sure its length is at least m.
+    - The length is the number of characters, not the number of bytes.
+    - import "strings"
+    - import "utf8"
+    - if n := utf8.RuneCountInString(s); n < m {
+        - s += strings.Repeat(c, m-n)
+    - }
+    - c here is a one-character string
+    - 215
+    - Pad string on the left
+    - Prepend extra character c at the beginning of string s to make sure its length is at least m.
+    - The length is the number of characters, not the number of bytes.
+    - import "strings"
+    - import "utf8"
+    - if n := utf8.RuneCountInString(s); n < m {
+        - s = strings.Repeat(c, m-n) + s
+    - }
+    - c here is a one-character string
+    - 216
+    - Pad a string on both sides
+    - Add the extra character c at the beginning and ending of string s to make sure its length is at least m.
+    - After the padding the original content of s should be at the center of the result.
+    - The length is the number of characters, not the number of bytes.
+    - 
+    - E.g. with s="abcd", m=10 and c="X" the result should be "XXXabcdXXX".
+    - import "encoding/utf8"
+    - import "strings"
+    - n := utf8.RuneCountInString(s)
+    - if n < m {
+        - nleft := (m - n) / 2
+        - nright := (m - n) - nleft
+        - left, right := strings.Repeat(string(c), nleft), strings.Repeat(string(c), nright)
+        - s = left + s + right
+    - }
+    - c is a rune
+    - 217
+    - Create a Zip archive
+    - Create a zip-file with filename name and add the files listed in list to that zip-file.
+    - import "archive/zip"
+    - import "bytes"
+    - import "os"
+    - import "io"
+    - buf := new(bytes.Buffer)
+    - w := zip.NewWriter(buf)
+    - for _, filename := range list {
+        - input, err := os.Open(filename)
+        - if err != nil {
+            - return err
+        - }
+        - output, err := w.Create(filename)
+        - if err != nil {
+            - return err
+        - }
+        - _, err = io.Copy(output, input)
+        - if err != nil {
+            - return err
+        - }
+    - }
+    - 
+    - err := w.Close()
+    - if err != nil {
+        - return err
+    - }
+    - 
+    - err = os.WriteFile(name, buf.Bytes(), 0777)
+    - if err != nil {
+        - return err
+    - }
+    - list contains filenames of files existing in the filesystem.
+    - In this example, the zip data is buffered in memory before writing to the filesystem.
+    - 218
+    - List intersection
+    - Create the list c containing all unique elements that are contained in both lists a and b.
+    - c should not contain any duplicates, even if a and b do.
+    - The order of c doesn't matter.
+    - seta := make(map[T]bool, len(a))
+    - for _, x := range a {
+        - seta[x] = true
+    - }
+    - setb := make(map[T]bool, len(a))
+    - for _, y := range b {
+        - setb[y] = true
+    - }
+    - 
+    - var c []T
+    - for x := range seta {
+        - if setb[x] {
+            - c = append(c, x)
+        - }
+    - }
+    - Convert to sets, then iterate in one pass.
+    - The runtime cost is O(n).
+    - Elements have type T.
+    - The final order is indeterminate.
+    - Alternative implementation:
+    - func intersection[S ~[]T, T comparable](a, b S) S {
+        - seta := make(map[T]bool, len(a))
+        - for _, x := range a {
+            - seta[x] = true
+        - }
+        - setb := make(map[T]bool, len(b))
+        - for _, y := range b {
+            - setb[y] = true
+        - }
+        - 
+        - var c S
+        - for x := range seta {
+            - if setb[x] {
+                - c = append(c, x)
+            - }
+        - }
+        - return c
+    - }
+    - Convert to sets, then iterate in one pass.
+    - The runtime cost is O(n).
+    - The final order is indeterminate.
+    - Works for any type parameter T.
+    - Alternative implementation:
+    - func intersection[S ~[]T, T comparable](a, b S) S {
+        - s, l := a, b
+        - if len(b) < len(a) {
+            - s, l = b, a
+        - }
+        - 
+        - set := make(map[T]struct{}, len(s))
+        - for _, x := range s {
+            - set[x] = struct{}{}
+        - }
+        - 
+        - c := make(S, 0, len(s))
+        - for _, x := range l {
+            - if _, found := set[x]; found {
+                - c = append(c, x)
+                - delete(set, x)
+            - }
+        - }
+        - return c
+    - }
+    - Convert the smallest slices to a set, then iterate on the other slice to see which elements are also in the set.
+    - Duplicate elements are ignored.
+    - The final order is indeterminate.
+    - Works for any comparable type T.
+    - 
+    - 
+    - Complexity: O(N) [N = len(a)+len(b)]
+    - Memory: O(N) [N = min(len(a), len(b)]
+    - 219
+    - Replace multiple spaces with single space
+    - Create the string t from the value of string s with each sequence of spaces replaced by a single space.
+    - 
+    - Explain if only the space characters will be replaced, or the other whitespaces as well: tabs, newlines.
+    - import "regexp"
+    - whitespaces := regexp.MustCompile(`\s+`)
+    - t := whitespaces.ReplaceAllString(s, " ")
+    - The whitespaces regexp can be reused.
+    - 220
+    - Create a tuple value
+    - Create t consisting of 3 values having different types.
+    - 
+    - Explain if the elements of t are strongly typed or not.
+    - t := []any{
+        - 2.5,
+        - "hello",
+        - make(chan int),
+    - }
+    - A slice of empty interface may hold any values (not strongly typed).
+    - Alternative implementation:
+    - a, b, c := 2.5, "hello", make(chan int)
+    - a, b, c are strongly typed and could hold the multiple return values of a func.
+    - 
+    - While a, b, c can most often be used like a tuple, they are technically not a tuple named t.
+    - 221
+    - Remove all non-digits characters
+    - Create string t from string s, keeping only digit characters 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+    - import "regexp"
+    - re := regexp.MustCompile("[^\\d]")
+    - t := re.ReplaceAllLiteralString(s, "")
+    - 222
+    - Find the first index of an element in list
+    - Set i to the first index in list items at which the element x can be found, or -1 if items does not contain x.
+    - i := -1
+    - for j, e := range items {
+        - if e―x {
+            - i = j
+            - break
+        - }
+    - }
+    - Explicit loop, for your own strongly typed helper func.
+    - Alternative implementation:
+    - import "slices"
+    - i := slices.Index(items, x)
+    - This generic func slices.Index works for all slice types
+    - 223
+    - for else loop
+    - Loop through list items checking a condition. Do something else if no matches are found.
+    - 
+    - A typical use case is looping through a series of containers looking for one that matches a condition. If found, an item is inserted; otherwise, a new container is created.
+    - 
+    - These are mostly used as an inner nested loop, and in a location where refactoring inner logic into a separate function reduces clarity.
+    - for _, item := range items {
+        - if item―"baz" {
+            - fmt.Println("found it")
+            - goto exit
+        - }
+    - }
+    - {
+        - fmt.Println("not found")
+    - }
+    - exit:
+    - Go does not have a for...else construct, but a structured goto label works well.
+    - 224
+    - Add element to the beginning of the list
+    - Insert the element x at the beginning of the list items.
+    - items = append([]T{x}, items...)
+    - items has type []T.
+    - This implementation always allocates a full new slice.
+    - Alternative implementation:
+    - items = append(items, x)
+    - copy(items[1:], items)
+    - items[0] = x
+    - This implementation is verbose, but it will often not allocate, when items has enough capacity.
+    - Alternative implementation:
+    - func prepend[S ~[]T, T any](items *S, x ...T) {
+        - items = append(x, *items...)
+    - }
+    - This generic func always allocates a full new slice.
+    - The variadic argument x accepts one or more values to be inserted at the beginning.
+    - Alternative implementation:
+    - func prepend[S ~[]T, T any](items *S, x ...T) {
+        - items = append(*items, x...)
+        - copy((*items)[len(x):], *items)
+        - copy(*items, x)
+    - }
+    - This generic func does not always allocate (depending on the capacity of items).
+    - The variadic argument x accepts one or more values to insert at the beginning.
+    - 225
+    - Declare and use an optional argument
+    - Declare an optional integer argument x to procedure f, printing out "Present" and its value if it is present, "Not present" otherwise
+    - func f(x ...int) {
+        - if len(x) > 0 {
+            - println("Present", x[0])
+        - } else {
+            - println("Not present")
+        - }
+    - }
+    - Go does not have optional arguments, but to some extend, they can be mimicked with a variadic parameter.
+    - x is a variadic parameter, which must be the last parameter for the function f.
+    - Strictly speaking, x is a list of integers, which might have more than one element. These additional elements are ignored.
+    - 226
+    - Delete last element from list
+    - Remove the last element from the list items.
+    - items = items[:len(items)-1]
+    - If items is already empty, this will panic with "slice bounds out of range".
+    - Warning: the last element still exists beyond len(items), thus it won't be garbage collected.
+    - Alternative implementation:
+    - import "slices"
+    - items = slices.Delete(items, len(items)-1, len(items))
+    - 227
+    - Copy a list
+    - Create the new list y containing the same elements as the list x.
+    - 
+    - Subsequent modifications of y must not affect x (except for the contents referenced by the elements themselves if they contain pointers).
+    - y := make([]T, len(x))
+    - copy(y, x)
+    - Elements have type T
+    - Note that the destination is the first argument of copy.
+    - Alternative implementation:
+    - import "slices"
+    - y := slices.Clone(x)
+    - This generic Clone func accepts x of any slice type
+    - 228
+    - Copy a file
+    - Copy the file at path src to dst.
+    - import "os"
+    - func copy(dst, src string) error {
+        - data, err := os.ReadFile(src)
+        - if err != nil {
+            - return err
+        - }
+        - stat, err := os.Stat(src)
+        - if err != nil {
+            - return err
+        - }
+        - return os.WriteFile(dst, data, stat.Mode())
+    - }
+    - This is fine if the file is small enough to fit in memory.
+    - Warning: in Unix, the destination file's mode and permission bits may be different from the source file's, because umask is applied.
+    - Alternative implementation:
+    - import "os"
+    - func copy(dst, src string) error {
+        - data, err := os.ReadFile(src)
+        - if err != nil {
+            - return err
+        - }
+        - stat, err := os.Stat(src)
+        - if err != nil {
+            - return err
+        - }
+        - err = os.WriteFile(dst, data, stat.Mode())
+        - if err != nil {
+            - return err
+        - }
+        - return os.Chmod(dst, stat.Mode())
+    - }
+    - This is fine if the file is small enough to fit in memory.
+    - This preserves the source file's mode and permission bits (overriding umask in Unix).
+    - Alternative implementation:
+    - import "io"
+    - import "os"
+    - func copy(dst, src string) error {
+        - f, err := os.Open(src)
+        - if err != nil {
+            - return err
+        - }
+        - defer f.Close()
+        - stat, err := f.Stat()
+        - if err != nil {
+            - return err
+        - }
+        - g, err := os.OpenFile(dst, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, stat.Mode())
+        - if err != nil {
+            - return err
+        - }
+        - defer g.Close()
+        - _, err = io.Copy(g, f)
+        - if err != nil {
+            - return err
+        - }
+        - return os.Chmod(dst, stat.Mode())
+    - }
+    - This can handle large files.
+    - 229
+    - Cancel an operation
+    - Interrupt an ongoing processing p.
+    - import "context"
+    - ctx, cancel := context.WithCancel(context.Background())
+    - go p(ctx)
+    - 
+    - somethingElse()
+    - 
+    - cancel()
+    - Pass a Context to p and execute p.
+    - p is responsible for shutting down gracefully when ctx is canceled
+    - 230
+    - Timeout
+    - Cancel an ongoing processing p if it has not finished after 5s.
+    - import "context"
+    - ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+    - defer cancel()
+    - p(ctx)
+    - p is responsible for shutting down gracefully when ctx is canceled.
+    - 231
+    - Test if bytes are a valid UTF-8 string
+    - Set b to true if the byte sequence s consists entirely of valid UTF-8 character code points, false otherwise.
+    - import "unicode/utf8"
+    - b := utf8.Valid(s)
+    - s is a []byte.
+    - 232
+    - Read a command line boolean flag
+    - Print "verbose is true" if the flag -v was passed to the program command line, "verbose is false" otherwise.
+    - import "flag"
+    - var verbose = flag.Bool("v", false, "verbose")
+    - flag.Parse()
+    - fmt.Println("verbose is", *verbose)
+    - verbose has pointer type *bool.
+    - Call Parse only once, after all flags are defined and before flags are read.
+    - Flags must be passed before the non-flag arguments.
+    - 233
+    - Read a command line string flag
+    - Print the value of the flag -country passed to the program command line, or the default value "Canada" if no such flag was passed.
+    - import "flag"
+    - var country = flag.String("country", "Canada", "user home country")
+    - flag.Parse()
+    - fmt.Println("country is", *country)
+    - country has pointer type *string.
+    - Call Parse only once, after all flags are defined and before flags are read.
+    - Flags must be passed before the non-flag arguments.
+    - 234
+    - Encode bytes to base64
+    - Assign to the string s the standard base64 encoding of the byte array data, as specified by RFC 4648.
+    - import "encoding/base64"
+    - s := base64.StdEncoding.EncodeToString(data)
+    - 235
+    - Decode base64
+    - Assign to byte array data the bytes represented by the base64 string s, as specified by RFC 4648.
+    - import "encoding/base64"
+    - data, err := base64.StdEncoding.DecodeString(s)
+    - 236
+    - Large quotient
+    - Initialize a quotient q = a/b of arbitrary precision. a and b are large integers.
+    - import "math/big"
+    - q := new(big.Rat)
+    - q.SetString(str)
+    - str is a quotient string including numerator, slash, denominator.
+    - Alternative implementation:
+    - import "math/big"
+    - q := new(big.Rat)
+    - q.SetFrac(a, b)
+    - a, b have type *big.Int
+    - Alternative implementation:
+    - import "math/big"
+    - q := big.NewRat(a, b)
+    - This creates a quotient from int64 values.
+    - Subsequent computations have arbitrary precision.
+    - 237
+    - Xor integers
+    - Assign to c the result of (a xor b)
+    - c := a ^ b
+    - a, b, c have the same integer type (signed or unsigned)
+    - Alternative implementation:
+    - import "math/big"
+    - c := new(big.Int)
+    - c.Xor(a, b)
+    - a, b, c have big integer type *big.Int
+    - 238
+    - Xor byte arrays
+    - Write in a new byte array c the xor result of byte arrays a and b.
+    - 
+    - a and b have the same size.
+    - c := make([]byte, len(a))
+    - for i := range a {
+        - c[i] = a[i] ^ b[i]
+    - }
+    - Byte slices []byte are more idiomatic than arrays.
+    - Alternative implementation:
+    - var c T
+    - for i := range a {
+        - c[i] = a[i] ^ b[i]
+    - }
+    - T is a fixed-sized array type, e.g. [5]byte.
+    - 239
+    - Find first regular expression match
+    - Assign to string x the first word of string s consisting of exactly 3 digits, or the empty string if no such match exists.
+    - 
+    - A word containing more digits, or 3 digits as a substring fragment, must not match.
+    - import "regexp"
+    - re := regexp.MustCompile(`\b\d\d\d\b`)
+    - x := re.FindString(s)
+    - re may (and should) be reused.
+    - \b matches word boundaries.
+    - \d matches a single digit.
+    - 240
+    - Sort 2 lists together
+    - Lists a and b have the same length. Apply the same permutation to a and b to have them sorted based on the values of a.
+    - import "sort"
+    - type sorter struct {
+        - k []K
+        - t []T
+    - }
+    - 
+    - func (s *sorter) Len() int {
+        - return len(s.k)
+    - }
+    - 
+    - func (s *sorter) Swap(i, j int) {
+        - s.k[i], s.k[j] = s.k[j], s.k[i]
+        - s.t[i], s.t[j] = s.t[j], s.t[i]
+    - }
+    - 
+    - func (s *sorter) Less(i, j int) bool {
+        - return s.k[i] < s.k[j]
+    - }
+    - 
+    - sort.Sort(&sorter{
+        - k: a,
+        - t: b,
+    - })
+    - The custom type sorter implements the 3 methods of sort.Interface.
+    - Swap affects the order of 2 slices at once.
+    - 241
+    - Yield priority to other threads
+    - Explicitly decrease the priority of the current process, so that other execution threads have a better chance to execute now. Then resume normal execution and call the function busywork.
+    - import "runtime"
+    - runtime.Gosched()
+    - busywork()
+    - After Gosched, the execution of the current goroutine resumes automatically.
+    - 242
+    - Iterate over a set
+    - Call a function f on each element e of a set x.
+    - for e := range x {
+        - f(e)
+    - }
+    - x is implemented as a map whose values are ignored.
+    - 243
+    - Print list
+    - Print the contents of the list or array a on the standard output.
+    - import "fmt"
+    - fmt.Println(a)
+    - a is a slice.
+    - This works fine for simple types and structs.
+    - It won't dereference pointers.
+    - 244
+    - Print a map
+    - Print the contents of the map m to the standard output: keys and values.
+    - import "fmt"
+    - fmt.Println(m)
+    - This works fine for simple types of keys and values.
+    - It won't dereference pointers.
+    - Alternative implementation:
+    - import "fmt"
+    - fmt.Printf("%q", m)
+    - The verb %q prints strings with nice double-quotes.
+    - It's not the best for all types of keys and values, though.
+    - 245
+    - Print value of custom type
+    - Print the value of object x having custom type T, for log or debug.
+    - import fmt;
+    - fmt.Println(x)
+    - Will be more relevant if T implements fmt.Stringer
+    - 246
+    - Count distinct elements
+    - Set c to the number of distinct elements in the list items.
+    - distinct := make(map[T]bool)
+    - for _, v := range items {
+        - distinct[v] = true
+    - }
+    - c := len(distinct)
+    - This assumes the type T is comparable with→
+    - Alternative implementation:
+    - func count[T comparable](items []T) int {
+        - distinct := make(map[T]bool)
+        - for _, v := range items {
+            - distinct[v] = true
+        - }
+        - return len(distinct)
+    - }
+    - The type parameter T has a constraint: it must be comparable with→
+    - 247
+    - Filter list in-place
+    - Remove all the elements from list x that don't satisfy the predicate p, without allocating a new list.
+    - Keep all the elements that do satisfy p.
+    - 
+    - For languages that don't have mutable lists, refer to idiom #57 instead.
+    - j := 0
+    - for i, v := range x {
+        - if p(v) {
+            - x[j] = x[i]
+            - j++
+        - }
+    - }
+    - x = x[:j]
+    - Discarded elements are overwritten.
+    - x is resliced to its new length.
+    - If the elements of x have a pointer type, then you should take care of a potential memory leak by setting all x[j:] elements to nil.
+    - Alternative implementation:
+    - j := 0
+    - for i, v := range x {
+        - if p(v) {
+            - x[j] = x[i]
+            - j++
+        - }
+    - }
+    - for k := j; k < len(x); k++ {
+        - x[k] = nil
+    - }
+    - x = x[:j]
+    - When elements of x have pointer type, it is necessary to set discarded slice elements to nil, to avoid a memory leak.
+    - Alternative implementation:
+    - func Filter[S ~[]T, T any](x *S, p func(T) bool) {
+        - j := 0
+        - for i, v := range *x {
+            - if p(v) {
+                - (*x)[j] = (*x)[i]
+                - j++
+            - }
+        - }
+        - var zero T
+        - for k := j; k < len(*x); k++ {
+            - (*x)[k] = zero
+        - }
+        - x = (*x)[:j]
+    - }
+    - S, T are type parameters.
+    - In case T contains pointers, zeroing discarded elements helps garbage collection.
+    - Alternative implementation:
+    - import "slices"
+    - del := func(t *T) bool { return !p(t) }
+    - 
+    - x = slices.DeleteFunc(x, del)
+    - Elements have type T.
+    - del (discard) is the opposite of the function p (keep)
+    - 248
+    - Construct a 64-bit floating-point value
+    - Construct the "double precision" (64-bit) floating point number d from the mantissa m, the exponent e and the sign flag s (true means the sign is negative).
+    - import "math"
+    - if s {
+        - m = -m
+    - }
+    - d := math.Ldexp(m, e)
+    - 249
+    - Declare and assign multiple variables
+    - Define variables a, b and c in a concise way.
+    - Explain if they need to have the same type.
+    - a, b, c := 42, "hello", 5.0
+    - a, b and c may have different types.
+    - 250
+    - Pick a random value from a map
+    - Choose a value x from map m.
+    - m must not be empty. Ignore the keys.
+    - import "math/rand"
+    - func pick(m map[K]V) V {
+        - k := rand.Intn(len(m))
+        - i := 0
+        - for _, x := range m {
+            - if i―k {
+                - return x
+            - }
+            - i++
+        - }
+        - panic("unreachable")
+    - }
+    - Alternative implementation:
+    - import "math/rand"
+    - func pick(m map[K]V) V {
+        - k := rand.Intn(len(m))
+        - for _, x := range m {
+            - if k―0 {
+                - return x
+            - }
+            - k--
+        - }
+        - panic("unreachable")
+    - }
+    - Alternative implementation:
+    - func pick[K comparable, V any](m map[K]V) V {
+        - k := rand.Intn(len(m))
+        - i := 0
+        - for _, x := range m {
+            - if i―k {
+                - return x
+            - }
+            - i++
+        - }
+        - panic("unreachable")
+    - }
+    - The type parameter K has a constraint: it must be comparable with→
+    - Alternative implementation:
+    - import "sync"
+    - 
+    - var mu sync.RWMutex
+    - 
+    - func pick(m map[int]any) any {
+        - mu.RLock()
+        - defer mu.RUnlock()
+        - for _, v := range m {
+            - return v
+        - }
+        - return nil
+    - }
+    - 251
+    - Parse binary digits
+    - Extract integer value i from its binary string representation s (in radix 2)
+    - E.g. "1101" -> 13
+    - import "strconv"
+    - i, err := strconv.ParseInt(s, 2, 0)
+    - i has type int64
+    - 252
+    - Conditional assignment
+    - Assign to the variable x the string value "a" if calling the function condition returns true, or the value "b" otherwise.
+    - if condition() {
+        - x = "a"
+    - } else {
+        - x = "b"
+    - }
+    - No syntactic sugar
+    - 253
+    - Print stack trace
+    - Print the stack frames of the current execution thread of the program.
+    - import "runtime/debug"
+    - debug.PrintStack()
+    - Prints to standard error
+    - 254
+    - Replace value in list
+    - Replace all exact occurrences of "foo" with "bar" in the string list x
+    - for i, v := range x {
+        - if v―"foo" {
+            - x[i] = "bar"
+        - }
+    - }
+    - Alternative implementation:
+    - func replaceAll[T comparable](s []T, old, new T) {
+        - for i, v := range s {
+            - if v―old {
+                - s[i] = new
+            - }
+        - }
+    - }
+    - 
+    - replaceAll(x, "foo", "bar")
+    - The type parameter T has a constraint: it must be comparable with→
+    - 255
+    - Print a set
+    - Print the values of the set x to the standard output.
+    - The order of the elements is irrelevant and is not required to remain the same next time.
+    - import "fmt"
+    - for _, v := range x {
+        - fmt.Println(v)
+    - }
+    - note that this will only print the values of the set, not the keys
+    - 256
+    - Count backwards
+    - Print the numbers 5, 4, ..., 0 (included), one line per number.
+    - import "fmt"
+    - for i := 5; i >= 0; i-- {
+        - fmt.Println(i)
+    - }
+    - 257
+    - Traverse list backwards
+    - Print each index i and value x from the list items, from the last down to the first.
+    - import "fmt"
+    - for i := len(items) - 1; i >= 0; i-- {
+        - x := items[i]
+        - fmt.Printf("Item %d = %v \n", i, x)
+    - }
+    - Alternative implementation:
+    - import "slices"
+    - for i, x := range slices.Backward(items) {
+        - fmt.Printf("Item %d = %v \n", i, x)
+    - }
+    - 258
+    - Convert list of strings to list of integers
+    - Convert the string values from list a into a list of integers b.
+    - import "strconv"
+    - b := make([]int, len(a))
+    - var err error
+    - for i, s := range a {
+        - b[i], err = strconv.Atoi(s)
+        - if err != nil {
+            - return err
+        - }
+    - }
+    - 259
+    - Split on several separators
+    - Build the list parts consisting of substrings of the input string s, separated by any of the characters ',' (comma), '-' (dash), '_' (underscore).
+    - import "regexp"
+    - re := regexp.MustCompile("[,\\-_]")
+    - parts := re.Split(s, -1)
+    - Square brackets mean "match any of these characters".
+    - The special character dash must be escaped with a backslash.
+    - The backslash must be escaped with a backslash.
+    - 260
+    - Create an empty list of strings
+    - Declare a new list items of string elements, containing zero elements
+    - var items []string
+    - items is nil, which is idiomatic for an empty slice
+    - 261
+    - Format time hours-minutes-seconds
+    - Assign to the string x the value of fields (hours, minutes, seconds) of the date d, in format HH:MM:SS.
+    - import "time"
+    - x := d.Format("15:04:05")
+    - 262
+    - Count trailing zero bits
+    - Assign to t the number of trailing 0 bits in the binary representation of the integer n.
+    - 
+    - E.g. for n=112, n is 1110000 in base 2 ⇒ t=4
+    - import "math/bits"
+    - t := bits.TrailingZeros(n)
+    - n has type uint
+    - 266
+    - Repeated string
+    - Assign to the string s the value of the string v repeated n times, and write it out.
+    - 
+    - E.g. v="abc", n=5 ⇒ s="abcabcabcabcabc"
+    - import (
+        - "fmt"
+        - "strings"
+    - )
+    - s := strings.Repeat(v, n)
+    - fmt.Println(s)
+    - 267
+    - Pass string to argument that can be of any type
+    - Declare an argument x to a procedure foo that can be of any type. If the type of the argument is a string, print it, otherwise print "Nothing."
+    - 
+    - Test by passing "Hello, world!" and 42 to the procedure.
+    - import "fmt"
+    - func foo(x any) {
+        - if s, ok := x.(string); ok {
+            - fmt.Println(s)
+        - } else {
+            - fmt.Println("Nothing.")
+        - }
+    - }
+    - 
+    - func main() {
+        - foo("Hello, world!")
+        - foo(42)
+    - }
+    - An argument of type any may receive a value of any type.
+    - We convert it with a type assertion.
+    - 272
+    - Play FizzBuzz
+    - Fizz buzz is a children's counting game, and a trivial programming task used to affirm that a programmer knows the basics of a language: loops, conditions and I/O.
+    - 
+    - The typical fizz buzz game is to count from 1 to 100, saying each number in turn. When the number is divisible by 3, instead say "Fizz". When the number is divisible by 5, instead say "Buzz". When the number is divisible by both 3 and 5, say "FizzBuzz"
+    - import "fmt"
+    - import "strconv"
+    - for n:=1; n<=100; n++ {
+        - out:=""
+        - if n%3―0 {
+            - out=out+"Fizz"
+        - }
+        - if n%5―0 {
+            - out=out+"Buzz"
+        - }
+        - if out―"" {
+            - out=out+strconv.Itoa(n)
+        - }
+        - fmt.Println(out)
+        - }
+    - 273
+    - Check if folder is empty
+    - Set the boolean b to true if the directory at filepath p is empty (i.e. doesn't contain any other files and directories)
+    - import "os"
+    - dir, err := os.Open(p)
+    - if err != nil {
+        - panic(err)
+    - }
+    - defer dir.Close()
+    - _, err = dir.Readdirnames(1)
+    - b := err―io.EOF
+    - Error may happen, and should be dealt with.
+    - 
+    - b is set to true if EOF was encountered before reading 1 contained file name.
+    - 274
+    - Remove all white space characters
+    - Create the string t from the string s, removing all the spaces, newlines, tabulations, etc.
+    - import "strings"
+    - import "unicode"
+    - t := strings.Map(func(r rune) rune {
+        - if unicode.IsSpace(r) {
+            - return -1
+        - }
+        - return r
+    - }, s)
+    - In this mapping, -1 means "drop this character"
+    - 275
+    - Binary digits to byte array
+    - From the string s consisting of 8n binary digit characters ('0' or '1'), build the equivalent array a of n bytes.
+    - Each chunk of 8 binary digits (2 possible values per digit) is decoded into one byte (256 possible values).
+    - import "strconv"
+    - n := len(s) / 8
+    - a := make([]byte, n)
+    - for i := range a {
+        - b, err := strconv.ParseInt(s[i*8:i*8+8], 2, 0)
+        - if err != nil {
+            - log.Fatal(err)
+        - }
+        - a[i] = byte(b)
+    - }
+    - bytes are unsigned in Go (byte is an alias for uint8)
+    - 
+    - Consider handling the error appropriately, in case s is malformed.
+    - 276
+    - Insert an element in a set
+    - Insert an element e into the set x.
+    - x[e] = struct{}{}
+    - x has type map[E]struct{}
+    - Alternative implementation:
+    - x[e] = true
+    - x has type map[E]bool
+    - 277
+    - Remove an element from a set
+    - Remove the element e from the set x.
+    - 
+    - Explains what happens if e was already absent from x.
+    - delete(x, e)
+    - x has type map[E]struct{}
+    - 
+    - If x is nil or there is no such element, delete is a no-op.
+    - Alternative implementation:
+    - delete(x, e)
+    - x has type map[E]bool
+    - 
+    - If x is nil or there is no such element, delete is a no-op.
+    - 278
+    - Read one line from the standard input
+    - Read one line into the string line.
+    - 
+    - Explain what happens if EOF is reached.
+    - import "bufio"
+    - import "os"
+    - s := bufio.NewScanner(os.Stdin)
+    - if ok := s.Scan(); !ok {
+        - log.Fatal(s.Err())
+    - }
+    - line := s.Text()
+    - This handles any error (including EOF) by aborting the program execution.
+    - 
+    - WARNING: this works only for lines smaller than 64kB each.
+    - 279
+    - Read list of strings from the standard input
+    - Read all the lines (until EOF) into the list of strings lines.
+    - import "bufio"
+    - import "os"
+    - var lines []string
+    - s := bufio.NewScanner(os.Stdin)
+    - for s.Scan() {
+        - line := s.Text()
+        - lines = append(lines, line)
+    - }
+    - if err := s.Err(); err != nil {
+        - log.Fatal(err)
+    - }
+    - WARNING: this works only for lines smaller than 64kB each.
+    - 280
+    - Filter map
+    - Remove all the elements from the map m that don't satisfy the predicate p.
+    - Keep all the elements that do satisfy p.
+    - 
+    - Explain if the filtering happens in-place, i.e. if m is reused or if a new map is created.
+    - for k, v := range m {
+        - if !p(v) {
+            - delete(m, k)
+        - }
+    - }
+    - It is safe to use delete while iterating.
+    - m is filtered in-place.
+    - Alternative implementation:
+    - import "maps"
+    - maps.DeleteFunc(m, func(k K, v V) bool {
+        - return !p(v)
+    - })
+    - maps.DeleteFunc is generic and type-safe at compile time.
+    - 
+    - m is filtered in-place.
+    - 281
+    - Use a Point as a map key
+    - You have a Point with integer coordinates x and y. Create a map m with key type Point (or equivalent) and value type string. Insert "Hello" at position (42, 5).
+    - m := map[Point]string{}
+    - p := Point{x: 42, y: 5}
+    - m[p] = "Hello"
+    - Types comparable with―can be used as map keys.
+    - 282
+    - Use a custom type as map key
+    - Declare a type Foo, and create a new map with Foo as key type.
+    - 
+    - Mention the conditions on Foo required to make it a possible map key type.
+    - type Foo struct {
+        - name string
+        - x, y int
+    - }
+    - 
+    - m := make(map[Foo]string)
+    - Foo can be used as a key type if all of its fields are comparable with→
+    - 283
+    - Split with a custom string separator
+    - Build the list parts consisting of substrings of input string s, separated by the string sep.
+    - import "strings"
+    - parts := strings.Split(s, sep)
+    - parts has type []string.
+    - 284
+    - Create a zeroed list of integers
+    - Create a new list a (or array, or slice) of size n, where all elements are integers initialized with the value 0.
+    - a := make([]int, n)
+    - All elements have the default value 0.
+    - 286
+    - Iterate over characters of a string
+    - Print a line "Char i is c" for each character c of the string s, where i is the character index of c in s (not the byte index).
+    - 
+    - Make sure that multi-byte characters are properly handled, and count for a single character.
+    - i := 0
+    - for _, c := range s {
+        - fmt.Printf("Char %d is %c\n", i, c)
+        - i++
+    - }
+    - c is a rune.
+    - s is assumed encoded in UTF-8.
+    - 
+    - This first range variable is ignored, as it provides positions in bytes, instead of runes count.
+    - 287
+    - Number of bytes of a string
+    - Assign to n the number of bytes in the string s.
+    - 
+    - This can be different from the number of characters. If n includes more bytes than the characters per se (trailing zero, length field, etc.) then explain it. One byte is 8 bits.
+    - n := len(s)
+    - len counts bytes (not runes).
+    - 288
+    - Check if set contains a value
+    - Set the boolean b to true if the set x contains the element e, false otherwise.
+    - b := x[e]
+    - x has type map[E]bool
+    - Alternative implementation:
+    - _, b := x[e]
+    - x has type map[E]struct{}
+    - 289
+    - Concatenate two strings
+    - Create the string s by concatenating the strings a and b.
+    - s := a + b
+    - 290
+    - Sort sublist
+    - Sort the part of the list items from index i (included) to index j (excluded), in place, using the comparator c.
+    - 
+    - Elements before i and after j must remain unchanged.
+    - sub := items[i:j]
+    - sort.Slice(sub, func(a, b int) bool {
+        - return c(sub[a], sub[b])
+    - })
+    - A slice can be sorted in place.
+    - Alternative implementation:
+    - import "slices"
+    - slices.SortFunc(items[i:j], c)
+    - SortFunc is generic and type-safe at compile time.
+    - 291
+    - Remove sublist
+    - Delete all the elements from index i (included) to index j (excluded) from the list items.
+    - copy(items[i:], items[j:])
+    - for k, n := len(items)-j+i, len(items); k < n; k++ {
+        - items[k] = nil
+    - }
+    - items = items[:len(items)-j+i]
+    - Use this when the elements of items have a pointer type.
+    - 
+    - The for loop sets unused memory to nil, to avoid a memory leak.
+    - Alternative implementation:
+    - items = append(items[:i], items[j:]...)
+    - Use this when the elements don't have a pointer type.
+    - Alternative implementation:
+    - import "slices"
+    - items = slices.Delete(items, i, j)
+    - This generic func slices.Delete works for all slice types.
+    - 292
+    - Write "Ni Hao" in Chinese to standard output in UTF-8
+    - Write "Hello World and 你好" to standard output in UTF-8.
+    - import "fmt"
+    - fmt.Println("Hello World and 你好")
+    - Strings are UTF-8 by default.
+    - 293
+    - Create a stack
+    - Create a new stack s, push an element x, then pop the element into the variable y.
+    - type Stack[T any] struct {
+        - items []T
+    - }
+    - 
+    - func (s *Stack[T]) Push(t T) {
+        - s.items = append(s.items, t)
+    - }
+    - 
+    - func (s *Stack[T]) Pop() T {
+        - n := len(s.items)
+        - t := s.items[n-1]
+        - var zero T
+        - s.items[n-1] = zero
+        - s.items = s.items[:n-1]
+        - return t
+    - }
+    - 
+    - var s = new(Stack[string])
+    - s.Push(x)
+    - y := s.Pop()
+    - The generic type Stack works for any type parameter T
+    - 294
+    - Print a comma-separated list of integers
+    - Given an array a containing the three values 1, 12, 42, print out
+    - "1, 12, 42" with a comma and a space after each integer except the last one.
+    - import "fmt"
+    - a := []int{1, 12, 42}
+    - 
+    - for i, j := range a {
+        - if i > 0 {
+            - fmt.Print(", ")
+        - }
+        - fmt.Print(j)
+    - }
+    - 296
+    - Replace last occurrence of substring
+    - Assign to x2 the value of string x with the last occurrence of y replaced by z.
+    - If y is not contained in x, then x2 has the same value as x.
+    - import "strings"
+    - func replaceLast(x, y, z string) (x2 string) {
+        - i := strings.LastIndex(x, y)
+        - if i―-1 {
+            - return x
+        - }
+        - return x[:i] + z + x[i+len(y):]
+    - }
+    - A custom func replaceLast is appropriate here.
+    - 297
+    - Sort a list of strings, case-insensitively
+    - Sort the string list data in a case-insensitive manner.
+    - 
+    - The sorting must not destroy the original casing of the strings.
+    - import (
+        - "sort"
+        - "unicode"
+        - "unicode/utf8"
+    - )
+    - func lessCaseInsensitive(s, t string) bool {
+        - for {
+            - if len(t)―0 {
+                - return false
+            - }
+            - if len(s)―0 {
+                - return true
+            - }
+            - c, sizec := utf8.DecodeRuneInString(s)
+            - d, sized := utf8.DecodeRuneInString(t)
+            - 
+            - lowerc := unicode.ToLower(c)
+            - lowerd := unicode.ToLower(d)
+            - 
+            - if lowerc < lowerd {
+                - return true
+            - }
+            - if lowerc > lowerd {
+                - return false
+            - }
+            - 
+            - s = s[sizec:]
+            - t = t[sized:]
+        - }
+    - }
+    - 
+    - sort.Slice(data, func(i, j int) bool { return lessCaseInsensitive(data[i], data[j]) })
+    - This is a verbose custom func, designed to avoid allocating memory.
+    - Alternative implementation:
+    - import (
+        - "sort"
+        - "strings"
+    - )
+    - sort.Slice(data, func(i, j int) bool {
+        - return strings.ToLower(data[i]) < strings.ToLower(data[j])
+    - })
+    - This code is convenient, however ToLower allocates new strings for each comparison, which is expensive.
+    - Alternative implementation:
+    - import "cmp"
+    - import "slices"
+    - slices.SortFunc(data, func(a, b string) int {
+        - return cmp.Compare(strings.ToLower(a), strings.ToLower(b))
+    - })
+    - SortFunc is generic and type-safe at compile time.
+    - 
+    - ToLower allocates new strings for each comparison, which is expensive.
+    - 298
+    - Copy a map
+    - Create the map y by cloning the map x.
+    - 
+    - y is a shallow copy, not a deep copy.
+    - y := make(map[K]V, len(x))
+    - for k, v := range x {
+        - y[k] = v
+    - }
+    - K is the key type.
+    - V is the value type.
+    - Alternative implementation:
+    - import "maps"
+    - y := maps.Clone(x)
+    - maps.Clone is generic and type-safe at compile time.
+    - 299
+    - Comment out a single line
+    - Write a line of comments.
+    - 
+    - This line will not be compiled or executed.
+    - // This is a comment
+    - 301
+    - Recursive Fibonacci sequence
+    - Compute the Fibonacci sequence of n numbers using recursion.
+    - 
+    - Note that naive recursion is extremely inefficient for this task.
+    - func fibonacci(n int) int {
+        - if n <= 1 {
+            - return n
+        - }
+        - return fibonacci(n-1) + fibonacci(n-2)
+    - }
+    - 302
+    - String interpolation
+    - Given the integer x = 8, assign to the string s the value "Our sun has 8 planets", where the number 8 was evaluated from x.
+    - s := fmt.Sprintf("Our sun has %d planets", x)
+    - Go doesn't have string interpolation, but it does have functions of the printf family.
+    - 304
+    - Encode string into UTF-8 bytes
+    - Create the array of bytes data by encoding the string s in UTF-8.
+    - data := []byte(s)
+    - In Go, it is idiomatic that strings are already encoded in UTF-8. So we can grab their raw bytes directly.
+    - 306
+    - Ensure list capacity
+    - Preallocate memory in the list x for a minimum total capacity of 200 elements.
+    - 
+    - This is not possible in all languages. It is only meant as a performance optimization, should not change the length of x, and should not have any effect on correctness.
+    - if cap(x) < 200 {
+        - y := make([]T, len(x), 200)
+        - copy(y, x)
+        - x = y
+    - }
+    - x has type []T.
+    - 
+    - x keeps the same length.
+    - Alternative implementation:
+    - import "slices"
+    - x = slices.Grow(x, 200)
+    - This generic Grow func accepts x of any slice type
+    - 308
+    - Integer to string in base b
+    - Create the string representation s of the integer value n in base b.
+    - 
+    - 18 in base 3 -> "200"
+    - 26 in base 5 -> "101"
+    - 121 in base 12 -> "a1"
+    - 
+    - import "strconv"
+    - s := strconv.FormatInt(int64(n), b)
+    - 309
+    - Clone a 2D array
+    - Create the new 2-dimensional array y containing a copy of the elements of the 2-dimensional array x.
+    - 
+    - x and y must not share memory. Subsequent modifications of y must not affect x.
+    - buf := make([]T, m*n)
+    - y = make([][]T, m)
+    - for i := range y {
+        - y[i] = buf[:n:n]
+        - buf = buf[n:]
+        - copy(y[i], x[i])
+    - }
+    - Allocate a large buffer, slice it, copy the data.
+    - Alternative implementation:
+    - func clone2D[M ~[][]T, T any](in M) (out M) {
+        - if len(in)―0 {
+            - return nil
+        - }
+        - 
+        - m, n := len(in), len(in[0])
+        - 
+        - buf := make([]T, m*n)
+        - 
+        - out = make(M, m)
+        - for i := range out {
+            - out[i] = buf[:n:n]
+            - buf = buf[n:]
+            - copy(out[i], in[i])
+        - }
+        - return out
+    - }
+    - Allocate a large buffer, slice it, copy the data.
+    - 310
+    - Fill array with random bytes
+    - Fill the byte array a with randomly generated bytes.
+    - import "crypto/rand"
+    - rand.Read(a)
+    - The package crypto/rand is secure (but slower than math/rand)
+    - 312
+    - Test for list equality
+    - Set b to true if the lists p and q have the same size and the same elements, false otherwise.
+    - import "slices"
+    - b := slices.Equal(p, q)
+    - slices.Equal is generic and type-safe at compile time.
+    - 313
+    - Test for map equality
+    - Set b to true if the maps m and n have the same key/value entries, false otherwise.
+    - import "maps"
+    - b := maps.Equal(m, n)
+    - maps.Equal is generic and type-safe at compile time.
+    - 314
+    - Fill array with value
+    - Set all the elements in the array x to the same value v
+    - for i := range x {
+        - x[i] = v
+    - }
+    - Alternative implementation:
+    - func fill[T any](x []T, v T) {
+        - for i := range x {
+            - x[i] = v
+        - }
+    - }
+    - fill is generic, it works for any type parameter T
+    - 315
+    - Memoization
+    - Given any function f, create an object or function m that stores the results of f, and calls f only on inputs for which the result is not stored yet.
+    - func memoize[T comparable, U any](f func(T) U) func(T) U {
+        - memory := make(map[T]U)
+        - 
+        - return func(t T) U {
+            - if u, seen := memory[t]; seen {
+                - return u
+            - }
+            - u := f(t)
+            - memory[t] = u
+            - return u
+        - }
+    - }
+    - memoize is generic but requires that f accepts a single argument of type T and returns a single result of type U.
+    - 316
+    - Count occurrences in a list
+    - Determine the number c of elements in the list x that satisfy the predicate p.
+    - c := 0
+    - for _, v := range x {
+        - if p(v) {
+            - c++
+        - }
+    - }
+    - Alternative implementation:
+    - func count[T any](x []T, p func(T) bool) int {
+        - c := 0
+        - for _, v := range x {
+            - if p(v) {
+                - c++
+            - }
+        - }
+        - return c
+    - }
+    - This generic func works for any type parameter T
+    - 317
+    - Random string
+    - Create a string s of n characters having uniform random values out of the 62 alphanumeric values A-Z, a-z, 0-9
+    - import "math/rand"
+    - const alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    - 
+    - func randomString(n int) string {
+        - a := make([]byte, n)
+        - for i := range a {
+            - a[i] = alphanum[rand.Intn(len(alphanum))]
+        - }
+        - return string(a)
+    - }
+    - Each of these runes fits in a single byte.
+    - The default RNG can be run concurrently, as it incurs the cost of a Mutex.
+    - Note that the package math/rand is not crypto-secure
+    - Alternative implementation:
+    - import "math/rand"
+    - const alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    - 
+    - func randomString(n int, rng *rand.Rand) string {
+        - a := make([]byte, n)
+        - for i := range a {
+            - a[i] = alphanum[rng.Intn(len(alphanum))]
+        - }
+        - return string(a)
+    - }
+    - Using a custom rand.Rand instance lets you control the seed, and is also better for performance (lock-free).
+    - Note that the package math/rand is not crypto-secure.
+    - Alternative implementation:
+    - import "math/rand"
+    - var alphanum = []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+    - 
+    - func randomString(n int, rng *rand.Rand) string {
+        - a := make([]rune, n)
+        - for i := range a {
+            - a[i] = alphanum[rng.Intn(len(alphanum))]
+        - }
+        - return string(a)
+    - }
+    - This version is slightly more generic: it works with an alphabet of arbitrary runes, which don't need to fit in a single byte each.
+    - 
+    - Note that the package math/rand is not crypto-secure.
+    - 318
+    - Cryptographically secure random number
+    - Assign to the integer x a random number between 0 and 17 (inclusive), from a crypto secure random number generator.
+    - import "crypto/rand"
+    - import "math/big"
+    - bi, err := rand.Int(rand.Reader, big.NewInt(18))
+    - x := int(bi.Int64())
+    - crypto/rand.Int works with big ints, and the secure RNG Reader.
+    - 319
+    - Generator function
+    - Write a function g that behaves like an iterator.
+    - Explain if it can be used directly in a for loop.
+    - func generator() chan int {
+        - ch := make(chan int, 16)
+        - go func() {
+            - defer close(ch)
+            - timeout := time.After(2 * time.Minute)
+            - 
+            - for i := 0; i < 1024; i++ {
+                - select {
+                - case ch <- i:
+                - case <-timeout:
+                    - return
+                - }
+            - }
+        - }()
+        - return ch
+    - }
+    - 320
+    - Test if string is empty
+    - Set b to true if the string s is empty, false otherwise
+    - b := s―""
+    - Strings cannot be nil
+    - 321
+    - Access character in string, by index
+    - Assign to c the value of the i-th character of the string s.
+    - 
+    - Make sure to properly handle multi-byte characters. i is the character index, which may not be equal to the byte index.
+    - c := []rune(s)[i]
+    - s is assumed valid UTF-8.
+    - Convert s to a slice of rune.
+    - 322
+    - replace value of variable with new one and return old value
+    - old, x = x, new
+    - 323
+    - Set HTTP request header
+    - Make an HTTP request with method GET to the URL u, with the request header "accept-encoding: gzip", then store the body of the response in the buffer data.
+    - import "io"
+    - import "net/http"
+    - req, err := http.NewRequest("GET", u, nil)
+    - if err != nil {
+        - return err
+    - }
+    - req.Header.Set("accept-encoding", "gzip")
+    - res, err := http.DefaultClient.Do(req)
+    - if err != nil {
+        - return err
+    - }
+    - data, err := io.ReadAll(res.Body)
+    - res.Body.Close()
+    - if err != nil {
+        - return err
+    - }
+    - http.Request.Header is an exported field
+    - 324
+    - Read HTTP response header
+    - Set the string c to the (first) value of the header "cache-control" of the HTTP response res.
+    - import "net/http"
+    - c := res.Header.Get("cache-control")
+    - http.Response.Header is an exported field
+    - 325
+    - Create a queue
+    - Create a new queue q, then enqueue two elements x and y, then dequeue an element into the variable z.
+    - type Queue[T any] struct {
+        - items []T
+    - }
+    - 
+    - func (q *Queue[T]) Enqueue(t T) {
+        - q.items = append(q.items, t)
+    - }
+    - 
+    - func (q *Queue[T]) Dequeue() T {
+        - t := q.items[0]
+        - var zero T
+        - q.items[0] = zero
+        - q.items = q.items[1:]
+        - return t
+    - }
+    - 
+    - q := new(Queue[string])
+    - q.Enqueue(x)
+    - q.Enqueue(y)
+    - z := q.Dequeue()
+    - The generic type Queue works for any type parameter T
+    - 326
+    - Milliseconds since Unix epoch
+    - Assign to t the number of milliseconds elapsed since 00:00:00 UTC on 1 January 1970.
+    - import "time"
+    - t := time.Now().UnixMilli()
+    - 327
+    - Convert string to lower case
+    - Assign to t the value of the string s, with all letters mapped to their lower case.
+    - import "strings"
+    - t := strings.ToLower(s)
+    - 328
+    - Convert string to upper case
+    - Assign to t the value of the string s, with all letters mapped to their upper case.
+    - import "strings"
+    - t := strings.ToUpper(s)
+    - 329
+    - Read value in a map
+    - Assign to v the value stored in the map m for the key k.
+    - 
+    - Explain what happens if there is no entry for k in m.
+    - v := m[k]
+    - If m doesn't have the key k, then v is set to the zero value of m's values type.
+    - Alternative implementation:
+    - v, ok := m[k]
+    - ok is set to true if m has an entry for the key k, false otherwise.
+    - 330
+    - Map to list
+    - Create the list a containing all the values of the map m.
+    - 
+    - Ignore the keys of m. The order of a doesn't matter. a may contain duplicate values.
+    - a := make([]V, 0, len(m))
+    - for _, v := range m {
+        - a = append(a, v)
+    - }
+    - The values have type V
+    - Alternative implementation:
+    - import "golang.org/x/exp/maps"
+    - a := maps.Values(m)
+    - 331
+    - Clear map
+    - Remove all entries from the map m.
+    - 
+    - Explain if other references to the same map now see an empty map as well.
+    - clear(m)
+    - Since Go 1.21
+    - 
+    - Maps are reference types, so the underlying map is cleared for all references.
+    - 332
+    - List of the keys of a map
+    - Create the list k containing all the keys of the map m
+    - import "golang.org/x/exp/maps"
+    - k := maps.Keys(m)
+    - k will be in an indeterminate order
+    - Alternative implementation:
+    - k := make([]K, 0, len(m))
+    - for key := range m {
+        - k = append(k, key)
+    - }
+    - The keys have type K
+    - 
+    - k will be in an indeterminate order
+    - 333
+    - Pretty-print object in JSON
+    - Print the object x in human-friendly JSON format, with newlines and indentation.
+    - import "encoding/json"
+    - import "fmt"
+    - buffer, err := json.MarshalIndent(x, "", "  ")
+    - if err != nil {
+        - log.Fatal(err)
+    - }
+    - fmt.Println(string(buffer))
+    - Using 2 spaces as indentation
+    - 334
+    - Combine 2 maps
+    - Create the new map c containing all of the (key, value) entries of the two maps a and b.
+    - 
+    - Explain what happens for keys existing in both a and b.
+    - c := make(M, len(a)+len(b))
+    - for k, v := range a {
+        - c[k] = v
+    - }
+    - for k, v := range b {
+        - c[k] = v
+    - }
+    - M is the map type of a and b
+    - 
+    - For any common key, the value from b overwrites the value from a.
+    - 335
+    - List to map
+    - Create the map m containing all the elements e of the list a, using as key the field e.id.
+    - m := make(map[K]V, len(a))
+    - for _, e := range a {
+        - m[e.id] = e
+    - }
+    - V is the type of the elements of a.
+    - K is the type of the field id.
+    - 337
+    - Convert string to integer, explicit base
+    - Extract the integer value i from its string representation s, in radix b
+    - import "strconv"
+    - i, err := strconv.ParseInt(s, b, 0)
+    - 339
+    - Clear a byte array
+    - Set all the elements of the byte array a to zero
+    - clear(a[:])
+    - a is an array (but slices are more common)
+    - Alternative implementation:
+    - clear(a)
+    - a is a slice
+    - 340
+    - Last character of string
+    - Assign to c the value of the last character of the string s.
+    - 
+    - Explain the type of c, and what happens if s is empty.
+    - 
+    - Make sure to properly handle multi-bytes characters.
+    - r := []rune(s)
+    - c := r[len(r)-1]
+    - c has type rune.
+    - 
+    - Panics if s is empty.
+    - Alternative implementation:
+    - import "unicode/utf8"
+    - c, _ := utf8.DecodeLastRuneInString(s)
+    - c has type rune.
+    - 
+    - Returns utf8.RuneError if s is empty or if the encoding of s is invalid UTF-8.
+    - 341
+    - Find substring last position
+    - Set i to the position of the last occurrence of the string y inside the string x, if exists.
+    - 
+    - Specify if i should be regarded as a character index or as a byte index.
+    - 
+    - Explain the behavior when y is not contained in x.
+    - import "strings"
+    - i := strings.LastIndex(x, y)
+    - i is the byte index of y in x, not the character (rune) index.
+    - 
+    - i will be -1 if y is not found in x.
+    - 343
+    - Rename file
+    - Rename the file at path1 into path2
+    - err := os.Rename(path1, path2)
+    - 344
+    - Extract filename extension
+    - Assign to ext the fragment of the string f after the last dot character, or the empty string if f does not contain a dot.
+    - 
+    - E.g. "photo.jpg" -> "jpg"
+    - 
+    - ext must not contain the dot character.
+    - import "path/filepath"
+    - import "strings"
+    - ext := strings.TrimPrefix(filepath.Ext(f), ".")
+    - filepath.Ext returns a string including the final dot of f. We remove this dot with strings.TrimPrefix.
+    - 345
+    - Convert string to big integer
+    - Create the integer value i initialized from its string representation s (in radix 10)
+    - 
+    - Use an integer type that can hold huge values. Explain what happens if s cannot be parsed.
+    - import "math/big"
+    - i := new(big.Int)
+    - _, ok := i.SetString(s, 10)
+    - If s cannot be parsed, then ok will be false
+    - 346
+    - Repeated list
+    - Create the list y from the list x repeated n times
+    - 80
+    - 94102
+    - lxbfYeaa
+    - 347
+    - Copy folder
+    - Copy the directory path1 to path2, with all its contents
+    - import "os"
+    - err := os.CopyFS(path2, os.DirFS(path1))
+    - 1st argument is a string, for the destination folder.
+    - 2nd argument is a fs.FS, for the source folder.
+    - 352
+    - Parallelize 3 computations
+    - Execute the functions f1, f2, f3 concurrently, and assign their respective return values to a1, a2, a3.
+    - import "sync"
+    - var wg sync.WaitGroup
+    - wg.Add(3)
+    - go func() {
+        - a1 = f1()
+        - wg.Done()
+    - }()
+    - go func() {
+        - a2 = f2()
+        - wg.Done()
+    - }()
+    - go func() {
+        - a3 = f3()
+        - wg.Done()
+    - }()
+    - wg.Wait()
+    - 3 new goroutines
+    - 353
+    - Test if list is sorted
+    - Set the boolean b to true if the list items has all its elements in increasing order, false otherwise.
+    - 
+    - The order is not strict: the ordered list may contain duplicate elements.
+    - import "slices"
+    - b := slices.IsSorted(items)
+    - 354
+    - Increment map entry
+    - Set the value for the key k in the map m to 1 if the entry doesn't exist yet in m, or increment the entry value if it already exists.
+    - m[k]++
+    - This works even if k is not yet present in m.
+    - 
+    - However, m must not be nil
+    - 355
+    - Absolute value
+    - Assign to y the absolute value of the number n
+    - import "math"
+    - y := math.Abs(x)
+    - x and y have type float64
+    - Alternative implementation:
+    - import "math/big"
+    - y := new(big.Float)
+    - y.Abs(x)
+    - x and y have type *big.Float
+    - Alternative implementation:
+    - import "math/big"
+    - y := new(big.Int)
+    - y.Abs(x)
+    - x and y have type *big.Int
+    - Alternative implementation:
+    - y := x
+    - if y < 0 {
+        - y = -x
+    - }
+    - x and y have type int
+    - 
+    - Go does not have an absolute value function for int in the standard library
+    - 356
+    - Parse list of integers
+    - Create the list of integers items for the string s containing integers separated by one or more whitespace characters (space, tab, newline).
+    - import "fmt"
+    - import "strconv"
+    - parts := strings.Fields(s)
+    - items := make([]int, len(parts))
+    - for i, part := range parts {
+        - v, err := strconv.Atoi(part)
+        - if err != nil {
+            - return err
+        - }
+        - items[i] = v
+    - }
+    - strings.Fields treats repeated spaces as a single separator.
+    - 357
+    - Swap elements of list
+    - Swap the elements at indices i, j in the list items
+    - items[i], items[j] = items[j], items[i]
+    - 359
+    - Euclidean division
+    - Set q and r to the quotient and the remainder of the integer a divided by the integer b, such that a = b * q + r.
+    - 
+    - a is the dividend, b is the divisor.
+    - 
+    - E.g. a=31, b=7 ⟶ q=4, r=3
+    - import "math/big"
+    - q := new(big.Int)
+    - r := new(big.Int)
+    - q.DivMod(a, b, r)
+    - a, b, q, r have type *big.Int
+    - 363
+    - Set to list
+    - Create the list y from the set x.
+    - 
+    - The resulting list y may be in any order.
+    - y := make([]T, 0, len(x))
+    - for v := range x {
+        - y = append(y, v)
+    - }
+    - x is a map[T]struct{}
+    - 
+    - T is the type of the items
+    - Alternative implementation:
+    - import "maps"
+    - import "slices"
+    - y := slices.Collect(maps.Keys(x))
+    - These generic functions work for any comparable type T
+    - 366
+    - Test for set equality
+    - Set b to true if the sets s and t have the same elements, false otherwise.
+    - import "maps"
+    - b := maps.Equal(s, t)
+    - s and t must be implemented using the same type of map.
+    - 

@@ -1,0 +1,28 @@
+- arch wiki
+    - pacman 
+    - pacman/rosetta
+- update mirrors
+    - reflector
+- -S
+- -Syu
+- -Syyu
+- -R
+- -Rns
+- -Ss
+- -Q
+- -Qs
+- -Qq
+- -Qi
+- -Qe
+- -Ql
+- -Qdt
+    - -Qqdt | -Rns -
+- -Scc
+- 
+- Package
+    - downgrade
+    - paccache-hook
+- 
+- 
+- 
+- 

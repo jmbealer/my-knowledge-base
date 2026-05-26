@@ -1,0 +1,126 @@
+- # Typing Speed Categories
+    - Typing speed can be categorized into different levels based on proficiency and speed. Here are some categories:
+        - **Average Typist**: 
+            - Typists who type around 40 words per minute (WPM) are considered average. 
+            - This is the typical speed for many people who do not specialize in typing.
+        - **Above Average Typist**: 
+            - Typists who can type between 50 to 60 WPM are considered above average. 
+            - This speed is often expected in professional settings and can significantly enhance productivity.
+        - **Professional Typist**: 
+            - Typists who can type between 80 to 95 WPM are considered professional. 
+            - These speeds are often required for dispatch positions and other time-sensitive typing jobs.
+        - **Advanced Typist**: 
+            - Typists who can type over 120 WPM are considered advanced.
+            - This level of speed is rare and is often seen in competitive typing or among highly skilled typists.
+        - **Speed Typist**: 
+            - Some typists can achieve speeds over 200 WPM for short periods, such as 15-second typing tests with simple English words. 
+    - These categories reflect different levels of typing proficiency and speed, which can impact productivity and suitability for various typing-related jobs. 
+- Where is key in Qwerty Layout?
+    - f {{left index finger}} 
+    - j {{right index finger}} 
+    - g {{extent left index finger}} 
+    - h {{extent right index finger}} 
+    - r {{up left index finger}} 
+    - u {{up extent right index finger}} 
+    - t {{up extent left index finger}} 
+    - y {{up right index finger}} 
+    - v {{down left index finger}} 
+    - m {{down right index finger}} 
+    - b {{down extent left index finger}} 
+    - n {{down extent right index finger}} 
+    - 
+    - d {{left middle finger}} 
+    - k {{right middle finger}} 
+    - e {{up left middle finger}} 
+    - i {{up right middle finger}} 
+    - c {{down left middle finger}} 
+    - , (comma) {{down right middle finger}} 
+    - 
+    - s {{left ring finger}} 
+    - l {{right ring finger}} 
+    - w {{up left ring finger}} 
+    - o {{up right ring finger}} 
+    - x {{down left ring finger}} 
+    - . (dot) {{down right ring finger}} 
+    - 
+    - a {{left little finger}} 
+    - ; (semicolon) {{right little finger}} 
+    - q {{up left little finger}} 
+    - p {{up right little finger}} 
+    - z {{down left little finger}} 
+    - / {{down right little finger}} 
+    - ' (apostrophe) {{extent right little finger}} 
+    - [ (bracket) {{up extent right little finger}} 
+    - ] (bracket) {{up extent right little finger}} 
+    - \  {{up extent right little finger}} 
+    - 
+    - left thumb
+    - right thumb
+- klavaro
+    - do each at least lesson 13 times
+    - 01 lesson jf 
+        - top 77
+    - 02 lesson dk
+        - top 78
+    - 03 lesson sl
+        - top 75
+    - 04 lesson a;
+        - top 69
+    - 05 lesson asdf
+        - top 25
+    - 06 lesson jkl;
+        - top 31
+    - 07 lesson gh
+        - top 50
+    - 08 lesson asdfg
+        - top 22
+    - 09 lesson hjkl;
+        - top 28
+    - 10 lesson asdfghjkl;
+        - top 15
+    - 11 lesson ru
+        - top 63
+    - 12 lesson ei
+        - top 70
+    - 13 lesson wo
+        - top 65
+    - 14 lesson qp
+        - top 41
+    - 15 lesson qwer
+        - top 25
+    - 16 lesson uiop
+        - top 10
+    - 17 lesson ty
+        - top 54
+    - 18 lesson qwert
+    - 19 lesson yuiop
+    - 20 lesson qwertyuiop
+    - 21 lesson vm
+        - top 58
+    - 22 lesson c,
+        - top 42
+    - 23 lesson x.
+        - top 38
+    - 24 lesson z/
+        - top 46
+    - 25 lesson zxcv
+    - 26 lesson m,./
+    - 27 lesson bn
+        - top 47
+    - 28 lesson zxcvb
+    - 29 lesson nm,./
+    - 30 lesson zxcvbnm,./
+    - 31 lesson qwertyuiopasdfghjkl;zxcvbnm,./
+    - 32 lesson 1234
+    - 33 lesson 7890
+    - 34 lesson 12347890
+    - 35 lesson 1234567890
+    - 36 lesson 1234567890qwertyuiopasdfghjkl;zxcvbnm,./
+    - 37 lesson !@#$
+    - 38 lesson &*()
+    - 39 lesson !@#$&*()
+    - 40 lesson `-=%^_+
+    - 41 lesson `-=~!@#$%^&*()_+
+    - 42 lesson
+    - 43 lesson
+- 

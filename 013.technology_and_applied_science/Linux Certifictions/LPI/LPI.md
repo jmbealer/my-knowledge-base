@@ -1,0 +1,13 @@
+- --------------------- Portal ---------------------query:#[LPI](LPI.md)
+    - LPIC-1 - 101-500 and 102-500 #LPI #linux
+    - LPI Certifications #LPI #linux
+    - LPIC-2 - 201-450 and 202-450 #LPI #linux
+    - LPIC-3 Mixed Environments #LPI #linux
+    - LPIC-3 Security  #LPI #linux
+    - LPIC-3 Virtualization and Containerization #LPI #linux
+    - LPIC-3 High Availability and Storage Clusters #LPI #linux
+    - LPI DevOps Tools Engineer #LPI #linux
+    - LPI BSD Specialist #LPI #linux
+    - LPI Security Essentials  #LPI #linux
+    - LPI Web Development Essentials #LPI #linux
+    - LPI Open Source Essentials #LPI #linux

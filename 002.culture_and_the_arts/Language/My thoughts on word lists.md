@@ -1,0 +1,12 @@
+- How to sorts lists by importants
+    - General
+        - New General Service List (NGSL)
+    - Career Specific
+        - Computer Science Word List (CSWL)
+        - Computer Science Academic List (CSAVL)
+    - Academic
+        - New Academic Word List (NAWL)
+        - Academic Vocabulary List (AVL)
+    - Field Specific/Technical
+- Should I use root words lists
+- 

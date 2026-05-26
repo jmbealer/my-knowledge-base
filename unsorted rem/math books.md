@@ -1,0 +1,90 @@
+- 00.Elementary-Mathematics (K8)
+    - 00.Must-Read
+    - 01-Arithmetic
+        - basic math, general math, elementary math
+        - Textbooks (Arith)
+        - Workbooks (Arith)
+        - Reference (Arith)
+    - 02-Pre-Algebra
+        - introductory algebra
+    - 99.Later
+    - elementary-algebra-wip
+        - 01-ele-alge
+            - 01-ele_alge-00
+            - 01-ele_alge-99
+        - 12-ele-alge
+        - 29-ele-alge
+            - 29-ele-00
+            - │   │   │   │   └── lookAt
+            - 29-ele-alge-99
+        - 99-ele-alge
+    - reference-mathematics_
+        - │   │   ├── 01-refer
+        - │   │   │   ├── 01-refer-00
+        - │   │   │   └── 01-refer-99
+        - │   │   ├── 12-refer
+        - │   │   ├── 29-refer
+        - │   │   │   ├── 29-refer-00
+        - │   │   │   └── 29-refer-99
+        - │   │   └── 99-refer
+    - workbooks-math
+        - │       ├── 01-workbook
+        - │       │   ├── 01-wrkbk-00
+        - │       │   └── 01-wrkbk-99
+        - │       ├── 12-workbook
+        - │       │   └── 12-wrkbk-99
+        - │       ├── 29-workbook
+        - │       │   └── 29-wrkbk-99
+        - │       └── 99-workbook
+- 01.Intermediate-Mathematics (HS)
+    - │   ├── 00-Algebra_II
+    - │   ├── 01-Algebra_I
+    - │   ├── 01-Geometry
+    - │   ├── 03-Trigonometry
+    - │   └── 04-Pre-Calculus
+    - │       ├── 01-precalc
+    - │       ├── 12-precalc
+    - │       └── 29-precalc
+- 02.Advanced-Mathematics (UG)
+    - │   ├── 00-Calculus
+    - │   │   └── advanced-calculus
+    - │   │       └── analysis
+    - │   ├── 01-Linear-Algebra
+    - │   ├── 02-Differential_Equations
+    - │   │   └── partial_differential_equations
+    - │   ├── 03-Advanced_Statistics
+    - │   ├── 04-Real_Analysis
+    - │   ├── 05-Statistics_and_Probability
+    - │   │   └── Mathematics and Statistics
+    - │   ├── 06-Discrete_Mathematics
+    - │   │   ├── 01.disMath
+    - │   │   ├── 12.disMath
+    - │   │   └── 29.disMath
+    - │   ├── 07-Proof_and_Logic
+    - │   │   ├── 11.proof
+    - │   │   └── 22.proof
+    - │   ├── abstract-algebra
+    - │   ├── probability
+    - │   └── statistics
+- 03.Specialized-Mathematics (GR)
+    - ├── Higher-Mathematics
+    - ├── Number_Theory
+    - │   ├── 01
+    - │   ├── 11
+    - │   ├── 22
+    - │   ├── 99
+    - │   └── Number_Theory
+    - ├── analysis
+    - ├── general-math
+    - ├── matrix fu
+    - ├── optimization
+    - ├── problem-solving
+    - │   ├── 01-problem-solving
+    - │   ├── 12-problem-solving
+    - │   ├── 29-problem-solving
+    - │   └── 99-problem-solving
+    - └── workbooks-math
+        - ├── 99
+        - └── interWrkBook
+            - └── 29-workbook
+            - 
