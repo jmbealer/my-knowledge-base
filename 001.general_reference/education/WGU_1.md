@@ -1,0 +1,195 @@
+- Current Degree Plan
+    - Term 4
+        - D317 - IT Applications - O
+            - CompTIA A+ Core 2
+        - C948 - Technical Communication - P
+            - 2 Tasks
+        - D325 - Networks - O
+            - CompTIA Network+
+                - maybe 2 week
+        - D329 - Network and Security - Applications - O
+            - CompTIA Security+
+                - maybe 2 week
+    - Term 5
+        - C268 - Spreadsheets - O
+        - C777 - Web Development Applications - O
+        - C773 - User Interface Design - P
+            - 2 Tasks
+    - Term 6
+        - D427 - Data Management - Applications - O
+        - D282 - Cloud Foundations - O
+            -  AWS – Certified Cloud Practitioner 
+                - [Size]();-[H0]()
+        - C954 - Information Technology Management - O
+    - Term 7
+        - C962 - Current and Emerging Technology - P
+            - 1 Task
+        - C783 - Project Management - P
+            - 3 Tasks
+            - Certified Associate in Project Management (CAPM) at PMI  
+        - C769 - IT Capstone Written Project - P
+            - 3 Tasks
+    - Master of Science, Information Technology Management
+        - 1
+            - Power, Influence and Leadership - LZT2 PA
+            - IT Sourcing and Development in a Global Economy - C929 PA
+            - Managing Technology Operations and Innovation - C927 PA
+        - 2
+            - Financial Management for IT Professionals - C928 PA
+            - Technological Globalization - MBT2 PA
+            - MS, Information Technology Management Capstone - C498 PA
+    - 
+    - 
+    - 
+    - 
+    - 
+- C484 Organizational Behavior and Leadership
+    - Most important chapter 10, 16, 9, 12
+        - 5 6 7 9 1
+            - from 9
+        - 10 16
+            - 10-11 from ch 10
+        - 12 1 13 17
+            - 4 from 12
+            - skip 1, 13
+            - 
+    - Behavior Influences Chapters: 5, 6, 7
+        - Personality and Values Chapter 5 Pages 174-199
+            - above average 
+        - Perception and Individual Decision Making Chapter 6 pages 210-238
+            - above average 
+        - Motivation Concepts Chapter 7 Pages 248-276
+            - average 
+            - 248-257
+            - 258-267
+            - 268-276
+        - Extra
+            - What are behavior influences?
+                - Behavior influences are factors that affect a person's ability to control their behavior and make decisions.
+            - What are some of influences general categories?
+                - biological 
+                - personal
+                - social 
+                - environmental 
+            - Individuals can modify the behaviors based on some influences more easily than they can modify the behaviors based on others.
+            - Dealing with influences on the behavior of individuals within an organization is an integral part of a manager's responsibilities and has a clear impact on the overall performance of an organization's workforce. 
+            - Understanding these influences and how managers should respond to them is key to a productive work environment..
+            - This topic addresses the following competency:
+                - Competency 317.1.1: Behavioral Influences
+                - The graduate can describe the effects of specified influences on individual behavior.
+            - This topic highlights the following key concepts:
+                - perception
+                - value systems
+                - intrinsic and extrinsic factors of motivation
+                - theories of motivation
+    - Group Development Chapters: 9*, 14
+        - Foundations of Group Behavior Chapter: 9 Pages: 320-346
+            - 320-329
+            - 330-339
+            - 340-346
+            - cohesiveness = tight knit
+            - norm = productive 
+        - Conflict and Negotiation Chapter: 14 Pages: 504-531
+            - 504-513
+            - 514-523
+            - 524-531
+        - Extra
+            - A number of theoretical models have been developed to explain how certain groups change over time. In some cases, the type of group being considered had influenced the model of group development that was proposed, as in the case of therapy groups. Some of these models view group change as regular movement through a series of stages, while others view it as phases that groups may or may not go through and which might occur at different points in a group's history. Attention to group development over time has been one of the differentiating factors between the study of ad hoc groups and the study of teams such as those in the workplace, military, sports field, and many other contexts.
+            - Many different researchers and theorists have studied groups to understand how they develop. This section will cover the techniques and methods for group development. Group development covers a wide range of different concepts and strategies in order to build and maintain effective groups within an organization.
+                - This topic addresses the following competency:
+                - • Competency 317.1.2: Group Development The graduate can recommend appropriate principles or techniques for guiding the development of a group.
+                - This topic highlights the following key concepts:
+                    - techniques for guiding group development
+                    - the five-stage group development model
+                    - group roles and group norms
+                    - factors of group cohesiveness
+                    - conflict resolution techniques
+    - Teams and Team Building Chapter: 10*
+        - Understanding Work Teams Chapter: 10 Pages: 356-379
+            - 356-365
+            - 366-375
+            - 376-379
+        - questions 10-11
+        - Extra
+            - Team building refers to a wide range of activities, usually in a business context, for improving team performance. 
+            - Team building is pursued via a variety of practices and can range from simple bonding activities to activities designed to develop a team (including group assessment and group-dynamic games), usually falling somewhere in between.
+            - Effective team building involves establishing ownership of shared goals, removing barriers to achieving those goals, employing resources that facilitate achievement of goals, and using team building processes to increase team performance.
+            - This topic addresses the following competency:
+                - Competency 317.1.3: Teams and Team
+                - Building The graduate can determine which type of team and team leadership should be used to accomplish a task or project.
+        - This topic highlights the following key concepts:
+            - work groups and work teams
+            - cross-functional work teams
+            - virtual teams
+            - team failure
+            - reward systems
+    - Organizational Culture Chapter: 16*
+        - Organizational Culture Chapter: 16 Pages: 576-604
+            - 576-585
+            - 586-595
+            - 596-604
+        - questions 6
+        - Extra
+            - Organizational culture is an idea in the field of organizational studies and management that describes the psychology, attitudes, experiences, beliefs, and values (personal and cultural) of an organization.
+            - Organizational culture is the personality of the organization. 
+            - Some corporate cultures are very strict and formal, while others are more laidback and informal. 
+            - Some organizational cultures reward processes, while others reward innovation.
+            - This topic addresses the following competency:
+                - Competency 317.1.4: Organizational
+                - Culture The graduate analyzes the culture within an organization to determine how to work effectively within that organization.
+        - Key concepts:
+            - organizational culture
+            - functional and a dysfunctional organizational culture
+            - culture characteristic 
+            - subcultures
+    - Leadership Chapters: 12*, 1
+        - Contemporary Issues in Leadership Chapter: 12 Pages: 426-456
+            - 426-435
+            - 436-445
+            - 446-455
+            - 456
+        - What Is Organizational Behavior? Chapter: 1 Pages: 36-68
+            - 36-45
+            - 46-55
+            - 56-65
+            - 66-68
+        - Extra
+            - In an intelligently-managed organization, leadership is not a randomly operating process; it is a purposeful force requiring joint effort. 
+            - It is management's role to ensure that this organizational leadership has a substantive and meaningful core around which to form itself and to give it traction for advancing the organization toward its stated ends.
+            - Organizational leadership focuses on building leadership skills that are applicable across industries and specific disciplines. 
+            - This section will focus on the strategic relationship between leadership theories, practices, and organizational goals.
+            - This topic addresses the following competency:
+                - Competency 317.1.5: Leadership 
+                - The graduate can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.
+            - This topic highlights the following key concepts:
+                - leadership theories, methods, and tools
+                - transformational and transactional leaders
+                - charismatic leadership
+                - contingency theories of leadership
+                - conflict resolution
+    - Performance Evaluation Chapter: 13, 17
+        - Power and Politics Chapter: 13 Pages: 467-495
+            - 467-476
+            - 477-486
+            - 487-495
+        - Human Resources Policies and Procedures Chapter: 17  Pages: 614-645
+            - 614-623
+            - 624-633
+            - 634-643
+            - 644-645
+        - Extra
+            - Performance assessment methods for individuals and teams seek to measure productivity, fit, and competency of employees contributing to the greater good of an organization. 
+            - Performance appraisal surveys and evaluations hope to achieve higher productivity outcomes by delineating how employees meet job specifications. 
+            - A major challenge for performance appraisal systems is to define performance standards while maintaining objectivity.
+            - Performance evaluations serve numerous purposes in an organization.
+            - They help management make human resource decisions regarding things like termination, promotions, and compensation, and they showcase an employee's strengths and pinpoint weaknesses in an employee's performance.
+            - This topic addresses the following competency:
+                - Competency 317.1.6: Performance Evaluation 
+                - The graduate can develop and recommend how to implement effective performance evaluation processes.
+            - This topic highlights the following key concepts:
+                - performance evaluation processes
+                - performance evaluations and motivation
+                - 360-degree performance evaluations
+    - Assessment
+        - Time: 90 minutes
+        - Questions: 37-42

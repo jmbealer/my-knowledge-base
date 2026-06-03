@@ -1,0 +1,129 @@
+- ## A. Negation / Opposition
+    - {{a-}} / {{an}}-→not
+    - non-↔not 2
+    - un-↔not 3
+    - {{in}}- / {{im}}- / {{il}}- / {{ir}}-→not 4
+    - de-↔reverse, remove
+    - anti-↔against
+    - counter-↔against 2
+    - contra-↔against 3
+    - mis-↔wrong
+    - mal-↔bad
+- ## B. Degree / Size
+    - arch-<>chief
+    - super-<>above
+    - hyper-<>over
+    - ultra-<>beyond
+    - over-<>too much
+    - macro-<>large
+    - micro-<>small
+    - mini-<>small
+    - maxi-<>large
+    - semi-<>half
+- ## C. Time / Order
+    - pre-↔before
+    - post-↔after
+    - fore-↔before 2
+    - re-↔again
+    - ex-↔former
+    - neo-↔new
+    - proto-↔first
+    - retro-↔backward
+- ## D. Number
+    - uni↔one
+    - mono↔one 2
+    - bi↔two
+    - di↔two 2
+    - tri↔three
+    - tetra↔four 2
+    - quad↔four
+    - penta↔five
+    - hexa↔six
+    - poly↔many
+    - multi↔many 2
+- ## E. Position / Location
+    - sub-<>under
+    - super-<>above
+    - inter-<>between
+    - intra-<>within
+    - extra-<>outside
+    - infra-<>below
+    - trans-<>across
+    - circum-<>around
+    - peri-<>around
+    - endo-<>inside
+    - exo-<>outside
+- ## F. Direction / Movement
+    - ad-<>to
+    - ab-<>away
+    - de-<>down, away
+    - re-<>back
+    - pro-<>forward
+    - retro-<>backward
+    - sur-<>over
+    - dia-<>through
+- ## G. Cause / State / Condition
+    - co- / com- / con-<>with
+    - syn- / sym-<>together
+    - peri-<>around
+    - para-<>beside
+    - meta-<>beyond, change
+    - tele-<>distance
+    - 
+- ## H. Relation / Comparison
+    - iso-<>equal
+    - hetero-<>different
+    - homo-<>same
+    - equi-<>equal
+    - contra-<>against
+    - anti-<>against
+    - 
+- ## I. Intensity / Quality
+    - arch-<>extreme
+    - ultra-<>beyond
+    - hyper-<>excessive
+    - pseudo-<>false
+    - quasi-<>almost
+    - neo-<>new
+    - 
+- ## J. Order / Rank / Status
+    - proto-<>first
+    - arch-<>chief
+    - pan-<>all
+    - omni-<>all
+    - proto-<>first
+    - pseudo-<>false
+    - 
+- ## K. Technology & Science (High ROI
+    - auto-<>self
+    - cyber-<>digital
+    - tele-<>distance
+    - micro-<>small
+    - nano-<>billionth
+    - bio-<>life
+    - geo-<>earth
+    - hydro-<>water
+    - electro-<>electric
+    - crypto-<>hidden
+    - 
+- ## L. Common Germanic Prefixes
+    - be↔make
+    - for↔away
+    - out↔beyond
+    - over↔excess
+    - under↔below
+    - up↔upward
+    - down↔downward
+- ## M. Rare but Important Academic Prefixes
+    - ana-<>up, again
+    - apo-<>away
+    - cata-<>down
+    - peri-<>around
+    - epi-<>upon
+    - hypo-<>under
+    - hyper-<>over
+- ## 🧠 Prefix Decoding Rules (Memorize These
+    1. Prefix changes **direction, quantity, or attitude**
+    2. Root gives **core meaning**
+    3. Suffix gives **grammar**
+- **Prefix + Root + Suffix = Meaning**

@@ -1,0 +1,105 @@
+- 001.General References
+    - a reference work is a compendium of information, usually of a specific type, compiled in a book for ease of reference.
+- 002.Culture and the Arts
+    - in general, culture refers to human activity; different definitions of culture reflect different theories for understanding, or criteria for valuing human activity.
+    - art is the expression of creativity or imagination.
+- 003.Geography and Places
+    - is the study of the earth and its features, inhabitants, and phenomena.
+- 004.Health and Fitness
+    - health is the level of functional or metabolic efficiency of a living organism.
+- 005.History and Events
+    - history is the interpretation of past events, societies and civilizations.
+- 006.Human Activities
+    - are the various actions for recreation, living, or necessity done by people.
+- 007.Mathematics and Logic
+    - mathematics is the study of topics such as quantity (number), structure, space, and change.
+    - logic is the study of the principles and criteria of valid inference and demonstration.
+- 008.Natural and Physical Sciences
+    - Natural Science refer to a rational approach to the study of the universe
+    - Physical Science study of non-living systems
+- 009.People and Self
+    - 
+- 010.Philosophy and Thinking
+    - Thought or thinking is a mental process which allows beings to model the world, and so to deal with it effectively according to their goals, plans, ends and desires.
+- 011.Religion and Belief Systems
+- 012.Society and Social Sciences
+- 013.Technology and Applied Sciences
+    - 13.Information Technology 664
+        - 13.Browser 16
+        - 13.Sites 12
+        - 13.search 7
+        - 13.DarkWeb 7
+        - 13.SE:Workflow 10
+        - 13.se-diagram 24
+        - 13.SE:Interview 62
+        - 13.Software 65
+        - 13.Privacy 36
+        - 13.IT.Cloud 38
+        - 13.Windows 36
+        - 13.IT.Networking 116
+        - 13.IT.Git 147
+        - 13.IT.Devops 145
+        - 13.IT.Certification 68
+    - 13.Linux 721
+        - 13.lnx-fedora 11
+        - 13.lnx-gaming 10
+        - 13.Wayland 18
+        - 13.LNX:Virt 17
+        - 13.LNX:Gentoo 28
+        - 13.LNX:Bspwm 28
+        - 13.LNX:Cli  941
+        - 13.LNX:Apps 77
+        - 13.LNX:Dotfiles 55
+        - 13.Ansible 51
+        - 13.LNX-Text-Processing 49
+        - 13.LNX:Dwm 46
+        - 13.LNX:Arch 31
+        - 13.LNX:Guix 31
+        - 13.LNX:Nixos 31
+    - 13.Software Engineering 881 168
+        - 13.SE:TypeScript 22
+        - 13.JS:Express.js 21
+        - 13.SE:Rust 73
+        - 13.SE-Cpp 36
+        - 13.Perl 32
+        - 13.se:java 28
+        - 13.SE:Clang 696
+        - 13.SE:Web-Development 607
+        - 13.Python 515
+        - 13.SE:Javascript 355
+        - 13.SE:HTML-CSS 294
+        - 13.JS:React 161
+        - 13.DB:SQL 108
+        - 13.SE:Portfolio-Projects 126
+        - 13.SE:Lisp 107
+        - 13.SE:Golang 106
+        - 13.SE:Database 97
+        - 13.SE:Assembly 46
+        - 13.SE:Regex 41
+        - 13.SE:Functional 40
+        - 13.SE:Debugger 54
+        - 13.PHP 46
+    - 13.Text Editor 76
+        - 13.Markdown 12
+        - 13.TE:Vim 708
+        - 13.TE:Emacs 306
+    - 13.Computer Science 305
+        - 13.CS:DSA 602
+        - 13.Ai 192
+        - 13.Data Science 85
+    - 13.CyberSecurity 568
+        - 13.Hacking 545
+    - 13.Computer Engineering 505
+        - 13.CE:Audio 14
+        - 13.CE:Mouse 11
+        - 13.CE:Mobile 181
+        - 13.CE:Keyboard 103
+        - 13.CE:iPad 53
+    - 13.Gear 481
+        - 13.EDC 13
+    - 13.Engineering 137
+        - 13.CE:3d-Printing 10
+    - 13.Vehicle 80
+        - 13.Driving 371
+    - 13.ITAS.Books 5
+- 

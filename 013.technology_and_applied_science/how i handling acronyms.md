@@ -1,0 +1,4 @@
+- start with first acronym list
+    - start is tech+ fc0-u71
+- then use uniq to remove duplicates
+- then add to anki

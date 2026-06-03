@@ -1,0 +1,3 @@
+- snatch
+- clean and jerk
+- clean and press (formerly)

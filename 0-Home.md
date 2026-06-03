@@ -11,7 +11,7 @@ date +"%F" - prints the date in the format YYYY-MM-DD
 [HTML](./html.md)
 [CSS](./css.md)
 [JavaScript](./javascript.md)
-[Journals](journals/journals.md)
+[Journals](004.health_and_fitness/journals/journals.md)
 [Markdown](./markdown.md)
 [Education](./education/education.md)
   [Sophia.org](./education/sophiaorg.md)
@@ -22,6 +22,8 @@ date +"%F" - prints the date in the format YYYY-MM-DD
   [Linux Certs](./linux/linux-certs.md)
 
 [Hyperpolyglot](https://hyperpolyglot.org)
+
+[[markdown]]
 
 what are soft skills?
 what are hard skills?

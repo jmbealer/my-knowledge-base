@@ -1,0 +1,30 @@
+- 
+- terminal cursor
+    - {{Go to beginning of command line}}- {{control  a }} 
+    - {{Go to end of command line}}- {{control  e}} 
+    - {{Move back one character}}- {{control  b}} 
+    - {{Move forward one character}}- {{control  f}} 
+    - {{Move cursor forward one word}}- {{alt f}} 
+    - {{Move cursor back one word}}- {{alt b}} 
+    - {{Toggle between current cursor position and beginning of the line (Bash)}}- {{control  x control x}} 
+- terminal control
+    - {{Clears the Screen}}- {{control  l}} 
+    - {{Pause terminal output}}- {{control  s }} 
+    - {{Resume terminal output after it was paused}}- {{control  q }} 
+- terminal editing
+    - {{Undo last action}}- {{control  shift -(}} 
+    - {{Swap the last two characters before the cursor}}- {{control  t}} 
+    - {{Swap current word with previous}}- {{alt t}} 
+    - {{Delete backward to the beginning of the current word}}- {{control  w }} 
+    - {{Delete the character after the current cursor position or exit shell}}- {{control  d}} 
+    - {{Paste whatever was cut by the last cut command}}- {{control  y}} 
+    - {{Delete to the beginning of the line}}- {{control  u}} 
+    - {{Delete to the end of the line}}- {{control  k}} 
+- terminal history
+    - {{Search command history}}- {{control  r}} 
+    - {{View previous command in the history}}- {{control  p}} 
+    - {{View next command in the history}}- {{control  n}} 
+- terminal processes
+    - {{Puts current process into a suspended background process}}- {{control  z}} 
+    - {{Kill the currently running process}}- {{control  c}} 
+- 

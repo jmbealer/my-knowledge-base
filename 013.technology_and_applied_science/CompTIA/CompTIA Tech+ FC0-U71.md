@@ -1,0 +1,501 @@
+- EXAM OBJECTIVES (DOMAINS)
+    - 1.0 IT Concepts and Terminology 13%
+        - 1.1 Explain the basics of computing.
+            - Input
+            - Processing
+            - Output
+            - Storage
+        - 1.2 Identify notational systems.
+            - Binary
+            - Hexadecimal
+            - Decimal
+            - Octal
+        - 1.3 Compare and contrast common units of measure.
+            - Storage unit
+                - Bit
+                - Byte
+                - Kilobyte (KB)
+                - Megabyte (MB)
+                - Gigabyte (GB)
+                - Terabyte (TB)
+                - Petabyte (PB)
+            - Throughput unit
+                - Bits per second (bps)
+                - Kilobits per second (Kbps)
+                - Megabit per second (Mbps)
+                - Gigabits per second (Gbps)
+                - Terabytes per second (Tbps)
+            - Processing speed
+                - Megahertz (MHz)
+                - Gigahertz (GHz)
+        - 1.4 Explain the troubleshooting methodology.
+            - Identify the problem.
+            - Establish a theory of probable cause (question the obvious).
+                - Research knowledge base/internet, if applicable.
+            - Test the theory to determine the cause.
+            - Establish a plan of action to resolve the problem and implement the solution.
+            - Verify full system functionality and, if applicable, implement preventive measures.
+            - Document findings/lessons learned, actions, and outcomes.
+    - 2.0 Infrastructure 24%
+        - 2.1 Explain common computing devices and their purposes.
+            - Smartphones
+            - Tablets
+            - E-readers
+            - Laptops
+            - Workstations
+            - Servers
+            - Gaming consoles
+            - Virtual reality systems
+            - Augmented reality systems
+            - Internet of Things (IoT)
+                - Home appliances
+                - Home automation devices
+                    - Thermostats
+                    - Security systems
+                    - Home assistants
+                    - Deadbolts/door locks
+                    - Video doorbells
+                - Vehicles
+                - Internet Protocol (IP)/security cameras
+                - Streaming media devices
+                - Medical devices
+                - Exercise equipment
+                - Wearable devices
+        - 2.2 Explain the purpose of common internal computing components.
+            - Motherboard/system board
+            - Firmware/basic input/output system (BIOS)
+            - Random-access memory (RAM)
+            - Central processing unit (CPU)
+            - Graphics processing unit (GPU)
+            - Storage
+            - Network interface card (NIC)
+                - Wired vs. wireless
+                - Onboard vs. expansion card
+        - 2.3 Compare and contrast storage types.
+            - Volatile vs. non-volatile
+            - Local storage
+                - - RAM
+                - - Read-only memory (ROM)
+                - - Storage drive
+                    - o Magnetic disks/hard disk drive (HDD)
+                    - o Solid-state drive (SSD)
+                    - o Non-volatile memory express (NVMe)
+                - - Optical
+                - - External flash drives
+            - Local network storage
+                - - Network-attached storage (NAS)
+                - - File server
+                - - Cloud storage service
+        - 2.4 Given a scenario, install and configure common peripheral devices.
+            - Devices
+                - - Printer
+                - - Scanner
+                - - Keyboard
+                - - Mouse
+                - - Web camera
+                - - External drive
+                - - Speakers/headset
+                - - Display
+                    - o Smart TV
+                    - o Projector
+                    - o Monitor
+                - - Uninterruptable power supply (UPS)
+            - Installation types
+                - - Plug-n-play vs. driver installation
+                - - Other required steps
+                - - IP-based peripherals
+                - - Web-based configuration steps
+        - 2.5 Compare and contrast common types of input/output device interfaces.
+            - Networking
+            - - Wired
+            - o Ethernet connector (RJ45)
+            - o Fiber connector small form-factor pluggable (SFP)
+            - - Wireless
+            - o Bluetooth
+            - o Near-field communication (NFC)
+            - o 802.11X
+            - - Networking devices and tools
+            - o Crimpers
+            - o Cable testers
+            - Peripheral devices
+            - - USB (A/B/C)
+            - - Thunderbolt
+            - - Bluetooth
+            - - Radio frequency (RF)
+            - - Lightning
+            - Display ports
+            - - Video Graphics Array (VGA)
+            - - Digital Visual Interface (DVI)
+            - - High Definition Media Interface (HDMI)
+            - - DisplayPort
+            - - USB-C
+            - Display technology
+            - - Mirroring
+            - - Casting
+        - 2.6 Compare and contrast virtualization and cloud technologies.
+            - Virtualization
+            - - Hypervisor
+            - - Guest operating system (OS)
+            - Cloud concepts
+            - - Platform as a Service (PaaS)
+            - - Infrastructure as a Service (IaaS)
+            - - Software as a Service (SaaS)
+            - Deployment models
+            - - On premises
+            - - Cloud
+            - - Hybrid
+        - 2.7 Compare and contrast common internet service types.
+            - Fiber optic
+            - Cable
+            - Digital subscriber line (DSL)
+            - Wireless
+            - - RF
+            - - Satellite
+            - - Cellular
+        - 2.8 Identify basic networking concepts.
+            - Basics of network communication
+            - • Network identifiers
+            - - IP address
+            - - Media access control (MAC) address
+            - - Ports
+            - Basic network services
+            - - Secure web browsing
+            - - File transfer
+            - - Email
+            - Networking devices
+            - - Modem
+            - - Router
+            - - Switch
+            - - Access point
+            - - Firewall
+            - Networking models
+            - - Client/server
+            - - Peer-to-peer
+            - Local area network (LAN)
+            - Wide area network (WAN)
+        - 2.9 Explain the basic capabilities of a small wireless network.
+            - • 802.11n/ac/ax
+            - - Speed considerations
+            - - Interference and attenuation factors
+            - Older vs. newer standards
+            - Band options
+            - - 2.4GHz
+            - - 5GHz
+            - - 6GHz
+    - 3.0 Applications and Software 18%
+        - 3.1 Identify components of an OS.
+            - Filesystem characteristics
+            - - Compression
+            - - Encryption
+            - - Types and extensions
+            - File management
+            - - Folders/directories
+            - - Permissions
+            - - Naming restrictions
+            - System applications and utilities
+            - Services
+            - Processes
+            - Drivers
+        - 3.2 Explain the purpose of operating systems.
+            - Interface between applications and
+            - hardware
+            - Disk management
+            - Task and process management
+            - Application management
+            - Device management
+            - Access control
+            - OS types
+            - - Mobile device
+            - - Desktop/workstation
+            - - Server
+            - - Embedded
+        - 3.3 Explain the purpose and proper use of software.
+            - Productivity software
+            - - Word processing
+            - - Spreadsheet
+            - - Presentation
+            - - Visual diagramming
+            - Collaboration software
+            - - Email client
+            - - Conferencing
+            - - Online workspace
+            - - Document sharing
+        - 3.4 Given a scenario, configure and use web browser features.
+            - Private browsing
+            - • Browser add-ons/extensions
+            - - Add
+            - - Remove
+            - - Enable/disable
+            - • Caching/clearing cache
+            - Pop-up blockers
+            - Compatible browser for application(s)
+            - • Profile synchronization
+            - Organizing features
+            - - Bookmarks
+            - Default search engine
+            - Password management
+            - Accessibility
+            - Appearance
+        - 3.5 Identify common uses of artificial intelligence (AI).
+            - AI chatbots
+            - AI assistants
+            - Generative AI
+            - - AI-generated code
+            - - AI-generated content
+            - AI predictions and suggestions
+            - Interfaces
+            - - Console/command line
+            - - Graphical user interface (GUI)
+            - - File attributes and properties
+            - Instant messaging software
+            - Web-browsing software
+            - Remote support software
+    - 4.0 Software Development Concepts 13%
+        - 4.1 Compare and contrast programming language categories.
+            - Interpreted
+            - - Scripting languages
+            - - Markup languages
+            - Compiled programming languages
+            - Query languages
+            - - Assembly languages
+        - 4.2 Identify fundamental data types and their characteristics.
+            - Char
+            - Strings
+            - Numbers
+            - - Integers
+            - - Floats
+            - Boolean
+        - 4.3 Explain the purpose and use of programming concepts.
+            - • Identifiers
+            - - Variables
+            - - Constants
+            - Arrays
+            - Functions
+            - Objects
+            - - Properties
+            - - Attributes
+            - - Methods
+        - 4.4 Identify programming organizational techniques and logic concepts.
+            - Organizational techniques
+            - - Pseudo code concepts
+            - - Object-oriented methods
+            - - Comments and documentation
+            - - Flow chart concepts
+            - o Sequence
+            - Logic concepts
+            - - Branching
+            - - Looping
+    - 5.0 Data and Database Fundamentals 13%
+        - 5.1 Explain the value of data and information.
+            - Data and information as an asset
+            - - Critical vs. non-critical data
+            - Data-driven business decisions
+            - - Data capture and collection
+            - - Data correlation
+            - - Meaningful reporting
+            - Data monetization
+            - Data analytics
+            - Big Data
+        - 5.2 Explain database concepts and the purpose of a database.
+            - Database uses
+            - - Create
+            - - Import/input
+            - - Query
+            - - Reports
+            - • Flat file vs. database
+            - - Multiple concurrent users
+            - - Scalability
+            - - Speed
+            - - Variety of data
+            - Database records
+            - Storage
+            - - Data persistence
+            - Data availability
+            - - Cloud vs. local
+            - - Online vs. offline
+        - 5.3 Compare and contrast various database structures.
+            - Structured vs. semistructured vs. non-structured
+            - Relational databases
+            - - Schema
+            - - Tables
+            - o Rows/records
+            - o Fields/columns
+            - (i) Primary key
+            - (ii) Foreign key
+            - o Constraints
+            - • Non-relational databases
+            - - Key/value databases
+            - - Document databases
+        - 5.4 Explain basic data backup concepts.
+            - Data
+            - - File backups
+            - - System backups Restoring data
+            - Location
+            - - Stored locally
+            - o Flash drive
+            - o External hard drive
+            - o Secure digital (SD) card
+            - - Cloud storage
+    - 6.0 Security 19%
+        - 6.1 Explain fundamental security concepts and frameworks.
+            - • Confidentiality, integrity, and availability
+            - - Authentication
+            - Privacy
+            - o Single factor
+            - - Social networking sites
+            - o Multifactor
+            - - Email
+            - o Single sign-on
+            - - File sharing
+            - - Authorization
+            - - Instant messaging
+            - o Permissions
+            - - Personally identifiable information (PII)
+            - (i) Administrator vs. user accounts
+            - - Government regulations (e.g., General Data
+            - o Least privilege model
+            - Protection Regulations [GDPR])
+            - - Accounting
+            - - Cookie consent
+            - o Logs
+            - Authentication, authorization, accounting,
+            - o Location tracking
+            - and non-repudiation concepts
+            - o Web browser history
+        - 6.2 Explain methods to secure devices and security best practices.
+            - Security awareness
+            - - Social engineering
+            - o Phishing
+            - - Malicious or compromised content
+            - • Securing devices (mobile/workstation)
+            - - Authentication
+            - - Anti-malware
+            - - Firewall
+            - - Patching/updating
+            - - Physical device security
+            - o Cable locks
+            - o USB locks
+            - Device use best practices
+            - - Licensing
+            - o Open source vs. proprietary
+            - o Subscription vs. one-time
+            - purchase vs. perpetual
+            - o Product keys and serial numbers
+            - - Software sources
+            - o Researching and validating
+            - legitimate sources
+            - o Original equipment manufacturer
+            - (OEM) websites vs. third-party
+            - websites
+            - o Application stores
+            - - Removal of software
+            - o Unwanted
+            - o Unnecessary
+            - o Malicious
+            - - Software piracy
+            - Safe browsing practices
+            - - Certificates
+            - o Valid
+            - Invalid
+            - Privacy considerations
+            - - Social networking sites
+            - - Email
+            - - File sharing
+            - - Instant messaging
+            - - AI
+        - 6.3 Explain password best practices.
+            - Password length
+            - Password complexity
+            - Password history
+            - Password expiration
+            - Password reuse across sites
+            - Password managers
+            - Password privacy
+            - Password reset process
+            - Changing default usernames and passwords
+            - Enabling passwords
+        - 6.4 Identify common use cases for encryption.
+            - Plain text vs. cipher text
+            - Data in transit
+            - Data at rest
+            - - Email
+            - - File level
+            - - HTTPS
+            - - Disk level
+            - - VPN
+            - - Mobile device
+            - - Mobile application
+        - 6.5 Given a scenario, configure security settings for a small wireless network.
+            - • Changing the service set identifier (SSID)
+            - Changing the default password
+            - Encrypted vs. unencrypted
+            - - Open
+            - - Pre-shared key
+            - - Wireless Protected Access (WPA)
+            - - Wireless Protected Access 2 (WPA2)
+            - - Wireless Protected Access 3 (WPA3)
+- CompTIA Tech+ FC0-U71 Hardware and Software List
+    - CompTIA has included this sample list of hardware and software to assist
+    - candidates as they prepare for the Tech+ FC0-U71 certification exam. This list
+    - may also be helpful for training companies that wish to create a lab component
+    - for their training offering. The bulleted lists below each topic are sample lists and
+    - are not exhaustive.
+    - Equipment
+    - Workstations
+    - Laptop
+    - Home wireless router
+    - Modem for internet service (WAN connection)
+    - Basic printer
+    - External storage devices
+    - - Hard drive
+    - - Solid state drive
+    - Tablet/smartphone
+    - Surge protector/UPS
+    - Physical networking devices
+    - - Switch (unmanaged)
+    - Wireless headphones
+    - Casting devices
+    - Smart TV/monitor
+    - Webcams/IP cameras
+    - Speakers
+    - Spare parts/hardware
+    - Flash drive (for backup)
+    - Various cable types
+    - Keyboards
+    - Computer mice
+    - Tools
+    - Electrostatic discharge (ESD) wristband (for demonstration)
+    - Internet connectivity
+    - Crimper
+    - Cable tester
+    - Software
+    - OS media
+    - - Windows
+    - - Linux
+    - Unconfigured OS images
+    - Anti-malware software
+    - Productivity software (local vs. cloud)
+    - Collaboration software
+    - Videoconferencing software
+    - Browser software
+    - Backup software
+    - Database software
+    - Software development packages (Integrated development
+    - environment [IDE])
+    - Cloud accounts for demonstration purposes: virtual central
+    - processing unit (vCPU), virtual random-access memory
+    - (vRAM), etc.
+    - Virtualization software
+- About the Exam
+    - The CompTIA Tech+ exam will certify the successful candidate has the knowledge and skills required to identify and explain the basics of computing, IT infrastructure, applications, software development, database use, and security concepts. 
+    - In addition, candidates will demonstrate the knowledge to install peripherals and configure web browsers and wireless networks. 
+    - Further, this exam will assess the candidate’s knowledge in the areas of troubleshooting theory and identification of basic security risks.
+    - CompTIA Tech+ is the cornerstone certification for those venturing into tech-related careers.
+    - It provides a wide spectrum of foundational tech knowledge and hands-on skills.
+- EXAM DEVELOPMENT
+    - Required exam FC0-U71
+    - Number of questions
+    - Types of questions Multiple-choice
+    - Length of test
+    - Recommended experience Passing Score
+    - High school students or non-IT professionals.

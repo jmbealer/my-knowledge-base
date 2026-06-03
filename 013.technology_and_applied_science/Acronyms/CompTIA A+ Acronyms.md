@@ -1,0 +1,349 @@
+- **Acronym - Spelled Out** 
+- AAA::Authentication, Authorization, and Accounting
+    - AAA (Authen�ca�on, Authoriza�on, and Accoun�ng): A framework for intelligently controlling access to
+    - computer resources, enforcing policies, audi�ng usage, and providing the informa�on necessary to bill
+    - for services.
+- AAAA::Authentication, Authorization, Accounting, and Auditing
+- ADF::Automatic Document Feeder
+- AMD::Advanced Micro Devices, Inc.
+- APFS::Apple File System
+- ATX::Advanced Technology Extended
+- AP::Access Point
+    - AP - Access Point: A device that allows wireless devices to connect to a wired network.
+    - AP (Access Point): A networking hardware device that allows other Wi‐Fi devices to connect to a wired
+    - network.
+- APK::Android Package
+- ATA::Advanced Technology Attachment
+- ATM::Asynchronous Transfer Mode
+- AUP::Acceptable Use Policy
+    - AUP - Acceptable Use Policy: Guidelines that define the acceptable use of resources within a
+    - network.
+    - AUP (Acceptable Use Policy): A policy that sets out the rules and guidelines for the proper use of an
+    - organiza�on's informa�on technology.
+- 
+- BEC::Business Email Compromise
+- BSOD::Blue Screen of Death
+- BYOD::Bring Your Own Device
+    - BYOD - Bring Your Own Device: A policy allowing employees to use their personal devices for work
+    - purposes.
+        - BYOD (Bring Your Own Device): A policy that allows employees to bring personally owned devices to
+        - their workplace and use those devices to access company informa�on and applica�ons.
+- 
+- CAC::Calling-card Authorization Computer
+- CIFS::Common Internet File System
+- CMDB::Configuration Management Database
+- CNAME::Canonical Name
+    - CNAME - Canonical Name: A type of DNS record that maps an alias name to a true (canonical)
+    - domain name.
+- CAPTCHA::Completely Automated Public Turing Test to Tell Computers and Humans Apart
+    - CAPTCHA (Completely Automated Public Turing Test to Tell Computers and Humans Apart): A type of
+    - challenge‐response test used in compu�ng to determine whether the user is human.
+- CDFS::Compact Disc File System
+- CDMA::Code-Division Multiple Access
+- CERT::Computer Emergency Response Team
+    - CERT (Computer Emergency Response Team): An expert group that handles computer security
+    - incidents.
+- CMD::Command Prompt
+- CMOS::Complementary Metal-Oxide Semiconductor
+- CRL::Certificate Revocation List
+    - CRL (Cer�ficate Revoca�on List): A list of digital cer�ficates that have been revoked by the issuing
+    - cer�ficate authority before their scheduled expira�on date and should no longer be trusted.
+- 
+- DB-9::Serial Communications D-Shell Connector, 9 pins
+- DKIM::DomainKeys Identified Mail
+    - DKIM (DomainKeys Iden�fied Mail): An email authen�ca�on method designed to detect forged sender
+    - addresses in emails.
+- DMARC::Domain-based Message Authentication, Reporting, and Conformance
+    - DMARC (Domain Message Authen�ca�on Repor�ng and Conformance): An email authen�ca�on
+    - protocol designed to give email domain owners the ability to protect their domain from unauthorized
+    - use, commonly known as email spoofing.
+- DRM::Digital Rights Management
+- DMA::Direct Memory Access
+- DRAM::Dynamic Random-Access Memory
+- DVI-D::Digital Visual Interface-Digital
+- 
+- ECC::Error-correcting Code
+- EDR::Endpoint Detection and Response
+    - EDR (Endpoint Detec�on and Response): A cybersecurity technology that addresses the need for
+    - con�nuous monitoring and response to advanced threats.
+- EFS::Encrypting File System
+    - EFS (Encrypted File System): A feature of some versions of Microso� Windows that provides filesystem‐
+    - level encryp�on.
+- EOL::End-of-life
+    - EOL - End-of-life: The point at which a product is no longer supported or produced by the
+    - manufacturer.
+- exFAT::Extended File Allocation Table
+- ext::Extended File System
+- 
+- FRT::Facial Recognition Technology
+- FAT12::12-bit File Allocation Table
+- FAT16::16-bit File Allocation Table
+- FSB::Front-Side Bus
+- 
+- GFS::Grandfather-Father-Son
+- GPT::GUID [Globally Unique Identifier] Partition Table
+- GUID::Globally Unique Identifier
+- GSM::Global System for Mobile Communications
+- 
+- HSM::Hardware Security Module
+    - HSM (Hardware Security Module): A physical compu�ng device that safeguards and manages digital
+    - keys for strong authen�ca�on and provides cryptoprocessing.
+- HAL::Hardware Abstraction Layer
+- HAV::Hardware-assisted Virtualization
+- HCL::Hardware Compatibility List
+- HDCP::High-bandwidth Digital Content Protection
+- 
+- IAM::Identity and Access Management
+    - IAM - Identity and Access Management: A framework of policies and technologies for ensuring that
+    - the right users have the appropriate access to technology resources.
+        - IAM (Iden�ty and Access Management): A framework of business processes, policies, and technologies
+        - that facilitates the management of electronic or digital iden��es.
+- IPS 2::In-plane Switching
+- ISO::International Organization for Standardization
+    - ISO (Interna�onal Standards Organiza�on): An independent, non‐governmental interna�onal
+    - organiza�on with a membership of 164 na�onal standards bodies.
+- ITX::Information Technology eXtended
+- I/O::Input/Output
+- ICR::Intelligent Character Recognition
+- IEEE::Institute of Electrical and Electronics Engineers
+    - IEEE (Ins�tute of Electrical and Electronics Engineers): A professional associa�on with its corporate
+    - office in New York City and its opera�ons center in Piscataway, New Jersey, dedicated to advancing
+    - technology for the benefit of humanity.
+- IrDA::Infrared Data Association
+- IRP::Incident Response Plan
+    - IRP (Incident Response Plan): A set of instruc�ons to help IT staff detect, respond to, and recover from
+    - network security incidents.
+- 
+- KVM::Keyboard-Video-Mouse
+- KB 2::Knowledge Base
+- 
+- LC::Lucent/Local Connector
+    - LC - Local Connector: A type of fiber optic connector used in high-density connections.
+- LCD::Liquid Crystal Display
+- LDAP::Lightweight Directory Access Protocol
+    - LDAP - Lightweight Directory Access Protocol: A protocol used to access and manage directory
+    - information services over a network.
+        - LDAP (Lightweight Directory Access Protocol): An open, vendor‐neutral, industry standard applica�on
+        - protocol for accessing and maintaining distributed directory informa�on services over an Internet
+        - Protocol network.
+- LED::Light-emitting Diode
+- 
+- MBR::Master Boot Record
+    - MBR (Master Boot Record): A special type of boot sector at the very beginning of par��oned computer
+    - mass storage devices.
+- MDM::Mobile Device Management
+    - MDM (Mobile Device Management): A type of security so�ware used by an IT department to monitor,
+    - manage, and secure employees' mobile devices that are deployed across mul�ple mobile service
+    - providers and across mul�ple mobile opera�ng systems being used in the organiza�on.
+- MDR::Managed Detection and Response
+- MFA::Multifactor Authentication
+    - MFA - Multifactor Authentication: A security process that requires multiple methods of
+    - authentication from independent categories of credentials.
+        - MFA (Mul�factor Authen�ca�on): An electronic authen�ca�on method in which a user is granted
+        - access to a website or applica�on only a�er successfully presen�ng two or more pieces of evidence to
+        - an authen�ca�on mechanism.
+- MMC::Microsoft Management Console
+- MNDA::Mutual Non-disclosure Agreement
+- MSDS::Material Safety Data Sheet
+- MX::Mail Exchange
+    - MX - Mail Exchange: A DNS record that directs email to a mail server.
+- mSATA::Mini-serial Advanced Technology Attachment
+- MAM::Mobile Application Management
+- MFD::Multifunction Device
+    - MFD (Mul�func�on Device): An office machine which incorporates the func�onality of mul�ple devices
+    - in one, so as to have a smaller footprint in a home or small business se�ng.
+- MFP::Multifunction Printer
+    - MFP (Mul�func�on Printer): A mul�‐func�onal device that performs func�ons like prin�ng, scanning,
+    - and copying.
+- MOU::Memorandum of Understanding
+    - MOU (Memorandum of Understanding): An agreement between two or more par�es outlined in a
+    - formal document.
+- MSRA::Microsoft Remote Assistance
+- 
+- NetBIOS::Network Basic Input/Output System
+- NTP::Network Time Protocol
+    - NTP - Network Time Protocol: A protocol used to synchronize clocks on computers within a
+    - network.
+    - NTP (Network Time Protocol): A networking protocol for clock synchroniza�on between computer
+    - systems over packet‐switched, variable‐latency data networks.
+- NetBT::NetBIOS over TCP/IP
+- NFS::Network File System
+- 
+- OLED::Organic Light-emitting Diode
+- ONT::Optical Network Terminal
+- OTP::One-time Password (or Passcode)
+- OCR::Optical Character Recognition
+- 
+- PAM::Privileged Access Management
+    - PAM (Privileged Access Management): A comprehensive approach to controlling and monitoring
+    - privileged access to cri�cal assets and systems.
+- PIV::Personal Identity Verification
+    - PIV (Personal Iden�ty Verifica�on): A United States federal government standard for reliable
+    - iden�fica�on and access control card.
+- POST::Power-on Self-test
+- PUP::Potentially Unwanted Program
+    - PUP (Poten�ally Unwanted Program): A program that a user may perceive as unwanted.
+    - and tells the Cer�ficate Authority (CA) to issue it.
+- PoE::Power over Ethernet
+    - PoE - Power over Ethernet: A technology that allows electrical power to be transmitted over network
+    - cables along with data.
+- PCL::Printer Command Language
+- PE::Preinstallation Environment
+- PKI::Public Key Infrastructure
+    - PKI - Public Key Infrastructure: A framework for managing digital certificates and public-key
+    - encryption.
+        - PKI (Public Key Infrastructure): A set of roles, policies, hardware, so�ware, and procedures needed to
+        - create, manage, distribute, use, store, and revoke digital cer�ficates and manage public‐key encryp�on.
+- PPP::Point-to-Point Protocol
+    - PPP (Point‐to‐Point Protocol): A data link protocol commonly used to establish a direct connec�on
+    - between two networking nodes.
+- PRL::Preferred Roaming List
+- 
+- RADIUS::Remote Authentication Dial-in User Server
+    - RADIUS - Remote Authentication Dial-in User Service: A networking protocol that provides
+    - centralized authentication, authorization, and accounting for users who connect and use a network
+    - service.
+        - RADIUS (Remote Authen�ca�on Dial‐in User Service): A networking protocol that provides centralized
+        - Authen�ca�on, Authoriza�on, and Accoun�ng (AAA or Triple A) management for users who connect and
+        - use a network service.
+- RDP::Remote Desktop Protocol
+    - RDP - Remote Desktop Protocol: A protocol developed by Microsoft that allows a user to connect to
+    - another computer over a network.
+        - RDP (Remote Desktop Protocol): A proprietary protocol developed by Microso� that provides a user
+        - with a graphical interface to connect to another computer over a network connec�on.
+- ReFS::Resilient File System
+- RFID::Radio-frequency Identification
+- RMM::Remote Monitoring and Management
+- RSR::Rapid Security Response
+- RFI::Radio-Frequency Interference
+- RTO::Recovery Time Objective
+    - RTO - Recovery Time Objective: The target time set for the recovery of IT and business activities
+    - after a disaster.
+        - RTO (Recovery Time Objec�ve): The targeted dura�on of �me and a service level within which a
+        - business process must be restored a�er a disaster or disrup�on.
+- 
+- S.M.A.R.T::Self-monitoring Analysis and Reporting Technology
+- SAML::Security Assertions Markup Language
+    - SAML - Security Assertion Markup Language: An XML-based standard for exchanging authentication
+    - and authorization data between parties, particularly between an identity provider and a service
+    - provider.
+    - SAML (Security Asser�ons Markup Language): An open standard for exchanging authen�ca�on and
+    - authoriza�on data between par�es, in par�cular, between an iden�ty provider and a service provider.
+- SAS::Serial Attached SCSI
+- SC::Subscriber Connector
+    - SC - Subscriber Connector: A type of fiber optic connector commonly used in data networks.
+- SCADA::Supervisory Control and Data Acquisition
+    - SCADA - Supervisory Control and Data Acquisition: A system used for remote monitoring and
+    - control of industrial processes.
+    - SCADA (Supervisory Control and Data Acquisi�on): A control system architecture that uses computers,
+    - networked data communica�ons, and graphical user interfaces for high‐level process supervisory
+    - management.
+- SCSI::Small Computer System Interface
+- SIM::Subscriber Identity Module
+- SLA::Service-level Agreement
+    - SLA - Service-level Agreement: A contract between a service provider and a customer that specifies
+    - the level of service expected.
+    - SLA (Service‐level Agreement): A commitment between a service provider and a client. Par�cular
+    - aspects of the service – quality, availability, responsibili�es – are agreed upon between the service
+    - provider and the service user.
+- SMB::Server Message Block
+    - SMB - Server Message Block: A network protocol used for providing shared access to files, printers,
+    - and serial ports between nodes on a network.
+- SMS::Short Message Service
+    - SMS (Short Message Service): A text messaging service component of most telephone, internet, and
+    - mobile device systems.
+- SODIMM::Small Outline Dual In-line Memory Module
+- SOP::Standard Operating Procedure
+- SPF::Sender Policy Framework
+    - SPF (Sender Policy Framework): An email authen�ca�on method designed to detect forging sender
+    - addresses during the delivery of the email.
+- SPICE::Software Process Improvement and Capability Determination
+- ST::Straight Tip
+    - ST - Straight Tip: A type of fiber optic connector known for its bayonet-style coupling.
+- SAN::Storage Area Network
+    - SAN - Storage Area Network: A specialized network that provides access to consolidated, block-
+    - level data storage.
+    - SAN (Storage Area Network): A network which provides access to consolidated, block‐level data storage.
+- SCP::Secure Copy Protection
+- SDN::Software-defined Networking
+    - SDN - Software-defined Network: An approach to networking that uses software-based controllers
+    - to manage network resources and services.
+    - SDN (So�ware‐defined Networking): An approach to networking that uses so�ware‐based controllers
+    - or applica�on programming interfaces (APIs) to direct traffic on the network and communicate with the
+    - underlying hardware infrastructure.
+- SIM::Subscriber Identity Module
+    - SIM (Subscriber Iden�ty Module): A removable smart card for mobile phones that securely stores the
+    - service‐subscriber key used to iden�fy a subscriber on mobile telephony devices.
+- SIMM::Single Inline Memory Module
+- SNTP::Simple Network Time Protocol
+- SRAM::Static Random-access Memory
+- SSO::Single Sign-on
+    - SSO - Single Sign-on: An authentication process that allows a user to access multiple applications
+    - with one set of login credentials.
+    - SSO (Single Sign‐on): A property of access control of mul�ple related, yet independent, so�ware
+    - systems. With this property, a user logs in with a single ID and password to gain access to any of several
+    - related systems.
+- STP::Shielded Twisted Pair
+    - STP - Shielded Twisted Pair: A type of twisted-pair cabling that includes shielding to reduce
+    - electromagnetic interference.
+- 
+- TACACS::Terminal Access Controller Access-control System
+- TN::Twisted Nematic
+- TOTP::Time-based One-time Password
+    - TOTP (Time‐based One‐�me Password): A common algorithm for genera�ng a one‐�me password,
+    - which is valid only for a short period of �me.
+- TPM::Trusted Platform Module
+    - TPM (Trusted Pla�orm Module): A specialized chip on an endpoint device that stores RSA encryp�on
+    - keys specific to the host system for hardware authen�ca�on.
+- TFTP::Trivial File Transfer Protocol
+    - TFTP - Trivial File Transfer Protocol: A simple file transfer protocol that provides basic file transfer
+    - capabilities without authentication.
+- 
+- UAC::User Account Control
+- UDP::User Datagram Protocol
+    - UDP - User Datagram Protocol: A communication protocol that oƯers a faster, but less reliable,
+    - transmission service compared to TCP.
+        - UDP (User Datagram Protocol): A communica�ons protocol that facilitates the exchange of messages
+        - between compu�ng devices in a network. It's used for �me‐sensi�ve transmissions.
+- UEFI::Unified Extensible Firmware Interface
+    - UEFI (Unified Extensible Firmware Interface): A specifica�on for a so�ware program that connects a
+    - computer's firmware to its opera�ng system (OS). It's designed to replace BIOS (basic input/output
+    - system).
+- UPnP::Universal Plug and Play
+- UTM::Unified Threat Management
+    - UTM - Unified Threat Management: A security solution that integrates multiple security features,
+    - such as firewall, antivirus, and intrusion detection, into a single device.
+    - UTM (Unified Threat Management): A comprehensive solu�on that has evolved from tradi�onal firewall
+    - solu�ons into a product that can perform mul�ple security func�ons within one single system.
+- UNC::Universal Naming Convention
+- UTP![](https://remnote-user-data.s3.amazonaws.com/hAO3eLwQh1wlZuu-Ugkj9q0ZOb2MZczYR-dunH9f5UQxMHVvd1NRFqOIedFyZO5yzYDlUFyyYwySV5l0Obbcaie19AGkLpaR-akBVd8gZDenIYfjL4Vg8lQOWG4XP5f8.png)::Unshielded Twisted Pair
+    - UTP - Unshielded Twisted Pair: A type of twisted-pair cabling that does not include shielding and is
+    - commonly used in Ethernet networks.
+    - UTP (Unshielded Twisted Pair): A popular type of cable that is used for network cabling.
+- 
+- VA::Vertical Alignment
+- VDI::Virtual Desktop Infrastructure
+    - VDI (Virtual Desktop Infrastructure): A technology that hosts a desktop opera�ng system on a
+    - centralized server in a data center.
+- VLAN::Virtual Local Area Network
+    - VLAN - Virtual Local Area Network: A logical group of devices on a network that are segmented by
+    - function, department, or other criteria.
+    - VLAN (Virtual Local Area Network): A group of devices on one or more LANs that are configured to
+    - communicate as if they were a�ached to the same wire, when in fact they are located on a number of
+    - different LAN segments.
+- VNC::Virtual Network Computer
+- VM::Virtual Machine
+    - VM (Virtual Machine): An emula�on of a computer system. Virtual machines are based on computer
+    - architectures and provide the func�onality of a physical computer.
+- VRAM::Video Random-access Memory
+- 
+- WISP::Wireless Internet Service Provider
+- WWAN::Wireless Wide Area Network
+- WinRM::Windows Remote Management
+- WMN::Wireless Mesh Network
+- 
+- XDR::Extended Detection and Response
+- XFS::Extended File System
+- XSS::Cross-site Scripting
+- 
+- 

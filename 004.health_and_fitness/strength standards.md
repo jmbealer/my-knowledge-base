@@ -1,0 +1,17 @@
+- push ups 
+    - beginner - 1
+    - novice - 18
+    - intermediate - 41
+    - advanced - 68
+    - elite - 99
+- pull ups 1 5 14 25 37
+- dips 1 8 20 34 49
+- bodyweight squat 1 16 57 113 178
+- hip extension 1 13 35 62 92
+- bodyweight calf raises 1 18 67 132 211
+- burpees 1 8 36 73 115
+- squat thrust 1 8 30 60 94
+- lunge 1 10 38 73 113
+- inverted row 1 6 19 35 54
+- 
+- 

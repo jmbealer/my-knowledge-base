@@ -1,0 +1,5 @@
+- red hat enterprise linux
+- suse linux enterprise server
+- debian
+- kali
+- ubuntu lts 

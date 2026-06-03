@@ -1,0 +1,214 @@
+- ## 0) Help + discovery
+    - `man`←manual page for command; flags: `-k` (search), `-f` (short desc)
+    - `help`←bash builtin help for builtins
+    - `--help`←command’s built-in usage help
+    - `info`←GNU info docs browser
+    - `tldr`←short practical examples (if installed)
+    - `apropos`←search man page descriptions; flags: `keyword`
+    - `which`←show command resolved path
+    - `whereis`←locate binary/source/man paths
+    - `type`←show how shell resolves name; flags: `-a`
+    - `command`←run command, bypass alias; flags: `-v`, `-V`
+- ## 1) Navigation + listing
+    - `pwd`←print current directory
+    - `cd`←change current directory
+    - `ls`←list directory entries; flags: `-l`, `-a`, `-h`, `-t`, `-S`, `-R`
+    - `tree`←tree view directories (if installed); flags: `-L`, `-a`, `-d`
+- ## 2) Files + directories
+    - `touch`←create file or update timestamps; flags: `-t`, `-r`
+    - `mkdir`←create directories; flags: `-p`, `-m`
+    - `rmdir`←remove empty directories; flags: `-p`
+    - `cp`←copy files/directories; flags: `-r/-R`, `-a`, `-p`, `-v`, `-i`, `-u`
+    - `mv`←move/rename files; flags: `-v`, `-i`, `-n`
+    - `rm`←remove files/directories; flags: `-r/-R`, `-f`, `-i`
+    - `ln`←create hard/symlinks; flags: `-s`, `-f`, `-n`, `-v`
+    - `readlink`←print symlink target; flags: `-f`
+    - `realpath`←resolve absolute real path
+    - `stat`←show file metadata; flags: `-c` (format)
+    - `file`←guess file type
+    - `basename`←strip directory path
+    - `dirname`←strip filename portion
+    - `install`←copy + set perms/owner; flags: `-m`, `-o`, `-g`, `-d`, `-v`
+- 
+- ## 3) View files (pagers) + quick inspection
+    - `cat` <<print file contents
+    - `tac` <<print file reversed by lines
+    - `less` <<page through text; flags: `-S` (no wrap)
+    - `more` <<old pager (less preferred)
+    - `head` <<first lines; flags: `-n`
+    - `tail` <<last lines; flags: `-n`, `-f`
+    - `wc` <<count lines/words/bytes; flags: `-l`, `-w`, `-c`, `-m`
+    - `nl` <<number lines
+    - `od` <<octal/hex dump; flags: `-An`, `-tx1`
+    - `hexdump` <<hex view data; flags: `-C`
+    - `strings` <<extract printable strings
+- 
+- ## 4) Search + text processing
+    - `grep` <<match lines by pattern; flags: `-i`, `-n`, `-r`, `-E`, `-F`, `-v`, `-o`
+    - `egrep` <<grep `-E` (legacy; use `grep -E`)
+    - `fgrep` <<grep `-F` (legacy; use `grep -F`)
+    - `find` <<search filesystem by tests; flags: `-name`, `-type`, `-mtime`, `-size`, `-user`, `-group`, `-perm`, `-exec`
+    - `locate` <<fast name search (db); flags: `-i`
+    - `updatedb` <<refresh locate database
+    - `xargs` <<build args from stdin; flags: `-0`, `-n`, `-I{}`
+    - `cut` <<select columns/chars; flags: `-d`, `-f`, `-c`
+    - `sort` <<sort lines; flags: `-n`, `-h`, `-r`, `-u`, `-k`, `-t`
+    - `uniq` <<dedupe adjacent lines; flags: `-c`, `-d`, `-u`
+    - `tr` <<translate/delete chars; flags: `-d`, `-s`
+    - `awk` <<field-based text processing
+    - `sed` <<stream edits; flags: `-n`, `-i`, `-E`
+    - `tee` <<split output to file+stdout; flags: `-a`
+    - `paste` <<merge files by lines
+    - `join` <<join two files by key
+    - `diff` <<show file differences; flags: `-u`
+    - `cmp` <<byte-by-byte compare
+    - `comm` <<compare sorted files; flags: `-1`, `-2`, `-3`
+    - `fmt` <<reflow paragraphs; flags: `-w`
+    - `fold` <<wrap long lines; flags: `-w`
+- 
+- ## 5) Shell essentials (builtins + scripting)
+    - `echo` <<print text
+    - `printf` <<formatted output
+    - `read` <<read line into variables; flags: `-r`, `-p`, `-s`
+    - `test` / `[` <<evaluate condition
+    - `alias` <<create shortcut command
+    - `unalias` <<remove alias
+    - `export` <<set env var for children
+    - `env` <<run with environment; flags: `-i`
+    - `printenv` <<print environment variables
+    - `set` <<shell options + variables; flags: `-e`, `-u`, `-o pipefail`
+    - `source` / `.` <<run script in current shell
+    - `exec` <<replace shell with command
+    - `exit` <<exit shell
+    - `history` <<show command history
+    - `sleep` <<delay execution; flags: `1`, `0.5`, `2m`
+- 
+- ## 6) Permissions + ownership + ACL
+    - `chmod` <<change permissions; flags: `-R`, numeric like `640`
+    - `chown` <<change owner/group; flags: `-R`
+    - `chgrp` <<change group; flags: `-R`
+    - `umask` <<default permission mask
+    - `getfacl` <<view ACLs
+    - `setfacl` <<set ACLs; flags: `-m`, `-x`, `-b`, `-R`
+- 
+- ## 7) Users + groups (RHCSA core)
+    - `id` <<show uid/gid/groups
+    - `whoami` <<show effective username
+    - `who` <<show logged-in users
+    - `w` <<who + what they’re doing
+    - `users` <<list logged-in usernames
+    - `groupadd` <<create group; flags: `-g`
+    - `groupmod` <<modify group; flags: `-n`, `-g`
+    - `groupdel` <<delete group
+    - `useradd` <<create user; flags: `-m`, `-u`, `-g`, `-G`, `-s`, `-c`, `-d`
+    - `usermod` <<modify user; flags: `-aG`, `-s`, `-d`, `-L`, `-U`
+    - `userdel` <<delete user; flags: `-r`
+    - `passwd` <<set user password; flags: `-l`, `-u`, `-e`
+    - `chage` <<password aging policy; flags: `-l`, `-M`, `-m`, `-E`, `-W`
+    - `gpasswd` <<manage groups; flags: `-a`, `-d`
+    - `newgrp` <<switch active group
+    - `su` <<switch user shell; flags: `-`, `-c`
+    - `sudo` <<run as other user; flags: `-i`, `-u`, `-l`
+- 
+- ## 8) Processes + jobs
+    - `ps` <<process snapshot; flags: `aux`, `-ef`
+    - `top` <<live process viewer
+    - `htop` <<nicer top (if installed)
+    - `kill` <<send signal to PID; flags: `-9`, `-15`, `-HUP`
+    - `killall` <<kill by name; flags: `-9`
+    - `pkill` <<kill by pattern; flags: `-u`, `-t`
+    - `pgrep` <<find PIDs by pattern; flags: `-a`, `-u`
+    - `nice` <<start with priority; flags: `-n`
+    - `renice` <<change priority; flags: `-n`
+    - `jobs` <<list shell jobs
+    - `bg` <<resume job in background
+    - `fg` <<bring job foreground
+    - `nohup` <<ignore hangup; keep running
+    - `timeout` <<limit runtime; flags: `5s`, `2m`
+- 
+- ## 9) System info + performance
+    - `uname` <<kernel/system info; flags: `-a`
+    - `hostname` <<show/set hostname
+    - `hostnamectl` <<set/view hostname (systemd)
+    - `uptime` <<uptime + load averages
+    - `date` <<show/set date/time
+    - `timedatectl` <<view/set time settings
+    - `chronyc` <<NTP/chrony control (if used)
+    - `free` <<memory usage; flags: `-h`
+    - `df` <<filesystem free space; flags: `-h`, `-T`
+    - `du` <<directory usage; flags: `-h`, `-s`, `-x`
+    - `lsblk` <<list block devices; flags: `-f`
+    - `blkid` <<show block device UUID/type
+    - `lscpu` <<CPU info
+    - `dmesg` <<kernel messages; flags: `-T`
+    - `journalctl` <<systemd logs; flags: `-xe`, `-u`, `-b`, `-f`
+    - `systemctl` <<manage services; flags: `status`, `start`, `stop`, `enable`, `disable`, `restart`
+- 
+- ## 10) Networking (RHCSA-relevant)
+    - `ip` <<manage interfaces/routes; flags: `a`, `l`, `r`
+    - `ss` <<socket/listeners; flags: `-tulpn`, `-s`
+    - `ping` <<test reachability; flags: `-c`, `-i`
+    - `curl` <<fetch HTTP/URLs; flags: `-I`, `-L`, `-o`
+    - `wget` <<download files; flags: `-O`
+    - `dig` <<DNS query; flags: `+short`
+    - `nmcli` <<NetworkManager CLI; flags: `dev`, `con`
+    - `nmtui` <<NetworkManager TUI
+    - `ssh` <<remote shell; flags: `-i`, `-p`
+    - `scp` <<copy over SSH; flags: `-r`, `-P`
+    - `rsync` <<fast sync/copy; flags: `-a`, `-v`, `-z`, `--delete`
+    - `tcpdump` <<capture packets; flags: `-i`, `-nn`, `-s0`, `-w`
+    - `ethtool` <<NIC settings/info (if installed)
+- **Legacy (know, but avoid):**
+    - `ifconfig`, `netstat` <<old tools (prefer `ip`, `ss`)
+- 
+- ## 11) Storage + filesystems (RHCSA core)
+    - `mount` <<attach filesystem; flags: `-t`, `-o`
+    - `umount` <<detach filesystem; flags: `-l`
+    - `findmnt` <<show mounts (often installed)
+    - `fdisk` <<MBR partition editor
+    - `parted` <<GPT/MBR partition tool
+    - `mkfs` <<make filesystem; flags: `-t`
+    - `fsck` <<check/repair filesystem; flags: `-y`, `-n`
+    - `mkswap` <<create swap area
+    - `swapon` <<enable swap; flags: `-s`
+    - `swapoff` <<disable swap
+    - `sync` <<flush filesystem buffers
+- ### LVM
+    - `pvs` <<list physical volumes
+    - `vgs` <<list volume groups
+    - `lvs` <<list logical volumes
+    - `pvcreate` <<init disk for LVM
+    - `vgcreate` <<create volume group
+    - `lvcreate` <<create logical volume; flags: `-n`, `-L`, `-l`
+    - `lvextend` <<grow LV; flags: `-r`
+    - `lvremove` <<delete LV
+    - `vgextend` <<add PV to VG
+    - `vgreduce` <<remove PV from VG
+- 
+- ## 12) Archiving + compression
+    - `tar` <<bundle/unbundle archive; flags: `-c`, `-x`, `-t`, `-f`, `-z`, `-J`, `-v`
+    - `gzip` / `gunzip` <<gzip compress/decompress; flags: `-k`, `-d`
+    - `bzip2` / `bunzip2` <<bzip2 compress/decompress; flags: `-k`, `-d`
+    - `xz` / `unxz` <<xz compress/decompress; flags: `-k`, `-d`
+    - `zip` / `unzip` <<zip pack/unpack; flags: `-r`, `-l`
+- 
+- ## 13) Package management (varies by distro)
+    - `dnf` <<install/update RPM packages; flags: `install`, `remove`, `update`, `search`, `info`, `provides`
+    - `rpm` <<query/install RPM file; flags: `-q`, `-ql`, `-qf`, `-ivh`
+    - `apt` / `apt-get` <<Debian package manager; flags: `install`, `remove`, `update`, `upgrade`
+    - `dpkg` <<Debian package tool; flags: `-l`, `-L`, `-S`, `-i`
+    - `pacman` <<Arch package manager; flags: `-S`, `-R`, `-Q`, `-Ss`
+- 
+- ## 14) Security + SELinux + firewall (RHCSA core)
+    - `getenforce` <<show SELinux mode
+    - `setenforce` <<set SELinux enforcing/permissive
+    - `sestatus` <<SELinux status details
+    - `semanage` <<manage SELinux policy items
+    - `restorecon` <<restore default SELinux contexts; flags: `-R`, `-v`
+    - `chcon` <<set SELinux context manually; flags: `-R`
+    - `firewall-cmd` <<manage firewalld; flags: `--add-service`, `--add-port`, `--permanent`, `--reload`, `--list-all`
+- 
+- ## 15) Scheduling + automation basics
+    - `crontab` <<user cron jobs; flags: `-e`, `-l`, `-r`
+    - `at` <<one-time scheduled command
+    - `systemd-run` <<run as transient unit (often installed)

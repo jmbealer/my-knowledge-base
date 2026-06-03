@@ -1,0 +1,44 @@
+- Paths
+    - Easy
+        - Pre Security
+            - ### Introduction
+                - [Size]();-[H3]()
+                - This learning path will teach you the pre-requisite technical knowledge to get started in cyber security. To attack or defend any technology, you have to first learn how this technology works.
+                - The Pre-Security learning path is a beginner friendly and fun way to learn the basics. Your cyber security learning journey starts here!
+            - **Section 1 - Introduction to Cyber Security** 
+                - [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro)
+                - [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro) 
+                - [Careers in Cyber](https://tryhackme.com/room/careersincyber)
+            - **Section 2 - Network Fundamentals** 
+                - [What is Networking?](https://tryhackme.com/room/whatisnetworking)
+                - [Intro to LAN](https://tryhackme.com/room/introtolan) 
+                - [OSI Model](https://tryhackme.com/room/osimodelzi)
+                - [Packets & Frames](https://tryhackme.com/room/packetsframes)
+                - [Extending Your Network](https://tryhackme.com/room/extendingyournetwork)
+            - **Section 3 - How The Web Works** 
+                - [DNS in Detail](https://tryhackme.com/room/dnsindetail)
+                - [HTTP in Detail](https://tryhackme.com/room/httpindetail)
+                - [How Websites Work](https://tryhackme.com/room/howwebsiteswork)
+                - [Putting it all together](https://tryhackme.com/room/puttingitalltogether)
+            - **Section 4 - Linux Fundamentals** 
+                - [Linux Fundamentals Part 1](https://tryhackme.com/room/linuxfundamentalspart1)
+                - [Linux Fundamentals Part 2](https://tryhackme.com/room/linuxfundamentalspart2)
+                - [Linux Fundamentals Part 3](https://tryhackme.com/room/linuxfundamentalspart3)
+            - **Section 5 - Windows Fundamentals** 
+                - [Windows Fundamentals 1](https://tryhackme.com/room/windowsfundamentals1xbx)
+                - [**Windows Fundamentals 2**](https://tryhackme.com/room/windowsfundamentals2x0x)
+                - [Windows Fundamentals 3](https://tryhackme.com/room/windowsfundamentals3xzx) 
+        - Cyber Security 101
+        - Web Fundamentals
+        - SOC Level 1
+        - Security Engineer
+    - Medium
+        - Jr Penetration Tester 
+        - DevSecOps
+        - Offensive Pentesting
+        - Defending Azure
+        - Web Application Pentesting
+        - Attacking and Defending AWS
+    - Hard
+        - Red Teaming
+        - Advanced Endpoint Investigations

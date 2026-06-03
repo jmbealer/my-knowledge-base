@@ -1,0 +1,11 @@
+- Flashcards
+- Brain dumps
+- Practice tests
+- Where to get knowledge
+    - Source
+    - Dictionary
+        - Oxford
+        - thefreedictionary
+        - Wiktionary
+    - Wikipedia
+- 

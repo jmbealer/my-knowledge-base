@@ -1,0 +1,103 @@
+- {{grammar}} - the whole system and structure of a language or of languages in general, usually taken as consisting of syntax and morphology (including inflections) and sometimes also phonology and semantics.
+- morphology
+- phonology
+- semantics
+- {{syntax}} **Rules governing arrangement of words.** 
+
+- {{word}} **Unit of language with meaning.** 
+- {{sentence}} **Group of words expressing thought.** 
+- {{phrase}} **Group of words expressing idea.** 
+- {{paragraph}} **Group of sentences sharing idea.** 
+- {{letter}} **Symbolic representation of sound units.** 
+- {{syllable}} **Unit of sound in words.** 
+- {{clause}} **Group of words with subject.** 
+- {{article}} **Written composition on specific topic.** 
+- {{question}} **Inquiry seeking information or** **clarification.** 
+- {{verb}} - a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen.
+- {{subject}} **Individual or topic under discussion.** 
+- direct object 
+- complement
+- indirect object
+- modifier
+- {{noun}} - a word (other than a pronoun) used to identify any of a class of people, places, or things (common noun), or to name a particular one 
+- {{definite article}} - a determiner (the in English) that introduces a noun phrase and implies that the thing mentioned has already been mentioned, or is common knowledge, or is about to be defined (as in the book on the table; the art of government; the famous poet and short story writer). 
+- {{indefinite article}} - a determiner (a and an in English) that introduces a noun phrase and implies that the thing referred to is nonspecific (as in she bought me a book; government is an art; he went to a public school). 
+- {{pronoun}} **Word** [**substituting**](https://onelook.com/?w=substituting&loc=inbrief) **for noun or name.** 
+    - pronoun /ˈprōˌnoun, ˈproʊˌnaʊn /
+    - ▸  noun a word that can function by itself as a noun phrase and that refers either to the participants in the discourse (e.g., I, you) or to someone or something mentioned elsewhere in the discourse (e.g., she, it, this). See also personal pronoun, impersonal pronoun.
+- {{adjective}} - a word or phrase naming an attribute, added to or grammatically related to a noun to modify or describe it.
+- {{adverb}} -  a word or phrase that modifies or qualifies an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc. (e.g., gently, quite, then, there).
+- {{preposition}} **Word governing noun, expressing relation.** 
+- {{conjunction}} **Joining of words or phrases.** 
+-  Interjection
+-  {{determiner}} 2 Grammar -  a modifying word that determines the kind of reference a noun or noun group has, for example a, the, every.
+-  Predicate
+-  Object (direct, indirect)
+-  Tense
+-  Singular/Plural
+-  Possessive
+-  Gerund
+-  Infinitive
+-  Participle
+-  Voice (Active, Passive)
+-  Mood (Indicative, Imperative, Subjunctive)
+-  Number
+-  Person (First, Second, Third)
+-  Comparative
+-  Superlative
+- common noun
+- 
+- **Advanced English Linguistic Terms:**
+-  Synonym
+-  Antonym
+-  Homonym
+-  Homophone
+-  Homograph
+-  Polysemy
+-  Hyponym
+-  Hypernym
+-  Meronym
+-  Metonymy
+-  Abbreviation
+-  Acronym
+-  Initialism
+-  Anagram
+-  Portmanteau
+-  Palindrome
+-  Etymology
+-  Morphology
+-  Phonology
+-  Semantics
+-  Pragmatics
+-  Collocation
+-  Idiom
+-  Colloquialism
+-  Neologism
+-  Archaism
+-  Euphemism
+-  Dysphemism
+-  Onomatopoeia
+- 
+- 
+- 
+- 
+- 
+- **Example Clarifications:**
+- 
+- Acronym vs. Initialism:
+    - Acronym: Pronounced as a word (e.g., NASA, laser).
+    - Initialism: Pronounced as letters individually (e.g., FBI, ATM).
+- 
+- Homophones: Words pronounced similarly but differ in meaning/spelling (e.g., “to,” “two,” “too”).
+- Homographs: Words spelled the same but have different meanings, sometimes different pronunciations (e.g., “lead” (to guide) vs. “lead” (metal)).
+- Polysemy: A single word having multiple related meanings (e.g., “bank” as financial institution and riverbank).
+- Portmanteau: A word blending sounds and meanings of two others (e.g., brunch = breakfast + lunch).
+- Palindrome: Words or phrases reading the same forward and backward (e.g., radar, civic).
+- 
+- 
+- 
+- period 
+- question mark 
+- exclamation point 
+- 
+- 

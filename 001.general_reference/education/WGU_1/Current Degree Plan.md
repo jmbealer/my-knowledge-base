@@ -1,0 +1,44 @@
+- Term 4
+    - D317 - IT Applications - O
+        - CompTIA A+ Core 2
+    - C948 - Technical Communication - P
+        - 2 Tasks
+    - D325 - Networks - O
+        - CompTIA Network+
+            - maybe 2 week
+    - D329 - Network and Security - Applications - O
+        - CompTIA Security+
+            - maybe 2 week
+- Term 5
+    - C268 - Spreadsheets - O
+    - C777 - Web Development Applications - O
+    - C773 - User Interface Design - P
+        - 2 Tasks
+- Term 6
+    - D427 - Data Management - Applications - O
+    - D282 - Cloud Foundations - O
+        -  AWS – Certified Cloud Practitioner 
+            - [Size]();-[H0]()
+    - C954 - Information Technology Management - O
+- Term 7
+    - C962 - Current and Emerging Technology - P
+        - 1 Task
+    - C783 - Project Management - P
+        - 3 Tasks
+        - Certified Associate in Project Management (CAPM) at PMI  
+    - C769 - IT Capstone Written Project - P
+        - 3 Tasks
+- Master of Science, Information Technology Management
+    - 1
+        - Power, Influence and Leadership - LZT2 PA
+        - IT Sourcing and Development in a Global Economy - C929 PA
+        - Managing Technology Operations and Innovation - C927 PA
+    - 2
+        - Financial Management for IT Professionals - C928 PA
+        - Technological Globalization - MBT2 PA
+        - MS, Information Technology Management Capstone - C498 PA
+- 
+- 
+- 
+- 
+- 

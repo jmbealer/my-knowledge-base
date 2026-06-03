@@ -1,0 +1,915 @@
+- CompTIA Project+
+    - Certification Exam
+    - Objectives
+    - EXAM NUMBER: PK0-005About the Exam
+    - Candidates are encouraged to use this document to help prepare for the CompTIA Project+ PK0-005
+    - certification exam. The CompTIA Project+ PK0-005 certification exam will verify the successful
+    - candidate has the knowledge and skills required to manage the project life cycle, coordinate small-
+    - to-medium-sized projects, establish a communication plan, manage resources and stakeholders,
+    - maintain project documentation and artifacts, and support the completion of larger projects within
+    - an information technology (IT) environment. The certification exam covers waterfall and agile
+    - methodologies. The certification exam measures knowledge equivalent to that of professionals who
+    - have 6–12 months of hands-on experience managing projects in an IT environment. These content
+    - examples are meant to clarify the test objectives and should not be construed as a comprehensive
+    - listing of all the content of this examination.
+    - EXAM DEVELOPMENT
+    - CompTIA exams result from subject matter expert workshops and industry-wide survey results
+    - regarding the skills and knowledge required of an IT professional.
+    - CompTIA AUTHORIZED MATERIALS USE POLICY
+    - CompTIA Certifications, LLC is not affiliated with and does not authorize, endorse, or condone utilizing
+    - any content provided by unauthorized third-party training sites (aka “brain dumps”). Individuals who
+    - utilize such materials in preparation for any CompTIA examination will have their certifications revoked
+    - and be suspended from future testing in accordance with the CompTIA Candidate Agreement. In an
+    - effort to more clearly communicate CompTIA’s exam policies on use of unauthorized study materials,
+    - CompTIA directs all certification candidates to the CompTIA Certification Exam Policies. Please review
+    - all CompTIA policies before beginning the study process for any CompTIA exam. Candidates will be
+    - required to abide by the CompTIA Candidate Agreement. If a candidate has a question as to whether
+    - study materials are considered unauthorized (aka “brain dumps”), he/she should contact CompTIA at
+    - examsecurity@comptia.org to confirm.
+    - PLEASE NOTE
+    - The lists of examples provided in bulleted format are not exhaustive lists. Other examples of
+    - technologies, processes, or tasks pertaining to each objective may also be included on the exam,
+    - although not listed or covered in this objectives document. CompTIA is constantly reviewing the
+    - content of our exams and updating test questions to be sure our exams are current, and the security
+    - of the questions is protected. When necessary, we will publish updated exams based on existing
+    - exam objectives. Please know that all related exam preparation materials will still be valid.
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.0TEST DETAILS
+    - Required exam PK0-005
+    - Number of questions Maximum of 90
+    - Types of questions Multiple-choice and performance-based
+    - Length of test 90 minutes
+    - Recommended experience 6–12 months of hands-on experience
+    - managing projects in an IT environment
+    - EXAM OBJECTIVES (DOMAINS)
+    - The table below lists the domains measured by this examination
+    - and the extent to which they are represented.
+    - DOMAIN PERCENTAGE OF EXAMINATION
+    - 1.0 Project Management Concepts 33%
+    - 2.0 Project Life Cycle Phases 30%
+    - 3.0 Tools and Documentation 19%
+    - 4.0 Basics of IT and Governance 18%
+    - Total 100%
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.01.1
+    - 1.2
+    - 1.3
+    - 1.0 Project Management Concepts
+    - Explain the basic characteristics of a project and various
+    - methodologies and frameworks used in IT projects.
+    - •
+    - Characteristics of a project
+    - -
+    - Start and finish
+    - -
+    - Unique
+    - -
+    - Reason/purpose
+    - -
+    - Project as part of a program
+    - -
+    - Project as part of a portfolio
+    - •
+    - Methodologies and frameworks
+    - -
+    - DevSecOps
+    - -
+    - DevOps
+    - -
+    - Kanban
+    - -
+    - PRojects IN Controlled
+    - Environments (PRINCE2)
+    - -
+    - -
+    - -
+    - -
+    - -
+    - Software Development Life
+    - Cycle (SDLC)
+    - Scrum
+    - Scaled Agile Framework (SAFe)
+    - Extreme programming (XP)
+    - Waterfall
+    - Compare and contrast Agile vs. Waterfall concepts.
+    - •
+    - Criteria for selecting a method
+    - - Tolerance for change/flexibility
+    - o
+    - Requirements
+    - o
+    - Budget
+    - o
+    - Schedule
+    - •
+    - - Environmental factors
+    - o
+    - Cultural
+    - o
+    - Developmental
+    - o
+    - Industry standards
+    - •
+    - Team composition
+    - - Product ownership
+    - - Roles and responsibilities
+    - - Team size
+    - - Resource allocation and
+    - commitment
+    - Differences in communication
+    - methods
+    - Given a scenario, apply the change control process throughout
+    - the project life cycle.
+    - •
+    - Project-specific change control
+    - - Create/receive change requests
+    - - Document requests in the
+    - change control log
+    - - Conduct a preliminary review
+    - - Conduct impact assessments
+    - - Document change
+    - recommendations
+    - - Determine decision makers
+    - - Escalate to the change control
+    - board (CCB), if applicable
+    - - Document the status of approval
+    - in the change control log
+    - - Communicate the change status
+    - - Update the project plan
+    - - Implement changes
+    - - Validate the change
+    - implementation
+    - •
+    - - Communicate change
+    - deployment
+    - Project change management
+    - - Product change vs. project
+    - change
+    - - Manage scope creep/scope
+    - change
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.01.4
+    - 1.5
+    - 1.0 | Project Management Concepts
+    - Given a scenario, perform risk management activities.
+    - • General risks
+    - - New projects
+    - - New management
+    - - Regulatory environment changes
+    - - Digital transformation
+    - - Infrastructure end-of-life
+    - - Merger and acquisition
+    - - Reorganization
+    - - Major cybersecurity event
+    - •
+    - Known risk vs. unknown risk
+    - •
+    - Common risk responses
+    - - Development of contingency/
+    - fallback plans
+    - - Risk management strategies
+    - •
+    - o
+    - Negative risks
+    - ° Accept
+    - ° Avoid
+    - ° Mitigate
+    - ° Transfer
+    - o Positive risks
+    - ° Accept
+    - ° Enhance
+    - ° Exploit
+    - ° Share
+    - Risk analysis
+    - - Qualitative
+    - o Interconnectivity
+    - o Detectability
+    - •
+    - •
+    - •
+    - - Quantitative
+    - o Simulation
+    - - Impact analysis
+    - o Probability vs. impact
+    - - Situational/scenario analysis
+    - Connections between risks
+    - and issues
+    - Connection between risks
+    - and changes
+    - Roles and responsibilities
+    - - Points of escalation
+    - - Ownership
+    - Given a scenario, perform issue management activities.
+    - • Roles and responsibilities
+    - - Escalation path
+    - - Ownership
+    - •
+    - Issue tracking
+    - •
+    - Connections between issues
+    - and changes
+    - •
+    - Resolution plan
+    - - Execute contingency plans
+    - - Root cause analysis
+    - - Prioritization
+    - o Issue severity
+    - o Impact to project
+    - o Urgency
+    - o Scope of impact to
+    - organization
+    - o Issue escalation
+    - - Work-arounds
+    - •
+    - Outcome documentation
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.01.6
+    - 1.7
+    - 1.8
+    - 1.0 | Project Management Concepts
+    - Given a scenario, apply schedule development and management
+    - activities and techniques.
+    - • Upcoming milestones and activity identification
+    - - Sprint goals
+    - •
+    - Sequencing
+    - - Dependencies
+    - Hard logic/mandatory
+    - o Soft logic/discretionary
+    - o External
+    - o Internal
+    - o Issue escalation
+    - - Successor/predecessor relationships
+    - o Start-to-start
+    - o Start-to-finish
+    - o Finish-to-finish
+    - o Finish-to-start
+    - •
+    - Resource loading
+    - •
+    - Estimating techniques
+    - - Determine contingency reserves/buffers
+    - •
+    - •
+    - •
+    - •
+    - Story estimation/story points
+    - - Epics
+    - - Tasks
+    - Scheduling tools
+    - Schedule maintenance
+    - - Contingency reserves/
+    - buffer utilization
+    - - Critical path analysis
+    - - Impacts to cadence
+    - - Forecasting
+    - - Publication and sharing
+    - - Sprint planning
+    - - Backlog prioritization
+    - Revise baseline vs. rebaseline
+    - Compare and contrast quality management concepts and
+    - performance management concepts.
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Retrospective/lessons learned
+    - Sprint review
+    - Service-level agreement
+    - Key performance indicators—
+    - objectives and key results
+    - Cost and schedule performance
+    - - Cost variance
+    - - Schedule variance
+    - •
+    - •
+    - Audits and inspections
+    - Test plan and testing cycles
+    - - Unit testing
+    - - Smoke testing
+    - - Regression testing
+    - - Stress testing
+    - - Performance testing
+    - - User acceptance testing
+    - •
+    - •
+    - Verification and validation
+    - Post-implementation support/
+    - warranty period
+    - Compare and contrast communication management concepts.
+    - •
+    - •
+    - Assess methods
+    - o Synchronous and
+    - asynchronous communication
+    - o Written and verbal
+    - o Formal and informal
+    - o External and internal
+    - Develop communication
+    - platforms/modalities
+    - •
+    - Manage project communication
+    - - Overcoming communication
+    - challenges
+    - o Language barriers
+    - o Time zones/geographical
+    - factors
+    - o Technological factors
+    - o Cultural differences
+    - - Maintaining communication
+    - records
+    - o Communication security
+    - o Communication integrity
+    - o Communication archiving
+    - •
+    - Controlling project communication
+    - - Escalating communication issues
+    - - Revising the communication plan
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.01.9
+    - 1.10
+    - 1.0 | Project Management Concepts
+    - Given a scenario, apply effective meeting management
+    - techniques.
+    - •
+    - Meeting types
+    - - Collaborative
+    - o Workshops
+    - o Focus groups
+    - o Joint application development/
+    - joint application review sessions
+    - o Brainstorming
+    - - Informative
+    - o Demonstrations/presentations
+    - o Stand-ups
+    - o Status
+    - - Decisive
+    - o Refinement
+    - o Task setting
+    - o Project steering committee
+    - meeting
+    - Agenda settings/publishing
+    - Roles
+    - - Facilitator
+    - - Scribe
+    - - Attendees/target audience
+    - Timeboxing
+    - •
+    - •
+    - •
+    - Action items
+    - Meeting minutes
+    - Follow-ups
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Given a scenario, perform basic activities related to team and
+    - resource management.
+    - •
+    - •
+    - •
+    - Organizational structures
+    - - Matrix
+    - - Projectized
+    - - Functional
+    - Resource life cycle
+    - - Acquisition
+    - o Needs assessment
+    - - Maintenance
+    - - Hardware decommissioning
+    - - End-of-life software
+    - - Successor planning
+    - Resource types and criticality
+    - - Human resources
+    - - Physical resources
+    - - Capital resources
+    - - Internal vs. external
+    - - Shared vs. dedicated
+    - •
+    - Gap analysis
+    - - Feature/functionality
+    - - Skills
+    - - Utilization
+    - Team performance considerations
+    - - Maintaining project momentum
+    - - Assessing team life cycle
+    - o Forming
+    - o Storming
+    - o Norming
+    - o Performing
+    - o Adjourning
+    - - Providing project team
+    - performance feedback
+    - Roles and responsibilities
+    - - Functional/extended vs.
+    - operational/core team members
+    - - Sponsor
+    - - Stakeholders
+    - - Senior management
+    - - Product owner
+    - - Scrum master
+    - - Project manager (PM)
+    - - Program manager
+    - - Product manager
+    - - Testers/quality assurance (QA)
+    - specialists
+    - - Business analyst
+    - - Subject matter expert (SME)
+    - - Architect
+    - - Developers/engineers
+    - - Project management office
+    - (PMO)
+    - - End users
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.01.0 | Project Management Concepts
+    - 1.11 Explain important project procurement and vendor selection
+    - concepts.
+    - •
+    - •
+    - •
+    - Resource procurement methods
+    - - Build
+    - - Buy
+    - - Lease
+    - - Subscription/pay-as-you-go
+    - Exploratory documents
+    - - Request for proposal (RFP)
+    - - Request for bid (RFB)
+    - - Request for quote (RFQ)
+    - - Request for information (RFI)
+    - Vendor evaluation techniques
+    - - Best value vs. lowest cost
+    - - Cost-benefit analysis
+    - - Market research
+    - - Competitive analysis
+    - - Qualifications
+    - - Prequalified vendors/sellers
+    - - Demonstration
+    - - Technical approach
+    - - Physical and financial capacity
+    - - References
+    - •
+    - Contract considerations and types
+    - - Time and material
+    - - Unit price
+    - - Fixed price
+    - - Cost plus
+    - - Maintenance agreement
+    - o Warranty
+    - - Master service agreement
+    - o Purchase orders (POs)
+    - o Terms of reference (TOR)
+    - - Statement of work (SOW)
+    - - Non-disclosure agreement
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.02.1
+    - 2.2
+    - 2.3
+    - 2.0 Project Life Cycle Phases
+    - Explain the value of artifacts in the discovery/concept
+    - preparation phase for a project.
+    - •
+    - Business case or business
+    - objective
+    - - Return on investment (ROI)
+    - analysis
+    - - Current state vs. future state
+    - •
+    - •
+    - •
+    - Prequalified vendor
+    - Predetermined client
+    - Preexisting contracts
+    - - Client SOW
+    - - Client TOR
+    - •
+    - Financial concepts
+    - - Capital expenses (CapEx) vs.
+    - operational expenses (OpEx)
+    - Given a scenario, perform activities during the project
+    - initiation phase.
+    - •
+    - •
+    - •
+    - •
+    - Develop the project charter
+    - - Project objectives
+    - - Project success criteria
+    - - Preliminary scope statement
+    - Identify and assess stakeholders
+    - Develop a responsibility assignment matrix (RAM)
+    - - Responsible, Accountable, Consulted, Informed
+    - (RACI)
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Establish accepted communication channels
+    - Develop a records management plan
+    - - Data
+    - - Documents
+    - Define access requirements
+    - Review existing artifacts
+    - Determine solution design
+    - Conduct project kickoff methods
+    - Given a scenario, perform activities during the project
+    - planning phase.
+    - •
+    - •
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Assess the resource pool
+    - - Preliminary procurement needs assessment
+    - Assign project resources
+    - Train project team members
+    - Develop a communication plan
+    - - Meeting cadence and methodologies
+    - Develop a detailed scope statement
+    - Define units of work
+    - - Work breakdown structure (WBS)
+    - - Backlog
+    - Develop a project schedule
+    - - Establish cadences
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Determine budget considerations
+    - Develop QA plan
+    - Perform an initial risk assessment
+    - Develop a transition plan/release plan
+    - - Operational training
+    - - Go live
+    - - Operational handoff
+    - - Internal audience
+    - - External audience
+    - Develop a project management plan
+    - - Establish baselines and milestones
+    - - Establish minimally viable product
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.02.0 | Project Life Cycle Phases
+    - 2.4
+    - Given a scenario, perform activities during the project
+    - execution phase.
+    - •
+    - •
+    - •
+    - •
+    - Execute tasks according to the project
+    - management plan
+    - Implement organizational change management
+    - - Impacts and responses
+    - o Training
+    - o Ensure adoption
+    - o Reinforce adoption over time
+    - o Communication
+    - o Documentation
+    - o New knowledge bases
+    - o New processes
+    - Manage vendors
+    - - Enforce vendor rules of engagement
+    - - Monitor performance
+    - - Approve deliverables
+    - Conduct project meetings and updates
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Tracking/reporting
+    - - Team touch points
+    - - Risk reporting
+    - - External status reporting
+    - - Overall progress reporting
+    - - Gap analysis
+    - - Ad hoc reporting
+    - Update the project budget
+    - Update the project timeline
+    - Manage conflict
+    - - Smoothing
+    - - Forcing
+    - - Compromise
+    - - Collaboration
+    - - Avoiding
+    - Coordinate a phase gate review
+    - 2.5 Explain the importance of activities performed during
+    - the closing phase.
+    - •
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Project evaluation
+    - Validation of deliverables
+    - Closing contracts
+    - Removing access
+    - Releasing resources
+    - Project closure meeting
+    - •
+    - •
+    - •
+    - •
+    - •
+    - •
+    - Project closeout report
+    - Collecting feedback from stakeholders
+    - Archiving documentation
+    - Budget reconciliation
+    - Rewards and celebration
+    - Project sign-off
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.03.1
+    - 3.2
+    - 3.3
+    - 3.0 Tools and Documentation
+    - Given a scenario, use the appropriate tools throughout the
+    - project life cycle.
+    - •
+    - Tracking charts
+    - - Gantt chart
+    - - Budget burndown chart
+    - - Project network diagram
+    - - Milestone chart
+    - - Program Evaluation Review
+    - Technique (PERT) chart
+    - - Project organizational chart
+    - •
+    - Tools
+    - - Issue log
+    - - Defect log
+    - - Change log
+    - - Risk report
+    - - Risk register
+    - - Project dashboard
+    - - Project status report
+    - - Version control tools
+    - - Time-tracking tools
+    - - Task board
+    - - Requirements Traceability Matrix
+    - Compare and contrast various project management
+    - productivity tools.
+    - •
+    - •
+    - Communication tools
+    - - Email
+    - - Messaging
+    - o Short message service (SMS)
+    - o Chat
+    - - Telephone
+    - - Meetings/face-to-face
+    - - Video
+    - - Enterprise social media
+    - Collaboration tools
+    - - Real-time, multi-authoring editing software
+    - - File sharing platforms
+    - - Workflow and e-signature platforms
+    - - Whiteboard
+    - - Wiki knowledge base
+    - •
+    - •
+    - •
+    - •
+    - Meeting tools
+    - - Real-time surveys/polling
+    - - Calendaring tools
+    - - Print media
+    - - Conferencing platforms
+    - Documentation and office production tools
+    - - Word processing
+    - - Spreadsheets
+    - - Presentation
+    - - Charting/diagramming
+    - Project management scheduling tools
+    - - Cloud-based solutions vs. on-premises solutions
+    - - Local installation
+    - Ticketing/case management system
+    - Given a scenario, analyze quality and performance charts to
+    - inform project decisions.
+    - •
+    - •
+    - •
+    - Histograms
+    - Pareto charts
+    - Run charts
+    - •
+    - •
+    - •
+    - Scatter diagrams
+    - Fishbone/Ishikawa diagrams
+    - Control charts
+    - •
+    - •
+    - •
+    - Burnup/burndown chart
+    - Velocity chart
+    - Decision tree
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.04.1
+    - 4.2
+    - 4.3
+    - 4.0 Basics of IT and Governance
+    - Summarize basic environmental, social, and governance (ESG)
+    - factors related to project management activities.
+    - •
+    - •
+    - •
+    - •
+    - Project impact to the local and global environment
+    - Awareness of applicable regulations and standards
+    - Awareness of company vision, mission statements, and values
+    - Project impact to company brand value
+    - Explain relevant information security concepts impacting project
+    - management concepts.
+    - •
+    - •
+    - •
+    - Physical security
+    - - Mobile device considerations
+    - - Removable media considerations
+    - - Facility access
+    - Operational security
+    - - Background screening
+    - - Clearance requirements
+    - Digital security
+    - - Resource access and permissions
+    - - Remote access restrictions
+    - - Multifactor authentication
+    - •
+    - •
+    - Data security
+    - - Data classification
+    - - Classification of information based
+    - on sensitivity of the data
+    - o Intellectual property
+    - o Trade secrets
+    - o National security information
+    - - Access on a need-to-know basis
+    - Corporate IT security policies
+    - and restrictions
+    - - Branding restrictions
+    - Explain relevant compliance and privacy considerations
+    - impacting project management.
+    - •
+    - •
+    - •
+    - •
+    - Data confidentiality
+    - - Sensitive data types
+    - o Personally identifiable information (PII)
+    - o Personal health information (PHI)
+    - Legal and regulatory impacts
+    - Country-, state-, province-specific privacy regulations
+    - Awareness of industry- or organization-specific compliance concerns impacting a project
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.04.4
+    - 4.5
+    - 4.0 | Basics of IT and Governance
+    - Summarize basic IT concepts relevant to IT project management.
+    - •
+    - •
+    - Infrastructure
+    - - Computing services
+    - - Multitiered architecture
+    - - Networking and connectivity
+    - - Storage
+    - - Data warehouse
+    - - Documentation
+    - Cloud models
+    - - Platform as a service (PaaS)
+    - - Infrastructure as a service (Iaas)
+    - - Software as a service (SaaS)
+    - - Anything as a service (XaaS)
+    - •
+    - Software
+    - - Enterprise resource planning
+    - - Customer relationship management
+    - - Databases
+    - - Electronic document and record management
+    - systems
+    - - Content management systems
+    - - Financial systems
+    - Explain operational change-control processes during an
+    - IT project.
+    - •
+    - •
+    - •
+    - •
+    - •
+    - IT infrastructure change control
+    - - Downtime/maintenance windows schedules
+    - - Customer notifications
+    - - Rollback plans
+    - - Validation checks
+    - Software change control
+    - - Requirements definition
+    - - Risk assessment
+    - - Testing
+    - o Automated
+    - o Manual
+    - - Approval
+    - - Customer notifications
+    - - Release
+    - Differences between cloud vs. on premises in change control
+    - Continuous integration/continuous deployment (CI/CD) process
+    - Production vs. beta/staging environments
+    - - Tiered architecture
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.0CompTIA Project+ PK0-005 Acronym List
+    - The following is a list of acronyms that appears on the CompTIA Project+
+    - PK0-005 exam. Candidates are encouraged to review the complete
+    - list and attain a working knowledge of all listed acronyms as part of a
+    - comprehensive exam preparation program.
+    - Acronym Definition
+    - API Application Programming Interface
+    - BA Business Analyst
+    - CCB Change Control Board
+    - CI/CD Continuous Integration/Continuous Deployment
+    - CMS Content Management System
+    - CRM Customer Relationship Management
+    - EDRMS Electronic Document and Records Management System
+    - ERP Enterprise Resource Planning
+    - ESG Environmental, Social, and Governance
+    - IaaS Infrastructure as a Service
+    - IT Information Technology
+    - JAD Joint Application Development
+    - JAR Joint Application Review
+    - PaaS Platform as a Service
+    - PERT Program Evaluation Review Technique
+    - PHI Personal Health Information
+    - PII Personally Identifiable Information
+    - PM Project Manager
+    - PMO Project Management Office
+    - PRINCE2 PRojects IN Controlled Environments 2
+    - QA Quality Assurance
+    - RACI Responsible, Accountable, Consulted, Informed
+    - RAM Responsibility Assignment Matrix
+    - RBS Resource Breakdown Structure
+    - RFB Request for Bid
+    - RFI Request for Information
+    - RFP Request for Proposal
+    - RFQ Request for Quote
+    - ROI Return on Investment
+    - SaaS Software as a Service
+    - SAFe Scaled Agile Framework
+    - SDLC Software Development Life Cycle
+    - SLA Service-level Agreement
+    - SME Subject Matter Expert
+    - SMS Short Message Service
+    - SOW Statement of Work
+    - SQL Structured Query Language
+    - TOR Terms of Reference
+    - WBS Work Breakdown Structure
+    - XaaS Anything as a Service
+    - XP Extreme Programming
+    - CompTIA Project+ PK0-005 Certification Exam: Exam Objectives Version 4.0CompTIA Project+ PK0-005
+    - Proposed Hardware and Software List
+    - CompTIA has included this sample list of hardware and software to assist
+    - candidates as they prepare for the Project+ PK0-005 exam. This list may
+    - also be helpful for training companies that wish to create a lab component
+    - for their training offering. The bulleted lists below each topic are sample
+    - lists and not exhaustive.
+    - Equipment
+    - •
+    - Whiteboard
+    - •
+    - TV/projectors
+    - IT Hardware
+    - •
+    - Workstations
+    - •
+    - Internet connection
+    - Software
+    - •
+    - Microsoft Project (or similar program)
+    - •
+    - Microsoft Word (or similar program)
+    - •
+    - Microsoft Excel (or similar program)
+    - •
+    - Microsoft PowerPoint (or similar program)
+    - •
+    - Microsoft Visio (or similar program)
+    - •
+    - Microsoft SharePoint (or similar platform)
+    - •
+    - Microsoft Teams (or similar platform)
+    - •
+    - Microsoft OneNote (or similar platform)
+    - •
+    - Jira (or similar platform)
+    - •
+    - Business analytics (Microsoft PowerBI or similar)
+    - •
+    - Dashboarding (SmartSheet or similar)
+    - •
+    - Confluence (or similar platform)
+    - •
+    - Change management
+    - •
+    - Cloud platform portal
+    - Other
+    - •
+    - •
+    - Sample templates and artifacts of project management documents
+    - Case study and other IT project management samples
+    - © 2021 CompTIA, Inc., used under license by CompTIA, Inc. All rights reserved. All certification programs and education related to such
+    - programs are operated exclusively by CompTIA, Inc. CompTIA is a registered trademark of CompTIA, Inc. in the U.S. and internationally. Other
+    - brands and company names mentioned herein may be trademarks or service marks of CompTIA, Inc. or of their respective owners. Reproduc-
+    - tion or dissemination prohibited without the written consent of CompTIA, Inc. Printed in the U.S. 09036-Oct2021

@@ -1,0 +1,52 @@
+- Upper
+    - Scapula/Shoulder-Blades
+    - Shoulder
+        - Flexion Extension/Hyperextension Adduction Abduction
+    - Elbow
+    - Flexion Extension
+    - Wrist
+    - Hand
+- Lower
+    - Hips
+        - Flexion 
+        - ![](https://remnote-user-data.s3.amazonaws.com/b3Z4_QYX5ETcd76pc5Hpb79eAaU0B_S-u8t8PafYvPf-3Q23z8Mso7gmOZnYdCMKtya94yGwWU8a0_nddoUi9t4DvkFlKld_meAqhbRdp8RUttYqxSSs0ZVdgEQJRCEt.gif)
+        - Extension 
+        - Adduction 
+        - Abduction 
+        - Transverse Adduction 
+        - Transverse Abduction 
+        - Medial Rotation (Internal Rotation) 
+        - Lateral Rotation (External Rotation)
+    - Knee
+        - Flexion 
+        - Extension 
+        - Medial Rotation (Internal Rotation) 
+        - Lateral Rotation (External Rotation)
+    - Ankle
+        - 
+    - Feet
+    - 
+- Core
+    - Cervical/Neck
+        - Flexion Extension
+    - Thoracic/Upper&Mid-Spine(Back)
+        - Flexion Extension
+    - Lumbar/Lower-Spine(Back)
+- push
+    - push ups
+    - press
+    - dips
+- pull
+    - pull ups
+    - rows
+- core
+    - planks
+    - leg raises 
+- hinge 
+    - deadlift 
+- squat 
+    - squat 
+    - pistol squat 
+- 10-15 factshinial sets
+- 1-2 rmin rest 
+- 

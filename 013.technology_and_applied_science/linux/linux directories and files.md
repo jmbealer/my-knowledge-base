@@ -1,0 +1,34 @@
+- {{/}} - Root of the entire filesystem.
+- {{/boot}} - Stores the Linux kernel, GRUB files, and initramfs.
+- {{/etc}} - Contains system-wide configuration files.
+- {{/home}} - User home directories.
+- {{/root}} - Home directory for the root user.
+- {{/var}} - Variable data like logs, mail, and spool files.
+- {{/tmp}} - Temporary files cleared on reboot.
+- {{/usr}} - Secondary hierarchy for user utilities and applications.
+- {{/opt}} - Optional software and third-party packages.
+- {{/srv}} - Data provided by services like FTP or web servers.
+- {{/dev}} - Virtual device files for hardware and pseudo-devices.
+- {{/proc}} - Virtual files exposing process and kernel information.
+- {{/sys}} - Kernel object and device configuration interface.
+- {{/run}} - Stores transient runtime data for services and processes.
+- {{/lib}}, {{/lib64}} - Essential shared libraries for binaries in /bin and /sbin.
+- name 
+- {{/bin}} - Binary (essential user binaries)
+- {{/boot}} - Boot (boot loader files)
+- {{/dev}} - Device (hardware device files)
+- {{/etc}} - Et cetera (system configuration files — legacy Unix name)
+- {{/home}} - Home (user home directories)
+- {{/lib}} - Library (essential shared libraries)
+- {{/lib64}} - Library 64-bit (64-bit shared libraries)
+- {{/mnt}} - Mount (temporary mount point)
+- {{/opt}} - Optional (add-on application software packages)
+- {{/proc}} - Process (virtual filesystem for processes and kernel info)
+- {{/root}} - Root user home (not the filesystem root)
+- {{/run}} - Runtime (volatile runtime data)
+- {{/sbin}} - System binary (essential system binaries)
+- {{/srv}} - Service (data for services like HTTP, FTP)
+- {{/sys}} - System (kernel and hardware interface)
+- {{/tmp}} - Temporary (temporary files, cleared on reboot)
+- {{/usr}} - Unix System Resources (secondary hierarchy for user programs)
+- {{/var}} - Variable (variable data like logs, mail, etc.)

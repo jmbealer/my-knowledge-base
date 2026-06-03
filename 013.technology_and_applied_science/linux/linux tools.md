@@ -1,0 +1,22 @@
+- lynis the system auditor
+- fails2ban
+- apparmor ***** 
+- rkhunter 
+- clamav 
+- strace 
+- encrypts
+- wipe
+- ss and lsof
+- resources 
+- sg2d
+- rescatux
+- tldp
+- wiki gentoo arch debian
+- sh bible
+- shellcheck
+- uefi vs bios
+- brendangregg
+- curl cheat.sh
+- fhs
+- 
+- 

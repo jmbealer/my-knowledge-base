@@ -1,0 +1,119 @@
+- Site: [Red Hat Certified System Administrator (RHCSA)](https://www.redhat.com/en/services/certification/rhcsa) 
+- Overview:
+    - An IT professional who has earned the Red Hat Certified System Administrator (RHCSA®) is able to perform the core system administration skills required in Red Hat Enterprise Linux environments. The credential is earned after successfully passing the Red Hat Certified System Administrator (RHCSA) Exam (EX200).
+- Skills
+    - ## Prove your skills and knowledge
+        - [Size]();-[H2]()
+    - A Red Hat® Certified System Administrator (RHCSA) is able to perform the following tasks:
+        - Understand and use essential tools for handling files, directories, command-line environments, and documentation
+        - Create simple shell scripts
+        - Operate running systems, including booting into different run levels, identifying processes, starting and stopping virtual machines, and controlling services
+        - Configure local storage using partitions and logical volumes
+        - Create and configure file systems and file system attributes, such as permissions, encryption, access control lists, and network file systems
+        - Deploy, configure, and maintain systems, including software installation, update, and core services
+        - Manage users and groups
+        - Manage security, including basic firewall and SELinux configuration
+        - Perform basic container management
+- Exams
+    - ## Test your skills and knowledge
+        - [Size]();-[H2]()
+    - [EX200 - Red Hat Certified System Administrator (RHCSA) exam](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam)
+    - The performance-based Red Hat Certified System Administrator (RHCSA) exam (EX200) tests your knowledge and skill in areas of system administration common across a wide range of environments and deployment scenarios. You must be an RHCSA to earn a [Red Hat Certified Engineer (RHCE®)](https://www.redhat.com/en/services/certification/rhce) certification.
+- Training
+    - ## The best way to learn is to do
+        - [Size]();-[H2]()
+    - We recommend these courses to help you prepare to become a Red Hat Certified System Administrator.
+    - **For Windows system administrators or candidates with minimal experience with Red Hat Enterprise Linux:**
+        - [Running Containers with Red Hat Technical Overview (RH065)](https://www.redhat.com/en/services/training/rh065-running-containers-red-hat-technical-overview)
+        - [Red Hat System Administration I (RH124)](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i)
+        - [Red Hat System Administration II (RH134)](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii)
+    - **For Linux or UNIX administrators:**
+        - [RHCSA Rapid Track course with exam (RH200)](https://www.redhat.com/en/services/training/rh200-red-hat-certified-system-administrator-rapid-track-course-exam)
+    - **For candidates seeking an introductory course on container management:**
+        - [Running Containers with Red Hat Technical Overview (RH065)](https://www.redhat.com/en/services/training/rh065-running-containers-red-hat-technical-overview)
+- EX200 Objectives:
+    - ## Study points for the exam
+        - [Size]();-[H2]()
+        - RHCSA exam candidates should be able to accomplish the tasks below without assistance. These have been grouped into several categories.
+    - **Understand and use essential tools**
+        - Access a shell prompt and issue commands with correct syntax
+        - Use input-output redirection 
+            - (>, > >, |, 2>, etc)
+            - need to fix
+        - Use grep and regular expressions to analyze text
+        - Access remote systems using SSH
+        - Log in and switch users in multiuser targets
+        - Archive, compress, unpack, and uncompress files using tar, gzip, and bzip2
+        - Create and edit text files
+        - Create, delete, copy, and move files and directories
+        - Create hard and soft links
+        - List, set, and change standard ugo/rwx permissions
+        - Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+    - **Create simple shell scripts**
+        - Conditionally execute code (use of: if, test, [], etc.)
+        - Use Looping constructs (for, etc.) to process file, command line input
+        - Process script inputs ($1, $2, etc.)
+        - Processing output of shell commands within a script
+    - **Operate running systems**
+        - Boot, reboot, and shut down a system normally
+        - Boot systems into different targets manually
+        - Interrupt the boot process in order to gain access to a system
+        - Identify CPU/memory intensive processes and kill processes
+        - Adjust process scheduling
+        - Manage tuning profiles
+        - Locate and interpret system log files and journals
+        - Preserve system journals
+        - Start, stop, and check the status of network services
+        - Securely transfer files between systems
+    - **Configure local storage**
+        - List, create, delete partitions on MBR and GPT disks
+        - Create and remove physical volumes
+        - Assign physical volumes to volume groups
+        - Create and delete logical volumes
+        - Configure systems to mount file systems at boot by universally unique ID (UUID) or label
+        - Add new partitions and logical volumes, and swap to a system non-destructively
+    - **Create and configure file systems**
+        - Create, mount, unmount, and use vfat, ext4, and xfs file systems
+        - Mount and unmount network file systems using NFS
+        - Configure autofs
+        - Extend existing logical volumes
+        - Create and configure set-GID directories for collaboration
+        - Diagnose and correct file permission problems
+    - **Deploy, configure, and maintain systems**
+        - Schedule tasks using at and cron
+        - Start and stop services and configure services to start automatically at boot
+        - Configure systems to boot into a specific target automatically
+        - Configure time service clients
+        - Install and update software packages from Red Hat Network, a remote repository, or from the local file system
+        - Modify the system bootloader
+    - **Manage basic networking**
+        - Configure IPv4 and IPv6 addresses
+        - Configure hostname resolution
+        - Configure network services to start automatically at boot
+        - Restrict network access using firewall-cmd/firewall
+    - **Manage users and groups**
+        - Create, delete, and modify local user accounts
+        - Change passwords and adjust password aging for local user accounts
+        - Create, delete, and modify local groups and group memberships
+        - Configure superuser access
+    - **Manage security**
+        - Configure firewall settings using firewall-cmd/firewalld
+        - Manage default file permissions
+        - Configure key-based authentication for SSH
+        - Set enforcing and permissive modes for SELinux
+        - List and identify SELinux file and process context
+        - Restore default file contexts
+        - Manage SELinux port labels
+        - Use boolean settings to modify system SELinux settings
+        - Diagnose and address routine SELinux policy violations
+    - **Manage containers**
+        - Find and retrieve container images from a remote registry
+        - Inspect container images
+        - Perform container management using commands such as podman and skopeo
+        - Perform basic container management such as running, starting, stopping, and listing running containers
+        - Run a service inside a container
+        - Configure a container to start automatically as a systemd service
+        - Attach persistent storage to a container
+- --------------------- Portal ---------------------query:[Red Hat Certified System Administrator (RHCSA)](Red%20Hat%20Certified%20System%20Administrator%20(RHCSA).md)
+    - --------------------- Portal ---------------------
+        - Linux Certifictions #linux

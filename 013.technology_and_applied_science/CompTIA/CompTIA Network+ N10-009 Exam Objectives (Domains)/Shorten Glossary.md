@@ -1,0 +1,201 @@
+- {{802.11 standards}} – Wireless LAN standards (Wi-Fi family)
+    - {{802.11a}} – 5 GHz, faster, shorter range
+    - {{802.11b}} – 2.4 GHz, slower, longer range
+    - {{802.11g}} – 2.4 GHz, faster than b
+    - {{802.11n}} (Wi-Fi 4) – MIMO, 2.4/5 GHz, improved speed
+    - {{802.11ac}} (Wi-Fi 5) – 5 GHz, MU-MIMO, faster speeds
+    - {{802.11ax}} (Wi-Fi 6) – High efficiency, congestion performance boost
+- {{802.11h}} – Avoids radar interference in 5 GHz
+- {{802.1p}} – Sets traffic priority using 3-bit field
+- {{802.1q}} – VLAN tagging across trunk links
+- {{802.1x}} – Port-based authentication for secure LAN access
+- {{802.3 Ethernet standards}} – Standards for wired Ethernet LANs
+    - {{xBASE-y}} – Speed/baseband/media type naming (e.g., 100BASE-T)
+- 
+- {{access control list}} (ACL) – Defines who can access what resources
+- {{access point}} (AP) – Connects wireless devices to wired network
+- {{access/edge layer}} – Network tier connecting end user devices
+- {{active-active}} – All nodes operate simultaneously in cluster
+- {{active-passive}} – Backup nodes activate only on failure
+- {{ad hoc network}} – Devices connect directly without AP
+    - {{IBSS}} – Independent Basic Service Set (ad hoc)
+- {{address resolution protocol}} (ARP) – Resolves IP to MAC address locally
+- {{addressing}} – Identifies network node (IP/MAC/etc.)
+- {{adjacent channel interference}} (ACI) – Overlapping Wi-Fi channels cause interference
+    - {{channel overlap}} – Another term for ACI
+- {{administrative distance}} (AD) – Ranks trust of routing protocol sources
+- {{administratively down}} – Port disabled via configuration manually
+- {{advanced persistent threat}} (APT) – Long-term, targeted cyber attack campaign
+- {{angled physical contact}} (APC) – Fiber tip polished at an angle
+- {{antenna type}} – Sends/receives signals; omni or directional
+- {{anycast }}– One-to-nearest delivery from shared address group
+- {{application layer}} (Layer 7) – Supports apps needing network services
+- {{application programming interface }}(API) – Interface to interact with software programmatically
+- {{arp command}} – Manages ARP cache of IP/MAC mappings
+- {{arp spoofing}} – Fakes MAC to redirect traffic locally
+- {{attenuation}} – Signal weakening over distance or media
+- {{authentication header}} (AH) – IPSec protocol for origin and integrity
+- {{authoritative name server}} – DNS server with official domain records
+- {{automatic private IP addressing}} (APIPA) – Self-assigned IP if DHCP fails
+    - {{link local address}} – Address usable only on local subnet
+- {{automation}} – Scripted provisioning with minimal human input
+- {{autonomous system }}(AS) – Single-entity managed routing domain
+- {{availability monitoring}} – Alerts when network resources go offline
+- 
+- {{backup configuration}} – Settings used when restoring from backup
+- {{band steering}} – Pushes clients to optimal Wi-Fi band
+- {{bandwidth}} – Max data transfer per second (rate)
+    - {{frequency bandwidth}} – Range of supported signal frequencies
+- {{bandwidth speed tester}} – Tool to measure internet connection speed
+- {{baseline metrics}} – Normal performance values for comparison
+- {{basic service set identifier }}({{BSSID}}) – AP MAC address for Wi-Fi area
+- {{bayonet Neill-Concelman (BNC) connector}} – Twist-lock coaxial cable connector
+- {{bidirectional wavelength division multiplexing }}({{BWDM}}) – Sends/receives on same fiber via wavelength
+    - {{wavelength division multiplexing }}({{WDM}}) – Multiplexing using different light wavelengths
+- {{bit rate}} – Data transferred per second (speed)
+- {{border gateway protocol }}({{BGP}}) – Routes between autonomous systems (Internet-scale)
+- {{botnet}} – Infected device group controlled remotely
+    - {{zombie}} – Infected host in a botnet
+- {{bottleneck}} – Slowest component limiting overall performance
+- {{bridge}} – Joins segments, splits collision domains
+- {{bring your own device}} ({{BYOD}}) – Personal devices on corporate networks securely
+- {{broadcast}} – Sent to all devices on network
+- {{broadcast domain}} – Network area receiving same broadcast traffic
+- {{broadcast storm}} – Looping broadcasts that flood a network
+- {{brute force}} – Tries all password combinations exhaustively
+- {{bugfix}} – Software patch for specific code issue
+- {{business continuity plan}} ({{BCP}}) – Ensures operations during major disruptions
+- {{business impact analysis }}({{BIA}}) – Assesses risk to critical operations
+    - {{process assessment}} – Another term for business impact analysis
+- 
+- {{cable crimper}} – Tool to attach connector to cable
+- {{cable map}} – Diagram showing building cable routes
+- {{cable stripper}} – Removes jacket from cable or wire
+- {{cable tester}} – Verifies cable end-to-end connections
+- {{canonical notation}} – IPv6 format with colons and compression
+- {{captive portal}} – Redirect page before network access
+- {{carrier sense multiple access with collision avoidance }}(CSMA/CA) – Wi-Fi method to avoid collisions
+- {{carrier sense multiple access with collision detection }}(CSMA/CD) – Detects and reacts to signal collisions
+- {{categories of cable standards}} – Defines cables by speed and capability
+- {{cellular radio}} – Mobile data via 2G, 3G, 4G, 5G
+- {{certificate authority }}(CA) – Issues trusted public key certificates
+- {{change management}} – Manages updates to systems/processes
+- {{channel bonding}} – Combines channels to boost bandwidth
+- {{CIA triad}} – Confidentiality, Integrity, Availability in security
+    - {{AIC triad}} – Same principles in reverse order
+- {{cipher suite}} – List of cryptographic algorithms for connections
+- {{Cisco Discovery Protocol }}(CDP) – Cisco-only device discovery protocol
+- {{classful addressing}} – Legacy IP addressing based on octet
+- {{classless interdomain routing }}(CIDR) – IP routing using network prefixes
+- {{client-server}} – Servers provide; clients consume services
+- {{cloud access security broker }}(CASB) – Manages secure cloud access organization-wide
+- {{cloud deployment model}} – Public, private, hybrid, or community cloud
+- {{cloud direct connection}} – Dedicated link to cloud provider
+- {{cloud gateway}} – Routes cloud subnets and public networks
+- {{cloud service model}} – SaaS, PaaS, IaaS classification scheme
+- {{clustering}} – Load balancing by grouped server cooperation
+- {{coarse wavelength division multiplexing }}(CWDM) – Multiplexes signals on single fiber using wavelengths
+- {{coaxial}} – Cable with two concentric conductors
+- {{co-channel interference }}(CCI) – Same-channel Wi-Fi overlap causes contention
+- {{cold site}} – Disaster recovery site needing setup
+- {{collapsed core}} – Two-tier design: access-to-core direct
+- {{collision domain}} – Shared media where collisions may occur
+- {{colocation}} – Hosting private equipment in shared datacenter
+- {{command and control }}(C&C or C2) – Infrastructure used to control malware botnets
+- {{community string}} – SNMP password to access devices
+- {{configuration drift}} – Systems deviate from baseline over time
+- {{configuration management}} – Keeps systems secure and compliant
+- {{configuration monitoring}} – Alerts if config deviates from baseline
+- {{content filtering}} – Blocks unwanted or malicious content
+- {{convergence}} – Routers agree on network topology
+- {{core layer}} – Connects major network segments together
+- {{crosstalk}} – Interference from nearby signal wires
+- {{cryptographic hash algorithm}} – Converts data to fixed-length fingerprint
+- {{cyclic redundancy check }}(CRC) – Error check using frame checksum
+- 
+- {{data at rest}} – Stored data not actively transmitted
+- {{data center interconnect}} (DCI) – Links multiple datacenters via overlay tech
+- {{data in transit}} – Data moving between hosts/networks
+- {{data link layer}} (layer 2) – Transfers data between network nodes
+- {{data remnants}} – Residual data left after deletion
+    - {{remnant}} – Alternate name for data remnants
+- {{data sovereignty}} – Data laws apply by country/state
+- {{datacenters}} – Facilities hosting computing/networking infrastructure
+- {{deauthentication attack}} – Forces disconnect to capture Wi-Fi credentials
+- {{decibel (dB) loss}} – Signal loss from attenuation/interference
+    - {{insertion loss}} – Alternate term for dB loss
+- {{decommissioning}} – Removing systems from production use
+- {{default gateway}} – Router for non-local traffic routing
+- {{default route}} – Catch-all path for unmatched routes
+- {{default VLAN}} – VLAN 1 for unconfigured switch ports
+- {{defense in depth}} – Multiple layered security mechanisms
+- {{demarcation point}} – Access provider’s network endpoint
+- {{denial of service}} (DoS) – Disrupts access to a network resource
+- {{dense wavelength division multiplexing}} ({{DWDM}}) – Multiplexes many signals over fiber
+- {{DHCP relay}} – Forwards DHCP requests across subnets
+- {{dictionary}} – Attack using known password list
+- {{differentiated services}} {{(DiffServ)}} – IP field for traffic prioritization
+- {{dig command}} – DNS query utility for domains
+- {{digital certificate}} – Authenticates identity using public key
+- {{directly connected routes}} – Router knows route via active interface
+- {{disassociation}} – Disconnect process from wireless access point
+- {{disaster recovery plan}} ({{DRP}}) – Steps to restore operations post-incident
+- {{discretionary access control}} (DAC) – Owners control resource access permissions
+- {{distance vector}} – Routing by lowest hop count
+- {{distributed DoS }}(DDoS) – Botnet flood attack on target
+- {{distribution or aggregation layer}} – Links access and core network layers
+- {{distribution system}} ({{DS}}) – Connects APs for wireless roaming
+- {{DNS caching}} – Stores recent DNS query results
+- {{DNS over HTTPS}} (DoH) – Encapsulates DNS in secure HTTP
+- {{DNS over TLS}} (DoT) – Encapsulates DNS in secure TLS
+- {{DNS poisoning}} – Fakes DNS entries to mislead users
+- {{domain name system}} (DNS) – Resolves domain names to IP addresses
+- {{DNS security extensions}} (DNSSEC) – Authenticates DNS data integrity
+- {{dotted decimal notation}} – IPv4 format using decimal octets
+- {{dual stack}} – Supports IPv4 and IPv6 together
+- {{dumpster diving}} – Gathers info from discarded materials
+- {{dynamic host configuration protocol}} (DHCP) – Auto-assigns IPs to network devices
+- {{dynamic routing}} – Routing learned via dynamic protocol
+    - {{learned route}} – Alternate term for dynamic routing
+- 
+- {{east-west traffic}} – Traffic between internal datacenter systems
+- {{effective isotropic radiated power}} (EIRP) – Total signal output including gain/loss
+- {{elasticity}} – Automatically scales resources with demand
+- {{electromagnetic interference}} (EMI) – Magnetic noise disrupts nearby signals
+    - {{interference}} – Alternate term for EMI
+- {{encapsulating security protocol }}(ESP) – IPSec protocol for encryption and authentication
+- {{encapsulation}} – Adds headers/trailers to wrap data
+- {{encryption algorithm}} – Secures data using cipher and keys
+- {{end of life }}(EOL) – Vendor ends mainstream product support
+- {{end of support }}(EOS) – Vendor ends all product support
+- {{enhanced IGRP }}(EIGRP) – Cisco routing using bandwidth and delay
+- {{enterprise authentication}} – Wi-Fi uses AAA server for verification
+- {{enumeration}} – Lists resources for further attack
+    - {{footprinting}} – Alternate term for enumeration
+    - {{fingerprinting}} – Another enumeration-related method
+- {{escalation}} – Involves senior staff for incidents
+- {{Ethernet headers}} – Contain MAC addresses and frame info
+- {{Ethernet VPN}} (EVPN) – BGP advertises VXLAN networks
+- {{evil twin}} – Fake AP tricking users into connection
+- {{explicit deny}} – Manual ACL rule that blocks traffic
+- {{exploit}} – Attack method targeting a vulnerability
+    - {{exploit technique}} – Alternate term for exploit
+- {{extended SSID}} (ESSID) – Shared SSID across multiple access points
+- {{extended unique identifier}} (EUI) – Globally unique device/network identifier
+    - {{EUI-48}} – Standard MAC address format
+    - {{EUI-64}} – 64-bit version of MAC address
+- {{extensible authentication protocol }}(EAP) – Auth method supporting secure tunneling and hardware
+- 
+- {{general data protection regulation}} (GDPR) – EU law protecting citizens’ personal data
+- {{generic routing encapsulation}} (GRE) – Tunnels various network protocols over IP
+- {{geofencing}} – Enforces location-based access restrictions
+- {{giant}} – Ethernet frame exceeding allowed maximum size
+- {{global positioning system}} (GPS) – Finds location using satellite signals
+- 
+- {{jitter}} – Variation in packet delivery timing
+- {{jumbo frame}} – Ethernet frame >1500 bytes payload
+- {{jump server}} – Secured host for remote access
+- 
+- {{kerberos}} – Time-based ticket system for SSO
+- 
+- 

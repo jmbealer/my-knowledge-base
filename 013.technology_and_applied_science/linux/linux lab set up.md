@@ -1,0 +1,11 @@
+- vmware
+- virtualbox
+    - machine new
+    - username: usr1
+    - password: 1234
+    - root password: 56789
+    - hostname: rhel9-vm1
+    - domain name: myguest.virtualbox.org
+    - for internet: go settings network bridged adapter
+    - 
+- 
