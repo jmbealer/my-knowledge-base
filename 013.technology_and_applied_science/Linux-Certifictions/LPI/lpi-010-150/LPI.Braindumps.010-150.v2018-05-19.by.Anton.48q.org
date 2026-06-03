@@ -1,0 +1,1120 @@
+                                                                 010-150.exam.48q
+Number: 010-150
+Passing Score: 800
+Time Limit: 120 min
+File Version: 1.0
+                                                                        010-150
+                                                     Linux Essentials Certificate Exam, version 1.5
+
+                                                                      Version 1.0
+Sections
+1. The Linux Community and a Career in Open Source
+2. Finding Your Way on a Linux System
+3. The Power of the Command Line
+4. The Linux Operating System
+5. Security and File Permissions
+
+Exam A
+
+* lpi linux essentials 010-150
+:PROPERTIES:
+:ANKI_DECK: lpi-linux-essentials-010-150-questions-bank
+:ANKI_TAGS: lpi linux essentials 010-150
+:END:
+** Question 1
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213772853
+:END:
+*** Question
+Which of the following Linux distributions use the dpkg package management system? (Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Suse
+*** Q_2
+Red Hat
+*** Q_3
+Debian
+*** Q_4
+Ubuntu
+*** Q_5
+Mandriva
+*** Answers
+0 0 1 1 0
+*** Sources
+*** Extra 1
+Correct Answer: CD
+Section: The Linux Community and a Career in Open Source
+** Question 2
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213775454
+:END:
+*** Question
+Which of the following applications are used to play an MP3 file on a Linux system? (Choose THREE correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Xara Xtreme
+*** Q_2
+Banshee
+*** Q_3
+LibreOffice Player
+*** Q_4
+Amarok
+*** Q_5
+Audacious
+*** Answers
+0 1 0 1 1
+*** Sources
+*** Extra 1
+Correct Answer: BDE
+Section: The Linux Community and a Career in Open Source
+** Question 3
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213778228
+:END:
+*** Question
+Which one of the following statements concerning Linux passwords is true?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+All passwords can be decrypted using the system administrator's master password.
+*** Q_2
+Passwords may never start with a non-letter.
+*** Q_3
+Users cannot change their password once it has been set.
+*** Q_4
+Passwords are only stored in encrypted form.
+*** Q_5
+Passwords may be at most six characters long.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Linux Community and a Career in Open Source
+** Question 4
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213780654
+:END:
+*** Question
+Which one of the following statements concerning the General Public License (GPL) is true?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The GPL is designed to ensure that the source code of a software remains freely available.
+*** Q_2
+The GPL is identical to the BSD license.
+*** Q_3
+GPL software may never be sold for money.
+*** Q_4
+If you change a program you received under the GPL, you must send your changes to the original author for approval.
+*** Q_5
+GPL software may not be used to run nuclear reactors or air traffic control systems.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Linux Community and a Career in Open Source
+** Question 5
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213783351
+:END:
+*** Question
+What is the preferred source for the installation of new applications?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The vendor's version management system
+*** Q_2
+A CD-ROM disk
+*** Q_3
+The distribution's package repository
+*** Q_4
+The vendor's website
+*** Q_5
+A retail store
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+** Question 6
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213786276
+:END:
+*** Question
+Which of the following can be used to access the command line?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+BIOS
+*** Q_2
+Terminal
+*** Q_3
+XWindow
+*** Q_4
+Firefox
+*** Q_5
+Xargs
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: The Linux Community and a Career in Open Source
+** Question 7
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670213788803
+:END:
+*** Question
+Which Linux distribution is used as a basis for the creation of Ubuntu Linux?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Red Hat Linux
+*** Q_2
+Arch Linux
+*** Q_3
+SUSE Linux
+*** Q_4
+Gentoo Linux
+*** Q_5
+Debian Linux
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+Section: The Linux Community and a Career in Open Source
+** Question 8 duplicate
+*** Question
+Which of the following programs is not a graphical web browser?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Konqueror
+*** Q_2
+Firefox
+*** Q_3
+Links
+*** Q_4
+Opera
+*** Q_5
+Chrome
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+** Question 9 duplicate
+*** Question
+Which of the following software packages is an e-mail server?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Postfix
+*** Q_2
+Thunderbird
+*** Q_3
+Apache
+*** Q_4
+GIMP
+*** Q_5
+MySQL
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Linux Community and a Career in Open Source
+** Question 10 duplicate
+*** Question
+What does LAMP mean?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The Linux Advanced Mode Programming Interface which gives advanced capabilities to application developers.
+*** Q_2
+The bus ID of an attached USB device that emits light.
+*** Q_3
+Short for Lightweight Access Management Protocol which synchronizes permissions in a network.
+*** Q_4
+The combination of Linux, Apache, MySQL and PHP or other programming languages.
+*** Q_5
+Short for lamport-clock which is important in distributed network computing.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Linux Community and a Career in Open Source
+** Question 11
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670214155079
+:END:
+*** Question
+Which of the following answers are true for cloud computing? (Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Cloud Computing provides new tools to manage IT resources.
+*** Q_2
+From the business perspective, Cloud Computing means outsourcing or centralization of IT operations.
+*** Q_3
+Cloud Computing is the opposite of green IT; i.e. the use of fossil, non-regenerative energy for computing.
+*** Q_4
+Cloud Computing implies sharing all information with everyone else in 'the cloud'.
+*** Answers
+1 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: AB
+Section: The Linux Community and a Career in Open Source
+** Question 12 duplicate
+*** Question
+Which of the following is a Linux based operating system for use on mobile devices?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+iOS
+*** Q_2
+CentOS
+*** Q_3
+Android
+*** Q_4
+Debian
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+** Question 13 duplicate
+*** Question
+Which one of the following is true about Open Source software?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Open Source software can not be copied for free.
+*** Q_2
+Open Source software is available for commercial use.
+*** Q_3
+The freedom to redistribute copies must include binary or executable forms of the software but not the source code.
+*** Q_4
+Open Source software is not for sale.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: The Linux Community and a Career in Open Source
+** Question 14 duplicate
+*** Question
+Which of the following is a requirement of the GPL license but not the BSD license?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Users who modify and distribute the software under the GPL license, must make the modifications they made, available to the recipients under the same license.
+*** Q_2
+The GPL license forbids the removal of copyright and license notices from source code files that are distributed.
+*** Q_3
+The GPL license contains a disclaimer of warranty requiring users not to hold the software authors liable for any damages.
+*** Q_4
+The GPL license requires that any legal disputes be settled with the mediation of the Free Software Foundation.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Linux Community and a Career in Open Source
+** Question 15 duplicate
+*** Question
+What is the first character for file or directory names if they should not be displayed by commands such as ls unless specifically requested?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+\ (backslash)
+*** Q_2
+. (dot)
+*** Q_3
+- (minus)
+*** Q_4
+_ (underscore)
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: Finding Your Way on a Linux System
+** Question 16 duplicate
+*** Question
+Which of the following commands moves the directory ~/summer-vacation and its content to ~/vacation/2011?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+mv ~/vacation/2011 ~/summer-vacation
+*** Q_2
+move -R ~/summer-vacation ~/vacation/2011
+*** Q_3
+mv /home/summer-vacation /home/vacation/2011
+*** Q_4
+mv ~/summer-vacation ~/vacation/2011
+*** Q_5
+mv -R ~/summer-vacation ~/vacation/2011
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+** Question 17
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670214445902
+:END:
+*** Question
+Which of the following commands can be used to create a file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+touch
+*** Q_2
+build
+*** Q_3
+nico
+*** Q_4
+create
+*** Q_5
+mkfile
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+** Question 18
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670214448279
+:END:
+*** Question
+Which option will cause the echo command NOT to output a trailing newline?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+-e
+*** Q_2
+-p
+*** Q_3
+-n
+*** Q_4
+-s
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: Finding Your Way on a Linux System
+** Question 19
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670214451251
+:END:
+*** Question
+Which commands provide help for a specific Linux command? (Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+info
+*** Q_2
+man
+*** Q_3
+helpme
+*** Q_4
+ask
+*** Q_5
+whatdoes
+*** Answers
+1 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: AB
+Section: Finding Your Way on a Linux System
+** Question 20 not working
+SIMULATION
+When typing a long command line at the shell, what single character can be used to split a command across multiple lines?
+
+*** Answers
+0 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: \
+Section: Finding Your Way on a Linux System
+** Question 21 duplicate
+*** Question
+Which is a suitable command to find the next appearance of the word hidden in a man page being viewed from the command line?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+find hidden
+*** Q_2
+/? hidden
+*** Q_3
+CTRL-F hidden
+*** Q_4
+/hidden
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+** Question 22 duplicate
+*** Question
+Which of the following are correct commands for changing the current directory to the user's home? (Choose TWO answers)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cd /home
+*** Q_2
+cd ~
+*** Q_3
+cd ..
+*** Q_4
+cd
+*** Q_5
+cd /
+*** Answers
+0 1 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: BD
+Section: Finding Your Way on a Linux System
+** Question 23 duplicate
+*** Question
+While deleting all files beginning with the letter a there was still the file Access.txt left. Assuming that it had the correct ownership, why was it not deleted?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Files with extensions need a different treatment.
+*** Q_2
+rm had to be called with the option -R to delete all files.
+*** Q_3
+The file Access.txt was probably opened by another application.
+*** Q_4
+The file Access.txt was hidden.
+*** Q_5
+Linux file names are case sensitive.
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+Section: Finding Your Way on a Linux System
+** Question 24 duplicate
+*** Question
+Which command line can be used to search help files that mention the word "copy"?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+man -k copy
+*** Q_2
+whatis copy
+*** Q_3
+man copy
+*** Q_4
+copy help
+*** Q_5
+copy –help
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+** Question 25 duplicate
+*** Question
+Which command is used to make a shell variable known to subsequently executed programs?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+export
+*** Q_2
+announce
+*** Q_3
+env
+*** Q_4
+transfer
+*** Q_5
+mv
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+** Question 26 duplicate
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_FAILURE_REASON: cannot create note because it is a duplicate
+:END:
+*** Question
+Which command lists all files in the current directory that start with a capital letter?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+ls [A-Z]*
+*** Q_2
+ls A-Z
+*** Q_3
+ls A-Z*
+*** Q_4
+ls --uppercasefiles
+*** Q_5
+list-uppercase-files
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+** Question 27 duplicate
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_FAILURE_REASON: cannot create note because it is a duplicate
+:END:
+*** Question
+Which command shows if /usr/bin is in the current shell search path?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cat PATH
+*** Q_2
+echo $PATH
+*** Q_3
+echo %PATH
+*** Q_4
+cat $PATH
+*** Q_5
+echo %PATH%
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: Finding Your Way on a Linux System
+** Question 28 duplicate
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_FAILURE_REASON: cannot create note because it is a duplicate
+:END:
+*** Question
+Which of the following commands will display a list of all files in the current directory, including those that may be hidden?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+ls -a
+*** Q_2
+ls --hidden
+*** Q_3
+ls -h
+*** Q_4
+ls –a
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+** Question 29
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670215112779
+:END:
+*** Question
+Which of the following commands increases the number of elements in a directory? (Choose TWO answers)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+touch newfile
+*** Q_2
+create newfile
+*** Q_3
+ls newfile
+*** Q_4
+rmdir newdirectory
+*** Q_5
+mkdir newdirectory
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+Section: Finding Your Way on a Linux System
+** Question 30
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670215116126
+:END:
+*** Question
+What command would you use to get comprehensive documentation about any command in Linux?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+help command
+*** Q_2
+echo command
+*** Q_3
+locate command
+*** Q_4
+man command
+*** Q_5
+get command
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+** Question 31
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670215518376
+:END:
+*** Question
+How is it possible to determine if an executable file is a shell script which is read by Bash?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The r bit is set.
+*** Q_2
+The file must end with .sh.
+*** Q_3
+The first line starts with #!/bin/bash.
+*** Q_4
+/bin/bash has to be run in debug mode.
+*** Q_5
+Scripts are never executable files.
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Power of the Command Line
+** Question 32
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670215326405
+:END:
+*** Question
+Which of the following commands can be used to view a file and do search operations within it while viewing the contents?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+less
+*** Q_2
+find
+*** Q_3
+grep
+*** Q_4
+report
+*** Q_5
+see
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Power of the Command Line
+** Question 33 duplicate
+*** Question
+Which function does a shell program serve?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+It provides a graphical environment.
+*** Q_2
+It is responsible for establishing a connection to another computer.
+*** Q_3
+It receives user commands and executes them.
+*** Q_4
+It is responsible for logging a user into the system.
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Power of the Command Line
+** Question 34 duplicate
+*** Question
+Which of the following commands can be used to extract files from an archive?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar -vf
+*** Q_2
+tar -xvf
+*** Q_3
+tar -evf
+*** Q_4
+tar -e
+*** Q_5
+tar –v
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: The Power of the Command Line
+** Question 35 duplicate
+*** Question
+How could one search for the file foo.txt under the directory /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+search /home -file foo.txt
+*** Q_2
+search /home foo.txt
+*** Q_3
+find /home -file foo.txt
+*** Q_4
+find /home -name foo.txt
+*** Q_5
+find /home foo.txt
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Power of the Command Line
+** Question 36 duplicate
+*** Question
+What is the output of the following command?
+ tail -n 20 test.txt
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The first 20 lines of test.txt.
+*** Q_2
+The last 20 lines of test.txt omitting the blank lines.
+*** Q_3
+The last 20 lines of test.txt with line numbers.
+*** Q_4
+The last 20 lines of test.txt including blank lines.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Power of the Command Line
+** Question 37 duplicate
+*** Question
+Which commands will archive /home and its content to /mnt/backup? (Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cp -ar /home /mnt/backup
+*** Q_2
+mv /home /mnt/backup
+*** Q_3
+sync -r /home /mnt/backup
+*** Q_4
+tar -cf /mnt/backup/archive.tar /home
+*** Q_5
+copy -r /home /mnt/backup
+*** Answers
+1 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: AD
+Section: The Power of the Command Line
+** Question 38 duplicate
+*** Question
+Why is the file data.txt empty after executing sort data.txt > data.txt?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Because, if data.txt is empty now, it must have been empty before.
+*** Q_2
+Because sort cannot sort text files, only binary files.
+*** Q_3
+Because sort detects that both files are the same.
+*** Q_4
+Because the file gets truncated before sort is executed.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Power of the Command Line
+** Question 39 duplicate
+*** Question
+What keyword is missing from the following segment of the shell script?
+  for i in *; _____
+     cat $i
+  done
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+do
+*** Q_2
+then
+*** Q_3
+enod
+*** Q_4
+fi
+*** Q_5
+run
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Power of the Command Line
+** Question 40 duplicate
+*** Question
+Which of the following statements may be used to access the second command line argument to a script?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+"$ARG2"
+*** Q_2
+$1
+*** Q_3
+"$2"
+*** Q_4
+"$1"
+*** Q_5
+'$2'
+*** Answers
+0 0 1 0 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+Section: The Power of the Command Line
+** Question 41
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670217078004
+:END:
+*** Question
+Which of the following commands will output all of the lines that contain either the string Fred or fred? (Choose TWO correct answers.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+grep -v fred data_file
+*** Q_2
+grep '[f]red' data_file
+*** Q_3
+egrep fred data_file
+*** Q_4
+grep '[Ff]red' data_file
+*** Q_5
+grep -i fred data_file
+*** Answers
+0 0 0 1 1
+*** Sources
+*** Extra 1
+Correct Answer: DE
+Section: The Power of the Command Line
+** Question 42 duplicate
+*** Question
+The output of the program date should be saved in the variable actdat.
+What is the correct statement?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+actdat=`date`
+*** Q_2
+set actdat='date'
+
+*** Q_3
+date | actdat
+*** Q_4
+date > $actdat
+*** Q_5
+actdat=date
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Power of the Command Line
+** Question 43 not working
+SIMULATION
+*** Question
+What two character sequence is present at the beginning of an interpreted script? (Please specify the TWO correct characters only)
+*** Answers
+0 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: #!
+Section: The Power of the Command Line
+** Question 44 duplicate
+*** Question
+How can the current directory and its subdirectories be searched for the file named MyFile.xml?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+find . -name MyFile.xml
+*** Q_2
+grep MyFile.xml | find
+*** Q_3
+grep -r MyFile.xml .
+*** Q_4
+less MyFile.xml
+*** Q_5
+search Myfile.xml ./
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+Section: The Power of the Command Line
+** Question 45
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670217078404
+:END:
+*** Question
+Which of the following commands will set the variable text to olaf is home? (Select TWO answers)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+text=olaf\ is\ home
+*** Q_2
+text=$olaf is home
+*** Q_3
+$text='olaf is home'
+*** Q_4
+text=='olaf is home'
+*** Q_5
+text="olaf is home"
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+Section: The Power of the Command Line
+** Question 46 duplicate
+*** Question
+Which of the following commands will create an archive file, named backup.tar, containing all the files from the directory /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar /home backup.tar
+*** Q_2
+tar -cf /home backup.tar
+*** Q_3
+tar -xf /home backup.tar
+*** Q_4
+tar -xf backup.tar /home
+*** Q_5
+tar -cf backup.tar /home
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+Section: The Power of the Command Line
+** Question 47 duplicate
+*** Question
+What is the output of the following command?
+ for token in a b c; do
+  echo -n ${token};
+ done
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+anbncn
+*** Q_2
+abc
+*** Q_3
+$token$token$token
+*** Q_4
+{a}{b}{c}
+*** Q_5
+a b c
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+Section: The Power of the Command Line
+** Question 48 duplicate
+*** Question
+Which command will display the last line of the file foo.txt?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+head -n 1 foo.txt
+*** Q_2
+tail foo.txt
+*** Q_3
+last -n 1 foo.txt
+*** Q_4
+tail -n 1 foo.txt
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+Section: The Power of the Command Line

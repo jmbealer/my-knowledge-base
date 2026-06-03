@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       864a671e-e437-4c35-9fe7-a92c2daaf451
+:mtime:    20230303115759
+:ctime:    20230303115750
+:END:
+#+title: PHP
+
+[[https://en.wikipedia.org/wiki/PHP][PHP - Wikipedia]]

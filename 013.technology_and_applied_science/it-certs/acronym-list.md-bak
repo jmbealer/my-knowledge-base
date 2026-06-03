@@ -1,0 +1,2096 @@
+## ABCDEFG
+
+- **{{Authentication, Authorization, and Accounting}}** **{{AAA}}**: _Framework
+  for access control_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Access Control List}}** **{{ACL}}**: _Rules determining access rights_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Automatic Document Feeder}}** **{{ADF}}**: _Device feeding multiple
+  pages_.
+  - aplus core 1
+  - aplus core 2
+- **{{Advanced Encryption Standard}}** **{{AES}}**: _Symmetric encryption
+  algorithm_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Advanced Micro Devices}}** **{{AMD}}**: _CPU and GPU manufacturer_.
+  - aplus core 1
+  - aplus core 2
+- **{{Apple File System}}** **{{APFS}}**: _File system for macOS/iOS_.
+  - aplus core 1
+  - aplus core 2
+- **{{Automatic Private IP Addressing}}** **{{APIPA}}**: _Link-local address
+  assignment_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Access Point}}** **{{AP}}**: _Device creating wireless network_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Advanced RISC Machine}}** **{{ARM}}**: _RISC-based processor
+  architecture_.
+  - aplus core 1
+  - aplus core 2
+- **{{Advanced Technology Extended}}** **{{ATX}}**: _Standard motherboard form
+  factor_.
+  - aplus core 1
+  - aplus core 2
+- **{{Acceptable Use Policy}}** **{{AUP}}**: _Rules for network usage_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{Address (A)}}**: DNS record mapping _hostname to IPv4 address_.
+  - networkplus
+- **{{Authentication Header (AH)}}**: IPSec protocol _providing data integrity
+  and origin_.
+  - networkplus
+  - securityplus
+- **{{Application Programming Interface (API)}}**: Interface _enabling software
+  components to communicate_.
+  - networkplus
+  - securityplus
+- **{{Audio Processing Unit (APU)}}**: Specialized _hardware for processing
+  audio signals_.
+  - networkplus
+- **{{Address Resolution Protocol (ARP)}}**: Protocol _mapping IP addresses to
+  MAC_ addresses.
+  - networkplus
+  - securityplus
+
+- **{{Two-Factor Authentication (2FA)}}**: Authentication requiring _two
+  distinct forms of verification_.
+  - securityplus
+- **{{Triple Data Encryption Standard (3DES)}}**: Legacy encryption _applying
+  DES cipher three times_.
+  - securityplus
+
+- **{{Advanced Encryption Standard 256-bit (AES-256)}}**: AES encryption _using
+  a 256-bit key length_.
+  - securityplus
+- **{{Artificial Intelligence (AI)}}**: Systems simulating _human intelligence
+  for complex tasks_.
+  - securityplus
+- **{{Automated Indicator Sharing (AIS)}}**: Exchange of _threat intelligence
+  between organizations_.
+  - securityplus
+- **{{Annualized Loss Expectancy (ALE)}}**: Estimated _yearly financial loss
+  from a risk_.
+  - securityplus
+- **{{Advanced Persistent Threat (APT)}}**: Sophisticated attacker _maintaining
+  long-term network access_.
+  - securityplus
+- **{{Annualized Rate of Occurrence (ARO)}}**: Estimated _frequency of a threat
+  happening per year_.
+  - securityplus
+- **{{Address Space Layout Randomization (ASLR)}}**: Memory protection
+  _randomizing data locations to prevent exploits_.
+  - securityplus
+- **{{Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK)}}**:
+  Framework _describing cyber adversary behavior_.
+  - securityplus
+- **{{Acceptable Use Policy (AUP)}}**: Rules _defining proper usage of
+  organizational assets_.
+  - securityplus
+- **{{Antivirus (AV)}}**: Software _preventing, detecting, and removing
+  malware_.
+  - securityplus
+
+- **{{Business Email Compromise}}** **{{BEC}}**: _Fraud using compromised
+  email_.
+  - aplus core 1
+  - aplus core 2
+- **{{Basic Input/Output System}}** **{{BIOS}}**: _Legacy firmware interface_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Bayonet Neill-Concelman}}** **{{BNC}}**: _Connector for coaxial cable_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Blue Screen of Death}}** **{{BSOD}}**: _Windows critical error screen_.
+  - aplus core 1
+  - aplus core 2
+- **{{Bring Your Own Device}}** **{{BYOD}}**: _Policy for personal devices_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+
+- **{{Business Continuity Planning (BCP)}}**: Strategy _ensuring operations
+  continue during disaster_.
+  - networkplus
+  - securityplus
+- **{{Border Gateway Protocol (BGP)}}**: External _routing protocol for internet
+  traffic_.
+  - networkplus
+  - securityplus
+- **{{Bridge Protocol Data Unit (BPDU)}}**: STP _messages exchanged between
+  network switches_.
+  - networkplus
+- **{{Basic Service Set Identifier (BSSID)}}**: MAC _address of a wireless
+  access_ point.
+  - networkplus
+
+- **{{Bourne Again Shell (BASH)}}**: Command-line _interface and scripting
+  language for Linux_.
+  - securityplus
+- **{{Business Impact Analysis (BIA)}}**: Assessment of _consequences from
+  disruption of business functions_.
+  - securityplus
+- **{{Basic Input/Output System (BIOS)}}**: Firmware _initializing hardware
+  during system boot_.
+  - securityplus
+- **{{Bridge Protocol Data Unit (BPDU)}}**: Messages _exchanged by switches to
+  prevent loops_.
+  - securityplus
+
+- **{{Common Access Card}}** **{{CAC}}**: _US DoD smart card_.
+  - aplus core 1
+  - aplus core 2
+- **{{Column Address Strobe}}** **{{CAS}}**: _Memory timing parameter_.
+  - aplus core 1
+  - aplus core 2
+- **{{Common Internet File System}}** **{{CIFS}}**: _Dialect of SMB protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Configuration Management Database}}** **{{CMDB}}**: _Repository of IT
+  assets_.
+  - aplus core 1
+  - aplus core 2
+- **{{Complementary Metal-Oxide Semiconductor}}** **{{CMOS}}**: _Technology for
+  BIOS settings_.
+  - aplus core 1
+  - aplus core 2
+- **{{Canonical Name}}** **{{CNAME}}**: _DNS alias record_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Central Processing Unit}}** **{{CPU}}**: _Main processing chip_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{Content-Addressable Memory (CAM)}}**: High-speed _memory used for MAC
+  address_ tables.
+  - networkplus
+- **{{Content Delivery Network (CDN)}}**: Distributed _servers delivering web
+  content efficiently_.
+  - networkplus
+- **{{Cisco Discovery Protocol (CDP)}}**: Proprietary _protocol for discovering
+  Cisco devices_.
+  - networkplus
+- **{{Confidentiality, Integrity, and Availability (CIA)}}**: Core _model for
+  guiding information security_ policies.
+  - networkplus
+  - securityplus
+- **{{Classless Inter-Domain Routing (CIDR)}}**: Method _for efficient IP
+  address allocation_.
+  - networkplus
+- **{{Command-Line Interface (CLI)}}**: Text-based _interface for system
+  management_.
+  - networkplus
+- **{{Cyclic Redundancy Check (CRC)}}**: Error-detecting _code used in digital
+  networks_.
+  - networkplus
+  - securityplus
+
+- **{{Certificate Authority (CA)}}**: Entity _issuing and verifying digital
+  certificates_.
+  - securityplus
+- **{{CAPTCHA}}**: Challenge-response _test distinguishing humans from bots_.
+  - securityplus
+- **{{Corrective Action Report (CAR)}}**: Documentation of _steps taken to fix a
+  defect_.
+  - securityplus
+- **{{Cloud Access Security Broker (CASB)}}**: Security policy _enforcement
+  point between cloud users and providers_.
+  - securityplus
+- **{{Cipher Block Chaining (CBC)}}**: Encryption mode _chaining blocks using
+  XOR_.
+  - securityplus
+- **{{Counter Mode/CBC-MAC Protocol (CCMP)}}**: Encryption protocol _used in
+  WPA2 wireless security_.
+  - securityplus
+- **{{Closed-Circuit Television (CCTV)}}**: Video surveillance _system
+  transmitting to limited monitors_.
+  - securityplus
+- **{{Computer Emergency Response Team (CERT)}}**: Group _handling computer
+  security incidents_.
+  - securityplus
+- **{{Cipher Feedback (CFB)}}**: Stream cipher _mode using feedback for
+  encryption_.
+  - securityplus
+- **{{Challenge Handshake Authentication Protocol (CHAP)}}**: Protocol
+  _authenticating via three-way handshake_.
+  - securityplus
+- **{{Chief Information Officer (CIO)}}**: Executive _responsible for IT
+  strategy and implementation_.
+  - securityplus
+- **{{Computer Incident Response Team (CIRT)}}**: Specialized group _responding
+  to security breaches_.
+  - securityplus
+- **{{Content Management System (CMS)}}**: Software _managing digital content
+  creation and modification_.
+  - securityplus
+- **{{Corporate-Owned, Business-Only (COBO)}}**: Mobile policy _restricting
+  device use to work tasks_.
+  - securityplus
+- **{{Continuity of Operation Planning (COOP)}}**: Plan _ensuring essential
+  functions continue during emergencies_.
+  - securityplus
+- **{{Corporate Owned, Personally Enabled (COPE)}}**: Mobile policy _allowing
+  personal use of company devices_.
+  - securityplus
+- **{{Contingency Planning (CP)}}**: Developing _strategies to recover from
+  potential events_.
+  - securityplus
+- **{{Cyclical Redundancy Check (CRC)}}**: Error-detecting _code verifying data
+  integrity_.
+  - securityplus
+- **{{Certificate Revocation List (CRL)}}**: List of _digital certificates
+  invalidated before expiration_.
+  - securityplus
+- **{{Chief Security Officer (CSO)}}**: Executive _responsible for physical and
+  digital security_.
+  - securityplus
+- **{{Cloud Service Provider (CSP)}}**: Company _offering cloud computing
+  resources_.
+  - securityplus
+- **{{Certificate Signing Request (CSR)}}**: Message _sent to CA to apply for
+  certificate_.
+  - securityplus
+- **{{Cross-Site Request Forgery (CSRF)}}**: Attack _forcing user to execute
+  unwanted actions_.
+  - securityplus
+- **{{Channel Service Unit (CSU)}}**: Device _connecting digital lines to
+  network equipment_.
+  - securityplus
+- **{{Counter Mode (CTM)}}**: Encryption mode _turning block cipher into stream
+  cipher_.
+  - securityplus
+- **{{Chief Technology Officer (CTO)}}**: Executive _overseeing technological
+  needs and R&D_.
+  - securityplus
+- **{{Common Vulnerability Enumeration (CVE)}}**: List of _publicly known
+  cybersecurity vulnerabilities_.
+  - securityplus
+- **{{Common Vulnerability Scoring System (CVSS)}}**: Framework _rating severity
+  of security vulnerabilities_.
+  - securityplus
+- **{{Choose Your Own Device (CYOD)}}**: Mobile policy _allowing selection from
+  approved devices_.
+  - securityplus
+
+- **{{D-subminiature 9}}** **{{DB-9}}**: _Connector for serial ports_.
+  - aplus core 1
+  - aplus core 2
+- **{{Double Data Rate}}** **{{DDR}}**: _Memory transfer technology_.
+  - aplus core 1
+  - aplus core 2
+- **{{Distributed Denial of Service}}** **{{DDoS}}**: _Attack from multiple
+  sources_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Dynamic Host Configuration Protocol}}** **{{DHCP}}**: _Automated IP
+  assignment_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Dual In-line Memory Module}}** **{{DIMM}}**: _Desktop memory module_.
+  - aplus core 1
+  - aplus core 2
+- **{{DomainKeys Identified Mail}}** **{{DKIM}}**: _Email authentication
+  method_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Data Loss Prevention}}** **{{DLP}}**: _Protection against data leaks_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Domain-based Message Authentication, Reporting, and Conformance}}**
+  **{{DMARC}}**: _Email validation policy_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Domain Name System}}** **{{DNS}}**: _Resolves hostnames to IPs_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Digital Rights Management}}** **{{DRM}}**: _Copyright protection
+  technology_.
+  - aplus core 1
+  - aplus core 2
+- **{{Digital Subscriber Line}}** **{{DSL}}**: _Internet via telephone lines_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Digital Visual Interface}}** **{{DVI}}**: _Digital video connector_.
+  - aplus core 1
+  - aplus core 2
+- **{{Denial of Service}}** **{{DoS}}**: _Attack disrupting service
+  availability_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+
+- **{{Direct Attach Copper (DAC)}}**: Short-range _copper cabling for
+  high-speed_ interconnects.
+  - networkplus
+- **{{Direct-Attached Storage (DAS)}}**: Digital _storage connected directly to
+  computer_.
+  - networkplus
+- **{{Data Center Interconnect (DCI)}}**: Networking _linking two or more data_
+  centers.
+  - networkplus
+- **{{Domain Name System Security Extensions (DNSSEC)}}**: Suite _for securing
+  DNS data authenticity_.
+  - networkplus
+- **{{DNS over Hypertext Transfer Protocol Secure (DoH)}}**: DNS _queries sent
+  via encrypted HTTPS_.
+  - networkplus
+- **{{Denial-of-Service (DoS)}}**: Attack _disrupting service availability for
+  users_.
+  - networkplus
+- **{{DNS over Transport Layer Security (DoT)}}**: DNS _queries sent via
+  encrypted TLS_.
+  - networkplus
+- **{{Disaster Recovery (DR)}}**: Process _restoring IT infrastructure after
+  disaster_.
+  - networkplus
+
+- **{{Discretionary Access Control (DAC)}}**: Access control _where owners
+  determine permissions_.
+  - securityplus
+- **{{Database Administrator (DBA)}}**: Role _managing and maintaining database
+  systems_.
+  - securityplus
+- **{{Data Execution Prevention (DEP)}}**: Security feature _preventing code
+  execution in memory_.
+  - securityplus
+- **{{Digital Encryption Standard (DES)}}**: Legacy _symmetric-key algorithm for
+  data encryption_.
+  - securityplus
+- **{{Diffie-Hellman Ephemeral (DHE)}}**: Key exchange _providing forward
+  secrecy using temporary keys_.
+  - securityplus
+- **{{Dynamic Link Library (DLL)}}**: Shared _library code used by multiple
+  programs_.
+  - securityplus
+- **{{Destination Network Address Translation (DNAT)}}**: Translating
+  _destination IP address of packets_.
+  - securityplus
+- **{{Domain Name System Security Extensions (DNSSEC)}}**: Suite _securing DNS
+  against spoofing attacks_.
+  - securityplus
+- **{{Data Privacy Officer (DPO)}}**: Role _ensuring compliance with data
+  protection laws_.
+  - securityplus
+- **{{Disaster Recovery Plan (DRP)}}**: Documented _process for restoring IT
+  infrastructure_.
+  - securityplus
+- **{{Digital Signature Algorithm (DSA)}}**: Standard _for creating digital
+  signatures_.
+  - securityplus
+
+- **{{Error Correcting Code}}** **{{ECC}}**: _Memory detecting/fixing errors_.
+  - aplus core 1
+  - aplus core 2
+- **{{Endpoint Detection and Response}}** **{{EDR}}**: _Host-based security
+  monitoring_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Encrypting File System}}** **{{EFS}}**: _Windows file encryption_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{End of Life}}** **{{EOL}}**: _Product support termination_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Electrostatic Discharge}}** **{{ESD}}**: _Sudden flow of electricity_.
+  - aplus core 1
+  - aplus core 2
+- **{{End User License Agreement}}** **{{EULA}}**: _Software usage contract_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{External Serial Advanced Technology Attachment}}** **{{eSATA}}**:
+  _External storage interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Embedded Subscriber Identity Module}}** **{{eSIM}}**: _Programmable
+  built-in SIM_.
+  - aplus core 1
+  - aplus core 2
+- **{{Extended File Allocation Table}}** **{{exFAT}}**: _Optimized flash drive
+  filesystem_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Extensible Authentication Protocol (EAP)}}**: Authentication _framework
+  providing common security functions_.
+  - networkplus
+  - securityplus
+- **{{Extensible Authentication Protocol over LAN (EAPoL)}}**: Method _for
+  transporting EAP over Ethernet_.
+  - networkplus
+- **{{Enhanced Interior Gateway Routing Protocol (EIGRP)}}**: Cisco _advanced
+  distance-vector routing protocol_.
+  - networkplus
+- **{{End-of-Support (EOS)}}**: Date _when vendor stops assisting users_.
+  - networkplus
+- **{{Encapsulating Security Payload (ESP)}}**: IPSec _member providing origin
+  authenticity and encryption_.
+  - networkplus
+  - securityplus
+- **{{Extended Service Set Identifier (ESSID)}}**: Human-readable _name for
+  multiple wireless access points_.
+  - networkplus
+
+- **{{Electronic Code Book (ECB)}}**: Encryption mode _dividing message into
+  blocks_.
+  - securityplus
+- **{{Elliptic Curve Cryptography (ECC)}}**: Public-key encryption _based on
+  elliptic curve theory_.
+  - securityplus
+- **{{Elliptic Curve Diffie-Hellman Ephemeral (ECDHE)}}**: Key exchange _using
+  ECC and ephemeral keys_.
+  - securityplus
+- **{{Elliptic Curve Digital Signature Algorithm (ECDSA)}}**: DSA variant _using
+  elliptic curve cryptography_.
+  - securityplus
+- **{{Enterprise Resource Planning (ERP)}}**: Software _managing core business
+  processes_.
+  - securityplus
+- **{{Electronic Serial Number (ESN)}}**: Unique _identifier for mobile
+  devices_.
+  - securityplus
+
+- **{{File Allocation Table 32-bit}}** **{{FAT32}}**: _Legacy compatible
+  filesystem_.
+  - aplus core 1
+  - aplus core 2
+- **{{Face Recognition Technology}}** **{{FRT}}**: _Biometric identification
+  using faces_.
+  - aplus core 1
+  - aplus core 2
+- **{{File Transfer Protocol}}** **{{FTP}}**: _Unencrypted file transfer_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Function as a Service}}** **{{FaaS}}**: _Serverless computing model_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Fibre Channel (FC)}}**: High-speed _network technology used for storage
+  networking_.
+  - networkplus
+- **{{First Hop Redundancy Protocol (FHRP)}}**: Provides _failover protection
+  for default gateways_.
+  - networkplus
+- **{{Fully Qualified Domain Name (FQDN)}}**: Complete _domain name for specific
+  host_.
+  - networkplus
+- **{{File Transfer Protocol Secure (FTPS)}}**: Secure _FTP extension using
+  SSL/TLS encryption_.
+  - networkplus
+  - securityplus
+
+- **{{File System Access Control List (FACL)}}**: List _controlling access to
+  file system objects_.
+  - securityplus
+- **{{Full Disk Encryption (FDE)}}**: Encryption _protecting entire storage
+  drive_.
+  - securityplus
+- **{{File Integrity Management (FIM)}}**: Monitoring _system files for
+  unauthorized changes_.
+  - securityplus
+- **{{Field Programmable Gate Array (FPGA)}}**: Integrated circuit _configurable
+  after manufacturing_.
+  - securityplus
+- **{{False Rejection Rate (FRR)}}**: Rate _biometric system rejects authorized
+  users_.
+  - securityplus
+- **{{Secured File Transfer Protocol (FTPS)}}**: FTP _secured with SSL/TLS
+  encryption_.
+  - securityplus
+
+- **{{Grandfather-Father-Son}}** **{{GFS}}**: _Backup rotation scheme_.
+  - aplus core 1
+  - aplus core 2
+- **{{Global Positioning System}}** **{{GPS}}**: _Satellite-based navigation_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{GUID Partition Table}}** **{{GPT}}**: _Modern partitioning standard_.
+  - aplus core 1
+  - aplus core 2
+- **{{Graphics Processing Unit}}** **{{GPU}}**: _Circuit for image rendering_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Globally Unique Identifier}}** **{{GUID}}**: _Unique reference number_.
+  - aplus core 1
+  - aplus core 2
+- **{{Graphical User Interface}}** **{{GUI}}**: _Visual user interface_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{General Data Protection Regulation (GDPR)}}**: EU _law on data protection
+  and privacy_.
+  - networkplus
+  - securityplus
+- **{{Generic Routing Encapsulation (GRE)}}**: Tunneling _protocol encapsulating
+  wide variety of protocols_.
+  - networkplus
+  - securityplus
+
+- **{{Galois Counter Mode (GCM)}}**: High-performance _encryption mode providing
+  integrity_.
+  - securityplus
+- **{{Gnu Privacy Guard (GPG)}}**: Encryption tool _implementing OpenPGP
+  standard_.
+  - securityplus
+- **{{Group Policy Object (GPO)}}**: Collection of _settings for Windows
+  systems_.
+  - securityplus
+
+## HIJKLM
+
+- **{{Hard Disk Drive}}** **{{HDD}}**: _Magnetic storage device_.
+  - aplus core 1
+  - aplus core 2
+- **{{High-Definition Multimedia Interface}}** **{{HDMI}}**: _Digital
+  video/audio interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{High Definition}}** **{{HD}}**: _Video resolution of 720p/1080p_.
+  - aplus core 1
+  - aplus core 2
+- **{{Hardware Security Module}}** **{{HSM}}**: _Physical crypto processing
+  device_.
+  - aplus core 1
+  - aplus core 2
+- **{{Hypertext Transfer Protocol Secure}}** **{{HTTPS}}**: _Encrypted web
+  traffic protocol_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Hypertext Transfer Protocol}}** **{{HTTP}}**: _Unsecured web traffic
+  protocol_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{Hot Standby Router Protocol (HSRP)}}**: Cisco _proprietary FHRP for
+  gateway redundancy_.
+  - networkplus
+
+- **{{Identity and Access Management}}** **{{IAM}}**: _Managing user digital
+  identities_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Internet Mail Access Protocol}}** **{{IMAP}}**: _Email retrieval with
+  syncing_.
+  - aplus core 1
+  - aplus core 2
+- **{{Input/Output Operations Per Second}}** **{{IOPS}}**: _Storage performance
+  metric_.
+  - aplus core 1
+  - aplus core 2
+- **{{Intrusion Prevention System}}** **{{IPS}}**: _Active threat blocking
+  device_.
+  - aplus core 1
+  - aplus core 2
+- **{{Internet Protocol}}** **{{IP}}**: _Routing packets across networks_.
+  - aplus core 1
+  - aplus core 2
+- **{{Infrared}}** **{{IR}}**: _Line-of-sight wireless communication_.
+  - aplus core 1
+  - aplus core 2
+- **{{International Organization for Standardization}}** **{{ISO}}**: _Global
+  standard setting body_.
+  - aplus core 1
+  - aplus core 2
+- **{{Internet Service Provider}}** **{{ISP}}**: _Company providing internet
+  access_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Information Technology eXtended}}** **{{ITX}}**: _Compact motherboard form
+  factor_.
+  - aplus core 1
+  - aplus core 2
+- **{{Infrastructure as a Service}}** **{{IaaS}}**: _Cloud virtualized hardware
+  resources_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Internet of Things}}** **{{IoT}}**: _Network of connected physical
+  objects_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{Infrastructure as Code (IaC)}}**: Managing _infrastructure via
+  machine-readable definition files_.
+  - networkplus
+- **{{Internal Border Gateway Protocol (iBGP)}}**: BGP _routing within a single
+  autonomous system_.
+  - networkplus
+- **{{Internet Control Message Protocol (ICMP)}}**: Protocol _sending error
+  messages and operational info_.
+  - networkplus
+- **{{Industrial Control System (ICS)}}**: Integration _of hardware/software for
+  industrial automation_.
+  - networkplus
+- **{{Intermediate Distribution Frame (IDF)}}**: Cable _rack connecting internal
+  equipment to MDF_.
+  - networkplus
+- **{{Intrusion Detection System (IDS)}}**: System _monitoring networks for
+  malicious activity_.
+  - networkplus
+- **{{Internet Group Management Protocol (IGMP)}}**: Communication _protocol
+  managing multicast group memberships_.
+  - networkplus
+- **{{Internal Gateway Protocol (IGP)}}**: Routing _protocol used within
+  autonomous systems_.
+  - networkplus
+- **{{Industrial Internet of Things (IIoT)}}**: IoT _applications in industrial
+  sectors_.
+  - networkplus
+- **{{Internet Information Services (IIS)}}**: Microsoft _web server software
+  for Windows_.
+  - networkplus
+- **{{Internet Key Exchange (IKE)}}**: Protocol _setting up security
+  associations in IPSec_.
+  - networkplus
+- **{{Internet Protocol (IP)}}**: Core _protocol routing data across networks_.
+  - networkplus
+- **{{Internet Protocol Address Management (IPAM)}}**: Tool _for tracking and
+  managing IP spaces_.
+  - networkplus
+- **{{Intrusion Prevention System (IPS)}}**: System _actively blocking detected
+  network threats_.
+  - networkplus
+- **{{Internet Protocol Security (IPSec)}}**: Suite _for securing IP
+  communications via encryption_.
+  - networkplus
+- **{{Intermediate System to Intermediate System (IS-IS)}}**: Link-state
+  _routing protocol for large provider networks_.
+  - networkplus
+
+- **{{Keyboard-Video-Mouse}}** **{{KVM}}**: _Switch controlling multiple PCs_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Local Area Network}}** **{{LAN}}**: _Network in limited area_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Liquid Crystal Display}}** **{{LCD}}**: _Flat panel display technology_.
+  - aplus core 1
+  - aplus core 2
+- **{{Lucent Connector}}** **{{LC}}**: _Small form-factor fiber connector_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Lightweight Directory Access Protocol}}** **{{LDAP}}**: _Directory service
+  protocol_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Light Emitting Diode}}** **{{LED}}**: _Semiconductor light source_.
+  - aplus core 1
+  - aplus core 2
+- **{{Long Term Evolution}}** **{{LTE}}**: _4G mobile communication standard_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+
+- **{{Link Aggregation Control Protocol (LACP)}}**: IEEE _standard for bundling
+  multiple network ports_.
+  - networkplus
+- **{{Local Connector (LC)}}**: Small _form-factor fiber optic connector_.
+  - networkplus
+- **{{Lightweight Directory Access Protocol over SSL (LDAPS)}}**: Secure _LDAP
+  using SSL/TLS encryption_.
+  - networkplus
+- **{{Link Layer Discovery Protocol (LLDP)}}**: Vendor-neutral _protocol for
+  network device discovery_.
+  - networkplus
+
+- **{{Media Access Control}}** **{{MAC}}**: _Unique physical network address_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Metropolitan Area Network}}** **{{MAN}}**: _City-wide computer network_.
+  - aplus core 1
+  - aplus core 2
+- **{{Master Boot Record}}** **{{MBR}}**: _Legacy boot sector standard_.
+  - aplus core 1
+  - aplus core 2
+- **{{Mobile Device Management}}** **{{MDM}}**: _Device administration
+  software_.
+  - aplus core 1
+  - aplus core 2
+- **{{Managed Detection and Response}}** **{{MDR}}**: _Outsourced security
+  monitoring_.
+  - aplus core 1
+  - aplus core 2
+- **{{Multifactor Authentication}}** **{{MFA}}**: _Using multiple auth methods_.
+  - aplus core 1
+  - aplus core 2
+- **{{Multifunction Product / Printer}}** **{{MFP}}**: _All-in-one printer
+  device_.
+  - aplus core 1
+  - aplus core 2
+- **{{MultiMediaCard}}** **{{MMC}}**: _Flash memory card standard_.
+  - aplus core 1
+  - aplus core 2
+- **{{Mutual Non-Disclosure Agreement}}** **{{MNDA}}**: _Contract protecting
+  shared secrets_.
+  - aplus core 1
+  - aplus core 2
+- **{{Mail Exchanger}}** **{{MX}}**: _DNS record for email_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Mini-SATA}}** **{{mSATA}}**: _Small form factor SSD interface_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Main Distribution Frame (MDF)}}**: Primary _hub for terminating external
+  cabling_.
+  - networkplus
+- **{{Medium Dependent Interface Crossover (MDIX)}}**: Technology _automatically
+  detecting required cable type_.
+  - networkplus
+- **{{Multifactor Authentication (MFA)}}**: Authentication _requiring two or
+  more independent factors_.
+  - networkplus
+- **{{Management Information Base (MIB)}}**: Database _used for managing
+  entities in network_.
+  - networkplus
+- **{{Multiple Input Multiple Output (MIMO)}}**: Technology _using multiple
+  antennas for wireless throughput_.
+  - networkplus
+- **{{Memorandum of Understanding (MOU)}}**: Non-binding _agreement outlining
+  mutual goals between parties_.
+  - networkplus
+- **{{Multiprotocol Label Switching (MPLS)}}**: Mechanism _directing data via
+  labels between nodes_.
+  - networkplus
+- **{{Multifiber Push On (MPO)}}**: Multi-fiber _connector used for high-density
+  applications_.
+  - networkplus
+- **{{Mean Time Between Failure (MTBF)}}**: Measure _of predicted elapsed time
+  between failures_.
+  - networkplus
+- **{{Mean Time To Repair (MTTR)}}**: Average _time required to repair a
+  failure_.
+  - networkplus
+- **{{Maximum Transmission Unit (MTU)}}**: Size _of largest PDU a layer
+  supports_.
+  - networkplus
+
+## NOPQRST
+
+- **{{Network Access Control}}** **{{NAC}}**: _Managing device network
+  admission_.
+  - aplus core 1
+  - aplus core 2
+- **{{Network Attached Storage}}** **{{NAS}}**: _File-level storage server_.
+  - aplus core 1
+  - aplus core 2
+- **{{Network Address Translation}}** **{{NAT}}**: _Mapping private to public
+  IPs_.
+  - aplus core 1
+  - aplus core 2
+- **{{Non-Disclosure Agreement}}** **{{NDA}}**: _Confidentiality contract_.
+  - aplus core 1
+  - aplus core 2
+- **{{Near Field Communication}}** **{{NFC}}**: _Short-range contactless
+  communication_.
+  - aplus core 1
+  - aplus core 2
+- **{{Network Interface Card}}** **{{NIC}}**: _Hardware for network connection_.
+  - aplus core 1
+  - aplus core 2
+- **{{New Technology File System}}** **{{NTFS}}**: _Default Windows file
+  system_.
+  - aplus core 1
+  - aplus core 2
+- **{{Network Time Protocol}}** **{{NTP}}**: _Clock synchronization protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Non-Volatile Memory Express}}** **{{NVMe}}**: _High-speed SSD interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Network Basic Input/Output System}}** **{{NetBIOS}}**: _Legacy local
+  network API_.
+  - aplus core 1
+  - aplus core 2
+- **{{Original Equipment Manufacturer}}** **{{OEM}}**: _Maker of
+  components/software_.
+  - aplus core 1
+  - aplus core 2
+- **{{Organic Light Emitting Diode}}** **{{OLED}}**: _Display with self-lit
+  pixels_.
+  - aplus core 1
+  - aplus core 2
+- **{{Optical Network Terminal}}** **{{ONT}}**: _Fiber-to-copper interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Operating System}}** **{{OS}}**: _System software managing hardware_.
+  - aplus core 1
+  - aplus core 2
+- **{{One-Time Password}}** **{{OTP}}**: _Single-use authentication code_.
+  - aplus core 1
+  - aplus core 2
+- **{{Privileged Access Management}}** **{{PAM}}**: _Securing admin accounts_.
+  - aplus core 1
+  - aplus core 2
+- **{{Personal Area Network}}** **{{PAN}}**: _Device network near person_.
+  - aplus core 1
+  - aplus core 2
+- **{{Peripheral Component Interconnect Express}}** **{{PCIe}}**: _High-speed
+  serial expansion bus_.
+  - aplus core 1
+  - aplus core 2
+- **{{Peripheral Component Interconnect}}** **{{PCI}}**: _Legacy expansion bus_.
+  - aplus core 1
+  - aplus core 2
+- **{{Printer Control Language}}** **{{PCL}}**: _Standard printer page
+  description language_.
+  - aplus core 1
+  - aplus core 2
+- **{{Personal Computer}}** **{{PC}}**: _General use computer_.
+  - aplus core 1
+  - aplus core 2
+- **{{Personally Identifiable Information}}** **{{PII}}**: _Data identifying a
+  specific individual_.
+  - aplus core 1
+  - aplus core 2
+- **{{Personal Identification Number}}** **{{PIN}}**: _Numeric password for
+  authentication_.
+  - aplus core 1
+  - aplus core 2
+- **{{Personal Identity Verification}}** **{{PIV}}**: _US federal smart card
+  standard_.
+  - aplus core 1
+  - aplus core 2
+- **{{Post Office Protocol}}** **{{POP}}**: _Email retrieval protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Power-On Self-Test}}** **{{POST}}**: _Hardware check during startup_.
+  - aplus core 1
+  - aplus core 2
+- **{{Power Supply Unit}}** **{{PSU}}**: _Converts AC to DC power_.
+  - aplus core 1
+  - aplus core 2
+- **{{Potentially Unwanted Program}}** **{{PUP}}**: _Software installed without
+  clear consent_.
+  - aplus core 1
+  - aplus core 2
+- **{{Preboot Execution Environment}}** **{{PXE}}**: _Booting OS from network_.
+  - aplus core 1
+  - aplus core 2
+- **{{Platform as a Service}}** **{{PaaS}}**: _Cloud development environment_.
+  - aplus core 1
+  - aplus core 2
+- **{{Power over Ethernet}}** **{{PoE}}**: _Power delivery via network cables_.
+  - aplus core 1
+  - aplus core 2
+- **{{Quality of Service}}** **{{QoS}}**: _Prioritizing network traffic_.
+  - aplus core 1
+  - aplus core 2
+- **{{Remote Authentication Dial-In User Service}}** **{{RADIUS}}**:
+  _Centralized authentication protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Redundant Array of Independent Disks}}** **{{RAID}}**: _Storage
+  performance/redundancy_.
+  - aplus core 1
+  - aplus core 2
+- **{{Random Access Memory}}** **{{RAM}}**: _Volatile system memory_.
+  - aplus core 1
+  - aplus core 2
+- **{{Remote Desktop Protocol}}** **{{RDP}}**: _GUI remote access protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Radio Frequency Identification}}** **{{RFID}}**: _Wireless tracking
+  technology_.
+  - aplus core 1
+  - aplus core 2
+- **{{Red-Green-Blue}}** **{{RGB}}**: _Color model for displays_.
+  - aplus core 1
+  - aplus core 2
+- **{{Reduced Instruction Set Computer}}** **{{RISC}}**: _Simplified CPU
+  architecture_.
+  - aplus core 1
+  - aplus core 2
+- **{{Registered Jack 11}}** **{{RJ11}}**: _Connector for telephone lines_.
+  - aplus core 1
+  - aplus core 2
+- **{{Registered Jack 45}}** **{{RJ45}}**: _Connector for Ethernet cables_.
+  - aplus core 1
+  - aplus core 2
+- **{{Remote Monitoring and Management}}** **{{RMM}}**: _IT management
+  software_.
+  - aplus core 1
+  - aplus core 2
+- **{{Revolutions Per Minute}}** **{{RPM}}**: _Hard drive speed unit_.
+  - aplus core 1
+  - aplus core 2
+- **{{Rapid Security Response}}** **{{RSR}}**: _Quick security updates_.
+  - aplus core 1
+  - aplus core 2
+- **{{Resilient File System}}** **{{ReFS}}**: _Microsoft proprietary file
+  system_.
+  - aplus core 1
+  - aplus core 2
+- **{{Self-Monitoring, Analysis, and Reporting Technology}}** **{{S.M.A.R.T}}**:
+  _Drive health monitoring_.
+  - aplus core 1
+  - aplus core 2
+- **{{Security Assertions Markup Language}}** **{{SAML}}**: _SSO data exchange
+  format_.
+  - aplus core 1
+  - aplus core 2
+- **{{Storage Area Network}}** **{{SAN}}**: _Network dedicated to storage_.
+  - aplus core 1
+  - aplus core 2
+- **{{Serial Attached SCSI}}** **{{SAS}}**: _Enterprise storage interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Serial Advanced Technology Attachment}}** **{{SATA}}**: _Computer bus
+  interface for storage_.
+  - aplus core 1
+  - aplus core 2
+- **{{Supervisory Control and Data Acquisition}}** **{{SCADA}}**: _Industrial
+  control system_.
+  - aplus core 1
+  - aplus core 2
+- **{{Small Computer System Interface}}** **{{SCSI}}**: _Legacy parallel
+  interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Subscriber Connector}}** **{{SC}}**: _Square fiber optic connector_.
+  - aplus core 1
+  - aplus core 2
+- **{{Software-Defined Storage}}** **{{SDS}}**: _Storage managed by software_.
+  - aplus core 1
+  - aplus core 2
+- **{{Secure Digital}}** **{{SD}}**: _Memory card format_.
+  - aplus core 1
+  - aplus core 2
+- **{{Secure File Transfer Protocol}}** **{{SFTP}}**: _File transfer over SSH_.
+  - aplus core 1
+  - aplus core 2
+- **{{Subscriber Identity Module}}** **{{SIM}}**: _Card storing mobile
+  subscriber info_.
+  - aplus core 1
+  - aplus core 2
+- **{{Service Level Agreement}}** **{{SLA}}**: _Contract defining service
+  standards_.
+  - aplus core 1
+  - aplus core 2
+- **{{Server Message Block}}** **{{SMB}}**: _Network file sharing protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Short Message Service}}** **{{SMS}}**: _Text messaging service_.
+  - aplus core 1
+  - aplus core 2
+- **{{Simple Mail Transfer Protocol}}** **{{SMTP}}**: _Email sending protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Simple Network Management Protocol}}** **{{SNMP}}**: _Network device
+  monitoring_.
+  - aplus core 1
+  - aplus core 2
+- **{{Small Outline Dual In-line Memory Module}}** **{{SODIMM}}**: _Laptop
+  memory form factor_.
+  - aplus core 1
+  - aplus core 2
+- **{{Small Office/Home Office}}** **{{SOHO}}**: _Small business network
+  environment_.
+  - aplus core 1
+  - aplus core 2
+- **{{Standard Operating Procedure}}** **{{SOP}}**: _Step-by-step instructions_.
+  - aplus core 1
+  - aplus core 2
+- **{{Sender Policy Framework}}** **{{SPF}}**: _Email spoofing prevention_.
+  - aplus core 1
+  - aplus core 2
+- **{{Simple Protocol for Independent Computing Environments}}** **{{SPICE}}**:
+  _Virtual desktop protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Structured Query Language}}** **{{SQL}}**: _Database management language_.
+  - aplus core 1
+  - aplus core 2
+- **{{Solid State Drive}}** **{{SSD}}**: _Flash-based storage device_.
+  - aplus core 1
+  - aplus core 2
+- **{{Secure Shell}}** **{{SSH}}**: _Encrypted remote command interface_.
+  - aplus core 1
+  - aplus core 2
+- **{{Service Set Identifier}}** **{{SSID}}**: _Wireless network name_.
+  - aplus core 1
+  - aplus core 2
+- **{{Single Sign-On}}** **{{SSO}}**: _One login for multiple services_.
+  - aplus core 1
+  - aplus core 2
+- **{{Straight Tip}}** **{{ST}}**: _Bayonet fiber optic connector_.
+  - aplus core 1
+  - aplus core 2
+- **{{Software as a Service}}** **{{SaaS}}**: _Cloud-hosted applications_.
+  - aplus core 1
+  - aplus core 2
+- **{{Terminal Access Controller Access-Control System}}** **{{TACACS}}**:
+  _Authentication protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Transmission Control Protocol}}** **{{TCP}}**: _Reliable
+  connection-oriented protocol_.
+  - aplus core 1
+  - aplus core 2
+- **{{Temporal Key Integrity Protocol}}** **{{TKIP}}**: _Legacy WPA encryption_.
+  - aplus core 1
+  - aplus core 2
+- **{{Twisted Nematic}}** **{{TN}}**: _Fast LCD panel type_.
+  - aplus core 1
+  - aplus core 2
+- **{{Time-based One-Time Password}}** **{{TOTP}}**: _Dynamic 2FA code_.
+  - aplus core 1
+  - aplus core 2
+- **{{Trusted Platform Module}}** **{{TPM}}**: _Hardware security chip_.
+  - aplus core 1
+  - aplus core 2
+- **{{Text}}** **{{TXT}}**: _DNS record type_.
+  - aplus core 1
+  - aplus core 2
+
+## UVWXYZ
+
+- **{{User Account Control}}** **{{UAC}}**: _Windows security feature_.
+  - aplus core 1
+  - aplus core 2
+- **{{User Datagram Protocol}}** **{{UDP}}**: _Fast connectionless protocol_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Unified Extensible Firmware Interface}}** **{{UEFI}}**: _Modern BIOS
+  replacement_.
+  - aplus core 1
+  - securityplus
+  - aplus core 2
+- **{{Uninterruptible Power Supply}}** **{{UPS}}**: _Battery backup power_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Universal Plug and Play}}** **{{UPnP}}**: _Automatic device discovery_.
+  - aplus core 1
+  - aplus core 2
+- **{{Universal Serial Bus Type-C}}** **{{USB-C}}**: _Reversible USB connector_.
+  - aplus core 1
+  - aplus core 2
+- **{{Universal Serial Bus}}** **{{USB}}**: _Standard peripheral interface_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Unified Threat Management}}** **{{UTM}}**: _All-in-one security
+  appliance_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+
+- **{{Uniform Resource Locator (URL)}}**: Web _address identifying resources on
+  internet_.
+  - networkplus
+  - securityplus
+- **{{Unshielded Twisted Pair (UTP)}}**: Common _network cabling lacking extra
+  shielding_.
+  - networkplus
+  - securityplus
+
+- **{{User Acceptance Testing (UAT)}}**: Phase _verifying solution meets user
+  requirements_.
+  - securityplus
+- **{{Unmanned Aerial Vehicle (UAV)}}**: Aircraft _operated without a human
+  pilot_.
+  - securityplus
+- **{{User Behavior Analytics (UBA)}}**: Process _detecting anomalies in user
+  activity_.
+  - securityplus
+- **{{Unified Endpoint Management (UEM)}}**: Architecture _managing all endpoint
+  devices centrally_.
+  - securityplus
+- **{{Uniform Resource Identifier (URI)}}**: String _identifying a resource on
+  internet_.
+  - securityplus
+- **{{USB On-The-Go (USB OTG)}}**: Standard _allowing devices to act as hosts_.
+  - securityplus
+
+- **{{Vertical Alignment}}** **{{VA}}**: _High-contrast LCD panel_.
+  - aplus core 1
+  - aplus core 2
+- **{{Virtual Desktop Infrastructure}}** **{{VDI}}**: _Centralized desktop
+  virtualization_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Video Graphics Array}}** **{{VGA}}**: _Legacy analog video standard_.
+  - aplus core 1
+  - aplus core 2
+- **{{Virtual Local Area Network}}** **{{VLAN}}**: _Logical network
+  segmentation_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Virtual Machine}}** **{{VM}}**: _Emulated computer system_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Virtual Network Computing}}** **{{VNC}}**: _Remote desktop sharing
+  system_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Virtual Private Network}}** **{{VPN}}**: _Encrypted network tunnel_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Video Random Access Memory}}** **{{VRAM}}**: _Graphics card memory_.
+  - aplus core 1
+  - aplus core 2
+- **{{Voice over Internet Protocol}}** **{{VoIP}}**: _Voice calls over network_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+
+- **{{Virtual IP (VIP)}}**: IP _shared among multiple network interfaces_.
+  - networkplus
+- **{{Variable Length Subnet Mask (VLSM)}}**: Efficient _subnetting using
+  different mask lengths_.
+  - networkplus
+  - securityplus
+- **{{Virtual Private Cloud (VPC)}}**: Isolated _network environment in public
+  cloud_.
+  - networkplus
+  - securityplus
+- **{{Virtual Routing and Forwarding (VRF)}}**: Running _multiple routing table
+  instances simultaneously_.
+  - networkplus
+- **{{Virtual Router Redundancy Protocol (VRRP)}}**: Standard _protocol for
+  gateway failover protection_.
+  - networkplus
+- **{{VLAN Trunk Protocol (VTP)}}**: Manages _VLAN database propagation across
+  switches_.
+  - networkplus
+- **{{Virtual Extensible LAN (VXLAN)}}**: Encapsulation _protocol for Layer 2
+  overlays_.
+  - networkplus
+
+- **{{Visual Basic (VBA)}}**: Programming _language for Office applications_.
+  - securityplus
+- **{{Virtual Desktop Environment (VDE)}}**: Technology _hosting desktop
+  environment on server_.
+  - securityplus
+- **{{Video Teleconferencing (VTC)}}**: Technology _facilitating video and audio
+  communication_.
+  - securityplus
+
+- **{{Wide Area Network}}** **{{WAN}}**: _Large geographic network_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Wireless Access Point}}** **{{WAP}}**: _Device creating Wi-Fi network_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Wired Equivalent Privacy}}** **{{WEP}}**: _Deprecated wireless security_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Wireless Internet Service Provider}}** **{{WISP}}**: _Internet via
+  wireless link_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{Wireless Local Area Network}}** **{{WLAN}}**: _Local network using radio_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+- **{{Wi-Fi Protected Access}}** **{{WPA}}**: _Wireless security standard_.
+  - aplus core 1
+  - aplus core 2
+  - networkplus
+  - securityplus
+- **{{Wireless Wide Area Network}}** **{{WWAN}}**: _Cellular network data_.
+  - aplus core 1
+  - aplus core 2
+- **{{Windows Remote Management}}** **{{WinRM}}**: _Windows management
+  protocol_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Web Application Firewall (WAF)}}**: Filters _HTTP traffic to protect
+  applications_.
+  - networkplus
+  - securityplus
+- **{{Wi-Fi Protected Setup (WPS)}}**: Simplified _method for connecting
+  wireless devices_.
+  - networkplus
+  - securityplus
+
+- **{{Wireless Intrusion Detection System (WIDS)}}**: System _monitoring
+  wireless spectrum for attacks_.
+  - securityplus
+- **{{Work Order (WO)}}**: Document _authorizing specific work tasks_.
+  - securityplus
+- **{{Wireless TLS (WTLS)}}**: Security _layer for WAP applications_.
+  - securityplus
+
+- **{{Extended Detection and Response}}** **{{XDR}}**: _Cross-platform threat
+  detection_.
+  - aplus core 1
+  - aplus core 2
+  - securityplus
+- **{{XFS}}** **{{XFS}}**: _High-performance 64-bit journaling file system_.
+  - aplus core 1
+  - aplus core 2
+- **{{Cross-Site Scripting}}** **{{XSS}}**: _Injection of malicious scripts_.
+  - aplus core 2
+  - aplus core 1
+  - securityplus
+- **{{Anything as a Service}}** **{{XaaS}}**: _General cloud service model_.
+  - aplus core 1
+  - aplus core 2
+
+- **{{Extensible Markup Language (XML)}}**: Metalanguage _for describing data
+  structure_.
+  - networkplus
+  - securityplus
+- **{{Zero Trust Architecture (ZTA)}}**: Security _model requiring constant
+  verification_.
+  - networkplus
+
+## unsort
+
+- **{{Network as a Service (NaaS)}}**: Cloud _model providing virtualized
+  network infrastructure_.
+  - networkplus
+- **{{Network Access Control (NAC)}}**: System _managing device admission to
+  network_.
+  - networkplus
+- **{{Network-Attached Storage (NAS)}}**: File-level _data storage connected to
+  a network_.
+  - networkplus
+- **{{Network Address Translation (NAT)}}**: Mapping _private IP addresses to
+  public IPs_.
+  - networkplus
+- **{{Non-Disclosure Agreement (NDA)}}**: Legal _contract protecting
+  confidential information_.
+  - networkplus
+- **{{Network Functions Virtualization (NFV)}}**: Virtualizing _network services
+  like firewalls or load balancers_.
+  - networkplus
+- **{{Network Interface Card (NIC)}}**: Hardware _component connecting computer
+  to network_.
+  - networkplus
+- **{{Name Server (NS)}}**: DNS _record identifying authoritative name servers_.
+  - networkplus
+- **{{Network Time Protocol (NTP)}}**: Protocol _for synchronizing clocks over
+  data networks_.
+  - networkplus
+- **{{Network Time Security (NTS)}}**: Secure _extension for NTP using TLS_.
+  - networkplus
+- **{{Out-of-Band (OOB)}}**: Management _access outside the primary data
+  network_.
+  - networkplus
+- **{{Operating System (OS)}}**: System _software managing computer hardware and
+  software_.
+  - networkplus
+- **{{Open Shortest Path First (OSPF)}}**: Link-state _routing protocol for IP
+  networks_.
+  - networkplus
+- **{{Open Systems Interconnection (OSI)}}**: Reference _model for standardized
+  network communication layers_.
+  - networkplus
+- **{{Operational Technology (OT)}}**: Hardware _and software managing
+  industrial equipment_.
+  - networkplus
+- **{{Platform as a Service (PaaS)}}**: Cloud _model providing development and
+  deployment tools_.
+  - networkplus
+- **{{Port Address Translation (PAT)}}**: Mapping _multiple private IPs to one
+  public_.
+  - networkplus
+- **{{Payment Card Industry Data Security Standards (PCI DSS)}}**: Security
+  _standards for credit card data_.
+  - networkplus
+- **{{Power Distribution Unit (PDU)}}**: Device _distributing electrical power
+  to network racks_.
+  - networkplus
+- **{{Public Key Infrastructure (PKI)}}**: Framework _managing digital keys and
+  certificates_.
+  - networkplus
+- **{{Power over Ethernet (PoE)}}**: Delivering _electrical power via Ethernet
+  cabling_.
+  - networkplus
+- **{{Point-to-point Tunneling Protocol (PPTP)}}**: Legacy _protocol for
+  creating VPN tunnels_.
+  - networkplus
+- **{{Pre-shared Key (PSK)}}**: Shared _secret used for wireless
+  authentication_.
+  - networkplus
+- **{{Power Supply Unit (PSU)}}**: Component _converting AC power to DC_.
+  - networkplus
+- **{{Precision Time Protocol (PTP)}}**: Protocol _providing sub-microsecond
+  clock synchronization_.
+  - networkplus
+- **{{Pointer (PTR)}}**: DNS _record mapping IP address to hostname_.
+  - networkplus
+- **{{Quality of Service (QoS)}}**: Prioritizing _network traffic to improve
+  performance_.
+  - networkplus
+- **{{Quad Small Form-factor Pluggable (QSFP)}}**: High-density _transceiver
+  module for data communication_.
+  - networkplus
+- **{{Remote Authentication Dial-in User Service (RADIUS)}}**: Centralized
+  _authentication and authorization for network access_.
+  - networkplus
+- **{{Remote Desktop Protocol (RDP)}}**: Proprietary _protocol for graphical
+  remote access_.
+  - networkplus
+- **{{Radio Frequency Identification (RFID)}}**: Wireless _tracking technology
+  using electromagnetic tags_.
+  - networkplus
+- **{{Routing Information Protocol (RIP)}}**: Distance-vector _routing protocol
+  using hop count_.
+  - networkplus
+- **{{Recovery Point Objective (RPO)}}**: Maximum _acceptable data loss measured
+  in time_.
+  - networkplus
+- **{{Received Signal Strength Indicator (RSSI)}}**: Measure _of power in a
+  received signal_.
+  - networkplus
+- **{{Rapid Spanning Tree Protocol (RSTP)}}**: Faster _converging version of
+  Spanning Tree Protocol_.
+  - networkplus
+- **{{Recovery Time Objective (RTO)}}**: Maximum _acceptable downtime after a
+  disaster_.
+  - networkplus
+- **{{Real-time Transport Protocol (RTP)}}**: Protocol _for delivering audio and
+  video_ data.
+  - networkplus
+- **{{Receiver (RX)}}**: Component _responsible for receiving incoming signals_.
+  - networkplus
+- **{{Software as a Service (SaaS)}}**: Cloud _model providing centrally hosted
+  applications_.
+  - networkplus
+- **{{Security Assertion Markup Language (SAML)}}**: XML _framework for
+  exchanging authentication data_.
+  - networkplus
+- **{{Storage Area Network (SAN)}}**: Network _providing access to consolidated
+  block-level storage_.
+  - networkplus
+- **{{Secure Access Service Edge (SASE)}}**: Converged _network and security
+  services in cloud_.
+  - networkplus
+- **{{Subscriber Connector (SC)}}**: Square-shaped _push-pull fiber optic
+  connector_.
+  - networkplus
+- **{{Supervisory Control and Data Acquisition (SCADA)}}**: System _managing
+  high-level industrial processes_.
+  - networkplus
+- **{{Stream Control Transmission Protocol (SCTP)}}**: Reliability-oriented
+  _transport layer protocol supporting multi-homing_.
+  - networkplus
+- **{{Software-defined Network (SDN)}}**: Managing _networks via software
+  decoupled from hardware_.
+  - networkplus
+- **{{Software-defined Wide Area Network (SD-WAN)}}**: Managing _WAN connections
+  via software control_.
+  - networkplus
+- **{{Small Form-factor Pluggable (SFP)}}**: Compact _transceiver used for data
+  communication_.
+  - networkplus
+- **{{Secure File Transfer Protocol (SFTP)}}**: Secure _FTP extension using SSH
+  encryption_.
+  - networkplus
+- **{{Session Initiation Protocol (SIP)}}**: Protocol _managing multimedia
+  communication sessions_.
+  - networkplus
+- **{{Security Information and Event Management (SIEM)}}**: Real-time _analysis
+  of security-generated alerts_.
+  - networkplus
+- **{{Service-level Agreement (SLA)}}**: Contract _defining expected service
+  levels and standards_.
+  - networkplus
+- **{{Stateless Address Autoconfiguration (SLAAC)}}**: Method _for IPv6 nodes to
+  autoconfigure_.
+  - networkplus
+- **{{Server Message Block (SMB)}}**: Protocol _for shared access to files and
+  printers_.
+  - networkplus
+- **{{Simple Mail Transfer Protocol (SMTP)}}**: Protocol _for sending email
+  across networks_.
+  - networkplus
+- **{{Simple Mail Transfer Protocol Secure (SMTPS)}}**: Secure _SMTP using
+  SSL/TLS encryption_.
+  - networkplus
+- **{{Simple Network Management Protocol (SNMP)}}**: Protocol _for managing and
+  monitoring network devices_.
+  - networkplus
+- **{{Start of Authority (SOA)}}**: DNS _record specifying authoritative
+  information about domain_.
+  - networkplus
+- **{{Switched Port Analyzer (SPAN)}}**: Port _mirroring for monitoring network
+  traffic_.
+  - networkplus
+- **{{Structured Query Language (SQL)}}**: Standard _language for managing
+  relational databases_.
+  - networkplus
+- **{{Security Service Edge (SSE)}}**: Security _subset of SASE architecture_.
+  - networkplus
+- **{{Secure Shell (SSH)}}**: Protocol _for secure remote command-line access_.
+  - networkplus
+- **{{Service Set Identifier (SSID)}}**: Unique _name identifying a wireless
+  network_.
+  - networkplus
+- **{{Secure Sockets Layer (SSL)}}**: Legacy _encryption protocol replaced by
+  TLS_.
+  - networkplus
+- **{{Single Sign-on (SSO)}}**: One _login for multiple independent systems_.
+  - networkplus
+- **{{Straight Tip (ST)}}**: Bayonet-style _fiber optic connector with circular
+  tip_.
+  - networkplus
+- **{{Spanning Tree Protocol (STP)}}**: Prevents _switching loops in Ethernet
+  networks_.
+  - networkplus
+- **{{Switch Virtual Interface (SVI)}}**: Logical _interface on a switch for
+  routing_.
+  - networkplus
+- **{{Terminal Access Controller Access Control System Plus (TACACS+)}}**:
+  Proprietary _centralized authentication and authorization protocol_.
+  - networkplus
+- **{{Transmission Control Protocol (TCP)}}**: Connection-oriented _protocol for
+  reliable data delivery_.
+  - networkplus
+- **{{Trivial File Transfer Protocol (TFTP)}}**: Simple _protocol for basic file
+  transfers_.
+  - networkplus
+- **{{Temporal Key Integrity Protocol (TKIP)}}**: Legacy _encryption used with
+  WPA_.
+  - networkplus
+- **{{Transport Layer Security (TLS)}}**: Modern _standard for encrypting
+  internet communications_.
+  - networkplus
+- **{{Time to Live (TTL)}}**: Field _limiting packet lifespan to prevent loops_.
+  - networkplus
+- **{{Transmitter (TX)}}**: Component _responsible for sending outgoing
+  signals_.
+  - networkplus
+- **{{Text (TXT)}}**: DNS _record for arbitrary text data_.
+  - networkplus
+
+- **{{High Availability (HA)}}**: System design _ensuring continuous operation_.
+  - securityplus
+- **{{Hard Disk Drive (HDD)}}**: Magnetic _storage device using rotating
+  platters_.
+  - securityplus
+- **{{Host-based Intrusion Detection System (HIDS)}}**: System _monitoring host
+  for suspicious activity_.
+  - securityplus
+- **{{Host-based Intrusion Prevention System (HIPS)}}**: System _blocking
+  malicious activity on host_.
+  - securityplus
+- **{{Hashed Message Authentication Code (HMAC)}}**: Message authentication
+  _using hash function and key_.
+  - securityplus
+- **{{HMAC-based One-time Password (HOTP)}}**: Algorithm _generating passwords
+  from hash_.
+  - securityplus
+- **{{Hardware Security Module (HSM)}}**: Physical device _managing digital
+  keys_.
+  - securityplus
+- **{{Hypertext Markup Language (HTML)}}**: Standard markup _language for web
+  pages_.
+  - securityplus
+- **{{Hypertext Transfer Protocol (HTTP)}}**: Protocol for _transmitting
+  hypermedia documents_.
+  - securityplus
+- **{{Hypertext Transfer Protocol Secure (HTTPS)}}**: HTTP _secured via SSL/TLS
+  encryption_.
+  - securityplus
+- **{{Heating, Ventilation Air Conditioning (HVAC)}}**: Systems _regulating
+  environmental conditions_.
+  - securityplus
+- **{{Infrastructure as a Service (IaaS)}}**: Cloud model _providing virtualized
+  computing resources_.
+  - securityplus
+- **{{Infrastructure as Code (IaC)}}**: Managing _infrastructure through
+  machine-readable files_.
+  - securityplus
+- **{{Identity and Access Management (IAM)}}**: Framework _managing digital
+  identities and access_.
+  - securityplus
+- **{{Internet Control Message Protocol (ICMP)}}**: Protocol _sending error
+  messages and operational info_.
+  - securityplus
+- **{{Industrial Control Systems (ICS)}}**: Systems _monitoring and controlling
+  industrial processes_.
+  - securityplus
+- **{{International Data Encryption Algorithm (IDEA)}}**: Symmetric-key _block
+  cipher used in PGP_.
+  - securityplus
+- **{{Intermediate Distribution Frame (IDF)}}**: Cable rack _connecting internal
+  wiring to MDF_.
+  - securityplus
+- **{{Identity Provider (IdP)}}**: System _creating and managing identity
+  information_.
+  - securityplus
+- **{{Intrusion Detection System (IDS)}}**: Device _monitoring network for
+  malicious activity_.
+  - securityplus
+- **{{Institute of Electrical and Electronics Engineers (IEEE)}}**: Organization
+  _developing technical standards_.
+  - securityplus
+- **{{Internet Key Exchange (IKE)}}**: Protocol _setting up IPSec security
+  associations_.
+  - securityplus
+- **{{Instant Messaging (IM)}}**: Real-time _text transmission over internet_.
+  - securityplus
+- **{{Internet Message Access Protocol (IMAP)}}**: Protocol _retrieving email
+  from server_.
+  - securityplus
+- **{{Indicators of Compromise (IoC)}}**: Artifacts _indicating a security
+  breach_.
+  - securityplus
+- **{{Internet of Things (IoT)}}**: Network of _interconnected physical
+  devices_.
+  - securityplus
+- **{{Internet Protocol (IP)}}**: Principal _communications protocol in internet
+  suite_.
+  - securityplus
+- **{{Intrusion Prevention System (IPS)}}**: Device _actively blocking network
+  threats_.
+  - securityplus
+- **{{Internet Protocol Security (IPSec)}}**: Suite _securing IP
+  communications_.
+  - securityplus
+- **{{Incident Response (IR)}}**: Approach _to managing security breach
+  aftermath_.
+  - securityplus
+- **{{Internet Relay Chat (IRC)}}**: Application layer _protocol for text
+  communication_.
+  - securityplus
+- **{{Incident Response Plan (IRP)}}**: Documented _procedures for handling
+  security incidents_.
+  - securityplus
+- **{{International Standards Organization (ISO)}}**: International
+  _standard-setting body_.
+  - securityplus
+- **{{Internet Service Provider (ISP)}}**: Company _providing internet access_.
+  - securityplus
+- **{{Information Systems Security Officer (ISSO)}}**: Role _responsible for
+  system security compliance_.
+  - securityplus
+- **{{Initialization Vector (IV)}}**: Random number _used with key in
+  encryption_.
+  - securityplus
+- **{{Key Distribution Center (KDC)}}**: Trusted server _providing keys in
+  Kerberos_.
+  - securityplus
+- **{{Key Encryption Key (KEK)}}**: Key _used to encrypt other keys_.
+  - securityplus
+- **{{Layer 2 Tunneling Protocol (L2TP)}}**: Tunneling protocol _supporting
+  VPNs_.
+  - securityplus
+- **{{Local Area Network (LAN)}}**: Network _connecting computers in limited
+  area_.
+  - securityplus
+- **{{Lightweight Directory Access Protocol (LDAP)}}**: Protocol _accessing
+  directory information services_.
+  - securityplus
+- **{{Lightweight Extensible Authentication Protocol (LEAP)}}**: Cisco
+  _proprietary wireless authentication protocol_.
+  - securityplus
+- **{{Monitoring as a Service (MaaS)}}**: Outsourced _security monitoring
+  service_.
+  - securityplus
+- **{{Mandatory Access Control (MAC)}}**: Access control _enforced by system
+  policy_.
+  - securityplus
+- **{{Media Access Control (MAC)}}**: Unique _identifier assigned to network
+  interface_.
+  - securityplus
+- **{{Message Authentication Code (MAC)}}**: Code _verifying message integrity
+  and authenticity_.
+  - securityplus
+- **{{Metropolitan Area Network (MAN)}}**: Network _spanning a city or campus_.
+  - securityplus
+- **{{Master Boot Record (MBR)}}**: First sector _of storage device containing
+  boot code_.
+  - securityplus
+- **{{Message Digest 5 (MD5)}}**: Widely used _cryptographic hash function_.
+  - securityplus
+- **{{Main Distribution Frame (MDF)}}**: Primary _hub for network cabling_.
+  - securityplus
+- **{{Mobile Device Management (MDM)}}**: Administration _of mobile devices_.
+  - securityplus
+- **{{Multifactor Authentication (MFA)}}**: Authentication _using two or more
+  factors_.
+  - securityplus
+- **{{Multifunction Device (MFD)}}**: Office machine _combining printing,
+  scanning, copying_.
+  - securityplus
+- **{{Multifunction Printer (MFP)}}**: Printer _with additional capabilities
+  like scanning_.
+  - securityplus
+- **{{Machine Learning (ML)}}**: AI subset _learning from data_.
+  - securityplus
+- **{{Multimedia Message Service (MMS)}}**: Standard _sending multimedia content
+  via mobile_.
+  - securityplus
+- **{{Memorandum of Agreement (MOA)}}**: Document _describing cooperative
+  relationship_.
+  - securityplus
+- **{{Memorandum of Understanding (MOU)}}**: Agreement _expressing convergence
+  of will_.
+  - securityplus
+- **{{Multi-protocol Label Switching (MPLS)}}**: Mechanism _directing data via
+  short path labels_.
+  - securityplus
+- **{{Master Service Agreement (MSA)}}**: Contract _establishing terms for
+  future transactions_.
+  - securityplus
+- **{{Microsoft Challenge Handshake Authentication Protocol (MSCHAP)}}**:
+  Microsoft's _version of CHAP authentication_.
+  - securityplus
+- **{{Managed Service Provider (MSP)}}**: Company _managing IT services for
+  clients_.
+  - securityplus
+- **{{Managed Security Service Provider (MSSP)}}**: Company _managing security
+  services for clients_.
+  - securityplus
+- **{{Mean Time Between Failures (MTBF)}}**: Average _time between system
+  breakdowns_.
+  - securityplus
+- **{{Mean Time to Failure (MTTF)}}**: Expected _time until non-repairable
+  failure_.
+  - securityplus
+- **{{Mean Time to Recover (MTTR)}}**: Average _time to repair a failed
+  component_.
+  - securityplus
+- **{{Maximum Transmission Unit (MTU)}}**: Size of _largest protocol data unit_.
+  - securityplus
+- **{{Mail Exchange (MX)}}**: DNS record _identifying mail servers for domain_.
+  - securityplus
+- **{{Network Access Control (NAC)}}**: Security _enforcing policy on devices
+  accessing network_.
+  - securityplus
+- **{{Network Address Translation (NAT)}}**: Mapping _IP addresses between
+  different networks_.
+  - securityplus
+- **{{Non-Disclosure Agreement (NDA)}}**: Contract _protecting confidential
+  information from disclosure_.
+  - securityplus
+- **{{Near Field Communication (NFC)}}**: Short-range _wireless communication
+  technology_.
+  - securityplus
+- **{{Next-Generation Firewall (NGFW)}}**: Firewall _combining traditional
+  filtering with DPI_.
+  - securityplus
+- **{{Network-based Intrusion Detection System (NIDS)}}**: System _monitoring
+  network traffic for threats_.
+  - securityplus
+- **{{Network-based Intrusion Prevention System (NIPS)}}**: Device _blocking
+  malicious network traffic_.
+  - securityplus
+- **{{National Institute of Standards & Technology (NIST)}}**: US agency
+  _developing technology standards_.
+  - securityplus
+- **{{New Technology File System (NTFS)}}**: Proprietary _file system developed
+  by Microsoft_.
+  - securityplus
+- **{{New Technology LAN Manager (NTLM)}}**: Suite of _Microsoft security
+  protocols_.
+  - securityplus
+- **{{Network Time Protocol (NTP)}}**: Protocol _synchronizing clocks over
+  packet networks_.
+  - securityplus
+- **{{Open Authorization (OAUTH)}}**: Standard _for access delegation_.
+  - securityplus
+- **{{Online Certificate Status Protocol (OCSP)}}**: Protocol _checking digital
+  certificate revocation status_.
+  - securityplus
+- **{{Object Identifier (OID)}}**: Unique _identifier for object in hierarchy_.
+  - securityplus
+- **{{Operating System (OS)}}**: System _software managing computer hardware_.
+  - securityplus
+- **{{Open-source Intelligence (OSINT)}}**: Intelligence _gathered from publicly
+  available sources_.
+  - securityplus
+- **{{Open Shortest Path First (OSPF)}}**: Link-state _routing protocol for IP
+  networks_.
+  - securityplus
+- **{{Operational Technology (OT)}}**: Hardware/software _controlling industrial
+  equipment_.
+  - securityplus
+- **{{Over the Air (OTA)}}**: Wireless _transmission of data or software_.
+  - securityplus
+- **{{Open Vulnerability Assessment Language (OVAL)}}**: Standard _for assessing
+  system security state_.
+  - securityplus
+- **{{Open Worldwide Application Security Project (OWASP)}}**: Community
+  _focused on improving software security_.
+  - securityplus
+- **{{PKCS #12 (P12)}}**: Archive file _format storing cryptography objects_.
+  - securityplus
+- **{{Peer to Peer (P2P)}}**: Decentralized _network architecture sharing
+  resources_.
+  - securityplus
+- **{{Platform as a Service (PaaS)}}**: Cloud _providing development and
+  deployment environments_.
+  - securityplus
+- **{{Proxy Auto Configuration (PAC)}}**: File _defining how browsers choose
+  proxy_.
+  - securityplus
+- **{{Privileged Access Management (PAM)}}**: System _securing elevated access
+  accounts_.
+  - securityplus
+- **{{Pluggable Authentication Modules (PAM)}}**: Mechanism _integrating
+  low-level authentication schemes_.
+  - securityplus
+- **{{Password Authentication Protocol (PAP)}}**: Simple _authentication
+  protocol sending cleartext passwords_.
+  - securityplus
+- **{{Port Address Translation (PAT)}}**: NAT _mapping multiple private IPs to
+  one public_.
+  - securityplus
+- **{{Password-Based Key Derivation Function 2 (PBKDF2)}}**: Function
+  _strengthening passwords against brute force_.
+  - securityplus
+- **{{Private Branch Exchange (PBX)}}**: Telephone _system within an
+  enterprise_.
+  - securityplus
+- **{{Packet Capture (PCAP)}}**: File format _storing captured network traffic_.
+  - securityplus
+- **{{Payment Card Industry Data Security Standard (PCI DSS)}}**: Standard
+  _securing credit card transactions_.
+  - securityplus
+- **{{Power Distribution Unit (PDU)}}**: Device _distributing electric power to
+  racks_.
+  - securityplus
+- **{{Protected Extensible Authentication Protocol (PEAP)}}**: EAP _encapsulated
+  within TLS tunnel_.
+  - securityplus
+- **{{Personal Electronic Device (PED)}}**: Consumer _device capable of
+  communication_.
+  - securityplus
+- **{{Privacy Enhanced Mail (PEM)}}**: File format _storing cryptographic
+  keys/certificates_.
+  - securityplus
+- **{{Perfect Forward Secrecy (PFS)}}**: Property _preventing compromise of past
+  sessions_.
+  - securityplus
+- **{{Pretty Good Privacy (PGP)}}**: Encryption _program providing privacy and
+  authentication_.
+  - securityplus
+- **{{Personal Health Information (PHI)}}**: Data _relating to health status or
+  care_.
+  - securityplus
+- **{{Personally Identifiable Information (PII)}}**: Data _identifying a
+  specific individual_.
+  - securityplus
+- **{{Personal Identity Verification (PIV)}}**: Standard _for federal employee
+  identification_.
+  - securityplus
+- **{{Public Key Cryptography Standards (PKCS)}}**: Standards _for public-key
+  cryptography_.
+  - securityplus
+- **{{Public Key Infrastructure (PKI)}}**: Framework _managing digital keys and
+  certificates_.
+  - securityplus
+- **{{Post Office Protocol (POP)}}**: Protocol _retrieving email from server_.
+  - securityplus
+- **{{Plain Old Telephone Service (POTS)}}**: Traditional _analog voice
+  transmission telephone system_.
+  - securityplus
+- **{{Point-to-Point Protocol (PPP)}}**: Protocol _establishing direct
+  connection between nodes_.
+  - securityplus
+- **{{Point-to-Point Tunneling Protocol (PPTP)}}**: Obsolete _method for
+  implementing VPNs_.
+  - securityplus
+- **{{Pre-Shared Key (PSK)}}**: Secret _shared between parties before
+  communication_.
+  - securityplus
+- **{{Pan-Tilt-Zoom (PTZ)}}**: Camera _capable of remote directional control_.
+  - securityplus
+- **{{Potentially Unwanted Program (PUP)}}**: Software _installed without clear
+  user consent_.
+  - securityplus
+- **{{Recovery Agent (RA)}}**: Entity _authorized to recover encrypted data_.
+  - securityplus
+- **{{Registration Authority (RA)}}**: Entity _verifying identity for
+  certificate issuance_.
+  - securityplus
+- **{{Research and Development in Advanced Communications Technologies in Europe
+  (RACE)}}**: Project _developing digital communication_.
+  - securityplus
+- **{{Rapid Application Development (RAD)}}**: Methodology _prioritizing rapid
+  prototyping_.
+  - securityplus
+- **{{Remote Authentication Dial-in User Service (RADIUS)}}**: Protocol
+  _providing centralized AAA management_.
+  - securityplus
+- **{{Redundant Array of Inexpensive Disks (RAID)}}**: Data storage
+  _virtualization technology_.
+  - securityplus
+- **{{Remote Access Server (RAS)}}**: Server _enabling remote connection to
+  network_.
+  - securityplus
+- **{{Remote Access Trojan (RAT)}}**: Malware _allowing covert remote control_.
+  - securityplus
+- **{{Role-Based Access Control (RBAC)}}**: Access _based on user roles_.
+  - securityplus
+- **{{Rule-Based Access Control (RBAC)}}**: Access _determined by predefined
+  rules_.
+  - securityplus
+- **{{Rivest Cipher Version 4 (RC4)}}**: Legacy _stream cipher (now insecure)_.
+  - securityplus
+- **{{Remote Desktop Protocol (RDP)}}**: Protocol _providing graphical remote
+  access_.
+  - securityplus
+- **{{Radio Frequency Identification (RFID)}}**: Technology _identifying objects
+  via radio waves_.
+  - securityplus
+- **{{RACE Integrity Primitives Evaluation Message Digest (RIPEMD)}}**: Family
+  _of cryptographic hash functions_.
+  - securityplus
+- **{{Return on Investment (ROI)}}**: Metric _evaluating profitability of
+  investment_.
+  - securityplus
+- **{{Recovery Point Objective (RPO)}}**: Maximum _acceptable data loss period_.
+  - securityplus
+- **{{Rivest, Shamir, & Adleman (RSA)}}**: Public-key _cryptosystem for secure
+  transmission_.
+  - securityplus
+- **{{Remotely Triggered Black Hole (RTBH)}}**: Technique _dropping undesirable
+  traffic at edge_.
+  - securityplus
+- **{{Recovery Time Objective (RTO)}}**: Target _time to restore service after
+  failure_.
+  - securityplus
+- **{{Real-Time Operating System (RTOS)}}**: OS _processing data as it comes
+  in_.
+  - securityplus
+- **{{Real-Time Transport Protocol (RTP)}}**: Protocol _delivering audio and
+  video over IP_.
+  - securityplus
+- **{{Secure/Multipurpose Internet Mail Extensions (S/MIME)}}**: Standard _for
+  public key encryption and signing_ of MIME data.
+  - securityplus
+- **{{Software as a Service (SaaS)}}**: Cloud _model hosting applications for
+  customers_.
+  - securityplus
+- **{{Simultaneous Authentication of Equals (SAE)}}**: Key exchange _protocol in
+  WPA3 preventing offline_ attacks.
+  - securityplus
+- **{{Security Assertions Markup Language (SAML)}}**: XML-based _standard for
+  exchanging authentication data_.
+  - securityplus
+- **{{Storage Area Network (SAN)}}**: Dedicated _high-speed network connecting
+  storage devices_.
+  - securityplus
+- **{{Subject Alternative Name (SAN)}}**: Extension _allowing multiple hostnames
+  in SSL_ certificates.
+  - securityplus
+- **{{Secure Access Service Edge (SASE)}}**: Framework _converging networking
+  and security services_.
+  - securityplus
+- **{{Supervisory Control and Data Acquisition (SCADA)}}**: Industrial _control
+  systems monitoring infrastructure_.
+  - securityplus
+- **{{Security Content Automation Protocol (SCAP)}}**: Standard _automating
+  vulnerability management and compliance_.
+  - securityplus
+- **{{Simple Certificate Enrollment Protocol (SCEP)}}**: Protocol _simplifying
+  distribution of digital certificates_.
+  - securityplus
+- **{{Software-Defined Wide Area Network (SD-WAN)}}**: Virtual _WAN architecture
+  allowing diverse transport_ usage.
+  - securityplus
+- **{{Software Development Kit (SDK)}}**: Collection _of tools for building
+  software applications_.
+  - securityplus
+- **{{Software Development Lifecycle (SDLC)}}**: Process _planning, creating,
+  testing, and deploying_ software.
+  - securityplus
+- **{{Software Development Lifecycle Methodology (SDLM)}}**: Framework
+  _structuring steps in software creation_.
+  - securityplus
+- **{{Software-Defined Networking (SDN)}}**: Architecture _separating network
+  control and forwarding_.
+  - securityplus
+- **{{Security-Enhanced Linux (SELinux)}}**: Linux _feature supporting access
+  control policies_.
+  - securityplus
+- **{{Self-Encrypting Drives (SED)}}**: Storage _device encrypting data via
+  hardware_.
+  - securityplus
+- **{{Structured Exception Handler (SEH)}}**: Mechanism _handling both hardware
+  and software exceptions_.
+  - securityplus
+- **{{Secured File Transfer Protocol (SFTP)}}**: Secure _version of FTP using
+  SSH_.
+  - securityplus
+- **{{Secure Hashing Algorithm (SHA)}}**: Family _of cryptographic hash
+  functions_.
+  - securityplus
+- **{{Secure Hypertext Transfer Protocol (SHTTP)}}**: Obsolete _protocol for
+  encrypting web traffic_.
+  - securityplus
+- **{{Security Information and Event Management (SIEM)}}**: Solution
+  _aggregating and analyzing security data_.
+  - securityplus
+- **{{Subscriber Identity Module (SIM)}}**: Smart _card storing subscriber
+  information for mobile_.
+  - securityplus
+- **{{Service-Level Agreement (SLA)}}**: Contract _defining expected service
+  standards_.
+  - securityplus
+- **{{Single Loss Expectancy (SLE)}}**: Monetary _value lost from a single risk_
+  event.
+  - securityplus
+- **{{Server Message Block (SMB)}}**: Protocol _sharing files and printers on
+  networks_.
+  - securityplus
+- **{{Short Message Service (SMS)}}**: Protocol _sending text messages over
+  cellular_ networks.
+  - securityplus
+- **{{Simple Mail Transfer Protocol (SMTP)}}**: Standard _protocol for sending
+  email_.
+  - securityplus
+- **{{Simple Mail Transfer Protocol Secure (SMTPS)}}**: Secure _email
+  transmission using TLS_.
+  - securityplus
+- **{{Simple Network Management Protocol (SNMP)}}**: Protocol _monitoring and
+  managing network devices_.
+  - securityplus
+- **{{Simple Object Access Protocol (SOAP)}}**: Messaging _protocol for
+  exchanging structured information_.
+  - securityplus
+- **{{Security Orchestration, Automation, Response (SOAR)}}**: Stack _automating
+  security operations and incident_ response.
+  - securityplus
+- **{{System on Chip (SoC)}}**: Integrated _circuit containing all computer
+  components_.
+  - securityplus
+- **{{Security Operations Center (SOC)}}**: Facility _housing teams monitoring
+  security posture_.
+  - securityplus
+- **{{Statement of Work (SOW)}}**: Document _defining project scope and
+  deliverables_.
+  - securityplus
+- **{{Sender Policy Framework (SPF)}}**: Email _authentication method detecting
+  forged sender_ addresses.
+  - securityplus
+- **{{Spam over Internet Messaging (SPIM)}}**: Unsolicited _messages sent over
+  instant messaging_.
+  - securityplus
+- **{{Structured Query Language (SQL)}}**: Language _managing data in relational
+  databases_.
+  - securityplus
+- **{{SQL Injection (SQLi)}}**: Attack _inserting malicious code into database_
+  queries.
+  - securityplus
+- **{{Secure Real-Time Protocol (SRTP)}}**: Protocol _providing encryption and
+  authentication for RTP_.
+  - securityplus
+- **{{Solid State Drive (SSD)}}**: Storage _device using flash memory_.
+  - securityplus
+- **{{Secure Shell (SSH)}}**: Protocol _for secure remote login_.
+  - securityplus
+- **{{Secure Sockets Layer (SSL)}}**: Legacy _protocol for establishing
+  encrypted links_.
+  - securityplus
+- **{{Single Sign-On (SSO)}}**: Authentication _enabling one login for multiple_
+  systems.
+  - securityplus
+- **{{Structured Threat Information eXchange (STIX)}}**: Language _describing
+  cyber threat information_.
+  - securityplus
+- **{{Secure Web Gateway (SWG)}}**: Solution _filtering web traffic to block_
+  threats.
+  - securityplus
+- **{{Terminal Access Controller Access Control System (TACACS+)}}**: Protocol
+  _handling remote authentication and services_.
+  - securityplus
+- **{{Trusted Automated eXchange of Indicator Information (TAXII)}}**: Protocol
+  _transporting threat information via HTTPS_.
+  - securityplus
+- **{{Transmission Control Protocol / Internet Protocol (TCP/IP)}}**: Conceptual
+  _model and protocols for internet_.
+  - securityplus
+- **{{Ticket Granting Ticket (TGT)}}**: User _authentication token in Kerberos
+  protocol_.
+  - securityplus
+- **{{Temporal Key Integrity Protocol (TKIP)}}**: Legacy _encryption protocol
+  for wireless networks_.
+  - securityplus
+- **{{Transport Layer Security (TLS)}}**: Cryptographic _protocol securing
+  internet communications_.
+  - securityplus
+- **{{Time-of-Check (TOC)}}**: Moment _system verifies resource access rights_.
+  - securityplus
+- **{{Time-Based One-Time Password (TOTP)}}**: Algorithm _generating passwords
+  using current time_.
+  - securityplus
+- **{{Time-of-Use (TOU)}}**: Moment _system resource is actually utilized_.
+  - securityplus
+- **{{Trusted Platform Module (TPM)}}**: Chip _securing hardware via
+  cryptographic keys_.
+  - securityplus
+- **{{Tactics, Techniques, and Procedures (TTP)}}**: Patterns _of activities
+  associated with threat_ actors.
+  - securityplus
+- **{{Transaction Signature (TSIG)}}**: Mechanism _authenticating DNS updates
+  via shared_ keys.
+  - securityplus

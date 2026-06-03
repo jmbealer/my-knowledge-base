@@ -1,0 +1,778 @@
+                                                                 010-150.exam.42q
+
+Number: 010-150
+Passing Score: 800
+Time Limit: 120 min
+
+
+
+
+                                                            https://www.gratisexam.com/
+
+
+                                                                        010-150
+
+
+
+                                                     Linux Essentials Certificate Exam, version 1.5
+
+
+
+
+Sections
+1. The Linux Community and a Career in Open Source
+2. Finding Your Way on a Linux System
+3. The Power of the Command Line
+4. The Linux Operating System
+5. Security and File Permissions
+
+
+
+
+                                                              https://www.gratisexam.com/
+Exam A
+
+QUESTION 1
+What is the preferred source for the installation of new applications?
+
+A. The vendor's version management system
+B. A CD-ROM disk
+C. The distribution's package repository
+D. The vendor's website
+E. A retail store
+
+Correct Answer: C
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 2
+Which of the following can be used to access the command line?
+
+
+
+
+                                                                   https://www.gratisexam.com/
+
+A. BIOS
+B. Terminal
+C. XWindow
+D. Firefox
+E. Xargs
+
+Correct Answer: B
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+
+                                                                     https://www.gratisexam.com/
+QUESTION 3
+Which Linux distribution is used as a basis for the creation of Ubuntu Linux?
+
+A. Red Hat Linux
+B. Arch Linux
+C. SUSE Linux
+D. Gentoo Linux
+E. Debian Linux
+
+Correct Answer: E
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 4
+Which of the following software packages is an e-mail server?
+
+A. Postfix
+B. Thunderbird
+C. Apache
+D. GIMP
+E. MySQL
+
+Correct Answer: A
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 5
+What does LAMP mean?
+
+A. The Linux Advanced Mode Programming Interface which gives advanced capabilities to application developers.
+B. The bus ID of an attached USB device that emits light.
+
+
+                                                                    https://www.gratisexam.com/
+C. Short for Lightweight Access Management Protocol which synchronizes permissions in a network.
+D. The combination of Linux, Apache, MySQL and PHP or other programming languages.
+E. Short for lamport-clock which is important in distributed network computing.
+
+Correct Answer: D
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 6
+Which of the following answers are true for cloud computing? (Choose TWO correct answers.)
+
+A. Cloud Computing provides new tools to manage IT resources.
+B. From the business perspective, Cloud Computing means outsourcing or centralization of IT operations.
+C. Cloud Computing is the opposite of green IT; i.e. the use of fossil, non-regenerative energy for computing.
+D. Cloud Computing implies sharing all information with everyone else in 'the cloud'.
+
+Correct Answer: AB
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 7
+Which one of the following is true about Open Source software?
+
+
+
+
+                                                                 https://www.gratisexam.com/
+
+A. Open Source software can not be copied for free.
+B. Open Source software is available for commercial use.
+C. The freedom to redistribute copies must include binary or executable forms of the software but not the source code.
+
+
+
+                                                                   https://www.gratisexam.com/
+D. Open Source software is not for sale.
+
+Correct Answer: B
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 8
+Which of the following is a requirement of the GPL license but not the BSD license?
+
+A. Users who modify and distribute the software under the GPL license, must make the modifications they made, available to the recipients under the same
+   license.
+B. The GPL license forbids the removal of copyright and license notices from source code files that are distributed.
+C. The GPL license contains a disclaimer of warranty requiring users not to hold the software authors liable for any damages.
+D. The GPL license requires that any legal disputes be settled with the mediation of the Free Software Foundation.
+
+Correct Answer: A
+Section: The Linux Community and a Career in Open Source
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 9
+Which of the following commands moves the directory ~/summer-vacation and its content to ~/vacation/2011?
+
+A. mv ~/vacation/2011 ~/summer-vacation
+B. move -R ~/summer-vacation ~/vacation/2011
+C. mv /home/summer-vacation /home/vacation/2011
+D. mv ~/summer-vacation ~/vacation/2011
+E. mv -R ~/summer-vacation ~/vacation/2011
+
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+                                                                   https://www.gratisexam.com/
+QUESTION 10
+Which option will cause the echo command NOT to output a trailing newline?
+
+A. -e
+B. -p
+C. -n
+D. -s
+
+Correct Answer: C
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 11
+Which commands provide help for a specific Linux command? (Choose TWO correct answers.)
+
+A. info
+B. man
+C. helpme
+D. ask
+E. whatdoes
+
+Correct Answer: AB
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 12
+SIMULATION
+When typing a long command line at the shell, what single character can be used to split a command across multiple lines?
+
+Correct Answer: \
+Section: Finding Your Way on a Linux System
+
+
+
+                                                                  https://www.gratisexam.com/
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 13
+Which is a suitable command to find the next appearance of the word hidden in a man page being viewed from the command line?
+
+A. find hidden
+B. /? hidden
+C. CTRL-F hidden
+D. /hidden
+
+Correct Answer: D
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 14
+Which command is used to make a shell variable known to subsequently executed programs?
+
+A. export
+B. announce
+C. env
+D. transfer
+E. mv
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 15
+Which command shows if /usr/bin is in the current shell search path?
+
+
+
+
+                                                                  https://www.gratisexam.com/
+A. cat PATH
+B. echo $PATH
+C. echo %PATH
+D. cat $PATH
+E. echo %PATH%
+
+Correct Answer: B
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 16
+Which of the following commands will display a list of all files in the current directory, including those that may be hidden?
+
+A. ls -a
+B. ls --hidden
+C. ls -h
+D. ls –a
+
+Correct Answer: A
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 17
+Which of the following commands increases the number of elements in a directory? (Choose TWO answers)
+
+A. touch newfile
+B. create newfile
+C. ls newfile
+D. rmdir newdirectory
+E. mkdir newdirectory
+
+Correct Answer: AE
+
+
+                                                                      https://www.gratisexam.com/
+Section: Finding Your Way on a Linux System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 18
+How is it possible to determine if an executable file is a shell script which is read by Bash?
+
+
+
+
+                                                                    https://www.gratisexam.com/
+
+A. The r bit is set.
+B. The file must end with .sh.
+C. The first line starts with #!/bin/bash.
+D. /bin/bash has to be run in debug mode.
+E. Scripts are never executable files.
+
+Correct Answer: C
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 19
+Which of the following commands can be used to view a file and do search operations within it while viewing the contents?
+
+A. less
+B. find
+C. grep
+D. report
+E. see
+
+Correct Answer: A
+
+
+
+                                                                      https://www.gratisexam.com/
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 20
+Which function does a shell program serve?
+
+A. It provides a graphical environment.
+B. It is responsible for establishing a connection to another computer.
+C. It receives user commands and executes them.
+D. It is responsible for logging a user into the system.
+
+Correct Answer: C
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 21
+Which of the following commands can be used to extract files from an archive?
+
+A. tar -vf
+B. tar -xvf
+C. tar -evf
+D. tar -e
+E. tar –v
+
+Correct Answer: B
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 22
+Which commands will archive /home and its content to /mnt/backup? (Choose TWO correct answers.)
+
+
+                                                                    https://www.gratisexam.com/
+A. cp -ar /home /mnt/backup
+B. mv /home /mnt/backup
+C. sync -r /home /mnt/backup
+D. tar -cf /mnt/backup/archive.tar /home
+E. copy -r /home /mnt/backup
+
+Correct Answer: AD
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 23
+Why is the file data.txt empty after executing sort data.txt > data.txt?
+
+A. Because, if data.txt is empty now, it must have been empty before.
+B. Because sort cannot sort text files, only binary files.
+C. Because sort detects that both files are the same.
+D. Because the file gets truncated before sort is executed.
+
+Correct Answer: D
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 24
+What keyword is missing from the following segment of the shell script?
+
+  for i in *; _____
+     cat $i
+  done
+
+A. do
+B. then
+C. enod
+
+
+                                                                       https://www.gratisexam.com/
+D. fi
+E. run
+
+Correct Answer: A
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 25
+Which of the following commands will output all of the lines that contain either the string Fred or fred? (Choose TWO correct answers.)
+
+A. grep -v fred data_file
+B. grep '[f]red' data_file
+C. egrep fred data_file
+D. grep '[Ff]red' data_file
+E. grep -i fred data_file
+
+Correct Answer: DE
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 26
+How can the current directory and its subdirectories be searched for the file named MyFile.xml?
+
+A. find . -name MyFile.xml
+B. grep MyFile.xml | find
+C. grep -r MyFile.xml .
+D. less MyFile.xml
+E. search Myfile.xml ./
+
+Correct Answer: A
+Section: The Power of the Command Line
+Explanation
+
+
+
+                                                                   https://www.gratisexam.com/
+Explanation/Reference:
+
+
+QUESTION 27
+Which of the following commands will create an archive file, named backup.tar, containing all the files from the directory /home?
+
+A. tar /home backup.tar
+B. tar -cf /home backup.tar
+C. tar -xf /home backup.tar
+D. tar -xf backup.tar /home
+E. tar -cf backup.tar /home
+
+Correct Answer: E
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 28
+What is the output of the following command?
+
+ for token in a b c; do
+  echo -n ${token};
+ done
+
+A. anbncn
+B. abc
+C. $token$token$token
+D. {a}{b}{c}
+E. a b c
+
+Correct Answer: B
+Section: The Power of the Command Line
+Explanation
+
+Explanation/Reference:
+
+
+
+                                                                    https://www.gratisexam.com/
+QUESTION 29
+Which of the following is a combined audio/video interface for transmission of digital data?
+
+
+
+
+                                                                  https://www.gratisexam.com/
+
+A. ATI
+B. DVD
+C. HDMI
+D. VGA
+E. DVI
+
+Correct Answer: C
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 30
+Which of the following hardware devices links a number of computers together to form an Ethernet LAN?
+
+A. Server
+B. Switch
+C. Connector
+D. Access point
+E. Terminal
+
+Correct Answer: B
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                                    https://www.gratisexam.com/
+QUESTION 31
+What is the number called that is used to identify a process?
+
+A. Proc Num
+B. PIN
+C. Process Entry
+D. PID
+
+Correct Answer: D
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 32
+Which of the following commands are used to view memory usage? (Choose TWO correct answers.)
+
+A. memory
+B. top
+C. ps
+D. free
+E. nice
+
+Correct Answer: BD
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 33
+Identify the proper device for the third partition, on the second hard disk, on the first IDE controller on a PC system.
+
+A. /dev/hdb3
+B. /dev/hd1b3
+C. /dev/hdc1d2p3
+
+
+
+                                                                      https://www.gratisexam.com/
+D. dev/hdc1a3
+E. dev/hdc1b3
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 34
+Where is the BIOS located?
+
+A. RAM
+B. Hard drive
+C. Motherboard
+D. LCD monitor
+
+Correct Answer: C
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 35
+Which network interface always exists in a Linux system?
+
+A. lo
+B. sit0
+C. wlan0
+D. vlan0
+E. eth0
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+                                                           https://www.gratisexam.com/
+QUESTION 36
+Which of the following Ubuntu releases is considered most stable and fit to use for business purposes?
+
+A. LTS
+B. Xubuntu
+C. Ubuntu Vanilla
+D. Kubuntu
+E. Xubuntu Server
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 37
+What is the command that will show system boot time messages?
+
+A. dmesg
+B. echo
+C. lspci
+D. display system boot
+E. messages
+
+Correct Answer: A
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 38
+Which of the following filesystems is most commonly used for Linux distributions?
+
+A. HFS+
+B. ext4
+
+
+                                                                   https://www.gratisexam.com/
+C. FAT32
+D. NTFS
+
+Correct Answer: B
+Section: The Linux Operating System
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 39
+Which of the following files holds the definition of the local user accounts?
+
+A. /etc/secret
+B. /etc/users
+C. /etc/passwd
+D. /etc/id
+E. /etc/home
+
+Correct Answer: C
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 40
+What permissions are set on a file with the command chmod 654 file.txt?
+
+A. drw-r-xr--
+B. d--wxr-x--
+C. --wxr-x--x
+D. -rwxrw---x
+E. -rw-r-xr—
+
+Correct Answer: E
+Section: Security and File Permissions
+Explanation
+
+
+
+                                                                      https://www.gratisexam.com/
+Explanation/Reference:
+
+
+QUESTION 41
+The following line is found in which system file?
+
+  root:x:0:0::/root:/bin/bash
+
+A. /etc/user.conf
+B. /etc/shadow
+C. /etc/passwd
+D. /usr/bin/shadow
+E. /etc/password
+
+Correct Answer: C
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+QUESTION 42
+Which statement about users and user groups is correct?
+
+A. A group can only have one main user.
+B. There can be only one user group on a system.
+C. Users do not have to belong to a user group.
+D. Every user belongs to a least one user group.
+
+Correct Answer: D
+Section: Security and File Permissions
+Explanation
+
+Explanation/Reference:
+
+
+
+
+                                                          https://www.gratisexam.com/
+https://www.gratisexam.com/
+
+
+
+
+ https://www.gratisexam.com/

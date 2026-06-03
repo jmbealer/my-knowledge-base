@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       00c66d29-d8d4-4f98-921c-67847a23938b
+:mtime:    20230730221927 20230730211506 20230730183447
+:ctime:    20230730183249
+:END:
+#+title: Vim Pattern
+
+Patterns and search commands
+
+/N/ */* {pattern}[*/*[offset]]<CR> :: *search* *forward* for the N occurrence of {pattern}.
+/N/ *?*{pattern}[?[offset]]<CR> :: *search* *backward* for the N occurrence of {pattern}.
+/N/ */*<CR>	:: *repeat* last *search*, in the *forward* direction.
+/N/ *?*<CR>	:: *repeat* last *search*, in the *backward* direction.
+/N/ *n* :: *repeat* last *search*.
+/N/ *N*	:: *repeat* last *search*, in *opposite* direction.
+/N/ ***	:: *search* *forward* for the *identifier* under the *cursor*.
+/N/ *#* :: *search* *backward* for the *identifier* under the *cursor*.
+/N/ *g** :: like *"*"*, but also find *partial* matches.
+/N/ *g#* :: like *"#"*, but also find *partial* matches.
+*gd* :: *goto* *local* declaration of *identifier* under the *cursor*.
+*gD* :: *goto* *global* declaration of *identifier* under the *cursor*.
+
+pattern  		Special characters in search patterns
+
+magic :: meaning, nomagic
+
+ordinary atom:
+*^* :: *start* of *line* (at *start* of pattern)
+*\_^* :: *start* of *line* *(used* anywhere)
+$* :: *end* of *line* (at *start* of pattern)
+*\_$* :: *end* of *line* (used *anywhere)*
+.* :: *any* single *character* (*not* an end of line)
+*\_.* :: *any* single *character* *or* end of line
+*\<* :: *start* of *word*
+*\>* :: *end* of *word*
+
+mult:
+*[a-z]* :: *single* *character* from the *range*
+*[^a-z]* :: *single* *character* *not* in the *range*
+
+character classes:
+*\i* :: *identifier* character
+*\I* :: like *"\i",* but *excluding* digits
+*\k* :: *keyword* character
+*\K* :: like *"\k",* but *excluding* digits
+*\f* :: *file* *name* character
+*\F* :: like *"\f",* but *excluding* digits
+*\p* :: *printable* character
+*\P* :: like *"\p",* but *excluding* digits
+*\s* :: *white* *space* character: <Space> and <Tab>
+*\S* :: *non-white* *space* character; *opposite* of \s
+*\d* :: *digit:* [0-9]
+*\D* :: *non-digit:* [^0-9]
+*\x* :: *hex* *digit:* [0-9A-Fa-f]
+*\X* :: *non-hex* digit: [^0-9A-Fa-f]
+*\o* :: *octal* digit: [0-7]
+*\O* :: *non-octal* digit: [^0-7]
+*\w* :: *word* character: [0-9A-Za-z_]
+*\W* :: *non-word* character:	[^0-9A-Za-z_]
+*\h* :: *head* of *word* character:	[A-Za-z_]
+*\H* :: *non-head* of *word* character:	[^A-Za-z_]
+*\a* :: *alphabetic* character:	[A-Za-z]
+*\A* :: *non-alphabetic* character:	[^A-Za-z]
+*\l* :: *lowercase* character: [a-z]
+*\L* :: *non-lowercase* character: [^a-z]
+*\u* :: *uppercase* character: [A-Z]
+*\U* :: *non-uppercase* character: [^A-Z]
+*\_x* :: where *x* is any of the characters above: character class with end-of-line included
+
+
+matches <Esc>	\e	\e
+matches <Tab>	\t	\t
+matches <CR>	\r	\r
+matches <BS>	\b	\b
+
+matches 0 or more of the preceding atom	*	\*
+matches 1 or more of the preceding atom	\+	\+
+matches 0 or 1 of the preceding atom	\=	\=
+matches 2 to 5 of the preceding atom	\{2,5}  \{2,5}
+separates two alternatives	\|	\|
+group a pattern into an atom	\(\)	\(\)
+
+search-offset  		Offsets allowed after search command
+
+    [num]	[num] lines downwards, in column 1
+    +[num]	[num] lines downwards, in column 1
+    -[num]	[num] lines upwards, in column 1
+    e[+num]	[num] characters to the right of the end of the match
+    e[-num]	[num] characters to the left of the end of the match
+    s[+num]	[num] characters to the right of the start of the match
+    s[-num]	[num] characters to the left of the start of the match
+    b[+num]	[num] identical to s[+num] above (mnemonic: begin)
+    b[-num]	[num] identical to s[-num] above (mnemonic: begin)
+    ;{search-command}	execute {search-command} next

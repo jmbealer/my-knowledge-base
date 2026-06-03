@@ -1,0 +1,482 @@
+                              010-160
+Number: 010-160
+Passing Score: 800
+Time Limit: 120 min
+File Version: 1
+                               010-160
+
+
+Exam A
+
+* lpi linux essentials 010-160
+:PROPERTIES:
+:ANKI_DECK: lpi-linux-essentials-010-160-questions-bank
+:ANKI_TAGS: lpi linux essentials 010-160
+:END:
+** Question 1 duplicate
+*** Question
+What are the differences between hard disk drives and solid state disks? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Hard disks have a motor and moving parts, solid state disks do not.
+*** Q_2
+Hard disks can fail due to physical damage, while solid state disks cannot fail.
+*** Q_3
+Solid state disks can store many times as much data as hard disk drives.
+*** Q_4
+/dev/sda is a hard disk device while /dev/ssda is a solid state disk.
+*** Q_5
+Solid state disks provide faster access to stored data than hard disks.
+*** Answers
+1 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: AE
+** Question 2 duplicate
+*** Question
+Reverse DNS assigns hostnames to IP addresses. How is the name of the IP address 198.51.100.165 stored on a DNS server?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+In the A record for 165.100.51.198.ipv4.arpa.
+*** Q_2
+In the PTR record for 165.100.51.198.in-addr.arpa.
+*** Q_3
+In the RNAME record for 198-51-100-165.rev.arpa.
+*** Q_4
+In the ARPA record for 165.100.51.198.rev.
+*** Q_5
+In the REV record for arpa.in-addr.198.51.100.165.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 3 not working
+*** Question
+Which of the following outputs comes from the command free?
+A.
+B.
+C.
+D.
+E.
+*** Answers
+0 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 4
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210416828
+:END:
+*** Question
+Which permissions are set on a regular file once the permissions have been modified with the command chmod 654 file.txt?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+drw-r-xr--
+*** Q_2
+d—wxr-x--
+*** Q_3
+–wxr-x--x
+*** Q_4
+–rwxrw---x
+*** Q_5
+-rw-r-xr--
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 5 duplicate
+*** Question
+What is true about the owner of a file?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Each file is owned by exactly one user and one group.
+*** Q_2
+The owner of a file always has full permissions when accessing the file.
+*** Q_3
+The user owning a file must be a member of the file’s group.
+*** Q_4
+When a user is deleted, all files owned by the user disappear.
+*** Q_5
+The owner of a file cannot be changed once it is assigned to an owner.
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 6
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210656179
+:END:
+*** Question
+Which of the following permissions are set on the /tmp/ directory?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+rwxrwxrwt
+*** Q_2
+------rwX
+*** Q_3
+rwSrw-rw-
+*** Q_4
+rwxrwS---
+*** Q_5
+r-xr-X--t
+*** Answers
+1 0 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: A
+** Question 7
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210658328
+:END:
+*** Question
+Which command adds the new user tux and creates the user’s home directory with default configuration files?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+defaultuser tux
+*** Q_2
+useradd –m tux
+*** Q_3
+usercreate tux
+*** Q_4
+useradd –o default tux
+*** Q_5
+passwd –a tux
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 8 duplicate
+*** Question
+What information is stored in /etc/passwd? (Choose three.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The user’s storage space limit
+*** Q_2
+The numerical user ID
+*** Q_3
+The username
+*** Q_4
+The encrypted password
+*** Q_5
+The user\s default shell
+*** Answers
+0 1 1 1 0
+*** Sources
+*** Extra 1
+Correct Answer: BCD
+** Question 9 duplicate
+*** Question
+Which of the following tar options handle compression? (Choose two.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+-bz
+
+*** Q_2
+-z
+*** Q_3
+-g
+*** Q_4
+-j
+*** Q_5
+-z2
+*** Answers
+0 1 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: BD
+** Question 10
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210664153
+:END:
+*** Question
+Which of the following commands creates an archive file work.tar from the contents of the directory ./work/?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+tar --new work.tar ./work/
+*** Q_2
+tar –cf work.tar ./work/
+*** Q_3
+tar –create work.tgz –content ./work/
+*** Q_4
+tar work.tar < ./work/
+*** Q_5
+tar work > work.tar
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 11 duplicate
+*** Question
+Which of the following keys can be pressed to exit less?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+l
+*** Q_2
+x
+*** Q_3
+e
+*** Q_4
+q
+*** Q_5
+!
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 12
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210944426
+:END:
+*** Question
+A directory contains the following files:
+What would be the output of the following shell script?
+for file in *.txt
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+*.txt
+*** Q_2
+a b
+*** Q_3
+c.cav
+*** Q_4
+a.txt
+*** Q_5
+a. txt
+b. txt
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 13 duplicate
+*** Question
+Which of the following commands will search for the file foo.txt under the directory /home?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+search /home –file foo.txt
+*** Q_2
+search /home foo. txt
+*** Q_3
+find /home – file foo.txt
+*** Q_4
+find /home –name foo.txt
+*** Q_5
+find /home foo.txt
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 14
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210948776
+:END:
+*** Question
+The current directory contains the following file:
+-rw-r—r— 1 root exec 24551 Apr 2 12:36 test.sh
+The file contains a valid shell script, but executing this file using ./test.sh leads to this error:
+bash: ./test.sh: Permission denied
+
+What should be done in order to successfully execute the script?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+The file’s extension should be changed from .sh to .bin.
+*** Q_2
+The execute bit should be set in the file’s permissions.
+*** Q_3
+The user executing the script should be added to the exec group.
+*** Q_4
+The SetUID bit should be set in the file’s permissions
+*** Q_5
+The script should be run using #!./test. sh instead of ./test.sh.
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
+** Question 15
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670210951153
+:END:
+*** Question
+Which of the following programs is a graphical editor for vector graphics?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Python
+*** Q_2
+NGINX
+*** Q_3
+Samba
+*** Q_4
+Inkscape
+*** Q_5
+MySQL
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: D
+** Question 16
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670211162627
+:END:
+*** Question
+Where is the operating system of a Raspberry Pi stored?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+On the master device attached to the Raspberry Pi’s IDE bus.
+*** Q_2
+On a read only partition on the Raspberry Pi’s firmware, next to the BIOS.
+*** Q_3
+On a removable SD card which is put into the Raspberry Pi.
+*** Q_4
+On a Linux extension module connected to the Raspberry Pi’s GPIO pins.
+*** Q_5
+On rewritable flash storage which is built into the Raspberry Pi.
+*** Answers
+0 0 0 1 0
+*** Sources
+*** Extra 1
+Correct Answer: C
+** Question 17
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670211164904
+:END:
+*** Question
+What is defined by a Free Software license?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Details of the technical documentation each contributor has to provide.
+
+*** Q_2
+The programming languages which may be used to extend the licensed program.
+*** Q_3
+A complete list of libraries required to compile the licensed software.
+*** Q_4
+Limits on the purposes for which the licensed software may be used.
+*** Q_5
+Conditions for modifying and distributing the licensed software.
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 18 duplicate
+*** Question
+Which of the following are typical services offered by public cloud providers? (Choose three.)
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+Platform as a Service(PaaS)
+*** Q_2
+Infrastructure as a Service(IaaS)
+*** Q_3
+Internet as a Service(IaaS)
+*** Q_4
+Graphics as a Service (GaaS)
+*** Q_5
+Software as a Service (SaaS)
+*** Answers
+1 1 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: ABE
+** Question 19 duplicate
+*** Question
+Which of the following commands adds the directory /new/dir/ to the PATH environment variable?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+$PATH=/new/dir: $PATH
+*** Q_2
+PATH=/new/dir: PATH
+*** Q_3
+export PATH=/new/dir: PATH
+*** Q_4
+export $PATH=/new/dir: $PATH
+*** Q_5
+export PATH=/new/dir: $PATH
+*** Answers
+0 0 0 0 1
+*** Sources
+*** Extra 1
+Correct Answer: E
+** Question 20
+:PROPERTIES:
+:ANKI_NOTE_TYPE: AllInOne (kprim, mc, sc)
+:ANKI_NOTE_ID: 1670211171778
+:END:
+*** Question
+A directory contains the following three files:
+texts 1.txt
+texts 2.txt
+texts 3.csv
+
+Which command copies the two files ending in .txt to the /tmp/ directory?
+*** Title
+*** QType (0=kprim,1=mc,2=sc)
+2
+*** Q_1
+cp ??.txt /tmp/
+*** Q_2
+cp *.txt /tmp/
+*** Q_3
+cp. \.txt /tmp/
+*** Q_4
+cp ?.txt /tmp/
+*** Q_5
+cp $?.txt /tmp/
+*** Answers
+0 1 0 0 0
+*** Sources
+*** Extra 1
+Correct Answer: B
