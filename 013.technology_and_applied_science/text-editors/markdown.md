@@ -40,6 +40,13 @@ tags:
 lines of text.
 **Paragraphs Best Practices** don't indent paragraphs with spaces or tabs.
 
+### Line Breaks
+
+to line break inside a paragraph add two space followed by enter
+
+the is a line break  
+testing
+
 ### Emphasis
 
  **Emphasis** add emphasis by making text bold or italic.
@@ -61,6 +68,7 @@ lines of text.
 - **Highlight** use two (==)
   - ==Highlights==
   - ==High==lights
+- **Bold and nested italic**: **Bold text and *nested italic* text**
 
 ### Block-quotes
 
