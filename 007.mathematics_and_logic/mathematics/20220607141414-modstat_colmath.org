@@ -1,12 +1,4 @@
-:PROPERTIES:
-:ID:       11525424-8401-4ff2-9bf5-d336f66b5a21
-:mtime:    20230206181319 20220607153744
-:ctime:    20220607141414
-:END:
-#+title: Modern States College Mathematics
-#+date: [2022-06-07 Tue 14:14]
-
-* Algebra and Functions (20%)
+# Algebra and Functions (20%)
 
 Introduction
 
@@ -20,7 +12,7 @@ Introduction
 
 1.5 Growth
 
-* Counting and Probability (10%)
+# Counting and Probability (10%)
 
 2.0 Introduction
 
@@ -28,7 +20,7 @@ Introduction
 
 2.2 Probability
 
-* Data Analysis and Statistics (15%)
+# Data Analysis and Statistics (15%)
 
 Introduction
 
@@ -40,7 +32,7 @@ Introduction
 
 3.4 Bivariate Data
 
-* Financial Mathematics (20%)
+# Financial Mathematics (20%)
 
 Introduction
 
@@ -50,7 +42,7 @@ Introduction
 
 4.3 Present and Future Values
 
-* Geometry (10%)
+# Geometry (10%)
 
 Introduction
 
@@ -62,7 +54,7 @@ Introduction
 
 5.4 Circles
 
-* Logic and Sets (15%)
+# Logic and Sets (15%)
 
 Introduction
 
@@ -70,7 +62,7 @@ Introduction
 
 6.2 Set Theory
 
-* Numbers (10%)
+# Numbers (10%)
 
 Introduction
 

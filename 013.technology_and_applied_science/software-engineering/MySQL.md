@@ -1,0 +1,226 @@
+- Quick Start with MySQL
+    - Installation and Basic Configuration of MySQL
+        - ^^^MySQL, one of the most popular open-source relational database management systems (RDBMS). ^^^
+        - ^^^MySQL is widely used in many database-driven web applications and popular websites. ^^^
+        - check if mysql is install
+        - check the current state of mysql - {{sudo service mysql status}} 
+        - start mysql service - {{sudo service mysql start}} 
+        - access mysql shell as root - {{sudo mysql -u root}} 
+        - ^^^This command uses^^^ `^^^sudo^^^(#3594f7)` ^^^to run with administrative privileges, which is often required for system-level operations. The^^^ `^^^mysql^^^(#3594f7)` ^^^command is used to access the MySQL shell, and the^^^ `^^^-u root^^^(#3594f7)` ^^^flag specifies that you're connecting as the^^^ `^^^root^^^(#3594f7)` ^^^user.^^^
+        - ^^^The^^^ `^^^MariaDB [(none)]>^^^(#3594f7)` ^^^prompt indicates that you're connected to MariaDB (a fork of MySQL) and not currently using any specific database.^^^
+        - ^^^It's important to note that you're seeing MariaDB instead of MySQL. Don't worry - this won't affect your ability to complete this lab or learn MySQL commands. Here's why:^^^
+            1. ^^^MariaDB is a fork of MySQL, created by the original developers of MySQL. It's designed to be a drop-in replacement for MySQL, meaning it's fully compatible with MySQL syntax and operations.^^^
+            2. ^^^MariaDB was created to ensure that a truly open-source version of MySQL would always be available. It maintains high compatibility with MySQL while also offering some unique features and improvements.^^^
+            3. ^^^For the purposes of this lab and most basic to intermediate MySQL operations, you can treat MariaDB exactly as you would MySQL. All the commands we'll use in this lab work identically in both MariaDB and MySQL.^^^
+            4. ^^^MariaDB is often considered more lightweight and faster than MySQL, which makes it an excellent choice for learning environments like this lab. You might notice quicker response times, which can make your learning experience smoother.^^^
+            5. ^^^Many Linux distributions, including some versions of Ubuntu, now use MariaDB as their default MySQL-compatible database system due to its open-source nature and performance benefits.^^^
+        - ^^^So, when you see "MariaDB" in the prompt or output, just remember that for the purposes of this lab, you can think of it as MySQL. All the skills you learn here will be directly applicable to both MariaDB and MySQL in real-world scenarios.^^^
+        - list all the databases - {{show databases;}} 
+        - ^^^Let's break down what these databases are:^^^
+            - `information_schema`^^^: This is a database that provides access to database metadata.^^^ 
+            - `mysql`^^^: This database contains information required by the MySQL server for its operation.^^^ 
+            - `performance_schema`^^^: This database provides a way to inspect internal execution of the server at runtime.^^^ 
+            - `sys`^^^: This database contains a set of objects that help DBAs and developers interpret data collected by the performance_schema.^^^ 
+        - go to mysql database - {{use mysql;}} 
+        - print tables in the database - {{show tables;}} 
+        - show all the columns in foo table - {{describe foo;}} 
+        - show columns bar, baz, qux from foo table - {{select bar, baz, qux from foo;}} 
+        - quit from the mysql shell - {{exit;}} 
+    - Explore MySQL System Tables
+        - Start MySQL and Explore System Tables
+    - Database Management Fundamentals with MySQL
+        - Creating and Listing Databases
+        - Creating Databases Using mysqladmin
+        - Dropping Databases
+        - Selecting and Using Databases
+        - Retrieving MySQL Metadata
+    - Create Your First MySQL Database
+        - Create a Database in MySQL
+    - MySQL Table Structure and Data Types
+        - Understanding MySQL Data Types
+        - Creating Tables with Constraints
+        - Modifying Table Structure
+        - Working with Table Information
+        - Dropping Tables and Cleanup
+    - Create a Product Catalog Table
+        - Create the Books Table
+    - MySQL Basic Data Manipulation
+        - Basic Data Insertion
+        - Basic SELECT Queries
+        - Updating Data
+        - Deleting Data
+    - Record Movie Data Challenge
+        - Insert Movie Records
+    - MySQL Data Filtering and Sorting
+        - Basic Data Filtering with WHERE
+        - Pattern Matching with LIKE
+        - Sorting Results with ORDER BY
+        - Limiting Results with LIMIT
+    - Book Search Challenge
+        - Find Technical Books
+    - MySQL Multi-Table Operations
+        - Understanding Table Relationships
+        - Basic INNER JOIN Operations
+        - LEFT JOIN Operations
+        - Multiple Table Joins
+        - Working with Foreign Key Constraints
+    - Author Book Information Challenge
+        - Create a Combined Author-Book Report
+    - MySQL Data Aggregation and Grouping
+        - Basic Aggregate Functions
+        - Grouping Data with GROUP BY
+        - Filtering Grouped Data with HAVING
+        - Advanced Aggregation Techniques
+    - MySQL Sales Data Analysis Challenge
+        - Calculate Category Performance
+    - MySQL User and Privileges Management
+        - Creating and Managing User Accounts
+        - Assigning Privileges
+    - MySQL Database Access Challenge
+        - Create Marketing Analyst Access
+    - Make Database More Secure
+        - Make Database More Secure
+- Advanced MySQL Practical Labs
+    - MySQL Indexes and Performance OptimizationComing Soon
+        - Create a Single-Column Index on a Table
+        - Analyze a Query Plan Using EXPLAIN
+        - Add a Composite Index for Multi-Column Queries
+        - Remove an Unused Index
+    - 
+    - MySQL Views and Virtual TablesComing Soon
+        - Create a View from a SELECT Query
+        - Update the View Definition with ALTER VIEW
+        - Query Data Using the View
+        - Drop the View to Clean Up
+    - 
+    - MySQL Stored Procedures BasicsComing Soon
+        - Write a Procedure to Insert Data
+        - Call the Procedure with CALL Statement
+        - Add an Input Parameter to the Procedure
+        - Drop the Procedure
+    - 
+    - MySQL Functions and Custom LogicComing Soon
+        - Create a Function to Calculate a Value
+        - Use the Function in a SELECT Query
+        - Test Function Output with Sample Data
+        - Drop the Function
+    - 
+    - MySQL Triggers for AutomationComing Soon
+        - Create a Trigger to Log Inserts
+        - Insert Data to Test the Trigger
+        - Update the Trigger Logic
+        - Drop the Trigger
+    - 
+    - MySQL Transactions and Data IntegrityComing Soon
+        - Start a Transaction with BEGIN
+        - Insert Data and Commit the Transaction
+        - Roll Back a Failed Update
+        - Use a Savepoint for Partial Rollback
+    - 
+    - MySQL Subqueries and Nested OperationsComing Soon
+        - Write a Subquery in a WHERE Clause
+        - Use EXISTS with a Subquery
+        - Test a Correlated Subquery
+        - Compare Subquery Performance
+    - 
+    - MySQL Temporary Tables and Session DataComing Soon
+        - Create a Temporary Table for Session Use
+        - Insert and Query Temporary Table Data
+        - Verify Temporary Table Scope
+        - Drop the Temporary Table
+    - 
+    - MySQL Partitioning for Large DatasetsComing Soon
+        - Partition a Table by Range
+        - Query Data from a Specific Partition
+        - Reorganize Partitions with ALTER TABLE
+        - Check Partition Impact on Query Speed
+    - 
+    - MySQL Full-Text Search CapabilitiesComing Soon
+        - Add a Full-Text Index to a Table
+        - Search with MATCH AGAINST
+        - Use Boolean Mode for Advanced Search
+        - Test Full-Text Query Results
+    - 
+    - MySQL Replication BasicsComing Soon
+        - Configure a Master Server with Binary Logging
+        - Set Up a Slave Server to Replicate Data
+        - Verify Replication with SHOW SLAVE STATUS
+        - Simulate a Replication Error and Fix It
+    - 
+    - MySQL Backup and RecoveryComing Soon
+        - Export a Database with mysqldump
+        - Back Up a Single Table
+        - Restore a Database from a Dump File
+        - Check Restored Data Accuracy
+    - 
+    - MySQL Configuration and TuningComing Soon
+        - View Current Configuration with SHOW VARIABLES
+        - Adjust InnoDB Buffer Pool Size
+        - Monitor Query Performance Post-Tuning
+        - Save Configuration Changes
+    - 
+    - MySQL Security Best PracticesComing Soon
+        - Change the Root User Password
+        - Enable SSL for Secure Connections
+        - Revoke Excess Privileges from a User
+        - Remove Anonymous User Accounts
+    - 
+    - MySQL JSON Data HandlingComing Soon
+        - Insert JSON Data into a Column
+        - Query JSON with JSON_EXTRACT
+        - Update a JSON Field Value
+        - Create an Index on a JSON Property
+    - 
+    - MySQL Window FunctionsComing Soon
+        - Assign Row Numbers with ROW_NUMBER
+        - Compute a Running Total with SUM OVER
+        - Use PARTITION BY for Grouped Calculations
+        - Compare Rows with LAG
+    - 
+    - MySQL Common Table Expressions (CTEs)Coming Soon
+        - Define a Simple CTE with WITH Clause
+        - Write a Recursive CTE for Hierarchical Data
+        - Join a CTE with a Table
+        - Test CTE Query Output
+    - 
+    - MySQL Error Handling and LoggingComing Soon
+        - Enable General Query Logging
+        - Add Error Handling to a Stored Procedure
+        - Raise a Custom Error with SIGNAL
+        - Review Error Log Entries
+    - 
+    - MySQL Event SchedulerComing Soon
+        - Enable the Event Scheduler
+        - Create an Event to Update Data Periodically
+        - Check Event Execution Status
+        - Drop the Event
+    - 
+    - MySQL Import and Export OperationsComing Soon
+        - Import CSV Data with LOAD DATA INFILE
+        - Export a Query Result to CSV
+        - Fix Encoding Issues in Imports
+        - Validate Imported Data
+- Creating Secure MySQL User Accounts
+    - Creating Secure MySQL User AccountsStart Lab
+- Accessing MySQL Database and SQL Querying
+    - Accessing MySQL Database and SQL QueryingStart Lab
+- Comprehensive Challenge of This Section
+    - Comprehensive SQL Query ChallengeStart Lab
+- Creating Stored Procedures for Course Data Retrieval
+    - Creating Stored Procedures for Course Data RetrievalStart Lab
+- Creating and Updating Database Views
+    - Creating and Updating Database ViewsStart Lab
+- Exploring MySQL User Permissions
+    - Exploring MySQL User PermissionsStart Lab
+- Identify MVP Recipient in Game
+    - Identify MVP Recipient in GameStart Lab
+- MySQL Database Management Fundamentals
+    - MySQL Database Management FundamentalsStart Lab
+- Stored Procedure Cursor Database Retrieval
+    - Stored Procedure Cursor Database RetrievalStart Lab
+- Top 5 Countries by Land Area
+    - Top 5 Countries by Land AreaStart Lab
+- Updating Student GPA in MySQL Database
+    - Updating Student GPA in MySQL DatabaseStart Lab
+- Wuxu Reform Duration Calculation
+    - Wuxu Reform Duration Calculation
