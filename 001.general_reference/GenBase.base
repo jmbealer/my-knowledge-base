@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("001.general_reference")
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: View
