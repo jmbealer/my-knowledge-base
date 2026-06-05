@@ -15,6 +15,23 @@ tags:
 
 [Home](../0-home-idx)
 
+## What is Technology?
+Technology is the sum of any techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation.
+
+### Examples of Technology
+- **Information Technology**: The use of systems (especially computers and telecommunications) for storing, retrieving, and sending information.
+- **Engineering**: The use of scientific principles to design and build machines, structures, and other items.
+- **Biotechnology**: The exploitation of biological processes for industrial and other purposes.
+- **Nanotechnology**: The branch of technology that deals with dimensions and tolerances of less than 100 nanometers.
+
+## What is Applied Science?
+Applied science is the use of the scientific method and knowledge obtained via conclusions from the method to attain practical goals. It includes a broad range of disciplines such as engineering and medicine.
+
+### Examples of Applied Science
+- **Computer Science**: The study of computation, automation, and information.
+- **Medicine**: The science and practice of establishing the diagnosis, prognosis, treatment, and prevention of disease.
+- **Material Science**: The discovery and design of new materials, with an emphasis on solids.
+
 [Programming Index](00-programming-idx.md)
 [Python Index](00-python-idx.md)
 reference
