@@ -17,4 +17,5 @@ what is history?
 
 what is an event?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[005-his/README.md|README]]

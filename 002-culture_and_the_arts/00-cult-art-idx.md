@@ -17,4 +17,6 @@ What is culture?
 
 What is the arts?
 
-[Home](../0-home-idx)
+
+- [[../0-home-idx.md|Home Index]]
+- [[002-culture_and_the_arts/README.md|README]]

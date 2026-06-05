@@ -34,9 +34,6 @@ Guide Posts:
 ---
 
 - [[README]]
-- [[resume]]
-- [[work-on]]
-- [[about_me]]
 
 date +"%F" - prints the date in the format YYYY-MM-DD
 

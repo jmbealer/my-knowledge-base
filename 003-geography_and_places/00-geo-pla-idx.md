@@ -14,4 +14,5 @@ what is geography?
 
 what is places?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[003-geography_and_places/README.md|README]]

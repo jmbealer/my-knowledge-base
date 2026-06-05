@@ -14,4 +14,6 @@ tags:
 
 What is general reference?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[001-general_reference/README.md|README]]
+

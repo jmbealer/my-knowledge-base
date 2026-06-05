@@ -17,5 +17,5 @@ What is health?
 
 What is fitness?
 
-
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[004-health_and_fitness/README.md|README]]
