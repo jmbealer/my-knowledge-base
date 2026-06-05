@@ -16,4 +16,5 @@ tags:
 What is society?
 what is social science?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[013-technology_and_applied_science/README.md|README]]

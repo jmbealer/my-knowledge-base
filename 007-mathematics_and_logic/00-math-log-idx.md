@@ -17,4 +17,5 @@ What is mathematics?
 
 what is logic?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[007-mathematics_and_logic/README.md|README]]

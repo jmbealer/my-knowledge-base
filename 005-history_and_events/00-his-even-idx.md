@@ -18,4 +18,4 @@ what is history?
 what is an event?
 
 - [[../0-home-idx.md|Home Index]]
-- [[005-his/README.md|README]]
+- [[005-history_and_events/README.md|README]]

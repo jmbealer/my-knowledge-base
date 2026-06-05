@@ -16,4 +16,5 @@ tags:
 what is Philosophy?
 what is Thinking?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[010-phiosophy_and_thinking/README.md|README]]

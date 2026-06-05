@@ -14,4 +14,5 @@ tags:
 
 what is human activities?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[006-human_activities/README.md|README]]

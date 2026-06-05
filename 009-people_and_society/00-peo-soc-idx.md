@@ -17,4 +17,5 @@ what is people? lol
 
 what is society?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[009-people_and_society/README.md|README]]

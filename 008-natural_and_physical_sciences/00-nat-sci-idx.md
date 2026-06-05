@@ -17,4 +17,5 @@ what is natural science?
 what is physical science?
 what is the difference between natural and physical sciences?
 
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[008-natural_and_physical_sciences/README.md|README]]

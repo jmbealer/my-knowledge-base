@@ -17,5 +17,5 @@ what is religion?
 
 what is belief system?
 
-
-[Home](../0-home-idx)
+- [[../0-home-idx.md|Home Index]]
+- [[011-religion_and_belief_systems/README.md|README]]
