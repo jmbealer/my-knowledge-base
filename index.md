@@ -15,7 +15,13 @@ To the start of my knowledge.
 
 Guide Posts:
 
-- [[_gen-refer|General Reference]]
+- [General Reference](./001-general_reference/00-gen-refer.md)
+- [Culture & the Arts](./001-general_reference/00-gen-refer.md)
+- [General Reference](./001-general_reference/00-gen-refer.md)
+- [General Reference](./001-general_reference/00-gen-refer.md)
+- [General Reference](./001-general_reference/00-gen-refer.md)
+- [General Reference](./001-general_reference/00-gen-refer.md)
+- [General Reference](./001-general_reference/00-gen-refer.md)
 
 - [[_cult-art|Culture & the Arts]]
 - [[_geo-pla|Geography & Places]]
