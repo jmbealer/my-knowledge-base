@@ -15,26 +15,19 @@ To the start of my knowledge.
 
 Guide Posts:
 
-- [General Reference](./001-general_reference/00-gen-refer.md)
-- [Culture & the Arts](./001-general_reference/00-gen-refer.md)
-- [General Reference](./001-general_reference/00-gen-refer.md)
-- [General Reference](./001-general_reference/00-gen-refer.md)
-- [General Reference](./001-general_reference/00-gen-refer.md)
-- [General Reference](./001-general_reference/00-gen-refer.md)
-- [General Reference](./001-general_reference/00-gen-refer.md)
-
-- [[_cult-art|Culture & the Arts]]
-- [[_geo-pla|Geography & Places]]
-- [[_heal-fit|Health & Fitness]]
-- [[_his-even|History & Events]]
-- [[_human-act|Human Activities]]
-- [[_math-log|Mathematics & Logic]]
-- [[_nat-sci|Natural Sciences]]
-- [[_peo-soc|People & Society]]
-- [[_phi-thi|Philosophy & Thinking]]
-- [[_rel-bel|Religion & Belief]]
-- [[_soc-ssci|Society & Social Sciences]]
-- [[_tech-app|Technology & Applied Sciences]]
+- [General Reference](./001-general_reference/00-gen-refer-idx.md)
+[Culture & the Arts](002-culture_and_the_arts/00-cult-art-idx.md)
+[Geography & Places](003-geography_and_places/00-geo-pla-idx.md)
+[Health & Fitness](004-health_and_fitness/00-heal-fit-idx.md)
+[History & Events](005-history_and_events/00-his-even-idx.md)
+[Human Activities](006-human_activities/00-human-act-idx.md)
+[Mathematics & Logic](007-mathematics_and_logic/00-math-log-idx.md)
+[Natural Sciences](008-natural_and_physical_sciences/00-nat-sci-idx.md)
+[People & Society](009-people_and_society/00-peo-soc-idx.md)
+[Philosophy & Thinking](010-philosophy_and_thinking/00-phi-thi-idx.md)
+[Religion & Belief](011-religion_and_belief_systems/00-rel-bel-idx.md)
+[Society & Social Sciences](012-society_and_social_sciences/00-soc-ssci-idx.md)
+[Technology & Applied Sciences](013-technology_and_applied_science/00-computing-idx.md)
 
 ---
 
