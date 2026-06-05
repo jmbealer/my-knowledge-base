@@ -29,7 +29,7 @@ Guide Posts:
 [Philosophy & Thinking](010-philosophy_and_thinking/00-phi-thi-idx.md)
 [Religion & Belief](011-religion_and_belief_systems/00-rel-bel-idx.md)
 [Society & Social Sciences](012-society_and_social_sciences/00-soc-ssci-idx.md)
-[Technology & Applied Sciences](013-technology_and_applied_science/00-computing-idx.md)
+[Technology & Applied Sciences](00-tech-applied-idx.md)
 
 ---
 

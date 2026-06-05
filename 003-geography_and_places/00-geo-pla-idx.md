@@ -13,3 +13,5 @@ tags:
 what is geography?
 
 what is places?
+
+[Home](../0-home-idx)

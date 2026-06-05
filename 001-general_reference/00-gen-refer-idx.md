@@ -13,3 +13,5 @@ tags:
 # General Reference
 
 What is general reference?
+
+[Home](../0-home-idx)
