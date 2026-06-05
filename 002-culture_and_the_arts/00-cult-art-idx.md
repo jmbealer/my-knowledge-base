@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - culture-arts
+  - culture
+  - theArts
 ---
 # Culture and the Arts
 

@@ -9,6 +9,7 @@ aliases:
 tags:
   - index
   - mathematics
+  - logic
 ---
 # Mathematics and Logic
 

@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - philosophy-n-thinking
+  - philosophy
+  - thinking
 ---
 # Philosophy and Thinking
 

@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - natural-n-physical-sciences
+  - natural-sciences
+  - physical-sciences
 ---
 # Natural and Physical Sciences
 

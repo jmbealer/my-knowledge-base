@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - society-n-social-sciences
+  - society
+  - social-sciences
 ---
 # Society and Social Sciences
 

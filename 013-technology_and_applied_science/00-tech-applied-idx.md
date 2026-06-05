@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - technology-n-applied-science
+  - technology
+  - applied-science
 ---
 # Computing Index
 

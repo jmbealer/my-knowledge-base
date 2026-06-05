@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - people-n-society
+  - people
+  - society
 ---
 # People and Society
 

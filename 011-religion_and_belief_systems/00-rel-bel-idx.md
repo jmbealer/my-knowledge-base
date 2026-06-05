@@ -8,7 +8,8 @@ description:
 aliases:
 tags:
   - index
-  - religion-n-belief-systems
+  - religion
+  - belief-systems
 ---
 # Religion and Belief Systems
 
