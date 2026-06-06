@@ -1,8 +1,8 @@
 ---
 title: General Reference
 author: Justin Bealer
-date_created: 2024-09-17, 10-28-55
-date_modified: 2024-09-17, 11-00-54
+date created: Friday, June 5th 2026, 10:30:28 am
+date modified: Saturday, June 6th 2026, 2:16:42 pm
 reference:
 description:
 aliases:
