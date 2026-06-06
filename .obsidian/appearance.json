@@ -1,10 +1,12 @@
 {
   "accentColor": "",
   "theme": "obsidian",
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "Obsidianite",
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
   "textFontFamily": "JetBrainsMono Nerd Font",
-  "enabledCssSnippets": [],
+  "enabledCssSnippets": [
+    "colored-sidebar-items"
+  ],
   "baseFontSize": 14,
   "showRibbon": true,
   "showViewHeader": false,
