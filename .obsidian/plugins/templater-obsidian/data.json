@@ -17,6 +17,58 @@
     {
       "folder": "/",
       "template": "999-assets/templates/starter.md"
+    },
+    {
+      "folder": "",
+      "template": "999-assets/templates/gen-refer.md"
+    },
+    {
+      "folder": "",
+      "template": "999-assets/templates/cult-art.md"
+    },
+    {
+      "folder": "003-geography_and_places",
+      "template": "999-assets/templates/geo-pla.md"
+    },
+    {
+      "folder": "",
+      "template": "999-assets/templates/heal-fit.md"
+    },
+    {
+      "folder": "005-history_and_events",
+      "template": "999-assets/templates/his-even.md"
+    },
+    {
+      "folder": "006-human_activities",
+      "template": "999-assets/templates/human-act.md"
+    },
+    {
+      "folder": "007-mathematics_and_logic",
+      "template": "999-assets/templates/math-log.md"
+    },
+    {
+      "folder": "008-natural_and_physical_sciences",
+      "template": "999-assets/templates/rel-bel.md"
+    },
+    {
+      "folder": "009-people_and_society",
+      "template": "999-assets/templates/heal-fit.md"
+    },
+    {
+      "folder": "",
+      "template": ""
+    },
+    {
+      "folder": "",
+      "template": ""
+    },
+    {
+      "folder": "",
+      "template": ""
+    },
+    {
+      "folder": "",
+      "template": ""
     }
   ],
   "enable_file_templates": false,
@@ -37,7 +89,10 @@
   "intellisense_render": 1,
   "ignore_folders_on_creation": [
     {
-      "folder": ""
+      "folder": "999-assets/templates"
+    },
+    {
+      "folder": "999-assets/ai"
     }
   ],
   "enable_ribbon_icon": true
