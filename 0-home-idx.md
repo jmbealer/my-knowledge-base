@@ -33,6 +33,8 @@ Guide Posts:
 
 ---
 
+![[home.base]]
+
 - [[README]]
 
 date +"%F" - prints the date in the format YYYY-MM-DD

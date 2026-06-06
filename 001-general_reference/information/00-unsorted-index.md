@@ -34,7 +34,7 @@ process goals; how you played
 [Youtube Playlist](Youtube-Playlist.md)
 [Youtube Bookmarks](Youtube-Bookmarks.md)
 [Daily Routine](Daily-Routine.md)
-[test](test)
+[test](999-assets/templates/test.md)
 Knowledge
 Projects
 Tasks

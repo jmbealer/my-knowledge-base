@@ -9,7 +9,7 @@
 [Natural Numbers](Natural-Numbers.md)
 [Mathematics](Mathematics.md)
 [Branches of Mathematics](Branches-of-Mathematics.md)
-[test](test)
+[test](007-mathematics_and_logic/mathematics/test.md)
 A number is an idea related to counting
 A numeral is a symbol used to represent a number.
 distribute property when multiplying 
