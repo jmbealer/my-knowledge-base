@@ -3,9 +3,7 @@ title: General Reference
 author: Justin Bealer
 date created: Friday, June 5th 2026, 10:30:28 am
 date modified: Saturday, June 6th 2026, 2:16:42 pm
-reference:
 description:
-aliases:
 tags:
   - index
   - general-reference
