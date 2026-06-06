@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "009-people_and_society"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description

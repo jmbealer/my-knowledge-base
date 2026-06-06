@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "011-religion_and_belief_systems"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description

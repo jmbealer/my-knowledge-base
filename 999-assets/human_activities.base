@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "006-human_activities"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description

@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "012-society_and_social_sciences"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description

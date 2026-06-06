@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "013-technology_and_applied_science"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description

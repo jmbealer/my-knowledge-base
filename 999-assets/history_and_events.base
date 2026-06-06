@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.folder == "005-history_and_events"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - date modified
+      - tags
+      - description
