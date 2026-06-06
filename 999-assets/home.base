@@ -1,6 +1,19 @@
 filters:
   and:
     - file.folder == "/"
+    - file.folder == "/001-general_reference"
+    - file.folder == "/002-culture_and_the_arts"
+    - file.folder == "/003-geography_and_places"
+    - file.folder == "/004-health_and_fitness"
+    - file.folder == "/005-history_and_events"
+    - file.folder == "/006-human_activities"
+    - file.folder == "/007-mathematics_and_logic"
+    - file.folder == "/008-natural_and_physical_sciences"
+    - file.folder == "/009-people_and_society"
+    - file.folder == "/010-philosophy_and_thinking"
+    - file.folder == "/011-religion_and_belief_systems"
+    - file.folder == "/012-society_and_social_sciences"
+    - file.folder == "/013-technology_and_applied_science"
 views:
   - type: table
     name: Table
