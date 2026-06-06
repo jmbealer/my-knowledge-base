@@ -1,0 +1,427 @@
+- Courses
+    - Professor Messer
+    - CompTIA Network+ N10-009 Full Course, Labs, Course Notes
+        - Andrew Ramdayal
+    - CompTIA Network+ (N10-009) Full Course & Practice Exam
+        - Jason Dion
+    - TOTAL: CompTIA Network+ (N10-009) + Practice Exam
+        - Total Seminars
+- **EXAM CODE N10-008 & N10-009** 
+- CompTIA Network+ validates the core skills necessary to establish, maintain, troubleshoot and secure networks in any environment, preparing you for a rewarding career in networking and cybersecurity.
+- **Exam Codes**
+    - **N10-008**
+    - **N10-009**
+- **Launch Date**
+    - September 15, 2021
+    - June 20, 2024
+- **Exam Description**
+    - The CompTIA Network+ certification verifies that the successful candidate has the knowledge and skills required to:
+        - Establish network connectivity by deploying wired and wireless devices.
+        - Understand and maintain network documentation.
+        - Understand the purpose of network services.
+        - Understand basic datacenter, cloud and virtual networking concepts.
+        - Monitor network activity, identifying performance and availability issues.
+        - Implement network hardening techniques.
+        - Manage, configure, and troubleshoot network infrastructure.
+    - 
+- **Number of Questions**
+    - Maximum of 90 questions
+- **Type of Questions**
+    - Multiple choice and [performance-based](https://www.comptia.org/testing/testing-options/about-comptia-performance-exams/performance-based-questions-explained)
+- **Length of Test**
+    - 90 Minutes
+- **Passing Score**
+    - 720 (on a scale of 100-900)
+- **Recommended Experience**
+    - CompTIA A+ certification and a minimum of 9-12 months of hands-on experience working in a junior network administrator/network support technician job role.
+- **Languages**
+    - English, German, Portuguese and Spanish
+    - English, Japanese, German, and Spanish with Portuguese to follow in 2025
+- **Retirement**
+    - December 20, 2024
+    - Generally three years after launch
+- **DoD 8140 Approved Work Roles**
+    - Technical Support Specialist, Network Operations Specialist, System Administrator | For more information, [click here](https://www.comptia.org/content/tools/comptia-and-dodm-8140).
+- ffdadd
+    - CompTIA Network+ N10-009 Acronym List
+    - The following is a list of acronyms that appear on the CompTIA Network+
+    - N10-009 exam. Candidates are encouraged to review the complete
+    - list and attain a working knowledge of all listed acronyms as part of a
+    - comprehensive exam preparation program.
+    - Acronym - Spelled Out
+        - A
+        - Address
+        - ACL
+        - Access Control List
+        - AH
+        - Authentication Header
+        - AP
+        - Access Point
+        - API
+        - Application Programming Interface
+        - APIPA
+        - Automatic Private Internet Protocol Addressing
+        - ARP
+        - Address Resolution Protocol
+        - AUP
+        - Acceptable Use Policy
+        - BGP
+        - Border Gateway Protocol
+        - BNC
+        - Bayonet Neill–Concelman
+        - BSSID
+        - Basic Service Set Identifier
+        - BYOD
+        - Bring Your Own Device
+        - CAM
+        - Content-addressable Memory
+        - CDN
+        - Content Delivery Network
+        - CDP
+        - Cisco Discovery Protocol
+        - CIA
+        - Confidentiality, Integrity, and Availability
+        - CIDR
+        - Classless Inter-domain Routing
+        - CLI
+        - Command-line Interface
+        - CNAME
+        - Canonical Name
+        - CPU
+        - Central Processing Unit
+        - CRC
+        - Cyclic Redundancy Check
+        - DAC
+        - Direct Attach Copper
+        - DAS
+        - Direct-attached Storage
+        - DCI
+        - Data Center Interconnect
+        - DDoS
+        - Distributed Denial-of-service
+        - DHCP
+        - Dynamic Host Configuration Protocol
+        - DLP
+        - Data Loss Prevention
+        - DNS
+        - Domain Name System
+        - DNSSEC
+        - Domain Name System Security Extensions
+        - DoH
+        - DNS over Hypertext Transfer Protocol Secure
+        - DoS
+        - Denial-of-service
+        - DoT
+        - DNS over Transport Layer Security
+        - DR
+        - Disaster Recovery
+        - EAPoL
+        - Extensible Authentication Protocol over LAN
+        - EIGRP
+        - Enhanced Interior Gateway Routing Protocol
+        - EOL
+        - End-of-life
+        - EOS
+        - End-of-support
+        - ESP
+        - Encapsulating Security Payload
+        - ESSID
+        - Extended Service Set Identifier
+        - EULA
+        - End User License Agreement
+        - FC
+        - Fibre Channel
+        - FHRP
+        - First Hop Redundancy Protocol
+        - FTP
+        - File Transfer Protocol
+        - GDPR
+        - General Data Protection Regulation
+        - GRE
+        - Generic Routing Encapsulation
+        - GUI
+        - Graphical User Interface
+        - HTTP
+        - Hypertext Transfer Protocol
+        - HTTPS
+        - Hypertext Transfer Protocol Secure
+        - IaaS
+        - Infrastructure as a Service
+        - IaC
+        - Infrastructure as Code
+        - IAM
+        - Identity and Access Management
+        - ICMP
+        - Internet Control Message Protocol
+        - ICS
+        - Industrial Control System
+        - IDF
+        - Intermediate Distribution Frame
+        - IDS
+        - Intrusion Detection System
+        - IoT
+        - Internet of Things
+        - IIoT
+        - Industrial Internet of Things
+        - IKE
+        - Internet Key Exchange
+        - IP
+        - Internet Protocol
+        - IPAM
+        - Internet Protocol Address Management
+        - IPS
+        - Intrusion Prevention System
+        - IPSec
+        - Internet Protocol Security
+        - IS-IS
+        - Intermediate System to Intermediate System
+        - LACP
+        - Link Aggregation Control Protocol
+        - LAN
+        - Local Area Network
+        - LC
+        - Local Connector
+        - LDAP
+        - Lightweight Directory Access Protocol
+        - LDAPS
+        - Lightweight Directory Access Protocol over SSL
+        - LLDP
+        - Link Layer Discovery Protocol
+        - MAC
+        - Media Access Control
+        - MDF
+        - Main Distribution Frame
+        - MDIX
+        - Medium Dependent Interface Crossover
+        - MFA
+        - Multifactor Authentication
+        - MIB
+        - Management Information Base
+        - MPO
+        - Multifiber Push On
+        - MTBF
+        - Mean Time Between Failure
+        - MTTR
+        - Mean Time To Repair
+        - MTU
+        - Maximum Transmission Unit
+        - MX
+        - Mail Exchange
+        - NAC
+        - Network Access Control
+        - NAS
+        - Network-attached Storage
+        - NAT
+        - Network Address Translation
+        - NFV
+        - Network Functions Virtualization
+        - NIC
+        - Network Interface Cards
+        - NS
+        - Name Server
+        - NTP
+        - Network Time Protocol
+        - NTS
+        - Network Time Security
+        - OS
+        - Operating System
+        - OSPF
+        - Open Shortest Path First
+        - OSI
+        - Open Systems Interconnection
+        - OT
+        - Operational Technology
+        - PaaS
+        - Platform as a Service
+        - PAT
+        - Port Address Translation
+        - PCI DSS
+        - Payment Card Industry Data Security Standards
+        - PDU
+        - Power Distribution Unit
+        - PKI
+        - Public Key Infrastructure
+        - PoE
+        - Power over Ethernet
+        - PSK
+        - Pre-shared Key
+        - PTP
+        - Precision Time Protocol
+        - PTR
+        - Pointer
+        - QoS
+        - Quality of Service
+        - QSFP
+        - Quad Small Form-factor Pluggable
+        - RADIUS
+        - Remote Authentication Dial-in User Service
+        - RDP
+        - Remote Desktop Protocol
+        - RFID
+        - Radio Frequency Identifier
+        - RIP
+        - Routing Information Protocol
+        - RJ
+        - Registered Jack
+        - RPO
+        - Recovery Point Objective
+        - RSTP
+        - Rapid Spanning Tree Protocol
+        - RTO
+        - Recovery Time Objective
+        - RX
+        - Receiver
+        - SaaS
+        - Software as a Service
+        - SAML
+        - Security Assertion Markup Language
+        - SAN
+        - Storage Area Network
+        - SASE
+        - Secure Access Service Edge
+        - SC
+        - Subscriber Connector
+        - SCADA
+        - Supervisory Control and Data Acquisition
+        - SDN
+        - Software-defined Network
+        - SD-WAN
+        - Software-defined Wide Area Network
+        - SFP
+        - Small Form-factor Pluggable
+        - SFTP
+        - Secure File Transfer Protocol
+        - SIP
+        - Session Initiation Protocol
+        - SIEM
+        - Security Information and Event Management
+        - SLA
+        - Service-level Agreement
+        - SLAAC
+        - Stateless Address Autoconfiguration
+        - SMB
+        - Server Message Block
+        - SMTP
+        - Simple Mail Transfer Protocol
+        - SMTPS
+        - Simple Mail Transfer Protocol Secure
+        - SNMP
+        - Simple Network Management Protocol
+        - SOA
+        - Start of Authority
+        - SQL
+        - Structured Query Language
+        - SSE
+        - Security Service Edge
+        - SSH
+        - Secure Shell
+        - SSID
+        - Service Set Identifier
+        - SSL
+        - Secure Socket Layer
+        - SSO
+        - Single Sign-on
+        - ST
+        - Straight Tip
+        - STP
+        - Shielded Twisted Pair
+        - SVI
+        - Switch Virtual Interface
+        - TACAS+
+        - Terminal Access Controller Access Control System Plus
+        - TCP
+        - Transmission Control Protocol
+        - TFTP
+        - Trivial File Transfer Protocol
+        - TTL
+        - Time to Live
+        - TX
+        - Transmitter
+        - TXT
+        - Text
+        - UDP
+        - User Datagram Protocol
+        - UPS
+        - Uninterruptible Power Supply
+        - URL
+        - Uniform Resource Locator
+        - USB
+        - Universal Serial Bus
+        - UTM
+        - Unified Threat Management
+        - UTP
+        - Unshielded Twisted Pair
+        - VIP
+        - Virtual IP
+        - VLAN
+        - Virtual Local Area Network
+        - VLSM
+        - Variable Length Subnet Mask
+        - VoIP
+        - Voice over IP
+        - VPC
+        - Virtual Private Cloud
+        - VPN
+        - Virtual Private Network
+        - WAN
+        - Wide Area Network
+        - WPA
+        - Wi-Fi Protected Access
+        - WPS
+        - Wi-Fi Protected Setup
+        - VXLAN
+        - Virtual Extensible LAN
+        - ZTA
+        - Zero Trust Architecture
+    - CompTIA Network+ Proposed Hardware and Software List
+        - CompTIA has included this sample list of hardware and software to assist candidates as they prepare for the Network+ exam. This list may also be helpful for training companies who wish to create a lab component to their training offering. The bulleted lists below each topic are a sample list and not exhaustive.
+        - Equipment
+            - Optical and copper patch panels
+            - Layer 3 switch/managed switch/PoE switch
+            - Router
+            - Firewall
+            - Wireless access point
+            - Basic laptops that support virtualization
+            - Voice over IP (VoIP) phone
+        - Spare Hardware
+            - Network interface card (NIC)
+            - Power supplies
+            - SFPs
+            - Wireless access point
+            - UPS
+            - PoE injector
+        - Spare Parts
+            - Patch cables
+                - Fiber
+                - Copper
+            - Antennas
+            - Bluetooth/wireless adapters
+                - Console cables [Universal Serial Bus (USB) to RS-232 serial adapter]
+            - Additional NIC/USB NIC
+        - Tools
+            - Cable tester
+            - Tone generator
+            - Optical power meter
+            - PoE Tester
+        - Software
+            - Protocol analyzer/packet capture
+            - Terminal emulation software
+            - Linux/Windows operating systems
+            - Software firewall
+            - Software IDS/IPS
+            - Network mapper
+            - Hypervisor software
+            - IaaS cloud lab/demo accounts
+            - Virtual network environment
+            - Wi-Fi analyzer
+            - Spectrum analyzer
+            - Network monitoring tools
+            - Flow data analyzer
+            - TFTP server
+            - Various firmware versions
+        - Other
+            - Sample network documentation
+            - Sample logs
+            - Defective cables
+            - Cloud network diagrams
+            - Sample configuration playbook/runbook
