@@ -17,7 +17,7 @@ To the start of my knowledge.
 
 Guide Posts:
 
-- [General Reference](./001-general_reference/00-gen-refer-idx.md)
+- [General Reference](00-gen-refer-idx.md)
 - [Culture & the Arts](002-culture_and_the_arts/00-cult-art-idx.md)
 - [Geography & Places](003-geography_and_places/00-geo-pla-idx.md)
 - [Health & Fitness](004-health_and_fitness/00-heal-fit-idx.md)

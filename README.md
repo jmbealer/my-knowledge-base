@@ -17,7 +17,7 @@ A place to store my knowledge for future shenanigans. This knowledge base is org
 
 The knowledge base is divided into 13 primary portals:
 
-1. **[[001-general_reference/00-gen-refer-idx.md|General Reference]]**: Encyclopedias, dictionaries, and broad overview works.
+1. **[[00-gen-refer-idx|General Reference]]**: Encyclopedias, dictionaries, and broad overview works.
 2. **[[002-culture_and_the_arts/00-cult-art-idx.md|Culture and the Arts]]**: Social norms, traditions, visual, literary, and performing arts.
 3. **[[003-geography_and_places/00-geo-pla-idx.md|Geography and Places]]**: Physical Earth properties and human settlements.
 4. **[[004-health_and_fitness/00-heal-fit-idx.md|Health and Fitness]]**: Physical and mental well-being and exercise.

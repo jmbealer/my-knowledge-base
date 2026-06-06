@@ -19,11 +19,11 @@
       "template": "999-assets/templates/starter.md"
     },
     {
-      "folder": "",
+      "folder": "001-general_reference",
       "template": "999-assets/templates/gen-refer.md"
     },
     {
-      "folder": "",
+      "folder": "002-culture_and_the_arts",
       "template": "999-assets/templates/cult-art.md"
     },
     {
@@ -31,7 +31,7 @@
       "template": "999-assets/templates/geo-pla.md"
     },
     {
-      "folder": "",
+      "folder": "004-health_and_fitness",
       "template": "999-assets/templates/heal-fit.md"
     },
     {
@@ -55,20 +55,20 @@
       "template": "999-assets/templates/heal-fit.md"
     },
     {
-      "folder": "",
-      "template": ""
+      "folder": "010-philosophy_and_thinking",
+      "template": "999-assets/templates/phi-thi.md"
     },
     {
-      "folder": "",
-      "template": ""
+      "folder": "011-religion_and_belief_systems",
+      "template": "999-assets/templates/rel-bel.md"
     },
     {
-      "folder": "",
-      "template": ""
+      "folder": "012-society_and_social_sciences",
+      "template": "999-assets/templates/soc-ssci.md"
     },
     {
-      "folder": "",
-      "template": ""
+      "folder": "013-technology_and_applied_science",
+      "template": "999-assets/templates/tech-applied.md"
     }
   ],
   "enable_file_templates": false,
@@ -83,16 +83,11 @@
   "enabled_templates_hotkeys": [
     ""
   ],
-  "startup_templates": [
-    "999-assets/templates/starter.md"
-  ],
+  "startup_templates": [],
   "intellisense_render": 1,
   "ignore_folders_on_creation": [
     {
-      "folder": "999-assets/templates"
-    },
-    {
-      "folder": "999-assets/ai"
+      "folder": "999-assets"
     }
   ],
   "enable_ribbon_icon": true
