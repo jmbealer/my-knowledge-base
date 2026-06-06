@@ -3,10 +3,13 @@
   "vimMode": true,
   "tabSize": 2,
   "alwaysUpdateLinks": true,
-  "useTab": false,
+  "useTab": true,
   "promptDelete": false,
   "livePreview": true,
   "showUnsupportedFiles": true,
   "openBehavior": "daily",
-  "defaultViewMode": "preview"
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "999-assets",
+  "newLinkFormat": "absolute",
+  "showInlineTitle": false
 }
