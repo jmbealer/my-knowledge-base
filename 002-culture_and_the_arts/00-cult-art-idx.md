@@ -31,5 +31,7 @@ The arts refer to the theory and physical expression of creativity found in huma
 - **Performing Arts**: Music, dance, theater, and cinema.
 - **Decorative Arts**: Ceramics, glassware, and furniture design.
 
+![[999-assets/bases/culture_and_the_arts.base|culture_and_the_arts]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[002-culture_and_the_arts/README.md|README]]

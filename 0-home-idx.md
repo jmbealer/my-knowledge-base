@@ -33,7 +33,8 @@ Guide Posts:
 
 ---
 
-![[999.assets/bases/home.]]
+![[999-assets/bases/home.base]]
+
 
 - [[README]]
 

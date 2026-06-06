@@ -31,5 +31,7 @@ An event is a specific occurrence or happening of significance that takes place 
 - **Cultural Events**: Festivals, world fairs, and major artistic movements.
 - **Technological Events**: The invention of the printing press or the first moon landing.
 
+![[999-assets/bases/history_and_events.base|history_and_events]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[005-history_and_events/README.md|README]]

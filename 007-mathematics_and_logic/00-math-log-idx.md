@@ -31,5 +31,7 @@ Logic is the systematic study of the principles of valid inference and correct r
 - **Mathematical Logic**: The application of mathematical techniques to logic.
 - **Boolean Logic**: A form of algebra in which all values are reduced to either "true" or "false".
 
+![[999-assets/bases/mathematics_and_logic.base|mathematics_and_logic]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[007-mathematics_and_logic/README.md|README]]

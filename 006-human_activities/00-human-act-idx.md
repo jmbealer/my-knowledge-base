@@ -22,5 +22,7 @@ Human activities are the various actions and behaviors that people engage in thr
 - **Socializing**: Interacting with others through conversation, celebrations, and community participation.
 - **Daily Living**: Routine tasks like cooking, cleaning, and personal care.
 
+![[999-assets/bases/human_activities.base|human_activities]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[006-human_activities/README.md|README]]

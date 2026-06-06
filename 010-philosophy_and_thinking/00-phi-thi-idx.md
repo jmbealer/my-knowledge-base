@@ -31,5 +31,7 @@ Thinking is the mental process in which beings form psychological associations a
 - **Logical Reasoning**: The process of using a rational, systematic series of steps based on sound mathematical procedures and given statements to arrive at a conclusion.
 - **Decision Making**: The cognitive process resulting in the selection of a belief or a course of action among several alternative possibilities.
 
+![[999-assets/bases/philosophy_and_thinking.base|philosophy_and_thinking]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[010-phiosophy_and_thinking/README.md|README]]

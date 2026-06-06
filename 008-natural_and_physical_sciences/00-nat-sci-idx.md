@@ -32,5 +32,7 @@ Physical science is the study of inanimate natural objects and the laws that gov
 ## What is the difference between Natural and Physical Sciences?
 While "Natural Science" is a broad term encompassing everything in the natural world (including living things), "Physical Science" specifically focuses on non-living systems. In many contexts, physical science is considered a major branch of natural science, alongside life science.
 
+![[999-assets/bases/natural_and_physical_sciences.base|natural_and_physical_sciences]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[008-natural_and_physical_sciences/README.md|README]]

@@ -20,6 +20,7 @@ General reference works are those that contain information on many different sub
 - **Atlases**: Collections of maps or charts.
 - **Bibliographies**: Lists of books or other materials on a particular subject or by a particular author.
 
+![[999-assets/bases/general_reference.base|general_reference]]
 - [[../0-home-idx.md|Home Index]]
 - [[001-general_reference/README.md|README]]
 

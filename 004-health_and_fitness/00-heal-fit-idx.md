@@ -31,5 +31,7 @@ Fitness is the ability to execute daily activities with optimal performance, end
 - **Flexibility**: The range of motion around a joint (e.g., yoga, stretching).
 - **Body Composition**: The proportion of fat, muscle, and bone in the body.
 
+![[999-assets/bases/health_and_fitness.base|health_and_fitness]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[004-health_and_fitness/README.md|README]]

@@ -35,6 +35,8 @@ In geography, a place is a specific point on Earth's surface that has been given
 - **Political Entities**: Countries, states, and provinces.
 - **Cultural Sites**: The Great Wall of China, the Pyramids of Giza, or local community centers.
 
+![[999-assets/bases/geography_and_places.base|geography_and_places]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[003-geography_and_places/README.md|README]]
 

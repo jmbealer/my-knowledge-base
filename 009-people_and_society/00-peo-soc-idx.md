@@ -30,5 +30,7 @@ A society is a group of individuals involved in persistent social interaction, o
 - **Social Structures**: The stable arrangement of institutions and social patterns that determine the relationships between individuals in a society.
 - **Economics**: The system by which a society organizes the production, distribution, and consumption of goods and services.
 
+![[999-assets/bases/people_and_society.base|people_and_society]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[009-people_and_society/README.md|README]]
