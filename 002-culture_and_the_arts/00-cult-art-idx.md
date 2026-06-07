@@ -7,6 +7,8 @@ tags:
   - index
   - culture
   - theArts
+date created: Monday, October 28th 2024, 12:21:58 am
+date modified: Saturday, June 6th 2026, 7:28:25 pm
 ---
 # Culture and the Arts
 

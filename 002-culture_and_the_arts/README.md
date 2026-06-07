@@ -5,6 +5,8 @@ tags:
   - readme
   - culture
   - theArts
+date created: Friday, June 5th 2026, 10:43:30 am
+date modified: Saturday, June 6th 2026, 7:28:28 pm
 ---
 # Culture and the Arts
 
