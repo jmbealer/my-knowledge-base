@@ -40,3 +40,19 @@ this are rest of my notes:
   securityP/CompTIA Security+.md
   securityP/securityplus-bak.md
   securityP/securityplus.md
+
+networkP/00-CompTIA-Network+-N10-009-Exam-Objectives-(Domains).md
+networkP/CertMaster-Perform-Network+.md
+networkP/CompTIA-Network+-N10-009-Exam-Objectives-(Domains).md
+networkP/CompTIA-Network-plus-objectives.md
+networkP/curr-comptia-networkp-old.md
+networkP/n1.md
+networkP/n2.md
+networkP/n3.md
+networkP/n4.md
+networkP/n5.md
+networkP/Networking-hardware.md
+networkP/networkp-Shorten-Glossary.md
+networkP/networkp-wip.md
+networkP/networkplus-wip.md
+networkP/networkplus.md
