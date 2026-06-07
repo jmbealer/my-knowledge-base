@@ -1,8 +1,6 @@
 ---
 title: Geography and Places
 author: Justin Bealer
-date_created: 2024-09-17, 10-29-44
-date_modified: 2024-09-17, 11-00-54
 reference: 
 description: 
 aliases: 
@@ -39,4 +37,3 @@ In geography, a place is a specific point on Earth's surface that has been given
 
 - [[../0-home-idx.md|Home Index]]
 - [[003-geography_and_places/README.md|README]]
-

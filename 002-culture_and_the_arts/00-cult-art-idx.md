@@ -1,11 +1,8 @@
 ---
 title: Culture and the Arts
 author: Justin Bealer
-date_created: 2024-09-17, 10-28-07
-date_modified: 2024-09-17, 11-00-55
 reference:
 description:
-aliases:
 tags:
   - index
   - culture
@@ -14,18 +11,22 @@ tags:
 # Culture and the Arts
 
 ## What is Culture?
+
 Culture is the social behavior, institutions, and norms found in human societies, as well as the knowledge, beliefs, arts, laws, customs, capabilities, and habits of the individuals in these groups.
 
 ### Examples of Culture
+
 - **Traditions**: Long-established customs or beliefs passed down through generations.
 - **Language**: The method of human communication, either spoken or written.
 - **Cuisine**: Styles of cooking and food traditions associated with specific cultures.
 - **Social Norms**: Informal rules that govern behavior in groups and societies.
 
 ## What is the Arts?
+
 The arts refer to the theory and physical expression of creativity found in human cultures and societies through skills and imagination. They include visual arts, literary arts, and performing arts.
 
 ### Examples of the Arts
+
 - **Visual Arts**: Painting, sculpture, photography, and architecture.
 - **Literary Arts**: Poetry, novels, short stories, and epics.
 - **Performing Arts**: Music, dance, theater, and cinema.
@@ -35,3 +36,4 @@ The arts refer to the theory and physical expression of creativity found in huma
 
 - [[../0-home-idx.md|Home Index]]
 - [[002-culture_and_the_arts/README.md|README]]
+
