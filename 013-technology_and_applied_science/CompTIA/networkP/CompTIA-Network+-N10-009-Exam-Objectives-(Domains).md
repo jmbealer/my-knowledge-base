@@ -15703,5 +15703,3 @@
     - {{jump server}} – Secured host for remote access
     - 
     - {{kerberos}} – Time-based ticket system for SSO
-    - 
-    - 
