@@ -1,18 +1,17 @@
 ---
 title: What is My Knowledge Base?
 author: Justin Bealer
-date_created: 2023-12-10, 12-00-00
-date_modified: 2024-10-08, 01-17-11
-reference: 
-description: 
-aliases: 
-tags:
-  - readme
+date created: Friday, June 5th 2026, 10:47:00 am
+date modified: Saturday, June 6th 2026, 7:07:16 pm
+reference:
+description:
+aliases:
+tags: [readme, home]
 ---
 # My Knowledge Base
 
 A place to store my knowledge for future shenanigans. This knowledge base is organized according to the **Wikipedia Portal Organization**, providing a structured and comprehensive way to navigate various fields of human knowledge.
-
+ 
 ## Structure
 
 The knowledge base is divided into 13 primary portals:

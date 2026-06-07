@@ -31,7 +31,7 @@ A belief system is a set of mutually supportive beliefs. The beliefs of any such
 - **Mythology**: Collections of myths belonging to a particular religious or cultural tradition.
 - **Secularism**: The principle of separation of the state from religious institutions.
 
-
+![[999-assets/bases/religion_and_belief_systems.base|religion_and_belief_systems]]
 
 - [[../0-home-idx.md|Home Index]]
 - [[011-religion_and_belief_systems/README.md|README]]

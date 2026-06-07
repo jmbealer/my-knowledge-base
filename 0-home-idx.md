@@ -1,8 +1,8 @@
 ---
 title: Home Page
 author: Justin Bealer
-date_created: 2023-12-10, 07-22-34
-date_modified: 2024-09-18, 02-39-25
+date created: Monday, October 28th 2024, 12:21:58 am
+date modified: Saturday, June 6th 2026, 7:06:08 pm
 draft: false
 reference:
 description: Home page for Justin Bealer's knowledge base.

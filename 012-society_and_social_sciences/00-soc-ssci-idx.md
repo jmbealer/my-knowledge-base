@@ -31,5 +31,7 @@ Social science is the branch of science devoted to the study of societies and th
 - **Political Science**: The study of systems of government and the analysis of political activities, thoughts, and behavior.
 - **Anthropology**: The study of humans, human behavior, and societies in the past and present.
 
+![[999-assets/bases/society_and_social_sciences.base|society_and_social_sciences]]
+
 - [[../0-home-idx.md|Home Index]]
 - [[013-technology_and_applied_science/README.md|README]]

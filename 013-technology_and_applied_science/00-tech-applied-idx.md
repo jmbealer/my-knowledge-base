@@ -32,6 +32,8 @@ Applied science is the use of the scientific method and knowledge obtained via c
 - **Medicine**: The science and practice of establishing the diagnosis, prognosis, treatment, and prevention of disease.
 - **Material Science**: The discovery and design of new materials, with an emphasis on solids.
 
+![[999-assets/bases/technology_and_applied_science.base|technology_and_applied_science]]
+
 [Programming Index](00-programming-idx.md)
 [Python Index](00-python-idx.md)
 reference
