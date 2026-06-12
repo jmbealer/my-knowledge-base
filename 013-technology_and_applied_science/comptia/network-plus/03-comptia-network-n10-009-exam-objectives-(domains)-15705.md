@@ -1,0 +1,3427 @@
+    -  1.4 Explain common networking ports, protocols, services, and traffic types.
+        - [Size]();-[H0]()
+        - Protocols Ports
+            - 
+            - {{File Transfer Protocol}} ({{FTP}}) Port: {{20/21}} 
+                - Protocol: {{TCP}} 
+                - Use: Port {{21}} is the {{control port}} while port {{20}} is used to {{transfer files}}.
+                - {{Transfers files}} between computers over networks.
+                - 20/21 FTP Unsecure file transfer (control, data).
+                - 20/21 FTP File transfers (active/passive modes).
+                - **FTP (20/21):** Insecure file transfer.
+            - {{Secure File Transfer Protocol}} ({{SFTP}}) Port: {{22}} 
+                - Protocol: {{TCP}} 
+                - Encrypted file transfer using {{SSH}}.
+                - 
+                - **SFTP (22):** Secure via SSH.
+            - {{Secure Shell}} ({{SSH}}) Port: {{22}} 
+                - Protocol: {{TCP}} 
+                - {{Encrypted remote}} terminal access to systems.
+                - 
+                - 22 SSH Secure remote command access.
+                - 22 SSH/SFTP Secure shell/secure file transfer.
+                - **SSH (22):** Secure CLI remote access.
+            - {{Telnet}}  Port: {{23}} 
+                - {{Unencrypted remote}} terminal access protocol.
+                - Telnet has largely been replaced by SSH for secure remote access.
+                - **Telnet (23):** Insecure CLI access.
+                - 23 Telnet Unencrypted remote command-line access.
+                - 23 Telnet Unsecure remote terminal access.
+            - {{Simple Mail Transfer Protocol}} ({{SMTP}}) Port: {{25}} 
+                - {{Sends email }}between mail servers.  
+                - Layer: {{7 Application}} 
+                - Protocol: {{TCP}} 
+                - 
+                - Protocol (SMTP) 25 TCP Internet mail protocol used to send outgoing mail from email clients to mail servers.
+                - 25 SMTP Sends outbound email.
+                - 25 SMTP Sends email between servers.
+                - **SMTP (25):** Sends mail.
+            - TACACS+
+                - Centralized authentication for network devices.  
+                - 
+                - Layer 7 Application
+                - 49 TCP Cisco proprietary protocol used for authentication, authorization, and
+                - accounting (AAA) services
+                - 
+            - {{Domain Name System}} ({{DNS}}) Port: {{53}} 
+                - {{Resolves domain names}} to IP addresses.
+                - 
+                - Layer: {{7 Application}} 
+                - Domain Name System (DNS) 53 UDP Used to associate IP addresses with domain names
+                - 
+                - 53 DNS Resolves domain names to IPs.
+                - 53 DNS Resolves names to IP addresses.
+            - {{Dynamic Host Configuration Protocol}} ({{DHCP}}) Port: {{67/68}} 
+                - Automatically assigns{{ IP addresses}}. 
+                - Layer: {{7 Application}} 
+                - 
+                - 67/68 DHCP Assigns dynamic IP addresses.
+                - 67/68 DHCP Assigns dynamic IP addresses.
+            - {{Trivial File Transfer Protocol}} ({{TFTP}}) Port: {{69}} 
+                - {{Lightweight file transfer}} without authentication.  
+                - **TFTP (69):** Basic file transfer, no authentication, UDP.
+                - 69 TFTP Simple file transfers (UDP).
+                - 69 TFTP Lightweight file transfers (no auth).
+            - {{HyperText Transfer Protocol}} ({{HTTP}}) Port: {{80}} 
+                - {{Transfers web pages}} over the Internet.  
+                - 
+                - Layer: {{7 Application}} 
+                - Hypertext Transfer Protocol (HTTP) 80 TCP Protocol used for websites and most internet traffic.
+                - 
+                - 80 HTTP Unsecured web browsing.
+                - 80 HTTP Transfers web pages unencrypted.
+                - **HTTP (80):** Insecure web.
+            - Kerberos 88 
+                - Secure network authentication protocol.
+                - 
+                - 
+                - Layer 7 Application
+                - TCP/UDP Network authentication protocol that allows for communication over a non-secure network. Primarily uses UDP but can use TCP.
+            - Post Office Protocol (POP) 110 
+                - Downloads email to local client.
+                - 
+                - 
+                - Layer 7 Application
+                - TCP E-mail protocol that allows e-mail clients to communicate with e-mail servers. POP provides only one-way communication.
+                - 110 POP3 Downloads email from server.
+                - 110 POP3 Downloads email to local client.
+            - {{Network Time Protocol }}({{NTP}}) Port: {{123}} 
+                - {{Synchronizes clocks}} over a network.
+                - Layer: {{7 Application}} 
+                - NTP operates on UDP port 123 and is designed to mitigate the etects of variable latency
+                - **NTP (123):** Clock sync across devices.
+                - 123 NTP Synchronizes system clocks.
+                - 123 NTP Synchronizes device time.
+            - Internet Message Access Protocol (IMAP) 143,993 
+                - Layer 7 Application
+                - Accesses email on remote server.
+                - 
+                - TCP E-mail protocol used by e-mail clients to communicate with e-mail servers. Provides two way communication unlike POP.
+                - 143 IMAP Accesses and manages server-side email.
+                - **IMAP/POP:** Not covered here but used for retrieval.
+                - 143 IMAP Retrieves and manages email on server.
+            - {{Simple Network Management Protocol}} ({{SNMP}}) Port: {{161/162}} 
+                - {{Manages and monitors}} network devices.
+                - 
+                - Layer: {{7 Application}} 
+                - 
+                - Simple Network Management Protocol (SNMP) 161/162 UDP Protocol used to monitor and manage network devices on IP networks.
+                - **SNMP (161/162):** Device monitoring.
+                - 161/162 SNMP Monitors and manages network devices.
+                - 161/162 SNMP Monitors and manages network devices.
+            - {{Lightweight Directory Access Protocol}} ({{LDAP}}) Port: {{389}} 
+                - {{Accesses and manages}} directory services.
+                - Layer: {{7 Application}} 
+                - 
+                - Lightweight Directory Access Protocol (LDAP) 389 UDP Used to manage and communicate with directories.
+                - (LDAP) A [protocol](https://foldoc.org/protocol) for accessing on-line [directory services](https://foldoc.org/directory+services).
+                - 
+                - **LDAP (389):** Directory services.
+                - 389 LDAP Accesses directory services.
+                - 389 LDAP Directory services protocol.
+            - {{HyperText Transfer Protocol Secure}} ({{HTTPS}}) Port: {{443}} 
+                - {{Secure web page transfer}} over SSL/TLS.  
+                - 
+                - Layer: {{7 Application}} 
+                - Hypertext Transfer Protocol Secure (HTTPS) 443 TCP Secure version of HTTP that used TLS for encryption. Most websites use HTTPS instead of HTTP.
+                - 
+                - **HTTPS (443):** Secure web via TLS/SSL.
+                - 443 HTTPS Secure web page transfer.
+                - 443 HTTPS Secure web browsing.
+            - {{Server Message Block}} ({{SMB}}) Port: {{445}} 
+                - {{Shares files and printers}} on networks.
+                - Layer: {{7 Application}} 
+                - 445 SMB Shares files/printers on network.
+                - 445 SMB Shares files, printers on LAN.
+            - {{Syslog}} Port: {{514}} 
+                - {{Sends system logs}} to remote server.
+                - **Syslog (514):** Log forwarding.
+                - 514 Syslog Sends logs to central server.
+                - 514 Syslog Sends event logs over network.
+            - {{Simple Mail Transfer Protocol Secure }}({{SMTPS}}) Port: {{587}} 
+                - Sends email securely with {{encryption}}.  
+                - Layer: {{7 Application}} 
+                - Simple Mail Transfer Protocol Secure (SMTPS) 587 TCP The secure version of SMTP. Uses TLS for encryption.
+                - **SMTPS (587/465):** Secure mail sending.
+                - 587 SMTPS Sends email securely with TLS.
+                - 587 SMTPS Secure mail submission.
+            - {{Lightweight Directory Access Protocol over SSL}} ({{LDAPS}}) Port: {{636}} 
+                - {{Secure version}} of LDAP  
+                - Layer: {{7 Application}} 
+                - Lightweight Directory Access Protocol Secure (LDAPS) 636 TCP Secure version of LDAP that uses TLS for encryption.
+                - **LDAPS (636):** Secure LDAP.
+                - 636 LDAPS Secure version of LDAP.
+                - 636 LDAPS Secure LDAP communication.
+            - File Transfer Protocol Secure (FTPS) 989/990 TCP FTPS uses TLS for encryption. It can run on ports 20/21 but is sometimes allocated to ports 989/990.
+                - Layer 7 Application
+            - Internet Message Access Protocol Secure (IMAPS) 993 TCP Secure version of IMAP that uses TLS for encryption.
+                - Layer 7 Application
+            - Post Office Protocol 3 Secure (POP3S) 995 TCP Secure version of POP that uses TLS for encryption
+                - Layer 7 Application
+            - {{Structured Query Language}} ({{SQL}}) Server Port: {{1433}} 
+                - {{Manages Microsoft SQL}} Server databases.  
+                - /S Q L/ An industry-standard language for creating, updating and, querying [relational database management systems](https://foldoc.org/relational+database+management+systems).
+                - **SQL Server (1433):** Microsoft SQL.
+                - 1433 SQL Server Connects to Microsoft SQL databases.
+            - Remote Authentication Dial-In User Service (RADIUS) 1812,1813 UDP Used to provide AAA for network services
+                - Layer 7 Application
+            - {{MySQL}} Port: {{3306}} 
+                - {{Accesses MySQL}} database services.  
+                - **MySQL (3306):** Open-source database.
+                - 3306 MySQL Connects to MySQL databases.
+            - {{Remote Desktop Protocol}} ({{RDP}}) Port: {{3389}} 
+                - {{Accesses desktops remotely }}over network  
+                - Layer: {{7 Application}} 
+                - Remote Desktop Protocol
+                - (RDP) 3389 TCP This Windows proprietary protocol that enables remote connections to other computers
+                - (RDP) A [Microsoft](https://foldoc.org/Microsoft) [protocol](https://foldoc.org/protocol) that provides remote display and input for [Windows](https://foldoc.org/Windows).
+                - **RDP (3389):** GUI remote access.
+                - 3389 RDP Remote desktop access.
+                - 3389 RDP Remote desktop protocol.
+            - Diameter 3868 
+                - Layer 7 Application
+                - TCP Developed as an upgrade to Radius
+            - Secure Real Time Protocol (SRTP) 5004 
+                - Layer 7 Application
+                - UDP SRTP replaced RTP and is a protocol used to stream audio and video communication using UDP.
+            - Layer 2 Tunneling Protocol (L2TP) 1701 
+                - Layer 2 Data Link
+                - UDP Used to create point to point connections, like VPNs over a UDP connection. Needs IPSec for encryption. Designed as an extension to PPTP. Operates at the data link layer but encapsulates packets at the session layer.
+                - 1701 L2TP VPN tunneling (needs IPsec).
+            - Point to Point Tunneling Protocol (PPTP) 1723 
+                - Layer 4 Transport
+                - TCP Based on PPP. Deprecated protocol for VPNs.
+            - Point to Point Tunneling Protocol (PPTP) 1723 
+                - Layer 2 Data Link
+                - UDP Based on PPP. Deprecated protocol for VPNs.
+                - 1723 PPTP Legacy VPN protocol (deprecated).
+            - {{Session Initiation Protocol}} ({{SIP}}) Port: {{5060/5061}} 
+                - {{Sets up and controls}} VoIP calls.  
+                - **SIP (5060/5061):** Call setup/signaling.
+                - 5060/5061 SIP Initiates/controls VoIP sessions.
+        - {{Internet Protocol }}({{IP}}) types
+            - 11111
+                - ARP Resolves IP to MAC addresses.
+                - RTP Transmits audio/video over IP networks.
+                - SIP Establishes, manages VoIP calls.
+                - H.323 VoIP standard for call signaling.
+                - NFS Network-based file sharing.
+                - SFTP Secure file transfer over SSH.
+                - FTPS FTP over SSL for secure file transfers.
+                - SMTPS Secure SMTP via SSL/TLS.
+                - DNSSEC Adds authentication to DNS responses.
+            - 
+            - IP protocol types refer to the various protocols used in the layers of the IP suite, each serving diterent purposes in the network communication process.
+            - 
+            - {{Internet Control Message Protocol}} ({{ICMP}})
+                - ICMP Used for ping and network diagnostics.
+                - ICMP Sends error and diagnostic messages.
+                - **ICMP:** Ping/traceroute diagnostics.
+            - {{Transmission Control Protocol}} ({{TCP}})
+                - TCP provides error checking to ensure packets are not lost in transit.
+                - Layer 4 Transport
+                - (TCP) The most common [transport layer](https://foldoc.org/transport+layer) [protocol](https://foldoc.org/protocol) used on [Ethernet](https://foldoc.org/Ethernet) and the [Internet](https://foldoc.org/Internet).
+                - 
+                - TCP Reliable, connection-based communication.
+                - **TCP:** Reliable, ordered.
+            - {{User Datagram Protocol}} ({{UDP}})
+                - UDP does not include error checking.
+                - Layer 4 Transport
+                - UDP Fast, connectionless, unreliable communication.
+                - **UDP:** Fast, no guarantees.
+            - {{Generic Routing Encapsulation}} ({{GRE}})
+                - GRE Encapsulates traffic for tunneling.
+                - **GRE:** Tunnels varied traffic.
+            - {{Internet Protocol Security}} ({{IPSec}})
+                - ("[IP](https://foldoc.org/IP) Secure"?) A [protocol](https://foldoc.org/protocol) that provides [security](https://foldoc.org/security) for transmission of sensitive information over unprotected [networks](https://foldoc.org/networks) such as the [Internet](https://foldoc.org/Internet). 
+                - IPSec Encrypts/authenticates IP traffic.
+                - **IPSec:** Secures IP with encryption/auth.
+                - {{Authentication Header}} ({{AH}})
+                    - AH: Auth only.
+                    - AH (IPSec) Provides integrity/authentication (no encryption).
+                - {{Encapsulating Security Payload}} ({{ESP}})
+                    - **ESP:** Encrypt + Auth.
+                    - ESP (IPSec) Adds encryption and integrity.
+                - {{Internet Key Exchange}} ({{IKE}})
+                    - IKE, or Internet Key Exchange, is a protocol used to set up a secure, authenticated communication channel between two parties.
+                    - **IKE:** Key exchange.
+                    - IKE Negotiates secure VPN tunnels (IPSec).
+            - Traffic types
+                - Unicast
+                    - **Unicast:** One-to-one.
+                    - Unicast One-to-one data transmission.
+                    - Unicast One-to-one traffic flow.
+                - Multicast
+                    - **Multicast:** One-to-many (group).
+                    - Multicast One-to-many selected recipients.
+                    - Multicast One-to-many (interested receivers only).
+                - Anycast
+                    - **Anycast:** To nearest of many.
+                    - Anycast One-to-nearest of multiple recipients.
+                    - Anycast One-to-nearest of many receivers.
+                - Broadcast
+                    - Broadcast One-to-all on subnet.
+                - 
+                - Unknown Unicast Sent like broadcast if destination unknown.
+        - 
+    -  1.5 Compare and contrast transmission media and transceivers.
+        - 111
+            - 🧵 Transmission Media
+            - 🧠 Media Categories
+            - Type Usually Means
+            - Guided Media Physical cables that guide signals.
+            - Unguided Media Wireless signals through open space.
+            - 🪛 Copper Cabling Types
+            - Cable Usually Means
+            - Coaxial Central core shielded by insulation.
+            - Twisted Pair Pairs twisted to reduce interference.
+            - Shielded Twisted Pair (STP) Twisted pair with extra shielding.
+            - Unshielded Twisted Pair (UTP) Common Ethernet cable type.
+            - Cat 5e Supports up to 1 Gbps.
+            - Cat 6 Supports up to 10 Gbps (short runs).
+            - Cat 6a Improved Cat 6 for longer 10 Gbps runs.
+            - Cat 7/8 High-shielded cables for data centers.
+            - RJ45 Connector for Ethernet cables.
+            - RJ11 Connector for phone lines.
+            - 🔦 Fiber Optic Cabling
+            - Type Usually Means
+            - Single-mode Fiber (SMF) Long-distance, laser-based fiber.
+            - Multimode Fiber (MMF) Shorter range, LED-based fiber.
+            - SC Connector Square fiber connector (push-pull).
+            - ST Connector Round fiber connector (twist-lock).
+            - LC Connector Small form factor duplex connector.
+            - MTRJ Connector Compact duplex fiber connector.
+            - 📡 Wireless Media
+            - Type Usually Means
+            - RF (Radio Frequency) Wireless data over radio waves.
+            - Microwave Line-of-sight wireless signal.
+            - Infrared (IR) Short-range, line-of-sight wireless.
+            - Bluetooth Short-range wireless personal network.
+            - Wi-Fi Wireless local area network.
+            - Satellite Long-range via orbiting transceivers.
+            - 🔁 Transceivers
+            - Type Usually Means
+            - Transceiver Device that transmits and receives signals.
+            - GBIC Hot-swappable gigabit interface module.
+            - SFP (Mini-GBIC) Compact GBIC for fiber/copper.
+            - SFP+ Supports up to 10 Gbps.
+            - QSFP Quad version; supports up to 40 Gbps.
+            - BiDi Transceiver Sends/receives over single fiber strand.
+            - Media Converter Converts signals between media types.
+            - Mux/Demux Combines/splits multiple signals.
+            - 
+            - 📡 Wireless Standards & Media
+            - Term Usually Means
+            - Wireless Network without physical cable connection.
+            - 802.11a 5 GHz, 54 Mbps, short range.
+            - 802.11b 2.4 GHz, 11 Mbps, long range.
+            - 802.11g 2.4 GHz, 54 Mbps, b-compatible.
+            - 802.11n (WiFi 4) Dual-band, up to 600 Mbps.
+            - 802.11ac (WiFi 5) 5 GHz, gigabit speed, high throughput.
+            - 802.11ax (WiFi 6) Dual-band, high density, up to 9.6 Gbps.
+            - Cellular Mobile radio network across geographic cells.
+            - Satellite High-latency global wireless connectivity.
+            - 🔌 Wired Media
+            - Term Usually Means
+            - 802.3 (Ethernet) Wired LAN standard (CSMA/CD).
+            - Single-mode Fiber Long-distance laser light fiber.
+            - Multimode Fiber Short-distance LED light fiber.
+            - DAC Cable Short copper cable for high-speed links.
+            - Twinax Cable Dual-conductor shielded cable for short runs.
+            - Coaxial Cable (RG-6) Shielded cable for TV/broadband.
+            - Plenum Cable Flame-retardant, low-smoke cable.
+            - Non-Plenum Cable Standard plastic-sheathed cable.
+            - 🔁 Transceivers & Media Converters
+            - Device/Standard Usually Means
+            - Transceiver Sends and receives data signals.
+            - Media Converter Changes one media type to another.
+            - Ethernet LAN protocol over twisted pair/fiber.
+            - Fibre Channel High-speed storage networking protocol.
+            - SFP Compact pluggable fiber/copper transceiver.
+            - SFP+ Enhanced SFP for 10 Gbps links.
+            - QSFP 4× SFP+, supports up to 40 Gbps.
+            - QSFP+ High-density 40+ Gbps module.
+            - 🔌 Connector Types
+            - Connector Usually Means
+            - SC Push-pull square fiber connector.
+            - LC Small duplex fiber connector.
+            - ST Bayonet-lock fiber connector.
+            - MPO Multi-fiber (12–24) connector.
+            - RJ11 Phone line connector (6P4C).
+            - RJ45 Ethernet connector (8P8C).
+            - BNC Coax twist-lock video/network connector.
+            - F-type Coax screw-on connector (TV, internet).
+        - 
+        - **802.11a** – 5 GHz, 54 Mbps, less range 
+        - **802.11b** – 2.4 GHz, 11 Mbps, more interference
+        - **802.11g** – 2.4 GHz, 54 Mbps, backward compatible
+        - **802.11n (WiFi 4)** – 2.4/5 GHz, up to 600 Mbps, MIMO
+        - **802.11ac (WiFi 5)** – 5 GHz, up to 3.46 Gbps, video use
+        - **802.11ax (WiFi 6)** – 2.4/5 GHz, up to 9.6 Gbps, IoT use
+        - **Cellular** – Mobile network generations (2G–5G)
+        - **Satellite** – Long-distance wireless via satellites
+        - **Ethernet** – LAN standard; wired network protocol
+        - **Fiber (Single-mode)** – Long-distance single light path
+        - **Fiber (Multimode)** – Short-distance, multiple light paths
+        - **Direct Attach Copper** – Short-range, low-cost, copper-based
+        - **Twinaxial** – Short-range, high-speed, shielded copper
+        - **Coaxial/RG-6** – Shielded coax for TV, internet
+        - **Cable Speeds** – Speed depends on cable type (Cat 5–6a)
+        - **Plenum Rating** – Cable fire rating: plenum > riser > none
+        - **Transceivers** – Converts signal types, e.g., fiber to copper
+        - **Ethernet Protocol** – Standard LAN protocol, uses CSMA/CD
+        - **Fibre Channel** – High-speed storage network protocol
+        - **SFP** – Modular transceiver, up to 1 Gbps
+        - **SFP+** – Like SFP but supports 10 Gbps
+        - **QSFP** – Four-lane transceiver, up to 40 Gbps
+        - **QSFP+** – Enhanced QSFP, higher data rates
+        - **SC Connector** – Push-pull fiber connector, square tip
+        - **LC Connector** – Small form fiber connector, high density
+        - **ST Connector** – Bayonet fiber connector, twist lock
+        - **MPO Connector** – High-density fiber connector, 12/24 fibers
+        - **RJ11** – Phone cable connector, 6P4C
+        - **RJ45** – Ethernet cable connector, 8P8C
+        - **F-type Connector** – Threaded coax connector for TV
+        - 
+        - [Size]();-[H0]()
+        - Wireless
+            - ## wireless
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - A term describing a computer [network](https://foldoc.org/network) where there is no physical connection (either copper cable or [fibre optics](https://foldoc.org/fibre+optics)) between sender and receiver, but instead they are connected by radio.
+            - 
+            - Applications for wireless networks include multi-party [teleconferencing](https://foldoc.org/teleconferencing), distributed work sessions, [personal digital assistants](https://foldoc.org/personal+digital+assistants), and electronic newspapers. They include the transmission of voice, video, [images](https://foldoc.org/images), and data, each traffic type with possibly differing [bandwidth](https://foldoc.org/bandwidth) and quality-of-service requirements. The wireless network components of a complete source-destination path requires consideration of mobility, [hand-off](https://foldoc.org/hand-off), and varying transmission and [bandwidth](https://foldoc.org/bandwidth) conditions. The wired/wireless network combination provides a severe bandwidth mismatch, as well as vastly different error conditions. The processing capability of fixed vs. mobile terminals may be expected to differ significantly. This then leads to such issues to be addressed in this environment as [admission control](https://foldoc.org/admission+control), [capacity assignment](https://foldoc.org/capacity+assignment) and [hand-off](https://foldoc.org/hand-off) control in the wireless domain, flow and error control over the complete end-to-end path, dynamic bandwidth control to accommodate bandwidth mismatch and/or varying processing capability.
+            - 
+            - [Usenet](https://foldoc.org/Usenet) newsgroup [comp.std.wireless](https://groups.google.com/group/comp.std.wireless).
+            - 802.11 standards
+                - 802.11 standards
+                - The 802.11 standards are a set of protocols for implementing wireless local area network (WLAN)
+                - communication in various frequency bands.
+                - Each version improves upon the previous ones, otering better speed, range, and reliability.
+                - 802.11a
+                - 802.11a operates in the 5 GHz band with a maximum data rate of 54 Mbps.
+                - It oters less interference from other devices but has a shorter range compared to 2.4 GHz
+                - standards.
+                - 802.11b
+                - 802.11b operates in the 2.4 GHz band and provides data rates up to 11 Mbps.
+                - It has a longer range and better obstacle penetraton but is more susceptible to interference.
+                - 802.11g
+                - 802.11g combines the best of both 802.11a and 802.11b, operating in the 2.4 GHz band with data
+                - rates up to 54 Mbps.
+                - It is backward compatble with 802.11b devices.
+                - 802.11n (WiFi 4)
+                - 802.11n, or WiFi 4, increases maximum data rates to 600 Mbps by utilizing multple antennas (MIMO
+                - technology) and operates in both the 2.4 GHz and 5 GHz bands.
+                - It oters significant improvements in speed and range.
+                - 802.11ac (WiFi 5)
+                - 802.11ac, or WiFi 5, operates exclusively in the 5 GHz band, otering speeds up to several gigabits
+                - per second (theoretical maximum of 3.46 Gbps) using wider channels, more spatial streams, and
+                - higher modulation.
+                - It greatly enhances network bandwidth and is ideal for high-definition video streaming and high-
+                - speed data transfer.
+                - 802.11ax (WiFi 6)
+                - 802.11ax, or WiFi 6, further improves WLAN eticiency, especially in crowded areas, by otering
+                - higher data rates (theoretical maximum of 9.6 Gbps), better coverage, and reduced power
+                - consumpton.
+                - It introduces OFDMA and BSS Coloring to increase efficiency and reduce interference in both the 2.4
+                - GHz and 5 GHz bands.
+                - WiFi 6 is designed to support a larger number of devices and demanding applications like 4K/8K
+                - video streaming, virtual reality, and IoT devices
+                - ## 802.11a
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - A radio-based [LAN](https://foldoc.org/LAN) [protocol](https://foldoc.org/protocol) which speaks [OFDM](https://foldoc.org/OFDM) at 5GHz, one of the two [wi-fi](https://foldoc.org/wi-fi) protocols.
+                - 
+                - Last updated: [2003-09-02](https://foldoc.org/new.html)
+                - 
+                - ## 802.11b
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - An [IEEE](https://foldoc.org/IEEE) [wireless](https://foldoc.org/wireless) [local area networks](https://foldoc.org/local+area+networks) (WLAN) [standard](https://foldoc.org/standard) [protocol](https://foldoc.org/protocol) which speaks [DSSS](https://foldoc.org/DSSS) at 2.4GHz. 802.11b is one of the two [wi-fi](https://foldoc.org/wi-fi) protocols. It operates at 11 megabits per second (Mbps) compared with [802.11g](https://foldoc.org/802.11g) which operates at 54 Mbps.
+                - 
+                - Last updated: [2004-01-11](https://foldoc.org/new.html)
+                - 
+                - ## 802.11g
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html) *,*  [__standard__](https://foldoc.org/contents/standard.html)>
+                - An [IEEE](https://foldoc.org/IEEE) [wireless](https://foldoc.org/wireless) [local area network](https://foldoc.org/local+area+network) (WLAN) [standard](https://foldoc.org/standard) [protocol](https://foldoc.org/protocol), expected to be approved in June 2003. 802.11g offers wireless transmission over relatively short distances at up to 54 megabits per second (Mbps).
+                - 
+                - 802.11g operates in the 2.4 GHz range and is thus compatible with [802.11b](https://foldoc.org/802.11b) (11 Mbps Wi-Fi).
+            - Cellular
+                - ## Cellular
+                    - [Size]();-[H2]()
+                - 
+                - <[__language__](https://foldoc.org/contents/language.html)>
+                - A system for [cellular automaton](https://foldoc.org/cellular+automaton) programming by J Dana Eckart [__<dana@faculty.cs.runet.edu>__](mailto:dana@faculty.cs.runet.edu). Cellular includes a [byte-code compiler](https://foldoc.org/byte-code+compiler), [run-time system](https://foldoc.org/run-time+system) and a viewer.
+                - 
+                - Posted to comp.sources.unix, volume 26.
+                - 
+                - See also [Cellang](https://foldoc.org/Cellang).
+                - Cellular
+                - Cellular technology refers to the wireless communication method that utilizes a network of cell
+                - sites, each covering a specific area known as a cell.
+                - The fundamental feature of cellular networks is the ability to re-use frequencies to increase the
+                - capacity and coverage of mobile services.
+                - Modern cellular networks are divided into generations: 2G, 3G, 4G, and 5G, each supporting
+                - increased data speeds and connectivity features.
+                - Cellular technology enables a wide range of applications beyond voice calls, including mobile
+                - internet access, video streaming, and the connectivity of IoT (Internet of Things) devices.
+            - Satellite
+                - Satellite
+                - Satellite communicaton uses satellites orbitng the Earth to relay data, voice, and video across long
+                - distances, including remote and rural areas where other forms of connectivity might be
+                - unavailable.
+                - It provides broadband internet access by communicating with a satellite dish installed at the user's
+                - location, otering global coverage.
+                - However, satellite communication can experience latency issues and may be affected by weather
+                - conditons.
+        - Wired
+            - 802.3 standards
+                - 802.3 Standards
+                - This set of standards, also known as Ethernet, defines the protocols for wired LAN (Local Area
+                - Network) technology, covering aspects like frame formats and physical layer specifications.
+                - ### 802.3 ⇝
+                    - [Size]();-[H3]()
+                - ## IEEE 802.3
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - The [IEEE](https://foldoc.org/IEEE) standard defining the [hardware layer](https://foldoc.org/hardware+layer) and [transport layer](https://foldoc.org/transport+layer) of (a varient of) [Ethernet](https://foldoc.org/Ethernet). The maximum [segment](https://foldoc.org/segment) length is 500m and the maximum total length is 2.5km. The maximum number of hosts is 1024.
+                - 
+                - The maximum [packet](https://foldoc.org/packet) size is 1518 bytes. If the upper layer [protocol](https://foldoc.org/protocol) submits a [PDU](https://foldoc.org/PDU) less than 64 bytes, 802.3 will pad the [LLC Info](https://foldoc.org/LLC+Info) field to achieve the minimum 64 bytes.
+                - 
+                - Although it is not technically correct, the terms "[packet](https://foldoc.org/packet)" and frame are used interchangeably. The [ISO](https://foldoc.org/ISO)/[IEC](https://foldoc.org/IEC) 8802-3 [ANSI](https://foldoc.org/ANSI)/[IEEE](https://foldoc.org/IEEE) 802.3 Standards refer to [MAC](https://foldoc.org/MAC) sub-layer [frames](https://foldoc.org/frames) consisting of the Destination Address, Source Address, Length, LLC Info., and [FCS](https://foldoc.org/FCS) fields. The [Preamble](https://foldoc.org/Preamble) and [SFD](https://foldoc.org/SFD) are (usually) considered a header to the [MAC](https://foldoc.org/MAC) Frame. This header plus the MAC Frame constitute a "Packet".
+            - Single-mode vs. multimode fiber
+                - Fiber-Optic
+                - Fiber-optic cabling uses light to transmit data, otering significantly higher speeds and greater
+                - bandwidth than traditional copper cables.
+                - It consists of glass or plastic fibers that carry light signals over long distances with minimal loss,
+                - making it ideal for high-speed data transmission in telecommunications and internet backbone
+                - infrastructures.
+                - Single-Mode
+                - Single-mode fiber optic cable is designed for long-distance communicaton, using a single strand of
+                - glass fiber with a small diameter that allows only one mode of light to propagate.
+                - This design minimizes atenuaton and dispersion over distances, making it suitable for high-speed,
+                - high-bandwidth transmissions over lengths of up to several kilometers without the need for signal
+                - repeaters.
+                - Single-mode fiber is commonly used in telecommunicatons and cable TV networks.
+                - Multimode
+                - Multimode fiber optic cable uses larger diameter fibers that allow multple modes of light to
+                - propagate simultaneously, making it suitable for short-distance transmission of data.
+                - This type of fiber is typically used within buildings or in campus networks, supporting data rates at
+                - shorter distances, usually up to 500 meters for data applicatons and up to 2 kilometers for telecom
+                - applicatons.
+                - Multimode fibers are more atordable and easier to work with compared to single mode fibers,
+                - making them a popular choice for local-area networks (LANs) and other short-range applicatons.
+            - {{Direct Attach Copper}} ({{DAC}}) cable
+                - Direct Attach Copper
+                - DAC cables are used for short-range connections between networking equipment.
+                - They oter a cost-effectve, low-power alternative for close-range connectivity.
+                - Twinaxial cable
+                    - Twinaxial
+                    - Twinaxial cable, or Twinax, consists of two inner conductors surrounded by a common shielding,
+                    - used mainly in short-range, highspeed differental signaling applicatons.
+                    - It is often used in data center and enterprise networking environments for connections such as 10
+                    - Gigabit Ethernet over short distances.
+                    - Twinax cables oter a cost-effectve soluton for high-speed data transmission with lower latency and
+                    - better noise immunity than twisted pair cables.
+            - Coaxial cable
+                - ## coaxial cable
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html)>
+                - A kind of cable with a solid central conductor surrounded by insulator, in turn surrounded by a cylindrical shield woven from fine wires. It is used to carry high frequency signals such as [video](https://foldoc.org/video) or [radio](https://foldoc.org/radio). The shield is usually connected to electrical ground to reduce electrical interference.
+                - Coaxial/RG-6
+                - Coaxial cable, specifically RG-6, is a type of electrical cable consisting of a central conductor,
+                - insulating layer, metallic shield, and plastic jacket, used for transmitng television, satellite, and
+                - broadband internet signals.
+                - RG-6 is thicker and has beter shielding compared to its predecessors, making it less susceptble to
+                - interference and atenuaton, ideal for high-frequency applications like cable TV and internet
+                - services.
+                - It is commonly used in residental and commercial installatons for its durability and high-quality
+                - signal transmission.
+            - Cable speeds
+                - Cable Speeds
+                - Cable speeds vary by type, impacting network performance; Ethernet cables like Cat 5, 5e, 6, and
+                - 6a support speeds from 100 Mbps to 10 Gbps over varying distances.
+                - Coaxial cables are used for broadband internet, supporting high-speed data transmission, while
+                - fiber optic cables (single mode and multimode) oter the highest speeds, up to 100 Gbps, over long
+                - distances.
+                - Key factors atecting cable speed include cable quality, installation, and environmental
+                - interference.
+            - Plenum vs. non-plenum cable
+                - Plenum Rating
+                - These terms describe the fire resistance of cables.
+                - Plenum-rated cables are designed to resist fire and emit low smoke when exposed to flame, making
+                - them safe for use in the air spaces of buildings.
+                - Riser-rated cables are designed to prevent fire from traveling between floors through vertical shafts
+                - or risers.
+                - Non-plenum cables are less expensive but produce more toxic fumes when burned and are typically
+                - used where they are not exposed to circulating air ducts.
+        - Transceivers
+            - Transceivers/Media Converters
+            - Transceivers are devices that can both transmit and receive data, often used in networking to
+            - interface with cables of diterent types, such as converting electrical signals to optical signals for
+            - fiber optic cables.
+            - Media converters are a type of transceiver that convert data signals from one media type to another
+            - (e.g., copper cable to fiber optic cable), enabling the integration of diterent network technologies.
+            - These devices are crucial for extending network distances, improving network flexibility, and
+            - supporting diverse networking environments.
+            - Protocol
+                - Transceivers: Protocol
+                - Transceivers must support the network protocols used in the network infrastructure, such as
+                - Ethernet or Fibre Channel.
+                - Using the correct transceiver protocol ensures reliable data transmission, minimizes errors, and
+                - supports the desired network speed and performance.
+                - 
+                - ## transceiver
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - Transmitter-receiver, any device that performs both functions.
+                - 
+                - For example, on an [Ethernet](https://foldoc.org/Ethernet) network, a transceiver is the hardware that connects a [host](https://foldoc.org/host) interface (e.g. an [Ethernet](https://foldoc.org/Ethernet) controller) to a [local area network](https://foldoc.org/local+area+network). Ethernet transceivers contain electronics that apply signals to the cable and sense other host's signals and collisions. See also [CSMA/CD](https://foldoc.org/CSMA/CD).
+                - Ethernet
+                    - Ethernet
+                    - Ethernet is a widely used networking technology that governs how data is transmited over LANs,
+                    - supporting a variety of speeds ranging from 10 Mbps to 100 Gbps.
+                    - It uses a combination of twisted pair and fiber optic cables to connect devices within a network,
+                    - applying a method of network access known as CSMA/CD (Carrier Sense Multiple Access with
+                    - Collision Detection).
+                    - 
+                    - ## Ethernet
+                        - [Size]();-[H2]()
+                    - 
+                    - <[__networking__](https://foldoc.org/contents/networking.html)>
+                    - A [local area network](https://foldoc.org/local+area+network) first described by Metcalfe & Boggs of [Xerox PARC](https://foldoc.org/Xerox+PARC) in 1976. Specified by [DEC](https://foldoc.org/DEC), [Intel](https://foldoc.org/Intel) and [XEROX](https://foldoc.org/XEROX) (DIX) as [IEEE 802.3](https://foldoc.org/IEEE+802.3) and now recognised as the industry standard.
+                    - 
+                    - Data is broken into [packets](https://foldoc.org/packets) and each one is transmitted using the [CSMA/CD](https://foldoc.org/CSMA/CD) [algorithm](https://foldoc.org/algorithm) until it arrives at the destination without colliding with any other packet. The first [contention slot](https://foldoc.org/contention+slot) after a transmission is reserved for an [acknowledge](https://foldoc.org/acknowledge) packet. A [node](https://foldoc.org/node) is either transmitting or receiving at any instant. The [bandwidth](https://foldoc.org/bandwidth) is about 10 Mbit/s. Disk-Ethernet-Disk transfer rate with [TCP/IP](https://foldoc.org/TCP/IP) is typically 30 kilobyte per second.
+                    - 
+                    - Version 2 specifies that [collision](https://foldoc.org/collision) detect of the transceiver must be activated during the [inter-packet gap](https://foldoc.org/inter-packet+gap) and that when transmission finishes, the differential transmit lines are driven to 0V (half step). It also specifies some [network management](https://foldoc.org/network+management) functions such as reporting [collisions](https://foldoc.org/collisions), retries and [deferrals](https://foldoc.org/deferrals).
+                    - 
+                    - Ethernet cables are classified as "XbaseY", e.g. 10base5, where X is the data rate in [Mbps](https://foldoc.org/Mbps), "base" means "[baseband](https://foldoc.org/baseband)" (as opposed to [radio frequency](https://foldoc.org/radio+frequency)) and Y is the category of cabling. The original cable was [10base5](https://foldoc.org/10base5) ("full spec"), others are [10base2](https://foldoc.org/10base2) ("thinnet") and [10baseT](https://foldoc.org/10baseT) ("twisted pair") which is now (1998) very common. [100baseT](https://foldoc.org/100baseT) ("[Fast Ethernet](https://foldoc.org/Fast+Ethernet)") is also increasingly common.
+                    - 
+                    - [Usenet](https://foldoc.org/Usenet) newsgroup: [comp.dcom.lans.ethernet](https://groups.google.com/group/comp.dcom.lans.ethernet).
+                    - 
+                    - [__http://wwwhost.ots.utexas.edu/ethernet/ethernet-home.html__](http://wwwhost.ots.utexas.edu/ethernet/ethernet-home.html).
+                - {{Fibre Channel}} ({{FC}})
+                    - Fibre Channel
+                    - Fibre Channel is a high-speed network technology primarily used for transmitting data between
+                    - computer devices at data rates of up to 16 Gbps (and higher) in storage area networks (SANs).
+                    - It is known for its reliability and speed, making it suitable for connecting servers to shared storage
+                    - devices and for transferring large volumes of data.
+                    - 
+                    - ## Fibre Channel
+                        - [Size]();-[H2]()
+                    - 
+                    - <[__storage__](https://foldoc.org/contents/storage.html) *,*  [__networking__](https://foldoc.org/contents/networking.html) *,*  [__communications__](https://foldoc.org/contents/communications.html)>
+                    - An [ANSI](https://foldoc.org/ANSI) [standard](https://foldoc.org/standard) originally intended for high-speed [SANs](https://foldoc.org/SANs) connecting [servers](https://foldoc.org/servers), [disc arrays](https://foldoc.org/disc+arrays), and [backup](https://foldoc.org/backup) devices, also later adapted to form the [physical layer](https://foldoc.org/physical+layer) of [Gigabit Ethernet](https://foldoc.org/Gigabit+Ethernet).
+                    - 
+                    - Development work on Fibre channel started in 1988 and it was approved by the ANSI standards committee in 1994, running at 100Mb/s. More recent innovations have seen the speed of Fibre Channel SANs increase to 10Gb/s. Several topologies are possible with Fibre Channel, the most popular being a number of devices attached to one (or two, for redundancy) central Fibre Channel switches, creating a reliable infrastructure that allows servers to share storage arrays or tape libraries.
+                    - 
+                    - One common use of Fibre Channel SANs is for high availability databaseq clusters where two servers are connected to one highly reliable [RAID](https://foldoc.org/RAID) array. Should one server fail, the other server can mount the array itself and continue operations with minimal [downtime](https://foldoc.org/downtime) and loss of data.
+                    - 
+                    - Other advanced features include the ability to have servers and [hard drives](https://foldoc.org/hard+drives) seperated by hundreds of miles or to rapidly [mirror](https://foldoc.org/mirror) data between servers and hard drives, perhaps in seperate geographic locations.
+                    - 
+                    - [__Fibre Channel Industry Association__](http://fibrechannel.org/) (FCIA).
+            - Form factors
+                - ## form factor
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html)>
+                - The type of packaging of a processor [integrated circuit](https://foldoc.org/integrated+circuit), e.g. [PPGA](https://foldoc.org/PPGA), [FC-PGA](https://foldoc.org/FC-PGA).
+                - 
+                - More generally, a term popular among [marketroids](https://foldoc.org/marketroids) in 1998, denoting the shape of something designed.
+                - {{Small Form-factor Pluggable}} ({{SFP}})
+                    - Small Form-Factor Pluggable (SFP)
+                    - The Small Form-factor Pluggable (SFP) is a compact, hot-pluggable network interface module used
+                    - for both telecommunication and data communications applications.
+                    - It supports speeds up to 1 Gbps and is used to connect a network device to a fiber optc or copper
+                    - networking cable.
+                    - SFP modules allow for easy network upgrades and maintenance due to their plug-and-play
+                    - capability.
+                    - Enhanced Form-Factor Pluggable (SFP+)
+                    - The Enhanced Form-factor Pluggable (SFP+) is an upgraded version of the SFP that supports data
+                    - rates up to 10 Gbps.
+                    - It is used for high-speed network connectons on network switches, routers, and other networking
+                    - equipment.
+                    - SFP+ modules provide a cost-effectve method to achieve 10 Gigabit Ethernet connectivity over fiber
+                    - or copper cabling.
+                - 
+                - {{Quad Small Form-factor Pluggable}} ({{QSFP}})
+                    - Quad Small Form-Factor Pluggable (QSFP)
+                    - The Quad Small Form-factor Pluggable (QSFP) is a compact, hot-pluggable transceiver used for
+                    - network communicatons, capable of supporting four times the bandwidth of SFP+ modules, hence
+                    - the name "Quad".
+                    - It supports data rates of up to 40 Gbps (4x10 Gbps) and is commonly used in data centers and high-
+                    - performance computng environments for high-density applications.
+                    - QSFP modules are ideal for high-speed network infrastructures requiring large amounts of data
+                    - throughput.
+                    - Enhanced Quad Small Form-Factor Pluggable (QSFP+)
+                    - The Enhanced Quad Small Form-factor Pluggable (QSFP+) is an evoluton of the QSFP interface,
+                    - supporting data rates up to 40 Gbps or more.
+                    - It provides increased bandwidth and port density over SFP+ modules, making it suitable for high-
+                    - speed data transmissions in cloud computing, data centers, and high-performance computing
+                    - applications.
+                    - QSFP+ modules allow for eticient network scalability and flexibility in accommodating growing
+                    - data demands.
+        - Connector types
+            - Connector Types
+            - Connector types are the physical interfaces used to connect cables to devices, ensuring proper
+            - electrical contact and signal transmission across network components.
+            - {{Subscriber Connector }}({{SC}})
+                - Subscriber Connector (SC)
+                - The Subscriber Connector (SC) is a fiber optic connector with a push-pull latching mechanism,
+                - ensuring a secure and stable connection.
+                - It features a square-shaped design and is widely used in single-mode fibers for telecommunications,
+                - CATV, and network applications.
+                - SC connectors are appreciated for their excellent performance, low-cost, and ease of handling.
+            - {{Local Connector}} ({{LC}})
+                - Local Connector (LC)
+                - The Local Connector (LC) is a small formfactor fiber optic connector used for single-mode and
+                - multmode fiber cables, featuring a compact, square design with a push-pull latching mechanism.
+                - It is widely used in telecommunications and data communications for its high-density connectivity
+                - and ease of use, especially in environments where space is limited.
+                - LC connectors oter low insertion loss and high precision, making them suitable for high-speed data
+                - networks and telecommunicatons applicatons.
+            - {{Straight Tip}} ({{ST}})
+                - Straight Tip (ST)
+                - The Straight Tip (ST) connector is a fiber optc connector with a bayonet-style locking mechanism,
+                - designed for quick and secure connections.
+                - It is commonly used in multimode networks, such as campus applicatons, local area networks, and
+                - security systems.
+                - ST connectors are known for their durability and reliable performance in a variety of optcal fiber
+                - environments.
+                - Mult-fiber Push On (MPO) is a type of fiber optc connector designed for high-density applications,
+                - capable of connectng multple fibers (usually 12 or 24) in a single connector.
+                - MPO connectors are commonly used in data centers and telecommunications networks to facilitate
+                - rapid deployment and high bandwidth over fiber optc cabling.
+                - MPO enables efficient, scalable fiber optc networks that support high-speed data transmission.
+            - {{Multi-fiber Push On}} ({{MPO}})
+                - Multi-fiber Push On
+                - Multi-fiber Push On (MPO) is a type of fiber optic connector designed for high-density applicatons,
+                - capable of connecting multiple fibers (usually 12 or 24) in a single connector.
+                - MPO connectors are commonly used in data centers and telecommunicatons networks to facilitate
+                - rapid deployment and high bandwidth over fiber optic cabling.
+                - MPO enables eticient, scalable fiber optic networks that support high-speed data transmission.
+            - 
+            - {{Registered Jack}} ({{RJ}})11
+                - ## RJ-11
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html) *,*  [__communications__](https://foldoc.org/contents/communications.html)>
+                - An American-style telephone jack with six possible connections. A telephone normally uses two pairs of wires. Often found on the back of US-manufactured [modems](https://foldoc.org/modems) or for connection to a [leased line](https://foldoc.org/leased+line).
+                - 
+                - Last updated: [1998-06-30](https://foldoc.org/new.html)
+                - RJ11
+                - The RJ11 connector is a standard telephone interface used primarily for connecting telephone
+                - equipment.
+                - It typically features a 6-position 4-contact (6P4C) configuration, supporting up to four wires, and is
+                - commonly used for single-line or two-line telephone connections.
+                - RJ11 is widely recognized for its use in residental and business landline telephone setups.
+                - 
+            - RJ45
+                - ## RJ-45
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html)>
+                - A [serial](https://foldoc.org/serial) connector which looks very much like a standard telephone connector, except it houses eight wires instead of four.
+                - 
+                - RJ-45s are typically found on [computers](https://foldoc.org/computers) either integrated into the [mother board](https://foldoc.org/mother+board) or on a [NIC](https://foldoc.org/NIC). Because they are so small they are often used on devices such as [terminal servers](https://foldoc.org/terminal+servers) that have many [ports](https://foldoc.org/ports).
+                - 
+                - [Ethernet](https://foldoc.org/Ethernet) ([10baseT](https://foldoc.org/10baseT)) and [Token Ring](https://foldoc.org/Token+Ring) sometimes use four wires of an RJ-45 plug, [100baseVG](https://foldoc.org/100baseVG) uses all eight. [100BaseTX](https://foldoc.org/100BaseTX) uses the same four wires of the RJ-45 connector as 10baseT but the wire must be [category 5](https://foldoc.org/category+5) instead of [category 3](https://foldoc.org/category+3).
+                - 
+                - [Would the cable normally be [shielded twisted pair](https://foldoc.org/shielded+twisted+pair) or [unshielded twisted pair](https://foldoc.org/unshielded+twisted+pair)?]
+                - RJ45
+                - The RJ45 connector is a standard for Ethernet and other network cables, characterized by an 8-
+                - position 8-contact (8P8C) configuration.
+                - It is used to connect computers, routers, switches, and other network devices for Local Area
+                - Networks (LANs) and is known for supporting high-speed data transmission.
+                - RJ45 connectors are essental for wired networking applicatons, providing reliable connections for
+                - internet and intranet communications.
+            - {{Bayonet Neill–Concelman}} ({{BNC}})
+                - ## BNC
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html)>
+                - A connector for [coaxial cable](https://foldoc.org/coaxial+cable) such as that used for some video connections and [RG58](https://foldoc.org/RG58) "[cheapernet](https://foldoc.org/cheapernet)" connections. A BNC connector has a bayonet-type shell with two small knobs on the female connector which lock into spiral slots in the male connector when it is twisted on.
+                - 
+                - Different sources expand BNC as Bayonet Navy Connector, British Naval Connector, Bayonet Neill Concelman, or Bayonet Nut Connection.
+            - F-type
+                - F-Type Connector
+                - The F-type connector is commonly used for cable and satellite television, broadband internet, and
+                - radio frequency applications.
+                - It screws onto the male port of an RG-6 or RG-59 coaxial cable, ensuring a secure connection for
+                - transmitting video and audio signals.
+                - F-type connectors are valued for their low cost, simplicity, and effectveness in shielding against
+                - electromagnetc interference.
+    -  1.6 Compare and contrast network topologies, architectures, and types.
+        - 1111
+            - 6 – Network Topologies, Architectures, and Types
+            - Topologies
+            - Topology Usually Means
+            - Bus Single cable backbone, all devices share.
+            - Ring Each node connects to two others.
+            - Star Devices connect to central switch.
+            - Mesh Devices connect directly to each other.
+            - Hybrid Combines multiple topologies.
+            - Architectures
+            - Architecture Usually Means
+            - Peer-to-Peer Devices share resources directly.
+            - Client-Server Central server provides resources/services.
+            - Cloud Centralized services via internet.
+            - Types
+            - Type Usually Means
+            - LAN Network in limited geographic area.
+            - WAN Network spanning large distances.
+            - PAN Personal short-range network.
+            - MAN City-wide network.
+            - WLAN Wireless local area network.
+            - CAN Campus-wide academic/business network.
+            - SAN High-speed storage area network.
+            - SD-WAN Software-managed WAN connections.
+            - IoT Network of internet-enabled smart devices.
+            - 
+            - 🌐 Network Topologies
+            - Topology Usually Means
+            - Mesh Devices connect to many other devices.
+            - Hybrid Mix of two or more topologies.
+            - Star / Hub-and-Spoke Devices connect to central node/hub.
+            - Spine and Leaf Scalable two-layer data center topology.
+            - Point-to-Point Direct connection between two devices.
+            - Three-Tier Model Core, distribution, and access layers.
+            - Collapsed Core Core and distribution merged.
+            - 🔁 Traffic Flows
+            - Flow Usually Means
+            - North-South Client-to-server, data in/out.
+            - East-West Internal server-to-server traffic.
+            - 🏙️ Network Types (by Area)
+            - Type Usually Means
+            - PAN Personal device network, very small.
+            - LAN Network within a small location.
+            - CAN Campus-wide network (e.g. university).
+            - MAN City-sized regional network.
+            - WAN Wide geographic network (e.g. internet).
+            - SAN High-speed shared storage network.
+            - Order from smallest to largest: PAN―LAN ↔ CAN ↔ MAN ↔ WAN
+            - 🧱 Network Architectures
+            - Architecture Usually Means
+            - Peer-to-Peer (P2P) Devices share data without central server.
+            - Client-Server Server provides services to clients.
+            - Backbone Core path for network traffic.
+            - Segment Subsection of a larger network.
+            - 
+            - **Mesh Topology** – Every node connects to many others 
+            - **Hybrid Topology** – Mixed topologies for flexibility
+            - **Star Topology** – Centralized hub; simple but single failure point
+            - **Spine-and-Leaf** – Leaf switches to spine switches; scalable
+            - **Point-to-Point** – Direct line between two nodes
+            - **Three-Tier Core** – Fast routing; main traffic backbone
+            - **Three-Tier Distribution** – Filters/aggregates; connects to core
+            - **Three-Tier Access** – Connects users/devices to the network
+            - **Collapsed Core** – Combines core+distribution in one layer
+            - **North-South Traffic** – Traffic between data center and external
+            - **East-West Traffic** – Internal server-to-server communication
+            - 
+        - Network Topologies
+        - Network topologies describe the layout or arrangement of elements (links, nodes, etc.) of a
+        - computer network.
+        - There are several types, each with unique configuratons and characteristcs, influencing the
+        - network's performance, reliability, and scalability.
+        - [Size]();-[H0]()
+        - {{Mesh}} **Nodes connect directly,** [**dynamically**](https://onelook.com/?w=dynamically&loc=inbrief)**,** [**redundantly**](https://onelook.com/?w=redundantly&loc=inbrief)**.** 
+            - Mesh
+            - Mesh topology is a network setup where each node connects directly to an arbitrary number of
+            - other nodes, creating a network with no central connectng point.
+            - This topology ensures high availability and redundancy because if any one link fails, data can be
+            - rerouted through multiple alternative paths.
+            - It is commonly used in wireless networks and for applications requiring high resilience and
+            - uninterrupted communicaton.
+        - Hybrid
+            - Hybrid
+            - Hybrid topology combines two or more different topologies to form a resultant topology that
+            - leverages the advantages and mitigates the disadvantages of the constituent topologies.
+            - It oters flexibility in network design and can be tailored to meet specific needs or constraints of an
+            - organization.
+            - Hybrid topologies are scalable and adaptable, making them suitable for large networks or those with
+            - complex requirements.
+        - {{Star/hub-and-spoke}} **Central node** [**connects**](https://onelook.com/?w=connects&loc=inbrief) **all devices.** 
+            - ## star network
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - A [network](https://foldoc.org/network) topology where every [node](https://foldoc.org/node) has a direct connection (only) to the central node, which might be a [hub](https://foldoc.org/hub), [switch](https://foldoc.org/switch), or [server](https://foldoc.org/server).
+            - Star/Hub-and-Spoke
+            - In a star or hub-and-spoke topology, all nodes are connected to a central node or hub.
+            - This setup simplifies network management and troubleshootng but creates a single point of failure, as
+            - the failure of the central hub can bring down the entre network.
+            - It is widely used in LAN environments due to its simplicity and ease of setup.
+        - Spine and leaf
+            - Spine and Leaf
+            - Spine and leaf architecture is a two-layer network topology that is highly scalable and minimizes
+            - latency by ensuring that every leaf switch (access layer) is separated by no more than two switches
+            - from any other leaf switch.
+            - In this topology, leaf switches form the access layer where devices are connected, while spine
+            - switches serve as the backbone for data transport, connecting all leaf switches without
+            - interconnecting with each other.
+            - This design is particularly favored in modern data centers and cloud computng environments, where
+            - rapid and reliable data access and network redundancy are crucial.
+        - {{Point to point}} **Direct connection between two nodes.** 
+            - ## Point-to-Point Protocol
+                - [Size]();-[H2]()
+            - 
+            - <[__communications__](https://foldoc.org/contents/communications.html) *,*  [__protocol__](https://foldoc.org/contents/protocol.html)>
+            - (PPP) The [protocol](https://foldoc.org/protocol) defined in [RFC 1661](https://foldoc.org/RFC+1661), the [Internet](https://foldoc.org/Internet) standard for transmitting [network layer](https://foldoc.org/network+layer) [datagrams](https://foldoc.org/datagrams) (e.g. [IP](https://foldoc.org/IP) packets) over serial point-to-point links.
+            - 
+            - PPP has a number of advantages over [SLIP](https://foldoc.org/SLIP); it is designed to operate both over [asynchronous](https://foldoc.org/asynchronous) connections and bit-oriented [synchronous](https://foldoc.org/synchronous) systems, it can configure connections to a remote network dynamically, and test that the link is usable. PPP can be configured to encapsulate different network layer protocols (such as [IP](https://foldoc.org/IP), [IPX](https://foldoc.org/IPX), or [AppleTalk](https://foldoc.org/AppleTalk)) by using the appropriate [Network Control Protocol](https://foldoc.org/Network+Control+Protocol) (NCP).
+            - 
+            - [RFC 1220](https://foldoc.org/RFC+1220) describes how PPP can be used with remote bridging.
+            - 
+            - [Usenet](https://foldoc.org/Usenet) newsgroup: [comp.protocols.ppp](https://groups.google.com/group/comp.protocols.ppp).
+            - 
+            - [__A paper on PPP__](ftp://ftp.uu.net/vendor/MorningStar/papers/sug91-cheapIP.ps.Z).
+            - Point-to-Point
+            - This topology involves a direct connecton between two networking devices, typically using a single
+            - cable or wireless link.
+            - It is mainly used for dedicated connectons, such as those between a main otice and a branch
+            - otice, or between two pieces of network equipment.
+        - Three-tier hierarchical model
+            - Three-tier Hierarchical Model
+            - The three-tier hierarchical network model is a structured approach to network design that breaks
+            - the network into three distinct layers.
+            - Each layer is designed to serve a specific purpose, optimizing scalability, performance, and
+            - maintainability.
+            - Core
+                - Core Layer
+                - The core layer is the backbone of the network, handling high-speed packet switching across the
+                - entire network.
+                - It is responsible for fast and reliable routng of data and should have high redundancy and fault
+                - tolerance to prevent downtime.
+            - Distribution
+                - Distribution Layer
+                - The distribution layer acts as the intermediary between the core and access layers, managing
+                - routing, filtering, and WAN access.
+                - It aggregates the data received from the access layer switches before it is transmitted to the core
+                - layer for routing to the final destination.
+            - Access
+                - Access Layer
+                - The access layer is the network’s point of entry for devices and end users, connecting them to the
+                - network.
+                - This layer includes switches and access points that provide connectvity to desktop PCs, laptops,
+                - and other network devices.
+            - 
+        - Collapsed core
+            - Collapsed Core Architecture
+            - Collapsed core architecture merges the core and distribution layers into a single layer, simplifying
+            - the network design and reducing hardware costs.
+            - This approach is ideal for small to medium sized networks where managing separate layers is
+            - unnecessary.
+            - The architecture facilitates easier management and maintenance, while enhancing performance by
+            - reducing latency between the network's core and distribution functions.
+        - 
+        - Traffic flows
+            - North-south
+                - North-South Tratic
+                - This describes the flow of network tratic between the data center and the outside world (e.g., the
+                - internet or other data centers), focusing on inbound and outbound tratic patterns.
+                - It typically involves client-to-server communication, where clients access services hosted in the
+                - data center.
+            - East-west
+                - East-West Tratic
+                - Refers to the tratic flow within the data center, especially in modern data centers with heavily
+                - virtualized environments.
+                - This includes server-to-server, server-to-storage, and VM-to-VM tratic, highlighting the importance
+                - of eticient internal networking to support high volumes of internal data exchange.
+    -  1.6  question
+        - [Size]();-[H0]()
+        - {{Local Area Network}} ({{LAN}}) **Network connecting computers in proximity.** 
+            - ### LAN ⇝
+                - [Size]();-[H3]()
+            - ## local area network
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - (LAN) A data communications network which is geographically limited (typically to a 1 km radius) allowing easy interconnection of terminals, [microprocessors](https://foldoc.org/microprocessors) and computers within adjacent buildings. [Ethernet](https://foldoc.org/Ethernet) and [FDDI](https://foldoc.org/FDDI) are examples of standard LANs.
+            - 
+            - Because the network is known to cover only a small area, optimisations can be made in the network signal protocols that permit data rates up to 100Mb/s.
+            - 
+            - See also [token ring](https://foldoc.org/token+ring), [wide area network](https://foldoc.org/wide+area+network), [metropolitan area network](https://foldoc.org/metropolitan+area+network)..
+            - 
+            - [Usenet](https://foldoc.org/Usenet) newsgroup: [comp.dcom.lans.misc](https://groups.google.com/group/comp.dcom.lans.misc).
+        - {{Wide Area Network}} ({{WAN}}) **Network** [**spanning**](https://onelook.com/?w=spanning&loc=inbrief) **regional, national boundaries.** 
+            - ## Wide Area Network
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - (WAN) A [network](https://foldoc.org/network), usually constructed with [serial lines](https://foldoc.org/serial+lines), extending over distances greater than one kilometre.
+            - 
+            - Compare [local area network](https://foldoc.org/local+area+network), [metropolitan area network](https://foldoc.org/metropolitan+area+network).
+        - {{Metropolitan Area Network}} ({{MAN}}) **Network covering city-sized geographical area.** 
+            - ## Metropolitan Area Network
+                - [Size]();-[H2]()
+            - 
+            - (man) a data network intended to serve an area the size of a attack l<security> an city. Such networks are being implemented by innovative techniques, such as running [optical fibre](https://foldoc.org/optical+fibre) through subway tunnels. A popular example of a man is [smds](https://foldoc.org/smds). attack
+            - 
+            - <[__security__](https://foldoc.org/contents/security.html)>
+            - Sn also [Local Area Network](https://foldoc.org/Local+Area+Network), [Wide Area Network](https://foldoc.org/Wide+Area+Network).
+        - {{Campus Area Network}} ({{CAN}}) 
+        - {{Storage Area Network}} ({{SAN}})
+            - ### SAN ⇝
+                - [Size]();-[H3]()
+            - ## Storage Area Network
+                - [Size]();-[H2]()
+            - 
+            - <[__storage__](https://foldoc.org/contents/storage.html)>
+            - (SAN) A high-speed subnetwork of shared storage devices. A storage device is a machine that contains nothing but a disk or disks for storing data.
+            - 
+            - A SAN's architecture works in a way that makes all storage devices available to all servers on a LAN or WAN. As more storage devices are added to a SAN, they too will be accessible from any server in the larger network. The server merely acts as a pathway between the end user and the stored data.
+            - 
+            - Because stored data does not reside directly on any of a network's servers, server power is used for business applications, and network capacity is released to the end user.
+        - {{Personal Area Network}} ({{PAN}})
+        - order from smallest to largest 
+            - pan
+            - lan
+            - can
+            - man
+        - network architecture 
+        - peer-to-peer (p2p)
+        - client server network 
+        - backbone 
+        - segment 
+        - network topologies
+        - 
+    -  1.7 Given a scenario, use appropriate IPv4 network addressing.
+        - 1111
+            - Concept Usually Means
+            - IPv4 Address 32-bit dotted decimal network address.
+            - Subnet Mask Defines network/host bits in address.
+            - CIDR Notation Slash format to show subnet bits.
+            - Default Gateway Routes traffic to other networks.
+            - Public IP Routable on the internet.
+            - Private IP Not routable on public internet.
+            - Loopback (127.0.0.1) Test local networking stack.
+            - APIPA (169.254.x.x) Auto IP when DHCP fails.
+            - Broadcast Address Sends data to all hosts.
+            - Network Address Identifies the subnet.
+            - Host Address Unique device within a subnet.
+            - Class A /8 network (1–126).
+            - Class B /16 network (128–191).
+            - Class C /24 network (192–223).
+            - 
+            - Term Usually Means
+            - Public IP Routable address on the internet.
+            - Private IP Reserved for local/internal networks.
+            - APIPA 169.254.x.x self-assigned IP.
+            - RFC1918 Defines private IP ranges.
+            - Loopback 127.0.0.1, test local networking.
+            - 🧮 Subnetting and Addressing Schemes
+            - Term Usually Means
+            - CIDR Slash format for subnet mask.
+            - VLSM Different subnet sizes in same network.
+            - Network Address Identifies subnet segment.
+            - Broadcast Address Sends data to all hosts.
+            - Default Gateway Routes traffic to external networks.
+            - 🧩 IPv4 Address Classes
+            - Class Usually Means
+            - Class A 1–126, huge networks, /8 mask.
+            - Class B 128–191, midsize networks, /16 mask.
+            - Class C 192–223, small networks, /24 mask.
+            - Class D 224–239, multicast groups only.
+            - Class E 240–255, experimental addresses.
+            - 
+            - **APIPA** – 169.254.x.x auto IP when DHCP fails 
+                - **RFC1918** – Private IP ranges not routed publicly
+                - **Loopback** – 127.0.0.1, device talking to itself
+                - **VLSM** – Subnet sizes vary to match needs
+                - **CIDR** – IP and subnet mask in slash format
+                - **IPv4 Class A** – 1.0.0.0 to 126.0.0.0, 16M hosts
+                - **IPv4 Class B** – 128.0.0.0 to 191.255.0.0, 65K hosts
+                - **IPv4 Class C** – 192.0.0.0 to 223.255.255.0, 254 hosts
+                - **IPv4 Class D** – 224.0.0.0 to 239.255.255.255, multicast
+                - **IPv4 Class E** – 240.0.0.0 to 255.255.255.255, reserved
+        - [Size]();-[H0]()
+        - Public vs. private
+            - {{Automatic Private IP Addressing}} ({{APIPA}})
+                - Automatic Private IP Addressing (APIPA)
+                - Automatic Private IP Addressing (APIPA) is a feature of Windows operating systems that
+                - automatcally assigns a unique IP address from the range 169.254.0.1 to 169.254.255.254 to a
+                - computer when it fails to obtain an IP address from a DHCP server.
+                - APIPA allows for automatc, ad hoc network communicaton within a single subnet when a DHCP
+                - server is not available, but it does not provide internet access.
+                - This mechanism ensures that devices can stll communicate locally even in the absence of manual
+                - or DHCP-based IP configuration.
+            - RFC1918
+                - RFC1918
+                - RFC1918 is a standard that specifies the ranges of IP addresses reserved for private networks,
+                - preventing them from being routed on the public internet.
+                - The reserved IP address ranges include 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255,
+                - and 192.168.0.0 to 192.168.255.255.
+                - These addresses are intended for use in private networks, such as home, school, and enterprise
+                - LANs, allowing for internal network traffic without consuming public IP addresses.
+            - Loopback/localhost
+                - Loopback/Localhost
+                - The loopback address is a special IP address that is used to test network software and interfaces on a
+                - local device.
+                - For IPv4, the loopback address is 127.0.0.1, and for IPv6, it is::
+                - Sending data to the loopback address allows a computer to communicate with itself, which is useful for
+                - testing and troubleshooting network configurations and software.
+        - Subnetting
+            - {{Variable Length Subnet Mask}} ({{VLSM}})
+                - Classless (Variable-Length Subnet Mask) VLSM
+                - Classless Inter-Domain Routing (CIDR), involving Variable-Length Subnet Mask (VLSM), is a method
+                - for allocating IP addresses and routing that allows for flexible subnetting beyond the traditonal
+                - class-based IP addressing.
+                - With VLSM, subnets can have different sizes, allowing for eticient allocation of IP addresses
+                - according to the specific needs of each subnet, reducing the waste of IP addresses.
+                - This approach supports more efficient use of IP address space, accommodating a wide range of
+                - subnet sizes within the same network by allowing each subnet to use a mask length that is
+                - appropriate for its size and requirements.
+            - 
+            - {{Classless Inter-Domain Routing}} ({{CIDR}})
+                - Classless Inter-Domain Routing (CIDR) Notation
+                - CIDR notaton is a method for specifying IP addresses and their associated routng prefix that allows
+                - for variable-length subnet masking (VLSM), etectively replacing the classful network design.
+                - CIDR notation uses a slash ("/") followed by a number to specify the length of the prefix or subnet
+                - mask (e.g., 192.168.1.0/24), which indicates that the first 24 bits of the IP address are the network
+                - portion.
+                - This method significantly increases the eticiency of IP address allocation, allowing for more flexible
+                - and efficient use of IP address space across the internet.
+        - IPv4 address classes
+            - Class A
+                - Class A
+                - Class A addresses are designed for very large networks, with the first octet ranging from 1 to 126,
+                - providing a single network bit and 24 host bits in the address structure.
+                - This allows for 126 networks and approximately 16.7 million hosts per network, making Class A
+                - addresses suitable for governments and very large organizatons.
+                - The default subnet mask for Class A is 255.0.0.0.
+            - Class B
+                - Class B
+                - Class B addresses are intended for medium-sized networks, with the first octet ranging from 128 to
+                - 191.
+                - They oter 14 network bits and 16 host bits, allowing for approximately 16,384 networks with up to
+                - 65,534 hosts each.
+                - The default subnet mask for Class B is 255.255.0.0, making it suitable for universites, large
+                - corporatons, and regional ISPs.
+            - Class C
+                - Class C
+                - Class C addresses are allocated for small networks, with the first octet ranging from 192 to 223.
+                - These addresses provide 21 network bits and 8 host bits, accommodating up to 2,097,152 networks
+                - with up to 254 hosts each.
+                - The default subnet mask for Class C is 255.255.255.0, ideal for small businesses and local area
+                - networks (LANs).
+            - Class D
+                - Class D
+                - Class D addresses are reserved for multicast groups and do not define hosts and networks in the
+                - traditonal sense.
+                - The first octet ranges from 224 to 239, and these addresses are used for one-to-many
+                - communications, where one sender transmits data to multple receivers.
+                - Class D does not have a default subnet mask as it is used exclusively for multcast broadcastng.
+            - Class E
+                - Class E
+                - Class E addresses are reserved for experimental use and are not used in public networks.
+                - The first octet ranges from 240 to 255, and these addresses are intended for future or experimental
+                - purposes.
+                - Like Class D, Class E addresses do not have a designated network or host portion and do not have a
+                - default subnet mask.
+    -  1.8 Summarize evolving use cases for modern network environments.
+        - 111
+            - IoT Smart devices with network connectivity.
+            - Cloud Computing On-demand internet-based resources.
+            - Virtualization Running virtual machines on shared hardware.
+            - Edge Computing Processing data closer to the source.
+            - SDN Central software controls network hardware.
+            - Remote Work Users work from outside central office.
+            - Collaboration Tools Platforms enabling remote teamwork.
+            - Zero Trust Never trust; always verify network access.
+            - AI/ML in Networking Automated, adaptive network decisions.
+            - 
+            - Software-Defined Networking (SDN): Decouples control plane from forwarding plane.
+            - Software-Defined WAN (SD-WAN): Optimizes WAN traffic using central control.
+            - Application Aware: Identifies and prioritizes applications automatically.
+            - Zero-Touch Provisioning: Devices auto-configure from central server.
+            - Transport Agnostic: Uses MPLS, LTE, or broadband flexibly.
+            - Central Policy Management: Manages network rules from one interface.
+            - Virtual Extensible LAN (VXLAN): Extends Layer 2 over Layer 3.
+            - Layer 2 Encapsulation: Wraps Ethernet frames in UDP packets.
+            - Zero Trust Architecture (ZTA): No implicit trust; always verify identity.
+            - Policy-Based Authentication: Access based on context-driven policies.
+            - Authorization: Dynamic access control per session context.
+            - Least Privilege: Only minimum required access is granted.
+            - SASE/SSE: Cloud-delivered security and WAN services.
+            - SASE: Integrates networking and security in cloud.
+            - SSE: Cloud-based security functions without WAN.
+            - Infrastructure as Code (IaC): Manages infrastructure through written code.
+            - Automation: Auto-deploy infrastructure without manual steps.
+            - Playbooks/Templates: Reusable steps for consistent provisioning.
+            - Configuration Drift: Deviation from intended setup over time.
+            - Upgrades: Infrastructure updates via code changes.
+            - Dynamic Inventories: Infrastructure discovered and updated live.
+            - Source Control: Tracks infrastructure code changes reliably.
+            - Version Control: Manages revisions and reversions in code.
+            - Central Repository: Single, secure source of infrastructure truth.
+            - Conflict Identification: Detects and resolves simultaneous changes.
+            - Branching: Develop features independently before merging.
+            - IPv6 Addressing: 128-bit IP addressing replaces IPv4.
+            - Address Exhaustion: IPv6 prevents running out of addresses.
+            - Compatibility Requirements: Ensures IPv4 and IPv6 coexist peacefully.
+            - Tunneling: Encapsulates IPv6 in IPv4 packets.
+            - Dual Stack: Runs IPv4 and IPv6 simultaneously.
+            - NAT64: Translates IPv6―IPv4 addresses.
+        - [Size]();-[H0]()
+        - {{Software-Defined Network}} ({{SDN}}) and {{Software-Defined Wide Area Network}} ({{SD-WAN}})
+            - Software-defined networking
+            - Software-defined networking (SDN) is an innovative networking paradigm that decouples the
+            - network control and forwarding functions, enabling network management through software
+            - applications.
+            - SD-WAN
+            - SD-WAN is a specific application of software defined networking (SDN) technology applied to WAN
+            - connections, which are used to connect enterprise networks—including branch otices and data
+            - centers—over large geographic distances.
+            - This technology enhances business eticiency by dynamically routng traffic across the optimal path
+            - using a centralized control function, ensuring high performance and reliability for critical
+            - applications.
+            - SD-WAN provides significant advantages such as cost reduction, increased network agility,
+            - improved uptime, and the ability to secure and optimize internet connectivity and cloud
+            - architecture.
+            - Application aware
+                - Application Aware
+                - SD-WAN technology intelligently identfies applications and can prioritize tratic based on business
+                - requirements, ensuring critical applications have the bandwidth and path reliability they need.
+            - Zero-touch provisioning
+                - Zero-Touch Provisioning
+                - This feature allows for the remote deployment of network devices with minimal manual intervention.
+                - Network devices can automatcally download configuraton setngs from a central location,
+                - simplifying branch deployments.
+            - Transport agnostic
+                - Transport Agnostic
+                - SD-WAN is flexible with the type of connectivity it uses, whether it's MPLS, broadband, LTE, or a
+                - combination, allowing for cost-etective and reliable internet access from diterent service
+                - providers.
+            - Central policy management
+                - Central Policy Management
+                - Centralized management enables network administrators to set policies that manage and configure
+                - all SD-WAN devices across the network from a single interface, enhancing security and eticiency.
+        - Virtual Extensible Local Area Network ({{VXLAN}})
+            - VXLAN
+            - VXLAN (Virtual Extensible Local Area Network) is a network virtualizaton technology that enhances
+            - the scalability of large-scale cloud computing environments.
+            - It extends Layer 2 segments over an underlying Layer 3 network, enabling the creation of a large
+            - number of virtualized LANs.
+            - {{Data Center Interconnect}} ({{DCI}})
+                - DCI
+                - VXLAN is particularly etective for Data Center Interconnect (DCI) by enabling the stretching of
+                - Layer 2 networks across geographically dispersed data centers.
+                - This capability allows for seamless mobility of virtual machines between data centers without
+                - changing underlying network configurations.
+            - 
+            - Layer 2 encapsulation
+                - Layer 2 Encapsulation
+                - VXLAN uses Layer 2 encapsulation to encapsulate Ethernet frames within UDP packets.
+                - This encapsulation allows VXLAN to create a logical network for VMs across diterent physical
+                - networks, providing scalability beyond the traditonal 4096 VLANs limit.
+        - {{Zero Trust Architecture}} ({{ZTA}})
+            - Zero Trust
+            - Zero Trust is a security model based on the principle of "never trust, always verify."
+            - It requires strict identty verificaton for every person and device trying to access resources on a
+            - private network, regardless of whether they are sitting within or outside of the network perimeter.
+            - Zero Trust minimizes potential attack vectors by treatng all users as potental threats and enforcing
+            - strict access controls and not assuming trust based on network location.
+            - Policy-based authentication
+                - Policy-Based Authentication
+                - In a Zero Trust framework, policy-based authentication requires all users, both internal and
+                - external, to be authentcated and contnuously validated for security configuration and posture
+                - before being granted access to data and applications.
+                - Authentication policies can include multifactor authentication (MFA), biometrics, and behavioral
+                - analytics to ensure that only legitimate users gain access.
+            - Authorization
+                - Authorization in Zero Trust Architecture
+                - Authorization in ZTA is dynamic and strictly enforced before access to resources is allowed.
+                - This process is context-aware, taking into account the user’s identity, location, device health,
+                - service or workload, data classification, and anomalies.
+                - Access to resources is granted on a per-session basis, ensuring that the access rights of users are
+                - constantly evaluated and adjusted based on the latest security intelligence and context.
+            - Least privilege access
+                - Least Privilege
+                - The principle of least privilege requires that users, systems, and programs are granted only the
+                - minimum levels of access — or permissions — needed to perform necessary tasks.
+                - Implementing least privilege minimizes the potental damage from accidental or malicious actions
+                - by limitng access rights for users to the bare minimum necessary to perform their work.
+        - {{Secure Access Secure Edge}} ({{SASE}})/{{Security Service Edge}} ({{SSE}})
+            - SASE/SSE
+            - SASE (Secure Access Service Edge) and SSE (Security Service Edge) are emerging frameworks that
+            - combine network security functons with WAN capabilites to support the dynamic secure access
+            - needs of organizations' distributed workforces and cloud-first strategies.
+            - Secure Access Service Edge (SASE)
+            - SASE integrates comprehensive WAN services and security functions directly into the network
+            - fabric.
+            - This provides secure network connectivity and access to resources regardless of location.
+            - Security Service Edge (SSE)
+            - SSE focuses more on the security aspects, centralizing various security services like secure web
+            - gateways, cloud access security brokers (CASB), and zero trust network access (ZTNA).
+            - These services are provided in the cloud to ensure secure access and data protection across all
+            - environments.
+        - {{Infrastructure as Code}} ({{IaC}})
+            - Infrastructure as Code
+            - Infrastructure as Code (IaC) is a key practice in cloud computing and DevOps that involves
+            - managing and provisioning computing infrastructure through machine-readable definiton files,
+            - rather than physical hardware configuration or interactive configuration tools.
+            - It enables IT infrastructure to be automatcally managed, monitored, and provisioned through code,
+            - improving consistency, eticiency, and reducing manual errors.
+            - Automation
+                - Automation in IaC
+                - Automation is at the core of IaC, enabling rapid and consistent environment setups.
+                - This approach reduces human errors and increases eticiency in deploying infrastructure.
+                - Playbooks/templates/reusable tasks
+                    - Playbooks, Templates, and Reusable Tasks
+                    - IaC utilizes playbooks, templates, and reusable tasks to define and orchestrate the steps needed for
+                    - infrastructure setup, modification, and management.
+                    - These elements are critical for ensuring that infrastructure deployment is repeatable and scalable.
+                - Configuration drift/compliance
+                    - Configuration Drift and Compliance
+                    - IaC helps prevent configuraton drit, which occurs when the environment’s current state deviates
+                    - from its intended state due to manual changes or updates.
+                    - IaC also aids in maintaining compliance with defined standards and policies by automating
+                    - configurations and deployments.
+                - Upgrades
+                    - Upgrades
+                    - With IaC, upgrades to infrastructure can be managed systematically through code revisions.
+                    - This method ensures that upgrades are less disruptve and that all changes are version controlled and
+                    - reversible.
+                - Dynamic inventories
+                    - Dynamic Inventories
+                    - IaC supports the use of dynamic inventories, where infrastructure resources are automatcally
+                    - discovered and managed based on real-time data.
+                    - This flexibility is essential for managing environments that need to adjust quickly to changing
+                    - demands or configurations.
+            - Source control
+                - Source Control in IaC
+                - Source control is integral to the Infrastructure as Code paradigm, providing a system for tracking
+                - changes, collaborating, and maintaining the integrity of code that defines infrastructure.
+                - Version control
+                    - Version Control
+                    - Version control systems keep track of every modificaton to the code in a special kind of database.
+                    - If a mistake is made, developers can turn back the clock and compare earlier versions of the code to
+                    - help fix the mistake while minimizing disruption to all team members.
+                - Central repository
+                    - Central Repository
+                    - A central repository in source control systems acts as the single source of truth for all code
+                    - changes, allowing team members to collaborate etectively, accessing and updating code securely
+                    - and eticiently.
+                - Conflict identification
+                    - Conflict Identification
+                    - Source control systems automatcally detect conflicts when multiple team members make changes to
+                    - the same part of the code.
+                    - This feature is crucial for preventng overwrites and ensuring that all changes are reconciled before code
+                    - is merged.
+                - Branching
+                    - Branching
+                    - Branching is a feature of source control that allows developers to diverge from the main line of
+                    - development and continue to work independently without atecting others’ work.
+                    - This is particularly useful for developing new features, fixing bugs, or experimenting in a controlled
+                    - environment.
+        - IPv6 addressing
+            - IPv6 Addressing
+            - IPv6 is the most recent version of the Internet Protocol designed to replace IPv4, otering a vastly
+            - expanded address space, improved security features, and enhanced functionality.
+            - It addresses the limitations of IPv4, including the exhaustion of available addresses, by using 128-
+            - bit addresses to support a virtually unlimited number of devices on the internet.
+            - IPv6 introduces several new concepts and functionalities to improve routng efficiency, simplify
+            - network configuraton, and enhance security.
+            - Mitigating address exhaustion
+                - Mitigating Address Exhaustion
+                - IPv6 addresses the limitations of IPv4, including address exhaustion, by providing an almost
+                - limitless pool of IP addresses.
+                - This ensures the scalable growth of the internet, accommodating an increasing number of devices
+                - and users globally.
+            - Compatibility requirements
+                - Compatibility Requirements
+                - Transitioning to IPv6 involves compatibility strategies to ensure that IPv6 and IPv4 systems can
+                - operate concurrently.
+                - This is necessary because the internet will operate in a mixed IPv4 and IPv6 environment for many
+                - years.
+                - Tunneling
+                    - Tunneling
+                    - Tunneling in IPv6 is a method used to transmit IPv6 packets over an existing IPv4 network
+                    - infrastructure.
+                    - This allows for the coexistence of both protocols during the transiton period from IPv4 to IPv6.
+                    - Tunneling works by encapsulating IPv6 packets within IPv4 packets, enabling them to be transported
+                    - across IPv4 networks as if they were IPv4 packets.
+                - Dual stack
+                    - Dual Stack
+                    - Dual stack refers to a network configuraton where devices run both IPv4 and IPv6 protocols
+                    - simultaneously.
+                    - This allows the devices to communicate over both types of networks, facilitatng a gradual transiton
+                    - from IPv4 to IPv6.
+                    - In a dual stack environment, network services and applicatons can operate over IPv4 or IPv6, depending
+                    - on the destination address availability and network conditions.
+                - NAT64
+                    - NAT64
+                    - NAT64 is a network address translation technology that facilitates communicaton between IPv6 and
+                    - IPv4 devices.
+                    - It translates IPv6 addresses into IPv4 addresses and vice versa, enabling interoperability in
+                    - environments not yet fully IPv6-capable.
+-  {{2.0}} {{Network Implementation}} {{20}}%
+    -  2.1 Explain characteristics of routing technologies.
+        - 111
+            - Static Routing – Manual route entries by admin.
+            - Dynamic Routing – Routes learned and updated automatically.
+            - Default Route – Catch-all path for unknown destinations.
+            - Administrative Distance (AD) – Trustworthiness of routing source.
+            - Routing Metric – Value used to select best route.
+            - Convergence Time – Time to update and stabilize routing table.
+            - Distance Vector – Shares routes with neighbors periodically.
+            - Link State – Full network map built via link data.
+            - Path Vector – Routing with autonomous system path info.
+            - Interior Gateway Protocol (IGP) – Routing within single AS.
+            - Exterior Gateway Protocol (EGP) – Routing between ASes.
+            - Route Redistribution – Sharing routes between protocols.
+            - Next-Hop – Next device traffic goes to.
+            - Hop Count – Number of routers crossed.
+            - MTU – Largest packet size supported.
+            - 
+            - Static Routing
+                - Manually configured routes.
+                - No overhead, simple, good for small networks.
+                - No automatic failover.
+            - Dynamic Routing
+                - Automatically learns and updates routes.
+                - Adapts to network changes.
+                - Requires more CPU/memory.
+            - Types of Dynamic Routing Protocols:
+                - BGP (Border Gateway Protocol)
+                    - Exterior Gateway Protocol (EGP).
+                    - Used between autonomous systems on the internet.
+                - EIGRP (Enhanced Interior Gateway Routing Protocol)
+                    - Cisco proprietary.
+                    - Hybrid (distance-vector + link-state features).
+                - OSPF (Open Shortest Path First)
+                    - Link-state protocol.
+                    - Open standard.
+                    - Fast convergence and hierarchical design.
+            - Route Selection Criteria
+                - Administrative Distance (AD) – Trustworthiness of a route.
+                - Prefix Length – More specific (longer prefix) preferred.
+                - Metric – Cost value; lower is better.
+            - Address Translation
+                - NAT (Network Address Translation) – Maps private IPs to public.
+                - PAT (Port Address Translation) – Uses ports to map multiple private IPs to one public IP.
+            - First Hop Redundancy Protocols (FHRP)
+                - Ensure default gateway availability.
+                - Examples: HSRP, VRRP, GLBP.
+            - Virtual IP (VIP)
+                - Shared IP for gateway redundancy.
+                - Used by FHRPs.
+            - Subinterfaces
+                - Logical interfaces on a single physical interface.
+                - Useful for VLANs or inter-VLAN routing.
+        - 
+        - ### Routing
+            - [Size]();-[H3]()
+            - Directs traffic across networks via routers.
+            - Uses routing tables and algorithms.
+        - ### Static Routing
+            - Manually configured.
+            - Best for small, stable networks.
+            - [Size]();-[H3]()
+        - ### Dynamic Routing
+            - Uses routing protocols to adapt to changes.
+            - Shares topology updates with other routers.
+            - [Size]();-[H3]()
+        - ### BGP (Border Gateway Protocol)
+            - Routes between autonomous systems.
+            - Foundation of internet routing.
+            - [Size]();-[H3]()
+        - ### EIGRP (Enhanced Interior Gateway Routing Protocol)
+            - Cisco proprietary hybrid protocol.
+            - Combines distance-vector and link-state features.
+            - [Size]();-[H3]()
+        - ### OSPF (Open Shortest Path First)
+            - Link-state protocol using SPF algorithm.
+            - Divides networks into areas for scalability.
+            - [Size]();-[H3]()
+        - ### Route Selection Criteria
+            - **Administrative Distance**: Trust level of route.
+            - **Prefix Length**: Defines network portion (/24, /64).
+            - **Metric**: Protocol-specific cost (e.g., bandwidth, hop count).
+            - [Size]();-[H3]()
+        - ### NAT & PAT
+            - **NAT**: Translates private to public IP.
+            - **PAT**: Maps multiple devices to one IP using ports.
+            - [Size]();-[H3]()
+        - ### VRRP/FHRP & Virtual IPs
+            - **FHRP**: Ensures gateway redundancy.
+            - **VRRP**: Elects a virtual router for failover.
+            - **VIP**: Shared IP used for redundancy/load balancing.
+            - [Size]();-[H3]()
+        - ### Subinterfaces
+            - Virtual interfaces on one physical interface.
+            - Used for VLANs and separate configurations.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Static routing
+        - Dynamic routing
+            - {{Border Gateway Protocol}} ({{BGP}})
+                - ### BGP ⇝
+                    - [Size]();-[H3]()
+                - ## Border Gateway Protocol
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - (BGP) An [Exterior Gateway Protocol](https://foldoc.org/Exterior+Gateway+Protocol) defined in [RFC 1267](https://foldoc.org/RFC+1267) and [RFC 1268](https://foldoc.org/RFC+1268). BGP's design is based on experience gained with [Exterior Gateway Protocol](https://foldoc.org/Exterior+Gateway+Protocol) (EGP), as defined in [STD 18](https://foldoc.org/STD+18), [RFC 904](https://foldoc.org/RFC+904) and EGP usage in the [NSFNet](https://foldoc.org/NSFNet) [backbone](https://foldoc.org/backbone), as described in [RFC 1092 and](https://foldoc.org/RFC+1092+and) [RFC 1093](https://foldoc.org/RFC+1093).
+            - {{Enhanced Interior Gateway Routing Protocol }}({{EIGRP}})
+            - {{Open Shortest Path First }}({{OSPF}})
+                - ### OSPF ⇝
+                    - [Size]();-[H3]()
+                - ## Open Shortest-Path First Interior Gateway Protocol
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html) *,*  [__protocol__](https://foldoc.org/contents/protocol.html) *,*  [__standard__](https://foldoc.org/contents/standard.html)>
+                - (OSPF) A [link state routing protocol](https://foldoc.org/link+state+routing+protocol) that is one of the [Internet](https://foldoc.org/Internet) standard [Interior Gateway Protocols](https://foldoc.org/Interior+Gateway+Protocols) defined in [RFC 1247](https://foldoc.org/RFC+1247).
+                - 
+                - There is no OSPF [EGP](https://foldoc.org/EGP), OSPF is an IGP only.
+                - 
+                - [Relationship to [Internet Protocol](https://foldoc.org/Internet+Protocol) packet routing?]
+                - 
+                - [__OSPF Design Guide__](http://cisco.com/warp/public/104/1.html).
+        - Route selection
+            - Administrative distance
+            - Prefix length
+            - Metric
+        - Address translation
+            - NAT
+            - {{Port Address Translation}} ({{PAT}})
+                - ## Port Address Translation
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - (PAT) A function provided by some [routers](https://foldoc.org/routers) which allows [hosts](https://foldoc.org/hosts) on a [LAN](https://foldoc.org/LAN) to communicate with the rest of a network (such as the [Internet](https://foldoc.org/Internet)) without revealing their own private [IP address](https://foldoc.org/IP+address). All outbound [packets](https://foldoc.org/packets) have their IP address translated to the routers external IP address. Replies come back to the router which then translates them back into the private IP address of the original host for final delivery.
+                - 
+                - Compare [SOCKS](https://foldoc.org/SOCKS).
+        - {{First Hop Redundancy Protocol}} ({{FHRP}})
+        - {{Virtual IP}} ({{VIP}})
+        - Subinterfaces
+    -  2.2 Given a scenario, configure switching technologies and features.
+        - 1111
+            - MAC Address Table – Maps MACs to switch ports.
+            - VLAN – Logical LAN segment for isolation.
+            - Trunking – Carries multiple VLANs on link.
+            - 802.1Q – VLAN tagging standard for trunks.
+            - Port Security – Limits MACs per port.
+            - Spanning Tree Protocol (STP) – Prevents layer 2 loops.
+            - Rapid STP (RSTP) – Faster version of STP.
+            - VTP (VLAN Trunking Protocol) – Shares VLAN info across switches.
+            - LACP – Bundles multiple links for redundancy.
+            - Switchport Modes – Access or trunk setting per port.
+            - Native VLAN – Untagged VLAN for trunk link.
+            - Voice VLAN – Separate VLAN for IP phones.
+            - Flooding – Sends unknown destination traffic to all.
+            - Cut-through Switching – Starts forwarding before full frame received.
+            - Store-and-forward Switching – Waits to receive full frame.
+            - Multilayer Switch – Handles layer 3 routing + switching.
+            - PoE (Power over Ethernet) – Powers devices via network cables.
+            - 
+            - ### **VLAN (Virtual Local Area Network)**
+                - [Size]();-[H3]()
+                - Logically segments network regardless of physical layout.
+                - Used to separate broadcast domains.
+                - **Standard:** IEEE 802.1Q (tagging).
+                - **Key VLAN Concepts:**
+                    - **VLAN Database** – Stores configured VLANs on a switch.
+                    - **SVI (Switch Virtual Interface)** – Logical interface for a VLAN, used for Layer 3 communication (routing between VLANs).
+                - 
+                - ### **Interface Configuration**
+                    - **Native VLAN** – Untagged VLAN on a trunk link (usually VLAN 1).
+                    - **Voice VLAN** – Dedicated VLAN for VoIP traffic.
+                    - **802.1Q Tagging** – Adds a VLAN ID tag to frames to identify VLAN membership on trunk links.
+                    - [Size]();-[H3]()
+                - 
+                - ### **Link Aggregation**
+                    - Combines multiple physical links into one logical link.
+                    - Increases bandwidth and redundancy.
+                    - **Standard:** LACP (Link Aggregation Control Protocol).
+                    - [Size]();-[H3]()
+                - 
+                - ### **Speed & Duplex**
+                    - **Speed** – Set port speed (10/100/1000 Mbps, etc.).
+                    - **Duplex** – Controls direction of data flow:
+                        - **Half-duplex:** One direction at a time.
+                        - **Full-duplex:** Simultaneous two-way communication.
+                    - [Size]();-[H3]()
+                - 
+                - ### **Spanning Tree Protocol (STP)**
+                    - Prevents loops in Layer 2 networks.
+                    - Elects root bridge, disables redundant paths.
+                    - Variants: STP, RSTP, MSTP.
+                    - [Size]();-[H3]()
+                - 
+                - ### **MTU (Maximum Transmission Unit)**
+                    - Maximum data size a frame can carry (payload only).
+                    - **Standard Ethernet MTU:** 1500 bytes.
+                    - **Jumbo Frames:** Larger than standard MTU (commonly 9000 bytes); useful in high-performance networks.
+                    - [Size]();-[H3]()
+        - 
+        - ### VLANs
+            - [Size]();-[H3]()
+            - Logical segmentation of networks at Layer 2.
+        - ### VLAN Database
+            - Stores VLAN IDs and settings on switches.
+            - [Size]();-[H3]()
+        - ### SVI (Switch Virtual Interface)
+            - Layer 3 interface for VLAN routing.
+            - [Size]();-[H3]()
+        - ### Interface Configuration
+            - Defines VLANs, speed, duplex, etc.
+            - [Size]();-[H3]()
+        - ### Native & Voice VLANs
+            - **Native VLAN**: Handles untagged traffic.
+            - **Voice VLAN**: Isolates/prioritizes VoIP traffic.
+            - [Size]();-[H3]()
+        - ### Port Tagging / 802.1Q
+            - Tags Ethernet frames with VLAN IDs.
+            - Allows trunk links to carry multiple VLANs.
+            - [Size]();-[H3]()
+        - ### Link Aggregation
+            - Combines ports for bandwidth/redundancy.
+            - [Size]();-[H3]()
+        - ### Speed & Duplex
+            - Speed: Mbps or Gbps rate.
+            - Duplex: Half or full bidirectional communication.
+            - [Size]();-[H3]()
+        - ### STP (Spanning Tree Protocol)
+            - Prevents loops by blocking redundant paths.
+            - [Size]();-[H3]()
+        - ### MTU & Jumbo Frames
+            - **MTU**: Max frame size (usually 1500 bytes).
+            - **Jumbo Frames**: Up to 9000 bytes; reduces overhead.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - {{Virtual Local Area Network}} ({{VLAN}})
+            - ### VLAN ⇝
+                - [Size]();-[H3]()
+            - ## Virtual Local Area Network
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - (VLAN) A logical grouping of two or more [nodes](https://foldoc.org/nodes) which are not necessarily on the same physical [network segment](https://foldoc.org/network+segment) but which share the same [IP](https://foldoc.org/IP) [network number](https://foldoc.org/network+number). This is often associated with [switched Ethernet](https://foldoc.org/switched+Ethernet).
+            - 
+            - IEEE 802.1Q is a VLAN standard.
+            - 
+            - [Confirm? Better description? Reference?]
+            - VLAN database
+            - {{Switch Virtual Interface}} ({{SVI}})
+        - Interface configuration
+            - Native VLAN
+            - Voice VLAN
+            - 802.1Q tagging
+            - Link aggregation
+            - Speed
+            - Duplex
+                - ## duplex
+                    - [Size]();-[H2]()
+                - 
+                - <[__communications__](https://foldoc.org/contents/communications.html)>
+                - Used to describe a communications channel that can carry signals in both directions, in contrast to a [simplex](https://foldoc.org/simplex) channel which only ever carries a signal in one direction.
+                - 
+                - If signals can only flow in one direction at a time the communications is "[half-duplex](https://foldoc.org/half-duplex)", like a single-lane road with traffic lights at each end. Walkie-talkies with a "press-to-talk" button provide half-duplex communications.
+                - 
+                - If signals can flow in both directions simultaneously the communications is "[full-duplex](https://foldoc.org/full-duplex)", like a normal two-lane road. Telephones provide full-duplex communications.
+                - 
+                - The term "duplex" was first used in wireless, telegraph, and telephone communications. Nearly all communications circuits used by computers are two-way, so the term is seldom used.
+                - 
+                - [__http://cit.ac.nz/smac/dc100www/dc_014.htm__](http://cit.ac.nz/smac/dc100www/dc_014.htm).
+        - Spanning tree
+        - {{Maximum Transmission Unit}} ({{MTU}})
+            - ## Maximum Transmission Unit
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - (MTU) The largest number of bytes of "payload" [data](https://foldoc.org/data) a [frame](https://foldoc.org/frame) can carry, not counting the frame's header and trailer.
+            - 
+            - A frame is a single unit of transportation on the [data link layer](https://foldoc.org/data+link+layer). It consists of header data plus data which was passed down from the [network layer](https://foldoc.org/network+layer) (e.g. an [IP](https://foldoc.org/IP) [datagram](https://foldoc.org/datagram)) plus sometimes trailer data.
+            - 
+            - An Ethernet (V2) frame has a MTU of 1500 bytes but the size of the frame can be up to 1526 bytes (22 byte header, 4 byte CRC trailer).
+            - 
+            - See also [fragmentation](https://foldoc.org/fragmentation).
+            - Jumbo frames
+    -  2.3 Given a scenario, select and configure wireless devices and technologies.
+        - 1111
+            - Wireless standards 802.11a/b/g/n/ac/ax; differ in speed, range, and frequency band.
+            - Wireless encryption WEP (weak), WPA, WPA2, WPA3 (strongest); AES recommended.
+            - Wireless channels Use non-overlapping channels (1, 6, 11 in 2.4 GHz) to avoid interference.
+            - Frequency bands 2.4 GHz (longer range), 5 GHz (higher speed), 6 GHz (Wi-Fi 6E).
+            - SSID/MAC filtering Hiding SSID and MAC filtering control who can access the network.
+            - Antenna types Omnidirectional (wide coverage), directional (focused signal).
+            - 
+            - **Channels & Frequency**
+                - **Channel Width**: Affects speed & interference (20/40/80/160 MHz).
+                - **Non-overlapping Channels**: 2.4 GHz has 1, 6, 11; 5/6 GHz have more options.
+                - **Regulatory Impacts**:
+                    -  *802.11h* : Dynamic frequency selection (DFS) & transmit power control (TPC) for 5 GHz use.
+                - **Frequency Options**
+                    - **2.4 GHz**: Longer range, more interference.
+                    - **5 GHz**: Less interference, more channels, shorter range.
+                    - **6 GHz**: Newer, high throughput, Wi-Fi 6E.
+                    - **Band Steering**: Push clients to less congested 5/6 GHz bands.
+                - **SSID & Network IDs**
+                    - **SSID**: Broadcast name of the network.
+                    - **BSSID**: MAC of the AP radio.
+                    - **ESSID**: Group of BSSIDs under one SSID.
+                - **Network Types**
+                    - **Mesh**: Self-healing, dynamic pathing.
+                    - **Ad hoc**: Peer-to-peer, no AP.
+                    - **Point-to-Point**: One sender, one receiver.
+                    - **Infrastructure**: Standard client-to-AP setup.
+                - **Security & Encryption**
+                    - **WPA2/WPA3**: Current secure standards.
+                    - **PSK vs Enterprise**:
+                        -  *PSK* : Shared password.
+                        -  *Enterprise* : RADIUS (802.1X), per-user credentials.
+                - **Guest Access**
+                    - **Captive Portal**: Web-based login page.
+                - **Antennas**
+                    - **Omnidirectional**: 360° signal, common.
+                    - **Directional**: Focused signal (e.g., Yagi, patch).
+                - **Access Point Modes**
+                    - **Autonomous AP**: Standalone config.
+                    - **Lightweight AP**: Managed by wireless LAN controller (WLC).
+        - 
+        - ### Channels & Widths
+            - [Size]();-[H3]()
+            - Channels: Subdivisions of Wi-Fi frequencies.
+            - Widths (20/40/80 MHz): Wider = faster but more interference.
+        - ### Non-Overlapping Channels
+            - Prevent interference (e.g., channels 1, 6, 11 in 2.4GHz).
+            - [Size]();-[H3]()
+        - ### Regulatory Impacts & 802.11h
+            - Country-specific frequency/power rules.
+            - 802.11h adds DFS/TPC for 5GHz.
+            - [Size]();-[H3]()
+        - ### Frequency Bands
+            - **2.4GHz**: Long range, more interference.
+            - **5GHz**: Faster, less interference, shorter range.
+            - **6GHz**: High speed/capacity (Wi-Fi 6E).
+            - [Size]();-[H3]()
+        - ### Band Steering
+            - Moves clients to better-performing bands.
+            - [Size]();-[H3]()
+        - ### SSID, BSSID, ESSID
+            - **SSID**: Network name.
+            - **BSSID**: Unique MAC of AP.
+            - **ESSID**: Identifies multiple APs as one network.
+            - [Size]();-[H3]()
+        - ### Wireless Network Types
+            - **Mesh**: Self-healing, highly redundant.
+            - **Ad Hoc**: Peer-to-peer, no infrastructure.
+            - **Point-to-Point**: Direct connection.
+            - **Infrastructure**: Centralized via APs.
+            - [Size]();-[H3]()
+        - ### Encryption & Authentication
+            - **WPA2**: AES-based, strong security.
+            - **WPA3**: Stronger, individualized encryption.
+            - **PSK**: Shared key.
+            - **Enterprise**: Central auth via RADIUS.
+            - [Size]();-[H3]()
+        - ### Guest Networks & Captive Portals
+            - Isolate visitors.
+            - Captive portals manage access/login.
+            - [Size]();-[H3]()
+        - ### Antennas
+            - **Directional**: Focused signal.
+            - **Omni-directional**: 360° signal.
+            - [Size]();-[H3]()
+        - ### Access Points
+            - **Autonomous**: Self-managed, standalone.
+            - **Lightweight**: Managed by a WLC.
+            - Use case depends on size/control needs.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Channels
+            - Channel width
+            - Non-overlapping channels
+            - Regulatory impacts
+                - 802.11h
+        - Frequency options
+            - 2.4GHz
+            - 5GHz
+            - 6GHz
+            - Band steering
+        - {{Service Set Identifier}} ({{SSID}})
+            - ### SSID ⇝
+                - [Size]();-[H3]()
+            - ## Service Set Identifier
+                - [Size]();-[H2]()
+            - 
+            - <[__networking__](https://foldoc.org/contents/networking.html)>
+            - (SSID) A 32-[character](https://foldoc.org/character) unique identifier that distinguishes one wireless network from another. All devices attempting to connect to a specific network use the same SSID, which appears in the header of [packets](https://foldoc.org/packets). Because an SSID can be intercepted, it does not supply any security to the network.
+            - {{Basic Service Set Identifier}} ({{BSSID}})
+            - {{Extended Service Set Identifier}} ({{ESSID}})
+        - Network types
+            - Mesh networks
+            - Ad hoc
+            - Point to point
+            - Infrastructure
+        - Encryption
+            - {{Wi-Fi Protected Access 2}} ({{WPA2}})
+            - WPA3
+        - Guest networks
+            - Captive portals
+        - Authentication
+            - {{Pre-Shared Key}} ({{PSK}}) vs. Enterprise
+        - Antennas
+            - Omnidirectional vs. directional
+        - Autonomous vs. lightweight access point
+    -  2.4 Explain important factors of physical installations.
+        - 1111
+            - Rack systems Measured in rack units (1U, 2U, etc.); optimize space in server rooms.
+            - Power requirements Know voltage/amperage needs; use UPS/generators for backup.
+            - Environmental factors Maintain temp, humidity, airflow for device longevity.
+            - Cable management Organize to reduce interference and aid troubleshooting.
+            - Labeling Label cables, ports, and patch panels for clarity.
+            - Grounding Prevents electrical hazards, especially for metal racks.
+            - Tools Crimper, punchdown tool, cable tester, tone generator, multimeter.
+            - 
+            - ### 🛠️ Important Installation Implications
+                - [Size]();-[H3]()
+                - **Locations**
+                    - **Main Distribution Frame (MDF)**
+                        - Central point of network connectivity (main hub).
+                    - **Intermediate Distribution Frame (IDF)**
+                        - Secondary connection point; typically located on each floor.
+                - **Rack Size**
+                    - Consider **rack units (U)** when planning space.
+                    - Ensure compatibility with equipment size and airflow design.
+                - **Port-Side Exhaust/Intake**
+                    - Align port orientation with airflow paths to prevent overheating.
+                    - Hot aisle/cold aisle layout optimizes cooling.
+                - **Cabling**
+                    - **Patch Panel**
+                        - Centralized point to manage and organize network cables.
+                    - **Fiber Distribution Panel**
+                        - Terminates and manages fiber optic cabling efficiently.
+                - **Lockable**
+                    - Equipment racks and rooms should be **lockable** for physical security.
+                - 
+                - ### 🔌 Power
+                    - [Size]();-[H3]()
+                - **Uninterruptible Power Supply (UPS)**
+                    - Provides **battery backup power** during outages.
+                    - Can signal systems to shut down gracefully.
+                - **Power Distribution Unit (PDU)**
+                    - Distributes power to multiple devices in the rack.
+                    - Can be basic or intelligent (with monitoring/control).
+                - **Power Load**
+                    - Understand the **total wattage** drawn by equipment to prevent overloading circuits.
+                - **Voltage**
+                    - Measured in **Volts (V)**; ensure compatibility with equipment specs.
+                    - Proper voltage management prevents damage and instability.
+                - 
+                - ### 🌡️ Environmental Factors
+                    - [Size]();-[H3]()
+                - **Humidity**
+                    - Keep humidity within acceptable ranges to prevent corrosion or static discharge.
+                - **Fire Suppression**
+                    - Use **gas-based** systems (e.g., FM-200) in data centers to protect electronics.
+                - **Temperature**
+                    - Maintain optimal temperature (typically 64–80°F or 18–27°C).
+                    - Use **environmental monitoring** for early alerts.
+        - 
+        - ### Site Planning
+            - [Size]();-[H3]()
+            - Choose locations for easy access, airflow, and security.
+            - Consider distance, environment, regulations.
+        - ### IDF vs. MDF
+            - **IDF**: Localized cabling hub.
+            - **MDF**: Main central connection point.
+            - [Size]();-[H3]()
+        - ### Rack Size
+            - Accommodates devices; allow for future expansion.
+            - [Size]();-[H3]()
+        - ### Port-side Exhaust/Intake
+            - Align equipment for optimal cooling airflow.
+            - [Size]();-[H3]()
+        - ### Cabling
+            - Use structured cabling with patch/fiber panels.
+            - [Size]();-[H3]()
+        - ### Patch & Fiber Panels
+            - Patch: Organize and manage copper cables.
+            - Fiber: Terminate/distribute fiber lines.
+            - [Size]();-[H3]()
+        - ### Lockable Cabinets
+            - Enhance physical security.
+            - [Size]();-[H3]()
+        - ### Power Management
+            - **UPS**: Temporary power during outages.
+            - **PDUs**: Distribute power in racks.
+            - Manage load and voltage needs.
+            - [Size]();-[H3]()
+        - ### Environmental Controls
+            - **Humidity**: 45–55% to prevent static/corrosion.
+            - **Fire Suppression**: Non-water based preferred.
+            - **Temperature**: Maintain 18°C to 27°C (64°F–81°F).
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Important installation implications
+            - Locations
+                - {{Intermediate Distribution Frame}} ({{IDF}})
+                - {{Main Distribution Frame}} ({{MDF}})
+                    - ### MDF ⇝
+                        - [Size]();-[H3]()
+                    - ## Main Distribution Frame
+                        - [Size]();-[H2]()
+                    - 
+                    - <[__networking__](https://foldoc.org/contents/networking.html)>
+                    - (MDF) The [network closet](https://foldoc.org/network+closet) containing the main [hub](https://foldoc.org/hub).
+            - Rack size
+            - Port-side exhaust/intake
+            - Cabling
+                - Patch panel
+                - Fiber distribution panel
+            - Lockable
+        - Power
+            - {{Uninterruptible Power Supply}} ({{UPS}})
+                - ## Uninterruptible Power Supply
+                    - [Size]();-[H2]()
+                - 
+                - <[__hardware__](https://foldoc.org/contents/hardware.html)>
+                - (UPS) A battery powered [power supply unit](https://foldoc.org/power+supply+unit) that is guaranteed to provide power to a computer in the event of interruptions in the incoming mains electrical power. Different rating UPSs will provide power for different lengths of time.
+                - 
+                - Modern UPSs connect to the computer's [serial port](https://foldoc.org/serial+port) and provide information such as battery time remaining, allowing the computer to shut down [gracefully](https://foldoc.org/gracefully) before complete loss of power.
+            - {{Power Distribution Unit}} ({{PDU}})
+            - Power load
+            - Voltage
+                - ## voltage
+                    - [Size]();-[H2]()
+                - 
+                - <[__electronics__](https://foldoc.org/contents/electronics.html)>
+                - (Or "potential difference", "electro-motive force" (EMF)) A quantity measured as a signed difference between two points in an electrical circuit which, when divided by the [resistance](https://foldoc.org/resistance) in [Ohms](https://foldoc.org/Ohms) between those points, gives the current flowing between those points in [Amperes](https://foldoc.org/Amperes), according to [Ohm's Law](https://foldoc.org/Ohm's+Law). Voltage is expressed as a signed number of Volts (V). The voltage gradient in Volts per metre is proportional to the force on a charge.
+                - 
+                - Voltages are often given relative to "earth" or "ground" which is taken to be at zero Volts. A circuit's earth may or may not be electrically connected to the actual earth.
+                - 
+                - The voltage between two points is also given by the charge present between those points in [Coulombs](https://foldoc.org/Coulombs) divided by the [capacitance](https://foldoc.org/capacitance) in [Farads](https://foldoc.org/Farads). The capacitance in turn depends on the [dielectric constant](https://foldoc.org/dielectric+constant) of the insulators present.
+                - 
+                - Yet another law gives the voltage across a piece of circuit as its [inductance](https://foldoc.org/inductance) in [Henries](https://foldoc.org/Henries) multiplied by the rate of change of current flow through it in Amperes per second.
+                - 
+                - A simple analogy likens voltage to the pressure of water in a pipe. Current is likened to the amount of water (charge) flowing per unit time.
+        - Environmental factors
+            - Humidity
+            - Fire suppression
+            - Temperature
+-  {{3.0}} {{Network Operations}} {{19}}%
+    -  3.1 Explain the purpose of organizational processes and procedures.
+        - 1111
+            - ### Documentation
+                - [Size]();-[H3]()
+                - **Physical vs. Logical Diagrams**
+                    -  *Physical* : Shows real-world layout (racks, cabling, devices).
+                    -  *Logical* : Shows how data flows (subnets, VLANs, routing).
+                - **Rack Diagrams**
+                    - Visual layout of equipment in a server/network rack (measured in rack units).
+                - **Cable Maps and Diagrams**
+                    - Show physical cabling routes and termination points for easier troubleshooting.
+                - **Network Diagrams**
+                    - **Layer 1** – Physical layout (cables, ports).
+                    - **Layer 2** – Switches, VLANs, MAC addressing.
+                    - **Layer 3** – IP addressing, routing protocols, and logical paths.
+                - **Asset Inventory**
+                    - Tracks hardware, software, licenses, and warranty status:
+                        - **Hardware**: Devices like routers, switches, servers.
+                        - **Software**: OS, applications, drivers.
+                        - **Licensing**: Compliance and renewal tracking.
+                        - **Warranty Support**: Service status, expiration dates.
+                - **IP Address Management (IPAM)**
+                    - Tool or system used to plan, track, and manage IP addresses across networks.
+                - **Service-Level Agreement (SLA)**
+                    - Contract that defines expected service performance (e.g., uptime, response time).
+                - **Wireless Survey/Heat Map**
+                    - Used to identify Wi-Fi coverage, dead zones, and optimal AP placement.
+            - ### 🔄 Life-Cycle Management
+                - **End-Of-Life (EOL)**
+                    - Vendor no longer sells product; may lack updates.
+                - **End-Of-Support (EOS)**
+                    - Vendor no longer provides updates, patches, or helpdesk support.
+                - **Software Management**
+                    - **Patches and Bug Fixes**: Regular updates to fix vulnerabilities.
+                    - **Operating System (OS)**: Ensure systems are updated and supported.
+                    - **Firmware**: Maintain device-level stability and security.
+                - **Decommissioning**
+                    - Safe and documented removal of hardware/software from the environment.
+                - [Size]();-[H3]()
+            - ### 🛠️ Change Management
+                - **Request Process Tracking/Service Request**
+                    - Formal process for requesting, approving, and documenting changes.
+                - [Size]();-[H3]()
+            - ### ⚙️ Configuration Management
+                - **Production Configuration**
+                    - Active setup in the live environment; should be documented and secured.
+                - **Backup Configuration**
+                    - Stored backup of current configuration; critical for recovery.
+                - **Baseline/Golden Configuration**
+                    - Known good configuration used as a reference standard for new devices.
+                - [Size]();-[H3]()
+        - 
+        - ### Common Documentation
+            - [Size]();-[H3]()
+            - **Physical Network Diagram**: Shows physical connections and locations of network devices.
+            - **Logical Network Diagram**: Illustrates data flow, subnets, and logical architecture.
+            - **Rack Diagram**: Visualizes equipment in server racks.
+            - **Cable Maps/Diagrams**: Details cable layout for installation and troubleshooting.
+            - **Network Diagrams**:
+                - **Layer 1**: Physical connections and hardware layout.
+                - **Layer 2**: VLANs, switches, and Ethernet frame paths.
+                - **Layer 3**: IP addressing and routing protocols.
+        - ### Asset Inventory in Network Management
+            - **Hardware Inventory**: Lists routers, switches, servers, etc.
+            - **Software Inventory**: Documents versions and configurations.
+            - **Licensing Management**: Tracks usage rights and renewals.
+            - **Warranty and Support Management**: Maintains service agreements.
+            - [Size]();-[H3]()
+        - ### IP Address Management (IPAM)
+            - Organizes and tracks IP addresses.
+            - Prevents conflicts and supports DHCP/DNS integration.
+            - [Size]();-[H3]()
+        - ### Service-Level Agreement (SLA)
+            - Defines service standards and performance metrics.
+            - [Size]();-[H3]()
+        - ### Wireless Survey and Heat Map
+            - **Wireless Survey**: Assesses coverage and signal strength.
+            - **Heat Map**: Visual tool to show signal intensity and optimize placement.
+            - [Size]();-[H3]()
+        - ### Life-Cycle Management
+            - Oversees equipment from acquisition to disposal.
+            - **End-of-Life (EOL)**: Product no longer supported or sold.
+            - **End-of-Support (EOS)**: Vendor halts updates and support.
+            - [Size]();-[H3]()
+        - ### Software Management
+            - **Patches and Bug Fixes**: Regular updates to fix issues.
+            - **Operating System (OS) Management**: Ensures secure and stable operation.
+            - **Firmware Updates**: Maintains hardware functionality.
+            - [Size]();-[H3]()
+        - ### Decommissioning
+            - Securely remove outdated hardware.
+            - Ensure data is wiped and disposed of properly.
+            - [Size]();-[H3]()
+        - ### Change Management
+            - Standardizes configuration changes.
+            - **Request Process Tracking**: Logs and tracks changes.
+            - [Size]();-[H3]()
+        - ### Configuration Management
+            - Maintains system performance consistency.
+            - **Production Configuration**: Active settings in use.
+            - **Backup Configuration**: Restores system in case of failure.
+            - **Baseline/Golden Configuration**: Approved template for deployment.
+            - [Size]();-[H3]()
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Documentation
+            - Physical vs. logical diagrams
+            - Rack diagrams
+            - Cable maps and diagrams
+            - Network diagrams
+                - Layer 1
+                - Layer 2
+                - Layer 3
+            - Asset inventory
+                - Hardware
+                - Software
+                - Licensing
+                - Warranty support
+            - {{IP Address Management}} ({{IPAM}})
+            - {{Service-Level Agreement}} ({{SLA}})
+            - Wireless survey/heat map
+        - Life-cycle management
+            - {{End-Of-Life}} ({{EOL}})
+            - {{End-Of-S}}{{upport }}({{EOS}})
+            - Software management
+                - Patches and bug fixes
+                - {{Operating S}}{{ystem}} ({{OS}})
+                - Firmware
+            - Decommissioning
+        - Change management
+            - Request process tracking/service request
+        - Configuration management
+            - Production configuration
+            - Backup configuration
+            - Baseline/golden configuration
+    -  3.2 Given a scenario, use network monitoring technologies.
+        - 1111
+            - ### **Methods**
+                - [Size]();-[H3]()
+                - **SNMP (Simple Network Management Protocol)**
+                    - Used to monitor and manage network devices.
+                    - **Traps**: Alerts sent by devices to an SNMP manager when predefined events occur.
+                    - **MIB (Management Information Base)**: Database used for managing the entities in a network.
+                    - **Versions**:
+                        - **v2c** – Community-based, uses cleartext strings.
+                        - **v3** – Secure, supports authentication and encryption.
+                    - **Community Strings**: Password-like identifiers (e.g., "public", "private") for read/write access.
+                    - **Authentication**: Ensures only authorized managers can access SNMP data.
+                - **Flow Data**
+                    - Provides summary info on traffic patterns (e.g., NetFlow, sFlow).
+                    - Used for capacity planning and identifying top talkers/flows.
+                - **Packet Capture**
+                    - Captures full network packets for detailed inspection (e.g., Wireshark).
+                    - Used for troubleshooting and forensic analysis.
+                - **Baseline Metrics**
+                    - Standard measurements of performance (latency, bandwidth, CPU).
+                    - **Anomaly Alerting/Notification**: Alerts when deviation from baseline occurs.
+                - **Log Aggregation**
+                    - Centralizes logs from devices for analysis.
+                    - **Syslog Collector**: Gathers logs using syslog protocol.
+                    - **SIEM (Security Information and Event Management)**:
+                        - Combines security info and event logs.
+                        - Enables real-time analysis, correlation, and alerting.
+                - **API Integration**
+                    - Allows tools and platforms to communicate and share monitoring data.
+                - **Port Mirroring (SPAN/RSPAN)**
+                    - Copies traffic from one port to another for monitoring.
+            - ### 🧰 **Solutions**
+                - **Network Discovery**
+                    - Identifies connected devices and their attributes.
+                    - **Ad Hoc** – Manual or one-time scans.
+                    - **Scheduled** – Recurring scans for consistent updates.
+                - **Traffic Analysis**
+                    - Examines flow of data for bottlenecks, QoS issues, or bandwidth hogs.
+                - **Performance Monitoring**
+                    - Tracks CPU, memory, disk, and interface performance.
+                - **Availability Monitoring**
+                    - Ensures devices and services are reachable (e.g., ping, uptime checks).
+                - **Configuration Monitoring**
+                    - Detects unauthorized or unexpected config changes to network devices.
+                - [Size]();-[H3]()
+        - 
+        - ### SNMP (Simple Network Management Protocol)
+            - [Size]();-[H3]()
+            - Monitors and manages network devices.
+            - **SNMP Traps**: Sends alerts about events.
+            - **MIBs**: Defines SNMP-accessible data.
+            - **SNMP v2c**: Adds community strings and bulk transfer.
+            - **SNMP v3**: Adds authentication and encryption.
+            - **Community Strings**: Used in v1/v2c for access.
+            - **SNMP v3 Authentication**: Uses MD5 or SHA.
+        - ### Flow Data
+            - Tracks traffic metadata for analysis.
+            - [Size]();-[H3]()
+        - ### Packet Capture (pcap)
+            - Captures and analyzes network traffic for troubleshooting.
+            - [Size]();-[H3]()
+        - ### Baseline Metrics
+            - Establish normal performance levels.
+            - [Size]();-[H3]()
+        - ### Anomaly Alerting/Notification
+            - Detects and alerts deviations from baseline.
+            - [Size]();-[H3]()
+        - ### Log Aggregation
+            - Consolidates logs from multiple sources.
+            - **Syslog Collector**: Gathers and centralizes syslog data.
+            - [Size]();-[H3]()
+        - ### SIEM (Security Information and Event Management)
+            - Correlates and analyzes logs in real-time.
+            - [Size]();-[H3]()
+        - ### API Integration
+            - Allows automation and integration of network tools.
+            - [Size]();-[H3]()
+        - ### Port Mirroring
+            - Duplicates traffic for monitoring.
+            - [Size]();-[H3]()
+        - ### Network Solutions
+            - **Network Discovery**: Identifies connected devices.
+                - **Ad Hoc**: Performed manually.
+                - **Scheduled**: Automated regularly.
+            - **Traffic Analysis**: Examines data flow for optimization.
+            - **Performance Monitoring**: Tracks key performance indicators.
+            - **Availability Monitoring**: Ensures critical devices are online.
+            - **Configuration Monitoring**: Detects unauthorized config changes.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Methods
+            - SNMP
+                - Traps
+                - {{Management Information Base}} ({{MIB}})
+                - Versions
+                    - v2c
+                    - v3
+                - Community strings
+                - Authentication
+            - Flow data
+            - Packet capture
+            - Baseline metrics
+                - Anomaly alerting/notification
+            - Log aggregation
+                - Syslog collector
+                - {{Security Information and Event Management}} ({{SIEM}})
+            - {{Application Programming Interface}} ({{API}}) integration
+            - Port mirroring
+        - Solutions
+            - Network discovery
+                - Ad hoc
+                - Scheduled
+            - Traffic analysis
+            - Performance monitoring
+            - Availability monitoring
+            - Configuration monitoring
+    -  3.3 Explain {{Disaster Recovery}} ({{DR}}) concepts.
+        - 1111
+            - ### **Disaster Recovery (DR) Metrics**
+                - [Size]();-[H3]()
+                - **RPO (Recovery Point Objective)**
+                    - 
+                    - ➤ Max tolerable data loss (measured in time).
+                    - 
+                    - ➤  *“How much data can we afford to lose?”* 
+                - **RTO (Recovery Time Objective)**
+                    - 
+                    - ➤ Max acceptable downtime to restore service.
+                    - 
+                    - ➤  *“How fast must we be back up?”* 
+                - **MTTR (Mean Time to Repair)**
+                    - 
+                    - ➤ Avg time to fix a failure and restore.
+                    - 
+                    - ➤  *“How long does it usually take to fix it?”* 
+                - **MTBF (Mean Time Between Failures)**
+                    - 
+                    - ➤ Avg operational time between breakdowns.
+                    - 
+                    - ➤  *“How reliable is this system over time?”* 
+            - ### 🏢 **DR Site Types**
+                - **Cold Site**
+                    - 
+                    - ➤ Prepped space, no hardware or data.
+                    - 
+                    - ➤ Longest recovery time; lowest cost.
+                - **Warm Site**
+                    - 
+                    - ➤ Partially equipped, data not fully synced.
+                    - 
+                    - ➤ Moderate recovery time and cost.
+                - **Hot Site**
+                    - 
+                    - ➤ Fully operational duplicate environment.
+                    - 
+                    - ➤ Fastest recovery, highest cost.
+                - [Size]();-[H3]()
+            - 
+            - ### 🔁 **High-Availability Models**
+                - **Active-Active**
+                    - 
+                    - ➤ All systems run simultaneously.
+                    - 
+                    - ➤ Load balanced and provides redundancy.
+                - **Active-Passive**
+                    - 
+                    - ➤ One system active, one standby.
+                    - 
+                    - ➤ Standby takes over on failure.
+                - [Size]();-[H3]()
+            - 
+            - ### 🧪 **Testing and Validation**
+                - **Tabletop Exercises**
+                    - 
+                    - ➤ Scenario-based discussion testing procedures.
+                - **Validation Tests**
+                    - 
+                    - ➤ Actual testing of failover, backups, recovery.
+                - [Size]();-[H3]()
+        - 
+        - ### Recovery Objectives
+            - [Size]();-[H3]()
+            - **RPO (Recovery Point Objective)**: Max acceptable data loss.
+            - **RTO (Recovery Time Objective)**: Max downtime after disaster.
+        - ### MTTR/MTBF
+            - **MTTR**: Time to repair failures.
+            - **MTBF**: Time between failures.
+            - [Size]();-[H3]()
+        - ### Disaster Recovery Sites
+            - **Cold Site**: Infrastructure only, slowest recovery.
+            - **Warm Site**: Some equipment, faster setup.
+            - **Hot Site**: Fully equipped, instant recovery.
+            - [Size]();-[H3]()
+        - ### Active-Active vs. Active-Passive
+            - **Active-Active**: Both systems share load.
+            - **Active-Passive**: One system on standby.
+            - [Size]();-[H3]()
+        - ### Testing
+            - **Tabletop Exercises**: Simulate and review plans.
+            - **Validation Tests**: Execute recovery procedures.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - DR metrics
+            - {{Recovery Point Objective}} ({{RPO}})
+            - {{Recovery Time Objective}} ({{RTO}})
+            - {{Mean Time To Repair}} ({{MTTR}})
+            - {{Mean Time Between Failures}} ({{MTBF}})
+        - DR sites
+            - Cold site
+            - Warm site
+            - Hot site
+        - High-availability approaches
+            - Active-active
+            - Active-passive
+        - Testing
+            - Tabletop exercises
+            - Validation tests
+    -  3.4 Given a scenario, implement IPv4 and IPv6 network services.
+        - 1111
+            - ### **Dynamic Addressing**
+                - [Size]();-[H3]()
+                - **DHCP (Dynamic Host Configuration Protocol)**
+                    - 
+                    - ➤ Automatically assigns IP configuration to clients.
+                        - **Reservations**: Bind MAC to a specific IP.
+                        - **Scope**: Defined IP address range for a subnet.
+                        - **Lease Time**: Duration a device keeps its IP.
+                        - **Options**: Extra settings like default gateway, DNS.
+                        - **Relay/IP Helper**: Forwards DHCP requests across subnets.
+                        - **Exclusions**: IPs outside the scope to avoid assignment.
+                - **SLAAC (Stateless Address Autoconfiguration)**
+                    - 
+                    - ➤ Used in IPv6; clients self-configure IP without DHCP server.
+            - ### 🌐 **Name Resolution**
+                - **DNS (Domain Name System)**
+                    - 
+                    - ➤ Resolves domain names to IP addresses.
+                        - **Security**
+                            - **DNSSEC**: Authenticates DNS responses with digital signatures.
+                            - **DoH / DoT**: Encrypt DNS queries for privacy and security.
+                        - **Record Types**
+                            - **A**: Maps domain to IPv4 address.
+                            - **AAAA**: Maps domain to IPv6 address.
+                            - **CNAME**: Alias to another domain.
+                            - **MX**: Directs email to a mail server.
+                            - **TXT**: Stores text, often for SPF/DKIM.
+                            - **NS**: Delegates a zone to DNS server.
+                            - **PTR**: Maps IP to domain (reverse lookup).
+                        - **Zone Types**
+                            - **Forward**: Domain-to-IP resolution.
+                            - **Reverse**: IP-to-domain resolution.
+                        - **Other Concepts**
+                            - **Authoritative**: DNS server with original data.
+                            - **Non-authoritative**: Cached/forwarded DNS data.
+                            - **Primary vs. Secondary**: Writable (primary), read-only copy (secondary).
+                            - **Recursive**: DNS server queries other servers on behalf of the client.
+                - **Hosts File**
+                    - 
+                    - ➤ Local file with static IP-to-hostname mappings.
+                - [Size]();-[H3]()
+            - 
+            - ### ⏱️ **Time Protocols**
+                - **NTP (Network Time Protocol)**
+                    - 
+                    - ➤ Synchronizes device clocks over IP networks.
+                - **PTP (Precision Time Protocol)**
+                    - 
+                    - ➤ Provides more accurate timing than NTP; used in financial and industrial systems.
+                - **NTS (Network Time Security)**
+                    - 
+                    - ➤ Adds encryption and authentication to NTP for secure time sync.
+                - [Size]();-[H3]()
+        - 
+        - ### Dynamic Addressing (DHCP)
+            - [Size]();-[H3]()
+            - Automates IP assignment.
+            - **Reservation**: Assigns fixed IP to MAC address.
+            - **Scope**: Range of assignable IPs.
+            - **Lease Time**: Duration of IP assignment.
+            - **Options**: Adds config data like DNS.
+            - **DHCP Relay**: Forwards requests across networks.
+            - **Exclusion Ranges**: IPs excluded from assignment.
+        - ### SLAAC (IPv6)
+            - Auto-configures address without DHCP.
+            - [Size]();-[H3]()
+        - ### Name Resolution
+            - **DNS**: Translates domains to IPs.
+            - **DNSSEC**: Adds data integrity verification.
+            - **DoH/DoT**: Encrypt DNS traffic.
+            - [Size]();-[H3]()
+        - ### DNS Record Types
+            - **A/AAAA**: Maps domains to IPv4/IPv6.
+            - **CNAME**: Alias to another name.
+            - **MX**: Specifies mail servers.
+            - **TXT**: Stores arbitrary text.
+            - **NS**: Authoritative name servers.
+            - **PTR**: Reverse DNS.
+            - [Size]();-[H3]()
+        - ### DNS Zones
+            - **Forward Zone**: Domain to IP.
+            - **Reverse Zone**: IP to domain.
+            - **Authoritative**: Original source of DNS data.
+            - **Non-Authoritative**: Cached data.
+            - **Primary/Secondary**: Editable vs. backup.
+            - **Recursive Queries**: Server resolves full query.
+            - [Size]();-[H3]()
+        - ### Hosts File
+            - Local hostname-to-IP mapping.
+            - [Size]();-[H3]()
+        - ### Time Protocols
+            - **NTP**: Syncs time over network.
+            - **PTP**: High-precision local sync.
+            - **NTS**: Adds security to NTP.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Dynamic addressing
+            - DHCP
+                - Reservations
+                - Scope
+                - Lease time
+                - Options
+                - Relay/IP helper
+                - Exclusions
+            - {{StateLess Address AutoConfiguration}} ({{SLAAC}})
+        - Name resolution
+            - DNS
+                - {{Domain Name Security Extensions}} ({{DNSSEC}})
+                - {{DNS over HTTPS}} ({{DoH}}) and {{DNS over TLS}} ({{DoT}})
+                - Record types
+                    - {{Address}} ({{A}})
+                    - AAAA
+                    - {{Canonical name}} ({{CNAME}})
+                    - {{Mail eXchange}} ({{MX}})
+                    - {{Text}} ({{TXT}})
+                    - {{NameServer}} ({{NS}})
+                    - {{Pointer}} ({{PTR}})
+                - Zone types
+                    - Forward
+                    - Reverse
+                - Authoritative vs. non-authoritative
+                - Primary vs. secondary
+                - Recursive
+            - Hosts file
+        - Time protocols
+            - NTP
+            - {{Precision Time Protocol}} ({{PTP}})
+            - {{Network Time Security}} ({{NTS}})
+    -  3.5 Compare and contrast network access and management methods.
+        - 1111
+            - ### 🔒 **VPN Types**
+                - [Size]();-[H3]()
+                - **Site-to-Site VPN**
+                    - Connects two networks across the internet.
+                    - Typically used between office locations.
+                    - Devices communicate as if on the same LAN.
+                - **Client-to-Site VPN (Remote Access VPN)**
+                    - User device connects securely to a network over the internet.
+                    - Used for remote workers accessing corporate resources.
+                    - **Clientless**
+                        - Uses a web browser (e.g., SSL VPN).
+                        - No dedicated VPN software needed.
+                    - **Split Tunnel vs. Full Tunnel**
+                        - **Split Tunnel**: Only corporate traffic goes through VPN; other traffic uses the local internet.
+                        - **Full Tunnel**: All traffic routes through the VPN.
+            - ### 🔧 **Connection Methods**
+                - **SSH (Secure Shell)**
+                    - Encrypted command-line access to remote systems.
+                - **Graphical User Interface (GUI)**
+                    - Uses remote desktop tools (e.g., RDP, VNC) for visual interaction.
+                - **API (Application Programming Interface)**
+                    - Enables secure, programmatic interaction with systems and services.
+                - **Console**
+                    - Direct access to a device via physical serial or virtual terminal connection.
+                    - Often used for initial configuration or recovery.
+                - [Size]();-[H3]()
+            - 
+            - ### 🪪 **Management Methods**
+                - **Jump Box / Jump Host**
+                    - A secured intermediary system used to access and manage devices in a protected network.
+                    - Acts as a controlled gateway to limit direct access.
+                - **In-Band vs. Out-of-Band Management**
+                    - **In-Band**: Uses the primary network for management traffic (requires the network to be up).
+                    - **Out-of-Band**: Uses a separate path for management (e.g., dedicated console port), useful when the main network is down.
+                - [Size]();-[H3]()
+        - 
+        - ### VPN Types
+            - [Size]();-[H3]()
+            - **Site-to-Site**: Connects networks.
+            - **Client-to-Site**: Remote client to network.
+            - **Clientless**: Browser-based access.
+            - **Split Tunnel**: Corporate traffic through VPN only.
+            - **Full Tunnel**: All traffic routed through VPN.
+        - ### Connection Methods
+            - **SSH**: Secure remote CLI access.
+            - **GUI**: Visual interface for management.
+            - **API**: Programmable interaction.
+            - **Console Connection**: Direct physical access.
+            - [Size]();-[H3]()
+        - ### Access Management
+            - **Jump Box/Host**: Gateway to secure zones.
+            - **In-Band Management**: Uses production network.
+            - **Out-of-Band Management**: Uses dedicated management network.
+            - [Size]();-[H3]()
+        - 
+        - [Size]();-[H0]()
+        - Site-to-site VPN
+        - Client-to-site VPN
+            - Clientless
+            - Split tunnel vs. full tunnel
+        - Connection methods
+            - SSH
+            - {{Graphical User Interface}} ({{GUI}})
+            - API
+            - Console
+        - Jump box/host
+        - In-band vs. out-of-band management
+-  {{4.0}} {{Network Security}} {{14}}%
+    -  4.1 Explain the importance of basic network security concepts.
+        - 11111
+            - ### 🔐 **Logical Security**
+                - [Size]();-[H3]()
+                - **Encryption**
+                    - **Data in Transit** – Secures data while moving across networks.
+                    - **Data at Rest** – Secures stored data (e.g., on drives or backups).
+                - **Certificates**
+                    - **Public Key Infrastructure (PKI)** – Uses trusted certificate authorities (CAs) for encryption and authentication.
+                    - **Self-Signed** – Certificates issued by the same entity they're validating; useful internally but less trusted.
+                - **Identity and Access Management (IAM)**
+                    - **Authentication**
+                        - **MFA (Multi-Factor Authentication)** – Combines two or more credentials (e.g., password + phone code).
+                        - **SSO (Single Sign-On)** – One login grants access to multiple systems.
+                        - **RADIUS** – Centralized authentication over networks.
+                        - **LDAP** – Access to directory services.
+                        - **SAML** – Web-based federated identity authentication.
+                        - **TACACS+** – Cisco protocol offering granular access control.
+                        - **Time-based Authentication** – Temporary codes based on a timer (e.g., TOTP).
+                    - **Authorization**
+                        - **Least Privilege** – Grant minimum access necessary.
+                        - **Role-Based Access Control (RBAC)** – Access determined by user role.
+                - **Geofencing**
+                    - Restricts or enables access based on geographic location.
+            - ### 🏢 **Physical Security**
+                - **Cameras** – Surveillance and monitoring.
+                - **Locks** – Restrict physical access to equipment and rooms.
+                - [Size]();-[H3]()
+            - 
+            - ### 🎯 **Deception Technologies**
+                - **Honeypot** – Decoy system intended to attract attackers for study.
+                - **Honeynet** – Network of honeypots simulating a real network.
+                - [Size]();-[H3]()
+            - 
+            - ### 📚 **Common Security Terminology**
+                - **Risk** – Potential for loss or damage.
+                - **Vulnerability** – Weakness that could be exploited.
+                - **Exploit** – Action that takes advantage of a vulnerability.
+                - **Threat** – Any potential danger to assets or data.
+                - **CIA Triad** –
+                    - **Confidentiality** – Prevent unauthorized access.
+                    - **Integrity** – Prevent unauthorized alteration.
+                    - **Availability** – Ensure systems/data are accessible when needed.
+                - [Size]();-[H3]()
+            - 
+            - ### 📑 **Audits and Regulatory Compliance**
+                - **Data Locality** – Where data is physically stored.
+                - **PCI DSS** – Payment Card Industry standard for securing cardholder data.
+                - **GDPR** – EU regulation protecting personal data and privacy.
+                - [Size]();-[H3]()
+            - 
+            - ### 🌐 **Network Segmentation Enforcement**
+                - **IoT / IIoT** – Separate and monitor connected smart/industrial devices.
+                - **SCADA / ICS / OT** – Critical industrial systems requiring strict segmentation.
+                - **Guest** – Isolated access for visitors or untrusted devices.
+                - **BYOD** – Policies and segmentation for personal devices in the workplace.
+                - [Size]();-[H3]()
+        - 
+        - ### Logical Security
+            - [Size]();-[H3]()
+        - Logical security includes software-based measures like encryption, access control, and secure authentication to protect data and systems.
+        - Encryption
+            - **Data in Transit**: Secures information moving over a network. Common protocols: HTTPS, SSL/TLS, VPN.
+            - **Data at Rest**: Secures stored information. Common methods: Full Disk Encryption (FDE), encrypted file systems.
+        - Certificates
+            - **PKI (Public Key Infrastructure)**: Framework to issue/manage digital certificates.
+            - **Self-Signed Certificates**: Issued by the entity itself; best for internal/testing use.
+        - ### Identity and Access Management (IAM)
+            - [Size]();-[H3]()
+        - Controls user access to resources.
+        - Authentication
+            - **Multifactor Authentication (MFA)**: Combines something you know, have, and are.
+            - **Single Sign-On (SSO)**: One login for multiple systems.
+            - **RADIUS**: Centralized AAA (Authentication, Authorization, Accounting).
+            - **LDAP**: Accesses directory services.
+            - **SAML**: Standard for exchanging authentication data.
+            - **TACACS+**: Separates authentication, authorization, and accounting.
+            - **Time-based Authentication**: Codes valid for a limited time.
+        - Authorization
+            - **Least Privilege**: Minimal access required to perform tasks.
+            - **Role-Based Access Control (RBAC)**: Access based on user roles.
+        - Geofencing
+            - Uses location to trigger actions or enforce policies.
+        - ### Physical Security
+            - **Security Cameras**: Monitor and record activity.
+            - **Locks**: Control physical access to areas.
+            - [Size]();-[H3]()
+        - ### Deception Technologies
+            - **Honeypot**: Fake system to attract and study attackers.
+            - **Honeynet**: Network of honeypots for broader analysis.
+            - [Size]();-[H3]()
+        - ### Common Security Terminology
+            - **Risk**: Potential impact from a threat exploiting a vulnerability.
+            - **Vulnerability**: Weakness exploitable by a threat.
+            - **Exploit**: Method to take advantage of a vulnerability.
+            - **Threat**: Potential source of harm.
+            - **CIA Triad**:
+                - **Confidentiality**: Restrict access to data.
+                - **Integrity**: Ensure data accuracy.
+                - **Availability**: Ensure data access when needed.
+            - [Size]();-[H3]()
+        - ### Audits and Regulatory Compliance
+            - **Data Locality**: Data must remain within certain regions.
+            - **PCI DSS**: Protects credit card data.
+            - **GDPR**: Governs personal data in the EU.
+            - [Size]();-[H3]()
+        - ### Network Segmentation Enforcement
+            - **IoT/IIoT Segmentation**: Isolate less secure devices.
+            - **SCADA/ICS/OT Segmentation**: Isolate industrial systems.
+            - **Guest Segmentation**: Separate visitor access.
+            - **BYOD Segmentation**: Isolate personal devices.
+            - [Size]();-[H3]()
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Logical security
+            - Encryption
+                - Data in transit
+                - Data at rest
+            - Certificates
+                - {{Public Key Infrastructure}} ({{PKI}})
+                - Self-signed
+            - {{Identity and Access Management}} ({{IAM}})
+                - Authentication
+                    - {{Multi-Factor Authentication}} ({{MFA}})
+                    - {{Single Sign-On}} ({{SSO}})
+                    - {{Remote Authentication Dial-in User Service}} ({{RADIUS}})
+                    - LDAP
+                    - {{Security Assertion Markup Language}} ({{SAML}})
+                    - {{Terminal Access Controller Access Control System Plus}} ({{TACACS+}})
+                    - Time-based authentication
+                - Authorization
+                    - Least privilege
+                    - Role-based access control
+            - Geofencing
+        - Physical security
+            - Camera
+            - Locks
+        - Deception technologies
+            - Honeypot
+            - Honeynet
+        - Common security terminology
+            - Risk
+            - Vulnerability
+            - Exploit
+            - Threat
+            - {{Confidentiality, Integrity, and Availability}} ({{CIA}}) triad
+        - Audits and regulatory compliance
+            - Data locality
+            - {{Payment Card Industry Data Security Standards}} ({{PCI DSS}})
+            - {{General Data Protection Regulation}} ({{GDPR}})
+        - Network segmentation enforcement
+            - {{Internet of Things}} ({{IoT}}) and {{Industrial Internet of Things}} ({{IIoT}})
+            - {{Supervisory Control And Data Acquisition}} ({{SCADA}}), {{Industrial Control System}} ({{ICS}}), {{Operational Technology}} ({{OT}})
+            - Guest
+            - {{Bring your own device}} ({{BYOD}})
+    -  4.2 Summarize various types of attacks and their impact to the network.
+        - 11111
+            - ### 💣 **Denial-of-Service (DoS) / Distributed Denial-of-Service (DDoS)**
+                - [Size]();-[H3]()
+                - **DoS**: Single attacker overwhelms a service/system.
+                - **DDoS**: Multiple compromised systems (botnet) flood a target simultaneously.
+                - **Goal**: Disrupt availability.
+            - ### 🧬 **Switch & Layer 2 Attacks**
+                - **VLAN Hopping**
+                    - Attackers send traffic to other VLANs via double tagging or switch misconfigurations.
+                - **MAC Flooding**
+                    - Floods switch MAC table with fake addresses, forcing it to broadcast traffic to all ports (like a hub).
+                - **ARP Poisoning / ARP Spoofing**
+                    - Sends fake ARP replies to associate the attacker’s MAC with the IP of another device (often the gateway).
+                    - Enables **MITM (Man-in-the-Middle)** attacks or traffic redirection.
+                - [Size]();-[H3]()
+            - 
+            - ### 🌐 **DNS-Based Attacks**
+                - **DNS Poisoning**
+                    - Corrupts a DNS resolver’s cache to redirect users to malicious sites.
+                - **DNS Spoofing**
+                    - Fake DNS responses sent to users to redirect traffic without modifying cache.
+                - [Size]();-[H3]()
+            - 
+            - ### 🔌 **Rogue Devices and Services**
+                - **Rogue DHCP Server**
+                    - Issues incorrect IP settings to redirect or isolate users.
+                - **Rogue Access Point (AP)**
+                    - Unauthorized wireless AP allowing attackers into the network.
+                - **Evil Twin**
+                    - Malicious AP mimicking a legitimate one to capture user credentials or traffic.
+                - [Size]();-[H3]()
+            - 
+            - ### 🔗 **On-Path Attack** (formerly Man-in-the-Middle, MITM)
+                - Attacker secretly intercepts and possibly alters communication between two parties.
+                - [Size]();-[H3]()
+            - 
+            - ### 🧠 **Social Engineering Attacks**
+                - **Phishing**
+                    - Fraudulent emails or messages trick users into revealing sensitive info.
+                - **Dumpster Diving**
+                    - Retrieving sensitive information from discarded materials.
+                - **Shoulder Surfing**
+                    - Observing someone’s screen or keystrokes over their shoulder.
+                - **Tailgating**
+                    - Following someone into a restricted area without authorization.
+                - [Size]();-[H3]()
+            - 
+            - ### 🦠 **Malware**
+                - Malicious software such as:
+                    - **Viruses**
+                    - **Worms**
+                    - **Trojans**
+                    - **Spyware**
+                    - **Ransomware**
+                    - **Keyloggers**
+                - [Size]();-[H3]()
+        - 
+        - ### Denial-of-Service (DoS)/DDoS
+            - [Size]();-[H3]()
+            - Overwhelm systems with traffic to disrupt access.
+        - ### VLAN Hopping
+            - Exploit to send traffic across VLANs.
+            - [Size]();-[H3]()
+        - ### MAC Flooding
+            - Overloads switch MAC table, turns it into a hub.
+            - [Size]();-[H3]()
+        - ### ARP Poisoning/Spoofing
+            - Falsified ARP messages reroute traffic to attacker.
+            - [Size]();-[H3]()
+        - ### DNS Poisoning/Spoofing
+            - Redirects domain traffic to malicious sites.
+            - [Size]();-[H3]()
+        - ### Rogue Devices and Services
+            - **Rogue DHCP**: Misconfigures IP settings.
+            - **Rogue AP**: Unapproved wireless access point.
+            - [Size]();-[H3]()
+        - ### Evil Twin
+            - Mimics legitimate AP to steal data.
+            - [Size]();-[H3]()
+        - ### On-Path Attack
+            - Intercepts/changes communications between two parties.
+            - [Size]();-[H3]()
+        - ### Social Engineering
+            - **Phishing**: Fake messages for credentials.
+            - **Dumpster Diving**: Searching trash for data.
+            - **Shoulder Surfing**: Observing user entry.
+            - **Tailgating**: Following into secure area.
+            - [Size]();-[H3]()
+        - ### Malware
+            - Malicious software: viruses, worms, ransomware, spyware.
+            - Prevent with antivirus, patches, training.
+            - [Size]();-[H3]()
+        - 
+        - 
+        - [Size]();-[H0]()
+        - {{Denial-of-Service}} ({{DoS}})/{{Distributed Denial-of-Service}} ({{DDoS}})
+        - VLAN hopping
+        - {{Media Access Control}} ({{MAC}}) flooding
+        - {{Address Resolution Protocol}} ({{ARP}}) poisoning
+        - ARP spoofing
+        - DNS poisoning
+        - DNS spoofing
+        - Rogue devices and services
+            - DHCP
+            - AP
+        - Evil twin
+        - On-path attack
+        - Social engineering
+            - Phishing
+            - Dumpster diving
+            - Shoulder surfing
+            - Tailgating
+        - Malware
+    -  4.3 Given a scenario, apply network security features, defense techniques, and solutions.
+        - 1111
+            - ### **Device Hardening**
+                - [Size]();-[H3]()
+                - **Disable unused ports and services**
+                    - Reduces attack surface by limiting entry points.
+                - **Change default passwords**
+                    - Prevents unauthorized access using vendor default credentials.
+            - ### 🔐 **Network Access Control (NAC)**
+                - **Port Security**
+                    - Limits the number of MAC addresses on a switch port.
+                - **802.1X**
+                    - Port-based authentication using RADIUS. Validates identity before network access.
+                - **MAC Filtering**
+                    - Allows or denies devices based on MAC address. Offers basic layer of access control.
+                - [Size]();-[H3]()
+            - 
+            - ### 🔑 **Key Management**
+                - Secure generation, distribution, storage, rotation, and revocation of encryption keys.
+                - Essential for protecting encrypted data and authentication systems.
+                - [Size]();-[H3]()
+            - 
+            - ### 📜 **Security Rules**
+                - **Access Control List (ACL)**
+                    - Rules that permit or deny traffic based on IP, protocol, or port.
+                - **URL Filtering**
+                    - Blocks access to specific web addresses.
+                - **Content Filtering**
+                    - Inspects and restricts data (e.g., keywords, file types) in web, email, or application traffic.
+                - [Size]();-[H3]()
+            - 
+            - ### 🌐 **Zones and Network Segmentation**
+                - **Trusted vs. Untrusted**
+                    - Trusted zone: Internal secure network.
+                    - Untrusted zone: External or public-facing networks (like the internet).
+                - **Screened Subnet (DMZ)**
+                    - A semi-secured zone between trusted internal network and untrusted external network.
+                    - Hosts public-facing services (web, email) isolated from LAN.
+                - [Size]();-[H3]()
+        - 
+            - ### Device Hardening
+                - [Size]();-[H3]()
+                - **Disable Unused Ports/Services**: Reduce attack surface.
+                - **Change Default Passwords**: Prevent easy access.
+            - ### Network Access Control (NAC)
+                - **Port Security**: Limits MAC addresses on ports.
+                - **802.1X**: Authenticates devices before access.
+                - **MAC Filtering**: Restricts network by MAC address.
+                - [Size]();-[H3]()
+            - ### Key Management
+                - Manage, rotate, revoke cryptographic keys.
+                - [Size]();-[H3]()
+            - ### Security Rules
+                - **ACLs**: Filter traffic by IP/protocol/port.
+                - **URL Filtering**: Block specific web content.
+                - **Content Filtering**: Inspect and block inappropriate data.
+                - [Size]();-[H3]()
+            - ### Network Zones
+                - **Trusted**: Internal secure networks.
+                - **Untrusted**: External/public networks.
+                - **DMZ (Screened Subnet)**: Buffer zone for public-facing services.
+                - [Size]();-[H3]()
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Device hardening
+            - Disable unused ports and services
+            - Change default passwords
+        - {{Network Access Control}} ({{NAC}})
+            - Port security
+            - 802.1X
+            - MAC filtering
+        - Key management
+        - Security rules
+            - {{Access Control List}} ({{ACL}})
+                - ## Access Control List
+                    - [Size]();-[H2]()
+                - 
+                - <[__networking__](https://foldoc.org/contents/networking.html)>
+                - (ACL) A list of the services available on a [server](https://foldoc.org/server), each with a list of the [hosts](https://foldoc.org/hosts) permitted to use the service.
+            - {{Uniform Resource Locator}} ({{URL}}) filtering
+                - ### URL ⇝
+                    - [Size]();-[H3]()
+                - ## Uniform Resource Locator
+                    - [Size]();-[H2]()
+                - 
+                - <[__web__](https://foldoc.org/contents/web.html)>
+                - (URL, previously "Universal") A [standard](https://foldoc.org/standard) way of specifying the location of an object, typically a [web page](https://foldoc.org/web+page), on the [Internet](https://foldoc.org/Internet). Other types of object are described below. URLs are the form of address used on the [World-Wide Web](https://foldoc.org/World-Wide+Web). They are used in [HTML](https://foldoc.org/HTML) documents to specify the target of a [hypertext link](https://foldoc.org/hypertext+link) which is often another HTML document (possibly stored on another computer).
+                - 
+                - Here are some example URLs:
+                - http://w3.org/default.html
+ http://acme.co.uk:8080/images/map.gif
+ http://foldoc.org/?Uniform+Resource+Locator
+ http://w3.org/default.html#Introduction
+ ftp://wuarchive.wustl.edu/mirrors/msdos/graphics/gifkit.zip
+ ftp://spy:secret@ftp.acme.com/pub/topsecret/weapon.tgz
+ mailto:fred@doc.ic.ac.uk
+ news:alt.hypertext
+ [telnet://dra.com](telnet://dra.com)
+                - The part before the first colon specifies the access scheme or [protocol](https://foldoc.org/protocol). Commonly implemented schemes include: [ftp](https://foldoc.org/ftp), [http](https://foldoc.org/http) (web), [gopher](https://foldoc.org/gopher) or [WAIS](https://foldoc.org/WAIS). The "file" scheme should only be used to refer to a file on the same host. Other less commonly used schemes include [news](https://foldoc.org/news), [telnet](https://foldoc.org/telnet) or mailto ([e-mail](https://foldoc.org/e-mail)).
+                - 
+                - The part after the colon is interpreted according to the access scheme. In general, two slashes after the colon introduce a [hostname](https://foldoc.org/hostname) (host:port is also valid, or for [FTP](https://foldoc.org/FTP) user:passwd@host or user@host). The [port](https://foldoc.org/port) number is usually omitted and defaults to the standard port for the scheme, e.g. port 80 for HTTP.
+                - 
+                - For an HTTP or FTP URL the next part is a [pathname](https://foldoc.org/pathname) which is usually related to the pathname of a file on the server. The file can contain any type of data but only certain types are interpreted directly by most [browsers](https://foldoc.org/browsers). These include [HTML](https://foldoc.org/HTML) and images in [gif](https://foldoc.org/gif) or [jpeg](https://foldoc.org/jpeg) format. The file's type is given by a [MIME](https://foldoc.org/MIME) type in the HTTP headers returned by the server, e.g. "text/html", "image/gif", and is usually also indicated by its [filename extension](https://foldoc.org/filename+extension). A file whose type is not recognised directly by the browser may be passed to an external "viewer" [application](https://foldoc.org/application), e.g. a sound player.
+                - 
+                - The last (optional) part of the URL may be a query string preceded by "?" or a "fragment identifier" preceded by "#". The later indicates a particular position within the specified document.
+                - 
+                - Only alphanumerics, reserved characters (:/?#"<>%+) used for their reserved purposes and "$", "-", "_", ".", "&", "+" are safe and may be transmitted unencoded. Other characters are encoded as a "%" followed by two [hexadecimal](https://foldoc.org/hexadecimal) digits. Space may also be encoded as "+". Standard [SGML](https://foldoc.org/SGML) "&<name;-" character entity encodings (e.g. "é") are also accepted when URLs are embedded in HTML. The terminating semicolon may be omitted if &<name> is followed by a non-letter character.
+                - 
+                - [__The authoritative W3C URL specification__](http://w3.org/hypertext/WWW/Addressing/Addressing.html).
+            - Content filtering
+        - Zones
+            - Trusted vs. untrusted
+            - Screened subnet
+-  {{5.0}} {{Network Troubleshooting}} {{24}}%
+    -  5.1 {{Network Troubleshooting Methodology}}.
+        - [Size]();-[H0]()
+        - {{**Step 1**}}**: **{{**Identify The Problem**}}** **
+            - ### **1. Identify the Problem**
+                - [Size]();-[H3]()
+            - Gather Information
+                - **Gather information** – Logs, error messages, configurations.
+                - **Gather Information**: Review system logs, user reports, and performance data.
+            - Question Users
+                - **Question users** – Ask for timelines, symptoms, and recent activity.
+                - **Question Users**: Get firsthand accounts of the issue from affected users.
+            - Identify Symptoms
+                - **Identify symptoms** – Slow speeds, no connectivity, errors, etc.
+                - **Identify Symptoms**: Clearly define what is and isn’t working.
+            - Determine if Anything has Changed
+                - **Determine changes** – New hardware, software, updates, or configurations.
+                - **Determine if Anything Changed**: Look for updates, hardware changes, or config changes.
+            - Duplicate the Problem, if Possible
+                - **Duplicate the problem (if possible)** – Reproduce issue for better diagnosis.
+                - **Duplicate the Problem (if possible)**: Replicate the issue in a controlled environment.
+            - Approach Multiple Problems Individually
+                - **Approach multiple problems individually** – Focus on one issue at a time.
+                - **Approach Multiple Problems Individually**: Address one issue at a time to avoid confusion.
+        - {{**Step 2**}}**: **{{**Establish a Theory of Probable Cause**}}** **
+            - Question the obvious
+                - **Question the obvious** – Start with simplest explanation first.
+                - **Question the Obvious**: Check common issues like cable disconnection or power loss.
+            - Consider multiple approaches
+                - **Consider multiple approaches**:
+                - **Consider Multiple Approaches**:
+                - Top-to-bottom/bottom-to-top OSI model
+                    - **Top-to-bottom** (start at OSI layer 7, go down)
+                    - **Bottom-to-top** (start at OSI layer 1, go up)
+                    - **Top-to-bottom or bottom-to-top OSI model**: Troubleshoot layer by layer.
+                - Divide and conquer
+                    - **Divide and conquer** (start at middle and isolate direction)
+                    - **Divide and Conquer**: Isolate parts of the system to find the fault.
+        - {{**Step 3**}}**: **{{**Test the Theory to Determine the Cause**}}** **
+            - If theory is confirmed, determine next steps to resolve problem
+                - **If confirmed**―Determine next steps for resolution.
+                - **If theory is confirmed**: Plan next steps to fix the problem (hardware, software, config).
+            - If theory is not confirmed, establish a new theory or escalate
+                - **If not confirmed**―Formulate a new theory or escalate the issue.
+                - **If theory is not confirmed**: Reassess the symptoms, form a new theory, or escalate the issue.
+        - {{**Step 4**}}**: Establish a plan of action to resolve the problem and identify potential effects**
+            - Determine fix steps.
+            - Identify **potential effects** on systems, services, or users.
+            - Develop a resolution plan considering side effects and system impact.
+        - {{**Step 5**}}**: **{{**Implement the Solution**}}** or escalate as necessary** 
+            - Fix the issue if within scope.
+            - Escalate to next support level if needed.
+            - Apply the solution or escalate if the issue exceeds your scope of authority or expertise.
+        - {{**Step 6**}}**: **{{**Verify Full System Functionality**}}** and implement preventive measures if applicable** 
+            - Ensure issue is resolved.
+            - **Test with users** if applicable.
+            - **Implement preventive measures** (patches, training, automation, etc.).
+            - Confirm system or network is back to normal.
+            - Implement **preventive measures** to avoid recurrence.
+        - {{**Step 7**}}**: **{{**Document Findings**}}**, actions, outcomes, and lessons learned throughout the process** 
+            - **Findings** – Problem and symptoms.
+            - **Actions** – Steps taken.
+            - **Outcomes** – Results and status.
+            - **Lessons learned** – For future reference and knowledge sharing.
+            - Record:
+                - **What the problem was**
+                - **How it was diagnosed**
+                - **The solution implemented**
+                - **Outcome and lessons learned**
+    -  5.2 Given a scenario, troubleshoot common cabling and physical interface issues.
+        - 1111
+            - ### 🟩 **Cable Issues**
+                - [Size]();-[H3]()
+                - 🔁 **Incorrect Cable Types**
+                    - **Single-mode vs. Multimode fiber**
+                        - 
+                        - ❌ Using wrong type = connectivity/signal failure
+                    - **Category 5/6/7/8**
+                        - 
+                        - ❌ Wrong category = speed/distance limitations
+                    - **STP vs. UTP**
+                        - 
+                        - ❌ Wrong shielding = increased EMI/crosstalk
+                - 🔉 **Signal Degradation**
+                    - **Crosstalk**
+                        - 
+                        - 🔄 Interference between cable pairs
+                    - **Electromagnetic Interference (EMI)**
+                        - 
+                        - 📡 Nearby power lines or devices
+                    - **Attenuation**
+                        - 
+                        - 📏 Signal loss over distance or poor-quality cable
+                - 🔌 **Improper Termination**
+                    - ❌ Miswired or loose connectors (T568A/B mismatch, open pairs)
+                - 🔄 **TX/RX Transposed**
+                    - ↔️ Transmit/receive pairs flipped = no link/connection errors
+                - 
+                - ### 🟦 **Interface Issues**
+                    - [Size]();-[H3]()
+                - 📈 **Increasing Interface Counters**
+                    - **CRC Errors**
+                        - 
+                        - 🔎 Indicates corrupted frames – usually a cable or interference issue
+                    - **Runts**
+                        - 
+                        - 🧩 Frames smaller than minimum size (often due to collisions)
+                    - **Giants**
+                        - 
+                        - 🐘 Oversized frames – may indicate NIC or config issues
+                    - **Drops**
+                        - 
+                        - 📉 Packets dropped due to buffer overflow or congestion
+                - 🚦 **Port Status Indicators**
+                    - **Error-disabled**
+                        - 
+                        - ❌ Port shut down automatically (e.g., due to BPDU guard)
+                    - **Administratively down**
+                        - 
+                        - 🔒 Port manually disabled (via config)
+                    - **Suspended**
+                        - 
+                        - ⚠️ Port not active due to a protocol mismatch or violation
+                - 
+                - ### 🟥 **Hardware Issues**
+                    - [Size]();-[H3]()
+                - 🔌 **Power over Ethernet (PoE)**
+                    - **Power budget exceeded**
+                        - 
+                        - ⚡ Too many devices drawing power
+                    - **Incorrect standard**
+                        - 
+                        - ❌ Using 802.3af device on 802.3at power source (or vice versa)
+                - 🔦 **Transceivers**
+                    - **Mismatch**
+                        - 
+                        - ⚙️ Wrong speed/type (e.g., SFP in an SFP+ port)
+                    - **Signal strength issues**
+                        - 
+                        - 🔍 Dirty connectors, incorrect fiber type/distance, laser failure
+        - 
+        - ### Cable Issues
+            - [Size]();-[H3]()
+        - Incorrect Cable Issues
+            - **Single Mode vs. Multimode**
+                - Single Mode: Long distance, high bandwidth, minimal attenuation.
+                - Multimode: Short distance, larger core, higher dispersion.
+                - Incorrect use can cause signal loss, degraded quality.
+            - **Category 5/6/7/8 Cable Issues**
+                - Lower category cables limit speeds and increase errors.
+                - Example: Using Cat5 instead of Cat6/7/8 reduces performance.
+            - **STP vs. UTP Cable Issues**
+                - STP needed in high EMI environments.
+                - UTP used improperly causes data corruption and signal degradation.
+        - Signal Degradation
+            - Caused by physical damage, EMI/RFI, and poor-quality cables.
+            - Results: Slow transfers, errors, intermittent connectivity.
+        - Crosstalk
+            - Signal interference between cables.
+            - **Types**:
+                - Near-End Crosstalk (NEXT)
+                - Far-End Crosstalk (FEXT)
+            - Effects: Corrupted data, slower transmission.
+        - Interference
+            - Caused by nearby electronic devices or power cables.
+            - Effects: Data loss, corrupted signals.
+        - Attenuation
+            - Signal strength loss over distance.
+            - Fix with repeaters or amplifiers.
+        - Improper Termination
+            - Causes signal loss, reflections, and EMI.
+            - Use proper connectors and techniques.
+        - Transmitter (TX)/Receiver (RX) Transposed
+            - TX/RX lines crossed = no link.
+            - Leads to failed communications.
+        - 
+        - ### Interface Issues
+            - [Size]();-[H3]()
+        - Increasing Interface Counters
+            - Track traffic metrics and errors.
+        - CRC Errors
+            - Data checksum mismatch.
+            - Caused by EMI, faulty cables/hardware.
+        - Runts
+            - Packets < 64 bytes.
+            - Caused by collisions or hardware errors.
+        - Giants
+            - Packets > 1518 bytes.
+            - Caused by misconfigurations or faulty devices.
+        - Drops
+            - Discarded packets due to congestion or buffer overflow.
+        - Port Status Issues
+        - Error Disabled
+            - Port shut down due to issues (e.g., port security violation).
+            - Fix: Resolve root issue, re-enable port.
+        - Administratively Down
+            - Manually disabled by admin.
+            - Fix: Admin action to re-enable.
+        - Suspended
+            - Disabled due to policies (e.g., LACP).
+            - Fix: Resolve config or policy.
+        - 
+        - ### Hardware Issues
+            - [Size]();-[H3]()
+        - Power over Ethernet (PoE)
+        - Power Budget Exceeded
+            - Total device power exceeds switch capability.
+            - Devices may fail to power.
+            - Fix: Upgrade switch or manage load.
+        - Incorrect Standard
+            - Mismatched PoE standards (e.g., 802.3af vs. 802.3bt).
+            - Causes power delivery issues.
+        - Transceiver Issues
+        - Mismatched Transceivers
+            - Incompatibility causes no link or errors.
+            - Fix: Use matching standards/vendors.
+        - Signal Strength
+            - Poor signal = errors, no connection.
+            - Fix: Clean connectors, check lengths/specs.
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Cable issues
+            - Incorrect cable
+                - Single mode vs. multimode
+                - Category 5/6/7/8
+                - {{Shielded Twisted Pair}} ({{STP}}) vs. {{Unshielded Twisted Pair}} ({{UTP}})
+            - Signal degradation
+                - Crosstalk
+                - Interference
+                - Attenuation
+            - Improper termination
+            - {{Transmitter}} ({{TX}})/{{Receiver}} ({{RX}}) transposed
+        - Interface issues
+            - Increasing interface counters
+                - {{Cyclic Redundancy Check}} ({{CRC}})
+                - Runts
+                - Giants
+                - Drops
+            - Port status
+                - Error disabled
+                - Administratively down
+                - Suspended
+        - Hardware issues
+            - {{Power over Ethernet}} ({{PoE}})
+                - Power budget exceeded
+                - Incorrect standard
+            - Transceivers
+                - Mismatch
+                - Signal strength
+    -  5.3 Given a scenario, troubleshoot common issues with network services.
+        - 1111
+            - ### 🟩 **Switching Issues**
+                - [Size]();-[H3]()
+                - 🔁 **Spanning Tree Protocol (STP)**
+                    - **Network loops**
+                        - 
+                        - 🔄 Caused by disabled STP or misconfigured topology
+                    - **Root bridge selection**
+                        - 
+                        - 👑 Unintended switch may be elected root – leads to suboptimal paths
+                    - **Port roles**
+                        - 
+                        - 📍 Ports may incorrectly act as root/alternate – breaks flow
+                    - **Port states**
+                        - 
+                        - 🟡 Port stuck in blocking/listening/learning – causes disruption
+                - 🔀 **Incorrect VLAN assignment**
+                    - ❌ Device can't reach proper subnet or default gateway
+                - 🚫 **Access Control Lists (ACLs)**
+                    - 🔐 Blocked legitimate traffic due to misconfigured rules
+                - 
+                - ### 🟦 **Route Selection Issues**
+                    - [Size]();-[H3]()
+                - 🗺️ **Routing Table**
+                    - ❌ Missing or incorrect routes = unreachable networks
+                - 🧭 **Default Routes**
+                    - 🌍 No or misconfigured default route = failure to reach external networks
+                - 
+                - ### 🟥 **Addressing Issues**
+                    - [Size]();-[H3]()
+                - 🧃 **Address Pool Exhaustion**
+                    - 🧯 DHCP can't assign new IPs – clients get APIPA or fail to connect
+                - 🚪 **Incorrect Default Gateway**
+                    - 🔁 Clients can’t leave local subnet
+                - 🧩 **Incorrect IP Address**
+                    - ❌ Device can't communicate due to wrong subnet or gateway
+                    - **Duplicate IP address**
+                        - 
+                        - ⚠️ IP conflict = packet loss or erratic connectivity
+                - 📐 **Incorrect Subnet Mask**
+                    - 🚫 Blocks communication within same network or creates routing issues
+        - 
+        - ### Switching Issues
+            - [Size]();-[H3]()
+        - STP (Spanning Tree Protocol)
+        - Network Loops
+            - STP prevents broadcast storms by blocking redundant paths.
+        - Root Bridge Selection
+            - Bridge with lowest ID becomes root.
+            - Fix: Adjust priority values.
+        - STP Port Roles
+            - **Root Port**: Best path to root bridge.
+            - **Designated Port**: Forwarding for specific segment.
+            - **Blocked Port**: Prevents loops.
+        - STP Port States
+            - **Blocking** > **Listening** > **Learning** > **Forwarding**
+        - Incorrect VLAN Assignment
+            - Devices on wrong VLANs = communication failure or security risks.
+            - Fix: Verify switch/router VLAN config.
+        - Access Control Lists (ACLs)
+            - Misconfigured ACLs block legit traffic or allow unwanted access.
+        - 
+        - ### Route Selection Issues
+            - [Size]();-[H3]()
+        - Routing Table Issues
+            - **Stale Routes**: Remove outdated entries.
+            - **Static Route Errors**: Verify configurations.
+            - **Dynamic Routing Conflicts**: Ensure protocol compatibility.
+        - Default Route Issues
+            - **Missing**: Add default gateway.
+            - **Incorrect**: Fix misconfigured gateway.
+            - **Overreliance**: Use more specific routes when needed.
+        - 
+        - ### Addressing Issues
+            - [Size]();-[H3]()
+        - Address Pool Exhaustion
+            - Caused by oversubscription, misconfig, or lease issues.
+            - Fix: Expand scope, manage lease times.
+        - Incorrect Default Gateway
+            - Wrong or non-existent gateway IP.
+            - Fix: Ensure it's in same subnet and correct.
+        - Incorrect IP Address
+            - Manual config errors or DHCP conflicts.
+            - Fix: Use reservations, verify settings.
+        - Duplicate IP Address
+            - Two devices with same IP = conflict.
+            - Fix: Monitor, use IPAM tools.
+        - Incorrect Subnet Mask
+            - Causes segmentation and routing issues.
+            - Fix: Verify config matches design.
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Switching issues
+            - STP
+                - Network loops
+                - Root bridge selection
+                - Port roles
+                - Port states
+            - Incorrect VLAN assignment
+            - ACLs
+        - Route selection
+            - Routing table
+            - Default routes
+        - Address pool exhaustion
+        - Incorrect default gateway
+        - Incorrect IP address
+            - Duplicate IP address
+        - Incorrect subnet mask
+    -  5.4 Given a scenario, troubleshoot common performance issues.
+        - 1111
+            - ### 🚦 **Network Performance Issues**
+                - [Size]();-[H3]()
+                - 📊 **Congestion/Contention**
+                    - Too many devices using the same bandwidth
+                    - Causes slowdowns and dropped packets
+                - 🧱 **Bottlenecking**
+                    - Slow device or link (e.g., a 100 Mbps switch on a 1 Gbps network)
+                    - Limits overall data flow capacity
+                - 🚏 **Bandwidth**
+                    - **Throughput capacity**
+                        - 
+                        - The actual data transferred per second; reduced by overhead, congestion
+                - ⏱️ **Latency**
+                    - Delay in packet delivery (measured in ms)
+                    - High latency = sluggish response, especially in VoIP, video
+                - ❌ **Packet Loss**
+                    - Packets dropped due to overload, faults, or collisions
+                    - Impacts file transfers, voice/video quality
+                - ⚡ **Jitter**
+                    - Variability in packet delay
+                    - Critical in real-time apps (VoIP, video conferencing)
+                - 
+                - ### 📡 **Wireless Performance Issues**
+                    - [Size]();-[H3]()
+                - 🌐 **Interference**
+                    - Caused by other wireless networks, microwaves, Bluetooth, etc.
+                - 📶 **Channel Overlap**
+                    - Using overlapping 2.4GHz channels (e.g., 1, 6, 11) incorrectly
+                - 📉 **Signal Degradation or Loss**
+                    - Obstacles (walls, metal), long distances, poor antenna placement
+                - 🕳️ **Insufficient Wireless Coverage**
+                    - Dead zones due to AP placement or signal limitations
+                - 🔌 **Client Disassociation Issues**
+                    - Clients get disconnected from the AP unexpectedly
+                - 🚷 **Roaming Misconfiguration**
+                    - Devices fail to hand off between APs smoothly – causes drops
+        - 
+        - ### Network Bottlenecks and Contention
+            - [Size]();-[H3]()
+            - **Congestion**: Too much traffic overwhelms network.
+                - Fix: QoS, infrastructure upgrades.
+            - **Bottlenecking**: Specific point limits traffic.
+                - Fix: Upgrade links/devices, load balancing.
+        - ### Bandwidth and Throughput
+            - **Bandwidth**: Maximum rate of data transfer.
+            - **Throughput**: Actual rate data is transmitted.
+                - Fix: Traffic optimization, hardware upgrades.
+            - [Size]();-[H3]()
+        - ### Latency and Jitter
+            - **Latency**: Delay from source to destination.
+                - Fix: Fewer hops, CDNs, faster routing.
+            - **Jitter**: Variability in packet arrival.
+                - Fix: Jitter buffers, QoS.
+            - [Size]();-[H3]()
+        - ### Packet Loss
+            - Lost packets cause retransmissions, slowdowns.
+                - Fix: Resolve congestion, hardware faults, interference.
+            - [Size]();-[H3]()
+        - ### Wireless Performance
+            - [Size]();-[H3]()
+        - Interference and Channel Overlap
+            - Sources: Electronic devices, overlapping APs.
+            - Fix: Use non-overlapping channels (1, 6, 11 in 2.4GHz).
+        - Signal Degradation and Coverage
+            - Weak signal due to obstacles or distance.
+            - Fix: Boosters, optimized AP placement.
+        - Client Disassociation and Roaming
+            - Disconnection during mobility or roaming issues.
+            - Fix: Configure APs for seamless handoff.
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Congestion/contention
+        - Bottlenecking
+        - Bandwidth
+            - Throughput capacity
+        - Latency
+        - Packet loss
+        - Jitter
+        - Wireless
+            - Interference
+                - Channel overlap
+            - Signal degradation or loss
+            - Insufficient wireless coverage
+            - Client disassociation issues
+            - Roaming misconfiguration
+    -  5.5 Given a scenario, use the appropriate tool or protocol to solve networking issues.
+        - 1111
+            - ### 💻 **Software Tools**
+                - [Size]();-[H3]()
+                - 🔍 **Protocol Analyzer**
+                    - Captures and analyzes network packets (e.g., Wireshark)
+                - 🔧 **Command Line Tools**
+                    - `ping` – Tests reachability and latency
+                    - `traceroute` / `tracert` – Traces path to a host
+                    - `nslookup` – DNS resolution tester
+                    - `dig` – Advanced DNS lookup tool (Linux/macOS)
+                    - `tcpdump` – CLI packet capture tool
+                    - `netstat` – Displays network connections and ports
+                    - `ip` / `ifconfig` / `ipconfig` – Shows IP/interface config
+                    - `arp` – Views/modifies ARP table
+                - 🔍 **Nmap**
+                    - Network scanning and host discovery
+                - 🔎 **LLDP / CDP**
+                    - Shows directly connected network devices
+                    - LLDP = vendor-neutral, CDP = Cisco-only
+                - 🔁 **Speed Tester**
+                    - Measures actual upload/download throughput
+                - 
+                - ### 🔌 **Hardware Tools**
+                    - **Toner Probe** – Traces cables using tone
+                    - **Cable Tester** – Tests continuity, shorts, miswires
+                    - **Taps** – Monitors traffic without disrupting flow
+                    - **Wi-Fi Analyzer** – Detects signal strength, interference
+                    - **Visual Fault Locator (VFL)** – Detects fiber breaks using visible laser
+                    - [Size]();-[H3]()
+                - 
+                - ### 🖥️ **Basic Networking Device Commands**
+                    - `show mac-address-table` – Lists MAC-to-port mappings (switches)
+                    - `show route` – Displays routing table (routers)
+                    - `show interface` – Interface status and errors
+                    - `show config` – Current device configuration
+                    - `show arp` – ARP cache entries
+                    - `show vlan` – VLAN IDs and port assignments
+                    - `show power` – PoE status and power draw
+                    - [Size]();-[H3]()
+        - 
+        - ### Software Tools
+            - [Size]();-[H3]()
+        - Protocol Analyzer
+            - Captures and analyzes packet data.
+            - Used for security, performance, and troubleshooting.
+        - Command Line Tools
+            - **ping**: Test reachability.
+            - **traceroute/tracert**: Trace path to destination.
+            - **nslookup/dig**: DNS lookup.
+            - **tcpdump**: Capture packets.
+            - **netstat**: View connections and ports.
+            - **ip/ifconfig/ipconfig**: View/change IP settings.
+            - **arp**: IP-to-MAC mappings.
+            - **nmap**: Network scanning.
+            - **LLDP/CDP**: Neighbor discovery.
+            - **Speed tester**: Measure upload/download speeds.
+        - ### Hardware Tools
+            - [Size]();-[H3]()
+        - Toner and Probe
+            - Trace and identify cables.
+        - Cable Tester
+            - Verify wiring and detect faults.
+        - Network Tap
+            - Monitor traffic without disruption.
+        - Wi-Fi Analyzer
+            - View signal strength, interference, channel use.
+        - Visual Fault Locator
+            - Identify fiber faults with visible light.
+        - ### Basic Device Commands
+            - **show mac-address-table**: View MAC associations.
+            - **show route**: Display routing table.
+            - **show interface**: Status, errors, and stats.
+            - **show config**: Current device configuration.
+            - **show arp**: View IP-MAC resolution table.
+            - **show vlan**: VLAN assignments and ports.
+            - **show power**: PoE power status and usage.
+            - [Size]();-[H3]()
+        - 
+        - 
+        - [Size]();-[H0]()
+        - Software tools
+            - Protocol analyzer
+            - Command line
+                - ping
+                - traceroute/tracert
+                - nslookup
+                - tcpdump
+                - dig
+                - netstat
+                - ip/ifconfig/ipconfig
+                - arp
+            - Nmap
+            - {{Link Layer Discovery Protocol}} ({{LLDP}})/{{Cisco Discovery Protocol }}({{CDP}})
+            - Speed tester
+        - Hardware tools
+            - Toner
+            - Cable tester
+            - Taps
+            - Wi-Fi analyzer
+            - Visual fault locator
+        - Basic networking device commands
+            - show mac-address-table
+            - show route
+            - show interface
+            - show config
+            - show arp
+            - show vlan
+            - show power
+- General questions 
+    - How many domains does CompTIA Network+ N10-009→5 domains 
+    - {{network}} System connecting computers for communication. 
+        - Hardware and software data communication systems.
+    - {{host}} Provider of resources for guests**.** 
+        - anything with a ip
+    - {{server}} Computer providing services to clients. 
+    - {{client}} Customer receiving services from provider. 
+    - {{workstation}} [High-performance](https://onelook.com/?w=High-performance&loc=inbrief) computer for professionals 
+    - client machine 
+    - network devices 
+    - cloud

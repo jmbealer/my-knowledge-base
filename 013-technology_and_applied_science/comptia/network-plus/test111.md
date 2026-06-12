@@ -1,0 +1,5624 @@
+- **1.0 Networking Concepts 23%**
+    - **1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model.**
+        - Key Concepts to Learn:
+            - OSI Model - 7 Layers
+            - Encapsulation and Decapsulation
+            - Protocol Data Units (PDUs)
+            - Layer-specific functions and examples
+        - OSI Model
+            - **Open Systems Interconnection (OSI) Model Layers** 
+                - The Open Systems Interconnection (OSI) Model is a conceptual framework used to understand network interactions in seven layers.
+                - Each layer serves a specific function in the process of communicating over a network, from physical transmission of data to application-specific services.
+                - The model facilitates the design and understanding of network architectures by segregating the network communication process into manageable layers, promoting interoperability and standardization across diverse network technologies and protocols.
+            - Open Systems Interconnection reference model (OSI) 
+                - Assigns network and hardware components and functions at seven discrete layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+            - Open Systems Interconnection Reference Model
+            - OSI Model = Guide -> Thus the term "model"
+            - This is not the OSI protocol suite, most of it's protocols did not catch on (suite as in entirety of models protocols)
+            - Unique Protocols at Every Layer
+            - Helpful Mnemonic to Remember Each Layer:
+                - All (Application) People (Presentation) Seem (Session) To (Transport) Need
+                - (Network) Data (Data Link) Processing (Physical)
+                - All People Seem To Need Data Processing
+            - 
+            - OSI Model Overview
+                - The OSI (Open Systems Interconnection) model is a conceptual framework used to  understand and describe how data flows across networks. 
+                - It is composed of 7 layers,  from physical transmission of data to end-user application access.
+            - 
+            - what is the osi model
+                - open systems interconnection model
+                - created in 1978
+                - model, not a protocol
+                    - used for learning purposes only
+                    - not actually used on the internet
+                - tcp/ip model
+                    - actual internet protocol suite
+            - osi vs tcp/ip
+                - Application, Presentation and Session Layers
+                    - In tcp/ip model is just the Application Layer
+                        - part of protocols
+                    - In osi model its part application layers
+                - Transport Layer
+                    - same name in both osi and tcp/ip models
+                    - Part of protocols in tcp/ip model
+                    - Part of Data Flow Layers in osi model
+                - Network Layer
+                    - is called Internet Layer in the tcp/ip model
+                    - Part of the Networks in the tcp/ip model
+                    - Part of the Data Flow Layer in the osi model
+                - Data Link and Physical Layers
+                    - Is called Network Access in the tcp/ip model
+                    - Part of the Networks in the tcp/ip model
+                    - Part of the Data Flow Layer in the osi model
+            - why use the osi model
+                - its still a good reference for:
+                    - network architecture
+                    - network troubleshooting
+                    - Example
+                        - OSI treat cables and NICs as separate layers
+                        - TCP/IP treats cables and NICs as a single layer
+            - Characteristics of Each Layer
+                - PDU - {{Protocol Data Unit}} 
+                    - Data used at the layer
+                    - i.e. Layer 1 = bits; L2 = frames
+                - Important Fields
+                    - Each PDU has multiple fields
+                    - Network+ certification only cares about a few key one
+                    - i.e. L2 = MAC Addresses, L3 = IP Addresses
+                - Relevant Devices
+                    - Each layer is utilized heavily by certain devices
+                    - i.e. L2 = Switches and NICs
+            - (OSI-RM, OSI Reference Model, seven layer model) A model of network architecture and a suite of protocols (a [**protocol stack**](https://encyclopedia2.thefreedictionary.com/protocol+stack)) to implement it, developed by [**ISO**](https://encyclopedia2.thefreedictionary.com/ISO) in 1978 as a framework for international [**standards**](https://encyclopedia2.thefreedictionary.com/standards) in heterogeneous computer [**network**](https://encyclopedia2.thefreedictionary.com/network) architecture.
+            - 
+            - 
+            - The OSI architecture is split between seven [**layers**](https://encyclopedia2.thefreedictionary.com/layers), from lowest to highest: 
+                - 1 [**physical layer**](https://encyclopedia2.thefreedictionary.com/physical+layer), 2 [**data link layer**](https://encyclopedia2.thefreedictionary.com/data+link+layer), 3 [**network layer**](https://encyclopedia2.thefreedictionary.com/network+layer), 4 [**transport layer**](https://encyclopedia2.thefreedictionary.com/transport+layer), 5 [**session layer**](https://encyclopedia2.thefreedictionary.com/session+layer), 6 [**presentation layer**](https://encyclopedia2.thefreedictionary.com/presentation+layer), 7 [**application layer**](https://encyclopedia2.thefreedictionary.com/application+layer).
+            - Each layer uses the layer immediately below it and provides a service to the layer above. 
+                - In some implementations a layer may itself be composed of sub-layers.
+            - 
+        - {{**Layer 1**}}** - **{{**Physical**}}** **- Transmits raw bits over a physical medium.
+            - Includes electrical signals, light pulses, cables, connectors.
+            - Layer 1- Physical
+                - The OSI model's Layer 1, known as the Physical Layer, 
+                - is responsible for the physical transmission of data over network media.
+                - It deals with the hardware aspects of networking, including cables, switches, and the electrical signals or light pulses that carry data.
+                - This layer defines the standards for devices and media to connect and transmit raw bits rather than logical data packets.
+            - The physics of the network
+                - Signaling, cabling, connectors
+                - This layer is not about protocols (Very Hardware Heavy)
+            - "You have a physical layer problem"
+                - Fix your cabling, punch-downs etc
+                - Run loopback tests, test/replace cables, swap adapter cards
+            - 
+            - 
+            - {{L1}} Devices: Hubs, repeaters, network cables
+            - {{L1}} PDU: {{Bits}} 
+            - 
+            - Physical layer (PHY) Lowest layer of the OSI model providing for the transmission and receipt of data bits from node to node. 
+            - 
+            - This includes the network medium and mechanical and electrical specifications for using the media.
+            - The physical layer is used by the [**data link layer**](https://encyclopedia2.thefreedictionary.com/data+link+layer).
+            - 
+            - The Physical Layer (Layer 1) is where **bits** (binary ones and zeros) are transmitted across the network. It includes all physical and electrical characteristics of the network (e.g., copper, fiber, radio frequency). You don't need to memorize TDM, StatTDM, and FDM specifics, but understand that multiplexing makes limited resources more efficient.
+            - ✅ **Bit Representation**
+                - Copper wire: Voltage levels (e.g., 0V for zero, +/-5V for one).
+                - Fiber optic: Light (light on for one, light off for zero).
+                - **Transition Modulation:** Switching between modes to represent bits.
+            - ✅ **Cabling and Connectors**
+                - RJ45 connectors for Cat 5/6 cables.
+                - Wiring standards: TIA/EIA-568A and TIA/EIA-568B.
+                - **Crossover Cable:** One end A standard, one end B standard (flips transmit/receive bits).
+                - **Straight-through Cable (Patch Cable):** Both ends B standard.
+            - ✅ **Physical Topology**
+                - How devices are physically cabled together (e.g., bus, ring, star, mesh). This is a Layer 1 issue.
+            - ✅ **Communication Synchronization**
+                - How the receiving end knows when to accept bits.
+                - **Asynchronous Communication:** Uses start and stop bits; communication happens out of sync (like voicemail).
+                - **Synchronous Communication:** Uses a common time source (clock) for real-time communication.
+            - ✅ **Bandwidth Utilization**
+                - **Broadband:** Divides bandwidth into separate channels (e.g., cable TV with multiple channels).
+                - **Baseband:** Uses all of the frequency of the cable all of the time (e.g., wired Ethernet, telephone).
+            - ✅ **Multiplexing (for Baseband)**
+                - Allows multiple users to share a single baseband connection more efficiently.
+                - **Time-Division Multiplexing (TDM):** Each session takes turns using dedicated time slots.
+                - **Statistical Time-Division Multiplexing (StatTDM):** Dynamically allocates time slots based on necessity (more efficient than TDM).
+                - **Frequency-Division Multiplexing (FDM):** Splits the medium into channels based on frequency (similar to broadband).
+            - ✅ **Layer 1 Devices**
+                - **Cables:** Fiber optic, Ethernet, coaxial.
+                - **Wireless Media:** Bluetooth, Wi-Fi, NFC (radio frequencies).
+                - **Infrastructure Devices:**
+                    - **Hubs:** "Dumb" devices that simply repeat whatever they receive to all other ports.
+                    - **Access Points:** (Can operate at Layer 1 for basic signal transmission).
+                    - **Media Converters:** Convert signals from one media type to another (e.g., coaxial to fiber).
+                - Layer 1 devices are "dumb" repeaters; they have no logic or intelligence.
+        - {{**Layer 2**}}** - **{{**Data Link**}} - Provides node-to-node communication and error detection.
+            - 
+            - ∙ Uses MAC addresses for identification.
+            - ∙ Protocols: Ethernet, PPP, HDLC, Frame Relay
+            - {{L2}} Devices: {{Switches, bridges}} 
+            - {{L2}} PDU: {{Frames}} 
+            - Layer 2 – Data link
+                - The OSI model's Layer 2, known as the Data Link Layer, is responsible for node-to-node data
+                - transfer and error detection and correcƟon in the physical layer.
+                - It establishes, maintains, and terminates connecƟons between two physically connected
+                - devices.
+                - This layer also handles the framing of data packets, including addressing and is divided into
+                - two sublayers:
+                    - o Media Access Control (MAC) layer
+                        -  The Media Access Control (MAC) layer is a sublayer of the OSI model's Data
+                        - Link Layer that manages protocol access to the physical network medium.
+                        -  It is responsible for the addressing and channel access control mechanisms
+                        - that enable several terminals or network nodes to communicate within a
+                        - multipoint network, typically using MAC addresses.
+                    - o Logical Link Control (LLC) layer
+                        - The Logical Link Control (LLC) layer is the upper sublayer of the OSI model's Data Link Layer
+                        - that provides mulƟplexing mechanisms that allow multiple network protocols (e.g., IP, IPX)
+                        - to coexist within a multiaccess network and provides flow and error control.
+                        - 
+                        - LLC acts as an interface between the networking software in the upper layers and the device
+                        - hardware in the lower layers, ensuring data integrity and specifying which mechanisms are
+                        - to be used for addressing and controlling the data link.
+            - Layer 2 - Data Link Layer
+                - The basic network "language"
+                    - The foundation of communication at the data link layer
+                - Data Link Control (DLC) protocols
+                    - MAC (Media Access Control) address on Ethernet
+                - The "switching" layer
+            - Data Link layer OSI model layer responsible for transferring data between nodes.
+            - 
+            - pdu - frames
+            - ## data link layer
+                - [Size]();-[H2]()
+                - (networking)
+            - Layer two, the second lowest layer in the [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) seven layer model. The data link layer splits data into [**frames**](https://encyclopedia2.thefreedictionary.com/frames) (see [**fragmentation**](https://encyclopedia2.thefreedictionary.com/fragmentation)) for sending on the [**physical layer**](https://encyclopedia2.thefreedictionary.com/physical+layer) and receives acknowledgement frames. It performs error checking and re-transmits frames not received correctly. It provides an error-free virtual channel to the [**network layer**](https://encyclopedia2.thefreedictionary.com/network+layer). The data link layer is split into an upper sublayer, [**Logical Link Control**](https://encyclopedia2.thefreedictionary.com/Logical+Link+Control) (LLC), and a lower sublayer, [**Media Access Control**](https://encyclopedia2.thefreedictionary.com/Media+Access+Control) (MAC).
+            - 
+            - 
+            - Example protocols at this layer are [**ABP**](https://encyclopedia2.thefreedictionary.com/ABP), [**Go Back N**](https://encyclopedia2.thefreedictionary.com/Go+Back+N), [**SRP**](https://encyclopedia2.thefreedictionary.com/SRP).
+            - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+            - ## data link layer
+                - [Size]();-[H2]()
+            - The processing in a network protocol that manages transmission from node to node. The data link layer is layer 2 of 7 in the OSI model. The upper layers provide network-to-network transmission and guarantee of delivery. See [**data link protocol**](https://encyclopedia2.thefreedictionary.com/data+link+protocol), [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP), [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model) and [**MAC layer**](https://encyclopedia2.thefreedictionary.com/MAC+layer).
+            - 
+            - The Data Link Layer (Layer 2) packages bits into **frames** for transmission, performs error detection/correction, identifies unique devices using MAC addresses, and provides flow control. Remember that switches, bridges, and MAC addresses operate at Layer 2.
+            - ✅ **MAC (Media Access Control) Address**
+                - A unique 48-bit physical address assigned to every Network Interface Card (NIC).
+                - Written in 12-digit hexadecimal numbers.
+                - The first 24 bits (first 6 hex digits) identify the manufacturer (Organizationally Unique Identifier - OUI).
+                - The remaining bits uniquely identify the specific device.
+                - Important for logical topology and used by switches to identify devices.
+            - ✅ **Logical Link Control (LLC)**
+                - Provides connection services, allowing recipients to acknowledge message receipt.
+                - Offers basic **flow control** to prevent sender from overwhelming receiver.
+                - Provides basic **error control** using checksums to detect corrupted frames and request retransmission.
+            - ✅ **Communication Synchronization Schemes**
+                - **Isochronous Mode:** Uses a common reference clock and time slots for transmissions (less overhead).
+                - **Synchronous Mode:** Devices use the same clock, with special control characters for start/end frames.
+                - **Asynchronous Mode:** Each device uses its own clock, with start and stop bits (less control over communication timing).
+            - ✅ **Layer 2 Devices**
+                - **Network Interface Cards (NICs)**
+                - **Bridges**
+                - **Switches:** Smarter than hubs, they learn MAC addresses and forward data to specific devices based on MAC addresses.
+        - {{**Layer 3**}}** - **{{**Network**}}  - Handles logical addressing and routing.
+            - ∙ Determines best path to the destination using routing protocols. ∙ Protocols: IP, ICMP, IGMP, OSPF, BGP
+            - {{L3}} Devices: {{Routers}} 
+            - {{L3}} PDU: {{Packets}} 
+            - Layer 3 – Network
+            - The OSI model's Layer 3, known as the Network Layer, is responsible for the logical
+            - addressing and rouƟng of packets across diƯerent networks.
+            - It determines the best path for data transmission from the source to the destination using
+            - rouƟng protocols.
+            - This layer manages packet forwarding, including routing through intermediate routers, and
+            - handles network congestion and packet filtering.
+            - Layer 3- Network Layer
+            - The "routing layer"
+            - Layer used by routers to determine how to forward traffic
+            - Internet Protocol (IP)
+            - Fragments frames to traverse different networks
+            - 
+            - pdu - packets
+            - 
+            - Network layer OSI model layer responsible for logical network addressing and forwarding.
+            - ## network layer
+                - [Size]();-[H2]()
+                - (networking)
+            - (communications subnet layer) The third lowest layer in the [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) seven layer model. The network layer determines routing of packets of data from sender to receiver via the [**data link layer**](https://encyclopedia2.thefreedictionary.com/data+link+layer) and is used by the [**transport layer**](https://encyclopedia2.thefreedictionary.com/transport+layer). The most common network layer [**protocol**](https://encyclopedia2.thefreedictionary.com/protocol) is [**IP**](https://encyclopedia2.thefreedictionary.com/IP).
+            - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+            - ## network layer
+                - [Size]();-[H2]()
+            - The processing in a network protocol that manages transmission from network to network. The network layer is layer 3 of 7 in the OSI model. Also called the "Internet layer" or "IP layer." See [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP), [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model) and [**Internet Protocol**](https://encyclopedia2.thefreedictionary.com/Internet+Protocol).
+            - 
+            - The Network Layer (Layer 3) is concerned with **routing** using **logical addresses** (e.g., IP addresses). Remember that IP and routers are the most common examples of Layer 3.
+            - ✅ **Layer-3 Switching (Routing)**
+                - The function of routing is sometimes referred to as layer-3 switching.
+                - A physical switch is typically a Layer 2 device, unless specified as a "multi-layer switch" (which operates at Layer 3).
+            - ✅ **Route Discovery and Selection**
+                - How routers determine the best path for traffic.
+                - Routers maintain **routing tables**.
+                - Routes can be **static** or **dynamically assigned** using routing protocols (e.g., RIP, OSPF, EIGRP).
+            - ✅ **Switching Methods**
+                - **Packet Switching:** Data is divided into packets, each forwarded independently based on its IP address. Most common method used on the internet and home networks. (Analogy: sending a letter where each part might take a different route).
+                - **Circuit Switching:** A dedicated communication link is established between two devices for the duration of the communication. (Analogy: a phone call where the path remains constant).
+                - **Message Switching:** Data is divided into messages that can be stored and forwarded (like email). Offers store-and-forward capability.
+            - ✅ **Connection Services**
+                - **Flow Control:** Prevents the sender from overwhelming the receiver.
+                - **Packet Reordering:** Allows packets that arrive out of order to be reassembled correctly at the destination.
+            - ✅ **ICMP (Internet Control Message Protocol)**
+                - Used to send messages and operational information to an IP destination.
+                - **Ping:** A common ICMP tool used to test connectivity and measure round-trip time.
+                - **Traceroute:** Uses ICMP to trace the path a packet takes through a network, identifying each router along the way.
+            - ✅ **Layer 3 Devices/Protocols**
+                - **Routers:** Primary Layer 3 devices.
+                - **Multi-layer Switches:** Devices that combine Layer 2 switching and Layer 3 routing capabilities.
+                - **IPv4 and IPv6:** Logical addressing protocols.
+                - **ICMP:** Protocol for network diagnostics
+        - {{**Layer 4**}}** – **{{**Transport**}} - Provides end-to-end communication services for applications. 
+            - ∙ Handles segmentation, error control, and flow control.
+            - ∙ Protocols: TCP (reliable), UDP (unreliable)
+            - {{L4}} PDU: {{Segments and Datagrams}} 
+            - Layer 4 – Transport
+            - The OSI model's Layer 4, known as the Transport Layer, is responsible for providing reliable,
+            - transparent transfer of data between end systems.
+            - It ensures complete data transfer with mechanisms for error correction, flow control, and
+            - segmentation/de-segmentation of data.
+            - This layer enables seamless communication between devices by managing end-to-end
+            - message delivery in the network.
+            - Layer 4 - Transport Layer
+            - The "post office" layer (Analogy : Parcels and letter)
+            - TCP (Transmission Control Protocol) and UDP (User Datagram Protocol)
+            - Often comes down to taking a large chunk on data , sending it in fragmented pieces
+            - then rebuilding it to its original form at its destination (See Figure Below)
+            - 
+            - pdu - segments (tcp), datagram (udp)
+            - 
+            - 
+            - Transport layer OSI model layer responsible for ensuring reliable data delivery.
+            - ## transport layer
+                - [Size]();-[H2]()
+                - (networking)
+            - (Or "host-host layer") The middle layer in the [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) seven layer model. The transport layer determines how to use the [**network layer**](https://encyclopedia2.thefreedictionary.com/network+layer) to provide a virtual error-free, point to point connection so that host A can send messages to host B and they will arrive un-corrupted and in the correct order. It establishes and dissolves connections between hosts. It is used by the [**session layer**](https://encyclopedia2.thefreedictionary.com/session+layer).
+            - 
+            - 
+            - An example transport layer [**protocol**](https://encyclopedia2.thefreedictionary.com/protocol) is [**Transmission Control Protocol**](https://encyclopedia2.thefreedictionary.com/Transmission+Control+Protocol) (TCP).
+            - 
+            - 
+            - [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) documents: [**ITU**](https://encyclopedia2.thefreedictionary.com/ITU) Rec. X.214 (ISO 8072), ITU Rec. X.224 (ISO 8073).
+            - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+            - ## transport layer
+                - [Size]();-[H2]()
+            - The processing in a network protocol that provides end-to-end management. The transport layer is layer 4 of 7 in the OSI model, and it may or may not guarantee error-free delivery depending on the specific protocol used. See [**transport protocol**](https://encyclopedia2.thefreedictionary.com/transport+protocol), [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP) and [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model).
+            - 
+            - The Transport Layer (Layer 4) is the dividing line between the upper and lower layers of the OSI model. Data types at this layer are **segments** (for TCP) and **datagrams** (for UDP). Understand the key differences between TCP (reliable, connection-oriented, higher overhead) and UDP (unreliable, connectionless, lower overhead).
+            - ✅ **TCP (Transmission Control Protocol)**
+                - **Connection-oriented** and **reliable**.
+                - Uses a **three-way handshake** (SYN, SYN-ACK, ACK) to establish a connection.
+                - Ensures delivery through **acknowledgements** and **retransmission** of dropped segments.
+                - Used for data that requires assured delivery (e.g., banking, websites, e-commerce).
+                - Features **segmentation** and **sequencing** to ensure data arrives in order.
+                - Has higher overhead due to reliability mechanisms.
+            - ✅ **UDP (User Datagram Protocol)**
+                - **Connectionless** and **unreliable**.
+                - No three-way handshake, no acknowledgements, no retransmission, no sequencing.
+                - "Fire-and-forget" method.
+                - Lower overhead, making it suitable for applications where some data loss is acceptable (e.g., audio/video streaming, online gaming).
+            - ✅ **Windowing**
+                - Allows clients to adjust the amount of data sent in each segment to optimize throughput.
+                - The "window" opens (sends more data) when retransmissions are low and closes (sends less data) when retransmissions are high.
+                - Aims to maximize bandwidth utilization with minimal retransmissions.
+            - ✅ **Buffering**
+                - Routers and other devices use memory (buffers) to temporarily store segments when network congestion occurs or bandwidth is not immediately available.
+                - Prevents segment loss by holding data until it can be transmitted.
+                - If buffers overflow, segments will be dropped.
+            - ✅ **Layer 4 Devices/Concepts**
+                - TCP and UDP protocols.
+                - WAN accelerators (can operate at L4 by compressing IP packets).
+                - Load balancers and firewalls (can operate at L4 by blocking/allowing specific ports and protocols).
+        - {{**Layer 5**}}** – **{{**Session**}} - Manages sessions between applications.
+            - ∙ Responsible for connection setup, maintenance, and termination. 
+            - ∙ Examples: NetBIOS, RPC
+            - PDU - {{Data}} 
+            - Layer 5 – Session
+                - The OSI model's Layer 5, known as the Session Layer, manages the setup, maintenance, and
+                - terminaƟon of sessions between presentation layer entities.
+                - This layer establishes, manages, and terminates the connections between the local and
+                - remote applications.
+                - 
+                - It provides mechanisms for controlling the dialog between the two end systems, either half-
+                - duplex or full-duplex.
+            - Layer 5 - Session Layer
+            - Communication management between devises
+                - Start, stop, restart
+            - Control protocols, tunneling protocols
+            - 
+            - 
+            - pdu - data
+            - 
+            - Session layer OSI model layer that provides services for applications that need to exchange multiple messages (dialog control).
+            - ## session layer
+                - [Size]();-[H2]()
+                - (networking)
+            - The third highest [**protocol layer**](https://encyclopedia2.thefreedictionary.com/protocol+layer) (layer 5) in the [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) seven layer model. The session layer uses the [**transport layer**](https://encyclopedia2.thefreedictionary.com/transport+layer) to establish a [**connection**](https://encyclopedia2.thefreedictionary.com/Connection) between processes on different hosts. It handles [**security**](https://encyclopedia2.thefreedictionary.com/security) and creation of the session. It is used by the [**presentation layer**](https://encyclopedia2.thefreedictionary.com/presentation+layer).
+            - 
+            - 
+            - Documents: [**ITU**](https://encyclopedia2.thefreedictionary.com/ITU) Rec. X.225 ([**ISO**](https://encyclopedia2.thefreedictionary.com/ISO) 8327), ITU Rec. X.215 (ISO 8326).
+            - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+            - ## session layer
+                - [Size]();-[H2]()
+            - The processing in a network protocol that initiates and terminates a session. The session layer is layer 5 of 7 in the OSI model. See [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP) and [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model).
+            - 
+            - The Session Layer (Layer 5) is responsible for establishing, maintaining, and tearing down sessions (conversations) between applications. A session keeps data separate to prevent intermingling or cross-contamination. Associate H.323, RTP, and NetBIOS with Layer 5.
+            - ✅ **Establishing a Session**
+                - Checks user credentials.
+                - Assigns a session number for identification.
+                - Negotiates services and determines who talks first.
+            - ✅ **Maintaining a Session**
+                - Transfers data back and forth.
+                - Reestablishes connection if broken.
+                - Acknowledges receipt of data.
+            - ✅ **Tearing Down a Session**
+                - Occurs when communication is complete (mutual agreement).
+                - Can also occur if one party disconnects or becomes unresponsive.
+            - ✅ **Layer 5 Protocols/Concepts**
+                - **H.323:** Used to set up, maintain, and tear down voice and video connections (e.g., FaceTime, Skype).
+                - **RTP (Real-time Transport Protocol):** Associated with streaming audio/video, often in two-way formats like phone calls.
+                - **NetBIOS:** Used by computers to share files over a network (e.g., Windows file sharing).
+        - {{**Layer 6**}}** – **{{**Presentation**}} - Formats and translates data between the application and network. 
+            - ∙ Handles encryption, compression, and character encoding.
+            - ∙ Example functions: JPEG conversion, ASCII translation, TLS encryption 
+            - PDU - {{Data}} 
+            - Layer 6 – Presentation
+                - The OSI model's Layer 6, known as the Presentation Layer, is responsible for the translaƟon,
+                - encrypƟon, and compression of data between the application and network formats.
+                - This layer ensures that data is presented in a usable format and mediates between the data
+                - formats and protocols used by the network and the applications.
+                - It acts as a translator, providing data encrypƟon and compression services to ensure secure
+                - and eƯicient data transfer.
+            - 
+            - pdu - data
+            - 
+            - Presentation layer OSI model layer that transforms data between the formats used by the network and applications.
+            - presentation layer
+            - Layer 6 - Presentation Layer
+            - Character encoding
+            - Application encryption
+            - Often combined with Application Layer
+            - 
+            - Also found in: [**Dictionary**](https://www.thefreedictionary.com/presentation+layer), [**Thesaurus**](https://www.freethesaurus.com/presentation+layer), [**Medical**](https://medical-dictionary.thefreedictionary.com/presentation+layer), [**Acronyms**](https://acronyms.thefreedictionary.com/presentation+layer), [**Wikipedia**](https://encyclopedia.thefreedictionary.com/presentation+layer).
+            - Related to presentation layer: [**Application layer**](https://encyclopedia2.thefreedictionary.com/application+layer), [**Session layer**](https://encyclopedia2.thefreedictionary.com/session+layer)
+            - ## presentation layer
+                - (networking)
+                - [Size]();-[H2]()
+            - The second highest layer (layer 6) in the [**OSI**](https://encyclopedia2.thefreedictionary.com/OSI) seven layer model. Performs functions such as text [**compression**](https://encyclopedia2.thefreedictionary.com/compression), code or format conversion to try to smooth out differences between hosts. Allows incompatible processes in the [**application layer**](https://encyclopedia2.thefreedictionary.com/application+layer) to communicate via the [**session layer**](https://encyclopedia2.thefreedictionary.com/session+layer).
+            - 
+            - 
+            - Documents: [**ITU**](https://encyclopedia2.thefreedictionary.com/ITU) Rec. X.226 ([**ISO**](https://encyclopedia2.thefreedictionary.com/ISO) 8823), ITU Rec. X.216 (ISO 8822).
+            - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+            - ## presentation layer
+                - [Size]();-[H2]()
+            - The processing in a network protocol that provides the conversion of codes and formats for the session (if required). The presentation layer is layer 6 of 7 in the OSI model. See [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP) and [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model).
+            - 
+            - The Presentation Layer (Layer 6) is responsible for **data formatting** and **encryption**. When you see "data formatting" or "encryption," think Layer 6.
+            - ✅ **Data Formatting**
+                - Ensures compatibility between different devices and systems.
+                - Examples: ASCII (text), GIF, JPEG, PNG (images), MP4, MPEG, MOV (video).
+                - Scripting languages like HTML, XML, PHP, JavaScript also fall under data formatting as they dictate how text is displayed.
+            - ✅ **Encryption**
+                - Scrambles data to keep it secure during transit and storage, providing confidentiality.
+                - Examples: TLS (Transport Layer Security), SSL (Secure Sockets Layer).
+                - TLS/SSL create an encrypted tunnel to protect sensitive information (username, password, credit card).
+        - {{**Layer 7**}}** – **{{**Application**}} - Interfaces directly with end-user applications.
+            - ∙ Responsible for network services like file transfers, email, and DNS. 
+            - ∙ Protocols: HTTP, FTP, SMTP, DNS, SNMP
+            - PDU - {{Data}} 
+            - Layer 7 – Application
+                - The OSI model's Layer 7, known as the Application Layer, serves as the interface between the user and the network services.
+                - This layer facilitates the end-user processes and applicaƟons to access network services.
+                - It defines protocols for various network services like file transfers, email, and web browsing, ensuring seamless communicaƟon between soŌware applicaƟons and the network.
+            - Application layer OSI model layer providing support to applications requiring network services (file transfer, printing, email, databases, and so on)
+            - The [**presentation layer**](https://encyclopedia2.thefreedictionary.com/presentation+layer) provides the application layer with a familiar local representation of data independent of the format used on the network.
+            - 
+            - The Application Layer (Layer 7) provides application-level services, but not end-user applications like browsers or word processors. It focuses on lower-level applications for file transfer, network transfer, and communication between users and computers. You will need to know the acronyms, what they stand for, and their associated port numbers for the exam.
+            - ✅ **Key Functions**
+                - **Application Services:** Unites communicating components for network applications (e.g., file sharing, email, remote access, network management).
+                - **Service Advertisement:** Applications announce the services they offer to other devices on the network (e.g., printers advertising their presence).
+            - ✅ **Layer 7 Protocols**
+                - **Email:** POP3, IMAP, SMTP
+                - **Web Browsing:** HTTP, HTTPS
+                - **Naming Services:** DNS (Domain Name Service)
+                - **File Transfer:** FTP, FTPS, SFTP
+                - **Remote Access:** Telnet, SSH
+                - **Network Management:** SNMP (Simple Network Management Protocol)
+        - Encapsulation and Decapsulation
+            - {{Encapsulation}} is the process of wrapping data with protocol-specific headers as it  moves down the OSI layers before transmission.
+            - {{Decapsulation}} is the reverse process occurring at the receiving device as data moves  up the OSI layers.
+            - **Encapsulation:** The process of wrapping data with protocol information at each layer as it moves  *down*  the networking stack.
+            - **Decapsulation:** The process of removing protocol information layer by layer as data moves  *up*  the OSI model on the receiving end.
+            - 
+            - Encapsulation is the process of adding headers (and sometimes trailers) to data as it moves down the OSI layers (7 to 1). Decapsulation is the process of removing headers as data moves up the OSI layers (1 to 7). Remember the direction of encapsulation (down the layers) and decapsulation (up the layers).
+            - ✅ **Protocol Data Units (PDUs)**
+                - Single units of information transmitted in a network.
+                - **PDU Names:**
+                    - Layer 1: Bits
+                    - Layer 2: Frames
+                    - Layer 3: Packets
+                    - Layer 4: Segments (TCP) or Datagrams (UDP)
+            - ✅ **TCP Header (Layer 4)**
+                - Contains 10 mandatory fields (20 bytes).
+                - Important fields: Source Port, Destination Port, Sequence Number, Acknowledgement Number, Control Flags.
+                - **Control Flags:**
+                    - SYN: Synchronizes connection (three-way handshake).
+                    - ACK: Acknowledges successful receipt of packets.
+                    - FIN: Tears down virtual connection.
+                    - RST: Resets connection (e.g., unexpected packet, connection refused).
+                    - PSH (Push): Ensures data is given priority.
+                    - URG (Urgent): Identifies incoming data as urgent, processed immediately.
+            - ✅ **UDP Header (Layer 4)**
+                - Unreliable, connectionless protocol.
+                - Smaller header (8 bytes) with 4 fields: Source Port, Destination Port, Length, Checksum (optional).
+            - ✅ **IP Header (Layer 3)**
+                - Contains fields like IP version, header length, type of service, total length, source IP, destination IP.
+            - ✅ **Ethernet Header (Layer 2)**
+                - Contains Destination MAC address, Source MAC address, EtherType field (indicates encapsulated protocol like IPv4/IPv6), and optional VLAN tag.
+                - **MAC Address:** Physical address identifying a network card on a LAN, processed by switches.
+                - **EtherType:** Indicates the protocol encapsulated in the frame's payload.
+            - ✅ **Payload**
+                - The data being sent across the network.
+                - Minimum Ethernet payload: 42 bytes (with VLANs), 46 bytes (without VLANs).
+                - **Maximum Transmission Unit (MTU):** Default Ethernet MTU is 1500 bytes.
+                - **Jumbo Frame:** A frame larger than 1500 bytes, requires MTU reconfiguration on switches.
+            - ✅ **Data Flow Summary**
+                - Layer 7 to 1: Encapsulation (add headers: ports at L4, IPs at L3, MACs at L2).
+                - Layer 1: Transmit as bits.
+                - Receiving device (e.g., switch): Decapsulates L2, reads MAC. If not for it, forwards to default gateway (router).
+                - Router: Decapsulates L3, reads IP. If not for it, re-encapsulates and forwards.
+                - Final Host: Decapsulates all the way up to Layer 7 for the application to read.
+        - Memory Aid:
+            - ∙ Bottom-Up: Please Do Not Throw Sausage Pizza Away
+            - ∙ Top-Down: All People Seem To Need Data Processing
+        - Example: Sending an email
+            - ∙ Application Layer (SMTP adds header)
+            - ∙ Transport Layer (TCP adds port info)
+            - ∙ Network Layer (IP adds source/destination IP)
+            - ∙ Data Link Layer (MAC address info)
+            - ∙ Physical Layer (transmits as bits)
+
+    - **1.2 Compare and contrast networking appliances, applications, and functions.**
+        - Key Concepts to Learn:
+            - ∙ Roles and layers of devices: routers, switches, firewalls, access points 
+            - ∙ Physical vs. virtual appliances
+            - ∙ Control and data planes
+        - **Physical and virtual appliances**
+            - Physical and Virtual Appliances
+                - Physical appliances are dedicated hardware devices focused on specific network functions,
+                - oƯering high performance and reliability but at a higher cost and with space requirements.
+                - Virtual appliances, on the other hand, are soŌware-based soluƟons that run on virtual
+                - machines, providing similar functionalities with greater flexibility, scalability, and cost
+                - eƯiciency, but potentially at the expense of raw performance.
+                - {{Physical Appliances}} - Hardware-based devices
+                    - ∙ Dedicated function (e.g., Cisco ASA firewall)
+                - {{Virtual Appliances}}  - Software-based, runs on hypervisors or cloud platforms
+                    - ∙ Common in SDN and virtualized environments
+            - **Clients**
+                - Devices users access the network with (workstations, laptops, smartphones, smart TVs, Wi-Fi thermostats).
+            - ✅ **Servers**
+                - Provide resources to the network (email, file, web servers; can be hardware or specialized software).
+            - Hub
+                - A device that repeats incoming traffic to all ports.
+                - Has no knowlodge of devices beyond their connection status.
+                - {{Hub}} - Repeats incoming signal to all ports
+                    - ∙ Operates at Layer {{1}} 
+                    - ∙ Creates a single collision domain
+                - ✅ **Hubs**
+                    - Older technology, connect network devices, broadcast all data, lead to increased network errors. (Evolved into switches).
+            - **Router**
+                - Router
+                    - A router operates at the network layer of the OSI model, directing data packets between
+                    - diƯerent networks based on IP addresses.
+                    - Routers use rouƟng tables to determine the best path for forwarding packets to their
+                    - destination, connecting mulƟple networks together, such as a local network to the Internet.
+                    - Routers also provide network security features like firewalls and VPN support.
+                - router Intermediate system working at the Network layer capable of forwarding packets around logical networks of different layer 1 and layer 2 types.
+                - Routers:
+                - Routes traffic between IP subnets
+                - OSI Layer 3 Device (L3 = Network Layer)
+                - Routers inside of switches sometimes called "layer 3 switches"
+                - Layer 2 = Switch, Layer 3 = Router
+                - Often connects diverse network types
+                - LAN (Local Area Network), WAN (Wide Area Network), copper, fiber
+                - 
+                - A device that routes packets between networks using IP addresses and routing tables (Layer 3).
+                - It defines the network gateway boundary, either between subnets or between a LAN and the internet (WAN).
+                - 
+                - {{Router}} - Directs packets between different networks
+                    - ∙ Operates at Layer {{3}} 
+                    - ∙ Uses IP addresses to determine routing paths
+                    - ∙ Can perform NAT, DHCP, ACL filtering
+                - 
+                - ✅ **Routers**
+                    - Crucial for modern networks, connect different networks, make intelligent forwarding decisions based on IP addresses, use various routing protocols.
+                - 
+                - ## router
+                    - [Size]();-[H2]()
+                    - ^1^
+                    - any of various tools or machines for hollowing out, cutting grooves, etc.
+                - ## router
+                    - [Size]();-[H2]()
+                    - ^2^
+                        -  *Computing*  a device that allows packets of data to be moved efficiently between two points on a network
+                    - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                - ## router
+                    - [Size]();-[H2]()
+                    - [′rau̇d·ər]
+                    - (communications)
+                    - A device that selects an appropriate pathway for a message and routes the message accordingly.
+                    - (design engineering)
+                    - A chisel with a curved point for cleaning out features such as grooves and mortises on wood members.
+                    - [**router plane**](https://encyclopedia2.thefreedictionary.com/router+plane)
+                    - (mechanical engineering)
+                    - A machine tool with a rapidly rotating vertical spindle and cutter for making furrows, mortises, and similar grooves.
+                    - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                - ## router
+                    - [Size]();-[H2]()
+                    - 1. A [**router plane**](https://encyclopedia2.thefreedictionary.com/router+plane).
+                    - 2. A machine tool having a rapidly revolving vertical spindle and cutter; used for routing, cutting mortises, etc.
+                    - 3. A chisel having a curved point; used for cleaning out grooves, mortises, etc.
+                    - McGraw-Hill Dictionary of Architecture and Construction. Copyright © 2003 by McGraw-Hill Companies, Inc.
+                - ## router
+                    - (networking)
+                    - [Size]();-[H2]()
+                    - /roo't*/ A device which forwards packets between networks. The forwarding decision is based on [**network layer**](https://encyclopedia2.thefreedictionary.com/network+layer) information and routing tables, often constructed by routing protocols.
+                    - [**Unix manual page**](https://encyclopedia2.thefreedictionary.com/Unix+manual+page): route(8).
+                    - See also [**bridge**](https://encyclopedia2.thefreedictionary.com/bridge), [**gateway**](https://encyclopedia2.thefreedictionary.com/gateway), [**Exterior Gateway Protocol**](https://encyclopedia2.thefreedictionary.com/Exterior+Gateway+Protocol), [**Interior Gateway Protocol**](https://encyclopedia2.thefreedictionary.com/Interior+Gateway+Protocol), [**flapping router**](https://encyclopedia2.thefreedictionary.com/flapping+router).
+                    - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## router
+                    - [Size]();-[H2]()
+                    - A device that forwards data from one network to another. Based on an internal routing table and the address of the destination network in the incoming packet, the router determines whether to send the packet out or keep it within the network. The traffic traversing a router is formatted in a routable protocol, the global standard being TCP/IP, or simply IP (see [**TCP/IP**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP) and [**routable protocol**](https://encyclopedia2.thefreedictionary.com/routable+protocol)).
+                    - At Home
+                    - In the home or small office, a "wireless router" or "wireless gateway" is used to manage Internet traffic. The wireless router contains a built-in Ethernet switch and Wi-Fi access point (see [**wireless router**](https://encyclopedia2.thefreedictionary.com/wireless+router)), and the wireless gateway also includes a modem (see [**cable/DSL gateway**](https://encyclopedia2.thefreedictionary.com/cable%2fDSL+gateway)). Both router and gateway have one or two Ethernet ports to the Internet (see [**Ethernet adapter**](https://encyclopedia2.thefreedictionary.com/Ethernet+adapter)).
+                    - In a Company
+                    - In the enterprise, routers in the local network (LAN) are dedicated to packet forwarding and connect to stand-alone modems and Wi-Fi access points. Although routers have built-in Ethernet ports, they are often connected to Ethernet switches that reach a larger number of computers and printers. See [**Ethernet switch**](https://encyclopedia2.thefreedictionary.com/Ethernet+switch) and [**access point**](https://encyclopedia2.thefreedictionary.com/access+point).
+                    - Routers in the Core
+                        - Within a large enterprise, routers separate local area networks (LANs) into subnetworks (subnets) to balance traffic within workgroups and to filter traffic for security purposes and policy management. They also forward packets between the company's LANs, private external networks (WANs) and the Internet. Factors such as traffic load, external line costs and congestion may be taken into consideration to determine which port to forward to. See [**LAN**](https://encyclopedia2.thefreedictionary.com/LAN) and [**WAN**](https://encyclopedia2.thefreedictionary.com/WAN).
+                    - Within the Internet, very large-scale routers do all the packet switching between the national and regional backbones and are typically connected via optical fibers. Measured in millions of packets per second (see [**PPS**](https://encyclopedia2.thefreedictionary.com/PPS)), large routers handle enormous amounts of traffic.
+                    - A Huge Range of Prices
+                        - Routers range from $50 to tens of thousands. Home wireless routers from companies such as D-Link, NETGEAR and Grandstream are the least expensive, while enterprise and Internet core routers from companies such as Cisco, Brocade and Huawei are the most costly. See [**packet switching**](https://encyclopedia2.thefreedictionary.com/packet+switching), [**Ethernet**](https://encyclopedia2.thefreedictionary.com/Ethernet), [**SONET**](https://encyclopedia2.thefreedictionary.com/SONET), [**edge router**](https://encyclopedia2.thefreedictionary.com/edge+router) and [**collapsed backbone**](https://encyclopedia2.thefreedictionary.com/collapsed+backbone).
+                    - A Windows PC Can Be a Router
+                    - Routers are normally dedicated communications devices; however, a Windows PC can be turned into a router with NAT32 software (www.nat32.com).
+                    - Router Terminology
+                        - Routers used to be called "gateways," which is why the term "default gateway" means the router in the network (see [**default gateway**](https://encyclopedia2.thefreedictionary.com/default+gateway)). For more details on the routable protocol layer, see [**OSI model**](https://encyclopedia2.thefreedictionary.com/OSI+model) and [**TCP/IP abc's**](https://encyclopedia2.thefreedictionary.com/TCP%2fIP+abc%27s). See [**layer 3 switch**](https://encyclopedia2.thefreedictionary.com/layer+3+switch), [**route server**](https://encyclopedia2.thefreedictionary.com/route+server), [**router cluster**](https://encyclopedia2.thefreedictionary.com/router+cluster) and [**routing protocol**](https://encyclopedia2.thefreedictionary.com/routing+protocol).
+                - ## rout·er^ 1^
+                    - [Size]();-[H2]()
+                    - (rou′tər)
+                    -  *n.* 
+                    - One that routs, especially a machine tool that mills out the surface of metal or wood.
+                - ## rout·er^ 2^
+                    - (ro͞o′tər, rou′-)
+                    -  *n.* 
+                    - [Size]();-[H2]()
+                    - 1. One that routes, especially one who prepares shipments for distribution and delivery.
+                    - 2. (rou′tər)  *Computers* 
+                    - a. A device in a network that handles message transfers between computers.
+                    - b. See [**gateway**](https://www.thefreedictionary.com/gateway).
+                    - American Heritage® Dictionary of the English Language, Fifth Edition. Copyright © 2016 by Houghton Mifflin Harcourt Publishing Company. Published by Houghton Mifflin Harcourt Publishing Company. All rights reserved.
+                - ## router
+                    - (ˈraʊtə)
+                    -  *n* 
+                    - [Size]();-[H2]()
+                    - (Tools) any of various tools or machines for hollowing out, cutting grooves, etc
+                - ## router
+                    - (ˈruːtə)
+                    -  *n* 
+                    - [Size]();-[H2]()
+                    - (Computer Science)  *computing*  a device that allows packets of data to be moved efficiently between two points on a network
+                    - Collins English Dictionary – Complete and Unabridged, 12th Edition 2014 © HarperCollins Publishers 1991, 1994, 1998, 2000, 2003, 2006, 2007, 2009, 2011, 2014
+                - ## rout•er
+                    - (ˈraʊ tər)
+                    -  *n.* 
+                    - [Size]();-[H2]()
+                    - 1. any of various tools or machines for routing, hollowing out, or furrowing.
+                    - 2. Also called rout′er plane`. a plane for cutting interior angles, as at the bottom of a groove.
+                - **router** - (computer science) a device that forwards data packets between computer networks  
+            - Modem
+                - A device that converts between analog and digital signals.
+                - Name derived from "modulator/demodulator".
+                - {{Modem}} - Modulates/demodulates analog signals for digital communication 
+                    - ∙ Connects to ISP via DSL, cable, or fiber
+            - {{Bridge}} - Connects two LAN segments
+                - ∙ Learns MAC addresses and filters traffic accordingly 
+            - **Switch**
+                - Layer 2 Switch
+                    - A Layer 2 switch operates at the data link layer of the OSI model, forwarding data based on
+                    - MAC addresses.
+                    - It creates separate collision domains for each port, improving network eƯiciency by reducing
+                    - collisions.
+                    - Layer 2 switches are used to connect devices within the same network or VLAN.
+                - Layer 3 Capable Switch
+                    - A Layer 3 capable switch, also known as a multilayer switch, operates at both the data link
+                    - layer and the network layer.
+                    - It can perform routing functions, forwarding data based on IP addresses, in addition to
+                    - switching functions.
+                    - This enables the switch to interconnect diƯerent subnets or VLANs within the same device,
+                    - facilitating eƯicient network segmentation and routing.
+                - 
+                - Switch:
+                - Bridging done in hardware
+                - Application-specific integrated circuit (ASIC)
+                - OSI layer 2 Device (L2 = Data Link Layer)
+                - Forwards traffic based on data link address (MAC Address for example)
+                - Many ports and features
+                - Core of enterprise network
+                - May provide Power over Ethernet (PoE)
+                - Multi layer switch
+                - Includes Layer 3 (routing) functionality
+                - 
+                - {{Switch}} - Forwards traffic based on MAC addresses
+                    - ∙ Operates at Layer {{2 (Layer 3 switches add routing)}} 
+                    - ∙ Creates separate collision domains
+                    - ∙ Can support VLANs and PoE
+                - 
+                - ✅ **Switches**
+                    - Smarter hubs, connect network devices, forward traffic only to intended recipients, provide more security and efficient bandwidth utilization.
+                - 
+                - A device that connects devices to local area network (LAN) by enabling forwarded packets.
+                - Uses MAC addressing and VLAN for traffic segmentation
+                - Layer 2 switches are most common. They forward packets using the destination MAC address.
+                - Layer 3 switches add capability for forwarding frames using IP addresses.
+                - Layer 3 switches allow inter-VLAN routing using switch virtual interfaces (SVIs), which act as default gateways.
+                - 
+                - switch Intermediate system used to establish contention-free network segments at OSI layer 2 (Data Link). An unmanaged switch does not support any sort of configuration.
+                - ## switch
+                    - [Size]();-[H2]()
+                - 1. a mechanical, electrical, electronic, or optical device for opening or closing a circuit or for diverting energy from one part of a circuit to another
+                - 2. the tassel-like tip of the tail of cattle and certain other animals
+                - 3. any of various card games in which the suit is changed during play
+                - 4.  *US and Canadian*  a railway siding
+                - 5.  *US and Canadian*  a railway point
+                - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                - ## Switch
+                    - [Size]();-[H2]()
+                - In electrical work, a device for closing, opening, or changing the connections of the circuit in which it is placed.
+                - Illustrated Dictionary of Architecture Copyright © 2012, 2002, 1998 by The McGraw-Hill Companies, Inc. All rights reserved
+                - ## switch
+                    - [Size]();-[H2]()
+                - [swich]
+                - (computer science)
+                - A hardware or programmed device for indicating that one of several alternative states or conditions have been chosen, or to interchange or exchange two data items.
+                - A symbol used to indicate a branch point, or a set of instructions to condition a branch.
+                - (civil engineering)
+                - A device for enabling a railway car to pass from one track to another.
+                - The junction of two tracks.
+                - (electricity)
+                - A manual or mechanically actuated device for making, breaking, or changing the connections in an electric circuit. Also known as electric switch. Symbolized SW.
+                - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                - ## switch
+                    - [Size]();-[H2]()
+                - A device used to open or close an electric circuit or to change the connection of a circuit.
+                - McGraw-Hill Dictionary of Architecture and Construction. Copyright © 2003 by McGraw-Hill Companies, Inc.
+                - ## switch
+                    - (programming)
+                    - [Size]();-[H2]()
+                - [**switch statement**](https://encyclopedia2.thefreedictionary.com/switch+statement).
+                - ## switch
+                    - (software)
+                    - [Size]();-[H2]()
+                - [**command line option**](https://encyclopedia2.thefreedictionary.com/command+line+option).
+                - ## switch
+                    - (networking)
+                    - [Size]();-[H2]()
+                - [**packet switch**](https://encyclopedia2.thefreedictionary.com/packet+switch), [**circuit switch**](https://encyclopedia2.thefreedictionary.com/circuit+switch).
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## switch
+                    - [Size]();-[H2]()
+                - (1) A network cross connect. See [**Ethernet switch**](https://encyclopedia2.thefreedictionary.com/Ethernet+switch).
+                - 
+                - 
+                - (2) In programming, a bit or byte used to keep track of some event. The term is sometimes synonymous with the branch command.
+                - 
+                - 
+                - (3) In programming, a statement that saves the programmer from having to write multiple compare statements. See [**event loop**](https://encyclopedia2.thefreedictionary.com/event+loop).
+                - 
+                - 
+                - (4) A modifier of a command. For example, in the Windows/DOS command dir /p the /p is a switch that modifies the Dir command to pause after each screenful. See [**Dir**](https://encyclopedia2.thefreedictionary.com/Dir).
+                - 
+                - 
+                - (5) A mechanism that allows each key to be depressed on a keyboard. See [**mechanical keyboard**](https://encyclopedia2.thefreedictionary.com/mechanical+keyboard).
+                - 
+                - 
+                - (6) A mechanical or electronic device that directs the flow of electrical or optical signals from one side to the other. Switches with more than two ports, such as a LAN switch or PBX, are able to route traffic.
+                - 
+                - 
+                - Not Entirely Intuitive
+                - 
+                - When a switch is closed, current flows and the light or motor is now "on." When opened, current stops, and the light or motor is off. Although "open" might seem to mean "turn something on," opening a switch turns it off, and vice versa. See [**transistor**](https://encyclopedia2.thefreedictionary.com/transistor), [**Ethernet switch**](https://encyclopedia2.thefreedictionary.com/Ethernet+switch), [**softswitch**](https://encyclopedia2.thefreedictionary.com/softswitch), [**PBX**](https://encyclopedia2.thefreedictionary.com/PBX) and [**data switch**](https://encyclopedia2.thefreedictionary.com/data+switch).
+                - 
+                - ## Switch
+                    - a device that selects the required output circuit (or circuits) and connects to it an input circuit (or circuits) by means of connection, disconnection, or commutation. The selection may be manual or automatic, following a program stated in terms of a time or state function of other electric circuits. Switches are a component of more complex data-transmission equipment used in telemechanics and communications engineering, and they are used to solve programming and control problems in computer technology and to connect circuits in electric machines.
+                    - [Size]();-[H2]()
+                    - A distinction is made among electromechanical, electronic, and electron-beam switches. The simplest electromechanical switches are knife switches, commutators of electric machines, and sets of electromagnetic relays or electromechanical selectors. More complex switches are electronic devices assembled according to definite functional schemes; they may include ionic devices, electron tubes, semiconductor devices, and electron-tube commutators, as well as gas-discharge tubes and circulators (for ultrahigh frequencies).
+                    - 
+                    - 
+            - **Firewall**
+                - Firewall
+                    - A firewall is a network security device that monitors incoming and outgoing network traƯic
+                    - and decides whether to allow or block specific traƯic based on a defined set of security
+                    - rules.
+                    - Firewalls are crucial for establishing a barrier between secure internal networks and
+                    - 
+                    - untrusted external networks, such as the internet, and can be hardware-based, software-
+                    - based, or a combination of both.
+                - 
+                - Firewalls:
+                - Filter traffic by port number or application
+                - Traditional vs. NGFW (New Generation Firewall)
+                - Encrypt traffic
+                - VPN between sites
+                - Most firewalls can be layer 3 devices (routers)
+                - They often sit in the ingress/egress of the network (Right at border of inflow and
+                - outflow of data)
+                - Network Address Translation (NAT)
+                - Dynamic Routing
+                - 
+                - ✅ **Firewalls**
+                    - Security barrier between internal network and external world (internet); monitor/control traffic based on security rules (ACLs); protect against unauthorized access and cyberattacks; can be hardware or software.
+                - 
+                - {{Firewall}} - Filters traffic based on rules
+                    - ∙ Operates across Layers {{3–7}} 
+                    - ∙ Next-gen firewalls can inspect application-layer data
+                    - 
+                - 
+                - firewall Software or hardware device that protects a network segment or individual host by filtering packets to an access control list.
+                - ## firewall
+                    - [Size]();-[H2]()
+                    -  *Computing*  a computer system that isolates another computer from the internet in order to prevent unauthorized access
+                - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                - ## firewall
+                    - [Size]();-[H2]()
+                - [′fī‚wȯl]
+                - (computer science)
+                - Hardware and software programs that protect the resources of a private network from users in other networks, controlling all traffic according to a predefined access policy.
+                - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                - ## firewall
+                    - [Size]();-[H2]()
+                - ![](https://remnote-user-data.s3.amazonaws.com/r6ry30cE5ocu8tzDMIdJj-_tinxcKS415J5rLzZ9zFbxF4h8XGcuslwjqk_HMvMBd3MmlBy1X1H6Fc_HIUJ8jXVV8yo1goCRCi59hiXtMt29mj7XQLxXgoOUMYx992FQ.jpeg)
+                - A noninflammable partition separating the whole or a portion of an engine nacelle from the rest of the aircraft to prevent the spread of fire. Each separated area is called a [** __**](https://encyclopedia2.thefreedictionary.com/fire+zone)[**fire zone**](https://encyclopedia2.thefreedictionary.com/fire+zone)[ __](https://encyclopedia2.thefreedictionary.com/fire+zone) and often has its own fire detectors and extinguishers. When a firewall separates the entire engine from the rest of the aircraft, it is often called a  *fireproof bulkhead* .
+                - An Illustrated Dictionary of Aviation Copyright © 2005 by The McGraw-Hill Companies, Inc. All rights reserved
+                - ## firewall
+                    - (1)
+                    - [Size]();-[H2]()
+                - [**firewall code**](https://encyclopedia2.thefreedictionary.com/firewall+code).
+                - ## firewall
+                    - (2)
+                    - [Size]();-[H2]()
+                - [**firewall machine**](https://encyclopedia2.thefreedictionary.com/firewall+machine).
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## firewall
+                    - [Size]();-[H2]()
+                    - The primary method for keeping a computer secure from intruders. A firewall allows or blocks traffic into and out of a private network or the user's computer. Firewalls are widely used to give users secure access to the Internet as well as to separate a company's public Web server from its internal network. Firewalls are also used to keep internal network segments secure; for example, the accounting network might be vulnerable to snooping from within the enterprise.
+                    - 
+                    - 
+                    - In the home, a personal firewall typically comes with or is installed in the user's computer (see [**Windows Firewall**](https://encyclopedia2.thefreedictionary.com/Windows+Firewall)). Personal firewalls may also detect outbound traffic to guard against spyware, which could be sending your surfing habits to a website. They alert you when software makes an outbound request for the first time (see [**spyware**](https://encyclopedia2.thefreedictionary.com/spyware)).
+                    - 
+                    - 
+                    - In the organization, a firewall can be a stand-alone machine (see [**firewall appliance**](https://encyclopedia2.thefreedictionary.com/firewall+appliance)) or software in a router or server. It can be as simple as a single router that filters out unwanted packets, or it may comprise a combination of routers and servers each performing some type of firewall processing. For more about the various firewall techniques, see [**firewall methods**](https://encyclopedia2.thefreedictionary.com/firewall+methods). See [**WAF**](https://encyclopedia2.thefreedictionary.com/WAF).
+                - --------------------- Portal ---------------------An Excellent Resource
+                    -  #[[An Excellent Resource]] 
+                    - O'Reilly's "Building Internet Firewalls, 2nd Edition" by Zwicky, Cooper and Chapman is one of the best books written on Internet and Web security. It covers a huge range of firewall and related topics and should be a "must have" for anyone interested in the subject. (O'Reilly & Associates, Inc., 2000) #[[An Excellent Resource]] 
+                - ## fire·wall
+                    - [Size]();-[H2]()
+                    - (fīr′wôl)
+                    -  *n.* 
+                    - 1. A fireproof wall used as a barrier to prevent the spread of fire.
+                    - 2.  *Computers*  A software program or hardware device that restricts communication between a private network or computer system and outside networks.
+                        -  *intr.v.*  fire·walled, fire·wall·ing, fire·walls  *Slang* 
+                    - To protect (a computer or computer network) by means of a firewall.
+                    - American Heritage® Dictionary of the English Language, Fifth Edition. Copyright © 2016 by Houghton Mifflin Harcourt Publishing Company. Published by Houghton Mifflin Harcourt Publishing Company. All rights reserved.
+                - ## firewall
+                    -  *n* 
+                    - [Size]();-[H2]()
+                    - 1. a fireproof wall or partition used to impede the progress of a fire, as from one room or compartment to another
+                    - 2. (Computer Science)  *computing*  a computer system that isolates another computer from the internet in order to prevent unauthorized access
+                    - Collins English Dictionary – Complete and Unabridged, 12th Edition 2014 © HarperCollins Publishers 1991, 1994, 1998, 2000, 2003, 2006, 2007, 2009, 2011, 2014
+                    - ThesaurusAntonymsRelated WordsSynonymsLegend:
+                    - Switch to [**new thesaurus**](https://www.freethesaurus.com/firewall)
+                - --------------------- Portal ---------------------
+                    -  #
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―Noun
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―1.
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―firewall - (colloquial) the application of maximum thrust; "he moved the throttle to the firewall"drive, driving force, thrust - the act of applying force to propel something; "after reaching the desired velocity the drive is cut off"colloquialism - a colloquial expression; characteristic of spoken or written communication that seeks to imitate informal speech
+                    -  #
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―2.
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―firewall - (computing) a security system consisting of a combination of hardware and software that limits the exposure of a computer or computer network to attack from crackers; commonly used on local area networks that are connected to the internetsecurity system - (computing) a system that enforces boundaries between computer networkscomputer science, computing - the branch of engineering science that studies (with the aid of computers) computable processes and structures
+                    -  #
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―3.
+                        - [](00%20CompTIA%20Network%2B%20N10-009%20Exam%20Objectives%20(Domains)/1.0%20Networking%20Concepts%2023%25/1.2%20Compare%20and%20contrast%20networking%20appliances%2C%20applications%2C%20and%20functions/Physical%20and%20virtual%20appliances/Firewall/Untitled/Untitled/Untitled.md)―firewall - a fireproof (or fire-resistant) wall designed to prevent the spread of fire through a building or a vehiclewall - an architectural partition with a height and length greater than its thickness; used to divide or enclose an area or to support another structure; "the south wall had a small window"; "the walls were covered with pictures"
+            - **Intrusion detection system (IDS)/intrusion prevention system (IPS)**
+                - IPS/IDS Device
+                    - An IPS/IDS device monitors network and/or system activities for malicious activities or
+                    - policy violations.
+                    - An IDS passively monitors and alerts system administrators of suspicious activity, whereas
+                    - an IPS actively blocks or prevents such activities based on detected anomalies, signatures,
+                    - and policies to protect the network from threats.
+                - 
+                - IDS and IPS:
+                - Monitor network traffic
+                - Intrusions
+                - Exploits against OS, applications, etc
+                - Buffer overflows, XXS (Cross site scripting), other vulnerabilities
+                - Detection vs. Prevention
+                - Detection - Alarm or Alert
+                - Prevention - Stop before getting into the network
+                - 
+                - Monitors network traffic for suspicious activity
+                - Signature-based or anomaly-based
+                - E.g. detecting port scanners or malware
+                - 
+                - IDS/IPS
+                    - {{IDS (Intrusion Detection System)}}: Monitors and alerts 
+                    - {{IPS (Intrusion Prevention System)}}: Actively blocks malicious traffic
+                - 
+                - ✅ **Intrusion Detection Systems (IDS)**
+                    - Detect unauthorized access or anomalies and alert administrators.
+                - ✅ **Intrusion Prevention Systems (IPS)**
+                    - Detect threats and take action to prevent intrusion (e.g., blocking traffic, dropping harmful packets).
+                - 
+                - intrusion detection system (IDS) A security appliance or software that analyzes data from a packet sniffer to identify traffic that violates policies or rules.
+                - ## IDS
+                    - [Size]();-[H2]()
+                - (**I**ntrusion **D**etection **S**ystem) Software that detects an attack on a network or computer system. A Network IDS (NIDS) is designed to support multiple hosts, whereas a Host IDS (HIDS) is set up to detect illegal actions within the host. Most IDS programs typically use signatures of known cracker attempts to signal an alert. Others look for deviations of the normal routine as indications of an attack. Intrusion detection is very tricky. Too much analysis can add excessive overhead and also trigger false alarms. Insufficient analysis can overlook a valid attack.
+                - 
+                - intrusion prevention system (IPS) A security appliance or software that combines detection capabilities with functions that can actively block attacks.
+                - (**I**ntrusion **P**revention **S**ystem) Software that prevents an attack on a network or computer system. It is a significant step beyond an intrusion detection system (IDS). Whereas an IDS passively monitors traffic by sniffing packets at a switch port, an IPS resides inline like a firewall, intercepting and forwarding packets. It is thus capable of blocking the attack in real time. See [**IDS**](https://encyclopedia2.thefreedictionary.com/IDS).  
+            - **Load balancer**
+                - Load Balancer
+                - A load balancer distributes incoming network traƯic across multiple servers to ensure no
+                - single server becomes overwhelmed, improving the reliability and availability of
+                - applications.
+                - It operates at various layers of the OSI model, making decisions based on IP addresses,
+                - TCP/UDP ports, or application-level content to optimize resource use, maximize
+                - throughput, minimize response time, and avoid overload of any single resource.
+                - 
+                - Load Balancer:
+                - Distribute the load
+                - Multiple servers
+                - Invisible to end user
+                - Large scale implementations
+                - Web server farms, database farms
+                - Provides Fault Tolerenace
+                - Minimal impact from server outages
+                - Very fast convergence
+                - Configurable load
+                - Manage across servers
+                - TCP offload
+                - Protocol overhead
+                - SSL offload
+                - Encryption/Decryption Capabilities provided by Load Balancer instead of by each
+                - individual server
+                - Caching on Load Balancer allows fast response
+                - Prioritization
+                - Content Switching -> Application centric blanacing
+                - 
+                - Distributes network traffic across servers
+                - Increases availability and reliability of services
+                - Either at Transport (L4) or Application (L7)
+                - 
+                - {{Load Balancer}} - Distributes traffic among multiple servers
+                    - ∙ Can operate at Layer {{4}} or Layer {{7}} 
+                    - ∙ Improves performance and redundancy
+                - 
+                - ✅ **Load Balancers**
+                    - Distribute network/application traffic across multiple servers to increase efficiency, capacity, and reliability; prevent bottlenecks.
+                - 
+                - load balancer A type of switch, router, or software that distributes client requests between different resources, such as communications links or similarly configured servers. This provides fault tolerance and improves throughput.
+            - **Proxy**
+                - Proxy Server
+                - A proxy server acts as an intermediary between a user's device and the internet, receiving
+                - requests from clients, forwarding them to the relevant server, and returning the server's
+                - response to the client.
+                - It can provide additional functionality such as content caching, access control, and
+                - filtering, enhancing security and performance.
+                - 
+                - proxy server A server that mediates the communications between a client and another server. It can filter and often modify communications as well as provide caching services to improve performance.
+                - 
+                - Intermediary between a client and server
+                - Used for caching, content filtering, anonymity, security
+                - E.g. a web proxy for hiding client IP address
+                - 
+                - Proxies:
+                - Sits between users and external network
+                - Receives user requests and sends on users behalf
+                - Useful for caching info, access control, URL filtering, content scanning
+                - URL = Uniform Resource Locator
+                - Applications may need to know how to use proxy in explicit cases
+                - Some proxies however are invisible (transparent) and do not affect OS or applications
+                - NAS vs. SAN
+                - 
+                - {{Proxy Server}} - Intermediary between client and destination
+                    - ∙ Can cache content and filter traffic
+                - 
+                - ✅ **Proxy Servers**
+                    - Act as intermediaries between user devices and the internet; provide web filtering, shared connections, data caching, and enhance security/privacy by hiding user's IP.
+                - 
+                - ## prox·y
+                    - [Size]();-[H2]()
+                    - (prŏk′sē)
+                    -  *n.*   *pl.*  prox·ies
+                - 1.
+                - a. One appointed or authorized to act for another, especially a person appointed to vote as one wishes at a meeting.
+                - b. The authority to act for another.
+                - c. The written authorization to act in place of another.
+                - 2. An entity or variable used to model or generate data assumed to resemble the data associated with another entity or variable that is typically more difficult to research.
+                - 3.  *Computers*  A server that processes requests and forwards information between a client and another server.
+                - 
+                - [Middle English proccy, contraction of earlier procracie, ](https://www.thefreedictionary.com/procure)[ *annual payment to a prelate* ](https://www.thefreedictionary.com/procure)[, from Anglo-Norman procuracie, from Medieval Latin prōcūrātia, alteration of Latin prōcūrātiō, from prōcūrātus, past participle of prōcūrāre, ](https://www.thefreedictionary.com/procure)[ *to take care of* ](https://www.thefreedictionary.com/procure)[; see [](https://www.thefreedictionary.com/procure)[**procure**](https://www.thefreedictionary.com/procure).]
+                - American Heritage® Dictionary of the English Language, Fifth Edition. Copyright © 2016 by Houghton Mifflin Harcourt Publishing Company. Published by Houghton Mifflin Harcourt Publishing Company. All rights reserved.
+                - ## proxy
+                    - (ˈprɒksɪ)
+                    -  *n* ,  *pl*  proxies
+                    - [Size]();-[H2]()
+                - 1. (Law) a person authorized to act on behalf of someone else; agent: to vote by proxy.
+                - 2. (Law) the authority, esp in the form of a document, given to a person to act on behalf of someone else
+                - 3. (Computer Science)  *computing*  short for [**proxy server**](https://www.thefreedictionary.com/proxy+server)
+                - [C15:  *prokesye,*  contraction of  *procuracy,*  from Latin  *prōcūrātiō*  procuration; see procure]
+                - Collins English Dictionary – Complete and Unabridged, 12th Edition 2014 © HarperCollins Publishers 1991, 1994, 1998, 2000, 2003, 2006, 2007, 2009, 2011, 2014
+                - ## prox•y
+                    - (ˈprɒk si)
+                    - 
+                    - 
+                    -  *n.,*   *pl.*  prox•ies.
+                    - [Size]();-[H2]()
+                - 1. the agency, function, or power of a person authorized to act as the deputy or substitute for another.
+                - 2. the person so authorized; substitute; agent.
+                - 3. a written authorization empowering another person to vote or act for the signer, as at a meeting of stockholders.
+                - 
+                - ## proxy
+                    - [Size]();-[H2]()
+                - 1. a person authorized to act on behalf of someone else; agent
+                - 2. the authority, esp in the form of a document, given to a person to act on behalf of someone else
+                - 3.  *Computing*  short for [**proxy server**](https://encyclopedia2.thefreedictionary.com/proxy+server)
+                - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                - ## proxy
+                    - (networking)
+                    - [Size]();-[H2]()
+                - A process that accepts requests for some service and passes them on to the real [**server**](https://encyclopedia2.thefreedictionary.com/server). A proxy may run on dedicated [**hardware**](https://encyclopedia2.thefreedictionary.com/hardware) or may be purely [**software**](https://encyclopedia2.thefreedictionary.com/software). It may transform the request in some way or provide some additional layer of functionality such as [**caching**](https://encyclopedia2.thefreedictionary.com/caching) or remote access. A proxy may be intended to increase security, e.g. a web proxy that allows multiple clients inside an organisation to access the [**Internet**](https://encyclopedia2.thefreedictionary.com/Internet) through a single secure, shared connection.
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## proxy
+                    - [Size]();-[H2]()
+                - To function as an agent who works on behalf of someone else or to perform a process that acts on behalf of another. See [**proxy server**](https://encyclopedia2.thefreedictionary.com/proxy+server) and [**ghost blog**](https://encyclopedia2.thefreedictionary.com/ghost+blog).
+            - **Network-attached storage (NAS)**
+                - Network-Attached Storage
+                - NAS is a dedicated file storage device connected to a network, allowing multiple users and
+                - client devices to retrieve and store data from a centralized location.
+                - NAS systems are designed for easy file sharing, data backups, and centralized data
+                - management, supporting a variety of file-based protocols such as NFS, SMB/CIFS, and AFP.
+                - They offer a scalable and cost-effective solution for businesses and home users needing to
+                - share files across diƯerent platforms and devices.
+                - 
+                - File-level shared storage over the network
+                - **SMB** or **NFS** protocols
+                - 
+                - Network Attached Storage (NAS)
+                - Connect to a shared storage device across the network
+                - File-level access
+                - 
+                - ✅ **Network-Attached Storage (NAS)**
+                    - Dedicated file storage system providing data access to clients over a network from a centralized location.
+                - 
+                - # Network Attached Storage
+                    - [Size]();-[H1]()
+                - 
+                - Also found in: [**Acronyms**](https://acronyms.thefreedictionary.com/Network+Attached+Storage).
+                - ## Network Attached Storage
+                    - (networking, storage)
+                    - [Size]();-[H2]()
+                - (NAS) Fixed disks, [**RAID**](https://encyclopedia2.thefreedictionary.com/RAID) arrays, and [**magnetic tape**](https://encyclopedia2.thefreedictionary.com/magnetic+tape) drives connected directly to a Storage Area Network (SAN) or other direct network connection. This is in contrast to a [**file server**](https://encyclopedia2.thefreedictionary.com/file+server) where the peripherals are connected to the network via a computer (the server).
+            - **Storage area network (SAN)**
+                - Storage Area Network (SAN)
+                - A Storage Area Network (SAN) is a dedicated, high-speed network that provides access to
+                - consolidated, block-level data storage.
+                - SANs are designed to handle large volumes of data transfers, improving the availability and
+                - performance of applications by oƯloading storage functions and direct access to multiple
+                - storage devices.
+                - They are commonly used in enterprise environments to enhance storage solutions and data
+                - management.
+                - 
+                - Provides block-level storage to servers
+                - **Fibre Channel**, **iSCSI** or **FCoE** protocols
+                - 
+                - Storage Area Network (SAN)
+                - Looks and feels like a local storage device
+                - Block level access (more efficient than file-level)
+                - Only write and read changes of block rather than entire file
+                - 
+                - ✅ **Storage Area Networks (SAN)**
+                    - High-speed networks providing access to consolidated block-level data storage; handle large data volumes and enhance storage devices.
+                - 
+                - ## SAN
+                    - [Size]();-[H2]()
+                - (**S**torage **A**rea **N**etwork) An array of storage drives in a self-contained unit. In large enterprises, SANs serve as pools of storage for the servers in the network. Compared to managing drives attached to each server, SANs improve system administration. Treating all storage as a single resource makes drive maintenance and routine backups easier to schedule and control. To support disaster recovery, redundant SANs are deployed in separate locations, each a copy of the other.
+                - 
+                - 
+                - The SAN transfers data between servers and drives at the same fast peripheral channel speeds as if directly attached, and Fibre Channel has been the traditional interface. Some SANs perform backup procedures without any processing overhead at the host computers. See [**Fibre Channel**](https://encyclopedia2.thefreedictionary.com/Fibre+Channel).
+                - 
+                - 
+                - **Centralized or Distributed**
+                - 
+                - A centralized SAN connects the storage array to local servers, whereas a distributed SAN uses one or more Fibre Channel or SCSI switches to connect nodes within buildings or campuses. For long distances, SAN traffic is transferred over ATM, SONET or dark fiber. There are also protocols for sending data to a SAN over local IP/Ethernet networks and the Internet (see [**IP storage**](https://encyclopedia2.thefreedictionary.com/IP+storage)).
+                - 
+                - 
+                - ### Channel Attached vs. Network Attached
+                    - [Size]();-[H3]()
+                - 
+                - 
+                - SANs are channel attached. However, a related technology is the less-costly network attached storage (NAS) device. The NAS is a specialized file server that connects to the network like any other workstation or server and is thus subject to the variable traffic and erratic behavior of the network.
+                - 
+                - 
+                - Although the SAN and NAS are both storage arrays, they operate differently. The channel-attached SAN extends the server's peripheral reach, whereas the NAS is just another node on the network. For more details, see [**block level**](https://encyclopedia2.thefreedictionary.com/block+level). See [**NAS**](https://encyclopedia2.thefreedictionary.com/NAS), [**SCSI switch**](https://encyclopedia2.thefreedictionary.com/SCSI+switch) and [**SNIA**](https://encyclopedia2.thefreedictionary.com/SNIA).
+            - **Wireless**
+                - ## wireless
+                    - [Size]();-[H2]()
+                - communicating without connecting wires or other material contacts
+                - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                - ## wireless
+                    - (networking)
+                    - [Size]();-[H2]()
+                - A term describing a computer [**network**](https://encyclopedia2.thefreedictionary.com/network) where there is no physical connection (either copper cable or [**fibre optics**](https://encyclopedia2.thefreedictionary.com/fibre+optics)) between sender and receiver, but instead they are connected by radio.
+                - 
+                - ✅ **Wireless Access Points (WAPs/APs)**
+                    - Allow wireless devices to connect to a wired network; broadcast data over radio frequency waves.
+                - 
+                - Applications for wireless networks include multi-party [**teleconferencing**](https://encyclopedia2.thefreedictionary.com/teleconferencing), distributed work sessions, personal digital assistants, and electronic newspapers. They include the transmission of voice, video, images, and data, each traffic type with possibly differing [**bandwidth**](https://encyclopedia2.thefreedictionary.com/bandwidth) and quality-of-service requirements. The wireless network components of a complete source-destination path requires consideration of mobility, hand-off, and varying transmission and [**bandwidth**](https://encyclopedia2.thefreedictionary.com/bandwidth) conditions. The wired/wireless network combination provides a severe bandwidth mismatch, as well as vastly different error conditions. The processing capability of fixed vs. mobile terminals may be expected to differ significantly. This then leads to such issues to be addressed in this environment as admission control, capacity assignment and hand-off control in the wireless domain, flow and error control over the complete end-to-end path, dynamic bandwidth control to accommodate bandwidth mismatch and/or varying processing capability.
+                - 
+                - 
+                - [**Usenet**](https://encyclopedia2.thefreedictionary.com/Usenet) newsgroup news:comp.std.wireless.
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## wireless
+                    - [Size]();-[H2]()
+                - Transmission through the air. Although all forms of radio transmission over the air (AM, FM, TV, cordless phones, cellphones, etc.) are naturally wireless, there is a tendency for the term to refer only to Wi-Fi or to cellular data services. For example, a cellular provider may call its extra-cost data service wireless, although its voice service is obviously wireless as well.
+                - 
+                - 
+                - Wireless Light Too
+                - 
+                - The word "wireless" is also used in optical communication systems that transmit light pulses over the air (see [**optical wireless communication**](https://encyclopedia2.thefreedictionary.com/optical+wireless+communication)). See [**radio**](https://encyclopedia2.thefreedictionary.com/radio), [**Wi-Fi**](https://encyclopedia2.thefreedictionary.com/Wi-Fi), [**cellular generations**](https://encyclopedia2.thefreedictionary.com/cellular+generations) and [**wireless glossary**](https://encyclopedia2.thefreedictionary.com/wireless+glossary).
+                - 
+                - ## wire·less
+                    - [Size]();-[H2]()
+                    - (wīr′lĭs)
+                    -  *adj.* 
+                - 1. Having no wires.
+                - 2. Of or relating to communication by transmitting electromagnetic signals through the air: a wireless network; a wireless telephone.
+                - 3.  *Chiefly British*  Of or relating to radio or communication by radiotelegraphy or radiotelephony.
+                    -  *n.* 
+                - 1. A radio telegraph or radiotelephone system.
+                - 2. A message transmitted by wireless telegraph or telephone.
+                - 3.  *Chiefly British*  Radio.
+                    -  *tr. & intr.v.*  wire·lessed, wire·less·ing, wire·less·es
+                - To communicate with or send communications by wireless.
+                - American Heritage® Dictionary of the English Language, Fifth Edition. Copyright © 2016 by Houghton Mifflin Harcourt Publishing Company. Published by Houghton Mifflin Harcourt Publishing Company. All rights reserved.
+                - ## wireless
+                    - (ˈwaɪəlɪs)
+                    -  *adj* 
+                    - [Size]();-[H2]()
+                - 1. (Telecommunications) communicating without connecting wires or other material contacts: wireless networks; wireless internet connection.
+                - 2. (Computer Science) communicating without connecting wires or other material contacts: wireless networks; wireless internet connection.
+                    -  *n* 
+                - (Telecommunications)  *chiefly*   *old-fashioned*   *Brit*  another word for [**radio**](https://www.thefreedictionary.com/radio)
+                - ˈwirelessly  *adv* 
+                - Collins English Dictionary – Complete and Unabridged, 12th Edition 2014 © HarperCollins Publishers 1991, 1994, 1998, 2000, 2003, 2006, 2007, 2009, 2011, 2014
+                - ## wire•less
+                    - (ˈwaɪ^ə^r lɪs)
+                    - 
+                    - 
+                    -  *adj.* 
+                    - [Size]();-[H2]()
+                - 1. having no wire.
+                - 2. noting or pertaining to any of various devices that are operated with or actuated by electromagnetic waves.
+                - 3.  *Chiefly Brit.*  radio.
+                    -  *n.* 
+                - 4. wireless telegraphy or telephony.
+                - 5. a wireless telegraph or telephone.
+                - 6. a wireless message.
+                - 7. any system or device, as a cellular phone, for transmitting messages or signals by electromagnetic waves.
+                - 8.  *Chiefly Brit.*  radio.
+                - Access point (AP)
+                    - Access Point
+                    - An access point (AP) is a networking device that allows wireless devices to connect to a
+                    - wired network using Wi-Fi or related standards.
+                    - APs operate at the data link layer, bridging the wireless and wired segments of a network.
+                    - They extend the wireless coverage of a network and can manage multiple connections
+                    - simultaneously, providing network access to wireless devices within their range.
+                    - 
+                    - Connects wireless devices to a network
+                    - Standards: **802.11**a/b/g/n/ac
+                    - 
+                    - access point (AP) A device that provides a connection between wireless devices and can connect to wired networks, implementing an infrastructure mode WLAN.
+                    - 
+                    - {{Wireless Access Point (AP)}} - Provides 802.11 wireless connectivity to clients
+                        - ∙ Operates at Layer {{2}} 
+                        - ∙ May be autonomous or controller-based
+                    - 
+                    - ## access point
+                        - [Size]();-[H2]()
+                    - **(1)** Generically, any computer or device in a network that users can gain access to can be called an access point.
+                    - 
+                    - 
+                    - **(2)** In most cases, an access point is a base station in a wireless LAN. Although there are other wireless technologies that use access points, the term generally refers to a Wi-Fi network. Access points (APs) can be stand-alone devices that plug into a router or switch; however, access point functionality is also built into a wireless router, which is widely used in most homes and small offices (see [**wireless router**](https://encyclopedia2.thefreedictionary.com/wireless+router)).
+                    - 
+                    - 
+                    - **Like a Cellular Phone System**
+                    - 
+                    - Multiple access points can be deployed in an organization, and users roaming with their mobile devices are handed off from one access point (AP) to another.
+                    - 
+                    - 
+                    - **AP Name = Service Set Identifier (SSID)**
+                    - 
+                    - Wi-Fi networks are assigned a name by the user or network administrator. When devices search for Wi-Fi networks, they display the names, called "service set identifiers" (SSIDs), of all the Wi-Fi access points in the vicinity. For more details, see [**SSID**](https://encyclopedia2.thefreedictionary.com/SSID). See [**virtual access point**](https://encyclopedia2.thefreedictionary.com/virtual+access+point) and [**wireless LAN**](https://encyclopedia2.thefreedictionary.com/wireless+LAN).
+                - 
+                - Controller
+                    - Wireless LAN Controller (WLC)
+                    - A Wireless LAN Controller manages wireless access points in a network, centralizing
+                    - control of the wireless LAN (WLAN).
+                    - WLCs simplify the deployment and management of wireless networks, including
+                    - configuration, security policies, and managing guest access, enhancing the eƯiciency and
+                    - security of wireless networks.
+                    - 
+                    - Manages multiple wireless access points in a large network
+                    - 
+                    - ✅ **Controllers (in SDN)**
+                        - Central units in Software-Defined Networking that manage flow control to networking devices, enabling software-defined behavior for switches and routers.
+                    - 
+                    - ## controller
+                        - [Size]();-[H2]()
+                    - the equipment concerned with controlling the operation of an electrical device
+                    - Collins Discovery Encyclopedia, 1st edition © HarperCollins Publishers 2005
+                    - ## controller
+                        - [Size]();-[H2]()
+                    - [kən′trōl·ər]
+                    - (control systems)
+                    - [**automatic controller**](https://encyclopedia2.thefreedictionary.com/Automatic+Controller)
+                    - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                    - ## controller
+                        - [Size]();-[H2]()
+                    - An electric device (or combination of devices) designed to initiate one or more functions of operation, such as starting, stopping, reversing, and speed changing, of the apparatus to which it is connected; operation may be manual or automatic.
+                    - McGraw-Hill Dictionary of Architecture and Construction. Copyright © 2003 by McGraw-Hill Companies, Inc.
+                    - ## controller
+                        - [Size]();-[H2]()
+                    - A person authorized to provide air traffic control services. The term also refers to radar controllers employed either on air traffic or air defense duties.
+                    - An Illustrated Dictionary of Aviation Copyright © 2005 by The McGraw-Hill Companies, Inc. All rights reserved
+                    - ## controller
+                        - (hardware)
+                        - [Size]();-[H2]()
+                    - Part of a computer, typically a separate circuit board, which allows the computer to use certain kinds of [**peripheral**](https://encyclopedia2.thefreedictionary.com/peripheral) devices. A [**disk controller**](https://encyclopedia2.thefreedictionary.com/disk+controller) is used to connect hard disks and floppy disks, a network controller is used for [**Ethernet**](https://encyclopedia2.thefreedictionary.com/Ethernet). Other controllers are: [**keyboard controller**](https://encyclopedia2.thefreedictionary.com/keyboard+controller), interrupt controller and graphics controller.
+                    - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                    - ## controller
+                        - [Size]();-[H2]()
+                    - (1) A device used to play video games. See [**video game controller**](https://encyclopedia2.thefreedictionary.com/video+game+controller).
+                    - 
+                    - 
+                    - (2) An electronic circuit board or system. In a computer, controllers contain the circuitry to run a peripheral device and are either contained in the chipset on the motherboard or on a plug-in expansion card. See [**control program**](https://encyclopedia2.thefreedictionary.com/control+program) and [**PC chipset**](https://encyclopedia2.thefreedictionary.com/PC+chipset).
+                    - 
+                    - 
+                    - 
+                    - --------------------- Portal ---------------------Not As Much These Days
+                        -  #[[Not As Much These Days]] 
+                        - Although gamers may have a high-end graphics card that plugs into the computer's PCI Express bus, most peripheral control is in the chipset on the motherboard. See PC chipset. #[[Not As Much These Days]] 
+                    - Copyright © 1981-2025 by The Computer Language Company Inc. All Rights reserved. THIS DEFINITION IS FOR PERSONAL USE ONLY. All other reproduction is strictly prohibited without permission from the publisher.
+                    - The following article is from  *The Great Soviet Encyclopedia*  (1979). It might be outdated or ideologically biased.
+                    - ## Controller
+                        - a low-voltage electrical device used for starting, speed regulation, reversing, and electric braking of DC and AC motors. It varies the electrical resistance in a control circuit and the connections in the power and excitation circuits of motors. Controllers are usually operated by means of a manual lever or a handwheel; servomotors are used for remote control.
+                        - [Size]();-[H2]()
+                        - Controllers are built as multistage flat, drum, or cam-operated contact switches. Flat controllers are mainly used where a large number of switching steps are required, as in the starting and regulation of electric motors up to 30–40 kilowatts (kW) in power. Drum controllers are used more often than other types for the direct control of DC motors up to 45 kW and AC motors up to 75 kW in power. As the drum is turned, segmented copper contacts touch fixed contacts, establishing different connections in the motor’s control circuits. For the control of high-powered electric motors where a large number of switching operations occur (up to 600 per hour), greater reliability is obtained with cam-operated controllers having rolling contacts, which provide greater wear resistance than sliding contacts.
+                    - 
+                    - 
+        - **Applications**
+            - **Content delivery network (CDN)** 
+                - Content Delivery Network (CDN)
+                - A globally distributed network of proxy servers and data centers designed to deliver internet
+                - content rapidly to users.
+                - CDNs cache content like web pages, videos, and images in multiple locations around the
+                - world to reduce latency and improve access speed for users regardless of their location.
+                - 
+                - Distributes content delivery across multiple servers
+                - Improves performance of web servers by enabling geolocation
+                - 
+                - ## CDN
+                    - [Size]();-[H2]()
+                - (**C**ontent **D**elivery **N**etwork) A distribution system on the Internet that accelerates the delivery of Web pages, audio, video and other Internet-based content to users around the world. The CDN replicates the content provider's files in servers, called "caching servers" or "edge servers," located in geographically dispersed datacenters. Most CDNs are third-party services; however, large companies may develop their own "enterprise CDN" (eCDN) to support remote locations more effectively.
+                - 
+                - 
+                - When content is replicated throughout the country or the world, it is delivered to users with greater speed and reliability. The CDN network routes the user's request for content to the appropriate caching server based on the user's location. CDNs are often connected to multiple ISP backbones and have peering relationships with others, providing high availability to users.
+                - 
+                - 
+                - **Web Acceleration**
+                - 
+                - Every CDN accelerates content delivery by nature of its multiple backbones (in most cases) and numerous caching servers. A CDN may also augment acceleration via compression between nodes in its own network. Quite often, only the graphics on a Web page are delivered by the CDN, while the HTML text is sent out from the customer's servers.
+                - 
+                - 
+                - **Streaming and Downloading**
+                - 
+                - Video uses extensive network bandwidth, and many customers of a CDN use the service solely to stream video to users. A CDN may offer several streaming methods including Flash, Windows Media, Silverlight and progressive download, the latter using the same HTTP protocol as Web pages (see [**progressive download**](https://encyclopedia2.thefreedictionary.com/progressive+download)). Large downloads such as gaming software are also candidates for CDNs. The CDN may pull the data from the customer's origin server, or the customer may upload the files to the CDN.
+                - 
+                - 
+                - **Server-Side Processing**
+                - 
+                - The CDN may offer server-side processing (Java, ASP, etc.). If the CDN does not do the processing, that operation takes place in the customer's servers, and the CDN can deliver the accompanying graphics or other downloads.
+                - 
+                - 
+                - **Hybrid CDN (Peer-to-Peer)**
+                - 
+                - A CDN may support peer-to-peer processing, which requires client software to be installed in the user's computer or pre-installed in a set-top box.
+                - 
+                - 
+                - **The Vendors**
+                - 
+                - As of 2020, Akamai, Google, Swarmify, Microsoft, Rackspace, Amazon and Limelight are among the largest CDN providers. See [**content peering**](https://encyclopedia2.thefreedictionary.com/content+peering).
+            - ✅ **Media**
+                - Physical materials used to transmit the data (copper cable, fiber optic cable, wireless signals); each has unique properties and limitations.
+            - ✅ **WAN Links (Wide Area Network Links)**
+                - Connect networks over large geographical areas (cities, countries) using technologies like leased lines, satellite, or cellular.
+        - **Functions**
+            - **Virtual private network (VPN)**
+                - Virtual Private Network (VPN)
+                - A Virtual Private Network (VPN) is a technology that creates a safe and encrypted
+                - connection over a less secure network, such as the internet.
+                - VPNs are used to establish secure connections between remote users or remote sites and
+                - an organization's private network, allowing for secure data transmission across public
+                - networks as if the devices were directly connected to the private network.
+                - 
+                - Provides secure connection over a public network (i.e. internet)
+                - E.g. accessing corporate network over VPN tunnel
+                - 
+                - ## VPN
+                    - [Size]();-[H2]()
+                - (communications)
+                - [**virtual private network**](https://encyclopedia2.thefreedictionary.com/virtual+private+network)
+                - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                - ## VPN
+                    - [Size]();-[H2]()
+                - [**Virtual Private Network**](https://encyclopedia2.thefreedictionary.com/virtual+private+network)
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## VPN
+                    - [Size]();-[H2]()
+                - (Virtual Private Network) A private network configured within a public network such as the Internet or a carrier's network. A VPN provides anonymity and privacy for every desktop and mobile device that accesses the Internet. VPNs use so-called "tunneling" protocols because they tunnel a private channel through a public network (see [**VPN protocols**](https://encyclopedia2.thefreedictionary.com/VPN+protocols)).
+                - 
+                - 
+                - Anonymity
+                - 
+                - VPNs provide a server that sits between the user and the destination website, which only sees the IP address of the VPN and not the user (see illustration below). As a result, VPNs are widely used to get around restricted content that is available only to citizens within the country (see [**VPN service**](https://encyclopedia2.thefreedictionary.com/VPN+service)). See [**anonymous Web surfing**](https://encyclopedia2.thefreedictionary.com/anonymous+Web+surfing) and [**proxy server**](https://encyclopedia2.thefreedictionary.com/proxy+server).
+                - 
+                - 
+                - Privacy
+                - 
+                - A VPN encrypts the user's data because unencrypted traffic can be read by an attacker, especially in a public Wi-Fi hotspot. Another common encryption method is TLS, which every e-commerce and financial website employs for data transfer. However, TLS does not provide anonymity (see illustration below). See [**TLS**](https://encyclopedia2.thefreedictionary.com/TLS).
+                - 
+                - 
+                - Carrier VPNs
+                - 
+                - Carriers offer a variety of "virtual private routed networks" (VPRNs) that can connect customer's Ethernet frames or IP packets (see [**VPLS**](https://encyclopedia2.thefreedictionary.com/VPLS) and [**MPLS**](https://encyclopedia2.thefreedictionary.com/MPLS)).
+                - 
+                - 
+                - VPN History
+                - 
+                - Years ago, the telephone carriers used their vast backbones to tunnel traffic between cities, giving the appearance of a private network that was more affordable than long distance private lines. Prior to the Internet, VPNs were built over several network architectures (see [**X.25**](https://encyclopedia2.thefreedictionary.com/X.25), [**Switched 56**](https://encyclopedia2.thefreedictionary.com/Switched+56), [**ATM**](https://encyclopedia2.thefreedictionary.com/ATM) and [**frame relay**](https://encyclopedia2.thefreedictionary.com/frame+relay)).
+                - 
+                - ## VPN
+                    - [Size]();-[H2]()
+                    -  *abbreviation for* 
+                - (Computer Science) virtual private network: a network that uses the internet to transfer information using secure methods
+                - 
+                - ## virtual private network
+                    - [Size]();-[H2]()
+                - [¦vər·chə·wəl ‚prī·vət ′net‚wərk]
+                - (communications)
+                - A wide-area network whose links are provided by a common carrier although they appear to the users to behave like dedicated lines, and whose computers use a common cryptographic key to send messages from one computer in the network to another. Abbreviated VPN.
+                - McGraw-Hill Dictionary of Scientific & Technical Terms, 6E, Copyright © 2003 by The McGraw-Hill Companies, Inc.
+                - ## Virtual Private Network
+                    - (networking, security)
+                    - [Size]();-[H2]()
+                - (VPN) The use of [**encryption**](https://encyclopedia2.thefreedictionary.com/encryption) in the lower protocol layers to provide a secure connection through an otherwise insecure network, typically the [**Internet**](https://encyclopedia2.thefreedictionary.com/Internet). VPNs are generally cheaper than real private networks using private lines but rely on having the same encryption system at both ends. The encryption may be performed by [**firewall**](https://encyclopedia2.thefreedictionary.com/firewall) software or possibly by routers.
+                - 
+                - 
+                - Link-level (layer 2 and 3) encryption provides extra protection by encrypting all of each [**datagram**](https://encyclopedia2.thefreedictionary.com/datagram) except the link-level information. This prevents a listener from obtaining information about network structure. While link-level encryption prevents traffic analysis (a form of attack), it must encrypt/decrypt on every [**hop**](https://encyclopedia2.thefreedictionary.com/hop) and every path.
+                - 
+                - 
+                - Protocol-level encryption (layer 3 and 4) encryption encrypts protocol data but leaves protocol and link headers clear. While protocol-level encryption requires you to encrypt/decrypt data only once, and it encrypts/decrypts only those sessions that need it, headers are sent as clear text, allowing traffic analysis.
+                - 
+                - 
+                - Application (layer 5 up) encryption is based on a particular application and requires that the application be modified to incorporate encryption.
+                - 
+                - 
+                - Cisco.
+                - This article is provided by FOLDOC - Free Online Dictionary of Computing (foldoc.org)
+                - ## virtual private network
+                    - [Size]();-[H2]()
+                - A private network configured within a public network such as the Internet or a carrier's network. Years ago, virtual private networks (VPNs) obsoleted private lines between company branches. Using data encryption to maintain privacy, VPNs also allow mobile users access to the company LAN.
+                - 
+                - 
+                - In the past, common carriers used their vast networks to "tunnel" traffic between customer locations to give the appearance of a private network while sharing backbone trunks, no different than the way the Internet works. Prior to the Internet's IP protocol, VPNs were built over X.25, Switched 56, frame relay and ATM technologies. See [**PVC**](https://encyclopedia2.thefreedictionary.com/PVC), [**SVC**](https://encyclopedia2.thefreedictionary.com/SVC), [**computer security**](https://encyclopedia2.thefreedictionary.com/computer+security) and [**information security**](https://encyclopedia2.thefreedictionary.com/information+security).
+                - 
+                - 
+                - Internet VPNs
+                - 
+                - Internet VPNs are very popular, and several security protocols are used. IPsec, L2TP and PPTP provide secure tunnels over the Internet. For brief transactions at a website, SSL is widely used. See [**IPsec**](https://encyclopedia2.thefreedictionary.com/IPsec), [**L2TP**](https://encyclopedia2.thefreedictionary.com/L2TP), [**PPTP**](https://encyclopedia2.thefreedictionary.com/PPTP) and [**SSL**](https://encyclopedia2.thefreedictionary.com/SSL).
+                - 
+                - 
+                - Virtual IP VPNs from Carriers
+                - 
+                - A "virtual private routed network" (VPRN) connects the customer's IP router to the provider's IP router. See [**MPLS**](https://encyclopedia2.thefreedictionary.com/MPLS).
+                - 
+                - 
+                - Ethernet VPNs from Carriers
+                - 
+                - Carriers encapsulate Ethernet frames in one location and deliver them to another. Connecting two Ethernets is a "LAN interconnect service," while multipoint connectivity is a "transparent LAN service" (TLS). A "virtual private LAN service" (VPLS) is a multipoint VPN using an IP/MPLS core to route traffic. See [**TLS**](https://encyclopedia2.thefreedictionary.com/TLS), [**VPLS**](https://encyclopedia2.thefreedictionary.com/VPLS) and [**IP/MPLS core**](https://encyclopedia2.thefreedictionary.com/IP%2fMPLS+core).
+                - 
+                - 
+                - Frame Relay VPNs from Carriers
+                - 
+                - Carriers have offered frame relay point-to-point and multipoint VPNs, whereby the customer's equipment converts internal IP packets to frame relay packets. Adding a location in such a network means provisioning virtual circuits from the new site to all the other sites. See [**frame relay**](https://encyclopedia2.thefreedictionary.com/frame+relay).
+                - 
+                - 
+            - **Quality of service (QoS)**
+                - Quality of Service (QoS)
+                - Quality of Service (QoS) refers to the set of technologies and policies used to manage and
+                - prioritize network traƯic to ensure the performance of critical applications and services.
+                - QoS assigns diƯerent priorities to diƯerent types of traƯic, ensuring that essential services
+                - like voice and video communications are given higher priority over less critical data.
+                - This helps in reducing latency, jitter, and packet loss, enhancing the overall user experience
+                - in networks with limited bandwidth.
+                - 
+                - Traffic shaping and policing
+                - Prioritise certain traffic (e.g. VoIP)
+                - Minimise delay (latency) and variation (jitter) of packets
+                - **Models**
+                    -  *DiffServ* 
+                        - Differentiated Service
+                        - Prioritise based on classes in the IP header
+                    -  *IntServ* 
+                        - Integrated Service
+                        - Guarantees a level of service
+                - 
+                - ## QoS
+                    - [Size]();-[H2]()
+                - **(1)** (**Q**uality **O**f **S**ervice) A defined measure of performance in a system. For example, the maximum response time to complete a transaction must be no longer than 10 seconds.
+                - 
+                - 
+                - **(2)** (**Q**uality **O**f **S**ervice) In general, to be able to prioritize one type of transmission over another in a communications network.
+                - 
+                - 
+                - **(3)** (**Q**uality **O**f **S**ervice) A defined measure of performance in a communications network. For example, to ensure that real-time voice and video are delivered without annoying blips, a traffic contract is negotiated between the customer and network provider that guarantees a minimum bandwidth along with the maximum delay in milliseconds that can be tolerated.
+                - 
+                - 
+                - Because dedicated channels are set up between parties, the plain old telephone system (POTS) delivered the highest QoS for years. However, when data are broken into packets that travel through routers in a LAN or WAN, QoS mechanisms are used to give higher priority to real-time data, such as voice over IP (VoIP), than to non-real-time data, such as file downloads. Another option in packet switching is to overbuild the network, ensuring that it will accommodate all traffic fed to it. See [**packet switching**](https://encyclopedia2.thefreedictionary.com/packet+switching).
+                - 
+                - 
+                - ATM was one of the first packet technologies to build in modes of service. Today, almost everything is built around IP, and there are a variety of methods that provide QoS in IP networks (see [**802.11e**](https://encyclopedia2.thefreedictionary.com/802.11e), [**TOS**](https://encyclopedia2.thefreedictionary.com/TOS), [**RSVP**](https://encyclopedia2.thefreedictionary.com/RSVP), [**Diffserv**](https://encyclopedia2.thefreedictionary.com/Diffserv) and [**MPLS**](https://encyclopedia2.thefreedictionary.com/MPLS)).
+                - 
+                - 
+                - ### QoS vs. CoS
+                    - [Size]();-[H3]()
+                - 
+                - 
+                - QoS (quality of service) refers to the mechanisms in the network software that make the actual determination of which packets have priority (see [**packet scheduler**](https://encyclopedia2.thefreedictionary.com/packet+scheduler)). CoS (class of service) refers to feature sets, or groups of services, that are assigned to users based on company policy. If a feature set includes priority transmission, then CoS winds up being implemented in QoS functions within the routers and switches in the network. See [**class of service**](https://encyclopedia2.thefreedictionary.com/class+of+service).
+                - 
+                - 
+                - ### Circuits to Packets to Circuits?
+                    - [Size]();-[H3]()
+                - 
+                - 
+                - Nothing provides better quality than a dedicated channel between two parties. Some say, in time, with ever-increasing wavelength division multiplexing (WDM), there will be enough optical bandwidth to have an available circuit between every user in every home and office in the world, and we will revert to circuit switching once again.
+                - 
+                - 
+                - In the meantime, the late 1990s saw a huge buildup of fiber backbones in the U.S., which resulted in a glut of capacity after the turn of the century. This fiber overbuild has allowed for quality voice and video calls over the Internet. See [**infranet**](https://encyclopedia2.thefreedictionary.com/infranet) and [**QoE**](https://encyclopedia2.thefreedictionary.com/QoE).
+                - 
+                - 
+            - **Time to live (TTL)**
+                - Time to Live (TTL)
+                - Time to Live (TTL) is a field in the header of IP packets that specifies the maximum time or
+                - number of hops a packet is allowed to traverse before being discarded by a router.
+                - TTL helps prevent packets from looping indefinitely in the network, with each router
+                - decrementing the TTL value by one until it reaches zero, at which point the packet is
+                - dropped.
+                - 
+                - IP packet header field that decreases by 1 for each hop (router)
+                - Limits the lifespan of a packet over the network to prevent permanent circulation
+                - 
+                - ## TTL
+                    - [Size]();-[H2]()
+                - **(1)** (**T**ime **T**o **L**ive) A counter in a network packet that sets a limit to its validity. In order to prevent an IP packet from propagating endlessly through the network, the value in the TTL field is reduced by each router. When TTL reaches 0, the packet is discarded.
+                - 
+                - 
+                - **(2)** (**T**ime **T**o **L**ive) A timestamp in the DNS system, which converts hostnames to IP addresses. Responses use a TTL field to keep the IP address in the user's cache for a limited amount of time. After the time is up, the next request for that IP address must go back to the DNS system. See [**DNS**](https://encyclopedia2.thefreedictionary.com/DNS) and [**DNS rebinding**](https://encyclopedia2.thefreedictionary.com/DNS+rebinding).
+                - 
+                - 
+                - **(3)** (**T**ransistor-**T**ransistor **L**ogic) A digital circuit composed of bipolar junction transistors (BJTs). Widely used in all variety of electronic applications, especially prior to CMOS circuits becoming popular, TTL superseded the earlier RTL (resistor-transistor) and DTL (diode-transistor) logic designs, which used more power. In TTL, transistors are used to both isolate inputs and perform the logic switching. A "TTL" designation on a circuit input or output indicates a digital circuit rather than analog. See [**7400 series**](https://encyclopedia2.thefreedictionary.com/7400+series), [**ECL**](https://encyclopedia2.thefreedictionary.com/ECL), [**I2L**](https://encyclopedia2.thefreedictionary.com/I2L) and [**bipolar transistor**](https://encyclopedia2.thefreedictionary.com/bipolar+transistor).
+                - 
+                - 
+                - **(4)** (**T**hrough **T**he **L**ens) Refers to a single-lens reflex camera that lets the photographer view the scene through the same lens that captures the image. "TTL metering" means that the light is measured from behind the lens to determine the correct shutter and flash settings.
+                - 
+                - ## Time to Live
+                    - [Size]();-[H2]()
+                - (TTL) A field in the [**Internet Protocol**](https://encyclopedia2.thefreedictionary.com/Internet+Protocol) header which indicates how many more [**hops**](https://encyclopedia2.thefreedictionary.com/hops) this packet should be allowed to make before being discarded or returned.
+    - **1.3 Summarize cloud concepts and connectivity options.**
+        - Key Concepts to Learn:
+            - ∙ Cloud models (IaaS, PaaS, SaaS)
+            - ∙ Deployment models (Public, Private, Hybrid)
+            - ∙ Cloud connectivity methods
+            - ∙ NFV, VPC, Direct Connect
+        - **Network functions virtualization (NFV)**
+            - Network Functions Virtualization (NFV)
+            - NFV involves the decoupling of network functions from hardware devices and running them
+            - as software instances on virtual machines or containers.
+            - In cloud computing, NFV allows for flexible deployment and management of networking
+            - services like firewalls, load balancers, and intrusion detection systems.
+            - It reduces the need for dedicated hardware and enables dynamic scaling and management,
+            - which enhances resource utilization and reduces costs.
+            - 
+            -  *Network Functions Virtualisation (NFV)* 
+                - Network services (firewalls, routers, LB etc) are visualised via software
+                - Decouples network functions from hardware
+            - 
+            - ## NFV
+                - [Size]();-[H2]()
+            - (**N**etwork **F**unctions **V**irtualization) Virtualizing network services in commodity hardware rather than specialized devices. NFV is complementary to software-defined networking (SDN), in which traditional fixed-function routers are replaced with regular servers controlled by software. What makes NFV different is that it deals with the services in the network, not packet forwarding.
+            - 
+            - 
+            - **The VNF Runs on a Virtual Machine**
+            - 
+            - The virtual network function (VNF) is the NFV service that runs in a virtual machine (VM). For example, dedicated hardware boxes such as CDN appliances, access servers, WAN accelerators and monitors are replaced with VNFs in standard server hardware. See [**software-defined networking**](https://encyclopedia2.thefreedictionary.com/software-defined+networking), [**virtual appliance**](https://encyclopedia2.thefreedictionary.com/virtual+appliance) and [**virtual router**](https://encyclopedia2.thefreedictionary.com/virtual+router).
+        - **Virtual private cloud (VPC)**
+            - Virtual Private Cloud (VPC)
+            - A VPC is an isolated network space within a public cloud designed to provide a similar level
+            - of segmentation, control, and security as a private data center.
+            - Users can define their own IP address range, configure subnets, route tables, and network
+            - gateways.
+            - This allows enterprises to run their cloud resources in a virtual network that they can
+            - control, similar to how they would manage a network in their own data center.
+            - 
+            -  *Virtual Private Cloud (VPC)* 
+                - A logically isolated network in the cloud
+                - IP addresses, subnets, routing tables, network gateways
+            - 
+            - ## virtual private cloud
+                - [Size]();-[H2]()
+            - A cloud computing infrastructure used for a company's internal processing, but which is hosted by a cloud computing provider rather than in-house. See [**private cloud**](https://encyclopedia2.thefreedictionary.com/private+cloud) and [**cloud computing**](https://encyclopedia2.thefreedictionary.com/cloud+computing).
+        - **Network security groups**
+            - Network Security Groups
+                - Network security groups are used to control inbound and outbound traffic to cloud
+                - resources within a VPC.
+                - They act as a virtual firewall for associated instances to control traƯic based on rules that
+                - specify allowed or denied ports, protocols, and source/destination IP addresses.
+                - This helps in implementing security at the protocol and port access level, ensuring only
+                - legitimate traƯic reaches the cloud resources.
+            -  *Network Security Groups* 
+                - Used to control outbound/inbound traffic to network interfaces (NIC) or virtual machines in a VPC.
+                - Allow or deny traffic based on IP address, ports and protocols
+        - **Network security lists**
+            - Network Security Lists
+                - Similar to network security groups, network security lists are also used for managing and
+                - securing network traƯic in a cloud environment.
+                - They generally provide stateful or stateless traƯic filtering on a subnet level, enabling more
+                - granular control over traƯic between subnets within the same VPC or across diƯerent VPCs.
+                - 
+                -  *Network Security Lists* 
+                    - Like NSGs but applied at the subnet level.
+        - **Cloud gateways**
+            - Cloud Gateways
+                - Cloud gateways serve as intermediary devices or services that connect cloud environments
+                - with diƯerent networks, including private data centers or other cloud services.
+                - They facilitate communication, data transfer, and management between these disparate
+                - environments, ensuring that users and applications can securely and efficiently access
+                - cloud resources.
+                - **Cloud Gateways**
+                    -  *Internet Gateway* 
+                        - Enables communication between instances in a VPC and the internet.
+                    -  *Network Address Translation (NAT) Gateway* 
+                        - Enables private subnets to access the internet without exposing themselves
+                - **Cloud Connectivity Options**
+                    -  *VPN* 
+                        - Enables secure connection between on-premise network and a cloud environment over the internet.
+                    -  *Direct Connect* 
+                        - Dedicated, private connection on-premise and datacenter
+                - 
+            - Internet gateway
+                - Internet Gateway
+                    - An internet gateway serves as a bridge between a company’s VPC and the internet.
+                    - It enables internet access for the resources within the VPC.
+                    - This gateway facilitates communications between instances in the cloud and external
+                    - networks.
+                - 
+                - ## Internet gateway
+                    - [Size]();-[H2]()
+                - **(1)** See [**cable/DSL gateway**](https://encyclopedia2.thefreedictionary.com/cable%2fDSL+gateway).
+                - 
+                - 
+                - **(2)** Another term for "router," specifically when the router is in a local network, and its primary purpose is to forward packets to the Internet and receive packets from the Internet. See [**router**](https://encyclopedia2.thefreedictionary.com/router).
+                - 
+                - 
+                - **(3)** A router or server that converts IP packets to IPX, AppleTalk or some other non-IP format and vice versa. It is used to connect non-IP networks to the Internet.
+            - Network address translation (NAT) gateway
+                - NAT Gateway
+                - A NAT gateway allows instances in a private subnet to connect to the internet or other
+                - external services while preventing the internet from initiating a connection with those
+                - instances or seeing their private IP addresses.
+                - This is crucial for instances that require outbound internet access (for updates, for
+                - example) but do not need inbound internet connections.
+                - 
+                - ## Network Address Translation
+                    - [Size]();-[H2]()
+                    - (networking)
+                - (NAT, or Network Address Translator, Virtual LAN) A technique in which a [**router**](https://encyclopedia2.thefreedictionary.com/router) or [**firewall**](https://encyclopedia2.thefreedictionary.com/firewall) rewrites the source and/or destination Internet addresses in a packet as it passes through, typically to allow multiple hosts to connect to the [**Internet**](https://encyclopedia2.thefreedictionary.com/Internet) via a single external [**IP address**](https://encyclopedia2.thefreedictionary.com/IP+address). NAT keeps track of outbound connections and distributes incoming packets to the correct machine.
+                - 
+                - 
+                - NAT is an alternative to adopting [**IPv6**](https://encyclopedia2.thefreedictionary.com/IPv6) (IPng). It allows the same IP addresses (10.x.x.x is the conventional range) to be used on many private local networks while requiring only one of the increasingly scarce public addresses to be allocated to each private network.
+                - 
+                - 
+                - NAT does not however allow an external service to initiate a TCP connection to an internal host, nor does it support stateless protocols based on UDP well unless the router software has extensions to support each specific protocol.
+                - 
+                - ## NAT
+                    - [Size]();-[H2]()
+                - (**N**etwork **A**ddress **T**ranslation) The technology that maintains the privacy of the addresses of the computers in a home or business network when accessing the Internet. It converts the private addresses that are assigned to the internal computers to one or more public addresses that are visible on the Internet (see [**private IP address**](https://encyclopedia2.thefreedictionary.com/private+IP+address)). NAT is an IETF standard that is implemented in a router or firewall as well as in any user's machine that is configured to share its Internet connection (see [**ICS**](https://encyclopedia2.thefreedictionary.com/ICS)).
+                - 
+                - 
+                - NAT assigns a number to the packet headers of the messages going out to the Internet and keeps track of them via an internal table that it creates. When responses come back from the Internet, NAT uses the table to perform the reverse conversion to the private IP address of the requesting client machine (see illustration below).
+                - 
+                - 
+                - **A First-Level Firewall**
+                - 
+                - NAT provides a small amount of security by keeping internal addresses hidden from the outside world. It prevents several kinds of first-level attacks, but not all, and it must be used in conjunction with the stateful inspection firewall built into the router or personal firewall in each user's machine. Enterprises generally use very robust firewall architectures for security (see [**firewall**](https://encyclopedia2.thefreedictionary.com/firewall) and [**firewall methods**](https://encyclopedia2.thefreedictionary.com/firewall+methods)). See [**dynamic NAT**](https://encyclopedia2.thefreedictionary.com/dynamic+NAT).
+                - 
+                - 
+                - **Not Enough IP Addresses**
+                - 
+                - When the Internet was first developed, its 32-bit IP address provided four billion discrete numbers, which proved woefully insufficient to assign a unique number to every device that eventually became Internet enabled. With IP Version 6 (IPv6), there are sufficient numbers for everything on the planet; however, the original system (IPv4) is thoroughly entrenched. See [**IPv4**](https://encyclopedia2.thefreedictionary.com/IPv4) and [**IPv6**](https://encyclopedia2.thefreedictionary.com/IPv6).
+                - 
+                - 
+                - 
+                - --------------------- Portal ---------------------NAT Port Address Translation (PAT)
+                    -  #[[NAT Port Address Translation (PAT)]] 
+                    - This common NAT method assigns a different TCP port number to each client session with a server on the Internet. When responses come back, the source port becomes the destination port and determines which user to route the packets to. It also validates that the incoming packets were requested. See TCP/IP port. #[[NAT Port Address Translation (PAT)]] 
+        - **Cloud connectivity options**
+            - Cloud Connectivity Options
+            - Cloud connectivity options refer to the various methods through which data and
+            - applications can connect to and interact with cloud environments.
+            - These options are crucial for ensuring eƯicient, secure, and reliable access to cloud
+            - resources from diƯerent locations.
+            - {{VPC (Virtual Private Cloud)}} - Isolated virtual network within a cloud provider
+                - ∙ Define subnets, route tables, gateways
+            - {{NFV (Network Function Virtualization)}} - Replaces traditional hardware with virtual appliances
+                - ∙ Example: virtual firewalls, routers
+            - VPN
+                - Virtual Private Network (VPN)
+                - A Virtual Private Network (VPN) is a technology that creates a safe and encrypted
+                - connection over a less secure network, such as the internet.
+                - VPNs are used to establish secure connections between remote users or remote sites and
+                - an organization's private network, allowing for secure data transmission across public
+                - networks as if the devices were directly connected to the private network.
+                - {{VPN}} - Site-to-site or remote access
+                    - ∙ Encrypted tunnel over the public internet
+            - Direct Connect
+                - {{Direct Connect / ExpressRoute}} - Private dedicated connection to cloud provider
+                    - ∙ More secure and consistent performance
+                - Private-Direct Connection to Cloud Provider
+                    - 
+                    - A private-direct connection refers to a dedicated network link between an organization's on-
+                    - premises infrastructure and a cloud service provider's data center.
+                    - 
+                    - This direct connection bypasses the public internet, oƯering more reliable, secure, and
+                    - faster connectivity for accessing cloud services.
+                    - It is ideal for businesses with stringent performance and security requirements for their
+                    - cloud-based applications and data.
+        - **Deployment models**
+            - Deployment Models
+            - Deployment models in networking and cloud computing refer to the specific configurations
+            - and environments in which technology services and infrastructure are implemented.
+            - These models vary based on the management, location, and accessibility, such as public,
+            - private, hybrid, and community.
+            - 
+            - Public
+                - Public
+                - A public deployment model provides services over the Internet to multiple customers or the
+                - general public, where infrastructure and resources are owned and operated by the service
+                - provider.
+                - This model oƯers scalability and flexibility, reducing the need for organizations to invest in
+                - and maintain their own infrastructure.
+                - {{Public Cloud}} - Services offered over the internet to multiple customers
+                    - ∙ Shared infrastructure
+                - 
+            - Private
+                - Private
+                - 
+                - A private deployment model is dedicated to a single organization and can be hosted on-
+                - premises or by a third-party provider.
+                - 
+                - It oƯers greater control and security over resources and data, making it suitable for
+                - businesses with strict regulatory compliance or unique business needs.
+                - {{Private Cloud}} - Infrastructure dedicated to a single organization
+                    - ∙ May be on-premises or hosted
+            - Hybrid
+                - Hybrid
+                - A hybrid deployment model combines public and private models, allowing data and
+                - applications to be shared between them.
+                - This model provides businesses with flexibility, scalability, and security by enabling them to
+                - keep sensitive data private while leveraging public cloud resources for non-sensitive
+                - operations.
+                - {{Hybrid Cloud}} - Combines public and private
+                    - ∙ Allows data and applications to move between environments 
+            - **Deployment Models**
+                -  *Public* 
+                    - Cloud resources are shared between multiple tenants
+                -  *Private* 
+                    - Cloud resources belong to a single tenant
+                -  *Hybrid* 
+                    - Utilising both models.
+                    - E.g. sensitive data stored on a private cloud
+        - **Service models**
+            - Service Models
+            - Service models in cloud computing describe the various types of services oƯered over the
+            - internet, enabling businesses and users to access computing resources and applications
+            - without the need to invest in physical infrastructure.
+            - These models include Software as a Service (SaaS), Infrastructure as a Service (IaaS),
+            - Platform as a Service (PaaS), and Desktop as a Service (DaaS).
+            - 
+            - Software as a service (SaaS)
+                - Software as a Service (SaaS)
+                - SaaS delivers applications over the internet, accessible through a web browser, eliminating
+                - the need for installations and maintenance on individual devices.
+                - It allows users to access software applications on a subscription basis, providing
+                - convenience and cost savings on software licensing and infrastructure.
+                - {{SaaS (Software as a Service)}} - Provider manages everything
+                    - ∙ You use the software through browser/app
+                    - ∙ Examples: Gmail, Office 365, Salesforce
+            - 
+            - Infrastructure as a service (IaaS)
+                - Infrastructure as a Service (IaaS)
+                - IaaS provides virtualized computing resources over the internet, oƯering a fully outsourced
+                - service for computing infrastructure.
+                - Users can rent servers, storage space, and networking capabilities, scaling resources up or
+                - down based on demand, which is ideal for businesses looking for flexibility and scalability
+                - without the capital expenditure of physical hardware.
+                - {{IaaS (Infrastructure as a Service)}} - Provides virtualized hardware resources
+                    - ∙ You manage OS, apps, and data
+                    - ∙ Examples: AWS EC2, Azure VMs
+            - 
+            - Platform as a service (PaaS)
+                - Platform as a Service (PaaS)
+                - PaaS oƯers a cloud platform and tools to allow developers to build, test, deploy, and
+                - manage applications without worrying about the underlying infrastructure.
+                - This model provides a development environment, application hosting, and a deployment
+                - platform, streamlining the development process and reducing the complexity of managing
+                - hardware and software layers.
+                - {{PaaS (Platform as a Service)}} - Provider manages OS and infrastructure
+                    - ∙ You manage applications and data
+                    - ∙ Examples: Google App Engine, Heroku
+                - 
+                - **Service Models**
+                    -  *Software as a Service (SaaS)* 
+                        - Provides application software over the internet
+                        - E.g. Gmail
+                    -  *Infrastructure as a Service (IaaS)* 
+                        - Provides infrastructure (VM, storage, networking) over the internet
+                        - E.g. AWS EC2
+                    -  *Platform as a Service (PaaS)* 
+                        - Provides hardware over the network with minimum abstraction
+                        - E.g. Google App Engine
+                - 
+        - **Scalability**
+            - Scalability
+            - Scalability is the capability of a system, network, or process to handle a growing amount of
+            - work, or its potential to be enlarged to accommodate that growth.
+            - It means not just the ability to increase resources but to do so easily and cost-eƯectively,
+            - supporting growth without compromising performance or reliability.
+            - 
+            -  *Scalability* 
+                - The ability to expand or reduce computing capability
+            - 
+            - scalability
+            - 
+            - Also found in: [**Thesaurus**](https://www.freethesaurus.com/scalability), [**Medical**](https://medical-dictionary.thefreedictionary.com/scalability), [**Financial**](https://financial-dictionary.thefreedictionary.com/scalability), [**Encyclopedia**](https://encyclopedia2.thefreedictionary.com/scalability), [**Wikipedia**](https://encyclopedia.thefreedictionary.com/scalability).
+            - ## scalability
+                - (ˌskeɪləˈbɪlɪtɪ)
+                -  *n* 
+                - [Size]();-[H2]()
+            - (Telecommunications) the ability of something, esp a computer system, to adapt to increased demands
+            - 
+            - ## scalability
+                - [Size]();-[H2]()
+            - How well a solution to some problem will work when the size of the problem increases.
+            - 
+            - 
+            - For example, a central [**server**](https://encyclopedia2.thefreedictionary.com/server) of some kind with ten clients may perform adequately but with a thousand clients it might fail to meet response time requirements. In this case, the average response time probably scales linearly with the number of clients, we say it has a [**complexity**](https://encyclopedia2.thefreedictionary.com/complexity) of O(N) ("order N") but there are problems with other complexities. E.g. if we want N nodes in a network to be able to communicate with each other, we could connect each one to a central exchange, requiring O(N) wires or we could provide a direct connection between each pair, requiring O(N^2) wires (the exact number or formula is not usually so important as the highest power of N involved).
+        - **Elasticity**
+            - Elasticity
+            - Elasticity in cloud computing refers to the ability to automatically scale computing
+            - resources up or down as needed.
+            - This ensures that applications always have the right amount of resources to meet demand
+            - without manual intervention, optimizing both performance and cost.
+            - Elasticity is crucial for handling varying workloads, making it a fundamental characteristic
+            - of cloud services.
+            - 
+            -  *Elasticity* 
+                - The speed at which expansion occurs
+            - 
+        - **Multitenancy**
+            - Multitenancy
+            - Multitenancy is a software architecture principle where a single instance of software serves
+            - multiple tenants, or users.
+            - 
+            - Each tenant's data is isolated and remains invisible to other tenants, providing a cost-
+            - effective way for providers to manage a single application across various users.
+            - 
+            - This architecture is common in cloud computing, enabling resources and costs to be
+            - shared eƯiciently.
+            - 
+            - multitenancy
+            - 
+            -  *Multi-tenancy* 
+                - A cloud configuration where a single physical volume is shared between multiple tenants as isolated logical volumes.
+            - 
+            - 
+            - Also found in: [**Medical**](https://medical-dictionary.thefreedictionary.com/multitenancy), [**Wikipedia**](https://encyclopedia.thefreedictionary.com/multitenancy).
+            - ## multitenancy
+                - [Size]();-[H2]()
+            - Having multiple occupants. It refers to software that is shared by several customers, each of which is unaware of the others. Multitenancy is often contrasted with virtualization; however, multitenancy applications can run in both virtualized and non-virtualized environments. The separation of customer data is built into the application. See also [**MDU**](https://encyclopedia2.thefreedictionary.com/MDU).
+    - **1.4 Explain common networking ports, protocols, services, and traffic types.**
+        - **Protocols - Ports**
+            - File Transfer Protocol (FTP) - 20/21
+                - File Transfer Protocol (FTP) 20/21
+                - File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer
+                - files between a client and server on a computer network.
+                - FTP uses two ports: 20 for data transfer and 21 for control (commands and responses).
+                - It allows users to upload, download, delete, and manage files on a remote server but does
+                - not encrypt its traƯic, including credentials.
+                -  *File Transfer Protocol (FTP)* 
+                    - Port 21 (command) / 20 (data)
+                    - Transfers files between client and server.
+                - {{FTP}}  - 20/21 - TCP - File transfer
+            - Secure File Transfer Protocol (SFTP) - 22
+                - Secure File Transfer Protocol (SFTP) 22
+                - Secure File Transfer Protocol (SFTP) is an extension of SSH to provide a secure method for
+                - transferring files.
+                - It utilizes SSH's port 22 to ensure all data and commands are encrypted and secure,
+                - providing a more secure alternative to traditional FTP.
+                - SFTP oƯers advanced features like file access, file transfer, and file management
+                - functionalities over any reliable data stream.
+                -  *Secure File Transfer Protocol (SFTP)* 
+                    - Port 22
+                    - FTP with SSH for encryption.
+                - {{SFTP}} - 22 - TCP - {{Secure FTP}} 
+            - Secure Shell (SSH) - 22
+                - Secure Shell (SSH) 22
+                - Secure Shell (SSH) is a cryptographic network protocol for operating network services
+                - securely over an unsecured network.
+                - 
+                - Port 22 is used by SSH for providing a secure channel over an unsecured network in client-
+                - server architecture, supporting secure logging in, file transfers (via SCP and SFTP), and port
+                - 
+                - forwarding.
+                - SSH encrypts all traƯic (including passwords) to eƯectively eliminate eavesdropping,
+                - connection hijacking, and other network level attacks.
+                -  *Secure Shell (SSH)* 
+                    - Port 22
+                    - Secure remote login and command execution.
+                - {{SSH}} - 22 - TCP - Secure remote login
+            - Telnet - 23
+                - Telnet 23
+                - Telnet is a network protocol used on the Internet or local area networks to provide a
+                - bidirectional interactive text-oriented communication facility using a virtual terminal
+                - connection.
+                - It operates on port 23 and is known for being insecure since it transmits data, including
+                - login credentials, in plaintext, making it susceptible to interception and eavesdropping.
+                - Telnet has largely been replaced by SSH for secure remote access.
+                -  *Telnet* 
+                    - Port 23
+                    - Text-based remote access. Insecure.
+                - {{Telnet}} - 23 - TCP - Unsecure remote login
+            - Simple Mail Transfer Protocol (SMTP) - 25
+                - Simple Mail Transfer Protocol (SMTP) 25
+                - Simple Mail Transfer Protocol (SMTP) is the standard protocol for email transmission across
+                - the Internet.
+                - SMTP uses port 25 for sending messages from an email client to an email server or between
+                - servers.
+                - It is used primarily for sending emails, whereas email retrieval is typically handled by
+                - protocols such as POP3 or IMAP.
+                -  *Simple Mail Transfer Protocol (SMTP) (STMPS)* 
+                    - Port 25 (465 for SMTPS)
+                    - Send emails between client and server
+                    - Typically outgoing
+                - {{SMTP}} - 25 - TCP - Send email
+            - Domain Name System (DNS) - 53
+                - Domain Name System (DNS) 53
+                - Domain Name System (DNS) is a hierarchical and decentralized naming system for
+                - computers, services, or other resources connected to the Internet or a private network.
+                - It associates various information with domain names assigned to each of the participating
+                - entities and uses port 53 for queries, which can be sent via TCP or UDP.
+                - DNS translates more readily memorized domain names to the numerical IP addresses
+                - needed for locating and identifying computer services and devices with the underlying
+                - network protocols.
+                -  *Domain Name System (DNS)* 
+                    - Port 53
+                    - Resolves domain names ([www.example.com](http://www.example.com/)) from IP address
+                - {{DNS}} - 53 - UDP/TCP - Name resolution
+            - Dynamic Host Configuration Protocol (DHCP) - 67/68
+                - Dynamic Host Configuration Protocol (DHCP) 67/68
+                - Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on IP
+                - networks whereby a DHCP server dynamically assigns an IP address and other network
+                - configuration parameters to each device on a network.
+                - DHCP operates on UDP ports 67 (server) and 68 (client), facilitating automatic and
+                - centralized management of IP addressing.
+                - It allows devices to join a network and obtain valid IP addresses, subnet masks, gateways,
+                - and DNS server information without manual configuration.
+                -  *Dynamic Host Configuration Protocol (DHCP)* 
+                    - Port 67 (server) / 68 (client)
+                    - Assigns IP addresses to devices on a network
+                - {{DHCP}} - 67/68 - UDP - Dynamic IP assignment
+            - Trivial File Transfer Protocol (TFTP) - 69
+                - Trivial File Transfer Protocol (TFTP) 69
+                - Trivial File Transfer Protocol (TFTP) is a simple, lock-step, file transfer protocol with no
+                - authentication, used for transferring files smaller in size.
+                - It uses UDP port 69 and is typically used for transferring boot files or configurations to
+                - devices in a local network, such as routers and switches.
+                - Due to its simplicity and lack of security features, TFTP is generally used in controlled
+                - environments.
+                -  *Trivial File Transfer Protocol (TFTP)* 
+                    - Port 69
+                    - Insecure FTP using UDP
+                    - Typically used for transferring configs to network devices
+            - Hypertext Transfer Protocol (HTTP) - 80
+                - Hypertext Transfer Protocol (HTTP) 80
+                - Hypertext Transfer Protocol (HTTP) is the foundation of data communication for the World
+                - Wide Web, where it provides a standard for web browsers and servers to communicate.
+                - HTTP operates on TCP port 80 and is used to transfer hypermedia documents, such as
+                - HTML.
+                - It is a stateless protocol, meaning each command is executed independently, without any
+                - knowledge of the commands that came before it.
+                -  *Hypertext Transfer Protocol (HTTP) (HTTPS* 
+                    - Port 80 (443 for HTTPS)
+                    - Web traffic
+                - {{HTTP}} - 80 - {{TCP}} - Web browsing
+            - Network Time Protocol (NTP) - 123
+                - Network Time Protocol (NTP) 123
+                - Network Time Protocol (NTP) is used to synchronize the clocks of computers over a
+                - network.
+                - NTP operates on UDP port 123 and is designed to mitigate the effects of variable latency
+                - over packet-switched, variable latency data networks.
+                - It provides high precision time correction to networked devices, ensuring that the system
+                - time across all devices in the network is closely synchronized.
+                -  *Network Time Protocol (NTP)* 
+                    - Port 123
+                    - Synchronises clocks over a network.
+                    - Ensures all devices have the same time.
+            - Simple Network Management Protocol (SNMP) - 161/162
+                - Simple Network Management Protocol (SNMP) 161/162
+                - Simple Network Management Protocol (SNMP) is used for managing devices on IP
+                - networks.
+                - SNMP operates on UDP port 161 for sending commands from a management station to the
+                - network devices, and devices report back using UDP port 162.
+                - It enables network administrators to manage network performance, find and solve network
+                - problems, and plan for network growth.
+                -  *Simple Network Management Protocol (SNMP)* 
+                    - Port 161 (request) / 162 (trap)
+                    - Monitors and manages devices on a network by querying for for information (device status, usage, etc)
+                    - Useful for troubleshooting network devices like routers
+                - {{SNMP}} - 161/162 - UDP - Network monitoring
+            - Lightweight Directory Access Protocol (LDAP) - 389
+                - Lightweight Directory Access Protocol (LDAP) 389
+                - Lightweight Directory Access Protocol (LDAP) is a protocol for accessing and maintaining
+                - distributed directory information services over an IP network.
+                - LDAP operates on TCP/UDP port 389 and is used for querying and modifying items in
+                - directory service databases like Microsoft Active Directory, OpenLDAP, and other directory
+                - services that follow the X.500 standard.
+                - It provides a mechanism for connecting to, searching, and modifying internet directories.
+                -  *Lightweight Directory Access Protocol (LDAP) (LDAPS)* 
+                    - Port 389 (636 for LDAPS)
+                    - Used to maintain distributed directory information services, such as credentials and permissions
+                - {{LDAP}} - 389 - TCP -Directory services
+            - Hypertext Transfer Protocol Secure (HTTPS) - 443
+                - HTTPS/SSL 443
+                - Hypertext Transfer Protocol Secure (HTTPS), originally using Secure Sockets Layer (SSL), is
+                - the secure version of HTTP, used for secure communication over a computer network.
+                - HTTPS operates on TCP port 443, encrypting the session with SSL to provide privacy and
+                - data integrity between the client and server.
+                - This encryption is critical for online transactions and for securing data in transit.
+                - 
+                - HTTPS/TLS 443
+                - HTTPS, when using Transport Layer Security (TLS), enhances security further compared to
+                - SSL, which it aims to replace.
+                - It operates on the same port (443) and provides secure web browsing by encrypting the data
+                - and ensuring the integrity and security of the data transmitted between browsers and
+                - websites.
+                - TLS is the standard security technology for establishing an encrypted link between web
+                - servers and browsers.
+                - {{HTTPS}} - 443 - {{TCP}} - Secure web
+            - Server Message Block (SMB) - 445
+                - Server Message Block (SMB) 445
+                - Server Message Block (SMB) protocol is used for network file sharing, allowing computers to
+                - read and write files and request services from server programs in a computer network.
+                - SMB operates on TCP port 445 and is used primarily by Windows systems for file sharing,
+                - network browsing, printing services, and inter-process communication.
+                - The use of port 445 helps in direct IP-based communication without the need for NetBIOS
+                - over TCP/IP.
+                -  *Server Message Block (SMB)* 
+                    - Port 445
+                    - Network file sharing protocol that allow applications to read and write files
+                    - Used by printers, Windows networks
+                - {{SMB}} - 445 - TCP - File/print sharing
+            - Syslog - 514
+                - Syslog 514
+                - The syslog command is used to configure and manage system logging, which collects and
+                - stores log messages from network devices.
+                - Sends log messages to a centralized syslog server for monitoring and analysis.
+                - Configures logging levels and destinations to control the type and amount of log data
+                - collected.
+                - Centralizes log management, making it easier to monitor and analyze network activity.
+                - Helps in troubleshooting network issues, identifying security threats, and ensuring
+                - compliance by providing a detailed record of system events.
+                -  *Syslog* 
+                    - Port 514 (UDP)
+                    - Used for sending notification messages from devices (like routers) to a centralised logging server.
+            - Simple Mail Transfer Protocol Secure (SMTPS) - 587
+                - SMTPS 587
+                - SMTPS stands for Secure SMTP, a method for securing SMTP (Simple Mail Transfer Protocol)
+                - communications between email servers and clients.
+                - It uses an encryption layer to enhance the security of data being transferred during email
+                - communications.
+                - This encryption helps ensure that sensitive information, such as email content and user
+                - credentials, is protected from unauthorized interception.
+                - 
+                - SMTPS: SSL vs. TLS
+                - SMTPS utilizes SSL (Secure Sockets Layer) or TLS (Transport Layer Security) as
+                - cryptographic protocols to secure communications.
+                - SSL was developed by Netscape in the 1990s, primarily to ensure privacy, authentication,
+                - and data integrity in Internet communications.
+                - TLS, introduced in 1999, is the successor to SSL, designed to address vulnerabilities in SSL
+                - and improve overall security.
+                - SMTPS typically operates on port 465, distinguishing it from standard SMTP traƯic on ports
+                - 25 or 587.
+            - Lightweight Directory Access Protocol over SSL (LDAPS) - 636
+                - Lightweight Directory Access Protocol (over SSL) (LDAPS) 636
+                - LDAPS (Lightweight Directory Access Protocol over SSL) operates on TCP port 636,
+                - providing a secure method of accessing and maintaining distributed directory information
+                - services over an IP network.
+                - This protocol encrypts LDAP traffic using SSL to prevent unauthorized access to sensitive
+                - information in the directory.
+                - LDAPS is used for secure directory services queries and modifications, ensuring
+                - confidentiality and integrity.
+            - Structured Query Language (SQL) Server - 1433
+                - Structured Query Language (SQL) Server 1433
+                - SQL Server, a relational database management system (RDBMS) developed by Microsoft,
+                - uses TCP port 1433 for client connections.
+                - This port is used for standard communication to and from SQL Servers, handling queries,
+                - transactions, and database operations.
+                - Port 1433 is essential for applications and services that need to access the database stored
+                - on the SQL Server.
+                -  *Structured Query Language (SQL) Server* 
+                    - Port 1433
+                    - SQL Server Database
+            - MySQL 3306
+                - MySQL, a popular open-source RDMS, uses TCP port 3306 for database access.
+                - This port facilitates communication between MySQL clients and servers, allowing for the
+                - management of databases, execution of queries, and retrieval of data.
+                - Port 3306 is the default port for MySQL server connections, essential for applications that
+                - interact with MySQL databases.
+            - Remote Desktop Protocol (RDP) - 3389
+                - Remote Desktop Protocol (RDP) 3389
+                - Remote Desktop Protocol (RDP) is a Microsoft protocol that enables remote connections to
+                - other computers, primarily running Windows operating systems.
+                - It uses TCP port 3389 to provide a user with a graphical interface to another computer over a
+                - network connection.
+                - RDP is widely used for remote administration, remote work, and IT support, offering
+                - encrypted and secure access to remote desktops and applications.
+                -  *Remote Desktop Protocol (RDP)* 
+                    - Port 3389
+                    - Proprietary Microsoft protocol for remote desktop access
+                - {{RDP}} - 3389 - TCP - Remote desktop
+            - Session Initiation Protocol (SIP) - 5060/5061
+                - Session Initiation Protocol (SIP) 5060/5061
+                - Session Initiation Protocol (SIP) is a signaling protocol used for initiating, maintaining,
+                - modifying, and terminating real-time sessions that involve video, voice, messaging, and
+                - other communications applications and services.
+                - SIP is fundamental to the operation of VoIP (Voice over Internet Protocol) systems, enabling
+                - the establishment of call sessions and multimedia distribution.
+                - It operates at the application layer and can use various transport protocols, including TCP
+                - and UDP, typically using port 5060 for unsecured communications and port 5061 for
+                - secured communications (using TLS).
+                -  *Session Initiation Protocol (SIP)* 
+                    - Port 5060 (5061 for SIPS)
+                    - Signalling protocol for maintaining sessions such as voice, video and messaging
+                    - Used in VoIP (Zoom, Skype etc)
+                - {{SIP}} - 5060/5061 - UDP - VoIP signaling
+            - {{IMAP}}  - 143 - TCP - Retrieve email
+            - {{POP3}} - 110 - TCP - Retrieve email
+        - **Internet Protocol (IP) types**
+            - IP Protocol Types
+                - IP protocol types refer to the various protocols used in the layers of the IP suite, each
+                - serving diƯerent purposes in the network communication process.
+                - These protocols define the rules and conventions for routing and transmitting data packets
+                - across networks, ensuring reliable and secure data transfer.
+            - Internet Control Message Protocol (ICMP)
+                - Internet Control Message Protocol (ICMP)
+                - Internet Control Message Protocol (ICMP) is used for sending diagnostic or control
+                - messages between network devices, helping manage and troubleshoot network issues.
+                - ICMP is utilized for error reporting, such as unreachable hosts or network segments, and for
+                - operational queries like echo requests and replies (used by tools like ping).
+                - It operates directly on top of IP, providing feedback about issues in the communication
+                - environment without carrying application data.
+                -  *Internet Control Message Protocol (ICMP)* 
+                    - Used for error reporting and diagnostics (`ping` `traceroute`).
+                    - Does not carry user data
+            - Transmission Control Protocol (TCP)
+                - TCP
+                - Transmission Control Protocol (TCP) is a connection-oriented protocol that provides
+                - reliable, ordered, and error-checked delivery of a stream of bytes between applications
+                - running on hosts communicating via an IP network.
+                - TCP ensures that data packets are transmitted in sequence and without errors, using
+                - acknowledgments, retransmissions, and flow control mechanisms.
+                - This protocol is used for applications where data integrity and delivery assurance are
+                - crucial, such as web browsing, email, and file transfers.
+                -  *Transmission Control Protocol (TCP)* 
+                    - Connection-oriented protocol for reliable delivery of packets with error-checking.
+                    - 3-way handshake: SYN SYN-ACK ACK
+                - {{TCP (Transmission Control Protocol)}} - Connection-oriented - Reliable (ACKs, retransmissions)
+                    - ∙ Slower but accurate
+            - User Datagram Protocol (UDP)
+                - UDP
+                - User Datagram Protocol (UDP) is a connectionless protocol that allows the transmission of
+                - data without establishing a prior connection between the sending and receiving hosts.
+                - UDP provides a fast but less reliable method of communication, as it does not guarantee
+                - packet delivery, order, or error checking.
+                - It is suitable for applications that require speed and eƯiciency over reliability, such as
+                - streaming audio and video or gaming.
+                -  *User Datagram Protocol (UDP)* 
+                    - Connectionless protocol without guarantee for delivery or order.
+                    - Used in streaming, VoIP, gaming
+                - {{UDP (User Datagram Protocol)}} - Connectionless - Unreliable but faster
+                    - ∙ Used in VoIP, video, DNS
+            - Generic Routing Encapsulation (GRE)
+                - Generic Routing Encapsulation (GRE)
+                - Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco that can
+                - encapsulate a wide variety of network layer protocol packet types inside IP tunnels.
+                - GRE creates a virtual point-to-point link to various brands of routers at remote points over
+                - an IP internetwork, enabling the encapsulation of packets from diƯerent protocols, making
+                - it versatile for various networking purposes.
+                - It is commonly used for VPNs and carrying network protocols across networks that do not
+                - natively support them.
+                -  *Generic Routing Encapsulation (GRE)* 
+                    - Cisco tunnelling protocol used for encapsulating packets over different networks.
+                    - Used in VPNs.
+            - Internet Protocol Security (IPSec)
+                - Internet Protocol Security (IPSec)
+                - Internet Protocol Security (IPSec) is a suite of protocols designed to secure IP
+                - communications by authenticating and encrypting each IP packet in a data stream.
+                - IPSec operates in two modes: Transport mode, which encrypts the payload of each packet
+                - but leaves the header untouched, and Tunnel mode, which encrypts both the header and
+                - payload and is used for VPN connections.
+                - It is widely used for securing internet communications and establishing VPNs.
+                - 
+                - **Internet Protocol Security (IPSec)**
+                    - A suite of protocols for securing IP communication
+                - 
+                - Authentication Header (AH)
+                    - Authentication Header (AH)/Encapsulating Security Payload (ESP)
+                    - Authentication Header (AH) is a component of IPSec used for providing connectionless
+                    - integrity and data origin authentication for IP packets and protection against replay attacks.
+                    - Encapsulating Security Payload (ESP) provides:
+                        - o Confidentiality
+                        - o Data-origin authentication
+                        - o Connectionless integrity
+                        - o Anti-replay service (a form of partial sequence integrity)
+                        - o Limited traƯic-flow confidentiality
+                    - While AH provides authentication and integrity, ESP adds encryption to ensure
+                    - confidentiality of the data being transmitted.
+                    - 
+                    -  *Authentication Header (AH)* 
+                        - Port 51
+                        - Integrity and authentication but no encryption
+                    - 
+                - Encapsulating Security Payload (ESP)
+                    -  *Encapsulating Security Payload (ESP)* 
+                        - Port 50
+                        - Encryption, integrity and authentication
+                - Internet Key Exchange (IKE)
+                    - Internet Key Exchange
+                    - IKE, or Internet Key Exchange, is a protocol used to set up a secure, authenticated
+                    - communication channel between two parties.
+                    - It is commonly employed in VPN (Virtual Private Network) environments to establish
+                    - security associations (SAs) that provide the necessary encryption and authentication.
+                    - IKE operates through two phases: Phase 1 establishes the identity of the communication
+                    - parties and sets up a secure channel for further negotiations, and Phase 2 negotiates the SA
+                    - parameters to be used to encrypt data.
+                    - The protocol uses a combination of key exchange mechanisms, encryption algorithms, and
+                    - digital signatures or certificates to ensure that the communications are secure and verified.
+                    -  *Internet Key Exchange (IKE)* 
+                        - Port 500 UDP
+                        - Manages exchange of encryption keys over IPSec tunnels
+            - Traffic types
+                - Unicast
+                    - Unicast
+                    - Unicast is a one-to-one form of communication where data is sent from one source to one
+                    - specific destination identified by a unique IP address.
+                    - It is the most common form of IP communication, used for most internet traffic, including
+                    - web browsing, email, and file transfers.
+                    - Unicast communication ensures that data packets are delivered to a single, specific
+                    - recipient over a network.
+                    -  *Unicast*  
+                        - One-to-one communication between sender and receiver
+                        - E.g. browsers, email
+                    -  *Multicast* 
+                        - One-to-many between sender and subscribers
+                        - Uses class D IP addresses 224.0.0.0-239.255.255.255
+                        - E.g. video conferencing
+                    -  *Anycast* 
+                        - One-to-nearest, where closest responds
+                        - E.g. DNS, CDNs
+                    -  *Broadcast* 
+                        - One-to-all
+                        - Limited to local subnet, not forwarded by routers
+                        - Uses 255.255.255.255 on IPv4
+                - Multicast
+                    - Multicast
+                    - Multicast is a method of communication where data is sent from one or more sources to
+                    - multiple destinations simultaneously over a network, using a specific multicast group
+                    - address.
+                    - Multicast is eƯicient for applications like streaming video or audio, where the same data
+                    - needs to be delivered to multiple recipients, reducing the bandwidth consumption
+                    - compared to sending separate copies of the data to each recipient.
+                    - This approach is used in both IPv4 and IPv6 networks to optimize the delivery of packets to
+                    - multiple destinations.
+                    -  *Multicast* 
+                        - One-to-many between sender and subscribers
+                        - Uses class D IP addresses 224.0.0.0-239.255.255.255
+                        - E.g. video conferencing
+                - Anycast
+                    - Anycast
+                    - Anycast is a network addressing and routing method where data is sent to the nearest or
+                    - best destination as determined by routing protocols, from among multiple potential
+                    - destinations sharing the same address.
+                    - It is used in IPv6 (and to a lesser extent in IPv4) to provide fast and efficient delivery of
+                    - services by directing users to the closest server, commonly used in DNS and CDN (Content
+                    - Delivery Network) services.
+                    - Anycast can improve network performance and availability by automatically routing
+                    - requests to the nearest data center.
+                    - 
+                    - anycast IP delivery mechanism whereby a packet is addressed to a single host from a group sharing the same address.
+                    -  *Anycast* 
+                        - One-to-nearest, where closest responds
+                        - E.g. DNS, CDNs
+                - Broadcast
+                    - Broadcast
+                    - Broadcast is a communication method where a message is sent from one sender to all
+                    - potential receivers within a network segment.
+                    - In IPv4, the broadcast address is used to send data to all devices on a LAN simultaneously,
+                    - such as when a device requests an IP address via DHCP.
+                    - Broadcast is not supported in IPv6; instead, multicast addresses are used for similar
+                    - purposes.
+                    -  *Broadcast* 
+                        - One-to-all
+                        - Limited to local subnet, not forwarded by routers
+                        - Uses 255.255.255.255 on IPv4
+    - **1.5 Compare and contrast transmission media and transceivers.**
+        - **Wireless**
+            - 802.11 standards
+                - The 802.11 standards are a set of protocols for implementing wireless local area network (WLAN)
+                - communication in various frequency bands.
+                - Each version improves upon the previous ones, offering better speed, range, and reliability.
+                - **802.11**
+                    - 802.11 is a family of wifi standards.
+                    - Higher Ghz means shorter range but faster speeds.
+                    - (1999) -  *802.11a*  - 5Ghz - 54Mbps - short range
+                    - (1999) -  *802.11b*  - 2.4Ghz - 11Mbps - longer range
+                    - (2003) -  *802.11g*  - 2.4Ghz - 54Mbps
+                    - (2009) -  *802.11n*  - 2.5/5Ghz - 600Mbps + MIMO
+                    - (2013) -  *802.11ac*  - 5Ghz - 6.93Gbps + MU-MIMO
+                    - (2019) -  *Wifi6 / 802.11.ax*  - 2.5/5Ghz - 9.6Gbps + OFDMA
+                    - (Upcoming) -  *Wifi7 / 802.11be*  - 2.5/5/6Ghz
+                    -  *Multiple-input Multiple-output (MIMO)* 
+                        - Using multiple antennas for better performance
+                    -  *Channel bonding* 
+                        - Combining multiple channels to increase bandwidth
+            - 802.11a
+                - 802.11a operates in the 5 GHz band with a maximum data rate of 54 Mbps.
+                - It oƯers less interference from other devices but has a shorter range compared to 2.4 GHz
+                - standards.
+            - 802.11b
+                - 802.11b operates in the 2.4 GHz band and provides data rates up to 11 Mbps.
+                - It has a longer range and better obstacle penetraƟon but is more susceptible to interference.
+            - 802.11g
+                - 802.11g combines the best of both 802.11a and 802.11b, operating in the 2.4 GHz band with data
+                - rates up to 54 Mbps.
+                - It is backward compaƟble with 802.11b devices.
+            - 802.11n (WiFi 4)
+                - 802.11n, or WiFi 4, increases maximum data rates to 600 Mbps by utilizing mulƟple antennas (MIMO
+                - technology) and operates in both the 2.4 GHz and 5 GHz bands.
+                - It oƯers significant improvements in speed and range.
+            - 802.11ac (WiFi 5)
+                - 802.11ac, or WiFi 5, operates exclusively in the 5 GHz band, offering speeds up to several gigabits
+                - per second (theoretical maximum of 3.46 Gbps) using wider channels, more spatial streams, and
+                - higher modulation.
+                - It greatly enhances network bandwidth and is ideal for high-definition video streaming and high-
+                - speed data transfer.
+            - 
+            - 802.11ax (WiFi 6)
+                - 802.11ax, or WiFi 6, further improves WLAN eƯiciency, especially in crowded areas, by oƯering
+                - higher data rates (theoretical maximum of 9.6 Gbps), better coverage, and reduced power
+                - consumpƟon.
+                - It introduces OFDMA and BSS Coloring to increase efficiency and reduce interference in both the 2.4
+                - GHz and 5 GHz bands.
+                - WiFi 6 is designed to support a larger number of devices and demanding applications like 4K/8K
+                - video streaming, virtual reality, and IoT devices.
+            - 
+            - 802.11 standards
+                - 802.11 standards Specifications developed by IEEE for wireless networking over microwave radio transmission in the 2.4 GHz, 5 GHz, and 6 GHz frequency bands. The Wi-Fi standards brand has six main iterations: a, b, g, Wi-Fi 4 (n), Wi-Fi 5 (ac), and Wi-Fi 6 (ax). These specify different modulation techniques, supported distances, and data rates, plus special features, such as channel bonding, MIMO, and MU-MIMO.
+                - 802.11h Amendment to Wi-Fi standards that defines a Dynamic Frequency Selection (DFS) mechanism to avoid interference with radar and cellular communications in the 5 GHz frequency band.
+                - 802.1p IEEE standard defining a 3-bit (0 to 7) class of service priority field within the 802.1Q format.
+                - 802.1Q Trunking protocols enable switches to exchange data about VLAN
+                - configurations. The 802.1Q protocol is often used to tag frames destined for different VLANs across trunk links.
+                - 802.1X A standard for encapsulating EAP communications over a LAN (EAPoL) or WLAN (EAPoW) to implement port-based authentication.
+            - Cellular
+                - Cellular
+                - Cellular technology refers to the wireless communication method that utilizes a network of cell
+                - sites, each covering a specific area known as a cell.
+                - The fundamental feature of cellular networks is the ability to re-use frequencies to increase the
+                - capacity and coverage of mobile services.
+                - Modern cellular networks are divided into generations: 2G, 3G, 4G, and 5G, each supporting
+                - increased data speeds and connectivity features.
+                - Cellular technology enables a wide range of applications beyond voice calls, including mobile
+                - internet access, video streaming, and the connectivity of IoT (Internet of Things) devices.
+                - Enables mobile devices to talk through cell towers.
+                    -  *Generations* 
+                        - (1980s) -  *1G*  - analog networks, poor security
+                        - (1990s) -  *2G*  - digital, SMS/MMS + GSM + CDMA
+                        - (2000s) -  *3G*  - mobile internet, WCDMA/HSPA
+                        - (2010s) -  *4G LTE*  - broadband (100Mbps-1Gbps)
+                        - (2020s) -  *5G*  - 10Gbps
+                    -  *Global System for Mobile Communication (GSM)* 
+                    -  *Code Division for Multiple Access (CDMA)* 
+                    -  *Long Term Evolution (LTE)* 
+            - Satellite
+                - Satellite
+                - Satellite communicaƟon uses satellites orbiƟng the Earth to relay data, voice, and video across long
+                - distances, including remote and rural areas where other forms of connectivity might be
+                - unavailable.
+                - It provides broadband internet access by communicating with a satellite dish installed at the user's
+                - location, oƯering global coverage.
+                - However, satellite communication can experience latency issues and may be affected by weather
+                - condiƟons.
+                - Long-range wireless networking using orbiting satelites
+                    -  *Geostationary Earth Orbit (GEO)* 
+                        - 35k KM above Earth. Stationary. TV and broadband.
+                    -  *Medium Earth Orbit (MEO)* 
+                        - 2-35k KM, low latency, used for GPS
+                    -  *Low Earth Orbit (LEO)* 
+                        - 500-2000 KM, used for Starlink and Iridium
+        - **Wired**
+            - 802.3 standards
+                - 802.3 Standards
+                - This set of standards, also known as Ethernet, defines the protocols for wired LAN (Local Area
+                - Network) technology, covering aspects like frame formats and physical layer specifications.
+                -  *802.3* 
+                    - IEEE Ethernet standard.
+                    - Uses  *Carrier Sense Multiple Access with Collision Detection (CSMA/CD)*  to manage transmission in half-duplex networks.
+                    - Modern ethernet is mostly full-duplex (no collision)
+                    -  *10BASE-T*  - 10mbps
+                    -  *100BASE-TX*  - Fast Ethernet - 100mbps
+                    -  *1000BASE-T*  - Gigabit Ethernet - 1gbps
+                    -  *10GBASE-T*  - 10gbps
+                    -  *40GBASE-T*  - 40gbps
+                    -  *100GBASE-T*  - 100gbps
+            - Single-mode vs. multimode fiber
+                - Fiber-Optic
+                    - Fiber-optic cabling uses light to transmit data, offering significantly higher speeds and greater
+                    - bandwidth than traditional copper cables.
+                    - It consists of glass or plastic fibers that carry light signals over long distances with minimal loss,
+                    - making it ideal for high-speed data transmission in telecommunications and internet backbone
+                    - infrastructures.
+                - Single-Mode
+                    - Single-mode fiber optic cable is designed for long-distance communicaƟon, using a single strand of
+                    - glass fiber with a small diameter that allows only one mode of light to propagate.
+                    - This design minimizes aƩenuaƟon and dispersion over distances, making it suitable for high-speed,
+                    - high-bandwidth transmissions over lengths of up to several kilometers without the need for signal
+                    - repeaters.
+                    - Single-mode fiber is commonly used in telecommunicaƟons and cable TV networks.
+                    -  *Single-mode fibre* 
+                        - Single beam of light (laser based)
+                        - 100km distance
+                        - Small core 8-10nm
+                        - Used in ISP backbones
+                - Multimode
+                    - Multimode fiber optic cable uses larger diameter fibers that allow mulƟple modes of light to
+                    - propagate simultaneously, making it suitable for short-distance transmission of data.
+                    - This type of fiber is typically used within buildings or in campus networks, supporting data rates at
+                    - shorter distances, usually up to 500 meters for data applicaƟons and up to 2 kilometers for telecom
+                    - applicaƟons.
+                    - Multimode fibers are more aƯordable and easier to work with compared to single mode fibers,
+                    - making them a popular choice for local-area networks (LANs) and other short-range applicaƟons.
+                    -  *Multi-mode fibre* 
+                        - Multiple beams of light (LED based)
+                        - Shorter 400m to 2km distance
+                        - Larger core 50-62.5nm
+                        - Used in LANs and datacenters
+            - Direct attach copper (DAC) cable
+                - Direct Attach Copper
+                - DAC cables are used for short-range connections between networking equipment.
+                - They oƯer a cost-effecƟve, low-power alternative for close-range connectivity.
+                -  *Direct attach copper (DAC)*  
+                    - High-speed, short distance cable with integrated transceivers
+                    - Used in datacenters and high-performance computing
+                    -  *Passive DAC*  - short distance, low power
+                    -  *Active DAC*  - longer distance, signal boosting
+                    - Common in 10G, 25G, 40G and 100G Ethernet
+                - o Twinaxial cable
+                    - Twinaxial
+                    - Twinaxial cable, or Twinax, consists of two inner conductors surrounded by a common shielding,
+                    - used mainly in short-range, highspeed differenƟal signaling applicaƟons.
+                    - It is often used in data center and enterprise networking environments for connections such as 10
+                    - Gigabit Ethernet over short distances.
+                    - Twinax cables oƯer a cost-effecƟve soluƟon for high-speed data transmission with lower latency and
+                    - better noise immunity than twisted pair cables.
+            - Coaxial cable
+                - Coaxial/RG-6
+                - Coaxial cable, specifically RG-6, is a type of electrical cable consisting of a central conductor,
+                - insulating layer, metallic shield, and plastic jacket, used for transmiƫng television, satellite, and
+                - broadband internet signals.
+                - RG-6 is thicker and has beƩer shielding compared to its predecessors, making it less suscepƟble to
+                - interference and aƩenuaƟon, ideal for high-frequency applications like cable TV and internet
+                - services.
+                - It is commonly used in residenƟal and commercial installaƟons for its durability and high-quality
+                - signal transmission.
+                -  *Coaxial cable* 
+                    - Used for cable TV, broadband internet
+                    - Centre conductor, insulating layer, shielding, outer jacket
+                    -  *RG-6*  - modern broadband, satellite TV
+                    -  *RG-59*  - older, low frequency
+                    -  *RG-11*  - longer distance coaxial runs
+                    - Uses F-Type connectors
+            - Cable speeds
+                - Cable Speeds
+                - Cable speeds vary by type, impacting network performance; Ethernet cables like Cat 5, 5e, 6, and
+                - 6a support speeds from 100 Mbps to 10 Gbps over varying distances.
+                - Coaxial cables are used for broadband internet, supporting high-speed data transmission, while
+                - fiber optic cables (single mode and multimode) offer the highest speeds, up to 100 Gbps, over long
+                - distances.
+                - Key factors aƯecting cable speed include cable quality, installation, and environmental
+                - interference.
+                - **Cable speeds**
+                    - **Twisted-Pair Ethernet (Copper)**
+                        -  *Cat5e*  - 1Gbps (100m)
+                        -  *Cat6*  - 10Gbps (55m)
+                        -  *Cat6a*  - 10Gbps (100m)
+                        -  *Cat7/Cat8*  - 40-100Gbps (short)
+            - Plenum vs. non-plenum cable
+                - Plenum Rating
+                - These terms describe the fire resistance of cables.
+                - Plenum-rated cables are designed to resist fire and emit low smoke when exposed to flame, making
+                - them safe for use in the air spaces of buildings.
+                - Riser-rated cables are designed to prevent fire from traveling between floors through vertical shafts
+                - or risers.
+                - Non-plenum cables are less expensive but produce more toxic fumes when burned and are typically
+                - used where they are not exposed to circulating air ducts.
+                -  *Plenum vs non-plenum cable* 
+                    -  *Plenum cable*  is
+                        - Used in plenum spaces (spaces designed for airflow)
+                        - Fire-resistant, low-smoke jacket
+                        - Required in air-ducts and HVAC
+                        - More expensive
+                    -  *Non-plenum cable*  (riser)
+                        - Less fire-resistant
+                        - Used in walls and riser shafts (vertical runs)
+                        - Cheaper but restricted
+        - **Transceivers**
+            - Transceivers/Media Converters
+            - Transceivers are devices that can both transmit and receive data, often used in networking to
+            - interface with cables of diƯerent types, such as converting electrical signals to optical signals for
+            - fiber optic cables.
+            - Media converters are a type of transceiver that convert data signals from one media type to another
+            - (e.g., copper cable to fiber optic cable), enabling the integration of diƯerent network technologies.
+            - These devices are crucial for extending network distances, improving network flexibility, and
+            - supporting diverse networking environments.
+            - 
+            - **Transceivers**
+                - A transceiver performs signal conversion
+            - 
+            - Protocol
+                - Transceivers: Protocol
+                - Transceivers must support the network protocols used in the network infrastructure, such as
+                - Ethernet or Fibre Channel.
+                - Using the correct transceiver protocol ensures reliable data transmission, minimizes errors, and
+                - supports the desired network speed and performance.
+                - o Ethernet
+                    - Ethernet
+                    - Ethernet is a widely used networking technology that governs how data is transmiƩed over LANs,
+                    - supporting a variety of speeds ranging from 10 Mbps to 100 Gbps.
+                    - It uses a combination of twisted pair and fiber optic cables to connect devices within a network,
+                    - applying a method of network access known as CSMA/CD (Carrier Sense Multiple Access with
+                    - Collision Detection).
+                    -  *Ethernet* 
+                        - Converts electrical signals (copper) to optical signals (fibre)
+                        - SFP/QSFP/BASE-T (twisted-pair)
+                - o Fibre Channel (FC)
+                    - Fibre Channel
+                    - Fibre Channel is a high-speed network technology primarily used for transmitting data between
+                    - computer devices at data rates of up to 16 Gbps (and higher) in storage area networks (SANs).
+                    - It is known for its reliability and speed, making it suitable for connecting servers to shared storage
+                    - devices and for transferring large volumes of data.
+                    -  *Fibre Channel (FC)* 
+                        - High-speed network protocol for storage area networks (SANs)
+                        - 1-128Gbps+
+                        - Uses fibre optic transceivers
+                        - Can be used over optical fibre or copper (Twinax/DAC)
+            - Form factors
+                - o Small form-factor pluggable (SFP)
+                    - Small Form-Factor Pluggable (SFP)
+                        - The Small Form-factor Pluggable (SFP) is a compact, hot-pluggable network interface module used
+                        - for both telecommunication and data communications applications.
+                        - It supports speeds up to 1 Gbps and is used to connect a network device to a fiber opƟc or copper
+                        - networking cable.
+                        - SFP modules allow for easy network upgrades and maintenance due to their plug-and-play
+                        - capability.
+                    -  *Small form-factor pluggable (SFP)* 
+                        - Hot-swappable transceiver module for fibre and ethernet
+                        - SFP (1Gbps)
+                        - SFP+ (10Gbps)
+                        - SFP28 (25Gbps)
+                    - Enhanced Form-Factor Pluggable (SFP+)
+                        - The Enhanced Form-factor Pluggable (SFP+) is an upgraded version of the SFP that supports data
+                        - rates up to 10 Gbps.
+                        - It is used for high-speed network connecƟons on network switches, routers, and other networking
+                        - equipment.
+                        - SFP+ modules provide a cost-effecƟve method to achieve 10 Gigabit Ethernet connectivity over fiber
+                        - or copper cabling.
+                - o Quad small form-factor pluggable (QSFP)
+                    - Quad Small Form-Factor Pluggable (QSFP)
+                        - The Quad Small Form-factor Pluggable (QSFP) is a compact, hot-pluggable transceiver used for
+                        - network communicaƟons, capable of supporting four times the bandwidth of SFP+ modules, hence
+                        - the name "Quad".
+                        - 
+                        - It supports data rates of up to 40 Gbps (4x10 Gbps) and is commonly used in data centers and high-
+                        - performance compuƟng environments for high-density applications.
+                        - 
+                        - QSFP modules are ideal for high-speed network infrastructures requiring large amounts of data
+                        - throughput.
+                    -  *Quad small form-factor pluggable (QSFP)* 
+                        - Larger module, supports multiple lanes
+                        - QSFP (40Gbps)
+                        - QSFP28 (100Gbps)
+                        - QSFP-DD (400Gbps)
+                        - Used in data-centers and backbones
+                    - Enhanced Quad Small Form-Factor Pluggable (QSFP+)
+                        - The Enhanced Quad Small Form-factor Pluggable (QSFP+) is an evoluƟon of the QSFP interface,
+                        - supporting data rates up to 40 Gbps or more.
+                        - 
+                        - It provides increased bandwidth and port density over SFP+ modules, making it suitable for high-
+                        - speed data transmissions in cloud computing, data centers, and high-performance computing
+                        - 
+                        - applications.
+                        - QSFP+ modules allow for eƯicient network scalability and flexibility in accommodating growing
+                        - data demands.
+        - **Connector types**
+            - Connector Types
+                - Connector types are the physical interfaces used to connect cables to devices, ensuring proper
+                - electrical contact and signal transmission across network components.
+            - Subscriber connector (SC)
+                - Subscriber Connector (SC)
+                - The Subscriber Connector (SC) is a fiber optic connector with a push-pull latching mechanism,
+                - ensuring a secure and stable connection.
+                - It features a square-shaped design and is widely used in single-mode fibers for telecommunications,
+                - CATV, and network applications.
+                - SC connectors are appreciated for their excellent performance, low-cost, and ease of handling.
+                -  *Subscriber connector (SC)* 
+                    - Square-shaped fibre optic connector
+                    - Push-pull design
+                    - Used in telecom and datacenters
+            - Local connector (LC)
+                - Local Connector (LC)
+                - The Local Connector (LC) is a small formfactor fiber optic connector used for single-mode and
+                - mulƟmode fiber cables, featuring a compact, square design with a push-pull latching mechanism.
+                - It is widely used in telecommunications and data communications for its high-density connectivity
+                - and ease of use, especially in environments where space is limited.
+                - LC connectors oƯer low insertion loss and high precision, making them suitable for high-speed data
+                - networks and telecommunicaƟons applicaƟons.
+                -  *Local connector (LC)* 
+                    - Smaller fibre optic connector than SC
+                    - More common in modern fibre networking
+                    - Used in SFP modules, switches and SANs
+            - Straight tip (ST)
+                - Straight Tip (ST)
+                - The Straight Tip (ST) connector is a fiber opƟc connector with a bayonet-style locking mechanism,
+                - designed for quick and secure connections.
+                - It is commonly used in multimode networks, such as campus applicaƟons, local area networks, and
+                - security systems.
+                - ST connectors are known for their durability and reliable performance in a variety of opƟcal fiber
+                - environments.
+                - MulƟ-fiber Push On (MPO) is a type of fiber opƟc connector designed for high-density applications,
+                - capable of connecƟng mulƟple fibers (usually 12 or 24) in a single connector.
+                - MPO connectors are commonly used in data centers and telecommunications networks to facilitate
+                - rapid deployment and high bandwidth over fiber opƟc cabling.
+                - MPO enables efficient, scalable fiber opƟc networks that support high-speed data transmission.
+            - Multi-fiber push on (MPO)
+                - Multi-fiber Push On
+                - Multi-fiber Push On (MPO) is a type of fiber optic connector designed for high-density applicaƟons,
+                - capable of connecting multiple fibers (usually 12 or 24) in a single connector.
+                - MPO connectors are commonly used in data centers and telecommunicaƟons networks to facilitate
+                - rapid deployment and high bandwidth over fiber optic cabling.
+                - MPO enables eƯicient, scalable fiber optic networks that support high-speed data transmission.
+                -  *Multi-fibre push on (MPO)* 
+                    - Used in high-density fibre connections
+                    - Supports 12, 24, 48 fibres
+                    - Used in 100G/400G backbone networks
+            - Registered jack (RJ)11
+                - RJ11
+                - The RJ11 connector is a standard telephone interface used primarily for connecting telephone
+                - equipment.
+                - It typically features a 6-position 4-contact (6P4C) configuration, supporting up to four wires, and is
+                - commonly used for single-line or two-line telephone connections.
+                - RJ11 is widely recognized for its use in residenƟal and business landline telephone setups.
+                -  *Registered jack (RJ)11* 
+                    - 4-6 pin connector
+                    - Used in telephone lines and DSL connections
+            - RJ45
+                - RJ45
+                - The RJ45 connector is a standard for Ethernet and other network cables, characterized by an 8-
+                - position 8-contact (8P8C) configuration.
+                - It is used to connect computers, routers, switches, and other network devices for Local Area
+                - Networks (LANs) and is known for supporting high-speed data transmission.
+                - RJ45 connectors are essenƟal for wired networking applicaƟons, providing reliable connections for
+                - internet and intranet communications.
+                -  *RJ45* 
+                    - 8P8C connect (8 pins 8 conductors)
+                    - Used for Ethernet (Cat5e, etc...)
+            - F-type
+                - F-Type Connector
+                - The F-type connector is commonly used for cable and satellite television, broadband internet, and
+                - radio frequency applications.
+                - It screws onto the male port of an RG-6 or RG-59 coaxial cable, ensuring a secure connection for
+                - transmitting video and audio signals.
+                - F-type connectors are valued for their low cost, simplicity, and effecƟveness in shielding against
+                - electromagneƟc interference.
+                -  *F-Type* 
+                    - Coaxial cable connector
+                    - Used in cable TV, satellite TV
+            - Bayonet Neill–Concelman (BNC)
+    - **1.6 Compare and contrast network topologies, architectures, and types.**
+        - **Network Topologies** 
+            - Network topologies describe the layout or arrangement of elements (links, nodes, etc.) of a
+            - computer network.
+            - There are several types, each with unique configuraƟons and characterisƟcs, influencing the
+            - network's performance, reliability, and scalability.
+        - **Mesh**
+            - Mesh
+            - Mesh topology is a network setup where each node connects directly to an arbitrary number of
+            - other nodes, creating a network with no central connecƟng point.
+            - This topology ensures high availability and redundancy because if any one link fails, data can be
+            - rerouted through multiple alternative paths.
+            - It is commonly used in wireless networks and for applications requiring high resilience and
+            - uninterrupted communicaƟon.
+            -  *Mesh* 
+                - A mesh network is a topology where each device connects to multiple other nodes, providing redundancy and fault tolerance
+                -  *Full Mesh* 
+                    - Every node connects to directly to every other node.
+                    - Used in critical infrastructure (financial networks, military)
+        - **Hybrid**
+            - Hybrid
+            - Hybrid topology combines two or more different topologies to form a resultant topology that
+            - leverages the advantages and mitigates the disadvantages of the constituent topologies.
+            - It oƯers flexibility in network design and can be tailored to meet specific needs or constraints of an
+            - organization.
+            - Hybrid topologies are scalable and adaptable, making them suitable for large networks or those with
+            - complex requirements.
+            -  *Hybrid* 
+                - A combination of multiple topologies
+                - Used in large networks with variable requirements
+        - **Star/hub and spoke**
+            - Star/Hub-and-Spoke
+            - In a star or hub-and-spoke topology, all nodes are connected to a central node or hub.
+            - This setup simplifies network management and troubleshooƟng but creates a single point of failure, as
+            - the failure of the central hub can bring down the enƟre network.
+            - It is widely used in LAN environments due to its simplicity and ease of setup.
+            -  *Star/hub and spoke* 
+                - Devices connect to a central hub
+                - Low fault tolerance
+                - Used in LANs
+        - **Spine and leaf**
+            - Spine and Leaf
+            - Spine and leaf architecture is a two-layer network topology that is highly scalable and minimizes
+            - latency by ensuring that every leaf switch (access layer) is separated by no more than two switches
+            - from any other leaf switch.
+            - In this topology, leaf switches form the access layer where devices are connected, while spine
+            - switches serve as the backbone for data transport, connecting all leaf switches without
+            - interconnecting with each other.
+            - This design is particularly favored in modern data centers and cloud compuƟng environments, where
+            - rapid and reliable data access and network redundancy are crucial.
+            - 
+        - **Point to point**
+            - Point-to-Point
+            - This topology involves a direct connecƟon between two networking devices, typically using a single
+            - cable or wireless link.
+            - It is mainly used for dedicated connecƟons, such as those between a main office and a branch
+            - oƯice, or between two pieces of network equipment.
+            -  *Point to point* 
+                - Direct connection between two lines.
+                - Leased lines (T1, E1, Fibre circuits)
+                - Data-centre interconnects
+        - **Three-tier hierarchical model**
+            - Three-tier Hierarchical Model
+            - The three-tier hierarchical network model is a structured approach to network design that breaks
+            - the network into three distinct layers.
+            - Each layer is designed to serve a specific purpose, optimizing scalability, performance, and
+            - maintainability.
+            - 
+            - **Three-tier hierarchical model**
+                - A structured network design model used in enterprise networks that separates functions into three layers.
+            - 
+            - Core
+                - Core Layer
+                - The core layer is the backbone of the network, handling high-speed packet switching across the
+                - entire network.
+                - It is responsible for fast and reliable rouƟng of data and should have high redundancy and fault
+                - tolerance to prevent downtime.
+                -  *Core* 
+                    - High-speed backbones that connects distribution layers
+                    - Optimised for fast packet switching, not security
+            - Distribution
+                - Distribution Layer
+                - The distribution layer acts as the intermediary between the core and access layers, managing
+                - routing, filtering, and WAN access.
+                - It aggregates the data received from the access layer switches before it is transmitted to the core
+                - layer for routing to the final destination.
+                -  *Distribution* 
+                    - Aggregates traffic from access switches before forwarding to the core
+                    - Implements routing, QoS, security and policy enforcement
+                    - Uses Layer 3 switches
+            - Access
+                - Access Layer
+                - The access layer is the network’s point of entry for devices and end users, connecting them to the
+                - network.
+                - This layer includes switches and access points that provide connecƟvity to desktop PCs, laptops,
+                - and other network devices.
+                -  *Access* 
+                    - Connects to end-user devices (PCs, phones)
+                    - Uses Layer 2 switches with VLAN support
+                    - Implements PoE for devices like VoIP phones and wireless APs.
+        - **Collapsed core**
+            - Collapsed Core Architecture
+            - Collapsed core architecture merges the core and distribution layers into a single layer, simplifying
+            - the network design and reducing hardware costs.
+            - This approach is ideal for small to medium sized networks where managing separate layers is
+            - unnecessary.
+            - The architecture facilitates easier management and maintenance, while enhancing performance by
+            - reducing latency between the network's core and distribution functions.
+            - **Collapsed core**
+                - Simplified model that merges the Core and Distribution layers.
+                - Layer 3 switches are used with high-speed interconnects.
+        - **Traffic flows**
+            - **Traffic flows**
+                - Traffic flows in predictable patterns
+            - North-south
+                - North-South TraƯic
+                - This describes the flow of network traƯic between the data center and the outside world (e.g., the
+                - internet or other data centers), focusing on inbound and outbound traƯic patterns.
+                - It typically involves client-to-server communication, where clients access services hosted in the
+                - data center.
+                -  *North-South* 
+                    - Traffic between data-centres and external networks.
+                    - E.g. user accessing a website or cloud service from outside the network
+            - East-west
+                - East-West TraƯic
+                - Refers to the traƯic flow within the data center, especially in modern data centers with heavily
+                - virtualized environments.
+                - This includes server-to-server, server-to-storage, and VM-to-VM traƯic, highlighting the importance
+                - of eƯicient internal networking to support high volumes of internal data exchange.
+                -  *East-west* 
+                    - Traffic between devices within the network
+                    - E.g. server to server communication
+    - **1.7 Given a scenario, use appropriate IPv4 network addressing.**
+        - **Public vs. private**
+            - **Public vs Private**  
+                -  *Public addresses* 
+                    - Assigned by the IANA (Internet Assigned Numbers Authority) and must be globally unique.
+                    - Requires network address translation (NAT) for private networks to access the internet.
+            - Automatic Private IP Addressing (APIPA)
+                - Automatic Private IP Addressing (APIPA)
+                - Automatic Private IP Addressing (APIPA) is a feature of Windows operating systems that
+                - automaƟcally assigns a unique IP address from the range 169.254.0.1 to 169.254.255.254 to a
+                - computer when it fails to obtain an IP address from a DHCP server.
+                - APIPA allows for automaƟc, ad hoc network communicaƟon within a single subnet when a DHCP
+                - server is not available, but it does not provide internet access.
+                - This mechanism ensures that devices can sƟll communicate locally even in the absence of manual
+                - or DHCP-based IP configuration.
+                -  *Automatic Private IP Addressing (APIPA)* 
+                    - Range: `169.254.0.0` (subnet mask `255.255.0.0`)
+                    - Assigned when DHCP is unavailable
+                    - Allows communication but no internet access
+            - RFC1918
+                - RFC1918
+                - RFC1918 is a standard that specifies the ranges of IP addresses reserved for private networks,
+                - preventing them from being routed on the public internet.
+                - The reserved IP address ranges include 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255,
+                - and 192.168.0.0 to 192.168.255.255.
+                - These addresses are intended for use in private networks, such as home, school, and enterprise
+                - LANs, allowing for internal network traffic without consuming public IP addresses.
+                -  *Private addresses (RFC1918)* 
+                    - Reserved for internal networks and aren't routable from the internet.
+                    - Divided into range classes
+            - Loopback/localhost
+                - Loopback/Localhost
+                - The loopback address is a special IP address that is used to test network software and interfaces on a
+                - local device.
+                - For IPv4, the loopback address is 127.0.0.1, and for IPv6, it is `::1.` 
+                - Sending data to the loopback address allows a computer to communicate with itself, which is useful for
+                - testing and troubleshooting network configurations and software.
+                -  *Loopback/localhost* 
+                    - `127.0.0.0` - `127.255.255.255`
+                    - `127.0.0.1` is used for self-testing
+                    - Does not leave the device
+        - **Subnetting**
+            - **Subnetting**
+                - Subnetting divides an IP network into smaller logical networks
+                - Improves performance by limiting unnecessary broadcast traffic
+                - Improves security as each subnet has its own firewall, and allow finer-grained event notifications
+            - Variable Length Subnet Mask (VLSM)
+                - Classless (Variable-Length Subnet Mask) VLSM
+                - Classless Inter-Domain Routing (CIDR), involving Variable-Length Subnet Mask (VLSM), is a method
+                - for allocating IP addresses and routing that allows for flexible subnetting beyond the tradiƟonal
+                - class-based IP addressing.
+                - With VLSM, subnets can have different sizes, allowing for eƯicient allocation of IP addresses
+                - according to the specific needs of each subnet, reducing the waste of IP addresses.
+                - This approach supports more efficient use of IP address space, accommodating a wide range of
+                - subnet sizes within the same network by allowing each subnet to use a mask length that is
+                - appropriate for its size and requirements.
+                -  *Variable Length Subnet Mask (VLSM)* 
+                    - Allows subnets of different sizes within the same network
+                    - Reduces waste of IP addresses
+                    - Used in modern routing protocols (OSPF, EIGRP, BGP)
+            - Classless Inter-domain Routing (CIDR)
+                - Classless Inter-Domain Routing (CIDR) Notation
+                - CIDR notaƟon is a method for specifying IP addresses and their associated rouƟng prefix that allows
+                - for variable-length subnet masking (VLSM), eƯectively replacing the classful network design.
+                - CIDR notation uses a slash ("/") followed by a number to specify the length of the prefix or subnet
+                - mask (e.g., 192.168.1.0/24), which indicates that the first 24 bits of the IP address are the network
+                - portion.
+                - This method significantly increases the eƯiciency of IP address allocation, allowing for more flexible
+                - and efficient use of IP address space across the internet.
+                -  *Classless Inter-domain Routing (CIDR)* 
+                    - Replaces class-based addressing
+                    - Uses prefix notation (`/24`, `/16`)
+                    - E.g. `192.168.1.0/24` (256 addresses, `255.255.250.0` mask)
+                    - Prevents IPv4 exhaustion
+        - **IPv4 address classes**
+            - Class A
+                - Class A
+                - Class A addresses are designed for very large networks, with the first octet ranging from 1 to 126,
+                - providing a single network bit and 24 host bits in the address structure.
+                - This allows for 126 networks and approximately 16.7 million hosts per network, making Class A
+                - addresses suitable for governments and very large organizaƟons.
+                - The default subnet mask for Class A is 255.0.0.0.
+                -  *Class A* 
+                    - `1.0.0.0` - `126.255.255.255`
+                    - Subnet mask: `255.0.0.0/8`
+                    - 16 million hosts
+                    - Large organisations
+            - Class B
+                - Class B
+                - Class B addresses are intended for medium-sized networks, with the first octet ranging from 128 to
+                - 191.
+                - They offer 14 network bits and 16 host bits, allowing for approximately 16,384 networks with up to
+                - 65,534 hosts each.
+                - The default subnet mask for Class B is 255.255.0.0, making it suitable for universiƟes, large
+                - corporaƟons, and regional ISPs.
+                -  *Class B* 
+                    - `128.0.0.0` - `191.255.255.255`
+                    - Subnet mask: `255.255.0.0/16`
+                    - 65,536 hosts
+                    - Medium sized networks
+            - Class C
+                - Class C
+                - Class C addresses are allocated for small networks, with the first octet ranging from 192 to 223.
+                - These addresses provide 21 network bits and 8 host bits, accommodating up to 2,097,152 networks
+                - with up to 254 hosts each.
+                - The default subnet mask for Class C is 255.255.255.0, ideal for small businesses and local area
+                - networks (LANs).
+                -  *Class C* 
+                    - `192.0.0.0` - `223.255.255.255`
+                    - Subnet mask: `255.255.255.0/24`
+                    - 256 hosts per network
+                    - Small businesses, home networks
+            - Class D
+                - Class D
+                - Class D addresses are reserved for multicast groups and do not define hosts and networks in the
+                - tradiƟonal sense.
+                - The first octet ranges from 224 to 239, and these addresses are used for one-to-many
+                - communications, where one sender transmits data to mulƟple receivers.
+                - Class D does not have a default subnet mask as it is used exclusively for mulƟcast broadcasƟng.
+                -  *Class D* 
+                    - `224.0.0.0` - `239.255.255.255`
+                    - Multicast traffic
+                    - Not assigned to hosts
+            - Class E
+                - Class E
+                - Class E addresses are reserved for experimental use and are not used in public networks.
+                - The first octet ranges from 240 to 255, and these addresses are intended for future or experimental
+                - purposes.
+                - Like Class D, Class E addresses do not have a designated network or host portion and do not have a
+                - default subnet mask.
+    - **1.8 Summarize evolving use cases for modern network environments.**
+        - **Software-defined network (SDN) and software-defined wide area network (SD-WAN)**
+            - Software-defined networking
+                - Software-defined networking (SDN) is an innovative networking paradigm that decouples the
+                - network control and forwarding functions, enabling network management through software
+                - applications.
+            - SD-WAN
+                - SD-WAN is a specific application of software defined networking (SDN) technology applied to WAN
+                - connections, which are used to connect enterprise networks—including branch offices and data
+                - centers—over large geographic distances.
+                - This technology enhances business eƯiciency by dynamically rouƟng traffic across the optimal path
+                - using a centralized control function, ensuring high performance and reliability for critical
+                - applications.
+                - SD-WAN provides significant advantages such as cost reduction, increased network agility,
+                - improved uptime, and the ability to secure and optimize internet connectivity and cloud
+                - architecture.
+            - 
+            - Application aware
+                - Application Aware
+                - SD-WAN technology intelligently idenƟfies applications and can prioritize traƯic based on business
+                - requirements, ensuring critical applications have the bandwidth and path reliability they need.
+                -  *Application-aware* 
+                    - SD-WAN can prioritise traffic based on application type, ensuring QoS
+            - Zero-touch provisioning
+                - Zero-Touch Provisioning
+                - This feature allows for the remote deployment of network devices with minimal manual intervention.
+                - Network devices can automaƟcally download configuraƟon seƫngs from a central location,
+                - simplifying branch deployments.
+                -  *Zero-touch provisioning* 
+                    - New network devices automatically configure themselves when connected
+            - Transport agnostic
+                - Transport Agnostic
+                - SD-WAN is flexible with the type of connectivity it uses, whether it's MPLS, broadband, LTE, or a
+                - combination, allowing for cost-eƯective and reliable internet access from diƯerent service
+                - providers.
+                -  *Transport agnostic* 
+                    - Works over MPLS, broadband, LTE, satellite etc
+            - Central policy management
+                - Central Policy Management
+                - Centralized management enables network administrators to set policies that manage and configure
+                - all SD-WAN devices across the network from a single interface, enhancing security and eƯiciency.
+                -  *Central policy management* 
+                    - Network policies are defined centrally then pushed to all devices
+                    - Enhances security and compliance
+        - **Virtual Extensible Local Area Network (VXLAN)**
+            - VXLAN
+            - VXLAN (Virtual Extensible Local Area Network) is a network virtualizaƟon technology that enhances
+            - the scalability of large-scale cloud computing environments.
+            - It extends Layer 2 segments over an underlying Layer 3 network, enabling the creation of a large
+            - number of virtualized LANs.
+            - 
+            - **Virtual Extensible Local Area Network (VXLAN)**
+                - Layer 2 over Layer 3 encapsulation technology that enables large-scale virtual networks
+            - 
+            - Data center interconnect (DCI)
+                - DCI
+                - VXLAN is particularly eƯective for Data Center Interconnect (DCI) by enabling the stretching of
+                - Layer 2 networks across geographically dispersed data centers.
+                - This capability allows for seamless mobility of virtual machines between data centers without
+                - changing underlying network configurations.
+                -  *Data centre interconnect (DCI)* 
+                    - Allows multiple data-centres to operate as one network
+            - Layer 2 encapsulation
+                - Layer 2 Encapsulation
+                - VXLAN uses Layer 2 encapsulation to encapsulate Ethernet frames within UDP packets.
+                - This encapsulation allows VXLAN to create a logical network for VMs across diƯerent physical
+                - networks, providing scalability beyond the tradiƟonal 4096 VLANs limit.
+                -  *Layer 2 encapsulation* 
+                    - Encapsulates Ethernet frames as UDP datagrams
+                    - Provides 10 million+ VLANs compared to traditional 4096 limit
+        - **Zero trust architecture (ZTA)**
+            - Zero Trust
+            - Zero Trust is a security model based on the principle of "never trust, always verify."
+            - It requires strict idenƟty verificaƟon for every person and device trying to access resources on a
+            - private network, regardless of whether they are sitting within or outside of the network perimeter.
+            - Zero Trust minimizes potential attack vectors by treaƟng all users as potenƟal threats and enforcing
+            - strict access controls and not assuming trust based on network location.
+            - 
+            - **Zero trust architecture (ZDA)**
+                - A security model where no user device is automatically trusted, even inside a network
+            - 
+            - Policy-based authentication
+                - Policy-Based Authentication
+                - In a Zero Trust framework, policy-based authentication requires all users, both internal and
+                - external, to be authenƟcated and conƟnuously validated for security configuration and posture
+                - before being granted access to data and applications.
+                - Authentication policies can include multifactor authentication (MFA), biometrics, and behavioral
+                - analytics to ensure that only legitimate users gain access.
+                -  *Policy-based authentication* 
+                    - Access is granted based on user identity, location, device type and risk level
+            - Authorization
+                - Authorization in Zero Trust Architecture
+                - Authorization in ZTA is dynamic and strictly enforced before access to resources is allowed.
+                - This process is context-aware, taking into account the user’s identity, location, device health,
+                - service or workload, data classification, and anomalies.
+                - Access to resources is granted on a per-session basis, ensuring that the access rights of users are
+                - constantly evaluated and adjusted based on the latest security intelligence and context.
+                -  *Authorisation* 
+                    - Users and devices only get access they need based on policies
+            - Least privilege access
+                - Least Privilege
+                - The principle of least privilege requires that users, systems, and programs are granted only the
+                - minimum levels of access — or permissions — needed to perform necessary tasks.
+                - Implementing least privilege minimizes the potenƟal damage from accidental or malicious actions
+                - by limiƟng access rights for users to the bare minimum necessary to perform their work.
+                -  *Least Privilege Access* 
+                    - Limits access to only necessary resources, reducing attack surface
+        - **Secure Access Secure Edge (SASE)/Security Service Edge (SSE)**
+            - SASE/SSE
+                - SASE (Secure Access Service Edge) and SSE (Security Service Edge) are emerging frameworks that
+                - combine network security functions with WAN capabiliƟes to support the dynamic secure access
+                - needs of organizations' distributed workforces and cloud-first strategies.
+                - **Secure Access Secure Edge (SASE) / Security Service Edge (SSE)**
+                    -  *SASE*  combines networking (SD-WAN) and security services (firewall, Zero Trust, CASB, etc) into a cloud-based solution
+                    -  *SSE*  focuses only on security services
+                    - Provides secure remote access, content filtering and data loss protection
+            - 
+            - Secure Access Service Edge (SASE)
+                - SASE integrates comprehensive WAN services and security functions directly into the network
+                - fabric.
+                - This provides secure network connectivity and access to resources regardless of location.
+            - Security Service Edge (SSE)
+                - SSE focuses more on the security aspects, centralizing various security services like secure web
+                - gateways, cloud access security brokers (CASB), and zero trust network access (ZTNA).
+                - These services are provided in the cloud to ensure secure access and data protection across all
+                - environments.
+        - **Infrastructure as code (IaC)**
+            - Infrastructure as Code
+            - Infrastructure as Code (IaC) is a key practice in cloud computing and DevOps that involves
+            - managing and provisioning computing infrastructure through machine-readable definiƟon files,
+            - rather than physical hardware configuration or interactive configuration tools.
+            - It enables IT infrastructure to be automaƟcally managed, monitored, and provisioned through code,
+            - improving consistency, eƯiciency, and reducing manual errors.
+            - Automates network and infrastructure provisioning using code-based configurations
+            - **Automation** 
+                - Automation in IaC
+                - Automation is at the core of IaC, enabling rapid and consistent environment setups.
+                - This approach reduces human errors and increases eƯiciency in deploying infrastructure.
+                - **Automation**
+                - **Playbooks/templates/reusable tasks** 
+                    - Playbooks, Templates, and Reusable Tasks
+                    - IaC utilizes playbooks, templates, and reusable tasks to define and orchestrate the steps needed for
+                    - infrastructure setup, modification, and management.
+                    - These elements are critical for ensuring that infrastructure deployment is repeatable and scalable.
+                    -  *Playbooks/templates/resuable tasks* 
+                        - Predefined configurations to automate deployments
+                        - Ansible, Puppet, Chef, Terraform
+                - **Configuration drift/compliance** 
+                    - Configuration Drift and Compliance
+                    - IaC helps prevent configuraƟon driŌ, which occurs when the environment’s current state deviates
+                    - from its intended state due to manual changes or updates.
+                    - IaC also aids in maintaining compliance with defined standards and policies by automating
+                    - configurations and deployments.
+                    -  *Configuration drift/compliance* 
+                        - Detects and fixes deviations from baseline configurations
+                - **Upgrades** 
+                    - Upgrades
+                    - With IaC, upgrades to infrastructure can be managed systematically through code revisions.
+                    - This method ensures that upgrades are less disrupƟve and that all changes are version controlled and
+                    - reversible.
+                    -  *Upgrades* 
+                        - Automates patching and software updates
+                - **Dynamic inventories** 
+                    - Dynamic Inventories
+                    - IaC supports the use of dynamic inventories, where infrastructure resources are automaƟcally
+                    - discovered and managed based on real-time data.
+                    - This flexibility is essential for managing environments that need to adjust quickly to changing
+                    - demands or configurations.
+                    -  *Dynamic Inventories* 
+                        - Keeps track of network and cloud resources dynamically
+            - **Source control** 
+                - Source Control in IaC
+                - Source control is integral to the Infrastructure as Code paradigm, providing a system for tracking
+                - changes, collaborating, and maintaining the integrity of code that defines infrastructure.
+                - **Version control** 
+                    - Version Control
+                    - Version control systems keep track of every modificaƟon to the code in a special kind of database.
+                    - If a mistake is made, developers can turn back the clock and compare earlier versions of the code to
+                    - help fix the mistake while minimizing disruption to all team members.
+                - **Central repository** 
+                    - Central Repository
+                    - A central repository in source control systems acts as the single source of truth for all code
+                    - changes, allowing team members to collaborate effectively, accessing and updating code securely
+                    - and eƯiciently.
+                - **Conflict identification** 
+                    - Conflict Identification
+                    - Source control systems automaƟcally detect conflicts when multiple team members make changes to
+                    - the same part of the code.
+                    - This feature is crucial for prevenƟng overwrites and ensuring that all changes are reconciled before code
+                    - is merged.
+                - **Branching**
+                    - Branching
+                    - Branching is a feature of source control that allows developers to diverge from the main line of
+                    - development and continue to work independently without aƯecting others’ work.
+                    - This is particularly useful for developing new features, fixing bugs, or experimenting in a controlled
+                    - environment.
+        - **IPv6 addressing** 
+            - IPv6 Addressing
+                - IPv6 is the most recent version of the Internet Protocol designed to replace IPv4, oƯering a vastly
+                - expanded address space, improved security features, and enhanced functionality.
+                - It addresses the limitations of IPv4, including the exhaustion of available addresses, by using 128-
+                - bit addresses to support a virtually unlimited number of devices on the internet.
+                - IPv6 introduces several new concepts and functionalities to improve rouƟng efficiency, simplify
+                - network configuraƟon, and enhance security.
+            - **IPv6 Addressing**
+                - Successor to IPv4, designed to solve address exhaustion and support modern networks.
+            - **Mitigating address exhaustion**
+                - Mitigating Address Exhaustion
+                - IPv6 addresses the limitations of IPv4, including address exhaustion, by providing an almost
+                - limitless pool of IP addresses.
+                - This ensures the scalable growth of the internet, accommodating an increasing number of devices
+                - and users globally.
+                -  *Mitigating address exhaustion* 
+                    - IPv6 provides 340 undecillion addresses (2^128)
+            - **Compatibility requirements**
+                - Compatibility Requirements
+                - Transitioning to IPv6 involves compatibility strategies to ensure that IPv6 and IPv4 systems can
+                - operate concurrently.
+                - This is necessary because the internet will operate in a mixed IPv4 and IPv6 environment for many
+                - years.
+                - **Compatibility requirements**
+                - **Tunneling** 
+                    - Tunneling
+                    - Tunneling in IPv6 is a method used to transmit IPv6 packets over an existing IPv4 network
+                    - infrastructure.
+                    - This allows for the coexistence of both protocols during the transiƟon period from IPv4 to IPv6.
+                    - Tunneling works by encapsulating IPv6 packets within IPv4 packets, enabling them to be transported
+                    - across IPv4 networks as if they were IPv4 packets.
+                    -  *Tunnelling* 
+                        - Encapsulating IPv6 packets in IPv4 to maintain compatibility
+                - **Dual stack** 
+                    - Dual Stack
+                    - Dual stack refers to a network configuraƟon where devices run both IPv4 and IPv6 protocols
+                    - simultaneously.
+                    - This allows the devices to communicate over both types of networks, facilitaƟng a gradual transiƟon
+                    - from IPv4 to IPv6.
+                    - In a dual stack environment, network services and applicaƟons can operate over IPv4 or IPv6, depending
+                    - on the destination address availability and network conditions.
+                    -  *Dual stack* 
+                        - Running both protocols simultaneously
+                - **NAT64** 
+                    - NAT64
+                    - NAT64 is a network address translation technology that facilitates communicaƟon between IPv6 and
+                    - IPv4 devices.
+                    - It translates IPv6 addresses into IPv4 addresses and vice versa, enabling interoperability in
+                    - environments not yet fully IPv6-capable.
+                    -  *NAT64* 
+                        - Translates IPv6 traffic to communicate with IPv4-only devices
+- **2.0 Network Implementation 20%**
+    - **2.1 Explain characteristics of routing technologies.**
+        - Routing
+        - Routing is the process of selecƟng paths in a network along which to send network traƯic.
+        - Routing is performed by devices known as routers, which use routing tables and algorithms to
+        - determine the most efficient path for data packets to travel from their source to their destination.
+        - **Static routing**
+            - Static Routing
+            - Static routing involves manually configuring routers with specific paths to reach network
+            - destinations.
+            - It is simple to implement in small networks but lacks the flexibility and scalability of dynamic routing,
+            - as it does not automatically adjust to network changes.
+        - **Dynamic routing**
+            - Dynamic Routing
+            - Dynamic routing automaƟcally adjusts the paths used to send data through the network.
+            - Routers communicate with each other using dynamic rouƟng protocols, sharing information about
+            - network topology and traƯic conditions.
+            - This allows the network to adapt to changes, such as link failures or congestion, ensuring data takes
+            - the most eƯicient route.
+            - **Border Gateway Protocol (BGP)**
+                - Border Gateway Protocol
+                - BGP is the protocol underlying the global routing system of the internet.
+                - It is used for routing data between autonomous systems (ASes), which are networks managed by
+                - single organizations.
+                - BGP is crucial for ensuring that data can be routed across the internet, regardless of the path it
+                - needs to take between source and destination.
+            - **Enhanced Interior Gateway Routing Protocol (EIGRP)**
+                - Enhanced Interior Gateway Routing Protocol
+                - EIGRP is a Cisco proprietary advanced distance-vector routing protocol that combines features of
+                - both distance-vector and link-state protocols.
+                - It provides rapid convergence and efficiency with less bandwidth usage and supports multiple
+                - network layer protocols.
+            - **Open Shortest Path First (OSPF)**
+                - Open Shortest Path First
+                - OSPF is a link-state routing protocol that provides fast, efficient path selection using the shortest
+                - path first (SPF) algorithm.
+                - It scales well to larger network architectures and supports complex topologies by dividing them into
+                - areas to optimize routing.
+        - **Route selection**
+            - Route Selection
+            - Route selection is a critical process in network routing that determines the best path for data to
+            - travel from source to destination.
+            - It uses specific criteria such as administrative distance, prefix length, and metric to choose the
+            - most eƯicient route.
+            - **Administrative distance**
+                - Administrative Distance
+                - Administrative distance is a metric used by routers to rank the trustworthiness of routes received
+                - from diƯerent routing protocols.
+                - Lower values indicate more preferred routes, helping routers decide which routes to use when
+                - multiple paths to the same destination exist from diƯerent sources.
+            - **Prefix length**
+                - Prefix Length
+                - The prefix length in networking specifies the number of conƟguous bits of the network mask that are
+                - set to 1.
+                - It eƯectively divides the IP address into the network portion and the host portion.
+                - In IP addressing, prefix length is denoted by a slash followed by the number, such as /24 in IPv4 or
+                - /64 in IPv6, indicating that 24 and 64 bits, respectively, are used for the network portion.
+                - This notation is an integral part of CIDR and helps in defining network boundaries and available
+                - hosts within those networks, enhancing both routing eƯiciency and address allocation.
+            - **Metric**
+                - Metric
+                - The metric is a value associated with routes, used by routing protocols to evaluate the cost of path
+                - traversal.
+                - Lower metric values typically indicate more desirable routes.
+                - Different routing protocols may use various factors, such as bandwidth, delay, hop count, or even
+                - custom values, to calculate this metric.
+        - **Address translation**
+            - **NAT**
+                - Network Address Translation (NAT)
+                - Network Address Translation (NAT) is a method used to modify network address informaƟon in IP
+                - packet headers while in transit across a traƯic routing device, typically for the purpose of remapping
+                - one IP address space into another.
+                - NAT allows mulƟple devices on a private network to access the internet using a single public IP
+                - address, enhancing security by hiding internal IP addresses from the external network.
+                - This process is essential for conserving the limited number of available public IP addresses and for
+                - allowing private network communication externally.
+            - **Port address translation (PAT)**
+                - Port Address Translation (PAT)
+                - Port Address Translation (PAT), often referred to as "NAT overload", is a type of NAT that allows
+                - multiple devices on a local network to be mapped to a single public IP address but with a different
+                - port number for each session.
+                - PAT enables multiple connections from diƯerent devices to be distinguished from one another
+                - using a single public IP address, significantly increasing the scalability of NAT by allowing thousands
+                - of simultaneous connections through a few public IPs.
+                - This technique is widely used in small office and home office (SOHO) networks to allow mulƟple
+                - devices to share a single or a few public IP addresses for Internet connectivity.
+        - **First Hop Redundancy Protocol (FHRP)**
+            - VRRP/FHRP
+            - Virtual Router Redundancy Protocol (VRRP) allows for automaƟc assignment of available routers to
+            - participating hosts, ensuring conƟnuous network availability even if one router fails.
+            - First Hop Redundancy Protocol (FHRP) is a general term for protocols like VRRP that provide the
+            - ability to automaƟcally failover to a backup router in case of the primary router failure, minimizing
+            - downtime and maintaining network resilience.
+        - **Virtual IP (VIP)**
+            - Virtual IP (VIP)
+            - A Virtual IP (VIP) address is an IP address that is not tied to a specific physical network interface on a
+            - device.
+            - It is used to provide redundancy and load balancing for services hosted on mulƟple servers, allowing
+            - several servers to share the same IP address.
+            - VIPs are commonly used in network load balancers and failover configuraƟons to ensure continuous
+            - availability and scalability of critical applications and services.
+        - **Subinterfaces**
+            - Subinterface
+            - A subinterface in networking is a virtual interface created by dividing a single physical interface into
+            - multiple logical interfaces.
+            - This is commonly used in scenarios where multiple VLANs (Virtual Local Area Networks) exist on a
+            - single router or switch interface to manage traƯic segregation and support various services or
+            - protocols over a single physical link.
+            - Subinterfaces are treated like separate interfaces, allowing for individual configuraƟon seƫngs such
+            - as IP addresses, access control policies, and routing configurations.
+            - This method enhances network flexibility and eƯiciency, enabling more detailed traƯic
+            - management and security enforcement without requiring additional hardware.
+    - **2.2 Given a scenario, configure switching technologies and features.**
+        - **Virtual Local Area Network (VLAN)**
+            - VLAN
+            - A VLAN is a subgroup within a network that combines a group of devices from multiple physical LAN
+            - segments, allowing them to communicate as if they were on the same physical LAN.
+            - This segmentation enhances network management and security by isolating broadcast domains in a
+            - layer 2 network.
+            - **VLAN database**
+                - VLAN Database
+                - The VLAN database is where VLAN configuraƟons are stored on a network device, such as a switch.
+                - This database includes information like VLAN IDs and associated properties, enabling the switch to
+                - organize and manage network traƯic accordingly.
+            - **Switch Virtual Interface (SVI)**
+                - Switch Virtual Interface
+                - An SVI is a virtual interface on a switch that provides Layer 3 processing for VLANs.
+                - It allows the switch to route traƯic between VLANs by assigning IP addresses to VLAN interfaces,
+                - essentially enabling inter-VLAN rouƟng on layer 2 switches.
+        - **Interface configuration**
+            - Interface Configuration
+            - Interface configuration involves seƫng various parameters on network device interfaces to optimize
+            - performance and functionality.
+            - These settings can include VLAN assignments, link aggregation, and physical properties like speed
+            - and duplex mode.
+            - **Native VLAN**
+                - Native VLAN
+                - The Native VLAN is the default VLAN on a trunk port that carries untagged traffic.
+                - It is essential for ensuring that untagged traffic from older devices that don't support VLAN tagging
+                - is still routed correctly.
+            - **Voice VLAN**
+                - Voice VLAN
+                - A Voice VLAN is designed to prioritize and separate voice traffic from other types of data traƯic on
+                - the network.
+                - This specialization ensures quality of service (QoS) for voice over IP (VoIP) communications,
+                - reducing latency, jitter, and packet loss for critical voice communications.
+            - **802.1Q tagging**
+                - Port Tagging/802.1Q
+                - Port tagging, based on the IEEE 802.1Q standard, is a method of inserƟng a VLAN idenƟfier into
+                - Ethernet frames to distinguish between diƯerent VLANs on a trunk link.
+                - This allows multiple VLANs to share a single physical connection, enabling efficient use of network
+                - resources and traƯic segregation.
+            - **Link aggregation**
+                - Link Aggregation
+                - Port aggregation involves combining multiple network ports into a single group, increasing the
+                - bandwidth and providing redundancy for higher data throughput and reliability.
+                - It allows for the consolidaƟon of multiple links between switches or between switches and servers,
+                - enhancing the overall network capacity and fault tolerance.
+            - **Speed**
+                - Speed
+                - Speed denotes the data transfer rate of a network connection, typically measured in megabits per
+                - second (Mbps) or gigabits per second (Gbps).
+                - Configuring port speed ensures compatibility with connected devices and optimizes network
+                - performance.
+            - **Duplex**
+                - Duplex
+                - Duplex refers to the communication mode of a network connection.
+                - Full duplex allows simultaneous two-way communication, while half duplex permits data
+                - transmission in one direction at a time.
+                - Full duplex increases network eƯiciency, especially in high-traƯic environments.
+        - **Spanning tree**
+            - Spanning Tree Protocol
+            - The Spanning Tree Protocol (STP) helps prevent network loops in a network's Ethernet topology by
+            - creating a spanning tree that logically blocks redundant paths.
+            - If a network link fails, STP recalculates the paths and unblocks necessary links to ensure network
+            - traƯic can still be routed effecƟvely, maintaining network reliability and performance.
+        - **Maximum transmission unit (MTU)**
+            - Maximum Transmission Unit (MTU)
+            - The Maximum Transmission Unit (MTU) is the largest size of a packet or frame that can be sent in a
+            - packet- or frame-based network such as the Internet.
+            - MTU sizes are variable, dependent on the physical medium and network protocol, with a common
+            - MTU for Ethernet being 1500 bytes.
+            - Exceeding the MTU can result in the fragmentaƟon of packets, which can decrease network
+            - eƯiciency and increase latency.
+            - **Jumbo frames**
+                - Jumbo Frames
+                - Jumbo frames refer to Ethernet frames larger than the standard maximum of 1500 bytes, typically
+                - up to 9000 bytes.
+                - Using jumbo frames can reduce overhead and improve performance in high-throughput networks,
+                - but all network devices must support this feature to avoid fragmentation.
+    - **2.3 Given a scenario, select and configure wireless devices and technologies.**
+        - **Channels**
+            - Channels
+            - WiFi channels are subdivisions of the frequency bands used for wireless communication, allowing
+            - multiple networks to operate simultaneously without interference.
+            - The availability and allowed channels can vary by country, subject to regulatory impacts that
+            - dictate the specific channels and power levels that can be used.
+            - **Channel width**
+                - Channel Width
+                - Channel width refers to the frequency span of a wireless channel.
+                - Wider channels (e.g., 40 MHz, 80 MHz) offer more bandwidth, which can increase data transmission
+                - speeds but may also increase the likelihood of interference in congested areas.
+            - **Non-overlapping channels**
+                - Non-Overlapping Channels
+                - Non-overlapping channels are channels that do not interfere with each other and are crucial in
+                - environments with multiple wireless access points.
+                - For instance, in 2.4 GHz Wi-Fi, channels 1, 6, and 11 are commonly used in the US because they do
+                - not overlap.
+            - **Regulatory impacts**
+                - Regulatory Impacts
+                - Regulatory impacts refer to the rules and regulations set by governmental or internaƟonal bodies
+                - that govern the use of wireless frequencies and channels to prevent interference between different
+                - communication systems.
+                - These regulations aƯect the availability of certain frequencies and channels in diƯerent regions,
+                - impacting the design and deployment of wireless networks.
+                - Compliance with these regulations ensures that wireless networks operate within the legal spectrum
+                - allocaƟons and use approved power levels, minimizing interference with other devices and services.
+                - **802.11h**
+                    - 802.11h
+                    - 802.11h is a standard that enhances 802.11a by adding support for dynamic frequency selection
+                    - (DFS) and transmit power control (TPC) to comply with European regulations for 5 GHz WLANs.
+                    - This helps in avoiding interference with radar and satellite communicaƟons, which also operate in the
+                    - same frequency range.
+        - **Frequency options**
+            - Frequency Options in Wireless Networking
+            - Wireless networks operate across multiple frequency bands: 2.4 GHz for broad coverage and
+            - device compatibility, 5 GHz for higher data speeds and reduced congestion, and the newly
+            - introduced 6 GHz for even greater capacity and speed in dense environments.
+            - Band steering technology enhances network eƯiciency by automatically moving devices to the
+            - optimal frequency band, thus improving performance and reducing interference.
+            - **2.4GHz**
+                - 2.4GHz
+                - The 2.4GHz band is widely used for wireless networking, offering a good balance between range and
+                - bandwidth.
+                - It can penetrate walls and solid objects more eƯectively than higher frequencies, making it suitable
+                - for covering larger areas.
+                - However, it is more prone to interference from other devices, such as microwaves, Bluetooth
+                - devices, and other WiFi networks, due to its crowded spectrum.
+            - **5GHz**
+                - 5GHz
+                - The 5GHz band provides faster data rates at shorter distances compared to 2.4GHz and is less likely
+                - to experience interference from other household devices.
+                - It supports more non-overlapping channels, reducing congestion and improving network
+                - performance.
+                - The trade-oƯ is a shorter range and less eƯective penetraƟon through walls and obstacles, making it
+                - ideal for high-bandwidth applications in smaller, less obstructed spaces.
+            - **6GHz**
+                - 6GHz
+                - The introduction of the 6GHz band marks a significant expansion in bandwidth for wireless
+                - networks, eƯectively doubling the spectrum available compared to the 5GHz band.
+                - This increase supports higher data rates, lower latency, and more simultaneous connections,
+                - making it ideal for high-demand applications and environments.
+                - The 6GHz band is particularly beneficial for next-generaƟon Wi-Fi technologies like WiFi 6E, which
+                - are designed to take full advantage of this increased capacity and performance.
+            - **Band steering**
+                - Band Steering
+                - Band steering is a network management technology that automaƟcally detects wireless devices
+                - capable of dual-band operaƟons and steers them to the less congested 5 GHz or 6 GHz band.
+                - This process helps to balance the network load, maximize throughput, and improve overall wireless
+                - performance by minimizing interference found more commonly in the 2.4 GHz band.
+                - By opƟmizing the distribuƟon of devices across available bands, band steering enhances the
+                - eƯiciency and reliability of wireless networks, especially in areas with high network density.
+        - **Service set identifier (SSID)**
+            - Service Set Identifier
+            - The Service Set Identifier (SSID) is the name assigned to a wireless network.
+            - All devices attempting to connect to a particular wireless network must use this name to access it,
+            - serving as a basic form of network identification and security.
+            - **Basic service set identifier (BSSID)**
+                - BSSID
+                - The BSSID is a unique idenƟfier that serves as the MAC address for a wireless access point (AP) and is
+                - used to differentiate one AP within a larger network or between multiple networks.
+                - It is essential in environments where mulƟple access points are deployed, as it helps client devices
+                - identify and connect to the specific physical device providing the network service.
+                - Since BSSIDs operate at the MAC address level, they are crucial for low-level network functions such
+                - as association and authentication processes within a WiFi network.
+            - **Extended service set identifier (ESSID)**
+                - ESSID
+                - An ESSID, also known as a Network Name, is used to idenƟfy a set of interconnected access points as
+                - a single network in larger WiFi deployments.
+                - Unlike the BSSID, which identifies individual access points, the ESSID is shared among all APs in an
+                - Extended Service Set (ESS) to allow seamless connectivity for client devices as they move between
+                - APs.
+                - The use of ESSID facilitates the creation of large, scalable wireless networks, providing conƟnuous
+                - connecƟvity across different physical locations within the covered area, enhancing user mobility
+                - and network eƯiciency.
+        - **Network types**
+            - Wireless Network Types
+            - Wireless network types vary based on configuration, usage, and structure.
+            - Understanding these differences is crucial for deploying effective wireless solutions tailored to
+            - specific needs and environments.
+            - **Mesh networks**
+                - Mesh Networks
+                - Mesh networks consist of nodes that connect directly and dynamically to as many other nodes as
+                - possible.
+                - This configuraƟon creates multiple pathways for data to travel between points, enhancing reliability and
+                - redundancy.
+                - Mesh networks are self-healing and scalable, making them ideal for large areas like smart ciƟes and
+                - IoT applicaƟons.
+            - **Ad hoc**
+                - Ad Hoc Networks
+                - Ad hoc networks are decentralized and do not rely on a pre-existing infrastructure.
+                - Nodes within an ad hoc network communicate directly without the use of a router or a network
+                - server, making them suitable for temporary setups in situations where quick deployment is
+                - necessary, such as emergency response or military operations.
+            - **Point to point**
+                - Point-to-Point Networks
+                - Point-to-point networks establish a direct connecƟon between two wireless devices.
+                - This type of network is commonly used for linking two locaƟons in a WAN or providing a dedicated
+                - pathway for data transmission, ensuring consistent and reliable connectivity.
+            - **Infrastructure**
+                - Infrastructure Networks
+                - Infrastructure networks rely on fixed routers or access points that manage traƯic to and from
+                - wireless devices.
+                - This is the most common type of network setup for residential and commercial internet
+                - connections, providing stable and controlled connectivity, with the access points serving as the
+                - hub for all wireless communication in the network.
+        - **Encryption**
+            - Encryption
+            - Encryption is crucial in wireless networking to secure data transmissions against unauthorized
+            - access and interception.
+            - It involves converƟng data into a coded format that can only be accessed and read by devices with
+            - the correct decryption key.
+            - **Wi-Fi Protected Access 2 (WPA2)**
+                - WPA2
+                - WPA2 is a security protocol developed to secure wireless computer networks.
+                - It uses Advanced Encryption Standard (AES) encryption and provides substantial improvements in
+                - security over its predecessor, WPA, by requiring stronger encryption methods and ensuring data
+                - integrity.
+            - **WPA3**
+                - WPA3
+                - WPA3 is the latest security protocol for wireless networks, introduced to address vulnerabilities
+                - found in WPA2 and provide enhanced security measures.
+                - It improves upon WPA2 by offering features like individualized data encryption, protection from
+                - brute-force attacks, and easier connection options for devices without a display.
+        - **Guest networks**
+            - Guest Networks
+            - Guest networks are separate access networks provided by businesses or institutions to allow visitors
+            - limited internet access without exposing the main network.
+            - They help maintain network security by isolaƟng guest user traffic from critical internal resources.
+            - **Captive portals**
+                - Captive Portals
+                - 
+                - Captive portals are web pages that appear automaƟcally when a user connects to a public or semi-
+                - public Wi-Fi network, requiring interaction before network access is granted.
+                - 
+                - They are commonly used in guest networks to manage access through authentication, terms of
+                - service agreements, or payment information.
+        - **Authentication**
+            - Authentication in Wireless Networks
+            - Authentication is a criƟcal security process in wireless networks, ensuring that only authorized
+            - devices can connect.
+            - It verifies the idenƟƟes of devices attempting to connect, using various methods to prevent
+            - unauthorized access.
+            - **Pre-shared key (PSK) vs. Enterprise**
+                - Pre-shared Key vs. Enterprise Authentication
+                - Pre-shared Key (PSK): This method involves a simple, shared key known to all users of the network,
+                - commonly used in home and small office environments.
+                - It offers ease of setup but lower security as the key is shared among users.
+                - Enterprise Authentication: Uses a more secure approach by employing a RADIUS server to manage
+                - each user's authentication individually.
+                - This method is suited for larger organizations, providing stronger security through individual
+                - credentials and enhanced control over network access.
+        - **Antennas**
+            - **Omnidirectional vs. directional**
+                - Directional
+                - Directional antennas focus the signal in a specific direcƟon, oƯering longer range and improved
+                - signal strength in the targeted area.
+                - They are suitable for point-to-point connections or when the wireless signal needs to be directed
+                - over a long distance or to avoid interference.
+                - Omnidirectional
+                - Omni-directional antennas radiate and receive signals in all direcƟons equally, making them ideal
+                - for covering a broad area from a central location.
+                - They are commonly used in home and office Wi-Fi setups where uniform coverage is needed.
+        - **Autonomous vs. lightweight access point**
+            - Autonomous Access Point
+            - Autonomous Access Points: These are standalone units that handle all their operations and
+            - configurations independently, without the need for centralized control.
+            - Each autonomous AP is a self-contained router, performing all the tasks of a router including
+            - broadcasting SSIDs, serving as the DHCP server, and managing security protocols.
+            - Ideal for smaller networks or remote locations without centralized management.
+            - Lightweight Access Point
+            - Lightweight Access Points: Lightweight APs operate under the control of a centralized network
+            - controller, typically a wireless LAN controller (WLC).
+            - These APs offload processing of real-time decision-making and user data broadcasting to the WLC,
+            - allowing for easier management and scalability.
+            - Suitable for larger networks where centralized control can provide significant advantages in
+            - performance and administration.
+            - Autonomous vs. Lightweight Access Points
+            - Autonomy: Autonomous Access Points operate independently, managing all aspects of
+            - networking—from security to data routing—on their own.
+            - Ideal for straightforward, smaller network environments where individual management of
+            - each AP is feasible.
+            - Centralized Control: Lightweight Access Points function under the supervision of a Wireless LAN
+            - Controller (WLC), which centralizes critical decisions and policy enforcement.
+            - This setup is crucial for larger networks, ensuring uniform security practices and facilitating
+            - easier scalability and management.
+            - Dependency: Autonomous APs do not require any external systems to function, making them robust
+            - and flexible in varied settings.
+            - In contrast, Lightweight APs depend on a continuous connection to a central controller,
+            - without which they cannot operate eƯectively.
+    - **2.4 Explain important factors of physical installations.**
+        - **Important installation implications**
+            - Important Installation Implications
+            - Proper planning of physical installations is crucial for network performance and scalability.
+            - The selection of locations for network components like IDFs and MDFs aƯects accessibility,
+            - maintenance, and future expansion capabilities.
+            - **Locations**
+                - Selecting Locations for Network Installations
+                - The choice of location for network installations impacts signal quality, network speed, and system
+                - reliability.
+                - Considerations include environmental factors, distance to users, and compliance with safety
+                - regulations to ensure optimal network function and longevity.
+                - **Intermediate distribution frame (IDF)**
+                    - Intermediate Distribution Frame (IDF)
+                    - An IDF serves as a secondary hub in network infrastructure, positioned to reduce the distance data
+                    - must travel between the MDF and end users.
+                    - It is typically located on each floor or secƟon of a building to handle local network traƯic, enhancing
+                    - performance and reducing latency.
+                - **Main distribution frame (MDF)**
+                    - Main Distribution Frame (MDF)
+                    - The MDF is the primary hub of a network's cabling system, where incoming service providers' lines
+                    - meet the internal network.
+                    - It should be centrally located to minimize cable lengths and facilitate easy access for configuration
+                    - and troubleshooting, ensuring robust network management and scalability.
+            - **Rack size**
+                - Rack Size
+                - Selecting the appropriate rack size is crucial for accommodating networking equipment and
+                - ensuring efficient use of space.
+                - Factors to consider include the number of devices, future expansion needs, and available physical
+                - space in the installation area.
+            - **Port-side exhaust/intake**
+                - Port-side Exhaust/Intake
+                - Proper ventilation is essential to prevent overheaƟng and maintain opƟmal performance of
+                - networking equipment.
+                - Positioning devices to ensure adequate airflow and considering port-side exhaust/intake
+                - configurations can help dissipate heat eƯectively and prolong equipment lifespan.
+            - **Cabling**
+                - Cabling
+                - Cabling plays a critical role in network connectivity, carrying data between devices and
+                - infrastructure components.
+                - Proper cable management, including the use of patch panels and fiber distribution panels, ensures
+                - organization, accessibility, and ease of maintenance.
+                - **Patch panel**
+                    - Patch Panels
+                    - Patch panels serve as centralized points for connecƟng and managing network cables, facilitating
+                    - easy troubleshooting and reconfiguration.
+                    - They help streamline cable management, reduce clutter, and provide a structured approach to
+                    - cable organization within the rack.
+                - **Fiber distribution panel**
+                    - Fiber Distribution Panels
+                    - Fiber distribution panels are used to terminate and distribute fiber optic cables within the network
+                    - infrastructure.
+                    - They ensure efficient rouƟng of fiber connections, minimize signal loss, and provide a centralized
+                    - location for managing fiber connections.
+            - **Lockable**
+                - Lockable Cabinets
+                - Lockable cabinets oƯer enhanced security by restricƟng physical access to networking equipment
+                - and sensitive data.
+                - They help prevent unauthorized tampering or theft, safeguarding the integrity and confidentiality of
+                - the network infrastructure.
+        - **Power**
+            - **Uninterruptible power supply (UPS)**
+                - Uninterruptible Power Supply (UPS)
+                - An Uninterruptible Power Supply (UPS) provides emergency power to a load when the input power
+                - source or mains power fails.
+                - A UPS differs from an auxiliary or emergency power system in that it provides near instantaneous
+                - protection from input power interruptions by supplying energy stored in batteries or a flywheel.
+            - **Power distribution unit (PDU)**
+                - Power Distribution Units (PDUs)
+                - Power Distribution Units (PDUs) are devices designed to distribute electric power to various
+                - components within a network or data center.
+                - PDUs can range from simple power strips to complex units providing remote monitoring and control
+                - over multiple power outlets.
+            - **Power load**
+                - Power Management in Network Installations
+                - EƯective power management is crucial for maintaining network reliability and operaƟonal efficiency.
+                - Proper planning ensures that all network components receive stable and sufficient power,
+                - preventing downtime and equipment damage.
+                - Managing Power Load
+                - Calculating the power load is essential to determine the total power requirements of all network
+                - equipment in the installation.
+                - Adequate power provisioning helps in balancing loads, optimizing power usage, and planning for
+                - future capacity needs without overloading circuits.
+            - **Voltage**
+                - Voltage Considerations
+                - Different network devices may require different voltage levels; thus, understanding voltage
+                - requirements is vital for compatibility and safety.
+                - Ensure that power supplies and backup systems are correctly configured to handle the specific
+                - voltage needs of the equipment, minimizing the risk of electrical issues and maximizing
+                - performance.
+        - **Environmental factors**
+            - Environmental Factors in Network Installations
+            - Environmental conditions significantly impact the longevity and efficiency of network equipment.
+            - Managing factors such as humidity, temperature, and fire suppression is crucial to ensure stable
+            - and reliable network operation.
+            - **Humidity**
+                - Humidity Control
+                - Proper humidity levels are essential to prevent corrosion and staƟc electricity buildup, which can
+                - damage network components.
+                - Maintaining relative humidity within a specified range (typically 45-55%) helps protect sensitive
+                - electronic equipment and ensures optimal performance.
+            - **Fire suppression**
+                - Fire Suppression Systems
+                - Integrating eƯicient fire suppression systems within network environments is vital for protecƟng
+                - hardware against fire damage.
+                - These systems should be designed to be non-damaging to electronic equipment, often using gas or
+                - clean agent extinguishers rather than water-based solutions.
+            - **Temperature**
+                - Temperature Management
+                - Consistent temperature control is critical to avoid overheaƟng or cold-related malfunctions in
+                - network equipment.
+                - The recommended temperature for most networking environments is between 18°C and 27°C (64°F
+                - and 81°F), with acƟve cooling soluƟons to maintain this range.
+- **3.0 Network Operations 19%**
+    - **3.1 Explain the purpose of organizational processes and procedures.**
+        - **Documentation**
+            - Common Documentation
+            - Common documentation in networking provides visual and textual records essential for the design,
+            - management, and troubleshooting of network infrastructures.
+            - These documents are crucial for ensuring clarity and consistency across IT and network teams.
+            - **Physical vs. logical diagrams**
+                - Physical Network Diagram
+                - A physical network diagram illustrates the physical connecƟons between network devices such as
+                - routers, switches, and firewalls, as well as their physical locaƟons.
+                - This diagram helps in understanding the layout of the network hardware and facilitates
+                - troubleshooƟng and network maintenance.
+                - Logical Network Diagram
+                - A logical network diagram illustrates how data flows within a network, showing the interconnecƟons
+                - between devices, subnets, and other network components without detailing the physical
+                - connections.
+                - It focuses on illustraƟng the architecture and protocols operating within the network, helping in
+                - understanding routing, IP addressing, and network segmentation.
+            - **Rack diagrams**
+                - Rack Diagram
+                - A rack diagram provides a detailed view of the equipment mounted in server racks, including servers,
+                - switches, routers, and other networking devices.
+                - This visualization aids in space management, airflow planning, and the organization of physical
+                - assets within data centers or server rooms.
+            - **Cable maps and diagrams**
+                - Cable Maps/Diagrams
+                - Cable maps and diagrams are essential tools for documenƟng the physical and logical layout of
+                - network cables and equipment.
+                - They provide a clear visual representaƟon that aids in installation, troubleshooting, and future
+                - upgrades by detailing connections, pathways, and network topology.
+                - Maintaining accurate and up-to-date diagrams ensures efficient network management and quick
+                - resolution of issues.
+            - **Network diagrams**
+                - Network Diagrams
+                - Network diagrams are crucial for visualizing the structure and components of a network, facilitating
+                - understanding, management, and troubleshooting.
+                - They can represent physical connections (Layer 1), data link configurations (Layer 2), and logical
+                - pathways (Layer 3).
+                - **Layer 1**
+                    - Layer 1 Diagrams - Physical Layer
+                    - Layer 1 diagrams focus on the physical components of the network, such as cabling, devices, and
+                    - geographic locations.
+                    - They are essential for planning physical network deployments and for managing the physical
+                    - connections between network devices.
+                - **Layer 2**
+                    - Layer 2 Diagrams: Data Link Layer
+                    - Layer 2 diagrams detail how switches, bridges, and other data link layer devices interact and the
+                    - paths that Ethernet frames travel within the network.
+                    - VLAN information, and other data link level details are typically illustrated to provide insights into the
+                    - configuration of network segments.
+                - **Layer 3**
+                    - Layer 3 Diagrams: Network Layer
+                    - Layer 3 diagrams provide a high-level view of network topology and routing, including how diƯerent
+                    - network segments and devices route traffic.
+                    - They often include information such as IP addresses, subnets, and routing protocols, which are
+                    - crucial for understanding and managing the logical routing of data.
+            - **Asset inventory**
+                - Asset Inventory in Network Management
+                - Asset inventory is critical for managing the hardware, software, and licensing of network resources
+                - eƯectively.
+                - Keeping an updated inventory helps in strategic planning, compliance, and budgeting for upgrades
+                - and maintenance.
+                - **Hardware**
+                    - Hardware Inventory
+                    - A detailed hardware inventory includes all physical devices such as routers, switches, servers, and
+                    - other networking equipment.
+                    - It tracks specifications, locations, and the condition of each asset, assisting in lifecycle
+                    - management and replacement scheduling.
+                - **Software**
+                    - Software Inventory
+                    - Software inventory encompasses all system and applicaƟon soŌware running within the network,
+                    - documenting versions, installations, and configurations.
+                    - This information is vital for ensuring compatibility, planning upgrades, and managing security
+                    - patches.
+                - **Licensing**
+                    - Licensing Management
+                    - Effective licensing management ensures compliance with software use rights and avoids legal and
+                    - financial penalties.
+                    - It involves tracking the number of licenses, usage rights, expiration dates, and renewals for all
+                    - software products.
+                - **Warranty support**
+                    - Warranty and Support Management
+                    - Keeping detailed records of warranty and support agreements for network assets helps manage
+                    - service claims and technical support eƯiciently.
+                    - This inventory ensures timely access to vendor support and prevents disruptions due to hardware or
+                    - software failures.
+            - **IP address management (IPAM)**
+                - IP Address Management (IPAM)
+                - IP Address Management (IPAM) is a crucial tool for organizing, tracking, and managing the IP address
+                - space within a network.
+                - It helps prevent IP conflicts by providing a clear inventory of allocated and available IP addresses,
+                - supports the integration and management of DHCP and DNS services, and enhances network
+                - reliability and security through meticulous tracking of IP address assignments.
+                - Effective IPAM also aids in compliance and strategic network planning by ensuring efficient use of IP
+                - resources.
+            - **Service-level agreement (SLA)**
+                - Service-level Agreement
+                - A Service-level Agreement (SLA) is a formal document that outlines the expected service standards a
+                - provider must meet, as agreed upon with a client.
+                - It details the specifics of services, including responsibilities, performance metrics, and remedies or
+                - penalties for breaches, ensuring clear expectaƟons for service quality and availability.
+            - **Wireless survey/heat map**
+                - Wireless Survey and Heat Map
+                - Purpose of Wireless Survey: A wireless survey assesses the coverage and performance of a wireless
+                - network within a specified area. It identifies the opƟmal placement for access points and detects
+                - areas of signal weakness or interference.
+                - Heat Map Functionality: Heat maps visually represent the wireless signal strength and coverage
+                - across diƯerent areas of a location. They are generated from data collected during the wireless
+                - survey, providing a color-coded map that illustrates signal intensity and helps in planning network
+                - improvements for consistent and eƯicient wireless coverage.
+        - **Life-cycle management**
+            - Life-Cycle Management in Networking
+            - Life-cycle management involves overseeing the enƟre lifespan of network equipment from
+            - acquisition to disposal.
+            - This process ensures that networking infrastructure remains efficient, up-to-date, and secure
+            - throughout its operational life.
+            - **End-of-life (EOL)**
+                - End-of-Life (EOL)
+                - End-of-Life (EOL) refers to the point when a product is no longer produced, sold, or supported by the
+                - manufacturer.
+                - Understanding and planning for EOL is critical to avoid operaƟonal risks and ensure that
+                - replacement strategies are in place before support and updates are unavailable.
+            - **End-of-support (EOS)**
+                - End-of-Support (EOS)
+                - End-of-Support (EOS) marks the date when a manufacturer stops providing technical support and
+                - software updates for a product.
+                - Planning for EOS is essential to maintain network security and functionality, as lack of updates can
+                - expose the network to vulnerabilities and compatibility issues.
+            - **Software management**
+                - Software Management in Network Lifecycle
+                - Software management is a critical aspect of lifecycle management, focusing on maintaining,
+                - updating, and optimizing software across network devices.
+                - EffecƟve soŌware management ensures that systems remain secure, functional, and in compliance
+                - with industry standards.
+                - **Patches and bug fixes**
+                    - Patches and Bug Fixes
+                    - Regular application of patches and bug fixes is essential to address vulnerabilities, improve
+                    - functionality, and prevent potential security breaches.
+                    - A structured patch management strategy helps in timely deployment across the network, minimizing
+                    - disruption and protecting against emerging threats.
+                - **Operating system (OS)**
+                    - Operating System (OS) Management
+                    - Operating system management involves regular updates and maintenance to ensure network
+                    - devices operate eƯiciently and securely.
+                    - OS updates can include security enhancements, new features, and performance improvements,
+                    - which are vital for the stability and security of the network.
+                - **Firmware**
+                    - Firmware Updates
+                    - Firmware within network devices controls basic hardware functions and requires updates to fix
+                    - bugs, close security vulnerabilities, and sometimes enhance device capabilities.
+                    - Managing firmware updates is crucial for the hardware's reliability and performance, requiring
+                    - careful scheduling to avoid operational interruptions.
+            - **Decommissioning**
+                - Decommissioning of Network Assets
+                - Decommissioning involves the safe removal and disposal of outdated or unnecessary network
+                - equipment.
+                - This process should ensure data is securely erased and hardware is disposed of in an
+                - environmentally friendly manner, following legal and regulatory guidelines to mitigate risks
+                - associated with data breaches and environmental impact.
+        - **Change management**
+            - Change Management in Networking
+            - Change management is a systemaƟc approach to handling all changes made to a network's
+            - configuration and its environment, ensuring that standardized methods and procedures are used for
+            - eƯicient and prompt handling of all changes.
+            - It minimizes the impact of change-related incidents upon service quality, and consequently
+            - improves the day-to-day operaƟons of the organizaƟon.
+            - **Request process tracking/service request**
+                - Request Process Tracking/Service Request
+                - The request process tracking, or service request management, is a key component of change
+                - management that involves logging, progressing, and analyzing change requests to ensure they are
+                - carried out effecƟvely and efficiently.
+                - This system helps in maintaining control and documentaƟon throughout the lifecycle of a change,
+                - from initiation and approval to implementation and review, ensuring that all changes meet the
+                - specified requirements and are aligned with business objectives.
+        - **Configuration management**
+            - Configuration Management
+            - Configuration management in networking involves the maintenance and control of all hardware and
+            - software configurations within an IT infrastructure.
+            - It ensures that the system operates as intended by maintaining consistency of performance and
+            - security settings across all network devices.
+            - **Production configuration**
+                - Production Configuration
+                - Production configuration refers to the settings and setups that are acƟvely used in the operational
+                - environment of the network.
+                - It is critical to regularly monitor and manage these configurations to ensure optimal network
+                - performance and to quickly address any deviations or issues that arise.
+            - **Backup configuration**
+                - Backup Configuration
+                - Backup configuration involves storing a copy of the device configurations to prevent data loss in
+                - case of hardware failure, software issues, or other disruptions.
+                - Regular updates and tesƟng of backup configurations are essential to ensure they can be effectively
+                - restored when needed, providing continuity and reducing downtime.
+            - **Baseline/golden configuration**
+                - Baseline/Golden Configuration
+                - A baseline or golden configuration is a template of approved seƫngs and configurations that serves
+                - as a standard for deploying new devices or restoring existing ones.
+                - This standardized approach helps in maintaining consistency, security, and manageability across
+                - the network, simplifying troubleshooting and expansions.
+    - **3.2 Given a scenario, use network monitoring technologies.**
+        - **Methods**
+            - **SNMP**
+                - Simple Network Management Protocol
+                - SNMP is a widely used protocol for network management, allowing administrators to monitor,
+                - configure, and control network devices.
+                - It operates at the applicaƟon layer of the OSI model, providing a standardized framework for
+                - managing devices in a network.
+                - **Traps**
+                    - SNMP Traps
+                    - SNMP traps are unsolicited messages sent from an SNMP-enabled device to a management station,
+                    - noƟfying it of significant events or conditions.
+                    - Traps enable proacƟve monitoring and alerting, allowing administrators to respond quickly to
+                    - potential issues.
+                - **Management information base (MIB)**
+                    - MIBs
+                    - Management Information Bases (MIBs) are collecƟons of OIDs in a hierarchical structure that define
+                    - the properƟes of various network entities that can be managed using SNMP.
+                    - Each MIB specifies the network data accessible through SNMP, serving as a reference for what
+                    - information can be queried or controlled on SNMP-enabled devices.
+                - **Versions**
+                    - **v2c**
+                        - SNMP v2c
+                        - SNMP v2c (Simple Network Management Protocol version 2 community-based) is an extension of
+                        - the original SNMP protocol, oƯering enhancements like increased security with community strings
+                        - and bulk retrieval capabilities.
+                        - It is widely used due to its simplicity and effecƟveness in network monitoring and management, but
+                        - it lacks robust security features, relying on plain text community strings for authentication.
+                    - **v3**
+                        - SNMP v3
+                        - SNMP v3 is the most secure version of the Simple Network Management Protocol, providing
+                        - important security enhancements over its predecessors.
+                        - It supports strong authentication and encryption, significantly improving the security of network
+                        - management operations.
+                - **Community strings**
+                    - Community Strings in SNMP
+                    - Community strings in SNMP act as rudimentary passwords, allowing access to a device's
+                    - management information. They are used in SNMP versions up to v2c.
+                    - These strings must be carefully managed and secured, as they are transmitted in clear text, posing
+                    - a potential security risk.
+                - **Authentication**
+                    - Authentication in SNMP v3
+                    - SNMP v3 enhances security through robust authentication mechanisms that verify the identity of the
+                    - source and destination before allowing access to network data.
+                    - It supports mulƟple authenƟcaƟon methods, including MD5 and SHA, to provide better security
+                    - controls compared to its earlier versions.
+            - **Flow data**
+                - Flow Data
+                - Flow data involves capturing and analyzing metadata about network traƯic, such as source and
+                - destination IP addresses, port numbers, and protocol types.
+                - It is essential for understanding traffic patterns, bandwidth usage, and for identifying potential
+                - security threats or bottlenecks within the network.
+            - **Packet capture**
+                - Packet Capture
+                - Packet capture (pcap) is the process of intercepƟng and logging traƯic that passes over a digital
+                - network.
+                - As a diagnostic tool, packet capture helps network administrators to thoroughly examine network
+                - traffic to diagnose performance issues and detect malicious activities.
+            - **Baseline metrics**
+                - Baseline Metrics
+                - Baseline metrics establish a standard level of normal network performance, including typical traƯic
+                - volume, performance speeds, and error rates.
+                - Establishing these metrics is crucial for eƯective network management as it aids in the early
+                - detection of issues and ensures network performance remains within expected parameters.
+                - **Anomaly alerting/notification** 
+                    - Anomaly Alerting/Notification
+                    - Anomaly alerting and notification systems are designed to automaƟcally detect and report
+                    - deviaƟons from baseline metrics, signaling potential performance or security issues.
+                    - These systems help ensure rapid response to unusual activity, maintaining network integrity and
+                    - performance by prompting timely intervention.
+            - **Log aggregation**
+                - Log Aggregation
+                - Log aggregation is the process of collecƟng, consolidaƟng, and analyzing computer-generated log
+                - messages from various sources across the network.
+                - This centralized approach helps in monitoring, diagnosing, and managing data to ensure eƯicient
+                - network operations and security compliance.
+                - **Syslog collector**
+                    - Syslog Collector
+                    - A syslog collector is a dedicated tool used for gathering log data generated by devices within a
+                    - network.
+                    - It plays a critical role in log aggregation by centralizing syslog messages from multiple sources, which
+                    - simplifies management, enhances security monitoring, and aids in troubleshooting.
+                - **Security information and event management (SIEM)**
+                    - Security Information and Event Management
+                    - SIEM technology provides real-time analysis of security alerts generated by network hardware and
+                    - applications.
+                    - It aggregates and correlates log data, enabling automated alerting and reporting, and supports
+                    - proactive security measures by identifying potential threats based on unusual activity patterns.
+            - **Application programming interface (API) integration**
+                - API Integration in Network Management
+                - Application Programming Interfaces (APIs) are used in network management to allow seamless
+                - integraƟon between diƯerent software systems.
+                - APIs facilitate automated network configurations, data extraction, and the synchronization of
+                - network management tools, enhancing eƯiciency and scalability.
+            - **Port mirroring**
+                - Port Mirroring
+                - Port mirroring is a network monitoring technique where the traƯic of a specific port or multiple ports
+                - is duplicated and sent to a designated monitoring port.
+                - This method is used extensively for network diagnostics and security monitoring, allowing
+                - administrators to analyze and troubleshoot the network traƯic without impacƟng the network's
+                - performance.
+        - **Solutions**
+            - Network Solutions
+            - Network solutions encompass various tools and techniques used to manage, monitor, and secure
+            - the network infrastructure.
+            - They ensure opƟmal network performance, security, and reliability through continuous oversight and
+            - proactive management.
+            - **Network discovery**
+                - Network Discovery
+                - Network discovery involves idenƟfying devices, servers, and other hardware components
+                - connected to a network.
+                - This process is essential for maintaining an updated inventory of network assets and for
+                - understanding the network's structure and connecƟvity.
+                - **Ad hoc**
+                    - Ad Hoc Network Discovery
+                    - Ad hoc network discovery is performed manually on an as-needed basis, providing immediate
+                    - visibility into the network when specific issues or updates arise.
+                    - This method is useful for quick assessments but may not capture the full network context or ongoing
+                    - changes.
+                - **Scheduled**
+                    - Scheduled Network Discovery
+                    - Scheduled network discovery is automated and occurs at regular intervals, ensuring consistent and
+                    - up-to-date network mapping.
+                    - This approach is eƯective for ongoing management and helps in detecting new devices and changes
+                    - in network topology over time.
+            - **Traffic analysis**
+                - TraƯic Analysis
+                - Traffic analysis involves examining the data packets flowing through the network to identify usage
+                - patterns, bandwidth consumption, and potential bottlenecks.
+                - It provides insights that help optimize network performance and ensure adequate bandwidth
+                - distribution.
+            - **Performance monitoring**
+                - Performance Monitoring
+                - Performance monitoring tracks various metrics such as response times, throughput rates, and error
+                - rates to evaluate the health and efficiency of the network.
+                - Regular monitoring helps in proactively identifying performance degradation and pinpointing their
+                - causes for timely resolution.
+            - **Availability monitoring**
+                - Availability Monitoring
+                - Availability monitoring ensures that all critical network components are operaƟonal and accessible
+                - to users.
+                - It detects downƟme and failures, helping network teams to quickly address issues and minimize
+                - service disruptions.
+            - **Configuration monitoring**
+                - Configuration Monitoring
+                - Configuration monitoring involves tracking changes to network device configurations to prevent
+                - unauthorized modifications and ensure compliance with security policies.
+                - It alerts administrators to changes that could impact network performance or security, facilitating
+                - immediate investigation and remediation.
+    - **3.3 Explain disaster recovery (DR) concepts.**
+        - **DR metrics**
+            - **Recovery point objective (RPO)**
+                - Recovery Point Objective
+                - RPO is the maximum acceptable amount of data loss measured in time before a disaster occurs.
+                - It determines the maximum age of files that must be recovered from backup storage for normal
+                - operations to resume without significant losses.
+            - **Recovery time objective (RTO)**
+                - Recovery Time Objective
+                - RTO is the targeted duration of time and a service level within which a business process must be
+                - restored after a disaster or disruption to avoid unacceptable consequences associated with a break
+                - in business continuity.
+                - It defines the maximum allowable downƟme after an incident.
+            - **Mean time to repair (MTTR)**
+                - Mean Time to Repair
+                - MTTR is the average time required to repair a failed component or device and return it to normal
+                - operations.
+                - It measures the efficiency of the repair process, with a lower MTTR indicating more eƯicient fault
+                - recovery.
+            - **Mean time between failures (MTBF)**
+                - Mean Time Between Failure (MTBF)
+                - MTBF is the calculated average time between failures of a system or component during its
+                - operational lifespan.
+                - A higher MTBF suggests greater reliability and stability of the network component or system.
+        - **DR sites**
+            - **Cold site**
+                - Cold Site
+                - A cold site is a backup locaƟon that has the necessary infrastructure to support IT operations (like
+                - power and networking) but does not have the servers, storage, or other equipment set up unƟl
+                - needed.
+                - It's the least expensive and takes the longest time to become operational after a disaster.
+            - **Warm site**
+                - Warm Site
+                - A warm site is parƟally equipped with network connections and equipment and can be made
+                - operational with relatively short notice.
+                - It is more expensive than a cold site but oƯers a faster recovery time since some services and data
+                - are pre-configured.
+            - **Hot site**
+                - Hot Site
+                - A hot site is a fully operaƟonal data center with hardware and software, telecommunications, and
+                - staƯ necessary to resume operations immediately after a disaster.
+                - It mirrors the primary site, oƯering the quickest recovery time but at the highest cost.
+        - **High-availability approaches**
+            - **Active-active**
+                - Active-Active vs. Active-Passive
+                - In an active-active configuration, both systems run simultaneously, distributing the load to maximize
+                - performance and availability.
+                - In an active-passive setup, one system is operaƟonal while the other stands by, ready to take over in
+                - case the primary system fails, ensuring continuity but with potential downtime during the
+                - switchover.
+            - **Active-passive**
+        - **Testing**
+            - Disaster Recovery Testing
+            - Testing is a critical component of disaster recovery planning, ensuring that recovery procedures are
+            - effecƟve and up-to-date.
+            - Regular testing helps organizations prepare for and manage potential disruptions, minimizing
+            - downtime and data loss during actual disaster scenarios.
+            - **Tabletop exercises**
+                - Tabletop Exercises
+                - Tabletop exercises are discussion-based sessions where team members walk through various
+                - disaster scenarios to evaluate the effecƟveness of the disaster recovery plan.
+                - These exercises help idenƟfy gaps in the recovery plan and enhance the preparedness of the team
+                - by simulating decision-making processes without acƟvaƟng actual resources.
+            - **Validation tests**
+                - Validation Tests
+                - Validation tests involve the actual execuƟon of the disaster recovery processes to verify that systems
+                - and data can be restored in accordance with the recovery objectives.
+                - These tests are crucial for confirming the practical applicability of the disaster recovery plan and for
+                - training staƯ on their roles during recovery operations.
+    - **3.4 Given a scenario, implement IPv4 and IPv6 network services.**
+        - **Dynamic addressing**
+            - Dynamic Addressing
+            - Dynamic addressing automates the assignment of IP addresses to devices on a network using DHCP
+            - (Dynamic Host Configuration Protocol).
+            - This method ensures efficient management of IP addresses, reducing configuration errors and
+            - administrative overhead by automatically providing devices with IP addresses, subnet masks,
+            - gateway information, and DNS settings.
+            - It is particularly useful in environments with frequently changing network devices, such as wireless
+            - networks and temporary connections, simplifying network management and connectivity for users.
+            - **DHCP**
+                - DHCP (Dynamic Host Configuration Protocol)
+                - DHCP is a network management protocol used on IP networks whereby a DHCP server dynamically
+                - assigns an IP address and other network configuration parameters to each device on the network,
+                - allowing them to communicate on an IP network.
+                - It automates the process of configuring devices on IP networks, making it easy to manage network
+                - settings centrally.
+                - DHCP enables devices to join an IP network without requiring manual configuraƟon of IP settings,
+                - improving the eƯiciency of network management.
+                - **Reservations**
+                    - Reservation
+                    - A DHCP reservation is a specific IP address within a DHCP scope that is reserved for use by a
+                    - specific device, identified by its MAC address.
+                    - When the device requests an IP address, the DHCP server assigns it the reserved IP address,
+                    - ensuring the device receives the same IP address every time.
+                    - Reservations are used for devices that need a consistent IP address but still benefit from DHCP's
+                    - centralized management.
+                - **Scope**
+                    - Scope
+                    - A DHCP scope is a defined range of IP addresses that a DHCP server can use to assign to clients.
+                    - Each scope is configured with a range of IP addresses and other network settings, such as subnet
+                    - mask, default gateway, DNS servers, and lease duration.
+                    - Scopes are essential for organizing and managing IP address distribution in diƯerent segments of a
+                    - network.
+                - **Lease time**
+                    - Lease Time
+                    - Lease time refers to the duraƟon for which a DHCP server grants a device the right to use a specific
+                    - IP address.
+                    - Once the lease time expires, the device must either renew its current IP address lease with the
+                    - DHCP server or obtain a new one.
+                    - Lease time settings can help manage the availability of IP addresses in a network, especially in
+                    - environments with frequent device changes.
+                - **Options**
+                    - DHCP Options and Functionality
+                    - DHCP Options extend the capabiliƟes of the DHCP server, allowing it to pass configuration
+                    - parameters like Domain Name System (DNS) servers, Network Time Protocol (NTP) servers, and
+                    - Windows Internet Name Service (WINS) servers to DHCP clients.
+                    - These options can be configured to tailor network behavior to specific client requirements,
+                    - enhancing overall network management and user connectivity experiences.
+                - **Relay/IP helper**
+                    - DHCP Relay
+                    - A DHCP relay is a network function that forwards DHCP requests from clients on one network to a
+                    - DHCP server on another network.
+                    - This allows devices on subnets without a direct DHCP server to obtain IP addresses and other
+                    - network configuration details.
+                    - DHCP relay agents are used to extend the reach of DHCP servers across mulƟple subnets, making
+                    - network management more eƯicient.
+                - **Exclusions**
+                    - Exclusion Ranges
+                    - Exclusion ranges are subsets of a DHCP scope that are not used for dynamic assignment.
+                    - These IP addresses are reserved for manual assignment or for devices that require a fixed IP
+                    - address, such as printers, servers, or routers.
+                    - Setting up exclusion ranges ensures that there are no IP address conflicts between dynamically
+                    - assigned addresses and those assigned statically.
+            - **Stateless address autoconfiguration (SLAAC)**
+                - Stateless Address Autoconfiguration (SLAAC)
+                - Stateless Address Autoconfiguration (SLAAC) is a feature in IPv6 that allows a device to
+                - automaƟcally configure its own IP address without the need for manual configuration or DHCP.
+                - Using SLAAC, a device can generate its own IPv6 address based on the router adverƟsement it
+                - receives and its own hardware (MAC) address.
+                - This capability provides plug-and-play connecƟvity for IPv6 devices, reducing the need for additional
+                - configuration and easing the deployment of IPv6 networks.
+        - **Name resolution**
+            - Name Resolution
+            - Name resolution is the process of converƟng human-readable domain names into IP addresses that
+            - networking equipment can understand and use to route data.
+            - It is facilitated by DNS (Domain Name System), which acts like a phone book for the internet,
+            - allowing users to access websites using domain names rather than complex numerical IP
+            - addresses.
+            - EƯicient name resolution is critical for the functionality of the internet and internal networks,
+            - enabling seamless access to resources and services.
+            - **DNS**
+                - Domain Name System
+                - DNS is a hierarchical and decentralized naming system for computers, services, or other resources
+                - connected to the Internet or a private network.
+                - It translates more readily memorized domain names to the numerical IP addresses needed for
+                - locating and identifying computer services and devices with the underlying network protocols.
+                - DNS is essenƟal for the functionality of the internet, making it possible to use easy-to-remember
+                - domain names instead of IP addresses.
+                - **Domain Name Security Extensions (DNSSEC)**
+                    - DNS Security Extensions (DNSSEC)
+                    - DNSSEC enhances DNS security by providing authenƟcaƟon of DNS data, verifying its integrity and
+                    - ensuring it has not been tampered with during internet navigation.
+                    - It uses digital signatures to validate that the DNS responses come from the authentic source,
+                    - significantly reducing the risk of cache poisoning and other DNS-based attacks.
+                - **DNS over HTTPS (DoH) and DNS over TLS (DoT)**
+                    - DNS over HTTPS (DoH) and DNS over TLS (DoT)
+                    - DNS over HTTPS (DoH) and DNS over TLS (DoT) are protocols designed to encrypt DNS queries,
+                    - ensuring that DNS requests and responses are secure from eavesdropping and man-in-the-middle
+                    - attacks.
+                    - DoH routes DNS queries through the HTTPS protocol, while DoT uses the TLS protocol, both
+                    - enhancing privacy and security by preventing unauthorized interception of DNS data.
+                - **Record types**
+                    - **Address (A)**
+                        - Address (A) Record
+                        - The Address (A) Record maps a domain name to its corresponding IPv4 address, allowing users to
+                        - access websites using human-readable domain names instead of numerical IP addresses.
+                        - It is one of the most commonly used record types in DNS settings.
+                    - **AAAA**
+                        - AAAA Record
+                        - The AAAA Record functions similarly to the A record but maps a domain name to an IPv6 address,
+                        - which accommodates the longer numeric addresses used by the newer IPv6 protocol.
+                        - This record is essential for networks that support IPv6 addressing.
+                    - **Canonical name (CNAME)**
+                        - Canonical Name (CNAME) Record
+                        - A CNAME Record maps an alias name to a true or canonical domain name.
+                        - This is used when multiple domain names resolve to the same IP address, allowing for easier
+                        - management and changes in the network.
+                    - **Mail exchange (MX)**
+                        - Mail Exchange (MX) Record
+                        - MX Records are used to specify the mail servers responsible for receiving email messages on behalf
+                        - of a domain.
+                        - This record points to the domain's email server(s) and prioritizes mail delivery if multiple servers are
+                        - listed.
+                    - **Text (TXT)**
+                        - Text (TXT) Record
+                        - TXT Records hold text informaƟon for sources outside of the domain.
+                        - This information can be used for a variety of purposes, such as verifying domain ownership and
+                        - implemenƟng email security measures like SPF and DKIM.
+                        - They are versaƟle and support a range of administrative notes or machine-readable data.
+                    - **Nameserver (NS)**
+                        - Nameserver (NS) Record
+                        - NS Records identify the DNS servers responsible for a specific domain, indicating authoritative
+                        - servers that can answer queries for the domain.
+                        - These records help in delegaƟng subdomains and managing multiple DNS servers.
+                    - **Pointer (PTR)**
+                        - Pointer (PTR) Record
+                        - PTR Records map an IP address to a domain name, essentially the opposite of A or AAAA records.
+                        - They are primarily used for reverse DNS lookups, where the IP address is known, but the hostname is
+                        - needed.
+                        - This record type is particularly useful for network troubleshooƟng and security checks.
+                - **Zone types**
+                    - DNS Zone Types
+                    - DNS zones are porƟons of the domain name space in the Domain Name System (DNS), which are
+                    - managed by a specific entity or administrator.
+                    - Understanding different zone types is crucial for effective DNS management and ensuring proper
+                    - domain resolution.
+                    - **Forward**
+                        - Forward Zone
+                        - A forward zone in DNS is used to resolve domain names to IP addresses.
+                        - It contains records like A, AAAA, and MX, facilitaƟng the translation of human-readable domain names
+                        - into machine-readable IP addresses.
+                    - **Reverse**
+                        - Reverse Zone
+                        - Reverse zones handle the mapping of IP addresses back to domain names, essentially the opposite
+                        - of forward zones.
+                        - This zone type is used in reverse DNS lookups, where the IP address is known and the associated
+                        - hostname is needed, often for network troubleshooting and security verification.
+                - **Authoritative vs. non-authoritative**
+                    - Authoritative vs. Non-Authoritative
+                    - Authoritative DNS Zone: This zone has the final authority over its own records, providing definitive
+                    - answers to queries about domain names within its zone without needing to query other sources.
+                    - Non-Authoritative DNS Zone: A nonauthoritative zone provides information that has been obtained
+                    - from another server, not from the original source, usually cached data from previous queries.
+                - **Primary vs. secondary**
+                    - Primary vs. Secondary Zones
+                    - Primary DNS Zone: The primary zone is the main zone file where DNS records are stored and
+                    - managed. It allows changes to DNS records directly.
+                    - Secondary DNS Zone: A secondary zone is a read-only copy of the primary zone that serves as a
+                    - backup, reducing the load on the primary server and increasing redundancy for fault tolerance.
+                - **Recursive**
+                    - Recursive DNS Queries
+                    - Recursive DNS queries involve a DNS server taking on the responsibility of retrieving data from other
+                    - DNS servers on behalf of the client, providing a complete answer.
+                    - This process is essential when the local DNS server does not immediately have the answer,
+                    - requiring it to perform multiple queries across the DNS infrastructure to resolve the name fully.
+            - **Hosts file**
+                - Hosts File
+                - The hosts file is a computer file used by an operating system to map hostnames to IP addresses.
+                - It serves as a simple form of local DNS resolution, which the system checks before querying external
+                - DNS servers, allowing for manual override of DNS lookup.
+                - This file is commonly used for tesƟng website deployments and blocking access to unwanted sites
+                - by redirecting domain names to incorrect or loopback IP addresses.
+        - **Time protocols**
+            - Time Protocols
+            - Time synchronization protocols are essential for ensuring consistent and accurate time across all
+            - devices within a network.
+            - They play a critical role in network operations, logging, security, and ensuring the proper sequence
+            - of events in distributed systems.
+            - **NTP**
+                - Network Time Protocol (NTP)
+                - NTP is one of the oldest and most commonly used protocols to synchronize the clocks of computers
+                - over a network.
+                - It uses a hierarchical system of time sources to minimize the impact of variable network latency and
+                - can adjust clocks to within milliseconds of Coordinated Universal Time (UTC).
+            - **Precision Time Protocol (PTP)**
+                - Precision Time Protocol (PTP)
+                - PTP, defined in IEEE 1588, is used for very precise time synchronization, typically in measurement
+                - and control systems where high precision is required.
+                - Unlike NTP, which can achieve millisecond-level accuracy, PTP can synchronize clocks to within
+                - nanoseconds across a local area network (LAN).
+            - **Network Time Security (NTS)**
+                - Network Time Security (NTS)
+                - NTS is an extension of NTP, designed to provide security improvements over the original protocol.
+                - It adds encrypƟon and authenƟcaƟon to NTP, ensuring that the time data exchanged between
+                - clients and servers is both secure and reliable, protecting against various types of tampering and
+                - attacks.
+    - **3.5 Compare and contrast network access and management methods.**
+        - **Site-to-site VPN**
+            - Site-to-Site VPN
+            - A Site-to-Site VPN connects enƟre networks to each other, allowing branches or remote oƯices to
+            - communicate securely over the internet as if they were within the same local network.
+            - This type of VPN is commonly used to connect geographically dispersed offices of an organization,
+            - enabling secure and private communications using encrypted tunnels over public networks.
+        - **Client-to-site VPN**
+            - Client-to-Site VPN
+            - Client-to-Site VPN, also known as Remote Access VPN, allows individual clients (such as
+            - employees working remotely) to connect to the corporate network securely over the internet.
+            - It provides users with secure access to network resources and applications as if they were physically
+            - on the network, typically using VPN client software.
+            - **Clientless**
+                - Clientless VPN
+                - A Clientless VPN allows users to securely access network resources through a web browser without
+                - the need for installing dedicated VPN client software.
+                - This type of VPN is useful for providing access to specific applications or services and is often
+                - utilized for secure, remote access to web applications and internal networks.
+            - **Split tunnel vs. full tunnel**
+                - Split Tunnel vs. Full Tunnel VPN
+                - Split Tunnel VPN: In a split tunnel configuration, only network traffic for the corporate site passes
+                - through the VPN tunnel, while other traƯic accesses the internet directly. This can reduce the load
+                - on the VPN gateway but may expose the traƯic to security risks.
+                - Full Tunnel VPN: With a full tunnel configuration, all of the client's internet traffic is routed through
+                - the VPN to the corporate network. This increases security as all traƯic is encrypted but can lead to
+                - higher bandwidth usage and slower performance.
+        - **Connection methods**
+            - Connection Methods
+            - Various connection methods are utilized to interact with network devices and systems, each
+            - serving specific purposes from configuration and management to troubleshooting.
+            - Common methods include SSH, GUI, API, and console connections, each oƯering diƯerent levels
+            - of control, security, and ease of use.
+            - **SSH**
+                - SSH (Secure Shell)
+                - SSH is a cryptographic network protocol for secure remote login and other secure network services
+                - over an unsecured network.
+                - It provides a secure channel over an insecure network, replacing older protocols like Telnet that do
+                - not encrypt communications, and is widely used for managing servers and network devices
+                - remotely.
+            - **Graphical user interface (GUI)**
+                - Graphical User Interface (GUI)
+                - A GUI provides a visual interface to interact with a computer or network device, making it accessible
+                - for users who prefer point-and-click interactions over command-line interfaces.
+                - GUIs are commonly used in network management software, providing dashboards, configuration
+                - menus, and monitoring tools that simplify complex processes.
+            - **API**
+                - API (Application Programming Interface)
+                - APIs allow for programmable interacƟon with network devices and systems, enabling automation,
+                - integration with other systems, and custom functionality.
+                - They are crucial for modern network management, allowing administrators to create custom scripts
+                - and applications that interact directly with network hardware and software.
+            - **Console**
+                - Console Connection
+                - Console connections provide direct, physical access to network devices through a console port,
+                - typically using a cable and a terminal emulator.
+                - This method is essential for initial device setup, recovery, and troubleshooting when remote access
+                - is not possible, or the device is not yet configured for network connectivity.
+        - **Jump box/host**
+            - Jump Box/Host
+            - A jump box, also known as a jump host, is a secure computer that all administrators first connect to
+            - before launching any administrative task or accessing more sensitive parts of the network.
+            - It acts as a stepping stone from one security zone to another, providing a controlled means of access
+            - between different trust levels within or across network environments, often used to manage
+            - devices within a demilitarized zone (DMZ).
+        - **In-band vs. out-of-band management**
+            - In-Band Management
+            - In-band management involves administering network devices through the same network
+            - connecƟons and paths used for normal data traffic.
+            - This method allows network administrators to remotely manage devices using standard network
+            - tools and protocols, such as SSH or HTTP, which is convenient but depends on the network's
+            - operaƟonal status, making it vulnerable during network outages.
+            - Out-of-Band Management
+            - Out-of-Band management uses a separate, dedicated channel for device administration,
+            - independent of the primary network infrastructure.
+            - This approach ensures access to network devices for monitoring, maintenance, and recovery even
+            - when the main network is down, providing a reliable alternative for critical management tasks that
+            - enhances security and uptime.
+- **4.0 Network Security 14%**
+    - **4.1 Explain the importance of basic network security concepts.**
+        - **Logical security**
+            - Logical Security
+            - Logical security encompasses measures and protocols implemented in software to protect data,
+            - network resources, and systems from unauthorized access and aƩacks.
+            - It includes practices such as encryption, access control, and secure coding, essential for
+            - safeguarding information integrity and confidentiality.
+            - **Encryption**
+                - Encryption in Logical Security
+                - Encryption is a fundamental component of logical security, used to convert readable data into a
+                - secure format that can only be read or processed after it is decrypted.
+                - This process is vital for protecting sensitive information from being accessed or understood by
+                - unauthorized parƟes.
+                - **Data in transit** 
+                    - Encryption of Data in Transit
+                    - Data in transit refers to information that is being transferred over a network, from one device to
+                    - another or across the internet.
+                    - Encrypting data in transit ensures that it remains secure and private while it moves between
+                    - endpoints, protecting it from interception and tampering by malicious actors.
+                    - Common protocols include HTTPS, SSL/TLS, and VPN.
+                - **Data at rest** 
+                    - Encryption of Data at Rest
+                    - Data at rest includes any data stored on physical media, from hard drives to USB drives, awaiting use
+                    - or retrieval.
+                    - Encrypting data at rest prevents unauthorized access by ensuring that data is only accessible via
+                    - proper cryptographic keys, safeguarding it against theft, loss, or unauthorized viewing.
+                    - Techniques include full disk encryption (FDE) and encrypted file systems.
+            - **Certificates**
+                - Certificates in Network Security
+                - Certificates are digital documents that use cryptographic techniques to bind a public key with an
+                - idenƟty (person, organization, or device).
+                - They are crucial for establishing trust in a digital environment, used for secure communications, and
+                - verifying the legitimacy of entities within a network.
+                - **Public key infrastructure (PKI)** 
+                    - Public Key Infrastructure (PKI)
+                    - Public Key Infrastructure (PKI) is a framework used to create, manage, distribute, use, store, and
+                    - revoke digital cerƟficates.
+                    - PKI involves roles, policies, hardware, software, and procedures needed to create a secure
+                    - communication environment, supporƟng services like digital signatures, email encryption, and
+                    - SSL/TLS for secure web browsing.
+                - **Self-signed** 
+                    - Self-Signed Certificates
+                    - Self-signed certificates are issued and signed by the enƟty itself, rather than a trusted certificate
+                    - authority (CA).
+                    - While they provide the same level of encrypƟon as those issued by a CA, their self-signed nature
+                    - means they are not inherently trusted by others' devices and are best used for testing, internal
+                    - communications, or small-scale environments where trust is established by other means.
+            - **Identity and access management (IAM)** 
+                - Identity and Access Management (IAM)
+                - Identity and Access Management (IAM) is a framework of business processes, policies, and
+                - technologies that facilitates the management of electronic or digital identities.
+                - By controlling user access to critical information within an organization, IAM systems ensure that the
+                - right people access the right resources at the right times for the right reasons.
+                - This system is crucial for security and regulatory compliance, offering tools for automating user
+                - provisioning, managing privileges, enforcing security policies, and auditing user activities across
+                - the network.
+                - **Authentication** 
+                    - Authentication in IAM
+                    - Authentication is a key component of Identity and Access Management (IAM), ensuring that
+                    - individuals or entities attempting to access information are who they claim to be.
+                    - This process involves validaƟng credenƟals like passwords, biometrics, or other verification
+                    - methods before granting access to systems.
+                    - **Multifactor authentication (MFA)** 
+                        - Multifactor Authentication (MFA)
+                        - Multifactor Authentication (MFA) enhances security by requiring two or more verificaƟon factors to
+                        - gain access to a resource, which typically includes something you know (password), something you
+                        - have (security token), and something you are (biometric verification).
+                        - MFA significantly reduces the risk of unauthorized access, making it harder for attackers to
+                        - compromise user accounts.
+                    - **Single sign-on (SSO)** 
+                        - Single Sign-On (SSO)
+                        - Single Sign-On (SSO) allows users to log in once and gain access to mulƟple related but
+                        - independent software systems without being prompted to log in again at each of them.
+                        - SSO simplifies the user experience while enhancing security by reducing the number of times a user
+                        - has to enter their credentials.
+                    - **Remote Authentication Dial-in User Service**  **(RADIUS)** 
+                        - Remote Authentication Dial-In User Service
+                        - RADIUS is a networking protocol that provides centralized Authentication, Authorization, and
+                        - Accounting (AAA) management for users who connect and use a network service.
+                        - It is widely used by ISPs and enterprises to manage access to the network, keeping track of logging
+                        - by users and ensuring their credenƟals are correct.
+                    - **LDAP** 
+                        - Lightweight Directory Access Protocol
+                        - LDAP is an applicaƟon protocol for accessing and maintaining distributed directory informaƟon
+                        - services over an IP network.
+                        - It is used to store informaƟon about users, groups, and devices, and supports strong authentication
+                        - and encryption.
+                    - **Security Assertion Markup Language (SAML)** 
+                        - Security Assertion Markup Language (SAML)
+                        - SAML is an open standard for exchanging authentication and authorization data between parties,
+                        - specifically between an idenƟty provider and a service provider.
+                        - This standard allows identity providers to send proper authorizaƟon credenƟals to service providers,
+                        - ensuring that user access is granted to appropriate resources based on pre-defined policies.
+                    - **Terminal Access Controller Access Control System Plus** **(TACACS+)** 
+                        - Terminal Access Controller Access-Control System Plus (TACACS+)
+                        - TACACS+ is a protocol that handles authenƟcaƟon, authorizaƟon, and accounƟng services for
+                        - networked access control.
+                        - It separates these three functions which allows more flexibility in administration and provides better
+                        - control over who can access what on the network.
+                    - **Time-based authentication** 
+                        - Time-based Authentication
+                        - Time-based Authentication involves the use of a time-limited code or token as part of the
+                        - authentication process.
+                        - Typically used in conjuncƟon with a mobile app or token device, this method generates a code that
+                        - expires after a short duration and is required for successful authentication, enhancing security by
+                        - adding a temporal element that reduces the window for unauthorized access.
+                - **Authorization** 
+                    - Authorization in IAM
+                    - Authorization in Identity and Access Management (IAM) determines what resources a user can
+                    - access and what operations they can perform after they have been authenticated.
+                    - It involves seƫng permissions and policies that enforce which data or areas of the network diƯerent
+                    - users are allowed to access, based on their roles, responsibilities, or other criteria established by
+                    - the organization.
+                    - **Least privilege** 
+                        - Least Privilege
+                        - The principle of least privilege requires that users, programs, or processes operate using the
+                        - minimum set of privileges necessary to complete their tasks.
+                        - This approach reduces the risk of accidental or malicious misuse of legitimate privileges,
+                        - significantly enhancing system security by limiting access to sensitive information and critical
+                        - functions.
+                    - **Role-based access control** 
+                        - Role-Based Access Control (RBAC)
+                        - Role-Based Access Control (RBAC) is a method of restricting network access based on the roles of
+                        - individual users within an enterprise.
+                        - In RBAC, permissions are grouped by role name, and access to resources is granted based on the
+                        - user's assigned role.
+                        - This simplifies administraƟon and helps ensure that individuals have access to only those resources
+                        - necessary for their duties.
+            - **Geofencing**
+                - Geofencing
+                - Geofencing is a location-based service in which a software program uses GPS, RFID, Wi-Fi, or
+                - cellular data to trigger a preprogrammed acƟon when a mobile device or RFID tag enters or exits a
+                - virtual boundary set up around a geographical location, known as a geofence.
+                - Commonly used in marketing, security, and management, geofencing allows businesses to set up
+                - triggers for sending promotional notifications, restrict access to secure areas, or monitor asset
+                - movement within specified geographic zones.
+                - This technology is pivotal in enhancing automated control and personalizaƟon of location-centric
+                - services, providing robust security measures, and delivering targeted marketing strategies.
+        - **Physical security**
+            - Physical Security
+            - Physical security is crucial for protecting assets, personnel, and data from physical actions and
+            - events that could cause serious loss or damage.
+            - This includes a variety of measures such as surveillance cameras, locking mechanisms, and
+            - access control systems to prevent unauthorized access and maintain safety.
+            - **Camera**
+                - Security Cameras
+                - Security cameras play a vital role in physical security by providing real-time monitoring and
+                - recording of activities within and around facilities.
+                - They act as a deterrent to unauthorized actions and can provide crucial evidence in the event of
+                - security breaches or incidents.
+            - **Locks**
+                - Locks
+                - Locks are fundamental to securing entrances and sensitive areas within a facility, controlling who
+                - can enter specific spaces.
+                - Modern security systems integrate electronic locks with access control systems, allowing for
+                - sophisticated management of entry permissions and tracking access history.
+        - **Deception technologies**
+            - Deception Technologies
+            - Deception technologies are security mechanisms designed to mislead aƩackers and gather
+            - intelligence on their activities.
+            - They involve creating decoy systems or networks that mimic real assets, enticing attackers to
+            - engage with them and revealing their tactics and techniques.
+            - **Honeypot**
+                - Honeypot
+                - A honeypot is a decoy computer system set up to aƩract and trap aƩackers, diverting them from
+                - legitimate targets.
+                - It gathers data on attack methods and behaviors, helping security teams understand threats and
+                - improve their defensive measures.
+            - **Honeynet**
+                - Honeynet
+                - A honeynet is an enƟre network of honeypots designed to simulate a complex network
+                - environment.
+                - It provides deeper insights into attack strategies and can identify coordinated attacks, oƯering a
+                - broader perspecƟve on network security threats and enhancing overall defensive strategies.
+        - **Common security terminology**
+            - Common Security Terminology
+            - Understanding key security terms such as risk, vulnerability, exploit, threat, and the CIA triad is
+            - essential for eƯective security management.
+            - These concepts help in assessing security posture, implementing protective measures, and
+            - responding to potential security incidents.
+            - **Risk**
+                - Risk
+                - Risk in security refers to the potenƟal for loss, damage, or destrucƟon of assets or data due to a
+                - threat exploiting a vulnerability.
+                - It is assessed based on the likelihood of the threat occurring and the potential impact it would have
+                - on the organization.
+            - **Vulnerability**
+                - Vulnerability
+                - A vulnerability is a weakness or flaw in a system, software, or hardware that can be exploited by a
+                - threat to gain unauthorized access or cause harm.
+                - IdenƟfying and miƟgaƟng vulnerabilities is crucial to reducing the attack surface and enhancing
+                - security posture.
+            - **Exploit**
+                - Exploit
+                - An exploit is a method or technique used by attackers to take advantage of a vulnerability to gain
+                - unauthorized access or perform malicious actions.
+                - Exploits can be in the form of scripts, tools, or processes specifically designed to breach security
+                - defenses.
+            - **Threat**
+                - Threat
+                - A threat is any potenƟal danger that could exploit a vulnerability to cause harm to an asset or data.
+                - Threats can come from various sources, including cybercriminals, insiders, natural disasters, and
+                - system failures.
+            - **Confidentiality, Integrity, and Availability (CIA) triad** 
+                - Confidentiality, Integrity, and Availability: The CIA Triad
+                - The CIA triad is a fundamental concept in information security, representing the three core
+                - principles that must be upheld to ensure secure systems.
+                - Confidentiality: Ensuring that information is accessible only to those authorized to view it.
+                - Integrity: Maintaining the accuracy and completeness of information and preventing unauthorized
+                - modifications.
+                - Availability: Ensuring that information and resources are accessible to authorized users when
+                - needed.
+        - **Audits and regulatory compliance **
+            - Audits and Regulatory Compliance
+            - Audits and regulatory compliance are critical for ensuring that organizations adhere to legal and
+            - industry standards for data protection and security.
+            - Regular audits help verify compliance, identify weaknesses, and implement improvements to
+            - safeguard sensitive information.
+            - **Data locality** 
+                - Data Locality
+                - Data locality refers to the geographical locaƟon where data is stored, processed, and managed.
+                - Compliance with data locality regulaƟons ensures that data handling practices meet regional legal
+                - requirements, such as data sovereignty laws, which mandate that certain types of data remain
+                - within specific geographic boundaries.
+            - **Payment Card Industry Data Security Standards (PCI DSS)** 
+                - Payment Card Industry Data Security Standards
+                - PCI DSS is a set of security standards designed to ensure that all companies that accept, process,
+                - store, or transmit credit card informaƟon maintain a secure environment.
+                - Compliance with PCI DSS involves implementing measures such as encryption, access controls,
+                - and regular monitoring to protect cardholder data from breaches and fraud.
+            - **General Data Protection Regulation (GDPR)** 
+                - General Data Protection Regulation (GDPR)
+                - GDPR is a comprehensive data protection regulation that governs the processing and movement of
+                - personal data within the European Union (EU) and beyond.
+                - It imposes strict requirements on organizations, including obtaining consent for data collection,
+                - ensuring data accuracy, implementing security measures, and providing individuals with rights over
+                - their data, such as access, correction, and deletion.
+        - **Network segmentation enforcement** 
+            - Network Segmentation Enforcement
+            - Network segmentation involves dividing a network into smaller, isolated segments to improve
+            - security and manageability.
+            - EƯective segmentation helps contain potential security breaches, limits the spread of malware,
+            - and ensures compliance with security policies by restricƟng access to sensiƟve data and systems.
+            - **Internet of Things (IoT) and Industrial Internet of Things** **(IIoT)** 
+                - IoT and IIoT Segmentation
+                - The Internet of Things (IoT) and Industrial Internet of Things (IIoT) connect various devices and
+                - systems, often with different security requirements.
+                - Segmenting IoT and IIoT devices from the main network reduces the risk of these often less-secure
+                - devices being exploited to gain access to critical infrastructure and data.
+            - **Supervisory control and data acquisition (SCADA), industrial** **control System (ICS), operational**  **technology (OT)** 
+                - SCADA, ICS, and OT Segmentation
+                - Supervisory Control and Data Acquisition (SCADA), Industrial Control Systems (ICS), and
+                - Operational Technology (OT) are critical for managing industrial processes and infrastructure.
+                - Segmentation ensures these systems are isolated from corporate IT networks and the internet,
+                - protecting them from cyber threats and ensuring operaƟonal conƟnuity.
+            - **Guest**
+                - Guest Network Segmentation
+                - Guest networks provide internet access to visitors without exposing the main network and its
+                - sensitive resources.
+                - Implementing segmentation for guest networks helps maintain security and privacy by ensuring
+                - guests cannot access internal systems and data.
+            - **Bring your own device (BYOD)**
+                - BYOD Segmentation
+                - Bring Your Own Device (BYOD) policies allow employees to use personal devices for work purposes,
+                - which can introduce security risks.
+                - Segmentation of BYOD devices ensures they operate on a separate network segment, limiƟng their
+                - access to sensitive data and systems while providing necessary connecƟvity for producƟvity.
+    - **4.2 Summarize various types of attacks and their impact to the network.**
+        - **Denial-of-service (DoS)/distributed denial-of-service (DDoS)** 
+            - DoS/DDoS
+            - Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS)attacks overwhelm a targeted
+            - server or network with excessive traffic to render it unavailable to its intended users.
+            - DDoS attacks are a more complex form of DoS, utilizing compromised computers or botnets across
+            - the internet to conduct a massive, coordinated aƩack, significantly amplifying the attack's scale and
+            - impact.
+        - **VLAN hopping**
+            - VLAN Hopping
+            - VLAN hopping is a network attack technique that exploits vulnerabilities to send packets from one
+            - VLAN to another, bypassing Layer 2 security measures.
+            - Attackers can potentially access sensitive information or systems on a network segmented for
+            - security.
+        - **Media Access Control (MAC) flooding** 
+            - MAC Flooding
+            - MAC flooding is an attack technique where an attacker overwhelms a network switch with fake MAC
+            - addresses, causing the switch to enter a fail-open mode.
+            - This leads to the switch acting like a hub, broadcasƟng all incoming traffic to all ports, which can be
+            - exploited to intercept sensitive data or cause network disruption.
+        - **Address Resolution Protocol (ARP) poisoning** 
+            - Address Resolution Protocol (ARP) Poisoning
+            - ARP poisoning involves sending malicious ARP messages to a local network, associating the
+            - attacker's MAC address with the IP address of a legitimate device.
+            - This allows the attacker to intercept, modify, or block data intended for the legitimate IP address,
+            - leading to potential data breaches or on-path attacks.
+        - **ARP spoofing**
+            - ARP Spoofing
+            - ARP spoofing is a technique where an attacker sends falsified ARP (Address Resolution Protocol)
+            - messages over a local area network.
+            - This results in the linking of an aƩacker's MAC address with the IP address of a legiƟmate computer or
+            - server on the network, allowing the attacker to intercept, modify, or stop data meant for the
+            - legitimate host.
+        - **DNS poisoning**
+            - DNS Poisoning
+            - DNS poisoning involves corrupƟng the DNS cache with false informaƟon, redirecting users to
+            - malicious websites even when they type correct domain names.
+            - This can lead to the compromise of user information or the infection of their systems with malware.
+        - **DNS spoofing**
+            - DNS Spoofing
+            - DNS spoofing, also known as DNS cache poisoning, involves altering DNS records to redirect traƯic
+            - from legitimate websites to fraudulent ones.
+            - This attack can lead to users unknowingly providing sensiƟve informaƟon to aƩackers, facilitating
+            - phishing attacks, or spreading malware.
+            - It undermines the trust users have in internet navigation and can result in significant security
+            - breaches.
+        - **Rogue devices and services**
+            - Rogue Devices and Services
+            - Rogue Devices: Unauthorized devices that are connected to a network without permission.
+            - These can include rogue access points, computers, or other hardware that can be used to intercept
+            - or manipulate network traƯic, leading to potential security breaches.
+            - Prominent examples include rogue DHCP servers and Access Points.
+            - **DHCP**
+                - Rogue DHCP
+                - A rogue DHCP server is an unauthorized DHCP server on a network that provides incorrect IP
+                - addresses to clients.
+                - This can lead to network disruption, on-path attacks, or other security breaches as clients might
+                - receive configuration settings that route their traffic through the aƩacker's machine.
+            - **AP**
+                - Rogue Access Point
+                - A rogue AP is an unauthorized Wi-Fi access point installed on a network without the network
+                - administrator's consent.
+                - It poses a security risk by potentially allowing unauthorized access to network resources and data.
+        - **Evil twin**
+            - Evil Twin
+            - An evil twin is a malicious Wi-Fi access point that masquerades as a legitimate one by using the
+            - same SSID.
+            - Attackers use it to deceive users into connecting, enabling the attacker to intercept sensitive
+            - information transmitted over the network.
+        - **On-path attack**
+            - On-path Attack
+            - Previously known as man-in-the-middle attack, an on-path attack intercepts and potentially alters
+            - the communicaƟon between two parƟes without their knowledge.
+            - Attackers can eavesdrop on or manipulate data being exchanged, potentially stealing sensitive
+            - information or injecting malicious content.
+        - **Social engineering**
+            - Social Engineering
+            - Social engineering involves manipulaƟng individuals into divulging confidential information or
+            - performing actions that compromise security.
+            - It exploits human psychology rather than technical hacking techniques to gain unauthorized access
+            - to buildings, systems, or data.
+            - **Phishing**
+                - Phishing
+                - Phishing is a type of social engineering attack where attackers deceive individuals into providing
+                - sensiƟve informaƟon, such as login credentials and credit card numbers, by masquerading as a
+                - trustworthy enƟty in electronic communications, typically through email.
+            - **Dumpster diving**
+                - Dumpster Diving
+                - Dumpster Diving is a technique used by attackers to retrieve sensitive information from discarded
+                - materials, such as documents, hardware, and other items thrown away by an organization.
+                - This practice can uncover valuable informaƟon like passwords, personal identification details,
+                - financial records, or proprietary data that can be used to facilitate further attacks or identity theft.
+                - To mitigate this risk, organizations should implement secure disposal pracƟces, such as shredding
+                - documents, securely wiping data from electronic devices, and using locked disposal bins for
+                - sensitive materials.
+            - **Shoulder surfing**
+                - Shoulder Surfing
+                - Shoulder surfing involves directly observing or using technology to watch over someone's shoulder
+                - as they enter sensitive information, such as PINs at ATMs, passwords on laptops, or security codes
+                - on mobile phones.
+                - It's a straighƞorward but effecƟve way to gain unauthorized access to personal or confidential
+                - information.
+            - **Tailgating**
+                - Tailgating
+                - Tailgating occurs when an unauthorized person follows an authorized individual into a restricted area
+                - without the latter's knowledge or consent.
+                - It's a physical security breach that can lead to unauthorized access to secure locations.
+        - **Malware**
+            - Malware
+            - Malware is malicious soŌware designed to infiltrate, damage, or disable computers, networks, and
+            - systems.
+            - Common types of malware include viruses, worms, trojans, ransomware, spyware, and adware.
+            - Malware can steal sensiƟve informaƟon, disrupt operations, and cause significant financial and
+            - reputational damage.
+            - PreventaƟve measures include using antivirus software, keeping systems and software up to date,
+            - educating users about phishing and safe browsing practices, and implementing robust security
+            - policies and procedures.
+    - **4.3 Given a scenario, apply network security features, defense techniques, and solutions.**
+        - **Device hardening**
+            - Device Hardening
+            - Device Hardening refers to the process of securing a device by reducing its surface of vulnerability,
+            - which is larger when a system performs more functions.
+            - Key steps include disabling unnecessary services and ports, applying security patches and
+            - updates, configuring strong passwords and authentication methods, and implementing firewalls
+            - and intrusion detection systems.
+            - Regularly audiƟng and monitoring devices for compliance with security policies is essential to
+            - maintain a robust defense against potential threats.
+            - **Disable unused ports and services** 
+                - Disable Unneeded Ports
+                - Disabling unneeded switchports reduces the number of entry points into the network.
+                - This practice minimizes the potential for unauthorized access by physically limiƟng available
+                - connecƟons.
+                - Disable Unneeded Network Services
+                - Turning off network services that are not in use eliminates unnecessary vulnerabiliƟes.
+                - By reducing the aƩack surface, this practice strengthens network security and optimizes
+                - performance by freeing up system resources.
+            - **Change default passwords**
+                - Change Default Passwords
+                - Changing default passwords on all network devices and systems is crucial to prevent unauthorized
+                - access.
+                - Default passwords are easily obtainable online, making devices vulnerable to attacks if not changed.
+        - **Network access control (NAC)**
+            - Network Access Control
+            - Network Access Control (NAC) is a security solution that manages and enforces policies for device
+            - access to network resources.
+            - It ensures that only authorized and compliant devices can connect to the network, enhancing
+            - security by preventing unauthorized access and mitigating potential threats.
+            - **Port security**
+                - Port Security
+                - Port security limits the number of valid MAC addresses allowed on a switch port.
+                - This restricts access to the network, preventing unauthorized devices from connecting and
+                - protecting against MAC flooding attacks.
+            - **802.1X**
+                - 802.1X Authentication
+                - 802.1X is an IEEE standard for port-based Network Access Control (PNAC) that provides an
+                - authenƟcaƟon mechanism to devices wishing to connect to a LAN or WLAN.
+                - It uses the Extensible Authentication Protocol (EAP) to facilitate authenƟcaƟon processes, ensuring
+                - that only authenticated and authorized users can access the network resources, significantly
+                - enhancing network security.
+            - **MAC filtering**
+                - MAC Filtering
+                - MAC filtering is a security measure that allows network access only to devices with specific MAC
+                - addresses listed in the access control list.
+                - This can help prevent unauthorized devices from connecting to the wireless network, though it is
+                - not foolproof due to the potenƟal for MAC address spoofing.
+        - **Key management**
+            - Key Management
+            - Key Management involves the creation, distribution, storage, and maintenance of cryptographic
+            - keys used for securing data.
+            - EƯective key management ensures that keys are generated securely, stored safely, and accessible
+            - only to authorized entities.
+            - It includes practices such as key rotation, revocation, and backup to prevent unauthorized access
+            - and to maintain the integrity and confidenƟality of sensitive information.
+            - Proper key management is essential for the security of encrypƟon systems, safeguarding against
+            - data breaches and ensuring compliance with security standards.
+        - **Security rules**
+            - Security Rules
+            - Security rules are policies and configurations set up to protect networks, systems, and data from
+            - unauthorized access and threats.
+            - They include various methods such as URL filtering and content filtering to control and monitor
+            - traƯic, ensuring a secure and compliant environment.
+            - **Access control list (ACL)**
+                - Access Control List (ACL)
+                - ACLs are used to filter traffic entering or leaving a network by allowing or denying packets based on
+                - IP addresses, protocols, and port numbers.
+                - They provide a layer of security by controlling which packets can pass through a router or switch.
+            - **Uniform Resource Locator (URL) filtering** 
+                - Uniform Resource Locator (URL) Filtering
+                - URL filtering restricts access to specific websites or web content by comparing URLs against a
+                - predefined list of allowed or blocked sites.
+                - This method is commonly used to prevent users from accessing malicious sites, improving network
+                - security, and enforcing acceptable use policies.
+            - **Content filtering**
+                - Content Filtering
+                - Content filtering involves inspecƟng the data within web pages, emails, or other digital content to
+                - block access to inappropriate, harmful, or non-compliant material.
+                - This technique helps protect users from malware, phishing attacks, and exposure to unsuitable
+                - content, enhancing overall network security and user producƟvity.
+        - **Zones**
+            - Network Zones
+            - Network zones are segments of a network that are separated based on the level of trust and security
+            - required.
+            - They help in organizing and controlling access to network resources, enhancing security by isolaƟng
+            - sensiƟve areas from potential threats.
+            - **Trusted vs. untrusted**
+                - Trusted vs. Untrusted Zones
+                - Trusted Zones: These are segments of the network that are considered secure and contain resources
+                - such as internal servers, workstations, and databases. Access is tightly controlled and monitored to
+                - ensure security.
+                - Untrusted Zones: These are segments exposed to external networks, such as the internet, where the
+                - level of trust is low. Traffic from untrusted zones is subject to rigorous scruƟny and filtering before it
+                - can access trusted resources.
+            - **Screened subnet**
+                - Screened Subnet (DMZ)
+                - A screened subnet, also known as a Demilitarized Zone (DMZ), is a network segment that acts as a
+                - buffer zone between trusted and untrusted networks.
+                - It hosts public-facing services like web servers and email servers, providing an additional layer of
+                - security.
+                - The DMZ ensures that even if an attacker compromises the public services, they cannot directly
+                - access the internal network.
+- **5.0 Network Troubleshooting 24%**
+    - **5.1 Explain the troubleshooting methodology.**
+        - **Identify the problem**
+            - Step 1: Identify The Problem
+            - Identifying the problem is the crucial first step in the troubleshooting methodology.
+            - It involves understanding the symptoms, gathering detailed informaƟon, and engaging with affected
+            - users to accurately define the issue.
+            - Proper identification sets the foundation for eƯective troubleshooting by ensuring that eƯorts are
+            - focused on the correct problem, ultimately leading to a more efficient resolution process.
+            - **Gather information**
+                - Gather Information
+                - This involves collecƟng all relevant details about the issue from various sources such as system
+                - logs, user reports, and network performance data.
+                - This initial step is critical for understanding the scope and impact of the problem.
+            - **Question users**
+                - Question Users
+                - Direct interacƟon with users who have encountered the problem to get firsthand descriptions of
+                - what they experienced.
+                - This can provide clues that are not evident in system logs or performance metrics.
+            - **Identify symptoms**
+                - Identify Symptoms
+                - Carefully note down the specific symptoms and signs of the problem as reported by users and
+                - observed in the system.
+                - This helps in diagnosing the issue more accurately.
+            - **Determine if anything has changed** 
+                - Determine if Anything has Changed
+                - InvesƟgate whether there have been any recent changes to the system or network environment that
+                - could have triggered the problem.
+                - Changes can include software updates, hardware modifications, or alterations in configuration
+                - settings.
+            - **Duplicate the problem, if possible** 
+                - Duplicate the Problem, if Possible
+                - AƩempt to recreate the issue under controlled conditions to better understand its causes and
+                - identify potential solutions.
+                - ReplicaƟng the problem can also help in verifying that the issue has been resolved once changes are
+                - made.
+            - **Approach multiple problems individually** 
+                - Approach Multiple Problems Individually
+                - If there are several issues at hand, tackle them one at a time.
+                - This methodical approach prevents confusion and ensures that each problem is thoroughly resolved
+                - before moving on to the next.
+        - **Establish a theory of probable cause** 
+            - Step 2: Establish a Theory of Probable Cause
+            - Establishing a theory of probable cause involves formulaƟng potenƟal reasons for the identified
+            - problem based on collected information and observations.
+            - This step leverages technical knowledge, experience, and logical reasoning to narrow down the
+            - possible causes, providing a focused direction for troubleshooting eƯorts.
+            - A well-founded theory helps streamline the diagnosƟc process, reducing the time and resources
+            - needed to pinpoint and resolve the issue.
+            - **Question the obvious**
+                - Question the Obvious
+                - Begin by examining the most straighƞorward and common causes of the problem.
+                - This step often involves checking for simple issues that are frequently overlooked, such as
+                - disconnected cables, incorrect settings, or power outages.
+            - **Consider multiple approaches**
+                - Consider Multiple Approaches
+                - Keep an open mind to various potential causes and solutions.
+                - By considering diƯerent possibilities, you can more accurately pinpoint the root cause of an issue.
+                - **Top-to-bottom/bottom-to-top OSI model** 
+                    - Top-to-bottom/bottom-to-top OSI model
+                    - Use the OSI model as a framework to systematically troubleshoot network issues.
+                    - You can start troubleshooting from either the top (application layer) and work your way down to the
+                    - physical layer, or vice versa, depending on the symptoms and the nature of the problem.
+                    - This structured approach ensures that no layer is overlooked.
+                - **Divide and conquer** 
+                    - Divide and Conquer
+                    - Break down the problem into smaller, more manageable parts.
+                    - By isolaƟng secƟons of the network or system, you can more easily identify where the issue is
+                    - occurring.
+                    - This technique helps in eƯiciently pinpointing the source of a problem.
+        - **Test the theory to determine the cause** 
+            - Step 3: Test the Theory to Determine the Cause
+            - Testing the theory involves applying practical methods to verify whether the hypothesized cause of
+            - the problem is accurate.
+            - This step is critical for confirming the root cause, allowing for targeted troubleshooting and ensuring
+            - that subsequent solutions address the actual issue.
+            - Successful validation of the theory directs the next steps in the troubleshooting process, moving
+            - towards an eƯective resolution.
+            - **If theory is confirmed, determine next steps to resolve problem** 
+                - If the theory is confirmed, determine the next steps to resolve the problem.
+                - When testing confirms your theory, you then plan and implement a soluƟon to fix the issue.
+                - This step might include repairing or replacing hardware, updating software, or changing
+                - configurations.
+            - **If theory is not confirmed, establish a new theory or**  **escalate** 
+                - If the theory is not confirmed, establish a new theory or escalate.
+                - If the initial theory does not hold up under testing, it's time to develop a new theory based on the
+                - information gathered.
+                - 
+                - If unable to identify the cause after multiple attempts, the issue should be escalated to a higher-
+                - level support or specialist with more expertise in the area of concern.
+                - 
+        - **Establish a plan of action to resolve the problem and identify**  **potential effects** 
+            - Establish a plan of action to resolve the problem and identify potential eƯects.
+            - Once the cause of the problem is determined, develop a detailed plan to fix it, considering how the
+            - proposed actions might impact the system or network operations.
+        - **Implement the solution or escalate as necessary** 
+            - Implement the solution or escalate as necessary.
+            - Execute the plan to resolve the issue.
+            - If the problem is beyond your capability or resources, escalate it to a higher level of expertise.
+        - **Verify full system functionality and implement preventive measures if** **applicable** 
+            - Verify full system functionality and, if applicable, implement preventive
+            - measures
+            - After the solution is implemented, test the system to ensure that it is fully operaƟonal, and the
+            - original problem has been resolved.
+            - Also, put in place any measures that could prevent the issue from recurring.
+        - **Document findings, actions, outcomes, and lessons learned** **throughout the process** 
+            - Document findings, actions, outcomes, and lessons learned.
+            - Record the problem, how it was diagnosed, the solution implemented, and the outcome of those
+            - actions.
+            - This documentation can be invaluable for addressing similar issues in the future and for improving
+            - the overall IT support process.
+    - **5.2 Given a scenario, troubleshoot common cabling and physical interface issues.**
+        - **Cable issues**
+            - Cable Issues
+            - Cable issues can significantly impact network performance and reliability.
+            - Understanding different types of cables and their appropriate use is crucial for ensuring optimal
+            - network functionality.
+            - **Incorrect cable**
+                - Incorrect Cable Issues
+                - Using incorrect cables can lead to network failures, reduced performance, and connectivity
+                - problems.
+                - Ensuring the correct cable type for specific applications and environments is essential for
+                - maintaining network integrity.
+                - **Single mode vs. multimode** 
+                    - Single Mode vs. Multimode
+                    - Single Mode: Used for long-distance transmissions, single mode fibers have a smaller core and
+                    - support higher bandwidth with less signal attenuation.
+                    - Multimode: Suitable for shorter distances, multimode fibers have a larger core, which allows
+                    - mulƟple light modes but can cause more signal dispersion and attenuation over longer distances.
+                    - Incorrect Use: Using single mode fiber where multimode is required, or vice versa, can cause signal
+                    - loss and inefficient data transmission.
+                    - Impact: This mismatch can result in increased aƩenuaƟon, poor signal quality, and reduced
+                    - bandwidth, aƯecting overall network performance.
+                - **Category 5/6/7/8** 
+                    - Category 5/6/7/8 Cable Issues
+                    - Incorrect Category: Using a lower category cable (e.g., Cat5) instead of a higher category (e.g.,
+                    - Cat6, Cat7, or Cat8) can limit data transfer speeds and lead to increased errors.
+                    - 
+                    - Impact: This can cause network slowdowns, increased latency, and an inability to support high-
+                    - speed applications or data-intensive operations.
+                - **Shielded twisted pair (STP) vs. unshielded twisted pair** **(UTP)** 
+                    - Shielded Twisted Pair (STP) vs. Unshielded Twisted Pair (UTP) Cable Issues
+                    - Incorrect Shielding: Using UTP cables in environments with high electromagnetic interference (EMI)
+                    - instead of STP can result in signal degradaƟon and data corrupƟon.
+                    - Impact: This can lead to frequent data retransmissions, increased error rates, and reduced network
+                    - reliability and performance.
+            - **Signal degradation**
+                - Signal Degradation
+                - Signal degradation occurs when the quality of the signal diminishes over distance or due to
+                - interference, leading to poor network performance.
+                - Common causes include using incorrect cable types, physical damage, and environmental factors
+                - such as electromagnetic interference (EMI) or radio frequency interference (RFI).
+                - EƯects of signal degradation can include slow data transfer rates, increased error rates, and
+                - intermittent connectivity issues.
+                - **Crosstalk** 
+                    - Crosstalk
+                    - Crosstalk is a specific type of signal degradation where a signal transmitted on one cable or channel interferes with a signal on another cable or channel.
+                    - Types of Crosstalk:
+                        - Near-End Crosstalk (NEXT): Interference measured at the transmitting end.
+                        - Far-End Crosstalk (FEXT): Interference measured at the receiving end.
+                    - Using incorrect or low-quality cables, such as those with insufficient shielding or untwisted pairs, can increase the risk of crosstalk.
+                    - EƯects include corrupted data, reduced data transmission speeds, and an overall decrease in network reliability and performance.
+                - **Interference** 
+                    - Interference
+                    - The disrupƟon of signal transmission caused by electromagnetic signals from other electronic
+                    - devices or cables.
+                    - Interference can lead to data corruption and loss of connectivity, aƯecting network performance.
+                - **Attenuation** 
+                    - Attenuation
+                    - The gradual loss of signal strength as it travels through a cable or medium.
+                    - Attenuation increases with distance and can aƯect the quality of the communication, requiring the
+                    - use of repeaters or amplifiers to maintain signal integrity.
+            - **Improper termination**
+                - Improper Termination
+                - Improper termination occurs when network cables are not correctly terminated with the appropriate connectors or techniques.
+                - Issues:
+                    - Signal loss and reflection, leading to data transmission errors and reduced network performance.
+                    - Increased electromagnetic interference (EMI), causing further degradation of signal quality.
+                - Proper termination is essential to ensure reliable connectivity and optimal performance in network installations.
+            - **Transmitter (TX)/Receiver (RX) transposed** 
+                - Transmitter (TX)/Receiver (RX) Transposed
+                - TX/RX transposition happens when the transmiƩer and receiver wires are incorrectly connected,
+                - causing communication failures.
+                - Issues:
+                    - Devices cannot establish a proper link, leading to a complete loss of communicaƟon between networked devices.
+                    - Troubleshooting becomes more complex and time-consuming, as the issue is often not immediately obvious.
+                - Ensuring correct TX/RX alignment during installation is crucial for maintaining proper network
+                - functionality and communication.
+        - **Interface issues**
+            - Interface Issues
+            - Interface issues can significantly impact network performance, leading to reduced eƯiciency and
+            - increased troubleshooting eƯorts.
+            - Monitoring interface counters helps identify and diagnose these problems early, ensuring network
+            - reliability and stability.
+            - **Increasing interface counters**
+                - Increasing Interface Counters
+                - Interface counters track various metrics related to network traƯic and errors.
+                - Increasing counters indicate potenƟal issues that need to be addressed to maintain optimal network
+                - performance.
+                - **Cyclic redundancy check (CRC)** 
+                    - Cyclic Redundancy Check (CRC) Errors
+                    - CRC errors occur when there is a mismatch in the data checksum, indicating data corruption during
+                    - transmission.
+                    - Issues:
+                        - Caused by faulty cables, electromagnetic interference (EMI), or hardware failures.
+                        - Result in data retransmission, increased latency, and reduced network throughput.
+                - **Runts** 
+                    - Runts
+                    - Runts are packets that are smaller than the minimum allowed size (usually less than 64 bytes).
+                    - Issues:
+                        - Often caused by collisions or faulty hardware.
+                        - Lead to inefficient use of network bandwidth and increased processing overhead for handling these erroneous packets.
+                - **Giants** 
+                    - Giants
+                    - Giants are packets that exceed the maximum allowed size (usually greater than 1518 bytes for
+                    - Ethernet frames).
+                    - Issues:
+                    - Caused by malfunctioning network devices or software errors.
+                    - Can lead to fragmentation and reassembly issues, reducing network performance and
+                    - reliability.
+                - **Drops** 
+                    - Drops
+                    - Drops occur when packets are discarded due to congestion, buƯer overflow, or configuration issues.
+                    - Issues:
+                    - Indicate network congesƟon, misconfiguration, or insuƯicient resources.
+                    - Result in data loss, increased retransmissions, and degraded application performance.
+            - **Port status**
+                - Port Status Issues
+                - Port status issues can aƯect network connectivity and performance, requiring attention to maintain
+                - proper network operation.
+                - Understanding different port statuses helps in diagnosing and resolving network problems
+                - eƯectively.
+                - **Error disabled** 
+                    - Error Disabled
+                    - A port in error disabled status has been automaƟcally shut down by the network device due to a
+                    - detected issue.
+                    - Causes:
+                    - Security violations, such as port security breaches.
+                    - Network problems, such as excessive errors or link flaps.
+                    - Resolution:
+                    - Identify and resolve the underlying issue before re-enabling the port to prevent recurrence.
+                - **Administratively down** 
+                    - Administratively Down
+                    - A port marked as administratively down has been manually disabled by a network administrator.
+                    - Causes:
+                        - Intentional shutdown for maintenance, configuration changes, or security reasons.
+                    - Resolution:
+                        - The port can be re-enabled through administrative action once the necessary changes or
+                        - maintenance are completed.
+                - **Suspended** 
+                    - Suspended
+                    - A port in suspended status is temporarily disabled, usually due to network policies or dynamic
+                    - configurations.
+                    - Causes:
+                    - Policy enforcement, such as violation of network access controls or dynamic adjustments
+                    - by protocols like LACP.
+                    - Resolution:
+                    - Address the policy or configuration that caused the suspension, and the port may
+                    - automatically re-enable or require manual intervention.
+        - **Hardware issues**
+            - Hardware Issues
+            - Hardware issues can significantly impact network performance and reliability, necessitating timely
+            - identification and resolution.
+            - Common hardware issues include problems with Power over Ethernet (PoE) and transceivers,
+            - which are critical for maintaining network functionality.
+            - **Power over Ethernet (PoE)**
+                - Power over Ethernet (PoE) Issues
+                - PoE allows network cables to carry electrical power, simplifying the installation of networked devices
+                - like IP cameras and wireless access points.
+                - Issues: Exceeding the power budget or incorrect standards can disrupt network operations.
+                - **Power budget exceeded** 
+                    - Power Budget Exceeded
+                    - When the total power consumption of connected PoE devices exceeds the available power budget
+                    - of the switch, some devices may not receive sufficient power.
+                    - Symptoms:
+                    - Devices failing to power on or operating intermittently.
+                    - Resolution:
+                    - Review and manage the power requirements of all connected devices and upgrade the PoE
+                    - switch if necessary to support higher power demands.
+                - **Incorrect standard** 
+                    - Incorrect Standard
+                    - Using devices and switches that adhere to different PoE standards (e.g., IEEE 802.3af, 802.3at,
+                    - 802.3bt) can result in compatibility issues.
+                    - Symptoms:
+                        - Devices not receiving power or insuƯicient power.
+                    - Resolution:
+                        - Ensure all devices and switches comply with the same PoE standard and upgrade equipment if necessary for compatibility.
+            - **Transceivers**
+                - Transceiver Issues
+                - Transceivers are modules used to connect network devices via fiber optic or copper cables, and
+                - issues with them can aƯect data transmission.
+                - Common Issues: Mismatched transceivers and signal strength problems.
+                - **Mismatch** 
+                    - Mismatched Transceivers
+                    - Using incompaƟble transceivers can lead to connectivity and performance issues.
+                    - Symptoms:
+                    - No link light, data errors, or intermittent connections.
+                    - Resolution:
+                    - Verify that transceivers are compatible with each other and the devices they are connected
+                    - to, ensuring they are from the same vendor or meet the same standards.
+                - **Signal strength** 
+                    - Signal Strength
+                    - Poor signal strength in transceivers can result in data transmission errors and reduced network
+                    - performance.
+                    - Symptoms:
+                    - High error rates, dropped packets, or no connectivity.
+                    - Resolution:
+                    - Check and clean fiber connectors, ensure proper cable length and quality, and verify
+                    - transceiver specifications to maintain adequate signal strength.
+    - **5.3 Given a scenario, troubleshoot common issues with network services.**
+        - **Switching issues**
+            - Switching Issues
+            - Switching issues can disrupt network connecƟvity and performance, leading to significant
+            - operational challenges.
+            - Common switching issues include problems with the Spanning Tree Protocol (STP), which is critical
+            - for preventing network loops and ensuring eƯicient data flow.
+            - **STP**
+                - STP in Switching Issues
+                - Proper implementation and management of STP are crucial for prevenƟng network loops and
+                - maintaining eƯicient data flow.
+                - Addressing issues with root bridge selection, port roles, and port states ensures a stable and
+                - reliable network environment.
+                - STP and Network Loops
+                - The Spanning Tree Protocol (STP) prevents network loops by creating a loop-free logical topology.
+                - **Network loops** 
+                    - Network Loops:
+                    - Occur when multiple active paths exist between network switches, causing broadcast
+                    - storms and network congestion.
+                    - Resolution: STP automaƟcally blocks redundant paths to prevent loops, ensuring
+                    - a stable network.
+                - **Root bridge selection** 
+                    - Root Bridge Selection
+                    - The root bridge is the central reference point in an STP-enabled network.
+                    - Root Bridge Selection:
+                    - Determined by the lowest bridge ID, which consists of a priority value and the MAC address.
+                    - Issues: Incorrect root bridge selection can lead to suboptimal network performance.
+                    - Resolution: Adjust bridge prioriƟes to ensure the most appropriate switch becomes the root
+                    - bridge.
+                - **Port roles** 
+                    - STP Port Roles
+                    - STP assigns specific roles to switch ports to maintain a loop-free network.
+                    - Port Roles:
+                    - Root Port: The best path to the root bridge.
+                    - Designated Port: The best path to a specific network segment.
+                    - Blocked Port: Prevents loops by not forwarding traƯic.
+                    - Issues: Misconfigured port roles can disrupt network eƯiciency.
+                    - Resolution: Ensure correct role assignment to maintain optimal traƯic flow.
+                - **Port states** 
+                    - STP Port States
+                    - STP ports transiƟon through several states to ensure network stability.
+                    - Port States:
+                    - Blocking: Prevents traƯic to avoid loops.
+                    - Listening: Prepares to forward traƯic without adding to the MAC table.
+                    - Learning: Adds MAC addresses to the table without forwarding.
+                    - Forwarding: Actively forwards traƯic.
+                    - Issues: Incorrect port states can cause connectivity problems.
+                    - Resolution: Verify and configure port states appropriately to ensure smooth network
+                    - operation.
+            - **Incorrect VLAN assignment**
+                - Incorrect VLAN Assignment
+                - Incorrect VLAN assignment can lead to network segmentaƟon issues, where devices are unable to
+                - communicate with each other or unauthorized devices gain access to restricted segments.
+                - Issues:
+                - Devices on different VLANs unable to communicate as intended.
+                - Security vulnerabilities if sensitive data is accessible from unauthorized VLANs.
+                - Resolution:
+                - Verify and correct VLAN assignments on switches and routers to ensure devices are on the
+                - intended network segments.
+                - Regularly audit VLAN configurations to maintain proper segmentation and security.
+            - **ACLs**
+                - Access Control Lists (ACLs)
+                - ACLs are used to control network traffic by specifying which users or systems can access network
+                - resources and under what conditions.
+                - Issues:
+                - Misconfigured ACLs can block legiƟmate traffic or allow unauthorized access, leading to
+                - security breaches and connectivity problems.
+                - Resolution:
+                - Carefully review and update ACLs to ensure they are correctly configured to permit or deny
+                - traƯic based on the network's security policies.
+                - Implement regular audits and testing of ACLs to ensure they function as intended and do
+                - not inadvertently disrupt network operations.
+        - **Route selection**
+            - Route Selection Issues
+            - EƯective route selection is critical for network performance and reliability.
+            - Common issues can lead to suboptimal routing, increased latency, and network failures.
+            - Identifying and resolving these issues ensures eƯicient and accurate data transmission across the
+            - network.
+            - **Routing table**
+                - Routing Table Issues
+                - Stale Routes: Routes that are no longer valid but remain in the routing table can cause misrouting of
+                - packets.
+                - Resolution: Regularly update and clean routing tables to remove outdated routes.
+                - Misconfigured Static Routes: Incorrect static route entries can lead to packet loss and rouƟng loops.
+                - Resolution: Verify static route configurations and ensure they align with network topology.
+                - Dynamic Routing Protocol Conflicts: Inconsistent routing information due to misconfigured or
+                - conflicƟng rouƟng protocols.
+                - Resolution: Ensure proper configuration and compatibility of dynamic routing protocols like
+                - OSPF, EIGRP, and BGP.
+            - **Default routes**
+                - Default Route Issues
+                - Missing Default Route: Absence of a default route can cause packets destined for unknown
+                - networks to be dropped.
+                - Resolution: Configure a default route to handle traffic for unspecified destinations.
+                - Incorrect Default Route: Misconfigured default routes can direct traƯic to the wrong gateway,
+                - causing connectivity issues.
+                - Resolution: Verify and correct the default route configuration to ensure accurate routing.
+                - Overreliance on Default Routes: Relying too heavily on default routes can lead to ineƯicient routing
+                - and potential security risks.
+                - Resolution: Balance the use of specific routes and default routes to optimize network
+                - performance and security.
+        - **Address pool exhaustion**
+            - Address Pool Exhaustion
+            - Address pool exhaustion occurs when the available IP addresses in a network’s DHCP scope or
+            - subnet are depleted.
+            - Common Issues:
+            - Over-subscription: Too many devices attempting to obtain IP addresses from a limited pool.
+            - Improper Scope Configuration: DHCP scopes not configured to meet network demands,
+            - leading to insufficient IP allocaƟon.
+            - Leased IPs Not Released: Devices not releasing IP addresses properly, causing addresses to
+            - be marked as in-use unnecessarily.
+            - Resolutions:
+            - Expand the DHCP scope or subnet to include more IP addresses.
+            - Implement IP address management (IPAM) to monitor and optimize IP address allocation.
+            - Ensure proper lease times and release mechanisms are configured.
+        - **Incorrect default gateway**
+            - Incorrect Default Gateway
+            - An incorrect default gateway configuration can prevent devices from communicaƟng with other
+            - networks, including the internet.
+            - Common Issues:
+            - Misconfigured Gateway Address: Devices pointing to a non-existent or incorrect gateway IP.
+            - Gateway IP Outside Subnet: Default gateway IP not within the same subnet as the device,
+            - causing routing failures.
+            - Multiple Gateways: Conflicting default gateway settings leading to inconsistent routing
+            - behavior.
+            - Resolutions:
+            - Verify and correct the default gateway IP address on aƯected devices.
+            - Ensure the default gateway is within the correct subnet range.
+            - Standardize default gateway configuraƟons across the network to avoid conflicts.
+        - **Incorrect IP address**
+            - Incorrect IP Address
+            - Incorrect IP address configuration can cause devices to fail in communicating with the network,
+            - leading to connectivity issues.
+            - Common Issues:
+            - Manual Configuration Errors: Typographical errors or incorrect entries when assigning IP
+            - addresses manually.
+            - Static vs. DHCP Conflicts: Manually assigned static IP addresses conflicƟng with
+            - dynamically assigned DHCP addresses.
+            - Resolutions:
+            - Double-check and verify IP address configurations for accuracy.
+            - Use DHCP reservaƟons for devices that require a static IP address to avoid conflicts.
+            - **Duplicate IP address**
+                - Duplicate IP Address
+                - Duplicate IP addresses occur when two devices on the same network are assigned the same IP
+                - address, causing network conflicts.
+                - Common Issues:
+                - Manual Configuration: Same IP address assigned manually to multiple devices.
+                - DHCP Lease Issues: DHCP server assigning an IP address that is already in use.
+                - Resolutions:
+                - Use IP address management tools to detect and resolve IP conflicts.
+                - Ensure that DHCP scopes are properly configured to avoid overlaps with static IP ranges.
+                - Regularly monitor the network for IP conflicts and resolve them promptly.
+        - **Incorrect subnet mask**
+            - Incorrect Subnet Mask
+            - An incorrect subnet mask can lead to improper network segmentaƟon, causing devices to fail in
+            - communicating with each other.
+            - Common Issues:
+            - Configuration Errors: Subnet masks entered incorrectly during network setup.
+            - Incompatible Subnets: Devices configured with subnet masks that don't match the
+            - network's addressing scheme.
+            - Resolutions:
+            - Verify subnet mask configuraƟons to ensure they match the network design.
+            - Educate network administrators on proper subnetting techniques and the importance of
+            - accurate subnet mask configuration.
+            - Use network planning tools to design and implement correct subnetting schemes.
+    - **5.4 Given a scenario, troubleshoot common performance issues.**
+        - **Congestion/contention**
+            - Congestion/Contention
+            - Congestion occurs when network demand exceeds capacity, leading to slowdowns and delays.
+            - Common Causes:
+            - Excessive simultaneous data transfers.
+            - High number of users or devices accessing the network at the same time.
+            - Resolutions:
+            - Implement quality of service (QoS) policies to prioritize critical traƯic.
+            - Upgrade network infrastructure to handle higher traffic volumes.
+        - **Bottlenecking**
+            - Bottlenecking
+            - Bottlenecking happens when a particular part of the network limits overall performance, creating a
+            - point of congestion.
+            - Common Causes:
+            - InsuƯicient bandwidth on a network link.
+            - Overloaded network devices (e.g., routers, switches).
+            - Resolutions:
+            - Identify and upgrade the bottleneck component to increase capacity.
+            - Distribute traƯic load more evenly across the network.
+        - **Bandwidth**
+            - Bandwidth
+            - Bandwidth refers to the maximum data transfer rate of a network connection.
+            - Issues:
+            - Limited bandwidth can lead to slow network performance.
+            - Bandwidth-hungry applications can monopolize available resources.
+            - Resolutions:
+            - Monitor bandwidth usage and optimize allocation.
+            - Implement traffic shaping and prioritization policies.
+            - **Throughput capacity**
+                - Throughput Capacity
+                - Throughput capacity is the actual rate at which data is successfully transmitted through the
+                - network.
+                - Issues:
+                - Network ineƯiciencies and congestion can reduce throughput.
+                - Discrepancies between theoretical bandwidth and actual throughput.
+                - Resolutions:
+                - Optimize network configurations and reduce interference.
+                - Ensure hardware and software are capable of supporting desired throughput levels.
+        - **Latency**
+            - Latency
+            - Latency is the time it takes for data to travel from the source to the destination.
+            - Issues:
+            - High latency can lead to delays in data transmission, aƯecting real-time applications.
+            - Causes include long transmission distances and network congestion.
+            - Resolutions:
+            - Use high-speed connecƟons and reduce the number of hops.
+            - OpƟmize rouƟng paths and use content delivery networks (CDNs).
+        - **Packet loss**
+            - Packet Loss
+            - Packet loss occurs when data packets fail to reach their destination, leading to incomplete data
+            - transmission.
+            - Issues:
+            - Causes include network congestion, faulty hardware, and interference.
+            - Leads to retransmissions, reduced throughput, and degraded application performance.
+            - Resolutions:
+            - Improve network infrastructure and hardware reliability.
+            - Use error detection and correction mechanisms.
+        - **Jitter**
+            - Jitter
+            - Jitter refers to the variability in packet arrival times, aƯecting the quality of real-time
+            - communications.
+            - Issues:
+            - High jitter can lead to choppy audio and video in VoIP and video conferencing.
+            - Causes include network congestion and route changes.
+            - Resolutions:
+            - Implement QoS to prioritize real-time traƯic.
+            - Use jiƩer buffers to smooth out packet arrival times.
+        - **Wireless**
+            - Wireless Issues
+            - Wireless networks often encounter performance challenges that can disrupt connectivity and data
+            - flow.
+            - These issues may arise from interference, channel overlap, signal degradation, insuƯicient
+            - coverage, client disassociation, and roaming misconfiguration.
+            - Such problems can lead to slower data rates, connection drops, and inconsistent network
+            - performance.
+            - Regular monitoring, proper configuration, and strategic placement of access points are crucial to
+            - ensure a robust and reliable wireless network.
+            - **Interference**
+                - Wireless Interference
+                - Issues:
+                - Interference from other electronic devices and physical obstructions can cause reduced
+                - network performance.
+                - Symptoms include slow data rates, high latency, and frequent connection drops.
+                - Resolutions:
+                - IdenƟfy and reduce interference sources and use wireless channels with minimal
+                - interference.
+                - **Channel overlap** 
+                    - Channel Overlap
+                    - Issues:
+                    - Overlapping channels result in increased interference and reduced throughput.
+                    - Symptoms include degraded signal quality and slower network speeds.
+                    - Resolutions:
+                    - Configure access points to use nonoverlapping channels, such as 1, 6, and 11 in the 2.4 GHz
+                    - band.
+                    - Implement automaƟc channel selecƟon to avoid overlap.
+            - **Signal degradation or loss**
+                - Signal Degradation or Loss
+                - Weak signal strength and high error rates due to distance or physical obstructions.
+                - Issues:
+                - Signal degradaƟon leads to weaker signal strength and increased error rates.
+                - Symptoms include intermittent connectivity, slower data transfer rates, and higher packet
+                - loss.
+                - Resolutions:
+                    - OpƟmize access point placement and use signal boosters or repeaters to extend coverage.
+            - **Insufficient wireless coverage**
+                - InsuƯicient Wireless Coverage
+                - Wireless connectivity is poor or nonexistent and can prevent users from accessing the network
+                - reliably.
+                - Issues:
+                - Insufficient coverage results in dead zones with poor or no connectivity.
+                - Symptoms include difficulty connecting to the network and unreliable connectivity in
+                - certain areas.
+                - Resolutions:
+                - Conduct a wireless site survey to identify coverage gaps and deploy additional access points
+                - as needed.
+            - **Client disassociation issues**
+                - Client Disassociation Issues
+                - Issues:
+                - Frequent disassociaƟon causes unstable connections and constant reconnecting.
+                - Symptoms include interrupted network access and inconsistent performance.
+                - Resolutions:
+                - Ensure strong and stable signal strength and address potential sources of interference.
+            - **Roaming misconfiguration**
+                - Roaming Misconfiguration
+                - Issues:
+                - Poorly configured roaming can lead to slow handoƯs between access points, causing
+                - temporary disconnections.
+                - Symptoms include lag during movement within the network and dropped connections.
+                - Resolutions:
+                - OpƟmize roaming seƫngs on access points to facilitate smooth transitions between them.
+    - **5.5 Given a scenario, use the appropriate tool or protocol to solve networking issues.**
+        - **Software tools**
+            - Software Tools
+            - Software tools are essential for managing, analyzing, and securing networks.
+            - They range from diagnosƟc uƟliƟes that help in identifying and resolving network issues to
+            - monitoring tools that track the performance and security of the network infrastructure.
+            - **Protocol analyzer**
+                - Protocol Analyzer/Packet Capture
+                - Software that captures data packets traveling over a network.
+                - It allows for detailed analysis of network traƯic to identify issues, monitor performance, and ensure
+                - secure data transmission.
+            - **Command line**
+                - Command Line Tools
+                - Command line tools are foundational for network administration and troubleshooting.
+                - These text-based interfaces oƯer precise control over network devices, such as routers, switches,
+                - and servers, allowing for detailed management and diagnostics.
+                - **ping** 
+                    - ping
+                    - Sends ICMP echo requests to a target host to test connectivity and measure round-trip time for
+                    - messages sent to the target device.
+                - **traceroute/tracert** 
+                    - traceroute/tracert
+                    - Traces the path packets take from the source to the destination, showing each hop along the route.
+                    - traceroute is used on Unix/Linux, and tracert on Windows.
+                - **nslookup** 
+                    - nslookup/dig
+                    - Queries DNS servers to find the IP address associated with a hostname (nslookup) or to get DNS
+                    - information about a domain (dig).
+                - **tcpdump** 
+                    - tcpdump
+                    - A powerful command-line packet analyzer; it captures or filters TCP/IP packets that are received or
+                    - transmitted over a network.
+                - **dig** 
+                    - dig
+                    - Dig (Domain Information Groper) is a powerful command-line tool used for querying DNS (Domain
+                    - Name System) servers.
+                    - Retrieves detailed informaƟon about DNS records, such as A, AAAA, CNAME, MX, and NS records.
+                    - Diagnoses DNS issues by providing insights into domain name resolution and server responses.
+                - **netstat** 
+                    - netstat
+                    - Displays network connecƟons (both incoming and outgoing), routing tables, and a number of
+                    - network interface statistics.
+                - **ip/ifconfig/ipconfig** 
+                    - ipconfig/ifconfig/ip
+                    - Displays or configures the network configuration of a device.
+                    - ipconfig is used on Windows, ifconfig on older Unix/Linux systems, and ip on modern Linux systems.
+                - **arp** 
+                    - arp
+                    - Displays or modifies the IP-to-MAC address translaƟon tables used by the Address Resolution
+                    - Protocol (ARP).
+            - **Nmap**
+                - nmap
+                - A network scanning tool that discovers devices and services on a network by sending packets and
+                - analyzing the responses.
+            - **Link Layer Discovery Protocol (LLDP)/Cisco Discovery Protocol**  **(CDP)** 
+                - Link Layer Discovery Protocol (LLDP) / Cisco Discovery Protocol (CDP)
+                - LLDP and CDP are network discovery protocols used to exchange information about devices on the
+                - same network.
+                - LLDP: A vendor-neutral protocol used to discover and share information between network devices,
+                - such as identity, capabilities, and neighbors.
+                - Usage: Helps in identifying network topology, troubleshooting connectivity issues, and
+                - ensuring proper network configuration.
+                - CDP: A Cisco-proprietary protocol similar to LLDP, specifically used in Cisco networks to share
+                - information about directly connected Cisco devices.
+                - Usage: Facilitates network management and troubleshooting by providing detailed
+                - information about neighboring Cisco devices.
+                - Link Layer Discovery Protocol (LLDP)
+                - LLDP: A vendor-neutral protocol used to discover and share information between network devices
+                - on the same local network segment.
+                - Functions:
+                - Exchanging informaƟon about device identity, capabilities, and neighbors.
+                - AssisƟng in network management by providing detailed network topology.
+                - Usage:
+                - Useful for idenƟfying connected devices, their properties, and network configuration details.
+                - Helps in troubleshooƟng network issues by revealing how devices are interconnected.
+                - Cisco Discovery Protocol (CDP)
+                - CDP: A Cisco-proprietary protocol similar to LLDP, specifically used for discovering and sharing
+                - information about directly connected Cisco devices.
+                - Functions:
+                - Gathering informaƟon about Cisco devices, including device type, IP address, software
+                - version, and capabilities.
+                - Providing network administrators with detailed topology informaƟon about Cisco network
+                - infrastructure.
+                - Usage:
+                - Helps in network management by oƯering detailed insights into Cisco device
+                - interconnections.
+                - Assists in diagnosing connecƟvity issues and verifying network configurations in Cisco
+                - environments.
+            - **Speed tester**
+                - Speed Tester
+                - A speed tester is a tool used to measure the performance of a network connection by testing the
+                - upload and download speeds.
+                - Functions:
+                - Evaluates the bandwidth capacity and performance of a network connection.
+                - IdenƟfies potenƟal issues such as bandwidth bottlenecks, latency, and jitter.
+                - Usage:
+                - Commonly used to verify internet speed and ensure service level agreements (SLAs) are
+                - met.
+                - Helps in troubleshooƟng performance issues by pinpointing slow network segments.
+        - **Hardware tools**
+            - Hardware Tools
+            - Hardware tools are essential in diagnosing, troubleshooting, and maintaining network
+            - infrastructure.
+            - These tools provide network administrators with the ability to idenƟfy and resolve physical layer
+            - problems, ensuring optimal network performance and reliability.
+            - Proper utilization of these hardware tools is crucial for proactive maintenance, rapid problem
+            - resolution, and minimizing network downtime.
+            - **Toner**
+                - Toner
+                - A toner is a tool used to trace and identify individual wires or cables within a bundle.
+                - Functions:
+                - Consists of a tone generator and a probe; the generator sends a signal through the cable,
+                - which the probe detects.
+                - Helps in identifying and locating cables in complex wiring systems.
+                - Usage:
+                - Commonly used in cable installaƟons and maintenance to ensure correct wiring and
+                - organization.
+            - **Cable tester**
+                - Cable Tester
+                - A cable tester is used to verify the integrity and performance of network cables.
+                - functions:
+                - Tests for continuity, signal strength, and wiring faults such as shorts, opens, and cross
+                - connections.
+                - Usage:
+                - Essential for validating new cable installations and diagnosing existing cable issues.
+            - **Taps**
+                - Taps
+                - A network tap is a hardware device that provides a way to access the data flowing across a network
+                - cable.
+                - Functions:
+                - Creates a copy of the data packets for monitoring and analysis without interrupting the
+                - network flow.
+                - Usage:
+                - Used in network monitoring and security applications to analyze traffic for troubleshooting,
+                - performance monitoring, and intrusion detection.
+            - **Wi-Fi analyzer**
+                - Wi-Fi Analyzer
+                - A Wi-Fi analyzer is a tool used to scan and analyze wireless network signals.
+                - functions:
+                - Detects Wi-Fi networks, measures signal strength, identifies channel usage, and detects
+                - interference sources.
+                - Usage:
+                - Helps in optimizing Wi-Fi network performance by identifying the best channels and
+                - detecting issues such as interference and weak signals.
+            - **Visual fault locator**
+                - Visual Fault Locator
+                - A visual fault locator is a tool used to idenƟfy faults in fiber opƟc cables.
+                - Functions:
+                - Emits a visible red laser light that travels through the fiber, revealing breaks, bends, or faulty
+                - connectors.
+                - Usage:
+                - Used in fiber opƟc cable installaƟon and maintenance to quickly locate and diagnose issues.
+        - **Basic networking device commands** 
+            - Basic Networking Device Commands
+            - Basic networking device commands are fundamental tools for network administrators in
+            - diagnosing and resolving network issues.
+            - These commands allow for quick assessment and troubleshooƟng of network devices, such as
+            - routers, switches, and servers.
+            - By using commands to display configuration settings, check connectivity, monitor performance,
+            - and view logs, administrators can idenƟfy and address problems efficiently.
+            - **show mac-address-table**
+                - show mac-address-table
+                - The show mac-address-table command displays the MAC address table of a network switch.
+                - Usage:
+                - Helps in identifying which MAC addresses are associated with which ports.
+                - Useful for troubleshooƟng connecƟvity issues and ensuring proper network segmentation.
+                - Benefits:
+                - Provides visibility into network device connecƟons, aiding in detecting unauthorized devices
+                - and optimizing port usage.
+            - **show route**
+                - show route
+                - The show route command displays the routing table of a router or Layer 3 switch.
+                - Usage:
+                - Shows acƟve routes, route sources, and next-hop addresses.
+                - Essential for verifying correct rouƟng and diagnosing routing issues.
+                - Benefits:
+                - Helps ensure that data packets are taking the opƟmal path through the network, improving
+                - performance and reliability.
+            - **show interface** 
+                - show interface
+                - The show interface command provides detailed information about the status and configuraƟon of
+                - network interfaces.
+                - Usage:
+                - Displays interface status, traffic statistics, and error counts. ◦ Useful for diagnosing issues
+                - such as link failures, duplex mismatches, and interface errors.
+                - Benefits:
+                - Enables monitoring of interface health and performance, facilitating prompt resolution of
+                - physical layer problems.
+            - **show config**
+                - show config
+                - The show config command displays the current configuraƟon of the network device.
+                - Usage:
+                - Shows all configured seƫngs, including IP addresses, routing protocols, and security
+                - settings.
+                - Useful for verifying configuration consistency and identifying misconfigurations.
+                - Benefits:
+                - Assists in maintaining and auditing network device configurations, ensuring alignment with
+                - network policies and standards.
+            - **show arp**
+                - show arp
+                - The show arp command displays the ARP table.
+                - Usage:
+                - Maps IP addresses to MAC addresses.
+                - Useful for troubleshooting IP-to-MAC address resolution issues.
+                - Benefits:
+                - Helps in identifying and resolving connecƟvity issues related to ARP, ensuring reliable IP
+                - communication.
+            - **show vlan**
+                - show vlan
+                - The show vlan command displays information about VLAN configurations on a switch.
+                - Usage:
+                - Shows VLAN IDs, names, and associated ports.
+                - Useful for verifying VLAN setup and troubleshooting VLAN-related issues.
+                - Benefits:
+                - Ensures proper network segmentation and enhances security by managing VLAN
+                - configurations eƯectively.
+            - **show power**
+                - show power
+                - The show power command provides information about the power status and consumpƟon of PoE
+                - devices.
+                - Usage:
+                - Displays power allocation, usage, and available power.
+                - Useful for managing PoE budgets and diagnosing power-related issues.
+                - Benefits:
+                - Helps ensure that PoE devices receive adequate power, maintaining network reliability and
+                - performance.
+---

@@ -1,28 +1,29 @@
+- Shorten Glossary
 - {{802.11 standards}} – Wireless LAN standards (Wi-Fi family)
-    - {{802.11a}} – 5 GHz, faster, shorter range
-    - {{802.11b}} – 2.4 GHz, slower, longer range
-    - {{802.11g}} – 2.4 GHz, faster than b
-    - {{802.11n}} (Wi-Fi 4) – MIMO, 2.4/5 GHz, improved speed
-    - {{802.11ac}} (Wi-Fi 5) – 5 GHz, MU-MIMO, faster speeds
-    - {{802.11ax}} (Wi-Fi 6) – High efficiency, congestion performance boost
+  - {{802.11a}} – 5 GHz, faster, shorter range
+  - {{802.11b}} – 2.4 GHz, slower, longer range
+  - {{802.11g}} – 2.4 GHz, faster than b
+  - {{802.11n}} (Wi-Fi 4) – MIMO, 2.4/5 GHz, improved speed
+  - {{802.11ac}} (Wi-Fi 5) – 5 GHz, MU-MIMO, faster speeds
+  - {{802.11ax}} (Wi-Fi 6) – High efficiency, congestion performance boost
 - {{802.11h}} – Avoids radar interference in 5 GHz
 - {{802.1p}} – Sets traffic priority using 3-bit field
 - {{802.1q}} – VLAN tagging across trunk links
 - {{802.1x}} – Port-based authentication for secure LAN access
 - {{802.3 Ethernet standards}} – Standards for wired Ethernet LANs
-    - {{xBASE-y}} – Speed/baseband/media type naming (e.g., 100BASE-T)
-- 
+  - {{xBASE-y}} – Speed/baseband/media type naming (e.g., 100BASE-T)
+-
 - {{access control list}} (ACL) – Defines who can access what resources
 - {{access point}} (AP) – Connects wireless devices to wired network
 - {{access/edge layer}} – Network tier connecting end user devices
 - {{active-active}} – All nodes operate simultaneously in cluster
 - {{active-passive}} – Backup nodes activate only on failure
 - {{ad hoc network}} – Devices connect directly without AP
-    - {{IBSS}} – Independent Basic Service Set (ad hoc)
+  - {{IBSS}} – Independent Basic Service Set (ad hoc)
 - {{address resolution protocol}} (ARP) – Resolves IP to MAC address locally
 - {{addressing}} – Identifies network node (IP/MAC/etc.)
 - {{adjacent channel interference}} (ACI) – Overlapping Wi-Fi channels cause interference
-    - {{channel overlap}} – Another term for ACI
+  - {{channel overlap}} – Another term for ACI
 - {{administrative distance}} (AD) – Ranks trust of routing protocol sources
 - {{administratively down}} – Port disabled via configuration manually
 - {{advanced persistent threat}} (APT) – Long-term, targeted cyber attack campaign
@@ -37,25 +38,25 @@
 - {{authentication header}} (AH) – IPSec protocol for origin and integrity
 - {{authoritative name server}} – DNS server with official domain records
 - {{automatic private IP addressing}} (APIPA) – Self-assigned IP if DHCP fails
-    - {{link local address}} – Address usable only on local subnet
+  - {{link local address}} – Address usable only on local subnet
 - {{automation}} – Scripted provisioning with minimal human input
 - {{autonomous system }}(AS) – Single-entity managed routing domain
 - {{availability monitoring}} – Alerts when network resources go offline
-- 
+-
 - {{backup configuration}} – Settings used when restoring from backup
 - {{band steering}} – Pushes clients to optimal Wi-Fi band
 - {{bandwidth}} – Max data transfer per second (rate)
-    - {{frequency bandwidth}} – Range of supported signal frequencies
+  - {{frequency bandwidth}} – Range of supported signal frequencies
 - {{bandwidth speed tester}} – Tool to measure internet connection speed
 - {{baseline metrics}} – Normal performance values for comparison
 - {{basic service set identifier }}({{BSSID}}) – AP MAC address for Wi-Fi area
 - {{bayonet Neill-Concelman (BNC) connector}} – Twist-lock coaxial cable connector
 - {{bidirectional wavelength division multiplexing }}({{BWDM}}) – Sends/receives on same fiber via wavelength
-    - {{wavelength division multiplexing }}({{WDM}}) – Multiplexing using different light wavelengths
+  - {{wavelength division multiplexing }}({{WDM}}) – Multiplexing using different light wavelengths
 - {{bit rate}} – Data transferred per second (speed)
 - {{border gateway protocol }}({{BGP}}) – Routes between autonomous systems (Internet-scale)
 - {{botnet}} – Infected device group controlled remotely
-    - {{zombie}} – Infected host in a botnet
+  - {{zombie}} – Infected host in a botnet
 - {{bottleneck}} – Slowest component limiting overall performance
 - {{bridge}} – Joins segments, splits collision domains
 - {{bring your own device}} ({{BYOD}}) – Personal devices on corporate networks securely
@@ -66,8 +67,8 @@
 - {{bugfix}} – Software patch for specific code issue
 - {{business continuity plan}} ({{BCP}}) – Ensures operations during major disruptions
 - {{business impact analysis }}({{BIA}}) – Assesses risk to critical operations
-    - {{process assessment}} – Another term for business impact analysis
-- 
+  - {{process assessment}} – Another term for business impact analysis
+-
 - {{cable crimper}} – Tool to attach connector to cable
 - {{cable map}} – Diagram showing building cable routes
 - {{cable stripper}} – Removes jacket from cable or wire
@@ -82,7 +83,7 @@
 - {{change management}} – Manages updates to systems/processes
 - {{channel bonding}} – Combines channels to boost bandwidth
 - {{CIA triad}} – Confidentiality, Integrity, Availability in security
-    - {{AIC triad}} – Same principles in reverse order
+  - {{AIC triad}} – Same principles in reverse order
 - {{cipher suite}} – List of cryptographic algorithms for connections
 - {{Cisco Discovery Protocol }}(CDP) – Cisco-only device discovery protocol
 - {{classful addressing}} – Legacy IP addressing based on octet
@@ -112,18 +113,18 @@
 - {{crosstalk}} – Interference from nearby signal wires
 - {{cryptographic hash algorithm}} – Converts data to fixed-length fingerprint
 - {{cyclic redundancy check }}(CRC) – Error check using frame checksum
-- 
+-
 - {{data at rest}} – Stored data not actively transmitted
 - {{data center interconnect}} (DCI) – Links multiple datacenters via overlay tech
 - {{data in transit}} – Data moving between hosts/networks
 - {{data link layer}} (layer 2) – Transfers data between network nodes
 - {{data remnants}} – Residual data left after deletion
-    - {{remnant}} – Alternate name for data remnants
+  - {{remnant}} – Alternate name for data remnants
 - {{data sovereignty}} – Data laws apply by country/state
 - {{datacenters}} – Facilities hosting computing/networking infrastructure
 - {{deauthentication attack}} – Forces disconnect to capture Wi-Fi credentials
 - {{decibel (dB) loss}} – Signal loss from attenuation/interference
-    - {{insertion loss}} – Alternate term for dB loss
+  - {{insertion loss}} – Alternate term for dB loss
 - {{decommissioning}} – Removing systems from production use
 - {{default gateway}} – Router for non-local traffic routing
 - {{default route}} – Catch-all path for unmatched routes
@@ -156,13 +157,13 @@
 - {{dumpster diving}} – Gathers info from discarded materials
 - {{dynamic host configuration protocol}} (DHCP) – Auto-assigns IPs to network devices
 - {{dynamic routing}} – Routing learned via dynamic protocol
-    - {{learned route}} – Alternate term for dynamic routing
-- 
+  - {{learned route}} – Alternate term for dynamic routing
+-
 - {{east-west traffic}} – Traffic between internal datacenter systems
 - {{effective isotropic radiated power}} (EIRP) – Total signal output including gain/loss
 - {{elasticity}} – Automatically scales resources with demand
 - {{electromagnetic interference}} (EMI) – Magnetic noise disrupts nearby signals
-    - {{interference}} – Alternate term for EMI
+  - {{interference}} – Alternate term for EMI
 - {{encapsulating security protocol }}(ESP) – IPSec protocol for encryption and authentication
 - {{encapsulation}} – Adds headers/trailers to wrap data
 - {{encryption algorithm}} – Secures data using cipher and keys
@@ -171,31 +172,29 @@
 - {{enhanced IGRP }}(EIGRP) – Cisco routing using bandwidth and delay
 - {{enterprise authentication}} – Wi-Fi uses AAA server for verification
 - {{enumeration}} – Lists resources for further attack
-    - {{footprinting}} – Alternate term for enumeration
-    - {{fingerprinting}} – Another enumeration-related method
+  - {{footprinting}} – Alternate term for enumeration
+  - {{fingerprinting}} – Another enumeration-related method
 - {{escalation}} – Involves senior staff for incidents
 - {{Ethernet headers}} – Contain MAC addresses and frame info
 - {{Ethernet VPN}} (EVPN) – BGP advertises VXLAN networks
 - {{evil twin}} – Fake AP tricking users into connection
 - {{explicit deny}} – Manual ACL rule that blocks traffic
 - {{exploit}} – Attack method targeting a vulnerability
-    - {{exploit technique}} – Alternate term for exploit
+  - {{exploit technique}} – Alternate term for exploit
 - {{extended SSID}} (ESSID) – Shared SSID across multiple access points
 - {{extended unique identifier}} (EUI) – Globally unique device/network identifier
-    - {{EUI-48}} – Standard MAC address format
-    - {{EUI-64}} – 64-bit version of MAC address
+  - {{EUI-48}} – Standard MAC address format
+  - {{EUI-64}} – 64-bit version of MAC address
 - {{extensible authentication protocol }}(EAP) – Auth method supporting secure tunneling and hardware
-- 
+-
 - {{general data protection regulation}} (GDPR) – EU law protecting citizens’ personal data
 - {{generic routing encapsulation}} (GRE) – Tunnels various network protocols over IP
 - {{geofencing}} – Enforces location-based access restrictions
 - {{giant}} – Ethernet frame exceeding allowed maximum size
 - {{global positioning system}} (GPS) – Finds location using satellite signals
-- 
+-
 - {{jitter}} – Variation in packet delivery timing
 - {{jumbo frame}} – Ethernet frame >1500 bytes payload
 - {{jump server}} – Secured host for remote access
-- 
+-
 - {{kerberos}} – Time-based ticket system for SSO
-- 
-- 
