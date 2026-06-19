@@ -700,8 +700,9 @@ vRAM::Virtual Random-access Memory
 
 ## CompTIA A+ Acronyms
 
-**Acronym - Spelled Out** AAA::Authentication, Authorization, and Accounting
+**Acronym - Spelled Out**
 
+- AAA::Authentication, Authorization, and Accounting
 - Definition: Framework for controlling access, enforcing security policies, and
   auditing usage.
 - Hint: FFCAESPAAU
@@ -756,6 +757,7 @@ vRAM::Virtual Random-access Memory
     usage.
   - Hint: DORAGFARU
 
+---
 - BEC::Business Email Compromise
   - Definition: Cyber fraud scam targeting business email accounts to authorize
     payments.
@@ -770,6 +772,7 @@ vRAM::Virtual Random-access Memory
   - Definition: Corporate policy allowing employees to use personal devices for
     work.
   - Hint: CPAETUPDFW
+---
 
 - CAC::Calling-card Authorization Computer
   - Definition: Verification computer system authorizing calling cards or smart
@@ -824,6 +827,7 @@ vRAM::Virtual Random-access Memory
     authority before expiration.
   - Hint: LODCRBTCABE
 
+---
 - DB-9::Serial Communications D-Shell Connector, 9 pins
   - Definition: D-subminiature connector type with nine pins used for serial
     communication.
@@ -858,6 +862,7 @@ vRAM::Virtual Random-access Memory
   - Definition: Digital visual display interface supporting only digital video
     signals.
   - Hint: DVDISODVS
+---
 
 - ECC::Error-correcting Code
   - Definition: Memory technology detecting and correcting internal data
@@ -888,6 +893,7 @@ ext::Extended File System
 - Definition: Family of file systems designed specifically for the Linux kernel.
 - Hint: FOFSDSFTLK
 
+---
 - FRT::Facial Recognition Technology
   - Definition: Biometric technology identifying or verifying individuals using
     facial characteristics.
@@ -906,6 +912,7 @@ ext::Extended File System
 - FSB::Front-Side Bus
   - Definition: Internal computer bus connecting the CPU to main system memory.
   - Hint: ICBCTCTMSM
+---
 
 - GFS::Grandfather-Father-Son
   - Definition: Common backup rotation scheme using grandfather, father, and son
@@ -927,6 +934,7 @@ ext::Extended File System
     communication protocols.
   - Hint: GSFCNDMCP
 
+---
 - HSM::Hardware Security Module
   - Definition: Physical hardware security device safeguarding and managing
     cryptographic keys.
@@ -951,6 +959,7 @@ ext::Extended File System
   - Definition: Digital copy protection preventing interception of audio and
     video signals.
   - Hint: DCPPIOAAVS
+---
 
 - IAM::Identity and Access Management
   - Definition: Business framework managing digital user identities and their
@@ -997,6 +1006,7 @@ ext::Extended File System
     recover from incidents.
   - Hint: DPHORTARFI
 
+---
 - KVM::Keyboard-Video-Mouse
   - Definition: Hardware switch controlling multiple computers from a single
     workstation setup.
@@ -1006,6 +1016,7 @@ ext::Extended File System
   - Definition: Information repository used for managing and sharing diagnostic
     knowledge.
   - Hint: IRUFMASDK
+---
 
 - LC::Lucent/Local Connector
   - Definition: Small form-factor fiber optic connector using a push-pull
@@ -1027,6 +1038,7 @@ ext::Extended File System
     current passes through.
   - Hint: SLSELWECPT
 
+---
 - MBR::Master Boot Record
   - Definition: First sector of partitioned storage devices containing boot
     information.
@@ -1067,8 +1079,7 @@ ext::Extended File System
     servers.
   - Hint: DDRDETTIMS
 
-mSATA::Mini-serial Advanced Technology Attachment
-
+- mSATA::Mini-serial Advanced Technology Attachment
 - Definition: SATA interface standard optimized for compact solid-state storage
   devices.
 - Hint: SISOFCSSSD
@@ -1097,6 +1108,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Windows utility allowing technicians to remotely view and
     control computers.
   - Hint: WUATTRVACC
+---
 
 - NetBIOS::Network Basic Input/Output System
   - Definition: API providing services for applications on separate computers to
@@ -1118,6 +1130,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     networks.
   - Hint: PACUTARFON
 
+---
 - OLED::Organic Light-emitting Diode
   - Definition: Display technology utilizing organic thin-films that emit light
     directly.
@@ -1136,6 +1149,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Technology converting images of typed or handwritten text into
     data.
   - Hint: TCIOTOHTID
+---
 
 - PAM::Privileged Access Management
   - Definition: Privileged Access Management policies and tools managing
@@ -1186,6 +1200,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     information.
   - Hint: DFICPCCRBI
 
+---
 - RADIUS::Remote Authentication Dial-in User Server
   - Definition: Networking protocol providing centralized authentication,
     authorization, and accounting management.
@@ -1224,6 +1239,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - RTO::Recovery Time Objective
   - Definition: Target duration of time within which systems must be restored.
   - Hint: TDOTWWSMBR
+---
 
 - S.M.A.R.T::Self-monitoring Analysis and Reporting Technology
   - Definition: Monitoring system in storage drives predicting hardware
@@ -1313,11 +1329,6 @@ mSATA::Mini-serial Advanced Technology Attachment
     control interfaces.
   - Hint: NAMDFTSCI
 
-- SIM::Subscriber Identity Module
-  - Definition: Smart card storing cellular subscriber keys and configuration
-    data.
-  - Hint: SCSCSKACD
-
 - SIMM::Single Inline Memory Module
   - Definition: Older memory module type with redundant pins on both sides.
   - Hint: OMMTWRPOBS
@@ -1341,6 +1352,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     electromagnetic interference.
   - Hint: TPCCWSREI
 
+---
 - TACACS::Terminal Access Controller Access-control System
   - Definition: Legacy security protocol managing access control for remote
     network connections.
@@ -1365,6 +1377,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Simple file transfer protocol transferring data without
     authentication mechanisms.
   - Hint: SFTPTDWAM
+---
 
 - UAC::User Account Control
   - Definition: Windows security feature prompting users before executing
@@ -1396,6 +1409,9 @@ mSATA::Mini-serial Advanced Technology Attachment
     resources.
   - Hint: CFSPLOSNR
 
+- UTP::Unshield Twisted Pair
+
+---
 - VA::Vertical Alignment
   - Definition: Display screen technology offering deep contrast ratios and
     blacks.
@@ -1425,6 +1441,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Specialized computer memory dedicated to buffering graphical
     display frames.
   - Hint: SCMDTBGDF
+---
 
 - WISP::Wireless Internet Service Provider
   - Definition: Service provider delivering internet connections over local
