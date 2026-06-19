@@ -1,3 +1,4 @@
+- Core Physical & Hardware Concepts
 - {{AC (Alternating Current)}} - Reversing electrical current flow
 - {{DC (Direct Current)}} - One-directional electrical current
 - {{Electrical signal}} - Voltage level representing data
@@ -27,7 +28,8 @@
 - {{DIMM (Dual Inline Memory Module)}} - RAM stick for motherboards
 - {{SATA (Serial ATA)}} - Interface for storage devices
 - {{NVMe (Non-Volatile Memory Express)}} - High-speed PCIe SSD protocol
-- {{SFP (Small Form-factor Pluggable)}} - Pluggable fiber/Ethernet connector module
+- {{SFP (Small Form-factor Pluggable)}} - Pluggable fiber/Ethernet connector
+  module
 - {{eSATA (External SATA)}} - External storage connection interface
 - {{Motherboard}} - Main board connecting all components
 - {{NIC (Network Interface Card)}} - Hardware enabling network connectivity
@@ -56,12 +58,15 @@
 - {{Projector}} - Projects video onto surface
 - {{Webcam}} - Captures video input
 - {{UPS (Uninterruptible Power Supply)}} - Backup power during outage
-- 
+
+---
+
 - {{Binary}} - Base-2 numeral system (0, 1)
 - {{Decimal}} - Base-10 numeral system
 - {{Octal}} - Base-8 numeral system
 - {{Hexadecimal}} - Base-16 numeral system
-- {{ASCII (American Standard Code for Information Interchange)}} - Character encoding standard
+- {{ASCII (American Standard Code for Information Interchange)}} - Character
+  encoding standard
 - {{Unicode}} - Universal encoding for all characters
 - {{Encoding}} - Converts data into a readable format
 - {{String}} - Sequence of characters
