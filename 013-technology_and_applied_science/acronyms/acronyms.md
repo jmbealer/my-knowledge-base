@@ -1446,6 +1446,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     radio nodes.
   - Hint: DWCNCOMRN
 
+---
 - XDR::Extended Detection and Response
   - Definition: Security platform correlating threat indicators across diverse
     channels.
@@ -1460,7 +1461,6 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Web security vulnerability allowing attackers to inject
     malicious scripts.
   - Hint: WSVAATIMS
-
 ---
 
 ## Network Plus
@@ -1479,6 +1479,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     share data.
   - Hint: IASATCASD
 
+---
 - BGP::Border Gateway Protocol
   - Definition: Protocol routing data across autonomous systems on the internet.
   - Hint: PRDAASOTI
@@ -1491,6 +1492,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - BSSID::Basic Service Set Identifier
   - Definition: Unique hardware MAC address identifying a wireless access point.
   - Hint: UHMAIAWAP
+---
 
 - CAM 2::Content-addressable Memory
   - Definition: Memory looking up data by content rather than addresses.
@@ -1521,6 +1523,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     networks.
   - Hint: EDCVDIOSON
 
+---
 - DAC::Direct Attach Copper
   - Definition: Short-range twinaxial copper cable with directly attached
     transceiver ends.
@@ -1555,6 +1558,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: IT policies and procedures restoring critical operations after
     disasters.
   - Hint: IPAPRCOAD
+---
 
 - EAPoL::Extensible Authentication Protocol over LAN
   - Definition: Network authentication protocol encapsulating EAP packets over
@@ -1581,6 +1585,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     APs.
   - Hint: SSINWNUMA
 
+---
 - FC::Fibre Channel
   - Definition: High-speed gigabit network technology connecting storage drives
     to servers.
@@ -1590,12 +1595,14 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Protocols providing gateway redundancy for host connections on
     networks.
   - Hint: PPGRFHCON
+---
 
 - GRE::Generic Routing Encapsulation
   - Definition: Cisco tunneling protocol encapsulating diverse network layer
     packets.
   - Hint: CTPEDNLP
 
+---
 - IaC::Infrastructure as Code
   - Definition: Provisioning infrastructure resources using machine-readable
     configuration files.
@@ -1635,6 +1642,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Link-state routing protocol directing data packets within
     networks.
   - Hint: LSRPDDPWN
+---
 
 - LACP::Link Aggregation Control Protocol
   - Definition: Protocol aggregating multiple physical network links into one
@@ -1651,6 +1659,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     identity information.
   - Hint: VNPANDTAII
 
+---
 - MDF::Main Distribution Frame
   - Definition: Main distribution frame coordinating primary network cabling
     within buildings.
@@ -1682,6 +1691,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - MTU::Maximum Transmission Unit
   - Definition: Largest data packet size that can be transmitted over networks.
   - Hint: LDPSTCBTON
+---
 
 - NAC::Network Access Control
   - Definition: Security solution validating device compliance before granting
@@ -1703,6 +1713,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     Protocol exchanges.
   - Hint: EPCVFNTPE
 
+---
 - OSPF::Open Shortest Path First
   - Definition: Link-state routing protocol determining shortest paths for data
     packets.
@@ -1717,6 +1728,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Hardware and software monitoring or controlling physical
     industrial machinery.
   - Hint: HASMOCPIM
+---
 
 - PAT::Port Address Translation
   - Definition: Extension of NAT mapping private addresses to single public IPs.
@@ -1746,6 +1758,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: DNS database record mapping IP addresses to domain names.
   - Hint: DDRMIATDN
 
+---
 - QoS::Quality of Service
   - Definition: Traffic control mechanisms prioritizing network bandwidth for
     critical applications.
@@ -1755,6 +1768,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Compact hot-pluggable transceiver module supporting high-speed
     network interfaces.
   - Hint: CHPTMSHSNI
+---
 
 - RFID::Radio Frequency Identifier
   - Definition: Identification technology utilizing small wireless
@@ -1781,6 +1795,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     signals.
   - Hint: PCODRDTS
 
+---
 - SASE::Secure Access Service Edge
   - Definition: Cloud architecture combining WAN functions with security service
     edges.
@@ -1820,6 +1835,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Virtual switch interface routing traffic between virtual local
     networks.
   - Hint: VSIRTBVLN
+---
 
 - TACACS+::Terminal Access Controller Access Control System Plus
   - Definition: AAA security protocol proprietary to Cisco systems managing
@@ -1839,6 +1855,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     strings.
   - Hint: DDRCDHRTS
 
+---
 - VIP::Virtual IP
   - Definition: IP address shared across multiple servers for redundancy.
   - Hint: IASAMSFR
@@ -1857,16 +1874,17 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Virtual network overlay extending layer two segments across
     layer three.
   - Hint: VNOELTSALT
+---
 
 - WPS::Wi-Fi Protected Setup
   - Definition: Standard simplifying the setup of wireless home networks.
   - Hint: SSTSOWHN
 
+---
 - ZTA::Zero Trust Architecture
   - Definition: Security model eliminating implicit trust, verifying every
     access request.
   - Hint: SMEITVEAR
-
 ---
 
 ## Security Plus
@@ -1900,11 +1918,17 @@ mSATA::Mini-serial Advanced Technology Attachment
     exploits.
   - Hint: SMRMASTPE
 
+- ATT&CK::Adversarial Tactics, Techniques, and Common Knowledge
+  - ATT&CK (Adversarial Tac�cs, Techniques, and Common Knowledge): A knowledge
+    base maintained by
+  - MITRE for lis�ng and explaining cyber adversary behavior.
+
 - AV::Antivirus
   - Definition: Software application scanning and eliminating malicious virus
     files.
   - Hint: SASAEMVF
 
+---
 - BASH::Bourne Again Shell
   - Definition: Popular command-line shell script language for Unix-based
     systems.
@@ -1929,6 +1953,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Data packets exchanged by switches utilizing Spanning Tree
     Protocol.
   - Hint: DPEBSUSTP
+---
 
 - CA::Certificate Authority
   - Definition: Trusted entity issuing digital identity certificates to
@@ -2048,6 +2073,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     lists.
   - Hint: PLESWDFPL
 
+---
 - DAC 2::Discretionary Access Control
   - Definition: Access control scheme assigning user privileges based on owner
     discretion.
@@ -2090,6 +2116,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Standard cryptographic method generating valid digital
     authentication signatures.
   - Hint: SCMGVDAS
+---
 
 - EAP::Extensible Authentication Protocol
   - Definition: Authentication framework defining structured message formats
@@ -2126,6 +2153,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     microchips.
   - Hint: UMSIEOMPM
 
+---
 - FACL::File System Access Control List
   - Definition: Data structure defining security permissions for files and
     folders.
@@ -2150,6 +2178,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Biometric error rate measuring incorrect rejections of valid
     users.
   - Hint: BERMIROVU
+---
 
 - GCM::Galois Counter Mode
   - Definition: Symmetric block cipher mode offering high-speed confidentiality
@@ -2165,6 +2194,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     Windows.
   - Hint: GPOMUCSOW
 
+---
 - HA::High Availability
   - Definition: System design guaranteeing operational uptime performance over
     long periods.
@@ -2194,6 +2224,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Systems controlling indoor environmental air quality and
     temperatures.
   - Hint: SCIEAQAT
+---
 
 - IDEA::International Data Encryption Algorithm
   - Definition: Symmetric key block cipher encrypting sixty-four bit data
@@ -2231,6 +2262,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Random seed value initiating block cipher encryption operations.
   - Hint: RSVIBCEO
 
+---
 - KDC::Key Distribution Center
   - Definition: Kerberos system component authenticating users and issuing
     tickets.
@@ -2239,6 +2271,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - KEK::Key Encryption Key
   - Definition: Cryptographic key used to encrypt and protect other keys.
   - Hint: CKUTEAPOK
+---
 
 - L2TP::Layer 2 Tunneling Protocol
   - Definition: Tunneling protocol extending virtual private networks over
@@ -2249,6 +2282,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Proprietary wireless authentication protocol developed by Cisco.
   - Hint: PWAPDBC
 
+---
 - MaaS::Monitoring as a Service
   - Definition: Cloud model outsourcing network monitoring operations to
     providers.
@@ -2313,6 +2347,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - MTTR 2::Mean Time to Recover
   - Definition: Average recovery time required to restore failed systems.
   - Hint: ARTRTRFS
+---
 
 - NGFW::Next-generation Firewall
   - Definition: Integrated firewall combining inspection filters with deep
@@ -2338,6 +2373,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     connections.
   - Hint: LMAPSVRC
 
+---
 - OAUTH::Open Authorization
   - Definition: Authorization standard granting applications restricted access
     without passwords.
@@ -2363,6 +2399,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - OVAL::Open Vulnerability Assessment Language
   - Definition: Standard XML schema organizing system vulnerability assessments.
   - Hint: SXSOSVA
+---
 
 - P12::PKCS #12
   - Definition: Certificate archive file format protecting cryptographic keys.
@@ -2443,6 +2480,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     controls.
   - Hint: CHCOPTAZC
 
+---
 - RA::Recovery Agent
   - Definition: System administrator authorized to verify digital certificate
     requests.
@@ -2510,6 +2548,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - RTP::Real-time Transport Protocol
   - Definition: Protocol delivering audio and video streams over networks.
   - Hint: PDAAVSON
+---
 
 - S/MIME::Secure/Multipurpose Internet Mail Extensions
   - Definition: Standard protocol encrypting and digitally signing email
@@ -2625,6 +2664,7 @@ mSATA::Mini-serial Advanced Technology Attachment
     traffic.
   - Hint: GFEPABMWT
 
+---
 - TAXII::Trusted Automated eXchange of Indicator Information
   - Definition: Protocol standard sharing threat indicators using STIX schemas.
   - Hint: PSSTIUSS
@@ -2650,6 +2690,7 @@ mSATA::Mini-serial Advanced Technology Attachment
 - TSIG::Transaction Signature
   - Definition: Cryptographic method securing DNS database update messages.
   - Hint: CMSDDUM
+---
 
 - UAT::User Acceptance Testing
   - Definition: Phase validating software solutions satisfy actual business
@@ -2674,6 +2715,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Specification allowing USB devices to act as hosts.
   - Hint: SAUDTAAH
 
+---
 - VBA::Visual Basic
   - Definition: Microsoft macro language automating operations in Office tools.
   - Hint: MMLAOIOT
@@ -2687,6 +2729,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Interactive video system connecting remote participants in
     real-time.
   - Hint: IVSCRPIRT
+---
 
 - WAF::Web Application Firewall
   - Definition: Firewall filtering HTTP traffic to protect web applications.
@@ -2712,6 +2755,7 @@ mSATA::Mini-serial Advanced Technology Attachment
   - Definition: Symmetric security protocol designed for mobile wireless links.
   - Hint: SSPDFMWL
 
+---
 - XDR::Extended Detection and Response
   - Definition: Security platform correlating threat indicators across diverse
     channels.
@@ -2728,3 +2772,4 @@ mSATA::Mini-serial Advanced Technology Attachment
 - XSRF::Cross-site Request Forgery
   - Definition: Vulnerability forcing browsers to execute unwanted web actions.
   - Hint: VFBTEUWA
+---
