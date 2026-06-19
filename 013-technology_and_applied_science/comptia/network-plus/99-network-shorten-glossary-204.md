@@ -1,3 +1,7 @@
+---
+date created: Saturday, January 31st 2026, 1:46:02 am
+date modified: Monday, June 15th 2026, 7:54:57 pm
+---
 - Shorten Glossary
 - {{802.11 standards}} – Wireless LAN standards (Wi-Fi family)
   - {{802.11a}} – 5 GHz, faster, shorter range

@@ -1,3 +1,7 @@
+---
+date created: Saturday, May 16th 2026, 3:03:44 pm
+date modified: Monday, June 15th 2026, 10:02:57 pm
+---
 - **4.0 Network Security 14%**
 - **5.0 Network Troubleshooting 24%**
 - **CompTIA Network+ Proposed Hardware and Software List**

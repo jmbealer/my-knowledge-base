@@ -1,1764 +1,2329 @@
-- CompTIA Tech+/ITF+ FC0-71 Acronyms
-    - 
-    - **Acronym - Spelled Out** 
-    - AC::Alternating Current
-        - AC (alternating current) Type of electricity in which the flow of
-        - electrons alternates direction, back and forth, in a circuit.
-    - ACL::Access Control List
-        - ACL - Access Control List: A set of rules used to control network traƯic and access to resources.
-        - ACL (Access Control List): A table that tells a computer opera�ng system which access rights each user
-        - has to a par�cular system object, such as a file directory or individual file.
-    - AES::Advanced Encryption Standard
-        - AES (Advanced Encryp�on Standard): A symmetric encryp�on algorithm widely used across the globe to
-        - secure data.
-    - AI::Artificial Intelligence
-        - AI (Ar�ficial Intelligence): The simula�on of human intelligence processes by machines, especially
-        - computer systems.
-    - AIO::All In One
-    - APIPA::Automatic Private Internet Protocol Addressing
-        - APIPA - Automatic Private Internet Protocol Addressing: A method for self-assigning an IP address
-        - when a DHCP server is unavailable.
-    - ARM::Advanced RISC Machines
-        - ARM Energy-efficient processor design frequently used in mobile
-        - devices.
-    - ARP::Address Resolution Protocol
-        - ARP - Address Resolution Protocol: A protocol used to map IP addresses to MAC addresses.
-            - ARP (Address Resolu�on Protocol): A communica�on protocol used for discovering the link layer
-            - address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.
-    - ASCII::American Standard Code for Information Interchange
-        - ASCII (American Standard Code for Information
-        - Interchange) Industry-standard 8-bit characters used to define text
-        - characters, consisting of 96 upper- and lowercase letters, plus 32
-        - nonprinting control characters, each of which is numbered. These numbers
-        - were designed to achieve uniformity among computer devices for printing
-        - and the exchange of simple text documents.
-    - 
-    - BD-ROM::Blu-ray Disc Read-only Memory
-        - BD-ROM (Blu-ray Disc-Read Only Media) Blu-ray Disc equivalent of
-        - a DVD-ROM or CD-ROM. (See also Blu-ray Disc [BD].)
-    - BIOS::Basic Input/Output System
-        - BIOS (Basic Input/Output System): Firmware used to perform hardware ini�aliza�on during the boo�ng
-        - process and to provide run�me services for opera�ng systems and programs.
-    - BPS::Bits Per Second
-        - bps (bits per second) Measurement of how fast data is moved from one
-        - place to another. A 56K modem can move ~56,000 bits per second.
-    - 
-    - CAD::Computer-aided Design
-    - CAM::Computer-aided Manufacturing
-    - CAN::Controller Area Network
-    - CD::Compact Disc
-        - CD (compact disc) Originally designed as the replacement for vinyl
-        - records; has become the primary method of long-term storage of music
-        - and data.
-    - CD-ROM::Compact Disc-Read-only Memory
-        - CD-ROM (compact disc/read-only memory) Read-only compact
-        - storage disc for audio or video data. CD-ROMs are read by using CD-
-        - ROM drives and optical drives with backward compatibility, such as DVD
-        - and Blu-ray Disc drives.
-    - CD-RW::Compact Disc-Rewritable
-        - CD-RW (CD-rewritable) CD technology that accepts multiple
-        - reads/writes like a hard drive.
-    - CLI::Command-line Interface
-        - CLI - Command-line Interface: A text-based interface used to interact with software and operating
-            - systems.
-    - CPU::Central Processing Unit
-        - CPU - Central Processing Unit: The primary component of a computer that performs most of the
-        - processing.
-        - CPU (central processing unit) “Brain” of the computer. Microprocessor
-        - that handles primary calculations for the computer. CPUs are known by
-        - names such as Core i5 and Phenom II.
-    - CRUD::Create, Read, Update, Delete
-        - CRUD Create, read, update, delete; common database transactions.
-    - CSS::Cascading Style Sheets
-        - Cascading Style Sheet CSS; a web design document that centrally
-        - controls web page formatting.
-    - 
-    - DC::Direct Current
-        - DC (direct current) Type of electricity in which the flow of electrons is
-        - in a complete circle in one direction.
-    - DDL::Data Definition Language
-        - data definition language DDL; a schema used to define database storage
-        - structures.
-    - DDR::Double Data Rate
-        - DDR (double data rate) Shortened reference to memory technology,
-        - such as DDR SDRAM. Similarly, DDR2 can refer to DDR2 SDRAM,
-        - DDR3 to DDR3 SDRAM, and so on.
-    - DDoS::Distributed Denial of Service
-        - DDoS - Distributed Denial-of-service: A type of attack where multiple systems overwhelm a target
-        - with traƯic.
-            - DDoS (Distributed Denial of Service): A type of cyber‐a�ack where mul�ple compromised computer
-            - systems a�ack a target, such as a server, website, or other network resource, and cause a denial of
-            - service for users of the targeted resource.
-    - DHCP::Dynamic Host Configuration Protocol
-        - DHCP - Dynamic Host Configuration Protocol: A protocol that automatically assigns IP addresses
-        - to devices on a network.
-            - DHCP (Dynamic Host Configura�on Protocol): A network management protocol used on IP networks
-            - whereby a DHCP server dynamically assigns an IP address and other network configura�on parameters
-            - to each device on a network.
-    - DIMM::Dual Inline Memory Module
-        - DIMM (dual inline memory module) 32- or 64-bit type of DRAM
-        - packaging with the distinction that each side of each tab inserted into the
-        - system performs a separate function. DIMMs come in a variety of sizes,
-        - 
-        - with 184-, 240-, and 288-pin being the most common on desktop
-        - computers.
-    - DLL::Dynamic Link Library
-        - DLL (Dynamic Link Library): A feature of Windows and other opera�ng systems that allows mul�ple
-        - so�ware programs to share the same func�onality.
-    - DLP::Data Loss Prevention
-        - DLP - Data Loss Prevention: Technologies and strategies to prevent the unauthorized transmission
-        - of data.
-            - DLP (Data Loss Preven�on): A set of tools and processes used to ensure that sensi�ve data is not lost,
-            - misused, or accessed by unauthorized users.
-            - data loss prevention DLP; controls put in place to protect sensitive data
-            - or intellectual property.
-    - DML::Data Manipulation Language
-        - data manipulation language Computer programming language used to
-        - perform database CRUD operations.
-    - DNS::Domain Name System
-        - DNS - Domain Name System: A system that translates domain names into IP addresses.
-            - DNS (Domain Name System): The phonebook of the Internet, a hierarchical and decentralized naming
-            - system for computers, services, or other resources connected to the Internet or a private network.
-    - DSL::Digital Subscriber Line
-        - DSL (Digital Subscriber Line): A family of technologies that provide internet access by transmi�ng digital
-        - data over the wires of a local telephone network.
-    - DVD::Digital Video Disc
-        - DVD (digital versatile disc) Optical disc format that provides for 4 GB
-        - to 17 GB of video or data storage.
-    - DVD-R::Digital Video Disc-Recordable
-    - DVD-RW::Digital Video Disc-Rewritable
-    - DVI::Digital Visual Interface
-        - DVI (Digital Visual Interface) Special video connector designed for
-        - digital-to-digital connections; most commonly seen on PC video cards and
-        - 
-        - LCD monitors. Some versions also support analog signals with a special
-        - adapter.
-    - DaaS::Desktop as a Service
-    - DoS::Denial of Service
-        - DoS - Denial-of-service: An attack that makes a network service unavailable to its intended users.
-        - DoS (Denial of Service): A cyber‐a�ack in which the perpetrator seeks to make a machine or network
-        - resource unavailable to its intended users by temporarily or indefinitely disrup�ng services of a host
-        - connected to the Internet.
-        - DoS (denial of service) An attack on a computer resource that prevents it
-        - from performing its normal operations, usually by overwhelming it with
-        - large numbers of requests in an effort to monopolize its resources.
-    - 
-    - EMI::Electromagnetic Interference
-        - electromagnetic interference (EMI) Electrical interference from one
-        - device to another, resulting in poor performance of the device being
-        - interfered with. Examples are static on your TV while running a blow
-        - dryer and placing two monitors too close together and getting a “shaky”
-        - screen.
-    - ESD::Electrostatic Discharge
-        - electrostatic discharge (ESD) Uncontrolled rush of electrons from one
-        - object to another. This is a real menace to PCs, as it can cause permanent
-        - damage to semiconductors.
-    - EULA::End User License Agreement
-        - EULA - End User License Agreement: A legal contract between a software provider and the user,
-        - outlining the terms of use.
-    - eSATA::External Serial Advanced Technology Attachment
-        - eSATA (external SATA) Serial ATA-based connector for external hard
-        - drives and optical drives.
-    - 
-    - FAT::File Allocation Table
-        - FAT (file allocation table) Hidden table that records how files on a hard
-        - disk are stored in distinct clusters; the only way DOS knows where to
-        - access files. Address of first cluster of a file is stored in the directory file.
-        - FAT entry for the first cluster is the address of the second cluster used to
-        - store that file. In the entry for the second cluster for that file is the address
-        - for the third cluster, and so on, until the final cluster, which gets a special
-        - end-of-file code. There are two FATs, mirror images of each other, in case
-        - one is destroyed or damaged. This also refers to the 16-bit file allocation
-        - table when used by Windows 2000 and later NT-based operating systems.
-    - FAT32::32-bit File Allocation Table
-        - FAT32 File allocation table; a file system type that uses 32 bits to
-        - 
-        - address and index file clusters. This is commonly used with USB flash-
-        - media drives and older versions of Windows.
-    - FTP::File Transfer Protocol
-        - FTP - File Transfer Protocol: A standard network protocol used to transfer files between a client and
-        - server.
-        - FTP (File Transfer Protocol): A standard network protocol used for the transfer of computer files
-        - between a client and server on a computer network.
-    - FTPS::File Transfer Protocol Secure
-        - FTPS (Secured File Transfer Protocol): An extension of FTP that adds support for the Transport Layer Security (TLS) and the Secure Sockets Layer (SSL) cryptographic protocols.
-    - 
-    - GB::Gigabyte
-    - GDPR::General Data Protection Regulation
-        - GDPR - General Data Protection Regulation: A regulation in the EU governing data protection and
-        - privacy.
-        - GDPR (General Data Protec�on Regula�on): A regula�on in EU law on data protec�on and privacy in the
-        - European Union and the European Economic Area.
-    - GHz::Gigahertz
-    - GPS::Global Positioning System
-        - GPS (Global Posi�oning System): A satellite‐based radionaviga�on system owned by the United States
-        - government and operated by the United States Space Force.
-        - Global Positioning System (GPS) Technology that enables a mobile
-        - device to determine where you are on a map.
-    - GPU::Graphics Processing Unit
-        - GPU (Graphics Processing Unit): A specialized electronic circuit designed to rapidly manipulate and alter
-        - memory to accelerate the crea�on of images in a frame buffer intended for output to a display device.
-        - GPU (graphics processing unit) Specialized processor that helps the
-        - CPU by taking over all of the 3-D rendering duties.
-    - GUI::Graphical User Interface
-        - GUI - Graphical User Interface: A visual interface allowing users to interact with a computer using
-        - graphical elements like icons and buttons.
-    - Gb::Gigabit
-    - Gbps::Gigabit per second
-    - 
-    - HDD::Hard Disk Drive
-        - HDD (Hard Disk Drive): A data storage device that uses magne�c storage to store and retrieve digital
-        - informa�on using one or more rigid rapidly rota�ng disks coated with magne�c material.
-    - HDMI::High-definition Multimedia Interface
-        - HDMI (High Definition Multimedia Interface) Single multimedia
-        - connection that includes both high-definition video and audio. One of the
-        - best connections for outputting to television. It also contains copy
-        - protection features.
-    - HFS::Hierarchical File System
-        - HFS Hierarchical file system; file system used on macOS.
-    - HTML::Hypertext Markup Language
-        - HTML (Hypertext Markup Language): The standard markup language for documents designed to be
-        - displayed in a web browser.
-    - HTTP::Hypertext Transfer Protocol
-        - HTTP - Hypertext Transfer Protocol: A protocol used for transmitting hypertext (web pages) over the
-        - internet.
-            - HTTP (Hypertext Transfer Protocol): An applica�on protocol for distributed, collabora�ve, hypermedia
-            - informa�on systems.
-    - HTTPS::Hypertext Transfer Protocol Secure
-        - HTTPS - Hypertext Transfer Protocol Secure: A secure version of HTTP that encrypts data for safe
-        - communication over the internet.
-            - HTTPS (Hypertext Transfer Protocol Secure): An extension of HTTP for secure communica�on over a
-            - computer network, and is widely used on the Internet.
-    - 
-    - ICMP::Internet Control Message Protocol
-        - ICMP - Internet Control Message Protocol: A network protocol used for error handling and
-        - diagnostics in IP networks.
-            - ICMP (Internet Control Message Protocol): Used by network devices, including routers, to send error
-            - messages and opera�onal informa�on indica�ng success or failure when communica�ng with another IP
-            - address.
-    - IDE::Integrated Development Environment
-    - IDS::Intrusion Detection System
-        - IDS - Intrusion Detection System: A system that monitors network traƯic for suspicious activity and
-        - potential threats.
-            - IDS (Intrusion Detec�on System): A device or so�ware applica�on that monitors a network or systems
-            - for malicious ac�vity or policy viola�ons.
-    - IMAP::Internet Mail Access Protocol
-        - IMAP (Internet Message Access Protocol): An internet standard protocol used by email clients to
-        - retrieve messages from a mail server over a TCP/IP connec�on.
-    - IMAPS::Internet Mail Access Protocol Secure
-    - IOPS::Input/Output Operations Per Second
-    - IP::Internet Protocol
-        - IP - Internet Protocol: A protocol responsible for addressing and routing packets of data across
-        - networks.
-            - IP (Internet Protocol): The principal communica�ons protocol in the Internet protocol suite for relaying
-            - datagrams across network boundaries.
-    - IPS::Intrusion Prevention System
-        - IPS - Intrusion Prevention System: A system that actively monitors and blocks potential threats to
-        - the network.
-        - IPS (Intrusion Preven�on System): A network security/threat preven�on technology that examines
-        - network traffic flows to detect and prevent vulnerability exploits.
-    - IR::Infrared
-    - ISP::Internet Service Provider
-        - ISP (Internet Service Provider): A company that provides subscribers with access to the Internet.
-    - IaaS::Infrastructure as a Service
-        - IaaS - Infrastructure as a Service: A cloud computing model that provides virtualized computing
-        - resources over the internet.
-            - IaaS (Infrastructure as a Service): A form of cloud compu�ng that provides virtualized compu�ng
-            - resources over the internet.
-    - IoT::Internet of Things
-        - IoT - Internet of Things: A network of physical objects embedded with sensors and software to
-        - connect and exchange data with other devices.
-        - IoT (Internet of Things): The extension of Internet connec�vity into physical devices and everyday
-        - objects.
-    - 
-    - KB::Kilobyte
-    - Kb::Kilobit
-    - Kbps::Kilobit per second
-    - 
-    - LAN::Local Area Network
-        - LAN - Local Area Network: A network that connects devices within a limited area, such as a home,
-        - school, or oƯice.
-            - LAN (Local Area Network): A network that connects computers within a limited area such as a residence,
-            - school, laboratory, university campus or office building.
-    - LTE::Long-term Evolution
-    - 
-    - MAC::Media Access Control
-        - MAC - Media Access Control: A unique identifier assigned to network interfaces for
-        - communications on the physical network.
-            - MAC (Media Access Control): A unique iden�fier assigned to a network interface controller for use as a
-            - network address in communica�ons within a network segment.
-    - MAN::Metropolitan Area Network
-        - MAN (Metropolitan Area Network): A network that interconnects users with computer resources in a
-        - geographic area or region larger than that covered by even a large local area network (LAN) but smaller
-        - than the area covered by a wide area network (WAN).
-    - MB::Megabyte
-    - MHz::Megahertz
-    - MITM::Man in the Middle
-        - man-in-the-middle attack (MITM) An attacker impersonating one party
-        - of an active network conversation and replaying previous captured traffic
-        - that has been modified by the attacker; a type of replay attack.
-    - MP3::Moving Picture Experts Group Layer-3 Audio
-        - MP3 Short for MPEG Audio Layer 3, a type of compression used
-        - specifically for turning high-quality digital audio files into much smaller
-        - yet similar-sounding files.
-    - MP4::Moving Picture Experts Group Layer-4
-    - Mb::Megabit
-    - Mbps::Megabit per second
-    - 
-    - NAS::Network Attached Storage
-        - NAS - Network-attached Storage: A storage device connected to a network that provides data
-        - access to a group of clients.
-    - NAT::Network Address Translation
-        - NAT - Network Address Translation: A method of remapping IP addresses by modifying network
-        - address information in packet headers.
-            - NAT (Network Address Transla�on): A method of remapping one IP address space into another by
-            - modifying network address informa�on in the IP header of packets while they are in transit across a
-            - traffic rou�ng device.
-    - NDA::Non-Disclosure Agreement
-        - NDA (Non‐disclosure Agreement): A legally binding contract establishing a confiden�al rela�onship.
-    - NFC::Near Field Communication
-        - NFC (Near Field Communica�on): A set of communica�on protocols that enable two electronic devices,
-        - one of which is usually a portable device such as a smartphone, to establish communica�on by bringing
-        - them within 4 cm of each other.
-    - NIC::Network Interface Card
-        - NIC - Network Interface Card: A hardware component that connects a computer to a network.
-    - NTFS::New Technology File System
-        - NTFS (New Technology File System): A proprietary file system developed by Microso�.
-    - NVMe::Non-volatile Memory Express
-    - 
-    - OEM::Original Equipment Manufacturer
-        - OEM (original equipment manufacturer) Company that produces
-        - software or computer parts that other companies sell in their end products.
-        - Microsoft develops Windows OS, for example, that many companies sell
-        - with their PCs. Microsoft is the OEM for Windows. Alternatively, refers to
-        - 
-        - companies that source parts from contract manufacturers but brand the end
-        - product as their own. Several Chinese companies make the circuit boards
-        - and screens used in Apple products, for example, but the final product is
-        - an Apple device. Apple is the OEM for the iPhone.
-    - OS::Operating System
-        - OS - Operating System: Software that manages hardware and provides services for computer
-        - programs.
-            - OS (Opera�ng System): So�ware that manages computer hardware, so�ware resources, and provides
-            - common services for computer programs.
-    - 
-    - PAN::Personal Area Network
-    - PB::Petabyte
-    - PC::Personal Computer
-    - PCI::Peripheral Component Interconnect
-        - PCI (Peripheral Component Interconnect) Design architecture for the
-        - expansion bus on the computer motherboard that enables system
-        - components to be added to the computer. It is the local bus standard,
-        - meaning that devices added to a computer through this port will use the
-        - processor at the motherboard’s full speed (up to 33 MHz) rather than at the
-        - slower 8 MHz speed of the regular bus. PCI moves data 32 or 64 bits at a
-        - time rather than the 8 or 16 bits the older ISA buses supported.
-    - PCIe::Peripheral Component Interconnect Express
-        - PCIe (PCI Express) Serialized successor to PCI and AGP that uses the
-        - concept of individual data paths called lanes. This may use any number of
-        - 
-        - lanes, although a single lane (×1) and 16 lanes (×16) are the most common
-        - on motherboards.
-    - PHI::Personal Health Information
-        - PHI (Personal Health Informa�on): Any informa�on about health status, provision of health care, or
-        - payment for health care that can be linked to a specific individual.
-    - PII::Personally Identifiable Information
-        - PII (Personally Iden�fiable Informa�on): Informa�on that can be used on its own or with other
-        - informa�on to iden�fy, contact, or locate a single person, or to iden�fy an individual in context.
-    - PIN::Personal Identification Number
-    - POP::Post Office Protocol
-        - POP (Post Office Protocol): An Internet standard protocol used by local email clients to retrieve email
-        - from a remote server over a TCP/IP connec�on.
-    - POP3::Post Office Protocol 3
-        - POP3 (Post Office Protocol 3) One of the two protocols that receive e-
-        - mail from SMTP servers. POP3 uses TCP port 110. While historically
-        - 
-        - most e-mail clients use this protocol, the IMAP4 e-mail protocol is now
-        - more common.
-    - POP3S::Post Office Protocol 3 Secure
-    - PSU::Power Supply Unit
-        - power supply unit (PSU) Provides the electrical power for a PC;
-        - converts standard AC power into various voltages of DC electricity in a
-        - PC.
-    - PXE::Preboot Execution Environment
-        - preboot execution environment (PXE) Technology that enables a PC to
-        - boot without any local storage by retrieving an OS from a server over a
-        - network.
-    - PaaS::Platform as a Service
-        - PaaS - Platform as a Service: A cloud computing model that provides a platform allowing customers
-        - to develop, run, and manage applications without dealing with the infrastructure.
-        - PaaS (Pla�orm as a Service): A category of cloud compu�ng services that provides a pla�orm allowing
-        - customers to develop, run, and manage applica�ons without the complexity of building and maintaining
-        - the infrastructure typically associated with developing and launching an app.
-    - 
-    - RAID::Redundant Array of Independent Disks
-        - RAID (Redundant Array of Inexpensive Disks): A technology that combines mul�ple disk drive
-        - components into a logical unit for data redundancy and performance improvement.
-        - privileges.
-    - RAM::Random-access Memory
-        - RAM (random access memory) Memory that can be accessed at
-        - random; that is, memory that you can write to or read from without
-        - touching the preceding address. This term is often used to mean a
-        - computer’s main memory.
-    - RF::Radio Frequency
-        - RFI (radio frequency interference) Another form of electrical
-        - interference caused by radio wave–emitting devices, such as cell phones,
-        - wireless network cards, and microwave ovens.
-    - RISC::Reduced Instruction Set Computer
-    - RJ::Registered Jack
-        - RJ - Registered Jack: A standardized physical network interface for connecting telecommunications
-        - or networking equipment.
-    - RJ11::Registered Jack Function 11
-    - RJ45::Registered Jack Function 45
-    - ROM::Read-only Memory
-        - read-only memory ROM; nonvolatile memory that cannot be written to.
-    - 
-    - SATA::Serial Advanced Technology Attachment
-        - SATA (serial ATA) Serialized version of the ATA standard that offers
-        - many advantages over PATA (parallel ATA) technology, including thinner
-        - 
-        - cabling, keyed connectors, and lower power requirements.
-    - SD card::Secure Digital Card
-        - SD (Secure Digital) Popular format for flash media cards, such as SD
-        - cards; also supports I/O devices.
-    - SFP::Small Form-factor Pluggable
-        - SFP - Small Form-factor Pluggable: A compact, hot-pluggable transceiver used in data
-        - communications and telecommunication networks.
-    - SFTP::Secure File Transfer Protocol
-        - SFTP - Secure File Transfer Protocol: A secure version of FTP that encrypts both commands and
-        - data.
-        - SFTP (Secured File Transfer Protocol): A secure version of the File Transfer Protocol (FTP) that uses Secure Shell (SSH) to encrypt the data transferred over the network.
-    - SID::System Identifier
-    - SMTP::Simple Mail Transfer Protocol
-        - SMTP - Simple Mail Transfer Protocol: A protocol used for sending email messages between
-        - servers.
-        - SMTP (Simple Mail Transfer Protocol): An internet standard for email transmission across Internet
-        - Protocol (IP) networks.
-    - SMTPS::Simple Mail Transfer Protocol Secure
-        - SMTPS - Simple Mail Transfer Protocol Secure: An extension of SMTP that provides encrypted
-        - communication using SSL/TLS.
-        - SMTPS (Simple Mail Transfer Protocol Secure): A method for securing SMTP with transport layer
-        - security. It is intended to provide authen�ca�on of the communica�on partners, as well as data integrity
-        - and confiden�ality.
-    - SNMP::Simple Network Management Protocol
-        - SNMP - Simple Network Management Protocol: A protocol used for collecting and organizing
-        - information about managed devices on IP networks.
-        - SNMP (Simple Network Management Protocol): An Internet Standard protocol for collec�ng and
-        - organizing informa�on about managed devices on IP networks and for modifying that informa�on to
-        - change device behavior.
-    - SOHO::Small Office, Home Office
-        - SOHO (small office, home office) Designation for devices for personal
-        - use or in small businesses.
-    - SQL::Structured Query Language
-        - SQL - Structured Query Language: A standardized language used to manage and manipulate
-        - databases.
-        - SQL (Structured Query Language): A domain‐specific language used in programming and designed for
-        - managing data held in a rela�onal database management system.
-    - SSD::Solid State Drive
-        - SSD (Solid State Drive): A storage device containing nonvola�le flash memory, used in place of a hard
-        - disk because of its much greater speed.
-    - SSH::Secure Shell
-        - SSH - Secure Shell: A cryptographic network protocol used for secure data communication, remote
-        - command-line login, and other secure network services.
-        - SSH (Secure Shell): A cryptographic network protocol for opera�ng network services securely over an
-        - unsecured network.
-    - SSID::Service Set Identifier
-        - SSID - Service Set Identifier: The name of a wireless network, used to identify and diƯerentiate
-        - between networks.
-    - SSL::Secure Sockets Layer
-        - SSL - Secure Socket Layer: A protocol for establishing authenticated and encrypted links between
-        - networked computers.
-        - SSL (Secure Sockets Layer): The standard security technology for establishing an encrypted link between
-        - a web server and a browser.
-    - SSO 2::Secure Sign-On
-    - SaaS::Software as a Service
-        - SaaS - Software as a Service: A cloud computing model that provides software applications over
-        - the internet, typically on a subscription basis.
-        - SaaS (So�ware as a Service): A so�ware distribu�on model in which a third‐party provider hosts
-        - applica�ons and makes them available to customers over the Internet.
-    - 
-    - TB::Terabyte
-    - TCP::Transmission Control Protocol
-        - TCP - Transmission Control Protocol: A core protocol of the Internet Protocol suite that ensures
-        - reliable, ordered, and error-checked delivery of data.
-    - TCP/IP::Transmission Control Protocol/Internet Protocol
-        - TCP/IP (Transmission Control Protocol/Internet Protocol): A set of communica�on protocols used to
-        - interconnect network devices on the internet.
-    - TKIP::Temporal Key Integrity Protocol
-        - TKIP (Temporal Key Integrity Protocol): A security protocol used in the IEEE 802.11 wireless networking
-        - standard.
-    - TLS::Transport Layer Security
-        - TLS (Transport Layer Security): A cryptographic protocol designed to provide communica�ons security
-        - over a computer network.
-    - Tbps::Terabits per second
-    - 
-    - UPS::Uninterruptible Power Supply
-        - UPS - Uninterruptible Power Supply: A device that provides backup power to electronics in the
-        - event of a power failure.
-        - UPS (Uninterrup�ble Power Supply): A device that allows a computer to keep running for at least a
-        - short �me when the primary power source is lost.
-    - URL::Uniform Resource Locator
-        - URL - Uniform Resource Locator: The address used to access resources on the internet.
-        - URL (Uniform Resource Locator): A reference to a web resource that specifies its loca�on on a computer
-        - network and a mechanism for retrieving it.
-    - USB::Universal Serial Bus
-        - USB - Universal Serial Bus: A standard for connectors, cables, and protocols used for
-            - communication and power supply between computers and electronic devices.
-        - USB (Universal Serial Bus): An industry standard that establishes specifica�ons for cables and
-        - connectors and protocols for connec�on, communica�on, and power supply between computers,
-        - peripherals, and other computers.
-    - USB-A::Universal Serial Bus-A
-    - USB-C::Universal Serial Bus-C
-    - 
-    - VGA::Video Graphics Array
-        - video graphics array (VGA) connector An older analog video
-        - connector; it has 15 pins, laid out in three rows of five.
-    - VPN::Virtual Private Network
-        - VPN - Virtual Private Network: A service that encrypts internet traƯic and routes it through a remote
-        - server to provide privacy and security.
-        - VPN (Virtual Private Network): A technology that creates a safe and encrypted connec�on over a less
-        - secure network, such as the internet.
-    - VR::Virtual Reality
-    - VoIP::Voice over Internet Protocol
-        - VoIP - Voice over IP: A technology that allows voice communication and multimedia sessions over
-        - the Internet Protocol (IP) networks.
-        - VoIP (Voice over Internet Protocol): A methodology and group of technologies for the delivery of voice
-        - communica�ons and mul�media sessions over Internet Protocol (IP) networks.
-    - vCPU::Virtual Central Processing Unit
-    - vHDD::Virtual Hard Disk Drive
-        - virtual hard drive A file used by a virtual machine; the file serves as a
-        - storage device would to a physical computer.
-    - vNIC::Virtual Network Interface Card
-    - vRAM::Virtual Random-access Memory
-    - 
-    - WAN::Wide Area Network
-        - WAN - Wide Area Network: A telecommunications network that extends over a large geographic
-        - area for the purpose of computer networking.
-    - WAP::Wireless Access Point
-        - WPA - Wi-Fi Protected Access: A security protocol used to secure wireless networks.
-    - WEP::Wired Equivalent Privacy
-        - WEP (Wired Equivalent Privacy): A security protocol, now considered insecure, for wireless local area
-        - networks (WLANs).
-    - WLAN::Wireless Local Area Network
-        - wireless local area network (WLAN) Small group of computers that
-        - connect via Wi-Fi.
-    - WPA::Wi-Fi/Wireless Protected Access
-        - WPA (Wi-Fi Protected Access) Wireless security protocol that uses
-        - encryption key integrity-checking/TKIP and EAP and is designed to
-        - improve on WEP’s weaknesses. This has been supplanted by WPA 2.
-    - WPA2::Wi-Fi/Wireless Protected Access 2
-        - WPA 2 (Wi-Fi Protected Access 2) Wireless security protocol, also
-        - known as IEEE 802.11i. This uses the Advanced Encryption Standard
-        - (AES) and replaces WPA.
-    - WPA3::Wi-Fi/Wireless Protected Access 3
-    - WPAN::Wireless Personal Area Network
-    - WiFi::Wireless Fidelity
-        - WiFi Common name for the IEEE 802.11 wireless Ethernet standard.
-    - 
-    - 
-- CompTIA A+ Acronyms
-    - **Acronym - Spelled Out** 
-    - AAA::Authentication, Authorization, and Accounting
-        - AAA (Authen�ca�on, Authoriza�on, and Accoun�ng): A framework for intelligently controlling access to
-        - computer resources, enforcing policies, audi�ng usage, and providing the informa�on necessary to bill
-        - for services.
-    - AAAA::Authentication, Authorization, Accounting, and Auditing
-    - ADF::Automatic Document Feeder
-    - AMD::Advanced Micro Devices, Inc.
-    - APFS::Apple File System
-    - ATX::Advanced Technology Extended
-    - AP::Access Point
-        - AP - Access Point: A device that allows wireless devices to connect to a wired network.
-        - AP (Access Point): A networking hardware device that allows other Wi‐Fi devices to connect to a wired
-        - network.
-    - APK::Android Package
-    - ATA::Advanced Technology Attachment
-    - ATM::Asynchronous Transfer Mode
-    - AUP::Acceptable Use Policy
-        - AUP - Acceptable Use Policy: Guidelines that define the acceptable use of resources within a
-        - network.
-        - AUP (Acceptable Use Policy): A policy that sets out the rules and guidelines for the proper use of an
-        - organiza�on's informa�on technology.
-    - 
-    - BEC::Business Email Compromise
-    - BSOD::Blue Screen of Death
-    - BYOD::Bring Your Own Device
-        - BYOD - Bring Your Own Device: A policy allowing employees to use their personal devices for work
-        - purposes.
-            - BYOD (Bring Your Own Device): A policy that allows employees to bring personally owned devices to
-            - their workplace and use those devices to access company informa�on and applica�ons.
-    - 
-    - CAC::Calling-card Authorization Computer
-    - CIFS::Common Internet File System
-    - CMDB::Configuration Management Database
-    - CNAME::Canonical Name
-        - CNAME - Canonical Name: A type of DNS record that maps an alias name to a true (canonical)
-        - domain name.
-    - CAPTCHA::Completely Automated Public Turing Test to Tell Computers and Humans Apart
-        - CAPTCHA (Completely Automated Public Turing Test to Tell Computers and Humans Apart): A type of
-        - challenge‐response test used in compu�ng to determine whether the user is human.
-    - CDFS::Compact Disc File System
-    - CDMA::Code-Division Multiple Access
-    - CERT::Computer Emergency Response Team
-        - CERT (Computer Emergency Response Team): An expert group that handles computer security
-        - incidents.
-    - CMD::Command Prompt
-    - CMOS::Complementary Metal-Oxide Semiconductor
-    - CRL::Certificate Revocation List
-        - CRL (Cer�ficate Revoca�on List): A list of digital cer�ficates that have been revoked by the issuing
-        - cer�ficate authority before their scheduled expira�on date and should no longer be trusted.
-    - 
-    - DB-9::Serial Communications D-Shell Connector, 9 pins
-    - DKIM::DomainKeys Identified Mail
-        - DKIM (DomainKeys Iden�fied Mail): An email authen�ca�on method designed to detect forged sender
-        - addresses in emails.
-    - DMARC::Domain-based Message Authentication, Reporting, and Conformance
-        - DMARC (Domain Message Authen�ca�on Repor�ng and Conformance): An email authen�ca�on
-        - protocol designed to give email domain owners the ability to protect their domain from unauthorized
-        - use, commonly known as email spoofing.
-    - DRM::Digital Rights Management
-    - DMA::Direct Memory Access
-    - DRAM::Dynamic Random-Access Memory
-    - DVI-D::Digital Visual Interface-Digital
-    - 
-    - ECC::Error-correcting Code
-    - EDR::Endpoint Detection and Response
-        - EDR (Endpoint Detec�on and Response): A cybersecurity technology that addresses the need for
-        - con�nuous monitoring and response to advanced threats.
-    - EFS::Encrypting File System
-        - EFS (Encrypted File System): A feature of some versions of Microso� Windows that provides filesystem‐
-        - level encryp�on.
-    - EOL::End-of-life
-        - EOL - End-of-life: The point at which a product is no longer supported or produced by the
-        - manufacturer.
-    - exFAT::Extended File Allocation Table
-    - ext::Extended File System
-    - 
-    - FRT::Facial Recognition Technology
-    - FAT12::12-bit File Allocation Table
-    - FAT16::16-bit File Allocation Table
-    - FSB::Front-Side Bus
-    - 
-    - GFS::Grandfather-Father-Son
-    - GPT::GUID [Globally Unique Identifier] Partition Table
-    - GUID::Globally Unique Identifier
-    - GSM::Global System for Mobile Communications
-    - 
-    - HSM::Hardware Security Module
-        - HSM (Hardware Security Module): A physical compu�ng device that safeguards and manages digital
-        - keys for strong authen�ca�on and provides cryptoprocessing.
-    - HAL::Hardware Abstraction Layer
-    - HAV::Hardware-assisted Virtualization
-    - HCL::Hardware Compatibility List
-    - HDCP::High-bandwidth Digital Content Protection
-    - 
-    - IAM::Identity and Access Management
-        - IAM - Identity and Access Management: A framework of policies and technologies for ensuring that
-        - the right users have the appropriate access to technology resources.
-            - IAM (Iden�ty and Access Management): A framework of business processes, policies, and technologies
-            - that facilitates the management of electronic or digital iden��es.
-    - IPS 2::In-plane Switching
-    - ISO::International Organization for Standardization
-        - ISO (Interna�onal Standards Organiza�on): An independent, non‐governmental interna�onal
-        - organiza�on with a membership of 164 na�onal standards bodies.
-    - ITX::Information Technology eXtended
-    - I/O::Input/Output
-    - ICR::Intelligent Character Recognition
-    - IEEE::Institute of Electrical and Electronics Engineers
-        - IEEE (Ins�tute of Electrical and Electronics Engineers): A professional associa�on with its corporate
-        - office in New York City and its opera�ons center in Piscataway, New Jersey, dedicated to advancing
-        - technology for the benefit of humanity.
-    - IrDA::Infrared Data Association
-    - IRP::Incident Response Plan
-        - IRP (Incident Response Plan): A set of instruc�ons to help IT staff detect, respond to, and recover from
-        - network security incidents.
-    - 
-    - KVM::Keyboard-Video-Mouse
-    - KB 2::Knowledge Base
-    - 
-    - LC::Lucent/Local Connector
-        - LC - Local Connector: A type of fiber optic connector used in high-density connections.
-    - LCD::Liquid Crystal Display
-    - LDAP::Lightweight Directory Access Protocol
-        - LDAP - Lightweight Directory Access Protocol: A protocol used to access and manage directory
-        - information services over a network.
-            - LDAP (Lightweight Directory Access Protocol): An open, vendor‐neutral, industry standard applica�on
-            - protocol for accessing and maintaining distributed directory informa�on services over an Internet
-            - Protocol network.
-    - LED::Light-emitting Diode
-    - 
-    - MBR::Master Boot Record
-        - MBR (Master Boot Record): A special type of boot sector at the very beginning of par��oned computer
-        - mass storage devices.
-    - MDM::Mobile Device Management
-        - MDM (Mobile Device Management): A type of security so�ware used by an IT department to monitor,
-        - manage, and secure employees' mobile devices that are deployed across mul�ple mobile service
-        - providers and across mul�ple mobile opera�ng systems being used in the organiza�on.
-    - MDR::Managed Detection and Response
-    - MFA::Multifactor Authentication
-        - MFA - Multifactor Authentication: A security process that requires multiple methods of
-        - authentication from independent categories of credentials.
-            - MFA (Mul�factor Authen�ca�on): An electronic authen�ca�on method in which a user is granted
-            - access to a website or applica�on only a�er successfully presen�ng two or more pieces of evidence to
-            - an authen�ca�on mechanism.
-    - MMC::Microsoft Management Console
-    - MNDA::Mutual Non-disclosure Agreement
-    - MSDS::Material Safety Data Sheet
-    - MX::Mail Exchange
-        - MX - Mail Exchange: A DNS record that directs email to a mail server.
-    - mSATA::Mini-serial Advanced Technology Attachment
-    - MAM::Mobile Application Management
-    - MFD::Multifunction Device
-        - MFD (Mul�func�on Device): An office machine which incorporates the func�onality of mul�ple devices
-        - in one, so as to have a smaller footprint in a home or small business se�ng.
-    - MFP::Multifunction Printer
-        - MFP (Mul�func�on Printer): A mul�‐func�onal device that performs func�ons like prin�ng, scanning,
-        - and copying.
-    - MOU::Memorandum of Understanding
-        - MOU (Memorandum of Understanding): An agreement between two or more par�es outlined in a
-        - formal document.
-    - MSRA::Microsoft Remote Assistance
-    - 
-    - NetBIOS::Network Basic Input/Output System
-    - NTP::Network Time Protocol
-        - NTP - Network Time Protocol: A protocol used to synchronize clocks on computers within a
-        - network.
-        - NTP (Network Time Protocol): A networking protocol for clock synchroniza�on between computer
-        - systems over packet‐switched, variable‐latency data networks.
-    - NetBT::NetBIOS over TCP/IP
-    - NFS::Network File System
-    - 
-    - OLED::Organic Light-emitting Diode
-    - ONT::Optical Network Terminal
-    - OTP::One-time Password (or Passcode)
-    - OCR::Optical Character Recognition
-    - 
-    - PAM::Privileged Access Management
-        - PAM (Privileged Access Management): A comprehensive approach to controlling and monitoring
-        - privileged access to cri�cal assets and systems.
-    - PIV::Personal Identity Verification
-        - PIV (Personal Iden�ty Verifica�on): A United States federal government standard for reliable
-        - iden�fica�on and access control card.
-    - POST::Power-on Self-test
-    - PUP::Potentially Unwanted Program
-        - PUP (Poten�ally Unwanted Program): A program that a user may perceive as unwanted.
-        - and tells the Cer�ficate Authority (CA) to issue it.
-    - PoE::Power over Ethernet
-        - PoE - Power over Ethernet: A technology that allows electrical power to be transmitted over network
-        - cables along with data.
-    - PCL::Printer Command Language
-    - PE::Preinstallation Environment
-    - PKI::Public Key Infrastructure
-        - PKI - Public Key Infrastructure: A framework for managing digital certificates and public-key
-        - encryption.
-            - PKI (Public Key Infrastructure): A set of roles, policies, hardware, so�ware, and procedures needed to
-            - create, manage, distribute, use, store, and revoke digital cer�ficates and manage public‐key encryp�on.
-    - PPP::Point-to-Point Protocol
-        - PPP (Point‐to‐Point Protocol): A data link protocol commonly used to establish a direct connec�on
-        - between two networking nodes.
-    - PRL::Preferred Roaming List
-    - 
-    - RADIUS::Remote Authentication Dial-in User Server
-        - RADIUS - Remote Authentication Dial-in User Service: A networking protocol that provides
-        - centralized authentication, authorization, and accounting for users who connect and use a network
-        - service.
-            - RADIUS (Remote Authen�ca�on Dial‐in User Service): A networking protocol that provides centralized
-            - Authen�ca�on, Authoriza�on, and Accoun�ng (AAA or Triple A) management for users who connect and
-            - use a network service.
-    - RDP::Remote Desktop Protocol
-        - RDP - Remote Desktop Protocol: A protocol developed by Microsoft that allows a user to connect to
-        - another computer over a network.
-            - RDP (Remote Desktop Protocol): A proprietary protocol developed by Microso� that provides a user
-            - with a graphical interface to connect to another computer over a network connec�on.
-    - ReFS::Resilient File System
-    - RFID::Radio-frequency Identification
-    - RMM::Remote Monitoring and Management
-    - RSR::Rapid Security Response
-    - RFI::Radio-Frequency Interference
-    - RTO::Recovery Time Objective
-        - RTO - Recovery Time Objective: The target time set for the recovery of IT and business activities
-        - after a disaster.
-            - RTO (Recovery Time Objec�ve): The targeted dura�on of �me and a service level within which a
-            - business process must be restored a�er a disaster or disrup�on.
-    - 
-    - S.M.A.R.T::Self-monitoring Analysis and Reporting Technology
-    - SAML::Security Assertions Markup Language
-        - SAML - Security Assertion Markup Language: An XML-based standard for exchanging authentication
-        - and authorization data between parties, particularly between an identity provider and a service
-        - provider.
-        - SAML (Security Asser�ons Markup Language): An open standard for exchanging authen�ca�on and
-        - authoriza�on data between par�es, in par�cular, between an iden�ty provider and a service provider.
-    - SAS::Serial Attached SCSI
-    - SC::Subscriber Connector
-        - SC - Subscriber Connector: A type of fiber optic connector commonly used in data networks.
-    - SCADA::Supervisory Control and Data Acquisition
-        - SCADA - Supervisory Control and Data Acquisition: A system used for remote monitoring and
-        - control of industrial processes.
-        - SCADA (Supervisory Control and Data Acquisi�on): A control system architecture that uses computers,
-        - networked data communica�ons, and graphical user interfaces for high‐level process supervisory
-        - management.
-    - SCSI::Small Computer System Interface
-    - SIM::Subscriber Identity Module
-    - SLA::Service-level Agreement
-        - SLA - Service-level Agreement: A contract between a service provider and a customer that specifies
-        - the level of service expected.
-        - SLA (Service‐level Agreement): A commitment between a service provider and a client. Par�cular
-        - aspects of the service – quality, availability, responsibili�es – are agreed upon between the service
-        - provider and the service user.
-    - SMB::Server Message Block
-        - SMB - Server Message Block: A network protocol used for providing shared access to files, printers,
-        - and serial ports between nodes on a network.
-    - SMS::Short Message Service
-        - SMS (Short Message Service): A text messaging service component of most telephone, internet, and
-        - mobile device systems.
-    - SODIMM::Small Outline Dual In-line Memory Module
-    - SOP::Standard Operating Procedure
-    - SPF::Sender Policy Framework
-        - SPF (Sender Policy Framework): An email authen�ca�on method designed to detect forging sender
-        - addresses during the delivery of the email.
-    - SPICE::Software Process Improvement and Capability Determination
-    - ST::Straight Tip
-        - ST - Straight Tip: A type of fiber optic connector known for its bayonet-style coupling.
-    - SAN::Storage Area Network
-        - SAN - Storage Area Network: A specialized network that provides access to consolidated, block-
-        - level data storage.
-        - SAN (Storage Area Network): A network which provides access to consolidated, block‐level data storage.
-    - SCP::Secure Copy Protection
-    - SDN::Software-defined Networking
-        - SDN - Software-defined Network: An approach to networking that uses software-based controllers
-        - to manage network resources and services.
-        - SDN (So�ware‐defined Networking): An approach to networking that uses so�ware‐based controllers
-        - or applica�on programming interfaces (APIs) to direct traffic on the network and communicate with the
-        - underlying hardware infrastructure.
-    - SIM::Subscriber Identity Module
-        - SIM (Subscriber Iden�ty Module): A removable smart card for mobile phones that securely stores the
-        - service‐subscriber key used to iden�fy a subscriber on mobile telephony devices.
-    - SIMM::Single Inline Memory Module
-    - SNTP::Simple Network Time Protocol
-    - SRAM::Static Random-access Memory
-    - SSO::Single Sign-on
-        - SSO - Single Sign-on: An authentication process that allows a user to access multiple applications
-        - with one set of login credentials.
-        - SSO (Single Sign‐on): A property of access control of mul�ple related, yet independent, so�ware
-        - systems. With this property, a user logs in with a single ID and password to gain access to any of several
-        - related systems.
-    - STP::Shielded Twisted Pair
-        - STP - Shielded Twisted Pair: A type of twisted-pair cabling that includes shielding to reduce
-        - electromagnetic interference.
-    - 
-    - TACACS::Terminal Access Controller Access-control System
-    - TN::Twisted Nematic
-    - TOTP::Time-based One-time Password
-        - TOTP (Time‐based One‐�me Password): A common algorithm for genera�ng a one‐�me password,
-        - which is valid only for a short period of �me.
-    - TPM::Trusted Platform Module
-        - TPM (Trusted Pla�orm Module): A specialized chip on an endpoint device that stores RSA encryp�on
-        - keys specific to the host system for hardware authen�ca�on.
-    - TFTP::Trivial File Transfer Protocol
-        - TFTP - Trivial File Transfer Protocol: A simple file transfer protocol that provides basic file transfer
-        - capabilities without authentication.
-    - 
-    - UAC::User Account Control
-    - UDP::User Datagram Protocol
-        - UDP - User Datagram Protocol: A communication protocol that oƯers a faster, but less reliable,
-        - transmission service compared to TCP.
-            - UDP (User Datagram Protocol): A communica�ons protocol that facilitates the exchange of messages
-            - between compu�ng devices in a network. It's used for �me‐sensi�ve transmissions.
-    - UEFI::Unified Extensible Firmware Interface
-        - UEFI (Unified Extensible Firmware Interface): A specifica�on for a so�ware program that connects a
-        - computer's firmware to its opera�ng system (OS). It's designed to replace BIOS (basic input/output
-        - system).
-    - UPnP::Universal Plug and Play
-    - UTM::Unified Threat Management
-        - UTM - Unified Threat Management: A security solution that integrates multiple security features,
-        - such as firewall, antivirus, and intrusion detection, into a single device.
-        - UTM (Unified Threat Management): A comprehensive solu�on that has evolved from tradi�onal firewall
-        - solu�ons into a product that can perform mul�ple security func�ons within one single system.
-    - UNC::Universal Naming Convention
-    - UTP![](https://remnote-user-data.s3.amazonaws.com/hAO3eLwQh1wlZuu-Ugkj9q0ZOb2MZczYR-dunH9f5UQxMHVvd1NRFqOIedFyZO5yzYDlUFyyYwySV5l0Obbcaie19AGkLpaR-akBVd8gZDenIYfjL4Vg8lQOWG4XP5f8.png)::Unshielded Twisted Pair
-        - UTP - Unshielded Twisted Pair: A type of twisted-pair cabling that does not include shielding and is
-        - commonly used in Ethernet networks.
-        - UTP (Unshielded Twisted Pair): A popular type of cable that is used for network cabling.
-    - 
-    - VA::Vertical Alignment
-    - VDI::Virtual Desktop Infrastructure
-        - VDI (Virtual Desktop Infrastructure): A technology that hosts a desktop opera�ng system on a
-        - centralized server in a data center.
-    - VLAN::Virtual Local Area Network
-        - VLAN - Virtual Local Area Network: A logical group of devices on a network that are segmented by
-        - function, department, or other criteria.
-        - VLAN (Virtual Local Area Network): A group of devices on one or more LANs that are configured to
-        - communicate as if they were a�ached to the same wire, when in fact they are located on a number of
-        - different LAN segments.
-    - VNC::Virtual Network Computer
-    - VM::Virtual Machine
-        - VM (Virtual Machine): An emula�on of a computer system. Virtual machines are based on computer
-        - architectures and provide the func�onality of a physical computer.
-    - VRAM::Video Random-access Memory
-    - 
-    - WISP::Wireless Internet Service Provider
-    - WWAN::Wireless Wide Area Network
-    - WinRM::Windows Remote Management
-    - WMN::Wireless Mesh Network
-    - 
-    - XDR::Extended Detection and Response
-    - XFS::Extended File System
-    - XSS::Cross-site Scripting
-    - 
-    - 
-- network+ acronyms
-    - **Acronym - Spelled Out** 
-    - A::Address
-        - A - Address: A unique identifier for a network device or resource.
-    - AH::Authentication Header
-        - AH - Authentication Header: A protocol used to provide connectionless integrity and data origin
-        - authentication.
-        - AH (Authen�ca�on Header): A part of the IPsec protocol suite that provides authen�ca�on and integrity
-        - to the data.
-    - API::Application Programming Interface
-        - API - Application Programming Interface: A set of tools and protocols for building and interacting
-        - with software applications.
-        - API (Applica�on Programming Interface): A set of func�ons and procedures allowing the crea�on of
-        - applica�ons that access the features or data of an opera�ng system, applica�on, or other services.
-    - 
-    - BGP::Border Gateway Protocol
-        - BGP - Border Gateway Protocol: A protocol used to exchange routing information between
-        - autonomous systems on the internet.
-            - BGP (Border Gateway Protocol): The protocol used to route informa�on across the internet.
-    - BNC::Bayonet Neill–Concelman
-        - BNC - Bayonet Neill–Concelman: A type of connector used for coaxial cables.
-    - BSSID::Basic Service Set Identifier
-        - BSSID - Basic Service Set Identifier: A unique identifier for a specific access point in a wireless
-        - network.
-    - 
-    - CAM 2::Content-addressable Memory
-        - CAM - Content-addressable Memory: A type of memory used in networking devices for fast data
-        - lookup.
-    - CDN::Content Delivery Network
-        - CDN - Content Delivery Network: A network of servers that distribute content to users based on
-        - their geographic location.
-    - CDP::Cisco Discovery Protocol
-        - CDP - Cisco Discovery Protocol: A proprietary protocol used by Cisco devices to share information
-        - with directly connected devices.
-    - CIA::Confidentiality, Integrity, and Availability
-        - CIA - Confidentiality, Integrity, and Availability: A model used to guide policies for information
-        - security.
-        - CIA (Confiden�ality, Integrity, Availability): A model designed to guide policies for informa�on security
-        - within an organiza�on.
-    - CIDR::Classless Inter-domain Routing
-        - CIDR - Classless Inter-domain Routing: A method for allocating IP addresses and routing IP
-        - packets.
-    - CRC::Cyclical Redundancy Check
-        - CRC - Cyclic Redundancy Check: A method used to detect errors in data transmission.
-            - CRC (Cyclical Redundancy Check): An error‐detec�ng code commonly used in digital networks and
-            - storage devices to detect accidental changes to raw data.
-    - 
-    - DAC::Direct Attach Copper
-        - DAC - Direct Attach Copper: A type of cable used for short-range connections in data centers.
-    - DAS::Direct-attached Storage
-        - DAS - Direct-attached Storage: A storage device that is directly connected to a server or
-        - workstation.
-    - DCI::Data Center Interconnect
-        - DCI - Data Center Interconnect: Technologies used to connect and manage multiple data centers.
-    - DNSSEC::Domain Name System Security Extensions
-        - DNSSEC - Domain Name System Security Extensions: A suite of extensions that add security to
-        - DNS.
-    - DoH::DNS over Hypertext Transfer Protocol Secure
-        - DoH - DNS over Hypertext Transfer Protocol Secure: A protocol for performing DNS resolution via
-        - the HTTPS protocol.
-    - DoT::DNS over Transport Layer Security
-        - DoT - DNS over Transport Layer Security: A protocol for encrypting DNS queries and responses to
-        - improve privacy and security.
-    - DR::Disaster Recovery
-        - DR - Disaster Recovery: Strategies and processes for recovering from catastrophic events aƯecting
-        - IT systems.
-    - 
-    - EAPoL::Extensible Authentication Protocol over LAN
-        - EAPoL - Extensible Authentication Protocol over LAN: A network port authentication protocol used
-        - in wired and wireless networks.
-    - EIGRP::Enhanced Interior Gateway Routing Protocol
-        - EIGRP - Enhanced Interior Gateway Routing Protocol: A Cisco proprietary routing protocol used to
-        - automate routing decisions and configuration.
-    - EOS::End-of-support
-        - EOS - End-of-support: The date when a manufacturer will no longer provide support or updates for a
-        - product.
-    - ESP::Encapsulated Security Payload
-        - ESP - Encapsulating Security Payload: A protocol used in IPSec to provide confidentiality, integrity,
-        - and authenticity of data packets.
-            - ESP (Encapsulated Security Payload): A component of IPsec used for providing confiden�ality, along with
-            - some authen�ca�on and integrity, to the data.
-    - ESSID::Extended Service Set Identifier
-        - ESSID - Extended Service Set Identifier: The name of a wireless network in a multiple-access point
-        - configuration.
-    - 
-    - FC::Fibre Channel
-        - FC - Fibre Channel: A high-speed network technology primarily used for storage networking.
-    - FHRP::First Hop Redundancy Protocol
-        - FHRP - First Hop Redundancy Protocol: Protocols that provide redundancy for IP gateways,
-        - ensuring availability.
-    - 
-    - GRE::Generic Routing Encapsulation
-        - GRE - Generic Routing Encapsulation: A tunneling protocol used to encapsulate a wide variety of
-        - network layer protocols.
-        - GRE (Generic Rou�ng Encapsula�on): A tunneling protocol developed by Cisco Systems that can
-        - encapsulate a wide variety of network layer protocols inside virtual point‐to‐point links or point‐to‐
-        - mul�point links over an Internet Protocol network.
-    - 
-    - IaC::Infrastructure as Code
-        - IaC - Infrastructure as Code: The process of managing and provisioning computing infrastructure
-        - through machine-readable scripts or code.
-            - IaC (Infrastructure as Code): The process of managing and provisioning computer data centers through
-            - machine‐readable defini�on files, rather than physical hardware configura�on or interac�ve
-            - configura�on tools.
-    - ICS::Industrial Control System
-        - ICS - Industrial Control System: Systems used to control industrial processes, including SCADA,
-        - DCS, and PLCs.
-            - ICS (Industrial Control Systems): A general term that encompasses several types of control systems and
-            - associated instrumenta�on, which include the devices, systems, networks, and controls used to operate
-            - and/or automate industrial processes.
-    - IDF::Intermediate Distribution Frame
-        - IDF - Intermediate Distribution Frame: A distribution point for network cables and equipment within
-        - a building.
-            - IDF (Intermediate Distribu�on Frame): A cable rack that interconnects and manages the
-            - telecommunica�ons wiring between an MDF and end‐user devices.
-    - IIoT::Industrial Internet of Things
-        - IIoT - Industrial Internet of Things: The use of IoT technology in industrial sectors and applications.
-    - IKE::Internet Key Exchange
-        - IKE - Internet Key Exchange: A protocol used to set up a secure, authenticated communication
-        - channel in IPSec.
-            - IKE (Internet Key Exchange): A protocol used in IPsec for establishing a Security Associa�on (SA) and
-            - cryptographic keys in an IP network.
-    - IPAM::Internet Protocol Address Management
-        - IPAM - Internet Protocol Address Management: Tools and processes for planning, tracking, and
-        - managing IP address space.
-    - IPSec::Internet Protocol Security
-        - IPSec - Internet Protocol Security: A suite of protocols used to secure Internet Protocol (IP)
-        - communications by authenticating and encrypting each IP packet.
-        - IPSec (Internet Protocol Security): A secure network protocol suite that authen�cates and encrypts the
-        - packets of data sent over an internet protocol network.
-    - IS-IS::Intermediate System to Intermediate System
-        - IS-IS - Intermediate System to Intermediate System: A routing protocol used to move information
-        - eƯiciently within a computer network, a variant of the link-state routing protocol.
-    - 
-    - LACP::Link Aggregation Control Protocol
-        - LACP - Link Aggregation Control Protocol: A protocol used to combine multiple network
-        - connections in parallel to increase throughput and provide redundancy.
-    - LDAPS::Lightweight Directory Access Protocol over SSL
-        - LDAPS - Lightweight Directory Access Protocol over SSL: A secure version of LDAP using SSL/TLS
-        - encryption.
-    - LLDP::Link Layer Discovery Protocol
-        - LLDP - Link Layer Discovery Protocol: A protocol used by network devices to advertise their identity
-        - and capabilities to neighbors on the same local network.
-    - 
-    - MDF::Main Distribution Frame
-        - MDF - Main Distribution Frame: A central point in a network where cables converge and connect to
-        - switching equipment.
-            - MDF (Main Distribu�on Frame): A signal distribu�on frame for connec�ng equipment (inside plant) to
-            - cables and subscriber carrier equipment (outside plant).
-    - MDIX::Medium Dependent Interface Crossover
-        - MDIX - Medium Dependent Interface Crossover: A network interface that automatically crosses
-        - over the transmit and receive pairs of a cable.
-    - MIB::Management Information Base
-        - MIB - Management Information Base: A database used for managing the entities in a
-        - communication network.
-    - MPO::Multifiber Push On
-        - MPO - Multifiber Push On: A type of fiber optic connector that allows for the connection of multiple
-        - fibers in a single interface.
-    - MTBF::Mean Time Between Failure
-        - MTBF - Mean Time Between Failure: The predicted elapsed time between inherent failures of a
-        - system during operation.
-        - MTBF (Mean Time Between Failures): A measure of how reliable a hardware product or component is.
-    - MTTR::Mean Time To Repair
-        - MTTR - Mean Time To Repair: The average time required to repair a failed component or device.
-    - MTU::Maximum Transmission Unit
-        - MTU - Maximum Transmission Unit: The largest size of a packet or frame that can be sent in a
-        - network.
-            - MTU (Maximum Transmission Unit): The size of the largest packet that a network protocol can transmit.
-    - 
-    - NAC::Network Access Control
-        - NAC - Network Access Control: A security solution that controls access to a network based on
-        - policies, including authentication and compliance checks.
-            - NAC (Network Access Control): A security solu�on that enforces policy on devices that access networks
-            - to increase network visibility and reduce risk.
-    - NFV::Network Functions Virtualization
-        - NFV - Network Functions Virtualization: A network architecture concept that uses virtualization to
-        - manage core networking functions via software.
-    - NS::Name Server
-        - NS - Name Server: A server that maps domain names to IP addresses.
-    - NTS::Network Time Security
-        - NTS - Network Time Security: An extension to NTP that adds cryptographic security features to
-        - protect time synchronization.
-    - 
-    - OSPF::Open Shortest Path First
-        - OSPF - Open Shortest Path First: A link-state routing protocol used to determine the best path for
-        - data through a network.
-        - OSPF (Open Shortest Path First): A rou�ng protocol for Internet Protocol (IP) networks.
-    - OSI::Open Systems Interconnection
-        - OSI - Open Systems Interconnection: A conceptual model used to standardize communications
-        - functions in telecommunication and computing systems.
-    - OT::Operational Technology
-        - OT - Operational Technology: Hardware and software that detects or causes changes through direct
-        - monitoring and control of physical devices, processes, and events.
-            - OT (Opera�onal Technology): Hardware and so�ware that detects or causes a change through the direct
-            - monitoring and/or control of physical devices, processes, and events in the enterprise.
-    - 
-    - PAT::Port Address Translation
-        - PAT - Port Address Translation: A type of NAT that maps multiple private IP addresses to a single
-        - public IP address using diƯerent ports.
-        - PAT (Port Address Transla�on): A feature of a network device that translates TCP or UDP
-        - communica�ons made between hosts on a private network and hosts on a public network.
-        - Laboratories' Public‐Key Cryptography Standards (PKCS) series, specifically PKCS #5 v2.0.
-    - PCI DSS::Payment Card Industry Data Security Standards
-        - PCI DSS - Payment Card Industry Data Security Standards: A set of security standards designed to
-        - ensure that all companies that accept, process, store, or transmit credit card information maintain
-        - a secure environment.
-        - PCI DSS (Payment Card Industry Data Security Standard): A set of security standards designed to ensure
-        - that all companies that accept, process, store or transmit credit card informa�on maintain a secure
-        - environment.
-    - PDU::Power Distribution Unit
-        - PDU - Power Distribution Unit: A device that distributes electric power to multiple devices, often
-        - used in data centers.
-        - PDU (Power Distribu�on Unit): A device fi�ed with mul�ple outputs designed to distribute electric
-        - power, especially to racks of computers and networking equipment located within a data center.
-    - PSK::Pre-shared Key
-        - PSK - Pre-shared Key: A shared secret used for securing wireless networks, typically used in WPA or
-        - WPA2.
-            - PSK (Pre‐shared Key): A shared secret which was previously shared between the two par�es using some
-            - secure channel before it needs to be used.
-    - PTP::Precision Time Protocol
-        - PTP - Precision Time Protocol: A protocol used to synchronize clocks throughout a computer
-        - network with high precision.
-    - PTR::Pointer
-        - PTR - Pointer: A type of DNS record that maps an IP address to a domain name, often used in
-        - reverse DNS lookups.
-    - 
-    - QoS::Quality of Service
-        - QoS - Quality of Service: A set of techniques to manage network traƯic and ensure the performance
-        - of critical applications.
-    - QSFP::Quad Small Form-factor Pluggable
-        - QSFP - Quad Small Form-factor Pluggable: A type of compact, hot-pluggable transceiver used for
-        - data communications applications.
-    - 
-    - RFID::Radio Frequency Identifier
-        - RFID - Radio Frequency Identifier: A technology that uses electromagnetic fields to automatically
-        - identify and track tags attached to objects.
-            - RFID (Radio Frequency Iden�fier): A technology that uses electromagne�c fields to automa�cally
-            - iden�fy and track tags a�ached to objects.
-    - RIP::Routing Information Protocol
-        - RIP - Routing Information Protocol: One of the oldest distance-vector routing protocols used to
-        - determine the best route for data through a network.
-    - RPO::Recovery Point Objective
-        - RPO - Recovery Point Objective: The maximum acceptable amount of data loss measured in time
-        - during a disaster.
-            - RPO (Recovery Point Objec�ve): The maximum acceptable amount of data loss measured in �me.
-    - RSTP::Rapid Spanning Tree Protocol
-        - RSTP - Rapid Spanning Tree Protocol: An enhancement of the Spanning Tree Protocol (STP) that
-        - provides faster convergence in a network.
-    - RX::Receiver
-        - RX - Receiver: A device or component that receives data or signals.
-    - 
-    - SASE::Secure Access Service Edge
-        - SASE - Secure Access Service Edge: A network architecture model that combines network security
-        - functions with WAN capabilities to support the secure access needs of organizations.
-        - SASE (Secure Access Service Edge): A network architecture that combines WAN capabili�es with
-        - comprehensive security func�ons.
-    - SD-WAN::Software-defined Wide Area Network
-        - SD-WAN - Software-defined Wide Area Network: A virtual WAN architecture that allows enterprises
-        - to leverage any combination of transport services to securely connect users to applications.
-        - SD‐WAN (So�ware‐defined Wide Area Network): An approach to designing and deploying an enterprise
-        - WAN that uses so�ware‐defined networking to determine the most effec�ve way to route traffic to
-        - remote loca�ons.
-    - SIP::Session Initiation Protocol
-        - SIP - Session Initiation Protocol: A protocol used to initiate, maintain, and terminate real-time
-        - sessions in IP networks, such as voice and video calls.
-    - SIEM::Security Information and Event Management
-        - SIEM - Security Information and Event Management: A solution that provides real-time analysis of
-        - security alerts generated by network hardware and applications.
-            - SIEM (Security Informa�on and Event Management): So�ware solu�ons that provide real‐�me analysis
-            - of security alerts generated by applica�ons and network hardware.
-    - SLAAC::Stateless Address Autoconfiguration
-        - SLAAC - Stateless Address Autoconfiguration: A method in IPv6 that allows devices to configure
-        - their own IP addresses automatically.
-    - SOA::Start of Authority
-        - SOA - Start of Authority: A DNS record that provides information about the DNS zone and the
-        - authoritative server for that zone.
-    - SSE::Security Service Edge
-        - SSE - Security Service Edge: A framework that combines multiple security services, such as SWG,
-        - CASB, and ZTNA, to protect users and data in the cloud.
-    - SVI::Switch Virtual Interface
-        - SVI - Switch Virtual Interface: A virtual interface used to manage a switch and allow communication
-        - between VLANs.
-    - 
-    - TACACS+::Terminal Access Controller Access Control System Plus
-        - TACACS+ - Terminal Access Controller Access Control System Plus: A protocol used for centralized
-        - authentication, authorization, and accounting for users who access a network.
-        - TACACS+ (Terminal Access Controller Access Control System): A security applica�on that provides
-        - centralized valida�on of users a�emp�ng to gain access to a router or network access server.
-    - TTL::Time to Live
-        - TTL - Time to Live: A value in an IP packet that indicates how long the packet should be allowed to
-        - remain in the network before being discarded.
-    - TX::Transmitter
-        - TX - Transmitter: A device or component that sends data or signals.
-    - TXT::Text
-        - TXT - Text: A type of DNS record used to store text information, often used for verification purposes.
-    - 
-    - VIP::Virtual IP
-        - VIP - Virtual IP: An IP address that is assigned to multiple devices, allowing them to share the same
-        - IP address in a load-balanced or failover configuration.
-    - VLSM::Variable Length Subnet Mask
-        - VLSM - Variable Length Subnet Mask: A technique that allows for more eƯicient allocation of IP
-        - addresses by using diƯerent subnet masks within the same network.
-        - VLSM (Variable Length Subnet Masking): A technique that allows network administrators to divide an IP
-        - address space into different lengths.
-    - VPC::Virtual Private Cloud
-        - VPC - Virtual Private Cloud: A secure and isolated private cloud hosted within a public cloud
-        - environment.
-        - VPC (Virtual Private Cloud): A secure, isolated private cloud hosted within a public cloud.
-    - VXLAN::Virtual Extensible LAN
-        - VXLAN - Virtual Extensible LAN: A network virtualization technology that allows for the creation of
-        - large-scale virtualized networks over existing Layer 3 infrastructures.
-    - 
-    - WPS::Wi-Fi Protected Setup
-        - WPS - Wi-Fi Protected Setup: A network security standard that simplifies the process of connecting
-        - devices to a secure wireless network.
-    - 
-    - ZTA::Zero Trust Architecture
-        - ZTA - Zero Trust Architecture: A security model that assumes no implicit trust, requiring verification
-        - of every access attempt regardless of its origin.
-    - 
-    - 
-- security+ acronyms
-    - **Acronym - Spelled Out** 
-    - AES-256::Advanced Encryption Standards 256-bit
-        - AES‐256 (Advanced Encryp�on Standards 256‐bit): A version of the AES using a 256‐bit key size for
-        - encryp�on, providing a higher level of security.
-    - AIS::Automated Indicator Sharing
-        - AIS (Automated Indicator Sharing): A system that allows the exchange of cyber threat indicators
-        - between the public and private sectors.
-    - ALE::Annualized Loss Expectancy
-        - ALE (Annualized Loss Expectancy): A risk management concept to es�mate the monetary loss that can
-        - be expected for an asset due to a risk over a year.
-    - APT::Advanced Persistent Threat
-        - APT (Advanced Persistent Threat): A prolonged and targeted cybera�ack in which an intruder gains
-        - access to a network and remains undetected for an extended period.
-    - ARO::Annualized Rate of Occurrence
-        - ARO (Annualized Rate of Occurrence): The expected frequency with which a specific event is likely to
-        - occur annually.
-    - ASLR::Address Space Layout Randomization
-        - ASLR (Address Space Layout Randomiza�on): A computer security technique involved in preven�ng
-        - exploita�on of memory corrup�on vulnerabili�es.
-    - ATT&CK::Adversarial Tactics, Techniques, and Common Knowledge
-        - ATT&CK (Adversarial Tac�cs, Techniques, and Common Knowledge): A knowledge base maintained by
-        - MITRE for lis�ng and explaining cyber adversary behavior.
-    - AV::Antivirus
-        - AV (An�virus): So�ware designed to detect and destroy computer viruses.
-    - 
-    - BASH::Bourne Again Shell
-        - BASH (Bourne Again Shell): A Unix shell and command language.
-    - BCP::Business Continuity Planning
-        - BCP (Business Con�nuity Planning): The process involved in crea�ng a system of preven�on and
-        - recovery from poten�al threats to a company.
-    - BIA::Business Impact Analysis
-        - BIA (Business Impact Analysis): A process that iden�fies and evaluates the poten�al effects of natural
-        - and man‐made events on business opera�ons.
-    - BPA::Business Partners Agreement
-        - BPA (Business Partners Agreement): A contract between par�es who have agreed to share resources to
-        - undertake a specific, mutually beneficial project.
-    - BPDU::Bridge Protocol Data Unit
-        - BPDU (Bridge Protocol Data Unit): A type of network message that is transmi�ed by a local area
-        - network (LAN) bridge.
-    - 
-    - CA::Certificate Authority
-        - CA (Cer�ficate Authority): An en�ty that issues digital cer�ficates for use by other par�es.
-    - CAR::Corrective Action Report
-        - CAR (Correc�ve Ac�on Report): A report that outlines the correc�ve ac�ons necessary to rec�fy a
-        - detected non‐conformance.
-    - CASB::Cloud Access Security Broker
-        - CASB (Cloud Access Security Broker): On‐premises or cloud‐based security policy enforcement points
-        - placed between cloud service consumers and cloud service providers.
-    - CBC::Cipher Block Chaining
-        - CBC (Cipher Block Chaining): A mode of opera�on for a block cipher that provides confiden�ality but not
-        - message integrity.
-    - CCMP::Counter Mode/CBC-MAC Protocol
-        - CCMP (Counter Mode/CBC‐MAC Protocol): An encryp�on protocol used in Wi‐Fi networks.
-    - CCTV::Closed-circuit Television
-        - CCTV (Closed‐circuit Television): A TV system in which signals are not publicly distributed but are
-        - monitored, primarily for surveillance and security purposes.
-    - CFB::Cipher Feedback
-        - CFB (Cipher Feedback): A mode of opera�on for a block cipher.
-    - CHAP::Challenge Handshake Authentication Protocol
-        - CHAP (Challenge Handshake Authen�ca�on Protocol): A type of authen�ca�on protocol used primarily
-        - to authen�cate a user or network host to an authen�ca�ng en�ty.
-    - CIO::Chief Information Officer
-        - CIO (Chief Informa�on Officer): A job �tle commonly given to the most senior execu�ve in an enterprise
-        - responsible for the informa�on technology and computer systems that support enterprise goals.
-    - CIRT::Computer Incident Response Team
-        - CIRT (Computer Incident Response Team): A service organiza�on that is contacted when a security
-        - breach or other computer‐related emergency occurs.
-    - CMS::Content Management System
-        - CMS (Content Management System): So�ware that helps users create, manage, and modify content on
-        - a website without the need for specialized technical knowledge.
-    - COOP::Continuity of Operation Planning
-        - COOP (Con�nuity of Opera�on Planning): A process by government agencies to ensure that cri�cal
-        - func�ons con�nue during a wide range of emergencies, including localized acts of nature, accidents, and
-        - technological or a�ack‐related emergencies.
-    - COPE::Corporate Owned, Personally Enabled
-        - COPE (Corporate Owned, Personally Enabled): A business strategy for managing mobile devices that
-        - allows employees to use corporate‐owned IT devices for personal use.
-    - CP::Contingency Planning
-        - CP (Con�ngency Planning): A course of ac�on designed to help an organiza�on respond effec�vely to a
-        - significant future event or situa�on that may or may not happen.
-    - CSO::Chief Security Officer
-        - CSO (Chief Security Officer): A company execu�ve responsible for the security of personnel, physical
-        - assets, and informa�on in both physical and digital form.
-    - CSP::Cloud Service Provider
-        - CSP (Cloud Service Provider): A company that offers some component of cloud compu�ng – typically
-        - Infrastructure as a Service (IaaS), So�ware as a Service (SaaS) or Pla�orm as a Service (PaaS) – to other
-        - businesses or individuals.
-    - CSR::Certificate Signing Request
-        - CSR (Cer�ficate Signing Request): A message sent from an applicant to a cer�ficate authority in order to
-        - apply for a digital iden�ty cer�ficate.
-    - CSRF::Cross-site Request Forgery
-        - CSRF (Cross‐site Request Forgery): A type of malicious exploit of a website where unauthorized
-        - commands are transmi�ed from a user that the web applica�on trusts.
-    - CSU::Channel Service Unit
-        - CSU (Channel Service Unit): A device used in digital data transmission for interfacing a digital data
-        - terminal with a digital transmission medium.
-    - CTM::Counter Mode
-        - CTM (Counter Mode): A mode of opera�on in cryptography for block ciphers.
-    - CTO::Chief Technology Officer
-        - CTO (Chief Technology Officer): An execu�ve‐level posi�on in a company or other en�ty whose
-        - occupant is focused on scien�fic and technological issues within an organiza�on.
-    - CVE::Common Vulnerability Enumeration
-        - CVE (Common Vulnerability Enumera�on): A list of publicly disclosed cybersecurity vulnerabili�es.
-    - CVSS::Common Vulnerability Scoring System
-        - CVSS (Common Vulnerability Scoring System): A free and open industry standard for assessing the
-        - severity of computer system security vulnerabili�es.
-    - CYOD::Choose Your Own Device
-        - CYOD (Choose Your Own Device): A corporate policy that permits employees to choose which devices
-        - they use for work purposes.
-    - 
-    - DAC 2::Discretionary Access Control
-        - DAC (Discre�onary Access Control): A type of access control defined by the Access Control List (ACL)
-        - where access rights are assigned to users by the system (or system's administrators).
-    - DBA::Database Administrator
-        - DBA (Database Administrator): A person who uses specialized so�ware to store and organize data.
-    - DEP::Data Execution Prevention
-        - DEP (Data Execu�on Preven�on): A security feature that can help prevent damage to your computer
-        - from viruses and other security threats.
-    - DES::Digital Encryption Standard
-        - DES (Digital Encryp�on Standard): A previously dominant algorithm for the encryp�on of electronic
-        - data.
-    - DHE::Diffie-Hellman Ephemeral
-        - DHE (Diffie‐Hellman Ephemeral): A method of securely exchanging cryptographic keys over a public
-        - channel.
-    - DNAT::Destination Network Address Translation
-        - DNAT (Des�na�on Network Address Transla�on): A technique for transparently changing the
-        - des�na�on IP address of an end route packet and performing the inverse func�on for any replies.
-    - DPO::Data Privacy Officer
-        - DPO (Data Privacy Officer): A role within a company or organiza�on responsible for ensuring that the
-        - company complies with data protec�on laws.
-    - DRP::Disaster Recovery Plan
-        - DRP (Disaster Recovery Plan): A structured approach with policies and procedures for responding to an
-        - unplanned incident and recovering cri�cal systems.
-    - DSA::Digital Signature Algorithm
-        - DSA (Digital Signature Algorithm): A standard for digital signatures.
-    - 
-    - EAP::Extensible Authentication Protocol
-        - EAP (Extensible Authen�ca�on Protocol): An authen�ca�on framework frequently used in wireless
-        - networks and Point‐to‐Point connec�ons.
-    - ECB::Electronic Code Book
-        - ECB (Electronic Code Book): A mode of opera�on for a block cipher, with the characteris�c that each
-        - possible block of plaintext has a defined corresponding ciphertext value.
-    - ECC 2::Elliptic Curve Cryptography
-        - ECC (Ellip�c Curve Cryptography): An approach to public‐key cryptography based on the algebraic
-        - structure of ellip�c curves over finite fields.
-    - ECDHE::Elliptic Curve Diffie-Hellman Ephemeral
-        - ECDHE (Ellip�c Curve Diffie‐Hellman Ephemeral): A variant of the Diffie‐Hellman algorithm that uses
-        - ellip�c curve cryptography.
-    - ECDSA::Elliptic Curve Digital Signature Algorithm
-        - ECDSA (Ellip�c Curve Digital Signature Algorithm): A cryptographic algorithm used by Bitcoin to ensure
-        - that funds can only be spent by their righ�ul owners.
-    - ERP::Enterprise Resource Planning
-        - ERP (Enterprise Resource Planning): Business process management so�ware that allows an organiza�on
-        - to use a system of integrated applica�ons to manage the business and automate many back office
-        - func�ons.
-    - ESN::Electronic Serial Number
-        - ESN (Electronic Serial Number): A unique iden�fica�on number embedded by manufacturers on a
-        - microchip in wireless phones.
-    - 
-    - FACL::File System Access Control List
-        - FACL (File System Access Control List): A data structure, most o�en associated with Microso� Windows
-        - and NTFS, that controls access to files and folders.
-    - FDE::Full Disk Encryption
-        - FDE (Full Disk Encryp�on): Encryp�on at the hardware level.
-    - FIM::File Integrity Management
-        - FIM (File Integrity Management): A technology that monitors and reports changes in files, o�en used in
-        - IT security.
-    - FPGA::Field Programmable Gate Array
-        - FPGA (Field Programmable Gate Array): An integrated circuit designed to be configured by a customer
-        - or a designer a�er manufacturing – hence "field‐programmable".
-    - FRR::False Rejection Rate
-        - FRR (False Rejec�on Rate): In biometric security systems, the measure of the likelihood that the
-        - biometric security system will incorrectly reject an access a�empt by an authorized user.
-    - 
-    - GCM::Galois Counter Mode
-        - GCM (Galois Counter Mode): A mode of opera�on for symmetric key cryptographic block ciphers that
-        - has been widely adopted because of its efficiency and performance.
-    - GPG::Gnu Privacy Guard
-        - GPG (Gnu Privacy Guard): A free so�ware re‐implementa�on of the OpenPGP standard as defined by
-        - RFC4880, which allows you to encrypt and sign your data and communica�ons.
-    - GPO::Group Policy Object
-        - GPO (Group Policy Object): A feature of Windows that provides centralized management and
-        - configura�on of opera�ng systems, applica�ons, and users' se�ngs in an Ac�ve Directory environment.
-    - 
-    - HA::High Availability
-        - HA (High Availability): Refers to systems that are durable and likely to operate con�nuously without
-        - failure for a long �me.
-    - HIDS::Host-based Intrusion Detection System
-        - HIDS (Host‐based Intrusion Detec�on System): A system that monitors important opera�ng system files.
-    - HIPS::Host-based Intrusion Prevention System
-        - HIPS (Host‐based Intrusion Preven�on System): An installed so�ware package which monitors a single
-        - host for suspicious ac�vity by analyzing events occurring within that host.
-    - HMAC::Hashed Message Authentication Code
-        - HMAC (Hashed Message Authen�ca�on Code): A specific type of message authen�ca�on code
-        - involving a cryptographic hash func�on and a secret cryptographic key.
-    - HOTP::HMAC-based One-time Password
-        - HOTP (HMAC‐based One‐�me Password): A one‐�me password algorithm based on hash‐based
-        - message authen�ca�on codes.
-    - HVAC::Heating, Ventilation, Air Conditioning
-        - HVAC (Hea�ng, Ven�la�on, and Air Condi�oning): Technology of indoor and vehicular environmental
-        - comfort.
-    - 
-    - IDEA::International Data Encryption Algorithm
-        - IDEA (Interna�onal Data Encryp�on Algorithm): A symmetric key block cipher.
-    - IdP::Identity Provider
-        - IdP (Iden�ty Provider): A system en�ty that creates, maintains, and manages iden�ty informa�on for
-        - principals and provides principal authen�ca�on to other service providers within a federa�on or
-        - distributed network.
-    - IM::Instant Messaging
-        - IM (Instant Messaging): A type of online chat that offers real‐�me text transmission over the internet.
-    - IoC::Indicators of Compromise
-        - IoC (Indicators of Compromise): Ar�facts observed on a network or in an opera�ng system that with
-        - high confidence indicate a computer intrusion.
-    - IR 2::Incident Response
-        - IR (Incident Response): An organized approach to addressing and managing the a�ermath of a security
-        - breach or cybera�ack.
-    - IRC::Internet Relay Chat
-        - IRC (Internet Relay Chat): An applica�on layer protocol that facilitates communica�on in the form of
-        - text.
-    - ISSO::Information Systems Security Officer
-        - ISSO (Informa�on Systems Security Officer): A person responsible for ensuring the appropriate
-        - opera�onal security posture is maintained for an informa�on system.
-    - IV::Initialization Vector
-        - IV (Ini�aliza�on Vector): A fixed‐size input to a cryptographic primi�ve that is typically required to be
-        - random or pseudorandom.
-    - 
-    - KDC::Key Distribution Center
-        - KDC (Key Distribu�on Center): Part of a cryptosystem intended to reduce the risks inherent in
-        - exchanging keys.
-    - KEK::Key Encryption Key
-        - KEK (Key Encryp�on Key): A key used to encrypt other keys.
-    - 
-    - L2TP::Layer 2 Tunneling Protocol
-        - L2TP (Layer 2 Tunneling Protocol): A tunneling protocol used to support virtual private networks (VPNs).
-    - LEAP::Lightweight Extensible Authentication Protocol
-        - LEAP (Lightweight Extensible Authen�ca�on Protocol): A proprietary wireless LAN authen�ca�on
-        - method developed by Cisco Systems.
-    - 
-    - MaaS::Monitoring as a Service
-        - MaaS (Monitoring as a Service): A type of cloud service that involves the use of remote monitoring tools
-        - to manage and monitor the infrastructure of a company.
-    - MAC 2::Mandatory Access Control
-        - MAC (Mandatory Access Control): A type of access control in which the opera�ng system constrains the
-        - ability of a subject or ini�ator to access or generally perform some sort of opera�on on an object or
-        - target.
-    - MAC 3::Message Authentication Code
-        - MAC (Message Authen�ca�on Code): A short piece of informa�on used to authen�cate a message and
-        - to provide integrity and authen�city assurances on the message.
-    - MD5::Message Digest 5
-        - MD5 (Message Digest 5): A widely used cryptographic hash func�on that produces a 128‐bit (16‐byte)
-        - hash value.
-    - ML::Machine Learning
-        - ML (Machine Learning): A type of ar�ficial intelligence that allows so�ware applica�ons to become
-        - more accurate at predic�ng outcomes without being explicitly programmed to do so.
-    - MMS::Multimedia Message Service
-        - MMS (Mul�media Message Service): A standard way to send messages that include mul�media content
-        - to and from a mobile phone over a cellular network.
-    - MOA::Memorandum of Agreement
-        - MOA (Memorandum of Agreement): A document wri�en between par�es to coopera�vely work
-        - together on an agreed‐upon project or meet an agreed‐upon objec�ve.
-    - MPLS::Multi-protocol Label Switching
-        - MPLS (Mul�‐protocol Label Switching): A type of data‐carrying technique for high‐performance
-        - telecommunica�ons networks.
-    - MSA::Master Service Agreement
-        - MSA (Master Service Agreement): A contract reached between par�es, in which the par�es agree to
-        - most of the terms that will govern future transac�ons or future agreements.
-    - MSCHAP::Microsoft Challenge Handshake Authentication Protocol
-        - MSCHAP (Microso� Challenge Handshake Authen�ca�on Protocol): A Microso� proprietary version of
-        - the Challenge Handshake Authen�ca�on Protocol (CHAP) used by Windows NT.
-    - MSP::Managed Service Provider
-        - MSP (Managed Service Provider): A company that remotely manages a customer's IT infrastructure
-        - and/or end‐user systems, typically on a proac�ve basis and under a subscrip�on model.
-    - MSSP::Managed Security Service Provider
-        - MSSP (Managed Security Service Provider): A type of IT service company that provides organiza�ons
-        - with some amount of cybersecurity monitoring and management.
-    - MTTF::Mean Time to Failure
-        - MTTF (Mean Time to Failure): The length of �me a device or other product is expected to last in
-        - opera�on.
-    - MTTR 2::Mean Time to Recover
-        - MTTR (Mean Time to Recover): The average �me that a device will take to recover from any failure.
-    - 
-    - NGFW::Next-generation Firewall
-        - NGFW (Next‐genera�on Firewall): A part of the third genera�on of firewall technology that combines a
-        - tradi�onal firewall with other network device filtering func�onali�es.
-    - NIDS::Network-based Intrusion Detection System
-        - NIDS (Network‐based Intrusion Detec�on System): A system that analyzes incoming network traffic.
-    - NIPS::Network-based Intrusion Prevention System
-        - NIPS (Network‐based Intrusion Preven�on System): A system that monitors a network for malicious
-        - ac�vi�es such as security threats or policy viola�ons.
-    - NIST::National Institute of Standards & Technology
-        - NIST (Na�onal Ins�tute of Standards & Technology): A physical sciences laboratory and a non‐
-        - regulatory agency of the United States Department of Commerce.
-    - NTLM::New Technology LAN Manager
-        - NTLM (New Technology LAN Manager): A suite of Microso� security protocols that provides
-        - authen�ca�on, integrity, and confiden�ality to users.
-    - 
-    - OAUTH::Open Authorization
-        - OAuth (Open Authoriza�on): An open standard for access delega�on, commonly used as a way for
-        - Internet users to grant websites or applica�ons access to their informa�on on other websites but
-        - without giving them the passwords.
-    - OCSP::Online Certificate Status Protocol
-        - OCSP (Online Cer�ficate Status Protocol): An internet protocol used for obtaining the revoca�on status
-        - of an X.509 digital cer�ficate.
-    - OID::Object Identifier
-        - OID (Object Iden�fier): An iden�fier used to name an object (a set of data) in a globally unique way.
-    - OSINT::Open-source Intelligence
-        - OSINT (Open‐source Intelligence): Intelligence collected from publicly available sources.
-    - OTA::Over the Air
-        - OTA (Over the Air): Wireless transmission of data or so�ware updates to mobile devices.
-    - OVAL::Open Vulnerability Assessment Language
-        - OVAL (Open Vulnerability Assessment Language): An informa�on security community standard to
-        - promote open and publicly available security content.
-    - 
-    - P12::PKCS #12
-        - P12 (PKCS #12): A portable format for storing or transpor�ng a user's private keys, cer�ficates, and
-        - miscellaneous secrets.
-    - P2P::Peer to Peer
-        - P2P (Peer to Peer): A decentralized communica�ons model in which each party has the same capabili�es
-        - and either party can ini�ate a communica�on session.
-    - PAC::Proxy Auto Configuration
-        - PAC (Proxy Auto Configura�on): A method used by web browsers to select an appropriate proxy server
-        - automa�cally.
-    - PAM 2::Pluggable Authentication Modules
-        - PAM (Pluggable Authen�ca�on Modules): A mechanism to integrate mul�ple low‐level authen�ca�on
-        - schemes into a high‐level applica�on programming interface (API).
-    - PAP::Password Authentication Protocol
-        - PAP (Password Authen�ca�on Protocol): A simple, plaintext password authen�ca�on protocol.
-    - PBKDF2::Password-based Key Derivation Function 2
-        - PBKDF2 (Password‐based Key Deriva�on Func�on 2): A key deriva�on func�on that is part of RSA
-    - PBX::Private Branch Exchange
-        - PBX (Private Branch Exchange): A private telephone network used within a company or organiza�on.
-    - PCAP::Packet Capture
-        - PCAP (Packet Capture): The act of capturing data packets crossing a specific segment of a network.
-    - PEAP::Protected Extensible Authentication Protocol
-        - PEAP (Protected Extensible Authen�ca�on Protocol): A method to securely transmit authen�ca�on
-        - informa�on, including passwords, over wireless networks.
-    - PED::Personal Electronic Device
-        - PED (Personal Electronic Device): A small electronic device typically used for personal tasks such as
-        - communica�on, data management, and recrea�on.
-    - PEM::Privacy Enhanced Mail
-        - PEM (Privacy Enhanced Mail): A de facto standard for secure email in the Internet community.
-    - PFS::Perfect Forward Secrecy
-        - PFS (Perfect Forward Secrecy): A property of secure communica�on protocols in which compromise of
-        - long‐term keys does not compromise past session keys.
-    - PGP::Pretty Good Privacy
-        - PGP (Pre�y Good Privacy): An encryp�on program that provides cryptographic privacy and
-        - authen�ca�on for data communica�on.
-    - PKCS::Public Key Cryptography Standards
-        - PKCS (Public Key Cryptography Standards): A set of standards for public‐key cryptography that were
-        - established by RSA Data Security, Inc.
-    - POTS::Plain Old Telephone Service
-        - POTS (Plain Old Telephone Service): The voice‐grade telephone service that remains the basic form of
-        - residen�al and small business service connec�on to the telephone network in most parts of the world.
-    - PPTP::Point-to-Point Tunneling Protocol
-        - PPTP (Point‐to‐Point Tunneling Protocol): A method for implemen�ng virtual private networks.
-    - PTZ::Pan-tilt-zoom
-        - PTZ (Pan‐�lt‐zoom): A type of camera that is capable of remote direc�onal and zoom control.
-    - 
-    - RA::Recovery Agent
-        - RA (Recovery Agent): An en�ty that has the ability to recover a key, cer�ficate, or encrypted data.
-    - RA 2::Registration Authority
-        - RA (Registra�on Authority): An authority in a network that verifies user requests for a digital cer�ficate
-    - RACE::Research and Development in Advanced Communications Technologies in Europe
-        - RACE (Research and Development in Advanced Communica�ons Technologies in Europe): A former
-        - European Union research and development program focused on developing advanced
-        - telecommunica�ons networks.
-    - RAD::Rapid Application Development
-        - RAD (Rapid Applica�on Development): A type of so�ware development methodology that priori�zes
-        - rapid prototype releases and itera�ons.
-    - RAS::Remote Access Server
-        - RAS (Remote Access Server): A server that provides a remote access service to users or client
-        - computers.
-    - RAT::Remote Access Trojan
-        - RAT (Remote Access Trojan): A malware program that includes a back door for administra�ve control
-        - over the target computer.
-    - RBAC::Role-based Access Control
-        - RBAC (Role‐based Access Control): An approach to restric�ng system access to authorized users based
-        - on their role within an organiza�on.
-        - RBAC (Rule‐based Access Control): A policy‐neutral access control mechanism defined around roles and
-    - RC4::Rivest Cipher version 4
-        - RC4 (Rivest Cipher version 4): A stream cipher that is simple and fast but has vulnerabili�es and is
-        - considered insecure.
-    - RIPEMD::RACE Integrity Primitives Evaluation Message Digest
-        - RIPEMD (RACE Integrity Primi�ves Evalua�on Message Digest): A family of cryptographic hash func�ons
-        - developed in Belgium.
-    - ROI::Return on Investment
-        - ROI (Return on Investment): A measure used to evaluate the efficiency of an investment or compare the
-        - efficiency of a number of different investments.
-    - RSA::Rivest, Shamir, & Adleman
-        - RSA (Rivest, Shamir, & Adleman): One of the first public‐key cryptosystems and is widely used for secure
-        - data transmission.
-    - RTBH::Remotely Triggered Black Hole
-        - RTBH (Remotely Triggered Black Hole): A technique used to block denial‐of‐service a�acks in IP
-        - networks.
-    - RTOS::Real-time Operating System
-        - RTOS (Real‐�me Opera�ng System): An opera�ng system intended to serve real‐�me applica�on
-        - process data as it comes in, typically without buffering delays.
-    - RTP::Real-time Transport Protocol
-        - RTP (Real‐�me Transport Protocol): A network protocol for delivering audio and video over IP networks.
-    - 
-    - S/MIME::Secure/Multipurpose Internet Mail Extensions
-        - S/MIME (Secure/Mul�purpose Internet Mail Extensions): A standard for public key encryp�on and
-        - signing of MIME data.
-    - SAE::Simultaneous Authentication of Equals
-        - SAE (Simultaneous Authen�ca�on of Equals): A security protocol used in Wi‐Fi networks.
-    - SAN 2::Subject Alternative Name
-        - SAN (Subject Alterna�ve Name): An extension to X.509 specifica�on that allows users to specify
-        - addi�onal host names for a single SSL cer�ficate.
-    - SCAP::Security Content Automation Protocol
-        - SCAP (Security Content Automa�on Protocol): A method for using specific standards to enable
-        - automated vulnerability management, measurement, and policy compliance evalua�on.
-    - SCEP::Simple Certificate Enrollment Protocol
-        - SCEP (Simple Cer�ficate Enrollment Protocol): A protocol used for the secure issuance of digital
-        - cer�ficates.
-    - SDK::Software Development Kit
-        - SDK (So�ware Development Kit): A collec�on of so�ware development tools in one installable package.
-    - SDLC::Software Development Lifecycle
-        - SDLC (So�ware Development Lifecycle): A process for planning, crea�ng, tes�ng, and deploying an
-        - informa�on system.
-    - SDLM::Software Development Lifecycle Methodology
-        - SDLM (So�ware Development Lifecycle Methodology): A framework that describes the stages involved
-        - in the development of so�ware, from ini�al feasibility study through maintenance of the completed
-        - applica�on.
-    - SE Linux::Security-enhanced Linux
-        - SE Linux (Security‐enhanced Linux): A set of kernel modifica�ons and user‐space tools that have been
-        - added to various Linux distribu�ons. Its purpose is to enhance Linux system security by enforcing
-        - mandatory access control policies.
-    - SED::Self-encrypting Drives
-        - SED (Self‐encryp�ng Drives): Storage drives (usually hard drives or solid‐state drives) that automa�cally
-        - and con�nuously encrypt the data on the drive without any user interac�on.
-    - SEH::Structured Exception Handler
-        - SEH (Structured Excep�on Handler): A mechanism in Microso� Windows for handling both hardware
-        - and so�ware excep�ons.
-    - SHA::Secure Hashing Algorithm
-        - SHA (Secure Hashing Algorithm): A family of cryptographic hash func�ons published by the Na�onal
-        - Ins�tute of Standards and Technology as a U.S. Federal Informa�on Processing Standard.
-    - SHTTP::Secure Hypertext Transfer Protocol
-        - SHTTP (Secure Hypertext Transfer Protocol): An obsolete alterna�ve to HTTPS for encryp�ng web
-        - communica�ons carried over HTTP.
-    - SLE::Single Loss Expectancy
-        - SLE (Single Loss Expectancy): A term used in risk management referring to the monetary value expected
-        - from the occurrence of a risk on an asset.
-    - SOAP::Simple Object Access Protocol
-        - SOAP (Simple Object Access Protocol): A messaging protocol specifica�on for exchanging structured
-        - informa�on in the implementa�on of web services in computer networks.
-    - SOAR::Security Orchestration, Automation, Response
-        - SOAR (Security Orchestra�on, Automa�on, and Response): Technologies that enable organiza�ons to
-        - collect inputs monitored by the security opera�ons center (SOC).
-    - SoC::System on Chip
-        - SoC (System on Chip): An integrated circuit that integrates all components of a computer or other
-        - electronic systems into a single chip.
-    - SOC::Security Operations Center
-        - SOC (Security Opera�ons Center): A centralized unit that deals with security issues on an organiza�onal
-        - and technical level.
-    - SOW::Statement of Work
-        - SOW (Statement of Work): A document rou�nely employed in the field of project management. It
-        - defines project‐specific ac�vi�es, deliverables, and �melines for a vendor providing services to the client.
-    - SPIM::Spam over Internet Messaging
-        - SPIM (Spam over Internet Messaging): Unsolicited messages sent via an instant messaging (IM) system.
-    - SQLi::SQL Injection
-        - SQLi (SQL Injec�on): A code injec�on technique used to a�ack data‐driven applica�ons, in which
-        - malicious SQL statements are inserted into an entry field for execu�on.
-    - SRTP::Secure Real-Time Protocol
-        - SRTP (Secure Real‐Time Protocol): A profile of the Real‐Time Transport Protocol (RTP) intended to
-        - provide encryp�on, message authen�ca�on, and integrity, and replay protec�on to the RTP data in both
-        - unicast and mul�cast applica�ons.
-    - STIX::Structured Threat Information eXchange
-        - STIX (Structured Threat Informa�on eXchange): A language and serializa�on format used to exchange
-        - cyber threat intelligence.
-    - SWG::Secure Web Gateway
-        - SWG (Secure Web Gateway): Solu�ons that filter unwanted so�ware/malware from user‐ini�ated
-        - web/internet traffic and enforce corporate and regulatory policy compliance.
-    - 
-    - TAXII::Trusted Automated eXchange of Indicator Information
-        - TAXII (Trusted Automated eXchange of Indicator Informa�on): An applica�on layer protocol for the
-        - communica�on of cyber threat informa�on in a simple and scalable manner.
-    - TGT::Ticket Granting Ticket
-        - TGT (Ticket Gran�ng Ticket): A part of the Kerberos protocol used for authen�ca�ng requests for service
-        - �ckets within the network.
-    - TOC::Time-of-check
-        - TOC (Time‐of‐check): Refers to a problem where the state of a system can change between the �me it is
-        - checked and the �me it is used.
-    - TOU::Time-of-use
-        - TOU (Time‐of‐use): Refers to the varying price of electricity or other resources depending on the �me
-        - when it is used.
-    - TTP::Tactics, Techniques, and Procedures
-        - TTP (Tac�cs, Techniques, and Procedures): Describes the behavior or modus operandi of cyber a�ackers
-        - in terms of the tac�cs they use, the techniques they employ, and the procedures they follow to execute
-        - an a�ack.
-    - TSIG::Transaction Signature
-        - TSIG (Transac�on Signature): A protocol used for securing updates to DNS, which is based on shared
-        - secret key cryptography.
-    - 
-    - UAT::User Acceptance Testing
-        - UAT (User Acceptance Tes�ng): The last phase of the so�ware tes�ng process, where actual so�ware
-        - users test the so�ware to make sure it can handle required tasks in real‐world scenarios.
-    - UAV::Unmanned Aerial Vehicle
-        - UAV (Unmanned Aerial Vehicle): An aircra� without a human pilot aboard, also known as a drone.
-    - UEM::Unified Endpoint Management
-        - UEM (Unified Endpoint Management): A class of so�ware tools that provide a single management
-        - interface for mobile, PC, and other devices.
-    - URI::Uniform Resource Identifier
-        - URI (Uniform Resource Iden�fier): A string of characters used to iden�fy a name or a resource on the
-        - Internet.
-    - USB OTG::USB On the Go
-        - USB OTG (USB On‐The‐Go): A standard that enables mobile devices to talk to one another.
-    - 
-    - VBA::Visual Basic
-        - VBA (Visual Basic for Applica�ons): An implementa�on of Microso�'s event‐driven programming
-        - language Visual Basic 6 and its associated integrated development environment (IDE).
-    - VDE::Virtual Desktop Environment
-        - VDE (Virtual Desktop Environment): A virtual machine that provides a user with a graphical interface
-        - similar to that of a physical desktop.
-    - VTC::Video Teleconferencing
-        - VTC (Video Teleconferencing): A technology that allows users in different loca�ons to hold face‐to‐face
-        - mee�ngs without having to move to a single loca�on together.
-    - 
-    - WAF::Web Application Firewall
-        - WAF (Web Applica�on Firewall): A specific form of applica�on firewall that filters, monitors, and blocks
-        - HTTP traffic to and from a web service.
-    - WAP::Wireless Access Point
-        - WAP (Wireless Access Point): A networking hardware device that allows a Wi‐Fi device to connect to a
-        - wired network.
-    - WIDS::Wireless Intrusion Detection System
-        - WIDS (Wireless Intrusion Detec�on System): A system designed to detect the presence
-    - WIPS::Wireless Intrusion Prevention System
-    - WO::Work Order
-    - WTLS::Wireless TLS
-    - 
-    - XDR::Extended Detection and Response
-    - XML::Extensible Markup Language
-    - XOR::Exclusive Or
-    - XSRF::Cross-site Request Forgery
-    - 
+CompTIA Tech+/ITF+ FC0-71 Acronyms
+
+**Acronym - Spelled Out**
+AC::Alternating Current
+- Definition: Type of electricity where electron flow alternates direction.
+- Hint: TOEWEFAD
+
+ACL::Access Control List
+- Definition: Set of rules used to control network traffic and access.
+- Hint: SORUTCNTAA
+
+AES::Advanced Encryption Standard
+- Definition: Symmetric encryption algorithm widely used to secure data.
+- Hint: SEAWUTSD
+
+AI::Artificial Intelligence
+- Definition: Simulation of human intelligence by computer systems.
+- Hint: SOHIBCS
+
+AIO::All In One
+- Definition: Computer system combining the monitor and components into one unit.
+- Hint: CSCTMACIOU
+
+APIPA::Automatic Private Internet Protocol Addressing
+- Definition: Self-assigning IP addresses when a DHCP server is unavailable.
+- Hint: SAIAWADSIU
+
+ARM::Advanced RISC Machines
+- Definition: Energy-efficient processor architecture commonly used in mobile devices.
+- Hint: EEPACUIMD
+
+ARP::Address Resolution Protocol
+- Definition: Protocol used to map IP addresses to MAC addresses.
+- Hint: PUTMIATMA
+
+ASCII::American Standard Code for Information Interchange
+- Definition: Character encoding standard representing text in computers.
+- Hint: CESRTIC
+
+BD-ROM::Blu-ray Disc Read-only Memory
+- Definition: Read-only Blu-ray Disc used for storing high-capacity data.
+- Hint: ROBRDUFSHCD
+
+BIOS::Basic Input/Output System
+- Definition: Firmware performing hardware initialization during the boot process.
+- Hint: FPHIDTBP
+
+BPS::Bits Per Second
+- Definition: Measurement of data transfer speed in bits per second.
+- Hint: MODTSIBPS
+
+CAD::Computer-aided Design
+- Definition: Software used to design precise 2D or 3D technical drawings.
+- Hint: SUTDP2O3TD
+
+CAM::Computer-aided Manufacturing
+- Definition: Software controlling manufacturing machinery and tools.
+- Hint: SCMMAT
+
+CAN::Controller Area Network
+- Definition: Vehicle bus standard allowing microcontrollers to communicate.
+- Hint: VBSAMTC
+
+CD::Compact Disc
+- Definition: Digital optical disc data storage format.
+- Hint: DODDSF
+
+CD-ROM::Compact Disc-Read-only Memory
+- Definition: Read-only compact disc used for storing software and data.
+- Hint: ROCDUFSSAD
+
+CD-RW::Compact Disc-Rewritable
+- Definition: Optical disc that can be written and erased multiple times.
+- Hint: ODTCBWAEMT
+
+CLI::Command-line Interface
+- Definition: Text-based interface used to interact with operating systems.
+- Hint: TBIUTIWOS
+
+CPU::Central Processing Unit
+- Definition: Primary component of a computer that performs instructions.
+- Hint: PCOACTPI
+
+CRUD::Create, Read, Update, Delete
+- Definition: Four basic database functions: create, read, update, and delete.
+- Hint: FBDFCRUAD
+
+CSS::Cascading Style Sheets
+- Definition: Language used to style and format web page layouts.
+- Hint: LUTSAFWPL
+
+DC::Direct Current
+- Definition: Electric current flowing in a single, constant direction.
+- Hint: ECFIASCD
+
+DDL::Data Definition Language
+- Definition: Database commands defining the structure and schema of databases.
+- Hint: DCDTSASOD
+
+DDR::Double Data Rate
+- Definition: Memory technology transferring data on both clock edges.
+- Hint: MTTDOBCE
+
+DDoS::Distributed Denial of Service
+- Definition: Cyberattack flooding a target with traffic from multiple sources.
+- Hint: CFATWTFMS
+
+DHCP::Dynamic Host Configuration Protocol
+- Definition: Network protocol automatically assigning IP addresses to devices.
+- Hint: NPAAIATD
+
+DIMM::Dual Inline Memory Module
+- Definition: Memory module containing random-access memory chips.
+- Hint: MMCRAMC
+
+DLL::Dynamic Link Library
+- Definition: Shared library containing code and data used by multiple programs.
+- Hint: SLCCADUBMP
+
+DLP::Data Loss Prevention
+- Definition: Security controls preventing sensitive data from leaving the network.
+- Hint: SCPSDFLTN
+
+DML::Data Manipulation Language
+- Definition: Database commands used to query, insert, update, and delete data.
+- Hint: DCUTQIUADD
+
+DNS::Domain Name System
+- Definition: System translating human-readable domain names into IP addresses.
+- Hint: STHRDNIIA
+
+DSL::Digital Subscriber Line
+- Definition: Technology providing broadband internet over standard telephone lines.
+- Hint: TPBIOSTL
+
+DVD::Digital Video Disc
+- Definition: High-capacity optical disc storage format.
+- Hint: HCODSF
+
+DVD-R::Digital Video Disc-Recordable
+- Definition: DVD format that can be written to once.
+- Hint: DFTCBWTO
+
+DVD-RW::Digital Video Disc-Rewritable
+- Definition: DVD format that can be written and erased multiple times.
+- Hint: DFTCBWAEMT
+
+DVI::Digital Visual Interface
+- Definition: Video display interface connecting video sources to displays.
+- Hint: VDICVSTD
+
+DaaS::Desktop as a Service
+- Definition: Cloud service delivering virtual desktops to users over the internet.
+- Hint: CSDVDTUOTI
+
+DoS::Denial of Service
+- Definition: Cyberattack making a network resource unavailable to users.
+- Hint: CMANRUTU
+
+EMI::Electromagnetic Interference
+- Definition: Electromagnetic disturbance affecting the performance of electrical circuits.
+- Hint: EDATPOEC
+
+ESD::Electrostatic Discharge
+- Definition: Sudden flow of static electricity between two objects upon contact.
+- Hint: SFOSEBTOUC
+
+EULA::End User License Agreement
+- Definition: Legal agreement between a software provider and user.
+- Hint: LABASPAU
+
+eSATA::External Serial Advanced Technology Attachment
+- Definition: External interface standard for connecting SATA storage devices.
+- Hint: EISFCSSD
+
+FAT::File Allocation Table
+- Definition: Legacy file system structure tracking storage clusters.
+- Hint: LFSSTSC
+
+FAT32::32-bit File Allocation Table
+- Definition: File system utilizing 32-bit addressing for storage clusters.
+- Hint: FSU3BAFSC
+
+FTP::File Transfer Protocol
+- Definition: Standard network protocol transferring files between client and server.
+- Hint: SNPTFBCAS
+
+FTPS::File Transfer Protocol Secure
+- Definition: Secure extension of FTP adding TLS/SSL encryption.
+- Hint: SEOFATSE
+
+GB::Gigabyte
+- Definition: Unit of digital data equal to one billion bytes.
+- Hint: UODDETOBB
+
+GDPR::General Data Protection Regulation
+- Definition: European Union regulation protecting personal data privacy.
+- Hint: EURPPDP
+
+GHz::Gigahertz
+- Definition: Unit of frequency equal to one billion cycles per second.
+- Hint: UOFETOBCPS
+
+GPS::Global Positioning System
+- Definition: Satellite navigation system determining precise geographical location.
+- Hint: SNSDPGL
+
+GPU::Graphics Processing Unit
+- Definition: Specialized processor designed to accelerate graphics rendering.
+- Hint: SPDTAGR
+
+GUI::Graphical User Interface
+- Definition: Visual user interface using graphics, menus, and icons.
+- Hint: VUIUGMAI
+
+Gb::Gigabit
+- Definition: Unit of digital data equal to one billion bits.
+- Hint: UODDETOBB
+
+Gbps::Gigabit per second
+- Definition: Data transfer rate of one billion bits per second.
+- Hint: DTROOBBPS
+
+HDD::Hard Disk Drive
+- Definition: Non-volatile magnetic storage device with rotating platters.
+- Hint: NVMSDWRP
+
+HDMI::High-definition Multimedia Interface
+- Definition: Interface transmitting digital audio and video signals.
+- Hint: ITDAAVS
+
+HFS::Hierarchical File System
+- Definition: Legacy file system developed by Apple for macOS.
+- Hint: LFSDBAFM
+
+HTML::Hypertext Markup Language
+- Definition: Standard markup language used to create web pages.
+- Hint: SMLUTCWP
+
+HTTP::Hypertext Transfer Protocol
+- Definition: Application protocol transmitting web pages over the internet.
+- Hint: APTWPOTI
+
+HTTPS::Hypertext Transfer Protocol Secure
+- Definition: Secure version of HTTP using encryption for web traffic.
+- Hint: SVOHUEFWT
+
+ICMP::Internet Control Message Protocol
+- Definition: Protocol used by network devices for diagnostics and error reporting.
+- Hint: PUBNDFDAER
+
+IDE::Integrated Development Environment
+- Definition: Software providing comprehensive tools for application development.
+- Hint: SPCTFAD
+
+IDS::Intrusion Detection System
+- Definition: Security system monitoring network traffic for suspicious activities.
+- Hint: SSMNTFSA
+
+IMAP::Internet Mail Access Protocol
+- Definition: Protocol allowing email clients to retrieve messages from servers.
+- Hint: PAECTRMFS
+
+IMAPS::Internet Mail Access Protocol Secure
+- Definition: Secure version of IMAP encrypted with SSL/TLS.
+- Hint: SVOIEWST
+
+IOPS::Input/Output Operations Per Second
+- Definition: Performance metric measuring storage device input/output speed.
+- Hint: PMMSDIOS
+
+IP::Internet Protocol
+- Definition: Core protocol routing data packets across network boundaries.
+- Hint: CPRDPANB
+
+IPS::Intrusion Prevention System
+- Definition: Security system detecting and blocking network threats.
+- Hint: SSDABNT
+
+IR::Infrared
+- Definition: Electromagnetic radiation used for short-range wireless communication.
+- Hint: ERUFSRWC
+
+ISP::Internet Service Provider
+- Definition: Company providing subscribers with access to the internet.
+- Hint: CPSWATTI
+
+IaaS::Infrastructure as a Service
+- Definition: Cloud model providing virtualized computing infrastructure over the internet.
+- Hint: CMPVCIOTI
+
+IoT::Internet of Things
+- Definition: Network of physical devices embedded with sensors and connectivity.
+- Hint: NOPDEWSAC
+
+KB::Kilobyte
+- Definition: Unit of digital data equal to one thousand bytes.
+- Hint: UODDETOTB
+
+Kb::Kilobit
+- Definition: Unit of digital data equal to one thousand bits.
+- Hint: UODDETOTB
+
+Kbps::Kilobit per second
+- Definition: Data transfer rate of one thousand bits per second.
+- Hint: DTROOTBPS
+
+LAN::Local Area Network
+- Definition: Local network connecting devices within a limited geographic area.
+- Hint: LNCDWALGA
+
+LTE::Long-term Evolution
+- Definition: Wireless communication standard for high-speed mobile data.
+- Hint: WCSFHSMD
+
+MAC::Media Access Control
+- Definition: Unique physical hardware address assigned to a network interface.
+- Hint: UPHAATANI
+
+MAN::Metropolitan Area Network
+- Definition: Network connecting users within a city or metropolitan region.
+- Hint: NCUWACOMR
+
+MB::Megabyte
+- Definition: Unit of digital data equal to one million bytes.
+- Hint: UODDETOMB
+
+MHz::Megahertz
+- Definition: Unit of frequency equal to one million cycles per second.
+- Hint: UOFETOMCPS
+
+MITM::Man in the Middle
+- Definition: Attack where communications between two parties are intercepted.
+- Hint: AWCBTPAI
+
+MP3::Moving Picture Experts Group Layer-3 Audio
+- Definition: Compressed audio coding standard for digital music.
+- Hint: CACSFDM
+
+MP4::Moving Picture Experts Group Layer-4
+- Definition: Multimedia container format storing digital video and audio.
+- Hint: MCFSDVAA
+
+Mb::Megabit
+- Definition: Unit of digital data equal to one million bits.
+- Hint: UODDETOMB
+
+Mbps::Megabit per second
+- Definition: Data transfer rate of one million bits per second.
+- Hint: DTROOMBPS
+
+NAS::Network Attached Storage
+- Definition: Dedicated storage device connected directly to a network.
+- Hint: DSDCDTAN
+
+NAT::Network Address Translation
+- Definition: Method translating private IP addresses to a public IP address.
+- Hint: MTPIATAPIA
+
+NDA::Non-Disclosure Agreement
+- Definition: Legal contract enforcing confidentiality between parties.
+- Hint: LCECBP
+
+NFC::Near Field Communication
+- Definition: Short-range wireless communication technology for close-proximity devices.
+- Hint: SRWCTFCPD
+
+NIC::Network Interface Card
+- Definition: Hardware component connecting a computer to a network.
+- Hint: HCCACTAN
+
+NTFS::New Technology File System
+- Definition: Standard file system developed by Microsoft for Windows.
+- Hint: SFSDBMFW
+
+NVMe::Non-volatile Memory Express
+- Definition: Interface protocol designed for fast solid-state drives.
+- Hint: IPDFFSSD
+
+OEM::Original Equipment Manufacturer
+- Definition: Company manufacturing components sold in another brand's product.
+- Hint: CMCSIABSP
+
+OS::Operating System
+- Definition: Software managing computer hardware and system resources.
+- Hint: SMCHASR
+
+PAN::Personal Area Network
+- Definition: Network connecting personal devices within a small range.
+- Hint: NCPDWASR
+
+PB::Petabyte
+- Definition: Unit of digital data equal to one quadrillion bytes.
+- Hint: UODDETOQB
+
+PC::Personal Computer
+- Definition: Multi-purpose computer designed for use by one person.
+- Hint: MPCDFUBOP
+
+PCI::Peripheral Component Interconnect
+- Definition: Local computer bus standard for attaching hardware components.
+- Hint: LCBSFAHC
+
+PCIe::Peripheral Component Interconnect Express
+- Definition: High-speed serial expansion bus standard for computers.
+- Hint: HSSEBSFC
+
+PHI::Personal Health Information
+- Definition: Health-related personal data protected under privacy laws.
+- Hint: HRPDPUPL
+
+PII::Personally Identifiable Information
+- Definition: Any data that can uniquely identify a specific individual.
+- Hint: ADTCUIASI
+
+PIN::Personal Identification Number
+- Definition: Numeric password used to authenticate a user.
+- Hint: NPUTAAU
+
+POP::Post Office Protocol
+- Definition: Protocol used to retrieve emails from a remote server.
+- Hint: PUTREFARS
+
+POP3::Post Office Protocol 3
+- Definition: Version of POP standard used to download email locally.
+- Hint: VOPSUTDEL
+
+POP3S::Post Office Protocol 3 Secure
+- Definition: Secure version of POP3 encrypted with SSL/TLS.
+- Hint: SVOPEWST
+
+PSU::Power Supply Unit
+- Definition: Component converting AC electricity to DC power for computers.
+- Hint: CCAETDPFC
+
+PXE::Preboot Execution Environment
+- Definition: Standard allowing computers to boot using a network interface.
+- Hint: SACTBUANI
+
+PaaS::Platform as a Service
+- Definition: Cloud model providing application development platforms over the internet.
+- Hint: CMPADPOTI
+
+RAID::Redundant Array of Independent Disks
+- Definition: Storage technology combining multiple disks for redundancy or speed.
+- Hint: STCMDFROS
+
+RAM::Random-access Memory
+- Definition: Volatile computer memory used for temporary data storage.
+- Hint: VCMUFTDS
+
+RF::Radio Frequency
+- Definition: Electromagnetic wave frequency range used for wireless communication.
+- Hint: EWFRUFWC
+
+RISC::Reduced Instruction Set Computer
+- Definition: Processor design emphasizing simplified instructions for faster speed.
+- Hint: PDESIFFS
+
+RJ::Registered Jack
+- Definition: Standardized physical connector interface for telecommunication equipment.
+- Hint: SPCIFTE
+
+RJ11::Registered Jack Function 11
+- Definition: Physical connector standard used for analog telephone lines.
+- Hint: PCSUFATL
+
+RJ45::Registered Jack Function 45
+- Definition: Physical connector standard used for Ethernet network cables.
+- Hint: PCSUFENC
+
+ROM::Read-only Memory
+- Definition: Non-volatile memory that cannot be modified easily.
+- Hint: NVMTCBME
+
+SATA::Serial Advanced Technology Attachment
+- Definition: Bus interface connecting storage devices to computer motherboards.
+- Hint: BICSDTCM
+
+SD card::Secure Digital Card
+- Definition: Proprietary non-volatile memory card format for mobile devices.
+- Hint: PNVMCFFMD
+
+SFP::Small Form-factor Pluggable
+- Definition: Compact, hot-pluggable network transceiver module.
+- Hint: CHPNTM
+
+SFTP::Secure File Transfer Protocol
+- Definition: Secure file transfer protocol using SSH encryption.
+- Hint: SFTPUSE
+
+SID::System Identifier
+- Definition: Unique alphanumeric code identifying systems or security objects.
+- Hint: UACISOSO
+
+SMTP::Simple Mail Transfer Protocol
+- Definition: Standard protocol used for sending email between servers.
+- Hint: SPUFSEBS
+
+SMTPS::Simple Mail Transfer Protocol Secure
+- Definition: Secure email transmission protocol using SSL/TLS encryption.
+- Hint: SETPUSTE
+
+SNMP::Simple Network Management Protocol
+- Definition: Protocol used to manage and monitor network devices.
+- Hint: PUTMAMND
+
+SOHO::Small Office, Home Office
+- Definition: Category of network equipment designed for small businesses.
+- Hint: CONEDFSB
+
+SQL::Structured Query Language
+- Definition: Standard language used to manage relational databases.
+- Hint: SLUTMRD
+
+SSD::Solid State Drive
+- Definition: Storage device using flash memory for fast data access.
+- Hint: SDUFMFFDA
+
+SSH::Secure Shell
+- Definition: Cryptographic protocol for secure remote command-line login.
+- Hint: CPFSRCLL
+
+SSID::Service Set Identifier
+- Definition: Alphanumeric name identifying a specific wireless network.
+- Hint: ANIASWN
+
+SSL::Secure Sockets Layer
+- Definition: Cryptographic protocol establishing secure links between computers.
+- Hint: CPESLBC
+
+SSO 2::Secure Sign-On
+- Definition: Authentication process allowing access to multiple systems with one login.
+- Hint: APAATMSWOL
+
+SaaS::Software as a Service
+- Definition: Cloud model delivering software applications over the internet.
+- Hint: CMDSAOTI
+
+TB::Terabyte
+- Definition: Unit of digital data equal to one trillion bytes.
+- Hint: UODDETOTB
+
+TCP::Transmission Control Protocol
+- Definition: Core protocol ensuring reliable, ordered transmission of data.
+- Hint: CPEROTOD
+
+TCP/IP::Transmission Control Protocol/Internet Protocol
+- Definition: Suite of communication protocols interconnecting devices on the internet.
+- Hint: SOCPIDOTI
+
+TKIP::Temporal Key Integrity Protocol
+- Definition: Encryption protocol used to secure older wireless networks.
+- Hint: EPUTSOWN
+
+TLS::Transport Layer Security
+- Definition: Cryptographic protocol providing communications security over networks.
+- Hint: CPPCSON
+
+Tbps::Terabits per second
+- Definition: Data transfer rate of one trillion bits per second.
+- Hint: DTROOTBPS
+
+UPS::Uninterruptible Power Supply
+- Definition: Device supplying battery backup power during electrical failures.
+- Hint: DSBBPDEF
+
+URL::Uniform Resource Locator
+- Definition: Address specifying the location of resources on the internet.
+- Hint: ASTLOROTI
+
+USB::Universal Serial Bus
+- Definition: Standard connector interface for data transfer and power supply.
+- Hint: SCIFDTAPS
+
+USB-A::Universal Serial Bus-A
+- Definition: Standard rectangular physical connector type for USB devices.
+- Hint: SRPCTFUD
+
+USB-C::Universal Serial Bus-C
+- Definition: Reversible, compact physical connector standard for USB devices.
+- Hint: RCPCSFUD
+
+VGA::Video Graphics Array
+- Definition: Analog video display standard and connector type.
+- Hint: AVDSACT
+
+VPN::Virtual Private Network
+- Definition: Service encrypting internet traffic to provide security and privacy.
+- Hint: SEITTPSAP
+
+VR::Virtual Reality
+- Definition: Simulated computer-generated interactive virtual environment.
+- Hint: SCGIVE
+
+VoIP::Voice over Internet Protocol
+- Definition: Technology enabling voice communication over Internet Protocol networks.
+- Hint: TEVCOIPN
+
+vCPU::Virtual Central Processing Unit
+- Definition: Virtual central processing unit allocated to a virtual machine.
+- Hint: VCPUATAVM
+
+vHDD::Virtual Hard Disk Drive
+- Definition: Virtual disk file simulating a physical hard drive.
+- Hint: VDFSAPHD
+
+vNIC::Virtual Network Interface Card
+- Definition: Virtual software component simulating a network interface card.
+- Hint: VSCSANIC
+
+vRAM::Virtual Random-access Memory
+- Definition: System memory allocated to virtual machines or graphics.
+- Hint: SMATVMOG
+
+WAN::Wide Area Network
+- Definition: Telecommunications network spanning large geographical distances.
+- Hint: TNSLGD
+
+WAP::Wireless Access Point
+- Definition: Networking device allowing wireless devices to connect to networks.
+- Hint: NDAWDTCTN
+
+WEP::Wired Equivalent Privacy
+- Definition: Deprecated, insecure security protocol for wireless networks.
+- Hint: DISPFWN
+
+WLAN::Wireless Local Area Network
+- Definition: Local area network connecting devices wirelessly.
+- Hint: LANCDW
+
+WPA::Wi-Fi/Wireless Protected Access
+- Definition: Wireless security standard designed to replace WEP.
+- Hint: WSSDTRW
+
+WPA2::Wi-Fi/Wireless Protected Access 2
+- Definition: Wireless security standard implementing advanced AES encryption.
+- Hint: WSSIAAE
+
+WPA3::Wi-Fi/Wireless Protected Access 3
+- Definition: Latest wireless security standard featuring enhanced encryption.
+- Hint: LWSSFEE
+
+WPAN::Wireless Personal Area Network
+- Definition: Short-range wireless network connecting nearby personal devices.
+- Hint: SRWNCNPD
+
+WiFi::Wireless Fidelity
+- Definition: Technology for wireless local area networking.
+- Hint: TFWLAN
+
+CompTIA A+ Acronyms
+
+**Acronym - Spelled Out**
+AAA::Authentication, Authorization, and Accounting
+- Definition: Framework for controlling access, enforcing security policies, and auditing usage.
+- Hint: FFCAESPAAU
+
+AAAA::Authentication, Authorization, Accounting, and Auditing
+- Definition: Security framework adding auditing capabilities to access control systems.
+- Hint: SFAACTACS
+
+ADF::Automatic Document Feeder
+- Definition: Printer or copier feature feeding multiple pages automatically for scanning.
+- Hint: POCFFMPAFS
+
+AMD::Advanced Micro Devices, Inc.
+- Definition: Semiconductor company manufacturing computer processors and graphics technologies.
+- Hint: SCMCPAGT
+
+APFS::Apple File System
+- Definition: Modern proprietary file system designed by Apple for macOS and iOS.
+- Hint: MPFSDBAFMAI
+
+ATX::Advanced Technology Extended
+- Definition: Standard form factor for computer motherboards and power supplies.
+- Hint: SFFFCMAPS
+
+AP::Access Point
+- Definition: Networking hardware device allowing wireless devices to connect to wired networks.
+- Hint: NHDAWDTCTWN
+
+APK::Android Package
+- Definition: File format used by Android to distribute and install applications.
+- Hint: FFUBATDAIA
+
+ATA::Advanced Technology Attachment
+- Definition: Standard hardware interface for connecting storage devices to motherboards.
+- Hint: SHIFCSDTM
+
+ATM::Asynchronous Transfer Mode
+- Definition: Dedicated high-speed network technology using fixed-size cells for data.
+- Hint: DHSNTUFSCFD
+
+AUP::Acceptable Use Policy
+- Definition: Document outlining rules and guidelines for acceptable resource usage.
+- Hint: DORAGFARU
+
+BEC::Business Email Compromise
+- Definition: Cyber fraud scam targeting business email accounts to authorize payments.
+- Hint: CFSTBEATAP
+
+BSOD::Blue Screen of Death
+- Definition: Windows error screen indicating a fatal system crash or stop error.
+- Hint: WESIAFSCOSE
+
+BYOD::Bring Your Own Device
+- Definition: Corporate policy allowing employees to use personal devices for work.
+- Hint: CPAETUPDFW
+
+CAC::Calling-card Authorization Computer
+- Definition: Verification computer system authorizing calling cards or smart cards.
+- Hint: VCSACCOSC
+
+CIFS::Common Internet File System
+- Definition: Network file sharing protocol used primarily by Microsoft Windows systems.
+- Hint: NFSPUPBMWS
+
+CMDB::Configuration Management Database
+- Definition: Database storing configuration records and relationships of IT infrastructure.
+- Hint: DSCRAROII
+
+CNAME::Canonical Name
+- Definition: DNS database record mapping an alias name to a true domain.
+- Hint: DDRMAANTATD
+
+CAPTCHA::Completely Automated Public Turing Test to Tell Computers and Humans Apart
+- Definition: Challenge-response test verifying if a web user is human.
+- Hint: CRTVIAWUIH
+
+CDFS::Compact Disc File System
+- Definition: File system standard specifically used for compact disc media.
+- Hint: FSSSUFCDM
+
+CDMA::Code-Division Multiple Access
+- Definition: Cellular channel access method using spread-spectrum radio technologies.
+- Hint: CCAMUSSRT
+
+CERT::Computer Emergency Response Team
+- Definition: Expert organization dedicated to analyzing and responding to security incidents.
+- Hint: EODTAARTSI
+
+CMD::Command Prompt
+- Definition: Command-line interpreter shell application built into Windows operating systems.
+- Hint: CLISABIWOS
+
+CMOS::Complementary Metal-Oxide Semiconductor
+- Definition: Battery-powered memory chip storing system startup settings and BIOS parameters.
+- Hint: BPMCSSSSABP
+
+CRL::Certificate Revocation List
+- Definition: List of digital certificates revoked by the certificate authority before expiration.
+- Hint: LODCRBTCABE
+
+DB-9::Serial Communications D-Shell Connector, 9 pins
+- Definition: D-subminiature connector type with nine pins used for serial communication.
+- Hint: DSCTWNPUFSC
+
+DKIM::DomainKeys Identified Mail
+- Definition: Email security standard validating email sender authenticity through digital signatures.
+- Hint: ESSVESATDS
+
+DMARC::Domain-based Message Authentication, Reporting, and Conformance
+- Definition: Email protocol preventing domain spoofing through SPF and DKIM policies.
+- Hint: EPPDSTSADP
+
+DRM::Digital Rights Management
+- Definition: Access control technologies restricting the use of copyrighted digital media.
+- Hint: ACTRTUOCDM
+
+DMA::Direct Memory Access
+- Definition: Feature enabling hardware devices to access memory independently of the CPU.
+- Hint: FEHDTAMIOTC
+
+DRAM::Dynamic Random-Access Memory
+- Definition: Volatile memory storing data in capacitors requiring constant refresh cycles.
+- Hint: VMSDICRCRC
+
+DVI-D::Digital Visual Interface-Digital
+- Definition: Digital visual display interface supporting only digital video signals.
+- Hint: DVDISODVS
+
+ECC::Error-correcting Code
+- Definition: Memory technology detecting and correcting internal data corruption errors.
+- Hint: MTDACIDCE
+
+EDR::Endpoint Detection and Response
+- Definition: Security solution continuously monitoring endpoints to detect and mitigate threats.
+- Hint: SSCMETDAMT
+
+EFS::Encrypting File System
+- Definition: Windows operating system feature providing file-level encryption on NTFS volumes.
+- Hint: WOSFPFLEONV
+
+EOL::End-of-life
+- Definition: Product life cycle stage where support and manufacturing cease.
+- Hint: PLCSWSAMC
+
+exFAT::Extended File Allocation Table
+- Definition: Microsoft file system optimized for USB flash drives and SD cards.
+- Hint: MFSOFUFDASC
+
+ext::Extended File System
+- Definition: Family of file systems designed specifically for the Linux kernel.
+- Hint: FOFSDSFTLK
+
+FRT::Facial Recognition Technology
+- Definition: Biometric technology identifying or verifying individuals using facial characteristics.
+- Hint: BTIOVIUFC
+
+FAT12::12-bit File Allocation Table
+- Definition: Legacy file system using 12-bit binary addressing for storage clusters.
+- Hint: LFSU1BBAFSC
+
+FAT16::16-bit File Allocation Table
+- Definition: Legacy file system using 16-bit binary addressing for storage clusters.
+- Hint: LFSU1BBAFSC
+
+FSB::Front-Side Bus
+- Definition: Internal computer bus connecting the CPU to main system memory.
+- Hint: ICBCTCTMSM
+
+GFS::Grandfather-Father-Son
+- Definition: Common backup rotation scheme using grandfather, father, and son cycles.
+- Hint: CBRSUGFASC
+
+GPT::GUID [Globally Unique Identifier] Partition Table
+- Definition: Partition table standard replacing MBR, supporting larger disk partitions.
+- Hint: PTSRMSLDP
+
+GUID::Globally Unique Identifier
+- Definition: Standardized 128-bit number used to uniquely identify software components.
+- Hint: S1BNUTUISC
+
+GSM::Global System for Mobile Communications
+- Definition: Global standard for cellular networks defining mobile communication protocols.
+- Hint: GSFCNDMCP
+
+HSM::Hardware Security Module
+- Definition: Physical hardware security device safeguarding and managing cryptographic keys.
+- Hint: PHSDSAMCK
+
+HAL::Hardware Abstraction Layer
+- Definition: Software abstraction layer hiding hardware differences from operating systems.
+- Hint: SALHHDFOS
+
+HAV::Hardware-assisted Virtualization
+- Definition: Processor feature assisting virtualization software to run more efficiently.
+- Hint: PFAVSTRME
+
+HCL::Hardware Compatibility List
+- Definition: Manufacturer list of hardware compatible with a specific operating system.
+- Hint: MLOHCWASOS
+
+HDCP::High-bandwidth Digital Content Protection
+- Definition: Digital copy protection preventing interception of audio and video signals.
+- Hint: DCPPIOAAVS
+
+IAM::Identity and Access Management
+- Definition: Business framework managing digital user identities and their access privileges.
+- Hint: BFMDUIATAP
+
+IPS 2::In-plane Switching
+- Definition: LCD display screen panel technology offering wide viewing angles.
+- Hint: LDSPTOWVA
+
+ISO::International Organization for Standardization
+- Definition: International standard-setting organization facilitating global proprietary and industrial standards.
+- Hint: ISSOFGPAIS
+
+ITX::Information Technology eXtended
+- Definition: Family of small form-factor computer motherboards developed by VIA.
+- Hint: FOSFFCMDBV
+
+I/O::Input/Output
+- Definition: Communication transfer between information processing systems and external sources.
+- Hint: CTBIPSAES
+
+ICR::Intelligent Character Recognition
+- Definition: Advanced optical character recognition system capable of learning handwriting.
+- Hint: AOCRSCOLH
+
+IEEE::Institute of Electrical and Electronics Engineers
+- Definition: Professional engineering association establishing global industry technology standards.
+- Hint: PEAEGITS
+
+IrDA::Infrared Data Association
+- Definition: Standard defining specifications for short-range wireless infrared communication.
+- Hint: SDSFSRWIC
+
+IRP::Incident Response Plan
+- Definition: Documented procedure helping organizations respond to and recover from incidents.
+- Hint: DPHORTARFI
+
+KVM::Keyboard-Video-Mouse
+- Definition: Hardware switch controlling multiple computers from a single workstation setup.
+- Hint: HSCMCFASWS
+
+KB 2::Knowledge Base
+- Definition: Information repository used for managing and sharing diagnostic knowledge.
+- Hint: IRUFMASDK
+
+LC::Lucent/Local Connector
+- Definition: Small form-factor fiber optic connector using a push-pull mechanism.
+- Hint: SFFFOCUAPPM
+
+LCD::Liquid Crystal Display
+- Definition: Display technology using liquid crystals modulated by electrical fields.
+- Hint: DTULCMBEF
+
+LDAP::Lightweight Directory Access Protocol
+- Definition: Standard application protocol managing and accessing directory information services.
+- Hint: SAPMAADIS
+
+LED::Light-emitting Diode
+- Definition: Semiconductor light source emitting light when electrical current passes through.
+- Hint: SLSELWECPT
+
+MBR::Master Boot Record
+- Definition: First sector of partitioned storage devices containing boot information.
+- Hint: FSOPSDCBI
+
+MDM::Mobile Device Management
+- Definition: Software system administering security and applications on mobile devices.
+- Hint: SSASAAOMD
+
+MDR::Managed Detection and Response
+- Definition: Outsourced cybersecurity service providing continuous threat hunting and mitigation.
+- Hint: OCSPCTHAM
+
+MFA::Multifactor Authentication
+- Definition: Security protocol requiring multiple independent credentials for user verification.
+- Hint: SPRMICFUV
+
+MMC::Microsoft Management Console
+- Definition: Windows framework providing system administrators with management console interfaces.
+- Hint: WFPSAWMCI
+
+MNDA::Mutual Non-disclosure Agreement
+- Definition: Contractual agreement protecting confidential information shared between two parties.
+- Hint: CAPCISBTP
+
+MSDS::Material Safety Data Sheet
+- Definition: Safety document detailing chemical composition, hazards, and handling procedures.
+- Hint: SDDCCHAHP
+
+MX::Mail Exchange
+- Definition: DNS database record directing email traffic to incoming mail servers.
+- Hint: DDRDETTIMS
+
+mSATA::Mini-serial Advanced Technology Attachment
+- Definition: SATA interface standard optimized for compact solid-state storage devices.
+- Hint: SISOFCSSSD
+
+MAM::Mobile Application Management
+- Definition: Administrative software securing and managing corporate mobile applications.
+- Hint: ASSAMCMA
+
+MFD::Multifunction Device
+- Definition: Office hardware device combining printing, scanning, copying, and faxing.
+- Hint: OHDCPSCAF
+
+MFP::Multifunction Printer
+- Definition: Multifunctional printer combining printing, copying, scanning, and faxing capabilities.
+- Hint: MPCPCSAFC
+
+MOU::Memorandum of Understanding
+- Definition: Non-binding agreement outlining mutually agreed terms between participating parties.
+- Hint: NBAOMATBPP
+
+MSRA::Microsoft Remote Assistance
+- Definition: Windows utility allowing technicians to remotely view and control computers.
+- Hint: WUATTRVACC
+
+NetBIOS::Network Basic Input/Output System
+- Definition: API providing services for applications on separate computers to communicate.
+- Hint: APSFAOSCTC
+
+NTP::Network Time Protocol
+- Definition: Protocol synchronizing computer system clocks over packet-switched networks.
+- Hint: PSCSCOPSN
+
+NetBT::NetBIOS over TCP/IP
+- Definition: Network protocol enabling legacy NetBIOS services over TCP/IP stacks.
+- Hint: NPELNSOTIS
+
+NFS::Network File System
+- Definition: Protocol allowing computer users to access remote files over networks.
+- Hint: PACUTARFON
+
+OLED::Organic Light-emitting Diode
+- Definition: Display technology utilizing organic thin-films that emit light directly.
+- Hint: DTUOTFTELD
+
+ONT::Optical Network Terminal
+- Definition: Fiber-optic device connecting subscriber premises to service provider networks.
+- Hint: FODCSPTSPN
+
+OTP::One-time Password (or Passcode)
+- Definition: Dynamic password security system valid for only one session.
+- Hint: DPSSVFOOS
+
+OCR::Optical Character Recognition
+- Definition: Technology converting images of typed or handwritten text into data.
+- Hint: TCIOTOHTID
+
+PAM::Privileged Access Management
+- Definition: Privileged Access Management policies and tools managing superuser accounts.
+- Hint: PAMPATMSA
+
+PIV::Personal Identity Verification
+- Definition: United States federal government standard for reliable identification credentials.
+- Hint: USFGSFRIC
+
+POST::Power-on Self-test
+- Definition: Hardware self-test diagnostic program run by system BIOS during startup.
+- Hint: HSTDPRBSBDS
+
+PUP::Potentially Unwanted Program
+- Definition: Program that may be unwanted or harmful to computer systems.
+- Hint: PTMBUOHTCS
+
+PoE::Power over Ethernet
+- Definition: Technology transmitting electrical power along with data over Ethernet cables.
+- Hint: TTEPAWDOEC
+
+PCL::Printer Command Language
+- Definition: Standard page description language controlling print output on laser printers.
+- Hint: SPDLCPOOLP
+
+PE::Preinstallation Environment
+- Definition: Minimal operating system environment used to prepare and deploy Windows.
+- Hint: MOSEUTPADW
+
+PKI::Public Key Infrastructure
+- Definition: Framework managing digital certificates and public-key cryptographic encryption.
+- Hint: FMDCAPKCE
+
+PPP::Point-to-Point Protocol
+- Definition: Data link protocol commonly used to establish direct nodes connection.
+- Hint: DLPCUTEDNC
+
+PRL::Preferred Roaming List
+- Definition: Data file inside CDMA phones containing carrier radio bands information.
+- Hint: DFICPCCRBI
+
+RADIUS::Remote Authentication Dial-in User Server
+- Definition: Networking protocol providing centralized authentication, authorization, and accounting management.
+- Hint: NPPCAAAAM
+
+RDP::Remote Desktop Protocol
+- Definition: Microsoft proprietary protocol providing graphical interfaces for remote desktop access.
+- Hint: MPPPGIFRDA
+
+ReFS::Resilient File System
+- Definition: Microsoft file system designed for maximum data availability and integrity.
+- Hint: MFSDFMDAAI
+
+RFID::Radio-frequency Identification
+- Definition: Identification technology utilizing small wireless electromagnetic responder tags.
+- Hint: ITUSWERT
+
+RMM::Remote Monitoring and Management
+- Definition: Software platform allowing IT professionals to monitor and manage endpoints.
+- Hint: SPAIPTMAME
+
+RSR::Rapid Security Response
+- Definition: Apple system delivering critical security updates between regular OS upgrades.
+- Hint: ASDCSUBROU
+
+RFI::Radio-Frequency Interference
+- Definition: Electrical disturbance caused by radio signals affecting circuits.
+- Hint: EDCBRSAC
+
+RTO::Recovery Time Objective
+- Definition: Target duration of time within which systems must be restored.
+- Hint: TDOTWWSMBR
+
+S.M.A.R.T::Self-monitoring Analysis and Reporting Technology
+- Definition: Monitoring system in storage drives predicting hardware reliability and failures.
+- Hint: MSISDPHRAF
+
+SAML::Security Assertions Markup Language
+- Definition: XML-based open standard exchanging authentication and authorization data between parties.
+- Hint: XBOSEAAADBP
+
+SAS::Serial Attached SCSI
+- Definition: High-speed serial protocol connecting computer storage devices to controllers.
+- Hint: HSSPCCSDTC
+
+SC::Subscriber Connector
+- Definition: Fiber optic connector using a push-pull latched coupling mechanism.
+- Hint: FOCUAPPLCM
+
+SCADA::Supervisory Control and Data Acquisition
+- Definition: Control system architecture monitoring and controlling high-level industrial processes.
+- Hint: CSAMACHLIP
+
+SCSI::Small Computer System Interface
+- Definition: Physical interface standard connecting peripheral storage devices to computers.
+- Hint: PISCPSDTC
+
+SIM::Subscriber Identity Module
+- Definition: Smart card storing cellular subscriber keys and configuration data.
+- Hint: SCSCSKACD
+
+SLA::Service-level Agreement
+- Definition: Contract specifying services, performance metrics, and responsibilities between parties.
+- Hint: CSSPMARBP
+
+SMB::Server Message Block
+- Definition: Client-server network protocol sharing access to files and printers.
+- Hint: CSNPSATFAP
+
+SMS::Short Message Service
+- Definition: Text messaging service component of mobile communication systems.
+- Hint: TMSCOMCS
+
+SODIMM::Small Outline Dual In-line Memory Module
+- Definition: Smaller memory module form factor designed for laptop computers.
+- Hint: SMMFFDFLC
+
+SOP::Standard Operating Procedure
+- Definition: Step-by-step instructions helping workers carry out complex routine operations.
+- Hint: SBSIHWCOCRO
+
+SPF::Sender Policy Framework
+- Definition: DNS record specifying authorized mail servers for a domain.
+- Hint: DRSAMSFAD
+
+SPICE::Software Process Improvement and Capability Determination
+- Definition: Process framework assessing and improving software development capabilities.
+- Hint: PFAAISDC
+
+ST::Straight Tip
+- Definition: Fiber optic connector utilizing a bayonet-style twist coupling mechanism.
+- Hint: FOCUABSTCM
+
+SAN::Storage Area Network
+- Definition: Dedicated high-speed network providing block-level storage access to servers.
+- Hint: DHSNPBLSATS
+
+SCP::Secure Copy Protection
+- Definition: Data transmission mechanism protecting files from unauthorized copying.
+- Hint: DTMPFFUC
+
+SDN::Software-defined Networking
+- Definition: Networking architecture managing data flows through software control interfaces.
+- Hint: NAMDFTSCI
+
+SIM::Subscriber Identity Module
+- Definition: Smart card storing cellular subscriber keys and configuration data.
+- Hint: SCSCSKACD
+
+SIMM::Single Inline Memory Module
+- Definition: Older memory module type with redundant pins on both sides.
+- Hint: OMMTWRPOBS
+
+SNTP::Simple Network Time Protocol
+- Definition: Simplified version of Network Time Protocol for basic devices.
+- Hint: SVONTPFBD
+
+SRAM::Static Random-access Memory
+- Definition: Fast volatile memory retaining data without constant refresh cycles.
+- Hint: FVMRDWCRC
+
+SSO::Single Sign-on
+- Definition: Authentication mechanism allowing single logins for multiple related systems.
+- Hint: AMASLFMRS
+
+STP::Shielded Twisted Pair
+- Definition: Twisted-pair copper cabling with shielding reducing electromagnetic interference.
+- Hint: TPCCWSREI
+
+TACACS::Terminal Access Controller Access-control System
+- Definition: Legacy security protocol managing access control for remote network connections.
+- Hint: LSPMACFRNC
+
+TN::Twisted Nematic
+- Definition: Common liquid crystal display panel offering fast response times.
+- Hint: CLCDPOFRT
+
+TOTP::Time-based One-time Password
+- Definition: Time-based algorithm generating one-time passwords valid for short intervals.
+- Hint: TBAGOTPVFSI
+
+TPM::Trusted Platform Module
+- Definition: Cryptographic hardware module storing encryption keys for platform security.
+- Hint: CHMSEKFPS
+
+TFTP::Trivial File Transfer Protocol
+- Definition: Simple file transfer protocol transferring data without authentication mechanisms.
+- Hint: SFTPTDWAM
+
+UAC::User Account Control
+- Definition: Windows security feature prompting users before executing administrative modifications.
+- Hint: WSFPUBEAM
+
+UDP::User Datagram Protocol
+- Definition: Connectionless protocol offering fast, unreliable transport of data packets.
+- Hint: CPOFUTODP
+
+UEFI::Unified Extensible Firmware Interface
+- Definition: Modern software interface connecting computer firmware to operating systems.
+- Hint: MSICCFTOS
+
+UPnP::Universal Plug and Play
+- Definition: Network protocols allowing devices to discover each other seamlessly.
+- Hint: NPADTDEOS
+
+UTM::Unified Threat Management
+- Definition: Comprehensive security device combining firewall, antivirus, and prevention services.
+- Hint: CSDCFAAPS
+
+UNC::Universal Naming Convention
+- Definition: Common format specifying path locations of shared network resources.
+- Hint: CFSPLOSNR
+
+VA::Vertical Alignment
+- Definition: Display screen technology offering deep contrast ratios and blacks.
+- Hint: DSTODCRAB
+
+VDI::Virtual Desktop Infrastructure
+- Definition: Infrastructure hosting desktop operating systems within centralized server environments.
+- Hint: IHDOSWCSE
+
+VLAN::Virtual Local Area Network
+- Definition: Logical network partition segmenting devices connected to shared switches.
+- Hint: LNPSDCTSS
+
+VNC::Virtual Network Computer
+- Definition: Desktop sharing system allowing remote control of graphical interfaces.
+- Hint: DSSARCOGI
+
+VM::Virtual Machine
+- Definition: Software emulation of physical computer systems executing programs independently.
+- Hint: SEOPCSEPI
+
+VRAM::Video Random-access Memory
+- Definition: Specialized computer memory dedicated to buffering graphical display frames.
+- Hint: SCMDTBGDF
+
+WISP::Wireless Internet Service Provider
+- Definition: Service provider delivering internet connections over local wireless links.
+- Hint: SPDICOLWL
+
+WWAN::Wireless Wide Area Network
+- Definition: Wireless network providing internet access across broad geographical areas.
+- Hint: WNPIAABGA
+
+WinRM::Windows Remote Management
+- Definition: Windows service protocol enabling remote command-line systems management.
+- Hint: WSPERCLSM
+
+WMN::Wireless Mesh Network
+- Definition: Decentralized wireless communication network comprised of mesh radio nodes.
+- Hint: DWCNCOMRN
+
+XDR::Extended Detection and Response
+- Definition: Security platform correlating threat indicators across diverse channels.
+- Hint: SPCTIADC
+
+XFS::Extended File System
+- Definition: High-performance 64-bit journaling file system optimized for large systems.
+- Hint: HP6BJFSOFLS
+
+XSS::Cross-site Scripting
+- Definition: Web security vulnerability allowing attackers to inject malicious scripts.
+- Hint: WSVAATIMS
+
+A::Address
+- Definition: DNS record mapping domain names to IPv4 addresses.
+- Hint: DRMDNTIA
+
+AH::Authentication Header
+- Definition: IPsec protocol component providing data integrity and authentication.
+- Hint: IPCPDIAA
+
+API::Application Programming Interface
+- Definition: Interface allowing software applications to communicate and share data.
+- Hint: IASATCASD
+
+BGP::Border Gateway Protocol
+- Definition: Protocol routing data across autonomous systems on the internet.
+- Hint: PRDAASOTI
+
+BNC::Bayonet Neill–Concelman
+- Definition: Coaxial cable connector using a bayonet-style quick-locking coupling.
+- Hint: CCCUABSQLC
+
+BSSID::Basic Service Set Identifier
+- Definition: Unique hardware MAC address identifying a wireless access point.
+- Hint: UHMAIAWAP
+
+CAM 2::Content-addressable Memory
+- Definition: Memory looking up data by content rather than addresses.
+- Hint: MLUDBCRTA
+
+CDN::Content Delivery Network
+- Definition: Distributed network of proxy servers caching content close to users.
+- Hint: DNOPSCCCTU
+
+CDP::Cisco Discovery Protocol
+- Definition: Cisco proprietary protocol sharing configuration info with adjacent devices.
+- Hint: CPPSCIWAD
+
+CIA::Confidentiality, Integrity, and Availability
+- Definition: Core security model enforcing confidentiality, integrity, and data availability.
+- Hint: CSMECIADA
+
+CIDR::Classless Inter-domain Routing
+- Definition: IP addressing allocation scheme optimizing routing prefix subnet masking.
+- Hint: IAASORPSM
+
+CRC::Cyclical Redundancy Check
+- Definition: Error-detecting code verifying data integrity on storage or networks.
+- Hint: EDCVDIOSON
+
+DAC::Direct Attach Copper
+- Definition: Short-range twinaxial copper cable with directly attached transceiver ends.
+- Hint: SRTCCWDATE
+
+DAS::Direct-attached Storage
+- Definition: Storage drive system connected directly to computer host interfaces.
+- Hint: SDSCDTCHI
+
+DCI::Data Center Interconnect
+- Definition: Technologies interconnecting separated data centers for resource sharing.
+- Hint: TISDCFRS
+
+DNSSEC::Domain Name System Security Extensions
+- Definition: DNS extension suite verifying query responses using cryptographic signatures.
+- Hint: DESVQRUCS
+
+DoH::DNS over Hypertext Transfer Protocol Secure
+- Definition: DNS resolution protocol encrypting queries within standard HTTPS traffic.
+- Hint: DRPEQWSHT
+
+DoT::DNS over Transport Layer Security
+- Definition: DNS resolution protocol encrypting query packets using Transport Layer Security.
+- Hint: DRPEQPUTLS
+
+DR::Disaster Recovery
+- Definition: IT policies and procedures restoring critical operations after disasters.
+- Hint: IPAPRCOAD
+
+EAPoL::Extensible Authentication Protocol over LAN
+- Definition: Network authentication protocol encapsulating EAP packets over LANs.
+- Hint: NAPEEPOL
+
+EIGRP::Enhanced Interior Gateway Routing Protocol
+- Definition: Advanced interior gateway routing protocol proprietary to Cisco systems.
+- Hint: AIGRPPTCS
+
+EOS::End-of-support
+- Definition: Product milestone indicating the cessation of vendor technical support.
+- Hint: PMITCOVTS
+
+ESP::Encapsulated Security Payload
+- Definition: IPsec protocol component providing encryption, authentication, and integrity.
+- Hint: IPCPEAAI
+
+ESSID::Extended Service Set Identifier
+- Definition: Service set identifier naming wireless networks using multiple APs.
+- Hint: SSINWNUMA
+
+FC::Fibre Channel
+- Definition: High-speed gigabit network technology connecting storage drives to servers.
+- Hint: HSGNTCSDTS
+
+FHRP::First Hop Redundancy Protocol
+- Definition: Protocols providing gateway redundancy for host connections on networks.
+- Hint: PPGRFHCON
+
+GRE::Generic Routing Encapsulation
+- Definition: Cisco tunneling protocol encapsulating diverse network layer packets.
+- Hint: CTPEDNLP
+
+IaC::Infrastructure as Code
+- Definition: Provisioning infrastructure resources using machine-readable configuration files.
+- Hint: PIRUMRCF
+
+ICS::Industrial Control System
+- Definition: Control systems and devices automating industrial and manufacturing processes.
+- Hint: CSADAIAMP
+
+IDF::Intermediate Distribution Frame
+- Definition: Secondary distribution frame organizing local wiring connections within buildings.
+- Hint: SDFOLWCWB
+
+IIoT::Industrial Internet of Things
+- Definition: Industrial implementation of internet-connected sensors and machinery controls.
+- Hint: IIOICSAMC
+
+IKE::Internet Key Exchange
+- Definition: Protocol establishing security associations and encryption keys in IPsec.
+- Hint: PESAAEKII
+
+IPAM::Internet Protocol Address Management
+- Definition: Software suite planning, tracking, and managing network IP addresses.
+- Hint: SSPTAMNIA
+
+IPSec::Internet Protocol Security
+- Definition: Cryptographic protocol suite securing data packet flows over networks.
+- Hint: CPSSDPFON
+
+IS-IS::Intermediate System to Intermediate System
+- Definition: Link-state routing protocol directing data packets within networks.
+- Hint: LSRPDDPWN
+
+LACP::Link Aggregation Control Protocol
+- Definition: Protocol aggregating multiple physical network links into one logical link.
+- Hint: PAMPNLIOLL
+
+LDAPS::Lightweight Directory Access Protocol over SSL
+- Definition: Lightweight directory access protocol secured using SSL/TLS encryption.
+- Hint: LDAPSUSTE
+
+LLDP::Link Layer Discovery Protocol
+- Definition: Vendor-neutral protocol allowing network devices to advertise identity information.
+- Hint: VNPANDTAII
+
+MDF::Main Distribution Frame
+- Definition: Main distribution frame coordinating primary network cabling within buildings.
+- Hint: MDFCPNCWB
+
+MDIX::Medium Dependent Interface Crossover
+- Definition: Network switch feature automatically crossing over twisted cabling pairs.
+- Hint: NSFACOTCP
+
+MIB::Management Information Base
+- Definition: Hierarchical database defining network status parameters for SNMP management.
+- Hint: HDDNSPFSM
+
+MPO::Multifiber Push On
+- Definition: Multi-fiber connector housing up to twenty-four optical fibers.
+- Hint: MFCHUTTFOF
+
+MTBF::Mean Time Between Failure
+- Definition: Predicted elapsed time between failures of repairable hardware components.
+- Hint: PETBFORHC
+
+MTTR::Mean Time To Repair
+- Definition: Average time required to repair and restore failed systems.
+- Hint: ATRTRARFS
+
+MTU::Maximum Transmission Unit
+- Definition: Largest data packet size that can be transmitted over networks.
+- Hint: LDPSTCBTON
+
+NAC::Network Access Control
+- Definition: Security solution validating device compliance before granting network access.
+- Hint: SSVDCBGNA
+
+NFV::Network Functions Virtualization
+- Definition: Virtualizing network functions normally executed on dedicated hardware devices.
+- Hint: VNFNEODHD
+
+NS::Name Server
+- Definition: DNS database record identifying authoritative servers for domains.
+- Hint: DDRIASFD
+
+NTS::Network Time Security
+- Definition: Extension providing cryptographic validation for Network Time Protocol exchanges.
+- Hint: EPCVFNTPE
+
+OSPF::Open Shortest Path First
+- Definition: Link-state routing protocol determining shortest paths for data packets.
+- Hint: LSRPDSPFDP
+
+OSI::Open Systems Interconnection
+- Definition: Conceptual model standardizing telecommunication connection layers and functions.
+- Hint: CMSTCLAF
+
+OT::Operational Technology
+- Definition: Hardware and software monitoring or controlling physical industrial machinery.
+- Hint: HASMOCPIM
+
+PAT::Port Address Translation
+- Definition: Extension of NAT mapping private addresses to single public IPs.
+- Hint: EONMPATSPI
+
+PCI DSS::Payment Card Industry Data Security Standards
+- Definition: Global security standard protecting cardholder credit card transaction data.
+- Hint: GSSPCCCTD
+
+PDU::Power Distribution Unit
+- Definition: Power strip distributing electrical power to computing equipment racks.
+- Hint: PSDEPTCER
+
+PSK::Pre-shared Key
+- Definition: Shared secret credential used to authenticate wireless security connections.
+- Hint: SSCUTAWSC
+
+PTP::Precision Time Protocol
+- Definition: High-precision clock synchronization protocol for local computer networks.
+- Hint: HPCSPFLCN
+
+PTR::Pointer
+- Definition: DNS database record mapping IP addresses to domain names.
+- Hint: DDRMIATDN
+
+QoS::Quality of Service
+- Definition: Traffic control mechanisms prioritizing network bandwidth for critical applications.
+- Hint: TCMPNBFCA
+
+QSFP::Quad Small Form-factor Pluggable
+- Definition: Compact hot-pluggable transceiver module supporting high-speed network interfaces.
+- Hint: CHPTMSHSNI
+
+RFID::Radio Frequency Identifier
+- Definition: Identification technology utilizing small wireless electromagnetic responder tags.
+- Hint: ITUSWERT
+
+RIP::Routing Information Protocol
+- Definition: Legacy distance-vector routing protocol computing hop counts between networks.
+- Hint: LDVRPCHCBN
+
+RPO::Recovery Point Objective
+- Definition: Maximum acceptable data loss period measured from disaster onset.
+- Hint: MADLPMFDO
+
+RSTP::Rapid Spanning Tree Protocol
+- Definition: Enhanced spanning tree protocol offering rapid network link convergence.
+- Hint: ESTPORNLC
+
+RX::Receiver
+- Definition: Physical component or device receiving data transmission signals.
+- Hint: PCODRDTS
+
+SASE::Secure Access Service Edge
+- Definition: Cloud architecture combining WAN functions with security service edges.
+- Hint: CACWFWSSE
+
+SD-WAN::Software-defined Wide Area Network
+- Definition: Virtual WAN architecture managing connections using software controllers.
+- Hint: VWAMCUSC
+
+SIP::Session Initiation Protocol
+- Definition: Signaling protocol initiating and terminating real-time communication sessions.
+- Hint: SPIATRTCS
+
+SIEM::Security Information and Event Management
+- Definition: Security software consolidating and analyzing event logs for threat detection.
+- Hint: SSCAAELFTD
+
+SLAAC::Stateless Address Autoconfiguration
+- Definition: IPv6 mechanism allowing hosts to auto-configure addresses without DHCP.
+- Hint: IMAHTACAWD
+
+SOA::Start of Authority
+- Definition: DNS database record defining primary zone configuration settings.
+- Hint: DDRDPZCS
+
+SSE::Security Service Edge
+- Definition: Cloud platform consolidating network security functions like SWG and CASB.
+- Hint: CPCNSFLSAC
+
+SVI::Switch Virtual Interface
+- Definition: Virtual switch interface routing traffic between virtual local networks.
+- Hint: VSIRTBVLN
+
+TACACS+::Terminal Access Controller Access Control System Plus
+- Definition: AAA security protocol proprietary to Cisco systems managing remote access.
+- Hint: ASPPTCSMRA
+
+TTL::Time to Live
+- Definition: IP packet header value limiting hops before discarding packets.
+- Hint: IPHVLHBDP
+
+TX::Transmitter
+- Definition: Physical component or device transmitting data network signals.
+- Hint: PCODTDNS
+
+TXT::Text
+- Definition: DNS database record containing descriptive human-readable text strings.
+- Hint: DDRCDHRTS
+
+VIP::Virtual IP
+- Definition: IP address shared across multiple servers for redundancy.
+- Hint: IASAMSFR
+
+VLSM::Variable Length Subnet Mask
+- Definition: Addressing technique allocating subnet mask prefixes of different lengths.
+- Hint: ATASMPODL
+
+VPC::Virtual Private Cloud
+- Definition: Isolated private virtual network partition hosted within public clouds.
+- Hint: IPVNPHWPC
+
+VXLAN::Virtual Extensible LAN
+- Definition: Virtual network overlay extending layer two segments across layer three.
+- Hint: VNOELTSALT
+
+WPS::Wi-Fi Protected Setup
+- Definition: Standard simplifying the setup of wireless home networks.
+- Hint: SSTSOWHN
+
+ZTA::Zero Trust Architecture
+- Definition: Security model eliminating implicit trust, verifying every access request.
+- Hint: SMEITVEAR
+
+AES-256::Advanced Encryption Standards 256-bit
+- Definition: Advanced encryption standard using 256-bit keys for data protection.
+- Hint: AESU2BKFDP
+
+AIS::Automated Indicator Sharing
+- Definition: System sharing cybersecurity indicator details between government and private entities.
+- Hint: SSCIDBGAPE
+
+ALE::Annualized Loss Expectancy
+- Definition: Risk assessment calculation estimating annual financial loss from threats.
+- Hint: RACEAFLFT
+
+APT::Advanced Persistent Threat
+- Definition: Sophisticated, prolonged cyberattack targeting organizations while remaining undetected.
+- Hint: SPCTOWRU
+
+ARO::Annualized Rate of Occurrence
+- Definition: Expected frequency with which specific threats occur annually.
+- Hint: EFWWSTOA
+
+ASLR::Address Space Layout Randomization
+- Definition: Security method randomizing memory address spaces to prevent exploits.
+- Hint: SMRMASTPE
+
+AV::Antivirus
+- Definition: Software application scanning and eliminating malicious virus files.
+- Hint: SASAEMVF
+
+BASH::Bourne Again Shell
+- Definition: Popular command-line shell script language for Unix-based systems.
+- Hint: PCLSSLFUBS
+
+BCP::Business Continuity Planning
+- Definition: Framework outlining recovery operations during unexpected business disruptions.
+- Hint: FORODUBD
+
+BIA::Business Impact Analysis
+- Definition: Analysis process evaluating financial and operational impacts of disasters.
+- Hint: APEFAOIOD
+
+BPA::Business Partners Agreement
+- Definition: Contractual agreement outlining terms of partnership between businesses.
+- Hint: CAOTOPBB
+
+BPDU::Bridge Protocol Data Unit
+- Definition: Data packets exchanged by switches utilizing Spanning Tree Protocol.
+- Hint: DPEBSUSTP
+
+CA::Certificate Authority
+- Definition: Trusted entity issuing digital identity certificates to verifying parties.
+- Hint: TEIDICTVP
+
+CAR::Corrective Action Report
+- Definition: Report document outlining actions taken to resolve quality failures.
+- Hint: RDOATTRQF
+
+CASB::Cloud Access Security Broker
+- Definition: On-premises or cloud software enforcing security policies on cloud consumers.
+- Hint: OPOCSESPOCC
+
+CBC::Cipher Block Chaining
+- Definition: Block cipher mode linking ciphertexts of preceding encryption blocks.
+- Hint: BCMLCOPEB
+
+CCMP::Counter Mode/CBC-MAC Protocol
+- Definition: Encryption protocol utilized in WPA2 wireless security standards.
+- Hint: EPUIWWSS
+
+CCTV::Closed-circuit Television
+- Definition: Closed surveillance system broadcasting video signals to specific monitors.
+- Hint: CSSBVSTSM
+
+CFB::Cipher Feedback
+- Definition: Block cipher mode converting block ciphers into stream ciphers.
+- Hint: BCMCBCISC
+
+CHAP::Challenge Handshake Authentication Protocol
+- Definition: Challenge-response authentication protocol verifying remote client connections.
+- Hint: CRAPVRCC
+
+CIO::Chief Information Officer
+- Definition: Executive managing corporate information systems and technical infrastructures.
+- Hint: EMCISATI
+
+CIRT::Computer Incident Response Team
+- Definition: Dedicated security team responding to emergency computer breach incidents.
+- Hint: DSTRTECBI
+
+CMS::Content Management System
+- Definition: Software application facilitating the creation and modification of websites.
+- Hint: SAFTCAMOW
+
+COOP::Continuity of Operation Planning
+- Definition: Plans ensuring critical government agency functions survive major emergencies.
+- Hint: PECGAFSME
+
+COPE::Corporate Owned, Personally Enabled
+- Definition: Policy allowing employees to use company-owned devices personally.
+- Hint: PAETUCODP
+
+CP::Contingency Planning
+- Definition: Backup plans detailing procedures to handle unexpected system disruptions.
+- Hint: BPDPTHUSD
+
+CSO::Chief Security Officer
+- Definition: Executive responsible for corporate physical and information security policies.
+- Hint: ERFCPAISP
+
+CSP::Cloud Service Provider
+- Definition: Entity delivering virtualized computing infrastructure, software, or platforms.
+- Hint: EDVCISOP
+
+CSR::Certificate Signing Request
+- Definition: Identity certificate request file sent to certificate authorities.
+- Hint: ICRFSTCA
+
+CSRF::Cross-site Request Forgery
+- Definition: Attack tricking authorized users into executing unwanted web actions.
+- Hint: ATAUIEUWA
+
+CSU::Channel Service Unit
+- Definition: Device interfacing digital terminal equipment with telecommunication lines.
+- Hint: DIDTEWTL
+
+CTM::Counter Mode
+- Definition: Block cipher mode using counter values for stream encryption.
+- Hint: BCMUCVFSE
+
+CTO::Chief Technology Officer
+- Definition: Executive coordinating technological innovations and engineering strategies.
+- Hint: ECTIAES
+
+CVE::Common Vulnerability Enumeration
+- Definition: Public registry indexing identified information security vulnerabilities.
+- Hint: PRIIISV
+
+CVSS::Common Vulnerability Scoring System
+- Definition: Open standard system evaluating severity ratings of software vulnerabilities.
+- Hint: OSSESROSV
+
+CYOD::Choose Your Own Device
+- Definition: Policy letting employees select work devices from predefined lists.
+- Hint: PLESWDFPL
+
+DAC 2::Discretionary Access Control
+- Definition: Access control scheme assigning user privileges based on owner discretion.
+- Hint: ACSAUPBOOD
+
+DBA::Database Administrator
+- Definition: IT professional responsible for managing and maintaining database systems.
+- Hint: IPRFMAMDS
+
+DEP::Data Execution Prevention
+- Definition: System security feature preventing malicious code execution from memory.
+- Hint: SSFPMCEFM
+
+DES::Digital Encryption Standard
+- Definition: Legacy symmetric-key algorithm encrypting digital data blocks.
+- Hint: LSKAEDDB
+
+DHE::Diffie-Hellman Ephemeral
+- Definition: Diffie-Hellman cryptographic exchange using temporary keys for security.
+- Hint: DHCEUTKFS
+
+DNAT::Destination Network Address Translation
+- Definition: Technique translating destination IP addresses of data packets.
+- Hint: TTDIAODP
+
+DPO::Data Privacy Officer
+- Definition: Executive overseeing corporate compliance with personal data privacy laws.
+- Hint: EOCCWPDPL
+
+DRP::Disaster Recovery Plan
+- Definition: Detailed instructions restoring critical IT systems following major failures.
+- Hint: DIRCISFMF
+
+DSA::Digital Signature Algorithm
+- Definition: Standard cryptographic method generating valid digital authentication signatures.
+- Hint: SCMGVDAS
+
+EAP::Extensible Authentication Protocol
+- Definition: Authentication framework defining structured message formats over networks.
+- Hint: AFDSMFON
+
+ECB::Electronic Code Book
+- Definition: Block cipher mode encrypting plaintext blocks independently using identical keys.
+- Hint: BCMEPBIUIK
+
+ECC 2::Elliptic Curve Cryptography
+- Definition: Public-key cryptography method using mathematical structures of elliptic curves.
+- Hint: PKCMUMSOEC
+
+ECDHE::Elliptic Curve Diffie-Hellman Ephemeral
+- Definition: Diffie-Hellman exchange using elliptic curves with temporary keys.
+- Hint: DHEUECWTK
+
+ECDSA::Elliptic Curve Digital Signature Algorithm
+- Definition: Digital signature algorithm standard implementing elliptic curve cryptography.
+- Hint: DSASIECC
+
+ERP::Enterprise Resource Planning
+- Definition: Integrated software platform managing core business processes and operations.
+- Hint: ISPMCBPAO
+
+ESN::Electronic Serial Number
+- Definition: Unique manufacturer serial identifier embedded on mobile phone microchips.
+- Hint: UMSIEOMPM
+
+FACL::File System Access Control List
+- Definition: Data structure defining security permissions for files and folders.
+- Hint: DSDSPFFAF
+
+FDE::Full Disk Encryption
+- Definition: Symmetric encryption applied directly to all disk storage sectors.
+- Hint: SEADTADSS
+
+FIM::File Integrity Management
+- Definition: Security practice validating operating file integrity using hash checks.
+- Hint: SPVOFIUHC
+
+FPGA::Field Programmable Gate Array
+- Definition: Integrated circuit customizable by customers after manufacturing.
+- Hint: ICCBCAM
+
+FRR::False Rejection Rate
+- Definition: Biometric error rate measuring incorrect rejections of valid users.
+- Hint: BERMIROVU
+
+GCM::Galois Counter Mode
+- Definition: Symmetric block cipher mode offering high-speed confidentiality and integrity.
+- Hint: SBCMOHSCAI
+
+GPG::Gnu Privacy Guard
+- Definition: Open-source software implementing PGP cryptographic standards.
+- Hint: OSSIPCS
+
+GPO::Group Policy Object
+- Definition: Group Policy Object managing user configuration settings on Windows.
+- Hint: GPOMUCSOW
+
+HA::High Availability
+- Definition: System design guaranteeing operational uptime performance over long periods.
+- Hint: SDGOUPOLP
+
+HIDS::Host-based Intrusion Detection System
+- Definition: Security software monitoring local system hosts for suspicious changes.
+- Hint: SSMLSHFSC
+
+HIPS::Host-based Intrusion Prevention System
+- Definition: Active security software blocking malicious events on local hosts.
+- Hint: ASSBMEOLH
+
+HMAC::Hashed Message Authentication Code
+- Definition: Authentication code verifying messages using cryptographic hash functions.
+- Hint: ACVMUCHF
+
+HOTP::HMAC-based One-time Password
+- Definition: Algorithm generating one-time passwords based on cryptographic counters.
+- Hint: AGOTPBOCC
+
+HVAC::Heating, Ventilation, Air Conditioning
+- Definition: Systems controlling indoor environmental air quality and temperatures.
+- Hint: SCIEAQAT
+
+IDEA::International Data Encryption Algorithm
+- Definition: Symmetric key block cipher encrypting sixty-four bit data blocks.
+- Hint: SKBCESFBDB
+
+IdP::Identity Provider
+- Definition: Service authenticating digital identities for client applications.
+- Hint: SADIFCA
+
+IM::Instant Messaging
+- Definition: Real-time text message exchange system between connected users.
+- Hint: RTTMESBCU
+
+IoC::Indicators of Compromise
+- Definition: Digital evidence indicating networks or systems have been breached.
+- Hint: DEINOSHBB
+
+IR 2::Incident Response
+- Definition: Phased process managing and resolving security breach incidents.
+- Hint: PPMARSBI
+
+IRC::Internet Relay Chat
+- Definition: Text-based chat protocol supporting group discussions across servers.
+- Hint: TBCPSGDAS
+
+ISSO::Information Systems Security Officer
+- Definition: Officer enforcing system security policies and access controls.
+- Hint: OESSPAAC
+
+IV::Initialization Vector
+- Definition: Random seed value initiating block cipher encryption operations.
+- Hint: RSVIBCEO
+
+KDC::Key Distribution Center
+- Definition: Kerberos system component authenticating users and issuing tickets.
+- Hint: KSCAUAIT
+
+KEK::Key Encryption Key
+- Definition: Cryptographic key used to encrypt and protect other keys.
+- Hint: CKUTEAPOK
+
+L2TP::Layer 2 Tunneling Protocol
+- Definition: Tunneling protocol extending virtual private networks over networks.
+- Hint: TPEVPNON
+
+LEAP::Lightweight Extensible Authentication Protocol
+- Definition: Proprietary wireless authentication protocol developed by Cisco.
+- Hint: PWAPDBC
+
+MaaS::Monitoring as a Service
+- Definition: Cloud model outsourcing network monitoring operations to providers.
+- Hint: CMONMOTP
+
+MAC 2::Mandatory Access Control
+- Definition: Security access control scheme enforcing system-defined policy restrictions.
+- Hint: SACSESDPR
+
+MAC 3::Message Authentication Code
+- Definition: Authentication code verifying integrity of transmitted messages.
+- Hint: ACVIOTM
+
+MD5::Message Digest 5
+- Definition: Cryptographic hash function producing 128-bit checksums for files.
+- Hint: CHFP1BCFF
+
+ML::Machine Learning
+- Definition: AI systems training algorithms to predict outcomes from datasets.
+- Hint: ASTATPOFD
+
+MMS::Multimedia Message Service
+- Definition: Standard mobile messaging system transmitting multimedia files.
+- Hint: SMMSTMF
+
+MOA::Memorandum of Agreement
+- Definition: Cooperative agreement between parties detailing shared business plans.
+- Hint: CABPDSBP
+
+MPLS::Multi-protocol Label Switching
+- Definition: Routing protocol directing traffic using short path labels.
+- Hint: RPDTUSPL
+
+MSA::Master Service Agreement
+- Definition: Contract governing terms of future transactions between companies.
+- Hint: CGTOFTBC
+
+MSCHAP::Microsoft Challenge Handshake Authentication Protocol
+- Definition: Microsoft proprietary challenge-response authentication protocol.
+- Hint: MPCRAP
+
+MSP::Managed Service Provider
+- Definition: Company managing local IT infrastructures remotely for clients.
+- Hint: CMLIIRFC
+
+MSSP::Managed Security Service Provider
+- Definition: Company managing outsourced cybersecurity operations and firewalls.
+- Hint: CMOCOAF
+
+MTTF::Mean Time to Failure
+- Definition: Average operational time expected before non-repairable components fail.
+- Hint: AOTEBNRCF
+
+MTTR 2::Mean Time to Recover
+- Definition: Average recovery time required to restore failed systems.
+- Hint: ARTRTRFS
+
+NGFW::Next-generation Firewall
+- Definition: Integrated firewall combining inspection filters with deep prevention capabilities.
+- Hint: IFCIFWDPC
+
+NIDS::Network-based Intrusion Detection System
+- Definition: Security monitors analyzing network packet flows for threats.
+- Hint: SMANPFFT
+
+NIPS::Network-based Intrusion Prevention System
+- Definition: Security appliances blocking malicious network traffic in real-time.
+- Hint: SABMNTIRT
+
+NIST::National Institute of Standards & Technology
+- Definition: US agency promoting industrial standardizations and security guides.
+- Hint: UAPISASG
+
+NTLM::New Technology LAN Manager
+- Definition: Legacy Microsoft authentication protocol suite verifying remote connections.
+- Hint: LMAPSVRC
+
+OAUTH::Open Authorization
+- Definition: Authorization standard granting applications restricted access without passwords.
+- Hint: ASGARAWP
+
+OCSP::Online Certificate Status Protocol
+- Definition: Protocol checking revocation status of digital certificate records.
+- Hint: PCRSODCR
+
+OID::Object Identifier
+- Definition: Unique string value indexing specific objects within databases.
+- Hint: USVISOWD
+
+OSINT::Open-source Intelligence
+- Definition: Information gathered from publicly accessible open sources.
+- Hint: IGFPAOS
+
+OTA::Over the Air
+- Definition: Wireless distribution of software updates to mobile endpoints.
+- Hint: WDOSUTME
+
+OVAL::Open Vulnerability Assessment Language
+- Definition: Standard XML schema organizing system vulnerability assessments.
+- Hint: SXSOSVA
+
+P12::PKCS #12
+- Definition: Certificate archive file format protecting cryptographic keys.
+- Hint: CAFFPCK
+
+P2P::Peer to Peer
+- Definition: Decentralized connection network sharing files directly between hosts.
+- Hint: DCNSFDBH
+
+PAC::Proxy Auto Configuration
+- Definition: Script file configuring web browser proxy redirection parameters.
+- Hint: SFCWBPRP
+
+PAM 2::Pluggable Authentication Modules
+- Definition: Modular security framework managing authentication modules on Unix.
+- Hint: MSFMAMOU
+
+PAP::Password Authentication Protocol
+- Definition: Basic authentication protocol transmitting plaintext passwords over links.
+- Hint: BAPTPPOL
+
+PBKDF2::Password-based Key Derivation Function 2
+- Definition: Key derivation function stretching passwords using salting cycles.
+- Hint: KDFSPUSC
+
+PBX::Private Branch Exchange
+- Definition: Private telephone switching exchange connecting local company lines.
+- Hint: PTSECLCL
+
+PCAP::Packet Capture
+- Definition: File format capturing network data packets for analysis.
+- Hint: FFCNDPFA
+
+PEAP::Protected Extensible Authentication Protocol
+- Definition: Secure wireless protocol wrapping EAP within TLS tunnels.
+- Hint: SWPWEWTT
+
+PED::Personal Electronic Device
+- Definition: Handheld electronic devices utilized by individual users.
+- Hint: HEDUBIU
+
+PEM::Privacy Enhanced Mail
+- Definition: Base64 encoded format storing digital certificates and keys.
+- Hint: BEFSDCAK
+
+PFS::Perfect Forward Secrecy
+- Definition: Cryptographic feature ensuring session key compromises do not affect past sessions.
+- Hint: CFESKCDNAPS
+
+PGP::Pretty Good Privacy
+- Definition: Encryption program providing cryptographic privacy and data authentication.
+- Hint: EPPCPADA
+
+PKCS::Public Key Cryptography Standards
+- Definition: Specifications standardizing public key cryptography implementation rules.
+- Hint: SSPKCIR
+
+POTS::Plain Old Telephone Service
+- Definition: Legacy voice-grade copper wire telephone line infrastructure.
+- Hint: LVGCWTLI
+
+PPTP::Point-to-Point Tunneling Protocol
+- Definition: Legacy tunneling protocol encapsulating virtual private networks over IP.
+- Hint: LTPEVPNOI
+
+PTZ::Pan-tilt-zoom
+- Definition: Camera hardware capable of panning, tilting, and zooming controls.
+- Hint: CHCOPTAZC
+
+RA::Recovery Agent
+- Definition: System administrator authorized to verify digital certificate requests.
+- Hint: SAATVDCR
+
+RA 2::Registration Authority
+- Definition: Server authority validating user identities for certificate requests.
+- Hint: SAVUIFCR
+
+RACE::Research and Development in Advanced Communications Technologies in Europe
+- Definition: European project developing broadband telecom standard definitions.
+- Hint: EPDBTSD
+
+RAD::Rapid Application Development
+- Definition: Development model emphasizing rapid prototyping over design specifications.
+- Hint: DMERPODS
+
+RAS::Remote Access Server
+- Definition: Gateway server managing remote client network connections.
+- Hint: GSMRCNC
+
+RAT::Remote Access Trojan
+- Definition: Malware program granting attackers remote command control of computers.
+- Hint: MPGARCCOC
+
+RBAC::Role-based Access Control
+- Definition: Access scheme assigning system privileges based on organizational roles.
+- Hint: ASASPBOOR
+
+RC4::Rivest Cipher version 4
+- Definition: Symmetric stream cipher widely used in early security systems.
+- Hint: SSCWUIESS
+
+RIPEMD::RACE Integrity Primitives Evaluation Message Digest
+- Definition: Cryptographic hash function standard developed by European projects.
+- Hint: CHFSDBEP
+
+ROI::Return on Investment
+- Definition: Financial metric evaluating efficiency of investment expenditures.
+- Hint: FMEEOIE
+
+RSA::Rivest, Shamir, & Adleman
+- Definition: Pioneering public-key algorithm securing data using factorization prime numbers.
+- Hint: PPKASDUFPN
+
+RTBH::Remotely Triggered Black Hole
+- Definition: Routing technique dropping malicious traffic flows at boundaries.
+- Hint: RTDMTFAB
+
+RTOS::Real-time Operating System
+- Definition: Operating system scheduling tasks to guarantee exact execution times.
+- Hint: OSSTTGEET
+
+RTP::Real-time Transport Protocol
+- Definition: Protocol delivering audio and video streams over networks.
+- Hint: PDAAVSON
+
+S/MIME::Secure/Multipurpose Internet Mail Extensions
+- Definition: Standard protocol encrypting and digitally signing email messages.
+- Hint: SPEADSEM
+
+SAE::Simultaneous Authentication of Equals
+- Definition: Authentication standard used in WPA3 wireless connections.
+- Hint: ASUIWWC
+
+SAN 2::Subject Alternative Name
+- Definition: DNS certificate extension identifying multiple host domain names.
+- Hint: DCEIMHDN
+
+SCAP::Security Content Automation Protocol
+- Definition: Vulnerability management specification organizing security compliance checks.
+- Hint: VMSOSCC
+
+SCEP::Simple Certificate Enrollment Protocol
+- Definition: Certificate protocol simplifying enrollment actions for client devices.
+- Hint: CPSEAFCD
+
+SDK::Software Development Kit
+- Definition: Software tools helping developers build target platform applications.
+- Hint: STHDBTPA
+
+SDLC::Software Development Lifecycle
+- Definition: Systemized phases managing application engineering from inception to retirement.
+- Hint: SPMAEFITR
+
+SDLM::Software Development Lifecycle Methodology
+- Definition: Methodology structure organizing software engineering process loops.
+- Hint: MSOSEPL
+
+SE Linux::Security-enhanced Linux
+- Definition: Linux kernel module enforcing mandatory security access controls.
+- Hint: LKMEMSAC
+
+SED::Self-encrypting Drives
+- Definition: Storage drive automatically encrypting data sectors using hardware keys.
+- Hint: SDAEDSUHK
+
+SEH::Structured Exception Handler
+- Definition: Windows mechanism handling operating system runtime code errors.
+- Hint: WMHOSRCE
+
+SHA::Secure Hashing Algorithm
+- Definition: Cryptographic hash algorithm family generating distinct file checksums.
+- Hint: CHAFGDFC
+
+SHTTP::Secure Hypertext Transfer Protocol
+- Definition: Legacy protocol encrypting individual web pages rather than connections.
+- Hint: LPEIWPRTC
+
+SLE::Single Loss Expectancy
+- Definition: Estimated monetary loss from single threat exploit events.
+- Hint: EMLFSTEE
+
+SOAP::Simple Object Access Protocol
+- Definition: XML protocol exchanging structured messaging data between web services.
+- Hint: XPESMDBWS
+
+SOAR::Security Orchestration, Automation, Response
+- Definition: Security platform coordinating threat mitigation alerts and playbooks.
+- Hint: SPCTMAAP
+
+SoC::System on Chip
+- Definition: Integrated circuit consolidating computer subsystems onto single chips.
+- Hint: ICCCSOSC
+
+SOC::Security Operations Center
+- Definition: Team monitoring corporate security postures and network threats continuously.
+- Hint: TMCSPANTC
+
+SOW::Statement of Work
+- Definition: Project document detailing specific deliverables and timelines.
+- Hint: PDDSDAT
+
+SPIM::Spam over Internet Messaging
+- Definition: Unsolicited spam messages transmitted over instant messaging networks.
+- Hint: USMTOIMN
+
+SQLi::SQL Injection
+- Definition: Database exploit injecting malicious SQL commands into queries.
+- Hint: DEIMSCIQ
+
+SRTP::Secure Real-Time Protocol
+- Definition: Secure transport protocol providing encryption to media streams.
+- Hint: STPPETMS
+
+STIX::Structured Threat Information eXchange
+- Definition: XML format exchanging threat intelligence details between organizations.
+- Hint: XFETIDBO
+
+SWG::Secure Web Gateway
+- Definition: Gateway filter enforcing policies and blocking malicious web traffic.
+- Hint: GFEPABMWT
+
+TAXII::Trusted Automated eXchange of Indicator Information
+- Definition: Protocol standard sharing threat indicators using STIX schemas.
+- Hint: PSSTIUSS
+
+TGT::Ticket Granting Ticket
+- Definition: Kerberos authentication token requesting access to service resources.
+- Hint: KATRATSR
+
+TOC::Time-of-check
+- Definition: Security vulnerability where resources change between check and execution.
+- Hint: SVWRCBCAE
+
+TOU::Time-of-use
+- Definition: Security vulnerability where systems change during operation.
+- Hint: SVWSCDO
+
+TTP::Tactics, Techniques, and Procedures
+- Definition: Threat intelligence profiling of adversary attack strategies.
+- Hint: TIPOAAS
+
+TSIG::Transaction Signature
+- Definition: Cryptographic method securing DNS database update messages.
+- Hint: CMSDDUM
+
+UAT::User Acceptance Testing
+- Definition: Phase validating software solutions satisfy actual business needs.
+- Hint: PVSSSABN
+
+UAV::Unmanned Aerial Vehicle
+- Definition: Remotely piloted aircraft operating without onboard human pilots.
+- Hint: RPAOWOHP
+
+UEM::Unified Endpoint Management
+- Definition: Platform managing security policies across diverse corporate endpoints.
+- Hint: PMSPADCE
+
+URI::Uniform Resource Identifier
+- Definition: String identifying specific resource locations on the internet.
+- Hint: SISRLOTI
+
+USB OTG::USB On the Go
+- Definition: Specification allowing USB devices to act as hosts.
+- Hint: SAUDTAAH
+
+VBA::Visual Basic
+- Definition: Microsoft macro language automating operations in Office tools.
+- Hint: MMLAOIOT
+
+VDE::Virtual Desktop Environment
+- Definition: Centralized virtual environment displaying virtual desktop windows.
+- Hint: CVEDVDW
+
+VTC::Video Teleconferencing
+- Definition: Interactive video system connecting remote participants in real-time.
+- Hint: IVSCRPIRT
+
+WAF::Web Application Firewall
+- Definition: Firewall filtering HTTP traffic to protect web applications.
+- Hint: FFHTTPWA
+
+WAP::Wireless Access Point
+- Definition: Device allowing wireless clients to connect to wired networks.
+- Hint: DAWCTCTWN
+
+WIDS::Wireless Intrusion Detection System
+- Definition: System scanning radio bands to identify wireless threats.
+- Hint: SSRBTIWT
+
+WIPS::Wireless Intrusion Prevention System
+- Definition: System active on radio bands blocking wireless attacks.
+- Hint: SAORBBWA
+
+WO::Work Order
+- Definition: Work Order authorization document.
+- Hint: WOAD
+
+WTLS::Wireless TLS
+- Definition: Symmetric security protocol designed for mobile wireless links.
+- Hint: SSPDFMWL
+
+XDR::Extended Detection and Response
+- Definition: Security platform correlating threat indicators across diverse channels.
+- Hint: SPCTIADC
+
+XML::Extensible Markup Language
+- Definition: Markup language defining rules for encoding document structures.
+- Hint: MLDRFEDS
+
+XOR::Exclusive Or
+- Definition: Logical gate operation returning true when inputs differ.
+- Hint: LGORTWID
+
+XSRF::Cross-site Request Forgery
+- Definition: Vulnerability forcing browsers to execute unwanted web actions.
+- Hint: VFBTEUWA

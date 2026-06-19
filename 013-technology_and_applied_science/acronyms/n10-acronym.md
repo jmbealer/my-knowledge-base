@@ -1,0 +1,208 @@
+# CompTIA Network+ N10-009 Acronym List
+
+The following is a list of acronyms that appear on the CompTIA Network+ N10-009
+exam. Candidates are encouraged to review the complete list and attain a working
+knowledge of all listed acronyms as part of a comprehensive exam preparation
+program.
+
+ACRONYM DEFINITION
+
+- **{{Address (A)}}**: DNS record mapping _hostname to IPv4 address_.
+- **{{Access Control List (ACL)}}**: Rules _filtering traffic based on criteria_.
+- **{{Advanced Encryption Standard (AES)}}**: Strong _symmetric block cipher for encryption_.
+- **{{Authentication Header (AH)}}**: IPSec protocol _providing data integrity and origin_.
+- **{{Access Point (AP)}}**: Device _enabling wireless device connection_ to network.
+- **{{Application Programming Interface (API)}}**: Interface _enabling software components to communicate_.
+- **{{Automatic Private Internet Protocol Addressing (APIPA)}}**: Self-assigned _link-local IPv4 address_ (169.254.x.x).
+- **{{Audio Processing Unit (APU)}}**: Specialized _hardware for processing audio signals_.
+- **{{Address Resolution Protocol (ARP)}}**: Protocol _mapping IP addresses to MAC_ addresses.
+- **{{Acceptable Use Policy (AUP)}}**: Rules _governing organizational network resource usage_.
+- **{{Business Continuity Planning (BCP)}}**: Strategy _ensuring operations continue during disaster_.
+- **{{Border Gateway Protocol (BGP)}}**: External _routing protocol for internet traffic_.
+- **{{Bayonet Neill–Concelman (BNC)}}**: RF _connector used with coaxial cable_.
+- **{{Bridge Protocol Data Unit (BPDU)}}**: STP _messages exchanged between network switches_.
+- **{{Basic Service Set Identifier (BSSID)}}**: MAC _address of a wireless access_ point.
+- **{{Bring Your Own Device (BYOD)}}**: Policy _allowing personal devices on corporate_ networks.
+- **{{Content-Addressable Memory (CAM)}}**: High-speed _memory used for MAC address_ tables.
+- **{{Content Delivery Network (CDN)}}**: Distributed _servers delivering web content efficiently_.
+- **{{Cisco Discovery Protocol (CDP)}}**: Proprietary _protocol for discovering Cisco devices_.
+- **{{Confidentiality, Integrity, and Availability (CIA)}}**: Core _model for guiding information security_ policies.
+- **{{Classless Inter-Domain Routing (CIDR)}}**: Method _for efficient IP address allocation_.
+- **{{Command-Line Interface (CLI)}}**: Text-based _interface for system management_.
+- **{{Canonical Name (CNAME)}}**: DNS _alias record for existing names_.
+- **{{Central Processing Unit (CPU)}}**: Main _circuitry executing computer program instructions_.
+- **{{Cyclic Redundancy Check (CRC)}}**: Error-detecting _code used in digital networks_.
+- **{{Direct Attach Copper (DAC)}}**: Short-range _copper cabling for high-speed_ interconnects.
+- **{{Direct-Attached Storage (DAS)}}**: Digital _storage connected directly to computer_.
+- **{{Data Center Interconnect (DCI)}}**: Networking _linking two or more data_ centers.
+- **{{Distributed Denial-of-Service (DDoS)}}**: Attack _from multiple sources overwhelming targets_.
+- **{{Dynamic Host Configuration Protocol (DHCP)}}**: Automatically _assigns IP addresses to hosts_.
+- **{{Data Loss Prevention (DLP)}}**: Strategy _preventing unauthorized sensitive data transfer_.
+- **{{Domain Name System (DNS)}}**: System _resolving hostnames to IP addresses_.
+- **{{Domain Name System Security Extensions (DNSSEC)}}**: Suite _for securing DNS data authenticity_.
+- **{{DNS over Hypertext Transfer Protocol Secure (DoH)}}**: DNS _queries sent via encrypted HTTPS_.
+- **{{Denial-of-Service (DoS)}}**: Attack _disrupting service availability for users_.
+- **{{DNS over Transport Layer Security (DoT)}}**: DNS _queries sent via encrypted TLS_.
+- **{{Disaster Recovery (DR)}}**: Process _restoring IT infrastructure after disaster_.
+- **{{Extensible Authentication Protocol (EAP)}}**: Authentication _framework providing common security functions_.
+- **{{Extensible Authentication Protocol over LAN (EAPoL)}}**: Method _for transporting EAP over Ethernet_.
+- **{{Enhanced Interior Gateway Routing Protocol (EIGRP)}}**: Cisco _advanced distance-vector routing protocol_.
+- **{{End-of-Life (EOL)}}**: Stage _where product support ceases_.
+- **{{End-of-Support (EOS)}}**: Date _when vendor stops assisting users_.
+- **{{Encapsulating Security Payload (ESP)}}**: IPSec _member providing origin authenticity and encryption_.
+- **{{Extended Service Set Identifier (ESSID)}}**: Human-readable _name for multiple wireless access points_.
+- **{{End-User License Agreement (EULA)}}**: Legal _contract between software author and user_.
+- **{{Fibre Channel (FC)}}**: High-speed _network technology used for storage networking_.
+- **{{First Hop Redundancy Protocol (FHRP)}}**: Provides _failover protection for default gateways_.
+- **{{Fully Qualified Domain Name (FQDN)}}**: Complete _domain name for specific host_.
+- **{{File Transfer Protocol (FTP)}}**: Protocol _for transferring files over TCP_.
+- **{{File Transfer Protocol Secure (FTPS)}}**: Secure _FTP extension using SSL/TLS encryption_.
+- **{{General Data Protection Regulation (GDPR)}}**: EU _law on data protection and privacy_.
+- **{{Generic Routing Encapsulation (GRE)}}**: Tunneling _protocol encapsulating wide variety of protocols_.
+- **{{Graphical User Interface (GUI)}}**: Visual _user interface for interacting with systems_.
+- **{{Hypertext Transfer Protocol (HTTP)}}**: Foundation _for data communication on web_.
+- **{{Hypertext Transfer Protocol Secure (HTTPS)}}**: Encrypted _HTTP communication using SSL/TLS_.
+- **{{Hot Standby Router Protocol (HSRP)}}**: Cisco _proprietary FHRP for gateway redundancy_.
+- **{{Infrastructure as a Service (IaaS)}}**: Cloud _computing model providing virtualized hardware_.
+- **{{Infrastructure as Code (IaC)}}**: Managing _infrastructure via machine-readable definition files_.
+- **{{Identity and Access Management (IAM)}}**: Framework _ensuring authorized users access resources_.
+- **{{Internal Border Gateway Protocol (iBGP)}}**: BGP _routing within a single autonomous system_.
+- **{{Internet Control Message Protocol (ICMP)}}**: Protocol _sending error messages and operational info_.
+- **{{Industrial Control System (ICS)}}**: Integration _of hardware/software for industrial automation_.
+- **{{Intermediate Distribution Frame (IDF)}}**: Cable _rack connecting internal equipment to MDF_.
+- **{{Intrusion Detection System (IDS)}}**: System _monitoring networks for malicious activity_.
+- **{{Internet Group Management Protocol (IGMP)}}**: Communication _protocol managing multicast group memberships_.
+- **{{Internal Gateway Protocol (IGP)}}**: Routing _protocol used within autonomous systems_.
+- **{{Internet of Things (IoT)}}**: Network _of physical objects with sensors/software_.
+- **{{Industrial Internet of Things (IIoT)}}**: IoT _applications in industrial sectors_.
+- **{{Internet Information Services (IIS)}}**: Microsoft _web server software for Windows_.
+- **{{Internet Key Exchange (IKE)}}**: Protocol _setting up security associations in IPSec_.
+- **{{Internet Protocol (IP)}}**: Core _protocol routing data across networks_.
+- **{{Internet Protocol Address Management (IPAM)}}**: Tool _for tracking and managing IP spaces_.
+- **{{Intrusion Prevention System (IPS)}}**: System _actively blocking detected network threats_.
+- **{{Internet Protocol Security (IPSec)}}**: Suite _for securing IP communications via encryption_.
+- **{{Intermediate System to Intermediate System (IS-IS)}}**: Link-state _routing protocol for large provider networks_.
+- **{{Internet Service Provider (ISP)}}**: Organization _providing services for accessing the internet_.
+- **{{Link Aggregation Control Protocol (LACP)}}**: IEEE _standard for bundling multiple network ports_.
+- **{{Local Area Network (LAN)}}**: Network _connecting devices within a limited area_.
+- **{{Local Connector (LC)}}**: Small _form-factor fiber optic connector_.
+- **{{Lightweight Directory Access Protocol (LDAP)}}**: Protocol _for accessing and maintaining directory services_.
+- **{{Lightweight Directory Access Protocol over SSL (LDAPS)}}**: Secure _LDAP using SSL/TLS encryption_.
+- **{{Link Layer Discovery Protocol (LLDP)}}**: Vendor-neutral _protocol for network device discovery_.
+- **{{Long-Term Evolution (LTE)}}**: Standard _for high-speed wireless mobile communication_.
+- **{{Media Access Control (MAC)}}**: Unique _identifier assigned to network interfaces_.
+- **{{Main Distribution Frame (MDF)}}**: Primary _hub for terminating external cabling_.
+- **{{Medium Dependent Interface Crossover (MDIX)}}**: Technology _automatically detecting required cable type_.
+- **{{Multifactor Authentication (MFA)}}**: Authentication _requiring two or more independent factors_.
+- **{{Management Information Base (MIB)}}**: Database _used for managing entities in network_.
+- **{{Multiple Input Multiple Output (MIMO)}}**: Technology _using multiple antennas for wireless throughput_.
+- **{{Memorandum of Understanding (MOU)}}**: Non-binding _agreement outlining mutual goals between parties_.
+- **{{Multiprotocol Label Switching (MPLS)}}**: Mechanism _directing data via labels between nodes_.
+- **{{Multifiber Push On (MPO)}}**: Multi-fiber _connector used for high-density applications_.
+- **{{Mean Time Between Failure (MTBF)}}**: Measure _of predicted elapsed time between failures_.
+- **{{Mean Time To Repair (MTTR)}}**: Average _time required to repair a failure_.
+- **{{Maximum Transmission Unit (MTU)}}**: Size _of largest PDU a layer supports_.
+- **{{Mail Exchange (MX)}}**: DNS _record identifying domain mail servers_.
+- **{{Network as a Service (NaaS)}}**: Cloud _model providing virtualized network infrastructure_.
+- **{{Network Access Control (NAC)}}**: System _managing device admission to network_.
+- **{{Network-Attached Storage (NAS)}}**: File-level _data storage connected to a network_.
+- **{{Network Address Translation (NAT)}}**: Mapping _private IP addresses to public IPs_.
+- **{{Non-Disclosure Agreement (NDA)}}**: Legal _contract protecting confidential information_.
+- **{{Network Functions Virtualization (NFV)}}**: Virtualizing _network services like firewalls or load balancers_.
+- **{{Network Interface Card (NIC)}}**: Hardware _component connecting computer to network_.
+- **{{Name Server (NS)}}**: DNS _record identifying authoritative name servers_.
+- **{{Network Time Protocol (NTP)}}**: Protocol _for synchronizing clocks over data networks_.
+- **{{Network Time Security (NTS)}}**: Secure _extension for NTP using TLS_.
+- **{{Out-of-Band (OOB)}}**: Management _access outside the primary data network_.
+- **{{Operating System (OS)}}**: System _software managing computer hardware and software_.
+- **{{Open Shortest Path First (OSPF)}}**: Link-state _routing protocol for IP networks_.
+- **{{Open Systems Interconnection (OSI)}}**: Reference _model for standardized network communication layers_.
+- **{{Operational Technology (OT)}}**: Hardware _and software managing industrial equipment_.
+- **{{Platform as a Service (PaaS)}}**: Cloud _model providing development and deployment tools_.
+- **{{Port Address Translation (PAT)}}**: Mapping _multiple private IPs to one public_.
+- **{{Payment Card Industry Data Security Standards (PCI DSS)}}**: Security _standards for credit card data_.
+- **{{Power Distribution Unit (PDU)}}**: Device _distributing electrical power to network racks_.
+- **{{Public Key Infrastructure (PKI)}}**: Framework _managing digital keys and certificates_.
+- **{{Power over Ethernet (PoE)}}**: Delivering _electrical power via Ethernet cabling_.
+- **{{Point-to-point Tunneling Protocol (PPTP)}}**: Legacy _protocol for creating VPN tunnels_.
+- **{{Pre-shared Key (PSK)}}**: Shared _secret used for wireless authentication_.
+- **{{Power Supply Unit (PSU)}}**: Component _converting AC power to DC_.
+- **{{Precision Time Protocol (PTP)}}**: Protocol _providing sub-microsecond clock synchronization_.
+- **{{Pointer (PTR)}}**: DNS _record mapping IP address to hostname_.
+- **{{Quality of Service (QoS)}}**: Prioritizing _network traffic to improve performance_.
+- **{{Quad Small Form-factor Pluggable (QSFP)}}**: High-density _transceiver module for data communication_.
+- **{{Remote Authentication Dial-in User Service (RADIUS)}}**: Centralized _authentication and authorization for network access_.
+- **{{Remote Desktop Protocol (RDP)}}**: Proprietary _protocol for graphical remote access_.
+- **{{Radio Frequency Identification (RFID)}}**: Wireless _tracking technology using electromagnetic tags_.
+- **{{Routing Information Protocol (RIP)}}**: Distance-vector _routing protocol using hop count_.
+- **{{Recovery Point Objective (RPO)}}**: Maximum _acceptable data loss measured in time_.
+- **{{Received Signal Strength Indicator (RSSI)}}**: Measure _of power in a received signal_.
+- **{{Rapid Spanning Tree Protocol (RSTP)}}**: Faster _converging version of Spanning Tree Protocol_.
+- **{{Recovery Time Objective (RTO)}}**: Maximum _acceptable downtime after a disaster_.
+- **{{Real-time Transport Protocol (RTP)}}**: Protocol _for delivering audio and video_ data.
+- **{{Receiver (RX)}}**: Component _responsible for receiving incoming signals_.
+- **{{Software as a Service (SaaS)}}**: Cloud _model providing centrally hosted applications_.
+- **{{Security Assertion Markup Language (SAML)}}**: XML _framework for exchanging authentication data_.
+- **{{Storage Area Network (SAN)}}**: Network _providing access to consolidated block-level storage_.
+- **{{Secure Access Service Edge (SASE)}}**: Converged _network and security services in cloud_.
+- **{{Subscriber Connector (SC)}}**: Square-shaped _push-pull fiber optic connector_.
+- **{{Supervisory Control and Data Acquisition (SCADA)}}**: System _managing high-level industrial processes_.
+- **{{Stream Control Transmission Protocol (SCTP)}}**: Reliability-oriented _transport layer protocol supporting multi-homing_.
+- **{{Software-defined Network (SDN)}}**: Managing _networks via software decoupled from hardware_.
+- **{{Software-defined Wide Area Network (SD-WAN)}}**: Managing _WAN connections via software control_.
+- **{{Small Form-factor Pluggable (SFP)}}**: Compact _transceiver used for data communication_.
+- **{{Secure File Transfer Protocol (SFTP)}}**: Secure _FTP extension using SSH encryption_.
+- **{{Session Initiation Protocol (SIP)}}**: Protocol _managing multimedia communication sessions_.
+- **{{Security Information and Event Management (SIEM)}}**: Real-time _analysis of security-generated alerts_.
+- **{{Service-level Agreement (SLA)}}**: Contract _defining expected service levels and standards_.
+- **{{Stateless Address Autoconfiguration (SLAAC)}}**: Method _for IPv6 nodes to autoconfigure_.
+- **{{Server Message Block (SMB)}}**: Protocol _for shared access to files and printers_.
+- **{{Simple Mail Transfer Protocol (SMTP)}}**: Protocol _for sending email across networks_.
+- **{{Simple Mail Transfer Protocol Secure (SMTPS)}}**: Secure _SMTP using SSL/TLS encryption_.
+- **{{Simple Network Management Protocol (SNMP)}}**: Protocol _for managing and monitoring network devices_.
+- **{{Start of Authority (SOA)}}**: DNS _record specifying authoritative information about domain_.
+- **{{Switched Port Analyzer (SPAN)}}**: Port _mirroring for monitoring network traffic_.
+- **{{Structured Query Language (SQL)}}**: Standard _language for managing relational databases_.
+- **{{Security Service Edge (SSE)}}**: Security _subset of SASE architecture_.
+- **{{Secure Shell (SSH)}}**: Protocol _for secure remote command-line access_.
+- **{{Service Set Identifier (SSID)}}**: Unique _name identifying a wireless network_.
+- **{{Secure Sockets Layer (SSL)}}**: Legacy _encryption protocol replaced by TLS_.
+- **{{Single Sign-on (SSO)}}**: One _login for multiple independent systems_.
+- **{{Straight Tip (ST)}}**: Bayonet-style _fiber optic connector with circular tip_.
+- **{{Spanning Tree Protocol (STP)}}**: Prevents _switching loops in Ethernet networks_.
+- **{{Switch Virtual Interface (SVI)}}**: Logical _interface on a switch for routing_.
+- **{{Terminal Access Controller Access Control System Plus (TACACS+)}}**: Proprietary _centralized authentication and authorization protocol_.
+- **{{Transmission Control Protocol (TCP)}}**: Connection-oriented _protocol for reliable data delivery_.
+- **{{Trivial File Transfer Protocol (TFTP)}}**: Simple _protocol for basic file transfers_.
+- **{{Temporal Key Integrity Protocol (TKIP)}}**: Legacy _encryption used with WPA_.
+- **{{Transport Layer Security (TLS)}}**: Modern _standard for encrypting internet communications_.
+- **{{Time to Live (TTL)}}**: Field _limiting packet lifespan to prevent loops_.
+- **{{Transmitter (TX)}}**: Component _responsible for sending outgoing signals_.
+- **{{Text (TXT)}}**: DNS _record for arbitrary text data_.
+- **{{User Datagram Protocol (UDP)}}**: Connectionless _protocol for fast, efficient delivery_.
+- **{{Uninterruptible Power Supply (UPS)}}**: Battery _backup providing emergency power_.
+- **{{Uniform Resource Locator (URL)}}**: Web _address identifying resources on internet_.
+- **{{Universal Serial Bus (USB)}}**: Common _interface for connecting hardware peripherals_.
+- **{{Unified Threat Management (UTM)}}**: Single _appliance providing multiple security functions_.
+- **{{Unshielded Twisted Pair (UTP)}}**: Common _network cabling lacking extra shielding_.
+- **{{Virtual IP (VIP)}}**: IP _shared among multiple network interfaces_.
+- **{{Virtual Local Area Network (VLAN)}}**: Logical _network segmentation within a switch_.
+- **{{Variable Length Subnet Mask (VLSM)}}**: Efficient _subnetting using different mask lengths_.
+- **{{Virtual Machine (VM)}}**: Software-based _emulation of a physical computer_.
+- **{{Virtual Network Computing (VNC)}}**: Graphical _desktop sharing system via RFB_.
+- **{{Voice over IP (VoIP)}}**: Delivering _voice communication over IP networks_.
+- **{{Virtual Private Cloud (VPC)}}**: Isolated _network environment in public cloud_.
+- **{{Virtual Private Network (VPN)}}**: Encrypted _tunnel providing secure remote access_.
+- **{{Virtual Routing and Forwarding (VRF)}}**: Running _multiple routing table instances simultaneously_.
+- **{{Virtual Router Redundancy Protocol (VRRP)}}**: Standard _protocol for gateway failover protection_.
+- **{{VLAN Trunk Protocol (VTP)}}**: Manages _VLAN database propagation across switches_.
+- **{{Virtual Extensible LAN (VXLAN)}}**: Encapsulation _protocol for Layer 2 overlays_.
+- **{{Wide Area Network (WAN)}}**: Large-scale _network spanning broad geographic areas_.
+- **{{Web Application Firewall (WAF)}}**: Filters _HTTP traffic to protect applications_.
+- **{{Wireless Access Point (WAP)}}**: Device _enabling wireless connectivity to LAN_.
+- **{{Wired Equivalent Privacy (WEP)}}**: Legacy _vulnerable wireless security standard_.
+- **{{Wireless LAN (WLAN)}}**: LAN _using radio waves for connectivity_.
+- **{{Wi-Fi Protected Access (WPA)}}**: Standard _securing wireless computer networks_.
+- **{{Wi-Fi Protected Setup (WPS)}}**: Simplified _method for connecting wireless devices_.
+- **{{Extensible Markup Language (XML)}}**: Metalanguage _for describing data structure_.
+- **{{Zero Trust Architecture (ZTA)}}**: Security _model requiring constant verification_.
