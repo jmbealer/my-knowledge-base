@@ -1,0 +1,557 @@
+- 
+- **Acronym - Spelled Out** 
+- AC::Alternating Current
+    - AC (alternating current) Type of electricity in which the flow of
+    - electrons alternates direction, back and forth, in a circuit.
+- ACL::Access Control List
+    - ACL - Access Control List: A set of rules used to control network traƯic and access to resources.
+    - ACL (Access Control List): A table that tells a computer opera�ng system which access rights each user
+    - has to a par�cular system object, such as a file directory or individual file.
+- AES::Advanced Encryption Standard
+    - AES (Advanced Encryp�on Standard): A symmetric encryp�on algorithm widely used across the globe to
+    - secure data.
+- AI::Artificial Intelligence
+    - AI (Ar�ficial Intelligence): The simula�on of human intelligence processes by machines, especially
+    - computer systems.
+- AIO::All In One
+- APIPA::Automatic Private Internet Protocol Addressing
+    - APIPA - Automatic Private Internet Protocol Addressing: A method for self-assigning an IP address
+    - when a DHCP server is unavailable.
+- ARM::Advanced RISC Machines
+    - ARM Energy-efficient processor design frequently used in mobile
+    - devices.
+- ARP::Address Resolution Protocol
+    - ARP - Address Resolution Protocol: A protocol used to map IP addresses to MAC addresses.
+        - ARP (Address Resolu�on Protocol): A communica�on protocol used for discovering the link layer
+        - address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.
+- ASCII::American Standard Code for Information Interchange
+    - ASCII (American Standard Code for Information
+    - Interchange) Industry-standard 8-bit characters used to define text
+    - characters, consisting of 96 upper- and lowercase letters, plus 32
+    - nonprinting control characters, each of which is numbered. These numbers
+    - were designed to achieve uniformity among computer devices for printing
+    - and the exchange of simple text documents.
+- 
+- BD-ROM::Blu-ray Disc Read-only Memory
+    - BD-ROM (Blu-ray Disc-Read Only Media) Blu-ray Disc equivalent of
+    - a DVD-ROM or CD-ROM. (See also Blu-ray Disc [BD].)
+- BIOS::Basic Input/Output System
+    - BIOS (Basic Input/Output System): Firmware used to perform hardware ini�aliza�on during the boo�ng
+    - process and to provide run�me services for opera�ng systems and programs.
+- BPS::Bits Per Second
+    - bps (bits per second) Measurement of how fast data is moved from one
+    - place to another. A 56K modem can move ~56,000 bits per second.
+- 
+- CAD::Computer-aided Design
+- CAM::Computer-aided Manufacturing
+- CAN::Controller Area Network
+- CD::Compact Disc
+    - CD (compact disc) Originally designed as the replacement for vinyl
+    - records; has become the primary method of long-term storage of music
+    - and data.
+- CD-ROM::Compact Disc-Read-only Memory
+    - CD-ROM (compact disc/read-only memory) Read-only compact
+    - storage disc for audio or video data. CD-ROMs are read by using CD-
+    - ROM drives and optical drives with backward compatibility, such as DVD
+    - and Blu-ray Disc drives.
+- CD-RW::Compact Disc-Rewritable
+    - CD-RW (CD-rewritable) CD technology that accepts multiple
+    - reads/writes like a hard drive.
+- CLI::Command-line Interface
+    - CLI - Command-line Interface: A text-based interface used to interact with software and operating
+        - systems.
+- CPU::Central Processing Unit
+    - CPU - Central Processing Unit: The primary component of a computer that performs most of the
+    - processing.
+    - CPU (central processing unit) “Brain” of the computer. Microprocessor
+    - that handles primary calculations for the computer. CPUs are known by
+    - names such as Core i5 and Phenom II.
+- CRUD::Create, Read, Update, Delete
+    - CRUD Create, read, update, delete; common database transactions.
+- CSS::Cascading Style Sheets
+    - Cascading Style Sheet CSS; a web design document that centrally
+    - controls web page formatting.
+- 
+- DC::Direct Current
+    - DC (direct current) Type of electricity in which the flow of electrons is
+    - in a complete circle in one direction.
+- DDL::Data Definition Language
+    - data definition language DDL; a schema used to define database storage
+    - structures.
+- DDR::Double Data Rate
+    - DDR (double data rate) Shortened reference to memory technology,
+    - such as DDR SDRAM. Similarly, DDR2 can refer to DDR2 SDRAM,
+    - DDR3 to DDR3 SDRAM, and so on.
+- DDoS::Distributed Denial of Service
+    - DDoS - Distributed Denial-of-service: A type of attack where multiple systems overwhelm a target
+    - with traƯic.
+        - DDoS (Distributed Denial of Service): A type of cyber‐a�ack where mul�ple compromised computer
+        - systems a�ack a target, such as a server, website, or other network resource, and cause a denial of
+        - service for users of the targeted resource.
+- DHCP::Dynamic Host Configuration Protocol
+    - DHCP - Dynamic Host Configuration Protocol: A protocol that automatically assigns IP addresses
+    - to devices on a network.
+        - DHCP (Dynamic Host Configura�on Protocol): A network management protocol used on IP networks
+        - whereby a DHCP server dynamically assigns an IP address and other network configura�on parameters
+        - to each device on a network.
+- DIMM::Dual Inline Memory Module
+    - DIMM (dual inline memory module) 32- or 64-bit type of DRAM
+    - packaging with the distinction that each side of each tab inserted into the
+    - system performs a separate function. DIMMs come in a variety of sizes,
+    - 
+    - with 184-, 240-, and 288-pin being the most common on desktop
+    - computers.
+- DLL::Dynamic Link Library
+    - DLL (Dynamic Link Library): A feature of Windows and other opera�ng systems that allows mul�ple
+    - so�ware programs to share the same func�onality.
+- DLP::Data Loss Prevention
+    - DLP - Data Loss Prevention: Technologies and strategies to prevent the unauthorized transmission
+    - of data.
+        - DLP (Data Loss Preven�on): A set of tools and processes used to ensure that sensi�ve data is not lost,
+        - misused, or accessed by unauthorized users.
+        - data loss prevention DLP; controls put in place to protect sensitive data
+        - or intellectual property.
+- DML::Data Manipulation Language
+    - data manipulation language Computer programming language used to
+    - perform database CRUD operations.
+- DNS::Domain Name System
+    - DNS - Domain Name System: A system that translates domain names into IP addresses.
+        - DNS (Domain Name System): The phonebook of the Internet, a hierarchical and decentralized naming
+        - system for computers, services, or other resources connected to the Internet or a private network.
+- DSL::Digital Subscriber Line
+    - DSL (Digital Subscriber Line): A family of technologies that provide internet access by transmi�ng digital
+    - data over the wires of a local telephone network.
+- DVD::Digital Video Disc
+    - DVD (digital versatile disc) Optical disc format that provides for 4 GB
+    - to 17 GB of video or data storage.
+- DVD-R::Digital Video Disc-Recordable
+- DVD-RW::Digital Video Disc-Rewritable
+- DVI::Digital Visual Interface
+    - DVI (Digital Visual Interface) Special video connector designed for
+    - digital-to-digital connections; most commonly seen on PC video cards and
+    - 
+    - LCD monitors. Some versions also support analog signals with a special
+    - adapter.
+- DaaS::Desktop as a Service
+- DoS::Denial of Service
+    - DoS - Denial-of-service: An attack that makes a network service unavailable to its intended users.
+    - DoS (Denial of Service): A cyber‐a�ack in which the perpetrator seeks to make a machine or network
+    - resource unavailable to its intended users by temporarily or indefinitely disrup�ng services of a host
+    - connected to the Internet.
+    - DoS (denial of service) An attack on a computer resource that prevents it
+    - from performing its normal operations, usually by overwhelming it with
+    - large numbers of requests in an effort to monopolize its resources.
+- 
+- EMI::Electromagnetic Interference
+    - electromagnetic interference (EMI) Electrical interference from one
+    - device to another, resulting in poor performance of the device being
+    - interfered with. Examples are static on your TV while running a blow
+    - dryer and placing two monitors too close together and getting a “shaky”
+    - screen.
+- ESD::Electrostatic Discharge
+    - electrostatic discharge (ESD) Uncontrolled rush of electrons from one
+    - object to another. This is a real menace to PCs, as it can cause permanent
+    - damage to semiconductors.
+- EULA::End User License Agreement
+    - EULA - End User License Agreement: A legal contract between a software provider and the user,
+    - outlining the terms of use.
+- eSATA::External Serial Advanced Technology Attachment
+    - eSATA (external SATA) Serial ATA-based connector for external hard
+    - drives and optical drives.
+- 
+- FAT::File Allocation Table
+    - FAT (file allocation table) Hidden table that records how files on a hard
+    - disk are stored in distinct clusters; the only way DOS knows where to
+    - access files. Address of first cluster of a file is stored in the directory file.
+    - FAT entry for the first cluster is the address of the second cluster used to
+    - store that file. In the entry for the second cluster for that file is the address
+    - for the third cluster, and so on, until the final cluster, which gets a special
+    - end-of-file code. There are two FATs, mirror images of each other, in case
+    - one is destroyed or damaged. This also refers to the 16-bit file allocation
+    - table when used by Windows 2000 and later NT-based operating systems.
+- FAT32::32-bit File Allocation Table
+    - FAT32 File allocation table; a file system type that uses 32 bits to
+    - 
+    - address and index file clusters. This is commonly used with USB flash-
+    - media drives and older versions of Windows.
+- FTP::File Transfer Protocol
+    - FTP - File Transfer Protocol: A standard network protocol used to transfer files between a client and
+    - server.
+    - FTP (File Transfer Protocol): A standard network protocol used for the transfer of computer files
+    - between a client and server on a computer network.
+- FTPS::File Transfer Protocol Secure
+    - FTPS (Secured File Transfer Protocol): An extension of FTP that adds support for the Transport Layer Security (TLS) and the Secure Sockets Layer (SSL) cryptographic protocols.
+- 
+- GB::Gigabyte
+- GDPR::General Data Protection Regulation
+    - GDPR - General Data Protection Regulation: A regulation in the EU governing data protection and
+    - privacy.
+    - GDPR (General Data Protec�on Regula�on): A regula�on in EU law on data protec�on and privacy in the
+    - European Union and the European Economic Area.
+- GHz::Gigahertz
+- GPS::Global Positioning System
+    - GPS (Global Posi�oning System): A satellite‐based radionaviga�on system owned by the United States
+    - government and operated by the United States Space Force.
+    - Global Positioning System (GPS) Technology that enables a mobile
+    - device to determine where you are on a map.
+- GPU::Graphics Processing Unit
+    - GPU (Graphics Processing Unit): A specialized electronic circuit designed to rapidly manipulate and alter
+    - memory to accelerate the crea�on of images in a frame buffer intended for output to a display device.
+    - GPU (graphics processing unit) Specialized processor that helps the
+    - CPU by taking over all of the 3-D rendering duties.
+- GUI::Graphical User Interface
+    - GUI - Graphical User Interface: A visual interface allowing users to interact with a computer using
+    - graphical elements like icons and buttons.
+- Gb::Gigabit
+- Gbps::Gigabit per second
+- 
+- HDD::Hard Disk Drive
+    - HDD (Hard Disk Drive): A data storage device that uses magne�c storage to store and retrieve digital
+    - informa�on using one or more rigid rapidly rota�ng disks coated with magne�c material.
+- HDMI::High-definition Multimedia Interface
+    - HDMI (High Definition Multimedia Interface) Single multimedia
+    - connection that includes both high-definition video and audio. One of the
+    - best connections for outputting to television. It also contains copy
+    - protection features.
+- HFS::Hierarchical File System
+    - HFS Hierarchical file system; file system used on macOS.
+- HTML::Hypertext Markup Language
+    - HTML (Hypertext Markup Language): The standard markup language for documents designed to be
+    - displayed in a web browser.
+- HTTP::Hypertext Transfer Protocol
+    - HTTP - Hypertext Transfer Protocol: A protocol used for transmitting hypertext (web pages) over the
+    - internet.
+        - HTTP (Hypertext Transfer Protocol): An applica�on protocol for distributed, collabora�ve, hypermedia
+        - informa�on systems.
+- HTTPS::Hypertext Transfer Protocol Secure
+    - HTTPS - Hypertext Transfer Protocol Secure: A secure version of HTTP that encrypts data for safe
+    - communication over the internet.
+        - HTTPS (Hypertext Transfer Protocol Secure): An extension of HTTP for secure communica�on over a
+        - computer network, and is widely used on the Internet.
+- 
+- ICMP::Internet Control Message Protocol
+    - ICMP - Internet Control Message Protocol: A network protocol used for error handling and
+    - diagnostics in IP networks.
+        - ICMP (Internet Control Message Protocol): Used by network devices, including routers, to send error
+        - messages and opera�onal informa�on indica�ng success or failure when communica�ng with another IP
+        - address.
+- IDE::Integrated Development Environment
+- IDS::Intrusion Detection System
+    - IDS - Intrusion Detection System: A system that monitors network traƯic for suspicious activity and
+    - potential threats.
+        - IDS (Intrusion Detec�on System): A device or so�ware applica�on that monitors a network or systems
+        - for malicious ac�vity or policy viola�ons.
+- IMAP::Internet Mail Access Protocol
+    - IMAP (Internet Message Access Protocol): An internet standard protocol used by email clients to
+    - retrieve messages from a mail server over a TCP/IP connec�on.
+- IMAPS::Internet Mail Access Protocol Secure
+- IOPS::Input/Output Operations Per Second
+- IP::Internet Protocol
+    - IP - Internet Protocol: A protocol responsible for addressing and routing packets of data across
+    - networks.
+        - IP (Internet Protocol): The principal communica�ons protocol in the Internet protocol suite for relaying
+        - datagrams across network boundaries.
+- IPS::Intrusion Prevention System
+    - IPS - Intrusion Prevention System: A system that actively monitors and blocks potential threats to
+    - the network.
+    - IPS (Intrusion Preven�on System): A network security/threat preven�on technology that examines
+    - network traffic flows to detect and prevent vulnerability exploits.
+- IR::Infrared
+- ISP::Internet Service Provider
+    - ISP (Internet Service Provider): A company that provides subscribers with access to the Internet.
+- IaaS::Infrastructure as a Service
+    - IaaS - Infrastructure as a Service: A cloud computing model that provides virtualized computing
+    - resources over the internet.
+        - IaaS (Infrastructure as a Service): A form of cloud compu�ng that provides virtualized compu�ng
+        - resources over the internet.
+- IoT::Internet of Things
+    - IoT - Internet of Things: A network of physical objects embedded with sensors and software to
+    - connect and exchange data with other devices.
+    - IoT (Internet of Things): The extension of Internet connec�vity into physical devices and everyday
+    - objects.
+- 
+- KB::Kilobyte
+- Kb::Kilobit
+- Kbps::Kilobit per second
+- 
+- LAN::Local Area Network
+    - LAN - Local Area Network: A network that connects devices within a limited area, such as a home,
+    - school, or oƯice.
+        - LAN (Local Area Network): A network that connects computers within a limited area such as a residence,
+        - school, laboratory, university campus or office building.
+- LTE::Long-term Evolution
+- 
+- MAC::Media Access Control
+    - MAC - Media Access Control: A unique identifier assigned to network interfaces for
+    - communications on the physical network.
+        - MAC (Media Access Control): A unique iden�fier assigned to a network interface controller for use as a
+        - network address in communica�ons within a network segment.
+- MAN::Metropolitan Area Network
+    - MAN (Metropolitan Area Network): A network that interconnects users with computer resources in a
+    - geographic area or region larger than that covered by even a large local area network (LAN) but smaller
+    - than the area covered by a wide area network (WAN).
+- MB::Megabyte
+- MHz::Megahertz
+- MITM::Man in the Middle
+    - man-in-the-middle attack (MITM) An attacker impersonating one party
+    - of an active network conversation and replaying previous captured traffic
+    - that has been modified by the attacker; a type of replay attack.
+- MP3::Moving Picture Experts Group Layer-3 Audio
+    - MP3 Short for MPEG Audio Layer 3, a type of compression used
+    - specifically for turning high-quality digital audio files into much smaller
+    - yet similar-sounding files.
+- MP4::Moving Picture Experts Group Layer-4
+- Mb::Megabit
+- Mbps::Megabit per second
+- 
+- NAS::Network Attached Storage
+    - NAS - Network-attached Storage: A storage device connected to a network that provides data
+    - access to a group of clients.
+- NAT::Network Address Translation
+    - NAT - Network Address Translation: A method of remapping IP addresses by modifying network
+    - address information in packet headers.
+        - NAT (Network Address Transla�on): A method of remapping one IP address space into another by
+        - modifying network address informa�on in the IP header of packets while they are in transit across a
+        - traffic rou�ng device.
+- NDA::Non-Disclosure Agreement
+    - NDA (Non‐disclosure Agreement): A legally binding contract establishing a confiden�al rela�onship.
+- NFC::Near Field Communication
+    - NFC (Near Field Communica�on): A set of communica�on protocols that enable two electronic devices,
+    - one of which is usually a portable device such as a smartphone, to establish communica�on by bringing
+    - them within 4 cm of each other.
+- NIC::Network Interface Card
+    - NIC - Network Interface Card: A hardware component that connects a computer to a network.
+- NTFS::New Technology File System
+    - NTFS (New Technology File System): A proprietary file system developed by Microso�.
+- NVMe::Non-volatile Memory Express
+- 
+- OEM::Original Equipment Manufacturer
+    - OEM (original equipment manufacturer) Company that produces
+    - software or computer parts that other companies sell in their end products.
+    - Microsoft develops Windows OS, for example, that many companies sell
+    - with their PCs. Microsoft is the OEM for Windows. Alternatively, refers to
+    - 
+    - companies that source parts from contract manufacturers but brand the end
+    - product as their own. Several Chinese companies make the circuit boards
+    - and screens used in Apple products, for example, but the final product is
+    - an Apple device. Apple is the OEM for the iPhone.
+- OS::Operating System
+    - OS - Operating System: Software that manages hardware and provides services for computer
+    - programs.
+        - OS (Opera�ng System): So�ware that manages computer hardware, so�ware resources, and provides
+        - common services for computer programs.
+- 
+- PAN::Personal Area Network
+- PB::Petabyte
+- PC::Personal Computer
+- PCI::Peripheral Component Interconnect
+    - PCI (Peripheral Component Interconnect) Design architecture for the
+    - expansion bus on the computer motherboard that enables system
+    - components to be added to the computer. It is the local bus standard,
+    - meaning that devices added to a computer through this port will use the
+    - processor at the motherboard’s full speed (up to 33 MHz) rather than at the
+    - slower 8 MHz speed of the regular bus. PCI moves data 32 or 64 bits at a
+    - time rather than the 8 or 16 bits the older ISA buses supported.
+- PCIe::Peripheral Component Interconnect Express
+    - PCIe (PCI Express) Serialized successor to PCI and AGP that uses the
+    - concept of individual data paths called lanes. This may use any number of
+    - 
+    - lanes, although a single lane (×1) and 16 lanes (×16) are the most common
+    - on motherboards.
+- PHI::Personal Health Information
+    - PHI (Personal Health Informa�on): Any informa�on about health status, provision of health care, or
+    - payment for health care that can be linked to a specific individual.
+- PII::Personally Identifiable Information
+    - PII (Personally Iden�fiable Informa�on): Informa�on that can be used on its own or with other
+    - informa�on to iden�fy, contact, or locate a single person, or to iden�fy an individual in context.
+- PIN::Personal Identification Number
+- POP::Post Office Protocol
+    - POP (Post Office Protocol): An Internet standard protocol used by local email clients to retrieve email
+    - from a remote server over a TCP/IP connec�on.
+- POP3::Post Office Protocol 3
+    - POP3 (Post Office Protocol 3) One of the two protocols that receive e-
+    - mail from SMTP servers. POP3 uses TCP port 110. While historically
+    - 
+    - most e-mail clients use this protocol, the IMAP4 e-mail protocol is now
+    - more common.
+- POP3S::Post Office Protocol 3 Secure
+- PSU::Power Supply Unit
+    - power supply unit (PSU) Provides the electrical power for a PC;
+    - converts standard AC power into various voltages of DC electricity in a
+    - PC.
+- PXE::Preboot Execution Environment
+    - preboot execution environment (PXE) Technology that enables a PC to
+    - boot without any local storage by retrieving an OS from a server over a
+    - network.
+- PaaS::Platform as a Service
+    - PaaS - Platform as a Service: A cloud computing model that provides a platform allowing customers
+    - to develop, run, and manage applications without dealing with the infrastructure.
+    - PaaS (Pla�orm as a Service): A category of cloud compu�ng services that provides a pla�orm allowing
+    - customers to develop, run, and manage applica�ons without the complexity of building and maintaining
+    - the infrastructure typically associated with developing and launching an app.
+- 
+- RAID::Redundant Array of Independent Disks
+    - RAID (Redundant Array of Inexpensive Disks): A technology that combines mul�ple disk drive
+    - components into a logical unit for data redundancy and performance improvement.
+    - privileges.
+- RAM::Random-access Memory
+    - RAM (random access memory) Memory that can be accessed at
+    - random; that is, memory that you can write to or read from without
+    - touching the preceding address. This term is often used to mean a
+    - computer’s main memory.
+- RF::Radio Frequency
+    - RFI (radio frequency interference) Another form of electrical
+    - interference caused by radio wave–emitting devices, such as cell phones,
+    - wireless network cards, and microwave ovens.
+- RISC::Reduced Instruction Set Computer
+- RJ::Registered Jack
+    - RJ - Registered Jack: A standardized physical network interface for connecting telecommunications
+    - or networking equipment.
+- RJ11::Registered Jack Function 11
+- RJ45::Registered Jack Function 45
+- ROM::Read-only Memory
+    - read-only memory ROM; nonvolatile memory that cannot be written to.
+- 
+- SATA::Serial Advanced Technology Attachment
+    - SATA (serial ATA) Serialized version of the ATA standard that offers
+    - many advantages over PATA (parallel ATA) technology, including thinner
+    - 
+    - cabling, keyed connectors, and lower power requirements.
+- SD card::Secure Digital Card
+    - SD (Secure Digital) Popular format for flash media cards, such as SD
+    - cards; also supports I/O devices.
+- SFP::Small Form-factor Pluggable
+    - SFP - Small Form-factor Pluggable: A compact, hot-pluggable transceiver used in data
+    - communications and telecommunication networks.
+- SFTP::Secure File Transfer Protocol
+    - SFTP - Secure File Transfer Protocol: A secure version of FTP that encrypts both commands and
+    - data.
+    - SFTP (Secured File Transfer Protocol): A secure version of the File Transfer Protocol (FTP) that uses Secure Shell (SSH) to encrypt the data transferred over the network.
+- SID::System Identifier
+- SMTP::Simple Mail Transfer Protocol
+    - SMTP - Simple Mail Transfer Protocol: A protocol used for sending email messages between
+    - servers.
+    - SMTP (Simple Mail Transfer Protocol): An internet standard for email transmission across Internet
+    - Protocol (IP) networks.
+- SMTPS::Simple Mail Transfer Protocol Secure
+    - SMTPS - Simple Mail Transfer Protocol Secure: An extension of SMTP that provides encrypted
+    - communication using SSL/TLS.
+    - SMTPS (Simple Mail Transfer Protocol Secure): A method for securing SMTP with transport layer
+    - security. It is intended to provide authen�ca�on of the communica�on partners, as well as data integrity
+    - and confiden�ality.
+- SNMP::Simple Network Management Protocol
+    - SNMP - Simple Network Management Protocol: A protocol used for collecting and organizing
+    - information about managed devices on IP networks.
+    - SNMP (Simple Network Management Protocol): An Internet Standard protocol for collec�ng and
+    - organizing informa�on about managed devices on IP networks and for modifying that informa�on to
+    - change device behavior.
+- SOHO::Small Office, Home Office
+    - SOHO (small office, home office) Designation for devices for personal
+    - use or in small businesses.
+- SQL::Structured Query Language
+    - SQL - Structured Query Language: A standardized language used to manage and manipulate
+    - databases.
+    - SQL (Structured Query Language): A domain‐specific language used in programming and designed for
+    - managing data held in a rela�onal database management system.
+- SSD::Solid State Drive
+    - SSD (Solid State Drive): A storage device containing nonvola�le flash memory, used in place of a hard
+    - disk because of its much greater speed.
+- SSH::Secure Shell
+    - SSH - Secure Shell: A cryptographic network protocol used for secure data communication, remote
+    - command-line login, and other secure network services.
+    - SSH (Secure Shell): A cryptographic network protocol for opera�ng network services securely over an
+    - unsecured network.
+- SSID::Service Set Identifier
+    - SSID - Service Set Identifier: The name of a wireless network, used to identify and diƯerentiate
+    - between networks.
+- SSL::Secure Sockets Layer
+    - SSL - Secure Socket Layer: A protocol for establishing authenticated and encrypted links between
+    - networked computers.
+    - SSL (Secure Sockets Layer): The standard security technology for establishing an encrypted link between
+    - a web server and a browser.
+- SSO 2::Secure Sign-On
+- SaaS::Software as a Service
+    - SaaS - Software as a Service: A cloud computing model that provides software applications over
+    - the internet, typically on a subscription basis.
+    - SaaS (So�ware as a Service): A so�ware distribu�on model in which a third‐party provider hosts
+    - applica�ons and makes them available to customers over the Internet.
+- 
+- TB::Terabyte
+- TCP::Transmission Control Protocol
+    - TCP - Transmission Control Protocol: A core protocol of the Internet Protocol suite that ensures
+    - reliable, ordered, and error-checked delivery of data.
+- TCP/IP::Transmission Control Protocol/Internet Protocol
+    - TCP/IP (Transmission Control Protocol/Internet Protocol): A set of communica�on protocols used to
+    - interconnect network devices on the internet.
+- TKIP::Temporal Key Integrity Protocol
+    - TKIP (Temporal Key Integrity Protocol): A security protocol used in the IEEE 802.11 wireless networking
+    - standard.
+- TLS::Transport Layer Security
+    - TLS (Transport Layer Security): A cryptographic protocol designed to provide communica�ons security
+    - over a computer network.
+- Tbps::Terabits per second
+- 
+- UPS::Uninterruptible Power Supply
+    - UPS - Uninterruptible Power Supply: A device that provides backup power to electronics in the
+    - event of a power failure.
+    - UPS (Uninterrup�ble Power Supply): A device that allows a computer to keep running for at least a
+    - short �me when the primary power source is lost.
+- URL::Uniform Resource Locator
+    - URL - Uniform Resource Locator: The address used to access resources on the internet.
+    - URL (Uniform Resource Locator): A reference to a web resource that specifies its loca�on on a computer
+    - network and a mechanism for retrieving it.
+- USB::Universal Serial Bus
+    - USB - Universal Serial Bus: A standard for connectors, cables, and protocols used for
+        - communication and power supply between computers and electronic devices.
+    - USB (Universal Serial Bus): An industry standard that establishes specifica�ons for cables and
+    - connectors and protocols for connec�on, communica�on, and power supply between computers,
+    - peripherals, and other computers.
+- USB-A::Universal Serial Bus-A
+- USB-C::Universal Serial Bus-C
+- 
+- VGA::Video Graphics Array
+    - video graphics array (VGA) connector An older analog video
+    - connector; it has 15 pins, laid out in three rows of five.
+- VPN::Virtual Private Network
+    - VPN - Virtual Private Network: A service that encrypts internet traƯic and routes it through a remote
+    - server to provide privacy and security.
+    - VPN (Virtual Private Network): A technology that creates a safe and encrypted connec�on over a less
+    - secure network, such as the internet.
+- VR::Virtual Reality
+- VoIP::Voice over Internet Protocol
+    - VoIP - Voice over IP: A technology that allows voice communication and multimedia sessions over
+    - the Internet Protocol (IP) networks.
+    - VoIP (Voice over Internet Protocol): A methodology and group of technologies for the delivery of voice
+    - communica�ons and mul�media sessions over Internet Protocol (IP) networks.
+- vCPU::Virtual Central Processing Unit
+- vHDD::Virtual Hard Disk Drive
+    - virtual hard drive A file used by a virtual machine; the file serves as a
+    - storage device would to a physical computer.
+- vNIC::Virtual Network Interface Card
+- vRAM::Virtual Random-access Memory
+- 
+- WAN::Wide Area Network
+    - WAN - Wide Area Network: A telecommunications network that extends over a large geographic
+    - area for the purpose of computer networking.
+- WAP::Wireless Access Point
+    - WPA - Wi-Fi Protected Access: A security protocol used to secure wireless networks.
+- WEP::Wired Equivalent Privacy
+    - WEP (Wired Equivalent Privacy): A security protocol, now considered insecure, for wireless local area
+    - networks (WLANs).
+- WLAN::Wireless Local Area Network
+    - wireless local area network (WLAN) Small group of computers that
+    - connect via Wi-Fi.
+- WPA::Wi-Fi/Wireless Protected Access
+    - WPA (Wi-Fi Protected Access) Wireless security protocol that uses
+    - encryption key integrity-checking/TKIP and EAP and is designed to
+    - improve on WEP’s weaknesses. This has been supplanted by WPA 2.
+- WPA2::Wi-Fi/Wireless Protected Access 2
+    - WPA 2 (Wi-Fi Protected Access 2) Wireless security protocol, also
+    - known as IEEE 802.11i. This uses the Advanced Encryption Standard
+    - (AES) and replaces WPA.
+- WPA3::Wi-Fi/Wireless Protected Access 3
+- WPAN::Wireless Personal Area Network
+- WiFi::Wireless Fidelity
+    - WiFi Common name for the IEEE 802.11 wireless Ethernet standard.
+- 
+- 

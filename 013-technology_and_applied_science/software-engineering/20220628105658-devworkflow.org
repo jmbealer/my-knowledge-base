@@ -1,0 +1,102 @@
+:PROPERTIES:
+:ID:       6df2c337-4b01-470f-9028-d0745498f8a6
+:mtime:    20230206181428 20220628112444
+:ctime:    20220628105658
+:END:
+#+title: devWorkflow
+#+date: [2022-06-28 Tue 10:56]
+
+* Visual Studio Code
+
+Text editor Any program that allows you to write, edit, and save text files
+Code editor A text editor that is specialized for writing code
+
+Debugging tools for multiple languages
+
+Tip
+VSCode is highly configurable.
+There are many high-quality blog posts on customizing VSCode.
+It's worth exploring ways to configure VSCode to power up your development workflow.
+
+Do this
+Install Node.js and npm
+Before you can install VSCode, you will first have to install Node.js.
+Node.js, or Node, is a program that will allow you to run JavaScript outside of a web browser.
+With Node, you can build different types of programs with JavaScript.
+
+And npm, which was originally short for Node package manager, is a package manager for JavaScript.
+The npm package manager will help you manage your JavaScript project dependencies.
+
+
+Verify installation
+Now, verify that everything worked correctly. Run the following two commands, which should successfully return version numbers.
+node -v
+npm -v
+
+
+After navigating to a folder that you want to open in VSCode, you can open the entire folder with the code command, as follows:
+code .
+
+Although it is almost always best to open an entire folder, you also have the option to open an individual file:
+code example.js
+
+Mac and Linux users will need to take an additional step to access the code command.
+First, open the Command Palette by pressing Command+Shift+P or right-clicking and selecting Command Palette.
+Then, type shell command and look for the option that describes installing the code command.
+
+* Debugger
+
+But tools like Visual Studio Code's debugger can help speed up the process of solving bugs.
+
+Breakpoint A signal that you place in your code to tell the debugger to stop the execution of your code
+
+Run and debug code
+VSCode has its own debugger built into the program.
+The debugger can easily be used with JavaScript files.
+To start the debugger, navigate to the file that you wish to debug and then press the Run button (icon #4 in the diagram shown below).
+
+Run screen
+Click the Run and Debug button. VSCode will then prompt you to choose an environment. Select Node.js, and VSCode will run your code.
+
+Choose environment screen
+Below your code, a new pane called the Debug Console will open. It will look something like this:
+
+Code has run and the Debug Console is open
+As you can see, the code has run and logged the statements to the console correctly.
+
+Set breakpoints
+If you hold your pointer to the left of each line number, you will see a faded red dot.
+Click that dot to create a breakpoint, which is a signal that you place in your code to tell the debugger to stop the execution of your code. For example, if you make a breakpoint at line 4, the code will stop executing at line 4 and wait for your command.
+
+In VSCode, you can set multiple breakpoints.
+Each breakpoint that you choose will stop the code from being executed before that line of code is run.
+For example, if you add a breakpoint to line 4, the code will stop running before line 4 is executed.
+
+Debugging toolbar
+When you're using a breakpoint, VSCode will display a toolbar that gives you access to the following tools:
+
+Continue: This will continue running the code until another breakpoint is hit.
+
+Step Over: This will move to the next line of code while still remaining in a paused state.
+
+Step Into: This will dive deeper into the current code being run. For example, it may dive into a function being called.
+
+Step Out: This will go up a level of invocation. For example, if Step Into is used to go into a function, it will go back up to the main execution.
+
+Restart: This will run the code again from the beginning.
+
+Stop: This will stop running the code.
+
+Each of these tools can be useful on its own. For now, focus on the first two.
+
+Continue
+The Continue button will cause the code to continue to run until it hits another breakpoint.
+This can be useful to get to a certain part of a loop or to simply skip ahead in the code.
+
+
+Using the Debug Console
+Breakpoints make it easy to dive deeply into code and inspect what's going on at a line-by-line level.
+The Debug Console also gives you access to the current scope of your running code, so that you can test out different approaches.
+
+Put another way, feel free to use the Debug Console while running your code to try to run lines, invoke functions, or log different statements.
+ In combination with the discovery tools on the left pane, it makes it much easier to know what is going on in your code.

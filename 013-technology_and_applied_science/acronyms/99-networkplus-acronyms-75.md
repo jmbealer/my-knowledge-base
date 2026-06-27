@@ -11,8 +11,6 @@ This reference categorizes essential acronyms for the Network+ exam.
 
 - **APC/UPC:** Angled/Ultra Physical Contact (Fiber polish)
 - **MMF/SMF:** Multimode / Single-mode Fiber
-- **NIC:** Network Interface Card
-- **STP/UTP:** Shielded / Unshielded Twisted Pair
 
 ## Wireless (802.11)
 

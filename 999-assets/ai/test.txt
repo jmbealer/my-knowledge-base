@@ -1,0 +1,54 @@
+#separator:tab
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:8
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AAA	Authentication, Authorization, and Accounting	Framework for controlling access, enforcing security policies, and auditing usage.	FFCAESPAAU
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AAAA	Authentication, Authorization, Accounting, and Auditing	Security framework adding auditing capabilities to access control systems.	SFAACTACS
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	ADF	Automatic Document Feeder	Hardware device feeding paper pages into scanners.	HDFPPIS
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AMD	Advanced Micro Devices, Inc.	Semiconductor company manufacturing processors and graphics cards.	SCMPAGC
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	APFS	Apple File System	Modern proprietary secure file system by apple.	MPSFSBA
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	ATX	Advanced Technology Extended	Standard form factor layout for computer motherboards.	SFFLFCM
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AP	Access Point	Hardware device connecting wireless hosts to networks.	HDCWHTN
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	APK	Android Package	Package file format used to install android.	PFFUTIA
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	ATA	Advanced Technology Attachment	Standard interface connecting storage drives to motherboards.	SICSDTM
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	ATM	Asynchronous Transfer Mode	High-speed network routing cell-based data packets.	HSNRCBDP
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AUP	Acceptable Use Policy	Policy document outlining rules for resource usage.	PDORFRU
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	BEC	Business Email Compromise	Scam spoofing business email to request payments.	SSBETRP
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	BSOD	Blue Screen of Death	Stop error screen displayed on windows crashes.	SESDOWC
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	BYOD	Bring Your Own Device	Policy permitting employee-owned devices in the workplace.	PPEODITW
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CAC	Calling-card Authorization Computer	Smart card token validating user identity credentials.	SCTVUIC
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CIFS	Common Internet File System	Network file sharing protocol utilized by windows.	NFSPUBW
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CMDB	Configuration Management Database	Database mapping it infrastructure components and relationships.	DMIICAR
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CNAME	Canonical Name	Dns database record mapping aliases to domains.	DDRMATD
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CAPTCHA	Completely Automated Public Turing Test to Tell Computers and Humans Apart	Challenge-response test verifying human web users.	CRTVHWU
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CDFS	Compact Disc File System	File system standard optimized for optical cds.	FSSOFOC
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CDMA	Code-Division Multiple Access	Cellular radio channel access method using codes.	CRCAMUC
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CERT	Computer Emergency Response Team	Organization analyzing and responding to security incidents.	OAARTSI
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CMD	Command Prompt	Command-line interpreter shell built into windows.	CLISBIW
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CMOS	Complementary Metal-Oxide Semiconductor	Battery-powered memory chip storing startup bios settings.	BPMCSSBS
+
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	CRL	Certificate Revocation List	List of revoked digital certificates tracking validation.	LORDCTV

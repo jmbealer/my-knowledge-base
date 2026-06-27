@@ -1,0 +1,6 @@
+#separator:tab
+#html:true
+#notetype column:1
+#deck column:2
+#tags column:8
+00 Basic (and reversed card and def) acronym	001.Acronyms::new-test	AC	Alternating Current	Electric current that periodically reverses its direction.	ECTPRID		

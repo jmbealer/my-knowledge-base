@@ -1,0 +1,320 @@
+- **Acronym - Spelled Out** 
+- A::Address
+    - A - Address: A unique identifier for a network device or resource.
+- AH::Authentication Header
+    - AH - Authentication Header: A protocol used to provide connectionless integrity and data origin
+    - authentication.
+    - AH (Authen�ca�on Header): A part of the IPsec protocol suite that provides authen�ca�on and integrity
+    - to the data.
+- API::Application Programming Interface
+    - API - Application Programming Interface: A set of tools and protocols for building and interacting
+    - with software applications.
+    - API (Applica�on Programming Interface): A set of func�ons and procedures allowing the crea�on of
+    - applica�ons that access the features or data of an opera�ng system, applica�on, or other services.
+- 
+- BGP::Border Gateway Protocol
+    - BGP - Border Gateway Protocol: A protocol used to exchange routing information between
+    - autonomous systems on the internet.
+        - BGP (Border Gateway Protocol): The protocol used to route informa�on across the internet.
+- BNC::Bayonet Neill–Concelman
+    - BNC - Bayonet Neill–Concelman: A type of connector used for coaxial cables.
+- BSSID::Basic Service Set Identifier
+    - BSSID - Basic Service Set Identifier: A unique identifier for a specific access point in a wireless
+    - network.
+- 
+- CAM 2::Content-addressable Memory
+    - CAM - Content-addressable Memory: A type of memory used in networking devices for fast data
+    - lookup.
+- CDN::Content Delivery Network
+    - CDN - Content Delivery Network: A network of servers that distribute content to users based on
+    - their geographic location.
+- CDP::Cisco Discovery Protocol
+    - CDP - Cisco Discovery Protocol: A proprietary protocol used by Cisco devices to share information
+    - with directly connected devices.
+- CIA::Confidentiality, Integrity, and Availability
+    - CIA - Confidentiality, Integrity, and Availability: A model used to guide policies for information
+    - security.
+    - CIA (Confiden�ality, Integrity, Availability): A model designed to guide policies for informa�on security
+    - within an organiza�on.
+- CIDR::Classless Inter-domain Routing
+    - CIDR - Classless Inter-domain Routing: A method for allocating IP addresses and routing IP
+    - packets.
+- CRC::Cyclical Redundancy Check
+    - CRC - Cyclic Redundancy Check: A method used to detect errors in data transmission.
+        - CRC (Cyclical Redundancy Check): An error‐detec�ng code commonly used in digital networks and
+        - storage devices to detect accidental changes to raw data.
+- 
+- DAC::Direct Attach Copper
+    - DAC - Direct Attach Copper: A type of cable used for short-range connections in data centers.
+- DAS::Direct-attached Storage
+    - DAS - Direct-attached Storage: A storage device that is directly connected to a server or
+    - workstation.
+- DCI::Data Center Interconnect
+    - DCI - Data Center Interconnect: Technologies used to connect and manage multiple data centers.
+- DNSSEC::Domain Name System Security Extensions
+    - DNSSEC - Domain Name System Security Extensions: A suite of extensions that add security to
+    - DNS.
+- DoH::DNS over Hypertext Transfer Protocol Secure
+    - DoH - DNS over Hypertext Transfer Protocol Secure: A protocol for performing DNS resolution via
+    - the HTTPS protocol.
+- DoT::DNS over Transport Layer Security
+    - DoT - DNS over Transport Layer Security: A protocol for encrypting DNS queries and responses to
+    - improve privacy and security.
+- DR::Disaster Recovery
+    - DR - Disaster Recovery: Strategies and processes for recovering from catastrophic events aƯecting
+    - IT systems.
+- 
+- EAPoL::Extensible Authentication Protocol over LAN
+    - EAPoL - Extensible Authentication Protocol over LAN: A network port authentication protocol used
+    - in wired and wireless networks.
+- EIGRP::Enhanced Interior Gateway Routing Protocol
+    - EIGRP - Enhanced Interior Gateway Routing Protocol: A Cisco proprietary routing protocol used to
+    - automate routing decisions and configuration.
+- EOS::End-of-support
+    - EOS - End-of-support: The date when a manufacturer will no longer provide support or updates for a
+    - product.
+- ESP::Encapsulated Security Payload
+    - ESP - Encapsulating Security Payload: A protocol used in IPSec to provide confidentiality, integrity,
+    - and authenticity of data packets.
+        - ESP (Encapsulated Security Payload): A component of IPsec used for providing confiden�ality, along with
+        - some authen�ca�on and integrity, to the data.
+- ESSID::Extended Service Set Identifier
+    - ESSID - Extended Service Set Identifier: The name of a wireless network in a multiple-access point
+    - configuration.
+- 
+- FC::Fibre Channel
+    - FC - Fibre Channel: A high-speed network technology primarily used for storage networking.
+- FHRP::First Hop Redundancy Protocol
+    - FHRP - First Hop Redundancy Protocol: Protocols that provide redundancy for IP gateways,
+    - ensuring availability.
+- 
+- GRE::Generic Routing Encapsulation
+    - GRE - Generic Routing Encapsulation: A tunneling protocol used to encapsulate a wide variety of
+    - network layer protocols.
+    - GRE (Generic Rou�ng Encapsula�on): A tunneling protocol developed by Cisco Systems that can
+    - encapsulate a wide variety of network layer protocols inside virtual point‐to‐point links or point‐to‐
+    - mul�point links over an Internet Protocol network.
+- 
+- IaC::Infrastructure as Code
+    - IaC - Infrastructure as Code: The process of managing and provisioning computing infrastructure
+    - through machine-readable scripts or code.
+        - IaC (Infrastructure as Code): The process of managing and provisioning computer data centers through
+        - machine‐readable defini�on files, rather than physical hardware configura�on or interac�ve
+        - configura�on tools.
+- ICS::Industrial Control System
+    - ICS - Industrial Control System: Systems used to control industrial processes, including SCADA,
+    - DCS, and PLCs.
+        - ICS (Industrial Control Systems): A general term that encompasses several types of control systems and
+        - associated instrumenta�on, which include the devices, systems, networks, and controls used to operate
+        - and/or automate industrial processes.
+- IDF::Intermediate Distribution Frame
+    - IDF - Intermediate Distribution Frame: A distribution point for network cables and equipment within
+    - a building.
+        - IDF (Intermediate Distribu�on Frame): A cable rack that interconnects and manages the
+        - telecommunica�ons wiring between an MDF and end‐user devices.
+- IIoT::Industrial Internet of Things
+    - IIoT - Industrial Internet of Things: The use of IoT technology in industrial sectors and applications.
+- IKE::Internet Key Exchange
+    - IKE - Internet Key Exchange: A protocol used to set up a secure, authenticated communication
+    - channel in IPSec.
+        - IKE (Internet Key Exchange): A protocol used in IPsec for establishing a Security Associa�on (SA) and
+        - cryptographic keys in an IP network.
+- IPAM::Internet Protocol Address Management
+    - IPAM - Internet Protocol Address Management: Tools and processes for planning, tracking, and
+    - managing IP address space.
+- IPSec::Internet Protocol Security
+    - IPSec - Internet Protocol Security: A suite of protocols used to secure Internet Protocol (IP)
+    - communications by authenticating and encrypting each IP packet.
+    - IPSec (Internet Protocol Security): A secure network protocol suite that authen�cates and encrypts the
+    - packets of data sent over an internet protocol network.
+- IS-IS::Intermediate System to Intermediate System
+    - IS-IS - Intermediate System to Intermediate System: A routing protocol used to move information
+    - eƯiciently within a computer network, a variant of the link-state routing protocol.
+- 
+- LACP::Link Aggregation Control Protocol
+    - LACP - Link Aggregation Control Protocol: A protocol used to combine multiple network
+    - connections in parallel to increase throughput and provide redundancy.
+- LDAPS::Lightweight Directory Access Protocol over SSL
+    - LDAPS - Lightweight Directory Access Protocol over SSL: A secure version of LDAP using SSL/TLS
+    - encryption.
+- LLDP::Link Layer Discovery Protocol
+    - LLDP - Link Layer Discovery Protocol: A protocol used by network devices to advertise their identity
+    - and capabilities to neighbors on the same local network.
+- 
+- MDF::Main Distribution Frame
+    - MDF - Main Distribution Frame: A central point in a network where cables converge and connect to
+    - switching equipment.
+        - MDF (Main Distribu�on Frame): A signal distribu�on frame for connec�ng equipment (inside plant) to
+        - cables and subscriber carrier equipment (outside plant).
+- MDIX::Medium Dependent Interface Crossover
+    - MDIX - Medium Dependent Interface Crossover: A network interface that automatically crosses
+    - over the transmit and receive pairs of a cable.
+- MIB::Management Information Base
+    - MIB - Management Information Base: A database used for managing the entities in a
+    - communication network.
+- MPO::Multifiber Push On
+    - MPO - Multifiber Push On: A type of fiber optic connector that allows for the connection of multiple
+    - fibers in a single interface.
+- MTBF::Mean Time Between Failure
+    - MTBF - Mean Time Between Failure: The predicted elapsed time between inherent failures of a
+    - system during operation.
+    - MTBF (Mean Time Between Failures): A measure of how reliable a hardware product or component is.
+- MTTR::Mean Time To Repair
+    - MTTR - Mean Time To Repair: The average time required to repair a failed component or device.
+- MTU::Maximum Transmission Unit
+    - MTU - Maximum Transmission Unit: The largest size of a packet or frame that can be sent in a
+    - network.
+        - MTU (Maximum Transmission Unit): The size of the largest packet that a network protocol can transmit.
+- 
+- NAC::Network Access Control
+    - NAC - Network Access Control: A security solution that controls access to a network based on
+    - policies, including authentication and compliance checks.
+        - NAC (Network Access Control): A security solu�on that enforces policy on devices that access networks
+        - to increase network visibility and reduce risk.
+- NFV::Network Functions Virtualization
+    - NFV - Network Functions Virtualization: A network architecture concept that uses virtualization to
+    - manage core networking functions via software.
+- NS::Name Server
+    - NS - Name Server: A server that maps domain names to IP addresses.
+- NTS::Network Time Security
+    - NTS - Network Time Security: An extension to NTP that adds cryptographic security features to
+    - protect time synchronization.
+- 
+- OSPF::Open Shortest Path First
+    - OSPF - Open Shortest Path First: A link-state routing protocol used to determine the best path for
+    - data through a network.
+    - OSPF (Open Shortest Path First): A rou�ng protocol for Internet Protocol (IP) networks.
+- OSI::Open Systems Interconnection
+    - OSI - Open Systems Interconnection: A conceptual model used to standardize communications
+    - functions in telecommunication and computing systems.
+- OT::Operational Technology
+    - OT - Operational Technology: Hardware and software that detects or causes changes through direct
+    - monitoring and control of physical devices, processes, and events.
+        - OT (Opera�onal Technology): Hardware and so�ware that detects or causes a change through the direct
+        - monitoring and/or control of physical devices, processes, and events in the enterprise.
+- 
+- PAT::Port Address Translation
+    - PAT - Port Address Translation: A type of NAT that maps multiple private IP addresses to a single
+    - public IP address using diƯerent ports.
+    - PAT (Port Address Transla�on): A feature of a network device that translates TCP or UDP
+    - communica�ons made between hosts on a private network and hosts on a public network.
+    - Laboratories' Public‐Key Cryptography Standards (PKCS) series, specifically PKCS #5 v2.0.
+- PCI DSS::Payment Card Industry Data Security Standards
+    - PCI DSS - Payment Card Industry Data Security Standards: A set of security standards designed to
+    - ensure that all companies that accept, process, store, or transmit credit card information maintain
+    - a secure environment.
+    - PCI DSS (Payment Card Industry Data Security Standard): A set of security standards designed to ensure
+    - that all companies that accept, process, store or transmit credit card informa�on maintain a secure
+    - environment.
+- PDU::Power Distribution Unit
+    - PDU - Power Distribution Unit: A device that distributes electric power to multiple devices, often
+    - used in data centers.
+    - PDU (Power Distribu�on Unit): A device fi�ed with mul�ple outputs designed to distribute electric
+    - power, especially to racks of computers and networking equipment located within a data center.
+- PSK::Pre-shared Key
+    - PSK - Pre-shared Key: A shared secret used for securing wireless networks, typically used in WPA or
+    - WPA2.
+        - PSK (Pre‐shared Key): A shared secret which was previously shared between the two par�es using some
+        - secure channel before it needs to be used.
+- PTP::Precision Time Protocol
+    - PTP - Precision Time Protocol: A protocol used to synchronize clocks throughout a computer
+    - network with high precision.
+- PTR::Pointer
+    - PTR - Pointer: A type of DNS record that maps an IP address to a domain name, often used in
+    - reverse DNS lookups.
+- 
+- QoS::Quality of Service
+    - QoS - Quality of Service: A set of techniques to manage network traƯic and ensure the performance
+    - of critical applications.
+- QSFP::Quad Small Form-factor Pluggable
+    - QSFP - Quad Small Form-factor Pluggable: A type of compact, hot-pluggable transceiver used for
+    - data communications applications.
+- 
+- RFID::Radio Frequency Identifier
+    - RFID - Radio Frequency Identifier: A technology that uses electromagnetic fields to automatically
+    - identify and track tags attached to objects.
+        - RFID (Radio Frequency Iden�fier): A technology that uses electromagne�c fields to automa�cally
+        - iden�fy and track tags a�ached to objects.
+- RIP::Routing Information Protocol
+    - RIP - Routing Information Protocol: One of the oldest distance-vector routing protocols used to
+    - determine the best route for data through a network.
+- RPO::Recovery Point Objective
+    - RPO - Recovery Point Objective: The maximum acceptable amount of data loss measured in time
+    - during a disaster.
+        - RPO (Recovery Point Objec�ve): The maximum acceptable amount of data loss measured in �me.
+- RSTP::Rapid Spanning Tree Protocol
+    - RSTP - Rapid Spanning Tree Protocol: An enhancement of the Spanning Tree Protocol (STP) that
+    - provides faster convergence in a network.
+- RX::Receiver
+    - RX - Receiver: A device or component that receives data or signals.
+- 
+- SASE::Secure Access Service Edge
+    - SASE - Secure Access Service Edge: A network architecture model that combines network security
+    - functions with WAN capabilities to support the secure access needs of organizations.
+    - SASE (Secure Access Service Edge): A network architecture that combines WAN capabili�es with
+    - comprehensive security func�ons.
+- SD-WAN::Software-defined Wide Area Network
+    - SD-WAN - Software-defined Wide Area Network: A virtual WAN architecture that allows enterprises
+    - to leverage any combination of transport services to securely connect users to applications.
+    - SD‐WAN (So�ware‐defined Wide Area Network): An approach to designing and deploying an enterprise
+    - WAN that uses so�ware‐defined networking to determine the most effec�ve way to route traffic to
+    - remote loca�ons.
+- SIP::Session Initiation Protocol
+    - SIP - Session Initiation Protocol: A protocol used to initiate, maintain, and terminate real-time
+    - sessions in IP networks, such as voice and video calls.
+- SIEM::Security Information and Event Management
+    - SIEM - Security Information and Event Management: A solution that provides real-time analysis of
+    - security alerts generated by network hardware and applications.
+        - SIEM (Security Informa�on and Event Management): So�ware solu�ons that provide real‐�me analysis
+        - of security alerts generated by applica�ons and network hardware.
+- SLAAC::Stateless Address Autoconfiguration
+    - SLAAC - Stateless Address Autoconfiguration: A method in IPv6 that allows devices to configure
+    - their own IP addresses automatically.
+- SOA::Start of Authority
+    - SOA - Start of Authority: A DNS record that provides information about the DNS zone and the
+    - authoritative server for that zone.
+- SSE::Security Service Edge
+    - SSE - Security Service Edge: A framework that combines multiple security services, such as SWG,
+    - CASB, and ZTNA, to protect users and data in the cloud.
+- SVI::Switch Virtual Interface
+    - SVI - Switch Virtual Interface: A virtual interface used to manage a switch and allow communication
+    - between VLANs.
+- 
+- TACACS+::Terminal Access Controller Access Control System Plus
+    - TACACS+ - Terminal Access Controller Access Control System Plus: A protocol used for centralized
+    - authentication, authorization, and accounting for users who access a network.
+    - TACACS+ (Terminal Access Controller Access Control System): A security applica�on that provides
+    - centralized valida�on of users a�emp�ng to gain access to a router or network access server.
+- TTL::Time to Live
+    - TTL - Time to Live: A value in an IP packet that indicates how long the packet should be allowed to
+    - remain in the network before being discarded.
+- TX::Transmitter
+    - TX - Transmitter: A device or component that sends data or signals.
+- TXT::Text
+    - TXT - Text: A type of DNS record used to store text information, often used for verification purposes.
+- 
+- VIP::Virtual IP
+    - VIP - Virtual IP: An IP address that is assigned to multiple devices, allowing them to share the same
+    - IP address in a load-balanced or failover configuration.
+- VLSM::Variable Length Subnet Mask
+    - VLSM - Variable Length Subnet Mask: A technique that allows for more eƯicient allocation of IP
+    - addresses by using diƯerent subnet masks within the same network.
+    - VLSM (Variable Length Subnet Masking): A technique that allows network administrators to divide an IP
+    - address space into different lengths.
+- VPC::Virtual Private Cloud
+    - VPC - Virtual Private Cloud: A secure and isolated private cloud hosted within a public cloud
+    - environment.
+    - VPC (Virtual Private Cloud): A secure, isolated private cloud hosted within a public cloud.
+- VXLAN::Virtual Extensible LAN
+    - VXLAN - Virtual Extensible LAN: A network virtualization technology that allows for the creation of
+    - large-scale virtualized networks over existing Layer 3 infrastructures.
+- 
+- WPS::Wi-Fi Protected Setup
+    - WPS - Wi-Fi Protected Setup: A network security standard that simplifies the process of connecting
+    - devices to a secure wireless network.
+- 
+- ZTA::Zero Trust Architecture
+    - ZTA - Zero Trust Architecture: A security model that assumes no implicit trust, requiring verification
+    - of every access attempt regardless of its origin.
+- 
+- 

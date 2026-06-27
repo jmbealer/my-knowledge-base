@@ -1,0 +1,1093 @@
+- 1.0 General Security Concepts
+    - 1.1 Compare and contrast various types of security controls.
+        - Categories
+            - **Technical:** Implemented via software, hardware, or firmware systems.
+            - **Managerial:** Strategic risk governance through policies and procedures.
+            - **Operational:** Processes executed by people during daily operations.
+            - **Physical:** Tangible, real-world measures protecting assets and safety.
+        - Control types
+            - **Preventive:** Stops a security incident before it occurs.
+            - **Deterrent:** Discourages intrusion by warning of negative consequences.
+            - **Detective:** Identifies and records events during or after occurrence.
+            - **Corrective:** Mitigates damage and restores systems after incidents.
+            - **Compensating:** Alternative substitute when primary control is not feasible.
+            - **Directive:** Mandates compliance through administrative rules and regulations.
+    - 1.2 Summarize fundamental security concepts.
+        - Confidentiality, Integrity, and Availability (CIA)
+            - **Confidentiality:** Preventing unauthorized access or disclosure of data.
+            - **Integrity:** Ensuring data remains accurate and unaltered.
+            - **Availability:** Ensuring data and systems are accessible when needed.
+        - Non-repudiation
+            - **Non-repudiation:** Proving a subject performed an action undeniably.
+        - Authentication, Authorization, and Accounting (AAA)
+            - Authenticating people
+            - Authenticating systems
+            - Authorization models
+            - **AAA:** Framework for verifying, granting, and tracking access.
+                - **Authenticating people:** Verifying a human user's claimed identity.
+                - **Authenticating systems:** Verifying a device or service's identity.
+                - **Authorization models:** Structured rules determining access rights and permissions.
+        - Gap analysis
+            - **Gap Analysis:** Comparing current security against the desired state.
+        - Zero Trust
+            - **Zero Trust:** "Never trust, always verify" security model.  
+            - Control Plane
+                - Adaptive identity
+                - Threat scope reduction
+                - Policy-driven access control
+                - Policy Administrator
+                - Policy Engine
+                - **Control Plane (The "Brain")**
+                    - **Control Plane:** Orchestrates access decisions and policy management.
+                        - **Adaptive identity:** Authentication requirements adjust based on risk context.
+                        - **Threat scope reduction:** Minimizing the potential attack surface.
+                        - **Policy-driven access control:** Access granted strictly based on defined rules.
+                        - **Policy Engine:** Component making the decision to grant access.
+                        - **Policy Administrator:** Component establishing the connection based on decisions.
+        - Data Plane
+            - Implicit trust zones
+            - Subject/System
+            - Policy Enforcement Point
+            - **Data Plane (The "Action")**
+                - **Data Plane:** Where actual application data flow occurs.
+                    - **Implicit trust zones:** Trusted network areas; eliminated in Zero Trust.
+                    - **Subject/System:** The entity requesting access to a resource.
+                    - **Policy Enforcement Point:** Intercepts traffic to enforce access decisions.
+        - Physical security
+            - Bollards
+            - Access control vestibule
+            - Fencing
+            - Video surveillance
+            - Security guard
+            - Access badge
+            - Lighting
+            - **Physical security:** Protecting assets from tangible, real-world threats.
+                - **Bollards:** Sturdy posts preventing vehicle ramming attacks.
+                - **Access control vestibule:** Double-door system restricting entry to prevent tailgating.
+                - **Fencing:** Perimeter barrier defining boundaries and deterring entry.
+                - **Video surveillance:** Monitoring and recording visual activity (CCTV).
+                - **Security guard:** Human presence for monitoring and intervention.
+                - **Access badge:** Physical token granting entry via a reader.
+                - **Lighting:** Illuminating areas to deter and detect intruders.
+            - Sensors
+                - Infrared
+                - Pressure
+                - Microwave
+                - Ultrasonic
+                - **Sensors:** Devices detecting physical environmental changes.
+                    - **Infrared:** Detects motion via heat signature changes.
+                    - **Pressure:** Detects weight application on a surface.
+                    - **Microwave:** Detects movement via radio wave reflection.
+                    - **Ultrasonic:** Detects motion via high-frequency sound waves.
+        - Deception and disruption technology
+            - Honeypot
+            - Honeynet
+            - Honeyfile
+            - Honeytoken
+            - **Deception and disruption:** Techniques to confuse, trap, or slow attackers.
+                - **Honeypot:** Single decoy system luring attackers away.
+                - **Honeynet:** Network of decoys simulating a real environment.
+                - **Honeyfile:** Decoy file triggering alerts when accessed.
+                - **Honeytoken:** Fake data element tracking attacker activity.
+    - 1.3 Explain the importance of change management processes and the impact to security.
+        - Business processes impacting security operation
+            - Approval process
+            - Ownership
+            - Stakeholders
+            - Impact analysis
+            - Test results
+            - Backout plan
+            - Maintenance window
+            - Standard operating procedure
+            - **Approval process:** Formal authorization required before implementing changes.
+            - **Ownership:** Individual or entity accountable for a specific asset.
+            - **Stakeholders:** Individuals interested in or affected by the change.
+            - **Impact analysis:** Assessing potential consequences before implementing a change.
+            - **Test results:** Proof that changes function correctly without errors.
+            - **Backout plan:** Procedure to revert changes if implementation fails.
+            - **Maintenance window:** Scheduled timeframe authorized for performing system changes.
+            - **Standard operating procedure:** Step-by-step instructions for routine tasks.
+        - Technical implications
+            - Allow lists/deny lists
+            - Restricted activities
+            - Downtime
+            - Service restart
+            - Application restart
+            - Legacy applications
+            - Dependencies
+            - **Allow lists/deny lists:** Explicitly permitting or blocking specific traffic or software.
+            - **Restricted activities:** High-risk actions prohibited during specific times.
+            - **Downtime:** Period when a system or service is unavailable.
+            - **Service restart:** Stopping and starting background system processes.
+            - **Application restart:** Closing and reopening software to apply updates.
+            - **Legacy applications:** Outdated software still used for business needs.
+            - **Dependencies:** Components requiring other components to function correctly.
+        - Documentation
+            - Updating diagrams
+            - Updating policies/procedures
+            - **Updating diagrams:** Revising visuals to match the current network state.
+            - **Updating policies/procedures:** Modifying rules to reflect new operational realities.
+        - Version control
+            - **Version control:** System tracking and managing changes to files.
+    - 1.4 Explain the importance of using appropriate cryptographic solutions.
+        - Public key infrastructure (PKI)
+            - Public key
+            - Private key
+            - Key escrow
+            - **PKI:** Framework managing digital keys and certificates.
+                - **Public key:** Sharable key used for encryption or verification.
+                - **Private key:** Secret key used for decryption or signing. 
+                - **Key escrow:** Storing keys with a third party for recovery.
+        - Encryption
+            - Level
+                - o Full-disk
+                - o Partition
+                - o File
+                - o Volume
+                - o Database
+                - o Record
+                - **Full-disk:** Encrypts the entire physical drive and OS.
+                - **Partition:** Encrypts specific logical sections of a drive.
+                - **File:** Encrypts individual files rather than whole systems.
+                - **Volume:** Encrypts a specific logical drive or container.
+                - **Database:** Encrypts the entire database structure and contents.
+                - **Record:** Encrypts specific rows or entries in databases.
+            - Transport/communication
+            - Asymmetric
+            - Symmetric
+            - Key exchange
+            - Algorithms
+            - Key length
+            - **Transport/communication:** Encrypting data moving across a network (data-in-transit).
+            - **Asymmetric:** Uses key pairs: one public, one private.
+            - **Symmetric:** Uses the same key for encryption and decryption.
+            - **Key exchange:** Secure method for parties to swap keys.
+            - **Algorithms:** Mathematical formulas performing the encryption process.
+            - **Key length:** Number of bits determining the key's strength.
+        - Tools
+            - Trusted Platform Module (TPM)
+            - Hardware security module (HSM)
+            - Key management system
+            - Secure enclave
+            - **Trusted Platform Module (TPM):** Motherboard chip storing keys and ensuring integrity.
+            - **Hardware security module (HSM):** Dedicated physical appliance for secure key management.
+            - **Key management system:** Software platform for managing the key lifecycle.
+            - **Secure enclave:** CPU-isolated area protecting sensitive memory and code.
+        - Obfuscation
+            - Steganography
+            - Tokenization
+            - Data masking
+            - **Obfuscation:** Making code or data difficult to understand.
+                - **Steganography:** Hiding secret data within innocent-looking files.
+                - **Tokenization:** Replacing sensitive data with non-sensitive unique symbols.
+                - **Data masking:** Hiding specific characters of data for display.
+        - Hashing
+        - Salting
+        - Digital signatures
+        - Key stretching
+        - Blockchain
+        - Open public ledger
+        - **Hashing:** One-way conversion of data to fixed string.
+        - **Salting:** Adding random data to passwords before hashing.
+        - **Digital signatures:** Cryptographic proof of message origin and integrity.
+        - **Key stretching:** Slowing down processing to strengthen weak keys.
+        - **Blockchain:** Decentralized, immutable chain of transaction blocks.
+        - **Open public ledger:** Transparent transaction record accessible to everyone.
+        - Certificates
+            - Certificate authorities
+            - Certificate revocation lists (CRLs)
+            - Online Certificate Status Protocol (OCSP)
+            - Self-signed
+            - Third-party
+            - Root of trust
+            - Certificate signing request (CSR) generation
+            - Wildcard
+            - **Certificates:** Digital document binding a key to identity.
+                - **Certificate authorities:** Trusted entities that issue and verify certificates.
+                - **Certificate revocation lists (CRLs):** List of invalid certificates published by CA.
+                - **OCSP:** Real-time protocol checking if certificate is valid.
+                - **Self-signed:** Signed by the creator, not a CA.
+                - **Third-party:** Signed by a trusted external Certificate Authority.
+                - **Root of trust:** The ultimate, foundational trust anchor in PKI.
+                - **CSR generation:** Request sent to CA to apply for certificate.
+                - **Wildcard:** Certificate covering a domain and all subdomains.
+- 2.0 Threats, Vulnerabilities, and Mitigations
+    - 2.1 Compare and contrast common threat actors and motivations.
+        - Threat actors
+            - Nation-state
+            - Unskilled attacker
+            - Hacktivist
+            - Insider threat
+            - Organized crime
+            - Shadow IT
+            - **Nation-state:** Government-backed actors targeting national security interests.
+            - **Unskilled attacker:** Low-skill individuals using pre-made tools or scripts.
+            - **Hacktivist:** Attackers motivated by social or political ideology.
+            - **Insider threat:** Trusted users exploiting authorized access to harm.
+            - **Organized crime:** Professional criminal groups focused on financial gain.
+            - **Shadow IT:** Unapproved technology used without IT department knowledge.
+        - Attributes of actors
+            - Internal/external
+            - Resources/funding
+            - Level of sophistication/capability
+            - **Internal/external:** Originates from inside or outside the organization.
+            - **Resources/funding:** Financial and material backing available to the attacker.
+            - **Level of sophistication/capability:** The technical skill and complexity of the attacker.
+        - Motivations
+            - Data exfiltration
+            - Espionage
+            - Service disruption
+            - Blackmail
+            - Financial gain
+            - Philosophical/political beliefs
+            - Ethical
+            - Revenge
+            - Disruption/chaos
+            - War
+            - **Data exfiltration:** Unauthorized transfer of data out of a network.
+            - **Espionage:** Spying to obtain secret government or trade information.
+            - **Service disruption:** Intentionally interrupting the availability of systems or networks.
+            - **Blackmail:** Coercing victims by threatening to reveal compromising information.
+            - **Financial gain:** Attacking primarily to generate monetary profit.
+            - **Philosophical/political beliefs:** Actions driven by ideology or personal convictions.
+            - **Ethical:** Actions intended to help or improve security ("White Hat").
+            - **Revenge:** Retaliatory attacks seeking payback for perceived wrongs.
+            - **Disruption/chaos:** Causing confusion or disorder for its own sake.
+            - **War:** Cyber operations conducting military strategy or sabotage.
+    - 2.2 Explain common threat vectors and attack surfaces.
+        - Message-based
+            - Email
+            - Short Message Service (SMS)
+            - Instant messaging (IM)
+            - **Email:** Attack delivery via electronic mail messages.
+            - **Short Message Service (SMS):** Attack delivery via mobile text messages.
+            - **Instant messaging (IM):** Attack delivery via real-time chat applications.
+        - Image-based
+        - File-based
+        - Voice call
+        - Removable device
+        - **Image-based:** Malware embedded within digital image files.
+        - **File-based:** Malware delivered via downloadable files or attachments.
+        - **Voice call:** Attacks conducted over phone or VoIP systems.
+        - **Removable device:** Malware introduced via USBs or external drives.
+        - Vulnerable software
+            - Client-based vs. agentless
+            - **Client-based:** Vulnerabilities within specific installed software agents.
+            - **Agentless:** Vulnerabilities exploited without installing local software.
+        - Unsupported systems and applications
+            - **Unsupported systems:** Software no longer receiving manufacturer security updates.
+        - Unsecure networks
+            - Wireless
+            - Wired
+            - Bluetooth
+            - **Wireless:** Attacks exploiting Wi-Fi radio signals.
+            - **Wired:** Attacks requiring physical connection to cables.
+            - **Bluetooth:** Attacks exploiting short-range wireless device pairing.
+        - Open service ports
+            - **Open service ports:** Network endpoints accepting traffic without restriction.
+        - Default credentials
+            - **Default credentials:** Standard usernames/passwords left unchanged by administrators.
+        - Supply chain
+            - Managed service providers (MSPs)
+            - Vendors
+            - Suppliers
+            - **Managed service providers (MSPs):** Third-party companies managing IT services for clients.
+            - **Vendors:** Sellers providing finished hardware or software products.
+            - **Suppliers:** Entities providing raw materials or components.
+        - Human vectors/social engineering
+            - Phishing
+            - Vishing
+            - Smishing
+            - Misinformation/disinformation
+            - Impersonation
+            - Business email compromise
+            - Pretexting
+            - Watering hole
+            - Brand impersonation
+            - Typosquatting
+            - **Phishing:** Deceptive emails inducing users to reveal information.
+            - **Vishing:** Phishing attempts conducted via voice phone calls.
+            - **Smishing:** Phishing attempts conducted via SMS text messages.
+            - **Misinformation/disinformation:** Spreading false info to deceive or confuse.
+            - **Impersonation:** Pretending to be another person or entity.
+            - **Business email compromise (BEC):** Compromising legitimate email accounts to conduct fraud.
+            - **Pretexting:** Fabricating a scenario to gain victim's trust.
+            - **Watering hole:** Infecting websites frequently visited by targets.
+            - **Brand impersonation:** Mimicking a trusted company to trick users.
+            - **Typosquatting:** Registering domains visually similar to popular sites.
+    - 2.3 Explain various types of vulnerabilities.
+        - Application
+            - Memory injection
+            - Buffer overflow
+            - Race conditions
+                - Time-of-check (TOC)
+                - Time-of-use (TOU)
+            - Malicious update
+            - **Memory injection:** Inserting malicious code into running application memory.
+            - **Buffer overflow:** Writing more data than a memory block holds.
+            - **Race conditions:** Outcome depends on uncontrollable event timing sequence.
+                - **Time-of-check (TOC):** The moment the system validates a request.
+                - **Time-of-use (TOU):** The moment the system acts on resources.
+            - **Malicious update:** Legitimate-looking software patch containing hidden malware.
+        - Operating system (OS)-based
+            - **Operating system (OS)-based:** Flaws specific to the underlying system software.
+        - Web-based
+            - Structured Query Language injection (SQLi)
+            - Cross-site scripting (XSS)
+            - **Web-based:** Flaws within web applications or browsers.
+                - **SQL injection (SQLi):** Injecting queries to manipulate databases via input.
+                - **Cross-site scripting (XSS):** Injecting malicious scripts into trusted websites.
+        - Hardware
+            - Firmware
+            - End-of-life
+            - Legacy
+            - **Firmware:** Software permanently programmed into hardware read-only memory.
+            - **End-of-life:** Vendor stops supporting or updating the product.
+            - **Legacy:** Outdated technology still in use, often insecure.
+        - Virtualization
+            - Virtual machine (VM) escape
+            - Resource reuse
+            - **Virtualization:** Creating virtual versions of physical computing resources.
+                - **Virtual machine (VM) escape:** Breaking out of VM to access host.
+                - **Resource reuse:** Data persisting after memory is supposedly freed.
+        - Cloud-specific
+            - **Cloud-specific:** Vulnerabilities unique to shared cloud computing environments.
+        - Supply chain
+            - Service provider
+            - Hardware provider
+            - Software provider
+            - **Supply chain:** Risks inherited from third-party vendors and products.
+                - **Service provider:** External entity delivering IT or business services.
+                - **Hardware provider:** Manufacturer supplying physical components or devices.
+                - **Software provider:** Developer supplying applications or code libraries.
+        - Cryptographic
+            - **Cryptographic:** Flaws in encryption algorithms or implementation.
+        - Misconfiguration
+            - **Misconfiguration:** Incorrectly set security settings leaving gaps.
+        - Mobile device
+            - Side loading
+            - Jailbreaking
+            - **Mobile device:** Risks specific to smartphones and tablets.
+                - **Side loading:** Installing apps from unofficial sources.
+                - **Jailbreaking:** Removing manufacturer restrictions on mobile devices.
+        - Zero-day
+            - **Zero-day:** Vulnerability unknown to the vendor or developer.
+    - 2.4 Given a scenario, analyze indicators of malicious activity.
+        - Malware attacks
+            - Ransomware
+            - Trojan
+            - Worm
+            - Spyware
+            - Bloatware
+            - Virus
+            - Keylogger
+            - Logic bomb
+            - Rootkit
+            - **Ransomware:** Malware demanding payment to restore data access.
+            - **Trojan:** Malware disguised as legitimate, harmless software.
+            - **Worm:** Self-replicating malware spreading independently across networks.
+            - **Spyware:** Malware secretly recording user activity and data.
+            - **Bloatware:** Unwanted, pre-installed software consuming system resources.
+            - **Virus:** Malicious code attaching to host files to replicate.
+            - **Keylogger:** Software recording keystrokes to steal credentials.
+            - **Logic bomb:** Malicious code triggered by specific conditions or time.
+            - **Rootkit:** Malware providing privileged access while hiding itself.
+        - Physical attacks
+            - Brute force
+            - Radio frequency identification (RFID) cloning
+            - Environmental
+            - **Brute force:** Forcing entry through physical barriers or locks.
+            - **RFID cloning:** Copying data from radio frequency identification chips.
+            - **Environmental:** Manipulating temperature, power, or humidity to damage systems.
+        - Network attacks
+            - Distributed denial-of-service (DDoS)
+                - Amplified
+                - Reflected
+                - **Distributed denial-of-service (DDoS):** Overwhelming a target with traffic from many sources.
+                    - **Amplified:** Increasing traffic volume via response-heavy protocols.
+                    - **Reflected:** Spoofing victim IP to solicit floods of responses.
+            - Domain Name System (DNS) attacks
+            - Wireless
+            - On-path
+            - Credential replay
+            - Malicious code
+            - **DNS attacks:** Manipulating domain resolution to redirect traffic.
+            - **Wireless:** Exploiting vulnerabilities in radio-based network communications.
+            - **On-path:** Intercepting and altering communications between two parties.
+            - **Credential replay:** Capturing and reusing valid login data.
+            - **Malicious code:** Harmful scripts or programs designed to damage.
+        - Application attacks
+            - Injection
+            - Buffer overflow
+            - Replay
+            - Privilege escalation
+            - Forgery
+            - Directory traversal
+            - **Injection:** Inserting malicious input to manipulate application execution.
+            - **Buffer overflow:** Overwriting memory bounds to crash or control execution.
+            - **Replay:** Resending captured data to impersonate legitimate user.
+            - **Privilege escalation:** Gaining higher access rights than originally authorized.
+            - **Forgery:** Falsifying data or signatures to deceive systems.
+            - **Directory traversal:** Accessing unauthorized files by climbing directory trees.
+        - Cryptographic attacks
+            - Downgrade
+            - Collision
+            - Birthday
+            - **Downgrade:** Forcing system to use weaker, older security protocols.
+            - **Collision:** Two distinct inputs producing the same hash value.
+            - **Birthday:** Exploiting probability to find hash collisions faster.
+        - Password attacks
+            - Spraying
+            - Brute force
+            - **Spraying:** Trying one common password against many accounts.
+            - **Brute force:** Trying all possible combinations to guess passwords.
+        - Indicators
+            - Account lockout
+            - Concurrent session usage
+            - Blocked content
+            - Impossible travel
+            - Resource consumption
+            - Resource inaccessibility
+            - Out-of-cycle logging
+            - Published/documented
+            - Missing logs
+            - **Account lockout:** Access disabled after multiple failed login attempts.
+            - **Concurrent session usage:** Multiple simultaneous logins using the same credentials.
+            - **Blocked content:** Firewall or filter preventing access to specific data.
+            - **Impossible travel:** Logins from geographically distant locations too quickly.
+            - **Resource consumption:** Abnormal usage of CPU, memory, or bandwidth.
+            - **Resource inaccessibility:** Systems or data becoming unavailable to legitimate users.
+            - **Out-of-cycle logging:** Events recorded outside normal operational hours.
+            - **Published/documented:** Threat indicators listed in public security intelligence feeds.
+            - **Missing logs:** Gaps in records indicating potential tampering or deletion.
+    - 2.5 Explain the purpose of mitigation techniques used to secure the enterprise.
+        - Segmentation
+            - **Segmentation:** Dividing networks to isolate traffic and limit spread.
+        - Access control
+            - Access control list (ACL)
+            - Permissions
+        - **Access control:** Regulating who or what can view resources.
+            - **Access control list (ACL):** Table of rules defining rights for users.
+            - **Permissions:** Specific actions a user is allowed to perform.
+        - Application allow list
+            - **Application allow list:** Only pre-approved software can run on systems.  
+        - Isolation
+        - Patching
+        - Encryption
+        - Monitoring
+        - Least privilege
+        - Configuration enforcement
+        - Decommissioning
+        - **Isolation:** Separating systems entirely to contain potential compromises.
+        - **Patching:** Applying updates to fix security vulnerabilities.
+        - **Encryption:** Encoding data so only authorized parties can read.
+        - **Monitoring:** Continuous observation of systems for suspicious activity.
+        - **Least privilege:** Granting only minimum necessary access rights.
+        - **Configuration enforcement:** Automating settings to ensure compliance with standards.
+        - **Decommissioning:** Securely removing and destroying old systems or data.
+        - Hardening techniques
+            - Encryption
+            - Installation of endpoint protection
+            - Host-based firewall
+            - Host-based intrusion prevention system (HIPS)
+            - Disabling ports/protocols
+            - Default password changes
+            - Removal of unnecessary software
+            - **Hardening:** Reducing attack surface by securing system configurations.
+            - **Encryption (Host):** Protecting local data at rest on the device.
+            - **Installation of endpoint protection:** Deploying antivirus/antimalware directly on host devices.
+            - **Host-based firewall:** Software controlling traffic entering/leaving a single device.
+            - **Host-based intrusion prevention system (HIPS):** Detects and blocks malicious activity on a host.
+            - **Disabling ports/protocols:** Turning off unused network services to reduce risk.
+            - **Default password changes:** Replacing vendor-set credentials with secure, unique ones.
+            - **Removal of unnecessary software:** Uninstalling unused apps to eliminate potential vulnerabilities.
+- 3.0 Security Architecture
+    - 3.1 Compare and contrast security implications of different architecture models.
+        - Architecture and infrastructure concepts
+            - Cloud
+                - o Responsibility matrix
+                - o Hybrid considerations
+                - o Third-party vendors
+                - **Cloud:** On-demand delivery of computing services over the internet.
+                    - **Responsibility matrix:** Defines security duties shared between provider and customer.
+                    - **Hybrid considerations:** Challenges of securing mixed on-prem and cloud environments.
+                    - **Third-party vendors:** External partners supplying services, increasing supply chain risk.
+            - Infrastructure as code (IaC)
+            - Serverless
+            - Microservices
+            - **Infrastructure as code (IaC):** Managing infrastructure using machine-readable definition files.
+            - **Serverless:** Executing code without managing the underlying servers.
+            - **Microservices:** Applications built as collections of small, independent services.
+            - Network infrastructure
+                - Physical isolation
+                    - Air-gapped
+                - Logical segmentation
+                - Software-defined networking (SDN)
+                - **Physical isolation (Air-gapped):** Physically disconnecting a system from all other networks.
+                - **Logical segmentation:** Separating network traffic virtually using software or VLANs.
+                - **Software-defined networking (SDN):** Managing network control via software, distinct from hardware.
+            - On-premises
+            - Centralized vs. decentralized
+            - **On-premises:** Infrastructure located physically within the organization's own facilities.
+            - **Centralized:** Management and security controlled from a single point.
+            - **Decentralized:** Management distributed across multiple local points or sites.
+            - Containerization
+                - **Containerization:** Packaging code and dependencies to run reliably anywhere.
+            - Virtualization
+                - **Virtualization:** Creating virtual versions of hardware to run multiple OSs.
+            - IoT
+            - Industrial control systems (ICS)/supervisory control and data acquisition (SCADA)
+            - Real-time operating system (RTOS)
+            - Embedded systems
+            - High availability
+            - **IoT:** Network of physical objects embedded with sensors/software.
+            - **Industrial control systems (ICS)/SCADA:** Systems monitoring and controlling industrial processes and infrastructure.
+            - **Real-time operating system (RTOS):** OS processing data with strict, immediate timing requirements.
+            - **Embedded systems:** Specialized computing systems dedicated to specific tasks.
+            - **High availability:** Systems designed to operate continuously without failure.
+        - Considerations
+            - Availability
+            - Resilience
+            - Cost
+            - Responsiveness
+            - Scalability
+            - Ease of deployment
+            - Risk transference
+            - Ease of recovery
+            - Patch availability
+            - Inability to patch
+            - Power
+            - Compute
+            - **Availability:** Ensuring systems are up and accessible when needed.
+            - **Resilience:** Ability to withstand and recover from adverse conditions.
+            - **Cost:** Financial resources required for implementation and maintenance.
+            - **Responsiveness:** Speed at which a system reacts to inputs.
+            - **Scalability:** Ability to handle increased workloads by adding resources.
+            - **Ease of deployment:** Effort required to install, configure, and launch systems.
+            - **Risk transference:** Shifting financial impact of risk to third parties.
+            - **Ease of recovery:** Speed and simplicity of restoring operations after failure.
+            - **Patch availability:** Existence of vendor updates to fix vulnerabilities.
+            - **Inability to patch:** Systems that cannot be updated (e.g., legacy/embedded).
+            - **Power:** Energy supply required to run infrastructure hardware.
+            - **Compute:** Processing resources (CPU/RAM) required for workload execution.
+    - 3.2 Given a scenario, apply security principles to secure enterprise infrastructure.
+        - Infrastructure considerations
+            - Device placement
+            - Security zones
+            - Attack surface
+            - Connectivity
+            - Failure modes
+                - o Fail-open
+                - o Fail-closed
+            - Device attribute
+                - o Active vs. passive
+                - o Inline vs. tap/monitor
+            - Network appliances
+                - o Jump server
+                - o Proxy server
+                - o Intrusion prevention system (IPS)/intrusion detection system (IDS)
+                - o Load balancer
+                - o Sensors
+            - Port security
+                - o 802.1X
+                - o Extensible Authentication Protocol (EAP)
+            - Firewall types
+                - o Web application firewall (WAF)
+                - o Unified threat management (UTM)
+                - o Next-generation firewall (NGFW)
+                - o Layer 4/Layer 7
+        - Secure communication/access
+            - Virtual private network (VPN)
+            - Remote access
+            - Tunneling
+                - o Transport Layer Security (TLS)
+                - o Internet protocol security (IPSec)
+            - Software-defined wide area network (SD-WAN)
+            - Secure access service edge (SASE)
+        - Selection of effective controls
+    - 3.3 Compare and contrast concepts and strategies to protect data.
+        - Data types
+            - Regulated
+            - Trade secret
+            - Intellectual property
+            - Legal information
+            - Financial information
+            - Human- and non-human-readable
+        - Data classifications
+            - Sensitive
+            - Confidential
+            - Public
+            - Restricted
+            - Private
+            - Critical
+        - General data considerations
+            - Data states
+                - Data at rest
+                - Data in transit
+                - Data in use
+            - Data sovereignty
+            - Geolocation
+        - Methods to secure data
+            - Geographic restrictions
+            - Encryption
+            - Hashing
+            - Masking
+            - Tokenization
+            - Obfuscation
+            - Segmentation
+            - Permission restrictions
+    - 3.4 Explain the importance of resilience and recovery in security architecture.
+        - High availability
+            - Load balancing vs. clustering
+        - Site considerations
+            - Hot
+            - Cold
+            - Warm
+            - Geographic dispersion
+        - Platform diversity
+        - Multi-cloud systems
+        - Continuity of operations
+        - Capacity planning
+            - People
+            - Technology
+            - Infrastructure
+        - Testing
+            - Tabletop exercises
+            - Fail over
+            - Simulation
+            - Parallel processing
+        - Backups
+            - Onsite/offsite
+            - Frequency
+            - Encryption
+            - Snapshots
+            - Recovery
+            - Replication
+            - Journaling
+        - Power
+            - Generators
+            - Uninterruptible power supply (UPS)
+- 4.0 Security Operations
+    - 4.1 Given a scenario, apply common security techniques to computing resources.
+        - Secure baselines
+            - Establish
+            - Deploy
+            - Maintain
+        - Hardening targets
+            - Mobile devices
+            - Workstations
+            - Switches
+            - Routers
+            - Cloud infrastructure
+            - Servers
+            - ICS/SCADA
+            - Embedded systems
+            - RTOS
+            - IoT devices
+        - Wireless devices
+            - Installation considerations
+                - Site surveys
+                - Heat maps
+        - Mobile solutions
+            - Mobile device management (MDM)
+            - Deployment models
+                - Bring your own device (BYOD)
+                - Corporate-owned, personally enabled (COPE)
+                - Choose your own device (CYOD)
+            - Connection methods
+                - Cellular
+                - Wi-Fi
+                - Bluetooth
+        - Wireless security settings
+            - Wi-Fi Protected Access 3 (WPA3)
+            - AAA/Remote Authentication Dial-In User Service (RADIUS)
+            - Cryptographic protocols
+            - Authentication protocols
+        - Application security
+            - Input validation
+            - Secure cookies
+            - Static code analysis
+            - Code signing
+        - Sandboxing
+        - Monitoring
+    - 4.2 Explain the security implications of proper hardware, software, and data asset management.
+        - Acquisition/procurement process
+        - Assignment/accounting
+            - Ownership
+            - Classification
+        - Monitoring/asset tracking
+            - Inventory
+            - Enumeration
+        - Disposal/decommissioning
+            - Sanitization
+            - Destruction
+            - Certification
+            - Data retention
+    - 4.3 Explain various activities associated with vulnerability management.
+        - Identification methods
+            - Vulnerability scan
+            - Application security
+                - Static analysis
+                - Dynamic analysis
+                - Package monitoring
+            - Threat feed
+                - Open-source intelligence (OSINT)
+                - Proprietary/third-party
+                - Information-sharing organization
+                - Dark web
+            - Penetration testing
+            - Responsible disclosure program
+                - o Bug bounty program
+            - System/process audit
+        - Analysis
+            - Confirmation
+                - o False positive
+                - o False negative
+            - Prioritize
+            - Common Vulnerability Scoring System (CVSS)
+            - Common Vulnerability Enumeration (CVE)
+            - Vulnerability classification
+            - Exposure factor
+            - Environmental variables
+            - Industry/organizational impact
+            - Risk tolerance
+        - Vulnerability response and remediation
+            - Patching
+            - Insurance
+            - Segmentation
+            - Compensating controls
+            - Exceptions and exemptions
+        - Validation of remediation
+            - Rescanning
+            - Audit
+            - Verification
+        - Reporting
+    - 4.4 Explain security alerting and monitoring concepts and tools.
+        - Monitoring computing resources
+            - Systems
+            - Applications
+            - Infrastructure
+        - Activities
+            - Log aggregation
+            - Alerting
+            - Scanning
+            - Reporting
+            - Archiving
+            - Alert response and remediation/validation
+                - o Quarantine
+                - o Alert tuning
+        - Tools
+            - Security Content Automation Protocol (SCAP)
+            - Benchmarks
+            - Agents/agentless
+            - Security information and event management (SIEM)
+            - Antivirus
+            - Data loss prevention (DLP)
+            - Simple Network Management Protocol (SNMP) traps
+            - NetFlow
+            - Vulnerability scanners
+    - 4.5 Given a scenario, modify enterprise capabilities to enhance security.
+        - Firewall
+            - Rules
+            - Access lists
+            - Ports/protocols
+            - Screened subnets
+        - IDS/IPS
+            - Trends
+            - Signatures
+        - Web filter
+            - Agent-based
+            - Centralized proxy
+            - Universal Resource Locator (URL) scanning
+            - Content categorization
+            - Block rules
+            - Reputation
+        - Operating system security
+            - Group Policy
+            - SELinux
+        - Implementation of secure protocols
+            - Protocol selection
+            - Port selection
+            - Transport method
+        - DNS filtering
+        - Email security
+            - Domain-based Message Authentication Reporting and Conformance (DMARC)
+            - DomainKeys Identified Mail (DKIM)
+            - Sender Policy Framework (SPF)
+            - Gateway
+        - File integrity monitoring
+        - DLP
+        - Network access control (NAC)
+        - Endpoint detection and response (EDR)/extended detection and response (XDR)
+        - User behavior analytics
+    - 4.6 Given a scenario, implement and maintain identity and access management.
+        - Provisioning/de-provisioning user accounts
+        - Permission assignments and implications
+        - Identity proofing
+        - Federation
+        - Single sign-on (SSO)
+            - Lightweight Directory Access Protocol (LDAP)
+            - Open authorization (OAuth)
+            - Security Assertions Markup Language (SAML)
+        - Interoperability
+        - Attestation
+        - Access controls
+            - Mandatory
+            - Discretionary
+            - Role-based
+            - Rule-based
+            - Attribute-based
+            - Time-of-day restrictions
+            - Least privilege
+        - Multifactor authentication
+            - Implementations
+                - Biometrics
+                - Hard/soft authentication tokens
+                - Security keys
+            - Factors
+                - Something you know
+                - Something you have
+                - Something you are
+                - Somewhere you are
+        - Password concepts
+            - Password best practices
+                - Length
+                - Complexity
+                - Reuse
+                - Expiration
+                - Age
+            - Password managers
+            - Passwordless
+        - Privileged access management tools
+            - Just-in-time permissions
+            - Password vaulting
+            - Ephemeral credentials
+    - 4.7 Explain the importance of automation and orchestration related to secure operations.
+        - Use cases of automation and scripting
+            - User provisioning
+            - Resource provisioning
+            - Guard rails
+            - Security groups
+            - Ticket creation
+            - Escalation
+            - Enabling/disabling services and access
+            - Continuous integration and testing
+            - Integrations and Application programming interfaces (APIs)
+        - Benefits
+            - Effciency/time saving
+            - Enforcing baselines
+            - Standard infrastructure configurations
+            - Scaling in a secure manner
+            - Employee retention
+            - Reaction time
+            - Workforce multiplier
+        - Other considerations
+            - Complexity
+            - Cost
+            - Single point of failure
+            - Technical debt
+            - Ongoing supportability
+    - 4.8 Explain appropriate incident response activities.
+        - Process
+            - Preparation
+            - Detection
+            - Analysis
+            - Containment
+            - Eradication
+            - Recovery
+            - Lessons learned
+        - Training
+        - Testing
+            - Tabletop exercise
+            - Simulation
+        - Root cause analysis
+        - Threat hunting
+        - Digital forensics
+            - Legal hold
+            - Chain of custody
+            - Acquisition
+            - Reporting
+            - Preservation
+            - E-discovery
+    - 4.9 Given a scenario, use data sources to support an investigation.
+        - Log data
+            - Firewall logs
+            - Application logs
+            - Endpoint logs
+            - OS-specific security logs
+            - IPS/IDS logs
+            - Network logs
+            - Metadata
+        - Data sources
+            - Vulnerability scans
+            - Automated reports
+            - Dashboards
+            - Packet captures
+- 5.0 Security Program Management and Oversight
+    - 5.1 Summarize elements of effective security governance.
+        - Guidelines
+        - Policies
+            - Acceptable use policy (AUP)
+            - Information security policies
+            - Business continuity
+            - Disaster recovery
+            - Incident response
+            - Software development lifecycle (SDLC)
+            - Change management
+        - Standards
+            - Password
+            - Access control
+            - Physical security
+            - Encryption
+        - Procedures
+            - Change management
+            - Onboarding/oboarding
+            - Playbooks
+        - External considerations
+            - Regulatory
+            - Legal
+            - Industry
+            - Local/regional
+            - National
+            - Global
+        - Monitoring and revision
+        - Types of governance structures
+            - Boards
+            - Committees
+            - Government entities
+            - Centralized/decentralized
+        - Roles and responsibilities for systems and data
+            - Owners
+            - Controllers
+            - Processors
+            - Custodians/stewards
+    - 5.2 Explain elements of the risk management process.
+        - Risk identification
+        - Risk assessment
+            - Ad hoc
+            - Recurring
+            - One-time
+            - Continuous
+        - Risk analysis
+            - Qualitative
+            - Quantitative
+            - Single loss expectancy (SLE)
+            - Annualized loss expectancy (ALE)
+            - Annualized rate of occurrence (ARO)
+            - Probability
+            - Likelihood
+            - Exposure factor
+            - Impact
+        - Risk register
+            - Key risk indicators
+            - Risk owners
+            - Risk threshold
+        - Risk tolerance
+        - Risk appetite
+            - Expansionary
+            - Conservative
+            - Neutral
+        - Risk management strategies
+            - Transfer
+            - Accept
+                - Exemption
+                - Exception
+            - Avoid
+            - Mitigate
+        - Risk reporting
+        - Business impact analysis
+            - Recovery time objective (RTO)
+            - Recovery point objective (RPO)
+            - Mean time to repair (MTTR)
+            - Mean time between failures (MTBF)
+    - 5.3 Explain the processes associated with third-party risk assessment and management.
+        - Vendor assessment
+            - Penetration testing
+            - Right-to-audit clause
+            - Evidence of internal audits
+            - Independent assessments
+            - Supply chain analysis
+        - Vendor selection
+            - Due diligence
+            - Conflict of interest
+        - Agreement types
+            - Service-level agreement (SLA)
+            - Memorandum of agreement (MOA)
+            - Memorandum of understanding (MOU)
+            - Master service agreement (MSA)
+            - Work order (WO)/statement of work (SOW)
+            - Non-disclosure agreement (NDA)
+            - Business partners agreement (BPA)
+        - Vendor monitoring
+        - Questionnaires
+        - Rules of engagement
+    - 5.4 Summarize elements of effective security compliance.
+        - Compliance reporting
+            - Internal
+            - External
+        - Consequences of non-compliance
+            - Fines
+            - Sanctions
+            - Reputational damage
+            - Loss of license
+            - Contractual impacts
+        - Compliance monitoring
+            - Due diligence/care
+            - Attestation and acknowledgement
+            - Internal and external
+            - Automation
+        - Privacy
+            - Legal implications
+                - Local/regional
+                - National
+                - Global
+            - Data subject
+            - Controller vs. processor
+            - Ownership
+            - Data inventory and retention
+            - Right to be forgotten
+    - 5.5 Explain types and purposes of audits and assessments.
+        - Attestation
+        - Internal
+            - Compliance
+            - Audit committee
+            - Self-assessments
+        - External
+            - Regulatory
+            - Examinations
+            - Assessment
+            - Independent third-party audit
+        - Penetration testing
+            - Physical
+            - Offensive
+            - Defensive
+            - Integrated
+            - Known environment
+            - Partially known environment
+            - Unknown environment
+            - Reconnaissance
+                - Passive
+                - Active
+    - 5.6 Given a scenario, implement security awareness practices.
+        - Phishing
+            - Campaigns
+            - Recognizing a phishing attempt
+            - Responding to reported suspicious messages
+        - Anomalous behavior recognition
+            - Risky
+            - Unexpected
+            - Unintentional
+        - User guidance and training
+            - Policy/handbooks
+            - Situational awareness
+            - Insider threat
+            - Password management
+            - Removable media and cables
+            - Social engineering
+            - Operational security
+            - Hybrid/remote work environments
+        - Reporting and monitoring
+            - Initial
+            - Recurring
+        - Development
+        - Execution

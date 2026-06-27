@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Title: readme for learning Go
+:END:
+
+this is a work in process.
+
+[[file:20220406163335-golang.org][Go notes]]

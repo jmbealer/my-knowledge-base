@@ -1,0 +1,57 @@
+- A company purchased cyber insurance to address items listed on the risk register. Which of the following strategies does this represent? >>A)
+    - Transfer
+    - Accept
+    - Mitigate
+    - Avoid
+    - 
+- Answer(s): B. Transfer
+- 
+- 
+- 
+- 
+- Which of the following is the most likely to be used to document risks, responsible parties, and thresholds? >>A)
+    - Risk register
+    - Risk tolerance
+    - Risk transfer
+    - Risk analysis
+    - 
+- Answer(s): C. Risk register
+- 
+- Which of the following threat vectors is most commonly utilized by insider threat actors attempting data exfiltration? >>A)
+    - Unidentified removable devices
+    - Default network device credentials
+    - Spear phishing emails 
+    - Impersonation of business units through typosquatting
+    - 
+- Answer(s): A. Unidentified removable devices
+- 
+- 
+- 
+- 
+- Which of the following agreement types defines the time frame in which a vendor needs to respond? >>A)
+    - SLA
+    - SOW
+    - MOA
+    - MOU
+    - 
+- Answer(s): B. SLA
+- 
+- 
+- 
+- 
+- Which of the following is a feature of a next-generation SIEM system? >>A)
+    - Automated response actions
+    - Virus signatures
+    - Security agent deployment
+    - Vulnerability scanning
+    - 
+- Answer(s): B. Automated response actions
+- 
+- Which of the following examples would be best mitigated by input sanitization? >>A)
+    - <script>alert("Warning!");-/script>
+    - nmap - 10.11.1.130
+    - Email message: "Click this link to get your free gift card."
+    - Browser message: "Your connection is not private."
+    - 
+- Answer(s): A. <script>alert("Warning!");-/script>
+- 

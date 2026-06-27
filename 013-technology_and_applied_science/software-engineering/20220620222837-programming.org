@@ -1,0 +1,282 @@
+:PROPERTIES:
+:ID:       b96af39a-3d47-4c7c-9da5-b3c4cbc673ad
+:mtime:    20230206181520 20221106200917
+:ctime:    20220620222837
+:END:
+#+title: programming
+#+date: [2022-06-20 Mon 22:28]
+
+What is Programming?
+- is a collaboration between humans and computers.
+- is giving a set of instructions to a computer to execute.
+- is the practice of writing commands for a computer to execute.
+- the act of giving the computer instructions to perform a task.
+
+Programming is the mental process of thinking up instructions to give to a
+machine (like a computer).
+Coding is the process of transforming those ideas into a written languages that
+a computer can understand.
+Computers interpret instructions in a very literal manner, so we have to be very
+specific in how we program them.
+
+Variables
+- a way to store values so we can reuse them throughout our program or change
+  them, if necessary.
+- a variable is a way of saving a piece of information with a specific name.
+- easily reuse able and easily changeable
+- variables allow us to store information.
+- variables allow us to quickly reuse a value in our program.
+- variables let us easily change a value in our program.
+- hardcoding
+
+Data Types are different types of data.
+- data is a basic unit in programming.
+- In computing, data is the pieces of information that we use to build programs
+  - like the numbers in a calculation
+  - or the text printed to a screen
+- Primitives are the most basic data types
+  - Numbers
+    - are the original data type
+    - the earliest computers communicated only in numbers, using binary
+      computation.
+    - Describe numbers are used to express value
+    - Calculate numbers are used in calculations
+    - Count numbers are used to keep track
+  - Strings
+    - are any sequence of character (letters, spaces, numbers, or symbols)
+    - almost anything can be a string, they are typically used to represent text
+      or speech.
+    - To display data that uses text or symbols
+    - To add or remove text.
+    - To modify characters.
+    - To let the computer communicate with us in a "human-readable" way.
+  - Boolean values (True or False)
+    - represent the logical ideas of true and false
+    - to determine validity.
+    - to make decisions.
+    - booleans act as binary opposites, we can think of them in a myriad of ways
+      - like on and off
+      - yes and no
+      - 1 and 0
+- Categorizing information using data types is a way for a computer to
+  distinguish different types of input.
+- Primitives are the simplest data types and are shared across many programming
+  languages.
+  - Numbers values that allow us to do calculations and keep count.
+  - Strings a sequence of characters or symbols often used to denote text.
+  - Booleans logical values that represent the idea of true or false.
+
+Operators are different symbols that represent an operation
+- operations enable us to process our data, to transform it into something else.
+- Making calculations using arithmetic operators.
+  - Addition (+) adds an amount to a number
+  - Subtraction (-) takes away an amount from a number
+  - Multiplication (*) takes a number and repeats it a specified number of times
+  - Division (/) takes a number and divides it by another number
+- Comparing information using comparison operators.
+  - comparison operators allow us to compare values and evaluate their
+    relationship.
+  - rather than evaluating to an integer, the evaluate to true or false, AKA
+    boolean values.
+      - expressions that evaluate to booleans values are known as boolean
+        expressions.
+  - Less than (<) value to the left is less than the value to the right
+    - 2 < 6
+  - Greater than (>) value to the left is more than the value to the right
+    - 14 > 5
+  - Equals (==) value to the left is equal to the value to the right
+    - 3 == 3
+  - two main instances where we use comparison operators
+    - if we have an unknown quantity.
+    - if we need to compare two known values.
+- Creating logical expressions using logical (aka Boolean) operators.
+  - Logical operators, also known as boolean operators, evaluate multiple
+    boolean expressions.
+  - rather than determining if one relationship is true or false, it looks at
+    several relationship by connecting them with logical operators and then
+    determining the logic/validity of the overall expression.
+  - AND both expressions evaluate to true, so the final result is true
+    - ((4>1) AND (2<7)) is the same as (TRUE AND TRUE). Evaluates to true.
+  - OR one of the expressions evaluate to true, so the final result is true
+    - ((8>6) OR (3<6)) is the same as (TRUE OR TRUE). Evaluates to true.
+  - NOT an expression, no matter its logical value, evaluates to the opposites
+    - NOT (1<3) evaluates to NOT (TRUE). Evaluates to false.
+  - Operators are symbols that represent different ways of modifying, comparing,
+    and evaluating information.
+  - Arithmetic operators are used to make calculations.
+  - Comparison operators determine the relationship between two values, which
+    result in a boolean.
+  - Logical operators determine the logical state of multiple boolean values or
+    expressions, which result in another boolean.
+
+Functions
+- A function is a sequence of instructions that performs a specific task,
+  packaged as a unit.
+- When we define a function, we specify the instructions, inputs, and name of
+  the function.
+- When we call a function, all of its instructions are executed.
+- Functions can be executed many times, making its instructions reusable.
+- Functions can have parameters, which accept input values, making its
+  instructions flexible.
+- Functions organize a program into distinct units, making interchanging and
+  editing them easier. This makes your entire program organized and modular.
+
+Control Flow is the order in which instructions are executed.
+- Control structures alter control flow in a program.
+  - Conditional (Conditional control structures)
+    - if some condition is met, then do X. Otherwise, do Y.
+  - Loop
+    - do something Z number of times or do something repeatedly until some
+      condition is met
+  - Exception
+    - do steps A, B, C. If an error occurs, stop, and do steps J, K, L.
+
+Lists
+- very basic data structure.
+- lists as a container to store multiple piece of information that relate to
+  each other in some way.
+- List indices are numbers.
+  - lists will start their index at 0 and then add one for each value.
+- A list is an ordered sequence of information
+- You can access an item in a list by using its index position
+- You can append items to the end of the list or insert them in the middle
+- You can also remove an item from the end or middle of a list
+
+Loops
+- For loop (count-controlled loop)
+  - it executes a set of instructions for a specified number of times.
+- While loop (condition-controlled loop)
+  - it repeats a set of instructions while that condition is true.
+- For each loop (collection loops)
+- A loop is a structure in programming where the instructions are written once,
+  but a computer can execute them multiple times.
+- Each execution of those instructions is called an iteration
+- For loops (count-controlled loops) repeat for specified number of times
+- While loops (condition-controlled loops) repeat until a condition changes
+- For each loops (collection-controlled loops) repeat for each item in a
+  collection
+
+Algorithms have three main characteristics
+- Sequential
+  - Algorithms are performed step by step from start to finish.
+- Conditional
+  - Algorithms performs certain steps based on conditions of the system.
+- Generalizable
+  - Algorithms are applicable to many different problems that are of similar
+    type.
+Algorithmic thinking to real-world problems and quickly complete tasks and
+optimize processes that would have otherwise been a burden to tackle.
+
+The internet refers the the actual network of connected computing devices.
+The world wide web is a collection of interlinked websites and other web
+resources.
+
+Web Development
+- HTML (hypertext markup language)- structures websites content
+  - is the skeleton of all web pages.
+  - it provides structure to the content on a website, including text, images,
+    buttons, videos, and more.
+  - markup refers to a way of annotating text that is distinguishable from the
+    text itself.
+  - HTML tags are the "markup" for HTML.
+  - HTML element - a unit of content in an HTML document formed by HTML tags and
+    the text or media it contains.
+  - Opening Tag - the element name used to start an HTML element. The tag type
+    is surrounded by opening and closing angled brackets.
+  - Content - the information (text or other elements) contained between the
+    opening and closing tags of an HTML element.
+  - Closing Tag - the second HTML tag used to end an HTML element. Closing tags
+    have a forward slash (/) inside of them, directly after the left angle
+    bracket.
+- CSS - applies styling to websites
+  - presentation
+  - provides style to the content of an HTML page.
+- JavaScript - adds interactivity to websites
+- SQL (structure query language)- allows your web application to store and retrieve data
+  - stores information in tables, which is simply a collection of information
+    organized into rows and columns.
+  - to build apps that can save, modify, and access data.
+
+Data Science - the field of taking data and transform it into meaningful
+information that can help us make decisions.
+- Statistics is the practice of applying mathematical calculation to sets of
+  data to derive meaning.
+  - Descriptive statistics describe a dataset using mathematically calculated
+    values, such as the mean and standard deviation.
+    - statistics that describe the data in objective terms.
+  - Inferential statistics are statistical calculations that enable us to draw
+    conclusions about the larger population.
+    - inferences for the overall population based on data
+- Probability is the mathematical study of what could potentially happen.
+  - in data science probability calculations are used to build models
+  - the likelihood that an event will happen
+- Domain Expertise - the particular set of knowledge that someone cultivates and
+  brings with them in order to understand their data
+
+Data Science Process
+- Ask a question
+  - variable relationships
+  - scope
+  - context
+  - come up with a question you want to answer
+- Determine the necessary data
+  - form a hypothesis and determine the data you need
+- Get the data
+  - collect the data
+  - Active data collection - you're setting up specific conditions in which to
+    get data.
+    - you're hunting for data.
+  - Passive data collection - you're looking for data that already exists.
+    - you're foraging for data.
+- Clean and organize the data
+  - data wrangling
+- Explore the data
+  - Statistical Calculations
+  - Data Visualizations
+- Model the data
+  - build models to analyze the data
+- Communicate your findings
+  - Visualizing
+  - Storytelling
+- Reproducibility and Automation
+  - Ensure that your process and findings are reproducible
+
+Computer Science is the discipline of interacting with computation systems.
+computer program is a series of instructions that tells computer to performs a
+certain task.
+
+
+regular expressions
+reference
+projects
+interactive
+resources
+expressions is just a combination of values, variables and operators.
+the square of a number is equal to this number power 0.5
+
+source code is just a set of statements.
+interpreter: a program which reads and executes code line by line.
+compiler: a program which compiles your source code into byte code.
+
+programming paradigm
+
+- object oriented
+- procedure oriented
+- functional oriented
+- imperative oriented
+
+What is IDE?
+  IDE (Integrated Development Environment) is a software application that typically consists of a code editor, a compiler, a debugger, and a graphical user interface (GUI) builder.
+
+For example, these rules determine which symbols (letters, digits, punctuation marks, and so on) could be used in the language. This part of the definition of the language is called lexicon.
+
+Another set of rules determines the appropriate ways of collating the symbols – this is the syntax of the language.
+
+We would also like to be able to recognize the meaning of every statement
+expressed in the given language – and this is what we call semantics.
+
+Any program we write must be correct in these three ways: lexically,
+syntactically and semantically, otherwise it will neither run nor produce any
+acceptable results.
+
+  #programming

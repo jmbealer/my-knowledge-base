@@ -1,0 +1,502 @@
+:PROPERTIES:
+:ID:       a3333ce5-86aa-4729-af16-cd8dafd42149
+:mtime:    20230206181503 20220708112931
+:ctime:    20220708112003
+:END:
+#+title: Node.js
+#+date: [2022-07-08 Fri 11:20]
+
+** javascript with node
+
+REPL stands for read, evaluate, print, and loop.
+REPL is a program that will allow you to run code and see the output from it.
+REPL use to run short snippets of code.
+can't save using a repl
+The Node REPL is particularly useful for trying out snippets of code, such as short functions, methods, or statements.
+
+node - runs the js repl
+
+
+Multiple lines of code
+You can write multiple lines of code in the REPL.
+If you do so, you will need to be careful about your curly braces {} and parentheses (), because you cannot go up a line.
+
+Writing multiple lines will look like this:
+Writing a function in the REPL
+As you can see, three dots ... denotes that you are currently writing a statement that has not yet ended.
+You will see this same thing if you were to write an if/else statement or for loop.
+
+Quitting the REPL
+To quit the REPL, you have three options:
+Press Control+D (or Command+D on a Mac).
+Press Control+C (or Command+C on a Mac) twice.
+Type .exit.
+
+Running JavaScript files
+
+touch myFile.js - create a javascript file named myFile
+node myFile.js - run a javascript file named myFile
+
+From the command line, you can then run this file with Node by running the following:
+
+node ~/thinkful/my-other-file.js
+
+** automated testing primer
+
+Writing code is about solving problems without creating new problems (bugs).
+
+Unit test A test that checks a small piece of code, generally a single function
+These tests can help you understand when your code is working as requested and when it is falling short.
+
+Automated testing: The practice of running tests against your code using automated software, with the overall goal of creating high-quality, error-free code
+
+Understanding how testing works is therefore crucial for your success both as a student and in the workforce.
+
+Intro to automated testing
+Automated testing helps developers recognize issues as they occur so that the issues can be remediated before the software is released into production.
+It's typically easier and less expensive to identify and fix an issue before rather than after putting the software in the hands of end users.
+
+The majority of the assessments in this program contain automated test code.
+The benefit of this approach is that you can get immediate feedback on your code and identify errors in your programs prior to submitting your work.
+
+Although there are many different types of automated tests, the majority of the tests that you will encounter in this program are unit tests, which are one of the most common types of automated tests in the industry.
+
+Unit tests are automated tests created by software developers to test the individual parts of a program.
+They ensure that the program does what it's designed or programmed to do.
+Each unit test tests only a small part of a program, which makes it easy to track down where the issues are.
+
+
+Folder structure for a typical Eng assessment
+The two folders of interest here are the src and the test folders.
+
+The src folder (also called the source folder) is the folder where you will usually be asked to provide your solution code, inside either a single file or multiple files.
+
+The test folder is the folder that stores the test file (or test files) for the assessment.
+Test files are generally stored in a folder labeled test (or some variation of this name) for easy reference.
+Note that the names of test files typically end with the .test.js extension so that the computer can easily identify them.
+
+Whenever you run the automated tests, your computer will find and execute the test files, which will in turn import and test the code that you wrote inside the src folder.
+
+While you're working on an assessment, feel free to look at the contents of the test files, but don't worry about trying to understand what each line of test code is doing for now.
+For now, just keep in mind that the test files contain a set of instructions on how to test your code.
+
+Automated test output
+Whenever you run the tests for each assessment, you will be presented with some output in the terminal (if you're running the tests locally) or in the Qualified window (if you're using the qualified-attach command).
+The test output will indicate whether or not you're on the right track with the assessment, so it's important that you understand how to interpret the basic parts of the test output.
+
+Automated testing is an important technique in software development, and knowing how to interpret basic test outputs is a good first step to mastering this skill, which you will continue to develop throughout the program.
+
+** environment variables and script arguments
+
+Environment variable Also called an env var, a key-value pair held by your current operating system and user
+Command-line script Also called a script or a command-line program, a reusable program that can be run on your command line
+
+Running JavaScript on your computer instead of on the web comes with some advantages.
+ Node has access to the environment variables running on your machine, which allows you to customize the JavaScript programs that you write.
+ Additionally, Node lets you parse arguments used with the Node command.
+ This allows you to write command-line programs.
+
+You are learning about environment variables and script arguments now because they are used sparingly when learning to build servers or running React.
+
+Environment variables
+Your computer currently has several stored variables that help it run.
+Just like JavaScript variables, these environment variables have a name and point towards a specific value.
+Environment variables, or env vars, are key-value pairs held by your current operating system and user.
+Like variables in JavaScript, they are used to perform and configure certain actions.
+
+The convention is that all environment variables are written in screaming snake case.
+ In other words, letters are capitalized and separated by underscores, like this: ENV_VAR.
+
+
+
+env Echo environment variables
+You can print a value to the terminal by using the echo command.
+Choose one of the variables from the list above and print it out, replacing ENVIRONMENT_VARIABLE in the code below with the name of the variable.
+
+echo $ENVIRONMENT_VARIABLE
+Use environment variables with JavaScript
+Whenever you run a JavaScript file with Node, it gives you access to a number of global variables.
+One of those variables is process, which is an object.
+
+For this program and the majority of web development, you can ignore most of what is in the process object.
+However, there are a couple of keys in this object that can be useful for building different types of programs.
+One of those keys, .env, gives you access to all of the environment variables on your system.
+
+
+console.log(process.env);
+Run the file using the node command.
+You will see that process.env prints another object.
+Update your code above to print a single environment variable from this object. (Be careful about the capitalization!)
+
+Set temporary environment variables
+You can also temporarily set an environment variable, just for however long it takes to run the program.
+Update your file to include the following:
+
+console.log(process.env.NODE_ENV);
+Then, run the command shown below, replacing <filename> with a path to your file.
+
+NODE_ENV=development node <filename>
+You will see the word development printed back to your terminal. If you run the file without setting the environment variable, you won't see anything printed to your console.
+
+Script arguments
+Node also allows you to build complex command-line scripts with JavaScript.
+A command-line script, also called a command-line program or simply script, is an often small program that can be run on your command line to achieve any number of effects.
+You can think of it as a function for the command line.
+
+Command-line scripts can be used to do just about anything, from creating a new HTML and CSS project to printing out a fun message.
+Often, command-line scripts contain arguments, just like functions do.
+Whereas a function has parameters that are a part of the function's definition, a Node script with arguments might look like the following:
+
+node plant-facts.js "Pretzel Bean"
+In this case, there is a single argument: "Pretzel Bean".
+
+You can access what was run on the command line through the process object as well. Running process.argv will print an array of what was on the command line, separated by spaces.
+
+For example, for the above line, process.argv would print the following:
+
+[
+  "/Users/your-username/.nvm/versions/node/v13.12.0/bin/node",
+  "/Users/your-username/path/to/your/plant-facts.js",
+  "Pretzel Bean",
+];
+In the above array, you can see the following:
+
+The full path to the node command
+
+The full path to the plant-facts.js file
+
+"Pretzel Bean", which was the argument
+
+It is important to note that the quotation marks in the command matter! Instead of the above, imagine that you ran the following command:
+
+node plant-facts.js Pretzel Bean
+The output of process.argv would be as follows:
+
+[
+  "/Users/your-username/.nvm/versions/node/v13.12.0/bin/node",
+  "/Users/your-username/path/to/your/plant-facts.js",
+  "Pretzel",
+  "Bean",
+];
+Notice that it now sees Pretzel Bean as two distinct arguments.
+
+** modules
+
+Learning Objective
+By the end of this lesson, you will be able to create and connect your own modules.
+
+Overview
+Using JavaScript with Node is quite powerful. However, this combination can become even more useful when you add Node modules into the mix. In this lesson, you will learn about local modules, which are one of the three different types of modules. At this point in your journey, learning how to make use of modules will allow you to better organize the JavaScript code that you write on your machine.
+
+What is a module?
+In Node, each file is treated as a separate module. A module, sometimes also referred to as a package, can contain any JavaScript code. It most commonly exports an object or a function. The exported value then becomes available in other modules.
+
+Put simply, each file in a Node project is its own module. You can then export data from that file to be used in another file.
+
+Do this
+Create a new folder
+In this lesson, you will be asked to make a few different files to practice the concepts that you are learning. Create a new folder with a memorable name, like learning-node-modules/.
+
+Local modules
+The best way to understand modules is to create and use them. For example, take a look at the following code. Imagine that it is in a file called plants.js.
+
+function findPlantById(plants, id) {
+  let result = null;
+  for (let i = 0; i < plants.length; i++) {
+    let plant = plants[i];
+    if (plant.id === id) {
+      result = plant;
+    }
+  }
+  return result;
+}
+
+module.exports = findPlantById;
+The above function expects an array of objects as the first argument passed to the function, where each object has an id. It then accepts an id. The function then loops through all of the plants and returns the one that has a matching id. If none match, it returns null.
+
+At the end of the code block shown above, you may have noticed the following line:
+
+module.exports = findPlantById;
+This line indicates that the file is a module. A function is being exported from this file.
+
+You can use this function in another file. For example, take a look at the following code. Imagine that it is in a file called main.js.
+
+let find = require("./plants");
+let plants = [
+  { id: 1, name: "Garden Rocket Arugula" },
+  { id: 2, name: "Watercress" },
+  { id: 3, name: "Royal Rose Radicchio" },
+];
+
+const result = find(plants, 2);
+console.log(result);
+The new and important part of the code above is the require() function. The require() function takes a path as an argument. If no file extension is given, it will assume that the file is a JavaScript file. It looks into that file and then finds what is exported, and whatever is exported is returned from the require() function.
+
+So, in the above file, the following happens:
+
+The findPlantById() function is imported from the plants.js file. Notice that it is assigned to a new name, find, although it can be assigned any name.
+
+A plants variable is declared, which points to an array of objects with IDs.
+
+The find() function is called with the appropriate arguments.
+
+Do this
+Create a module
+In the folder that you've created, create two new files: plants.js and main.js. Copy the above content into the files as appropriate, and then run the main.js file.
+
+You will see the following output:
+
+{ id: 2, name: "Watercress" }
+View the default value
+In your plants.js file, comment out the line that is exporting the function, as follows:
+
+// module.exports = findPlantById;
+Then, at the top of your main.js file, add the following line:
+
+console.log(require("./plants.js"));
+What do you see? You should see an empty object. By default, if you require a file that doesn't have a module.exports statement, you will receive an empty object.
+
+Now, undo the changes that you made in this step.
+
+Export an object
+After you've undone the changes from the above task, update your plants.js file with the following export statement. This export statement should replace the one that you already have.
+
+module.exports = { findPlantById: findPlantById };
+Now, you are exporting an object instead of a function. How would you update your code in main.js so that you can still call the function?
+
+There are a few ways that could work, but one option is to update the code as follows:
+
+let plantFunctions = require("./plants");
+let plants = [
+  { id: 1, name: "Garden Rocket Arugula" },
+  { id: 2, name: "Watercress" },
+  { id: 3, name: "Royal Rose Radicchio" },
+];
+
+console.log(plantFunctions.findPlantById(plants, 2));
+
+** the package.json file
+
+Configuration file Any file that's necessary to run an overall project but may not have explicit code inside of it
+
+Each folder that you create and plan to run with Node can be considered a Node package or project.
+These projects can contain a configuration file, package.json, which gives additional information about the project.
+This configuration file also allows for some interesting functionality through the use of npm, the command-line tool that you installed at the beginning of this module.
+
+Configuration files
+So far, the files that you've created have been JavaScript files that you've been able to run with Node.
+These files are, obviously, critical to running code in that they have code in them.
+As you advance throughout this program, you will also come across a number of configuration files, which are essential to larger projects.
+Configuration files can generally be described as any file that's necessary to run an overall project but may not have explicit code (functions) inside of it.
+
+For example, your text editor (whether it's Visual Studio Code, Sublime, or something else) likely has a settings file that defines how your text editor works. These settings may determine how your code is spaced or what colors your text editor shows. These settings don't explicitly run your text editor, but they do shape how the text editor is run.
+
+The package.json file
+For Node projects, the main configuration file is the package.json file. This file contains meta information about the project and allows you to customize some commands that can be run.
+
+The package.json file can be created through npm. After navigating to the folder where you want to create your project, you can create a package.json file by running the following command on the command line:
+
+npm init -y
+The above command will create a new package.json file in the directory where it was run. It will also fill in some default values.
+
+Note: Each Node project should only have a single package.json file.
+
+Do this
+Create a package.json file
+Create a new directory called first-package-json on your computer. On your command line, navigate to that directory and run the above command to create a package.json file.
+
+Take a look at the file that was just created. Note that it looks similar to a JavaScript object.
+
+JSON
+The file that you created isn't a JavaScript file—it's a JSON file. JSON stands for JavaScript Object Notation, which is different from JavaScript. JSON looks like a JavaScript object but has more limitations. In particular, when writing JSON, you must consider the following:
+
+All keys in a JSON file must be wrapped in quotations.
+
+A JSON file cannot include JavaScript comments or variables. Instead, the file must only contain a single JavaScript object.
+
+Values such as booleans, numbers, strings, arrays, and other objects are valid in JSON.
+
+Keys
+If you used the command suggested earlier in this lesson, your package.json file will look something like this by default:
+
+{
+  "name": "first-package-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+All of the above keys are optional. But there are a few that you will want to keep—especially the following:
+
+name: This is the name of your package. By default, it will take the name from your folder's name.
+
+description: This is a description of your project. You can place whatever you want here.
+
+scripts: This is where you will set up scripts to be run through npm. You will learn more about scripts below.
+
+You can learn more about the package.json file and other keys in the package.json documentation.
+
+Scripts
+Right now, one of the most useful skills that you can learn is how to build scripts with the package.json file. The scripts key has a value that is an object. Each key in that object is the name of a script that can be run from the command line. The value associated with that key is a string containing any valid command-line code. Running that script with npm will execute the code on the command line.
+
+For example, take the following default script:
+
+{
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+This script can be run with the following command:
+
+npm run test
+When the above command is run on the command line in the folder where the package.json file exists, it will run the value as a script. Here's an example:
+
+Example of running npm test
+After npm run test was run, the value of the test command was run. That is, a specific message was echoed.
+
+You can create new scripts by adding new key-value pairs. For example, the following script will simply run the pwd command on the command line.
+
+"print-working-directory": "pwd"
+To run the command, you would type the following:
+
+npm run print-working-directory
+Note: If you try to include the above script, make sure to use the correct syntax for your JSON file.
+
+Do this
+Run JavaScript with npm
+In the first-package-json folder, create a new file called main.js. Add the following code to it:
+
+console.log("Hello, world!");
+Then, add a script called dev that will run the following command:
+
+node main.js
+Afterward, on the command line, you should be able to run the following command and see "Hello, world!" printed to the console.
+
+npm run dev
+Default commands
+The npm program expects you to use some common terms like start and test. For these common terms, you can skip the run part of the command.
+
+npm test
+However, you will still need to use the run part of the command for custom scripts.
+
+npm run dev
+More of the supported scripts can be found in the npm scripts documentation.
+
+** installing packages
+
+
+Open-source Code that is available to be viewed, downloaded, and edited by anyone
+
+The npm tool can help you install and manage these packages.
+
+Viewing packages
+https://npmjs.com/ - where javascript packages can be found
+
+
+Moment
+Take a look at the Moment package.
+This page shows you information about how to install the package, how it can be used, and various statistics on the package's usage.
+For example, this package describes itself as "a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates."
+
+You also can see that this package has been downloaded often and has been updated recently.
+When you're assessing whether or not to use a package, it is a good idea to look at these statistics.
+
+Note: You may notice from the documentation that the Moment package is now a legacy project and is no longer being updated. However, Moment continues to be a very popular and useful package, and you'll work with it throughout this lesson.
+
+Reading documentation
+You learned that the Moment package can help parse and format dates in JavaScript.
+How does it do this? To answer this question, you will need to read the documentation.
+
+So far, you have likely only seen documentation on the official JavaScript language from MDN.
+MDN is a great resource, but it doesn't contain documentation on packages.
+
+Now, you will need to look instead at the specific package and its documentation.
+Thankfully, Moment has fantastic documentation, which can be found at Moment's website.
+
+Reading documentation is its own skill, and it can be challenging at first. As you come across phrases and terms that you don't understand, you will need to be patient and look up new concepts.
+
+Installing
+You can install a package with a simple npm command:
+
+npm install <package-name>
+npm i <package-name>
+
+Running this command (while changing <package-name> to the name of the package) will do the following:
+If a node_modules/ folder doesn't already exist, a node_modules/ folder will be created in the current directory.
+If a package-lock.json file doesn't already exist, a package-lock.json file will be created in the current directory.
+If a package.json file does already exist, the package and its version number will be recorded in the package.json file.
+The package will be downloaded from the web to your computer.
+In general, you always want to have a package.json file before running any install commands.
+
+
+Do this
+Create a JavaScript project
+First, complete the following steps:
+
+Create a new directory called installing-packages.
+
+Then, create a package.json file and a main.js file.
+
+In the package.json file, create a start script that runs your main.js file with Node.
+
+Finally, include the following in your main.js file:
+
+console.log("The current date is: " + Date.now());
+When you run your script, you will see something like the following show in your terminal:
+
+The current date is: 1592329893846
+Install the Moment package
+The above date isn't very useful! Instead, try using the Moment package. Install Moment using the following command:
+
+npm install moment
+Then, require the Moment package in your main.js file:
+
+let moment = require("moment");
+Run your code and confirm that the output looks the same as it did before.
+
+Use Moment
+Now it is time to actually use Moment. Before looking at the solution below, try reading the Moment documentation yourself, and look for how you might display a more human-readable date format.
+
+If you're having a hard time, try looking at the display format section of the documentation. As you can see, there are actually several ways to display dates with Moment.
+
+If you're still having trouble, you can replace your console.log() statement with the following:
+
+console.log("The current date is: " + moment().format("MMMM Do, YYYY"));
+Dependencies
+Whenever you install a package with npm install or npm i, the installation will be recorded in your package.json file under a key titled dependencies. It will look something like this:
+
+"dependencies": {
+  "moment": "^2.26.0"
+}
+The string value next to the package name is the version number for that package. If you are interested in the version number syntax, you may optionally read more about it in the package.json dependencies documentation.
+
+Developer dependencies
+In the future, you may also see a command like this:
+
+npm install <package-name> --save-dev
+The --save-dev flag will be included for packages that are necessary only for the development of the project, not for running it. Packages installed with that flag will show up under the devDependencies key instead of dependencies.
+
+The reason behind this will be explained whenever it is asked of you. For now, just keep in mind that you may see this flag.
+
+The package-lock.json file
+The package-lock.json file is automatically created whenever you install a package. Similarly to package.json, package-lock.json is a configuration file.
+
+The difference is that you will never need to edit this file. The package-lock.json file is essentially metadata for package.json. Although it is required, it does not require any management by you.
+
+You can read more about the package-lock.json file in the package-lock.json documentation.
+
+Node modules
+When you install a package, that package's code will be added to a node_modules folder. Modules that aren't created by you or installed in Node will be contained in this folder.
+
+As you'll see, the installed packages also have a package.json file. If the installed package has its own dependencies, those packages will also be installed.
+
+You can delete the node_modules folder at any time and reinstall the packages by using the npm install command without providing a package name. By default, npm install will install everything listed in your package.json file.
+
+Do this
+Browse the node_modules/ folder
+Take a look inside the node_modules/ folder inside your installing-packages/ directory. You will see a single folder: moment/.
+
+Look around the folder briefly, and try to find the package.json file. As you can see, Moment is just another Node project, like the one that you have!

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       250f556f-145d-41cf-9178-57d26a5a37b2
+:mtime:    20230303115515
+:ctime:    20230303115509
+:END:
+#+title: Rust
+
+[[https://en.wikipedia.org/wiki/Rust_(programming_language)][Rust (programming language) - Wikipedia]]

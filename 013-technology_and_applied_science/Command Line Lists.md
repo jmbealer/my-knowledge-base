@@ -1,0 +1,4669 @@
+- command description
+- working on
+    - ### 🌐 **User Environment & Shell**
+        - `.bashrc`, `.bash_profile` 
+        - [Size]();-[H3]()
+-  Shell Built-ins and Scripting
+    -  {{echo}} - {{display a line of text}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - Built-in in most shells and also a standalone binary.
+        - **Synopsis**
+            - `echo [OPTION]... [STRING]...`
+        - **Description**
+            - Outputs text or variables to the terminal.
+        - **When to Use It**
+            - Use to print messages, variables, or script output.
+        - **Common Flags**
+            - `-n` - Do not output the trailing newline
+            - `-e` - Enable interpretation of backslash escapes
+        - **Examples**
+            - `echo "Hello"`
+            - `echo -e "Line1\nLine2"`
+        - **Notes / Gotchas**
+            - Behavior may vary between shell built-in and `/bin/echo`.
+    -  {{grep}} - {{print lines that match patterns}} 
+        - **Platforms**
+            - Debian, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `grep [OPTIONS] PATTERN [FILE]...`
+        - **Description**
+            - Searches for matching lines using regular expressions.
+        - **When to Use It**
+            - Use to find strings or patterns in files or command output.
+        - **Common Flags**
+            - `-i` - Ignore case
+            - `-r` - Recursive search in directories
+            - `-v` - Invert match
+            - `-n` - Show line numbers
+        - **Examples**
+            - `grep "main" *.c`
+            - `grep -r "password" /etc/`
+        - **Notes / Gotchas**
+            - Use `grep -E` for extended regex.
+        - [Size]();-[H0]()
+    -  {{f}}{{ind}} - {{search }}{{f}}{{or }}{{f}}{{iles}} in {{directory hierarchy}} 
+        - **Platforms**
+            - Debian, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `find [path] [expression]`
+        - **Description**
+            - Recursively searches directories for files matching conditions.
+        - **When to Use It**
+            - Use to locate files by name, size, time, permissions, etc.
+        - **Common Flags**
+            - `-name` - Match filename
+            - `-type` - File type (`f`, `d`)
+            - `-exec` - Execute command on result
+            - `-mtime` - Modified N days ago
+        - **Examples**
+            - `find . -name "*.sh"`
+            - `find /var -type f -mtime -1`
+            - `find . -type f -exec chmod 644 {} +`
+        - **Notes / Gotchas**
+            - Use quotes to avoid shell globbing.
+        - [Size]();-[H0]()
+    -  {{read}} - {{read from standard}} {{input into shell variables}} 
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Shell built-in (`bash`, `sh`).
+        - **Synopsis**
+            - `read [options] variable`
+        - **Description**
+            - Reads user input into a shell variable.
+        - **When to Use It**
+            - Use in interactive scripts to accept input.
+        - **Common Flags**
+            - `-p` - Prompt before reading (bash only)
+            - `-r` - Raw mode (don’t interpret backslashes)
+        - **Examples**
+            - `read name`
+            - `read -p "Enter name: " name`
+        - **Notes / Gotchas**
+            - Not a standalone command—must be used within a shell.
+        - [Size]();-[H0]()
+    -  {{sed}} - {{stream editor}} for {{filtering and transforming text}} 
+        - **Platforms**
+            - Debian, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `sed [OPTION]... 'script' [FILE]...`
+        - **Description**
+            - Performs text transformations on input streams or files.
+        - **When to Use It**
+            - Use to replace, delete, or modify lines in text.
+        - **Common Flags**
+            - `-e` - Add a script
+            - `-i` - Edit files in place
+            - `-n` - Suppress automatic printing
+        - **Examples**
+            - `sed 's/foo/bar/g' file.txt`
+            - `sed -i 's/root/admin/' /etc/passwd`
+        - **Notes / Gotchas**
+            - Use `-r` for extended regex (`-E` in modern versions).
+        - [Size]();-[H0]()
+    -  {{sh}} - POSIX shell interpreter *
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Often symlinked to `dash` or `bash`.
+        - **Synopsis**
+            - `sh [SCRIPT]`
+        - **Description**
+            - Executes shell scripts using the POSIX shell.
+        - **When to Use It**
+            - Use to run scripts in a POSIX-compliant environment.
+        - **Common Flags**
+            - `-c` - Pass command string
+            - `-e` - Exit on error
+            - `-x` - Print commands before executing
+        - **Examples**
+            - `sh myscript.sh`
+            - `sh -c "echo hello"`
+        - **Notes / Gotchas**
+            - Use for portability across UNIX systems.
+            - Not as feature-rich as `bash`.
+        - [Size]();-[H0]()
+    -  {{test}} - check file types and compare values
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - Built-in in many shells; `[ ]` is a synonym.
+        - **Synopsis**
+            - `test EXPRESSION` or `[ EXPRESSION ]`
+        - **Description**
+            - Evaluates conditional expressions for scripts.
+        - **When to Use It**
+            - Use in scripts for logic checks.
+        - **Common Flags**
+            - `-f` - File exists and is regular
+            - `-d` - Directory exists
+            - `-z` - String is empty
+            - `=`, `!=` - String comparison
+        - **Examples**
+            - `test -f file.txt && echo exists`
+            - `[ "$USER" = "root" ] && echo admin`
+        - **Notes / Gotchas**
+            - Don’t forget spacing around brackets (`[ ]`).
+        - [Size]();-[H0]()
+    -  {{nano}} - {{Nano's ANOther editor,}} inspired by Pico
+        - **Platforms**
+            - Debian, RHEL, Editor
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `nano [FILE]`
+        - **Description**
+            - Terminal-based text editor that is simple and user-friendly.
+        - **When to Use It**
+            - Use to quickly edit files from the command line.
+        - **Common Flags**
+            - `-m` - Enable mouse support
+            - `-l` - Enable line numbers
+            - `-c` - Constant cursor position display
+        - **Examples**
+            - `nano myfile.txt`
+            - `nano -l script.sh`
+        - **Notes / Gotchas**
+            - Easier for beginners than `vi` or `vim`.
+            - Key combos shown at bottom (`^` = Ctrl).
+        - [Size]();-[H0]()
+    -  {{vim}} - {{Vi IMproved,}} {{a programmer's text editor}} 
+        - **Platforms**
+            - Debian, RHEL, Editor
+        - **Synonyms/Aliases**
+            - May be aliased as `vi` depending on system.
+        - **Synopsis**
+            - `vim [FILE]`
+        - **Description**
+            - Highly configurable text editor for programmers and power users.
+        - **When to Use It**
+            - Use for powerful file editing, scripting, and macros.
+        - **Common Flags**
+            - `-u NONE` - Start without config
+            - `-R` - Read-only mode
+            - `+NUM` - Start at line number
+        - **Examples**
+            - `vim config.txt`
+            - `vim +10 error.log`
+        - **Notes / Gotchas**
+            - Has a learning curve (normal, insert, visual modes).
+            - Use `:q`, `:wq`, `:help` to start learning.
+        - [Size]();-[H0]()
+    -  {{vi}} - {{screen-oriented (visual)}} {{display editor}} 
+        - [Size]();-[H0]()
+    -  {{.(dot)}} - source and execute a script in the current shell *
+        - **Platforms**
+            - Unclassified (Shell Built-in; POSIX shells)
+        - **Synonyms/Aliases**
+            - Equivalent to `source` in many shells.
+        - **Synopsis**
+            - `. FILE`
+        - **Description**
+            - Executes a script in the current shell environment.
+        - **When to Use It**
+            - Use to apply environment changes without starting a subshell.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `. ./envsetup.sh`
+        - **Notes / Gotchas**
+            - Must be used in a shell context, not as a standalone command.
+            - A space after `.` is required.
+        - [Size]();-[H0]()
+    -  {{alias}} - {{define or display aliases}} 
+        - **Platforms**
+            - Debian, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - Built-in to most shells.
+        - **Synopsis**
+            - `alias [name='value']`
+        - **Description**
+            - Creates or lists shortcuts for commands.
+        - **When to Use It**
+            - Use to shorten frequently used or complex commands.
+        - **Common Flags**
+            - None (but can be combined with `unalias` to remove)
+        - **Examples**
+            - `alias ll='ls -l'`
+            - `alias`
+        - **Notes / Gotchas**
+            - Only lasts for the current shell session unless added to `.bashrc`.
+        - [Size]();-[H0]()
+    -  {{apropos}} - {{search the manual page}} {{names and descriptions}} 
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - Related to `man -k`.
+        - **Synopsis**
+            - `apropos keyword`
+        - **Description**
+            - Searches the manual page names and descriptions for a keyword.
+        - **When to Use It**
+            - Use to discover relevant commands when unsure of the exact name.
+        - **Common Flags**
+            - `-e` - Use exact match
+            - `-a` - Match all keywords
+        - **Examples**
+            - `apropos network`
+            - `apropos compress`
+        - **Notes / Gotchas**
+            - Requires updated man database (may need `mandb`).
+        - [Size]();-[H0]()
+    -  basename - strip directory and suffix from file path *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `basename NAME [SUFFIX]`
+        - **Description**
+            - Prints file name portion of a path, optionally removing suffix.
+        - **When to Use It**
+            - Use in scripts to extract file names.
+        - **Common Flags**
+            - None commonly used
+        - **Examples**
+            - `basename /usr/bin/sort`to `sort` 
+            - `basename file.txt .txt`to `file` 
+        - **Notes / Gotchas**
+            - Often used with `dirname`.
+        - [Size]();-[H0]()
+    -  {{cut}} - {{remove sections}} from {{each line of files}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `cut OPTION... [FILE]...`
+        - **Description**
+            - Extracts specific bytes, characters, or fields from lines.
+        - **When to Use It**
+            - Use to isolate columns in delimited data (e.g., CSV).
+        - **Common Flags**
+            - `-d` - Set delimiter
+            - `-f` - Select fields
+            - `-b` - Select bytes
+            - `-c` - Select characters
+        - **Examples**
+            - `cut -d':' -f1 /etc/passwd`
+            - `cut -c1-5 file.txt`
+        - **Notes / Gotchas**
+            - Doesn't handle multiline fields or quoted delimiters well.
+        - [Size]();-[H0]()
+    -  dirname - strip last component from file path *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `dirname NAME`
+        - **Description**
+            - Prints the directory path portion of a file path.
+        - **When to Use It**
+            - Use in scripts to isolate directory paths.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `dirname /usr/local/bin/file`to `/usr/local/bin` 
+        - **Notes / Gotchas**
+            - Use with `basename` to split paths cleanly.
+        - [Size]();-[H0]()
+    -  egrep - extended grep using ERE (extended regex) *
+        - **Platforms**
+            - BSD, POSIX
+        - **Synonyms/Aliases**
+            - Equivalent to `grep -E`.
+        - **Synopsis**
+            - `egrep [OPTIONS] PATTERN [FILE]...`
+        - **Description**
+            - Grep using extended regular expressions.
+        - **When to Use It**
+            - Use when you need extended regex syntax (e.g., `+`, `?`, `|`).
+        - **Common Flags**
+            - `-i` - Ignore case
+            - `-r` - Recursive search
+            - `-n` - Show line numbers
+        - **Examples**
+            - `egrep 'foo|bar' file.txt`
+            - `egrep -i 'error|fail' /var/log/syslog`
+        - **Notes / Gotchas**
+            - Deprecated on some systems in favor of `grep -E`.
+        - [Size]();-[H0]()
+    -  {{emacs}} - extensible, customizable text editor *
+        - **Platforms**
+            - Editor (Debian, RHEL)
+        - **Synonyms/Aliases**
+            - No standard aliases (some use `e`).
+        - **Synopsis**
+            - `emacs [FILE]`
+        - **Description**
+            - Full-featured text editor often used by developers and sysadmins.
+        - **When to Use It**
+            - Use for advanced text editing, scripting, and integrated development.
+        - **Common Flags**
+            - `-nw` - No window; run in terminal
+            - `+LINE` - Start at a specific line
+        - **Examples**
+            - `emacs file.txt`
+            - `emacs -nw script.sh`
+        - **Notes / Gotchas**
+            - Large learning curve.
+            - Supports plugins, macros, and scripting with Emacs Lisp.
+        - [Size]();-[H0]()
+    -  {{env}} - {{run a program}} in a {{modified environment}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]`
+        - **Description**
+            - Displays or runs a command with custom environment variables.
+        - **When to Use It**
+            - Use to temporarily set environment variables for a single command.
+        - **Common Flags**
+            - `-i` - Start with empty environment
+            - `-u` - Unset a variable
+        - **Examples**
+            - `env`
+            - `env VAR=value command`
+            - `env -i bash`
+        - **Notes / Gotchas**
+            - Often used in scripts and shebangs for portability (`#!/usr/bin/env bash`).
+    -  envsubst - substitute environment variables in strings *
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `envsubst [OPTION] [SHELL-FORMAT]`
+        - **Description**
+            - Replaces environment variables in a string or input stream.
+        - **When to Use It**
+            - Use to inject environment variables into config templates.
+        - **Common Flags**
+            - None commonly used
+        - **Examples**
+            - `echo "Hello $USER" | envsubst`
+            - `envsubst < template.conf > output.conf`
+        - **Notes / Gotchas**
+            - Only replaces variables in `$VAR` format—not `${VAR}` by default.
+        - [Size]();-[H0]()
+    -  eval - evaluate arguments as a shell command *
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Built-in in most shells.
+        - **Synopsis**
+            - `eval [ARG]...`
+        - **Description**
+            - Concatenates and executes arguments as a single shell command.
+        - **When to Use It**
+            - Use when dynamic construction of commands is needed in scripts.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `eval "ls -l $1"`
+            - `cmd="echo hi"; eval $cmd`
+        - **Notes / Gotchas**
+            - Can be dangerous—executes arbitrary code. Use cautiously.
+        - [Size]();-[H0]()
+    -  ex - line-based interface to `vi` editor *
+        - **Platforms**
+            - BSD
+        - **Synonyms/Aliases**
+            - `vi` in line-editing mode.
+        - **Synopsis**
+            - `ex [file]`
+        - **Description**
+            - Provides command-line editing interface for `vi`.
+        - **When to Use It**
+            - Use for scripted or batch file editing via `vi`.
+        - **Common Flags**
+            - `-s` - Silent (batch/script mode)
+        - **Examples**
+            - `ex file.txt`
+            - `ex -s +'%s/foo/bar/g|x' file.txt`
+        - **Notes / Gotchas**
+            - Starts in command mode; not user-friendly for beginners.
+        - [Size]();-[H0]()
+    -  exec - replace the shell with another command *
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Shell built-in.
+        - **Synopsis**
+            - `exec [COMMAND [ARG]...]`
+        - **Description**
+            - Replaces the current shell with a new command process.
+        - **When to Use It**
+            - Use in scripts when no further shell processing is needed.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `exec bash`
+            - `exec 1>output.log` (redirect STDOUT)
+        - **Notes / Gotchas**
+            - Does not return to the original shell—it replaces it.
+        - [Size]();-[H0]()
+    -  {{exit}} - {{cause normal}} {{process termination}} 
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Built-in in all shells.
+        - **Synopsis**
+            - `exit [n]`
+        - **Description**
+            - Ends the current shell or script with optional status code.
+        - **When to Use It**
+            - Use to end shell sessions or return status from scripts.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `exit`
+            - `exit 0`
+            - `exit 1`
+        - **Notes / Gotchas**
+            - `0` = success; any non-zero = error or failure.
+        - [Size]();-[H0]()
+    -  expand - convert tabs to spaces *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `expand [OPTION]... [FILE]...`
+        - **Description**
+            - Converts tab characters to spaces in file or input.
+        - **When to Use It**
+            - Use to normalize indentation for consistent formatting.
+        - **Common Flags**
+            - `-t N` - Set tab width (default is 8)
+        - **Examples**
+            - `expand file.txt`
+            - `expand -t 4 source.py`
+        - **Notes / Gotchas**
+            - Does not modify file unless redirected to a new output.
+        - [Size]();-[H0]()
+    -  {{export}} - {{set the export}} {{attribute for variables}} 
+        - **Platforms**
+            - Unclassified (Shell Built-in; POSIX)
+        - **Synonyms/Aliases**
+            - Built-in in all POSIX shells.
+        - **Synopsis**
+            - `export VAR[=VALUE]`
+        - **Description**
+            - Makes shell variables available to subprocesses.
+        - **When to Use It**
+            - Use when setting environment variables in a session or script.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `export PATH=$PATH:/new/path`
+            - `export EDITOR=nano`
+        - **Notes / Gotchas**
+            - Only affects processes started  *after*  the export.
+        - [Size]();-[H0]()
+    -  expr - evaluate expressions *
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `expr EXPRESSION`
+        - **Description**
+            - Evaluates arithmetic and string expressions.
+        - **When to Use It**
+            - Use in scripts for simple math or comparisons.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `expr 1 + 2`
+            - `expr "$a" : '.*'` (string length)
+        - **Notes / Gotchas**
+            - Operators and operands must be space-separated.
+            - Quoting is often necessary in scripts.
+    -  fgrep - fixed-string grep (no regex) *
+        - **Platforms**
+            - BSD
+        - **Synonyms/Aliases**
+            - Equivalent to `grep -F`.
+        - **Synopsis**
+            - `fgrep [OPTIONS] PATTERN [FILE]...`
+        - **Description**
+            - Searches for exact strings (not patterns).
+        - **When to Use It**
+            - Use for literal text search without regex interpretation.
+        - **Common Flags**
+            - `-i` - Ignore case
+            - `-r` - Recursive
+            - `-n` - Line numbers
+        - **Examples**
+            - `fgrep "example.com" hosts.txt`
+        - **Notes / Gotchas**
+            - Deprecated on some systems—use `grep -F`.
+        - [Size]();-[H0]()
+    -  fmt - format text for readability *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `fmt [OPTION]... [FILE]...`
+        - **Description**
+            - Reformats paragraphs to a uniform width.
+        - **When to Use It**
+            - Use to clean up plain-text blocks or emails.
+        - **Common Flags**
+            - `-w` - Line width (default: 75)
+            - `-u` - Uniform spacing
+        - **Examples**
+            - `fmt README.txt`
+            - `fmt -w 50 input.txt`
+        - **Notes / Gotchas**
+            - Operates on paragraph-style input; not good for code.
+        - [Size]();-[H0]()
+    -  fold - wrap long lines to fit terminal *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `fold [OPTION]... [FILE]...`
+        - **Description**
+            - Wraps each line of input to a specified width.
+        - **When to Use It**
+            - Use to break long lines without affecting paragraph structure.
+        - **Common Flags**
+            - `-w` - Line width
+            - `-s` - Break at spaces
+        - **Examples**
+            - `fold -w 80 input.txt`
+            - `fold -s file.txt`
+        - **Notes / Gotchas**
+            - Differs from `fmt`—preserves individual lines.
+        - [Size]();-[H0]()
+    -  {{awk}} - {{pattern scanning}} and {{processing language}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - Often aliased to `gawk` (GNU Awk)
+        - **Synopsis**
+            - `awk 'program' FILE...`
+        - **Description**
+            - Processes structured text by pattern-action logic.
+        - **When to Use It**
+            - Use for field-based parsing, data extraction, or inline logic.
+        - **Common Flags**
+            - `-F` - Field delimiter
+            - `-v` - Define variable
+        - **Examples**
+            - `awk '{ print $1 }' file.txt`
+            - `awk -F':' '$3 > 1000' /etc/passwd`
+        - **Notes / Gotchas**
+            - Powerful for scripting but more complex than `cut`.
+    -  gawk - GNU version of AWK pattern scanning *
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - Often aliased as `awk`.
+        - **Synopsis**
+            - `gawk [OPTION]... 'program' FILE...`
+        - **Description**
+            - Processes text using patterns and actions.
+        - **When to Use It**
+            - Use for advanced text parsing, transformation, or reporting.
+        - **Common Flags**
+            - `-F` - Field separator
+            - `-v var=value` - Set variable
+        - **Examples**
+            - `gawk '{ print $1 }' data.txt`
+            - `gawk -F: '$3 > 1000 { print $1 }' /etc/passwd`
+        - **Notes / Gotchas**
+            - Supports associative arrays and user-defined functions.
+        - [Size]();-[H0]()
+    -  getopts - parse positional script options *
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Shell built-in in `sh`, `bash`, etc.
+        - **Synopsis**
+            - `getopts optstring name [args]`
+        - **Description**
+            - Parses options and arguments in shell scripts.
+        - **When to Use It**
+            - Use in scripts to handle `-f`, `-v`, etc. flags.
+        - **Common Flags**
+            - `:` - Leading colon in `optstring` to suppress error messages
+        - **Examples**
+            - `while getopts "f:v" opt; do ... done`
+        - **Notes / Gotchas**
+            - Different from `getopt` (external command).
+        - [Size]();-[H0]()
+    -  groff - GNU text formatting system (man pages, PDFs) *
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - Wrapper for `troff`.
+        - **Synopsis**
+            - `groff [OPTION]... [FILES]`
+        - **Description**
+            - Formats text using troff macros (used for man pages, typesetting).
+        - **When to Use It**
+            - Use to format man pages or convert `.man`/`.ms` to PDF/PS.
+        - **Common Flags**
+            - `-T` - Output device (e.g., `ascii`, `pdf`)
+            - `-m` - Macro package (`man`, `ms`)
+        - **Examples**
+            - `groff -man mypage.1`
+            - `groff -ms -Tpdf paper.ms > paper.pdf`
+        - **Notes / Gotchas**
+            - Complex but powerful; used behind the scenes by `man`.
+        - [Size]();-[H0]()
+    -  ispell - interactive spell checker *
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - Replaced in many systems by `aspell`, `hunspell`.
+        - **Synopsis**
+            - `ispell [OPTIONS]... [FILES]`
+        - **Description**
+            - Checks spelling in plain-text files interactively.
+        - **When to Use It**
+            - Use to find and correct typos in text documents.
+        - **Common Flags**
+            - `-l` - List misspelled words only
+            - `-d` - Specify dictionary
+        - **Examples**
+            - `ispell myfile.txt`
+            - `ispell -l < draft.txt`
+        - **Notes / Gotchas**
+            - May not be pre-installed.
+            - More modern alternatives are often preferred.
+        - [Size]();-[H0]()
+    -  join - join lines of two files on a common field *
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `join [OPTION]... FILE1 FILE2`
+        - **Description**
+            - Joins lines from two sorted files based on a common field.
+        - **When to Use It**
+            - Use to merge related data from different files (like a database join).
+        - **Common Flags**
+            - `-1` - Join field from file 1
+            - `-2` - Join field from file 2
+            - `-t` - Set delimiter
+        - **Examples**
+            - `join file1.txt file2.txt`
+            - `join -1 2 -2 1 file1.txt file2.txt`
+        - **Notes / Gotchas**
+            - Files must be sorted on the join field.
+    -  {{locate}} - {{find files by name}} 
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `locate [OPTION]... PATTERN`
+        - **Description**
+            - Quickly searches a cached database of filenames.
+        - **When to Use It**
+            - Use to find files faster than `find`.
+        - **Common Flags**
+            - `-i` - Case-insensitive
+            - `-c` - Count matches
+            - `-r` - Use regular expressions
+        - **Examples**
+            - `locate passwd`
+            - `locate -i vimrc`
+        - **Notes / Gotchas**
+            - Database must be updated periodically using `updatedb`.
+        - [Size]();-[H0]()
+    -  look - search sorted file for matching lines *
+        - **Platforms**
+            - Unclassified
+        - **Synonyms/Aliases**
+            - Often used with `/usr/share/dict/words`.
+        - **Synopsis**
+            - `look STRING [FILE]`
+        - **Description**
+            - Displays lines in a sorted file that begin with a given string.
+        - **When to Use It**
+            - Use for prefix-based word lookup or command suggestions.
+        - **Common Flags**
+            - `-f` - Ignore case
+            - `-d` - Ignore non-alphanumeric characters
+        - **Examples**
+            - `look net`
+            - `look -f com`
+        - **Notes / Gotchas**
+            - File must be sorted or results may be incorrect.
+        - [Size]();-[H0]()
+    -  mlocate - fast file locator using updated database *
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - Modern version of `locate`.
+        - **Synopsis**
+            - `mlocate [OPTION]... PATTERN`
+        - **Description**
+            - Searches for files in a database updated by `updatedb`.
+        - **When to Use It**
+            - Use for fast searches across the filesystem.
+        - **Common Flags**
+            - Same as `locate`.
+        - **Examples**
+            - `mlocate myfile.txt`
+        - **Notes / Gotchas**
+            - May restrict search results by user permissions.
+        - [Size]();-[H0]()
+    -  nl - number lines of a file *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `nl [OPTION]... [FILE]`
+        - **Description**
+            - Adds line numbers to a file’s content.
+        - **When to Use It**
+            - Use to number output while preserving formatting.
+        - **Common Flags**
+            - `-b` - Numbering style (e.g., `a`, `t`, `n`)
+            - `-n` - Number format
+            - `-s` - Separator string
+        - **Examples**
+            - `nl script.sh`
+            - `nl -n ln -s ": " file.txt`
+        - **Notes / Gotchas**
+            - Different from `cat -n`; better formatting control.
+        - [Size]();-[H0]()
+    -  paste - merge lines of files *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `paste [OPTION]... [FILE]...`
+        - **Description**
+            - Joins corresponding lines from multiple files with tabs or delimiters.
+        - **When to Use It**
+            - Use to combine columns from different files line-by-line.
+        - **Common Flags**
+            - `-d` - Specify delimiter
+            - `-s` - Serial mode (combine all lines of each file)
+        - **Examples**
+            - `paste file1.txt file2.txt`
+            - `paste -d ',' col1 col2`
+        - **Notes / Gotchas**
+            - Files must have the same number of lines for clean output.
+        - [Size]();-[H0]()
+    -  printenv - print environment variables *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - Similar to `env`.
+        - **Synopsis**
+            - `printenv [VARIABLE]...`
+        - **Description**
+            - Displays current environment variables.
+        - **When to Use It**
+            - Use to check or debug environment variables in the shell.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `printenv`
+            - `printenv PATH`
+        - **Notes / Gotchas**
+            - Outputs only exported variables (visible to child processes).
+        - [Size]();-[H0]()
+    -  printf - format and print data *
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases. Also a shell built-in.
+        - **Synopsis**
+            - `printf FORMAT [ARGUMENT]...`
+        - **Description**
+            - Prints formatted output, similar to C's `printf`.
+        - **When to Use It**
+            - Use when precise formatting of output is needed in scripts.
+        - **Common Flags**
+            - None (formatting uses escape sequences like `\n`, `\t`, etc.)
+        - **Examples**
+            - `printf "%s\n" "Hello"`
+            - `printf "Hex: %x\n" 255`
+        - **Notes / Gotchas**
+            - Does not automatically append a newline.
+    -  readonly - mark variables as read-only *
+        - **Platforms**
+            - Unclassified (shell built-in, POSIX)
+        - **Synonyms/Aliases**
+            - Built-in in most POSIX-compliant shells.
+        - **Synopsis**
+            - `readonly NAME[=VALUE]`
+        - **Description**
+            - Declares a variable that cannot be changed or unset.
+        - **When to Use It**
+            - Use to protect variables from accidental modification.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `readonly HOME_DIR="/home/user"`
+        - **Notes / Gotchas**
+            - Once set, cannot be unset during that shell session.
+        - [Size]();-[H0]()
+    -  rev - reverse lines character by character *
+        - **Platforms**
+            - BSD
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `rev [FILE]...`
+        - **Description**
+            - Reverses the order of characters in each line of input.
+        - **When to Use It**
+            - Use for playful formatting, palindromes, or column manipulation.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `echo "Hello" | rev`―`olleH`
+            - `rev file.txt`
+        - **Notes / Gotchas**
+            - Works line-by-line, not word-by-word.
+        - [Size]();-[H0]()
+    -  seq - generate a sequence of numbers *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `seq [OPTION]... LAST`
+            - `seq [OPTION]... FIRST LAST`
+            - `seq [OPTION]... FIRST INCREMENT LAST`
+        - **Description**
+            - Outputs a sequence of numbers, one per line.
+        - **When to Use It**
+            - Use to generate numbers for loops or file generation.
+        - **Common Flags**
+            - `-f` - Custom format
+            - `-s` - Custom separator
+        - **Examples**
+            - `seq 5`
+            - `seq 1 2 10`
+            - `seq -s ', ' 1 5`
+        - **Notes / Gotchas**
+            - Can be replaced by brace expansion in bash (`{1..5}`).
+        - [Size]();-[H0]()
+    -  sleep - delay for a specified amount of time *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `sleep NUMBER[SUFFIX]...`
+        - **Description**
+            - Pauses execution for the given amount of time.
+        - **When to Use It**
+            - Use to delay commands or pause in scripts.
+        - **Common Flags**
+            - No flags, but supports `s`, `m`, `h`, `d` suffixes.
+        - **Examples**
+            - `sleep 5`
+            - `sleep 1m`
+        - **Notes / Gotchas**
+            - Accepts floating-point values on most systems.
+        - [Size]();-[H0]()
+    -  slocate - secure locate (now superseded by `mlocate`) *
+        - **Platforms**
+            - GNU
+        - **Synonyms/Aliases**
+            - Replaced by `mlocate`.
+        - **Synopsis**
+            - `slocate [OPTIONS] PATTERN`
+        - **Description**
+            - Searches a filename database, filtering results by user permissions.
+        - **When to Use It**
+            - Use to find files quickly while respecting access permissions.
+        - **Common Flags**
+            - Similar to `locate`: `-i`, `-c`, `-r`
+        - **Examples**
+            - `slocate .bashrc`
+        - **Notes / Gotchas**
+            - Usually replaced by `mlocate` on modern systems.
+        - [Size]();-[H0]()
+    -  {{sort}} - {{sort lines of text files}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `sort [OPTION]... [FILE]...`
+        - **Description**
+            - Sorts lines alphabetically or numerically.
+        - **When to Use It**
+            - Use to organize file contents or prepare data.
+        - **Common Flags**
+            - `-n` - Numeric sort
+            - `-r` - Reverse order
+            - `-u` - Unique lines only
+            - `-k` - Sort by specific field
+        - **Examples**
+            - `sort file.txt`
+            - `sort -nr values.txt`
+        - **Notes / Gotchas**
+            - Combine with `uniq` for deduplication.
+        - [Size]();-[H0]()
+    -  {{source}} - execute a script in the current shell *
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Unclassified (Shell built-in, POSIX in practice)
+        - **Synonyms/Aliases**
+            - Equivalent to `.` (dot command) in POSIX shells.
+        - **Synopsis**
+            - `source FILENAME`
+        - **Description**
+            - Runs a script in the current shell without starting a subshell.
+        - **When to Use It**
+            - Use to apply environment changes or define functions in the current session.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `source ~/.bashrc`
+            - `source ./env.sh`
+        - **Notes / Gotchas**
+            - Not part of POSIX but widely supported in `bash`, `zsh`.
+    -  stdbuf - modify buffering of command output *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `stdbuf OPTION... COMMAND`
+        - **Description**
+            - Alters buffering behavior (line, block, or none) for commands.
+        - **When to Use It**
+            - Use when command output buffering interferes with piping or real-time output.
+        - **Common Flags**
+            - `-o` - STDOUT buffering
+            - `-e` - STDERR buffering
+            - `-i` - STDIN buffering
+        - **Examples**
+            - `stdbuf -oL tail -f logfile`
+        - **Notes / Gotchas**
+            - Not all commands support buffer manipulation.
+        - [Size]();-[H0]()
+    -  strings - extract printable strings from binary files *
+        - **Platforms**
+            - BSD
+        - **Synonyms/Aliases**
+            - Often used with `grep`.
+        - **Synopsis**
+            - `strings [OPTIONS] FILE...`
+        - **Description**
+            - Searches binary files and extracts sequences of printable characters.
+        - **When to Use It**
+            - Use to analyze executables or memory dumps for readable content.
+        - **Common Flags**
+            - `-n` - Minimum string length
+        - **Examples**
+            - `strings a.out`
+            - `strings -n 8 binary.img`
+        - **Notes / Gotchas**
+            - Often used in reverse engineering or debugging.
+        - [Size]();-[H0]()
+    -  stty - change and print terminal line settings *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `stty [SETTING]...`
+        - **Description**
+            - Configures terminal line control settings (e.g., input modes, control chars).
+        - **When to Use It**
+            - Use to manipulate terminal I/O behavior.
+        - **Common Flags**
+            - `-a` - Print all settings
+            - `-g` - Print settings in storable format
+        - **Examples**
+            - `stty -a`
+            - `stty sane`
+        - **Notes / Gotchas**
+            - Changes only apply to the current terminal session.
+        - [Size]();-[H0]()
+    -  {{tee}} - {{read from standard input}} and {{write to standard output and files}} 
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `tee [OPTION]... [FILE]...`
+        - **Description**
+            - Splits input: shows it and saves it to file(s).
+        - **When to Use It**
+            - Use to log output while still seeing it in the terminal.
+        - **Common Flags**
+            - `-a` - Append instead of overwrite
+            - `-i` - Ignore interrupts
+        - **Examples**
+            - `command | tee output.log`
+            - `echo "test" | tee -a file.txt`
+        - **Notes / Gotchas**
+            - Can write to multiple files at once.
+        - [Size]();-[H0]()
+    -  tr - translate or delete characters *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `tr [OPTION]... SET1 [SET2]`
+        - **Description**
+            - Substitutes or removes characters in the input stream.
+        - **When to Use It**
+            - Use for character-level transformations (e.g., lowercase to uppercase).
+        - **Common Flags**
+            - `-d` - Delete characters
+            - `-s` - Squeeze repeated characters
+        - **Examples**
+            - `tr a-z A-Z`
+            - `tr -d '\r' < file.txt`
+        - **Notes / Gotchas**
+            - Works only on character streams (not files directly).
+        - [Size]();-[H0]()
+    -  tty - print terminal name *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `tty [OPTION]`
+        - **Description**
+            - Prints the file name of the terminal connected to stdin.
+        - **When to Use It**
+            - Use in scripts to check if input is from a terminal or pipe.
+        - **Common Flags**
+            - `-s` - Silent (return exit status only)
+        - **Examples**
+            - `tty`
+            - `tty -s && echo "Interactive"`
+        - **Notes / Gotchas**
+            - Useful for detecting interactive shells.
+        - [Size]();-[H0]()
+    -  {{unalias}} - {{remove alias definitions}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Debian, RHEL (Shell built-in)
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `unalias NAME [NAME...]`
+        - **Description**
+            - Removes previously defined shell aliases.
+        - **When to Use It**
+            - Use to restore original command behavior or clean up custom aliases.
+        - **Common Flags**
+            - `-a` - Remove all aliases
+        - **Examples**
+            - `unalias ll`
+            - `unalias -a`
+        - **Notes / Gotchas**
+            - Affects only the current shell session unless in startup files.
+    -  unexpand - convert spaces to tabs *
+        - **Platforms**
+            - GNU Coreutils
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `unexpand [OPTION]... [FILE]...`
+        - **Description**
+            - Converts sequences of spaces into tabs.
+        - **When to Use It**
+            - Use to reduce file size or reverse output of `expand`.
+        - **Common Flags**
+            - `-a` - Convert all space sequences
+            - `-t` - Set tab width
+        - **Examples**
+            - `unexpand -a file.txt`
+            - `unexpand -t 4 input.txt`
+        - **Notes / Gotchas**
+            - Does not modify the file unless redirected.
+        - [Size]();-[H0]()
+    -  {{uniq}} - {{report or omit repeated lines}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `uniq [OPTION]... [INPUT [OUTPUT]]`
+        - **Description**
+            - Filters adjacent matching lines from input.
+        - **When to Use It**
+            - Use to eliminate or count duplicates in sorted data.
+        - **Common Flags**
+            - `-c` - Count occurrences
+            - `-d` - Show only duplicates
+            - `-u` - Show only unique lines
+        - **Examples**
+            - `sort file.txt | uniq`
+            - `uniq -c sorted.txt`
+        - **Notes / Gotchas**
+            - Requires sorted input to be effective.
+        - [Size]();-[H0]()
+    -  updatedb - update the file search database *
+        - **Platforms**
+            - Unclassified (part of `mlocate` or `slocate`)
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `updatedb [OPTION]...`
+        - **Description**
+            - Regenerates the locate database for fast file searching.
+        - **When to Use It**
+            - Use after adding/removing files to keep `locate` accurate.
+        - **Common Flags**
+            - `--prunepaths` - Skip paths
+            - `--output` - Specify database location
+        - **Examples**
+            - `sudo updatedb`
+        - **Notes / Gotchas**
+            - Typically run by cron/`systemd` timer; requires root.
+        - [Size]();-[H0]()
+    -  {{whereis}} - {{locate binary, source}}, and {{manual page files for a command}} 
+        - **Platforms**
+            - Unclassified (Available in most Linux distros)
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `whereis [OPTIONS] COMMAND...`
+        - **Description**
+            - Finds location(s) of binary, source, and man files.
+        - **When to Use It**
+            - Use to check whether and where a command is installed.
+        - **Common Flags**
+            - `-b` - Search for binaries only
+            - `-m` - Search for man pages only
+            - `-s` - Search for source files only
+        - **Examples**
+            - `whereis bash`
+            - `whereis -b python3`
+        - **Notes / Gotchas**
+            - Does not rely on `PATH`; searches standard locations.
+        - [Size]();-[H0]()
+    -  {{which}} - {{shows the full path}} {{of (shell) commands}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Unclassified (common in Linux, BSD, macOS)
+        - **Synonyms/Aliases**
+            - Similar in purpose to `type` and `command -v`.
+        - **Synopsis**
+            - `which [OPTIONS] COMMAND...`
+        - **Description**
+            - Shows the full path of a command found in the user’s `$PATH`.
+        - **When to Use It**
+            - Use to verify which executable will run when a command is typed.
+        - **Common Flags**
+            - `-a` - Show all matching paths
+        - **Examples**
+            - `which python3`
+            - `which -a bash`
+        - **Notes / Gotchas**
+            - May be a shell alias; behavior varies slightly by system.
+            - Not part of POSIX—`command -v` is more portable.
+    -  {{xargs}} - {{build and execute command}}{{ lines from standard input}} 
+        - **Platforms**
+            - POSIX
+        - **Synonyms/Aliases**
+            - Often used with `find`, `echo`, `printf`.
+        - **Synopsis**
+            - `xargs [OPTIONS] [COMMAND]`
+        - **Description**
+            - Constructs command lines from input and executes them.
+        - **When to Use It**
+            - Use when you need to pass many arguments to a command from standard input.
+        - **Common Flags**
+            - `-n` - Max arguments per command line
+            - `-d` - Input delimiter
+            - `-0` - Null-terminated input (for use with `find -print0`)
+            - `-I {}` - Replace token with input
+        - **Examples**
+            - `echo file1 file2 | xargs rm`
+            - `find . -name "*.log" -print0 | xargs -0 rm`
+        - **Notes / Gotchas**
+            - Handles argument limits better than backticks or `$()` in scripts.
+        - [Size]();-[H0]()
+    -  yes - repeatedly output a string until killed *
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `yes [STRING]...`
+        - **Description**
+            - Outputs a string (or "y" by default) repeatedly to stdout.
+        - **When to Use It**
+            - Use for automated confirmation or stress testing.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `yes`―prints `y` continuously
+            - `yes | apt install foo`
+            - `yes "OK"`
+        - **Notes / Gotchas**
+            - Can consume CPU rapidly if not controlled with `head`, `sleep`, etc.
+        - [Size]();-[H0]()
+-  File and Directory Management
+    -  {{cd}} - {{change the working directory}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Debian, POSIX, RHEL (Shell Built-in)
+        - **Synonyms/Aliases**
+            - Built-in command in most shells.
+        - **Synopsis**
+            - `cd [DIRECTORY]`
+        - **Description**
+            - Changes the shell's current working directory.
+        - **When to Use It**
+            - Use to navigate into different directories.
+        - **Common Flags**
+            - No flags; behavior depends on arguments.
+        - **Examples**
+            - `cd /home/user`
+            - `cd ..`
+            - `cd ~`
+        - **Notes / Gotchas**
+            - `cd -` returns to the previous directory.
+            - `cd` with no argument goes to the home directory.
+    -  {{ls}} - {{list directory contents}} 
+        - [Size]();-[H0]()
+        - Synonyms/Aliases
+            - No standard aliases (but ll is often aliased to ls -l in many systems like Ubuntu or Fedora).
+        - Synopsis
+            - ls [OPTION]... [FILE]...
+        - Description
+            - Lists information about the files and directories in the specified location. If no path is given, it defaults to the current directory.
+        - When to Use It
+            - Use ls when you want to view the contents of a directory, inspect file names, or get metadata about files (e.g., size, permissions, timestamps).
+        - Common Flags
+            - -l - Long listing format - To view file details (size, perms, time)
+            - -a - Show all files including hidden - To include dotfiles like .bashrc
+            - -h - Human-readable sizes (with -l) - To see sizes like 1K, 2M, etc.
+            - -R - Recursive listing - To list all subdirectories recursively
+            - -S - Sort by file size - To find large files
+            - -t - Sort by modification time - To see recently modified files first
+        - Examples
+            - ls -l         # detailed list of files in current dir
+            - ls -la        # show all files including hidden ones
+            - ls /etc       # list contents of /etc directory
+            - ls -lh        # long listing with human-readable sizes
+            - ls -lS        # long listing sorted by size
+        - Notes / Gotchas
+            - Colors and formatting may vary depending on your terminal emulator or shell configuration.
+            - ls does not recursively list subdirectory contents unless you use -R.
+            - Using wildcards like ls *.txt will only show matching files—quoting patterns disables wildcard expansion.
+    -  {{cat}} - {{concatenate}} and {{print files}} 
+        - [Size]();-[H0]()
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `cat [OPTION]... [FILE]...`
+        - **Description**
+            - Reads files sequentially and writes them to standard output.
+        - **When to Use It**
+            - Use `cat` to display file contents, combine files, or redirect output.
+        - **Common Flags**
+            - `-n` - Number all output lines - When you want line numbers
+            - `-b` - Number non-blank lines - To ignore empty lines when numbering
+            - `-s` - Suppress repeated empty output lines - To condense multiple blank lines into one
+            - `-E` - Display `$` at end of each line - To visualize line endings
+        - **Examples**
+            - `cat file.txt`
+            - `cat file1.txt file2.txt > combined.txt`
+            - `cat -n file.txt`
+        - **Notes / Gotchas**
+            - `cat` is not suitable for viewing large files—use `less` instead.
+            - Use redirection (`>`) to write output to a file.
+    -  {{cp}} - {{copy files}} and {{directories}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `cp [OPTION]... SOURCE DEST`
+        - **Description**
+            - Copies files or directories to another location.
+        - **When to Use It**
+            - Use to duplicate files or backup content.
+        - **Common Flags**
+            - `-r` - Recursive - For directories
+            - `-i` - Prompt before overwrite
+            - `-f` - Force overwrite
+            - `-u` - Copy only if source is newer
+        - **Examples**
+            - `cp file.txt /tmp/`
+            - `cp -r dir1/ dir2/`
+        - **Notes / Gotchas**
+            - Use `-p` to preserve timestamps and permissions.
+        - [Size]();-[H0]()
+    -  {{mv}} - {{move (rename) files}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `mv [OPTION]... SOURCE DEST`
+        - **Description**
+            - Moves or renames files and directories.
+        - **When to Use It**
+            - Use to rename or relocate files.
+        - **Common Flags**
+            - `-i` - Prompt before overwrite
+            - `-f` - Force overwrite
+            - `-n` - No overwrite
+            - `-v` - Verbose
+        - **Examples**
+            - `mv file1.txt file2.txt`
+            - `mv *.txt archive/`
+        - **Notes / Gotchas**
+            - Moving across devices may be a copy + delete operation.
+        - [Size]();-[H0]()
+    -  {{rm}} - {{remove files}} or {{directories}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `rm [OPTION]... FILE...`
+        - **Description**
+            - Deletes files and directories.
+        - **When to Use It**
+            - Use to clean up unneeded files or folders.
+        - **Common Flags**
+            - `-r` - Recursive
+            - `-f` - Force deletion without prompt
+            - `-i` - Interactive prompt
+            - `-v` - Verbose
+        - **Examples**
+            - `rm file.txt`
+            - `rm -rf old_dir/`
+        - **Notes / Gotchas**
+            - `rm -rf /` is extremely dangerous. Use caution.
+        - [Size]();-[H0]()
+    -  {{tar}} - {{an archiving utility}} 
+        - **Platforms**
+            - Debian, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `tar [OPTION]... [FILE]...`
+        - **Description**
+            - Archives and extracts files (optionally compressed).
+        - **When to Use It**
+            - Use to bundle multiple files/folders or compress backups.
+        - **Common Flags**
+            - `-c` - Create archive
+            - `-x` - Extract archive
+            - `-v` - Verbose
+            - `-f` - Specify archive file
+            - `-z` - Compress with gzip
+        - **Examples**
+            - `tar -czvf backup.tar.gz folder/`
+            - `tar -xvzf archive.tar.gz`
+        - **Notes / Gotchas**
+            - The order of flags matters in short form (e.g., `-czvf`).
+            - Use `-C` to extract to a specific directory.
+        - [Size]();-[H0]()
+    -  {{touch}} - {{change file timestamps}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `touch [OPTION]... FILE...`
+        - **Description**
+            - Creates empty files or updates the access/modification times of existing files.
+        - **When to Use It**
+            - Use to create files or reset timestamps.
+        - **Common Flags**
+            - `-c` - Do not create files
+            - `-t` - Set timestamp manually
+            - `-r` - Use timestamp from reference file
+        - **Examples**
+            - `touch file.txt`
+            - `touch -t 202501011200.00 file.txt`
+        - **Notes / Gotchas**
+            - If the file exists, it only updates its timestamp.
+    -  {{gunzip}} - {{compress or expand files}} (.gz)
+        - **Platforms**
+            - Debian, RHEL
+        - **Synonyms/Aliases**
+            - Often a symlink to `gzip -d`.
+        - **Synopsis**
+            - `gunzip [OPTION]... FILE...`
+        - **Description**
+            - Decompresses `.gz` files, restoring the original content.
+        - **When to Use It**
+            - Use to extract compressed files created by `gzip`.
+        - **Common Flags**
+            - `-k` - Keep original `.gz` file
+            - `-v` - Verbose output
+        - **Examples**
+            - `gunzip archive.gz`
+            - `gunzip -k archive.gz`
+        - **Notes / Gotchas**
+            - Removes the `.gz` file by default unless `-k` is used.
+        - [Size]();-[H0]()
+    -  {{gzip}} - {{compress or expand files}} (GNU zip)
+        - **Platforms**
+            - Debian, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `gzip [OPTION]... FILE...`
+        - **Description**
+            - Compresses files using the DEFLATE algorithm, producing `.gz` files.
+        - **When to Use It**
+            - Use to reduce file size for storage or transfer.
+        - **Common Flags**
+            - `-k` - Keep original file
+            - `-v` - Verbose output
+            - `-r` - Recursively compress directories
+        - **Examples**
+            - `gzip file.txt`
+            - `gzip -k report.txt`
+        - **Notes / Gotchas**
+            - Removes the original file unless `-k` is used.
+            - Only compresses individual files, not folders.
+        - [Size]();-[H0]()
+    -  {{mkdir}} - {{make directories}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `mkdir [OPTION]... DIRECTORY...`
+        - **Description**
+            - Creates one or more new directories.
+        - **When to Use It**
+            - Use to create new directories in a filesystem.
+        - **Common Flags**
+            - `-p` - Make parent directories as needed
+            - `-v` - Verbose output
+        - **Examples**
+            - `mkdir myfolder`
+            - `mkdir -p /tmp/project/src`
+        - **Notes / Gotchas**
+            - `-p` suppresses errors if the directory already exists.
+        - [Size]();-[H0]()
+    -  {{unzip}} - {{list, test and extract compressed}} {{files in a ZIP archive}} 
+        - **Platforms**
+            - Debian, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `unzip [OPTION]... FILE.zip`
+        - **Description**
+            - Extracts files from `.zip` archives.
+        - **When to Use It**
+            - Use to unpack zipped content on Unix-like systems.
+        - **Common Flags**
+            - `-l` - List archive contents
+            - `-d DIR` - Extract to specified directory
+            - `-o` - Overwrite existing files
+        - **Examples**
+            - `unzip archive.zip`
+            - `unzip archive.zip -d /tmp/extracted/`
+        - **Notes / Gotchas**
+            - May need to install separately (`unzip` package).
+            - Does not preserve UNIX permissions.
+        - [Size]();-[H0]()
+    -  {{zip}} - {{package and compress}} {{(archive) files}} 
+        - **Platforms**
+            - Debian, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `zip [OPTION]... ARCHIVE FILE...`
+        - **Description**
+            - Compresses files into a `.zip` archive.
+        - **When to Use It**
+            - Use to bundle and compress files for portability.
+        - **Common Flags**
+            - `-r` - Recursive (include subdirectories)
+            - `-9` - Maximum compression
+            - `-q` - Quiet mode
+        - **Examples**
+            - `zip files.zip file1.txt file2.txt`
+            - `zip -r project.zip myproject/`
+        - **Notes / Gotchas**
+            - Use `-r` to archive directories.
+            - Does not compress symlinks as links by default.
+        - [Size]();-[H0]()
+    -  {{rmdir}} - {{remove empty directories}} 
+        - **Platforms**
+            - Debian, GNU Coreutils, POSIX, RHEL
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `rmdir [OPTION]... DIRECTORY...`
+        - **Description**
+            - Deletes directories, but only if they are empty.
+        - **When to Use It**
+            - Use to clean up unused, empty folders.
+        - **Common Flags**
+            - `-p` - Remove parent directories as well
+            - `--ignore-fail-on-non-empty` - Suppress errors for non-empty dirs
+        - **Examples**
+            - `rmdir emptydir`
+            - `rmdir -p path/to/empty/dir`
+        - **Notes / Gotchas**
+            - Will fail if the directory has contents.
+            - Use `rm -r` for non-empty directories.
+        - [Size]();-[H0]()
+    -  borg (Unclassified)
+        - [Size]();-[H0]()
+    -  bunzip2 (Debian, RHEL)
+        - [Size]();-[H0]()
+    -  {{bzip2}} -{{ a block-sorting}} {{file compressor}}, v1.0.8
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX-compatible
+        - **Synonyms/Aliases**
+            - `bunzip2` (for decompression), `bzcat` (view without extracting)
+        - **Synopsis**
+            - `bzip2 [OPTIONS] FILE...`
+        - **Description**
+            - Compresses files to `.bz2` format using block-sorting text compression.
+        - **When to Use It**
+            - Use for high-ratio file compression.
+        - **Common Flags**
+            - `-d` - Decompress
+            - `-k` - Keep original file
+            - `-v` - Verbose output
+        - **Examples**
+            - `bzip2 file.txt`―`file.txt.bz2`
+            - `bzip2 -dk archive.bz2`
+        - **Notes / Gotchas**
+            - Slower than gzip, but often achieves better compression ratios.
+    -  {{chgrp}} - {{change}} {{group ownership}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `chgrp [OPTION]... GROUP FILE...`
+        - **Description**
+            - Changes the group ownership of one or more files.
+        - **When to Use It**
+            - Use when you want to assign a file to a different group.
+        - **Common Flags**
+            - `-R` - Operate on files and directories recursively - To change ownership in subdirectories
+            - `-v` - Output a diagnostic for every file processed - For verbose output
+        - **Examples**
+            - `chgrp staff file.txt`
+            - `chgrp -R developers project_folder/`
+        - **Notes / Gotchas**
+            - You must belong to the group or be root to change group ownership.
+        - [Size]();-[H0]()
+    -  {{chsh}} - {{change your}} {{login shell}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `chsh [OPTION]... [LOGIN]`
+        - **Description**
+            - Changes the default login shell for a user.
+        - **When to Use It**
+            - Use to set your preferred shell (e.g., bash, zsh).
+        - **Common Flags**
+            - `-s SHELL` - Specify a new login shell - To explicitly set a shell like `/bin/zsh`
+            - `-l` - List available shells - To see which shells can be set
+        - **Examples**
+            - `chsh -s /bin/bash`
+            - `chsh -s /usr/bin/zsh`
+        - **Notes / Gotchas**
+            - User must specify a valid shell from `/etc/shells`.
+            - May require logout/login to take effect.
+        - [Size]();-[H0]()
+    -  cmp (POSIX)
+        - [Size]();-[H0]()
+    -  comm (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  cpio (Unclassified)
+        - [Size]();-[H0]()
+    -  csplit (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  dd (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  {{diff}} - {{compare two files}} 
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `diff [OPTIONS] FILE1 FILE2`
+        - **Description**
+            - Outputs line differences between files.
+        - **When to Use It**
+            - Use to see textual differences between two files.
+        - **Common Flags**
+            - `-u` - Unified diff (common for patches)
+            - `-r` - Compare directories recursively
+            - `-q` - Brief output (only whether files differ)
+        - **Examples**
+            - `diff file1.txt file2.txt`
+            - `diff -u old.c new.c`
+        - **Notes / Gotchas**
+            - Works only on text; for binaries use `cmp`.
+        - [Size]();-[H0]()
+    -  dir (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  dircolors (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  dump (Unclassified)
+        - [Size]();-[H0]()
+    -  duplicity (Unclassified)
+        - [Size]();-[H0]()
+    -  {{file}} - {{determine file type}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `file [OPTION]... FILE...`
+        - **Description**
+            - Examines file content to guess its type (text, binary, image, etc.).
+        - **When to Use It**
+            - Use to identify unknown or misnamed files.
+        - **Common Flags**
+            - `-i` - Show MIME type
+            - `-b` - Brief output (omit filename)
+        - **Examples**
+            - `file mydoc`
+            - `file -i image.png`
+        - **Notes / Gotchas**
+            - Uses a magic number database to identify types.
+    -  install (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  link (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  {{ln}} - {{make links}} {{between files}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `ln [OPTIONS] TARGET [LINK_NAME]`
+        - **Description**
+            - Creates hard links (default) or symbolic links (`-s`).
+        - **When to Use It**
+            - Use to link files/directories without duplication.
+        - **Common Flags**
+            - `-s` - Create symbolic (soft) link
+            - `-f` - Force overwrite
+            - `-v` - Verbose output
+        - **Examples**
+            - `ln file.txt link.txt` (hard link)
+            - `ln -s /var/www html` (symbolic link)
+        - **Notes / Gotchas**
+            - Hard links can't span filesystems; symlinks can.
+    -  lsof (Unclassified)
+        - [Size]();-[H0]()
+    -  md5sum (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  mkfifo (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  mknod (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  mktemp (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  {{more}} - {{display files on}}{{ a page-by-page basis}} (older pager utility)
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - Older alternative to `less`
+        - **Synopsis**
+            - `more [OPTIONS] FILE`
+        - **Description**
+            - Displays text one screen at a time, forward-only.
+        - **When to Use It**
+            - Use when `less` is unavailable.
+        - **Common Flags**
+            - `-d` - Prompt message at end of screen
+        - **Examples**
+            - `more file.txt`
+            - `command | more`
+        - **Notes / Gotchas**
+            - Cannot scroll backward.
+    -  newgrp (Unclassified)
+        - [Size]();-[H0]()
+    -  {{pwd}} - {{print working directory}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux (built-in in most shells)
+        - **Synopsis**
+            - `pwd`
+        - **Description**
+            - Prints the absolute path of the current directory.
+        - **When to Use It**
+            - Use to check or display your current location in the filesystem.
+        - **Common Flags**
+            - `-L` - Show logical path (follows symlinks)
+            - `-P` - Show physical path (resolves symlinks)
+        - **Examples**
+            - `pwd`
+            - `pwd -P`
+        - **Notes / Gotchas**
+            - `pwd` is often a shell built-in (`bash`, `zsh`, etc.).
+    -  rdiff-backup (Unclassified)
+        - [Size]();-[H0]()
+    -  readlink (Common Linux, GNU Coreutils)
+        - [Size]();-[H0]()
+    -  realpath (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  restic (Unclassified)
+        - [Size]();-[H0]()
+    -  restore (Unclassified)
+        - [Size]();-[H0]()
+    -  rsnapshot (Unclassified)
+        - [Size]();-[H0]()
+    -  rsync - fast, remote, and incremental file sync
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `rsync [OPTIONS] SRC DEST`
+        - **Description**
+            - Efficiently copies and syncs files locally or over SSH.
+        - **When to Use It**
+            - Use for backups, mirrors, or large transfers.
+        - **Common Flags**
+            - `-a` - Archive (recursive, preserve metadata)
+            - `-v` - Verbose
+            - `-z` - Compress during transfer
+            - `--delete` - Remove files not in source
+        - **Examples**
+            - `rsync -avz dir/ user@host:/data/`
+        - **Notes / Gotchas**
+            - Resumes interrupted transfers better than `scp`.
+    -  sha1sum (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  split (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  {{stat}} - {{display file}} or {{file system status}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `stat [OPTION]... FILE...`
+        - **Description**
+            - Displays metadata about files (size, permissions, timestamps, etc.).
+        - **When to Use It**
+            - Use to inspect file details beyond `ls -l`.
+        - **Common Flags**
+            - `-c` - Custom output format
+            - `-f` - Show filesystem status
+        - **Examples**
+            - `stat myfile.txt`
+            - `stat -c "%s %y" myfile.txt`
+        - **Notes / Gotchas**
+            - Returns inode info, last access/change times, and mode bits.
+    -  tac (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  truncate (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  uncompress (POSIX)
+        - [Size]();-[H0]()
+    -  unlink (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  unxz (Debian, RHEL)
+        - [Size]();-[H0]()
+    -  vdir (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  {{wc}} - {{word, line,  and byte}} or {{character counter}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `wc [OPTIONS] [FILE]...`
+        - **Description**
+            - Counts lines, words, and bytes in input or files.
+        - **When to Use It**
+            - Use to measure file size, length, or complexity.
+        - **Common Flags**
+            - `-l` - Count lines
+            - `-w` - Count words
+            - `-c` - Count bytes
+            - `-m` - Count characters
+        - **Examples**
+            - `wc file.txt`
+            - `wc -l *.log`
+        - **Notes / Gotchas**
+            - Output includes filename unless piped input.
+    -  {{xz}} - {{compress or decompress}} {{.xz and .lzma files}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX-compatible
+        - **Synonyms/Aliases**
+            - `unxz`, `xzcat`
+        - **Synopsis**
+            - `xz [OPTIONS] FILE...`
+        - **Description**
+            - Compresses files to `.xz` format using LZMA2 compression.
+        - **When to Use It**
+            - Use for maximum compression efficiency (better than gzip/bzip2).
+        - **Common Flags**
+            - `-d` - Decompress
+            - `-k` - Keep original
+            - `-T` - Multithreading (e.g., `-T0` = use all cores)
+        - **Examples**
+            - `xz file.txt`―`file.txt.xz`
+            - `xz -dk bigfile.xz`
+        - **Notes / Gotchas**
+            - Excellent compression, but slower and higher memory usage.
+    -  zforce (Unclassified)
+        - [Size]();-[H0]()
+-  User and Group Management
+    -  {{useradd}} - {{create a new user}} or {{update default new user information}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux (Debian, RHEL, etc.)
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `useradd [OPTIONS] USERNAME`
+        - **Description**
+            - Creates a new user account and sets default files/UID.
+        - **When to Use It**
+            - Use to add system or human users.
+        - **Common Flags**
+            - `-m` - Create home directory
+            - `-s` - Set shell
+            - `-G` - Add to supplementary groups
+            - `-u` - Specify UID
+        - **Examples**
+            - `useradd -m -s /bin/bash alice`
+        - **Notes / Gotchas**
+            - Password must be set separately with `passwd`.
+    -  {{su}} - {{run a command}} with {{substitute user and group ID}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - Short for “substitute user”
+        - **Synopsis**
+            - `su [OPTIONS] [USERNAME]`
+        - **Description**
+            - Starts a shell as another user (default: root).
+        - **When to Use It**
+            - Use to temporarily become another user or root.
+        - **Common Flags**
+            - `-` - Start login shell (load user environment)
+            - `-c` - Run a command as another user
+        - **Examples**
+            - `su`
+            - `su - alice`
+            - `su -c "apt update"`
+        - **Notes / Gotchas**
+            - Requires root password unless configured with sudoers.
+    -  {{usermod}} - {{modify a user account }} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `usermod [OPTIONS] USERNAME`
+        - **Description**
+            - Changes user settings like name, group, shell.
+        - **When to Use It**
+            - Use to update account details after creation.
+        - **Common Flags**
+            - `-l` - Change login name
+            - `-G` - Change groups
+            - `-s` - Change shell
+            - `-L/-U` - Lock/unlock account
+        - **Examples**
+            - `usermod -G sudo,wheel alice`
+        - **Notes / Gotchas**
+            - Must ensure user is not logged in for some changes.
+    -  adduser (Debian)
+        - [Size]();-[H0]()
+    -  {{chage}} - {{change user password}} {{expiry information}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `chage [OPTIONS] USERNAME`
+        - **Description**
+            - Sets password aging and expiration policy.
+        - **When to Use It**
+            - Use to enforce password renewal.
+        - **Common Flags**
+            - `-l` - List account aging info
+            - `-E` - Account expiration date
+            - `-M` - Max days between password changes
+        - **Examples**
+            - `chage -l alice`
+            - `chage -M 90 bob`
+        - **Notes / Gotchas**
+            - Useful for compliance/security environments.
+    -  chpasswd (Unclassified)
+        - [Size]();-[H0]()
+    -  deluser (Debian)
+        - [Size]();-[H0]()
+    -  {{groupadd}} - {{create a new group }} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `groupadd [OPTIONS] GROUPNAME`
+        - **Description**
+            - Adds a new group to the system.
+        - **When to Use It**
+            - Use to create roles or permission sets.
+        - **Common Flags**
+            - `-g` - Specify GID
+        - **Examples**
+            - `groupadd developers`
+        - **Notes / Gotchas**
+            - Use with `usermod -aG` to assign users.
+    -  {{groupmod}} - {{modify a group}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `groupmod [OPTIONS] GROUPNAME`
+        - **Description**
+            - Changes group name or GID.
+        - **When to Use It**
+            - Use to rename groups or fix IDs.
+        - **Common Flags**
+            - `-n` - New group name
+            - `-g` - New GID
+        - **Examples**
+            - `groupmod -n devs developers`
+        - **Notes / Gotchas**
+            - Affects file permissions tied to group ID.
+    -  {{groupdel}} - {{delete a group }} 
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `groupdel GROUPNAME`
+        - **Description**
+            - Removes a group from the system.
+        - **When to Use It**
+            - Use to clean up unused or obsolete groups.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `groupdel devs`
+        - **Notes / Gotchas**
+            - Does not remove group entries from files.
+        - [Size]();-[H0]()
+    -  {{groups}} - {{print the groups }} a {{user is in}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `groups [USERNAME]`
+        - **Description**
+            - Lists the groups a user belongs to.
+        - **When to Use It**
+            - Use to check access permissions.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `groups`
+            - `groups bob`
+        - **Notes / Gotchas**
+            - Lists both primary and supplementary groups.
+    -  grpck (Unclassified)
+        - [Size]();-[H0]()
+    -  grpconv (Unclassified)
+        - [Size]();-[H0]()
+    -  {{id}} - {{display user ID and group info }} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `id [USERNAME]`
+        - **Description**
+            - Shows UID, GID, and group memberships.
+        - **When to Use It**
+            - Use to verify user identity or permissions.
+        - **Common Flags**
+            - `-u` - Show only UID
+            - `-g` - Show only GID
+            - `-G` - Show all group IDs
+        - **Examples**
+            - `id`
+            - `id bob`
+        - **Notes / Gotchas**
+            - Helpful for debugging file permission issues.
+    -  lastlog (Unclassified)
+        - [Size]();-[H0]()
+    -  logname (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  newusers (Unclassified)
+        - [Size]();-[H0]()
+    -  pink (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  pwck (Unclassified)
+        - [Size]();-[H0]()
+    -  pwconv (Unclassified)
+        - [Size]();-[H0]()
+    -  ruptime (Unclassified)
+        - [Size]();-[H0]()
+    -  rusers (Unclassified)
+        - [Size]();-[H0]()
+    -  {{userdel}} - {{delete a user account}}  and {{related files}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `userdel [OPTIONS] USERNAME`
+        - **Description**
+            - Removes a user account from the system.
+        - **When to Use It**
+            - Use to clean up inactive accounts.
+        - **Common Flags**
+            - `-r` - Remove home directory and mail spool
+        - **Examples**
+            - `userdel -r alice`
+        - **Notes / Gotchas**
+            - Doesn’t remove files owned by the user elsewhere.
+    -  {{user}} - display current username *
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux (part of GNU Coreutils)
+        - **Synonyms/Aliases**
+            - Equivalent to `whoami`
+        - **Synopsis**
+            - `user`
+        - **Description**
+            - Prints the name of the current logged-in user.
+        - **When to Use It**
+            - Use to quickly identify user without extra info.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `user`
+        - **Notes / Gotchas**
+            - Rarely used; `whoami` or `id -un` is more common and portable.
+    - {{users}} - {{print the user names}} of {{users currently logged}} in to the {{current host}} 
+    -  {{who}} - {{show who is logged in}} 
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `who [OPTIONS]`
+        - **Description**
+            - Lists users currently logged in, along with session info.
+        - **When to Use It**
+            - Use to check active users and login times.
+        - **Common Flags**
+            - `-a` - Show all info
+            - `-q` - Quick list of usernames
+        - **Examples**
+            - `who`
+            - `who -a`
+        - **Notes / Gotchas**
+            - Shows info from `/var/run/utmp`—might differ from `w`.
+        - [Size]();-[H0]()
+    -  {{whoami}} - {{display current userid}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - Equivalent to `id -un`
+        - **Synopsis**
+            - `whoami`
+        - **Description**
+            - Prints the username associated with the current session.
+        - **When to Use It**
+            - Use in scripts or checks for user identity.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `whoami`
+        - **Notes / Gotchas**
+            - Simple and safe to use.
+    -  {{gpasswd}} - {{administer}} {{`/etc/group`}}{{ and  }}{{`/etc/gshadow`}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `gpasswd [OPTIONS] GROUP`
+        - **Description**
+            - Administers group membership and passwords.
+        - **When to Use It**
+            - Use to manage shared access to groups.
+        - **Common Flags**
+            - `-a` - Add user to group
+            - `-d` - Remove user from group
+            - `-A` - Set group administrators
+        - **Examples**
+            - `gpasswd -a bob devs`
+            - `gpasswd -d bob devs`
+        - **Notes / Gotchas**
+            - Can also assign passwords for group-based logins (rare use).
+    -  {{groupmems}} - {{administer members}} of a {{user's primary group}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux (usually from `shadow-utils`)
+        - **Synonyms/Aliases**
+            - Administers group membership directly via CLI
+        - **Synopsis**
+            - `groupmems [OPTIONS]`
+        - **Description**
+            - Adds or removes users from a group.
+        - **When to Use It**
+            - Use to manage group membership when using shadow groups.
+        - **Common Flags**
+            - `-a` - Add user
+            - `-d` - Delete user
+            - `-g` - Specify group
+        - **Examples**
+            - `groupmems -g devs -a alice`
+            - `groupmems -g devs -d bob`
+        - **Notes / Gotchas**
+            - Must be run as group admin or root.
+            - Not available on all systems by default.
+    -  {{last}} - {{show login history}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `last [OPTIONS] [USER]`
+        - **Description**
+            - Displays a list of last logins from `/var/log/wtmp`.
+        - **When to Use It**
+            - Use to audit user sessions and shutdown history.
+        - **Common Flags**
+            - `-n N` - Show last N entries
+            - `-x` - Show system shutdown, runlevel, reboot events
+        - **Examples**
+            - `last`
+            - `last -x`
+        - **Notes / Gotchas**
+            - Only as accurate as the `wtmp` log file; it may be rotated or cleared.
+-  Package and Software Management
+    -  apt (Debian)
+        - [Size]();-[H0]()
+    -  {{dnf}} - {{DNF Command Reference}} (YUM replacement)
+        - [Size]();-[H0]()
+        - **Platforms**
+            - RHEL, Fedora, CentOS, AlmaLinux, Rocky Linux
+        - **Synopsis**
+            - `dnf [OPTIONS] COMMAND [PACKAGE]`
+        - **Description**
+            - Handles installation, updating, and removal of software packages.
+        - **When to Use It**
+            - Use for managing software on RPM-based distributions.
+        - Key Commands
+            - **dnf install** - Install a new package
+                - `dnf install nginx`
+            - **dnf remove** - Uninstall a package
+                - `dnf remove httpd`
+            - **dnf update** - Update all or specific packages
+                - `dnf update` or `dnf update bash`
+            - **dnf search** - Search for packages by name/description
+                - `dnf search firewall`
+            - **dnf info** - Show details of a package
+                - `dnf info vim`
+            - **dnf provides** - Find which package owns a file
+                - `dnf provides /usr/bin/top`
+            - **dnf history** - Show transaction history
+                - `dnf history`
+            - **dnf list** - List available, installed, or updates
+                - `dnf list installed`
+                - `dnf list available`
+        - Notes / Gotchas
+            - `sudo` is required for install/remove/update actions
+            - Replaces `yum` on most newer RHEL-based systems
+    -  dpkg (Debian)
+        - [Size]();-[H0]()
+    -  {{yum}} - {{redirecting to DNF Command Reference}} 
+        - [Size]();-[H0]()
+    -  apt-cache (Debian)
+        - [Size]();-[H0]()
+    -  apt-get (Debian)
+        - [Size]();-[H0]()
+    -  cmake (Unclassified)
+        - [Size]();-[H0]()
+    -  cpp (Unclassified)
+        - [Size]();-[H0]()
+    -  dpkg-query (Debian)
+        - [Size]();-[H0]()
+    -  flex (Unclassified)
+        - [Size]();-[H0]()
+    -  g++ (Unclassified)
+        - [Size]();-[H0]()
+    -  gcc (Unclassified)
+        - [Size]();-[H0]()
+    -  gdb (Unclassified)
+        - [Size]();-[H0]()
+    -  gprof (Unclassified)
+        - [Size]();-[H0]()
+    -  ldd (Unclassified)
+        - [Size]();-[H0]()
+    -  ltrace (Unclassified)
+        - [Size]();-[H0]()
+    -  {{make}} - maintain, update, and regenerate groups of programs (DEVELOPMENT)
+        - [Size]();-[H0]()
+    -  nm (Unclassified)
+        - [Size]();-[H0]()
+    -  pacman (Unclassified)
+        - [Size]();-[H0]()
+    -  patch (Unclassified)
+        - [Size]();-[H0]()
+    -  ranlib (Unclassified)
+        - [Size]();-[H0]()
+    -  {{rpm}} - {{RPM Package Manager}} 
+        - **Platforms**
+            - RHEL, Fedora, CentOS, openSUSE, etc.
+        - **Synopsis**
+            - `rpm [OPTIONS] PACKAGE/FILE`
+        - **Description**
+            - Installs, queries, and verifies RPM packages directly.
+        - **When to Use It**
+            - Use for scripting, diagnostics, or when `dnf` is unavailable.
+        - [Size]();-[H0]()
+        - Key Commands
+            - **rpm -q** - Query installed package
+                - `rpm -q bash`
+            - **rpm -i** - Install a package
+                - `rpm -i package.rpm`
+            - **rpm -e** - Erase (uninstall) a package
+                - `rpm -e nano`
+            - **rpm -V** - Verify package integrity
+                - `rpm -V coreutils`
+        - Notes / Gotchas
+            - Does not resolve dependencies (use `dnf` for that)
+            - Useful for checking package metadata and troubleshooting
+    -  snap (Unclassified)
+        - [Size]();-[H0]()
+    -  strace (Unclassified)
+        - [Size]();-[H0]()
+    -  subscription-manager (RHEL)
+        - [Size]();-[H0]()
+    -  zypper (Unclassified)
+        - [Size]();-[H0]()
+-  System Monitoring and Performance
+    -  {{hostname}} - {{show or set the system hostname}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `hostname [NEW_NAME]`
+        - **Description**
+            - Gets or sets the system's network name.
+        - **When to Use It**
+            - Use to identify or change system name.
+        - **Common Flags**
+            - `-f` - FQDN
+            - `-i` - IP address
+        - **Examples**
+            - `hostname`
+            - `sudo hostname myserver`
+        - **Notes / Gotchas**
+            - Change may not persist unless also updated in `/etc/hostname`.
+    -  {{uname}} - {{print system information}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `uname [OPTION]...`
+        - **Description**
+            - Displays information about the system, kernel, and architecture.
+        - **When to Use It**
+            - Use to check OS, kernel version, or hardware platform.
+        - **Common Flags**
+            - `-a` - All info - Shows full system summary
+            - `-r` - Kernel release - For checking kernel version
+            - `-m` - Machine type - For hardware platform (like `arch`)
+            - `-n` - Node name (hostname)
+            - `-s` - Kernel name (usually “Linux”)
+        - **Examples**
+            - `uname -a`
+            - `uname -r`
+            - `uname -m`
+        - **Notes / Gotchas**
+            - Output is useful for troubleshooting and logging.
+            - `uname -a` includes most available system info in one call.
+        - [Size]();-[H0]()
+    -  {{uptime}} - {{tell how long the system}} {{has been running}} 
+        - [Size]();-[H0]()
+    -  {{free}} - {{display amount of free }}and {{used memory in the system}} 
+        - [Size]();-[H0]()
+    -  {{hostnamectl}} - {{control the system hostname}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Systemd-based Linux
+        - **Synopsis**
+            - `hostnamectl [OPTIONS]`
+        - **Description**
+            - Sets or displays the system hostname and related info.
+        - **When to Use It**
+            - Use to change static, transient, or pretty hostname.
+        - **Common Flags**
+            - `set-hostname` - Set hostname
+            - `--transient` or `--pretty` - Optional hostname types
+        - **Examples**
+            - `hostnamectl`
+            - `sudo hostnamectl set-hostname server1`
+        - **Notes / Gotchas**
+            - Persists changes across reboots (unlike `hostname`).
+    -  {{arch}} - {{display machine architecture}} 
+        - [Size]();-[H0]()
+        - **Synonyms/Aliases**
+            - Often a symlink to `uname -m`.
+        - **Synopsis**
+            - `arch`
+        - **Description**
+            - Prints the machine hardware name (e.g., `x86_64`, `aarch64`).
+        - **When to Use It**
+            - Use to identify CPU architecture for package compatibility or scripts.
+        - **Common Flags**
+            - No common flags; simple standalone command.
+        - **Examples**
+            - `arch`
+        - **Notes / Gotchas**
+            - Equivalent to `uname -m` on most systems.
+            - Output depends on actual kernel architecture.
+    -  htop (Debian, RHEL)
+        - [Size]();-[H0]()
+    -  {{domainname}} -{{ show or set the system's }}{{NIS/YP domain name}} 
+        - **Synonyms/Aliases**
+            - Related to `hostname`; not the DNS domain.
+        - **Synopsis**
+            - `domainname [name]`
+        - **Description**
+            - Displays or sets the system's NIS (Network Information Service) domain name.
+        - **When to Use It**
+            - Rarely used unless working with NIS-based networks.
+        - **Common Flags**
+            - None commonly used
+        - **Examples**
+            - `domainname`
+            - `sudo domainname exampledomain`
+        - **Notes / Gotchas**
+            - Does not affect DNS; sets only NIS name.
+            - Typically empty or unused in most modern setups.
+        - [Size]();-[H0]()
+    -  dstat (Unclassified)
+        - [Size]();-[H0]()
+    -  glances (Unclassified)
+        - [Size]();-[H0]()
+    -  {{host}} - {{DNS lookup utility}} 
+        - **Synonyms/Aliases**
+            - Alternative to `dig` and `nslookup`.
+        - **Synopsis**
+            - `host [options] name [server]`
+        - **Description**
+            - Performs DNS lookups to resolve names to IPs or vice versa.
+        - **When to Use It**
+            - Use to troubleshoot or inspect DNS resolution.
+        - **Common Flags**
+            - `-t TYPE` - Specify record type (A, MX, NS) - For specific DNS record queries
+            - `-a` - All records - To query all types of records
+            - `-v` - Verbose mode - To increase detail
+        - **Examples**
+            - `host google.com`
+            - `host -t MX gmail.com`
+            - `host example.com 1.1.1.1`
+        - **Notes / Gotchas**
+            - Faster and simpler than `dig` for basic lookups.
+            - May not be installed by default on minimal systems.
+        - [Size]();-[H0]()
+    -  {{hostid}} - {{print the numeric identifier}} {{for the current host}} 
+        - [Size]();-[H0]()
+    - {{hosts}} - {{static table lookup}} for {{hostnames}} 
+    -  iotop (Unclassified)
+        - [Size]();-[H0]()
+    -  lsb_release (Unclassified)
+        - [Size]();-[H0]()
+    -  {{lscpu}} - display information about the CPU architecture  
+        - [Size]();-[H0]()
+    -  {{lsmem}} - list the ranges of available memory with their online status
+        - [Size]();-[H0]()
+    -  ncdu (Common Linux)
+        - [Size]();-[H0]()
+    -  nmon (Unclassified)
+        - [Size]();-[H0]()
+    -  {{nproc}} - report virtual memory statistics
+        - [Size]();-[H0]()
+    -  vmstat (RHEL)
+        - [Size]();-[H0]()
+    -  {{w}} - {{show who is logged in}} and {{what they are doing}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `w [OPTIONS]`
+        - **Description**
+            - Displays users currently logged in and their activity.
+        - **When to Use It**
+            - Use to monitor interactive users and terminal activity.
+        - **Common Flags**
+            - `-h` - Hide header
+            - `-s` - Short format
+        - **Examples**
+            - `w`
+            - `w -s`
+        - **Notes / Gotchas**
+            - Useful for spotting idle users or long sessions.
+-  Networking and Connectivity
+    -  {{curl}} - {{transfer a URL}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `curl [OPTIONS] URL`
+        - **Description**
+            - Transfers data using HTTP, FTP, etc., supports uploads and APIs.
+        - **When to Use It**
+            - Use to interact with web APIs or download files.
+        - **Common Flags**
+            - `-O` - Save to file
+            - `-L` - Follow redirects
+            - `-d` - Send POST data
+            - `-H` - Set headers
+        - **Examples**
+            - `curl -O https://example.com/file.txt`
+            - `curl -X POST -d "a=1" https://api.example.com`
+        - **Notes / Gotchas**
+            - Can simulate browsers or automate API tasks.
+    -  {{ip}} -{{ show/manipulate routing}}, {{network devices, interfaces and tunnels}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - POSIX, Common Linux (iproute2 package)
+        - **Synopsis**
+            - `ip [OBJECT] [COMMAND]`
+        - **Description**
+            - Replaces older `ifconfig`, `route`, `netstat`.
+        - **When to Use It**
+            - Use to manage IPs, routes, links, and more.
+        - **Common Flags**
+            - `addr`, `link`, `route`, `neigh`, `a`, `r`, `l`
+        - **Examples**
+            - `ip addr show`
+            - `ip route add default via 192.168.1.1`
+        - **Notes / Gotchas**
+            - Often requires `sudo` for changes.
+    -  {{ping}} - {{send ICMP ECHO_REQUEST }}{{to network hosts}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `ping [options] destination`
+        - **Description**
+            - Tests connectivity to a host by sending ICMP echo requests.
+        - **When to Use It**
+            - Use to test whether a host is reachable and how long it takes.
+        - **Common Flags**
+            - `-c` - Number of packets to send - To limit how many pings to send
+            - `-i` - Interval between packets - To wait between pings
+            - `-t` - Set time-to-live - To limit number of hops
+        - **Examples**
+            - `ping google.com`
+            - `ping -c 4 8.8.8.8`
+            - `ping -i 2 github.com`
+        - **Notes / Gotchas**
+            - May be blocked by firewalls.
+            - Works with IPv4 and IPv6.
+        - [Size]();-[H0]()
+    -  {{wget}} - {{non-interactive}} {{file downloader}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synopsis**
+            - `wget [OPTIONS] URL`
+        - **Description**
+            - Retrieves content from web/FTP sites and saves locally.
+        - **When to Use It**
+            - Use for downloading large files or recursive sites.
+        - **Common Flags**
+            - `-O` - Output file
+            - `-r` - Recursive
+            - `-c` - Resume downloads
+            - `--limit-rate` - Throttle speed
+        - **Examples**
+            - `wget https://example.com/file.iso`
+            - `wget -r https://example.com/docs/`
+        - **Notes / Gotchas**
+            - More suited for file downloads than APIs.
+    -  {{ifconfig}} - {{configure network interfaces}} 
+        - [Size]();-[H0]()
+        - **Synonyms/Aliases**
+            - Deprecated in favor of `ip` on modern systems.
+        - **Synopsis**
+            - `ifconfig [interface] [options]`
+        - **Description**
+            - Displays or configures a network interface (IP, MAC, etc.).
+        - **When to Use It**
+            - Use for checking or configuring older network interfaces.
+        - **Common Flags**
+            - `up` - Enable the interface - To activate a network interface
+            - `down` - Disable the interface - To deactivate an interface
+            - `inet addr` - Set IP address - To manually assign an IP
+        - **Examples**
+            - `ifconfig`
+            - `ifconfig eth0`
+            - `ifconfig eth0 up`
+            - `ifconfig eth0 192.168.1.10 netmask 255.255.255.0`
+        - **Notes / Gotchas**
+            - Use `ip addr` instead on newer systems.
+            - May not be installed by default.
+    -  {{ss}} - {{another utility}} to {{investigate sockets}} 
+        - **Synonyms/Aliases**
+            - Replacement for `netstat`.
+        - **Synopsis**
+            - `ss [options]`
+        - **Description**
+            - Shows detailed socket statistics including TCP/UDP connections.
+        - **When to Use It**
+            - Use to inspect active or listening network sockets quickly.
+        - **Common Flags**
+            - `-t` - Show TCP sockets - To limit to TCP
+            - `-u` - Show UDP sockets - To view UDP-only
+            - `-l` - Listening sockets - To see what is accepting connections
+            - `-n` - Don't resolve names - For faster output
+            - `-p` - Show process info - To identify what app owns a socket
+        - **Examples**
+            - `ss -tuln`
+            - `ss -p state listening`
+            - `ss -an`
+        - **Notes / Gotchas**
+            - Faster and more accurate than `netstat`.
+            - Available by default on most modern distros.
+        - [Size]();-[H0]()
+    -  {{traceroute}} - print the route packets take to a network host *
+        - **Synonyms/Aliases**
+            - On some systems, replaced by `tracepath`.
+        - **Synopsis**
+            - `traceroute [options] destination`
+        - **Description**
+            - Displays the route packets take to a host across a network.
+        - **When to Use It**
+            - Use to identify each hop and latency between you and a destination.
+        - **Common Flags**
+            - `-m` - Set max hops - To limit how far packets can go
+            - `-n` - Don’t resolve hostnames - To speed up output
+            - `-w` - Set wait time - To handle slow networks
+        - **Examples**
+            - `traceroute google.com`
+            - `traceroute -n github.com`
+            - `traceroute -m 20 example.com`
+        - **Notes / Gotchas**
+            - May require root on some systems.
+            - Some routers may not respond to traceroute packets.
+        - [Size]();-[H0]()
+    -  ethtool (Unclassified)
+        - [Size]();-[H0]()
+    -  {{iptables}} - {{administration tool for IPv4/IPv6}} {{packet filtering and NAT}} 
+        - **Synonyms/Aliases**
+            - Replaced by `nftables` on many systems.
+        - **Synopsis**
+            - `iptables [-t table] COMMAND [chain] [options]`
+        - **Description**
+            - Sets up, maintains, and inspects the IP packet filter rules.
+        - **When to Use It**
+            - Use to control network traffic and firewall rules.
+        - **Common Flags**
+            - `-A` - Append a rule - To add a new rule to a chain
+            - `-D` - Delete a rule - To remove a rule from a chain
+            - `-L` - List rules - To see current rules
+            - `-F` - Flush rules - To remove all rules
+        - **Examples**
+            - `iptables -L`
+            - `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
+            - `iptables -F`
+        - **Notes / Gotchas**
+            - Requires root privileges.
+            - Changes are not persistent—use `iptables-persistent` or a startup script.
+        - [Size]();-[H0]()
+    -  iwconfig (Unclassified)
+        - [Size]();-[H0]()
+    -  mail (Unclassified)
+        - [Size]();-[H0]()
+    -  mailx (POSIX)
+        - [Size]();-[H0]()
+    -  makemap (Unclassified)
+        - [Size]();-[H0]()
+    -  {{nc}} - {{concatenate and redirect sockets}} 
+        - **Synonyms/Aliases**
+            - Also known as `netcat`.
+        - **Synopsis**
+            - `nc [options] host port`
+        - **Description**
+            - Reads and writes data across network connections using TCP or UDP.
+        - **When to Use It**
+            - Use for testing ports, setting up ad-hoc listeners, or transferring files.
+        - **Common Flags**
+            - `-l` - Listen mode - To create a simple server socket
+            - `-u` - UDP mode - To use UDP instead of TCP
+            - `-z` - Zero-I/O mode - For port scanning
+            - `-v` - Verbose - For connection feedback
+        - **Examples**
+            - `nc -zv 192.168.1.1 22-80`
+            - `nc -l 1234`
+            - `nc example.com 80`
+        - **Notes / Gotchas**
+            - Powerful and sometimes misused in exploits; may be blocked by security tools.
+            - Different versions exist (`openbsd-netcat`, `gnu-netcat`, etc.).
+        - [Size]();-[H0]()
+    -  {{netstat}} - {{print network connections, routing tables}}, {{interface statistics, masquerade connections}}, and {{multicast memberships}} 
+        - **Synonyms/Aliases**
+            - Replaced by `ss` and `ip route` on newer systems.
+        - **Synopsis**
+            - `netstat [options]`
+        - **Description**
+            - Displays open sockets, routing tables, interface stats, and more.
+        - **When to Use It**
+            - Use to inspect network status and active connections.
+        - **Common Flags**
+            - `-t` - Show TCP connections - To focus on TCP only
+            - `-u` - Show UDP connections - To see UDP sockets
+            - `-l` - Show only listening sockets - To check open ports
+            - `-r` - Show routing table - To view current routing info
+            - `-n` - Show numeric addresses - To avoid hostname lookups
+        - **Examples**
+            - `netstat -tuln`
+            - `netstat -r`
+            - `netstat -anp`
+        - **Notes / Gotchas**
+            - Use `ss` or `ip` for modern replacements.
+            - Some options may vary by distribution.
+        - [Size]();-[H0]()
+    -  newaliases (Unclassified)
+        - [Size]();-[H0]()
+    -  {{nmcli}} - {{command-line tool}} for {{controlling NetworkManager}} 
+        - **Platforms**
+            - Common Linux (NetworkManager required)
+        - **Synopsis**
+            - `nmcli [OPTIONS] OBJECT COMMAND`
+        - **Description**
+            - Used to configure and view network settings via CLI.
+        - **When to Use It**
+            - Use to manage interfaces, Wi-Fi, VPNs, and connections.
+        - **Common Flags**
+            - `device`, `connection`, `wifi`, `general`
+        - **Examples**
+            - `nmcli device status`
+            - `nmcli connection up id "Home Wi-Fi"`
+        - **Notes / Gotchas**
+            - More powerful and scriptable than `nmtui`.
+        - [Size]();-[H0]()
+    -  {{nmtui}} - {{text user interface}} for {{controlling NetworkManager}} 
+        - **Platforms**
+            - Common Linux (NetworkManager required)
+        - **Synopsis**
+            - `nmtui`
+        - **Description**
+            - A text-based, interactive tool for managing network settings.
+        - **When to Use It**
+            - Use for configuring network when GUI is unavailable.
+        - **Examples**
+            - `nmtui`
+        - **Notes / Gotchas**
+            - Easier for beginners than `nmcli`, runs in terminal.
+        - [Size]();-[H0]()
+    -  {{nslookup}} - {{query Internet name}} {{servers interactively}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `nslookup [host] [server]`
+        - **Description**
+            - Performs DNS lookups for hostnames or IP addresses.
+        - **When to Use It**
+            - Use to troubleshoot DNS issues or find IP/domain info.
+        - **Common Flags**
+            - `-type=TYPE` - Specify query type - To search for `A`, `MX`, `NS`, etc.
+            - `server NAME` - Use a specific DNS server - To test against custom resolvers
+        - **Examples**
+            - `nslookup google.com`
+            - `nslookup -type=MX gmail.com`
+            - `nslookup example.com 8.8.8.8`
+        - **Notes / Gotchas**
+            - Being phased out in favor of `dig` and `host`.
+            - Behavior may differ slightly on Windows vs Linux.
+        - [Size]();-[H0]()
+    -  postfix (Unclassified)
+        - [Size]();-[H0]()
+    -  procmail (Unclassified)
+        - [Size]();-[H0]()
+    -  {{tcpdump }}- {{dump traffic on a network}} 
+        - [Size]();-[H0]()
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `tcpdump [options] [expression]`
+        - **Description**
+            - Captures and displays packets on a network interface.
+        - **When to Use It**
+            - Use to inspect live network traffic for analysis or debugging.
+        - **Common Flags**
+            - `-i` - Interface - To specify which interface to capture from
+            - `-n` - Don’t resolve hostnames - To improve performance
+            - `-v`, `-vv`, `-vvv` - Verbose output - For more packet details
+            - `-c` - Packet count - To stop after a number of packets
+            - `-w` - Write to file - To save output for later analysis
+        - **Examples**
+            - `tcpdump -i eth0`
+            - `tcpdump -n -c 10 port 80`
+            - `tcpdump -w capture.pcap`
+        - **Notes / Gotchas**
+            - Requires root privileges.
+            - Can generate large output; use filters to narrow data.
+-  Security and Permissions
+    -  {{chm}}{{od}} - {{change file modes (permissions) }} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `chmod [OPTION]... MODE[,MODE]... FILE...`
+        - **Description**
+            - Changes the read, write, and execute permissions on a file or directory.
+        - **When to Use It**
+            - Use to adjust who can read, write, or execute a file.
+        - **Common Flags**
+            - `-R` - Change files and directories recursively - To update an entire folder
+            - `--reference=RFILE` - Use RFILE's mode - To match permissions to another file
+        - **Examples**
+            - `chmod 755 script.sh`
+            - `chmod -R 644 *.txt`
+            - `chmod u+x runme.sh`
+        - **Notes / Gotchas**
+            - Use symbolic (`u+x`) or numeric (`755`) notation.
+            - Be careful when changing permissions on system files.
+    -  {{chown}} - {{change file owner and group }} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `chown [OPTION]... [OWNER][:[GROUP]] FILE...`
+        - **Description**
+            - Changes the owner and optionally the group of each file.
+        - **When to Use It**
+            - Use when you want to transfer file ownership.
+        - **Common Flags**
+            - `-R` - Operate recursively - To change ownership in directories and subdirectories
+            - `--reference=RFILE` - Use RFILE’s owner/group - To copy ownership from another file
+        - **Examples**
+            - `chown user1 file.txt`
+            - `chown user1:group1 file.txt`
+            - `chown -R user1 dir/`
+        - **Notes / Gotchas**
+            - Requires root privileges.
+            - Ownership change can affect file access.
+    -  auditctl (Unclassified)
+    -  ausearch (Unclassified)
+    -  badblocks (Unclassified)
+    -  {{chattr}} - {{change file attributes}} on a {{Linux file system}} 
+        - **Synonyms/Aliases**
+            - No standard aliases.
+        - **Synopsis**
+            - `chattr [OPTIONS] OPERATOR ATTRIBUTES FILE`
+        - **Description**
+            - Changes special file attributes on ext2/ext3/ext4 file systems.
+        - **When to Use It**
+            - Use to protect files from accidental modification or deletion.
+        - **Common Flags**
+            - `+i` - Set immutable flag - To prevent any modifications to the file
+            - `-i` - Clear immutable flag - To allow changes to a protected file
+            - `+a` - Set append-only flag - To allow appending only (e.g., logs)
+        - **Examples**
+            - `chattr +i important.txt`
+            - `chattr -i important.txt`
+            - `chattr +a logfile.txt`
+        - **Notes / Gotchas**
+            - Must be run as root or with `sudo`.
+            - Not all file systems support `chattr`.
+    -  {{chcon}} - change SELinux context manually
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `chcon [OPTIONS] CONTEXT FILE`
+        - **Description**
+            - Temporarily changes file context (not persistent).
+        - **When to Use It**
+            - Use for quick testing or non-permanent overrides.
+        - **Examples**
+            - `chcon -t httpd_sys_content_t index.html`
+        - **Notes / Gotchas**
+            - Overwritten by `restorecon` or relabeling events.
+    -  {{chr}}{{oot}} - {{change root directory}} 
+    -  {{firewall-cmd}} - manage firewalld rules
+        - **Platforms**
+            - RHEL, Fedora, other firewalld-enabled systems
+        - **Synopsis**
+            - `firewall-cmd [OPTIONS]`
+        - **Description**
+            - CLI interface for dynamic firewall configuration via firewalld.
+        - **When to Use It**
+            - Use to add/remove services or ports, reload zones, etc.
+        - Key Commands
+            - **--get-active-zones** - Show zones in use
+                - `firewall-cmd --get-active-zones`
+            - **--add-port=PORT/PROTO** - Allow port access
+                - `firewall-cmd --add-port=8080/tcp`
+            - **--add-service=NAME** - Allow a named service
+                - `firewall-cmd --add-service=http`
+            - **--permanent** - Make the change persist after reboot
+                - `firewall-cmd --permanent --add-service=ssh`
+            - **--reload** - Apply permanent changes
+                - `firewall-cmd --reload`
+        - Notes / Gotchas
+            - Always use `--permanent` with `--reload` to persist changes.
+            - `firewalld` must be running (`systemctl status firewalld`).
+    -  {{getenforce}} - get current SELinux mode
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `getenforce`
+        - **Description**
+            - Prints current SELinux mode (`Enforcing`, `Permissive`, or `Disabled`).
+        - **When to Use It**
+            - Use to check if SELinux is actively enforcing policies.
+        - **Examples**
+            - `getenforce`
+        - **Notes / Gotchas**
+            - Does not show detailed status (use `sestatus` for that).
+    -  {{getfa}}{{cl}} - get file access control list (ACL)
+        - **Platforms**
+            - Common Linux (requires ACL support)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `getfacl [OPTIONS] FILE...`
+        - **Description**
+            - Displays file permissions including extended ACLs.
+        - **When to Use It**
+            - Use to inspect complex file permissions beyond `ls -l`.
+        - **Common Flags**
+            - `-n` - Show numeric UID/GID
+            - `-R` - Recursively list ACLs
+        - **Examples**
+            - `getfacl file.txt`
+        - **Notes / Gotchas**
+            - Requires filesystem and mount to support ACLs.
+    -  {{restorecon}} - apply SELinux file contexts
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `restorecon [OPTIONS] FILE`
+        - **Description**
+            - Restores default SELinux context labels from policy.
+        - **When to Use It**
+            - Use after moving or modifying files.
+        - **Common Flags**
+            - `-R` - Recursive
+        - **Examples**
+            - `restorecon -Rv /web`
+        - **Notes / Gotchas**
+            - Requires policy definitions (see `semanage`).
+    -  runcon (GNU Coreutils)
+    -  {{semanage}} - configure SELinux policy settings
+        - **Platforms**
+            - RHEL-based, with `policycoreutils-python` or `python3-libsemanage`
+        - **Synopsis**
+            - `semanage [OBJECT] -[op] ARGUMENTS`
+        - **Description**
+            - Manages SELinux contexts, booleans, ports, and more.
+        - **When to Use It**
+            - Use to permanently set SELinux rules and labels.
+        - **Common Flags**
+            - `semanage fcontext`, `port`, `boolean`, `login`
+        - **Examples**
+            - `semanage port -l`
+            - `semanage fcontext -a -t httpd_sys_content_t "/web(/.*)?"`
+        - **Notes / Gotchas**
+            - Changes usually require `restorecon` to apply.
+    -  {{sete}}{{nforce}} - set SELinux mode
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `setenforce [0|1]`
+        - **Description**
+            - Temporarily sets SELinux to `Permissive (0)` or `Enforcing (1)`.
+        - **When to Use It**
+            - Use for troubleshooting or allowing temporary policy violations.
+        - **Examples**
+            - `setenforce 0`
+        - **Notes / Gotchas**
+            - Doesn’t persist across reboots—edit `/etc/selinux/config` for permanence.
+    -  {{setfacl}} - set file access control list (ACL)
+        - **Platforms**
+            - Common Linux (with ACL support)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `setfacl [OPTIONS] ACL_SPEC FILE...`
+        - **Description**
+            - Modifies ACL entries on files/directories.
+        - **When to Use It**
+            - Use to set per-user/group permissions beyond basic chmod.
+        - **Common Flags**
+            - `-m` - Modify ACL entry
+            - `-x` - Remove ACL entry
+            - `-b` - Remove all ACLs
+        - **Examples**
+            - `setfacl -m u:bob:rw file.txt`
+            - `setfacl -x u:bob file.txt`
+        - **Notes / Gotchas**
+            - Inherited ACLs can override basic permission bits.
+    -  shred (GNU Coreutils)
+    -  {{sestatus}} - show detailed SELinux status
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `sestatus`
+        - **Description**
+            - Displays status, policy, mode, and context information.
+        - **When to Use It**
+            - Use for a complete SELinux overview.
+        - **Examples**
+            - `sestatus`
+        - **Notes / Gotchas**
+            - Useful for checking loaded policies and file contexts.
+    -  {{matchpathcon}} - show expected SELinux context
+        - **Platforms**
+            - RHEL-based, SELinux-enabled systems
+        - **Synopsis**
+            - `matchpathcon FILE`
+        - **Description**
+            - Displays what SELinux context  *should*  be applied.
+        - **When to Use It**
+            - Use to troubleshoot incorrect labels.
+        - **Examples**
+            - `matchpathcon /var/www/html/index.html`
+        - **Notes / Gotchas**
+            - Doesn’t modify anything—use with `restorecon`.
+-  Process and Job Control
+    -  {{ps}} - report current processes
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `ps [OPTIONS]`
+        - **Description**
+            - Lists currently running processes.
+        - **When to Use It**
+            - Use to monitor or search for processes.
+        - **Common Flags**
+            - `-e` - Show all processes
+            - `-f` - Full-format listing
+            - `-u USER` - Filter by user
+            - `aux` - BSD-style, all processes
+        - **Examples**
+            - `ps aux`
+            - `ps -ef | grep apache`
+        - **Notes / Gotchas**
+            - Output formatting varies by flags and system.
+    -  {{top}} - display linux processes
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `top`
+        - **Description**
+            - Continuously shows system processes and resource usage.
+        - **When to Use It**
+            - Use to monitor system activity live.
+        - **Common Flags**
+            - `-u USER` - Filter by user
+            - `-n N` - Number of iterations
+        - **Examples**
+            - `top`
+            - `top -u root`
+        - **Notes / Gotchas**
+            - Press `q` to quit, `h` for help, `k` to kill.
+    -  {{kill}} - send signals to processes
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `kill [OPTIONS] PID...`
+        - **Description**
+            - Sends a signal (default: TERM) to process(es).
+        - **When to Use It**
+            - Use to terminate or control processes.
+        - **Common Flags**
+            - `-9` - SIGKILL (force kill)
+            - `-15` - SIGTERM (default)
+        - **Examples**
+            - `kill 1234`
+            - `kill -9 5678`
+        - **Notes / Gotchas**
+            - Use `ps` or `pgrep` to find PIDs.
+    -  {{killall}} - send signals to processes by name
+        - **Platforms**
+            - Common Linux (not POSIX)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `killall [OPTIONS] NAME`
+        - **Description**
+            - Kills all processes matching a name.
+        - **When to Use It**
+            - Use to end all instances of a command.
+        - **Common Flags**
+            - `-9` - Force kill
+            - `-u USER` - Match processes by user
+        - **Examples**
+            - `killall firefox`
+            - `killall -9 python3`
+        - **Notes / Gotchas**
+            - Name must match the command exactly.
+    -  {{bg}} - resume a suspended job in the background
+        - **Platforms**
+            - POSIX (shell built-in)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `bg [JOB]`
+        - **Description**
+            - Resumes a paused job to run in the background.
+        - **When to Use It**
+            - Use to continue a suspended task without blocking the terminal.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `bg %1`
+        - **Notes / Gotchas**
+            - Use with `jobs` to get job IDs.
+    -  {{fg}} - bring a job to the foreground
+        - **Platforms**
+            - POSIX (shell built-in)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `fg [JOB]`
+        - **Description**
+            - Resumes a job in the foreground.
+        - **When to Use It**
+            - Use to regain control of a background or suspended job.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `fg %1`
+        - **Notes / Gotchas**
+            - Suspended jobs must be resumed via `fg` or `bg`.
+    -  fuser (Unclassified)
+    -  jobs (Unclassified)
+    -  {{jobs}} - list active jobs in the shell
+        - **Platforms**
+            - POSIX (shell built-in)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `jobs [OPTIONS]`
+        - **Description**
+            - Displays background or suspended jobs in the current shell.
+        - **When to Use It**
+            - Use to manage background tasks.
+        - **Common Flags**
+            - `-l` - Show PID
+        - **Examples**
+            - `jobs`
+        - **Notes / Gotchas**
+            - Only works in the current shell session.
+    -  {{nice}} - run a program with adjusted priority
+        - **Platforms**
+            - POSIX, GNU Coreutils
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `nice [-n ADJUSTMENT] COMMAND`
+        - **Description**
+            - Runs a command with a specified niceness (priority).
+        - **When to Use It**
+            - Use to reduce CPU priority of long-running tasks.
+        - **Common Flags**
+            - `-n` - Niceness value (default: 10)
+        - **Examples**
+            - `nice -n 15 ./backup.sh`
+        - **Notes / Gotchas**
+            - Lower value = higher priority (range: -20 to 19).
+    -  nohup (GNU Coreutils)
+    -  pstree (Unclassified)
+    -  {{renice}} - change priority of a running process
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `renice [OPTIONS] priority -p PID`
+        - **Description**
+            - Adjusts niceness of an already running process.
+        - **When to Use It**
+            - Use to dynamically reprioritize processes.
+        - **Common Flags**
+            - `-p` - Target by PID
+            - `-u` - Target by user
+        - **Examples**
+            - `renice -n 5 -p 1234`
+        - **Notes / Gotchas**
+            - Only root can increase priority (lower niceness).
+    -  timeout (GNU Coreutils)
+    -  wait (POSIX)
+-  System Initialization and Service Management
+    -  {{systemctl}} - manage systemd services and units
+        - **Platforms**
+            - Systemd-based Linux (Debian, RHEL, etc.)
+        - **Synopsis**
+            - `systemctl [OPTIONS] COMMAND UNIT`
+        - **Description**
+            - Controls system services, targets, and other systemd units.
+        - **When to Use It**
+            - Use to start/stop services, manage boot behavior.
+        - **Common Flags**
+            - `start`, `stop`, `status`, `enable`, `disable`, `restart`
+        - **Examples**
+            - `systemctl status sshd`
+            - `systemctl enable cron`
+        - **Notes / Gotchas**
+            - Requires `sudo` for most service changes.
+        - systemctl enable, start, stop, status, disable, mask  
+        - ### systemctl enable cron - enable cron service on boot
+            - [Size]();-[H3]()
+            - **Platforms**
+                - Systemd-based Linux (Debian, Ubuntu, etc.)
+            - **Synonyms/Aliases**
+                - May also be `crond` on some systems (e.g., RHEL)
+            - **Synopsis**
+                - `systemctl enable cron`
+            - **Description**
+                - Enables the cron daemon to start automatically at boot.
+            - **When to Use It**
+                - Use to activate recurring task support system-wide.
+            - **Common Flags**
+                - `start`, `stop`, `status`, `restart` (cron control)
+            - **Examples**
+                - `sudo systemctl start cron`
+                - `sudo systemctl enable cron`
+            - **Notes / Gotchas**
+                - On RHEL/Fedora: `crond` replaces `cron` (`systemctl enable crond`)
+    -  {{journalctl}} - query systemd journal logs
+        - **Platforms**
+            - Systemd-based Linux distros (e.g., Debian, RHEL)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `journalctl [OPTIONS]`
+        - **Description**
+            - Shows detailed system logs collected by `systemd-journald`.
+        - **When to Use It**
+            - Use to view persistent, searchable logs across boots.
+        - **Common Flags**
+            - `-b` - Logs since last boot
+            - `-u UNIT` - Logs for a service
+            - `-f` - Follow (like `tail -f`)
+        - **Examples**
+            - `journalctl -b`
+            - `journalctl -u sshd`
+        - **Notes / Gotchas**
+            - Requires `root` for full access.
+    -  anacron (Unclassified)
+    -  atrun (Unclassified)
+    -  chkconfig (Unclassified)
+    -  {{dmesg}} - print kernel ring buffer messages
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `dmesg [OPTIONS]`
+        - **Description**
+            - Displays system messages from the kernel log buffer.
+        - **When to Use It**
+            - Use to debug boot issues, hardware events, or drivers.
+        - **Common Flags**
+            - `-T` - Human-readable timestamps
+            - `-H` - Interactive (scrollable) mode
+            - `-k` - Kernel-only messages
+        - **Examples**
+            - `dmesg | grep usb`
+            - `dmesg -T`
+        - **Notes / Gotchas**
+            - Output is cleared on reboot; for persistent logs, use `journalctl`.
+    -  halt (Unclassified)
+    -  initctl (Unclassified)
+    -  {{logger}} - add messages to the system log
+        - **Platforms**
+            - Common Linux (uses `syslog`)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `logger [OPTIONS] MESSAGE`
+        - **Description**
+            - Writes a message to `/var/log/syslog` or system journal.
+        - **When to Use It**
+            - Use to log custom messages from scripts or manual events.
+        - **Common Flags**
+            - `-p` - Set priority (e.g., `user.notice`)
+            - `-t` - Tag message
+        - **Examples**
+            - `logger "Backup completed"`
+            - `logger -t myscript -p user.warn "Disk full"`
+        - **Notes / Gotchas**
+            - Messages are usually stored in `/var/log/syslog` or accessible via `journalctl`.
+    -  logrotate (Unclassified)
+    -  {{reboot}} - reboot the system immediately
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `reboot`
+        - **Description**
+            - Reboots the system now (same as `shutdown -r now`).
+        - **When to Use It**
+            - Use for immediate restarts.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `reboot`
+        - **Notes / Gotchas**
+            - May require `sudo`; invokes systemd’s `reboot.target` if present.
+    -  run-parts (Unclassified)
+    -  runlevel (Unclassified)
+    -  service (Debian)
+    -  {{shut}}{{down}} - schedule system shutdown or reboot
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `shutdown [OPTIONS] TIME [MESSAGE]`
+        - **Description**
+            - Schedules a system shutdown, reboot, or halt.
+        - **When to Use It**
+            - Use for planned shutdowns with warning.
+        - **Common Flags**
+            - `-r` - Reboot
+            - `-h` - Halt/poweroff
+            - `now` - Immediate shutdown
+        - **Examples**
+            - `shutdown -h now`
+            - `shutdown -r +10 "Reboot in 10 minutes"`
+        - **Notes / Gotchas**
+            - Use `shutdown -c` to cancel.
+    -  {{poweroff}} - shut down and power off the system
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `poweroff`
+        - **Description**
+            - Powers down the system (same as `shutdown -h now`).
+        - **When to Use It**
+            - Use for clean shutdowns from CLI.
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `poweroff`
+        - **Notes / Gotchas**
+            - Controlled by `systemd` or `SysV` depending on distro.
+    -  telinit (Unclassified)
+    -  update-rc.d (Unclassified)
+    -  grub2-editenv - manage GRUB environment block
+        - **Platforms**
+            - RHEL, Fedora, and other GRUB2-based systems
+        - **Synopsis**
+            - `grub2-editenv FILE CMD`
+        - **Description**
+            - Sets or unsets GRUB environment variables.
+        - **When to Use It**
+            - Use to control GRUB boot behavior (e.g., next boot entry).
+        - **Common Flags**
+            - `list` - View contents
+            - `set` - Define GRUB environment variable
+        - **Examples**
+            - `grub2-editenv list`
+            - `grub2-editenv /boot/grub2/grubenv set next_entry=1`
+        - **Notes / Gotchas**
+            - Works with `/boot/grub2/grubenv`, not `grub.cfg`.
+    -  grub2-mkconfig - generate GRUB2 config file
+        - **Platforms**
+            - RHEL, Fedora, and most GRUB2-based systems
+        - **Synopsis**
+            - `grub2-mkconfig -o FILE`
+        - **Description**
+            - Regenerates the GRUB2 config file (`grub.cfg`) based on scripts and system state.
+        - **When to Use It**
+            - Use after kernel or bootloader changes.
+        - **Common Flags**
+            - `-o` - Output file (usually `/boot/grub2/grub.cfg`)
+        - **Examples**
+            - `grub2-mkconfig -o /boot/grub2/grub.cfg`
+        - **Notes / Gotchas**
+            - May differ by distro (`update-grub` on Debian).
+-  File Viewing and Text Utilities
+    -  tldr (Common Linux)
+    -  b2sum (Unclassified)
+    -  bat (Common Linux)
+    -  cksum (GNU Coreutils)
+    -  fzf (Common Linux)
+    -  {{head}} - {{display the beginning of files}} 
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `head [OPTIONS] FILE`
+        - **Description**
+            - Prints the first N lines of a file (default: 10).
+        - **When to Use It**
+            - Use to preview content or check logs.
+        - **Common Flags**
+            - `-n` - Number of lines to print
+            - `-c` - Print N bytes
+        - **Examples**
+            - `head file.txt`
+            - `head -n 20 log.txt`
+        - **Notes / Gotchas**
+            - Combine with `tail` for partial views.
+    -  hexdump (Unclassified)
+    -  {{less}} - {{view file content}} {{one screen at a time}} 
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `less [OPTIONS] FILE`
+        - **Description**
+            - Opens a file or input for scrollable viewing (forward/backward).
+        - **When to Use It**
+            - Use for large files or paginated output.
+        - **Common Flags**
+            - `-N` - Show line numbers
+            - `-S` - Chop long lines (no wrap)
+            - `+F` - Follow file (like `tail -f`)
+        - **Examples**
+            - `less /var/log/syslog`
+            - `command | less`
+        - **Notes / Gotchas**
+            - Use `q` to quit, `/` to search, `n` for next result.
+    -  merge (Unclassified)
+    -  numfmt (GNU Coreutils)
+    -  od (GNU Coreutils)
+    -  pr (GNU Coreutils)
+    -  ptx (GNU Coreutils)
+    -  sha224sum (GNU Coreutils)
+    -  sha256sum (GNU Coreutils)
+    -  sha384sum (GNU Coreutils)
+    -  sha512sum (GNU Coreutils)
+    -  shuf (GNU Coreutils)
+    -  sum (GNU Coreutils)
+    -  {{tail}} - {{display the end of files}} 
+        - **Platforms**
+            - GNU Coreutils, POSIX
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `tail [OPTIONS] FILE`
+        - **Description**
+            - Prints the last N lines of a file (default: 10).
+        - **When to Use It**
+            - Use to check recent log entries or updates.
+        - **Common Flags**
+            - `-n` - Number of lines
+            - `-f` - Follow file (watch new lines live)
+        - **Examples**
+            - `tail -n 50 logfile.log`
+            - `tail -f /var/log/syslog`
+        - **Notes / Gotchas**
+            - Useful for monitoring logs in real time.
+    -  tailf (Unclassified)
+    -  tsort (GNU Coreutils)
+-  Time and Date Utilities
+    -  {{at}} - schedule a command to run once at a specific time
+        - **Platforms**
+            - Common Linux (requires `atd` service)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `at TIME`
+        - **Description**
+            - Queues a command to run once at a specific time.
+        - **When to Use It**
+            - Use for one-time future tasks.
+        - **Common Flags**
+            - `-l` - List scheduled jobs (`atq`)
+            - `-r` - Remove job (`atrm`)
+        - **Examples**
+            - `echo "backup.sh" | at 03:00`
+            - `at now + 5 minutes`
+        - **Notes / Gotchas**
+            - Requires `atd` service to be running.
+    -  atq (Unclassified)
+    -  atrm (Unclassified)
+    -  cal (Debian, RHEL)
+    -  chronyc (Unclassified)
+    -  cron (Unclassified) *
+    -  {{cron}}{{tab}} - manage cron jobs for user
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `crontab [OPTION]`
+        - **Description**
+            - Installs, lists, or removes a user’s cron table (scheduled jobs).
+        - **When to Use It**
+            - Use to schedule recurring tasks (daily, weekly, etc.).
+        - **Common Flags**
+            - `-e` - Edit the current user’s crontab
+            - `-l` - List current user’s crontab
+            - `-r` - Remove current crontab
+        - **Examples**
+            - `crontab -e`
+            - `crontab -l`
+            - `crontab -r`
+        - **Notes / Gotchas**
+            - Syntax: `* * * * * command` (min hour day month weekday)
+            - Environment variables (e.g., `PATH`) may differ inside cron jobs
+    -  crontab -e - edit user’s crontab
+        - **Platforms**
+            - Common Linux
+        - **Description**
+            - Opens the user’s cron table in the default editor.
+        - **When to Use It**
+            - Use to create or modify recurring tasks.
+        - **Examples**
+            - `crontab -e`
+        - **Notes / Gotchas**
+            - May prompt for editor selection on first use.
+    -  crontab -l - list user’s crontab entries
+        - **Platforms**
+            - Common Linux
+        - **Description**
+            - Displays current user’s scheduled cron jobs.
+        - **When to Use It**
+            - Use to review scheduled tasks.
+        - **Examples**
+            - `crontab -l`
+        - **Notes / Gotchas**
+            - Returns nothing if no crontab is installed.
+    -  date (Debian, GNU Coreutils, POSIX, RHEL)
+    -  hwclock (Unclassified)
+    -  ntpdate (Unclassified)
+    -  rdate (Unclassified)
+    -  time (POSIX)
+    -  timedatectl (Unclassified)
+-  Kernel and Module Management
+    -  {{blkid}} - locate/print block device attributes
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `blkid [DEVICE]`
+        - **Description**
+            - Displays UUID, filesystem type, and labels.
+        - **Examples**
+            - `blkid /dev/sda1`
+    -  depmod (Unclassified)
+    -  {{lsblk}} - list block devices
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `lsblk [OPTIONS]`
+        - **Description**
+            - Shows tree view of block devices and mount points.
+        - **Examples**
+            - `lsblk -f`
+    -  lsinitrd (Unclassified)
+    -  lsmod (Unclassified)
+    -  modinfo (Unclassified)
+    -  modprobe (Unclassified)
+    -  sysctl (Unclassified)
+-  Remote Access and File Transfer
+    -  {{dig}} - {{DNS lookup utility}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux (dnsutils or bind-utils package)
+        - **Synopsis**
+            - `dig [@SERVER] NAME [TYPE]`
+        - **Description**
+            - Queries DNS servers for name resolution and record info.
+        - **When to Use It**
+            - Use to troubleshoot DNS issues or inspect records.
+        - **Common Flags**
+            - `+short`, `+trace`, `+noall +answer`
+        - **Examples**
+            - `dig example.com`
+            - `dig +short mx google.com`
+        - **Notes / Gotchas**
+            - Often more informative than `nslookup`.
+    -  login (Unclassified)
+        - [Size]();-[H0]()
+    -  {{scp}} - OpenSSH secure file copy
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux, POSIX
+        - **Synopsis**
+            - `scp [OPTIONS] SRC DEST`
+        - **Description**
+            - Securely transfers files between systems over SSH.
+        - **When to Use It**
+            - Use to copy files across machines securely.
+        - **Common Flags**
+            - `-r` - Recursive
+            - `-P` - Port
+            - `-i` - Identity file
+        - **Examples**
+            - `scp file.txt user@host:/tmp/`
+            - `scp -r dir user@host:~/backup`
+        - **Notes / Gotchas**
+            - Deprecated in favor of `sftp` or `rsync` in some contexts.
+    -  {{sftp}} - OpenSSH secure file transfer
+        - [Size]();-[H0]()
+    -  {{ssh}} - {{OpenSSH remote login client}} 
+        - [Size]();-[H0]()
+-  Disk and Filesystem Management
+    -  {{df}} - show disk space usage
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `df [OPTIONS]`
+        - **Description**
+            - Reports available and used disk space on filesystems.
+        - **Examples**
+            - `df -h`
+    -  {{du}} - show file/directory space usage
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `du [OPTIONS] PATH`
+        - **Description**
+            - Displays disk usage for files/directories.
+        - **Examples**
+            - `du -sh /home/user`
+    -  debugfs (Unclassified)
+    -  dosfsck (Unclassified)
+    -  dumpe2fs (Unclassified)
+    -  e2fsck (Unclassified)
+    -  e2image (Unclassified)
+    -  {{e2label}} - set or get ext2/ext3/ext4 filesystem label
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `e2label DEVICE [NEW_LABEL]`
+        - **Description**
+            - Reads or writes volume labels.
+        - **Examples**
+            - `e2label /dev/sda1 backup_drive`
+    -  {{quot}}{{a}} - show disk usage and limits
+        - **Platforms**
+            - Common Linux (with quota enabled)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `quota [OPTIONS] [USER]`
+        - **Description**
+            - Displays user or group disk space and inode usage.
+        - **When to Use It**
+            - Use to check disk limits enforced by the system.
+        - **Common Flags**
+            - `-u` - Show user quotas (default)
+            - `-g` - Show group quotas
+            - `-s` - Human-readable units
+        - **Examples**
+            - `quota`
+            - `quota -g`
+        - **Notes / Gotchas**
+            - Requires quota system to be active on the filesystem.
+    -  {{ed}}{{quot}}{{a}} - edit user quotas
+        - **Platforms**
+            - Common Linux (admin tool)
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `edquota [OPTIONS] USER`
+        - **Description**
+            - Opens a text editor to modify user disk quota settings.
+        - **When to Use It**
+            - Use to set or change soft/hard disk limits.
+        - **Common Flags**
+            - `-u` - Edit user quotas (default)
+            - `-g` - Edit group quotas
+        - **Examples**
+            - `edquota bob`
+        - **Notes / Gotchas**
+            - Must be run as root; edits affect active usage limits.
+    -  {{rep}}{{quot}}{{a}} - generate quota reports
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - None
+        - **Synopsis**
+            - `repquota [OPTIONS] MOUNTPOINT`
+        - **Description**
+            - Reports quota usage for users or groups on a filesystem.
+        - **When to Use It**
+            - Use to audit quota usage across users or groups.
+        - **Common Flags**
+            - `-a` - All filesystems with quotas
+            - `-u` - Show user usage
+            - `-g` - Show group usage
+        - **Examples**
+            - `repquota -a`
+        - **Notes / Gotchas**
+            - Output includes soft/hard limits and grace period data.
+    -  fdformat (Unclassified)
+    -  {{fdisk}} - partition table editor for MBR disks
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `fdisk DEVICE`
+        - **Description**
+            - Interactive tool to manage MBR partitions.
+        - **Examples**
+            - `fdisk /dev/sda`
+    -  fsck (Unclassified)
+    -  fsck.ext2 (Unclassified)
+    -  mke2fs (Unclassified)
+    -  {{mkfs}} - create a filesystem
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `mkfs -t TYPE DEVICE`
+        - **Description**
+            - Formats a device with a specific filesystem.
+        - **Examples**
+            - `mkfs.ext4 /dev/sdb1`
+    -  mkfs.ext2 (Unclassified)
+    -  mkfs.ext3 (Unclassified)
+    -  mklost+found (Unclassified)
+    -  mkraid (Unclassified)
+    -  mkswap (Unclassified)
+    -  {{mou}}{{nt}} - attach a filesystem
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `mount [OPTIONS] DEVICE MOUNTPOINT`
+        - **Description**
+            - Mounts a device or filesystem to a directory.
+        - **When to Use It**
+            - Use to access partitions or filesystems.
+        - **Examples**
+            - `mount /dev/sda1 /mnt`
+    -  {{parted}} - create/modify partitions (MBR/GPT)
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `parted DEVICE`
+        - **Description**
+            - Interactive or scriptable partition editor.
+        - **Examples**
+            - `parted /dev/sdb`
+    -  pathchk (GNU Coreutils, POSIX)
+    -  pax (Unclassified)
+    -  quotacheck (Unclassified)
+    -  quotaoff (Unclassified)
+    -  quotaon (Unclassified)
+    -  quotastats (Unclassified)
+    -  rdev (Unclassified)
+    -  resize2fs (Unclassified)
+    -  rootflags (Unclassified)
+    -  setquota (Unclassified)
+    -  showmount (Unclassified)
+    -  {{swapon}} - enable swap space
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `swapon [DEVICE]`
+        - **Description**
+            - Activates swap space.
+        - **Examples**
+            - `swapon /dev/sda2`
+    -  {{swapoff}} - disable swap space
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `swapoff [DEVICE]`
+        - **Description**
+            - Deactivates swap space.
+        - **Examples**
+            - `swapoff /dev/sda2`
+    -  sync (GNU Coreutils)
+    -  {{tune2fs}} - adjust ext2/ext3/ext4 filesystem parameters
+        - **Platforms**
+            - Common Linux
+        - **Synopsis**
+            - `tune2fs [OPTIONS] DEVICE`
+        - **Description**
+            - Modifies features like labels, checks, etc.
+        - **Examples**
+            - `tune2fs -L mydata /dev/sda1`
+    -  {{umask}} - {{set default file}} {{creation permissions}} 
+        - **Platforms**
+            - POSIX (Shell built-in)
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `umask [VALUE]`
+        - **Description**
+            - Sets the default permission mask for new files and directories.
+        - **When to Use It**
+            - Use to control default file access (e.g., make files private).
+        - **Common Flags**
+            - None
+        - **Examples**
+            - `umask` (show current value)
+            - `umask 027` (deny write to group/others)
+        - **Notes / Gotchas**
+            - Affects new files only; use `chmod` for existing ones.
+            - Calculated as: permissions = base - umask
+    -  {{umount}} - detach a filesystem
+        - **Platforms**
+            - POSIX, Common Linux
+        - **Synopsis**
+            - `umount [OPTIONS] TARGET`
+        - **Description**
+            - Unmounts a mounted filesystem.
+        - **When to Use It**
+            - Use to safely detach devices.
+        - **Examples**
+            - `umount /mnt`
+    -  warnquota (Unclassified)
+    -  {{xfs_growfs}} - expand an XFS filesystem
+        - **Platforms**
+            - RHEL-based, with XFS tools
+        - **Synopsis**
+            - `xfs_growfs MOUNTPOINT`
+        - **Description**
+            - Grows a mounted XFS filesystem.
+        - **Examples**
+            - `xfs_growfs /data`
+    -  {{xfs_admin}} - manage XFS filesystem metadata
+        - **Platforms**
+            - RHEL-based with XFS
+        - **Synopsis**
+            - `xfs_admin [OPTIONS] DEVICE`
+        - **Description**
+            - Changes UUID or label for XFS volumes.
+        - **Examples**
+            - `xfs_admin -L data /dev/sdb1`
+-  LVM (Logical Volume Manager) Commands
+    - ### pvcreate - create physical volume
+        - **Examples**: `pvcreate /dev/sdb1`
+        - [Size]();-[H3]()
+    - ### vgcreate - create volume group
+        - **Examples**: `vgcreate vgdata /dev/sdb1`
+        - [Size]();-[H3]()
+    - ### lvcreate - create logical volume
+        - **Examples**: `lvcreate -L 10G -n lvbackup vgdata`
+        - [Size]();-[H3]()
+    - ### lvextend - grow a logical volume
+        - **Examples**: `lvextend -L +5G /dev/vgdata/lvbackup`
+        - [Size]();-[H3]()
+    - ### lvremove - delete a logical volume
+        - **Examples**: `lvremove /dev/vgdata/lvbackup`
+        - [Size]();-[H3]()
+    - ### vgextend - add PV to volume group
+        - **Examples**: `vgextend vgdata /dev/sdc1`
+        - [Size]();-[H3]()
+    - ### vgreduce - remove PV from volume group
+        - **Examples**: `vgreduce vgdata /dev/sdc1`
+        - [Size]();-[H3]()
+    - ### lvs - show logical volumes
+        - **Examples**: `lvs`
+        - [Size]();-[H3]()
+    - ### vgs - show volume groups
+        - **Examples**: `vgs`
+        - [Size]();-[H3]()
+    - ### pvs - show physical volumes
+        - **Examples**: `pvs`
+        - [Size]();-[H3]()
+-  Network Services and Daemons
+    -  apmd (Unclassified)
+        - [Size]();-[H0]()
+    -  atd (Unclassified)
+        - [Size]();-[H0]()
+    -  bootpd (Unclassified)
+        - [Size]();-[H0]()
+    -  cupsd (Unclassified)
+        - [Size]();-[H0]()
+    -  klogd (Unclassified)
+        - [Size]();-[H0]()
+    -  {{named}} - DNS server daemon (BIND) *
+        - **Synonyms/Aliases**
+            - Also called BIND (Berkeley Internet Name Domain).
+        - **Synopsis**
+            - `named [-c configfile] [-d debuglevel] [-f]`
+        - **Description**
+            - Runs a DNS server for name resolution on the network.
+        - **When to Use It**
+            - Use to provide DNS service for local or external clients.
+        - **Common Flags**
+            - `-c` - Specify config file - To run with a custom `named.conf`
+            - `-d` - Set debug level - To increase log verbosity
+            - `-f` - Run in foreground - Useful for debugging
+        - **Examples**
+            - `named -c /etc/named.conf`
+            - `named -d 3`
+            - `named -f`
+        - **Notes / Gotchas**
+            - Configuration is complex; typically used on servers.
+            - Requires root or system privileges to bind to port 53.
+        - [Size]();-[H0]()
+    -  nfsd (Unclassified)
+        - [Size]();-[H0]()
+    -  pppd (Unclassified)
+        - [Size]();-[H0]()
+    -  routed (Unclassified)
+        - [Size]();-[H0]()
+    -  rpc.rusersd (Unclassified)
+        - [Size]();-[H0]()
+    -  rpc.statd (Unclassified)
+        - [Size]();-[H0]()
+    -  rsyslogd (Unclassified)
+        - [Size]();-[H0]()
+    -  rwhod (Unclassified)
+        - [Size]();-[H0]()
+    -  sshd (Unclassified)
+        - [Size]();-[H0]()
+    -  syslogd (Unclassified)
+        - [Size]();-[H0]()
+    -  vsftpd (Unclassified)
+        - [Size]();-[H0]()
+    -  xinetd (Unclassified)
+        - [Size]();-[H0]()
+-  Miscellaneous Utilities
+    -  {{**man**}}** **-** an **{{**interface**}}** to the **{{**system reference **}}{{**man**}}{{**uals **}} 
+        - [Size]();-[H0]()
+        - **Synonyms/Aliases**
+            - No standard aliases. Sometimes wrapped in functions or scripts (e.g., `tldr`, `help` in some shells for alternatives).
+        - **Synopsis**
+            - `man [SECTION] PAGE`
+        - **Description**
+            - Displays the manual page for a given command or system topic. The manual is divided into sections (e.g., commands, system calls, library functions).
+        - **When to Use It**
+            - Use `man` when you want detailed information on how a command works, its flags, syntax, and behavior from the official system documentation.
+        - **Common Flags**
+            - `-k` - Search for keywords in man pages - Use when unsure of exact command
+            - `-f` - Show a short description - Use to check what a command does
+            - `-a` - Show all matching man pages - Use when multiple entries exist (like `printf`)
+            - `-P` - Specify a pager (e.g., `less`, `more`) - Use to customize display
+        - **Examples**
+            - `man ls`         # View the manual page for `ls`
+            - `man -k copy`    # Search all man pages for the keyword "copy"
+            - `man 5 passwd`   # View the section 5 page for `passwd` file format
+            - `man -f mv`      # Show what the `mv` command does (like `whatis`)
+        - **Notes / Gotchas**
+            - The manual is split into numbered sections; use `man 2 open` vs `man 3 open` for different meanings of the same name.
+            - Some systems may require updating the `man` database with `mandb` to ensure `-k` and `-f` work correctly.
+            - Output is usually viewed through `less` (press `q` to quit, `/` to search).
+            - If no result appears, the command may not be installed, or the man page might be missing for it.
+    -  {{pass}}{{wd}} - {{change user }}{{pass}}{{word}} 
+        - [Size]();-[H0]()
+        - **Platforms**
+            - Common Linux
+        - **Synonyms/Aliases**
+            - No standard aliases
+        - **Synopsis**
+            - `passwd [USERNAME]`
+        - **Description**
+            - Changes the current or specified user’s password.
+        - **When to Use It**
+            - Use to set or reset user passwords.
+        - **Common Flags**
+            - `-l` - Lock account
+            - `-u` - Unlock account
+            - `-e` - Expire password
+        - **Examples**
+            - `passwd` (self)
+            - `sudo passwd bob`
+        - **Notes / Gotchas**
+            - Requires root for changing other users' passwords.
+    -  {{sudo}} - {{execute a command}} as {{another user}} 
+        - [Size]();-[H0]()
+    - {{chacl}} - {{change the access control list}} of a {{file or directory}} 
+    - {{chcpu}} - {{configure CPUs}} 
+    - {{chfn}} - {{change your finger information}} 
+    - {{chgpasswd}} - {{update group passwords}} in {{batch mode}} 
+    - {{chmem}} - {{configure memory}} 
+    -  false (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  true (GNU Coreutils, POSIX)
+        - [Size]();-[H0]()
+    -  accept (Unclassified)
+        - [Size]();-[H0]()
+    -  aclocal (Unclassified)
+        - [Size]();-[H0]()
+    -  acpi (Unclassified)
+        - [Size]();-[H0]()
+    -  acpid (Unclassified)
+        - [Size]();-[H0]()
+    -  addr2line (Unclassified)
+        - [Size]();-[H0]()
+    -  agetty (Unclassified)
+        - [Size]();-[H0]()
+    -  autoconf (Unclassified)
+        - [Size]();-[H0]()
+    -  autoheader (Unclassified)
+        - [Size]();-[H0]()
+    -  autoscan (Unclassified)
+        - [Size]();-[H0]()
+    -  autoupdate (Unclassified)
+        - [Size]();-[H0]()
+    -  base64 (Unclassified)
+        - [Size]();-[H0]()
+    -  bc (Unclassified)
+        - [Size]();-[H0]()
+    -  bison (Unclassified)
+        - [Size]();-[H0]()
+    -  bzcmp (Unclassified)
+        - [Size]();-[H0]()
+    -  bzdiff (Unclassified)
+        - [Size]();-[H0]()
+    -  bzmore (Unclassified)
+        - [Size]();-[H0]()
+    -  c++ (Unclassified)
+        - [Size]();-[H0]()
+    -  cdda2wav (Unclassified)
+        - [Size]();-[H0]()
+    -  clear (Unclassified)
+        - [Size]();-[H0]()
+    -  column (Unclassified)
+        - [Size]();-[H0]()
+    -  cupsctl (Unclassified)
+        - [Size]();-[H0]()
+    -  dvdrecord (Unclassified)
+        - [Size]();-[H0]()
+    -  enable (Unclassified) *
+        - [Size]();-[H0]()
+    -  factor (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  fc (Unclassified)
+        - [Size]();-[H0]()
+    -  fgconsole (Unclassified)
+        - [Size]();-[H0]()
+    -  gpgv (Unclassified)
+        - [Size]();-[H0]()
+    -  info (Debian)
+        - [Size]();-[H0]()
+    -  lp (Unclassified)
+        - [Size]();-[H0]()
+    -  lpadmin (Unclassified)
+        - [Size]();-[H0]()
+    -  lpinfo (Unclassified)
+        - [Size]();-[H0]()
+    -  lpmove (Unclassified)
+        - [Size]();-[H0]()
+    -  lpstat (Unclassified)
+        - [Size]();-[H0]()
+    -  nameif (Unclassified)
+        - [Size]();-[H0]()
+    -  nfsstat (Unclassified)
+        - [Size]();-[H0]()
+    -  nsupdate (Unclassified)
+        - [Size]();-[H0]()
+    -  reject (Unclassified)
+        - [Size]();-[H0]()
+    -  reset (Unclassified)
+        - [Size]();-[H0]()
+    -  rndc (Unclassified)
+        - [Size]();-[H0]()
+    -  shar (Unclassified)
+        - [Size]();-[H0]()
+    -  tree (Unclassified)
+        - [Size]();-[H0]()
+    -  watch (Unclassified)
+        - [Size]();-[H0]()
+    -  wdiff (Unclassified)
+        - [Size]();-[H0]()
+    -  ytree (Unclassified)
+        - [Size]();-[H0]()
+    -  zcat (GNU Coreutils)
+        - [Size]();-[H0]()
+    -  zdiff (Unclassified)
+        - [Size]();-[H0]()
+    -  zebra (Unclassified)
+        - [Size]();-[H0]()
+-  Graphics and Image Processing
+    -  cjpeg (Unclassified)
+        - [Size]();-[H0]()
+    -  convert (Unclassified)
+        - [Size]();-[H0]()
+    -  display (Unclassified)
+        - [Size]();-[H0]()
+    -  eog (Unclassified)
+        - [Size]();-[H0]()
+    -  feh (Unclassified)
+        - [Size]();-[H0]()
+    -  giftrans (Unclassified)
+        - [Size]();-[H0]()
+    -  gimp (Unclassified)
+        - [Size]();-[H0]()
+    -  gs (Unclassified)
+        - [Size]();-[H0]()
+    -  gv (X11)
+        - [Size]();-[H0]()
+    -  gwenview (Unclassified)
+        - [Size]();-[H0]()
+    -  montage (Unclassified)
+        - [Size]();-[H0]()
+    -  ristretto (Unclassified)
+        - [Size]();-[H0]()
+    -  scanimage (Unclassified)
+        - [Size]();-[H0]()
+    -  shotwell (Unclassified)
+        - [Size]();-[H0]()
+    -  transfig (Unclassified)
+        - [Size]();-[H0]()
+    -  xpaint (Unclassified)
+        - [Size]();-[H0]()
+-  X Window System Utilities
+    -  imake (Unclassified)
+        - [Size]();-[H0]()
+    -  xcal (Unclassified)
+        - [Size]();-[H0]()
+    -  xcalc (Unclassified)
+        - [Size]();-[H0]()
+    -  xclock (X11)
+        - [Size]();-[H0]()
+    -  xhost (Unclassified)
+        - [Size]();-[H0]()
+    -  xinput (Unclassified)
+        - [Size]();-[H0]()
+    -  xmodmap (Unclassified)
+        - [Size]();-[H0]()
+    -  xpdf (Unclassified)
+        - [Size]();-[H0]()
+    -  xprop (Unclassified)
+        - [Size]();-[H0]()
+    -  xrandr (Unclassified)
+        - [Size]();-[H0]()
+    -  xrdb (Unclassified)
+        - [Size]();-[H0]()
+    -  xset (Unclassified)
+        - [Size]();-[H0]()
+    -  xsetroot (Unclassified)
+        - [Size]();-[H0]()
+    -  xterm (X11)
+        - [Size]();-[H0]()
+-  Media and Sound Tools
+    -  alsactl (Unclassified)
+        - [Size]();-[H0]()
+    -  alsamixer (Unclassified)
+        - [Size]();-[H0]()
+    -  amidi (Unclassified)
+        - [Size]();-[H0]()
+    -  amixer (Unclassified)
+        - [Size]();-[H0]()
+    -  aplay (Unclassified)
+        - [Size]();-[H0]()
+    -  arecord (Unclassified)
+        - [Size]();-[H0]()
+    -  arecordmidi (Unclassified)
+        - [Size]();-[H0]()
+    -  cdparanoia (Unclassified)
+        - [Size]();-[H0]()
+    -  cdrdao (Unclassified)
+        - [Size]();-[H0]()
+    -  eject (Unclassified)
+        - [Size]();-[H0]()
+    -  genisoimage (Unclassified)
+        - [Size]();-[H0]()
+    -  icedax (Unclassified)
+        - [Size]();-[H0]()
+    -  pactl (Unclassified)
+        - [Size]();-[H0]()
+    -  pulseaudio (Unclassified)
+        - [Size]();-[H0]()
+    -  readom (Unclassified)
+        - [Size]();-[H0]()
+    -  volname (Unclassified)
+        - [Size]();-[H0]()
+    -  wodim (Unclassified)
+        - [Size]();-[H0]()
+-  Marked for Review
+    -  c++filt (Unclassified)
+        - [Size]();-[H0]()
+    -  doexec (Unclassified)
+        - [Size]();-[H0]()
+    -  formail (Unclassified)
+        - [Size]();-[H0]()
+    -  from (Unclassified)
+        - [Size]();-[H0]()
+    -  ftp (Unclassified)
+        - [Size]();-[H0]()
+    -  gpgsplit (Unclassified)
+        - [Size]();-[H0]()
+    -  mountd (Unclassified)
+        - [Size]();-[H0]()
+    -  mutt (Unclassified)
+        - [Size]();-[H0]()
+    -  pine (Unclassified)
+        - [Size]();-[H0]()
+    -  ps2pdf (Unclassified)
+        - [Size]();-[H0]()
+    -  rlogin (Unclassified)
+        - [Size]();-[H0]()
+    -  rpcbind (Unclassified)
+        - [Size]();-[H0]()
+    -  rpcinfo (Unclassified)
+        - [Size]();-[H0]()
+    -  sendmail (Unclassified)
+        - [Size]();-[H0]()
+    -  tcsh (Unclassified)
+        - [Size]();-[H0]()
+    -  tkdesk (Unclassified)
+        - [Size]();-[H0]()
+    -  tunelp (Unclassified)
+        - [Size]();-[H0]()
+    -  vacation (Unclassified)
+        - [Size]();-[H0]()
+    -  workman (Unclassified)
+        - [Size]();-[H0]()
+    -  xmcpustate (Unclassified)
+        - [Size]();-[H0]()
+    -  xsysinfo (Unclassified)
+        - [Size]();-[H0]()
+-  Deprecated or Obsolete Commands
+    -  colcrt (Unclassified)
+        - [Size]();-[H0]()
+    -  colrm (Unclassified)
+        - [Size]();-[H0]()
+    -  ctrlaltdel (Unclassified)
+        - [Size]();-[H0]()
+    -  elvtune (Unclassified)
+        - [Size]();-[H0]()
+    -  ftpd (Unclassified)
+        - [Size]();-[H0]()
+    -  imapd (Unclassified)
+        - [Size]();-[H0]()
+    -  inetd (Unclassified)
+        - [Size]();-[H0]()
+    -  lpq (Unclassified)
+        - [Size]();-[H0]()
+    -  lpr (Unclassified)
+        - [Size]();-[H0]()
+    -  lprm (Unclassified)
+        - [Size]();-[H0]()
+    -  mailq (Unclassified)
+        - [Size]();-[H0]()
+    -  rarp (Unclassified)
+        - [Size]();-[H0]()
+    -  rdistd (Unclassified)
+        - [Size]();-[H0]()
+    -  rexecd (Unclassified)
+        - [Size]();-[H0]()
+    -  rlogind (Unclassified)
+        - [Size]();-[H0]()
+    -  rmail (Unclassified)
+        - [Size]();-[H0]()
+    -  rsh (Unclassified)
+        - [Size]();-[H0]()
+    -  rshd (Unclassified)
+        - [Size]();-[H0]()
+    -  rwall (Unclassified)
+        - [Size]();-[H0]()
+    -  telnet (Unclassified)
+        - [Size]();-[H0]()
+    -  vlock (Unclassified)
+        - [Size]();-[H0]()
+    -  wall (Unclassified)
+        - [Size]();-[H0]()
+    -  write (Unclassified)
+        - [Size]();-[H0]()
+    -  xcolors (Unclassified)
+        - [Size]();-[H0]()
+    -  xlock (Unclassified)
+        - [Size]();-[H0]()
+    -  xman (X11)
+        - [Size]();-[H0]()
+    -  ypbind (Unclassified)
+        - [Size]();-[H0]()
+    -  yppasswdd (Unclassified)
+        - [Size]();-[H0]()
+    -  ypserv (Unclassified)
+        - [Size]();-[H0]()
+-  
+-  linux file management 11
+    - cp
+    - csplit
+    - dd file
+    - head
+    - hexdump
+    - less
+    - ln
+    - md5sum
+    - merge
+    - mkdir more
+    - mv
+    - newgrp
+    - pwd
+    - od
+    - rm
+    - rmdir
+    -  sha1sum
+        - [Size]();-[H0]()
+    - shred split
+    - tac
+    - tail
+    - tailf
+    - touch
+    - wc
+    - lsof
+-  2. Linux Communication Commands 11
+    - dig
+    - ftp
+    - login
+    -  rsync scp
+        - [Size]();-[H0]()
+    - ssh
+    - sftp
+-  3. Linux Commands on Comparisons 11
+    - cmp
+    - comm
+    - diff diff3
+    -  sdiff
+        - [Size]();-[H0]()
+-  4. Linux Commands on Installation 11
+    - cpio
+    - install rdist
+    - tar
+-  5. Linux Commands on Security and System Integrity 11
+    - badblocks
+    - chroot
+    - chkconfig
+    - halt reboot
+    -  shutdown
+        - [Size]();-[H0]()
+    - vmstat
+-  6. Linux User Commands 11
+    - w
+    - whoami
+    - chpasswd
+    - groupadd
+    - groupdel
+    - groupmod
+    - grpck
+    - grpconv
+    - lastlog newusers
+    - pwck
+    - pwconv
+    - rusers
+    - rwall
+    - useradd
+    - userdel
+    - usermod
+    - wall id
+    - chage
+    - users
+    - ruptime
+-  7. Linux Commands on Daemons 11
+    - apmd
+    - atd
+    - bootpd
+    - cupsd
+    - ftpd
+    - imapd
+    - klogd
+    - mountd
+    - nfsd
+    - pppd
+    - rdistd
+    - rexecd
+    - rlogind
+    - routed
+    - rpc.rusersd
+    -  rpc.statd
+        - [Size]();-[H0]()
+    - rshd rsyslogd
+    - rwhod
+    - sshd
+    - syslogd
+    - xinetd
+    - ypbind
+    - yppasswdd
+    - ypserv
+-  8. Linux Commands on Hardware 11
+    - agetty
+    - arp
+    - fdisk
+    - hdparm kbdrate
+    - ramsize
+    -  setkeycodes
+        - [Size]();-[H0]()
+    - slattach
+-  9. Linux Commands on Host Information 11
+-  10. Linux Commands on Mail 11
+    - formail
+    - mailq
+    - makemap
+    - newaliases
+    -  rmail sendmail
+        - [Size]();-[H0]()
+    - from
+    - mutt
+    - pine
+-  11. Linux Commands on Managing Filesystems 11
+    - debugfs
+    - dosfsck
+    - dump
+    - dumpe2fs
+    - e2fsck
+    - e2image
+    - e2label
+    - edquota
+    - fdformat fsck
+    - fsck.ext2
+    - mke2fs
+    - mkfs
+    - mkfs.ext2
+    - mkfs.ext3
+    - mklost+found
+    - mkraid
+    - mkswap mount
+    - quotacheck
+    - quotaon
+    - quotaoff
+    - quotastats
+    - rdev
+    - repquota
+    - resize2fs
+    - restore rootflags
+    -  setquota
+        - [Size]();-[H0]()
+    - showmount
+    - swapoff
+    - swapon
+    - sync
+    - tune2fs
+    - umount
+    - warnquota
+-  12. Linux Commands on Managing the Kernel 11
+    - depmod
+    - lsmod
+    - modinfo modprobe
+    -  sysctl
+        - [Size]();-[H0]()
+-  13. Linux Printing Commands 11
+    - accept
+    - lpadmin
+    - lpinfo lpmove
+    - reject
+    - tunelp
+-  14. Process Management Commands in Linux 11
+    - fuser
+    - renice vmstat
+    - pstree
+-  15. Linux Commands on NFS and NIS Administration 11
+    - makedbm
+    - rpcbind
+    - portmap
+    - rpcinfo
+    - ypbind
+    - ypcat
+    - ypinit
+    - ypmatch yppasswdd
+    - yppoll
+    - yppush
+    - ypserv
+    - ypset
+    - yptest
+    - ypwhich
+    - ypxfr
+-  16. Linux Basic Commands on Media 11
+    - cdparanoia
+    - cdrdao
+    - eject
+    - genisoimage icedax
+    - readom
+    - volname
+    - wodim
+-  17. Linux Commands on TeX, LaTeX AND TYPESETTING 11
+    - AMSTeX
+    - AMSLaTeX
+    - bibtool
+    - latex
+    - latex2html evince
+    - pdflatex
+    - pdftex
+    - TeX
+    - untex
+-  18. Linux Basic Commands on Graphics 11
+    - cjpeg
+    - convert
+    - gimp
+    - giftrans
+    - gs
+    - gv montage
+    - scanimage
+    - tkdesk
+    - transfig
+    - xpaint
+-  19. Linux Commands on X-WINDOWS PROGRAMS with Examples 11
+    - imake
+    - xcal
+    - xcalc
+    - xclock
+    - xcolors
+    - xhost
+    - xlock xman
+    - xmcpustate
+    - xpdf
+    - xset
+    - xsysinfo
+    - xterm
+-  20. Linux Commands on Miscellaneous 11
+    - bc
+    - bg
+    - fg
+    - clear
+    - passwd
+    - sudo
+    - tee
+    - time
+    - nameif
+    - nfsstat
+    - nsupdate
+    - rarp
+    - rndc
+    - rpcbind
+    - rpcinfo
+    - ctrlaltdel
+    - initctl
+    - runlevel
+    - telinit
+    - uptime
+    - anacron
+    - atrun
+    - cron
+    - dmesg ldconfig
+    - logger
+    - logrotate
+    - run-parts
+    - telnetd
+    - tftpd
+    - zebra
+    - aclocal
+    - aconnect
+    - acpi
+    - acpid
+    - addr2line
+    - agetty
+    - alsactl
+    - alsamixer
+    - amidi
+    - amixer
+    - anacron
+    - aplay
+    - arecordmidi
+    - at
+    - autoconf
+    - autoheader
+    - autoscan autoupdate
+    - base64
+    - bison
+    - bzcmp
+    - bzdiff
+    - bzdiff
+    - bzmore
+    - c++
+    - c++filt
+    - cdda2wav
+    - cdparanoia
+    - cdrdao
+    - chage
+    - colcrt
+    - colrm
+    - column
+    - doexec
+    - dosfsck
+    - dvdrecord
+    - edquota
+    - elvtune
+    - enable
+    - false
+    - true fc
+    - fc
+    - fgconsole
+    - fmt
+    - fold
+    - formail
+    - tree
+    - alias
+    - unalias
+    - gpgsplit
+    - gpgv
+    - gprof
+    - ps2pdf
+    - shar
+    - tcsh
+    - wdiff
+    - workman
+    - vlock
+    - ytree
+    - zcat
+    - zdiff
+    - vacation
+-  21. Linux Networking Commands 11
+-  22. Linux Commands on Program Maintenance 11
+    - ctags
+    - etags
+    - gdb
+    - git
+    - gprof
+    - make
+    - nm objcopy
+    - objdump
+    - patch
+    - pmap
+    - size
+    - svn
+-  23. Linux Commands on Searching 11
+    - apropos
+    - egrep
+    - fgrep
+    - find
+    - grep
+    - locate look
+    - strings
+    - updatedb
+    - whereis
+    - which
+-  24. Linux Shell Commands 11
+    - basename
+    - echo
+    - envsubst
+    - expr
+    - mktemp printf
+    - sleep
+    - test
+    - xargs
+-  25. Linux Storage Commands with Examples 11
+    - bunzip2
+    - bzip2
+    - gunzip gzip
+    - zforce
+-  26. Linux Commands on System Status 11
+    - at
+    - atq
+    - atrm
+    - crontab
+    - date
+    - df
+    - du
+    - env
+    - finger
+    - free
+    - hostname kill
+    - killall
+    - printenv
+    - ps
+    - dstat
+    - quota
+    - stat
+    - stty
+    - top
+    - tty
+    - who
+-  27. Linux Text Processing Commands 11
+    - cut
+    - emacs
+    - ex
+    - expand
+    - unexpand
+    - fmt
+    - fold
+    - gawk
+    - groff
+    - gs ispell
+    - join
+    - paste
+    - rev
+    - sed
+    - sort
+    - tr
+    - uniq
+    - nl
+    - vim
+-  28. Linux Programming Commands 11
+    - cpp
+    - flex
+    - ldd make
+    - ranlib
+-  29. Linux Basic Commands on Clocks 11
+    - hwclock 
+    - rdate

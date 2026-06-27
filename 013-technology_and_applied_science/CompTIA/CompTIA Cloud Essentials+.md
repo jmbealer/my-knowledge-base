@@ -1,0 +1,414 @@
+- **Exam Codes**
+    - **CLO-002**
+- **Launch Date**
+    - November 2019
+- **Exam Description**
+    - CompTIA Cloud Essentials+ validates the candidate has the knowledge and skills required to make clear and conscious decisions about cloud technologies and their business impact by evaluating business use cases, financial impacts, cloud technologies and deployment models with knowledge of cloud computing.
+- **Number of Questions**
+    - Maximum of 75 questions
+- **Type of Questions**
+    - Multiple choice
+- **Length of Test**
+    - 60 Minutes
+- **Passing Score**
+    - 720 (on a scale of 100-900)
+- **Recommended Experience**
+    - Between six months to a year of work experience as a business analyst in an IT environment with some exposure to cloud technologies
+- **Languages**
+    - English
+- **Testing Provider**
+    - Pearson VUE
+        - [Testing Centers](https://www.comptia.org/testing/testing-options/take-in-person-exam)
+        - [Online Testing](https://www.comptia.org/testing/testing-options/take-online-exam)
+    - 
+- **Retirement**
+    - Usually three years after launch
+- **Price**
+    - [View price in cart](https://store.comptia.org/auto-add-to-cart?productCode=CompTIACLOUD) ([See all pricing](https://www.comptia.org/testing/exam-vouchers/buy-exam/exam-prices#cloud%20essentials))
+- 
+- CompTIA Cloud Essentials+
+    - Certification Exam
+    - Objectives
+    - EXAM NUMBER: CLO-002
+    - About the Exam
+    - Candidates are encouraged to use this document to help prepare for CompTIA Cloud Essentials+ CLO-002.
+    - CompTIA Cloud Essentials+ will certify the successful candidate has the knowledge and skills required to make
+    - clear and conscious decisions about cloud technologies and their business impact by evaluating business use
+    - cases, financial impacts, cloud technologies, and deployment models with knowledge of cloud computing.
+    - These content examples are meant to clarify the test objectives and should not be
+    - construed as a comprehensive listing of all the content of this examination.
+    - EXAM DEVELOPMENT
+    - CompTIA exams result from subject matter expert workshops and industry-wide survey
+    - results regarding the skills and knowledge required of an IT professional.
+    - CompTIA AUTHORIZED MATERIALS USE POLICY
+    - CompTIA Certifications, LLC is not affiliated with and does not authorize, endorse or condone utilizing any
+    - content provided by unauthorized third-party training sites (aka “brain dumps”). Individuals who utilize
+    - such materials in preparation for any CompTIA examination will have their certifications revoked and be
+    - suspended from future testing in accordance with the CompTIA Candidate Agreement. In an effort to more
+    - clearly communicate CompTIA’s exam policies on use of unauthorized study materials, CompTIA directs
+    - all certification candidates to the CompTIA Certification Exam Policies. Please review all CompTIA policies
+    - before beginning the study process for any CompTIA exam. Candidates will be required to abide by the
+    - CompTIA Candidate Agreement. If a candidate has a question as to whether study materials are considered
+    - unauthorized (aka “brain dumps”), he/she should contact CompTIA at examsecurity@comptia.org to confirm.
+    - PLEASE NOTE
+    - The lists of examples provided in bulleted format are not exhaustive lists. Other examples of
+    - technologies, processes, or tasks pertaining to each objective may also be included on the exam
+    - although not listed or covered in this objectives document. CompTIA is constantly reviewing the
+    - content of our exams and updating test questions to be sure our exams are current and the security
+    - of the questions is protected. When necessary, we will publish updated exams based on testing
+    - exam objectives. Please know that all related exam preparation materials will still be valid.
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.TEST DETAILS
+    - Required exam CLO-002
+    - Number of questions Maximum of 75
+    - Type of questions Multiple choice
+    - Length of test 60 minutes
+    - Recommended experience 6-12 months of work experience as a business
+    - analyst in an IT environment with some exposure
+    - to cloud technologies
+    - Passing score 720 (on a scale of 100 –900)
+    - EXAM OBJECTIVES (DOMAINS)
+    - The table below lists the domains measured by this examination
+    - and the extent to which they are represented:
+    - DOMAIN PERCENTAGE OF EXAMINATION
+    - 1.0 Cloud Concepts 24%
+    - 2.0 Business Principles of Cloud Environments 3.0 Management and Technical Operations 4.0 Governance, Risk, Compliance, and Security for the Cloud 28%
+    - 26%
+    - 22%
+    - Total 100%
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.1.0 Cloud Concepts
+    - 1.1
+    - Explain cloud principles.
+    - • Service models
+    - - SaaS
+    - - IaaS
+    - - PaaS
+    - • Deployment models
+    - - Public
+    - - Private
+    - - Hybrid
+    - • Characteristics
+    - - Elastic
+    - - Self-service
+    - - Scalability
+    - - Broad network access
+    - - Pay-as-you-go
+    - - Availability
+    - • Shared responsibility model
+    - 1.2
+    - Identify cloud networking concepts.
+    - • Connectivity types
+    - - Direct connect
+    - - VPN
+    - • Common access types
+    - - RDP
+    - - SSH
+    - - HTTPS
+    - 1.3
+    - Identify cloud storage technologies.
+    - • Storage features
+    - - Compression
+    - - Deduplication
+    - - Capacity on demand
+    - • Storage characteristics
+    - - Performance
+    - - Hot vs. cold
+    - • Storage types
+    - - Object storage
+    - - File storage
+    - - Block storage
+    - • Software-defined storage
+    - • Content delivery network
+    - 1.4
+    - Summarize important aspects of cloud design.
+    - • Redundancy
+    - • High availability
+    - • Disaster recovery
+    - • Recovery objectives
+    - - RPO
+    - - RTO
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.
+    - • Software-defined networking (SDN)
+    - • Load balancing
+    - • DNS
+    - • Firewall2.0 Business Principles of Cloud Environments
+    - 2.1
+    - Given a scenario, use appropriate cloud assessments.
+    - • Current and future requirements
+    - • Baseline
+    - • Feasibility study
+    - • Gap analysis
+    - - Business
+    - - Technical
+    - • Reporting
+    - - Compute
+    - - Network
+    - - Storage
+    - • Benchmarks
+    - • Documentation and diagrams
+    - • Key stakeholders
+    - • Point of contact
+    - 2.2
+    - Summarize the financial aspects of engaging a cloud provider.
+    - • Capital expenditures
+    - • Operating expenditures
+    - • Variable vs. fixed cost
+    - • Licensing models
+    - - BYOL
+    - - Subscription
+    - • Contracts
+    - • Billing
+    - • Request for information
+    - • Human capital
+    - - Training
+    - - Professional development
+    - 2.3
+    - Identify the important business aspects
+    - of vendor relations in cloud adoptions.
+    - • Professional services
+    - - Time to market
+    - - Skill availability
+    - - Support
+    - - Managed services
+    - • Statement of work (SOW)
+    - • Service level agreement (SLA)
+    - • Training
+    - • Evaluations
+    - - Pilot
+    - - Proof of value
+    - - Proof of concept
+    - - Success criteria
+    - • Open-source vs. proprietary
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.2.0 Business Principles of Cloud Environments
+    - 2.4
+    - Identify the benefits or solutions of utilizing cloud services.
+    - • Identity access management
+    - - Single sign-on
+    - - Multifactor authentication
+    - - Federation
+    - • Cloud-native applications
+    - - Microservices
+    - - Containerization
+    - • Data analytics
+    - - Machine learning
+    - - Artificial intelligence
+    - - Big Data
+    - • Digital marketing
+    - - Email campaigns
+    - - Social media
+    - • Autonomous environments
+    - • IoT
+    - • Blockchain
+    - • Subscription services
+    - • Collaboration
+    - • VDI
+    - • Self-service
+    - 2.5
+    - Compare and contrast cloud migration approaches.
+    - • Rip and replace
+    - • Lift and shift
+    - • Hybrid
+    - • Phased
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.3.0 Management and Technical Operations
+    - 3.1
+    - Explain aspects of operating within the cloud.
+    - • Data management
+    - - Replication
+    - - Locality
+    - - Backup
+    - • Availability
+    - - Zones
+    - - Geo-redundancy
+    - • Disposable resources
+    - • Monitoring and visibility
+    - - Alerts
+    - - Logging
+    - • Optimization
+    - - Auto-scaling
+    - - Right-sizing
+    - 3.2
+    - Explain DevOps in cloud environments.
+    - • Provisioning
+    - - Infrastructure as code
+    - - Templates
+    - • Continuous integration/
+    - continuous delivery
+    - • Testing in QA environments
+    - - Sandboxing
+    - - Load testing
+    - - Regression testing
+    - • Configuration management
+    - - Orchestration
+    - - Automation
+    - - Upgrades and patching
+    - • API integration
+    - 3.3
+    - Given a scenario, review and report on the financial
+    - expenditures related to cloud resources.
+    - • Storage
+    - • Network
+    - • Compute
+    - • Chargebacks
+    - - Resource tagging
+    - • Maintenance
+    - • Instances
+    - - Reserved
+    - - Spot
+    - • Licensing type
+    - • Licensing quantity
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.4.0 Governance, Risk, Compliance, and Security for the Cloud
+    - 4.1
+    - Recognize risk management concepts related to cloud services.
+    - • Risk assessment
+    - - Asset inventory
+    - - Classification
+    - - Ownership
+    - • Risk response
+    - - Mitigation
+    - - Acceptance
+    - - Avoidance
+    - - Transfer
+    - • Documentation
+    - - Findings
+    - - Risk register
+    - • Vendor lock-in
+    - • Data portability
+    - 4.2
+    - Explain policies or procedures.
+    - • Standard operating procedures
+    - • Change management
+    - • Resource management
+    - • Security policies
+    - - Incident response
+    - • Access and control policies
+    - • Department specific policies
+    - • Communication policies
+    - 4.3
+    - Identify the importance and impacts of compliance in the cloud.
+    - • Data sovereignty
+    - • Regulatory concerns
+    - • Industry-based requirements
+    - • International standards
+    - • Certifications
+    - 4.4
+    - Explain security concerns, measures, or concepts of cloud operations.
+    - • Threat
+    - • Vulnerability
+    - • Security assessments
+    - - Penetration testing
+    - - Vulnerability scanning
+    - - Application scanning
+    - • Data security
+    - - Categories
+    - - Public
+    - - Private
+    - - Sensitive
+    - - Confidentiality
+    -  - Encryption
+    -  - Sanitization
+    - - Integrity
+    -  - Validation
+    - - Availability
+    -  - Backup
+    -  - Recovery
+    - - Breach
+    - CompTIA Cloud Essentials+ Certification Exam Objectives Version 3.0 (Exam Number: CLO-002)
+    - Copyright © 2019 CompTIA, Inc. All rights reserved.
+    - • Application and Infrastructure security
+    - - Audit
+    - - Access
+    - - Authorization
+    - - HardeningCompTIA Cloud Essentials+ Acronyms
+    - The following is a list of acronyms that appear on the CompTIA
+    - Cloud Essentials+ exam. Candidates are encouraged to review the
+    - complete list and attain a working knowledge of all listed acronyms
+    - as part of a comprehensive exam preparation program.
+    - ACRONYM SPELLED OUT
+    - AI Artificial Intelligence
+    - API Application Programming Interface
+    - ASP Application Service Provider
+    - BPaaS Business Process as a Service
+    - BYOL Bring Your Own License
+    - CaaS Communications as a Service
+    - CDN Content Delivery Network
+    - CFO Chief Financial Officer
+    - CI/CD Continuous Integration/Continuous Delivery
+    - CIO Chief Information Officer
+    - CISO Chief Information Security Officer
+    - CLI Command Line Interface
+    - CMS Content Management System
+    - CPU Central Processing Unit
+    - CRM Customer Relationship Management
+    - CSP Cloud Service Provider
+    - CTO Chief Technology Officer
+    - DBaaS Database as a Service
+    - DDoS Distributed Denial of Service
+    - DNS Domain Name Service
+    - DR Disaster Recovery
+    - ERP Enterprise Resource Planning
+    - EULA End-user License Agreement
+    - FTP File Transfer Protocol
+    - GUI Graphical User Interface
+    - HTTPS Hypertext Transport Protocol Secure
+    - IaaS Infrastructure as a Service
+    - IoT Internet of Things
+    - IP Internet Protocol
+    - ISO International Standards Organization
+    - ISP Internet Service Provider
+    - ITaaS Information Technology as a Service
+    - ITIL Information Technology Infrastructure Library
+    - JSON JavaScript Object Notation
+    - KVM Kernel Virtual Machine
+    - LDAP Lightweight Directory Access Protocol
+    - MaaS Monitoring as a Service
+    - MFA Multifactor Authentication
+    - ML Machine Learning
+    - ACRONYM SPELLED OUT
+    - MSP Managed Service Provider
+    - MTTR Mean Time to Repair
+    - OEM Original Equipment Manufacturer
+    - OS Operating System
+    - PaaS Platform as a Service
+    - PII Personally Identifiable Information
+    - PoC Proof of Concept
+    - PoV Proof of Value
+    - QA Quality Assurance
+    - QoS Quality of Service
+    - RDP Remote Desktop Protocol
+    - RFI Request for Information
+    - RFP Request for Proposal
+    - ROI Return on Investment
+    - RPO Recovery Point Objective
+    - RTO Recovery Time Objective
+    - SaaS Software as a Service
+    - SAN Storage Area Network
+    - SDN Software-defined Network
+    - SFTP Secure File Transfer Protocol
+    - SLA Service Level Agreement
+    - SNMP Simple Network Management Protocol
+    - SOA Service-oriented Architecture
+    - SOP Standard Operating Procedure
+    - SOW Statement of Work
+    - SQL Structured Query Language
+    - SSH Secure Shell
+    - SSL Secure Sockets Layer
+    - SSO Single Sign-on
+    - TCO Total Cost of Ownership
+    - TCP/IP Transmission Control Protocol/Internet Protocol
+    - V2P Virtual to Physical
+    - V2V Virtual to Virtual
+    - VDI Virtual Desktop Infrastructure
+    - VLAN Virtual Local Area Network
+    - VM Virtual Machine
+    - VPN Virtual Private Network
+    - WAN Wide Area Network
+    - XML Extensible Markup Language
+    - © 2019 CompTIA Properties, LLC, used under license by CompTIA Certifications, LLC. All rights reserved. All certification programs and education related to such
+    - programs are operated exclusively by CompTIA Certifications, LLC. CompTIA is a registered trademark of CompTIA Properties, LLC in the U.S. and internationally.
+    - Other brands and company names mentioned herein may be trademarks or service marks of CompTIA Properties, LLC or of their respective owners. Reproduction
+    - or dissemination prohibited without written consent of CompTIA Properties, LLC. Printed in the U.S. 06128-Jan2019

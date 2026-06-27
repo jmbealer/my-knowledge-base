@@ -1,0 +1,1641 @@
+# networkplus
+
+## 1.0 Networking Concepts 23%
+
+### 1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model
+
+Open Systems Interconnection (OSI): Standardized seven-layer framework for
+network communication.
+
+Fundamental Concepts:
+
+- Interoperability: Ability of different systems and organizations to work
+  together.
+- Abstraction: Hiding implementation details to simplify complex systems.
+- Standardization: Establishing technical criteria to ensure uniformity (ISO,
+  IEEE).
+- Protocol: Set of rules governing data exchange (Syntax, Semantics, Timing).
+- Transmission Modes: Direction of signal flow (Simplex, Half-Duplex,
+  Full-Duplex).
+- Connection Services: Reliability of data transfer (Connection-Oriented vs
+  Connectionless).
+
+- Protocol Data Unit (PDU): Data block exchanged at specific protocol layers.
+- Encapsulation: Process of adding headers and trailers to data at each layer.
+  - Header: Control information added to beginning of data payload.
+  - Trailer: Control information added to end of data payload.
+  - Payload: Actual data being transmitted within a packet/frame.
+- Decapsulation: Process of removing headers and trailers from data at each
+  layer.
+- Addressing: Mechanism for identifying nodes and routing messages (MAC, IP,
+  Port).
+- Multiplexing: Combining multiple signals into one transmission channel.
+
+- Layer 1 - Physical: Transmits raw bits over physical medium.
+  - PDU: Bit.
+  - Sub-concepts: Signaling (Sync/Async), Modulation, Multiplexing (TDM/FDM),
+    Physical Topologies.
+    - Attenuation: Loss of signal strength over distance.
+    - Latency: Time delay for data to travel from source to destination.
+    - Bandwidth: Maximum rate of data transfer across a given path.
+  - Devices: Hubs, Repeaters, Cables, Transceivers, Modems.
+  - Protocols/Standards: Ethernet (IEEE 802.3 Physical), Wi-Fi (IEEE 802.11
+    Physical), Bluetooth, USB.
+- Layer 2 - Data Link: Node-to-node data transfer and error handling.
+  - PDU: Frame.
+  - Sublayers:
+    - Media Access Control (MAC): Addressing and channel access control.
+    - Logical Link Control (LLC): Flow control, error checking, and protocol
+      multiplexing.
+  - Sub-concepts: MAC Addressing, Switching, Bridging, Error Detection
+    (CRC/FCS).
+    - Collision Domain: Network segment where data collisions can occur.
+    - Broadcast Domain: Logical division where all nodes can reach each other by
+      broadcast.
+    - CSMA/CD: Carrier Sense Multiple Access/Collision Detection (Ethernet
+      access method).
+  - Devices: Switches, Bridges, Network Interface Cards (NICs), Wireless Access
+    Points (WAPs).
+  - Protocols: Ethernet, PPP, ARP, STP, VLAN (802.1Q), L2TP.
+- Layer 3 - Network: Routing data packets between different networks.
+  - PDU: Packet.
+  - Sub-concepts: IP Addressing (Logical), Routing, Path Selection, Packet
+    Switching/Circuit Switching.
+    - Fragmentation: Breaking packets into smaller units to fit MTU.
+    - Time to Live (TTL): Field limiting packet lifespan to prevent looping.
+    - Route Table: Database used by routers to determine where to forward
+      packets.
+  - Devices: Routers, Layer 3 Switches, Firewalls.
+  - Protocols: IP (IPv4/IPv6), ICMP, IPSec, GRE, RIP, OSPF, BGP.
+- Layer 4 - Transport: Reliable end-to-end data delivery and flow control.
+  - PDU: Segment (TCP) / Datagram (UDP).
+  - Sub-concepts: Port Numbers, Segmentation, Flow Control, Error Recovery,
+    Multiplexing.
+    - Windowing: Controlling data flow by limiting unacknowledged segments.
+    - Acknowledgement (ACK): Confirmation of receipt of data packets.
+    - Three-Way Handshake: Process to establish a reliable TCP connection (SYN,
+      SYN-ACK, ACK).
+  - Devices: Load Balancers, Firewalls (Stateful).
+  - Protocols: TCP, UDP.
+- Layer 5 - Session: Managing communication sessions between applications.
+  - Sub-concepts: Dialog Control, Session ID, Setup/Teardown.
+    - Synchronization: Checkpointing data stream to allow recovery from
+      interruption.
+    - Remote Procedure Calls (RPC): Executing code on a remote system as if
+      local.
+  - Protocols: SIP, RTP, RPC, NetBIOS, SMB.
+- Layer 6 - Presentation: Data translation, encryption, and compression
+  formatting.
+  - Sub-concepts: Data Formatting (ASCII/Unicode), Encryption/Decryption,
+    Compression/Decompression.
+    - Character Sets: Encoding standards for text (ASCII, Unicode, EBCDIC).
+    - Serialization: Converting data structures into a format for storage or
+      transmission.
+  - Protocols: SSL/TLS, JPEG, GIF, MPEG.
+- Layer 7 - Application: Interface for end-user network processes.
+  - Sub-concepts: Network Services, User Interface.
+    - Application Programming Interface (API): Set of definitions for building
+      and integrating application software.
+    - User Agent: Software acting on behalf of a user (e.g., Web Browser).
+  - Devices: Application Gateways, Proxy Servers.
+  - Protocols: HTTP, HTTPS, FTP, DNS, SMTP, DHCP, SSH, Telnet, SNMP.
+
+Network Nodes: Devices that send, receive, and forward data.
+
+- Intermediate Nodes: Devices that forward traffic between other nodes (routers,
+  switches).
+- End Systems (Hosts): Devices that send and receive data (computers, servers,
+  phones).
+
+### 1.2 Compare and contrast networking appliances, applications, and functions.
+
+Physical: Hardware-based network components and devices. Virtual Appliances:
+Software-based network functions running on hypervisors.
+
+Network Architecture Planes:
+
+- Control Plane: Part of the network that makes routing decisions (Routing
+  Tables, OSPF, BGP).
+- Data Plane (Forwarding Plane): Part of the network that forwards data packets
+  based on Control Plane decisions.
+
+- Router: Forwards data packets between computer networks (Layer 3).
+  - Uses Routing Tables to determine best path.
+  - Can perform NAT, DHCP, and ACL filtering.
+  - Connects diverse network types (LAN, WAN, Copper, Fiber).
+- Switch: Connects devices within a single network segment (Layer 2/Layer 3).
+  - Layer 2 Switch: Forwards frames based on MAC addresses.
+  - Layer 3 Switch (Multilayer): Adds routing functionality (IP-based
+    forwarding).
+  - Creates separate collision domains per port (unlike Hubs).
+  - Supports VLANs and Power over Ethernet (PoE).
+- Firewall: Security device filtering network traffic rules (Layer 3/4/7).
+  - Filters traffic based on IP, Port, and Application (NGFW).
+  - Statefulness: Tracks active connections (Stateful vs Stateless).
+  - Can be physical appliance or virtual software.
+- Intrusion Detection System (IDS): Monitors network traffic for suspicious
+  activity.
+- Intrusion Prevention System (IPS): Detects and blocks malicious network
+  activity.
+- Load Balancer: Distributes network traffic across multiple servers.
+- Proxy: Intermediary server handling client requests.
+- Network-Attached Storage (NAS): File-level storage connected to a network.
+- Storage Area Network (SAN): Dedicated high-speed network for block-level
+  storage access.
+  - Offloads storage traffic from LAN to improve performance.
+  - Protocols: Fibre Channel (FC), iSCSI, FCoE.
+- Wireless: Communication using radio waves instead of cables.
+  - Access Point (AP): Bridges wireless clients to wired network (Layer 2).
+  - Wireless Controller: Central management device for multiple access points.
+    - Centralizes configuration, security policies, and firmware updates.
+- Modem: Device modulating and demodulating signals for transmission (Layer
+  1/2).
+  - Converts digital signals to analog (and vice versa) for DSL/Cable/Fiber.
+- Network Interface Controller (NIC): Hardware connecting computer to network
+  media.
+
+Functions and Applications:
+
+- Client: Device users access the network with (Workstation, Phone, Laptop).
+- Server: Device providing resources to the network (File, Web, Email).
+- Quality of Service (QoS): Prioritizing specific traffic types over others.
+- Time to Live (TTL): Packet lifespan limit to prevent looping.
+- Content Delivery Network (CDN): Distributed servers speeding up content
+  delivery.
+
+Standards Organizations:
+
+- Internet Assigned Numbers Authority (IANA): Manages global IP allocation and
+  DNS root.
+- Internet Engineering Task Force (IETF): Develops Internet standards and
+  protocols (RFCs).
+
+### 1.3 Summarize cloud concepts and connectivity options.
+
+Cloud Models:
+
+- Infrastructure as a Service (IaaS): Virtualized computing resources over the
+  internet.
+- Platform as a Service (PaaS): Platform for developing and deploying
+  applications.
+- Software as a Service (SaaS): Software delivered over internet via
+  subscription.
+
+Deployment Models:
+
+- Public Cloud: Cloud resources shared by general public.
+- Private Cloud: Cloud infrastructure dedicated to single organization.
+- Hybrid Cloud: Environment combining public and private clouds.
+
+Cloud Connectivity:
+
+- Virtual Private Network (VPN): Encrypted tunnel over a public network.
+- Direct Connect: Dedicated physical connection to cloud provider.
+
+Cloud Infrastructure Concepts:
+
+- Network Functions Virtualization (NFV): Virtualizing network services by
+  decoupling from hardware.
+  - Decoupling: Separating network functions from proprietary hardware.
+- Virtual Private Cloud (VPC): Isolated private network within a public cloud.
+  - Isolation: Segmenting resources for security and control.
+- Cloud Gateways: Entry points connecting local networks to cloud.
+  - Internet Gateway (IGW): Connects VPC instances to the internet.
+  - Network Address Translation (NAT) Gateway: Enables private instances to
+    access internet.
+
+Security and Management:
+
+- Network Security Groups (NSG): Virtual firewall rules for cloud resources
+  (Instance-level).
+- Network Security Lists: Firewall rules applied at the subnet level.
+- Multitenancy: Single instance serving multiple distinct customers.
+- Scalability: Ability to handle increasing workload growth.
+- Elasticity: Automatically scaling resources up and down.
+
+### 1.4 Explain common networking ports, protocols, services, and traffic types.
+
+- Protocols: Rules governing data exchange between network devices.
+  - Connection-Oriented: Establishes session before data transfer (Reliable).
+  - Connectionless: Sends data without established session (Unreliable/Fast).
+  - Stateful: Retains information about session status (e.g., TCP).
+  - Stateless: No session information retained between requests (e.g., UDP,
+    HTTP).
+
+- Ports: Logical endpoints for identifying specific processes.
+  - Well-known Ports (0-1023): Reserved for system services (HTTP, FTP).
+  - Registered Ports (1024-49151): Assigned to user processes/applications.
+  - Dynamic/Private Ports (49152-65535): Ephemeral ports for client sessions.
+
+  - File Transfer Protocol (FTP): Transfers files between systems using ports
+    20/21.
+  - Secure File Transfer Protocol (SFTP): Secure file transfer using SSH on
+    port 22.
+  - Secure Shell (SSH): Encrypted remote command-line access on port 22.
+  - Telnet: Unencrypted remote command-line communication on port 23.
+  - Simple Mail Transfer Protocol (SMTP): Sends email messages using port 25.
+  - Domain Name System (DNS): Resolves domain names to IP addresses (port 53).
+  - Dynamic Host Configuration Protocol (DHCP): Automates IP address assignment
+    (ports 67/68).
+  - Trivial File Transfer Protocol (TFTP): Simple file transfer without
+    authentication (port 69).
+  - Hypertext Transfer Protocol (HTTP): Transmits unencrypted web data on
+    port 80.
+  - Hypertext Transfer Protocol Secure (HTTPS): Secure, encrypted web browsing
+    on port 443.
+  - Network Time Protocol (NTP): Synchronizes clocks on network devices (port
+    123).
+  - Simple Network Management Protocol (SNMP): Monitors and manages network
+    devices (ports 161/162).
+  - Lightweight Directory Access Protocol (LDAP): Queries and manages
+    distributed directory information (port 389).
+  - Server Message Block (SMB): Network file and printer sharing (port 445).
+  - Syslog: Standard protocol for system log messages (port 514).
+  - Simple Mail Transfer Protocol Secure (SMTPS): Secure email submission using
+    port 587.
+  - Lightweight Directory Access Protocol over SSL (LDAPS): Secure directory
+    access on port 636.
+  - Structured Query Language (SQL Server: Microsoft database communication
+    using port 1433.
+  - Remote Desktop Protocol (RDP): GUI-based remote access on port 3389.
+  - Session Initiation Protocol (SIP): Manages multimedia communication sessions
+    (ports 5060/5061).
+    - Session Management: Setup, modification, and teardown of calls.
+
+- Internet Protocol (IP) types
+  - Internet Protocol (IP): Principal protocol for routing and addressing
+    packets.
+  - Internet Control Message Protocol (ICMP): Reports network errors and
+    diagnostic information.
+  - Transmission Control Protocol (TCP): Reliable, connection-oriented data
+    delivery protocol.
+    - Three-Way Handshake: SYN, SYN-ACK, ACK process establishing connection.
+    - Flow Control: Managing data rate to prevent overwhelming receiver.
+    - Sequence Numbers: Ordering packets to reconstruct stream at destination.
+    - Acknowledgments: Confirming receipt of data packets.
+  - User Datagram Protocol (UDP): Fast, connectionless, best-effort data
+    transmission protocol.
+  - Generic Routing Encapsulation (GRE): Encapsulates various network protocols
+    within virtual tunnels.
+  - Internet Protocol Security (IPsec): Suite ensuring IP packet confidentiality
+    and integrity.
+    - Authentication Header (AH): Verifies sender identity and data integrity.
+    - Encapsulating Security Payload (ESP): Provides encryption, authentication,
+      and data integrity.
+    - Internet Key Exchange (IKE): Negotiates security keys and associations
+      automatically.
+  - Address Resolution Protocol (ARP): Resolves IP addresses to MAC hardware
+    addresses.
+- Traffic Types: Categories of data flow across a network.
+  - Unicast: One-to-one communication between single sender and receiver.
+  - Multicast: One-to-many communication to a subscribed group.
+    - Uses 224.0.0.0/4 IPv4 range
+  - Anycast: One-to-nearest communication within a group of nodes.
+    - Used in IPv6 and DNS
+  - Broadcast: One-to-all communication on a network segment.
+    - Used for ARP, DHCP Discover
+
+### 1.5 Compare and contrast transmission media and transceivers.
+
+- Wireless: Data transmission via electromagnetic radio frequencies.
+  - 802.11 Standards: Wireless networking standards utilizing radio
+    transmission.
+    - 802.11a: 54 Mbps on 5 GHz band (Legacy).
+    - 802.11b: 11 Mbps on 2.4 GHz band (Legacy).
+    - 802.11g: 54 Mbps on 2.4 GHz band (Legacy).
+    - 802.11n (Wi-Fi 4): 600 Mbps on 2.4/5 GHz (MIMO).
+    - 802.11ac (Wi-Fi 5): 1 Gbps+ on 5 GHz (MU-MIMO).
+    - 802.11ax (Wi-Fi 6): 10 Gbps on 2.4/5/6 GHz (OFDMA).
+  - Cellular: Wireless data transmission via mobile phone networks.
+  - Satellite: Internet access via orbiting relay stations.
+
+- Wired: Data transmission through physical cables and wires.
+  - Twisted Pair Categories: Copper cabling standards for Ethernet.
+    - Cat 5e: 1 Gbps up to 100 meters.
+    - Cat 6: 10 Gbps up to 55 meters.
+    - Cat 6a: 10 Gbps up to 100 meters.
+    - Cat 8: 40 Gbps up to 30 meters (Datacenter).
+  - Fire Ratings: Cable jacket types for safety compliance.
+    - Plenum: Fire-resistant, low-smoke for air handling spaces.
+    - Riser (Non-Plenum): Vertical runs between floors, less fire-resistant.
+  - Fiber Optic Types: Glass cabling using light for transmission.
+    - Single-Mode Fiber (SMF): Small core (9um), laser-based, long distance
+      (km).
+    - Multimode Fiber (MMF): Larger core (50um), LED-based, short distance (m).
+  - Coaxial Cable: Copper core with shielding for broadband/TV.
+    - RG-6: Standard for modern cable TV/internet.
+    - RG-59: Older standard, higher loss, short runs.
+  - Direct Attach Copper (DAC): Twinax copper cable with integrated
+    transceivers.
+
+- Transceivers: Devices that both transmit and receive signals.
+  - Form Factors: Standardized physical dimensions and module shapes.
+    - Small Form-Factor Pluggable (SFP): 1 Gbps hot-swappable module.
+    - Enhanced SFP (SFP+): 10 Gbps version of SFP.
+    - Quad SFP (QSFP): 40 Gbps module (4 channels).
+    - QSFP28: 100 Gbps module for high-speed backbones.
+  - Protocol: Rules for physical data encoding and transmission.
+    - Fiber Channel (FC): High-speed network technology for storage networking.
+
+- Connector Types: Physical interfaces used for joining network cables.
+  - Subscriber Connector (SC): Square push-pull fiber connector
+    (Datacenter/Telecom).
+  - Local Connector (LC): Small form-factor push-pull fiber connector
+    (High-density).
+  - Straight Tip (ST): Bayonet twist-lock fiber connector (Legacy/Campus).
+  - Multi-Fiber Push On (MPO): High-density connector for 12-24 fibers.
+  - Registered Jack (RJ): Standard connector interface for telecommunications.
+    - RJ11: 6-position, 2-4 conductor for telephone/DSL.
+    - RJ45: 8-position, 8-conductor for Ethernet networking.
+  - F-Type Connector: Screw-on connector for coaxial cable (TV/Modem).
+  - Bayonet Neill-Concelman (BNC): Twist-lock connector for coaxial cables.
+  - Ultra Physical Contact (UPC): Fiber connector polish with rounded surface.
+  - Angled Physical Contact (APC): Fiber connector polish with angled surface.
+
+### 1.6 Compare and contrast network topologies, architectures, and types.
+
+- Physical Topology: Actual layout of hardware, cables, and devices.
+- Logical Topology: Path data flows through the network.
+- Mesh Topology: Network where nodes connect to multiple others.
+  - Full Mesh: Every node connects directly to every other node.
+    - Fault Tolerance: System continues operating after component failure.
+  - Partial Mesh: Selected nodes connect to multiple others for redundancy.
+    - Redundancy: Duplicate components or paths preventing system failure.
+- Hybrid Topology: Network mixing multiple topology types.
+- Star Topology / Hub-and-Spoke: Central device connects all nodes (LAN) or
+  sites (WAN).
+  - Single Point of Failure: Critical component whose failure stops entire
+    system.
+  - Scalability: Ability to handle increasing workload growth.
+- Spine and Leaf: Datacenter topology reducing latency between servers.
+  - Two-Layer Design: Architecture minimizing hops between any two servers.
+  - Minimizing Latency: Reducing time delay for data packet transmission.
+- Point-to-Point: Direct connection between two nodes.
+  - Dedicated Connection: Communication channel reserved for specific users.
+  - Leased Lines: Rented dedicated circuit between two points (T1/E1).
+- Bus Topology: Single cable backbone connecting all network devices
+  sequentially.
+- Ring Topology: Network nodes connected in a closed loop.
+- Three-Tier Hierarchical Model: Design separating Core, Distribution, and
+  Access.
+  - Core Layer: High-speed backbone of network hierarchy.
+    - Redundancy: High availability through duplicate hardware and paths.
+  - Distribution Layer: Layer connecting access switches to core.
+    - Policy Enforcement: Applying security, QoS, and routing rules.
+  - Access Layer: Network hierarchy tier connecting end-user devices.
+    - Power over Ethernet (PoE): Delivering power via Ethernet cabling.
+- Collapsed Core: Topology merging core and distribution layers.
+  - Simplified Management: Reducing complexity by combining network layers.
+  - Cost Reduction: Lowering expenses by using fewer physical devices.
+- Traffic Flows: Patterns of data movement through a network.
+  - North-South Traffic: Data flow entering or leaving datacenter
+    (Client-to-Server).
+  - East-West Traffic: Data flow between servers in datacenter
+    (Server-to-Server).
+- Network Types: Categorization of networks based on geographic scale.
+  - Local Area Network (LAN): Network within a limited geographic area.
+    - Residential Network: SOHO LAN for home use with consumer-grade equipment.
+    - SME Network: LAN for small/medium enterprises with structured cabling.
+    - Enterprise LAN: Large-scale LAN with high-performance equipment and
+      redundancy.
+    - Datacenter Network: High-speed network connecting servers and storage.
+  - Wide Area Network (WAN): Network spanning large geographic distances.
+  - Personal Area Network (PAN): Very short range network (Bluetooth).
+  - Metropolitan Area Network (MAN): Network spanning a city or campus.
+    - Campus Area Network (CAN): Network connecting multiple buildings in
+      limited geographic area.
+    - Small Office/Home Office (SOHO): Small LAN using a single multifunction
+      appliance for connectivity.
+    - Client-Server Network: Network where dedicated servers provide resources
+      to client devices.
+      - Server: Device that provides resources or services to other hosts.
+      - Client: Device that requests and consumes resources from servers.
+    - Peer-to-Peer Network (P2P): Network where hosts act as both clients and
+      servers sharing resources.
+    - Intranet: Private network accessible only to organization's internal
+      users.
+    - Extranet: Intranet allowing controlled access to external business
+      partners.
+    - Darknet: Overlay network accessible only with specific software.
+  - WAN Techologies
+  - Multiprotocol Label Switching (MPLS): Label-based routing for faster,
+    efficient network traffic flow.
+  - Metro Ethernet (Metro-E): High-speed Ethernet extension across a
+    metropolitan area.
+  - Leased Line (T1/E1): Dedicated point-to-point connection with guaranteed
+    bandwidth.
+  - Digital Subscriber Line (DSL)/Cable: Internet access via telephone lines or
+    coaxial cables.
+
+### 1.7 Given a scenario, use appropriate IPv4 network addressing.
+
+- Public vs. Private: Globally routable versus internal-only IP addresses.
+  - Public Addresses: Globally unique addresses assigned by IANA.
+    - Globally Unique: IP addresses that are distinctive across the internet.
+  - Private Addresses (RFC 1918): Non-routable addresses reserved for internal networks.
+    - Non-Routable: Traffic not forwarded by public internet routers.
+    - Network Address Translation (NAT): Mechanism mapping private IPs to public IPs.
+  - Automatic Private IP Addressing (APIPA): Self-assigned fallback IP when DHCP fails.
+    - Self-Assignment: Automatic IP configuration without a DHCP server.
+    - Link-Local: Communication limited to the local network segment.
+  - Loopback: IP directing traffic to the local host.
+  - Localhost (127.0.0.1): Standard hostname referring to the local computer.
+
+- Subnetting: Dividing a network into smaller logical segments.
+  - Broadcast Control: Limiting unnecessary network traffic to specific subnets.
+  - Network vs Host Portion: Dividing bits between network ID and device ID.
+  - Variable Length Subnet Mask (VLSM): Subnetting using different mask lengths efficiently.
+    - Arbitrary Length: Masks using non-standard bit lengths (0-32).
+  - Classless Inter-Domain Routing (CIDR): Flexible IP addressing using prefix notation.
+    - Prefix Notation (CIDR): Representing subnet masks using bit-count (/XX).
+
+- IPv4 Address Classes: Hierarchical system for IP address allocation.
+  - Default Masks: Standard subnet masks assigned to each class.
+  - Host Capacity: Maximum number of devices supported per subnet.
+  - Class A: Large networks (1.0.0.0 - 126.255.255.255) /8.
+  - Class B: Medium networks (128.0.0.0 - 191.255.255.255) /16.
+  - Class C: Small networks (192.0.0.0 - 223.255.255.255) /24.
+  - Class D: Reserved for Multicast traffic (224.0.0.0 - 239.255.255.255).
+  - Class E: Reserved for Experimental use (240.0.0.0 - 255.255.255.255).
+
+### 1.8 Summarize evolving use cases for modern network environments.
+
+- Software-Defined Network (SDN) and Software-Defined Wide Area Network (SD-WAN)
+  - Software-Defined Network (SDN): Centralized software control of network
+    hardware.
+  - Software-Defined Wide Area Network (SD-WAN): Software-based management of
+    WAN connections.
+  - Applications aware: Traffic routing based on application type.
+  - Zero-Touch Provisioning (ZTP): Automated device setup without manual
+    intervention.
+  - Transport agnostic: Operating across any underlying communication medium.
+  - Central policy management: Unified control of network configurations and
+    rules.
+- Virtual Extensible LAN (VXLAN): Tunneling protocol extending VLANs over
+  Layer 3.
+  - Data Center Interconnect (DCI): Technologies connecting two or more
+    datacenters.
+  - Layer 2 Encapsulation: Wrapping Layer 2 frames within another protocol.
+- Overlay Network: Virtual network built on top of physical network.
+- Zero Trust Architecture (ZTA): Security model verifying every access request.
+  - Policy-based authentication: Access granted based on defined security
+    policies.
+  - Authorization: Process of granting specific permissions to users.
+  - Least Privilege Access: Granting minimum necessary access rights for tasks.
+- Secure Access Service Edge (SASE)/Security Service Edge (SSE)
+  - Secure Access Service Edge (SASE): Converging WAN and security into cloud
+    services.
+  - Security Service Edge (SSE): Security component of SASE architecture.
+- Infrastructure as Code (IaC): Managing infrastructure via machine-readable
+  definition files.
+  - Automation: Scripting tasks to reduce manual intervention.
+    - Playbooks: Automated scripts for orchestrating configuration tasks.
+    - Templates: Standardized files used for consistent device deployment.
+    - Reusable Tasks: Modular automation components used across multiple
+      playbooks.
+    - Upgrades: Installing newer software or firmware versions.
+    - Configuration Drift: Systems deviating from baseline settings over time.
+    - Dynamic Inventories: Automatically updated lists of managed network hosts.
+  - Source Control: System for tracking and managing code changes.
+    - Version Control: Management of multiple iterations of configuration files.
+    - Central Repository: Master storage location for all project files.
+    - Conflict Identification: Detecting overlapping changes in shared files.
+    - Branching: Creating parallel versions of code for development.
+- IPv6 Addressing: 128-bit addressing system replacing IPv4.
+  - Mitigating address exhaustion: Solving the limited supply of IP addresses.
+  - Compatibility requirements
+    - Tunneling: Encapsulating one protocol within another for transmission.
+    - Dual Stack: Running IPv4 and IPv6 simultaneously on devices.
+    - NAT64: Protocol allowing IPv6-only clients to access IPv4.
+
+#### 1.8 Unsorted
+
+    - **1.8 Summarize evolving use cases for modern network environments.**
+        - **Software-defined network (SDN) and software-defined wide area network (SD-WAN)**
+            - Software-defined networking
+                - Software-defined networking (SDN) is an innovative networking paradigm that decouples the
+                - network control and forwarding functions, enabling network management through software
+                - applications.
+            - SD-WAN
+                - SD-WAN is a specific application of software defined networking (SDN) technology applied to WAN
+                - connections, which are used to connect enterprise networks—including branch offices and data
+                - centers—over large geographic distances.
+                - This technology enhances business eƯiciency by dynamically rouƟng traffic across the optimal path
+                - using a centralized control function, ensuring high performance and reliability for critical
+                - applications.
+                - SD-WAN provides significant advantages such as cost reduction, increased network agility,
+                - improved uptime, and the ability to secure and optimize internet connectivity and cloud
+                - architecture.
+            - 
+            - Application aware
+                - Application Aware
+                - SD-WAN technology intelligently idenƟfies applications and can prioritize traƯic based on business
+                - requirements, ensuring critical applications have the bandwidth and path reliability they need.
+                -  *Application-aware* 
+                    - SD-WAN can prioritise traffic based on application type, ensuring QoS
+            - Zero-touch provisioning
+                - Zero-Touch Provisioning
+                - This feature allows for the remote deployment of network devices with minimal manual intervention.
+                - Network devices can automaƟcally download configuraƟon seƫngs from a central location,
+                - simplifying branch deployments.
+                -  *Zero-touch provisioning* 
+                    - New network devices automatically configure themselves when connected
+            - Transport agnostic
+                - Transport Agnostic
+                - SD-WAN is flexible with the type of connectivity it uses, whether it's MPLS, broadband, LTE, or a
+                - combination, allowing for cost-eƯective and reliable internet access from diƯerent service
+                - providers.
+                -  *Transport agnostic* 
+                    - Works over MPLS, broadband, LTE, satellite etc
+            - Central policy management
+                - Central Policy Management
+                - Centralized management enables network administrators to set policies that manage and configure
+                - all SD-WAN devices across the network from a single interface, enhancing security and eƯiciency.
+                -  *Central policy management* 
+                    - Network policies are defined centrally then pushed to all devices
+                    - Enhances security and compliance
+        - **Virtual Extensible Local Area Network (VXLAN)**
+            - VXLAN
+            - VXLAN (Virtual Extensible Local Area Network) is a network virtualizaƟon technology that enhances
+            - the scalability of large-scale cloud computing environments.
+            - It extends Layer 2 segments over an underlying Layer 3 network, enabling the creation of a large
+            - number of virtualized LANs.
+            - 
+            - **Virtual Extensible Local Area Network (VXLAN)**
+                - Layer 2 over Layer 3 encapsulation technology that enables large-scale virtual networks
+            - 
+            - Data center interconnect (DCI)
+                - DCI
+                - VXLAN is particularly eƯective for Data Center Interconnect (DCI) by enabling the stretching of
+                - Layer 2 networks across geographically dispersed data centers.
+                - This capability allows for seamless mobility of virtual machines between data centers without
+                - changing underlying network configurations.
+                -  *Data centre interconnect (DCI)* 
+                    - Allows multiple data-centres to operate as one network
+            - Layer 2 encapsulation
+                - Layer 2 Encapsulation
+                - VXLAN uses Layer 2 encapsulation to encapsulate Ethernet frames within UDP packets.
+                - This encapsulation allows VXLAN to create a logical network for VMs across diƯerent physical
+                - networks, providing scalability beyond the tradiƟonal 4096 VLANs limit.
+                -  *Layer 2 encapsulation* 
+                    - Encapsulates Ethernet frames as UDP datagrams
+                    - Provides 10 million+ VLANs compared to traditional 4096 limit
+        - **Zero trust architecture (ZTA)**
+            - Zero Trust
+            - Zero Trust is a security model based on the principle of "never trust, always verify."
+            - It requires strict idenƟty verificaƟon for every person and device trying to access resources on a
+            - private network, regardless of whether they are sitting within or outside of the network perimeter.
+            - Zero Trust minimizes potential attack vectors by treaƟng all users as potenƟal threats and enforcing
+            - strict access controls and not assuming trust based on network location.
+            - 
+            - **Zero trust architecture (ZDA)**
+                - A security model where no user device is automatically trusted, even inside a network
+            - 
+            - Policy-based authentication
+                - Policy-Based Authentication
+                - In a Zero Trust framework, policy-based authentication requires all users, both internal and
+                - external, to be authenƟcated and conƟnuously validated for security configuration and posture
+                - before being granted access to data and applications.
+                - Authentication policies can include multifactor authentication (MFA), biometrics, and behavioral
+                - analytics to ensure that only legitimate users gain access.
+                -  *Policy-based authentication* 
+                    - Access is granted based on user identity, location, device type and risk level
+            - Authorization
+                - Authorization in Zero Trust Architecture
+                - Authorization in ZTA is dynamic and strictly enforced before access to resources is allowed.
+                - This process is context-aware, taking into account the user’s identity, location, device health,
+                - service or workload, data classification, and anomalies.
+                - Access to resources is granted on a per-session basis, ensuring that the access rights of users are
+                - constantly evaluated and adjusted based on the latest security intelligence and context.
+                -  *Authorisation* 
+                    - Users and devices only get access they need based on policies
+            - Least privilege access
+                - Least Privilege
+                - The principle of least privilege requires that users, systems, and programs are granted only the
+                - minimum levels of access — or permissions — needed to perform necessary tasks.
+                - Implementing least privilege minimizes the potenƟal damage from accidental or malicious actions
+                - by limiƟng access rights for users to the bare minimum necessary to perform their work.
+                -  *Least Privilege Access* 
+                    - Limits access to only necessary resources, reducing attack surface
+        - **Secure Access Secure Edge (SASE)/Security Service Edge (SSE)**
+            - SASE/SSE
+                - SASE (Secure Access Service Edge) and SSE (Security Service Edge) are emerging frameworks that
+                - combine network security functions with WAN capabiliƟes to support the dynamic secure access
+                - needs of organizations' distributed workforces and cloud-first strategies.
+                - **Secure Access Secure Edge (SASE) / Security Service Edge (SSE)**
+                    -  *SASE*  combines networking (SD-WAN) and security services (firewall, Zero Trust, CASB, etc) into a cloud-based solution
+                    -  *SSE*  focuses only on security services
+                    - Provides secure remote access, content filtering and data loss protection
+            - 
+            - Secure Access Service Edge (SASE)
+                - SASE integrates comprehensive WAN services and security functions directly into the network
+                - fabric.
+                - This provides secure network connectivity and access to resources regardless of location.
+            - Security Service Edge (SSE)
+                - SSE focuses more on the security aspects, centralizing various security services like secure web
+                - gateways, cloud access security brokers (CASB), and zero trust network access (ZTNA).
+                - These services are provided in the cloud to ensure secure access and data protection across all
+                - environments.
+        - **Infrastructure as code (IaC)**
+            - Infrastructure as Code
+            - Infrastructure as Code (IaC) is a key practice in cloud computing and DevOps that involves
+            - managing and provisioning computing infrastructure through machine-readable definiƟon files,
+            - rather than physical hardware configuration or interactive configuration tools.
+            - It enables IT infrastructure to be automaƟcally managed, monitored, and provisioned through code,
+            - improving consistency, eƯiciency, and reducing manual errors.
+            - Automates network and infrastructure provisioning using code-based configurations
+            - **Automation** 
+                - Automation in IaC
+                - Automation is at the core of IaC, enabling rapid and consistent environment setups.
+                - This approach reduces human errors and increases eƯiciency in deploying infrastructure.
+                - **Automation**
+                - **Playbooks/templates/reusable tasks** 
+                    - Playbooks, Templates, and Reusable Tasks
+                    - IaC utilizes playbooks, templates, and reusable tasks to define and orchestrate the steps needed for
+                    - infrastructure setup, modification, and management.
+                    - These elements are critical for ensuring that infrastructure deployment is repeatable and scalable.
+                    -  *Playbooks/templates/resuable tasks* 
+                        - Predefined configurations to automate deployments
+                        - Ansible, Puppet, Chef, Terraform
+                - **Configuration drift/compliance** 
+                    - Configuration Drift and Compliance
+                    - IaC helps prevent configuraƟon driŌ, which occurs when the environment’s current state deviates
+                    - from its intended state due to manual changes or updates.
+                    - IaC also aids in maintaining compliance with defined standards and policies by automating
+                    - configurations and deployments.
+                    -  *Configuration drift/compliance* 
+                        - Detects and fixes deviations from baseline configurations
+                - **Upgrades** 
+                    - Upgrades
+                    - With IaC, upgrades to infrastructure can be managed systematically through code revisions.
+                    - This method ensures that upgrades are less disrupƟve and that all changes are version controlled and
+                    - reversible.
+                    -  *Upgrades* 
+                        - Automates patching and software updates
+                - **Dynamic inventories** 
+                    - Dynamic Inventories
+                    - IaC supports the use of dynamic inventories, where infrastructure resources are automaƟcally
+                    - discovered and managed based on real-time data.
+                    - This flexibility is essential for managing environments that need to adjust quickly to changing
+                    - demands or configurations.
+                    -  *Dynamic Inventories* 
+                        - Keeps track of network and cloud resources dynamically
+            - **Source control** 
+                - Source Control in IaC
+                - Source control is integral to the Infrastructure as Code paradigm, providing a system for tracking
+                - changes, collaborating, and maintaining the integrity of code that defines infrastructure.
+                - **Version control** 
+                    - Version Control
+                    - Version control systems keep track of every modificaƟon to the code in a special kind of database.
+                    - If a mistake is made, developers can turn back the clock and compare earlier versions of the code to
+                    - help fix the mistake while minimizing disruption to all team members.
+                - **Central repository** 
+                    - Central Repository
+                    - A central repository in source control systems acts as the single source of truth for all code
+                    - changes, allowing team members to collaborate effectively, accessing and updating code securely
+                    - and eƯiciently.
+                - **Conflict identification** 
+                    - Conflict Identification
+                    - Source control systems automaƟcally detect conflicts when multiple team members make changes to
+                    - the same part of the code.
+                    - This feature is crucial for prevenƟng overwrites and ensuring that all changes are reconciled before code
+                    - is merged.
+                - **Branching**
+                    - Branching
+                    - Branching is a feature of source control that allows developers to diverge from the main line of
+                    - development and continue to work independently without aƯecting others’ work.
+                    - This is particularly useful for developing new features, fixing bugs, or experimenting in a controlled
+                    - environment.
+        - **IPv6 addressing** 
+            - IPv6 Addressing
+                - IPv6 is the most recent version of the Internet Protocol designed to replace IPv4, oƯering a vastly
+                - expanded address space, improved security features, and enhanced functionality.
+                - It addresses the limitations of IPv4, including the exhaustion of available addresses, by using 128-
+                - bit addresses to support a virtually unlimited number of devices on the internet.
+                - IPv6 introduces several new concepts and functionalities to improve rouƟng efficiency, simplify
+                - network configuraƟon, and enhance security.
+            - **IPv6 Addressing**
+                - Successor to IPv4, designed to solve address exhaustion and support modern networks.
+            - **Mitigating address exhaustion**
+                - Mitigating Address Exhaustion
+                - IPv6 addresses the limitations of IPv4, including address exhaustion, by providing an almost
+                - limitless pool of IP addresses.
+                - This ensures the scalable growth of the internet, accommodating an increasing number of devices
+                - and users globally.
+                -  *Mitigating address exhaustion* 
+                    - IPv6 provides 340 undecillion addresses (2^128)
+            - **Compatibility requirements**
+                - Compatibility Requirements
+                - Transitioning to IPv6 involves compatibility strategies to ensure that IPv6 and IPv4 systems can
+                - operate concurrently.
+                - This is necessary because the internet will operate in a mixed IPv4 and IPv6 environment for many
+                - years.
+                - **Compatibility requirements**
+                - **Tunneling** 
+                    - Tunneling
+                    - Tunneling in IPv6 is a method used to transmit IPv6 packets over an existing IPv4 network
+                    - infrastructure.
+                    - This allows for the coexistence of both protocols during the transiƟon period from IPv4 to IPv6.
+                    - Tunneling works by encapsulating IPv6 packets within IPv4 packets, enabling them to be transported
+                    - across IPv4 networks as if they were IPv4 packets.
+                    -  *Tunnelling* 
+                        - Encapsulating IPv6 packets in IPv4 to maintain compatibility
+                - **Dual stack** 
+                    - Dual Stack
+                    - Dual stack refers to a network configuraƟon where devices run both IPv4 and IPv6 protocols
+                    - simultaneously.
+                    - This allows the devices to communicate over both types of networks, facilitaƟng a gradual transiƟon
+                    - from IPv4 to IPv6.
+                    - In a dual stack environment, network services and applicaƟons can operate over IPv4 or IPv6, depending
+                    - on the destination address availability and network conditions.
+                    -  *Dual stack* 
+                        - Running both protocols simultaneously
+                - **NAT64** 
+                    - NAT64
+                    - NAT64 is a network address translation technology that facilitates communicaƟon between IPv6 and
+                    - IPv4 devices.
+                    - It translates IPv6 addresses into IPv4 addresses and vice versa, enabling interoperability in
+                    - environments not yet fully IPv6-capable.
+                    -  *NAT64* 
+                        - Translates IPv6 traffic to communicate with IPv4-only devices
+
+## 2.0 Network Implementation 20%
+
+Goal of Domain 2:
+
+- This domain covers the actual deployment and configuration of networking
+  devices and technologies including routing, switching, wireless, and physical
+  installations.
+- It emphasizes practical implementation skills and is foundational for most
+  real-world IT tasks.
+
+Things You Must Memorize:
+
+- Differences between RIP, OSPF, BGP, EIGRP
+- VLAN and trunk configurations
+- 802.11 standards and wireless security types
+- DHCP relay and DNS record types
+- Topology definitions and diagrams
+
+### 2.1 Explain characteristics of routing technologies.
+
+Static Routing: Manually configured routing entries by an administrator.
+
+- Use Cases: Small networks, stub networks, stable environments.
+- Benefits: Simplicity, low overhead, predictability, security.
+- Drawbacks: No auto-failover, poor scalability, high maintenance.
+
+Dynamic Routing: Routers automatically exchanging path information.
+
+- Use Cases: Large networks, changing topologies, internet.
+- Benefits: Scalability, adaptability, automatic failover.
+- Drawbacks: Complexity, resource usage, security risks.
+
+  - Border Gateway Protocol (BGP): Protocol routing between internet autonomous
+    systems.
+  - Enhanced Interior Gateway Routing Protocol (EIGRP): Cisco protocol using
+    bandwidth and delay metrics.
+  - Open Shortest Path First (OSPF): Link-state routing protocol using
+    Dijkstra's algorithm.
+
+Route Selection: Process of determining the best network path.
+
+    - Administrative Distance: Metric rating trustworthiness of routing sources.
+    - Prefix Length: Number of bits set in subnet mask.
+    - Metric: Value used by routing protocols to determine best path.
+
+Address Translation: Mapping one IP address space into another.
+
+    - Network Address Translation (NAT): Modifying IP addresses in packet headers.
+    - Port Address Translation (PAT): Sharing one public IP via multiple ports.
+
+First Hop Redundancy Protocol (FHRP): Provides failover for default gateways.
+
+- Allows transparent failover
+- Types: HSRP (Cisco): active/stanby, VRRP (Open): master/backup, GLBP (Cisco):
+  load balancing among gateways
+
+Virtual IP (VIP): Shared IP address for cluster failover.
+
+Subinterfaces: Logical interfaces created on a single physical interface.
+
+Routing Information Protocol (RIP): Distance-vector routing protocol using hop
+count.
+
+### 2.2 Given a scenario, configure switching technologies and features
+
+Virtual Local Area Network (VLAN): Logical network segment on physical switch.
+
+    - VLAN Database: Storage file containing VLAN configuration information.
+    - Switch Virtual Interface (SVI): Logical Layer 3 interface on a switch.
+
+Interface Configuration: Settings applied to individual physical or logical
+ports.
+
+    - Native VLAN: VLAN for untagged traffic on trunk ports.
+    - Voice VLAN: VLAN dedicated to carrying real-time voice traffic.
+    - 802.1Q Tagging: Protocol tagging frames for VLAN identification.
+    - Link Aggregation: Combining ports to increase bandwidth.
+        - Link Aggregation Control Protocol (LACP): Protocol for bundling ports into single channels.
+    - Speed: Data rate setting for a network interface.
+    - Duplex: Communication mode setting (half or full) for port.
+
+Spanning Tree Protocol (STP): Protocol preventing Layer 2 loops.
+
+    - Rapid Spanning Tree Protocol (RSTP): Faster convergence version of Spanning Tree Protocol.
+
+Maximum Transmission Unit (MTU): Largest data packet size supported by
+interface.
+
+    - Jumbo Frames: Ethernet frames larger than standard 1500 bytes.
+
+Inter-VLAN Routing: Enabling traffic flow between different VLANs.
+
+Power over Ethernet (PoE): Delivers electrical power via Ethernet cabling.
+
+- 802.3af (PoE): Standard providing up to 15.4 watts.
+- 802.3at (PoE+): Standard providing up to 25.5 watts.
+- 802.3bt (PoE++): Standard providing up to 90 watts.
+
+Switch Stacking: Managing multiple physical switches as one logical unit.
+
+### 2.3 Given a scenario, select and configure wireless devices and technologies
+
+Wireless Standards: Specifications defining Wi-Fi speed and frequency.
+
+- 802.11a: 54 Mbps on 5 GHz band (Legacy).
+- 802.11b: 11 Mbps on 2.4 GHz band (Legacy).
+- 802.11g: 54 Mbps on 2.4 GHz band (Legacy).
+- 802.11n (Wi-Fi 4): 600 Mbps on 2.4/5 GHz (MIMO).
+- 802.11ac (Wi-Fi 5): 1 Gbps+ on 5 GHz (MU-MIMO).
+- 802.11ax (Wi-Fi 6): 10 Gbps on 2.4/5/6 GHz (OFDMA).
+
+Channels: Specific frequency ranges for wireless communication.
+
+- Channel Width: Frequency range used for data transmission.
+- Non-Overlapping Channels: Adjacent channels that do not interfere.
+- Regulatory Impacts: Legal restrictions on wireless frequency usage.
+- 802.11h: Wi-Fi amendment preventing interference with radar.
+
+Frequency Options: Radio bands available for wireless data transmission.
+
+- 2.4GHz: Common wireless band with long range and penetration.
+- 5GHz: High-speed wireless band with less interference.
+- 6GHz: Ultra-fast band for Wi-Fi 6E devices.
+- Band Steering: Directing dual-band clients to the 5GHz frequency.
+
+Service Set Identifier (SSID): Name identifying a wireless network.
+
+- Basic Service Set Identifier (BSSID): MAC address of a wireless access point.
+- Extended Service Set Identifier (ESSID): Network name across multiple access
+  points.
+
+Network Types: Different configurations for wireless network connectivity.
+
+- Mesh Networks: Wireless nodes acting as repeaters.
+- Ad Hoc: Peer-to-peer wireless network without central infrastructure.
+- Point-to-Point: Direct wireless connection between two specific nodes.
+- Infrastructure: Wireless network managed by central access points.
+
+Encryption: Scrambling wireless data to ensure privacy.
+
+- Wi-Fi Protected Access 2 (WPA2): Wi-Fi security standard using AES encryption.
+- Wi-Fi Protected Access 3 (WPA3): Latest Wi-Fi security with improved
+  encryption.
+- Wi-Fi Protected Access (WPA): Security standard for wireless networks.
+- Wi-Fi Protected Setup (WPS): Insecure simplified wireless connection method.
+
+Guest Networks: Isolated wireless segments for temporary users.
+
+- Captive Portal: Webpage requiring interaction before network access.
+
+Authentication: Verifying identity of wireless clients before access.
+
+- Pre-Shared vs. Enterprise: Personal password versus centralized server
+  authentication.
+- Pre-Shared Key (PSK): Password shared by all users for access.
+- Enterprise: Centralized authentication using a RADIUS server.
+
+Antennas: Devices for transmitting and receiving radio waves.
+
+- Omnidirectional vs. Directional: Signal in all directions versus focused path.
+- Omnidirectional Antenna: Antenna radiating signal in all directions equally.
+- Directional: Antenna focusing radio signals in one direction.
+
+Autonomous vs. Lightweight Access Point: Standalone management versus
+controller-based management.
+
+- Autonomous: Standalone access point managing its own configuration.
+- Lightweight Access Point: Controller-managed access point with minimal local
+  logic.
+- Control and Provisioning of Wireless Access Points (CAPWAP): Protocol managing
+  access points from central controller.
+
+### 2.4 Explain important factors of physical installations
+
+Important Installation Implications: Physical considerations for deploying
+network equipment.
+
+- Locations: Physical sites where network hardware is installed.
+  - Intermediate Distribution Frame (IDF): Cable rack connecting end devices to
+    MDF.
+  - Main Distribution Frame (MDF): Central point for network cabling
+    termination.
+- Rack Size: Standardized width and height units (U).
+- Port-Side Exhaust/Intake: Managing airflow direction through rack equipment.
+- Cabling: Physical wiring used to interconnect network devices.
+  - Patch Panel: Hardware assembly for organizing cable connections.
+  - Fiber Distribution Panel: Specialized enclosure for terminating fiber optic
+    cables.
+- Lockable: Physical security feature for equipment racks.
+
+Power: Electrical requirements for operating network infrastructure.
+
+- Uninterruptible Power Supply (UPS): Battery backup for power outages.
+- Power Distribution Unit (PDU): Device distributing electric power to rack
+  equipment.
+- Power Load: Total electrical demand of connected network devices.
+- Voltage: Potential difference measured between two points.
+
+Environment Factors: Physical conditions affecting network equipment
+performance.
+
+- Humidity: Amount of water vapor present in air.
+- Fire Suppression: Automated systems for extinguishing data center fires.
+- Temperature: Level of heat maintained in server rooms.
+
+## 3.0 Network Operations 19%
+
+Goal of Domain 3:
+
+- This domain covers the management, documentation, monitoring, and resilience
+  of networks.
+- It focuses on the daily processes that keep the network functional, secure,
+  and recoverable.
+
+Things You Must Memorize:
+
+- SNMP vs Syslog vs NetFlow vs SIEM
+- RPO vs RTO vs MTTR
+- VPN protocols and remote access tools
+- Change management and configuration baselines
+- Disaster recovery site types
+
+### 3.1 Explain the purpose of organizational processes and procedures
+
+Documentation: Records describing network architecture and operational policies.
+
+- Physical vs. Logical Diagrams: Hardware layout versus data flow
+  representation.
+- Physical Diagrams: Visual representation of hardware and cable locations.
+- Logical Diagrams: Visual representation of data flow and addressing.
+- Rack Diagrams: Visual layout of equipment within server racks.
+- Cable Maps and Diagrams: Schematic of physical cable paths and terminations.
+- Network Diagrams: Visual representations of network infrastructure and
+  connectivity.
+  - Layer 1: Physical connectivity and hardware components diagram.
+  - Layer 2: Data link layer and VLAN structure diagram.
+  - Layer 3: Logical addressing and IP routing path diagram.
+- Asset Inventory: Detailed list of hardware, software, and licenses.
+  - Hardware: Physical components and devices in the network.
+  - Software: Operating systems and applications used on devices.
+  - Licensing: Legal permissions required to use software products.
+  - Warranty Support: Manufacturer service coverage for hardware failures.
+  - Acceptable Use Policy (AUP): Policy defining acceptable use of organization
+    resources.
+- IP Address Management (IPAM): Software tracking IP address allocation
+  network-wide.
+- Service-Level Agreement (SLA): Contract defining expected service performance
+  standards.
+- Wireless Survey: Assessing radio frequency coverage and performance.
+  - Wireless Heat Map: Visualizing wireless signal strength and coverage.
+
+Life-Cycle Management: Process of managing hardware and software stages.
+
+- End-of-Life (EOL): Vendor stops selling or marketing a product.
+- End-of-Support (EOS): Vendor stops providing updates or technical assistance.
+- Software Management: Overseeing software updates, versions, and
+  configurations.
+  - Patches and Bug Fixes: Small updates addressing specific software issues.
+  - Operating System (OS): Primary software managing hardware and other
+    applications.
+  - Firmware: Low-level software controlling specific hardware components.
+- Decommissioning: Removing assets from service and secure disposal.
+
+Change Management: Formal process for approving system modifications.
+
+- Request Process Tracking/Service Request: Method for documenting and managing
+  change requests.
+
+- Configuration Management: Maintaining consistent settings across all network
+  devices.
+  - Production Configuration: Current settings used on active network devices.
+  - Backup Configuration: Saved settings for restoring devices after failure.
+  - Baseline/Golden Configuration: Standardized template for consistent device
+    deployment.
+  - Version Control: Tracking and managing configuration changes over time.
+
+### 3.2 Given a scenario, use network monitoring technologies
+
+Methods: Techniques used to collect network performance data.
+
+- Simple Network Management Protocol (SNMP): Protocol monitoring and managing
+  network devices.
+  - Trap (SNMP): Unsolicited alert sent by device to manager.
+    - Management Information Base (MIB): Database of variables managed by SNMP.
+      - Versions: Different iterations of the SNMP protocol.
+        - v2c: Version using community strings for authentication.
+        - v3: Version adding encryption and robust authentication.
+    - Community Strings: Passwords used for authenticating SNMP v1/v2c.
+    - Authentication: Verification of device identity for secure management.
+- Flow Data: Statistics on network traffic patterns (NetFlow).
+  - NetFlow/sFlow/IPFIX: Protocols for collecting IP traffic information.
+- Packet Capture: Intercepting and logging data packets for analysis.
+- Baseline Metrics: Historical data representing normal network performance
+  levels.
+  - Anomaly Alerting/Notification: Triggering warnings when traffic deviates
+    from baseline.
+- Performance Metrics: Measurements used to assess network health and
+  efficiency.
+  - Latency: Time for packet to travel from source to destination.
+  - Jitter: Variation in packet latency over time.
+  - Error Rate: Frequency of corrupted packets or drops.
+  - Throughput: Actual rate of successful data transfer.
+  - Utilization: Percentage of total network capacity currently in use.
+- Log Aggregation: Consolidating log data from multiple network sources.
+  - Syslog Collector: Server gathering log messages from network devices.
+  - Security Information and Event Management (SIEM): Real-time analysis of
+    security logs and alerts.
+- Port Mirroring: Copying switch traffic to a monitoring port.
+
+Solutions: Specific tools or software for network monitoring.
+
+- Network Discovery: Identifying devices present on a network.
+  - Ad Hoc: Spontaneous network scanning for device identification.
+  - Scheduled: Regularly timed scans for inventorying network devices.
+- Traffic Analysis: Examining data flow to identify performance issues.
+- Performance Monitoring: Tracking system health and resource utilization.
+- Availability Monitoring: Checking uptime status of network devices.
+- Configuration Monitoring: Detecting changes in device setting files.
+
+Simple Network Management Protocol (SNMP): Protocol monitoring and managing
+network devices.
+
+### 3.3 Explain disaster recovery (DR) concepts
+
+DR Metrics: Measurements used to evaluate disaster recovery readiness.
+
+- Recovery Point Objective (RPO): Maximum tolerable data loss following a
+  disaster.
+- Recovery Time Objective (RTO): Maximum time allowed to restore services.
+- Mean Time to Repair (MTTR): Average time to fix a failed device.
+- Mean Time Between Failures (MTBF): Average time before a component fails.
+
+Backup Types: Different methods for creating data copies.
+
+- Full Backup: Complete backup of all data.
+- Incremental Backup: Backup of data changed since last backup.
+- Differential Backup: Backup of data changed since last full backup.
+- Offsite Backup: Storing backups at a geographically separate location.
+
+DR Sites: Locations used for recovering data and operations.
+
+- Disaster Recovery (DR): Procedures for restoring systems after failure.
+- Cold Site: Empty backup facility requiring equipment setup.
+- Warm Site: Partially equipped backup site, not fully active.
+- Hot Site: Fully operational backup site ready immediately.
+
+High-Availability Approaches: Strategies for maintaining continuous network
+service availability.
+
+- Active-Active: Redundant systems simultaneously handling network traffic.
+- Active-Passive: Backup system waiting until primary system fails.
+- Hardware Redundancy: Duplicate physical components preventing single point
+  failure.
+- Link Redundancy: Multiple network connections providing failover paths.
+- Server Clustering: Group of servers working together as single system.
+
+Testing: Assessing effectiveness of disaster recovery and availability.
+
+- Tabletop Exercises: Theoretical drills to test disaster response plans.
+- Validation Tests: Practical assessments confirming recovery procedures work.
+
+### 3.4 Given a scenario, implement IPv4 and IPv6 network services
+
+Dynamic Addressing: Automatic assignment of IP addresses to devices.
+
+- Dynamic Host Configuration Protocol (DHCP): Automates IP address assignment to
+  network clients.
+  - Reservations
+    - DHCP Reservation: Permanently assigning specific IP to specific MAC.
+  - Scope: Range of IP addresses available for distribution.
+  - Lease Time: Duration a client can use assigned IP.
+  - Options: Additional configuration data sent to DHCP clients.
+  - Relay/IP Helper: Forwarding DHCP requests across different subnets.
+  - Exclusions: Specific IP addresses within scope not distributed.
+- Stateless Address Autoconfiguration (SLAAC): IPv6 hosts generating own
+  addresses automatically.
+
+Name Resolution: Process of translating hostnames into IP addresses.
+
+- Domain Name System (DNS): Resolves domain names to IP addresses.
+  - Domain Name System Security Extensions (DNSSEC): Cryptographic
+    authentication for DNS records.
+  - DNS over HTTPS (DoH) and DNS over TLS (DoT)
+    - DNS over HTTPS (DoH): Encrypting DNS queries via HTTPS protocol.
+    - DNS over TLS (DoT): Encrypting DNS queries via TLS protocol.
+  - Record Types: Different categories of entries within DNS databases.
+    - Address Record (A): DNS record mapping hostname to IPv4 address.
+    - IPv6 Address Record (AAAA): DNS record mapping hostname to IPv6 address.
+    - Canonical Name (CNAME): Alias mapping one hostname to another.
+    - Mail Exchange (MX): Directs email to domain's mail server.
+    - Text Record (TXT): DNS record holding arbitrary text information.
+    - Name Server (NS): Designates authoritative name servers for domain.
+    - Pointer Record (PTR): Maps IP address to hostname.
+    - Zone Types: Classifications of DNS database segments and management.
+      - Zone Transfer: Replicating DNS records between DNS servers.
+      - Forward: Resolving hostnames to IP addresses.
+      - Reverse: Resolving IP addresses to hostnames.
+    - Authoritative: Master source containing the original DNS records.
+    - Non-Authoritative: Cached DNS information obtained from other servers.
+    - Primary: Original, read-write version of a zone file.
+    - Secondary: Read-only copy of a zone file.
+    - Recursive
+      - Recursive Lookup: DNS server querying others to resolve name.
+- Hosts File: Local text file mapping hostnames to IPs.
+
+Time Protocols: Standards for synchronizing clocks across network devices.
+
+- Network Time Protocol (NTP): Synchronizes clocks on network devices (port
+  123).
+- Precision Time Protocol (PTP): High-precision clock synchronization for local
+  networks.
+- Network Time Security (NTS): Secure mechanism for NTP time synchronization.
+
+Start of Authority (SOA): DNS record identifying zone's authoritative source.
+
+### 3.5 Compare and contrast network access and management methods
+
+Site-to-Site VPN: Connecting two entire networks securely.
+
+    - Virtual Private Network (VPN): Encrypted tunnel over a public network.
+
+Client-to-Site VPN: Remote user connecting securely to corporate network.
+
+- Clientless: VPN access without dedicated client software installation.
+- Split Tunnel vs. Full Tunnel
+  - Split Tunnel: Routing only specific traffic through VPN.
+  - Full Tunnel: Routing all traffic through VPN gateway.
+
+Connection Methods: Techniques used to access and manage devices.
+
+- Secure Shell (SSH): Encrypted remote command-line access.
+  - Remote Desktop Protocol (RDP): GUI-based remote access protocol for Windows.
+  - Virtual Network Computing (VNC): Cross-platform graphical desktop sharing
+    system.
+- Graphical User Interface (GUI): Visual interface for interacting with
+  electronic devices.
+- Application Programming Interface (API): Code allowing software applications
+  to communicate. <!-- Objective 1.4 -->
+- Console: Physical port for direct local device management.
+
+Jump Box/Host: Hardened intermediary for accessing sensitive zones.
+
+In-Band vs. Out-of-Band Management: Managing via primary network or separate
+path.
+
+- In-Band: Managing network devices through the production network.
+- Out-of-Band Management: Admin traffic using dedicated, separate network path.
+
+## 4.0 Network Security 14%
+
+Goal of Domain 4:
+
+- This domain focuses on identifying, preventing, and responding to security
+  threats across networks.
+- It covers foundational concepts, real-world threats, and best practices to
+  harden devices and control access.
+
+Things You Must Memorize:
+
+- Definitions of CIA, AAA, and Zero Trust
+- Malware and attack types (phishing, DoS, ARP spoofing)
+- NAC technologies (802.1X, port security)
+- Secure network protocols and their ports
+- Authentication servers: RADIUS vs TACACS+
+
+### 4.1 Explain the importance of basic network security concepts
+
+Logical Security: Software and procedural measures protecting digital assets.
+
+- Encryption: Scrambling data to prevent unauthorized access.
+  - Data in Transit: Protecting data as it travels across networks.
+  - Data at Rest: Protecting data stored on physical storage media.
+  - End-to-End Encryption (E2EE): Encryption protecting data from sender to
+    recipient.
+- Certificates: Digital documents verifying identity of network entities.
+  - Public Key Infrastructure (PKI): Framework managing digital certificates and
+    keys.
+  - Self-Signed: Certificate signed by its creator rather than CA.
+- Identity and Access Management (IAM): Managing user identities and resource
+  access.
+  - Authentication: Verification of user identity for network access.
+    - Multi-Factor Authentication (MFA): Authentication requiring two or more
+      credential types.
+    - Single Sign-On (SSO): Logging in once to access multiple systems.
+    - Remote Authentication Dial-In User Service (RADIUS): Server handling
+      authentication for network access.
+    - Lightweight Directory Access Protocol (LDAP): Protocol for querying and
+      managing directory services.
+    - Security Assertion Markup Language (SAML): XML format exchanging
+      authentication data.
+    - Terminal Access Controller Access Control System Plus (TACACS+): Protocol
+      for AAA services, typically device admin.
+    - Time-based Authentication: Security tokens that change at regular
+      intervals.
+    - Biometrics: Authentication using unique physical characteristics of user.
+    - Tokens: Physical or digital device generating one-time passwords.
+  - Authorization: Process of granting specific permissions to users.
+    - Least Privilege: Granting only minimum necessary access rights.
+    - Role-Based Access Control (RBAC): Access rights based on user job
+      function.
+    - Attribute-Based Access Control (ABAC): Access based on user, resource, and
+      environment attributes.
+  - Accounting: Logging and auditing user actions and resource usage.
+- Geofencing: Creating virtual boundaries for geographic-based access control.
+
+Physical Security: Tangible barriers protecting hardware and facility access.
+
+- Camera: Visual surveillance device for monitoring physical areas.
+- Locks: Physical mechanisms preventing unauthorized entry to facilities.
+
+Deception Technologies: Tools luring attackers into decoy environments.
+
+- Honeypot: Decoy system luring attackers to detect threats.
+- Honeynet: Network of decoys simulating a real environment.
+
+Common Security Terminology: Standard vocabulary used to describe security
+concepts.
+
+- Risk: Probability of threat exploiting a vulnerability.
+- Vulnerability: Security weakness susceptible to being exploited.
+- Exploit: Method or code used to abuse vulnerability.
+- Threat: Potential cause of an unwanted security incident.
+- Mitigation: Steps taken to reduce risk or impact.
+- Defense in Depth: Layered security approach using multiple controls.
+- Confidentiality, Integrity, and Availability (CIA) Triad: Core security model
+  for protecting information.
+
+Audits and Regulatory Compliance: Verifying adherence to security policies and
+laws.
+
+- Audits: Systematic evaluations of an organization's security posture.
+- Regulatory Compliance: Meeting legal requirements for data protection.
+- Data Locality: Requirement for data to stay in region.
+- Payment Card Industry Data Security Standard (PCI DSS): Standards for securing
+  credit card transactions.
+- General Data Protection Regulation (GDPR): EU regulation protecting personal
+  data and privacy.
+
+Network Segmentation Enforcement: Using boundaries to isolate network traffic
+segments.
+
+- Internet of Things (IoT) and Industrial Internet of Things (IIoT): Networked
+  physical objects and industrial equipment.
+- Supervisory Control and Data Acquisition (SCADA), Industrial Control System
+  (ICS), Operational Technology (OT): Systems monitoring and controlling
+  industrial infrastructure.
+- Guest: Isolated network segment for temporary visitors.
+- Bring Your Own Device (BYOD): Policy allowing personal devices on corporate
+  networks.
+
+### 4.2 Summarize various types of attacks and their impact to the network
+
+Denial-of-Service (DoS)/Distributed Denial-of-Service (DDoS)
+
+- Denial-of-Service (DoS): Attack preventing legitimate access to resources.
+- Distributed Denial-of-Service (DDoS): DoS attack from multiple sources
+  simultaneously.
+
+VLAN Hopping: Attacking by moving between different VLANs illegally.
+
+- Switch Spoofing: Attacker manipulates switch into negotiating a trunk link.
+- Double Tagging: Attacker embeds second VLAN tag to bypass security.
+
+Media Access Control (MAC) Flooding: Overwhelming switch MAC tables with fake
+addresses.
+
+ARP Poisoning: Corrupting ARP cache to map attacker's MAC.
+
+ARP Spoofing: Sending fake ARP messages to intercept traffic.
+
+DNS Poisoning: Injecting fake DNS records to redirect traffic.
+
+DNS Spoofing: Redirecting users to malicious sites via DNS.
+
+Rogue Devices and Services: Unauthorized hardware or software on a network.
+
+- Rogue Devices: Unauthorized hardware connected to a secure network.
+- Services: Unauthorized software-based functions running on a network.
+- DHCP: Unauthorized server distributing incorrect IP configurations.
+- Access Point (AP): Hardware device providing wireless network connectivity.
+  - Rogue Access Point: Unauthorized wireless access point on a network.
+
+Evil Twin: Fake access point mimicking a legitimate one.
+
+Man-in-the-Middle (MitM): Attacker secretly intercepts and relays communication.
+
+On-Path Attack: Intercepting communication between two legitimate network nodes.
+
+Social Engineering: Manipulating people into divulging confidential information.
+
+- Phishing: Fraudulent emails tricking users into revealing info.
+- Spear Phishing: Targeted phishing attack against specific individual/group.
+- Whaling: Targeted phishing attack against high-level executives.
+- Vishing: Voice phishing attacks conducted over phone.
+- Smishing: Phishing attacks conducted via SMS text messages.
+- Pretexting: Fabricating a scenario to steal information.
+- Dumpster Diving: Searching through trash for sensitive information.
+- Shoulder Surfing: Watching someone enter passwords or sensitive data.
+- Tailgating: Following authorized personnel into restricted physical areas.
+
+Malware: Malicious software designed to harm systems or data.
+
+- Virus: Malicious code requiring host file to spread.
+- Worm: Self-replicates, spreads across networks without host.
+- Trojan: Malicious software masquerading as legitimate application.
+- Ransomware: Encrypts files, demands payment for decryption.
+- Spyware: Software secretly recording user activity and data.
+- Adware: Software automatically displaying unwanted advertisements.
+- Keylogger: Software recording every keystroke made by user.
+- Rootkit: Malware granting administrative control while hiding presence.
+
+### 4.3 Given a scenario, apply network security features, defense techniques, and solutions
+
+Device Hardening: Securing a system by reducing attack surface.
+
+- Disable Unused Ports and Services: Closing entry points to minimize security
+  risks.
+- Change Default Passwords: Replacing factory-set credentials with secure ones.
+
+Network Access Control (NAC): Controlling device admission to the network.
+
+- Port Security: Limiting network port access by MAC address.
+- 802.1X: Port-based network access control and authentication.
+- MAC Filtering: Allowing or denying network access by MAC.
+
+Key Management: Secure handling and storage of cryptographic keys.
+
+Security Rules: Definitions controlling traffic flow through security devices.
+
+- Access Control List (ACL): Rules determining access rights to network
+  resources. <!-- Objective 1.4 -->
+- Uniform Resource Locator (URL) Filtering: Restricting website access based on
+  web addresses.
+- Content Filtering: Blocking access to specific types of data.
+- Unified Threat Management (UTM): All-in-one security appliance for network
+  protection.
+
+Firewall Types: Hardware or software monitoring and controlling network traffic.
+
+- Packet Filtering Firewall: Filters traffic based on IP headers and ports.
+- Stateful Firewall: Tracks active connections to make filtering decisions.
+- Next-Generation Firewall (NGFW): Deep packet inspection and application-level
+  control.
+- Host-based Firewall: Software firewall running on a single device.
+
+Zones: Logical network areas with distinct security requirements.
+
+- Trusted vs. Untrusted: Internal secure network versus external insecure
+  network.
+- Screened Subnet: Semi-public zone separating internet and internal LAN.
+
+## 5.0 Network Troubleshooting 24%
+
+Goal of Domain 5:
+
+- This domain covers how to approach, diagnose, and resolve a wide variety of
+  network issues using structured methodologies and tools. It represents the
+  largest percentage of the exam and is vital for real-world technical
+  troubleshooting.
+
+Things You Must Memorize:
+
+- The 6-step troubleshooting process
+- Common errors: CRC, colisions, flapping, duplex mismatch
+- DHCP/DNS/NAT failure symptoms and fixes
+- Wireless performance problems (interference, signal loss)
+- CLI tools and when to use them: ping, tracert, ipconfig, netstat, nslookup
+
+### 5.1 Explain the troubleshooting methodology
+
+- Identify the Problem: Gather information, symptoms, and recent changes.
+  - Gather Information: Collecting all relevant data about the issue.
+  - Question Users: Interviewing affected individuals to understand symptoms.
+    - Open Questions: Questions inviting detailed explanations from the user.
+    - Closed Questions: Questions inviting Yes/No or fixed responses.
+  - Identify Symptoms: Determining specific signs of the network problem.
+  - Determine if Anything Has Changed: Checking for recent configuration or
+    hardware modifications.
+- Duplicate the Problem, if possible: Replicating the issue in a controlled
+  environment.
+- Approach Multiple Problems Individually: Resolving each separate issue one at
+  a time.
+- Define Scope:
+
+2. Establish a Theory of Probable Cause: Brainstorm probable causes starting
+   with the obvious.
+
+- Question the Obvious: Checking for simple failures like disconnected cables.
+- Consider Multiple Approaches: Evaluating different potential solutions to the
+  problem.
+  - Top-to-Bottom/Bottom-to-Top OSI Model: Systematically checking layers for
+    potential points of failure.
+    - Top-to-Bottom: Troubleshooting starting from Application layer down to
+      Physical.
+    - Bottom-to-Top: Troubleshooting starting from Physical layer up to
+      Application.
+  - Divide and Conquer: Narrowing down problem location by bisecting system.
+
+3. Test the Theory to Determine the Cause: Confirm the cause or escalate if
+   incorrect.
+
+- Escalation: Referral of a problem to a senior technician or third party.
+- If theory is confirmed, determine next steps to resolve problem
+- if theory is not confirmed, establish a new theory or escalate
+
+4. Establish a Plan of Action: to resolve the problem and identify potential
+   effects: Determine steps to fix and assess impact.
+
+- Implement fix with minimal disruption
+- Schedule downtime if needed
+
+5. Implement the Solution or escalate as necessary: Execute the fix or escalate
+   if needed.
+
+6. Verify Full System Functionality and implement preventive measures if
+   applicable: Confirm system works and prevent recurrence.
+
+- Test full services and related systems
+- Confirm with user
+
+7. Document Findings, Actions, Outcomes, and Lessons Learned throughout the
+   process: Record actions, outcomes, and lessons learned.
+
+- Record the problem, resolution, and timeline
+- Useful for audits training, and trend tracking
+
+Best Practices:
+
+- Follow change control if required
+- Use rollback plan in case the fix fails
+- Maintain communication with stakeholders
+
+### 5.2 Given a scenario, troubleshoot common cabling and physical interface issues
+
+Cable Issues: Physical layer failures related to network wiring.
+
+- Incorrect Cable: Using the wrong type of network cabling.
+  - Single-Mode vs. Multimode: Long-distance fiber versus short-distance
+    high-bandwidth fiber.
+  - Category 5/6/7/8: Various Ethernet cabling standards for different speeds.
+  - Shielded Twisted Pair (STP) vs. Unshielded Twisted Pair (UTP): Protected
+    versus standard copper network cabling.
+- Signal Degradation: Reduction in signal quality during transmission.
+  - Crosstalk: Signal bleeding between adjacent copper wires.
+  - Interference: External signals disrupting network transmission (EMI/RFI).
+  - Attenuation: Loss of signal strength over distance.
+- Improper Termination: Poorly attached connectors causing physical layer
+  failures.
+- Transmitter (TX)/Receiver (RX) Transposed: Sending and receiving wires swapped
+  incorrectly.
+- Open Circuit: Break in the connection preventing signal flow.
+- Short Circuit: Accidental connection between two distinct electrical paths.
+- Incorrect Pinout: Wires connected to wrong pins in connector.
+- Distance Limitation: Exceeding maximum cable length causes signal loss.
+- Bend Radius: Minimum curve allowed before damaging fiber cable.
+
+Interface Issues: Failures occurring at the device connection point.
+
+- Increasing Interface Counters: Statistics tracking errors on a specific port.
+  - Cyclic Redundancy Check (CRC): Error-detecting code indicating corrupted
+    data frames.
+  - Runts: Ethernet frames smaller than permitted minimum size.
+  - Drops: Packets discarded due to congestion or errors.
+- Port Status: The operational state of a network interface.
+  - Error Disabled: Port shut down by switch due to errors.
+  - Administratively Down: Port manually disabled by network administrator.
+  - Suspended: Port inactive due to protocol negotiation failure.
+
+Hardware Issues: Physical component failures within network devices.
+
+- Power over Ethernet (PoE): Transmitting power over standard Ethernet cabling.
+  - Power Budget Exceeded: Demanding more power than switch can provide.
+  - Incorrect Standard: Mismatch between PoE device and switch requirements.
+- Transceivers: Modular components for connecting to fiber networks.
+  - Mismatch: Incompatible transceiver type or speed on link.
+  - Signal Strength: Optical or electrical power level issues.
+- Dirty Connector: Contaminants on fiber interface blocking light signal.
+
+### 5.3 Given a scenario, troubleshoot common issues with network services
+
+Switching Issues: Failures related to Layer 2 network operations.
+
+- Spanning Tree Protocol (STP): Protocol preventing Layer 2 loops.
+  - Network Loops: Traffic circulating endlessly between switches.
+  - Root Bridge Selection: Electing the main switch in Spanning Tree.
+  - Port Roles/States: Specific functional modes assigned to switch ports.
+- Incorrect VLAN Assignment: Assigning a port to the wrong VLAN.
+- Access Control List (ACL): Rules determining access rights to network
+  resources.
+
+Route Selection: Problems related to determining data packet paths.
+
+- Routing Table: Database used for determining data packet paths.
+- Default Routes: Path used when no specific destination exists.
+
+Address Pool Exhaustion: No available IP addresses in DHCP scope.
+
+Incorrect Default Gateway: Wrong IP address configured for local exit.
+
+Incorrect IP Address: Invalid or misconfigured IP on a device.
+
+- Duplicate IP Address: Two devices assigned same IP, causing conflict.
+
+Incorrect Subnet Mask: Misconfigured mask leading to communication errors.
+
+- Automatic Private IP Addressing (APIPA): Self-assigned IP indicating DHCP
+  failure.
+- Maximum Transmission Unit (MTU) Mismatch: Packet size mismatch causing
+  fragmentation or drops.
+
+### 5.4 Given a scenario, troubleshoot common performance issues
+
+Congestion/Contention: Network slowing due to high traffic volume.
+
+Bottlenecking: Point of congestion limiting overall performance.
+
+Bandwidth: Maximum data transfer rate of a network.
+
+- Throughput: Actual data transfer rate supported by link.
+
+Latency: Time delay for data to reach destination.
+
+Packet Loss: Data units failing to reach their destination.
+
+Jitter: Variation in packet arrival time.
+
+Wireless
+
+- Interference: External signals disrupting wireless network communication.
+  - Channel Overlap: Wireless frequencies interfering with each other.
+- Signal Degradation or Loss: Reduction in wireless signal quality or strength.
+- Insufficient Wireless Coverage: Dead zones where wireless signal is missing.
+- Client Disassociation Issues: Devices repeatedly losing connection to access
+  points.
+- Roaming Misconfiguration: Failure of clients to switch between APs smoothly.
+- Access Point (AP) Overload: Too many clients degrading wireless performance.
+
+### 5.5 Given a scenario, use the appropriate tool or protocol to solve networking issues
+
+Software Tools: Applications used for network analysis and troubleshooting.
+
+- Protocol Analyzer: Tool decoding and displaying network traffic (Wireshark).
+- Command Line
+  - Ping: Tool checking network reachability via ICMP.
+  - Traceroute: Tool showing path packets take to host.
+  - Nslookup: Tool for querying DNS records to resolve names.
+  - Tcpdump: Command-line packet analyzer for network traffic monitoring.
+  - Dig: Domain Information Groper for querying DNS servers.
+  - Netstat: Tool displaying active network connections and statistics.
+  - IP/Ifconfig/Ipconfig: Tools displaying network interface configuration and
+    addressing.
+  - ARP: Tool for viewing and managing ARP cache.
+- Nmap: Tool for network discovery and security scanning.
+- Link Layer Discovery Protocol (LLDP)/Cisco Discovery Protocol (CDP): Protocols
+  for discovering neighboring network devices.
+- Speed Tester: Application measuring network bandwidth and latency.
+
+Hardware Tools: Physical devices used for network testing and maintenance.
+
+- Toner: Tool for tracing cables through walls and ceilings.
+- Cable Tester: Device verifying continuity and wiring of cabling.
+- Taps: Hardware used to intercept network traffic for monitoring.
+- Wi-Fi Analyzer: Tool visualizing wireless signal strength and channels.
+- Visual Fault Locator (VFL): Laser tool for finding breaks in fiber.
+- Time Domain Reflectometer (TDR): Locates breaks or faults in copper cables.
+- Optical Time Domain Reflectometer (OTDR): Locates breaks or faults in fiber
+  cables.
+- Multimeter: Measures electrical properties like voltage and resistance.
+- Loopback Plug: Tests physical port transmit and receive functionality.
+- Spectrum Analyzer: Visualizes signal strength across frequency bands.
+
+Basic Networking Device Commands
+
+- Show MAC-Address-Table: Displays the switch's MAC address learning table.
+- Show Route: Displays the current IP routing table entries.
+- Show Interface: Displays status and statistics for network ports.
+- Show Config: Displays the current running configuration of device.
+- Show ARP: Displays the local address resolution protocol cache.
+- Show VLAN: Displays configured virtual local area network information.
+- Show Power: Displays power supply status and PoE usage.
